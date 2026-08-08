@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block title %}Mapa web · AWEBO{% endblock %}
+
+{% block content %}
+<section class="hero">
+  <h1>{{ _('Mapa web') }}</h1>
+  <p class="lead">
+    {{ _('Índice navegable de todas las páginas y secciones públicas de la aplicación.') }}
+  </p>
+</section>
+
+<div class="card">
+  <nav aria-label="{{ _('Mapa del sitio') }}">
+    <h2>{{ _('Acceso público') }}</h2>
+    <ul>
+      <li><a href="/">{{ _('Inicio') }}</a></li>
+      <li><a href="/login">{{ _('Iniciar sesión') }}</a></li>
+      <li><a href="/register">{{ _('Crear cuenta de docente') }}</a></li>
+      <li><a href="/restablecer-contrasena">{{ _('Restablecer contraseña') }}</a></li>
+    </ul>
+
+    <h2>{{ _('Área del docente (requiere iniciar sesión)') }}</h2>
+    <ul>
+      <li>
+        <a href="/situaciones">{{ _('Mis situaciones de aprendizaje') }}</a>
+        <ul>
+          <li><a href="/situaciones/nueva">{{ _('Crear nueva situación') }}</a></li>
+        </ul>
+      </li>
+      <li><a href="/perfil">{{ _('Mi perfil') }}</a></li>
+    </ul>
+
+    <h2>{{ _('Información y soporte') }}</h2>
+    <ul>
+      <li><a href="/ayuda">{{ _('Centro de ayuda') }}</a></li>
+      <li><a href="/accesibilidad">{{ _('Declaración de accesibilidad') }}</a></li>
+      <li><a href="/mapa-web">{{ _('Mapa web (esta página)') }}</a></li>
+    </ul>
+  </nav>
+</div>
+{% endblock %}

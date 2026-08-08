@@ -1,0 +1,167 @@
+{
+  "materia_oficial": "MÚSICA",
+  "materia": "Música",
+  "etapa": "ESO",
+  "ciclo": "Segundo curso",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "CE1",
+      "descripcion": "Analizar obras de diferentes épocas y culturas, identificando sus principales rasgos estilísticos y estableciendo relaciones con su contexto, para valorar el patrimonio musical y dancístico como fuente de disfrute y enriquecimiento personal.",
+      "descriptores": [
+        "CCL2",
+        "CCL3",
+        "CP3",
+        "CD1",
+        "CD2",
+        "CPSAA3",
+        "CC1",
+        "CCEC1",
+        "CCEC2"
+      ]
+    },
+    {
+      "codigo": "CE2",
+      "descripcion": "Explorar las posibilidades expresivas de diferentes técnicas musicales y dancísticas, a través de actividades de improvisación, para incorporarlas al repertorio personal de recursos y desarrollar el criterio de selección de las técnicas más adecuadas a la intención expresiva.",
+      "descriptores": [
+        "CCL1",
+        "CD2",
+        "CPSAA1",
+        "CPSAA3",
+        "CC1",
+        "CE3",
+        "CCEC3"
+      ]
+    },
+    {
+      "codigo": "CE3",
+      "descripcion": "Interpretar piezas musicales y dancísticas, gestionando adecuadamente las emociones y empleando diversas estrategias y técnicas vocales, corporales o instrumentales, para ampliar las posibilidades de expresión personal.",
+      "descriptores": [
+        "CCL1",
+        "CD2",
+        "CPSAA1",
+        "CPSAA3",
+        "CC1",
+        "CE1"
+      ]
+    },
+    {
+      "codigo": "CE4",
+      "descripcion": "Crear propuestas artístico-musicales, empleando la voz, el cuerpo, instrumentos musicales y herramientas tecnológicas, para potenciar la creatividad e identificar oportunidades de desarrollo personal, social, académico y profesional.",
+      "descriptores": [
+        "CCL1",
+        "STEM3",
+        "CD2",
+        "CPSAA3",
+        "CC1",
+        "CE1",
+        "CE3",
+        "CCEC3",
+        "CCEC4"
+      ]
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "CE1",
+      "descripcion": "Identificar los principales rasgos estilísticos de obras musicales y dancísticas de diferentes épocas y culturas, evidenciando una actitud de apertura, interés y respeto en la escucha o el visionado de las mismas."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "CE1",
+      "descripcion": "Explicar, con actitud abierta y respetuosa, las funciones desempeñadas por determinadas producciones musicales y dancísticas, relacionándolas con las principales características de su contexto histórico, social y cultural."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "CE1",
+      "descripcion": "Establecer conexiones entre manifestaciones musicales y dancísticas de diferentes épocas y culturas, valorando su influencia sobre la música y la danza actuales."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "CE2",
+      "descripcion": "Participar, con iniciativa, confianza y creatividad, en la exploración de técnicas musicales y dancísticas básicas, por medio de improvisaciones pautadas, individuales o grupales, en las que se empleen la voz, el cuerpo, instrumentos musicales o herramientas tecnológicas."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "CE2",
+      "descripcion": "Expresar ideas, sentimientos y emociones en actividades pautadas de improvisación, seleccionando las técnicas más adecuadas de entre las que conforman el repertorio personal de recursos."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "CE3",
+      "descripcion": "Leer partituras sencillas, identificando de forma guiada los elementos básicos del lenguaje musical, con o sin apoyo de la audición."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "CE3",
+      "descripcion": "Emplear técnicas básicas de interpretación vocal, corporal o instrumental, aplicando estrategias de memorización y valorando los ensayos como espacios de escucha y aprendizaje."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "CE3",
+      "descripcion": "Interpretar con corrección piezas musicales y dancísticas sencillas, individuales y grupales, dentro y fuera del aula, gestionando de forma guiada la ansiedad y el miedo escénico, y manteniendo la concentración."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "CE4",
+      "descripcion": "Planificar y desarrollar, con creatividad, propuestas artístico-musicales, tanto individuales como colaborativas, empleando medios musicales y dancísticos, así como herramientas analógicas y digitales."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "CE4",
+      "descripcion": "Participar activamente en la planificación y en la ejecución de propuestas artístico-musicales colaborativas, valorando las aportaciones del resto de integrantes del grupo y descubriendo oportunidades de desarrollo personal, social, académico y profesional."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Escucha y percepción",
+      "titulo": "Escucha y percepción",
+      "items": [
+        "El silencio, el sonido, el ruido y la escucha activa. Estrategias de discriminación auditiva y de atención y memorización musical. Sensibilidad ante la polución sonora y la creación de ambientes saludables de escucha.",
+        "Recursos corporales, gráficos, tecnológicos y audiovisuales para la comprensión auditiva y visual.",
+        "Obras musicales y dancísticas: análisis, descripción y valoración de sus características básicas. Géneros y subgéneros más relevantes de la música y la danza.",
+        "Voces e instrumentos: agrupaciones.",
+        "Compositores y compositoras, artistas e intérpretes internacionales, nacionales, regionales y locales.",
+        "Conciertos, actuaciones musicales y otras manifestaciones artístico-musicales en vivo y registradas.",
+        "Mitos, estereotipos y roles de género trasmitidos a través de la música y la danza.",
+        "Herramientas digitales para la recepción musical.",
+        "Estrategias de búsqueda, selección y reelaboración de información fiable, pertinente y de calidad.",
+        "Normas de comportamiento básicas en la recepción musical: respeto y valoración."
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Interpretación, improvisación y creación escénica",
+      "titulo": "Interpretación, improvisación y creación escénica",
+      "items": [
+        "La partitura: identificación y aplicación de grafías, lectura y escritura musical básicas.",
+        "Elementos básicos del lenguaje musical: parámetros del sonido, intervalos. Tonalidad: escalas musicales, la armadura y acordes básicos. Texturas. Formas musicales a lo largo de los periodos históricos y en la actualidad.",
+        "Principales géneros musicales y escénicos del patrimonio cultural propio y de otras culturas. Piezas musicales y dancísticas de diferentes géneros, estilos y culturas interpretadas individualmente o en grupo en diversas combinaciones de voces e instrumentos. Interés por conocer músicas y danzas de distintas características y por ampliar y diversificar las preferencias musicales propias.",
+        "Repertorio vocal, instrumental o corporal individual o grupal de distintos tipos de música del patrimonio musical propio y de otras culturas.",
+        "Técnicas básicas para la interpretación: técnicas vocales, instrumentales y corporales, técnicas de estudio y de control de emociones.",
+        "Técnicas de improvisación guiada y libre. Improvisación vocal, instrumental y corporal en diferentes estilos con un control creciente de las destrezas técnicas requeridas.",
+        "Proyectos musicales y audiovisuales: empleo de la voz, el cuerpo, los instrumentos musicales, los medios y las aplicaciones tecnológicas.",
+        "La propiedad intelectual y cultural: planteamientos éticos y responsables. Hábitos de consumo musical responsable.",
+        "Herramientas digitales para la creación musical. Secuenciadores y editores de partituras.",
+        "Normas de comportamiento y participación en actividades musicales."
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Contextos y culturas",
+      "titulo": "Contextos y culturas",
+      "items": [
+        "Historia de la música y la danza occidental: periodos, características, géneros, voces, instrumentos y agrupaciones.",
+        "Las músicas tradicionales en España y su diversidad cultural: instrumentos, canciones, danzas y bailes. Músicas y danzas tradicionales del entorno cultural cercano.",
+        "Tradiciones musicales y dancísticas de otras culturas del mundo.",
+        "Músicas populares, urbanas y contemporáneas.",
+        "El sonido y la música en los medios audiovisuales y las tecnologías digitales."
+      ]
+    }
+  ]
+}

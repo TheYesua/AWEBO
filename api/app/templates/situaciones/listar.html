@@ -1,0 +1,258 @@
+{% extends "base.html" %}
+{% block title %}Mis situaciones · AWEBO{% endblock %}
+
+{% block content %}
+<section aria-labelledby="t-list">
+  <div class="page-head">
+    <div>
+      <h1 id="t-list">{{ _('Mis situaciones de aprendizaje') }}</h1>
+      <p class="lead" id="lista-resumen" aria-live="polite">{{ _('Cargando…') }}</p>
+    </div>
+    <a href="/situaciones/nueva" class="btn btn--primary">
+      <i data-lucide="plus" aria-hidden="true"></i>
+      <span>{{ _('Nueva situación') }}</span>
+    </a>
+  </div>
+
+  <form id="filtros" class="filtros" aria-label="{{ _('Filtros de búsqueda') }}">
+    <div class="field">
+      <label for="f-q">{{ _('Buscar por título') }}</label>
+      <input type="search" id="f-q" name="q" placeholder="{{ _('Ej: Robótica') }}">
+    </div>
+    <div class="field">
+      <label for="f-curso">{{ _('Curso') }}</label>
+      <select id="f-curso" name="curso"></select>
+    </div>
+    <div class="field">
+      <label for="f-materia">{{ _('Materia') }}</label>
+      <select id="f-materia" name="materia"></select>
+    </div>
+    <div class="field">
+      <label for="f-estado">{{ _('Estado') }}</label>
+      <select id="f-estado" name="estado">
+        <option value="">{{ _('Todos') }}</option>
+        <option value="borrador">{{ _('Borrador') }}</option>
+        <option value="generando">{{ _('Generando…') }}</option>
+        <option value="generada">{{ _('Generada') }}</option>
+        <option value="error_generacion">{{ _('Error de generación') }}</option>
+        <option value="finalizada">{{ _('Finalizada') }}</option>
+      </select>
+    </div>
+    <div class="actions">
+      <button type="submit" class="btn btn--primary">{{ _('Aplicar filtros') }}</button>
+      <button type="reset" class="btn">{{ _('Limpiar') }}</button>
+    </div>
+  </form>
+
+  <p id="lista-vacia" class="lead" hidden>
+    {{ _('No hay situaciones que coincidan con los filtros aplicados. <a href="/situaciones/nueva" class="link">Crea la primera</a>.')|safe }}
+  </p>
+
+  <div class="tabla-responsiva">
+    <table class="api" id="lista-tabla" hidden>
+      <caption class="sr-only">{{ _('Listado de situaciones de aprendizaje del docente') }}</caption>
+      <thead>
+        <tr>
+          <th scope="col">{{ _('Título') }}</th>
+          <th scope="col">{{ _('Curso') }}</th>
+          <th scope="col">{{ _('Materia') }}</th>
+          <th scope="col">{{ _('Estado') }}</th>
+          <th scope="col">{{ _('Modificada') }}</th>
+          <th scope="col"><span class="sr-only">{{ _('Acciones') }}</span></th>
+        </tr>
+      </thead>
+      <tbody id="lista-body"></tbody>
+    </table>
+  </div>
+  <nav class="paginador" id="pag-lista" aria-label="{{ _('Páginas de resultados') }}"></nav>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script>
+/* Cadenas del JavaScript. Estaban escritas a pelo en castellano, así que la
+   página salía a medias en catalán, gallego y euskera. |tojson por los
+   apóstrofos. */
+const T = {
+  cargando: {{ _('Cargando…')|tojson }},
+  sinResultados: {{ _('Sin resultados')|tojson }},
+  encontradas: {{ _('{n} situaciones encontradas')|tojson }},
+  encontradaUna: {{ _('1 situación encontrada')|tojson }},
+  abrir: {{ _('Abrir')|tojson }},
+  abrirSituacion: {{ _('Abrir situación {titulo}')|tojson }},
+  todos: {{ _('Todos')|tojson }},
+  todas: {{ _('Todas')|tojson }},
+  anterior: {{ _('Anterior')|tojson }},
+  siguiente: {{ _('Siguiente')|tojson }},
+  pagina: {{ _('Página {actual} de {ultima} · {total} en total')|tojson }},
+  estados: {
+    borrador: {{ _('Borrador')|tojson }},
+    generando: {{ _('Generando…')|tojson }},
+    generada: {{ _('Generada')|tojson }},
+    error_generacion: {{ _('Error')|tojson }},
+    finalizada: {{ _('Finalizada')|tojson }},
+  },
+};
+
+const fmt = (plantilla, valores) =>
+  plantilla.replace(/\{([a-z_]+)\}/g, (_m, clave) =>
+    valores[clave] !== undefined ? valores[clave] : `{${clave}}`);
+
+const POR_PAGINA = 10;
+let desplazamiento = 0;
+let filtrosActivos = {};
+
+function fmtFecha(iso) {
+  if (!iso) return '—';
+  const d = new Date(iso);
+  return isNaN(d) ? iso : d.toLocaleString('es-ES', {
+    day:'2-digit', month:'2-digit', year:'numeric',
+    hour:'2-digit', minute:'2-digit'
+  });
+}
+
+const CLASE_ESTADO = {
+  borrador: '', generando: 'badge--warn', generada: 'badge--ok',
+  error_generacion: 'badge--err', finalizada: 'badge--ok',
+};
+
+function badgeEstado(estado) {
+  const etiqueta = T.estados[estado] || estado;
+  return `<span class="badge ${CLASE_ESTADO[estado] || ''}">${escapeHtml(etiqueta)}</span>`;
+}
+
+function escapeHtml(s) {
+  return String(s ?? '').replace(/[&<>"']/g, (c) => ({
+    '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+  }[c]));
+}
+
+/* Paginador. Mismo comportamiento que el del panel de administración:
+   botones (no enlaces, porque no navegan a ninguna parte) y un estado con
+   aria-live, porque al cambiar de página el foco se queda en el botón y su
+   texto no cambia — sin esto, un lector de pantalla no anuncia nada. */
+function pintarPaginador(total) {
+  const cont = document.getElementById('pag-lista');
+  cont.replaceChildren();
+  if (total <= POR_PAGINA) return;   // una sola página: no hay nada que paginar
+
+  const ultima = Math.max(1, Math.ceil(total / POR_PAGINA));
+  const actual = Math.floor(desplazamiento / POR_PAGINA) + 1;
+
+  const boton = (texto, destino, inhabilitado) => {
+    const b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'btn btn--small';
+    b.textContent = texto;
+    b.disabled = inhabilitado;
+    if (!inhabilitado) b.addEventListener('click', () => {
+      desplazamiento = destino;
+      cargar(filtrosActivos);
+    });
+    return b;
+  };
+
+  const estado = document.createElement('p');
+  estado.className = 'paginador__estado';
+  estado.setAttribute('aria-live', 'polite');
+  estado.textContent = fmt(T.pagina, { actual, ultima, total });
+
+  cont.append(
+    boton(T.anterior, Math.max(0, desplazamiento - POR_PAGINA), actual === 1),
+    estado,
+    boton(T.siguiente, desplazamiento + POR_PAGINA, actual === ultima),
+  );
+}
+
+async function cargar(params = {}) {
+  filtrosActivos = params;
+  const qs = new URLSearchParams();
+  for (const [k, v] of Object.entries(params)) if (v) qs.set(k, v);
+  qs.set('limit', POR_PAGINA);
+  qs.set('offset', desplazamiento);
+
+  const resumen = document.getElementById('lista-resumen');
+  resumen.textContent = T.cargando;
+
+  const res = await fetch('/api/situaciones?' + qs);
+  if (res.status === 401) { window.location.href = '/login'; return; }
+  const datos = await res.json();
+  const items = datos.situaciones;
+
+  /* Si al borrar la última fila de una página el desplazamiento queda más
+     allá del final, se retrocede en vez de mostrar una tabla vacía. */
+  if (!items.length && desplazamiento > 0) {
+    desplazamiento = Math.max(0, desplazamiento - POR_PAGINA);
+    return cargar(params);
+  }
+
+  const tabla = document.getElementById('lista-tabla');
+  const body = document.getElementById('lista-body');
+  const vacia = document.getElementById('lista-vacia');
+  body.innerHTML = '';
+
+  if (!items.length) {
+    tabla.hidden = true;
+    vacia.hidden = false;
+    resumen.textContent = T.sinResultados;
+    pintarPaginador(0);
+    return;
+  }
+  vacia.hidden = true;
+  tabla.hidden = false;
+  /* El resumen cuenta el TOTAL, no las de esta página: «10 situaciones
+     encontradas» cuando hay 47 sería sencillamente falso. */
+  resumen.textContent = datos.total === 1
+    ? T.encontradaUna
+    : fmt(T.encontradas, { n: datos.total });
+  pintarPaginador(datos.total);
+
+  for (const sa of items) {
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td><a href="/situaciones/${sa.id_situacion}">${escapeHtml(sa.titulo)}</a></td>
+      <td>${escapeHtml(sa.curso)}</td>
+      <td>${escapeHtml(sa.materia)}</td>
+      <td>${badgeEstado(sa.estado)}</td>
+      <td>${fmtFecha(sa.fecha_modificacion)}</td>
+      <td><a href="/situaciones/${sa.id_situacion}" class="link"
+             aria-label="${escapeHtml(fmt(T.abrirSituacion, { titulo: sa.titulo }))}">${T.abrir}</a></td>
+    `;
+    body.appendChild(tr);
+  }
+}
+
+document.getElementById('filtros').addEventListener('submit', (ev) => {
+  ev.preventDefault();
+  const data = Object.fromEntries(new FormData(ev.target).entries());
+  desplazamiento = 0;
+  cargar(data);
+});
+
+document.getElementById('filtros').addEventListener('reset', () => {
+  desplazamiento = 0;
+  setTimeout(() => cargar(), 0);
+});
+
+rellenarSelect(document.getElementById('f-curso'), CATALOGOS.cursos, { placeholder: T.todos });
+
+/* Las materias del filtro salen del currículo cargado en la base de datos, no
+   de una lista en el código. Estuvieron cableadas en CATALOGOS.materias, y al
+   ampliar el currículo de 6 materias a 21 el filtro se habría quedado ofreciendo
+   las 6 viejas sin que nada fallara: el usuario simplemente no encontraría sus
+   situaciones de Física y Química.
+   Si la petición falla nos quedamos con la lista estática, que es incompleta
+   pero mejor que un desplegable vacío. */
+rellenarSelect(document.getElementById('f-materia'), CATALOGOS.materias, { placeholder: T.todas });
+Cobertura.cargar().then((cobertura) => {
+  if (!cobertura.length) return;
+  rellenarSelect(
+    document.getElementById('f-materia'),
+    Cobertura.materiasDe(cobertura),
+    { placeholder: T.todas }
+  );
+});
+
+cargar();
+</script>
+{% endblock %}

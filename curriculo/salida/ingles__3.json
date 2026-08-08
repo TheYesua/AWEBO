@@ -1,0 +1,217 @@
+{
+  "materia_oficial": "LENGUA EXTRANJERA",
+  "materia": "Inglés",
+  "etapa": "ESO",
+  "ciclo": "Tercer curso",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "3º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "CE1",
+      "descripcion": "Comprender e interpretar el sentido general y los detalles más relevantes de textos expresados de forma clara y en la lengua estándar, buscando fuentes fiables y haciendo uso de estrategias como la inferencia de significados, para responder a necesidades comunicativas concretas.",
+      "descriptores": [
+        "CCL2",
+        "CCL3",
+        "CP1",
+        "CP2",
+        "STEM1",
+        "CD1",
+        "CPSAA5",
+        "CCEC2"
+      ]
+    },
+    {
+      "codigo": "CE2",
+      "descripcion": "Producir textos originales, de extensión media, sencillos y con una organización clara, usando estrategias tales como la planificación, la compensación o la autorreparación, para expresar de forma creativa, adecuada y coherente mensajes relevantes y responder a propósitos comunicativos concretos.",
+      "descriptores": [
+        "CCL1",
+        "CP1",
+        "CP2",
+        "STEM1",
+        "CD2",
+        "CPSAA5",
+        "CE1",
+        "CCEC3"
+      ]
+    },
+    {
+      "codigo": "CE3",
+      "descripcion": "Interactuar con otras personas con creciente autonomía, usando estrategias de cooperación y empleando recursos analógicos y digitales, para responder a propósitos comunicativos concretos en intercambios respetuosos con las normas de cortesía.",
+      "descriptores": [
+        "CCL5",
+        "CP1",
+        "CP2",
+        "STEM1",
+        "CPSAA3",
+        "CC3"
+      ]
+    },
+    {
+      "codigo": "CE4",
+      "descripcion": "Mediar en situaciones cotidianas entre distintas lenguas, usando estrategias y conocimientos sencillos orientados a explicar conceptos o simplificar mensajes, para transmitir información de manera eficaz, clara y responsable.",
+      "descriptores": [
+        "CCL5",
+        "CP1",
+        "CP2",
+        "CP3",
+        "STEM1",
+        "CPSAA1",
+        "CPSAA3",
+        "CCEC1"
+      ]
+    },
+    {
+      "codigo": "CE5",
+      "descripcion": "Ampliar y usar los repertorios lingüísticos personales entre distintas lenguas, reflexionando de forma crítica sobre su funcionamiento y tomando conciencia de las estrategias y conocimientos propios, para mejorar la respuesta a necesidades comunicativas concretas.",
+      "descriptores": [
+        "CP2",
+        "STEM1",
+        "CPSAA1",
+        "CPSAA5",
+        "CD2"
+      ]
+    },
+    {
+      "codigo": "CE6",
+      "descripcion": "Valorar críticamente y adecuarse a la diversidad lingüística, cultural y artística a partir de la lengua extranjera, identificando y compartiendo las semejanzas y las diferencias entre lenguas y culturas, para actuar de forma empática y respetuosa en situaciones interculturales.",
+      "descriptores": [
+        "CCL5",
+        "CP3",
+        "CPSAA1",
+        "CPSAA3",
+        "CC3",
+        "CCEC1"
+      ]
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "CE1",
+      "descripcion": "Comprender, extraer y analizar el sentido global e información específica de textos orales, escritos y multimodales breves y sencillos sobre temas cotidianos, de relevancia personal o de interés público próximos a la experiencia del alumnado, expresados de forma clara, relativamente pausada y en la lengua estándar a través de diversos soportes."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "CE1",
+      "descripcion": "Interpretar el contenido y los rasgos discursivos de textos breves y sencillos, propios de los ámbitos de las relaciones interpersonales, del aprendizaje y de los medios de comunicación social, así como de textos literarios adecuados al nivel de madurez del alumnado."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "CE1",
+      "descripcion": "Seleccionar, organizar y aplicar de forma guiada las estrategias y conocimientos más adecuados en situaciones comunicativas variadas para comprender el sentido general, la información esencial y los detalles más relevantes de textos sobre temas habituales; inferir significados e interpretar elementos no verbales; y buscar y seleccionar información veraz."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "CE2",
+      "descripcion": "Expresar oralmente textos sencillos, estructurados, comprensibles, coherentes y adecuados a la situación comunicativa sobre asuntos cotidianos, de relevancia personal o de interés público próximos a la experiencia del alumnado, con el fin de describir, narrar, argumentar e informar sobre temas concretos, en diferentes soportes, utilizando, de forma guiada, recursos verbales y no verbales, así como estrategias de planificación, control, compensación y cooperación."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "CE2",
+      "descripcion": "Organizar, redactar y difundir textos sencillos de extensión media con aceptable claridad, coherencia, cohesión y adecuación a la situación comunicativa propuesta, siguiendo pautas establecidas, a través de herramientas analógicas y digitales, sobre asuntos cotidianos y frecuentes, de relevancia para el alumnado y próximos a su experiencia."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "CE2",
+      "descripcion": "Seleccionar, organizar y aplicar, de forma guiada, conocimientos y estrategias para planificar, producir, revisar y cooperar en la elaboración de textos, coherentes, cohesionados y adecuados a las intenciones comunicativas, a las características contextuales, a los aspectos socioculturales básicos y a la tipología textual, usando los recursos físicos o digitales más adecuados en función de la tarea y de las necesidades de cada momento y de las personas a quienes se dirige el texto."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "CE3",
+      "descripcion": "Planificar, participar y colaborar en situaciones interactivas breves y sencillas, sobre temas cotidianos, de relevancia personal o de interés público cercanos a la experiencia del alumnado, a través de diversos soportes, mostrando empatía y respeto por la cortesía lingüística y la etiqueta digital, así como por las diferentes necesidades, ideas, inquietudes, iniciativas y motivaciones de los interlocutores e interlocutoras."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "CE3",
+      "descripcion": "Seleccionar, organizar y utilizar, de forma guiada, estrategias adecuadas para iniciar, mantener y terminar la comunicación; tomar y ceder la palabra; solicitar y formular aclaraciones y explicaciones; reformular; resumir; comparar y contrastar; colaborar en la resolución de problemas básicos; y gestionar situaciones comprometidas."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "CE4",
+      "descripcion": "Inferir y explicar textos, conceptos y comunicaciones breves y sencillas en situaciones en las que atender a la diversidad, mostrando respeto y empatía por los interlocutores e interlocutoras y por las lenguas empleadas, y participando, de forma guiada, en la solución de problemas de intercomprensión y de entendimiento en el entorno próximo, apoyándose en diversos recursos y soportes."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "CE4",
+      "descripcion": "Aplicar, de forma guiada, estrategias que ayuden a crear puentes, faciliten la comunicación y sirvan para explicar y simplificar textos, conceptos y mensajes breves y sencillos, y que sean adecuadas a las intenciones comunicativas, a las características contextuales y a la tipología textual, usando recursos como la repetición y apoyos físicos o digitales en función de las necesidades de cada momento."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "CE5",
+      "descripcion": "Comparar y argumentar las semejanzas y diferencias entre distintas lenguas, reflexionando de manera progresivamente autónoma sobre su funcionamiento."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "CE5",
+      "descripcion": "Utilizar estrategias y conocimientos de mejora de la capacidad de comunicar y de aprender la lengua extranjera, con apoyo de otros participantes y de soportes analógicos y digitales, aprovechando los repertorios lingüísticos propios."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "CE5",
+      "descripcion": "Identificar y registrar los progresos y dificultades de aprendizaje de la lengua extranjera, seleccionando las estrategias más eficaces para superar esas dificultades y progresar en el aprendizaje, realizando actividades de autoevaluación y coevaluación, como las propuestas en el Portfolio Europeo de las Lenguas (PEL) o en un diario de aprendizaje, haciendo esos progresos y dificultades explícitos."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "CE6",
+      "descripcion": "Actuar de manera empática y respetuosa en situaciones interculturales, construyendo vínculos entre las diferentes lenguas y culturas, rechazando cualquier tipo de discriminación, prejuicio y estereotipo y proponiendo, de forma guiada, vías de solución a aquellos factores socioculturales que dificulten la comunicación."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "CE6",
+      "descripcion": "Reconocer y adecuarse a la diversidad lingüística, cultural y artística, propia de países donde se habla la lengua extranjera, reconociéndola como fuente de enriquecimiento personal y compartiendo elementos culturales y lingüísticos que fomenten los derechos humanos, la sostenibilidad y los valores democráticos."
+    },
+    {
+      "codigo": "6.3",
+      "competencia": "CE6",
+      "descripcion": "Aplicar, de forma progresivamente autónoma, estrategias para explicar y apreciar la diversidad lingüística, cultural y artística, atendiendo a valores ecosociales y democráticos y respetando los principios de justicia, equidad e igualdad."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Comunicación",
+      "titulo": "Comunicación",
+      "items": [
+        "Autoconfianza e iniciativa. El error como parte integrante del aprendizaje.",
+        "Estrategias básicas de uso común para la planificación, ejecución, control y reparación de la comprensión, la producción y la coproducción de textos orales, escritos y multimodales.",
+        "Conocimientos, destrezas y actitudes que permitan llevar a cabo actividades de mediación en situaciones cotidianas.",
+        "Funciones comunicativas de uso común adecuadas al ámbito y al contexto comunicativo; saludar y despedirse, presentar y presentarse; describir personas, objetos, lugares, fenómenos y acontecimientos; situar eventos en el tiempo; situar objetos, personas y lugares en el espacio; pedir e intercambiar información sobre cuestiones cotidianas; dar y pedir instrucciones y órdenes; ofrecer, aceptar y rechazar ayuda, proposiciones o sugerencias; expresar parcialmente el gusto le interés y emociones; narrar acontecimientos pasados, describir situaciones presentes y enunciar sucesos futuros; expresar la opinión, la posibilidad, la capacidad, la obligación y la prohibición; expresar argumentaciones sencillas; realizar hipótesis. reformular y resumir.",
+        "Modelos contextuales y géneros discursivos de uso común en la comprensión, producción y coproducción de textos orales, escritos y multimodales, breves y sencillos, literarios y no literarios: características y reconocimiento del contexto (participantes y situación); expectativas generadas por el contexto; organización y estructuración según el género y la función textual.",
+        "Unidades lingüísticas básicas de uso común y significados asociados a dichas unidades tales como la expresión de la identidad y sus propiedades, cantidad y cualidad, el espacio y las relaciones espaciales, el tiempo y las relaciones temporales, la afirmación, la negación, la interrogación y la exclamación, relaciones lógicas habituales.",
+        "Léxico de uso común y de interés para el alumnado relativo a la identificación personal, relaciones interpersonales, lugares y entornos, ocio y tiempo libre, salud y actividad física, vida cotidiana, vivienda y hogar, clima y entorno natural, tecnologías de la información y la comunicación y el sistema escolar.",
+        "Patrones sonoros, acentuales, rítmicos y de entonación básicos de uso común y significados e intenciones comunicativas generales asociadas a dichos patrones.",
+        "Convenciones ortográficas básicas de uso común y significados e intenciones comunicativas asociados a los formatos, patrones y elementos gráficos.",
+        "Convenciones y estrategias conversacionales básicas de uso común, en formato síncrono o asíncrono, para iniciar, mantener y terminar la comunicación, tomar y ceder la palabra, pedir y dar aclaraciones y explicaciones, reformular, comparar y contrastar, resumir, colaborar, debatir, etc.",
+        "Recursos para el aprendizaje y estrategias básicas de uso común de búsqueda y selección de información: diccionarios, libros de consulta, bibliotecas, recursos digitales e informáticos, etc.",
+        "Estrategias de identificación de la autoría de las fuentes consultadas y los contenidos utilizados.",
+        "Herramientas analógicas y digitales de uso común para la comprensión, producción y coproducción oral, escrita y multimodal; plataformas virtuales de interacción, cooperación y colaboración educativa (aulas virtuales, videoconferencias, herramientas digitales colaborativas, etc.) para el aprendizaje, la comunicación y el desarrollo de proyectos con hablantes o estudiantes de la lengua extranjera."
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Plurilingüismo",
+      "titulo": "Plurilingüismo",
+      "items": [
+        "Estrategias y técnicas para responder eficazmente a una necesidad comunicativa concreta de forma comprensible, a pesar de las limitaciones derivadas del nivel de competencia en la lengua extranjera y en las demás lenguas del repertorio lingüístico propio.",
+        "Estrategias de uso común para identificar, organizar, retener, recuperar y utilizar creativamente unidades lingüísticas (léxico, morfosintaxis, patrones sonoros, etc.) a partir de la comparación de las lenguas y variedades que conforman el repertorio lingüístico personal.",
+        "Estrategias y herramientas de uso común para la autoevaluación, la coevaluación y la autorreparación, analógicas y digitales, individuales y cooperativas.",
+        "Expresiones y léxico específico básico para intercambiar ideas sobre la comunicación, la lengua, el aprendizaje y las herramientas de comunicación y aprendizaje (metalenguaje).",
+        "Comparación entre lenguas a partir de elementos de la lengua extranjera y otras lenguas: origen y parentescos."
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Interculturalidad",
+      "titulo": "Interculturalidad",
+      "items": [
+        "La lengua extranjera como medio de comunicación interpersonal e internacional, como fuente de información y como herramienta de participación social y de enriquecimiento personal.",
+        "Interés e iniciativa en la realización de intercambios comunicativos a través de diferentes medios con hablantes o estudiantes de la lengua extranjera.",
+        "Aspectos socioculturales y sociolingüísticos básicos relativos a la vida cotidiana, las condiciones de vida y las relaciones interpersonales; convenciones sociales de uso común; lenguaje no verbal, cortesía lingüística y etiqueta digital; cultura, normas, costumbres y valores propios de países donde se habla la lengua extranjera.",
+        "Estrategias de uso común para entender y apreciar la diversidad lingüística, cultural y artística, atendiendo a valores ecosociales y democráticos.",
+        "Estrategias de uso común de detección y actuación de usos discriminatorios del lenguaje verbal y no verbal."
+      ]
+    }
+  ]
+}

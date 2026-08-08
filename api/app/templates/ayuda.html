@@ -1,0 +1,238 @@
+{% extends "base.html" %}
+
+{% block title %}Ayuda · AWEBO{% endblock %}
+
+{% block content %}
+<section class="hero">
+  <h1>{{ _('Centro de ayuda') }}</h1>
+  <p class="lead">
+    {{ _('Guías rápidas para crear, editar y exportar Situaciones de Aprendizaje LOMLOE con asistencia de IA.') }}
+  </p>
+</section>
+
+<nav aria-label="{{ _('Índice de la página') }}" class="card" style="background: var(--color-surface-2);">
+  <h2 style="font-size: var(--fs-base);">{{ _('En esta página') }}</h2>
+  <ul style="margin: 0; padding-left: 1.25rem;">
+    <li><a href="#empezar">{{ _('Empezar') }}</a></li>
+    <li><a href="#crear">{{ _('Crear una Situación de Aprendizaje') }}</a></li>
+    <li><a href="#curriculo">{{ _('Qué currículo usa AWEBO') }}</a></li>
+    <li><a href="#generar">{{ _('Generar contenido con IA') }}</a></li>
+    <li><a href="#retocar">{{ _('Retocar el texto generado') }}</a></li>
+    <li><a href="#editar">{{ _('Editar y versionar') }}</a></li>
+    <li><a href="#adaptar">{{ _('Adaptaciones (ACNS / ACS)') }}</a></li>
+    <li><a href="#escuchar">{{ _('Escuchar una situación') }}</a></li>
+    <li><a href="#exportar">{{ _('Exportar a PDF y DOCX') }}</a></li>
+    <li><a href="#apariencia">{{ _('Apariencia e idioma') }}</a></li>
+    <li><a href="#cuenta">{{ _('Mi cuenta') }}</a></li>
+    <li><a href="#problemas">{{ _('Problemas frecuentes') }}</a></li>
+  </ul>
+</nav>
+
+<article class="card" id="empezar">
+  <h2>{{ _('Empezar') }}</h2>
+  <ol>
+    <li>{{ _('Si aún no tienes cuenta, <a href="/register">regístrate como docente</a>.')|safe }}</li>
+    <li>{{ _('Accede con tu correo y contraseña en <a href="/login">Iniciar sesión</a>.')|safe }}</li>
+    <li>{{ _('Desde tu <a href="/perfil">perfil</a> puedes consultar y modificar tus datos.')|safe }}</li>
+  </ol>
+</article>
+
+<article class="card" id="crear">
+  <h2>{{ _('Crear una Situación de Aprendizaje') }}</h2>
+  <p>
+    {{ _('Pulsa <strong>Nueva situación</strong> desde la lista o desde la cabecera. Indica al menos materia, curso, número de sesiones y duración. Los demás campos son opcionales y se utilizan para guiar a la IA.')|safe }}
+  </p>
+
+  <h3>{{ _('Curso y materia se acotan entre sí') }}</h3>
+  <p>
+    {{ _('Al elegir un curso, el desplegable de materia solo ofrece las que se imparten en él, y al revés. No es una limitación de la aplicación sino del currículo: Latín, por ejemplo, solo existe en 4.º. Si eliges una combinación sin currículo, la situación se generaría sin criterios a los que anclarse.') }}
+  </p>
+
+  <h3>{{ _('¿Aún no sabes sobre qué trabajar?') }}</h3>
+  <p>
+    {{ _('El botón <strong>Proponer temáticas</strong> pide a la IA varias ideas de situación para la materia y el curso que hayas elegido. Puedes añadir una nota de contexto —el barrio del centro, un proyecto en marcha, una efeméride— para que las propuestas se ajusten. Al elegir una, sus datos se vuelcan al formulario y puedes seguir editándolos: no se envía nada todavía.')|safe }}
+  </p>
+
+  <h3>{{ _('Idioma de la situación') }}</h3>
+  <p>
+    {{ _('El campo <strong>Idioma</strong> determina en qué lengua se redacta el documento, y es independiente del idioma en el que veas la aplicación. Puedes tener la interfaz en castellano y crear la situación directamente en catalán, gallego, euskera, inglés, francés o árabe.')|safe }}
+  </p>
+</article>
+
+<article class="card" id="curriculo">
+  <h2>{{ _('Qué currículo usa AWEBO') }}</h2>
+  <p>
+    {{ _('Las competencias específicas, los criterios de evaluación y los saberes básicos no los inventa la IA: se extraen del texto oficial publicado en el BOE y se cargan en la aplicación. La fuente es la <strong>Orden EFP/754/2022</strong>, que desarrolla el Real Decreto 217/2022 de enseñanzas mínimas de la ESO.')|safe }}
+  </p>
+  <p>
+    {{ _('Están disponibles las materias de Educación Secundaria Obligatoria. Bachillerato y Formación Profesional todavía no.') }}
+  </p>
+
+  <h3>{{ _('Matemáticas A y Matemáticas B') }}</h3>
+  <p>
+    {{ _('En 4.º, Matemáticas se desdobla en dos opciones. No son una rama de ciencias y otra de letras, ni una continuación de la otra: la norma las distingue por enfoque.') }}
+  </p>
+  <ul>
+    <li>{{ _('<strong>Matemáticas A</strong> se desarrolla sobre todo mediante la resolución de problemas, la investigación y el análisis matemático de situaciones de la vida cotidiana.')|safe }}</li>
+    <li>{{ _('<strong>Matemáticas B</strong> profundiza además en los procedimientos algebraicos, geométricos, analíticos y estadísticos, en contextos matemáticos, científicos y sociales.')|safe }}</li>
+  </ul>
+  <p>
+    {{ _('El real decreto no vincula ninguna de las dos a una modalidad concreta de Bachillerato. En 1.º a 3.º la materia es simplemente <strong>Matemáticas</strong>, sin letra.')|safe }}
+  </p>
+
+  <h3>{{ _('Tecnología y Tecnología y Digitalización') }}</h3>
+  <p>
+    {{ _('Son dos materias distintas, no dos nombres de la misma. <strong>Tecnología y Digitalización</strong> es la de 2.º y 3.º; <strong>Tecnología</strong> es una materia de opción de 4.º. Tienen competencias específicas diferentes, así que conviene no confundirlas al crear una situación.')|safe }}
+  </p>
+
+  <h3>{{ _('Materias que no encontrarás') }}</h3>
+  <p>
+    {{ _('<strong>Segunda Lengua Extranjera</strong> no aparece en el desplegable. No es un olvido: el BOE no le publica currículo propio, sino que remite al de la primera lengua extranjera. Mientras AWEBO no sepa reutilizarlo, ofrecerla daría una materia sin ningún criterio que seleccionar.')|safe }}
+  </p>
+</article>
+
+<article class="card" id="generar">
+  <h2>{{ _('Generar contenido con IA') }}</h2>
+  <p>
+    {{ _('Al crear una SA puedes marcar <strong>Generar con IA</strong> para que se completen automáticamente las seis secciones LOMLOE: justificación, objetivos, currículo, secuencia didáctica, evaluación y atención a la diversidad. La generación tarda entre 30 segundos y 2 minutos según el proveedor.')|safe }}
+  </p>
+  <p>
+    {{ _('Puedes <strong>regenerar una sola sección</strong> desde el detalle si una parte no te convence; las demás se conservan.')|safe }}
+  </p>
+
+  <h3>{{ _('Elegir quién redacta') }}</h3>
+  <p>
+    {{ _('En <a href="/perfil">Mi perfil</a> puedes escoger el <strong>proveedor</strong> y el <strong>modelo</strong> de IA que se usarán en tus situaciones. Si no eliges nada se usa el del sistema. Los modelos disponibles cambian según el proveedor, y la lista se actualiza sola al cambiarlo.')|safe }}
+  </p>
+</article>
+
+<article class="card" id="retocar">
+  <h2>{{ _('Retocar el texto generado') }}</h2>
+  <p>
+    {{ _('Cada sección del detalle tiene sus propias operaciones. No todas las secciones admiten todas: las que no tienen sentido para una sección concreta no se ofrecen.') }}
+  </p>
+  <ul>
+    <li>{{ _('<strong>Resumir</strong> — acorta el texto conservando lo esencial.')|safe }}</li>
+    <li>{{ _('<strong>Desarrollar</strong> — amplía la sección con más detalle.')|safe }}</li>
+    <li>{{ _('<strong>Traducir</strong> — pasa la sección al idioma de la situación. El destino no se elige por operación, precisamente para que un documento no acabe con unas secciones en un idioma y otras en otro.')|safe }}</li>
+    <li>{{ _('<strong>Proponer alternativa</strong> — redacta una segunda versión sin borrar la que tenías.')|safe }}</li>
+  </ul>
+  <p>
+    {{ _('Con la alternativa verás las dos redacciones enfrentadas y tendrás que quedarte con una para continuar. La que descartes no se pierde: queda en el historial de versiones.') }}
+  </p>
+  <p>
+    {{ _('Cualquiera de estas operaciones se puede revertir con <strong>Deshacer</strong>, que recupera el texto inmediatamente anterior.')|safe }}
+  </p>
+</article>
+
+<article class="card" id="editar">
+  <h2>{{ _('Editar y versionar') }}</h2>
+  <p>
+    {{ _('Los cambios al título y los campos básicos crean una <strong>nueva versión</strong> automáticamente. Desde el detalle puedes consultar el historial completo y volver a un estado anterior.')|safe }}
+  </p>
+</article>
+
+<article class="card" id="adaptar">
+  <h2>{{ _('Adaptaciones (ACNS / ACS)') }}</h2>
+  <p>
+    {{ _('A partir de una SA generada, puedes crear una <strong>adaptación</strong> para alumnado con necesidades específicas:')|safe }}
+  </p>
+  <ul>
+    <li>{{ _('<strong>ACNS</strong> — adaptación curricular no significativa.')|safe }}</li>
+    <li>{{ _('<strong>ACS</strong> — adaptación curricular significativa.')|safe }}</li>
+  </ul>
+  <p>
+    {{ _('La SA adaptada se genera completa y conserva un enlace a la SA de origen.') }}
+  </p>
+</article>
+
+<article class="card" id="escuchar">
+  <h2>{{ _('Escuchar una situación') }}</h2>
+  <p>
+    {{ _('Cada sección del detalle tiene un botón <strong>Escuchar</strong> que la lee en voz alta. Se lee sección a sección, y no el documento entero, para que puedas repasar solo la parte que te interesa.')|safe }}
+  </p>
+  <p>
+    {{ _('La voz la pone tu propio ordenador, no la aplicación. Por eso el botón puede no aparecer: si tu sistema no tiene instalada ninguna voz para el idioma de la situación, se oculta y verás un aviso explicándolo. Instalar voces adicionales se hace desde la configuración del sistema operativo, no desde AWEBO.') }}
+  </p>
+</article>
+
+<article class="card" id="exportar">
+  <h2>{{ _('Exportar a PDF y DOCX') }}</h2>
+  <p>
+    {{ _('Desde el detalle de cualquier SA puedes descargar el documento en <strong>PDF</strong> (paginación cuidada, listo para imprimir) o en <strong>DOCX</strong> (editable en Word/LibreOffice).')|safe }}
+  </p>
+  <p>
+    {{ _('Los rótulos del documento (los títulos de sección, los encabezados de tabla) salen en el idioma en el que tengas la interfaz. El contenido, en el idioma de la situación.') }}
+  </p>
+</article>
+
+<article class="card" id="apariencia">
+  <h2>{{ _('Apariencia e idioma') }}</h2>
+  <h3>{{ _('Tema visual') }}</h3>
+  <p>
+    {{ _('En la cabecera puedes elegir entre <strong>Claro</strong>, <strong>Oscuro</strong> y <strong>Automático</strong>. Automático sigue la preferencia de tu sistema operativo y cambia solo si esta cambia. La elección se recuerda en el navegador.')|safe }}
+  </p>
+  <h3>{{ _('Idioma de la interfaz') }}</h3>
+  <p>
+    {{ _('El selector de idioma de la cabecera cambia la lengua de los menús, los botones y esta misma ayuda, y te deja en la página en la que estabas. Si has iniciado sesión, la elección se guarda en tu perfil.') }}
+  </p>
+  <p>
+    {{ _('No confundas este idioma con el de la situación: son independientes. Cambiar la interfaz a gallego no traduce las situaciones que ya tengas escritas en castellano.') }}
+  </p>
+</article>
+
+<article class="card" id="cuenta">
+  <h2>{{ _('Mi cuenta') }}</h2>
+  <p>
+    {{ _('En <a href="/perfil">Mi perfil</a> puedes actualizar nombre, centro educativo, contraseña, idioma y proveedor de IA.')|safe }}
+  </p>
+  <h3>{{ _('Si olvidas la contraseña') }}</h3>
+  <p>
+    {{ _('Entra en <a href="/restablecer-contrasena">¿Olvidaste tu contraseña?</a>, indica tu correo y escribe una contraseña nueva. El cambio es inmediato: en esta versión no se envía ningún correo de confirmación, porque AWEBO todavía no tiene servidor de correo. La verificación por correo está prevista antes de cualquier despliegue real.')|safe }}
+  </p>
+  <h3>{{ _('Si tu cuenta se elimina') }}</h3>
+  <p>
+    {{ _('Las cuentas las elimina un administrador; no hay opción de darse de baja desde el perfil. Al eliminarla, ni la cuenta ni sus situaciones se borran de inmediato: quedan retenidas <strong>90 días</strong>. Durante ese plazo, si vuelves a registrarte con el mismo correo puedes solicitar recuperar tu contenido, y un administrador tendrá que aprobarlo. Pasado el plazo, el borrado es definitivo.')|safe }}
+  </p>
+</article>
+
+<article class="card" id="problemas">
+  <h2>{{ _('Problemas frecuentes') }}</h2>
+  <details class="rubrica">
+    <summary>{{ _('La generación de IA falla o tarda mucho') }}</summary>
+    <p>
+      {{ _('Espera 1–2 minutos. Si tras ese tiempo la SA queda en estado <em>error</em>, vuelve al detalle y pulsa <strong>Reintentar</strong> o <strong>Regenerar sección</strong>.')|safe }}
+    </p>
+  </details>
+  <details class="rubrica">
+    <summary>{{ _('No encuentro una materia en el desplegable') }}</summary>
+    <p>
+      {{ _('Comprueba primero el curso: cada materia solo aparece en los cursos en los que se imparte. Si buscas Segunda Lengua Extranjera, no está disponible todavía; y si buscas Tecnología en 2.º o 3.º, ahí se llama Tecnología y Digitalización.') }}
+    </p>
+  </details>
+  <details class="rubrica">
+    <summary>{{ _('Una situación antigua avisa de que su combinación no es válida') }}</summary>
+    <p>
+      {{ _('Significa que la materia y el curso que tiene guardados no se corresponden con ningún currículo cargado. Puede pasar con situaciones creadas antes de una ampliación del catálogo. Corrige los dos campos desde el detalle y podrás volver a generarla; el contenido que ya tuviera no se pierde.') }}
+    </p>
+  </details>
+  <details class="rubrica">
+    <summary>{{ _('No veo el botón de escuchar') }}</summary>
+    <p>
+      {{ _('Tu sistema no tiene ninguna voz instalada para el idioma de esa situación. Puedes añadir voces desde la configuración de tu sistema operativo.') }}
+    </p>
+  </details>
+  <details class="rubrica">
+    <summary>{{ _('El PDF tiene saltos de página feos') }}</summary>
+    <p>
+      {{ _('Las plantillas de exportación intentan evitar viudas y huérfanos, pero si te ocurre, edita la sección concreta para reducir longitud y vuelve a exportar.') }}
+    </p>
+  </details>
+  <details class="rubrica">
+    <summary>{{ _('No recuerdo mi contraseña') }}</summary>
+    <p>
+      {{ _('Usa <a href="/restablecer-contrasena">¿Olvidaste tu contraseña?</a> para establecer una nueva. No tendrás que esperar ningún correo.')|safe }}
+    </p>
+  </details>
+</article>
+{% endblock %}

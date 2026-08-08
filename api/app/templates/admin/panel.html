@@ -1,0 +1,773 @@
+{% extends "base.html" %}
+{% block title %}{{ _('Administración') }} · AWEBO{% endblock %}
+
+{% block content %}
+<section aria-labelledby="t-admin">
+  <h1 id="t-admin">{{ _('Panel de administración') }}</h1>
+  <p class="lead">
+    {{ _('Gestiona cuentas y contenido. <strong>El contenido de las situaciones de aprendizaje no es accesible desde aquí</strong>: se pueden borrar, no leer.')|safe }}
+  </p>
+
+  <p class="alert" id="admin-msg" role="alert" hidden></p>
+
+  {# ---------------------------------------------------------------------
+     Estadísticas globales
+     --------------------------------------------------------------------- #}
+  <article class="card" aria-labelledby="t-globales">
+    <h2 id="t-globales">{{ _('Resumen de la plataforma') }}</h2>
+    <dl class="stats-grid stats-grid--admin" id="stats-globales">
+      <p aria-live="polite">{{ _('Cargando…') }}</p>
+    </dl>
+  </article>
+
+  {# ---------------------------------------------------------------------
+     Cuentas
+     --------------------------------------------------------------------- #}
+  <article class="card" aria-labelledby="t-usuarios">
+    <header class="card-header">
+      <h2 id="t-usuarios">{{ _('Cuentas') }}</h2>
+      <div class="card-header__acciones">
+        <button type="button" class="btn btn--small btn--primary" id="btn-nueva-cuenta">
+          <i data-lucide="user-plus" aria-hidden="true"></i>
+          <span>{{ _('Nueva cuenta') }}</span>
+        </button>
+      </div>
+    </header>
+
+    <div id="alta-cuenta" hidden>
+      <form id="form-alta" class="form" novalidate>
+        <div class="row">
+          <div class="field">
+            <label for="alta-correo">{{ _('Correo electrónico') }}</label>
+            <input type="email" id="alta-correo" name="correo" required autocomplete="off">
+          </div>
+          <div class="field">
+            <label for="alta-nombre">{{ _('Nombre completo') }}</label>
+            <input type="text" id="alta-nombre" name="nombre" required minlength="2" maxlength="100">
+          </div>
+        </div>
+        <div class="row">
+          <div class="field">
+            <label for="alta-contrasena">{{ _('Contraseña') }}</label>
+            <input type="password" id="alta-contrasena" name="contrasena" required
+                   minlength="8" autocomplete="new-password" aria-describedby="alta-pass-help">
+            <small id="alta-pass-help" class="help">{{ _('Mínimo 8 caracteres, con al menos una letra y un dígito.') }}</small>
+          </div>
+          <div class="field">
+            <label for="alta-rol">{{ _('Rol') }}</label>
+            <select id="alta-rol" name="rol">
+              <option value="docente">{{ _('Docente') }}</option>
+              <option value="administrador">{{ _('Administrador') }}</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="field">
+            <label for="alta-centro">{{ _('Centro educativo') }}</label>
+            <input type="text" id="alta-centro" name="centro_educativo" maxlength="200">
+          </div>
+          <div class="field">
+            <label for="alta-comunidad">{{ _('Comunidad autónoma') }}</label>
+            <input type="text" id="alta-comunidad" name="comunidad_autonoma" maxlength="50">
+          </div>
+        </div>
+        <div class="actions">
+          <button type="submit" class="btn btn--primary">{{ _('Crear cuenta') }}</button>
+          <button type="button" class="btn" id="btn-cancelar-alta">{{ _('Cancelar') }}</button>
+        </div>
+        <p class="alert" id="alta-msg" role="alert" hidden></p>
+      </form>
+    </div>
+
+    <div class="tabla-responsiva">
+      <table class="tabla-admin" id="tabla-usuarios">
+        <caption class="sr-only">{{ _('Cuentas registradas con sus estadísticas') }}</caption>
+        <thead>
+          <tr>
+            <th scope="col">{{ _('Correo') }}</th>
+            <th scope="col">{{ _('Nombre') }}</th>
+            <th scope="col">{{ _('Rol') }}</th>
+            <th scope="col">{{ _('Centro') }}</th>
+            <th scope="col">{{ _('Situaciones') }}</th>
+            <th scope="col">{{ _('Última sesión') }}</th>
+            <th scope="col">{{ _('Estado') }}</th>
+            <th scope="col">{{ _('Acciones') }}</th>
+          </tr>
+        </thead>
+        <tbody id="cuerpo-usuarios">
+          <tr><td colspan="8">{{ _('Cargando…') }}</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <nav class="paginador" id="pag-usuarios" aria-label="{{ _('Páginas de cuentas') }}"></nav>
+  </article>
+
+  {# ---------------------------------------------------------------------
+     Contenido
+     --------------------------------------------------------------------- #}
+  <article class="card" aria-labelledby="t-situaciones">
+    <h2 id="t-situaciones">{{ _('Situaciones de aprendizaje') }}</h2>
+    <p class="help">
+      {{ _('Solo se muestran los datos necesarios para identificarlas. No es posible abrir su contenido.') }}
+    </p>
+
+    <form id="filtros-sa" class="form" novalidate>
+      <div class="row">
+        <div class="field">
+          <label for="filtro-estado">{{ _('Estado') }}</label>
+          <select id="filtro-estado" name="estado">
+            <option value="">{{ _('Todos') }}</option>
+            <option value="borrador">{{ _('Borrador') }}</option>
+            <option value="generando">{{ _('Generando…') }}</option>
+            <option value="generada">{{ _('Generada') }}</option>
+            <option value="error_generacion">{{ _('Error de generación') }}</option>
+            <option value="finalizada">{{ _('Finalizada') }}</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="filtro-usuario">{{ _('Cuenta') }}</label>
+          <select id="filtro-usuario" name="id_usuario">
+            <option value="">{{ _('Todas') }}</option>
+          </select>
+        </div>
+      </div>
+      <div class="actions">
+        <button type="submit" class="btn btn--secondary">{{ _('Aplicar filtros') }}</button>
+        <button type="button" class="btn" id="btn-limpiar-sa">{{ _('Limpiar') }}</button>
+      </div>
+    </form>
+
+    <div class="tabla-responsiva">
+      <table class="tabla-admin" id="tabla-sa">
+        <caption class="sr-only">{{ _('Situaciones de aprendizaje de todas las cuentas') }}</caption>
+        <thead>
+          <tr>
+            <th scope="col">{{ _('Título') }}</th>
+            <th scope="col">{{ _('Materia') }}</th>
+            <th scope="col">{{ _('Curso') }}</th>
+            <th scope="col">{{ _('Estado') }}</th>
+            <th scope="col">{{ _('Cuenta') }}</th>
+            <th scope="col">{{ _('Modificada') }}</th>
+            <th scope="col">{{ _('Acciones') }}</th>
+          </tr>
+        </thead>
+        <tbody id="cuerpo-sa">
+          <tr><td colspan="7">{{ _('Cargando…') }}</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <nav class="paginador" id="pag-sa" aria-label="{{ _('Páginas de situaciones') }}"></nav>
+  </article>
+</section>
+{% endblock %}
+
+{% block scripts %}
+{# Diccionario de cadenas para el JavaScript.
+   Las plantillas se traducen con _() en el servidor, pero los mensajes que el
+   JS escribe al vuelo no pasan por ahí: quedarían en castellano en las cuatro
+   lenguas. Este panel fue el primero en hacerlo bien; el resto de plantillas
+   siguieron después el mismo patrón (tarea 10a).
+
+   |tojson y no comillas a mano: una traducción con un apóstrofo —abundantes
+   en catalán— rompería el script. #}
+<script>
+const T = {
+  confirmarBorradoSA: {{ _('¿Eliminar «{titulo}»? Esta acción no se puede deshacer.')|tojson }},
+  confirmarBajaTotal: {{ _('Eliminar la cuenta {correo} Y todo su contenido ({n} situaciones). No se puede deshacer.')|tojson }},
+  confirmarBajaLapida: {{ _('Dar de baja a {correo} conservando sus {n} situaciones durante 90 días. Podrá recuperarlas volviendo a registrarse con este correo.')|tojson }},
+  errorGenerico: {{ _('No se ha podido completar la operación.')|tojson }},
+  sinCuentas: {{ _('No hay ninguna cuenta registrada.')|tojson }},
+  sinSituaciones: {{ _('No hay situaciones que coincidan con los filtros.')|tojson }},
+  activa: {{ _('Activa')|tojson }},
+  dadaDeBaja: {{ _('Dada de baja')|tojson }},
+  graciaVencida: {{ _('Baja, pendiente de purgado')|tojson }},
+  eliminar: {{ _('Eliminar')|tojson }},
+  bajaTotal: {{ _('Baja total')|tojson }},
+  bajaConservando: {{ _('Baja conservando')|tojson }},
+  nunca: {{ _('Nunca')|tojson }},
+  situaciones: {{ _('Situaciones')|tojson }},
+  cuentasActivas: {{ _('Cuentas activas')|tojson }},
+  dadasDeBaja: {{ _('Dadas de baja')|tojson }},
+  reclamacionPendiente: {{ _('Reclamación pendiente')|tojson }},
+  aprobar: {{ _('Aprobar')|tojson }},
+  rechazar: {{ _('Rechazar')|tojson }},
+  confirmarAprobar: {{ _('Devolver la cuenta {correo} y sus {n} situaciones a quien la reclama ({nombre}). Comprueba antes que es la misma persona: una dirección de centro puede haberse reasignado.')|tojson }},
+  confirmarRechazar: {{ _('Rechazar la solicitud sobre {correo}. El contenido sigue guardado hasta que venza el plazo.')|tojson }},
+  solicitadaPor: {{ _('Solicitada por {nombre}')|tojson }},
+  editar: {{ _('Editar')|tojson }},
+  guardar: {{ _('Guardar')|tojson }},
+  cancelar: {{ _('Cancelar')|tojson }},
+  editando: {{ _('Editando {correo}')|tojson }},
+  campoNombre: {{ _('Nombre completo')|tojson }},
+  campoCentro: {{ _('Centro educativo')|tojson }},
+  campoEspecialidad: {{ _('Especialidad')|tojson }},
+  campoComunidad: {{ _('Comunidad autónoma')|tojson }},
+  campoRol: {{ _('Rol')|tojson }},
+  rolDocente: {{ _('Docente')|tojson }},
+  rolAdmin: {{ _('Administrador')|tojson }},
+  guardado: {{ _('Cambios guardados.')|tojson }},
+  anterior: {{ _('Anterior')|tojson }},
+  siguiente: {{ _('Siguiente')|tojson }},
+  pagina: {{ _('Página {actual} de {ultima} · {total} en total')|tojson }},
+  sinResultados: {{ _('Sin resultados')|tojson }},
+};
+
+/* Diez por página. El servidor usa el mismo valor por defecto, pero se manda
+   explícito: si algún día cambia allí, la interfaz seguiría paginando con el
+   número que muestra, en vez de descuadrarse en silencio. */
+const POR_PAGINA = 10;
+
+/* Sustitución de marcadores con nombre. Se hace aquí y no con plantillas de
+   cadena porque el texto viene ya traducido del servidor: el orden de los
+   marcadores lo decide cada lengua, no el código.
+
+   Llaves y no %(nombre)s, que es la convención de gettext: Jinja aplica
+   `cadena % variables` al resultado de _() con un diccionario vacío, y
+   un %(titulo)s ahí dentro lanza KeyError al renderizar la página. */
+const fmt = (plantilla, valores) =>
+  plantilla.replace(/\{([a-z_]+)\}/g, (_m, clave) =>
+    valores[clave] !== undefined ? valores[clave] : `{${clave}}`);
+
+const aviso = (texto, esError = true) => {
+  const el = document.getElementById('admin-msg');
+  el.textContent = texto;
+  el.classList.toggle('alert--warn', esError);
+  el.hidden = false;
+};
+
+const fecha = (iso) => {
+  if (!iso) return T.nunca;
+  const d = new Date(iso);
+  return isNaN(d.getTime()) ? iso : d.toLocaleDateString();
+};
+
+async function pedir(url, opciones = {}) {
+  const res = await fetch(url, {
+    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+    ...opciones,
+  });
+  const cuerpo = await res.json().catch(() => ({}));
+  if (!res.ok) throw new Error(cuerpo.mensaje || cuerpo.error || T.errorGenerico);
+  return cuerpo;
+}
+
+
+/* ------------------------------------------------------------------ */
+/* Paginador reutilizable                                              */
+/* ------------------------------------------------------------------ */
+
+/* Estado en desplazamientos, no en números de página: es lo que espera el
+   servidor y evita convertir de un lado y de otro. */
+const desplazamiento = { usuarios: 0, sa: 0 };
+
+/* Botones y no enlaces: no navegan a ninguna parte, cambian el contenido de
+   la tabla en el sitio. Un <a href="#"> aquí obliga al lector de pantalla a
+   anunciar un enlace que no lleva a ningún sitio. */
+function pintarPaginador(contenedor, { total, offset, onIr }) {
+  contenedor.replaceChildren();
+  if (!total) {
+    const p = document.createElement('p');
+    p.className = 'help';
+    p.textContent = T.sinResultados;
+    contenedor.append(p);
+    return;
+  }
+
+  const ultima = Math.max(1, Math.ceil(total / POR_PAGINA));
+  const actual = Math.floor(offset / POR_PAGINA) + 1;
+
+  const boton = (texto, destino, inhabilitado) => {
+    const b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'btn btn--small';
+    b.textContent = texto;
+    b.disabled = inhabilitado;
+    if (!inhabilitado) b.addEventListener('click', () => onIr(destino));
+    return b;
+  };
+
+  const estado = document.createElement('p');
+  estado.className = 'paginador__estado';
+  /* aria-live para que al cambiar de página el lector de pantalla anuncie
+     dónde se está: el foco se queda en el botón, que no cambia de texto. */
+  estado.setAttribute('aria-live', 'polite');
+  estado.textContent = fmt(T.pagina, { actual, ultima, total });
+
+  contenedor.append(
+    boton(T.anterior, Math.max(0, offset - POR_PAGINA), actual === 1),
+    estado,
+    boton(T.siguiente, offset + POR_PAGINA, actual === ultima),
+  );
+}
+
+/* ------------------------------------------------------------------ */
+/* Estadísticas                                                        */
+/* ------------------------------------------------------------------ */
+
+const ETIQUETA_ESTADO = {
+  borrador: {{ _('Borrador')|tojson }},
+  generando: {{ _('Generando…')|tojson }},
+  generada: {{ _('Generada')|tojson }},
+  error_generacion: {{ _('Error de generación')|tojson }},
+  finalizada: {{ _('Finalizada')|tojson }},
+};
+
+async function cargarEstadisticas() {
+  const datos = await pedir('/admin/api/estadisticas');
+  const caja = document.getElementById('stats-globales');
+  const porEstado = Object.entries(datos.situaciones.por_estado)
+    .map(([estado, n]) => `
+      <div class="stat">
+        <dt>${ETIQUETA_ESTADO[estado] || estado}</dt>
+        <dd>${n}</dd>
+      </div>`)
+    .join('');
+  caja.innerHTML = `
+    <div class="stat">
+      <dt>${T.situaciones}</dt>
+      <dd>${datos.situaciones.total}</dd>
+    </div>
+    ${porEstado}
+    <div class="stat">
+      <dt>${T.cuentasActivas}</dt>
+      <dd>${datos.usuarios.activos}</dd>
+    </div>
+    <div class="stat stat--warn">
+      <dt>${T.dadasDeBaja}</dt>
+      <dd>${datos.usuarios.dados_de_baja}</dd>
+    </div>`;
+}
+
+/* ------------------------------------------------------------------ */
+/* Cuentas                                                             */
+/* ------------------------------------------------------------------ */
+
+let cuentas = [];
+
+/* textContent y no innerHTML para todo lo que venga del servidor: el nombre
+   de una cuenta y el título de una SA los escribe una persona, y meterlos en
+   innerHTML convierte cualquiera de los dos en un vector de XSS almacenado
+   contra la sesión del administrador — que es la más valiosa de todas. */
+const celda = (texto) => {
+  const td = document.createElement('td');
+  td.textContent = texto ?? '—';
+  return td;
+};
+
+function filaUsuario(u) {
+  const tr = document.createElement('tr');
+  if (u.eliminado_en) tr.classList.add('fila--baja');
+
+  if (u.reclamacion_pendiente) tr.classList.add('fila--reclamada');
+
+  const estado = u.reclamacion_pendiente
+    ? T.reclamacionPendiente
+    : (u.eliminado_en ? (u.gracia_vencida ? T.graciaVencida : T.dadaDeBaja) : T.activa);
+
+  tr.append(
+    celda(u.correo),
+    celda(u.nombre),
+    celda(u.rol),
+    celda(u.centro_educativo),
+    celda(u.situaciones.total),
+    celda(fecha(u.ultima_sesion)),
+    celda(estado),
+  );
+
+  const acciones = document.createElement('td');
+
+  /* La reclamación va primero y desplaza a las demás acciones: sobre una
+     cuenta con solicitud pendiente lo único sensato es resolverla. */
+  if (u.reclamacion_pendiente) {
+    const quien = u.reclamacion_pendiente.nombre;
+
+    const aprobar = document.createElement('button');
+    aprobar.type = 'button';
+    aprobar.className = 'btn btn--small btn--primary';
+    aprobar.textContent = T.aprobar;
+    aprobar.title = fmt(T.solicitadaPor, { nombre: quien });
+    aprobar.addEventListener('click', () => resolverReclamacion(u, true, quien));
+
+    const rechazar = document.createElement('button');
+    rechazar.type = 'button';
+    rechazar.className = 'btn btn--small';
+    rechazar.textContent = T.rechazar;
+    rechazar.addEventListener('click', () => resolverReclamacion(u, false, quien));
+
+    acciones.append(aprobar, rechazar);
+  } else if (!u.eliminado_en) {
+    const bajaLapida = document.createElement('button');
+    bajaLapida.type = 'button';
+    bajaLapida.className = 'btn btn--small';
+    bajaLapida.textContent = T.bajaConservando;
+    bajaLapida.addEventListener('click', () => darDeBaja(u, true));
+
+    const bajaTotal = document.createElement('button');
+    bajaTotal.type = 'button';
+    bajaTotal.className = 'btn btn--small btn--danger';
+    bajaTotal.textContent = T.bajaTotal;
+    bajaTotal.addEventListener('click', () => darDeBaja(u, false));
+
+    const editar = document.createElement('button');
+    editar.type = 'button';
+    editar.className = 'btn btn--small btn--secondary';
+    editar.textContent = T.editar;
+    editar.addEventListener('click', () => alternarEdicion(tr, u));
+
+    acciones.append(editar, bajaLapida, bajaTotal);
+  }
+  tr.append(acciones);
+  return tr;
+}
+
+async function cargarCuentas() {
+  const datos = await pedir(
+    `/admin/api/usuarios?limite=${POR_PAGINA}&desplazamiento=${desplazamiento.usuarios}`
+  );
+
+  /* Borrar la última fila de una página deja el desplazamiento más allá del
+     final y la tabla saldría vacía con un «página 4 de 3». Se retrocede una
+     página y se vuelve a pedir. */
+  if (!datos.usuarios.length && desplazamiento.usuarios > 0) {
+    desplazamiento.usuarios = Math.max(0, desplazamiento.usuarios - POR_PAGINA);
+    return cargarCuentas();
+  }
+
+  cuentas = datos.usuarios;
+  const cuerpo = document.getElementById('cuerpo-usuarios');
+  cuerpo.replaceChildren();
+
+  if (!cuentas.length) {
+    const tr = document.createElement('tr');
+    const td = celda(T.sinCuentas);
+    td.colSpan = 8;
+    tr.append(td);
+    cuerpo.append(tr);
+  } else {
+    cuentas.forEach((u) => cuerpo.append(filaUsuario(u)));
+  }
+
+  pintarPaginador(document.getElementById('pag-usuarios'), {
+    total: datos.total,
+    offset: desplazamiento.usuarios,
+    onIr: (nuevo) => {
+      desplazamiento.usuarios = nuevo;
+      cargarCuentas().catch((e) => aviso(e.message));
+    },
+  });
+}
+
+/* El desplegable de filtro se rellena desde su propio endpoint, no desde la
+   página visible de cuentas: con diez por página, filtrar solo por las diez
+   que ya se están viendo no serviría de nada. */
+async function cargarIndiceCuentas() {
+  const datos = await pedir('/admin/api/usuarios/indice');
+  const sel = document.getElementById('filtro-usuario');
+  const elegido = sel.value;
+  sel.length = 1;
+  datos.usuarios.forEach((u) => sel.add(new Option(u.correo, u.id_usuario)));
+  sel.value = elegido;  // no perder el filtro activo al refrescar
+}
+
+async function resolverReclamacion(u, aprobar, quien) {
+  const texto = aprobar
+    ? fmt(T.confirmarAprobar, { correo: u.correo, n: u.situaciones.total, nombre: quien })
+    : fmt(T.confirmarRechazar, { correo: u.correo });
+  if (!confirm(texto)) return;
+  try {
+    await pedir(`/admin/api/usuarios/${u.id_usuario}/reclamacion`, {
+      method: 'POST',
+      body: JSON.stringify({ aprobar }),
+    });
+    await refrescar();
+  } catch (e) {
+    aviso(e.message);
+  }
+}
+
+
+/* ------------------------------------------------------------------ */
+/* Edición de una cuenta                                               */
+/* ------------------------------------------------------------------ */
+
+/* Una fila desplegable bajo la que se edita, no un diálogo modal. Un modal
+   accesible necesita atrapar el foco, devolverlo al cerrar y gestionar Escape;
+   son piezas que este proyecto no tiene y que hacerlas a medias es peor que no
+   tenerlas. Una fila extra usa lo que ya funciona.
+
+   Se manda solo lo que cambia: el endpoint distingue «ausente» de «null», y
+   enviarlo todo borraría los campos que el formulario deje vacíos. */
+function alternarEdicion(filaUsuario, u) {
+  const existente = filaUsuario.nextElementSibling;
+  if (existente && existente.classList.contains('fila--edicion')) {
+    existente.remove();
+    return;
+  }
+  // Solo un formulario abierto a la vez: dos ediciones simultáneas invitan a
+  // guardar la que no era.
+  document.querySelectorAll('.fila--edicion').forEach((f) => f.remove());
+
+  const tr = document.createElement('tr');
+  tr.className = 'fila--edicion';
+  const td = document.createElement('td');
+  td.colSpan = 8;
+
+  const form = document.createElement('form');
+  form.className = 'form';
+  form.noValidate = true;
+
+  const titulo = document.createElement('p');
+  titulo.className = 'help';
+  titulo.textContent = fmt(T.editando, { correo: u.correo });
+  form.append(titulo);
+
+  const campo = (nombre, etiqueta, valor, maxlength) => {
+    const div = document.createElement('div');
+    div.className = 'field';
+    const lab = document.createElement('label');
+    /* Identificador con el id de la cuenta: si dos filas de edición
+       coexistieran, `for` apuntaría al campo equivocado. Aunque solo se
+       permita una abierta, un id duplicado en el DOM es HTML inválido y los
+       lectores de pantalla se pierden. */
+    const id = `edit-${nombre}-${u.id_usuario}`;
+    lab.htmlFor = id;
+    lab.textContent = etiqueta;
+    const input = document.createElement('input');
+    input.type = 'text';
+    input.id = id;
+    input.name = nombre;
+    input.value = valor ?? '';
+    if (maxlength) input.maxLength = maxlength;
+    div.append(lab, input);
+    return div;
+  };
+
+  const fila1 = document.createElement('div');
+  fila1.className = 'row';
+  fila1.append(
+    campo('nombre', T.campoNombre, u.nombre, 100),
+    campo('centro_educativo', T.campoCentro, u.centro_educativo, 200),
+  );
+
+  const fila2 = document.createElement('div');
+  fila2.className = 'row';
+  fila2.append(
+    campo('especialidad', T.campoEspecialidad, u.especialidad, 100),
+    campo('comunidad_autonoma', T.campoComunidad, u.comunidad_autonoma, 50),
+  );
+
+  const divRol = document.createElement('div');
+  divRol.className = 'field';
+  const labRol = document.createElement('label');
+  const idRol = `edit-rol-${u.id_usuario}`;
+  labRol.htmlFor = idRol;
+  labRol.textContent = T.campoRol;
+  const selRol = document.createElement('select');
+  selRol.id = idRol;
+  selRol.name = 'rol';
+  selRol.add(new Option(T.rolDocente, 'docente'));
+  selRol.add(new Option(T.rolAdmin, 'administrador'));
+  selRol.value = u.rol;
+  divRol.append(labRol, selRol);
+  fila2.append(divRol);
+
+  const acciones = document.createElement('div');
+  acciones.className = 'actions';
+  const guardar = document.createElement('button');
+  guardar.type = 'submit';
+  guardar.className = 'btn btn--primary';
+  guardar.textContent = T.guardar;
+  const cancelar = document.createElement('button');
+  cancelar.type = 'button';
+  cancelar.className = 'btn';
+  cancelar.textContent = T.cancelar;
+  cancelar.addEventListener('click', () => tr.remove());
+  acciones.append(guardar, cancelar);
+
+  const msg = document.createElement('p');
+  msg.className = 'alert';
+  msg.setAttribute('role', 'alert');
+  msg.hidden = true;
+
+  form.append(fila1, fila2, acciones, msg);
+
+  form.addEventListener('submit', async (ev) => {
+    ev.preventDefault();
+    msg.hidden = true;
+
+    /* Solo los campos que han cambiado. Mandar el formulario entero haría
+       que un campo vacío borrase un valor que la persona no quería tocar. */
+    const cambios = {};
+    for (const [k, v] of new FormData(form).entries()) {
+      const actual = u[k] ?? '';
+      if (v !== actual) cambios[k] = v || null;
+    }
+    if (!Object.keys(cambios).length) { tr.remove(); return; }
+
+    try {
+      await pedir(`/admin/api/usuarios/${u.id_usuario}`, {
+        method: 'PATCH',
+        body: JSON.stringify(cambios),
+      });
+      tr.remove();
+      await refrescar();
+      aviso(T.guardado, false);
+    } catch (e) {
+      msg.textContent = e.message;
+      msg.hidden = false;
+    }
+  });
+
+  td.append(form);
+  tr.append(td);
+  filaUsuario.after(tr);
+  form.querySelector('input').focus();
+}
+
+async function darDeBaja(u, conservar) {
+  const plantilla = conservar ? T.confirmarBajaLapida : T.confirmarBajaTotal;
+  if (!confirm(fmt(plantilla, { correo: u.correo, n: u.situaciones.total }))) return;
+  try {
+    await pedir(`/admin/api/usuarios/${u.id_usuario}`, {
+      method: 'DELETE',
+      body: JSON.stringify({ conservar_contenido: conservar }),
+    });
+    await refrescar();
+  } catch (e) {
+    aviso(e.message);
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Alta de cuenta                                                      */
+/* ------------------------------------------------------------------ */
+
+const panelAlta = document.getElementById('alta-cuenta');
+document.getElementById('btn-nueva-cuenta').addEventListener('click', () => {
+  panelAlta.hidden = !panelAlta.hidden;
+});
+document.getElementById('btn-cancelar-alta').addEventListener('click', () => {
+  panelAlta.hidden = true;
+});
+
+document.getElementById('form-alta').addEventListener('submit', async (ev) => {
+  ev.preventDefault();
+  const form = ev.target;
+  const datos = Object.fromEntries(new FormData(form).entries());
+  // Los opcionales vacíos se quitan: el esquema los admite ausentes, pero una
+  // cadena vacía guardaría "" en vez de NULL.
+  for (const k of ['centro_educativo', 'comunidad_autonoma']) {
+    if (!datos[k]) delete datos[k];
+  }
+  const msg = document.getElementById('alta-msg');
+  msg.hidden = true;
+  try {
+    await pedir('/admin/api/usuarios', { method: 'POST', body: JSON.stringify(datos) });
+    form.reset();
+    panelAlta.hidden = true;
+    await refrescar();
+  } catch (e) {
+    msg.textContent = e.message;
+    msg.hidden = false;
+  }
+});
+
+/* ------------------------------------------------------------------ */
+/* Situaciones                                                         */
+/* ------------------------------------------------------------------ */
+
+function filaSA(sa) {
+  const tr = document.createElement('tr');
+  tr.append(
+    celda(sa.titulo),
+    celda(sa.materia),
+    celda(sa.curso),
+    celda(ETIQUETA_ESTADO[sa.estado] || sa.estado),
+    celda(sa.correo_usuario),
+    celda(fecha(sa.fecha_modificacion)),
+  );
+
+  const acciones = document.createElement('td');
+  const borrar = document.createElement('button');
+  borrar.type = 'button';
+  borrar.className = 'btn btn--small btn--danger';
+  borrar.textContent = T.eliminar;
+  borrar.addEventListener('click', async () => {
+    if (!confirm(fmt(T.confirmarBorradoSA, { titulo: sa.titulo }))) return;
+    try {
+      await pedir(`/admin/api/situaciones/${sa.id_situacion}`, { method: 'DELETE' });
+      await refrescar();
+    } catch (e) {
+      aviso(e.message);
+    }
+  });
+  acciones.append(borrar);
+  tr.append(acciones);
+  return tr;
+}
+
+async function cargarSituaciones() {
+  const params = new URLSearchParams();
+  const estado = document.getElementById('filtro-estado').value;
+  const idUsuario = document.getElementById('filtro-usuario').value;
+  if (estado) params.set('estado', estado);
+  if (idUsuario) params.set('id_usuario', idUsuario);
+
+  params.set('limite', POR_PAGINA);
+  params.set('desplazamiento', desplazamiento.sa);
+
+  const datos = await pedir(`/admin/api/situaciones?${params}`);
+
+  if (!datos.situaciones.length && desplazamiento.sa > 0) {
+    desplazamiento.sa = Math.max(0, desplazamiento.sa - POR_PAGINA);
+    return cargarSituaciones();
+  }
+
+  const cuerpo = document.getElementById('cuerpo-sa');
+  cuerpo.replaceChildren();
+
+  if (!datos.situaciones.length) {
+    const tr = document.createElement('tr');
+    const td = celda(T.sinSituaciones);
+    td.colSpan = 7;
+    tr.append(td);
+    cuerpo.append(tr);
+  } else {
+    datos.situaciones.forEach((sa) => cuerpo.append(filaSA(sa)));
+  }
+
+  pintarPaginador(document.getElementById('pag-sa'), {
+    total: datos.total,
+    offset: desplazamiento.sa,
+    onIr: (nuevo) => {
+      desplazamiento.sa = nuevo;
+      cargarSituaciones().catch((e) => aviso(e.message));
+    },
+  });
+}
+
+/* Al cambiar los filtros se vuelve a la primera página: quedarse en la 5 de un
+   listado que ahora tiene 2 mostraría una tabla vacía sin explicación. */
+document.getElementById('filtros-sa').addEventListener('submit', (ev) => {
+  ev.preventDefault();
+  desplazamiento.sa = 0;
+  cargarSituaciones().catch((e) => aviso(e.message));
+});
+document.getElementById('btn-limpiar-sa').addEventListener('click', () => {
+  document.getElementById('filtro-estado').value = '';
+  document.getElementById('filtro-usuario').value = '';
+  desplazamiento.sa = 0;
+  cargarSituaciones().catch((e) => aviso(e.message));
+});
+
+/* ------------------------------------------------------------------ */
+
+async function refrescar() {
+  document.getElementById('admin-msg').hidden = true;
+  await Promise.all([cargarEstadisticas(), cargarCuentas(), cargarIndiceCuentas()]);
+  await cargarSituaciones();
+}
+
+refrescar().catch((e) => aviso(e.message));
+</script>
+{% endblock %}

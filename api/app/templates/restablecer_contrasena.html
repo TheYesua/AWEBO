@@ -1,0 +1,116 @@
+{% extends "base.html" %}
+{% block title %}Restablecer contraseña · AWEBO{% endblock %}
+
+{% block content %}
+<section class="form-section" aria-labelledby="t-reset">
+  <h1 id="t-reset">{{ _('Restablecer contraseña') }}</h1>
+  <p class="lead">
+    {{ _('Introduce tu correo y la nueva contraseña. Por simplicidad de este prototipo no se requiere confirmación por correo electrónico.') }}
+  </p>
+
+  <form id="reset-form" class="form" novalidate>
+    <p class="help">{{ _('Los campos marcados con') }} <span aria-hidden="true" style="color: var(--color-danger-strong);">*</span>
+      {{ _('son obligatorios.') }}</p>
+
+    <div class="field">
+      <label for="correo">
+        {{ _('Correo electrónico') }}
+        <span class="req" aria-hidden="true">*</span>
+        <span class="sr-only">{{ _('(obligatorio)') }}</span>
+      </label>
+      <input type="email" id="correo" name="correo" autocomplete="email" required autofocus>
+    </div>
+
+    <div class="field">
+      <label for="nueva_contrasena">
+        {{ _('Nueva contraseña') }}
+        <span class="req" aria-hidden="true">*</span>
+        <span class="sr-only">{{ _('(obligatorio)') }}</span>
+      </label>
+      <input type="password" id="nueva_contrasena" name="nueva_contrasena"
+             minlength="8" autocomplete="new-password" required
+             aria-describedby="pass-help">
+      <small id="pass-help" class="help">{{ _('Mínimo 8 caracteres, con al menos una letra y un dígito.') }}</small>
+    </div>
+
+    <div class="field">
+      <label for="confirmar_contrasena">
+        {{ _('Confirmar nueva contraseña') }}
+        <span class="req" aria-hidden="true">*</span>
+        <span class="sr-only">{{ _('(obligatorio)') }}</span>
+      </label>
+      <input type="password" id="confirmar_contrasena" name="confirmar_contrasena"
+             minlength="8" autocomplete="new-password" required
+             aria-describedby="confirm-help">
+      <small id="confirm-help" class="help">{{ _('Vuelve a escribir la misma contraseña.') }}</small>
+    </div>
+
+    <div class="actions">
+      <button type="submit" class="btn btn--primary" id="reset-submit">{{ _('Restablecer contraseña') }}</button>
+      <a href="/login" class="link">{{ _('Volver al inicio de sesión') }}</a>
+    </div>
+
+    <p class="alert" id="reset-msg" role="alert" hidden></p>
+  </form>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script>
+const T = {
+  noCoinciden: {{ _('Las contraseñas no coinciden.')|tojson }},
+  restablecida: {{ _('Contraseña restablecida correctamente. Te llevamos al inicio de sesión…')|tojson }},
+};
+
+document.getElementById('reset-form').addEventListener('submit', async (ev) => {
+  ev.preventDefault();
+  const msg = document.getElementById('reset-msg');
+  const btn = document.getElementById('reset-submit');
+  const confirmInput = document.getElementById('confirmar_contrasena');
+  msg.hidden = true;
+  msg.classList.remove('alert--ok');
+  confirmInput.removeAttribute('aria-invalid');
+
+  const correo = document.getElementById('correo').value.trim();
+  const nueva = document.getElementById('nueva_contrasena').value;
+  const confirmar = confirmInput.value;
+
+  if (nueva !== confirmar) {
+    msg.textContent = T.noCoinciden;
+    msg.hidden = false;
+    confirmInput.setAttribute('aria-invalid', 'true');
+    confirmInput.focus();
+    return;
+  }
+
+  btn.disabled = true;
+  btn.setAttribute('aria-busy', 'true');
+  const originalLabel = btn.textContent;
+  btn.textContent = 'Procesando…';
+
+  try {
+    const res = await fetch('/auth/reset-password', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({ correo, nueva_contrasena: nueva }),
+    });
+    const body = await res.json().catch(() => ({}));
+
+    if (res.ok) {
+      msg.textContent = T.restablecida;
+      msg.classList.add('alert--ok');
+      msg.hidden = false;
+      ev.target.reset();
+      setTimeout(() => { window.location.href = '/login'; }, 2000);
+    } else {
+      msg.textContent = body.mensaje || body.error || 'Error desconocido';
+      msg.hidden = false;
+    }
+  } finally {
+    btn.disabled = false;
+    btn.removeAttribute('aria-busy');
+    btn.textContent = originalLabel;
+  }
+});
+</script>
+{% endblock %}

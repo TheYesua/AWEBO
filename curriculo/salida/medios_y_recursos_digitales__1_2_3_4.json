@@ -1,0 +1,212 @@
+{
+  "materia_oficial": "MEDIOS Y RECURSOS DIGITALES",
+  "materia": "Medios y Recursos Digitales",
+  "etapa": "ESO",
+  "ciclo": "Único",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º ESO",
+    "2º ESO",
+    "3º ESO",
+    "4º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "CE1",
+      "descripcion": "Realizar búsquedas en internet, haciendo uso de estrategias sencillas, como la selección de fuentes fiables, el análisis crítico de la información y la organización eficaz de los datos, para dar respuesta a actividades de aprendizaje o a tareas de investigación.",
+      "descriptores": [
+        "CCL2",
+        "CCL3",
+        "CD1",
+        "CD2",
+        "CPSAA4",
+        "CC3"
+      ]
+    },
+    {
+      "codigo": "CE2",
+      "descripcion": "Interactuar, colaborar y compartir información en entornos virtuales seguros, mediante el uso de herramientas digitales, aplicando las normas de etiqueta digital, para desarrollar proyectos colaborativos con una actitud responsable y siendo consciente de la propia reputación digital.",
+      "descriptores": [
+        "CCL1",
+        "CCL2",
+        "CD2",
+        "CD3",
+        "CPSAA1",
+        "CPSAA3",
+        "CC3",
+        "CE1"
+      ]
+    },
+    {
+      "codigo": "CE3",
+      "descripcion": "Crear, integrar y editar diferentes contenidos digitales, de forma individual y colectiva, mediante el uso de herramientas digitales, mostrando una actitud de respeto por la propiedad intelectual y las licencias de uso, para expresar ideas, sentimientos y conocimientos en diferentes situaciones de aprendizaje.",
+      "descriptores": [
+        "CCL1",
+        "CCL2",
+        "CCL3",
+        "CD2",
+        "CPSAA1",
+        "CC1",
+        "CE1",
+        "CCEC3"
+      ]
+    },
+    {
+      "codigo": "CE4",
+      "descripcion": "Conocer los riesgos asociados a un uso inadecuado y poco seguro de las tecnologías digitales, aplicando pautas sencillas de protección y diferentes medidas preventivas en el uso de dispositivos y entornos digitales, para minimizar dichos riesgos y proteger los dispositivos, los datos personales, el medioambiente y el bienestar digital.",
+      "descriptores": [
+        "STEM5",
+        "CD4",
+        "CD5",
+        "CPSAA2",
+        "CC1"
+      ]
+    },
+    {
+      "codigo": "CE5",
+      "descripcion": "Diseñar y desarrollar proyectos de programación, mediante la aplicación de algoritmos sencillos y el uso de herramientas de programación por bloques, empleando los fundamentos del pensamiento computacional, para crear soluciones digitales a problemas o retos concretos.",
+      "descriptores": [
+        "STEM1",
+        "STEM3",
+        "CD5",
+        "CPSAA1",
+        "CPSAA5",
+        "CE1",
+        "CE3"
+      ]
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "CE1",
+      "descripcion": "Responder a las necesidades de información de actividades de aprendizaje o tareas de investigación, utilizando diferentes buscadores y herramientas sencillas de filtrado de información en la realización de consultas selectivas de datos o contenidos digitales, de manera autónoma."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "CE1",
+      "descripcion": "Evaluar de forma crítica datos e informaciones recabadas de fuentes fiables, contrastando y seleccionando los más adecuados, atendiendo a criterios de validez, calidad, actualidad y confiabilidad."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "CE1",
+      "descripcion": "Archivar, organizar y recuperar datos, información y contenido digital, de manera segura y estructurada, en diferentes sistemas de almacenamiento, tanto en dispositivos personales como en espacios virtuales."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "CE2",
+      "descripcion": "Desarrollar actividades o proyectos cooperativos y colaborativos, utilizando herramientas digitales en entornos virtuales de aprendizaje seguros, compartiendo datos, información y contenidos, en distintos formatos, interactuando y construyendo nuevo conocimiento."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "CE2",
+      "descripcion": "Aplicar las normas de comportamiento en la red (etiqueta digital), participando de manera correcta y cívica en entornos virtuales de aprendizaje, valorando las emociones propias y ajenas."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "CE2",
+      "descripcion": "Comprender cómo se construye la identidad digital, analizando los beneficios y riesgos asociados a la actividad personal y social en entornos digitales, actuando de manera reflexiva y con responsabilidad."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "CE3",
+      "descripcion": "Crear y editar contenidos digitales, de manera individual y grupal, mediante el uso de diversas herramientas digitales, configurando y eligiendo las más adecuadas según el propósito, la tarea y el contexto, con criterio técnico y sentido estético."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "CE3",
+      "descripcion": "Identificar las diferentes licencias de uso de los contenidos digitales, realizando una correcta utilización e integración de los mismos en la reelaboración de contenidos, respetando la propiedad intelectual y las condiciones de uso."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "CE4",
+      "descripcion": "Proteger los dispositivos y los datos, aplicando medidas preventivas básicas (copias de seguridad, contraseñas robustas, uso de antivirus, configuración de  cookies , etc.), de manera proactiva."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "CE4",
+      "descripcion": "Salvaguardar la privacidad personal y la de terceros, conociendo los posibles riesgos al compartir datos e información en entornos digitales (publicación de imágenes, etiquetado, geolocalización, uso de redes inalámbricas públicas, etc.) y desarrollando prácticas seguras, con una actitud consciente, responsable y reflexiva."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "CE4",
+      "descripcion": "Preservar el bienestar digital individual y colectivo, tanto físico como mental, adoptando hábitos de uso cívico, sostenible y saludable de la tecnología y gestionando situaciones inadecuadas y de violencia en la red, solicitando o prestando ayuda en caso necesario."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "CE5",
+      "descripcion": "Resolver problemas concretos o retos de programación propuestos, utilizando sentencias o bloques secuenciales, condicionales y repetitivos, haciendo uso de variables numéricas y de texto, así como distintas formas de entrada y salida de datos, de manera creativa."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "CE5",
+      "descripcion": "Depurar programas y modificar algoritmos de acuerdo con principios básicos del pensamiento computacional, introduciendo mejoras y aprendiendo del error, con una actitud de superación y perseverancia."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "CE5",
+      "descripcion": "Incorporar partes de programas ya existentes a sus propias creaciones digitales, respetando la propiedad intelectual al crear o mezclar programas."
+    },
+    {
+      "codigo": "5.4",
+      "competencia": "CE5",
+      "descripcion": "Desarrollar programas para interactuar, mediante el uso de sensores, actuadores y placas controladoras, en montaje físico o simulado, con una actitud emprendedora."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Alfabetización informacional y datos",
+      "titulo": "Alfabetización informacional y datos",
+      "items": [
+        "Estrategias de búsqueda de información y datos en internet seguras y eficientes. Filtros avanzados ( \"\", *, -, filetype, site, cache, define, translate , etc.). Operadores lógicos.",
+        "Estrategias de análisis, evaluación y selección crítica de la información y los datos. Criterios de utilidad, calidad, vigencia y fiabilidad.",
+        "Estrategias de almacenamiento, organización y recuperación de información y datos en entornos estructurados."
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Comunicación y colaboración en línea",
+      "titulo": "Comunicación y colaboración en línea",
+      "items": [
+        "Herramientas y plataformas digitales supervisadas y seguras de comunicación y colaboración en línea.",
+        "Estrategias de comunicación adaptadas a la audiencia y al entorno digital.",
+        "Etiqueta digital: reglas básicas de cortesía y respeto en la red. Lenguaje inclusivo y no sexista en la comunicación en entornos virtuales.",
+        "Identidad y huella digital. Sentido crítico y cívico en la compartición de datos e información en entornos digitales. Beneficios y riesgos asociados."
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Creación de contenidos digitales",
+      "titulo": "Creación de contenidos digitales",
+      "items": [
+        "Contenidos digitales. Tipos de archivo y formatos.",
+        "Herramientas digitales de creación, edición y reelaboración de contenidos digitales en diversos formatos (texto, imagen, audio, vídeo, etc.). Selección, aplicación y configuración en actividades de aprendizaje.",
+        "Respeto de la propiedad intelectual y de las licencias de uso de contenidos digitales."
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Seguridad y bienestar digital",
+      "titulo": "Seguridad y bienestar digital",
+      "items": [
+        "Seguridad de dispositivos y protección de datos personales. Amenazas y riesgos (suplantación de identidad, robo de credenciales, etc.). Medidas preventivas y prácticas seguras (contraseñas robustas, gestor de contraseñas, navegación en modo incógnito, configuración de cookies, autenticación en dos pasos – Two Factor Authentication , 2FA–, borrado de historiales de navegación, etc.).",
+        "Riesgos para el bienestar personal. Hábitos de uso saludable de las tecnologías digitales (higiene postural, rutinas oculares, control del tiempo de conexión, etiqueta digital, etc.).",
+        "Gestión de situaciones de violencia y riesgo en la red (ciberacoso,  grooming ,  sexting , acceso a contenidos inadecuados, etc.).",
+        "Impacto del empleo de la tecnología sobre el medioambiente. Hábitos de uso responsable y sostenible."
+      ]
+    },
+    {
+      "codigo": "E",
+      "bloque": "E. Pensamiento computacional y programación",
+      "titulo": "Pensamiento computacional y programación",
+      "items": [
+        "Flujogramas. Pseudocódigo. Fundamentos. Ejemplos de algoritmos sencillos. Árboles de decisión.",
+        "Acciones elementales en el diseño de algoritmos: asignación, control de la ejecución (bucles, sentencias condicionales), interacción (entrada y salida de datos, llamadas a funciones).",
+        "Depuración, seguimiento de la ejecución y manejo del error. Ejecución paso a paso.",
+        "Elementos básicos de programación: variables y funciones.",
+        "Herramientas y dispositivos que emplean la programación por bloques. Aplicaciones prácticas a proyectos sencillos de programación."
+      ]
+    }
+  ]
+}

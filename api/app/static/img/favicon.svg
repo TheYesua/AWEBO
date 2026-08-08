@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Favicon de AWEBO: "A" en turquesa institucional sobre cuadrado
+     redondeado claro, con acento puntual en violeta secundario.
+     Diseñado a 32×32 para mantener nitidez en barra de pestañas. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <rect x="1" y="1" width="30" height="30" rx="7" fill="#F7FAFC" stroke="#5ED3D1" stroke-width="2"/>
+  <!-- Letra A estilizada -->
+  <path d="M10 24 L16 7 L22 24 M12.8 18 H19.2"
+        stroke="#36B7B5" stroke-width="3" stroke-linecap="round"
+        stroke-linejoin="round" fill="none"/>
+  <!-- Acento violeta (chispa, alineada con la identidad AWEBO) -->
+  <circle cx="24" cy="9" r="1.8" fill="#7C83FD"/>
+</svg>

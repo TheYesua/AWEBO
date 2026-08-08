@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% block title %}Iniciar sesión · AWEBO{% endblock %}
+
+{% block content %}
+<section class="form-section" aria-labelledby="t-login">
+  <h1 id="t-login">{{ _('Iniciar sesión') }}</h1>
+  <p class="lead">{{ _('Accede a tu cuenta de docente para gestionar tus situaciones de aprendizaje.') }}</p>
+
+  <form id="login-form" class="form" novalidate>
+    <p class="help">{{ _('Los campos marcados con') }} <span aria-hidden="true" style="color: var(--color-danger-strong);">*</span>
+      {{ _('son obligatorios.') }}</p>
+
+    <div class="field">
+      <label for="correo">
+        {{ _('Correo electrónico') }}
+        <span class="req" aria-hidden="true">*</span>
+        <span class="sr-only">{{ _('(obligatorio)') }}</span>
+      </label>
+      <input type="email" id="correo" name="correo" autocomplete="email" required autofocus>
+    </div>
+
+    <div class="field">
+      <label for="contrasena">
+        {{ _('Contraseña') }}
+        <span class="req" aria-hidden="true">*</span>
+        <span class="sr-only">{{ _('(obligatorio)') }}</span>
+      </label>
+      <input type="password" id="contrasena" name="contrasena" autocomplete="current-password" required>
+    </div>
+
+    <div class="actions">
+      <button type="submit" class="btn btn--primary" id="login-submit">{{ _('Entrar') }}</button>
+      <a href="/register" class="link">{{ _('¿No tienes cuenta? Regístrate') }}</a>
+    </div>
+    <p class="form-extra-links">
+      <a href="/restablecer-contrasena" class="link link--small">{{ _('¿Olvidaste tu contraseña?') }}</a>
+    </p>
+
+    <p class="alert" id="login-msg" role="alert" hidden></p>
+  </form>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script>
+document.getElementById('login-form').addEventListener('submit', async (ev) => {
+  ev.preventDefault();
+  const msg = document.getElementById('login-msg');
+  const btn = document.getElementById('login-submit');
+  msg.hidden = true;
+  btn.disabled = true;
+  btn.setAttribute('aria-busy', 'true');
+  const originalLabel = btn.textContent;
+  btn.textContent = 'Comprobando…';
+
+  const data = Object.fromEntries(new FormData(ev.target).entries());
+  try {
+    const res = await fetch('/auth/login', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify(data),
+    });
+    const body = await res.json().catch(() => ({}));
+    if (res.ok) {
+      window.location.href = '/';
+      return;
+    }
+    msg.textContent = body.mensaje || body.error || 'Error desconocido';
+    msg.hidden = false;
+  } finally {
+    btn.disabled = false;
+    btn.removeAttribute('aria-busy');
+    btn.textContent = originalLabel;
+  }
+});
+</script>
+{% endblock %}

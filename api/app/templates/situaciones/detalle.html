@@ -1,0 +1,965 @@
+{% extends "base.html" %}
+{% block title %}Detalle · AWEBO{% endblock %}
+
+{% block content %}
+<section aria-labelledby="titulo-h1">
+  <p style="margin-bottom: var(--space-3);">
+    <a href="/situaciones" class="link">{{ _('← Volver al listado') }}</a>
+  </p>
+  <h1 id="titulo-h1">{{ _('Cargando…') }}</h1>
+
+  <article class="card" id="detalle-card" aria-labelledby="t-datos" hidden>
+    <h2 id="t-datos" class="sr-only">{{ _('Datos de la situación') }}</h2>
+    <form id="sa-form" class="form" novalidate>
+      <div class="field">
+        <label for="titulo">{{ _('Título') }}</label>
+        <input type="text" id="titulo" name="titulo" minlength="2" maxlength="255">
+      </div>
+
+      <div class="row">
+        <div class="field">
+          <label for="curso">{{ _('Curso') }}</label>
+          <select id="curso" name="curso"></select>
+        </div>
+        <div class="field">
+          <label for="materia">{{ _('Materia') }}</label>
+          <select id="materia" name="materia"
+                  aria-describedby="materia-aviso materia-explicacion"></select>
+          <p class="alert" id="materia-aviso" role="alert" hidden></p>
+          <p class="help" id="materia-explicacion" hidden></p>
+        </div>
+        <div class="field">
+          <label for="estado">{{ _('Estado') }}</label>
+          <select id="estado" name="estado">
+            <option value="borrador">{{ _('Borrador') }}</option>
+            <option value="generada">{{ _('Generada') }}</option>
+            <option value="finalizada">{{ _('Finalizada') }}</option>
+            <option value="generando" disabled>{{ _('Generando… (gestionado por el sistema)') }}</option>
+            <option value="error_generacion" disabled>{{ _('Error de generación (gestionado por el sistema)') }}</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="field">
+          <label for="num_sesiones">{{ _('Sesiones') }}</label>
+          <input type="number" id="num_sesiones" name="num_sesiones" min="1" max="200">
+        </div>
+        <div class="field">
+          <label for="duracion_sesion_minutos">{{ _('Duración (min)') }}</label>
+          <input type="number" id="duracion_sesion_minutos" name="duracion_sesion_minutos" min="15" max="240">
+        </div>
+        <div class="field">
+          <label for="idioma">{{ _('Idioma') }}</label>
+          <select id="idioma" name="idioma">
+            <option value="es">{{ _('Español') }}</option>
+            <option value="ca">{{ _('Catalán') }}</option>
+            <option value="gl">{{ _('Gallego') }}</option>
+            <option value="eu">{{ _('Euskera') }}</option>
+            <option value="en">{{ _('Inglés') }}</option>
+            <option value="fr">{{ _('Francés') }}</option>
+            <option value="ar">{{ _('Árabe') }}</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="metodologia">{{ _('Metodología') }}</label>
+        <select id="metodologia" name="metodologia"></select>
+      </div>
+
+      <div class="field">
+        <label for="descripcion">{{ _('Descripción') }}</label>
+        <textarea id="descripcion" name="descripcion" rows="3" maxlength="4000"></textarea>
+      </div>
+
+      <div class="field">
+        <label for="perfil_aula">{{ _('Perfil del aula') }}</label>
+        <textarea id="perfil_aula" name="perfil_aula" rows="2" maxlength="4000"></textarea>
+      </div>
+
+      <div class="field">
+        <label for="descripcion_cambio">{{ _('Resumen del cambio (opcional)') }}</label>
+        <input type="text" id="descripcion_cambio" name="descripcion_cambio" maxlength="255"
+               placeholder="{{ _('Se queda en el historial de versiones') }}">
+      </div>
+
+      <div class="actions">
+        <button type="submit" class="btn btn--primary">
+          <i data-lucide="save" aria-hidden="true"></i>
+          <span>{{ _('Guardar cambios') }}</span>
+        </button>
+        <button type="button" class="btn btn--secondary" id="btn-finalizar">
+          <i data-lucide="check-circle" aria-hidden="true"></i>
+          <span id="btn-finalizar-texto">{{ _('Marcar como terminada') }}</span>
+        </button>
+        <button type="button" class="btn" id="btn-duplicar">
+          <i data-lucide="copy" aria-hidden="true"></i>
+          <span>{{ _('Duplicar') }}</span>
+        </button>
+        <button type="button" class="btn btn--danger" id="btn-eliminar">
+          <i data-lucide="trash-2" aria-hidden="true"></i>
+          <span>{{ _('Eliminar') }}</span>
+        </button>
+      </div>
+      <p class="alert" id="msg" role="alert" hidden></p>
+    </form>
+  </article>
+
+  <article class="card" id="generacion-card" aria-labelledby="t-gen" hidden>
+    <h2 id="t-gen">{{ _('Generación con IA') }}</h2>
+    <p class="lead">
+      {{ _('Genera el contenido didáctico completo o regenera una sección concreta. Durante la generación la situación queda bloqueada.') }}
+    </p>
+    <div class="actions">
+      <button type="button" class="btn btn--primary" id="btn-generar">
+        <i data-lucide="sparkles" aria-hidden="true"></i>
+        <span>{{ _('Generar contenido completo') }}</span>
+      </button>
+      <span id="gen-estado" class="badge" hidden></span>
+    </div>
+    <div id="gen-progreso" hidden>
+      <p>
+        {{ _('Generando sección') }}
+        <strong id="gen-seccion">—</strong>
+        (<span id="gen-completadas">0</span> / <span id="gen-total">6</span>)…
+      </p>
+      <progress id="gen-bar" max="6" value="0"></progress>
+    </div>
+  </article>
+
+  <article class="card" id="contenido-card" aria-labelledby="t-cont" hidden>
+    <header class="card-header">
+      <h2 id="t-cont">{{ _('Contenido generado') }}</h2>
+      <div class="card-header__acciones" id="contenido-acciones" hidden>
+        <a id="btn-export-pdf" class="btn btn--small" href="#" download>
+          <i data-lucide="file-down" aria-hidden="true"></i>
+          <span>{{ _('Descargar PDF') }}</span>
+        </a>
+        <a id="btn-export-docx" class="btn btn--small" href="#" download>
+          <i data-lucide="file-text" aria-hidden="true"></i>
+          <span>{{ _('Descargar DOCX') }}</span>
+        </a>
+      </div>
+    </header>
+    <p class="help" id="lectura-aviso" hidden></p>
+    <p class="lead" id="contenido-vacio" hidden>
+      {{ _('Todavía no se ha generado contenido. Usa el botón de arriba para lanzarlo.') }}
+    </p>
+    <div id="contenido-secciones"></div>
+  </article>
+
+  <article class="card" id="adaptaciones-card" aria-labelledby="t-adap" hidden>
+    <h2 id="t-adap">{{ _('Adaptaciones curriculares') }}</h2>
+    <p class="lead">
+      {{ _('Genera una adaptación curricular a partir de esta situación de aprendizaje, diferenciando si modifica los criterios de evaluación o no.') }}
+    </p>
+
+    <form id="adaptacion-form" class="form" novalidate>
+      <div class="row">
+        <div class="field">
+          <label for="adapt-tipo">{{ _('Tipo de adaptación') }}</label>
+          <select id="adapt-tipo" name="tipo_adaptacion" required>
+            <option value="no_significativa">{{ _('No Significativa (ACNS) — no modifica criterios') }}</option>
+            <option value="significativa">{{ _('Significativa (ACS) — modifica criterios y/o contenidos') }}</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="adapt-titulo">{{ _('Título (opcional)') }}</label>
+          <input type="text" id="adapt-titulo" name="titulo" maxlength="255"
+                 placeholder="{{ _('Se genera automáticamente si se deja vacío') }}">
+        </div>
+      </div>
+      <div class="field">
+        <label for="adapt-perfil">
+          {{ _('Descripción del alumno/a') }}
+          <small>{{ _('(sustituye al “Perfil del aula” en la SA adaptada · mín. 10 caracteres)') }}</small>
+        </label>
+        <textarea id="adapt-perfil" name="perfil_alumnado" rows="3" minlength="10" maxlength="4000" required
+                  placeholder="{{ _('Ej: Alumno con TDAH, necesita tareas fragmentadas y refuerzo visual…') }}"></textarea>
+      </div>
+      <div class="actions">
+        <button type="submit" class="btn btn--primary">{{ _('Generar adaptación') }}</button>
+      </div>
+      <p class="alert" id="adapt-msg" role="alert" hidden></p>
+    </form>
+
+    <div id="adaptaciones-lista" style="margin-top:1rem"></div>
+  </article>
+
+  <article class="card" id="versiones-card" aria-labelledby="t-vers" hidden>
+    <h2 id="t-vers">{{ _('Historial de versiones') }}</h2>
+    <p class="lead" id="versiones-vacia" hidden>{{ _('Aún no hay versiones guardadas. Cada vez que modifiques esta situación se creará una nueva entrada.') }}</p>
+    <div class="tabla-responsiva">
+      <table class="api" id="versiones-tabla" hidden>
+        <caption class="sr-only">{{ _('Versiones guardadas de esta situación') }}</caption>
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">{{ _('Fecha') }}</th>
+            <th scope="col">{{ _('Cambio') }}</th>
+            <th scope="col">{{ _('Título previo') }}</th>
+          </tr>
+        </thead>
+        <tbody id="versiones-body"></tbody>
+      </table>
+    </div>
+  </article>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/render-secciones.js') }}"></script>
+<script src="{{ url_for('static', filename='js/lectura.js') }}"></script>
+<script>
+/* Cadenas que escribe el JavaScript. No pasan por _() del servidor, así que
+   sin esto la página salía a medias: cabecera y formularios traducidos,
+   avisos y rótulos generados al vuelo en castellano.
+
+   |tojson y no comillas a mano: «l'operació» rompería el script en catalán.
+   Los marcadores van con llaves y no con %(nombre)s porque Jinja aplica
+   `cadena % variables` al resultado de _() y un %(...)s ahí dentro lanza
+   KeyError al renderizar la página. */
+/* Mismas cadenas que en la pantalla de crear: Matemáticas A y B aparecen en el
+   desplegable como dos entradas sin más señas. El texto sale del RD 217/2022,
+   que distingue las dos opciones por enfoque, no por rama. */
+const EXPLICACIONES_MATERIA = {
+  matematicasA: {{ _('Una de las dos opciones de Matemáticas de 4.º. Se desarrolla sobre todo mediante la resolución de problemas, la investigación y el análisis matemático de situaciones de la vida cotidiana.')|tojson }},
+  matematicasB: {{ _('La otra opción de Matemáticas de 4.º. Además de lo anterior, profundiza en los procedimientos algebraicos, geométricos, analíticos y estadísticos, en contextos matemáticos, científicos y sociales. El real decreto no la vincula a ninguna modalidad de Bachillerato: la diferencia que establece es de enfoque.')|tojson }},
+};
+
+const T = {
+  sinPermiso: {{ _('No tienes permiso para ver esta situación')|tojson }},
+  noEncontrada: {{ _('No encontrada')|tojson }},
+  sinEspecificar: {{ _('— Sin especificar —')|tojson }},
+  generarCompleto: {{ _('Generar contenido completo')|tojson }},
+  regenerarTodo: {{ _('Regenerar todo')|tojson }},
+  marcarTerminada: {{ _('Marcar como terminada')|tojson }},
+  traducirA: {{ _('Traducir a {idioma}')|tojson }},
+  esperaAgotada: {{ _('Tiempo de espera agotado sin respuesta de la tarea.')|tojson }},
+  noSeHaDeshecho: {{ _('No se ha podido deshacer.')|tojson }},
+  cambiosGuardados: {{ _('Cambios guardados correctamente.')|tojson }},
+  perfilCorto: {{ _('El perfil del alumnado debe tener al menos 10 caracteres.')|tojson }},
+  regenerar: {{ _('Regenerar')|tojson }},
+  deshacer: {{ _('Deshacer')|tojson }},
+  estados: {
+    borrador: {{ _('Borrador')|tojson }},
+    generando: {{ _('Generando…')|tojson }},
+    generada: {{ _('Generada')|tojson }},
+    finalizada: {{ _('Finalizada')|tojson }},
+  },
+  comparacion: {
+    aviso: {{ _('Hay dos redacciones de esta sección.')|tojson }},
+    explicacion: {{ _('Quédate con una para seguir. La descartada permanece en el historial de versiones, así que podrás recuperarla.')|tojson }},
+    actual: {{ _('Versión actual')|tojson }},
+    alternativa: {{ _('Alternativa propuesta')|tojson }},
+    elegir: {{ _('Quedarme con esta')|tojson }},
+  },
+  errorGeneracion: {{ _('Error de generación')|tojson }},
+  reabrir: {{ _('Reabrir situación')|tojson }},
+  escuchar: {{ _('Escuchar')|tojson }},
+  pararLectura: {{ _('Parar')|tojson }},
+  escuchando: {{ _('Leyendo en voz alta…')|tojson }},
+  sinVoz: {{ _('Tu sistema no tiene ninguna voz instalada para {idioma}, así que la lectura en voz alta no está disponible en esta situación.')|tojson }},
+  yaEnCurso: {{ _('Ya hay una generación en curso.')|tojson }},
+  noSePudoLanzar: {{ _('No se pudo lanzar la generación.')|tojson }},
+  terminoConError: {{ _('La generación terminó con error: ')|tojson }},
+  noSeGuardoEleccion: {{ _('No se ha podido guardar la elección.')|tojson }},
+  adaptacionLanzada: {{ _('Adaptación lanzada. Serás redirigido a la nueva SA…')|tojson }},
+  sinAdaptaciones: {{ _('Aún no hay adaptaciones generadas para esta situación.')|tojson }},
+  idiomaDestino: {{ _('El idioma destino es el de la situación ({idioma}). Cámbialo arriba, en el campo Idioma.')|tojson }},
+  confirmarRegenerar: {{ _('¿Regenerar la sección «{nombre}»? Se sobrescribirá su contenido actual.')|tojson }},
+  confirmarEliminar: {{ _('¿Seguro que quieres eliminar esta situación? Se eliminará también su historial de versiones.')|tojson }},
+  /* En minúscula: aparecen dentro de una frase («Traducir a catalán»), no
+     como etiqueta suelta. Y en la lengua de quien lee, no endónimos: el
+     selector de la cabecera sí usa «Català» porque ahí eliges TU idioma y
+     debes reconocerlo; aquí se dice en qué idioma está el documento. */
+  idiomas: {
+    es: {{ _('español')|tojson }},
+    ca: {{ _('catalán')|tojson }},
+    gl: {{ _('gallego')|tojson }},
+    eu: {{ _('euskera')|tojson }},
+    en: {{ _('inglés')|tojson }},
+    fr: {{ _('francés')|tojson }},
+    ar: {{ _('árabe')|tojson }},
+  },
+  /* Los mismos rótulos que usan las exportaciones. Comparten msgid, así que
+     comparten traducción: cambiar uno cambia el otro, que es lo correcto. */
+  secciones: {
+    descripcion: {{ _('Descripción de la situación')|tojson }},
+    objetivos: {{ _('Objetivos didácticos')|tojson }},
+    conexion_curricular: {{ _('Conexión curricular (competencias · criterios · saberes)')|tojson }},
+    secuencia_sesiones: {{ _('Secuencia de sesiones')|tojson }},
+    evaluacion: {{ _('Evaluación (instrumentos y rúbricas)')|tojson }},
+    atencion_diversidad: {{ _('Atención a la diversidad (DUA)')|tojson }},
+  },
+};
+
+/* `interpolar` y no `fmt`: esta plantilla ya tiene una función `fmt` para
+   fechas, y declarar dos con el mismo nombre rompe el script entero. */
+const interpolar = (plantilla, valores) =>
+  plantilla.replace(/\{([a-z_]+)\}/g, (_m, clave) =>
+    valores[clave] !== undefined ? valores[clave] : `{${clave}}`);
+const ID = {{ id_situacion | tojson }};
+
+function fmt(iso) {
+  if (!iso) return '—';
+  const d = new Date(iso);
+  return isNaN(d) ? iso : d.toLocaleString('es-ES', {
+    day:'2-digit', month:'2-digit', year:'numeric',
+    hour:'2-digit', minute:'2-digit', second:'2-digit'
+  });
+}
+
+async function cargar() {
+  const res = await fetch(`/api/situaciones/${ID}`);
+  if (res.status === 401) { window.location.href = '/login'; return; }
+  if (res.status === 404) { document.getElementById('titulo-h1').textContent = T.noEncontrada; return; }
+  if (res.status === 403) { document.getElementById('titulo-h1').textContent = T.sinPermiso; return; }
+
+  const sa = await res.json();
+  /* El idioma de la SA es el destino de «Traducir»: se guarda aquí para poder
+     nombrarlo en el botón. Sin decirlo, el docente pulsa sin saber qué va a
+     pasar — y si coincide con el idioma actual del texto, parece que no
+     funciona. */
+  document.getElementById('titulo-h1').textContent = sa.titulo;
+  document.getElementById('detalle-card').hidden = false;
+
+  // Selects con catálogo controlado: rellenamos con la lista y aplicamos
+  // el valor actual (incluso si es heredado de antes del catálogo).
+  /* Curso y materia se restringen mutuamente contra el catálogo real.
+     `preservar` mantiene lo que ya tuviera la SA aunque hoy sepamos que no es
+     una combinación válida: no se puede borrar en silencio lo que el docente
+     eligió. Se marca como heredado y se avisa. */
+  const pintarExplicacion = Cobertura.enlazarExplicacion(
+    document.getElementById('materia'),
+    document.getElementById('materia-explicacion'),
+    EXPLICACIONES_MATERIA
+  );
+
+  Cobertura.cargar().then((cobertura) => {
+    Cobertura.enlazar({
+      cobertura,
+      selCurso: document.getElementById('curso'),
+      selMateria: document.getElementById('materia'),
+      aviso: document.getElementById('materia-aviso'),
+      preservar: true,
+      cursoActual: sa.curso,
+      materiaActual: sa.materia,
+    });
+    // Después de `enlazar`, que es quien rellena el <select>.
+    pintarExplicacion();
+  });
+  rellenarSelect(document.getElementById('metodologia'), CATALOGOS.metodologias, { placeholder: T.sinEspecificar,     valor: sa.metodologia });
+
+  for (const k of ['titulo','estado','num_sesiones','duracion_sesion_minutos','idioma','descripcion','perfil_aula']) {
+    const el = document.getElementById(k);
+    if (el) el.value = sa[k] ?? '';
+  }
+  mostrarEstado(sa.estado);
+  // Para que el render de "atención a la diversidad" sepa qué bloques
+  // ocultar cuando la SA es una adaptación curricular.
+  window.SA_ADAPTACION = sa.id_situacion_origen
+    ? { tipo: sa.tipo_adaptacion }
+    : null;
+  /* Antes de pintar: si no hay voz para el idioma de la SA, las secciones se
+     dibujan ya sin botón de escucha, en lugar de aparecer y desaparecer. */
+  const idiomaSA = sa.idioma || 'es';
+  await repintarContenido(sa.contenido || {}, idiomaSA);
+  cargarVersiones();
+  cargarAdaptaciones();
+  document.getElementById('adaptaciones-card').hidden = false;
+}
+
+// -------------------------------------------------------------------------
+// Generación con IA
+// -------------------------------------------------------------------------
+
+/* Qué operaciones admite cada sección lo decide el servidor: la regla vive en
+   app/prompts/operaciones.py y se inyecta aquí. Repetirla en JavaScript
+   acabaría ofreciendo botones que el servidor rechaza. */
+const OPERACIONES_POR_SECCION = {{ operaciones_por_seccion | tojson }};
+
+const ETIQUETA_OP = {
+  resumir: {{ _('Resumir')|tojson }},
+  expandir: {{ _('Desarrollar')|tojson }},
+  traducir: {{ _('Traducir')|tojson }},
+  alternativa: {{ _('Proponer alternativa')|tojson }},
+};
+
+const NOMBRE_IDIOMA = T.idiomas;
+
+/* El idioma destino de «Traducir» es el de la SA, no una elección por
+   operación: así una situación no acaba con bloques en idiomas distintos. Se
+   cambia en el desplegable «Idioma» del formulario de arriba.
+   Se pasa como PARÁMETRO a renderContenido en lugar de guardarlo en una
+   variable global: con una global, quien vuelva a pintar las secciones puede
+   olvidarse de refrescarla y el botón acaba prometiendo un idioma distinto
+   del que usará el servidor. Como parámetro, olvidarlo es un error visible. */
+
+const SECCIONES = [
+  ['descripcion',           T.secciones.descripcion],
+  ['objetivos',             T.secciones.objetivos],
+  ['conexion_curricular',   T.secciones.conexion_curricular],
+  ['secuencia_sesiones',    T.secciones.secuencia_sesiones],
+  ['evaluacion',            T.secciones.evaluacion],
+  ['atencion_diversidad',   T.secciones.atencion_diversidad],
+];
+
+function mostrarEstado(estado) {
+  document.getElementById('generacion-card').hidden = false;
+  document.getElementById('contenido-card').hidden = false;
+  const badge = document.getElementById('gen-estado');
+  const map = {
+    borrador:         { texto: T.estados.borrador,   clase: '' },
+    generando:        { texto: T.estados.generando,  clase: 'badge--warn' },
+    generada:         { texto: T.estados.generada,   clase: 'badge--ok' },
+    error_generacion: { texto: T.errorGeneracion,    clase: 'badge--err' },
+    finalizada:       { texto: T.estados.finalizada, clase: 'badge--ok' },
+  };
+  const cfg = map[estado] || { texto: estado, clase: '' };
+  badge.className = `badge ${cfg.clase}`;
+  badge.textContent = cfg.texto;
+  badge.hidden = false;
+
+  const btn = document.getElementById('btn-generar');
+  btn.disabled = estado === 'generando';
+  // Modificamos solo el <span> interno para preservar el <svg> del icono
+  // Lucide que ya inyectó la librería. ``btn.textContent = ...`` borraría
+  // todo el árbol de hijos.
+  const label = btn.querySelector('span') || btn;
+  label.textContent = estado === 'borrador'
+    ? T.generarCompleto
+    : T.regenerarTodo;
+
+  const btnFinalizar = document.getElementById('btn-finalizar');
+  if (btnFinalizar) {
+    const txt = document.getElementById('btn-finalizar-texto');
+    if (estado === 'finalizada') {
+      txt.textContent = T.reabrir;
+      btnFinalizar.classList.replace('btn--secondary', 'btn--ghost');
+    } else {
+      txt.textContent = T.marcarTerminada;
+      btnFinalizar.classList.replace('btn--ghost', 'btn--secondary');
+    }
+    // Deshabilitar el botón si se está generando
+    btnFinalizar.disabled = estado === 'generando';
+  }
+}
+
+/* ---------------------------------------------------------------------------
+   Lectura en voz alta (tarea 8a)
+   ---------------------------------------------------------------------------
+   `hayVoz` se resuelve UNA vez, al cargar, y no en cada repintado: consultar
+   las voces por sección no cambiaría el resultado y `alListo` puede esperar
+   hasta dos segundos en Chrome, que carga la lista de forma asíncrona.
+
+   Si el sistema no tiene voz para el idioma de la situación, el botón no se
+   ofrece. Leer castellano con una voz inglesa no se entiende, y un control que
+   produce ruido ininteligible es peor que su ausencia; se explica el motivo en
+   su lugar para que no parezca que falta algo. */
+let hayVoz = false;
+let seccionLeyendo = null;
+
+async function comprobarVoz(idiomaSA) {
+  if (!Lectura.Lector.disponible) return false;
+  await Lectura.Lector.alListo();
+  return Lectura.Lector.vocesPara(idiomaSA).length > 0;
+}
+
+/* Alterna entre leer y parar. Solo una sección suena a la vez: pulsar en otra
+   corta la anterior, porque dos voces solapadas no se entienden. */
+function alternarLectura(boton, cuerpo, idiomaSA) {
+  const enCurso = seccionLeyendo === boton;
+  Lectura.Lector.parar();
+  restablecerBotonesLectura();
+  if (enCurso) return;
+
+  const texto = Lectura.textoLegible(cuerpo);
+  if (!texto) return;
+
+  seccionLeyendo = boton;
+  boton.textContent = T.pararLectura;
+  boton.setAttribute('aria-label', T.escuchando);
+
+  Lectura.Lector.leer(texto, idiomaSA, {
+    alTerminar: () => {
+      // También se dispara al cancelar y al fallar: sin esto, el botón se
+      // quedaría en «Parar» para siempre si la lectura se interrumpe.
+      if (seccionLeyendo === boton) restablecerBotonesLectura();
+    },
+  });
+}
+
+/* Repinta comprobando antes la voz. Existe porque el idioma de la SA es
+   editable: guardar un cambio de «español» a «inglés» puede hacer que aparezca
+   o desaparezca el botón, y con `hayVoz` resuelto solo al cargar la página se
+   quedaría mostrando lo de antes hasta recargar. */
+async function repintarContenido(contenido, idiomaSA) {
+  hayVoz = await comprobarVoz(idiomaSA);
+  mostrarAvisoSinVoz(idiomaSA);
+  renderContenido(contenido, idiomaSA);
+}
+
+/* Se explica por qué falta el botón. Sin esto, quien esperase la función
+   pensaría que no existe o que está rota; el aviso dice además qué idioma es
+   el que no tiene voz, que es el dato accionable para instalarla. */
+function mostrarAvisoSinVoz(idiomaSA) {
+  const aviso = document.getElementById('lectura-aviso');
+  if (!aviso) return;
+  // Solo si el navegador trae la API: en uno que no la tenga, hablar de voces
+  // instaladas despista más que ayuda.
+  const procede = Lectura.Lector.disponible && !hayVoz;
+  aviso.hidden = !procede;
+  if (procede) {
+    aviso.textContent = interpolar(T.sinVoz, {
+      idioma: NOMBRE_IDIOMA[idiomaSA] ?? idiomaSA,
+    });
+  }
+}
+
+function restablecerBotonesLectura() {
+  document.querySelectorAll('[data-leer]').forEach((b) => {
+    b.textContent = T.escuchar;
+    b.removeAttribute('aria-label');
+  });
+  seccionLeyendo = null;
+}
+
+function renderContenido(contenido, idiomaSA) {
+  const cont = document.getElementById('contenido-secciones');
+  const vacio = document.getElementById('contenido-vacio');
+  cont.innerHTML = '';
+
+  const conDatos = Object.keys(contenido).length > 0;
+  vacio.hidden = conDatos;
+
+  // Botones de descarga PDF/DOCX: solo visibles cuando hay contenido.
+  const acciones = document.getElementById('contenido-acciones');
+  const btnPdf = document.getElementById('btn-export-pdf');
+  const btnDocx = document.getElementById('btn-export-docx');
+  if (conDatos) {
+    btnPdf.href = `/api/situaciones/${ID}/exportar?formato=pdf`;
+    btnDocx.href = `/api/situaciones/${ID}/exportar?formato=docx`;
+    acciones.hidden = false;
+  } else {
+    acciones.hidden = true;
+  }
+
+  if (!conDatos) return;
+
+  // Secciones de generación normal (con botón Regenerar)
+  for (const [clave, etiqueta] of SECCIONES) {
+    if (!contenido[clave]) continue;
+    const datos = { ...contenido[clave] };
+    const meta = datos._meta || {};
+    delete datos._meta;
+
+    const sec = document.createElement('section');
+    sec.className = 'seccion-gen';
+
+    /* Las operaciones de bloque solo se ofrecen donde tienen sentido: la
+       conexión curricular es una tabla de códigos del Real Decreto, y
+       resumirla, desarrollarla o traducirla la estropea. La lista la manda el
+       servidor, que es quien decide de verdad (OPERACIONES_POR_SECCION). */
+    /* Una sección con alternativa pendiente no ofrece más operaciones: primero
+       hay que resolver la elección. Encadenar un resumen sobre una sección con
+       dos candidatas sin decidir solo genera confusión sobre qué se resumió. */
+    const alternativa = datos._alternativa;
+    delete datos._alternativa;
+    const ops = alternativa ? [] : (OPERACIONES_POR_SECCION[clave] || []);
+    const botonesOps = ops.map((op) => {
+      /* «Traducir» dice a qué idioma: es lo único que hace la acción
+         predecible, porque el destino no se elige aquí sino en el campo
+         «Idioma» de la situación. */
+      const esTraducir = op === 'traducir';
+      const idioma = NOMBRE_IDIOMA[idiomaSA] ?? idiomaSA;
+      const etiqueta = esTraducir
+        ? interpolar(T.traducirA, { idioma })
+        : ETIQUETA_OP[op];
+      const ayuda = esTraducir
+        ? ` title="${escapar(interpolar(T.idiomaDestino, { idioma }))}"`
+        : '';
+      return `<button type="button" class="btn btn--small" data-op="${op}"${ayuda}>
+                ${etiqueta}
+              </button>`;
+    }).join('');
+
+    /* Deshacer solo aparece tras aplicar una operación: si la sección nunca
+       se ha transformado, no hay nada a lo que volver. */
+    const transformada = Boolean(meta.operacion);
+
+    /* El botón de escucha va con las demás acciones de la sección, no aparte:
+       es una operación más sobre ese bloque. Se omite si no hay voz para el
+       idioma de la SA. */
+    const botonLeer = hayVoz
+      ? `<button type="button" class="btn btn--small" data-leer>${T.escuchar}</button>`
+      : '';
+
+    sec.innerHTML = `
+      <header>
+        <h3>${etiqueta}</h3>
+        <small>
+          ${meta.proveedor ?? '?'} · ${meta.modelo ?? '?'} ·
+          prompt ${meta.version_prompt ?? '?'}
+          ${transformada ? ` · ${ETIQUETA_OP[meta.operacion] ?? meta.operacion} aplicado` : ''}
+        </small>
+        <div class="seccion-gen__acciones">
+          ${botonLeer}
+          ${botonesOps}
+          ${transformada
+            ? `<button type="button" class="btn btn--small" data-op="deshacer">${T.deshacer}</button>`
+            : ''}
+          <button type="button" class="btn btn--small" data-op="regenerar">
+            ${T.regenerar}
+          </button>
+        </div>
+      </header>
+      <div class="seccion-cuerpo">${
+        alternativa
+          ? renderComparacion(clave, datos, alternativa)
+          : window.renderSeccion(clave, datos)
+      }</div>
+    `;
+
+    sec.querySelectorAll('[data-elegir]').forEach((btn) => {
+      btn.addEventListener('click', () => elegirPropuesta(clave, btn.dataset.elegir));
+    });
+
+    const btnLeer = sec.querySelector('[data-leer]');
+    if (btnLeer) {
+      const cuerpo = sec.querySelector('.seccion-cuerpo');
+      btnLeer.addEventListener('click', () => alternarLectura(btnLeer, cuerpo, idiomaSA));
+    }
+
+    sec.querySelectorAll('[data-op]').forEach((btn) => {
+      const op = btn.dataset.op;
+      btn.addEventListener('click', () => {
+        if (op === 'regenerar') return regenerarSeccion(clave);
+        if (op === 'deshacer') return deshacerSeccion(clave);
+        return transformarSeccion(clave, op, etiqueta);
+      });
+    });
+    cont.appendChild(sec);
+  }
+
+}
+
+/* Escapa para insertar en HTML, incluidos atributos.
+   Las comillas entran en la lista porque hay una llamada dentro de un
+   `title="…"`: un valor con comilla doble cerraría el atributo y a partir de
+   ahí lo que viniera se interpretaría como marcado. */
+function escapar(s) {
+  return String(s ?? '').replace(/[&<>"']/g, (c) => ({
+    '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;',
+  }[c]));
+}
+
+async function lanzarGeneracion(url) {
+  document.getElementById('gen-progreso').hidden = false;
+  document.getElementById('gen-bar').value = 0;
+  document.getElementById('gen-seccion').textContent = '—';
+  document.getElementById('gen-completadas').textContent = '0';
+  mostrarEstado('generando');
+
+  const res = await fetch(url, { method: 'POST' });
+  const body = await res.json().catch(() => ({}));
+  if (res.status === 409) {
+    alert(body.mensaje || T.yaEnCurso);
+    return;
+  }
+  if (!res.ok) {
+    alert(body.mensaje || body.error || T.noSePudoLanzar);
+    return;
+  }
+  await pollear(body.task_id);
+}
+
+async function pollear(taskId) {
+  const bar = document.getElementById('gen-bar');
+  const seccionLbl = document.getElementById('gen-seccion');
+  const compLbl = document.getElementById('gen-completadas');
+  const totalLbl = document.getElementById('gen-total');
+
+  for (let intentos = 0; intentos < 120; intentos++) {
+    const r = await fetch(`/api/tasks/${taskId}`);
+    const body = await r.json();
+    if (body.progreso) {
+      const { completadas, total, seccion_actual } = body.progreso;
+      if (total) { bar.max = total; totalLbl.textContent = total; }
+      if (completadas != null) { bar.value = completadas; compLbl.textContent = completadas; }
+      if (seccion_actual) seccionLbl.textContent = seccion_actual;
+    }
+    if (body.listo) {
+      document.getElementById('gen-progreso').hidden = true;
+      // Recargar la SA completa para refrescar estado y contenido.
+      cargar();
+      if (body.estado === 'FAILURE') {
+        alert(T.terminoConError +
+              (body.error?.mensaje || body.error?.exc_message || '—'));
+      }
+      return;
+    }
+    await new Promise(r => setTimeout(r, 700));
+  }
+  alert(T.esperaAgotada);
+}
+
+async function regenerarSeccion(nombre) {
+  if (!confirm(interpolar(T.confirmarRegenerar, { nombre }))) return;
+  await lanzarGeneracion(`/api/situaciones/${ID}/regenerar/${nombre}`);
+}
+
+/* Operaciones de bloque. No piden confirmación: se aplican directamente y
+   aparece un botón «Deshacer» en la propia sección. Antes de sustituir, el
+   servidor guarda una versión completa de la SA. */
+async function transformarSeccion(clave, operacion, etiqueta) {
+  await lanzarGeneracion(
+    `/api/situaciones/${ID}/secciones/${clave}/${operacion}`);
+}
+
+/* Comparación de las dos redacciones.
+   Cada columna es una <section> con su encabezado, así que un lector de
+   pantalla puede saltar de una a otra y saber en cuál está. El botón va DENTRO
+   de su columna y no en una barra común: al apilarse en móvil, un par de
+   botones separados del texto que describen dejaría de estar claro cuál
+   elige qué. */
+function renderComparacion(clave, actual, alternativa) {
+  const proc = (m) => {
+    const meta = m._meta || {};
+    return `${escapar(meta.proveedor ?? '?')} · ${escapar(meta.modelo ?? '?')}`;
+  };
+  const limpia = (m) => {
+    const copia = { ...m };
+    delete copia._meta;
+    return copia;
+  };
+
+  return `
+    <div class="comparacion">
+      <p class="comparacion__aviso">
+        <strong>${T.comparacion.aviso}</strong>
+        ${T.comparacion.explicacion}
+      </p>
+      <div class="comparacion__columnas">
+        <section class="propuesta-col" aria-labelledby="prop-actual-${clave}">
+          <header>
+            <h4 id="prop-actual-${clave}">${T.comparacion.actual}</h4>
+            <small>${proc(actual)}</small>
+          </header>
+          <div class="propuesta-col__cuerpo">
+            ${window.renderSeccion(clave, limpia(actual))}
+          </div>
+          <button type="button" class="btn btn--primary btn--small"
+                  data-elegir="actual">
+            ${T.comparacion.elegir}
+          </button>
+        </section>
+        <section class="propuesta-col propuesta-col--nueva"
+                 aria-labelledby="prop-alt-${clave}">
+          <header>
+            <h4 id="prop-alt-${clave}">${T.comparacion.alternativa}</h4>
+            <small>${proc(alternativa)}</small>
+          </header>
+          <div class="propuesta-col__cuerpo">
+            ${window.renderSeccion(clave, limpia(alternativa))}
+          </div>
+          <button type="button" class="btn btn--primary btn--small"
+                  data-elegir="alternativa">
+            ${T.comparacion.elegir}
+          </button>
+        </section>
+      </div>
+    </div>`;
+}
+
+async function elegirPropuesta(clave, cual) {
+  const res = await fetch(
+    `/api/situaciones/${ID}/secciones/${clave}/elegir/${cual}`,
+    { method: 'POST' });
+  const body = await res.json().catch(() => ({}));
+  if (!res.ok) {
+    alert(body.mensaje || body.error || T.noSeGuardoEleccion);
+    return;
+  }
+  repintarContenido(body.contenido || {}, body.idioma || 'es');
+}
+
+async function deshacerSeccion(clave) {
+  const res = await fetch(
+    `/api/situaciones/${ID}/secciones/${clave}/deshacer`, { method: 'POST' });
+  const body = await res.json().catch(() => ({}));
+  if (!res.ok) {
+    alert(body.mensaje || body.error || T.noSeHaDeshecho);
+    return;
+  }
+  cargar();
+}
+
+document.getElementById('btn-generar').addEventListener('click', () => {
+  lanzarGeneracion(`/api/situaciones/${ID}/generar`);
+});
+
+async function cargarVersiones() {
+  const res = await fetch(`/api/situaciones/${ID}/versiones`);
+  if (!res.ok) return;
+  const versiones = await res.json();
+  document.getElementById('versiones-card').hidden = false;
+  const tabla = document.getElementById('versiones-tabla');
+  const vacia = document.getElementById('versiones-vacia');
+  const body = document.getElementById('versiones-body');
+  body.innerHTML = '';
+  if (!versiones.length) { tabla.hidden = true; vacia.hidden = false; return; }
+  tabla.hidden = false; vacia.hidden = true;
+  for (const v of versiones) {
+    const tr = document.createElement('tr');
+    tr.innerHTML = `<td>v${v.numero_version}</td><td>${fmt(v.fecha)}</td>
+                    <td>${v.descripcion_cambio ?? ''}</td>
+                    <td>${v.contenido?.titulo ?? ''}</td>`;
+    body.appendChild(tr);
+  }
+}
+
+document.getElementById('sa-form').addEventListener('submit', async (ev) => {
+  ev.preventDefault();
+  const msg = document.getElementById('msg');
+  msg.hidden = true; msg.classList.remove('alert--ok');
+  const data = Object.fromEntries(new FormData(ev.target).entries());
+  for (const k of Object.keys(data)) if (data[k] === '') delete data[k];
+  if (data.num_sesiones) data.num_sesiones = parseInt(data.num_sesiones, 10);
+  if (data.duracion_sesion_minutos) data.duracion_sesion_minutos = parseInt(data.duracion_sesion_minutos, 10);
+
+  const res = await fetch(`/api/situaciones/${ID}`, {
+    method: 'PUT',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify(data),
+  });
+  const body = await res.json().catch(() => ({}));
+  if (res.ok) {
+    document.getElementById('titulo-h1').textContent = body.titulo;
+    msg.classList.add('alert--ok');
+    msg.textContent = T.cambiosGuardados;
+    msg.hidden = false;
+    document.getElementById('descripcion_cambio').value = '';
+    mostrarEstado(body.estado);
+    /* Repintar las secciones con lo que el servidor ha guardado de verdad.
+       Hace falta sobre todo por el idioma: sin esto, cambiarlo y guardar
+       dejaba el botón diciendo «Traducir a castellano» mientras el servidor
+       ya traducía a otro idioma. */
+    repintarContenido(body.contenido || {}, body.idioma || 'es');
+    cargarVersiones();
+  } else if (body.detalles) {
+    msg.textContent = body.detalles.map(d => `${d.loc?.join('.') ?? ''}: ${d.msg}`).join(' · ');
+    msg.hidden = false;
+  } else {
+    msg.textContent = body.mensaje || body.error || 'Error';
+    msg.hidden = false;
+  }
+});
+
+document.getElementById('btn-finalizar').addEventListener('click', () => {
+  const select = document.getElementById('estado');
+  if (select.value === 'finalizada') {
+    select.value = 'generada'; // o borrador, pero asumiendo que ya tiene contenido
+  } else {
+    select.value = 'finalizada';
+  }
+  // Enviar el formulario para guardar
+  document.getElementById('sa-form').dispatchEvent(new Event('submit', { cancelable: true }));
+});
+
+document.getElementById('btn-duplicar').addEventListener('click', async () => {
+  const res = await fetch(`/api/situaciones/${ID}/duplicar`, {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: '{}',
+  });
+  if (res.ok) {
+    const copia = await res.json();
+    window.location.href = `/situaciones/${copia.id_situacion}`;
+  }
+});
+
+document.getElementById('btn-eliminar').addEventListener('click', async () => {
+  if (!confirm(T.confirmarEliminar)) return;
+  const res = await fetch(`/api/situaciones/${ID}`, { method: 'DELETE' });
+  if (res.ok) window.location.href = '/situaciones';
+});
+
+// -------------------------------------------------------------------------
+// Adaptaciones curriculares
+// -------------------------------------------------------------------------
+
+async function cargarAdaptaciones() {
+  const lista = document.getElementById('adaptaciones-lista');
+  const res = await fetch(`/api/situaciones/${ID}/adaptaciones`);
+  if (!res.ok) return;
+  const adaptaciones = await res.json();
+  lista.innerHTML = '';
+  if (!adaptaciones.length) {
+    lista.innerHTML = `<p class="lead">${escapar(T.sinAdaptaciones)}</p>`;
+    return;
+  }
+  const ul = document.createElement('ul');
+  ul.className = 'adaptaciones-list';
+  for (const a of adaptaciones) {
+    const li = document.createElement('li');
+    const tipo = a.es_adaptacion ? (a.tipo_adaptacion === 'significativa' ? 'ACS' : 'ACNS') : '';
+    li.innerHTML = `
+      <a href="/situaciones/${a.id_situacion}" class="link">
+        ${escapar(a.titulo)}
+      </a>
+      <span class="badge ${a.estado === 'generada' ? 'badge--ok' : ''}" style="margin-left:.5rem">
+        ${tipo} · ${a.estado}
+      </span>
+    `;
+    ul.appendChild(li);
+  }
+  lista.appendChild(ul);
+}
+
+document.getElementById('adaptacion-form').addEventListener('submit', async (ev) => {
+  ev.preventDefault();
+  const msg = document.getElementById('adapt-msg');
+  msg.hidden = true;
+  msg.classList.remove('alert--ok');
+
+  const tipo = document.getElementById('adapt-tipo').value;
+  const perfil = document.getElementById('adapt-perfil').value.trim();
+  const titulo = document.getElementById('adapt-titulo').value.trim() || null;
+
+  if (perfil.length < 10) {
+    msg.textContent = T.perfilCorto;
+    msg.hidden = false;
+    return;
+  }
+
+  const payload = { tipo_adaptacion: tipo, perfil_alumnado: perfil };
+  if (titulo) payload.titulo = titulo;
+
+  const res = await fetch(`/api/situaciones/${ID}/adaptaciones`, {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify(payload),
+  });
+  const body = await res.json().catch(() => ({}));
+
+  if (res.ok) {
+    msg.textContent = T.adaptacionLanzada;
+    msg.classList.add('alert--ok');
+    msg.hidden = false;
+    ev.target.reset();
+    await pollear(body.task_id);
+    window.location.href = `/situaciones/${body.id_situacion}`;
+  } else if (body.detalles) {
+    msg.textContent = body.detalles.map(d => `${d.loc?.join('.') ?? ''}: ${d.msg}`).join(' · ');
+    msg.hidden = false;
+  } else {
+    msg.textContent = body.mensaje || body.error || 'Error desconocido';
+    msg.hidden = false;
+  }
+});
+
+cargar();
+</script>
+{% endblock %}

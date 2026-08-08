@@ -1,0 +1,215 @@
+{
+  "materia_oficial": "LATÍN",
+  "materia": "Latín",
+  "etapa": "ESO",
+  "ciclo": "Único",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "4º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "CE1",
+      "descripcion": "Valorar el papel de la civilización latina en el origen de la identidad europea, comparando y reconociendo las semejanzas y diferencias entre lenguas y culturas, para analizar críticamente el presente.",
+      "descriptores": [
+        "CCL2",
+        "CP2",
+        "CP3",
+        "CC1",
+        "CCEC1"
+      ]
+    },
+    {
+      "codigo": "CE2",
+      "descripcion": "Conocer los aspectos básicos de la lengua latina, comparándola con las lenguas de enseñanza y con otras lenguas del repertorio individual del alumnado, para valorar los rasgos comunes y apreciar la diversidad lingüística como muestra de riqueza cultural.",
+      "descriptores": [
+        "CP2",
+        "CP3",
+        "STEM1",
+        "CE3"
+      ]
+    },
+    {
+      "codigo": "CE3",
+      "descripcion": "Leer e interpretar textos latinos, asumiendo la aproximación a los textos como un proceso dinámico y tomando conciencia de los conocimientos y experiencias propias, para identificar su carácter clásico y fundamental.",
+      "descriptores": [
+        "CCL2",
+        "CP1",
+        "CP2",
+        "STEM1",
+        "CPSAA4",
+        "CCEC1"
+      ]
+    },
+    {
+      "codigo": "CE4",
+      "descripcion": "Comprender textos originales latinos, traduciendo del latín a la lengua de enseñanza y desarrollando estrategias de acceso al significado de un enunciado sencillo en lengua latina, para alcanzar y justificar la traducción propia de un pasaje.",
+      "descriptores": [
+        "CCL2",
+        "CP2",
+        "CP3",
+        "CD2",
+        "STEM1"
+      ]
+    },
+    {
+      "codigo": "CE5",
+      "descripcion": "Descubrir, conocer y valorar el patrimonio cultural, arqueológico y artístico romano, apreciándolo y reconociéndolo como producto de la creación humana y como testimonio de la historia, para identificar las fuentes de inspiración y distinguir los procesos de construcción, preservación, conservación y restauración, así como para garantizar su sostenibilidad.",
+      "descriptores": [
+        "CP3",
+        "CD1",
+        "CD3",
+        "CC1",
+        "CC4",
+        "CCEC1",
+        "CCEC2"
+      ]
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "CE1",
+      "descripcion": "Describir el significado de productos culturales del presente, en el contexto de los desarrollos culturales en Europa, comparando las semejanzas y diferencias con la Antigüedad latina."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "CE1",
+      "descripcion": "Valorar de manera crítica los modos de vida, costumbres y actitudes de la sociedad romana en comparación con los de nuestras sociedades a partir del contenido de fuentes latinas en diferentes soportes."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "CE1",
+      "descripcion": "Identificar los periodos de la historia de Roma, los acontecimientos y personajes, así como los aspectos de la civilización romana en su contexto histórico, relacionando los datos con referentes actuales y aplicando los conocimientos adquiridos."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "CE2",
+      "descripcion": "Valorar críticamente y adecuarse a la diversidad lingüística y cultural a la que da origen el latín, identificando y explicando semejanzas y diferencias entre los elementos lingüísticos del entorno, relacionándolos con los de la propia cultura y desarrollando una cultura compartida y una ciudadanía comprometida con los valores democráticos."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "CE2",
+      "descripcion": "Inferir significados de términos latinos aplicando los conocimientos léxicos y fonéticos de otras lenguas del repertorio individual propio."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "CE2",
+      "descripcion": "Ampliar el caudal léxico y mejorar la expresión oral y escrita, incorporando latinismos y locuciones usuales de origen latino de manera coherente."
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "CE2",
+      "descripcion": "Producir definiciones etimológicas de términos cotidianos, científicos y técnicos, reconociendo los elementos latinos en diferentes contextos lingüísticos y estableciendo, si procede, la relación semántica entre un término patrimonial y un cultismo."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "CE3",
+      "descripcion": "Explicar de forma oral, escrita o multimodal el carácter clásico y humanista de las diversas manifestaciones literarias y artísticas de la civilización latina utilizando un vocabulario correcto y una expresión adecuada."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "CE3",
+      "descripcion": "Reconocer el sentido global y las ideas principales y secundarias de un texto, contextualizándolo e identificando las referencias históricas, sociales, políticas o religiosas que aparecen en él, y sirviéndose de conocimientos sobre personajes y acontecimientos históricos ya estudiados."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "CE3",
+      "descripcion": "Interpretar de manera crítica el contenido de textos latinos de dificultad adecuada, atendiendo al contexto en el que se produjeron, conectándolos con la experiencia propia y valorando cómo contribuyen a entender los modos de vida, costumbres y actitudes de nuestra sociedad."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "CE4",
+      "descripcion": "Analizar los aspectos morfológicos, sintácticos y léxicos elementales de la lengua latina, identificándolos y comparándolos con los de la lengua familiar."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "CE4",
+      "descripcion": "Traducir textos breves y sencillos con términos adecuados y expresión correcta en la lengua de enseñanza, justificando la traducción y manifestando la correspondencia entre el análisis y la versión realizada."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "CE4",
+      "descripcion": "Producir mediante retroversión oraciones simples utilizando las estructuras propias de la lengua latina."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "CE5",
+      "descripcion": "Explicar los elementos de la civilización latina, especialmente los relacionados con la mitología clásica, identificándolos como fuente de inspiración de manifestaciones literarias y artísticas."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "CE5",
+      "descripcion": "Reconocer las huellas de la romanización en el patrimonio cultural y arqueológico del entorno, identificando los procesos de preservación, conservación y restauración como un aspecto fundamental de una ciudadanía comprometida con la sostenibilidad ambiental y el cuidado de su legado."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "CE5",
+      "descripcion": "Exponer de forma oral, escrita o multimodal las conclusiones obtenidas a partir de la investigación, individual o colectiva, del legado material e inmaterial de la civilización romana y su pervivencia en el presente a través de soportes analógicos y digitales, seleccionando información, contrastándola y organizándola a partir de criterios de validez, calidad y fiabilidad."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. El presente de la civilización latina",
+      "titulo": "El presente de la civilización latina",
+      "items": [
+        "Aspectos geográficos, históricos, culturales, políticos y lingüísticos de la civilización latina presentes en la noción actual de Europa y de su cultura.",
+        "Estrategias y herramientas para relacionar el pasado y el presente a partir de los conocimientos adquiridos.",
+        "Obras fundamentales de la literatura latina en su contexto y su pervivencia a través de la tradición clásica.",
+        "Importancia de la civilización latina en la configuración, reconocimiento y análisis crítico de nuestra identidad como sociedad.",
+        "Estrategias para comprender, comentar e interpretar textos latinos a partir de los conocimientos adquiridos y de la experiencia propia.",
+        "Léxico latino: evolución de los conceptos fundamentales de la civilización latina hasta la actualidad ( civis ,  populus ,  sacer ,  homo,  etc.).",
+        "Importancia de los textos clásicos latinos como testimonio de aquellos aspectos constitutivos de nuestra condición humana.",
+        "El papel del humanismo y su presencia en la sociedad actual."
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Latín y plurilingüismo",
+      "titulo": "Latín y plurilingüismo",
+      "items": [
+        "El abecedario y la pronunciación del latín, así como su permanencia e influencia en las lenguas del repertorio lingüístico individual del alumnado.",
+        "Explicación de los cambios fonéticos más frecuentes desde el latín culto y el latín vulgar.",
+        "Identificación de palabras con lexemas, sufijos y prefijos de origen latino en textos escritos en las lenguas de enseñanza.",
+        "Procedimientos de composición y derivación latinos en la elaboración de familias de palabras.",
+        "Iniciación al significado etimológico de las palabras.",
+        "Estrategias básicas para inferir significados en léxico especializado y de nueva aparición a partir de la identificación de formantes latinos.",
+        "Latinismos y locuciones latinas más frecuentes.",
+        "Técnicas de reconocimiento, organización e incorporación a la producción escrita, oral o multimodal de léxico de raíz común entre las distintas lenguas del repertorio lingüístico individual.",
+        "Comparación entre lenguas a partir de su origen y parentescos.",
+        "Importancia del latín como herramienta de mejora de la expresión escrita, oral y multimodal en las distintas lenguas del repertorio lingüístico individual.",
+        "Herramientas analógicas y digitales para el aprendizaje y reflexión de la lengua latina como vínculo e impulso para el aprendizaje de otras lenguas."
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. El texto latino y la traducción",
+      "titulo": "El texto latino y la traducción",
+      "items": [
+        "Los casos y sus principales valores sintácticos.",
+        "La flexión nominal, pronominal y verbal.",
+        "Estructuras oracionales básicas. La concordancia y el orden de palabras.",
+        "Estrategias básicas para identificar, analizar y traducir unidades lingüísticas (léxico, morfosintaxis) a partir de la comparación de las lenguas y variedades que conforman el repertorio lingüístico personal.",
+        "Recursos para el aprendizaje y estrategias básicas de adquisición de lenguas tales como Portfolio Europeo de las Lenguas, glosarios o diccionarios.",
+        "Reflexión y justificación de la traducción ofrecida.",
+        "Retroversión de oraciones sencillas.",
+        "Autoconfianza, autonomía e iniciativa. El error como parte integrante del proceso de aprendizaje."
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Legado y patrimonio",
+      "titulo": "Legado y patrimonio",
+      "items": [
+        "Pervivencia del legado material (sitios arqueológicos, inscripciones, construcciones monumentales y artísticas, etc.) e inmaterial (mitología clásica, instituciones políticas, oratoria, derecho, rituales y celebraciones, etc.) de la cultura y la civilización latinas.",
+        "La transmisión textual y los soportes de escritura.",
+        "Características del patrimonio cultural romano y del proceso de romanización.",
+        "Interés e iniciativa en participar en procesos destinados a conservar, preservar y difundir el patrimonio arqueológico del entorno.",
+        "Herramientas analógicas y digitales para la comprensión, producción y coproducción oral, escrita y multimodal.",
+        "Respeto de la propiedad intelectual y derechos de autor sobre las fuentes consultadas y los contenidos utilizados.",
+        "Estrategias y herramientas, analógicas y digitales, individuales y cooperativas, para la autoevaluación, la coevaluación y la autorreparación."
+      ]
+    }
+  ]
+}

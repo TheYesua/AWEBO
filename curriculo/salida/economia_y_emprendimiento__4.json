@@ -1,0 +1,285 @@
+{
+  "materia_oficial": "ECONOMÍA Y EMPRENDIMIENTO",
+  "materia": "Economía y Emprendimiento",
+  "etapa": "ESO",
+  "ciclo": "Único",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "4º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "CE1",
+      "descripcion": "Analizar y valorar las fortalezas y debilidades propias y de los demás, reflexionando sobre las aptitudes y gestionando de forma eficaz las emociones y las destrezas necesarias, para adaptarse a entornos cambiantes y diseñar un proyecto personal que genere valor para los demás.",
+      "descriptores": [
+        "CPSAA1",
+        "CC1",
+        "CE2",
+        "CCEC3"
+      ]
+    },
+    {
+      "codigo": "CE2",
+      "descripcion": "Utilizar estrategias de conformación de equipos, así como habilidades sociales, de comunicación e innovación ágil, aplicándolas con autonomía y motivación a las dinámicas de trabajo en distintos contextos, para constituir equipos eficaces y descubrir el valor de cooperar con otras personas durante el proceso de ideación y desarrollo de soluciones emprendedoras.",
+      "descriptores": [
+        "CCL1",
+        "CP1",
+        "CP2",
+        "CPSAA1",
+        "CPSAA3",
+        "CC1",
+        "CE2"
+      ]
+    },
+    {
+      "codigo": "CE3",
+      "descripcion": "Elaborar, con sentido ético y solidario, ideas y soluciones innovadoras y sostenibles que den respuesta a las necesidades locales y globales detectadas, utilizando metodologías ágiles de ideación y analizando tanto sus puntos fuertes y débiles como el impacto que puedan generar esas ideas en el entorno, para lograr la superación de retos relacionados con la preservación y cuidado del medio natural, social, cultural y artístico.",
+      "descriptores": [
+        "STEM3",
+        "CC4",
+        "CE1",
+        "CE2",
+        "CE3",
+        "CCEC3"
+      ]
+    },
+    {
+      "codigo": "CE4",
+      "descripcion": "Seleccionar y reunir los recursos disponibles en el proceso de desarrollo de la idea o solución creativa propuesta, conociendo los medios de producción y las fuentes financieras que proporcionan dichos recursos y aplicando estrategias de captación de los mismos, para poner en marcha el proyecto que lleve a la realidad la solución emprendedora.",
+      "descriptores": [
+        "STEM3",
+        "CD2",
+        "CE1",
+        "CE2"
+      ]
+    },
+    {
+      "codigo": "CE5",
+      "descripcion": "Presentar y exponer ideas y soluciones creativas, utilizando estrategias comunicativas ágiles y valorando la importancia de una comunicación efectiva y respetuosa, para transmitir mensajes convincentes adecuados al contexto y a los objetivos concretos de cada situación y validar las ideas y soluciones presentadas.",
+      "descriptores": [
+        "CCL1",
+        "CCL2",
+        "CCL3",
+        "CD3",
+        "CPSAA1",
+        "CC1",
+        "CE1",
+        "CE2"
+      ]
+    },
+    {
+      "codigo": "CE6",
+      "descripcion": "Comprender aspectos básicos de la economía y las finanzas, valorando críticamente el problema de la escasez de recursos y la necesidad de elegir, así como los principios de interacción social desde el punto de vista económico, para relacionar dichos aspectos con la búsqueda y planificación de los recursos necesarios en el desarrollo de la idea o solución emprendedora que afronte el reto planteado de manera eficiente, equitativa y sostenible.",
+      "descriptores": [
+        "CC1",
+        "CE1",
+        "CE2",
+        "CE3"
+      ]
+    },
+    {
+      "codigo": "CE7",
+      "descripcion": "Construir y analizar de manera cooperativa, autónoma y ágil prototipos innovadores y sostenibles, aplicando estrategias eficaces de diseño y ejecución, evaluando todas las fases del proceso de manera crítica y ética y validando los resultados obtenidos, para mejorar y perfeccionar los prototipos creados y para contribuir al aprendizaje y el desarrollo personal y colectivo.",
+      "descriptores": [
+        "STEM3",
+        "CD5",
+        "CPSAA3",
+        "CPSAA5",
+        "CE2",
+        "CE3"
+      ]
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "CE1",
+      "descripcion": "Adaptarse a entornos complejos y crear un proyecto personal original y generador de valor, partiendo de la valoración crítica sobre las propias aptitudes y las posibilidades creativas, haciendo hincapié en las fortalezas y debilidades y logrando progresivamente el control consciente de las emociones."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "CE1",
+      "descripcion": "Utilizar estrategias de análisis razonado de las fortalezas y debilidades personales y de la iniciativa y creatividad propia y de los demás."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "CE1",
+      "descripcion": "Gestionar de forma eficaz las emociones y destrezas personales, promoviendo y desarrollando actitudes creativas."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "CE1",
+      "descripcion": "Entrenar las cualidades personales necesarias en la realización del proyecto personal, a partir de la identificación de las fortalezas y debilidades propias detectadas."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "CE2",
+      "descripcion": "Constituir equipos de trabajo basados en principios de equidad, coeducación e igualdad entre hombres y mujeres, actitud participativa y visualización de metas comunes, utilizando estrategias que faciliten la identificación y optimización de los recursos humanos necesarios que conduzcan a la consecución del reto propuesto."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "CE2",
+      "descripcion": "Poner en práctica habilidades sociales, de comunicación abierta, de motivación, de liderazgo y de cooperación e innovación ágil tanto de manera presencial como a distancia en distintos contextos de trabajo en equipo."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "CE2",
+      "descripcion": "Valorar y respetar las aportaciones de los demás en las distintas dinámicas de trabajo y fases del proceso llevado a cabo, respetando las decisiones tomadas de forma colectiva."
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "CE2",
+      "descripcion": "Evaluar la conformación y el funcionamiento de los equipos considerando la adecuación de las potencialidades individuales a las necesidades del grupo y del proyecto emprendedor realizado."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "CE3",
+      "descripcion": "Preservar y cuidar el medio natural, social, cultural y artístico a partir de propuestas y actuaciones locales y globales que promuevan el desarrollo sostenible con visión creativa, emprendedora y comprometida."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "CE3",
+      "descripcion": "Superar los retos propuestos a partir de ideas y soluciones innovadoras y sostenibles, evaluando sus ventajas e inconvenientes, así como el impacto que pudieran generar a nivel personal y en el contexto al que van dirigidas."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "CE3",
+      "descripcion": "Aplicar metodologías ágiles siguiendo los criterios y pautas establecidos en el proceso de construcción de ideas creativas y sostenibles que faciliten la superación de los retos planteados y la obtención de soluciones a las necesidades detectadas con sentido ético y solidario."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "CE3",
+      "descripcion": "Tomar conciencia de la importancia de llevar a cabo prácticas sostenibles y respetuosas con el medio, tanto a nivel individual como colectivo, analizando críticamente el modelo productivo y de consumo actual, identificando prioridades de actuación relacionadas con los Objetivos de Desarrollo Sostenible y aplicándolas al proyecto emprendedor."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "CE4",
+      "descripcion": "Poner en marcha un proyecto que lleve a la realidad una solución emprendedora, seleccionando y reuniendo los recursos materiales, inmateriales y digitales disponibles en el proceso de ideación creativa."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "CE4",
+      "descripcion": "Utilizar con autonomía estrategias de captación y gestión de recursos conociendo sus características y aplicándolas al proceso de conversión de las ideas y soluciones en acciones."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "CE4",
+      "descripcion": "Reunir, analizar y seleccionar con criterios propios los recursos disponibles, planificando con coherencia su organización, distribución, uso y optimización."
+    },
+    {
+      "codigo": "4.4",
+      "competencia": "CE4",
+      "descripcion": "Valorar la adecuación de los recursos utilizados en el proyecto desde planteamientos éticos orientados al desarrollo sostenible y al bienestar para todos."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "CE5",
+      "descripcion": "Validar las ideas y soluciones presentadas mediante mensajes convincentes y adecuados al contexto y a objetivos concretos, utilizando estrategias comunicativas ágiles adecuadas a cada situación comunicativa."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "CE5",
+      "descripcion": "Presentar y exponer con claridad y coherencia las ideas y soluciones creativas, valorando la importancia de mantener una comunicación eficaz y respetuosa a lo largo de todo el proceso."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "CE5",
+      "descripcion": "Comunicar las ideas y soluciones propuestas favoreciendo el uso de herramientas TIC."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "CE6",
+      "descripcion": "Desarrollar una idea o solución emprendedora a partir de los conocimientos, destrezas y actitudes adquiridos desde el ámbito de la economía y las finanzas, viendo la relación entre estos y los recursos necesarios y disponibles que permiten su desarrollo."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "CE6",
+      "descripcion": "Conocer de manera amplia y comprender con precisión los conocimientos, destrezas y actitudes necesarios del ámbito económico y financiero, aplicándolos con coherencia a situaciones, actividades o proyectos concretos."
+    },
+    {
+      "codigo": "6.3",
+      "competencia": "CE6",
+      "descripcion": "Afrontar los retos de manera eficaz, equitativa y sostenible, en distintos contextos y situaciones, reales o simuladas, transfiriendo los saberes económicos y financieros necesarios."
+    },
+    {
+      "codigo": "6.4",
+      "competencia": "CE6",
+      "descripcion": "Valorar críticamente el problema económico de la escasez de recursos y la necesidad de elegir, así como los principios de interacción social desde el punto de vista económico, aprovechando este conocimiento en el afrontamiento eficaz de retos."
+    },
+    {
+      "codigo": "6.5",
+      "competencia": "CE6",
+      "descripcion": "Valorar la idea y solución emprendedora propuesta a partir del análisis de indicadores del entorno específico y del entorno general determinando su posible viabilidad y su idoneidad respecto al reto planteado."
+    },
+    {
+      "codigo": "7.1",
+      "competencia": "CE7",
+      "descripcion": "Valorar la contribución del prototipo final tanto al aprendizaje como al desarrollo personal y colectivo evaluando de manera crítica y ética todas las fases del proceso llevado a cabo, así como la adecuación de las estrategias empleadas en la construcción del mismo."
+    },
+    {
+      "codigo": "7.2",
+      "competencia": "CE7",
+      "descripcion": "Analizar de manera crítica el proceso de diseño y ejecución llevado a cabo en la realización de los prototipos creados, estableciendo comparaciones entre la efectividad, la viabilidad y la adecuación lograda en los procesos y los resultados obtenidos."
+    },
+    {
+      "codigo": "7.3",
+      "competencia": "CE7",
+      "descripcion": "Utilizar estrategias eficaces de diseño y ejecución seleccionando aquellas que faciliten la construcción del prototipo final de manera ágil, cooperativa y autónoma."
+    },
+    {
+      "codigo": "7.4",
+      "competencia": "CE7",
+      "descripcion": "Tomar conciencia de la necesidad de respetar la legislación sobre la propiedad intelectual e industrial conociendo los derechos atribuidos a las creaciones propias."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. El perfil de la persona emprendedora, iniciativa y creatividad",
+      "titulo": "El perfil de la persona emprendedora, iniciativa y creatividad",
+      "items": [
+        "El perfil de la persona emprendedora. Características personales: autoconfianza, autoconocimiento, empatía, perseverancia, iniciativa y resiliencia. Técnicas de diagnóstico de debilidades y fortalezas. Formas de emprendimiento: emprendimiento social, emprendimiento cultural, emprendimiento empresarial e intraemprendimiento. El trabajo por cuenta propia y ajena. Estudio de casos.",
+        "Creatividad, ideas y soluciones. Pensamiento de diseño o  design thinking  y otras metodologías de innovación ágil.",
+        "Comunicación, motivación, negociación y liderazgo. Habilidades sociales.",
+        "Gestión de emociones. Estrategias de gestión de la incertidumbre y toma de decisiones en contextos cambiantes. El error y la validación como oportunidades para aprender."
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. El entorno como fuente de ideas y oportunidades",
+      "titulo": "El entorno como fuente de ideas y oportunidades",
+      "items": [
+        "La economía como ciencia. La perspectiva económica del entorno. El problema económico: la escasez de recursos y la necesidad de elegir. La elección en economía: costes, análisis marginal, incentivos. El comportamiento de las personas en las decisiones. Comercio, bienestar y desigualdades. Concepto de macroeconomía y microeconomía.",
+        "El entorno económico-empresarial. Los agentes económicos y el flujo circular de la renta. El concepto de mercado. El funcionamiento de los mercados: competencia perfecta e imperfecta, estudio de casos. El mercado y las oportunidades de negocio: análisis del entorno general o macroentorno; análisis del entorno específico o microentorno. Los fallos del mercado y la intervención del Estado en la economía. El dinero. La inflación. El sistema financiero. Los intermediarios financieros bancarios y la creación de dinero. Los productos financieros. La empresa y su responsabilidad social. La decisión empresarial y la innovación como fuente de transformación social.",
+        "El entorno social, cultural y ambiental desde una perspectiva económica. El emprendimiento y el mercado laboral: nuevos yacimientos de empleo. La economía colaborativa. Las externalidades medioambientales. La huella ecológica y la economía circular. La economía social y solidaria. Consumo responsable y circuitos cortos de comercialización. Los Objetivos de Desarrollo Sostenible (ODS) y el desarrollo local. Sectores productivos y géneros del entorno cultural y artístico. Agentes que apoyan la creación de proyectos culturales emprendedores.",
+        "Estrategias de exploración del entorno. Búsqueda y gestión de la información. Métodos de análisis de la competencia: cinco fuerzas competitivas, matriz DAFO, mapa perceptual. Estudio de casos.",
+        "La visión emprendedora. Estudio de casos."
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Recursos para llevar a cabo un proyecto emprendedor",
+      "titulo": "Recursos para llevar a cabo un proyecto emprendedor",
+      "items": [
+        "Misión, visión y valores de la empresa o entidad. La organización y gestión de las entidades emprendedoras. El organigrama. Las áreas de: aprovisionamiento, producción, comercialización o marketing, recursos humanos, administración o financiación e I+D+I. Funciones de la empresa. La clasificación de la empresa según su tamaño.",
+        "Los equipos en las empresas y organizaciones. Estrategias ágiles de trabajo en equipo. Formación y funcionamiento de equipos de trabajo. La comunicación interna.",
+        "Las finanzas personales y del proyecto emprendedor: control y gestión del dinero. El valor del dinero en el tiempo: interés simple e interés compuesto. La inversión inicial del proyecto emprendedor. Fuentes y control de ingresos y gastos. Recursos financieros a corto y largo plazo y su relación con el bienestar financiero. El endeudamiento. Fuentes de financiación y captación de recursos financieros. La gestión del riesgo financiero y los seguros."
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. La realización del proyecto emprendedor",
+      "titulo": "La realización del proyecto emprendedor",
+      "items": [
+        "El reto o desafío como objetivo.",
+        "Planificación, gestión y ejecución de un proyecto emprendedor. Del reto al prototipo. Cronograma del proyecto emprendedor.",
+        "Desarrollo ágil de producto. Scrum: roles, reuniones y artefactos. Kanban. Otras posibles metodologías.",
+        "Técnicas y herramientas de prototipado rápido. Posibilidades de prototipado: bienes, servicios y aplicaciones.",
+        "Presentación e introducción del prototipo en el entorno. Estrategias de difusión. Uso de las TIC como herramienta de comunicación.",
+        "Validación y testado de prototipos. Valoración del proceso de trabajo. Innovación ágil.",
+        "El usuario como destinatario final del prototipo. La toma de decisiones de los usuarios. El usuario como consumidor. Derechos y obligaciones de los consumidores.",
+        "Derechos sobre el prototipo: la propiedad intelectual e industrial y su registro."
+      ]
+    }
+  ]
+}

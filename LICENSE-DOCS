@@ -1,0 +1,73 @@
+Licencia de la documentación y del material educativo de AWEBO
+==============================================================
+
+Copyright (C) 2026 Jesús José Cantero López
+
+La documentación, el material didáctico y los datos curriculares de AWEBO se
+publican bajo
+
+    Creative Commons Reconocimiento-NoComercial-CompartirIgual 4.0
+    Internacional  (CC BY-NC-SA 4.0)
+
+El texto legal completo, que es el que rige, está en:
+
+    https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.es
+    https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode   (inglés)
+
+Un resumen legible, que no sustituye al texto legal:
+
+    https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es
+
+
+Qué cubre esta licencia
+-----------------------
+
+    docs/                 el diario de desarrollo, la hoja de ruta y la
+                          declaración de accesibilidad
+    curriculo/README.md   la documentación del proceso de extracción
+    README.md             y CLAUDE.md
+
+En resumen: la prosa. **El código NO está bajo esta licencia**, sino bajo la
+GNU General Public License v3.0, cuyo texto está en el fichero `LICENSE`.
+
+La razón de separarlas: Creative Commons desaconseja expresamente el uso de sus
+licencias para software. En sus palabras, «We recommend against using Creative
+Commons licenses for software», porque no dicen nada sobre la distribución del
+código fuente ni sobre patentes, y no son compatibles con las licencias de
+software habituales. Ver https://creativecommons.org/faq/
+
+
+Qué NO cubre, porque no es nuestro
+----------------------------------
+
+**El texto normativo del BOE.** Los ficheros de `curriculo/fuentes/` son el
+Real Decreto 217/2022 y la Orden EFP/754/2022, y los JSON de `curriculo/salida/`
+son ese mismo texto reestructurado: competencias específicas, criterios de
+evaluación y saberes básicos, literales. No son obra de la autora de AWEBO.
+
+Se trata de disposiciones legales publicadas en el Boletín Oficial del Estado,
+excluidas de la protección de la propiedad intelectual por el artículo 13 del
+Texto Refundido de la Ley de Propiedad Intelectual (Real Decreto Legislativo
+1/1996): «No son objeto de propiedad intelectual las disposiciones legales o
+reglamentarias y sus correspondientes proyectos […]». Su reproducción es libre.
+
+Lo que sí es obra propia y queda bajo CC BY-NC-SA es el **trabajo de
+estructuración**: decidir el esquema de datos, el reparto por materia y curso,
+y la selección de qué se extrae.
+
+**El contenido generado por IA.** Las situaciones de aprendizaje que produce la
+aplicación no están cubiertas por esta licencia ni por la GPL. Su régimen
+depende de los términos del proveedor de IA que las haya generado y de la
+legislación aplicable, que en materia de obra generada por máquina está lejos de
+estar asentada.
+
+
+Cómo atribuir
+-------------
+
+    AWEBO — Generación asistida de Situaciones de Aprendizaje LOMLOE
+    Jesús José Cantero López
+    https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+Si has modificado el material, dilo, e indica que la obra derivada se
+distribuye bajo la misma licencia.

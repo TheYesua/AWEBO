@@ -1,0 +1,247 @@
+{
+  "materia_oficial": "BIOLOGÍA Y GEOLOGÍA",
+  "materia": "Biología y Geología",
+  "etapa": "ESO",
+  "ciclo": "Curso tercero",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "3º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "CE1",
+      "descripcion": "Interpretar y transmitir información y datos científicos, argumentando sobre ellos y utilizando diferentes formatos, para analizar conceptos y procesos de las ciencias biológicas y geológicas.",
+      "descriptores": [
+        "CCL1",
+        "CCL2",
+        "CCL5",
+        "STEM4",
+        "CD2",
+        "CD3",
+        "CCEC4"
+      ]
+    },
+    {
+      "codigo": "CE2",
+      "descripcion": "Identificar, localizar y seleccionar información, contrastando su veracidad, organizándola y evaluándola críticamente, para resolver preguntas relacionadas con las ciencias biológicas y geológicas.",
+      "descriptores": [
+        "CCL3",
+        "STEM4",
+        "CD1",
+        "CD2",
+        "CD3",
+        "CD4",
+        "CD5",
+        "CPSAA4"
+      ]
+    },
+    {
+      "codigo": "CE3",
+      "descripcion": "Planificar y desarrollar proyectos de investigación, siguiendo los pasos de las metodologías científicas y cooperando cuando sea necesario, para indagar en aspectos relacionados con las ciencias geológicas y biológicas.",
+      "descriptores": [
+        "CCL1",
+        "CCL2",
+        "STEM2",
+        "STEM3",
+        "STEM4",
+        "CD1",
+        "CD2",
+        "CPSAA3",
+        "CE3"
+      ]
+    },
+    {
+      "codigo": "CE4",
+      "descripcion": "Utilizar el razonamiento y el pensamiento computacional, analizando críticamente las respuestas y soluciones y reformulando el procedimiento, si fuera necesario, para resolver problemas o dar explicación a procesos de la vida cotidiana relacionados con la biología y la geología.",
+      "descriptores": [
+        "STEM1",
+        "STEM2",
+        "CD5",
+        "CPSAA5",
+        "CE1",
+        "CE3",
+        "CCEC4"
+      ]
+    },
+    {
+      "codigo": "CE5",
+      "descripcion": "Analizar los efectos de determinadas acciones sobre el medio ambiente y la salud, basándose en los fundamentos de las ciencias biológicas y de la Tierra, para promover y adoptar hábitos que eviten o minimicen los impactos medioambientales negativos, sean compatibles con un desarrollo sostenible y permitan mantener y mejorar la salud individual y colectiva.",
+      "descriptores": [
+        "STEM2",
+        "STEM5",
+        "CD4",
+        "CPSAA1",
+        "CPSAA2",
+        "CC4",
+        "CE1",
+        "CC3"
+      ]
+    },
+    {
+      "codigo": "CE6",
+      "descripcion": "Analizar los elementos de un paisaje concreto valorándolo como patrimonio natural y utilizando conocimientos sobre geología y ciencias de la Tierra para explicar su historia geológica, proponer acciones encaminadas a su protección e identificar posibles riesgos naturales.",
+      "descriptores": [
+        "STEM1",
+        "STEM2",
+        "STEM4",
+        "STEM5",
+        "CD1",
+        "CC4",
+        "CE1",
+        "CCEC1"
+      ]
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "CE1",
+      "descripcion": "Analizar conceptos y procesos biológicos y geológicos interpretando información en diferentes formatos (modelos, gráficos, tablas, diagramas, fórmulas, esquemas, símbolos, páginas web, etc.), manteniendo una actitud crítica y obteniendo conclusiones fundamentadas."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "CE1",
+      "descripcion": "Facilitar la comprensión y análisis de información sobre procesos biológicos y geológicos o trabajos científicos transmitiéndola de forma clara y utilizando la terminología y los formatos adecuados (modelos, gráficos, tablas, vídeos, informes, diagramas, fórmulas, esquemas, símbolos, contenidos digitales, etc.)."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "CE1",
+      "descripcion": "Analizar y explicar fenómenos biológicos y geológicos representándolos mediante modelos y diagramas, utilizando, cuando sea necesario, los pasos del diseño de ingeniería (identificación del problema, exploración, diseño, creación, evaluación y mejora)."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "CE2",
+      "descripcion": "Resolver cuestiones sobre Biología y Geología localizando, seleccionando y organizando información de distintas fuentes."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "CE2",
+      "descripcion": "Citar correctamente las fuentes utilizadas en investigaciones sobre Biología y Geología."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "CE2",
+      "descripcion": "Reconocer la información sobre temas biológicos y geológicos con base científica, distinguiéndola de pseudociencias, bulos, teorías conspiratorias y creencias infundadas y manteniendo una actitud escéptica ante estos."
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "CE2",
+      "descripcion": "Valorar la contribución de la ciencia a la sociedad y la labor de las personas dedicadas a ella con independencia de su etnia, sexo o cultura, destacando el papel de las mujeres científicas y entendiendo la investigación como una labor colectiva e interdisciplinar en constante evolución."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "CE3",
+      "descripcion": "Plantear preguntas e hipótesis e intentar realizar predicciones sobre fenómenos biológicos o geológicos que puedan ser respondidas o contrastadas utilizando métodos científicos."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "CE3",
+      "descripcion": "Diseñar la experimentación, la toma de datos y el análisis de fenómenos biológicos y geológicos de modo que permitan responder a preguntas concretas y contrastar una hipótesis planteada."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "CE3",
+      "descripcion": "Realizar experimentos y tomar datos cuantitativos o cualitativos sobre fenómenos biológicos y geológicos utilizando los instrumentos, herramientas o técnicas adecuadas con corrección."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "CE3",
+      "descripcion": "Interpretar los resultados obtenidos en un proyecto de investigación utilizando, cuando sea necesario, herramientas matemáticas y tecnológicas."
+    },
+    {
+      "codigo": "3.5",
+      "competencia": "CE3",
+      "descripcion": "Cooperar dentro de un proyecto científico asumiendo responsablemente una función concreta, utilizando espacios virtuales cuando sea necesario."
+    },
+    {
+      "codigo": "3.6",
+      "competencia": "CE3",
+      "descripcion": "Cooperar dentro de un proyecto científico respetando la diversidad y la igualdad de género, y favoreciendo la inclusión."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "CE4",
+      "descripcion": "Resolver problemas o dar explicación a procesos biológicos o geológicos utilizando conocimientos, datos e información proporcionados por el docente, el razonamiento lógico, el pensamiento computacional o recursos digitales."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "CE4",
+      "descripcion": "Analizar críticamente la solución a un problema sobre fenómenos biológicos y geológicos considerando su viabilidad y adecuación en comparación con otras soluciones posibles."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "CE5",
+      "descripcion": "Relacionar, con fundamentos científicos, el desarrollo sostenible, la salud y la calidad de vida."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "CE5",
+      "descripcion": "Proponer y adoptar hábitos sostenibles analizando de una manera crítica las actividades propias y ajenas y a partir de los propios razonamientos, de los conocimientos adquiridos y de la información disponible."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "CE5",
+      "descripcion": "Proponer y adoptar hábitos saludables, analizando las acciones propias y ajenas con actitud crítica y a partir de fundamentos fisiológicos."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Proyecto científico",
+      "titulo": "Proyecto científico",
+      "items": [
+        "Hipótesis, preguntas y conjeturas: planteamiento con perspectiva científica de forma que puedan ser contrastadas.",
+        "Estrategias para la búsqueda de información científica: uso de buscadores, webs de divulgación, etc.",
+        "Estrategias para la colaboración y la comunicación: uso de herramientas digitales.",
+        "Métodos y formatos de presentación y comunicación científica: exposición, gráfica, vídeo, póster científico, informe de laboratorio o campo, modelo, etc.",
+        "Fuentes fidedignas de información científica como artículos periodísticos y divulgativos, revistas de temática científica, libros de texto: reconocimiento y utilización.",
+        "Modelado digital o mediante metodologías de diseño de ingeniería como método de representación y comprensión de procesos o elementos de la naturaleza.",
+        "Métodos de observación de fenómenos naturales.",
+        "Métodos de toma y registro de datos de fenómenos naturales: anotación en el cuaderno de campo, informe de laboratorio, uso de instrumentos de medición de magnitudes, etc.",
+        "Métodos de análisis de resultados: uso de herramientas matemáticas (media, rango) y de medios digitales de representación y cálculo.",
+        "Diferenciación entre correlación y causalidad: resolución de problemas, ejemplos cotidianos (pseudoterapias, creencias populares, supersticiones, etc.)",
+        "La labor científica y las personas dedicadas a la ciencia: contribución a las ciencias biológicas y geológicas e importancia social. El papel de la mujer en la ciencia a lo largo de la historia."
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. La célula",
+      "titulo": "La célula",
+      "items": [
+        "La célula como unidad estructural y funcional de los seres vivos: la teoría celular.",
+        "La célula procariota, la célula eucariota animal y la célula eucariota vegetal, y sus partes.",
+        "Observación y comparación de muestras microscópicas."
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Cuerpo humano",
+      "titulo": "Cuerpo humano",
+      "items": [
+        "Importancia de la función de nutrición. Los aparatos que participan en ella y papel de cada uno de ellos en la nutrición.",
+        "Anatomía y fisiología básicas del aparato digestivo. El proceso digestivo.",
+        "Anatomía y fisiología básicas del aparato respiratorio. El intercambio gaseoso.",
+        "Anatomía y fisiología básicas del aparato circulatorio. La circulación sanguínea.",
+        "Anatomía y fisiología básicas del aparato excretor. La formación de la orina.",
+        "Anatomía y fisiología básicas del aparato reproductor. La función de reproducción.",
+        "Visión general de la función de relación: receptores sensoriales, centros de coordinación y órganos efectores.",
+        "Relación entre los principales sistemas y aparatos del organismo implicados en las funciones de nutrición, relación y reproducción mediante la aplicación de conocimientos de fisiología y anatomía."
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Salud y enfermedad",
+      "titulo": "Salud y enfermedad",
+      "items": [
+        "Concepto de salud.",
+        "Concepto de enfermedades infecciosas. Las enfermedades infecciosas más relevantes y sus agentes causales.",
+        "Concepto de enfermedades no infecciosas. Las enfermedades no infecciosas más relevantes en países desarrollados y en vía de desarrollo. Causas y prevención.",
+        "Medidas de prevención (higiene, control de plagas, alcantarillado, recogida de basuras, vacunación, etc.) y tratamientos de las enfermedades infecciosas (sueros, antibióticos, antivirales, antifúngicos, etc.) en función de su agente causal y la importancia del uso adecuado de los antibióticos.",
+        "Las barreras del organismo frente a los patógenos (mecánicas, estructurales, bioquímicas y biológicas).",
+        "Mecanismos de defensa del organismo frente a agentes patógenos (barreras externas y sistema inmunitario): su papel en la prevención y superación de enfermedades infecciosas. El proceso inflamatorio.",
+        "La importancia de la vacunación en la prevención de enfermedades y en la mejora de la calidad de vida humana. Funcionamiento de las vacunas.",
+        "Los trasplantes y la importancia de la donación de órganos. Las dificultades del trasplante de órganos: disponibilidad de órganos y compatibilidad receptor-donante."
+      ]
+    }
+  ]
+}

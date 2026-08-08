@@ -1,0 +1,290 @@
+{
+  "materia_oficial": "GEOGRAFÍA E HISTORIA",
+  "materia": "Geografía e Historia",
+  "etapa": "ESO",
+  "ciclo": "Curso tercero",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "3º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "CE1",
+      "descripcion": "Buscar, seleccionar, tratar y organizar información sobre temas relevantes del presente y del pasado, usando críticamente fuentes históricas y geográficas, para adquirir conocimientos, elaborar y expresar contenidos en varios formatos.",
+      "descriptores": [
+        "CCL2",
+        "CCL3",
+        "STEM4",
+        "CD1",
+        "CD2",
+        "CC1"
+      ]
+    },
+    {
+      "codigo": "CE2",
+      "descripcion": "Indagar, argumentar y elaborar productos propios sobre problemas geográficos, históricos y sociales que resulten relevantes en la actualidad, desde lo local a lo global, para desarrollar un pensamiento crítico, respetuoso con las diferencias, que contribuya a la construcción de la propia identidad y a enriquecer el acervo común.",
+      "descriptores": [
+        "CCL1",
+        "CCL2",
+        "CD2",
+        "CC1",
+        "CC3",
+        "CE3",
+        "CCEC3"
+      ]
+    },
+    {
+      "codigo": "CE3",
+      "descripcion": "Conocer los principales desafíos a los que se han enfrentado distintas sociedades a lo largo del tiempo, identificando las causas y consecuencias de los cambios producidos y los problemas a los que se enfrentan en la actualidad, mediante el desarrollo de proyectos de investigación y el uso de fuentes fiables, para realizar propuestas que contribuyan al desarrollo sostenible.",
+      "descriptores": [
+        "STEM3",
+        "STEM4",
+        "STEM5",
+        "CPSAA3",
+        "CC3",
+        "CC4",
+        "CE1",
+        "CCEC1"
+      ]
+    },
+    {
+      "codigo": "CE4",
+      "descripcion": "Identificar y analizar los elementos del paisaje y su articulación en sistemas complejos naturales, rurales y urbanos, así como su evolución en el tiempo, interpretando las causas de las transformaciones y valorando el grado de equilibrio existente en los distintos ecosistemas, para promover su conservación, mejora y uso sostenible.",
+      "descriptores": [
+        "CPSAA2",
+        "CC1",
+        "CC2",
+        "CC3",
+        "CC4",
+        "CE1"
+      ]
+    },
+    {
+      "codigo": "CE5",
+      "descripcion": "Analizar de forma crítica planteamientos históricos y geográficos explicando la construcción de los sistemas democráticos y los principios constitucionales que rigen la vida en comunidad, así como asumiendo los deberes y derechos propios de nuestro marco de convivencia, para promover la participación ciudadana y la cohesión social.",
+      "descriptores": [
+        "CCL5",
+        "CC1",
+        "CC2",
+        "CCEC1"
+      ]
+    },
+    {
+      "codigo": "CE6",
+      "descripcion": "Comprender los procesos geográficos, históricos y culturales que han conformado la realidad multicultural en la que vivimos, conociendo y difundiendo la historia y cultura de las minorías étnicas presentes en nuestro país y valorando la aportación de los movimientos en defensa de la igualdad y la inclusión, para reducir estereotipos, evitar cualquier tipo de discriminación y violencia, y reconocer la riqueza de la diversidad.",
+      "descriptores": [
+        "CCL5",
+        "CPSAA3",
+        "CC1",
+        "CC2",
+        "CC3",
+        "CCEC1"
+      ]
+    },
+    {
+      "codigo": "CE7",
+      "descripcion": "Identificar los fundamentos que sostienen las diversas identidades propias y las ajenas, a través del conocimiento y puesta en valor del patrimonio material e inmaterial que compartimos para conservarlo y respetar los sentimientos de pertenencia, así como para favorecer procesos que contribuyan a la cohesión y solidaridad territorial en orden a los valores del europeísmo y de la Declaración Universal de los Derechos Humanos.",
+      "descriptores": [
+        "CP3",
+        "CPSAA1",
+        "CC1",
+        "CC2",
+        "CC3",
+        "CCEC1"
+      ]
+    },
+    {
+      "codigo": "CE8",
+      "descripcion": "Tomar conciencia del papel de los ciclos demográficos, el ciclo vital, las formas de vida y las relaciones intergeneracionales y de dependencia en la sociedad actual y su evolución a lo largo del tiempo, analizándolas de forma crítica, para promover alternativas saludables, sostenibles, enriquecedoras y respetuosas con la dignidad humana y el compromiso con la sociedad y el entorno.",
+      "descriptores": [
+        "STEM5",
+        "CD4",
+        "CPSAA2",
+        "CPSAA5",
+        "CC1",
+        "CC2",
+        "CC3"
+      ]
+    },
+    {
+      "codigo": "CE9",
+      "descripcion": "Conocer y valorar la importancia de la seguridad integral ciudadana en la cultura de convivencia nacional e internacional, reconociendo la contribución del Estado, sus instituciones y otras entidades sociales a la ciudadanía global, a la paz, a la cooperación internacional y al desarrollo sostenible, para promover la consecución de un mundo más seguro, solidario, sostenible y justo.",
+      "descriptores": [
+        "CCL2",
+        "CC1",
+        "CC2",
+        "CC3",
+        "CC4",
+        "CE1",
+        "CCEC1"
+      ]
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "CE1",
+      "descripcion": "Elaborar contenidos propios en diferentes formatos, a través de estrategias complejas de búsqueda, selección y tratamiento de la información, tanto en entornos analógicos como digitales, contrastando críticamente fuentes diferentes del presente y de los siglos XVIII y XIX."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "CE1",
+      "descripcion": "Establecer conexiones y relaciones entre los conocimientos e informaciones adquiridos, elaborando interpretaciones y explicaciones a través de esquemas, síntesis y otros productos en distintos formatos, tanto analógicos como digitales."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "CE1",
+      "descripcion": "Transmitir la información y el conocimiento a través de presentaciones y exposiciones orales."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "CE2",
+      "descripcion": "Identificar los principales problemas de la sociedad actual y conectarlos y relacionarlos con situaciones y fenómenos históricos de los siglos XVIII y XIX, a través de la adecuada utilización de términos, conceptos y estrategias propias del pensamiento geográfico e histórico en la elaboración de productos diversos."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "CE2",
+      "descripcion": "Elaborar juicios propios sobre cuestiones relevantes de actualidad, así como sobre su relación con distintas corrientes de opinión e ideologías de los siglos XVIII y XIX, a través de su expresión y reflejo en intervenciones orales, debates, escritos de opinión y otro tipo de productos que trasladen de manera original y creativa los puntos de vista y argumentos personales."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "CE3",
+      "descripcion": "Conocer los Objetivos de Desarrollo Sostenible, realizando propuestas que contribuyan a su logro, aplicando métodos y proyectos de investigación e incidiendo en el uso de mapas y otras representaciones gráficas analógicas y digitales, así como de medios accesibles de interpretación de imágenes."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "CE3",
+      "descripcion": "Identificar las relaciones e interacciones existentes en las sociedades actuales y a lo largo de los siglos XVIII y XIX, analizando tanto la producción y distribución de recursos como las formas de organización y participación social, y valorando los avances y retrocesos en relación con la justicia social y la sostenibilidad ambiental."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "CE3",
+      "descripcion": "Utilizar secuencias cronológicas complejas en las que identificar, comparar y relacionar hechos y procesos en diferentes períodos y lugares históricos (simultaneidad, duración, causalidad), utilizando términos y conceptos específicos del ámbito de la historia y de la geografía."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "CE4",
+      "descripcion": "Establecer las relaciones y conexiones de los distintos elementos que interaccionan en cada paisaje, valorando la acción humana sobre el medio y su evolución a lo largo de los siglos XVIII y XIX, identificado el grado de transformación, de equilibrio y degradación de los distintos entornos (natural, rural y urbano) y sus causas."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "CE4",
+      "descripcion": "Diseñar medidas y acciones tendentes a conservar, paliar y mejorar el entorno, tanto en el ámbito local como global, considerando la interdependencia e interconexión de los fenómenos naturales, económicos y sociales, y planteando estrategias que tengan en cuenta los valores de justicia e igualdad en el acceso a los recursos."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "CE5",
+      "descripcion": "Identificar los elementos que definen y conforman los sistemas democráticos y las formas de convivencia en un estado de derecho, analizando críticamente los distintos movimientos que, a lo largo de los siglos XVIII y XIX, han ido preconfigurando los principios e instrumentos que fundamentan las democracias actuales, valorando los riesgos y amenazas de la democracia en el mundo."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "CE5",
+      "descripcion": "Aplicar estrategias que defiendan actitudes y valores en favor de los principios constitucionales orientados al cumplimiento efectivo de los derechos y libertades de la ciudadanía, actuando de forma empática y respetuosa con la situación de los colectivos más vulnerables y de las desigualdades existentes, especialmente en materia de género, y presentando propuestas e intervenciones que tiendan a la cohesión social y a la solidaridad."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "CE6",
+      "descripcion": "Analizar los distintos procesos que, a lo largo de los siglos XVIII y XIX, han podido contribuir a la conformación de la realidad multicultural actual, especialmente los derivados de la globalización, identificando y valorando críticamente las situaciones discriminatorias que han sufrido determinados colectivos y siguen padeciendo ciertas minorías, así como los prejuicios y estereotipos negativos asociados al género, la edad, la etnia, la religión y la diversidad funcional y sexual."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "CE6",
+      "descripcion": "Contribuir al bienestar individual y colectivo a través del diseño, exposición y puesta en práctica de iniciativas que promueven un compromiso activo con los valores comunes, la mejora del entorno y el servicio a la comunidad."
+    },
+    {
+      "codigo": "7.1",
+      "competencia": "CE7",
+      "descripcion": "Interpretar el papel de las identidades colectivas en los siglos XVIII y XIX, identificando la importancia que hayan podido tener en la configuración de distintas entidades culturales, sociales y políticas, valorando críticamente cualquier acción excluyente y los conflictos relativos a dichas identidades, mostrando la necesidad de asumir y defender principios que tiendan a la cohesión, la solidaridad internacional, la resolución pacífica de los conflictos y a la consideración de los valores del europeísmo y de los que emanan de la Declaración Universal de los Derechos Humanos."
+    },
+    {
+      "codigo": "7.2",
+      "competencia": "CE7",
+      "descripcion": "Analizar e interpretar las diversas formas de representación artística y cultural de los siglos XVIII y XIX como formas de expresión de las distintas identidades individuales y colectivas, valorando su contribución al patrimonio cultural, material e inmaterial, y mostrando interés por su puesta en valor y conservación."
+    },
+    {
+      "codigo": "8.1",
+      "competencia": "CE8",
+      "descripcion": "Analizar los retos y problemas actuales asociados a los comportamientos y movimientos de población, así como las dinámicas y cambios demográficos que vienen desarrollándose en el mundo desde los siglos XVIII y XIX, valorando críticamente las condiciones de vida y de trabajo de determinados colectivos sociales, los desequilibrios territoriales y las relaciones de subordinación y de dependencia, mostrando una actitud de empatía y solidaridad hacia las personas más vulnerables."
+    },
+    {
+      "codigo": "8.2",
+      "competencia": "CE8",
+      "descripcion": "Tomar conciencia del ciclo vital y de los cambios que se han ido produciendo en el mundo en los siglos XVIII y XIX, tanto con respecto a los roles asociados a la edad y al género como en las condiciones y expectativas de vida de los diversos colectivos, asumiendo la responsabilidad personal y social sobre hábitos saludables, el desarrollo pleno e integral de las personas, las labores domésticas y el cuidado, el ocio saludable y los vínculos comunitarios."
+    },
+    {
+      "codigo": "9.1",
+      "competencia": "CE9",
+      "descripcion": "Interpretar y explicar de forma argumentada la conexión de nuestro país con los grandes procesos históricos de los siglos XVIII y XIX, valorando lo que han supuesto para su evolución y señalando las aportaciones de los españoles y españolas a lo largo de la historia, así como las aportaciones del Estado español y sus instituciones a la cultura europea y mundial."
+    },
+    {
+      "codigo": "9.2",
+      "competencia": "CE9",
+      "descripcion": "Identificar los grandes procesos económicos, políticos y culturales que han definido las relaciones internacionales en los siglos XVIII y XIX, analizando críticamente los principios ideológicos, las estrategias y acciones de dominio, subordinación y explotación que han venido produciéndose en ellos, así como las tensiones y conflictos generados, prestando especial atención a su relación con los problemas y retos actuales derivados de la globalización."
+    },
+    {
+      "codigo": "9.3",
+      "competencia": "CE9",
+      "descripcion": "Tomar conciencia de los principales riesgos y amenazas para la seguridad integral en el ámbito local y global, de aquellos que afectan a los Objetivos de Desarrollo Sostenible y de los relacionados con las emergencias y otras situaciones que se derivan de los cambios tecnológicos y del estado de incertidumbre que caracterizan a nuestra sociedad en el siglo XXI, considerando dichos riesgos y amenazas desde el análisis de sus precedentes modernos."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Retos del mundo actual",
+      "titulo": "Retos del mundo actual",
+      "items": [
+        "Objetivos de Desarrollo Sostenible. Emergencia climática y sostenibilidad. Relación entre factores naturales y antrópicos en la Tierra. Globalización, movimientos migratorios e interculturalidad. Los avances tecnológicos y la conciencia ecosocial. Conflictos ideológicos y etnoculturales.",
+        "Sociedad de la información. Búsqueda, tratamiento de la información, uso de datos en entornos digitales y evaluación y contraste de la fiabilidad de las fuentes de información. El problema de la desinformación. Uso específico del léxico relativo a los ámbitos histórico, artístico y geográfico.",
+        "Cultura mediática. Técnicas y métodos de las ciencias sociales: análisis de textos, interpretación y elaboración de mapas, esquemas y síntesis, representación de gráficos e interpretación de imágenes a través de medios digitales accesibles. Tecnologías de la información geográfica.",
+        "Lo global y lo local. La investigación en ciencias sociales, el estudio multicausal y el análisis comparado del espacio natural, rural y urbano, su evolución y los retos del futuro. Análisis e interpretación de conceptos espaciales: localización, escala, conexión y proximidad espacial.",
+        "Estructuras económicas en el mundo actual, cambios en los sectores productivos y funcionamiento de los mercados. Análisis de la transformación de los paisajes por las actividades económicas: el impacto de la globalización.",
+        "Dilemas e incertidumbres ante el crecimiento económico, la empleabilidad y la sustentabilidad. Problemas y límites del crecimiento económico: cambios tecnológicos, robotización y transformación del empleo y del mercado laboral. La perspectiva ecosocial del progreso económico.",
+        "Desigualdad e injusticia en el contexto local y global. Solidaridad, cohesión social y cooperación para el desarrollo.",
+        "Igualdad de género y formas de violencia contra las mujeres. Actitudes y comportamientos sexistas.",
+        "Diversidad social, etnocultural y de género. Migraciones, multiculturalidad y mestizaje en sociedades abiertas. Historia y reconocimiento del pueblo gitano y otras minorías étnicas de nuestro país. Nuevas formas de identificación cultural."
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Sociedades y territorios",
+      "titulo": "Sociedades y territorios",
+      "items": [
+        "Métodos de investigación en el ámbito de la geografía y de la historia. Metodologías del pensamiento histórico y del pensamiento geográfico.",
+        "Las fuentes históricas como base para la construcción del conocimiento sobre el pasado de los siglos XVIII y XIX. Contraste entre interpretaciones de historiadores.",
+        "Tiempo histórico: construcción e interpretación de líneas de tiempo a través de la linealidad, cronología, simultaneidad y duración.",
+        "Conciencia histórica. Elaboración de juicios propios y argumentados ante problemas de actualidad contextualizados históricamente. Defensa y exposición crítica de los mismos a través de presentaciones y debates.",
+        "La transformación política de la población: de la servidumbre a la ciudadanía. La conquista de los derechos individuales y colectivos en los siglos XVIII y XIX. El pensamiento político en el Siglo de las Luces. Reformismo, Ilustración y primer liberalismo. La crisis del Antiguo Régimen.",
+        "Transiciones, revoluciones y resistencias: las revoluciones liberales: la conquista de derechos políticos individuales. Origen, evolución y adaptación de los sistemas liberales en España y en el mundo a través de las fuentes.",
+        "La transición al sistema económico capitalista. Cambios en la producción y en el consumo. La transformación humana del territorio y la distribución desigual de los recursos y del trabajo. Evolución y variaciones de los sistemas económicos, de los ciclos demográficos, de los modos de vida y de los modelos de organización social en el siglo XVIII y XIX.",
+        "Los orígenes del colonialismo y el imperialismo: nuevas subordinaciones económicas y culturales. Viejos y nuevos imperialismos. Los primeros procesos de independencia.",
+        "La lucha por la igualdad y los derechos sociales: los movimientos políticos y sociales por la libertad, la igualdad y los derechos humanos. Asociacionismo obrero, conflictividad social y conquistas de los derechos laborales.",
+        "Las formaciones identitarias: ideologías, nacionalismos y movimientos supranacionales. Ciudadanía europea y cosmopolita en los siglos XVIII y XIX.",
+        "Interpretación del territorio y del paisaje. Éxodo rural. Cambios en el urbanismo en los siglos XVIII y XIX: la ciudad como espacio de convivencia. La importancia y cuidado de los espacios públicos. La huella humana y la protección del medio natural. Contrastes entre el medio rural y urbano en la actualidad.",
+        "La acción de los movimientos feministas y sufragistas en la lucha por la igualdad de género. Mujeres relevantes de la historia en los siglos XVIII y XIX.",
+        "El nacimiento de las nuevas expresiones artísticas y culturales de los siglos XVIII y XIX y su relación con las artes clásicas. La diversidad cultural en el mundo. Respeto y conservación del patrimonio material e inmaterial.",
+        "España ante la modernidad: estrategias para la identificación de los fundamentos del proceso de transformación de España en los siglos XVIII y XIX. Contextualización y explicación de los aspectos políticos, económicos, sociales y culturales en la formación de una identidad multicultural compartida.",
+        "La ley como contrato social. El arranque constitucional de 1812 y la evolución del constitucionalismo español a lo largo del siglo XIX."
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Compromiso cívico",
+      "titulo": "Compromiso cívico",
+      "items": [
+        "Dignidad humana y derechos universales. Declaración Universal de los Derechos Humanos.",
+        "Diversidad social y multiculturalidad. Integración y cohesión social.",
+        "Responsabilidad ecosocial. Compromiso y acción ante los Objetivos del Desarrollo Sostenible. La juventud como agente de cambio para el desarrollo sostenible.",
+        "Implicación en la defensa y protección del medio ambiente. Acción y posición ante la emergencia climática.",
+        "Ciudadanía ética digital. Nuevos comportamientos en la sociedad de la información.",
+        "Compromiso cívico y participación ciudadana.",
+        "Servicio a la comunidad. La corresponsabilidad en los cuidados. Las relaciones intergeneracionales. La responsabilidad colectiva e individual. El asociacionismo y el voluntariado. Entornos y redes sociales.",
+        "El patrimonio como bien y como recurso. Puesta en valor, difusión y gestión de la riqueza patrimonial.",
+        "Cohesión social e integración. Medidas y acciones en favor de la igualdad y de la plena inclusión.",
+        "La igualdad real de mujeres y hombres. La discriminación por motivo de diversidad sexual y de género. La conquista de derechos en las sociedades democráticas contemporáneas.",
+        "Las emociones y el contexto cultural. La perspectiva histórica del componente emocional.",
+        "Empleo y trabajo en la sociedad de la información, aprendizaje permanente y a lo largo de toda la vida.",
+        "Los valores del europeísmo. Fórmulas de participación en programas educativos europeos."
+      ]
+    }
+  ]
+}

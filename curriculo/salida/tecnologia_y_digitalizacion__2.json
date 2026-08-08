@@ -1,0 +1,260 @@
+{
+  "materia_oficial": "TECNOLOGÍA Y DIGITALIZACIÓN",
+  "materia": "Tecnología y Digitalización",
+  "etapa": "ESO",
+  "ciclo": "Segundo curso",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "CE1",
+      "descripcion": "Buscar y seleccionar la información adecuada proveniente de diversas fuentes, de manera crítica y segura, aplicando procesos de investigación, métodos de análisis de productos y experimentando con herramientas de simulación, para definir problemas tecnológicos e iniciar procesos de creación de soluciones a partir de la información obtenida.",
+      "descriptores": [
+        "CCL3",
+        "STEM2",
+        "CD1",
+        "CD4",
+        "CPSAA4",
+        "CE1"
+      ]
+    },
+    {
+      "codigo": "CE2",
+      "descripcion": "Abordar problemas tecnológicos con autonomía y actitud creativa, aplicando conocimientos interdisciplinares y trabajando de forma cooperativa y colaborativa, para diseñar y planificar soluciones a un problema o necesidad de forma eficaz, innovadora y sostenible.",
+      "descriptores": [
+        "CCL1",
+        "STEM1",
+        "STEM3",
+        "CD3",
+        "CPSAA3",
+        "CPSAA5",
+        "CE1",
+        "CE3"
+      ]
+    },
+    {
+      "codigo": "CE3",
+      "descripcion": "Aplicar de forma apropiada y segura distintas técnicas y conocimientos interdisciplinares utilizando operadores, sistemas tecnológicos y herramientas, teniendo en cuenta la planificación y el diseño previo, para construir o fabricar soluciones tecnológicas sostenibles que den respuesta a necesidades en diferentes contextos.",
+      "descriptores": [
+        "STEM2",
+        "STEM3",
+        "STEM5",
+        "CD5",
+        "CPSAA1",
+        "CE3",
+        "CCEC3"
+      ]
+    },
+    {
+      "codigo": "CE4",
+      "descripcion": "Describir, representar e intercambiar ideas o soluciones a problemas tecnológicos o digitales, utilizando medios de representación, simbología y vocabulario adecuados, así como los instrumentos y recursos disponibles y valorando la utilidad de las herramientas digitales, para comunicar y difundir información y propuestas.",
+      "descriptores": [
+        "CCL1",
+        "STEM4",
+        "CD3",
+        "CCEC3",
+        "CCEC4"
+      ]
+    },
+    {
+      "codigo": "CE5",
+      "descripcion": "Desarrollar algoritmos y aplicaciones informáticas en distintos entornos, aplicando los principios del pensamiento computacional e incorporando las tecnologías emergentes, para crear soluciones a problemas concretos, automatizar procesos y aplicarlos en sistemas de control o en robótica.",
+      "descriptores": [
+        "CP2",
+        "STEM1",
+        "STEM3",
+        "CD5",
+        "CPSAA5",
+        "CE3"
+      ]
+    },
+    {
+      "codigo": "CE6",
+      "descripcion": "Comprender los fundamentos del funcionamiento de los dispositivos y aplicaciones habituales de su entorno digital de aprendizaje, analizando sus componentes y funciones y ajustándolos a sus necesidades, para hacer un uso más eficiente y seguro de los mismos y para detectar y resolver problemas técnicos sencillos.",
+      "descriptores": [
+        "CP2",
+        "CD2",
+        "CD4",
+        "CD5",
+        "CPSAA4",
+        "CPSAA5"
+      ]
+    },
+    {
+      "codigo": "CE7",
+      "descripcion": "Hacer un uso responsable y ético de la tecnología, mostrando interés por un desarrollo sostenible, identificando sus repercusiones y valorando la contribución de las tecnologías emergentes, para identificar las aportaciones y el impacto del desarrollo tecnológico en la sociedad y en el entorno.",
+      "descriptores": [
+        "STEM2",
+        "STEM5",
+        "CD4",
+        "CC4"
+      ]
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "CE1",
+      "descripcion": "Definir problemas sencillos como respuesta a necesidades planteadas, buscando y contrastando información procedente de diferentes fuentes de manera crítica, evaluando su fiabilidad y pertinencia."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "CE1",
+      "descripcion": "Comprender y examinar productos y sistemas tecnológicos sencillos, empleando el método científico y haciendo un análisis de los diversos aspectos que los definen."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "CE1",
+      "descripcion": "Adoptar medidas preventivas básicas para la protección de los dispositivos, los datos y la salud personal, identificando problemas y riesgos sobre la privacidad y el bienestar digital."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "CE2",
+      "descripcion": "Idear y diseñar soluciones eficaces y sostenibles a problemas definidos, de acuerdo con las distintas fases del proceso tecnológico, aplicando conceptos, técnicas y procedimientos interdisciplinares, así como criterios económicos y de sostenibilidad, con actitud emprendedora y creativa."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "CE2",
+      "descripcion": "Seleccionar y organizar los materiales y herramientas, valorando la adecuación de las mismas a la construcción del objeto tecnológico."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "CE2",
+      "descripcion": "Planificar las tareas necesarias para la construcción de una solución a un problema planteado de forma ordenada, respetuosa, cooperativa y perseverante."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "CE3",
+      "descripcion": "Aplicar el conocimiento de los distintos operadores tecnológicos a la construcción de la solución diseñada, procurando su integración eficaz en la misma."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "CE3",
+      "descripcion": "Construir una solución técnica, utilizando herramientas adecuadas de medida y conformación a los materiales empleados en su construcción, de forma guiada, respetando las normas de seguridad y salud correspondientes."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "CE4",
+      "descripcion": "Representar y comunicar el proceso de creación de un producto desde su diseño hasta su difusión, elaborando documentación técnica y gráfica, básicas, con la ayuda de herramientas digitales, empleando los formatos y el vocabulario técnico adecuados, de manera cooperativa, tanto presencialmente como en remoto."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "CE5",
+      "descripcion": "Describir, interpretar y diseñar algoritmos, utilizando lógicas de programación, que permitan resolver problemas informáticos sencillos, de forma creativa."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "CE5",
+      "descripcion": "Manejar entornos de programación y sus normas, utilizando las distintas funcionalidades que ofrecen e implementando aplicaciones informáticas."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "CE5",
+      "descripcion": "Programar aplicaciones sencillas para diferentes dispositivos, analizando y anticipando los resultados y valorando el error como fuente de aprendizaje, incorporando algunas funcionalidades básicas de la inteligencia artificial."
+    },
+    {
+      "codigo": "5.4",
+      "competencia": "CE5",
+      "descripcion": "Montar y controlar sistemas automáticos o robots sencillos, con sentido de cuidado y orden, y programando pequeñas funciones por bloques o textual."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "CE6",
+      "descripcion": "Gestionar el aprendizaje en el ámbito digital configurando el entorno personal de aprendizaje, ajustando el funcionamiento de dispositivos y herramientas digitales a sus necesidades y haciendo un uso seguro."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "CE6",
+      "descripcion": "Organizar la información utilizando estructuras lógicas de almacenamiento, seguras y ordenadas."
+    },
+    {
+      "codigo": "6.3",
+      "competencia": "CE6",
+      "descripcion": "Crear contenidos digitales en diversos formatos y difundirlos en distintas plataformas, respetando los derechos de autor y las normas de comportamiento en el ámbito digital."
+    },
+    {
+      "codigo": "6.4",
+      "competencia": "CE6",
+      "descripcion": "Hacer un uso seguro de los dispositivos digitales de uso cotidiano en la resolución de problemas, conociendo los riesgos y adoptando medidas de seguridad para la protección de datos y equipos."
+    },
+    {
+      "codigo": "7.1",
+      "competencia": "CE7",
+      "descripcion": "Reconocer la influencia de la actividad tecnológica en la sociedad y en la sostenibilidad ambiental a lo largo de su historia, identificando sus aportaciones y repercusiones y valorando su importancia para el desarrollo sostenible."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Proceso de resolución de problemas",
+      "titulo": "Proceso de resolución de problemas",
+      "items": [
+        "Actitud emprendedora y proactiva en la resolución de problemas.",
+        "Estrategias de búsqueda y selección crítica de la información para la investigación y definición de problemas planteados.",
+        "Método científico y análisis de objetos tecnológicos y de sistemas como medios para la construcción de conocimiento.",
+        "Condicionantes de un problema y requerimientos de diseño de una solución.",
+        "Fases del proceso tecnológico como método para la resolución de problemas técnicos.",
+        "Técnicas de ideación como método de generación, filtrado y selección de ideas.",
+        "Procesos de diseño, planificación y organización, como  visual thinking .",
+        "Técnicas de trabajo cooperativo en los procesos de diseño, planificación y construcción de soluciones técnicas. Respeto a las aportaciones y al trabajo de los demás.",
+        "Interdisciplinariedad en la actividad tecnológica.",
+        "Materiales tecnológicos. Análisis y selección según los requerimientos mecánicos y de sostenibilidad del proyecto, y de las herramientas y máquinas disponibles.",
+        "Impacto económico y medioambiental de productos y procesos tecnológicos.",
+        "Operadores tecnológicos sencillos a emplear en el proyecto: estructuras, mecanismos y elementos eléctricos y electrónicos. Descripción, aplicación y montaje físico o simulado.",
+        "Herramientas de medida y fabricación. Criterios de eficacia en el proceso y de sencillez de uso.",
+        "Normas de seguridad en el taller o laboratorio de fabricación, relativas a los procedimientos a desarrollar en el mismo.",
+        "Privacidad y bienestar digital. Prácticas seguras y saludables."
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Comunicación y difusión de ideas",
+      "titulo": "Comunicación y difusión de ideas",
+      "items": [
+        "Habilidades básicas de comunicación interpersonal en el contexto de trabajo cooperativo. Etiqueta digital apropiada a los entornos de trabajo y comunicación virtuales.",
+        "El proyecto técnico. Documentación necesaria para el objeto o modelo tecnológico y su construcción.",
+        "Herramientas de productividad. Uso y aplicaciones para la elaboración de la documentación del proyecto técnico.",
+        "Herramientas básicas de representación gráfica de ideas y diseños, manuales y digitales, en 2D y 3D. Aplicación a la documentación gráfica del proyecto.",
+        "Entornos Virtuales de Aprendizaje. Uso responsable para el trabajo cooperativo. Configuración básica.",
+        "Herramientas básicas de representación o simulación. Simbología."
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Pensamiento computacional, programación y robótica",
+      "titulo": "Pensamiento computacional, programación y robótica",
+      "items": [
+        "Algoritmia. Sentencias secuenciales, condicionales y repetitivas. Elementos básicos: tipos de datos, de operadores y de instrucciones. Interpretación de diagramas de flujo básicos aplicados a la elaboración de programas informáticos sencillos.",
+        "Programación textual o por bloques. Sintaxis: tipos y equivalencias. Fundamentos.",
+        "Aplicaciones sencillas que incorporen inteligencia artificial. Diseño y programación.",
+        "Sistemas robóticos sencillos. Programación, montaje o simulación.",
+        "Autoconfianza e iniciativa en el diseño y desarrollo de programas."
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Digitalización del entorno personal de aprendizaje",
+      "titulo": "Digitalización del entorno personal de aprendizaje",
+      "items": [
+        "Entorno Personal de Aprendizaje. Composición, configuración y funcionalidades.",
+        "Dispositivos digitales de uso común. Elementos de  hardware  y  software . Identificación y resolución de problemas técnicos habituales sencillos.",
+        "Sistemas de comunicación digital de uso común. Transmisión de datos.",
+        "Técnicas de tratamiento, organización y gestión de la información. Almacenamiento seguro, características, alternativas y copias de seguridad. Servicios de almacenamiento en la nube. Accesibilidad.",
+        "Herramientas y plataformas de aprendizaje. Configuración, mantenimiento básico y uso crítico.",
+        "Herramientas digitales de edición y creación de contenidos, generales y versátiles. Instalación, configuración y uso responsable. Propiedad intelectual. Tipos de licencias de uso habituales. Características básicas.",
+        "Seguridad en la red: riesgos, amenazas, ataques y formas eficientes de actuación."
+      ]
+    },
+    {
+      "codigo": "E",
+      "bloque": "E. Tecnología sostenible",
+      "titulo": "Tecnología sostenible",
+      "items": [
+        "Desarrollo tecnológico. Aspectos generales, creatividad, innovación, investigación, obsolescencia. Influencia del desarrollo tecnológico en la sociedad y en el medio ambiente.",
+        "Criterios de uso eficiente y sostenible de los recursos en el proceso tecnológico y su incorporación en el diseño de procesos y productos tecnológicos."
+      ]
+    }
+  ]
+}

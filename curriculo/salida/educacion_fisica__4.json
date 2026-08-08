@@ -1,0 +1,226 @@
+{
+  "materia_oficial": "EDUCACIÓN FÍSICA",
+  "materia": "Educación Física",
+  "etapa": "ESO",
+  "ciclo": "Curso cuarto",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "4º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "CE1",
+      "descripcion": "Adoptar un estilo de vida activo y saludable, seleccionando e incorporando intencionalmente actividades físicas y deportivas en las rutinas diarias a partir de un análisis crítico de los modelos corporales y del rechazo de las prácticas que carezcan de base científica, para hacer un uso saludable y autónomo del tiempo libre y así mejorar la calidad de vida.",
+      "descriptores": [
+        "CCL3",
+        "STEM2",
+        "STEM5",
+        "CD4",
+        "CPSAA2",
+        "CPSAA4"
+      ]
+    },
+    {
+      "codigo": "CE2",
+      "descripcion": "Adaptar, con progresiva autonomía en su ejecución, las capacidades físicas, perceptivo-motrices y coordinativas, así como las habilidades y destrezas motrices, aplicando procesos de percepción, decisión y ejecución adecuados a la lógica interna y a los objetivos de diferentes situaciones con dificultad variable, para resolver situaciones de carácter motor vinculadas con distintas actividades físicas funcionales, deportivas, expresivas y recreativas, y para consolidar actitudes de superación, crecimiento y resiliencia al enfrentarse a desafíos físicos.",
+      "descriptores": [
+        "CPSAA4",
+        "CPSAA5",
+        "CE2",
+        "CE3"
+      ]
+    },
+    {
+      "codigo": "CE3",
+      "descripcion": "Compartir espacios de práctica físico-deportiva con independencia de las diferencias culturales, sociales, de género y de habilidad, priorizando el respeto entre participantes y a las reglas sobre los resultados, adoptando una actitud crítica ante comportamientos antideportivos o contrarios a la convivencia y desarrollando procesos de autorregulación emocional que canalicen el fracaso y el éxito en estas situaciones, para contribuir con progresiva autonomía al entendimiento social y al compromiso ético en los diferentes espacios en los que se participa.",
+      "descriptores": [
+        "CCL5",
+        "CPSAA1",
+        "CPSAA3",
+        "CPSAA5",
+        "CC3"
+      ]
+    },
+    {
+      "codigo": "CE4",
+      "descripcion": "Practicar, analizar y valorar distintas manifestaciones de la cultura motriz aprovechando las posibilidades y recursos expresivos que ofrecen el cuerpo y el movimiento y profundizando en las consecuencias del deporte como fenómeno social, analizando críticamente sus manifestaciones desde la perspectiva de género y desde los intereses económico-políticos que lo rodean, para alcanzar una visión más realista, contextualizada y justa de la motricidad en el marco de las sociedades actuales.",
+      "descriptores": [
+        "CC2",
+        "CC3",
+        "CCEC1",
+        "CCEC2",
+        "CCEC3",
+        "CCEC4"
+      ]
+    },
+    {
+      "codigo": "CE5",
+      "descripcion": "Adoptar un estilo de vida sostenible y ecosocialmente responsable aplicando medidas de seguridad individuales y colectivas en la práctica físico-deportiva según el entorno y desarrollando colaborativa y cooperativamente acciones de servicio a la comunidad vinculadas a la actividad física y al deporte, para contribuir activamente a la conservación del medio natural y urbano.",
+      "descriptores": [
+        "STEM5",
+        "CC4",
+        "CE1",
+        "CE3"
+      ]
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "CE1",
+      "descripcion": "Autorregular la práctica de actividad física orientada al concepto integral de salud y al estilo de vida activo, según las necesidades e intereses individuales, respetando la propia realidad e identidad corporal."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "CE1",
+      "descripcion": "Incorporar de forma autónoma los procesos de activación corporal, autorregulación y dosificación del esfuerzo, alimentación saludable, educación postural, relajación e higiene durante la práctica de actividades motrices, adaptándose a las situaciones personales y contextos en los que se desarrollen."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "CE1",
+      "descripcion": "Adoptar de manera responsable y autónoma medidas específicas para la prevención de lesiones antes, durante y después de la práctica de actividad física, reconociendo situaciones de riesgo para actuar preventivamente."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "CE1",
+      "descripcion": "Reaccionar y actuar de acuerdo con los protocolos de intervención ante situaciones de emergencia o accidentes aplicando medidas específicas de primeros auxilios."
+    },
+    {
+      "codigo": "1.5",
+      "competencia": "CE1",
+      "descripcion": "Adoptar actitudes comprometidas y transformadoras que rechacen los estereotipos sociales asociados al ámbito de lo corporal, al género y a la diversidad sexual, y los comportamientos que pongan en riesgo la salud, contrastando con autonomía e independencia cualquier información en base a criterios científicos de validez, fiabilidad y objetividad."
+    },
+    {
+      "codigo": "1.6",
+      "competencia": "CE1",
+      "descripcion": "Planificar, desarrollar y compartir con seguridad la práctica física cotidiana manejando recursos y aplicaciones digitales vinculados al ámbito de la actividad física y el deporte."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "CE2",
+      "descripcion": "Desarrollar proyectos motores de carácter individual, cooperativo o colaborativo, estableciendo mecanismos para reconducir los procesos de trabajo y asegurar una participación equitativa, incluyendo estrategias de autoevaluación y coevaluación tanto del proceso como del resultado."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "CE2",
+      "descripcion": "Mostrar habilidades para la adaptación ante situaciones con una elevada incertidumbre, aprovechando eficientemente las propias capacidades y aplicando de manera automática procesos de percepción, decisión y ejecución en contextos reales o simulados de actuación, reflexionando sobre las soluciones y resultados obtenidos."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "CE2",
+      "descripcion": "Evidenciar control y dominio corporal al emplear los componentes cualitativos y cuantitativos de la motricidad de manera eficiente y creativa, resolviendo problemas en todo tipo de situaciones motrices transferibles a su espacio vivencial con autonomía."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "CE3",
+      "descripcion": "Practicar y participar activamente asumiendo responsabilidades en la organización de una gran variedad de actividades motrices, valorando las implicaciones éticas de las prácticas antideportivas, evitando la competitividad desmedida y actuando con deportividad al asumir los roles de público, participante u otros."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "CE3",
+      "descripcion": "Cooperar o colaborar en la práctica de diferentes producciones motrices y proyectos propuestos por el alumnado para alcanzar el logro individual y grupal, participando con autonomía en la toma de decisiones vinculadas a la asignación de roles, la gestión del tiempo de práctica y la optimización del resultado final."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "CE3",
+      "descripcion": "Mostrar actitudes proactivas de entendimiento con otros participantes durante el desarrollo de diversas prácticas motrices con autonomía, haciendo uso efectivo de habilidades sociales de diálogo en la resolución de conflictos y respeto ante la diversidad, ya sea de género, afectivo-sexual, de origen nacional, étnica, socio-económica o de competencia motriz, y posicionándose activamente frente a los estereotipos, las actuaciones discriminatorias y cualquier tipo de violencia, haciendo respetar el propio cuerpo y el de los demás."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "CE4",
+      "descripcion": "Comprender y practicar diversas modalidades relacionadas con la cultura propia, la tradicional o las procedentes de otros lugares del mundo, valorando sus orígenes, evolución, distintas manifestaciones e intereses económico-políticos."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "CE4",
+      "descripcion": "Adoptar actitudes comprometidas y conscientes acerca de los distintos estereotipos de género y comportamientos sexistas que se siguen produciendo en algunos contextos de la motricidad, ayudando a difundir referentes de distintos géneros en el ámbito físico-deportivo."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "CE4",
+      "descripcion": "Crear y representar composiciones individuales o colectivas con y sin base musical y de manera coordinada, utilizando intencionadamente y con autonomía el cuerpo y el movimiento como herramienta de expresión y comunicación a través de técnicas expresivas específicas, y ayudando a difundir y compartir dichas prácticas culturales entre compañeros y compañeras u otros miembros de la comunidad."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "CE5",
+      "descripcion": "Participar en actividades físico-deportivas en entornos naturales terrestres o acuáticos, disfrutando del entorno de manera sostenible y desarrollando actuaciones intencionadas dirigidas a la concienciación, conservación y mejora de las condiciones de los espacios en los que se desarrollen."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "CE5",
+      "descripcion": "Diseñar y organizar actividades físico-deportivas en el medio natural y urbano, asumiendo responsabilidades y aplicando normas de seguridad individuales y colectivas."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Vida activa y saludable",
+      "titulo": "Vida activa y saludable",
+      "items": [
+        "Salud física: autorregulación y planificación del entrenamiento. Alimentos no saludables y similares. Educación postural: movimientos, posturas y estiramientos ante dolores musculares. Cuidado del cuerpo: calentamiento específico autónomo. Prácticas peligrosas, mitos y falsas creencias en torno al cuerpo y a la actividad física.",
+        "Salud social: suplementación y dopaje en el deporte. Riesgos y condicionantes éticos.",
+        "Salud mental: exigencias y presiones de la competición. Tipologías corporales predominantes en la sociedad y análisis crítico de su presencia en los medios de comunicación. Creación de una identidad corporal definida y consolidada alejada de estereotipos sexistas."
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Organización y gestión de la actividad física",
+      "titulo": "Organización y gestión de la actividad física",
+      "items": [
+        "Planificación y autorregulación de proyectos motores: establecimiento de mecanismos para registrar y controlar las aportaciones realizadas por los integrantes del grupo a lo largo de un proyecto. Herramientas digitales para la gestión de la actividad física.",
+        "Prevención de accidentes en las prácticas motrices. Gestión del riesgo propio y del riesgo de los demás. Medidas colectivas de seguridad.",
+        "Actuaciones ante accidentes. Reanimación mediante desfibrilador automático (DEA) o semiautomático (DESA). Protocolo RCP (reanimación cardiopulmonar). Técnicas específicas e indicios de accidentes cardiovasculares (maniobra de Heimlich, señales de ictus y similares)."
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Resolución de problemas en situaciones motrices",
+      "titulo": "Resolución de problemas en situaciones motrices",
+      "items": [
+        "Toma de decisiones: búsqueda de adaptaciones motrices para resolver eficientemente tareas de cierta complejidad en situaciones motrices individuales. Coordinación de las acciones motrices para la resolución de la acción/tarea en situaciones cooperativas. Búsqueda de la acción más óptima en función de la acción y ubicación del rival, así como del lugar en el que se encuentre el móvil o resultado en situaciones motrices de persecución y de interacción con un móvil. Organización anticipada de los movimientos y acciones individuales en función de las características del contrario en situaciones de oposición de contacto. Delimitación de estrategias previas de ataque y defensa en función de las características de los integrantes del equipo y del equipo rival en situaciones motrices de colaboración-oposición de persecución y de interacción con un móvil.",
+        "Capacidades perceptivo-motrices en contexto de práctica: integración del esquema corporal; toma de decisiones previas a la realización de una actividad motriz acerca de los mecanismos coordinativos, espaciales y temporales para resolverla adecuadamente.",
+        "Capacidades condicionales: desarrollo de las capacidades físicas básicas. Planificación para el desarrollo de las capacidades físicas básicas: fuerza y resistencia. Sistemas de entrenamiento.",
+        "Habilidades motrices específicas asociadas a la técnica en actividades físico-deportivas: profundización, identificación y corrección de errores.",
+        "Creatividad motriz: creación de retos y situaciones-problema con resolución posible a través de los recursos disponibles.",
+        "Barreras arquitectónicas y obstáculos del entorno que impiden o dificulten la actividad física autónoma y saludable en el espacio público y vial: actitud crítica y toma de iniciativa hacia el cambio constructivo."
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Autorregulación emocional e interacción social en situaciones motrices",
+      "titulo": "Autorregulación emocional e interacción social en situaciones motrices",
+      "items": [
+        "Autorregulación emocional: habilidades volitivas y capacidad de superación.",
+        "Habilidades sociales: estrategias de mediación en contextos motrices.",
+        "Respeto a las reglas: juego limpio en los distintos niveles de deporte y actividad física.",
+        "Identificación y rechazo de conductas contrarias a la convivencia en situaciones motrices (comportamientos violentos, discriminación por cuestiones de género, cultura, competencia motriz, actitudes xenófobas, racistas, LGTBIfóbicas o sexistas). Asertividad y autocuidado."
+      ]
+    },
+    {
+      "codigo": "E",
+      "bloque": "E. Manifestaciones de la cultura motriz",
+      "titulo": "Manifestaciones de la cultura motriz",
+      "items": [
+        "Aportaciones de la cultura motriz a la herencia cultural, así como las propias del entorno. Los deportes como seña de identidad cultural.",
+        "Usos comunicativos de la corporalidad: técnicas específicas de expresión corporal.",
+        "Práctica de actividades rítmico-musicales con carácter artístico-expresivo. Organización de espectáculos y eventos artístico-expresivos.",
+        "Deporte y perspectiva de género: historia del deporte desde la perspectiva de género. Igualdad en el acceso al deporte (diferencias según género, país, cultura y otros). Análisis crítico.",
+        "Influencia del deporte en la cultura actual: deporte e intereses políticos."
+      ]
+    },
+    {
+      "codigo": "F",
+      "bloque": "F. Interacción eficiente y sostenible con el entorno",
+      "titulo": "Interacción eficiente y sostenible con el entorno",
+      "items": [
+        "Normas de uso: respeto a las normas viales en los desplazamientos activos cotidianos para una movilidad segura, saludable y sostenible.",
+        "La práctica de la bicicleta como medio de transporte habitual. Análisis crítico de los equipamientos del municipio para el fomento del desplazamiento en bicicleta (servicios de alquiler de bicicletas, aplicaciones digitales sobre el tráfico, etc.).",
+        "Nuevos espacios y prácticas deportivas urbanas ( crossfit , gimnasios urbanos, circuitos de calistenia o similares).",
+        "Análisis y gestión del riesgo propio y de los demás en las prácticas físico-deportivas en el medio natural y urbano. Responsabilidad en la prevención y control de riesgos de la propia actividad, del entorno y de los participantes.",
+        "Diseño y organización de nuevas prácticas físicas (o alternativas a partir de una conocida) en el medio natural y urbano.",
+        "Consumo responsable: uso sostenible y mantenimiento de recursos urbanos y naturales para la práctica de actividad física.",
+        "Cuidado del entorno, como servicio a la comunidad, durante la práctica de actividad física en entornos naturales y urbanos."
+      ]
+    }
+  ]
+}

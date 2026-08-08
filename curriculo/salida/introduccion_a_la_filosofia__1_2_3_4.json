@@ -1,0 +1,244 @@
+{
+  "materia_oficial": "INTRODUCCIÓN A LA FILOSOFÍA",
+  "materia": "Introducción a la Filosofía",
+  "etapa": "ESO",
+  "ciclo": "Único",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º ESO",
+    "2º ESO",
+    "3º ESO",
+    "4º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "CE1",
+      "descripcion": "Identificar problemas y formular preguntas fundamentales a partir de la reflexión y el diálogo sobre temas, documentos o experiencias de relevancia filosófica, para gestionar estados de incertidumbre y para expresar y tratar cuestiones esenciales y existenciales.",
+      "descriptores": [
+        "CCL2",
+        "CPSAA1",
+        "CC3"
+      ]
+    },
+    {
+      "codigo": "CE2",
+      "descripcion": "Diseñar, elaborar y exponer trabajos básicos de investigación filosófica, buscando, organizando e interpretando críticamente la información pertinente, para ejercitar de forma autónoma, rigurosa y dialogante el juicio propio.",
+      "descriptores": [
+        "CCL1",
+        "CCL3",
+        "STEM2",
+        "CD1",
+        "CD2",
+        "CPSAA3",
+        "CPSAA4"
+      ]
+    },
+    {
+      "codigo": "CE3",
+      "descripcion": "Emplear y analizar argumentos racionales, y ejercitarse en las pautas del diálogo filosófico, distinguiendo y evitando falacias, sesgos, prejuicios, bulos y actitudes dogmáticas, para investigar y afrontar cuestiones, controversias y conflictos con una actitud racional y respetuosa con la pluralidad.",
+      "descriptores": [
+        "CCL1",
+        "CCL5",
+        "CD3",
+        "CC2"
+      ]
+    },
+    {
+      "codigo": "CE4",
+      "descripcion": "Diseñar, realizar y exponer trabajos básicos de investigación en torno a la cuestión de la naturaleza humana y la propia identidad, reflexionando sobre la realidad y la sociedad de la que se forma parte, para desarrollar la autoestima y mostrar una actitud respetuosa y solidaria con los demás.",
+      "descriptores": [
+        "CCL3",
+        "CD1",
+        "CC1",
+        "CC2"
+      ]
+    },
+    {
+      "codigo": "CE5",
+      "descripcion": "Generar y exponer una reflexión propia acerca de la validez de las propias ideas y creencias, a partir del análisis epistemológico de los procesos de producción y comunicación del conocimiento, para aplicar dicha reflexión a la categorización y uso crítico de la información, la consideración interdisciplinaria del saber, y la investigación ética en torno a los usos y límites de la tecnología.",
+      "descriptores": [
+        "CD4",
+        "CC3"
+      ]
+    },
+    {
+      "codigo": "CE6",
+      "descripcion": "Reconocer y analizar cuestiones éticas fundamentales y de actualidad, a través de la investigación, el debate crítico y la aplicación de conceptos y planteamientos propios de la ética filosófica, para esclarecer los valores que rigen la existencia personal y las relaciones con los demás y con el entorno.",
+      "descriptores": [
+        "CC1",
+        "CC2",
+        "CC3",
+        "CC4"
+      ]
+    },
+    {
+      "codigo": "CE7",
+      "descripcion": "Reconocer y examinar cuestiones políticas fundamentales y de actualidad, a través de la investigación, el debate crítico y la aplicación de conceptos y planteamientos propios de la filosofía política, para analizar y esclarecer los valores que rigen la convivencia y el ejercicio de la ciudadanía democrática.",
+      "descriptores": [
+        "CC1",
+        "CC2",
+        "CC3",
+        "CC4"
+      ]
+    },
+    {
+      "codigo": "CE8",
+      "descripcion": "Identificar y apreciar la dimensión estética y emocional de las acciones, creaciones y experiencias humanas, tanto en el arte como en otros ámbitos de la cultura y la vida, reconociendo su influencia sobre nosotros, para analizar su naturaleza y significado, especialmente en el contexto de la cultura audiovisual contemporánea.",
+      "descriptores": [
+        "CPSAA1",
+        "CC3",
+        "CCEC3"
+      ]
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "CE1",
+      "descripcion": "Reconocer la relevancia, la dimensión antropológica y los orígenes históricos de las cuestiones e ideas filosóficas, mediante su identificación en el mundo de la vida cotidiana y en diversos documentos, contextos y culturas, considerando el papel de las filósofas y otros colectivos tradicionalmente marginados en la expresión e investigación de las mismas."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "CE1",
+      "descripcion": "Distinguir y relacionar el saber filosófico con respecto a otras formas de saber, explicando sus características singulares y analizando críticamente su papel, vigencia y sentido."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "CE2",
+      "descripcion": "Diseñar y realizar trabajos y actividades propias a la investigación, tanto individual como grupal, sobre temas y problemas con relevancia filosófica, mediante el uso, análisis, organización e interpretación de información extraída de distintas fuentes y dada en diferentes soportes, especialmente en entornos digitales, y la elaboración rigurosa de hipótesis propias al respecto."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "CE2",
+      "descripcion": "Exponer de modo público el resultado de trabajos y actividades de investigación, demostrando el dominio de la disertación, del diálogo y de la argumentación filosófica, y adoptando una actitud deliberativa y autocrítica en relación con las propias ideas y opiniones."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "CE3",
+      "descripcion": "Identificar, evaluar y construir argumentos racionales de diverso tipo, distinguiendo falacias, sesgos, afirmaciones dogmáticas, bulos y estrategias de desinformación, en contextos tanto académicos como informales, y especialmente en el ámbito de los medios y redes digitales."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "CE3",
+      "descripcion": "Inquirir sobre cuestiones filosóficas, intercambiando ideas y opiniones y resolviendo conflictos y controversias al respecto, demostrando una actitud empática, tolerante y constructiva, a través del uso del diálogo en orden a las pautas procedimentales, lógicas, éticas y retóricas que le corresponden."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "CE4",
+      "descripcion": "Identificar y exponer problemas e ideas relativos a la comprensión de la naturaleza, estructura, origen y sentido de la realidad, mediante el análisis de conceptos y problemas ontológicos y metafísicos básicos, y considerando críticamente diversas teorías filosóficas y científicas al respecto."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "CE4",
+      "descripcion": "Elaborar una investigación interdisciplinar acerca de las diversas concepciones antropológicas del ser humano, así como sobre las dimensiones de la personalidad y la psique humana, a través del análisis e interpretación de fuentes diversas y la reflexión en torno al problema de la identidad humana."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "CE4",
+      "descripcion": "Reconocer y explicar la dimensión social de la naturaleza humana, a través de la investigación, el diálogo y la realización de actividades cooperativas en las que se traten cuestiones referidas a la socialización humana, la comunicación, las relaciones interpersonales y la conducta grupal, reflexionando acerca de actitudes y valores como la autoestima, el respeto, la equidad o la solidaridad."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "CE5",
+      "descripcion": "Reflexionar sobre la validez de las propias ideas y creencias a partir de la articulación expresa de un discurso propio acerca de las condiciones, límites y propiedades relativas al conocimiento, los distintos modos de saber y la relación entre ellos."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "CE5",
+      "descripcion": "Investigar y explicar las principales características y problemas filosóficos relacionados con el conocimiento científico, a través del análisis de ejemplos cercanos a la experiencia del alumnado, y el diálogo acerca de los límites y consecuencias del desarrollo tecnológico."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "CE5",
+      "descripcion": "Reconocer y analizar críticamente los procesos de producción y organización de la información, identificando y aplicando criterios con los que detectar fenómenos relativos a la manipulación informativa y la posverdad en entornos cercanos y cotidianos."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "CE6",
+      "descripcion": "Identificar y caracterizar la dimensión normativa y moral de los problemas prácticos, así como las principales tesis y cuestiones fundamentales de la ética filosófica, aplicando dicho conocimiento al esclarecimiento y justificación expresa del propio proyecto vital."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "CE6",
+      "descripcion": "Plantear, analizar y exponer cuestiones éticas fundamentales y de actualidad, relacionadas con los derechos humanos y de la infancia, la igualdad de género, la diversidad cultural y personal, la libertad de expresión, las conductas de violencia y acoso o el maltrato animal, así como sobre los valores, retos y desafíos del siglo XXI, mediante el uso pertinente de conceptos, tesis y procedimientos propios de la ética, desarrollando un juicio propio al respecto, y adoptando una actitud constructiva y dialogante con respecto a la pluralidad de ideas y opiniones."
+    },
+    {
+      "codigo": "7.1",
+      "competencia": "CE7",
+      "descripcion": "Identificar, caracterizar y explicar la dimensión política de la naturaleza y la vida humana, así como las tesis y cuestiones elementales de la filosofía política, aplicando dicho conocimiento al análisis y comparación de distintos sistemas políticos y a la reflexión y el diálogo constructivo en torno a los principios, la legitimidad y los problemas de la democracia."
+    },
+    {
+      "codigo": "7.2",
+      "competencia": "CE7",
+      "descripcion": "Plantear, analizar y exponer cuestiones políticas fundamentales y de actualidad, relacionadas con los valores y principios democráticos, el problema de la desigualdad y la pobreza, las cuestiones ecosociales y el cambio climático, así como con las distintas formas de discriminación y violencia, mediante el uso pertinente de conceptos, tesis y procedimientos de la filosofía política, adoptando una actitud constructiva y dialogante con respecto a la pluralidad de ideas y opiniones, y valorando la participación ciudadana y la importancia de los movimientos sociales y políticos."
+    },
+    {
+      "codigo": "8.1",
+      "competencia": "CE8",
+      "descripcion": "Identificar y analizar el carácter singular de la experiencia y las emociones estéticas a través de la investigación, fundada en fuentes fiables y en la propia experiencia, de la naturaleza del arte y su relación con la belleza, el juicio del gusto y la diversidad cultural y humana."
+    },
+    {
+      "codigo": "8.2",
+      "competencia": "CE8",
+      "descripcion": "Investigar, a través del análisis de ejemplos y casos prácticos, el poder de influencia de la dimensión estética en otros campos de la cultura, la experiencia y las acciones humanas, como el del consumo, el diseño y la publicidad, la política, las relaciones sociales y, especialmente, en el ámbito de la cultura audiovisual contemporánea, reflexionando y dialogando acerca de los problemas éticos que se derivan de este poder de influencia."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. La actividad filosófica",
+      "titulo": "La actividad filosófica",
+      "items": [
+        "Las grandes preguntas filosóficas. La filosofía como actividad y actitud común.",
+        "Los orígenes de la filosofía occidental y sus precedentes y correspondencias en otras culturas. Las mujeres en la filosofía.",
+        "Relaciones de semejanza y de diferencia entre la filosofía y otras formas de responder a los interrogantes y desafíos humanos: el arte, la religión, la ciencia. La originalidad del saber filosófico.",
+        "La utilidad y sentido de la filosofía hoy.",
+        "2. La práctica filosófica: el pensamiento crítico y el diálogo.",
+        "La composición y la crítica de argumentos. Falacias y sesgos cognitivos.",
+        "La identificación de dogmas y prejuicios; demagogia, propaganda y manipulación de la información. El uso crítico, ético y responsable de las herramientas digitales, las redes sociales y los medios de comunicación.",
+        "El diálogo filosófico como forma de conocimiento y de deliberación democrática.",
+        "El trabajo de investigación y la disertación filosófica. Otros modos de investigación y expresión filosófica."
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. La reflexión en torno a la vida humana",
+      "titulo": "La reflexión en torno a la vida humana",
+      "items": [
+        "Naturaleza y sentido de la realidad. Apariencias y realidades. La realidad virtual.",
+        "Organizar el mundo. Categorización de lo real y modos de ser. El tiempo y el cambio. Las distintas concepciones cosmológicas y sus problemas.",
+        "El lugar del ser humano en el cosmos. Necesidad y libertad. El problema mente-cuerpo y los desafíos de la Inteligencia Artificial. El debate sobre el transhumanismo.",
+        "La génesis humana: el debate naturaleza-cultura.",
+        "El cuerpo y la sensibilidad. Sexo y género.",
+        "Los sentimientos y las emociones. La inteligencia emocional.",
+        "Los deseos y la voluntad. La conducta moral.",
+        "La inteligencia: el problema de su comprensión y medida. El papel de la memoria, la creatividad y el lenguaje. El enigma de la consciencia.",
+        "El ser humano como ser social. Educación y grupos de pertenencia. La diversidad social, familiar, etnocultural y afectivo-sexual.",
+        "La percepción y comunicación interpersonal. La amistad y el amor. La igualdad y el respeto mutuo en las relaciones afectivas.",
+        "Cooperación y agresión. Las conductas de odio. La prevención del acoso, el ciberacoso y las situaciones de violencia en las redes.",
+        "Formación, estructura y funcionamiento en los grupos. Las relaciones de poder. La resolución pacífica de conflictos y la toma democrática de decisiones."
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Conocimiento, acción y creación",
+      "titulo": "Conocimiento, acción y creación",
+      "items": [
+        "1. El conocimiento y el problema de la verdad.",
+        "Naturaleza, posibilidad, origen y límites del conocimiento humano. El fenómeno de la posverdad.",
+        "El conocimiento científico: alcance, características y metodología. El progreso tecnológico y sus límites éticos.",
+        "Otras formas de saber: el saber cotidiano, la expresión artística, las creencias religiosas.",
+        "Ser y deber ser. Normas, valores y sistemas morales. Moralidad, legalidad y normas cívicas. La objeción de conciencia. El propio proyecto vital.",
+        "La diversidad de valores y el debate en torno al relativismo. La posibilidad de una ética universal de mínimos. Diversas propuestas y teorías éticas. Los derechos humanos como proyecto ético. Los derechos de la infancia.",
+        "Cuestiones éticas fundamentales y de actualidad. La efectiva igualdad entre hombres y mujeres y la prevención de la violencia de género. El reconocimiento de la diversidad cultural, personal y afectivo-sexual. El uso crítico, responsable y respetuoso de los medios y redes de comunicación. La contribución individual al desarrollo sostenible y la ciudadanía mundial. El debate en torno a los derechos animales.",
+        "3. La convivencia política y el problema de la justicia.",
+        "Naturaleza y necesidad de la política. Los distintos sistemas políticos.",
+        "La justicia y la legitimidad del poder. Las teorías políticas y la reflexión crítica en torno a la democracia.",
+        "La sociedad civil y la opinión pública. El ejercicio participativo de la ciudadanía democrática. Movimientos sociales y políticos. El voluntariado. Utopías y distopías.",
+        "Problemas políticos de nuestro tiempo. La desigualdad y la pobreza; la guerra, el terrorismo y otras formas de violencia; la igualdad de género y la discriminación de las minorías; las cuestiones ecosociales y el cambio climático.",
+        "La naturaleza, significado y valor de la experiencia y la emoción estética. El arte, la belleza y el gusto.",
+        "La dimensión estética y el papel de las imágenes en la cultura y la sociedad contemporánea. Ética, política y estética."
+      ]
+    }
+  ]
+}

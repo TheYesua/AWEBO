@@ -1,0 +1,165 @@
+{
+  "materia_oficial": "EXPRESIÓN ARTÍSTICA",
+  "materia": "Expresión Artística",
+  "etapa": "ESO",
+  "ciclo": "Único",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "4º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "CE1",
+      "descripcion": "Analizar manifestaciones artísticas, contextualizándolas, describiendo sus aspectos esenciales y valorando el proceso de creación y el resultado final, para educar la mirada, alimentar el imaginario, reforzar la confianza y ampliar las posibilidades de disfrute del patrimonio cultural y artístico.",
+      "descriptores": [
+        "CCL2",
+        "CCL3",
+        "CP3",
+        "CD1",
+        "CD2",
+        "CPSAA3",
+        "CC1",
+        "CCEC1",
+        "CCEC2"
+      ]
+    },
+    {
+      "codigo": "CE2",
+      "descripcion": "Explorar las posibilidades expresivas de diferentes técnicas gráfico-plásticas, empleando distintos medios, soportes, herramientas y lenguajes, para incorporarlas al repertorio personal de recursos y desarrollar el criterio de selección de las más adecuadas a cada necesidad o intención.",
+      "descriptores": [
+        "CD2",
+        "CPSAA1",
+        "CC1",
+        "CC3",
+        "CCEC3",
+        "CCEC4"
+      ]
+    },
+    {
+      "codigo": "CE3",
+      "descripcion": "Explorar las posibilidades expresivas de diferentes medios, técnicas y formatos audiovisuales, decodificando sus lenguajes, identificando las herramientas y distinguiendo sus fines, para incorporarlos al repertorio personal de recursos y desarrollar el criterio de selección de los más adecuados a cada necesidad o intención.",
+      "descriptores": [
+        "CD5",
+        "CPSAA1",
+        "CPSAA3",
+        "CCEC3",
+        "CCEC4"
+      ]
+    },
+    {
+      "codigo": "CE4",
+      "descripcion": "Crear producciones artísticas, individuales o grupales, realizadas con diferentes técnicas y herramientas, incluido el propio cuerpo, a partir de un motivo o intención previos, adaptando el diseño y el proceso a las necesidades e indicaciones de realización y teniendo en cuenta las características del público destinatario, para compartirlas y valorar las oportunidades de desarrollo personal, social, académico o profesional que pueden derivarse de esta actividad.",
+      "descriptores": [
+        "CCL1",
+        "STEM3",
+        "CD3",
+        "CPSAA3",
+        "CPSAA5",
+        "CE3",
+        "CCEC4"
+      ]
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "CE1",
+      "descripcion": "Analizar manifestaciones artísticas de diferentes épocas y culturas, contextualizándolas, describiendo sus aspectos esenciales, valorando y comparando sus procesos de creación y los resultados finales, y evidenciando una actitud de apertura, interés y respeto en su recepción."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "CE1",
+      "descripcion": "Valorar críticamente los hábitos, los gustos y los referentes artísticos de diferentes épocas y culturas, reflexionando sobre su evolución y sobre su relación con los del presente."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "CE1",
+      "descripcion": "Incorporar la perspectiva de género en el análisis de manifestaciones artísticas, valorando las aportaciones de las mujeres a la historia del arte, evaluando con espíritu crítico su escasa presencia en los estudios de arte tradicionales e identificando los mitos, los estereotipos y los roles de género transmitidos a través del tiempo."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "CE2",
+      "descripcion": "Participar, con iniciativa, confianza y creatividad, en la exploración de diferentes técnicas gráfico-plásticas, empleando diversas herramientas, medios, soportes y lenguajes."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "CE2",
+      "descripcion": "Elaborar de forma creativa producciones gráfico-plásticas, libres o pautadas, determinando las intenciones expresivas y seleccionando con corrección las herramientas, medios, soportes y lenguajes más adecuados de entre los que conforman el repertorio personal de recursos."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "CE3",
+      "descripcion": "Participar, con iniciativa, confianza y creatividad, en la exploración de diferentes medios, técnicas y formatos audiovisuales, decodificando sus lenguajes, identificando las herramientas y distinguiendo sus fines."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "CE3",
+      "descripcion": "Realizar producciones audiovisuales, individuales o colaborativas, asumiendo diferentes funciones; incorporando el uso de las tecnologías digitales con una intención expresiva; buscando un resultado final ajustado al proyecto preparado previamente; y seleccionando y empleando, con corrección y de forma creativa, las herramientas y medios disponibles más adecuados."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "CE4",
+      "descripcion": "Crear un producto artístico individual o grupal, de forma colaborativa y abierta, diseñando las fases del proceso y seleccionando las técnicas y herramientas más adecuadas para conseguir un resultado adaptado a una intención y a un público determinados."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "CE4",
+      "descripcion": "Exponer el resultado final de la creación de un producto artístico, individual o grupal, poniendo en común y valorando críticamente el desarrollo de su elaboración, las dificultades encontradas, los progresos realizados y los logros alcanzados."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "CE4",
+      "descripcion": "Evaluar colectivamente las reacciones ante las producciones artísticas creadas por el alumnado, facilitando al público receptor los medios para que pueda expresar su valoración y su opinión, y generando propuestas de mejora a partir de ellas."
+    },
+    {
+      "codigo": "4.4",
+      "competencia": "CE4",
+      "descripcion": "Identificar oportunidades de desarrollo personal, social, académico o profesional relacionadas con el ámbito artístico, comprendiendo su valor añadido y expresando la opinión personal de forma razonada y respetuosa."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Técnicas gráfico-plásticas",
+      "titulo": "Técnicas gráfico-plásticas",
+      "items": [
+        "Los efectos del gesto y del instrumento: herramientas, medios y soportes. Cualidades plásticas y efectos visuales.",
+        "Factores y etapas del proceso creativo: elección de materiales y técnicas. El boceto y el croquis.",
+        "Técnicas de dibujo y pintura: técnicas secas y húmedas.",
+        "Técnicas mixtas y alternativas de las vanguardias artísticas. Posibilidades expresivas y contexto histórico.",
+        "Técnicas de estampación. Procedimientos directos, aditivos, sustractivos y mixtos.",
+        "Grafiti y pintura mural. Procedimientos, técnicas y materiales. Conservación.",
+        "Técnicas básicas de creación de volúmenes. Modelado, ensamblaje, talla.",
+        "El arte del reciclaje. Consumo responsable. Productos ecológicos, sostenibles e innovadores en la práctica artística.",
+        "Arte y naturaleza. Intervenciones en la naturaleza.",
+        "Seguridad, toxicidad e impacto medioambiental de los diferentes materiales artísticos. Prevención y gestión responsable de los residuos.",
+        "Métodos de trazado de formas poligonales y tangencias.",
+        "Técnicas de representación tridimensional en el plano.",
+        "Ejemplos de aplicación de técnicas gráfico-plásticas en diferentes manifestaciones artísticas y en el ámbito del diseño.",
+        "Geometría descriptiva: polígonos y tangencias.",
+        "El módulo y las transformaciones. Redes modulares.",
+        "La representación del espacio. Sistema axonométrico. Perspectiva cónica."
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Fotografía, lenguaje visual, audiovisual y multimedia",
+      "titulo": "Fotografía, lenguaje visual, audiovisual y multimedia",
+      "items": [
+        "Elementos y principios básicos del lenguaje visual y de la percepción. Luz, color y composición.",
+        "La percepción visual. Persistencia retiniana Ilusiones ópticas.",
+        "Narrativa de la imagen fija: encuadre y planificación, puntos de vista y angulación. La imagen secuenciada.",
+        "Fotografía analógica: cámara oscura. Fotografía sin cámara (fotogramas). Técnicas fotográficas experimentales: cianotipia o antotipia.",
+        "Fotografía digital. Recursos digitales de manipulación de imágenes. El fotomontaje digital y tradicional.",
+        "Seguridad, toxicidad e impacto medioambiental de los diferentes materiales artísticos. Prevención y gestión responsable de los residuos.",
+        "Unidades de la narrativa audiovisual: fotograma, plano, toma, escena, secuencia. Edición y postproducción. El guion y el  storyboard  en la planificación audiovisual.",
+        "Principales recursos narrativos audiovisuales: movimientos de cámara y otros.",
+        "El proceso de creación. Realización y seguimiento: guion o proyecto, presentación final y evaluación (autorreflexión, autoevaluación y evaluación colectiva).",
+        "Publicidad: recursos formales, lingüísticos y persuasivos. El anuncio. El cartel. El logotipo. Nuevos medios y formatos de difusión. Internet y redes sociales. Estereotipos y sociedad de consumo. El sexismo y los cánones corporales y sexuales en los medios de comunicación.",
+        "Campos y ramas del diseño: gráfico, de producto, de moda, de interiores, escenografía. Principales movimientos.",
+        "Técnicas básicas de animación analógicas y digitales.",
+        "Recursos digitales para la creación de proyectos de vídeo-arte."
+      ]
+    }
+  ]
+}

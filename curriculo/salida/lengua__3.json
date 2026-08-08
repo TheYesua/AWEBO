@@ -1,0 +1,345 @@
+{
+  "materia_oficial": "LENGUA CASTELLANA Y LITERATURA",
+  "materia": "Lengua",
+  "etapa": "ESO",
+  "ciclo": "Tercer curso",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "3º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "CE1",
+      "descripcion": "Describir y apreciar la diversidad lingüística del mundo a partir del reconocimiento de las lenguas del alumnado y la realidad plurilingüe y pluricultural de España, analizando el origen y desarrollo sociohistórico de sus lenguas y las características de las principales variedades dialectales del español, para favorecer la reflexión interlingüística, para combatir los estereotipos y prejuicios lingüísticos y para valorar dicha diversidad como fuente de riqueza cultural.",
+      "descriptores": [
+        "CCL1",
+        "CCL5",
+        "CP2",
+        "CP3",
+        "CC1",
+        "CC2",
+        "CCEC1",
+        "CCEC3"
+      ]
+    },
+    {
+      "codigo": "CE2",
+      "descripcion": "Comprender e interpretar textos orales y multimodales, recogiendo el sentido general y la información más relevante, identificando el punto de vista y la intención del emisor y valorando su fiabilidad, su forma y su contenido, para construir conocimiento, para formarse opinión y para ensanchar las posibilidades de disfrute y ocio.",
+      "descriptores": [
+        "CCL2",
+        "CP2",
+        "STEM1",
+        "CD2",
+        "CD3",
+        "CPSAA4",
+        "CC3"
+      ]
+    },
+    {
+      "codigo": "CE3",
+      "descripcion": "Producir textos orales y multimodales con fluidez, coherencia, cohesión y registro adecuado, atendiendo a las convenciones propias de los diferentes géneros discursivos, y participar en interacciones orales con actitud cooperativa y respetuosa, tanto para construir conocimiento y establecer vínculos personales como para intervenir de manera activa e informada en diferentes contextos sociales.",
+      "descriptores": [
+        "CCL1",
+        "CCL3",
+        "CCL5",
+        "CP2",
+        "STEM1",
+        "CD2",
+        "CD3",
+        "CC2",
+        "CE1"
+      ]
+    },
+    {
+      "codigo": "CE4",
+      "descripcion": "Comprender, interpretar y valorar textos escritos, con sentido crítico y diferentes propósitos de lectura, reconociendo el sentido global y las ideas principales y secundarias, identificando la intención del emisor, reflexionando sobre el contenido y la forma y evaluando su calidad y fiabilidad, para dar respuesta a necesidades e intereses comunicativos diversos y para construir conocimiento.",
+      "descriptores": [
+        "CCL2",
+        "CCL3",
+        "CCL5",
+        "CP2",
+        "STEM4",
+        "CD1",
+        "CPSAA4",
+        "CC3"
+      ]
+    },
+    {
+      "codigo": "CE5",
+      "descripcion": "Producir textos escritos y multimodales coherentes, cohesionados, adecuados y correctos, atendiendo a las convenciones propias del género discursivo elegido, para construir conocimiento y para dar respuesta de manera informada, eficaz y creativa a demandas comunicativas concretas.",
+      "descriptores": [
+        "CCL1",
+        "CCL3",
+        "CCL5",
+        "STEM1",
+        "CD2",
+        "CD3",
+        "CPSAA5",
+        "CC2"
+      ]
+    },
+    {
+      "codigo": "CE6",
+      "descripcion": "Seleccionar y contrastar información procedente de diferentes fuentes de manera progresivamente autónoma, evaluando su fiabilidad y pertinencia en función de los objetivos de lectura y evitando los riesgos de manipulación y desinformación, e integrarla y transformarla en conocimiento, para comunicarla desde un punto de vista crítico y personal a la par que respetuoso con la propiedad intelectual.",
+      "descriptores": [
+        "CCL3",
+        "CD1",
+        "CD2",
+        "CD3",
+        "CD4",
+        "CPSAA4",
+        "CC2",
+        "CE3"
+      ]
+    },
+    {
+      "codigo": "CE7",
+      "descripcion": "Seleccionar y leer de manera progresivamente autónoma obras diversas como fuente de placer y conocimiento, configurando un itinerario lector que evolucione en cuanto a diversidad, complejidad y calidad de las obras, y compartir experiencias de lectura, para construir la propia identidad lectora y para disfrutar de la dimensión social de la lectura.",
+      "descriptores": [
+        "CCL1",
+        "CCL4",
+        "CD3",
+        "CPSAA1",
+        "CCEC1",
+        "CCEC2",
+        "CCEC3"
+      ]
+    },
+    {
+      "codigo": "CE8",
+      "descripcion": "Leer, interpretar y valorar obras o fragmentos literarios del patrimonio nacional y universal, utilizando un metalenguaje específico y movilizando la experiencia biográfica y los conocimientos literarios y culturales que permiten establecer vínculos entre textos diversos y con otras manifestaciones artísticas, para conformar un mapa cultural, para ensanchar las posibilidades de disfrute de la literatura y para crear textos de intención literaria.",
+      "descriptores": [
+        "CCL1",
+        "CCL4",
+        "CC1",
+        "CCEC1",
+        "CCEC2",
+        "CCEC3",
+        "CCEC4"
+      ]
+    },
+    {
+      "codigo": "CE9",
+      "descripcion": "Movilizar el conocimiento sobre la estructura de la lengua y sus usos y reflexionar de manera progresivamente autónoma sobre las elecciones lingüísticas y discursivas, con la terminología adecuada, para desarrollar la conciencia lingüística, para aumentar el repertorio comunicativo y para mejorar las destrezas tanto de producción oral y escrita como de comprensión e interpretación crítica.",
+      "descriptores": [
+        "CCL1",
+        "CCL2",
+        "CP2",
+        "STEM1",
+        "STEM2",
+        "CPSAA5"
+      ]
+    },
+    {
+      "codigo": "CE10",
+      "descripcion": "Poner las propias prácticas comunicativas al servicio de la convivencia democrática, la resolución dialogada de los conflictos y la igualdad de derechos de todas las personas, utilizando un lenguaje no discriminatorio y desterrando los abusos de poder a través de la palabra, para favorecer un uso no solo eficaz sino también ético y democrático del lenguaje.",
+      "descriptores": [
+        "CCL1",
+        "CCL5",
+        "CP3",
+        "CD3",
+        "CPSAA3",
+        "CC1",
+        "CC2",
+        "CC3"
+      ]
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "CE1",
+      "descripcion": "Reconocer y valorar las lenguas de España y las variedades dialectales del español, con atención especial a la del propio territorio, contrastando aspectos lingüísticos y discursivos de las distintas lenguas, así como rasgos de los dialectos del español, diferenciándolos de los rasgos sociolectales y de registro, en manifestaciones orales, escritas y multimodales."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "CE1",
+      "descripcion": "Identificar y cuestionar prejuicios y estereotipos lingüísticos adoptando una actitud de respeto y valoración de la riqueza cultural, lingüística y dialectal, a partir del análisis de la diversidad lingüística en el entorno social próximo y de la exploración y reflexión en torno a los fenómenos del contacto entre lenguas y de la indagación de los derechos lingüísticos individuales y colectivos."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "CE2",
+      "descripcion": "Comprender el sentido global, la estructura, la información más relevante en función de las necesidades comunicativas y la intención del emisor en textos orales y multimodales de cierta complejidad de diferentes ámbitos, analizando la interacción entre los diferentes códigos."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "CE2",
+      "descripcion": "Valorar la forma y el contenido de textos orales y multimodales de cierta complejidad, evaluando su calidad, su fiabilidad y la idoneidad del canal utilizado, así como la eficacia de los procedimientos comunicativos empleados."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "CE3",
+      "descripcion": "Realizar exposiciones y argumentaciones orales con diferente grado de planificación sobre temas de interés personal, social y educativo ajustándose a las convenciones propias de los diversos géneros discursivos, con fluidez, coherencia, cohesión y el registro adecuado en diferentes soportes, utilizando de manera eficaz recursos verbales y no verbales."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "CE3",
+      "descripcion": "Participar de manera activa y adecuada en interacciones orales informales, en el trabajo en equipo y en situaciones orales formales de carácter dialogado, con actitudes de escucha activa y estrategias de cooperación conversacional y cortesía lingüística."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "CE4",
+      "descripcion": "Comprender e interpretar el sentido global, la estructura, la información más relevante y la intención del emisor de textos escritos y multimodales que respondan a diferentes propósitos de lectura, realizando las inferencias necesarias."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "CE4",
+      "descripcion": "Valorar críticamente el contenido y la forma de textos evaluando su calidad y fiabilidad, así como la eficacia de los procedimientos lingüísticos empleados."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "CE5",
+      "descripcion": "Planificar la redacción de textos escritos y multimodales atendiendo a la situación comunicativa, al destinatario, al propósito y canal; redactar borradores y revisarlos con ayuda del diálogo entre iguales e instrumentos de consulta; y presentar un texto final coherente, cohesionado y con el registro adecuado."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "CE5",
+      "descripcion": "Incorporar procedimientos para enriquecer los textos atendiendo a aspectos discursivos, lingüísticos y de estilo, con precisión léxica y corrección ortográfica y gramatical."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "CE6",
+      "descripcion": "Localizar, seleccionar y contrastar de manera progresivamente autónoma información procedente de diferentes fuentes, calibrando su fiabilidad y pertinencia en función de los objetivos de lectura; organizarla e integrarla en esquemas propios, y reelaborarla y comunicarla de manera creativa adoptando un punto de vista crítico respetando los principios de propiedad intelectual."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "CE6",
+      "descripcion": "Elaborar trabajos de investigación de manera progresivamente autónoma en diferentes soportes sobre diversos temas de interés académico, personal o social a partir de la información seleccionada."
+    },
+    {
+      "codigo": "6.3",
+      "competencia": "CE6",
+      "descripcion": "Adoptar hábitos de uso crítico, seguro, sostenible y saludable de las tecnologías digitales en relación con la búsqueda y la comunicación de la información."
+    },
+    {
+      "codigo": "7.1",
+      "competencia": "CE7",
+      "descripcion": "Leer de manera autónoma textos seleccionados en función de los propios gustos, intereses y necesidades, y dejar constancia del progreso del propio itinerario lector y cultural explicando los criterios de selección de las lecturas y la experiencia de lectura."
+    },
+    {
+      "codigo": "7.2",
+      "competencia": "CE7",
+      "descripcion": "Compartir la experiencia de lectura en soportes diversos relacionando el sentido de la obra con la propia experiencia biográfica, lectora y cultural."
+    },
+    {
+      "codigo": "8.1",
+      "competencia": "CE8",
+      "descripcion": "Explicar y argumentar la interpretación de las obras leídas a partir del análisis de las relaciones internas de sus elementos constitutivos con el sentido de la obra y de las relaciones externas del texto con su contexto, atendiendo a la configuración de los géneros y subgéneros literarios."
+    },
+    {
+      "codigo": "8.2",
+      "competencia": "CE8",
+      "descripcion": "Establecer de manera progresivamente autónoma vínculos argumentados entre los textos leídos y otros textos escritos, orales o multimodales, así como con otras manifestaciones artísticas y culturales, en función de temas, tópicos, estructuras, lenguaje y valores éticos y estéticos, mostrando la implicación y la respuesta personal del lector en la lectura."
+    },
+    {
+      "codigo": "8.3",
+      "competencia": "CE8",
+      "descripcion": "Crear textos personales o colectivos con intención literaria y conciencia de estilo, en distintos soportes y con ayuda de otros lenguajes artísticos y audiovisuales, a partir de la lectura de obras o fragmentos significativos en los que se empleen las convenciones formales de los diversos géneros y estilos literarios."
+    },
+    {
+      "codigo": "9.1",
+      "competencia": "CE9",
+      "descripcion": "Revisar los textos propios de manera progresivamente autónoma y hacer propuestas de mejora argumentando los cambios a partir de la reflexión metalingüística e interlingüística con el metalenguaje específico."
+    },
+    {
+      "codigo": "9.2",
+      "competencia": "CE9",
+      "descripcion": "Explicar y argumentar la interrelación entre el propósito comunicativo y las elecciones lingüísticas del emisor, así como sus efectos en el receptor, utilizando el conocimiento explícito de la lengua y el metalenguaje específico."
+    },
+    {
+      "codigo": "9.3",
+      "competencia": "CE9",
+      "descripcion": "Formular generalizaciones sobre algunos aspectos del funcionamiento de la lengua a partir de la observación, la comparación y la transformación de enunciados, así como de la formulación de hipótesis y la búsqueda de contraejemplos, utilizando el metalenguaje específico y consultando de manera progresivamente autónoma diccionarios, manuales y gramáticas."
+    },
+    {
+      "codigo": "10.1",
+      "competencia": "CE10",
+      "descripcion": "Identificar y desterrar los usos discriminatorios de la lengua, los abusos de poder a través de la palabra y los usos manipuladores del lenguaje a partir de la reflexión y el análisis de los elementos lingüísticos, textuales y discursivos utilizados, así como de los elementos no verbales de la comunicación."
+    },
+    {
+      "codigo": "10.2",
+      "competencia": "CE10",
+      "descripcion": "Utilizar estrategias para la resolución dialogada de los conflictos y la búsqueda de consensos, tanto en el ámbito personal como educativo y social."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Las lenguas y sus hablantes",
+      "titulo": "Las lenguas y sus hablantes",
+      "items": [
+        "Análisis de la diversidad lingüística de la localidad en relación con la biografía lingüística propia.",
+        "Comparación de rasgos de las principales variedades dialectales del español, con especial atención a la del propio territorio.",
+        "Desarrollo de la reflexión interlingüística.",
+        "Diferencias entre los rasgos propios de las variedades dialectales (fónicos, gramaticales y léxicos) y los relativos a los sociolectos y los registros.",
+        "Exploración y cuestionamiento de prejuicios y estereotipos lingüísticos. Los fenómenos del contacto entre lenguas: bilingüismo, préstamos, interferencias. Diglosia lingüística y diglosia dialectal."
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Comunicación",
+      "titulo": "Comunicación",
+      "items": [
+        "Estrategias de producción, comprensión y análisis crítico de textos orales, escritos y multimodales de diferentes ámbitos, con atención conjunta a los siguientes aspectos:",
+        "1. Contexto: componentes del hecho comunicativo.",
+        "Componentes del hecho comunicativo: grado de formalidad de la situación y carácter público o privado; distancia social entre los interlocutores; propósitos comunicativos e interpretación de intenciones; canal de comunicación y elementos no verbales de la comunicación.",
+        "Secuencias textuales básicas, con especial atención a las expositivas y argumentativas.",
+        "Propiedades textuales: coherencia, cohesión y adecuación.",
+        "Géneros discursivos propios del ámbito personal: la conversación, con especial atención a los actos de habla que amenazan la imagen del interlocutor (la discrepancia, la queja, la orden, la reprobación).",
+        "Géneros discursivos propios del ámbito educativo.",
+        "Géneros discursivos propios del ámbito social. Redes sociales y medios de comunicación. Etiqueta digital y riesgos de desinformación, manipulación y vulneración de la privacidad en la red. Análisis de la imagen y de los elementos paratextuales de los textos icónico-verbales y multimodales.",
+        "Interacción oral y escrita de carácter informal y formal: Cooperación conversacional y cortesía lingüística. Escucha activa, asertividad y resolución dialogada de los conflictos.",
+        "Comprensión oral: Selección y retención de la información relevante. Inferencias. Sentido global del texto y relación entre sus partes. La intención del emisor. Detección de usos discriminatorios del lenguaje verbal y no verbal. Valoración de la forma y el contenido del texto.",
+        "Producción oral formal: Planificación y búsqueda de información, textualización y revisión. Adecuación a la audiencia y al tiempo de exposición. Elementos no verbales. Rasgos discursivos y lingüísticos de la oralidad formal. La deliberación oral argumentada.",
+        "Comprensión lectora: Recuperación de información. Inferencias. Sentido global del texto y relación entre sus partes. La intención del emisor. Detección de usos discriminatorios del lenguaje verbal e icónico. Valoración de la forma y el contenido del texto.",
+        "Producción escrita: Planificación, textualización, revisión y edición en diferentes soportes. Usos de la escritura para la organización del pensamiento: toma de notas, esquemas, mapas conceptuales, definiciones, resúmenes, etc.",
+        "Alfabetización mediática e informacional: Búsqueda y selección de la información con criterios de fiabilidad, calidad y pertinencia; análisis, valoración, reorganización y síntesis de la información en esquemas propios y transformación en conocimiento; comunicación y difusión de manera creativa y respetuosa con la propiedad intelectual. Utilización de plataformas virtuales para la realización de proyectos escolares.",
+        "4. Reconocimiento y uso discursivo de los elementos lingüísticos.",
+        "La expresión de la subjetividad en textos de carácter expositivo y argumentativo. Identificación y uso de las variaciones de las formas deícticas (fórmulas de confianza y cortesía) en relación con las situaciones de comunicación.",
+        "Recursos lingüísticos para adecuar el registro a la situación de comunicación.",
+        "Procedimientos explicativos básicos: la aposición y las oraciones de relativo.",
+        "Mecanismos de cohesión. Conectores textuales distributivos, de orden, contraste, explicación, causa, consecuencia, condición e hipótesis. Mecanismos de referencia interna, gramaticales y léxicos (nominalizaciones e hiperónimos de significado abstracto).",
+        "Uso coherente de las formas verbales en los textos. Correlación temporal en la coordinación y subordinación de oraciones, y en el discurso relatado.",
+        "Corrección lingüística y revisión ortográfica y gramatical de los textos. Uso de diccionarios, manuales de consulta y de correctores ortográficos en soporte analógico o digital.",
+        "Los signos de puntuación como mecanismo organizador del texto escrito. Su relación con el significado."
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Educación literaria",
+      "titulo": "Educación literaria",
+      "items": [
+        "Implicación en la lectura de obras de forma progresivamente autónoma a partir de una preselección de textos variados, y reflexión sobre los textos leídos y sobre la práctica de lectura, atendiendo a los siguientes saberes:",
+        "Criterios y estrategias para la selección de obras variadas, a partir de la utilización autónoma de la biblioteca escolar y pública disponible.",
+        "Participación activa en actos culturales vinculados con el circuito literario y lector.",
+        "Toma de conciencia y verbalización de los propios gustos e identidad lectora.",
+        "Expresión de la experiencia lectora, utilizando progresivamente metalenguaje específico. Apropiación de los textos leídos a través de distintas formas de recreación.",
+        "Movilización de la experiencia personal, lectora y cultural para establecer vínculos de manera argumentada entre la obra leída y aspectos de la actualidad, así como con otros textos y manifestaciones artísticas y culturales.",
+        "Estrategias para la recomendación de las lecturas en soportes variados o bien oralmente entre iguales, enmarcando de manera básica las obras en los géneros y subgéneros literarios.",
+        "Lectura de obras y fragmentos relevantes del patrimonio literario nacional y universal y de la literatura actual, inscritas en itinerarios temáticos o de género que atraviesan épocas, contextos culturales y movimientos artísticos, atendiendo a los siguientes saberes:",
+        "Estrategias de construcción compartida de la interpretación de las obras a través de conversaciones literarias, con la incorporación progresiva de metalenguaje específico.",
+        "Relación entre los elementos constitutivos del género literario y la construcción del sentido de la obra. Efectos de sus recursos expresivos en la recepción.",
+        "Estrategias de utilización de información contextual, cultural y artística básica para construir la interpretación de las obras literarias.",
+        "Relación y comparación de los textos leídos con otros textos orales, escritos o multimodales, con otras manifestaciones artísticas y culturales y con las nuevas formas de ficción en función de temas, tópicos, estructuras y lenguajes. Elementos de continuidad y ruptura.",
+        "Estrategias para interpretar obras y fragmentos literarios a partir de la integración de los diferentes aspectos analizados y atendiendo a los valores culturales, éticos y estéticos presentes en los textos. Lectura con perspectiva de género.",
+        "Procesos de indagación en torno a las obras leídas que promuevan el interés por construir la interpretación de las obras y establecer conexiones entre textos.",
+        "Lectura expresiva, dramatización y recitación de los textos atendiendo a los procesos de comprensión, apropiación y oralización implicados.",
+        "Creación de textos a partir de la apropiación de las convenciones del lenguaje literario y en referencia a modelos dados (imitación, transformación, continuación, etc.)."
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Reflexión sobre la lengua",
+      "titulo": "Reflexión sobre la lengua",
+      "items": [
+        "Elaboración de conclusiones propias sobre el funcionamiento del sistema lingüístico con un lenguaje específico a partir de la observación, comparación y clasificación de unidades comunicativas y del contraste entre lenguas, atendiendo a los siguientes saberes:",
+        "Diferencias relevantes e intersecciones entre lengua oral y lengua escrita atendiendo a aspectos sintácticos, léxicos y pragmáticos.",
+        "Reconocimiento de la lengua como sistema y de sus unidades básicas teniendo en cuenta los diferentes niveles: el sonido y sistema de escritura, las palabras (forma y significado), su organización en el discurso (orden de las palabras, componentes de las oraciones o conexión entre los significados).",
+        "Distinción entre la forma (categoría gramatical) y la función de las palabras (funciones sintácticas de la oración simple) y consolidación de los procedimientos léxicos (afijos) y sintácticos para el cambio de categoría.",
+        "Relación entre los esquemas semántico y sintáctico de la oración. Observación y transformación de enunciados de acuerdo con estos esquemas y uso de la terminología sintáctica necesaria.",
+        "Procedimientos de adquisición y formación de palabras. Reflexión sobre los cambios en su significado, las relaciones semánticas entre palabras y sus valores denotativos y connotativos en función del contexto y el propósito comunicativo.",
+        "Estrategias de uso progresivamente autónomo de diccionarios y manuales de gramática para obtener información gramatical básica."
+      ]
+    }
+  ]
+}

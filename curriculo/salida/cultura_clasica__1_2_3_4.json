@@ -1,0 +1,198 @@
+{
+  "materia_oficial": "CULTURA CLÁSICA",
+  "materia": "Cultura Clásica",
+  "etapa": "ESO",
+  "ciclo": "Único",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º ESO",
+    "2º ESO",
+    "3º ESO",
+    "4º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "CE1",
+      "descripcion": "Definir y describir los aspectos geográficos, históricos, sociales y políticos de la Antigüedad clásica que constituyen las raíces de nuestra civilización, comparándolos con los actuales y con los de otras tradiciones culturales, para explicar y valorar críticamente la importancia de la herencia grecolatina y su pervivencia en la construcción de los marcos político y social actuales.",
+      "descriptores": [
+        "CCL2",
+        "CCL3",
+        "CD1",
+        "CPSAA4",
+        "CD1",
+        "CC1"
+      ]
+    },
+    {
+      "codigo": "CE2",
+      "descripcion": "Identificar el aporte del griego y del latín a la constitución de las lenguas romances y su influencia en otras lenguas, desarrollando habilidades léxicas, semánticas, morfológicas y sintácticas, y respetando y valorando la diversidad cultural, lingüística y dialectal, para ampliar el repertorio lingüístico individual y mejorar la capacidad comunicativa.",
+      "descriptores": [
+        "CCL1",
+        "CP2",
+        "CP3",
+        "STEM1"
+      ]
+    },
+    {
+      "codigo": "CE3",
+      "descripcion": "Seleccionar y contrastar información acerca de las aportaciones culturales de la civilización clásica en los ámbitos científico y humanístico, investigando su repercusión, su adaptación y pervivencia en la actualidad, para identificar y justificar su utilidad y su valor en el presente.",
+      "descriptores": [
+        "CCL2",
+        "CCL3",
+        "CD1",
+        "CPSAA3",
+        "CC1",
+        "CCEC2"
+      ]
+    },
+    {
+      "codigo": "CE4",
+      "descripcion": "Reconocer la presencia del patrimonio literario clásico, leyendo y comparando fragmentos representativos de los principales autores y géneros grecolatinos y su recepción en distintas lenguas y épocas, para disfrutar y apreciar críticamente su carácter clásico y valorar su aportación a la cultura europea.",
+      "descriptores": [
+        "CCL2",
+        "CP3",
+        "CD1",
+        "CPSAA3",
+        "CPSAA4",
+        "CC1",
+        "CCEC1"
+      ]
+    },
+    {
+      "codigo": "CE5",
+      "descripcion": "Identificar el patrimonio histórico, arqueológico y artístico grecolatino presente en el entorno, analizando su sostenibilidad, para valorar críticamente su conservación y reconocerlo como recurso para el desarrollo individual y colectivo.",
+      "descriptores": [
+        "CD1",
+        "CC1",
+        "CC4",
+        "CE1",
+        "CCEC1",
+        "CCEC2"
+      ]
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "CE1",
+      "descripcion": "Describir la configuración geográfica e histórica del mundo actual, identificando y analizando los aspectos de la Antigüedad clásica que han influido en ella."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "CE1",
+      "descripcion": "Analizar el origen grecolatino de la configuración social y política actual, valorando críticamente la importancia del legado clásico en la organización institucional, social y familiar, así como la influencia de otras tradiciones culturales."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "CE1",
+      "descripcion": "Explicar conceptos geográficos, históricos, sociales, políticos, así como aquellos ligados a las instituciones políticas y sociales actuales como  democracia, lex, ius, imperio, civitas,  etc., investigando e interpretando la información obtenida a través de fuentes analógicas y digitales, sencillas o adaptadas, tanto de origen clásico como posterior."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "CE2",
+      "descripcion": "Explicar la relación del griego y el latín con las lenguas modernas, tanto romances como no romances, identificando influencias entre familias lingüísticas y estableciendo semejanzas y diferencias entre ellas a nivel léxico, semántico, morfológico y sintáctico."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "CE2",
+      "descripcion": "Enriquecer el repertorio léxico propio con helenismos, latinismos y étimos de origen grecolatino, identificándolos en producciones de distinto ámbito, infiriendo su significado a través de la comparación de distintos idiomas, y utilizándolos adecuadamente en producciones orales, escritas o multimodales."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "CE2",
+      "descripcion": "Analizar críticamente prejuicios y estereotipos lingüísticos adoptando una actitud de respeto y valorando la diversidad como fuente de riqueza cultural, lingüística y dialectal."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "CE3",
+      "descripcion": "Describir las aportaciones culturales de la civilización clásica a los ámbitos científico y humanístico, seleccionando, contrastando y analizando información sobre sus principales manifestaciones obtenida a partir de diversas fuentes, calibrando su fiabilidad y pertinencia y respetando los principios de rigor y propiedad intelectual."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "CE3",
+      "descripcion": "Justificar la utilidad y el valor del legado clásico en los ámbitos científico y humanístico, investigando y explicando su repercusión, su adaptación y su pervivencia en el presente."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "CE4",
+      "descripcion": "Identificar y justificar la pervivencia de los motivos, temas, géneros y personajes más significativos de la Antigüedad grecolatina, comparando fragmentos representativos de los principales autores y géneros grecolatinos con su recepción en distintas lenguas y épocas, y usando vocabulario y conceptos artístico-literarios fundamentales de origen clásico."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "CE4",
+      "descripcion": "Analizar la presencia del patrimonio literario clásico en manifestaciones culturales actuales, explicando la adaptación y la reinterpretación de motivos, temas personajes y géneros, y valorando su aportación a la cultura europea."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "CE4",
+      "descripcion": "Crear textos sencillos con intencionalidad estética a partir de fragmentos representativos que han iniciado una tradición determinada (por ejemplo, un tópico literario o un mito), aportando una interpretación propia del original."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "CE5",
+      "descripcion": "Describir el patrimonio histórico, arqueológico y artístico grecolatino del entorno, identificando su función original y sus características, y reflexionando sobre las implicaciones de sus distintos usos."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "CE5",
+      "descripcion": "Analizar la sostenibilidad del patrimonio histórico, arqueológico y artístico grecolatino del entorno, valorando los procesos de conservación y preservación, e identificando las oportunidades que ofrece como recurso para el desarrollo individual y colectivo."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Raíces clásicas del mundo actual",
+      "titulo": "Raíces clásicas del mundo actual",
+      "items": [
+        "La geografía y la historia del mundo clásico: influencia en la configuración del mundo actual.",
+        "Principales conceptos geográficos, históricos, sociales y políticos del mundo grecolatino: democracia,  lex ,  ius ,  imperium ,  civitas , etc.",
+        "La organización política en la Antigüedad clásica: instituciones, formas de participación y de gobierno, etc.",
+        "La organización social en la Antigüedad clásica: ciudadanía, esclavitud, clases sociales, etc.",
+        "Semejanzas y diferencias de organización política y social entre el mundo clásico y el mundo actual.",
+        "Legado clásico en las instituciones y las sociedades contemporáneas.",
+        "Principales costumbres y elementos socioculturales del mundo clásico.",
+        "La mujer en la Antigüedad clásica: su papel y su consideración en la sociedad, en la religión y en el arte.",
+        "Estrategias de análisis crítico de la herencia grecolatina.",
+        "Principales fuentes de información, analógicas y digitales, sobre el mundo clásico.",
+        "Estrategias de búsqueda y selección de información fiable y adecuada en fuentes analógicas y digitales: diccionarios, libros de consulta, bibliotecas, recursos digitales e informáticos, etc."
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Pervivencia de las lenguas clásicas",
+      "titulo": "Pervivencia de las lenguas clásicas",
+      "items": [
+        "El origen indoeuropeo de las lenguas clásicas.",
+        "El origen de la escritura: tipos y soportes. El alfabeto griego y el abecedario latino.",
+        "Familias lingüísticas: relaciones y parentescos entre distintas lenguas.",
+        "Principales elementos lingüísticos en la evolución del latín a las lenguas romances.",
+        "Elementos lingüísticos grecolatinos presentes en las lenguas modernas.",
+        "Influencia del latín y del griego en las lenguas romances y en las no romances.",
+        "Características generales de las lenguas flexivas.",
+        "Helenismos, latinismos y étimos de origen grecolatino.",
+        "Estrategias y técnicas de comparación lingüística a nivel léxico, semántico, morfológico y sintáctico.",
+        "Actitud crítica ante prejuicios y estereotipos lingüísticos.",
+        "Las lenguas clásicas como medio para profundizar en la propia lengua y ayuda para aprender otras nuevas.",
+        "Aproximación a diversos tipos de diccionarios: sus características y utilidades.",
+        "La diversidad lingüística, dialectal y cultural como fuente de riqueza."
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Continuidad del patrimonio cultural",
+      "titulo": "Continuidad del patrimonio cultural",
+      "items": [
+        "Motivos, temas, géneros y personajes más significativos de la Antigüedad clásica.",
+        "Principales autores y géneros literarios clásicos: fragmentos representativos.",
+        "Recepción de la literatura clásica en las manifestaciones artísticas posteriores.",
+        "Principales formas de adaptación y de reinterpretación de la literatura grecolatina.",
+        "Vocabulario y conceptos artístico-literarios fundamentales de origen clásico.",
+        "Aportaciones del mundo clásico al ámbito científico-tecnológico.",
+        "El universo mítico: principales mitos y leyendas de la Antigüedad clásica.",
+        "La mitología como fuente de inspiración y como patrimonio cultural: tratamiento e interpretación a través de otras manifestaciones artísticas.",
+        "Principales elementos del patrimonio histórico, arqueológico y artístico grecolatino: función y características.",
+        "Patrimonio clásico y sostenibilidad: la importancia de la conservación y la preservación a partir de modelos sostenibles."
+      ]
+    }
+  ]
+}

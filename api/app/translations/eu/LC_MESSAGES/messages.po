@@ -1,0 +1,1960 @@
+# Basque translations for AWEBO.
+# Copyright (C) 2026 AWEBO
+# This file is distributed under the same license as the AWEBO project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: AWEBO VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2026-08-08 12:46+0200\n"
+"PO-Revision-Date: 2026-08-04 15:31+0200\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: eu\n"
+"Language-Team: eu <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: app/services/exportacion_service.py:48
+#: app/templates/situaciones/detalle.html:289
+msgid "Descripción de la situación"
+msgstr "Egoeraren deskribapena"
+
+#: app/services/exportacion_service.py:49
+#: app/templates/situaciones/detalle.html:290
+msgid "Objetivos didácticos"
+msgstr "Helburu didaktikoak"
+
+#: app/services/exportacion_service.py:50
+msgid "Conexión curricular"
+msgstr "Curriculum-lotura"
+
+#: app/services/exportacion_service.py:51
+#: app/templates/situaciones/detalle.html:292
+msgid "Secuencia de sesiones"
+msgstr "Saioen sekuentzia"
+
+#: app/services/exportacion_service.py:52
+msgid "Evaluación"
+msgstr "Ebaluazioa"
+
+#: app/services/exportacion_service.py:53
+msgid "Atención a la diversidad"
+msgstr "Aniztasunaren arreta"
+
+#: app/templates/accesibilidad.html:7 app/templates/mapa_web.html:37
+msgid "Declaración de accesibilidad"
+msgstr "Irisgarritasun adierazpena"
+
+#: app/templates/accesibilidad.html:13
+msgid "La aplicación se ha diseñado conforme a las <abbr title=\"Web Content Accessibility Guidelines\">WCAG</abbr> 2.1 nivel AA."
+msgstr "Aplikazioa <abbr title=\"Web Content Accessibility Guidelines\">WCAG</abbr> 2.1 AA mailaren arabera diseinatu da."
+
+#: app/templates/accesibilidad.html:18
+msgid "Características incluidas"
+msgstr "Barne hartutako ezaugarriak"
+
+#: app/templates/accesibilidad.html:20
+msgid "Enlace <strong>«Pasar al contenido principal»</strong> al inicio de cada página."
+msgstr "<strong>«Joan eduki nagusira»</strong> esteka orri bakoitzaren hasieran."
+
+#: app/templates/accesibilidad.html:21
+msgid "Foco visible reforzado (no depende solo del color)."
+msgstr "Foku ikusgai indartua (ez da koloreaz soilik baliatzen)."
+
+#: app/templates/accesibilidad.html:22
+msgid "Navegación completa por teclado: <kbd>Tab</kbd>/<kbd>Mayús+Tab</kbd> para moverse, <kbd>Intro</kbd> para activar, <kbd>Esc</kbd> para cerrar diálogos."
+msgstr "Nabigazio osoa teklatuz: <kbd>Tab</kbd>/<kbd>Maius+Tab</kbd> mugitzeko, <kbd>Sartu</kbd> aktibatzeko, <kbd>Esc</kbd> elkarrizketa-koadroak ixteko."
+
+#: app/templates/accesibilidad.html:23
+msgid "Etiquetas y encabezados semánticos (<code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;h1&gt;–&lt;h4&gt;</code>)."
+msgstr "Etiketa eta goiburu semantikoak (<code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;h1&gt;–&lt;h4&gt;</code>)."
+
+#: app/templates/accesibilidad.html:24
+msgid "Imágenes con texto alternativo y SVGs decorativos marcados con <code>aria-hidden</code>."
+msgstr "Irudiak testu alternatiboarekin eta SVG apaingarriak <code>aria-hidden</code> etiketarekin markatuta."
+
+#: app/templates/accesibilidad.html:25
+msgid "Formularios con <code>label</code> asociado, mensajes de error anunciados a lectores de pantalla y campos con <code>aria-invalid</code> cuando procede."
+msgstr "Inprimakiak <code>label</code> lotuarekin, pantaila-irakurgailuei jakinarazitako errore-mezuak eta <code>aria-invalid</code> duten eremuak dagokionean."
+
+#: app/templates/accesibilidad.html:26
+msgid "Contraste de texto mínimo 4.5:1 (3:1 en texto grande)."
+msgstr "Gutxieneko testu-kontrastea 4.5:1 (3:1 testu handian)."
+
+#: app/templates/accesibilidad.html:27
+msgid "Información que no se transmite solo mediante color (iconos lingüísticos, texto y formas refuerzan los estados)."
+msgstr "Kolorearen bidez soilik transmititzen ez den informazioa (ikono linguistikoek, testuak eta formek egoerak indartzen dituzte)."
+
+#: app/templates/accesibilidad.html:34
+#, python-format
+msgid "Diseño adaptable a móvil, tableta y escritorio; el contenido no se pierde al ampliar hasta el 200%%."
+msgstr "Diseinu moldagarria mugikorrera, tabletara eta mahaigainera; edukia ez da galtzen ehuneko 200era arte handitzean."
+
+#: app/templates/accesibilidad.html:35
+msgid "Animaciones reducidas si el sistema indica <code>prefers-reduced-motion: reduce</code>."
+msgstr "Animazio murriztuak sistemak <code>prefers-reduced-motion: reduce</code> adierazten badu."
+
+#: app/templates/accesibilidad.html:36
+msgid "<a href=\"/mapa-web\">Mapa web</a> para navegación alternativa."
+msgstr "<a href=\"/mapa-web\">Web-mapa</a> nabigazio alternatiborako."
+
+#: app/templates/accesibilidad.html:37
+msgid "Lectura en voz alta de cada sección de una situación, con la voz que el sistema tenga instalada. No requiere conexión ni servicio externo."
+msgstr "Egoera baten atal bakoitza ozen irakurtzea, sistemak instalatuta duen ahotsarekin. Ez du konexiorik ez kanpoko zerbitzurik behar."
+
+#: app/templates/accesibilidad.html:42
+msgid "Limitaciones conocidas"
+msgstr "Ezagutzen diren mugak"
+
+#: app/templates/accesibilidad.html:44
+msgid "Esta aplicación es un Trabajo de Fin de Grado en evaluación continua. Si detectas alguna barrera de accesibilidad, puedes comunicarla en la sección de <a href=\"/ayuda\">Ayuda</a>."
+msgstr "Aplikazio hau etengabeko ebaluazioan dagoen Gradu Amaierako Lan bat da. Irisgarritasun-oztoporen bat antzematen baduzu, <a href=\"/ayuda\">Laguntza</a> atalean jakinaraz dezakezu."
+
+#: app/templates/ayuda.html:7 app/templates/errores/404.html:15
+#: app/templates/errores/error.html:36 app/templates/mapa_web.html:36
+msgid "Centro de ayuda"
+msgstr "Laguntza gunea"
+
+#: app/templates/ayuda.html:9
+msgid "Guías rápidas para crear, editar y exportar Situaciones de Aprendizaje LOMLOE con asistencia de IA."
+msgstr "Gida azkarrak LOMLOE Ikaskuntza Egoerak AAren laguntzaz sortu, editatu eta esportatzeko."
+
+#: app/templates/ayuda.html:13
+msgid "Índice de la página"
+msgstr "Orriaren aurkibidea"
+
+#: app/templates/ayuda.html:14
+msgid "En esta página"
+msgstr "Orri honetan"
+
+#: app/templates/ayuda.html:16 app/templates/ayuda.html:32
+msgid "Empezar"
+msgstr "Hasi"
+
+#: app/templates/ayuda.html:17 app/templates/ayuda.html:41
+msgid "Crear una Situación de Aprendizaje"
+msgstr "Ikaskuntza Egoera bat sortu"
+
+#: app/templates/ayuda.html:18 app/templates/ayuda.html:63
+msgid "Qué currículo usa AWEBO"
+msgstr "Zein curriculum erabiltzen du AWEBOk"
+
+#: app/templates/ayuda.html:19 app/templates/ayuda.html:95
+msgid "Generar contenido con IA"
+msgstr "Edukia AArekin sortu"
+
+#: app/templates/ayuda.html:20 app/templates/ayuda.html:110
+msgid "Retocar el texto generado"
+msgstr "Sortutako testua doitu"
+
+#: app/templates/ayuda.html:21 app/templates/ayuda.html:129
+msgid "Editar y versionar"
+msgstr "Editatu eta bertsioak sortu"
+
+#: app/templates/ayuda.html:22 app/templates/ayuda.html:136
+msgid "Adaptaciones (ACNS / ACS)"
+msgstr "Egokitzapenak (ACNS / ACS)"
+
+#: app/templates/ayuda.html:23 app/templates/ayuda.html:150
+msgid "Escuchar una situación"
+msgstr "Egoera bat entzun"
+
+#: app/templates/ayuda.html:24 app/templates/ayuda.html:160
+msgid "Exportar a PDF y DOCX"
+msgstr "PDF eta DOCX formatura esportatu"
+
+#: app/templates/ayuda.html:25 app/templates/ayuda.html:170
+msgid "Apariencia e idioma"
+msgstr "Itxura eta hizkuntza"
+
+#: app/templates/ayuda.html:26 app/templates/ayuda.html:185
+msgid "Mi cuenta"
+msgstr "Nire kontua"
+
+#: app/templates/ayuda.html:27 app/templates/ayuda.html:200
+msgid "Problemas frecuentes"
+msgstr "Ohiko arazoak"
+
+#: app/templates/ayuda.html:34
+msgid "Si aún no tienes cuenta, <a href=\"/register\">regístrate como docente</a>."
+msgstr "Oraindik konturik ez baduzu, <a href=\"/register\">erregistratu irakasle gisa</a>."
+
+#: app/templates/ayuda.html:35
+msgid "Accede con tu correo y contraseña en <a href=\"/login\">Iniciar sesión</a>."
+msgstr "Sartu zure helbide elektronikoa eta pasahitza <a href=\"/login\">Saioa hasi</a> atalean."
+
+#: app/templates/ayuda.html:36
+msgid "Desde tu <a href=\"/perfil\">perfil</a> puedes consultar y modificar tus datos."
+msgstr "Zure <a href=\"/perfil\">profiletik</a> zure datuak kontsultatu eta alda ditzakezu."
+
+#: app/templates/ayuda.html:43
+msgid "Pulsa <strong>Nueva situación</strong> desde la lista o desde la cabecera. Indica al menos materia, curso, número de sesiones y duración. Los demás campos son opcionales y se utilizan para guiar a la IA."
+msgstr "Sakatu <strong>Egoera berria</strong> zerrendatik edo goiburutik. Adierazi gutxienez ikasgaia, maila, saio kopurua eta iraupena. Gainerako eremuak aukerakoak dira eta AA gidatzeko erabiltzen dira."
+
+#: app/templates/ayuda.html:46
+msgid "Curso y materia se acotan entre sí"
+msgstr "Maila eta ikasgaia elkarri mugatzen zaizkio"
+
+#: app/templates/ayuda.html:48
+msgid "Al elegir un curso, el desplegable de materia solo ofrece las que se imparten en él, y al revés. No es una limitación de la aplicación sino del currículo: Latín, por ejemplo, solo existe en 4.º. Si eliges una combinación sin currículo, la situación se generaría sin criterios a los que anclarse."
+msgstr "Maila bat aukeratzean, ikasgaien zerrendak mailan ematen direnak baino ez ditu eskaintzen, eta alderantziz. Ez da aplikazioaren muga bat, curriculumarena baizik: Latina, adibidez, 4. mailan baino ez dago. Curriculumik gabeko konbinazio bat aukeratzen baduzu, egoera irizpiderik gabe sortuko litzateke."
+
+#: app/templates/ayuda.html:51 app/templates/situaciones/nueva.html:17
+msgid "¿Aún no sabes sobre qué trabajar?"
+msgstr "Oraindik ez dakizu zeri buruz lan egin?"
+
+#: app/templates/ayuda.html:53
+msgid "El botón <strong>Proponer temáticas</strong> pide a la IA varias ideas de situación para la materia y el curso que hayas elegido. Puedes añadir una nota de contexto —el barrio del centro, un proyecto en marcha, una efeméride— para que las propuestas se ajusten. Al elegir una, sus datos se vuelcan al formulario y puedes seguir editándolos: no se envía nada todavía."
+msgstr "<strong>Gaiak proposatu</strong> botoiak IAri egoera-ideia batzuk eskatzen dizkio, aukeratu duzun ikasgai eta mailarako. Testuinguru-ohar bat gehi dezakezu —ikastetxearen auzoa, abian den proiektu bat, urteurren bat— proposamenak egokitzeko. Bat aukeratzean, haren datuak formularioan sartzen dira eta editatzen jarrai dezakezu: oraindik ez da ezer bidaltzen."
+
+#: app/templates/ayuda.html:56
+msgid "Idioma de la situación"
+msgstr "Egoeraren hizkuntza"
+
+#: app/templates/ayuda.html:58
+msgid "El campo <strong>Idioma</strong> determina en qué lengua se redacta el documento, y es independiente del idioma en el que veas la aplicación. Puedes tener la interfaz en castellano y crear la situación directamente en catalán, gallego, euskera, inglés, francés o árabe."
+msgstr "<strong>Hizkuntza</strong> eremuak zehazten du dokumentua zein hizkuntzatan idazten den, eta aplikazioa ikusten duzun hizkuntzatik independentea da. Interfazea gaztelaniaz izan dezakezu eta egoera zuzenean katalanez, galegoz, euskaraz, ingelesez, frantsesez edo arabieraz sortu."
+
+#: app/templates/ayuda.html:65
+msgid "Las competencias específicas, los criterios de evaluación y los saberes básicos no los inventa la IA: se extraen del texto oficial publicado en el BOE y se cargan en la aplicación. La fuente es la <strong>Orden EFP/754/2022</strong>, que desarrolla el Real Decreto 217/2022 de enseñanzas mínimas de la ESO."
+msgstr "Konpetentzia espezifikoak, ebaluazio-irizpideak eta oinarrizko jakintzak ez ditu IAk asmatzen: BOEn argitaratutako testu ofizialetik ateratzen dira eta aplikazioan kargatzen. Iturria <strong>EFP/754/2022 Agindua</strong> da, DBHko gutxieneko irakaskuntzei buruzko 217/2022 Errege Dekretua garatzen duena."
+
+#: app/templates/ayuda.html:68
+msgid "Están disponibles las materias de Educación Secundaria Obligatoria. Bachillerato y Formación Profesional todavía no."
+msgstr "Derrigorrezko Bigarren Hezkuntzako ikasgaiak eskuragarri daude. Batxilergoa eta Lanbide Heziketa oraindik ez."
+
+#: app/templates/ayuda.html:71
+msgid "Matemáticas A y Matemáticas B"
+msgstr "Matematika A eta Matematika B"
+
+#: app/templates/ayuda.html:73
+msgid "En 4.º, Matemáticas se desdobla en dos opciones. No son una rama de ciencias y otra de letras, ni una continuación de la otra: la norma las distingue por enfoque."
+msgstr "4. mailan, Matematika bi aukeratan banatzen da. Ez dira zientzia-adar bat eta letra-adar bat, ezta bata bestearen jarraipena ere: arauak ikuspegiaren arabera bereizten ditu."
+
+#: app/templates/ayuda.html:76
+msgid "<strong>Matemáticas A</strong> se desarrolla sobre todo mediante la resolución de problemas, la investigación y el análisis matemático de situaciones de la vida cotidiana."
+msgstr "<strong>Matematika A</strong> batez ere problemak ebaztearen, ikertzearen eta eguneroko bizitzako egoeren analisi matematikoaren bidez garatzen da."
+
+#: app/templates/ayuda.html:77
+msgid "<strong>Matemáticas B</strong> profundiza además en los procedimientos algebraicos, geométricos, analíticos y estadísticos, en contextos matemáticos, científicos y sociales."
+msgstr "<strong>Matematika B</strong>-k, gainera, prozedura aljebraiko, geometriko, analitiko eta estatistikoetan sakontzen du, testuinguru matematiko, zientifiko eta sozialetan."
+
+#: app/templates/ayuda.html:80
+msgid "El real decreto no vincula ninguna de las dos a una modalidad concreta de Bachillerato. En 1.º a 3.º la materia es simplemente <strong>Matemáticas</strong>, sin letra."
+msgstr "Errege dekretuak ez du bietako bat ere Batxilergoko modalitate zehatz batekin lotzen. 1.etik 3.era ikasgaia <strong>Matematika</strong> besterik ez da, letrarik gabe."
+
+#: app/templates/ayuda.html:83
+msgid "Tecnología y Tecnología y Digitalización"
+msgstr "Teknologia eta Teknologia eta Digitalizazioa"
+
+#: app/templates/ayuda.html:85
+msgid "Son dos materias distintas, no dos nombres de la misma. <strong>Tecnología y Digitalización</strong> es la de 2.º y 3.º; <strong>Tecnología</strong> es una materia de opción de 4.º. Tienen competencias específicas diferentes, así que conviene no confundirlas al crear una situación."
+msgstr "Bi ikasgai desberdin dira, ez ikasgai beraren bi izen. <strong>Teknologia eta Digitalizazioa</strong> 2. eta 3. mailakoa da; <strong>Teknologia</strong> 4. mailako aukerako ikasgaia. Konpetentzia espezifiko desberdinak dituzte, beraz komeni da ez nahastea egoera bat sortzean."
+
+#: app/templates/ayuda.html:88
+msgid "Materias que no encontrarás"
+msgstr "Aurkituko ez dituzun ikasgaiak"
+
+#: app/templates/ayuda.html:90
+msgid "<strong>Segunda Lengua Extranjera</strong> no aparece en el desplegable. No es un olvido: el BOE no le publica currículo propio, sino que remite al de la primera lengua extranjera. Mientras AWEBO no sepa reutilizarlo, ofrecerla daría una materia sin ningún criterio que seleccionar."
+msgstr "<strong>Bigarren Atzerriko Hizkuntza</strong> ez da zerrendan agertzen. Ez da ahanztura: BOEk ez dio curriculum propiorik argitaratzen, lehen atzerriko hizkuntzarenera bidaltzen baitu. AWEBOk hura berrerabiltzen jakin arte, eskaintzeak irizpiderik gabeko ikasgai bat emango luke."
+
+#: app/templates/ayuda.html:97
+msgid "Al crear una SA puedes marcar <strong>Generar con IA</strong> para que se completen automáticamente las seis secciones LOMLOE: justificación, objetivos, currículo, secuencia didáctica, evaluación y atención a la diversidad. La generación tarda entre 30 segundos y 2 minutos según el proveedor."
+msgstr "IE bat sortzean <strong>Sortu AArekin</strong> marka dezakezu LOMLOEren sei atalak automatikoki bete daitezen: justifikazioa, helburuak, curriculuma, sekuentzia didaktikoa, ebaluazioa eta aniztasunaren arreta. Sorkuntzak 30 segundo eta 2 minutu artean behar ditu hornitzailearen arabera."
+
+#: app/templates/ayuda.html:100
+msgid "Puedes <strong>regenerar una sola sección</strong> desde el detalle si una parte no te convence; las demás se conservan."
+msgstr "<strong>Atal bakarra birsortu</strong> dezakezu xehetasunetik zati batek konbentzitzen ez bazaitu; gainerakoak mantendu egiten dira."
+
+#: app/templates/ayuda.html:103
+msgid "Elegir quién redacta"
+msgstr "Nork idazten duen aukeratu"
+
+#: app/templates/ayuda.html:105
+msgid "En <a href=\"/perfil\">Mi perfil</a> puedes escoger el <strong>proveedor</strong> y el <strong>modelo</strong> de IA que se usarán en tus situaciones. Si no eliges nada se usa el del sistema. Los modelos disponibles cambian según el proveedor, y la lista se actualiza sola al cambiarlo."
+msgstr "<a href=\"/perfil\">Nire profila</a> atalean zure egoeretan erabiliko diren IAren <strong>hornitzailea</strong> eta <strong>eredua</strong> aukera ditzakezu. Ezer aukeratzen ez baduzu, sistemarena erabiltzen da. Eskuragarri dauden ereduak hornitzailearen arabera aldatzen dira, eta zerrenda bakarrik eguneratzen da hura aldatzean."
+
+#: app/templates/ayuda.html:112
+msgid "Cada sección del detalle tiene sus propias operaciones. No todas las secciones admiten todas: las que no tienen sentido para una sección concreta no se ofrecen."
+msgstr "Xehetasunaren atal bakoitzak bere eragiketak ditu. Atal guztiek ez dituzte guztiak onartzen: atal zehatz baterako zentzurik ez dutenak ez dira eskaintzen."
+
+#: app/templates/ayuda.html:115
+msgid "<strong>Resumir</strong> — acorta el texto conservando lo esencial."
+msgstr "<strong>Laburtu</strong> — testua laburtzen du funtsezkoa gordez."
+
+#: app/templates/ayuda.html:116
+msgid "<strong>Desarrollar</strong> — amplía la sección con más detalle."
+msgstr "<strong>Garatu</strong> — atala xehetasun gehiagorekin zabaltzen du."
+
+#: app/templates/ayuda.html:117
+msgid "<strong>Traducir</strong> — pasa la sección al idioma de la situación. El destino no se elige por operación, precisamente para que un documento no acabe con unas secciones en un idioma y otras en otro."
+msgstr "<strong>Itzuli</strong> — atala egoeraren hizkuntzara eramaten du. Helburua ez da eragiketaz eragiketa aukeratzen, hain zuzen ere dokumentu batek atal batzuk hizkuntza batean eta beste batzuk bestean izan ez ditzan."
+
+#: app/templates/ayuda.html:118
+msgid "<strong>Proponer alternativa</strong> — redacta una segunda versión sin borrar la que tenías."
+msgstr "<strong>Alternatiba proposatu</strong> — bigarren bertsio bat idazten du zeneukana ezabatu gabe."
+
+#: app/templates/ayuda.html:121
+msgid "Con la alternativa verás las dos redacciones enfrentadas y tendrás que quedarte con una para continuar. La que descartes no se pierde: queda en el historial de versiones."
+msgstr "Alternatibarekin bi idazketak aurrez aurre ikusiko dituzu eta batekin geratu beharko duzu jarraitzeko. Baztertzen duzuna ez da galtzen: bertsioen historian geratzen da."
+
+#: app/templates/ayuda.html:124
+msgid "Cualquiera de estas operaciones se puede revertir con <strong>Deshacer</strong>, que recupera el texto inmediatamente anterior."
+msgstr "Eragiketa horietako edozein <strong>Desegin</strong> aukerarekin lehenera daiteke, aurreko testua berreskuratzen baitu."
+
+#: app/templates/ayuda.html:131
+msgid "Los cambios al título y los campos básicos crean una <strong>nueva versión</strong> automáticamente. Desde el detalle puedes consultar el historial completo y volver a un estado anterior."
+msgstr "Izenburuko eta oinarrizko eremuetako aldaketek <strong>bertsio berri bat</strong> sortzen dute automatikoki. Xehetasunetik historia osoa kontsulta dezakezu eta aurreko egoera batera itzuli."
+
+#: app/templates/ayuda.html:138
+msgid "A partir de una SA generada, puedes crear una <strong>adaptación</strong> para alumnado con necesidades específicas:"
+msgstr "Sortutako IE batetik abiatuta, <strong>egokitzapen</strong> bat sor dezakezu behar espezifikoak dituen ikasleentzat:"
+
+#: app/templates/ayuda.html:141
+msgid "<strong>ACNS</strong> — adaptación curricular no significativa."
+msgstr "<strong>ACNS</strong> — curriculum-egokitzapen ez esanguratsua."
+
+#: app/templates/ayuda.html:142
+msgid "<strong>ACS</strong> — adaptación curricular significativa."
+msgstr "<strong>ACS</strong> — curriculum-egokitzapen esanguratsua."
+
+#: app/templates/ayuda.html:145
+msgid "La SA adaptada se genera completa y conserva un enlace a la SA de origen."
+msgstr "Egokitutako IEa osorik sortzen da eta jatorrizko IErako esteka gordetzen du."
+
+#: app/templates/ayuda.html:152
+msgid "Cada sección del detalle tiene un botón <strong>Escuchar</strong> que la lee en voz alta. Se lee sección a sección, y no el documento entero, para que puedas repasar solo la parte que te interesa."
+msgstr "Xehetasunaren atal bakoitzak <strong>Entzun</strong> botoi bat du, ozen irakurtzen duena. Atalez atal irakurtzen da, ez dokumentu osoa, interesatzen zaizun zatia baino ez berrikusteko."
+
+#: app/templates/ayuda.html:155
+msgid "La voz la pone tu propio ordenador, no la aplicación. Por eso el botón puede no aparecer: si tu sistema no tiene instalada ninguna voz para el idioma de la situación, se oculta y verás un aviso explicándolo. Instalar voces adicionales se hace desde la configuración del sistema operativo, no desde AWEBO."
+msgstr "Ahotsa zure ordenagailuak jartzen du, ez aplikazioak. Horregatik botoia agertu gabe gera daiteke: zure sistemak egoeraren hizkuntzarako ahotsik instalatuta ez badu, ezkutatu egiten da eta hori azaltzen duen ohar bat ikusiko duzu. Ahots gehiago instalatzea sistema eragilearen ezarpenetatik egiten da, ez AWEBOtik."
+
+#: app/templates/ayuda.html:162
+msgid "Desde el detalle de cualquier SA puedes descargar el documento en <strong>PDF</strong> (paginación cuidada, listo para imprimir) o en <strong>DOCX</strong> (editable en Word/LibreOffice)."
+msgstr "Edozein IEren xehetasunetik dokumentua <strong>PDF</strong> formatuan (orrialdekatze zainduarekin, inprimatzeko prest) edo <strong>DOCX</strong> formatuan (Word/LibreOfficen editagarria) deskarga dezakezu."
+
+#: app/templates/ayuda.html:165
+msgid "Los rótulos del documento (los títulos de sección, los encabezados de tabla) salen en el idioma en el que tengas la interfaz. El contenido, en el idioma de la situación."
+msgstr "Dokumentuaren etiketak (atalen izenburuak, taulen goiburuak) interfazea duzun hizkuntzan ateratzen dira. Edukia, egoeraren hizkuntzan."
+
+#: app/templates/ayuda.html:171 app/templates/base.html:65
+msgid "Tema visual"
+msgstr "Ikusizko gaia"
+
+#: app/templates/ayuda.html:173
+msgid "En la cabecera puedes elegir entre <strong>Claro</strong>, <strong>Oscuro</strong> y <strong>Automático</strong>. Automático sigue la preferencia de tu sistema operativo y cambia solo si esta cambia. La elección se recuerda en el navegador."
+msgstr "Goiburuan <strong>Argia</strong>, <strong>Iluna</strong> eta <strong>Automatikoa</strong> aukeratu ditzakezu. Automatikoak zure sistema eragilearen hobespena jarraitzen du eta hura aldatzen bada baino ez da aldatzen. Aukera nabigatzailean gordetzen da."
+
+#: app/templates/ayuda.html:175
+msgid "Idioma de la interfaz"
+msgstr "Interfazearen hizkuntza"
+
+#: app/templates/ayuda.html:177
+msgid "El selector de idioma de la cabecera cambia la lengua de los menús, los botones y esta misma ayuda, y te deja en la página en la que estabas. Si has iniciado sesión, la elección se guarda en tu perfil."
+msgstr "Goiburuko hizkuntza-hautatzaileak menuen, botoien eta laguntza honen beraren hizkuntza aldatzen du, eta zeunden orrian uzten zaitu. Saioa hasita baduzu, aukera zure profilean gordetzen da."
+
+#: app/templates/ayuda.html:180
+msgid "No confundas este idioma con el de la situación: son independientes. Cambiar la interfaz a gallego no traduce las situaciones que ya tengas escritas en castellano."
+msgstr "Ez nahastu hizkuntza hau egoerarenarekin: independenteak dira. Interfazea galegora aldatzeak ez ditu gaztelaniaz idatzita dituzun egoerak itzultzen."
+
+#: app/templates/ayuda.html:187
+msgid "En <a href=\"/perfil\">Mi perfil</a> puedes actualizar nombre, centro educativo, contraseña, idioma y proveedor de IA."
+msgstr "<a href=\"/perfil\">Nire profila</a> atalean izena, ikastetxea, pasahitza, hizkuntza eta IA hornitzailea egunera ditzakezu."
+
+#: app/templates/ayuda.html:189
+msgid "Si olvidas la contraseña"
+msgstr "Pasahitza ahazten baduzu"
+
+#: app/templates/ayuda.html:191
+msgid "Entra en <a href=\"/restablecer-contrasena\">¿Olvidaste tu contraseña?</a>, indica tu correo y escribe una contraseña nueva. El cambio es inmediato: en esta versión no se envía ningún correo de confirmación, porque AWEBO todavía no tiene servidor de correo. La verificación por correo está prevista antes de cualquier despliegue real."
+msgstr "Sartu <a href=\"/restablecer-contrasena\">Pasahitza ahaztu duzu?</a> atalean, adierazi zure helbide elektronikoa eta idatzi pasahitz berri bat. Aldaketa berehalakoa da: bertsio honetan ez da baieztapen-mezurik bidaltzen, AWEBOk oraindik ez baitu posta-zerbitzaririk. Posta bidezko egiaztapena benetako edozein hedapenen aurretik dago aurreikusita."
+
+#: app/templates/ayuda.html:193
+msgid "Si tu cuenta se elimina"
+msgstr "Zure kontua ezabatzen bada"
+
+#: app/templates/ayuda.html:195
+msgid "Las cuentas las elimina un administrador; no hay opción de darse de baja desde el perfil. Al eliminarla, ni la cuenta ni sus situaciones se borran de inmediato: quedan retenidas <strong>90 días</strong>. Durante ese plazo, si vuelves a registrarte con el mismo correo puedes solicitar recuperar tu contenido, y un administrador tendrá que aprobarlo. Pasado el plazo, el borrado es definitivo."
+msgstr "Kontuak administratzaile batek ezabatzen ditu; ez dago profiletik baja emateko aukerarik. Ezabatzean, ez kontua ez haren egoerak ez dira berehala ezabatzen: <strong>90 egunez</strong> gordetzen dira. Epe horretan, helbide elektroniko berarekin berriro izena ematen baduzu zure edukia berreskuratzeko eska dezakezu, eta administratzaile batek onartu beharko du. Epea igarota, ezabaketa behin betikoa da."
+
+#: app/templates/ayuda.html:202
+msgid "La generación de IA falla o tarda mucho"
+msgstr "AAren sorkuntzak huts egiten du edo gehiegi luzatzen da"
+
+#: app/templates/ayuda.html:204
+msgid "Espera 1–2 minutos. Si tras ese tiempo la SA queda en estado <em>error</em>, vuelve al detalle y pulsa <strong>Reintentar</strong> o <strong>Regenerar sección</strong>."
+msgstr "Itxaron 1–2 minutu. Denbora horren ondoren IEa <em>errore</em> egoeran geratzen bada, itzuli xehetasunetara eta sakatu <strong>Saiatu berriro</strong> edo <strong>Birsortu atala</strong>."
+
+#: app/templates/ayuda.html:208
+msgid "No encuentro una materia en el desplegable"
+msgstr "Ez dut ikasgai bat zerrendan aurkitzen"
+
+#: app/templates/ayuda.html:210
+msgid "Comprueba primero el curso: cada materia solo aparece en los cursos en los que se imparte. Si buscas Segunda Lengua Extranjera, no está disponible todavía; y si buscas Tecnología en 2.º o 3.º, ahí se llama Tecnología y Digitalización."
+msgstr "Egiaztatu lehenik maila: ikasgai bakoitza ematen den mailetan baino ez da agertzen. Bigarren Atzerriko Hizkuntza bilatzen baduzu, oraindik ez dago eskuragarri; eta Teknologia 2. edo 3. mailan bilatzen baduzu, han Teknologia eta Digitalizazioa deitzen da."
+
+#: app/templates/ayuda.html:214
+msgid "Una situación antigua avisa de que su combinación no es válida"
+msgstr "Egoera zahar batek bere konbinazioa baliozkoa ez dela ohartarazten du"
+
+#: app/templates/ayuda.html:216
+msgid "Significa que la materia y el curso que tiene guardados no se corresponden con ningún currículo cargado. Puede pasar con situaciones creadas antes de una ampliación del catálogo. Corrige los dos campos desde el detalle y podrás volver a generarla; el contenido que ya tuviera no se pierde."
+msgstr "Gordeta dituen ikasgaia eta maila ez datozela bat kargatutako inongo curriculumekin esan nahi du. Katalogoa zabaldu aurretik sortutako egoerekin gerta daiteke. Zuzendu bi eremuak xehetasunetik eta berriro sortu ahal izango duzu; zeukan edukia ez da galtzen."
+
+#: app/templates/ayuda.html:220
+msgid "No veo el botón de escuchar"
+msgstr "Ez dut entzuteko botoia ikusten"
+
+#: app/templates/ayuda.html:222
+msgid "Tu sistema no tiene ninguna voz instalada para el idioma de esa situación. Puedes añadir voces desde la configuración de tu sistema operativo."
+msgstr "Zure sistemak ez du ahotsik instalatuta egoera horren hizkuntzarako. Ahotsak gehitu ditzakezu zure sistema eragilearen ezarpenetatik."
+
+#: app/templates/ayuda.html:226
+msgid "El PDF tiene saltos de página feos"
+msgstr "PDFak orrialde-jauzi itsusiak ditu"
+
+#: app/templates/ayuda.html:228
+msgid "Las plantillas de exportación intentan evitar viudas y huérfanos, pero si te ocurre, edita la sección concreta para reducir longitud y vuelve a exportar."
+msgstr "Esportazio-txantiloiek alarguna eta umezurtza lerroak saihesten saiatzen dira, baina gertatzen bazaizu, editatu atal zehatza luzera murrizteko eta esportatu berriro."
+
+#: app/templates/ayuda.html:232
+msgid "No recuerdo mi contraseña"
+msgstr "Ez dut nire pasahitza gogoratzen"
+
+#: app/templates/ayuda.html:234
+msgid "Usa <a href=\"/restablecer-contrasena\">¿Olvidaste tu contraseña?</a> para establecer una nueva. No tendrás que esperar ningún correo."
+msgstr "Erabili <a href=\"/restablecer-contrasena\">Pasahitza ahaztu duzu?</a> berri bat ezartzeko. Ez duzu inolako mezurik itxaron beharko."
+
+#: app/templates/base.html:9
+msgid "Generación asistida de Situaciones de Aprendizaje LOMLOE para docentes."
+msgstr "LOMLOE Ikaskuntza Egoeren sorkuntza lagundua irakasleentzat."
+
+#: app/templates/base.html:11
+msgid "Situaciones de Aprendizaje"
+msgstr "Ikaskuntza Egoerak"
+
+#: app/templates/base.html:21
+msgid "Pasar al contenido principal"
+msgstr "Eduki nagusira joan"
+
+#: app/templates/base.html:29 app/templates/base.html:48
+#: app/templates/base.html:131 app/templates/mapa_web.html:17
+msgid "Inicio"
+msgstr "Hasiera"
+
+#: app/templates/base.html:40 app/templates/base.html:195
+msgid "Abrir menú de navegación"
+msgstr "Nabigazio-menua ireki"
+
+#: app/templates/base.html:47
+msgid "Principal"
+msgstr "Nagusia"
+
+#: app/templates/base.html:49 app/templates/base.html:132
+msgid "Mis situaciones"
+msgstr "Nire egoerak"
+
+#: app/templates/base.html:50 app/templates/base.html:133
+#: app/templates/index.html:52 app/templates/mapa_web.html:31
+#: app/templates/perfil.html:6
+msgid "Mi perfil"
+msgstr "Nire profila"
+
+#: app/templates/base.html:51 app/templates/base.html:139
+msgid "Ayuda"
+msgstr "Laguntza"
+
+#: app/templates/admin/panel.html:2 app/templates/base.html:54
+msgid "Administración"
+msgstr "Administrazioa"
+
+#: app/templates/base.html:55 app/templates/errores/error.html:38
+#: app/templates/index.html:20 app/templates/login.html:6
+#: app/templates/mapa_web.html:18
+msgid "Iniciar sesión"
+msgstr "Saioa hasi"
+
+#: app/templates/base.html:56
+msgid "Registrarse"
+msgstr "Erregistratu"
+
+#: app/templates/base.html:59
+msgid "Cerrar sesión"
+msgstr "Saioa itxi"
+
+#: app/templates/base.html:67
+msgid "Claro"
+msgstr "Argia"
+
+#: app/templates/base.html:68
+msgid "Oscuro"
+msgstr "Iluna"
+
+#: app/templates/base.html:69
+msgid "Automático"
+msgstr "Automatikoa"
+
+#: app/templates/base.html:97 app/templates/situaciones/detalle.html:53
+#: app/templates/situaciones/nueva.html:92
+msgid "Idioma"
+msgstr "Hizkuntza"
+
+#: app/templates/base.html:103
+msgid "Cambiar"
+msgstr "Aldatu"
+
+#: app/templates/base.html:117
+msgid "Proyecto"
+msgstr "Proiektua"
+
+#: app/templates/base.html:119
+msgid "Aplicación Web para Docentes"
+msgstr "Irakasleentzako Web Aplikazioa"
+
+#: app/templates/base.html:122
+msgid "Generación asistida de Situaciones de Aprendizaje conforme al Real Decreto 217/2022 (LOMLOE)."
+msgstr "217/2022 Errege Dekretuaren araberako (LOMLOE) Ikaskuntza Egoeren sorkuntza lagundua."
+
+#: app/templates/base.html:125
+msgid "¿Te ha gustado? <a href=\"https://paypal.me/srcantero\" target=\"_blank\" rel=\"noopener\">Ayúdame aquí</a>"
+msgstr "Gustatu zaizu? <a href=\"https://paypal.me/srcantero\" target=\"_blank\" rel=\"noopener\">Lagundu iezadazu hemen</a>"
+
+#: app/templates/base.html:129
+msgid "Navegación"
+msgstr "Nabigazioa"
+
+#: app/templates/base.html:137
+msgid "Información"
+msgstr "Informazioa"
+
+#: app/templates/base.html:140 app/templates/mapa_web.html:7
+msgid "Mapa web"
+msgstr "Webgunearen mapa"
+
+#: app/templates/base.html:141
+msgid "Accesibilidad"
+msgstr "Irisgarritasuna"
+
+#: app/templates/base.html:147
+msgid "Autor"
+msgstr "Egilea"
+
+#: app/templates/base.html:194
+msgid "Cerrar menú de navegación"
+msgstr "Nabigazio-menua itxi"
+
+#: app/templates/index.html:6
+msgid "LOMLOE · Real Decreto 217/2022"
+msgstr "LOMLOE · 217/2022 Errege Dekretua"
+
+#: app/templates/index.html:8
+msgid "Situaciones de Aprendizaje, generadas con IA"
+msgstr "Ikaskuntza Egoerak, AArekin sortuak"
+
+#: app/templates/index.html:10
+msgid "Plataforma para docentes que automatiza la creación de Situaciones de Aprendizaje conforme al currículo LOMLOE: justificación, objetivos, competencias, secuencia didáctica, evaluación y atención a la diversidad."
+msgstr "Irakasleentzako plataforma, LOMLOE curriculumaren araberako Ikaskuntza Egoeren sorkuntza automatizatzen duena: justifikazioa, helburuak, konpetentziak, sekuentzia didaktikoa, ebaluazioa eta aniztasunaren arreta."
+
+#: app/templates/index.html:16
+msgid "Empieza ahora"
+msgstr "Hasi orain"
+
+#: app/templates/index.html:17
+msgid "Crea una cuenta o accede con la tuya para gestionar tus situaciones de aprendizaje."
+msgstr "Sortu kontu bat edo sartu zurearekin zure ikaskuntza egoerak kudeatzeko."
+
+#: app/templates/admin/panel.html:75 app/templates/index.html:19
+#: app/templates/register.html:6
+msgid "Crear cuenta"
+msgstr "Kontua sortu"
+
+#: app/templates/index.html:25
+msgid "Panel del docente"
+msgstr "Irakaslearen panela"
+
+#: app/templates/index.html:27
+msgid "Situaciones recientes"
+msgstr "Azken egoerak"
+
+#: app/templates/admin/panel.html:19 app/templates/admin/panel.html:98
+#: app/templates/admin/panel.html:155 app/templates/index.html:28
+#: app/templates/perfil.html:9 app/templates/situaciones/detalle.html:9
+#: app/templates/situaciones/listar.html:9
+#: app/templates/situaciones/listar.html:77
+msgid "Cargando…"
+msgstr "Kargatzen…"
+
+#: app/templates/index.html:31
+msgid "Aún no has creado ninguna situación."
+msgstr "Oraindik ez duzu egoerarik sortu."
+
+#: app/templates/index.html:34
+msgid "Ver todas →"
+msgstr "Ikusi guztiak →"
+
+#: app/templates/index.html:39
+msgid "Tu espacio de trabajo"
+msgstr "Zure lan-eremua"
+
+#: app/templates/index.html:40
+msgid "Cargando perfil…"
+msgstr "Profila kargatzen…"
+
+#: app/templates/index.html:44 app/templates/situaciones/nueva.html:6
+msgid "Nueva situación de aprendizaje"
+msgstr "Ikaskuntza egoera berria"
+
+#: app/templates/index.html:48
+msgid "Ver mis situaciones"
+msgstr "Ikusi nire egoerak"
+
+#: app/templates/index.html:58
+msgid "Tus estadísticas"
+msgstr "Zure estatistikak"
+
+#: app/templates/index.html:61
+msgid "Total"
+msgstr "Guztira"
+
+#: app/templates/index.html:65
+msgid "En borrador"
+msgstr "Zirriborroan"
+
+#: app/templates/index.html:69
+msgid "Generadas"
+msgstr "Sortuak"
+
+#: app/templates/index.html:73
+msgid "Finalizadas"
+msgstr "Amaituak"
+
+#: app/templates/index.html:81
+msgid "¿Cómo funciona?"
+msgstr "Nola funtzionatzen du?"
+
+#: app/templates/index.html:85
+msgid "Describe tu contexto"
+msgstr "Deskribatu zure testuingurua"
+
+#: app/templates/index.html:86
+msgid "Indica materia, curso, número de sesiones, perfil del alumnado y materiales disponibles."
+msgstr "Adierazi ikasgaia, maila, saio kopurua, ikasleen profila eta eskuragarri dauden materialak."
+
+#: app/templates/index.html:90
+msgid "Genera con IA"
+msgstr "Sortu AArekin"
+
+#: app/templates/index.html:91
+msgid "El sistema redacta las seis secciones LOMLOE en menos de dos minutos, citando criterios y saberes del currículo oficial."
+msgstr "Sistemak LOMLOEren sei atalak bi minutu baino gutxiagotan idazten ditu, curriculum ofizialeko irizpideak eta jakintzak aipatuz."
+
+#: app/templates/index.html:95
+msgid "Edita y exporta"
+msgstr "Editatu eta esportatu"
+
+#: app/templates/index.html:96
+msgid "Refina cualquier sección, crea adaptaciones (ACNS / ACS) y descarga la SA en PDF o DOCX lista para entregar."
+msgstr "Findu edozein atal, sortu egokitzapenak (ACNS / ACS) eta deskargatu IEa PDF edo DOCX formatuan entregatzeko prest."
+
+#: app/templates/index.html:102
+msgid "¿Necesitas ayuda?"
+msgstr "Laguntza behar duzu?"
+
+#: app/templates/index.html:104
+msgid "Consulta el <a href=\"/ayuda\">centro de ayuda</a> para guías rápidas o explora el <a href=\"/mapa-web\">mapa web</a> para ver todas las secciones disponibles."
+msgstr "Kontsultatu <a href=\"/ayuda\">laguntza gunea</a> gida azkarretarako edo arakatu <a href=\"/mapa-web\">web-mapa</a> eskuragarri dauden atal guztiak ikusteko."
+
+#: app/templates/index.html:124
+msgid "Tienes 1 situación en tu cuenta."
+msgstr "Egoera 1 duzu zure kontuan."
+
+#: app/templates/index.html:125
+#, python-brace-format
+msgid "Tienes {n} situaciones en tu cuenta."
+msgstr "{n} egoera dituzu zure kontuan."
+
+#: app/templates/index.html:126
+msgid "Aún no has creado situaciones. ¡Empieza por una nueva!"
+msgstr "Oraindik ez duzu egoerarik sortu. Hasi berri batekin!"
+
+#: app/templates/index.html:127
+msgid "Tu situación más reciente."
+msgstr "Zure azken egoera."
+
+#: app/templates/index.html:128
+#, python-brace-format
+msgid "Tus {n} situaciones más recientes."
+msgstr "Zure azken {n} egoerak."
+
+#: app/templates/index.html:144
+msgid "Situaciones recientes de toda la plataforma"
+msgstr "Plataforma osoko azken egoerak"
+
+#: app/templates/index.html:145
+msgid "Estadísticas de la plataforma"
+msgstr "Plataformaren estatistikak"
+
+#: app/templates/admin/panel.html:120 app/templates/admin/panel.html:308
+#: app/templates/index.html:164 app/templates/situaciones/detalle.html:34
+#: app/templates/situaciones/detalle.html:246
+#: app/templates/situaciones/listar.html:34
+#: app/templates/situaciones/listar.html:89
+msgid "Borrador"
+msgstr "Zirriborroa"
+
+#: app/templates/admin/panel.html:121 app/templates/admin/panel.html:309
+#: app/templates/index.html:165 app/templates/situaciones/detalle.html:247
+#: app/templates/situaciones/listar.html:35
+#: app/templates/situaciones/listar.html:90
+msgid "Generando…"
+msgstr "Sortzen…"
+
+#: app/templates/admin/panel.html:122 app/templates/admin/panel.html:310
+#: app/templates/index.html:166 app/templates/situaciones/detalle.html:35
+#: app/templates/situaciones/detalle.html:248
+#: app/templates/situaciones/listar.html:36
+#: app/templates/situaciones/listar.html:91
+msgid "Generada"
+msgstr "Sortua"
+
+#: app/templates/errores/error.html:10 app/templates/index.html:167
+#: app/templates/situaciones/listar.html:92
+msgid "Error"
+msgstr "Errorea"
+
+#: app/templates/admin/panel.html:124 app/templates/admin/panel.html:312
+#: app/templates/index.html:168 app/templates/situaciones/detalle.html:36
+#: app/templates/situaciones/detalle.html:249
+#: app/templates/situaciones/listar.html:38
+#: app/templates/situaciones/listar.html:93
+msgid "Finalizada"
+msgstr "Amaitua"
+
+#: app/templates/login.html:7
+msgid "Accede a tu cuenta de docente para gestionar tus situaciones de aprendizaje."
+msgstr "Sartu zure irakasle-kontuan zure ikaskuntza egoerak kudeatzeko."
+
+#: app/templates/login.html:10 app/templates/register.html:12
+#: app/templates/restablecer_contrasena.html:12
+#: app/templates/situaciones/nueva.html:45
+msgid "Los campos marcados con"
+msgstr "Honekin markatutako eremuak"
+
+#: app/templates/login.html:11 app/templates/register.html:13
+#: app/templates/restablecer_contrasena.html:13
+#: app/templates/situaciones/nueva.html:46
+msgid "son obligatorios."
+msgstr "nahitaezkoak dira."
+
+#: app/templates/admin/panel.html:41 app/templates/login.html:15
+#: app/templates/register.html:27 app/templates/restablecer_contrasena.html:17
+msgid "Correo electrónico"
+msgstr "Helbide elektronikoa"
+
+#: app/templates/login.html:17 app/templates/login.html:26
+#: app/templates/perfil.html:96 app/templates/perfil.html:104
+#: app/templates/perfil.html:115 app/templates/register.html:19
+#: app/templates/register.html:29 app/templates/register.html:38
+#: app/templates/restablecer_contrasena.html:19
+#: app/templates/restablecer_contrasena.html:28
+#: app/templates/restablecer_contrasena.html:40
+#: app/templates/situaciones/nueva.html:52
+#: app/templates/situaciones/nueva.html:63
+#: app/templates/situaciones/nueva.html:71
+msgid "(obligatorio)"
+msgstr "(nahitaezkoa)"
+
+#: app/templates/admin/panel.html:51 app/templates/login.html:24
+#: app/templates/register.html:36
+msgid "Contraseña"
+msgstr "Pasahitza"
+
+#: app/templates/login.html:32
+msgid "Entrar"
+msgstr "Sartu"
+
+#: app/templates/login.html:33
+msgid "¿No tienes cuenta? Regístrate"
+msgstr "Ez duzu konturik? Erregistratu"
+
+#: app/templates/login.html:36
+msgid "¿Olvidaste tu contraseña?"
+msgstr "Pasahitza ahaztu duzu?"
+
+#: app/templates/mapa_web.html:9
+msgid "Índice navegable de todas las páginas y secciones públicas de la aplicación."
+msgstr "Aplikazioaren orri eta atal publiko guztien aurkibide nabigagarria."
+
+#: app/templates/mapa_web.html:14
+msgid "Mapa del sitio"
+msgstr "Gunearen mapa"
+
+#: app/templates/mapa_web.html:15
+msgid "Acceso público"
+msgstr "Sarbide publikoa"
+
+#: app/templates/mapa_web.html:19
+msgid "Crear cuenta de docente"
+msgstr "Irakasle-kontua sortu"
+
+#: app/templates/mapa_web.html:20 app/templates/restablecer_contrasena.html:6
+#: app/templates/restablecer_contrasena.html:49
+msgid "Restablecer contraseña"
+msgstr "Pasahitza berrezarri"
+
+#: app/templates/mapa_web.html:23
+msgid "Área del docente (requiere iniciar sesión)"
+msgstr "Irakaslearen eremua (saioa hasi behar da)"
+
+#: app/templates/mapa_web.html:26 app/templates/situaciones/listar.html:8
+msgid "Mis situaciones de aprendizaje"
+msgstr "Nire ikaskuntza egoerak"
+
+#: app/templates/mapa_web.html:28
+msgid "Crear nueva situación"
+msgstr "Egoera berria sortu"
+
+#: app/templates/mapa_web.html:34
+msgid "Información y soporte"
+msgstr "Informazioa eta laguntza"
+
+#: app/templates/mapa_web.html:38
+msgid "Mapa web (esta página)"
+msgstr "Web-mapa (orri hau)"
+
+#: app/templates/perfil.html:7
+msgid "Consulta y actualiza tus datos como docente."
+msgstr "Kontsultatu eta eguneratu irakasle gisa dituzun datuak."
+
+#: app/templates/perfil.html:12
+msgid "Datos de la cuenta"
+msgstr "Kontuaren datuak"
+
+#: app/templates/admin/panel.html:87 app/templates/perfil.html:14
+msgid "Correo"
+msgstr "Helbide elektronikoa"
+
+#: app/templates/admin/panel.html:57 app/templates/admin/panel.html:89
+#: app/templates/admin/panel.html:205 app/templates/perfil.html:15
+msgid "Rol"
+msgstr "Rola"
+
+#: app/templates/perfil.html:16
+msgid "Registrado el"
+msgstr "Erregistratze-data"
+
+#: app/templates/admin/panel.html:92 app/templates/perfil.html:17
+msgid "Última sesión"
+msgstr "Azken saioa"
+
+#: app/templates/perfil.html:22
+msgid "Editar datos"
+msgstr "Datuak editatu"
+
+#: app/templates/admin/panel.html:45 app/templates/admin/panel.html:201
+#: app/templates/perfil.html:25 app/templates/register.html:17
+msgid "Nombre completo"
+msgstr "Izen osoa"
+
+#: app/templates/admin/panel.html:66 app/templates/admin/panel.html:202
+#: app/templates/perfil.html:30 app/templates/register.html:49
+msgid "Centro educativo"
+msgstr "Ikastetxea"
+
+#: app/templates/admin/panel.html:203 app/templates/perfil.html:35
+#: app/templates/register.html:55
+msgid "Especialidad"
+msgstr "Espezialitatea"
+
+#: app/templates/admin/panel.html:70 app/templates/admin/panel.html:204
+#: app/templates/perfil.html:39 app/templates/register.html:60
+#: app/templates/situaciones/nueva.html:111
+msgid "Comunidad autónoma"
+msgstr "Autonomia erkidegoa"
+
+#: app/templates/perfil.html:43 app/templates/situaciones/detalle.html:90
+msgid "Guardar cambios"
+msgstr "Aldaketak gorde"
+
+#: app/templates/perfil.html:53 app/templates/situaciones/detalle.html:110
+msgid "Generación con IA"
+msgstr "Sorkuntza AArekin"
+
+#: app/templates/perfil.html:55
+msgid "Elige qué modelo redacta tus situaciones de aprendizaje. Si no eliges nada se usa el del sistema."
+msgstr "Aukeratu zein modelok idatziko dituen zure ikaskuntza egoerak. Ezer aukeratzen ez baduzu, sistemarena erabiltzen da."
+
+#: app/templates/perfil.html:61
+msgid "Proveedor"
+msgstr "Hornitzailea"
+
+#: app/templates/perfil.html:65
+msgid "Modelo"
+msgstr "Modeloa"
+
+#: app/templates/perfil.html:68
+msgid "Se activa al elegir un proveedor."
+msgstr "Hornitzaile bat aukeratzean aktibatzen da."
+
+#: app/templates/perfil.html:74
+msgid "Guardar preferencia"
+msgstr "Hobespena gorde"
+
+#: app/templates/perfil.html:81
+msgid "Seguridad"
+msgstr "Segurtasuna"
+
+#: app/templates/perfil.html:82
+msgid "Cambia tu contraseña periódicamente. La nueva debe cumplir los requisitos de seguridad."
+msgstr "Aldatu pasahitza aldizka. Berriak segurtasun-baldintzak bete behar ditu."
+
+#: app/templates/perfil.html:86
+msgid "Cambiar contraseña"
+msgstr "Pasahitza aldatu"
+
+#: app/templates/perfil.html:94
+msgid "Contraseña actual"
+msgstr "Uneko pasahitza"
+
+#: app/templates/perfil.html:102 app/templates/restablecer_contrasena.html:26
+msgid "Nueva contraseña"
+msgstr "Pasahitz berria"
+
+#: app/templates/admin/panel.html:54 app/templates/perfil.html:109
+#: app/templates/register.html:44 app/templates/restablecer_contrasena.html:33
+msgid "Mínimo 8 caracteres, con al menos una letra y un dígito."
+msgstr "Gutxienez 8 karaktere, letra bat eta zenbaki bat gutxienez."
+
+#: app/templates/perfil.html:113 app/templates/restablecer_contrasena.html:38
+msgid "Confirmar nueva contraseña"
+msgstr "Berretsi pasahitz berria"
+
+#: app/templates/perfil.html:121
+msgid "Guardar nueva contraseña"
+msgstr "Gorde pasahitz berria"
+
+#: app/templates/admin/panel.html:76 app/templates/admin/panel.html:199
+#: app/templates/perfil.html:122 app/templates/situaciones/nueva.html:139
+msgid "Cancelar"
+msgstr "Utzi"
+
+#: app/templates/perfil.html:135
+msgid "Se usará el proveedor del sistema."
+msgstr "Sistemaren hornitzailea erabiliko da."
+
+#: app/templates/perfil.html:136
+msgid "Usar el del sistema"
+msgstr "Sistemarena erabili"
+
+#: app/templates/perfil.html:137
+msgid "Preferencia guardada."
+msgstr "Hobespena gorde da."
+
+#: app/templates/perfil.html:138
+msgid "No se ha podido guardar."
+msgstr "Ezin izan da gorde."
+
+#: app/templates/perfil.html:139
+msgid "Perfil actualizado correctamente."
+msgstr "Profila behar bezala eguneratu da."
+
+#: app/templates/perfil.html:140
+msgid "Las contraseñas nuevas no coinciden."
+msgstr "Pasahitz berriak ez datoz bat."
+
+#: app/templates/perfil.html:141
+msgid "Contraseña cambiada correctamente."
+msgstr "Pasahitza behar bezala aldatu da."
+
+#: app/templates/register.html:8
+msgid "Regístrate como <strong>docente</strong> para empezar a crear situaciones de aprendizaje LOMLOE con asistencia de IA."
+msgstr "Erregistratu <strong>irakasle</strong> gisa LOMLOE ikaskuntza egoerak AAren laguntzaz sortzen hasteko."
+
+#: app/templates/register.html:65
+msgid "Registrarme"
+msgstr "Erregistratu"
+
+#: app/templates/register.html:66
+msgid "¿Ya tienes cuenta?"
+msgstr "Kontua baduzu jada?"
+
+#: app/templates/register.html:85
+msgid "Creando cuenta…"
+msgstr "Kontua sortzen…"
+
+#: app/templates/restablecer_contrasena.html:8
+msgid "Introduce tu correo y la nueva contraseña. Por simplicidad de este prototipo no se requiere confirmación por correo electrónico."
+msgstr "Sartu zure helbide elektronikoa eta pasahitz berria. Prototipo honen sinpletasunagatik ez da posta elektroniko bidezko berrespenik behar."
+
+#: app/templates/restablecer_contrasena.html:45
+msgid "Vuelve a escribir la misma contraseña."
+msgstr "Idatzi berriro pasahitz bera."
+
+#: app/templates/restablecer_contrasena.html:50
+msgid "Volver al inicio de sesión"
+msgstr "Itzuli saio-hasierara"
+
+#: app/templates/restablecer_contrasena.html:61
+msgid "Las contraseñas no coinciden."
+msgstr "Pasahitzak ez datoz bat."
+
+#: app/templates/restablecer_contrasena.html:62
+msgid "Contraseña restablecida correctamente. Te llevamos al inicio de sesión…"
+msgstr "Pasahitza behar bezala berrezarri da. Saio-hasierara eramango zaitugu…"
+
+#: app/templates/admin/panel.html:6
+msgid "Panel de administración"
+msgstr "Administrazio panela"
+
+#: app/templates/admin/panel.html:8
+msgid "Gestiona cuentas y contenido. <strong>El contenido de las situaciones de aprendizaje no es accesible desde aquí</strong>: se pueden borrar, no leer."
+msgstr "Kudeatu kontuak eta edukia. <strong>Ikaskuntza egoeren edukia ez da hemendik eskuragarri</strong>: ezabatu daitezke, ez irakurri."
+
+#: app/templates/admin/panel.html:17
+msgid "Resumen de la plataforma"
+msgstr "Plataformaren laburpena"
+
+#: app/templates/admin/panel.html:28
+msgid "Cuentas"
+msgstr "Kontuak"
+
+#: app/templates/admin/panel.html:32
+msgid "Nueva cuenta"
+msgstr "Kontu berria"
+
+#: app/templates/admin/panel.html:59 app/templates/admin/panel.html:206
+msgid "Docente"
+msgstr "Irakaslea"
+
+#: app/templates/admin/panel.html:60 app/templates/admin/panel.html:207
+msgid "Administrador"
+msgstr "Administratzailea"
+
+#: app/templates/admin/panel.html:84
+msgid "Cuentas registradas con sus estadísticas"
+msgstr "Erregistratutako kontuak beren estatistikekin"
+
+#: app/templates/admin/panel.html:88
+msgid "Nombre"
+msgstr "Izena"
+
+#: app/templates/admin/panel.html:90
+msgid "Centro"
+msgstr "Ikastetxea"
+
+#: app/templates/admin/panel.html:91 app/templates/admin/panel.html:188
+msgid "Situaciones"
+msgstr "Egoerak"
+
+#: app/templates/admin/panel.html:93 app/templates/admin/panel.html:117
+#: app/templates/admin/panel.html:148 app/templates/situaciones/detalle.html:32
+#: app/templates/situaciones/listar.html:31
+#: app/templates/situaciones/listar.html:59
+msgid "Estado"
+msgstr "Egoera"
+
+#: app/templates/admin/panel.html:94 app/templates/admin/panel.html:151
+#: app/templates/situaciones/listar.html:61
+msgid "Acciones"
+msgstr "Ekintzak"
+
+#: app/templates/admin/panel.html:102
+msgid "Páginas de cuentas"
+msgstr "Kontuen orriak"
+
+#: app/templates/admin/panel.html:109
+msgid "Situaciones de aprendizaje"
+msgstr "Ikaskuntza egoerak"
+
+#: app/templates/admin/panel.html:111
+msgid "Solo se muestran los datos necesarios para identificarlas. No es posible abrir su contenido."
+msgstr "Identifikatzeko beharrezkoak diren datuak baino ez dira erakusten. Ezin da haien edukia ireki."
+
+#: app/templates/admin/panel.html:119 app/templates/situaciones/listar.html:33
+#: app/templates/situaciones/listar.html:83
+msgid "Todos"
+msgstr "Guztiak"
+
+#: app/templates/admin/panel.html:123 app/templates/admin/panel.html:311
+#: app/templates/situaciones/detalle.html:258
+#: app/templates/situaciones/listar.html:37
+msgid "Error de generación"
+msgstr "Sorkuntza-errorea"
+
+#: app/templates/admin/panel.html:128 app/templates/admin/panel.html:149
+msgid "Cuenta"
+msgstr "Kontua"
+
+#: app/templates/admin/panel.html:130 app/templates/situaciones/listar.html:84
+msgid "Todas"
+msgstr "Guztiak"
+
+#: app/templates/admin/panel.html:135 app/templates/situaciones/listar.html:42
+msgid "Aplicar filtros"
+msgstr "Iragazkiak aplikatu"
+
+#: app/templates/admin/panel.html:136 app/templates/situaciones/listar.html:43
+msgid "Limpiar"
+msgstr "Garbitu"
+
+#: app/templates/admin/panel.html:142
+msgid "Situaciones de aprendizaje de todas las cuentas"
+msgstr "Kontu guztien ikaskuntza egoerak"
+
+#: app/templates/admin/panel.html:145 app/templates/situaciones/detalle.html:15
+#: app/templates/situaciones/listar.html:56
+#: app/templates/situaciones/nueva.html:50
+msgid "Título"
+msgstr "Izenburua"
+
+#: app/templates/admin/panel.html:146 app/templates/situaciones/detalle.html:25
+#: app/templates/situaciones/listar.html:27
+#: app/templates/situaciones/listar.html:58
+#: app/templates/situaciones/nueva.html:69
+msgid "Materia"
+msgstr "Ikasgaia"
+
+#: app/templates/admin/panel.html:147 app/templates/situaciones/detalle.html:21
+#: app/templates/situaciones/listar.html:23
+#: app/templates/situaciones/listar.html:57
+#: app/templates/situaciones/nueva.html:61
+msgid "Curso"
+msgstr "Maila"
+
+#: app/templates/admin/panel.html:150 app/templates/situaciones/listar.html:60
+msgid "Modificada"
+msgstr "Aldatua"
+
+#: app/templates/admin/panel.html:159
+msgid "Páginas de situaciones"
+msgstr "Egoeren orriak"
+
+#: app/templates/admin/panel.html:175
+#, python-brace-format
+msgid "¿Eliminar «{titulo}»? Esta acción no se puede deshacer."
+msgstr "«{titulo}» ezabatu? Ekintza hau ezin da desegin."
+
+#: app/templates/admin/panel.html:176
+#, python-brace-format
+msgid "Eliminar la cuenta {correo} Y todo su contenido ({n} situaciones). No se puede deshacer."
+msgstr "{correo} kontua ETA bere eduki guztia ezabatu ({n} egoera). Ezin da desegin."
+
+#: app/templates/admin/panel.html:177
+#, python-brace-format
+msgid "Dar de baja a {correo} conservando sus {n} situaciones durante 90 días. Podrá recuperarlas volviendo a registrarse con este correo."
+msgstr "{correo} baja eman bere {n} egoerak 90 egunez gordez. Helbide honekin berriro erregistratuz berreskuratu ahal izango ditu."
+
+#: app/templates/admin/panel.html:178
+msgid "No se ha podido completar la operación."
+msgstr "Ezin izan da eragiketa burutu."
+
+#: app/templates/admin/panel.html:179
+msgid "No hay ninguna cuenta registrada."
+msgstr "Ez dago erregistratutako konturik."
+
+#: app/templates/admin/panel.html:180
+msgid "No hay situaciones que coincidan con los filtros."
+msgstr "Ez dago iragazkiekin bat datorren egoerarik."
+
+#: app/templates/admin/panel.html:181
+msgid "Activa"
+msgstr "Aktiboa"
+
+#: app/templates/admin/panel.html:182
+msgid "Dada de baja"
+msgstr "Baja emanda"
+
+#: app/templates/admin/panel.html:183
+msgid "Baja, pendiente de purgado"
+msgstr "Baja, garbitzeko zain"
+
+#: app/templates/admin/panel.html:184
+#: app/templates/situaciones/detalle.html:102
+msgid "Eliminar"
+msgstr "Ezabatu"
+
+#: app/templates/admin/panel.html:185
+msgid "Baja total"
+msgstr "Baja osoa"
+
+#: app/templates/admin/panel.html:186
+msgid "Baja conservando"
+msgstr "Baja gordez"
+
+#: app/templates/admin/panel.html:187
+msgid "Nunca"
+msgstr "Inoiz ez"
+
+#: app/templates/admin/panel.html:189
+msgid "Cuentas activas"
+msgstr "Kontu aktiboak"
+
+#: app/templates/admin/panel.html:190
+msgid "Dadas de baja"
+msgstr "Baja emandakoak"
+
+#: app/templates/admin/panel.html:191
+msgid "Reclamación pendiente"
+msgstr "Erreklamazioa zain"
+
+#: app/templates/admin/panel.html:192
+msgid "Aprobar"
+msgstr "Onartu"
+
+#: app/templates/admin/panel.html:193
+msgid "Rechazar"
+msgstr "Ukatu"
+
+#: app/templates/admin/panel.html:194
+#, python-brace-format
+msgid "Devolver la cuenta {correo} y sus {n} situaciones a quien la reclama ({nombre}). Comprueba antes que es la misma persona: una dirección de centro puede haberse reasignado."
+msgstr "{correo} kontua eta bere {n} egoerak erreklamatzen dituenari ({nombre}) itzuli. Egiaztatu lehenik pertsona bera dela: ikastetxeko helbide bat berresleitu izan daiteke."
+
+#: app/templates/admin/panel.html:195
+#, python-brace-format
+msgid "Rechazar la solicitud sobre {correo}. El contenido sigue guardado hasta que venza el plazo."
+msgstr "{correo} helbideari buruzko eskaera ukatu. Edukia gordeta jarraitzen du epea amaitu arte."
+
+#: app/templates/admin/panel.html:196
+#, python-brace-format
+msgid "Solicitada por {nombre}"
+msgstr "{nombre}(e)k eskatua"
+
+#: app/templates/admin/panel.html:197
+msgid "Editar"
+msgstr "Editatu"
+
+#: app/templates/admin/panel.html:198
+msgid "Guardar"
+msgstr "Gorde"
+
+#: app/templates/admin/panel.html:200
+#, python-brace-format
+msgid "Editando {correo}"
+msgstr "{correo} editatzen"
+
+#: app/templates/admin/panel.html:208
+msgid "Cambios guardados."
+msgstr "Aldaketak gorde dira."
+
+#: app/templates/admin/panel.html:209 app/templates/situaciones/listar.html:85
+msgid "Anterior"
+msgstr "Aurrekoa"
+
+#: app/templates/admin/panel.html:210 app/templates/situaciones/listar.html:86
+msgid "Siguiente"
+msgstr "Hurrengoa"
+
+#: app/templates/admin/panel.html:211 app/templates/situaciones/listar.html:87
+#, python-brace-format
+msgid "Página {actual} de {ultima} · {total} en total"
+msgstr "{actual}. orria {ultima}(e)tik · {total} guztira"
+
+#: app/templates/admin/panel.html:212 app/templates/situaciones/listar.html:78
+msgid "Sin resultados"
+msgstr "Emaitzarik ez"
+
+#: app/templates/errores/404.html:7
+msgid "Error 404"
+msgstr "404 errorea"
+
+#: app/templates/errores/404.html:8
+msgid "No encontramos esa página"
+msgstr "Ez dugu orri hori aurkitu"
+
+#: app/templates/errores/404.html:10
+msgid "El enlace puede estar roto o la página puede haberse movido. Prueba a volver al inicio o consulta el mapa web para ver todas las secciones disponibles."
+msgstr "Esteka hautsita egon daiteke edo orria lekuz aldatu izana. Saiatu hasierara itzultzen edo kontsultatu web-mapa eskuragarri dauden atal guztiak ikusteko."
+
+#: app/templates/errores/404.html:13 app/templates/errores/error.html:35
+msgid "Ir al inicio"
+msgstr "Joan hasierara"
+
+#: app/templates/errores/404.html:14
+msgid "Ver mapa web"
+msgstr "Ikusi web-mapa"
+
+#: app/templates/exportacion/pdf.html:232
+msgid "Materia:"
+msgstr "Ikasgaia:"
+
+#: app/templates/exportacion/pdf.html:233
+msgid "Curso:"
+msgstr "Maila:"
+
+#: app/templates/exportacion/pdf.html:234
+msgid "Sesiones:"
+msgstr "Saioak:"
+
+#: app/templates/exportacion/pdf.html:235
+msgid "Duración:"
+msgstr "Iraupena:"
+
+#: app/templates/exportacion/pdf.html:238
+msgid "Docente:"
+msgstr "Irakaslea:"
+
+#: app/templates/exportacion/pdf.html:239
+msgid "Centro:"
+msgstr "Ikastetxea:"
+
+#: app/templates/exportacion/pdf.html:240
+msgid "Generado:"
+msgstr "Sortua:"
+
+#: app/templates/exportacion/pdf.html:250
+#: app/templates/situaciones/nueva.html:150
+msgid "Pregunta guía"
+msgstr "Gida-galdera"
+
+#: app/templates/exportacion/pdf.html:256
+msgid "Producto final"
+msgstr "Azken produktua"
+
+#: app/templates/exportacion/pdf.html:302
+msgid "Competencias específicas"
+msgstr "Konpetentzia espezifikoak"
+
+#: app/templates/exportacion/pdf.html:306
+msgid "Criterios de evaluación"
+msgstr "Ebaluazio-irizpideak"
+
+#: app/templates/exportacion/pdf.html:310
+msgid "Saberes básicos"
+msgstr "Oinarrizko jakintzak"
+
+#: app/templates/exportacion/pdf.html:326
+msgid "Actividades"
+msgstr "Jarduerak"
+
+#: app/templates/exportacion/pdf.html:336
+msgid "Recursos"
+msgstr "Baliabideak"
+
+#: app/templates/exportacion/pdf.html:342
+msgid "Criterios trabajados"
+msgstr "Landutako irizpideak"
+
+#: app/templates/exportacion/pdf.html:352
+msgid "Instrumentos de evaluación"
+msgstr "Ebaluazio-tresnak"
+
+#: app/templates/exportacion/pdf.html:354
+msgid "Instrumento"
+msgstr "Tresna"
+
+#: app/templates/exportacion/pdf.html:354
+msgid "Momento"
+msgstr "Unea"
+
+#: app/templates/exportacion/pdf.html:354
+msgid "Peso"
+msgstr "Pisua"
+
+#: app/templates/exportacion/pdf.html:367
+msgid "Rúbricas por criterio"
+msgstr "Errubrikak irizpideka"
+
+#: app/templates/exportacion/pdf.html:390
+msgid "Principios DUA aplicados"
+msgstr "Aplikatutako DUA printzipioak"
+
+#: app/templates/exportacion/pdf.html:396
+msgid "Ajustes no significativos"
+msgstr "Doikuntza ez esanguratsuak"
+
+#: app/templates/exportacion/pdf.html:402
+msgid "Ajustes significativos"
+msgstr "Doikuntza esanguratsuak"
+
+#: app/templates/exportacion/pdf.html:427
+msgid "Sección sin renderizador específico."
+msgstr "Atal honek ez du errendatzaile espezifikorik."
+
+#: app/templates/situaciones/detalle.html:7
+msgid "← Volver al listado"
+msgstr "← Itzuli zerrendara"
+
+#: app/templates/situaciones/detalle.html:12
+msgid "Datos de la situación"
+msgstr "Egoeraren datuak"
+
+#: app/templates/situaciones/detalle.html:37
+msgid "Generando… (gestionado por el sistema)"
+msgstr "Sortzen… (sistemak kudeatua)"
+
+#: app/templates/situaciones/detalle.html:38
+msgid "Error de generación (gestionado por el sistema)"
+msgstr "Sorkuntza-errorea (sistemak kudeatua)"
+
+#: app/templates/situaciones/detalle.html:45
+msgid "Sesiones"
+msgstr "Saioak"
+
+#: app/templates/situaciones/detalle.html:49
+msgid "Duración (min)"
+msgstr "Iraupena (min)"
+
+#: app/templates/situaciones/detalle.html:55
+#: app/templates/situaciones/nueva.html:94
+msgid "Español"
+msgstr "Gaztelania"
+
+#: app/templates/situaciones/detalle.html:56
+#: app/templates/situaciones/nueva.html:95
+msgid "Catalán"
+msgstr "Katalana"
+
+#: app/templates/situaciones/detalle.html:57
+#: app/templates/situaciones/nueva.html:96
+msgid "Gallego"
+msgstr "Galiziera"
+
+#: app/templates/situaciones/detalle.html:58
+#: app/templates/situaciones/nueva.html:97
+msgid "Euskera"
+msgstr "Euskara"
+
+#: app/templates/situaciones/detalle.html:59
+#: app/templates/situaciones/nueva.html:98
+msgid "Inglés"
+msgstr "Ingelesa"
+
+#: app/templates/situaciones/detalle.html:60
+#: app/templates/situaciones/nueva.html:99
+msgid "Francés"
+msgstr "Frantsesa"
+
+#: app/templates/situaciones/detalle.html:61
+#: app/templates/situaciones/nueva.html:100
+msgid "Árabe"
+msgstr "Arabiera"
+
+#: app/templates/situaciones/detalle.html:67
+#: app/templates/situaciones/nueva.html:106
+msgid "Metodología"
+msgstr "Metodologia"
+
+#: app/templates/situaciones/detalle.html:72
+msgid "Descripción"
+msgstr "Deskribapena"
+
+#: app/templates/situaciones/detalle.html:77
+#: app/templates/situaciones/nueva.html:124
+msgid "Perfil del aula"
+msgstr "Ikasgelaren profila"
+
+#: app/templates/situaciones/detalle.html:82
+msgid "Resumen del cambio (opcional)"
+msgstr "Aldaketaren laburpena (aukerakoa)"
+
+#: app/templates/situaciones/detalle.html:84
+msgid "Se queda en el historial de versiones"
+msgstr "Bertsioen historian gordetzen da"
+
+#: app/templates/situaciones/detalle.html:94
+#: app/templates/situaciones/detalle.html:237
+msgid "Marcar como terminada"
+msgstr "Amaitutzat markatu"
+
+#: app/templates/situaciones/detalle.html:98
+msgid "Duplicar"
+msgstr "Bikoiztu"
+
+#: app/templates/situaciones/detalle.html:112
+msgid "Genera el contenido didáctico completo o regenera una sección concreta. Durante la generación la situación queda bloqueada."
+msgstr "Sortu eduki didaktiko osoa edo birsortu atal zehatz bat. Sorkuntzan zehar egoera blokeatuta geratzen da."
+
+#: app/templates/situaciones/detalle.html:117
+#: app/templates/situaciones/detalle.html:235
+msgid "Generar contenido completo"
+msgstr "Eduki osoa sortu"
+
+#: app/templates/situaciones/detalle.html:123
+msgid "Generando sección"
+msgstr "Atala sortzen"
+
+#: app/templates/situaciones/detalle.html:133
+msgid "Contenido generado"
+msgstr "Sortutako edukia"
+
+#: app/templates/situaciones/detalle.html:137
+msgid "Descargar PDF"
+msgstr "PDF deskargatu"
+
+#: app/templates/situaciones/detalle.html:141
+msgid "Descargar DOCX"
+msgstr "DOCX deskargatu"
+
+#: app/templates/situaciones/detalle.html:147
+msgid "Todavía no se ha generado contenido. Usa el botón de arriba para lanzarlo."
+msgstr "Oraindik ez da edukirik sortu. Erabili goiko botoia abiarazteko."
+
+#: app/templates/situaciones/detalle.html:153
+msgid "Adaptaciones curriculares"
+msgstr "Curriculum-egokitzapenak"
+
+#: app/templates/situaciones/detalle.html:155
+msgid "Genera una adaptación curricular a partir de esta situación de aprendizaje, diferenciando si modifica los criterios de evaluación o no."
+msgstr "Sortu curriculum-egokitzapen bat ikaskuntza egoera honetatik abiatuta, ebaluazio-irizpideak aldatzen dituen ala ez bereiziz."
+
+#: app/templates/situaciones/detalle.html:161
+msgid "Tipo de adaptación"
+msgstr "Egokitzapen mota"
+
+#: app/templates/situaciones/detalle.html:163
+msgid "No Significativa (ACNS) — no modifica criterios"
+msgstr "Ez esanguratsua (ACNS) — ez ditu irizpideak aldatzen"
+
+#: app/templates/situaciones/detalle.html:164
+msgid "Significativa (ACS) — modifica criterios y/o contenidos"
+msgstr "Esanguratsua (ACS) — irizpideak eta/edo edukiak aldatzen ditu"
+
+#: app/templates/situaciones/detalle.html:168
+msgid "Título (opcional)"
+msgstr "Izenburua (aukerakoa)"
+
+#: app/templates/situaciones/detalle.html:170
+msgid "Se genera automáticamente si se deja vacío"
+msgstr "Hutsik utziz gero automatikoki sortzen da"
+
+#: app/templates/situaciones/detalle.html:175
+msgid "Descripción del alumno/a"
+msgstr "Ikaslearen deskribapena"
+
+#: app/templates/situaciones/detalle.html:176
+msgid "(sustituye al “Perfil del aula” en la SA adaptada · mín. 10 caracteres)"
+msgstr "(egokitutako IEan “Ikasgelaren profila” ordezkatzen du · gutxienez 10 karaktere)"
+
+#: app/templates/situaciones/detalle.html:179
+msgid "Ej: Alumno con TDAH, necesita tareas fragmentadas y refuerzo visual…"
+msgstr "Adib.: AGHN duen ikaslea, zatikatutako zereginak eta ikusizko errefortzua behar ditu…"
+
+#: app/templates/situaciones/detalle.html:182
+msgid "Generar adaptación"
+msgstr "Egokitzapena sortu"
+
+#: app/templates/situaciones/detalle.html:191
+msgid "Historial de versiones"
+msgstr "Bertsioen historia"
+
+#: app/templates/situaciones/detalle.html:192
+msgid "Aún no hay versiones guardadas. Cada vez que modifiques esta situación se creará una nueva entrada."
+msgstr "Oraindik ez dago gordetako bertsiorik. Egoera hau aldatzen duzun bakoitzean sarrera berri bat sortuko da."
+
+#: app/templates/situaciones/detalle.html:195
+msgid "Versiones guardadas de esta situación"
+msgstr "Egoera honen gordetako bertsioak"
+
+#: app/templates/situaciones/detalle.html:199
+msgid "Fecha"
+msgstr "Data"
+
+#: app/templates/situaciones/detalle.html:200
+msgid "Cambio"
+msgstr "Aldaketa"
+
+#: app/templates/situaciones/detalle.html:201
+msgid "Título previo"
+msgstr "Aurreko izenburua"
+
+#: app/templates/situaciones/detalle.html:227
+#: app/templates/situaciones/nueva.html:185
+msgid "Una de las dos opciones de Matemáticas de 4.º. Se desarrolla sobre todo mediante la resolución de problemas, la investigación y el análisis matemático de situaciones de la vida cotidiana."
+msgstr "4. mailako Matematikaren bi aukeretako bat. Batez ere problemak ebaztearen, ikertzearen eta eguneroko bizitzako egoeren analisi matematikoaren bidez garatzen da."
+
+#: app/templates/situaciones/detalle.html:228
+#: app/templates/situaciones/nueva.html:186
+msgid "La otra opción de Matemáticas de 4.º. Además de lo anterior, profundiza en los procedimientos algebraicos, geométricos, analíticos y estadísticos, en contextos matemáticos, científicos y sociales. El real decreto no la vincula a ninguna modalidad de Bachillerato: la diferencia que establece es de enfoque."
+msgstr "4. mailako Matematikaren beste aukera. Aurrekoaz gain, prozedura aljebraiko, geometriko, analitiko eta estatistikoetan sakontzen du, testuinguru matematiko, zientifiko eta sozialetan. Errege dekretuak ez du Batxilergoko inongo modalitaterekin lotzen: ezartzen duen aldea ikuspegiarena da."
+
+#: app/templates/situaciones/detalle.html:232
+msgid "No tienes permiso para ver esta situación"
+msgstr "Ez duzu egoera hau ikusteko baimenik"
+
+#: app/templates/situaciones/detalle.html:233
+msgid "No encontrada"
+msgstr "Ez da aurkitu"
+
+#: app/templates/situaciones/detalle.html:234
+#: app/templates/situaciones/nueva.html:156
+msgid "— Sin especificar —"
+msgstr "— Zehaztu gabe —"
+
+#: app/templates/situaciones/detalle.html:236
+msgid "Regenerar todo"
+msgstr "Dena birsortu"
+
+#: app/templates/situaciones/detalle.html:238
+#, python-brace-format
+msgid "Traducir a {idioma}"
+msgstr "{idioma}ra itzuli"
+
+#: app/templates/situaciones/detalle.html:239
+msgid "Tiempo de espera agotado sin respuesta de la tarea."
+msgstr "Itxaronaldia agortu da atazaren erantzunik gabe."
+
+#: app/templates/situaciones/detalle.html:240
+msgid "No se ha podido deshacer."
+msgstr "Ezin izan da desegin."
+
+#: app/templates/situaciones/detalle.html:241
+msgid "Cambios guardados correctamente."
+msgstr "Aldaketak behar bezala gorde dira."
+
+#: app/templates/situaciones/detalle.html:242
+msgid "El perfil del alumnado debe tener al menos 10 caracteres."
+msgstr "Ikasleen profilak gutxienez 10 karaktere izan behar ditu."
+
+#: app/templates/situaciones/detalle.html:243
+msgid "Regenerar"
+msgstr "Birsortu"
+
+#: app/templates/situaciones/detalle.html:244
+msgid "Deshacer"
+msgstr "Desegin"
+
+#: app/templates/situaciones/detalle.html:252
+msgid "Hay dos redacciones de esta sección."
+msgstr "Atal honen bi idazketa daude."
+
+#: app/templates/situaciones/detalle.html:253
+msgid "Quédate con una para seguir. La descartada permanece en el historial de versiones, así que podrás recuperarla."
+msgstr "Aukeratu bat jarraitzeko. Baztertutakoa bertsioen historian geratzen da, beraz berreskuratu ahal izango duzu."
+
+#: app/templates/situaciones/detalle.html:254
+msgid "Versión actual"
+msgstr "Uneko bertsioa"
+
+#: app/templates/situaciones/detalle.html:255
+msgid "Alternativa propuesta"
+msgstr "Proposatutako alternatiba"
+
+#: app/templates/situaciones/detalle.html:256
+msgid "Quedarme con esta"
+msgstr "Hau aukeratu"
+
+#: app/templates/situaciones/detalle.html:259
+msgid "Reabrir situación"
+msgstr "Egoera berrireki"
+
+#: app/templates/situaciones/detalle.html:260
+msgid "Escuchar"
+msgstr "Entzun"
+
+#: app/templates/situaciones/detalle.html:261
+msgid "Parar"
+msgstr "Gelditu"
+
+#: app/templates/situaciones/detalle.html:262
+msgid "Leyendo en voz alta…"
+msgstr "Ozen irakurtzen…"
+
+#: app/templates/situaciones/detalle.html:263
+#, python-brace-format
+msgid "Tu sistema no tiene ninguna voz instalada para {idioma}, así que la lectura en voz alta no está disponible en esta situación."
+msgstr "Zure sistemak ez du {idioma} hizkuntzarako ahotsik instalatuta, beraz ozenki irakurtzeko aukera ez dago erabilgarri egoera honetan."
+
+#: app/templates/situaciones/detalle.html:264
+msgid "Ya hay una generación en curso."
+msgstr "Sorkuntza bat martxan dago dagoeneko."
+
+#: app/templates/situaciones/detalle.html:265
+msgid "No se pudo lanzar la generación."
+msgstr "Ezin izan da sorkuntza abiarazi."
+
+#: app/templates/situaciones/detalle.html:266
+msgid "La generación terminó con error: "
+msgstr "Sorkuntza errorearekin amaitu da: "
+
+#: app/templates/situaciones/detalle.html:267
+msgid "No se ha podido guardar la elección."
+msgstr "Ezin izan da aukeraketa gorde."
+
+#: app/templates/situaciones/detalle.html:268
+msgid "Adaptación lanzada. Serás redirigido a la nueva SA…"
+msgstr "Egokitzapena abiarazita. IE berrira birbideratuko zaitugu…"
+
+#: app/templates/situaciones/detalle.html:269
+msgid "Aún no hay adaptaciones generadas para esta situación."
+msgstr "Oraindik ez dago egoera honetarako sortutako egokitzapenik."
+
+#: app/templates/situaciones/detalle.html:270
+#, python-brace-format
+msgid "El idioma destino es el de la situación ({idioma}). Cámbialo arriba, en el campo Idioma."
+msgstr "Xede-hizkuntza egoerarena da ({idioma}). Aldatu goian, Hizkuntza eremuan."
+
+#: app/templates/situaciones/detalle.html:271
+#, python-brace-format
+msgid "¿Regenerar la sección «{nombre}»? Se sobrescribirá su contenido actual."
+msgstr "«{nombre}» atala birsortu? Uneko edukia gainidatziko da."
+
+#: app/templates/situaciones/detalle.html:272
+msgid "¿Seguro que quieres eliminar esta situación? Se eliminará también su historial de versiones."
+msgstr "Ziur zaude egoera hau ezabatu nahi duzula? Bertsioen historia ere ezabatuko da."
+
+#: app/templates/situaciones/detalle.html:278
+msgid "español"
+msgstr "gaztelania"
+
+#: app/templates/situaciones/detalle.html:279
+msgid "catalán"
+msgstr "katalana"
+
+#: app/templates/situaciones/detalle.html:280
+msgid "gallego"
+msgstr "galiziera"
+
+#: app/templates/situaciones/detalle.html:281
+msgid "euskera"
+msgstr "euskara"
+
+#: app/templates/situaciones/detalle.html:282
+msgid "inglés"
+msgstr "ingelesa"
+
+#: app/templates/situaciones/detalle.html:283
+msgid "francés"
+msgstr "frantsesa"
+
+#: app/templates/situaciones/detalle.html:284
+msgid "árabe"
+msgstr "arabiera"
+
+#: app/templates/situaciones/detalle.html:291
+msgid "Conexión curricular (competencias · criterios · saberes)"
+msgstr "Curriculum-lotura (konpetentziak · irizpideak · jakintzak)"
+
+#: app/templates/situaciones/detalle.html:293
+msgid "Evaluación (instrumentos y rúbricas)"
+msgstr "Ebaluazioa (tresnak eta errubrikak)"
+
+#: app/templates/situaciones/detalle.html:294
+msgid "Atención a la diversidad (DUA)"
+msgstr "Aniztasunaren arreta (DUA)"
+
+#: app/templates/situaciones/detalle.html:384
+msgid "Resumir"
+msgstr "Laburtu"
+
+#: app/templates/situaciones/detalle.html:385
+msgid "Desarrollar"
+msgstr "Garatu"
+
+#: app/templates/situaciones/detalle.html:386
+msgid "Traducir"
+msgstr "Itzuli"
+
+#: app/templates/situaciones/detalle.html:387
+msgid "Proponer alternativa"
+msgstr "Alternatiba proposatu"
+
+#: app/templates/situaciones/listar.html:13
+msgid "Nueva situación"
+msgstr "Egoera berria"
+
+#: app/templates/situaciones/listar.html:17
+msgid "Filtros de búsqueda"
+msgstr "Bilaketa-iragazkiak"
+
+#: app/templates/situaciones/listar.html:19
+msgid "Buscar por título"
+msgstr "Bilatu izenburuaren arabera"
+
+#: app/templates/situaciones/listar.html:20
+msgid "Ej: Robótica"
+msgstr "Adib.: Robotika"
+
+#: app/templates/situaciones/listar.html:48
+msgid "No hay situaciones que coincidan con los filtros aplicados. <a href=\"/situaciones/nueva\" class=\"link\">Crea la primera</a>."
+msgstr "Ez dago aplikatutako iragazkiekin bat datorren egoerarik. <a href=\"/situaciones/nueva\" class=\"link\">Sortu lehena</a>."
+
+#: app/templates/situaciones/listar.html:53
+msgid "Listado de situaciones de aprendizaje del docente"
+msgstr "Irakaslearen ikaskuntza egoeren zerrenda"
+
+#: app/templates/situaciones/listar.html:67
+msgid "Páginas de resultados"
+msgstr "Emaitzen orriak"
+
+#: app/templates/situaciones/listar.html:79
+#, python-brace-format
+msgid "{n} situaciones encontradas"
+msgstr "{n} egoera aurkitu dira"
+
+#: app/templates/situaciones/listar.html:80
+msgid "1 situación encontrada"
+msgstr "Egoera 1 aurkitu da"
+
+#: app/templates/situaciones/listar.html:81
+msgid "Abrir"
+msgstr "Ireki"
+
+#: app/templates/situaciones/listar.html:82
+#, python-brace-format
+msgid "Abrir situación {titulo}"
+msgstr "Ireki {titulo} egoera"
+
+#: app/templates/situaciones/nueva.html:8
+msgid "Solo es necesario título, curso y materia. El resto se puede completar después. Cuantos más datos aportes, mejor podrá la IA contextualizar el contenido generado."
+msgstr "Izenburua, maila eta ikasgaia baino ez dira beharrezkoak. Gainerakoa geroago osa daiteke. Zenbat eta datu gehiago eman, orduan eta hobeto testuinguratuko du AAk sortutako edukia."
+
+#: app/templates/situaciones/nueva.html:18
+msgid "Pide ideas a la IA a partir del curso y la materia."
+msgstr "Eskatu ideiak AAri maila eta ikasgaitik abiatuta."
+
+#: app/templates/situaciones/nueva.html:23
+msgid "Qué te apetece trabajar"
+msgstr "Zer landu nahi duzu"
+
+#: app/templates/situaciones/nueva.html:23
+msgid "(opcional)"
+msgstr "(aukerakoa)"
+
+#: app/templates/situaciones/nueva.html:26
+msgid "Ej: algo relacionado con el barrio, que acabe en una maqueta…"
+msgstr "Adib.: auzoarekin lotutako zerbait, maketa batean amaitzeko…"
+
+#: app/templates/situaciones/nueva.html:28
+msgid "Si lo dejas vacío, las propuestas se basarán solo en el curso y la materia."
+msgstr "Hutsik uzten baduzu, proposamenak maila eta ikasgaian soilik oinarrituko dira."
+
+#: app/templates/situaciones/nueva.html:33
+msgid "Proponer temáticas"
+msgstr "Gaiak proposatu"
+
+#: app/templates/situaciones/nueva.html:55
+msgid "Ej: La Antártida: una expedición científica"
+msgstr "Adib.: Antartika: espedizio zientifiko bat"
+
+#: app/templates/situaciones/nueva.html:82
+msgid "Nº de sesiones"
+msgstr "Saio kopurua"
+
+#: app/templates/situaciones/nueva.html:87
+msgid "Duración por sesión (min)"
+msgstr "Saio bakoitzaren iraupena (min)"
+
+#: app/templates/situaciones/nueva.html:116
+msgid "Descripción / contexto"
+msgstr "Deskribapena / testuingurua"
+
+#: app/templates/situaciones/nueva.html:119
+msgid "Tema, conexión con otras unidades, reto motivador…"
+msgstr "Gaia, beste unitateekiko lotura, erronka motibatzailea…"
+
+#: app/templates/situaciones/nueva.html:120
+msgid "Máximo 4000 caracteres."
+msgstr "Gehienez 4000 karaktere."
+
+#: app/templates/situaciones/nueva.html:126
+msgid "Diversidad de partida, intereses, idiomas, etc."
+msgstr "Abiapuntuko aniztasuna, interesak, hizkuntzak, etab."
+
+#: app/templates/situaciones/nueva.html:132
+msgid "Generar contenido con IA al crear"
+msgstr "Sortzean edukia AArekin sortu"
+
+#: app/templates/situaciones/nueva.html:134
+msgid "Si lo desmarcas, la situación se guarda en borrador y podrás generarla más adelante."
+msgstr "Desmarkatzen baduzu, egoera zirriborro gisa gordetzen da eta geroago sor dezakezu."
+
+#: app/templates/situaciones/nueva.html:138
+msgid "Crear situación"
+msgstr "Egoera sortu"
+
+#: app/templates/situaciones/nueva.html:157
+msgid "Producto final:"
+msgstr "Azken produktua:"
+
+#: app/templates/situaciones/nueva.html:158
+msgid "Usar esta propuesta"
+msgstr "Proposamen hau erabili"
+
+#: app/templates/situaciones/nueva.html:159
+#, python-brace-format
+msgid "Usar la propuesta {n}: {titulo}"
+msgstr "{n}. proposamena erabili: {titulo}"
+
+#: app/templates/situaciones/nueva.html:160
+msgid "Elige antes el curso y la materia en el formulario de abajo."
+msgstr "Aukeratu lehenik maila eta ikasgaia beheko formularioan."
+
+#: app/templates/situaciones/nueva.html:161
+msgid "Pensando ideas…"
+msgstr "Ideiak pentsatzen…"
+
+#: app/templates/situaciones/nueva.html:162
+msgid "Has pedido muchas sugerencias seguidas. Espera un poco antes de volver a intentarlo."
+msgstr "Iradokizun asko eskatu dituzu jarraian. Itxaron pixka bat berriro saiatu aurretik."
+
+#: app/templates/situaciones/nueva.html:163
+msgid "No se han podido obtener sugerencias."
+msgstr "Ezin izan dira iradokizunak lortu."
+
+#: app/templates/situaciones/nueva.html:164
+msgid "No se ha podido contactar con el servidor."
+msgstr "Ezin izan da zerbitzariarekin harremanetan jarri."
+
+#: app/templates/situaciones/nueva.html:165
+msgid "Creando y lanzando IA…"
+msgstr "Sortzen eta IA abiarazten…"
+
+#: app/templates/situaciones/nueva.html:166
+msgid "Creando…"
+msgstr "Sortzen…"
+
+#~ msgid "¿Te ha gustado?"
+#~ msgstr "Gustatu zaizu?"
+
+#~ msgid "Ayúdame aquí"
+#~ msgstr "Lagundu iezadazu hemen"
+
+#~ msgid "Diseño adaptable a móvil, tableta y escritorio; permite zoom hasta 200% sin pérdida de contenido."
+#~ msgstr "Diseinu moldagarria mugikorrera, tabletara eta mahaigainera; ehuneko 200era arteko zooma onartzen du edukirik galdu gabe."
+
+#~ msgid "Diseño adaptable a móvil, tableta y escritorio; el contenido no se pierde al ampliar hasta el 200%."
+#~ msgstr "Diseinu moldagarria mugikorrera, tabletara eta mahaigainera; edukia ez da galtzen ehuneko 200era arte handitzean."
+
+#~ msgid "Editar"
+#~ msgstr "Editatu"
+
+#~ msgid "Guardar"
+#~ msgstr "Gorde"
+
+#~ msgid "{n} situaciones en total"
+#~ msgstr "{n} egoera guztira"
+
+#~ msgid "Todavía no hay ninguna situación en la plataforma."
+#~ msgstr "Oraindik ez dago egoerarik plataforman."
+
+#~ msgid "Ver todas las situaciones"
+#~ msgstr "Ikusi egoera guztiak"
+
+#~ msgid "Tienes 1 situación en tu cuenta."
+#~ msgstr "Egoera 1 duzu zure kontuan."
+
+#~ msgid "Tienes {n} situaciones en tu cuenta."
+#~ msgstr "{n} egoera dituzu zure kontuan."
+
+#~ msgid "Aún no has creado situaciones. ¡Empieza por una nueva!"
+#~ msgstr "Oraindik ez duzu egoerarik sortu. Hasi berri batekin!"
+
+#~ msgid "Tu situación más reciente."
+#~ msgstr "Zure azken egoera."
+
+#~ msgid "Tus {n} situaciones más recientes."
+#~ msgstr "Zure azken {n} egoerak."
+
+#~ msgid "Situaciones recientes de toda la plataforma"
+#~ msgstr "Plataforma osoko azken egoerak"
+
+#~ msgid "Estadísticas de la plataforma"
+#~ msgstr "Plataformaren estatistikak"
+

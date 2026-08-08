@@ -1,0 +1,211 @@
+"""Contexto de generación: extrae los datos LOMLOE que alimentan los prompts.
+
+Dado un :class:`SituacionAprendizaje`, consulta el catálogo (``Competencia``,
+``CriterioEvaluacion``, ``SaberBasico``) filtrado por ``materia`` y
+``curso`` del SA y lo empaqueta en un :class:`ContextoGeneracion`
+serializable, listo para inyectar en los templates de prompt.
+"""
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Any
+
+from sqlalchemy import select
+
+from ..extensions import db
+from ..models import Competencia, CriterioEvaluacion, SaberBasico, SituacionAprendizaje
+
+
+@dataclass
+class ContextoGeneracion:
+    """Datos consolidados para rellenar los prompts LOMLOE.
+
+    Si la SA es una adaptación curricular (``es_adaptacion=True``), se
+    incluyen también el tipo de adaptación y un resumen del contenido
+    de la SA origen para que cada sección se genere ya adaptada.
+    """
+
+    # --- entrada del docente ----------------------------------------------
+    id_situacion: int
+    titulo: str
+    curso: str
+    materia: str
+    idioma: str
+    descripcion: str | None
+    metodologia: str | None
+    num_sesiones: int | None
+    duracion_sesion_minutos: int | None
+    perfil_aula: str | None
+    materiales_contexto: str | None
+
+    # --- catálogo curricular filtrado (ya serializable) ------------------
+    competencias: list[dict[str, Any]] = field(default_factory=list)
+    criterios: list[dict[str, Any]] = field(default_factory=list)
+    saberes: list[dict[str, Any]] = field(default_factory=list)
+
+    # --- adaptación curricular (opcional) ---------------------------------
+    es_adaptacion: bool = False
+    tipo_adaptacion: str | None = None  # "no_significativa" | "significativa"
+    perfil_alumnado: str | None = None
+    contenido_origen_resumen: str | None = None
+    titulo_origen: str | None = None
+
+    def resumen_tecnico(self) -> str:
+        """Cabecera breve para depuración."""
+        marca = f" · ADAPT[{self.tipo_adaptacion}]" if self.es_adaptacion else ""
+        return (
+            f"[SA {self.id_situacion} · {self.materia} · {self.curso}{marca}] "
+            f"{len(self.competencias)}CE / {len(self.criterios)}CR / "
+            f"{len(self.saberes)}SB"
+        )
+
+    def tiene_curriculo(self) -> bool:
+        """¿Hay catálogo LOMLOE que anclar en esta materia y curso?
+
+        Sin él, las secciones ``objetivos`` y ``conexion_curricular`` piden al
+        modelo códigos de un listado vacío. Un modelo que cumpla la
+        instrucción de no inventar devolverá listas vacías; uno que no la
+        cumpla, códigos falsos. Las dos salidas son inservibles, así que más
+        vale detectarlo antes de gastar la llamada.
+        """
+        return bool(self.competencias and self.criterios and self.saberes)
+
+
+# ---------------------------------------------------------------------------
+# Builder
+# ---------------------------------------------------------------------------
+
+
+def construir_contexto(sa: SituacionAprendizaje) -> ContextoGeneracion:
+    """Carga de BD el currículo aplicable y empaqueta el contexto.
+
+    Si ``sa`` es una adaptación curricular (``id_situacion_origen`` no
+    nulo), también carga el resumen de la SA origen y rellena los campos
+    de adaptación para que los prompts puedan generar contenido adaptado.
+    """
+    competencias = _cargar_competencias(sa.materia, sa.curso)
+    criterios = _cargar_criterios(sa.materia, sa.curso)
+    saberes = _cargar_saberes(sa.materia, sa.curso)
+
+    es_adaptacion = sa.id_situacion_origen is not None
+    contenido_origen_resumen: str | None = None
+    titulo_origen: str | None = None
+    if es_adaptacion:
+        sa_origen = db.session.get(SituacionAprendizaje, sa.id_situacion_origen)
+        if sa_origen is not None:
+            titulo_origen = sa_origen.titulo
+            contenido_origen_resumen = _resumir_contenido(sa_origen.contenido or {})
+
+    return ContextoGeneracion(
+        id_situacion=sa.id_situacion,
+        titulo=sa.titulo,
+        curso=sa.curso,
+        materia=sa.materia,
+        idioma=sa.idioma,
+        descripcion=sa.descripcion,
+        metodologia=sa.metodologia,
+        num_sesiones=sa.num_sesiones,
+        duracion_sesion_minutos=sa.duracion_sesion_minutos,
+        perfil_aula=sa.perfil_aula,
+        materiales_contexto=sa.materiales_contexto,
+        competencias=[
+            {
+                "codigo": c.codigo,
+                "descripcion": c.descripcion,
+                "descriptores": c.descriptores or [],
+            }
+            for c in competencias
+        ],
+        criterios=[
+            {
+                "codigo": cr.codigo,
+                "competencia": _competencia_codigo_por_id(competencias, cr.id_competencia),
+                "descripcion": cr.descripcion,
+            }
+            for cr in criterios
+        ],
+        saberes=[
+            {
+                "codigo": s.codigo,
+                "bloque": s.bloque,
+                "descripcion": s.descripcion,
+            }
+            for s in saberes
+        ],
+        es_adaptacion=es_adaptacion,
+        tipo_adaptacion=sa.tipo_adaptacion,
+        perfil_alumnado=sa.perfil_alumnado,
+        contenido_origen_resumen=contenido_origen_resumen,
+        titulo_origen=titulo_origen,
+    )
+
+
+def _resumir_contenido(contenido: dict[str, Any]) -> str:
+    """Convierte el contenido JSON de la SA origen en texto legible."""
+    if not contenido:
+        return "(sin contenido previo)"
+    lineas: list[str] = []
+    for clave, valor in contenido.items():
+        if clave.startswith("_"):
+            continue
+        lineas.append(f"### {clave}")
+        if isinstance(valor, dict):
+            for k, v in valor.items():
+                if k == "_meta":
+                    continue
+                if isinstance(v, (list, dict)):
+                    import json as _json
+                    lineas.append(f"- {k}: {_json.dumps(v, ensure_ascii=False)[:400]}")
+                else:
+                    lineas.append(f"- {k}: {v}")
+        elif isinstance(valor, list):
+            for item in valor[:10]:
+                lineas.append(f"- {item}")
+        else:
+            lineas.append(str(valor))
+    return "\n".join(lineas) if lineas else "(sin contenido previo)"
+
+
+
+# ---------------------------------------------------------------------------
+# Helpers de carga
+# ---------------------------------------------------------------------------
+
+
+def _cargar_competencias(materia: str, curso: str) -> list[Competencia]:
+    stmt = (
+        select(Competencia)
+        .where(Competencia.materia == materia)
+        .where(Competencia.cursos_aplicables.op("?")(curso))
+        .order_by(Competencia.codigo)
+    )
+    return list(db.session.scalars(stmt).all())
+
+
+def _cargar_criterios(materia: str, curso: str) -> list[CriterioEvaluacion]:
+    stmt = (
+        select(CriterioEvaluacion)
+        .where(CriterioEvaluacion.materia == materia)
+        .where(CriterioEvaluacion.cursos_aplicables.op("?")(curso))
+        .order_by(CriterioEvaluacion.codigo)
+    )
+    return list(db.session.scalars(stmt).all())
+
+
+def _cargar_saberes(materia: str, curso: str) -> list[SaberBasico]:
+    stmt = (
+        select(SaberBasico)
+        .where(SaberBasico.materia == materia)
+        .where(SaberBasico.cursos_aplicables.op("?")(curso))
+        .order_by(SaberBasico.codigo)
+    )
+    return list(db.session.scalars(stmt).all())
+
+
+def _competencia_codigo_por_id(
+    competencias: list[Competencia], id_: int
+) -> str:
+    for c in competencias:
+        if c.id_competencia == id_:
+            return c.codigo
+    return "?"

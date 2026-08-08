@@ -1,0 +1,190 @@
+{
+  "materia_oficial": "DIGITALIZACIÓN",
+  "materia": "Digitalización",
+  "etapa": "ESO",
+  "ciclo": "Único",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "4º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "CE1",
+      "descripcion": "Identificar y resolver problemas técnicos sencillos, conectar y configurar dispositivos a redes domésticas, aplicando los conocimientos de  hardware  y sistemas operativos, para gestionar las herramientas e instalaciones informáticas y de comunicación de uso cotidiano.",
+      "descriptores": [
+        "STEM1",
+        "STEM2",
+        "CD4",
+        "CD5",
+        "CPSAA1",
+        "CPSAA5",
+        "CE3"
+      ]
+    },
+    {
+      "codigo": "CE2",
+      "descripcion": "Configurar el entorno personal de aprendizaje, interactuando y aprovechando los recursos del ámbito digital, para optimizar y gestionar el aprendizaje permanente.",
+      "descriptores": [
+        "CD1",
+        "CD2",
+        "CD3",
+        "CPSAA1",
+        "CPSAA4",
+        "CPSAA5",
+        "CE3"
+      ]
+    },
+    {
+      "codigo": "CE3",
+      "descripcion": "Desarrollar hábitos que fomenten el bienestar digital, aplicando medidas preventivas y correctivas, para proteger dispositivos, datos personales y la propia salud.",
+      "descriptores": [
+        "CCL3",
+        "STEM5",
+        "CD1",
+        "CD4",
+        "CPSAA2",
+        "CPSAA5",
+        "CC2",
+        "CC3"
+      ]
+    },
+    {
+      "codigo": "CE4",
+      "descripcion": "Ejercer una ciudadanía digital crítica, conociendo las posibles acciones que realizar en la red, e identificando sus repercusiones, para hacer un uso activo, responsable y ético de la tecnología.",
+      "descriptores": [
+        "CD3",
+        "CD4",
+        "CPSAA1",
+        "CC1",
+        "CC2",
+        "CC3",
+        "CC4",
+        "CE1"
+      ]
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "CE1",
+      "descripcion": "Conectar dispositivos y gestionar redes locales domésticas y su acceso a internet, aplicando los conocimientos y procesos asociados a sistemas de comunicación alámbrica e inalámbrica con una actitud proactiva."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "CE1",
+      "descripcion": "Instalar y mantener sistemas operativos y máquinas virtuales, configurando sus características en función de sus necesidades personales."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "CE1",
+      "descripcion": "Identificar y resolver problemas técnicos sencillos analizando componentes y funciones de los dispositivos digitales, evaluando las soluciones de manera crítica y reformulando el procedimiento, en caso necesario."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "CE2",
+      "descripcion": "Gestionar el aprendizaje en el ámbito digital, configurando el entorno personal de aprendizaje mediante la integración de recursos digitales de manera autónoma."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "CE2",
+      "descripcion": "Buscar, seleccionar y archivar información en función de sus necesidades haciendo uso de las herramientas del entorno personal de aprendizaje con sentido crítico y siguiendo normas básicas de seguridad en la red."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "CE2",
+      "descripcion": "Crear, programar, integrar y reelaborar contenidos digitales de forma individual o colectiva, en distintos formatos, seleccionando las herramientas más apropiadas para generar nuevo conocimiento y contenidos digitales de manera creativa, respetando los derechos de autor y las licencias de uso."
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "CE2",
+      "descripcion": "Interactuar en espacios virtuales de comunicación y plataformas de aprendizaje colaborativo, compartiendo y publicando información y datos, adaptándose a diferentes audiencias con una actitud participativa y respetuosa."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "CE3",
+      "descripcion": "Proteger los datos personales y la huella digital generada en internet, configurando las condiciones de privacidad de las redes sociales y espacios virtuales de trabajo."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "CE3",
+      "descripcion": "Configurar y actualizar, contraseñas, sistemas operativos, antivirus y otros elementos de protección y seguridad, de forma periódica, en los distintos dispositivos digitales de uso habitual."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "CE3",
+      "descripcion": "Identificar y saber reaccionar ante situaciones que representan una amenaza en la red escogiendo la mejor solución entre diversas opciones, desarrollando prácticas saludables y seguras y valorando el bienestar físico y mental, tanto personal como colectivo."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "CE4",
+      "descripcion": "Hacer un uso ético de los datos y las herramientas digitales, aplicando las normas de etiqueta digital y respetando la privacidad, las licencias de uso y la propiedad intelectual en la comunicación, colaboración y participación activa en la red."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "CE4",
+      "descripcion": "Reconocer las aportaciones de las tecnologías digitales en las gestiones administrativas y el comercio electrónico, siendo consciente de la brecha social de acceso, uso y aprovechamiento de dichas tecnologías para diversos colectivos."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "CE4",
+      "descripcion": "Valorar la importancia de la oportunidad, facilidad y libertad de expresión que suponen los medios digitales conectados, analizando de forma crítica los mensajes que se reciben y se transmiten, teniendo en cuenta su objetividad, ideología, intencionalidad, sesgos y caducidad."
+    },
+    {
+      "codigo": "4.4",
+      "competencia": "CE4",
+      "descripcion": "Analizar la necesidad y los beneficios globales de un uso y desarrollo ecosocialmente responsable de las tecnologías digitales, teniendo en cuenta criterios de accesibilidad, sostenibilidad e impacto."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Dispositivos digitales, sistemas operativos y de comunicación",
+      "titulo": "Dispositivos digitales, sistemas operativos y de comunicación",
+      "items": [
+        "Arquitectura de ordenadores: elementos, montaje, configuración y resolución de problemas.",
+        "Sistemas operativos: instalación, actualización y configuración de usuario. Máquinas virtuales.",
+        "Sistemas de comunicación e internet. Dispositivos de red y funcionamiento. Procedimiento de configuración de una red doméstica y conexión de dispositivos. Comunicación alámbrica e inalámbrica.",
+        "Dispositivos conectados ( IoT + wearables ). Configuración y conexión de dispositivos."
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Digitalización del entorno personal de aprendizaje",
+      "titulo": "Digitalización del entorno personal de aprendizaje",
+      "items": [
+        "Estrategias de búsqueda de información y datos: filtros avanzados.",
+        "Estrategias de evaluación de la información y los datos: criterios de calidad, vigencia, fiabilidad, utilidad y pertinencia.",
+        "Estrategias de almacenamiento, organización y recuperación de la información y los datos en entornos estructurados. Marcadores, marcadores sociales y agregadores.",
+        "Edición, programación y creación de contenidos: aplicaciones de productividad y de edición, desarrollo de aplicaciones sencillas para dispositivos móviles y web, realidad virtual, aumentada y mixta.",
+        "Comunicación y colaboración en red. Herramientas colaborativas. Herramientas de comunicación síncrona y asíncrona. Etiqueta digital.",
+        "Publicación y difusión responsable en redes. Identidades digitales.",
+        "Software  comercial y libre."
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Seguridad y bienestar digital",
+      "titulo": "Seguridad y bienestar digital",
+      "items": [
+        "Seguridad de dispositivos. Medidas preventivas y correctivas para hacer frente a riesgos, amenazas y ataques a dispositivos. Cortafuegos, antivirus, etc.",
+        "Seguridad y protección de datos. Reputación, privacidad y huella digital. Medidas preventivas. Robustez de contraseñas.",
+        "Configuración en redes sociales. Gestión de identidades virtuales. Grupos y permisos en entornos virtuales.",
+        "Medidas de protección y cuidado de la salud física y mental. Riesgos y amenazas al bienestar personal (sedentarismo, dependencia tecnológica, etc.). Prácticas saludables.",
+        "Situaciones de violencia y de riesgo en la red (ciberacoso, sextorsión, suplantación de identidad, acceso a contenidos inadecuados, etc.). Opciones de respuesta."
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Ciudadanía digital crítica",
+      "titulo": "Ciudadanía digital crítica",
+      "items": [
+        "Interactividad en la red: libertad de expresión, etiqueta digital, propiedad intelectual y licencias de uso.",
+        "Educación mediática: periodismo digital, blogosfera, estrategias comunicativas y uso crítico de la red, herramientas para detectar noticias falsas y fraudes.",
+        "Gestiones administrativas: servicios públicos en línea, registros digitales y certificados oficiales.",
+        "Comercio electrónico: facturas digitales, formas de pago y criptomonedas.",
+        "Ética en el uso de datos y herramientas digitales: inteligencia artificial, sesgos algorítmicos e ideológicos, obsolescencia programada soberanía tecnológica y brecha digital.",
+        "Activismo en línea: plataformas de iniciativa ciudadana y cibervoluntariado y comunidades de  hardware  y  software  libres."
+      ]
+    }
+  ]
+}

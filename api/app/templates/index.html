@@ -1,0 +1,273 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero" aria-labelledby="t-hero">
+  <p class="badge" style="background: var(--color-secondary-soft); color: var(--color-secondary-hover);">
+    {{ _('LOMLOE · Real Decreto 217/2022') }}
+  </p>
+  <h1 id="t-hero">{{ _('Situaciones de Aprendizaje, generadas con IA') }}</h1>
+  <p class="lead">
+    {{ _('Plataforma para docentes que automatiza la creación de Situaciones de Aprendizaje conforme al currículo LOMLOE: justificación, objetivos, competencias, secuencia didáctica, evaluación y atención a la diversidad.') }}
+  </p>
+</section>
+
+<!-- Bloque para usuario anónimo: empezar ahora con CTAs centrados. -->
+<article class="card card--accent" data-auth="anonymous" aria-labelledby="t-empezar">
+  <h2 id="t-empezar">{{ _('Empieza ahora') }}</h2>
+  <p>{{ _('Crea una cuenta o accede con la tuya para gestionar tus situaciones de aprendizaje.') }}</p>
+  <div class="actions">
+    <a href="/register" class="btn btn--primary">{{ _('Crear cuenta') }}</a>
+    <a href="/login" class="btn">{{ _('Iniciar sesión') }}</a>
+  </div>
+</article>
+
+<!-- Dashboard del docente autenticado: SAs recientes · acciones · estadísticas. -->
+<section class="dashboard-grid" data-auth="required" aria-label="{{ _('Panel del docente') }}" hidden>
+  <article class="card dashboard-recientes" aria-labelledby="t-recientes">
+    <h2 id="t-recientes">{{ _('Situaciones recientes') }}</h2>
+    <p class="lead" id="recientes-resumen">{{ _('Cargando…') }}</p>
+    <ul class="lista-recientes" id="recientes-lista" hidden></ul>
+    <p class="lista-recientes__vacio" id="recientes-vacio" hidden>
+      {{ _('Aún no has creado ninguna situación.') }}
+    </p>
+    <p class="dashboard-recientes__pie">
+      <a href="/situaciones" class="link">{{ _('Ver todas →') }}</a>
+    </p>
+  </article>
+
+  <article class="card card--accent dashboard-acciones" aria-labelledby="t-acciones">
+    <h2 id="t-acciones">{{ _('Tu espacio de trabajo') }}</h2>
+    <p id="estado-msg-auth">{{ _('Cargando perfil…') }}</p>
+    <div class="actions actions--vertical">
+      <a href="/situaciones/nueva" class="btn btn--primary">
+        <i data-lucide="plus" aria-hidden="true"></i>
+        <span>{{ _('Nueva situación de aprendizaje') }}</span>
+      </a>
+      <a href="/situaciones" class="btn">
+        <i data-lucide="folder-open" aria-hidden="true"></i>
+        <span>{{ _('Ver mis situaciones') }}</span>
+      </a>
+      <a href="/perfil" class="btn">
+        <i data-lucide="user" aria-hidden="true"></i>
+        <span>{{ _('Mi perfil') }}</span>
+      </a>
+    </div>
+  </article>
+
+  <article class="card dashboard-stats" aria-labelledby="t-stats">
+    <h2 id="t-stats">{{ _('Tus estadísticas') }}</h2>
+    <dl class="stats-grid" aria-busy="true" id="stats-grid">
+      <div class="stat">
+        <dt>{{ _('Total') }}</dt>
+        <dd id="stat-total">—</dd>
+      </div>
+      <div class="stat stat--warn">
+        <dt>{{ _('En borrador') }}</dt>
+        <dd id="stat-borrador">—</dd>
+      </div>
+      <div class="stat stat--ok">
+        <dt>{{ _('Generadas') }}</dt>
+        <dd id="stat-generadas">—</dd>
+      </div>
+      <div class="stat stat--ok">
+        <dt>{{ _('Finalizadas') }}</dt>
+        <dd id="stat-finalizadas">—</dd>
+      </div>
+    </dl>
+  </article>
+</section>
+
+<section aria-labelledby="t-pasos">
+  <h2 id="t-pasos" class="sr-only">{{ _('¿Cómo funciona?') }}</h2>
+  <div class="features-grid">
+    <article class="feature">
+      <div class="feature__num" aria-hidden="true">1</div>
+      <h3>{{ _('Describe tu contexto') }}</h3>
+      <p>{{ _('Indica materia, curso, número de sesiones, perfil del alumnado y materiales disponibles.') }}</p>
+    </article>
+    <article class="feature">
+      <div class="feature__num" aria-hidden="true">2</div>
+      <h3>{{ _('Genera con IA') }}</h3>
+      <p>{{ _('El sistema redacta las seis secciones LOMLOE en menos de dos minutos, citando criterios y saberes del currículo oficial.') }}</p>
+    </article>
+    <article class="feature">
+      <div class="feature__num" aria-hidden="true">3</div>
+      <h3>{{ _('Edita y exporta') }}</h3>
+      <p>{{ _('Refina cualquier sección, crea adaptaciones (ACNS / ACS) y descarga la SA en PDF o DOCX lista para entregar.') }}</p>
+    </article>
+  </div>
+</section>
+
+<article class="card" aria-labelledby="t-ayuda">
+  <h2 id="t-ayuda">{{ _('¿Necesitas ayuda?') }}</h2>
+  <p>
+    {{ _('Consulta el <a href="/ayuda">centro de ayuda</a> para guías rápidas o explora el <a href="/mapa-web">mapa web</a> para ver todas las secciones disponibles.')|safe }}
+  </p>
+</article>
+{% endblock %}
+
+{% block scripts %}
+<script>
+/* ------------------------------------------------------------------
+   Dashboard del docente autenticado: hidrata el bloque de tres
+   columnas (recientes · acciones · estadísticas) a partir de un
+   único listado completo de situaciones del usuario. Si la petición
+   devuelve 401 (no autenticado) abandonamos silenciosamente: el
+   script global ``app.js`` ya muestra el bloque anónimo.
+   ------------------------------------------------------------------ */
+
+/* Cadenas del JavaScript. No pasan por _() del servidor, así que sin esto la
+   página saldría a medias en las otras tres lenguas. Singular y plural como
+   cadenas separadas: cada lengua concuerda a su manera y construirlo con un
+   ternario dentro del texto lo hace intraducible. */
+const T = {
+  tienesUna: {{ _('Tienes 1 situación en tu cuenta.')|tojson }},
+  tienesVarias: {{ _('Tienes {n} situaciones en tu cuenta.')|tojson }},
+  sinNinguna: {{ _('Aún no has creado situaciones. ¡Empieza por una nueva!')|tojson }},
+  recienteUna: {{ _('Tu situación más reciente.')|tojson }},
+  recientesVarias: {{ _('Tus {n} situaciones más recientes.')|tojson }},
+};
+
+const fmt = (plantilla, valores) =>
+  plantilla.replace(/\{([a-z_]+)\}/g, (_m, clave) =>
+    valores[clave] !== undefined ? valores[clave] : `{${clave}}`);
+
+/* Un administrador ve TODAS las situaciones —`situacion_service.listar` no
+   filtra por propietario para ese rol—, así que «tus estadísticas» le mentiría:
+   los números son de la plataforma entera.
+
+   Se cambia el texto en vez de servir dos <h2> y ocultar uno: ambos son
+   destino de un aria-labelledby, y por esa vía el nombre accesible SÍ incluye
+   el texto de los elementos con `hidden`. Un lector de pantalla anunciaría las
+   dos frases seguidas. */
+const ROTULOS_ADMIN = {
+  't-recientes': {{ _('Situaciones recientes de toda la plataforma')|tojson }},
+  't-stats': {{ _('Estadísticas de la plataforma')|tojson }},
+};
+
+(async function rotularSegunRol() {
+  try {
+    const res = await fetch('/me', { headers: { 'Accept': 'application/json' } });
+    if (!res.ok) return;
+    const usuario = await res.json();
+    if (usuario.rol !== 'administrador') return;
+    for (const [id, texto] of Object.entries(ROTULOS_ADMIN)) {
+      const el = document.getElementById(id);
+      if (el) el.textContent = texto;
+    }
+  } catch (_) { /* sin sesión o sin red: se quedan los rótulos de partida */ }
+})();
+
+/* Los rótulos de estado se traducen igual que el resto: son lo primero que
+   ve el docente en cada tarjeta. Estaban a pelo desde el TFG. */
+const ESTADOS_HUMANOS = {
+  borrador: {{ _('Borrador')|tojson }},
+  generando: {{ _('Generando…')|tojson }},
+  generada: {{ _('Generada')|tojson }},
+  error_generacion: {{ _('Error')|tojson }},
+  finalizada: {{ _('Finalizada')|tojson }},
+};
+
+const ESTADO_CLASE = {
+  borrador: '',
+  generando: 'badge--warn',
+  generada: 'badge--ok',
+  error_generacion: 'badge--err',
+  finalizada: 'badge--ok',
+};
+
+function escapeHtml(s) {
+  return String(s ?? '').replace(/[&<>"']/g, (c) => ({
+    '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+  }[c]));
+}
+
+function fmtFechaCorta(iso) {
+  if (!iso) return '—';
+  const d = new Date(iso);
+  return isNaN(d) ? iso : d.toLocaleDateString('es-ES', {
+    day: '2-digit', month: '2-digit', year: 'numeric'
+  });
+}
+
+async function cargarDashboard() {
+  /* Dos peticiones porque son dos preguntas distintas: el listado devuelve
+     una página de resultados, el resumen cuenta TODAS.
+
+     Contaba antes recorriendo el listado en JavaScript, y al paginarlo el
+     desglose pasó a calcularse sobre la primera página: con 23 situaciones
+     mostraba 10. Se cuenta en la base de datos. */
+  const [resLista, resResumen] = await Promise.all([
+    fetch('/api/situaciones', { headers: { 'Accept': 'application/json' } }),
+    fetch('/api/situaciones/resumen', { headers: { 'Accept': 'application/json' } }),
+  ]);
+  if (!resLista.ok) return;  // 401 sin sesión: app.js gestiona el bloque anónimo.
+  const datos = await resLista.json();
+  const items = datos.situaciones;
+
+  // ---- Estadísticas: contadas en servidor ---------------------------
+  if (resResumen.ok) {
+    const stats = await resResumen.json();
+    document.getElementById('stat-total').textContent       = stats.total;
+    document.getElementById('stat-borrador').textContent    = stats.borrador;
+    document.getElementById('stat-generadas').textContent   = stats.generada;
+    document.getElementById('stat-finalizadas').textContent = stats.finalizada;
+    document.getElementById('stats-grid').removeAttribute('aria-busy');
+  }
+
+  // ---- Mensaje del bloque central -----------------------------------
+  const msg = document.getElementById('estado-msg-auth');
+  if (msg) {
+    /* Se cuenta sobre el TOTAL, no sobre la página: «tienes 10» con 23 en la
+       cuenta sería falso. */
+    msg.textContent = datos.total === 0
+      ? T.sinNinguna
+      : datos.total === 1
+        ? T.tienesUna
+        : fmt(T.tienesVarias, { n: datos.total });
+  }
+
+  // ---- Lista de las 3 más recientes ---------------------------------
+  // El backend ya devuelve ordenado por fecha_modificacion DESC, pero
+  // forzamos el orden para no depender de su contrato implícito.
+  const recientes = [...items]
+    .sort((a, b) => new Date(b.fecha_modificacion) - new Date(a.fecha_modificacion))
+    .slice(0, 3);
+
+  const lista = document.getElementById('recientes-lista');
+  const vacio = document.getElementById('recientes-vacio');
+  const resumen = document.getElementById('recientes-resumen');
+
+  if (!recientes.length) {
+    resumen.textContent = '';
+    vacio.hidden = false;
+    lista.hidden = true;
+    return;
+  }
+  resumen.textContent = recientes.length === 1
+    ? T.recienteUna
+    : fmt(T.recientesVarias, { n: recientes.length });
+  vacio.hidden = true;
+  lista.hidden = false;
+  lista.innerHTML = '';
+  for (const sa of recientes) {
+    const li = document.createElement('li');
+    const estadoCls = ESTADO_CLASE[sa.estado] || '';
+    const estadoTxt = ESTADOS_HUMANOS[sa.estado] || sa.estado;
+    li.innerHTML = `
+      <a href="/situaciones/${sa.id_situacion}" class="lista-recientes__enlace">
+        <span class="lista-recientes__titulo">${escapeHtml(sa.titulo)}</span>
+        <span class="lista-recientes__meta">
+          ${escapeHtml(sa.materia)} · ${escapeHtml(sa.curso)} ·
+          ${fmtFechaCorta(sa.fecha_modificacion)}
+        </span>
+        <span class="badge ${estadoCls}">${estadoTxt}</span>
+      </a>
+    `;
+    lista.appendChild(li);
+  }
+}
+
+cargarDashboard();
+</script>
+{% endblock %}

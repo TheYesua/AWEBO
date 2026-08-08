@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block title %}Accesibilidad · AWEBO{% endblock %}
+
+{% block content %}
+<section class="hero">
+  <h1>{{ _('Declaración de accesibilidad') }}</h1>
+  <p class="lead">
+    {# El marcado va DENTRO de la cadena, no partiéndola en trozos. Traducir
+       «para» o «2.1 nivel AA.» por separado es imposible: cada lengua ordena
+       la frase a su manera y el traductor no ve dónde encaja el fragmento.
+       De ahí el |safe: el HTML sale de nuestros propios catálogos. #}
+    {{ _('La aplicación se ha diseñado conforme a las <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.1 nivel AA.')|safe }}
+  </p>
+</section>
+
+<article class="card">
+  <h2>{{ _('Características incluidas') }}</h2>
+  <ul>
+    <li>{{ _('Enlace <strong>«Pasar al contenido principal»</strong> al inicio de cada página.')|safe }}</li>
+    <li>{{ _('Foco visible reforzado (no depende solo del color).') }}</li>
+    <li>{{ _('Navegación completa por teclado: <kbd>Tab</kbd>/<kbd>Mayús+Tab</kbd> para moverse, <kbd>Intro</kbd> para activar, <kbd>Esc</kbd> para cerrar diálogos.')|safe }}</li>
+    <li>{{ _('Etiquetas y encabezados semánticos (<code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;h1&gt;–&lt;h4&gt;</code>).')|safe }}</li>
+    <li>{{ _('Imágenes con texto alternativo y SVGs decorativos marcados con <code>aria-hidden</code>.')|safe }}</li>
+    <li>{{ _('Formularios con <code>label</code> asociado, mensajes de error anunciados a lectores de pantalla y campos con <code>aria-invalid</code> cuando procede.')|safe }}</li>
+    <li>{{ _('Contraste de texto mínimo 4.5:1 (3:1 en texto grande).') }}</li>
+    <li>{{ _('Información que no se transmite solo mediante color (iconos lingüísticos, texto y formas refuerzan los estados).') }}</li>
+    {# «%%» y no «%»: Jinja aplica `cadena % variables` al resultado de _(),
+       trate o no la cadena con marcadores, así que un % suelto la rompe en
+       tiempo de renderizado con «incomplete format». La convención gettext es
+       duplicarlo; al renderizar sale un único %. Vale para todas las lenguas:
+       si una traducción escribe un % sin duplicar, revienta esa página. El
+       test de renderizado de tests/unit/test_i18n.py lo vigila. #}
+    <li>{{ _('Diseño adaptable a móvil, tableta y escritorio; el contenido no se pierde al ampliar hasta el 200%%.') }}</li>
+    <li>{{ _('Animaciones reducidas si el sistema indica <code>prefers-reduced-motion: reduce</code>.')|safe }}</li>
+    <li>{{ _('<a href="/mapa-web">Mapa web</a> para navegación alternativa.')|safe }}</li>
+    <li>{{ _('Lectura en voz alta de cada sección de una situación, con la voz que el sistema tenga instalada. No requiere conexión ni servicio externo.')|safe }}</li>
+  </ul>
+</article>
+
+<article class="card">
+  <h2>{{ _('Limitaciones conocidas') }}</h2>
+  <p>
+    {{ _('Esta aplicación es un Trabajo de Fin de Grado en evaluación continua. Si detectas alguna barrera de accesibilidad, puedes comunicarla en la sección de <a href="/ayuda">Ayuda</a>.')|safe }}
+  </p>
+</article>
+{% endblock %}

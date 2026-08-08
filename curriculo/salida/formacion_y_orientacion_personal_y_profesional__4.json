@@ -1,0 +1,206 @@
+{
+  "materia_oficial": "FORMACIÓN Y ORIENTACIÓN PERSONAL Y PROFESIONAL",
+  "materia": "Formación y Orientación Personal y Profesional",
+  "etapa": "ESO",
+  "ciclo": "Único",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "4º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "CE1",
+      "descripcion": "Comprender los procesos físicos y psicológicos implicados en la cognición, la motivación y el aprendizaje, analizando sus implicaciones en la conducta y desarrollando estrategias de gestión emocional y del propio proceso de aprendizaje, para mejorar el desempeño en el ámbito personal, social y académico y lograr mayor control sobre las acciones y sus consecuencias.",
+      "descriptores": [
+        "CPSAA1",
+        "CPSAA3",
+        "CPSAA4",
+        "CPSAA5"
+      ]
+    },
+    {
+      "codigo": "CE2",
+      "descripcion": "Comprender las principales características del desarrollo evolutivo de la persona, analizando aquellos elementos de la madurez que condicionan los comportamientos e identificando las cualidades personales y de relación social propias y de los demás, para potenciar las que favorecen la autonomía y permiten afrontar de forma eficaz los nuevos retos.",
+      "descriptores": [
+        "CPSAA1",
+        "CPSAA3",
+        "CPSAA4",
+        "CPSAA5",
+        "CC1",
+        "CE2"
+      ]
+    },
+    {
+      "codigo": "CE3",
+      "descripcion": "Conocer y comprender al ser humano, sus sociedades y culturas, analizando con empatía su diversidad y complejidad desde diferentes perspectivas, para fomentar el espíritu crítico sobre aspectos que dirigen el funcionamiento humano, social y cultural.",
+      "descriptores": [
+        "CPSAA3",
+        "CC1",
+        "CC2",
+        "CC3",
+        "CE2"
+      ]
+    },
+    {
+      "codigo": "CE4",
+      "descripcion": "Conocer la dimensión social y antropológica del ser humano y desarrollar estrategias y habilidades sociales adecuadas a contextos cambiantes y a grupos diferentes, considerando los factores personales y socioculturales que intervienen en la configuración psicológica de la persona, para comprenderse a sí misma e interactuar con los demás desde el respeto a la diversidad personal, social y cultural.",
+      "descriptores": [
+        "CC1",
+        "CC2",
+        "CC3",
+        "CE2"
+      ]
+    },
+    {
+      "codigo": "CE5",
+      "descripcion": "Explorar las oportunidades académicas y profesionales que ofrece el entorno, descubriendo y priorizando las necesidades e intereses personales y vocacionales y desarrollando el espíritu de iniciativa y de superación, así como las destrezas necesarias en la toma de decisiones, para llevar a cabo un proyecto personal, académico y profesional propio y realizar una primera aproximación al diseño de un plan de búsqueda activa de empleo.",
+      "descriptores": [
+        "CD1",
+        "CD3",
+        "CPSAA4",
+        "CPSAA5",
+        "CE1",
+        "CE2",
+        "CE3"
+      ]
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "CE1",
+      "descripcion": "Mejorar el desempeño personal, social y académico aplicando estrategias de aprendizaje y gestión emocional que permitan mayor control sobre las acciones y sus consecuencias."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "CE1",
+      "descripcion": "Identificar y aplicar los procesos que intervienen en el aprendizaje, analizando sus implicaciones y desarrollando estrategias que favorezcan la adquisición de conocimientos, destrezas y actitudes."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "CE1",
+      "descripcion": "Analizar la importancia del componente emocional, tomando conciencia de su repercusión en el aprendizaje y desarrollando estrategias que lo mejoren."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "CE1",
+      "descripcion": "Analizar la relación de la cognición, la motivación, el aprendizaje y la gestión emocional con la conducta, tanto propia como de los demás, a partir de las bases teóricas fundamentales de los procesos físicos y psicológicos que intervienen en ellos."
+    },
+    {
+      "codigo": "1.5",
+      "competencia": "CE1",
+      "descripcion": "Tomar conciencia de la importancia del componente motivacional, analizando los motivos que determinan la conducta y valorando la repercusión que tiene en las acciones."
+    },
+    {
+      "codigo": "1.6",
+      "competencia": "CE1",
+      "descripcion": "Comprender los procesos implicados en el razonamiento, la toma de decisiones y en la resolución de problemas a partir de las aportaciones de la neurociencia y analizando las acciones y circunstancias que favorecen la consecución de los objetivos."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "CE2",
+      "descripcion": "Afrontar nuevos retos, de forma eficaz y con progresiva autonomía, identificando las cualidades personales y sociales propias y de los demás y analizando los elementos que condicionan los comportamientos y actuaciones en el proceso de desarrollo evolutivo."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "CE2",
+      "descripcion": "Conocer el desarrollo evolutivo de las personas analizando y comprendiendo las principales características de la madurez que van conformando a la persona en distintos planos: físico, cognitivo, social, emocional."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "CE2",
+      "descripcion": "Identificar cualidades personales y de los demás, reflexionando sobre la importancia de potenciar aquellas que permitan afrontar eficazmente los retos y faciliten el proceso de transición de la adolescencia a la edad adulta."
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "CE2",
+      "descripcion": "Reconocer los cambios significativos que se producen en la construcción de la propia identidad y del autoconcepto a lo largo del desarrollo evolutivo, partiendo de la propia experiencia y reflexionado sobre los factores que permiten afrontar esos cambios de una manera más equilibrada."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "CE3",
+      "descripcion": "Reflexionar de manera crítica sobre la condición humana, la sociedad y la cultura a partir del conocimiento que proporcionan las ciencias humanas y sociales."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "CE3",
+      "descripcion": "Analizar la diversidad personal, social y cultural desde distintas perspectivas a partir de los conocimientos que proporcionan las ciencias humanas y sociales, mostrando actitudes de respeto y empatía por lo diferente y valorando la equidad y la no discriminación."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "CE4",
+      "descripcion": "Desarrollar estrategias y habilidades que faciliten la adaptación a nuevos grupos y contextos a partir del conocimiento social y antropológico del ser humano."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "CE4",
+      "descripcion": "Analizar los factores personales y socioculturales que intervienen en la configuración psicológica de la persona a partir del conocimiento comparado de la dimensión social y antropológica del ser humano."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "CE4",
+      "descripcion": "Valorar la diversidad desde el respeto, la inclusión y la igualdad real y efectiva entre hombres y mujeres, considerándola un elemento enriquecedor a nivel personal, social y cultural."
+    },
+    {
+      "codigo": "4.4",
+      "competencia": "CE4",
+      "descripcion": "Reflexionar sobre el impacto que tiene la sociedad y la cultura en la construcción de la personalidad, analizando los elementos socioculturales que pueden influir en las percepciones, actitudes, interpretaciones o respuestas ante las situaciones."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "CE5",
+      "descripcion": "Realizar un proyecto personal, académico y profesional propio y aproximarse al proceso de búsqueda activa de empleo, priorizando las necesidades y descubriendo los intereses personales y vocacionales mediante la exploración de las oportunidades académicas y profesionales que ofrece el entorno presencial y virtual, y desarrollando las destrezas necesarias en el proceso de toma de decisiones."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "CE5",
+      "descripcion": "Explorar el entorno próximo identificando las oportunidades académicas y profesionales que ofrece, valorando aquellas que mejor se adaptan a las cualidades e intereses personales y potenciando el espíritu de iniciativa y superación."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "CE5",
+      "descripcion": "Reconocer los recursos necesarios que faciliten la consecución de un desempeño personal, social, académico o profesional concreto a partir de la identificación de las fortalezas y debilidades propias, adecuándolas con realismo a las circunstancias que se puedan presentar."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. El ser humano y el conocimiento de uno mismo",
+      "titulo": "El ser humano y el conocimiento de uno mismo",
+      "items": [
+        "Visión y conocimiento del ser humano desde las perspectivas psicológica, antropológica y sociológica.",
+        "Psicología. Neurociencia, conducta y cognición. Sistema nervioso central y sistema nervioso periférico. Neuronas, circuitos neuronales y estructura funcional del cerebro. Fundamentos biológicos de la conducta. Circuitos de recompensa y su relación con las adicciones. Bienestar y hábitos saludables. La adolescencia desde el punto de vista psicológico. Desarrollo cognitivo durante la adolescencia: Piaget y Vygotsky. Desarrollo de la personalidad durante la adolescencia: Erikson y Cattell. Reconocimiento, control y gestión de las emociones. Desarrollo personal dentro del grupo: sentido de pertenencia. Influencia del grupo en el individuo: presión de grupo y presión social.",
+        "Antropología. El ser humano como ser cultural. Concepto antropológico de cultura. El ser humano como construcción cultural. Humanización y cultura. Diversidad cultural.",
+        "Sociología. El ser humano como ser social. Concepto de Sociedad. Estrategias de inclusión y cohesión social para mejorar la calidad de vida de las personas. El adolescente y sus relaciones. Búsqueda de la autonomía y asunción progresiva de responsabilidades. Conductas prosociales y antisociales. Normas, roles y estereotipos. Igualdad de género. Diversidad y convivencia positiva dentro los grupos. Procesos de transición a la vida adulta en perspectiva comparada: elementos diferenciadores en distintas sociedad y culturas."
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Formación y orientación personal y profesional hacia la vida adulta",
+      "titulo": "Formación y orientación personal y profesional hacia la vida adulta",
+      "items": [
+        "Procesos implicados en el aprendizaje: atención, motivación y memoria. Estrategias de aprendizaje y estudio. Inteligencia emocional e inteligencia ejecutiva.",
+        "Lo heredado y lo aprendido: biología y cultura. Proceso de socialización. Agentes de socialización. Aprendizaje formal e informal.",
+        "2. Construcción del sentido de competencia y logro.",
+        "Autoconocimiento. Autonomía personal y autopercepción. Estilo atribucional. Capacidad autocrítica. Iniciativa personal: motivación y perseverancia. Pensamiento creativo. Confianza y seguridad en uno mismo.",
+        "Estrategias para enfrentarse al fracaso y a la frustración.",
+        "Habilidades sociales.",
+        "Habilidades comunicativas. Barreras en la comunicación y estrategias para superarlas. La comunicación efectiva y su impacto. La construcción del mensaje comunicado y sus efectos.",
+        "Habilidades de planificación, organización y gestión de equipos: liderazgo, gestión de tiempos y gestión de riesgos.",
+        "Herramientas digitales para la interacción con los demás: redes sociales y otras plataformas. Impacto y consecuencias en el modo de relacionarse en la adolescencia. Huella y reputación digital. Gestión de identidades digitales: personal y profesional.",
+        "4. Orientación hacia la formación académica y profesional. Exploración del entorno profesional.",
+        "Programas, oportunidades y ayudas para la formación. Servicios de orientación académica y profesional. Formación permanente a lo largo de la vida. Estudiar en Europa: programa ERASMUS.",
+        "Exploración y descubrimiento del entorno de trabajo: las relaciones laborales. Tendencias laborales y demandas del mercado. Retos de la revolución digital: formación digital, cambios en la empleabilidad y la ciberseguridad. Emprendimiento e intraemprendimiento. Participación social activa. El ser humano como  homo oeconomicus . Teorías críticas: el ser humano como  homo empathicus,  racionalidad incompleta, institucionalismo. Colaboración y voluntariado."
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Proyecto personal, académico-profesional y aproximación a la búsqueda activa de empleo",
+      "titulo": "Proyecto personal, académico-profesional y aproximación a la búsqueda activa de empleo",
+      "items": [
+        "Planes de autoconocimiento y de formación académica y profesional: cualidades personales, fortalezas y debilidades e inquietudes personales y vocacionales. La diversidad como elemento enriquecedor. Fases del plan: exploración, diagnóstico, perfiles académicos y profesionales, toma de decisiones. Aspiraciones y metas. Ayudas y recursos para superar carencias y afrontar retos personales y profesionales: la importancia de la reflexión y de la formación.",
+        "Aproximación a un plan de búsqueda activa de empleo con proyección hacia el futuro. Actitud proactiva. Estrategias de búsqueda de empleo. Instrumentos de búsqueda de empleo: CV, vídeo currículo, marca personal, portfolio. Red Eures."
+      ]
+    }
+  ]
+}

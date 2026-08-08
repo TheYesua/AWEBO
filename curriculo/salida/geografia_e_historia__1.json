@@ -1,0 +1,319 @@
+{
+  "materia_oficial": "GEOGRAFÍA E HISTORIA",
+  "materia": "Geografía e Historia",
+  "etapa": "ESO",
+  "ciclo": "Curso primero",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "CE1",
+      "descripcion": "Buscar, seleccionar, tratar y organizar información sobre temas relevantes del presente y del pasado, usando críticamente fuentes históricas y geográficas, para adquirir conocimientos, elaborar y expresar contenidos en varios formatos.",
+      "descriptores": [
+        "CCL2",
+        "CCL3",
+        "STEM4",
+        "CD1",
+        "CD2",
+        "CC1"
+      ]
+    },
+    {
+      "codigo": "CE2",
+      "descripcion": "Indagar, argumentar y elaborar productos propios sobre problemas geográficos, históricos y sociales que resulten relevantes en la actualidad, desde lo local a lo global, para desarrollar un pensamiento crítico, respetuoso con las diferencias, que contribuya a la construcción de la propia identidad y a enriquecer el acervo común.",
+      "descriptores": [
+        "CCL1",
+        "CCL2",
+        "CD2",
+        "CC1",
+        "CC3",
+        "CE3",
+        "CCEC3"
+      ]
+    },
+    {
+      "codigo": "CE3",
+      "descripcion": "Conocer los principales desafíos a los que se han enfrentado distintas sociedades a lo largo del tiempo, identificando las causas y consecuencias de los cambios producidos y los problemas a los que se enfrentan en la actualidad, mediante el desarrollo de proyectos de investigación y el uso de fuentes fiables, para realizar propuestas que contribuyan al desarrollo sostenible.",
+      "descriptores": [
+        "STEM3",
+        "STEM4",
+        "STEM5",
+        "CPSAA3",
+        "CC3",
+        "CC4",
+        "CE1",
+        "CCEC1"
+      ]
+    },
+    {
+      "codigo": "CE4",
+      "descripcion": "Identificar y analizar los elementos del paisaje y su articulación en sistemas complejos naturales, rurales y urbanos, así como su evolución en el tiempo, interpretando las causas de las transformaciones y valorando el grado de equilibrio existente en los distintos ecosistemas, para promover su conservación, mejora y uso sostenible.",
+      "descriptores": [
+        "CPSAA2",
+        "CC1",
+        "CC2",
+        "CC3",
+        "CC4",
+        "CE1"
+      ]
+    },
+    {
+      "codigo": "CE5",
+      "descripcion": "Analizar de forma crítica planteamientos históricos y geográficos explicando la construcción de los sistemas democráticos y los principios constitucionales que rigen la vida en comunidad, así como asumiendo los deberes y derechos propios de nuestro marco de convivencia, para promover la participación ciudadana y la cohesión social.",
+      "descriptores": [
+        "CCL5",
+        "CC1",
+        "CC2",
+        "CCEC1"
+      ]
+    },
+    {
+      "codigo": "CE6",
+      "descripcion": "Comprender los procesos geográficos, históricos y culturales que han conformado la realidad multicultural en la que vivimos, conociendo y difundiendo la historia y cultura de las minorías étnicas presentes en nuestro país y valorando la aportación de los movimientos en defensa de la igualdad y la inclusión, para reducir estereotipos, evitar cualquier tipo de discriminación y violencia, y reconocer la riqueza de la diversidad.",
+      "descriptores": [
+        "CCL5",
+        "CPSAA3",
+        "CC1",
+        "CC2",
+        "CC3",
+        "CCEC1"
+      ]
+    },
+    {
+      "codigo": "CE7",
+      "descripcion": "Identificar los fundamentos que sostienen las diversas identidades propias y las ajenas, a través del conocimiento y puesta en valor del patrimonio material e inmaterial que compartimos para conservarlo y respetar los sentimientos de pertenencia, así como para favorecer procesos que contribuyan a la cohesión y solidaridad territorial en orden a los valores del europeísmo y de la Declaración Universal de los Derechos Humanos.",
+      "descriptores": [
+        "CP3",
+        "CPSAA1",
+        "CC1",
+        "CC2",
+        "CC3",
+        "CCEC1"
+      ]
+    },
+    {
+      "codigo": "CE8",
+      "descripcion": "Tomar conciencia del papel de los ciclos demográficos, el ciclo vital, las formas de vida y las relaciones intergeneracionales y de dependencia en la sociedad actual y su evolución a lo largo del tiempo, analizándolas de forma crítica, para promover alternativas saludables, sostenibles, enriquecedoras y respetuosas con la dignidad humana y el compromiso con la sociedad y el entorno.",
+      "descriptores": [
+        "STEM5",
+        "CD4",
+        "CPSAA2",
+        "CPSAA5",
+        "CC1",
+        "CC2",
+        "CC3"
+      ]
+    },
+    {
+      "codigo": "CE9",
+      "descripcion": "Conocer y valorar la importancia de la seguridad integral ciudadana en la cultura de convivencia nacional e internacional, reconociendo la contribución del Estado, sus instituciones y otras entidades sociales a la ciudadanía global, a la paz, a la cooperación internacional y al desarrollo sostenible, para promover la consecución de un mundo más seguro, solidario, sostenible y justo.",
+      "descriptores": [
+        "CCL2",
+        "CC1",
+        "CC2",
+        "CC3",
+        "CC4",
+        "CE1",
+        "CCEC1"
+      ]
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "CE1",
+      "descripcion": "Adquirir y generar contenidos propios a través de procesos y estrategias adecuados de búsqueda, selección y tratamiento de la información en entornos digitales."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "CE1",
+      "descripcion": "Elaborar, expresar y presentar contenidos de elaboración propia a través de esquemas, tablas de datos, síntesis y otros formatos, tanto analógicos como digitales, sobre cuestiones relevantes del presente y del pasado."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "CE1",
+      "descripcion": "Localizar espacial y temporalmente determinados temas, cuestiones y acontecimientos de la Prehistoria y la Edad Antigua, identificando su importancia y valor, y utilizando el uso de fuentes de información."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "CE2",
+      "descripcion": "Identificar los principales problemas que afectan a la sociedad actual, valorando su importancia y cómo afectan al entorno local y global, y mostrando una posición responsable y activa ante los mismos."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "CE2",
+      "descripcion": "Argumentar y generar ideas propias sobre determinados problemas actuales, utilizando el conocimiento geográfico e histórico y el uso de fuentes de información."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "CE2",
+      "descripcion": "Elaborar textos escritos y orales, en formatos diversos, que aborden desde el conocimiento geográfico e histórico temas y cuestiones de actualidad, a través de la utilización correcta de términos, conceptos y acontecimientos de estas disciplinas y de otras ciencias sociales."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "CE3",
+      "descripcion": "Adquirir y construir conocimiento sobre cuestiones relevantes del mundo actual y del pasado, desde la Prehistoria a la Edad Antigua, a través de procesos inductivos y el trabajo por proyectos, retos o problemas, iniciándose en la investigación de distintos fenómenos y problemas de la geografía y de la historia y el acercamiento a fuentes directas de información."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "CE3",
+      "descripcion": "Elaborar productos en diversos formatos, analógicos y digitales, siguiendo criterios de eficacia y calidad, que representen adecuadamente la información geográfica e histórica obtenida, y utilizando distintas formas de representación gráfica, cartográfica y visual."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "CE3",
+      "descripcion": "Generar líneas del tiempo que reflejen adecuadamente secuencias temporales, identificando la causalidad de los hechos, la duración de los mismos, así como la diversidad de determinados fenómenos geográficos e históricos con respecto a su desarrollo en el espacio y el tiempo."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "CE3",
+      "descripcion": "Identificar e interpretar los procesos de cambio histórico, así como las consecuencias y resultados de los mismos, a través de la aproximación a las fuentes históricas."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "CE4",
+      "descripcion": "Reconocer la diversidad de paisajes existente en los distintos contextos (natural, rural, urbano), identificando los distintos elementos que interactúan en cada entorno y el grado de transformación y de degradación que presentan."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "CE4",
+      "descripcion": "Identificar los cambios demográficos, económicos y sociales, así como las relaciones pacíficas y de conflicto que han mantenido las distintas sociedades en el tiempo, a través del análisis y la valoración de la acción humana sobre el espacio, tanto en el presente como en el pasado."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "CE4",
+      "descripcion": "Argumentar sobre la necesidad de acciones de defensa, protección, conservación y mejora del entorno (natural, rural y urbano) a través de propuestas e iniciativas que reflejen compromisos y conductas en favor de la sostenibilidad y del reparto justo y solidario de los recursos."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "CE5",
+      "descripcion": "Analizar los distintos contextos geográficos e históricos que han condicionado la vida en comunidad a lo largo de la Prehistoria y la Antigüedad, identificando los modos de obtener y distribuir los recursos, de acceso al poder y de ejercicio del mismo, así como las distintas formas económicas, políticas, sociales y culturales que han ido estableciéndose a través del tiempo y del espacio, incidiendo especialmente en la identificación de las desigualdades sociales y los medios de dominación."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "CE5",
+      "descripcion": "Actuar de forma pacífica y respetuosa y asumir las normas como marco necesario para la convivencia, demostrando capacidad crítica e identificando y respondiendo de manera asertiva ante las situaciones de injusticia y desigualdad."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "CE6",
+      "descripcion": "Situar el nacimiento y desarrollo de distintas culturas y civilizaciones de la Prehistoria y de la Edad Antigua y ubicarlas en el espacio y en el tiempo, integrando los elementos históricos, culturales, institucionales y religiosos que las han conformado, explicando la realidad multicultural generada a lo largo del tiempo e identificando las aportaciones más relevantes de dichas civilizaciones a la cultura universal."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "CE6",
+      "descripcion": "Aplicar estrategias para defender y apreciar la diversidad social y cultural, argumentando e interviniendo en favor de la inclusión, así como rechazando y actuando en contra de cualquier actitud o comportamiento discriminatorio o basado en estereotipos."
+    },
+    {
+      "codigo": "6.3",
+      "competencia": "CE6",
+      "descripcion": "Identificar los distintos movimientos que, a lo largo de la Prehistoria y de la Antigüedad, han actuado en favor de la igualdad y la inclusión social, valorando sus logros y fracasos, y considerando sus acciones como posible referencia en el avance de los derechos y libertades universales."
+    },
+    {
+      "codigo": "6.4",
+      "competencia": "CE6",
+      "descripcion": "Argumentar e intervenir acerca de la igualdad real de hombres y mujeres actuando en contra de cualquier actitud y comportamiento discriminatorio por razón de género."
+    },
+    {
+      "codigo": "7.1",
+      "competencia": "CE7",
+      "descripcion": "Relacionar las culturas y civilizaciones que se han desarrollado en la Prehistoria y en la Edad Antigua con las diversas identidades colectivas que se han ido construyendo hasta la actualidad, reflexionando sobre los múltiples significados que adoptan y sus aportaciones a la cultura humana universal."
+    },
+    {
+      "codigo": "7.2",
+      "competencia": "CE7",
+      "descripcion": "Señalar los fundamentos de la idea de Europa conociendo las diferentes experiencias históricas en la Prehistoria y en la Edad Antigua, e identificando el legado histórico, institucional, artístico y cultural como patrimonio común de la ciudadanía europea."
+    },
+    {
+      "codigo": "7.3",
+      "competencia": "CE7",
+      "descripcion": "Valorar, proteger y conservar el patrimonio artístico, histórico y cultural como fundamento de la identidad colectiva local, autonómica, nacional, europea y universal, considerándolo un bien para el disfrute recreativo y cultural y un recurso para el desarrollo de los pueblos."
+    },
+    {
+      "codigo": "8.1",
+      "competencia": "CE8",
+      "descripcion": "Conocer e interpretar los comportamientos demográficos de la población y los cambios que ha experimentado a lo largo de la historia, analizando su relación con los recursos disponibles, los modos de vida y las formas culturales que han ido adoptando las sociedades desde la Prehistoria y en la Edad Antigua."
+    },
+    {
+      "codigo": "8.2",
+      "competencia": "CE8",
+      "descripcion": "Tomar conciencia del ciclo vital y analizar cómo han cambiado sus características, necesidades y obligaciones en distintos momentos históricos, así como las raíces de la distribución por motivos de género del trabajo doméstico, asumiendo las corresponsabilidades y compromisos propios de la edad en el ámbito familiar, en el entorno escolar y en la comunidad, y valorando la riqueza que aportan las relaciones intergeneracionales."
+    },
+    {
+      "codigo": "8.3",
+      "competencia": "CE8",
+      "descripcion": "Relacionar los cambios en los estilos de vida tradicional y contrastarlos con los que son saludables y sostenibles en el entorno, a través de comportamientos respetuosos con la salud propia, con la de los demás y con otros seres vivos, tomando conciencia de la importancia de promover el propio desarrollo personal."
+    },
+    {
+      "codigo": "9.1",
+      "competencia": "CE9",
+      "descripcion": "Identificar los grandes flujos de intercambio mundial y su conexión con España a lo largo de la Prehistoria y la Edad Antigua, analizando las distintas formas de relación entre comunidades, civilizaciones y estados y reconociendo la importancia de la difusión cultural y de la cooperación entre los pueblos."
+    },
+    {
+      "codigo": "9.2",
+      "competencia": "CE9",
+      "descripcion": "Reconocer los principales retos y problemas del mundo actual, analizando las principales cuestiones relacionadas con la seguridad, la justicia, la paz y la sostenibilidad, identificando los principales mecanismos locales e internacionales para lograr un mundo más justo, sostenible y solidario."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Retos del mundo actual",
+      "titulo": "Retos del mundo actual",
+      "items": [
+        "Ubicación espacial: representación del espacio, orientación y escalas. Utilización de recursos digitales e interpretación y elaboración de mapas, esquemas, imágenes y representaciones gráficas. Tecnologías de la Información Geográfica (TIG).",
+        "Emergencia climática. Elementos y factores que condicionan el clima y el impacto de las actividades humanas. Métodos de recogida de datos meteorológicos e interpretación de gráficos. Vulnerabilidad, prevención y resiliencia de la población ante las catástrofes naturales.",
+        "Biodiversidad: formas y procesos de modificación de la superficie terrestre. Riqueza y valor del patrimonio natural. Conservación y mejora del entorno local y global.",
+        "Tecnologías de la información: manejo y utilización de dispositivos, aplicaciones informáticas y plataformas digitales. Búsqueda, tratamiento de la información y elaboración de conocimiento. Uso seguro de las redes de comunicación. Lectura crítica de la información.",
+        "Sociedad del conocimiento: introducción a los objetivos y estrategias de las ciencias sociales y al uso de sus procedimientos, términos y conceptos. Uso de plataformas digitales.",
+        "Igualdad. Situaciones discriminatorias de las niñas y de las mujeres en el mundo. Roles de género y su manifestación en todos los ámbitos de la sociedad y la cultura.",
+        "Objetivos de Desarrollo Sostenible. La visión de los dilemas del mundo actual, punto de partida para el pensamiento crítico y el desarrollo de juicios propios."
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Sociedades y territorios",
+      "titulo": "Sociedades y territorios",
+      "items": [
+        "Métodos básicos de investigación para la construcción del conocimiento de la Geografía y la Historia. Metodologías del pensamiento geográfico y del pensamiento histórico.",
+        "Las fuentes históricas y arqueológicas como base para la construcción del conocimiento histórico. Objetos y artefactos como fuente para la historia y el legado inmaterial. El significado de los archivos, bibliotecas y museos y del legado histórico y cultural como patrimonio colectivo.",
+        "Tiempo histórico: construcción e interpretación de líneas de tiempo. Cronología: formas de contar y secuenciar el tiempo. Cambio y continuidad, simultaneidad y duración. Periodización histórica desde la Prehistoria hasta la Antigüedad.",
+        "Análisis interdisciplinar del origen del ser humano y del nacimiento de la sociedad. Grandes migraciones humanas y nacimiento de las primeras culturas. De recolectores y cazadores a productores de alimentos. Grandes migraciones y nacimiento de las primeras culturas.",
+        "Condicionantes geográficos en los asentamientos humanos e interpretaciones históricas del surgimiento de las civilizaciones. Estrategias por el control de los recursos en la Antigüedad.",
+        "La organización política del ser humano y las formulaciones estatales en el mundo antiguo: reinos, repúblicas, talasocracias e imperios. Grecia y Roma.",
+        "Viajes, rutas comerciales y sistemas de intercambio en la Antigüedad.",
+        "Violencia y conflictos armados en la Antigüedad. El crecimiento de los ejércitos y la evolución del armamento.",
+        "Complejidad social y nacimiento de la autoridad. Vínculos familiares y relaciones de poder: clanes, tribus y estratificación social.",
+        "Las personas invisibilizadas de la historia: mujeres, esclavos y extranjeros. Personajes femeninos en la Antigüedad.",
+        "El papel de la religión en la organización social, la legitimización del poder y la formación de identidades: politeísmo, monoteísmo, y el origen y difusión de las grandes religiones.",
+        "La transformación humana del territorio y la distribución desigual de los recursos y del trabajo. Grupos sociales y lucha por la supervivencia en la Prehistoria y la Antigüedad.",
+        "Interpretación del territorio y el paisaje. Distribución de la población y formas de poblamiento, la ciudad y el mundo rural en la Prehistoria y la Edad Antigua: poblados, polis, aldeas, urbes, ciudades y villas.",
+        "Relevancia histórica de la Prehistoria y Edad Antigua en la historia de España y su relación con los grandes procesos de la historia de la humanidad. Pueblos prerromanos, Hispania y la antigüedad tardía.",
+        "Significado y función de las expresiones artísticas y culturales en las distintas civilizaciones. Riqueza cultural de la Prehistoria a la Antigüedad. Respeto y conservación del patrimonio material e inmaterial."
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Compromiso cívico",
+      "titulo": "Compromiso cívico",
+      "items": [
+        "Dignidad humana y derechos universales. Convención sobre los Derechos del Niño.",
+        "Alteridad: respeto y aceptación del otro. Comportamientos no discriminatorios y contrarios a cualquier actitud segregadora.",
+        "Igualdad de género. Manifestaciones y conductas no sexistas.",
+        "Interés ante los retos y problemas de actualidad en el entorno local y global.",
+        "Las redes sociales. Seguridad y prevención ante los riegos y peligros del uso de las tecnologías de la información y de la comunicación.",
+        "Convivencia cívica y cultura democrática. Incorporación e implicación de la sociedad civil en procesos democráticos. Participación en proyectos comunitarios.",
+        "Conciencia ambiental. Respeto, protección y cuidado de los seres vivos y del planeta.",
+        "Conservación y defensa del patrimonio histórico, artístico y cultural.",
+        "Solidaridad, empatía y acciones de apoyo a colectivos en situaciones de pobreza, vulnerabilidad y exclusión social.",
+        "Identificación y gestión de las emociones y su repercusión en comportamientos individuales y colectivos.",
+        "Ciclos vitales, uso del tiempo libre y hábitos de consumo. Diferencias y cambios en las formas de vida en las sociedades actuales y en las del pasado.",
+        "La contribución del Estado y sus instituciones a la paz, a la seguridad integral ciudadana y a la convivencia social.",
+        "Ciudadanía europea. Ideas y actitudes en el proyecto de construcción de una identidad común. La seguridad y la cooperación internacional.",
+        "Seguridad vial y movilidad segura, saludable y sostenible. El espacio público."
+      ]
+    }
+  ]
+}

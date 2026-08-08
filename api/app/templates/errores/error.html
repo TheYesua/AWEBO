@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block title %}Error · AWEBO{% endblock %}
+
+{% block content %}
+<section class="hero" aria-labelledby="t-err">
+  {% if exc and exc.code %}
+    <p class="badge badge--err">Error {{ exc.code }}</p>
+  {% else %}
+    <p class="badge badge--err">{{ _('Error') }}</p>
+  {% endif %}
+
+  <h1 id="t-err">
+    {% if exc and exc.code == 403 %}
+      No tienes permiso para acceder a esta página
+    {% elif exc and exc.code == 401 %}
+      Necesitas iniciar sesión
+    {% elif exc and exc.code %}
+      Se ha producido un error ({{ exc.code }})
+    {% else %}
+      Algo no ha ido bien
+    {% endif %}
+  </h1>
+
+  <p class="lead">
+    {% if exc and exc.description %}
+      {{ exc.description }}
+    {% else %}
+      Ha ocurrido un error inesperado. Si el problema persiste, vuelve a
+      intentarlo más tarde o consulta el centro de ayuda.
+    {% endif %}
+  </p>
+
+  <div class="actions">
+    <a href="/" class="btn btn--primary">{{ _('Ir al inicio') }}</a>
+    <a href="/ayuda" class="btn">{{ _('Centro de ayuda') }}</a>
+    {% if exc and exc.code == 401 %}
+      <a href="/login" class="btn btn--secondary">{{ _('Iniciar sesión') }}</a>
+    {% endif %}
+  </div>
+</section>
+{% endblock %}

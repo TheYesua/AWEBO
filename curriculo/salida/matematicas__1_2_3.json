@@ -1,0 +1,501 @@
+{
+  "materia_oficial": "MATEMÁTICAS",
+  "materia": "Matemáticas",
+  "etapa": "ESO",
+  "ciclo": "Cursos de primero a tercero",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º ESO",
+    "2º ESO",
+    "3º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "CE1",
+      "descripcion": "Interpretar, modelizar y resolver problemas de la vida cotidiana y propios de las matemáticas, aplicando diferentes estrategias y formas de razonamiento, para explorar distintas maneras de proceder y obtener posibles soluciones.",
+      "descriptores": [
+        "STEM1",
+        "STEM2",
+        "STEM3",
+        "STEM4",
+        "CD2",
+        "CPSAA5",
+        "CE3",
+        "CCEC4"
+      ]
+    },
+    {
+      "codigo": "CE2",
+      "descripcion": "Analizar las soluciones de un problema usando diferentes técnicas y herramientas, evaluando las respuestas obtenidas, para verificar su validez e idoneidad desde un punto de vista matemático y su repercusión global.",
+      "descriptores": [
+        "STEM1",
+        "STEM2",
+        "CD2",
+        "CPSAA4",
+        "CC3",
+        "CE3"
+      ]
+    },
+    {
+      "codigo": "CE3",
+      "descripcion": "Formular y comprobar conjeturas sencillas o plantear problemas de forma autónoma, reconociendo el valor del razonamiento y la argumentación, para generar nuevo conocimiento.",
+      "descriptores": [
+        "CCL1",
+        "STEM1",
+        "STEM2",
+        "CD1",
+        "CD2",
+        "CD5",
+        "CE3"
+      ]
+    },
+    {
+      "codigo": "CE4",
+      "descripcion": "Utilizar los principios del pensamiento computacional organizando datos, descomponiendo en partes, reconociendo patrones, interpretando, modificando y creando algoritmos, para modelizar situaciones y resolver problemas de forma eficaz.",
+      "descriptores": [
+        "STEM1",
+        "STEM2",
+        "STEM3",
+        "CD2",
+        "CD3",
+        "CD5",
+        "CE3"
+      ]
+    },
+    {
+      "codigo": "CE5",
+      "descripcion": "Reconocer y utilizar conexiones entre los diferentes elementos matemáticos, interconectando conceptos y procedimientos, para desarrollar una visión de las matemáticas como un todo integrado.",
+      "descriptores": [
+        "STEM1",
+        "STEM3",
+        "CD2",
+        "CD3",
+        "CCEC1"
+      ]
+    },
+    {
+      "codigo": "CE6",
+      "descripcion": "Identificar las matemáticas implicadas en otras materias y en situaciones reales susceptibles de ser abordadas en términos matemáticos, interrelacionando conceptos y procedimientos, para aplicarlos en situaciones diversas.",
+      "descriptores": [
+        "STEM1",
+        "STEM2",
+        "CD3",
+        "CD5",
+        "CC4",
+        "CE2",
+        "CE3",
+        "CCEC1"
+      ]
+    },
+    {
+      "codigo": "CE7",
+      "descripcion": "Representar, de forma individual y colectiva, conceptos, procedimientos, información y resultados matemáticos, usando diferentes tecnologías, para visualizar ideas y estructurar procesos matemáticos.",
+      "descriptores": [
+        "STEM3",
+        "CD1",
+        "CD2",
+        "CD5",
+        "CE3",
+        "CCEC4"
+      ]
+    },
+    {
+      "codigo": "CE8",
+      "descripcion": "Comunicar de forma individual y colectiva conceptos, procedimientos y argumentos matemáticos, usando lenguaje oral, escrito o gráfico, utilizando la terminología matemática apropiada, para dar significado y coherencia a las ideas matemáticas.",
+      "descriptores": [
+        "CCL1",
+        "CCL3",
+        "CP1",
+        "STEM2",
+        "STEM4",
+        "CD2",
+        "CD3",
+        "CE3",
+        "CCEC3"
+      ]
+    },
+    {
+      "codigo": "CE9",
+      "descripcion": "Desarrollar destrezas personales, identificando y gestionando emociones, poniendo en práctica estrategias de aceptación del error como parte del proceso de aprendizaje y adaptándose ante situaciones de incertidumbre, para mejorar la perseverancia en la consecución de objetivos y el disfrute en el aprendizaje de las matemáticas.",
+      "descriptores": [
+        "STEM5",
+        "CPSAA1",
+        "CPSAA4",
+        "CPSAA5",
+        "CE2",
+        "CE3"
+      ]
+    },
+    {
+      "codigo": "CE10",
+      "descripcion": "Desarrollar destrezas sociales reconociendo y respetando las emociones y experiencias de los demás, participando activa y reflexivamente en proyectos en equipos heterogéneos con roles asignados, para construir una identidad positiva como estudiante de matemáticas, fomentar el bienestar personal y grupal y crear relaciones saludables.",
+      "descriptores": [
+        "CCL5",
+        "CP3",
+        "STEM3",
+        "CPSAA1",
+        "CPSAA3",
+        "CC2",
+        "CC3"
+      ]
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "CE1",
+      "descripcion": "Interpretar problemas matemáticos organizando los datos, estableciendo las relaciones entre ellos y comprendiendo las preguntas formuladas."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "CE1",
+      "descripcion": "Aplicar herramientas y estrategias apropiadas que contribuyan a la resolución de problemas."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "CE1",
+      "descripcion": "Obtener soluciones matemáticas de un problema, activando los conocimientos y utilizando las herramientas tecnológicas necesarias."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "CE2",
+      "descripcion": "Comprobar la corrección matemática de las soluciones de un problema."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "CE2",
+      "descripcion": "Comprobar la validez de las soluciones de un problema y su coherencia en el contexto planteado, evaluando el alcance y repercusión de estas desde diferentes perspectivas (de género, de sostenibilidad, de consumo responsable, etc.)."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "CE3",
+      "descripcion": "Formular y comprobar conjeturas sencillas de forma guiada analizando patrones, propiedades y relaciones."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "CE3",
+      "descripcion": "Plantear variantes de un problema dado modificando alguno de sus datos o alguna condición del problema."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "CE3",
+      "descripcion": "Emplear herramientas tecnológicas adecuadas en la investigación y comprobación de conjeturas o problemas."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "CE4",
+      "descripcion": "Reconocer patrones, organizar datos y descomponer un problema en partes más simples facilitando su interpretación computacional."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "CE4",
+      "descripcion": "Modelizar situaciones y resolver problemas de forma eficaz interpretando y modificando algoritmos."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "CE5",
+      "descripcion": "Reconocer las relaciones entre los conocimientos y experiencias matemáticas, formando un todo coherente."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "CE5",
+      "descripcion": "Realizar conexiones entre diferentes procesos matemáticos aplicando conocimientos y experiencias previas."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "CE6",
+      "descripcion": "Reconocer situaciones susceptibles de ser formuladas y resueltas mediante herramientas y estrategias matemáticas, estableciendo conexiones entre el mundo real y las matemáticas y usando los procesos inherentes a la investigación: inferir, medir, comunicar, clasificar y predecir."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "CE6",
+      "descripcion": "Identificar conexiones coherentes entre las matemáticas y otras materias resolviendo problemas contextualizados."
+    },
+    {
+      "codigo": "6.3",
+      "competencia": "CE6",
+      "descripcion": "Reconocer la aportación de las matemáticas al progreso de la humanidad y su contribución a la superación de los retos que demanda la sociedad actual."
+    },
+    {
+      "codigo": "7.1",
+      "competencia": "CE7",
+      "descripcion": "Representar conceptos, procedimientos, información y resultados matemáticos de modos distintos y con diferentes herramientas, incluidas las digitales, visualizando ideas, estructurando procesos matemáticos y valorando su utilidad para compartir información."
+    },
+    {
+      "codigo": "7.2",
+      "competencia": "CE7",
+      "descripcion": "Elaborar representaciones matemáticas que ayuden en la búsqueda de estrategias de resolución de una situación problematizada."
+    },
+    {
+      "codigo": "8.1",
+      "competencia": "CE8",
+      "descripcion": "Comunicar información utilizando el lenguaje matemático apropiado, utilizando diferentes medios, incluidos los digitales, oralmente y por escrito, al describir, explicar y justificar razonamientos, procedimientos y conclusiones."
+    },
+    {
+      "codigo": "8.2",
+      "competencia": "CE8",
+      "descripcion": "Reconocer y emplear el lenguaje matemático presente en la vida cotidiana comunicando mensajes con contenido matemático con precisión y rigor."
+    },
+    {
+      "codigo": "9.1",
+      "competencia": "CE9",
+      "descripcion": "Gestionar las emociones propias, desarrollar el autoconcepto matemático como herramienta, generando expectativas positivas ante nuevos retos matemáticos."
+    },
+    {
+      "codigo": "9.2",
+      "competencia": "CE9",
+      "descripcion": "Mostrar una actitud positiva y perseverante, aceptando la crítica razonada al hacer frente a las diferentes situaciones de aprendizaje de las matemáticas."
+    },
+    {
+      "codigo": "10.1",
+      "competencia": "CE10",
+      "descripcion": "Colaborar activamente y construir relaciones trabajando con las matemáticas en equipos heterogéneos, respetando diferentes opiniones, comunicándose de manera efectiva, pensando de forma crítica y creativa y tomando decisiones y realizando juicios informados."
+    },
+    {
+      "codigo": "10.2",
+      "competencia": "CE10",
+      "descripcion": "Participar en el reparto de tareas que deban desarrollarse en equipo, aportando valor, favoreciendo la inclusión, la escucha activa, asumiendo el rol asignado y responsabilizándose de la propia contribución al equipo."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Sentido numérico",
+      "titulo": "Sentido numérico",
+      "items": [
+        "Estrategias variadas de recuento sistemático en situaciones de la vida cotidiana: principios aditivo y multiplicativo en la resolución de problemas.",
+        "Adaptación del conteo al tamaño de los números en problemas de la vida cotidiana.",
+        "Los números indoarábigos. Introducción del cero y los números negativos.",
+        "Números grandes y pequeños: orden de magnitud. Potencias de 10 de exponente natural.",
+        "Estrategias de estimación a priori del resultado aproximado de una operación o de un problema.",
+        "Números enteros: significado, expresión y comparación de cantidades.",
+        "Números fraccionarios no negativos: significado como razón, tasa u operador.",
+        "Números decimales: significado como fracciones con denominador potencia de 10.",
+        "Lectura y representación de números enteros utilizando diversas herramientas y estrategias, incluidas las rectas numéricas horizontales y verticales.",
+        "Lectura y representación de números fraccionarios en la recta numérica.",
+        "Lectura y representación de números decimales como fracciones cuyos denominadores son potencias de 10.",
+        "Porcentajes mayores que 100% y menores que 1 %.",
+        "Estrategias de cálculo mental con números naturales, fracciones y decimales.",
+        "Operaciones con números enteros, fraccionarios y decimales de forma concreta, pictórica y simbólica en situaciones contextualizadas.",
+        "Relaciones inversas entre las operaciones de números enteros, adición y sustracción; multiplicación y división; elevar al cuadrado y extraer la raíz cuadrada: comprensión y utilización en la simplificación y resolución de problemas.",
+        "Efecto de las operaciones aritméticas con números enteros, fracciones y decimales: multiplicación y división por números comprendidos entre 0 y 1 representados en fracción o decimal.",
+        "Propiedades de las operaciones (suma, resta, multiplicación, división): cálculos de manera eficiente con números naturales y enteros tanto mentalmente como de forma manual, con calculadora u hoja de cálculo. Descubrimiento de propiedades con la calculadora.",
+        "Factores, múltiplos y divisores. Factorización en números primos para resolver problemas: estrategias y herramientas diversas.",
+        "Comparación y ordenación de números fraccionarios, decimales y porcentajes: situación exacta o aproximada en la recta numérica.",
+        "Relación entre números fraccionarios, números decimales y porcentajes en contextos diversos.",
+        "Selección de la representación adecuada para una misma cantidad en cada situación o problema.",
+        "Patrones y regularidades numéricas: representación y análisis, verbalmente y mediante tablas y gráficos.",
+        "Razones y proporciones: utilización de números, tablas y gráficos en la representación de magnitudes y sus relaciones.",
+        "Porcentajes: comprensión y resolución de problemas.",
+        "Situaciones de proporcionalidad en diferentes contextos: análisis y desarrollo de métodos para la resolución de problemas (aumentos y disminuciones porcentuales, rebajas, impuestos, etc.).",
+        "Información numérica en contextos financieros sencillos (productos bancarios, recibos, facturas, etc.): identificación e interpretación.",
+        "Métodos para la toma de decisiones de consumo responsable: control de ingresos y gastos. Tabla de decisión.",
+        "Estrategias variadas de recuento sistemático en situaciones de la vida: principio del palomar en la resolución de problemas.",
+        "Adaptación del conteo al tamaño de los números en problemas de la vida cotidiana.",
+        "Origen y utilización de las fracciones en la antigüedad (Egipto, India, Grecia).",
+        "Números grandes y pequeños: Potencias de 10 de exponente entero y uso de la calculadora.",
+        "Estrategias de estimación del cuadrado y la raíz cuadrada de un número en contextos diversos.",
+        "Números racionales: comprensión, expresión decimal y utilización en contextos reales.",
+        "Lectura, representación, comparación y ordenación de números racionales.",
+        "Estrategias de cálculo mental con números naturales, racionales y decimales.",
+        "Operaciones con números enteros, racionales y expresiones decimales en contextos reales.",
+        "Relaciones inversas entre las operaciones de números racionales, adición y sustracción; multiplicación y división; elevar al cuadrado y extraer la raíz cuadrada: comprensión y utilización en la simplificación y resolución de problemas.",
+        "Efecto de las operaciones con números enteros, racionales y decimales: potenciación y radicación.",
+        "Propiedades de las operaciones (suma, resta, multiplicación, división y potenciación): cálculos de manera eficiente con números naturales, enteros, racionales y decimales tanto mentalmente como de forma manual, con calculadora u hoja de cálculo.",
+        "Comparación y ordenación de números racionales y expresiones decimales. Situación exacta o aproximada en la recta numérica.",
+        "Selección de la representación adecuada para una misma cantidad en cada situación o problema.",
+        "Patrones y regularidades numéricas: representación, análisis y generalización mediante tablas, gráficos y, cuando sea posible, reglas simbólicas.",
+        "Situaciones de proporcionalidad en diferentes contextos: análisis y desarrollo de métodos para la resolución de problemas (semejanzas, escalas, ecuaciones lineales, etc.).",
+        "Información numérica en contextos financieros (productos de ahorro e inversión): identificación e interpretación.",
+        "Métodos para la toma de decisiones de consumo responsable: planificación y presupuesto. Tabla de decisión.",
+        "Estrategias variadas de recuento sistemático en situaciones de la vida: técnicas combinatorias en la resolución de problemas.",
+        "Adaptación del conteo al tamaño de los números en problemas de la vida cotidiana.",
+        "Origen de los números irracionales: pi y phi.",
+        "Números grandes y pequeños: Notación exponencial y científica con calculadora.",
+        "Realización de estimaciones con la precisión requerida. Control de errores.",
+        "Estrategias de cálculo mental con naturales, fracciones y decimales.",
+        "Operaciones con números enteros, racionales e irracionales en situaciones contextualizadas.",
+        "Relaciones inversas entre las operaciones de números racionales e irracionales, adición y sustracción; multiplicación y división; potencia y raíz: comprensión y utilización en la simplificación y resolución de problemas.",
+        "Comparación y ordenación de números racionales e irracionales (raíces cuadradas, pi), en contextos diversos.",
+        "Selección de la representación adecuada para una misma cantidad en cada situación o problema.",
+        "Patrones y regularidades numéricas: generalización, cuando sea posible, usando reglas simbólicas.",
+        "Situaciones de proporcionalidad en diferentes contextos: análisis y desarrollo de métodos para la resolución de problemas (pendiente, histogramas de frecuencias, probabilidad, etc.).",
+        "Información numérica en contextos financieros sencillos: interpretación.",
+        "Métodos para la toma de decisiones de consumo responsable: relaciones calidad-precio y valor-precio en contextos cotidianos. Tabla de decisión."
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Sentido de la medida",
+      "titulo": "Sentido de la medida",
+      "items": [
+        "Atributos mensurables de los objetos físicos y matemáticos del plano: longitud, perímetro y área. Investigación y relación entre los mismos.",
+        "Estrategias de elección de las unidades y operaciones adecuadas en problemas que impliquen medida.",
+        "Formulación de conjeturas sobre medidas o relaciones entre las mismas de objetos del plano.",
+        "Estrategias para la toma de decisiones del grado de precisión requerida según la medida.",
+        "Historia del metro como unidad de medida universal y del nacimiento del Sistema Internacional de medidas.",
+        "Longitud y área de figuras planas: deducción, interpretación y aplicación.",
+        "Representaciones de objetos geométricos planos con propiedades o relaciones fijadas, como las longitudes de los lados o las medidas de los ángulos.",
+        "Atributos mensurables de los objetos físicos y matemáticos del espacio: área y volumen. Investigación y relación entre los mismos.",
+        "Estrategias de elección de las unidades y operaciones adecuadas en problemas que impliquen medida.",
+        "Formulación de conjeturas sobre medidas o relaciones entre las mismas de objetos del espacio.",
+        "Estrategias para la toma de decisiones del grado de precisión requerida según la medida.",
+        "Historia de la medida del cielo (radio de la Tierra, distancia Tierra-Luna, etc.).",
+        "Área y volumen de figuras tridimensionales: deducción, interpretación y aplicación.",
+        "Representaciones planas de objetos tridimensionales en la visualización y resolución de problemas de áreas.",
+        "Representaciones de objetos geométricos tridimensionales con propiedades o relaciones fijadas, como las longitudes de los lados o las medidas de los ángulos.",
+        "Atributos mensurables de los objetos matemáticos: pendiente y tasa de variación media. Investigación y relación entre los mismos.",
+        "Estrategias de elección de las unidades y operaciones adecuadas en problemas que impliquen medida.",
+        "Formulación de conjeturas sobre medidas o relaciones entre las mismas.",
+        "Estrategias para la toma de decisiones del grado de precisión requerida según la medida.",
+        "Origen del estudio de la probabilidad.",
+        "La probabilidad como medida asociada a la incertidumbre de experimentos aleatorios. Probabilidad subjetiva."
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Sentido espacial",
+      "titulo": "Sentido espacial",
+      "items": [
+        "La Geometría griega: Regla y compas. Contribuciones de Euclides.",
+        "Figuras geométricas planas: descripción y clasificación en función de sus propiedades, características o relaciones entre sus elementos.",
+        "Relaciones geométricas como la congruencia y la semejanza en figuras planas: identificación y aplicación.",
+        "Construcción de figuras geométricas planas con herramientas manipulativas y digitales (programas de geometría dinámica).",
+        "Relaciones espaciales: localización y descripción mediante coordenadas geométricas en el plano.",
+        "Transformaciones elementales utilizando herramientas digitales o manipulativas: traslaciones y simetrías.",
+        "4. Visualización, razonamiento y modelización geométrica.",
+        "Modelización geométrica. Relaciones numéricas en problemas: modelo de barras.",
+        "Relaciones geométricas en contextos matemáticos y no matemáticos (arte, ciencia, etc.).",
+        "1. Figuras geométricas de dos y tres dimensiones.",
+        "La Geometría griega: Regla y compás. Contribuciones de Thales y Pitágoras.",
+        "Figuras geométricas tridimensionales: descripción y clasificación en función de sus propiedades, características o relaciones entre sus elementos.",
+        "Relaciones geométricas como la congruencia, la semejanza y la relación pitagórica en figuras planas y tridimensionales: identificación y aplicación.",
+        "Construcción de figuras geométricas tridimensionales con herramientas manipulativas y digitales (programas de geometría dinámica).",
+        "Relaciones espaciales: localización y descripción mediante coordenadas.",
+        "Transformaciones elementales utilizando herramientas digitales: giros y homotecias.",
+        "4. Visualización, razonamiento y modelización geométrica.",
+        "Modelización geométrica. Relaciones algebraicas en problemas: modelo de barras.",
+        "Relaciones geométricas en contextos matemáticos y no matemáticos (arte, ciencia, etc.).",
+        "1. Figuras geométricas de dos y tres dimensiones.",
+        "Origen de la geometría cartesiana: Fermat y Descartes.",
+        "Figuras geométricas planas y tridimensionales: lugares geométricos.",
+        "Uso de las relaciones geométricas en la resolución de problemas.",
+        "Construcción de figuras geométricas como lugares geométricos con herramientas digitales (programas de geometría dinámica, realidad aumentada, etc.).",
+        "Relaciones espaciales: localización y descripción mediante coordenadas geométricas y otros sistemas de representación.",
+        "Transformaciones elementales utilizando herramientas digitales: composición de movimientos. Introducción a los movimientos en el espacio.",
+        "4. Visualización, razonamiento y modelización geométrica.",
+        "Modelización geométrica. Relaciones numéricas y algebraicas en la resolución de problemas.",
+        "Relaciones geométricas en contextos matemáticos y no matemáticos (arte, ciencia, etc.)."
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Sentido algebraico",
+      "titulo": "Sentido algebraico",
+      "items": [
+        "Patrones, pautas y regularidades numéricas y geométricas: observación, continuación y generalización en casos sencillos.",
+        "Modelización de situaciones reales de proporcionalidad directa y de estimación de grandes cantidades usando representaciones matemáticas.",
+        "Estrategias de deducción de conclusiones razonables a partir de un modelo matemático.",
+        "Variable: comprensión como valor indeterminado o expresión de patrones generales.",
+        "Principio de equivalencia de expresiones algebraicas.",
+        "Estrategias de búsqueda de soluciones en ecuaciones lineales en situaciones de la vida cotidiana.",
+        "Relaciones de proporcionalidad directa: identificación y comparación de diferentes modos de representación, tablas, gráficas o expresiones algebraicas, y sus propiedades a partir de ellas.",
+        "Generalización y transferencia de procesos de resolución de problemas a otras situaciones.",
+        "Estrategias útiles en la interpretación y modificación de algoritmos: diagramas de flujo y pseucódigo.",
+        "Estrategias de formulación de cuestiones susceptibles de ser analizadas mediante programas y otras herramientas.",
+        "Patrones, pautas y regularidades numéricas y geométricas: representación y análisis usando palabras, tablas y gráficos.",
+        "Modelización de situaciones reales mediante funciones lineales usando representaciones matemáticas y lenguaje algebraico.",
+        "Estrategias de deducción de conclusiones razonables a partir de un modelo matemático.",
+        "La resolución de ecuaciones a lo largo de la historia, en particular los métodos geométricos de Al-Khwarizmi.",
+        "Variable: comprensión como constante, parámetro o incógnita.",
+        "Relaciones lineales en situaciones de la vida cotidiana o matemáticamente relevantes: expresión mediante álgebra simbólica.",
+        "Principio de equivalencia de expresiones algebraicas en la resolución de problemas basados en relaciones lineales.",
+        "Estrategias de búsqueda de soluciones en ecuaciones y sistemas lineales y ecuaciones cuadráticas en situaciones de la vida cotidiana.",
+        "Ecuaciones: resolución mediante el uso de la tecnología.",
+        "Relaciones cuantitativas en situaciones de la vida cotidiana: funciones lineales y afines.",
+        "Relaciones lineales: identificación y comparación de diferentes modos de representación, tablas, gráficas o expresiones algebraicas, y sus propiedades a partir de ellas.",
+        "Estrategias de deducción de la información relevante de una función mediante el uso de diferentes representaciones simbólicas.",
+        "Generalización y transferencia de procesos de resolución de problemas a otras situaciones.",
+        "Estrategias útiles en la interpretación y modificación de algoritmos: estructuras condicionales.",
+        "Estrategias de formulación de cuestiones susceptibles de ser analizadas mediante programas y otras herramientas.",
+        "Patrones, pautas y regularidades numéricas, geométricas y funcionales: representación y análisis usando palabras, tablas y gráficos.",
+        "Modelización de situaciones reales mediante funciones lineales y cuadráticas usando representaciones matemáticas y lenguaje algebraico.",
+        "Estrategias de deducción de conclusiones razonables a partir de un modelo matemático.",
+        "Historia de la resolución de la ecuación de segundo grado.",
+        "Variable: comprensión como expresión de cantidades que varían conjuntamente.",
+        "Relaciones lineales y cuadráticas en situaciones de la vida cotidiana o matemáticamente relevantes: expresión mediante álgebra simbólica.",
+        "Principio de equivalencia de expresiones algebraicas en la resolución de problemas basados en relaciones lineales y cuadráticas.",
+        "Estrategias de búsqueda de soluciones en ecuaciones y sistemas lineales y ecuaciones cuadráticas en situaciones diversas.",
+        "Ecuaciones: resolución mediante el uso de la tecnología.",
+        "Relaciones cuantitativas en situaciones de la vida cotidiana: funciones cuadráticas.",
+        "Relaciones cuadráticas: identificación y comparación de diferentes modos de representación, tablas, gráficas o expresiones algebraicas, y sus propiedades a partir de ellas.",
+        "Estrategias de deducción de la información relevante de una función mediante el uso de diferentes representaciones simbólicas.",
+        "Generalización y transferencia de procesos de resolución de problemas a otras situaciones.",
+        "Estrategias útiles en la interpretación y modificación de algoritmos: bucles.",
+        "Estrategias de formulación de cuestiones susceptibles de ser analizadas mediante programas y otras herramientas."
+      ]
+    },
+    {
+      "codigo": "E",
+      "bloque": "E. Sentido estocástico",
+      "titulo": "Sentido estocástico",
+      "items": [
+        "Origen histórico del análisis de datos, situación actual y perspectivas de futuro.",
+        "Estrategias de recogida y organización de datos de variables estadísticas en situaciones de la vida cotidiana. Diferencia entre variable y valores individuales. Tablas de frecuencia.",
+        "Análisis e interpretación de tablas y gráficos estadísticos de variables cualitativas, cuantitativas discretas y cuantitativas continuas en contextos reales: gráfico de puntos, barras (verticales, horizontales, apiladas, etc.), pictogramas, histogramas (sencillos y bidireccionales) y de sectores. Gráficos engañosos.",
+        "Gráficos estadísticos: representación (barras, sectores) mediante diferentes tecnologías (calculadora, hoja de cálculo, aplicaciones, etc.) y elección del más adecuado.",
+        "Medidas de localización (media, mediana y moda de variables discretas): interpretación y cálculo con apoyo tecnológico en situaciones reales. Valoración de la idoneidad de la elección de la media o la mediana como representante de la variable concreta.",
+        "Análisis del impacto de agregar o eliminar datos de un conjunto en las medidas de localización.",
+        "Variabilidad. Interpretación del rango y cálculo con apoyo tecnológico en situaciones reales.",
+        "Comparación de dos conjuntos de datos de forma gráfica atendiendo a las medidas de localización y dispersión.",
+        "Datos relevantes para dar respuesta a cuestiones planteadas en investigaciones estadísticas: presentación de la información procedente de una muestra mediante herramientas digitales.",
+        "Fenómenos aleatorios: identificación. Espacio muestral. Sucesos asociados a un experimento aleatorio. Sucesos seguro, imposible, complementario o contrario.",
+        "Experimentos simples: planificación, simulación con herramientas tecnológicas y análisis de la incertidumbre asociada.",
+        "Determinación y comparación de la probabilidad teórica (Regla de Laplace) y experimental de un suceso y su contrario en experimentos aleatorios.",
+        "Formulación de preguntas adecuadas que permitan conocer las características de interés de una población. Población y muestra.",
+        "Estrategias de deducción de conclusiones a partir de una muestra con el fin de emitir juicios y tomar decisiones adecuadas. Análisis de la representatividad de muestras tomadas en diferentes situaciones.",
+        "Estrategias de recogida y organización de datos de situaciones de la vida cotidiana que involucran una sola variable estadística. Diferencia entre población y muestra. Tablas de frecuencias.",
+        "Análisis e interpretación de tablas y gráficos estadísticos de variables cualitativas, cuantitativas discretas y cuantitativas continuas en contextos reales: histogramas, caja y bigotes, cartogramas, radial, gráficos de evolución y combinados. Gráficos engañosos.",
+        "Gráficos estadísticos: representación mediante diferentes tecnologías (calculadora, hoja de cálculo, aplicaciones, etc.) y elección del más adecuado.",
+        "Medidas de localización (media, mediana, moda, cuartiles y percentiles) interpretación y cálculo con apoyo tecnológico en situaciones reales.",
+        "Variabilidad. Interpretación de la desviación típica. Cálculo con apoyo tecnológico en situaciones reales.",
+        "Análisis del impacto de agregar o eliminar datos de un conjunto en las medidas de localización y dispersión. Descripción de cómo estos cambios alteran la forma y distribución de los datos.",
+        "Comparación de dos conjuntos de datos atendiendo a las medidas de localización y dispersión.",
+        "Fenómenos aleatorios: espacio muestral. Operaciones con sucesos.",
+        "Experimentos simples planificación, realización y análisis de la incertidumbre asociada.",
+        "Asignación de la probabilidad a sucesos asociados a un experimento aleatorio. Probabilidad de la unión e intersección de sucesos.",
+        "Formulación de preguntas adecuadas que permitan conocer las características de interés de una población. Población y muestra.",
+        "Datos relevantes para dar respuesta a cuestiones planteadas en investigaciones estadísticas: presentación de la información procedente de una muestra mediante herramientas digitales.",
+        "Estrategias de deducción de conclusiones a partir de una muestra con el fin de emitir juicios y tomar decisiones adecuadas. Análisis de la representatividad de muestras tomadas en estudios publicados."
+      ]
+    },
+    {
+      "codigo": "F",
+      "bloque": "F. Sentido socioafectivo",
+      "titulo": "Sentido socioafectivo",
+      "items": [
+        "Gestión emocional: emociones que intervienen en el aprendizaje de las matemáticas. Indefensión adquirida.",
+        "Estrategias de fomento de la curiosidad, la iniciativa, la perseverancia y la resiliencia en el aprendizaje de las matemáticas.",
+        "Estrategias de fomento de la flexibilidad cognitiva: apertura a cambios de estrategia y transformación del error en oportunidad de aprendizaje.",
+        "Técnicas cooperativas para optimizar el trabajo en equipo y compartir y construir conocimiento matemático.",
+        "Conductas empáticas y estrategias de gestión de conflictos.",
+        "Actitudes inclusivas y aceptación de la diversidad presente en el aula de matemáticas y en la sociedad. Valoración de la diversidad como una riqueza.",
+        "La contribución de las matemáticas al desarrollo de los distintos ámbitos del conocimiento humano desde una perspectiva de género.",
+        "Gestión emocional: emociones que intervienen en el aprendizaje de las matemáticas. «Bloqueos matemáticos».",
+        "Estrategias de fomento de la curiosidad, la iniciativa, la perseverancia y la resiliencia en el aprendizaje de las matemáticas.",
+        "Estrategias de fomento de la flexibilidad cognitiva: apertura a cambios de estrategia y transformación del error en oportunidad de aprendizaje.",
+        "Técnicas cooperativas para optimizar el trabajo en equipo y compartir y construir conocimiento matemático.",
+        "Conductas empáticas y estrategias de gestión de conflictos.",
+        "Actitudes inclusivas y aceptación de la diversidad presente en el aula de matemáticas y en la sociedad. Valoración de la diversidad como una riqueza.",
+        "La contribución de las matemáticas al desarrollo de los distintos ámbitos del conocimiento humano desde una perspectiva de género.",
+        "Gestión emocional: emociones que intervienen en el aprendizaje de las matemáticas. Autoconciencia y autorregulación.",
+        "Estrategias de fomento de la curiosidad, la iniciativa, la perseverancia y la resiliencia en el aprendizaje de las matemáticas.",
+        "Estrategias de fomento de la flexibilidad cognitiva: apertura a cambios de estrategia y transformación del error en oportunidad de aprendizaje.",
+        "Técnicas cooperativas para optimizar el trabajo en equipo y compartir y construir conocimiento matemático.",
+        "Conductas empáticas y estrategias de gestión de conflictos.",
+        "Actitudes inclusivas y aceptación de la diversidad presente en el aula de matemáticas y en la sociedad. Valoración de la diversidad como una riqueza.",
+        "La contribución de las matemáticas al desarrollo de los distintos ámbitos del conocimiento humano desde una perspectiva de género"
+      ]
+    }
+  ]
+}

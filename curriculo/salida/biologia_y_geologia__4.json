@@ -1,0 +1,277 @@
+{
+  "materia_oficial": "BIOLOGÍA Y GEOLOGÍA",
+  "materia": "Biología y Geología",
+  "etapa": "ESO",
+  "ciclo": "Curso cuarto",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "4º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "CE1",
+      "descripcion": "Interpretar y transmitir información y datos científicos, argumentando sobre ellos y utilizando diferentes formatos, para analizar conceptos y procesos de las ciencias biológicas y geológicas.",
+      "descriptores": [
+        "CCL1",
+        "CCL2",
+        "CCL5",
+        "STEM4",
+        "CD2",
+        "CD3",
+        "CCEC4"
+      ]
+    },
+    {
+      "codigo": "CE2",
+      "descripcion": "Identificar, localizar y seleccionar información, contrastando su veracidad, organizándola y evaluándola críticamente, para resolver preguntas relacionadas con las ciencias biológicas y geológicas.",
+      "descriptores": [
+        "CCL3",
+        "STEM4",
+        "CD1",
+        "CD2",
+        "CD3",
+        "CD4",
+        "CD5",
+        "CPSAA4"
+      ]
+    },
+    {
+      "codigo": "CE3",
+      "descripcion": "Planificar y desarrollar proyectos de investigación, siguiendo los pasos de las metodologías científicas y cooperando cuando sea necesario, para indagar en aspectos relacionados con las ciencias geológicas y biológicas.",
+      "descriptores": [
+        "CCL1",
+        "CCL2",
+        "STEM2",
+        "STEM3",
+        "STEM4",
+        "CD1",
+        "CD2",
+        "CPSAA3",
+        "CE3"
+      ]
+    },
+    {
+      "codigo": "CE4",
+      "descripcion": "Utilizar el razonamiento y el pensamiento computacional, analizando críticamente las respuestas y soluciones y reformulando el procedimiento, si fuera necesario, para resolver problemas o dar explicación a procesos de la vida cotidiana relacionados con la biología y la geología.",
+      "descriptores": [
+        "STEM1",
+        "STEM2",
+        "CD5",
+        "CPSAA5",
+        "CE1",
+        "CE3",
+        "CCEC4"
+      ]
+    },
+    {
+      "codigo": "CE5",
+      "descripcion": "Analizar los efectos de determinadas acciones sobre el medio ambiente y la salud, basándose en los fundamentos de las ciencias biológicas y de la Tierra, para promover y adoptar hábitos que eviten o minimicen los impactos medioambientales negativos, sean compatibles con un desarrollo sostenible y permitan mantener y mejorar la salud individual y colectiva.",
+      "descriptores": [
+        "STEM2",
+        "STEM5",
+        "CD4",
+        "CPSAA1",
+        "CPSAA2",
+        "CC4",
+        "CE1",
+        "CC3"
+      ]
+    },
+    {
+      "codigo": "CE6",
+      "descripcion": "Analizar los elementos de un paisaje concreto valorándolo como patrimonio natural y utilizando conocimientos sobre geología y ciencias de la Tierra para explicar su historia geológica, proponer acciones encaminadas a su protección e identificar posibles riesgos naturales.",
+      "descriptores": [
+        "STEM1",
+        "STEM2",
+        "STEM4",
+        "STEM5",
+        "CD1",
+        "CC4",
+        "CE1",
+        "CCEC1"
+      ]
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "CE1",
+      "descripcion": "Analizar conceptos y procesos biológicos y geológicos interpretando información en diferentes formatos (modelos, gráficos, tablas, diagramas, fórmulas, esquemas, símbolos, páginas web, etc.), manteniendo una actitud crítica, obteniendo conclusiones y formando opiniones propias fundamentadas."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "CE1",
+      "descripcion": "Transmitir opiniones propias fundamentadas e información sobre Biología y Geología de forma clara y rigurosa, facilitando su comprensión y análisis mediante el uso de la terminología científica y el formato adecuados (modelos, gráficos, tablas, vídeos, informes, diagramas, fórmulas, esquemas, símbolos, contenidos digitales, etc.)."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "CE1",
+      "descripcion": "Analizar y explicar fenómenos biológicos y geológicos representándolos mediante modelos y diagramas, utilizando, cuando sea necesario, los pasos del diseño de ingeniería (identificación del problema, exploración, diseño, creación, evaluación y mejora)."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "CE2",
+      "descripcion": "Resolver cuestiones y profundizar en aspectos biológicos y geológicos localizando, seleccionando, organizando y analizando críticamente la información de distintas fuentes."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "CE2",
+      "descripcion": "Citar correctamente las fuentes utilizadas en investigaciones sobre Biología y Geología con respeto por la propiedad intelectual."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "CE2",
+      "descripcion": "Adoptar una actitud crítica y escéptica hacia informaciones sin una base científica como pseudociencias, teorías conspiratorias, creencias infundadas, bulos, etc."
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "CE2",
+      "descripcion": "Contrastar la veracidad de la información sobre temas biológicos y geológicos o trabajos científicos, utilizando fuentes fiables."
+    },
+    {
+      "codigo": "2.5",
+      "competencia": "CE2",
+      "descripcion": "Valorar la contribución de la ciencia a la sociedad y la labor de las personas dedicadas a ella, destacando el papel de la mujer y entendiendo la investigación como una labor colectiva e interdisciplinar en constante evolución influida por el contexto político y los recursos económicos a través del análisis del progreso de un avance científico concreto."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "CE3",
+      "descripcion": "Plantear preguntas e hipótesis sobre fenómenos biológicos y geológicos que puedan ser respondidas o contrastadas utilizando métodos científicos."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "CE3",
+      "descripcion": "Explicar o plantear predicciones teóricas fundamentadas sobre fenómenos biológicos y geológicos."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "CE3",
+      "descripcion": "Diseñar la experimentación, la toma de datos y el análisis de fenómenos biológicos y geológicos de modo que permitan responder a preguntas concretas y contrastar una hipótesis planteada evitando en la medida de lo posible los sesgos."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "CE3",
+      "descripcion": "Realizar experimentos y tomar datos cuantitativos o cualitativos sobre fenómenos biológicos y geológicos utilizando los instrumentos, herramientas o técnicas adecuadas con corrección y precisión."
+    },
+    {
+      "codigo": "3.5",
+      "competencia": "CE3",
+      "descripcion": "Interpretar y analizar los resultados obtenidos en un proyecto de investigación utilizando, cuando sea necesario, herramientas matemáticas y tecnológicas y obteniendo conclusiones razonadas y fundamentadas."
+    },
+    {
+      "codigo": "3.6",
+      "competencia": "CE3",
+      "descripcion": "Valorar la imposibilidad de obtener conclusiones fundamentadas ante datos incompletos o sesgados o experimentos sin los adecuados controles."
+    },
+    {
+      "codigo": "3.7",
+      "competencia": "CE3",
+      "descripcion": "Cooperar dentro de un proyecto científico asumiendo responsablemente una función concreta, utilizando espacios virtuales cuando sea necesario."
+    },
+    {
+      "codigo": "3.8",
+      "competencia": "CE3",
+      "descripcion": "Cooperar dentro de un proyecto científico respetando la diversidad y la igualdad de género, y favoreciendo la inclusión."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "CE4",
+      "descripcion": "Resolver problemas o dar explicación a procesos biológicos o geológicos utilizando conocimientos, datos e información proporcionados por el docente, el razonamiento lógico, el pensamiento computacional o recursos digitales."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "CE4",
+      "descripcion": "Analizar críticamente la solución a un problema sobre fenómenos biológicos y geológicos, cambiando los procedimientos utilizados o las conclusiones si dicha solución no fuese viable o ante nuevos datos aportados con posterioridad."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "CE5",
+      "descripcion": "Identificar los posibles riesgos naturales potenciados por determinadas acciones humanas sobre una zona geográfica, teniendo en cuenta sus características litológicas, relieve, vegetación y factores socioeconómicos."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "CE6",
+      "descripcion": "Deducir y explicar la historia geológica de un relieve identificando sus elementos más relevantes a partir de cortes, mapas u otros sistemas de información geológica y utilizando el razonamiento, los principios geológicos básicos (horizontalidad, superposición, actualismo, etc.) y las teorías geológicas más relevantes."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Proyecto científico",
+      "titulo": "Proyecto científico",
+      "items": [
+        "Hipótesis, preguntas y conjeturas: planteamiento con perspectiva científica y de forma que puedan ser contrastadas empíricamente.",
+        "Estrategias para la búsqueda de información científica: uso de buscadores y webs de divulgación o académicas.",
+        "Estrategias para la colaboración: uso de herramientas digitales.",
+        "Métodos y formatos de presentación y comunicación científica: exposición, gráfica, vídeo, póster científico, informe de laboratorio o campo, modelo, etc.",
+        "Fuentes fidedignas de información científica como artículos periodísticos y divulgativos, revistas de temática científica, libros de texto: reconocimiento y utilización.",
+        "Controles experimentales (positivos y negativos): diseño e importancia para la obtención de resultados científicos objetivos y fiables.",
+        "Respuesta a cuestiones científicas mediante la experimentación y el trabajo de campo: utilización de los instrumentos y espacios necesarios (laboratorio, aulas, entorno, etc.) de forma adecuada y precisa.",
+        "Modelado digital o mediante metodologías de diseño de ingeniería como método de representación y comprensión de procesos o elementos de la naturaleza.",
+        "Métodos de observación de fenómenos naturales.",
+        "Métodos de toma y registro de datos de fenómenos naturales: anotación en el cuaderno de campo, informe de laboratorio, uso de instrumentos de medición de magnitudes, etc.",
+        "Métodos de análisis de resultados: uso de herramientas matemáticas (media, varianza) y de medios digitales de representación y cálculo.",
+        "Diferenciación entre correlación y causalidad: resolución de problemas, ejemplos cotidianos (pseudoterapias, creencias populares, supersticiones, etc.).",
+        "La labor científica y las personas dedicadas a la ciencia: contribución a las ciencias biológicas y geológicas e importancia social. El papel de la mujer en la ciencia a lo largo de la historia.",
+        "La evolución histórica del saber científico: la ciencia como labor colectiva, interdisciplinar y en continua construcción. Ejemplos de construcción colectiva del saber científico."
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Geología",
+      "titulo": "Geología",
+      "items": [
+        "Relieve y paisaje: diferencias, su importancia como recursos y factores que intervienen en su formación y modelado.",
+        "Estructura y dinámica de la geosfera: modelos geoquímico y geodinámico. Métodos de estudio directos e indirectos.",
+        "Los efectos globales de la dinámica de la geosfera desde la perspectiva de la tectónica de placas.",
+        "Procesos geológicos externos e internos: diferencias y relación con los riesgos naturales. Definición de riesgo y factores implicados. Medidas de prevención y mapas de riesgos.",
+        "Los cortes geológicos: interpretación y trazado de la historia geológica que reflejan mediante la aplicación de los principios de estudio de la historia de la Tierra (horizontalidad, superposición, intersección, sucesión faunística, etc.)."
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. La célula",
+      "titulo": "La célula",
+      "items": [
+        "Las fases del ciclo celular.",
+        "La función biológica de la mitosis, la meiosis y sus fases.",
+        "Destrezas de observación de las distintas fases de la mitosis al microscopio."
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Genética y evolución",
+      "titulo": "Genética y evolución",
+      "items": [
+        "Modelo simplificado de la estructura del ADN y del ARN y relación con su función y síntesis.",
+        "Estrategias de extracción de ADN de una célula eucariota.",
+        "Etapas de la expresión génica (transcripción y traducción): moléculas y estructuras implicadas.",
+        "Características del código genético y resolución de problemas relacionados con estas.",
+        "Replicación del ADN: proceso y características.",
+        "Relación entre las mutaciones, la replicación del ADN, el cáncer, la evolución y la biodiversidad.",
+        "Tipos de mutaciones.",
+        "El proceso evolutivo de las características de una especie determinada a la luz de la teoría neodarwinista y de otras teorías con relevancia histórica (lamarckismo y darwinismo).",
+        "Fenotipo y genotipo: definición y diferencias.",
+        "Estrategias de resolución de problemas sencillos de herencia genética de caracteres con relación de dominancia y recesividad con uno o dos genes.",
+        "Estrategias de resolución de problemas sencillos de herencia del sexo y de herencia genética ligada al sexo con uno o dos genes.",
+        "Estrategias de resolución de problemas sencillos de herencia genética de caracteres con relación de codominancia o dominancia incompleta.",
+        "Estrategias de resolución de problemas sencillos de herencia genética de alelismo múltiple: grupos sanguíneos y otros ejemplos."
+      ]
+    },
+    {
+      "codigo": "E",
+      "bloque": "E. La Tierra en el universo",
+      "titulo": "La Tierra en el universo",
+      "items": [
+        "El origen del universo y del sistema solar.",
+        "El proceso de formación de la Tierra y relación con su estructura.",
+        "Componentes del sistema solar: estructura y características.",
+        "Características de los diferentes planetas del sistema solar.",
+        "Hipótesis sobre el origen de la vida en la Tierra: abiogénesis, panspermia y otras.",
+        "Concepto de ser vivo.",
+        "Las condiciones adecuadas para la vida. Los extremófilos.",
+        "Definición de astrobiología. Principales investigaciones en el campo de la astrobiología."
+      ]
+    }
+  ]
+}

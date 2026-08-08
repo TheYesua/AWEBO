@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}Página no encontrada · AWEBO{% endblock %}
+
+{% block content %}
+<section class="hero" aria-labelledby="t404">
+  <p class="badge">{{ _('Error 404') }}</p>
+  <h1 id="t404">{{ _('No encontramos esa página') }}</h1>
+  <p class="lead">
+    {{ _('El enlace puede estar roto o la página puede haberse movido. Prueba a volver al inicio o consulta el mapa web para ver todas las secciones disponibles.') }}
+  </p>
+  <div class="actions">
+    <a href="/" class="btn btn--primary">{{ _('Ir al inicio') }}</a>
+    <a href="/mapa-web" class="btn">{{ _('Ver mapa web') }}</a>
+    <a href="/ayuda" class="btn btn--ghost">{{ _('Centro de ayuda') }}</a>
+  </div>
+</section>
+{% endblock %}

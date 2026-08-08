@@ -1,0 +1,31 @@
+# Override automático para desarrollo local.
+# Compose lo lee siempre tras docker-compose.yml; en producción se renombra
+# o se ignora con `docker compose -f docker-compose.yml ...`.
+
+services:
+  api:
+    # Bind mount del código en el host: cambios visibles al instante,
+    # las migraciones generadas con `flask db migrate` se persisten en el host.
+    # `./curriculo` se monta en /curriculo (solo lectura) para alimentar
+    # el seed `flask seed curriculo` con los JSON extraídos del BOE.
+    volumes:
+      - ./api:/app
+      - ./curriculo:/curriculo:ro
+    # Recarga en cada cambio de código durante desarrollo
+    command: gunicorn --bind 0.0.0.0:8000 --workers 1 --reload --timeout 120 "app:create_app()"
+    environment:
+      FLASK_DEBUG: "1"
+
+  worker:
+    volumes:
+      - ./api:/app
+      - ./curriculo:/curriculo:ro
+
+  # El mismo bind mount que los demás. Sin él, beat seguiría ejecutando el
+  # calendario horneado en la imagen y cambiar `beat_schedule` no tendría
+  # efecto hasta reconstruirla — justo el tipo de desajuste que cuesta media
+  # hora localizar, porque el proceso arranca sin quejarse.
+  beat:
+    volumes:
+      - ./api:/app
+      - ./curriculo:/curriculo:ro

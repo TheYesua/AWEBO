@@ -1,0 +1,433 @@
+{#-
+  Plantilla de exportación a PDF (vía WeasyPrint).
+  Espera un contexto:
+    - sa: SituacionAprendizaje (con .titulo, .materia, .curso, etc.)
+    - usuario: Usuario propietario
+    - secciones: lista [(clave, etiqueta_visible)] en orden LOMLOE
+    - generado_en: datetime
+  Recibe el contenido a través de sa.contenido y aplica el mismo
+  esquema que el render JS, replicado aquí como macros Jinja2.
+-#}
+<!DOCTYPE html>
+<html lang="{{ sa.idioma or 'es' }}">
+<head>
+  <meta charset="utf-8">
+  <title>{{ sa.titulo }}</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 2cm 1.8cm 2.2cm 1.8cm;
+      @bottom-center {
+        content: "Página " counter(page) " de " counter(pages);
+        font-size: 9pt;
+        color: #6b7280;
+      }
+      @bottom-right {
+        content: "{{ sa.titulo|e }}";
+        font-size: 9pt;
+        color: #9ca3af;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: "Helvetica", "Arial", sans-serif;
+      font-size: 10.5pt;
+      line-height: 1.45;
+      color: #1F2937;
+    }
+    h1 { font-size: 22pt; margin: 0 0 0.2cm; color: #0f172a; }
+    h2 {
+      font-size: 14pt;
+      margin: 0.7cm 0 0.25cm;
+      padding-bottom: 0.15cm;
+      border-bottom: 2px solid #5ED3D1;
+      color: #0f172a;
+      page-break-after: avoid;
+      break-after: avoid-page;
+    }
+    h3 {
+      font-size: 11.5pt; margin: 0.3cm 0 0.15cm; color: #374151;
+      page-break-after: avoid;
+      break-after: avoid-page;
+    }
+    h4 { font-size: 10pt; margin: 0.2cm 0 0.1cm; color: #6b7280;
+         text-transform: uppercase; letter-spacing: .04em;
+         page-break-after: avoid;
+         break-after: avoid-page; }
+    p  { margin: 0 0 0.25cm; orphans: 3; widows: 3; }
+    ul, ol { margin: 0 0 0.25cm 0.5cm; padding-left: 0.4cm; }
+    li { margin-bottom: 0.08cm; page-break-inside: avoid; break-inside: avoid; }
+    table { page-break-inside: avoid; break-inside: avoid; }
+
+    /* Si un h2 va a quedar solo al final de página y el siguiente
+       bloque no cabe, prohibimos que ese siguiente bloque empiece en
+       página nueva: WeasyPrint retrocederá el h2 con él. */
+    h2 + *, h3 + * {
+      page-break-before: avoid;
+      break-before: avoid-page;
+    }
+
+    .doc-header {
+      border-bottom: 1px solid #e5e7eb;
+      padding-bottom: 0.4cm;
+      margin-bottom: 0.5cm;
+    }
+    .doc-meta {
+      display: table;
+      width: 100%;
+      margin-top: 0.25cm;
+      font-size: 9.5pt;
+      color: #4b5563;
+    }
+    .doc-meta div { display: table-cell; padding-right: 0.6cm; }
+    .doc-meta strong { color: #1F2937; }
+
+    .badge {
+      display: inline-block;
+      font-size: 8pt;
+      padding: 0.05cm 0.25cm;
+      border-radius: 0.1cm;
+      background: #fef3c7;
+      color: #92400e;
+      font-weight: 700;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+    }
+
+    .callout {
+      border-left: 3pt solid #5ED3D1;
+      background: #f0fbfb;
+      padding: 0.2cm 0.35cm;
+      margin: 0.2cm 0;
+    }
+    .callout--producto { border-left-color: #7C83FD; background: #f3f4ff; }
+    .callout__label {
+      font-size: 8pt;
+      font-weight: 700;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      color: #374151;
+      display: block;
+    }
+
+    .chip {
+      display: inline-block;
+      font-size: 8pt;
+      padding: 0.03cm 0.18cm;
+      border-radius: 0.3cm;
+      background: #e5e7eb;
+      color: #374151;
+      margin-right: 0.1cm;
+    }
+    .chip--competencia { background: #ddebff; color: #1e40af; }
+    .chip--criterio    { background: #fef3c7; color: #92400e; }
+    .chip--fase        { background: #ede9fe; color: #5b21b6; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 9.5pt;
+      margin: 0.15cm 0 0.3cm;
+    }
+    th, td {
+      border: 1px solid #e5e7eb;
+      padding: 0.12cm 0.2cm;
+      text-align: left;
+      vertical-align: top;
+    }
+    thead th { background: #f9fafb; font-weight: 600; }
+
+    .lista-objetivos { list-style: none; padding-left: 0; }
+    .objetivo {
+      display: table; width: 100%;
+      margin-bottom: 0.18cm;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+    .objetivo__num {
+      display: table-cell; width: 0.7cm;
+      vertical-align: top; padding-right: 0.2cm;
+      font-weight: 700; color: #5ED3D1;
+    }
+    .objetivo__cuerpo { display: table-cell; }
+
+    .sesion {
+      border: 1px solid #e5e7eb;
+      border-radius: 0.15cm;
+      padding: 0.25cm 0.35cm;
+      margin-bottom: 0.25cm;
+      /* No usamos break-inside: avoid: una sesión puede ocupar más
+         de una página y eso es preferible a dejar h2/h3 huérfanos. */
+    }
+    .sesion__head {
+      border-bottom: 1px dashed #e5e7eb;
+      padding-bottom: 0.15cm;
+      margin-bottom: 0.15cm;
+      page-break-inside: avoid;
+      break-inside: avoid;
+      page-break-after: avoid;
+      break-after: avoid-page;
+    }
+    .sesion__num {
+      font-size: 8pt; font-weight: 700;
+      letter-spacing: .04em; text-transform: uppercase;
+      color: #5b21b6;
+    }
+    .sesion__titulo { font-size: 11pt; font-weight: 700; margin: 0.05cm 0; }
+    .sesion__dur { font-size: 9pt; color: #6b7280; }
+    .sesion-bloque h5 {
+      margin: 0.15cm 0 0.05cm; font-size: 8.5pt;
+      color: #6b7280; text-transform: uppercase;
+      letter-spacing: .04em; font-weight: 700;
+    }
+
+    .rubrica {
+      border: 1px solid #e5e7eb;
+      border-radius: 0.1cm;
+      padding: 0.2cm 0.3cm;
+      margin-bottom: 0.2cm;
+    }
+    .rubrica__head {
+      font-weight: 700; margin-bottom: 0.1cm;
+      page-break-after: avoid;
+      break-after: avoid-page;
+    }
+    .tabla-rubrica th {
+      width: 28%; background: #f9fafb;
+      font-weight: 600; white-space: nowrap;
+    }
+
+    .dua-bloque {
+      border-left: 3pt solid #34D399;
+      background: #f0fdf4;
+      padding: 0.15cm 0.35cm;
+      margin-bottom: 0.2cm;
+    }
+    .dua-bloque--acns { border-left-color: #FBBF24; background: #fffbeb; }
+    .dua-bloque--acs  { border-left-color: #F87171; background: #fef2f2; }
+
+    .seccion-nota {
+      font-size: 9pt;
+      color: #9ca3af;
+      font-style: italic;
+    }
+
+    .pagebreak { page-break-after: always; }
+  </style>
+</head>
+<body>
+
+{# ----------------------------------------------------------- HEADER #}
+<header class="doc-header">
+  <h1>{{ sa.titulo }}</h1>
+  {% if sa.id_situacion_origen %}
+    <p>
+      <span class="badge">
+        {% if sa.tipo_adaptacion == 'significativa' %}ACS — Adaptación significativa
+        {% else %}ACNS — Adaptación no significativa{% endif %}
+      </span>
+    </p>
+  {% endif %}
+  <div class="doc-meta">
+    <div><strong>{{ _('Materia:') }}</strong> {{ sa.materia }}</div>
+    <div><strong>{{ _('Curso:') }}</strong> {{ sa.curso }}</div>
+    {% if sa.num_sesiones %}<div><strong>{{ _('Sesiones:') }}</strong> {{ sa.num_sesiones }}</div>{% endif %}
+    {% if sa.duracion_sesion_minutos %}<div><strong>{{ _('Duración:') }}</strong> {{ sa.duracion_sesion_minutos }} min</div>{% endif %}
+  </div>
+  <div class="doc-meta">
+    <div><strong>{{ _('Docente:') }}</strong> {{ usuario.nombre }}</div>
+    {% if usuario.centro_educativo %}<div><strong>{{ _('Centro:') }}</strong> {{ usuario.centro_educativo }}</div>{% endif %}
+    <div><strong>{{ _('Generado:') }}</strong> {{ generado_en.strftime('%d/%m/%Y %H:%M') }}</div>
+  </div>
+</header>
+
+{# ----------------------------------------------------------- MACROS #}
+
+{%- macro render_descripcion(d) -%}
+  {% if d.texto %}<p>{{ d.texto }}</p>{% endif %}
+  {% if d.pregunta_guia %}
+    <div class="callout">
+      <span class="callout__label">{{ _('Pregunta guía') }}</span>
+      <p>{{ d.pregunta_guia }}</p>
+    </div>
+  {% endif %}
+  {% if d.producto_final %}
+    <div class="callout callout--producto">
+      <span class="callout__label">{{ _('Producto final') }}</span>
+      <p>{{ d.producto_final }}</p>
+    </div>
+  {% endif %}
+{%- endmacro -%}
+
+{%- macro render_objetivos(d) -%}
+  {% set lista = d.objetivos or [] %}
+  {% if lista %}
+    <ol class="lista-objetivos">
+      {% for o in lista %}
+        <li class="objetivo">
+          <span class="objetivo__num">{{ loop.index }}.</span>
+          <span class="objetivo__cuerpo">
+            {{ o.texto }}
+            {% if o.competencias %}
+              <div>
+                {% for c in o.competencias %}<span class="chip chip--competencia">{{ c }}</span>{% endfor %}
+              </div>
+            {% endif %}
+          </span>
+        </li>
+      {% endfor %}
+    </ol>
+  {% endif %}
+{%- endmacro -%}
+
+{%- macro tabla_curr(items, columnas) -%}
+  {% if items %}
+    <table>
+      <thead><tr>
+        {% for _, lab in columnas %}<th>{{ lab }}</th>{% endfor %}
+      </tr></thead>
+      <tbody>
+        {% for it in items %}
+          <tr>
+            {% for k, _ in columnas %}<td>{{ it.get(k) or '—' }}</td>{% endfor %}
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  {% endif %}
+{%- endmacro -%}
+
+{%- macro render_conexion_curricular(d) -%}
+  {% if d.competencias %}
+    <h3>{{ _('Competencias específicas') }}</h3>
+    {{ tabla_curr(d.competencias, [('codigo', 'Código'), ('justificacion', 'Justificación')]) }}
+  {% endif %}
+  {% if d.criterios %}
+    <h3>{{ _('Criterios de evaluación') }}</h3>
+    {{ tabla_curr(d.criterios, [('codigo', 'Código'), ('competencia', 'Comp.'), ('justificacion', 'Justificación')]) }}
+  {% endif %}
+  {% if d.saberes %}
+    <h3>{{ _('Saberes básicos') }}</h3>
+    {{ tabla_curr(d.saberes, [('codigo', 'Código'), ('justificacion', 'Justificación')]) }}
+  {% endif %}
+{%- endmacro -%}
+
+{%- macro render_secuencia_sesiones(d) -%}
+  {% for s in (d.sesiones or []) %}
+    <div class="sesion">
+      <div class="sesion__head">
+        <span class="sesion__num">Sesión {{ s.numero or '?' }}</span>
+        {% if s.fase %}<span class="chip chip--fase">{{ s.fase }}</span>{% endif %}
+        {% if s.duracion_minutos %}<span class="sesion__dur">· {{ s.duracion_minutos }} min</span>{% endif %}
+        <div class="sesion__titulo">{{ s.titulo or '' }}</div>
+      </div>
+      {% if s.actividades %}
+        <div class="sesion-bloque">
+          <h5>{{ _('Actividades') }}</h5>
+          <ol>
+            {% for a in s.actividades %}
+              <li>{% if a is mapping %}{{ a.descripcion or '' }}{% else %}{{ a }}{% endif %}</li>
+            {% endfor %}
+          </ol>
+        </div>
+      {% endif %}
+      {% if s.recursos %}
+        <div class="sesion-bloque">
+          <h5>{{ _('Recursos') }}</h5>
+          <ul>{% for r in s.recursos %}<li>{{ r }}</li>{% endfor %}</ul>
+        </div>
+      {% endif %}
+      {% if s.criterios %}
+        <div class="sesion-bloque">
+          <h5>{{ _('Criterios trabajados') }}</h5>
+          <div>{% for c in s.criterios %}<span class="chip chip--criterio">{{ c }}</span>{% endfor %}</div>
+        </div>
+      {% endif %}
+    </div>
+  {% endfor %}
+{%- endmacro -%}
+
+{%- macro render_evaluacion(d) -%}
+  {% if d.instrumentos %}
+    <h3>{{ _('Instrumentos de evaluación') }}</h3>
+    <table>
+      <thead><tr><th>{{ _('Instrumento') }}</th><th>{{ _('Momento') }}</th><th style="text-align:right">{{ _('Peso') }}</th></tr></thead>
+      <tbody>
+        {% for i in d.instrumentos %}
+          <tr>
+            <td>{{ i.nombre }}</td>
+            <td>{{ i.momento or '—' }}</td>
+            <td style="text-align:right">{% if i.peso is not none %}{{ i.peso }}%{% else %}—{% endif %}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  {% endif %}
+  {% if d.rubricas %}
+    <h3>{{ _('Rúbricas por criterio') }}</h3>
+    {% set NIVELES = [('excelente','Excelente'),('logrado','Logrado'),('en_proceso','En proceso'),('iniciado','Iniciado')] %}
+    {% for r in d.rubricas %}
+      <div class="rubrica">
+        <div class="rubrica__head">Criterio {{ r.criterio or '—' }}</div>
+        <table class="tabla-rubrica">
+          <tbody>
+            {% for k, lab in NIVELES %}
+              <tr>
+                <th>{{ lab }}</th>
+                <td>{{ (r.niveles or {}).get(k) or '—' }}</td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    {% endfor %}
+  {% endif %}
+{%- endmacro -%}
+
+{%- macro render_atencion_diversidad(d, tipo_adapt=None) -%}
+  {% if d.principios_dua %}
+    <div class="dua-bloque">
+      <h4>{{ _('Principios DUA aplicados') }}</h4>
+      <ul>{% for p in d.principios_dua %}<li>{{ p }}</li>{% endfor %}</ul>
+    </div>
+  {% endif %}
+  {% if d.ajustes_no_significativos and tipo_adapt != 'significativa' %}
+    <div class="dua-bloque dua-bloque--acns">
+      <h4>{{ _('Ajustes no significativos') }}</h4>
+      <ul>{% for a in d.ajustes_no_significativos %}<li>{{ a }}</li>{% endfor %}</ul>
+    </div>
+  {% endif %}
+  {% if d.ajustes_significativos and tipo_adapt != 'no_significativa' %}
+    <div class="dua-bloque dua-bloque--acs">
+      <h4>{{ _('Ajustes significativos') }}</h4>
+      <ul>{% for a in d.ajustes_significativos %}<li>{{ a }}</li>{% endfor %}</ul>
+    </div>
+  {% endif %}
+{%- endmacro -%}
+
+{# ----------------------------------------------------------- BODY #}
+
+{% set RENDERS = {
+  'descripcion':         render_descripcion,
+  'objetivos':           render_objetivos,
+  'conexion_curricular': render_conexion_curricular,
+  'secuencia_sesiones':  render_secuencia_sesiones,
+  'evaluacion':          render_evaluacion,
+} %}
+
+{% for clave, etiqueta in secciones %}
+  {% set datos = (sa.contenido or {}).get(clave) %}
+  {% if datos %}
+    <h2>{{ etiqueta }}</h2>
+    {% if clave == 'atencion_diversidad' %}
+      {{ render_atencion_diversidad(datos, sa.tipo_adaptacion) }}
+    {% elif RENDERS[clave] %}
+      {{ RENDERS[clave](datos) }}
+    {% else %}
+      <p class="seccion-nota">{{ _('Sección sin renderizador específico.') }}</p>
+    {% endif %}
+  {% endif %}
+{% endfor %}
+
+</body>
+</html>

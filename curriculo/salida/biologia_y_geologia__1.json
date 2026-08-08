@@ -1,0 +1,264 @@
+{
+  "materia_oficial": "BIOLOGÍA Y GEOLOGÍA",
+  "materia": "Biología y Geología",
+  "etapa": "ESO",
+  "ciclo": "Primer curso",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "CE1",
+      "descripcion": "Interpretar y transmitir información y datos científicos, argumentando sobre ellos y utilizando diferentes formatos, para analizar conceptos y procesos de las ciencias biológicas y geológicas.",
+      "descriptores": [
+        "CCL1",
+        "CCL2",
+        "CCL5",
+        "STEM4",
+        "CD2",
+        "CD3",
+        "CCEC4"
+      ]
+    },
+    {
+      "codigo": "CE2",
+      "descripcion": "Identificar, localizar y seleccionar información, contrastando su veracidad, organizándola y evaluándola críticamente, para resolver preguntas relacionadas con las ciencias biológicas y geológicas.",
+      "descriptores": [
+        "CCL3",
+        "STEM4",
+        "CD1",
+        "CD2",
+        "CD3",
+        "CD4",
+        "CD5",
+        "CPSAA4"
+      ]
+    },
+    {
+      "codigo": "CE3",
+      "descripcion": "Planificar y desarrollar proyectos de investigación, siguiendo los pasos de las metodologías científicas y cooperando cuando sea necesario, para indagar en aspectos relacionados con las ciencias geológicas y biológicas.",
+      "descriptores": [
+        "CCL1",
+        "CCL2",
+        "STEM2",
+        "STEM3",
+        "STEM4",
+        "CD1",
+        "CD2",
+        "CPSAA3",
+        "CE3"
+      ]
+    },
+    {
+      "codigo": "CE4",
+      "descripcion": "Utilizar el razonamiento y el pensamiento computacional, analizando críticamente las respuestas y soluciones y reformulando el procedimiento, si fuera necesario, para resolver problemas o dar explicación a procesos de la vida cotidiana relacionados con la biología y la geología.",
+      "descriptores": [
+        "STEM1",
+        "STEM2",
+        "CD5",
+        "CPSAA5",
+        "CE1",
+        "CE3",
+        "CCEC4"
+      ]
+    },
+    {
+      "codigo": "CE5",
+      "descripcion": "Analizar los efectos de determinadas acciones sobre el medio ambiente y la salud, basándose en los fundamentos de las ciencias biológicas y de la Tierra, para promover y adoptar hábitos que eviten o minimicen los impactos medioambientales negativos, sean compatibles con un desarrollo sostenible y permitan mantener y mejorar la salud individual y colectiva.",
+      "descriptores": [
+        "STEM2",
+        "STEM5",
+        "CD4",
+        "CPSAA1",
+        "CPSAA2",
+        "CC4",
+        "CE1",
+        "CC3"
+      ]
+    },
+    {
+      "codigo": "CE6",
+      "descripcion": "Analizar los elementos de un paisaje concreto valorándolo como patrimonio natural y utilizando conocimientos sobre geología y ciencias de la Tierra para explicar su historia geológica, proponer acciones encaminadas a su protección e identificar posibles riesgos naturales.",
+      "descriptores": [
+        "STEM1",
+        "STEM2",
+        "STEM4",
+        "STEM5",
+        "CD1",
+        "CC4",
+        "CE1",
+        "CCEC1"
+      ]
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "CE1",
+      "descripcion": "Analizar conceptos y procesos biológicos y geológicos interpretando información en diferentes formatos (modelos, gráficos, tablas, diagramas, fórmulas, esquemas, símbolos, páginas web, etc.) y obteniendo conclusiones fundamentadas."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "CE1",
+      "descripcion": "Facilitar la comprensión y análisis de información sobre procesos biológicos y geológicos o trabajos científicos transmitiéndola de forma clara y utilizando la terminología y los formatos adecuados (modelos, gráficos, tablas, vídeos, informes, diagramas, fórmulas, esquemas, símbolos, contenidos digitales, etc.)."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "CE1",
+      "descripcion": "Explicar fenómenos biológicos y geológicos representándolos mediante modelos y diagramas, utilizando, cuando sea necesario, los pasos del diseño de ingeniería (identificación del problema, exploración, diseño, creación, evaluación y mejora)."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "CE2",
+      "descripcion": "Resolver cuestiones sobre Biología y Geología localizando, seleccionando y organizando información de distintas fuentes y citándolas correctamente."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "CE2",
+      "descripcion": "Reconocer la información sobre temas biológicos y geológicos con base científica, distinguiéndola de pseudociencias, bulos, teorías conspiratorias y creencias infundadas y manteniendo una actitud escéptica ante estos."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "CE2",
+      "descripcion": "Valorar la contribución de la ciencia a la sociedad y la labor de las personas dedicadas a ella con independencia de su etnia, sexo o cultura, destacando el papel de las mujeres científicas."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "CE3",
+      "descripcion": "Plantear preguntas e hipótesis e intentar realizar predicciones sobre fenómenos biológicos o geológicos."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "CE3",
+      "descripcion": "Diseñar la experimentación sobre fenómenos biológicos y geológicos de modo que permitan responder a preguntas concretas y contrastar una hipótesis planteada."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "CE3",
+      "descripcion": "Realizar experimentos y tomar datos cuantitativos o cualitativos sobre fenómenos biológicos y geológicos."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "CE3",
+      "descripcion": "Interpretar los resultados obtenidos en un proyecto de investigación con corrección."
+    },
+    {
+      "codigo": "3.5",
+      "competencia": "CE3",
+      "descripcion": "Cooperar dentro de un proyecto científico asumiendo responsablemente una función concreta, utilizando espacios virtuales cuando sea necesario."
+    },
+    {
+      "codigo": "3.6",
+      "competencia": "CE3",
+      "descripcion": "Cooperar dentro de un proyecto científico respetando la diversidad y la igualdad de género, y favoreciendo la inclusión."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "CE4",
+      "descripcion": "Resolver problemas o dar explicación a procesos biológicos o geológicos utilizando conocimientos, datos e información proporcionados por el docente, el razonamiento lógico o el pensamiento computacional."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "CE4",
+      "descripcion": "Considerar si la solución teórica a un problema sobre fenómenos biológicos y geológicos es realista."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "CE5",
+      "descripcion": "Relacionar, con fundamentos científicos, la preservación de la biodiversidad, la conservación del medio ambiente, la protección de los seres vivos del entorno, el desarrollo sostenible y la calidad de vida."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "CE5",
+      "descripcion": "Proponer y adoptar hábitos sostenibles analizando de una manera crítica las actividades propias y ajenas a partir de los propios razonamientos y de los conocimientos adquiridos."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "CE5",
+      "descripcion": "Proponer y adoptar hábitos saludables, analizando las acciones propias y ajenas con actitud crítica."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "CE6",
+      "descripcion": "Valorar la importancia del paisaje como patrimonio natural analizando la fragilidad de los elementos que lo componen."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "CE6",
+      "descripcion": "Interpretar el paisaje analizando sus elementos y reflexionando sobre el impacto ambiental y los riesgos naturales derivados de determinadas acciones humanas."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Proyecto científico",
+      "titulo": "Proyecto científico",
+      "items": [
+        "Hipótesis, preguntas y conjeturas: planteamiento.",
+        "Estrategias para la búsqueda de información científica: uso de buscadores, webs didácticas, etc.",
+        "Métodos y formatos de presentación y comunicación científica: exposición, gráfica, vídeo, póster científico, informe de laboratorio, cuaderno de campo, modelo, etc.",
+        "Fuentes fidedignas de información científica como artículos periodísticos y divulgativos, revistas de temática científica, libros de texto, etc.: utilización.",
+        "La respuesta a cuestiones científicas mediante la experimentación y el trabajo de campo: utilización de los instrumentos y espacios necesarios (laboratorio, aulas, entorno, etc.) de forma adecuada.",
+        "Modelado como método de representación y comprensión de procesos o elementos de la naturaleza.",
+        "Métodos de observación de fenómenos naturales.",
+        "Métodos y de toma y registro de datos de fenómenos naturales: anotación en el cuaderno de campo, informe de laboratorio, uso de instrumentos de medición de magnitudes, etc.",
+        "Métodos de análisis de resultados: uso de herramientas matemáticas (media, rango) y de medios digitales de representación y cálculo.",
+        "La labor científica y las personas dedicadas a la ciencia: contribución a las ciencias biológicas y geológicas e importancia social. El papel de la mujer en la ciencia a lo largo de la historia."
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Geología",
+      "titulo": "Geología",
+      "items": [
+        "Conceptos de mineral: características y propiedades (color, raya, brillo, exfoliación, dureza, tenacidad, densidad, etc.).",
+        "Conceptos de roca: características y propiedades (composición, textura, disposición en la naturaleza, etc.).",
+        "Estrategias de clasificación de las rocas: sedimentarias, metamórficas e ígneas. Ejemplos de los diferentes tipos de rocas. El ciclo de las rocas.",
+        "Rocas y minerales relevantes o del entorno: identificación.",
+        "Usos de los minerales y las rocas: su utilización en la fabricación de materiales y objetos cotidianos.",
+        "La estructura básica de la geosfera: modelo geoquímico."
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Seres vivos",
+      "titulo": "Seres vivos",
+      "items": [
+        "Los seres vivos: diferenciación y clasificación. Los siete reinos de Ruggiero.",
+        "Los principales grupos taxonómicos de animales vertebrados e invertebrados y de plantas: observación de especies del entorno y clasificación a partir de sus características distintivas.",
+        "Las especies del entorno: estrategias de identificación (guías, claves dicotómicas, herramientas digitales,  visu , etc.). Nomenclatura científica.",
+        "Los animales como seres sintientes: semejanzas y diferencias con los seres vivos no sintientes. Justificación científica."
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Ecología y sostenibilidad",
+      "titulo": "Ecología y sostenibilidad",
+      "items": [
+        "Los ecosistemas del entorno, sus componentes bióticos y abióticos y los tipos de relaciones intraespecíficas e interespecíficas.",
+        "La importancia de la conservación de los ecosistemas y la biodiversidad.",
+        "El desarrollo sostenible: definición, ejemplos, importancia.",
+        "Huella ecológica.",
+        "Las funciones de la atmósfera y su papel esencial para la vida en la Tierra. Estructura de la atmósfera.",
+        "Las funciones de la hidrosfera y su papel esencial para la vida en la Tierra. Su influencia en el clima. Las propiedades del agua.",
+        "Las interacciones entre atmósfera, hidrosfera, geosfera y biosfera, su papel en la edafogénesis y en el modelado del relieve y su importancia para la vida. Las funciones del suelo.",
+        "Las causas antrópicas del cambio climático y sus consecuencias sobre los ecosistemas, los seres vivos y la sociedad. La emergencia climática.",
+        "La importancia de los hábitos sostenibles (consumo responsable, prevención y gestión de residuos, respeto al medio ambiente, etc.). Ejemplos de hábitos sostenibles propios y ajenos en el entorno cotidiano.",
+        "La relación entre la salud medioambiental, humana y de otros seres vivos « one health  (una sola salud)»."
+      ]
+    },
+    {
+      "codigo": "E",
+      "bloque": "E. Hábitos saludables",
+      "titulo": "Hábitos saludables",
+      "items": [
+        "Características y elementos propios de una dieta saludable y su importancia.",
+        "Conceptos de sexo y sexualidad: importancia del respeto hacia la libertad y la diversidad sexual y hacia la igualdad de género, dentro de una educación sexual integral como parte de un desarrollo armónico.",
+        "Educación afectivo-sexual desde la perspectiva de la igualdad entre personas y el respeto a la diversidad sexual. La importancia de las prácticas sexuales responsables. La asertividad y el autocuidado. La prevención de infecciones de transmisión sexual (ITS) y de embarazos no deseados. El uso adecuado de métodos anticonceptivos y de métodos de prevención de ITS.",
+        "Las drogas legales e ilegales: sus efectos perjudiciales sobre la salud de los consumidores y de quienes están en su entorno próximo.",
+        "Los hábitos saludables: su importancia en la conservación de la salud física, mental y social (higiene del sueño, hábitos posturales, uso responsable de las nuevas tecnologías, actividad física, autorregulación emocional, cuidado y corresponsabilidad, etc.)."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1662 @@
+/* =============================================================================
+   Sistema de diseño AWEBO · Situaciones de Aprendizaje
+   ----------------------------------------------------------------------------
+   Tokens fieles a la paleta del cap. 5 del documento (Tabla 5.x). Los colores
+   primario (#5ED3D1) y secundario (#7C83FD) se usan SIEMPRE como fondo o
+   acento, nunca como texto: encima va ``--color-on-primary`` (#1F2937), que
+   garantiza ratios WCAG 2.1 AA. El derivado ``--color-link`` (#4F46E5) existe
+   para el texto-enlace inline sobre blanco, donde el #7C83FD no alcanza 4.5:1.
+
+   REGLA QUE NO SE PUEDE ROMPER
+   ---------------------------
+   Todo color vive en un bloque de tokens: ``:root`` o
+   ``:root[data-tema="oscuro"]``. Ningún color literal en una regla concreta.
+   Un `#fff` suelto ignora el cambio de tema y se queda en claro sobre fondo
+   oscuro; así estaba esta hoja antes, con 44 de ellos repartidos. Hay un test
+   que lo comprueba: ``tests/unit/test_temas.py::TestSinLiteralesSueltos``.
+
+   TEMAS
+   -----
+   Claro (por defecto), oscuro y automático. El automático se resuelve **en el
+   servidor** —ver ``app/temas.py``—, de modo que ``<html data-tema="…">``
+   siempre trae un valor concreto. Dos consecuencias buenas: la paleta oscura
+   se define una sola vez, sin duplicarla dentro de una media query, y no hay
+   destello blanco al navegar.
+
+   CONTRASTE
+   ---------
+   Los 23 pares texto/fondo de ambos temas están verificados en
+   ``tests/unit/test_temas.py::TestContraste``: 4.5:1 para texto (SC 1.4.3) y
+   3:1 para contornos de control (SC 1.4.11). Al añadir un par nuevo de
+   colores, añádelo también a esa lista.
+   ============================================================================= */
+
+:root {
+  /* ----------------------------------------------------------------
+     Paleta cromática (cap. 5 del documento, Tabla 5.x).
+     Los tonos del manual se usan SIEMPRE como fondo o acento;
+     el texto sobre ellos es el ``--color-text`` (#1F2937), que
+     garantiza ratios AA:
+        #5ED3D1 sobre #1F2937 ≈ 7.9:1   (AAA)
+        #7C83FD sobre #1F2937 ≈ 4.7:1   (AA)
+     ---------------------------------------------------------------- */
+  --color-primary:        #5ED3D1;  /* primario: cabecera, botones acción */
+  --color-primary-hover:  #3FBDBB;  /* derivado más oscuro para hover/active */
+  --color-primary-soft:   #E6F7F7;  /* fondos sutiles, callouts */
+  --color-secondary:        #7C83FD; /* secundario: acentos, elementos interactivos */
+  --color-secondary-hover:  #6970FB;
+  --color-secondary-soft:   #EEF0FF;
+  /* Variante OSCURA del secundario, sólo para texto-enlace inline sobre
+     blanco, donde el #7C83FD no llega a AA (ratio 3.0:1). En cualquier
+     superficie que NO sea texto sobre blanco se usa #7C83FD tal cual. */
+  --color-link:           #4F46E5;
+
+  /* ---- Superficies y texto (cap. 5) ---- */
+  --color-bg:         #F7FAFC;
+  --color-surface:    #FFFFFF;
+  --color-surface-2:  #F1F5F9;  /* zonas levemente diferenciadas */
+  --color-text:       #1F2937;
+  --color-text-muted: #4B5563;  /* ratio 7:1 sobre blanco — AAA */
+  --color-border:     #D1D5DB;  /* separadores decorativos */
+  /* Contorno de campos y controles. WCAG 2.1 SC 1.4.11 exige 3:1 a los
+     bordes que identifican un control; el #9CA3AF anterior daba 2.54:1
+     sobre blanco y 2.42:1 sobre el fondo, así que no cumplía. Este tono es
+     el mínimo que llega a 3:1 en ambas superficies (3.38 y 3.23). */
+  --color-border-strong: #848C9B;
+
+  --color-surface-3:  #E5E7EB;  /* fondos neutros de badge y chip */
+  --color-code-bg:    #EEF0F5;  /* fondo de <code> en línea */
+
+  /* ---- Texto SOBRE superficies de marca ----------------------------
+     Estos tokens NO se invierten con el tema. El primario y el
+     secundario siguen siendo claros también en modo oscuro, así que el
+     texto encima debe seguir siendo oscuro. Si aquí se usara
+     ``--color-text``, en tema oscuro quedaría texto claro sobre fondo
+     claro: ilegible. Es la trampa principal de esta pantalla.
+     ------------------------------------------------------------------ */
+  --color-on-primary:   #1F2937;  /* 8.19:1 sobre #5ED3D1 — AAA */
+  --color-on-secondary: #1F2937;  /* 4.74:1 sobre #7C83FD — AA  */
+  --color-on-link:      #FFFFFF;  /* 8.03:1 sobre #4F46E5 — AAA */
+
+  /* ---- Cabecera ----------------------------------------------------
+     Con nombre propio porque en tema oscuro deja de ser el primario:
+     una banda turquesa brillante sobre una interfaz oscura es justo el
+     deslumbramiento que el tema pretende evitar.
+     ------------------------------------------------------------------ */
+  --color-topbar-bg: var(--color-primary);
+  --color-topbar-fg: var(--color-on-primary);
+  --color-topbar-bd: var(--color-primary-hover);
+
+  /* ---- Bloque invertido (JSON crudo de la generación) ---- */
+  --color-inverse-bg:   #0F172A;
+  --color-inverse-text: #E2E8F0;
+
+  /* ---- Estados (cap. 5) ---- */
+  --color-success:        #34D399;
+  --color-success-strong: #047857;  /* variante para texto */
+  --color-success-soft:   #ECFDF5;
+  --color-warning:        #FBBF24;
+  --color-warning-strong: #B45309;  /* variante para texto */
+  --color-warning-soft:   #FFFBEB;
+  --color-danger:         #F87171;
+  --color-danger-strong:  #B91C1C;  /* variante para texto */
+  --color-danger-soft:    #FEF2F2;
+
+  /* ---- Familias auxiliares de los chips ---- */
+  --color-info-soft:     #DDEBFF;  /* chips de competencia */
+  --color-info-strong:   #1E40AF;
+  --color-accent-soft:   #EDE9FE;  /* chips de fase */
+  --color-accent-strong: #5B21B6;
+
+  /* Velo de hover sobre superficies de color (cabecera) */
+  --overlay-hover: rgba(255, 255, 255, .5);
+
+  /* ---- Tipografía ---- */
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto,
+               "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+  /* Escala modular (1.125): 0.875 · 1 · 1.125 · 1.25 · 1.5 · 1.875 · 2.25 */
+  --fs-xs:   0.75rem;
+  --fs-sm:   0.875rem;
+  --fs-base: 1rem;
+  --fs-md:   1.125rem;
+  --fs-lg:   1.25rem;
+  --fs-xl:   1.5rem;
+  --fs-2xl:  1.875rem;
+  --fs-3xl:  2.25rem;
+
+  /* ---- Espaciado, radios, sombras ---- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+
+  --radius-sm: 4px;
+  --radius:    8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-pill: 999px;
+
+  --shadow-sm: 0 1px 2px rgba(15, 23, 42, .06);
+  --shadow:    0 4px 12px rgba(15, 23, 42, .08);
+  --shadow-lg: 0 10px 30px rgba(15, 23, 42, .12);
+
+  /* Controles nativos (scrollbars, selects, campos) acordes al tema */
+  color-scheme: light;
+
+  /* ---- Compatibilidad con clases legacy del CSS anterior ---- */
+  --bg:           var(--color-bg);
+  --surface:      var(--color-surface);
+  --text:         var(--color-text);
+  --muted:        var(--color-text-muted);
+  --primary:      var(--color-link);          /* enlace/acento de texto AA */
+  --primary-dark: var(--color-primary-hover);
+  --border:       var(--color-border);
+  --ok-bg:  var(--color-success-soft);
+  --ok-fg:  var(--color-success-strong);
+  --error-bg: var(--color-danger-soft);
+  --error-fg: var(--color-danger-strong);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+/* Reset crítico: el atributo HTML ``hidden`` debe ocultar SIEMPRE,
+   independientemente del ``display`` que declare la clase del elemento.
+   Sin ``!important``, cualquier regla posterior con display:flex/grid/
+   inline-block ganaría por especificidad y dejaría el elemento visible
+   (ya nos pasó con .alert y .dashboard-grid). */
+[hidden] { display: none !important; }
+html { font-size: 16px; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: var(--fs-base);
+  color: var(--color-text);
+  background: var(--color-bg);
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Jerarquía tipográfica accesible. ``line-height`` reducido en titulares y
+   ``text-wrap: balance`` para que no queden palabras sueltas. */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-sans);
+  color: var(--color-text);
+  line-height: 1.25;
+  margin: 0 0 var(--space-3);
+  text-wrap: balance;
+  font-weight: 700;
+}
+h1 { font-size: var(--fs-2xl); letter-spacing: -0.01em; }
+h2 { font-size: var(--fs-xl); }
+h3 { font-size: var(--fs-lg); }
+h4 { font-size: var(--fs-md); }
+p  { margin: 0 0 var(--space-3); }
+p:last-child { margin-bottom: 0; }
+
+/* Los enlaces inline usan ``--color-link`` (derivado AA del secundario),
+   no el #7C83FD plano: sobre blanco ese tono no llega a 4.5:1. El
+   subrayado es siempre visible para no depender sólo del color. */
+a { color: var(--color-link); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+a:hover { text-decoration-thickness: 2px; }
+
+img, svg { max-width: 100%; height: auto; }
+
+/* ---- Foco visible accesible (no sólo color: outline grueso) ---- */
+:focus-visible {
+  outline: 3px solid var(--color-link);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* ---- Selección con contraste AA ---- */
+::selection { background: var(--color-primary-soft); color: var(--color-text); }
+
+/* ---- Skip link visible al recibir foco ---- */
+.skip-link {
+  position: absolute;
+  left: -10000px;
+  top: 0;
+  background: var(--color-link);
+  color: var(--color-on-link);
+  padding: .65rem 1rem;
+  z-index: 1000;
+  text-decoration: none;
+  border-radius: 0 0 var(--radius) 0;
+  font-weight: 700;
+}
+.skip-link:focus {
+  left: 0;
+  outline: 3px solid var(--color-text);
+  outline-offset: 0;
+}
+
+/* ---- Solo para lectores de pantalla ---- */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Layout */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Topbar (cabecera). Usa los tokens ``--color-topbar-*`` y no el primario
+   directamente: en tema oscuro pasa a ser una superficie oscura, porque una
+   banda turquesa brillante sobre interfaz oscura es justo el deslumbramiento
+   que ese tema evita. Contraste verificado en ambos temas. */
+.topbar {
+  background: var(--color-topbar-bg);
+  border-bottom: 1px solid var(--color-topbar-bd);
+  box-shadow: var(--shadow-sm);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  overflow: visible;
+}
+/* Ancho completo de la ventana, a diferencia del resto de la página.
+   Deliberado: en una barra de navegación el logo se espera en la esquina y
+   las acciones en la contraria. Encerrada en `.container` (960 px) quedaban
+   las dos alineadas con el contenido, con franjas vacías a los lados, y en
+   pantallas anchas parecía que la barra terminaba antes que la página.
+
+   El padding lateral es el mismo que el de `.container` para que el logo
+   quede a la misma distancia del borde que el texto de las páginas. */
+.topbar__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  padding: var(--space-3) 1rem;
+}
+.brand {
+  font-weight: 800;
+  color: var(--color-topbar-fg);
+  text-decoration: none;
+  font-size: var(--fs-md);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  letter-spacing: -0.01em;
+  /* El logo no se comprime nunca. Con la navegación en una sola línea, un
+     flex-item que puede encoger acabaría cediendo espacio hasta deformar la
+     marca antes de que se note que no cabe. Que ceda la navegación, que para
+     eso tiene su menú de hamburguesa. */
+  flex-shrink: 0;
+}
+/* Logo de marca: ahora es un <img> (PNG con la identidad AWEBO).
+   Tamaño consistente, sin distorsión y con object-fit por si el origen
+   no es cuadrado. */
+.brand__logo {
+  width: 60px; /* Tamaño ampliado del logo */
+  height: 60px;
+  margin-top: calc(-1 * var(--space-3));
+  margin-bottom: calc(-1 * var(--space-3));
+  border-radius: 35%; /* Bordes redondeados (puedes cambiarlo a 50% si quieres un círculo perfecto) */
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.brand__nombre { letter-spacing: .02em; }
+.brand:hover { text-decoration: none; }
+
+/* Iconos Lucide: la librería inyecta un <svg> reemplazando al <i>.
+   Le damos tamaño relativo al texto y lo centramos verticalmente
+   con el contenido adyacente. ``stroke="currentColor"`` por defecto. */
+[data-lucide],
+.btn svg.lucide,
+.nav svg.lucide,
+.link-btn svg.lucide {
+  width: 1.1em;
+  height: 1.1em;
+  flex-shrink: 0;
+  vertical-align: -0.18em;
+  stroke-width: 2;
+}
+.link-btn { display: inline-flex; align-items: center; gap: var(--space-1); }
+
+/* En escritorio la navegación va en UNA línea, pegada a la derecha.
+   `flex-wrap: wrap` la partía en dos al cambiar a catalán —los rótulos son
+   más largos—, y eso crecía la cabecera y descolocaba el resto de la página.
+   Con `nowrap`, si no cabe entra el menú de hamburguesa, que es lo que ya
+   estaba montado para pantallas estrechas.
+
+   `max-height` y `overflow-y` viven ahora SOLO en la consulta de medios del
+   menú desplegable. En escritorio creaban un contenedor con desplazamiento
+   que **recortaba el contorno de foco** del selector de idioma: un elemento
+   con overflow distinto de `visible` corta lo que sobresalga, y un
+   `outline-offset` sobresale por definición. */
+.nav {
+  display: flex;
+  gap: var(--space-2);
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-left: auto;   /* pegada a la derecha, con el logo a la izquierda */
+}
+.nav a, .link-btn {
+  color: var(--color-topbar-fg);
+  text-decoration: none;
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  /* Cada enlace en una línea. Sin esto, «Les meves situacions» se parte por
+     dentro de su propio recuadro en cuanto el espacio aprieta: la barra
+     conserva la altura pero los rótulos quedan a dos renglones, que se ve
+     peor que quedarse sin sitio. Si no cabe, entra el menú de hamburguesa. */
+  white-space: nowrap;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  padding: .5rem .75rem;
+  border-radius: var(--radius);
+  transition: background-color .12s ease;
+}
+.nav a:hover, .link-btn:hover {
+  text-decoration: none;
+  background: var(--overlay-hover);
+}
+/* Indicador del enlace activo: fondo blanco + subrayado grueso (refuerzo
+   no sólo color). */
+.nav a[aria-current="page"] {
+  color: var(--color-text);
+  background: var(--color-surface);
+  font-weight: 700;
+  box-shadow: inset 0 -2px 0 var(--color-text);
+}
+
+/* Menu hamburguesa */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 1px solid transparent;
+  border-radius: var(--radius);
+  background: transparent;
+  cursor: pointer;
+}
+
+.nav-toggle:hover {
+  background: var(--overlay-hover);
+}
+
+.nav-toggle span {
+  width: 22px;
+  height: 2px;
+  background: var(--color-text);
+  margin-inline: auto;
+  border-radius: 999px;
+}
+
+/* ---------------------------------------------------------
+   Modo móvil / zoom elevado
+   --------------------------------------------------------- */
+/* 1100 y no 900. A 900 px la barra cabía en castellano y se partía en dos
+   líneas en catalán, que tiene los rótulos más largos. El umbral se fija por
+   el idioma más ancho, no por el que se usa para desarrollar — que es
+   justamente el error que dejó esto sin detectar. */
+@media (max-width: 1100px) {
+
+  .topbar__inner {
+    flex-wrap: nowrap;
+  }
+
+  .nav-toggle {
+    display: inline-flex;
+  }
+
+  .nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+
+    /* Aquí sí: el menú desplegado puede ser más alto que la ventana y
+       necesita desplazarse. En escritorio esto recortaba el foco. */
+    max-height: calc(100vh - 80px);
+    overflow-y: auto;
+
+    padding: var(--space-2);
+
+    background: var(--color-topbar-bg);
+    border-bottom: 1px solid var(--color-topbar-bd);
+    box-shadow: var(--shadow);
+  }
+
+  .nav.nav--open {
+    display: flex;
+  }
+
+  .nav a,
+  .nav .link-btn {
+    width: 100%;
+    justify-content: flex-start;
+    padding: .85rem 1rem;
+  }
+
+  /* El selector de tema y el de idioma NO son enlaces de navegación: son
+     ajustes. Por eso no se estiran a todo el ancho como aquellos —el borde
+     del grupo de tema, que es una píldora, quedaba atravesando la pantalla
+     de lado a lado y parecía un error—.
+
+     Los enlaces sí se quedan a ancho completo: ahí lo que manda es el tamaño
+     del objetivo táctil, y una fila entera es más fácil de acertar que un
+     rótulo. Los ajustes ya tienen su propio recuadro, que basta.
+
+     El sangrado de 1rem es el mismo que el padding lateral de los enlaces,
+     así que todo queda alineado en la misma vertical. */
+  .nav .tema-toggle,
+  .nav .idioma-selector {
+    align-self: flex-start;
+    margin-inline: 1rem;
+  }
+
+  /* Separación vertical: con `gap: 0` en la lista, los dos controles quedaban
+     pegados el uno al otro. Los enlaces no lo notan porque su propio padding
+     los separa; estos no tienen. */
+  .nav .tema-toggle { margin-block: var(--space-3) var(--space-2); }
+  .nav .idioma-selector { margin-bottom: var(--space-2); }
+
+  /* Objetivo táctil de 44 px en los tres botones de tema. En escritorio son
+     de 2rem (32 px), que cumple el mínimo de 24 px del criterio 2.5.8 de
+     WCAG 2.2 pero se queda corto para un dedo. Aquí hay sitio de sobra. */
+  .tema-toggle__opt {
+    width: 2.75rem;
+    height: 2.75rem;
+  }
+
+  /* Y el desplegable de idioma, con la misma altura, para que los dos
+     controles formen una línea coherente. */
+  .idioma-selector select {
+    min-height: 2.75rem;
+    padding-inline: .75rem;
+  }
+}
+
+/* Footer */
+.footer {
+  margin-top: var(--space-7);
+  border-top: 1px solid var(--color-border);
+  background: var(--color-surface);
+}
+.footer .container { padding-block: var(--space-5); color: var(--color-text-muted); }
+.footer__grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: var(--space-5);
+}
+.footer__col h2 {
+  font-size: var(--fs-sm);
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: var(--color-text-muted);
+  margin: 0 0 var(--space-2);
+}
+.footer__col ul { list-style: none; padding: 0; margin: 0; display: grid; gap: var(--space-1); }
+.footer__col a { color: var(--color-text); text-decoration: none; font-size: var(--fs-sm); }
+.footer__col a:hover { text-decoration: underline; }
+.footer__bottom {
+  margin-top: var(--space-5);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--color-border);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  justify-content: space-between;
+  font-size: var(--fs-xs);
+  color: var(--color-text-muted);
+}
+@media (max-width: 720px) {
+  .footer__grid { grid-template-columns: 1fr; }
+}
+
+/* Hero / cabeceras */
+.hero { padding: var(--space-5) 0 var(--space-4); }
+.hero h1 { font-size: var(--fs-3xl); margin: 0 0 var(--space-2); letter-spacing: -0.02em; }
+.lead { color: var(--color-text-muted); margin: 0 0 var(--space-4); font-size: var(--fs-md); max-width: 65ch; }
+
+/* Cards */
+.card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  margin: var(--space-4) 0;
+  box-shadow: var(--shadow-sm);
+}
+.card h2 { margin-top: 0; font-size: var(--fs-lg); }
+.card--accent {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px var(--color-primary-soft);
+}
+
+/* Tablas */
+.api { width: 100%; border-collapse: collapse; font-size: .95rem; }
+.api th, .api td {
+  text-align: left;
+  padding: .5rem .6rem;
+  border-bottom: 1px solid var(--border);
+}
+.api th { background: var(--color-surface-2); }
+code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; background: var(--color-code-bg); padding: 0 .25rem; border-radius: 3px; }
+
+/* Formularios */
+.form-section {
+  max-width: 520px;
+  margin: var(--space-5) auto;
+  background: var(--color-surface);
+  padding: var(--space-6);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+.form { display: flex; flex-direction: column; gap: var(--space-4); }
+.field { display: flex; flex-direction: column; gap: var(--space-1); }
+.field label {
+  font-weight: 600;
+  font-size: var(--fs-sm);
+  color: var(--color-text);
+}
+/* Indicador de "requerido" textual + visual (no sólo color). */
+.field label .req {
+  color: var(--color-danger-strong);
+  margin-left: 2px;
+}
+.field input,
+.field textarea,
+.field select {
+  font: inherit;
+  padding: .6rem .75rem;
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius);
+  background: var(--color-surface);
+  color: var(--color-text);
+  transition: border-color .12s ease, box-shadow .12s ease;
+  min-height: 2.5rem;
+}
+.field input:hover,
+.field textarea:hover,
+.field select:hover { border-color: var(--color-primary-hover); }
+.field input:focus,
+.field textarea:focus,
+.field select:focus {
+  outline: none;
+  border-color: var(--color-primary-hover);
+  box-shadow: 0 0 0 3px var(--color-primary-soft);
+}
+.field [aria-invalid="true"] {
+  border-color: var(--color-danger-strong);
+  background: var(--color-danger-soft);
+}
+.field [aria-invalid="true"]:focus {
+  box-shadow: 0 0 0 3px var(--color-danger-soft);
+}
+.help { color: var(--color-text-muted); font-size: var(--fs-sm); }
+.field-error {
+  color: var(--color-danger-strong);
+  font-size: var(--fs-sm);
+  font-weight: 500;
+  display: inline-flex;
+  gap: var(--space-1);
+  align-items: center;
+}
+.field-error::before { content: "\26A0"; }  /* triángulo: refuerzo no-color */
+
+/* Botones
+   ----------------------------------------------------------------
+   Sistema basado en variables CSS: cada variante define su
+   ``--btn-bg`` / ``--btn-fg`` / ``--btn-bg-hover``, y la regla
+   genérica ``.btn:hover`` resuelve ``--btn-bg-hover`` — así
+   ningún variant queda con texto blanco sobre fondo casi-blanco. */
+.actions { display: flex; gap: var(--space-3); align-items: center; flex-wrap: wrap; margin-top: var(--space-2); }
+.btn {
+  --btn-bg: var(--color-surface);
+  --btn-bg-hover: var(--color-surface-2);
+  --btn-fg: var(--color-text);
+  --btn-bd: var(--color-border-strong);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: .6rem 1rem;
+  min-height: 2.5rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--btn-bd);
+  background: var(--btn-bg);
+  color: var(--btn-fg);
+  text-decoration: none;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform .08s ease, background-color .12s ease, box-shadow .12s ease;
+  white-space: nowrap;
+}
+.btn:hover { background: var(--btn-bg-hover); }
+.btn:active { transform: translateY(1px); }
+.btn:disabled, .btn[aria-disabled="true"] {
+  opacity: .55;
+  cursor: not-allowed;
+  transform: none;
+}
+/* Primario: turquesa del manual + texto oscuro (AAA ~7.9:1). */
+.btn--primary {
+  --btn-bg:       var(--color-primary);
+  --btn-bg-hover: var(--color-primary-hover);
+  --btn-fg:       var(--color-on-primary);
+  --btn-bd:       var(--color-primary-hover);
+  box-shadow: var(--shadow-sm);
+}
+/* Secundario: violeta del manual + texto oscuro (AA ~4.7:1). */
+.btn--secondary {
+  --btn-bg:       var(--color-secondary);
+  --btn-bg-hover: var(--color-secondary-hover);
+  --btn-fg:       var(--color-on-secondary);
+  --btn-bd:       var(--color-secondary-hover);
+}
+.btn--ghost {
+  --btn-bg:       transparent;
+  --btn-bg-hover: var(--color-primary-soft);
+  --btn-bd:       transparent;
+  --btn-fg:       var(--color-link);
+}
+.link { color: var(--color-link); }
+
+/* Alertas */
+/* Nota intencional sobre [hidden]:
+   La regla global ``[hidden] { display: none !important }`` está definida
+   en el reset (ver inicio del archivo). Cualquier componente con display
+   propio (.alert flex, .dashboard-grid grid, .card-header__acciones flex…)
+   queda correctamente oculto cuando lleva el atributo HTML ``hidden``. */
+.alert {
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-danger-soft);
+  color: var(--color-danger-strong);
+  border: 1px solid var(--color-danger-strong);
+  border-radius: var(--radius);
+  margin: 0;
+  display: flex;
+  gap: var(--space-2);
+  align-items: flex-start;
+  font-weight: 500;
+}
+/* Icono lingüístico para alertas (no sólo color). */
+.alert::before {
+  content: "\26A0";
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  line-height: 1.2;
+}
+.alert--ok {
+  background: var(--color-success-soft);
+  color: var(--color-success-strong);
+  border-color: var(--color-success-strong);
+}
+.alert--ok::before { content: "\2713"; }
+.alert--info {
+  background: var(--color-secondary-soft);
+  color: var(--color-link);
+  border-color: var(--color-link);
+}
+.alert--info::before { content: "\2139"; }
+.alert--warn {
+  background: var(--color-warning-soft);
+  color: var(--color-warning-strong);
+  border-color: var(--color-warning-strong);
+}
+.alert--warn::before { content: "\26A0"; }
+
+/* Definición de perfil */
+.perfil { display: grid; grid-template-columns: 12rem 1fr; row-gap: .35rem; column-gap: 1rem; margin: 0 0 1rem; }
+.perfil dt { color: var(--muted); }
+.perfil dd { margin: 0; }
+
+@media (max-width: 600px) {
+  .perfil { grid-template-columns: 1fr; row-gap: .1rem; }
+  .perfil dt { margin-top: .5rem; }
+}
+
+/* Form: textareas y selects con el mismo estilo que inputs */
+.field textarea,
+.field select {
+  font: inherit;
+  padding: .55rem .65rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--color-surface);
+  resize: vertical;
+}
+.field textarea:focus,
+.field select:focus { border-color: var(--primary); }
+
+/* Filas de campos */
+.row { display: grid; gap: 1rem; grid-template-columns: repeat(3, 1fr); }
+.row .field { min-width: 0; }
+@media (max-width: 600px) {
+  .row { grid-template-columns: 1fr; }
+}
+
+/* Formularios anchos (creación/edición de SA) — necesitan más espacio
+   horizontal por las filas de tres columnas. */
+.form-section:has(.row) { max-width: 760px; }
+
+/* Checkbox personalizado con foco visible y target táctil amplio. */
+.check {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  cursor: pointer;
+  padding: var(--space-2);
+  border-radius: var(--radius);
+  font-weight: 500;
+  min-height: 2.5rem;
+  margin: 0;
+}
+.check input[type="checkbox"] {
+  width: 1.25rem;
+  height: 1.25rem;
+  accent-color: var(--color-primary);
+  flex-shrink: 0;
+}
+.check:hover { background: var(--color-surface-2); }
+.check-field { gap: var(--space-1); }
+
+/* Cabecera de página con acción a la derecha */
+.page-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem 0 .5rem;
+}
+
+/* Filtros */
+.filtros {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr auto;
+  gap: 1rem;
+  align-items: end;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.filtros .actions { margin: 0; }
+
+/* Un track `1fr` tiene `min-width: auto`, o sea que no baja del min-content de
+   lo que contiene. Con el desplegable de materia eso dejó de ser inofensivo al
+   pasar de 6 materias a 21: "Formación y Orientación Personal y Profesional"
+   mide 45 caracteres, el <select> reclamaba ese ancho y se comía el reparto de
+   los demás campos.
+   `min-width: 0` es lo que hace que `1fr` signifique de verdad una fracción, y
+   el ancho al 100 % evita que el <select> se quede encogido dentro de su celda.
+   El formulario de crear una SA no lo necesita: allí los campos van apilados a
+   ancho completo, no en un grid que reparte. */
+.filtros .field { min-width: 0; }
+.filtros .field select,
+.filtros .field input {
+  width: 100%;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 800px) {
+  .filtros { grid-template-columns: 1fr 1fr; }
+  .filtros .actions { grid-column: 1 / -1; }
+}
+
+/* Botón destructivo */
+.btn--danger {
+  background: var(--color-surface);
+  color: var(--error-fg);
+  border-color: var(--error-fg);
+}
+.btn--danger:hover { background: var(--error-bg); }
+
+/* Respeto absoluto a usuarios con reduced-motion preference. */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Permitir ampliar contenido sin desbordamientos: el usuario puede hacer
+   zoom hasta 200% (WCAG 1.4.4). Garantizamos contenedores fluidos. */
+.container { width: 100%; }
+@media (min-width: 1100px) { .container { max-width: 1080px; } }
+
+/* ---- Dashboard del docente (index autenticado): 3 columnas ----
+   Tres tarjetas de igual tamaño: recientes · acciones · estadísticas.
+   En móvil colapsa a una sola columna manteniendo el orden lógico. */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-4);
+  margin: var(--space-5) 0;
+}
+.dashboard-grid > .card { margin: 0; }
+/* Títulos centrados en las tres tarjetas del dashboard. */
+.dashboard-grid > .card > h2 { text-align: center; }
+
+.dashboard-acciones .actions--vertical {
+  flex-direction: column;
+  align-items: stretch;
+}
+/* En columnas estrechas el texto largo de los CTAs (ej. "Nueva situación
+   de aprendizaje") no cabe en una línea, sobre todo con zoom 200%.
+   Permitimos wrap aquí pero mantenemos ``nowrap`` global en ``.btn``
+   para no romper la apariencia del resto de botones del sitio. */
+.dashboard-acciones .btn {
+  justify-content: center;
+  text-align: center;
+  white-space: normal;
+  line-height: 1.25;
+}
+
+.dashboard-recientes__pie { margin-top: var(--space-3); text-align: center; }
+
+@media (max-width: 900px) {
+  .dashboard-grid { grid-template-columns: 1fr; }
+}
+
+/* Lista de SAs recientes en el dashboard */
+.lista-recientes {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--space-2);
+}
+.lista-recientes li { margin: 0; }
+.lista-recientes__enlace {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-areas: "titulo badge" "meta meta";
+  gap: var(--space-1) var(--space-2);
+  padding: var(--space-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-surface);
+  text-decoration: none;
+  color: var(--color-text);
+  transition: background-color .12s ease, border-color .12s ease;
+}
+.lista-recientes__enlace:hover {
+  background: var(--color-surface-2);
+  border-color: var(--color-border-strong);
+  text-decoration: none;
+}
+.lista-recientes__titulo {
+  grid-area: titulo;
+  font-weight: 600;
+  color: var(--color-text);
+}
+.lista-recientes__meta {
+  grid-area: meta;
+  color: var(--color-text-muted);
+  font-size: var(--fs-sm);
+}
+.lista-recientes__enlace .badge { grid-area: badge; align-self: start; }
+.lista-recientes__vacio { color: var(--color-text-muted); font-style: italic; }
+
+/* Estadísticas: cuadrícula de 2x2 con cifras grandes y etiqueta debajo. */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-3);
+  margin: 0;
+}
+.stat {
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--space-3);
+  text-align: center;
+}
+.stat dt {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: var(--fs-sm);
+  font-weight: 500;
+  order: 2;
+}
+.stat dd {
+  margin: 0 0 var(--space-1);
+  font-size: var(--fs-xl);
+  font-weight: 800;
+  line-height: 1;
+  color: var(--color-text);
+  order: 1;
+}
+.stat { display: flex; flex-direction: column; }
+.stat--ok   dd { color: var(--color-success-strong); }
+.stat--warn dd { color: var(--color-warning-strong); }
+
+/* ---- Features grid (cómo funciona: 3 pasos en el dashboard) ---- */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-4);
+  margin: var(--space-5) 0;
+}
+.feature {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  box-shadow: var(--shadow-sm);
+}
+.feature h3 { margin: 0 0 var(--space-2); font-size: var(--fs-md); }
+.feature p  { color: var(--color-text-muted); margin: 0; }
+.feature__num {
+  display: inline-grid;
+  place-items: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: var(--radius-pill);
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+  font-weight: 800;
+  font-size: var(--fs-md);
+  margin-bottom: var(--space-3);
+}
+@media (max-width: 720px) {
+  .features-grid { grid-template-columns: 1fr; }
+}
+
+
+/* --- Generacion IA (Fase 4) ---------------------------------------- */
+.badge {
+  display: inline-block;
+  padding: .2rem .6rem;
+  border-radius: 999px;
+  background: var(--color-surface-3);
+  color: var(--color-text);
+  font-size: .85rem;
+  font-weight: 600;
+}
+.badge--ok   { background: var(--color-success-soft); color: var(--color-success-strong); }
+.badge--warn { background: var(--color-warning-soft); color: var(--color-warning-strong); }
+.badge--err  { background: var(--color-danger-soft); color: var(--color-danger-strong); }
+
+.btn--small {
+  padding: .25rem .6rem;
+  font-size: .85rem;
+}
+
+.seccion-gen {
+  border-top: 1px solid var(--border);
+  padding: 1rem 0;
+}
+.seccion-gen header {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.seccion-gen header h3 { margin: 0; flex: 1; }
+.seccion-gen header small { color: var(--color-text-muted); font-family: monospace; }
+.seccion-json {
+  background: var(--color-inverse-bg);
+  color: var(--color-inverse-text);
+  padding: .75rem 1rem;
+  border-radius: .5rem;
+  overflow-x: auto;
+  font-size: .85rem;
+  margin: .5rem 0 0 0;
+}
+
+#gen-progreso progress {
+  width: 100%;
+  height: 1.2rem;
+}
+
+/* =====================================================================
+   Render legible de las 6 secciones LOMLOE (render-secciones.js)
+   ===================================================================== */
+.seccion-cuerpo {
+  margin-top: .75rem;
+  line-height: 1.55;
+  color: var(--color-text);
+}
+.seccion-cuerpo > * + * { margin-top: 1rem; }
+.seccion-parrafo { margin: 0; }
+
+/* Callouts (pregunta guía, producto final) */
+.callout {
+  border-left: 4px solid var(--color-primary);
+  background: var(--color-primary-soft);
+  padding: .6rem .9rem;
+  border-radius: .25rem;
+}
+.callout--producto {
+  border-left-color: var(--color-secondary);
+  background: var(--color-secondary-soft);
+}
+.callout__label {
+  display: inline-block;
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-bottom: .2rem;
+}
+.callout p { margin: 0; }
+
+/* Chips (competencias, criterios, fases) */
+.chip {
+  display: inline-block;
+  font-size: .75rem;
+  padding: .15rem .55rem;
+  border-radius: 999px;
+  background: var(--color-surface-3);
+  color: var(--color-text-muted);
+  font-weight: 600;
+  margin: 0 .2rem .2rem 0;
+}
+.chip--competencia { background: var(--color-info-soft); color: var(--color-info-strong); }
+.chip--criterio    { background: var(--color-warning-soft); color: var(--color-warning-strong); }
+.chip--fase        { background: var(--color-accent-soft); color: var(--color-accent-strong); }
+.chips-row { display: flex; flex-wrap: wrap; gap: .25rem; }
+
+/* Lista de objetivos */
+.lista-objetivos {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: .6rem;
+  counter-reset: obj;
+}
+.objetivo {
+  display: flex;
+  gap: .75rem;
+  align-items: flex-start;
+}
+.objetivo__num {
+  flex: 0 0 1.75rem;
+  height: 1.75rem;
+  border-radius: 50%;
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+  font-weight: 700;
+  display: grid;
+  place-items: center;
+  font-size: .85rem;
+}
+.objetivo__cuerpo { flex: 1; }
+.objetivo__cuerpo p { margin: 0 0 .25rem; }
+.objetivo__chips { margin-top: .25rem; }
+
+/* Tablas de currículo y evaluación */
+.tabla-responsiva { overflow-x: auto; }
+.tabla-curr, .tabla-eval, .tabla-rubrica {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: .9rem;
+}
+.tabla-curr th, .tabla-curr td,
+.tabla-eval th, .tabla-eval td,
+.tabla-rubrica th, .tabla-rubrica td {
+  border: 1px solid var(--color-border);
+  padding: .5rem .65rem;
+  text-align: left;
+  vertical-align: top;
+}
+.tabla-curr thead th, .tabla-eval thead th {
+  background: var(--color-bg);
+  font-weight: 600;
+}
+.tabla-eval .num { text-align: right; white-space: nowrap; }
+.tabla-rubrica th {
+  background: var(--color-bg);
+  width: 30%;
+  white-space: nowrap;
+}
+.curr-bloque + .curr-bloque,
+.eval-bloque + .eval-bloque { margin-top: 1rem; }
+.curr-bloque h4, .eval-bloque h4 {
+  margin: 0 0 .4rem;
+  font-size: 1rem;
+  color: var(--color-text-muted);
+}
+
+/* Sesiones */
+.sesion {
+  border: 1px solid var(--color-border);
+  border-radius: .5rem;
+  padding: .85rem 1rem;
+  background: var(--color-surface);
+}
+.sesion + .sesion { margin-top: .75rem; }
+.sesion__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .5rem;
+  margin-bottom: .5rem;
+  border-bottom: 1px dashed var(--color-border);
+  padding-bottom: .5rem;
+}
+.sesion__num {
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: var(--color-accent-strong);
+}
+.sesion__titulo { margin: 0; font-size: 1.05rem; flex: 1 1 100%; }
+.sesion__meta { display: flex; gap: .5rem; align-items: center; }
+.sesion__dur {
+  font-size: .8rem;
+  color: var(--color-text-muted);
+  font-variant-numeric: tabular-nums;
+}
+.sesion-bloque + .sesion-bloque { margin-top: .55rem; }
+.sesion-bloque h5 {
+  margin: 0 0 .25rem;
+  font-size: .8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  color: var(--color-text-muted);
+}
+.lista-actividades { margin: 0; padding-left: 1.25rem; }
+.lista-actividades li + li { margin-top: .25rem; }
+
+/* Rúbricas */
+.rubrica {
+  border: 1px solid var(--color-border);
+  border-radius: .35rem;
+  padding: .5rem .75rem;
+  background: var(--color-surface);
+}
+.rubrica + .rubrica { margin-top: .5rem; }
+.rubrica > summary {
+  cursor: pointer;
+  font-size: .95rem;
+  padding: .25rem 0;
+}
+.rubrica .tabla-rubrica { margin-top: .5rem; }
+
+/* Atención a la diversidad */
+.dua-bloque {
+  border-left: 4px solid var(--color-success);
+  padding: .25rem .85rem;
+  background: var(--color-success-soft);
+  border-radius: .25rem;
+}
+.dua-bloque + .dua-bloque { margin-top: .65rem; }
+.dua-bloque--acns { border-left-color: var(--color-warning); background: var(--color-warning-soft); }
+.dua-bloque--acs  { border-left-color: var(--color-danger); background: var(--color-danger-soft); }
+.dua-bloque h4 {
+  margin: 0 0 .25rem;
+  font-size: .95rem;
+  color: var(--color-text-muted);
+}
+.lista-dua { margin: 0; padding-left: 1.25rem; }
+.lista-dua li + li { margin-top: .2rem; }
+
+/* Cabecera de tarjeta con acciones a la derecha */
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .75rem;
+  margin-bottom: .25rem;
+}
+.card-header h2 { margin: 0; }
+.card-header__acciones { display: flex; gap: .5rem; }
+
+/* Enlace extra bajo formularios (ej: ¿olvidaste contraseña?) */
+.form-extra-links {
+  margin: .5rem 0 0;
+  text-align: center;
+}
+.link--small { font-size: .875rem; }
+
+/* =============================================================================
+   Sugerencia inicial de temáticas (formulario de nueva SA)
+   ----------------------------------------------------------------------------
+   Sin colores literales: todo va por tokens de :root, para que el tema oscuro
+   (tarea 2 de la hoja de ruta) no tenga que volver a pasar por aquí.
+   ============================================================================= */
+
+.sugerencias {
+  margin-bottom: var(--space-5);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-primary-soft);
+}
+
+/* Ojo: NO tocar el `display` de summary. Su valor por defecto es `list-item`,
+   y cambiarlo a flex o block borra el triángulo de despliegue en Chrome y
+   Safari — la única señal visual de que el bloque se pliega. Por eso la
+   maquetación en columna se hace sobre los hijos, no sobre el summary. */
+.sugerencias > summary {
+  padding: var(--space-4);
+  cursor: pointer;
+  border-radius: var(--radius);
+}
+
+.sugerencias > summary > * {
+  display: block;
+}
+
+.sugerencias > summary:hover { background: var(--color-secondary-soft); }
+
+.sugerencias > summary:focus-visible {
+  outline: 3px solid var(--color-link);
+  outline-offset: 2px;
+}
+
+.sugerencias__titulo {
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.sugerencias__cuerpo {
+  padding: 0 var(--space-4) var(--space-4);
+}
+
+.sugerencias__lista {
+  display: grid;
+  gap: var(--space-3);
+  margin-top: var(--space-3);
+}
+
+/* Una columna en móvil; dos a partir de tableta. Con 3-5 propuestas cortas,
+   más columnas obligarían a leer en zigzag. */
+@media (min-width: 48rem) {
+  .sugerencias__lista:not(:empty) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.propuesta {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-4);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-left: 4px solid var(--color-secondary);
+  border-radius: var(--radius);
+}
+
+.propuesta__titulo {
+  margin: 0;
+  font-size: var(--fs-md);
+  color: var(--color-text);
+}
+
+.propuesta p { margin: 0; }
+
+.propuesta__dato {
+  font-size: var(--fs-sm);
+  color: var(--color-text-muted);
+}
+
+/* El botón se ancla abajo para que quede alineado entre tarjetas de distinta
+   altura, y se ciñe a su contenido en lugar de ocupar todo el ancho. */
+.propuesta .btn {
+  margin-top: auto;
+  align-self: flex-start;
+}
+
+/* =============================================================================
+   TEMA OSCURO
+   ----------------------------------------------------------------------------
+   Se implementa redefiniendo únicamente los tokens de :root. Como toda la hoja
+   consume `var(--color-*)` —incluidos los alias heredados `--bg`, `--text`,
+   `--border`…, que a su vez apuntan a los canónicos— no hace falta duplicar
+   ni una sola regla.
+
+   Qué se conserva y qué no, medido sobre el fondo oscuro:
+
+     --color-primary   #5ED3D1   9.96:1  AAA   se conserva
+     --color-secondary #7C83FD   5.54:1  AA    se conserva
+
+   Los colores de marca sobreviven al cambio de tema. Las variantes derivadas
+   PARA TEXTO, en cambio, se rompen todas, y no por casualidad: `--color-link`
+   y los `-strong` se eligieron precisamente por ser lo bastante oscuros para
+   contrastar sobre blanco, así que invertir el fondo los deja inservibles
+   (link 2.84:1, danger-strong 2.76:1, text-muted 2.36:1). Aquí se sustituyen
+   por variantes claras de la misma familia cromática.
+
+   Lo que NO se redefine: `--color-on-primary` y `--color-on-secondary`. El
+   primario y el secundario siguen siendo claros en este tema, así que el
+   texto encima debe seguir siendo oscuro.
+
+   Tres modos: claro, oscuro y automático. El automático delega en
+   `prefers-color-scheme` y se expresa reutilizando este mismo bloque, para que
+   no haya dos paletas que mantener en paralelo.
+   ============================================================================= */
+
+:root[data-tema="oscuro"] {
+  /* Marca: se conservan; los hover ACLARAN en lugar de oscurecer */
+  --color-primary:         #5ED3D1;
+  --color-primary-hover:   #86E0DE;
+  --color-primary-soft:    #12363B;
+  --color-secondary:       #7C83FD;
+  --color-secondary-hover: #9BA1FE;
+  --color-secondary-soft:  #1E2247;
+  --color-link:            #A5B4FC;
+
+  /* Superficies: escalonadas de más oscura (fondo) a más clara (elevada) */
+  --color-bg:            #0F172A;
+  --color-surface:       #1B2537;
+  --color-surface-2:     #273548;
+  --color-surface-3:     #35455C;
+  --color-text:          #E8EDF5;
+  --color-text-muted:    #AAB7C9;
+  --color-border:        #35455C;
+  --color-border-strong: #64748B;
+  --color-code-bg:       #273548;
+
+  /* La cabecera deja de ser turquesa: una banda brillante sobre interfaz
+     oscura es justo el deslumbramiento que este tema evita. */
+  --color-topbar-bg: var(--color-surface);
+  --color-topbar-fg: var(--color-text);
+  --color-topbar-bd: var(--color-border);
+
+  /* Texto sobre el fondo del skip-link, que ahora es claro */
+  --color-on-link: #0F172A;
+
+  /* Estados: el tono base se conserva, la variante de texto se aclara y
+     el fondo suave pasa a ser una versión apagada y oscura del mismo tono */
+  --color-success:        #34D399;
+  --color-success-strong: #6EE7B7;
+  --color-success-soft:   #0D3025;
+  --color-warning:        #FBBF24;
+  --color-warning-strong: #FCD34D;
+  --color-warning-soft:   #38290B;
+  --color-danger:         #F87171;
+  --color-danger-strong:  #FCA5A5;
+  --color-danger-soft:    #3B1B1B;
+
+  --color-info-soft:     #152B4D;
+  --color-info-strong:   #93C5FD;
+  --color-accent-soft:   #2B2252;
+  --color-accent-strong: #C4B5FD;
+
+  /* El bloque de JSON se hunde por debajo del fondo para seguir leyéndose
+     como código incrustado y no como una tarjeta más */
+  --color-inverse-bg:   #070C17;
+  --color-inverse-text: #E8EDF5;
+
+  /* El velo de hover se oscurece: sobre superficie oscura, aclarar con
+     blanco al 50% produce un destello */
+  --overlay-hover: rgba(255, 255, 255, .08);
+
+  /* Sombras más marcadas: sobre fondo oscuro, una sombra suave no se ve */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, .45);
+  --shadow:    0 4px 12px rgba(0, 0, 0, .5);
+  --shadow-lg: 0 10px 30px rgba(0, 0, 0, .6);
+
+  /* Las imágenes con fondo blanco (el logo) deslumbran sobre fondo oscuro */
+  color-scheme: dark;
+}
+
+/* El modo automático NO se resuelve aquí.
+   ----------------------------------------------------------------------------
+   La alternativa evidente sería repetir todos los tokens dentro de
+   `@media (prefers-color-scheme: dark)`, pero eso deja dos paletas que hay que
+   mantener sincronizadas a mano: la primera vez que alguien retoque un tono en
+   una y olvide la otra, los dos modos oscuros dejan de coincidir.
+
+   En su lugar, `auto` se resuelve en el servidor. El navegador informa de la
+   preferencia del sistema en la cookie `tema_sistema`, y Jinja escribe siempre
+   un valor CONCRETO en `<html data-tema="…">`: claro u oscuro, nunca auto. Así
+   este bloque es la única definición del tema oscuro que existe, y además no
+   hay destello — el atributo ya viene puesto en el HTML, sin esperar a que
+   ejecute ningún script.
+
+   Degradación sin JavaScript: la cookie nunca se escribe y `auto` se comporta
+   como claro. El usuario siempre puede elegir el tema explícitamente. */
+
+/* ---- Selector de tema en la cabecera ---- */
+.tema-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: .35rem;
+  border: 1px solid var(--color-topbar-bd);
+  border-radius: var(--radius-pill);
+  background: transparent;
+}
+
+.tema-toggle__opt {
+  display: inline-grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--color-topbar-fg);
+  cursor: pointer;
+  font: inherit;
+  font-size: var(--fs-sm);
+  line-height: 1;
+}
+
+.tema-toggle__opt:hover { background: var(--overlay-hover); }
+
+/* El estado activo no se marca sólo con color: también con fondo sólido,
+   para no depender de la percepción cromática. */
+.tema-toggle__opt[aria-pressed="true"] {
+  background: var(--color-surface);
+  color: var(--color-text);
+  box-shadow: var(--shadow-sm);
+}
+
+.tema-toggle__opt:focus-visible {
+  outline: 3px solid var(--color-topbar-fg);
+  outline-offset: 2px;
+}
+
+/* Sección generada sin contenido: mensaje explicativo en lugar del volcado
+   JSON en bruto, que delante de un docente parece una avería. */
+.seccion-vacia {
+  padding: var(--space-4);
+  border: 1px dashed var(--color-border-strong);
+  border-radius: var(--radius);
+  background: var(--color-surface-2);
+  color: var(--color-text-muted);
+}
+.seccion-vacia p { margin: 0; }
+.seccion-vacia p + p { margin-top: var(--space-2); }
+.seccion-vacia strong { color: var(--color-text); }
+
+/* Acciones por sección: regenerar y las operaciones de bloque. Se agrupan y
+   se permiten varias líneas para que en pantallas estrechas no empujen al
+   título fuera de la cabecera. */
+.seccion-gen__acciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-left: auto;
+}
+
+/* Comparación de dos redacciones de una misma sección (doble propuesta).
+   Una columna en móvil, dos a partir de tableta: en pantalla estrecha, dos
+   columnas de texto largo se leen peor que una debajo de otra. */
+.comparacion__aviso {
+  padding: var(--space-3);
+  border-radius: var(--radius);
+  background: var(--color-info-soft);
+  color: var(--color-info-strong);
+  margin-bottom: var(--space-4);
+}
+
+.comparacion__columnas {
+  display: grid;
+  gap: var(--space-4);
+}
+
+@media (min-width: 56rem) {
+  .comparacion__columnas { grid-template-columns: 1fr 1fr; }
+}
+
+.propuesta-col {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  border: 1px solid var(--color-border);
+  border-top: 4px solid var(--color-border-strong);
+  border-radius: var(--radius);
+  background: var(--color-surface);
+}
+
+/* La alternativa se distingue por el borde superior, no solo por su posición:
+   en móvil las columnas se apilan y «la de la derecha» deja de significar nada. */
+.propuesta-col--nueva { border-top-color: var(--color-secondary); }
+
+.propuesta-col h4 { margin: 0; font-size: var(--fs-md); }
+.propuesta-col header small { color: var(--color-text-muted); font-size: var(--fs-xs); }
+.propuesta-col__cuerpo { flex: 1; }
+.propuesta-col .btn { align-self: flex-start; margin-top: auto; }
+
+/* Selector de idioma en la cabecera. Compacto, para que no compita con la
+   navegación: cambiar de idioma es una acción rara, no una principal. */
+.idioma-selector { display: inline-flex; align-items: center; }
+
+.idioma-selector select {
+  font: inherit;
+  font-size: var(--fs-sm);
+  padding: .35rem .5rem;
+  border: 1px solid var(--color-topbar-bd);
+  border-radius: var(--radius);
+  background: transparent;
+  color: var(--color-topbar-fg);
+  cursor: pointer;
+}
+
+/* Las <option> las pinta el sistema operativo, no la hoja de estilos: sobre
+   la cabecera turquesa heredarían un color de texto que el desplegable
+   desplegado no respeta. Se fijan sobre superficie para que se lean en los
+   dos temas. */
+.idioma-selector option {
+  background: var(--color-surface);
+  color: var(--color-text);
+}
+
+.idioma-selector select:focus-visible {
+  outline: 3px solid var(--color-topbar-fg);
+  /* 1 px en lugar de 2: el contorno queda dentro del alto de la barra sin
+     rozar el borde. Con 2 px y la cabecera ajustada, el trazo inferior
+     tocaba el límite y parecía cortado aunque ya no lo recorte nadie. */
+  outline-offset: 1px;
+}
+
+/* ---- Panel de administración ---------------------------------------- */
+
+/* Rejilla de estadísticas del panel: a diferencia de .stats-grid del
+   dashboard, aquí el número de tarjetas depende de cuántos estados haya, así
+   que se deja que fluyan en lugar de fijar dos columnas. */
+.stats-grid--admin {
+  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+}
+
+/* Misma familia que .tabla-curr y compañía. Se declara aparte porque estas
+   tablas son de gestión, no de contenido curricular: si algún día cambia el
+   aspecto de aquellas, esta no tiene por qué seguirlas. */
+.tabla-admin {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: .9rem;
+}
+.tabla-admin th,
+.tabla-admin td {
+  border: 1px solid var(--color-border);
+  padding: .5rem .65rem;
+  text-align: left;
+  vertical-align: middle;
+}
+.tabla-admin thead th {
+  background: var(--color-surface-2);
+  font-weight: 700;
+  white-space: nowrap;
+}
+.tabla-admin td:last-child {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+}
+
+/* Cuenta dada de baja. El fondo NO es la única señal: la columna «Estado»
+   lo dice con palabras. Un color de fondo suave por sí solo incumpliría el
+   criterio 1.4.1 de WCAG, y además es invisible para quien no distinga ese
+   matiz sobre el fondo de la fila. */
+.fila--baja {
+  background: var(--color-surface-2);
+  color: var(--color-text-muted);
+}
+
+/* Cuenta con solicitud de reclamación sin resolver. Como .fila--baja, el
+   color acompaña pero no informa por sí solo: la columna «Estado» lo dice
+   con palabras. */
+.fila--reclamada {
+  background: var(--color-warning-soft);
+}
+
+/* Paginador de las tablas del panel. */
+.paginador {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  margin-top: var(--space-3);
+  flex-wrap: wrap;
+}
+.paginador__estado {
+  margin: 0;
+  font-size: var(--fs-sm);
+  color: var(--color-text-muted);
+}
+/* Un botón inhabilitado tiene que seguir leyéndose: .5 de opacidad sobre un
+   botón ya suave deja el texto por debajo del 4.5:1 que exige WCAG 1.4.3.
+   Se baja solo hasta .6 y se conserva el color de texto. */
+.paginador .btn:disabled {
+  opacity: .6;
+  cursor: default;
+}
+
+/* Fila de edición desplegada bajo una cuenta del panel.
+   El selector lleva `.tabla-admin` delante por especificidad: la regla
+   `.tabla-admin td:last-child { display: flex }` —pensada para la columna de
+   botones— también alcanza a esta celda, que es la última de su fila, y pesa
+   más que un `.fila--edicion > td` a secas. Sin igualar la especificidad, el
+   formulario se maquetaría como una hilera de botones. */
+.tabla-admin .fila--edicion > td {
+  background: var(--color-surface-2);
+  display: table-cell;
+}
+.tabla-admin .fila--edicion .form { margin: 0; }

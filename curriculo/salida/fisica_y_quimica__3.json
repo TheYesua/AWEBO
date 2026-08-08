@@ -1,0 +1,195 @@
+{
+  "materia_oficial": "FÍSICA Y QUÍMICA",
+  "materia": "Física y Química",
+  "etapa": "ESO",
+  "ciclo": "Tercer curso",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "3º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "CE1",
+      "descripcion": "Comprender y relacionar los motivos por los que ocurren los principales fenómenos fisicoquímicos del entorno, explicándolos en términos de las leyes y teorías científicas adecuadas, para resolver problemas con el fin de aplicarlas para mejorar la realidad cercana y la calidad de vida humana.",
+      "descriptores": [
+        "CCL1",
+        "STEM1",
+        "STEM2",
+        "STEM4",
+        "CPSAA4"
+      ]
+    },
+    {
+      "codigo": "CE2",
+      "descripcion": "Expresar las observaciones realizadas por el alumnado en forma de preguntas, formulando hipótesis para explicarlas y demostrando dichas hipótesis a través de la experimentación científica, la indagación y la búsqueda de evidencias, para desarrollar los razonamientos propios del pensamiento científico y mejorar las destrezas en el uso de las metodologías científicas.",
+      "descriptores": [
+        "CCL1",
+        "CCL3",
+        "STEM1",
+        "STEM2",
+        "CD1",
+        "CPSAA4",
+        "CE1",
+        "CCEC3"
+      ]
+    },
+    {
+      "codigo": "CE3",
+      "descripcion": "Manejar con soltura las reglas y normas básicas de la física y la química en lo referente al lenguaje de la IUPAC, al lenguaje matemático, al empleo de unidades de medida correctas, al uso seguro del laboratorio y a la interpretación y producción de datos e información en diferentes formatos y fuentes, para reconocer el carácter universal y transversal del lenguaje científico y la necesidad de una comunicación fiable en investigación y ciencia entre diferentes países y culturas.",
+      "descriptores": [
+        "STEM4",
+        "STEM5",
+        "CD3",
+        "CPSAA2",
+        "CC1",
+        "CCEC2",
+        "CCEC4"
+      ]
+    },
+    {
+      "codigo": "CE4",
+      "descripcion": "Utilizar de forma crítica, eficiente y segura plataformas digitales y recursos variados, tanto para el trabajo individual como en equipo, para fomentar la creatividad, el desarrollo personal y el aprendizaje individual y social, mediante la consulta de información, la creación de materiales y la comunicación efectiva en los diferentes entornos de aprendizaje.",
+      "descriptores": [
+        "CCL2",
+        "CCL3",
+        "STEM4",
+        "CD1",
+        "CD2",
+        "CPSAA3",
+        "CE3",
+        "CCEC4"
+      ]
+    },
+    {
+      "codigo": "CE5",
+      "descripcion": "Utilizar las estrategias propias del trabajo colaborativo, potenciando el crecimiento entre iguales como base emprendedora de una comunidad científica crítica, ética y eficiente, para comprender la importancia de la ciencia en la mejora de la sociedad, las aplicaciones y repercusiones de los avances científicos, la preservación de la salud y la conservación sostenible del medio ambiente.",
+      "descriptores": [
+        "CCL5",
+        "CP3",
+        "STEM3",
+        "STEM5",
+        "CD3",
+        "CPSAA3",
+        "CC3",
+        "CE2"
+      ]
+    },
+    {
+      "codigo": "CE6",
+      "descripcion": "Comprender y valorar la ciencia como una construcción colectiva en continuo cambio y evolución, en la que no solo participan las personas dedicadas a ella, sino que también requiere de una interacción con el resto de la sociedad, para obtener resultados que repercutan en el avance tecnológico, económico, ambiental y social.",
+      "descriptores": [
+        "STEM2",
+        "STEM5",
+        "CD4",
+        "CPSAA1",
+        "CPSAA4",
+        "CC4",
+        "CCEC1"
+      ]
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "CE1",
+      "descripcion": "Resolver los problemas fisicoquímicos planteados utilizando las leyes y teorías científicas adecuadas, razonando los procedimientos utilizados para encontrar las soluciones y expresando adecuadamente los resultados."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "CE1",
+      "descripcion": "Reconocer y describir en el entorno inmediato situaciones problemáticas reales de índole científica y emprender iniciativas en las que la ciencia, y en particular la física y la química, pueden contribuir a su solución, analizando críticamente su impacto en la sociedad."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "CE2",
+      "descripcion": "Seleccionar, de acuerdo con la naturaleza de las cuestiones que se traten, la mejor manera de comprobar o refutar las hipótesis formuladas, diseñando estrategias de indagación y búsqueda de evidencias que permitan obtener conclusiones y respuestas ajustadas a la naturaleza de la pregunta formulada."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "CE2",
+      "descripcion": "Aplicar las leyes y teorías científicas conocidas al formular cuestiones e hipótesis, siendo coherente con el conocimiento científico existente y diseñando los procedimientos experimentales o deductivos necesarios para resolverlas o comprobarlas."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "CE3",
+      "descripcion": "Emplear datos en diferentes formatos para interpretar y comunicar información relativa a un proceso fisicoquímico concreto, estableciendo relaciones entre ellos, y extrayendo en cada caso lo más relevante para la resolución de un problema."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "CE3",
+      "descripcion": "Utilizar adecuadamente las reglas básicas de la física y la química, incluyendo el uso de unidades de medida, las herramientas matemáticas adecuadas y las reglas de nomenclatura, consiguiendo una comunicación efectiva con toda la comunidad científica."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "CE4",
+      "descripcion": "Utilizar recursos variados, tradicionales y digitales, mejorando el aprendizaje autónomo y la interacción con otros miembros de la comunidad educativa, con respeto hacia profesorado y alumnado y analizando críticamente las aportaciones de cada participante."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "CE4",
+      "descripcion": "Trabajar de forma adecuada con medios variados, tradicionales y digitales, en la consulta de información y la creación de contenidos, seleccionando con criterio las fuentes más fiables y desechando las menos adecuadas y mejorando el aprendizaje propio y colectivo."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "CE5",
+      "descripcion": "Emprender, de forma guiada y de acuerdo con la metodología adecuada, proyectos científicos que involucren al alumnado en la mejora de la sociedad y que creen valor para el individuo y para la comunidad."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "CE6",
+      "descripcion": "Detectar en el entorno las necesidades tecnológicas, ambientales, económicas y sociales más importantes que demanda la sociedad, entendiendo la capacidad de la ciencia para darles solución sostenible a través de la implicación de todos los ciudadanos."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Las destrezas científicas básicas",
+      "titulo": "Las destrezas científicas básicas",
+      "items": [
+        "Trabajo experimental y proyectos de investigación: estrategias en la resolución de problemas y en el desarrollo de investigaciones mediante la indagación, la deducción, la búsqueda de evidencias y el razonamiento lógico-matemático, haciendo inferencias válidas de las observaciones y obteniendo conclusiones.",
+        "Diversos entornos y recursos de aprendizaje científico como el laboratorio y los entornos virtuales: materiales, sustancias y herramientas tecnológicas.",
+        "Normas de uso de cada espacio, asegurando y protegiendo así la salud propia y comunitaria, atendiendo a la seguridad en las redes y al respeto hacia el medio ambiente.",
+        "El lenguaje científico: unidades del Sistema Internacional y sus símbolos. Uso básico de otros sistemas de unidades distintos del Sistema Internacional. Uso de factores de conversión entre distintos sistemas de unidades. Herramientas matemáticas básicas en diferentes escenarios científicos y de aprendizaje.",
+        "Estrategias de interpretación y producción de información científica utilizando diferentes formatos y diferentes medios: desarrollo del criterio propio basado en lo que el pensamiento científico aporta a la mejora de la sociedad para hacerla más justa, equitativa e igualitaria. Tratamiento cuantitativo de datos e interpretación cualitativa de gráficos."
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. La materia",
+      "titulo": "La materia",
+      "items": [
+        "Estructura atómica: desarrollo histórico de los modelos atómicos, existencia, formación y propiedades de los isótopos y ordenación de los elementos en la tabla periódica. Aspectos básicos de la configuración electrónica de los elementos y su relación con la clasificación por bloques del sistema periódico.",
+        "Principales compuestos químicos: su formación y sus propiedades físicas y químicas, valoración de sus aplicaciones. Masa atómica y masa molecular. Concepto de mol y aplicación a los sistemas materiales.",
+        "Nomenclatura: participación de un lenguaje científico común y universal formulando y nombrando sustancias simples, iones monoatómicos y compuestos binarios mediante las reglas de nomenclatura de la IUPAC."
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. La energía",
+      "titulo": "La energía",
+      "items": [
+        "Efectos del calor sobre la materia: análisis de los efectos y aplicación en situaciones cotidianas. Diferencia entre calor, temperatura y energía térmica. Variación de la temperatura y cambios de estado.",
+        "Naturaleza eléctrica de la materia: electrización de los cuerpos, circuitos eléctricos y obtención de energía eléctrica. Degradación de energía en su obtención. Concepto de eficiencia energética. Concienciación sobre la necesidad del ahorro energético y la conservación sostenible del medio ambiente."
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. La interacción",
+      "titulo": "La interacción",
+      "items": [
+        "Aplicación de las leyes de Newton: cálculos de aceleraciones y observación de situaciones cotidianas o de laboratorio que permiten entender cómo se comportan los sistemas materiales ante la acción de las fuerzas y predecir los efectos de estas en situaciones cotidianas y de seguridad vial. Modelo del cuerpo libre para la resolución de problemas de estática y dinámica de la partícula.",
+        "Fenómenos gravitatorios, eléctricos y magnéticos: experimentos sencillos que evidencian la relación con las fuerzas de la naturaleza. Evidencia experimental de la relación entre electricidad y magnetismo. Análisis cualitativo del movimiento de objetos en órbita."
+      ]
+    },
+    {
+      "codigo": "E",
+      "bloque": "E. El cambio",
+      "titulo": "El cambio",
+      "items": [
+        "Ley de conservación de la masa y ley de las proporciones definidas: aplicación de estas leyes como evidencias experimentales que permiten validar el modelo atómico-molecular de la materia. Relaciones estequiométricas de las reacciones químicas.",
+        "Factores que afectan a las reacciones químicas y a su velocidad: predicción cualitativa de la evolución de las reacciones, entendiendo su importancia en la resolución de problemas actuales por parte de la ciencia.",
+        "Aspectos energéticos de los cambios químicos: procesos exotérmicos y endotérmicos. Análisis de diagramas entálpicos a nivel cualitativo."
+      ]
+    }
+  ]
+}

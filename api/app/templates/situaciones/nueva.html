@@ -1,0 +1,379 @@
+{% extends "base.html" %}
+{% block title %}Nueva situación · AWEBO{% endblock %}
+
+{% block content %}
+<section class="form-section" aria-labelledby="t-nueva">
+  <h1 id="t-nueva">{{ _('Nueva situación de aprendizaje') }}</h1>
+  <p class="lead">
+    {{ _('Solo es necesario título, curso y materia. El resto se puede completar después. Cuantos más datos aportes, mejor podrá la IA contextualizar el contenido generado.') }}
+  </p>
+
+  <!-- Sugerencia inicial de temáticas.
+       Va ANTES del formulario porque resuelve el paso previo: qué poner en el
+       título. Se apoya en los <select> de curso y materia del propio
+       formulario, así que no duplica campos. -->
+  <details class="sugerencias" id="sug-panel">
+    <summary>
+      <span class="sugerencias__titulo">{{ _('¿Aún no sabes sobre qué trabajar?') }}</span>
+      <span class="help">{{ _('Pide ideas a la IA a partir del curso y la materia.') }}</span>
+    </summary>
+
+    <div class="sugerencias__cuerpo">
+      <div class="field">
+        <label for="sug-contexto">{{ _('Qué te apetece trabajar') }} <span class="help">{{ _('(opcional)') }}</span></label>
+        <textarea id="sug-contexto" rows="2" maxlength="1000"
+                  aria-describedby="sug-contexto-help"
+                  placeholder="{{ _('Ej: algo relacionado con el barrio, que acabe en una maqueta…') }}"></textarea>
+        <small id="sug-contexto-help" class="help">
+          {{ _('Si lo dejas vacío, las propuestas se basarán solo en el curso y la materia.') }}
+        </small>
+      </div>
+
+      <div class="actions">
+        <button type="button" class="btn btn--secondary" id="sug-pedir">{{ _('Proponer temáticas') }}</button>
+      </div>
+
+      <p class="alert" id="sug-msg" role="alert" hidden></p>
+
+      <!-- aria-live: al ser una llamada asíncrona, el lector de pantalla debe
+           anunciar la llegada de las propuestas sin robar el foco. -->
+      <div id="sug-resultados" class="sugerencias__lista" aria-live="polite" aria-busy="false"></div>
+    </div>
+  </details>
+
+  <form id="sa-form" class="form" novalidate>
+    <p class="help">{{ _('Los campos marcados con') }} <span aria-hidden="true" style="color: var(--color-danger-strong);">*</span>
+      {{ _('son obligatorios.') }}</p>
+
+    <div class="field">
+      <label for="titulo">
+        {{ _('Título') }}
+        <span class="req" aria-hidden="true">*</span>
+        <span class="sr-only">{{ _('(obligatorio)') }}</span>
+      </label>
+      <input type="text" id="titulo" name="titulo" required minlength="2" maxlength="255"
+             placeholder="{{ _('Ej: La Antártida: una expedición científica') }}" autofocus>
+    </div>
+
+    <div class="row">
+      <div class="field">
+        <label for="curso">
+          {{ _('Curso') }}
+          <span class="req" aria-hidden="true">*</span>
+          <span class="sr-only">{{ _('(obligatorio)') }}</span>
+        </label>
+        <select id="curso" name="curso" required></select>
+      </div>
+      <div class="field">
+        <label for="materia">
+          {{ _('Materia') }}
+          <span class="req" aria-hidden="true">*</span>
+          <span class="sr-only">{{ _('(obligatorio)') }}</span>
+        </label>
+        <select id="materia" name="materia" required
+                aria-describedby="materia-aviso materia-explicacion"></select>
+        <p class="alert" id="materia-aviso" role="alert" hidden></p>
+        <p class="help" id="materia-explicacion" hidden></p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="field">
+        <label for="num_sesiones">{{ _('Nº de sesiones') }}</label>
+        <input type="number" id="num_sesiones" name="num_sesiones" min="1" max="200"
+               inputmode="numeric">
+      </div>
+      <div class="field">
+        <label for="duracion_sesion_minutos">{{ _('Duración por sesión (min)') }}</label>
+        <input type="number" id="duracion_sesion_minutos" name="duracion_sesion_minutos"
+               min="15" max="240" value="55" inputmode="numeric">
+      </div>
+      <div class="field">
+        <label for="idioma">{{ _('Idioma') }}</label>
+        <select id="idioma" name="idioma">
+          <option value="es" selected>{{ _('Español') }}</option>
+          <option value="ca">{{ _('Catalán') }}</option>
+          <option value="gl">{{ _('Gallego') }}</option>
+          <option value="eu">{{ _('Euskera') }}</option>
+          <option value="en">{{ _('Inglés') }}</option>
+          <option value="fr">{{ _('Francés') }}</option>
+          <option value="ar">{{ _('Árabe') }}</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="metodologia">{{ _('Metodología') }}</label>
+      <select id="metodologia" name="metodologia"></select>
+    </div>
+
+    <div class="field">
+      <label for="comunidad_autonoma">{{ _('Comunidad autónoma') }}</label>
+      <input type="text" id="comunidad_autonoma" name="comunidad_autonoma" maxlength="50" value="Ceuta">
+    </div>
+
+    <div class="field">
+      <label for="descripcion">{{ _('Descripción / contexto') }}</label>
+      <textarea id="descripcion" name="descripcion" rows="3" maxlength="4000"
+                aria-describedby="descripcion-help"
+                placeholder="{{ _('Tema, conexión con otras unidades, reto motivador…') }}"></textarea>
+      <small id="descripcion-help" class="help">{{ _('Máximo 4000 caracteres.') }}</small>
+    </div>
+
+    <div class="field">
+      <label for="perfil_aula">{{ _('Perfil del aula') }}</label>
+      <textarea id="perfil_aula" name="perfil_aula" rows="2" maxlength="4000"
+                placeholder="{{ _('Diversidad de partida, intereses, idiomas, etc.') }}"></textarea>
+    </div>
+
+    <div class="field check-field">
+      <label class="check">
+        <input type="checkbox" id="generar" name="generar" value="1">
+        <span>{{ _('Generar contenido con IA al crear') }}</span>
+      </label>
+      <small class="help">{{ _('Si lo desmarcas, la situación se guarda en borrador y podrás generarla más adelante.') }}</small>
+    </div>
+
+    <div class="actions">
+      <button type="submit" class="btn btn--primary" id="crear-submit">{{ _('Crear situación') }}</button>
+      <a href="/situaciones" class="btn">{{ _('Cancelar') }}</a>
+    </div>
+    <p class="alert" id="msg" role="alert" hidden></p>
+  </form>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script>
+/* Etiqueta reutilizada en dos sitios del script; sin esto quedaba en
+   castellano en las otras tres lenguas. */
+const PREGUNTA_GUIA = {{ _('Pregunta guía')|tojson }};
+
+/* Todo el texto que este script escribe en pantalla. Estaba a pelo: con la
+   interfaz en euskera, el bloque de sugerencias y sus errores salían en
+   castellano. Lo detecta `tests/js/traducibles.test.js`. */
+const T = {
+  sinEspecificar: {{ _('— Sin especificar —')|tojson }},
+  productoFinal: {{ _('Producto final:')|tojson }},
+  usarPropuesta: {{ _('Usar esta propuesta')|tojson }},
+  usarPropuestaN: {{ _('Usar la propuesta {n}: {titulo}')|tojson }},
+  eligeCursoMateria: {{ _('Elige antes el curso y la materia en el formulario de abajo.')|tojson }},
+  pensandoIdeas: {{ _('Pensando ideas…')|tojson }},
+  demasiadasPeticiones: {{ _('Has pedido muchas sugerencias seguidas. Espera un poco antes de volver a intentarlo.')|tojson }},
+  sinSugerencias: {{ _('No se han podido obtener sugerencias.')|tojson }},
+  sinServidor: {{ _('No se ha podido contactar con el servidor.')|tojson }},
+  creandoConIA: {{ _('Creando y lanzando IA…')|tojson }},
+  creando: {{ _('Creando…')|tojson }},
+};
+
+/** Sustituye {marcadores} por sus valores. Las traducciones cambian el orden
+    de las palabras, así que no se puede concatenar. */
+function interpolar(cadena, valores) {
+  return cadena.replace(/\{(\w+)\}/g, (_, k) => (k in valores ? valores[k] : `{${k}}`));
+}
+
+// Metodologías sí siguen siendo una lista fija: no dependen del currículo.
+rellenarSelect(document.getElementById('metodologia'), CATALOGOS.metodologias, { placeholder: T.sinEspecificar });
+
+/* Curso y materia se restringen mutuamente: al elegir uno, el otro solo
+   ofrece lo que existe en el catálogo LOMLOE. La lógica vive en catalogos.js
+   porque la comparten esta pantalla y la de edición. */
+/* Matemáticas A y B salen en el desplegable como dos entradas sin más señas.
+   El texto sale del propio RD 217/2022: la diferencia que la norma establece
+   es de enfoque, no de itinerario de ciencias o de letras. */
+const EXPLICACIONES_MATERIA = {
+  matematicasA: {{ _('Una de las dos opciones de Matemáticas de 4.º. Se desarrolla sobre todo mediante la resolución de problemas, la investigación y el análisis matemático de situaciones de la vida cotidiana.')|tojson }},
+  matematicasB: {{ _('La otra opción de Matemáticas de 4.º. Además de lo anterior, profundiza en los procedimientos algebraicos, geométricos, analíticos y estadísticos, en contextos matemáticos, científicos y sociales. El real decreto no la vincula a ninguna modalidad de Bachillerato: la diferencia que establece es de enfoque.')|tojson }},
+};
+
+const pintarExplicacion = Cobertura.enlazarExplicacion(
+  document.getElementById('materia'),
+  document.getElementById('materia-explicacion'),
+  EXPLICACIONES_MATERIA
+);
+
+Cobertura.cargar().then((cobertura) => {
+  Cobertura.enlazar({
+    cobertura,
+    selCurso: document.getElementById('curso'),
+    selMateria: document.getElementById('materia'),
+    aviso: document.getElementById('materia-aviso'),
+  });
+  // Después de `enlazar`, que es quien rellena el <select>.
+  pintarExplicacion();
+});
+
+/* ---------------------------------------------------------------------------
+   Sugerencia inicial de temáticas
+   ------------------------------------------------------------------------ */
+(function () {
+  const btn        = document.getElementById('sug-pedir');
+  const contexto   = document.getElementById('sug-contexto');
+  const msg        = document.getElementById('sug-msg');
+  const resultados = document.getElementById('sug-resultados');
+  const selCurso   = document.getElementById('curso');
+  const selMateria = document.getElementById('materia');
+
+  const error = (texto) => { msg.textContent = texto; msg.hidden = false; };
+
+  /* Volcar la propuesta elegida al formulario. No se envía nada: el docente
+     sigue pudiendo editarlo todo antes de crear la SA. */
+  function aplicar(p) {
+    document.getElementById('titulo').value = p.titulo;
+
+    /* El resumen alimenta la descripción, que es el contexto que después
+       recibe el generador. Se añade la pregunta guía y el producto final
+       porque son justo lo que el prompt de descripción vuelve a pedir. */
+    const partes = [p.resumen];
+    if (p.pregunta_guia)  partes.push(PREGUNTA_GUIA + ': ' + p.pregunta_guia);
+    if (p.producto_final) partes.push(T.productoFinal + ' ' + p.producto_final);
+    document.getElementById('descripcion').value = partes.filter(Boolean).join('\n\n');
+
+    document.getElementById('sug-panel').open = false;
+    const t = document.getElementById('titulo');
+    t.focus();                                    /* devolver el foco al flujo */
+    t.scrollIntoView({ block: 'center', behavior: 'smooth' });
+  }
+
+  function pintar(propuestas) {
+    resultados.innerHTML = '';
+    propuestas.forEach((p, i) => {
+      const card = document.createElement('article');
+      card.className = 'propuesta';
+
+      const h = document.createElement('h3');
+      h.className = 'propuesta__titulo';
+      h.textContent = p.titulo;
+      card.appendChild(h);
+
+      if (p.resumen) {
+        const res = document.createElement('p');
+        res.textContent = p.resumen;
+        card.appendChild(res);
+      }
+      if (p.pregunta_guia) {
+        const pg = document.createElement('p');
+        pg.className = 'propuesta__dato';
+        pg.innerHTML = `<strong>${PREGUNTA_GUIA}:</strong> `;
+        pg.appendChild(document.createTextNode(p.pregunta_guia));
+        card.appendChild(pg);
+      }
+      if (p.producto_final) {
+        const pf = document.createElement('p');
+        pf.className = 'propuesta__dato';
+        // Sin escapar, igual que la línea de la pregunta guía: lo que se
+        // interpola es una cadena nuestra del catálogo, no dato del usuario.
+        pf.innerHTML = `<strong>${T.productoFinal}</strong> `;
+        pf.appendChild(document.createTextNode(p.producto_final));
+        card.appendChild(pf);
+      }
+
+      const usar = document.createElement('button');
+      usar.type = 'button';
+      usar.className = 'btn btn--primary btn--small';
+      usar.textContent = T.usarPropuesta;
+      /* El nombre del título en la etiqueta accesible: con varias tarjetas
+         iguales, "Usar esta propuesta" a secas no distingue una de otra. */
+      usar.setAttribute('aria-label',
+        interpolar(T.usarPropuestaN, { n: i + 1, titulo: p.titulo }));
+      usar.addEventListener('click', () => aplicar(p));
+      card.appendChild(usar);
+
+      resultados.appendChild(card);
+    });
+  }
+
+  btn.addEventListener('click', async () => {
+    msg.hidden = true;
+    resultados.innerHTML = '';
+
+    const curso = selCurso.value;
+    const materia = selMateria.value;
+    if (!curso || !materia) {
+      error(T.eligeCursoMateria);
+      return;
+    }
+
+    btn.disabled = true;
+    btn.setAttribute('aria-busy', 'true');
+    resultados.setAttribute('aria-busy', 'true');
+    const etiqueta = btn.textContent;
+    btn.textContent = T.pensandoIdeas;
+
+    try {
+      const res = await fetch('/api/situaciones/sugerencias', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          curso,
+          materia,
+          contexto: contexto.value.trim() || null,
+          idioma: document.getElementById('idioma').value,
+        }),
+      });
+      const body = await res.json().catch(() => ({}));
+
+      if (!res.ok) {
+        if (res.status === 429) {
+          error(T.demasiadasPeticiones);
+        } else if (body.detalles) {
+          error(body.detalles.map(d => `${d.loc?.join('.') ?? ''}: ${d.msg}`).join(' · '));
+        } else {
+          error(body.mensaje || body.error || T.sinSugerencias);
+        }
+        return;
+      }
+      pintar(body.propuestas || []);
+    } catch (e) {
+      error(T.sinServidor);
+    } finally {
+      btn.disabled = false;
+      btn.removeAttribute('aria-busy');
+      btn.textContent = etiqueta;
+      resultados.setAttribute('aria-busy', 'false');
+    }
+  });
+})();
+
+document.getElementById('sa-form').addEventListener('submit', async (ev) => {
+  ev.preventDefault();
+  const msg = document.getElementById('msg');
+  const btn = document.getElementById('crear-submit');
+  msg.hidden = true;
+  btn.disabled = true;
+  btn.setAttribute('aria-busy', 'true');
+  const originalLabel = btn.textContent;
+
+  const data = Object.fromEntries(new FormData(ev.target).entries());
+  // Limpiar opcionales vacíos y convertir números
+  for (const k of Object.keys(data)) if (data[k] === '') delete data[k];
+  if (data.num_sesiones) data.num_sesiones = parseInt(data.num_sesiones, 10);
+  if (data.duracion_sesion_minutos) data.duracion_sesion_minutos = parseInt(data.duracion_sesion_minutos, 10);
+  data.generar = !!data.generar;
+  btn.textContent = data.generar ? T.creandoConIA : T.creando;
+
+  try {
+    const res = await fetch('/api/situaciones', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify(data),
+    });
+    const body = await res.json().catch(() => ({}));
+    if (res.ok) {
+      window.location.href = `/situaciones/${body.id_situacion}`;
+      return;
+    }
+    if (body.detalles) {
+      msg.textContent = body.detalles.map(d => `${d.loc?.join('.') ?? ''}: ${d.msg}`).join(' · ');
+    } else {
+      msg.textContent = body.mensaje || body.error || 'Error desconocido';
+    }
+    msg.hidden = false;
+  } finally {
+    btn.disabled = false;
+    btn.removeAttribute('aria-busy');
+    btn.textContent = originalLabel;
+  }
+});
+</script>
+{% endblock %}
