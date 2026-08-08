@@ -22,13 +22,17 @@ Un resumen legible, que no sustituye al texto legal:
 Qué cubre esta licencia
 -----------------------
 
-    docs/                 el diario de desarrollo, la hoja de ruta y la
-                          declaración de accesibilidad
+    README.md             la documentación del proyecto
     curriculo/README.md   la documentación del proceso de extracción
-    README.md             y CLAUDE.md
+    curriculo/salida/     el trabajo de estructuración de los datos
+                          curriculares (ver más abajo la salvedad del BOE)
 
-En resumen: la prosa. **El código NO está bajo esta licencia**, sino bajo la
-GNU General Public License v3.0, cuyo texto está en el fichero `LICENSE`.
+En resumen: la prosa y la estructura de los datos. **El código NO está bajo
+esta licencia**, sino bajo la GNU General Public License v3.0, cuyo texto está
+en el fichero `LICENSE`.
+
+El diario de desarrollo y la hoja de ruta del proyecto no se publican: son
+notas internas de trabajo y quedan fuera del repositorio.
 
 La razón de separarlas: Creative Commons desaconseja expresamente el uso de sus
 licencias para software. En sus palabras, «We recommend against using Creative
