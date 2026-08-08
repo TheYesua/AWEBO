@@ -163,6 +163,9 @@ docker run --rm -v "${PWD}/api:/app" -w /app node:22-alpine node tests/js/lectur
 docker run --rm -v "${PWD}/api:/app" -w /app node:22-alpine node tests/js/llamadas.test.js
 docker run --rm -v "${PWD}/api:/app" -w /app node:22-alpine node tests/js/traducibles.test.js
 
+# O todo de una vez, que es lo que conviene antes de commitear:
+.\verificar.ps1
+
 # Recompilar los catálogos de traducción tras cambiar un .po
 docker compose exec api pybabel compile -d app/translations
 
@@ -177,6 +180,14 @@ docker compose exec api pybabel update --no-wrap -i app/translations/messages.po
 # copiadas de otra cadena parecida, no traducciones. `pybabel compile` las salta,
 # así que salen en castellano. Hay un test que falla si queda alguna.
 docker compose exec api grep -c fuzzy app/translations/ca/LC_MESSAGES/messages.po
+
+# Integración continua
+# Cada push y cada pull request ejecutan la batería completa en GitHub Actions
+# (.github/workflows/verificar.yml): pytest dentro de la imagen del proyecto,
+# los cuatro tests de JavaScript, y el arnés de migración contra un Postgres
+# real. Python corre en la imagen construida desde api/Dockerfile y no en un
+# entorno montado a mano, para no mantener dos listas de dependencias del
+# sistema que se desincronizarían.
 
 # Probar la cola Celery
 docker compose exec api python -c "from app.celery_worker import ping; print(ping.delay().get(timeout=5))"

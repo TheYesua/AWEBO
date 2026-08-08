@@ -1,0 +1,133 @@
+name: Verificar
+
+# La batería completa en cada push y en cada pull request.
+#
+# POR QUÉ EXISTE
+# -------------
+# Hasta el 8/8/2026 los tests se ejecutaban a mano, y los de JavaScript solo
+# cuando alguien se acordaba: la imagen `python:3.12-slim` del contenedor `api`
+# no lleva Node, así que no entran en `pytest`. En esa semana se colaron tres
+# fallos que la batería sí detectaba —una llamada a una función inexistente que
+# dejó todas las situaciones sin mostrar contenido, y dos tests que no
+# detectaban lo que decían proteger— y ninguno saltó hasta que alguien los
+# ejecutó.
+#
+# DECISIÓN DE DISEÑO
+# ------------------
+# Python corre dentro de **la imagen del propio proyecto**, construida aquí
+# desde `api/Dockerfile`. La alternativa era instalar Python y las dependencias
+# del sistema directamente en el runner, pero eso obliga a mantener dos listas
+# de paquetes —la del Dockerfile y la del workflow— que se desincronizan en
+# cuanto alguien añade una. WeasyPrint necesita cinco librerías de sistema:
+# duplicarlas era garantizar que algún día la CI pasara y el contenedor no, o
+# al revés.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  python:
+    name: Batería de Python
+    runs-on: ubuntu-latest
+
+    services:
+      postgres:
+        # `conftest.py` reescribe la URI para apuntar a `awebo_test`, así que la
+        # base de datos tiene que llamarse así: el esquema lo crea
+        # `db.create_all()`, pero la base de datos en sí ha de existir.
+        image: postgres:16-alpine
+        env:
+          POSTGRES_USER: awebo
+          POSTGRES_PASSWORD: awebo
+          POSTGRES_DB: awebo_test
+        ports: ['5432:5432']
+        options: >-
+          --health-cmd "pg_isready -U awebo -d awebo_test"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+
+      redis:
+        image: redis:7-alpine
+        ports: ['6379:6379']
+        options: >-
+          --health-cmd "redis-cli ping"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Construir la imagen del proyecto
+        run: docker build -t awebo-api:ci ./api
+
+      - name: pytest
+        # --network host para alcanzar los servicios, que el runner publica en
+        # localhost. Las variables llevan `localhost` y no `postgres`/`redis`
+        # por lo mismo: los nombres de servicio solo resuelven entre
+        # contenedores de la misma red de Compose, y aquí no hay Compose.
+        run: |
+          docker run --rm --network host \
+            -e SQLALCHEMY_DATABASE_URI=postgresql+psycopg://awebo:awebo@localhost:5432/awebo \
+            -e REDIS_URL=redis://localhost:6379/0 \
+            -e SESSION_REDIS_URL=redis://localhost:6379/3 \
+            -e CELERY_BROKER_URL=redis://localhost:6379/1 \
+            -e CELERY_RESULT_BACKEND=redis://localhost:6379/2 \
+            -e AI_PROVIDER=fake \
+            -e SECRET_KEY=clave-solo-para-ci \
+            -v "$PWD/api:/app" -w /app \
+            awebo-api:ci pytest -q
+
+  javascript:
+    name: Tests de JavaScript
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      # Sin `npm install`: estos tests no tienen dependencias a propósito.
+      # Usan `node:test` y `vm` de la biblioteca estándar, y leen las plantillas
+      # y los ficheros de `static/js` en crudo. Así se pueden ejecutar en
+      # cualquier sitio donde haya Node, incluido un contenedor efímero.
+      - name: Ejecutarlos
+        working-directory: api
+        run: |
+          fallos=0
+          for t in tests/js/*.test.js; do
+            echo "::group::$t"
+            node "$t" || fallos=$((fallos + 1))
+            echo "::endgroup::"
+          done
+          if [ "$fallos" -ne 0 ]; then
+            echo "::error::$fallos fichero(s) de test de JavaScript han fallado"
+            exit 1
+          fi
+
+  migracion:
+    name: Migración de datos contra Postgres real
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      # `pgserver` trae su propio Postgres, así que este arnés no necesita
+      # servicios. Está aparte de `pytest` porque la batería normal crea el
+      # esquema con `db.create_all()` y **no pasa por las migraciones**: sin
+      # esto, un error en el SQL de una migración no lo ve nadie hasta que se
+      # ejecuta en la máquina de alguien. Ya pasó una vez.
+      - name: Instalar lo que necesita el arnés
+        run: pip install pgserver alembic "psycopg[binary]" sqlalchemy
+
+      - name: Ejecutar upgrade y downgrade de verdad
+        working-directory: api
+        run: python tests/manual/probar_migracion_tecnologia.py
