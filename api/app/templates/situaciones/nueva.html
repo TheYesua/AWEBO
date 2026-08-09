@@ -153,6 +153,7 @@ const PREGUNTA_GUIA = {{ _('Pregunta guía')|tojson }};
    interfaz en euskera, el bloque de sugerencias y sus errores salían en
    castellano. Lo detecta `tests/js/traducibles.test.js`. */
 const T = {
+  errorDesconocido: {{ _('Error desconocido')|tojson }},
   sinEspecificar: {{ _('— Sin especificar —')|tojson }},
   productoFinal: {{ _('Producto final:')|tojson }},
   usarPropuesta: {{ _('Usar esta propuesta')|tojson }},
@@ -366,7 +367,7 @@ document.getElementById('sa-form').addEventListener('submit', async (ev) => {
     if (body.detalles) {
       msg.textContent = body.detalles.map(d => `${d.loc?.join('.') ?? ''}: ${d.msg}`).join(' · ');
     } else {
-      msg.textContent = body.mensaje || body.error || 'Error desconocido';
+      msg.textContent = body.mensaje || body.error || T.errorDesconocido;
     }
     msg.hidden = false;
   } finally {

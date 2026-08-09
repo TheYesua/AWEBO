@@ -27,6 +27,7 @@ celery_app = Celery(
         "app.tasks.generacion",
         "app.tasks.operaciones",
         "app.tasks.mantenimiento",
+        "app.tasks.correo",
     ],
 )
 celery_app.conf.update(

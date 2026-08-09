@@ -334,16 +334,27 @@ class TestAccesoConLapida:
             assert client.get("/me").status_code == 401
 
     def test_no_se_le_puede_restablecer_la_contrasena(self, client, db):
+        """La lápida bloquea también el camino del restablecimiento.
+
+        Reescrito el 09/08/2026 con el flujo nuevo. Antes bastaba con enviar el
+        correo y la contraseña nueva, y el 404 delataba que esa cuenta existía
+        pero estaba de baja; ahora la respuesta es un 202 idéntico al de una
+        dirección que no existe, y lo que se comprueba es que **no se manda
+        ningún correo**.
+        """
+        from unittest.mock import patch
+
         usuario = _crear(db, "baja@test.com")
         usuario.marcar_eliminado()
         db.session.commit()
 
-        res = client.post(
-            "/auth/reset-password",
-            json={"correo": "baja@test.com", "nueva_contrasena": "OtraSegura1"},
-        )
-        assert res.status_code == 404
-        assert res.get_json()["error"] == "usuario_no_encontrado"
+        with patch("app.tasks.encolar") as encolar:
+            res = client.post(
+                "/auth/solicitar-restablecimiento", json={"correo": "baja@test.com"}
+            )
+
+        assert res.status_code == 202
+        assert not encolar.called
 
 
 # ---------------------------------------------------------------------------

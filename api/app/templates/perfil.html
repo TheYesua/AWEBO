@@ -132,6 +132,7 @@
 <script>
 /* Cadenas del JavaScript, que no pasan por _() del servidor. */
 const T = {
+  errorDesconocido: {{ _('Error desconocido')|tojson }},
   proveedorSistema: {{ _('Se usará el proveedor del sistema.')|tojson }},
   usarDelSistema: {{ _('Usar el del sistema')|tojson }},
   preferenciaGuardada: {{ _('Preferencia guardada.')|tojson }},
@@ -288,7 +289,7 @@ document.getElementById('perfil-form').addEventListener('submit', async (ev) => 
     msg.hidden = false;
   } else {
     msg.classList.remove('alert--ok');
-    msg.textContent = body.mensaje || body.error || 'Error desconocido';
+    msg.textContent = body.mensaje || body.error || T.errorDesconocido;
     msg.hidden = false;
   }
 });
@@ -351,7 +352,7 @@ document.getElementById('password-form').addEventListener('submit', async (ev) =
       msg.hidden = true;
     }, 2000);
   } else {
-    msg.textContent = body.mensaje || body.error || 'Error desconocido';
+    msg.textContent = body.mensaje || body.error || T.errorDesconocido;
     msg.hidden = false;
   }
 });

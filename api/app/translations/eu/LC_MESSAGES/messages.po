@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: AWEBO VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-08-08 12:46+0200\n"
+"POT-Creation-Date: 2026-08-09 15:05+0200\n"
 "PO-Revision-Date: 2026-08-04 15:31+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: eu\n"
@@ -19,12 +19,12 @@ msgstr ""
 "Generated-By: Babel 2.18.0\n"
 
 #: app/services/exportacion_service.py:48
-#: app/templates/situaciones/detalle.html:289
+#: app/templates/situaciones/detalle.html:290
 msgid "Descripción de la situación"
 msgstr "Egoeraren deskribapena"
 
 #: app/services/exportacion_service.py:49
-#: app/templates/situaciones/detalle.html:290
+#: app/templates/situaciones/detalle.html:291
 msgid "Objetivos didácticos"
 msgstr "Helburu didaktikoak"
 
@@ -33,7 +33,7 @@ msgid "Conexión curricular"
 msgstr "Curriculum-lotura"
 
 #: app/services/exportacion_service.py:51
-#: app/templates/situaciones/detalle.html:292
+#: app/templates/situaciones/detalle.html:293
 msgid "Secuencia de sesiones"
 msgstr "Saioen sekuentzia"
 
@@ -702,14 +702,14 @@ msgstr "Plataformaren estatistikak"
 
 #: app/templates/admin/panel.html:120 app/templates/admin/panel.html:308
 #: app/templates/index.html:164 app/templates/situaciones/detalle.html:34
-#: app/templates/situaciones/detalle.html:246
+#: app/templates/situaciones/detalle.html:247
 #: app/templates/situaciones/listar.html:34
 #: app/templates/situaciones/listar.html:89
 msgid "Borrador"
 msgstr "Zirriborroa"
 
 #: app/templates/admin/panel.html:121 app/templates/admin/panel.html:309
-#: app/templates/index.html:165 app/templates/situaciones/detalle.html:247
+#: app/templates/index.html:165 app/templates/situaciones/detalle.html:248
 #: app/templates/situaciones/listar.html:35
 #: app/templates/situaciones/listar.html:90
 msgid "Generando…"
@@ -717,7 +717,7 @@ msgstr "Sortzen…"
 
 #: app/templates/admin/panel.html:122 app/templates/admin/panel.html:310
 #: app/templates/index.html:166 app/templates/situaciones/detalle.html:35
-#: app/templates/situaciones/detalle.html:248
+#: app/templates/situaciones/detalle.html:249
 #: app/templates/situaciones/listar.html:36
 #: app/templates/situaciones/listar.html:91
 msgid "Generada"
@@ -730,7 +730,7 @@ msgstr "Errorea"
 
 #: app/templates/admin/panel.html:124 app/templates/admin/panel.html:312
 #: app/templates/index.html:168 app/templates/situaciones/detalle.html:36
-#: app/templates/situaciones/detalle.html:249
+#: app/templates/situaciones/detalle.html:250
 #: app/templates/situaciones/listar.html:38
 #: app/templates/situaciones/listar.html:93
 msgid "Finalizada"
@@ -741,19 +741,19 @@ msgid "Accede a tu cuenta de docente para gestionar tus situaciones de aprendiza
 msgstr "Sartu zure irakasle-kontuan zure ikaskuntza egoerak kudeatzeko."
 
 #: app/templates/login.html:10 app/templates/register.html:12
-#: app/templates/restablecer_contrasena.html:12
+#: app/templates/restablecer_contrasena.html:55
 #: app/templates/situaciones/nueva.html:45
 msgid "Los campos marcados con"
 msgstr "Honekin markatutako eremuak"
 
 #: app/templates/login.html:11 app/templates/register.html:13
-#: app/templates/restablecer_contrasena.html:13
+#: app/templates/restablecer_contrasena.html:56
 #: app/templates/situaciones/nueva.html:46
 msgid "son obligatorios."
 msgstr "nahitaezkoak dira."
 
 #: app/templates/admin/panel.html:41 app/templates/login.html:15
-#: app/templates/register.html:27 app/templates/restablecer_contrasena.html:17
+#: app/templates/register.html:27 app/templates/restablecer_contrasena.html:31
 msgid "Correo electrónico"
 msgstr "Helbide elektronikoa"
 
@@ -761,9 +761,9 @@ msgstr "Helbide elektronikoa"
 #: app/templates/perfil.html:96 app/templates/perfil.html:104
 #: app/templates/perfil.html:115 app/templates/register.html:19
 #: app/templates/register.html:29 app/templates/register.html:38
-#: app/templates/restablecer_contrasena.html:19
-#: app/templates/restablecer_contrasena.html:28
-#: app/templates/restablecer_contrasena.html:40
+#: app/templates/restablecer_contrasena.html:33
+#: app/templates/restablecer_contrasena.html:62
+#: app/templates/restablecer_contrasena.html:74
 #: app/templates/situaciones/nueva.html:52
 #: app/templates/situaciones/nueva.html:63
 #: app/templates/situaciones/nueva.html:71
@@ -787,6 +787,13 @@ msgstr "Ez duzu konturik? Erregistratu"
 msgid "¿Olvidaste tu contraseña?"
 msgstr "Pasahitza ahaztu duzu?"
 
+#: app/templates/login.html:68 app/templates/perfil.html:135
+#: app/templates/register.html:105 app/templates/restablecer_contrasena.html:99
+#: app/templates/situaciones/detalle.html:232
+#: app/templates/situaciones/nueva.html:156
+msgid "Error desconocido"
+msgstr "Errore ezezaguna"
+
 #: app/templates/mapa_web.html:9
 msgid "Índice navegable de todas las páginas y secciones públicas de la aplicación."
 msgstr "Aplikazioaren orri eta atal publiko guztien aurkibide nabigagarria."
@@ -803,8 +810,7 @@ msgstr "Sarbide publikoa"
 msgid "Crear cuenta de docente"
 msgstr "Irakasle-kontua sortu"
 
-#: app/templates/mapa_web.html:20 app/templates/restablecer_contrasena.html:6
-#: app/templates/restablecer_contrasena.html:49
+#: app/templates/mapa_web.html:20 app/templates/restablecer_contrasena.html:18
 msgid "Restablecer contraseña"
 msgstr "Pasahitza berrezarri"
 
@@ -922,20 +928,20 @@ msgstr "Pasahitza aldatu"
 msgid "Contraseña actual"
 msgstr "Uneko pasahitza"
 
-#: app/templates/perfil.html:102 app/templates/restablecer_contrasena.html:26
+#: app/templates/perfil.html:102 app/templates/restablecer_contrasena.html:60
 msgid "Nueva contraseña"
 msgstr "Pasahitz berria"
 
 #: app/templates/admin/panel.html:54 app/templates/perfil.html:109
-#: app/templates/register.html:44 app/templates/restablecer_contrasena.html:33
+#: app/templates/register.html:44 app/templates/restablecer_contrasena.html:67
 msgid "Mínimo 8 caracteres, con al menos una letra y un dígito."
 msgstr "Gutxienez 8 karaktere, letra bat eta zenbaki bat gutxienez."
 
-#: app/templates/perfil.html:113 app/templates/restablecer_contrasena.html:38
+#: app/templates/perfil.html:113 app/templates/restablecer_contrasena.html:72
 msgid "Confirmar nueva contraseña"
 msgstr "Berretsi pasahitz berria"
 
-#: app/templates/perfil.html:121
+#: app/templates/perfil.html:121 app/templates/restablecer_contrasena.html:82
 msgid "Guardar nueva contraseña"
 msgstr "Gorde pasahitz berria"
 
@@ -944,31 +950,31 @@ msgstr "Gorde pasahitz berria"
 msgid "Cancelar"
 msgstr "Utzi"
 
-#: app/templates/perfil.html:135
+#: app/templates/perfil.html:136
 msgid "Se usará el proveedor del sistema."
 msgstr "Sistemaren hornitzailea erabiliko da."
 
-#: app/templates/perfil.html:136
+#: app/templates/perfil.html:137
 msgid "Usar el del sistema"
 msgstr "Sistemarena erabili"
 
-#: app/templates/perfil.html:137
+#: app/templates/perfil.html:138
 msgid "Preferencia guardada."
 msgstr "Hobespena gorde da."
 
-#: app/templates/perfil.html:138
+#: app/templates/perfil.html:139
 msgid "No se ha podido guardar."
 msgstr "Ezin izan da gorde."
 
-#: app/templates/perfil.html:139
+#: app/templates/perfil.html:140
 msgid "Perfil actualizado correctamente."
 msgstr "Profila behar bezala eguneratu da."
 
-#: app/templates/perfil.html:140
+#: app/templates/perfil.html:141
 msgid "Las contraseñas nuevas no coinciden."
 msgstr "Pasahitz berriak ez datoz bat."
 
-#: app/templates/perfil.html:141
+#: app/templates/perfil.html:142
 msgid "Contraseña cambiada correctamente."
 msgstr "Pasahitza behar bezala aldatu da."
 
@@ -988,25 +994,46 @@ msgstr "Kontua baduzu jada?"
 msgid "Creando cuenta…"
 msgstr "Kontua sortzen…"
 
-#: app/templates/restablecer_contrasena.html:8
-msgid "Introduce tu correo y la nueva contraseña. Por simplicidad de este prototipo no se requiere confirmación por correo electrónico."
-msgstr "Sartu zure helbide elektronikoa eta pasahitz berria. Prototipo honen sinpletasunagatik ez da posta elektroniko bidezko berrespenik behar."
+#: app/templates/restablecer_contrasena.html:25
+msgid "Escribe tu correo y te enviaremos un enlace para elegir una contraseña nueva."
+msgstr "Idatzi zure helbide elektronikoa eta esteka bat bidaliko dizugu pasahitz berri bat aukeratzeko."
 
-#: app/templates/restablecer_contrasena.html:45
-msgid "Vuelve a escribir la misma contraseña."
-msgstr "Idatzi berriro pasahitz bera."
+#: app/templates/restablecer_contrasena.html:40
+msgid "Enviarme el enlace"
+msgstr "Bidali esteka"
 
-#: app/templates/restablecer_contrasena.html:50
+#: app/templates/restablecer_contrasena.html:42
 msgid "Volver al inicio de sesión"
 msgstr "Itzuli saio-hasierara"
 
-#: app/templates/restablecer_contrasena.html:61
+#: app/templates/restablecer_contrasena.html:52
+msgid "Elige tu contraseña nueva."
+msgstr "Aukeratu zure pasahitz berria."
+
+#: app/templates/restablecer_contrasena.html:94
 msgid "Las contraseñas no coinciden."
 msgstr "Pasahitzak ez datoz bat."
 
-#: app/templates/restablecer_contrasena.html:62
+#: app/templates/restablecer_contrasena.html:95
 msgid "Contraseña restablecida correctamente. Te llevamos al inicio de sesión…"
 msgstr "Pasahitza behar bezala berrezarri da. Saio-hasierara eramango zaitugu…"
+
+#: app/templates/restablecer_contrasena.html:96
+msgid "Procesando…"
+msgstr "Prozesatzen…"
+
+#: app/templates/restablecer_contrasena.html:97
+msgid "Enviando…"
+msgstr "Bidaltzen…"
+
+#: app/templates/restablecer_contrasena.html:98
+msgid "Si esa dirección tiene cuenta, recibirás un correo con un enlace. Revisa también la carpeta de correo no deseado."
+msgstr "Helbide horrek konturik badu, esteka bat duen mezu bat jasoko duzu. Begiratu spam karpeta ere."
+
+#: app/templates/restablecer_contrasena.html:100
+#: app/templates/situaciones/nueva.html:165
+msgid "No se ha podido contactar con el servidor."
+msgstr "Ezin izan da zerbitzariarekin harremanetan jarri."
 
 #: app/templates/admin/panel.html:6
 msgid "Panel de administración"
@@ -1082,7 +1109,7 @@ msgid "Todos"
 msgstr "Guztiak"
 
 #: app/templates/admin/panel.html:123 app/templates/admin/panel.html:311
-#: app/templates/situaciones/detalle.html:258
+#: app/templates/situaciones/detalle.html:259
 #: app/templates/situaciones/listar.html:37
 msgid "Error de generación"
 msgstr "Sorkuntza-errorea"
@@ -1459,7 +1486,7 @@ msgid "Se queda en el historial de versiones"
 msgstr "Bertsioen historian gordetzen da"
 
 #: app/templates/situaciones/detalle.html:94
-#: app/templates/situaciones/detalle.html:237
+#: app/templates/situaciones/detalle.html:238
 msgid "Marcar como terminada"
 msgstr "Amaitutzat markatu"
 
@@ -1472,7 +1499,7 @@ msgid "Genera el contenido didáctico completo o regenera una sección concreta.
 msgstr "Sortu eduki didaktiko osoa edo birsortu atal zehatz bat. Sorkuntzan zehar egoera blokeatuta geratzen da."
 
 #: app/templates/situaciones/detalle.html:117
-#: app/templates/situaciones/detalle.html:235
+#: app/templates/situaciones/detalle.html:236
 msgid "Generar contenido completo"
 msgstr "Eduki osoa sortu"
 
@@ -1565,193 +1592,193 @@ msgid "Título previo"
 msgstr "Aurreko izenburua"
 
 #: app/templates/situaciones/detalle.html:227
-#: app/templates/situaciones/nueva.html:185
+#: app/templates/situaciones/nueva.html:186
 msgid "Una de las dos opciones de Matemáticas de 4.º. Se desarrolla sobre todo mediante la resolución de problemas, la investigación y el análisis matemático de situaciones de la vida cotidiana."
 msgstr "4. mailako Matematikaren bi aukeretako bat. Batez ere problemak ebaztearen, ikertzearen eta eguneroko bizitzako egoeren analisi matematikoaren bidez garatzen da."
 
 #: app/templates/situaciones/detalle.html:228
-#: app/templates/situaciones/nueva.html:186
+#: app/templates/situaciones/nueva.html:187
 msgid "La otra opción de Matemáticas de 4.º. Además de lo anterior, profundiza en los procedimientos algebraicos, geométricos, analíticos y estadísticos, en contextos matemáticos, científicos y sociales. El real decreto no la vincula a ninguna modalidad de Bachillerato: la diferencia que establece es de enfoque."
 msgstr "4. mailako Matematikaren beste aukera. Aurrekoaz gain, prozedura aljebraiko, geometriko, analitiko eta estatistikoetan sakontzen du, testuinguru matematiko, zientifiko eta sozialetan. Errege dekretuak ez du Batxilergoko inongo modalitaterekin lotzen: ezartzen duen aldea ikuspegiarena da."
 
-#: app/templates/situaciones/detalle.html:232
+#: app/templates/situaciones/detalle.html:233
 msgid "No tienes permiso para ver esta situación"
 msgstr "Ez duzu egoera hau ikusteko baimenik"
 
-#: app/templates/situaciones/detalle.html:233
+#: app/templates/situaciones/detalle.html:234
 msgid "No encontrada"
 msgstr "Ez da aurkitu"
 
-#: app/templates/situaciones/detalle.html:234
-#: app/templates/situaciones/nueva.html:156
+#: app/templates/situaciones/detalle.html:235
+#: app/templates/situaciones/nueva.html:157
 msgid "— Sin especificar —"
 msgstr "— Zehaztu gabe —"
 
-#: app/templates/situaciones/detalle.html:236
+#: app/templates/situaciones/detalle.html:237
 msgid "Regenerar todo"
 msgstr "Dena birsortu"
 
-#: app/templates/situaciones/detalle.html:238
+#: app/templates/situaciones/detalle.html:239
 #, python-brace-format
 msgid "Traducir a {idioma}"
 msgstr "{idioma}ra itzuli"
 
-#: app/templates/situaciones/detalle.html:239
+#: app/templates/situaciones/detalle.html:240
 msgid "Tiempo de espera agotado sin respuesta de la tarea."
 msgstr "Itxaronaldia agortu da atazaren erantzunik gabe."
 
-#: app/templates/situaciones/detalle.html:240
+#: app/templates/situaciones/detalle.html:241
 msgid "No se ha podido deshacer."
 msgstr "Ezin izan da desegin."
 
-#: app/templates/situaciones/detalle.html:241
+#: app/templates/situaciones/detalle.html:242
 msgid "Cambios guardados correctamente."
 msgstr "Aldaketak behar bezala gorde dira."
 
-#: app/templates/situaciones/detalle.html:242
+#: app/templates/situaciones/detalle.html:243
 msgid "El perfil del alumnado debe tener al menos 10 caracteres."
 msgstr "Ikasleen profilak gutxienez 10 karaktere izan behar ditu."
 
-#: app/templates/situaciones/detalle.html:243
+#: app/templates/situaciones/detalle.html:244
 msgid "Regenerar"
 msgstr "Birsortu"
 
-#: app/templates/situaciones/detalle.html:244
+#: app/templates/situaciones/detalle.html:245
 msgid "Deshacer"
 msgstr "Desegin"
 
-#: app/templates/situaciones/detalle.html:252
+#: app/templates/situaciones/detalle.html:253
 msgid "Hay dos redacciones de esta sección."
 msgstr "Atal honen bi idazketa daude."
 
-#: app/templates/situaciones/detalle.html:253
+#: app/templates/situaciones/detalle.html:254
 msgid "Quédate con una para seguir. La descartada permanece en el historial de versiones, así que podrás recuperarla."
 msgstr "Aukeratu bat jarraitzeko. Baztertutakoa bertsioen historian geratzen da, beraz berreskuratu ahal izango duzu."
 
-#: app/templates/situaciones/detalle.html:254
+#: app/templates/situaciones/detalle.html:255
 msgid "Versión actual"
 msgstr "Uneko bertsioa"
 
-#: app/templates/situaciones/detalle.html:255
+#: app/templates/situaciones/detalle.html:256
 msgid "Alternativa propuesta"
 msgstr "Proposatutako alternatiba"
 
-#: app/templates/situaciones/detalle.html:256
+#: app/templates/situaciones/detalle.html:257
 msgid "Quedarme con esta"
 msgstr "Hau aukeratu"
 
-#: app/templates/situaciones/detalle.html:259
+#: app/templates/situaciones/detalle.html:260
 msgid "Reabrir situación"
 msgstr "Egoera berrireki"
 
-#: app/templates/situaciones/detalle.html:260
+#: app/templates/situaciones/detalle.html:261
 msgid "Escuchar"
 msgstr "Entzun"
 
-#: app/templates/situaciones/detalle.html:261
+#: app/templates/situaciones/detalle.html:262
 msgid "Parar"
 msgstr "Gelditu"
 
-#: app/templates/situaciones/detalle.html:262
+#: app/templates/situaciones/detalle.html:263
 msgid "Leyendo en voz alta…"
 msgstr "Ozen irakurtzen…"
 
-#: app/templates/situaciones/detalle.html:263
+#: app/templates/situaciones/detalle.html:264
 #, python-brace-format
 msgid "Tu sistema no tiene ninguna voz instalada para {idioma}, así que la lectura en voz alta no está disponible en esta situación."
 msgstr "Zure sistemak ez du {idioma} hizkuntzarako ahotsik instalatuta, beraz ozenki irakurtzeko aukera ez dago erabilgarri egoera honetan."
 
-#: app/templates/situaciones/detalle.html:264
+#: app/templates/situaciones/detalle.html:265
 msgid "Ya hay una generación en curso."
 msgstr "Sorkuntza bat martxan dago dagoeneko."
 
-#: app/templates/situaciones/detalle.html:265
+#: app/templates/situaciones/detalle.html:266
 msgid "No se pudo lanzar la generación."
 msgstr "Ezin izan da sorkuntza abiarazi."
 
-#: app/templates/situaciones/detalle.html:266
+#: app/templates/situaciones/detalle.html:267
 msgid "La generación terminó con error: "
 msgstr "Sorkuntza errorearekin amaitu da: "
 
-#: app/templates/situaciones/detalle.html:267
+#: app/templates/situaciones/detalle.html:268
 msgid "No se ha podido guardar la elección."
 msgstr "Ezin izan da aukeraketa gorde."
 
-#: app/templates/situaciones/detalle.html:268
+#: app/templates/situaciones/detalle.html:269
 msgid "Adaptación lanzada. Serás redirigido a la nueva SA…"
 msgstr "Egokitzapena abiarazita. IE berrira birbideratuko zaitugu…"
 
-#: app/templates/situaciones/detalle.html:269
+#: app/templates/situaciones/detalle.html:270
 msgid "Aún no hay adaptaciones generadas para esta situación."
 msgstr "Oraindik ez dago egoera honetarako sortutako egokitzapenik."
 
-#: app/templates/situaciones/detalle.html:270
+#: app/templates/situaciones/detalle.html:271
 #, python-brace-format
 msgid "El idioma destino es el de la situación ({idioma}). Cámbialo arriba, en el campo Idioma."
 msgstr "Xede-hizkuntza egoerarena da ({idioma}). Aldatu goian, Hizkuntza eremuan."
 
-#: app/templates/situaciones/detalle.html:271
+#: app/templates/situaciones/detalle.html:272
 #, python-brace-format
 msgid "¿Regenerar la sección «{nombre}»? Se sobrescribirá su contenido actual."
 msgstr "«{nombre}» atala birsortu? Uneko edukia gainidatziko da."
 
-#: app/templates/situaciones/detalle.html:272
+#: app/templates/situaciones/detalle.html:273
 msgid "¿Seguro que quieres eliminar esta situación? Se eliminará también su historial de versiones."
 msgstr "Ziur zaude egoera hau ezabatu nahi duzula? Bertsioen historia ere ezabatuko da."
 
-#: app/templates/situaciones/detalle.html:278
+#: app/templates/situaciones/detalle.html:279
 msgid "español"
 msgstr "gaztelania"
 
-#: app/templates/situaciones/detalle.html:279
+#: app/templates/situaciones/detalle.html:280
 msgid "catalán"
 msgstr "katalana"
 
-#: app/templates/situaciones/detalle.html:280
+#: app/templates/situaciones/detalle.html:281
 msgid "gallego"
 msgstr "galiziera"
 
-#: app/templates/situaciones/detalle.html:281
+#: app/templates/situaciones/detalle.html:282
 msgid "euskera"
 msgstr "euskara"
 
-#: app/templates/situaciones/detalle.html:282
+#: app/templates/situaciones/detalle.html:283
 msgid "inglés"
 msgstr "ingelesa"
 
-#: app/templates/situaciones/detalle.html:283
+#: app/templates/situaciones/detalle.html:284
 msgid "francés"
 msgstr "frantsesa"
 
-#: app/templates/situaciones/detalle.html:284
+#: app/templates/situaciones/detalle.html:285
 msgid "árabe"
 msgstr "arabiera"
 
-#: app/templates/situaciones/detalle.html:291
+#: app/templates/situaciones/detalle.html:292
 msgid "Conexión curricular (competencias · criterios · saberes)"
 msgstr "Curriculum-lotura (konpetentziak · irizpideak · jakintzak)"
 
-#: app/templates/situaciones/detalle.html:293
+#: app/templates/situaciones/detalle.html:294
 msgid "Evaluación (instrumentos y rúbricas)"
 msgstr "Ebaluazioa (tresnak eta errubrikak)"
 
-#: app/templates/situaciones/detalle.html:294
+#: app/templates/situaciones/detalle.html:295
 msgid "Atención a la diversidad (DUA)"
 msgstr "Aniztasunaren arreta (DUA)"
 
-#: app/templates/situaciones/detalle.html:384
+#: app/templates/situaciones/detalle.html:385
 msgid "Resumir"
 msgstr "Laburtu"
 
-#: app/templates/situaciones/detalle.html:385
+#: app/templates/situaciones/detalle.html:386
 msgid "Desarrollar"
 msgstr "Garatu"
 
-#: app/templates/situaciones/detalle.html:386
+#: app/templates/situaciones/detalle.html:387
 msgid "Traducir"
 msgstr "Itzuli"
 
-#: app/templates/situaciones/detalle.html:387
+#: app/templates/situaciones/detalle.html:388
 msgid "Proponer alternativa"
 msgstr "Alternatiba proposatu"
 
@@ -1869,44 +1896,40 @@ msgstr "Desmarkatzen baduzu, egoera zirriborro gisa gordetzen da eta geroago sor
 msgid "Crear situación"
 msgstr "Egoera sortu"
 
-#: app/templates/situaciones/nueva.html:157
+#: app/templates/situaciones/nueva.html:158
 msgid "Producto final:"
 msgstr "Azken produktua:"
 
-#: app/templates/situaciones/nueva.html:158
+#: app/templates/situaciones/nueva.html:159
 msgid "Usar esta propuesta"
 msgstr "Proposamen hau erabili"
 
-#: app/templates/situaciones/nueva.html:159
+#: app/templates/situaciones/nueva.html:160
 #, python-brace-format
 msgid "Usar la propuesta {n}: {titulo}"
 msgstr "{n}. proposamena erabili: {titulo}"
 
-#: app/templates/situaciones/nueva.html:160
+#: app/templates/situaciones/nueva.html:161
 msgid "Elige antes el curso y la materia en el formulario de abajo."
 msgstr "Aukeratu lehenik maila eta ikasgaia beheko formularioan."
 
-#: app/templates/situaciones/nueva.html:161
+#: app/templates/situaciones/nueva.html:162
 msgid "Pensando ideas…"
 msgstr "Ideiak pentsatzen…"
 
-#: app/templates/situaciones/nueva.html:162
+#: app/templates/situaciones/nueva.html:163
 msgid "Has pedido muchas sugerencias seguidas. Espera un poco antes de volver a intentarlo."
 msgstr "Iradokizun asko eskatu dituzu jarraian. Itxaron pixka bat berriro saiatu aurretik."
 
-#: app/templates/situaciones/nueva.html:163
+#: app/templates/situaciones/nueva.html:164
 msgid "No se han podido obtener sugerencias."
 msgstr "Ezin izan dira iradokizunak lortu."
 
-#: app/templates/situaciones/nueva.html:164
-msgid "No se ha podido contactar con el servidor."
-msgstr "Ezin izan da zerbitzariarekin harremanetan jarri."
-
-#: app/templates/situaciones/nueva.html:165
+#: app/templates/situaciones/nueva.html:166
 msgid "Creando y lanzando IA…"
 msgstr "Sortzen eta IA abiarazten…"
 
-#: app/templates/situaciones/nueva.html:166
+#: app/templates/situaciones/nueva.html:167
 msgid "Creando…"
 msgstr "Sortzen…"
 
@@ -1957,4 +1980,10 @@ msgstr "Sortzen…"
 
 #~ msgid "Estadísticas de la plataforma"
 #~ msgstr "Plataformaren estatistikak"
+
+#~ msgid "Introduce tu correo y la nueva contraseña. Por simplicidad de este prototipo no se requiere confirmación por correo electrónico."
+#~ msgstr "Sartu zure helbide elektronikoa eta pasahitz berria. Prototipo honen sinpletasunagatik ez da posta elektroniko bidezko berrespenik behar."
+
+#~ msgid "Vuelve a escribir la misma contraseña."
+#~ msgstr "Idatzi berriro pasahitz bera."
 

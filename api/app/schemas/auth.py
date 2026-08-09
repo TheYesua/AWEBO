@@ -58,3 +58,30 @@ class ResetPasswordIn(BaseModel):
         from ..services.auth_service import validar_contrasena
 
         return validar_contrasena(v)
+
+
+class SolicitarRestablecimientoIn(BaseModel):
+    """Solo el correo. No lleva contraseña a propósito.
+
+    Quien pide el enlace todavía no elige nada: elegir contraseña ocurre
+    después, ya con el token en la mano. Aceptar aquí una contraseña sería
+    volver al modelo anterior con un paso más de decorado.
+    """
+
+    model_config = ConfigDict(extra="forbid", str_strip_whitespace=True)
+
+    correo: EmailStr
+
+
+class RestablecerConTokenIn(BaseModel):
+    """El token del enlace y la contraseña nueva.
+
+    Ya no se pide el correo: el token dice a quién pertenece. Pedirlo además
+    sería redundante y abriría la puerta a usar un token válido contra otra
+    cuenta si algún día alguien programa mal la comprobación.
+    """
+
+    model_config = ConfigDict(extra="forbid", str_strip_whitespace=True)
+
+    token: str = Field(min_length=10, max_length=1024)
+    nueva_contrasena: str = Field(min_length=8, max_length=128)

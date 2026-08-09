@@ -80,6 +80,42 @@ class Config:
     )
     LOG_LEVEL: str = os.environ.get("LOG_LEVEL", "INFO")
 
+    # -----------------------------------------------------------------
+    # Correo electrónico
+    # -----------------------------------------------------------------
+    # Por defecto NO se envía: el proveedor de consola escribe el mensaje en
+    # el registro. Ver app/correo/consola.py para el motivo.
+    CORREO_PROVEEDOR: str = os.environ.get("CORREO_PROVEEDOR", "consola")
+    CORREO_REMITENTE: str = os.environ.get("CORREO_REMITENTE", "")
+
+    SMTP_HOST: str = os.environ.get("SMTP_HOST", "")
+    # `or` y no el segundo argumento de get(): una variable declarada y vacía
+    # —`SMTP_PORT=` en el .env, que es como se deja lo que no se usa— sí está
+    # en el entorno, así que get() devolvería la cadena vacía e int("") tumba
+    # el arranque con un ValueError que no menciona el .env por ningún lado.
+    SMTP_PORT: int = int(os.environ.get("SMTP_PORT") or 587)
+    SMTP_USER: str = os.environ.get("SMTP_USER", "")
+    SMTP_PASSWORD: str = os.environ.get("SMTP_PASSWORD", "")
+    SMTP_TIMEOUT: int = int(os.environ.get("SMTP_TIMEOUT") or 15)
+
+    #: Renuncia explícita al cifrado. Existe por el buzón de pruebas local:
+    #: Mailpit no ofrece STARTTLS salvo que se le den certificados, así que
+    #: contra él el envío falla siempre.
+    #:
+    #: Es una variable aparte y no una detección automática a propósito. Lo
+    #: cómodo sería intentar STARTTLS y seguir en claro si el servidor no lo
+    #: ofrece, pero entonces un proveedor real mal configurado —o alguien en
+    #: medio que borra la oferta de STARTTLS— degradaría el envío a texto
+    #: plano sin que nadie se enterase. Con una variable, ir sin cifrar es
+    #: siempre una decisión escrita.
+    SMTP_SIN_TLS: bool = os.environ.get("SMTP_SIN_TLS", "").lower() in {
+        "1", "true", "si", "sí", "yes"
+    }
+
+    # Base para los enlaces que viajan por correo. Tiene que ser absoluta:
+    # un enlace relativo en un cliente de correo no lleva a ningún sitio.
+    URL_BASE: str = os.environ.get("URL_BASE", "http://localhost:8090")
+
     # --- IA / LLM ---
     # "openai" (por defecto si hay API key), "fake" (sin red, para tests
     # y desarrollo local sin API key).

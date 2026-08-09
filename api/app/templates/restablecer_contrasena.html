@@ -1,57 +1,90 @@
 {% extends "base.html" %}
 {% block title %}Restablecer contraseña · AWEBO{% endblock %}
 
+{#
+  Esta pantalla tiene dos fases y decide cuál mostrar por la presencia de
+  ?token= en la dirección:
+
+    sin token  → pedir el enlace, escribiendo solo el correo
+    con token  → elegir la contraseña nueva
+
+  Antes del 09/08/2026 era una sola fase que pedía correo y contraseña a la vez
+  y la cambiaba sin comprobar nada. Se separa porque el token es lo que prueba
+  que quien cambia la contraseña tiene acceso al buzón.
+#}
+
 {% block content %}
 <section class="form-section" aria-labelledby="t-reset">
   <h1 id="t-reset">{{ _('Restablecer contraseña') }}</h1>
-  <p class="lead">
-    {{ _('Introduce tu correo y la nueva contraseña. Por simplicidad de este prototipo no se requiere confirmación por correo electrónico.') }}
-  </p>
 
-  <form id="reset-form" class="form" novalidate>
-    <p class="help">{{ _('Los campos marcados con') }} <span aria-hidden="true" style="color: var(--color-danger-strong);">*</span>
-      {{ _('son obligatorios.') }}</p>
+  <!-- ------------------------------------------------------------------ -->
+  <!-- Fase 1: pedir el enlace                                             -->
+  <!-- ------------------------------------------------------------------ -->
+  <div id="fase-solicitar" hidden>
+    <p class="lead">
+      {{ _('Escribe tu correo y te enviaremos un enlace para elegir una contraseña nueva.') }}
+    </p>
 
-    <div class="field">
-      <label for="correo">
-        {{ _('Correo electrónico') }}
-        <span class="req" aria-hidden="true">*</span>
-        <span class="sr-only">{{ _('(obligatorio)') }}</span>
-      </label>
-      <input type="email" id="correo" name="correo" autocomplete="email" required autofocus>
-    </div>
+    <form id="solicitar-form" class="form" novalidate>
+      <div class="field">
+        <label for="correo">
+          {{ _('Correo electrónico') }}
+          <span class="req" aria-hidden="true">*</span>
+          <span class="sr-only">{{ _('(obligatorio)') }}</span>
+        </label>
+        <input type="email" id="correo" name="correo" autocomplete="email" required autofocus>
+      </div>
 
-    <div class="field">
-      <label for="nueva_contrasena">
-        {{ _('Nueva contraseña') }}
-        <span class="req" aria-hidden="true">*</span>
-        <span class="sr-only">{{ _('(obligatorio)') }}</span>
-      </label>
-      <input type="password" id="nueva_contrasena" name="nueva_contrasena"
-             minlength="8" autocomplete="new-password" required
-             aria-describedby="pass-help">
-      <small id="pass-help" class="help">{{ _('Mínimo 8 caracteres, con al menos una letra y un dígito.') }}</small>
-    </div>
+      <div class="actions">
+        <button type="submit" class="btn btn--primary" id="solicitar-submit">
+          {{ _('Enviarme el enlace') }}
+        </button>
+        <a href="/login" class="btn">{{ _('Volver al inicio de sesión') }}</a>
+      </div>
+      <p class="alert" id="solicitar-msg" role="alert" hidden></p>
+    </form>
+  </div>
 
-    <div class="field">
-      <label for="confirmar_contrasena">
-        {{ _('Confirmar nueva contraseña') }}
-        <span class="req" aria-hidden="true">*</span>
-        <span class="sr-only">{{ _('(obligatorio)') }}</span>
-      </label>
-      <input type="password" id="confirmar_contrasena" name="confirmar_contrasena"
-             minlength="8" autocomplete="new-password" required
-             aria-describedby="confirm-help">
-      <small id="confirm-help" class="help">{{ _('Vuelve a escribir la misma contraseña.') }}</small>
-    </div>
+  <!-- ------------------------------------------------------------------ -->
+  <!-- Fase 2: elegir contraseña, ya con el token del enlace               -->
+  <!-- ------------------------------------------------------------------ -->
+  <div id="fase-elegir" hidden>
+    <p class="lead">{{ _('Elige tu contraseña nueva.') }}</p>
 
-    <div class="actions">
-      <button type="submit" class="btn btn--primary" id="reset-submit">{{ _('Restablecer contraseña') }}</button>
-      <a href="/login" class="link">{{ _('Volver al inicio de sesión') }}</a>
-    </div>
+    <form id="reset-form" class="form" novalidate>
+      <p class="help">{{ _('Los campos marcados con') }} <span aria-hidden="true" style="color: var(--color-danger-strong);">*</span>
+        {{ _('son obligatorios.') }}</p>
 
-    <p class="alert" id="reset-msg" role="alert" hidden></p>
-  </form>
+      <div class="field">
+        <label for="nueva_contrasena">
+          {{ _('Nueva contraseña') }}
+          <span class="req" aria-hidden="true">*</span>
+          <span class="sr-only">{{ _('(obligatorio)') }}</span>
+        </label>
+        <input type="password" id="nueva_contrasena" name="nueva_contrasena"
+               minlength="8" autocomplete="new-password" required autofocus
+               aria-describedby="pass-help">
+        <small id="pass-help" class="help">{{ _('Mínimo 8 caracteres, con al menos una letra y un dígito.') }}</small>
+      </div>
+
+      <div class="field">
+        <label for="confirmar_contrasena">
+          {{ _('Confirmar nueva contraseña') }}
+          <span class="req" aria-hidden="true">*</span>
+          <span class="sr-only">{{ _('(obligatorio)') }}</span>
+        </label>
+        <input type="password" id="confirmar_contrasena" name="confirmar_contrasena"
+               minlength="8" autocomplete="new-password" required>
+      </div>
+
+      <div class="actions">
+        <button type="submit" class="btn btn--primary" id="reset-submit">
+          {{ _('Guardar nueva contraseña') }}
+        </button>
+      </div>
+      <p class="alert" id="reset-msg" role="alert" hidden></p>
+    </form>
+  </div>
 </section>
 {% endblock %}
 
@@ -60,57 +93,120 @@
 const T = {
   noCoinciden: {{ _('Las contraseñas no coinciden.')|tojson }},
   restablecida: {{ _('Contraseña restablecida correctamente. Te llevamos al inicio de sesión…')|tojson }},
+  procesando: {{ _('Procesando…')|tojson }},
+  enviando: {{ _('Enviando…')|tojson }},
+  enlaceEnviado: {{ _('Si esa dirección tiene cuenta, recibirás un correo con un enlace. Revisa también la carpeta de correo no deseado.')|tojson }},
+  errorDesconocido: {{ _('Error desconocido')|tojson }},
+  sinServidor: {{ _('No se ha podido contactar con el servidor.')|tojson }},
 };
 
-document.getElementById('reset-form').addEventListener('submit', async (ev) => {
-  ev.preventDefault();
-  const msg = document.getElementById('reset-msg');
-  const btn = document.getElementById('reset-submit');
-  const confirmInput = document.getElementById('confirmar_contrasena');
-  msg.hidden = true;
-  msg.classList.remove('alert--ok');
-  confirmInput.removeAttribute('aria-invalid');
+/* La fase la decide el enlace del correo, no un paso guardado en sesión: así
+   el enlace funciona en cualquier navegador, que es donde acaba abriéndose. */
+const token = new URLSearchParams(window.location.search).get('token');
+document.getElementById(token ? 'fase-elegir' : 'fase-solicitar').hidden = false;
 
-  const correo = document.getElementById('correo').value.trim();
-  const nueva = document.getElementById('nueva_contrasena').value;
-  const confirmar = confirmInput.value;
-
-  if (nueva !== confirmar) {
-    msg.textContent = T.noCoinciden;
-    msg.hidden = false;
-    confirmInput.setAttribute('aria-invalid', 'true');
-    confirmInput.focus();
-    return;
-  }
-
+/** Deja el botón ocupado mientras dura la petición y lo restaura después. */
+async function conBotonOcupado(btn, etiqueta, tarea) {
+  const original = btn.textContent;
   btn.disabled = true;
   btn.setAttribute('aria-busy', 'true');
-  const originalLabel = btn.textContent;
-  btn.textContent = 'Procesando…';
-
+  btn.textContent = etiqueta;
   try {
-    const res = await fetch('/auth/reset-password', {
-      method: 'POST',
-      headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify({ correo, nueva_contrasena: nueva }),
-    });
-    const body = await res.json().catch(() => ({}));
-
-    if (res.ok) {
-      msg.textContent = T.restablecida;
-      msg.classList.add('alert--ok');
-      msg.hidden = false;
-      ev.target.reset();
-      setTimeout(() => { window.location.href = '/login'; }, 2000);
-    } else {
-      msg.textContent = body.mensaje || body.error || 'Error desconocido';
-      msg.hidden = false;
-    }
+    return await tarea();
   } finally {
     btn.disabled = false;
     btn.removeAttribute('aria-busy');
-    btn.textContent = originalLabel;
+    btn.textContent = original;
   }
-});
+}
+
+/* ---------------------------------------------------------------------- */
+/* Fase 1                                                                  */
+/* ---------------------------------------------------------------------- */
+const formSolicitar = document.getElementById('solicitar-form');
+if (formSolicitar) {
+  formSolicitar.addEventListener('submit', async (ev) => {
+    ev.preventDefault();
+    const msg = document.getElementById('solicitar-msg');
+    const btn = document.getElementById('solicitar-submit');
+    msg.hidden = true;
+    msg.classList.remove('alert--ok');
+
+    const correo = document.getElementById('correo').value.trim();
+
+    await conBotonOcupado(btn, T.enviando, async () => {
+      try {
+        await fetch('/auth/solicitar-restablecimiento', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({ correo }),
+        });
+      } catch (_) {
+        msg.textContent = T.sinServidor;
+        msg.hidden = false;
+        return;
+      }
+      /* Siempre el mismo mensaje, exista la cuenta o no. Distinguirlo
+         convertiría esta pantalla en una forma de averiguar qué direcciones
+         están registradas. El servidor tampoco lo distingue. */
+      msg.textContent = T.enlaceEnviado;
+      msg.classList.add('alert--ok');
+      msg.hidden = false;
+      formSolicitar.reset();
+    });
+  });
+}
+
+/* ---------------------------------------------------------------------- */
+/* Fase 2                                                                  */
+/* ---------------------------------------------------------------------- */
+const formReset = document.getElementById('reset-form');
+if (formReset) {
+  formReset.addEventListener('submit', async (ev) => {
+    ev.preventDefault();
+    const msg = document.getElementById('reset-msg');
+    const btn = document.getElementById('reset-submit');
+    const confirmInput = document.getElementById('confirmar_contrasena');
+    msg.hidden = true;
+    msg.classList.remove('alert--ok');
+    confirmInput.removeAttribute('aria-invalid');
+
+    const nueva = document.getElementById('nueva_contrasena').value;
+    if (nueva !== confirmInput.value) {
+      msg.textContent = T.noCoinciden;
+      msg.hidden = false;
+      confirmInput.setAttribute('aria-invalid', 'true');
+      confirmInput.focus();
+      return;
+    }
+
+    await conBotonOcupado(btn, T.procesando, async () => {
+      let res, body;
+      try {
+        res = await fetch('/auth/reset-password', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({ token, nueva_contrasena: nueva }),
+        });
+        body = await res.json().catch(() => ({}));
+      } catch (_) {
+        msg.textContent = T.sinServidor;
+        msg.hidden = false;
+        return;
+      }
+
+      if (res.ok) {
+        msg.textContent = T.restablecida;
+        msg.classList.add('alert--ok');
+        msg.hidden = false;
+        formReset.reset();
+        setTimeout(() => { window.location.href = '/login'; }, 2000);
+      } else {
+        msg.textContent = body.mensaje || body.error || T.errorDesconocido;
+        msg.hidden = false;
+      }
+    });
+  });
+}
 </script>
 {% endblock %}

@@ -65,7 +65,7 @@ document.getElementById('login-form').addEventListener('submit', async (ev) => {
       window.location.href = '/';
       return;
     }
-    msg.textContent = body.mensaje || body.error || 'Error desconocido';
+    msg.textContent = body.mensaje || body.error || {{ _('Error desconocido')|tojson }};
     msg.hidden = false;
   } finally {
     btn.disabled = false;

@@ -5,8 +5,21 @@ from flask import Blueprint, jsonify, request
 from flask_login import current_user, login_required, login_user, logout_user
 
 from ..extensions import db, limiter
-from ..schemas import LoginIn, RegisterIn, ResetPasswordIn, UsuarioOut
-from ..services.auth_service import AuthError, autenticar, registrar_usuario, resetear_contrasena
+from ..schemas import (
+    LoginIn,
+    RegisterIn,
+    RestablecerConTokenIn,
+    ResetPasswordIn,
+    SolicitarRestablecimientoIn,
+    UsuarioOut,
+)
+from ..services.auth_service import (
+    AuthError,
+    autenticar,
+    registrar_usuario,
+    resetear_contrasena,
+)
+from ..services.restablecimiento import TokenInvalido, restablecer, solicitar
 
 
 bp = Blueprint("auth", __name__, url_prefix="/auth")
@@ -55,15 +68,61 @@ def login():
     return jsonify(UsuarioOut.from_model(usuario).model_dump(mode="json")), 200
 
 
+@bp.post("/solicitar-restablecimiento")
+@limiter.limit("5 per hour")
+def solicitar_restablecimiento():
+    """Envía un enlace de restablecimiento si la dirección está registrada.
+
+    **Responde siempre 202 y siempre lo mismo**, exista la cuenta o no. Si
+    distinguiera los dos casos, este formulario sería una herramienta para
+    averiguar qué direcciones tienen cuenta en AWEBO — el paso previo a probar
+    contraseñas contra ellas.
+
+    Por eso tampoco hay rama de error aquí: ``solicitar`` no lanza nunca.
+    """
+    data = SolicitarRestablecimientoIn.model_validate(request.get_json(silent=True) or {})
+    solicitar(data.correo)
+    return (
+        jsonify(
+            {
+                "resultado": "ok",
+                "mensaje": "Si esa dirección tiene cuenta, recibirás un correo con un enlace.",
+            }
+        ),
+        202,
+    )
+
+
 @bp.post("/reset-password")
 @limiter.limit("5 per hour")
 def reset_password():
-    """Restablece la contraseña de un usuario dado su correo (CU-03)."""
-    data = ResetPasswordIn.model_validate(request.get_json(silent=True) or {})
+    """Cambia la contraseña presentando el token que llegó por correo.
+
+    Hasta el 09/08/2026 esta ruta cambiaba la contraseña de cualquier cuenta
+    **sabiendo solo su correo**: sin sesión, sin token y sin confirmar nada.
+    Ahora exige el token, que caduca en una hora y solo sirve una vez.
+
+    El token inválido devuelve 400 con un código genérico. No se distingue
+    entre caducado, manipulado y ya usado: contarlo le diría a quien prueba
+    tokens si va por buen camino.
+    """
+    data = RestablecerConTokenIn.model_validate(request.get_json(silent=True) or {})
     try:
-        resetear_contrasena(correo=data.correo, nueva_contrasena=data.nueva_contrasena)
+        restablecer(token=data.token, nueva_contrasena=data.nueva_contrasena)
+    except TokenInvalido:
+        return (
+            jsonify(
+                {
+                    "error": "token_invalido",
+                    "mensaje": "El enlace no es válido o ha caducado. Pide uno nuevo.",
+                }
+            ),
+            400,
+        )
     except AuthError as exc:
-        return jsonify({"error": exc.code, "mensaje": str(exc)}), 404
+        # Aquí sí se explica el problema: la contraseña es débil y quien la
+        # escribe necesita saber qué le falta para corregirla.
+        return jsonify({"error": exc.code, "mensaje": str(exc)}), 400
     return jsonify({"resultado": "ok"}), 200
 
 

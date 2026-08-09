@@ -9,7 +9,7 @@
  * `docker compose exec api node ...` no funciona. Si no hay Node en el
  * anfitrión, sirve un contenedor efímero:
  *
- *     docker run --rm -v "E:\AWEBO\api:/app" -w /app node:22-alpine \
+ *     docker run --rm -v "$PWD:/app" -w /app node:22-alpine \
  *         node tests/js/cobertura.test.js
  *
  * Se prefiere eso a instalar Node en la imagen del proyecto: engordaría una

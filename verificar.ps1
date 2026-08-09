@@ -1,4 +1,4 @@
-# Ejecuta toda la verificación del proyecto de una vez, en Windows.
+﻿# Ejecuta toda la verificación del proyecto de una vez, en Windows.
 #
 #     .\verificar.ps1
 #
@@ -16,6 +16,13 @@
 $ErrorActionPreference = 'Continue'
 $fallos = @()
 
+# Dónde está este script. Tres formas porque ninguna funciona en todos los
+# contextos; ver el comentario equivalente en respaldar.ps1, donde
+# $PSScriptRoot vacío dio un error que no señalaba a su causa.
+$raiz = $PSScriptRoot
+if (-not $raiz) { $raiz = Split-Path -Parent $MyInvocation.MyCommand.Path }
+if (-not $raiz) { $raiz = (Get-Location).Path }
+
 function Bloque($titulo) {
     Write-Host ""
     Write-Host "=== $titulo ===" -ForegroundColor Cyan
@@ -30,7 +37,7 @@ if ($LASTEXITCODE -ne 0) { $fallos += "pytest" }
 Bloque "JavaScript"
 # Node en un contenedor efímero: no hace falta tenerlo instalado en Windows, y
 # se prefiere a añadirlo a la imagen del proyecto, que es de producción.
-$rutaApi = (Resolve-Path "$PSScriptRoot\api").Path
+$rutaApi = (Resolve-Path (Join-Path $raiz "api")).Path
 foreach ($test in @('cobertura', 'lectura', 'llamadas', 'traducibles')) {
     Write-Host "--- $test.test.js"
     docker run --rm -v "${rutaApi}:/app" -w /app node:22-alpine node "tests/js/$test.test.js"

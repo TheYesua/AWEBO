@@ -60,6 +60,24 @@ services:
       GEMINI_API_KEY: ${GEMINI_API_KEY}
       GEMINI_MODEL: ${GEMINI_MODEL}
       GEMINI_MODELOS: ${GEMINI_MODELOS:-}
+
+      # ATENCIÓN: esta lista es la única puerta de entrada. El fichero .env lo
+      # lee Compose para sustituir ${...} aquí, pero NO se inyecta en los
+      # contenedores. Una variable que no aparezca en esta lista no existe
+      # dentro de la aplicación por mucho que esté en el .env, y el síntoma es
+      # que se usa el valor por defecto en silencio: así se perdió una tarde
+      # con CORREO_PROVEEDOR=smtp puesto y el proveedor de consola actuando.
+      # Añadir una opción de configuración no está terminado hasta que está
+      # también aquí.
+      URL_BASE: ${URL_BASE:-http://localhost:8090}
+      CORREO_PROVEEDOR: ${CORREO_PROVEEDOR:-consola}
+      CORREO_REMITENTE: ${CORREO_REMITENTE:-}
+      SMTP_HOST: ${SMTP_HOST:-}
+      SMTP_PORT: ${SMTP_PORT:-}
+      SMTP_USER: ${SMTP_USER:-}
+      SMTP_PASSWORD: ${SMTP_PASSWORD:-}
+      SMTP_TIMEOUT: ${SMTP_TIMEOUT:-}
+      SMTP_SIN_TLS: ${SMTP_SIN_TLS:-}
     depends_on:
       postgres:
         condition: service_healthy
@@ -95,6 +113,24 @@ services:
       GEMINI_API_KEY: ${GEMINI_API_KEY}
       GEMINI_MODEL: ${GEMINI_MODEL}
       GEMINI_MODELOS: ${GEMINI_MODELOS:-}
+
+      # ATENCIÓN: esta lista es la única puerta de entrada. El fichero .env lo
+      # lee Compose para sustituir ${...} aquí, pero NO se inyecta en los
+      # contenedores. Una variable que no aparezca en esta lista no existe
+      # dentro de la aplicación por mucho que esté en el .env, y el síntoma es
+      # que se usa el valor por defecto en silencio: así se perdió una tarde
+      # con CORREO_PROVEEDOR=smtp puesto y el proveedor de consola actuando.
+      # Añadir una opción de configuración no está terminado hasta que está
+      # también aquí.
+      URL_BASE: ${URL_BASE:-http://localhost:8090}
+      CORREO_PROVEEDOR: ${CORREO_PROVEEDOR:-consola}
+      CORREO_REMITENTE: ${CORREO_REMITENTE:-}
+      SMTP_HOST: ${SMTP_HOST:-}
+      SMTP_PORT: ${SMTP_PORT:-}
+      SMTP_USER: ${SMTP_USER:-}
+      SMTP_PASSWORD: ${SMTP_PASSWORD:-}
+      SMTP_TIMEOUT: ${SMTP_TIMEOUT:-}
+      SMTP_SIN_TLS: ${SMTP_SIN_TLS:-}
     depends_on:
       postgres:
         condition: service_healthy

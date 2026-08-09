@@ -80,6 +80,9 @@ jobs:
             -e AI_PROVIDER=fake \
             -e SECRET_KEY=clave-solo-para-ci \
             -v "$PWD/api:/app" -w /app \
+            -v "$PWD/docker-compose.yml:/repo/docker-compose.yml:ro" \
+            -v "$PWD/docker-compose.override.yml:/repo/docker-compose.override.yml:ro" \
+            -v "$PWD/.env.example:/repo/.env.example:ro" \
             awebo-api:ci pytest -q
 
   javascript:

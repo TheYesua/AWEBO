@@ -1,5 +1,11 @@
 """Schemas Pydantic v2 para validación y serialización de la API."""
-from .auth import LoginIn, RegisterIn, ResetPasswordIn
+from .auth import (
+    LoginIn,
+    RegisterIn,
+    RestablecerConTokenIn,
+    ResetPasswordIn,
+    SolicitarRestablecimientoIn,
+)
 from .situacion import (
     AdaptacionCreateIn,
     DuplicarIn,
@@ -17,6 +23,8 @@ __all__ = [
     "LoginIn",
     "RegisterIn",
     "ResetPasswordIn",
+    "RestablecerConTokenIn",
+    "SolicitarRestablecimientoIn",
     "UsuarioOut",
     "UsuarioUpdateIn",
     "SituacionCreateIn",

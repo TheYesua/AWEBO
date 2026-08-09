@@ -164,7 +164,7 @@ docker run --rm -v "${PWD}/api:/app" -w /app node:22-alpine node tests/js/llamad
 docker run --rm -v "${PWD}/api:/app" -w /app node:22-alpine node tests/js/traducibles.test.js
 
 # O todo de una vez, que es lo que conviene antes de commitear:
-.\verificar.ps1
+.\verificar.cmd
 
 # Recompilar los catálogos de traducción tras cambiar un .po
 docker compose exec api pybabel compile -d app/translations
@@ -188,6 +188,16 @@ docker compose exec api grep -c fuzzy app/translations/ca/LC_MESSAGES/messages.p
 # real. Python corre en la imagen construida desde api/Dockerfile y no en un
 # entorno montado a mano, para no mantener dos listas de dependencias del
 # sistema que se desincronizarían.
+
+# Ver los correos que envía la aplicación (buzón de pruebas)
+# Bandeja de entrada en http://localhost:8025 — nada sale a internet.
+# Requiere CORREO_PROVEEDOR=smtp en el .env; con el valor por defecto
+# ('consola') el correo se escribe en el log en vez de enviarse.
+docker compose up -d mailpit
+
+# Copia de seguridad de la base de datos
+.\respaldar.cmd                       # copia verificada, conserva las 7 últimas
+.\respaldar.cmd -SinVerificar          # más rápida, sin comprobar que restaura
 
 # Probar la cola Celery
 docker compose exec api python -c "from app.celery_worker import ping; print(ping.delay().get(timeout=5))"
@@ -307,6 +317,95 @@ Actions.
 
 
 ---
+
+## Copias de seguridad
+
+`respaldar.ps1` vuelca la base de datos y **comprueba la copia restaurándola**:
+la carga en una base de usar y tirar dentro del mismo contenedor y compara los
+recuentos de todas las tablas contra el original. Si no cuadran, avisa en ese
+momento y devuelve código de error.
+
+Esa comprobación es el motivo de que el script exista, y no un `pg_dump` a
+secas. Un `pg_dump` que termina con código 0 puede haber escrito un fichero
+truncado —si se llenó el disco, por ejemplo—, y eso no se descubre hasta que
+hace falta restaurarlo, que es el peor momento posible. Se verificó que la
+comparación detecta tanto un volcado cortado por la mitad como uno de cero
+bytes.
+
+La lista de tablas se le pregunta a la base de datos en vez de estar escrita en
+el script: así una tabla nueva entra en la comprobación sola, en lugar de
+quedarse sin verificar sin que nadie se entere.
+
+```powershell
+.\respaldar.cmd                              # a ..\AWEBO_backups, conserva 7
+.\respaldar.cmd -Destino D:\copias -Conservar 30
+.\respaldar.cmd -SinVerificar                # solo el volcado
+```
+
+**Se invocan por el `.cmd`, no por el `.ps1`.** Windows bloquea por defecto la
+ejecución de scripts de PowerShell sin firmar, y devuelve
+«running scripts is disabled on this system». Los `.cmd` no pasan por esa
+comprobación y se limitan a llamar al `.ps1` con la directiva saltada **solo
+para ese proceso**, sin cambiar ningún ajuste del sistema.
+
+Si prefieres habilitarlos de forma permanente para tu usuario:
+
+```powershell
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+```
+
+En un equipo gestionado por directiva de grupo puede que ni el `.cmd` ni ese
+comando funcionen. Para salir de dudas, `Get-ExecutionPolicy -List`: si
+`MachinePolicy` o `UserPolicy` tienen algo distinto de `Undefined`, está
+impuesto desde fuera.
+
+**Lánzalo antes de `flask db upgrade`.** Una migración de datos es lo único que
+puede estropear la base de datos de forma irreversible; el resto de operaciones
+son recuperables.
+
+### Dónde se guardan, y dónde no
+
+Los volcados van a una carpeta **fuera del árbol del repositorio**
+(`..\AWEBO_backups` por defecto). Contienen correos, nombres, centros
+educativos y hashes de contraseña.
+
+**No subas nunca un volcado a GitHub**, tampoco a un repositorio privado. Git
+conserva todas las versiones para siempre y los ficheros binarios no comprimen
+bien entre revisiones, así que el repositorio crecería sin límite; GitHub
+rechaza ficheros de más de 100 MB; y un repositorio privado sigue siendo un
+tercero al que estarías confiando datos personales. El `.gitignore` cubre
+`*.dump`, `*.sql.gz` y `backups/` por si alguien apunta el destino dentro del
+proyecto, pero la protección de verdad es que la carpeta esté fuera.
+
+### Restaurar una copia
+
+```powershell
+# 1. Parar lo que escribe en la base de datos
+docker compose stop api worker beat
+
+# 2. Copiar el volcado al contenedor
+docker compose cp ..\AWEBO_backups\awebo_2026-08-08_120000.dump postgres:/tmp/copia.dump
+
+# 3. Recrear la base de datos vacía. OJO: esto BORRA la actual.
+docker compose exec -T postgres psql -U awebo_user -d postgres -c "DROP DATABASE awebo"
+docker compose exec -T postgres psql -U awebo_user -d postgres -c "CREATE DATABASE awebo"
+
+# 4. Restaurar
+docker compose exec -T postgres pg_restore -U awebo_user -d awebo /tmp/copia.dump
+
+# 5. Comprobar que hay algo antes de dar por buena la restauración
+docker compose exec -T postgres psql -U awebo_user -d awebo -c "SELECT count(*) FROM usuario"
+
+# 6. Volver a arrancar
+docker compose start api worker beat
+```
+
+`pg_restore` suele devolver código distinto de cero por avisos inofensivos
+—dueños que no existen, extensiones ya creadas—, así que **su código de salida
+no es el veredicto**. El veredicto es el paso 5.
+
+Si vas a restaurar sobre una base de datos que aún tiene algo aprovechable,
+haz antes una copia de lo que hay: `.\respaldar.ps1 -SinVerificar`.
 
 ## Seguridad y privacidad
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-08-08 12:46+0200\n"
+"POT-Creation-Date: 2026-08-09 15:05+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,12 +18,12 @@ msgstr ""
 "Generated-By: Babel 2.18.0\n"
 
 #: app/services/exportacion_service.py:48
-#: app/templates/situaciones/detalle.html:289
+#: app/templates/situaciones/detalle.html:290
 msgid "Descripción de la situación"
 msgstr ""
 
 #: app/services/exportacion_service.py:49
-#: app/templates/situaciones/detalle.html:290
+#: app/templates/situaciones/detalle.html:291
 msgid "Objetivos didácticos"
 msgstr ""
 
@@ -32,7 +32,7 @@ msgid "Conexión curricular"
 msgstr ""
 
 #: app/services/exportacion_service.py:51
-#: app/templates/situaciones/detalle.html:292
+#: app/templates/situaciones/detalle.html:293
 msgid "Secuencia de sesiones"
 msgstr ""
 
@@ -49,9 +49,7 @@ msgid "Declaración de accesibilidad"
 msgstr ""
 
 #: app/templates/accesibilidad.html:13
-msgid ""
-"La aplicación se ha diseñado conforme a las <abbr title=\"Web Content "
-"Accessibility Guidelines\">WCAG</abbr> 2.1 nivel AA."
+msgid "La aplicación se ha diseñado conforme a las <abbr title=\"Web Content Accessibility Guidelines\">WCAG</abbr> 2.1 nivel AA."
 msgstr ""
 
 #: app/templates/accesibilidad.html:18
@@ -59,9 +57,7 @@ msgid "Características incluidas"
 msgstr ""
 
 #: app/templates/accesibilidad.html:20
-msgid ""
-"Enlace <strong>«Pasar al contenido principal»</strong> al inicio de cada "
-"página."
+msgid "Enlace <strong>«Pasar al contenido principal»</strong> al inicio de cada página."
 msgstr ""
 
 #: app/templates/accesibilidad.html:21
@@ -69,30 +65,19 @@ msgid "Foco visible reforzado (no depende solo del color)."
 msgstr ""
 
 #: app/templates/accesibilidad.html:22
-msgid ""
-"Navegación completa por teclado: <kbd>Tab</kbd>/<kbd>Mayús+Tab</kbd> para"
-" moverse, <kbd>Intro</kbd> para activar, <kbd>Esc</kbd> para cerrar "
-"diálogos."
+msgid "Navegación completa por teclado: <kbd>Tab</kbd>/<kbd>Mayús+Tab</kbd> para moverse, <kbd>Intro</kbd> para activar, <kbd>Esc</kbd> para cerrar diálogos."
 msgstr ""
 
 #: app/templates/accesibilidad.html:23
-msgid ""
-"Etiquetas y encabezados semánticos (<code>&lt;header&gt;</code>, "
-"<code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, "
-"<code>&lt;footer&gt;</code>, <code>&lt;h1&gt;–&lt;h4&gt;</code>)."
+msgid "Etiquetas y encabezados semánticos (<code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;h1&gt;–&lt;h4&gt;</code>)."
 msgstr ""
 
 #: app/templates/accesibilidad.html:24
-msgid ""
-"Imágenes con texto alternativo y SVGs decorativos marcados con <code"
-">aria-hidden</code>."
+msgid "Imágenes con texto alternativo y SVGs decorativos marcados con <code>aria-hidden</code>."
 msgstr ""
 
 #: app/templates/accesibilidad.html:25
-msgid ""
-"Formularios con <code>label</code> asociado, mensajes de error anunciados"
-" a lectores de pantalla y campos con <code>aria-invalid</code> cuando "
-"procede."
+msgid "Formularios con <code>label</code> asociado, mensajes de error anunciados a lectores de pantalla y campos con <code>aria-invalid</code> cuando procede."
 msgstr ""
 
 #: app/templates/accesibilidad.html:26
@@ -100,22 +85,16 @@ msgid "Contraste de texto mínimo 4.5:1 (3:1 en texto grande)."
 msgstr ""
 
 #: app/templates/accesibilidad.html:27
-msgid ""
-"Información que no se transmite solo mediante color (iconos lingüísticos,"
-" texto y formas refuerzan los estados)."
+msgid "Información que no se transmite solo mediante color (iconos lingüísticos, texto y formas refuerzan los estados)."
 msgstr ""
 
 #: app/templates/accesibilidad.html:34
 #, python-format
-msgid ""
-"Diseño adaptable a móvil, tableta y escritorio; el contenido no se pierde"
-" al ampliar hasta el 200%%."
+msgid "Diseño adaptable a móvil, tableta y escritorio; el contenido no se pierde al ampliar hasta el 200%%."
 msgstr ""
 
 #: app/templates/accesibilidad.html:35
-msgid ""
-"Animaciones reducidas si el sistema indica <code>prefers-reduced-motion: "
-"reduce</code>."
+msgid "Animaciones reducidas si el sistema indica <code>prefers-reduced-motion: reduce</code>."
 msgstr ""
 
 #: app/templates/accesibilidad.html:36
@@ -123,9 +102,7 @@ msgid "<a href=\"/mapa-web\">Mapa web</a> para navegación alternativa."
 msgstr ""
 
 #: app/templates/accesibilidad.html:37
-msgid ""
-"Lectura en voz alta de cada sección de una situación, con la voz que el "
-"sistema tenga instalada. No requiere conexión ni servicio externo."
+msgid "Lectura en voz alta de cada sección de una situación, con la voz que el sistema tenga instalada. No requiere conexión ni servicio externo."
 msgstr ""
 
 #: app/templates/accesibilidad.html:42
@@ -133,10 +110,7 @@ msgid "Limitaciones conocidas"
 msgstr ""
 
 #: app/templates/accesibilidad.html:44
-msgid ""
-"Esta aplicación es un Trabajo de Fin de Grado en evaluación continua. Si "
-"detectas alguna barrera de accesibilidad, puedes comunicarla en la "
-"sección de <a href=\"/ayuda\">Ayuda</a>."
+msgid "Esta aplicación es un Trabajo de Fin de Grado en evaluación continua. Si detectas alguna barrera de accesibilidad, puedes comunicarla en la sección de <a href=\"/ayuda\">Ayuda</a>."
 msgstr ""
 
 #: app/templates/ayuda.html:7 app/templates/errores/404.html:15
@@ -145,9 +119,7 @@ msgid "Centro de ayuda"
 msgstr ""
 
 #: app/templates/ayuda.html:9
-msgid ""
-"Guías rápidas para crear, editar y exportar Situaciones de Aprendizaje "
-"LOMLOE con asistencia de IA."
+msgid "Guías rápidas para crear, editar y exportar Situaciones de Aprendizaje LOMLOE con asistencia de IA."
 msgstr ""
 
 #: app/templates/ayuda.html:13
@@ -207,28 +179,19 @@ msgid "Problemas frecuentes"
 msgstr ""
 
 #: app/templates/ayuda.html:34
-msgid ""
-"Si aún no tienes cuenta, <a href=\"/register\">regístrate como "
-"docente</a>."
+msgid "Si aún no tienes cuenta, <a href=\"/register\">regístrate como docente</a>."
 msgstr ""
 
 #: app/templates/ayuda.html:35
-msgid ""
-"Accede con tu correo y contraseña en <a href=\"/login\">Iniciar "
-"sesión</a>."
+msgid "Accede con tu correo y contraseña en <a href=\"/login\">Iniciar sesión</a>."
 msgstr ""
 
 #: app/templates/ayuda.html:36
-msgid ""
-"Desde tu <a href=\"/perfil\">perfil</a> puedes consultar y modificar tus "
-"datos."
+msgid "Desde tu <a href=\"/perfil\">perfil</a> puedes consultar y modificar tus datos."
 msgstr ""
 
 #: app/templates/ayuda.html:43
-msgid ""
-"Pulsa <strong>Nueva situación</strong> desde la lista o desde la "
-"cabecera. Indica al menos materia, curso, número de sesiones y duración. "
-"Los demás campos son opcionales y se utilizan para guiar a la IA."
+msgid "Pulsa <strong>Nueva situación</strong> desde la lista o desde la cabecera. Indica al menos materia, curso, número de sesiones y duración. Los demás campos son opcionales y se utilizan para guiar a la IA."
 msgstr ""
 
 #: app/templates/ayuda.html:46
@@ -236,12 +199,7 @@ msgid "Curso y materia se acotan entre sí"
 msgstr ""
 
 #: app/templates/ayuda.html:48
-msgid ""
-"Al elegir un curso, el desplegable de materia solo ofrece las que se "
-"imparten en él, y al revés. No es una limitación de la aplicación sino "
-"del currículo: Latín, por ejemplo, solo existe en 4.º. Si eliges una "
-"combinación sin currículo, la situación se generaría sin criterios a los "
-"que anclarse."
+msgid "Al elegir un curso, el desplegable de materia solo ofrece las que se imparten en él, y al revés. No es una limitación de la aplicación sino del currículo: Latín, por ejemplo, solo existe en 4.º. Si eliges una combinación sin currículo, la situación se generaría sin criterios a los que anclarse."
 msgstr ""
 
 #: app/templates/ayuda.html:51 app/templates/situaciones/nueva.html:17
@@ -249,13 +207,7 @@ msgid "¿Aún no sabes sobre qué trabajar?"
 msgstr ""
 
 #: app/templates/ayuda.html:53
-msgid ""
-"El botón <strong>Proponer temáticas</strong> pide a la IA varias ideas de"
-" situación para la materia y el curso que hayas elegido. Puedes añadir "
-"una nota de contexto —el barrio del centro, un proyecto en marcha, una "
-"efeméride— para que las propuestas se ajusten. Al elegir una, sus datos "
-"se vuelcan al formulario y puedes seguir editándolos: no se envía nada "
-"todavía."
+msgid "El botón <strong>Proponer temáticas</strong> pide a la IA varias ideas de situación para la materia y el curso que hayas elegido. Puedes añadir una nota de contexto —el barrio del centro, un proyecto en marcha, una efeméride— para que las propuestas se ajusten. Al elegir una, sus datos se vuelcan al formulario y puedes seguir editándolos: no se envía nada todavía."
 msgstr ""
 
 #: app/templates/ayuda.html:56
@@ -263,26 +215,15 @@ msgid "Idioma de la situación"
 msgstr ""
 
 #: app/templates/ayuda.html:58
-msgid ""
-"El campo <strong>Idioma</strong> determina en qué lengua se redacta el "
-"documento, y es independiente del idioma en el que veas la aplicación. "
-"Puedes tener la interfaz en castellano y crear la situación directamente "
-"en catalán, gallego, euskera, inglés, francés o árabe."
+msgid "El campo <strong>Idioma</strong> determina en qué lengua se redacta el documento, y es independiente del idioma en el que veas la aplicación. Puedes tener la interfaz en castellano y crear la situación directamente en catalán, gallego, euskera, inglés, francés o árabe."
 msgstr ""
 
 #: app/templates/ayuda.html:65
-msgid ""
-"Las competencias específicas, los criterios de evaluación y los saberes "
-"básicos no los inventa la IA: se extraen del texto oficial publicado en "
-"el BOE y se cargan en la aplicación. La fuente es la <strong>Orden "
-"EFP/754/2022</strong>, que desarrolla el Real Decreto 217/2022 de "
-"enseñanzas mínimas de la ESO."
+msgid "Las competencias específicas, los criterios de evaluación y los saberes básicos no los inventa la IA: se extraen del texto oficial publicado en el BOE y se cargan en la aplicación. La fuente es la <strong>Orden EFP/754/2022</strong>, que desarrolla el Real Decreto 217/2022 de enseñanzas mínimas de la ESO."
 msgstr ""
 
 #: app/templates/ayuda.html:68
-msgid ""
-"Están disponibles las materias de Educación Secundaria Obligatoria. "
-"Bachillerato y Formación Profesional todavía no."
+msgid "Están disponibles las materias de Educación Secundaria Obligatoria. Bachillerato y Formación Profesional todavía no."
 msgstr ""
 
 #: app/templates/ayuda.html:71
@@ -290,31 +231,19 @@ msgid "Matemáticas A y Matemáticas B"
 msgstr ""
 
 #: app/templates/ayuda.html:73
-msgid ""
-"En 4.º, Matemáticas se desdobla en dos opciones. No son una rama de "
-"ciencias y otra de letras, ni una continuación de la otra: la norma las "
-"distingue por enfoque."
+msgid "En 4.º, Matemáticas se desdobla en dos opciones. No son una rama de ciencias y otra de letras, ni una continuación de la otra: la norma las distingue por enfoque."
 msgstr ""
 
 #: app/templates/ayuda.html:76
-msgid ""
-"<strong>Matemáticas A</strong> se desarrolla sobre todo mediante la "
-"resolución de problemas, la investigación y el análisis matemático de "
-"situaciones de la vida cotidiana."
+msgid "<strong>Matemáticas A</strong> se desarrolla sobre todo mediante la resolución de problemas, la investigación y el análisis matemático de situaciones de la vida cotidiana."
 msgstr ""
 
 #: app/templates/ayuda.html:77
-msgid ""
-"<strong>Matemáticas B</strong> profundiza además en los procedimientos "
-"algebraicos, geométricos, analíticos y estadísticos, en contextos "
-"matemáticos, científicos y sociales."
+msgid "<strong>Matemáticas B</strong> profundiza además en los procedimientos algebraicos, geométricos, analíticos y estadísticos, en contextos matemáticos, científicos y sociales."
 msgstr ""
 
 #: app/templates/ayuda.html:80
-msgid ""
-"El real decreto no vincula ninguna de las dos a una modalidad concreta de"
-" Bachillerato. En 1.º a 3.º la materia es simplemente "
-"<strong>Matemáticas</strong>, sin letra."
+msgid "El real decreto no vincula ninguna de las dos a una modalidad concreta de Bachillerato. En 1.º a 3.º la materia es simplemente <strong>Matemáticas</strong>, sin letra."
 msgstr ""
 
 #: app/templates/ayuda.html:83
@@ -322,12 +251,7 @@ msgid "Tecnología y Tecnología y Digitalización"
 msgstr ""
 
 #: app/templates/ayuda.html:85
-msgid ""
-"Son dos materias distintas, no dos nombres de la misma. "
-"<strong>Tecnología y Digitalización</strong> es la de 2.º y 3.º; "
-"<strong>Tecnología</strong> es una materia de opción de 4.º. Tienen "
-"competencias específicas diferentes, así que conviene no confundirlas al "
-"crear una situación."
+msgid "Son dos materias distintas, no dos nombres de la misma. <strong>Tecnología y Digitalización</strong> es la de 2.º y 3.º; <strong>Tecnología</strong> es una materia de opción de 4.º. Tienen competencias específicas diferentes, así que conviene no confundirlas al crear una situación."
 msgstr ""
 
 #: app/templates/ayuda.html:88
@@ -335,26 +259,15 @@ msgid "Materias que no encontrarás"
 msgstr ""
 
 #: app/templates/ayuda.html:90
-msgid ""
-"<strong>Segunda Lengua Extranjera</strong> no aparece en el desplegable. "
-"No es un olvido: el BOE no le publica currículo propio, sino que remite "
-"al de la primera lengua extranjera. Mientras AWEBO no sepa reutilizarlo, "
-"ofrecerla daría una materia sin ningún criterio que seleccionar."
+msgid "<strong>Segunda Lengua Extranjera</strong> no aparece en el desplegable. No es un olvido: el BOE no le publica currículo propio, sino que remite al de la primera lengua extranjera. Mientras AWEBO no sepa reutilizarlo, ofrecerla daría una materia sin ningún criterio que seleccionar."
 msgstr ""
 
 #: app/templates/ayuda.html:97
-msgid ""
-"Al crear una SA puedes marcar <strong>Generar con IA</strong> para que se"
-" completen automáticamente las seis secciones LOMLOE: justificación, "
-"objetivos, currículo, secuencia didáctica, evaluación y atención a la "
-"diversidad. La generación tarda entre 30 segundos y 2 minutos según el "
-"proveedor."
+msgid "Al crear una SA puedes marcar <strong>Generar con IA</strong> para que se completen automáticamente las seis secciones LOMLOE: justificación, objetivos, currículo, secuencia didáctica, evaluación y atención a la diversidad. La generación tarda entre 30 segundos y 2 minutos según el proveedor."
 msgstr ""
 
 #: app/templates/ayuda.html:100
-msgid ""
-"Puedes <strong>regenerar una sola sección</strong> desde el detalle si "
-"una parte no te convence; las demás se conservan."
+msgid "Puedes <strong>regenerar una sola sección</strong> desde el detalle si una parte no te convence; las demás se conservan."
 msgstr ""
 
 #: app/templates/ayuda.html:103
@@ -362,19 +275,11 @@ msgid "Elegir quién redacta"
 msgstr ""
 
 #: app/templates/ayuda.html:105
-msgid ""
-"En <a href=\"/perfil\">Mi perfil</a> puedes escoger el "
-"<strong>proveedor</strong> y el <strong>modelo</strong> de IA que se "
-"usarán en tus situaciones. Si no eliges nada se usa el del sistema. Los "
-"modelos disponibles cambian según el proveedor, y la lista se actualiza "
-"sola al cambiarlo."
+msgid "En <a href=\"/perfil\">Mi perfil</a> puedes escoger el <strong>proveedor</strong> y el <strong>modelo</strong> de IA que se usarán en tus situaciones. Si no eliges nada se usa el del sistema. Los modelos disponibles cambian según el proveedor, y la lista se actualiza sola al cambiarlo."
 msgstr ""
 
 #: app/templates/ayuda.html:112
-msgid ""
-"Cada sección del detalle tiene sus propias operaciones. No todas las "
-"secciones admiten todas: las que no tienen sentido para una sección "
-"concreta no se ofrecen."
+msgid "Cada sección del detalle tiene sus propias operaciones. No todas las secciones admiten todas: las que no tienen sentido para una sección concreta no se ofrecen."
 msgstr ""
 
 #: app/templates/ayuda.html:115
@@ -386,42 +291,27 @@ msgid "<strong>Desarrollar</strong> — amplía la sección con más detalle."
 msgstr ""
 
 #: app/templates/ayuda.html:117
-msgid ""
-"<strong>Traducir</strong> — pasa la sección al idioma de la situación. El"
-" destino no se elige por operación, precisamente para que un documento no"
-" acabe con unas secciones en un idioma y otras en otro."
+msgid "<strong>Traducir</strong> — pasa la sección al idioma de la situación. El destino no se elige por operación, precisamente para que un documento no acabe con unas secciones en un idioma y otras en otro."
 msgstr ""
 
 #: app/templates/ayuda.html:118
-msgid ""
-"<strong>Proponer alternativa</strong> — redacta una segunda versión sin "
-"borrar la que tenías."
+msgid "<strong>Proponer alternativa</strong> — redacta una segunda versión sin borrar la que tenías."
 msgstr ""
 
 #: app/templates/ayuda.html:121
-msgid ""
-"Con la alternativa verás las dos redacciones enfrentadas y tendrás que "
-"quedarte con una para continuar. La que descartes no se pierde: queda en "
-"el historial de versiones."
+msgid "Con la alternativa verás las dos redacciones enfrentadas y tendrás que quedarte con una para continuar. La que descartes no se pierde: queda en el historial de versiones."
 msgstr ""
 
 #: app/templates/ayuda.html:124
-msgid ""
-"Cualquiera de estas operaciones se puede revertir con "
-"<strong>Deshacer</strong>, que recupera el texto inmediatamente anterior."
+msgid "Cualquiera de estas operaciones se puede revertir con <strong>Deshacer</strong>, que recupera el texto inmediatamente anterior."
 msgstr ""
 
 #: app/templates/ayuda.html:131
-msgid ""
-"Los cambios al título y los campos básicos crean una <strong>nueva "
-"versión</strong> automáticamente. Desde el detalle puedes consultar el "
-"historial completo y volver a un estado anterior."
+msgid "Los cambios al título y los campos básicos crean una <strong>nueva versión</strong> automáticamente. Desde el detalle puedes consultar el historial completo y volver a un estado anterior."
 msgstr ""
 
 #: app/templates/ayuda.html:138
-msgid ""
-"A partir de una SA generada, puedes crear una <strong>adaptación</strong>"
-" para alumnado con necesidades específicas:"
+msgid "A partir de una SA generada, puedes crear una <strong>adaptación</strong> para alumnado con necesidades específicas:"
 msgstr ""
 
 #: app/templates/ayuda.html:141
@@ -437,33 +327,19 @@ msgid "La SA adaptada se genera completa y conserva un enlace a la SA de origen.
 msgstr ""
 
 #: app/templates/ayuda.html:152
-msgid ""
-"Cada sección del detalle tiene un botón <strong>Escuchar</strong> que la "
-"lee en voz alta. Se lee sección a sección, y no el documento entero, para"
-" que puedas repasar solo la parte que te interesa."
+msgid "Cada sección del detalle tiene un botón <strong>Escuchar</strong> que la lee en voz alta. Se lee sección a sección, y no el documento entero, para que puedas repasar solo la parte que te interesa."
 msgstr ""
 
 #: app/templates/ayuda.html:155
-msgid ""
-"La voz la pone tu propio ordenador, no la aplicación. Por eso el botón "
-"puede no aparecer: si tu sistema no tiene instalada ninguna voz para el "
-"idioma de la situación, se oculta y verás un aviso explicándolo. Instalar"
-" voces adicionales se hace desde la configuración del sistema operativo, "
-"no desde AWEBO."
+msgid "La voz la pone tu propio ordenador, no la aplicación. Por eso el botón puede no aparecer: si tu sistema no tiene instalada ninguna voz para el idioma de la situación, se oculta y verás un aviso explicándolo. Instalar voces adicionales se hace desde la configuración del sistema operativo, no desde AWEBO."
 msgstr ""
 
 #: app/templates/ayuda.html:162
-msgid ""
-"Desde el detalle de cualquier SA puedes descargar el documento en "
-"<strong>PDF</strong> (paginación cuidada, listo para imprimir) o en "
-"<strong>DOCX</strong> (editable en Word/LibreOffice)."
+msgid "Desde el detalle de cualquier SA puedes descargar el documento en <strong>PDF</strong> (paginación cuidada, listo para imprimir) o en <strong>DOCX</strong> (editable en Word/LibreOffice)."
 msgstr ""
 
 #: app/templates/ayuda.html:165
-msgid ""
-"Los rótulos del documento (los títulos de sección, los encabezados de "
-"tabla) salen en el idioma en el que tengas la interfaz. El contenido, en "
-"el idioma de la situación."
+msgid "Los rótulos del documento (los títulos de sección, los encabezados de tabla) salen en el idioma en el que tengas la interfaz. El contenido, en el idioma de la situación."
 msgstr ""
 
 #: app/templates/ayuda.html:171 app/templates/base.html:65
@@ -471,11 +347,7 @@ msgid "Tema visual"
 msgstr ""
 
 #: app/templates/ayuda.html:173
-msgid ""
-"En la cabecera puedes elegir entre <strong>Claro</strong>, "
-"<strong>Oscuro</strong> y <strong>Automático</strong>. Automático sigue "
-"la preferencia de tu sistema operativo y cambia solo si esta cambia. La "
-"elección se recuerda en el navegador."
+msgid "En la cabecera puedes elegir entre <strong>Claro</strong>, <strong>Oscuro</strong> y <strong>Automático</strong>. Automático sigue la preferencia de tu sistema operativo y cambia solo si esta cambia. La elección se recuerda en el navegador."
 msgstr ""
 
 #: app/templates/ayuda.html:175
@@ -483,23 +355,15 @@ msgid "Idioma de la interfaz"
 msgstr ""
 
 #: app/templates/ayuda.html:177
-msgid ""
-"El selector de idioma de la cabecera cambia la lengua de los menús, los "
-"botones y esta misma ayuda, y te deja en la página en la que estabas. Si "
-"has iniciado sesión, la elección se guarda en tu perfil."
+msgid "El selector de idioma de la cabecera cambia la lengua de los menús, los botones y esta misma ayuda, y te deja en la página en la que estabas. Si has iniciado sesión, la elección se guarda en tu perfil."
 msgstr ""
 
 #: app/templates/ayuda.html:180
-msgid ""
-"No confundas este idioma con el de la situación: son independientes. "
-"Cambiar la interfaz a gallego no traduce las situaciones que ya tengas "
-"escritas en castellano."
+msgid "No confundas este idioma con el de la situación: son independientes. Cambiar la interfaz a gallego no traduce las situaciones que ya tengas escritas en castellano."
 msgstr ""
 
 #: app/templates/ayuda.html:187
-msgid ""
-"En <a href=\"/perfil\">Mi perfil</a> puedes actualizar nombre, centro "
-"educativo, contraseña, idioma y proveedor de IA."
+msgid "En <a href=\"/perfil\">Mi perfil</a> puedes actualizar nombre, centro educativo, contraseña, idioma y proveedor de IA."
 msgstr ""
 
 #: app/templates/ayuda.html:189
@@ -507,12 +371,7 @@ msgid "Si olvidas la contraseña"
 msgstr ""
 
 #: app/templates/ayuda.html:191
-msgid ""
-"Entra en <a href=\"/restablecer-contrasena\">¿Olvidaste tu "
-"contraseña?</a>, indica tu correo y escribe una contraseña nueva. El "
-"cambio es inmediato: en esta versión no se envía ningún correo de "
-"confirmación, porque AWEBO todavía no tiene servidor de correo. La "
-"verificación por correo está prevista antes de cualquier despliegue real."
+msgid "Entra en <a href=\"/restablecer-contrasena\">¿Olvidaste tu contraseña?</a>, indica tu correo y escribe una contraseña nueva. El cambio es inmediato: en esta versión no se envía ningún correo de confirmación, porque AWEBO todavía no tiene servidor de correo. La verificación por correo está prevista antes de cualquier despliegue real."
 msgstr ""
 
 #: app/templates/ayuda.html:193
@@ -520,13 +379,7 @@ msgid "Si tu cuenta se elimina"
 msgstr ""
 
 #: app/templates/ayuda.html:195
-msgid ""
-"Las cuentas las elimina un administrador; no hay opción de darse de baja "
-"desde el perfil. Al eliminarla, ni la cuenta ni sus situaciones se borran"
-" de inmediato: quedan retenidas <strong>90 días</strong>. Durante ese "
-"plazo, si vuelves a registrarte con el mismo correo puedes solicitar "
-"recuperar tu contenido, y un administrador tendrá que aprobarlo. Pasado "
-"el plazo, el borrado es definitivo."
+msgid "Las cuentas las elimina un administrador; no hay opción de darse de baja desde el perfil. Al eliminarla, ni la cuenta ni sus situaciones se borran de inmediato: quedan retenidas <strong>90 días</strong>. Durante ese plazo, si vuelves a registrarte con el mismo correo puedes solicitar recuperar tu contenido, y un administrador tendrá que aprobarlo. Pasado el plazo, el borrado es definitivo."
 msgstr ""
 
 #: app/templates/ayuda.html:202
@@ -534,10 +387,7 @@ msgid "La generación de IA falla o tarda mucho"
 msgstr ""
 
 #: app/templates/ayuda.html:204
-msgid ""
-"Espera 1–2 minutos. Si tras ese tiempo la SA queda en estado "
-"<em>error</em>, vuelve al detalle y pulsa <strong>Reintentar</strong> o "
-"<strong>Regenerar sección</strong>."
+msgid "Espera 1–2 minutos. Si tras ese tiempo la SA queda en estado <em>error</em>, vuelve al detalle y pulsa <strong>Reintentar</strong> o <strong>Regenerar sección</strong>."
 msgstr ""
 
 #: app/templates/ayuda.html:208
@@ -545,11 +395,7 @@ msgid "No encuentro una materia en el desplegable"
 msgstr ""
 
 #: app/templates/ayuda.html:210
-msgid ""
-"Comprueba primero el curso: cada materia solo aparece en los cursos en "
-"los que se imparte. Si buscas Segunda Lengua Extranjera, no está "
-"disponible todavía; y si buscas Tecnología en 2.º o 3.º, ahí se llama "
-"Tecnología y Digitalización."
+msgid "Comprueba primero el curso: cada materia solo aparece en los cursos en los que se imparte. Si buscas Segunda Lengua Extranjera, no está disponible todavía; y si buscas Tecnología en 2.º o 3.º, ahí se llama Tecnología y Digitalización."
 msgstr ""
 
 #: app/templates/ayuda.html:214
@@ -557,12 +403,7 @@ msgid "Una situación antigua avisa de que su combinación no es válida"
 msgstr ""
 
 #: app/templates/ayuda.html:216
-msgid ""
-"Significa que la materia y el curso que tiene guardados no se "
-"corresponden con ningún currículo cargado. Puede pasar con situaciones "
-"creadas antes de una ampliación del catálogo. Corrige los dos campos "
-"desde el detalle y podrás volver a generarla; el contenido que ya tuviera"
-" no se pierde."
+msgid "Significa que la materia y el curso que tiene guardados no se corresponden con ningún currículo cargado. Puede pasar con situaciones creadas antes de una ampliación del catálogo. Corrige los dos campos desde el detalle y podrás volver a generarla; el contenido que ya tuviera no se pierde."
 msgstr ""
 
 #: app/templates/ayuda.html:220
@@ -570,10 +411,7 @@ msgid "No veo el botón de escuchar"
 msgstr ""
 
 #: app/templates/ayuda.html:222
-msgid ""
-"Tu sistema no tiene ninguna voz instalada para el idioma de esa "
-"situación. Puedes añadir voces desde la configuración de tu sistema "
-"operativo."
+msgid "Tu sistema no tiene ninguna voz instalada para el idioma de esa situación. Puedes añadir voces desde la configuración de tu sistema operativo."
 msgstr ""
 
 #: app/templates/ayuda.html:226
@@ -581,10 +419,7 @@ msgid "El PDF tiene saltos de página feos"
 msgstr ""
 
 #: app/templates/ayuda.html:228
-msgid ""
-"Las plantillas de exportación intentan evitar viudas y huérfanos, pero si"
-" te ocurre, edita la sección concreta para reducir longitud y vuelve a "
-"exportar."
+msgid "Las plantillas de exportación intentan evitar viudas y huérfanos, pero si te ocurre, edita la sección concreta para reducir longitud y vuelve a exportar."
 msgstr ""
 
 #: app/templates/ayuda.html:232
@@ -592,9 +427,7 @@ msgid "No recuerdo mi contraseña"
 msgstr ""
 
 #: app/templates/ayuda.html:234
-msgid ""
-"Usa <a href=\"/restablecer-contrasena\">¿Olvidaste tu contraseña?</a> "
-"para establecer una nueva. No tendrás que esperar ningún correo."
+msgid "Usa <a href=\"/restablecer-contrasena\">¿Olvidaste tu contraseña?</a> para establecer una nueva. No tendrás que esperar ningún correo."
 msgstr ""
 
 #: app/templates/base.html:9
@@ -684,15 +517,11 @@ msgid "Aplicación Web para Docentes"
 msgstr ""
 
 #: app/templates/base.html:122
-msgid ""
-"Generación asistida de Situaciones de Aprendizaje conforme al Real "
-"Decreto 217/2022 (LOMLOE)."
+msgid "Generación asistida de Situaciones de Aprendizaje conforme al Real Decreto 217/2022 (LOMLOE)."
 msgstr ""
 
 #: app/templates/base.html:125
-msgid ""
-"¿Te ha gustado? <a href=\"https://paypal.me/srcantero\" target=\"_blank\""
-" rel=\"noopener\">Ayúdame aquí</a>"
+msgid "¿Te ha gustado? <a href=\"https://paypal.me/srcantero\" target=\"_blank\" rel=\"noopener\">Ayúdame aquí</a>"
 msgstr ""
 
 #: app/templates/base.html:129
@@ -728,10 +557,7 @@ msgid "Situaciones de Aprendizaje, generadas con IA"
 msgstr ""
 
 #: app/templates/index.html:10
-msgid ""
-"Plataforma para docentes que automatiza la creación de Situaciones de "
-"Aprendizaje conforme al currículo LOMLOE: justificación, objetivos, "
-"competencias, secuencia didáctica, evaluación y atención a la diversidad."
+msgid "Plataforma para docentes que automatiza la creación de Situaciones de Aprendizaje conforme al currículo LOMLOE: justificación, objetivos, competencias, secuencia didáctica, evaluación y atención a la diversidad."
 msgstr ""
 
 #: app/templates/index.html:16
@@ -739,9 +565,7 @@ msgid "Empieza ahora"
 msgstr ""
 
 #: app/templates/index.html:17
-msgid ""
-"Crea una cuenta o accede con la tuya para gestionar tus situaciones de "
-"aprendizaje."
+msgid "Crea una cuenta o accede con la tuya para gestionar tus situaciones de aprendizaje."
 msgstr ""
 
 #: app/templates/admin/panel.html:75 app/templates/index.html:19
@@ -818,9 +642,7 @@ msgid "Describe tu contexto"
 msgstr ""
 
 #: app/templates/index.html:86
-msgid ""
-"Indica materia, curso, número de sesiones, perfil del alumnado y "
-"materiales disponibles."
+msgid "Indica materia, curso, número de sesiones, perfil del alumnado y materiales disponibles."
 msgstr ""
 
 #: app/templates/index.html:90
@@ -828,9 +650,7 @@ msgid "Genera con IA"
 msgstr ""
 
 #: app/templates/index.html:91
-msgid ""
-"El sistema redacta las seis secciones LOMLOE en menos de dos minutos, "
-"citando criterios y saberes del currículo oficial."
+msgid "El sistema redacta las seis secciones LOMLOE en menos de dos minutos, citando criterios y saberes del currículo oficial."
 msgstr ""
 
 #: app/templates/index.html:95
@@ -838,9 +658,7 @@ msgid "Edita y exporta"
 msgstr ""
 
 #: app/templates/index.html:96
-msgid ""
-"Refina cualquier sección, crea adaptaciones (ACNS / ACS) y descarga la SA"
-" en PDF o DOCX lista para entregar."
+msgid "Refina cualquier sección, crea adaptaciones (ACNS / ACS) y descarga la SA en PDF o DOCX lista para entregar."
 msgstr ""
 
 #: app/templates/index.html:102
@@ -848,10 +666,7 @@ msgid "¿Necesitas ayuda?"
 msgstr ""
 
 #: app/templates/index.html:104
-msgid ""
-"Consulta el <a href=\"/ayuda\">centro de ayuda</a> para guías rápidas o "
-"explora el <a href=\"/mapa-web\">mapa web</a> para ver todas las "
-"secciones disponibles."
+msgid "Consulta el <a href=\"/ayuda\">centro de ayuda</a> para guías rápidas o explora el <a href=\"/mapa-web\">mapa web</a> para ver todas las secciones disponibles."
 msgstr ""
 
 #: app/templates/index.html:124
@@ -886,14 +701,14 @@ msgstr ""
 
 #: app/templates/admin/panel.html:120 app/templates/admin/panel.html:308
 #: app/templates/index.html:164 app/templates/situaciones/detalle.html:34
-#: app/templates/situaciones/detalle.html:246
+#: app/templates/situaciones/detalle.html:247
 #: app/templates/situaciones/listar.html:34
 #: app/templates/situaciones/listar.html:89
 msgid "Borrador"
 msgstr ""
 
 #: app/templates/admin/panel.html:121 app/templates/admin/panel.html:309
-#: app/templates/index.html:165 app/templates/situaciones/detalle.html:247
+#: app/templates/index.html:165 app/templates/situaciones/detalle.html:248
 #: app/templates/situaciones/listar.html:35
 #: app/templates/situaciones/listar.html:90
 msgid "Generando…"
@@ -901,7 +716,7 @@ msgstr ""
 
 #: app/templates/admin/panel.html:122 app/templates/admin/panel.html:310
 #: app/templates/index.html:166 app/templates/situaciones/detalle.html:35
-#: app/templates/situaciones/detalle.html:248
+#: app/templates/situaciones/detalle.html:249
 #: app/templates/situaciones/listar.html:36
 #: app/templates/situaciones/listar.html:91
 msgid "Generada"
@@ -914,32 +729,30 @@ msgstr ""
 
 #: app/templates/admin/panel.html:124 app/templates/admin/panel.html:312
 #: app/templates/index.html:168 app/templates/situaciones/detalle.html:36
-#: app/templates/situaciones/detalle.html:249
+#: app/templates/situaciones/detalle.html:250
 #: app/templates/situaciones/listar.html:38
 #: app/templates/situaciones/listar.html:93
 msgid "Finalizada"
 msgstr ""
 
 #: app/templates/login.html:7
-msgid ""
-"Accede a tu cuenta de docente para gestionar tus situaciones de "
-"aprendizaje."
+msgid "Accede a tu cuenta de docente para gestionar tus situaciones de aprendizaje."
 msgstr ""
 
 #: app/templates/login.html:10 app/templates/register.html:12
-#: app/templates/restablecer_contrasena.html:12
+#: app/templates/restablecer_contrasena.html:55
 #: app/templates/situaciones/nueva.html:45
 msgid "Los campos marcados con"
 msgstr ""
 
 #: app/templates/login.html:11 app/templates/register.html:13
-#: app/templates/restablecer_contrasena.html:13
+#: app/templates/restablecer_contrasena.html:56
 #: app/templates/situaciones/nueva.html:46
 msgid "son obligatorios."
 msgstr ""
 
 #: app/templates/admin/panel.html:41 app/templates/login.html:15
-#: app/templates/register.html:27 app/templates/restablecer_contrasena.html:17
+#: app/templates/register.html:27 app/templates/restablecer_contrasena.html:31
 msgid "Correo electrónico"
 msgstr ""
 
@@ -947,9 +760,9 @@ msgstr ""
 #: app/templates/perfil.html:96 app/templates/perfil.html:104
 #: app/templates/perfil.html:115 app/templates/register.html:19
 #: app/templates/register.html:29 app/templates/register.html:38
-#: app/templates/restablecer_contrasena.html:19
-#: app/templates/restablecer_contrasena.html:28
-#: app/templates/restablecer_contrasena.html:40
+#: app/templates/restablecer_contrasena.html:33
+#: app/templates/restablecer_contrasena.html:62
+#: app/templates/restablecer_contrasena.html:74
 #: app/templates/situaciones/nueva.html:52
 #: app/templates/situaciones/nueva.html:63
 #: app/templates/situaciones/nueva.html:71
@@ -973,10 +786,15 @@ msgstr ""
 msgid "¿Olvidaste tu contraseña?"
 msgstr ""
 
+#: app/templates/login.html:68 app/templates/perfil.html:135
+#: app/templates/register.html:105 app/templates/restablecer_contrasena.html:99
+#: app/templates/situaciones/detalle.html:232
+#: app/templates/situaciones/nueva.html:156
+msgid "Error desconocido"
+msgstr ""
+
 #: app/templates/mapa_web.html:9
-msgid ""
-"Índice navegable de todas las páginas y secciones públicas de la "
-"aplicación."
+msgid "Índice navegable de todas las páginas y secciones públicas de la aplicación."
 msgstr ""
 
 #: app/templates/mapa_web.html:14
@@ -991,8 +809,7 @@ msgstr ""
 msgid "Crear cuenta de docente"
 msgstr ""
 
-#: app/templates/mapa_web.html:20 app/templates/restablecer_contrasena.html:6
-#: app/templates/restablecer_contrasena.html:49
+#: app/templates/mapa_web.html:20 app/templates/restablecer_contrasena.html:18
 msgid "Restablecer contraseña"
 msgstr ""
 
@@ -1075,9 +892,7 @@ msgid "Generación con IA"
 msgstr ""
 
 #: app/templates/perfil.html:55
-msgid ""
-"Elige qué modelo redacta tus situaciones de aprendizaje. Si no eliges "
-"nada se usa el del sistema."
+msgid "Elige qué modelo redacta tus situaciones de aprendizaje. Si no eliges nada se usa el del sistema."
 msgstr ""
 
 #: app/templates/perfil.html:61
@@ -1101,9 +916,7 @@ msgid "Seguridad"
 msgstr ""
 
 #: app/templates/perfil.html:82
-msgid ""
-"Cambia tu contraseña periódicamente. La nueva debe cumplir los requisitos"
-" de seguridad."
+msgid "Cambia tu contraseña periódicamente. La nueva debe cumplir los requisitos de seguridad."
 msgstr ""
 
 #: app/templates/perfil.html:86
@@ -1114,20 +927,20 @@ msgstr ""
 msgid "Contraseña actual"
 msgstr ""
 
-#: app/templates/perfil.html:102 app/templates/restablecer_contrasena.html:26
+#: app/templates/perfil.html:102 app/templates/restablecer_contrasena.html:60
 msgid "Nueva contraseña"
 msgstr ""
 
 #: app/templates/admin/panel.html:54 app/templates/perfil.html:109
-#: app/templates/register.html:44 app/templates/restablecer_contrasena.html:33
+#: app/templates/register.html:44 app/templates/restablecer_contrasena.html:67
 msgid "Mínimo 8 caracteres, con al menos una letra y un dígito."
 msgstr ""
 
-#: app/templates/perfil.html:113 app/templates/restablecer_contrasena.html:38
+#: app/templates/perfil.html:113 app/templates/restablecer_contrasena.html:72
 msgid "Confirmar nueva contraseña"
 msgstr ""
 
-#: app/templates/perfil.html:121
+#: app/templates/perfil.html:121 app/templates/restablecer_contrasena.html:82
 msgid "Guardar nueva contraseña"
 msgstr ""
 
@@ -1136,38 +949,36 @@ msgstr ""
 msgid "Cancelar"
 msgstr ""
 
-#: app/templates/perfil.html:135
+#: app/templates/perfil.html:136
 msgid "Se usará el proveedor del sistema."
 msgstr ""
 
-#: app/templates/perfil.html:136
+#: app/templates/perfil.html:137
 msgid "Usar el del sistema"
 msgstr ""
 
-#: app/templates/perfil.html:137
+#: app/templates/perfil.html:138
 msgid "Preferencia guardada."
 msgstr ""
 
-#: app/templates/perfil.html:138
+#: app/templates/perfil.html:139
 msgid "No se ha podido guardar."
 msgstr ""
 
-#: app/templates/perfil.html:139
+#: app/templates/perfil.html:140
 msgid "Perfil actualizado correctamente."
 msgstr ""
 
-#: app/templates/perfil.html:140
+#: app/templates/perfil.html:141
 msgid "Las contraseñas nuevas no coinciden."
 msgstr ""
 
-#: app/templates/perfil.html:141
+#: app/templates/perfil.html:142
 msgid "Contraseña cambiada correctamente."
 msgstr ""
 
 #: app/templates/register.html:8
-msgid ""
-"Regístrate como <strong>docente</strong> para empezar a crear situaciones"
-" de aprendizaje LOMLOE con asistencia de IA."
+msgid "Regístrate como <strong>docente</strong> para empezar a crear situaciones de aprendizaje LOMLOE con asistencia de IA."
 msgstr ""
 
 #: app/templates/register.html:65
@@ -1182,26 +993,45 @@ msgstr ""
 msgid "Creando cuenta…"
 msgstr ""
 
-#: app/templates/restablecer_contrasena.html:8
-msgid ""
-"Introduce tu correo y la nueva contraseña. Por simplicidad de este "
-"prototipo no se requiere confirmación por correo electrónico."
+#: app/templates/restablecer_contrasena.html:25
+msgid "Escribe tu correo y te enviaremos un enlace para elegir una contraseña nueva."
 msgstr ""
 
-#: app/templates/restablecer_contrasena.html:45
-msgid "Vuelve a escribir la misma contraseña."
+#: app/templates/restablecer_contrasena.html:40
+msgid "Enviarme el enlace"
 msgstr ""
 
-#: app/templates/restablecer_contrasena.html:50
+#: app/templates/restablecer_contrasena.html:42
 msgid "Volver al inicio de sesión"
 msgstr ""
 
-#: app/templates/restablecer_contrasena.html:61
+#: app/templates/restablecer_contrasena.html:52
+msgid "Elige tu contraseña nueva."
+msgstr ""
+
+#: app/templates/restablecer_contrasena.html:94
 msgid "Las contraseñas no coinciden."
 msgstr ""
 
-#: app/templates/restablecer_contrasena.html:62
+#: app/templates/restablecer_contrasena.html:95
 msgid "Contraseña restablecida correctamente. Te llevamos al inicio de sesión…"
+msgstr ""
+
+#: app/templates/restablecer_contrasena.html:96
+msgid "Procesando…"
+msgstr ""
+
+#: app/templates/restablecer_contrasena.html:97
+msgid "Enviando…"
+msgstr ""
+
+#: app/templates/restablecer_contrasena.html:98
+msgid "Si esa dirección tiene cuenta, recibirás un correo con un enlace. Revisa también la carpeta de correo no deseado."
+msgstr ""
+
+#: app/templates/restablecer_contrasena.html:100
+#: app/templates/situaciones/nueva.html:165
+msgid "No se ha podido contactar con el servidor."
 msgstr ""
 
 #: app/templates/admin/panel.html:6
@@ -1209,10 +1039,7 @@ msgid "Panel de administración"
 msgstr ""
 
 #: app/templates/admin/panel.html:8
-msgid ""
-"Gestiona cuentas y contenido. <strong>El contenido de las situaciones de "
-"aprendizaje no es accesible desde aquí</strong>: se pueden borrar, no "
-"leer."
+msgid "Gestiona cuentas y contenido. <strong>El contenido de las situaciones de aprendizaje no es accesible desde aquí</strong>: se pueden borrar, no leer."
 msgstr ""
 
 #: app/templates/admin/panel.html:17
@@ -1272,9 +1099,7 @@ msgid "Situaciones de aprendizaje"
 msgstr ""
 
 #: app/templates/admin/panel.html:111
-msgid ""
-"Solo se muestran los datos necesarios para identificarlas. No es posible "
-"abrir su contenido."
+msgid "Solo se muestran los datos necesarios para identificarlas. No es posible abrir su contenido."
 msgstr ""
 
 #: app/templates/admin/panel.html:119 app/templates/situaciones/listar.html:33
@@ -1283,7 +1108,7 @@ msgid "Todos"
 msgstr ""
 
 #: app/templates/admin/panel.html:123 app/templates/admin/panel.html:311
-#: app/templates/situaciones/detalle.html:258
+#: app/templates/situaciones/detalle.html:259
 #: app/templates/situaciones/listar.html:37
 msgid "Error de generación"
 msgstr ""
@@ -1343,16 +1168,12 @@ msgstr ""
 
 #: app/templates/admin/panel.html:176
 #, python-brace-format
-msgid ""
-"Eliminar la cuenta {correo} Y todo su contenido ({n} situaciones). No se "
-"puede deshacer."
+msgid "Eliminar la cuenta {correo} Y todo su contenido ({n} situaciones). No se puede deshacer."
 msgstr ""
 
 #: app/templates/admin/panel.html:177
 #, python-brace-format
-msgid ""
-"Dar de baja a {correo} conservando sus {n} situaciones durante 90 días. "
-"Podrá recuperarlas volviendo a registrarse con este correo."
+msgid "Dar de baja a {correo} conservando sus {n} situaciones durante 90 días. Podrá recuperarlas volviendo a registrarse con este correo."
 msgstr ""
 
 #: app/templates/admin/panel.html:178
@@ -1418,17 +1239,12 @@ msgstr ""
 
 #: app/templates/admin/panel.html:194
 #, python-brace-format
-msgid ""
-"Devolver la cuenta {correo} y sus {n} situaciones a quien la reclama "
-"({nombre}). Comprueba antes que es la misma persona: una dirección de "
-"centro puede haberse reasignado."
+msgid "Devolver la cuenta {correo} y sus {n} situaciones a quien la reclama ({nombre}). Comprueba antes que es la misma persona: una dirección de centro puede haberse reasignado."
 msgstr ""
 
 #: app/templates/admin/panel.html:195
 #, python-brace-format
-msgid ""
-"Rechazar la solicitud sobre {correo}. El contenido sigue guardado hasta "
-"que venza el plazo."
+msgid "Rechazar la solicitud sobre {correo}. El contenido sigue guardado hasta que venza el plazo."
 msgstr ""
 
 #: app/templates/admin/panel.html:196
@@ -1479,10 +1295,7 @@ msgid "No encontramos esa página"
 msgstr ""
 
 #: app/templates/errores/404.html:10
-msgid ""
-"El enlace puede estar roto o la página puede haberse movido. Prueba a "
-"volver al inicio o consulta el mapa web para ver todas las secciones "
-"disponibles."
+msgid "El enlace puede estar roto o la página puede haberse movido. Prueba a volver al inicio o consulta el mapa web para ver todas las secciones disponibles."
 msgstr ""
 
 #: app/templates/errores/404.html:13 app/templates/errores/error.html:35
@@ -1672,7 +1485,7 @@ msgid "Se queda en el historial de versiones"
 msgstr ""
 
 #: app/templates/situaciones/detalle.html:94
-#: app/templates/situaciones/detalle.html:237
+#: app/templates/situaciones/detalle.html:238
 msgid "Marcar como terminada"
 msgstr ""
 
@@ -1681,13 +1494,11 @@ msgid "Duplicar"
 msgstr ""
 
 #: app/templates/situaciones/detalle.html:112
-msgid ""
-"Genera el contenido didáctico completo o regenera una sección concreta. "
-"Durante la generación la situación queda bloqueada."
+msgid "Genera el contenido didáctico completo o regenera una sección concreta. Durante la generación la situación queda bloqueada."
 msgstr ""
 
 #: app/templates/situaciones/detalle.html:117
-#: app/templates/situaciones/detalle.html:235
+#: app/templates/situaciones/detalle.html:236
 msgid "Generar contenido completo"
 msgstr ""
 
@@ -1716,9 +1527,7 @@ msgid "Adaptaciones curriculares"
 msgstr ""
 
 #: app/templates/situaciones/detalle.html:155
-msgid ""
-"Genera una adaptación curricular a partir de esta situación de "
-"aprendizaje, diferenciando si modifica los criterios de evaluación o no."
+msgid "Genera una adaptación curricular a partir de esta situación de aprendizaje, diferenciando si modifica los criterios de evaluación o no."
 msgstr ""
 
 #: app/templates/situaciones/detalle.html:161
@@ -1762,9 +1571,7 @@ msgid "Historial de versiones"
 msgstr ""
 
 #: app/templates/situaciones/detalle.html:192
-msgid ""
-"Aún no hay versiones guardadas. Cada vez que modifiques esta situación se"
-" creará una nueva entrada."
+msgid "Aún no hay versiones guardadas. Cada vez que modifiques esta situación se creará una nueva entrada."
 msgstr ""
 
 #: app/templates/situaciones/detalle.html:195
@@ -1784,209 +1591,193 @@ msgid "Título previo"
 msgstr ""
 
 #: app/templates/situaciones/detalle.html:227
-#: app/templates/situaciones/nueva.html:185
-msgid ""
-"Una de las dos opciones de Matemáticas de 4.º. Se desarrolla sobre todo "
-"mediante la resolución de problemas, la investigación y el análisis "
-"matemático de situaciones de la vida cotidiana."
+#: app/templates/situaciones/nueva.html:186
+msgid "Una de las dos opciones de Matemáticas de 4.º. Se desarrolla sobre todo mediante la resolución de problemas, la investigación y el análisis matemático de situaciones de la vida cotidiana."
 msgstr ""
 
 #: app/templates/situaciones/detalle.html:228
-#: app/templates/situaciones/nueva.html:186
-msgid ""
-"La otra opción de Matemáticas de 4.º. Además de lo anterior, profundiza "
-"en los procedimientos algebraicos, geométricos, analíticos y "
-"estadísticos, en contextos matemáticos, científicos y sociales. El real "
-"decreto no la vincula a ninguna modalidad de Bachillerato: la diferencia "
-"que establece es de enfoque."
-msgstr ""
-
-#: app/templates/situaciones/detalle.html:232
-msgid "No tienes permiso para ver esta situación"
+#: app/templates/situaciones/nueva.html:187
+msgid "La otra opción de Matemáticas de 4.º. Además de lo anterior, profundiza en los procedimientos algebraicos, geométricos, analíticos y estadísticos, en contextos matemáticos, científicos y sociales. El real decreto no la vincula a ninguna modalidad de Bachillerato: la diferencia que establece es de enfoque."
 msgstr ""
 
 #: app/templates/situaciones/detalle.html:233
-msgid "No encontrada"
+msgid "No tienes permiso para ver esta situación"
 msgstr ""
 
 #: app/templates/situaciones/detalle.html:234
-#: app/templates/situaciones/nueva.html:156
+msgid "No encontrada"
+msgstr ""
+
+#: app/templates/situaciones/detalle.html:235
+#: app/templates/situaciones/nueva.html:157
 msgid "— Sin especificar —"
 msgstr ""
 
-#: app/templates/situaciones/detalle.html:236
+#: app/templates/situaciones/detalle.html:237
 msgid "Regenerar todo"
 msgstr ""
 
-#: app/templates/situaciones/detalle.html:238
+#: app/templates/situaciones/detalle.html:239
 #, python-brace-format
 msgid "Traducir a {idioma}"
 msgstr ""
 
-#: app/templates/situaciones/detalle.html:239
+#: app/templates/situaciones/detalle.html:240
 msgid "Tiempo de espera agotado sin respuesta de la tarea."
 msgstr ""
 
-#: app/templates/situaciones/detalle.html:240
+#: app/templates/situaciones/detalle.html:241
 msgid "No se ha podido deshacer."
 msgstr ""
 
-#: app/templates/situaciones/detalle.html:241
+#: app/templates/situaciones/detalle.html:242
 msgid "Cambios guardados correctamente."
 msgstr ""
 
-#: app/templates/situaciones/detalle.html:242
+#: app/templates/situaciones/detalle.html:243
 msgid "El perfil del alumnado debe tener al menos 10 caracteres."
 msgstr ""
 
-#: app/templates/situaciones/detalle.html:243
+#: app/templates/situaciones/detalle.html:244
 msgid "Regenerar"
 msgstr ""
 
-#: app/templates/situaciones/detalle.html:244
+#: app/templates/situaciones/detalle.html:245
 msgid "Deshacer"
 msgstr ""
 
-#: app/templates/situaciones/detalle.html:252
+#: app/templates/situaciones/detalle.html:253
 msgid "Hay dos redacciones de esta sección."
 msgstr ""
 
-#: app/templates/situaciones/detalle.html:253
-msgid ""
-"Quédate con una para seguir. La descartada permanece en el historial de "
-"versiones, así que podrás recuperarla."
-msgstr ""
-
 #: app/templates/situaciones/detalle.html:254
-msgid "Versión actual"
+msgid "Quédate con una para seguir. La descartada permanece en el historial de versiones, así que podrás recuperarla."
 msgstr ""
 
 #: app/templates/situaciones/detalle.html:255
-msgid "Alternativa propuesta"
+msgid "Versión actual"
 msgstr ""
 
 #: app/templates/situaciones/detalle.html:256
+msgid "Alternativa propuesta"
+msgstr ""
+
+#: app/templates/situaciones/detalle.html:257
 msgid "Quedarme con esta"
 msgstr ""
 
-#: app/templates/situaciones/detalle.html:259
+#: app/templates/situaciones/detalle.html:260
 msgid "Reabrir situación"
 msgstr ""
 
-#: app/templates/situaciones/detalle.html:260
+#: app/templates/situaciones/detalle.html:261
 msgid "Escuchar"
 msgstr ""
 
-#: app/templates/situaciones/detalle.html:261
+#: app/templates/situaciones/detalle.html:262
 msgid "Parar"
 msgstr ""
 
-#: app/templates/situaciones/detalle.html:262
+#: app/templates/situaciones/detalle.html:263
 msgid "Leyendo en voz alta…"
 msgstr ""
 
-#: app/templates/situaciones/detalle.html:263
-#, python-brace-format
-msgid ""
-"Tu sistema no tiene ninguna voz instalada para {idioma}, así que la "
-"lectura en voz alta no está disponible en esta situación."
-msgstr ""
-
 #: app/templates/situaciones/detalle.html:264
-msgid "Ya hay una generación en curso."
+#, python-brace-format
+msgid "Tu sistema no tiene ninguna voz instalada para {idioma}, así que la lectura en voz alta no está disponible en esta situación."
 msgstr ""
 
 #: app/templates/situaciones/detalle.html:265
-msgid "No se pudo lanzar la generación."
+msgid "Ya hay una generación en curso."
 msgstr ""
 
 #: app/templates/situaciones/detalle.html:266
-msgid "La generación terminó con error: "
+msgid "No se pudo lanzar la generación."
 msgstr ""
 
 #: app/templates/situaciones/detalle.html:267
-msgid "No se ha podido guardar la elección."
+msgid "La generación terminó con error: "
 msgstr ""
 
 #: app/templates/situaciones/detalle.html:268
-msgid "Adaptación lanzada. Serás redirigido a la nueva SA…"
+msgid "No se ha podido guardar la elección."
 msgstr ""
 
 #: app/templates/situaciones/detalle.html:269
-msgid "Aún no hay adaptaciones generadas para esta situación."
+msgid "Adaptación lanzada. Serás redirigido a la nueva SA…"
 msgstr ""
 
 #: app/templates/situaciones/detalle.html:270
-#, python-brace-format
-msgid ""
-"El idioma destino es el de la situación ({idioma}). Cámbialo arriba, en "
-"el campo Idioma."
+msgid "Aún no hay adaptaciones generadas para esta situación."
 msgstr ""
 
 #: app/templates/situaciones/detalle.html:271
 #, python-brace-format
-msgid "¿Regenerar la sección «{nombre}»? Se sobrescribirá su contenido actual."
+msgid "El idioma destino es el de la situación ({idioma}). Cámbialo arriba, en el campo Idioma."
 msgstr ""
 
 #: app/templates/situaciones/detalle.html:272
-msgid ""
-"¿Seguro que quieres eliminar esta situación? Se eliminará también su "
-"historial de versiones."
+#, python-brace-format
+msgid "¿Regenerar la sección «{nombre}»? Se sobrescribirá su contenido actual."
 msgstr ""
 
-#: app/templates/situaciones/detalle.html:278
-msgid "español"
+#: app/templates/situaciones/detalle.html:273
+msgid "¿Seguro que quieres eliminar esta situación? Se eliminará también su historial de versiones."
 msgstr ""
 
 #: app/templates/situaciones/detalle.html:279
-msgid "catalán"
+msgid "español"
 msgstr ""
 
 #: app/templates/situaciones/detalle.html:280
-msgid "gallego"
+msgid "catalán"
 msgstr ""
 
 #: app/templates/situaciones/detalle.html:281
-msgid "euskera"
+msgid "gallego"
 msgstr ""
 
 #: app/templates/situaciones/detalle.html:282
-msgid "inglés"
+msgid "euskera"
 msgstr ""
 
 #: app/templates/situaciones/detalle.html:283
-msgid "francés"
+msgid "inglés"
 msgstr ""
 
 #: app/templates/situaciones/detalle.html:284
+msgid "francés"
+msgstr ""
+
+#: app/templates/situaciones/detalle.html:285
 msgid "árabe"
 msgstr ""
 
-#: app/templates/situaciones/detalle.html:291
+#: app/templates/situaciones/detalle.html:292
 msgid "Conexión curricular (competencias · criterios · saberes)"
 msgstr ""
 
-#: app/templates/situaciones/detalle.html:293
+#: app/templates/situaciones/detalle.html:294
 msgid "Evaluación (instrumentos y rúbricas)"
 msgstr ""
 
-#: app/templates/situaciones/detalle.html:294
+#: app/templates/situaciones/detalle.html:295
 msgid "Atención a la diversidad (DUA)"
 msgstr ""
 
-#: app/templates/situaciones/detalle.html:384
+#: app/templates/situaciones/detalle.html:385
 msgid "Resumir"
 msgstr ""
 
-#: app/templates/situaciones/detalle.html:385
+#: app/templates/situaciones/detalle.html:386
 msgid "Desarrollar"
 msgstr ""
 
-#: app/templates/situaciones/detalle.html:386
+#: app/templates/situaciones/detalle.html:387
 msgid "Traducir"
 msgstr ""
 
-#: app/templates/situaciones/detalle.html:387
+#: app/templates/situaciones/detalle.html:388
 msgid "Proponer alternativa"
 msgstr ""
 
@@ -2007,9 +1798,7 @@ msgid "Ej: Robótica"
 msgstr ""
 
 #: app/templates/situaciones/listar.html:48
-msgid ""
-"No hay situaciones que coincidan con los filtros aplicados. <a "
-"href=\"/situaciones/nueva\" class=\"link\">Crea la primera</a>."
+msgid "No hay situaciones que coincidan con los filtros aplicados. <a href=\"/situaciones/nueva\" class=\"link\">Crea la primera</a>."
 msgstr ""
 
 #: app/templates/situaciones/listar.html:53
@@ -2039,10 +1828,7 @@ msgid "Abrir situación {titulo}"
 msgstr ""
 
 #: app/templates/situaciones/nueva.html:8
-msgid ""
-"Solo es necesario título, curso y materia. El resto se puede completar "
-"después. Cuantos más datos aportes, mejor podrá la IA contextualizar el "
-"contenido generado."
+msgid "Solo es necesario título, curso y materia. El resto se puede completar después. Cuantos más datos aportes, mejor podrá la IA contextualizar el contenido generado."
 msgstr ""
 
 #: app/templates/situaciones/nueva.html:18
@@ -2062,9 +1848,7 @@ msgid "Ej: algo relacionado con el barrio, que acabe en una maqueta…"
 msgstr ""
 
 #: app/templates/situaciones/nueva.html:28
-msgid ""
-"Si lo dejas vacío, las propuestas se basarán solo en el curso y la "
-"materia."
+msgid "Si lo dejas vacío, las propuestas se basarán solo en el curso y la materia."
 msgstr ""
 
 #: app/templates/situaciones/nueva.html:33
@@ -2104,55 +1888,47 @@ msgid "Generar contenido con IA al crear"
 msgstr ""
 
 #: app/templates/situaciones/nueva.html:134
-msgid ""
-"Si lo desmarcas, la situación se guarda en borrador y podrás generarla "
-"más adelante."
+msgid "Si lo desmarcas, la situación se guarda en borrador y podrás generarla más adelante."
 msgstr ""
 
 #: app/templates/situaciones/nueva.html:138
 msgid "Crear situación"
 msgstr ""
 
-#: app/templates/situaciones/nueva.html:157
+#: app/templates/situaciones/nueva.html:158
 msgid "Producto final:"
 msgstr ""
 
-#: app/templates/situaciones/nueva.html:158
+#: app/templates/situaciones/nueva.html:159
 msgid "Usar esta propuesta"
 msgstr ""
 
-#: app/templates/situaciones/nueva.html:159
+#: app/templates/situaciones/nueva.html:160
 #, python-brace-format
 msgid "Usar la propuesta {n}: {titulo}"
 msgstr ""
 
-#: app/templates/situaciones/nueva.html:160
+#: app/templates/situaciones/nueva.html:161
 msgid "Elige antes el curso y la materia en el formulario de abajo."
 msgstr ""
 
-#: app/templates/situaciones/nueva.html:161
+#: app/templates/situaciones/nueva.html:162
 msgid "Pensando ideas…"
 msgstr ""
 
-#: app/templates/situaciones/nueva.html:162
-msgid ""
-"Has pedido muchas sugerencias seguidas. Espera un poco antes de volver a "
-"intentarlo."
-msgstr ""
-
 #: app/templates/situaciones/nueva.html:163
-msgid "No se han podido obtener sugerencias."
+msgid "Has pedido muchas sugerencias seguidas. Espera un poco antes de volver a intentarlo."
 msgstr ""
 
 #: app/templates/situaciones/nueva.html:164
-msgid "No se ha podido contactar con el servidor."
-msgstr ""
-
-#: app/templates/situaciones/nueva.html:165
-msgid "Creando y lanzando IA…"
+msgid "No se han podido obtener sugerencias."
 msgstr ""
 
 #: app/templates/situaciones/nueva.html:166
+msgid "Creando y lanzando IA…"
+msgstr ""
+
+#: app/templates/situaciones/nueva.html:167
 msgid "Creando…"
 msgstr ""
 

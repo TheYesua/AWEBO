@@ -11,15 +11,56 @@ services:
     volumes:
       - ./api:/app
       - ./curriculo:/curriculo:ro
+      # Solo para tests/unit/test_configuracion.py, que comprueba que las
+      # variables del .env.example llegan de verdad a los contenedores. La
+      # imagen solo copia api/, así que dentro no hay ni compose ni ejemplo;
+      # se montan de solo lectura y en un sitio aparte para no confundirlos
+      # con los del host.
+      - ./docker-compose.yml:/repo/docker-compose.yml:ro
+      - ./docker-compose.override.yml:/repo/docker-compose.override.yml:ro
+      - ./.env.example:/repo/.env.example:ro
     # Recarga en cada cambio de código durante desarrollo
     command: gunicorn --bind 0.0.0.0:8000 --workers 1 --reload --timeout 120 "app:create_app()"
     environment:
       FLASK_DEBUG: "1"
+      # En desarrollo, el SMTP apunta al buzón de pruebas de abajo salvo que
+      # se rellenen estas variables en el .env. La forma `:-` toma el valor
+      # por defecto también cuando la variable está definida pero vacía, que
+      # es como viene en .env.example.
+      SMTP_HOST: ${SMTP_HOST:-mailpit}
+      SMTP_PORT: ${SMTP_PORT:-1025}
+      # Mailpit no ofrece STARTTLS salvo que se le den certificados, y el
+      # código lo exige siempre salvo que se renuncie por escrito. Sin esta
+      # línea el envío muere con SMTPNotSupportedError y el buzón se queda
+      # vacío. Solo vale aquí: contra un proveedor real, con credenciales,
+      # app/correo/smtp.py se niega a enviar.
+      SMTP_SIN_TLS: "1"
 
   worker:
     volumes:
       - ./api:/app
       - ./curriculo:/curriculo:ro
+      # Solo para tests/unit/test_configuracion.py, que comprueba que las
+      # variables del .env.example llegan de verdad a los contenedores. La
+      # imagen solo copia api/, así que dentro no hay ni compose ni ejemplo;
+      # se montan de solo lectura y en un sitio aparte para no confundirlos
+      # con los del host.
+      - ./docker-compose.yml:/repo/docker-compose.yml:ro
+      - ./docker-compose.override.yml:/repo/docker-compose.override.yml:ro
+      - ./.env.example:/repo/.env.example:ro
+    # El envío ocurre AQUÍ, no en api: `enviar_correo` es una tarea de Celery.
+    # Sin estas dos variables el worker seguiría intentando el SMTP de
+    # producción y el buzón de pruebas no recibiría nada, con el agravante de
+    # que el fallo solo se ve en su log.
+    environment:
+      SMTP_HOST: ${SMTP_HOST:-mailpit}
+      SMTP_PORT: ${SMTP_PORT:-1025}
+      # Mailpit no ofrece STARTTLS salvo que se le den certificados, y el
+      # código lo exige siempre salvo que se renuncie por escrito. Sin esta
+      # línea el envío muere con SMTPNotSupportedError y el buzón se queda
+      # vacío. Solo vale aquí: contra un proveedor real, con credenciales,
+      # app/correo/smtp.py se niega a enviar.
+      SMTP_SIN_TLS: "1"
 
   # El mismo bind mount que los demás. Sin él, beat seguiría ejecutando el
   # calendario horneado en la imagen y cambiar `beat_schedule` no tendría
@@ -29,3 +70,57 @@ services:
     volumes:
       - ./api:/app
       - ./curriculo:/curriculo:ro
+      # Solo para tests/unit/test_configuracion.py, que comprueba que las
+      # variables del .env.example llegan de verdad a los contenedores. La
+      # imagen solo copia api/, así que dentro no hay ni compose ni ejemplo;
+      # se montan de solo lectura y en un sitio aparte para no confundirlos
+      # con los del host.
+      - ./docker-compose.yml:/repo/docker-compose.yml:ro
+      - ./docker-compose.override.yml:/repo/docker-compose.override.yml:ro
+      - ./.env.example:/repo/.env.example:ro
+
+  # ---------------------------------------------------------------------------
+  # Buzón de pruebas: un servidor SMTP falso con bandeja de entrada web.
+  # ---------------------------------------------------------------------------
+  # Acepta cualquier correo y **no entrega nada a internet**: se queda todo en
+  # http://localhost:8025, donde se ve el mensaje tal y como llegaría, con su
+  # HTML y su enlace pulsable.
+  #
+  # Por qué merece la pena aunque exista el proveedor de consola: el de consola
+  # imprime el texto y **no ejerce el camino de SMTP**. Con esto se prueba de
+  # verdad `app/correo/smtp.py` —STARTTLS, tiempos de espera, el mensaje en dos
+  # partes— que hasta ahora solo estaba probado con simulacros. Y se ve cómo
+  # queda el HTML, que no lo había visto nadie.
+  #
+  # Va en el override y no en docker-compose.yml a propósito: es una
+  # herramienta de desarrollo y no debe existir en un despliegue real.
+  #
+  # Sin volumen: los mensajes viven en memoria y desaparecen al reiniciar, que
+  # es lo que se quiere de un buzón de pruebas.
+  #
+  # **Sin `depends_on` a propósito.** El compose principal declara la
+  # dependencia de api y worker con la sintaxis larga —un mapa con
+  # `condition: service_healthy`— y aquí habría que escribirla como lista.
+  # Al fusionar los dos ficheros, Compose no combina esas dos formas: la
+  # segunda puede sustituir a la primera y dejar a api arrancando sin esperar
+  # a Postgres. El riesgo no compensa, porque la dependencia no hace falta:
+  # nadie contacta con el buzón al arrancar. El proveedor por defecto sigue
+  # siendo el de consola, y aunque se active SMTP el envío ocurre después,
+  # dentro de una tarea; si el buzón aún no estuviera listo, ese envío
+  # fallaría y quedaría en el log.
+  mailpit:
+    image: axllent/mailpit:latest
+    container_name: awebo-mailpit
+    restart: unless-stopped
+    ports:
+      - "${MAILPIT_WEB_PORT:-8025}:8025"   # bandeja de entrada
+      - "${MAILPIT_SMTP_PORT:-1025}:1025"  # SMTP, por si se quiere probar desde el host
+    environment:
+      MP_MAX_MESSAGES: 200
+      # Sin autenticación ni TLS: es un buzón local de usar y tirar. El
+      # proveedor SMTP de AWEBO usa STARTTLS con el puerto 587 y conexión en
+      # claro con los demás, así que con 1025 no intenta cifrar.
+      MP_SMTP_AUTH_ACCEPT_ANY: 1
+      MP_SMTP_AUTH_ALLOW_INSECURE: 1
+    networks:
+      - backend

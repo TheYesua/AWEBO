@@ -8,7 +8,7 @@
  * El contenedor `api` es `python:3.12-slim` y NO tiene Node, así que sirve un
  * contenedor efímero:
  *
- *     docker run --rm -v "E:\AWEBO\api:/app" -w /app node:22-alpine \
+ *     docker run --rm -v "$PWD:/app" -w /app node:22-alpine \
  *         node tests/js/lectura.test.js
  *
  * Solo se prueba `textoLegible`, que es pura: recibe un árbol de elementos y

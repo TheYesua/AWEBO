@@ -229,6 +229,7 @@ const EXPLICACIONES_MATERIA = {
 };
 
 const T = {
+  errorDesconocido: {{ _('Error desconocido')|tojson }},
   sinPermiso: {{ _('No tienes permiso para ver esta situación')|tojson }},
   noEncontrada: {{ _('No encontrada')|tojson }},
   sinEspecificar: {{ _('— Sin especificar —')|tojson }},
@@ -955,7 +956,7 @@ document.getElementById('adaptacion-form').addEventListener('submit', async (ev)
     msg.textContent = body.detalles.map(d => `${d.loc?.join('.') ?? ''}: ${d.msg}`).join(' · ');
     msg.hidden = false;
   } else {
-    msg.textContent = body.mensaje || body.error || 'Error desconocido';
+    msg.textContent = body.mensaje || body.error || T.errorDesconocido;
     msg.hidden = false;
   }
 });

@@ -35,6 +35,22 @@ class TestConfig(Config):
     AI_PROVIDER = "fake"
     OPENAI_API_KEY = ""
 
+    # Correo: igual que la IA, neutralizado. `Config` lee estas variables del
+    # entorno del proceso, y el contenedor de desarrollo lleva `SMTP_SIN_TLS=1`
+    # y `SMTP_HOST=mailpit` para el buzón de pruebas. Sin fijarlas aquí, esa
+    # configuración se cuela en los tests: el 09/08/2026,
+    # `test_el_puerto_465_usa_TLS_directo_y_el_587_STARTTLS` empezó a fallar en
+    # Docker y a pasar fuera, por eso y no por el código.
+    #
+    # Lo importante no es el test que falló, sino la clase de fallo: una
+    # batería cuyo resultado depende del `.env` de quien la lanza no dice nada
+    # sobre el código. Cada test que quiera SMTP lo configura él.
+    CORREO_PROVEEDOR = "consola"
+    SMTP_HOST = ""
+    SMTP_USER = ""
+    SMTP_PASSWORD = ""
+    SMTP_SIN_TLS = False
+
     # Rate limiting deshabilitado por defecto: cada test concreto que
     # quiera verificarlo lo activará en su fixture local.
     RATELIMIT_ENABLED = False

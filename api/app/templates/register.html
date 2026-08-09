@@ -102,7 +102,7 @@ document.getElementById('register-form').addEventListener('submit', async (ev) =
     if (body.detalles && Array.isArray(body.detalles)) {
       msg.textContent = body.detalles.map(d => `${d.loc?.join('.') ?? ''}: ${d.msg}`).join(' · ');
     } else {
-      msg.textContent = body.mensaje || body.error || 'Error desconocido';
+      msg.textContent = body.mensaje || body.error || {{ _('Error desconocido')|tojson }};
     }
     msg.hidden = false;
   } finally {

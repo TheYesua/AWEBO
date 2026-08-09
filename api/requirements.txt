@@ -48,3 +48,6 @@ structlog==24.4.0
 pytest==8.3.3
 pytest-flask==1.3.0
 factory-boy==3.3.1
+# Solo lo usa test_configuracion.py, para leer los docker-compose y comprobar
+# que las variables del .env.example llegan de verdad a los contenedores.
+PyYAML==6.0.2

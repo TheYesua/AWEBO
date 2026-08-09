@@ -7,7 +7,7 @@
  * Como el resto de tests de JS hace falta Node, y el contenedor `api` no lo
  * tiene:
  *
- *     docker run --rm -v "E:\AWEBO\api:/app" -w /app node:22-alpine \
+ *     docker run --rm -v "$PWD:/app" -w /app node:22-alpine \
  *         node tests/js/llamadas.test.js
  *
  * POR QUÉ EXISTE
