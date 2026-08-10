@@ -144,3 +144,7 @@ CLAUDE.md
 resultados_estudio/
 scratch/
 
+
+# Modelos de voz: decenas de megas, no son obra nuestra (tarea 8b)
+/voces/*
+!/voces/LEEME.txt

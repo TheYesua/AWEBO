@@ -11,6 +11,14 @@ services:
     volumes:
       - ./api:/app
       - ./curriculo:/curriculo:ro
+      # aHoTTS: binario de síntesis, diccionarios lingüísticos y voces. Unos
+      # 250 MB de terceros, fuera del repositorio. De solo lectura; el único
+      # fichero que se escribe es un temporal, y va a /tmp. Ver docs/VOCES.md.
+      - ./voces/ahotts:/ahotts:ro
+      # El audio generado. Con nombre y no bind mount: no es contenido que se
+      # edite a mano, y así sobrevive a `docker compose down` sin ensuciar el
+      # árbol del proyecto. Es el ÚNICO volumen de escritura de estos tres.
+      - audio_generado:/audio
       # Solo para tests/unit/test_configuracion.py, que comprueba que las
       # variables del .env.example llegan de verdad a los contenedores. La
       # imagen solo copia api/, así que dentro no hay ni compose ni ejemplo;
@@ -40,6 +48,14 @@ services:
     volumes:
       - ./api:/app
       - ./curriculo:/curriculo:ro
+      # aHoTTS: binario de síntesis, diccionarios lingüísticos y voces. Unos
+      # 250 MB de terceros, fuera del repositorio. De solo lectura; el único
+      # fichero que se escribe es un temporal, y va a /tmp. Ver docs/VOCES.md.
+      - ./voces/ahotts:/ahotts:ro
+      # El audio generado. Con nombre y no bind mount: no es contenido que se
+      # edite a mano, y así sobrevive a `docker compose down` sin ensuciar el
+      # árbol del proyecto. Es el ÚNICO volumen de escritura de estos tres.
+      - audio_generado:/audio
       # Solo para tests/unit/test_configuracion.py, que comprueba que las
       # variables del .env.example llegan de verdad a los contenedores. La
       # imagen solo copia api/, así que dentro no hay ni compose ni ejemplo;
@@ -70,6 +86,14 @@ services:
     volumes:
       - ./api:/app
       - ./curriculo:/curriculo:ro
+      # aHoTTS: binario de síntesis, diccionarios lingüísticos y voces. Unos
+      # 250 MB de terceros, fuera del repositorio. De solo lectura; el único
+      # fichero que se escribe es un temporal, y va a /tmp. Ver docs/VOCES.md.
+      - ./voces/ahotts:/ahotts:ro
+      # El audio generado. Con nombre y no bind mount: no es contenido que se
+      # edite a mano, y así sobrevive a `docker compose down` sin ensuciar el
+      # árbol del proyecto. Es el ÚNICO volumen de escritura de estos tres.
+      - audio_generado:/audio
       # Solo para tests/unit/test_configuracion.py, que comprueba que las
       # variables del .env.example llegan de verdad a los contenedores. La
       # imagen solo copia api/, así que dentro no hay ni compose ni ejemplo;

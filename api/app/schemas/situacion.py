@@ -191,3 +191,32 @@ class VersionOut(BaseModel):
     contenido: dict[str, Any]
     descripcion_cambio: str | None
     fecha: datetime
+
+
+class AudioIn(BaseModel):
+    """Petición de audio para una sección.
+
+    EL TEXTO LO MANDA EL CLIENTE, Y ESO ES DELIBERADO
+    -------------------------------------------------
+    La alternativa era extraerlo en el servidor desde el JSONB `contenido`.
+    Se descartó por lo mismo que la tarea 8a decidió leer del DOM y no del
+    JSON: **lo que se escucha tiene que ser lo que se ve**. Con dos extractores
+    —uno en JavaScript para pintar y otro en Python para el audio— la
+    divergencia es cuestión de tiempo, y se manifestaría como un audio que
+    narra algo distinto de lo que hay en pantalla, que es el peor fallo posible
+    para una función de accesibilidad.
+
+    El precio es que alguien podría mandar texto arbitrario y usar AWEBO de
+    sintetizador. Se acota con lo de siempre: hace falta sesión, hay que ser
+    propietario de la situación, hay límite de peticiones y hay tope de
+    longitud. Y el coste es tiempo de CPU propio, no una factura.
+    """
+
+    model_config = ConfigDict(extra="forbid", str_strip_whitespace=True)
+
+    #: Solo letras, números y guion bajo: este valor acaba formando parte de un
+    #: nombre de fichero. Sin restringirlo, una sección `../../algo` escribiría
+    #: fuera del volumen.
+    seccion: str = Field(min_length=1, max_length=40, pattern=r"^[a-z0-9_]+$")
+    texto: str = Field(min_length=1, max_length=20000)
+

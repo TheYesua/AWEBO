@@ -78,6 +78,12 @@ services:
       SMTP_PASSWORD: ${SMTP_PASSWORD:-}
       SMTP_TIMEOUT: ${SMTP_TIMEOUT:-}
       SMTP_SIN_TLS: ${SMTP_SIN_TLS:-}
+      VOZ_PROVEEDOR: ${VOZ_PROVEEDOR:-nulo}
+      VOZ_MODELO: ${VOZ_MODELO:-}
+      VOZ_VOZ: ${VOZ_VOZ:-}
+      VOZ_TIMEOUT: ${VOZ_TIMEOUT:-}
+      VOZ_AHOTTS_DIR: ${VOZ_AHOTTS_DIR:-/ahotts}
+      VOZ_AUDIO_DIR: ${VOZ_AUDIO_DIR:-/audio}
     depends_on:
       postgres:
         condition: service_healthy
@@ -131,6 +137,12 @@ services:
       SMTP_PASSWORD: ${SMTP_PASSWORD:-}
       SMTP_TIMEOUT: ${SMTP_TIMEOUT:-}
       SMTP_SIN_TLS: ${SMTP_SIN_TLS:-}
+      VOZ_PROVEEDOR: ${VOZ_PROVEEDOR:-nulo}
+      VOZ_MODELO: ${VOZ_MODELO:-}
+      VOZ_VOZ: ${VOZ_VOZ:-}
+      VOZ_TIMEOUT: ${VOZ_TIMEOUT:-}
+      VOZ_AHOTTS_DIR: ${VOZ_AHOTTS_DIR:-/ahotts}
+      VOZ_AUDIO_DIR: ${VOZ_AUDIO_DIR:-/audio}
     depends_on:
       postgres:
         condition: service_healthy
@@ -200,6 +212,10 @@ services:
       - backend
 
 volumes:
+  # Audio generado por la síntesis de voz (tarea 8b). Con nombre y no bind
+  # mount: no es contenido que se edite a mano, y así sobrevive a
+  # `docker compose down` sin ensuciar el árbol del proyecto.
+  audio_generado:
   postgres_data:
     name: awebo_postgres_data
   redis_data:

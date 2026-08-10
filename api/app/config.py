@@ -116,6 +116,31 @@ class Config:
     # un enlace relativo en un cliente de correo no lleva a ningún sitio.
     URL_BASE: str = os.environ.get("URL_BASE", "http://localhost:8090")
 
+    # -----------------------------------------------------------------
+    # Síntesis de voz (tarea 8b)
+    # -----------------------------------------------------------------
+    # Por defecto NO genera: la síntesis se factura por caracteres y un
+    # entorno con una clave heredada no debe poder gastar sin querer. Ver
+    # app/voz/nulo.py.
+    VOZ_PROVEEDOR: str = os.environ.get("VOZ_PROVEEDOR", "nulo")
+    VOZ_TIMEOUT: int = int(os.environ.get("VOZ_TIMEOUT") or 60)
+
+    #: Raíz del repositorio de aHoTTS: dentro van el binario `ahotts/tts`, los
+    #: diccionarios lingüísticos y las voces. No está en el repositorio —son
+    #: 250 MB de terceros—, se monta como volumen. Ver docs/VOCES.md.
+    VOZ_AHOTTS_DIR: str = os.environ.get("VOZ_AHOTTS_DIR", "/ahotts")
+
+    #: Dónde se guardan los audios generados. Fuera de la base de datos: un
+    #: audio de una SdA entera ronda el medio mega y meterlos en Postgres haría
+    #: que cada volcado de respaldo pasara de kilobytes a cientos de megas, con
+    #: lo que la restauración verificada dejaría de lanzarse por lenta. Ver
+    #: app/services/audio.py.
+    VOZ_AUDIO_DIR: str = os.environ.get("VOZ_AUDIO_DIR", "/audio")
+
+    #: Solo los usa el proveedor de nube, que se conserva como alternativa.
+    VOZ_MODELO: str = os.environ.get("VOZ_MODELO", "tts-1")
+    VOZ_VOZ: str = os.environ.get("VOZ_VOZ", "alloy")
+
     # --- IA / LLM ---
     # "openai" (por defecto si hay API key), "fake" (sin red, para tests
     # y desarrollo local sin API key).

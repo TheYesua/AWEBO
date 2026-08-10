@@ -10,6 +10,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         build-essential \
         libpq-dev \
         curl \
+        # Compresión del audio que genera la síntesis de voz (tarea 8b):
+        # Piper devuelve WAV sin comprimir, unos 44 KB por segundo.
+        ffmpeg \
         # WeasyPrint deps
         libcairo2 \
         libpango-1.0-0 \

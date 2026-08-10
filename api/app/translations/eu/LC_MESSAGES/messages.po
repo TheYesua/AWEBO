@@ -662,7 +662,7 @@ msgstr "Hasi orain"
 
 #: app/templates/index.html:17
 msgid "Crea una cuenta o accede con la tuya para gestionar tus situaciones de aprendizaje."
-msgstr "Sortu kontu bat edo sartu zurearekin zure ikaskuntza egoerak kudeatzeko."
+msgstr "Sortu kontu bat edo sartu zurearekin zure ikaskuntza-egoerak kudeatzeko."
 
 #: app/templates/admin/panel.html:75 app/templates/index.html:19
 #: app/templates/register.html:6
@@ -703,7 +703,7 @@ msgstr "Profila kargatzen…"
 
 #: app/templates/index.html:44 app/templates/situaciones/nueva.html:6
 msgid "Nueva situación de aprendizaje"
-msgstr "Ikaskuntza egoera berria"
+msgstr "Ikaskuntza-egoera berria"
 
 #: app/templates/index.html:48
 msgid "Ver mis situaciones"
@@ -833,7 +833,7 @@ msgstr "Amaitua"
 
 #: app/templates/login.html:7
 msgid "Accede a tu cuenta de docente para gestionar tus situaciones de aprendizaje."
-msgstr "Sartu zure irakasle-kontuan zure ikaskuntza egoerak kudeatzeko."
+msgstr "Sartu zure irakasle-kontuan zure ikaskuntza-egoerak kudeatzeko."
 
 #: app/templates/login.html:10 app/templates/register.html:12
 #: app/templates/restablecer_contrasena.html:55
@@ -908,7 +908,7 @@ msgstr "Irakaslearen eremua (saioa hasi behar da)"
 
 #: app/templates/mapa_web.html:26 app/templates/situaciones/listar.html:8
 msgid "Mis situaciones de aprendizaje"
-msgstr "Nire ikaskuntza egoerak"
+msgstr "Nire ikaskuntza-egoerak"
 
 #: app/templates/mapa_web.html:28
 msgid "Crear nueva situación"
@@ -982,7 +982,7 @@ msgstr "Sorkuntza AArekin"
 
 #: app/templates/perfil.html:55
 msgid "Elige qué modelo redacta tus situaciones de aprendizaje. Si no eliges nada se usa el del sistema."
-msgstr "Aukeratu zein modelok idatziko dituen zure ikaskuntza egoerak. Ezer aukeratzen ez baduzu, sistemarena erabiltzen da."
+msgstr "Aukeratu zein modelok idatziko dituen zure ikaskuntza-egoerak. Ezer aukeratzen ez baduzu, sistemarena erabiltzen da."
 
 #: app/templates/perfil.html:61
 msgid "Proveedor"
@@ -1125,7 +1125,7 @@ msgstr "Pasahitza behar bezala aldatu da."
 
 #: app/templates/register.html:8
 msgid "Regístrate como <strong>docente</strong> para empezar a crear situaciones de aprendizaje LOMLOE con asistencia de IA."
-msgstr "Erregistratu <strong>irakasle</strong> gisa LOMLOE ikaskuntza egoerak AAren laguntzaz sortzen hasteko."
+msgstr "Erregistratu <strong>irakasle</strong> gisa LOMLOE ikaskuntza-egoerak AAren laguntzaz sortzen hasteko."
 
 #: app/templates/register.html:65
 msgid "Registrarme"
@@ -1229,7 +1229,7 @@ msgstr "Kontuen orriak"
 
 #: app/templates/admin/panel.html:109
 msgid "Situaciones de aprendizaje"
-msgstr "Ikaskuntza egoerak"
+msgstr "Ikaskuntza-egoerak"
 
 #: app/templates/admin/panel.html:111
 msgid "Solo se muestran los datos necesarios para identificarlas. No es posible abrir su contenido."
@@ -1264,7 +1264,7 @@ msgstr "Garbitu"
 
 #: app/templates/admin/panel.html:142
 msgid "Situaciones de aprendizaje de todas las cuentas"
-msgstr "Kontu guztien ikaskuntza egoerak"
+msgstr "Kontu guztien ikaskuntza-egoerak"
 
 #: app/templates/admin/panel.html:145 app/templates/situaciones/detalle.html:23
 #: app/templates/situaciones/listar.html:56
@@ -1661,7 +1661,7 @@ msgstr "Curriculum-egokitzapenak"
 
 #: app/templates/situaciones/detalle.html:163
 msgid "Genera una adaptación curricular a partir de esta situación de aprendizaje, diferenciando si modifica los criterios de evaluación o no."
-msgstr "Sortu curriculum-egokitzapen bat ikaskuntza egoera honetatik abiatuta, ebaluazio-irizpideak aldatzen dituen ala ez bereiziz."
+msgstr "Sortu curriculum-egokitzapen bat ikaskuntza-egoera honetatik abiatuta, ebaluazio-irizpideak aldatzen dituen ala ez bereiziz."
 
 #: app/templates/situaciones/detalle.html:169
 msgid "Tipo de adaptación"

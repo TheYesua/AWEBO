@@ -40,6 +40,10 @@ pydyf<0.11             # WeasyPrint 62.x es incompatible con pydyf>=0.11
 python-docx==1.1.2
 Jinja2==3.1.4
 
+# Sin dependencia de síntesis de voz: aHoTTS es un binario externo que trae su
+# propio libonnxruntime. Se intentó con `piper-tts` y no sirve —los modelos de
+# HiTZ usan otro alfabeto de fonemas—; ver docs/VOCES.md.
+
 # Utilidades
 python-dotenv==1.0.1
 structlog==24.4.0

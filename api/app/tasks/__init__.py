@@ -8,6 +8,7 @@ from flask import g, has_request_context
 from . import generacion  # noqa: F401 -- registro de tasks en Celery
 from . import operaciones  # noqa: F401 -- idem
 from . import correo  # noqa: F401 -- idem
+from . import audio  # noqa: F401 -- idem
 
 __all__ = ["generacion", "operaciones", "correo", "encolar"]
 

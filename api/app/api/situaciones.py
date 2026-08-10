@@ -6,6 +6,7 @@ from flask_login import current_user, login_required
 
 from ..schemas import (
     AdaptacionCreateIn,
+    AudioIn,
     DuplicarIn,
     SituacionCreateIn,
     SituacionListItemOut,
@@ -15,10 +16,12 @@ from ..schemas import (
     VersionOut,
 )
 from ..extensions import limiter
+from ..services import audio as almacen_audio
 from ..services import exportacion_service as exp
 from ..services import situacion_service as svc
 from ..services import sugerencias_service as sug
 from ..tasks import generacion as tareas_generacion
+from ..tasks import audio as tareas_audio
 from ..tasks import operaciones as tareas_operaciones
 from ..tasks import encolar
 from ..prompts import SECCIONES
@@ -176,6 +179,67 @@ def crear():
 def obtener(id_situacion: int):
     sa = svc.obtener(id_situacion, current_user)
     return jsonify(SituacionOut.from_model(sa).model_dump(mode="json")), 200
+
+
+@bp.post("/<int:id_situacion>/audio")
+@login_required
+@limiter.limit("30 per hour")
+def pedir_audio(id_situacion: int):
+    """Encola la narración de una sección.
+
+    Devuelve 202 y no el audio: sintetizar tarda segundos, y hacerlo dentro de
+    la petición dejaría la pantalla colgada y ocuparía uno de los dos
+    trabajadores de gunicorn mientras tanto.
+
+    Si el audio de ese texto **ya existe**, responde 200 sin encolar nada. La
+    comprobación sale gratis porque el nombre del fichero se calcula a partir
+    del propio texto: no hay que preguntarle a ninguna tabla si está hecho.
+    """
+    sa = svc.obtener(id_situacion, current_user)   # 403/404 si no es suya
+    data = AudioIn.model_validate(request.get_json(silent=True) or {})
+
+    idioma = sa.idioma or "es"
+    if almacen_audio.ruta(sa.id_situacion, data.seccion, data.texto, idioma).is_file():
+        return jsonify({"estado": "listo"}), 200
+
+    encolar(tareas_audio.generar_audio, id_situacion=sa.id_situacion,
+            seccion=data.seccion, texto=data.texto, idioma=idioma)
+    return jsonify({"estado": "generando"}), 202
+
+
+@bp.get("/<int:id_situacion>/audio")
+@login_required
+def obtener_audio(id_situacion: int):
+    """Devuelve el MP3 si está listo, y 404 si todavía no.
+
+    El texto viaja como parámetro porque es lo que identifica al audio: pedir
+    «el audio de la sección X» sin decir de qué texto devolvería la narración
+    de una versión anterior después de editar, que suena bien y dice otra cosa.
+    """
+    sa = svc.obtener(id_situacion, current_user)
+    seccion = (request.args.get("seccion") or "").strip()
+    texto = request.args.get("texto") or ""
+    if not seccion or not texto:
+        return jsonify({"error": "faltan_parametros"}), 400
+
+    try:
+        ruta = almacen_audio.ruta(sa.id_situacion, seccion, texto, sa.idioma or "es")
+    except ValueError:
+        return jsonify({"error": "seccion_invalida"}), 400
+
+    if not ruta.is_file():
+        return jsonify({"estado": "no_disponible"}), 404
+
+    return Response(
+        ruta.read_bytes(),
+        mimetype="audio/mpeg",
+        headers={
+            # `inline` para que el reproductor del navegador lo use sin
+            # descargar, y un nombre legible por si alguien sí lo descarga.
+            "Content-Disposition": f'inline; filename="{seccion}.mp3"',
+            "Cache-Control": "private, max-age=3600",
+        },
+    )
 
 
 @bp.put("/<int:id_situacion>")

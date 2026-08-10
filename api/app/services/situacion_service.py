@@ -306,10 +306,18 @@ def actualizar(
 
 
 def eliminar(id_situacion: int, usuario: Usuario) -> None:
-    """Elimina la situación (y sus versiones por cascade)."""
+    """Elimina la situación, sus versiones por cascade y su audio.
+
+    El audio vive en un volumen, no en la base de datos, así que ningún
+    `cascade` se lo lleva: hay que borrarlo a mano o el volumen acumularía
+    ficheros de situaciones que ya no existen — invisibles y creciendo.
+    """
+    from . import audio as almacen_audio
+
     sa = obtener(id_situacion, usuario)
     db.session.delete(sa)
     db.session.commit()
+    almacen_audio.borrar_los_de(id_situacion)
 
 
 def duplicar(

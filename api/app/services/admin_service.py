@@ -300,8 +300,12 @@ def eliminar_situacion(id_situacion: int, *, por: Usuario) -> dict[str, Any]:
         raise AdminError("situacion_no_encontrada", "No existe esa situación")
 
     datos = _metadatos_sa(sa)
+    from . import audio as almacen_audio
+
     db.session.delete(sa)
     db.session.commit()
+    # El audio no está en la base de datos: ningún cascade se lo lleva.
+    almacen_audio.borrar_los_de(id_situacion)
 
     log.info(
         "admin_situacion_eliminada",
@@ -386,9 +390,17 @@ def eliminar_usuario(
 
     if conservar_contenido:
         usuario.marcar_eliminado()
+        db.session.commit()
     else:
+        # Igual que en `baja.confirmar`: los ids antes de borrar, y el audio
+        # después. El volumen no lo alcanza ningún cascade.
+        from . import audio as almacen_audio
+
+        ids = [sa.id_situacion for sa in usuario.situaciones]
         db.session.delete(usuario)
-    db.session.commit()
+        db.session.commit()
+        for id_situacion in ids:
+            almacen_audio.borrar_los_de(id_situacion)
 
     log.info("admin_usuario_eliminado", actor=por.correo, **resumen)
     return resumen

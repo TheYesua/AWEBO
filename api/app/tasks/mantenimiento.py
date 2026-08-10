@@ -57,11 +57,22 @@ def purgar_cuentas_vencidas() -> dict:
                 "correo": usuario.correo,
                 "situaciones": len(usuario.situaciones),
                 "eliminado_en": usuario.eliminado_en.isoformat(),
+                # Los ids de sus SdA, por el mismo motivo que el resto: hacen
+                # falta después de borrar, y después ya no se pueden leer. El
+                # audio vive en un volumen y ningún cascade llega hasta él.
+                "ids_situaciones": [sa.id_situacion for sa in usuario.situaciones],
             }
         )
         db.session.delete(usuario)
 
     db.session.commit()
+
+    if purgadas:
+        from ..services import audio as almacen_audio
+
+        for cuenta in purgadas:
+            for id_situacion in cuenta["ids_situaciones"]:
+                almacen_audio.borrar_los_de(id_situacion)
 
     if purgadas:
         log.info(

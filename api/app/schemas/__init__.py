@@ -10,6 +10,7 @@ from .auth import (
 )
 from .situacion import (
     AdaptacionCreateIn,
+    AudioIn,
     DuplicarIn,
     SituacionCreateIn,
     SituacionListItemOut,
@@ -22,6 +23,7 @@ from .usuario import UsuarioOut, UsuarioUpdateIn
 
 __all__ = [
     "AdaptacionCreateIn",
+    "AudioIn",
     "ConfirmarBajaIn",
     "LoginIn",
     "SolicitarBajaIn",

@@ -219,9 +219,18 @@ def confirmar(token: str) -> dict:
 
     if conservar:
         usuario.marcar_eliminado()
+        db.session.commit()
     else:
+        # Los identificadores se recogen ANTES de borrar: después el cascade ya
+        # se ha llevado las filas y no hay a quién preguntarle qué audio había.
+        # El audio vive en un volumen y ningún cascade llega hasta él.
+        from . import audio as almacen_audio
+
+        ids = [sa.id_situacion for sa in usuario.situaciones]
         db.session.delete(usuario)
-    db.session.commit()
+        db.session.commit()
+        for id_situacion in ids:
+            almacen_audio.borrar_los_de(id_situacion)
 
     log.info("baja_confirmada", **resumen)
     return resumen
