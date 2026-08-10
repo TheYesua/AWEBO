@@ -8,6 +8,14 @@
   </p>
   <h1 id="titulo-h1">{{ _('Cargando…') }}</h1>
 
+  {# Solo aparece si esta SA es una adaptación cuyo original ya no existe.
+     Se decidió que la adaptación sobreviva —el trabajo de adaptar es de quien
+     lo hizo—, pero sin decirlo quedaría una SA marcada como adaptación, sin
+     enlace al original y sin ninguna explicación de por qué. #}
+  <p class="alert" id="origen-desaparecido" role="status" hidden>
+    {{ _('El original del que salió esta adaptación ya no existe: su autor o autora dio de baja la cuenta. Tu adaptación se conserva íntegra y sigue siendo tuya; lo único que se pierde es el enlace al documento de partida.') }}
+  </p>
+
   <article class="card" id="detalle-card" aria-labelledby="t-datos" hidden>
     <h2 id="t-datos" class="sr-only">{{ _('Datos de la situación') }}</h2>
     <form id="sa-form" class="form" novalidate>
@@ -360,9 +368,14 @@ async function cargar() {
   mostrarEstado(sa.estado);
   // Para que el render de "atención a la diversidad" sepa qué bloques
   // ocultar cuando la SA es una adaptación curricular.
-  window.SA_ADAPTACION = sa.id_situacion_origen
+  //
+  // `es_adaptacion` y no `id_situacion_origen`: la clave ajena se queda en
+  // NULL si el original se borra, y con la comprobación anterior una
+  // adaptación huérfana volvía a pintarse como una SA normal.
+  window.SA_ADAPTACION = sa.es_adaptacion
     ? { tipo: sa.tipo_adaptacion }
     : null;
+  document.getElementById('origen-desaparecido').hidden = !sa.origen_desaparecido;
   /* Antes de pintar: si no hay voz para el idioma de la SA, las secciones se
      dibujan ya sin botón de escucha, en lugar de aparecer y desaparecer. */
   const idiomaSA = sa.idioma || 'es';

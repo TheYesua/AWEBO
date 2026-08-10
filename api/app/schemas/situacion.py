@@ -120,6 +120,7 @@ class SituacionListItemOut(BaseModel):
     materia: str
     estado: EstadoLiteral
     es_adaptacion: bool
+    origen_desaparecido: bool
     fecha_creacion: datetime
     fecha_modificacion: datetime
 
@@ -132,6 +133,7 @@ class SituacionListItemOut(BaseModel):
             materia=sa.materia,
             estado=sa.estado,
             es_adaptacion=sa.es_adaptacion,
+            origen_desaparecido=sa.origen_desaparecido,
             fecha_creacion=sa.fecha_creacion,
             fecha_modificacion=sa.fecha_modificacion,
         )
@@ -161,6 +163,14 @@ class SituacionOut(BaseModel):
     id_situacion_origen: int | None
     tipo_adaptacion: TipoAdaptacionLiteral | None
     perfil_alumnado: str | None
+
+    # Los dos, y no solo el primero: `es_adaptacion` dice qué es esta SA y
+    # `origen_desaparecido` si su original sigue existiendo. Con solo
+    # `id_situacion_origen` la interfaz no puede distinguir «no es una
+    # adaptación» de «lo es y su original ya no está», que es justo el caso que
+    # hay que explicar.
+    es_adaptacion: bool
+    origen_desaparecido: bool
 
     fecha_creacion: datetime
     fecha_modificacion: datetime

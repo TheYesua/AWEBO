@@ -188,11 +188,39 @@
   </p>
   <h3>{{ _('Si olvidas la contraseña') }}</h3>
   <p>
-    {{ _('Entra en <a href="/restablecer-contrasena">¿Olvidaste tu contraseña?</a>, indica tu correo y escribe una contraseña nueva. El cambio es inmediato: en esta versión no se envía ningún correo de confirmación, porque AWEBO todavía no tiene servidor de correo. La verificación por correo está prevista antes de cualquier despliegue real.')|safe }}
+    {{ _('Entra en <a href="/restablecer-contrasena">¿Olvidaste tu contraseña?</a> y escribe tu correo. Te llegará un mensaje con un enlace para elegir una contraseña nueva; caduca en <strong>una hora</strong> y solo sirve una vez. Mientras no lo abras, tu contraseña sigue siendo la de siempre, así que si recibes ese correo sin haberlo pedido no tienes que hacer nada.')|safe }}
   </p>
-  <h3>{{ _('Si tu cuenta se elimina') }}</h3>
+  <p class="help">
+    {{ _('La pantalla responde lo mismo exista o no una cuenta con esa dirección. Es a propósito: si distinguiera los dos casos, cualquiera podría usar el formulario para averiguar quién está registrado.') }}
+  </p>
+
+  <h3>{{ _('Si quieres darte de baja') }}</h3>
   <p>
-    {{ _('Las cuentas las elimina un administrador; no hay opción de darse de baja desde el perfil. Al eliminarla, ni la cuenta ni sus situaciones se borran de inmediato: quedan retenidas <strong>90 días</strong>. Durante ese plazo, si vuelves a registrarte con el mismo correo puedes solicitar recuperar tu contenido, y un administrador tendrá que aprobarlo. Pasado el plazo, el borrado es definitivo.')|safe }}
+    {{ _('Puedes hacerlo tú desde <a href="/perfil">tu perfil</a>, al final de la página. Te pediremos tu contraseña actual y te enviaremos un correo con un enlace de confirmación que caduca en <strong>media hora</strong>. Hasta que no abras ese enlace no se aplica nada.')|safe }}
+  </p>
+  <p>
+    {{ _('Antes de confirmar tienes que elegir qué pasa con tus situaciones de aprendizaje, y las dos opciones son muy distintas:') }}
+  </p>
+  <ul>
+    <li>
+      {{ _('<strong>Borrarlo todo.</strong> Tu cuenta y tus situaciones se eliminan de inmediato y para siempre. No hay plazo de recuperación ni forma de deshacerlo.')|safe }}
+    </li>
+    <li>
+      {{ _('<strong>Conservar tus situaciones.</strong> Tu cuenta deja de poder entrar, pero el contenido se guarda <strong>90 días</strong>. Si dentro de ese plazo vuelves a registrarte con el mismo correo, puedes pedir recuperarlo; lo aprueba un administrador. Pasado el plazo, el borrado es definitivo.')|safe }}
+    </li>
+  </ul>
+  <p class="help">
+    {{ _('Si eres la única persona administradora, el sistema no te dejará darte de baja: la plataforma se quedaría sin nadie que gestione cuentas ni apruebe recuperaciones. Nombra a otra antes.') }}
+  </p>
+
+  <h3>{{ _('Si tu cuenta la elimina un administrador') }}</h3>
+  <p>
+    {{ _('Un administrador también puede dar de baja una cuenta, con las mismas dos modalidades. Si eligió conservar el contenido, se aplica el mismo plazo de 90 días y la misma vía para recuperarlo.') }}
+  </p>
+
+  <h3>{{ _('Si adaptaste una situación de otra persona y esa cuenta desaparece') }}</h3>
+  <p>
+    {{ _('Tu adaptación no se borra: es tuya y se conserva íntegra, con su tipo de adaptación y su perfil de alumnado. Lo único que se pierde es el enlace al documento del que partió, y al abrirla verás un aviso que lo explica.') }}
   </p>
 </article>
 

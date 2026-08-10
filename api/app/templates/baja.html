@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+{% block title %}{{ _('Confirmar la baja') }} · AWEBO{% endblock %}
+
+{#
+  Pantalla que abre el enlace del correo. No pide sesión: el enlace se abre
+  donde esté el buzón, que suele ser otro navegador.
+
+  Aquí NO se elige el modo. El modo lo decidió quien pidió la baja y viaja
+  firmado dentro del token; esta pantalla solo confirma. Ofrecer aquí la
+  elección permitiría que un enlace pedido para conservar el contenido acabara
+  borrándolo todo.
+#}
+
+{% block content %}
+<section class="form-section" aria-labelledby="t-baja">
+  <h1 id="t-baja">{{ _('Confirmar la baja de tu cuenta') }}</h1>
+
+  <div id="fase-confirmar" hidden>
+    <p class="lead">
+      {{ _('Vas a confirmar la baja que pediste desde tu perfil. Esta es la última pantalla: al pulsar el botón se aplica.') }}
+    </p>
+    <p class="help">
+      {{ _('Qué ocurre exactamente depende del modo que elegiste al pedirla, y te lo indicamos en el correo.') }}
+    </p>
+
+    <div class="actions">
+      <button type="button" class="btn btn--danger" id="confirmar-btn">
+        {{ _('Confirmar la baja') }}
+      </button>
+      <a href="/perfil" class="btn">{{ _('No, cancelar') }}</a>
+    </div>
+    <p class="alert" id="baja-msg" role="alert" hidden></p>
+  </div>
+
+  <div id="fase-hecho" hidden>
+    <p class="alert alert--ok" role="status" id="hecho-msg"></p>
+    <div class="actions"><a href="/" class="btn">{{ _('Ir al inicio') }}</a></div>
+  </div>
+
+  <div id="fase-sin-token" hidden>
+    <p class="alert" role="alert">
+      {{ _('Este enlace no lleva ningún código. Ábrelo desde el correo que te enviamos.') }}
+    </p>
+    <div class="actions"><a href="/perfil" class="btn">{{ _('Volver a mi perfil') }}</a></div>
+  </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script>
+const T = {
+  procesando: {{ _('Procesando…')|tojson }},
+  errorDesconocido: {{ _('Error desconocido')|tojson }},
+  sinServidor: {{ _('No se ha podido contactar con el servidor.')|tojson }},
+  hechoLapida: {{ _('Tu cuenta ha quedado dada de baja. Tus situaciones se conservan durante el plazo de gracia: si vuelves a registrarte con el mismo correo podrás reclamarlas.')|tojson }},
+  hechoTotal: {{ _('Tu cuenta y todas tus situaciones se han borrado definitivamente.')|tojson }},
+};
+
+const token = new URLSearchParams(window.location.search).get('token');
+document.getElementById(token ? 'fase-confirmar' : 'fase-sin-token').hidden = false;
+
+const btn = document.getElementById('confirmar-btn');
+if (btn) {
+  btn.addEventListener('click', async () => {
+    const msg = document.getElementById('baja-msg');
+    msg.hidden = true;
+    const original = btn.textContent;
+    btn.disabled = true;
+    btn.setAttribute('aria-busy', 'true');
+    btn.textContent = T.procesando;
+
+    let res, body;
+    try {
+      res = await fetch('/auth/confirmar-baja', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({ token }),
+      });
+      body = await res.json().catch(() => ({}));
+    } catch (_) {
+      msg.textContent = T.sinServidor;
+      msg.hidden = false;
+      btn.disabled = false;
+      btn.removeAttribute('aria-busy');
+      btn.textContent = original;
+      return;
+    }
+
+    if (res.ok) {
+      /* El mensaje lo decide el modo que devuelve el servidor, no lo que
+         creyera esta pantalla: es el token quien manda. */
+      document.getElementById('fase-confirmar').hidden = true;
+      document.getElementById('hecho-msg').textContent =
+        body.modo === 'total' ? T.hechoTotal : T.hechoLapida;
+      document.getElementById('fase-hecho').hidden = false;
+      return;
+    }
+
+    msg.textContent = body.mensaje || body.error || T.errorDesconocido;
+    msg.hidden = false;
+    btn.disabled = false;
+    btn.removeAttribute('aria-busy');
+    btn.textContent = original;
+  });
+}
+</script>
+{% endblock %}

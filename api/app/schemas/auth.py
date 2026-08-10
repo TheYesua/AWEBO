@@ -85,3 +85,32 @@ class RestablecerConTokenIn(BaseModel):
 
     token: str = Field(min_length=10, max_length=1024)
     nueva_contrasena: str = Field(min_length=8, max_length=128)
+
+
+class SolicitarBajaIn(BaseModel):
+    """Petición de baja desde el perfil: contraseña actual y modo.
+
+    ``conservar_contenido`` **no tiene valor por defecto** a propósito. Los dos
+    modos hacen cosas muy distintas —uno se puede deshacer durante 90 días y el
+    otro no—, así que un cuerpo que se olvide del campo debe rebotar en vez de
+    elegir por su cuenta. Cualquier defecto que pusiéramos sería el equivocado
+    la mitad de las veces, y en la mitad irreversible.
+    """
+
+    model_config = ConfigDict(extra="forbid", str_strip_whitespace=True)
+
+    contrasena: str = Field(min_length=1, max_length=128)
+    conservar_contenido: bool
+
+
+class ConfirmarBajaIn(BaseModel):
+    """Solo el token del enlace.
+
+    El modo no se pide: viaja firmado dentro del token. Aceptarlo aquí
+    permitiría que quien pidió conservar su contenido acabara borrándolo todo
+    por manipular la petición.
+    """
+
+    model_config = ConfigDict(extra="forbid", str_strip_whitespace=True)
+
+    token: str = Field(min_length=10, max_length=1024)

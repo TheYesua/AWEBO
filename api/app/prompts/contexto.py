@@ -87,10 +87,18 @@ def construir_contexto(sa: SituacionAprendizaje) -> ContextoGeneracion:
     criterios = _cargar_criterios(sa.materia, sa.curso)
     saberes = _cargar_saberes(sa.materia, sa.curso)
 
-    es_adaptacion = sa.id_situacion_origen is not None
+    # Se pregunta al modelo en lugar de repetir aquí la regla. Cuando estaban
+    # duplicadas, arreglar una y olvidar la otra era cuestión de tiempo: de
+    # hecho es lo que pasó con las adaptaciones huérfanas.
+    es_adaptacion = sa.es_adaptacion
     contenido_origen_resumen: str | None = None
     titulo_origen: str | None = None
-    if es_adaptacion:
+    # `and sa.id_situacion_origen` porque desde que `es_adaptacion` mira
+    # `tipo_adaptacion`, una adaptación huérfana entra aquí con la clave en
+    # NULL. Consultar con ella devuelve None igualmente, pero SQLAlchemy avisa
+    # («fully NULL primary key identity cannot load any object») y anuncia que
+    # en el futuro será un error.
+    if es_adaptacion and sa.id_situacion_origen is not None:
         sa_origen = db.session.get(SituacionAprendizaje, sa.id_situacion_origen)
         if sa_origen is not None:
             titulo_origen = sa_origen.titulo

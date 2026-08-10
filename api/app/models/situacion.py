@@ -241,8 +241,33 @@ class SituacionAprendizaje(db.Model):
     # ---------- Helpers ----------
     @property
     def es_adaptacion(self) -> bool:
-        """True si la situación es una adaptación derivada de otra."""
-        return self.id_situacion_origen is not None
+        """True si la situación se creó como adaptación curricular.
+
+        Mira ``tipo_adaptacion`` y **no** ``id_situacion_origen``. La clave
+        ajena es ``ON DELETE SET NULL``, así que si el original desaparece
+        —porque su autor se dio de baja en modo total— se queda en NULL. Con la
+        definición anterior, la adaptación dejaba de considerarse adaptación en
+        ese momento: pasaba a mostrarse como una SA normal y, peor,
+        ``construir_contexto`` perdía la marca, de modo que al regenerar
+        cualquier sección se caía el bloque de atención a la diversidad sin que
+        nadie lo notara —el texto salía bien escrito, solo que sin adaptar—.
+
+        ``tipo_adaptacion`` es el dato que sobrevive y el que dice la verdad:
+        haber sido adaptada es un hecho del pasado que no deshace el borrado de
+        otra cuenta.
+        """
+        return self.tipo_adaptacion is not None
+
+    @property
+    def origen_desaparecido(self) -> bool:
+        """True si es una adaptación cuyo original ya no existe.
+
+        Es lo que permite a la interfaz explicar el caso en vez de mostrar una
+        adaptación sin enlace y sin motivo aparente. Se decidió que la
+        adaptación sobreviva: el trabajo de adaptar es de quien lo hizo, y
+        perderlo porque otra persona se marcha sería un castigo por algo ajeno.
+        """
+        return self.tipo_adaptacion is not None and self.id_situacion_origen is None
 
     def __repr__(self) -> str:  # pragma: no cover
         return (

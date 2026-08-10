@@ -6,10 +6,12 @@ from flask_login import current_user, login_required, login_user, logout_user
 
 from ..extensions import db, limiter
 from ..schemas import (
+    ConfirmarBajaIn,
     LoginIn,
     RegisterIn,
     RestablecerConTokenIn,
     ResetPasswordIn,
+    SolicitarBajaIn,
     SolicitarRestablecimientoIn,
     UsuarioOut,
 )
@@ -19,6 +21,9 @@ from ..services.auth_service import (
     registrar_usuario,
     resetear_contrasena,
 )
+from ..services.baja import BajaError
+from ..services.baja import confirmar as confirmar_baja_servicio
+from ..services.baja import solicitar as solicitar_baja_servicio
 from ..services.restablecimiento import TokenInvalido, restablecer, solicitar
 
 
@@ -145,6 +150,81 @@ def cambiar_contrasena():
     current_user.set_password(data.nueva_contrasena)
     db.session.commit()
     return jsonify({"resultado": "ok"}), 200
+
+
+@bp.post("/solicitar-baja")
+@login_required
+@limiter.limit("5 per hour")
+def solicitar_baja():
+    """Primer paso de la baja: comprueba la contraseña y manda el enlace.
+
+    **Aquí sí se explica el error**, al contrario que en el restablecimiento.
+    Allí callar el motivo evita que el formulario sirva para averiguar qué
+    direcciones tienen cuenta; aquí hay sesión iniciada y se está hablando de
+    la cuenta propia, así que no hay nada que ocultar y sí hay algo que
+    explicar: si la contraseña está mal, quien la teclea necesita saberlo.
+    """
+    data = SolicitarBajaIn.model_validate(request.get_json(silent=True) or {})
+    try:
+        solicitar_baja_servicio(
+            current_user,
+            data.contrasena,
+            conservar_contenido=data.conservar_contenido,
+        )
+    except BajaError as exc:
+        return jsonify({"error": exc.code, "mensaje": exc.message}), 400
+    return (
+        jsonify(
+            {
+                "resultado": "ok",
+                "mensaje": "Te hemos enviado un correo para confirmar la baja.",
+            }
+        ),
+        202,
+    )
+
+
+@bp.post("/confirmar-baja")
+@limiter.limit("10 per hour")
+def confirmar_baja():
+    """Segundo paso: aplica la baja del modo que diga el enlace.
+
+    **Sin ``@login_required`` a propósito.** El enlace llega al correo y se
+    abre donde esté abierto el buzón, que muchas veces es otro navegador u otro
+    dispositivo. Exigir sesión obligaría a iniciarla justo para darse de baja, y
+    no añadiría seguridad: el token ya identifica a su dueño, va firmado, sirve
+    una vez y caduca en media hora.
+    """
+    data = ConfirmarBajaIn.model_validate(request.get_json(silent=True) or {})
+    try:
+        resumen = confirmar_baja_servicio(data.token)
+    except TokenInvalido:
+        return (
+            jsonify(
+                {
+                    "error": "token_invalido",
+                    "mensaje": "El enlace no es válido o ha caducado. Pide uno nuevo.",
+                }
+            ),
+            400,
+        )
+    except BajaError as exc:
+        # El caso real: entre pedir la baja y confirmarla, esta cuenta se quedó
+        # como única administradora.
+        return jsonify({"error": exc.code, "mensaje": exc.message}), 409
+
+    # Cerrar la sesión de quien está confirmando, si la tiene.
+    #
+    # Escribí aquí que esto «no era imprescindible porque ``load_user`` ya
+    # rechaza una fila borrada o con lápida». Al sabotearlo se vio lo
+    # contrario: quitando esta línea, los dos tests de sesión fallan. La
+    # segunda red existe, pero es la siguiente petición quien la aplica, y
+    # hasta entonces la respuesta a **esta** petición sigue llevando una cookie
+    # de sesión válida. Cerrarla aquí es lo único que la mata en el acto.
+    if current_user.is_authenticated:
+        logout_user()
+
+    return jsonify({"resultado": "ok", **resumen}), 200
 
 
 @bp.post("/logout")

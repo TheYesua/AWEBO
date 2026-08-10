@@ -40,6 +40,17 @@ def restablecer_contrasena_page():
     return render_template("restablecer_contrasena.html")
 
 
+@bp.get("/baja")
+def baja_page():
+    """Pantalla que abre el enlace de confirmación de baja.
+
+    Sin `login_required`: el enlace llega al correo y se abre donde esté el
+    buzón, que a menudo es otro navegador. Exigir sesión aquí obligaría a
+    iniciarla justo para darse de baja.
+    """
+    return render_template("baja.html")
+
+
 @bp.get("/situaciones")
 def situaciones_listar_page():
     return render_template("situaciones/listar.html")

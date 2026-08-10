@@ -34,7 +34,18 @@ from itsdangerous import BadSignature, SignatureExpired, URLSafeTimedSerializer
 #: propósito entra en la firma como «sal», así que un token emitido para una
 #: acción no verifica contra la otra.
 PROPOSITO_RESTABLECER = "restablecer-contrasena"
-PROPOSITO_BAJA = "dar-de-baja"
+
+#: La baja tiene dos modos y **un propósito distinto para cada uno**, en lugar
+#: de un propósito único con el modo guardado dentro del token.
+#:
+#: Los dos servirían: el contenido del token también va firmado, así que nadie
+#: puede cambiar el modo por el camino. Se eligen dos propósitos porque la
+#: propiedad que importa —un enlace emitido para conservar el contenido no
+#: puede acabar borrándolo todo— queda garantizada por el mismo mecanismo ya
+#: probado que impide que un enlace de restablecimiento dé de baja una cuenta,
+#: en vez de por una comprobación más que habría que acordarse de escribir.
+PROPOSITO_BAJA_CONSERVANDO = "dar-de-baja-conservando"
+PROPOSITO_BAJA_TOTAL = "dar-de-baja-total"
 
 #: Una hora. Suficiente para ir al correo y volver, corto para que un enlace
 #: olvidado en una bandeja compartida deje de servir pronto.
@@ -91,9 +102,17 @@ def generar_restablecimiento(usuario) -> str:
     return generar(usuario, PROPOSITO_RESTABLECER)
 
 
-def generar_baja(usuario) -> str:
-    """Token de un solo uso para confirmar la baja de ``usuario``."""
-    return generar(usuario, PROPOSITO_BAJA)
+def generar_baja(usuario, *, conservar_contenido: bool) -> str:
+    """Token de un solo uso para confirmar la baja de ``usuario``.
+
+    El modo va en el propósito, no en un parámetro que haya que volver a pasar
+    al confirmar: así el enlace que llega al correo ya decide qué va a pasar, y
+    no depende de lo que traiga la petición que lo abra.
+    """
+    return generar(
+        usuario,
+        PROPOSITO_BAJA_CONSERVANDO if conservar_contenido else PROPOSITO_BAJA_TOTAL,
+    )
 
 
 def leer_restablecimiento(token: str) -> int:
@@ -101,9 +120,30 @@ def leer_restablecimiento(token: str) -> int:
     return leer(token, PROPOSITO_RESTABLECER, CADUCIDAD_RESTABLECER)
 
 
-def leer_baja(token: str) -> int:
-    """Atajo para el propósito de baja."""
-    return leer(token, PROPOSITO_BAJA, CADUCIDAD_BAJA)
+def leer_baja(token: str) -> tuple[int, bool]:
+    """Devuelve ``(id_usuario, conservar_contenido)`` si el token vale.
+
+    Hay que probar los dos propósitos porque el enlace no dice cuál es —si lo
+    dijera, se podría cambiar—. Se prueban en orden y solo se pasa al siguiente
+    cuando el fallo es de **firma**, que es lo que significa «este token no era
+    de este propósito».
+
+    Un token caducado o ya usado se propaga tal cual en lugar de seguir
+    probando: si se enmascarasen, un enlace caducado acabaría respondiendo
+    «firma inválida», y ese mensaje manda a quien lo lea a buscar un problema
+    que no existe.
+    """
+    modos = (
+        (PROPOSITO_BAJA_CONSERVANDO, True),
+        (PROPOSITO_BAJA_TOTAL, False),
+    )
+    for proposito, conservar in modos:
+        try:
+            return leer(token, proposito, CADUCIDAD_BAJA), conservar
+        except TokenInvalido as exc:
+            if exc.motivo != "firma_invalida":
+                raise
+    raise TokenInvalido("firma_invalida")
 
 
 def leer(token: str, proposito: str, caducidad: int) -> int:

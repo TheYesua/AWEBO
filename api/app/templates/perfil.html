@@ -125,6 +125,74 @@
       </form>
     </div>
   </article>
+
+  <!-- ------------------------------------------------------------------ -->
+  <!-- Baja de la cuenta                                                    -->
+  <!--                                                                      -->
+  <!-- Va al final y detrás de un botón: no es una acción que se busque por  -->
+  <!-- error, y tenerla siempre desplegada junto a «guardar cambios» invita  -->
+  <!-- a un clic que no se puede deshacer.                                   -->
+  <!-- ------------------------------------------------------------------ -->
+  <article class="card" aria-labelledby="t-baja">
+    <h2 id="t-baja">{{ _('Dar de baja mi cuenta') }}</h2>
+
+    <div id="baja-cerrado">
+      <p class="help">
+        {{ _('Puedes darte de baja tú mismo. Te pediremos tu contraseña y te enviaremos un correo para confirmarlo.') }}
+      </p>
+      <div class="actions">
+        <button type="button" class="btn btn--danger" id="baja-abrir">
+          {{ _('Quiero darme de baja') }}
+        </button>
+      </div>
+    </div>
+
+    <form id="baja-form" class="form" novalidate hidden>
+      <fieldset class="field">
+        <legend>{{ _('¿Qué hacemos con tus situaciones de aprendizaje?') }}</legend>
+
+        <!-- Sin ninguna opción marcada de inicio, y el borrado total el
+             primero de los dos porque es lo que suele querer quien ejerce su
+             derecho de supresión. Marcar una por defecto sería elegir por la
+             persona en una decisión que la mitad de las veces no tiene vuelta
+             atrás. -->
+        <label class="radio">
+          <input type="radio" name="modo" value="total" required>
+          <span>
+            <strong>{{ _('Borrarlo todo') }}</strong><br>
+            <small class="help">{{ _('Se eliminan tu cuenta y todas tus situaciones de forma inmediata y definitiva. No se pueden recuperar.') }}</small>
+          </span>
+        </label>
+
+        <label class="radio">
+          <input type="radio" name="modo" value="conservar">
+          <span>
+            <strong>{{ _('Conservar mis situaciones durante el plazo de gracia') }}</strong><br>
+            <small class="help">{{ _('Tu cuenta deja de poder entrar, pero tus situaciones se guardan. Si vuelves a registrarte con este mismo correo dentro del plazo, podrás reclamarlas.') }}</small>
+          </span>
+        </label>
+      </fieldset>
+
+      <div class="field">
+        <label for="baja-contrasena">
+          {{ _('Tu contraseña actual') }}
+          <span class="req" aria-hidden="true">*</span>
+          <span class="sr-only">{{ _('(obligatorio)') }}</span>
+        </label>
+        <input type="password" id="baja-contrasena" name="contrasena"
+               autocomplete="current-password" required>
+        <small class="help">{{ _('La pedimos porque una sesión abierta en un ordenador compartido no basta para borrar una cuenta.') }}</small>
+      </div>
+
+      <div class="actions">
+        <button type="submit" class="btn btn--danger" id="baja-enviar">
+          {{ _('Enviarme el correo de confirmación') }}
+        </button>
+        <button type="button" class="btn" id="baja-cancelar">{{ _('Cancelar') }}</button>
+      </div>
+      <p class="alert" id="baja-msg" role="alert" hidden></p>
+    </form>
+  </article>
 </section>
 {% endblock %}
 
@@ -133,6 +201,10 @@
 /* Cadenas del JavaScript, que no pasan por _() del servidor. */
 const T = {
   errorDesconocido: {{ _('Error desconocido')|tojson }},
+  bajaSinModo: {{ _('Elige qué quieres que pase con tus situaciones.')|tojson }},
+  bajaEnviando: {{ _('Enviando…')|tojson }},
+  bajaEnviado: {{ _('Te hemos enviado un correo. Abre el enlace para confirmar la baja; caduca en media hora.')|tojson }},
+  sinServidorBaja: {{ _('No se ha podido contactar con el servidor.')|tojson }},
   proveedorSistema: {{ _('Se usará el proveedor del sistema.')|tojson }},
   usarDelSistema: {{ _('Usar el del sistema')|tojson }},
   preferenciaGuardada: {{ _('Preferencia guardada.')|tojson }},
@@ -358,5 +430,80 @@ document.getElementById('password-form').addEventListener('submit', async (ev) =
 });
 
 cargarPerfil();
+
+/* ---------------------------------------------------------------------- */
+/* Baja de la cuenta                                                       */
+/* ---------------------------------------------------------------------- */
+const bajaCerrado = document.getElementById('baja-cerrado');
+const bajaForm = document.getElementById('baja-form');
+
+document.getElementById('baja-abrir')?.addEventListener('click', () => {
+  bajaCerrado.hidden = true;
+  bajaForm.hidden = false;
+  bajaForm.querySelector('input[name="modo"]').focus();
+});
+
+document.getElementById('baja-cancelar')?.addEventListener('click', () => {
+  bajaForm.reset();
+  bajaForm.hidden = true;
+  bajaCerrado.hidden = false;
+  document.getElementById('baja-msg').hidden = true;
+});
+
+bajaForm?.addEventListener('submit', async (ev) => {
+  ev.preventDefault();
+  const msg = document.getElementById('baja-msg');
+  const btn = document.getElementById('baja-enviar');
+  msg.hidden = false;
+  msg.classList.remove('alert--ok');
+
+  const modo = bajaForm.querySelector('input[name="modo"]:checked');
+  if (!modo) {
+    /* No se envía nada sin modo elegido: el servidor también lo rechaza, pero
+       el viaje de ida y vuelta para decir «elige una opción» sobra. */
+    msg.textContent = T.bajaSinModo;
+    return;
+  }
+
+  const original = btn.textContent;
+  btn.disabled = true;
+  btn.setAttribute('aria-busy', 'true');
+  btn.textContent = T.bajaEnviando;
+
+  let res, body;
+  try {
+    res = await fetch('/auth/solicitar-baja', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({
+        contrasena: document.getElementById('baja-contrasena').value,
+        conservar_contenido: modo.value === 'conservar',
+      }),
+    });
+    body = await res.json().catch(() => ({}));
+  } catch (_) {
+    msg.textContent = T.sinServidorBaja;
+    btn.disabled = false;
+    btn.removeAttribute('aria-busy');
+    btn.textContent = original;
+    return;
+  }
+
+  if (res.ok) {
+    msg.textContent = T.bajaEnviado;
+    msg.classList.add('alert--ok');
+    bajaForm.reset();
+    /* El formulario se deja cerrado: la acción ya está en marcha y volver a
+       pulsar solo mandaría un segundo correo. */
+    bajaForm.hidden = true;
+    bajaCerrado.hidden = false;
+    return;
+  }
+
+  msg.textContent = body.mensaje || body.error || T.errorDesconocido;
+  btn.disabled = false;
+  btn.removeAttribute('aria-busy');
+  btn.textContent = original;
+});
 </script>
 {% endblock %}
