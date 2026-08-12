@@ -320,7 +320,14 @@ Actions.
 
 ## Copias de seguridad
 
-`respaldar.ps1` vuelca la base de datos y **comprueba la copia restaurándola**:
+> **Los guiones de operación no están en este repositorio.** `respaldar.ps1`,
+> `verificar.ps1` y compañía viven en `scripts/`, fuera del árbol publicado:
+> son de uso interno y no aportan nada a quien viene a leer el código. Lo que
+> sigue describe **cómo funciona la copia de seguridad**, que sí es una
+> decisión de diseño que merece contarse; el guion en sí no se distribuye.
+
+El guion de respaldo vuelca la base de datos y **comprueba la copia
+restaurándola**:
 la carga en una base de usar y tirar dentro del mismo contenedor y compara los
 recuentos de todas las tablas contra el original. Si no cuadran, avisa en ese
 momento y devuelve código de error.
@@ -405,7 +412,8 @@ docker compose start api worker beat
 no es el veredicto**. El veredicto es el paso 5.
 
 Si vas a restaurar sobre una base de datos que aún tiene algo aprovechable,
-haz antes una copia de lo que hay: `.\respaldar.ps1 -SinVerificar`.
+haz antes una copia de lo que hay — con `pg_dump` o con el guion de respaldo
+en su modo rápido, si lo tienes.
 
 ## Seguridad y privacidad
 
