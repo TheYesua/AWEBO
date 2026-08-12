@@ -122,11 +122,24 @@ class TestCatalogos:
         [
             ("ca", "Situacions d'Aprenentatge"),
             ("gl", "Situacións de Aprendizaxe"),
-            ("eu", "Ikaskuntza Egoerak"),
+            ("eu", "Ikaskuntza-egoerak"),
         ],
     )
     def test_la_terminologia_curricular_esta_traducida(self, app, idioma, esperado):
-        """El término que más se ve y el que peor sienta mal traducido."""
+        """El término que más se ve y el que peor sienta mal traducido.
+
+        El euskera llevaba «Ikaskuntza Egoerak», sin guion, desde que se
+        escribieron los catálogos. Se corrigió el 11/08/2026 al contrastarlo
+        con el texto en euskera del 77/2023 Dekretua, que lo escribe con guion
+        en todas sus apariciones: en euskera ese guion marca que el compuesto
+        es una unidad léxica, y sin él se lee como dos palabras sueltas.
+
+        Este test **fijaba la forma equivocada**, así que la protegía en vez de
+        detectarla. Es el riesgo de escribir un test de terminología sin haber
+        mirado la fuente: queda igual de verde y da la misma sensación de
+        cobertura. Las fuentes de los tres idiomas están ahora citadas en
+        `tests/unit/test_terminologia_oficial.py`.
+        """
         salida = _render(
             app,
             "{{ _('Situaciones de Aprendizaje') }}",

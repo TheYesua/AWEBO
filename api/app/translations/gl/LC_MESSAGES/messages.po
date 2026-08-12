@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: AWEBO VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-08-10 15:19+0200\n"
+"POT-Creation-Date: 2026-08-12 12:49+0200\n"
 "PO-Revision-Date: 2026-08-04 15:31+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: gl\n"
@@ -18,13 +18,59 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.18.0\n"
 
+#: app/services/baja.py:120
+#, python-brace-format
+msgid ""
+"Tu cuenta dejará de poder entrar y tus situaciones de aprendizaje se "
+"conservarán {dias} días, durante los cuales puedes recuperarlas volviendo"
+" a registrarte con este mismo correo."
+msgstr ""
+"A túa conta deixará de poder entrar e as túas situacións de aprendizaxe "
+"conservaranse {dias} días, durante os cales podes recuperalas volvendo "
+"rexistrarte con este mesmo correo."
+
+#: app/services/baja.py:126
+msgid ""
+"Se borrarán tu cuenta y todas tus situaciones de aprendizaje de forma "
+"inmediata y definitiva. No se pueden recuperar después."
+msgstr ""
+"Borraranse a túa conta e todas as túas situacións de aprendizaxe de forma"
+" inmediata e definitiva. Non se poden recuperar despois."
+
+#: app/services/baja.py:131
+msgid ""
+"Si no has sido tú, no hagas nada: mientras no se abra el enlace, tu "
+"cuenta sigue como estaba. Y cambia tu contraseña, porque para llegar "
+"hasta aquí alguien ha tenido que escribirla."
+msgstr ""
+"Se non fuches ti, non fagas nada: mentres non se abra a ligazón, a túa "
+"conta segue como estaba. E cambia o teu contrasinal, porque para chegar "
+"ata aquí alguén tivo que escribilo."
+
+#: app/services/baja.py:135
+#, python-brace-format
+msgid "El enlace caduca en {minutos} minutos y solo se puede usar una vez."
+msgstr "A ligazón caduca en {minutos} minutos e só se pode usar unha vez."
+
+#: app/services/baja.py:138
+msgid "Has pedido dar de baja tu cuenta de AWEBO."
+msgstr "Pediches dar de baixa a túa conta de AWEBO."
+
+#: app/services/baja.py:140
+msgid "Si es lo que quieres, abre este enlace para confirmarlo:"
+msgstr "Se é o que queres, abre esta ligazón para confirmalo:"
+
+#: app/services/baja.py:183
+msgid "Confirma la baja de tu cuenta de AWEBO"
+msgstr "Confirma a baixa da túa conta de AWEBO"
+
 #: app/services/exportacion_service.py:48
-#: app/templates/situaciones/detalle.html:298
+#: app/templates/situaciones/detalle.html:303
 msgid "Descripción de la situación"
 msgstr "Descrición da situación"
 
 #: app/services/exportacion_service.py:49
-#: app/templates/situaciones/detalle.html:299
+#: app/templates/situaciones/detalle.html:304
 msgid "Objetivos didácticos"
 msgstr "Obxectivos didácticos"
 
@@ -33,7 +79,7 @@ msgid "Conexión curricular"
 msgstr "Conexión curricular"
 
 #: app/services/exportacion_service.py:51
-#: app/templates/situaciones/detalle.html:301
+#: app/templates/situaciones/detalle.html:306
 msgid "Secuencia de sesiones"
 msgstr "Secuencia de sesións"
 
@@ -45,74 +91,249 @@ msgstr "Avaliación"
 msgid "Atención a la diversidad"
 msgstr "Atención á diversidade"
 
+#: app/services/reclamacion.py:144
+#, python-brace-format
+msgid ""
+"Alguien se ha registrado en AWEBO con la dirección de una cuenta que "
+"diste de baja, y ha pedido recuperar su contenido: {cuantas} "
+"situación(es) de aprendizaje."
+msgstr ""
+"Alguén rexistrouse en AWEBO co enderezo dunha conta que deches de baixa, "
+"e pediu recuperar o seu contido: {cuantas} situación(s) de aprendizaxe."
+
+#: app/services/reclamacion.py:149
+msgid ""
+"SI ERES TÚ —por ejemplo, has cambiado de centro y vuelves con otra "
+"dirección— confírmalo aquí:"
+msgstr ""
+"SE ES TI —por exemplo, cambiaches de centro e volves con outro enderezo— "
+"confírmao aquí:"
+
+#: app/services/reclamacion.py:153
+msgid ""
+"SI NO ERES TÚ, no hagas nada. Sin tu confirmación, ese contenido no se "
+"entrega: seguirá retenido hasta que venza el plazo y se borre. Si "
+"quieres, puedes avisar a la administración de AWEBO."
+msgstr ""
+"SE NON ES TI, non fagas nada. Sen a túa confirmación, ese contido non se "
+"entrega: seguirá retido ata que venza o prazo e se borre. Se queres, "
+"podes avisar á administración de AWEBO."
+
+#: app/services/reclamacion.py:157
+#, python-brace-format
+msgid "El enlace caduca en {dias} días."
+msgstr "A ligazón caduca en {dias} días."
+
+#: app/services/reclamacion.py:172
+msgid "¿Autorizas recuperar el contenido de tu cuenta de AWEBO?"
+msgstr "Autorizas recuperar o contido da túa conta de AWEBO?"
+
+#: app/services/respaldo.py:86
+#, python-brace-format
+msgid "El enlace caduca en {horas} horas."
+msgstr "A ligazón caduca en {horas} horas."
+
+#: app/services/respaldo.py:90
+msgid "Se ha pedido cambiar el correo de respaldo de tu cuenta de AWEBO."
+msgstr "Pediuse cambiar o correo de recuperación da túa conta de AWEBO."
+
+#: app/services/respaldo.py:91
+msgid "Si has sido tú, confírmalo aquí:"
+msgstr "Se fuches ti, confírmao aquí:"
+
+#: app/services/respaldo.py:94
+msgid ""
+"SI NO HAS SIDO TÚ, alguien tiene acceso a tu cuenta. Este correo es el "
+"único aviso que vas a recibir: entra en AWEBO, cambia tu contraseña y "
+"avisa a la administración. Mientras no abras el enlace, tu respaldo sigue"
+" siendo este."
+msgstr ""
+"SE NON FUCHES TI, alguén ten acceso á túa conta. Este correo é o único "
+"aviso que vas recibir: entra en AWEBO, cambia o teu contrasinal e avisa á"
+" administración. Mentres non abras a ligazón, o teu correo de "
+"recuperación segue sendo este."
+
+#: app/services/respaldo.py:109
+msgid ""
+"Sirve para recuperar tu cuenta si pierdes el correo del centro, y para "
+"demostrar que tus situaciones de aprendizaje son tuyas si alguna vez hay "
+"que reclamarlas."
+msgstr ""
+"Serve para recuperar a túa conta se perdes o correo do centro, e para "
+"demostrar que as túas situacións de aprendizaxe son túas se algunha vez "
+"hai que reclamalas."
+
+#: app/services/respaldo.py:114
+msgid ""
+"Si no has sido tú, ignora este mensaje: sin abrir el enlace no se guarda "
+"nada."
+msgstr ""
+"Se non fuches ti, ignora esta mensaxe: sen abrir a ligazón non se garda "
+"nada."
+
+#: app/services/respaldo.py:118
+msgid "Has añadido esta dirección como correo de respaldo de tu cuenta de AWEBO."
+msgstr ""
+"Engadiches este enderezo como correo de recuperación da túa conta de "
+"AWEBO."
+
+#: app/services/respaldo.py:119
+msgid "Confírmalo abriendo este enlace:"
+msgstr "Confírmao abrindo esta ligazón:"
+
+#: app/services/respaldo.py:204
+msgid "Confirma el cambio de tu correo de respaldo"
+msgstr "Confirma o cambio do teu correo de recuperación"
+
+#: app/services/respaldo.py:205
+msgid "Confirma tu correo de respaldo en AWEBO"
+msgstr "Confirma o teu correo de recuperación en AWEBO"
+
+#: app/services/restablecimiento.py:69
+msgid "Has pedido restablecer tu contraseña en AWEBO."
+msgstr "Pediches restablecer o teu contrasinal en AWEBO."
+
+#: app/services/restablecimiento.py:70
+msgid "Abre este enlace para elegir una nueva:"
+msgstr "Abre esta ligazón para escoller un novo:"
+
+#: app/services/restablecimiento.py:71
+#, python-brace-format
+msgid "El enlace caduca en {horas} hora(s) y solo se puede usar una vez."
+msgstr "A ligazón caduca en {horas} hora(s) e só se pode usar unha vez."
+
+#: app/services/restablecimiento.py:72
+msgid ""
+"Si no has sido tú, no hace falta que hagas nada: mientras no se abra el "
+"enlace, tu contraseña sigue siendo la de siempre."
+msgstr ""
+"Se non fuches ti, non cómpre que fagas nada: mentres non se abra a "
+"ligazón, o teu contrasinal segue sendo o de sempre."
+
+#: app/services/restablecimiento.py:139
+msgid "Restablecer tu contraseña de AWEBO"
+msgstr "Restablecer o teu contrasinal de AWEBO"
+
 #: app/templates/accesibilidad.html:7 app/templates/mapa_web.html:37
 msgid "Declaración de accesibilidad"
 msgstr "Declaración de accesibilidade"
 
 #: app/templates/accesibilidad.html:13
-msgid "La aplicación se ha diseñado conforme a las <abbr title=\"Web Content Accessibility Guidelines\">WCAG</abbr> 2.1 nivel AA."
-msgstr "A aplicación deseñouse conforme ás <abbr title=\"Web Content Accessibility Guidelines\">WCAG</abbr> 2.1 nivel AA."
+msgid ""
+"La aplicación se ha diseñado conforme a las <abbr title=\"Web Content "
+"Accessibility Guidelines\">WCAG</abbr> 2.1 nivel AA."
+msgstr ""
+"A aplicación deseñouse conforme ás <abbr title=\"Web Content "
+"Accessibility Guidelines\">WCAG</abbr> 2.1 nivel AA."
 
 #: app/templates/accesibilidad.html:18
 msgid "Características incluidas"
 msgstr "Características incluídas"
 
 #: app/templates/accesibilidad.html:20
-msgid "Enlace <strong>«Pasar al contenido principal»</strong> al inicio de cada página."
-msgstr "Ligazón <strong>«Pasar ao contido principal»</strong> ao inicio de cada páxina."
+msgid ""
+"Enlace <strong>«Pasar al contenido principal»</strong> al inicio de cada "
+"página."
+msgstr ""
+"Ligazón <strong>«Pasar ao contido principal»</strong> ao inicio de cada "
+"páxina."
 
 #: app/templates/accesibilidad.html:21
 msgid "Foco visible reforzado (no depende solo del color)."
 msgstr "Foco visible reforzado (non depende só da cor)."
 
 #: app/templates/accesibilidad.html:22
-msgid "Navegación completa por teclado: <kbd>Tab</kbd>/<kbd>Mayús+Tab</kbd> para moverse, <kbd>Intro</kbd> para activar, <kbd>Esc</kbd> para cerrar diálogos."
-msgstr "Navegación completa por teclado: <kbd>Tab</kbd>/<kbd>Maiús+Tab</kbd> para moverse, <kbd>Intro</kbd> para activar, <kbd>Esc</kbd> para pechar diálogos."
+msgid ""
+"Navegación completa por teclado: <kbd>Tab</kbd>/<kbd>Mayús+Tab</kbd> para"
+" moverse, <kbd>Intro</kbd> para activar, <kbd>Esc</kbd> para cerrar "
+"diálogos."
+msgstr ""
+"Navegación completa por teclado: <kbd>Tab</kbd>/<kbd>Maiús+Tab</kbd> para"
+" moverse, <kbd>Intro</kbd> para activar, <kbd>Esc</kbd> para pechar "
+"diálogos."
 
 #: app/templates/accesibilidad.html:23
-msgid "Etiquetas y encabezados semánticos (<code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;h1&gt;–&lt;h4&gt;</code>)."
-msgstr "Etiquetas e cabeceiras semánticas (<code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;h1&gt;–&lt;h4&gt;</code>)."
+msgid ""
+"Etiquetas y encabezados semánticos (<code>&lt;header&gt;</code>, "
+"<code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, "
+"<code>&lt;footer&gt;</code>, <code>&lt;h1&gt;–&lt;h4&gt;</code>)."
+msgstr ""
+"Etiquetas e cabeceiras semánticas (<code>&lt;header&gt;</code>, "
+"<code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, "
+"<code>&lt;footer&gt;</code>, <code>&lt;h1&gt;–&lt;h4&gt;</code>)."
 
 #: app/templates/accesibilidad.html:24
-msgid "Imágenes con texto alternativo y SVGs decorativos marcados con <code>aria-hidden</code>."
-msgstr "Imaxes con texto alternativo e SVG decorativos marcados con <code>aria-hidden</code>."
+msgid ""
+"Imágenes con texto alternativo y SVGs decorativos marcados con <code"
+">aria-hidden</code>."
+msgstr ""
+"Imaxes con texto alternativo e SVG decorativos marcados con <code>aria-"
+"hidden</code>."
 
 #: app/templates/accesibilidad.html:25
-msgid "Formularios con <code>label</code> asociado, mensajes de error anunciados a lectores de pantalla y campos con <code>aria-invalid</code> cuando procede."
-msgstr "Formularios con <code>label</code> asociado, mensaxes de erro anunciadas a lectores de pantalla e campos con <code>aria-invalid</code> cando procede."
+msgid ""
+"Formularios con <code>label</code> asociado, mensajes de error anunciados"
+" a lectores de pantalla y campos con <code>aria-invalid</code> cuando "
+"procede."
+msgstr ""
+"Formularios con <code>label</code> asociado, mensaxes de erro anunciadas "
+"a lectores de pantalla e campos con <code>aria-invalid</code> cando "
+"procede."
 
 #: app/templates/accesibilidad.html:26
 msgid "Contraste de texto mínimo 4.5:1 (3:1 en texto grande)."
 msgstr "Contraste de texto mínimo 4.5:1 (3:1 en texto grande)."
 
 #: app/templates/accesibilidad.html:27
-msgid "Información que no se transmite solo mediante color (iconos lingüísticos, texto y formas refuerzan los estados)."
-msgstr "Información que non se transmite só mediante cor (iconas lingüísticas, texto e formas reforzan os estados)."
+msgid ""
+"Información que no se transmite solo mediante color (iconos lingüísticos,"
+" texto y formas refuerzan los estados)."
+msgstr ""
+"Información que non se transmite só mediante cor (iconas lingüísticas, "
+"texto e formas reforzan os estados)."
 
 #: app/templates/accesibilidad.html:34
 #, python-format
-msgid "Diseño adaptable a móvil, tableta y escritorio; el contenido no se pierde al ampliar hasta el 200%%."
-msgstr "Deseño adaptable a móbil, tableta e escritorio; o contido non se perde ao ampliar ata o 200%%."
+msgid ""
+"Diseño adaptable a móvil, tableta y escritorio; el contenido no se pierde"
+" al ampliar hasta el 200%%."
+msgstr ""
+"Deseño adaptable a móbil, tableta e escritorio; o contido non se perde ao"
+" ampliar ata o 200%%."
 
 #: app/templates/accesibilidad.html:35
-msgid "Animaciones reducidas si el sistema indica <code>prefers-reduced-motion: reduce</code>."
-msgstr "Animacións reducidas se o sistema indica <code>prefers-reduced-motion: reduce</code>."
+msgid ""
+"Animaciones reducidas si el sistema indica <code>prefers-reduced-motion: "
+"reduce</code>."
+msgstr ""
+"Animacións reducidas se o sistema indica <code>prefers-reduced-motion: "
+"reduce</code>."
 
 #: app/templates/accesibilidad.html:36
 msgid "<a href=\"/mapa-web\">Mapa web</a> para navegación alternativa."
 msgstr "<a href=\"/mapa-web\">Mapa web</a> para navegación alternativa."
 
 #: app/templates/accesibilidad.html:37
-msgid "Lectura en voz alta de cada sección de una situación, con la voz que el sistema tenga instalada. No requiere conexión ni servicio externo."
-msgstr "Lectura en voz alta de cada sección dunha situación, coa voz que o sistema teña instalada. Non require conexión nin servizo externo."
+msgid ""
+"Lectura en voz alta de cada sección de una situación, con la voz que el "
+"sistema tenga instalada. No requiere conexión ni servicio externo."
+msgstr ""
+"Lectura en voz alta de cada sección dunha situación, coa voz que o "
+"sistema teña instalada. Non require conexión nin servizo externo."
 
 #: app/templates/accesibilidad.html:42
 msgid "Limitaciones conocidas"
 msgstr "Limitacións coñecidas"
 
 #: app/templates/accesibilidad.html:44
-msgid "Esta aplicación es un Trabajo de Fin de Grado en evaluación continua. Si detectas alguna barrera de accesibilidad, puedes comunicarla en la sección de <a href=\"/ayuda\">Ayuda</a>."
-msgstr "Esta aplicación é un Traballo de Fin de Grao en avaliación continua. Se detectas algunha barreira de accesibilidade, podes comunicala na sección de <a href=\"/ayuda\">Axuda</a>."
+msgid ""
+"Esta aplicación es un Trabajo de Fin de Grado en evaluación continua. Si "
+"detectas alguna barrera de accesibilidad, puedes comunicarla en la "
+"sección de <a href=\"/ayuda\">Ayuda</a>."
+msgstr ""
+"Esta aplicación é un Traballo de Fin de Grao en avaliación continua. Se "
+"detectas algunha barreira de accesibilidade, podes comunicala na sección "
+"de <a href=\"/ayuda\">Axuda</a>."
 
 #: app/templates/ayuda.html:7 app/templates/errores/404.html:15
 #: app/templates/errores/error.html:36 app/templates/mapa_web.html:36
@@ -120,8 +341,12 @@ msgid "Centro de ayuda"
 msgstr "Centro de axuda"
 
 #: app/templates/ayuda.html:9
-msgid "Guías rápidas para crear, editar y exportar Situaciones de Aprendizaje LOMLOE con asistencia de IA."
-msgstr "Guías rápidas para crear, editar e exportar Situacións de Aprendizaxe LOMLOE con asistencia de IA."
+msgid ""
+"Guías rápidas para crear, editar y exportar Situaciones de Aprendizaje "
+"LOMLOE con asistencia de IA."
+msgstr ""
+"Guías rápidas para crear, editar e exportar Situacións de Aprendizaxe "
+"LOMLOE con asistencia de IA."
 
 #: app/templates/ayuda.html:13
 msgid "Índice de la página"
@@ -163,125 +388,256 @@ msgstr "Adaptacións (ACNS / ACS)"
 msgid "Escuchar una situación"
 msgstr "Escoitar unha situación"
 
-#: app/templates/ayuda.html:24 app/templates/ayuda.html:160
+#: app/templates/ayuda.html:24 app/templates/ayuda.html:166
 msgid "Exportar a PDF y DOCX"
 msgstr "Exportar a PDF e DOCX"
 
-#: app/templates/ayuda.html:25 app/templates/ayuda.html:170
+#: app/templates/ayuda.html:25 app/templates/ayuda.html:176
 msgid "Apariencia e idioma"
 msgstr "Aparencia e idioma"
 
-#: app/templates/ayuda.html:26 app/templates/ayuda.html:185
+#: app/templates/ayuda.html:26 app/templates/ayuda.html:191
 msgid "Mi cuenta"
 msgstr "A miña conta"
 
-#: app/templates/ayuda.html:27 app/templates/ayuda.html:228
+#: app/templates/ayuda.html:27 app/templates/ayuda.html:271
 msgid "Problemas frecuentes"
 msgstr "Problemas frecuentes"
 
 #: app/templates/ayuda.html:34
-msgid "Si aún no tienes cuenta, <a href=\"/register\">regístrate como docente</a>."
+msgid ""
+"Si aún no tienes cuenta, <a href=\"/register\">regístrate como "
+"docente</a>."
 msgstr "Se aínda non tes conta, <a href=\"/register\">rexístrate como docente</a>."
 
 #: app/templates/ayuda.html:35
-msgid "Accede con tu correo y contraseña en <a href=\"/login\">Iniciar sesión</a>."
-msgstr "Accede co teu correo e contrasinal en <a href=\"/login\">Iniciar sesión</a>."
+msgid ""
+"Accede con tu correo y contraseña en <a href=\"/login\">Iniciar "
+"sesión</a>."
+msgstr ""
+"Accede co teu correo e contrasinal en <a href=\"/login\">Iniciar "
+"sesión</a>."
 
 #: app/templates/ayuda.html:36
-msgid "Desde tu <a href=\"/perfil\">perfil</a> puedes consultar y modificar tus datos."
-msgstr "Desde o teu <a href=\"/perfil\">perfil</a> podes consultar e modificar os teus datos."
+msgid ""
+"Desde tu <a href=\"/perfil\">perfil</a> puedes consultar y modificar tus "
+"datos."
+msgstr ""
+"Desde o teu <a href=\"/perfil\">perfil</a> podes consultar e modificar os"
+" teus datos."
 
 #: app/templates/ayuda.html:43
-msgid "Pulsa <strong>Nueva situación</strong> desde la lista o desde la cabecera. Indica al menos materia, curso, número de sesiones y duración. Los demás campos son opcionales y se utilizan para guiar a la IA."
-msgstr "Preme <strong>Nova situación</strong> desde a lista ou desde a cabeceira. Indica polo menos materia, curso, número de sesións e duración. Os demais campos son opcionais e utilízanse para guiar a IA."
+msgid ""
+"Pulsa <strong>Nueva situación</strong> desde la lista o desde la "
+"cabecera. Indica al menos materia, curso, número de sesiones y duración. "
+"Los demás campos son opcionales y se utilizan para guiar a la IA."
+msgstr ""
+"Preme <strong>Nova situación</strong> desde a lista ou desde a cabeceira."
+" Indica polo menos materia, curso, número de sesións e duración. Os "
+"demais campos son opcionais e utilízanse para guiar a IA."
 
 #: app/templates/ayuda.html:46
 msgid "Curso y materia se acotan entre sí"
 msgstr "Curso e materia acótanse entre si"
 
 #: app/templates/ayuda.html:48
-msgid "Al elegir un curso, el desplegable de materia solo ofrece las que se imparten en él, y al revés. No es una limitación de la aplicación sino del currículo: Latín, por ejemplo, solo existe en 4.º. Si eliges una combinación sin currículo, la situación se generaría sin criterios a los que anclarse."
-msgstr "Ao escoller un curso, o despregable de materia só ofrece as que se imparten nel, e ao revés. Non é unha limitación da aplicación senón do currículo: o Latín, por exemplo, só existe en 4.º. Se escolles unha combinación sen currículo, a situación xeraríase sen criterios aos que ancorarse."
+msgid ""
+"Al elegir un curso, el desplegable de materia solo ofrece las que se "
+"imparten en él, y al revés. No es una limitación de la aplicación sino "
+"del currículo: Latín, por ejemplo, solo existe en 4.º. Si eliges una "
+"combinación sin currículo, la situación se generaría sin criterios a los "
+"que anclarse."
+msgstr ""
+"Ao escoller un curso, o despregable de materia só ofrece as que se "
+"imparten nel, e ao revés. Non é unha limitación da aplicación senón do "
+"currículo: o Latín, por exemplo, só existe en 4.º. Se escolles unha "
+"combinación sen currículo, a situación xeraríase sen criterios aos que "
+"ancorarse."
 
 #: app/templates/ayuda.html:51 app/templates/situaciones/nueva.html:17
 msgid "¿Aún no sabes sobre qué trabajar?"
 msgstr "Aínda non sabes sobre que traballar?"
 
 #: app/templates/ayuda.html:53
-msgid "El botón <strong>Proponer temáticas</strong> pide a la IA varias ideas de situación para la materia y el curso que hayas elegido. Puedes añadir una nota de contexto —el barrio del centro, un proyecto en marcha, una efeméride— para que las propuestas se ajusten. Al elegir una, sus datos se vuelcan al formulario y puedes seguir editándolos: no se envía nada todavía."
-msgstr "O botón <strong>Propor temáticas</strong> pídelle á IA varias ideas de situación para a materia e o curso que escolleses. Podes engadir unha nota de contexto —o barrio do centro, un proxecto en marcha, unha efeméride— para que as propostas se axusten. Ao escoller unha, os seus datos vólcanse no formulario e podes seguir editándoos: aínda non se envía nada."
+msgid ""
+"El botón <strong>Proponer temáticas</strong> pide a la IA varias ideas de"
+" situación para la materia y el curso que hayas elegido. Puedes añadir "
+"una nota de contexto —el barrio del centro, un proyecto en marcha, una "
+"efeméride— para que las propuestas se ajusten. Al elegir una, sus datos "
+"se vuelcan al formulario y puedes seguir editándolos: no se envía nada "
+"todavía."
+msgstr ""
+"O botón <strong>Propor temáticas</strong> pídelle á IA varias ideas de "
+"situación para a materia e o curso que escolleses. Podes engadir unha "
+"nota de contexto —o barrio do centro, un proxecto en marcha, unha "
+"efeméride— para que as propostas se axusten. Ao escoller unha, os seus "
+"datos vólcanse no formulario e podes seguir editándoos: aínda non se "
+"envía nada."
 
 #: app/templates/ayuda.html:56
 msgid "Idioma de la situación"
 msgstr "Idioma da situación"
 
 #: app/templates/ayuda.html:58
-msgid "El campo <strong>Idioma</strong> determina en qué lengua se redacta el documento, y es independiente del idioma en el que veas la aplicación. Puedes tener la interfaz en castellano y crear la situación directamente en catalán, gallego, euskera, inglés, francés o árabe."
-msgstr "O campo <strong>Idioma</strong> determina en que lingua se redacta o documento, e é independente do idioma no que vexas a aplicación. Podes ter a interface en castelán e crear a situación directamente en catalán, galego, éuscaro, inglés, francés ou árabe."
+msgid ""
+"El campo <strong>Idioma</strong> determina en qué lengua se redacta el "
+"documento, y es independiente del idioma en el que veas la aplicación. "
+"Puedes tener la interfaz en castellano y crear la situación directamente "
+"en catalán, gallego, euskera, inglés, francés o árabe."
+msgstr ""
+"O campo <strong>Idioma</strong> determina en que lingua se redacta o "
+"documento, e é independente do idioma no que vexas a aplicación. Podes "
+"ter a interface en castelán e crear a situación directamente en catalán, "
+"galego, éuscaro, inglés, francés ou árabe."
 
 #: app/templates/ayuda.html:65
-msgid "Las competencias específicas, los criterios de evaluación y los saberes básicos no los inventa la IA: se extraen del texto oficial publicado en el BOE y se cargan en la aplicación. La fuente es la <strong>Orden EFP/754/2022</strong>, que desarrolla el Real Decreto 217/2022 de enseñanzas mínimas de la ESO."
-msgstr "As competencias específicas, os criterios de avaliación e os saberes básicos non os inventa a IA: extráense do texto oficial publicado no BOE e cárganse na aplicación. A fonte é a <strong>Orde EFP/754/2022</strong>, que desenvolve o Real Decreto 217/2022 de ensinanzas mínimas da ESO."
+msgid ""
+"Las competencias específicas, los criterios de evaluación y los saberes "
+"básicos no los inventa la IA: se extraen del texto oficial publicado en "
+"el BOE y se cargan en la aplicación. La fuente es la <strong>Orden "
+"EFP/754/2022</strong>, que desarrolla el Real Decreto 217/2022 de "
+"enseñanzas mínimas de la ESO."
+msgstr ""
+"As competencias específicas, os criterios de avaliación e os saberes "
+"básicos non os inventa a IA: extráense do texto oficial publicado no BOE "
+"e cárganse na aplicación. A fonte é a <strong>Orde EFP/754/2022</strong>,"
+" que desenvolve o Real Decreto 217/2022 de ensinanzas mínimas da ESO."
 
 #: app/templates/ayuda.html:68
-msgid "Están disponibles las materias de Educación Secundaria Obligatoria. Bachillerato y Formación Profesional todavía no."
-msgstr "Están dispoñibles as materias de Educación Secundaria Obrigatoria. Bacharelato e Formación Profesional aínda non."
+msgid ""
+"Están disponibles las materias de Educación Secundaria Obligatoria. "
+"Bachillerato y Formación Profesional todavía no."
+msgstr ""
+"Están dispoñibles as materias de Educación Secundaria Obrigatoria. "
+"Bacharelato e Formación Profesional aínda non."
 
 #: app/templates/ayuda.html:71
 msgid "Matemáticas A y Matemáticas B"
 msgstr "Matemáticas A e Matemáticas B"
 
 #: app/templates/ayuda.html:73
-msgid "En 4.º, Matemáticas se desdobla en dos opciones. No son una rama de ciencias y otra de letras, ni una continuación de la otra: la norma las distingue por enfoque."
-msgstr "En 4.º, Matemáticas desdóbrase en dúas opcións. Non son unha rama de ciencias e outra de letras, nin unha continuación da outra: a norma distíngueas por enfoque."
+msgid ""
+"En 4.º, Matemáticas se desdobla en dos opciones. No son una rama de "
+"ciencias y otra de letras, ni una continuación de la otra: la norma las "
+"distingue por enfoque."
+msgstr ""
+"En 4.º, Matemáticas desdóbrase en dúas opcións. Non son unha rama de "
+"ciencias e outra de letras, nin unha continuación da outra: a norma "
+"distíngueas por enfoque."
 
 #: app/templates/ayuda.html:76
-msgid "<strong>Matemáticas A</strong> se desarrolla sobre todo mediante la resolución de problemas, la investigación y el análisis matemático de situaciones de la vida cotidiana."
-msgstr "<strong>Matemáticas A</strong> desenvólvese sobre todo mediante a resolución de problemas, a investigación e a análise matemática de situacións da vida cotiá."
+msgid ""
+"<strong>Matemáticas A</strong> se desarrolla sobre todo mediante la "
+"resolución de problemas, la investigación y el análisis matemático de "
+"situaciones de la vida cotidiana."
+msgstr ""
+"<strong>Matemáticas A</strong> desenvólvese sobre todo mediante a "
+"resolución de problemas, a investigación e a análise matemática de "
+"situacións da vida cotiá."
 
 #: app/templates/ayuda.html:77
-msgid "<strong>Matemáticas B</strong> profundiza además en los procedimientos algebraicos, geométricos, analíticos y estadísticos, en contextos matemáticos, científicos y sociales."
-msgstr "<strong>Matemáticas B</strong> afonda ademais nos procedementos alxébricos, xeométricos, analíticos e estatísticos, en contextos matemáticos, científicos e sociais."
+msgid ""
+"<strong>Matemáticas B</strong> profundiza además en los procedimientos "
+"algebraicos, geométricos, analíticos y estadísticos, en contextos "
+"matemáticos, científicos y sociales."
+msgstr ""
+"<strong>Matemáticas B</strong> afonda ademais nos procedementos "
+"alxébricos, xeométricos, analíticos e estatísticos, en contextos "
+"matemáticos, científicos e sociais."
 
 #: app/templates/ayuda.html:80
-msgid "El real decreto no vincula ninguna de las dos a una modalidad concreta de Bachillerato. En 1.º a 3.º la materia es simplemente <strong>Matemáticas</strong>, sin letra."
-msgstr "O real decreto non vincula ningunha das dúas a unha modalidade concreta de Bacharelato. De 1.º a 3.º a materia é simplemente <strong>Matemáticas</strong>, sen letra."
+msgid ""
+"El real decreto no vincula ninguna de las dos a una modalidad concreta de"
+" Bachillerato. En 1.º a 3.º la materia es simplemente "
+"<strong>Matemáticas</strong>, sin letra."
+msgstr ""
+"O real decreto non vincula ningunha das dúas a unha modalidade concreta "
+"de Bacharelato. De 1.º a 3.º a materia é simplemente "
+"<strong>Matemáticas</strong>, sen letra."
 
 #: app/templates/ayuda.html:83
 msgid "Tecnología y Tecnología y Digitalización"
 msgstr "Tecnoloxía e Tecnoloxía e Dixitalización"
 
 #: app/templates/ayuda.html:85
-msgid "Son dos materias distintas, no dos nombres de la misma. <strong>Tecnología y Digitalización</strong> es la de 2.º y 3.º; <strong>Tecnología</strong> es una materia de opción de 4.º. Tienen competencias específicas diferentes, así que conviene no confundirlas al crear una situación."
-msgstr "Son dúas materias distintas, non dous nomes da mesma. <strong>Tecnoloxía e Dixitalización</strong> é a de 2.º e 3.º; <strong>Tecnoloxía</strong> é unha materia de opción de 4.º. Teñen competencias específicas diferentes, así que convén non confundilas ao crear unha situación."
+msgid ""
+"Son dos materias distintas, no dos nombres de la misma. "
+"<strong>Tecnología y Digitalización</strong> es la de 2.º y 3.º; "
+"<strong>Tecnología</strong> es una materia de opción de 4.º. Tienen "
+"competencias específicas diferentes, así que conviene no confundirlas al "
+"crear una situación."
+msgstr ""
+"Son dúas materias distintas, non dous nomes da mesma. <strong>Tecnoloxía "
+"e Dixitalización</strong> é a de 2.º e 3.º; <strong>Tecnoloxía</strong> é"
+" unha materia de opción de 4.º. Teñen competencias específicas "
+"diferentes, así que convén non confundilas ao crear unha situación."
 
 #: app/templates/ayuda.html:88
 msgid "Materias que no encontrarás"
 msgstr "Materias que non atoparás"
 
 #: app/templates/ayuda.html:90
-msgid "<strong>Segunda Lengua Extranjera</strong> no aparece en el desplegable. No es un olvido: el BOE no le publica currículo propio, sino que remite al de la primera lengua extranjera. Mientras AWEBO no sepa reutilizarlo, ofrecerla daría una materia sin ningún criterio que seleccionar."
-msgstr "<strong>Segunda Lingua Estranxeira</strong> non aparece no despregable. Non é un esquecemento: o BOE non lle publica currículo propio, senón que remite ao da primeira lingua estranxeira. Mentres AWEBO non saiba reutilizalo, ofrecela daría unha materia sen ningún criterio que seleccionar."
+msgid ""
+"<strong>Segunda Lengua Extranjera</strong> no aparece en el desplegable. "
+"No es un olvido: el BOE no le publica currículo propio, sino que remite "
+"al de la primera lengua extranjera. Mientras AWEBO no sepa reutilizarlo, "
+"ofrecerla daría una materia sin ningún criterio que seleccionar."
+msgstr ""
+"<strong>Segunda Lingua Estranxeira</strong> non aparece no despregable. "
+"Non é un esquecemento: o BOE non lle publica currículo propio, senón que "
+"remite ao da primeira lingua estranxeira. Mentres AWEBO non saiba "
+"reutilizalo, ofrecela daría unha materia sen ningún criterio que "
+"seleccionar."
 
 #: app/templates/ayuda.html:97
-msgid "Al crear una SA puedes marcar <strong>Generar con IA</strong> para que se completen automáticamente las seis secciones LOMLOE: justificación, objetivos, currículo, secuencia didáctica, evaluación y atención a la diversidad. La generación tarda entre 30 segundos y 2 minutos según el proveedor."
-msgstr "Ao crear unha SA podes marcar <strong>Xerar con IA</strong> para que se completen automaticamente as seis seccións LOMLOE: xustificación, obxectivos, currículo, secuencia didáctica, avaliación e atención á diversidade. A xeración tarda entre 30 segundos e 2 minutos segundo o provedor."
+msgid ""
+"Al crear una SA puedes marcar <strong>Generar con IA</strong> para que se"
+" completen automáticamente las seis secciones LOMLOE: justificación, "
+"objetivos, currículo, secuencia didáctica, evaluación y atención a la "
+"diversidad. La generación tarda entre 30 segundos y 2 minutos según el "
+"proveedor."
+msgstr ""
+"Ao crear unha SA podes marcar <strong>Xerar con IA</strong> para que se "
+"completen automaticamente as seis seccións LOMLOE: xustificación, "
+"obxectivos, currículo, secuencia didáctica, avaliación e atención á "
+"diversidade. A xeración tarda entre 30 segundos e 2 minutos segundo o "
+"provedor."
 
 #: app/templates/ayuda.html:100
-msgid "Puedes <strong>regenerar una sola sección</strong> desde el detalle si una parte no te convence; las demás se conservan."
-msgstr "Podes <strong>rexerar unha soa sección</strong> desde o detalle se unha parte non che convence; as demais consérvanse."
+msgid ""
+"Puedes <strong>regenerar una sola sección</strong> desde el detalle si "
+"una parte no te convence; las demás se conservan."
+msgstr ""
+"Podes <strong>rexerar unha soa sección</strong> desde o detalle se unha "
+"parte non che convence; as demais consérvanse."
 
 #: app/templates/ayuda.html:103
 msgid "Elegir quién redacta"
 msgstr "Escoller quen redacta"
 
 #: app/templates/ayuda.html:105
-msgid "En <a href=\"/perfil\">Mi perfil</a> puedes escoger el <strong>proveedor</strong> y el <strong>modelo</strong> de IA que se usarán en tus situaciones. Si no eliges nada se usa el del sistema. Los modelos disponibles cambian según el proveedor, y la lista se actualiza sola al cambiarlo."
-msgstr "En <a href=\"/perfil\">O meu perfil</a> podes escoller o <strong>provedor</strong> e o <strong>modelo</strong> de IA que se usarán nas túas situacións. Se non escolles nada úsase o do sistema. Os modelos dispoñibles cambian segundo o provedor, e a lista actualízase soa ao cambialo."
+msgid ""
+"En <a href=\"/perfil\">Mi perfil</a> puedes escoger el "
+"<strong>proveedor</strong> y el <strong>modelo</strong> de IA que se "
+"usarán en tus situaciones. Si no eliges nada se usa el del sistema. Los "
+"modelos disponibles cambian según el proveedor, y la lista se actualiza "
+"sola al cambiarlo."
+msgstr ""
+"En <a href=\"/perfil\">O meu perfil</a> podes escoller o "
+"<strong>provedor</strong> e o <strong>modelo</strong> de IA que se usarán"
+" nas túas situacións. Se non escolles nada úsase o do sistema. Os modelos"
+" dispoñibles cambian segundo o provedor, e a lista actualízase soa ao "
+"cambialo."
 
 #: app/templates/ayuda.html:112
-msgid "Cada sección del detalle tiene sus propias operaciones. No todas las secciones admiten todas: las que no tienen sentido para una sección concreta no se ofrecen."
-msgstr "Cada sección do detalle ten as súas propias operacións. Non todas as seccións as admiten todas: as que non teñen sentido para unha sección concreta non se ofrecen."
+msgid ""
+"Cada sección del detalle tiene sus propias operaciones. No todas las "
+"secciones admiten todas: las que no tienen sentido para una sección "
+"concreta no se ofrecen."
+msgstr ""
+"Cada sección do detalle ten as súas propias operacións. Non todas as "
+"seccións as admiten todas: as que non teñen sentido para unha sección "
+"concreta non se ofrecen."
 
 #: app/templates/ayuda.html:115
 msgid "<strong>Resumir</strong> — acorta el texto conservando lo esencial."
@@ -292,28 +648,58 @@ msgid "<strong>Desarrollar</strong> — amplía la sección con más detalle."
 msgstr "<strong>Desenvolver</strong> — amplía a sección con máis detalle."
 
 #: app/templates/ayuda.html:117
-msgid "<strong>Traducir</strong> — pasa la sección al idioma de la situación. El destino no se elige por operación, precisamente para que un documento no acabe con unas secciones en un idioma y otras en otro."
-msgstr "<strong>Traducir</strong> — pasa a sección ao idioma da situación. O destino non se escolle por operación, precisamente para que un documento non acabe con unhas seccións nun idioma e outras noutro."
+msgid ""
+"<strong>Traducir</strong> — pasa la sección al idioma de la situación. El"
+" destino no se elige por operación, precisamente para que un documento no"
+" acabe con unas secciones en un idioma y otras en otro."
+msgstr ""
+"<strong>Traducir</strong> — pasa a sección ao idioma da situación. O "
+"destino non se escolle por operación, precisamente para que un documento "
+"non acabe con unhas seccións nun idioma e outras noutro."
 
 #: app/templates/ayuda.html:118
-msgid "<strong>Proponer alternativa</strong> — redacta una segunda versión sin borrar la que tenías."
-msgstr "<strong>Propor alternativa</strong> — redacta unha segunda versión sen borrar a que tiñas."
+msgid ""
+"<strong>Proponer alternativa</strong> — redacta una segunda versión sin "
+"borrar la que tenías."
+msgstr ""
+"<strong>Propor alternativa</strong> — redacta unha segunda versión sen "
+"borrar a que tiñas."
 
 #: app/templates/ayuda.html:121
-msgid "Con la alternativa verás las dos redacciones enfrentadas y tendrás que quedarte con una para continuar. La que descartes no se pierde: queda en el historial de versiones."
-msgstr "Coa alternativa verás as dúas redaccións enfrontadas e terás que quedar cunha para continuar. A que descartes non se perde: queda no historial de versións."
+msgid ""
+"Con la alternativa verás las dos redacciones enfrentadas y tendrás que "
+"quedarte con una para continuar. La que descartes no se pierde: queda en "
+"el historial de versiones."
+msgstr ""
+"Coa alternativa verás as dúas redaccións enfrontadas e terás que quedar "
+"cunha para continuar. A que descartes non se perde: queda no historial de"
+" versións."
 
 #: app/templates/ayuda.html:124
-msgid "Cualquiera de estas operaciones se puede revertir con <strong>Deshacer</strong>, que recupera el texto inmediatamente anterior."
-msgstr "Calquera destas operacións pódese reverter con <strong>Desfacer</strong>, que recupera o texto inmediatamente anterior."
+msgid ""
+"Cualquiera de estas operaciones se puede revertir con "
+"<strong>Deshacer</strong>, que recupera el texto inmediatamente anterior."
+msgstr ""
+"Calquera destas operacións pódese reverter con <strong>Desfacer</strong>,"
+" que recupera o texto inmediatamente anterior."
 
 #: app/templates/ayuda.html:131
-msgid "Los cambios al título y los campos básicos crean una <strong>nueva versión</strong> automáticamente. Desde el detalle puedes consultar el historial completo y volver a un estado anterior."
-msgstr "Os cambios ao título e aos campos básicos crean unha <strong>nova versión</strong> automaticamente. Desde o detalle podes consultar o historial completo e volver a un estado anterior."
+msgid ""
+"Los cambios al título y los campos básicos crean una <strong>nueva "
+"versión</strong> automáticamente. Desde el detalle puedes consultar el "
+"historial completo y volver a un estado anterior."
+msgstr ""
+"Os cambios ao título e aos campos básicos crean unha <strong>nova "
+"versión</strong> automaticamente. Desde o detalle podes consultar o "
+"historial completo e volver a un estado anterior."
 
 #: app/templates/ayuda.html:138
-msgid "A partir de una SA generada, puedes crear una <strong>adaptación</strong> para alumnado con necesidades específicas:"
-msgstr "A partir dunha SA xerada, podes crear unha <strong>adaptación</strong> para alumnado con necesidades específicas:"
+msgid ""
+"A partir de una SA generada, puedes crear una <strong>adaptación</strong>"
+" para alumnado con necesidades específicas:"
+msgstr ""
+"A partir dunha SA xerada, podes crear unha <strong>adaptación</strong> "
+"para alumnado con necesidades específicas:"
 
 #: app/templates/ayuda.html:141
 msgid "<strong>ACNS</strong> — adaptación curricular no significativa."
@@ -328,144 +714,443 @@ msgid "La SA adaptada se genera completa y conserva un enlace a la SA de origen.
 msgstr "A SA adaptada xérase completa e conserva unha ligazón á SA de orixe."
 
 #: app/templates/ayuda.html:152
-msgid "Cada sección del detalle tiene un botón <strong>Escuchar</strong> que la lee en voz alta. Se lee sección a sección, y no el documento entero, para que puedas repasar solo la parte que te interesa."
-msgstr "Cada sección do detalle ten un botón <strong>Escoitar</strong> que a le en voz alta. Lese sección a sección, e non o documento enteiro, para que poidas repasar só a parte que che interesa."
+msgid ""
+"Cada sección del detalle tiene un botón <strong>Escuchar</strong> que la "
+"lee en voz alta. Se lee sección a sección, y no el documento entero, para"
+" que puedas repasar solo la parte que te interesa."
+msgstr ""
+"Cada sección do detalle ten un botón <strong>Escoitar</strong> que a le "
+"en voz alta. Lese sección a sección, e non o documento enteiro, para que "
+"poidas repasar só a parte que che interesa."
 
 #: app/templates/ayuda.html:155
-msgid "La voz la pone tu propio ordenador, no la aplicación. Por eso el botón puede no aparecer: si tu sistema no tiene instalada ninguna voz para el idioma de la situación, se oculta y verás un aviso explicándolo. Instalar voces adicionales se hace desde la configuración del sistema operativo, no desde AWEBO."
-msgstr "A voz ponna o teu propio ordenador, non a aplicación. Por iso o botón pode non aparecer: se o teu sistema non ten instalada ningunha voz para o idioma da situación, agóchase e verás un aviso explicándoo. Instalar voces adicionais faise desde a configuración do sistema operativo, non desde AWEBO."
+msgid ""
+"Ese botón usa la voz de tu propio ordenador, así que suena al instante "
+"pero depende de que tu sistema tenga una voz instalada para el idioma de "
+"la situación. Si no la tiene, el botón no aparece — algo habitual en "
+"catalán, gallego y euskera."
+msgstr ""
+"Ese botón usa a voz do teu propio ordenador, así que soa ao instante pero"
+" depende de que o teu sistema teña unha voz instalada para o idioma da "
+"situación. Se non a ten, o botón non aparece — algo habitual en galego, "
+"catalán e éuscaro."
 
-#: app/templates/ayuda.html:162
-msgid "Desde el detalle de cualquier SA puedes descargar el documento en <strong>PDF</strong> (paginación cuidada, listo para imprimir) o en <strong>DOCX</strong> (editable en Word/LibreOffice)."
-msgstr "Desde o detalle de calquera SA podes descargar o documento en <strong>PDF</strong> (paxinación coidada, listo para imprimir) ou en <strong>DOCX</strong> (editable en Word/LibreOffice)."
+#: app/templates/ayuda.html:158
+msgid ""
+"Para esos casos, y para cuando quieras un fichero, cada sección tiene "
+"además <strong>Generar audio</strong>. Ese lo produce el servidor con "
+"voces propias, así que funciona en las cuatro lenguas aunque tu equipo no"
+" tenga ninguna instalada. Tarda unos segundos y deja un reproductor y un "
+"enlace de descarga bajo la sección."
+msgstr ""
+"Para eses casos, e para cando queiras un ficheiro, cada sección ten "
+"ademais <strong>Xerar audio</strong>. Ese prodúceo o servidor con voces "
+"propias, así que funciona nas catro linguas aínda que o teu equipo non "
+"teña ningunha instalada. Tarda uns segundos e deixa un reprodutor e unha "
+"ligazón de descarga baixo a sección."
 
-#: app/templates/ayuda.html:165
-msgid "Los rótulos del documento (los títulos de sección, los encabezados de tabla) salen en el idioma en el que tengas la interfaz. El contenido, en el idioma de la situación."
-msgstr "Os rótulos do documento (os títulos de sección, as cabeceiras de táboa) saen no idioma no que teñas a interface. O contido, no idioma da situación."
+#: app/templates/ayuda.html:161
+msgid ""
+"El audio se genera en el propio servidor de AWEBO: el contenido de tus "
+"situaciones no se envía a ningún servicio externo para leerlo. Las voces "
+"son de la Universidad del País Vasco y de los proyectos públicos de "
+"normalización lingüística de Galicia y Cataluña."
+msgstr ""
+"O audio xérase no propio servidor de AWEBO: o contido das túas situacións"
+" non se envía a ningún servizo externo para lelo. As voces son da "
+"Universidade do País Vasco e dos proxectos públicos de normalización "
+"lingüística de Galicia e Cataluña."
 
-#: app/templates/ayuda.html:171 app/templates/base.html:65
+#: app/templates/ayuda.html:168
+msgid ""
+"Desde el detalle de cualquier SA puedes descargar el documento en "
+"<strong>PDF</strong> (paginación cuidada, listo para imprimir) o en "
+"<strong>DOCX</strong> (editable en Word/LibreOffice)."
+msgstr ""
+"Desde o detalle de calquera SA podes descargar o documento en "
+"<strong>PDF</strong> (paxinación coidada, listo para imprimir) ou en "
+"<strong>DOCX</strong> (editable en Word/LibreOffice)."
+
+#: app/templates/ayuda.html:171
+msgid ""
+"Los rótulos del documento (los títulos de sección, los encabezados de "
+"tabla) salen en el idioma en el que tengas la interfaz. El contenido, en "
+"el idioma de la situación."
+msgstr ""
+"Os rótulos do documento (os títulos de sección, as cabeceiras de táboa) "
+"saen no idioma no que teñas a interface. O contido, no idioma da "
+"situación."
+
+#: app/templates/ayuda.html:177 app/templates/base.html:65
 msgid "Tema visual"
 msgstr "Tema visual"
 
-#: app/templates/ayuda.html:173
-msgid "En la cabecera puedes elegir entre <strong>Claro</strong>, <strong>Oscuro</strong> y <strong>Automático</strong>. Automático sigue la preferencia de tu sistema operativo y cambia solo si esta cambia. La elección se recuerda en el navegador."
-msgstr "Na cabeceira podes escoller entre <strong>Claro</strong>, <strong>Escuro</strong> e <strong>Automático</strong>. Automático segue a preferencia do teu sistema operativo e cambia só se esta cambia. A elección lémbrase no navegador."
+#: app/templates/ayuda.html:179
+msgid ""
+"En la cabecera puedes elegir entre <strong>Claro</strong>, "
+"<strong>Oscuro</strong> y <strong>Automático</strong>. Automático sigue "
+"la preferencia de tu sistema operativo y cambia solo si esta cambia. La "
+"elección se recuerda en el navegador."
+msgstr ""
+"Na cabeceira podes escoller entre <strong>Claro</strong>, "
+"<strong>Escuro</strong> e <strong>Automático</strong>. Automático segue a"
+" preferencia do teu sistema operativo e cambia só se esta cambia. A "
+"elección lémbrase no navegador."
 
-#: app/templates/ayuda.html:175
+#: app/templates/ayuda.html:181
 msgid "Idioma de la interfaz"
 msgstr "Idioma da interface"
 
-#: app/templates/ayuda.html:177
-msgid "El selector de idioma de la cabecera cambia la lengua de los menús, los botones y esta misma ayuda, y te deja en la página en la que estabas. Si has iniciado sesión, la elección se guarda en tu perfil."
-msgstr "O selector de idioma da cabeceira cambia a lingua dos menús, os botóns e esta mesma axuda, e déixate na páxina na que estabas. Se iniciaches sesión, a elección gárdase no teu perfil."
+#: app/templates/ayuda.html:183
+msgid ""
+"El selector de idioma de la cabecera cambia la lengua de los menús, los "
+"botones y esta misma ayuda, y te deja en la página en la que estabas. Si "
+"has iniciado sesión, la elección se guarda en tu perfil."
+msgstr ""
+"O selector de idioma da cabeceira cambia a lingua dos menús, os botóns e "
+"esta mesma axuda, e déixate na páxina na que estabas. Se iniciaches "
+"sesión, a elección gárdase no teu perfil."
 
-#: app/templates/ayuda.html:180
-msgid "No confundas este idioma con el de la situación: son independientes. Cambiar la interfaz a gallego no traduce las situaciones que ya tengas escritas en castellano."
-msgstr "Non confundas este idioma co da situación: son independentes. Cambiar a interface a galego non traduce as situacións que xa teñas escritas en castelán."
+#: app/templates/ayuda.html:186
+msgid ""
+"No confundas este idioma con el de la situación: son independientes. "
+"Cambiar la interfaz a gallego no traduce las situaciones que ya tengas "
+"escritas en castellano."
+msgstr ""
+"Non confundas este idioma co da situación: son independentes. Cambiar a "
+"interface a galego non traduce as situacións que xa teñas escritas en "
+"castelán."
 
-#: app/templates/ayuda.html:187
-msgid "En <a href=\"/perfil\">Mi perfil</a> puedes actualizar nombre, centro educativo, contraseña, idioma y proveedor de IA."
-msgstr "En <a href=\"/perfil\">O meu perfil</a> podes actualizar o nome, o centro educativo, o contrasinal, o idioma e o provedor de IA."
+#: app/templates/ayuda.html:193
+msgid ""
+"En <a href=\"/perfil\">Mi perfil</a> puedes actualizar nombre, centro "
+"educativo, contraseña, idioma y proveedor de IA."
+msgstr ""
+"En <a href=\"/perfil\">O meu perfil</a> podes actualizar o nome, o centro"
+" educativo, o contrasinal, o idioma e o provedor de IA."
 
-#: app/templates/ayuda.html:189
+#: app/templates/ayuda.html:195
 msgid "Si olvidas la contraseña"
 msgstr "Se esqueces o contrasinal"
 
-#: app/templates/ayuda.html:191
-msgid "Entra en <a href=\"/restablecer-contrasena\">¿Olvidaste tu contraseña?</a> y escribe tu correo. Te llegará un mensaje con un enlace para elegir una contraseña nueva; caduca en <strong>una hora</strong> y solo sirve una vez. Mientras no lo abras, tu contraseña sigue siendo la de siempre, así que si recibes ese correo sin haberlo pedido no tienes que hacer nada."
-msgstr "Entra en <a href=\"/restablecer-contrasena\">Esqueciches o contrasinal?</a> e escribe o teu correo. Chegarache unha mensaxe cunha ligazón para elixir un contrasinal novo; caduca nunha <strong>hora</strong> e só serve unha vez. Mentres non a abras, o teu contrasinal segue sendo o de sempre, así que se recibes ese correo sen telo pedido non tes que facer nada."
-
-#: app/templates/ayuda.html:194
-msgid "La pantalla responde lo mismo exista o no una cuenta con esa dirección. Es a propósito: si distinguiera los dos casos, cualquiera podría usar el formulario para averiguar quién está registrado."
-msgstr "A pantalla responde o mesmo exista ou non unha conta con ese enderezo. É a propósito: se distinguise os dous casos, calquera podería usar o formulario para averiguar quen está rexistrado."
-
 #: app/templates/ayuda.html:197
+msgid ""
+"Entra en <a href=\"/restablecer-contrasena\">¿Olvidaste tu "
+"contraseña?</a> y escribe tu correo <strong>o tu correo de "
+"respaldo</strong>. Te llegará un mensaje con un enlace para elegir una "
+"contraseña nueva; caduca en <strong>una hora</strong> y solo sirve una "
+"vez. Mientras no lo abras, tu contraseña sigue siendo la de siempre, así "
+"que si recibes ese correo sin haberlo pedido no tienes que hacer nada."
+msgstr ""
+"Entra en <a href=\"/restablecer-contrasena\">Esqueciches o "
+"contrasinal?</a> e escribe o teu correo <strong>ou o teu correo de "
+"recuperación</strong>. Chegarache unha mensaxe cunha ligazón para "
+"escoller un contrasinal novo; caduca nunha <strong>hora</strong> e só "
+"serve unha vez. Mentres non a abras, o teu contrasinal segue sendo o de "
+"sempre, así que se recibes ese correo sen telo pedido non tes que facer "
+"nada."
+
+#: app/templates/ayuda.html:200
+msgid ""
+"La pantalla responde lo mismo exista o no una cuenta con esa dirección. "
+"Es a propósito: si distinguiera los dos casos, cualquiera podría usar el "
+"formulario para averiguar quién está registrado."
+msgstr ""
+"A pantalla responde o mesmo exista ou non unha conta con ese enderezo. É "
+"a propósito: se distinguise os dous casos, calquera podería usar o "
+"formulario para averiguar quen está rexistrado."
+
+#: app/templates/ayuda.html:203
+msgid "Quién puede ver lo que escribes"
+msgstr "Quen pode ver o que escribes"
+
+#: app/templates/ayuda.html:205
+msgid ""
+"Tus situaciones de aprendizaje no son públicas: nadie más que tú las ve "
+"desde su cuenta."
+msgstr ""
+"As túas situacións de aprendizaxe non son públicas: ninguén máis ca ti as"
+" ve desde a súa conta."
+
+#: app/templates/ayuda.html:208
+msgid ""
+"Con una excepción que conviene que sepas desde el principio: <strong>las "
+"personas administradoras de AWEBO pueden abrir cualquier "
+"situación</strong>, no solo ver cuántas tienes. Es lo que les permite "
+"reproducir un fallo que alguien reporta o comprobar una reclamación de "
+"contenido."
+msgstr ""
+"Cunha excepción que convén que saibas desde o principio: <strong>as "
+"persoas administradoras de AWEBO poden abrir calquera situación</strong>,"
+" non só ver cantas tes. É o que lles permite reproducir un fallo que "
+"alguén reporta ou comprobar unha reclamación de contido."
+
+#: app/templates/ayuda.html:211
+msgid ""
+"Cada vez que una cuenta administradora abre contenido que no es suyo "
+"queda registrado, con qué situación y cuándo. No es un permiso "
+"silencioso: es un permiso que deja rastro."
+msgstr ""
+"Cada vez que unha conta administradora abre contido que non é seu queda "
+"rexistrado, con que situación e cando. Non é un permiso silencioso: é un "
+"permiso que deixa rastro."
+
+#: app/templates/ayuda.html:214
+msgid ""
+"Si trabajas con material que no quieres que vea nadie más, tenlo en "
+"cuenta antes de escribirlo aquí."
+msgstr ""
+"Se traballas con material que non queres que vexa ninguén máis, tenno en "
+"conta antes de escribilo aquí."
+
+#: app/templates/ayuda.html:217
+msgid "El correo de respaldo"
+msgstr "O correo de recuperación"
+
+#: app/templates/ayuda.html:219
+msgid ""
+"Es una segunda dirección, <strong>personal y no del centro</strong>, que "
+"puedes añadir al registrarte o después desde <a href=\"/perfil\">tu "
+"perfil</a>. Es opcional, pero es lo único que sigue siendo tuyo cuando "
+"cambias de centro."
+msgstr ""
+"É un segundo enderezo, <strong>persoal e non do centro</strong>, que "
+"podes engadir ao rexistrarte ou despois desde o <a href=\"/perfil\">teu "
+"perfil</a>. É opcional, pero é o único que segue sendo teu cando cambias "
+"de centro."
+
+#: app/templates/ayuda.html:221
+msgid "Sirve para dos cosas:"
+msgstr "Serve para dúas cousas:"
+
+#: app/templates/ayuda.html:224
+msgid ""
+"<strong>Recuperar la cuenta.</strong> Puedes pedir el enlace de "
+"contraseña nueva escribiendo el correo de respaldo, aunque ya no tengas "
+"acceso al correo del centro."
+msgstr ""
+"<strong>Recuperar a conta.</strong> Podes pedir a ligazón de contrasinal "
+"novo escribindo o correo de recuperación, aínda que xa non teñas acceso "
+"ao correo do centro."
+
+#: app/templates/ayuda.html:227
+msgid ""
+"<strong>Demostrar que tu contenido es tuyo.</strong> Si te das de baja "
+"conservando tus situaciones y alguien se registra después con tu antigua "
+"dirección pidiéndolas, se te pregunta a ti, en el correo de respaldo. Sin"
+" tu confirmación no se entrega nada."
+msgstr ""
+"<strong>Demostrar que o teu contido é teu.</strong> Se te das de baixa "
+"conservando as túas situacións e alguén se rexistra despois co teu antigo"
+" enderezo pedíndoas, pregúntasecho a ti, no correo de recuperación. Sen a"
+" túa confirmación non se entrega nada."
+
+#: app/templates/ayuda.html:231
+msgid ""
+"Hace falta confirmarlo abriendo el enlace que te enviamos. Mientras no lo"
+" hagas no cuenta para nada, aunque aparezca escrito en tu perfil."
+msgstr ""
+"Cómpre confirmalo abrindo a ligazón que che enviamos. Mentres non o fagas"
+" non conta para nada, aínda que apareza escrito no teu perfil."
+
+#: app/templates/ayuda.html:234
+msgid ""
+"Para cambiarlo por otro, el enlace de confirmación se envía a la "
+"dirección de respaldo que tuvieras antes, no a la nueva. Es incómodo a "
+"propósito: es lo que impide que quien consiga entrar en tu cuenta pueda "
+"apuntar la recuperación a un buzón suyo. Para quitarlo del todo basta con"
+" tu contraseña."
+msgstr ""
+"Para cambialo por outro, a ligazón de confirmación envíase ao enderezo de"
+" recuperación que tiveses antes, non ao novo. É incómodo a propósito: é o"
+" que impide que quen consiga entrar na túa conta poida apuntar a "
+"recuperación a unha caixa de correo súa. Para quitalo de todo abonda co "
+"teu contrasinal."
+
+#: app/templates/ayuda.html:237
+msgid ""
+"Si pierdes el acceso al correo de respaldo y tampoco puedes entrar en la "
+"cuenta, tendrás que escribir a la administración de AWEBO: es el último "
+"recurso."
+msgstr ""
+"Se perdes o acceso ao correo de recuperación e tampouco podes entrar na "
+"conta, terás que escribir á administración de AWEBO: é o último recurso."
+
+#: app/templates/ayuda.html:240
 msgid "Si quieres darte de baja"
 msgstr "Se queres darte de baixa"
 
-#: app/templates/ayuda.html:199
-msgid "Puedes hacerlo tú desde <a href=\"/perfil\">tu perfil</a>, al final de la página. Te pediremos tu contraseña actual y te enviaremos un correo con un enlace de confirmación que caduca en <strong>media hora</strong>. Hasta que no abras ese enlace no se aplica nada."
-msgstr "Podes facelo ti desde o <a href=\"/perfil\">teu perfil</a>, ao final da páxina. Pedirémosche o teu contrasinal actual e enviarémosche un correo cunha ligazón de confirmación que caduca en <strong>media hora</strong>. Ata que non abras esa ligazón non se aplica nada."
+#: app/templates/ayuda.html:242
+msgid ""
+"Puedes hacerlo tú desde <a href=\"/perfil\">tu perfil</a>, al final de la"
+" página. Te pediremos tu contraseña actual y te enviaremos un correo con "
+"un enlace de confirmación que caduca en <strong>media hora</strong>. "
+"Hasta que no abras ese enlace no se aplica nada."
+msgstr ""
+"Podes facelo ti desde o <a href=\"/perfil\">teu perfil</a>, ao final da "
+"páxina. Pedirémosche o teu contrasinal actual e enviarémosche un correo "
+"cunha ligazón de confirmación que caduca en <strong>media hora</strong>. "
+"Ata que non abras esa ligazón non se aplica nada."
 
-#: app/templates/ayuda.html:202
-msgid "Antes de confirmar tienes que elegir qué pasa con tus situaciones de aprendizaje, y las dos opciones son muy distintas:"
-msgstr "Antes de confirmar tes que elixir que pasa coas túas situacións de aprendizaxe, e as dúas opcións son moi distintas:"
+#: app/templates/ayuda.html:245
+msgid ""
+"Antes de confirmar tienes que elegir qué pasa con tus situaciones de "
+"aprendizaje, y las dos opciones son muy distintas:"
+msgstr ""
+"Antes de confirmar tes que elixir que pasa coas túas situacións de "
+"aprendizaxe, e as dúas opcións son moi distintas:"
 
-#: app/templates/ayuda.html:206
-msgid "<strong>Borrarlo todo.</strong> Tu cuenta y tus situaciones se eliminan de inmediato y para siempre. No hay plazo de recuperación ni forma de deshacerlo."
-msgstr "<strong>Borrar todo.</strong> A túa conta e as túas situacións elimínanse de inmediato e para sempre. Non hai prazo de recuperación nin forma de desfacelo."
+#: app/templates/ayuda.html:249
+msgid ""
+"<strong>Borrarlo todo.</strong> Tu cuenta y tus situaciones se eliminan "
+"de inmediato y para siempre. No hay plazo de recuperación ni forma de "
+"deshacerlo."
+msgstr ""
+"<strong>Borrar todo.</strong> A túa conta e as túas situacións elimínanse"
+" de inmediato e para sempre. Non hai prazo de recuperación nin forma de "
+"desfacelo."
 
-#: app/templates/ayuda.html:209
-msgid "<strong>Conservar tus situaciones.</strong> Tu cuenta deja de poder entrar, pero el contenido se guarda <strong>90 días</strong>. Si dentro de ese plazo vuelves a registrarte con el mismo correo, puedes pedir recuperarlo; lo aprueba un administrador. Pasado el plazo, el borrado es definitivo."
-msgstr "<strong>Conservar as túas situacións.</strong> A túa conta deixa de poder entrar, pero o contido gárdase <strong>90 días</strong>. Se dentro dese prazo volves rexistrarte co mesmo correo, podes pedir recuperalo; apróbao un administrador. Pasado o prazo, o borrado é definitivo."
+#: app/templates/ayuda.html:252
+msgid ""
+"<strong>Conservar tus situaciones.</strong> Tu cuenta deja de poder "
+"entrar, pero el contenido se guarda <strong>90 días</strong>. Si dentro "
+"de ese plazo vuelves a registrarte con el mismo correo, puedes pedir "
+"recuperarlo. Quien lo autoriza es quien tenga acceso al correo de "
+"respaldo de la cuenta; si no había ninguno, lo decide un administrador. "
+"Pasado el plazo, el borrado es definitivo."
+msgstr ""
+"<strong>Conservar as túas situacións.</strong> A túa conta deixa de poder"
+" entrar, pero o contido gárdase <strong>90 días</strong>. Se dentro dese "
+"prazo te volves rexistrar co mesmo correo, podes pedir recuperalo. Quen o"
+" autoriza é quen teña acceso ao correo de recuperación da conta; se non "
+"había ningún, decídeo un administrador. Pasado o prazo, o borrado é "
+"definitivo."
 
-#: app/templates/ayuda.html:213
-msgid "Si eres la única persona administradora, el sistema no te dejará darte de baja: la plataforma se quedaría sin nadie que gestione cuentas ni apruebe recuperaciones. Nombra a otra antes."
-msgstr "Se es a única persoa administradora, o sistema non che deixará darte de baixa: a plataforma quedaría sen ninguén que xestione contas nin aprobe recuperacións. Nomea outra antes."
+#: app/templates/ayuda.html:256
+msgid ""
+"Si eres la única persona administradora, el sistema no te dejará darte de"
+" baja: la plataforma se quedaría sin nadie que gestione cuentas ni "
+"apruebe recuperaciones. Nombra a otra antes."
+msgstr ""
+"Se es a única persoa administradora, o sistema non che deixará darte de "
+"baixa: a plataforma quedaría sen ninguén que xestione contas nin aprobe "
+"recuperacións. Nomea outra antes."
 
-#: app/templates/ayuda.html:216
+#: app/templates/ayuda.html:259
 msgid "Si tu cuenta la elimina un administrador"
 msgstr "Se a túa conta a elimina un administrador"
 
-#: app/templates/ayuda.html:218
-msgid "Un administrador también puede dar de baja una cuenta, con las mismas dos modalidades. Si eligió conservar el contenido, se aplica el mismo plazo de 90 días y la misma vía para recuperarlo."
-msgstr "Un administrador tamén pode dar de baixa unha conta, coas mesmas dúas modalidades. Se elixiu conservar o contido, aplícase o mesmo prazo de 90 días e a mesma vía para recuperalo."
+#: app/templates/ayuda.html:261
+msgid ""
+"Un administrador también puede dar de baja una cuenta, con las mismas dos"
+" modalidades. Si eligió conservar el contenido, se aplica el mismo plazo "
+"de 90 días y la misma vía para recuperarlo."
+msgstr ""
+"Un administrador tamén pode dar de baixa unha conta, coas mesmas dúas "
+"modalidades. Se elixiu conservar o contido, aplícase o mesmo prazo de 90 "
+"días e a mesma vía para recuperalo."
 
-#: app/templates/ayuda.html:221
+#: app/templates/ayuda.html:264
 msgid "Si adaptaste una situación de otra persona y esa cuenta desaparece"
 msgstr "Se adaptaches unha situación doutra persoa e esa conta desaparece"
 
-#: app/templates/ayuda.html:223
-msgid "Tu adaptación no se borra: es tuya y se conserva íntegra, con su tipo de adaptación y su perfil de alumnado. Lo único que se pierde es el enlace al documento del que partió, y al abrirla verás un aviso que lo explica."
-msgstr "A túa adaptación non se borra: é túa e consérvase íntegra, co seu tipo de adaptación e o seu perfil de alumnado. O único que se perde é a ligazón ao documento do que partiu, e ao abrila verás un aviso que o explica."
+#: app/templates/ayuda.html:266
+msgid ""
+"Tu adaptación no se borra: es tuya y se conserva íntegra, con su tipo de "
+"adaptación y su perfil de alumnado. Lo único que se pierde es el enlace "
+"al documento del que partió, y al abrirla verás un aviso que lo explica."
+msgstr ""
+"A túa adaptación non se borra: é túa e consérvase íntegra, co seu tipo de"
+" adaptación e o seu perfil de alumnado. O único que se perde é a ligazón "
+"ao documento do que partiu, e ao abrila verás un aviso que o explica."
 
-#: app/templates/ayuda.html:230
+#: app/templates/ayuda.html:273
 msgid "La generación de IA falla o tarda mucho"
 msgstr "A xeración de IA falla ou tarda moito"
 
-#: app/templates/ayuda.html:232
-msgid "Espera 1–2 minutos. Si tras ese tiempo la SA queda en estado <em>error</em>, vuelve al detalle y pulsa <strong>Reintentar</strong> o <strong>Regenerar sección</strong>."
-msgstr "Agarda 1–2 minutos. Se tras ese tempo a SA queda en estado <em>erro</em>, volve ao detalle e preme <strong>Reintentar</strong> ou <strong>Rexerar sección</strong>."
+#: app/templates/ayuda.html:275
+msgid ""
+"Espera 1–2 minutos. Si tras ese tiempo la SA queda en estado "
+"<em>error</em>, vuelve al detalle y pulsa <strong>Reintentar</strong> o "
+"<strong>Regenerar sección</strong>."
+msgstr ""
+"Agarda 1–2 minutos. Se tras ese tempo a SA queda en estado <em>erro</em>,"
+" volve ao detalle e preme <strong>Reintentar</strong> ou <strong>Rexerar "
+"sección</strong>."
 
-#: app/templates/ayuda.html:236
+#: app/templates/ayuda.html:279
 msgid "No encuentro una materia en el desplegable"
 msgstr "Non atopo unha materia no despregable"
 
-#: app/templates/ayuda.html:238
-msgid "Comprueba primero el curso: cada materia solo aparece en los cursos en los que se imparte. Si buscas Segunda Lengua Extranjera, no está disponible todavía; y si buscas Tecnología en 2.º o 3.º, ahí se llama Tecnología y Digitalización."
-msgstr "Comproba primeiro o curso: cada materia só aparece nos cursos nos que se imparte. Se buscas Segunda Lingua Estranxeira, aínda non está dispoñible; e se buscas Tecnoloxía en 2.º ou 3.º, alí chámase Tecnoloxía e Dixitalización."
+#: app/templates/ayuda.html:281
+msgid ""
+"Comprueba primero el curso: cada materia solo aparece en los cursos en "
+"los que se imparte. Si buscas Segunda Lengua Extranjera, no está "
+"disponible todavía; y si buscas Tecnología en 2.º o 3.º, ahí se llama "
+"Tecnología y Digitalización."
+msgstr ""
+"Comproba primeiro o curso: cada materia só aparece nos cursos nos que se "
+"imparte. Se buscas Segunda Lingua Estranxeira, aínda non está dispoñible;"
+" e se buscas Tecnoloxía en 2.º ou 3.º, alí chámase Tecnoloxía e "
+"Dixitalización."
 
-#: app/templates/ayuda.html:242
+#: app/templates/ayuda.html:285
 msgid "Una situación antigua avisa de que su combinación no es válida"
 msgstr "Unha situación antiga avisa de que a súa combinación non é válida"
 
-#: app/templates/ayuda.html:244
-msgid "Significa que la materia y el curso que tiene guardados no se corresponden con ningún currículo cargado. Puede pasar con situaciones creadas antes de una ampliación del catálogo. Corrige los dos campos desde el detalle y podrás volver a generarla; el contenido que ya tuviera no se pierde."
-msgstr "Significa que a materia e o curso que ten gardados non se corresponden con ningún currículo cargado. Pode pasar con situacións creadas antes dunha ampliación do catálogo. Corrixe os dous campos desde o detalle e poderás volver xerala; o contido que xa tivese non se perde."
+#: app/templates/ayuda.html:287
+msgid ""
+"Significa que la materia y el curso que tiene guardados no se "
+"corresponden con ningún currículo cargado. Puede pasar con situaciones "
+"creadas antes de una ampliación del catálogo. Corrige los dos campos "
+"desde el detalle y podrás volver a generarla; el contenido que ya tuviera"
+" no se pierde."
+msgstr ""
+"Significa que a materia e o curso que ten gardados non se corresponden "
+"con ningún currículo cargado. Pode pasar con situacións creadas antes "
+"dunha ampliación do catálogo. Corrixe os dous campos desde o detalle e "
+"poderás volver xerala; o contido que xa tivese non se perde."
 
-#: app/templates/ayuda.html:248
+#: app/templates/ayuda.html:291
 msgid "No veo el botón de escuchar"
 msgstr "Non vexo o botón de escoitar"
 
-#: app/templates/ayuda.html:250
-msgid "Tu sistema no tiene ninguna voz instalada para el idioma de esa situación. Puedes añadir voces desde la configuración de tu sistema operativo."
-msgstr "O teu sistema non ten ningunha voz instalada para o idioma desa situación. Podes engadir voces desde a configuración do teu sistema operativo."
+#: app/templates/ayuda.html:293
+msgid ""
+"Tu sistema no tiene ninguna voz instalada para el idioma de esa "
+"situación. Puedes añadir voces desde la configuración de tu sistema "
+"operativo."
+msgstr ""
+"O teu sistema non ten ningunha voz instalada para o idioma desa "
+"situación. Podes engadir voces desde a configuración do teu sistema "
+"operativo."
 
-#: app/templates/ayuda.html:254
+#: app/templates/ayuda.html:297
 msgid "El PDF tiene saltos de página feos"
 msgstr "O PDF ten saltos de páxina feos"
 
-#: app/templates/ayuda.html:256
-msgid "Las plantillas de exportación intentan evitar viudas y huérfanos, pero si te ocurre, edita la sección concreta para reducir longitud y vuelve a exportar."
-msgstr "Os modelos de exportación intentan evitar viúvas e orfas, pero se che ocorre, edita a sección concreta para reducir a lonxitude e volve exportar."
+#: app/templates/ayuda.html:299
+msgid ""
+"Las plantillas de exportación intentan evitar viudas y huérfanos, pero si"
+" te ocurre, edita la sección concreta para reducir longitud y vuelve a "
+"exportar."
+msgstr ""
+"Os modelos de exportación intentan evitar viúvas e orfas, pero se che "
+"ocorre, edita a sección concreta para reducir a lonxitude e volve "
+"exportar."
 
-#: app/templates/ayuda.html:260
+#: app/templates/ayuda.html:303
 msgid "No recuerdo mi contraseña"
 msgstr "Non lembro o meu contrasinal"
 
-#: app/templates/ayuda.html:262
-msgid "Usa <a href=\"/restablecer-contrasena\">¿Olvidaste tu contraseña?</a> para establecer una nueva. No tendrás que esperar ningún correo."
-msgstr "Usa <a href=\"/restablecer-contrasena\">Esqueciches o teu contrasinal?</a> para establecer un novo. Non terás que agardar ningún correo."
+#: app/templates/ayuda.html:305
+msgid ""
+"Usa <a href=\"/restablecer-contrasena\">¿Olvidaste tu contraseña?</a> "
+"para establecer una nueva. No tendrás que esperar ningún correo."
+msgstr ""
+"Usa <a href=\"/restablecer-contrasena\">Esqueciches o teu "
+"contrasinal?</a> para establecer un novo. Non terás que agardar ningún "
+"correo."
 
 #: app/templates/baja.html:2 app/templates/baja.html:28
 msgid "Confirmar la baja"
@@ -476,51 +1161,75 @@ msgid "Confirmar la baja de tu cuenta"
 msgstr "Confirmar a baixa da túa conta"
 
 #: app/templates/baja.html:20
-msgid "Vas a confirmar la baja que pediste desde tu perfil. Esta es la última pantalla: al pulsar el botón se aplica."
-msgstr "Vas confirmar a baixa que pediches desde o teu perfil. Esta é a última pantalla: ao premer o botón aplícase."
+msgid ""
+"Vas a confirmar la baja que pediste desde tu perfil. Esta es la última "
+"pantalla: al pulsar el botón se aplica."
+msgstr ""
+"Vas confirmar a baixa que pediches desde o teu perfil. Esta é a última "
+"pantalla: ao premer o botón aplícase."
 
 #: app/templates/baja.html:23
-msgid "Qué ocurre exactamente depende del modo que elegiste al pedirla, y te lo indicamos en el correo."
-msgstr "Que ocorre exactamente depende do modo que elixiches ao pedila, e indicámoscho no correo."
+msgid ""
+"Qué ocurre exactamente depende del modo que elegiste al pedirla, y te lo "
+"indicamos en el correo."
+msgstr ""
+"Que ocorre exactamente depende do modo que elixiches ao pedila, e "
+"indicámoscho no correo."
 
 #: app/templates/baja.html:30
 msgid "No, cancelar"
 msgstr "Non, cancelar"
 
 #: app/templates/baja.html:37 app/templates/errores/404.html:13
-#: app/templates/errores/error.html:35
+#: app/templates/errores/error.html:35 app/templates/reclamacion.html:57
 msgid "Ir al inicio"
 msgstr "Ir ao inicio"
 
-#: app/templates/baja.html:42
-msgid "Este enlace no lleva ningún código. Ábrelo desde el correo que te enviamos."
-msgstr "Esta ligazón non leva ningún código. Ábrea desde o correo que che enviamos."
+#: app/templates/baja.html:42 app/templates/correo_de_respaldo.html:42
+#: app/templates/reclamacion.html:55
+msgid ""
+"Este enlace no lleva ningún código. Ábrelo desde el correo que te "
+"enviamos."
+msgstr ""
+"Esta ligazón non leva ningún código. Ábrea desde o correo que che "
+"enviamos."
 
-#: app/templates/baja.html:44
+#: app/templates/baja.html:44 app/templates/correo_de_respaldo.html:37
+#: app/templates/correo_de_respaldo.html:44
 msgid "Volver a mi perfil"
 msgstr "Volver ao meu perfil"
 
-#: app/templates/baja.html:52 app/templates/restablecer_contrasena.html:96
+#: app/templates/baja.html:52 app/templates/correo_de_respaldo.html:52
+#: app/templates/reclamacion.html:65
+#: app/templates/restablecer_contrasena.html:96
 msgid "Procesando…"
 msgstr "Procesando…"
 
-#: app/templates/baja.html:53 app/templates/login.html:68
-#: app/templates/perfil.html:203 app/templates/register.html:105
+#: app/templates/baja.html:53 app/templates/correo_de_respaldo.html:53
+#: app/templates/login.html:68 app/templates/perfil.html:286
+#: app/templates/reclamacion.html:66 app/templates/register.html:148
 #: app/templates/restablecer_contrasena.html:99
 #: app/templates/situaciones/detalle.html:240
 #: app/templates/situaciones/nueva.html:156
 msgid "Error desconocido"
 msgstr "Erro descoñecido"
 
-#: app/templates/baja.html:54 app/templates/perfil.html:207
+#: app/templates/baja.html:54 app/templates/correo_de_respaldo.html:54
+#: app/templates/perfil.html:290 app/templates/reclamacion.html:67
 #: app/templates/restablecer_contrasena.html:100
 #: app/templates/situaciones/nueva.html:165
 msgid "No se ha podido contactar con el servidor."
 msgstr "Non se puido contactar co servidor."
 
 #: app/templates/baja.html:55
-msgid "Tu cuenta ha quedado dada de baja. Tus situaciones se conservan durante el plazo de gracia: si vuelves a registrarte con el mismo correo podrás reclamarlas."
-msgstr "A túa conta quedou dada de baixa. As túas situacións consérvanse durante o prazo de graza: se volves rexistrarte co mesmo correo poderás reclamalas."
+msgid ""
+"Tu cuenta ha quedado dada de baja. Tus situaciones se conservan durante "
+"el plazo de gracia: si vuelves a registrarte con el mismo correo podrás "
+"reclamarlas."
+msgstr ""
+"A túa conta quedou dada de baixa. As túas situacións consérvanse durante "
+"o prazo de graza: se volves rexistrarte co mesmo correo poderás "
+"reclamalas."
 
 #: app/templates/baja.html:56
 msgid "Tu cuenta y todas tus situaciones se han borrado definitivamente."
@@ -571,7 +1280,7 @@ msgstr "Administración"
 
 #: app/templates/base.html:55 app/templates/errores/error.html:38
 #: app/templates/index.html:20 app/templates/login.html:6
-#: app/templates/mapa_web.html:18
+#: app/templates/mapa_web.html:18 app/templates/reclamacion.html:50
 msgid "Iniciar sesión"
 msgstr "Iniciar sesión"
 
@@ -613,12 +1322,20 @@ msgid "Aplicación Web para Docentes"
 msgstr "Aplicación Web para Docentes"
 
 #: app/templates/base.html:122
-msgid "Generación asistida de Situaciones de Aprendizaje conforme al Real Decreto 217/2022 (LOMLOE)."
-msgstr "Xeración asistida de Situacións de Aprendizaxe conforme ao Real Decreto 217/2022 (LOMLOE)."
+msgid ""
+"Generación asistida de Situaciones de Aprendizaje conforme al Real "
+"Decreto 217/2022 (LOMLOE)."
+msgstr ""
+"Xeración asistida de Situacións de Aprendizaxe conforme ao Real Decreto "
+"217/2022 (LOMLOE)."
 
 #: app/templates/base.html:125
-msgid "¿Te ha gustado? <a href=\"https://paypal.me/srcantero\" target=\"_blank\" rel=\"noopener\">Ayúdame aquí</a>"
-msgstr "Gustouche? <a href=\"https://paypal.me/srcantero\" target=\"_blank\" rel=\"noopener\">Axúdame aquí</a>"
+msgid ""
+"¿Te ha gustado? <a href=\"https://paypal.me/srcantero\" target=\"_blank\""
+" rel=\"noopener\">Ayúdame aquí</a>"
+msgstr ""
+"Gustouche? <a href=\"https://paypal.me/srcantero\" target=\"_blank\" "
+"rel=\"noopener\">Axúdame aquí</a>"
 
 #: app/templates/base.html:129
 msgid "Navegación"
@@ -644,6 +1361,43 @@ msgstr "Autor"
 msgid "Cerrar menú de navegación"
 msgstr "Pechar menú de navegación"
 
+#: app/templates/correo_de_respaldo.html:2
+#: app/templates/correo_de_respaldo.html:16
+msgid "Confirmar el correo de respaldo"
+msgstr "Confirmar o correo de recuperación"
+
+#: app/templates/correo_de_respaldo.html:20
+msgid "Al confirmar, esta dirección quedará como correo de respaldo de tu cuenta."
+msgstr ""
+"Ao confirmar, este enderezo quedará como correo de recuperación da túa "
+"conta."
+
+#: app/templates/correo_de_respaldo.html:23
+msgid ""
+"Sirve para dos cosas: recuperar la cuenta si pierdes el correo del "
+"centro, y demostrar que tus situaciones de aprendizaje son tuyas si "
+"alguna vez hay que reclamarlas."
+msgstr ""
+"Serve para dúas cousas: recuperar a conta se perdes o correo do centro, e"
+" demostrar que as túas situacións de aprendizaxe son túas se algunha vez "
+"hai que reclamalas."
+
+#: app/templates/correo_de_respaldo.html:28
+msgid "Confirmar"
+msgstr "Confirmar"
+
+#: app/templates/admin/panel.html:76 app/templates/admin/panel.html:199
+#: app/templates/correo_de_respaldo.html:30 app/templates/perfil.html:122
+#: app/templates/perfil.html:183 app/templates/perfil.html:206
+#: app/templates/perfil.html:274 app/templates/situaciones/nueva.html:139
+msgid "Cancelar"
+msgstr "Cancelar"
+
+#: app/templates/correo_de_respaldo.html:55
+#, python-brace-format
+msgid "Listo. Tu correo de respaldo es ahora {correo}."
+msgstr "Feito. O teu correo de recuperación agora é {correo}."
+
 #: app/templates/index.html:6
 msgid "LOMLOE · Real Decreto 217/2022"
 msgstr "LOMLOE · Real Decreto 217/2022"
@@ -653,16 +1407,26 @@ msgid "Situaciones de Aprendizaje, generadas con IA"
 msgstr "Situacións de Aprendizaxe, xeradas con IA"
 
 #: app/templates/index.html:10
-msgid "Plataforma para docentes que automatiza la creación de Situaciones de Aprendizaje conforme al currículo LOMLOE: justificación, objetivos, competencias, secuencia didáctica, evaluación y atención a la diversidad."
-msgstr "Plataforma para docentes que automatiza a creación de Situacións de Aprendizaxe conforme ao currículo LOMLOE: xustificación, obxectivos, competencias, secuencia didáctica, avaliación e atención á diversidade."
+msgid ""
+"Plataforma para docentes que automatiza la creación de Situaciones de "
+"Aprendizaje conforme al currículo LOMLOE: justificación, objetivos, "
+"competencias, secuencia didáctica, evaluación y atención a la diversidad."
+msgstr ""
+"Plataforma para docentes que automatiza a creación de Situacións de "
+"Aprendizaxe conforme ao currículo LOMLOE: xustificación, obxectivos, "
+"competencias, secuencia didáctica, avaliación e atención á diversidade."
 
 #: app/templates/index.html:16
 msgid "Empieza ahora"
 msgstr "Comeza agora"
 
 #: app/templates/index.html:17
-msgid "Crea una cuenta o accede con la tuya para gestionar tus situaciones de aprendizaje."
-msgstr "Crea unha conta ou accede coa túa para xestionar as túas situacións de aprendizaxe."
+msgid ""
+"Crea una cuenta o accede con la tuya para gestionar tus situaciones de "
+"aprendizaje."
+msgstr ""
+"Crea unha conta ou accede coa túa para xestionar as túas situacións de "
+"aprendizaxe."
 
 #: app/templates/admin/panel.html:75 app/templates/index.html:19
 #: app/templates/register.html:6
@@ -738,32 +1502,50 @@ msgid "Describe tu contexto"
 msgstr "Describe o teu contexto"
 
 #: app/templates/index.html:86
-msgid "Indica materia, curso, número de sesiones, perfil del alumnado y materiales disponibles."
-msgstr "Indica materia, curso, número de sesións, perfil do alumnado e materiais dispoñibles."
+msgid ""
+"Indica materia, curso, número de sesiones, perfil del alumnado y "
+"materiales disponibles."
+msgstr ""
+"Indica materia, curso, número de sesións, perfil do alumnado e materiais "
+"dispoñibles."
 
 #: app/templates/index.html:90
 msgid "Genera con IA"
 msgstr "Xera con IA"
 
 #: app/templates/index.html:91
-msgid "El sistema redacta las seis secciones LOMLOE en menos de dos minutos, citando criterios y saberes del currículo oficial."
-msgstr "O sistema redacta as seis seccións LOMLOE en menos de dous minutos, citando criterios e saberes do currículo oficial."
+msgid ""
+"El sistema redacta las seis secciones LOMLOE en menos de dos minutos, "
+"citando criterios y saberes del currículo oficial."
+msgstr ""
+"O sistema redacta as seis seccións LOMLOE en menos de dous minutos, "
+"citando criterios e saberes do currículo oficial."
 
 #: app/templates/index.html:95
 msgid "Edita y exporta"
 msgstr "Edita e exporta"
 
 #: app/templates/index.html:96
-msgid "Refina cualquier sección, crea adaptaciones (ACNS / ACS) y descarga la SA en PDF o DOCX lista para entregar."
-msgstr "Refina calquera sección, crea adaptacións (ACNS / ACS) e descarga a SA en PDF ou DOCX lista para entregar."
+msgid ""
+"Refina cualquier sección, crea adaptaciones (ACNS / ACS) y descarga la SA"
+" en PDF o DOCX lista para entregar."
+msgstr ""
+"Refina calquera sección, crea adaptacións (ACNS / ACS) e descarga a SA en"
+" PDF ou DOCX lista para entregar."
 
 #: app/templates/index.html:102
 msgid "¿Necesitas ayuda?"
 msgstr "Precisas axuda?"
 
 #: app/templates/index.html:104
-msgid "Consulta el <a href=\"/ayuda\">centro de ayuda</a> para guías rápidas o explora el <a href=\"/mapa-web\">mapa web</a> para ver todas las secciones disponibles."
-msgstr "Consulta o <a href=\"/ayuda\">centro de axuda</a> para guías rápidas ou explora o <a href=\"/mapa-web\">mapa web</a> para ver todas as seccións dispoñibles."
+msgid ""
+"Consulta el <a href=\"/ayuda\">centro de ayuda</a> para guías rápidas o "
+"explora el <a href=\"/mapa-web\">mapa web</a> para ver todas las "
+"secciones disponibles."
+msgstr ""
+"Consulta o <a href=\"/ayuda\">centro de axuda</a> para guías rápidas ou "
+"explora o <a href=\"/mapa-web\">mapa web</a> para ver todas as seccións "
+"dispoñibles."
 
 #: app/templates/index.html:124
 msgid "Tienes 1 situación en tu cuenta."
@@ -805,6 +1587,7 @@ msgstr "Borrador"
 
 #: app/templates/admin/panel.html:121 app/templates/admin/panel.html:309
 #: app/templates/index.html:165 app/templates/situaciones/detalle.html:256
+#: app/templates/situaciones/detalle.html:274
 #: app/templates/situaciones/listar.html:35
 #: app/templates/situaciones/listar.html:90
 msgid "Generando…"
@@ -832,8 +1615,12 @@ msgid "Finalizada"
 msgstr "Finalizada"
 
 #: app/templates/login.html:7
-msgid "Accede a tu cuenta de docente para gestionar tus situaciones de aprendizaje."
-msgstr "Accede á túa conta de docente para xestionar as túas situacións de aprendizaxe."
+msgid ""
+"Accede a tu cuenta de docente para gestionar tus situaciones de "
+"aprendizaje."
+msgstr ""
+"Accede á túa conta de docente para xestionar as túas situacións de "
+"aprendizaxe."
 
 #: app/templates/login.html:10 app/templates/register.html:12
 #: app/templates/restablecer_contrasena.html:55
@@ -854,7 +1641,8 @@ msgstr "Correo electrónico"
 
 #: app/templates/login.html:17 app/templates/login.html:26
 #: app/templates/perfil.html:96 app/templates/perfil.html:104
-#: app/templates/perfil.html:115 app/templates/perfil.html:180
+#: app/templates/perfil.html:115 app/templates/perfil.html:168
+#: app/templates/perfil.html:193 app/templates/perfil.html:263
 #: app/templates/register.html:19 app/templates/register.html:29
 #: app/templates/register.html:38 app/templates/restablecer_contrasena.html:33
 #: app/templates/restablecer_contrasena.html:62
@@ -883,7 +1671,9 @@ msgid "¿Olvidaste tu contraseña?"
 msgstr "Esqueciches o teu contrasinal?"
 
 #: app/templates/mapa_web.html:9
-msgid "Índice navegable de todas las páginas y secciones públicas de la aplicación."
+msgid ""
+"Índice navegable de todas las páginas y secciones públicas de la "
+"aplicación."
 msgstr "Índice navegable de todas as páxinas e seccións públicas da aplicación."
 
 #: app/templates/mapa_web.html:14
@@ -981,8 +1771,12 @@ msgid "Generación con IA"
 msgstr "Xeración con IA"
 
 #: app/templates/perfil.html:55
-msgid "Elige qué modelo redacta tus situaciones de aprendizaje. Si no eliges nada se usa el del sistema."
-msgstr "Elixe que modelo redacta as túas situacións de aprendizaxe. Se non elixes nada úsase o do sistema."
+msgid ""
+"Elige qué modelo redacta tus situaciones de aprendizaje. Si no eliges "
+"nada se usa el del sistema."
+msgstr ""
+"Elixe que modelo redacta as túas situacións de aprendizaxe. Se non elixes"
+" nada úsase o do sistema."
 
 #: app/templates/perfil.html:61
 msgid "Proveedor"
@@ -1005,8 +1799,12 @@ msgid "Seguridad"
 msgstr "Seguridade"
 
 #: app/templates/perfil.html:82
-msgid "Cambia tu contraseña periódicamente. La nueva debe cumplir los requisitos de seguridad."
-msgstr "Cambia o teu contrasinal periodicamente. O novo debe cumprir os requisitos de seguridade."
+msgid ""
+"Cambia tu contraseña periódicamente. La nueva debe cumplir los requisitos"
+" de seguridad."
+msgstr ""
+"Cambia o teu contrasinal periodicamente. O novo debe cumprir os "
+"requisitos de seguridade."
 
 #: app/templates/perfil.html:86
 msgid "Cambiar contraseña"
@@ -1033,115 +1831,351 @@ msgstr "Confirmar novo contrasinal"
 msgid "Guardar nueva contraseña"
 msgstr "Gardar novo contrasinal"
 
-#: app/templates/admin/panel.html:76 app/templates/admin/panel.html:199
-#: app/templates/perfil.html:122 app/templates/perfil.html:191
-#: app/templates/situaciones/nueva.html:139
-msgid "Cancelar"
-msgstr "Cancelar"
+#: app/templates/perfil.html:143
+msgid "Correo de respaldo"
+msgstr "Correo de recuperación"
 
-#: app/templates/perfil.html:137
+#: app/templates/perfil.html:145
+msgid ""
+"Una dirección personal, tuya y no del centro. Sirve para recuperar la "
+"cuenta si pierdes el correo institucional, y para demostrar que tus "
+"situaciones de aprendizaje son tuyas si alguna vez hay que reclamarlas."
+msgstr ""
+"Un enderezo persoal, teu e non do centro. Serve para recuperar a conta se"
+" perdes o correo institucional, e para demostrar que as túas situacións "
+"de aprendizaxe son túas se algunha vez hai que reclamalas."
+
+#: app/templates/perfil.html:150
+msgid ""
+"Sin correo de respaldo, si alguien se registra con tu dirección después "
+"de que te des de baja, quien decide si se le entrega tu contenido es la "
+"administración de AWEBO y no tú."
+msgstr ""
+"Sen correo de recuperación, se alguén se rexistra co teu enderezo despois"
+" de que te deas de baixa, quen decide se se lle entrega o teu contido é a"
+" administración de AWEBO e non ti."
+
+#: app/templates/perfil.html:156 app/templates/perfil.html:301
+msgid "Añadir correo de respaldo"
+msgstr "Engadir correo de recuperación"
+
+#: app/templates/perfil.html:159
+msgid "Quitarlo"
+msgstr "Quitalo"
+
+#: app/templates/perfil.html:166
+msgid "Dirección de respaldo"
+msgstr "Enderezo de recuperación"
+
+#: app/templates/perfil.html:173
+msgid ""
+"Usa una dirección que siga siendo tuya aunque cambies de centro. No puede"
+" ser la misma con la que entras en AWEBO."
+msgstr ""
+"Usa un enderezo que siga sendo teu aínda que cambies de centro. Non pode "
+"ser o mesmo co que entras en AWEBO."
+
+#: app/templates/perfil.html:177
+msgid ""
+"Como ya tienes un respaldo, el enlace de confirmación se enviará a la "
+"dirección actual, no a la nueva. Es lo que impide que quien entre en tu "
+"cuenta pueda cambiarla."
+msgstr ""
+"Como xa tes un enderezo de recuperación, a ligazón de confirmación "
+"enviarase ao actual, non ao novo. É o que impide que quen entre na túa "
+"conta poida cambialo."
+
+#: app/templates/perfil.html:181
+msgid "Enviar enlace de confirmación"
+msgstr "Enviar ligazón de confirmación"
+
+#: app/templates/perfil.html:191
+msgid "Tu contraseña"
+msgstr "O teu contrasinal"
+
+#: app/templates/perfil.html:199
+msgid ""
+"Para quitarlo basta con tu contraseña: quitarlo deja la cuenta como "
+"estaba antes de tenerlo, no se la entrega a nadie."
+msgstr ""
+"Para quitalo abonda co teu contrasinal: quitalo deixa a conta como estaba"
+" antes de telo, non lla entrega a ninguén."
+
+#: app/templates/perfil.html:204
+msgid "Quitar el correo de respaldo"
+msgstr "Quitar o correo de recuperación"
+
+#: app/templates/perfil.html:220
 msgid "Dar de baja mi cuenta"
 msgstr "Dar de baixa a miña conta"
 
-#: app/templates/perfil.html:141
-msgid "Puedes darte de baja tú mismo. Te pediremos tu contraseña y te enviaremos un correo para confirmarlo."
-msgstr "Podes darte de baixa ti mesmo. Pedirémosche o teu contrasinal e enviarémosche un correo para confirmalo."
+#: app/templates/perfil.html:224
+msgid ""
+"Puedes darte de baja tú mismo. Te pediremos tu contraseña y te enviaremos"
+" un correo para confirmarlo."
+msgstr ""
+"Podes darte de baixa ti mesmo. Pedirémosche o teu contrasinal e "
+"enviarémosche un correo para confirmalo."
 
-#: app/templates/perfil.html:145
+#: app/templates/perfil.html:228
 msgid "Quiero darme de baja"
 msgstr "Quero darme de baixa"
 
-#: app/templates/perfil.html:152
+#: app/templates/perfil.html:235
 msgid "¿Qué hacemos con tus situaciones de aprendizaje?"
 msgstr "Que facemos coas túas situacións de aprendizaxe?"
 
-#: app/templates/perfil.html:162
+#: app/templates/perfil.html:245
 msgid "Borrarlo todo"
 msgstr "Borrar todo"
 
-#: app/templates/perfil.html:163
-msgid "Se eliminan tu cuenta y todas tus situaciones de forma inmediata y definitiva. No se pueden recuperar."
-msgstr "Elimínanse a túa conta e todas as túas situacións de forma inmediata e definitiva. Non se poden recuperar."
+#: app/templates/perfil.html:246
+msgid ""
+"Se eliminan tu cuenta y todas tus situaciones de forma inmediata y "
+"definitiva. No se pueden recuperar."
+msgstr ""
+"Elimínanse a túa conta e todas as túas situacións de forma inmediata e "
+"definitiva. Non se poden recuperar."
 
-#: app/templates/perfil.html:170
+#: app/templates/perfil.html:253
 msgid "Conservar mis situaciones durante el plazo de gracia"
 msgstr "Conservar as miñas situacións durante o prazo de graza"
 
-#: app/templates/perfil.html:171
-msgid "Tu cuenta deja de poder entrar, pero tus situaciones se guardan. Si vuelves a registrarte con este mismo correo dentro del plazo, podrás reclamarlas."
-msgstr "A túa conta deixa de poder entrar, pero as túas situacións gárdanse. Se volves rexistrarte con este mesmo correo dentro do prazo, poderás reclamalas."
+#: app/templates/perfil.html:254
+msgid ""
+"Tu cuenta deja de poder entrar, pero tus situaciones se guardan. Si "
+"vuelves a registrarte con este mismo correo dentro del plazo, podrás "
+"reclamarlas."
+msgstr ""
+"A túa conta deixa de poder entrar, pero as túas situacións gárdanse. Se "
+"volves rexistrarte con este mesmo correo dentro do prazo, poderás "
+"reclamalas."
 
-#: app/templates/perfil.html:178
+#: app/templates/perfil.html:261
 msgid "Tu contraseña actual"
 msgstr "O teu contrasinal actual"
 
-#: app/templates/perfil.html:184
-msgid "La pedimos porque una sesión abierta en un ordenador compartido no basta para borrar una cuenta."
-msgstr "Pedímola porque unha sesión aberta nun ordenador compartido non abonda para borrar unha conta."
+#: app/templates/perfil.html:267
+msgid ""
+"La pedimos porque una sesión abierta en un ordenador compartido no basta "
+"para borrar una cuenta."
+msgstr ""
+"Pedímola porque unha sesión aberta nun ordenador compartido non abonda "
+"para borrar unha conta."
 
-#: app/templates/perfil.html:189
+#: app/templates/perfil.html:272
 msgid "Enviarme el correo de confirmación"
 msgstr "Enviarme o correo de confirmación"
 
-#: app/templates/perfil.html:204
+#: app/templates/perfil.html:287
 msgid "Elige qué quieres que pase con tus situaciones."
 msgstr "Elixe que queres que pase coas túas situacións."
 
-#: app/templates/perfil.html:205 app/templates/restablecer_contrasena.html:97
+#: app/templates/perfil.html:288 app/templates/perfil.html:303
+#: app/templates/restablecer_contrasena.html:97
 msgid "Enviando…"
 msgstr "Enviando…"
 
-#: app/templates/perfil.html:206
-msgid "Te hemos enviado un correo. Abre el enlace para confirmar la baja; caduca en media hora."
-msgstr "Enviámosche un correo. Abre a ligazón para confirmar a baixa; caduca en media hora."
+#: app/templates/perfil.html:289
+msgid ""
+"Te hemos enviado un correo. Abre el enlace para confirmar la baja; caduca"
+" en media hora."
+msgstr ""
+"Enviámosche un correo. Abre a ligazón para confirmar a baixa; caduca en "
+"media hora."
 
-#: app/templates/perfil.html:208
+#: app/templates/perfil.html:291
 msgid "Se usará el proveedor del sistema."
 msgstr "Usarase o provedor do sistema."
 
-#: app/templates/perfil.html:209
+#: app/templates/perfil.html:292
 msgid "Usar el del sistema"
 msgstr "Usar o do sistema"
 
-#: app/templates/perfil.html:210
+#: app/templates/perfil.html:293
 msgid "Preferencia guardada."
 msgstr "Preferencia gardada."
 
-#: app/templates/perfil.html:211
+#: app/templates/perfil.html:294
 msgid "No se ha podido guardar."
 msgstr "Non se puido gardar."
 
-#: app/templates/perfil.html:212
+#: app/templates/perfil.html:295
 msgid "Perfil actualizado correctamente."
 msgstr "Perfil actualizado correctamente."
 
-#: app/templates/perfil.html:213
+#: app/templates/perfil.html:296
 msgid "Las contraseñas nuevas no coinciden."
 msgstr "Os novos contrasinais non coinciden."
 
-#: app/templates/perfil.html:214
+#: app/templates/perfil.html:297
 msgid "Contraseña cambiada correctamente."
 msgstr "Contrasinal cambiado correctamente."
 
-#: app/templates/register.html:8
-msgid "Regístrate como <strong>docente</strong> para empezar a crear situaciones de aprendizaje LOMLOE con asistencia de IA."
-msgstr "Rexístrate como <strong>docente</strong> para empezar a crear situacións de aprendizaxe LOMLOE con asistencia de IA."
+#: app/templates/perfil.html:298
+msgid "No tienes correo de respaldo."
+msgstr "Non tes correo de recuperación."
 
-#: app/templates/register.html:65
+#: app/templates/perfil.html:299
+#, python-brace-format
+msgid "Tu correo de respaldo es {correo}."
+msgstr "O teu correo de recuperación é {correo}."
+
+#: app/templates/perfil.html:300
+#, python-brace-format
+msgid ""
+"Has añadido {correo}, pero está sin confirmar. Hasta que abras el enlace "
+"no cuenta para nada."
+msgstr ""
+"Engadiches {correo}, pero está sen confirmar. Ata que non abras a ligazón"
+" non conta para nada."
+
+#: app/templates/perfil.html:302
+msgid "Cambiar el correo de respaldo"
+msgstr "Cambiar o correo de recuperación"
+
+#: app/templates/perfil.html:304
+#, python-brace-format
+msgid "Te hemos enviado un enlace a {correo}. Ábrelo para confirmarlo."
+msgstr "Enviámosche unha ligazón a {correo}. Ábrea para confirmalo."
+
+#: app/templates/perfil.html:305
+#, python-brace-format
+msgid ""
+"Te hemos enviado el enlace a tu respaldo actual, {correo}, no a la "
+"dirección nueva. Es lo que impide que quien entre en tu cuenta pueda "
+"cambiarla."
+msgstr ""
+"Enviámosche a ligazón ao teu enderezo de recuperación actual, {correo}, "
+"non ao novo. É o que impide que quen entre na túa conta poida cambialo."
+
+#: app/templates/perfil.html:306
+msgid "Se ha quitado el correo de respaldo."
+msgstr "Quitouse o correo de recuperación."
+
+#: app/templates/reclamacion.html:2
+msgid "Autorizar la recuperación de tu contenido"
+msgstr "Autorizar a recuperación do teu contido"
+
+#: app/templates/reclamacion.html:21
+msgid "¿Autorizas recuperar el contenido de tu cuenta?"
+msgstr "Autorizas recuperar o contido da túa conta?"
+
+#: app/templates/reclamacion.html:25
+msgid ""
+"Alguien se ha registrado en AWEBO con la dirección de una cuenta que "
+"diste de baja y ha pedido recuperar su contenido."
+msgstr ""
+"Alguén rexistrouse en AWEBO co enderezo dunha conta que deches de baixa e"
+" pediu recuperar o seu contido."
+
+#: app/templates/reclamacion.html:28
+msgid "Si eres tú"
+msgstr "Se es ti"
+
+#: app/templates/reclamacion.html:29
+msgid ""
+"—por ejemplo, has cambiado de centro y vuelves con otra dirección— "
+"confírmalo aquí y recuperarás tus situaciones de aprendizaje."
+msgstr ""
+"—por exemplo, cambiaches de centro e volves con outro enderezo— confírmao"
+" aquí e recuperarás as túas situacións de aprendizaxe."
+
+#: app/templates/reclamacion.html:32
+msgid "Si no eres tú, cierra esta página."
+msgstr "Se non es ti, pecha esta páxina."
+
+#: app/templates/reclamacion.html:33
+msgid ""
+"Sin tu confirmación no se entrega nada: el contenido seguirá retenido "
+"hasta que venza el plazo y se borre. Si te parece que alguien está "
+"intentando quedárselo, escribe a la administración de AWEBO."
+msgstr ""
+"Sen a túa confirmación non se entrega nada: o contido seguirá retido ata "
+"que venza o prazo e se borre. Se che parece que alguén está a intentar "
+"quedar con el, escribe á administración de AWEBO."
+
+#: app/templates/reclamacion.html:38
+msgid "Sí, soy yo: entregar mi contenido"
+msgstr "Si, son eu: entregar o meu contido"
+
+#: app/templates/reclamacion.html:40
+msgid "No autorizo"
+msgstr "Non autorizo"
+
+#: app/templates/reclamacion.html:48
+msgid ""
+"Ya puedes iniciar sesión con la contraseña que elegiste al registrarte de"
+" nuevo."
+msgstr ""
+"Xa podes iniciar sesión co contrasinal que escolliches ao rexistrarte de "
+"novo."
+
+#: app/templates/reclamacion.html:68
+msgid "Autorizado. El contenido ya está disponible en la cuenta."
+msgstr "Autorizado. O contido xa está dispoñible na conta."
+
+#: app/templates/register.html:8
+msgid ""
+"Regístrate como <strong>docente</strong> para empezar a crear situaciones"
+" de aprendizaje LOMLOE con asistencia de IA."
+msgstr ""
+"Rexístrate como <strong>docente</strong> para empezar a crear situacións "
+"de aprendizaxe LOMLOE con asistencia de IA."
+
+#: app/templates/register.html:74
+msgid "Correo de respaldo (opcional)"
+msgstr "Correo de recuperación (opcional)"
+
+#: app/templates/register.html:78
+msgid ""
+"Una dirección personal, distinta de la del centro. Te permitirá recuperar"
+" la cuenta si pierdes el correo institucional y demostrar que tus "
+"situaciones de aprendizaje son tuyas. Puedes añadirlo o cambiarlo después"
+" desde tu perfil."
+msgstr ""
+"Un enderezo persoal, distinto do do centro. Permitirache recuperar a "
+"conta se perdes o correo institucional e demostrar que as túas situacións"
+" de aprendizaxe son túas. Podes engadilo ou cambialo despois desde o teu "
+"perfil."
+
+#: app/templates/register.html:94
+msgid ""
+"Antes de continuar: las personas administradoras de AWEBO pueden abrir el"
+" contenido de cualquier cuenta, y cada acceso queda registrado. Lo "
+"explicamos en <a href=\"/ayuda#cuenta\">el portal de ayuda</a>."
+msgstr ""
+"Antes de continuar: as persoas administradoras de AWEBO poden abrir o "
+"contido de calquera conta, e cada acceso queda rexistrado. Explicámolo no"
+" <a href=\"/ayuda#cuenta\">portal de axuda</a>."
+
+#: app/templates/register.html:98
 msgid "Registrarme"
 msgstr "Rexistrarme"
 
-#: app/templates/register.html:66
+#: app/templates/register.html:99
 msgid "¿Ya tienes cuenta?"
 msgstr "Xa tes conta?"
 
-#: app/templates/register.html:85
+#: app/templates/register.html:118
 msgid "Creando cuenta…"
 msgstr "Creando a conta…"
 
+#: app/templates/register.html:136
+msgid ""
+"Cuenta creada. Te hemos enviado un enlace a tu correo de respaldo: ábrelo"
+" para confirmarlo. Hasta entonces no cuenta."
+msgstr ""
+"Conta creada. Enviámosche unha ligazón ao teu correo de recuperación: "
+"ábrea para confirmalo. Ata entón non conta."
+
 #: app/templates/restablecer_contrasena.html:25
-msgid "Escribe tu correo y te enviaremos un enlace para elegir una contraseña nueva."
-msgstr "Escribe o teu correo e enviarémosche unha ligazón para escoller un contrasinal novo."
+msgid ""
+"Escribe tu correo y te enviaremos un enlace para elegir una contraseña "
+"nueva."
+msgstr ""
+"Escribe o teu correo e enviarémosche unha ligazón para escoller un "
+"contrasinal novo."
 
 #: app/templates/restablecer_contrasena.html:40
 msgid "Enviarme el enlace"
@@ -1164,16 +2198,25 @@ msgid "Contraseña restablecida correctamente. Te llevamos al inicio de sesión�
 msgstr "Contrasinal restablecido correctamente. Lévamoste ao inicio de sesión…"
 
 #: app/templates/restablecer_contrasena.html:98
-msgid "Si esa dirección tiene cuenta, recibirás un correo con un enlace. Revisa también la carpeta de correo no deseado."
-msgstr "Se ese enderezo ten conta, recibirás un correo cunha ligazón. Revisa tamén o cartafol de correo lixo."
+msgid ""
+"Si esa dirección tiene cuenta, recibirás un correo con un enlace. Revisa "
+"también la carpeta de correo no deseado."
+msgstr ""
+"Se ese enderezo ten conta, recibirás un correo cunha ligazón. Revisa "
+"tamén o cartafol de correo lixo."
 
 #: app/templates/admin/panel.html:6
 msgid "Panel de administración"
 msgstr "Panel de administración"
 
 #: app/templates/admin/panel.html:8
-msgid "Gestiona cuentas y contenido. <strong>El contenido de las situaciones de aprendizaje no es accesible desde aquí</strong>: se pueden borrar, no leer."
-msgstr "Xestiona contas e contido. <strong>O contido das situacións de aprendizaxe non é accesible desde aquí</strong>: pódense borrar, non ler."
+msgid ""
+"Gestiona cuentas y contenido. <strong>El contenido de las situaciones de "
+"aprendizaje no es accesible desde aquí</strong>: se pueden borrar, no "
+"leer."
+msgstr ""
+"Xestiona contas e contido. <strong>O contido das situacións de "
+"aprendizaxe non é accesible desde aquí</strong>: pódense borrar, non ler."
 
 #: app/templates/admin/panel.html:17
 msgid "Resumen de la plataforma"
@@ -1232,8 +2275,12 @@ msgid "Situaciones de aprendizaje"
 msgstr "Situacións de aprendizaxe"
 
 #: app/templates/admin/panel.html:111
-msgid "Solo se muestran los datos necesarios para identificarlas. No es posible abrir su contenido."
-msgstr "Só se mostran os datos necesarios para identificalas. Non é posible abrir o seu contido."
+msgid ""
+"Solo se muestran los datos necesarios para identificarlas. No es posible "
+"abrir su contenido."
+msgstr ""
+"Só se mostran os datos necesarios para identificalas. Non é posible abrir"
+" o seu contido."
 
 #: app/templates/admin/panel.html:119 app/templates/situaciones/listar.html:33
 #: app/templates/situaciones/listar.html:83
@@ -1301,13 +2348,21 @@ msgstr "Eliminar «{titulo}»? Esta acción non se pode desfacer."
 
 #: app/templates/admin/panel.html:176
 #, python-brace-format
-msgid "Eliminar la cuenta {correo} Y todo su contenido ({n} situaciones). No se puede deshacer."
-msgstr "Eliminar a conta {correo} E todo o seu contido ({n} situacións). Non se pode desfacer."
+msgid ""
+"Eliminar la cuenta {correo} Y todo su contenido ({n} situaciones). No se "
+"puede deshacer."
+msgstr ""
+"Eliminar a conta {correo} E todo o seu contido ({n} situacións). Non se "
+"pode desfacer."
 
 #: app/templates/admin/panel.html:177
 #, python-brace-format
-msgid "Dar de baja a {correo} conservando sus {n} situaciones durante 90 días. Podrá recuperarlas volviendo a registrarse con este correo."
-msgstr "Dar de baixa a {correo} conservando as súas {n} situacións durante 90 días. Poderá recuperalas volvendo rexistrarse con este correo."
+msgid ""
+"Dar de baja a {correo} conservando sus {n} situaciones durante 90 días. "
+"Podrá recuperarlas volviendo a registrarse con este correo."
+msgstr ""
+"Dar de baixa a {correo} conservando as súas {n} situacións durante 90 "
+"días. Poderá recuperalas volvendo rexistrarse con este correo."
 
 #: app/templates/admin/panel.html:178
 msgid "No se ha podido completar la operación."
@@ -1372,13 +2427,23 @@ msgstr "Rexeitar"
 
 #: app/templates/admin/panel.html:194
 #, python-brace-format
-msgid "Devolver la cuenta {correo} y sus {n} situaciones a quien la reclama ({nombre}). Comprueba antes que es la misma persona: una dirección de centro puede haberse reasignado."
-msgstr "Devolver a conta {correo} e as súas {n} situacións a quen a reclama ({nombre}). Comproba antes que é a mesma persoa: un enderezo de centro pode terse reasignado."
+msgid ""
+"Devolver la cuenta {correo} y sus {n} situaciones a quien la reclama "
+"({nombre}). Comprueba antes que es la misma persona: una dirección de "
+"centro puede haberse reasignado."
+msgstr ""
+"Devolver a conta {correo} e as súas {n} situacións a quen a reclama "
+"({nombre}). Comproba antes que é a mesma persoa: un enderezo de centro "
+"pode terse reasignado."
 
 #: app/templates/admin/panel.html:195
 #, python-brace-format
-msgid "Rechazar la solicitud sobre {correo}. El contenido sigue guardado hasta que venza el plazo."
-msgstr "Rexeitar a solicitude sobre {correo}. O contido segue gardado ata que venza o prazo."
+msgid ""
+"Rechazar la solicitud sobre {correo}. El contenido sigue guardado hasta "
+"que venza el plazo."
+msgstr ""
+"Rexeitar a solicitude sobre {correo}. O contido segue gardado ata que "
+"venza o prazo."
 
 #: app/templates/admin/panel.html:196
 #, python-brace-format
@@ -1428,8 +2493,13 @@ msgid "No encontramos esa página"
 msgstr "Non atopamos esa páxina"
 
 #: app/templates/errores/404.html:10
-msgid "El enlace puede estar roto o la página puede haberse movido. Prueba a volver al inicio o consulta el mapa web para ver todas las secciones disponibles."
-msgstr "A ligazón pode estar rota ou a páxina pode terse movido. Proba a volver ao inicio ou consulta o mapa web para ver todas as seccións dispoñibles."
+msgid ""
+"El enlace puede estar roto o la página puede haberse movido. Prueba a "
+"volver al inicio o consulta el mapa web para ver todas las secciones "
+"disponibles."
+msgstr ""
+"A ligazón pode estar rota ou a páxina pode terse movido. Proba a volver "
+"ao inicio ou consulta o mapa web para ver todas as seccións dispoñibles."
 
 #: app/templates/errores/404.html:14
 msgid "Ver mapa web"
@@ -1537,8 +2607,14 @@ msgid "← Volver al listado"
 msgstr "← Volver á listaxe"
 
 #: app/templates/situaciones/detalle.html:16
-msgid "El original del que salió esta adaptación ya no existe: su autor o autora dio de baja la cuenta. Tu adaptación se conserva íntegra y sigue siendo tuya; lo único que se pierde es el enlace al documento de partida."
-msgstr "O orixinal do que saíu esta adaptación xa non existe: o seu autor ou autora deu de baixa a conta. A túa adaptación consérvase íntegra e segue sendo túa; o único que se perde é a ligazón ao documento de partida."
+msgid ""
+"El original del que salió esta adaptación ya no existe: su autor o autora"
+" dio de baja la cuenta. Tu adaptación se conserva íntegra y sigue siendo "
+"tuya; lo único que se pierde es el enlace al documento de partida."
+msgstr ""
+"O orixinal do que saíu esta adaptación xa non existe: o seu autor ou "
+"autora deu de baixa a conta. A túa adaptación consérvase íntegra e segue "
+"sendo túa; o único que se perde é a ligazón ao documento de partida."
 
 #: app/templates/situaciones/detalle.html:20
 msgid "Datos de la situación"
@@ -1627,8 +2703,12 @@ msgid "Duplicar"
 msgstr "Duplicar"
 
 #: app/templates/situaciones/detalle.html:120
-msgid "Genera el contenido didáctico completo o regenera una sección concreta. Durante la generación la situación queda bloqueada."
-msgstr "Xera o contido didáctico completo ou rexera unha sección concreta. Durante a xeración a situación queda bloqueada."
+msgid ""
+"Genera el contenido didáctico completo o regenera una sección concreta. "
+"Durante la generación la situación queda bloqueada."
+msgstr ""
+"Xera o contido didáctico completo ou rexera unha sección concreta. "
+"Durante a xeración a situación queda bloqueada."
 
 #: app/templates/situaciones/detalle.html:125
 #: app/templates/situaciones/detalle.html:244
@@ -1660,8 +2740,12 @@ msgid "Adaptaciones curriculares"
 msgstr "Adaptacións curriculares"
 
 #: app/templates/situaciones/detalle.html:163
-msgid "Genera una adaptación curricular a partir de esta situación de aprendizaje, diferenciando si modifica los criterios de evaluación o no."
-msgstr "Xera unha adaptación curricular a partir desta situación de aprendizaxe, diferenciando se modifica os criterios de avaliación ou non."
+msgid ""
+"Genera una adaptación curricular a partir de esta situación de "
+"aprendizaje, diferenciando si modifica los criterios de evaluación o no."
+msgstr ""
+"Xera unha adaptación curricular a partir desta situación de aprendizaxe, "
+"diferenciando se modifica os criterios de avaliación ou non."
 
 #: app/templates/situaciones/detalle.html:169
 msgid "Tipo de adaptación"
@@ -1704,8 +2788,12 @@ msgid "Historial de versiones"
 msgstr "Historial de versións"
 
 #: app/templates/situaciones/detalle.html:200
-msgid "Aún no hay versiones guardadas. Cada vez que modifiques esta situación se creará una nueva entrada."
-msgstr "Aínda non hai versións gardadas. Cada vez que modifiques esta situación crearase unha nova entrada."
+msgid ""
+"Aún no hay versiones guardadas. Cada vez que modifiques esta situación se"
+" creará una nueva entrada."
+msgstr ""
+"Aínda non hai versións gardadas. Cada vez que modifiques esta situación "
+"crearase unha nova entrada."
 
 #: app/templates/situaciones/detalle.html:203
 msgid "Versiones guardadas de esta situación"
@@ -1725,13 +2813,29 @@ msgstr "Título previo"
 
 #: app/templates/situaciones/detalle.html:235
 #: app/templates/situaciones/nueva.html:186
-msgid "Una de las dos opciones de Matemáticas de 4.º. Se desarrolla sobre todo mediante la resolución de problemas, la investigación y el análisis matemático de situaciones de la vida cotidiana."
-msgstr "Unha das dúas opcións de Matemáticas de 4.º. Desenvólvese sobre todo mediante a resolución de problemas, a investigación e a análise matemática de situacións da vida cotiá."
+msgid ""
+"Una de las dos opciones de Matemáticas de 4.º. Se desarrolla sobre todo "
+"mediante la resolución de problemas, la investigación y el análisis "
+"matemático de situaciones de la vida cotidiana."
+msgstr ""
+"Unha das dúas opcións de Matemáticas de 4.º. Desenvólvese sobre todo "
+"mediante a resolución de problemas, a investigación e a análise "
+"matemática de situacións da vida cotiá."
 
 #: app/templates/situaciones/detalle.html:236
 #: app/templates/situaciones/nueva.html:187
-msgid "La otra opción de Matemáticas de 4.º. Además de lo anterior, profundiza en los procedimientos algebraicos, geométricos, analíticos y estadísticos, en contextos matemáticos, científicos y sociales. El real decreto no la vincula a ninguna modalidad de Bachillerato: la diferencia que establece es de enfoque."
-msgstr "A outra opción de Matemáticas de 4.º. Ademais do anterior, afonda nos procedementos alxébricos, xeométricos, analíticos e estatísticos, en contextos matemáticos, científicos e sociais. O real decreto non a vincula a ningunha modalidade de Bacharelato: a diferenza que establece é de enfoque."
+msgid ""
+"La otra opción de Matemáticas de 4.º. Además de lo anterior, profundiza "
+"en los procedimientos algebraicos, geométricos, analíticos y "
+"estadísticos, en contextos matemáticos, científicos y sociales. El real "
+"decreto no la vincula a ninguna modalidad de Bachillerato: la diferencia "
+"que establece es de enfoque."
+msgstr ""
+"A outra opción de Matemáticas de 4.º. Ademais do anterior, afonda nos "
+"procedementos alxébricos, xeométricos, analíticos e estatísticos, en "
+"contextos matemáticos, científicos e sociais. O real decreto non a "
+"vincula a ningunha modalidade de Bacharelato: a diferenza que establece é"
+" de enfoque."
 
 #: app/templates/situaciones/detalle.html:241
 msgid "No tienes permiso para ver esta situación"
@@ -1784,8 +2888,12 @@ msgid "Hay dos redacciones de esta sección."
 msgstr "Hai dúas redaccións desta sección."
 
 #: app/templates/situaciones/detalle.html:262
-msgid "Quédate con una para seguir. La descartada permanece en el historial de versiones, así que podrás recuperarla."
-msgstr "Queda cunha para continuar. A descartada permanece no historial de versións, así que poderás recuperala."
+msgid ""
+"Quédate con una para seguir. La descartada permanece en el historial de "
+"versiones, así que podrás recuperarla."
+msgstr ""
+"Queda cunha para continuar. A descartada permanece no historial de "
+"versións, así que poderás recuperala."
 
 #: app/templates/situaciones/detalle.html:263
 msgid "Versión actual"
@@ -1817,100 +2925,132 @@ msgstr "Lendo en voz alta…"
 
 #: app/templates/situaciones/detalle.html:272
 #, python-brace-format
-msgid "Tu sistema no tiene ninguna voz instalada para {idioma}, así que la lectura en voz alta no está disponible en esta situación."
-msgstr "O teu sistema non ten ningunha voz instalada para {idioma}, así que a lectura en voz alta non está dispoñible nesta situación."
+msgid ""
+"Tu sistema no tiene ninguna voz instalada para {idioma}, así que la "
+"lectura inmediata no está disponible. Puedes generar el audio en el "
+"servidor con el botón «Generar audio» de cada sección: tarda unos "
+"segundos y luego se puede escuchar y descargar."
+msgstr ""
+"O teu sistema non ten ningunha voz instalada para {idioma}, así que a "
+"lectura inmediata non está dispoñible. Podes xerar o audio no servidor co"
+" botón «Xerar audio» de cada sección: tarda uns segundos e logo pódese "
+"escoitar e descargar."
 
 #: app/templates/situaciones/detalle.html:273
+msgid "Generar audio"
+msgstr "Xerar audio"
+
+#: app/templates/situaciones/detalle.html:275
+msgid "Audio generado"
+msgstr "Audio xerado"
+
+#: app/templates/situaciones/detalle.html:276
+msgid "No se ha podido generar el audio. Inténtalo de nuevo en un momento."
+msgstr "Non se puido xerar o audio. Téntao de novo nun momento."
+
+#: app/templates/situaciones/detalle.html:277
+msgid "Descargar"
+msgstr "Descargar"
+
+#: app/templates/situaciones/detalle.html:278
 msgid "Ya hay una generación en curso."
 msgstr "Xa hai unha xeración en curso."
 
-#: app/templates/situaciones/detalle.html:274
+#: app/templates/situaciones/detalle.html:279
 msgid "No se pudo lanzar la generación."
 msgstr "Non se puido lanzar a xeración."
 
-#: app/templates/situaciones/detalle.html:275
+#: app/templates/situaciones/detalle.html:280
 msgid "La generación terminó con error: "
 msgstr "A xeración rematou con erro: "
 
-#: app/templates/situaciones/detalle.html:276
+#: app/templates/situaciones/detalle.html:281
 msgid "No se ha podido guardar la elección."
 msgstr "Non se puido gardar a elección."
 
-#: app/templates/situaciones/detalle.html:277
+#: app/templates/situaciones/detalle.html:282
 msgid "Adaptación lanzada. Serás redirigido a la nueva SA…"
 msgstr "Adaptación lanzada. Serás redirixido á nova SA…"
 
-#: app/templates/situaciones/detalle.html:278
+#: app/templates/situaciones/detalle.html:283
 msgid "Aún no hay adaptaciones generadas para esta situación."
 msgstr "Aínda non hai adaptacións xeradas para esta situación."
 
-#: app/templates/situaciones/detalle.html:279
+#: app/templates/situaciones/detalle.html:284
 #, python-brace-format
-msgid "El idioma destino es el de la situación ({idioma}). Cámbialo arriba, en el campo Idioma."
-msgstr "O idioma destino é o da situación ({idioma}). Cámbiao arriba, no campo Idioma."
+msgid ""
+"El idioma destino es el de la situación ({idioma}). Cámbialo arriba, en "
+"el campo Idioma."
+msgstr ""
+"O idioma destino é o da situación ({idioma}). Cámbiao arriba, no campo "
+"Idioma."
 
-#: app/templates/situaciones/detalle.html:280
+#: app/templates/situaciones/detalle.html:285
 #, python-brace-format
 msgid "¿Regenerar la sección «{nombre}»? Se sobrescribirá su contenido actual."
 msgstr "Rexerar a sección «{nombre}»? Sobrescribirase o seu contido actual."
 
-#: app/templates/situaciones/detalle.html:281
-msgid "¿Seguro que quieres eliminar esta situación? Se eliminará también su historial de versiones."
-msgstr "Seguro que queres eliminar esta situación? Eliminarase tamén o seu historial de versións."
+#: app/templates/situaciones/detalle.html:286
+msgid ""
+"¿Seguro que quieres eliminar esta situación? Se eliminará también su "
+"historial de versiones."
+msgstr ""
+"Seguro que queres eliminar esta situación? Eliminarase tamén o seu "
+"historial de versións."
 
-#: app/templates/situaciones/detalle.html:287
+#: app/templates/situaciones/detalle.html:292
 msgid "español"
 msgstr "castelán"
 
-#: app/templates/situaciones/detalle.html:288
+#: app/templates/situaciones/detalle.html:293
 msgid "catalán"
 msgstr "catalán"
 
-#: app/templates/situaciones/detalle.html:289
+#: app/templates/situaciones/detalle.html:294
 msgid "gallego"
 msgstr "galego"
 
-#: app/templates/situaciones/detalle.html:290
+#: app/templates/situaciones/detalle.html:295
 msgid "euskera"
 msgstr "éuscaro"
 
-#: app/templates/situaciones/detalle.html:291
+#: app/templates/situaciones/detalle.html:296
 msgid "inglés"
 msgstr "inglés"
 
-#: app/templates/situaciones/detalle.html:292
+#: app/templates/situaciones/detalle.html:297
 msgid "francés"
 msgstr "francés"
 
-#: app/templates/situaciones/detalle.html:293
+#: app/templates/situaciones/detalle.html:298
 msgid "árabe"
 msgstr "árabe"
 
-#: app/templates/situaciones/detalle.html:300
+#: app/templates/situaciones/detalle.html:305
 msgid "Conexión curricular (competencias · criterios · saberes)"
 msgstr "Conexión curricular (competencias · criterios · saberes)"
 
-#: app/templates/situaciones/detalle.html:302
+#: app/templates/situaciones/detalle.html:307
 msgid "Evaluación (instrumentos y rúbricas)"
 msgstr "Avaliación (instrumentos e rúbricas)"
 
-#: app/templates/situaciones/detalle.html:303
+#: app/templates/situaciones/detalle.html:308
 msgid "Atención a la diversidad (DUA)"
 msgstr "Atención á diversidade (DUA)"
 
-#: app/templates/situaciones/detalle.html:398
+#: app/templates/situaciones/detalle.html:403
 msgid "Resumir"
 msgstr "Resumir"
 
-#: app/templates/situaciones/detalle.html:399
+#: app/templates/situaciones/detalle.html:404
 msgid "Desarrollar"
 msgstr "Desenvolver"
 
-#: app/templates/situaciones/detalle.html:400
+#: app/templates/situaciones/detalle.html:405
 msgid "Traducir"
 msgstr "Traducir"
 
-#: app/templates/situaciones/detalle.html:401
+#: app/templates/situaciones/detalle.html:406
 msgid "Proponer alternativa"
 msgstr "Propor alternativa"
 
@@ -1931,8 +3071,12 @@ msgid "Ej: Robótica"
 msgstr "Ex: Robótica"
 
 #: app/templates/situaciones/listar.html:48
-msgid "No hay situaciones que coincidan con los filtros aplicados. <a href=\"/situaciones/nueva\" class=\"link\">Crea la primera</a>."
-msgstr "Non hai situacións que coincidan cos filtros aplicados. <a href=\"/situaciones/nueva\" class=\"link\">Crea a primeira</a>."
+msgid ""
+"No hay situaciones que coincidan con los filtros aplicados. <a "
+"href=\"/situaciones/nueva\" class=\"link\">Crea la primera</a>."
+msgstr ""
+"Non hai situacións que coincidan cos filtros aplicados. <a "
+"href=\"/situaciones/nueva\" class=\"link\">Crea a primeira</a>."
 
 #: app/templates/situaciones/listar.html:53
 msgid "Listado de situaciones de aprendizaje del docente"
@@ -1961,8 +3105,14 @@ msgid "Abrir situación {titulo}"
 msgstr "Abrir situación {titulo}"
 
 #: app/templates/situaciones/nueva.html:8
-msgid "Solo es necesario título, curso y materia. El resto se puede completar después. Cuantos más datos aportes, mejor podrá la IA contextualizar el contenido generado."
-msgstr "Só é necesario título, curso e materia. O resto pódese completar despois. Cantos máis datos achegues, mellor poderá a IA contextualizar o contido xerado."
+msgid ""
+"Solo es necesario título, curso y materia. El resto se puede completar "
+"después. Cuantos más datos aportes, mejor podrá la IA contextualizar el "
+"contenido generado."
+msgstr ""
+"Só é necesario título, curso e materia. O resto pódese completar despois."
+" Cantos máis datos achegues, mellor poderá a IA contextualizar o contido "
+"xerado."
 
 #: app/templates/situaciones/nueva.html:18
 msgid "Pide ideas a la IA a partir del curso y la materia."
@@ -1981,7 +3131,9 @@ msgid "Ej: algo relacionado con el barrio, que acabe en una maqueta…"
 msgstr "Ex: algo relacionado co barrio, que acabe nunha maqueta…"
 
 #: app/templates/situaciones/nueva.html:28
-msgid "Si lo dejas vacío, las propuestas se basarán solo en el curso y la materia."
+msgid ""
+"Si lo dejas vacío, las propuestas se basarán solo en el curso y la "
+"materia."
 msgstr "Se o deixas baleiro, as propostas basearanse só no curso e a materia."
 
 #: app/templates/situaciones/nueva.html:33
@@ -2021,8 +3173,12 @@ msgid "Generar contenido con IA al crear"
 msgstr "Xerar contido con IA ao crear"
 
 #: app/templates/situaciones/nueva.html:134
-msgid "Si lo desmarcas, la situación se guarda en borrador y podrás generarla más adelante."
-msgstr "Se o desmarcas, a situación gárdase en borrador e poderala xerar máis adiante."
+msgid ""
+"Si lo desmarcas, la situación se guarda en borrador y podrás generarla "
+"más adelante."
+msgstr ""
+"Se o desmarcas, a situación gárdase en borrador e poderala xerar máis "
+"adiante."
 
 #: app/templates/situaciones/nueva.html:138
 msgid "Crear situación"
@@ -2050,8 +3206,12 @@ msgid "Pensando ideas…"
 msgstr "Pensando ideas…"
 
 #: app/templates/situaciones/nueva.html:163
-msgid "Has pedido muchas sugerencias seguidas. Espera un poco antes de volver a intentarlo."
-msgstr "Pediches moitas suxestións seguidas. Agarda un pouco antes de volver tentalo."
+msgid ""
+"Has pedido muchas sugerencias seguidas. Espera un poco antes de volver a "
+"intentarlo."
+msgstr ""
+"Pediches moitas suxestións seguidas. Agarda un pouco antes de volver "
+"tentalo."
 
 #: app/templates/situaciones/nueva.html:164
 msgid "No se han podido obtener sugerencias."
@@ -2071,11 +3231,23 @@ msgstr "Creando…"
 #~ msgid "Ayúdame aquí"
 #~ msgstr "Axúdame aquí"
 
-#~ msgid "Diseño adaptable a móvil, tableta y escritorio; permite zoom hasta 200% sin pérdida de contenido."
-#~ msgstr "Deseño adaptable a móbil, tableta e escritorio; permite zoom ata 200% sen perda de contido."
+#~ msgid ""
+#~ "Diseño adaptable a móvil, tableta y "
+#~ "escritorio; permite zoom hasta 200% sin"
+#~ " pérdida de contenido."
+#~ msgstr ""
+#~ "Deseño adaptable a móbil, tableta e "
+#~ "escritorio; permite zoom ata 200% sen"
+#~ " perda de contido."
 
-#~ msgid "Diseño adaptable a móvil, tableta y escritorio; el contenido no se pierde al ampliar hasta el 200%."
-#~ msgstr "Deseño adaptable a móbil, tableta e escritorio; o contido non se perde ao ampliar ata o 200%."
+#~ msgid ""
+#~ "Diseño adaptable a móvil, tableta y "
+#~ "escritorio; el contenido no se pierde"
+#~ " al ampliar hasta el 200%."
+#~ msgstr ""
+#~ "Deseño adaptable a móbil, tableta e "
+#~ "escritorio; o contido non se perde "
+#~ "ao ampliar ata o 200%."
 
 #~ msgid "Editar"
 #~ msgstr "Editar"
@@ -2113,12 +3285,104 @@ msgstr "Creando…"
 #~ msgid "Estadísticas de la plataforma"
 #~ msgstr "Estatísticas da plataforma"
 
-#~ msgid "Introduce tu correo y la nueva contraseña. Por simplicidad de este prototipo no se requiere confirmación por correo electrónico."
-#~ msgstr "Introduce o teu correo e o novo contrasinal. Por simplicidade deste prototipo non se require confirmación por correo electrónico."
+#~ msgid ""
+#~ "Introduce tu correo y la nueva "
+#~ "contraseña. Por simplicidad de este "
+#~ "prototipo no se requiere confirmación "
+#~ "por correo electrónico."
+#~ msgstr ""
+#~ "Introduce o teu correo e o novo"
+#~ " contrasinal. Por simplicidade deste "
+#~ "prototipo non se require confirmación "
+#~ "por correo electrónico."
 
 #~ msgid "Vuelve a escribir la misma contraseña."
 #~ msgstr "Volve escribir o mesmo contrasinal."
 
-#~ msgid "Entra en <a href=\"/restablecer-contrasena\">¿Olvidaste tu contraseña?</a>, indica tu correo y escribe una contraseña nueva. El cambio es inmediato: en esta versión no se envía ningún correo de confirmación, porque AWEBO todavía no tiene servidor de correo. La verificación por correo está prevista antes de cualquier despliegue real."
-#~ msgstr "Entra en <a href=\"/restablecer-contrasena\">Esqueciches o teu contrasinal?</a>, indica o teu correo e escribe un contrasinal novo. O cambio é inmediato: nesta versión non se envía ningún correo de confirmación, porque AWEBO aínda non ten servidor de correo. A verificación por correo está prevista antes de calquera despregamento real."
+#~ msgid ""
+#~ "Entra en <a href=\"/restablecer-"
+#~ "contrasena\">¿Olvidaste tu contraseña?</a>, indica"
+#~ " tu correo y escribe una contraseña"
+#~ " nueva. El cambio es inmediato: en"
+#~ " esta versión no se envía ningún "
+#~ "correo de confirmación, porque AWEBO "
+#~ "todavía no tiene servidor de correo. "
+#~ "La verificación por correo está prevista"
+#~ " antes de cualquier despliegue real."
+#~ msgstr ""
+#~ "Entra en <a href=\"/restablecer-"
+#~ "contrasena\">Esqueciches o teu contrasinal?</a>, "
+#~ "indica o teu correo e escribe un"
+#~ " contrasinal novo. O cambio é "
+#~ "inmediato: nesta versión non se envía"
+#~ " ningún correo de confirmación, porque "
+#~ "AWEBO aínda non ten servidor de "
+#~ "correo. A verificación por correo está"
+#~ " prevista antes de calquera despregamento"
+#~ " real."
+
+#~ msgid ""
+#~ "La voz la pone tu propio "
+#~ "ordenador, no la aplicación. Por eso "
+#~ "el botón puede no aparecer: si tu"
+#~ " sistema no tiene instalada ninguna "
+#~ "voz para el idioma de la "
+#~ "situación, se oculta y verás un "
+#~ "aviso explicándolo. Instalar voces adicionales"
+#~ " se hace desde la configuración del"
+#~ " sistema operativo, no desde AWEBO."
+#~ msgstr ""
+#~ "A voz ponna o teu propio "
+#~ "ordenador, non a aplicación. Por iso "
+#~ "o botón pode non aparecer: se o"
+#~ " teu sistema non ten instalada "
+#~ "ningunha voz para o idioma da "
+#~ "situación, agóchase e verás un aviso "
+#~ "explicándoo. Instalar voces adicionais faise"
+#~ " desde a configuración do sistema "
+#~ "operativo, non desde AWEBO."
+
+#~ msgid ""
+#~ "Entra en <a href=\"/restablecer-"
+#~ "contrasena\">¿Olvidaste tu contraseña?</a> y "
+#~ "escribe tu correo. Te llegará un "
+#~ "mensaje con un enlace para elegir "
+#~ "una contraseña nueva; caduca en "
+#~ "<strong>una hora</strong> y solo sirve "
+#~ "una vez. Mientras no lo abras, tu"
+#~ " contraseña sigue siendo la de "
+#~ "siempre, así que si recibes ese "
+#~ "correo sin haberlo pedido no tienes "
+#~ "que hacer nada."
+#~ msgstr ""
+#~ "Entra en <a href=\"/restablecer-"
+#~ "contrasena\">Esqueciches o contrasinal?</a> e "
+#~ "escribe o teu correo. Chegarache unha"
+#~ " mensaxe cunha ligazón para elixir un"
+#~ " contrasinal novo; caduca nunha "
+#~ "<strong>hora</strong> e só serve unha "
+#~ "vez. Mentres non a abras, o teu"
+#~ " contrasinal segue sendo o de sempre,"
+#~ " así que se recibes ese correo "
+#~ "sen telo pedido non tes que facer"
+#~ " nada."
+
+#~ msgid ""
+#~ "<strong>Conservar tus situaciones.</strong> Tu "
+#~ "cuenta deja de poder entrar, pero "
+#~ "el contenido se guarda <strong>90 "
+#~ "días</strong>. Si dentro de ese plazo"
+#~ " vuelves a registrarte con el mismo"
+#~ " correo, puedes pedir recuperarlo; lo "
+#~ "aprueba un administrador. Pasado el "
+#~ "plazo, el borrado es definitivo."
+#~ msgstr ""
+#~ "<strong>Conservar as túas situacións.</strong> "
+#~ "A túa conta deixa de poder entrar,"
+#~ " pero o contido gárdase <strong>90 "
+#~ "días</strong>. Se dentro dese prazo "
+#~ "volves rexistrarte co mesmo correo, "
+#~ "podes pedir recuperalo; apróbao un "
+#~ "administrador. Pasado o prazo, o borrado"
+#~ " é definitivo."
 

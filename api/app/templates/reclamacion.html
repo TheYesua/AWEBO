@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+{% block title %}{{ _('Autorizar la recuperación de tu contenido') }} · AWEBO{% endblock %}
+
+{#
+  Pantalla que abre el enlace enviado al correo de RESPALDO de una cuenta dada
+  de baja. No pide sesión: quien la abre se dio de baja y no tiene ninguna que
+  iniciar.
+
+  Aquí NO se dice quién reclama. Ni nombre ni centro: quien lee esto ya no usa
+  AWEBO y no tiene por qué enterarse de con quién comparte ahora su antigua
+  dirección institucional. Le basta con saber qué se le pide y qué pasa si no
+  hace nada.
+
+  Y la opción de no hacer nada tiene que verse igual de clara que el botón. Si
+  la pantalla empujara a confirmar, convertiría en trámite lo que es justo la
+  única barrera que impide entregar el trabajo de alguien a otra persona.
+#}
+
+{% block content %}
+<section class="form-section" aria-labelledby="t-rec">
+  <h1 id="t-rec">{{ _('¿Autorizas recuperar el contenido de tu cuenta?') }}</h1>
+
+  <div id="fase-confirmar" hidden>
+    <p class="lead">
+      {{ _('Alguien se ha registrado en AWEBO con la dirección de una cuenta que diste de baja y ha pedido recuperar su contenido.') }}
+    </p>
+    <p>
+      <strong>{{ _('Si eres tú') }}</strong>
+      {{ _('—por ejemplo, has cambiado de centro y vuelves con otra dirección— confírmalo aquí y recuperarás tus situaciones de aprendizaje.') }}
+    </p>
+    <p class="help">
+      <strong>{{ _('Si no eres tú, cierra esta página.') }}</strong>
+      {{ _('Sin tu confirmación no se entrega nada: el contenido seguirá retenido hasta que venza el plazo y se borre. Si te parece que alguien está intentando quedárselo, escribe a la administración de AWEBO.') }}
+    </p>
+
+    <div class="actions">
+      <button type="button" class="btn btn--primary" id="aprobar-btn">
+        {{ _('Sí, soy yo: entregar mi contenido') }}
+      </button>
+      <a href="/" class="btn">{{ _('No autorizo') }}</a>
+    </div>
+    <p class="alert" id="rec-msg" role="alert" hidden></p>
+  </div>
+
+  <div id="fase-hecho" hidden>
+    <p class="alert alert--ok" role="status" id="hecho-msg"></p>
+    <p class="help">
+      {{ _('Ya puedes iniciar sesión con la contraseña que elegiste al registrarte de nuevo.') }}
+    </p>
+    <div class="actions"><a href="/login" class="btn">{{ _('Iniciar sesión') }}</a></div>
+  </div>
+
+  <div id="fase-sin-token" hidden>
+    <p class="alert" role="alert">
+      {{ _('Este enlace no lleva ningún código. Ábrelo desde el correo que te enviamos.') }}
+    </p>
+    <div class="actions"><a href="/" class="btn">{{ _('Ir al inicio') }}</a></div>
+  </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script>
+const T = {
+  procesando: {{ _('Procesando…')|tojson }},
+  errorDesconocido: {{ _('Error desconocido')|tojson }},
+  sinServidor: {{ _('No se ha podido contactar con el servidor.')|tojson }},
+  hecho: {{ _('Autorizado. El contenido ya está disponible en la cuenta.')|tojson }},
+};
+
+const token = new URLSearchParams(window.location.search).get('token');
+document.getElementById(token ? 'fase-confirmar' : 'fase-sin-token').hidden = false;
+
+const btn = document.getElementById('aprobar-btn');
+if (btn) {
+  btn.addEventListener('click', async () => {
+    const msg = document.getElementById('rec-msg');
+    msg.hidden = true;
+    const original = btn.textContent;
+    btn.disabled = true;
+    btn.setAttribute('aria-busy', 'true');
+    btn.textContent = T.procesando;
+
+    let res, body;
+    try {
+      res = await fetch('/auth/aprobar-reclamacion', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({ token }),
+      });
+      body = await res.json().catch(() => ({}));
+    } catch (_) {
+      msg.textContent = T.sinServidor;
+      msg.hidden = false;
+      btn.disabled = false;
+      btn.removeAttribute('aria-busy');
+      btn.textContent = original;
+      return;
+    }
+
+    if (res.ok) {
+      document.getElementById('fase-confirmar').hidden = true;
+      document.getElementById('hecho-msg').textContent = T.hecho;
+      document.getElementById('fase-hecho').hidden = false;
+      return;
+    }
+
+    /* Los errores se muestran tal cual los manda el servidor: el caso normal
+       es «esa solicitud ya se resolvió», que no es un fallo y no debe leerse
+       como si el enlace fuera falso. */
+    msg.textContent = body.mensaje || body.error || T.errorDesconocido;
+    msg.hidden = false;
+    btn.disabled = false;
+    btn.removeAttribute('aria-busy');
+    btn.textContent = original;
+  });
+}
+</script>
+{% endblock %}

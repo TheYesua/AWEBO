@@ -182,6 +182,12 @@ def transformar_seccion(
 
     sa.contenido = contenido  # JSONB: hay que reasignar para que se detecte
     sa.estado = estado_previo
+
+    if seccion == "conexion_curricular":
+        from ..services.enlaces_curriculares import sincronizar
+
+        sincronizar(sa, commit=False)
+
     db.session.commit()
 
     logger.info(

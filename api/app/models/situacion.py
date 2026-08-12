@@ -234,9 +234,17 @@ class SituacionAprendizaje(db.Model):
     saberes: Mapped[list["SaberBasico"]] = relationship(
         secondary=situacion_saber, lazy="selectin"
     )
-    ods: Mapped[list["ODS"]] = relationship(
-        secondary=situacion_ods, lazy="selectin"
-    )
+    # ODS: SIN relación, a propósito.
+    #
+    # La tabla `situacion_ods` y el catálogo de la ONU se quedan donde están,
+    # pero aquí no hay `relationship`. Motivo: **ningún prompt pide ODS** —se
+    # comprobó recorriendo `app/prompts/` entero el 11/08/2026—, así que el
+    # JSONB nunca los trae y no hay nada con lo que poblarla. Mantener la
+    # relación con `lazy="selectin"` era una consulta garantizada a vacío en
+    # cada carga de cada SdA.
+    #
+    # Cuando haya una sección que los pida, esto vuelve en dos líneas y
+    # `enlaces_curriculares._MAPA` gana una entrada.
 
     # ---------- Helpers ----------
     @property

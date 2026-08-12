@@ -9,10 +9,12 @@ from __future__ import annotations
 import copy
 from typing import Any
 
+import structlog
 from sqlalchemy import func, select
 from sqlalchemy.orm import Query
 
 from ..extensions import db
+from . import enlaces_curriculares as svc_enlaces
 from ..models import (
     Competencia,
     CriterioEvaluacion,
@@ -22,6 +24,9 @@ from ..models import (
     Usuario,
     Version,
 )
+
+
+log = structlog.get_logger(__name__)
 
 
 # ---------------------------------------------------------------------------
@@ -84,6 +89,27 @@ def _verificar_propietario(sa: SituacionAprendizaje, usuario: Usuario) -> None:
     docstring de ``admin_service``.
     """
     if usuario.es_administrador:
+        if sa.id_usuario != usuario.id_usuario:
+            # LA TRAZA DE LECTURA, y va aquí por un motivo concreto.
+            #
+            # Este es el único punto por el que pasa un administrador para
+            # tocar contenido ajeno: abrirlo, editarlo, exportarlo, generar
+            # audio. Ponerlo en `obtener` habría dejado fuera todo lo demás, y
+            # ponerlo en cada endpoint habría durado hasta el siguiente
+            # endpoint. Un cuello de botella no se puede olvidar.
+            #
+            # Registrar accesos era una de las tres condiciones con las que se
+            # aceptó que el administrador pudiera leerlo todo (decisión del
+            # 10/08/2026). Sin ella el panel sería una puerta silenciosa: las
+            # otras dos —decirlo en Ayuda y advertirlo en el registro— avisan
+            # de que la puerta existe; esta es la que deja constancia de cuándo
+            # se usa.
+            log.info(
+                "admin_accede_a_contenido_ajeno",
+                id_situacion=sa.id_situacion,
+                id_administrador=usuario.id_usuario,
+                id_propietario=sa.id_usuario,
+            )
         return
     if sa.id_usuario != usuario.id_usuario:
         raise SituacionError("permiso_denegado", http_status=403)
@@ -383,6 +409,8 @@ def restaurar_seccion(
             contenido = dict(sa.contenido or {})
             contenido[seccion] = anterior[seccion]
             sa.contenido = contenido
+            if seccion == "conexion_curricular":
+                svc_enlaces.sincronizar(sa, commit=False)
             db.session.commit()
             return sa
 
@@ -459,6 +487,8 @@ def elegir_propuesta(
     ganadora = {k: v for k, v in gana.items() if k != "_alternativa"}
     contenido[seccion] = ganadora
     sa.contenido = contenido
+    if seccion == "conexion_curricular":
+        svc_enlaces.sincronizar(sa, commit=False)
     db.session.commit()
     return sa
 

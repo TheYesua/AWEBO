@@ -204,7 +204,123 @@ def cmd_promover(correo: str) -> None:
         )
 
 
+# ---------------------------------------------------------------------------
+# Currículo
+# ---------------------------------------------------------------------------
+
+curriculo_cli = AppGroup("curriculo", help="Mantenimiento del catálogo curricular.")
+
+
+@curriculo_cli.command("enlazar")
+@click.option(
+    "--simular",
+    is_flag=True,
+    help="Solo informa: no escribe nada en la base de datos.",
+)
+def enlazar(simular: bool) -> None:
+    """Rehace los enlaces entre las SdA y el catálogo curricular.
+
+    Hace falta una sola vez, para las situaciones creadas antes de que esto
+    existiera: las nuevas se enlazan solas al generarse. También sirve después
+    de tocar el catálogo —renombrar una materia, recargar el currículo— para
+    ver qué SdA se han quedado apuntando al vacío.
+
+    ``--simular`` es lo que se ejecuta primero. Este comando reasigna enlaces,
+    y sobre 39 situaciones eso es barato, pero conviene ver el recuento de
+    huérfanos antes de escribir nada: si sale disparado, el problema no son
+    las SdA sino que el catálogo cargado no es el que se cree.
+    """
+    # Importes dentro de la función, como el resto de comandos de este fichero:
+    # a nivel de módulo crearían un ciclo con la aplicación.
+    #
+    # `select` se quedó fuera y el comando reventó con `NameError` en la
+    # primera ejecución real. No lo detectó nada porque la comprobación que
+    # hice fue `import app.cli`, e importar un módulo **no ejecuta el cuerpo de
+    # sus funciones**: un nombre que solo se usa dentro de una función no falta
+    # hasta que alguien la llama. Ahora hay un test que la llama.
+    from sqlalchemy import select
+
+    from .extensions import db
+    from .models import SituacionAprendizaje
+    from .services.enlaces_curriculares import sincronizar
+
+    situaciones = db.session.scalars(select(SituacionAprendizaje)).all()
+    if not situaciones:
+        click.echo("No hay situaciones que enlazar.")
+        return
+
+    totales = {"competencias": 0, "criterios": 0, "saberes": 0}
+    con_huerfanos: list[tuple[int, dict]] = []
+    sin_curriculo: list[tuple[int, str, str]] = []
+    fallidas = 0
+
+    for sa in situaciones:
+        resumen = sincronizar(sa, commit=False)
+        if resumen.get("error"):
+            fallidas += 1
+            continue
+        for clave in totales:
+            totales[clave] += resumen.get(clave, 0)
+        # Las dos causas van por separado. Juntarlas fue el error de la primera
+        # versión: anunció 17 SdA como «códigos que el modelo se inventó»
+        # cuando ninguna lo era.
+        if resumen.get("sin_curriculo"):
+            if resumen.get("huerfanos"):
+                sin_curriculo.append((sa.id_situacion, sa.materia, sa.curso))
+        elif resumen.get("huerfanos"):
+            con_huerfanos.append((sa.id_situacion, resumen["huerfanos"]))
+
+    if simular:
+        db.session.rollback()
+    else:
+        db.session.commit()
+
+    click.echo(
+        f"{len(situaciones)} situaciones · "
+        f"{totales['competencias']} competencias, {totales['criterios']} criterios, "
+        f"{totales['saberes']} saberes"
+        + (" (simulado, no se ha escrito nada)" if simular else "")
+    )
+    if fallidas:
+        click.echo(f"{fallidas} situaciones fallaron; mira el registro.", err=True)
+
+    if sin_curriculo:
+        # Se informa primero porque es la causa que más veces se cumple y la
+        # única que no se arregla regenerando: la SdA apunta a una pareja que
+        # no existe, y decidir qué hacer con ella —renombrar la materia,
+        # separarla en dos, dejarla— cambia lo que la aplicación le afirma a un
+        # docente. No es una decisión del comando.
+        parejas = sorted({(m, c) for _id, m, c in sin_curriculo})
+        click.echo(
+            f"\n{len(sin_curriculo)} situaciones NO tienen currículo cargado para su "
+            f"materia y curso, así que ningún código suyo puede casar. No son "
+            f"códigos inventados: están ancladas a una pareja que no existe.",
+            err=True,
+        )
+        for materia, curso in parejas:
+            cuantas = sum(1 for _i, m, c in sin_curriculo if (m, c) == (materia, curso))
+            click.echo(f"  {materia} · {curso} — {cuantas} situaciones", err=True)
+
+    if con_huerfanos:
+        click.echo(
+            f"\n{len(con_huerfanos)} situaciones citan códigos que no existen, "
+            f"teniendo currículo cargado para su materia y curso. Estos sí son "
+            f"códigos que el modelo se inventó:",
+            err=True,
+        )
+        for id_situacion, huerfanos in con_huerfanos[:20]:
+            detalle = "; ".join(f"{k}: {', '.join(v)}" for k, v in huerfanos.items())
+            click.echo(f"  SdA {id_situacion} — {detalle}", err=True)
+        if len(con_huerfanos) > 20:
+            click.echo(f"  … y {len(con_huerfanos) - 20} más.", err=True)
+
+    if not sin_curriculo and not con_huerfanos:
+        click.echo("Todos los códigos casan con el catálogo.")
+
+
 def register_cli(app: Flask) -> None:
     """Registra todos los grupos de comandos CLI en la aplicación."""
     app.cli.add_command(seed_cli)
     app.cli.add_command(usuarios_cli)
+    app.cli.add_command(curriculo_cli)
+

@@ -6,8 +6,10 @@ from flask_login import current_user, login_required
 
 from ..ai import catalogo
 from .. import i18n
-from ..extensions import db
-from ..schemas import UsuarioOut, UsuarioUpdateIn
+from ..extensions import db, limiter
+from ..schemas import PonerRespaldoIn, QuitarRespaldoIn, UsuarioOut, UsuarioUpdateIn
+from ..services import respaldo as svc_respaldo
+from ..services.respaldo import RespaldoError
 
 
 bp = Blueprint("me", __name__, url_prefix="/me")
@@ -82,3 +84,81 @@ def catalogo_ia():
         ),
         200,
     )
+
+
+# ---------------------------------------------------------------------------
+# Correo de respaldo
+#
+# Vive bajo `/me` y no bajo `/auth` porque son operaciones sobre la propia
+# cuenta, con sesión iniciada, como cambiar el nombre o el idioma. La única
+# pieza que está en `/auth` es confirmar el enlace, y por el motivo de siempre:
+# ese enlace se abre desde el buzón, muchas veces en otro navegador.
+# ---------------------------------------------------------------------------
+
+
+@bp.get("/correo-de-respaldo")
+@login_required
+def ver_respaldo():
+    """Qué respaldo tiene la cuenta, enmascarado y con su estado.
+
+    No forma parte de `UsuarioOut` a propósito. Ese esquema se sirve en varios
+    sitios —incluido el panel de administración—, y meter ahí una dirección
+    personal la repartiría por todos ellos de golpe. Un endpoint propio deja
+    claro quién la pide y para qué.
+    """
+    return (
+        jsonify(
+            {
+                "correo": svc_respaldo.enmascarar(current_user.correo_respaldo),
+                "verificado": current_user.tiene_respaldo,
+                "verificado_en": (
+                    current_user.correo_respaldo_verificado_en.isoformat()
+                    if current_user.correo_respaldo_verificado_en
+                    else None
+                ),
+            }
+        ),
+        200,
+    )
+
+
+@bp.post("/correo-de-respaldo")
+@login_required
+@limiter.limit("10 per hour")
+def poner_respaldo():
+    """Pide el enlace de confirmación para poner o cambiar el respaldo.
+
+    Devuelve **a qué dirección se ha enviado**, enmascarada. Importa porque al
+    cambiarlo el enlace no va al buzón nuevo sino al anterior: sin decirlo, la
+    persona estaría esperando un correo que no va a llegar donde mira.
+    """
+    data = PonerRespaldoIn.model_validate(request.get_json(silent=True) or {})
+    try:
+        destino = svc_respaldo.solicitar(current_user, data.correo)
+    except RespaldoError as exc:
+        return jsonify({"error": exc.code, "mensaje": exc.message}), 409
+
+    return (
+        jsonify(
+            {
+                "resultado": "pendiente",
+                "enviado_a": svc_respaldo.enmascarar(destino),
+                "era_cambio": destino != data.correo,
+            }
+        ),
+        202,
+    )
+
+
+@bp.post("/correo-de-respaldo/quitar")
+@login_required
+@limiter.limit("10 per hour")
+def quitar_respaldo():
+    """Deja la cuenta sin respaldo. Basta la contraseña actual."""
+    data = QuitarRespaldoIn.model_validate(request.get_json(silent=True) or {})
+    try:
+        svc_respaldo.quitar(current_user, data.contrasena)
+    except RespaldoError as exc:
+        return jsonify({"error": exc.code, "mensaje": exc.message}), 409
+
+    return jsonify({"resultado": "ok"}), 200

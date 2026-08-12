@@ -51,6 +51,27 @@ def baja_page():
     return render_template("baja.html")
 
 
+@bp.get("/correo-de-respaldo")
+def correo_de_respaldo_page():
+    """Pantalla que abre el enlace de confirmación del correo de respaldo.
+
+    Sin `login_required`: cuando es un cambio, el enlace llega al respaldo
+    *anterior*, que no tiene por qué estar abierto en el mismo navegador donde
+    se pidió el cambio.
+    """
+    return render_template("correo_de_respaldo.html")
+
+
+@bp.get("/reclamacion")
+def reclamacion_page():
+    """Pantalla que abre el enlace enviado al correo de respaldo.
+
+    Sin `login_required` y con más motivo que `/baja`: quien la abre se dio de
+    baja, así que no tiene ninguna sesión que iniciar.
+    """
+    return render_template("reclamacion.html")
+
+
 @bp.get("/situaciones")
 def situaciones_listar_page():
     return render_template("situaciones/listar.html")

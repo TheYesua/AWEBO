@@ -202,3 +202,111 @@ class TestElCorreo:
         assert kwargs["texto"].strip()
         assert kwargs["html"].strip()
         assert kwargs["destino"] == docente.correo
+
+
+class TestTambienValeElRespaldo:
+    """Restablecer usando el correo personal (tarea 13).
+
+    EL CASO QUE LO JUSTIFICA
+    ------------------------
+    Un docente cambia de instituto. Pierde `jperez@ies.es` con la cuenta
+    todavía activa, así que la única vía de recuperación pasa por un buzón que
+    ya no lee — o que lee la persona que heredó la dirección. Sin el respaldo se
+    queda fuera de su propio trabajo para siempre.
+    """
+
+    @pytest.fixture
+    def con_respaldo(self, db, docente):
+        from datetime import datetime, timezone
+
+        docente.correo_respaldo = "personal@ejemplo.es"
+        docente.correo_respaldo_verificado_en = datetime.now(timezone.utc)
+        db.session.commit()
+        return docente
+
+    def test_pedirlo_desde_el_respaldo_manda_el_enlace_al_respaldo(self, client, con_respaldo):
+        """Al respaldo y no a la dirección principal: quien lo pide por esta vía
+        es justamente quien ya no tiene acceso a la otra. Mandarlo a la
+        principal sería devolverlo al buzón que ha perdido."""
+        with patch("app.tasks.encolar") as encolar:
+            r = client.post("/auth/solicitar-restablecimiento",
+                            json={"correo": "personal@ejemplo.es"})
+
+        assert r.status_code == 202
+        assert encolar.called
+        assert encolar.call_args.kwargs["destino"] == "personal@ejemplo.es"
+
+    def test_el_enlace_del_respaldo_cambia_la_contrasena_de_verdad(self, client, db, con_respaldo):
+        with patch("app.tasks.encolar") as encolar:
+            client.post("/auth/solicitar-restablecimiento",
+                        json={"correo": "personal@ejemplo.es"})
+            token = _token_de(_enlace_enviado(encolar))
+
+        r = client.post("/auth/reset-password",
+                        json={"token": token, "nueva_contrasena": "DesdeRespaldo9"})
+
+        assert r.status_code == 200, r.get_json()
+        db.session.refresh(con_respaldo)
+        assert con_respaldo.check_password("DesdeRespaldo9")
+
+    def test_un_respaldo_sin_verificar_no_sirve(self, client, db, docente):
+        """El agujero que cierra la verificación: si contara sin confirmar,
+        cualquiera podría poner la dirección de otra persona y provocar que a
+        esa persona le lleguen enlaces de una cuenta que no es suya."""
+        docente.correo_respaldo = "sin.verificar@ejemplo.es"
+        db.session.commit()
+
+        with patch("app.tasks.encolar") as encolar:
+            r = client.post("/auth/solicitar-restablecimiento",
+                            json={"correo": "sin.verificar@ejemplo.es"})
+
+        assert r.status_code == 202, "la respuesta no puede delatar nada"
+        assert not encolar.called
+
+    def test_la_respuesta_es_identica_venga_por_donde_venga(self, client, con_respaldo):
+        """La propiedad de la tarea 11 sigue en pie con una columna más: si
+        respondiera distinto según por qué vía coincide, el formulario volvería
+        a servir para averiguar quién está registrado."""
+        with patch("app.tasks.encolar"):
+            principal = client.post("/auth/solicitar-restablecimiento",
+                                    json={"correo": con_respaldo.correo})
+            respaldo = client.post("/auth/solicitar-restablecimiento",
+                                   json={"correo": "personal@ejemplo.es"})
+            ninguna = client.post("/auth/solicitar-restablecimiento",
+                                  json={"correo": "nadie@ejemplo.es"})
+
+        assert principal.status_code == respaldo.status_code == ninguna.status_code == 202
+        assert principal.get_json() == respaldo.get_json() == ninguna.get_json()
+
+    def test_dos_cuentas_con_el_mismo_respaldo_reciben_una_cada_una(self, client, db, con_respaldo):
+        """El respaldo no es único —dos docentes pueden compartir una dirección
+        personal—, así que la consulta puede devolver varias cuentas. Mandar
+        solo una dejaría a la otra sin poder recuperarse, en silencio."""
+        from app.models import Rol, Usuario
+
+        rol = db.session.query(Rol).filter_by(nombre="docente").first()
+        otra = Usuario(correo="otro@ies.es", nombre="Otro", id_rol=rol.id_rol)
+        otra.set_password("ContrasenaVieja1")
+        otra.correo_respaldo = "personal@ejemplo.es"
+        otra.correo_respaldo_verificado_en = con_respaldo.correo_respaldo_verificado_en
+        db.session.add(otra)
+        db.session.commit()
+
+        with patch("app.tasks.encolar") as encolar:
+            client.post("/auth/solicitar-restablecimiento",
+                        json={"correo": "personal@ejemplo.es"})
+
+        assert encolar.call_count == 2, "cada cuenta necesita su propio enlace"
+        destinos = {c.kwargs["destino"] for c in encolar.call_args_list}
+        assert destinos == {"personal@ejemplo.es"}
+
+    def test_una_cuenta_con_lapida_no_recibe_por_respaldo(self, client, db, con_respaldo):
+        con_respaldo.marcar_eliminado()
+        db.session.commit()
+
+        with patch("app.tasks.encolar") as encolar:
+            r = client.post("/auth/solicitar-restablecimiento",
+                            json={"correo": "personal@ejemplo.es"})
+
+        assert r.status_code == 202
+        assert not encolar.called

@@ -227,3 +227,41 @@ def test_el_puerto_vacio_no_tumba_el_arranque():
         else:
             os.environ["SMTP_PORT"] = previo
         reload(modulo)
+
+
+def test_ningun_proveedor_se_hereda_del_entorno_en_los_tests():
+    """Que `TestConfig` fije **todos** los proveedores, no los que recordé.
+
+    HA PASADO DOS VECES
+    -------------------
+    * 09/08 — `SMTP_SIN_TLS=1` del contenedor de desarrollo se coló y
+      `test_el_puerto_465_usa_TLS_directo_y_el_587_STARTTLS` empezó a fallar
+      dentro de Docker y a pasar fuera, con el mismo código.
+    * 11/08 — `VOZ_PROVEEDOR=local` hizo lo propio con un test que esperaba que
+      la síntesis no estuviera disponible.
+
+    La segunda vez la lección ya estaba escrita en este repositorio, con su
+    fecha, tres líneas por encima del sitio donde había que aplicarla. Escribir
+    la lección no es aplicarla; por eso ahora la comprueba un test.
+
+    Un proveedor que llegue del entorno hace que el resultado de la batería
+    dependa del `.env` de quien la lanza, y entonces no dice nada sobre el
+    código.
+    """
+    from app.config import Config
+
+    from tests.conftest import TestConfig
+
+    proveedores = {
+        nombre for nombre in vars(Config)
+        if nombre.endswith(("_PROVEEDOR", "_PROVIDER"))
+    }
+    assert proveedores, "el detector no encontró ningún proveedor: revísalo"
+
+    # `vars()` y no `getattr`: hace falta que esté fijado **en TestConfig**, no
+    # que se herede con el valor que traiga el entorno.
+    sin_fijar = sorted(proveedores - set(vars(TestConfig)))
+    assert not sin_fijar, (
+        f"{sin_fijar} no está fijado en TestConfig: su valor saldría del "
+        f"entorno y la batería dependería del .env de cada máquina."
+    )

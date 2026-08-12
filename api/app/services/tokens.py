@@ -47,9 +47,32 @@ PROPOSITO_RESTABLECER = "restablecer-contrasena"
 PROPOSITO_BAJA_CONSERVANDO = "dar-de-baja-conservando"
 PROPOSITO_BAJA_TOTAL = "dar-de-baja-total"
 
+#: Confirmar un correo de respaldo, sea el primero o un cambio.
+PROPOSITO_RESPALDO = "verificar-respaldo"
+
+#: Aprobar desde el correo de respaldo la reclamación del contenido de una
+#: cuenta dada de baja. Es el propósito **de la persona anterior**, no de quien
+#: reclama: el enlace llega a su buzón personal.
+PROPOSITO_RECLAMACION = "aprobar-reclamacion"
+
 #: Una hora. Suficiente para ir al correo y volver, corto para que un enlace
 #: olvidado en una bandeja compartida deje de servir pronto.
 CADUCIDAD_RESTABLECER = 3600
+
+#: Un día para confirmar el respaldo. Es más largo que los demás y no es un
+#: descuido: aquí no hay nada destructivo que apurar —el respaldo no cambia
+#: hasta que se confirma— y la dirección es una personal, que se mira con menos
+#: frecuencia que la del trabajo. Una hora obligaría a repetir la petición a
+#: quien lo pidiera un viernes por la tarde.
+CADUCIDAD_RESPALDO = 86400
+
+#: Una semana para aprobar una reclamación. Es con diferencia el plazo más
+#: largo, y a propósito: el enlace llega a alguien que **ya no usa AWEBO** —se
+#: dio de baja— y que por tanto no está pendiente de su bandeja por esto. Un
+#: plazo corto obligaría a quien reclama a reintentarlo a ciegas, sin saber si
+#: el anterior lo vio o no. Sigue habiendo tope porque el contenido se purga a
+#: los 90 días de todos modos.
+CADUCIDAD_RECLAMACION = 604800
 
 #: Media hora para la baja, y no una como el restablecimiento. Es la acción
 #: más destructiva que un usuario puede pedir: cuanto menos tiempo ande el
@@ -118,6 +141,101 @@ def generar_baja(usuario, *, conservar_contenido: bool) -> str:
 def leer_restablecimiento(token: str) -> int:
     """Atajo para el propósito de restablecimiento."""
     return leer(token, PROPOSITO_RESTABLECER, CADUCIDAD_RESTABLECER)
+
+
+def generar_respaldo(usuario, correo_nuevo: str) -> str:
+    """Token para confirmar ``correo_nuevo`` como respaldo de ``usuario``.
+
+    LA DIRECCIÓN VA DENTRO DEL TOKEN
+    ---------------------------------
+    Y no en la base de datos esperando confirmación. Si se guardara antes de
+    verificar, entre la petición y el clic habría un periodo en el que la
+    cuenta tiene un respaldo a medias: ni sirve —no está verificado— ni se
+    puede distinguir de uno bueno sin mirar dos columnas. Metida en el token,
+    el respaldo **solo existe cuando ya está confirmado**, y no hay estado
+    intermedio que alguien tenga que recordar tratar.
+
+    Va firmada, así que quien reciba el enlace no puede cambiarla por otra.
+    """
+    return _serializador(PROPOSITO_RESPALDO).dumps({
+        "id": usuario.id_usuario,
+        "h": _huella(usuario),
+        "c": correo_nuevo,
+    })
+
+
+def leer_respaldo(token: str) -> tuple[int, str]:
+    """Devuelve ``(id_usuario, correo_a_confirmar)`` si el token vale."""
+    from ..extensions import db
+    from ..models import Usuario
+
+    try:
+        datos = _serializador(PROPOSITO_RESPALDO).loads(
+            token, max_age=CADUCIDAD_RESPALDO
+        )
+    except SignatureExpired:
+        raise TokenInvalido("caducado") from None
+    except BadSignature:
+        raise TokenInvalido("firma_invalida") from None
+
+    if not isinstance(datos, dict) or not {"id", "h", "c"} <= set(datos):
+        raise TokenInvalido("formato")
+
+    usuario = db.session.get(Usuario, datos["id"])
+    if usuario is None or usuario.esta_eliminado:
+        raise TokenInvalido("usuario_inexistente")
+    if not hmac.compare_digest(datos["h"], _huella(usuario)):
+        raise TokenInvalido("ya_usado")
+    return usuario.id_usuario, datos["c"]
+
+
+def generar_reclamacion(usuario) -> str:
+    """Token para que el dueño anterior apruebe la reclamación de su cuenta.
+
+    Va ligado a la huella del hash **actual**, que es el de la persona
+    anterior: si esa cuenta se recupera por otra vía —o le cambian la
+    contraseña—, el enlace pendiente muere solo.
+    """
+    return generar(usuario, PROPOSITO_RECLAMACION)
+
+
+def leer_reclamacion(token: str) -> int:
+    """Como ``leer``, pero **aceptando cuentas con lápida**.
+
+    No es un atajo a ``leer`` y no puede serlo. ``leer`` rechaza las cuentas
+    dadas de baja, y con razón: restablecerle la contraseña a una cuenta con
+    lápida no serviría de nada —el login la rechaza igual— y sería una forma de
+    esquivar la reclamación de contenido.
+
+    Aquí es al revés: **el sujeto del token es justamente una cuenta con
+    lápida**. Reutilizar ``leer`` hacía que el enlace de aprobación fallara
+    siempre con «usuario_inexistente», que es lo que pasó al escribirlo. La
+    condición que allí protege, aquí impide lo único que se quiere hacer.
+
+    Lo demás sí se comparte: firma, propósito, caducidad y la huella que mata
+    el enlace si la contraseña de la cuenta anterior cambia.
+    """
+    from ..extensions import db
+    from ..models import Usuario
+
+    try:
+        datos = _serializador(PROPOSITO_RECLAMACION).loads(
+            token, max_age=CADUCIDAD_RECLAMACION
+        )
+    except SignatureExpired:
+        raise TokenInvalido("caducado") from None
+    except BadSignature:
+        raise TokenInvalido("firma_invalida") from None
+
+    if not isinstance(datos, dict) or "id" not in datos or "h" not in datos:
+        raise TokenInvalido("formato")
+
+    usuario = db.session.get(Usuario, datos["id"])
+    if usuario is None:
+        raise TokenInvalido("usuario_inexistente")
+    if not hmac.compare_digest(datos["h"], _huella(usuario)):
+        raise TokenInvalido("ya_usado")
+    return usuario.id_usuario
 
 
 def leer_baja(token: str) -> tuple[int, bool]:

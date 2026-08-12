@@ -199,15 +199,28 @@ class TestElEnlaceCaducaYSeGasta:
     def test_un_token_caducado_se_dice_caducado(self, app, docente):
         """Y no «firma inválida», que es lo que saldría si al probar el segundo
         propósito se enmascarase el motivo del primero: ese mensaje manda a
-        buscar un problema que no existe."""
-        import time
+        buscar un problema que no existe.
 
-        from app.services import tokens
+        SE SIMULA EL RELOJ, NO SE DUERME
+        ---------------------------------
+        La primera versión ponía la caducidad a cero y dormía 1,1 segundos.
+        Pasaba en una máquina y fallaba en otra, que es lo peor que puede hacer
+        un test. El motivo estaba escrito **en este mismo repositorio** desde la
+        tarea 11, en `test_tokens.py`: `itsdangerous` guarda la marca con
+        granularidad de un segundo, así que un token puede tener «0 segundos»
+        de edad después de dormir uno, según en qué punto del segundo arrancara.
+        `0 > 0` es falso y no caduca nada.
+
+        Escribí el test sin mirar cómo estaba resuelto tres ficheros más allá.
+        """
+        import time
 
         token = _pedir(app, docente, conservar=True)
         with app.test_request_context():
-            with patch.object(tokens, "CADUCIDAD_BAJA", 0):
-                time.sleep(1.1)   # la marca de itsdangerous va en segundos
+            from app.services.tokens import CADUCIDAD_BAJA
+
+            futuro = time.time() + CADUCIDAD_BAJA + 60
+            with patch("itsdangerous.timed.time.time", return_value=futuro):
                 with pytest.raises(TokenInvalido) as exc:
                     baja.confirmar(token)
 

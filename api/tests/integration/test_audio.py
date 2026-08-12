@@ -285,3 +285,93 @@ class TestElAudioSeLimpiaSiempre:
             mantenimiento.purgar_cuentas_vencidas()
 
         assert not carpeta.exists()
+
+
+class TestUnFalloPermanenteSeCuentaEnSeguida:
+    """El fallo del 11/08/2026, visto desde fuera.
+
+    Con `VOZ_PROVEEDOR=nulo` —el valor por defecto—, pedir audio dejaba la
+    pantalla esperando un minuto entero para acabar diciendo «inténtalo de
+    nuevo en un momento». El servidor sabía desde el primer segundo que el
+    motivo era permanente: no hay proveedor configurado. Esperar no lo iba a
+    arreglar, y el consejo era sencillamente falso.
+
+    La causa de fondo: «no hay fichero» significaba a la vez «todavía se está
+    generando» y «no se va a generar nunca», y la interfaz no podía
+    distinguirlas.
+    """
+
+    def test_el_motivo_queda_junto_a_donde_iria_el_audio(self, app, situacion, volumen):
+        from app.services import audio as almacen
+
+        with app.test_request_context():
+            almacen.anotar_error(
+                situacion.id_situacion, "descripcion", TEXTO, "es",
+                "No hay proveedor de voz configurado.",
+            )
+            ruta = almacen.ruta_error(situacion.id_situacion, "descripcion", TEXTO, "es")
+
+        assert ruta.is_file()
+        assert "proveedor" in ruta.read_text(encoding="utf-8")
+
+    def test_la_tarea_deja_constancia_al_fallar(self, app, situacion, volumen):
+        """No basta con el log: el log lo lee quien administra, no quien pulsó
+        el botón.
+
+        `VOZ_PROVEEDOR` explícito aunque `TestConfig` ya lo fije. Este test va
+        precisamente de qué pasa cuando la síntesis **no** se puede hacer, y
+        dejarlo implícito es lo que hizo que fallara en la máquina de Jesús en
+        cuanto configuró el motor local: allí el audio se generaba de verdad y
+        no había ningún fallo del que dejar constancia.
+        """
+        from app.services import audio as almacen
+        from app.tasks.audio import generar_audio
+
+        app.config["VOZ_PROVEEDOR"] = "nulo"
+        with app.test_request_context():
+            resultado = generar_audio(
+                situacion.id_situacion, "descripcion", TEXTO, "es"
+            )
+            ruta = almacen.ruta_error(situacion.id_situacion, "descripcion", TEXTO, "es")
+
+        assert resultado["ok"] is False
+        assert ruta.is_file(), "el fallo no dejó rastro donde la interfaz lo busca"
+
+    def test_el_endpoint_responde_409_con_el_motivo(self, app, client, situacion, volumen):
+        """409 y no 404: 404 es «aún no», y esto es «ya no». La interfaz corta
+        la espera al verlo."""
+        from app.services import audio as almacen
+
+        _entrar(client)
+        with app.test_request_context():
+            almacen.anotar_error(
+                situacion.id_situacion, "descripcion", TEXTO, "es",
+                "No hay proveedor de voz configurado.",
+            )
+
+        r = client.get(f"/api/situaciones/{situacion.id_situacion}/audio",
+                       query_string={"seccion": "descripcion", "texto": TEXTO})
+
+        assert r.status_code == 409, r.get_json()
+        assert r.get_json()["estado"] == "fallido"
+        assert "proveedor" in r.get_json()["mensaje"]
+
+    def test_sin_rastro_de_error_sigue_siendo_404(self, client, situacion, volumen):
+        """Distinguir los dos casos es el objetivo: «aún no» no puede
+        convertirse en «ha fallado»."""
+        _entrar(client)
+        r = client.get(f"/api/situaciones/{situacion.id_situacion}/audio",
+                       query_string={"seccion": "descripcion", "texto": TEXTO})
+        assert r.status_code == 404
+
+    def test_generar_bien_borra_el_error_anterior(self, app, situacion, volumen):
+        """Si no se limpiara, un fallo puntual dejaría la sección marcada como
+        rota para siempre, aunque el audio ya estuviera generado."""
+        from app.services import audio as almacen
+
+        with app.test_request_context():
+            almacen.anotar_error(situacion.id_situacion, "descripcion", TEXTO, "es", "algo")
+            almacen.guardar(situacion.id_situacion, "descripcion", TEXTO, "es", b"ID3ok")
+            ruta = almacen.ruta_error(situacion.id_situacion, "descripcion", TEXTO, "es")
+
+        assert not ruta.exists()

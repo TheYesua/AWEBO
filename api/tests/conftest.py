@@ -51,6 +51,15 @@ class TestConfig(Config):
     SMTP_PASSWORD = ""
     SMTP_SIN_TLS = False
 
+    # Voz: **la misma lección, repetida**. El 09/08 se fijó aquí el correo
+    # porque `SMTP_SIN_TLS=1` del contenedor se colaba en los tests; el 11/08
+    # pasó otra vez con `VOZ_PROVEEDOR=local`, que hizo fallar un test que
+    # esperaba que la síntesis no estuviera disponible. La batería no puede
+    # depender de lo que haya en el `.env` de quien la lanza: cada test que
+    # quiera un proveedor concreto lo configura él.
+    VOZ_PROVEEDOR = "nulo"
+    VOZ_AHOTTS_DIR = "/no-existe-a-proposito"
+
     # Rate limiting deshabilitado por defecto: cada test concreto que
     # quiera verificarlo lo activará en su fixture local.
     RATELIMIT_ENABLED = False

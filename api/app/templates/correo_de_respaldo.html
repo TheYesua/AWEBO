@@ -1,0 +1,106 @@
+{% extends "base.html" %}
+{% block title %}{{ _('Confirmar el correo de respaldo') }} · AWEBO{% endblock %}
+
+{#
+  Pantalla que abre el enlace del correo. No pide sesión: cuando es un cambio,
+  el enlace llega al respaldo ANTERIOR, que no tiene por qué estar abierto en
+  el navegador donde se pidió el cambio.
+
+  Aquí no se escribe ninguna dirección. La que se va a guardar viaja firmada
+  dentro del token; si esta pantalla pudiera aportarla, quien interceptara un
+  enlace podría apuntarlo a un buzón suyo — justo lo que la regla impide.
+#}
+
+{% block content %}
+<section class="form-section" aria-labelledby="t-resp">
+  <h1 id="t-resp">{{ _('Confirmar el correo de respaldo') }}</h1>
+
+  <div id="fase-confirmar" hidden>
+    <p class="lead">
+      {{ _('Al confirmar, esta dirección quedará como correo de respaldo de tu cuenta.') }}
+    </p>
+    <p class="help">
+      {{ _('Sirve para dos cosas: recuperar la cuenta si pierdes el correo del centro, y demostrar que tus situaciones de aprendizaje son tuyas si alguna vez hay que reclamarlas.') }}
+    </p>
+
+    <div class="actions">
+      <button type="button" class="btn btn--primary" id="confirmar-btn">
+        {{ _('Confirmar') }}
+      </button>
+      <a href="/perfil" class="btn">{{ _('Cancelar') }}</a>
+    </div>
+    <p class="alert" id="resp-msg" role="alert" hidden></p>
+  </div>
+
+  <div id="fase-hecho" hidden>
+    <p class="alert alert--ok" role="status" id="hecho-msg"></p>
+    <div class="actions"><a href="/perfil" class="btn">{{ _('Volver a mi perfil') }}</a></div>
+  </div>
+
+  <div id="fase-sin-token" hidden>
+    <p class="alert" role="alert">
+      {{ _('Este enlace no lleva ningún código. Ábrelo desde el correo que te enviamos.') }}
+    </p>
+    <div class="actions"><a href="/perfil" class="btn">{{ _('Volver a mi perfil') }}</a></div>
+  </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script>
+const T = {
+  procesando: {{ _('Procesando…')|tojson }},
+  errorDesconocido: {{ _('Error desconocido')|tojson }},
+  sinServidor: {{ _('No se ha podido contactar con el servidor.')|tojson }},
+  hecho: {{ _('Listo. Tu correo de respaldo es ahora {correo}.')|tojson }},
+};
+
+const token = new URLSearchParams(window.location.search).get('token');
+document.getElementById(token ? 'fase-confirmar' : 'fase-sin-token').hidden = false;
+
+const btn = document.getElementById('confirmar-btn');
+if (btn) {
+  btn.addEventListener('click', async () => {
+    const msg = document.getElementById('resp-msg');
+    msg.hidden = true;
+    const original = btn.textContent;
+    btn.disabled = true;
+    btn.setAttribute('aria-busy', 'true');
+    btn.textContent = T.procesando;
+
+    let res, body;
+    try {
+      res = await fetch('/auth/confirmar-respaldo', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({ token }),
+      });
+      body = await res.json().catch(() => ({}));
+    } catch (_) {
+      msg.textContent = T.sinServidor;
+      msg.hidden = false;
+      btn.disabled = false;
+      btn.removeAttribute('aria-busy');
+      btn.textContent = original;
+      return;
+    }
+
+    if (res.ok) {
+      document.getElementById('fase-confirmar').hidden = true;
+      /* El servidor la devuelve ya enmascarada: esta pantalla puede quedar
+         abierta en un dispositivo prestado. */
+      document.getElementById('hecho-msg').textContent =
+        T.hecho.replace('{correo}', body.correo || '');
+      document.getElementById('fase-hecho').hidden = false;
+      return;
+    }
+
+    msg.textContent = body.mensaje || body.error || T.errorDesconocido;
+    msg.hidden = false;
+    btn.disabled = false;
+    btn.removeAttribute('aria-busy');
+    btn.textContent = original;
+  });
+}
+</script>
+{% endblock %}

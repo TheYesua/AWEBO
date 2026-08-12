@@ -127,6 +127,89 @@
   </article>
 
   <!-- ------------------------------------------------------------------ -->
+  <!-- Correo de respaldo                                                   -->
+  <!--                                                                      -->
+  <!-- Va justo detrás de «Seguridad» y no escondido tras un botón, al       -->
+  <!-- revés que la baja: aquí interesa que se vea y se ponga. Una cuenta    -->
+  <!-- sin respaldo no está rota, pero se queda sin la única prueba de       -->
+  <!-- identidad que sobrevive a un cambio de centro.                       -->
+  <!--                                                                      -->
+  <!-- La dirección se muestra ENMASCARADA. Está razonado en                -->
+  <!-- `services/respaldo.enmascarar`: es lo único que la sesión no da, así  -->
+  <!-- que enseñarla entera le diría a quien robe una sesión a qué buzón     -->
+  <!-- atacar después.                                                      -->
+  <!-- ------------------------------------------------------------------ -->
+  <article class="card" aria-labelledby="t-resp" id="resp-card" hidden>
+    <h2 id="t-resp">{{ _('Correo de respaldo') }}</h2>
+    <p>
+      {{ _('Una dirección personal, tuya y no del centro. Sirve para recuperar la cuenta si pierdes el correo institucional, y para demostrar que tus situaciones de aprendizaje son tuyas si alguna vez hay que reclamarlas.') }}
+    </p>
+
+    <p id="resp-estado" class="lead"></p>
+    <p class="help" id="resp-aviso" hidden>
+      {{ _('Sin correo de respaldo, si alguien se registra con tu dirección después de que te des de baja, quien decide si se le entrega tu contenido es la administración de AWEBO y no tú.') }}
+    </p>
+
+    <div class="actions" id="resp-cerrado">
+      <button type="button" class="btn btn--secondary" id="resp-abrir"
+              aria-expanded="false" aria-controls="resp-form">
+        <span id="resp-abrir-texto">{{ _('Añadir correo de respaldo') }}</span>
+      </button>
+      <button type="button" class="btn" id="resp-quitar-abrir" hidden>
+        {{ _('Quitarlo') }}
+      </button>
+    </div>
+
+    <form id="resp-form" class="form" novalidate hidden style="margin-top:.75rem">
+      <div class="field">
+        <label for="resp-correo">
+          {{ _('Dirección de respaldo') }}
+          <span class="req" aria-hidden="true">*</span>
+          <span class="sr-only">{{ _('(obligatorio)') }}</span>
+        </label>
+        <input type="email" id="resp-correo" name="correo" required
+               autocomplete="email" aria-describedby="resp-correo-help">
+        <small id="resp-correo-help" class="help">
+          {{ _('Usa una dirección que siga siendo tuya aunque cambies de centro. No puede ser la misma con la que entras en AWEBO.') }}
+        </small>
+      </div>
+      <p class="help" id="resp-cambio-aviso" hidden>
+        {{ _('Como ya tienes un respaldo, el enlace de confirmación se enviará a la dirección actual, no a la nueva. Es lo que impide que quien entre en tu cuenta pueda cambiarla.') }}
+      </p>
+      <div class="actions">
+        <button type="submit" class="btn btn--primary" id="resp-enviar">
+          {{ _('Enviar enlace de confirmación') }}
+        </button>
+        <button type="button" class="btn" id="resp-cancelar">{{ _('Cancelar') }}</button>
+      </div>
+      <p class="alert" id="resp-msg" role="alert" hidden></p>
+    </form>
+
+    <form id="resp-quitar-form" class="form" novalidate hidden style="margin-top:.75rem">
+      <div class="field">
+        <label for="resp-contrasena">
+          {{ _('Tu contraseña') }}
+          <span class="req" aria-hidden="true">*</span>
+          <span class="sr-only">{{ _('(obligatorio)') }}</span>
+        </label>
+        <input type="password" id="resp-contrasena" name="contrasena"
+               autocomplete="current-password" required
+               aria-describedby="resp-quitar-help">
+        <small id="resp-quitar-help" class="help">
+          {{ _('Para quitarlo basta con tu contraseña: quitarlo deja la cuenta como estaba antes de tenerlo, no se la entrega a nadie.') }}
+        </small>
+      </div>
+      <div class="actions">
+        <button type="submit" class="btn btn--danger" id="resp-quitar-enviar">
+          {{ _('Quitar el correo de respaldo') }}
+        </button>
+        <button type="button" class="btn" id="resp-quitar-cancelar">{{ _('Cancelar') }}</button>
+      </div>
+      <p class="alert" id="resp-quitar-msg" role="alert" hidden></p>
+    </form>
+  </article>
+
+  <!-- ------------------------------------------------------------------ -->
   <!-- Baja de la cuenta                                                    -->
   <!--                                                                      -->
   <!-- Va al final y detrás de un botón: no es una acción que se busque por  -->
@@ -212,6 +295,15 @@ const T = {
   perfilActualizado: {{ _('Perfil actualizado correctamente.')|tojson }},
   noCoinciden: {{ _('Las contraseñas nuevas no coinciden.')|tojson }},
   cambiada: {{ _('Contraseña cambiada correctamente.')|tojson }},
+  respSin: {{ _('No tienes correo de respaldo.')|tojson }},
+  respPuesto: {{ _('Tu correo de respaldo es {correo}.')|tojson }},
+  respPendiente: {{ _('Has añadido {correo}, pero está sin confirmar. Hasta que abras el enlace no cuenta para nada.')|tojson }},
+  respAnadir: {{ _('Añadir correo de respaldo')|tojson }},
+  respCambiar: {{ _('Cambiar el correo de respaldo')|tojson }},
+  respEnviando: {{ _('Enviando…')|tojson }},
+  respEnviadoNuevo: {{ _('Te hemos enviado un enlace a {correo}. Ábrelo para confirmarlo.')|tojson }},
+  respEnviadoCambio: {{ _('Te hemos enviado el enlace a tu respaldo actual, {correo}, no a la dirección nueva. Es lo que impide que quien entre en tu cuenta pueda cambiarla.')|tojson }},
+  respQuitado: {{ _('Se ha quitado el correo de respaldo.')|tojson }},
 };
 
 function formatearFecha(iso) {
@@ -245,6 +337,7 @@ async function cargarPerfil() {
   document.getElementById('especialidad').value = u.especialidad ?? '';
   document.getElementById('comunidad_autonoma').value = u.comunidad_autonoma ?? '';
   await cargarPreferenciaIA(u);
+  await cargarRespaldo();
 }
 
 /* ---------------------------------------------------------------------------
@@ -434,6 +527,155 @@ cargarPerfil();
 /* ---------------------------------------------------------------------- */
 /* Baja de la cuenta                                                       */
 /* ---------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------
+   Correo de respaldo
+   ---------------------------------------------------------------------------
+   La dirección llega ya enmascarada del servidor, así que aquí no hay nada
+   que ocultar ni que recomponer: se pinta tal cual viene.
+
+   Los tres estados no son dos: «sin respaldo», «con respaldo verificado» y
+   «escrito pero sin confirmar». El tercero es el que más fácil se olvida y el
+   que más engaña: quien lo tiene así cree estar protegido y no lo está, porque
+   un respaldo sin verificar no cuenta para nada.
+   --------------------------------------------------------------------------- */
+const respForm = document.getElementById('resp-form');
+const respQuitarForm = document.getElementById('resp-quitar-form');
+let RESP_TIENE = false;
+
+async function cargarRespaldo() {
+  const res = await fetch('/me/correo-de-respaldo');
+  if (!res.ok) return;                    // sin endpoint, la tarjeta no aparece
+  const r = await res.json();
+
+  RESP_TIENE = !!r.verificado;
+  const estado = document.getElementById('resp-estado');
+  if (r.verificado) {
+    estado.textContent = T.respPuesto.replace('{correo}', r.correo);
+  } else if (r.correo) {
+    estado.textContent = T.respPendiente.replace('{correo}', r.correo);
+  } else {
+    estado.textContent = T.respSin;
+  }
+
+  /* El aviso de qué se pierde solo se enseña a quien no tiene respaldo
+     verificado. A quien ya lo tiene no le aporta nada y le resta espacio. */
+  document.getElementById('resp-aviso').hidden = r.verificado;
+  document.getElementById('resp-abrir-texto').textContent =
+    r.verificado ? T.respCambiar : T.respAnadir;
+  document.getElementById('resp-quitar-abrir').hidden = !r.correo;
+  document.getElementById('resp-cambio-aviso').hidden = !r.verificado;
+  document.getElementById('resp-card').hidden = false;
+}
+
+function respCerrarTodo() {
+  respForm.reset();
+  respForm.hidden = true;
+  respQuitarForm.reset();
+  respQuitarForm.hidden = true;
+  document.getElementById('resp-cerrado').hidden = false;
+  document.getElementById('resp-msg').hidden = true;
+  document.getElementById('resp-quitar-msg').hidden = true;
+}
+
+document.getElementById('resp-abrir')?.addEventListener('click', () => {
+  document.getElementById('resp-cerrado').hidden = true;
+  respQuitarForm.hidden = true;
+  respForm.hidden = false;
+  document.getElementById('resp-correo').focus();
+});
+
+document.getElementById('resp-quitar-abrir')?.addEventListener('click', () => {
+  document.getElementById('resp-cerrado').hidden = true;
+  respForm.hidden = true;
+  respQuitarForm.hidden = false;
+  document.getElementById('resp-contrasena').focus();
+});
+
+document.getElementById('resp-cancelar')?.addEventListener('click', respCerrarTodo);
+document.getElementById('resp-quitar-cancelar')?.addEventListener('click', respCerrarTodo);
+
+respForm?.addEventListener('submit', async (ev) => {
+  ev.preventDefault();
+  const msg = document.getElementById('resp-msg');
+  const btn = document.getElementById('resp-enviar');
+  msg.hidden = true;
+  const original = btn.textContent;
+  btn.disabled = true;
+  btn.setAttribute('aria-busy', 'true');
+  btn.textContent = T.respEnviando;
+
+  let res, body;
+  try {
+    res = await fetch('/me/correo-de-respaldo', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({ correo: document.getElementById('resp-correo').value }),
+    });
+    body = await res.json().catch(() => ({}));
+  } catch (_) {
+    msg.textContent = T.sinServidorBaja;
+    msg.hidden = false;
+    btn.disabled = false;
+    btn.removeAttribute('aria-busy');
+    btn.textContent = original;
+    return;
+  }
+
+  if (res.ok) {
+    /* Qué mensaje toca lo decide el servidor con `era_cambio`, no lo que
+       creyera esta pantalla: es él quien sabe adónde ha enviado el correo. */
+    msg.textContent = (body.era_cambio ? T.respEnviadoCambio : T.respEnviadoNuevo)
+      .replace('{correo}', body.enviado_a || '');
+    msg.className = 'alert alert--ok';
+    msg.hidden = false;
+    respForm.reset();
+  } else {
+    msg.textContent = body.mensaje || body.error || T.errorDesconocido;
+    msg.className = 'alert';
+    msg.hidden = false;
+  }
+  btn.disabled = false;
+  btn.removeAttribute('aria-busy');
+  btn.textContent = original;
+});
+
+respQuitarForm?.addEventListener('submit', async (ev) => {
+  ev.preventDefault();
+  const msg = document.getElementById('resp-quitar-msg');
+  const btn = document.getElementById('resp-quitar-enviar');
+  msg.hidden = true;
+  btn.disabled = true;
+  btn.setAttribute('aria-busy', 'true');
+
+  let res, body;
+  try {
+    res = await fetch('/me/correo-de-respaldo/quitar', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({ contrasena: document.getElementById('resp-contrasena').value }),
+    });
+    body = await res.json().catch(() => ({}));
+  } catch (_) {
+    msg.textContent = T.sinServidorBaja;
+    msg.hidden = false;
+    btn.disabled = false;
+    btn.removeAttribute('aria-busy');
+    return;
+  }
+
+  if (res.ok) {
+    respCerrarTodo();
+    await cargarRespaldo();
+    const estado = document.getElementById('resp-estado');
+    estado.textContent = T.respQuitado + ' ' + estado.textContent;
+  } else {
+    msg.textContent = body.mensaje || body.error || T.errorDesconocido;
+    msg.hidden = false;
+  }
+  btn.disabled = false;
+  btn.removeAttribute('aria-busy');
+});
+
 const bajaCerrado = document.getElementById('baja-cerrado');
 const bajaForm = document.getElementById('baja-form');
 

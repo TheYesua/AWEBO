@@ -140,7 +140,15 @@ def test_situacion_de_adaptacion_apunta_a_origen(db):
     assert original.adaptaciones[0].id_situacion == adaptada.id_situacion
 
 
-def test_situacion_se_relaciona_con_ods_y_currículo(db):
+def test_situacion_se_relaciona_con_el_curriculo(db):
+    """Las tres relaciones que ahora se pueblan de verdad.
+
+    Se llamaba `..._con_ods_y_currículo` y probaba también `sa.ods`. Esa
+    relación se quitó el 11/08/2026: ningún prompt pide ODS, así que el JSONB
+    nunca los trae y era una consulta garantizada a vacío en cada carga. La
+    tabla `situacion_ods` y el catálogo de la ONU siguen ahí para cuando haya
+    una sección que los pida.
+    """
     user = _crear_docente(db, correo="rel@example.com")
 
     competencia = Competencia(
@@ -168,8 +176,6 @@ def test_situacion_se_relaciona_con_ods_y_currículo(db):
         cursos_aplicables=["1º ESO"],
         descripcion="Fases del proyecto técnico.",
     )
-    ods4 = db.session.scalar(select(ODS).where(ODS.numero == 4))
-
     sa = SituacionAprendizaje(
         id_usuario=user.id_usuario,
         titulo="Robótica básica",
@@ -179,7 +185,6 @@ def test_situacion_se_relaciona_con_ods_y_currículo(db):
     sa.competencias.append(competencia)
     sa.criterios.append(criterio)
     sa.saberes.append(saber)
-    sa.ods.append(ods4)
     db.session.add(sa)
     db.session.commit()
 
@@ -187,7 +192,6 @@ def test_situacion_se_relaciona_con_ods_y_currículo(db):
     assert sa.competencias[0].codigo == "STEM1"
     assert sa.criterios[0].codigo == "1.1"
     assert sa.saberes[0].bloque == "Resolución de problemas"
-    assert sa.ods[0].numero == 4
 
 
 def test_situacion_versiones_se_ordenan(db):

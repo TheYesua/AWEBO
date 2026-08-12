@@ -41,6 +41,9 @@ def generar_audio(id_situacion: int, seccion: str, texto: str, idioma: str) -> d
             "audio_fallido", id_situacion=id_situacion, seccion=seccion,
             idioma=idioma, motivo=str(exc),
         )
+        # Además del log: el log lo lee quien administra, y quien pulsó el
+        # botón necesita enterarse en la pantalla. Ver `audio.ruta_error`.
+        almacen.anotar_error(id_situacion, seccion, texto, idioma, str(exc))
         return {"ok": False, "motivo": str(exc)}
 
     ruta = almacen.guardar(id_situacion, seccion, texto, idioma, audio.datos)

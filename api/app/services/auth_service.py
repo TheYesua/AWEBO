@@ -66,6 +66,7 @@ def registrar_usuario(
     comunidad_autonoma: str | None = None,
     rol_nombre: str = Rol.DOCENTE,
     reclamar_contenido: bool = False,
+    correo_respaldo: str | None = None,
 ) -> Usuario:
     """Crea un nuevo usuario con el rol indicado (por defecto, docente).
 
@@ -73,9 +74,15 @@ def registrar_usuario(
     nada**: registra una solicitud que un administrador debe aprobar. Ver
     ``_reclamar`` para el porqué.
 
+    Si se da ``correo_respaldo`` **no se guarda**: se manda a esa dirección el
+    enlace de confirmación, igual que si se pusiera desde el perfil. Guardarlo
+    sin verificar sería peor que no tenerlo, porque cualquiera podría apuntar
+    la dirección de otra persona al registrarse.
+
     Lanza ``AuthError`` con código ``correo_duplicado``, ``rol_inexistente``,
-    ``contenido_reclamable`` (falta confirmar) o ``reclamacion_pendiente``
-    (solicitud registrada, a la espera de aprobación).
+    ``contenido_reclamable`` (falta confirmar), ``reclamacion_pendiente``
+    (solicitud registrada, a la espera de aprobación) o
+    ``respaldo_igual_al_principal``.
     """
     correo_normalizado = correo.lower().strip()
 
@@ -95,6 +102,18 @@ def registrar_usuario(
     rol = db.session.scalar(select(Rol).where(Rol.nombre == rol_nombre))
     if rol is None:
         raise AuthError("rol_inexistente", f"No existe el rol {rol_nombre!r}")
+
+    # Se comprueba ANTES de crear nada. `respaldo.solicitar` rechaza igual esta
+    # dirección, pero lo haría con la cuenta ya creada y confirmada: el
+    # registro habría salido bien, el respaldo no, y nadie se enteraría hasta
+    # buscar en el buzón un correo que nunca se envió.
+    respaldo_normalizado = (correo_respaldo or "").strip().lower()
+    if respaldo_normalizado and respaldo_normalizado == correo_normalizado:
+        raise AuthError(
+            "respaldo_igual_al_principal",
+            "El correo de respaldo tiene que ser distinto del de la cuenta: si "
+            "fuera el mismo no serviría para recuperarla.",
+        )
 
     if existente is not None:
         # Lanza siempre: nunca devuelve un usuario con el que iniciar sesión.
@@ -121,6 +140,36 @@ def registrar_usuario(
 
     db.session.add(usuario)
     db.session.commit()
+
+    # Atributo transitorio, no columna: vale solo para esta respuesta. Lo mira
+    # el endpoint para decidir si manda a la persona a su buzón, y tiene que
+    # decir lo que de verdad pasó, no lo que se pidió.
+    usuario.respaldo_enviado = False
+
+    if respaldo_normalizado:
+        # Se hace después del commit y **sin deshacer el registro si falla**.
+        # La cuenta ya es válida sin respaldo; tumbar un alta correcta porque
+        # el correo no salió dejaría a la persona sin cuenta y sin entender por
+        # qué. Si no llega, siempre puede añadirlo desde su perfil.
+        #
+        # Se capturan todas las excepciones y no solo `RespaldoError`, y eso lo
+        # enseñó un test: con la cola caída saltaba un `RuntimeError` que se
+        # llevaba por delante la petición entera. La cuenta quedaba creada, la
+        # respuesta era un 500, y al reintentar salía «correo_duplicado». Es
+        # decir, exactamente el desastre que este bloque decía evitar mientras
+        # solo capturaba el error bonito.
+        from . import respaldo as svc_respaldo
+
+        try:
+            svc_respaldo.solicitar(usuario, respaldo_normalizado)
+            usuario.respaldo_enviado = True
+        except Exception:
+            log.warning(
+                "respaldo_en_registro_no_enviado",
+                id_usuario=usuario.id_usuario,
+                exc_info=True,
+            )
+
     return usuario
 
 
@@ -197,11 +246,27 @@ def _reclamar(
         situaciones=len(usuario.situaciones),
     )
 
+    # Si la persona anterior dejó correo de respaldo, se le pregunta a ella:
+    # es la única prueba de identidad que sobrevive al reciclaje de una
+    # dirección institucional. El administrador queda como último recurso.
+    from . import reclamacion as svc_reclamacion
+
+    avisado = svc_reclamacion.avisar_al_respaldo(usuario)
+
     raise AuthError(
         "reclamacion_pendiente",
-        "Solicitud registrada. Un administrador debe aprobarla antes de que "
-        "puedas acceder a la cuenta y a su contenido.",
+        (
+            "Solicitud registrada. Hemos escrito a la persona que dio de baja "
+            "esta cuenta para que lo autorice; si eres tú, revisa tu correo "
+            "personal."
+            if avisado else
+            "Solicitud registrada. Un administrador debe aprobarla antes de "
+            "que puedas acceder a la cuenta y a su contenido."
+        ),
         situaciones=len(usuario.situaciones),
+        # No se dice **a qué dirección** se ha escrito: sería contarle a quien
+        # reclama cuál es el correo personal de otra persona.
+        avisado_al_respaldo=bool(avisado),
     )
 
 

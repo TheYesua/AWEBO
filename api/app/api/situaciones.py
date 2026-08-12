@@ -228,6 +228,21 @@ def obtener_audio(id_situacion: int):
         return jsonify({"error": "seccion_invalida"}), 400
 
     if not ruta.is_file():
+        # Un fallo permanente —falta el modelo, no hay proveedor— deja
+        # constancia. Distinguirlo de «aún se está generando» es lo que evita
+        # que la pantalla espere un minuto para acabar diciendo «inténtalo de
+        # nuevo», que es un consejo falso si el motivo no cambia con el tiempo.
+        error = almacen_audio.ruta_error(
+            sa.id_situacion, seccion, texto, sa.idioma or "es"
+        )
+        if error.is_file():
+            return (
+                jsonify({
+                    "estado": "fallido",
+                    "mensaje": error.read_text(encoding="utf-8"),
+                }),
+                409,
+            )
         return jsonify({"estado": "no_disponible"}), 404
 
     return Response(

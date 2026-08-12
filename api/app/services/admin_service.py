@@ -442,32 +442,16 @@ def resolver_reclamacion(
         "resultado": "aprobada" if aprobar else "rechazada",
     }
 
+    # La aplicación vive en `services/reclamacion.py` porque ahora hay **dos**
+    # vías que acaban aquí —el administrador y el correo de respaldo de la
+    # persona anterior—, y dos copias de la asignación de campos acabarían
+    # divergiendo. Ya pasó con la regla de `es_adaptacion`.
+    from . import reclamacion as svc_reclamacion
+
     if aprobar:
-        rol = db.session.scalar(
-            select(Rol).where(Rol.nombre == solicitud.get("rol", Rol.DOCENTE))
-        )
-        if rol is None:
-            raise AdminError("rol_inexistente", "El rol solicitado ya no existe")
-
-        # El rol sale de la solicitud, que a su vez lo fijó el registro. Nunca
-        # del que tuviera la cuenta anterior.
-        usuario.id_rol = rol.id_rol
-        usuario.contrasena_hash = solicitud["contrasena_hash"]
-        usuario.nombre = solicitud["nombre"]
-        usuario.centro_educativo = solicitud.get("centro_educativo")
-        usuario.especialidad = solicitud.get("especialidad")
-        usuario.comunidad_autonoma = solicitud.get("comunidad_autonoma")
-
-        # Preferencias de la persona anterior: se limpian. Son suyas, no del
-        # correo, y dejarlas puestas haría que la cuenta generase con un
-        # proveedor que quien la usa no ha elegido.
-        usuario.proveedor_ia = None
-        usuario.modelo_ia = None
-        usuario.idioma_interfaz = None
-
-        usuario.eliminado_en = None
-
-    usuario.reclamacion_pendiente = None
+        svc_reclamacion.aplicar(usuario)
+    else:
+        svc_reclamacion.descartar(usuario)
     db.session.commit()
 
     log.info("admin_reclamacion_resuelta", actor=por.correo, **resumen)

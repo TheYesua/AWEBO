@@ -1,6 +1,10 @@
 """Schemas Pydantic v2 para validación y serialización de la API."""
 from .auth import (
+    AprobarReclamacionIn,
     ConfirmarBajaIn,
+    ConfirmarRespaldoIn,
+    PonerRespaldoIn,
+    QuitarRespaldoIn,
     LoginIn,
     RegisterIn,
     RestablecerConTokenIn,
@@ -24,7 +28,11 @@ from .usuario import UsuarioOut, UsuarioUpdateIn
 __all__ = [
     "AdaptacionCreateIn",
     "AudioIn",
+    "AprobarReclamacionIn",
     "ConfirmarBajaIn",
+    "ConfirmarRespaldoIn",
+    "PonerRespaldoIn",
+    "QuitarRespaldoIn",
     "LoginIn",
     "SolicitarBajaIn",
     "RegisterIn",

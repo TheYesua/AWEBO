@@ -95,6 +95,15 @@ def _fusionar_seccion(
     contenido[nombre] = payload
     sa.contenido = contenido
 
+    # Los enlaces con el catálogo se rehacen aquí y no en un sitio central
+    # porque no hay ninguno: `contenido` se reasigna en cuatro puntos del
+    # código. Que no se olvide un quinto lo vigila
+    # `test_enlaces_curriculares.TestNingunEscritorSeOlvida`.
+    if nombre == "conexion_curricular":
+        from ..services.enlaces_curriculares import sincronizar
+
+        sincronizar(sa, commit=False)
+
 
 # ---------------------------------------------------------------------------
 # Tareas Celery

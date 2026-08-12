@@ -269,7 +269,12 @@ const T = {
   escuchar: {{ _('Escuchar')|tojson }},
   pararLectura: {{ _('Parar')|tojson }},
   escuchando: {{ _('Leyendo en voz alta…')|tojson }},
-  sinVoz: {{ _('Tu sistema no tiene ninguna voz instalada para {idioma}, así que la lectura en voz alta no está disponible en esta situación.')|tojson }},
+  sinVoz: {{ _('Tu sistema no tiene ninguna voz instalada para {idioma}, así que la lectura inmediata no está disponible. Puedes generar el audio en el servidor con el botón «Generar audio» de cada sección: tarda unos segundos y luego se puede escuchar y descargar.')|tojson }},
+  generarAudio: {{ _('Generar audio')|tojson }},
+  generandoAudio: {{ _('Generando…')|tojson }},
+  audioListo: {{ _('Audio generado')|tojson }},
+  audioFallo: {{ _('No se ha podido generar el audio. Inténtalo de nuevo en un momento.')|tojson }},
+  descargarAudio: {{ _('Descargar')|tojson }},
   yaEnCurso: {{ _('Ya hay una generación en curso.')|tojson }},
   noSePudoLanzar: {{ _('No se pudo lanzar la generación.')|tojson }},
   terminoConError: {{ _('La generación terminó con error: ')|tojson }},
@@ -481,6 +486,112 @@ async function comprobarVoz(idiomaSA) {
   return Lectura.Lector.vocesPara(idiomaSA).length > 0;
 }
 
+/* ---------------------------------------------------------------------- */
+/* Audio generado en el servidor (tarea 8b)                                */
+/* ---------------------------------------------------------------------- */
+
+/* Cuántas veces se pregunta si el audio está listo, y cada cuánto.
+   Una sección tarda unos segundos; el minuto largo que dan estos números cubre
+   con holgura una cola con varias peticiones por delante. Pasado eso se deja
+   de preguntar y se dice que ha fallado: seguir sondeando indefinidamente
+   dejaría el botón girando para siempre si el worker está caído. */
+const AUDIO_INTENTOS = 20;
+const AUDIO_ESPERA_MS = 3000;
+
+/* El texto se saca del DOM con la MISMA función que usa la lectura del
+   navegador. No es casualidad ni ahorro: si el servidor extrajera el texto por
+   su cuenta desde el JSON, acabaría narrando algo distinto de lo que se ve en
+   pantalla. Un audio que cuenta otra cosa es el peor fallo posible aquí,
+   porque lo sufre justo quien no puede comprobarlo mirando. */
+function urlAudio(clave, texto) {
+  const p = new URLSearchParams({ seccion: clave, texto });
+  return `/api/situaciones/${ID}/audio?${p}`;
+}
+
+async function generarAudio(boton, cuerpo, clave) {
+  const texto = Lectura.textoLegible(cuerpo);
+  if (!texto) return;
+
+  const original = boton.textContent;
+  boton.disabled = true;
+  boton.setAttribute('aria-busy', 'true');
+  boton.textContent = T.generandoAudio;
+
+  /* El aviso va al mismo `#msg` que usan guardar y adaptar: un sitio para los
+     mensajes de la página, no uno por función. */
+  const rendirse = (mensaje) => {
+    boton.disabled = false;
+    boton.removeAttribute('aria-busy');
+    boton.textContent = original;
+    const msg = document.getElementById('msg');
+    if (msg) {
+      msg.classList.remove('alert--ok');
+      msg.textContent = mensaje ?? T.audioFallo;
+      msg.hidden = false;
+    }
+  };
+
+  let res;
+  try {
+    res = await fetch(`/api/situaciones/${ID}/audio`, {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({ seccion: clave, texto }),
+    });
+  } catch (_) {
+    return rendirse();
+  }
+  if (!res.ok && res.status !== 202) {
+    const cuerpoErr = await res.json().catch(() => ({}));
+    return rendirse(cuerpoErr.mensaje || cuerpoErr.error || T.audioFallo);
+  }
+
+  /* Si respondió 200 ya estaba hecho de una vez anterior y no hay que esperar
+     a nadie. Es gratis saberlo: el nombre del fichero se calcula del texto. */
+  let listo = res.status === 200;
+  for (let i = 0; !listo && i < AUDIO_INTENTOS; i++) {
+    await new Promise((r) => setTimeout(r, AUDIO_ESPERA_MS));
+    let comprobacion;
+    try {
+      comprobacion = await fetch(urlAudio(clave, texto));
+    } catch (_) {
+      return rendirse();
+    }
+    /* 409 significa que el servidor ya sabe que esto no va a salir: falta un
+       modelo, no hay proveedor… Esperar más no cambia nada, así que se corta
+       aquí y se enseña el motivo de verdad en lugar de «inténtalo otra vez».
+       Se pide con GET y no con HEAD para poder leer ese motivo. */
+    if (comprobacion.status === 409) {
+      const detalle = await comprobacion.json().catch(() => ({}));
+      return rendirse(detalle.mensaje || T.audioFallo);
+    }
+    listo = comprobacion.ok;
+  }
+  if (!listo) return rendirse();
+
+  boton.disabled = false;
+  boton.removeAttribute('aria-busy');
+  boton.textContent = T.audioListo;
+  colocarReproductor(cuerpo, clave, texto);
+}
+
+/* El reproductor se inserta bajo la sección, no en una ventana aparte: así
+   queda al lado del texto que narra y se puede seguir uno mientras suena el
+   otro. */
+function colocarReproductor(cuerpo, clave, texto) {
+  const seccion = cuerpo.closest('.seccion-gen') || cuerpo.parentElement;
+  seccion.querySelector('.audio-generado')?.remove();
+
+  const url = urlAudio(clave, texto);
+  const caja = document.createElement('div');
+  caja.className = 'audio-generado';
+  caja.innerHTML = `
+    <audio controls preload="none" src="${url}"></audio>
+    <a class="btn btn--small" href="${url}" download="${clave}.mp3">${T.descargarAudio}</a>
+  `;
+  seccion.appendChild(caja);
+}
+
 /* Alterna entre leer y parar. Solo una sección suena a la vez: pulsar en otra
    corta la anterior, porque dos voces solapadas no se entienden. */
 function alternarLectura(boton, cuerpo, idiomaSA) {
@@ -610,6 +721,13 @@ function renderContenido(contenido, idiomaSA) {
       ? `<button type="button" class="btn btn--small" data-leer>${T.escuchar}</button>`
       : '';
 
+    /* El de audio va SIEMPRE, tenga o no voz el sistema. Cuando no la hay es
+       la única forma de escuchar la sección —el caso que motivó la tarea 8b—,
+       y cuando sí la hay sigue aportando algo que `SpeechSynthesis` no puede:
+       un fichero que se descarga, se comparte y se oye sin conexión. */
+    const botonAudio =
+      `<button type="button" class="btn btn--small" data-audio>${T.generarAudio}</button>`;
+
     sec.innerHTML = `
       <header>
         <h3>${etiqueta}</h3>
@@ -620,6 +738,7 @@ function renderContenido(contenido, idiomaSA) {
         </small>
         <div class="seccion-gen__acciones">
           ${botonLeer}
+          ${botonAudio}
           ${botonesOps}
           ${transformada
             ? `<button type="button" class="btn btn--small" data-op="deshacer">${T.deshacer}</button>`
@@ -644,6 +763,12 @@ function renderContenido(contenido, idiomaSA) {
     if (btnLeer) {
       const cuerpo = sec.querySelector('.seccion-cuerpo');
       btnLeer.addEventListener('click', () => alternarLectura(btnLeer, cuerpo, idiomaSA));
+    }
+
+    const btnAudio = sec.querySelector('[data-audio]');
+    if (btnAudio) {
+      const cuerpo = sec.querySelector('.seccion-cuerpo');
+      btnAudio.addEventListener('click', () => generarAudio(btnAudio, cuerpo, clave));
     }
 
     sec.querySelectorAll('[data-op]').forEach((btn) => {

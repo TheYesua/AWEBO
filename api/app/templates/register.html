@@ -61,6 +61,39 @@
       <input type="text" id="comunidad_autonoma" name="comunidad_autonoma" maxlength="50" value="Ceuta">
     </div>
 
+    {#
+      Correo de respaldo. Opcional, pero ofrecido aquí y no solo en el perfil:
+      el momento en que hace falta —una baja, un cambio de centro, alguien
+      reclamando tu contenido— es siempre posterior y nunca se ve venir, y
+      quien no lo puso al principio rara vez entra a ponerlo antes.
+
+      Se explica para qué sirve en vez de dejar el campo a secas. Un segundo
+      correo sin justificar parece recogida de datos porque sí, y se salta.
+    #}
+    <div class="field">
+      <label for="correo_respaldo">{{ _('Correo de respaldo (opcional)') }}</label>
+      <input type="email" id="correo_respaldo" name="correo_respaldo"
+             autocomplete="email" aria-describedby="respaldo-help">
+      <small id="respaldo-help" class="help">
+        {{ _('Una dirección personal, distinta de la del centro. Te permitirá recuperar la cuenta si pierdes el correo institucional y demostrar que tus situaciones de aprendizaje son tuyas. Puedes añadirlo o cambiarlo después desde tu perfil.') }}
+      </small>
+    </div>
+
+    {#
+      Advertencia de acceso, y va ANTES del botón a propósito.
+
+      Ponerla en Ayuda no basta: quien se registra no ha entrado todavía en
+      Ayuda. La decisión del 10/08/2026 de que el administrador pueda leerlo
+      todo se aceptó con tres condiciones, y esta es la que hace que la persona
+      lo sepa antes de escribir nada, no después.
+
+      No se pide marcar una casilla. Sería consentimiento de pega —nadie la
+      lee— y convertiría un aviso honesto en un trámite que se salta.
+    #}
+    <p class="help" id="aviso-acceso">
+      {{ _('Antes de continuar: las personas administradoras de AWEBO pueden abrir el contenido de cualquier cuenta, y cada acceso queda registrado. Lo explicamos en <a href="/ayuda#cuenta">el portal de ayuda</a>.')|safe }}
+    </p>
+
     <div class="actions">
       <button type="submit" class="btn btn--primary" id="register-submit">{{ _('Registrarme') }}</button>
       <a href="/login" class="link">{{ _('¿Ya tienes cuenta?') }}</a>
@@ -96,6 +129,16 @@ document.getElementById('register-form').addEventListener('submit', async (ev) =
     });
     const body = await res.json().catch(() => ({}));
     if (res.ok) {
+      /* Con respaldo pendiente no se salta al perfil en silencio: hay que
+         decir que el enlace está en el buzón. Sin confirmar no cuenta para
+         nada, y creerlo puesto es peor que saber que falta. */
+      if (body.respaldo_pendiente) {
+        msg.textContent = {{ _('Cuenta creada. Te hemos enviado un enlace a tu correo de respaldo: ábrelo para confirmarlo. Hasta entonces no cuenta.')|tojson }};
+        msg.classList.add('alert--ok');
+        msg.hidden = false;
+        setTimeout(() => { window.location.href = '/perfil'; }, 4000);
+        return;
+      }
       window.location.href = '/perfil';
       return;
     }

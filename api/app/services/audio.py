@@ -63,6 +63,35 @@ def ruta(id_situacion: int, seccion: str, texto: str, idioma: str) -> Path:
     return raiz() / str(int(id_situacion)) / f"{seccion}-{_huella(texto, idioma)}.mp3"
 
 
+def ruta_error(id_situacion: int, seccion: str, texto: str, idioma: str) -> Path:
+    """Dónde queda constancia de que ESTE audio no se pudo generar.
+
+    POR QUÉ HACE FALTA
+    ------------------
+    Sin esto, «no hay fichero» significa dos cosas incompatibles: «todavía se
+    está generando» y «no se va a generar nunca». La interfaz no puede
+    distinguirlas, así que espera hasta agotar el plazo y luego dice «inténtalo
+    de nuevo en un momento» — un consejo falso cuando el motivo es que falta un
+    modelo o el proveedor está sin configurar, que no cambia por esperar.
+
+    Pasó de verdad el 11/08: un minuto de espera para recibir un mensaje que
+    invitaba a repetir algo que iba a fallar igual, mientras el servidor sabía
+    el motivo exacto desde el primer segundo.
+
+    Mismo principio que el audio: el sistema de ficheros es el estado, sin
+    tabla nueva. El fichero de error se borra al guardar un audio bueno.
+    """
+    return ruta(id_situacion, seccion, texto, idioma).with_suffix(".error")
+
+
+def anotar_error(id_situacion: int, seccion: str, texto: str, idioma: str, motivo: str) -> Path:
+    """Deja el motivo del fallo junto a donde iría el audio."""
+    destino = ruta_error(id_situacion, seccion, texto, idioma)
+    destino.parent.mkdir(parents=True, exist_ok=True)
+    destino.write_text(motivo, encoding="utf-8")
+    return destino
+
+
 def guardar(id_situacion: int, seccion: str, texto: str, idioma: str, datos: bytes) -> Path:
     """Escribe el audio y limpia las versiones anteriores de esa sección."""
     destino = ruta(id_situacion, seccion, texto, idioma)
@@ -74,6 +103,9 @@ def guardar(id_situacion: int, seccion: str, texto: str, idioma: str, datos: byt
     provisional = destino.with_suffix(".parcial")
     provisional.write_bytes(datos)
     provisional.replace(destino)
+
+    # Un intento anterior pudo dejar constancia de un fallo; ahora sobra.
+    destino.with_suffix(".error").unlink(missing_ok=True)
 
     for viejo in destino.parent.glob(f"{seccion}-*.mp3"):
         if viejo != destino:

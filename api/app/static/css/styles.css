@@ -1504,6 +1504,43 @@ code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; background: 
   margin-left: auto;
 }
 
+/* Reproductor del audio generado en el servidor (tarea 8b).
+   Va debajo del cuerpo de la sección, no dentro: el cuerpo lo pintan seis
+   renderizadores distintos y meterlo ahí obligaría a tocar los seis.
+
+   `align-items: center` es lo que alinea el botón de descarga con el
+   reproductor. Sin él, el `<audio>` y el enlace se alinean por su línea base,
+   y como el reproductor es mucho más alto que un botón, el botón cae al fondo:
+   aparecía a la derecha pero varios píxeles más abajo.
+
+   El margen superior lo separa del cuadro de la sección —«Producto final» y
+   compañía—, que sin él quedaba pegado al borde del reproductor. */
+.audio-generado {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-top: var(--space-4);
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--border);
+}
+
+/* El reproductor crece con el espacio disponible pero no obliga a la fila a
+   ser más ancha que su contenedor: sin `min-width`, un elemento flexible se
+   niega a encoger por debajo de su tamaño intrínseco y desborda en móvil. */
+.audio-generado audio {
+  flex: 1 1 16rem;
+  min-width: 0;
+  max-width: 32rem;
+}
+
+/* El botón no se estira: en una fila flex, un enlace ocuparía todo el alto
+   disponible y volvería a verse descuadrado respecto al reproductor. */
+.audio-generado .btn {
+  flex: 0 0 auto;
+  align-self: center;
+}
+
 /* Comparación de dos redacciones de una misma sección (doble propuesta).
    Una columna en móvil, dos a partir de tableta: en pantalla estrecha, dos
    columnas de texto largo se leen peor que una debajo de otra. */

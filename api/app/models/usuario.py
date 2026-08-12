@@ -32,6 +32,32 @@ class Usuario(db.Model, UserMixin):
     )
     contrasena_hash: Mapped[str] = mapped_column(String(255), nullable=False)
 
+    # ----- Correo de respaldo (tarea 13) -----
+    #
+    # Una dirección **personal**, distinta de la del centro. Existe porque los
+    # correos institucionales se reciclan: `jperez@ies.es` puede ser de otra
+    # persona al curso siguiente, y entonces la dirección deja de identificar a
+    # nadie. El respaldo sobrevive al cambio de centro, así que es el único
+    # ancla de identidad estable que tiene una cuenta.
+    #
+    # NO es único a propósito. Dos cuentas pueden compartir una dirección
+    # personal —una pareja de docentes, por ejemplo—, y prohibirlo tendría
+    # además un efecto feo: al rechazar «esa dirección ya está en uso» se
+    # estaría contando que existe una cuenta con ese respaldo. Cuando una
+    # dirección corresponde a varias cuentas, cada una recibe su propio enlace.
+    correo_respaldo: Mapped[str | None] = mapped_column(
+        String(255), nullable=True, index=True
+    )
+
+    #: Cuándo se confirmó el respaldo. **Un respaldo sin verificar no sirve
+    #: para nada**, y eso cierra un agujero: si contara sin más, cualquiera
+    #: podría poner como respaldo la dirección de otra persona y provocar que
+    #: le lleguen a esa persona enlaces de restablecimiento de una cuenta
+    #: ajena. Confuso en el mejor caso, y una palanca de engaño en el peor.
+    correo_respaldo_verificado_en: Mapped[datetime | None] = mapped_column(
+        DateTime(timezone=True), nullable=True
+    )
+
     nombre: Mapped[str] = mapped_column(String(100), nullable=False)
     centro_educativo: Mapped[str | None] = mapped_column(String(200), nullable=True)
     especialidad: Mapped[str | None] = mapped_column(String(100), nullable=True)
@@ -133,6 +159,16 @@ class Usuario(db.Model, UserMixin):
     #: dura lo mismo en febrero que en agosto, y aquí no hay ninguna razón para
     #: heredar esa ambigüedad. Son 90 días.
     DIAS_DE_GRACIA = 90
+
+    @property
+    def tiene_respaldo(self) -> bool:
+        """Si esta cuenta puede probar su identidad por otra vía.
+
+        Exige las dos cosas: dirección **y** verificación. Preguntar solo por
+        la dirección daría por bueno un respaldo que alguien escribió y nunca
+        confirmó, que es exactamente el caso que no debe contar.
+        """
+        return bool(self.correo_respaldo) and self.correo_respaldo_verificado_en is not None
 
     @property
     def esta_eliminado(self) -> bool:

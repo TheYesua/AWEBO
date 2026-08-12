@@ -152,7 +152,13 @@
     {{ _('Cada sección del detalle tiene un botón <strong>Escuchar</strong> que la lee en voz alta. Se lee sección a sección, y no el documento entero, para que puedas repasar solo la parte que te interesa.')|safe }}
   </p>
   <p>
-    {{ _('La voz la pone tu propio ordenador, no la aplicación. Por eso el botón puede no aparecer: si tu sistema no tiene instalada ninguna voz para el idioma de la situación, se oculta y verás un aviso explicándolo. Instalar voces adicionales se hace desde la configuración del sistema operativo, no desde AWEBO.') }}
+    {{ _('Ese botón usa la voz de tu propio ordenador, así que suena al instante pero depende de que tu sistema tenga una voz instalada para el idioma de la situación. Si no la tiene, el botón no aparece — algo habitual en catalán, gallego y euskera.') }}
+  </p>
+  <p>
+    {{ _('Para esos casos, y para cuando quieras un fichero, cada sección tiene además <strong>Generar audio</strong>. Ese lo produce el servidor con voces propias, así que funciona en las cuatro lenguas aunque tu equipo no tenga ninguna instalada. Tarda unos segundos y deja un reproductor y un enlace de descarga bajo la sección.')|safe }}
+  </p>
+  <p class="help">
+    {{ _('El audio se genera en el propio servidor de AWEBO: el contenido de tus situaciones no se envía a ningún servicio externo para leerlo. Las voces son de la Universidad del País Vasco y de los proyectos públicos de normalización lingüística de Galicia y Cataluña.') }}
   </p>
 </article>
 
@@ -188,10 +194,47 @@
   </p>
   <h3>{{ _('Si olvidas la contraseña') }}</h3>
   <p>
-    {{ _('Entra en <a href="/restablecer-contrasena">¿Olvidaste tu contraseña?</a> y escribe tu correo. Te llegará un mensaje con un enlace para elegir una contraseña nueva; caduca en <strong>una hora</strong> y solo sirve una vez. Mientras no lo abras, tu contraseña sigue siendo la de siempre, así que si recibes ese correo sin haberlo pedido no tienes que hacer nada.')|safe }}
+    {{ _('Entra en <a href="/restablecer-contrasena">¿Olvidaste tu contraseña?</a> y escribe tu correo <strong>o tu correo de respaldo</strong>. Te llegará un mensaje con un enlace para elegir una contraseña nueva; caduca en <strong>una hora</strong> y solo sirve una vez. Mientras no lo abras, tu contraseña sigue siendo la de siempre, así que si recibes ese correo sin haberlo pedido no tienes que hacer nada.')|safe }}
   </p>
   <p class="help">
     {{ _('La pantalla responde lo mismo exista o no una cuenta con esa dirección. Es a propósito: si distinguiera los dos casos, cualquiera podría usar el formulario para averiguar quién está registrado.') }}
+  </p>
+
+  <h3>{{ _('Quién puede ver lo que escribes') }}</h3>
+  <p>
+    {{ _('Tus situaciones de aprendizaje no son públicas: nadie más que tú las ve desde su cuenta.') }}
+  </p>
+  <p>
+    {{ _('Con una excepción que conviene que sepas desde el principio: <strong>las personas administradoras de AWEBO pueden abrir cualquier situación</strong>, no solo ver cuántas tienes. Es lo que les permite reproducir un fallo que alguien reporta o comprobar una reclamación de contenido.')|safe }}
+  </p>
+  <p class="help">
+    {{ _('Cada vez que una cuenta administradora abre contenido que no es suyo queda registrado, con qué situación y cuándo. No es un permiso silencioso: es un permiso que deja rastro.') }}
+  </p>
+  <p class="help">
+    {{ _('Si trabajas con material que no quieres que vea nadie más, tenlo en cuenta antes de escribirlo aquí.') }}
+  </p>
+
+  <h3>{{ _('El correo de respaldo') }}</h3>
+  <p>
+    {{ _('Es una segunda dirección, <strong>personal y no del centro</strong>, que puedes añadir al registrarte o después desde <a href="/perfil">tu perfil</a>. Es opcional, pero es lo único que sigue siendo tuyo cuando cambias de centro.') }}
+  </p>
+  <p>{{ _('Sirve para dos cosas:') }}</p>
+  <ul>
+    <li>
+      {{ _('<strong>Recuperar la cuenta.</strong> Puedes pedir el enlace de contraseña nueva escribiendo el correo de respaldo, aunque ya no tengas acceso al correo del centro.')|safe }}
+    </li>
+    <li>
+      {{ _('<strong>Demostrar que tu contenido es tuyo.</strong> Si te das de baja conservando tus situaciones y alguien se registra después con tu antigua dirección pidiéndolas, se te pregunta a ti, en el correo de respaldo. Sin tu confirmación no se entrega nada.')|safe }}
+    </li>
+  </ul>
+  <p class="help">
+    {{ _('Hace falta confirmarlo abriendo el enlace que te enviamos. Mientras no lo hagas no cuenta para nada, aunque aparezca escrito en tu perfil.') }}
+  </p>
+  <p class="help">
+    {{ _('Para cambiarlo por otro, el enlace de confirmación se envía a la dirección de respaldo que tuvieras antes, no a la nueva. Es incómodo a propósito: es lo que impide que quien consiga entrar en tu cuenta pueda apuntar la recuperación a un buzón suyo. Para quitarlo del todo basta con tu contraseña.') }}
+  </p>
+  <p class="help">
+    {{ _('Si pierdes el acceso al correo de respaldo y tampoco puedes entrar en la cuenta, tendrás que escribir a la administración de AWEBO: es el último recurso.') }}
   </p>
 
   <h3>{{ _('Si quieres darte de baja') }}</h3>
@@ -206,7 +249,7 @@
       {{ _('<strong>Borrarlo todo.</strong> Tu cuenta y tus situaciones se eliminan de inmediato y para siempre. No hay plazo de recuperación ni forma de deshacerlo.')|safe }}
     </li>
     <li>
-      {{ _('<strong>Conservar tus situaciones.</strong> Tu cuenta deja de poder entrar, pero el contenido se guarda <strong>90 días</strong>. Si dentro de ese plazo vuelves a registrarte con el mismo correo, puedes pedir recuperarlo; lo aprueba un administrador. Pasado el plazo, el borrado es definitivo.')|safe }}
+      {{ _('<strong>Conservar tus situaciones.</strong> Tu cuenta deja de poder entrar, pero el contenido se guarda <strong>90 días</strong>. Si dentro de ese plazo vuelves a registrarte con el mismo correo, puedes pedir recuperarlo. Quien lo autoriza es quien tenga acceso al correo de respaldo de la cuenta; si no había ninguno, lo decide un administrador. Pasado el plazo, el borrado es definitivo.')|safe }}
     </li>
   </ul>
   <p class="help">

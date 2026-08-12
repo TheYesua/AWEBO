@@ -40,6 +40,7 @@ from __future__ import annotations
 
 import structlog
 from flask import current_app
+from flask_babel import gettext as _
 from sqlalchemy import func, select
 
 from ..extensions import db
@@ -102,12 +103,12 @@ def _comprobar_que_puede_irse(usuario: Usuario) -> None:
 
 
 def _texto_del_correo(enlace: str, minutos: int, conservar: bool) -> tuple[str, str]:
-    """Cuerpo del mensaje, en texto plano y en HTML.
+    """Cuerpo del mensaje, en texto plano y en HTML, en el idioma de la interfaz.
 
-    Como en el restablecimiento, no pasa por ``_()``: el envío ocurre en una
-    tarea de Celery, fuera de una petición, y ahí no hay idioma de interfaz que
-    consultar. Traducirlo pide guardar el idioma del usuario y activarlo dentro
-    de la tarea; está anotado como lo que queda de la tarea 11.
+    Se compone **dentro de la petición**, así que ``_()`` funciona. El worker
+    solo entrega cadenas ya hechas. Ver la nota larga en
+    `restablecimiento._texto_del_correo`, donde estaba el razonamiento
+    equivocado que mantuvo estos cuatro correos en castellano fijo.
 
     El texto **dice cuál de los dos modos se va a aplicar**. Sin eso, los dos
     correos serían idénticos y el enlace haría cosas distintas: quien lo abriera
@@ -115,36 +116,39 @@ def _texto_del_correo(enlace: str, minutos: int, conservar: bool) -> tuple[str, 
     confirmando.
     """
     if conservar:
-        que_pasa = (
+        que_pasa = _(
             "Tu cuenta dejará de poder entrar y tus situaciones de aprendizaje "
-            f"se conservarán {Usuario.DIAS_DE_GRACIA} días, durante los cuales "
-            "puedes recuperarlas volviendo a registrarte con este mismo correo."
-        )
+            "se conservarán {dias} días, durante los cuales puedes recuperarlas "
+            "volviendo a registrarte con este mismo correo."
+        ).format(dias=Usuario.DIAS_DE_GRACIA)
     else:
-        que_pasa = (
+        que_pasa = _(
             "Se borrarán tu cuenta y todas tus situaciones de aprendizaje de "
             "forma inmediata y definitiva. No se pueden recuperar después."
         )
 
-    texto = (
-        "Has pedido dar de baja tu cuenta de AWEBO.\n\n"
-        f"{que_pasa}\n\n"
-        f"Si es lo que quieres, abre este enlace para confirmarlo:\n{enlace}\n\n"
-        f"El enlace caduca en {minutos} minutos y solo se puede usar una vez.\n\n"
+    aviso = _(
         "Si no has sido tú, no hagas nada: mientras no se abra el enlace, tu "
         "cuenta sigue como estaba. Y cambia tu contraseña, porque para llegar "
         "hasta aquí alguien ha tenido que escribirla."
     )
+    caduca = _("El enlace caduca en {minutos} minutos y solo se puede usar una vez.").format(minutos=minutos)
+
+    texto = "\n\n".join([
+        _("Has pedido dar de baja tu cuenta de AWEBO."),
+        que_pasa,
+        _("Si es lo que quieres, abre este enlace para confirmarlo:") + f"\n{enlace}",
+        caduca,
+        aviso,
+    ])
     html = (
-        "<p>Has pedido dar de baja tu cuenta de AWEBO.</p>"
+        f"<p>{_('Has pedido dar de baja tu cuenta de AWEBO.')}</p>"
         f"<p><strong>{que_pasa}</strong></p>"
-        f'<p><a href="{enlace}">Confirmar la baja</a></p>'
-        f"<p>El enlace caduca en {minutos} minutos y solo se puede usar una vez.</p>"
-        "<p>Si no has sido tú, no hagas nada: mientras no se abra el enlace, tu "
-        "cuenta sigue como estaba. Y cambia tu contraseña, porque para llegar "
-        "hasta aquí alguien ha tenido que escribirla.</p>"
-        f"<p style='color:#666;font-size:12px'>Si el enlace no funciona, copia "
-        f"esta dirección en el navegador:<br>{enlace}</p>"
+        f'<p><a href="{enlace}">{_("Confirmar la baja")}</a></p>'
+        f"<p>{caduca}</p>"
+        f"<p>{aviso}</p>"
+        f"<p style='color:#666;font-size:12px'>"
+        f"{_('Si el enlace no funciona, copia esta dirección en el navegador:')}<br>{enlace}</p>"
     )
     return texto, html
 
@@ -176,7 +180,7 @@ def solicitar(usuario: Usuario, contrasena: str, *, conservar_contenido: bool) -
     encolar(
         enviar_correo,
         destino=usuario.correo,
-        asunto="Confirma la baja de tu cuenta de AWEBO",
+        asunto=_("Confirma la baja de tu cuenta de AWEBO"),
         texto=texto,
         html=html,
     )

@@ -23,6 +23,18 @@ class RegisterIn(BaseModel):
     # otra persona a quien haya heredado su dirección institucional.
     reclamar_contenido: bool = False
 
+    # Correo de respaldo, OPCIONAL, ofrecido desde el primer momento.
+    #
+    # Se ofrece aquí y no solo en el perfil porque el momento en que hace falta
+    # —una baja, un cambio de centro, una reclamación de contenido— es siempre
+    # posterior y nunca se ve venir. Quien no lo puso al principio rara vez
+    # entra al perfil a ponerlo antes de necesitarlo.
+    #
+    # Que sea opcional es una decisión, no un descuido: obligar a dar una
+    # segunda dirección personal para usar una herramienta de trabajo sería
+    # pedir un dato que no hace falta para el servicio.
+    correo_respaldo: EmailStr | None = None
+
     @field_validator("contrasena")
     @classmethod
     def _password_complejidad(cls, v: str) -> str:
@@ -110,6 +122,51 @@ class ConfirmarBajaIn(BaseModel):
     permitiría que quien pidió conservar su contenido acabara borrándolo todo
     por manipular la petición.
     """
+
+    model_config = ConfigDict(extra="forbid", str_strip_whitespace=True)
+
+    token: str = Field(min_length=10, max_length=1024)
+
+
+class AprobarReclamacionIn(BaseModel):
+    """Solo el token del enlace que recibió el correo de respaldo.
+
+    No lleva ningún dato más, y eso es deliberado: qué cuenta se entrega y a
+    quién ya lo fijó la solicitud guardada al registrarse. Si esta pantalla
+    pudiera aportar algo —un id, un correo—, quien tuviera el enlace podría
+    apuntarlo a otra cuenta. Aquí solo se dice «sí» a algo ya decidido.
+    """
+
+    model_config = ConfigDict(extra="forbid", str_strip_whitespace=True)
+
+    token: str = Field(min_length=10, max_length=1024)
+
+
+class PonerRespaldoIn(BaseModel):
+    """La dirección que se quiere dejar como respaldo."""
+
+    model_config = ConfigDict(extra="forbid", str_strip_whitespace=True)
+
+    correo: EmailStr
+
+
+class QuitarRespaldoIn(BaseModel):
+    """Solo la contraseña actual.
+
+    Quitar el respaldo no manda enlace, al revés que cambiarlo. La asimetría
+    está razonada en `services/respaldo.quitar`: cambiarlo por otro es lo que
+    permitiría a un intruso quedarse la cuenta; quitarlo solo la deja como
+    estaba antes de tenerlo. Y exigir el enlace también aquí dejaría atrapado
+    con un respaldo muerto a quien pierda ese buzón.
+    """
+
+    model_config = ConfigDict(extra="forbid", str_strip_whitespace=True)
+
+    contrasena: str = Field(min_length=1, max_length=128)
+
+
+class ConfirmarRespaldoIn(BaseModel):
+    """Solo el token: la dirección viaja firmada dentro."""
 
     model_config = ConfigDict(extra="forbid", str_strip_whitespace=True)
 

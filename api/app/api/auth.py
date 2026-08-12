@@ -6,7 +6,9 @@ from flask_login import current_user, login_required, login_user, logout_user
 
 from ..extensions import db, limiter
 from ..schemas import (
+    AprobarReclamacionIn,
     ConfirmarBajaIn,
+    ConfirmarRespaldoIn,
     LoginIn,
     RegisterIn,
     RestablecerConTokenIn,
@@ -24,6 +26,9 @@ from ..services.auth_service import (
 from ..services.baja import BajaError
 from ..services.baja import confirmar as confirmar_baja_servicio
 from ..services.baja import solicitar as solicitar_baja_servicio
+from ..services.reclamacion import ReclamacionError
+from ..services.reclamacion import aprobar_por_token as aprobar_reclamacion
+from ..services.respaldo import confirmar as confirmar_respaldo_servicio
 from ..services.restablecimiento import TokenInvalido, restablecer, solicitar
 
 
@@ -50,7 +55,15 @@ def register():
     usuario.touch_last_seen()
     db.session.commit()
 
-    return jsonify(UsuarioOut.from_model(usuario).model_dump(mode="json")), 201
+    # Se dice si hay un respaldo pendiente de confirmar, para que la pantalla
+    # pueda mandar a la persona a su buzón. Sin esto pediría el respaldo, no
+    # pasaría nada visible y creería que ya lo tiene puesto — que es justo el
+    # estado engañoso que se quiere evitar: sin confirmar no cuenta para nada.
+    cuerpo = UsuarioOut.from_model(usuario).model_dump(mode="json")
+    # Lo que de verdad se envió, no lo que se pidió: si el correo no salió,
+    # mandar a la persona a mirar un buzón vacío es peor que no decirle nada.
+    cuerpo["respaldo_pendiente"] = getattr(usuario, "respaldo_enviado", False)
+    return jsonify(cuerpo), 201
 
 
 @bp.post("/login")
@@ -225,6 +238,84 @@ def confirmar_baja():
         logout_user()
 
     return jsonify({"resultado": "ok", **resumen}), 200
+
+
+@bp.post("/confirmar-respaldo")
+@limiter.limit("10 per hour")
+def confirmar_respaldo():
+    """Aplica el correo de respaldo que viene firmado en el enlace.
+
+    **Sin ``@login_required``**, igual que la confirmación de la baja: el
+    enlace llega a un buzón y se abre donde ese buzón esté abierto. Y cuando es
+    un cambio, ese buzón es el del respaldo *anterior*, que puede no estar en
+    el mismo dispositivo ni ser de la misma persona que inició sesión.
+
+    La dirección no se acepta desde el cuerpo: viaja dentro del token firmado.
+    Si se pudiera mandar aparte, quien interceptara un enlace podría apuntarlo
+    a un buzón suyo, que es exactamente lo que esta regla quiere impedir.
+    """
+    data = ConfirmarRespaldoIn.model_validate(request.get_json(silent=True) or {})
+    try:
+        usuario = confirmar_respaldo_servicio(data.token)
+    except TokenInvalido:
+        return (
+            jsonify(
+                {
+                    "error": "token_invalido",
+                    "mensaje": "El enlace no es válido o ha caducado. Pide uno nuevo desde tu perfil.",
+                }
+            ),
+            400,
+        )
+
+    # Se devuelve enmascarado aunque quien confirma sea el dueño del buzón: la
+    # respuesta puede acabar en un dispositivo prestado, y no aporta nada
+    # escribir la dirección entera en una pantalla que ya la conoce.
+    from ..services.respaldo import enmascarar
+
+    return jsonify({"resultado": "ok", "correo": enmascarar(usuario.correo_respaldo)}), 200
+
+
+@bp.post("/aprobar-reclamacion")
+@limiter.limit("10 per hour")
+def aprobar_reclamacion_endpoint():
+    """La persona anterior autoriza que se entregue su contenido.
+
+    **Sin ``@login_required``, y aquí el motivo es más fuerte que en la baja.**
+    Quien abre este enlace se dio de baja: no tiene sesión que iniciar. Pedirla
+    haría el enlace inservible justo para su único destinatario.
+
+    Tampoco hace falta: el token va firmado con su propio propósito, nombra a
+    la cuenta, caduca, y su huella incluye la contraseña de esa cuenta, así que
+    deja de valer en cuanto la reclamación se aplica.
+    """
+    data = AprobarReclamacionIn.model_validate(request.get_json(silent=True) or {})
+    try:
+        resumen = aprobar_reclamacion(data.token)
+    except TokenInvalido:
+        return (
+            jsonify(
+                {
+                    "error": "token_invalido",
+                    "mensaje": (
+                        "El enlace no es válido, ha caducado o ya se usó. Si "
+                        "sigue habiendo una solicitud pendiente, escribe a la "
+                        "administración de AWEBO."
+                    ),
+                }
+            ),
+            400,
+        )
+    except ReclamacionError as exc:
+        # Distinto del token inválido a propósito: aquí el enlace era bueno,
+        # pero ya no queda nada que autorizar —normalmente porque un
+        # administrador resolvió antes la solicitud—. Quien lo abre es la
+        # persona legítima y merece que se le diga eso y no «enlace inválido».
+        return jsonify({"error": exc.code, "mensaje": exc.message}), 409
+
+    # Se devuelve cuánto se ha entregado, no a quién: quien aprueba ya no usa
+    # AWEBO y no tiene por qué saber con quién comparte ahora la dirección.
+    return jsonify({"resultado": "ok", "situaciones": resumen["situaciones"]}), 200
 
 
 @bp.post("/logout")
