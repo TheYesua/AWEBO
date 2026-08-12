@@ -331,6 +331,58 @@ def actualizar(
     return sa
 
 
+def reasignar_curriculo(
+    sa: SituacionAprendizaje, *, materia: str, curso: str, motivo: str
+) -> SituacionAprendizaje:
+    """Cambia la materia y el curso de una SdA, guardando antes una versión.
+
+    PARA QUÉ EXISTE
+    ---------------
+    Hay SdA creadas en la época del TFG, antes de que el formulario validara
+    que la pareja (materia, curso) existiera. Quedaron ancladas a combinaciones
+    imposibles: `Matemáticas · 4º ESO` —en 4º hay A y B—,
+    `Tecnología y Digitalización · 4º ESO` —solo se imparte en 2º y 3º— y
+    `Lengua Castellana y Literatura`, que en el catálogo se llama `Lengua`.
+
+    POR QUÉ NO ES UN `UPDATE` Y YA
+    -------------------------------
+    Porque **guarda una versión con el estado anterior**. Son documentos de
+    trabajo de alguien, no filas de prueba: si la reasignación resulta
+    equivocada, hay a dónde volver. Es la misma red que usa `actualizar`.
+
+    No es lo mismo que `actualizar`: aquella comprueba permisos de usuario y
+    esta se llama desde la consola, donde no hay sesión. Se mantienen
+    separadas en vez de añadirle un parámetro «sáltate el permiso», que es
+    justo la clase de puerta trasera que acaba usándose desde un endpoint.
+
+    LO QUE NO HACE
+    --------------
+    No toca el contenido. Los códigos del JSONB siguen siendo los del currículo
+    equivocado, así que hasta regenerarla la SdA sigue citando criterios que no
+    le corresponden. Quien llama decide si regenera; el comando de la consola
+    avisa de ello.
+    """
+    version = Version(
+        id_situacion=sa.id_situacion,
+        numero_version=_proximo_numero_version(sa.id_situacion),
+        contenido=_snapshot(sa),
+        descripcion_cambio=motivo,
+    )
+    db.session.add(version)
+
+    sa.materia = materia
+    sa.curso = curso
+    db.session.commit()
+
+    log.info(
+        "curriculo_reasignado",
+        id_situacion=sa.id_situacion,
+        materia=materia,
+        curso=curso,
+    )
+    return sa
+
+
 def eliminar(id_situacion: int, usuario: Usuario) -> None:
     """Elimina la situación, sus versiones por cascade y su audio.
 

@@ -1,112 +1,125 @@
-# Commits pendientes
+# Pendiente de commitear — tanda del 12/08
 
-Fichero temporal de trabajo: **bórralo después de commitear**. Está en la raíz,
-que es el repositorio público, así que no debe quedarse.
-
----
-
-## Repositorio público (raíz)
-
-Todo lo de `api/`, más `CLAUDE.md` (solo el puntero, sin reglas).
-
-```
-Tarea 13, deuda saldada y correos en el idioma de la interfaz
-
-Tarea 13 — correo de respaldo y reclamación verificada
-* Correo de respaldo opcional: se ofrece al registrarse y se gestiona
-  desde el perfil. Cambiarlo exige confirmar desde el respaldo ANTERIOR,
-  que es lo que impide que quien entre en una cuenta pueda apropiársela.
-* La reclamación de contenido la autoriza el respaldo de la cuenta
-  original, no la dirección en disputa. Sin respaldo decide el
-  administrador, como hasta ahora.
-* Restablecer la contraseña acepta también el correo de respaldo, sin
-  romper la indistinguibilidad de la respuesta.
-* La dirección se muestra enmascarada: es lo único que tener la sesión
-  no da, así que enseñarla entera le daría a quien robe una sesión el
-  siguiente objetivo.
-* Migración d1a7f36c8b95.
-
-Correos en el idioma de la interfaz
-* Los cuatro correos salen en el idioma que tenga la página al pedirlos,
-  asunto incluido. No hacía falta guardar el idioma por cuenta: el texto
-  se compone en la petición y solo se entrega desde el worker.
-
-Enlaces curriculares
-* Las SdA se enlazan con las filas reales del catálogo al guardarse,
-  filtrando por materia Y curso. Los códigos no son únicos.
-* Los códigos que la IA se inventa quedan registrados aparte de las SdA
-  cuya pareja (materia, curso) no existe en el catálogo: son causas
-  distintas y confundirlas falsea la medida.
-* Se retira la relación situacion_ods: ningún prompt pide ODS, así que
-  era una consulta garantizada a vacío en cada carga. Tabla y catálogo
-  se conservan.
-* Nuevo comando: flask curriculo enlazar [--simular].
-
-Acceso del administrador
-* Puede leer cualquier contenido, y ahora va acompañado de las tres
-  piezas con las que se aceptó: se dice en Ayuda, se advierte en el
-  registro antes del botón, y cada acceso a contenido ajeno deja traza.
-
-Traducciones
-* Terminología curricular contrastada contra los decretos autonómicos en
-  su propia lengua. Corregido en euskera: ikaskuntza-egoerak (con guion,
-  77/2023 Dekretua) y aniztasunari erantzutea.
-* 528 cadenas en es/ca/gl/eu, sin vacías ni fuzzy.
-
-756 tests en verde.
-```
+Fichero temporal: **bórralo después de commitear**. Está en la raíz, que es el
+repositorio público.
 
 ---
 
-## Repositorio privado (`docs/`)
+## 1. La copia de seguridad
+
+Ya has regenerado las 19, así que esta copia es la que merece la pena guardar:
+es la primera con todas las SdA ancladas a un currículo correcto.
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\respaldar.ps1
+```
+
+Vuelca, **restaura la copia en una base de usar y tirar y compara los recuentos
+de todas las tablas**. Si no cuadran, avisa en ese momento. Deja el fichero en
+`..\AWEBO_backups`, fuera del árbol de git por construcción: lleva correos,
+centros y hashes de contraseña. Conserva las 7 últimas.
+
+Solo el volcado, sin verificar: `.\respaldar.ps1 -SinVerificar`. Hoy no lo
+recomiendo.
+
+---
+
+## 2. Comprobación final
+
+```powershell
+docker compose exec api flask curriculo estado
+docker compose exec api flask curriculo enlazar --simular
+powershell -ExecutionPolicy Bypass -File .\verificar.ps1
+```
+
+Esperado: `RESUMEN generando=0 error=0 total=39`, ninguna «situación sin
+currículo», y **825 tests en verde** (819 más los 6 de `rate_limit`).
+
+El `enlazar --simular` de ahora sí da el dato que perseguíamos desde el
+principio: **cuántos códigos se inventa GPT** con el currículo correcto
+delante. Pásamelo cuando lo tengas.
+
+---
+
+## 3. Los commits
+
+### Repositorio público (raíz)
 
 ```
-Diario y hoja de ruta de la tarea 13, la deuda y dos reglas nuevas
+Reasignación curricular, diagnóstico de proveedor y estado de las tareas
 
-* Tarea 13 cerrada en la hoja de ruta, con las tres dudas que quedaban
-  abiertas resueltas y anotadas.
-* Deuda: no queda ninguna entrada sin dueño. Se retira «la reclamación no
-  verifica la identidad» de las aceptadas —la tarea 13 la resolvió— y se
-  cierra la de las cuatro tablas de enlace.
-* Se corrige la contradicción entre «gestión sin lectura» y la decisión
-  del 10/08.
-* Regla 11: «importa» no es «funciona». Un comando de CLI comprobado solo
-  con `import` salió roto en la primera ejecución real.
-* Regla 12: un síntoma observado no es una causa demostrada. El comando
-  anunció 17 SdA como códigos inventados por el modelo; ninguna lo era.
-* Estado actual del código medido, no estimado.
+Reasignar las SdA ancladas a parejas curriculares inexistentes
+* Las creadas antes de que el formulario validara la pareja quedaron con
+  combinaciones que no existen. `flask curriculo reasignar` corrige las
+  dos que tienen destino único y comprobable contra la Orden EFP/754
+  —«Lengua Castellana y Literatura» a «Lengua», y «Tecnología y
+  Digitalización · 4º ESO» a «Tecnología · 4º ESO»— y pregunta una por
+  una las de «Matemáticas · 4º ESO»: A y B no son niveles de la misma
+  asignatura sino itinerarios con currículos distintos.
+* Guarda una Version con el estado anterior antes de tocar nada.
+* --regenerar encola la regeneración; sin él avisa de que el contenido
+  sigue citando el currículo anterior.
+
+Seguimiento de un lote de generaciones
+* `flask curriculo estado` cuenta por estado contra la base de datos, y
+  `flask curriculo regenerar` relanza las que quedaron en error.
+* `error_generacion` significa DOS cosas: la tarea marca ese estado y
+  luego relanza para que autoretry_for la reintente. Mientras queden
+  generaciones en curso el número es provisional, y regenerar entonces
+  pondría dos generaciones sobre la misma SdA. El comando se planta.
+* `estado` termina con una línea canónica «RESUMEN generando=N error=N
+  total=N» para que los scripts no dependan de la prosa: esperar.ps1
+  buscaba una frase literal y dejó de encontrarla al reescribirla.
+
+Diagnóstico del proveedor de IA
+* El proveedor sale de las preferencias del propietario de la SdA, y
+  catalogo.validar cae al del sistema si el elegido no está disponible.
+  Las dos vías son silenciosas y no había dónde mirarlas.
+* `flask ia diagnostico` enseña, por cada SdA, su dueño, la preferencia
+  guardada y el proveedor efectivo, marcando las que se ignoran.
+* `flask usuarios proveedor` la cambia desde consola, que es lo único que
+  sirve para cuentas heredadas cuya contraseña nadie recuerda. Valida
+  contra el catálogo y avisa en vez de guardar algo que luego se ignora.
+
+819 tests en verde.
+```
+
+### Repositorio privado (`docs/`)
+
+```
+Diario y hoja de ruta: reasignación curricular y las 19 regeneraciones
+
+* Entrada del 12/08 con las tres parejas y por qué solo dos se deciden
+  por regla.
+* Entrada del desenlace: las dos causas del fallo de las 19 (cuota
+  gratuita de Gemini y que esas SdA son de cuentas de prueba), y el
+  estado `error_generacion` que significaba dos cosas — lo desmintieron
+  los datos, no el código.
+* Se marca como histórica la tabla de la tarea 11, que titulaba su
+  columna «Estado hoy» y describía agosto: tres de sus cuatro filas ya
+  estaban resueltas. Es el fallo que Ayuda tuvo dos veces.
+* La deuda de traducciones se ajusta: la terminología curricular sí está
+  contrastada desde el 11/08; las ~500 cadenas de interfaz no.
+* Decisión cerrada: no se contratan traductores por ahora.
 ```
 
 ---
 
-## Antes de commitear
+## 4. Lo que queda vivo, y no es mucho
 
-* `powershell -ExecutionPolicy Bypass -File .\verificar.ps1` → 747 en verde.
-* Los `.mo` van al commit: Flask-Babel lee `.mo`, no `.po`, y un catálogo sin
-  recompilar deja la interfaz en castellano sin dar ningún error.
-* `docs/` está en el `.gitignore` de la raíz, así que sus cambios solo entran
-  en el repositorio privado. Comprobado.
-* `scratch/dump.sql` sigue ignorado: lleva correos y hashes.
+**Una deuda real que ha quedado a la vista:** nadie verifica el correo
+**principal** al registrarse. La asimetría canta ahora que el de respaldo sí se
+verifica con enlace antes de contar para nada. La maquinaria de tokens ya
+existe desde la tarea 11; lo que falta es decidir qué pasa mientras tanto
+(¿puede usarse la cuenta sin verificar?, ¿cuánto tiempo?), y eso cambia lo que
+la aplicación le exige a un docente el primer día. Es decisión tuya.
 
----
+**Las ~500 cadenas de interfaz en ca/gl/eu**, que esperan a que puedas
+enseñarle la plataforma a hablantes de esas lenguas. La terminología curricular
+sí está contrastada contra los tres decretos y protegida por un test.
 
-## Lo que queda pendiente de TU decisión
+**Y las tareas 9b** (Bachillerato y FP) **y 9c** (Andalucía, Cataluña, Galicia
+y País Vasco), que son lo siguiente de verdad.
 
-**17 de las 39 SdA están ancladas a parejas (materia, curso) que no existen en
-el catálogo.** Son anteriores a que el formulario validara la pareja:
-
-| Pareja | Por qué no existe | SdA |
-|---|---|---|
-| `Matemáticas · 4º ESO` | En 4º hay Matemáticas A y Matemáticas B | 13, 33, 34, 41, 42, 49, 50 |
-| `Tecnología y Digitalización · 4º ESO` | Solo se imparte en 2º y 3º | 30, 37, 38, 46 |
-| `Lengua Castellana y Literatura · 4º ESO` | En el catálogo la materia se llama `Lengua` | 31, 32, 39, 40, 47, 48 |
-
-Ninguna tiene códigos inventados: con la pareja sin currículo, ningún código
-puede casar. Las opciones son renombrar la materia, repartir las de Matemáticas
-entre A y B, o dejarlas como están. Cambia lo que la aplicación le afirma a un
-docente, así que lo decides tú.
-
-Lo de `Lengua` lo comprobé antes de escribirlo: no es un recorte del extractor,
-es un mapeo deliberado a la etiqueta histórica, documentado en
-`_MATERIAS_ORDEN_754`. El catálogo está bien; lo que está desfasado es el
-nombre guardado en esas seis SdA.
+Ninguna otra deuda sin dueño: lo comprobé recorriendo el código en busca de
+TODO/FIXME y repasando las tres tablas de deuda de la hoja de ruta.
