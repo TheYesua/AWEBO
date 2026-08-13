@@ -78,7 +78,7 @@ def _register(client, correo):
         json={
             "correo": correo,
             "contrasena": "ContraSegura1!",
-            "nombre": "Docente",
+            "nombre": "Docente", "comunidad_autonoma": "Ceuta",
             "centro_educativo": "IES Test",
         },
     )

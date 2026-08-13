@@ -118,10 +118,30 @@ window.rellenarSelect = function (sel, opciones, opts = {}) {
     cursoActual = '',
     materiaActual = '',
   }) {
-    // En la pantalla de edición los <select> llegan vacíos y los valores
-    // vienen de la SA cargada por fetch, así que se pasan explícitamente.
-    const cursoInicial = selCurso.value || cursoActual;
-    const materiaInicial = selMateria.value || materiaActual;
+    /* SEGUNDA LLAMADA SOBRE LOS MISMOS <select>
+       ------------------------------------------
+       Al cambiar de provincia se vuelve a llamar aquí con la cobertura de la
+       comunidad nueva, y eso obliga a deshacer dos cosas de la anterior.
+
+       1) Los oyentes. `addEventListener` no sustituye: acumula. El de la
+          llamada vieja sigue vivo y **captura la cobertura vieja** en su
+          cierre, así que tocar el curso repintaba las materias con el catálogo
+          de la provincia anterior. No da ningún error: ofrece materias de otra
+          comunidad como si fueran las de esta.
+
+       2) El valor que ya tuvieran. El `||` de abajo existe porque en la
+          pantalla de edición los <select> llegan vacíos y lo que hay que
+          poner viene del fetch. Pero en la segunda llamada lo que tienen es lo
+          que pintamos nosotros la vez anterior, no lo que dijo el servidor:
+          respetarlo dejaría elegida una materia de la comunidad de antes. */
+    const rehecho = Boolean(selCurso._enlaceCobertura);
+    if (rehecho) {
+      selCurso.removeEventListener('change', selCurso._enlaceCobertura);
+      selMateria.removeEventListener('change', selMateria._enlaceCobertura);
+    }
+
+    const cursoInicial = rehecho ? cursoActual : (selCurso.value || cursoActual);
+    const materiaInicial = rehecho ? materiaActual : (selMateria.value || materiaActual);
 
     const avisar = (texto) => {
       if (!aviso) return;
@@ -167,6 +187,9 @@ window.rellenarSelect = function (sel, opciones, opts = {}) {
 
     selCurso.addEventListener('change', alCambiarCurso);
     selMateria.addEventListener('change', alCambiarMateria);
+    // Guardados para poder quitarlos si se vuelve a enlazar (ver arriba).
+    selCurso._enlaceCobertura = alCambiarCurso;
+    selMateria._enlaceCobertura = alCambiarMateria;
 
     // Pintado inicial: cada lista acotada por lo que ya tenga el otro campo.
     repintar(selCurso, cursosDe(cobertura, materiaInicial), cursoInicial, 'Selecciona un curso…');
@@ -182,10 +205,90 @@ window.rellenarSelect = function (sel, opciones, opts = {}) {
     }
   }
 
-  function cargar() {
-    return fetch('/api/curriculo/cobertura')
+  function cargar(provincia) {
+    /* La cobertura depende de la comunidad, y la comunidad de la provincia
+       elegida en el formulario — que puede no ser la del perfil. Sin este
+       parámetro el desplegable ofrecería las materias del perfil para una SdA
+       que se va a generar contra otro currículo. */
+    const url = provincia
+      ? `/api/curriculo/cobertura?provincia=${encodeURIComponent(provincia)}`
+      : '/api/curriculo/cobertura';
+    return fetch(url)
       .then((r) => (r.ok ? r.json() : []))
       .catch(() => []);
+  }
+
+  /* -------------------------------------------------------------------------
+     Provincias: el desplegable agrupado por comunidad
+     -------------------------------------------------------------------------
+     Se pide al servidor en vez de escribirlo aquí porque la marca de «tiene
+     currículo cargado» sale de la base de datos. Una lista fija en este
+     fichero se desincronizaría el día que se cargue una comunidad nueva, y
+     seguiría avisando de que no hay currículo cuando ya lo hay.
+     ---------------------------------------------------------------------- */
+
+  function cargarProvincias() {
+    return fetch('/api/curriculo/provincias')
+      .then((r) => (r.ok ? r.json() : []))
+      .catch(() => []);
+  }
+
+  /**
+   * Rellena un <select> con <optgroup> por comunidad.
+   *
+   * Las provincias sin currículo cargado se marcan en la etiqueta en vez de
+   * ocultarse: un docente de Aragón existe aunque AWEBO no tenga su decreto, y
+   * esconderle su provincia no la hace desaparecer — le deja sin entender qué
+   * se espera que elija.
+   */
+  function pintarProvincias(sel, grupos, seleccionada, sinCurriculoTexto) {
+    if (!sel) return;
+    const previo = seleccionada || sel.value;
+    // Se conserva el primer <option> si es el placeholder («Elige…»).
+    const placeholder = sel.querySelector('option[value=""]');
+    sel.innerHTML = '';
+    if (placeholder) sel.appendChild(placeholder);
+
+    grupos.forEach((grupo) => {
+      const og = document.createElement('optgroup');
+      og.label = grupo.comunidad;
+      grupo.provincias.forEach((p) => {
+        const op = document.createElement('option');
+        op.value = p.codigo;
+        op.textContent = p.tiene_curriculo
+          ? p.nombre
+          : `${p.nombre} ${sinCurriculoTexto || '(sin currículo)'}`;
+        if (!p.tiene_curriculo) op.dataset.sinCurriculo = '1';
+        og.appendChild(op);
+      });
+      sel.appendChild(og);
+    });
+    if (previo) sel.value = previo;
+  }
+
+  /**
+   * Ata la provincia al curso y a la materia.
+   *
+   * Curso y materia llegan `disabled` desde la plantilla y solo se habilitan
+   * cuando hay provincia. El aviso que explica por qué está bloqueado se
+   * oculta al desbloquear: dejarlo puesto convertiría una instrucción útil en
+   * ruido permanente.
+   */
+  function enlazarProvincia({ selProvincia, selCurso, selMateria, aviso, alCambiar }) {
+    if (!selProvincia) return;
+
+    const aplicar = () => {
+      const hay = Boolean(selProvincia.value);
+      [selCurso, selMateria].forEach((s) => {
+        if (!s) return;
+        s.disabled = !hay;
+      });
+      if (aviso) aviso.hidden = hay;
+      if (hay && typeof alCambiar === 'function') alCambiar(selProvincia.value);
+    };
+
+    selProvincia.addEventListener('change', aplicar);
+    aplicar();
   }
 
   /* ---------------------------------------------------------------------
@@ -231,5 +334,8 @@ window.rellenarSelect = function (sel, opciones, opts = {}) {
     cargar,
     explicarMateria,
     enlazarExplicacion,
+    cargarProvincias,
+    pintarProvincias,
+    enlazarProvincia,
   };
 })(window);

@@ -62,6 +62,14 @@ class Usuario(db.Model, UserMixin):
     centro_educativo: Mapped[str | None] = mapped_column(String(200), nullable=True)
     especialidad: Mapped[str | None] = mapped_column(String(100), nullable=True)
     comunidad_autonoma: Mapped[str | None] = mapped_column(String(50), nullable=True)
+    #: Provincia donde da clase. **Es la que el docente elige**; la comunidad
+    #: —que es la que decide el currículo— se deriva de ella con
+    #: `curriculo.provincias.comunidad_de`.
+    #:
+    #: Conviven las dos a propósito y sin duplicar la decisión: `provincia` es
+    #: lo que se pregunta y `comunidad_autonoma` lo que se calcula al guardar.
+    #: Nunca al revés. Ver `services/geografia.py`.
+    provincia: Mapped[str | None] = mapped_column(String(30), nullable=True, index=True)
 
     # Preferencia de IA. NULL en ambos = «usar el del sistema», que es el
     # valor de partida de toda cuenta y el comportamiento histórico.

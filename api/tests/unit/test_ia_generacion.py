@@ -29,7 +29,9 @@ def sa_con_curriculo(db):
     db.session.flush()
 
     ce = Competencia(
-        codigo="CE1",
+            comunidad="ceuta",
+            idioma="es",
+            codigo="CE1",
         tipo=Competencia.ESPECIFICA,
         materia="Matemáticas",
         cursos_aplicables=["2º ESO"],
@@ -42,14 +44,18 @@ def sa_con_curriculo(db):
     db.session.add_all(
         [
             CriterioEvaluacion(
-                codigo="1.1",
+            comunidad="ceuta",
+            idioma="es",
+            codigo="1.1",
                 id_competencia=ce.id_competencia,
                 materia="Matemáticas",
                 cursos_aplicables=["2º ESO"],
                 descripcion="Resuelve problemas numéricos en contexto real.",
             ),
             SaberBasico(
-                codigo="A.1",
+            comunidad="ceuta",
+            idioma="es",
+            codigo="A.1",
                 bloque="Sentido numérico",
                 materia="Matemáticas",
                 cursos_aplicables=["2º ESO"],
@@ -63,6 +69,10 @@ def sa_con_curriculo(db):
         titulo="El mercado local",
         curso="2º ESO",
         materia="Matemáticas",
+        # El currículo se filtra por comunidad desde la fase 1 de la tarea 9c:
+        # sin ella el contexto sale vacío y este test comprobaría el filtro
+        # equivocado.
+        comunidad_autonoma="Ceuta",
         num_sesiones=4,
         duracion_sesion_minutos=55,
         metodologia="Aprendizaje Basado en Proyectos",

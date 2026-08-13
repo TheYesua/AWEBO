@@ -60,7 +60,7 @@ def _registrarse_reclamando(client):
     return client.post("/auth/register", json={
         "correo": INSTITUCIONAL,
         "contrasena": "ContrasenaJuan9",
-        "nombre": "Juan",
+        "nombre": "Juan", "comunidad_autonoma": "Ceuta",
         "reclamar_contenido": True,
     })
 

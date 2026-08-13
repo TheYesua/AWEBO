@@ -164,6 +164,9 @@ class SituacionAprendizaje(db.Model):
     # Identificación
     titulo: Mapped[str] = mapped_column(String(255), nullable=False)
     comunidad_autonoma: Mapped[str | None] = mapped_column(String(50), nullable=True)
+    #: Provincia de esta SdA. Se hereda del perfil al crearla y se puede
+    #: cambiar por situación: un docente puede preparar material para otra.
+    provincia: Mapped[str | None] = mapped_column(String(30), nullable=True)
     curso: Mapped[str] = mapped_column(String(20), nullable=False, index=True)
     materia: Mapped[str] = mapped_column(String(50), nullable=False, index=True)
 

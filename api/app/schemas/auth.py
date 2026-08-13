@@ -15,6 +15,7 @@ class RegisterIn(BaseModel):
     centro_educativo: str | None = Field(default=None, max_length=200)
     especialidad: str | None = Field(default=None, max_length=100)
     comunidad_autonoma: str | None = Field(default=None, max_length=50)
+    provincia: str | None = Field(default=None, max_length=30)
 
     # Confirmación de que el contenido de la cuenta anterior con este correo es
     # de quien se registra. Por defecto en falso: el primer intento siempre

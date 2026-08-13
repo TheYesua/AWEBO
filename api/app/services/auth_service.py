@@ -64,6 +64,7 @@ def registrar_usuario(
     centro_educativo: str | None = None,
     especialidad: str | None = None,
     comunidad_autonoma: str | None = None,
+    provincia: str | None = None,
     rol_nombre: str = Rol.DOCENTE,
     reclamar_contenido: bool = False,
     correo_respaldo: str | None = None,
@@ -137,6 +138,14 @@ def registrar_usuario(
         comunidad_autonoma=comunidad_autonoma,
     )
     usuario.set_password(contrasena)
+
+    # La provincia manda sobre la comunidad: si se da, se recalcula. Es lo que
+    # permite que el formulario mande solo la provincia y no tenga que saber a
+    # qué comunidad pertenece.
+    if provincia:
+        from . import geografia
+
+        geografia.fijar_provincia(usuario, provincia)
 
     db.session.add(usuario)
     db.session.commit()

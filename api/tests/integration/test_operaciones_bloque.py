@@ -60,7 +60,7 @@ def sa_con_descripcion(client, db):
         json={
             "correo": "ops@test.com",
             "contrasena": "ContraSegura1!",
-            "nombre": "Docente Operaciones",
+            "nombre": "Docente Operaciones", "comunidad_autonoma": "Ceuta",
         },
     )
     assert alta.status_code in (200, 201), alta.get_data(as_text=True)

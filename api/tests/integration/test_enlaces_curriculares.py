@@ -30,15 +30,27 @@ def catalogo(db):
     from app.models import Competencia, CriterioEvaluacion, SaberBasico
 
     filas = [
-        Competencia(codigo="CE1", tipo=Competencia.ESPECIFICA, materia=MATERIA,
+        Competencia(
+            comunidad="ceuta",
+            idioma="es",
+            codigo="CE1", tipo=Competencia.ESPECIFICA, materia=MATERIA,
                     cursos_aplicables=[CURSO], descriptores=[], descripcion="Resolver"),
-        Competencia(codigo="CE2", tipo=Competencia.ESPECIFICA, materia=MATERIA,
+        Competencia(
+            comunidad="ceuta",
+            idioma="es",
+            codigo="CE2", tipo=Competencia.ESPECIFICA, materia=MATERIA,
                     cursos_aplicables=[CURSO], descriptores=[], descripcion="Modelizar"),
         # Clave: sin materia. Vale para cualquiera y no debe quedar excluida.
-        Competencia(codigo="CCL", tipo=Competencia.PRINCIPAL, materia=None,
+        Competencia(
+            comunidad="ceuta",
+            idioma="es",
+            codigo="CCL", tipo=Competencia.PRINCIPAL, materia=None,
                     cursos_aplicables=[CURSO], descriptores=[], descripcion="Lingüística"),
         # LA TRAMPA: mismo código, otra materia.
-        Competencia(codigo="CE1", tipo=Competencia.ESPECIFICA, materia="Biología y Geología",
+        Competencia(
+            comunidad="ceuta",
+            idioma="es",
+            codigo="CE1", tipo=Competencia.ESPECIFICA, materia="Biología y Geología",
                     cursos_aplicables=[CURSO], descriptores=[], descripcion="Otra cosa"),
     ]
     db.session.add_all(filas)
@@ -46,12 +58,21 @@ def catalogo(db):
 
     ce1 = next(f for f in filas if f.codigo == "CE1" and f.materia == MATERIA)
     db.session.add_all([
-        CriterioEvaluacion(codigo="1.1", id_competencia=ce1.id_competencia,
+        CriterioEvaluacion(
+            comunidad="ceuta",
+            idioma="es",
+            codigo="1.1", id_competencia=ce1.id_competencia,
                            materia=MATERIA, cursos_aplicables=[CURSO], descripcion="x"),
         # Mismo código, otro curso: tampoco debe colarse.
-        CriterioEvaluacion(codigo="1.1", id_competencia=ce1.id_competencia,
+        CriterioEvaluacion(
+            comunidad="ceuta",
+            idioma="es",
+            codigo="1.1", id_competencia=ce1.id_competencia,
                            materia=MATERIA, cursos_aplicables=["1º ESO"], descripcion="y"),
-        SaberBasico(codigo="A.3", bloque="Sentido numérico", materia=MATERIA,
+        SaberBasico(
+            comunidad="ceuta",
+            idioma="es",
+            codigo="A.3", bloque="Sentido numérico", materia=MATERIA,
                     cursos_aplicables=[CURSO], descripcion="z"),
     ])
     db.session.commit()
@@ -69,6 +90,7 @@ def sda(db, catalogo):
     db.session.commit()
 
     s = SituacionAprendizaje(
+        comunidad_autonoma="Ceuta",
         titulo="El agua", materia=MATERIA, curso=CURSO, id_usuario=u.id_usuario,
         contenido={"conexion_curricular": {
             "competencias": [{"codigo": "CE1"}, {"codigo": "CCL"}],

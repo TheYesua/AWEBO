@@ -366,7 +366,7 @@ class TestReclamacion:
     DATOS = {
         "correo": "baja@test.com",
         "contrasena": "NuevaClave1",
-        "nombre": "Quien llega",
+        "nombre": "Quien llega", "comunidad_autonoma": "Ceuta",
     }
 
     @pytest.fixture()
@@ -522,7 +522,7 @@ class TestReclamacion:
             json={
                 "correo": "exjefe@test.com",
                 "contrasena": "Cualquiera1",
-                "nombre": "Persona nueva",
+                "nombre": "Persona nueva", "comunidad_autonoma": "Ceuta",
                 "reclamar_contenido": True,
             },
         )
@@ -748,7 +748,7 @@ class TestPaginacion:
             _crear(db, f"zz{i:02d}@test.com")  # ordenan después alfabéticamente
 
         pendiente = _crear(db, "zzz-ultimo@test.com")
-        pendiente.reclamacion_pendiente = {"nombre": "Quien reclama", "rol": "docente"}
+        pendiente.reclamacion_pendiente = {"nombre": "Quien reclama", "comunidad_autonoma": "Ceuta", "rol": "docente"}
         pendiente.marcar_eliminado()
         db.session.commit()
 

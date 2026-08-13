@@ -152,7 +152,9 @@ def test_situacion_se_relaciona_con_el_curriculo(db):
     user = _crear_docente(db, correo="rel@example.com")
 
     competencia = Competencia(
-        codigo="STEM1",
+            comunidad="ceuta",
+            idioma="es",
+            codigo="STEM1",
         tipo=Competencia.ESPECIFICA,
         materia="Tecnología",
         cursos_aplicables=["1º ESO"],
@@ -163,14 +165,18 @@ def test_situacion_se_relaciona_con_el_curriculo(db):
     db.session.flush()
 
     criterio = CriterioEvaluacion(
-        codigo="1.1",
+            comunidad="ceuta",
+            idioma="es",
+            codigo="1.1",
         id_competencia=competencia.id_competencia,
         cursos_aplicables=["1º ESO"],
         materia="Tecnología",
         descripcion="Identifica problemas y propone soluciones.",
     )
     saber = SaberBasico(
-        codigo="A.1",
+            comunidad="ceuta",
+            idioma="es",
+            codigo="A.1",
         bloque="Resolución de problemas",
         materia="Tecnología",
         cursos_aplicables=["1º ESO"],
@@ -289,7 +295,7 @@ class TestIdiomasDeUnaSituacion:
             json={
                 "correo": "cat@test.com",
                 "contrasena": "Segura1234",
-                "nombre": "Docent",
+                "nombre": "Docent", "comunidad_autonoma": "Ceuta",
             },
         )
         res = client.post(

@@ -27,7 +27,15 @@ def login_page():
 
 @bp.get("/register")
 def register_page():
-    return render_template("register.html")
+    """El catálogo de provincias va incrustado, no por fetch.
+
+    `/api/curriculo/provincias` exige sesión —para no servir de fuente de
+    scraping anónimo— y aquí, por definición, todavía no la hay. Como son 52
+    entradas fijas, se pasan a la plantilla y se acabó.
+    """
+    from ..curriculo import provincias
+
+    return render_template("register.html", grupos_provincias=provincias.agrupadas())
 
 
 @bp.get("/perfil")

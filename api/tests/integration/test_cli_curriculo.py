@@ -36,7 +36,9 @@ def sda_con_codigos(db):
     from app.models import Competencia, Rol, SituacionAprendizaje, Usuario
 
     db.session.add(Competencia(
-        codigo="CE1", tipo=Competencia.ESPECIFICA, materia=MATERIA,
+            comunidad="ceuta",
+            idioma="es",
+            codigo="CE1", tipo=Competencia.ESPECIFICA, materia=MATERIA,
         cursos_aplicables=[CURSO], descriptores=[], descripcion="Resolver",
     ))
     rol = db.session.query(Rol).filter_by(nombre="docente").first()
@@ -46,6 +48,7 @@ def sda_con_codigos(db):
     db.session.commit()
 
     s = SituacionAprendizaje(
+        comunidad_autonoma="Ceuta",
         titulo="Del CLI", materia=MATERIA, curso=CURSO, id_usuario=u.id_usuario,
         contenido={"conexion_curricular": {
             "competencias": [{"codigo": "CE1"}, {"codigo": "INVENTADO"}],
@@ -172,6 +175,8 @@ def catalogo_real(db):
 
     for materia in ("Lengua", "Tecnología", "Matemáticas A", "Matemáticas B"):
         db.session.add(Competencia(
+            comunidad="ceuta",
+            idioma="es",
             codigo="CE1", tipo=Competencia.ESPECIFICA, materia=materia,
             cursos_aplicables=["4º ESO"], descriptores=[], descripcion="x",
         ))
@@ -191,6 +196,7 @@ def _sda(db, materia, curso="4º ESO", titulo="Vieja del TFG"):
         db.session.commit()
 
     s = SituacionAprendizaje(
+        comunidad_autonoma="Ceuta",
         titulo=titulo, materia=materia, curso=curso, id_usuario=u.id_usuario,
         contenido={"conexion_curricular": {"competencias": [{"codigo": "CE1"}]}},
     )
@@ -632,6 +638,7 @@ class TestDiagnosticoDeProveedor:
         db.session.commit()
 
         s = SituacionAprendizaje(
+            comunidad_autonoma="Ceuta",
             titulo="X", materia="Lengua", curso="4º ESO", id_usuario=u.id_usuario,
             contenido={}, estado=SituacionAprendizaje.ERROR_GENERACION,
         )

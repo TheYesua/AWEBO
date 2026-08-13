@@ -8,6 +8,7 @@ from ..ai import catalogo
 from .. import i18n
 from ..extensions import db, limiter
 from ..schemas import PonerRespaldoIn, QuitarRespaldoIn, UsuarioOut, UsuarioUpdateIn
+from ..services import geografia
 from ..services import respaldo as svc_respaldo
 from ..services.respaldo import RespaldoError
 
@@ -51,8 +52,17 @@ def actualizar_perfil():
         valor = (cambios["idioma_interfaz"] or "").strip().lower()
         cambios["idioma_interfaz"] = valor if valor in i18n.IDIOMAS else None
 
+    # La provincia se escribe con el servicio, que fija también la comunidad
+    # derivada. Asignarlas por separado dejaría que un `PUT` con las dos
+    # incoherentes —Sevilla y «Cataluña»— se guardara tal cual.
+    provincia = cambios.pop("provincia", ...)
+    cambios.pop("comunidad_autonoma", None)   # se calcula, no se acepta suelta
+
     for atributo, valor in cambios.items():
         setattr(current_user, atributo, valor)
+
+    if provincia is not ...:
+        geografia.fijar_provincia(current_user, provincia)
 
     db.session.commit()
     return jsonify(UsuarioOut.from_model(current_user).model_dump(mode="json")), 200

@@ -43,6 +43,7 @@ import structlog
 from sqlalchemy import select
 
 from ..extensions import db
+from . import geografia
 from ..models import Competencia, CriterioEvaluacion, SaberBasico, SituacionAprendizaje
 
 
@@ -86,7 +87,9 @@ def _codigos(contenido: dict, clave: str) -> list[str]:
     return list(vistos)
 
 
-def _resolver(modelo, codigos: list[str], materia: str, curso: str) -> tuple[list, list[str]]:
+def _resolver(
+    modelo, codigos: list[str], materia: str, curso: str, comunidad: str | None
+) -> tuple[list, list[str]]:
     """Filas del catálogo que casan, y códigos que no casaron.
 
     Se filtra por materia **y** curso, no solo por código. Los códigos no son
@@ -101,10 +104,13 @@ def _resolver(modelo, codigos: list[str], materia: str, curso: str) -> tuple[lis
     de filas por materia; no compensa un operador de contención por ahorrar una
     comparación de listas.
     """
-    if not codigos:
+    if not codigos or not comunidad:
         return [], []
 
-    condicion = modelo.codigo.in_(codigos)
+    # La comunidad va lo primero: un código de Cataluña y uno de Ceuta pueden
+    # ser idénticos, y enlazar el de la otra comunidad es peor que no enlazar
+    # nada, porque el resultado parece correcto.
+    condicion = (modelo.comunidad == comunidad) & modelo.codigo.in_(codigos)
     if hasattr(modelo, "materia"):
         # `Competencia.materia` es NULL en las competencias clave, que valen
         # para cualquier materia. Excluirlas dejaría fuera precisamente las
@@ -120,7 +126,7 @@ def _resolver(modelo, codigos: list[str], materia: str, curso: str) -> tuple[lis
     return validas, [c for c in codigos if c not in encontrados]
 
 
-def hay_curriculo(materia: str, curso: str) -> bool:
+def hay_curriculo(materia: str, curso: str, comunidad: str | None = None) -> bool:
     """¿Existe currículo cargado para esta pareja?
 
     LA DISTINCIÓN QUE FALTABA, Y QUE COSTÓ UN DIAGNÓSTICO FALSO
@@ -145,8 +151,11 @@ def hay_curriculo(materia: str, curso: str) -> bool:
     Un diagnóstico confiado y equivocado es peor que no diagnosticar: manda a
     quien lo lee a buscar donde no está el problema.
     """
+    if comunidad is None:
+        return False
+
     for modelo in (Competencia, CriterioEvaluacion, SaberBasico):
-        condicion = modelo.materia == materia
+        condicion = (modelo.comunidad == comunidad) & (modelo.materia == materia)
         existe = db.session.scalars(select(modelo).where(condicion).limit(50)).all()
         if any(not f.cursos_aplicables or curso in f.cursos_aplicables for f in existe):
             return True
@@ -171,13 +180,14 @@ def sincronizar(situacion: SituacionAprendizaje, *, commit: bool = True) -> dict
         "sin_curriculo": False,
     }
     try:
+        comunidad = geografia.comunidad_de(situacion)
         resumen["sin_curriculo"] = not hay_curriculo(
-            situacion.materia, situacion.curso
+            situacion.materia, situacion.curso, comunidad
         )
         for clave, modelo, atributo in _MAPA:
             codigos = _codigos(situacion.contenido, clave)
             filas, huerfanos = _resolver(
-                modelo, codigos, situacion.materia, situacion.curso
+                modelo, codigos, situacion.materia, situacion.curso, comunidad
             )
             # Asignación completa y no `.append`: la sección se puede regenerar
             # o deshacer, y entonces los enlaces de la versión anterior tienen
@@ -209,6 +219,11 @@ def sincronizar(situacion: SituacionAprendizaje, *, commit: bool = True) -> dict
             id_situacion=situacion.id_situacion,
             materia=situacion.materia,
             curso=situacion.curso,
+            # Sin la comunidad, este aviso no distingue «no hay currículo de
+            # esta materia» de «la comunidad no se reconoce», que se arreglan
+            # de formas muy distintas.
+            comunidad=situacion.comunidad_autonoma,
+            comunidad_normalizada=comunidad,
         )
     elif resumen["huerfanos"]:
         # Aquí sí: la materia y el curso tienen currículo cargado, y aun así

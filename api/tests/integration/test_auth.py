@@ -16,7 +16,7 @@ import pytest
 VALIDOS = {
     "correo": "ana.lopez@example.com",
     "contrasena": "Secreto123",
-    "nombre": "Ana López",
+    "nombre": "Ana López", "comunidad_autonoma": "Ceuta",
     "centro_educativo": "IES Ceuta",
     "especialidad": "Tecnología",
     "comunidad_autonoma": "Ceuta",
@@ -167,7 +167,7 @@ class TestPerfil:
     def test_put_me_actualiza_campos_permitidos(self, client, db, docente_registrado):
         res = client.put(
             "/me",
-            json={"nombre": "Ana López Pérez", "centro_educativo": "IES Otro"},
+            json={"nombre": "Ana López Pérez", "comunidad_autonoma": "Ceuta", "centro_educativo": "IES Otro"},
         )
         assert res.status_code == 200
         body = res.get_json()

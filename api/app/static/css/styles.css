@@ -755,6 +755,28 @@ code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; background: 
   .row { grid-template-columns: 1fr; }
 }
 
+/* Título + provincia.
+   El título se lleva dos tercios: es el campo más importante del formulario y
+   el que más se escribe, así que se le recorta lo justo para que la provincia
+   quepa a su lado. Van juntos porque la provincia condiciona al curso y a la
+   materia, y un campo que manda sobre otros dos no puede aparecer después. */
+.row--titulo { grid-template-columns: 2fr 1fr; }
+@media (max-width: 600px) {
+  .row--titulo { grid-template-columns: 1fr; }
+}
+
+/* Un <select> deshabilitado tiene que verse deshabilitado, pero el color NO es
+   la señal: eso lo dice el atributo `disabled`, que es lo que anuncia un lector
+   de pantalla, más el texto de `#bloqueo-aviso`. Esto es solo el refuerzo
+   visual — WCAG 1.4.1 prohíbe que el color sea el único medio. */
+select:disabled,
+input:disabled {
+  background-color: var(--color-surface-muted, var(--color-surface));
+  color: var(--color-text-muted);
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
 /* Formularios anchos (creación/edición de SA) — necesitan más espacio
    horizontal por las filas de tres columnas. */
 .form-section:has(.row) { max-width: 760px; }

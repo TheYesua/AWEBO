@@ -17,7 +17,7 @@ def _registrar_y_login(client, correo="curr@test.com"):
         json={
             "correo": correo,
             "contrasena": "ContraSegura1!",
-            "nombre": "Docente",
+            "nombre": "Docente", "comunidad_autonoma": "Ceuta",
             "centro_educativo": "IES Test",
         },
     )
@@ -27,7 +27,9 @@ def _registrar_y_login(client, correo="curr@test.com"):
 def catalogo_minimo(db):
     """Siembra un pequeño catálogo para probar filtros sin depender del seed."""
     ce_mat = Competencia(
-        codigo="CE1",
+            comunidad="ceuta",
+            idioma="es",
+            codigo="CE1",
         tipo=Competencia.ESPECIFICA,
         materia="Matemáticas",
         cursos_aplicables=["1º ESO", "2º ESO", "3º ESO"],
@@ -35,7 +37,9 @@ def catalogo_minimo(db):
         descripcion="Interpretar situaciones con matemáticas.",
     )
     ce_leng = Competencia(
-        codigo="CE1",
+            comunidad="ceuta",
+            idioma="es",
+            codigo="CE1",
         tipo=Competencia.ESPECIFICA,
         materia="Lengua",
         cursos_aplicables=["1º ESO", "2º ESO", "3º ESO", "4º ESO"],
@@ -48,35 +52,45 @@ def catalogo_minimo(db):
     db.session.add_all(
         [
             CriterioEvaluacion(
-                codigo="1.1",
+            comunidad="ceuta",
+            idioma="es",
+            codigo="1.1",
                 id_competencia=ce_mat.id_competencia,
                 materia="Matemáticas",
                 cursos_aplicables=["1º ESO", "2º ESO", "3º ESO"],
                 descripcion="Resuelve problemas numéricos.",
             ),
             CriterioEvaluacion(
-                codigo="1.1",
+            comunidad="ceuta",
+            idioma="es",
+            codigo="1.1",
                 id_competencia=ce_leng.id_competencia,
                 materia="Lengua",
                 cursos_aplicables=["1º ESO"],
                 descripcion="Reconoce variedades en 1º ESO.",
             ),
             CriterioEvaluacion(
-                codigo="1.1",
+            comunidad="ceuta",
+            idioma="es",
+            codigo="1.1",
                 id_competencia=ce_leng.id_competencia,
                 materia="Lengua",
                 cursos_aplicables=["4º ESO"],
                 descripcion="Reconoce variedades en 4º ESO.",
             ),
             SaberBasico(
-                codigo="A.1",
+            comunidad="ceuta",
+            idioma="es",
+            codigo="A.1",
                 bloque="Sentido numérico",
                 materia="Matemáticas",
                 cursos_aplicables=["1º ESO", "2º ESO", "3º ESO"],
                 descripcion="Estrategias de recuento.",
             ),
             SaberBasico(
-                codigo="B.1",
+            comunidad="ceuta",
+            idioma="es",
+            codigo="B.1",
                 bloque="Sentido de la medida",
                 materia="Matemáticas",
                 cursos_aplicables=["1º ESO"],

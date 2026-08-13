@@ -29,13 +29,25 @@ class Competencia(db.Model):
     """
 
     __tablename__ = "competencia"
-    __table_args__ = (Index("ix_competencia_materia", "materia"),)
+    # El índice era solo por materia, y se queda corto en cuanto conviven dos
+    # comunidades: toda consulta real filtra por las dos cosas a la vez.
+    __table_args__ = (
+        Index("ix_competencia_comunidad_materia", "comunidad", "materia"),
+    )
 
     PRINCIPAL = "principal"
     ESPECIFICA = "especifica"
 
     id_competencia: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)
     codigo: Mapped[str] = mapped_column(String(10), nullable=False)
+    #: Código canónico de `curriculo.comunidades`, no el nombre. Ver el
+    #: docstring de ese módulo: el nombre es texto de interfaz y cambia; el
+    #: código es una clave y no.
+    comunidad: Mapped[str] = mapped_column(String(20), nullable=False)
+    #: Lengua en que publica el boletín del que salió esta fila. No es la
+    #: preferencia de nadie: es una propiedad del documento oficial. El DOGC
+    #: publica en catalán y el BOPV en euskera y castellano.
+    idioma: Mapped[str] = mapped_column(String(5), nullable=False)
     tipo: Mapped[str] = mapped_column(String(20), nullable=False)
     materia: Mapped[str | None] = mapped_column(String(50), nullable=True)
     cursos_aplicables: Mapped[list[str]] = mapped_column(
@@ -51,7 +63,7 @@ class Competencia(db.Model):
     )
 
     def __repr__(self) -> str:  # pragma: no cover
-        return f"<Competencia {self.codigo} ({self.tipo})>"
+        return f"<Competencia {self.codigo} {self.comunidad} ({self.tipo})>"
 
 
 class CriterioEvaluacion(db.Model):
@@ -63,10 +75,14 @@ class CriterioEvaluacion(db.Model):
     """
 
     __tablename__ = "criterio_evaluacion"
-    __table_args__ = (Index("ix_criterio_materia", "materia"),)
+    __table_args__ = (
+        Index("ix_criterio_comunidad_materia", "comunidad", "materia"),
+    )
 
     id_criterio: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)
     codigo: Mapped[str] = mapped_column(String(20), nullable=False)
+    comunidad: Mapped[str] = mapped_column(String(20), nullable=False)
+    idioma: Mapped[str] = mapped_column(String(5), nullable=False)
     id_competencia: Mapped[int] = mapped_column(
         ForeignKey("competencia.id_competencia", ondelete="RESTRICT"),
         nullable=False,
@@ -81,7 +97,7 @@ class CriterioEvaluacion(db.Model):
     competencia: Mapped["Competencia"] = relationship(back_populates="criterios")
 
     def __repr__(self) -> str:  # pragma: no cover
-        return f"<Criterio {self.codigo} {self.materia}/{self.cursos_aplicables}>"
+        return f"<Criterio {self.codigo} {self.comunidad}/{self.materia}/{self.cursos_aplicables}>"
 
 
 class SaberBasico(db.Model):
@@ -93,10 +109,14 @@ class SaberBasico(db.Model):
     """
 
     __tablename__ = "saber_basico"
-    __table_args__ = (Index("ix_saber_materia", "materia"),)
+    __table_args__ = (
+        Index("ix_saber_comunidad_materia", "comunidad", "materia"),
+    )
 
     id_saber: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)
     codigo: Mapped[str] = mapped_column(String(20), nullable=False)
+    comunidad: Mapped[str] = mapped_column(String(20), nullable=False)
+    idioma: Mapped[str] = mapped_column(String(5), nullable=False)
     bloque: Mapped[str] = mapped_column(String(200), nullable=False)
     materia: Mapped[str] = mapped_column(String(50), nullable=False)
     cursos_aplicables: Mapped[list[str]] = mapped_column(
@@ -105,4 +125,4 @@ class SaberBasico(db.Model):
     descripcion: Mapped[str] = mapped_column(Text, nullable=False)
 
     def __repr__(self) -> str:  # pragma: no cover
-        return f"<Saber {self.codigo} {self.materia}/{self.cursos_aplicables}>"
+        return f"<Saber {self.codigo} {self.comunidad}/{self.materia}/{self.cursos_aplicables}>"

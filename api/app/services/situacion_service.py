@@ -15,6 +15,8 @@ from sqlalchemy.orm import Query
 
 from ..extensions import db
 from . import enlaces_curriculares as svc_enlaces
+from . import geografia
+from ..curriculo import provincias as cat_provincias
 from ..models import (
     Competencia,
     CriterioEvaluacion,
@@ -54,6 +56,12 @@ _CAMPOS_VERSIONABLES = (
     "curso",
     "materia",
     "comunidad_autonoma",
+    # Va con la comunidad, y por el mismo motivo que en todas partes: si solo
+    # se guardara una de las dos, el historial mostraría un cambio de comunidad
+    # sin decir de dónde salió. Hoy nada restaura la SdA campo a campo —solo se
+    # devuelve `contenido`—, así que esto es para que la versión CUENTE lo que
+    # pasó, que es lo único para lo que se mira.
+    "provincia",
     "descripcion",
     "metodologia",
     "num_sesiones",
@@ -131,8 +139,34 @@ def _proximo_numero_version(id_situacion: int) -> int:
 
 
 def crear(usuario: Usuario, datos: dict[str, Any]) -> SituacionAprendizaje:
-    """Crea una nueva situación de aprendizaje propiedad del usuario dado."""
+    """Crea una nueva situación de aprendizaje propiedad del usuario dado.
+
+    **La provincia se hereda del perfil si no viene en los datos**, y de ella
+    se deriva la comunidad. Antes daba
+    igual —el campo era descriptivo y nadie filtraba por él—, pero desde que
+    decide qué currículo se aplica, una SdA sin comunidad es una SdA sin
+    currículo: la generación se rechaza y el docente no entiende por qué, si en
+    su perfil pone bien de dónde es.
+
+    Se hereda, no se impone: quien mande una comunidad explícita —porque da
+    clase en dos sitios, o está preparando material para otra— se queda con la
+    suya.
+    """
+    provincia = datos.pop("provincia", None) or usuario.provincia
+    datos.pop("comunidad_autonoma", None)   # se calcula, no se acepta suelta
+
     sa = SituacionAprendizaje(id_usuario=usuario.id_usuario, **datos)
+
+    # La provincia se escribe con el servicio, que es el único sitio que fija
+    # las dos columnas a la vez. Asignarla a mano dejaría `comunidad_autonoma`
+    # con lo que hubiera antes, y una SdA que dice ser de Sevilla generando con
+    # el currículo de otra comunidad no tiene forma de detectarse después.
+    geografia.fijar_provincia(sa, provincia)
+    if sa.provincia is None:
+        # Sin provincia reconocible se conserva la comunidad del perfil, que es
+        # lo que tienen las cuentas anteriores a que existiera este campo.
+        sa.comunidad_autonoma = usuario.comunidad_autonoma
+
     db.session.add(sa)
     db.session.commit()
     return sa
@@ -299,6 +333,24 @@ def actualizar(
 
     descripcion_cambio = cambios.pop("descripcion_cambio", None)
 
+    # La comunidad se deriva de la provincia; aceptarla suelta permitiría
+    # dejar las dos columnas contando cosas distintas. El esquema la acepta
+    # para no romper clientes que la sigan mandando, y aquí se descarta.
+    cambios.pop("comunidad_autonoma", None)
+    provincia = cambios.pop("provincia", None)
+
+    # Se valida ANTES de tocar nada. `fijar_provincia` limpia las dos columnas
+    # cuando no reconoce el valor, así que llamarla y luego lanzar dejaría el
+    # objeto ya modificado en la sesión, a merced de que alguien haga rollback.
+    # Y se rechaza en vez de limpiar porque al editar, a diferencia de al
+    # crear, quedarse sin provincia significa perder la que ya tenía.
+    if provincia is not None and cat_provincias.normalizar(provincia) is None:
+        raise SituacionError(
+            "provincia_no_reconocida",
+            f"La provincia '{provincia}' no está en el catálogo.",
+            http_status=422,
+        )
+
     # Los estados "generando" y "error_generacion" son gestionados por el
     # backend (tarea de generación). El docente puede pasar a "borrador",
     # "generada" o "finalizada" manualmente, pero no reclamar un estado
@@ -311,7 +363,7 @@ def actualizar(
             http_status=409,
         )
 
-    if not cambios:
+    if not cambios and provincia is None:
         return sa  # nada que hacer; no creamos versión vacía
 
     # 1) Snapshot del estado actual ANTES de aplicar los cambios
@@ -326,6 +378,14 @@ def actualizar(
     # 2) Aplicar cambios sobre la situación
     for campo, valor in cambios.items():
         setattr(sa, campo, valor)
+
+    # La provincia NO se asigna con `setattr` como las demás: escribe dos
+    # columnas —ella y la comunidad derivada— y hacerlo a mano dejaría la
+    # comunidad anterior puesta. Una SdA que dice ser de Sevilla generando con
+    # el currículo de Cataluña no se detecta después: los dos campos son
+    # plausibles por separado.
+    if provincia is not None:
+        geografia.fijar_provincia(sa, provincia)   # validada más arriba
 
     db.session.commit()
     return sa
@@ -545,22 +605,35 @@ def elegir_propuesta(
     return sa
 
 
-def materias_con_curriculo(curso: str) -> list[str]:
+def materias_con_curriculo(curso: str, comunidad: str | None = None) -> list[str]:
     """Materias con currículo completo para ``curso``, en orden alfabético.
 
     Se usa para que el mensaje de error no se limite a decir que algo falta,
     sino a nombrar lo que sí existe: ante «Matemáticas · 4º ESO» el docente
     necesita enterarse de que sus opciones son «Matemáticas A» y
     «Matemáticas B».
+
+    **Y por eso hay que filtrar por comunidad aquí también.** Sin ello, a un
+    docente de Ceuta se le sugerirían materias que solo existen en el catálogo
+    catalán: un mensaje de ayuda que lleva a otro callejón sin salida es peor
+    que no dar ninguna sugerencia.
+
+    Sin comunidad reconocida no hay nada que sugerir, y devolver todas sería
+    volver al problema.
     """
     from sqlalchemy import func
+
+    if comunidad is None:
+        return []
 
     def _materias(modelo) -> set[str]:
         filas = db.session.execute(
             select(
                 modelo.materia,
                 func.jsonb_array_elements_text(modelo.cursos_aplicables).label("c"),
-            ).where(modelo.materia.is_not(None))
+            )
+            .where(modelo.comunidad == comunidad)
+            .where(modelo.materia.is_not(None))
         ).all()
         return {m for m, c in filas if c == curso}
 

@@ -19,20 +19,63 @@
   <article class="card" id="detalle-card" aria-labelledby="t-datos" hidden>
     <h2 id="t-datos" class="sr-only">{{ _('Datos de la situación') }}</h2>
     <form id="sa-form" class="form" novalidate>
-      <div class="field">
-        <label for="titulo">{{ _('Título') }}</label>
-        <input type="text" id="titulo" name="titulo" minlength="2" maxlength="255">
+      {#
+        Los obligatorios se marcan igual que en «nueva»: mismo asterisco rojo y
+        mismo texto para lector de pantalla. Estaban solo en el formulario de
+        creación, así que al editar no había forma de saber qué no se podía
+        dejar vacío — y son exactamente los mismos campos.
+      #}
+      <p class="help">{{ _('Los campos marcados con') }} <span aria-hidden="true" style="color: var(--color-danger-strong);">*</span>
+        {{ _('son obligatorios.') }}</p>
+
+      <div class="row row--titulo">
+        <div class="field field--ancho">
+          <label for="titulo">
+            {{ _('Título') }}
+            <span class="req" aria-hidden="true">*</span>
+            <span class="sr-only">{{ _('(obligatorio)') }}</span>
+          </label>
+          <input type="text" id="titulo" name="titulo" required minlength="2" maxlength="255">
+        </div>
+        {#
+          La provincia también aquí, y no solo al crear: es lo que decide el
+          currículo, y una SdA heredada del TFG puede no tenerla. Sin este
+          selector, la única forma de arreglarla sería la consola.
+        #}
+        <div class="field">
+          <label for="provincia">
+            {{ _('Provincia') }}
+            <span class="req" aria-hidden="true">*</span>
+            <span class="sr-only">{{ _('(obligatorio)') }}</span>
+          </label>
+          <select id="provincia" name="provincia" required
+                  aria-describedby="provincia-help">
+            <option value="">{{ _('Elige provincia…') }}</option>
+          </select>
+          <small id="provincia-help" class="help">
+            {{ _('Si la cambias, tendrás que volver a elegir curso y materia: el currículo es otro.') }}
+          </small>
+        </div>
       </div>
 
       <div class="row">
         <div class="field">
-          <label for="curso">{{ _('Curso') }}</label>
-          <select id="curso" name="curso"></select>
+          <label for="curso">
+            {{ _('Curso') }}
+            <span class="req" aria-hidden="true">*</span>
+            <span class="sr-only">{{ _('(obligatorio)') }}</span>
+          </label>
+          <select id="curso" name="curso" required
+                  aria-describedby="bloqueo-aviso"></select>
         </div>
         <div class="field">
-          <label for="materia">{{ _('Materia') }}</label>
-          <select id="materia" name="materia"
-                  aria-describedby="materia-aviso materia-explicacion"></select>
+          <label for="materia">
+            {{ _('Materia') }}
+            <span class="req" aria-hidden="true">*</span>
+            <span class="sr-only">{{ _('(obligatorio)') }}</span>
+          </label>
+          <select id="materia" name="materia" required
+                  aria-describedby="bloqueo-aviso materia-aviso materia-explicacion"></select>
           <p class="alert" id="materia-aviso" role="alert" hidden></p>
           <p class="help" id="materia-explicacion" hidden></p>
         </div>
@@ -92,8 +135,16 @@
                placeholder="{{ _('Se queda en el historial de versiones') }}">
       </div>
 
+      <p class="help" id="bloqueo-aviso" hidden>
+        {{ _('Elige antes la provincia: el curso y la materia dependen del currículo de tu comunidad.') }}
+      </p>
+      <p class="alert" id="falta-aviso" role="alert" hidden>
+        {{ _('Elige curso y materia antes de guardar: sin ellos la situación no se puede anclar a ningún currículo.') }}
+      </p>
+
       <div class="actions">
-        <button type="submit" class="btn btn--primary">
+        <button type="submit" class="btn btn--primary" id="btn-guardar"
+                aria-describedby="falta-aviso">
           <i data-lucide="save" aria-hidden="true"></i>
           <span>{{ _('Guardar cambios') }}</span>
         </button>
@@ -238,6 +289,8 @@ const EXPLICACIONES_MATERIA = {
 
 const T = {
   errorDesconocido: {{ _('Error desconocido')|tojson }},
+  sinCurriculo: {{ _('(sin currículo todavía)')|tojson }},
+  faltaCursoMateria: {{ _('Elige curso y materia antes de guardar.')|tojson }},
   sinPermiso: {{ _('No tienes permiso para ver esta situación')|tojson }},
   noEncontrada: {{ _('No encontrada')|tojson }},
   sinEspecificar: {{ _('— Sin especificar —')|tojson }},
@@ -351,18 +404,64 @@ async function cargar() {
     EXPLICACIONES_MATERIA
   );
 
-  Cobertura.cargar().then((cobertura) => {
-    Cobertura.enlazar({
-      cobertura,
-      selCurso: document.getElementById('curso'),
-      selMateria: document.getElementById('materia'),
-      aviso: document.getElementById('materia-aviso'),
-      preservar: true,
-      cursoActual: sa.curso,
-      materiaActual: sa.materia,
+  const selProvincia = document.getElementById('provincia');
+  const selCurso     = document.getElementById('curso');
+  const selMateria   = document.getElementById('materia');
+
+  /* `alCambiar` se dispara también al enlazar por primera vez, y esa primera
+     vez hay que distinguirla: es cuando se conservan el curso y la materia que
+     ya tenía la SdA. En las siguientes NO, porque el currículo es otro. */
+  let primeraPintada = true;
+
+  /* Guardar sin curso o sin materia deja una SdA que no se puede anclar a
+     ningún currículo — que es justo el estado del que venimos de rescatar 19.
+     Se desactiva el botón y se dice por qué: un botón gris sin explicación es
+     tan frustrante como uno que falla al pulsarlo. */
+  function revisarGuardar() {
+    const completo = Boolean(
+      selProvincia.value && selCurso.value && selMateria.value
+    );
+    const btn = document.getElementById('btn-guardar');
+    if (btn) btn.disabled = !completo;
+    const aviso = document.getElementById('falta-aviso');
+    if (aviso) aviso.hidden = completo || !selProvincia.value;
+  }
+
+  /* `preservar` mantiene lo que ya tuviera la SdA aunque hoy sepamos que no es
+     una combinación válida: no se borra en silencio lo que el docente eligió.
+     Solo se preserva la primera vez — al CAMBIAR de provincia el currículo es
+     otro, y conservar la materia anterior dejaría elegida una que no existe en
+     el catálogo nuevo. */
+  function repintarCobertura(provincia, primeraVez) {
+    return Cobertura.cargar(provincia).then((cobertura) => {
+      Cobertura.enlazar({
+        cobertura,
+        selCurso,
+        selMateria,
+        aviso: document.getElementById('materia-aviso'),
+        preservar: primeraVez,
+        cursoActual: primeraVez ? sa.curso : '',
+        materiaActual: primeraVez ? sa.materia : '',
+      });
+      pintarExplicacion();
+      revisarGuardar();
     });
-    // Después de `enlazar`, que es quien rellena el <select>.
-    pintarExplicacion();
+  }
+
+  Cobertura.cargarProvincias().then((grupos) => {
+    Cobertura.pintarProvincias(selProvincia, grupos, sa.provincia || '', T.sinCurriculo);
+    Cobertura.enlazarProvincia({
+      selProvincia,
+      selCurso,
+      selMateria,
+      aviso: document.getElementById('bloqueo-aviso'),
+      alCambiar: (provincia) => {
+        const primera = primeraPintada;
+        primeraPintada = false;
+        return repintarCobertura(provincia, primera);
+      },
+    });
+    revisarGuardar();
   });
   rellenarSelect(document.getElementById('metodologia'), CATALOGOS.metodologias, { placeholder: T.sinEspecificar,     valor: sa.metodologia });
 
@@ -963,6 +1062,18 @@ document.getElementById('sa-form').addEventListener('submit', async (ev) => {
   ev.preventDefault();
   const msg = document.getElementById('msg');
   msg.hidden = true; msg.classList.remove('alert--ok');
+
+  /* El botón deshabilitado no basta: el formulario se envía también con Enter
+     desde cualquier campo, y «Marcar como terminada» lo dispara con
+     `dispatchEvent`, que no mira si el botón está gris. */
+  const faltan = ['provincia', 'curso', 'materia']
+    .filter((n) => !document.getElementById(n).value);
+  if (faltan.length) {
+    msg.textContent = T.faltaCursoMateria;
+    msg.hidden = false;
+    document.getElementById(faltan[0]).focus();
+    return;
+  }
   const data = Object.fromEntries(new FormData(ev.target).entries());
   for (const k of Object.keys(data)) if (data[k] === '') delete data[k];
   if (data.num_sesiones) data.num_sesiones = parseInt(data.num_sesiones, 10);

@@ -17,6 +17,7 @@ class UsuarioOut(BaseModel):
     centro_educativo: str | None = None
     especialidad: str | None = None
     comunidad_autonoma: str | None = None
+    provincia: str | None = None
     proveedor_ia: str | None = None
     modelo_ia: str | None = None
     idioma_interfaz: str | None = None
@@ -34,6 +35,7 @@ class UsuarioOut(BaseModel):
             centro_educativo=usuario.centro_educativo,
             especialidad=usuario.especialidad,
             comunidad_autonoma=usuario.comunidad_autonoma,
+            provincia=usuario.provincia,
             proveedor_ia=usuario.proveedor_ia,
             modelo_ia=usuario.modelo_ia,
             idioma_interfaz=usuario.idioma_interfaz,
@@ -52,6 +54,7 @@ class UsuarioUpdateIn(BaseModel):
     centro_educativo: str | None = Field(default=None, max_length=200)
     especialidad: str | None = Field(default=None, max_length=100)
     comunidad_autonoma: str | None = Field(default=None, max_length=50)
+    provincia: str | None = Field(default=None, max_length=30)
 
     # Preferencia de IA. Cadena vacía o null = «usar el del sistema».
     # No se restringen aquí con un Literal: el conjunto de proveedores válidos

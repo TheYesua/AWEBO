@@ -400,17 +400,34 @@ def _exigir_curriculo(sa) -> None:
     if ctx.tiene_curriculo():
         return
 
-    alternativas = svc.materias_con_curriculo(sa.curso)
+    from ..curriculo import comunidades
+    from ..services import geografia
+
+    comunidad = geografia.comunidad_de(sa)
+    alternativas = svc.materias_con_curriculo(sa.curso, comunidad)
     sugerencia = (
         f" Para {sa.curso} hay currículo de: {', '.join(alternativas)}."
         if alternativas
         else ""
     )
+    # Se distingue el caso «la comunidad no se reconoce» del caso «esa materia
+    # no tiene currículo». Se arreglan de formas distintas —una tocando el
+    # perfil, la otra eligiendo otra materia— y un único mensaje para los dos
+    # deja a quien lo lee sin saber qué hacer.
+    if comunidad is None:
+        raise svc.SituacionError(
+            "sin_comunidad",
+            f"«{sa.provincia or sa.comunidad_autonoma or '—'}» no es un sitio "
+            f"que AWEBO reconozca, y el currículo depende de él. Elige la "
+            f"provincia en la situación o en tu perfil.",
+            http_status=422,
+        )
+
     raise svc.SituacionError(
         "sin_curriculo",
-        f"No hay currículo cargado para «{sa.materia}» en {sa.curso}, así que "
-        f"la situación se generaría sin criterios ni saberes a los que "
-        f"anclarse.{sugerencia}",
+        f"No hay currículo cargado para «{sa.materia}» en {sa.curso} "
+        f"({comunidades.nombre(comunidad)}), así que la situación se generaría "
+        f"sin criterios ni saberes a los que anclarse.{sugerencia}",
         http_status=422,
     )
 

@@ -112,7 +112,7 @@ class TestCadaCorreoCambiaDeIdioma:
         with patch("app.tasks.encolar") as encolar:
             r = client.post("/auth/register", json={
                 "correo": "ana@ies.es", "contrasena": "ContrasenaJuan9",
-                "nombre": "Juan", "reclamar_contenido": True,
+                "nombre": "Juan", "comunidad_autonoma": "Ceuta", "reclamar_contenido": True,
             })
 
         assert r.status_code == 202, r.get_json()

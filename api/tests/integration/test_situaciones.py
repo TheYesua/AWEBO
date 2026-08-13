@@ -28,7 +28,7 @@ def _registrar_y_login(client, correo="docente@test.com"):
         json={
             "correo": correo,
             "contrasena": "Secreto123",
-            "nombre": "Docente Test",
+            "nombre": "Docente Test", "comunidad_autonoma": "Ceuta",
         },
     )
     assert res.status_code == 201, res.data

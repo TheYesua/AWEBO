@@ -13,6 +13,7 @@ from typing import Any
 from sqlalchemy import select
 
 from ..extensions import db
+from ..services import geografia
 from ..models import Competencia, CriterioEvaluacion, SaberBasico, SituacionAprendizaje
 
 
@@ -83,9 +84,20 @@ def construir_contexto(sa: SituacionAprendizaje) -> ContextoGeneracion:
     nulo), también carga el resumen de la SA origen y rellena los campos
     de adaptación para que los prompts puedan generar contenido adaptado.
     """
-    competencias = _cargar_competencias(sa.materia, sa.curso)
-    criterios = _cargar_criterios(sa.materia, sa.curso)
-    saberes = _cargar_saberes(sa.materia, sa.curso)
+    # La comunidad de la SdA es texto libre desde el TFG, así que se normaliza
+    # aquí y no se compara a pelo: «Andalucia» sin tilde y «ANDALUCÍA» tienen
+    # que llegar al mismo currículo.
+    #
+    # Si no se reconoce, `normalizar` devuelve None y las tres consultas
+    # vuelven vacías. Eso es deliberado: `_exigir_curriculo` lo detecta antes
+    # de gastar la generación y lo dice. La alternativa —caer a Ceuta— sería
+    # anclar el documento a una normativa que no es la de quien lo pide, sin
+    # avisar, y eso solo se descubre contrastándolo con el decreto propio.
+    comunidad = geografia.comunidad_de(sa)
+
+    competencias = _cargar_competencias(sa.materia, sa.curso, comunidad)
+    criterios = _cargar_criterios(sa.materia, sa.curso, comunidad)
+    saberes = _cargar_saberes(sa.materia, sa.curso, comunidad)
 
     # Se pregunta al modelo en lugar de repetir aquí la regla. Cuando estaban
     # duplicadas, arreglar una y olvidar la otra era cuestión de tiempo: de
@@ -180,34 +192,44 @@ def _resumir_contenido(contenido: dict[str, Any]) -> str:
 # ---------------------------------------------------------------------------
 
 
-def _cargar_competencias(materia: str, curso: str) -> list[Competencia]:
+def _cargar(modelo, materia: str, curso: str, comunidad: str | None):
+    """Filas del catálogo para esa materia, curso y **comunidad**.
+
+    LA COMUNIDAD NO ES UN FILTRO MÁS
+    ---------------------------------
+    Sin ella, la base de datos guardaba un único currículo —implícitamente el
+    de Ceuta— y todo funcionaba por accidente. En cuanto conviven dos, una SdA
+    de Ceuta empezaría a citar criterios catalanes sin que nada avisara: los
+    códigos se parecen, las descripciones son plausibles, y el documento sale
+    completo. Es el peor tipo de error de los que produce esta aplicación,
+    porque lo descubre el docente al contrastarlo con su propio decreto.
+
+    ``comunidad`` a ``None`` devuelve **lista vacía**, no «todas». Ver
+    ``construir_contexto``: es la diferencia entre no generar y generar algo
+    anclado a la normativa equivocada.
+    """
+    if not comunidad:
+        return []
     stmt = (
-        select(Competencia)
-        .where(Competencia.materia == materia)
-        .where(Competencia.cursos_aplicables.op("?")(curso))
-        .order_by(Competencia.codigo)
+        select(modelo)
+        .where(modelo.comunidad == comunidad)
+        .where(modelo.materia == materia)
+        .where(modelo.cursos_aplicables.op("?")(curso))
+        .order_by(modelo.codigo)
     )
     return list(db.session.scalars(stmt).all())
 
 
-def _cargar_criterios(materia: str, curso: str) -> list[CriterioEvaluacion]:
-    stmt = (
-        select(CriterioEvaluacion)
-        .where(CriterioEvaluacion.materia == materia)
-        .where(CriterioEvaluacion.cursos_aplicables.op("?")(curso))
-        .order_by(CriterioEvaluacion.codigo)
-    )
-    return list(db.session.scalars(stmt).all())
+def _cargar_competencias(materia: str, curso: str, comunidad: str | None) -> list[Competencia]:
+    return _cargar(Competencia, materia, curso, comunidad)
 
 
-def _cargar_saberes(materia: str, curso: str) -> list[SaberBasico]:
-    stmt = (
-        select(SaberBasico)
-        .where(SaberBasico.materia == materia)
-        .where(SaberBasico.cursos_aplicables.op("?")(curso))
-        .order_by(SaberBasico.codigo)
-    )
-    return list(db.session.scalars(stmt).all())
+def _cargar_criterios(materia: str, curso: str, comunidad: str | None) -> list[CriterioEvaluacion]:
+    return _cargar(CriterioEvaluacion, materia, curso, comunidad)
+
+
+def _cargar_saberes(materia: str, curso: str, comunidad: str | None) -> list[SaberBasico]:
+    return _cargar(SaberBasico, materia, curso, comunidad)
 
 
 def _competencia_codigo_por_id(

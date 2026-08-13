@@ -3,15 +3,18 @@
 Lee los ficheros JSON generados por ``app.curriculo.extractor`` (uno por
 cada par materia/ciclo) y los inserta o actualiza de forma idempotente.
 
-Esquema de unicidad utilizado para los UPSERT:
+Esquema de unicidad utilizado para los UPSERT. **La comunidad entra en todas
+las claves**: sin ella, cargar el decreto de una segunda comunidad actualizaría
+las filas de la primera en vez de añadir las suyas —los códigos y las materias
+coinciden— y el currículo de Ceuta acabaría con las descripciones catalanas.
 
-* **Competencia**: ``(codigo, materia)`` — las competencias específicas son
+* **Competencia**: ``(comunidad, codigo, materia)`` — las competencias específicas son
   comunes a todos los cursos de la etapa, así que se fusiona el campo
   ``cursos_aplicables`` haciendo unión con lo ya almacenado.
-* **CriterioEvaluacion**: ``(codigo, materia, cursos_aplicables)`` — los
+* **CriterioEvaluacion**: ``(comunidad, codigo, materia, cursos_aplicables)`` — los
   criterios pueden repetir código entre cursos con descripciones distintas
   (caso de Lengua/Inglés en la Orden EFP/754).
-* **SaberBasico**: ``(codigo, materia, cursos_aplicables, descripcion)`` —
+* **SaberBasico**: ``(comunidad, codigo, materia, cursos_aplicables, descripcion)`` —
   cada item de saber básico es una fila independiente.
 
 La fuente por defecto es ``implementacion/curriculo/salida/`` (montada en
@@ -55,11 +58,15 @@ def _upsert_competencia(
     cursos: list[str],
     descriptores: list[str],
     descripcion: str,
+    comunidad: str,
+    idioma: str,
 ) -> tuple[Competencia, bool]:
-    """Inserta o actualiza una Competencia por (codigo, materia)."""
+    """Inserta o actualiza una Competencia por (comunidad, codigo, materia)."""
     existente = db.session.scalar(
         select(Competencia).where(
-            Competencia.codigo == codigo, Competencia.materia == materia
+            Competencia.comunidad == comunidad,
+            Competencia.codigo == codigo,
+            Competencia.materia == materia,
         )
     )
     if existente is None:
@@ -67,6 +74,8 @@ def _upsert_competencia(
             codigo=codigo,
             tipo=Competencia.ESPECIFICA,
             materia=materia,
+            comunidad=comunidad,
+            idioma=idioma,
             cursos_aplicables=list(cursos),
             descriptores=list(descriptores),
             descripcion=descripcion,
@@ -93,11 +102,13 @@ def _upsert_criterio(
     materia: str,
     cursos: list[str],
     descripcion: str,
+    comunidad: str,
+    idioma: str,
 ) -> bool:
-    """Upsert por (codigo, materia, cursos_aplicables). Devuelve True si se creó."""
-    # Buscar criterios con el mismo (codigo, materia) y comparar cursos en Python.
+    """Upsert por (comunidad, codigo, materia, cursos). True si se creó."""
     candidatos = db.session.scalars(
         select(CriterioEvaluacion).where(
+            CriterioEvaluacion.comunidad == comunidad,
             CriterioEvaluacion.codigo == codigo,
             CriterioEvaluacion.materia == materia,
         )
@@ -113,6 +124,8 @@ def _upsert_criterio(
             codigo=codigo,
             id_competencia=id_competencia,
             materia=materia,
+            comunidad=comunidad,
+            idioma=idioma,
             cursos_aplicables=list(cursos),
             descripcion=descripcion,
         )
@@ -127,10 +140,13 @@ def _upsert_saber_item(
     materia: str,
     cursos: list[str],
     descripcion: str,
+    comunidad: str,
+    idioma: str,
 ) -> bool:
-    """Upsert de un ítem por (codigo, materia, cursos_aplicables, descripcion)."""
+    """Upsert por (comunidad, codigo, materia, cursos, descripcion)."""
     candidatos = db.session.scalars(
         select(SaberBasico).where(
+            SaberBasico.comunidad == comunidad,
             SaberBasico.codigo == codigo,
             SaberBasico.materia == materia,
             SaberBasico.descripcion == descripcion,
@@ -146,6 +162,8 @@ def _upsert_saber_item(
             codigo=codigo,
             bloque=bloque,
             materia=materia,
+            comunidad=comunidad,
+            idioma=idioma,
             cursos_aplicables=list(cursos),
             descripcion=descripcion,
         )
@@ -158,11 +176,23 @@ def _upsert_saber_item(
 # ---------------------------------------------------------------------------
 
 
-def _procesar_fichero(ruta: Path) -> dict[str, int]:
-    """Carga el JSON ``ruta`` y vuelca su contenido en BD. Devuelve contadores."""
+def _procesar_fichero(
+    ruta: Path, comunidad: str, idioma: str
+) -> dict[str, int]:
+    """Carga el JSON ``ruta`` y vuelca su contenido en BD. Devuelve contadores.
+
+    **El fichero manda sobre los argumentos.** Los JSON de hoy no traen
+    `comunidad` ni `idioma` —salen todos de la Orden EFP/754— pero los de un
+    DOGC o un BOPV sí los traerán, y entonces el dato correcto es el del
+    fichero y no lo que alguien haya tecleado en la línea de órdenes. Al revés
+    sería posible cargar el decreto catalán como si fuera de Ceuta por una
+    opción mal puesta.
+    """
     datos = json.loads(ruta.read_text(encoding="utf-8"))
     materia = datos["materia"]
     cursos = list(datos["cursos_aplicables"])
+    comunidad = datos.get("comunidad") or comunidad
+    idioma = datos.get("idioma") or idioma
 
     stats = {"ce_nuevas": 0, "ce_actualizadas": 0, "cr_nuevos": 0, "sb_nuevos": 0}
 
@@ -175,6 +205,8 @@ def _procesar_fichero(ruta: Path) -> dict[str, int]:
             cursos=cursos,
             descriptores=ce.get("descriptores") or [],
             descripcion=ce["descripcion"],
+            comunidad=comunidad,
+            idioma=idioma,
         )
         competencias_por_codigo[ce["codigo"]] = obj
         if creado:
@@ -196,6 +228,8 @@ def _procesar_fichero(ruta: Path) -> dict[str, int]:
             )
             continue
         if _upsert_criterio(
+            comunidad=comunidad,
+            idioma=idioma,
             codigo=cr["codigo"],
             id_competencia=comp.id_competencia,
             materia=materia,
@@ -210,6 +244,8 @@ def _procesar_fichero(ruta: Path) -> dict[str, int]:
         titulo = bloque["titulo"]
         for idx, item in enumerate(bloque["items"], start=1):
             if _upsert_saber_item(
+                comunidad=comunidad,
+                idioma=idioma,
                 codigo=f"{cod_bloque}.{idx}",
                 bloque=titulo,
                 materia=materia,
@@ -226,12 +262,35 @@ def _procesar_fichero(ruta: Path) -> dict[str, int]:
 # ---------------------------------------------------------------------------
 
 
-def seed_curriculo(directorio: Path | None = None) -> dict[str, int]:
+def seed_curriculo(
+    directorio: Path | None = None,
+    *,
+    comunidad: str | None = None,
+    idioma: str | None = None,
+) -> dict[str, int]:
     """Carga todos los ficheros JSON del directorio indicado.
 
     Es idempotente: ejecutarla de nuevo solo actualizará textos cambiados
     sin generar duplicados.
+
+    ``comunidad`` e ``idioma`` son el valor **de respaldo** para los ficheros
+    que no lo traigan dentro. Por defecto, Ceuta en castellano: es lo que son
+    todos los JSON existentes, que salen de la Orden EFP/754 —la del ámbito de
+    gestión del Ministerio—.
+
+    Se valida la comunidad contra el catálogo antes de escribir nada. Cargar
+    dos mil filas bajo un código inventado y descubrirlo después obligaría a
+    borrarlas a mano, y no hay ningún comando para eso.
     """
+    from ..curriculo import comunidades
+
+    codigo = comunidades.normalizar(comunidad) if comunidad else comunidades.POR_DEFECTO
+    if codigo is None:
+        raise ValueError(
+            f"Comunidad no reconocida: {comunidad!r}. "
+            f"Válidas: {', '.join(sorted(comunidades.COMUNIDADES))}"
+        )
+    lengua = (idioma or "es").strip().lower()
     base = directorio or RUTA_SALIDA_DEFECTO
     ficheros = sorted(base.glob("*.json"))
     if not ficheros:
@@ -245,9 +304,12 @@ def seed_curriculo(directorio: Path | None = None) -> dict[str, int]:
         }
 
     total = {"ce_nuevas": 0, "ce_actualizadas": 0, "cr_nuevos": 0, "sb_nuevos": 0}
+    logger.info(
+        "Cargando currículo de %s en %s desde %s", codigo, lengua, base
+    )
     for ruta in ficheros:
         logger.info("Procesando %s", ruta.name)
-        stats = _procesar_fichero(ruta)
+        stats = _procesar_fichero(ruta, codigo, lengua)
         for k, v in stats.items():
             total[k] += v
 

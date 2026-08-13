@@ -178,6 +178,11 @@ def sembrar_curriculo(db):
     Es decir: ejercitaban precisamente el camino que resultó estar roto.
 
     Las tres tablas, no solo competencias: la comprobación exige las tres.
+
+    ``comunidad`` por defecto «ceuta» porque es la de todas las SdA de prueba,
+    que se crean con ``comunidad_autonoma="Ceuta"``. Desde que el catálogo
+    guarda más de un currículo, sembrar en una comunidad y generar en otra deja
+    el contexto vacío — que es lo correcto, pero desconcierta si se olvida.
     """
     from app.models import Competencia, CriterioEvaluacion, SaberBasico
 
@@ -185,12 +190,16 @@ def sembrar_curriculo(db):
         materia: str = "Matemáticas",
         cursos: tuple[str, ...] = ("1º ESO", "2º ESO", "3º ESO"),
         codigo: str = "CE1",
+        comunidad: str = "ceuta",
+        idioma: str = "es",
     ) -> None:
         cursos = list(cursos)
         ce = Competencia(
             codigo=codigo,
             tipo=Competencia.ESPECIFICA,
             materia=materia,
+            comunidad=comunidad,
+            idioma=idioma,
             cursos_aplicables=cursos,
             descriptores=["STEM1"],
             descripcion=f"Competencia específica de {materia}.",
@@ -202,6 +211,8 @@ def sembrar_curriculo(db):
                 codigo=f"{codigo}.1",
                 id_competencia=ce.id_competencia,
                 materia=materia,
+                comunidad=comunidad,
+                idioma=idioma,
                 cursos_aplicables=cursos,
                 descripcion="Criterio de evaluación de prueba.",
             )
@@ -211,6 +222,8 @@ def sembrar_curriculo(db):
                 codigo="A.1",
                 bloque="Bloque A",
                 materia=materia,
+                comunidad=comunidad,
+                idioma=idioma,
                 cursos_aplicables=cursos,
                 descripcion="Saber básico de prueba.",
             )

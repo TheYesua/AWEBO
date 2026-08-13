@@ -38,14 +38,35 @@ def cmd_seed_ods() -> None:
     default=None,
     help="Directorio con los JSON del extractor (por defecto /curriculo/salida).",
 )
-def cmd_seed_curriculo(directorio: str | None) -> None:
-    """Carga competencias, criterios y saberes desde los JSON del extractor."""
+@click.option(
+    "--comunidad",
+    default=None,
+    help="De qué comunidad es este currículo. Por defecto, ceuta.",
+)
+@click.option(
+    "--idioma",
+    default=None,
+    help="Lengua en que publica el boletín de origen. Por defecto, es.",
+)
+def cmd_seed_curriculo(
+    directorio: str | None, comunidad: str | None, idioma: str | None
+) -> None:
+    """Carga competencias, criterios y saberes desde los JSON del extractor.
+
+    Si un JSON trae dentro su `comunidad` o su `idioma`, **el fichero manda**
+    sobre estas opciones: el dato correcto es el del extractor, no el de quien
+    teclea la orden.
+    """
     from pathlib import Path
 
     from .seeds import seed_curriculo
 
     ruta = Path(directorio) if directorio else None
-    result = seed_curriculo(ruta)
+    try:
+        result = seed_curriculo(ruta, comunidad=comunidad, idioma=idioma)
+    except ValueError as exc:
+        click.echo(str(exc), err=True)
+        raise SystemExit(1)
     click.echo(
         f"[seed:curriculo] ficheros={result['ficheros']} "
         f"ce_nuevas={result['ce_nuevas']} ce_actualizadas={result['ce_actualizadas']} "

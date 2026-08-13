@@ -25,6 +25,8 @@ def catalogo(db):
     def _tripleta(materia: str, cursos: list[str], codigo: str) -> None:
         """Competencia + criterio + saber: los tres hacen falta."""
         ce = Competencia(
+            comunidad="ceuta",
+            idioma="es",
             codigo=codigo,
             tipo=Competencia.ESPECIFICA,
             materia=materia,
@@ -36,7 +38,9 @@ def catalogo(db):
         db.session.flush()
         db.session.add(
             CriterioEvaluacion(
-                codigo=f"{codigo}.1",
+            comunidad="ceuta",
+            idioma="es",
+            codigo=f"{codigo}.1",
                 id_competencia=ce.id_competencia,
                 materia=materia,
                 cursos_aplicables=cursos,
@@ -45,7 +49,9 @@ def catalogo(db):
         )
         db.session.add(
             SaberBasico(
-                codigo="A.1",
+            comunidad="ceuta",
+            idioma="es",
+            codigo="A.1",
                 bloque="Bloque A",
                 materia=materia,
                 cursos_aplicables=cursos,
@@ -61,6 +67,8 @@ def catalogo(db):
     # ofrecerse, porque la conexión curricular saldría coja igualmente.
     db.session.add(
         Competencia(
+            comunidad="ceuta",
+            idioma="es",
             codigo="CE9",
             tipo=Competencia.ESPECIFICA,
             materia="Materia Incompleta",
@@ -75,7 +83,10 @@ def catalogo(db):
 def _registrar(client, correo="cobertura@test.com"):
     res = client.post(
         "/auth/register",
-        json={"correo": correo, "contrasena": "ContraSegura1!", "nombre": "Docente"},
+        json={
+            "correo": correo, "contrasena": "ContraSegura1!", "nombre": "Docente",
+            "comunidad_autonoma": "Ceuta",
+        },
     )
     assert res.status_code in (200, 201)
 
@@ -197,13 +208,16 @@ class TestContextoTieneCurriculo:
         db.session.add(u)
         db.session.commit()
 
+        # Las dos con comunidad: lo que este test compara es la MATERIA, y sin
+        # comunidad las dos saldrían sin currículo por otro motivo — pasaría
+        # por la razón equivocada.
         sin = SituacionAprendizaje(
             id_usuario=u.id_usuario, titulo="Sin", curso="4º ESO",
-            materia="Matemáticas",
+            materia="Matemáticas", comunidad_autonoma="Ceuta",
         )
         con = SituacionAprendizaje(
             id_usuario=u.id_usuario, titulo="Con", curso="4º ESO",
-            materia="Matemáticas A",
+            materia="Matemáticas A", comunidad_autonoma="Ceuta",
         )
         db.session.add_all([sin, con])
         db.session.commit()

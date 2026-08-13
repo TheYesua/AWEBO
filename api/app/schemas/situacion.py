@@ -41,6 +41,9 @@ class SituacionCreateIn(BaseModel):
     materia: str = Field(min_length=1, max_length=50)
 
     comunidad_autonoma: str | None = Field(default=None, max_length=50)
+    #: Lo que el docente elige. La comunidad se deriva de ella al guardar, así
+    #: que `comunidad_autonoma` que venga en la petición se ignora.
+    provincia: str | None = Field(default=None, max_length=30)
     descripcion: str | None = Field(default=None, max_length=4000)
     metodologia: str | None = Field(default=None, max_length=100)
     num_sesiones: int | None = Field(default=None, ge=1, le=200)
@@ -60,6 +63,9 @@ class SituacionUpdateIn(BaseModel):
     curso: str | None = Field(default=None, min_length=1, max_length=20)
     materia: str | None = Field(default=None, min_length=1, max_length=50)
     comunidad_autonoma: str | None = Field(default=None, max_length=50)
+    #: Lo que el docente elige. La comunidad se deriva de ella al guardar, así
+    #: que `comunidad_autonoma` que venga en la petición se ignora.
+    provincia: str | None = Field(default=None, max_length=30)
     descripcion: str | None = Field(default=None, max_length=4000)
     metodologia: str | None = Field(default=None, max_length=100)
     num_sesiones: int | None = Field(default=None, ge=1, le=200)
@@ -150,6 +156,10 @@ class SituacionOut(BaseModel):
     curso: str
     materia: str
     comunidad_autonoma: str | None
+    #: Sin esto el formulario de detalle no puede preseleccionar el desplegable
+    #: de provincia, y cada guardado enviaría la del perfil como si el docente
+    #: la hubiera cambiado.
+    provincia: str | None
     descripcion: str | None
     metodologia: str | None
     num_sesiones: int | None

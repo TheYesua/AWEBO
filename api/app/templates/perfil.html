@@ -35,9 +35,22 @@
         <label for="especialidad">{{ _('Especialidad') }}</label>
         <input type="text" id="especialidad" name="especialidad" maxlength="100">
       </div>
+      {#
+        Provincia, no comunidad, y desplegable en vez de texto libre.
+
+        El campo decidía qué currículo se aplica desde la tarea 9c, y siendo
+        texto libre eso dependía de cómo tecleara cada persona: «Cataluña»,
+        «cataluña» y «Catalunya» eran tres sitios distintos. La comunidad se
+        deriva de la provincia; aquí no se pregunta.
+      #}
       <div class="field">
-        <label for="comunidad_autonoma">{{ _('Comunidad autónoma') }}</label>
-        <input type="text" id="comunidad_autonoma" name="comunidad_autonoma" maxlength="50">
+        <label for="provincia">{{ _('Provincia') }}</label>
+        <select id="provincia" name="provincia" aria-describedby="provincia-help">
+          <option value="">{{ _('Sin especificar') }}</option>
+        </select>
+        <small id="provincia-help" class="help">
+          {{ _('Determina el currículo por defecto de tus situaciones. Podrás cambiarlo en cada una.') }}
+        </small>
       </div>
       <div class="actions">
         <button type="submit" class="btn btn--primary">{{ _('Guardar cambios') }}</button>
@@ -284,6 +297,7 @@
 /* Cadenas del JavaScript, que no pasan por _() del servidor. */
 const T = {
   errorDesconocido: {{ _('Error desconocido')|tojson }},
+  sinCurriculo: {{ _('(sin currículo todavía)')|tojson }},
   bajaSinModo: {{ _('Elige qué quieres que pase con tus situaciones.')|tojson }},
   bajaEnviando: {{ _('Enviando…')|tojson }},
   bajaEnviado: {{ _('Te hemos enviado un correo. Abre el enlace para confirmar la baja; caduca en media hora.')|tojson }},
@@ -317,7 +331,18 @@ function formatearFecha(iso) {
   });
 }
 
+/* El desplegable se rellena ANTES de volcar el perfil. Al revés, el `value`
+   que se asigna no existe todavía como <option> y el <select> se queda en
+   blanco sin dar ningún error — el docente vería «Sin especificar» aunque
+   tuviera provincia guardada. */
+const provinciasListas = Cobertura.cargarProvincias().then((grupos) => {
+  Cobertura.pintarProvincias(
+    document.getElementById('provincia'), grupos, '', T.sinCurriculo
+  );
+});
+
 async function cargarPerfil() {
+  await provinciasListas;
   const res = await fetch('/me');
   if (res.status === 401) {
     window.location.href = '/login';
@@ -335,7 +360,7 @@ async function cargarPerfil() {
   document.getElementById('nombre').value = u.nombre ?? '';
   document.getElementById('centro_educativo').value = u.centro_educativo ?? '';
   document.getElementById('especialidad').value = u.especialidad ?? '';
-  document.getElementById('comunidad_autonoma').value = u.comunidad_autonoma ?? '';
+  document.getElementById('provincia').value = u.provincia ?? '';
   await cargarPreferenciaIA(u);
   await cargarRespaldo();
 }

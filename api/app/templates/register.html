@@ -56,9 +56,19 @@
       <input type="text" id="especialidad" name="especialidad" maxlength="100">
     </div>
 
+    {#
+      Es la puerta por la que este dato entra la primera vez, así que si aquí
+      se queda como texto libre da igual lo que hagan el perfil y el formulario
+      de SdA: la cuenta nace con una errata y la arrastra.
+    #}
     <div class="field">
-      <label for="comunidad_autonoma">{{ _('Comunidad autónoma') }}</label>
-      <input type="text" id="comunidad_autonoma" name="comunidad_autonoma" maxlength="50" value="Ceuta">
+      <label for="provincia">{{ _('Provincia') }}</label>
+      <select id="provincia" name="provincia" aria-describedby="provincia-help">
+        <option value="">{{ _('Sin especificar') }}</option>
+      </select>
+      <small id="provincia-help" class="help">
+        {{ _('Determina qué currículo autonómico se usará al generar tus situaciones.') }}
+      </small>
     </div>
 
     {#
@@ -106,6 +116,25 @@
 
 {% block scripts %}
 <script>
+/* El desplegable se rellena al cargar. Sin sesión no se puede consultar
+   `/api/curriculo/provincias` —exige login—, así que el catálogo se sirve
+   incrustado por Jinja: es una lista fija de 52 entradas y no cambia. */
+(function () {
+  const sel = document.getElementById('provincia');
+  const grupos = {{ grupos_provincias|tojson }};
+  grupos.forEach((grupo) => {
+    const og = document.createElement('optgroup');
+    og.label = grupo[0];
+    grupo[1].forEach(([codigo, nombre]) => {
+      const op = document.createElement('option');
+      op.value = codigo;
+      op.textContent = nombre;
+      og.appendChild(op);
+    });
+    sel.appendChild(og);
+  });
+})();
+
 document.getElementById('register-form').addEventListener('submit', async (ev) => {
   ev.preventDefault();
   const msg = document.getElementById('register-msg');

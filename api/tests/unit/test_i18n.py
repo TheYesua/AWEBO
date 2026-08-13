@@ -77,7 +77,7 @@ class TestResolucion:
             json={
                 "correo": "i18n@test.com",
                 "contrasena": "ContraSegura1!",
-                "nombre": "Docente Idiomas",
+                "nombre": "Docente Idiomas", "comunidad_autonoma": "Ceuta",
             },
         )
         client.put("/me", json={"idioma_interfaz": "eu"})
@@ -269,7 +269,7 @@ class TestCambioDeIdioma:
             json={
                 "correo": "cambio@test.com",
                 "contrasena": "ContraSegura1!",
-                "nombre": "Docente Cambio",
+                "nombre": "Docente Cambio", "comunidad_autonoma": "Ceuta",
             },
         )
         client.post("/idioma", data={"idioma": "ca"})

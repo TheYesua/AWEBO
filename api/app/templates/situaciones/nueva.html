@@ -45,14 +45,36 @@
     <p class="help">{{ _('Los campos marcados con') }} <span aria-hidden="true" style="color: var(--color-danger-strong);">*</span>
       {{ _('son obligatorios.') }}</p>
 
-    <div class="field">
-      <label for="titulo">
-        {{ _('Título') }}
-        <span class="req" aria-hidden="true">*</span>
-        <span class="sr-only">{{ _('(obligatorio)') }}</span>
-      </label>
-      <input type="text" id="titulo" name="titulo" required minlength="2" maxlength="255"
-             placeholder="{{ _('Ej: La Antártida: una expedición científica') }}" autofocus>
+    <div class="row row--titulo">
+      <div class="field field--ancho">
+        <label for="titulo">
+          {{ _('Título') }}
+          <span class="req" aria-hidden="true">*</span>
+          <span class="sr-only">{{ _('(obligatorio)') }}</span>
+        </label>
+        <input type="text" id="titulo" name="titulo" required minlength="2" maxlength="255"
+               placeholder="{{ _('Ej: La Antártida: una expedición científica') }}" autofocus>
+      </div>
+      {#
+        La provincia va aquí, y no al final del formulario, porque **manda
+        sobre el curso y la materia**: de ella sale la comunidad, y de la
+        comunidad el currículo. Un campo que condiciona a otros dos y aparece
+        después de ellos invita a rellenarlos en el orden equivocado.
+      #}
+      <div class="field">
+        <label for="provincia">
+          {{ _('Provincia') }}
+          <span class="req" aria-hidden="true">*</span>
+          <span class="sr-only">{{ _('(obligatorio)') }}</span>
+        </label>
+        <select id="provincia" name="provincia" required
+                aria-describedby="provincia-help">
+          <option value="">{{ _('Elige provincia…') }}</option>
+        </select>
+        <small id="provincia-help" class="help">
+          {{ _('Determina el currículo que se aplica: cada comunidad tiene el suyo.') }}
+        </small>
+      </div>
     </div>
 
     <div class="row">
@@ -62,7 +84,15 @@
           <span class="req" aria-hidden="true">*</span>
           <span class="sr-only">{{ _('(obligatorio)') }}</span>
         </label>
-        <select id="curso" name="curso" required></select>
+        {#
+          `disabled` de verdad, no atenuado con CSS. El color por sí solo
+          incumple la WCAG 1.4.1 —no se puede usar como único medio para
+          transmitir información— y este proyecto ya arrastró dos
+          incumplimientos que costó detectar. El motivo va en un texto
+          asociado, que es lo que lee un lector de pantalla.
+        #}
+        <select id="curso" name="curso" required disabled
+                aria-describedby="bloqueo-aviso"></select>
       </div>
       <div class="field">
         <label for="materia">
@@ -70,12 +100,15 @@
           <span class="req" aria-hidden="true">*</span>
           <span class="sr-only">{{ _('(obligatorio)') }}</span>
         </label>
-        <select id="materia" name="materia" required
-                aria-describedby="materia-aviso materia-explicacion"></select>
+        <select id="materia" name="materia" required disabled
+                aria-describedby="bloqueo-aviso materia-aviso materia-explicacion"></select>
         <p class="alert" id="materia-aviso" role="alert" hidden></p>
         <p class="help" id="materia-explicacion" hidden></p>
       </div>
     </div>
+    <p class="help" id="bloqueo-aviso">
+      {{ _('Elige antes la provincia: el curso y la materia dependen del currículo de tu comunidad.') }}
+    </p>
 
     <div class="row">
       <div class="field">
@@ -105,11 +138,6 @@
     <div class="field">
       <label for="metodologia">{{ _('Metodología') }}</label>
       <select id="metodologia" name="metodologia"></select>
-    </div>
-
-    <div class="field">
-      <label for="comunidad_autonoma">{{ _('Comunidad autónoma') }}</label>
-      <input type="text" id="comunidad_autonoma" name="comunidad_autonoma" maxlength="50" value="Ceuta">
     </div>
 
     <div class="field">
@@ -154,6 +182,7 @@ const PREGUNTA_GUIA = {{ _('Pregunta guía')|tojson }};
    castellano. Lo detecta `tests/js/traducibles.test.js`. */
 const T = {
   errorDesconocido: {{ _('Error desconocido')|tojson }},
+  sinCurriculo: {{ _('(sin currículo todavía)')|tojson }},
   sinEspecificar: {{ _('— Sin especificar —')|tojson }},
   productoFinal: {{ _('Producto final:')|tojson }},
   usarPropuesta: {{ _('Usar esta propuesta')|tojson }},
@@ -182,6 +211,10 @@ rellenarSelect(document.getElementById('metodologia'), CATALOGOS.metodologias, {
 /* Matemáticas A y B salen en el desplegable como dos entradas sin más señas.
    El texto sale del propio RD 217/2022: la diferencia que la norma establece
    es de enfoque, no de itinerario de ciencias o de letras. */
+/* La provincia del perfil viene del servidor para que el desplegable salga ya
+   con ella elegida: es lo que el docente espera la mayoría de las veces. */
+const PROVINCIA_DEL_PERFIL = {{ (current_user.provincia or '')|tojson }};
+
 const EXPLICACIONES_MATERIA = {
   matematicasA: {{ _('Una de las dos opciones de Matemáticas de 4.º. Se desarrolla sobre todo mediante la resolución de problemas, la investigación y el análisis matemático de situaciones de la vida cotidiana.')|tojson }},
   matematicasB: {{ _('La otra opción de Matemáticas de 4.º. Además de lo anterior, profundiza en los procedimientos algebraicos, geométricos, analíticos y estadísticos, en contextos matemáticos, científicos y sociales. El real decreto no la vincula a ninguna modalidad de Bachillerato: la diferencia que establece es de enfoque.')|tojson }},
@@ -193,15 +226,37 @@ const pintarExplicacion = Cobertura.enlazarExplicacion(
   EXPLICACIONES_MATERIA
 );
 
-Cobertura.cargar().then((cobertura) => {
-  Cobertura.enlazar({
-    cobertura,
-    selCurso: document.getElementById('curso'),
-    selMateria: document.getElementById('materia'),
-    aviso: document.getElementById('materia-aviso'),
+/* La provincia manda: de ella sale la comunidad, y de la comunidad la
+   cobertura que llena los desplegables de curso y materia. Por eso se carga
+   primero y se vuelve a pedir la cobertura cada vez que cambia. */
+const selProvincia = document.getElementById('provincia');
+const selCurso     = document.getElementById('curso');
+const selMateria   = document.getElementById('materia');
+
+function repintarCobertura(provincia) {
+  return Cobertura.cargar(provincia).then((cobertura) => {
+    Cobertura.enlazar({
+      cobertura,
+      selCurso,
+      selMateria,
+      aviso: document.getElementById('materia-aviso'),
+    });
+    // Después de `enlazar`, que es quien rellena el <select>.
+    pintarExplicacion();
   });
-  // Después de `enlazar`, que es quien rellena el <select>.
-  pintarExplicacion();
+}
+
+Cobertura.cargarProvincias().then((grupos) => {
+  Cobertura.pintarProvincias(
+    selProvincia, grupos, PROVINCIA_DEL_PERFIL, T.sinCurriculo
+  );
+  Cobertura.enlazarProvincia({
+    selProvincia,
+    selCurso,
+    selMateria,
+    aviso: document.getElementById('bloqueo-aviso'),
+    alCambiar: repintarCobertura,
+  });
 });
 
 /* ---------------------------------------------------------------------------

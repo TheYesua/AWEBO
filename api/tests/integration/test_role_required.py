@@ -40,7 +40,7 @@ def test_role_required_con_rol_distinto_devuelve_403(client, db):
         json={
             "correo": "doc@test.com",
             "contrasena": "Docente1234",
-            "nombre": "Doc",
+            "nombre": "Doc", "comunidad_autonoma": "Ceuta",
         },
     )
     res = client.get("/_test/solo-admin")
@@ -54,7 +54,7 @@ def test_role_required_acepta_varios_roles(client, db):
         json={
             "correo": "doc2@test.com",
             "contrasena": "Docente1234",
-            "nombre": "Doc",
+            "nombre": "Doc", "comunidad_autonoma": "Ceuta",
         },
     )
     res = client.get("/_test/admin-o-docente")

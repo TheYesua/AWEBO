@@ -43,6 +43,13 @@ def create_app(config_object: type[Config] | None = None) -> Flask:
     from . import i18n
     i18n.init_app(app)
 
+    # Lo último, y sin poder tumbar el arranque: si la base de datos va por
+    # detrás del código, deja en el log el comando que lo arregla. Ver el
+    # docstring de ese módulo — un 500 en todas las páginas se parece mucho a
+    # «he roto algo gordo» cuando lo que falta es una orden de una línea.
+    from . import migraciones_pendientes
+    migraciones_pendientes.comprobar(app)
+
     return app
 
 
