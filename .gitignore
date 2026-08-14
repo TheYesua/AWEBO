@@ -148,3 +148,12 @@ scratch/
 # Modelos de voz: decenas de megas, no son obra nuestra (tarea 8b)
 /voces/*
 !/voces/LEEME.txt
+
+# Curriculos en PDF pesados
+# Los PDF de las fuentes, por tamaño (los boletines del DOGC son 17 MB).
+# Con ** porque desde el 14/08 hay una carpeta por comunidad: el patrón sin
+# ** dejó de cubrirlos en cuanto se movieron, y nada lo habría avisado.
+/curriculo/fuentes/**/*.pdf
+
+# Salida del extractor: se regenera de las fuentes, no se versiona.
+/curriculo/salida*/

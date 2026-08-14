@@ -184,6 +184,128 @@ class TestLosCodigosInventados:
         assert sda.competencias == []
 
 
+class TestElPrefijoQueSeInventaElModelo:
+    """El catálogo dice «1» y el modelo escribe «CE1». Tiene que casar igual.
+
+    Se intentó arreglar en el prompt, quitándole el `"CE1"` del ejemplo. **El
+    fallo cambió de idioma**: antes lo ponía la versión castellana y no la
+    catalana, después al revés. Un arreglo que mueve el fallo de sitio en vez
+    de quitarlo demuestra que la causa era variabilidad del modelo, no el
+    ejemplo.
+
+    Aquí es determinista. Y no da error cuando falla: la competencia se
+    descarta en silencio y el documento sale con una sección de menos.
+    """
+
+    def test_ce4_casa_con_el_codigo_4_del_catalogo(self, db, sda):
+        """El catálogo de este fichero usa «CE1» y «CE2» de verdad, así que
+        para probar la normalización hace falta un código **que no colisione**:
+        se añade «4» y se cita «CE4». Con «CE1» el test no probaba nada, porque
+        casaba exacto —y así fallaba, con razón—."""
+        from app.models import Competencia
+        from app.services.enlaces_curriculares import sincronizar
+
+        db.session.add(Competencia(
+            codigo="4", tipo=Competencia.ESPECIFICA, materia=sda.materia,
+            descripcion="Competencia sin prefijo", descriptores=[],
+            cursos_aplicables=[sda.curso], comunidad="ceuta", idioma="es",
+        ))
+        sda.contenido = {"conexion_curricular": {
+            "competencias": [{"codigo": "CE4"}], "criterios": [], "saberes": [],
+        }}
+        db.session.commit()
+
+        resumen = sincronizar(sda)
+
+        assert [c.codigo for c in sda.competencias] == ["4"]
+        assert resumen["huerfanos"].get("competencias", []) == [], (
+            "se contó como inventado un código que sí existe con otro formato"
+        )
+
+    def test_un_codigo_que_de_verdad_no_existe_sigue_siendo_huerfano(self, db, sda):
+        """La tolerancia no puede tragárselo todo: si aceptara cualquier cosa,
+        dejaría de detectar los códigos realmente inventados, que es para lo
+        que existe `sincronizar`."""
+        from app.services.enlaces_curriculares import sincronizar
+
+        sda.contenido = {"conexion_curricular": {
+            "competencias": [{"codigo": "CE404"}], "criterios": [], "saberes": [],
+        }}
+        db.session.commit()
+
+        resumen = sincronizar(sda)
+
+        assert sda.competencias == []
+        assert resumen["huerfanos"]["competencias"] == ["CE404"]
+
+    def test_el_codigo_exacto_gana_al_normalizado(self, db, sda):
+        """Si el catálogo tiene «CE1» de verdad —como el de estos tests—, ese
+        es el que debe enlazarse, no una variante que también exista."""
+        from app.models import Competencia
+        from app.services.enlaces_curriculares import sincronizar
+
+        db.session.add(Competencia(
+            codigo="1", tipo=Competencia.ESPECIFICA, materia=sda.materia,
+            descripcion="La que NO toca", descriptores=[],
+            cursos_aplicables=[sda.curso], comunidad="ceuta", idioma="es",
+        ))
+        sda.contenido = {"conexion_curricular": {
+            "competencias": [{"codigo": "CE1"}], "criterios": [], "saberes": [],
+        }}
+        db.session.commit()
+
+        sincronizar(sda)
+
+        codigos = [c.codigo for c in sda.competencias]
+        assert codigos == ["CE1"], (
+            "enlazó también la variante: una competencia citada, dos filas"
+        )
+
+
+class TestElDocumentoEnseñaElCodigoDelBoletin:
+    """Lo que ve el docente sale del JSONB, no de los enlaces.
+
+    Normalizar solo al buscar arregla la aplicación y no a la persona: la SdA
+    quedaba bien enlazada y el PDF seguía enseñando «CE1», que no está en
+    ningún decreto.
+    """
+
+    def test_el_codigo_citado_se_reescribe_con_el_del_catalogo(self, db, sda):
+        from app.models import Competencia
+        from app.services.enlaces_curriculares import sincronizar
+
+        db.session.add(Competencia(
+            codigo="4", tipo=Competencia.ESPECIFICA, materia=sda.materia,
+            descripcion="Sin prefijo", descriptores=[],
+            cursos_aplicables=[sda.curso], comunidad="ceuta", idioma="es",
+        ))
+        sda.contenido = {"conexion_curricular": {
+            "competencias": [{"codigo": "CE4", "justificacion": "x"}],
+            "criterios": [], "saberes": [],
+        }}
+        db.session.commit()
+
+        resumen = sincronizar(sda)
+
+        guardado = sda.contenido["conexion_curricular"]["competencias"][0]["codigo"]
+        assert guardado == "4", "el PDF seguiría enseñando un código que no existe"
+        assert resumen["codigos_normalizados"] == ["CE4"]
+
+    def test_un_codigo_huerfano_no_se_toca(self, db, sda):
+        """Es la señal de que el modelo se lo inventó. Normalizarlo lo
+        escondería, y `enlazar --simular` dejaría de poder contarlos."""
+        from app.services.enlaces_curriculares import sincronizar
+
+        sda.contenido = {"conexion_curricular": {
+            "competencias": [{"codigo": "CE404"}], "criterios": [], "saberes": [],
+        }}
+        db.session.commit()
+
+        sincronizar(sda)
+
+        assert sda.contenido["conexion_curricular"]["competencias"][0]["codigo"] == "CE404"
+
+
 class TestJSONBRetorcido:
     """El contenido lo escribe un modelo de lenguaje, no un formulario.
 

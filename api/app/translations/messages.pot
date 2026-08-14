@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-08-13 14:26+0200\n"
+"POT-Creation-Date: 2026-08-14 16:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -80,6 +80,29 @@ msgstr ""
 
 #: app/services/exportacion_service.py:53
 msgid "Atención a la diversidad"
+msgstr ""
+
+#: app/services/exportacion_service.py:259
+#: app/templates/exportacion/pdf.html:320
+msgid "competencias específicas"
+msgstr ""
+
+#: app/services/exportacion_service.py:260
+#: app/templates/exportacion/pdf.html:321
+msgid "criterios de evaluación"
+msgstr ""
+
+#: app/services/exportacion_service.py:261
+#: app/templates/exportacion/pdf.html:322
+msgid "saberes básicos"
+msgstr ""
+
+#: app/services/exportacion_service.py:288
+#: app/templates/exportacion/pdf.html:327
+#, python-brace-format
+msgid ""
+"Esta conexión curricular está incompleta: falta {partes}. Regenera la "
+"sección para completarla."
 msgstr ""
 
 #: app/services/reclamacion.py:144
@@ -2212,63 +2235,63 @@ msgstr ""
 msgid "Producto final"
 msgstr ""
 
-#: app/templates/exportacion/pdf.html:302
+#: app/templates/exportacion/pdf.html:331
 msgid "Competencias específicas"
 msgstr ""
 
-#: app/templates/exportacion/pdf.html:306
+#: app/templates/exportacion/pdf.html:335
 msgid "Criterios de evaluación"
 msgstr ""
 
-#: app/templates/exportacion/pdf.html:310
+#: app/templates/exportacion/pdf.html:339
 msgid "Saberes básicos"
 msgstr ""
 
-#: app/templates/exportacion/pdf.html:326
+#: app/templates/exportacion/pdf.html:355
 msgid "Actividades"
 msgstr ""
 
-#: app/templates/exportacion/pdf.html:336
+#: app/templates/exportacion/pdf.html:365
 msgid "Recursos"
 msgstr ""
 
-#: app/templates/exportacion/pdf.html:342
+#: app/templates/exportacion/pdf.html:371
 msgid "Criterios trabajados"
 msgstr ""
 
-#: app/templates/exportacion/pdf.html:352
+#: app/templates/exportacion/pdf.html:381
 msgid "Instrumentos de evaluación"
 msgstr ""
 
-#: app/templates/exportacion/pdf.html:354
+#: app/templates/exportacion/pdf.html:383
 msgid "Instrumento"
 msgstr ""
 
-#: app/templates/exportacion/pdf.html:354
+#: app/templates/exportacion/pdf.html:383
 msgid "Momento"
 msgstr ""
 
-#: app/templates/exportacion/pdf.html:354
+#: app/templates/exportacion/pdf.html:383
 msgid "Peso"
 msgstr ""
 
-#: app/templates/exportacion/pdf.html:367
+#: app/templates/exportacion/pdf.html:396
 msgid "Rúbricas por criterio"
 msgstr ""
 
-#: app/templates/exportacion/pdf.html:390
+#: app/templates/exportacion/pdf.html:419
 msgid "Principios DUA aplicados"
 msgstr ""
 
-#: app/templates/exportacion/pdf.html:396
+#: app/templates/exportacion/pdf.html:425
 msgid "Ajustes no significativos"
 msgstr ""
 
-#: app/templates/exportacion/pdf.html:402
+#: app/templates/exportacion/pdf.html:431
 msgid "Ajustes significativos"
 msgstr ""
 
-#: app/templates/exportacion/pdf.html:427
+#: app/templates/exportacion/pdf.html:456
 msgid "Sección sin renderizador específico."
 msgstr ""
 
@@ -2709,19 +2732,19 @@ msgstr ""
 msgid "Atención a la diversidad (DUA)"
 msgstr ""
 
-#: app/templates/situaciones/detalle.html:498
+#: app/templates/situaciones/detalle.html:502
 msgid "Resumir"
 msgstr ""
 
-#: app/templates/situaciones/detalle.html:499
+#: app/templates/situaciones/detalle.html:503
 msgid "Desarrollar"
 msgstr ""
 
-#: app/templates/situaciones/detalle.html:500
+#: app/templates/situaciones/detalle.html:504
 msgid "Traducir"
 msgstr ""
 
-#: app/templates/situaciones/detalle.html:501
+#: app/templates/situaciones/detalle.html:505
 msgid "Proponer alternativa"
 msgstr ""
 

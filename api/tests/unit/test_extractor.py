@@ -11,27 +11,33 @@ un error sino una materia que desaparece de la salida sin decir nada.
 from __future__ import annotations
 
 import json
+import re
 from pathlib import Path
 
 import pytest
 
 from app.curriculo.extractor import (
+    CLASE_AKN_TEXTO,
+    CLASE_AKN_TITULO,
     PERFIL_ORDEN_EFP_754,
     PERFIL_RD_217,
     Perfil,
     _norm_cabecera,
     derivar_cursos,
     extraer,
+    leer_parrafos_akn_eadop,
     volcar,
 )
 
 
-#: Los XML oficiales viven en el repositorio (``curriculo/fuentes/``)
+#: Los XML oficiales viven en el repositorio, en ``curriculo/fuentes/<comunidad>/``
+#: —una carpeta por comunidad desde el 14/08/2026—
 #: justamente para que estos tests puedan volver a la fuente en vez de fiarse
 #: de una transcripción.
 _FUENTES = Path(__file__).resolve().parents[2].parent / "curriculo" / "fuentes"
-XML_RD_217 = _FUENTES / "rd_217_2022.xml"
-XML_ORDEN_754 = _FUENTES / "orden_efp_754_2022.xml"
+XML_RD_217 = _FUENTES / "estatal" / "rd_217_2022.xml"
+XML_ORDEN_754 = _FUENTES / "ceuta" / "orden_efp_754_2022.xml"
+XML_DECRET_175 = _FUENTES / "cataluna" / "decret_175_2022.xml"
 
 
 # ---------------------------------------------------------------------------
@@ -486,3 +492,243 @@ class TestContraLaOrdenEFP754:
         assert "CULTURA CLÁSICA" not in d
         assert "INTRODUCCIÓN A LA FILOSOFÍA" not in d
         assert "MEDIOS Y RECURSOS DIGITALES" not in d
+
+
+# ---------------------------------------------------------------------------
+# La costura del formato y del idioma
+# ---------------------------------------------------------------------------
+
+
+class TestOtroBoletinYOtroIdioma:
+    """Que `Perfil` admita un boletín que no sea el BOE.
+
+    POR QUÉ ESTE TEST NO USA EL DOGC
+    ---------------------------------
+    Porque todavía no tengo el documento delante, y **diseñar contra un formato
+    imaginado es exactamente el error que dejó la abstracción como estaba**:
+    los dos perfiles que existen son del BOE, así que todo lo que comparten se
+    quedó fuera del `Perfil` sin que nadie decidiera que debía quedarse fuera.
+    Repetir la jugada adivinando cómo es el Akoma Ntoso sería el mismo fallo
+    con otra cara.
+
+    Lo que sí se puede comprobar hoy, y es lo que hace falta comprobar: que los
+    tres supuestos del BOE que estaban incrustados —de dónde salen los
+    párrafos, en qué idioma están los marcadores y qué palabra delata un
+    marcador de curso— son ahora **parámetros**, y que cambiándolos el mismo
+    extractor lee otra cosa.
+
+    El boletín de aquí es de mentira y está en catalán a propósito: es la
+    primera comunidad de la fase 2, así que si algo del extractor solo funciona
+    en castellano, sale aquí.
+    """
+
+    #: Un "boletín" que no es XML ni tiene clases CSS: dos columnas separadas
+    #: por `|`. Deliberadamente distinto del BOE, para que ningún supuesto
+    #: suyo se cuele sin que se note.
+    FUENTE = "\n".join([
+        "titol|Matemàtiques",
+        "text|Primer curs",
+        "text|Competències específiques.",
+        "text2|1. Resoldre problemes de l'entorn proper.",
+        "text|Criteris d'avaluació.",
+        "text|Competencia específica 1.",
+        "text2|1.1 Identificar les dades rellevants del problema.",
+        "text|Sabers.",
+        "text2|A. Resolució de problemes.",
+        "text2|− Estratègies de descomposició.",
+    ])
+
+    @staticmethod
+    def _lector(ruta):
+        for linea in ruta.read_text(encoding="utf-8").splitlines():
+            clase, _, texto = linea.partition("|")
+            if texto:
+                yield clase, texto
+
+    def _perfil_catalan(self):
+        return Perfil(
+            nombre="ficticio_ca",
+            clase_cabecera_materia="titol",
+            cabecera_mayusculas=False,
+            materias_objetivo={"Matemàtiques": "Matemáticas"},
+            cursos_por_defecto={"Matemàtiques": ["1º ESO"]},
+            lector=self._lector,
+            marcador_competencias="competències específiques",
+            marcador_criterios="criteris d'avaluació",
+            marcador_saberes="sabers",
+            palabra_curso="curs",
+            patrones_ciclo=[(
+                re.compile(r"^(primer|segon|tercer|quart) curs$"),
+                lambda m: [f"{['primer','segon','tercer','quart'].index(m.group(1)) + 1}º ESO"],
+            )],
+        )
+
+    def _extraer(self, tmp_path):
+        ruta = tmp_path / "dogc_de_mentira.txt"
+        ruta.write_text(self.FUENTE, encoding="utf-8")
+        return extraer(ruta, self._perfil_catalan())
+
+    def test_lee_un_formato_que_no_es_el_del_boe(self, tmp_path):
+        res = self._extraer(tmp_path)
+
+        assert len(res) == 1, "no reconoció la materia con otro lector"
+        assert res[0].materia_oficial == "Matemàtiques"
+
+    def test_encuentra_las_tres_secciones_en_catalan(self, tmp_path):
+        """La que más importa. Con los marcadores en castellano incrustados,
+        esto NO daba error: daba una materia con cero competencias, cero
+        criterios y cero saberes. Un currículo vacío que parece cargado."""
+        mc = self._extraer(tmp_path)[0]
+
+        assert len(mc.competencias) == 1, "no encontró «Competències específiques»"
+        assert len(mc.criterios) == 1, "no encontró «Criteris d'avaluació»"
+        assert len(mc.saberes) == 1, "no encontró «Sabers»"
+
+    def test_el_texto_se_guarda_en_su_idioma_sin_tocarlo(self, tmp_path):
+        """`_norm` es solo para comparar. Lo que se guarda es el original, y
+        con lenguas cooficiales eso deja de ser un detalle: es la diferencia
+        entre citar el decreto y parafrasearlo."""
+        mc = self._extraer(tmp_path)[0]
+
+        assert mc.competencias[0].descripcion.startswith("Resoldre problemes")
+        assert "Estratègies" in mc.saberes[0].items[0]
+
+    def test_los_perfiles_del_boe_siguen_sin_declarar_lector(self):
+        """El defecto tiene que seguir siendo el BOE: los dos perfiles reales
+        no declaran lector, y si el defecto se rompiera dejarían de extraer
+        nada. Que `lector` sea None y `leer` funcione es justo el contrato."""
+        for perfil in (PERFIL_RD_217, PERFIL_ORDEN_EFP_754):
+            assert perfil.lector is None
+            assert perfil.leer.__self__ is perfil
+
+    def test_un_marcador_sin_tilde_no_casa_y_conviene_saberlo(self, tmp_path):
+        """`_norm` pasa a minúsculas pero **no quita los acentos**. Escribir el
+        marcador sin tildes en un perfil nuevo no da error: da secciones
+        vacías. Se deja escrito aquí porque es la trampa más probable al
+        añadir el siguiente boletín."""
+        from dataclasses import replace
+
+        ruta = tmp_path / "dogc_de_mentira.txt"
+        ruta.write_text(self.FUENTE, encoding="utf-8")
+        perfil = replace(self._perfil_catalan(),
+                         marcador_competencias="competencies especifiques")
+
+        mc = extraer(ruta, perfil)[0]
+
+        assert mc.competencias == [], "si esto falla, _norm ya quita acentos"
+
+    def test_el_marcador_de_ciclo_tambien_se_lee_en_catalan(self, tmp_path):
+        """`palabra_curso` sola era un arreglo falso.
+
+        Cambiarla a «curs» hace que el atajo deje pasar el texto catalán, pero
+        después lo miden regex que dicen «primer curso» y no casa ninguna. El
+        resultado no es un error: es la materia con los cursos por defecto, que
+        es peor que un fallo porque parece un dato bueno.
+        """
+        mc = self._extraer(tmp_path)[0]
+
+        assert mc.cursos_aplicables == ["1º ESO"]
+        assert mc.ciclo == "Primer curs", (
+            "cayó en los cursos por defecto en vez de leer el marcador"
+        )
+
+    def test_si_ningun_articulo_da_cursos_se_dice_a_gritos(self, tmp_path, caplog):
+        """El silencio aquí es el fallo, no el diccionario vacío.
+
+        `derivar_cursos` devuelve {} cuando no reconoce ningún artículo, y
+        quien llama lo interpreta como «ninguna materia tiene curso derivado»:
+        todas se quedan con `cursos_por_defecto`. El extractor termina bien,
+        escribe sus JSON, y el currículo sale con los cursos equivocados sin
+        que nada lo diga. Es el fallo de «Matemáticas · 4º ESO» otra vez.
+        """
+        import logging
+
+        ruta = tmp_path / "dogc_de_mentira.txt"
+        ruta.write_text(self.FUENTE, encoding="utf-8")
+
+        with caplog.at_level(logging.ERROR, logger="curriculo.extractor"):
+            derivada = derivar_cursos(ruta, self._perfil_catalan())
+
+        assert derivada == {}
+        assert any("cursos_por_defecto" in r.getMessage() for r in caplog.records), (
+            "se quedó callado: nadie se enteraría de que los cursos son inventados"
+        )
+
+
+@pytest.mark.skipif(not XML_DECRET_175.exists(), reason=f"no está {XML_DECRET_175}")
+class TestElAkomaNtosoDelDOGC:
+    """El lector del Portal Jurídic, contra el fichero de verdad.
+
+    LO QUE ESTE FICHERO ENSEÑÓ, Y NO SE PODÍA SABER LEYENDO LA ESPECIFICACIÓN
+    -------------------------------------------------------------------------
+    Akoma Ntoso es un estándar con jerarquía semántica, y por eso se eligió
+    frente al PDF. Al abrirlo resultó que el EADOP no lo usa así:
+
+    * el `<body>` es una lista plana de `<hcontainer>` **sin `eId` ni número**;
+    * el texto va **dentro del atributo `@period`**, escapado como HTML, y
+      `period` es en el esquema la *vigencia temporal* del elemento;
+    * y los anexos —donde vive el currículo— **no están**: son enlaces a PDF.
+
+    O sea que el lector se parece más al del BOE que a un lector de Akoma
+    Ntoso: saca párrafos de un HTML que viene dentro de un atributo. Esa es
+    justo la clase de cosa por la que no se escribió este lector la sesión
+    anterior, cuando el fichero todavía no estaba.
+    """
+
+    def _parrafos(self):
+        return list(leer_parrafos_akn_eadop(XML_DECRET_175))
+
+    def test_saca_titulos_y_texto_y_no_solo_una_cosa(self):
+        clases = {c for c, _ in self._parrafos()}
+
+        assert clases == {CLASE_AKN_TITULO, CLASE_AKN_TEXTO}
+
+    def test_los_titulos_del_articulado_estan_completos(self):
+        """Los dos artículos que reparten materias por curso. Son el sustituto
+        catalán de los artículos 8/9/10 del BOE, y sin ellos no hay forma de
+        saber que Llatí no se imparte en 1.º."""
+        titulos = [x for c, x in self._parrafos() if c == CLASE_AKN_TITULO]
+
+        assert "Matèries de l'educació secundària obligatòria de primer a tercer curs" in titulos
+        assert "Matèries de l'educació secundària obligatòria a quart curs" in titulos
+
+    def test_las_materias_de_un_articulo_llegan_una_por_linea(self):
+        """El EADOP separa los items de una enumeración con `<br />` dentro de
+        un solo `<p>`. Cortando solo por `</p>`, las trece materias llegarían
+        pegadas en una línea y `RX_ITEM_LETRA` no reconocería ninguna: el
+        artículo entero se perdería sin dar ningún error."""
+        parrafos = [x for _, x in self._parrafos()]
+        i = parrafos.index(
+            [p for p in parrafos if p.startswith("1. Les matèries") and "primer a tercer" in p][0]
+        )
+        siguientes = parrafos[i + 1:i + 13]
+
+        assert siguientes[0] == "Aranès i Literatura a l'Aran" or siguientes[0].startswith("a)")
+        assert any("Biologia i Geologia" in s for s in siguientes)
+        assert any("Matemàtiques" in s for s in siguientes)
+
+    def test_el_texto_llega_desescapado(self):
+        """Va escapado como HTML dentro del atributo. Sin deshacerlo, el
+        currículo catalán se guardaría lleno de `&egrave;` y `&#39;`."""
+        todo = " ".join(x for _, x in self._parrafos())
+
+        assert "&egrave;" not in todo and "&#39;" not in todo
+        assert "matèries" in todo.lower()
+
+    def test_el_curriculo_NO_esta_en_este_fichero(self):
+        """La comprobación más importante, y la que da la mala noticia.
+
+        Los anexos son enlaces a PDF: el Anexo 3 —las materias de la ESO— es
+        `ANNEX3Matriessecundriaobligatriadefcat.pdf`. Si algún día el EADOP
+        empezara a incluirlos, este test se pondría rojo, que es justo lo que
+        queremos que pase: sería la señal de que se puede dejar de depender de
+        un PDF descargado a mano.
+        """
+        todo = " ".join(x for _, x in self._parrafos())
+
+        assert "Competències específiques" not in todo, (
+            "¡el currículo está en el XML! Revisar: ya no haría falta el PDF"
+        )
+        assert "Vegeu la imatge al final del document" in todo, (
+            "el marcador de anexo-en-PDF ha cambiado; comprobar qué trae ahora"
+        )

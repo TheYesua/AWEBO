@@ -163,6 +163,20 @@ def _add_h3(doc: Document, texto: str) -> None:
     _add_run(p, texto, bold=True, size=11, color=_COLOR_LABEL)
 
 
+def _add_aviso(doc: Document, texto: str) -> None:
+    """Un aviso al docente dentro del propio documento exportado.
+
+    Va en el documento y no solo en el log porque el destinatario es quien lo
+    abre, no quien administra la aplicación: es él quien puede regenerar la
+    sección, y quien se lo llevaría a su programación sin enterarse.
+    """
+    p = doc.add_paragraph()
+    p.paragraph_format.space_before = Pt(4)
+    p.paragraph_format.space_after = Pt(4)
+    _add_run(p, "⚠ ", bold=True, size=10)
+    _add_run(p, texto, size=10, italic=True)
+
+
 def _add_label_value(doc: Document, etiqueta: str, valor: str) -> None:
     """Añade un párrafo con etiqueta destacada y valor a continuación."""
     if not valor:
@@ -237,7 +251,46 @@ def _docx_objetivos(doc, d):
             _add_run(p, f"  [{comps}]", italic=True, size=9, color=_COLOR_SUTIL)
 
 
+#: Las tres partes de una conexión curricular, con el rótulo que las nombra.
+#: Si falta alguna, el documento lo dice: ver `_docx_conexion_curricular`.
+#: Traducidos, como el resto del documento: el aviso lo lee el docente, y el
+#: PDF sale en el idioma de la interfaz.
+_PARTES_CONEXION = (
+    ("competencias", _("competencias específicas")),
+    ("criterios", _("criterios de evaluación")),
+    ("saberes", _("saberes básicos")),
+)
+
+
 def _docx_conexion_curricular(doc, d):
+    # UNA SECCIÓN QUE FALTA SE DICE, NO SE OMITE
+    # -------------------------------------------
+    # Cada bloque se pintaba solo si tenía datos, así que una generación
+    # incompleta producía un documento que **parecía completo**: sin la sección
+    # de criterios, el PDF pasa de competencias a saberes y nada indica que
+    # falte nada.
+    #
+    # Pasó el 14/08/2026 con la misma SdA generada en catalán y en castellano:
+    # la castellana traía sus cuatro criterios y la catalana ninguno. No lo
+    # filtraba la exportación —esto pinta lo que hay en el JSONB, sin cribar—:
+    # el modelo sencillamente no los devolvió.
+    #
+    # No se puede impedir desde aquí, pero sí se puede dejar de disimularlo. Un
+    # docente que ve tres secciones no tiene forma de saber que debería haber
+    # cuatro; con el aviso, sabe que puede regenerar.
+    faltan = [rotulo for clave, rotulo in _PARTES_CONEXION if not d.get(clave)]
+    if faltan:
+        _add_aviso(
+            doc,
+            # Sin `%`: Jinja aplica `cadena % variables` a la salida de `_()`,
+            # y un porcentaje suelto rompe la traducción. Convención del
+            # proyecto desde el 11/08.
+            str(_("Esta conexión curricular está incompleta: falta {partes}. "
+                  "Regenera la sección para completarla.")).format(
+                partes=", ".join(str(f) for f in faltan)
+            )
+        )
+
     if d.get("competencias"):
         _add_h3(doc, "Competencias específicas")
         _add_tabla(

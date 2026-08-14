@@ -1,6 +1,17 @@
-"""Extractor del currículo LOMLOE a partir de los XML del BOE.
+"""Extractor del currículo LOMLOE a partir del boletín oficial que lo publica.
 
-Soporta dos fuentes oficiales, configurables como "perfiles":
+El formato del boletín vive **entero** en el `Perfil`: de dónde salen los
+párrafos (`lector`), cómo se llaman las secciones y en qué idioma
+(`marcador_*`) y cómo se reconoce un marcador de curso (`palabra_curso`,
+`patrones_ciclo`). De ahí para dentro el extractor solo ve párrafos con
+etiqueta, y la forma de una competencia, un criterio y un saber la fija la
+LOMLOE, no el editor.
+
+Esto no era así hasta el 14/08/2026: los dos perfiles que existían eran los dos
+del BOE, así que todo lo que compartían se quedó fuera del `Perfil` sin que
+nadie decidiera que debía quedarse fuera. Ver el docstring de `Perfil`.
+
+Hoy soporta dos fuentes oficiales, configurables como "perfiles":
 
 * ``rd_217`` — Real Decreto 217/2022 (BOE-A-2022-4975), enseñanzas mínimas
   estatales. Estructura más sintética: criterios y saberes agrupados por
@@ -32,12 +43,23 @@ import re
 import sys
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Iterator
+from typing import Callable, Iterator
+
+from html import unescape
 
 from lxml import etree
 
 
+#: Espacio de nombres de Akoma Ntoso 3.0.
+_NS_AKN = "http://docs.oasis-open.org/legaldocml/ns/akn/3.0"
+
 logger = logging.getLogger("curriculo.extractor")
+
+
+#: Un lector convierte el fichero de entrada en una secuencia de
+#: ``(clase, texto)``. Es el único punto que sabe qué formato tiene el
+#: boletín; de ahí para dentro, el extractor solo ve párrafos con etiqueta.
+Lector = Callable[[Path], Iterator[tuple[str, str]]]
 
 
 # ---------------------------------------------------------------------------
@@ -47,7 +69,33 @@ logger = logging.getLogger("curriculo.extractor")
 
 @dataclass(frozen=True)
 class Perfil:
-    """Configuración específica del formato de un BOE concreto."""
+    """Configuración específica del formato de un boletín concreto.
+
+    HASTA DÓNDE LLEGA ESTA ABSTRACCIÓN, Y HASTA DÓNDE NO
+    -----------------------------------------------------
+    Se diseñó con dos muestras del **mismo editor**: el RD 217 y la Orden
+    EFP/754 son los dos del BOE. Eso significa que todo lo que los dos
+    comparten quedó fuera del `Perfil` sin que nadie se diera cuenta de que era
+    una decisión — porque no había con qué contrastarlo.
+
+    Las tres cosas que estaban fuera y son del BOE, no del currículo:
+
+    * **De dónde salen los párrafos.** El BOE publica ``<texto>`` con ``<p
+      class="centro_negrita">``: la maquetación ES la estructura. Otros
+      boletines publican Akoma Ntoso, donde la jerarquía es semántica y las
+      clases CSS no existen. Por eso ``lector`` es un parámetro.
+    * **En qué idioma están los marcadores.** «Competencias específicas» solo
+      vale en castellano. Un decreto catalán dice «Competències específiques»,
+      y el extractor no encontraría ni una sola sección — sin dar ningún error,
+      devolviendo cero materias.
+    * **De dónde se sacan los cursos de cada materia.** Los artículos de la
+      parte dispositiva son una convención del BOE.
+
+    Lo que sí es común y se queda fuera del `Perfil`: la forma de una
+    competencia específica, de un criterio y de un saber básico. Eso lo fija la
+    LOMLOE y lo repiten todos los decretos, que para eso son desarrollo de la
+    misma ley.
+    """
 
     nombre: str
 
@@ -68,6 +116,50 @@ class Perfil:
     #: Valores Cívicos o ``None`` si no lo hay). Los usa ``derivar_cursos``.
     #: El RD 217 los numera 8, 9 y 10; la Orden EFP/754, 9 y 10.
     articulos_cursos: tuple[int, int, int | None] = (8, 9, 10)
+
+    #: Cómo se convierte el fichero de entrada en una secuencia de
+    #: ``(clase, texto)``. El nombre `clase` es herencia del BOE; para un
+    #: formato sin clases CSS puede ser cualquier etiqueta que el lector
+    #: considere significativa, o cadena vacía.
+    #:
+    #: ``None`` significa «el del BOE», que es lo que usan los dos perfiles de
+    #: hoy. Se resuelve en `leer()` y no aquí porque los perfiles se construyen
+    #: arriba del todo del módulo, antes de que la función exista: fijarlo como
+    #: defecto en `__post_init__` da `NameError` al importar.
+    lector: "Lector | None" = None
+
+    #: Los tres encabezados de sección, **en el idioma del boletín**, tal y
+    #: como los deja `_norm`: en minúsculas, sin punto final y **con tildes**.
+    #: `_norm` no quita los acentos, así que escribirlos sin ellos aquí no
+    #: casaría con nada — y el extractor devolvería cero materias sin dar
+    #: ningún error.
+    marcador_competencias: str = "competencias específicas"
+    marcador_criterios: str = "criterios de evaluación"
+    marcador_saberes: str = "saberes básicos"
+
+    #: Palabra que tiene que aparecer para que merezca la pena probar los
+    #: patrones de ciclo. Es un atajo de rendimiento, pero también de idioma:
+    #: en catalán es «curs» y sin cambiarla no casaría ningún marcador.
+    palabra_curso: str = "curso"
+
+    #: Patrones que reconocen un marcador de ciclo, con la función que traduce
+    #: la coincidencia a lista de cursos. ``None`` = los del BOE, en castellano.
+    #:
+    #: Va aquí y no como constante del módulo porque `palabra_curso` sola era
+    #: un arreglo falso: cambiarla a «curs» hace que el atajo deje pasar el
+    #: texto catalán, pero después lo miden regex que dicen «primer curso» y no
+    #: casa ninguna. El resultado no es un error: es una materia con los cursos
+    #: por defecto, que es peor, porque parece un dato.
+    patrones_ciclo: "list[tuple[re.Pattern[str], Callable]] | None" = None
+
+    def leer(self, ruta: Path) -> Iterator[tuple[str, str]]:
+        """Los párrafos del documento, con el lector que corresponda."""
+        return (self.lector or leer_parrafos_boe)(ruta)
+
+    @property
+    def ciclos(self) -> "list[tuple[re.Pattern[str], Callable]]":
+        """Los patrones de ciclo de este boletín. Mismo motivo que `leer`."""
+        return self.patrones_ciclo if self.patrones_ciclo is not None else RX_CICLOS
 
 
 #: Las 18 materias del Anexo II del RD 217/2022, con la etiqueta corta que usa
@@ -455,32 +547,28 @@ def _norm_cabecera(t: str) -> str:
     return re.sub(r"\s+", " ", _ESPACIOS_RAROS.sub(" ", t)).strip()
 
 
-def _es_marcador_competencias(t: str) -> bool:
-    return _norm(t) == "competencias específicas"
-
-
-def _es_marcador_criterios(t: str) -> bool:
-    return _norm(t) == "criterios de evaluación"
-
-
-def _es_marcador_saberes(t: str) -> bool:
-    return _norm(t) == "saberes básicos"
-
-
-def _parsear_ciclo(t: str) -> tuple[str, list[str], str | None] | None:
+def _parsear_ciclo(
+    t: str,
+    palabra_curso: str = "curso",
+    patrones: "list[tuple[re.Pattern[str], Callable]] | None" = None,
+) -> tuple[str, list[str], str | None] | None:
     """Reconoce un marcador de ciclo y devuelve ``(nombre, cursos, itinerario)``.
 
     El itinerario es "A" o "B" solo si el marcador menciona "Matemáticas A/B"
     (caso de la Orden EFP/754 para 4.º curso). En el resto de casos es None.
     """
     norm = _norm(t)
-    # Pequeña optimización: si la palabra "curso" no aparece, no puede ser
-    # un marcador de ciclo. Cubre todas las variantes ("Primer curso",
-    # "Cursos de primero a tercero", "Cuarto curso: Matemáticas A", etc.).
-    if "curso" not in norm:
+    # Atajo: si la palabra del perfil no aparece, no puede ser un marcador de
+    # ciclo. Cubre todas las variantes ("Primer curso", "Cursos de primero a
+    # tercero", "Cuarto curso: Matemáticas A", etc.).
+    #
+    # Es rendimiento **y** idioma: el literal "curso" estaba escrito aquí, y en
+    # un decreto catalán («primer curs») descartaría todos los marcadores antes
+    # de mirarlos. No daría error: daría materias sin cursos.
+    if palabra_curso not in norm:
         return None
 
-    for regex, fn in RX_CICLOS:
+    for regex, fn in (patrones if patrones is not None else RX_CICLOS):
         m = regex.match(norm)
         if m is None:
             continue
@@ -518,7 +606,12 @@ def _limpiar_item_saber(texto: str) -> str:
 # ---------------------------------------------------------------------------
 
 
-def _iter_parrafos(xml_path: Path) -> Iterator[tuple[str, str]]:
+def leer_parrafos_boe(xml_path: Path) -> Iterator[tuple[str, str]]:
+    """Lector del XML del BOE: ``<texto>`` con ``<p class="...">``.
+
+    Deja de ser privado porque ahora es **un** lector, no **el** lector: es el
+    valor por defecto de `Perfil.lector`, y otro boletín traerá el suyo.
+    """
     tree = etree.parse(str(xml_path))
     texto_node = tree.getroot().find("texto")
     if texto_node is None:
@@ -528,6 +621,76 @@ def _iter_parrafos(xml_path: Path) -> Iterator[tuple[str, str]]:
         texto = _texto(p)
         if texto:
             yield clase, texto
+
+
+#: Etiquetas que usa `leer_parrafos_akn_eadop` en lugar de las clases CSS del
+#: BOE. No hay clases: el papel del párrafo lo da su sitio en el árbol.
+CLASE_AKN_TITULO = "akn_heading"
+CLASE_AKN_TEXTO = "akn_p"
+
+
+def leer_parrafos_akn_eadop(xml_path: Path) -> Iterator[tuple[str, str]]:
+    """Lector del Akoma Ntoso que publica el Portal Jurídic de Catalunya.
+
+    LO QUE ESTE FORMATO **NO** ES
+    ------------------------------
+    Akoma Ntoso es un estándar legislativo con jerarquía semántica: artículos,
+    apartados y listas son elementos con identidad. Al leer la documentación yo
+    di por hecho que el DOGC lo usaría así, y **es falso**. Lo que publica el
+    EADOP es:
+
+    * un `<body>` plano de `<hcontainer>` sin `eId` ni numeración — el número
+      de artículo no está en ninguna parte, solo su posición y su título;
+    * y el texto **dentro del atributo `@period`**, escapado como HTML.
+
+    `period` es, en el esquema de Akoma Ntoso, la vigencia temporal de un
+    elemento. Meter ahí el cuerpo del documento es un abuso del formato, pero
+    es lo que hay, y es exactamente el tipo de cosa que no se puede adivinar
+    desde la especificación: había que abrir el fichero.
+
+    Consecuencia práctica: **este lector se parece más al del BOE que a un
+    lector de Akoma Ntoso de verdad**. Saca párrafos de un HTML, solo que el
+    HTML viene dentro de un atributo.
+
+    LO QUE TAMPOCO TRAE
+    -------------------
+    El currículo. Los anexos son enlaces a PDF; el Anexo 3 —las materias de la
+    ESO— es `ANNEX3Matriessecundriaobligatriadefcat.pdf`. De este XML sale el
+    articulado, que es de donde se deriva qué materia se imparte en qué curso.
+    """
+    tree = etree.parse(str(xml_path))
+    body = tree.getroot().find(f"{{{_NS_AKN}}}act/{{{_NS_AKN}}}body")
+    if body is None:
+        raise RuntimeError("El XML no tiene <act><body>: ¿es Akoma Ntoso?")
+
+    for contenedor in body.iter(f"{{{_NS_AKN}}}hcontainer"):
+        cabecera = contenedor.find(f"{{{_NS_AKN}}}heading")
+        if cabecera is not None:
+            titulo = _norm_cabecera(" ".join(cabecera.itertext()))
+            if titulo:
+                yield CLASE_AKN_TITULO, titulo
+
+        cuerpo = contenedor.find(f"{{{_NS_AKN}}}content")
+        if cuerpo is None:
+            continue
+        for parrafo in _parrafos_de_html(cuerpo.get("period") or ""):
+            yield CLASE_AKN_TEXTO, parrafo
+
+
+def _parrafos_de_html(crudo: str) -> Iterator[str]:
+    """Trocea el HTML escapado del `@period` en párrafos de texto plano.
+
+    Se corta por `</p>` y por `<br>` **a la vez**: el EADOP usa los dos para lo
+    mismo, y los items de una enumeración («a) Aranès i Literatura a l'Aran»)
+    van separados por `<br />` dentro de un solo `<p>`. Cortando solo por
+    párrafo, las trece materias de un artículo llegarían pegadas en una línea y
+    `RX_ITEM_LETRA` no reconocería ninguna.
+    """
+    texto = unescape(crudo)
+    for trozo in re.split(r"(?i)</p\s*>|<br\s*/?>", texto):
+        limpio = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", trozo)).strip()
+        if limpio:
+            yield limpio
 
 
 # ---------------------------------------------------------------------------
@@ -697,7 +860,9 @@ class _Parser:
             return
 
         # 3) Marcador de ciclo
-        ciclo_info = _parsear_ciclo(texto)
+        ciclo_info = _parsear_ciclo(
+            texto, self.perfil.palabra_curso, self.perfil.ciclos
+        )
         if ciclo_info is not None:
             nombre, cursos, itin = ciclo_info
             # Caso especial: en la Orden EFP/754, los saberes de Matemáticas
@@ -722,15 +887,15 @@ class _Parser:
             return
 
         # 4) Marcadores de sección
-        if _es_marcador_competencias(texto):
+        if _norm(texto) == self.perfil.marcador_competencias:
             self._cerrar_ce_actual()
             self.estado = _S_DESC_CE
             return
-        if _es_marcador_criterios(texto):
+        if _norm(texto) == self.perfil.marcador_criterios:
             self._cerrar_ce_actual()
             self.estado = _S_CRITERIOS
             return
-        if _es_marcador_saberes(texto):
+        if _norm(texto) == self.perfil.marcador_saberes:
             self._cerrar_bloque_actual()
             self.estado = _S_SABERES
             return
@@ -802,7 +967,7 @@ class _Parser:
 
 def extraer(xml_path: Path, perfil: Perfil) -> list[MateriaCiclo]:
     parser = _Parser(perfil)
-    for clase, texto in _iter_parrafos(xml_path):
+    for clase, texto in perfil.leer(xml_path):
         parser.procesar(clase, texto)
     parser._cerrar_ciclo_actual()
     return parser.resultados
@@ -927,7 +1092,7 @@ def derivar_cursos(xml_path: Path, perfil: Perfil) -> dict[str, list[str]]:
     apartado: int | None = None
     esperados = dict(zip(perfil.articulos_cursos, _TITULOS_ESPERADOS))
 
-    for _clase, texto in _iter_parrafos(xml_path):
+    for _clase, texto in perfil.leer(xml_path):
         cabecera = RX_ARTICULO.match(texto.strip())
         if cabecera is not None:
             articulo = int(cabecera.group(1))
@@ -967,11 +1132,39 @@ def derivar_cursos(xml_path: Path, perfil: Perfil) -> dict[str, list[str]]:
             _asignar(texto, cursos)
 
     orden = {c: i for i, c in enumerate(_TODA_LA_ETAPA)}
-    return {
+    derivados = {
         materia: sorted(cursos, key=lambda c: orden[c])
         for materia, cursos in acumulado.items()
         if cursos
     }
+
+    # LA PARTE DISPOSITIVA ES UNA CONVENCIÓN DEL BOE, NO DEL CURRÍCULO
+    # -----------------------------------------------------------------
+    # `RX_ARTICULO` busca "Artículo N." y `_TITULOS_ESPERADOS` los compara con
+    # tres títulos en castellano. En un boletín que reparta los cursos de otra
+    # forma —o que los diga en otro idioma— aquí no casa nada y esta función
+    # devuelve un diccionario vacío.
+    #
+    # Vacío **no es un error** para quien llama: significa "ninguna materia
+    # tiene curso derivado", y entonces todas se quedan con
+    # `cursos_por_defecto`. Es decir, el extractor terminaría bien, escribiría
+    # sus JSON y el currículo saldría con los cursos equivocados sin que nada
+    # lo dijera. Es exactamente la clase de fallo que este proyecto lleva
+    # persiguiendo desde el 03/08 («Matemáticas · 4º ESO»).
+    #
+    # No se parametriza a ciegas: se avisa. Cuando haya un boletín real
+    # delante se sabrá si esto necesita un mecanismo propio o si el suyo se
+    # parece lo bastante al del BOE.
+    if not derivados:
+        logger.error(
+            "Ningún artículo de %s dio cursos (se buscaban %s). Todas las "
+            "materias se quedarán con cursos_por_defecto, que puede estar mal. "
+            "Si este boletín no reparte los cursos en artículos dispositivos, "
+            "hace falta un mecanismo propio para él.",
+            perfil.nombre, perfil.articulos_cursos,
+        )
+
+    return derivados
 
 
 # ---------------------------------------------------------------------------

@@ -39,6 +39,8 @@ consulta garantizada a vacío en cada carga.
 """
 from __future__ import annotations
 
+import re
+
 import structlog
 from sqlalchemy import select
 
@@ -87,6 +89,58 @@ def _codigos(contenido: dict, clave: str) -> list[str]:
     return list(vistos)
 
 
+#: Prefijos que un modelo de lenguaje le pone a un código de competencia sin
+#: que se lo pidan: «CE1», «C.E. 1», «CE-1». Ninguno está en el catálogo —ni el
+#: BOE ni el DOGC numeran así: son «1», «2»…— pero son lo bastante habituales
+#: en la literatura didáctica como para que el modelo los escriba solo.
+_RX_PREFIJO_COMPETENCIA = re.compile(r"^(?:C\.?\s*E\.?|CE)\s*[-–.]?\s*(?=\d)", re.I)
+
+
+def variantes_de_codigo(codigo: str) -> list[str]:
+    """El código tal cual, y las formas equivalentes que puede haber escrito el modelo.
+
+    POR QUÉ ESTO NO SE ARREGLA EN EL PROMPT
+    ----------------------------------------
+    Se intentó. El ejemplo del prompt llevaba `"CE1"` —la convención de la
+    literatura didáctica, no la del boletín— y se cambió por un marcador. El
+    resultado, comprobado generando la misma SdA dos veces: **el fallo cambió
+    de idioma**. Antes el castellano ponía el prefijo y el catalán no; después,
+    al revés.
+
+    Eso demuestra que la causa no era el ejemplo, o no solo: es variabilidad
+    del modelo. Y pedirle a un modelo que respete un formato es razonable;
+    **confiar en que lo haga siempre para decidir si un dato normativo se
+    enlaza o se tira, no**.
+
+    Así que se normaliza aquí, que es determinista. El orden importa: **primero
+    el código tal cual**, para no romper un catálogo que algún día sí use
+    prefijo, y solo después las variantes.
+    """
+    codigo = (codigo or "").strip()
+    if not codigo:
+        return []
+    formas = [codigo]
+
+    sin_prefijo = _RX_PREFIJO_COMPETENCIA.sub("", codigo)
+    if sin_prefijo != codigo:
+        formas.append(sin_prefijo)
+
+    # Y al revés: si el catálogo llevara el prefijo y el modelo no.
+    if codigo[:1].isdigit():
+        formas.append(f"CE{codigo}")
+
+    # Espacios dentro del código: «1. 1» por «1.1».
+    compacto = re.sub(r"\s+", "", codigo)
+    if compacto != codigo:
+        formas.append(compacto)
+
+    vistas: dict[str, None] = {}
+    for f in formas:
+        if f:
+            vistas.setdefault(f, None)
+    return list(vistas)
+
+
 def _resolver(
     modelo, codigos: list[str], materia: str, curso: str, comunidad: str | None
 ) -> tuple[list, list[str]]:
@@ -110,7 +164,15 @@ def _resolver(
     # La comunidad va lo primero: un código de Cataluña y uno de Ceuta pueden
     # ser idénticos, y enlazar el de la otra comunidad es peor que no enlazar
     # nada, porque el resultado parece correcto.
-    condicion = (modelo.comunidad == comunidad) & modelo.codigo.in_(codigos)
+    # Se busca por TODAS las variantes de cada código, no solo por el literal.
+    # Ver `variantes_de_codigo`: el modelo escribe «CE1» donde el catálogo dice
+    # «1», y sin esto la competencia se descartaba en silencio.
+    por_variante: dict[str, str] = {}
+    for original in codigos:
+        for v in variantes_de_codigo(original):
+            por_variante.setdefault(v, original)
+
+    condicion = (modelo.comunidad == comunidad) & modelo.codigo.in_(list(por_variante))
     if hasattr(modelo, "materia"):
         # `Competencia.materia` es NULL en las competencias clave, que valen
         # para cualquier materia. Excluirlas dejaría fuera precisamente las
@@ -122,7 +184,34 @@ def _resolver(
         fila for fila in candidatas
         if not fila.cursos_aplicables or curso in fila.cursos_aplicables
     ]
-    encontrados = {fila.codigo for fila in validas}
+
+    # UNA FILA POR CÓDIGO CITADO, LA MÁS PARECIDA
+    # --------------------------------------------
+    # Buscar por variantes puede traer DOS filas para un mismo código citado:
+    # si el catálogo tiene «CE1» y «1», el «CE1» del modelo casa con ambas.
+    # Enlazar las dos duplicaría la competencia en el documento y, peor,
+    # ataría la SdA a una fila que el docente no citó.
+    #
+    # Gana la variante que antes aparece en `variantes_de_codigo`, que pone el
+    # literal primero: si el catálogo tiene lo que se escribió, es eso.
+    preferencia = {
+        original: {v: i for i, v in enumerate(variantes_de_codigo(original))}
+        for original in codigos
+    }
+    mejor: dict[str, object] = {}
+    for fila in validas:
+        original = por_variante.get(fila.codigo, fila.codigo)
+        orden = preferencia.get(original, {}).get(fila.codigo, 99)
+        anterior = mejor.get(original)
+        if anterior is None or orden < preferencia.get(original, {}).get(
+            anterior.codigo, 99
+        ):
+            mejor[original] = fila
+    validas = list(mejor.values())
+    # Un código del modelo se da por encontrado si casó **por cualquiera de sus
+    # variantes**: lo que importa es que la fila del catálogo sea la correcta,
+    # no cómo la escribiera quien la citó.
+    encontrados = {por_variante.get(fila.codigo, fila.codigo) for fila in validas}
     return validas, [c for c in codigos if c not in encontrados]
 
 
@@ -162,6 +251,42 @@ def hay_curriculo(materia: str, curso: str, comunidad: str | None = None) -> boo
     return False
 
 
+def _reescribir_codigos(contenido: dict, clave: str, canonicos: dict[str, str]) -> bool:
+    """Cambia en el JSONB los códigos citados por los del catálogo.
+
+    POR QUÉ NO BASTA CON QUE EL ENLACE CASE
+    ----------------------------------------
+    `variantes_de_codigo` hace que «CE1» encuentre la fila «1», así que la SdA
+    queda **bien enlazada**. Pero el documento exportado no se pinta de los
+    enlaces: se pinta del JSONB, donde sigue estando lo que escribió el modelo.
+
+    O sea que el docente veía «CE1» en su PDF, y ese código no está en el
+    decreto. Enlazar bien por dentro y enseñar mal por fuera resuelve el
+    problema de la aplicación y no el de la persona.
+
+    Se reescribe solo lo que **se ha resuelto contra una fila real**. Lo que no
+    casó se queda tal cual: es un código huérfano y hay que poder verlo.
+    """
+    seccion = (contenido or {}).get("conexion_curricular") or {}
+    if not isinstance(seccion, dict):
+        return False
+    bruto = seccion.get(clave)
+    if not isinstance(bruto, list):
+        return False
+
+    cambiado = False
+    for elemento in bruto:
+        if not isinstance(elemento, dict):
+            continue
+        for campo in ("codigo", "competencia"):
+            actual = elemento.get(campo)
+            nuevo = canonicos.get(actual) if isinstance(actual, str) else None
+            if nuevo and nuevo != actual:
+                elemento[campo] = nuevo
+                cambiado = True
+    return cambiado
+
+
 def sincronizar(situacion: SituacionAprendizaje, *, commit: bool = True) -> dict:
     """Rehace los enlaces de esta SdA a partir de su JSONB.
 
@@ -184,11 +309,20 @@ def sincronizar(situacion: SituacionAprendizaje, *, commit: bool = True) -> dict
         resumen["sin_curriculo"] = not hay_curriculo(
             situacion.materia, situacion.curso, comunidad
         )
+        canonicos: dict[str, str] = {}
         for clave, modelo, atributo in _MAPA:
             codigos = _codigos(situacion.contenido, clave)
             filas, huerfanos = _resolver(
                 modelo, codigos, situacion.materia, situacion.curso, comunidad
             )
+            # Qué código citó el modelo -> cuál es el del boletín. Se acumula
+            # entre secciones porque un criterio referencia su competencia:
+            # si la competencia se citó «CE1» y el criterio dice
+            # `"competencia": "CE1"`, hay que corregir los dos.
+            for fila in filas:
+                for citado in codigos:
+                    if fila.codigo in variantes_de_codigo(citado):
+                        canonicos[citado] = fila.codigo
             # Asignación completa y no `.append`: la sección se puede regenerar
             # o deshacer, y entonces los enlaces de la versión anterior tienen
             # que desaparecer. Acumular dejaría un histórico que nadie pidió y
@@ -197,6 +331,17 @@ def sincronizar(situacion: SituacionAprendizaje, *, commit: bool = True) -> dict
             resumen[clave] = len(filas)
             if huerfanos:
                 resumen["huerfanos"][clave] = huerfanos
+
+        if canonicos:
+            contenido = dict(situacion.contenido or {})
+            if any(_reescribir_codigos(contenido, clave, canonicos)
+                   for clave, _m, _a in _MAPA):
+                # Reasignación entera y no mutación in situ: `contenido` es
+                # JSONB y SQLAlchemy no detecta los cambios de un dict anidado.
+                situacion.contenido = contenido
+                resumen["codigos_normalizados"] = sorted(
+                    c for c, canon in canonicos.items() if c != canon
+                )
 
         if commit:
             db.session.commit()

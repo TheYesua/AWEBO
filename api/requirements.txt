@@ -55,3 +55,16 @@ factory-boy==3.3.1
 # Solo lo usa test_configuracion.py, para leer los docker-compose y comprobar
 # que las variables del .env.example llegan de verdad a los contenedores.
 PyYAML==6.0.2
+
+# Extracción del currículo catalán, que viene en PDF y no en XML.
+#
+# Va aquí y no en un requirements aparte porque `flask seed curriculo` corre
+# dentro del contenedor `api`, y la extracción es un paso previo que se lanza
+# con `python -m app.curriculo.extractor_xtec` en el mismo sitio.
+#
+# Por qué PyMuPDF y no poppler: los PDF del DOGC traen la codificación de
+# fuente rota y `pdftotext` **borra** los glifos que no sabe traducir, sin
+# decirlo. PyMuPDF además da la posición de cada línea, que aquí no es un
+# extra: los criterios vienen en una tabla de dos columnas —una por grupo de
+# cursos— y sin la posición se mezclan dos currículos distintos.
+pymupdf==1.24.14

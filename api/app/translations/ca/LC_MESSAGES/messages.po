@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: AWEBO VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-08-13 14:26+0200\n"
+"POT-Creation-Date: 2026-08-14 16:21+0200\n"
 "PO-Revision-Date: 2026-08-04 15:31+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ca\n"
@@ -90,6 +90,31 @@ msgstr "Avaluació"
 #: app/services/exportacion_service.py:53
 msgid "Atención a la diversidad"
 msgstr "Atenció a la diversitat"
+
+#: app/services/exportacion_service.py:259
+#: app/templates/exportacion/pdf.html:320
+msgid "competencias específicas"
+msgstr "competències específiques"
+
+#: app/services/exportacion_service.py:260
+#: app/templates/exportacion/pdf.html:321
+msgid "criterios de evaluación"
+msgstr "criteris d'avaluació"
+
+#: app/services/exportacion_service.py:261
+#: app/templates/exportacion/pdf.html:322
+msgid "saberes básicos"
+msgstr "sabers bàsics"
+
+#: app/services/exportacion_service.py:288
+#: app/templates/exportacion/pdf.html:327
+#, python-brace-format
+msgid ""
+"Esta conexión curricular está incompleta: falta {partes}. Regenera la "
+"sección para completarla."
+msgstr ""
+"Aquesta connexió curricular és incompleta: hi falta {partes}. Torna a "
+"generar la secció per completar-la."
 
 #: app/services/reclamacion.py:144
 #, python-brace-format
@@ -2581,63 +2606,63 @@ msgstr "Pregunta guia"
 msgid "Producto final"
 msgstr "Producte final"
 
-#: app/templates/exportacion/pdf.html:302
+#: app/templates/exportacion/pdf.html:331
 msgid "Competencias específicas"
 msgstr "Competències específiques"
 
-#: app/templates/exportacion/pdf.html:306
+#: app/templates/exportacion/pdf.html:335
 msgid "Criterios de evaluación"
 msgstr "Criteris d'avaluació"
 
-#: app/templates/exportacion/pdf.html:310
+#: app/templates/exportacion/pdf.html:339
 msgid "Saberes básicos"
 msgstr "Sabers bàsics"
 
-#: app/templates/exportacion/pdf.html:326
+#: app/templates/exportacion/pdf.html:355
 msgid "Actividades"
 msgstr "Activitats"
 
-#: app/templates/exportacion/pdf.html:336
+#: app/templates/exportacion/pdf.html:365
 msgid "Recursos"
 msgstr "Recursos"
 
-#: app/templates/exportacion/pdf.html:342
+#: app/templates/exportacion/pdf.html:371
 msgid "Criterios trabajados"
 msgstr "Criteris treballats"
 
-#: app/templates/exportacion/pdf.html:352
+#: app/templates/exportacion/pdf.html:381
 msgid "Instrumentos de evaluación"
 msgstr "Instruments d'avaluació"
 
-#: app/templates/exportacion/pdf.html:354
+#: app/templates/exportacion/pdf.html:383
 msgid "Instrumento"
 msgstr "Instrument"
 
-#: app/templates/exportacion/pdf.html:354
+#: app/templates/exportacion/pdf.html:383
 msgid "Momento"
 msgstr "Moment"
 
-#: app/templates/exportacion/pdf.html:354
+#: app/templates/exportacion/pdf.html:383
 msgid "Peso"
 msgstr "Pes"
 
-#: app/templates/exportacion/pdf.html:367
+#: app/templates/exportacion/pdf.html:396
 msgid "Rúbricas por criterio"
 msgstr "Rúbriques per criteri"
 
-#: app/templates/exportacion/pdf.html:390
+#: app/templates/exportacion/pdf.html:419
 msgid "Principios DUA aplicados"
 msgstr "Principis DUA aplicats"
 
-#: app/templates/exportacion/pdf.html:396
+#: app/templates/exportacion/pdf.html:425
 msgid "Ajustes no significativos"
 msgstr "Ajustos no significatius"
 
-#: app/templates/exportacion/pdf.html:402
+#: app/templates/exportacion/pdf.html:431
 msgid "Ajustes significativos"
 msgstr "Ajustos significatius"
 
-#: app/templates/exportacion/pdf.html:427
+#: app/templates/exportacion/pdf.html:456
 msgid "Sección sin renderizador específico."
 msgstr "Secció sense renderitzador específic."
 
@@ -2669,7 +2694,9 @@ msgstr "Tria una província…"
 msgid ""
 "Si la cambias, tendrás que volver a elegir curso y materia: el currículo "
 "es otro."
-msgstr "Si la canvies, hauràs de tornar a triar curs i matèria: el currículum és un altre."
+msgstr ""
+"Si la canvies, hauràs de tornar a triar curs i matèria: el currículum és "
+"un altre."
 
 #: app/templates/situaciones/detalle.html:88
 msgid "Generando… (gestionado por el sistema)"
@@ -2757,7 +2784,9 @@ msgstr ""
 msgid ""
 "Elige curso y materia antes de guardar: sin ellos la situación no se "
 "puede anclar a ningún currículo."
-msgstr "Tria curs i matèria abans de desar: sense ells la situació no es pot ancorar a cap currículum."
+msgstr ""
+"Tria curs i matèria abans de desar: sense ells la situació no es pot "
+"ancorar a cap currículum."
 
 #: app/templates/situaciones/detalle.html:153
 #: app/templates/situaciones/detalle.html:299
@@ -3112,19 +3141,19 @@ msgstr "Avaluació (instruments i rúbriques)"
 msgid "Atención a la diversidad (DUA)"
 msgstr "Atenció a la diversitat (DUA)"
 
-#: app/templates/situaciones/detalle.html:498
+#: app/templates/situaciones/detalle.html:502
 msgid "Resumir"
 msgstr "Resumir"
 
-#: app/templates/situaciones/detalle.html:499
+#: app/templates/situaciones/detalle.html:503
 msgid "Desarrollar"
 msgstr "Desenvolupar"
 
-#: app/templates/situaciones/detalle.html:500
+#: app/templates/situaciones/detalle.html:504
 msgid "Traducir"
 msgstr "Traduir"
 
-#: app/templates/situaciones/detalle.html:501
+#: app/templates/situaciones/detalle.html:505
 msgid "Proponer alternativa"
 msgstr "Proposar alternativa"
 

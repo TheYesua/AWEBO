@@ -297,7 +297,36 @@
   {% endif %}
 {%- endmacro -%}
 
+{#
+  UNA SECCIÓN QUE FALTA SE DICE, NO SE OMITE
+
+  Cada bloque se pinta solo si tiene datos, así que una generación incompleta
+  producía un documento que PARECÍA completo: sin criterios, el PDF pasaba de
+  competencias a saberes y nada indicaba que faltara nada.
+
+  Pasó el 14/08/2026 con la misma SdA en catalán y en castellano. El aviso se
+  puso primero solo en la exportación a DOCX, y **no salía**: hay DOS caminos
+  de exportación —`_docx_conexion_curricular` y este macro— y se tocó uno.
+  Cualquier cosa que cambie aquí hay que cambiarla también allí.
+-#}
 {%- macro render_conexion_curricular(d) -%}
+  {#
+    `select` sin argumento se queda con los valores verdaderos, así que los
+    `None` desaparecen. Se hace así y no con `{% do %}` porque esa etiqueta
+    necesita la extensión `jinja2.ext.do`, que Flask no activa por defecto:
+    la plantilla habría reventado al exportar, no al arrancar.
+  #}
+  {% set faltan = [
+      (_('competencias específicas') if not d.competencias else None),
+      (_('criterios de evaluación')   if not d.criterios     else None),
+      (_('saberes básicos')           if not d.saberes       else None),
+  ] | select | list %}
+  {% if faltan %}
+    <p style="margin:6px 0;padding:6px 8px;border-left:3px solid #b45309;
+              background:#fffbeb;font-style:italic;font-size:10pt;">⚠
+      {{ _('Esta conexión curricular está incompleta: falta {partes}. Regenera la sección para completarla.').format(partes=faltan|join(', ')) }}
+    </p>
+  {% endif %}
   {% if d.competencias %}
     <h3>{{ _('Competencias específicas') }}</h3>
     {{ tabla_curr(d.competencias, [('codigo', 'Código'), ('justificacion', 'Justificación')]) }}

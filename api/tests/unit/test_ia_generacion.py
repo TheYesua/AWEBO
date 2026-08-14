@@ -3,6 +3,8 @@ from __future__ import annotations
 
 import json
 
+from pathlib import Path
+
 import pytest
 
 from app.ai import FakeProvider, get_provider
@@ -196,3 +198,43 @@ def test_generar_situacion_completa_rellena_todas_las_secciones(app, sa_con_curr
         for seccion in ORDEN_SECCIONES:
             assert seccion in sa.contenido
             assert sa.contenido[seccion]["_meta"]["seccion"] == seccion
+
+
+class TestElPromptNoImponeUnFormatoDeCodigo:
+    """El ejemplo del prompt enseñaba, sin querer, la convención de Ceuta.
+
+    Llevaba `"CE1"`, `"1.1"` y `"A.3"` como valores de ejemplo. Al cargar
+    Cataluña —cuyas competencias se numeran `1`..`9`, sin prefijo— la misma
+    situación generada dos veces salió con dos convenciones: la versión en
+    catalán citó `1, 2, 5, 7` siguiendo el dato del contexto, y la española
+    `CE1, CE2…` siguiendo el ejemplo.
+
+    El prefijo inventado no casa con el catálogo, así que esa SdA no se puede
+    anclar. Y no da error: el contenido es correcto y solo falla la referencia.
+
+    Un ejemplo con valores concretos enseña dos cosas a la vez —la forma del
+    JSON y el formato de los códigos— y solo queríamos la primera.
+    """
+
+    def _prompt(self):
+        from app.prompts.secciones import conexion_curricular_v1 as mod
+
+        fuente = Path(mod.__file__).read_text(encoding="utf-8")
+        # Solo el texto que se le manda al modelo, no los comentarios que
+        # explican por qué: si no, el propio comentario haría pasar el test.
+        # Es el mismo fallo del 13/08 con el guardián de `sincronizar`.
+        return "\n".join(
+            l for l in fuente.splitlines() if not l.strip().startswith("#")
+        )
+
+    def test_el_ejemplo_no_lleva_codigos_de_una_comunidad_concreta(self):
+        prompt = self._prompt()
+
+        assert '"codigo": "CE1"' not in prompt
+        assert '"codigo": "A.3"' not in prompt
+
+    def test_dice_explicitamente_que_no_se_cambie_el_formato(self):
+        prompt = self._prompt()
+
+        assert "NO LES CAMBIES EL FORMATO" in prompt
+        assert "CE1" in prompt, "hace falta el contraejemplo para que se entienda"

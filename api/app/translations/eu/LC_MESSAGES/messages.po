@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: AWEBO VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-08-13 14:26+0200\n"
+"POT-Creation-Date: 2026-08-14 16:21+0200\n"
 "PO-Revision-Date: 2026-08-04 15:31+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: eu\n"
@@ -92,6 +92,31 @@ msgstr "Ebaluazioa"
 #: app/services/exportacion_service.py:53
 msgid "Atención a la diversidad"
 msgstr "Aniztasunari erantzutea"
+
+#: app/services/exportacion_service.py:259
+#: app/templates/exportacion/pdf.html:320
+msgid "competencias específicas"
+msgstr "konpetentzia espezifikoak"
+
+#: app/services/exportacion_service.py:260
+#: app/templates/exportacion/pdf.html:321
+msgid "criterios de evaluación"
+msgstr "ebaluazio-irizpideak"
+
+#: app/services/exportacion_service.py:261
+#: app/templates/exportacion/pdf.html:322
+msgid "saberes básicos"
+msgstr "oinarrizko jakintzak"
+
+#: app/services/exportacion_service.py:288
+#: app/templates/exportacion/pdf.html:327
+#, python-brace-format
+msgid ""
+"Esta conexión curricular está incompleta: falta {partes}. Regenera la "
+"sección para completarla."
+msgstr ""
+"Curriculum-lotura hau osatugabea da: {partes} falta dira. Sortu berriro "
+"atala osatzeko."
 
 #: app/services/reclamacion.py:144
 #, python-brace-format
@@ -2577,63 +2602,63 @@ msgstr "Gida-galdera"
 msgid "Producto final"
 msgstr "Azken produktua"
 
-#: app/templates/exportacion/pdf.html:302
+#: app/templates/exportacion/pdf.html:331
 msgid "Competencias específicas"
 msgstr "Konpetentzia espezifikoak"
 
-#: app/templates/exportacion/pdf.html:306
+#: app/templates/exportacion/pdf.html:335
 msgid "Criterios de evaluación"
 msgstr "Ebaluazio-irizpideak"
 
-#: app/templates/exportacion/pdf.html:310
+#: app/templates/exportacion/pdf.html:339
 msgid "Saberes básicos"
 msgstr "Oinarrizko jakintzak"
 
-#: app/templates/exportacion/pdf.html:326
+#: app/templates/exportacion/pdf.html:355
 msgid "Actividades"
 msgstr "Jarduerak"
 
-#: app/templates/exportacion/pdf.html:336
+#: app/templates/exportacion/pdf.html:365
 msgid "Recursos"
 msgstr "Baliabideak"
 
-#: app/templates/exportacion/pdf.html:342
+#: app/templates/exportacion/pdf.html:371
 msgid "Criterios trabajados"
 msgstr "Landutako irizpideak"
 
-#: app/templates/exportacion/pdf.html:352
+#: app/templates/exportacion/pdf.html:381
 msgid "Instrumentos de evaluación"
 msgstr "Ebaluazio-tresnak"
 
-#: app/templates/exportacion/pdf.html:354
+#: app/templates/exportacion/pdf.html:383
 msgid "Instrumento"
 msgstr "Tresna"
 
-#: app/templates/exportacion/pdf.html:354
+#: app/templates/exportacion/pdf.html:383
 msgid "Momento"
 msgstr "Unea"
 
-#: app/templates/exportacion/pdf.html:354
+#: app/templates/exportacion/pdf.html:383
 msgid "Peso"
 msgstr "Pisua"
 
-#: app/templates/exportacion/pdf.html:367
+#: app/templates/exportacion/pdf.html:396
 msgid "Rúbricas por criterio"
 msgstr "Errubrikak irizpideka"
 
-#: app/templates/exportacion/pdf.html:390
+#: app/templates/exportacion/pdf.html:419
 msgid "Principios DUA aplicados"
 msgstr "Aplikatutako DUA printzipioak"
 
-#: app/templates/exportacion/pdf.html:396
+#: app/templates/exportacion/pdf.html:425
 msgid "Ajustes no significativos"
 msgstr "Doikuntza ez esanguratsuak"
 
-#: app/templates/exportacion/pdf.html:402
+#: app/templates/exportacion/pdf.html:431
 msgid "Ajustes significativos"
 msgstr "Doikuntza esanguratsuak"
 
-#: app/templates/exportacion/pdf.html:427
+#: app/templates/exportacion/pdf.html:456
 msgid "Sección sin renderizador específico."
 msgstr "Atal honek ez du errendatzaile espezifikorik."
 
@@ -2664,7 +2689,9 @@ msgstr "Aukeratu probintzia…"
 msgid ""
 "Si la cambias, tendrás que volver a elegir curso y materia: el currículo "
 "es otro."
-msgstr "Aldatzen baduzu, maila eta ikasgaia berriro aukeratu beharko dituzu: curriculuma bestelakoa da."
+msgstr ""
+"Aldatzen baduzu, maila eta ikasgaia berriro aukeratu beharko dituzu: "
+"curriculuma bestelakoa da."
 
 #: app/templates/situaciones/detalle.html:88
 msgid "Generando… (gestionado por el sistema)"
@@ -2752,7 +2779,9 @@ msgstr ""
 msgid ""
 "Elige curso y materia antes de guardar: sin ellos la situación no se "
 "puede anclar a ningún currículo."
-msgstr "Aukeratu maila eta ikasgaia gorde aurretik: horiek gabe egoera ezin da inolako curriculumetan ainguratu."
+msgstr ""
+"Aukeratu maila eta ikasgaia gorde aurretik: horiek gabe egoera ezin da "
+"inolako curriculumetan ainguratu."
 
 #: app/templates/situaciones/detalle.html:153
 #: app/templates/situaciones/detalle.html:299
@@ -3105,19 +3134,19 @@ msgstr "Ebaluazioa (tresnak eta errubrikak)"
 msgid "Atención a la diversidad (DUA)"
 msgstr "Aniztasunari erantzutea (DUA)"
 
-#: app/templates/situaciones/detalle.html:498
+#: app/templates/situaciones/detalle.html:502
 msgid "Resumir"
 msgstr "Laburtu"
 
-#: app/templates/situaciones/detalle.html:499
+#: app/templates/situaciones/detalle.html:503
 msgid "Desarrollar"
 msgstr "Garatu"
 
-#: app/templates/situaciones/detalle.html:500
+#: app/templates/situaciones/detalle.html:504
 msgid "Traducir"
 msgstr "Itzuli"
 
-#: app/templates/situaciones/detalle.html:501
+#: app/templates/situaciones/detalle.html:505
 msgid "Proponer alternativa"
 msgstr "Alternatiba proposatu"
 
