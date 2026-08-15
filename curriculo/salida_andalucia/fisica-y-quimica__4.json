@@ -1,0 +1,251 @@
+{
+  "materia_oficial": "Física y Química",
+  "materia": "Física y Química",
+  "etapa": "ESO",
+  "ciclo": "4º ESO",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "4º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Comprender y relacionar los motivos por los que ocurren los principales fenómenos fisicoquímicos del entorno, explicándolos en términos de las leyes y teorías científicas adecuadas, para resolver problemas con el fin de aplicarlas para mejorar la realidad cercana y la calidad de vida humana.",
+      "descriptores": [
+        "STEM4",
+        "CPSAA4"
+      ]
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Expresar las observaciones realizadas por el alumnado en forma de preguntas, formulando hipótesis, para explicarlas y demostrando dichas hipótesis a través de la experimentación científica, la indagación y la búsqueda de evidencias, para desarrollar los razonamientos propios del pensamiento científico y mejorar las destrezas en el uso de las metodologías científicas.",
+      "descriptores": [
+        "STEM2",
+        "CD1",
+        "CPSAA4",
+        "CE1",
+        "CCEC3"
+      ]
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Manejar con soltura las reglas y normas básicas de la física y la química en lo referente al lenguaje de la IUPAC, al lenguaje matemático, al empleo de unidades de medida correctas, al uso seguro del laboratorio y a la interpretación y producción de datos e información en diferentes formatos y fuentes (textos, enunciados, tablas, gráficas, informes, manuales, diagramas, fórmulas, esquemas, modelos, símbolos), para reconocer el carácter universal y transversal del lenguaje científico y la necesidad de una comunicación fiable en investigación y ciencia entre diferentes países y culturas.",
+      "descriptores": [
+        "CPSAA2",
+        "CC1",
+        "CCEC2",
+        "CCEC4"
+      ]
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Utilizar de forma crítica, eficiente y segura plataformas digitales y recursos variados, tanto para el trabajo individual como en equipo, para fomentar la creatividad, el desarrollo personal y el aprendizaje individual y social, mediante la consulta de información, la creación de materiales y la comunicación efectiva en los diferentes entornos de aprendizaje.",
+      "descriptores": [
+        "CD2",
+        "CPSAA3",
+        "CE3",
+        "CCEC4"
+      ]
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Utilizar las estrategias propias del trabajo colaborativo, potenciando el crecimiento entre iguales como base emprendedora de una comunidad científica crítica, ética y eficiente, para comprender la importancia de la ciencia en la mejora de la sociedad andaluza y global, las aplicaciones y repercusiones de los avances científicos, la preservación de la salud y la conservación sostenible del medioambiente.",
+      "descriptores": [
+        "CD3",
+        "CPSAA3",
+        "CC3",
+        "CE2"
+      ]
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Comprender y valorar la ciencia como una construcción colectiva en continuo cambio y evolución, en la que no solo participan las personas dedicadas a la ciencia, sino que también requiere de una interacción con el resto de la sociedad, para obtener resultados que repercutan en el avance tecnológico, económico, ambiental y social.",
+      "descriptores": [
+        "CPSAA1",
+        "CPSAA4",
+        "CC4",
+        "CCEC1"
+      ]
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Comprender y explicar con rigor los fenómenos fisicoquímicos cotidianos a partir de los principios, teorías y leyes científicas adecuadas, expresándolos de manera argumentada, utilizando diversidad de soportes y medios de comunicación."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Resolver problemas fisicoquímicos mediante las leyes y teorías científicas adecuadas, razonando los procedimientos utilizados para encontrar las soluciones y expresando adecuadamente los resultados con corrección y precisión."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Reconocer y describir situaciones problemáticas reales de índole científica y emprender iniciativas colaborativas en las que la ciencia, y en particular la física y la química, pueden contribuir a su solución, analizando críticamente su impacto en la sociedad y en el medioambiente."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Emplear las metodologías propias de la ciencia para identificar y describir fenómenos científicos a partir de situaciones tanto observadas en el mundo natural como planteadas a través de enunciados con información textual, gráfica o numérica."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Predecir, para las cuestiones planteadas, respuestas que se puedan comprobar con las herramientas y conocimientos adquiridos, tanto de forma experimental como deductiva, aplicando el razonamiento lógico-matemático en su proceso de validación."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Aplicar las leyes y teorías científicas más importantes para validar hipótesis, de manera informada y coherente con el conocimiento científico existente, diseñando los procedimientos experimentales o deductivos necesarios para resolverlas y analizan los resultados críticamente."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Emplear fuentes variadas, fiables y seguras para seleccionar, interpretar. organizar y comunicar información relativa a un proceso fisicoquímico concreto, relacionando entre sí lo que cada una de ellas contiene, extrayendo en cada caso lo más relevante para la resolución de un problema y desechando todo lo que sea irrelevante."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Utilizar adecuadamente las reglas básicas de la física y la química, incluyendo el uso correcto de varios sistemas de unidades, las herramientas matemáticas necesarias y las reglas de nomenclatura avanzadas, para facilitar una comunicación efectiva con toda la comunidad científica."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Aplicar con rigor las normas de uso de los espacios específicos de la ciencia, como el laboratorio de física y química, como medio de asegurar la salud propia y colectiva, la conservación sostenible del medioambiente y el respeto por las instalaciones."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Utilizar de forma eficiente recursos variados, tradicionales y digitales, para mejorar el aprendizaje autónomo y la interacción con otros miembros de la comunidad educativa, de forma rigurosa y respetuosa y analizando críticamente las aportaciones de cada participante."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Trabajar de forma versátil con medios variados, tradicionales y digitales, en la consulta de información y la creación de contenidos, seleccionando y empleando con criterio las fuentes y herramientas más fiables y desechando las menos adecuadas para la mejora del aprendizaje propio y colectivo."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Establecer interacciones constructivas y coeducativas emprendiendo actividades de cooperación e iniciando el uso de las estrategias propias del trabajo colaborativo, como forma de construir un medio de trabajo eficiente en la ciencia."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Emprender, de forma autónoma y de acuerdo a la metodología adecuada, proyectos científicos que involucren al alumnado en la mejora de la sociedad andaluza y global y que creen valor tanto para el individuo como para la comunidad."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Reconocer y valorar, a través del análisis histórico de los avances científicos logrados por mujeres y hombres y de situaciones y contextos actuales (líneas de investigación, instituciones científicas y hombres y mujeres en ellas, aplicaciones directas), que la ciencia es un proceso en permanente construcción y que esta tiene repercusiones e implicaciones importantes en la sociedad actual."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Detectar las necesidades tecnológicas, ambientales, económicas y sociales más importantes que demanda la sociedad para entender la capacidad de la ciencia para darles solución sostenible a través de la implicación de toda la ciudadanía."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Las destrezas científicas básicas",
+      "titulo": "Las destrezas científicas básicas",
+      "items": [
+        "Diseño del trabajo experimental y emprendimiento de proyectos de investigación para la resolución de problemas mediante el uso de la experimentación y el tratamiento del error, la indagación, la deducción, la búsqueda de evidencias o el razonamiento lógico-matemático para hacer inferencias válidas sobre la base de las observaciones y sacar conclusiones pertinentes y generales que vayan más allá de las condiciones experimentales para aplicarlas a nuevos escenarios. La investigación científica. La medida y su error. Análisis de datos experimentales.",
+        "Empleo de diversos entornos y recursos de aprendizaje científico, como el laboratorio o los entornos virtuales, utilizando de forma correcta los materiales, sustancias y herramientas tecnológicas y atendiendo a las normas de uso de cada espacio para asegurar la conservación de la salud propia y comunitaria, la seguridad en redes y el respeto sostenible por el medioambiente. Proyecto de investigación sencillo.",
+        "Uso del lenguaje científico, incluyendo el manejo adecuado de sistemas de unidades, la determinación de la ecuación de dimensiones de una fórmula sencilla, y herramientas matemáticas básicas, para conseguir una comunicación argumentada con diferentes entornos científicos y de aprendizaje. Las magnitudes. Ecuaciones dimensionales. El informe científico. Expresión de resultados de forma rigurosa en diferentes formatos.",
+        "Interpretación y producción de información científica en diferentes formatos y a partir de diferentes medios para desarrollar un criterio propio basado en lo que el pensamiento científico aporta a la mejora de la sociedad para hacerla más justa, equitativa e igualitaria. Utilización de herramientas tecnológicas en el entorno científico. Selección, comprensión e interpretación de la información relevante de un texto de divulgación científica.",
+        "Valoración de la cultura científica y del papel de científicos y científicas en los principales hitos históricos y actuales de la física y la química para el avance y la mejora de la sociedad."
+      ],
+      "codigos_items": [
+        "FYQ.4.A.1",
+        "FYQ.4.A.2",
+        "FYQ.4.A.3",
+        "FYQ.4.A.4",
+        "FYQ.4.A.5"
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. La materia",
+      "titulo": "La materia",
+      "items": [
+        "Realización de problemas de variada naturaleza sobre las propiedades fisicoquímicas de los sistemas materiales más comunes, en función de la naturaleza del enlace químico y de las fuerzas intermoleculares, incluyendo disoluciones y sistemas gaseosos, para la resolución de problemas relacionados con situaciones cotidianas diversas.",
+        "Reconocimiento de los principales modelos atómicos clásicos y cuánticos y la descripción de las partículas subatómicas de los constituyentes de los átomos estableciendo su relación con los avances de la física y de la química más relevantes de la historia reciente. Estructura electrónica de los átomos.",
+        "Relación, a partir de su configuración electrónica, de la distribución de los elementos en la Tabla Periódica con sus propiedades fisicoquímicas más importantes, agrupándolos por familias, para encontrar generalidades.",
+        "Valoración de la utilidad de los compuestos químicos a partir de sus propiedades en relación con cómo se combinan los átomos, a la naturaleza iónica, covalente o metálica del enlace químico y a las fuerzas intermoleculares, como forma de reconocer la importancia de la química en otros campos como la ingeniería, la biología o el deporte. necesidades tecnológicas, FY ambientales, económicas FY y sociales más FY importantes que FY demanda la sociedad para reconocer la capacidad de la ciencia para darles solución sostenible a través de la implicación de todos los ciudadanos. Q.2.D.1. Q.2.D.2. Q.2.E.1. Q.2.E.2. ambientales, económicas y sociales más importantes que demanda la sociedad, entendiendo la capacidad de la ciencia para darles solución sostenible a través de la implicación de todos los ciudadanos.",
+        "Cuantificación de la cantidad de materia de sistemas de diferente naturaleza en los términos generales del lenguaje científico, aplicación de la constante del número de Avogadro y reconocimiento del mol como la unidad de la cantidad de materia en el Sistema Internacional de Unidades para manejar con soltura las diferentes formas de medida y expresión de la misma en el entorno científico.",
+        "Utilización e interpretación adecuada de la formulación y nomenclatura de compuestos químicos inorgánicos ternarios mediante las reglas de la IUPAC para contribuir a un lenguaje científico común.",
+        "Introducción a la formulación y nomenclatura de los compuestos orgánicos mediante las reglas de la IUPAC como base para reconocer y representar los hidrocarburos sencillos y los grupos funcionales de alcoholes, aldehídos, cetonas, ácidos carboxílicos, ésteres y aminas para entender la gran variedad de compuestos del entorno basados en el carbono, su importancia biológica, sus múltiples usos y sus aplicaciones de especial interés."
+      ],
+      "codigos_items": [
+        "FYQ.4.B.1",
+        "FYQ.4.B.2",
+        "FYQ.4.B.3",
+        "FYQ.4.B.4",
+        "FYQ.4.B.5",
+        "FYQ.4.B.6",
+        "FYQ.4.B.7"
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. La energía",
+      "titulo": "La energía",
+      "items": [
+        "Formulación y comprobación de hipótesis sobre las distintas formas de energía, y sus aplicaciones a partir de sus propiedades y del principio de conservación, como base para la experimentación y la resolución de problemas relacionados con la energía mecánica, con o sin fuerza de rozamiento, en situaciones cotidianas que les permita asumir el papel que esta juega en el avance de la investigación científica.",
+        "Reconocimiento cualitativo y cuantitativo de los distintos procesos de transferencia de energía, de la velocidad a la que transcurren y de sus efectos en los cuerpos, especialmente los cambios de estado y la dilatación, en los que están implicados fuerzas o diferencias de temperatura, como base de la resolución de problemas cotidianos. La luz y el sonido como ondas que transfieren energía. Utilización de la energía del Sol como fuente de energía limpia y renovable.",
+        "Reconocimiento cualitativo y cuantitativo de que el calor y el trabajo son dos formas de transferencia de energía para identificar los diversos contextos en que se producen y valorar su importancia en situaciones de la vida cotidiana.",
+        "Aplicación del concepto de equilibrio térmico al cálculo del valor de la energía transferida entre cuerpos a distinta temperatura y al valor de la temperatura de equilibrio para resolver problemas sencillos en situaciones de la vida cotidiana.",
+        "Estimación de valores de energía y consumos energéticos en situaciones cotidianas mediante la aplicación de conocimientos, la búsqueda de información contrastada, la experimentación y el razonamiento científico para debatir y comprender la importancia de la energía en la sociedad, su producción y su uso responsable; así como la importancia histórica y actual de las máquinas térmicas."
+      ],
+      "codigos_items": [
+        "FYQ.4.C.1",
+        "FYQ.4.C.2",
+        "FYQ.4.C.3",
+        "FYQ.4.C.4",
+        "FYQ.4.C.5"
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. La interacción",
+      "titulo": "La interacción",
+      "items": [
+        "Predicción y comprobación, utilizando la experimentación y el razonamiento lógico-matemático, de las principales magnitudes, ecuaciones y gráficas que describen el movimiento de un cuerpo, tanto rectilíneo como circular, para relacionarlo con situaciones cotidianas y la mejora de la calidad de vida.",
+        "Aplicación de las Leyes de Newton y reconocimiento de la fuerza como agente de cambios en los cuerpos, como principio fundamental de la Física que se aplica a otros campos como el diseño, el deporte o la ingeniería.",
+        "Uso del álgebra vectorial básica para la realización gráfica y numérica de operaciones con fuerzas y su aplicación a la resolución de problemas relacionados con sistemas sometidos a conjuntos de fuerzas y valoración de su importancia en situaciones cotidianas.",
+        "Aplicación de la Ley de Gravitación Universal en diferentes contextos, como la caída de los cuerpos y el movimiento orbital, para interpretar y explicar situaciones cotidianas.",
+        "Identificación y manejo de las principales fuerzas del entorno cotidiano, como el peso, la normal, el rozamiento, la tensión o el empuje, y su uso en la explicación de fenómenos físicos en distintos escenarios.",
+        "Valoración de los efectos de las fuerzas aplicadas sobre superficies que afectan a medios líquidos o gaseosos, especialmente del concepto de presión, para comprender las aplicaciones derivadas de sus efectos."
+      ],
+      "codigos_items": [
+        "FYQ.4.D.1",
+        "FYQ.4.D.2",
+        "FYQ.4.D.3",
+        "FYQ.4.D.4",
+        "FYQ.4.D.5",
+        "FYQ.4.D.6"
+      ]
+    },
+    {
+      "codigo": "E",
+      "bloque": "E. El cambio",
+      "titulo": "El cambio",
+      "items": [
+        "Utilización de la información contenida en una ecuación química ajustada y de las leyes más relevantes de las reacciones químicas para hacer con ellas predicciones cualitativas y cuantitativas por métodos experimentales y numéricos, y relacionarlo con los procesos fisicoquímicos de la industria, el medioambiente y la sociedad.",
+        "Descripción cualitativa de reacciones químicas del entorno cotidiano, incluyendo las combustiones, las neutralizaciones y los procesos electroquímicos, comprobando experimentalmente algunos de sus parámetros, para hacer una valoración de sus implicaciones en la tecnología, la sociedad o el medioambiente y de su especial importancia económica y social en Andalucía (el hidrógeno verde, los combustibles fósiles, la metalurgia y electrólisis del cobre).",
+        "Aplicación de la Teoría de Arrhenius al estudio de las propiedades de los ácidos y bases, los indicadores y la escala de pH para describir su comportamiento químico y sus aplicaciones en situaciones de la vida cotidiana.",
+        "Relación de las variables termodinámicas y cinéticas en las reacciones químicas, aplicando modelos como la teoría de colisiones, para explicar el mecanismo de una reacción química, su velocidad y energía, a partir de la reordenación de los átomos, así como la ley de conservación de la masa y realizar predicciones aplicadas a los procesos cotidianos más importantes. Formación y Orientación Personal y Profesional La finalidad de la materia Formación y Orientación Personal y Profesional se basa en que el alumnado desarrolle su personalidad, refuerce su autonomía y el conocimiento de sí mismo, de los grupos humanos con los que interactúa y del entorno en el que va a vivir y a abrirse camino. La materia Formación y orientación personal y profesional propone una aproximación al conocimiento de lo humano a partir de disciplinas que lo analizan desde el conocimiento de los procesos biológicos, psicológicos e intelectuales que regulan la conducta, la cognición y el aprendizaje; desde el conocimiento del individuo, como parte de una construcción social y cultural, y desde el análisis de los elementos que definen las organizaciones sociales y los grupos humanos. Esta aproximación va a permitir, por un lado, despertar la curiosidad por el conocimiento de la propia persona, de su proceso de aprendizaje y del entorno sociocultural en el que se encuentra, de modo que incremente la confianza en su propio logro, su autonomía, facilitando su aprendizaje a lo largo de la vida y su desempeño académico y profesional. La materia contribuye a adquirir las competencias necesarias para el desarrollo personal, el aprendizaje permanente, la promoción de la salud, la empleabilidad y la inclusión social. Se atribuye a la competencia emprendedora una especial relevancia, pues permite alcanzar el sentido de resiliencia y la capacidad de adaptarse a los rápidos y profundos cambios que se están produciendo en la actualidad. Formación y Orientación Personal y Profesional se desarrolla a partir de aprendizajes significativos, funcionales y de interés para el alumnado y está organizada en torno a la adquisición de unas competencias específicas que tratan, en primer lugar, de despertar en los alumnos y alumnas la curiosidad por entenderse no solo como individuos aislados, sino como sujetos sociales y culturales. Esa curiosidad abre la puerta al conocimiento, a la reflexión crítica y al análisis, partiendo de planteamientos, saberes y estrategias propios de disciplinas como la psicología, sociología o antropología. En segundo lugar, las competencias específicas definidas para esta materia proponen que el alumnado conozca y aprenda las habilidades personales y sociales necesarias para participar, crear y desarrollarse en los grupos humanos con los que interactúa dentro del ámbito personal, social, académico y profesional. Para generar esa participación, creatividad y enriquecimiento personal, social y profesional es preciso desarrollar herramientas"
+      ],
+      "codigos_items": [
+        "FYQ.4.E.1",
+        "FYQ.4.E.2",
+        "FYQ.4.E.3",
+        "FYQ.4.E.4"
+      ]
+    }
+  ],
+  "comunidad": "andalucia",
+  "idioma": "es"
+}

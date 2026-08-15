@@ -155,5 +155,18 @@ scratch/
 # ** dejó de cubrirlos en cuanto se movieron, y nada lo habría avisado.
 /curriculo/fuentes/**/*.pdf
 
-# Salida del extractor: se regenera de las fuentes, no se versiona.
-/curriculo/salida*/
+# La salida del extractor SÍ se versiona. La regla decía «se regenera de las
+# fuentes, no se versiona», y era falsa en la práctica: **las fuentes no están
+# en el repositorio**. Los PDF pesan 55 MB y quedaron ignorados justo arriba,
+# así que sin la salida nadie que clone puede sembrar el currículo de Cataluña
+# ni de Andalucía. Ceuta y el estatal se salvaban de casualidad, porque sus
+# fuentes son XML pequeños y sí se suben.
+#
+# Y conseguir las fuentes no es trivial: el Portal Jurídic se pinta con
+# JavaScript y los PDF del DOGC traen la codificación de fuente rota, que es
+# justo por lo que hubo que ir a buscar los de la XTEC.
+#
+# Son 2,4 MB de JSON de texto derivado de boletines oficiales. La regla estaba
+# además incumplida a medias: `curriculo/salida/` llevaba versionado desde
+# antes de escribirla, porque añadir algo al .gitignore no deja de seguir lo
+# que git ya seguía. Se resuelve en el sentido de subir las tres.

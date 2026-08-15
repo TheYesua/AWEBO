@@ -1,0 +1,272 @@
+{
+  "materia_oficial": "Latín",
+  "materia": "Latín",
+  "etapa": "ESO",
+  "ciclo": "4º ESO",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "4º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Conocer y valorar el papel y el marco geográfico en el que se desarrolla la civilización latina en el origen de la identidad europea, comparando y reconociendo las semejanzas y diferencias entre lenguas y culturas, interpretando fragmentos de las obras capitales de la literatura latina, para analizar críticamente el presente.",
+      "descriptores": [
+        "CCEC1"
+      ]
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Conocer los aspectos básicos de la lengua latina, comparándola con las lenguas de enseñanza y con otras lenguas del repertorio individual del alumnado, para valorar los rasgos comunes y apreciar la diversidad lingüística como muestra de riqueza cultural.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Leer e interpretar textos latinos, asumiendo la aproximación a los textos como un proceso dinámico y tomando conciencia de los conocimientos y experiencias propias, para identificar su carácter clásico y fundamental.",
+      "descriptores": [
+        "CPSAA4",
+        "CCEC1"
+      ]
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Comprender textos originales latinos, traduciendo del latín a la lengua de enseñanza y desarrollando estrategias de acceso al significado de un enunciado sencillo en lengua latina, para alcanzar y justificar la traducción propia de un pasaje.",
+      "descriptores": [
+        "CD2"
+      ]
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Descubrir, conocer y valorar el patrimonio cultural, arqueológico y artístico romano, siendo consciente de la importancia de este legado en Andalucía, apreciándolo y reconociéndolo como producto de la creación humana y como testimonio de la historia, para identificar las fuentes de inspiración y distinguir los procesos de construcción, preservación, conservación y restauración, así como para garantizar su sostenibilidad.",
+      "descriptores": [
+        "CCEC1",
+        "CCEC2"
+      ]
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Conocer el marco geográfico en el que se desarrolla la civilización latina, identificar periodos de la historia de Roma, los acontecimientos y personajes, así como los aspectos de la civilización romana en su contexto histórico, relacionando los datos con referentes actuales y aplicando los conocimientos adquiridos."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Describir el significado de productos culturales del presente, en el contexto de los desarrollos culturales en Europa, comparando las similitudes y diferencias con la Antigüedad latina."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Valorar de manera crítica los modos de vida, costumbres y actitudes de la sociedad romana en comparación con los de nuestras sociedades a partir del contenido de fuentes latinas en diferentes soportes, con especial atención a la andaluza."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "1",
+      "descripcion": "Conocer obras capitales de la literatura latina, situándolas en su contexto; comprender, comentar e interpretar fragmentos de las mismas y reconocer su pervivencia en la literatura posterior."
+    },
+    {
+      "codigo": "1.5",
+      "competencia": "1",
+      "descripcion": "Conocer la evolución de conceptos fundamentales de la civilización latina que perviven en la actualidad."
+    },
+    {
+      "codigo": "1.6",
+      "competencia": "1",
+      "descripcion": "Valorar la importancia de su existencia desde sus orígenes hasta la actualidad."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Conocer el abecedario latino y su pronunciación, valorar críticamente y adecuarse a la diversidad lingüística y cultural a la que da origen al latín, identificando y explicando semejanzas y diferencias entre los elementos lingüísticos de su entorno, relacionándolos con los de su propia cultura y desarrollando una cultura compartida y una ciudadanía comprometida con los valores democráticos."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Producir definiciones etimológicas de términos cotidianos, científicos y técnicos, reconociendo los elementos latinos en diferentes contextos lingüísticos y estableciendo, si procede, la relación semántica entre término patrimonial y cultismo."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Inferir significados de términos latinos aplicando los conocimientos léxicos y fonéticos de otras lenguas de su repertorio individual, así como de lexemas, sufijos y prefijos de origen latino en las lenguas de enseñanza, teniendo en cuenta los procedimientos de composición y derivación para la elaboración de familias de palabras."
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "2",
+      "descripcion": "Ampliar el caudal léxico y mejorar la expresión oral y escrita, incorporando latinismos y locuciones usuales de origen latino de manera coherente."
+    },
+    {
+      "codigo": "2.5",
+      "competencia": "2",
+      "descripcion": "Incorporar léxico de raíz común de las distintas lenguas del repertorio lingüístico individual a la producción escrita, oral o multimodal, comparando lenguas a partir de sus orígenes y parentescos, valorando la utilidad del latín para la mejora de la expresión y empleando herramientas analógicas y digitales para el aprendizaje de lenguas de diversa índole."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Reconocer el sentido global de las ideas principales y secundarias de un texto, contextualizándolo e identificando las referencias históricas, sociales, políticas o religiosas que aparecen en él, y sirviéndose de conocimientos sobre personajes y acontecimientos históricos estudiados."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Interpretar de manera crítica el contenido de textos latinos de dificultad adecuada, atendiendo al contexto en el que se produjeron, conectándolos con la experiencia propia y valorando cómo contribuyen a entender los modos de vida, costumbres y actitudes de nuestra sociedad."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Explicar de forma oral, escrita o multimodal el carácter clásico y humanista de las diversas manifestaciones literarias y artísticas de la civilización latina utilizando un vocabulario correcto y una expresión adecuada."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Traducir textos breves y sencillos con términos adecuados y expresión correcta en la lengua de enseñanza, justificando la traducción y manifestando la correspondencia entre el análisis y la versión realizada."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Analizar los aspectos morfológicos, sintácticos y léxicos elementales de la lengua latina, identificándolos y comparándolos con los de la lengua familiar."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Producir mediante retroversión oraciones simples utilizando las estructuras propias de la lengua latina."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Explicar los elementos de la civilización latina, especialmente los relacionados con la mitología clásica, identificándolos como fuente de inspiración de manifestaciones literarias y artísticas."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Conocer y reconocer la importancia de la transmisión textual, teniendo en cuenta los procedimientos de composición, especialmente los soportes de escritura."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "5",
+      "descripcion": "Reconocer las huellas de la romanización en el patrimonio cultural y arqueológico, identificando los procesos de preservación, conservación y restauración como un aspecto fundamental de una ciudadanía comprometida con la sostenibilidad ambiental y el cuidado de su legado, siendo consciente de la importancia de este legado en Andalucía."
+    },
+    {
+      "codigo": "5.4",
+      "competencia": "5",
+      "descripcion": "Exponer de forma oral, escrita o multimodal las conclusiones obtenidas a partir de la investigación, individual o colectiva, del legado material e inmaterial de la civilización romana y su pervivencia en el presente a través de soportes analógicos y digitales, seleccionando información, contrastándola y organizándola a partir de criterios de validez, calidad y fiabilidad."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. El presente de la civilización latina",
+      "titulo": "El presente de la civilización latina",
+      "items": [
+        "Aspectos geográficos, históricos, culturales, políticos y lingüísticos de la civilización latina presentes en la noción actual de Europa y de su cultura I.",
+        "Aspectos geográficos, históricos, culturales, políticos y lingüísticos de la civilización latina presentes en la noción actual de Europa y de su cultura II",
+        "Estrategias y herramientas para relacionar el pasado y el presente a partir de los conocimientos adquiridos I.",
+        "Estrategias y herramientas para relacionar el pasado y el presente a partir de los conocimientos adquiridos II.",
+        "Importancia de la civilización latina en la configuración, reconocimiento y análisis crítico de nuestra identidad como sociedad. La civilización romana en Andalucía. El marco geográfico. Periodos de su historia. Organización política y social. La familia romana. Evolución del papel de la mujer en la sociedad romana. Grandes mujeres en la historia de Roma. El derecho. La religión, la mitología y otros aspectos culturales.",
+        "Importancia de los textos clásicos latinos como testimonio de aquellos aspectos constitutivos de nuestra condición humana.",
+        "Obras fundamentales de la literatura latina en su contexto y su pervivencia a través de la tradición clásica.",
+        "Estrategias para comprender, comentar e interpretar textos latinos a partir de los conocimientos adquiridos y de la experiencia propia.",
+        "Léxico latino, la evolución de los conceptos y expresiones fundamentales de la civilización latina hasta la actualidad, por ejemplo, civis, populus, sacer y homo.",
+        "El papel del humanismo y su presencia en la sociedad actual."
+      ],
+      "codigos_items": [
+        "LAT.4.A.1",
+        "LAT.4.A.2",
+        "LAT.4.A.3",
+        "LAT.4.A.4",
+        "LAT.4.A.5",
+        "LAT.4.A.6",
+        "LAT.4.A.7",
+        "LAT.4.A.8",
+        "LAT.4.A.9",
+        "LAT.4.A.10"
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Latín y plurilingüismo",
+      "titulo": "Latín y plurilingüismo",
+      "items": [
+        "El abecedario y la pronunciación del latín, así como su permanencia e influencia en las lenguas del repertorio lingüístico in - dividual del alumnado.",
+        "Iniciación al significado etimológico de las palabras.",
+        "Estrategias básicas para inferir significados en léxico especializado y de nueva aparición a partir de la identificación de formantes latinos.",
+        "Explicación de los cambios fonéticos más frecuentes del latín culto al latín vulgar.",
+        "Procedimientos de composición y derivación latinos en la elaboración de familias de palabras.",
+        "Identificación de palabras con lexemas, sufijos y prefijos de origen latino en textos escritos en las lenguas de enseñanza.",
+        "Latinismos y locuciones latinas más frecuentes.",
+        "Técnicas de reconocimiento, organización e incorporación a la producción escrita, oral o multimodal de léxico de raíz común entre las distintas lenguas del repertorio lingüístico individual.",
+        "Comparación entre lenguas a partir de su origen y parentescos.",
+        "Importancia del latín como herramienta de mejora de la expresión escrita, oral y multimodal en las distintas lenguas del repertorio lingüístico individual.",
+        "Herramientas analógicas y digitales para el aprendizaje y la reflexión de la lengua latina como vínculo e impulso para el aprendizaje de otras lenguas."
+      ],
+      "codigos_items": [
+        "LAT.4.B.1",
+        "LAT.4.B.2",
+        "LAT.4.B.3",
+        "LAT.4.B.4",
+        "LAT.4.B.5",
+        "LAT.4.B.6",
+        "LAT.4.B.7",
+        "LAT.4.B.8",
+        "LAT.4.B.9",
+        "LAT.4.B.10",
+        "LAT.4.B.11"
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. El texto latino y la traducción",
+      "titulo": "El texto latino y la traducción",
+      "items": [
+        "Estrategias para comprender y contextualizar creaciones literarias latinas, sirviéndose de textos originales, en edición bilingüe, traducidos, adaptados, completos o en fragmentos.",
+        "Herramientas para interpretar de manera crítica, comentar y relacionar con la realidad propia creaciones literarias latinas, sirviéndose de textos originales, en edición bilingüe, traducidos, adaptados, completos o en fragmentos.",
+        "Vocabulario adecuado para explicar el carácter clásico y humanista de creaciones literarias de diversos géneros, así como de creaciones artísticas latinas.",
+        "Estrategias básicas para identificar, analizar y traducir unidades lingüísticas tanto de léxico como de morfosintaxis, a partir de la comparación de las lenguas y variedades que conforman el repertorio lingüístico personal.",
+        "Recursos para el aprendizaje y estrategias básicas de adquisición de lenguas tales como Portfolio Europeo de las Lenguas, glosarios o diccionarios.",
+        "Reflexión y justificación de la traducción ofrecida.",
+        "Autoconfianza, autonomía e iniciativa. El error como parte integrante del proceso de aprendizaje.",
+        "Los casos y sus principales valores sintácticos. Concepto de declinación.",
+        "La flexión nominal, pronominal y verbal. La expresión en latín del número, la persona, la voz, el tiempo y el modo. El enunciado de los verbos latinos. La flexión de los verbos regulares: los modos indicativo e imperativo en voz activa, el modo indicativo en voz pasiva, el infinitivo de presente y el participio de perfecto. El verbo sum: modos indicativo e imperativo y el infinitivo de presente.",
+        "Estructuras oracionales básicas. La concordancia y el orden de palabras.",
+        "Retroversión de oraciones sencillas."
+      ],
+      "codigos_items": [
+        "LAT.4.C.1",
+        "LAT.4.C.2",
+        "LAT.4.C.3",
+        "LAT.4.C.4",
+        "LAT.4.C.5",
+        "LAT.4.C.6",
+        "LAT.4.C.7",
+        "LAT.4.C.8",
+        "LAT.4.C.9",
+        "LAT.4.C.10",
+        "LAT.4.C.11"
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Legado y patrimonio",
+      "titulo": "Legado y patrimonio",
+      "items": [
+        "Pervivencia del legado material, sitios arqueológicos, inscripciones, construcciones monumentales y artísticas, etc. e inmaterial (mitología clásica, instituciones políticas, oratoria, derecho, rituales y celebraciones, etc.) de la cultura y la civilización latinas.",
+        "La transmisión textual y los soportes de escritura.",
+        "Características del patrimonio cultural romano y del proceso de romanización, prestando especial atención al legado y a la romanización de Andalucía.",
+        "Interés e iniciativa en participar en procesos destinados a conservar, preservar y difundir el patrimonio arqueológico de su entorno.",
+        "Herramientas analógicas y digitales para la compresión, producción y coproducción oral, escrita y multimodal.",
+        "Respeto de la propiedad intelectual y derechos de autor sobre las fuentes consultadas y los contenidos utilizados.",
+        "Estrategias y herramientas, analógicas y digitales, individuales y cooperativas, para la autoevaluación, la coevaluación y la autorreparación. Lengua Castellana y Literatura El objetivo de la materia de Lengua Castellana y Literatura se orienta tanto a la eficacia comunicativa como a favorecer un uso ético del lenguaje que ponga las palabras al servicio de la convivencia democrática, la resolución dialogada de los conflictos y la construcción de vínculos personales y sociales basados en el respeto y la igualdad de derechos de todas las personas. Asimismo, contribuirá de manera necesaria a la construcción del pensamiento, permitiendo la reflexión crítica y la identificación del individuo con su propia identidad. El eje del currículo de Lengua Castellana y Literatura lo constituyen las competencias específicas relacionadas con la interacción oral y escrita adecuada, en los distintos ámbitos, contextos y en función de diferentes propósitos comunicativos, así como con el fomento del hábito lector, la interpretación de textos literarios y la apropiación de un patrimonio cultural. Las competencias específicas de Lengua Castellana y Literatura suponen diversificar y aumentar la complejidad de las prácticas discursivas, centrar la atención en el uso de la lengua en los ámbitos educativo y social, subrayar el papel de las convenciones literarias y del contexto histórico en la comprensión de los textos literarios y dar un papel más relevante a la reflexión sobre el funcionamiento de la lengua y sus usos. La primera de las competencias específicas de la materia se orienta al reconocimiento de la diversidad lingüística y dialectal del entorno, de España y del mundo, lo que permitirá la valoración de la riqueza, de la modalidad lingüística andaluza todo ello con el propósito de favorecer actitudes de aprecio a dicha diversidad, combatir prejuicios y estereotipos lingüísticos y estimular la reflexión interlingüística, considerando las lenguas como un bien cultural que suponen un enriquecimiento personal y colectivo. Un segundo grupo de competencias atienden a la producción, comprensión e interacción oral y escrita, incorporando las formas de comunicación mediadas por la tecnología y referidas a los diferentes ámbitos de comunicación: personal, educativo, social y profesional. Así, las competencias específicas segunda y tercera se relacionan con la comunicación oral; la cuarta, con la comprensión lectora, y la quinta, con la expresión escrita. La sexta competencia específica pone el foco en la alfabetización mediática e informacional; la séptima en el desarrollo del lector autónomo y la octava se reserva para la lectura literaria, tanto autónoma como guiada en el aula. La competencia específica novena atiende a la reflexión sobre la lengua y sus usos, mientras que la décima, relativa a la ética de la comunicación, es transversal a todas ellas. Los saberes básicos se organizan en cuatro bloques. El primero, «Las lenguas y sus hablantes», se corresponde de manera directa con la primera competencia específica. El segundo bloque, «Comunicación», integra los saberes implicados en la comunicación oral y escrita y la alfabetización informacional y mediática, vertebrados en torno a la realización de tareas de producción, recepción y análisis crítico de textos. El tercer bloque, «Educación literaria», recoge los saberes y experiencias necesarios para consolidar el hábito lector, conformar la propia identidad lectora, desarrollar habilidades de interpretación de textos literarios y conocer algunas obras relevantes, así como autores y autoras importantes de la literatura andaluza, española y universal, estimulando a la vez la escritura creativa con intención literaria. El cuarto bloque, «Reflexión sobre la lengua» propone la construcción guiada de conclusiones sobre el sistema lingüístico, a partir de la formulación de hipótesis, búsqueda de contraejemplos, establecimiento de generalizaciones y contraste entre lenguas, usando para ello el metalenguaje específico. Debido al carácter inequívocamente global y competencial de la educación lingüística, la gradación entre cursos no se establece tanto en relación con la distribución diferenciada de saberes, sino en función de la mayor o menor"
+      ],
+      "codigos_items": [
+        "LAT.4.D.1",
+        "LAT.4.D.2",
+        "LAT.4.D.3",
+        "LAT.4.D.4",
+        "LAT.4.D.5",
+        "LAT.4.D.6",
+        "LAT.4.D.7"
+      ]
+    }
+  ],
+  "comunidad": "andalucia",
+  "idioma": "es"
+}

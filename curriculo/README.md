@@ -6,13 +6,24 @@ estructurados que el sistema utilizará para asistir al docente.
 
 ## Fuentes
 
-Los XML oficiales viven en este mismo directorio, para que el proyecto pueda
-re-ejecutar su propio extractor sin depender de ninguna ruta externa:
+Desde el 14/08/2026 hay **una carpeta por comunidad**, porque el currículo
+dejó de ser uno solo:
 
 ```
-curriculo/fuentes/rd_217_2022.xml         RD 217/2022 (BOE-A-2022-4975)
-curriculo/fuentes/orden_efp_754_2022.xml  Orden EFP/754/2022 (BOE-A-2022-13172)
+curriculo/fuentes/estatal/rd_217_2022.xml         RD 217/2022 (BOE-A-2022-4975)
+curriculo/fuentes/ceuta/orden_efp_754_2022.xml    Orden EFP/754/2022 (BOE-A-2022-13172)
+curriculo/fuentes/cataluna/decret_175_2022.xml    Decret 175/2022 (Akoma Ntoso del DOGC)
+curriculo/fuentes/cataluna/xtec/*.pdf             un PDF por materia (XTEC)
+curriculo/fuentes/andalucia/*.pdf                 BOJA núm. 104 de 2 de junio de 2023
 ```
+
+**Los PDF no están en el repositorio**, por tamaño: son 55 MB. Cada carpeta
+lleva un `LEEME.md` con de dónde se descargan y qué tienen de particular. En el
+caso del DOGC, un aviso importante: sus PDF traen la codificación de fuente
+rota —pierden o sustituyen letras acentuadas sin que se pueda detectar— y por
+eso el currículo catalán se extrae de los PDF por materia de la XTEC.
+
+Todos son texto legal publicado en boletín oficial, de reproducción libre.
 
 **La fuente en uso es la Orden EFP/754.** Desarrolla el mismo real decreto para
 el ámbito de Ceuta y Melilla, y se prefiere por dos razones: parte el currículo
@@ -23,12 +34,30 @@ derivar en qué cursos se imparte cada materia.
 
 Ambos son texto legal publicado en el BOE, de reproducción libre.
 
+## Por qué la salida sí se versiona
+
+Los JSON de `salida*/` están en el repositorio **a propósito**, aunque sean un
+producto derivado. La razón es la de arriba: las fuentes en PDF no están, así
+que sin ellos nadie que clone el proyecto podría sembrar el currículo de
+Cataluña ni de Andalucía. Son 2,4 MB de texto.
+
+```
+curriculo/salida/            estatal y Ceuta (BOE)
+curriculo/salida_cataluna/   Decret 175/2022 + PDF de la XTEC
+curriculo/salida_andalucia/  Orden de 30 de mayo de 2023 (BOJA)
+```
+
+Cada JSON lleva dentro su `comunidad` y su `idioma`, y **el fichero manda**
+sobre lo que se pase en la orden: el dato correcto es el del extractor, no el
+de quien teclea. *(Excepción histórica: los de `salida/` son anteriores al
+campo y no lo traen, así que para ellos vale el valor por defecto, `ceuta`.)*
+
 ## Workflow
 
 ```
-┌──────────────────────┐    extractor.py      ┌──────────────────────┐
-│ rd_217_2022.xml      │ ───────────────────▶ │ salida/*.json        │
-│ (BOE oficial)        │                      │ (datos estructurados) │
+┌──────────────────────┐    extractor*.py     ┌──────────────────────┐
+│ boletín oficial      │ ───────────────────▶ │ salida*/*.json       │
+│ (XML o PDF)          │                      │ (datos estructurados) │
 └──────────────────────┘                      └──────────────────────┘
                                                         │
                                               revisión humana
@@ -40,9 +69,19 @@ Ambos son texto legal publicado en el BOE, de reproducción libre.
                                               └──────────────────────┘
 ```
 
-1. **Extracción automática** (`extractor.py`): lee el XML del BOE y
-   produce un JSON por cada `(materia, ciclo)` con la estructura de
-   competencias específicas, criterios de evaluación y saberes básicos.
+1. **Extracción automática**: produce un JSON por cada `(materia, ciclo)` con
+   competencias específicas, criterios de evaluación y saberes básicos. Hay
+   **tres extractores**, porque cada boletín publica de una forma distinta y
+   forzar uno solo salía más caro que tener tres:
+
+   | Módulo | Fuente | Cómo lee |
+   |---|---|---|
+   | `extractor.py` | BOE y DOGC (XML) | máquina de estados sobre el texto en orden |
+   | `extractor_xtec.py` | PDF de la XTEC | posición horizontal: las tablas no tienen bordes |
+   | `extractor_boja.py` | PDF del BOJA | celda a celda: estas tablas sí tienen bordes |
+
+   El BOJA es el único que **numera sus saberes básicos** (`BYG.1.A.8`), y ese
+   código se conserva. En los demás, el cargador les pone un contador propio.
 
 2. **Revisión humana**: el JSON producido se inspecciona y corrige
    manualmente si fuera necesario (errores de parsing, cabeceras
@@ -51,14 +90,19 @@ Ambos son texto legal publicado en el BOE, de reproducción libre.
 3. **Carga en BD**: el comando `flask seed curriculo` lee el JSON
    revisado y lo persiste de forma idempotente.
 
-## Materias incluidas en el alcance
+## Alcance actual
 
-| Etiqueta del proyecto | Materia oficial en el BOE |
-|-----------------------|---------------------------|
-| Tecnología            | "Tecnología y Digitalización" (1.º a 3.º) y "Tecnología" (4.º) |
-| Lengua                | "Lengua Castellana y Literatura"                              |
-| Matemáticas           | "Matemáticas"                                                  |
-| Inglés                | "Lengua Extranjera"                                            |
+| Comunidad | Materias | Bloques | Criterios | Saberes |
+|---|---:|---:|---:|---:|
+| Ceuta y Melilla (Orden EFP/754) | 22 | 42 | 752 | 1461 |
+| Cataluña (Decret 175/2022 + XTEC) | 26 | 36 | 737 | 1918 |
+| Andalucía (Orden 30/05/2023) | 19 | 41 | 737 | 957 |
+
+Un bloque es un par `(materia, cursos)`: Andalucía publica curso a curso y por
+eso tiene más bloques que materias, mientras que Cataluña agrupa 1.º–3.º.
+
+Empezó siendo cuatro materias —Tecnología, Lengua, Matemáticas e Inglés—, que
+es el alcance con el que nació el proyecto como TFG.
 
 ## Ciclos según el RD 217/2022
 
@@ -74,14 +118,38 @@ Esta agrupación se preserva en el modelo: las entidades
 
 ## Uso
 
+`./curriculo` se monta en el contenedor como `/curriculo`, **en solo lectura**:
+basta para sembrar, que es lo único que hace falta desde dentro. Para volver a
+extraer hay que escribir, así que se hace desde el host.
+
 ```bash
-# Desde el host (recomendado)
-docker compose exec api python -m app.curriculo.extractor \
-    --xml /app/../../DOCUMENTACION/referencias/rd_217_2022.xml \
-    --salida /app/../../implementacion/curriculo/salida
+# Sembrar. Cada JSON lleva su comunidad dentro, así que no hace falta decirla.
+docker compose exec api flask seed curriculo --directorio /curriculo/salida
+docker compose exec api flask seed curriculo --directorio /curriculo/salida_cataluna
+docker compose exec api flask seed curriculo --directorio /curriculo/salida_andalucia
 ```
 
-(Las rutas dentro del contenedor pueden ajustarse; ver el script.)
+```bash
+# Volver a extraer (solo si se cambia el extractor o llega un boletín nuevo).
+cd api
+
+python -m app.curriculo.extractor \
+    --xml ../curriculo/fuentes/ceuta/orden_efp_754_2022.xml \
+    --salida ../curriculo/salida
+
+python -m app.curriculo.extractor_xtec \
+    --pdfs ../curriculo/fuentes/cataluna/xtec \
+    --articulado ../curriculo/fuentes/cataluna/decret_175_2022.xml \
+    --salida ../curriculo/salida_cataluna
+
+# El Anexo II del BOJA está partido entre dos ficheros y una materia queda a
+# caballo, así que los tramos se concatenan antes de leer. El formato es
+# RUTA:DESDE:HASTA, con las páginas en base 0 y HASTA excluido.
+python -m app.curriculo.extractor_boja \
+    --pdf "../curriculo/fuentes/andalucia/BOJA23-104-00289-9727-01_00284752.pdf:49:" \
+    --pdf "../curriculo/fuentes/andalucia/BOJA23-104-00246-9727-02_00284752.pdf:0:16" \
+    --salida ../curriculo/salida_andalucia
+```
 
 ## Formato JSON producido
 

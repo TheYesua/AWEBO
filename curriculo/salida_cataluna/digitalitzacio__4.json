@@ -1,0 +1,215 @@
+{
+  "materia_oficial": "Digitalització",
+  "materia": "Digitalització",
+  "etapa": "ESO",
+  "ciclo": "4º ESO",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "4º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Gestionar les eines i els dispositius informàtics i de comunicació d’ús quotidià aplicant els coneixements de maquinari i sistemes operatius per resoldre problemes tècnics senzills.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Idear solucions innovadores i creatives aplicant diferents formes de raonament, integrant-les en l’entorn personal d’aprenentatge tot fent ús de les eines i els recursos d’edició, la creació de continguts digitals i el desenvolupament d’aplicacions per optimitzar l’aprenentatge permanent.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Identificar riscos i amenaces i aplicar mesures preventives i correctives, adquirint hàbits que fomentin el benestar digital per protegir dispositius, dades personals i la pròpia salut.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Fer un ús actiu, responsable i ètic de les tecnologies digitals, valorant les possibles accions que cal fer a la xarxa i identificar-ne les repercussions per exercir una ciutadania digital crítica.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Analitzar l’impacte de les tecnologies digitals a la societat, a partir de la identificació dels canvis econòmics i socials a escala global, i aplicar les tecnologies emergents per al disseny de solucions a problemes reals tenint en compte els objectius de desenvolupament sostenible.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Connectar dispositius i gestionar xarxes locals aplicant els coneixements i processos associats a sistemes de comunicació amb fil i sense fil amb una actitud proactiva."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Gestionar, a nivell bàsic, sistemes operatius configurant-ne les característiques en funció de les necessitats personals."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Resoldre problemes tècnics senzills analitzant components i funcions dels dispositius digitals, avaluant les solucions de manera crítica i reformulant el procediment, si cal."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "1",
+      "descripcion": "Fer un ús responsable dels dispositius i de la seva utilització per promoure la sostenibilitat, tot fomentant la reutilització i l’estalvi i l’eficiència energètica La competència fa referència a la gestió de les eines i dispositius informàtics habituals de l’entorn de l’alumnat. L’ús estès de les tecnologies digitals implica que l’alumnat ha d’adquirir habilitats relatives al coneixement del maquinari i programari dels dispositius. També implica la seva configuració i la identificació i la resolució de problemes tècnics senzills, per aprofitar al màxim aquestes tecnologies. La competència engloba aspectes tècnics relatius al funcionament dels equips, les aplicacions i programes requerits per al seu ús. Així mateix, cal considerar el paper que assumeixen actualment les tecnologies de la comunicació i la seva implicació a la societat. Per això, es considera fonamental abordar les funcionalitats d’Internet, els elements de diferents sistemes de comunicació i la incorporació de tecnologies emergents relatives a la digitalització i la connexió d’objectes (IoT)."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Cercar i seleccionar informació per a la ideació de solucions innovadores, amb responsabilitat i sentit crític."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Dissenyar solucions possibles a problemes plantejats aplicant diferents formes de raonament, com el pensament de disseny i el pensament computacional, tenint en compte les tecnologies emergents, la realitat virtual, augmentada i mixta."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Generar o modificar, de forma individual o col·laborativa, continguts amb suport digital i creacions audiovisuals, integrant imatge, so i vídeo per a la construcció de produccions multimèdia."
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "2",
+      "descripcion": "Desenvolupar aplicacions fent servir el programari i els llenguatges de programació adients, per la resolució de problemes concrets tenint en compte criteris d’autoria i llicències d’ús."
+    },
+    {
+      "codigo": "2.5",
+      "competencia": "2",
+      "descripcion": "Integrar els continguts digitals en entorns personals d’aprenentatge (pàgina web, espai al núvol, carpetes, etc.) autoregulant el propi aprenentatge de manera autònoma. La presència d’elements tecnològics i mitjans digitals a les nostres vides és un fet que, progressivament, adquireix més transcendència. Per això, la competència inclou aspectes relacionats amb l’aprofitament apropiat de les estratègies de tractament d’informació i amb la generació de nou coneixement, mitjançant l’edició i el desenvolupament de continguts emprant aplicacions digitals, de manera que l’alumnat pugui desenvolupar la creativitat i l’esperit d’innovació per respondre als reptes que es presentin a la seva vida personal, acadèmica i professional. Així mateix, s’aborden les possibilitats que aporten les eines per a la comunicació i per al treball col·laboratiu, permetent compartir i difondre experiències, idees i informació de naturalesa diferent. Tanmateix, per optimitzar i garantir un aprenentatge permanent en contextos formals, no formals i informals, cal la integració de recursos digitals en el procés formatiu de l’alumnat, així com la gestió adequada de l’entorn personal d’aprenentatge (EPA)."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Configurar adequadament les opcions de privadesa de les aplicacions, xarxes socials i espais virtuals i utilitzar les eines i tècniques de seguretat, per protegir les dades personals, la petjada digital i preservar la seva identitat a la xarxa."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Configurar i actualitzar mesures de protecció i seguretat de dispositius i sistemes digitals d’ús habitual (antivirus, contrasenyes, bloqueig de pantalla, protecció de la comunicació, etc."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Identificar i prendre mesures per protegir-se davant d’amenaces, atacs, intrusions o infeccions que esdevenen a la xarxa."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "3",
+      "descripcion": "Identificar situacions de risc per a la salut associades a l’ús de les tecnologies digitals i adoptar les mesures necessàries per tenir cura de la pròpia salut. La competència fa referència a les mesures de seguretat que s’han d’adoptar per tenir cura de dispositius, dades personals i la salut individual. L’estreta interacció que es fa, de manera habitual, amb la tecnologia i amb els dispositius augmenta l’exposició a riscos, amenaces i atacs. Per això, l’alumnat ha d’adquirir hàbits que li permetin preservar i cuidar el benestar i la identitat digital, aprendre a protegir-se davant de possibles amenaces que suposin un risc per a la salut física i mental i adquirir pautes adequades de resposta, triar la millor opció i avaluar el benestar individual i col·lectiu. Aquesta competència engloba, doncs, tant aspectes tècnics relatius a la configuració de dispositius com els relacionats amb la protecció de les dades personals. Incideix en la gestió eficaç de la identitat digital de l’alumnat, orientada a una presència a la xarxa cuidada, on es tingui en compte la imatge que es projecta i el rastre que es deixa a la xarxa. Així mateix, s’aborda el tema del benestar personal davant de possibles amenaces externes en el context de problemes com el ciberassetjament, la dependència tecnològica o l’abús en el joc."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Respectar els drets d’autoria i les llicències d’ús en la comunicació, col·laboració i participació a la xarxa, fent un ús ètic de les dades i de les produccions, i justificar-ne les raons."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Analitzar i valorar críticament les aportacions de les tecnologies digitals a les gestions administratives i el comerç electrònic, identificant els problemes derivats de la bretxa social d’accés i l’ús per a determinats col·lectius."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Valorar la importància de l’oportunitat, la facilitat i la llibertat d’expressió que suposen els mitjans digitals connectats, analitzant de manera crítica els missatges que es reben tenint en compte la seva objectivitat, ideologia, intencionalitat, biaixos i caducitat."
+    },
+    {
+      "codigo": "4.4",
+      "competencia": "4",
+      "descripcion": "Participar, col·laborar i interactuar en espais virtuals de comunicació i plataformes d’aprenentatge col·laboratiu, compartint i publicant informació i dades, adaptant-se a diferents audiències amb una actitud respectuosa, responsable i participativa. La competència fa referència al coneixement de les possibles accions que es poden fer per a l’exercici d’una ciutadania activa a la xarxa, mitjançant la participació proactiva en activitats en línia. L’ús estès de les gestions a realitzar amb tecnologies digitals implica que cada cop hi ha més serveis públics i privats que demanen que la ciutadania interactuï amb els mitjans digitals, per la qual cosa el coneixement i l’adquisició de destreses per abordar aquestes gestions és necessari per garantir el correcte aprofitament de la tecnologia, així com fer a l’alumnat conscient de la bretxa social d’accés i ús per a diversos col·lectius i del seu impacte ecosocial. Al quart curs d’educació secundària, aquesta competència engloba aspectes d’interacció amb usuaris i de contingut a la xarxa, de manera que es treballen tant el tracte correcte a l’internauta com el respecte a les accions que duen a terme altres persones i a l’autoria dels materials aliens. També aborda les gestions administratives telemàtiques, les accions comercials electròniques i la participació en línia. Així mateix, fa reflexionar l’alumnat sobre les tecnologies emergents i l’ús ètic de les dades que gestionen aquestes tecnologies, amb la finalitat d’educar usuàries i usuaris digitals actius, però sobretot crítics en l’ús de la tecnologia."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Identificar els canvis econòmics i socials derivats de l’ús de les tecnologies digitals aplicades a diferents àmbits."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Analitzar i valorar l’impacte de les tecnologies digitals en la societat tenint en compte els ODS."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "5",
+      "descripcion": "Aplicar les tecnologies emergents en el disseny de solucions a problemes reals tenint en compte els objectius de desenvolupament sostenible. (Intel·ligència artificial, IoT, etc.)."
+    },
+    {
+      "codigo": "5.4",
+      "competencia": "5",
+      "descripcion": "Analitzar l’ús d’eines de simulació i supercomputadors en el tractament de dades i valorar-ne l’impacte en la societat de la informació i l’aplicació a tecnologies associades. Aquesta competència engloba tant el coneixement i l’anàlisi dels canvis socials i econòmics derivats de la digitalització i l’ús de les tecnologies emergents, com la visió global de les contribucions que han aportat a diferents àmbits de la societat. Tanmateix, aporta una visió global de la cultura digital com a precursora del canvi en la societat que afecta a molts àmbits de la vida quotidiana de la ciutadania, mitjançant l’anàlisi d’escenaris reals, en els quals la tecnologia ha ajudat a fer realitat el canvi i el progrés de la societat. La digitalització marca escenaris de futur en progrés constant, que exigirà de la ciutadania una formació sòlida i crítica per fer front als nous reptes i que requerirà una adaptació contínua a aquestes situacions. Per això és fonamental l’aprenentatge permanent al llarg de la vida, per adquirir les habilitats necessàries per desenvolupar-se amb èxit en les noves situacions. L’evolució social i econòmica vinculada a la digitalització ha de tenir un desenvolupament respectuós i integrador amb el medi i les persones, en el marc que determinen els objectius de desenvolupament sostenible. És per això que el disseny de solucions tecnològiques ha de realitzar-se seguint les recomanacions d’aquests marcs."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "1. Dispositius digitals, sistemes operatius i de comunicació",
+      "titulo": "Dispositius digitals, sistemes operatius i de comunicació",
+      "items": [
+        "Anàlisi, implementació i configuració d’ordinadors: elements, muntatge, configuració i resolució de problemes.",
+        "Gestió bàsica de sistemes operatius: instal·lació i configuració d’usuari.",
+        "Gestió bàsica de sistemes de comunicació i Internet. Dispositius de xarxa i funcionament.",
+        "Configuració d’una xarxa domèstica i connexió de dispositius.",
+        "Posada en servei de dispositius connectats (IoT+Wearables). Configuració i connexió de dispositius.",
+        "Reutilització de dispositius digitals adaptats a necessitats específiques.",
+        "Aplicació d’estratègies d’estalvi i eficiència energètica en sistemes i dispositius electrònics."
+      ]
+    },
+    {
+      "codigo": "2",
+      "bloque": "2. Digitalització de l’entorn personal d’aprenentatge",
+      "titulo": "Digitalització de l’entorn personal d’aprenentatge",
+      "items": [
+        "Ús d’estratègies eficaces de cerca i selecció crítica d’informació.",
+        "Edició i creació de continguts: aplicacions de productivitat, desenvolupament d’aplicacions senzilles per a dispositius mòbils i web, realitat virtual, augmentada i mixta.",
+        "Comunicació i col·laboració sincrònica i asincrònica en xarxa.",
+        "Publicació i difusió responsable d’informació i dades en xarxes informàtiques."
+      ]
+    },
+    {
+      "codigo": "3",
+      "bloque": "3. Creació i publicació de continguts en suport digital",
+      "titulo": "Creació i publicació de continguts en suport digital",
+      "items": [
+        "Ús d’estratègies avançades de cerca i selecció crítica d’informació.",
+        "Edició i creació de continguts: desenvolupament d’aplicacions senzilles per a dispositius mòbils i web, fent servir diferents llenguatges de programació. Aplicació d’estructures de programació comunes: condicionals i repeticions.",
+        "Ús d’eines per a la producció de continguts amb realitat virtual, augmentada i mixta.",
+        "Desenvolupament de continguts per a Internet en format web, aplicant estàndards d’accessibilitat.",
+        "Aplicació de tecnologies emergents (IA, IoT) en la implementació de solucions a problemes reals.",
+        "Creació de continguts audiovisuals amb eines digitals. Ús d’eines d’edició i tractament d’imatge, àudio i vídeo.",
+        "Aplicació de tècniques de raonament lògic com el pensament de disseny i el pensament computacional en la resolució de problemes en el disseny de solucions.",
+        "Comunicació i col·laboració sincrònica i asincrònica en xarxa.",
+        "Publicació i difusió responsable d’informació i dades en xarxes informàtiques.",
+        "Pràctica de l’educació mediàtica: periodisme digital, blogosfera, estratègies comunicatives."
+      ]
+    },
+    {
+      "codigo": "4",
+      "bloque": "4. Seguretat i benestar digital",
+      "titulo": "Seguretat i benestar digital",
+      "items": [
+        "Avaluació i configuració de la seguretat en dispositius. Mesures preventives i correctives per fer front a riscos, amenaces i atacs a dispositius.",
+        "Aplicació de criteris de seguretat i de protecció de dades. Identitat, reputació, privadesa i empremta digital. Mesures preventives. Configuració de xarxes socials. Gestió d’identitats virtuals.",
+        "Aplicació de criteris de seguretat en la salut física i mental. Riscos, amenaces al benestar personal. Opcions de resposta. Situacions de violència i de risc a la xarxa."
+      ]
+    },
+    {
+      "codigo": "5",
+      "bloque": "5. Ciutadania digital crítica",
+      "titulo": "Ciutadania digital crítica",
+      "items": [
+        "Caracterització de la interactivitat a la xarxa: llibertat d’expressió, propietat intel·lectual i llicències d’ús.",
+        "Ús crític de la xarxa, eines per detectar notícies falses i fraus.",
+        "Gestió d’operacions administratives: serveis públics en línia, registres digitals i certificats oficials.",
+        "Fer un ús segur del comerç electrònic: factures digitals, formes de pagament i criptomonedes.",
+        "Gestió ètica en l’ús de dades i eines digitals: intel·ligència artificial, biaixos, algorísmics i ideològics, obsolescència programada i sobirania tecnològica.",
+        "Aplicació proactiva de la responsabilitat social: plataformes d’iniciativa ciutadana, voluntariat i comunitats de maquinari i programari lliures.",
+        "Anàlisi de l’impacte de les tecnologies digitals en la societat i els canvis socials i econòmics que se’n deriven.",
+        "Comprendre la cultura digital com a font d’aprenentatge permanent, coneixement de les tecnologies digitals emergents i els seus àmbits d’aplicació."
+      ]
+    }
+  ],
+  "comunidad": "cataluna",
+  "idioma": "ca"
+}

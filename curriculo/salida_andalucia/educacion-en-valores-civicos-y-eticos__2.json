@@ -1,0 +1,190 @@
+{
+  "materia_oficial": "Educación en Valores Cívicos y Éticos",
+  "materia": "Educación en Valores Cívicos y Éticos",
+  "etapa": "ESO",
+  "ciclo": "2º ESO",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Inquirir e investigar cuanto se refiere a la identidad humana y a cuestiones éticas relativas al propio proyecto vital, analizando críticamente información fiable y generando una actitud reflexiva al respecto, para promover el autonocimiento y la elaboración de planteamientos y juicios morales de manera autónoma y razonada.",
+      "descriptores": [
+        "CC3"
+      ]
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Actuar e interactuar de acuerdo con normas y valores cívicos y éticos, a partir del reconocimiento fundado de su importancia para regular la vida comunitaria y su aplicación efectiva y justificada en distintos contextos, para promover una convivencia pacífica, respetuosa, democrática y comprometida con el bien común.",
+      "descriptores": [
+        "CC4",
+        "CCEC1"
+      ]
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Entender la naturaleza interconectada e inter y ecodependiente de las actividades humanas, mediante la identificación y análisis de problemas ecosociales de relevancia, para promover hábitos y actitudes éticamente comprometidos con el logro de formas de vida sostenibles.",
+      "descriptores": [
+        "CC3",
+        "CC4",
+        "CE1"
+      ]
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Mostrar una adecuada estima de sí mismo y del entorno, reconociendo y valorando las emociones y los sentimientos propios y ajenos, para el logro de una actitud empática y cuidadosa con respecto a los demás y a la naturaleza.",
+      "descriptores": [
+        "CPSAA3",
+        "CC1",
+        "CC3",
+        "CCEC3"
+      ]
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Construir y expresar un concepto ajustado de sí mismo, reconociendo las múltiples dimensiones de su naturaleza y personalidad, así como de la dimensión cívica y moral de la misma, a partir de la investigación y el diálogo en torno a diversas concepciones sobre la naturaleza humana."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Identificar, gestionar y comunicar ideas, emociones, afectos y deseos con comprensión y empatía hacia las demás personas, demostrando autoestima y compartiendo un concepto adecuado de lo que deben ser las relaciones con otras personas, incluyendo el ámbito afectivo-sexual."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Desarrollar y demostrar autonomía moral a través de la práctica de la deliberación racional, el uso de conceptos éticos, y el diálogo respetuoso con los demás, en torno a distintos valores y modos de vida, así como a problemas relacionados con el ejercicio de los derechos individuales, el uso responsable y seguro de las redes, las conductas adictivas y el acoso escolar."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Promover y demostrar una convivencia pacífica, respetuosa, democrática y comprometida con el bien común, a partir de la investigación sobre la naturaleza social y política del ser humano y el uso y comprensión crítica de los conceptos de ley, poder, soberanía, justicia, Estado, democracia, memoria democrática, dignidad y derechos humanos."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Fomentar el ejercicio de la ciudadanía activa y democrática a través del conocimiento del movimiento asociativo y la participación respetuosa, dialogante y constructiva en actividades de grupo que impliquen tomar decisiones colectivas, planificar acciones coordinadas y resolver problemas aplicando procedimientos y principios cívicos, éticos y democráticos explícitos."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Contribuir a generar un compromiso activo con el bien común a través del análisis y la toma razonada y dialogante de posición en torno a cuestiones éticas de actualidad como la lucha contra la desigualdad y la pobreza, el derecho al trabajo, la salud, la educación y la justicia, así como sobre los fines y límites éticos de la investigación científica."
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "2",
+      "descripcion": "Tomar consciencia de la lucha por una efectiva igualdad de género, y del problema de la violencia y explotación sobre las mujeres, a través del análisis de las diversas olas y corrientes del feminismo y de las medidas de prevención de la desigualdad, la violencia y la discriminación por razón de género y orientación sexual, mostrando igualmente conocimiento de los derechos LGTBIQ+ y reconociendo la necesidad de respetarlos."
+    },
+    {
+      "codigo": "2.5",
+      "competencia": "2",
+      "descripcion": "Contribuir activamente al bienestar social adoptando una posición propia, explícita, informada y éticamente fundamentada, sobre el valor y pertinencia de los derechos humanos, el respeto por la diversidad etnocultural, la consideración de los bienes públicos globales y la percepción del valor social de los impuestos."
+    },
+    {
+      "codigo": "2.6",
+      "competencia": "2",
+      "descripcion": "Contribuir a la consecución de un mundo más justo y pacífico a través del análisis y reconocimiento de la historia democrática de nuestro país y de nuestra Comunidad Autónoma y de las funciones del Estado de derecho y sus instituciones nacionales y autonómicas, los organismos internacionales, las asociaciones civiles y los cuerpos y fuerzas de seguridad del Estado, en su empeño por lograr la paz y la seguridad integral, atender a las víctimas de la violencia y promover la solidaridad y cooperación entre las personas y los pueblos."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Describir las relaciones históricas de interconexión, interdependencia y ecodependencia entre nuestras vidas y el entorno a partir del análisis de las causas y consecuencias de los más graves problemas ecosociales que nos afectan tanto a nivel global como a nivel local."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Valorar distintos planteamientos científicos, políticos y éticos con los que afrontar la emergencia climática y la crisis medioambiental a través de la exposición y el debate argumental en torno a los mismos."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Promover estilos de vida éticamente comprometidos con el logro de un desarrollo sostenible, contribuyendo por sí mismo y en su entorno a la prevención de los residuos, la gestión sostenible de los recursos, la movilidad segura, sostenible y saludable, el comercio justo, el consumo responsable, el cuidado del patrimonio natural de Andalucía, el respeto por la diversidad etnocultural, propia de la realizad andaluza, y el cuidado y protección de los animales."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Desarrollar una actitud de gestión equilibrada de las emociones, de estima y cuidado de sí mismo y de los otros, identificando, analizando y expresando de manera asertiva las propias emociones y sentimientos, y reconociendo y valorando los de los demás en distintos contextos y en torno a actividades creativas y de reflexión individual o dialogada sobre cuestiones éticas y cívicas."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Autoconocimiento y autonomía moral",
+      "titulo": "Autoconocimiento y autonomía moral",
+      "items": [
+        "La investigación ética y la resolución de problemas complejos. El pensamiento crítico y filosófico.",
+        "La naturaleza humana y la identidad personal. Dignidad, libertad y moralidad.",
+        "La educación de las emociones y los sentimientos. La autoestima personal. La igualdad y el respeto mutuo en las relaciones con otras personas.",
+        "La educación afectivo-sexual.",
+        "Deseos y razones. La voluntad y el juicio moral. Autonomía y responsabilidad.",
+        "La ética como guía de nuestras acciones. La reflexión en torno a lo valioso y los valores: universalismo y pluralismo moral. Normas, las virtudes y los sentimientos morales. Éticas de la felicidad, éticas del deber y éticas de la virtud.",
+        "El conflicto entre legitimidad y legalidad. La objeción de conciencia. Los derechos individuales y el debate en torno a la libertad de expresión. El Estado de derecho y los valores constitucionales. La democracia: principios, procedimientos e instituciones.",
+        "El problema de la desinformación. La protección de datos y el derecho a la intimidad. El ciberacoso y las situaciones de violencia en las redes. Las conductas adictivas."
+      ],
+      "codigos_items": [
+        "VCE.2.A.1",
+        "VCE.2.A.2",
+        "VCE.2.A.3",
+        "VCE.2.A.4",
+        "VCE.2.A.5",
+        "VCE.2.A.6",
+        "VCE.2.A.7",
+        "VCE.2.A.8"
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Sociedad, justicia y democracia",
+      "titulo": "Sociedad, justicia y democracia",
+      "items": [
+        "Las virtudes del diálogo y las normas de argumentación. La resolución pacífica de conflictos. La empatía con los demás.",
+        "La naturaleza y origen de la sociedad: competencia y cooperación, egoísmo y altruismo. Las estructuras sociales y los grupos de pertenencia.",
+        "La política: ley, poder, soberanía y justicia. Formas de estado y tipos de gobierno. El Estado de derecho . La Constitución española de 1978 y sus valores como norma fundamental de todos los españoles. La democracia: principios, procedimientos e instituciones. La Comunidad Autónoma de Andalucía, su Estatuto e Instituciones. Blas Infante y el Andalucismo histórico. La memoria democrática. La guerra, el terrorismo de ETA y otras formas de violencia política.",
+        "Las distintas generaciones de derechos humanos. Su constitución histórica y su relevancia ética. Los derechos de la infancia.",
+        "Asociacionismo y voluntariado. La ciudadanía y la participación democrática. Los códigos deontológicos. Las éticas aplicadas.",
+        "La desigualdad económica y la lucha contra la pobreza. Globalización económica y bienes públicos globales. El comercio justo. El derecho al trabajo, la salud, la educación y la justicia. El valor social de los impuestos.",
+        "La igualdad de género y las diversas olas y corrientes del feminismo. La prevención de la explotación y la violencia contra niñas y mujeres. La corresponsabilidad en las tareas domésticas y de cuidados.",
+        "El interculturalismo. La inclusión social y el respeto por la diversidad y las identidades etnocultural y de género. Los derechos LGTBIQ+.",
+        "Fines y límites éticos de la investigación científica. La bioética. El desafío de la inteligencia artificial. Las propuestas transhumanistas.",
+        "Acciones individuales y colectivas en favor de la paz. La contribución del Estado y los organismos internacionales a la paz, la seguridad integral y la cooperación. La atención a las víctimas de la violencia. El derecho internacional y la ciudadanía global. Las fuerzas armadas y la defensa al servicio de la paz. El papel de las ONG y de las ONGD."
+      ],
+      "codigos_items": [
+        "VCE.2.B.1",
+        "VCE.2.B.2",
+        "VCE.2.B.3",
+        "VCE.2.B.4",
+        "VCE.2.B.5",
+        "VCE.2.B.6",
+        "VCE.2.B.7",
+        "VCE.2.B.8",
+        "VCE.2.B.9",
+        "VCE.2.B.10"
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Sostenibilidad y ética ambiental",
+      "titulo": "Sostenibilidad y ética ambiental",
+      "items": [
+        "Interdependencia, interconexión y ecodependencia entre nuestras formas de vida y el entorno. Lo local y lo global. Consideración crítica de las diversas cosmovisiones sobre la relación humana con la naturaleza.",
+        "Los límites del planeta y el agotamiento de los recursos. La huella ecológica de las acciones humanas. La emergencia climática.",
+        "Diversos planteamientos éticos, científicos y políticos en torno a los problemas ecosociales. La ética ambiental. La ética de los cuidados y el ecofeminismo. Los Objetivos de Desarrollo Sostenible. El decrecimiento. La economía circular.",
+        "El compromiso activo con la protección de los animales y el medio ambiente. Los derechos de los animales y de la naturaleza. La perspectiva biocéntrica.",
+        "Estilos de vida sostenible: la prevención de los residuos y la gestión sostenible de los recursos. La movilidad segura, saludable y sostenible. El consumo responsable. Alimentación y soberanía alimentaria. Comunidades resilientes y en transición. Expresión Artística La materia de Expresión Artística pone en funcionamiento diferentes procesos cognitivos, culturales, emocionales y afectivos, haciendo que todos ellos se combinen e interactúen dando lugar a un pensamiento de carácter unitario y creador. La materia favorece la experimentación con las principales técnicas artísticas y el desarrollo de la capacidad expresiva y de la creatividad, del pensamiento divergente y de la innovación. Asimismo, busca dotar al alumnado de los conocimientos, destrezas y actitudes necesarios para comunicar a través de la expresión artística. Con este objetivo, la materia se plantea como un espacio desde el que estimular el deseo de expresar una visión personal del mundo a través de producciones artísticas propias y desde el que convertir el error o el fracaso en una oportunidad de aprendizaje. El análisis y la evaluación de los procesos de creación, de las experiencias vividas, de las estrategias y medios utilizados, de los errores cometidos y los progresos obtenidos ayudarán al alumnado a tomar conciencia de la creatividad como medio de conocimiento y de resolución de problemas. La materia está diseñada a partir de cuatro competencias específicas: la creación de producciones artísticas, la observación y valoración crítica de producciones artísticas y de la selección y el empleo tanto de técnicas gráficoplásticas como audiovisuales. El carácter eminentemente práctico de la materia determina la elección de sus saberes básicos. Estos se encuentran divididos en dos bloques: «Técnicas gráfico-plásticas», que recoge las diferentes técnicas artísticas que el alumnado ha de explorar, aprendiendo a seleccionar aquellas que resulten más adecuadas a sus propósitos expresivos; y «Fotografía, lenguaje visual, audiovisual y multimedia», bloque que permite profundizar en los aprendizajes sobre lenguaje narrativo y audiovisual adquiridos en la materia de Educación Plástica, Visual y Audiovisual. Como saberes transversales a todos los bloques se incluyen, entre otros, la prevención y gestión responsable de los residuos y la seguridad, toxicidad e impacto medioambiental de los diferentes materiales artísticos, contribuyendo así a la educación ambiental del alumnado."
+      ],
+      "codigos_items": [
+        "VCE.2.C.1",
+        "VCE.2.C.2",
+        "VCE.2.C.3",
+        "VCE.2.C.4",
+        "VCE.2.C.5"
+      ]
+    }
+  ],
+  "comunidad": "andalucia",
+  "idioma": "es"
+}

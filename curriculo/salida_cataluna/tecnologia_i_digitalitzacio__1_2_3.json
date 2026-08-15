@@ -1,0 +1,215 @@
+{
+  "materia_oficial": "Tecnologia i Digitalització",
+  "materia": "Tecnologia i Digitalització",
+  "etapa": "ESO",
+  "ciclo": "1º ESO i 2º ESO i 3º ESO",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º ESO",
+    "2º ESO",
+    "3º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Buscar, analitzar i seleccionar la informació adequada, de manera crítica i segura, tot aplicant processos de recerca, mètodes d’anàlisi de productes i experimentant amb eines de simulació, per delimitar problemes tecnològics i proposar solucions a partir de la informació obtinguda",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Planificar, dissenyar i desenvolupar solucions a problemes tecnològics amb autonomia i actitud creativa, tot aplicant el procés tecnològic, coneixements interdisciplinaris i treballant de manera ordenada i cooperativa, per resoldre problemes o necessitats de manera eficaç, innovadora i sostenible.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Aplicar de manera apropiada diferents tècniques i coneixements interdisciplinaris, tot utilitzant operadors, sistemes tecnològics i eines, seguint la planificació i el disseny sostenible previ per construir solucions tecnològiques que donin resposta a necessitats en diferents contextos.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Descriure, representar i intercanviar idees o solucions a problemes tecnològics o digitals, utilitzant els mitjans de representació, simbologia i vocabulari adequats, així com els instruments i els recursos disponibles, utilitzant les eines digitals per argumentar, comunicar i difondre informació.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Desenvolupar algorismes i aplicacions informàtiques en diferents entorns, tot aplicant els principis del pensament computacional i incorporant les tecnologies emergents, per resoldre problemes concrets, automatitzar processos i aplicar-los en sistemes de control o robòtica.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Utilitzar els fonaments del funcionament dels dispositius i de les aplicacions habituals de l’entorn digital d’aprenentatge, analitzant-ne els components i les funcions i ajustant-los a les necessitats per fer-ne un ús més eficient i segur, per detectar i resoldre problemes tècnics senzills.",
+      "descriptores": []
+    },
+    {
+      "codigo": "7",
+      "descripcion": "Fer ús ètic, sostenible i ecosocialment responsable de la tecnologia, identificant les repercussions i les aportacions, per valorar l’impacte del desenvolupament tecnològic a la societat i a l’entorn.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Identificar i definir problemes o necessitats plantejades, tot cercant i contrastant la informació procedent de diferents fonts de manera crítica i segura, fent ús dels coneixements científics i tecnològics, avaluant-ne la fiabilitat i la pertinència."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Analitzar i examinar productes tecnològics d’ús habitual a través de l’anàlisi d’objectes i sistemes, fent ús dels coneixements científics i tecnològics, utilitzant, si s’escau, eines de simulació, en la construcció de coneixement. Aquesta competència específica aborda el primer repte de qualsevol projecte tècnic: definir el problema o necessitat a resoldre. Requereix investigar a partir de múltiples fonts, avaluant-ne la fiabilitat i la veracitat de la informació obtinguda amb actitud crítica, sent conscient dels beneficis i riscos de l’accés obert i il·limitat a la informació que ofereix Internet (infoxicació, accés a continguts inadequats...). A més, la transmissió massiva de dades en dispositius i aplicacions comporta l’adopció de mesures preventives per protegir els dispositius, la salut i les dades personals, sol·licitant ajuda o denunciant de manera efectiva, davant amenaces a la privacitat i el benestar personal (frau, suplantació d’identitat, ciberassetjament...) i fent un ús ètic i saludable. D’altra banda, l’anàlisi d’objectes i de sistemes inclou l’estudi dels materials emprats en la fabricació dels diferents elements, les formes, el procés de fabricació i l’assemblatge dels components. S’estudia el funcionament del producte, les seves normes d’ús, les seves funcions i les seves utilitats. De la mateixa forma s’analitzen sistemes tecnològics, com poden ser algorismes de programació o productes digitals, dissenyats amb una finalitat concreta. L’objectiu és comprendre les relacions entre les característiques del producte analitzat i les necessitats que cobreix o els objectius per als quals va ser creat, així com, valorar les repercussions socials positives i negatives del producte o sistema i les conseqüències mediambientals del procés de fabricació o de l’ús d’aquest."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Idear i dissenyar solucions tecnològiques originals a problemes plantejats, tot aplicant el procés tecnològic amb conceptes, tècniques i procediments interdisciplinaris amb actitud emprenedora, perseverant i creativa, documentant la informació en una memòria de projecte."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Seleccionar, planificar i organitzar el temps, els materials i les eines, així com les tasques necessàries per a la construcció d’una solució definida en un projecte, treballant individualment o en grup de manera cooperativa."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Aplicar criteris de sostenibilitat en el disseny de solucions tecnològiques considerant tot el cicle de vida útil de l’objecte. Aquesta competència s’associa amb dos dels pilars estructurals de la matèria, com són la creativitat i l’emprenedoria, ja que aporta tècniques i eines a l’alumnat per a planificar, dissenyar i desenvolupar solucions a problemes definits que han de complir una sèrie de requisits, i orientar en l’organització de les tasques que haurà d’exercir de manera personal o en equip al llarg del procés de resolució creativa del problema. El desenvolupament d’aquesta competència implica la planificació, la previsió de recursos sostenibles necessaris i el foment del treball cooperatiu en tot el procés. Les metodologies o marcs de resolució de problemes tecnològics requereixen l’activació d’una sèrie d’actuacions o fases seqüencials o cícliques que marquen la dinàmica del treball personal i en grup. Abordar reptes amb la finalitat d’obtenir resultats concrets, garantint l’equilibri entre el creixement econòmic, benestar social i ambiental, aportant solucions viables i idònies, suposa una actitud emprenedora, que estimula la creativitat i la capacitat d’innovació. Així mateix, es promou l’autoavaluació estimant els resultats obtinguts a fi de continuar amb cicles de millora contínua. En aquest sentit, la combinació de coneixements amb unes certes destreses i actituds de caràcter interdisciplinari, com ara autonomia, innovació, creativitat, valoració crítica de resultats, treball cooperatiu, resiliència i emprenedoria resulten, en fi, imprescindibles per obtenir resultats eficaços en la resolució de problemes."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Fabricar objectes o models mitjançant la manipulació i la conformació de materials, tot emprant instruments de mesura, eines i màquines adequades, posant en pràctica els fonaments d’estructures, mecanismes, electricitat i electrònica seguint les normes de seguretat i de salut."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Avaluar el resultat d’una construcció tot contrastant les seves funcions en relació amb els requeriments tècnics del projecte, mitjançant l’observació i l’ús d’instruments de mesura per validar el resultat final. Aquesta competència fa referència, d’una banda, als processos de construcció manual i la fabricació mecànica i, d’una altra , a l’aplicació dels coneixements relatius a operadors i sistemes tecnològics (estructurals, mecànics, elèctrics i electrònics) necessaris per construir o fabricar prototips en funció d’un disseny i planificació previs. Les diferents actuacions que es desencadenen en el procés creatiu comporten la intervenció de coneixements interdisciplinaris i integrats. Així mateix, l’aplicació de les normes de seguretat i higiene en el treball amb materials, eines i màquines, són fonamentals per a la salut de l’alumnat, evitant els riscos inherents a moltes de les tècniques que s’han d’emprar. D’altra banda, aquesta competència requereix el desenvolupament d’habilitats i destreses relacionades amb l’ús de les eines, recursos i instruments necessaris (eines i màquines manuals i digitals) i d’actituds estretament lligades amb la superació de dificultats, així com la motivació i l’interès pel treball i la qualitat d’aquest."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Documentar el procés de la creació d’un producte des del disseny fins a l’avaluació, elaborant la documentació tècnica i gràfica amb l’ajuda d’eines digitals, emprant els formats i el vocabulari tècnic adequats, de manera col·laborativa, tant presencialment com en remot."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Representar objectes, diagrames i esquemes tècnics mitjançant eines digitals col·laboratives, tot aplicant les normes tècniques corresponents."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Utilitzar dispositius i recursos digitals per a comunicar-se amb els altres, per difondre els propis aprenentatges i argumentar-los. La competència abasta els aspectes necessaris per a la comunicació i l’intercanvi d’idees. Fa referència a l’exposició i l’argumentació de propostes, representació de dissenys, manifestació d’opinions, etc. Al mateix temps, inclou la comunicació i difusió de documentació tècnica relativa al procés. En aquest aspecte s’ha de tenir en compte l’aplicació d’eines digitals tant en l’elaboració de la informació com quant als propis canals de comunicació. Aquesta competència requereix, a més de l’ús adequat del llenguatge, de la incorporació de l’expressió gràfica i terminologia tecnològica, matemàtica i científica en les exposicions, garantint així la comunicació entre l’emissor i el receptor. Això implica una actitud responsable i de respecte cap als protocols establerts en el treball col·laboratiu, extensible tant al context presencial com a les actuacions en la xarxa, la qual cosa suposa interactuar mitjançant eines, plataformes virtuals o xarxes socials per comunicar-se, compartir dades i informació i treballar col·laborativament, aplicant els codis de comunicació i comportament específics de l’àmbit digital."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Descriure, interpretar i dissenyar solucions a problemes informàtics mitjançant algorismes i diagrames de flux, tot aplicant els elements i les tècniques de programació de manera creativa."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Programar aplicacions senzilles per a diferents dispositius (ordinadors, dispositius mòbils i altres) emprant els elements de programació de manera apropiada, fent servir el programari i els llenguatges de programació adients i mòduls d’intel·ligència artificial que afegeixin funcionalitats."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "5",
+      "descripcion": "Automatitzar processos, màquines i objectes de manera autònoma, amb o sense connexió a Internet, mitjançant l’anàlisi, la construcció i la programació de robots i sistemes de control. Aquesta competència fa referència a l’aplicació dels principis del pensament computacional en el procés creatiu. És a dir, implica la posada en marxa de processos ordenats que inclouen la descomposició del problema plantejat, l’estructuració de la informació, la modelització del problema, la seqüenciació del procés i el disseny d’algorismes per implementar-los en un programa informàtic. D’aquesta manera, la competència està enfocada al disseny i activació d’algorismes plantejats per a aconseguir un objectiu concret. Aquest objectiu podria referir-se, per exemple, al desenvolupament d’una aplicació informàtica, a l’automatització d’un procés o al desenvolupament del sistema de control d’una màquina, en la qual intervinguin diferents entrades i sortides que quedin governades per un algorisme. És a dir, l’aplicació de la tecnologia digital en el control d’objectes o màquines, automatitzant rutines i facilitant la interactuació amb els objectes, incloent així, els sistemes controlats mitjançant la programació d’una targeta controladora o els sistemes robòtics. A més, s’ha de considerar l’abast de les tecnologies emergents com són Internet de les coses, tractament massiu de dades (big data) o la intel·ligència artificial (IA), ja presents en les nostres vides de manera quotidiana. Les eines actuals permeten la seva incorporació en el procés creatiu, aproximant-les a l’alumnat i proporcionant un enfocament tècnic dels seus fonaments."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Fer un ús eficient i segur dels dispositius digitals d’ús quotidià en la resolució de problemes senzills, analitzant els components i els sistemes de comunicació, per identificar els riscos i adoptar mesures de seguretat per a la protecció de dades i equips."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Crear continguts, elaborar materials i difondre’ls en diferents plataformes, configurant correctament les eines digitals habituals de l’entorn d’aprenentatge, ajustant-les a les necessitats i respectant les llicències i els drets d’autoria."
+    },
+    {
+      "codigo": "6.3",
+      "competencia": "6",
+      "descripcion": "Organitzar la informació de manera estructurada, aplicant tècniques d’emmagatzematge segur. Aquesta competència fa referència al coneixement, ús segur i manteniment dels diferents elements que s’engloben en l’entorn digital d’aprenentatge. L’augment actual de la presència de la tecnologia en les nostres vides fa necessària la integració de les eines digitals en el procés d’aprenentatge permanent. Per això, aquesta competència engloba la comprensió del funcionament dels dispositius implicats en el procés, així com la identificació de petites incidències. Per a això es fa necessari un coneixement de l’arquitectura del maquinari emprat, dels seus elements i de les seves funcions dins del dispositiu. D’altra banda, les aplicacions de programari incloses en l’entorn digital d’aprenentatge requereixen una configuració i ajust adaptats a les necessitats personals de l’usuari. Es posa de manifest la necessitat de comprensió dels fonaments d’aquests elements i de les seves funcionalitats, així com la seva aplicació i transferència en diferents contextos per a afavorir un aprenentatge permanent."
+    },
+    {
+      "codigo": "7.1",
+      "competencia": "7",
+      "descripcion": "Identificar la influència de l’activitat tecnològica en la societat i en la sostenibilitat ambiental al llarg de la història, analitzant-ne les aportacions i les repercussions tot valorant- ne la importància per al desenvolupament sostenible."
+    },
+    {
+      "codigo": "7.2",
+      "competencia": "7",
+      "descripcion": "Fer un ús responsable i ètic de les tecnologies emergents, tot identificant les seves aportacions al benestar, a la igualtat social i a la reducció de l’impacte ambiental."
+    },
+    {
+      "codigo": "7.3",
+      "competencia": "7",
+      "descripcion": "Valorar l’economia circular com una aportació tecnològica i social a la sostenibilitat per reduir la necessitat de matèries primeres i aconseguir la reducció de residus. Aquesta competència específica fa referència a la utilització de la tecnologia amb actitud ètica, responsable i sostenible i a l’habilitat per analitzar i valorar el desenvolupament tecnològic i la seva influència en la societat i en la sostenibilitat ambiental. Es refereix també a la comprensió del procés pel qual la tecnologia ha anat resolent les necessitats de les persones al llarg de la història. S’inclouen les aportacions de la tecnologia tant a la millora de les condicions de vida com al disseny de solucions per a reduir l’impacte que el seu propi ús pot provocar en la societat i en la sostenibilitat ambiental. L’eclosió de noves tecnologies digitals i el seu ús generalitzat i quotidià fa necessari l’anàlisi i valoració de la contribució d’aquestes tecnologies emergents al desenvolupament sostenible, aspecte essencial per exercir una ciutadania digital responsable en el qual aquesta competència específica es focalitza. En aquesta línia, s’inclou la valoració de les condicions i conseqüències ecosocials del desenvolupament tecnològic, així com els canvis ocasionats en la vida social i organització del treball per la implantació de tecnologies de la comunicació, robòtica, intel·ligència artificial, etc. En definitiva, el desenvolupament d’aquesta competència específica implica que l’alumnat desenvolupi l’interès i la curiositat per l’evolució de les tecnologies digitals, el desenvolupament sostenible i el seu ús ètic."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "1. Procés de resolució de problemes i de projectes",
+      "titulo": "Procés de resolució de problemes i de projectes",
+      "items": [
+        "Aplicació d’estratègies, tècniques i marcs de resolució de problemes en diferents contextos i les seves fases.",
+        "Aplicació d’estratègies de cerca crítica d’informació per a la recerca i la definició de problemes plantejats.",
+        "Anàlisi de productes i de sistemes tecnològics per a la construcció de coneixement des de diferents enfocaments i àmbits.",
+        "Anàlisi i disseny d’estructures per a la construcció de models.",
+        "Anàlisi i disseny de sistemes mecànics bàsics. Muntatges físics i/o ús de simuladors.",
+        "Muntatge d’esquemes i circuits elèctrics o electrònics, físics o simulats. Interpretació, càlcul, disseny i aplicació en projectes.",
+        "Identificar les característiques dels materials d’ús tecnològic i el seu impacte ambiental.",
+        "Utilització d’eines i tècniques de manipulació i mecanització de materials per a la construcció d’objectes i de prototips. Iniciació a la fabricació digital. Aplicació de les normes de seguretat i d’higiene.",
+        "Desenvolupament de l’emprenedoria, la resiliència, la perseverança i la creativitat per resoldre problemes des d’una perspectiva interdisciplinària."
+      ]
+    },
+    {
+      "codigo": "2",
+      "bloque": "2. Comunicació i difusió d’idees",
+      "titulo": "Comunicació i difusió d’idees",
+      "items": [
+        "Ús del vocabulari tècnic apropiat. Desenvolupament de les habilitats bàsiques de comunicació interpersonal. Ús adequat de pautes de conducta pròpies de l’entorn virtual.",
+        "Ús de les normes d’acotació i aplicació de les escales i les tècniques de representació gràfica.",
+        "Utilització d’aplicacions CAD en 2D i 3D per a la representació d’esquemes, circuits, plànols i objectes.",
+        "Utilització d’eines digitals per a l’elaboració, la publicació i la difusió de documentació tècnica i informació multimèdia relativa a projectes."
+      ]
+    },
+    {
+      "codigo": "3",
+      "bloque": "3. Pensament computacional, programació i robòtica",
+      "titulo": "Pensament computacional, programació i robòtica",
+      "items": [
+        "Resolució de processos mitjançant algorísmica i representació amb diagrames de flux.",
+        "Implementació d’aplicacions informàtiques senzilles per a ordinador i dispositius mòbils i iniciació a la intel·ligència artificial.",
+        "Disseny i implementació de sistemes de control programat. Muntatge físic i/o ús de simuladors i programació senzilla de dispositius. Internet de les coses.",
+        "Iniciació a la robòtica. Muntatge i control programat de robots o dispositius programables de manera física o mitjançant simuladors.",
+        "Aplicació de tècniques de depuració iteratives d’un programa informàtic per a la identificació de l’error com a part del procés d’aprenentatge i afirmació de l’autoconfiança."
+      ]
+    },
+    {
+      "codigo": "4",
+      "bloque": "4. Digitalització de l’entorn personal d’aprenentatge",
+      "titulo": "Digitalització de l’entorn personal d’aprenentatge",
+      "items": [
+        "Ús de dispositius digitals, tant dels elements del maquinari com del programari.",
+        "Identificació i resolució de problemes tècnics senzills.",
+        "Utilització de sistemes de comunicació digital d’ús comú. Transmissió de dades.",
+        "Tecnologies sense fil per a la comunicació.",
+        "Utilització d’eines i entorns virtuals d’aprenentatge. Configuració, manteniment i ús crític.",
+        "Utilització d’eines d’edició i creació de continguts. Instal·lació, configuració i ús responsable de les aplicacions i de la propietat intel·lectual.",
+        "Implementació de tècniques de tractament, organització i emmagatzematge segur de la informació. Còpies de seguretat.",
+        "Implementació de la seguretat a la xarxa: riscos, amenaces i atacs. Aplicació de mesures de protecció de les dades i de la informació. Accions preventives per al benestar digital."
+      ]
+    },
+    {
+      "codigo": "5",
+      "bloque": "5. Tecnologia sostenible",
+      "titulo": "Tecnologia sostenible",
+      "items": [
+        "Desenvolupament tecnològic: creativitat, innovació, investigació, obsolescència i impacte social i ambiental. Utilització ètica de les aplicacions i les tecnologies emergents.",
+        "Aplicació de la tecnologia sostenible. Valoració crítica de la contribució a la consecució dels objectius de desenvolupament sostenible.",
+        "Valoració de l’energia com a factor tecnològic clau del desenvolupament sostenible.",
+        "Eficiència energètica, consum responsable i energies renovables."
+      ]
+    }
+  ],
+  "comunidad": "cataluna",
+  "idioma": "ca"
+}

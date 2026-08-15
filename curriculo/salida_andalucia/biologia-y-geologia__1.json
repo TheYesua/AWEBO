@@ -1,0 +1,289 @@
+{
+  "materia_oficial": "Biología y Geología",
+  "materia": "Biología y Geología",
+  "etapa": "ESO",
+  "ciclo": "1º ESO",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Interpretar y transmitir información y datos científicos, argumentando sobre ellos y utilizando diferentes formatos, para analizar conceptos y procesos de las ciencias biológicas y geológicas.",
+      "descriptores": [
+        "CD2",
+        "CD3",
+        "CCEC4"
+      ]
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Identificar, localizar y seleccionar información, contrastando su veracidad, organizándose y evaluándola críticamente, para resolver preguntas relacionadas con las ciencias biológicas y geológicas.",
+      "descriptores": [
+        "CD3",
+        "CD4",
+        "CD5",
+        "CPSAA4"
+      ]
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Planificar y desarrollar proyectos de investigación, siguiendo los pasos de las metodologías científicas y cooperando, cuando sea necesario, para indagar en aspectos relacionados con las ciencias geológicas y biológicas.",
+      "descriptores": [
+        "STEM3",
+        "STEM4",
+        "CD1",
+        "CD2",
+        "CPSAA3",
+        "CE3"
+      ]
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Utilizar el razonamiento y el pensamiento computacional, analizando críticamente las respuestas y soluciones y reformulando el procedimiento, si fuera necesario, para resolver problemas o dar explicación a procesos de la vida cotidiana relacionados con la Biología y la Geología.",
+      "descriptores": [
+        "CPSAA5",
+        "CE1",
+        "CE3",
+        "CCEC4"
+      ]
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Analizar los efectos de determinadas acciones sobre el medioambiente y la salud, basándose en los fundamentos de las ciencias biológicas y de la Tierra, para promover y adoptar hábitos que eviten o minimicen los impactos medioambientales negativos, sean compatibles con un desarrollo sostenible y permitan mantener y mejorar la salud individual y colectiva, todo ello teniendo como marco el entorno andaluz.",
+      "descriptores": [
+        "CPSAA1",
+        "CPSAA2",
+        "CC3",
+        "CC4",
+        "CE1"
+      ]
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Analizar los elementos de un paisaje concreto valorándolo como patrimonio natural y utilizando conocimientos sobre geología y ciencias de la Tierra, para explicar su historia geológica, proponer acciones encaminadas a su protección e identificar posibles riesgos naturales.",
+      "descriptores": [
+        "STEM5",
+        "CD1",
+        "CC4",
+        "CE1",
+        "CCEC1"
+      ]
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Analizar y describir conceptos y procesos biológicos y geológicos básicos relacionados con los saberes de la materia de Biología y Geología, interpretando, localizando y seleccionando información en diferentes formatos (modelos, gráficos, tablas, diagramas, fórmulas, esquemas, símbolos, páginas web, etc.), manteniendo una actitud crítica y obteniendo conclusiones fundamentadas, explicando en una o más lenguas las principales teorías vinculadas con la materia y su relación con la mejora de la vida de las personas, iniciando una actitud crítica sobre la potencialidad de su propia participación en la toma de decisiones y expresando e interpretando conclusiones."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Facilitar la comprensión y análisis de la información sobre procesos biológicos y geológicos o trabajos científicos de manera que se facilite su comprensión, transmitiéndola, utilizando la terminología básica y seleccionando los formatos adecuados (modelos, gráficos, tablas, vídeos, informes, diagramas, fórmulas, esquemas, símbolos, contenidos digitales) para su transmisión mediante ejemplos y generalizaciones."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Analizar y explicar fenómenos biológicos y geológicos a través de ejemplificaciones, representándolos mediante modelos y diagramas sencillos, y reconociendo e iniciando, cuando sea necesario, el uso de los pasos del diseño de ingeniería (identificación del problema, exploración, diseño, creación, evaluación y mejora)."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Resolver, explicar, identificar e interpretar cuestiones básicas sobre la Biología y Geología, localizando, seleccionando y organizando información mediante el uso de distintas fuentes y citándolas correctamente."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Localizar e identificar la información sobre temas biológicos y geológicos con base científica, a través de distintos medios, comparando aquellas fuentes que tengan criterios de validez, calidad, actualidad y fiabilidad, distinguiéndola de las pseudociencias, bulos, teorías conspiratorias y creencias infundadas, y elegir los elementos clave en su interpretación que le permitan mantener una actitud escéptica ante estos."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Iniciarse en la valoración de la contribución de la ciencia a la sociedad y la labor de las personas dedicadas a ella con independencia de su etnia, sexo o cultura, destacando y reconociendo el papel de las mujeres científicas, fomentando vocaciones científicas desde una perspectiva de género, y entendiendo la investigación como una labor colectiva e interdisciplinar en constante evolución."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Analizar y plantear preguntas e hipótesis e intentar realizar predicciones sobre fenómenos biológicos o geológicos que puedan ser respondidas o contrastadas, utilizando métodos científicos, intentando explicar fenómenos biológicos y geológicos sencillos, y realizar predicciones sobre estos."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Diseñar la experimentación, la toma de datos y el análisis de fenómenos biológicos y geológicos de modo que permitan responder a preguntas concretas sencillas y contrastar una hipótesis planteada."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Realizar experimentos sencillos y tomar datos cuantitativos o cualitativos sobre fenómenos biológicos y geológicos utilizando los instrumentos, herramientas o técnicas adecuadas con corrección."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "3",
+      "descripcion": "Interpretar los resultados obtenidos en un proyecto de investigación utilizando, cuando sea necesario, herramientas matemáticas y tecnológicas."
+    },
+    {
+      "codigo": "3.5",
+      "competencia": "3",
+      "descripcion": "Cooperar dentro de un proyecto científico sencillo asumiendo responsablemente una función concreta, utilizando espacios virtuales cuando sea necesario, respetando la diversidad y la igualdad de género, y favoreciendo la inclusión."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Analizar y resolver problemas o dar explicación a procesos biológicos o geológicos sencillos, utilizando conocimientos, datos e información aportados por el docente, el razonamiento lógico, el pensamiento computacional o recursos digitales."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Analizar críticamente la solución a un problema sencillo sobre fenómenos biológicos y geológicos."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Iniciarse en la relación basada en fundamentos científicos de la preservación de la biodiversidad , la conservación del medioambiente, la protección de los seres vivos del entorno, el desarrollo sostenible y la calidad de vida, reconociendo la riqueza de la biodiversidad en Andalucía."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Proponer y adoptar hábitos sostenibles básicos, analizando de una manera crítica las actividades propias y ajenas, a partir de los propios razonamientos, de los conocimientos adquiridos y de la información disponible."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "5",
+      "descripcion": "Proponer y adoptar los hábitos saludables más relevantes, analizando los acciones propias y ajenas con actitud crítica y a partir de fundamentos fisiológicos."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Valorar la importancia del paisaje como patrimonio natural, analizando la fragilidad de los elementos que lo componen."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Interpretar básicamente el paisaje analizando sus elementos y reflexionando sobre el impacto ambiental y los riesgos naturales derivados de determinadas acciones humanas."
+    },
+    {
+      "codigo": "6.3",
+      "competencia": "6",
+      "descripcion": "Reflexionar de forma elemental sobre los riesgos naturales mediante el análisis de los elementos de un paisaje."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Proyecto científico",
+      "titulo": "Proyecto científico",
+      "items": [
+        "Formulación de hipótesis, preguntas y conjeturas: planteamiento con perspectiva científica.",
+        "Estrategias para la búsqueda de información, la colaboración y la comunicación de procesos, resultados o ideas científicas: herramientas digitales y formatos de uso frecuente en ciencia (presentación, gráfica, vídeo, póster, informe, etc.).",
+        "Fuentes fidedignas de información científica: reconocimiento y utilización.",
+        "La respuesta a cuestiones científicas mediante la experimentación y el trabajo de campo: utilización de los instrumentos y espacios necesarios (laboratorio, aulas, entorno, etc.) de forma adecuada.",
+        "Modelado como método de representación y comprensión de procesos o elementos de la naturaleza.",
+        "Métodos de observación y de toma de datos de fenómenos naturales.",
+        "Métodos de análisis de resultados. Diferenciación entre correlación y causalidad.",
+        "La labor científica y las personas dedicadas a la ciencia: contribución a las ciencias biológicas y geológicas e importancia social. El papel de la mujer en la ciencia. Personas dedicadas a la ciencia en Andalucía.",
+        "Estrategias de cooperación y funciones a desempeñar en proyectos científicos de ámbito académico y escolar. La importancia del respeto a la diversidad, igualdad de género e inclusión."
+      ],
+      "codigos_items": [
+        "BYG.1.A.1",
+        "BYG.1.A.2",
+        "BYG.1.A.3",
+        "BYG.1.A.4",
+        "BYG.1.A.5",
+        "BYG.1.A.6",
+        "BYG.1.A.7",
+        "BYG.1.A.8",
+        "BYG.1.A.9"
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. La célula",
+      "titulo": "La célula",
+      "items": [
+        "Conceptos de roca y mineral: características y propiedades.",
+        "Estrategias de clasificación de las rocas sedimentarias, metamórficas e ígneas. Ciclo de las rocas.",
+        "Rocas y minerales relevantes o del entorno: identificación.",
+        "Usos de los minerales y las rocas: su utilización en la fabricación de materiales y objetos cotidianos.",
+        "La estructura básica de la geosfera, atmósfera e hidrosfera.",
+        "Reconocimiento de las características del planeta Tierra que permiten el desarrollo de la vida.",
+        "Determinación de los riesgos e impactos sobre el medioambiente. Comprensión del grado de influencia humana en los mismos.",
+        "Valoración de los riesgos naturales en Andalucía. Origen y prevención."
+      ],
+      "codigos_items": [
+        "BYG.1.B.1",
+        "BYG.1.B.2",
+        "BYG.1.B.3",
+        "BYG.1.B.4",
+        "BYG.1.B.5",
+        "BYG.1.B.6",
+        "BYG.1.B.7",
+        "BYG.1.B.8"
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Genética y evolución",
+      "titulo": "Genética y evolución",
+      "items": [
+        "La célula como unidad estructural y funcional de los seres vivos.",
+        "La célula procariota, la célula eucariota animal y la célula eucariota vegetal, y sus partes.",
+        "Observación y comparación de muestras microscópicas."
+      ],
+      "codigos_items": [
+        "BYG.1.C.1",
+        "BYG.1.C.2",
+        "BYG.1.C.3"
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Geología",
+      "titulo": "Geología",
+      "items": [
+        "Los seres vivos: diferenciación y clasificación en los principales reinos.",
+        "Los principales grupos taxonómicos: observación de especies del entorno y clasificación a partir de sus características distintivas.",
+        "Las especies del entorno: estrategias de identificación (guías, claves dicotómicas, herramientas digitales, visu, etc.).",
+        "Conocimiento y valoración de la biodiversidad de Andalucía y las estrategias actuales para su conservación.",
+        "Análisis de los aspectos positivos y negativos para la salud humana de los cinco reinos de los seres vivos.",
+        "Los animales como seres sintientes: semejanzas y diferencias con los seres vivos no sintientes. Importancia de la función de relación en todos los seres vivos."
+      ],
+      "codigos_items": [
+        "BYG.1.D.1",
+        "BYG.1.D.2",
+        "BYG.1.D.3",
+        "BYG.1.D.4",
+        "BYG.1.D.5",
+        "BYG.1.D.6"
+      ]
+    },
+    {
+      "codigo": "E",
+      "bloque": "E. La Tierra en el universo",
+      "titulo": "La Tierra en el universo",
+      "items": [
+        "Los ecosistemas del entorno, sus componentes bióticos y abióticos y los tipos de relaciones intraespecíficas e interespecíficas.",
+        "La importancia de la conservación de los ecosistemas, la biodiversidad y la implantación de un modelo de desarrollo sostenible. Ecosistemas andaluces.",
+        "Las funciones de la atmósfera y la hidrosfera y su papel esencial para la vida en la Tierra.",
+        "Las interacciones entre atmósfera, hidrosfera, geosfera y biosfera, su papel en la edafogénesis y en el modelado del relieve y su importancia para la vida. Las funciones del suelo.",
+        "Análisis de las causas del cambio climático y de sus consecuencias sobre los ecosistemas.",
+        "Valoración de la importancia de los hábitos sostenibles (consumo responsable, gestión de residuos, respeto al medioambiente), para combatir los problemas ambientales del siglo XXI (escasez de recursos, generación de residuos, contaminación, pérdida de biodiversidad).",
+        "La relación entre la salud medioambiental, humana y de otros seres vivos: one health (una sola anatomía y la fisiología básicas de los aparatos digestivo, respiratorio, circulatorio y excretor.",
+        "Valoración de la contribución de las ciencias ambientales y el desarrollo sostenible, a los desafíos medioambientales del siglo XXI. Análisis de actuaciones individuales y colectivas que contribuyan a la consecución de los Objetivos de Desarrollo Sostenible de Naciones Unidas. diferenciación según su etiología."
+      ],
+      "codigos_items": [
+        "BYG.1.E.1",
+        "BYG.1.E.2",
+        "BYG.1.E.3",
+        "BYG.1.E.4",
+        "BYG.1.E.5",
+        "BYG.1.E.6",
+        "BYG.1.E.7",
+        "BYG.1.E.8"
+      ]
+    }
+  ],
+  "comunidad": "andalucia",
+  "idioma": "es"
+}

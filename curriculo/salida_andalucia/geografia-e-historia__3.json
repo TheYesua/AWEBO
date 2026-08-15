@@ -1,0 +1,283 @@
+{
+  "materia_oficial": "Geografía e Historia",
+  "materia": "Geografía e Historia",
+  "etapa": "ESO",
+  "ciclo": "3º ESO",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "3º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Buscar, seleccionar, tratar y organizar información sobre temas relevantes del presente y del pasado, usando críticamente fuentes históricas y geográficas, para adquirir conocimientos, elaborar y expresar contenidos en varios formatos.",
+      "descriptores": [
+        "CD2",
+        "CC1"
+      ]
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Indagar, argumentar y elaborar productos propios sobre problemas geográficos, históricos y sociales que resulten relevantes en la actualidad, desde lo local a lo global, para desarrollar un pensamiento crítico, respetuoso con las diferencias, que contribuya a la construcción de la propia identidad y a enriquecer el acervo común.",
+      "descriptores": [
+        "CC3",
+        "CE3",
+        "CCEC3"
+      ]
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Conocer los principales desafíos a los que se han enfrentado distintas sociedades a lo largo del tiempo, identificando las causas y consecuencias de los cambios producidos y los problemas a los que se enfrentan en la actualidad, mediante el desarrollo de proyectos de investigación y el uso de fuentes fiables, para realizar propuestas que contribuyan al desarrollo sostenible.",
+      "descriptores": [
+        "CPSAA3",
+        "CC3",
+        "CC4",
+        "CE1",
+        "CCEC1"
+      ]
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Identificar y analizar los elementos del paisaje y su articulación en sistemas complejos naturales, rurales y urbanos, así como su evolución en el tiempo, interpretando las causas de las transformaciones y valorando el grado de equilibrio existente en los distintos ecosistemas, para promover su conservación, mejora y uso sostenible.",
+      "descriptores": [
+        "CC4",
+        "CE1"
+      ]
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Analizar de forma crítica planteamientos históricos y geográficos, explicando la construcción de los sistemas democráticos y los principios constitucionales que rigen la vida en comunidad, así como asumiendo los deberes y derechos propios de nuestro marco de convivencia, para promover la participación ciudadana y la cohesión social.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Comprender los procesos geográficos, históricos y culturales que han conformado la realidad multicultural en la que vivimos, conociendo y difundiendo la historia y cultura de las minorías étnicas presentes en nuestro país, y valorando la aportación de los movimientos en defensa de la igualdad y la inclusión, para reducir estereotipos, evitar cualquier tipo de discriminación y violencia, y reconocer la riqueza de la diversidad.",
+      "descriptores": [
+        "CC3",
+        "CCEC1"
+      ]
+    },
+    {
+      "codigo": "7",
+      "descripcion": "Identificar los fundamentos que sostienen las diversas identidades propias y las ajenas, a través del conocimiento y puesta en valor del patrimonio material e inmaterial que compartimos para conservarlo y respetar los sentimientos de pertenencia, así como para favorecer procesos que contribuyan a la cohesión y solidaridad territorial en orden a los valores del europeísmo y de la Declaración Universal de los Derechos Humanos.",
+      "descriptores": [
+        "CC3",
+        "CCEC1"
+      ]
+    },
+    {
+      "codigo": "8",
+      "descripcion": "Tomar conciencia del papel de los ciclos demográficos, el ciclo vital, las formas de vida y las relaciones intergeneracionales y de dependencia en la sociedad actual y su evolución a lo largo del tiempo, analizándolas de forma crítica, para promover alternativas saludables, sostenibles, enriquecedoras y respetuosas con la dignidad humana y el compromiso con la sociedad y el entorno.",
+      "descriptores": [
+        "CPSAA5",
+        "CC1",
+        "CC2",
+        "CC3"
+      ]
+    },
+    {
+      "codigo": "9",
+      "descripcion": "Conocer y valorar la importancia de la seguridad integral ciudadana en la cultura de la convivencia internacional, de nuestro país y de Andalucía, destacando la contribución del Estado, sus instituciones y otras entidades sociales a la paz, a la cooperación internacional y al desarrollo sostenible, para promover la consecución de un mundo más seguro, solidario, sostenible y justo.",
+      "descriptores": [
+        "CE1",
+        "CCEC1"
+      ]
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Elaborar contenidos propios en distintos formatos, mediante aplicaciones y estrategias de recogida y representación de datos sencillas, aprendiendo a usar y contrastar críticamente fuentes fiables, tanto analógicas como digitales, del presente y de la historia contemporánea, identificando la desinformación y la manipulación."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Establecer conexiones y relaciones básicas entre los conocimientos e informaciones adquiridos, elaborando síntesis explicativas sencillas, mediante informes, estudios o dosieres informativos, que reflejen un dominio de los contenidos tratados."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Transferir de manera sencilla la información y el conocimiento por medio de narraciones, pósteres, presentaciones, exposiciones orales, medios audiovisuales y otros productos."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Generar productos originales y creativos sencillos mediante la organización de conocimientos previos utilizando herramientas de investigación sencillas que permitan explicar problemas presentes y pasados de la humanidad a distintas escalas temporales y espaciales, partiendo del entorno más cercano, utilizando conceptos, situaciones y datos relevantes."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Construir la propia identidad y enriquecer el acervo común en el contexto del mundo actual, de sus retos y conflictos, desde una perspectiva sistémica y global, iniciándose en la producción y expresión discursiva y abierta al diálogo de juicios y planteamientos personales, críticos y argumentados."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Conocer los Objetivos de Desarrollo Sostenible, planteando propuestas que contribuyan a su logro, aplicando métodos y proyectos de investigación, incidiendo en el uso de mapas y otras representaciones gráficas, así como de medios accesibles de interpretación de imágenes."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Identificar, desde un enfoque ecosocial, problemas y desafíos pasados, actuales o futuros de las sociedades contemporáneas señalando sus relaciones de interdependencia y ecodependencia."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Utilizar secuencias cronológicas complejas en las que identificar, comparar y relacionar hechos y procesos en diferentes períodos y lugares históricos (simultaneidad, duración, causalidad), utilizando términos y conceptos del ámbito de la Historia y de la Geografía."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "3",
+      "descripcion": "Analizar procesos de cambio histórico y comparar casos del ámbito de la Historia y la Geografía a través del uso de fuentes de información diversas, teniendo en cuenta las transformaciones de corta y larga duración (coyuntura y estructura), las continuidades y permanencias en diferentes períodos y lugares."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Identificar los elementos del entorno y conocer su funcionamiento como un sistema complejo por medio del análisis multicausal de sus relaciones naturales y humanas, presentes y pasadas, investigando sobre el grado de conservación y de equilibrio dinámico."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Identificar comportamientos y acciones que contribuyan a la conservación y mejora del entorno natural, rural y urbano, a través del respeto a todos los seres vivos, mostrando comportamientos orientados al logro de un desarrollo sostenible de dichos entornos, y comprendiendo el acceso universal, justo y equitativo a los recursos que nos ofrece el planeta."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Conocer, valorar y ejercitar responsabilidades, derechos y deberes y dar ejemplos en favor de su desarrollo y afirmación a través del conocimiento de nuestro ordenamiento jurídico y constitucional, la comprensión y puesta en valor de nuestra memoria democrática y de la contribución de los hombres y mujeres a la misma, y la defensa de nuestros valores constitucionales."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Reconocer movimientos y causas que generen una conciencia solidaria, promuevan la cohesión social, y trabajen para la eliminación de la desigualdad, especialmente la motivada por cuestión de género, y el pleno desarrollo de la ciudadanía, mediante el trabajo en equipo, la mediación y resolución pacífica de conflictos."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Investigar acerca de actitudes discriminatorias y reconocer la riqueza de la diversidad, a partir del análisis de la relación entre los aspectos geográficos, históricos, ecosociales y culturales que han conformado la sociedad globalizada y multicultural actual, y el conocimiento de la aportación de los movimientos en defensa de los derechos de las minorías y en favor de la inclusión y la igualdad real, especialmente de las mujeres y de otros colectivos discriminados."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Contribuir al bienestar individual y colectivo a través del diseño y exposición de iniciativas orientadas a promover un compromiso activo con los valores comunes, la mejora del entorno y el servicio a la comunidad."
+    },
+    {
+      "codigo": "7.1",
+      "competencia": "7",
+      "descripcion": "Reconocer los rasgos que van conformando la identidad propia y de los demás, la riqueza de las identidades múltiples en relación con distintas escalas espaciales, a través de la iniciación en la investigación y el análisis guiado de sus fundamentos geográficos, históricos, artísticos, ideológicos y lingüísticos, y el reconocimiento de sus expresiones culturales."
+    },
+    {
+      "codigo": "7.2",
+      "competencia": "7",
+      "descripcion": "Conocer y contribuir a conservar el patrimonio material e inmaterial común, respetar los sentimientos de pertenencia adoptando compromisos en su entorno más cercano con principios y acciones orientadas a la cohesión y solidaridad territorial de la comunidad política, los valores del europeísmo y de la Declaración Universal de los Derechos Humanos."
+    },
+    {
+      "codigo": "8.1",
+      "competencia": "8",
+      "descripcion": "Adoptar un papel activo y comprometido con el entorno, de acuerdo a aptitudes, aspiraciones, intereses y valores propios, a partir de la iniciación guiada en el análisis crítico de la realidad económica, de la distribución y gestión del trabajo, y la adopción de hábitos responsables, saludables, sostenibles y respetuosos con la dignidad humana y la de otros seres vivos, así como de la reflexión ética ante los usos de la tecnología y la gestión del tiempo libre."
+    },
+    {
+      "codigo": "8.2",
+      "competencia": "8",
+      "descripcion": "Identificar las iniciativas de la sociedad civil, reflejadas en asociaciones y entidades sociales, adoptando actitudes de participación y transformación en el ámbito local y comunitario, especialmente en el ámbito de las relaciones intergeneracionales."
+    },
+    {
+      "codigo": "9.1",
+      "competencia": "9",
+      "descripcion": "Interpretar y explicar de forma argumentada la conexión de España con los grandes procesos históricos de la época contemporánea, valorando lo que han supuesto para su evolución y señalando las aportaciones de sus habitantes a lo largo de la historia, así como las aportaciones del Estado y sus instituciones a la cultura europea y mundial."
+    },
+    {
+      "codigo": "9.2",
+      "competencia": "9",
+      "descripcion": "Contribuir desde su entorno más cercano a la consecución de un mundo más seguro, justo, solidario y sostenible, a través del análisis guiado y el reconocimiento de los compromisos internacionales de nuestro país y de Andalucía, en favor de la paz, la seguridad, la cooperación, la sostenibilidad, los valores democráticos y los Objetivos de Desarrollo Sostenible."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Retos del mundo actual",
+      "titulo": "Retos del mundo actual",
+      "items": [
+        "Objetivos de Desarrollo Sostenible. Emergencia climática y sostenibilidad. Relación entre factores naturales y antrópicos en la Tierra. Globalización, movimientos migratorios e interculturalidad. Los avances tecnológicos y la conciencia ecosocial. Conflictos ideológicos y etnoculturales. Andalucía en el espacio global.",
+        "Sociedad de la información. Búsqueda, tratamiento de la información, uso de datos en entornos digitales y evaluación y contraste de la fiabilidad de las fuentes. El problema de la desinformación. Uso específico del léxico relativo a los ámbitos histórico, artístico y geográfico.",
+        "Cultura mediática. Técnicas y métodos de las Ciencias Sociales: análisis de textos, interpretación y elaboración de mapas, esquemas y síntesis, representación de gráficos e interpretación de imágenes a través de medios digitales accesibles. Tecnologías de la información geográfica.",
+        "Lo global y lo local. La investigación en Ciencias Sociales, el estudio multicausal y el análisis comparado del espacio natural, rural y urbano, su evolución y los retos de futuro. Análisis e interpretación de conceptos espaciales: localización, escala, conexión y proximidad espacial.",
+        "Estructuras económicas en el mundo actual, cambios en los sectores productivos y funcionamiento de los mercados. Dilemas e incertidumbres ante el crecimiento, la empleabilidad y la sustentabilidad. Sectores productivos en Andalucía.",
+        "Geopolítica y principales conflictos en el presente. Genocidios y crímenes contra la humanidad. Guerras, terrorismo y otras formas de violencia política. Alianzas e instituciones internacionales, mediación y misiones de paz. Injerencia humanitaria y Justicia Universal. El papel de las ONG.",
+        "Desigualdad e injusticia en el contexto local y global. Solidaridad, cohesión social y cooperación para el desarrollo.",
+        "Igualdad de género y formas de violencia contra las mujeres. Actitudes y comportamientos sexistas.",
+        "Diversidad social, etnocultural y de género. Migraciones, multiculturalidad y mestizaje en sociedades abiertas. Historia y reconocimiento del pueblo gitano y otras minorías étnicas de nuestro país. Nuevas formas de identificación cultural. Andalucía diversa y multicultural."
+      ],
+      "codigos_items": [
+        "GEH.3.A.1",
+        "GEH.3.A.2",
+        "GEH.3.A.3",
+        "GEH.3.A.4",
+        "GEH.3.A.5",
+        "GEH.3.A.6",
+        "GEH.3.A.7",
+        "GEH.3.A.8",
+        "GEH.3.A.9"
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Sociedades y territorios",
+      "titulo": "Sociedades y territorios",
+      "items": [
+        "Métodos de investigación en el ámbito de la",
+        "Interpretación del sistema capitalista desde sus orígenes hasta la actualidad. Colonialismo, imperialismo y nuevas subordinaciones económicas y culturales.",
+        "La transformación humana del territorio y la distribución desigual de los recursos y del trabajo. Evolución de los sistemas económicos, de los ciclos demográficos, de los modos de vida y de los modelos de organización social. La lucha por los derechos laborales y sociales: el estado del bienestar. Los servicios públicos en Andalucía.",
+        "Interpretación del territorio y del paisaje. Del éxodo rural a la concentración urbana. El reto demográfico en España y Andalucía. Evolución, distribución, dinámica y estructura de la población española y andaluza El problema de la despoblación rural. Ordenación del territorio y transformación del espacio. La ciudad como espacio de convivencia. Importancia y cuidado del espacio público. La huella humana y la protección del medio natural. Proceso de urbanización y sistema de ciudades en Andalucía.",
+        "El proceso de construcción europea. Integración económica, monetaria y ciudadana. Las instituciones europeas. El futuro de Europa. Andalucía en Europa.",
+        "La transición española desde 1975 a 1978. La ley como contrato social. De la Constitución de 1812 a la Constitución de 1978. Los valores y principios constitucionales. Ordenamiento normativo autonómico, constitucional y supranacional como garante del desarrollo de derechos y libertades para el ejercicio de la ciudadanía. Blas Infante y el andalucismo. El estatuto de Andalucía.. Las instituciones andaluzas. Ordenación territorial de Andalucía."
+      ],
+      "codigos_items": [
+        "GEH.3.B.1",
+        "GEH.3.B.4",
+        "GEH.3.B.5",
+        "GEH.3.B.6",
+        "GEH.3.B.7",
+        "GEH.3.B.8"
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Compromiso cívico local y global",
+      "titulo": "Compromiso cívico local y global",
+      "items": [
+        "Dignidad humana y derechos universales. Declaración Universal de los Derechos Humanos.",
+        "Diversidad social y multiculturalidad. culturales.",
+        "Responsabilidad ecosocial. Compromiso y acción ante los Objetivos del Desarrollo Sostenible. La juventud andaluza como agente de cambio para el desarrollo sostenible.",
+        "Implicación en la defensa y protección del medioambiente. Acción y posición ante la emergencia climática. La protección medioambiental en Andalucía.",
+        "Ciudadanía ética digital. Nuevos comportamientos en la sociedad de la información. Lucha contra el ciberacoso.",
+        "Compromiso cívico y participación ciudadana. Mediación y gestión pacífica de conflictos y apoyo a las víctimas de cualquier forma de violencia y terrorismo.",
+        "Servicio a la comunidad. La corresponsabilidad en los cuidados. Las relaciones intergeneracionales. La responsabilidad colectiva e individual. El asociacionismo y el voluntariado. Entornos y redes sociales.",
+        "El patrimonio como bien común y como recurso cultural y económico. Necesidad de su conocimiento, valoración, conservación, puesta en valor, difusión y gestión de la riqueza patrimonial andaluza.",
+        "Cohesión social e integración. Medidas y acciones en favor de la igualdad y de la plena inclusión.",
+        "La igualdad real de mujeres y hombres. La discriminación por motivo de diversidad sexual y de género. La conquista de derechos en las sociedades democráticas contemporáneas. El camino hacia la igualdad en Andalucía.",
+        "Las emociones y el contexto cultural. La perspectiva histórica del componente emocional.",
+        "Empleo y trabajo en la sociedad de la información, aprendizaje permanente y a lo largo de toda la vida.",
+        "Los valores del europeísmo. Fórmulas de participación en programas educativos europeos.",
+        "Instituciones del Estado que garantizan la seguridad integral y la convivencia social. Los compromisos internacionales de nuestro país en favor de la paz, la seguridad y la cooperación internacional. las artes clásicas. El papel de las mujeres en la creación artística contemporánea. La diversidad cultural en el mundo actual. Respeto y conservación del patrimonio material e inmaterial. Conocimiento, protección y conservación del patrimonio andaluz. Andalucía en el arte contemporáneo. Los museos andaluces."
+      ],
+      "codigos_items": [
+        "GEH.3.C.1",
+        "GEH.3.C.2",
+        "GEH.3.C.3",
+        "GEH.3.C.4",
+        "GEH.3.C.5",
+        "GEH.3.C.6",
+        "GEH.3.C.7",
+        "GEH.3.C.8",
+        "GEH.3.C.9",
+        "GEH.3.C.10",
+        "GEH.3.C.11",
+        "GEH.3.C.12",
+        "GEH.3.C.13",
+        "GEH.3.C.14"
+      ]
+    }
+  ],
+  "comunidad": "andalucia",
+  "idioma": "es"
+}

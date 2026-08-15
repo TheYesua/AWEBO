@@ -1,0 +1,150 @@
+{
+  "materia_oficial": "Robòtica i Programació",
+  "materia": "Robòtica i Programació",
+  "etapa": "ESO",
+  "ciclo": "Únic",
+  "itinerario": null,
+  "cursos_aplicables": [],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Dissenyar prototips creatius i funcionals per respondre a problemes i reptes concrets a partir de projectes col·laboratius, utilitzant tècniques de pensament de disseny.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Aplicar estratègies de pensament computacional de manera organitzada i òptima per crear, reelaborar o millorar algoritmes que ajudin a resoldre problemes reals.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Configurar i programar plaques de prototipatge programables i sensors i actuadors que permetin donar resposta als reptes o problemes, fent servir estructures lògiques a partir de llenguatges de programació.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Construir estructures i mecanismes per respondre als requeriments mecànics necessaris, a partir de components específics o dissenyats i produïts mitjançant la utilització d’eines de disseny digital.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Identificar i analitzar problemes o reptes concrets, descomponent-los en parts més senzilles que permetin la seva solució."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Definir i avaluar de forma col·laborativa les possibles solucions als problemes i reptes analitzats, valorant-ne la viabilitat i la seva sostenibilitat."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Argumentar i compartir idees en grup per donar solució a un problema comú, amb actitud respectuosa."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "1",
+      "descripcion": "Plantejar dissenys, tenint en compte les funcionalitats a desenvolupar, amb actitud emprenedora i creativa, integrant els elements mecànics i electrònics adients."
+    },
+    {
+      "codigo": "1.5",
+      "competencia": "1",
+      "descripcion": "Utilitzar diferents eines i suports per al disseny del prototip i per a la seva valoració prèvia. Aquesta competència específica aborda totes les fases de qualsevol projecte tècnic: definir el problema o necessitat a resoldre, investigar a partir de múltiples fonts, idear diferents solucions, dissenyar-les i avaluar-les. L’objectiu és aplicar totes les fases del procés en un projecte real, i realitzar-ho de forma iterativa fins a aconseguir el disseny més adequat."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Analitzar processos fent servir estratègies de pensament lògic."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Descriure i representar seqüències lògiques que ajudin a comprendre processos o algoritmes fent servir diagrames de flux."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Desenvolupar programes que impliquin la seqüenciació de passos, la iteració, i el testatge, la validació i la depuració de seqüències."
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "2",
+      "descripcion": "Comparar els programes propis amb altres algoritmes que donin solució a un mateix problema, incorporant els canvis necessaris o combinant diferents programes per elaborar noves solucions. Aquesta competència engloba el coneixement de tècniques i estratègies específiques del pensament computacional, entès com un procés generador de solucions obertes. Comprèn la descomposició de problemes complexos en simples, i representació de processos en seqüències lògiques, així com elements de la lògica i el pensament humà com la generalització. Aquestes estratègies han de permetre la generació d’un conjunt finit d’instruccions o passos que han de servir per a la generació d’algoritmes que donin solució a problemes reals. Tanmateix, la comparació entre programes propis amb altres algoritmes, i la combinació de diferents programes per elaborar noves solucions ha de formar part d’aquest procés de generació de solucions."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Desenvolupar programes, o reelaborar-ne a partir de programes existents, fent servir el programari i els llenguatges de programació de manera apropiada."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Utilitzar les estructures lògiques de forma apropiada, tenint en compte criteris d’optimització de programes."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Identificar, corregir i depurar errors de programació en programes informàtics, fent ús de depuradors."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "3",
+      "descripcion": "Configurar i programar sensors i actuadors, ajustant-los a les necessitats del prototip i fent ús correcte de les seves funcionalitats. La competència fa referència al desenvolupament de programes en diferents llenguatges de programació, fent ús d’estructures lògiques, funcions, variables i tots els elements necessaris per a l’elaboració d’algoritmes organitzats i optimitzats. La competència abasta el coneixement de les funcionalitats dels diferents sensors i actuadors que possibiliten la interacció amb el món físic, a través de l’adquisició de dades i l’automatització de moviments."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Dissenyar, fent servir les eines digitals i programari adient, els elements necessaris per a la construcció física dels prototips ideats, l’assemblatge de sensors, actuadors i els sistemes mecànics."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Produir o fabricar els elements necessaris per a la implementació d’estructures i mecanismes, utilitzant de manera segura les eines, dispositius, tècniques i materials adequats."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Realitzar el muntatge físic d’estructures i mecanismes, i avaluar el disseny i la construcció. Aquesta competència fa referència, d’una banda, al disseny digital o manual d’elements i estructures, i d’una altra als processos de construcció manual i la fabricació mecànica o impressió digital. Comporta l’aplicació dels coneixements relatius a operadors i sistemes tecnològics (estructurals, mecànics, elèctrics i electrònics) necessaris per a construir o fabricar prototips en funció d’un disseny i planificació previs. Així mateix, l’aplicació de les normes de seguretat en el treball amb materials, eines i màquines, són fonamentals per a la salut de l’alumnat, evitant els riscos inherents a moltes de les tècniques que s’han d’emprar."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "1. A. Estratègies de pensament de disseny i gestió de projectes col·laboratius",
+      "titulo": "A. Estratègies de pensament de disseny i gestió de projectes col·laboratius",
+      "items": [
+        "Disseny de solucions a problemes plantejats d’acord amb el pensament de disseny.",
+        "Aplicació d’estratègies bàsiques de gestió de projectes: definició d’objectius, planificació, execució del projecte i avaluació."
+      ]
+    },
+    {
+      "codigo": "2",
+      "bloque": "2. B. Pensament computacional, llenguatges i estructures de programació",
+      "titulo": "B. Pensament computacional, llenguatges i estructures de programació",
+      "items": [
+        "Aplicació de tècniques de pensament computacional en la resolució de problemes i el disseny de solucions.",
+        "Anàlisi i descomposició de problemes complexos en reptes senzills. Estratègies de resolució eficient.",
+        "Representació de solucions fent servir diagrames de flux, tenint en compte la normativa específica.",
+        "Ús de llenguatges de programació amb aplicació de diferents estructures lògiques: seqüències, condicionals i repeticions.",
+        "Desenvolupament de funcions específiques."
+      ]
+    },
+    {
+      "codigo": "3",
+      "bloque": "3. C. Disseny i construcció de robots",
+      "titulo": "C. Disseny i construcció de robots",
+      "items": [
+        "Anàlisi d’elements mecànics i identificació del seu funcionament.",
+        "Configuració i programació dels diferents elements de control: sensors, actuadors i dispositius de comandament.",
+        "Disseny i construcció d’elements i/o estructures senzilles, tant de forma real com mitjançant simuladors gràfics, programes de disseny 3D i 2D.",
+        "Muntatge físic d’estructures i mecanismes, fent ús adient de les eines i aplicant les mesures de seguretat.",
+        "Aplicació de tècniques de creació manual i fabricació digital.",
+        "Valoració crítica dels avenços tecnològics, la seva influència en el medi ambient, la salut i el benestar individual i col·lectiu i en la societat en general."
+      ]
+    }
+  ],
+  "comunidad": "cataluna",
+  "idioma": "ca"
+}

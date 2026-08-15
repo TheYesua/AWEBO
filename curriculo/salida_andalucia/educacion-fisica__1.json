@@ -1,0 +1,254 @@
+{
+  "materia_oficial": "Educación Física",
+  "materia": "Educación Física",
+  "etapa": "ESO",
+  "ciclo": "1º ESO",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Adoptar un estilo de vida activo y saludable, seleccionando e incorporando intencionalmente actividades físicas y deportivas en las rutinas diarias, a partir de un análisis crítico de los modelos corporales y del rechazo de las prácticas que carezcan de base científica, para hacer un uso saludable y autónomo de su tiempo libre y así mejorar la calidad de vida.",
+      "descriptores": [
+        "CD2",
+        "CD4",
+        "CPSAA2",
+        "CPSAA4"
+      ]
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Adaptar, con progresiva autonomía en su ejecución, las capacidades físicas, perceptivo-motrices y coordinativas, así como las habilidades y destrezas motrices, aplicando procesos de percepción, decisión y ejecución adecuados a la lógica interna y a los objetivos de diferentes situaciones con dificultad variable, para resolver situaciones de carácter motor vinculadas con distintas actividades físicas funcionales, deportivas, expresivas y recreativas, y para consolidar actitudes de superación, crecimiento y resiliencia al enfrentarse a desafíos físicos.",
+      "descriptores": [
+        "CE3"
+      ]
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Compartir espacios de práctica físico-deportiva con independencia de las diferencias culturales, sociales, de género y de habilidad, priorizando el respeto entre participantes y a las reglas sobre los resultados, adoptando una actitud crítica ante comportamientos antideportivos o contrarios a la convivencia y desarrollando procesos de autorregulación emocional que canalicen el fracaso y el éxito en estas situaciones, para contribuir con progresiva autonomía al entendimiento social y al compromiso ético en los diferentes espacios en los que se participa.",
+      "descriptores": [
+        "CPSAA5",
+        "CC3"
+      ]
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Practicar, analizar y valorar distintas manifestaciones de la cultura motriz, aprovechando las posibilidades y recursos expresivos que ofrecen el cuerpo y el movimiento y profundizando en las consecuencias del deporte como fenómeno social, analizando críticamente sus manifestaciones desde la perspectiva de género y desde los intereses económico-políticos que lo rodean, para alcanzar una visión más realista, contextualizada y justa de la motricidad en el marco de las sociedades actuales y, en particular, la andaluza.",
+      "descriptores": [
+        "CCEC1",
+        "CCEC2",
+        "CCEC3",
+        "CCEC4"
+      ]
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Adoptar un estilo de vida sostenible y ecosocialmente responsable aplicando medidas de seguridad individuales y colectivas en la práctica físico-deportiva según el entorno y desarrollando colaborativa y cooperativamente acciones de servicio a la comunidad vinculadas a la actividad física y al deporte, para contribuir activamente a la conservación del medio natural y urbano, reconociendo la importancia de preservar el entorno natural de Andalucía.",
+      "descriptores": [
+        "CE1",
+        "CE3"
+      ]
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Identificar y establec secuencias sencillas de ac vidad física, orientada concepto integral de salu al estilo de vida activo, partir de una valoración d nivel inicial, aplicando c progresiva autonomía i trumentos de autoevalu ción para ello, respetando aceptando la propia rea dad e identidad corporal."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Comenzar a incorpo procesos de activación c poral, dosificación esfuerzo, alimentación sa dable, educación postur respiración, relajació seguridad e higiene duran la práctica de actividad motrices, interiorizando l rutinas propias de una pr tica motriz saludable y r ponsable."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Identificar y adoptar manera responsable me das generales para la p vención de lesiones ant durante y después de práctica de actividad físi aprendiendo a reconoc posibles situaciones riesgo."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "1",
+      "descripcion": "Identificar los protoc los de intervención y me das básicas de primer auxilios que es necesa aplicar ante situacion relacionadas con accident derivados de la práctica actividad física."
+    },
+    {
+      "codigo": "1.5",
+      "competencia": "1",
+      "descripcion": "Identificar y analizar incidencia que ciertas pr ticas y comportamientos t nen en nuestra salud y en convivencia, evitando reproducción en su entor escolar y en las actividad de su vida cotidia haciendo uso para ello herramientas informáticas"
+    },
+    {
+      "codigo": "1.6",
+      "competencia": "1",
+      "descripcion": "Identificar diferent recursos y aplicaciones di tales reconociendo potencial, así como sus ri gos para su uso en el ámb de la actividad física y deporte."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Participar en el proce de creación de proyect motores de carácter indi dual, cooperativo o colab rativo, estableciendo me nismos para reconducir l procesos de trabajo, ut zando con ayuda estrategi de autoevaluación y coe luación e iniciando acti des de superación, cre miento y resiliencia."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Actuar correctamen con una interpretaci aceptable en context motrices variados, ap cando con ayuda principi básicos de la toma de de siones en situaciones lú cas, juegos modificados actividades deportivas partir de la anticipació adecuándose a las dema das motrices, a la actuaci del compañero o comp ñera y de la persona op nente (si la hubiera) y a lógica interna en context de actuación facilitad reales o simulados, reflex nando sobre los resultad obtenidos."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Iniciarse en la mues de evidencias de control dominio corporal al emple los componentes cualita vos y cuantitativos de motricidad, haciendo fren a las demandas de reso ción de problemas de for guiada en situaciones mot ces transferibles a su esp cio vivencial."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Practicar una gran var dad de actividades mot ces, valorando las impli ciones éticas de las acti des antideportivas, y gest nando positivamente competitividad en context diversos."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Colaborar en la prácti de diferentes produccion motrices, especialmente través de juegos, para alca zar el logro individual y gr pal, participando en la to de decisiones y asumien distintos roles asignados responsabilidades."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Hacer uso con prog siva autonomía de habilid des sociales, diálogo en resolución de conflictos respeto ante la diversida ya sea de género, afectiv sexual, de origen nacion étnico, socio-económica de competencia motr mostrando una actitud c tica y un compromiso acti frente a los estereotipos, l actuaciones discrimina rias y de cualquier tipo violencia, haciendo respe el propio cuerpo y el de l demás."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Gestionar la particip ción en juegos propios Andalucía, favoreciendo conservación y valoran sus orígenes, evolución influencia en las sociedad contemporáneas."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Reconocer las diferent actividades y modalidad deportivas según sus car terísticas y requerimient evitando los posibles es reotipos de género o capa dad o los comportamient sexistas vinculados a dich manifestaciones."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Utilizar intencionad mente y con progresi autonomía el cuerpo co herramienta de expresión comunicación a través diversas técnicas expresiv participando activamen en la creación y represen ción de composiciones in viduales o colectivas con sin base musical, prestan especial atención a la ed cación socio-afectiva fomento de la creatividad."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Participar en activid des físico-deportivas sen llas en entornos natura de Andalucía, terrestres acuáticos, disfrutando entorno de manera soste ble, minimizando de for guiada el impacto ambien que estas puedan produci iniciando una concien sobre su huella ecológica."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Practicar actividad físico-deportivas en medio natural y urban siguiendo las normas seguridad individuales colectivas marcadas. Educación Física 3º"
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Vida activa y saludable",
+      "titulo": "Vida activa y saludable",
+      "items": [
+        "Salud física.",
+        "Salud social.",
+        "Salud mental."
+      ],
+      "codigos_items": [
+        "EFI.1.A.1",
+        "EFI.1.A.2",
+        "EFI.1.A.3"
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Organización y gestión de la actividad física",
+      "titulo": "Organización y gestión de la actividad física",
+      "items": [
+        "Elección de la práctica física: gestión de las situaciones de competición en base a criterios de lógica, respeto al rival y motivación.",
+        "Reflexión crítica sobre la importancia de las medidas de higiene como elemento imprescindible en contextos de práctica de la actividad física y deportiva.",
+        "Planificación y autorregulación de proyectos motores: establecimiento de mecanismos de autoevaluación para reconducir los procesos de trabajo.",
+        "Herramientas digitales para la gestión de la actividad física.",
+        "Uso de internet y de diversas herramientas informáticas: búsqueda, selección y elaboración de información relacionada con la actividad físico-deportiva y presentación de la misma.",
+        "Riesgos de internet y uso crítico y responsable de las herramientas y/o plataformas digitales.",
+        "Prevención de accidentes en las prácticas motrices."
+      ],
+      "codigos_items": [
+        "EFI.1.B.1",
+        "EFI.1.B.2",
+        "EFI.1.B.3",
+        "EFI.1.B.4",
+        "EFI.1.B.5",
+        "EFI.1.B.6",
+        "EFI.1.B.7"
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Resolución de problemas en situaciones motrices",
+      "titulo": "Resolución de problemas en situaciones motrices",
+      "items": [
+        "Toma de decisiones. Utilización consciente del cuerpo en función de las características de la actividad, contexto y parámetros espaciales en las que se desarrolla en situaciones motrices individuales.",
+        "Esquema corporal: integración de los diferentes aspectos coordinativos, espaciales y temporales en determinadas secuencias motrices y/o deportivas.",
+        "Capacidades perceptivo-motrices en el contexto de la práctica deportiva condicionales: desarrollo de las capacidades físicas básicas orientadas a la salud.",
+        "Habilidades motrices específicas asociadas a la técnica en actividades físico-deportivas.",
+        "Creatividad motriz: resolución de retos y situacionesproblema de forma original, tanto individualmente como en grupo.",
+        "Actitud crítica ante elementos del entorno que supongan obstáculos a la actividad universal y la movilidad activa, autónoma, saludable y segura.",
+        "Adaptación de los movimientos propios a las acciones del contrario en situaciones de oposición.",
+        "Adaptación de las acciones propias a las estrategias básicas de ataque y defensa en diferentes situaciones motrices en deportes de colaboración-oposición con y sin interacción con un móvil"
+      ],
+      "codigos_items": [
+        "EFI.1.C.1",
+        "EFI.1.C.2",
+        "EFI.1.C.3",
+        "EFI.1.C.4",
+        "EFI.1.C.5",
+        "EFI.1.C.6",
+        "EFI.1.C.7",
+        "EFI.1.C.8"
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Autorregulación emocional e interacción social en",
+      "titulo": "Autorregulación emocional e interacción social en",
+      "items": [
+        "Gestión emocional.",
+        "Habilidades sociales."
+      ],
+      "codigos_items": [
+        "EFI.1.D.1",
+        "EFI.1.D.2"
+      ]
+    },
+    {
+      "codigo": "E",
+      "bloque": "E. Manifestaciones de la cultura motriz",
+      "titulo": "Manifestaciones de la cultura motriz",
+      "items": [
+        "Aportaciones de la cultura motriz a la herencia cultural.",
+        "Los juegos y las danzas como manifestación de la interculturalidad.",
+        "Deporte y perspectiva de género. Medios de comunicación y promoción del deporte en igualdad. Presencia y relevancia de figuras del deporte."
+      ],
+      "codigos_items": [
+        "EFI.1.E.1",
+        "EFI.1.E.2",
+        "EFI.1.E.3"
+      ]
+    },
+    {
+      "codigo": "F",
+      "bloque": "F. Interacción eficiente y sostenible con el entorno",
+      "titulo": "Interacción eficiente y sostenible con el entorno",
+      "items": [
+        "Normas de uso: respeto a las normas viales en desplazamientos activos cotidianos para una movilidad segura, saludable y sostenible.",
+        "Nuevos espacios y prácticas deportivas.",
+        "Utilización de espacios urbanos y naturales desde la motricidad (parkour, skate u otras manifestaciones similares).",
+        "Análisis del riesgo en las prácticas físico-deportivas en el medio natural y urbano: medidas de seguridad en actividades de los distintos entornos con posibles consecuencias graves en los mismos."
+      ],
+      "codigos_items": [
+        "EFI.1.F.1",
+        "EFI.1.F.2",
+        "EFI.1.F.3",
+        "EFI.1.F.4"
+      ]
+    }
+  ],
+  "comunidad": "andalucia",
+  "idioma": "es"
+}

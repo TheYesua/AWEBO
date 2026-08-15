@@ -1,0 +1,279 @@
+{
+  "materia_oficial": "Biología y Geología",
+  "materia": "Biología y Geología",
+  "etapa": "ESO",
+  "ciclo": "3º ESO",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "3º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Interpretar y transmitir información y datos científicos, argumentando sobre ellos y utilizando diferentes formatos, para analizar conceptos y procesos de las ciencias biológicas y geológicas.",
+      "descriptores": [
+        "CD2",
+        "CD3",
+        "CCEC4"
+      ]
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Identificar, localizar y seleccionar información, contrastando su veracidad, organizándose y evaluándola críticamente, para resolver preguntas relacionadas con las ciencias biológicas y geológicas.",
+      "descriptores": [
+        "CD3",
+        "CD4",
+        "CD5",
+        "CPSAA4"
+      ]
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Planificar y desarrollar proyectos de investigación, siguiendo los pasos de las metodologías científicas y cooperando, cuando sea necesario, para indagar en aspectos relacionados con las ciencias geológicas y biológicas.",
+      "descriptores": [
+        "STEM3",
+        "STEM4",
+        "CD1",
+        "CD2",
+        "CPSAA3",
+        "CE3"
+      ]
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Utilizar el razonamiento y el pensamiento computacional, analizando críticamente las respuestas y soluciones y reformulando el procedimiento, si fuera necesario, para resolver problemas o dar explicación a procesos de la vida cotidiana relacionados con la Biología y la Geología.",
+      "descriptores": [
+        "CPSAA5",
+        "CE1",
+        "CE3",
+        "CCEC4"
+      ]
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Analizar los efectos de determinadas acciones sobre el medioambiente y la salud, basándose en los fundamentos de las ciencias biológicas y de la Tierra, para promover y adoptar hábitos que eviten o minimicen los impactos medioambientales negativos, sean compatibles con un desarrollo sostenible y permitan mantener y mejorar la salud individual y colectiva, todo ello teniendo como marco el entorno andaluz.",
+      "descriptores": [
+        "CPSAA1",
+        "CPSAA2",
+        "CC3",
+        "CC4",
+        "CE1"
+      ]
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Analizar los elementos de un paisaje concreto valorándolo como patrimonio natural y utilizando conocimientos sobre geología y ciencias de la Tierra, para explicar su historia geológica, proponer acciones encaminadas a su protección e identificar posibles riesgos naturales.",
+      "descriptores": [
+        "STEM5",
+        "CD1",
+        "CC4",
+        "CE1",
+        "CCEC1"
+      ]
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Analizar conceptos y procesos biológicos y geológicos relacionados con los saberes de Biología y Geología, interpretando información en diferentes formatos (modelos, gráficos, tablas, diagramas, fórmulas, esquemas, símbolos, páginas web, etc.), manteniendo una actitud crítica y obteniendo conclusiones fundamentadas."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Facilitar la comprensión y análisis de información sobre procesos biológicos y geológicos o trabajos científicos, transmitiéndola de forma clara y utilizando la terminología y los formatos adecuados (modelos, gráficos, tablas, vídeos, informes, diagramas, fórmulas, esquemas, símbolos, contenidos digitales, etc.)."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Analizar y explicar fenómenos biológicos y geológicos, representándolos mediante modelos y diagramas, utilizando cuando sea necesario los pasos del diseño de ingeniería (identificación del problema, exploración, diseño, creación, evaluación y mejora)."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Resolver cuestiones sobre Biología y Geología localizando, seleccionando y organizando de distintas fuentes y citándolas correctamente."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Reconocer la información sobre temas biológicos y geológicos con base científica, distinguiéndola de pseudociencias, bulos, teorías conspiratorias y creencias infundadas, etc., y manteniendo una actitud escéptica ante estos."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Valorar la contribución de la ciencia a la sociedad, la propiedad intelectual y la labor de las personas dedicadas a ella con independencia de su etnia, sexo o cultura, destacando y reconociendo el papel de las mujeres científicas, fomentando vocaciones científicas desde una perspectiva de género y entendiendo la investigación como una labor colectiva e interdisciplinar en constante evolución."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Plantear preguntas e hipótesis con precisión e intentar realizar predicciones sobre fenómenos biológicos o geológicos, que puedan ser respondidas o contrastadas de manera efectiva, utilizando métodos científicos."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Diseñar de una forma creativa la experimentación, la toma de datos y el análisis de fenómenos biológicos y geológicos de modo que permitan responder a preguntas concretas y contrastar una hipótesis planteada."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Realizar experimentos de manera autónoma, cooperativa e igualitaria y tomar datos cuantitativos o cualitativos con precisión sobre fenómenos biológicos y geológicos, utilizando los instrumentos, herramientas o técnicas adecuadas en condiciones de seguridad y con corrección."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "3",
+      "descripcion": "Interpretar críticamente los resultados obtenidos en un proyecto de investigación, utilizando, cuando sea necesario, herramientas matemáticas (tablas de datos, fórmulas estadísticas, representaciones gráficas) y tecnológicas (conversores, calculadoras, creadores gráficos, hojas de cálculo)."
+    },
+    {
+      "codigo": "3.5",
+      "competencia": "3",
+      "descripcion": "Cooperar dentro de un proyecto científico, cultivando el autoconocimiento y la confianza, asumiendo responsablemente una función concreta, utilizando espacios virtuales cuando sea necesario, respetando la diversidad y la igualdad de género, y favoreciendo la inclusión."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Resolver problemas, aplicables a diferentes situaciones de la vida cotidiana, o dar explicación a procesos biológicos o geológicos, utilizando conocimientos, datos e información proporcionados por el docente, el razonamiento lógico, el pensamiento computacional o recursos digitales."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Analizar críticamente, la solución a un problema sobre fenómenos biológicos y geológicos, utilizando datos o información de fuentes contrastadas."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Relacionar, con fundamentos científicos, la preservación de la biodiversidad, la conservación del medioambiente, la protección de los seres vivos del entorno, el desarrollo sostenible y la calidad de vida, comprendiendo la repercusión global de actuaciones locales, todo ello reconociendo la importancia de preservar la biodiversidad propia de nuestra Comunidad."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Proponer y adoptar hábitos sostenibles, analizando de una manera crítica las actividades propias y ajenas, valorando su impacto global, a partir de los propios razonamientos, de los conocimientos adquiridos y de la información de diversas fuentes, precisa y fiable disponible."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "5",
+      "descripcion": "Proponer, adoptar y consolidar hábitos saludables, analizando las acciones propias y ajenas, con actitud crítica y a partir de fundamentos fisiológicos."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Valorar la importancia del paisaje como patrimonio natural y fuente de recursos, analizando la fragilidad de los elementos que lo componen."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Interpretar el paisaje analizando el origen, relación y evolución integrada de sus elementos, entendiendo los procesos geológicos que lo han formado y los fundamentos que determinan su dinámica."
+    },
+    {
+      "codigo": "6.3",
+      "competencia": "6",
+      "descripcion": "Reflexionar sobre los impactos y riesgos naturales mediante el análisis de los elementos de un paisaje, a partir de determinadas acciones humanas pasadas, presentes y futuras."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Proyecto científico",
+      "titulo": "Proyecto científico",
+      "items": [
+        "Formulación de hipótesis, preguntas y conjeturas: planteamiento con perspectiva científica.",
+        "Estrategias para la búsqueda de información, la colaboración y la comunicación de procesos, resultados o ideas científicas: herramientas digitales y formatos de uso frecuente en ciencia (presentación, gráfica, vídeo, póster, informe, etc.).",
+        "Fuentes fidedignas de información científica: reconocimiento y utilización.",
+        "La respuesta a cuestiones científicas mediante la experimentación y el trabajo de campo: utilización de los instrumentos y espacios necesarios (laboratorio, aulas, entorno, etc.) de forma adecuada.",
+        "Modelado como método de representación y comprensión de procesos o elementos de la naturaleza.",
+        "Métodos de observación y de toma de datos de fenómenos naturales.",
+        "Métodos de análisis de resultados. Diferenciación entre correlación y causalidad.",
+        "La labor científica y las personas dedicadas a la ciencia: contribución a las ciencias biológicas y geológicas e importancia social. El papel de la mujer en la ciencia. Personas dedicadas a la ciencia en Andalucía.",
+        "Estrategias de cooperación y funciones a desempeñar en proyectos científicos de ámbito académico y escolar. La importancia del respeto a la diversidad, igualdad de género e inclusión."
+      ],
+      "codigos_items": [
+        "BYG.3.A.1",
+        "BYG.3.A.2",
+        "BYG.3.A.3",
+        "BYG.3.A.4",
+        "BYG.3.A.5",
+        "BYG.3.A.6",
+        "BYG.3.A.7",
+        "BYG.3.A.8",
+        "BYG.3.A.9"
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. La célula",
+      "titulo": "La célula",
+      "items": [
+        "Diferenciación de los procesos geológicos internos. Manifestaciones de la energía interna de la Tierra.",
+        "Reconocimiento de los factores que condicionan el modelado terrestre. Acción de los agentes geológicos externos en relación con la meteorización, erosión, transporte y sedimentación en distintos ambientes.",
+        "Determinación de los riesgos e impactos sobre el medioambiente. Comprensión del grado de influencia humana en los mismos.",
+        "Valoración de los riesgos naturales en Andalucía. Origen y prevención.",
+        "Reflexión sobre el paisaje y los elementos que lo forman como recurso. Paisajes andaluces."
+      ],
+      "codigos_items": [
+        "BYG.3.B.1",
+        "BYG.3.B.2",
+        "BYG.3.B.3",
+        "BYG.3.B.4",
+        "BYG.3.B.5"
+      ]
+    },
+    {
+      "codigo": "F",
+      "bloque": "F. Medioambiente y sostenibilidad",
+      "titulo": "Medioambiente y sostenibilidad",
+      "items": [
+        "Importancia de la función de nutrición. Los aparatos que participan en ella. Relación entre la",
+        "Anatomía y fisiología básicas de los aparatos digestivo, respiratorio, circulatorio, excretor y reproductor. Análisis y visión general de la función de reproducción. Relación entre la anatomía y la fisiología básicas del aparato reproductor.",
+        "Visión general de la función de relación: receptores sensoriales, centros de coordinación y órganos efectores.",
+        "Relación entre los principales sistemas y aparatos del organismo implicados en las funciones de nutrición, relación y reproducción mediante la aplicación de conocimientos de fisiología y anatomía.",
+        "Relación entre los niveles de organización del cuerpo humano: células, tejidos, órganos, aparatos y sistemas."
+      ],
+      "codigos_items": [
+        "BYG.3.F.1",
+        "BYG.3.F.2",
+        "BYG.3.F.3",
+        "BYG.3.F.4",
+        "BYG.3.F.5"
+      ]
+    },
+    {
+      "codigo": "G",
+      "bloque": "G. Hábitos saludables",
+      "titulo": "Hábitos saludables",
+      "items": [
+        "Características y elementos propios de una dieta saludable y su importancia.",
+        "Conceptos de sexo y sexualidad: importancia del respeto hacia la libertad y la diversidad sexual y hacia la igualdad de género, dentro de una educación sexual integral como parte de un desarrollo armónico. Planteamiento y resolución de dudas sobre temas afectivo-sexuales, mediante el uso de fuentes de información adecuadas, de forma respetuosa y responsable, evaluando ideas preconcebidas y desterrando estereotipos sexistas.",
+        "Educación afectivo-sexual desde la perspectiva de la igualdad entre personas y el respeto a la diversidad sexual. La importancia de las prácticas sexuales responsables. La asertividad y el autocuidado. La prevención de infecciones de transmisión sexual (ITS) y de embarazos no deseados. El uso adecuado de métodos anticonceptivos y de métodos de prevención de ITS.",
+        "Las drogas legales e ilegales: sus efectos perjudiciales sobre la salud de los consumidores y de quienes están en su entorno próximo.",
+        "Los hábitos saludables: su importancia en la conservación de la salud física, mental y social (higiene del sueño, hábitos posturales, uso responsable de las nuevas tecnologías, actividad física, autorregulación emocional, cuidado y corresponsabilidad, etc.)."
+      ],
+      "codigos_items": [
+        "BYG.3.G.1",
+        "BYG.3.G.2",
+        "BYG.3.G.3",
+        "BYG.3.G.4",
+        "BYG.3.G.5"
+      ]
+    },
+    {
+      "codigo": "H",
+      "bloque": "H. Salud y enfermedad",
+      "titulo": "Salud y enfermedad",
+      "items": [
+        "Análisis del concepto de salud y enfermedad. Concepto de enfermedades infecciosas y no infecciosas: salud).",
+        "Medidas de prevención y tratamientos de las enfermedades infecciosas en función de su agente causal y la importancia del uso adecuado de los antibióticos. La importancia de la vacunación en la prevención de enfermedades y en la mejora de la calidad de vida humana.",
+        "Mecanismos de defensa del organismo frente a agentes patógenos (barreras externas y sistema inmunitario): su papel en la prevención y superación de enfermedades infecciosas.",
+        "Valoración de la importancia de los trasplantes y la donación de órganos.",
+        "La importancia de la vacunación en la prevención de enfermedades y en la mejora de la calidad de vida humana. Saberes básicos de cuarto curso."
+      ],
+      "codigos_items": [
+        "BYG.3.H.1",
+        "BYG.3.H.2",
+        "BYG.3.H.3",
+        "BYG.3.H.4",
+        "BYG.3.H.5"
+      ]
+    }
+  ],
+  "comunidad": "andalucia",
+  "idioma": "es"
+}

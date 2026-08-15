@@ -1,0 +1,658 @@
+{
+  "materia_oficial": "Matemàtiques",
+  "materia": "Matemàtiques",
+  "etapa": "ESO",
+  "ciclo": "4º ESO",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "4º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Interpretar, modelitzar i resoldre situacions de la vida quotidiana, pròpies de les matemàtiques i d’altres àmbits del coneixement aplicant diferents estratègies i formes de raonament per explorar procediments i obtenir solucions.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Argumentar la idoneïtat de les solucions d’un problema, avaluant les respostes obtingudes a través del raonament i la lògica matemàtica, per verificar la seva validesa i generar noves preguntes i reptes.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Formular conjectures senzilles o problemes, utilitzant el raonament i l’argumentació, la creativitat i les eines tecnològiques, per integrar i generar nou coneixement matemàtic.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Utilitzar el pensament computacional, organitzant dades, descomponent en parts, reconeixement patrons, interpretant, modificant, generalitzant i creant algoritmes per modelitzar situacions i resoldre problemes de forma eficient.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Connectar diferents elements matemàtics relacionant conceptes, procediments, arguments i models per desenvolupar una visió de les matemàtiques com un tot integrat.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Vincular i contextualitzar les matemàtiques amb altres àrees de coneixement, interrelacionant conceptes i procediments, per resoldre problemes i desenvolupar la capacitat crítica, creativa i innovadora en situacions diverses.",
+      "descriptores": []
+    },
+    {
+      "codigo": "7",
+      "descripcion": "Comunicar i representar, de forma individual i col·lectiva, conceptes, procediments i resultats matemàtics usant el llenguatge oral, escrit, gràfic, multimodal i la terminologia matemàtica apropiada, per donar significat i permanència a les idees matemàtiques.",
+      "descriptores": []
+    },
+    {
+      "codigo": "8",
+      "descripcion": "Desenvolupar destreses personals, com l’autoregulació, que ajudin a identificar i gestionar emocions, aprenent de l’error i afrontant les situacions d’incertesa com una oportunitat, per perseverar i gaudir del procés d’aprendre matemàtiques.",
+      "descriptores": []
+    },
+    {
+      "codigo": "9",
+      "descripcion": "Desenvolupar destreses socials, com la cooperació, participant activament en equips de treball inclusius reconeixent la diversitat i el valor de les aportacions dels altres, per compartir i construir coneixement de matemàtic de manera col·lectiva.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Interpretar problemes matemàtics organitzant-ne la informació donada i comprenent les preguntes formulades."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Elaborar representacions matemàtiques eficaces, amb recursos manipulables, gràfics i digitals, que condueixin a la comprensió i resolució de problemes i situacions de la vida quotidiana."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Analitzar i seleccionar eines i estratègies elaborades valorant-ne i contrastant-ne l’eficàcia i idoneïtat de manera raonada en la resolució de problemes."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "1",
+      "descripcion": "Obtenir solucions matemàtiques d’un problema mobilitzant els coneixements necessaris i discriminant l’existència o no d’una o més solucions d’un problema."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Construir i expressar amb coherència idees i raonaments que permetin justificar la validesa de les solucions, processos i conclusions des de diferents perspectives (de gènere, de sostenibilitat, de consum responsable...)."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Generar preguntes a partir d’arguments matemàtics que permetin plantejar nous reptes relacionats amb el problema resolt."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Plantejar preguntes en contextos diversos que es puguin respondre a través del coneixement matemàtic."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Fer conjectures matemàtiques senzilles de manera autònoma i raonada en un context en què l’alumne/a tingui llibertat creativa fent ús, si cal, d’eines tecnològiques (llenguatges de programació, fulls de càlcul, GeoGebra, fotografia matemàtica, vídeo, etc.)."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Proposar problemes de manera autònoma, creativa i raonada en un context."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Descompondre un problema o situació de la vida quotidiana en diferents parts, abordant-les d’una en una per poder trobar la solució global amb dispositius digitals."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Reconèixer patrons, similituds i tendències en els problemes o situacions que es volen solucionar."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Trobar els principis que generen els patrons d’un problema descartant les dades irrellevants tot identificant les parts més importants."
+    },
+    {
+      "codigo": "4.4",
+      "competencia": "4",
+      "descripcion": "Generar instruccions pas a pas per resoldre un problema i d’altres similars provant i duent a terme possibles solucions amb dispositius digitals."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Identificar i usar les connexions entre diferents representacions d’un mateix concepte matemàtic quan s’extreu informació d’una d’aquestes per aplicar-la a l’altra."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Reconèixer i relacionar connexions entre diferents conceptes i coneixements matemàtics a través de situacions de la vida quotidiana per treure’n conclusions i tenir una visió integrada de les matemàtiques."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Reconèixer i utilitzar les matemàtiques presents en la vida quotidiana usant els processos inherents a la investigació científica i matemàtica: inferir, mesurar, comunicar, classificar, predir…, en situacions susceptibles de ser abordades en termes matemàtics."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Reconèixer i utilitzar les connexions entre les matemàtiques i altres matèries, en situacions susceptibles de ser abordades en termes matemàtics."
+    },
+    {
+      "codigo": "6.3",
+      "competencia": "6",
+      "descripcion": "Identificar i valorar l’aportació actual i històrica de les matemàtiques al progrés de la humanitat, també des d’una perspectiva de gènere, davant dels reptes que planteja la societat actual."
+    },
+    {
+      "codigo": "6.4",
+      "competencia": "6",
+      "descripcion": "Desenvolupar l’esperit crític i el potencial creatiu de la matemàtica argumentant propostes innovadores en contextos científics, tecnològics, socials, artístics i culturals."
+    },
+    {
+      "codigo": "7.1",
+      "competencia": "7",
+      "descripcion": "Comunicar informació de manera organitzada, utilitzant el llenguatge matemàtic adequat, oralment i per escrit, per a descriure, explicar justificar raonaments, procediments i conclusions."
+    },
+    {
+      "codigo": "7.2",
+      "competencia": "7",
+      "descripcion": "Representar conceptes, procediments i resultats matemàtics amb claredat, utilitzant diferents eines i formes d’expressió, com per exemple a través del dibuix, la fotografia, els vídeos, les obres visuals i musicals, per visualitzar idees i estructurar processos matemàtics."
+    },
+    {
+      "codigo": "7.3",
+      "competencia": "7",
+      "descripcion": "Dialogar entre iguals i debatre idees matemàtiques per descriure, explicar i justificar raonaments, processos i conclusions."
+    },
+    {
+      "codigo": "8.1",
+      "competencia": "8",
+      "descripcion": "Gestionar les pròpies emocions i desenvolupar l’autoconfiança per encarar nous reptes matemàtics perseverant en la seva resolució en qualsevol situació d’aprenentatge proposada."
+    },
+    {
+      "codigo": "8.2",
+      "competencia": "8",
+      "descripcion": "Tenir consciència que s’està aprenent i de com s’està aprenent en qualsevol situació d’aprenentatge proposada"
+    },
+    {
+      "codigo": "8.3",
+      "competencia": "8",
+      "descripcion": "Identificar els errors propis i expressar de manera raonada quin és el motiu que els provoquen (conceptuals, de procediment, d’estratègia...), en la resolució de reptes o problemes, perseverant en la seva resolució."
+    },
+    {
+      "codigo": "8.4",
+      "competencia": "8",
+      "descripcion": "Participar de la pròpia avaluació gestionant estratègies que ajudin a superar les dificultats, en la revisió de les produccions realitzades."
+    },
+    {
+      "codigo": "8.5",
+      "competencia": "8",
+      "descripcion": "Apreciar el potencial creatiu de la matemàtica així com la seva capacitat de generar harmonia i bellesa, en les creacions i produccions realitzades."
+    },
+    {
+      "codigo": "9.1",
+      "competencia": "9",
+      "descripcion": "Cooperar en el treball en equip tant en entorns presencials com virtuals, escoltant els altres i valorant les seves aportacions, respectant la perspectiva de gènere, en situacions en què es comparteixi i construeixi coneixement de manera conjunta."
+    },
+    {
+      "codigo": "9.2",
+      "competencia": "9",
+      "descripcion": "Col·laborar activament amb els altres, arribant a acords i complint-los, per assolir els objectius del grup relatius a la construcció del coneixement matemàtic, valorant l’èxit col·lectiu com una estratègia de millora personal."
+    },
+    {
+      "codigo": "9.3",
+      "competencia": "9",
+      "descripcion": "Equilibrar les necessitats personals amb les del grup, des de l’empatia i el respecte, reconeixent la diversitat i el valor de les aportacions dels altres per generar nou aprenentatge matemàtic, tant individual com col·lectiu."
+    },
+    {
+      "codigo": "9.4",
+      "competencia": "9",
+      "descripcion": "Ajudar a identificar errors i dificultats d’aprenentatge de les companyes i companys fent aportacions constructives i concretes que puguin ajudar a superar-los i a millorar."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "16",
+      "bloque": "16. Sentit numèric · Comptatge",
+      "titulo": "Sentit numèric · Comptatge",
+      "items": [
+        "Resolució de problemes i situacions de la vida quotidiana en els quals s’hagin de fer recomptes sistemàtics, utilitzant diferents estratègies (diagrames d’arbre, tècniques de combinatòria, etc.)."
+      ]
+    },
+    {
+      "codigo": "17",
+      "bloque": "17. Sentit numèric · Quantitat",
+      "titulo": "Sentit numèric · Quantitat",
+      "items": [
+        "Interpretació de nombres grans i petits, reconeixement i utilització de la notació exponencial i científica. Incloent la lectura d’aquestes quantitats en la calculadora o full de càlcul",
+        "Expressió d’estimacions amb la precisió requerida.",
+        "Ús dels nombres enters, fraccions, decimals i arrels per a expressar quantitats en diferents contextos, inclosos els de la vida quotidiana, amb la precisió requerida.",
+        "Ús dels nombres indoaràbics, la introducció del zero i els nombres negatius en la història de les matemàtiques.",
+        "Ús de les fraccions en l’antiguitat (Egipte, l’Índia i Grècia) i en l’actualitat.",
+        "Reconeixement i aplicació de diferents formes de representació de nombres enters, fraccionaris i decimals, inclosa la recta numèrica.",
+        "Selecció i utilització de la representació més adequada d’una mateixa quantitat (natural, sencer, decimal o fracció) per a cada situació o problema."
+      ]
+    },
+    {
+      "codigo": "18",
+      "bloque": "18. Sentit numèric · Sentit de les operacions",
+      "titulo": "Sentit numèric · Sentit de les operacions",
+      "items": [
+        "Aplicació d’estratègies de càlcul mental amb nombres naturals, fraccions i decimals.",
+        "Reconeixement i aplicació de les operacions amb nombres enters, fraccionaris o decimals útils per resoldre situacions contextualitzades.",
+        "Comprensió i utilització de les relacions inverses, entre: l’addició i la sostracció, la multiplicació i la divisió, la potència i les arrels, per simplificar i resoldre problemes.",
+        "Interpretació dels efectes de les operacions aritmètiques amb nombres enters, fraccions i expressions decimals.",
+        "Ús de les propietats de les operacions aritmètiques (suma, resta, multiplicació i divisió) per realitzar càlculs de manera eficient amb nombres naturals, enters, fraccionaris i decimals tant mentalment com de manera manual, amb calculadora o full de càlcul, adaptant les estratègies a cada situació."
+      ]
+    },
+    {
+      "codigo": "19",
+      "bloque": "19. Sentit numèric · Relacions",
+      "titulo": "Sentit numèric · Relacions",
+      "items": [
+        "Utilització de factors primers, múltiples i divisors per a resoldre problemes, mitjançant estratègies i/o eines diverses, inclòs l’ús de la calculadora.",
+        "Comparació i ordenació de fraccions, decimals i percentatges amb eficàcia trobant la seva situació exacta o aproximada en la recta numèrica."
+      ]
+    },
+    {
+      "codigo": "20",
+      "bloque": "20. Sentit numèric · Raonament proporcional",
+      "titulo": "Sentit numèric · Raonament proporcional",
+      "items": [
+        "Identificació de situacions proporcionals i no proporcionals (incloent situacions de proporcionalitat inversa) en problemes de la vida quotidiana. Comprensió i representació de les relacions quantitatives.",
+        "Percentatges: comprensió i utilització en la resolució de problemes, inclosos els majors que 100% o menors que 1%.",
+        "Desenvolupament i anàlisi de mètodes per resoldre problemes en situacions de proporcionalitat directa en diferents contextos (augments i disminucions percentuals, rebaixes i pujades de preus, impostos, canvis de divises, càlculs geomètrics, escales, etc.)."
+      ]
+    },
+    {
+      "codigo": "21",
+      "bloque": "21. Sentit numèric · Educació financera",
+      "titulo": "Sentit numèric · Educació financera",
+      "items": [
+        "Interpretació de la informació numèrica en contextos financers senzills.",
+        "Mètodes per a la presa de decisions de consum responsable ateses les relacions qualitat-preu i al valor-preu en contextos quotidians."
+      ]
+    },
+    {
+      "codigo": "22",
+      "bloque": "22. Sentit de la mesura · Magnitud",
+      "titulo": "Sentit de la mesura · Magnitud",
+      "items": [
+        "Atributs mesurables dels objectes físics i matemàtics: recerca i relació entre aquests.",
+        "Elecció de les unitats i operacions adequades en situacions que impliquin mesura.",
+        "Comparació de les unitats pròpies del sistema mètric decimal amb unes altres presents en diferents contextos.",
+        "Avaluació de la importància de l’establiment del metre com a mesura universal en el context històric en què es va produir i en el context actual."
+      ]
+    },
+    {
+      "codigo": "23",
+      "bloque": "23. Sentit de la mesura · Mesurament",
+      "titulo": "Sentit de la mesura · Mesurament",
+      "items": [
+        "Selecció i ús d’instruments (analògic o digital) i unitats adequades per mesurar de manera directa diferents magnituds de l’entorn.",
+        "Deducció, interpretació i aplicació de les principals estratègies per obtenir longituds, àrees i volums en figures planes i tridimensionals.",
+        "Relació entre les aplicacions dels teoremes de Tales i de Pitàgores en els diferents contextos històrics en què s’han utilitzat (Grècia, Índia, Xina).",
+        "Ús de representacions planes d’objectes tridimensionals per visualitzar i resoldre problemes d’àrees, entre d’altres.",
+        "Generació de representacions planes, manualment o digitalment, d’objectes geomètrics plans o tridimensionals, amb característiques donades, com les longituds dels costats, les mesures dels angles, les longituds de les arestes."
+      ]
+    },
+    {
+      "codigo": "24",
+      "bloque": "24. Sentit de la mesura · Estimació i relacions",
+      "titulo": "Sentit de la mesura · Estimació i relacions",
+      "items": [
+        "Formulació de conjectures sobre mesures o relacions entre les mateixes basades en estimacions.",
+        "Presa de decisió justificada del grau de precisió requerida en situacions de mesura.",
+        "Valoració de les mesures del radi de la Terra i de les distàncies Terra-Lluna a la",
+        "Grècia antiga."
+      ]
+    },
+    {
+      "codigo": "25",
+      "bloque": "25. Sentit espacial · Formes geomètriques de dues i tres dimensions",
+      "titulo": "Sentit espacial · Formes geomètriques de dues i tres dimensions",
+      "items": [
+        "Descripció i classificació de formes geomètriques planes i tridimensionals en funció de les seves propietats o característiques.",
+        "Reconeixement de les relacions geomètriques com la congruència, la semblança i la relació pitagòrica en figures planes i tridimensionals.",
+        "Construcció de formes geomètriques amb diferents eines: materials manipulables, instruments de dibuix, programes de geometria dinàmica, realitat augmentada, etc.",
+        "Construcció de figures geomètriques en diferents contextos històrics, en particular a la Grècia antiga (Euclides)."
+      ]
+    },
+    {
+      "codigo": "26",
+      "bloque": "26. Sentit espacial · Localització i sistemes de representació",
+      "titulo": "Sentit espacial · Localització i sistemes de representació",
+      "items": [
+        "Localització i descripció de relacions espacials: coordenades geomètriques i altres sistemes de representació."
+      ]
+    },
+    {
+      "codigo": "27",
+      "bloque": "27. Sentit espacial · Moviments i transformacions",
+      "titulo": "Sentit espacial · Moviments i transformacions",
+      "items": [
+        "Anàlisis de transformacions elementals com a girs, translacions i simetries en situacions diverses utilitzant eines tecnològiques i/o manipulatives."
+      ]
+    },
+    {
+      "codigo": "28",
+      "bloque": "28. Sentit espacial · Visualització i modelització geomètrica",
+      "titulo": "Sentit espacial · Visualització i modelització geomètrica",
+      "items": [
+        "Ús de models geomètrics per representar i explicar relacions numèriques i algebraiques en situacions diverses.",
+        "Reconeixement de connexions entre el sentit espacial amb els altres sentits (numèric, algebraic…) i amb altres disciplines (art, ciència, vida diària)."
+      ]
+    },
+    {
+      "codigo": "29",
+      "bloque": "29. Sentit algebraic · Patrons",
+      "titulo": "Sentit algebraic · Patrons",
+      "items": [
+        "Patrons: identificació i comprensió, determinant la regla de formació de col·leccions numèriques o gràfiques.",
+        "Fórmules i termes generals: obtenció mitjançant l’observació de pautes i regularitats senzilles i la seva generalització.",
+        "Identificació de la successió de Fibonacci i la proporció àuria a la natura."
+      ]
+    },
+    {
+      "codigo": "30",
+      "bloque": "30. Sentit algebraic · Model matemàtic",
+      "titulo": "Sentit algebraic · Model matemàtic",
+      "items": [
+        "Modelització i resolució de problemes contextualitzats, també de la vida quotidiana, secundant-se en representacions matemàtiques i en el llenguatge algebraic.",
+        "Obtenció de conclusions raonables sobre una situació de la vida quotidiana una vegada modelitzada."
+      ]
+    },
+    {
+      "codigo": "31",
+      "bloque": "31. Sentit algebraic · Variable",
+      "titulo": "Sentit algebraic · Variable",
+      "items": [
+        "Comprensió del concepte de variable en les seves diferents naturaleses."
+      ]
+    },
+    {
+      "codigo": "32",
+      "bloque": "32. Sentit algebraic · Igualtat i desigualtat",
+      "titulo": "Sentit algebraic · Igualtat i desigualtat",
+      "items": [
+        "Ús de l’àlgebra simbòlica per representar relacions lineals i quadràtiques en situacions contextualitzades, també de la vida quotidiana.",
+        "Anàlisi dels diferents mètodes de resolució d’equacions al llarg de la història, en particular els mètodes geomètrics d’Al-Khwarizmi.",
+        "Identificació i aplicació de l’equivalència d’expressions algebraiques en la resolució de problemes basats en relacions lineals i quadràtiques.",
+        "Cerca de solucions en equacions o sistemes lineals i equacions quadràtiques, tant de manera manual com utilitzant la tecnologia."
+      ]
+    },
+    {
+      "codigo": "33",
+      "bloque": "33. Sentit algebraic · Relacions i funcions",
+      "titulo": "Sentit algebraic · Relacions i funcions",
+      "items": [
+        "Aplicació i comparació de les diferents formes de representació d’una relació.",
+        "Identificació i ús de funcions, lineals o no lineals i comparació de les seves propietats a partir de taules, gràfiques o expressions algebraiques.",
+        "Identificació de relacions quantitatives en situacions contextualitzades, incloent la vida quotidiana i determinació dels tipus de funcions que les modelitzen (lineals i quadràtiques).",
+        "Deducció de la informació rellevant d’una funció mitjançant l’ús de diferents representacions simbòliques."
+      ]
+    },
+    {
+      "codigo": "34",
+      "bloque": "34. Sentit algebraic · Pensament computacional",
+      "titulo": "Sentit algebraic · Pensament computacional",
+      "items": [
+        "Identificació i ús d’estratègies quan s’interpreten, modifiquen o creen algorismes de programació per blocs i/o programació textuals que incorporen: diferenciació entre processos seqüencials i paral·lels; comprensió de les instruccions de bucle, condicionals i instruccions niades; comprensió de la gestió de dades amb variables; ús d’operadors lògics i d’esdeveniments.",
+        "Formulació de qüestions susceptibles de ser analitzades utilitzant programes i altres eines."
+      ]
+    },
+    {
+      "codigo": "35",
+      "bloque": "35. Sentit estocàstic · Distribució",
+      "titulo": "Sentit estocàstic · Distribució",
+      "items": [
+        "Anàlisi i interpretació de taules i gràfics estadístics de variables qualitatives, quantitatives discretes i quantitatives contínues.",
+        "Recollida i organització de dades de situacions contextualitzades, incloent la vida quotidiana, que involucren una sola variable.",
+        "Generació de representacions gràfiques adequades mitjançant diferents tecnologies (calculadora, full de càlcul, apps...) per esbrinar com es distribueixen les dades, interpretar-les i obtenir conclusions raonades.",
+        "Mesures de centralització i dispersió: interpretació i càlcul.",
+        "Comparació de dos conjunts de dades ateses les mesures de centralització i dispersió.",
+        "Reconeixement que les mesures de dispersió descriuen la variabilitat de les dades.",
+        "Càlcul, amb suport tecnològic, i interpretació de les mesures de centralització i dispersió en situacions reals."
+      ]
+    },
+    {
+      "codigo": "36",
+      "bloque": "36. Sentit estocàstic · Inferència",
+      "titulo": "Sentit estocàstic · Inferència",
+      "items": [
+        "Formulació de preguntes adequades per conèixer les característiques d’interès d’una població.",
+        "Presentació de dades rellevants per donar resposta a qüestions plantejades en recerques estadístiques.",
+        "Obtenció de conclusions raonables a partir dels resultats obtinguts amb la finalitat d’emetre judicis i prendre decisions adequades.",
+        "Ús de dades estadístiques al llarg de la història en la construcció de censos de població.",
+        "Usos de dades estadístiques en la medicina actual (covid 19) i en la història, el cas de Florence Nightingale."
+      ]
+    },
+    {
+      "codigo": "37",
+      "bloque": "37. Sentit estocàstic · Predictibilitat i incertesa",
+      "titulo": "Sentit estocàstic · Predictibilitat i incertesa",
+      "items": [
+        "Identificació de fenòmens deterministes i aleatoris.",
+        "Interpretació de la probabilitat com a mesura associada a la incertesa d’experiments aleatoris.",
+        "Planificació i realització d’experiències senzilles per analitzar el comportament de fenòmens aleatoris.",
+        "Assignació de la probabilitat a partir de l’experimentació i el concepte de freqüència relativa.",
+        "Anàlisi de l’origen de la teoria de la probabilitat (Fermat i Pascal) en el context dels jocs d’atzar.",
+        "Assignació de probabilitats mitjançant la regla de Laplace."
+      ]
+    },
+    {
+      "codigo": "38",
+      "bloque": "38. Sentit socioemocional · Creences, actituds i emocions",
+      "titulo": "Sentit socioemocional · Creences, actituds i emocions",
+      "items": [
+        "Desenvolupament de la curiositat, la iniciativa, la perseverança i la resiliència cap a l’aprenentatge de les matemàtiques.",
+        "Gestió de les emocions que intervenen en l’aprenentatge com l’autoconsciència i l’autoregulació.",
+        "Desenvolupament de la flexibilitat cognitiva per acceptar un canvi d’estratègia quan sigui necessari i transformar l’error en una oportunitat d’aprenentatge i al seu torn, interpretar cada problema resolt com una oportunitat per generar noves preguntes."
+      ]
+    },
+    {
+      "codigo": "39",
+      "bloque": "39. Sentit socioemocional · Treball en equip i presa de decisions",
+      "titulo": "Sentit socioemocional · Treball en equip i presa de decisions",
+      "items": [
+        "Assumpció de responsabilitats i participació activa per optimitzar el treball en equip.",
+        "Selecció de tècniques cooperatives per compartir i construir coneixement de manera col·lectiva.",
+        "Ús d’estratègies de gestió i presa de decisions adequades pera resoldre situacions pròpies del treball en equip."
+      ]
+    },
+    {
+      "codigo": "44",
+      "bloque": "44. Sentit numèric · Comptatge",
+      "titulo": "Sentit numèric · Comptatge",
+      "items": [
+        "Resolució de problemes i situacions de la vida quotidiana en els quals s’hagin de fer recomptes sistemàtics, utilitzant diferents estratègies (diagrames d’arbre, tècniques de combinatòria, etc.)."
+      ]
+    },
+    {
+      "codigo": "45",
+      "bloque": "45. Sentit numèric · Quantitat",
+      "titulo": "Sentit numèric · Quantitat",
+      "items": [
+        "Expressió d’estimacions en diversos contextos analitzant l’error comès.",
+        "Ús dels nombres reals per expressar quantitats en diferents contextos, inclosos els de la vida quotidiana, amb la precisió requerida",
+        "Reconeixement i aplicació de diferents formes de representació de nombres enters, racionals i reals, inclosa la recta numèrica, adequada a cada situació o problema.",
+        "Identificació del conjunt numèric que serveix per respondre a diferents necessitats: comptar, mesurar, comparar, etc."
+      ]
+    },
+    {
+      "codigo": "46",
+      "bloque": "46. Sentit numèric · Sentit de les operacions",
+      "titulo": "Sentit numèric · Sentit de les operacions",
+      "items": [
+        "Elecció de les operacions adequades amb nombres reals per resoldre situacions contextualitzades.",
+        "Ús de les propietats de les operacions aritmètiques per realitzar càlculs amb nombres reals de manera eficient amb calculadora i, a vegades, manualment, adaptant les estratègies a cada situació.",
+        "Reconeixement d’alguns nombres irracionals en situacions de la vida quotidiana.",
+        "Evolució històrica de les diferents aproximacions al nombre pi.",
+        "Identificació i anàlisi de patrons i regularitats numèriques en les quals intervinguin nombres reals."
+      ]
+    },
+    {
+      "codigo": "47",
+      "bloque": "47. Sentit numèric · Relacions",
+      "titulo": "Sentit numèric · Relacions",
+      "items": [
+        "Comparació i ordenació de nombres reals amb eficàcia trobant la seva situació exacta o aproximada en la recta numèrica.",
+        "Ús del triangle aritmètic al llarg de la història per a resoldre problemes."
+      ]
+    },
+    {
+      "codigo": "48",
+      "bloque": "48. Sentit numèric · Educació financera",
+      "titulo": "Sentit numèric · Educació financera",
+      "items": [
+        "Desenvolupament, anàlisi i explicació de mètodes per a la resolució de problemes relacionats amb augments i disminucions percentuals, d’interessos i taxes en contextos financers."
+      ]
+    },
+    {
+      "codigo": "49",
+      "bloque": "49. Sentit de la mesura · Mesurament",
+      "titulo": "Sentit de la mesura · Mesurament",
+      "items": [
+        "Deducció de les mesures dels elements d’un triangle en situacions que es poden modelitzar amb triangles rectangles. (*) Utilització de les raons trigonomètriques i les seves relacions en la resolució de problemes que es poden modelitzar amb triangles rectangles.",
+        "Origen i ús de la trigonometria al llarg de la història i en particular per mesurar la distància Terra-Sol i Terra-Lluna."
+      ]
+    },
+    {
+      "codigo": "50",
+      "bloque": "50. Sentit espacial · Formes geomètriques de dues i tres dimensions",
+      "titulo": "Sentit espacial · Formes geomètriques de dues i tres dimensions",
+      "items": [
+        "Elaboració de conjectures i reconeixement de propietats geomètriques de figures planes i tridimensionals a través de la recerca amb programes de geometria dinàmica.",
+        "Ús de propietats geomètriques de figures planes i tridimensionals que modelitzen situacions de la vida quotidiana.",
+        "Localització i sistemes de representació.",
+        "Ús de nocions bàsiques de geometria analítica per a la representació de figures geomètriques de dues dimensions i l’anàlisi de les seves propietats.",
+        "Origen i evolució històrica de l’ús de les coordenades cartesianes. (*) Reconeixement de diferents expressions algebraiques d’una recta i selecció de l’expressió més adequada en funció de la situació a resoldre."
+      ]
+    },
+    {
+      "codigo": "51",
+      "bloque": "51. Sentit espacial · Moviments i transformacions",
+      "titulo": "Sentit espacial · Moviments i transformacions",
+      "items": [
+        "Anàlisi de transformacions elementals incloent homotècies en situacions diverses utilitzant eines tecnològiques i/o manipulatives (*) o mitjançant l’ús de la geometria analítica."
+      ]
+    },
+    {
+      "codigo": "52",
+      "bloque": "52. Sentit espacial · Visualització i modelització geomètrica",
+      "titulo": "Sentit espacial · Visualització i modelització geomètrica",
+      "items": [
+        "Generació de models geomètrics per representar i explicar relacions numèriques i algebraiques en situacions diverses, incloent-hi les quotidianes."
+      ]
+    },
+    {
+      "codigo": "53",
+      "bloque": "53. Sentit algebraic · Patrons",
+      "titulo": "Sentit algebraic · Patrons",
+      "items": [
+        "Comprensió i anàlisi de patrons, determinant la regla de formació de diverses col·leccions numèriques o gràfiques."
+      ]
+    },
+    {
+      "codigo": "54",
+      "bloque": "54. Sentit algebraic · Model matemàtic",
+      "titulo": "Sentit algebraic · Model matemàtic",
+      "items": [
+        "Modelització i resolució de problemes contextualitzats, també de la vida quotidiana, secundant-se en representacions matemàtiques i en el llenguatge algebraic, fent ús de diferents tipus de funcions.",
+        "Obtenció i anàlisi de conclusions raonables d’una situació de la vida quotidiana una vegada modelitzada."
+      ]
+    },
+    {
+      "codigo": "55",
+      "bloque": "55. Sentit algebraic · Variable",
+      "titulo": "Sentit algebraic · Variable",
+      "items": [
+        "Utilització dels diferents usos de variables associant expressions simbòliques al context del problema.",
+        "Evolució històrica del concepte de variable i de l’ús de l’àlgebra simbòlica com a llenguatge de la ciència."
+      ]
+    },
+    {
+      "codigo": "56",
+      "bloque": "56. Sentit algebraic · Igualtat i desigualtat",
+      "titulo": "Sentit algebraic · Igualtat i desigualtat",
+      "items": [
+        "Ús de l’àlgebra simbòlica per representar relacions funcionals en contextos diversos, també de la vida quotidiana.",
+        "Utilització i generació de formes equivalents d’expressions algebraiques en la resolució d’inequacions lineals."
+      ]
+    },
+    {
+      "codigo": "57",
+      "bloque": "57. Sentit algebraic · Relacions i funcions",
+      "titulo": "Sentit algebraic · Relacions i funcions",
+      "items": [
+        "Identificació i ús de la forma de representació més adequada de funcions elementals en la resolució de situacions contextualitzades, incloent la vida quotidiana",
+        "Identificació de relacions quantitatives en situacions contextualitzades, incloent la vida quotidiana i determinació dels tipus de funcions que les modelitzen (proporcionalitat inversa i exponencial)",
+        "Interpretació de diferents característiques del canvi mitjançant la representació gràfica de les relacions funcionals estudiades."
+      ]
+    },
+    {
+      "codigo": "58",
+      "bloque": "58. Sentit algebraic · Pensament computacional",
+      "titulo": "Sentit algebraic · Pensament computacional",
+      "items": [
+        "Identificació i anàlisi d’estratègies (seqüències de passos ordenats, esquemes, simulacions, patrons repetitius, bucles, instruccions niades i condicionals, representacions computacionals, programació per blocs, robòtica educativa...) per a la interpretació, modificació i creació d’algorismes.",
+        "Identificació i anàlisi d’estratègies quan s’interpreten, modifiquen o creen algorismes de programació per blocs i/o programació textuals que incorporen: diferenciació entre processos seqüencials i paral·lels; comprensió de les instruccions de bucle, condicionals i instruccions niades; comprensió de la gestió de dades amb variables; ús d’operadors lògics i d’esdeveniments.",
+        "Formulació i anàlisi de problemes de la vida quotidiana utilitzant programes i eines adequades."
+      ]
+    },
+    {
+      "codigo": "59",
+      "bloque": "59. Sentit estocàstic · Distribució",
+      "titulo": "Sentit estocàstic · Distribució",
+      "items": [
+        "Anàlisi i interpretació de taules i gràfics estadístics de dues variables qualitatives, quantitatives discretes i quantitatives contínues.",
+        "Recollida i organització de dades de situacions contextualitzades, incloent de la vida quotidiana que involucrin dues variables.",
+        "Generació de representacions gràfiques mitjançant l’ús de mitjans tecnològics adequats per a interpretar la informació estadística i obtenir conclusions raonades.",
+        "Comparació de distribucions de dades atenent mesures de posició i dispersió."
+      ]
+    },
+    {
+      "codigo": "60",
+      "bloque": "60. Sentit estocàstic · Inferència",
+      "titulo": "Sentit estocàstic · Inferència",
+      "items": [
+        "Disseny d’estudis estadístics reflexionant sobre les diferents etapes del procés estadístic.",
+        "Presentació i interpretació de dades rellevants en recerques estadístiques mitjançant la utilització de mètodes estadístics i eines digitals adequades.",
+        "Interpretació de la relació entre dues variables, valorant gràficament amb eines tecnològiques la pertinència d’una regressió lineal.",
+        "Evolució històrica de l’aplicació de l’estadística a les ciències socials."
+      ]
+    },
+    {
+      "codigo": "61",
+      "bloque": "61. Sentit estocàstic · Predictibilitat i incertesa",
+      "titulo": "Sentit estocàstic · Predictibilitat i incertesa",
+      "items": [
+        "Planificació i realització d’experiments simples i compostos per a estudiar el comportament de fenòmens aleatoris.",
+        "Aplicació del càlcul de probabilitats per a prendre decisions fonamentades en diferents contextos, aplicant la regla de Laplace i tècniques de recompte en experiments simples i compostos."
+      ]
+    },
+    {
+      "codigo": "62",
+      "bloque": "62. Sentit socioemocional · Creences, actituds i emocions",
+      "titulo": "Sentit socioemocional · Creences, actituds i emocions",
+      "items": [
+        "Desenvolupament de la curiositat, la iniciativa, la perseverança i la resiliència cap a l’aprenentatge de les matemàtiques.",
+        "Gestió de les emocions que intervenen en l’aprenentatge com l’autoconsciència i l’autoregulació.",
+        "Desenvolupament de la flexibilitat cognitiva per acceptar un canvi d’estratègia quan sigui necessari i transformar l’error en una oportunitat d’aprenentatge i al seu torn, interpretar cada problema resolt com una oportunitat per generar noves preguntes."
+      ]
+    },
+    {
+      "codigo": "63",
+      "bloque": "63. Sentit socioemocional · Treball en equip i presa de decisions",
+      "titulo": "Sentit socioemocional · Treball en equip i presa de decisions",
+      "items": [
+        "Assumpció de responsabilitats i participació activa per optimitzar el treball en equip.",
+        "Selecció de tècniques cooperatives per compartir i construir coneixement de manera col·lectiva.",
+        "Ús d’estratègies de gestió i presa de decisions adequades pera resoldre situacions pròpies del treball en equip"
+      ]
+    }
+  ],
+  "comunidad": "cataluna",
+  "idioma": "ca"
+}

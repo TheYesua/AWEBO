@@ -1,0 +1,421 @@
+{
+  "materia_oficial": "Ciències Socials: Geografia i Història",
+  "materia": "Ciències Socials: Geografia i Història",
+  "etapa": "ESO",
+  "ciclo": "1º ESO i 2º ESO",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º ESO",
+    "2º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Cercar i tractar informació que permeti interpretar el present i el passat, aplicant els procediments de la recerca històrica i geogràfica a partir de l’anàlisi crítica de dades procedents de fonts analògiques i digitals, per transformar-ho en coneixement i comunicar-ho a través de diferents formats.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Indagar i argumentar a partir de problemes socials rellevants, locals i globals, per desenvolupar un pensament crític i respectuós amb les diferències, que contribueixi a la construcció de la identitat individual i col·lectiva i a la consecució d’un present i un futur més just i inclusiu.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Interpretar els canvis i les continuïtats dels processos històrics, mitjançant la realització de projectes d’investigació i l’ús de fonts primàries i secundàries, per interpretar els problemes del món actual i fer propostes a favor de la pau, el benestar i el desenvolupament sostenible.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Descobrir i analitzar els elements i dinàmiques que configuren el territori, mitjançant l’estudi de casos i problemàtiques geogràfiques, per valorar els diferents paisatges i proposar alternatives de gestió territorial, amb criteris de sostenibilitat i justícia social.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Analitzar de forma crítica els mecanismes que han regulat la vida de les societats al llarg de la història fins a l’actualitat i la construcció dels sistemes democràtics per participar de manera respectuosa i compromesa en activitats comunitàries que promoguin la convivència, la cohesió social i l’equitat.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Interpretar els processos que han conformat les societats actuals en la seva diversitat i riquesa a partir de l’anàlisi de perspectives i mirades diverses per formar-se un criteri propi fonamentat i comprometre’s en la defensa dels drets humans, la llibertat i la igualtat davant les situacions d’injustícia i discriminació.",
+      "descriptores": []
+    },
+    {
+      "codigo": "7",
+      "descripcion": "Identificar els fonaments que sostenen les identitats personals i col·lectives des d’una perspectiva intercultural, respectant els sentiments de pertinença, i valorar les diverses manifestacions culturals i artístiques i el patrimoni material i immaterial per contribuir a la cohesió social i als valors que emanen d’una ciutadania europea responsable i solidària.",
+      "descriptores": []
+    },
+    {
+      "codigo": "8",
+      "descripcion": "Analitzar les formes de vida i els fets i fenòmens socials, passats i presents, des de la perspectiva de gènere, i comprometre’s en la igualtat d’oportunitats, la participació efectiva i la responsabilitat compartida de totes les persones en la societat i l’entorn, superar estereotips i rebutjar qualsevol forma de discriminació i violència.",
+      "descriptores": []
+    },
+    {
+      "codigo": "9",
+      "descripcion": "Valorar críticament les dinàmiques d’interdependència entre diferents factors dins un món globalitzat i les desigualtats i conflictes que es generen, i relacionar les problemàtiques locals i globals per proposar alternatives basades en la cultura de la pau i adquirir compromisos que permetin la consecució d’un món més solidari i sostenible.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Desenvolupar estratègies de cerca, tractament i organització de la informació per a la resolució de demandes relacionades amb fets i processos rellevants del present i del passat."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Analitzar de manera crítica, responsable i creativa les fonts d’informació analògiques i digitals, contrastant les dades obtingudes i aplicant-les a diferents situacions i contextos."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Elaborar i comunicar els coneixements adquirits mitjançant recursos expressius que incorporin diferents llenguatges i"
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Identificar i mostrar interès pels principals problemes que afecten la societat, adoptant una posició crítica, escenari essencial per a la formació de la identitat individual i col·lectiva, la consolidació d’una actitud tolerant i la creació d’una consciència cívica que inclogui el respecte a altres formes de pensar i valorar. Un respecte que reflecteixi la visió de diferents persones i col·lectius i comprometi a preservar les seves memòries plurals. D’altra banda, la capacitat discursiva, utilitzant diferents mitjans d’expressió, ha d’incorporar el maneig adequat i correcte de conceptes, dades i situacions en funció del context."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Identificar els canvis i les continuïtats entre les etapes històriques, a través de processos inductius, reptes i projectes de recerca, i trobar relacions amb el món actual."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Diferenciar les causes i les conseqüències dels processos històrics i aplicar-ho en problemes actuals relacionats amb els objectius de desenvolupament sostenible."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Representar adequadament informació geogràfica i històrica a través de diverses formes de representació gràfica, cartogràfica i visual."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "3",
+      "descripcion": "Situar fets i processos històrics en eixos cronològics, trobant relacions entre diferents períodes i simultaneïtats temporals entre diferents territoris."
+    },
+    {
+      "codigo": "3.5",
+      "competencia": "3",
+      "descripcion": "Identificar i utilitzar les fonts primàries i secundàries, valorant les seves aportacions al coneixement del medi i de les formes de vida en el present i el passat. L’evolució de la humanitat no ha estat un procés lineal, sinó que ha anat donant respostes als desafiaments i reptes amb què s’ha trobat, passant per moments clau que han significat canvis en les formes de vida. Caldrà analitzar els canvis i les continuïtats al llarg de les diferents etapes històriques, així com les seves causes i conseqüències, amb la mirada posada en l’actualitat i el futur. L’aprenentatge a través de projectes, reptes o problemes possibilita l’alumnat a posar en acció estratègies i habilitats diverses per analitzar i comprendre els fenòmens, situacions o esdeveniments que tenen una especial rellevància o interès en el món en què viu. La construcció de coneixement s’ha de mostrar en la generació de continguts per mitjà de processos d’indagació i investigació, a través de l’ús de fonts primàries i secundàries, i conduirà a la formulació de propostes per a la superació dels principals reptes ambientals i socials del món actual."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Interpretar l’espai des d’una perspectiva sistèmica, a través del concepte de paisatge, identificant-ne els elements i les interrelacions existents."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Analitzar l’acció humana en els paisatges, dins dels diferents ecosistemes planetaris, valorant la riquesa del patrimoni natural i cultural, i detectant-ne les amenaces de degradació."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Criticar i denunciar situacions d’injustícia social i de degradació ambiental, a diferents escales, tant en l’àmbit urbà com en el rural, comprometent-se per a la seva millora. El descobriment i anàlisi de l’entorn permet a l’alumnat identificar els seus elements i relacions, el seu equilibri i evolució. La diversitat de paisatges del món evidencien les diverses formes de vida i la manera en què cada societat s’ha relacionat al llarg de la història amb el medi. Caldrà trobar els valors dels diferents paisatges per fer propostes de gestió territorial, tant en l’àmbit urbà com rural. Per abordar la complexitat de la major part de problemes territorials i ambientals des d’una perspectiva sistèmica hauran d’aplicar procediments d’anàlisi geogràfica, proposar hipòtesis explicatives, i comunicar resultats d’una recerca senzilla utilitzant les tècniques de representació de l’espai i el vocabulari geogràfic. Aquesta competència implica la presa de consciència sobre la gravetat de les conseqüències de la crisi climàtica i l’exigència d’adoptar conductes respectuoses amb la dignitat de tots els éssers vius, per tal d’assegurar un desenvolupament sostenible. També ha de promoure postures actives i de participació pel que fa a la millora del territori, tant en una escala local com global, i en favor d’un repartiment just, equitatiu i solidari dels recursos en un sentit global."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Identificar i analitzar els mecanismes que han regulat la vida en comú d’algunes societats del passat, interpretant els principals models d’organització social i política."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Distingir els trets fonamentals de les societats democràtiques i valorar les consecucions de la democràcia i la vigència dels drets humans individuals i col·lectius i de les llibertats."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "5",
+      "descripcion": "Analitzar els trets bàsics de l’organització social, política i econòmica d’algunes societats del passat i valorar de manera crítica el grau d’equitat dels intercanvis i relacions amb altres poblacions."
+    },
+    {
+      "codigo": "5.4",
+      "competencia": "5",
+      "descripcion": "Mostrar actituds pacífiques i tolerants i assumir els drets i deures del marc de convivència, demostrant capacitat crítica i responent de manera assertiva davant de situacions d’injustícia i desigualtat. Tot estat de dret ha de respectar, promoure i garantir els drets essencials que emanen de la naturalesa de les persones i dels col·lectius, per mitjà d’unes institucions juridicopolítiques compostes per òrgans que han d’actuar autònomament d’acord amb la separació de poders. Conèixer el funcionament d’aquestes institucions i, alhora, la trajectòria que ha conformat l’actual sistema democràtic, especialment a Catalunya i Espanya, suposa el reconeixement de la memòria democràtica i la visibilització i aportació de les lluites plurals que han contribuït, a través del seu compromís cívic, a la construcció de la democràcia i als reptes pendents. Alhora, s’ha d’oferir a l’alumnat la possibilitat de posar en pràctica valors que contribueixin a conformar la seva identitat cívica i una actitud compromesa davant de qüestionaments d’aquests valors, per mitjà de la participació en activitats comunitàries que promoguin la convivència, la cohesió social i l’equitat."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Explicar els trets definitoris d’algunes civilitzacions històriques, identificar elements de canvi i continuïtat en les formes de vida i subsistència i en l’organització de la societat i reconèixer aspectes significatius de la seva aportació a la cultura universal."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Reconèixer les desigualtats socials en diferents èpoques històriques, els mecanismes de domini i control que s’hi han donat i les conseqüències en el món actual."
+    },
+    {
+      "codigo": "6.3",
+      "competencia": "6",
+      "descripcion": "Identificar els col·lectius que han estat sotmesos, silenciats i invisibilitzats al llarg de la història fins al present i destacar les diferents perspectives i aportacions."
+    },
+    {
+      "codigo": "6.4",
+      "competencia": "6",
+      "descripcion": "Caracteritzar els drets humans individuals i col·lectius i l’estat de dret com a sistema institucional que garanteix el seu compliment a través dels seus òrgans i institucions. La diversitat cultural del món actual és fruit de processos històrics de contacte i interrelació entre diferents pobles i cultures i, més recentment, de l’accelerat procés de globalització. Però també ha de ser el resultat del reconeixement i del respecte a la diferència en el si de la pròpia societat, elements que resulten substancials per a la formació ciutadana de l’alumnat, i que suposen el desenvolupament d’una actitud favorable a l’avanç dels drets i de la igualtat efectiva dels diferents col·lectius que han patit discriminació. D’aquí que resultin necessaris el coneixement i la valoració dels diferents moviments que han anat sorgint per a la defensa dels drets i llibertats de col·lectius especialment discriminats. La identificació dels prejudicis i estereotips que proliferen a la societat constitueix un element principal per a la prevenció de tota discriminació i el punt de partida per actuar en favor de la inclusió social."
+    },
+    {
+      "codigo": "7.1",
+      "competencia": "7",
+      "descripcion": "Explicar els trets definitoris d’algunes cultures històriques, identificar elements de canvi i continuïtat en les seves expressions culturals i artístiques i reconèixer aspectes significatius de la seva aportació a la cultura universal."
+    },
+    {
+      "codigo": "7.2",
+      "competencia": "7",
+      "descripcion": "Reflexionar sobre els elements culturals que han conformat les diferents identitats individuals i col·lectives de l’entorn i les aportacions de cadascuna d’elles a la cultura humana universal i a la cohesió social, mostrant una actitud respectuosa envers els sentiments de pertinença."
+    },
+    {
+      "codigo": "7.3",
+      "competencia": "7",
+      "descripcion": "Assenyalar alguns elements bàsics del llegat històric i cultural d’Europa, així com els fonaments d’una ciutadania europea inclusiva i solidària."
+    },
+    {
+      "codigo": "7.4",
+      "competencia": "7",
+      "descripcion": "Valorar, protegir i conservar alguns elements del patrimoni artístic, històric i cultural, material i immaterial, com a fonament de les diverses identitats col·lectives i de la cohesió social i com a gaudi dels pobles. Reconèixer els processos d’identificació individual i col·lectiva, comprenent els diferents elements que han contribuït a la seva construcció i evolució, com ara el territori, la història, l’art, la llengua i la cultura, permet assolir una actitud respectuosa i de valoració proactiva i constructiva davant les diferències. D’altra banda, cal reconèixer la importància que tenen les múltiples expressions culturals i artístiques, com a part que són del ric patrimoni comú, i"
+    },
+    {
+      "codigo": "8.1",
+      "competencia": "8",
+      "descripcion": "Relacionar alguns canvis en els hàbits de vida tradicional i el treball domèstic i contrastar-los amb l’actualitat, identificant les pràctiques compatibles amb la salut, la sostenibilitat, la dignitat i el respecte, i assumir responsabilitats i compromisos en l’àmbit familiar, l’entorn escolar i la comunitat."
+    },
+    {
+      "codigo": "8.2",
+      "competencia": "8",
+      "descripcion": "Identificar els reptes en relació amb la corresponsabilitat en el treball reproductiu i comunitari entre homes i dones, remarcant-ne la importància per al funcionament de les societats."
+    },
+    {
+      "codigo": "8.3",
+      "competencia": "8",
+      "descripcion": "Identificar les limitacions socials i culturals que han impedit que les persones puguin desenvolupar aspiracions al llarg de diferents generacions i reconèixer la riquesa que aporten els vincles intergeneracionals."
+    },
+    {
+      "codigo": "8.4",
+      "competencia": "8",
+      "descripcion": "Prendre consciència de les causes que han relegat les dones a un rol secundari al llarg de la història i emprendre accions per valorar, dignificar i proper. D’altra banda, suposa tenir veu per debatre la participació efectiva i la responsabilitat compartida de totes les persones, la superació d’estereotips i prejudicis i el rebuig davant de qualsevol forma de discriminació, segregació i violència masclista, homofòbica i transfòbica."
+    },
+    {
+      "codigo": "9.1",
+      "competencia": "9",
+      "descripcion": "Analitzar aspectes del funcionament de l’economia en el món, destacant la interdependència entre països, i el seu impacte en la realitat econòmica de l’entorn proper, i les desigualtats que generen, posant èmfasi en els col·lectius més vulnerables."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "2",
+      "bloque": "2. A. Reptes del món actual",
+      "titulo": "A. Reptes del món actual",
+      "items": [
+        "Debat sobre els dilemes del món actual, punt de partida per al pensament crític i el desenvolupament de judicis propis.",
+        "Valoració de les accions, tant individuals com col·lectives, que permeten avançar en la implantació de l’Agenda 2030.",
+        "Representació de l’espai, orientació i escales.",
+        "Utilització de recursos digitals i tecnologies de la informació geogràfica (TIG) en l’elaboració i interpretació de mapes, esquemes, imatges i gràfics de diferent tipologia.",
+        "Reconeixement dels elements i factors que condicionen el clima i el seu impacte sobre les activitats humanes.",
+        "Identificació, prevenció i resiliència de la població davant de les catàstrofes naturals i els efectes del canvi climàtic, tot incidint en els beneficis d’incloure els joves en la gestió dels desastres mediambientals.",
+        "Identificació dels processos, dinàmiques i amenaces dels ecosistemes planetaris.",
+        "Valoració de la riquesa i conservació del patrimoni natural.",
+        "Anàlisi de l’acció humana en l’alteració dels ecosistemes i descripció de casos que se’n deriven, especialment en entorns propers, cercant causes i conseqüències.",
+        "Diferenciació dels recursos renovables i no renovables, anàlisi de la seva distribució desigual i identificació d’algunes conseqüències i tensions que se’n deriven.",
+        "Identificació dels principals riscos d’origen natural com inundacions, incendis o epidèmies, i d’origen tecnològic, com el nuclear, el químic o la contaminació d’aigües.",
+        "Caracterització de les accions encaminades a prevenir aquests riscos.",
+        "Maneig i utilització segura de dispositius, aplicacions informàtiques i plataformes digitals, valorant les seves aportacions a la geografia i la història.",
+        "Cerca, tractament de la informació i elaboració de coneixement.",
+        "Introducció als objectius i estratègies de les ciències socials i ús dels seus procediments, termes i conceptes en la formació de persones amb capacitat crítica.",
+        "Estudi de la composició i estructures demogràfiques a diferents escales.",
+        "Aplicació dels conceptes bàsics de demografia a la comprensió de dinàmiques demogràfiques actuals i els moviments migratoris, analitzant les seves causes i conseqüències.",
+        "Identificació dels factors que expliquen la desigual distribució de la població i anàlisi dels desafiaments, oportunitats i problemes actuals de viure al camp i a les ciutats.",
+        "Representació i maneres de percebre la desigualtat.",
+        "Conscienciació i accions per a l’accés universal als béns bàsics i per a un repartiment just de la riquesa que permeti avançar cap a una societat més equitativa.",
+        "Reflexió sobre la qüestió del mínim vital.",
+        "Valoració i denúncia de situacions discriminatòries de les nenes i de les dones al món.",
+        "Qüestionament dels rols de gènere i la seva manifestació en tots els àmbits de la societat i la cultura, inclòs l’entorn escolar."
+      ]
+    },
+    {
+      "codigo": "3",
+      "bloque": "3. B. Societats i territoris",
+      "titulo": "B. Societats i territoris",
+      "items": [
+        "Recerca i metodologies per a la construcció del coneixement de les ciències socials.",
+        "Identificació i ús de les fonts històriques, arqueològiques i geogràfiques i la seva valoració com a patrimoni col·lectiu.",
+        "Participació en projectes conjuntament amb arxius, biblioteques i museus.",
+        "Construcció i interpretació de línies del temps.",
+        "Aplicació de les variables històriques de canvi, continuïtat i simultaneïtat per a la comprensió de l’evolució de la humanitat com un procés no lineal.",
+        "Anàlisi multidisciplinària de l’origen de l’ésser humà i del sorgiment de les primeres formes d’organització social.",
+        "Estudi de les grans migracions humanes i el naixement de les primeres cultures.",
+        "Interpretacions històriques del sorgiment de les civilitzacions i la influència dels condicionants geogràfics.",
+        "Reconeixement de les grans rutes comercials i les estratègies pel control dels recursos a l’antiguitat.",
+        "Valoració de les desigualtats socials i les disputes pel poder des de l’antiguitat i en diferents contextos històrics.",
+        "Anàlisi de formes d’organització política del món antic, medieval i modern: democràcies, repúbliques, imperis i regnes.",
+        "Interpretació de la seva evolució i comparació entre algunes formes d’organització política, incidint en els aspectes referits a la desigualtat entre els grups socials.",
+        "Identificació del llegat cultural del món clàssic, del judeocristià i de la civilització islàmica i valoració de les seves aportacions a Europa.",
+        "Anàlisi de les petjades d’aquest llegat en el patrimoni material i immaterial.",
+        "Anàlisi de les relacions entre religió i poder en el context del sorgiment de les grans religions politeistes i monoteistes, així com el paper de l’Església en la configuració de cultures i mentalitats.",
+        "Descripció de les persecucions i conflictes per motius religiosos i ideològics, i paral·lelismes amb fets o situacions de l’actualitat.",
+        "Valoració crítica de la distribució desigual dels recursos i del treball des de la prehistòria fins a l’edat moderna.",
+        "Comparació amb situacions i fets de l’actualitat.",
+        "Anàlisi de l’evolució de la ciutat i el món rural al llarg de la història.",
+        "Valoració i conservació dels components ambientals, històrics, artístics i culturals del paisatge.",
+        "Identificació de les causes i conseqüències d’alguns conflictes en diferents èpoques històriques.",
+        "Valoració de la necessitat de trobar solucions dialogades als problemes.",
+        "Contextualització dels grans viatges, descobriments i sistemes d’intercanvi en l’edat moderna.",
+        "Reflexió sobre la geopolítica i les disputes per l’hegemonia, incidint en les seves conseqüències.",
+        "Valoració crítica de la visió eurocèntrica del món.",
+        "Conscienciació sobre la marginació, segregació, control i submissió de les dones, els esclaus i altres col·lectius en la història de la humanitat.",
+        "Posada en valor del protagonisme individual i col·lectiu de les dones al llarg de la història.",
+        "Reconeixement de la resistència a l’opressió com a dret fonamental dels pobles.",
+        "Anàlisi i valoració de la diversitat i riquesa de les expressions artístiques i culturals a partir de fonts diverses i de l’observació directa i indirecta dels estils i obres.",
+        "Conscienciació sobre el respecte i conservació del patrimoni material i immaterial.",
+        "Reconeixement de la lluita contra epidèmies i pandèmies, i comparació amb fets i situacions de l’actualitat.",
+        "Contrast i anàlisi crítica de les supersticions i desinformacions davant les explicacions racionals i empíriques.",
+        "Reflexió sobre la construcció d’identitats a partir de l’herència cultural i els processos històrics viscuts en una comunitat i territori.",
+        "Aplicació dels coneixements històrics a la comprensió i identificació d’alguns dels problemes de l’actualitat."
+      ]
+    },
+    {
+      "codigo": "4",
+      "bloque": "4. C. Compromís cívic",
+      "titulo": "C. Compromís cívic",
+      "items": [
+        "Reconeixement dels drets i deures individuals i col·lectius, identificant i rebutjant les situacions de desigualtat, injustícia i discriminació.",
+        "Comparació dels drets de l’infant actuals amb la situació dels infants i joves en altres èpoques històriques.",
+        "Respecte i acceptació de l’altre, incorporant visions i perspectives contraposades d’un relat o d’una interpretació.",
+        "Defensa de comportaments no discriminatoris i contraris a qualsevol actitud diferenciadora i segregadora.",
+        "Reconeixement i denúncia del masclisme en la història i l’actualitat.",
+        "Posicionament a favor de manifestacions i conductes no sexistes.",
+        "Identificació dels trets fonamentals de les societats democràtiques, valorant les consecucions de la democràcia com a sistema polític.",
+        "Participació en projectes comunitaris de l’entorn, mostrant empatia i accions de suport a col·lectius en situacions de pobresa, vulnerabilitat i exclusió social.",
+        "Interès davant els reptes i problemes d’actualitat a l’àmbit local i global, deixant-ne constància mitjançant produccions diverses.",
+        "Implicació en la defensa de la biodiversitat i la protecció del medi ambient.",
+        "Recerca d’actuacions orientades a aconseguir una mobilitat sostenible.",
+        "Compromís per la defensa i preservació del llegat artístic i cultural, distingint-ne la diversitat, així com de la memòria històrica en la seva pluralitat.",
+        "Conscienciació sobre la seguretat i prevenció dels riscos i perills de l’ús de les tecnologies de la informació i de la comunicació.",
+        "Reflexió sobre les maneres de participar en les xarxes socials.",
+        "Identificació de les emocions pròpies i dels altres, i la seva importància en comportaments individuals i col·lectius.",
+        "Caracterització i reflexió sobre diferents formes de vida i l’ús del temps de lleure en el passat i en el present, i reconeixement d’hàbits saludables.",
+        "Consideració de diferents idees i actituds en el projecte de construcció d’una ciutadania europea i global inclusiva i solidària, des del diàleg i l’empatia."
+      ]
+    },
+    {
+      "codigo": "6",
+      "bloque": "6. A. Reptes del món actual",
+      "titulo": "A. Reptes del món actual",
+      "items": [
+        "Identificació dels reptes de desenvolupament sostenible i de les accions que permeten avançar en l’Agenda 2030.",
+        "Reconeixement dels moviments, causes i lideratges en pro de l’emergència climàtica, la sostenibilitat i l’equitat en diferents moments i llocs del planeta i des de perspectives diverses.",
+        "Identificació de les característiques del sistema-món i de la interdependència entre països.",
+        "Relació entre factors naturals i antròpics a la Terra.",
+        "Adquisició d’estils de vida respectuosos amb els recursos, saludables i socialment compromesos.",
+        "Anàlisi de textos, interpretació i elaboració de mapes, esquemes i síntesis, representació de gràfics i interpretació d’imatges a través de mitjans digitals accessibles.",
+        "Aplicació de tècniques d’informació geogràfica i d’anàlisi espacial en la interpretació d’alguns fenòmens.",
+        "Ús de mitjans, gèneres i formats digitals diversos per crear continguts i comunicar resultats de recerques.",
+        "Cerca, tractament de la informació, ús de dades en entorns digitals, interpretació de les fonts i avaluació de la fiabilitat.",
+        "Anàlisi i valoració dels arguments que sustenten els diferents posicionaments davant de fets i fenòmens.",
+        "Identificació de les notícies falses i enganyoses.",
+        "Ús de mitjans audiovisuals per crear produccions personals i col·lectives i comunicar recerques.",
+        "Reconeixement dels factors de diversitat social, etnicocultural i de gènere i la seva contribució a la cultura i a la societat.",
+        "Identificació de les característiques de les cultures originàries d’indrets sotmesos a la dominació i a l’aculturació.",
+        "Participació en activitats que promoguin actituds de respecte envers persones i col·lectius per mitjà del diàleg i d’una aproximació intercultural.",
+        "Aplicació dels mètodes de recerca de les ciències socials en l’anàlisi problematitzada i multicausal de fenòmens de l’entorn i dels seus vincles amb fenòmens globals.",
+        "Establiment d’anàlisis comparades de l’espai natural, rural i urbà, la seva evolució i els reptes de futur.",
+        "Identificació de les estructures econòmiques al món actual, els canvis dels sectors productius i el funcionament del mercat.",
+        "Reconeixement dels límits del creixement econòmic i les desigualtats generades en l’àmbit global i local.",
+        "Caracterització de les energies renovables i de l’economia circular.",
+        "Proposta d’alternatives des d’una perspectiva ecosocial.",
+        "Identificació dels focus de conflicte en el món actual i les seves causes, així com de les conseqüències del comerç d’armes.",
+        "Valoració del diàleg i de la cooperació com a formes pacífiques de resolució de conflictes.",
+        "Col·laboració en la prevenció i resolució de conflictes des d’un enfocament restauratiu en entorns escolars i comunitaris.",
+        "Identificació de les desigualtats i injustícies en el context local i global.",
+        "Participació en projectes que promoguin el respecte i la solidaritat amb persones i col·lectius desfavorits de l’entorn i la cohesió social.",
+        "Reconeixement dels moviments, causes i lideratges en pro de l’equitat de gènere i d’opció afectivosexual.",
+        "Participació en debats i projectes per a l’eliminació de les desigualtats, discriminacions i violències."
+      ]
+    },
+    {
+      "codigo": "7",
+      "bloque": "7. B. Societats i territoris",
+      "titulo": "B. Societats i territoris",
+      "items": [
+        "Aplicació de metodologies de recerca en l’anàlisi i interpretació de problemes socials rellevants, individualment i en equip.",
+        "Comunicació argumentada dels resultats obtinguts.",
+        "Ús específic del lèxic relatiu als àmbits històric, artístic i geogràfic.",
+        "Ús de fonts històriques i geogràfiques per a la construcció del coneixement sobre el passat recent i fenòmens actuals.",
+        "Contrast i valoració crítica d’informacions diferents, incloses les dels mitjans de comunicació, sobre un mateix fet o fenomen, valorant solucions i alternatives als problemes.",
+        "Elaboració de judicis propis i argumentats davant de problemes d’actualitat contextualitzats històricament, i defensa i exposició crítica a través de presentacions i debats.",
+        "Establiment de relacions entre la cronologia històrica general i la història familiar, comunitària i local.",
+        "Anàlisi de les permanències i canvis a l’època contemporània.",
+        "Interpretació de les transicions, revolucions i resistències a la Catalunya i l’Espanya contemporànies i els seus lligams internacionals.",
+        "Establiment de relacions multicausals en la construcció de les democràcies modernes i els orígens dels totalitarismes en el segle XX: la lluita per la llibertat, la igualtat i els drets humans.",
+        "Interpretació dels processos d’evolució i d’involució i dels reptes pendents de l’actual democràcia.",
+        "Interpretació dels fonaments del sistema capitalista i la seva relació amb el colonialisme i l’imperialisme.",
+        "Anàlisi crítica de les noves formes de subordinació econòmica i cultural.",
+        "Identificació de les principals fites de les lluites socials i laborals contemporànies i els reptes pendents de l’estat del benestar.",
+        "Interpretació de les transformacions del territori per l’acció humana i la distribució desigual dels recursos i del treball.",
+        "Anàlisi dels cicles demogràfics mundials i locals i de les migracions al llarg de la història i en el món actual.",
+        "Reconeixement dels factors implicats en el canvi climàtic, les seves conseqüències i de les mesures per revertir-lo a escala global i local.",
+        "Conceptualització de la sobirania alimentària, valorant el consum responsable i de proximitat.",
+        "Establiment de relacions entre l’equitat i el desenvolupament sostenible.",
+        "Establiment de relacions causals en alguns conflictes i violències del segle XX i XXI i de les seves conseqüències en el present.",
+        "Caracterització dels genocidis i dels crims contra la humanitat.",
+        "Valoració de la cultura de la pau i de la mediació com a formes de gestió dels conflictes.",
+        "Identificació dels fonaments geoestratègics des de la segona meitat del segle XX fins a l’actualitat: la política de blocs, els conflictes de la descolonització i el paper dels organismes internacionals.",
+        "Valoració de la interdependència dins el sistema-món.",
+        "Contextualització de les principals transformacions polítiques, econòmiques, socials i culturals, incidint en la Segona República, la guerra, el franquisme i la transició democràtica.",
+        "Identificació de les lluites i moviments socials i d’emancipació nacional.",
+        "Interpretació de les transformacions del territori i del paisatge a Catalunya i Espanya: causes de la despoblació i de la concentració urbana i conseqüències de la petjada humana.",
+        "Actitud proactiva en la preservació dels paisatges i reconeixement dels programes de protecció.",
+        "Identificació dels reptes en la gestió del territori a Catalunya.",
+        "Identificació dels moviments, causes i lideratges que treballen per a l’equitat i la no- discriminació per raó de gènere i d’opció afectiva i sexual al llarg dels segles XX i",
+        "XXI.",
+        "Reconeixement de les aportacions de les dones en diferents àmbits socials, culturals, artístics, econòmics i polítics.",
+        "Caracterització d’algunes manifestacions artístiques i culturals que conformen la diversitat del món actual.",
+        "Actitud proactiva i respectuosa per la conservació del patrimoni material i immaterial de l’entorn.",
+        "Coneixement dels espais i organismes que vetllen per la conservació i difusió dels elements del patrimoni natural i artisticocultural.",
+        "Descobriment de les grans fites en la transformació científica i tecnològica.",
+        "Establiment de relacions entre la ciència i la tecnologia, la dimensió ètica i social i la sostenibilitat.",
+        "Identificació dels reptes de la societat de la informació i de la seva relació amb els canvis culturals i socials.",
+        "Reconeixement del dret individual i col·lectiu a la salut i al benestar.",
+        "Caracterització dels principals fets del procés de constitució de la Unió Europea i de les seves institucions.",
+        "Identificació dels reptes de la Unió Europea dins el sistema-món.",
+        "Participació en projectes amb estudiants de països europeus.",
+        "Coneixement dels principals ordenaments jurídics d’àmbit autonòmic, estatal, europeu i internacional com a garants de drets i llibertats per a l’exercici de la ciutadania.",
+        "Distinció i complementarietat entre la història i la memòria.",
+        "Preservació de les memòries plurals de persones i col·lectius de l’entorn proper.",
+        "Valoració de la funció de la memòria històrica en la construcció del futur."
+      ]
+    },
+    {
+      "codigo": "8",
+      "bloque": "8. C. Compromís cívic local i global",
+      "titulo": "C. Compromís cívic local i global",
+      "items": [
+        "Identificació de les principals fites en la Declaració Universal dels Drets Humans i dels reptes pendents.",
+        "Debat dels problemes que afecten la dignitat de les persones, superant estereotips i prejudicis.",
+        "Reconeixement del concepte plurinacional de l’estat i de la necessitat de preservació de les llengües i les cultures com a font de riquesa compartida.",
+        "Participació en mesures i accions a favor de la igualtat i de la plena inclusió.",
+        "Actitud oberta i receptiva davant de formes culturals diverses i, en especial, de col·lectius minoritzats.",
+        "Reconeixement de les principals fites en la lluita per la igualtat real de dones i homes i dels marcs legislatius.",
+        "Identificació dels principals motius de discriminació per raó de sexe i d’orientació sexual a Catalunya i Espanya.",
+        "Posicionament de rebuig de la violència masclista, homòfoba i transfòbica.",
+        "Assumpció de compromisos davant dels objectius del desenvolupament sostenible per mitjà d’accions que generin valor afegit.",
+        "Implicació en la defensa i la protecció del medi ambient i dels paisatges a través de la participació en projectes comunitaris i en la difusió de les accions.",
+        "Ús de la mediació i de la gestió pacífica dels conflictes en l’àmbit escolar i comunitari.",
+        "Col·laboració en projectes de l’entorn proper que lluitin per l’equitat i la no discriminació.",
+        "Reconeixement del caràcter inacabat de la lluita pels drets humans i la democràcia.",
+        "Participació en accions de posada en valor i difusió del patrimoni local amb actitud col·laborativa i emprenedora.",
+        "Reflexió crítica sobre les oportunitats i els reptes de la societat de la informació i de les xarxes socials.",
+        "Ús responsable, col·laboratiu i ètic de les plataformes virtuals.",
+        "Actitud oberta a l’aprenentatge permanent al llarg de la vida.",
+        "Assumpció de responsabilitats individuals i col·lectives per contribuir a la cura i al benestar dels membres de la comunitat escolar i de l’entorn.",
+        "Participació en activitats intergeneracionals i de voluntariat.",
+        "Expressió de les emocions a partir d’un concepte assertiu sobre la pròpia imatge i de la sensibilitat i el respecte per la diversitat.",
+        "Superació dels estereotips i els prejudicis i actitud oberta per incorporar les experiències i sabers dels altres.",
+        "Consolidació d’hàbits de salut física i mental, individuals i col·lectius."
+      ]
+    }
+  ],
+  "comunidad": "cataluna",
+  "idioma": "ca"
+}
