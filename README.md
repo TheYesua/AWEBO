@@ -3,10 +3,16 @@
 Generador de **Situaciones de Aprendizaje LOMLOE** asistido por IA.
 
 Permite al profesorado de Secundaria crear, editar y exportar Situaciones de
-Aprendizaje (SA) conformes al Real Decreto 217/2022, con generación automática
-de las seis secciones del currículo (descripción, objetivos, conexión
-curricular, secuencia de sesiones, evaluación y atención a la diversidad)
-mediante un LLM, anclando los criterios y saberes al catálogo oficial.
+Aprendizaje (SA), con generación automática de las seis secciones del currículo
+(descripción, objetivos, conexión curricular, secuencia de sesiones, evaluación
+y atención a la diversidad) mediante un LLM, anclando los criterios y saberes
+al catálogo oficial.
+
+**El catálogo depende de dónde enseñe el docente.** Además del Real Decreto
+217/2022 y su desarrollo para Ceuta y Melilla, están cargados los currículos de
+**Cataluña** (Decret 175/2022) y **Andalucía** (Orden de 30 de mayo de 2023):
+cada docente elige su provincia y trabaja contra la normativa que se le aplica,
+no contra la estatal. Ver [`curriculo/README.md`](curriculo/README.md).
 
 > **Origen**: este proyecto nace del Trabajo de Fin de Grado en Ingeniería
 > Informática (Universidad de Granada) de Jesús José Cantero López. AWEBO es su
@@ -18,17 +24,18 @@ mediante un LLM, anclando los criterios y saberes al catálogo oficial.
 
 ## Arquitectura
 
-Despliegue mediante Docker Compose. Cinco servicios principales más uno
-opcional para desarrollo:
+Despliegue mediante Docker Compose. Seis servicios más dos de desarrollo:
 
 | Servicio   | Puerto host           | Rol                                                       |
 |------------|-----------------------|-----------------------------------------------------------|
 | `nginx`    | `8090`                | Reverse proxy, único punto de entrada público             |
 | `api`      | (interno)             | Flask + Gunicorn. Auth, CRUD, render Jinja                |
 | `worker`   | (interno)             | Celery. Llamadas largas al LLM y exportaciones pesadas    |
+| `beat`     | (interno)             | Celery beat. Purga a las 4:00 las cuentas cuyo plazo de 90 días venció |
 | `postgres` | `5433`                | Persistencia                                              |
 | `redis`    | (interno)             | Broker Celery + caché + sesiones server-side              |
 | `adminer`  | `8091` (perfil `dev`) | Cliente web para inspeccionar PostgreSQL                  |
+| `mailpit`  | `8025` (desarrollo)   | Buzón de pruebas. Retiene el correo para que **nada salga a internet** |
 
 > Los puertos están desplazados respecto al TFG original (8080/8081/5432) para
 > que ambos entornos puedan convivir y ejecutarse simultáneamente. El proyecto
@@ -227,8 +234,11 @@ AWEBO/
 ├── postgres/
 │   └── init/                        # scripts de inicialización SQL
 ├── curriculo/
-│   ├── fuentes/                     # los XML del BOE, para poder re-extraer
-│   └── salida/                      # JSON LOMLOE precompilado (semillas)
+│   ├── fuentes/                     # una carpeta por comunidad (PDF no versionados)
+│   ├── salida/                      # JSON precompilado: estatal y Ceuta
+│   ├── salida_cataluna/             # JSON precompilado: Decret 175/2022
+│   └── salida_andalucia/            # JSON precompilado: BOJA 104/2023
+├── voces/                           # modelos aHoTTS (no versionados: decenas de MB)
 └── api/
     ├── Dockerfile
     ├── requirements.txt
@@ -254,7 +264,9 @@ AWEBO/
         ├── tasks/                   # tareas Celery (generación IA)
         ├── prompts/                 # prompts por sección LOMLOE versionados
         ├── seeds/                   # carga inicial (roles, ODS, currículo)
-        ├── curriculo/               # parser del catálogo LOMLOE
+        ├── curriculo/               # tres extractores + catálogo de provincias
+        ├── voz/                     # síntesis de voz (sistema y aHoTTS local)
+        ├── translations/            # catálogos es/ca/gl/eu
         ├── static/                  # css, js, imagenes, favicon
         └── templates/               # Jinja: páginas + exportación PDF
 ```
@@ -277,44 +289,89 @@ Todo lo siguiente llegó completo desde el TFG y es el punto de partida:
 
 ## Qué añade AWEBO sobre el TFG
 
-Lo entregado hasta ahora como proyecto personal:
+Lo entregado hasta ahora como proyecto personal, agrupado por para qué sirve.
+
+**Redacción asistida**
 
 | Funcionalidad | Qué hace |
 |---|---|
 | **Sugerencia inicial de temática** | El docente describe en una frase lo que busca —o no describe nada— y recibe varias temáticas entre las que elegir. Resuelve la página en blanco: antes había que llegar con el tema ya pensado. |
-| **Tema oscuro** | Claro, oscuro y automático, con selector en la cabecera. Se resuelve en servidor, así que no hay destello blanco al navegar. |
 | **Proveedor y modelo por usuario** | Cada docente elige en su perfil qué modelo redacta sus situaciones. Sin elección, el del sistema. |
-| **Operaciones por bloque** | Resumir, desarrollar y traducir cualquier sección de redacción libre, con deshacer. La conexión curricular queda excluida: es texto anclado al Real Decreto. |
+| **Operaciones por bloque** | Resumir, desarrollar y traducir cualquier sección de redacción libre, con deshacer. La conexión curricular queda excluida: es texto anclado al boletín. |
 | **Doble propuesta** | Pedir una segunda redacción de un bloque, ver las dos y quedarse con una. Cada elección se registra con la procedencia de ambas, para saber con el tiempo qué prompt redacta mejor. |
-| **Anclaje curricular garantizado** | Ya no se pueden crear situaciones de materias y cursos sin currículo —«Matemáticas · 4º ESO» no existe—, que generaban secciones vacías en silencio. |
+| **Secciones incompletas, detectadas** | Si el modelo devuelve un JSON válido al que le falta un bloque entero, se reintenta una vez y, si vuelve a faltar, el documento lo dice. Antes desaparecía en silencio: no hay error en ninguna capa. |
 
-Y cinco defectos heredados del TFG corregidos por el camino: el logging
+**Currículo**
+
+| Funcionalidad | Qué hace |
+|---|---|
+| **Anclaje curricular garantizado** | Ya no se pueden crear situaciones de materias y cursos sin currículo —«Matemáticas · 4.º ESO» no existe—, que generaban secciones vacías en silencio. |
+| **De 6 materias a 21** | Extractor sobre el BOE, con los cursos derivados de la parte dispositiva en vez de escritos a mano. |
+| **Currículo por comunidad autónoma** | Ceuta y Melilla, Cataluña y Andalucía, cada una con su boletín. El docente elige provincia y ve solo su normativa. Tres extractores, porque cada boletín publica de una forma distinta (ver [`curriculo/README.md`](curriculo/README.md)). |
+
+**Acceso y datos personales**
+
+| Funcionalidad | Qué hace |
+|---|---|
+| **Panel de administración** | Gestión de cuentas y contenido, con borrado en dos modos y purgado. |
+| **Correo electrónico de verdad** | Cerró el agujero heredado: `reset-password` cambiaba la contraseña de cualquier cuenta sabiendo solo su correo. Ahora exige un token firmado que caduca y sirve una vez. Buzón de pruebas local, para que nada salga a internet en desarrollo. |
+| **Baja de la propia cuenta** | Dos modos, con confirmación por correo. |
+| **Correo de respaldo y reclamación verificada** | Recuperar el contenido de una cuenta dada de baja deja de depender de que un administrador juzgue «a ojo»: lo autoriza el respaldo. |
+
+**Interfaz**
+
+| Funcionalidad | Qué hace |
+|---|---|
+| **Tema oscuro** | Claro, oscuro y automático, con selector en la cabecera. Se resuelve en servidor, así que no hay destello blanco al navegar. |
+| **Cuatro idiomas** | Castellano, catalán, gallego y euskera: 452 cadenas. El idioma de la interfaz y el de la situación son independientes a propósito. |
+| **Texto a voz** | Por sección, con la voz del sistema. |
+| **Audio con IA** | Modelos aHoTTS **en local**: el contenido del docente no sale a un tercero, y cubre el hueco que la voz del sistema deja en las lenguas cooficiales. |
+
+Y los defectos heredados del TFG corregidos por el camino: el logging
 estructurado que nunca llegó a funcionar, `/health` informando del proveedor
 equivocado, dos incumplimientos WCAG 2.1 en el tema claro y los reintentos
 sobre errores `4xx` de la API de OpenAI.
+
+**998 tests** cubren todo lo anterior, en la batería que corre en cada push.
 
 ---
 
 ## Hoja de ruta AWEBO
 
-En resumen:
+El detalle vive fuera de este repositorio; aquí va el estado.
 
-| #  | Tarea                                              | Esfuerzo |
-|----|----------------------------------------------------|----------|
-| ~~1~~ | ~~Sugerencia inicial de temática~~ ✅           | S        |
-| ~~2~~ | ~~Tema oscuro~~ ✅                              | S–M      |
-| ~~3~~ | ~~Proveedor y modelo elegibles por usuario~~ ✅ | M        |
-| ~~4~~ | ~~Operaciones por bloque~~ ✅                   | M        |
-| ~~5~~ | ~~Doble propuesta con elección del usuario~~ ✅ | M        |
-| 🚧 6 | Internacionalización (i18n) — infraestructura lista | L        |
-| 7  | Panel de administración                            | L        |
-| 8  | Accesibilidad: texto a voz · audio/vídeo con IA    | S–M · XL |
-| 9  | Ampliación: materias · etapas · comunidades        | S · M · XL |
+| #  | Tarea                                              | Esfuerzo | Estado |
+|----|----------------------------------------------------|----------|--------|
+| ~~1~~ | ~~Sugerencia inicial de temática~~              | S        | ✅ 02/08 |
+| ~~2~~ | ~~Tema oscuro~~                                 | S–M      | ✅ 02/08 |
+| ~~3~~ | ~~Proveedor y modelo elegibles por usuario~~    | M        | ✅ 03/08 |
+| ~~4~~ | ~~Operaciones por bloque~~                      | M        | ✅ 03/08 |
+| ~~5~~ | ~~Doble propuesta con elección del usuario~~    | M        | ✅ 03/08 |
+| ~~6~~ | ~~Internacionalización (i18n)~~                 | L        | ✅ 08/08 · 452 cadenas en es/ca/gl/eu |
+| ~~7~~ | ~~Panel de administración~~                     | L        | ✅ 05/08 |
+| ~~8a~~ | ~~Accesibilidad: texto a voz~~                 | S–M      | ✅ 06/08 |
+| ~~8b~~ | ~~Accesibilidad: audio con IA~~                | M        | ✅ 10/08 · aHoTTS local |
+| ~~9a~~ | ~~Ampliación: más materias~~                   | S        | ✅ 07/08 · de 6 a 21 |
+| 9b | Ampliación: más etapas (Bachillerato, FP)          | M        | Pendiente |
+| 9c | Ampliación: más comunidades autónomas              | XL       | 🚧 Ceuta, Cataluña y Andalucía hechas · quedan Galicia y País Vasco |
+| ~~10~~ | ~~Saldar deuda técnica~~                       | S        | ✅ 08/08 |
+| ~~11~~ | ~~Correo electrónico~~                         | M        | ✅ 09/08 |
+| ~~12~~ | ~~Baja de la propia cuenta~~                   | S–M      | ✅ 10/08 |
+| ~~13~~ | ~~Correo de respaldo y reclamación verificada~~ | M       | ✅ 11/08 |
 
-Heredados del TFG como «mejora futura», sin prioridad asignada todavía:
-backups automatizados de PostgreSQL, especificación OpenAPI y CI en GitHub
-Actions.
+De las tres «mejoras futuras» heredadas del TFG, dos están hechas —copias de
+seguridad de PostgreSQL e integración continua en GitHub Actions— y la
+especificación OpenAPI se descartó con motivo: la API no se consume desde
+fuera, así que documentarla como si fuera pública habría sido mantener un
+contrato que nadie firma.
 
+**Lo que sigue abierto**, y se dice porque forma parte del estado real:
+
+- Las etapas de Bachillerato y FP (9b) y las dos comunidades que faltan (9c).
+- Las traducciones a catalán, gallego y euskera no las ha revisado nadie
+  nativo.
+- Inglés, francés y árabe no tienen voz, y en francés no se cargan los
+  objetivos. Sin diagnosticar.
 
 ---
 
@@ -441,11 +498,26 @@ en su modo rápido, si lo tienes.
 El proyecto apunta a **WCAG 2.1 nivel AA**. Detalles, limitaciones conocidas y
 vía de contacto en la página `/accesibilidad` de la propia aplicación.
 
-En curso como línea de mejora: tema oscuro (tarea 2) y lectura por voz
-(tarea 8a).
+Entregado: tema oscuro con selector en la cabecera, lectura por voz sección a
+sección, y síntesis con modelos locales para las lenguas cooficiales, que es
+donde la voz del sistema no llega.
+
+Limitación conocida: inglés, francés y árabe no tienen voz.
 
 ---
 
 ## Licencia
 
-Pendiente de definir antes de la publicación del repositorio.
+**GNU Affero General Public License v3.0** (AGPL-3.0). El texto completo está
+en [`LICENSE`](LICENSE).
+
+Copyright © 2026 Jesús José Cantero López.
+
+Se elige AGPL y no una licencia permisiva por lo que AWEBO es: una aplicación
+web. Con MIT, cualquiera podría desplegar una versión modificada como servicio
+sin publicar sus cambios, porque ofrecer software por red no cuenta como
+distribuirlo. La AGPL cierra ese hueco: **quien lo despliegue modificado tiene
+que ofrecer el código a quien lo use**.
+
+Los currículos de `curriculo/` son texto legal publicado en boletín oficial, de
+reproducción libre, y no quedan afectados por esta licencia.
