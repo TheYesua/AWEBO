@@ -39,6 +39,7 @@ consulta garantizada a vacío en cada carga.
 """
 from __future__ import annotations
 
+import copy
 import re
 
 import structlog
@@ -333,7 +334,22 @@ def sincronizar(situacion: SituacionAprendizaje, *, commit: bool = True) -> dict
                 resumen["huerfanos"][clave] = huerfanos
 
         if canonicos:
-            contenido = dict(situacion.contenido or {})
+            # COPIA PROFUNDA, no `dict(...)`
+            # -----------------------------
+            # `dict()` copia solo el primer nivel: los diccionarios de dentro
+            # —`conexion_curricular`, y las listas de códigos— siguen siendo
+            # LOS MISMOS objetos que cuelgan de `situacion.contenido`.
+            #
+            # Al reescribirlos se mutaba el original a la vez que la copia, así
+            # que cuando SQLAlchemy comparaba el valor nuevo con el que tenía
+            # en su caché, los dos ya eran iguales y **no marcaba la columna
+            # como sucia**: el UPDATE no se emitía y el JSONB se quedaba con el
+            # código del modelo.
+            #
+            # El síntoma era desconcertante: el log decía
+            # `codigos_normalizados=['CE4']` —porque eso se calcula del mapa,
+            # no de lo guardado— y la base de datos seguía con `CE4`.
+            contenido = copy.deepcopy(situacion.contenido or {})
             if any(_reescribir_codigos(contenido, clave, canonicos)
                    for clave, _m, _a in _MAPA):
                 # Reasignación entera y no mutación in situ: `contenido` es

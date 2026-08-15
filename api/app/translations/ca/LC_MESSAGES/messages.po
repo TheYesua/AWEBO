@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: AWEBO VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-08-14 16:21+0200\n"
+"POT-Creation-Date: 2026-08-15 13:46+0200\n"
 "PO-Revision-Date: 2026-08-04 15:31+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ca\n"
@@ -1472,7 +1472,7 @@ msgstr "Situacions recents"
 #: app/templates/admin/panel.html:155 app/templates/index.html:28
 #: app/templates/perfil.html:9 app/templates/situaciones/detalle.html:9
 #: app/templates/situaciones/listar.html:9
-#: app/templates/situaciones/listar.html:77
+#: app/templates/situaciones/listar.html:110
 msgid "Cargando…"
 msgstr "Carregant…"
 
@@ -1607,37 +1607,37 @@ msgstr "Estadístiques de la plataforma"
 #: app/templates/admin/panel.html:120 app/templates/admin/panel.html:308
 #: app/templates/index.html:164 app/templates/situaciones/detalle.html:85
 #: app/templates/situaciones/detalle.html:308
-#: app/templates/situaciones/listar.html:34
-#: app/templates/situaciones/listar.html:89
+#: app/templates/situaciones/listar.html:62
+#: app/templates/situaciones/listar.html:123
 msgid "Borrador"
 msgstr "Esborrany"
 
 #: app/templates/admin/panel.html:121 app/templates/admin/panel.html:309
 #: app/templates/index.html:165 app/templates/situaciones/detalle.html:309
 #: app/templates/situaciones/detalle.html:327
-#: app/templates/situaciones/listar.html:35
-#: app/templates/situaciones/listar.html:90
+#: app/templates/situaciones/listar.html:63
+#: app/templates/situaciones/listar.html:124
 msgid "Generando…"
 msgstr "Generant…"
 
 #: app/templates/admin/panel.html:122 app/templates/admin/panel.html:310
 #: app/templates/index.html:166 app/templates/situaciones/detalle.html:86
 #: app/templates/situaciones/detalle.html:310
-#: app/templates/situaciones/listar.html:36
-#: app/templates/situaciones/listar.html:91
+#: app/templates/situaciones/listar.html:64
+#: app/templates/situaciones/listar.html:125
 msgid "Generada"
 msgstr "Generada"
 
 #: app/templates/errores/error.html:10 app/templates/index.html:167
-#: app/templates/situaciones/listar.html:92
+#: app/templates/situaciones/listar.html:126
 msgid "Error"
 msgstr "Error"
 
 #: app/templates/admin/panel.html:124 app/templates/admin/panel.html:312
 #: app/templates/index.html:168 app/templates/situaciones/detalle.html:87
 #: app/templates/situaciones/detalle.html:311
-#: app/templates/situaciones/listar.html:38
-#: app/templates/situaciones/listar.html:93
+#: app/templates/situaciones/listar.html:66
+#: app/templates/situaciones/listar.html:127
 msgid "Finalizada"
 msgstr "Finalitzada"
 
@@ -1792,6 +1792,7 @@ msgstr "Especialitat"
 
 #: app/templates/perfil.html:47 app/templates/register.html:65
 #: app/templates/situaciones/detalle.html:47
+#: app/templates/situaciones/listar.html:37
 #: app/templates/situaciones/nueva.html:66
 msgid "Provincia"
 msgstr "Província"
@@ -2014,6 +2015,7 @@ msgid "Enviarme el correo de confirmación"
 msgstr "Envia'm el correu de confirmació"
 
 #: app/templates/perfil.html:300 app/templates/situaciones/detalle.html:292
+#: app/templates/situaciones/listar.html:111
 #: app/templates/situaciones/nueva.html:185
 msgid "(sin currículo todavía)"
 msgstr "(encara sense currículum)"
@@ -2319,13 +2321,13 @@ msgstr "Situacions"
 
 #: app/templates/admin/panel.html:93 app/templates/admin/panel.html:117
 #: app/templates/admin/panel.html:148 app/templates/situaciones/detalle.html:83
-#: app/templates/situaciones/listar.html:31
 #: app/templates/situaciones/listar.html:59
+#: app/templates/situaciones/listar.html:90
 msgid "Estado"
 msgstr "Estat"
 
 #: app/templates/admin/panel.html:94 app/templates/admin/panel.html:151
-#: app/templates/situaciones/listar.html:61
+#: app/templates/situaciones/listar.html:92
 msgid "Acciones"
 msgstr "Accions"
 
@@ -2345,14 +2347,14 @@ msgstr ""
 "Només es mostren les dades necessàries per identificar-les. No es pot "
 "obrir el seu contingut."
 
-#: app/templates/admin/panel.html:119 app/templates/situaciones/listar.html:33
-#: app/templates/situaciones/listar.html:83
+#: app/templates/admin/panel.html:119 app/templates/situaciones/listar.html:61
+#: app/templates/situaciones/listar.html:117
 msgid "Todos"
 msgstr "Tots"
 
 #: app/templates/admin/panel.html:123 app/templates/admin/panel.html:311
 #: app/templates/situaciones/detalle.html:320
-#: app/templates/situaciones/listar.html:37
+#: app/templates/situaciones/listar.html:65
 msgid "Error de generación"
 msgstr "Error de generació"
 
@@ -2360,15 +2362,16 @@ msgstr "Error de generació"
 msgid "Cuenta"
 msgstr "Compte"
 
-#: app/templates/admin/panel.html:130 app/templates/situaciones/listar.html:84
+#: app/templates/admin/panel.html:130 app/templates/situaciones/listar.html:45
+#: app/templates/situaciones/listar.html:118
 msgid "Todas"
 msgstr "Totes"
 
-#: app/templates/admin/panel.html:135 app/templates/situaciones/listar.html:42
+#: app/templates/admin/panel.html:135 app/templates/situaciones/listar.html:73
 msgid "Aplicar filtros"
 msgstr "Aplicar filtres"
 
-#: app/templates/admin/panel.html:136 app/templates/situaciones/listar.html:43
+#: app/templates/admin/panel.html:136 app/templates/situaciones/listar.html:74
 msgid "Limpiar"
 msgstr "Netejar"
 
@@ -2377,26 +2380,26 @@ msgid "Situaciones de aprendizaje de todas las cuentas"
 msgstr "Situacions d'aprenentatge de tots els comptes"
 
 #: app/templates/admin/panel.html:145 app/templates/situaciones/detalle.html:34
-#: app/templates/situaciones/listar.html:56
+#: app/templates/situaciones/listar.html:87
 #: app/templates/situaciones/nueva.html:51
 msgid "Título"
 msgstr "Títol"
 
 #: app/templates/admin/panel.html:146 app/templates/situaciones/detalle.html:73
-#: app/templates/situaciones/listar.html:27
-#: app/templates/situaciones/listar.html:58
+#: app/templates/situaciones/listar.html:53
+#: app/templates/situaciones/listar.html:89
 #: app/templates/situaciones/nueva.html:99
 msgid "Materia"
 msgstr "Matèria"
 
 #: app/templates/admin/panel.html:147 app/templates/situaciones/detalle.html:64
-#: app/templates/situaciones/listar.html:23
-#: app/templates/situaciones/listar.html:57
+#: app/templates/situaciones/listar.html:49
+#: app/templates/situaciones/listar.html:88
 #: app/templates/situaciones/nueva.html:83
 msgid "Curso"
 msgstr "Curs"
 
-#: app/templates/admin/panel.html:150 app/templates/situaciones/listar.html:60
+#: app/templates/admin/panel.html:150 app/templates/situaciones/listar.html:91
 msgid "Modificada"
 msgstr "Modificada"
 
@@ -2530,20 +2533,20 @@ msgstr "Editant {correo}"
 msgid "Cambios guardados."
 msgstr "Canvis desats."
 
-#: app/templates/admin/panel.html:209 app/templates/situaciones/listar.html:85
+#: app/templates/admin/panel.html:209 app/templates/situaciones/listar.html:119
 msgid "Anterior"
 msgstr "Anterior"
 
-#: app/templates/admin/panel.html:210 app/templates/situaciones/listar.html:86
+#: app/templates/admin/panel.html:210 app/templates/situaciones/listar.html:120
 msgid "Siguiente"
 msgstr "Següent"
 
-#: app/templates/admin/panel.html:211 app/templates/situaciones/listar.html:87
+#: app/templates/admin/panel.html:211 app/templates/situaciones/listar.html:121
 #, python-brace-format
 msgid "Página {actual} de {ultima} · {total} en total"
 msgstr "Pàgina {actual} de {ultima} · {total} en total"
 
-#: app/templates/admin/panel.html:212 app/templates/situaciones/listar.html:78
+#: app/templates/admin/panel.html:212 app/templates/situaciones/listar.html:112
 msgid "Sin resultados"
 msgstr "Sense resultats"
 
@@ -2772,6 +2775,7 @@ msgid "Se queda en el historial de versiones"
 msgstr "Es queda a l'historial de versions"
 
 #: app/templates/situaciones/detalle.html:139
+#: app/templates/situaciones/listar.html:70
 #: app/templates/situaciones/nueva.html:110
 msgid ""
 "Elige antes la provincia: el curso y la materia dependen del currículo de"
@@ -3173,7 +3177,7 @@ msgstr "Cercar per títol"
 msgid "Ej: Robótica"
 msgstr "Ex: Robòtica"
 
-#: app/templates/situaciones/listar.html:48
+#: app/templates/situaciones/listar.html:79
 msgid ""
 "No hay situaciones que coincidan con los filtros aplicados. <a "
 "href=\"/situaciones/nueva\" class=\"link\">Crea la primera</a>."
@@ -3181,28 +3185,28 @@ msgstr ""
 "No hi ha situacions que coincideixin amb els filtres aplicats. <a "
 "href=\"/situaciones/nueva\" class=\"link\">Crea la primera</a>."
 
-#: app/templates/situaciones/listar.html:53
+#: app/templates/situaciones/listar.html:84
 msgid "Listado de situaciones de aprendizaje del docente"
 msgstr "Llistat de situacions d'aprenentatge del docent"
 
-#: app/templates/situaciones/listar.html:67
+#: app/templates/situaciones/listar.html:98
 msgid "Páginas de resultados"
 msgstr "Pàgines de resultats"
 
-#: app/templates/situaciones/listar.html:79
+#: app/templates/situaciones/listar.html:113
 #, python-brace-format
 msgid "{n} situaciones encontradas"
 msgstr "{n} situacions trobades"
 
-#: app/templates/situaciones/listar.html:80
+#: app/templates/situaciones/listar.html:114
 msgid "1 situación encontrada"
 msgstr "1 situació trobada"
 
-#: app/templates/situaciones/listar.html:81
+#: app/templates/situaciones/listar.html:115
 msgid "Abrir"
 msgstr "Obrir"
 
-#: app/templates/situaciones/listar.html:82
+#: app/templates/situaciones/listar.html:116
 #, python-brace-format
 msgid "Abrir situación {titulo}"
 msgstr "Obrir situació {titulo}"

@@ -178,7 +178,7 @@ def _upsert_saber_item(
 
 def _procesar_fichero(
     ruta: Path, comunidad: str, idioma: str
-) -> dict[str, int]:
+) -> dict[str, object]:
     """Carga el JSON ``ruta`` y vuelca su contenido en BD. Devuelve contadores.
 
     **El fichero manda sobre los argumentos.** Los JSON de hoy no traen
@@ -194,7 +194,12 @@ def _procesar_fichero(
     comunidad = datos.get("comunidad") or comunidad
     idioma = datos.get("idioma") or idioma
 
-    stats = {"ce_nuevas": 0, "ce_actualizadas": 0, "cr_nuevos": 0, "sb_nuevos": 0}
+    stats: dict[str, object] = {
+        "ce_nuevas": 0, "ce_actualizadas": 0, "cr_nuevos": 0, "sb_nuevos": 0,
+        # No es un contador: es la comunidad que **acabó mandando**, para que
+        # quien llama pueda decir en el log qué se cargó de verdad.
+        "comunidad": comunidad,
+    }
 
     # 1) Competencias específicas
     competencias_por_codigo: dict[str, Competencia] = {}
@@ -242,11 +247,22 @@ def _procesar_fichero(
     for bloque in datos["saberes_basicos"]:
         cod_bloque = bloque["codigo"]
         titulo = bloque["titulo"]
+        # Si el boletín numera sus saberes, se respeta su código. Solo cuando
+        # no lo hace se cae al contador `bloque.N`.
+        #
+        # POR QUÉ IMPORTA: ese contador es nuestro, no de ninguna norma. Un
+        # docente que lea «A.7» en la programación no lo encuentra en el
+        # decreto, y si mañana el extractor lee un saber más, todos los
+        # posteriores cambian de número y las SdA ya generadas pasan a citar
+        # otro saber distinto sin que nada avise. El BOJA sí los numera
+        # —`BYG.1.A.8`—, y ese código es estable y citable.
+        codigos = bloque.get("codigos_items") or []
         for idx, item in enumerate(bloque["items"], start=1):
+            codigo = codigos[idx - 1] if idx <= len(codigos) else f"{cod_bloque}.{idx}"
             if _upsert_saber_item(
                 comunidad=comunidad,
                 idioma=idioma,
-                codigo=f"{cod_bloque}.{idx}",
+                codigo=codigo,
                 bloque=titulo,
                 materia=materia,
                 cursos=cursos,
@@ -304,15 +320,29 @@ def seed_curriculo(
         }
 
     total = {"ce_nuevas": 0, "ce_actualizadas": 0, "cr_nuevos": 0, "sb_nuevos": 0}
+    # «Por defecto», y dicho así a propósito. Este mensaje se emite **antes de
+    # abrir ningún fichero**, así que solo puede enseñar la opción de la orden;
+    # pero manda lo que traiga dentro cada JSON. Cargando Andalucía imprimía
+    # «Cargando currículo de ceuta», que es exactamente lo contrario de lo que
+    # estaba pasando, y quien lea el log tiene que poder fiarse de él.
     logger.info(
-        "Cargando currículo de %s en %s desde %s", codigo, lengua, base
+        "Cargando currículo desde %s (por defecto %s/%s; manda lo que diga "
+        "cada fichero)", base, codigo, lengua,
     )
+    comunidades_vistas: set[str] = set()
     for ruta in ficheros:
         logger.info("Procesando %s", ruta.name)
         stats = _procesar_fichero(ruta, codigo, lengua)
         for k, v in stats.items():
-            total[k] += v
+            if k in total:
+                total[k] += v
+        comunidades_vistas.add(str(stats.get("comunidad") or codigo))
 
     db.session.commit()
     total["ficheros"] = len(ficheros)
+    # Lo que se cargó de verdad, que es el dato con el que se comprueba.
+    logger.info(
+        "Cargado currículo de %s desde %d ficheros",
+        ", ".join(sorted(comunidades_vistas)), len(ficheros),
+    )
     return total

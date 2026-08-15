@@ -876,3 +876,58 @@ class TestLaCuartaPuerta:
         db.session.refresh(sda)
         assert sda.titulo == "Título nuevo"
         assert sda.comunidad_autonoma == "Ceuta"
+
+
+class TestLaQuintaPuerta:
+    """El listado, que ofrecía el catálogo de la comunidad del perfil.
+
+    Las cuatro puertas por las que entra la provincia —registro, perfil, SdA
+    nueva y SdA ya creada— dejaban fuera una quinta: **los filtros del
+    listado**. Ahí `Cobertura.cargar()` se llamaba sin provincia, o sea con la
+    del perfil, así que un docente de Ceuta que cambiaba la interfaz a catalán
+    seguía viendo «Matemáticas» y no encontraba sus propias SdA catalanas.
+
+    Y curso y materia se rellenaban por separado, sin acotarse entre ellos: el
+    filtro volvía a ofrecer «Matemáticas · 4º ESO», que no existe. El mismo
+    fallo del 03/08, en el único sitio que se había quedado sin arreglar.
+    """
+
+    def _entrar(self, client, db, correo="quinta@ies.es"):
+        from app.models import Rol, Usuario
+
+        rol = db.session.query(Rol).filter_by(nombre="docente").first()
+        u = Usuario(correo=correo, nombre="Q", id_rol=rol.id_rol,
+                    provincia="ceuta", comunidad_autonoma="Ceuta")
+        u.set_password("ContrasenaDoc1")
+        db.session.add(u)
+        db.session.commit()
+        client.post("/auth/login", json={"correo": correo, "contrasena": "ContrasenaDoc1"})
+
+    def test_el_listado_ofrece_elegir_provincia(self, client, db):
+        self._entrar(client, db)
+
+        html = client.get("/situaciones").get_data(as_text=True)
+
+        assert 'id="f-provincia"' in html
+
+    def test_el_catalogo_del_filtro_se_acota_entre_curso_y_materia(self, client, db):
+        """`Cobertura.enlazar` es quien restringe los dos desplegables entre sí.
+        Sin él, cada uno se rellena por su cuenta y vuelven las combinaciones
+        imposibles."""
+        self._entrar(client, db, "quinta2@ies.es")
+
+        html = client.get("/situaciones").get_data(as_text=True)
+
+        assert "Cobertura.enlazar(" in html
+        assert "Cobertura.enlazarProvincia(" in html
+
+    def test_la_provincia_del_filtro_no_viaja_al_servidor(self, client, db):
+        """No filtra situaciones: solo decide qué materias se ofrecen. El
+        endpoint acepta `curso` y `materia`, no `provincia`, y mandarla sería
+        inventar un filtro que el servidor ignora."""
+        self._entrar(client, db, "quinta3@ies.es")
+
+        html = client.get("/situaciones").get_data(as_text=True)
+        i = html.index('id="f-provincia"')
+
+        assert 'name="provincia"' not in html[i - 200:i + 200]

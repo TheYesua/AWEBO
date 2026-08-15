@@ -445,6 +445,13 @@ class BloqueSaberes:
     titulo: str
     items: list[str] = field(default_factory=list)
 
+    #: Código oficial de cada item, cuando el boletín se lo da (`BYG.1.A.8`).
+    #: Va en paralelo a `items`, y vacío significa «este boletín no numera los
+    #: saberes». El BOE y el DOGC no lo hacen; el BOJA sí. Sin este campo, el
+    #: cargador les pone un contador propio —`bloque.1`, `bloque.2`— que no
+    #: existe en ninguna norma y por tanto no se puede citar ni comprobar.
+    codigos_items: list[str] = field(default_factory=list)
+
 
 @dataclass
 class MateriaCiclo:

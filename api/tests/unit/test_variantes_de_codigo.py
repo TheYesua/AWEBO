@@ -284,3 +284,51 @@ class TestLasDosRutasDeExportacionAvisanIgual:
         aviso = pintar(datos).split("⚠")[1].split("\n")[0]
 
         assert "saberes" not in aviso and "competencias" not in aviso
+
+
+class TestLaCopiaTieneQueSerProfunda:
+    """El fallo que el test unitario de `_reescribir_codigos` no podía ver.
+
+    `sincronizar` hacía `dict(situacion.contenido)`, que copia **solo el primer
+    nivel**: `conexion_curricular` y sus listas seguían siendo los mismos
+    objetos. Al reescribirlos se mutaba el original a la vez que la copia, así
+    que SQLAlchemy comparaba y los veía iguales, no marcaba la columna como
+    sucia, y el UPDATE no se emitía.
+
+    El síntoma era desconcertante: el log decía `codigos_normalizados=['CE4']`
+    —eso se calcula del mapa, no de lo guardado— y la base de datos seguía con
+    `CE4`. Lo cazó el test de integración; el unitario probaba la función
+    aislada y ahí no había nada que persistir.
+    """
+
+    def test_reescribir_no_toca_el_original_si_se_copia_bien(self):
+        import copy
+
+        from app.services.enlaces_curriculares import _reescribir_codigos
+
+        original = {"conexion_curricular": {
+            "competencias": [{"codigo": "CE4", "justificacion": "x"}],
+        }}
+        copia = copy.deepcopy(original)
+
+        _reescribir_codigos(copia, "competencias", {"CE4": "4"})
+
+        assert copia["conexion_curricular"]["competencias"][0]["codigo"] == "4"
+        assert original["conexion_curricular"]["competencias"][0]["codigo"] == "CE4", (
+            "una copia superficial habría mutado también el original, y "
+            "SQLAlchemy no vería ningún cambio que guardar"
+        )
+
+    def test_dict_a_secas_NO_aisla_y_por_eso_no_vale(self):
+        """Se deja escrito el contraejemplo: es lo que había, y sin verlo
+        cuesta creer que `dict()` no baste."""
+        from app.services.enlaces_curriculares import _reescribir_codigos
+
+        original = {"conexion_curricular": {
+            "competencias": [{"codigo": "CE4", "justificacion": "x"}],
+        }}
+        superficial = dict(original)
+
+        _reescribir_codigos(superficial, "competencias", {"CE4": "4"})
+
+        assert original["conexion_curricular"]["competencias"][0]["codigo"] == "4"

@@ -559,6 +559,28 @@ img, svg { max-width: 100%; height: auto; }
   border-bottom: 1px solid var(--border);
 }
 .api th { background: var(--color-surface-2); }
+
+/* UNA TABLA CON `width: 100%` NO DESBORDA: SE APLASTA
+   ---------------------------------------------------
+   El listado ya estaba dentro de `.tabla-responsiva`, que tiene
+   `overflow-x: auto`. Y aun así, al estrechar la ventana, «Modificada» y el
+   botón «Abrir» se cortaban **y la barra de scroll no servía de nada**.
+
+   El motivo es que `width: 100%` le dice a la tabla que quepa siempre en el
+   contenedor. Cabe, comprimiendo las columnas hasta que el texto ya no entra,
+   así que no hay desbordamiento **que scrollear**: el scroll horizontal
+   aparece pero no tiene recorrido, y el contenido queda recortado igual.
+
+   Con `min-width` la tabla se niega a bajar de un ancho legible y entonces sí
+   desborda, que es cuando el contenedor con `overflow-x` hace su trabajo. */
+.tabla-responsiva > .api { min-width: 46rem; }
+
+/* Y las dos columnas que se cortaban, sin partir:
+   una fecha partida en dos líneas es ilegible, y el botón de acción tiene que
+   caber entero o no se puede pulsar. */
+.api td.fecha, .api th.fecha,
+.api td.acciones, .api th.acciones { white-space: nowrap; }
+.api td.acciones { text-align: right; }
 code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; background: var(--color-code-bg); padding: 0 .25rem; border-radius: 3px; }
 
 /* Formularios */

@@ -53,10 +53,50 @@ def _cargar_sa(id_situacion: int) -> SituacionAprendizaje:
     return sa
 
 
+#: Claves que una sección tiene que traer con contenido para considerarse
+#: completa. No es el esquema entero: son las partes cuya ausencia produce un
+#: documento que **parece correcto** porque el bloque simplemente no se pinta.
+#:
+#: Se añadió el 15/08/2026, después de que la misma SdA saliera en catalán sin
+#: criterios de evaluación en tres generaciones seguidas. El JSON era válido y
+#: la clave sencillamente no venía.
+_CLAVES_EXIGIDAS: dict[str, tuple[str, ...]] = {
+    "conexion_curricular": ("competencias", "criterios", "saberes"),
+    "objetivos": ("objetivos",),
+    "secuencia_sesiones": ("sesiones",),
+}
+
+
+def _partes_vacias(nombre: str, payload: dict[str, Any]) -> list[str]:
+    """Claves exigidas que faltan o vienen vacías.
+
+    Un JSON válido pero incompleto es peor que uno inválido: el inválido se
+    detecta y se guarda como texto crudo para que el docente lo vea; el
+    incompleto se guarda tal cual y el documento sale sin esa parte, sin nada
+    que lo indique.
+    """
+    if payload.get("_error_parseo"):
+        return []          # ya está señalado por otra vía
+    return [c for c in _CLAVES_EXIGIDAS.get(nombre, ()) if not payload.get(c)]
+
+
 def _ejecutar_seccion(
-    nombre: str, ctx, provider
+    nombre: str, ctx, provider, *, reintentos: int = 1
 ) -> tuple[dict[str, Any], LLMResponse]:
-    """Invoca al LLM para una sección y devuelve ``(payload, response)``."""
+    """Invoca al LLM para una sección y devuelve ``(payload, response)``.
+
+    POR QUÉ REINTENTA
+    -----------------
+    `autoretry_for=(LLMProviderError,)` cubre el fallo del proveedor: la red,
+    la cuota, un 500. No cubre el caso de que el proveedor conteste **bien** y
+    el contenido venga cojo, que es lo que pasaba: JSON válido, sin la clave
+    `criterios`, y una SdA que se guarda como si estuviera completa.
+
+    Se reintenta **una vez** y no más. Si a la segunda sigue faltando, lo más
+    probable es que no sea variabilidad sino algo sistemático —el prompt, el
+    idioma, el modelo—, y entonces insistir solo gasta cuota. Queda en el log
+    para poder distinguir los dos casos.
+    """
     version, build = SECCIONES[nombre]
     peticion: LLMRequest = build(ctx)
     respuesta: LLMResponse = provider.generar(peticion)
@@ -72,6 +112,29 @@ def _ejecutar_seccion(
             mensaje="LLM devolvió texto no-JSON; se guarda como texto crudo",
         )
         payload = {"_error_parseo": True, "texto_crudo": respuesta.texto}
+
+    # SIEMPRE, complete o no. Sin esta línea, el contador de secciones
+    # incompletas no puede distinguir «no ha pasado nunca» de «no hay registro
+    # de que se haya generado nada»: las dos cosas dan cero y la primera parece
+    # una buena noticia.
+    logger.info("seccion_generada", seccion=nombre, idioma=getattr(ctx, "idioma", None))
+
+    faltan = _partes_vacias(nombre, payload)
+    if faltan and reintentos > 0:
+        logger.warning(
+            "seccion_incompleta_se_reintenta",
+            seccion=nombre, faltan=faltan, idioma=getattr(ctx, "idioma", None),
+        )
+        return _ejecutar_seccion(nombre, ctx, provider, reintentos=reintentos - 1)
+    if faltan:
+        # Se guarda igual: media sección es más útil que ninguna, y la
+        # exportación ya avisa de lo que falta. Pero queda contado, que es lo
+        # que permitirá saber si esto es variabilidad o un fallo del prompt.
+        logger.error(
+            "seccion_incompleta_tras_reintentar",
+            seccion=nombre, faltan=faltan, idioma=getattr(ctx, "idioma", None),
+        )
+        payload["_incompleta"] = faltan
 
     # Metadatos de trazabilidad.
     payload["_meta"] = {

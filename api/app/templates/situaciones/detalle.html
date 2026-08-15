@@ -470,6 +470,20 @@ async function cargar() {
     if (el) el.value = sa[k] ?? '';
   }
   mostrarEstado(sa.estado);
+  /* SI YA ESTABA GENERANDO AL ABRIR LA PÁGINA, HAY QUE SEGUIRLO AQUÍ
+     ----------------------------------------------------------------
+     `pollear` solo se llamaba desde `lanzarGeneracion`, o sea **solo si la
+     generación se lanzaba desde esta misma página**. Al abrir la SdA desde el
+     listado mientras genera, o al recargar, el estado se pintaba «Generando»
+     y ahí se quedaba: sin barra, sin avanzar, y sin más salida que refrescar
+     a mano hasta acertar.
+
+     Y no se puede reanudar `pollear`: necesita el `task_id`, que solo existe
+     en la respuesta del POST que lanzó la tarea y no se guarda en ninguna
+     parte. Por eso aquí se sondea **el estado de la SdA**, que sí es
+     recuperable. Se pierde el detalle de «sección 3 de 6» —eso vive en la
+     tarea— y se gana que la página deje de mentir. */
+  if (sa.estado === 'generando' && !sondeandoEstado) seguirGeneracionEnCurso();
   // Para que el render de "atención a la diversidad" sepa qué bloques
   // ocultar cuando la SA es una adaptación curricular.
   //
@@ -911,6 +925,41 @@ async function lanzarGeneracion(url) {
     return;
   }
   await pollear(body.task_id);
+}
+
+/* Un solo sondeo a la vez. `cargar()` se llama desde varios sitios —al
+   guardar, al restaurar una versión— y sin esta guarda cada llamada abriría
+   otro bucle, multiplicando las peticiones mientras dura la generación. */
+let sondeandoEstado = false;
+
+async function seguirGeneracionEnCurso() {
+  sondeandoEstado = true;
+  const progreso = document.getElementById('gen-progreso');
+  progreso.hidden = false;
+  /* Sin `task_id` no hay cuántas van de cuántas, así que la barra va en
+     indeterminado: es más honesto que inventarse un porcentaje. */
+  document.getElementById('gen-bar').removeAttribute('value');
+  document.getElementById('gen-seccion').textContent = '—';
+
+  try {
+    // El mismo techo que `pollear`: 120 × 700 ms ≈ 84 s.
+    for (let intentos = 0; intentos < 120; intentos++) {
+      await new Promise((r) => setTimeout(r, 700));
+      const r = await fetch(`/api/situaciones/${ID}`);
+      if (!r.ok) return;
+      const sa = await r.json();
+      if (sa.estado !== 'generando') {
+        progreso.hidden = true;
+        document.getElementById('gen-bar').value = 0;
+        await cargar();
+        return;
+      }
+    }
+    progreso.hidden = true;
+    alert(T.esperaAgotada);
+  } finally {
+    sondeandoEstado = false;
+  }
 }
 
 async function pollear(taskId) {
