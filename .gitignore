@@ -122,6 +122,11 @@ docker-compose.override.local.yml
 # de datos del TFG lleva rutas de Windows y nombres de contenedor concretos.
 # No aportan nada a quien clone el repositorio y sí exponen la estructura de
 # carpetas personal, así que se quedan fuera del repositorio público.
+#
+# **Viven en `docs/scripts/`**, dentro del repositorio privado. Estuvieron
+# sueltos aquí hasta el 15/08 y eso significaba que **no estaban en ningún
+# repositorio**: cambiar de ordenador los habría hecho desaparecer, y con ellos
+# el registro de trabajo entre sesiones.
 scripts/
 
 # -----------------------------------------------------------------------------
@@ -145,15 +150,31 @@ resultados_estudio/
 scratch/
 
 
-# Modelos de voz: decenas de megas, no son obra nuestra (tarea 8b)
+# Modelos de voz (tarea 8b). No son obra nuestra y **no se pueden versionar en
+# GitHub**: `es/vits.onnx` y `eu/vits.onnx` pesan 108 MB cada uno y el límite
+# duro por fichero son 100 MB — el push se rechaza, no avisa. Con Git LFS
+# cabrían, pero la cuota gratuita es de 1 GB/mes de ancho de banda y cada
+# clonado se llevaría 356 MB.
+#
+# No bloquean nada: con `VOZ_PROVEEDOR=nulo` la aplicación arranca sin ellos.
+# `voces/LEEME.txt` dice de dónde se descargan.
 /voces/*
 !/voces/LEEME.txt
 
-# Curriculos en PDF pesados
-# Los PDF de las fuentes, por tamaño (los boletines del DOGC son 17 MB).
+# Los PDF de las fuentes, por tamaño: 55 MB, y el del DOGC son 14 MB él solo.
 # Con ** porque desde el 14/08 hay una carpeta por comunidad: el patrón sin
 # ** dejó de cubrirlos en cuanto se movieron, y nada lo habría avisado.
+#
+# **Están en el repositorio privado `awebo_fuentes`**, clonado en
+# `curriculo/fuentes/` — mismo patrón que `docs/`. Se hace así, y no moviéndolos
+# a otra carpeta, porque las rutas quedan intactas: ni los extractores ni los
+# tests ni `docker-compose` se enteran.
 /curriculo/fuentes/**/*.pdf
+
+# El repositorio anidado de las fuentes. Los `LEEME.md` de cada comunidad SÍ
+# siguen en el repositorio público: dicen de dónde descargar los boletines, que
+# es justo lo que necesita quien clone sin acceso al privado.
+/curriculo/fuentes/.git/
 
 # La salida del extractor SÍ se versiona. La regla decía «se regenera de las
 # fuentes, no se versiona», y era falsa en la práctica: **las fuentes no están

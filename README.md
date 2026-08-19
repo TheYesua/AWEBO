@@ -88,9 +88,26 @@ Despliegue mediante Docker Compose. Seis servicios más dos de desarrollo:
 
 ## Puesta en marcha (primera vez)
 
+> Los ejemplos van en PowerShell. En Linux y macOS el único cambio es
+> `Copy-Item` → `cp`; el resto es idéntico, porque todo pasa por
+> `docker compose`.
+
+> **Dos cosas no están en este repositorio, y ninguna impide arrancar.**
+>
+> Los **PDF de los boletines** (55 MB) no se versionan, pero el currículo ya
+> extraído sí: `curriculo/salida*/` trae los JSON listos para sembrar. Solo
+> hacen falta si vas a modificar un extractor, y entonces cada
+> `curriculo/fuentes/<comunidad>/LEEME.md` dice de dónde bajarlos. Sin ellos,
+> los tests de los extractores se saltan en lugar de fallar.
+>
+> Los **modelos de voz** de la síntesis local (356 MB) tampoco: hay ficheros de
+> 108 MB y el límite de GitHub son 100 MB por fichero. Con el valor por defecto
+> `VOZ_PROVEEDOR=nulo` la aplicación funciona igual; para activarlos, ver
+> `voces/LEEME.txt`.
+
 1. **Configura variables de entorno**:
    ```powershell
-   Copy-Item .env.example .env
+   Copy-Item .env.example .env     # Linux/macOS: cp .env.example .env
    ```
    Edita `.env` y rellena al menos:
    - `SECRET_KEY` (genera una con
@@ -107,13 +124,23 @@ Despliegue mediante Docker Compose. Seis servicios más dos de desarrollo:
    docker compose --profile dev up -d
    ```
 
-3. **Aplica migraciones** y **carga semillas** del currículo LOMLOE:
+3. **Aplica migraciones** y **carga semillas**:
    ```powershell
-   docker compose exec api flask --app app db upgrade
-   docker compose exec api flask --app app seed-roles
-   docker compose exec api flask --app app seed-ods
-   docker compose exec api flask --app app seed-curriculo
+   docker compose exec api flask db upgrade
+   docker compose exec api flask seed all
    ```
+
+   `seed all` deja roles, ODS y el currículo **estatal y de Ceuta**. Los de las
+   comunidades con boletín propio van en directorios aparte y se cargan
+   explícitamente:
+
+   ```powershell
+   docker compose exec api flask seed curriculo --directorio /curriculo/salida_cataluna
+   docker compose exec api flask seed curriculo --directorio /curriculo/salida_andalucia
+   ```
+
+   No hace falta indicar comunidad ni idioma: cada JSON los trae dentro y el
+   fichero manda sobre la opción.
 
 4. **Verifica el estado**:
    ```powershell
