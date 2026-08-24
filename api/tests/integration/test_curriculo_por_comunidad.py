@@ -921,13 +921,26 @@ class TestLaQuintaPuerta:
         assert "Cobertura.enlazar(" in html
         assert "Cobertura.enlazarProvincia(" in html
 
-    def test_la_provincia_del_filtro_no_viaja_al_servidor(self, client, db):
-        """No filtra situaciones: solo decide qué materias se ofrecen. El
-        endpoint acepta `curso` y `materia`, no `provincia`, y mandarla sería
-        inventar un filtro que el servidor ignora."""
+    def test_la_provincia_del_filtro_viaja_al_servidor(self, client, db):
+        """INVERTIDO EL 16/08, y conviene contar por qué.
+
+        Este test decía lo contrario: que la provincia **no** debía llevar
+        `name`, porque «no filtra situaciones, solo decide qué materias se
+        ofrecen; mandarla sería inventar un filtro que el servidor ignora».
+
+        Estaba fijando como correcta una decisión que en la práctica era un
+        fallo: elegir «Barcelona» y seguir viendo las SdA de Sevilla es un
+        filtro que no filtra. El razonamiento describía el mecanismo —el
+        endpoint no aceptaba el parámetro— en vez de preguntarse si debía
+        aceptarlo.
+
+        Es un buen recordatorio de que un test verde no dice que algo esté
+        bien: dice que hace lo que alguien decidió, y esa decisión puede estar
+        equivocada. El fallo sobrevivió un día entero **con su test en verde**.
+        """
         self._entrar(client, db, "quinta3@ies.es")
 
         html = client.get("/situaciones").get_data(as_text=True)
         i = html.index('id="f-provincia"')
 
-        assert 'name="provincia"' not in html[i - 200:i + 200]
+        assert 'name="provincia"' in html[i - 200:i + 200]

@@ -104,8 +104,13 @@ def _upsert_criterio(
     descripcion: str,
     comunidad: str,
     idioma: str,
-) -> bool:
-    """Upsert por (comunidad, codigo, materia, cursos). True si se creó."""
+) -> tuple[CriterioEvaluacion, bool]:
+    """Upsert por (comunidad, codigo, materia, cursos). True si se creó.
+
+    Devuelve también la fila —como `_upsert_competencia`— porque el modo de
+    recarga limpia necesita saber **qué filas ha visto** para poder distinguir
+    las que sobran. Con un booleano solo se sabe cuántas, no cuáles.
+    """
     candidatos = db.session.scalars(
         select(CriterioEvaluacion).where(
             CriterioEvaluacion.comunidad == comunidad,
@@ -118,19 +123,18 @@ def _upsert_criterio(
         if sorted(c.cursos_aplicables or []) == cursos_norm:
             c.descripcion = descripcion
             c.id_competencia = id_competencia
-            return False
-    db.session.add(
-        CriterioEvaluacion(
-            codigo=codigo,
-            id_competencia=id_competencia,
-            materia=materia,
-            comunidad=comunidad,
-            idioma=idioma,
-            cursos_aplicables=list(cursos),
-            descripcion=descripcion,
-        )
+            return c, False
+    nuevo = CriterioEvaluacion(
+        codigo=codigo,
+        id_competencia=id_competencia,
+        materia=materia,
+        comunidad=comunidad,
+        idioma=idioma,
+        cursos_aplicables=list(cursos),
+        descripcion=descripcion,
     )
-    return True
+    db.session.add(nuevo)
+    return nuevo, True
 
 
 def _upsert_saber_item(
@@ -142,8 +146,12 @@ def _upsert_saber_item(
     descripcion: str,
     comunidad: str,
     idioma: str,
-) -> bool:
-    """Upsert por (comunidad, codigo, materia, cursos, descripcion)."""
+) -> tuple[SaberBasico, bool]:
+    """Upsert por (comunidad, codigo, materia, cursos, descripcion).
+
+    Devuelve la fila además del booleano, por lo mismo que `_upsert_criterio`:
+    la recarga limpia necesita saber cuáles ha visto, no cuántas.
+    """
     candidatos = db.session.scalars(
         select(SaberBasico).where(
             SaberBasico.comunidad == comunidad,
@@ -156,19 +164,18 @@ def _upsert_saber_item(
     for s in candidatos:
         if sorted(s.cursos_aplicables or []) == cursos_norm:
             s.bloque = bloque
-            return False
-    db.session.add(
-        SaberBasico(
-            codigo=codigo,
-            bloque=bloque,
-            materia=materia,
-            comunidad=comunidad,
-            idioma=idioma,
-            cursos_aplicables=list(cursos),
-            descripcion=descripcion,
-        )
+            return s, False
+    nuevo = SaberBasico(
+        codigo=codigo,
+        bloque=bloque,
+        materia=materia,
+        comunidad=comunidad,
+        idioma=idioma,
+        cursos_aplicables=list(cursos),
+        descripcion=descripcion,
     )
-    return True
+    db.session.add(nuevo)
+    return nuevo, True
 
 
 # ---------------------------------------------------------------------------
@@ -199,7 +206,18 @@ def _procesar_fichero(
         # No es un contador: es la comunidad que **acabó mandando**, para que
         # quien llama pueda decir en el log qué se cargó de verdad.
         "comunidad": comunidad,
+        # Las filas que este fichero ha tocado. Es lo que permite después
+        # distinguir lo que sobra: todo lo de esta comunidad que no esté aquí
+        # es de una carga anterior y ya no existe en la norma.
+        #
+        # Se guardan los **objetos** y no sus identificadores, y no da igual:
+        # una fila recién insertada no tiene id hasta que se hace `flush`, y
+        # hacer uno por fila serían cinco mil viajes a la base de datos en una
+        # carga completa. Se convierten a id de una vez, después del único
+        # flush, en `seed_curriculo`.
+        "vistas": {"competencia": set(), "criterio": set(), "saber": set()},
     }
+    vistas = stats["vistas"]
 
     # 1) Competencias específicas
     competencias_por_codigo: dict[str, Competencia] = {}
@@ -214,6 +232,7 @@ def _procesar_fichero(
             idioma=idioma,
         )
         competencias_por_codigo[ce["codigo"]] = obj
+        vistas["competencia"].add(obj)
         if creado:
             stats["ce_nuevas"] += 1
         else:
@@ -232,7 +251,7 @@ def _procesar_fichero(
                 ruta.name,
             )
             continue
-        if _upsert_criterio(
+        fila, creado = _upsert_criterio(
             comunidad=comunidad,
             idioma=idioma,
             codigo=cr["codigo"],
@@ -240,7 +259,9 @@ def _procesar_fichero(
             materia=materia,
             cursos=cursos,
             descripcion=cr["descripcion"],
-        ):
+        )
+        vistas["criterio"].add(fila)
+        if creado:
             stats["cr_nuevos"] += 1
 
     # 3) Saberes básicos: cada item del bloque es una fila independiente.
@@ -259,7 +280,7 @@ def _procesar_fichero(
         codigos = bloque.get("codigos_items") or []
         for idx, item in enumerate(bloque["items"], start=1):
             codigo = codigos[idx - 1] if idx <= len(codigos) else f"{cod_bloque}.{idx}"
-            if _upsert_saber_item(
+            fila, creado = _upsert_saber_item(
                 comunidad=comunidad,
                 idioma=idioma,
                 codigo=codigo,
@@ -267,7 +288,9 @@ def _procesar_fichero(
                 materia=materia,
                 cursos=cursos,
                 descripcion=item,
-            ):
+            )
+            vistas["saber"].add(fila)
+            if creado:
                 stats["sb_nuevos"] += 1
 
     return stats
@@ -278,16 +301,149 @@ def _procesar_fichero(
 # ---------------------------------------------------------------------------
 
 
+def _tablas_de_curriculo():
+    """Las tres tablas de currículo, **en orden de hijo a padre**.
+
+    El orden no es cosmético. `CriterioEvaluacion.id_competencia` es una clave
+    ajena con ``ondelete="RESTRICT"``, así que borrar una competencia antes que
+    sus criterios lanza un IntegrityError y **aborta la carga entera**, no solo
+    el borrado. Recorriendo saberes → criterios → competencias, cuando le toca
+    a la competencia sus criterios sobrantes ya no están.
+
+    En una estructura y no repetido tres veces porque el borrado tiene que
+    tratarlas igual: olvidar una dejaría sobrantes de un tipo y no de otro, que
+    es más difícil de detectar que no limpiar nada.
+    """
+    from ..models.situacion import (
+        situacion_competencia, situacion_criterio, situacion_saber,
+    )
+
+    return (
+        ("saber", SaberBasico, SaberBasico.id_saber,
+         situacion_saber, "id_saber"),
+        ("criterio", CriterioEvaluacion, CriterioEvaluacion.id_criterio,
+         situacion_criterio, "id_criterio"),
+        ("competencia", Competencia, Competencia.id_competencia,
+         situacion_competencia, "id_competencia"),
+    )
+
+
+def _borrar_sobrantes(
+    comunidades_vistas: set[str], vistas: dict[str, set[int]]
+) -> dict[str, int]:
+    """Borra lo que quedó de una carga anterior y ya no está en los ficheros.
+
+    POR QUÉ NO ES EL COMPORTAMIENTO POR DEFECTO
+    --------------------------------------------
+    Porque borra. El seed normal solo añade y actualiza, así que equivocarse de
+    directorio no cuesta nada; con esto activado, apuntar a una carpeta a medias
+    se llevaría por delante el resto del currículo de esa comunidad.
+
+    LO QUE NO SE BORRA, Y ES DELIBERADO
+    ------------------------------------
+    Las filas que alguna SdA esté citando. Las tablas de enlace las declaran con
+    ``ondelete="RESTRICT"``, así que la base de datos lo impediría de todos
+    modos —lanzando un IntegrityError que abortaría la carga entera—, pero la
+    razón de fondo es mejor que la técnica: **borrar el saber que una situación
+    cita rompe esa situación**. El documento pasaría a decir «(no encontrado en
+    el currículo)» donde antes había texto, y el docente no habría hecho nada.
+
+    Así que se informan y se dejan. Son currículo viejo, pero currículo que
+    alguien usó. Si de verdad hay que quitarlas, primero hay que decidir qué
+    pasa con las SdA que dependen de ellas, y esa decisión no es de un seed.
+    """
+    from sqlalchemy import delete, select as sa_select
+
+    resumen: dict[str, int] = {}
+    for tipo, modelo, pk, enlace, col_enlace in _tablas_de_curriculo():
+        # Solo de las comunidades que esta carga ha tocado. Sin este filtro,
+        # cargar Cataluña borraría el currículo de Andalucía entero.
+        sobrantes = set(db.session.scalars(
+            sa_select(pk).where(
+                modelo.comunidad.in_(comunidades_vistas),
+                pk.notin_(vistas[tipo] or {-1}),
+            )
+        ).all())
+        if not sobrantes:
+            resumen[f"{tipo}_borradas"] = 0
+            continue
+
+        enlazadas = set(db.session.scalars(
+            sa_select(enlace.c[col_enlace]).where(
+                enlace.c[col_enlace].in_(sobrantes)
+            )
+        ).all())
+
+        # Una competencia tiene además criterios colgando, también con
+        # RESTRICT. Los sobrantes ya se habrán borrado —por eso este bucle va
+        # de hijo a padre—, pero puede quedar alguno **vigente** apuntando a
+        # una competencia que el boletín ya no lista. Es una incoherencia del
+        # extractor, no del borrado, y hay que verla en vez de estrellarse
+        # contra la clave ajena.
+        if modelo is Competencia:
+            con_criterios = set(db.session.scalars(
+                sa_select(CriterioEvaluacion.id_competencia).where(
+                    CriterioEvaluacion.id_competencia.in_(sobrantes)
+                )
+            ).all())
+            if con_criterios - enlazadas:
+                logger.warning(
+                    "%d competencias sobrantes conservan criterios vigentes: "
+                    "no se borran. Apunta a que el extractor cambió el código "
+                    "de la competencia pero no el de sus criterios.",
+                    len(con_criterios - enlazadas),
+                )
+            enlazadas |= con_criterios
+
+        libres = sobrantes - enlazadas
+
+        if libres:
+            # `synchronize_session=False`: es un borrado masivo por clave y no
+            # hace falta que la sesión reconcilie objeto a objeto. Con la
+            # estrategia por defecto, SQLAlchemy intenta casar cada fila con lo
+            # que tiene en memoria y aquí eso es trabajo inútil sobre miles.
+            db.session.execute(
+                delete(modelo).where(pk.in_(libres)),
+                execution_options={"synchronize_session": False},
+            )
+        resumen[f"{tipo}_borradas"] = len(libres)
+        resumen[f"{tipo}_en_uso"] = len(enlazadas)
+
+        logger.info(
+            "%s: %d sobrantes, %d borradas, %d conservadas por estar citadas "
+            "en alguna SdA", tipo, len(sobrantes), len(libres), len(enlazadas),
+        )
+        if enlazadas:
+            logger.warning(
+                "%d filas de %s ya no están en el boletín pero las cita alguna "
+                "situación de aprendizaje: se conservan. Borrarlas dejaría esas "
+                "SdA citando algo que no existe.", len(enlazadas), tipo,
+            )
+
+    # Contrapartida de `synchronize_session=False`: la sesión sigue teniendo en
+    # memoria objetos de filas que ya no existen. Si alguno estuviera sucio, el
+    # commit intentaría un UPDATE contra una fila borrada y saltaría
+    # `StaleDataError` al final de la carga, lejos de aquí. Expirarlos obliga a
+    # releer y cierra el hueco.
+    db.session.expire_all()
+    return resumen
+
+
 def seed_curriculo(
     directorio: Path | None = None,
     *,
     comunidad: str | None = None,
     idioma: str | None = None,
+    borrar_sobrantes: bool = False,
 ) -> dict[str, int]:
     """Carga todos los ficheros JSON del directorio indicado.
 
     Es idempotente: ejecutarla de nuevo solo actualizará textos cambiados
     sin generar duplicados.
+
+    Con ``borrar_sobrantes`` se hace además una **recarga limpia**: lo que
+    quede de esa comunidad y no esté en los ficheros se borra. Ver
+    `_borrar_sobrantes` para por qué no es la opción por defecto.
 
     ``comunidad`` e ``idioma`` son el valor **de respaldo** para los ficheros
     que no lo traigan dentro. Por defecto, Ceuta en castellano: es lo que son
@@ -330,6 +486,7 @@ def seed_curriculo(
         "cada fichero)", base, codigo, lengua,
     )
     comunidades_vistas: set[str] = set()
+    vistas: dict[str, set[int]] = {"competencia": set(), "criterio": set(), "saber": set()}
     for ruta in ficheros:
         logger.info("Procesando %s", ruta.name)
         stats = _procesar_fichero(ruta, codigo, lengua)
@@ -337,6 +494,24 @@ def seed_curriculo(
             if k in total:
                 total[k] += v
         comunidades_vistas.add(str(stats.get("comunidad") or codigo))
+        for tipo, ids in (stats.get("vistas") or {}).items():
+            vistas[tipo] |= ids
+
+    if borrar_sobrantes:
+        # Un solo flush para toda la carga: asigna de golpe los identificadores
+        # de lo insertado, que es lo que hace falta para saber qué NO se ha
+        # visto. Sin él, las filas nuevas no tendrían id y se tomarían por
+        # sobrantes — o sea, se borraría justo lo que se acaba de escribir.
+        db.session.flush()
+        ids = {
+            tipo: {getattr(o, campo) for o in objetos}
+            for tipo, campo, objetos in (
+                ("competencia", "id_competencia", vistas["competencia"]),
+                ("criterio", "id_criterio", vistas["criterio"]),
+                ("saber", "id_saber", vistas["saber"]),
+            )
+        }
+        total.update(_borrar_sobrantes(comunidades_vistas, ids))
 
     db.session.commit()
     total["ficheros"] = len(ficheros)

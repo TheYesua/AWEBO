@@ -48,8 +48,21 @@ def cmd_seed_ods() -> None:
     default=None,
     help="Lengua en que publica el boletín de origen. Por defecto, es.",
 )
+@click.option(
+    "--borrar-sobrantes",
+    is_flag=True,
+    default=False,
+    help=(
+        "Recarga limpia: borra lo que quede de esa comunidad y ya no esté en "
+        "los ficheros. NO borra lo que cite alguna SdA. Sin esta opción el "
+        "seed solo añade y actualiza, que es lo seguro."
+    ),
+)
 def cmd_seed_curriculo(
-    directorio: str | None, comunidad: str | None, idioma: str | None
+    directorio: str | None,
+    comunidad: str | None,
+    idioma: str | None,
+    borrar_sobrantes: bool,
 ) -> None:
     """Carga competencias, criterios y saberes desde los JSON del extractor.
 
@@ -63,7 +76,10 @@ def cmd_seed_curriculo(
 
     ruta = Path(directorio) if directorio else None
     try:
-        result = seed_curriculo(ruta, comunidad=comunidad, idioma=idioma)
+        result = seed_curriculo(
+            ruta, comunidad=comunidad, idioma=idioma,
+            borrar_sobrantes=borrar_sobrantes,
+        )
     except ValueError as exc:
         click.echo(str(exc), err=True)
         raise SystemExit(1)
@@ -72,6 +88,18 @@ def cmd_seed_curriculo(
         f"ce_nuevas={result['ce_nuevas']} ce_actualizadas={result['ce_actualizadas']} "
         f"cr_nuevos={result['cr_nuevos']} sb_nuevos={result['sb_nuevos']}"
     )
+    if borrar_sobrantes:
+        borradas = sum(v for k, v in result.items() if k.endswith("_borradas"))
+        en_uso = sum(v for k, v in result.items() if k.endswith("_en_uso"))
+        click.echo(f"[seed:curriculo] sobrantes borradas={borradas}")
+        if en_uso:
+            # Se dice aparte y siempre, no solo en el log: es lo que explica
+            # que el recuento no cuadre con lo que trae el boletín.
+            click.echo(
+                f"[seed:curriculo] {en_uso} filas obsoletas se CONSERVAN porque "
+                f"alguna SdA las cita. Borrarlas la dejaría citando algo "
+                f"inexistente."
+            )
 
 
 @seed_cli.command("all")
