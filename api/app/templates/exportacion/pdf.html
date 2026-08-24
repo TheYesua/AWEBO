@@ -309,7 +309,14 @@
   de exportación —`_docx_conexion_curricular` y este macro— y se tocó uno.
   Cualquier cosa que cambie aquí hay que cambiarla también allí.
 -#}
-{%- macro render_conexion_curricular(d) -%}
+{#
+  `conexion` se pasa como argumento y no se toma del contexto global. Un macro
+  de Jinja ve las variables de la plantilla en la que se define, así que
+  «funcionaría» — pero deja de hacerlo en cuanto alguien mueva el macro a un
+  fichero aparte y lo importe, y entonces la tabla saldría vacía sin ningún
+  error. Explícito es más largo y no se rompe solo.
+-#}
+{%- macro render_conexion_curricular(d, conexion) -%}
   {#
     `select` sin argumento se queda con los valores verdaderos, así que los
     `None` desaparecen. Se hace así y no con `{% do %}` porque esa etiqueta
@@ -327,17 +334,27 @@
       {{ _('Esta conexión curricular está incompleta: falta {partes}. Regenera la sección para completarla.').format(partes=faltan|join(', ')) }}
     </p>
   {% endif %}
+  {#
+    Las filas vienen de `filas_de_conexion(sa)`, no del JSONB directamente: el
+    JSONB solo guarda código y justificación, y una tabla de códigos sueltos no
+    le dice nada al docente. En Cataluña además era engañosa, porque el decreto
+    no numera sus bloques de saberes y `20.1` es un identificador nuestro que
+    no aparece en ningún boletín.
+
+    Se calcula en el servicio y no aquí para que el DOCX pinte lo mismo.
+  #}
   {% if d.competencias %}
     <h3>{{ _('Competencias específicas') }}</h3>
-    {{ tabla_curr(d.competencias, [('codigo', 'Código'), ('justificacion', 'Justificación')]) }}
+    {{ tabla_curr(conexion.competencias, [('codigo', _('Código')), ('texto', _('Competencia')), ('justificacion', _('Justificación'))]) }}
   {% endif %}
   {% if d.criterios %}
     <h3>{{ _('Criterios de evaluación') }}</h3>
-    {{ tabla_curr(d.criterios, [('codigo', 'Código'), ('competencia', 'Comp.'), ('justificacion', 'Justificación')]) }}
+    {{ tabla_curr(conexion.criterios, [('codigo', _('Código')), ('competencia', _('Comp.')), ('texto', _('Criterio')), ('justificacion', _('Justificación'))]) }}
   {% endif %}
   {% if d.saberes %}
     <h3>{{ _('Saberes básicos') }}</h3>
-    {{ tabla_curr(d.saberes, [('codigo', 'Código'), ('justificacion', 'Justificación')]) }}
+    {# Sin la columna de código: ver el comentario en `filas_de_conexion`. #}
+    {{ tabla_curr(conexion.saberes, [('bloque', _('Bloque')), ('texto', _('Saber básico')), ('justificacion', _('Justificación'))]) }}
   {% endif %}
 {%- endmacro -%}
 
@@ -450,6 +467,8 @@
     <h2>{{ etiqueta }}</h2>
     {% if clave == 'atencion_diversidad' %}
       {{ render_atencion_diversidad(datos, sa.tipo_adaptacion) }}
+    {% elif clave == 'conexion_curricular' %}
+      {{ render_conexion_curricular(datos, conexion) }}
     {% elif RENDERS[clave] %}
       {{ RENDERS[clave](datos) }}
     {% else %}

@@ -264,9 +264,29 @@ def _es_vineta(texto: str) -> bool:
     Se mira carácter a carácter en vez de con una lista cerrada porque cada PDF
     trae la suya, y varias vienen del área de uso privado de Unicode (U+E000 a
     U+F8FF), donde el carácter no significa nada fuera de su fuente.
+
+    OJO A LO QUE **NO** HACE: esto descarta la línea que es *solo* la marca.
+    Cuando la marca comparte renglón con el texto —«● Context»— la línea no se
+    descarta y la marca se queda pegada. Para eso está `_sin_marca`.
     """
     return all(c in "-–—−·•*" or "\ue000" <= c <= "\uf8ff" or c.isspace()
                for c in texto)
+
+
+#: Viñeta al principio de una línea que **también** trae texto. Así acabaron
+#: **146 de los 384** bloques catalanes: «Comunicació · ● Context». No es un
+#: fallo de lectura sino basura tipográfica, pero llega hasta el documento que
+#: lee el docente y hasta el listado que se le pasa al modelo.
+_RX_MARCA_INICIAL = re.compile("^[\\s\\-–—−·•*●○▪◦-]+")
+
+
+def _sin_marca(texto: str) -> str:
+    """Quita la viñeta inicial y normaliza los espacios de dentro.
+
+    Los espacios múltiples vienen del mismo sitio: «●   Context» deja tres al
+    retirar la marca.
+    """
+    return re.sub(r"\s{2,}", " ", _RX_MARCA_INICIAL.sub("", texto)).strip()
 
 
 def _extraer_saberes(lineas: list[Linea]) -> list[BloqueSaberes]:
@@ -315,6 +335,26 @@ def _extraer_saberes(lineas: list[Linea]) -> list[BloqueSaberes]:
     actual: BloqueSaberes | None = None
 
     def abrir(nombre: str) -> BloqueSaberes:
+        # EL CÓDIGO ES NUESTRO, NO DEL DECRETO. Conviene tenerlo claro porque
+        # durante días se trató como si fuera oficial.
+        #
+        # El Decret 175/2022 **no numera** sus bloques de saberes: los nombra.
+        # Se comprobó en los 24 PDF de la XTEC y ni uno lleva «Bloc N». Así que
+        # este número es un índice de orden dentro de la materia, y `20.1` no
+        # aparece en ningún boletín: no se puede citar en una programación ni
+        # buscar en la norma.
+        #
+        # Se conserva porque hace falta **un** identificador para emparejar lo
+        # que cita el modelo con la fila del catálogo, que es lo que detecta
+        # los códigos inventados. Pero desde el 16/08 **no se enseña en el
+        # documento exportado**: allí van el bloque y el texto del saber, que
+        # es como el decreto lo identifica. Ver `filas_de_conexion`.
+        #
+        # Lo que sigue sin resolver: si el extractor mejora y encuentra un
+        # bloque más en una materia, los códigos posteriores **de esa materia**
+        # se desplazan. No es silencioso —el saber deja de casar y el documento
+        # lo dice—, pero conviene recargar esa comunidad entera cuando pase.
+        #
         # Numérico y no `chr(ord("A") + n)`: hay materias con más de 26
         # subbloques y eso se salía del alfabeto, dando códigos como "[".
         b = BloqueSaberes(codigo=str(len(bloques) + 1), titulo=nombre)
@@ -326,11 +366,11 @@ def _extraer_saberes(lineas: list[Linea]) -> list[BloqueSaberes]:
         es_item = l.x >= x_item - 4
 
         if es_bloque:
-            titulo_bloque = l.texto.rstrip(".")
+            titulo_bloque = _sin_marca(l.texto).rstrip(".")
             # Sin subbloque, el bloque recoge sus items directamente.
             actual = None if hay_subbloque else abrir(titulo_bloque)
         elif hay_subbloque and not es_item:
-            sub = l.texto.rstrip(".")
+            sub = _sin_marca(l.texto).rstrip(".")
             actual = abrir(f"{titulo_bloque} · {sub}" if titulo_bloque else sub)
         elif es_item and actual is not None:
             if actual.items and not re.match(r"^[A-ZÀ-Ú¡¿0-9]", l.texto):

@@ -62,6 +62,93 @@ def secciones_para_export() -> list[tuple[str, str]]:
     ]
 
 
+#: Lo que se pinta cuando un código citado no casa con ninguna fila del
+#: catálogo. Un código huérfano lo inventó el modelo, o cita la comunidad
+#: equivocada: no se deja la celda vacía ni se rellena con algo plausible,
+#: porque es la única señal que tiene el docente de que ahí hay que revisar.
+_SIN_TEXTO = _("(no encontrado en el currículo)")
+
+
+def filas_de_conexion(sa: SituacionAprendizaje) -> dict[str, list[dict[str, str]]]:
+    """Las tres tablas de la conexión curricular, ya combinadas y listas.
+
+    Devuelve, por cada parte, la lista de filas con **todas** sus columnas:
+    lo que el modelo citó (código y justificación, que están en el JSONB) más
+    el texto real (que está en el catálogo).
+
+    POR QUÉ HACE FALTA
+    -------------------
+    El JSONB solo guarda ``{"codigo": "20.1", "justificacion": "..."}``, y las
+    tablas del documento se pintaban con esas dos columnas. Resultado: el
+    docente recibía una tabla de códigos sueltos **sin saber a qué se
+    refieren**. En Cataluña era directamente inútil —el decreto no numera sus
+    bloques, así que `20.1` es un identificador nuestro que no aparece en
+    ningún boletín—, y en Ceuta y Andalucía obligaba a ir al BOE o al BOJA para
+    saber qué dice `1.1`.
+
+    El texto ya está disponible sin consultar nada: `enlaces_curriculares` deja
+    pobladas `sa.competencias`, `sa.criterios` y `sa.saberes` con las filas
+    reales del catálogo al guardar.
+
+    UN SOLO SITIO, Y ES DELIBERADO
+    -------------------------------
+    Hay **dos** rutas de exportación, PDF y DOCX, y ya se cometió una vez el
+    error de tocar solo una: el aviso de sección incompleta se añadió al DOCX y
+    el PDF siguió saliendo sin él durante un día. Las filas se combinan aquí
+    para que las dos pinten exactamente lo mismo — si divergen, será porque
+    alguien cambió una cabecera, no porque una tenga datos que la otra no.
+    """
+    contenido = (sa.contenido or {}).get("conexion_curricular") or {}
+    if not isinstance(contenido, dict):
+        contenido = {}
+
+    texto_comp = {c.codigo: c.descripcion for c in (sa.competencias or [])}
+    texto_crit = {c.codigo: c.descripcion for c in (sa.criterios or [])}
+    saber_de = {s.codigo: s for s in (sa.saberes or [])}
+
+    def _citados(clave: str) -> list[dict]:
+        bruto = contenido.get(clave)
+        return [x for x in bruto if isinstance(x, dict)] if isinstance(bruto, list) else []
+
+    filas: dict[str, list[dict[str, str]]] = {}
+
+    filas["competencias"] = [
+        {
+            "codigo": c.get("codigo") or "—",
+            "texto": texto_comp.get(c.get("codigo", ""), str(_SIN_TEXTO)),
+            "justificacion": c.get("justificacion") or "—",
+        }
+        for c in _citados("competencias")
+    ]
+    filas["criterios"] = [
+        {
+            "codigo": c.get("codigo") or "—",
+            "competencia": c.get("competencia") or "—",
+            "texto": texto_crit.get(c.get("codigo", ""), str(_SIN_TEXTO)),
+            "justificacion": c.get("justificacion") or "—",
+        }
+        for c in _citados("criterios")
+    ]
+    filas["saberes"] = [
+        {
+            # El código del saber no se pinta, y es deliberado: en Cataluña no
+            # existe fuera de esta aplicación —el decreto no numera sus
+            # bloques—, así que enseñarlo invita a buscarlo en un boletín donde
+            # no está. Lo que sí sitúa el saber es su bloque, que sí tiene
+            # nombre en la norma. Se conserva en el diccionario porque los
+            # tests y cualquier depuración lo necesitan.
+            "codigo": s.get("codigo") or "—",
+            "bloque": getattr(saber_de.get(s.get("codigo", "")), "bloque", "") or "—",
+            "texto": getattr(
+                saber_de.get(s.get("codigo", "")), "descripcion", str(_SIN_TEXTO)
+            ),
+            "justificacion": s.get("justificacion") or "—",
+        }
+        for s in _citados("saberes")
+    ]
+    return filas
+
+
 def renderizar_pdf(sa: SituacionAprendizaje, usuario: Usuario) -> bytes:
     """Devuelve los bytes del PDF generado para ``sa``.
 
@@ -73,6 +160,7 @@ def renderizar_pdf(sa: SituacionAprendizaje, usuario: Usuario) -> bytes:
         sa=sa,
         usuario=usuario,
         secciones=secciones_para_export(),
+        conexion=filas_de_conexion(sa),
         generado_en=datetime.now(timezone.utc).astimezone(),
     )
     # ``base_url`` permitiría a WeasyPrint resolver assets relativos si
@@ -262,7 +350,7 @@ _PARTES_CONEXION = (
 )
 
 
-def _docx_conexion_curricular(doc, d):
+def _docx_conexion_curricular(doc, d, conexion=None):
     # UNA SECCIÓN QUE FALTA SE DICE, NO SE OMITE
     # -------------------------------------------
     # Cada bloque se pintaba solo si tenía datos, así que una generación
@@ -291,29 +379,42 @@ def _docx_conexion_curricular(doc, d):
             )
         )
 
+    # LAS TABLAS LLEVAN EL TEXTO, NO SOLO EL CÓDIGO
+    # ----------------------------------------------
+    # Hasta el 16/08 estas tres tablas eran «Código | Justificación», y eso
+    # dejaba al docente con una lista de identificadores sueltos. En Cataluña
+    # era inservible: el decreto no numera sus bloques de saberes, así que
+    # `20.1` es un código nuestro que no existe en ningún boletín. En Ceuta y
+    # Andalucía el código sí es real, pero seguía obligando a abrir el BOE o el
+    # BOJA para saber qué dice.
+    # Los rótulos van traducidos, como los del PDF. Estaban en castellano fijo
+    # y eso ya era un defecto; al añadir columnas habría quedado un DOCX con
+    # más cabeceras sin traducir que antes, y divergiendo de la otra ruta.
+    conexion = conexion or {}
     if d.get("competencias"):
-        _add_h3(doc, "Competencias específicas")
+        _add_h3(doc, str(_("Competencias específicas")))
         _add_tabla(
             doc,
-            [[c.get("codigo", "—"), c.get("justificacion", "—")] for c in d["competencias"]],
-            cabecera=["Código", "Justificación"],
+            [[f["codigo"], f["texto"], f["justificacion"]]
+             for f in conexion.get("competencias", [])],
+            cabecera=[str(_("Código")), str(_("Competencia")), str(_("Justificación"))],
         )
     if d.get("criterios"):
-        _add_h3(doc, "Criterios de evaluación")
+        _add_h3(doc, str(_("Criterios de evaluación")))
         _add_tabla(
             doc,
-            [
-                [c.get("codigo", "—"), c.get("competencia", "—"), c.get("justificacion", "—")]
-                for c in d["criterios"]
-            ],
-            cabecera=["Código", "Comp.", "Justificación"],
+            [[f["codigo"], f["competencia"], f["texto"], f["justificacion"]]
+             for f in conexion.get("criterios", [])],
+            cabecera=[str(_("Código")), str(_("Comp.")), str(_("Criterio")),
+                      str(_("Justificación"))],
         )
     if d.get("saberes"):
-        _add_h3(doc, "Saberes básicos")
+        _add_h3(doc, str(_("Saberes básicos")))
         _add_tabla(
             doc,
-            [[s.get("codigo", "—"), s.get("justificacion", "—")] for s in d["saberes"]],
-            cabecera=["Código", "Justificación"],
+            [[f["bloque"], f["texto"], f["justificacion"]]
+             for f in conexion.get("saberes", [])],
+            cabecera=[str(_("Bloque")), str(_("Saber básico")), str(_("Justificación"))],
         )
 
 
@@ -460,6 +561,7 @@ def renderizar_docx(sa: SituacionAprendizaje, usuario: Usuario) -> bytes:
 
     # Secciones
     contenido = sa.contenido or {}
+    conexion = filas_de_conexion(sa)
     for clave, etiqueta in secciones_para_export():
         datos = contenido.get(clave)
         if not datos:
@@ -467,6 +569,8 @@ def renderizar_docx(sa: SituacionAprendizaje, usuario: Usuario) -> bytes:
         _add_h2(doc, etiqueta)
         if clave == "atencion_diversidad":
             _docx_atencion_diversidad(doc, datos, sa.tipo_adaptacion)
+        elif clave == "conexion_curricular":
+            _docx_conexion_curricular(doc, datos, conexion)
         else:
             render = _RENDERS_DOCX.get(clave)
             if render:
