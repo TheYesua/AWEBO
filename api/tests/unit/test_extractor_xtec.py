@@ -303,3 +303,41 @@ class TestElConjuntoCompleto:
         ]
 
         assert [c for c in comunes if c not in nombres] == []
+
+    def test_los_titulos_no_arrastran_la_vineta(self, todo):
+        """`_es_vineta` descarta la línea que es SOLO la marca. Cuando la marca
+        comparte renglón con el título —«● Context»— no se descartaba nada y la
+        marca se quedaba pegada: **146 de los 384** bloques salían como
+        «Comunicació · ● Context».
+
+        No es un fallo de lectura y por eso no lo veía ningún test: los saberes
+        estaban todos, con su texto correcto. Pero el título viaja al documento
+        que lee el docente y al listado que se le pasa al modelo."""
+        sucios = [
+            s.titulo for b in todo for s in b.saberes
+            if any(c in s.titulo for c in "●•○▪◦") or "  " in s.titulo
+        ]
+
+        assert sucios == [], f"{len(sucios)} títulos con viñeta: {sucios[:3]}"
+
+    def test_el_decreto_no_numera_sus_bloques(self, todo):
+        """LA COMPROBACIÓN QUE DESHIZO LA CONFUSIÓN, y merece quedar fijada.
+
+        El código de estos saberes se trató durante días como si fuera del
+        boletín, y no lo es: el Decret 175/2022 nombra sus bloques, no los
+        numera. Ni uno de los 24 PDF lleva «Bloc N».
+
+        Si algún día apareciera, este test fallaría — y sería una buena
+        noticia: significaría que hay un identificador oficial que usar en vez
+        del índice de orden que ponemos nosotros."""
+        import re
+
+        con_numero = [
+            s.titulo for b in todo for s in b.saberes
+            if re.match(r"(?i)^\s*bloc\s*\d", s.titulo)
+        ]
+
+        assert con_numero == [], (
+            "el decreto SÍ numera: revisar si conviene usar su número como "
+            f"código en vez del contador. Ejemplos: {con_numero[:3]}"
+        )

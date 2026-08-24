@@ -228,17 +228,38 @@ class TestLasDosRutasDeExportacionAvisanIgual:
     }
 
     @staticmethod
-    def _docx(datos):
+    def _conexion(datos):
+        """Las filas ya combinadas, como se las da el servicio a cada ruta.
+
+        Desde el 16/08 las dos tablas se pintan de aquí y no del JSONB crudo:
+        el JSONB solo trae código y justificación, y una tabla de códigos
+        sueltos no le dice nada al docente. Se construyen con la función real
+        —no a mano— para que este test se entere si cambia su forma.
+        """
+        from types import SimpleNamespace as NS
+
+        from app.services.exportacion_service import filas_de_conexion
+
+        return filas_de_conexion(NS(
+            contenido={"conexion_curricular": datos},
+            competencias=[NS(codigo="1", descripcion="Competencia de prueba")],
+            criterios=[NS(codigo="1.1", descripcion="Criterio de prueba")],
+            saberes=[NS(codigo="20.1", bloque="Bloque de prueba",
+                        descripcion="Saber de prueba")],
+        ))
+
+    @classmethod
+    def _docx(cls, datos):
         from docx import Document
 
         from app.services import exportacion_service as ex
 
         doc = Document()
-        ex._docx_conexion_curricular(doc, datos)
+        ex._docx_conexion_curricular(doc, datos, cls._conexion(datos))
         return "\n".join(p.text for p in doc.paragraphs)
 
-    @staticmethod
-    def _pdf(datos):
+    @classmethod
+    def _pdf(cls, datos):
         """El macro suelto, con su dependencia.
 
         Se extrae del fichero real y no se copia: si alguien cambia la
@@ -260,7 +281,13 @@ class TestLasDosRutasDeExportacionAvisanIgual:
             extensions=["jinja2.ext.i18n"],
         )
         env.install_null_translations(newstyle=True)
-        return env.get_template("m").module.render_conexion_curricular(datos)
+        # El macro recibe `conexion` como argumento y no del contexto global, a
+        # propósito: un macro de Jinja ve las variables de su plantilla, pero
+        # deja de verlas si alguien lo mueve a un fichero aparte y lo importa,
+        # y entonces las tablas saldrían vacías sin ningún error.
+        return env.get_template("m").module.render_conexion_curricular(
+            datos, cls._conexion(datos)
+        )
 
     @pytest.fixture(params=["docx", "pdf"])
     def pintar(self, request):

@@ -26,6 +26,13 @@ services:
       # con los del host.
       - ./docker-compose.yml:/repo/docker-compose.yml:ro
       - ./docker-compose.override.yml:/repo/docker-compose.override.yml:ro
+      # Y para `tests/unit/test_documentacion_al_dia.py`, que comprueba que lo
+      # que el README afirma sea verdad. Mismo motivo que los de arriba: la
+      # imagen solo copia `api/`, así que dentro no hay README ni licencias.
+      - ./README.md:/repo/README.md:ro
+      - ./LICENSE:/repo/LICENSE:ro
+      - ./LICENSE-DOCS:/repo/LICENSE-DOCS:ro
+      - ./.gitignore:/repo/.gitignore:ro
       - ./.env.example:/repo/.env.example:ro
     # Recarga en cada cambio de código durante desarrollo
     command: gunicorn --bind 0.0.0.0:8000 --workers 1 --reload --timeout 120 "app:create_app()"
@@ -63,6 +70,13 @@ services:
       # con los del host.
       - ./docker-compose.yml:/repo/docker-compose.yml:ro
       - ./docker-compose.override.yml:/repo/docker-compose.override.yml:ro
+      # Y para `tests/unit/test_documentacion_al_dia.py`, que comprueba que lo
+      # que el README afirma sea verdad. Mismo motivo que los de arriba: la
+      # imagen solo copia `api/`, así que dentro no hay README ni licencias.
+      - ./README.md:/repo/README.md:ro
+      - ./LICENSE:/repo/LICENSE:ro
+      - ./LICENSE-DOCS:/repo/LICENSE-DOCS:ro
+      - ./.gitignore:/repo/.gitignore:ro
       - ./.env.example:/repo/.env.example:ro
     # El envío ocurre AQUÍ, no en api: `enviar_correo` es una tarea de Celery.
     # Sin estas dos variables el worker seguiría intentando el SMTP de
@@ -101,6 +115,13 @@ services:
       # con los del host.
       - ./docker-compose.yml:/repo/docker-compose.yml:ro
       - ./docker-compose.override.yml:/repo/docker-compose.override.yml:ro
+      # Y para `tests/unit/test_documentacion_al_dia.py`, que comprueba que lo
+      # que el README afirma sea verdad. Mismo motivo que los de arriba: la
+      # imagen solo copia `api/`, así que dentro no hay README ni licencias.
+      - ./README.md:/repo/README.md:ro
+      - ./LICENSE:/repo/LICENSE:ro
+      - ./LICENSE-DOCS:/repo/LICENSE-DOCS:ro
+      - ./.gitignore:/repo/.gitignore:ro
       - ./.env.example:/repo/.env.example:ro
 
   # ---------------------------------------------------------------------------

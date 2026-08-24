@@ -129,6 +129,22 @@ docker compose exec api flask seed curriculo --directorio /curriculo/salida_cata
 docker compose exec api flask seed curriculo --directorio /curriculo/salida_andalucia
 ```
 
+El seed **añade y actualiza, pero no borra**. Cuando un extractor mejora y
+cambian los códigos, las filas viejas se quedan: currículo que ya no está en el
+boletín, indistinguible del bueno y ofreciéndose en los desplegables. Para eso
+está la recarga limpia:
+
+```bash
+docker compose exec api flask seed curriculo \
+    --directorio /curriculo/salida_cataluna --borrar-sobrantes
+```
+
+No es el comportamiento por defecto porque borra: apuntar sin querer a una
+carpeta a medias se llevaría el resto del currículo de esa comunidad. Y **no
+borra lo que alguna SdA esté citando** — el documento de esa situación pasaría
+a decir «(no encontrado en el currículo)» donde antes había texto, sin que el
+docente haya tocado nada. Esas filas se conservan y el comando las cuenta.
+
 ```bash
 # Volver a extraer (solo si se cambia el extractor o llega un boletín nuevo).
 cd api

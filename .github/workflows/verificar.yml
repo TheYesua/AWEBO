@@ -83,6 +83,11 @@ jobs:
             -v "$PWD/docker-compose.yml:/repo/docker-compose.yml:ro" \
             -v "$PWD/docker-compose.override.yml:/repo/docker-compose.override.yml:ro" \
             -v "$PWD/.env.example:/repo/.env.example:ro" \
+            -v "$PWD/README.md:/repo/README.md:ro" \
+            -v "$PWD/LICENSE:/repo/LICENSE:ro" \
+            -v "$PWD/LICENSE-DOCS:/repo/LICENSE-DOCS:ro" \
+            -v "$PWD/.gitignore:/repo/.gitignore:ro" \
+            -v "$PWD/curriculo:/curriculo:ro" \
             awebo-api:ci pytest -q
 
   javascript:

@@ -350,7 +350,7 @@ Lo entregado hasta ahora como proyecto personal, agrupado por para qué sirve.
 | Funcionalidad | Qué hace |
 |---|---|
 | **Tema oscuro** | Claro, oscuro y automático, con selector en la cabecera. Se resuelve en servidor, así que no hay destello blanco al navegar. |
-| **Cuatro idiomas** | Castellano, catalán, gallego y euskera: 452 cadenas. El idioma de la interfaz y el de la situación son independientes a propósito. |
+| **Cuatro idiomas** | Castellano, catalán, gallego y euskera: 593 cadenas. El idioma de la interfaz y el de la situación son independientes a propósito. |
 | **Texto a voz** | Por sección, con la voz del sistema. |
 | **Audio con IA** | Modelos aHoTTS **en local**: el contenido del docente no sale a un tercero, y cubre el hueco que la voz del sistema deja en las lenguas cooficiales. |
 
@@ -359,7 +359,9 @@ estructurado que nunca llegó a funcionar, `/health` informando del proveedor
 equivocado, dos incumplimientos WCAG 2.1 en el tema claro y los reintentos
 sobre errores `4xx` de la API de OpenAI.
 
-**998 tests** cubren todo lo anterior, en la batería que corre en cada push.
+**1059 tests** cubren todo lo anterior, en la batería que corre en cada push.
+La cifra la comprueba un test: si alguien añade una tanda y no la actualiza
+aquí, falla.
 
 ---
 
@@ -374,7 +376,7 @@ El detalle vive fuera de este repositorio; aquí va el estado.
 | ~~3~~ | ~~Proveedor y modelo elegibles por usuario~~    | M        | ✅ 03/08 |
 | ~~4~~ | ~~Operaciones por bloque~~                      | M        | ✅ 03/08 |
 | ~~5~~ | ~~Doble propuesta con elección del usuario~~    | M        | ✅ 03/08 |
-| ~~6~~ | ~~Internacionalización (i18n)~~                 | L        | ✅ 08/08 · 452 cadenas en es/ca/gl/eu |
+| ~~6~~ | ~~Internacionalización (i18n)~~                 | L        | ✅ 08/08 · 593 cadenas en es/ca/gl/eu |
 | ~~7~~ | ~~Panel de administración~~                     | L        | ✅ 05/08 |
 | ~~8a~~ | ~~Accesibilidad: texto a voz~~                 | S–M      | ✅ 06/08 |
 | ~~8b~~ | ~~Accesibilidad: audio con IA~~                | M        | ✅ 10/08 · aHoTTS local |
