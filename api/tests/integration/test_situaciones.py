@@ -108,6 +108,66 @@ class TestListar:
         assert len(body["situaciones"]) == 1
         assert body["situaciones"][0]["curso"] == "1º ESO"
 
+    def test_filtrar_solo_por_provincia(self, client, docente):
+        """EL FALLO: el selector de provincia no filtraba nada.
+
+        Se montó el 15/08 **sin `name`**, razonando que la provincia solo
+        servía para decidir qué materias ofrecer y que mandarla al servidor
+        sería «inventar un filtro que el servidor ignora». El razonamiento
+        describía el mecanismo, no lo que espera quien lo usa: elegir
+        «Barcelona» y seguir viendo las SdA de Sevilla es un filtro que no
+        filtra.
+
+        Y era difícil de describir porque **sí parecía funcionar** en cuanto se
+        añadía además un curso — entonces filtraba el curso, no la provincia.
+        Por eso este test usa la provincia SOLA."""
+        client.post("/api/situaciones", json={**SA_VALIDA, "provincia": "barcelona"})
+        client.post("/api/situaciones", json={**SA_VALIDA, "provincia": "sevilla"})
+
+        res = client.get("/api/situaciones?provincia=barcelona")
+        body = res.get_json()
+
+        assert res.status_code == 200
+        assert body["total"] == 1
+        assert body["situaciones"][0]["provincia"] == "barcelona"
+
+    def test_sin_provincia_se_listan_todas(self, client, docente):
+        """Diferencia deliberada con el formulario de creación, donde la
+        provincia sí es obligatoria porque decide el currículo. Aquí es un
+        filtro, y «ver todo» tiene que seguir siendo posible."""
+        client.post("/api/situaciones", json={**SA_VALIDA, "provincia": "barcelona"})
+        client.post("/api/situaciones", json={**SA_VALIDA, "provincia": "sevilla"})
+
+        assert client.get("/api/situaciones").get_json()["total"] == 2
+
+    def test_la_provincia_se_combina_con_los_demas_filtros(self, client, docente):
+        """No se sustituyen: dos SdA de Barcelona con cursos distintos deben
+        poder distinguirse."""
+        client.post("/api/situaciones",
+                    json={**SA_VALIDA, "provincia": "barcelona", "curso": "1º ESO"})
+        client.post("/api/situaciones",
+                    json={**SA_VALIDA, "provincia": "barcelona", "curso": "2º ESO"})
+        client.post("/api/situaciones",
+                    json={**SA_VALIDA, "provincia": "sevilla", "curso": "1º ESO"})
+
+        res = client.get("/api/situaciones?provincia=barcelona&curso=1%C2%BA%20ESO")
+        body = res.get_json()
+
+        assert body["total"] == 1
+        assert body["situaciones"][0]["curso"] == "1º ESO"
+
+    def test_el_total_cuenta_lo_mismo_que_la_pagina(self, client, docente):
+        """`listar` y `contar` comparten `_filtros_listado` justamente para que
+        no puedan divergir. Añadir un filtro a una y olvidarlo en la otra daría
+        un paginador que promete páginas que no existen."""
+        for _ in range(3):
+            client.post("/api/situaciones", json={**SA_VALIDA, "provincia": "barcelona"})
+        client.post("/api/situaciones", json={**SA_VALIDA, "provincia": "sevilla"})
+
+        body = client.get("/api/situaciones?provincia=barcelona").get_json()
+
+        assert body["total"] == len(body["situaciones"]) == 3
+
     def test_filtrar_por_busqueda_por_titulo(self, client, docente):
         client.post("/api/situaciones", json={**SA_VALIDA, "titulo": "Robótica básica"})
         client.post("/api/situaciones", json={**SA_VALIDA, "titulo": "Otra cosa"})

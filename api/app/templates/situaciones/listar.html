@@ -36,12 +36,17 @@
     <div class="field">
       <label for="f-provincia">{{ _('Provincia') }}</label>
       {#
-        SIN `name`, y a propósito: la provincia **no filtra** situaciones, solo
-        decide qué materias se ofrecen. El endpoint de listado acepta `curso` y
-        `materia`, no `provincia`; mandarla sería inventar un filtro que el
-        servidor ignora, y el docente creería estar acotando algo.
+        CON `name`, desde el 16/08. Antes no lo tenía, razonando que la
+        provincia solo servía para decidir qué materias se ofrecen y que
+        mandarla sería «inventar un filtro que el servidor ignora».
+
+        El razonamiento describía el mecanismo y no lo que espera quien lo usa:
+        elegir «Barcelona» y seguir viendo las SdA de Sevilla es un filtro que
+        no filtra. Lo que se hizo fue lo contrario de lo pensado — en vez de no
+        prometer un filtro inexistente, se dejó un desplegable que promete y no
+        cumple. Ahora el servidor sí lo acepta.
       #}
-      <select id="f-provincia" aria-describedby="f-bloqueo-aviso">
+      <select id="f-provincia" name="provincia" aria-describedby="f-bloqueo-aviso">
         <option value="">{{ _('Todas') }}</option>
       </select>
     </div>
@@ -277,8 +282,14 @@ document.getElementById('filtros').addEventListener('reset', () => {
    filtro ofrecía «Matemáticas · 4º ESO», que no existe. Es el mismo fallo del
    03/08 en la quinta puerta por la que entra este dato.
 
-   Aquí el catálogo se acota, pero **el filtro no obliga**: sin provincia se
-   listan todas las SdA. Ver el comentario del formulario más arriba. */
+   La provincia hace DOS cosas, y conviene no confundirlas: acota el catálogo
+   de curso y materia que se ofrece, **y** filtra las situaciones listadas.
+   Hasta el 16/08 solo hacía la primera, así que elegirla no cambiaba la tabla
+   —salvo que además se eligiera curso, y entonces parecía funcionar—.
+
+   Sigue sin ser obligatoria: sin provincia se listan todas, que es la
+   diferencia deliberada con el formulario de creación, donde sí lo es porque
+   decide el currículo. */
 const selProvincia = document.getElementById('f-provincia');
 const selCurso     = document.getElementById('f-curso');
 const selMateria   = document.getElementById('f-materia');

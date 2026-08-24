@@ -124,6 +124,12 @@ class SituacionListItemOut(BaseModel):
     titulo: str
     curso: str
     materia: str
+    #: Va en el listado desde que la provincia **filtra** (16/08). Un filtro
+    #: cuyo valor no se ve en los resultados obliga a abrir una SdA para saber
+    #: si el filtro hizo algo, que es justo lo que costó detectar que no lo
+    #: hacía. También lo necesita cualquier test del filtro para comprobar el
+    #: contenido y no solo el recuento.
+    provincia: str | None = None
     estado: EstadoLiteral
     es_adaptacion: bool
     origen_desaparecido: bool
@@ -137,6 +143,7 @@ class SituacionListItemOut(BaseModel):
             titulo=sa.titulo,
             curso=sa.curso,
             materia=sa.materia,
+            provincia=sa.provincia,
             estado=sa.estado,
             es_adaptacion=sa.es_adaptacion,
             origen_desaparecido=sa.origen_desaparecido,

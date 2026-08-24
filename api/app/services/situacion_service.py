@@ -186,6 +186,7 @@ def _filtros_listado(
     estado: str | None,
     q: str | None,
     incluir_adaptaciones: bool,
+    provincia: str | None = None,
 ) -> list:
     """Condiciones WHERE del listado, compartidas por la página y el conteo.
 
@@ -200,6 +201,16 @@ def _filtros_listado(
     condiciones = []
     if not usuario.es_administrador:
         condiciones.append(SituacionAprendizaje.id_usuario == usuario.id_usuario)
+    # La provincia FILTRA, no solo acota el desplegable de materias.
+    #
+    # Al montar el selector el 15/08 se decidió que no viajara al servidor,
+    # razonando que solo servía para decidir qué materias ofrecer. Era un
+    # razonamiento sobre el mecanismo, no sobre lo que espera quien lo usa:
+    # elegir «Barcelona» y ver las SdA de Sevilla es sencillamente un filtro
+    # que no filtra. Y el desconcierto crecía porque **sí** parecía funcionar
+    # en cuanto se añadía un curso.
+    if provincia:
+        condiciones.append(SituacionAprendizaje.provincia == provincia)
     if curso:
         condiciones.append(SituacionAprendizaje.curso == curso)
     if materia:
@@ -221,6 +232,7 @@ def listar(
     estado: str | None = None,
     q: str | None = None,
     incluir_adaptaciones: bool = True,
+    provincia: str | None = None,
     limit: int = POR_PAGINA,
     offset: int = 0,
 ) -> list[SituacionAprendizaje]:
@@ -239,6 +251,7 @@ def listar(
         estado=estado,
         q=q,
         incluir_adaptaciones=incluir_adaptaciones,
+        provincia=provincia,
     )
     stmt = (
         select(SituacionAprendizaje)
@@ -261,6 +274,7 @@ def contar(
     estado: str | None = None,
     q: str | None = None,
     incluir_adaptaciones: bool = True,
+    provincia: str | None = None,
 ) -> int:
     """Cuántas situaciones devolvería ``listar`` sin límite de página."""
     condiciones = _filtros_listado(
@@ -270,6 +284,7 @@ def contar(
         estado=estado,
         q=q,
         incluir_adaptaciones=incluir_adaptaciones,
+        provincia=provincia,
     )
     return (
         db.session.scalar(

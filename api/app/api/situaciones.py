@@ -103,6 +103,13 @@ def listar():
         estado=request.args.get("estado"),
         q=request.args.get("q"),
         incluir_adaptaciones=incluir_adapt,
+        # La provincia filtra situaciones, no solo acota el desplegable de
+        # materias. Cuando se montó el selector (15/08) se decidió que no
+        # viajara hasta aquí; el efecto era que elegir «Barcelona» no cambiaba
+        # nada, salvo que además se eligiera un curso — y entonces parecía
+        # funcionar, lo que hacía el fallo más difícil de describir que de
+        # arreglar.
+        provincia=request.args.get("provincia"),
     )
     items = svc.listar(
         current_user,
