@@ -176,6 +176,16 @@ scratch/
 # es justo lo que necesita quien clone sin acceso al privado.
 /curriculo/fuentes/.git/
 
+# NO PONER UN `.gitignore` DENTRO DE `curriculo/fuentes/`. Se intentó el 16/08
+# para que el repositorio privado dejara de seguir los LEEME, y salió mal: un
+# `.gitignore` de subdirectorio **lo lee cualquier repositorio que contenga ese
+# directorio**, así que sus reglas se aplicaron también aquí. El `!*.pdf` que
+# llevaba desactivó la regla de arriba y los 55 MB de boletines pasaron a
+# aparecer como subibles al repositorio público.
+#
+# Lo que un repositorio quiera excluir solo para sí va en su
+# `.git/info/exclude`, que es local y no se comparte.
+
 # La salida del extractor SÍ se versiona. La regla decía «se regenera de las
 # fuentes, no se versiona», y era falsa en la práctica: **las fuentes no están
 # en el repositorio**. Los PDF pesan 55 MB y quedaron ignorados justo arriba,
