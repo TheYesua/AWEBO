@@ -2,9 +2,13 @@
   "materia_oficial": "Robòtica i Programació",
   "materia": "Robòtica i Programació",
   "etapa": "ESO",
-  "ciclo": "Únic",
+  "ciclo": "1º ESO i 2º ESO i 3º ESO",
   "itinerario": null,
-  "cursos_aplicables": [],
+  "cursos_aplicables": [
+    "1º ESO",
+    "2º ESO",
+    "3º ESO"
+  ],
   "competencias_especificas": [
     {
       "codigo": "1",

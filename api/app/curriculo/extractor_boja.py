@@ -50,7 +50,13 @@ from pathlib import Path
 
 import pymupdf
 
-from .extractor import BloqueSaberes, CompetenciaEspecifica, Criterio, MateriaCiclo
+from .extractor import (
+    BloqueSaberes,
+    CompetenciaEspecifica,
+    Criterio,
+    MateriaCiclo,
+    retirar_huerfanos,
+)
 
 
 logger = logging.getLogger("curriculo.extractor_boja")
@@ -962,6 +968,10 @@ def volcar(resultados: list[MateriaCiclo], salida: Path, comunidad: str,
         ruta = salida / f"{_slug(mc.materia_efectiva)}__{digitos}.json"
         ruta.write_text(json.dumps(d, ensure_ascii=False, indent=2), encoding="utf-8")
         escritos.append(ruta)
+    # Los JSON de una extracción anterior se retiran: el nombre lleva los
+    # cursos dentro, así que al cambiarlos queda el viejo y `seed_curriculo`
+    # cargaría las dos versiones. Ver `extractor.retirar_huerfanos`.
+    retirar_huerfanos(salida, escritos)
     return escritos
 
 

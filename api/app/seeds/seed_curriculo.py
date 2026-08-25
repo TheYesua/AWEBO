@@ -198,6 +198,16 @@ def _procesar_fichero(
     datos = json.loads(ruta.read_text(encoding="utf-8"))
     materia = datos["materia"]
     cursos = list(datos["cursos_aplicables"])
+    if not cursos:
+        # Se carga igual —el dato es el que es y ocultarlo no ayuda— pero se
+        # dice, porque el resultado es una materia **invisible**: sin cursos no
+        # aparece en el desplegable ni en el contexto del modelo, y tampoco
+        # enlaza ningún código. Pasó con «Robòtica i Programació», que estuvo
+        # dos días cargada y muerta sin que nada lo señalara.
+        logger.error(
+            "%s: «%s» viene SIN CURSOS. Se cargará, pero no se podrá usar: "
+            "revisa el extractor.", ruta.name, materia,
+        )
     comunidad = datos.get("comunidad") or comunidad
     idioma = datos.get("idioma") or idioma
 

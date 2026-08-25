@@ -1,0 +1,13 @@
+{
+  "name": "awebo-a11y",
+  "private": true,
+  "type": "module",
+  "description": "Auditoría de accesibilidad con axe-core sobre las páginas renderizadas. Aparte del resto de tests de JavaScript (tests/js/) porque aquellos no tienen dependencias a propósito y estos necesitan un navegador.",
+  "scripts": {
+    "auditar": "node axe.mjs"
+  },
+  "dependencies": {
+    "@axe-core/playwright": "^4.10.1",
+    "playwright": "^1.49.1"
+  }
+}

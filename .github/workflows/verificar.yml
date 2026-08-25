@@ -118,6 +118,101 @@ jobs:
             exit 1
           fi
 
+  accesibilidad:
+    name: Accesibilidad (axe-core)
+    runs-on: ubuntu-latest
+
+    # LO QUE ESTE TRABAJO AÑADE, Y LO QUE NO
+    # ---------------------------------------
+    # `test_temas.py` comprueba el contraste de los tokens de color: la paleta
+    # en abstracto, sin abrir ninguna página. Aquí se carga el HTML renderizado
+    # en un Chromium de verdad y se le pasan las reglas WCAG de axe, que sí ven
+    # un `alt` que falta, un `<label>` sin asociar o un salto de encabezado.
+    #
+    # Solo páginas **públicas**: las que exigen sesión necesitarían login
+    # programático y datos sembrados. Se deja documentado en `axe.mjs` en vez
+    # de dar a entender que la cobertura es total.
+    #
+    # `continue-on-error` NO se usa a propósito: un trabajo que puede fallar
+    # sin consecuencias se ignora a las dos semanas. El script ya distingue
+    # gravedades y solo rompe con «serious» y «critical».
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env:
+          POSTGRES_USER: awebo
+          POSTGRES_PASSWORD: awebo
+          POSTGRES_DB: awebo
+        ports: ['5432:5432']
+        options: >-
+          --health-cmd "pg_isready -U awebo -d awebo"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+
+      redis:
+        image: redis:7-alpine
+        ports: ['6379:6379']
+        options: >-
+          --health-cmd "redis-cli ping"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Construir la imagen del proyecto
+        run: docker build -t awebo-api:ci ./api
+
+      - name: Levantar la aplicación
+        run: |
+          docker run -d --name awebo-a11y --network host \
+            -e SQLALCHEMY_DATABASE_URI=postgresql+psycopg://awebo:awebo@localhost:5432/awebo \
+            -e REDIS_URL=redis://localhost:6379/0 \
+            -e SESSION_REDIS_URL=redis://localhost:6379/3 \
+            -e CELERY_BROKER_URL=redis://localhost:6379/1 \
+            -e CELERY_RESULT_BACKEND=redis://localhost:6379/2 \
+            -e AI_PROVIDER=fake \
+            -e SECRET_KEY=clave-solo-para-ci \
+            -e FLASK_ENV=development \
+            -v "$PWD/api:/app" -w /app \
+            awebo-api:ci \
+            gunicorn -b 0.0.0.0:8090 -w 1 --timeout 60 "app:create_app()"
+          docker exec awebo-a11y flask db upgrade
+
+      - name: Esperar a que responda
+        run: |
+          for i in $(seq 1 30); do
+            if curl -fsS http://localhost:8090/health > /dev/null; then
+              echo "arriba tras ${i}s"; exit 0
+            fi
+            sleep 1
+          done
+          echo "::error::la aplicación no respondió en 30 s"
+          docker logs awebo-a11y
+          exit 1
+
+      - name: Instalar axe y Chromium
+        working-directory: api/tests/a11y
+        run: |
+          npm install --no-audit --no-fund
+          npx playwright install --with-deps chromium
+
+      - name: Auditar
+        working-directory: api/tests/a11y
+        env:
+          A11Y_BASE_URL: http://localhost:8090
+        run: node axe.mjs
+
+      - name: Registro de la aplicación si algo falló
+        if: failure()
+        run: docker logs awebo-a11y
+
   migracion:
     name: Migración de datos contra Postgres real
     runs-on: ubuntu-latest

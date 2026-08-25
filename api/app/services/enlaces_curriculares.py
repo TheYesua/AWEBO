@@ -181,9 +181,26 @@ def _resolver(
         condicion = condicion & ((modelo.materia == materia) | (modelo.materia.is_(None)))
 
     candidatas = db.session.scalars(select(modelo).where(condicion)).all()
+    # UNA FILA SIN CURSOS NO CASA CON NINGUNO, y antes casaba con todos.
+    #
+    # Aquí se hacía `not fila.cursos_aplicables or curso in …`, mientras que
+    # `contexto.py` usa el operador JSONB `?`, que con la lista vacía excluye.
+    # Dos respuestas distintas a la misma pregunta, y la de aquí era la
+    # peligrosa: convertía un dato incompleto en un comodín que encaja en
+    # cualquier curso.
+    #
+    # Se unifica hacia excluir por lo que significa el estado. Un elemento de
+    # currículo sin cursos no es «válido para todos»: es un elemento que no se
+    # sabe dónde va, y el catálogo no puede afirmar que se imparte en 1.º de
+    # ESO cuando nadie lo ha dicho. Aceptarlo propagaba el error de carga hasta
+    # el documento del docente, que es donde más caro sale verlo.
+    #
+    # Y ya no hay filas legítimas así: la única —Robòtica i Programació— tiene
+    # sus cursos desde el 16/08. Si vuelve a aparecer una, el seed lo avisa al
+    # cargarla, que es donde se puede arreglar.
     validas = [
         fila for fila in candidatas
-        if not fila.cursos_aplicables or curso in fila.cursos_aplicables
+        if curso in (fila.cursos_aplicables or [])
     ]
 
     # UNA FILA POR CÓDIGO CITADO, LA MÁS PARECIDA
@@ -247,7 +264,10 @@ def hay_curriculo(materia: str, curso: str, comunidad: str | None = None) -> boo
     for modelo in (Competencia, CriterioEvaluacion, SaberBasico):
         condicion = (modelo.comunidad == comunidad) & (modelo.materia == materia)
         existe = db.session.scalars(select(modelo).where(condicion).limit(50)).all()
-        if any(not f.cursos_aplicables or curso in f.cursos_aplicables for f in existe):
+        # Mismo criterio que en `_resolver`: sin cursos no cuenta como
+        # cobertura. Si divergieran, una materia podría dar «hay currículo» aquí
+        # y no enlazar ni un código después.
+        if any(curso in (f.cursos_aplicables or []) for f in existe):
             return True
     return False
 

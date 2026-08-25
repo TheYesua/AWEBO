@@ -1232,7 +1232,44 @@ def volcar(resultados: list[MateriaCiclo], salida: Path) -> list[Path]:
             encoding="utf-8",
         )
         rutas.append(ruta)
+    retirar_huerfanos(salida, rutas)
     return rutas
+
+
+def retirar_huerfanos(salida: Path, escritos: list[Path]) -> list[Path]:
+    """Borra del directorio los JSON que esta extracción **no** ha escrito.
+
+    EL FALLO QUE ESTO ARREGLA. El nombre del fichero lleva dentro los cursos
+    —`robotica_i_programacio__1_2_3.json`—, así que cuando cambian los cursos
+    de una materia se escribe un fichero **nuevo** y el viejo se queda. Pasó el
+    16/08 al darle cursos a Robòtica i Programació: quedaron
+    `__unico.json` y `__1_2_3.json`, y el directorio pasó a tener 37 ficheros
+    para 36 bloques.
+
+    No es cosmético. `seed_curriculo` carga *todo* lo que encuentre, así que la
+    versión vieja entra en la base de datos junto a la nueva y la materia queda
+    duplicada: una entrada sin cursos —invisible— y otra con ellos. Y nada lo
+    dice, porque los dos ficheros son JSON válidos.
+
+    Es el mismo problema que el seed tenía con las filas sobrantes, un nivel
+    antes. Allí se resolvió con una opción explícita porque borrar filas de la
+    base de datos puede romper una SdA; **aquí se hace siempre**, sin
+    preguntar: el directorio de salida es un producto derivado que se regenera
+    entero en cada extracción, y un fichero que ya no se escribe no es un dato
+    que alguien pueda estar usando.
+    """
+    conservar = {r.resolve() for r in escritos}
+    borrados = []
+    for viejo in salida.glob("*.json"):
+        if viejo.resolve() not in conservar:
+            viejo.unlink()
+            borrados.append(viejo)
+    if borrados:
+        logger.info(
+            "Retirados %d JSON de una extracción anterior: %s",
+            len(borrados), ", ".join(sorted(b.name for b in borrados)),
+        )
+    return borrados
 
 
 def resumen(resultados: list[MateriaCiclo]) -> str:

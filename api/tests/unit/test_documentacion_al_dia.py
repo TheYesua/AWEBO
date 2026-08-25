@@ -204,9 +204,15 @@ class TestLosRecuentosDelCurriculo:
 class TestLasCadenasTraducidas:
     def test_el_readme_dice_cuantas_hay(self):
         _saltar_si_no_esta(README)
-        catalogo = RAIZ / "api" / "app" / "translations" / "es" / "LC_MESSAGES" / "messages.po"
+        # Desde `TESTS`, no desde `RAIZ`: los catálogos son parte de la
+        # aplicación y viven en `/app/app/translations` dentro del contenedor.
+        # Con `RAIZ / "api" / …` la ruta no existía allí y el test **se saltaba
+        # en silencio**, así que la comprobación no se hacía nunca donde se
+        # ejecuta la batería de verdad. Cuarta vez que este mismo despiste
+        # rompe algo solo dentro de Docker.
+        catalogo = TESTS.parent / "app" / "translations" / "es" / "LC_MESSAGES" / "messages.po"
         if not catalogo.exists():
-            pytest.skip("no hay catálogos compilados")
+            pytest.skip(f"no hay catálogos compilados en {catalogo.parent}")
 
         # Menos la cabecera, que es un `msgid ""` técnico.
         reales = _texto(catalogo).count("\nmsgid ") - 1
@@ -242,7 +248,18 @@ class TestLaLicencia:
             assert "AGPL" not in texto, "el README dice AGPL y el LICENSE no lo es"
 
     def test_la_hoja_de_ruta_dice_la_misma(self):
-        """Estuvo diciendo GPL en tres sitios mientras el fichero era AGPL."""
+        """Estuvo diciendo GPL en tres sitios mientras el fichero era AGPL.
+
+        SE SALTA DENTRO DEL CONTENEDOR, y es correcto: `docs/` vive en el
+        repositorio privado `awebo_docs` y no se monta. **No se monta a
+        propósito**: quien clone solo el repositorio público no lo tiene, y un
+        volumen que apunta a un fichero inexistente hace que Docker cree un
+        directorio vacío en su lugar — el test fallaría con un error
+        desconcertante en vez de saltarse con un motivo.
+
+        Así que esta comprobación corre fuera de Docker, donde `docs/` está al
+        lado. Es el único de este fichero que no se ejecuta en la batería
+        principal, y conviene tenerlo presente."""
         _saltar_si_no_esta(HOJA)
         cabecera = (RAIZ / "LICENSE").read_text(encoding="utf-8")[:200].upper()
         if "AFFERO" not in cabecera:
@@ -276,7 +293,12 @@ class TestLoQueElReadmeDiceQueNoEsta:
         """Se decidió versionarla el 15/08 porque sin ella el repositorio no es
         reproducible: las fuentes no están."""
         _saltar_si_no_esta(RAIZ / ".gitignore")
-        assert (RAIZ / "curriculo" / "salida").exists()
+        # `CURRICULO` y no `RAIZ / "curriculo"`: dentro del contenedor la raíz
+        # es `/repo` —cuatro ficheros sueltos— y el currículo tiene su propio
+        # punto de montaje. La constante existe justo para esto y en este test
+        # se me pasó usarla; es la tercera vez que el mismo despiste rompe algo
+        # solo dentro de Docker.
+        assert (CURRICULO / "salida").exists()
         assert not re.search(r"^/curriculo/salida\*/\s*$", _texto(RAIZ / ".gitignore"), re.M)
 
 
@@ -310,11 +332,22 @@ class TestEsteFicheroFuncionaDentroDeDocker:
     problema en su docstring desde hacía días.
     """
 
-    def test_sin_montaje_cae_a_la_raiz_del_repositorio(self, tmp_path):
-        """Fuera de Docker: `tests/unit/x.py` → `tests/` → `api/` → raíz."""
+    def test_sin_montaje_sube_desde_el_fichero(self, tmp_path):
+        """Sin montaje se usa `parents[3]`: `tests/unit/x.py` → `tests/` →
+        `api/` → raíz.
+
+        **Fuera** de Docker eso es la raíz del repositorio y tiene un `api/`
+        dentro. **Dentro** da `/`, que no tiene nada — y precisamente por eso
+        existe el montaje en `/repo`. La primera versión de este test afirmaba
+        lo primero sin más y fallaba en el contenedor: comprobaba que la rama
+        de respaldo diera algo útil, cuando lo que hace es dar algo inútil, que
+        es el motivo de que haya una alternativa."""
         raiz = _raiz(montados=tmp_path / "no-existe")
 
-        assert (raiz / "api").is_dir(), f"{raiz} no parece la raíz del repositorio"
+        assert raiz == Path(__file__).resolve().parents[3]
+        if (raiz / "api").is_dir():
+            # Fuera del contenedor se puede afinar más.
+            assert (raiz / "api" / "tests").is_dir()
 
     def test_con_montaje_usa_el_montaje(self, tmp_path):
         """Dentro: los ficheros del repositorio están en `/repo`, y subir tres
@@ -322,6 +355,53 @@ class TestEsteFicheroFuncionaDentroDeDocker:
         (tmp_path / "README.md").write_text("**1 tests** cubren", encoding="utf-8")
 
         assert _raiz(montados=tmp_path) == tmp_path
+
+    def test_nadie_cuelga_de_la_raiz_lo_que_no_esta_ahi(self):
+        """El despiste que rompió este fichero tres veces seguidas.
+
+        Dentro del contenedor `RAIZ` es `/repo` —cuatro ficheros sueltos— y el
+        currículo está en su propio punto de montaje. Escribir
+        `RAIZ / "curriculo"` funciona fuera de Docker y falla dentro, que es el
+        peor de los dos mundos: pasa cuando lo pruebas y falla cuando lo
+        entregas.
+
+        Para eso está `CURRICULO`. Este test comprueba que se use, porque
+        acordarse no ha bastado.
+
+        Se mira el **árbol sintáctico** y no el texto: la primera versión
+        buscaba la cadena con `in` y se cazaba a sí misma, porque el patrón
+        aparece en este docstring y en su propio filtro. Buscar código leyendo
+        texto vuelve a fallar por lo mismo de siempre."""
+        import ast
+
+        # `curriculo` y `api` son los dos que no cuelgan de la raíz dentro del
+        # contenedor. La primera versión solo miraba `curriculo`, y por eso no
+        # vio que `RAIZ / "api" / "app" / "translations"` hacía que el test de
+        # las cadenas traducidas se saltara siempre en Docker: media red no
+        # atrapa la mitad de los casos, atrapa los que se le ocurrieron a quien
+        # la puso.
+        FUERA_DE_LA_RAIZ = {"curriculo", "api"}
+
+        arbol = ast.parse(Path(__file__).read_text(encoding="utf-8"))
+        usos = [
+            n.lineno for n in ast.walk(arbol)
+            if isinstance(n, ast.BinOp)
+            and isinstance(n.op, ast.Div)
+            and isinstance(n.left, ast.Name) and n.left.id == "RAIZ"
+            and isinstance(n.right, ast.Constant)
+            and n.right.value in FUERA_DE_LA_RAIZ
+        ]
+        # La definición de `CURRICULO` sí puede nombrarlo: es su alternativa.
+        definicion = next(
+            n.lineno for n in ast.walk(arbol)
+            if isinstance(n, ast.Assign)
+            and any(getattr(t, "id", "") == "CURRICULO" for t in n.targets)
+        )
+
+        assert [l for l in usos if l != definicion] == [], (
+            f"líneas que usan RAIZ / 'curriculo' en vez de CURRICULO: "
+            f"{[l for l in usos if l != definicion]}"
+        )
 
     @pytest.mark.parametrize("fichero", FICHEROS_DEL_REPO)
     def test_cada_fichero_que_hace_falta_esta_montado(self, fichero):

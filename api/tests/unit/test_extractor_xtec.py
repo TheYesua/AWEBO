@@ -341,3 +341,52 @@ class TestElConjuntoCompleto:
             "el decreto SÍ numera: revisar si conviene usar su número como "
             f"código en vez del contador. Ejemplos: {con_numero[:3]}"
         )
+
+
+@pytest.mark.skipif(not ARTICULADO.exists(), reason=f"no está {ARTICULADO}")
+class TestLaMateriaQueElDecretoNoLista:
+    """«Robòtica i Programació» la publica la XTEC y el decreto no la nombra.
+
+    EL FALLO QUE ESTO ARREGLA, Y LA REGLA QUE LO CAUSÓ. La regla dice que una
+    materia sin cursos **se queda sin cursos y se avisa**, en vez de darle los
+    cuatro por defecto; gracias a ella Llatí dejó de ofrecerse en 1.º de ESO.
+
+    Pero tiene un coste que apareció el 16/08: esta materia se cargaba con la
+    lista vacía y quedaba **invisible**. No sale en el desplegable ni en el
+    contexto del modelo, así que sus 4 competencias, 16 criterios y 13 saberes
+    estaban en la base de datos sin que nadie pudiera usarlos. Y no daba error
+    al usarla: sencillamente no existía.
+
+    La salida no es relajar la regla sino documentar la excepción con su
+    fuente. Es optativa de oferta obligatoria en el primer ciclo, así que va en
+    1.º, 2.º y 3.º; **4.º queda fuera**, que ahí ya no es de oferta obligatoria.
+    """
+
+    def test_recibe_los_cursos_del_primer_ciclo(self):
+        from app.curriculo.extractor_xtec import CURSOS_FUERA_DEL_ARTICULADO
+
+        cursos = {_clave(k): v for k, v in CURSOS_FUERA_DEL_ARTICULADO.items()}
+
+        assert cursos[_clave("Robòtica i Programació")] == ["1º ESO", "2º ESO", "3º ESO"]
+
+    def test_el_decreto_sigue_sin_listarla(self):
+        """Si algún día apareciera en el articulado, esta excepción sobra y
+        habría que quitarla: el dato del decreto siempre manda sobre el
+        nuestro. Este test avisaría."""
+        del_decreto = {_clave(k) for k in cursos_del_articulado(ARTICULADO)}
+
+        assert _clave("Robòtica i Programació") not in del_decreto, (
+            "el decreto ya la lista: quita la entrada de CURSOS_FUERA_DEL_ARTICULADO"
+        )
+
+    def test_la_excepcion_no_pisa_al_articulado(self):
+        """El orden importa: primero el decreto, y solo si no dice nada, la
+        excepción. Al revés, una materia bien listada podría acabar con los
+        cursos que alguien escribió a mano hace meses."""
+        import inspect
+
+        from app.curriculo import extractor_xtec as m
+
+        fuente = inspect.getsource(m.main)
+
+        assert "por_clave.get(clave) or fuera.get(clave" in fuente

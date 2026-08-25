@@ -43,7 +43,13 @@ from pathlib import Path
 
 import pymupdf
 
-from .extractor import BloqueSaberes, CompetenciaEspecifica, Criterio, MateriaCiclo
+from .extractor import (
+    BloqueSaberes,
+    CompetenciaEspecifica,
+    Criterio,
+    MateriaCiclo,
+    retirar_huerfanos,
+)
 
 
 logger = logging.getLogger("curriculo.extractor_xtec")
@@ -487,6 +493,38 @@ _ARTICULOS_CURSOS = {
 }
 
 
+#: Materias que la XTEC publica y **el articulado no lista**, con los cursos
+#: que les corresponden y de dónde sale el dato.
+#:
+#: POR QUÉ EXISTE ESTA EXCEPCIÓN, HABIENDO UNA REGLA CONTRA INVENTAR CURSOS.
+#: La regla —una materia sin cursos se queda sin cursos y se dice— sigue en
+#: pie, y es la que evitó que Llatí se ofreciera en 1.º de ESO. Pero tiene un
+#: coste que se vio el 16/08: «Robòtica i Programació» se cargaba con la lista
+#: vacía y quedaba **invisible**. No aparecía en el desplegable ni en el
+#: contexto del modelo: cuatro competencias, dieciséis criterios y trece
+#: saberes muertos en la base de datos, sin que nada lo dijera al usarla.
+#:
+#: La diferencia con inventar es la fuente. Estos cursos no se deducen del
+#: PDF ni se suponen «por si acaso»: están en la normativa que obliga a los
+#: centros a ofertar la materia, y se anota cuál para poder revisarlo.
+#:
+#: La clave va con el nombre **literal** y se normaliza con `_clave` en el
+#: punto de uso, no aquí: esta constante se evalúa al importar el módulo y
+#: `_clave` se define más abajo, así que llamarla desde el diccionario rompe el
+#: import entero con `NameError`.
+CURSOS_FUERA_DEL_ARTICULADO: dict[str, list[str]] = {
+    # Optativa de oferta obligatoria en el primer ciclo: los centros deben
+    # ofrecerla en alguno de los tres cursos, y cada uno decide en cuál —lo
+    # habitual es 3.º— o si la reparte. Como el currículo es el mismo para los
+    # tres, se declara en los tres y que el docente elija el suyo.
+    #
+    # **4.º queda fuera a propósito**: ahí la materia ya no es de oferta
+    # obligatoria, y los centros que la mantienen suelen integrarla en
+    # Tecnologia i Digitalització, que tiene su propio currículo.
+    "Robòtica i Programació": ["1º ESO", "2º ESO", "3º ESO"],
+}
+
+
 def cursos_del_articulado(xml: Path) -> dict[str, list[str]]:
     """``materia -> cursos`` leyendo el articulado del decreto.
 
@@ -573,6 +611,10 @@ def volcar(resultados: list[MateriaCiclo], salida: Path, comunidad: str,
         ruta = salida / f"{_slug(mc.materia_efectiva)}__{digitos}.json"
         ruta.write_text(json.dumps(d, ensure_ascii=False, indent=2), encoding="utf-8")
         escritos.append(ruta)
+    # Los JSON de una extracción anterior se retiran: el nombre lleva los
+    # cursos dentro, así que al cambiarlos queda el viejo y `seed_curriculo`
+    # cargaría las dos versiones. Ver `extractor.retirar_huerfanos`.
+    retirar_huerfanos(salida, escritos)
     return escritos
 
 
@@ -606,7 +648,11 @@ def main(argv: list[str] | None = None) -> int:
             logger.warning("Sin resultados: %s", pdf.name)
         for mc in res:
             if not mc.cursos_aplicables:
-                mc.cursos_aplicables = list(por_clave.get(_clave(mc.materia_oficial), []))
+                clave = _clave(mc.materia_oficial)
+                fuera = {_clave(k): v for k, v in CURSOS_FUERA_DEL_ARTICULADO.items()}
+                mc.cursos_aplicables = list(
+                    por_clave.get(clave) or fuera.get(clave, [])
+                )
                 mc.ciclo = " i ".join(mc.cursos_aplicables) or "Únic"
         todos.extend(res)
 
