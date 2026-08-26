@@ -1,0 +1,596 @@
+{
+  "materia_oficial": "Ámbito Lingüístico e Social",
+  "materia": "Ámbito Lingüístico e Social",
+  "etapa": "ESO",
+  "ciclo": "1º ESO",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Identificar e comprender a natureza histórica das relacións sociais, das actividades económicas, das manifestacións culturais e dos bens patrimoniais materiais e inmateriais que compartimos, analizando as súas orixes e evolución e identificando as causas e consecuencias dos cambios producidos, os problemas actuais e os seus valores presentes, para realizar propostas que contribúan a respectar os sentimentos de pertenza, o benestar futuro e o desenvolvemento da sociedade.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Comprender as orixes e a evolución dos procesos de integración europea e a súa relevancia no presente e no futuro da sociedade española e das comunidades locais, destacando a contribución do Estado e as súas institucións e as entidades sociais á paz, á cooperación internacional, á cohesión social, á solidariedade territorial, ao desenvolvemento sustentable e á cidadanía global, con base nos valores do europeísmo e da Declaración Universal dos Dereitos Humanos, para contribuír a crear un mundo máis seguro, solidario, sustentable e xusto en que se recoñeza a conformación dunha realidade multicultural e se valore a contribución dos movementos en defensa da igualdade e da inclusión evitando discriminacións e violencias.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Valorar os principios básicos do sistema democrático e os principios constitucionais que rexen a vida en comunidade, analizando de forma crítica as formulacións históricas e xeográficas, as institucións e as diferentes organizacións políticas e económicas en que se manifestan, para adecuar o comportamento propio ao cumprimento dos devanditos principios.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Comunicar en lingua castelá e galega de maneira cooperativa e respectuosa, atendendo ás convencións propias dos diferentes xéneros discursivos e á súa adecuación a diferentes ámbitos e contextos, para dar resposta a necesidades concretas.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Seleccionar e contrastar información procedente de diferentes fontes de maneira progresivamente autónoma, avaliando a súa fiabilidade e pertinencia en función dos obxectivos de lectura e evitando os riscos de manipulación e desinformación, e integrala e transformala en coñecemento para comunicala, adoptando un punto de vista crítico e persoal á par que respectuoso coa propiedade intelectual.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Ler, interpretar e valorar fragmentos literarios do patrimonio nacional e universal, utilizando unha metalinguaxe específica e mobilizando a experiencia biográfica e os coñecementos literarios e culturais para establecer vínculos entre textos diversos co fin de conformar un mapa cultural, ampliar as posibilidades de gozar da literatura e crear textos de intención literaria.",
+      "descriptores": []
+    },
+    {
+      "codigo": "7",
+      "descripcion": "Mobilizar o coñecemento sobre a estrutura da lingua e os seus usos e reflexionar de maneira progresivamente autónoma sobre as eleccións lingüísticas e discursivas, coa terminoloxía adecuada, para desenvolver a conciencia lingüística, aumentar o repertorio comunicativo e mellorar as destrezas tanto de produción oral e escrita como de recepción crítica.",
+      "descriptores": []
+    },
+    {
+      "codigo": "8",
+      "descripcion": "Comprender e interpretar, en lingua estranxeira, o sentido xeral e os detalles máis relevantes de textos expresados de forma clara e na lingua estándar, buscando fontes fiables e facendo uso de estratexias como a inferencia de significados, para responder a necesidades comunicativas concretas.",
+      "descriptores": []
+    },
+    {
+      "codigo": "9",
+      "descripcion": "Producir, en lingua estranxeira, textos orixinais, de extensión media, sinxelos e cunha organización clara, usando estratexias tales como a planificación, a compensación ou a autorreparación, para expresar de forma creativa, adecuada e coherente mensaxes relevantes e responder a propósitos comunicativos concretos.",
+      "descriptores": []
+    },
+    {
+      "codigo": "10",
+      "descripcion": "Interactuar en lingua estranxeira con outras persoas con crecente autonomía, usando estratexias de cooperación e empregando recursos analóxicos e dixitais, para responder a propósitos comunicativos concretos en intercambios respectuosos coas normas de cortesía.",
+      "descriptores": []
+    },
+    {
+      "codigo": "11",
+      "descripcion": "Mediar en situacións cotiás entre distintas linguas, usando estratexias e coñecementos sinxelos orientados a explicar conceptos ou simplificar mensaxes, para transmitir información de maneira eficaz, clara e responsable.",
+      "descriptores": []
+    },
+    {
+      "codigo": "12",
+      "descripcion": "Ampliar e usar os repertorios lingüísticos persoais entre distintas linguas, reflexionando de forma crítica sobre o seu funcionamento e tomando conciencia das estratexias e coñecementos propios, para mellorar a resposta a necesidades comunicativas concretas.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "5",
+      "descripcion": "Elaborar contidos propios en distintos formatos, mediante aplicacións e estratexias de recollida e representación de datos usando fontes fiables do presente e da historia contemporánea e xerar produtos orixinais e creativos como proxectos de investigación, incidindo no uso de mapas e outras representacións gráficas, como a interpretación de imaxes, e utilizar secuencias cronolóxicas nas que identificar, comparar e relacionar feitos e procesos en diferentes períodos e lugares históricos."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Identificar os elementos da contorna física e humana e comprender o seu funcionamento e analizar as súas relacións naturais e humanas, presentes e pasadas, valorando o grao de conservación e de equilibrio dinámico."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Idear e adoptar, cando sexa posible, comportamentos e accións que contribúan á conservación e mellora da contorna natural, rural e urbana, a través do respecto a todos os seres vivos e defendendo o acceso universal, xusto e equitativo aos recursos que nos ofrece o planeta."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "1",
+      "descripcion": "Coñecer os obxectivos de desenvolvemento sustentable, realizando propostas que contribúan ao seu logro."
+    },
+    {
+      "codigo": "1.5",
+      "competencia": "2",
+      "descripcion": "Recoñecer os trazos que van conformando a identidade propia e dos demais, a riqueza das identidades múltiples en relación con distintas escalas espaciais e o recoñecemento das súas expresións culturais."
+    },
+    {
+      "codigo": "1.6",
+      "competencia": "1",
+      "descripcion": "Identificar os principais feitos históricos nos diferentes contextos e valorar os cambios que propiciaron nos aspectos ideolóxicos, sociais, políticos e económicos e xustificar que feitos do pasado teñen unha incidencia no presente."
+    },
+    {
+      "codigo": "1.7",
+      "competencia": "1",
+      "descripcion": "Valorar, protexer e conservar o patrimonio artístico, histórico e cultural como fundamento da nosa identidade colectiva, considerándoo un ben para o gozo recreativo e cultural e un recurso para o desenvolvemento dos pobos, e apreciando o legado histórico, institucional, artístico e cultural como patrimonio común."
+    },
+    {
+      "codigo": "1.8",
+      "competencia": "2",
+      "descripcion": "Rexeitar actitudes discriminatorias e recoñecer a riqueza da diversidade que conformou a sociedade globalizada e multicultural actual, recoñecendo a achega dos movementos en defensa dos dereitos das minorías e en favor da inclusión e a igualdade real, especialmente das mulleres e doutros colectivos discriminados, e xerando unha conciencia solidaria mediante o traballo en equipo, mediación e resolución pacífica de conflitos."
+    },
+    {
+      "codigo": "1.9",
+      "competencia": "3",
+      "descripcion": "Coñecer, valorar e exercitar responsabilidades, dereitos e deberes e actuar en favor do seu desenvolvemento e a defensa dos valores constitucionais e democráticos."
+    },
+    {
+      "codigo": "1.10",
+      "competencia": "3",
+      "descripcion": "Contribuír á consecución dun mundo máis seguro, xusto, solidario e sustentable, a través da análise dos principais conflitos do presente e o recoñecemento das institucións do Estado, e das asociacións civís que garanten a seguridade integral e a convivencia social, así como dos compromisos internacionais do noso país en favor da paz, a seguridade, a cooperación, a sustentabilidade, os valores democráticos e os obxectivos de desenvolvemento sustentable."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "12",
+      "descripcion": "Recoñecer e valorar as linguas oficiais de España e as súas variedades dialectais, con atención especial ao galego e ao castelán, a partir da explicación da súa orixe e seu desenvolvemento histórico e sociolingüístico, contrastando aspectos lingüísticos e discursivos das distintas linguas, así como trazos dos dialectos do español e do galego, diferenciándoos dos trazos sociolectais e de rexistro, en manifestacións orais, escritas e multimodais."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "12",
+      "descripcion": "Identificar e cuestionar prexuízos e estereotipos lingüísticos, adoptando unha actitude de respecto e valoración da riqueza cultural, lingüística e dialectal a partir da análise da diversidade lingüística en contextos comunicativos cotiáns dos ámbitos persoal e profesional e da exploración e reflexión sociolingüística sobre os fenómenos de contacto entre linguas e da indagación dos dereitos lingüísticos individuais e colectivos."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "12",
+      "descripcion": "Identificar e evitar os usos discriminatorios da lingua, os abusos a través da palabra e os usos manipuladores da linguaxe a partir da reflexión e da análise dos elementos lingüísticos, textuais e discursivos utilizados, así como dos elementos non verbais da comunicación."
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "4",
+      "descripcion": "Utilizar estratexias para a resolución dialogada dos conflitos e a procura de consensos, tanto no ámbito persoal como educativo e social e profesional."
+    },
+    {
+      "codigo": "2.5",
+      "competencia": "12",
+      "descripcion": "Aceptar e valorar a diversidade lingüística e cultural como fonte de enriquecemento persoal, mostrando interese por compartir elementos culturais e lingüísticos que fomenten a sustentabilidade e a democracia."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "4",
+      "descripcion": "Comprender o sentido global, a estrutura, a información máis relevante en función das necesidades comunicativas e a intención do emisor en textos orais, escritos e multimodais de certa complexidade de diferentes ámbitos, analizando a interacción entre os diferentes códigos, realizando as inferencias necesarias e atendendo a distintos propósitos de lectura."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "4",
+      "descripcion": "Valorar a forma e o contido de textos orais, escritos e multimodais de certa complexidade, avaliando a calidade, fiabilidade e idoneidade da canle utilizada, así como a eficacia dos procedementos comunicativos e lingüísticos empregados."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "4",
+      "descripcion": "Realizar exposicións e argumentacións orais de certa extensión e complexidade con diferente grao de planificación sobre temas de interese persoal, social, educativo e profesional, axustándose ás convencións propias dos diversos xéneros discursivos, con fluidez, coherencia, cohesión e o rexistro adecuado en diferentes soportes, utilizando de maneira eficaz recursos verbais e non verbais."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "4",
+      "descripcion": "Participar de maneira activa e adecuada en interaccións orais informais, no traballo e en situacións orais formais de carácter dialogado, con actitudes de escoita activa e estratexias de cooperación conversacional e cortesía lingüística."
+    },
+    {
+      "codigo": "3.5",
+      "competencia": "4",
+      "descripcion": "Planificar a redacción de textos escritos e multimodais de certa extensión atendendo á situación comunicativa, destinatario, propósito e canle; redactar borradores e revisalos coa axuda do diálogo entre iguais e instrumentos de consulta, e presentar un texto final coherente, cohesionado e co rexistro axeitado."
+    },
+    {
+      "codigo": "3.6",
+      "competencia": "7",
+      "descripcion": "Incorporar procedementos para enriquecer os textos atendendo a aspectos discursivos, lingüísticos e de estilo, con precisión léxica e corrección ortográfica e gramatical."
+    },
+    {
+      "codigo": "3.7",
+      "competencia": "5",
+      "descripcion": "Localizar, seleccionar e contrastar información de maneira progresivamente autónoma procedente de diferentes fontes, tanto analóxicas como dixitais, evitando os riscos de manipulación e desinformación e calibrando a súa fiabilidade e pertinencia en función dos obxectivos de lectura; organizar e integrar a información en esquemas propios, e reelaborala e comunicala de maneira creativa adoptando un punto de vista crítico, respectando os principios de propiedade intelectual."
+    },
+    {
+      "codigo": "3.8",
+      "competencia": "5",
+      "descripcion": "Elaborar traballos de investigación de maneira progresivamente autónoma en diferentes soportes sobre diversos temas de interese académico, persoal ou social a partir da información seleccionada."
+    },
+    {
+      "codigo": "3.9",
+      "competencia": "7",
+      "descripcion": "Revisar os textos propios de maneira progresivamente autónoma e facer propostas de mellora argumentando as mudanzas a partir da reflexión metalingüística coa metalinguaxe específica,"
+    },
+    {
+      "codigo": "3.10",
+      "competencia": "4",
+      "descripcion": "Explicar e argumentar a interrelación entre o propósito comunicativo e as eleccións lingüísticas do emisor, así como os seus efectos no receptor, utilizando o coñecemento explícito da lingua e a metalinguaxe específica."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Comprender o sentido global, a estrutura, a información máis relevante en función das necesidades comunicativas e da intención do emisor en textos orais, escritos e multimodais de certa complexidade de diferentes ámbitos, analizando a interacción entre os diferentes códigos, realizando as inferencias necesarias e atendendo a diferentes propósitos de lectura."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Valorar a forma e o contido de textos orais, escritos e multimodais de certa complexidade, avaliando a calidade, fiabilidade e idoneidade da canle utilizada, así como a eficacia dos procedementos comunicativos e lingüísticos empregados."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "7",
+      "descripcion": "Incorporar procedementos para enriquecer os textos atendendo a aspectos discursivos, lingüísticos e de estilo, con precisión léxica e corrección ortográfica e gramatical."
+    },
+    {
+      "codigo": "4.4",
+      "competencia": "6",
+      "descripcion": "Ler de maneira autónoma textos seleccionados en función dos propios gustos, intereses e necesidades, e deixar constancia do progreso do propio itinerario lector e cultural explicando os criterios de selección das lecturas, as formas de acceso á cultura literaria e a experiencia de lectura."
+    },
+    {
+      "codigo": "4.5",
+      "competencia": "6",
+      "descripcion": "Compartir a experiencia de lectura en soportes diversos relacionando o sentido da obra coa propia experiencia biográfica, lectora e cultural."
+    },
+    {
+      "codigo": "4.6",
+      "competencia": "6",
+      "descripcion": "Explicar e argumentar a interpretación das obras lidas a partir da análise das relacións internas dos seus elementos constitutivos co sentido da obra e das relacións externas do texto co seu contexto sociohistórico, atendendo á configuración e evolución dos xéneros e subxéneros literarios."
+    },
+    {
+      "codigo": "4.7",
+      "competencia": "6",
+      "descripcion": "Establecer de maneira progresivamente autónoma vínculos argumentados entre os textos lidos e outros textos escritos, orais ou multimodais e outras manifestacións artísticas e culturais en función de temas, tópicos, estruturas, linguaxe e valores éticos e estéticos, mostrando a implicación e a resposta persoal do alumnado na lectura."
+    },
+    {
+      "codigo": "4.8",
+      "competencia": "6",
+      "descripcion": "Crear textos persoais ou colectivos con intención literaria e conciencia de estilo, en distintos soportes e coa axuda doutras linguaxes artísticas e audiovisuais, a partir da lectura de obras ou fragmentos significativos en que se empreguen as convencións formais dos diversos xéneros e estilos literarios."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "7",
+      "descripcion": "Incorporar procedementos para enriquecer os textos atendendo a aspectos discursivos, lingüísticos e de estilo, con precisión léxica e corrección ortográfica e gramatical."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "7",
+      "descripcion": "Revisar os textos propios de maneira progresivamente autónoma e facer propostas de mellora argumentando as mudanzas a partir da reflexión metalingüística coa metalinguaxe específica, e identificar e solucionar algúns problemas de comprensión lectora utilizando os coñecementos explícitos sobre a lingua e o seu uso."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "7",
+      "descripcion": "Explicar e argumentar a interrelación entre o propósito comunicativo e as eleccións lingüísticas do emisor, así como os seus efectos no receptor, utilizando o coñecemento explícito da lingua e a metalinguaxe específica."
+    },
+    {
+      "codigo": "5.4",
+      "competencia": "7",
+      "descripcion": "Formular xeneralizacións sobre algúns aspectos do funcionamento da lingua a partir da manipulación, comparación e transformación de enunciados, así como da formulación de hipóteses e a procura de contraexemplos, utilizando a metalinguaxe específica e consultando de maneira progresivamente autónoma dicionarios, manuais e gramáticas."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "8",
+      "descripcion": "Extraer e analizar o sentido global e as ideas principais, e seleccionar de forma guiada información pertinente de textos orais, escritos e multimodais sobre temas cotiáns, de relevancia persoal ou de interese público próximos á experiencia do alumnado, expresados de forma clara e na lingua estándar a través de diversos soportes."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "8",
+      "descripcion": "Interpretar e, de forma guiada, valorar o contido e os trazos discursivos de textos progresivamente máis complexos propios dos ámbitos das relacións interpersoais, dos medios de comunicación social e da aprendizaxe, así como de textos literarios adecuados ao nivel de madurez do alumnado."
+    },
+    {
+      "codigo": "6.3",
+      "competencia": "8",
+      "descripcion": "Seleccionar, organizar e aplicar as estratexias e coñecementos máis adecuados en cada situación comunicativa para comprender o sentido xeral, a información esencial e os detalles máis relevantes dos textos; inferir significados e interpretar elementos non verbais; e buscar e seleccionar información veraz."
+    },
+    {
+      "codigo": "6.4",
+      "competencia": "9",
+      "descripcion": "Expresar oralmente textos sinxelos, estruturados, comprensibles, coherentes e adecuados á situación comunicativa sobre asuntos cotiáns, de relevancia persoal ou de interese público próximo á experiencia do alumnado, co fin de describir, narrar e informar en diferentes soportes, utilizando recursos verbais e non verbais, así como estratexias de planificación, control, compensación e cooperación básicas."
+    },
+    {
+      "codigo": "6.5",
+      "competencia": "9",
+      "descripcion": "Redactar e difundir textos de extensión media con aceptable claridade, coherencia, cohesión, corrección e adecuación á situación comunicativa proposta, á tipoloxía textual e ás ferramentas analóxicas e dixitais utilizadas, seguindo pautas establecidas, sobre asuntos cotiáns, de relevancia persoal ou de interese público próximos á experiencia do alumnado, respectando a propiedade intelectual e evitando o plaxio."
+    },
+    {
+      "codigo": "6.6",
+      "competencia": "9",
+      "descripcion": "Seleccionar, organizar e aplicar coñecementos e estratexias para planificar, producir, revisar e cooperar na elaboración de textos coherentes, cohesionados e adecuados ás intencións comunicativas, a características contextuais, aos aspectos socioculturais e á tipoloxía textual, usando os recursos físicos ou dixitais máis adecuados en función da tarefa e das necesidades do interlocutor ou interlocutora potencial a quen vai dirixido o texto."
+    },
+    {
+      "codigo": "6.7",
+      "competencia": "10",
+      "descripcion": "Planificar, participar e colaborar de maneira activa, a través de diversos soportes, en situacións interactivas sobre temas cotiáns, de relevancia persoal ou de interese público próximos á experiencia do alumnado, mostrando iniciativa, empatía e respecto pola cortesía lingüística e a etiqueta dixital, así como polas diferentes necesidades, ideas, inquietudes, iniciativas e motivacións dos interlocutores e interlocutoras."
+    },
+    {
+      "codigo": "6.8",
+      "competencia": "10",
+      "descripcion": "Seleccionar, organizar e utilizar de forma guiada estratexias adecuadas para iniciar, manter e terminar a comunicación, tomar e ceder a palabra, solicitar e formular aclaracións e explicacións, resumir, colaborar, debater e resolver problemas."
+    },
+    {
+      "codigo": "6.9",
+      "competencia": "11",
+      "descripcion": "Inferir e explicar textos, conceptos e comunicacións breves e sinxelas en situacións nas que atender á diversidade, mostrando respecto e empatía polos interlocutores e interlocutoras, así como"
+    },
+    {
+      "codigo": "6.10",
+      "competencia": "11",
+      "descripcion": "Aplicar estratexias que axuden a crear pontes, faciliten a comunicación e sirvan para explicar e simplificar textos e mensaxes, e que sexan adecuadas ás intencións comunicativas, ás características contextuais e á tipoloxía textual, usando recursos e apoios físicos ou dixitais en función das necesidades de cada momento."
+    },
+    {
+      "codigo": "6.11",
+      "competencia": "12",
+      "descripcion": "Comparar e, de forma guiada, argumentar as semellanzas e diferenzas entre distintas linguas reflexionando de maneira progresivamente autónoma sobre o seu funcionamento."
+    },
+    {
+      "codigo": "6.12",
+      "competencia": "12",
+      "descripcion": "Utilizar de forma creativa estratexias e coñecementos de mellora da capacidade de comunicar e de aprender a lingua estranxeira con apoio doutros participantes e de soportes analóxicos e dixitais."
+    },
+    {
+      "codigo": "6.13",
+      "competencia": "12",
+      "descripcion": "Rexistrar e analizar, de forma guiada, os progresos e dificultades de aprendizaxe da lingua estranxeira, seleccionando, con axuda, as estratexias máis eficaces para superar esas dificultades e consolidar o seu progreso, facéndoos explícitos e compartíndoos, por medio de actividades de planificación da propia aprendizaxe, autoavaliación e coavaliación, como as propostas no Portfolio europeo das linguas (PEL) ou nun diario de aprendizaxe."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "Bloque 1. Ciencias Sociais",
+      "titulo": "Ciencias Sociais",
+      "items": [
+        "Retos do mundo actual.",
+        "Obxectivos e estratexias das ciencias sociais: procedementos, termos e conceptos e métodos de investigación no ámbito da xeografía e da historia.",
+        "Procura de información en contornas dixitais e uso específico de léxico relativo aos ámbitos histórico, artístico e xeográf",
+        "O comentario de documentos escritos e gráficos. Exposición de ideas e argumentos sobre diferentes temas que se abordan no curso.",
+        "A transformación humana do territorio. O espazo natural, rural e urbano e a súa evolución en España e Galicia.",
+        "Os sectores produtivos na Unión Europea, España e Galicia. A Unión Europea como exemplo do funcionamento dos mercados.",
+        "Igualdade de xénero e formas de violencia contra as mulleres. Actitudes e comportamentos sexistas.",
+        "Sociedades e territorios.",
+        "Os réximes demográficos e o reto demográfico en España e Galicia. Migracións, multiculturalidade e mestizaxe que dan como resultado a diversidade social, ético-cultural e de xénero.",
+        "A distribución desigual de recursos e traballo. O emprego na sociedade actual.",
+        "Do éxodo rural á concentración urbana e o problema do despoboamento rural. A importancia do espazo público.",
+        "Organización política e económica das sociedades. Ordenamento normativo autonómico, constitucional e supranacional. Cidadanía europea e cosmopolita. España e Galicia na UE.",
+        "A transformación política dos seres humanos: da servidume á cidadanía. Transicións, revolucións e resistencias: permanencias e cambios na época contemporánea. A conquista dos dereitos individuais e colectivos na época contemporánea. Orixe, evolución e adaptación dos sistemas liberais en España e no mundo a través das fontes.",
+        "Revolucións industriais e nacemento dunha nova sociedade.",
+        "A participación da muller nos procesos históricos do século XVIII.",
+        "As características xerais das novas expresións artísticas e culturais ata a metade do XIX. A personalidade independente de Goya. O patrimonio como ben e como recurso.",
+        "Compromiso cívico e social.",
+        "Implicación na defensa e protección do ambiente. Acción e posición ante a emerxencia climática."
+      ],
+      "codigos_items": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4",
+        "1.5",
+        "1.6",
+        "1.7",
+        "1.8",
+        "1.9",
+        "1.10",
+        "1.11",
+        "1.12",
+        "1.13",
+        "1.14",
+        "1.15",
+        "1.16",
+        "1.17",
+        "1.18"
+      ]
+    },
+    {
+      "codigo": "2",
+      "bloque": "Bloque 2. As linguas e os seus falantes",
+      "titulo": "As linguas e os seus falantes",
+      "items": [
+        "Exploración e rexeitamento de prexuízos e estereotipos lingüísticos. Os fenómenos do contacto entre linguas: bilingüismo, diglosia, préstamos, interferencias.",
+        "Detección de usos discriminatorios da linguaxe verbal e non verbal. Valoración da forma e do contido do texto.",
+        "Análise da diversidade lingüística do contorno. Biografía lingüística.",
+        "Desenvolvemento sociohistórico das linguas de España, con especial atención ao galego e ao castelán.",
+        "Desenvolvemento da reflexión interlingüística."
+      ],
+      "codigos_items": [
+        "2.1",
+        "2.2",
+        "2.3",
+        "2.4",
+        "2.5"
+      ]
+    },
+    {
+      "codigo": "3",
+      "bloque": "Bloque 3. Comunicación en lingua castelá e lingua galega",
+      "titulo": "Comunicación en lingua castelá e lingua galega",
+      "items": [
+        "Contexto vinculado ás estratexias de produción, comprensión e análise de textos orais, escritos e multimodais de diferentes ámbitos: compoñentes do feito comunicativo.",
+        "Análise das compoñentes do feito comunicativo: grao de formalidade da situación e carácter público ou privado; distancia social entre os interlocutores; propósitos comunicativos e interpretación de intencións; canle de comunicación e elementos non verbais da comunicación.",
+        "Xéneros discursivos desde o punto de vista da produción, comprensión e análise de textos orais, escritos e multimodais.",
+        "Comprensión e creación de secuencias textuais básicas con especial atención ás expositivas.",
+        "Emprego correcto das propiedades textuais: coherencia, cohesión e adecuación.",
+        "Xéneros discursivos propios do ámbito persoal: a conversa, con especial atención aos actos de fala que ameazan a imaxe do interlocutor (a discrepancia, a queixa, a orde, a reprobación).",
+        "Xéneros discursivos propios do ámbito educativo: a estrutura e as principais características dos textos científicos, técnicos e humanísticos (explicación, exposición...).",
+        "Xéneros discursivos propios do ámbito social. Redes sociais e medios de comunicación. Etiqueta dixital e riscos de desinformación, noticias falsas, manipulación e vulneración da privacidade. O ciberanzol. Análise da imaxe e dos elementos paratextuais dos textos icónico-verbais e multimodais.",
+        "Procesos de produción, comprensión e análise de textos orais, escritos e multimodais.",
+        "Interacción oral e escrita de carácter informal e formal. Cooperación conversacional e cortesía lingüística. Escoita activa, asertividade e resolución dialogada dos conflitos. Comunicación emocional.",
+        "Comprensión oral: sentido global do texto e relación entre as súas partes, selección e retención da información relevante. A intención do emisor.",
+        "Produción oral formal. Planificación e procura de información, textualización e revisión. Adecuación á audiencia e ao tempo de exposición. Elementos non verbais. Trazos discursivos e lingüísticos da oralidade formal. A deliberación oral argumentada.",
+        "Comprensión lectora: sentido global do texto e relación entre as súas partes. A intención do emisor. Detección de usos discriminatorios da linguaxe verbal e icónica. Valoración da forma e do contido do texto.",
+        "Produción escrita. Planificación, redacción, revisión e edición en diferentes soportes. Corrección gramatical e ortográfica. Propiedade léxica. Usos da escritura para a organización do pensamento: toma de notas, esquemas, mapas conceptuais, resumos etc.",
+        "Alfabetización informacional.",
+        "Busca e selección da información con criterios de fiabilidade, calidade e pertinencia; análise, valoración, reorganización e síntese da información en esquemas propios.",
+        "Fontes de información: criterios de procura e selección de información fiable, pertinente e de calidade.",
+        "Comunicación e difusión da información de maneira creativa e respectuosa coa propiedade intelectual.",
+        "Estratexias de procura e selección de información.",
+        "Análise dos riscos e consecuencias da manipulación e da desinformación.",
+        "Estratexias de organización da información: a escritura como mecanismo para organizar o pensamento (notas,",
+        "Achegamento ao emprego correcto do sistema de citación e uso das referencias bibliográficas nas creacións propias.",
+        "Utilización responsable das tecnoloxías da información e da comunicación. Dispositivos, aplicacións informáticas e plataformas dixitais, tanto para a procura de información, como para a realización de proxectos escolares.",
+        "Recoñecemento e uso discursivo dos elementos lingüísticos en textos orais, escritos e multimodais.",
+        "Identificación e emprego de recursos lingüísticos para amosar a implicación do emisor nos textos: formas de deíxe (persoal, temporal e espacial) e procedementos de modalización.",
+        "Uso coherente das formas verbais nos textos. Os tempos de pretérito na narración. Correlación temporal no discurso relatado.",
+        "Uso coherente das formas verbais nos textos. Recoñecemento e utilización do infinitivo flexionado e do futuro de subxuntivo. Contextos de uso.",
+        "Corrección lingüística e revisión ortográfica e gramatical dos textos. Uso de dicionarios, manuais de consulta e de correctores ortográficos en soporte analóxico ou dixital.",
+        "Emprego correcto dos signos de puntuación como mecanismo organizador do texto escrito. A súa relación co significado."
+      ],
+      "codigos_items": [
+        "3.1",
+        "3.2",
+        "3.3",
+        "3.4",
+        "3.5",
+        "3.6",
+        "3.7",
+        "3.8",
+        "3.9",
+        "3.10",
+        "3.11",
+        "3.12",
+        "3.13",
+        "3.14",
+        "3.15",
+        "3.16",
+        "3.17",
+        "3.18",
+        "3.19",
+        "3.20",
+        "3.21",
+        "3.22",
+        "3.23",
+        "3.24",
+        "3.25",
+        "3.26",
+        "3.27",
+        "3.28",
+        "3.29"
+      ]
+    },
+    {
+      "codigo": "4",
+      "bloque": "Bloque 4. Educación literaria",
+      "titulo": "Educación literaria",
+      "items": [
+        "Lectura autónoma.",
+        "Expresión, a través de modelos, da experiencia lectora e de diferentes formas de apropiación e recreación dos textos lidos.",
+        "Lectura expresiva, dramatización e recitado dos textos escritos en lingua castelá atendendo aos procesos de comprensión, apropiación e oralización implicados.",
+        "Lectura expresiva, dramatización e recitación dos textos escritos en lingua galega atendendo aos procesos de comprensión, apropiación e oralización implicados.",
+        "Lectura expresiva, dramatización e recitación dos textos atendendo aos procesos de comprensión, apropiación e oralización implicados.",
+        "Lectura guiada.",
+        "Lectura guiada de fragmentos de obras relevantes do patrimonio literario español a partir da Idade Media ata o século XVIII.",
+        "Lectura guiada de fragmentos de obras relevantes do patrimonio literario galego desde a Idade Media ata o século XIX.",
+        "Lectura guiada de fragmentos de obras relevantes do patrimonio literario universal da Idade Media ata o século XVIII.",
+        "Estratexias de construción compartida da interpretación das obras. Discusións ou conversacións literarias, debates e disertacións literarias.",
+        "Estratexias de utilización de información sociohistórica, cultural e artística básica para construír a interpretación das obras literarias, en concreto, o achegamento ao contexto, á corrente literaria e ao autor ou autora, así como o establecemento de parentescos literarios.",
+        "Relación e comparación dos textos lidos en lingua galega e lingua castelá con outros textos orais, escritos ou multimodais, con outras manifestacións artísticas e coas novas formas de ficción en función de temas, estruturas e linguaxes.",
+        "Estratexias para interpretar obras e fragmentos literarios, atendendo aos valores culturais, éticos e estéticos presentes nos textos. Lectura con perspectiva de xénero. Visibilización do universo feminino. Lectura con",
+        "erspectiva ambiental e ecolóxica, con especial incidencia na mudanza climática e na protección e benestar dos animais.",
+        "Creación de textos a partir da apropiación das convencións da linguaxe literaria e en referencia a modelos dados (imitación, transformación, continuación etc.)."
+      ],
+      "codigos_items": [
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4",
+        "4.5",
+        "4.6",
+        "4.7",
+        "4.8",
+        "4.9",
+        "4.10",
+        "4.11",
+        "4.12",
+        "4.13",
+        "4.14",
+        "4.15"
+      ]
+    },
+    {
+      "codigo": "5",
+      "bloque": "Bloque 5. Reflexión sobre a lingua",
+      "titulo": "Reflexión sobre a lingua",
+      "items": [
+        "Estratexias de construción guiada de conclusións propias sobre o sistema lingüístico. Observación, comparación e clasificación de unidades comunicativas (morfemas, palabras, oracións). Manipulación de estruturas, formulación de hipóteses, contraexemplos, xeneralizacións e contraste entre linguas, co uso da metalinguaxe específica.",
+        "Observación das diferenzas relevantes e interseccións entre lingua oral e lingua escrita atendendo a aspectos sintácticos, léxicos e pragmáticos.",
+        "Distinción entre a forma (categoría gramatical) e a función das palabras (funcións sintácticas da oración simple).",
+        "Relación entre os esquemas semántico e sintáctico das oracións coordinadas. Observación e transformación de enunciados de acordo con estes esquemas e uso da terminoloxía sintáctica necesaria.",
+        "Procedementos de adquisición e formación de palabras. Reflexión sobre as mudanzas no seu significado, as relacións semánticas entre palabras.",
+        "Estratexias de uso progresivamente autónomo de dicionarios e manuais de gramática para obter información gramatical básica. Recursos tecnolóxicos para a aprendizaxe da lingua."
+      ],
+      "codigos_items": [
+        "5.1",
+        "5.2",
+        "5.3",
+        "5.4",
+        "5.5",
+        "5.6"
+      ]
+    },
+    {
+      "codigo": "6",
+      "bloque": "Bloque 6. Comunicación en lingua estranxeira",
+      "titulo": "Comunicación en lingua estranxeira",
+      "items": [
+        "Estratexias e técnicas para a adquisición e o desenvolvemento da autoconfianza e da iniciativa. O erro como parte integrante do proceso de aprendizaxe.",
+        "Estratexias de uso común para a planificación, execución, control e reparación da comprensión, a produción e a coprodución de textos orais, escritos e multimodais.",
+        "Coñecementos, destrezas e actitudes que permiten levar a cabo actividades de mediación en situacións cotiás.",
+        "Funcións comunicativas de uso común adecuadas ao ámbito e ao contexto comunicativo: saudar e despedirse, presentar e presentarse; describir persoas, obxectos, lugares, fenómenos e acontecementos; situar eventos no tempo; situar obxectos, persoas e lugares no espazo; pedir e intercambiar información sobre cuestións cotiás; dar e pedir instrucións, consellos e ordes; ofrecer, aceptar e rexeitar axuda, proposicións ou suxestións; expresar parcialmente o gusto ou o interese e as emocións; narrar acontecementos pasados, describir situacións presentes e enunciar sucesos futuros; expresar a opinión, a posibilidade, a capacidade, a obriga e a prohibición; expresar argumentacións sinxelas; realizar hipóteses e suposicións; expresar a incerteza e a dúbida; reformular e resumir.",
+        "Modelos contextuais e xéneros discursivos de uso común na comprensión, produción e coprodución de textos orais, escritos e multimodais, breves e sinxelos, literarios e non literarios: características e recoñecemento do contexto (participantes e situación), expectativas xeradas polo contexto; organización e estruturación segundo o xénero, a función textual e a estrutura.",
+        "Unidades lingüísticas de uso común e significados asociados ás devanditas unidades, tales como a expresión da entidade e as súas propiedades, cantidade e calidade, o espazo e as relacións espaciais, o tempo e as relacións temporais, a afirmación, a negación, a interrogación e a exclamación, relacións lóxicas habituais.",
+        "Léxico de uso común e de interese para o alumnado, relativo á identificación persoal, relacións interpersoais, lu-",
+        "ares e contornas, lecer e tempo libre, saúde e actividade física, vida cotiá, vivenda e fogar, clima e contorna",
+        "atural, tecnoloxías da información e da comunicación, sistema escolar e formación.",
+        "Padróns sonoros, acentuais, rítmicos e de entoación de uso común, e significados e intencións comunicativas xerais",
+        "sociadas aos devanditos padróns.",
+        "Convencións ortográficas de uso común e significados e intencións comunicativas asociados aos formatos, padróns",
+        "elementos gráficos.",
+        "Convencións e estratexias conversacionais de uso común, en formato síncrono ou asíncrono, para iniciar, manter",
+        "terminar a comunicación, tomar e ceder a palabra, pedir e dar aclaracións e explicacións, reformular, comparar",
+        "contrastar, resumir, colaborar, debater etc.",
+        "Recursos para a aprendizaxe e estratexias de uso común de procura e selección de información: dicionarios, libros",
+        "e consulta, bibliotecas, recursos dixitais e informáticos etc.",
+        "Respecto da propiedade intelectual e dereitos de autor sobre as fontes consultadas e contidos utilizados.",
+        "Ferramentas analóxicas e dixitais de uso común para a comprensión, produción e coprodución oral, escrita e mul-",
+        "imodal; e plataformas virtuais de interacción e colaboración educativa (aulas virtuais, videoconferencias, ferra-",
+        "entas dixitais colaborativas etc.) para a aprendizaxe, a comunicación e o desenvolvemento de proxectos con fa-",
+        "antes ou estudantes da lingua estranxeira.",
+        "Estratexias e técnicas para responder eficazmente e con niveis crecentes de fluidez, adecuación e corrección a",
+        "nha necesidade comunicativa concreta a pesar das limitacións derivadas do nivel de competencia na lingua es-",
+        "ranxeira e nas demais linguas do repertorio lingüístico propio.",
+        "Estratexias de uso común para identificar, organizar, reter, recuperar e utilizar creativamente unidades lingüísti-",
+        "as (léxico, morfosintaxe, padróns sonoros etc.) a partir da comparación das linguas e variedades que conforman",
+        "repertorio lingüístico persoal.",
+        "Estratexias e ferramentas de uso común para a autoavaliación, a coavaliación e a autorreparación, analóxicas e",
+        "ixitais, individuais e cooperativas.",
+        "Expresións e léxico específico de uso común para intercambiar ideas sobre a comunicación, a lingua, a aprendizaxe",
+        "as ferramentas de comunicación e aprendizaxe (metalinguaxe).",
+        "Comparación entre linguas a partir de elementos da lingua estranxeira e outras linguas: orixe e parentescos."
+      ],
+      "codigos_items": [
+        "6.1",
+        "6.2",
+        "6.3",
+        "6.4",
+        "6.5",
+        "6.6",
+        "6.7",
+        "6.8",
+        "6.9",
+        "6.10",
+        "6.11",
+        "6.12",
+        "6.13",
+        "6.14",
+        "6.15",
+        "6.16",
+        "6.17",
+        "6.18",
+        "6.19",
+        "6.20",
+        "6.21",
+        "6.22",
+        "6.23",
+        "6.24",
+        "6.25",
+        "6.26",
+        "6.27",
+        "6.28",
+        "6.29",
+        "6.30",
+        "6.31",
+        "6.32",
+        "6.33",
+        "6.34"
+      ]
+    }
+  ],
+  "comunidad": "galicia",
+  "idioma": "gl"
+}

@@ -1,0 +1,463 @@
+{
+  "materia_oficial": "Educación Física",
+  "materia": "Educación Física",
+  "etapa": "ESO",
+  "ciclo": "4º ESO",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "4º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Adoptar un estilo de vida activo e saudable, seleccionando e incorporando intencionalmente actividades físicas e deportivas nas rutinas diarias, a partir dunha análise crítica dos modelos corporais e do rexeitamento das prácticas que carezan de base científica para facer un uso saudable e autónomo do seu tempo libre e así mellorar a calidade de vida.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Adaptar, con progresiva autonomía na súa execución, as capacidades físicas, perceptivo-motrices e coordinativas, así como as habilidades e destrezas motrices, aplicando procesos de percepción, decisión e execución adecuados á lóxica interna e aos obxectivos de diferentes situacións con dificultade variable, para resolver situacións de carácter motor vinculadas con distintas actividades físicas funcionais, deportivas, expresivas e recreativas e para consolidar actitudes de superación, crecemento e resiliencia ao enfrontarse a desafíos físicos.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Compartir espazos de práctica físico-deportiva con independencia das diferenzas culturais, sociais, de xénero e de habilidade, priorizando o respecto entre os participantes e as regras sobre os resultados, adoptando unha actitude crítica ante comportamentos antideportivos ou contrarios á convivencia e desenvolvendo procesos de autorregulación emocional que canalicen o fracaso e o éxito nestas situacións, para contribuír con progresiva autonomía ao entendemento social e ao compromiso ético nos diferentes espazos en que se participa.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Practicar, analizar e valorar distintas manifestacións da cultura motriz aproveitando as posibilidades e recursos expresivos que ofrecen o corpo e o movemento, afondando nas consecuencias do deporte como fenómeno social e analizando criticamente as súas manifestacións desde a perspectiva de xénero e desde os intereses económico-políticos que o rodean, para alcanzar unha visión máis realista, contextualizada e xusta da motricidade no marco das sociedades actuais.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Adoptar un estilo de vida sostible e ecosocialmente responsable aplicando medidas de seguridade individuais e colectivas na práctica físico-deportiva segundo a contorna e desenvolvendo colaborativa e cooperativamente accións de servizo á comunidade vinculadas á actividade física e ao deporte, para contribuír activamente á conservación do medio natural e urbano.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Planificar e autorregular a práctica de actividade física orientada ao concepto integral de saúde e ao estilo de vida activo, segundo as necesidades e os intereses individuais e respectando a propia realidade e identidade corporal."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Incorporar de forma autónoma os procesos de activación corporal, autoavaliación, autorregulación e dosificación do esforzo, alimentación saudable, educación postural, relaxación e hixiene durante a práctica de actividades motrices, interiorizando as rutinas propias dunha práctica motriz saudable e responsable."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Adoptar actitudes comprometidas que rexeiten os estereotipos sociais asociados ao ámbito do corporal, do xénero e da diversidade sexual, e os comportamentos que poñan en risco a saúde, contrastando con autonomía e independencia calquera información con base en criterios científicos de validez, fiabilidade e obxectividade."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "1",
+      "descripcion": "Planificar, desenvolver e compartir con seguridade a práctica física cotiá manexando recursos e aplicacións dixitais vinculados ao ámbito da actividade física e do deporte."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "1",
+      "descripcion": "Actuar de acordo cos protocolos de intervención ante situacións de emerxencia ou accidentes aplicando medidas específicas de primeiros auxilios."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "1",
+      "descripcion": "Planificar, desenvolver e compartir con seguridade a práctica física cotiá manexando recursos e aplicacións dixitais vinculados ao ámbito da actividade física e do deporte."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Desenvolver proxectos motores de carácter individual, cooperativo ou colaborativo, establecendo mecanismos para reconducir os procesos de traballo e asegurar unha participación equilibrada, incluíndo estratexias de autoavaliación e coavaliación tanto do proceso como do resultado."
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "3",
+      "descripcion": "Participar activamente nunha gran variedade de actividades motrices asumindo responsabilidades na organización, xestión e preparación destas."
+    },
+    {
+      "codigo": "2.5",
+      "competencia": "5",
+      "descripcion": "Coñecer as normas de seguridade individuais e colectivas valorando a súa importancia e aplicándoas na práctica de actividades motrices, dentro e fóra do centro escolar."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "1",
+      "descripcion": "Planificar, desenvolver e compartir con seguridade a práctica física cotiá manexando recursos e aplicacións dixitais vinculados ao ámbito da actividade física e do deporte."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "2",
+      "descripcion": "Desenvolver proxectos motores de carácter individual, cooperativo ou colaborativo, establecendo mecanismos para reconducir os procesos de traballo e asegurar unha participación equilibrada, incluíndo estratexias de autoavaliación e coavaliación tanto do proceso como do resultado."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "2",
+      "descripcion": "Mostrar habilidades para a adaptación e a actuación ante situacións cunha elevada incerteza, aproveitando eficientemente as propias capacidades e aplicando de maneira automática procesos de percepción, decisión e execución en contextos reais ou simulados de actuación, reflexionando sobre as solucións e os resultados obtidos."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "2",
+      "descripcion": "Evidenciar control e dominio corporal ao empregar os compoñentes cualitativos e cuantitativos da motricidade de maneira eficiente e creativa, resolvendo problemas en todo tipo de situacións motrices transferibles ao seu espazo vivencial con autonomía."
+    },
+    {
+      "codigo": "3.5",
+      "competencia": "3",
+      "descripcion": "Colaborar na práctica de diferentes producións motrices e proxectos para alcanzar o logro individual e grupal, participando con autonomía na toma de decisións vinculadas á asignación de roles, á xestión do tempo de práctica e á optimización do resultado final."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "3",
+      "descripcion": "Practicar e participar activamente asumindo responsabilidades na organización nunha gran variedade de actividades motrices, valorando as implicacións éticas das prácticas antideportivas, adoptando estratexias de superación, evitando a competitividade desmedida e actuando con deportividade ao asumir os roles de público, participante ou outros."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "3",
+      "descripcion": "Relacionarse e entenderse co resto de participantes durante o desenvolvemento de diversas prácticas motrices con autonomía, facendo uso efectivo de habilidades sociais de diálogo na resolución de conflitos e respecto ante a diversidade de competencia motriz, situándose activamente fronte aos estereotipos e ás actuacións discriminatorias e fronte a calquera tipo de violencia e facendo respectar o propio corpo e o dos demais."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Adoptar actitudes comprometidas e conscientes acerca dos distintos estereotipos de xénero e comportamentos sexistas que se seguen producindo nalgúns contextos da motricidade, identificando os factores que contribúen ao seu mantemento e axudando a difundir referentes de distintos xéneros no ámbito físico-deportivo."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "4",
+      "descripcion": "Identificar e contextualizar a influencia social do deporte nas sociedades actuais, valorando as súas orixes, evolución, distintas manifestacións e intereses económico-políticos, practicando diversas modalidades relacionadas coa cultura propia, coa tradicional ou coas procedentes doutros lugares do mundo."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "4",
+      "descripcion": "Crear e representar composicións individuais ou colectivas con e sen base musical e de maneira coordinada, utilizando intencionadamente e con autonomía o corpo e o movemento como ferramenta de expresión e comunicación a través de diversas técnicas expresivas específicas e axudando a difundir e a compartir estas prácticas culturais entre compañeiros ou outros membros da comunidade."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "1",
+      "descripcion": "Adoptar de maneira responsable e autónoma medidas específicas para a prevención de lesións antes, durante e despois da práctica de actividade física, aprendendo a recoñecer situacións de risco para actuar preventivamente."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "5",
+      "descripcion": "Participar en actividades físico-deportivas en contornas urbanas e naturais, terrestres ou acuáticos, gozando destas de maneira sostible, minimizando o impacto ambiental que estas poidan producir, sendo conscientes da súa pegada ecolóxica e desenvolvendo actuacións intencionadas dirixidas á conservación e á mellora das condicións dos espazos en que se desenvolvan."
+    },
+    {
+      "codigo": "6.3",
+      "competencia": "5",
+      "descripcion": "Deseñar e organizar actividades físico-deportivas no medio natural e urbano, asumindo responsabilidades e aplicando normas de seguridade individuais e colectivas."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "Bloque 1. Vida activa e saudable",
+      "titulo": "Vida activa e saudable",
+      "items": [
+        "Saúde física: Control de resultados e variables fisiolóxicas básicas como consecuencia do exercicio físico.",
+        "Saúde física: Autoavaliación das capacidades físicas (como requisito previo á planificación): probas de valoración.",
+        "Saúde física: Autorregulación e planificación do adestramento.",
+        "Saúde física: Alimentación saudable.",
+        "Saúde física: Educación postural: movementos, posturas e estiramentos ante dores musculares.",
+        "Saúde física: Coidado do corpo: quecemento específico autónomo.",
+        "Saúde física: Prácticas insás perigosas, mitos e falsas crenzas arredor do corpo e da actividade física.",
+        "Saúde física: Reflexión crítica sobre a importancia das medidas e pautas de hixiene en contextos de práctica de actividade física.",
+        "Saúde social: Suplementación e dopaxe no deporte.",
+        "Saúde social: Riscos e condicionantes éticos.",
+        "Saúde mental: Exixencias e presións da competición.",
+        "Saúde mental: Tipoloxías corporais predominantes na sociedade e análise crítica da súa presenza nos medios de comunicación e nas redes sociais.",
+        "Saúde mental: Efectos negativos dos modelos estéticos predominantes e trastornos vinculados ao culto insán ao corpo.",
+        "Saúde mental: Creación dunha identidade corporal definida e consolidada afastada de estereotipos sexistas."
+      ],
+      "codigos_items": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4",
+        "1.5",
+        "1.6",
+        "1.7",
+        "1.8",
+        "1.9",
+        "1.10",
+        "1.11",
+        "1.12",
+        "1.13",
+        "1.14"
+      ]
+    },
+    {
+      "codigo": "2",
+      "bloque": "Bloque 2. Organización e xestión da actividade física",
+      "titulo": "Organización e xestión da actividade física",
+      "items": [
+        "Elección da práctica física: xestión e enfoque dos diferentes usos e finalidades da actividade física e do deporte en función do contexto, da actividade e dos compañeiros e compañeiras de realización.",
+        "Preparación da práctica motriz: disposición, mantemento e reparación de material deportivo.",
+        "Planificación e autorregulación de proxectos motores: Establecemento de mecanismos para rexistrar e controlar as achegas realizadas polos integrantes do grupo ao longo dun proxecto.",
+        "Planificación e autorregulación de proxectos motores: Ferramentas dixitais para a xestión da actividade física.",
+        "Prevención de accidentes nas prácticas motrices: Xestión do risco propio e do dos demais, medidas colectivas de seguridade.",
+        "Actuacións críticas ante accidentes: Reanimación mediante desfibrilador automático (DEA) ou semiautomático (DESA).",
+        "Actuacións críticas ante accidentes: Protocolo RCP (reanimación cardiopulmonar).",
+        "Técnicas específicas e indicios de accidentes cardiovasculares (manobra de Heimlich, sinais de ictus e similares)."
+      ],
+      "codigos_items": [
+        "2.1",
+        "2.2",
+        "2.3",
+        "2.4",
+        "2.5",
+        "2.6",
+        "2.7",
+        "2.8"
+      ]
+    },
+    {
+      "codigo": "3",
+      "bloque": "Bloque 3. Resolución de problemas en situacións motrices",
+      "titulo": "Resolución de problemas en situacións motrices",
+      "items": [
+        "Toma de decisións: Procura de adaptacións motrices para resolver eficientemente tarefas de certa complexidade en situacións motrices individuais.",
+        "Toma de decisións: Resolución coordinada en situacións motrices cooperativas.",
+        "Toma de decisións: Elección dunha resposta óptima en función do movemento do rival, así como da situación do móbil, se o hai.",
+        "Toma de decisións: Organización anticipada das accións individuais en función das características do contrario en situacións de oposición de contacto.",
+        "Toma de decisións: Delimitación de estratexias previas de ataque e defensa en función das características dos integrantes do equipo propio e do rival en situacións motrices de colaboración-oposición, de persecución e de interacción cun móbil.",
+        "Capacidades perceptivo-motrices nun contexto de práctica: integración do esquema corporal e toma de decisións previas á realización dunha actividade motriz acerca dos mecanismos coordinativos, espaciais e temporais para resolvela adecuadamente.",
+        "Capacidades condicionais, planificación para o desenvolvemento das capacidades físicas básicas (forza e resistencia): Sistemas de adestramento.",
+        "Habilidades motrices específicas en actividades físico-deportivas: afondamento, execución, identificación e corrección dos erros máis comúns.",
+        "Creatividade motriz: creación de retos e situacións-problema con resolución posible de acordo cos recursos dispoñibles."
+      ],
+      "codigos_items": [
+        "3.1",
+        "3.2",
+        "3.3",
+        "3.4",
+        "3.5",
+        "3.6",
+        "3.7",
+        "3.8",
+        "3.9"
+      ]
+    },
+    {
+      "codigo": "4",
+      "bloque": "Bloque 4. Autorregulación emocional e interacción social en situacións motrices",
+      "titulo": "Autorregulación emocional e interacción social en situacións motrices",
+      "items": [
+        "Autorregulación emocional: control de estados de ánimo e estratexias de xestión do fracaso en situacións motrices.",
+        "Capacidades volitivas e de superación.",
+        "Habilidades sociais: estratexias de negociación e mediación en contextos motrices.",
+        "Respecto ás regras: xogo limpo nos distintos niveis de deporte e actividade física.",
+        "Identificación e rexeitamento de condutas contrarias á convivencia en situacións motrices.",
+        "Deporte e perspectiva de xénero: igualdade no acceso ao deporte.",
+        "Estereotipos de competencia motriz percibida segundo o xénero, a idade ou calquera outra característica.",
+        "Exemplos de deportistas de Galicia de distintos sexos, idades e outros parámetros de referencia."
+      ],
+      "codigos_items": [
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4",
+        "4.5",
+        "4.6",
+        "4.7",
+        "4.8"
+      ]
+    },
+    {
+      "codigo": "5",
+      "bloque": "Bloque 5. Manifestacións da cultura motriz",
+      "titulo": "Manifestacións da cultura motriz",
+      "items": [
+        "Achegas da cultura motriz á herdanza cultural.",
+        "Os deportes como sinal de identidade cultural.",
+        "Usos comunicativos da corporalidade: técnicas específicas de expresión corporal.",
+        "Práctica de actividades rítmico-musicais con carácter artístico-expresivo.",
+        "Organización de espectáculos e eventos artístico-expresivos.",
+        "Influencia do deporte na sociedade actual en diferentes contextos: xeográfico, cultural, político, económico..."
+      ],
+      "codigos_items": [
+        "5.1",
+        "5.2",
+        "5.3",
+        "5.4",
+        "5.5",
+        "5.6"
+      ]
+    },
+    {
+      "codigo": "6",
+      "bloque": "Bloque 6. Interacción eficiente e sostible coa contorna",
+      "titulo": "Interacción eficiente e sostible coa contorna",
+      "items": [
+        "Respecto ás normas viarias nos desprazamentos activos cotiáns para unha mobilidade segura, saudable e sostible.",
+        "O uso da bicicleta como medio de transporte habitual.",
+        "Novos espazos e prácticas deportivas urbanas.",
+        "Análise e xestión do risco propio e do dos demais nas prácticas físico-deportivas no medio natural e urbano, medidas colectivas de seguridade.",
+        "Deseño e organización de actividades físicas no medio natural e urbano.",
+        "Coidado da contorna próxima, como servizo á comunidade, durante a práctica de actividade física.",
+        ".4 Orientacións pedagóxicas",
+        "intervención educativa na materia de Educación Física desenvolverá o seu currículo e tratará",
+        "e asentar de xeito gradual e progresivo nos distintos niveis da etapa as aprendizaxes que lle",
+        "aciliten ao alumnado o logro dos obxectivos da materia e, en combinación co resto das materias,",
+        "nha adecuada adquisición das competencias clave e o logro dos obxectivos da etapa.",
+        "este sentido, no deseño das actividades, o profesorado terá que considerar a relación exis-",
+        "ente entre os obxectivos da materia e as competencias clave a través dos descritores operativos",
+        "o perfil de saída e as liñas de actuación no proceso de ensino e aprendizaxe que se presentan",
+        "os puntos seguintes e seleccionar aqueles criterios de avaliación do currículo que se axusten á",
+        "inalidade buscada, así como empregalos para verificar as aprendizaxes do alumnado e o seu nivel",
+        "e desempeño.",
+        "elación entre os obxectivos da materia de Educación Física e as competencias clave a través",
+        "os descritores operativos do perfil de saída establecidos no anexo I",
+        "bxectivos",
+        "a materia",
+        "BX1",
+        "BX2",
+        "BX3",
+        "BX4",
+        "BX5",
+        "iñas de actuación non proceso de ensino e aprendizaxe",
+        "A Educación Física nesta etapa terá un carácter motriz, práctico e vivencial, que incremente a",
+        "ctividade física efectiva do alumnado.",
+        "A asimilación das aprendizaxes e a adaptación ao traballo das capacidades condicionais do",
+        "lumnado en Educación Física determinan a distribución das sesións semanais en diferentes",
+        "ías.",
+        "Os numerosos modelos pedagóxicos de contrastado recoñecemento nacional e internacional",
+        "onstitúen unha ferramenta óptima para materializar un desenvolvemento competencial,",
+        "omo por exemplo a realización de proxectos significativos, a aprendizaxe cooperativa, a edu-",
+        "ación deportiva, o modelo comprensivo, o estilo actitudinal, o modelo de responsabilidade",
+        "ersoal e social, o vinculado á saúde ou o baseado na autoconstrución de materiais, entre",
+        "utros, aos cales se lles debe dar relevancia no día a día polo carácter participativo, creativo",
+        "de aprendizaxe que xeran no alumnado.",
+        "As situacións de aprendizaxe integrarán procesos orientados á adquisición da competencia",
+        "otriz e as competencias clave e deberán enfocarse desde diferentes perspectivas, articu-",
+        "ando elementos plurais como: metodoloxías de carácter participativo, o tipo e a intención das",
+        "ctividades expostas, a organización dos grupos, a consolidación dunha autoestima positiva,",
+        "utonomía, reflexión e responsabilidade ou a creación dunha conciencia de grupo-clase.",
+        "A metodoloxía elixida deberá establecerse en función dos contidos, do profesorado, do alum-",
+        "ado, do contexto e dos recursos, considerando especialmente as tecnoloxías dixitais desen-",
+        "olvidas nos últimos tempos en diferentes ámbitos da Educación Física, pero sobre todo tendo",
+        "laro por que e para que se utiliza.",
+        "A atención á diversidade deberá ser personalizada, tanto para a prevención das dificultades",
+        "e aprendizaxe e a implantación de mecanismos de reforzo tan pronto como se detecten como",
+        "ara atender os diferentes ritmos ou formas de aprendizaxe do alumnado.",
+        "Pola vital influencia do movemento na aprendizaxe, recoméndase o desenvolvemento trans-",
+        "isciplinar de distintas situacións que o incorporen como recurso educativo, así como enfoques",
+        "proxectos interdisciplinares na medida en que sexa posible, usando estratexias para traba-",
+        "lar transversalmente a competencia motriz, a comprensión lectora, a expresión oral e escrita,",
+        "comunicación audiovisual, a competencia dixital ou o fomento da creatividade, do espírito",
+        "ientífico e do emprendemento.",
+        "Deberase ter en conta a regulación dos procesos comunicativos, o desenvolvemento das rela-",
+        "ións interpersoais, a conversión de espazos e materiais en oportunidades de aprendizaxe ou",
+        "transferencia do coñecemento adquirido a outros contextos sociais próximos que permitan",
+        "omprobar o valor e a utilidade do aprendido, aspecto este último clave para unha sociedade",
+        "áis xusta e equitativa.",
+        "A avaliación en Educación Física deberá ser continua, formativa e integradora e estará dirixida",
+        "ara á mellora da aprendizaxe do alumnado a través da súa participación nesta. Este será",
+        "valiado en función do grao de consecución dos criterios de avaliación que, pola súa vez, con-",
+        "retan o desenvolvemento dos obxectivos da materia. A relación existente entre estes e os",
+        "ontidos permitirá integrar e contextualizar a avaliación no seo das situacións de aprendizaxe",
+        "ue se vaian expondo ao longo das distintas unidades didácticas da etapa e que darán lugar a",
+        "nha cualificación obxectiva e transparente, que será reflexo dos procesos de avaliación.",
+        "Os contidos asociados aos criterios de avaliación de cada bloque en cada nivel serán concre-",
+        "ados nas programacións didácticas, de forma que cada centro poida determinalos en función",
+        "as instalacións e recursos materiais dispoñibles, ademais das características da contorna",
+        "nde se sitúa. Estes contidos serán diferentes nos primeiros anos para que o alumnado poida",
+        "niciarse nunha ampla variedade de actividades físico-deportivas e artístico-expresivas. Nos",
+        "ltimos niveis, estes contidos poderanse perfeccionar con base nas aprendizaxes previas.",
+        "O departamento didáctico, logo dunha reflexión, debe formular con criterios acordados unha",
+        "stratexia metodolóxica común para desenvolver ao longo do proceso de ensino e aprendi-",
+        "axe, considerando ademais que a promoción da práctica diaria do deporte e do exercicio físico",
+        "or parte do alumnado durante a xornada escolar forma parte do seu desenvolvemento inte-",
+        "ral.",
+        "Deberá procurarse a implicación das familias como un factor clave para facer do alumnado",
+        "uténticos suxeitos activos dunha xestión cada vez máis autónoma e comprometida cun estilo",
+        "e vida activo e saudable."
+      ],
+      "codigos_items": [
+        "6.1",
+        "6.2",
+        "6.3",
+        "6.4",
+        "6.5",
+        "6.6",
+        "6.7",
+        "6.8",
+        "6.9",
+        "6.10",
+        "6.11",
+        "6.12",
+        "6.13",
+        "6.14",
+        "6.15",
+        "6.16",
+        "6.17",
+        "6.18",
+        "6.19",
+        "6.20",
+        "6.21",
+        "6.22",
+        "6.23",
+        "6.24",
+        "6.25",
+        "6.26",
+        "6.27",
+        "6.28",
+        "6.29",
+        "6.30",
+        "6.31",
+        "6.32",
+        "6.33",
+        "6.34",
+        "6.35",
+        "6.36",
+        "6.37",
+        "6.38",
+        "6.39",
+        "6.40",
+        "6.41",
+        "6.42",
+        "6.43",
+        "6.44",
+        "6.45",
+        "6.46",
+        "6.47",
+        "6.48",
+        "6.49",
+        "6.50",
+        "6.51",
+        "6.52",
+        "6.53",
+        "6.54",
+        "6.55",
+        "6.56",
+        "6.57",
+        "6.58",
+        "6.59",
+        "6.60",
+        "6.61",
+        "6.62",
+        "6.63",
+        "6.64",
+        "6.65",
+        "6.66",
+        "6.67",
+        "6.68",
+        "6.69",
+        "6.70",
+        "6.71",
+        "6.72",
+        "6.73",
+        "6.74",
+        "6.75",
+        "6.76",
+        "6.77",
+        "6.78",
+        "6.79",
+        "6.80",
+        "6.81",
+        "6.82",
+        "6.83"
+      ]
+    }
+  ],
+  "comunidad": "galicia",
+  "idioma": "gl"
+}

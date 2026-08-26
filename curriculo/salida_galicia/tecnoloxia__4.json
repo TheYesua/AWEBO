@@ -1,0 +1,364 @@
+{
+  "materia_oficial": "Tecnoloxía",
+  "materia": "Tecnoloxía",
+  "etapa": "ESO",
+  "ciclo": "4º ESO",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "4º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Identificar e propor problemas tecnolóxicos con iniciativa e creatividade, estudando as necesidades da súa contorna próxima e aplicando estratexias e procesos colaborativos e iterativos relativos a proxectos, para idear e planificar solucións de maneira eficiente, accesible, sostible e innovadora.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Aplicar de forma apropiada e segura distintas técnicas e coñecementos interdisciplinarios utilizando procedementos e recursos tecnolóxicos, ao tempo que se analiza o ciclo de vida de produtos para fabricar solucións tecnolóxicas accesibles e sostibles que dean resposta ás necesidades expostas.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Expresar, comunicar e difundir ideas, propostas ou solucións tecnolóxicas en diferentes foros de maneira efectiva cunha linguaxe inclusiva e non sexista, empregando os recursos dispoñibles e aplicando os elementos e as técnicas necesarios para intercambiar a información de maneira responsable e fomentar o traballo en equipo.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Desenvolver solucións automatizadas a problemas expostos aplicando os coñecementos necesarios e incorporando tecnoloxías emerxentes para deseñar e construír sistemas de control programables e robóticos.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Aproveitar e empregar de maneira responsable as posibilidades das ferramentas dixitais, adaptándoas ás súas necesidades, configurándoas e aplicando coñecementos interdisciplinarios para a resolución de tarefas dunha maneira máis eficiente.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Analizar procesos tecnolóxicos, tendo en conta o seu impacto na sociedade e a contorna aplicando criterios de sostibilidade e accesibilidade, para facer un uso ético e ecosocialmente responsable da tecnoloxía.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Idear e planificar solucións tecnolóxicas emprendedoras que xeren un valor para a comunidade a partir da observación e da análise da contorna máis próxima, estudando as súas necesidades, requisitos e posibilidades de mellora."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Aplicar con iniciativa estratexias colaborativas de xestión de proxectos cunha perspectiva interdisciplinaria e seguindo un proceso iterativo de validación desde a fase de ideación ata a difusión da solución."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Abordar a xestión do proxecto de forma creativa, aplicando estratexias e técnicas colaborativas axeitadas, así como métodos de investigación para a ideación de solucións o máis eficientes, accesibles e innovadoras posibles."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "2",
+      "descripcion": "Analizar o deseño dun produto que dea resposta a unha necesidade exposta, avaliando a súa demanda, evolución e previsión de fin de ciclo de vida, cun criterio ético, responsable e inclusivo."
+    },
+    {
+      "codigo": "1.5",
+      "competencia": "3",
+      "descripcion": "Intercambiar información e fomentar o traballo en equipo de maneira asertiva."
+    },
+    {
+      "codigo": "1.6",
+      "competencia": "6",
+      "descripcion": "Analizar os beneficios que, no coidado da contorna, achegan a arquitectura bioclimática e o eco-transporte, valorando a contribución das tecnoloxías ao desenvolvemento sostible."
+    },
+    {
+      "codigo": "1.7",
+      "competencia": "6",
+      "descripcion": "Identificar e valorar a repercusión e os beneficios do desenvolvemento de proxectos tecnolóxicos de carácter social por medio de comunidades abertas, accións de voluntariado ou proxectos de servizo á comunidade."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Fabricar produtos e solucións tecnolóxicas aplicando ferramentas de deseño asistido, técnicas de elaboración manual, mecánica e dixital e utilizando os materiais e recursos mecánicos, eléctricos, electrónicos e dixitais adecuados."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "6",
+      "descripcion": "Facer un uso responsable da tecnoloxía, mediante a análise e a aplicación de criterios de sostibilidade e accesibilidade na selección dos materiais e no seu deseño, así como nos procesos de fabricación de produtos tecnolóxicos, minimizando o impacto negativo sobre a sociedade e o ambiente."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "4",
+      "descripcion": "Deseñar, construír, controlar e/ou simular sistemas automáticos ou robots que sexan capaces de realizar tarefas de forma autónoma, aplicando coñecementos de mecánica, electrónica, pneumática e compoñentes dos sistemas de control, así como outros coñecementos interdisciplinarios."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Utilizar vocabulario técnico, símbolos e esquemas de sistemas tecnolóxicos apropiados."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Automatizar procesos, máquinas e sistemas, mediante a análise, a programación de robots e os sistemas de control."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Utilizar, con sentido crítico e ético, aplicacións informáticas e tecnoloxías dixitais de control e simulación, como a internet das cousas, o big data e/ou a intelixencia artificial."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "5",
+      "descripcion": "Resolver tarefas propostas de maneira eficiente mediante o uso e a configuración de diferentes aplicacións e ferramentas dixitais, aplicando coñecementos interdisciplinarios con autonomía."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Crear contidos, elaborar materiais e difundilos en distintas plataformas, configurando correctamente as ferramentas dixitais habituais da contorna de aprendizaxe, axustándoas ás súas necesidades e respectando os dereitos de autor."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "3",
+      "descripcion": "Presentar e difundir as propostas ou solucións tecnolóxicas de maneira efectiva, empregando a entoación, expresión, xestión do tempo e adaptación adecuada do discurso, así como unha linguaxe inclusiva e non sexista."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "5",
+      "descripcion": "Organizar a información de maneira estruturada aplicando técnicas de almacenamento seguro."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "Bloque 1. O proxecto tecnolóxico",
+      "titulo": "O proxecto tecnolóxico",
+      "items": [
+        "Aplicación de técnicas de ideación, estratexias de xestión de proxectos colaborativos e técnicas de resolución de problemas iterativas, utilizando vocabulario técnico axeitado.",
+        "Estudo de necesidades do centro, locais, rexionais etc. Deseño de proxectos colaborativos ou cooperativos.",
+        "Emprendemento, perseveranza, iniciativa e creatividade na resolución de problemas desde unha perspectiva interdisciplinaria da actividade tecnolóxica e satisfacción e interese polo traballo e a calidade deste.",
+        "Ciclo de vida dun produto e as súas fases. Análises sinxelas.",
+        "Tecnoloxía sostible: aforro enerxético no transporte e nas edificacións. Arquitectura bioclimática.",
+        "Comunidades abertas, voluntariado tecnolóxico e proxectos de servizo á comunidade."
+      ],
+      "codigos_items": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4",
+        "1.5",
+        "1.6"
+      ]
+    },
+    {
+      "codigo": "2",
+      "bloque": "Bloque 2. Deseño e fabricación",
+      "titulo": "Deseño e fabricación",
+      "items": [
+        "Estratexias de selección de materiais baseándose nas súas propiedades ou requisitos.",
+        "Sostibilidade e accesibilidade na selección de materiais e no deseño de procesos, produtos e sistemas tecnolóxicos.",
+        "Ferramentas de deseño asistido por ordenador en tres dimensións na representación e/ou fabricación de pezas aplicadas a proxectos.",
+        "Técnicas de fabricación manual e mecánica. Aplicacións prácticas.",
+        "Técnicas de fabricación dixital. Impresión en tres dimensións e corte. Aplicacións prácticas."
+      ],
+      "codigos_items": [
+        "2.1",
+        "2.2",
+        "2.3",
+        "2.4",
+        "2.5"
+      ]
+    },
+    {
+      "codigo": "3",
+      "bloque": "Bloque 3. Elementos de máquinas, sistemas e robots",
+      "titulo": "Elementos de máquinas, sistemas e robots",
+      "items": [
+        "Electrónica analóxica. Compoñentes básicos, simboloxía, análise de circuítos elementais.",
+        "Electrónica dixital básica. Compoñentes básicos. Resolución de problemas lóxicos e circuítos.",
+        "Pneumática básica. Compoñentes e circuítos básicos.",
+        "Deseño, montaxe física e/ou simulada de circuítos electrónicos e/ou pneumáticos elementais, enfocado á resolución de problemas técnicos e proxectos.",
+        "Compoñentes de sistemas de control programado: controladores, sensores e actuadores. Elementos mecánicos, electrónicos e pneumáticos aplicados á robótica.",
+        "Deseño e montaxe física ou simulada dun sistema automático ou robot."
+      ],
+      "codigos_items": [
+        "3.1",
+        "3.2",
+        "3.3",
+        "3.4",
+        "3.5",
+        "3.6"
+      ]
+    },
+    {
+      "codigo": "4",
+      "bloque": "Bloque 4. Programación, automatización e robótica",
+      "titulo": "Programación, automatización e robótica",
+      "items": [
+        "O ordenador e os dispositivos móbiles como elementos de programación e control.",
+        "Traballo con simuladores informáticos na verificación e comprobación do funcionamento dos sistemas deseñados.",
+        "Robótica. Control de robots sinxelos de maneira física ou simulada.",
+        "Telecomunicacións en sistemas de control dixital. A Internet das cousas: elementos, comunicacións e control. Aplicacións prácticas.",
+        "Iniciación á intelixencia artificial e ao big data: aplicacións prácticas. Espazos compartidos e discos virtuais."
+      ],
+      "codigos_items": [
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4",
+        "4.5"
+      ]
+    },
+    {
+      "codigo": "5",
+      "bloque": "Bloque 5. Documentación e comunicación dixital",
+      "titulo": "Documentación e comunicación dixital",
+      "items": [
+        "Vocabulario técnico apropiado.",
+        "Presentación e difusión do proxecto empregando ferramentas dixitais e audiovisuais. Elementos, técnicas e ferramentas.",
+        "Comunicación efectiva: entoación, expresión, xestión do tempo, adaptación do discurso e uso dunha linguaxe inclusiva, libre de estereotipos sexistas.",
+        "Propiedade intelectual.",
+        "Técnicas de tratamento, organización e almacenamento seguro da información. Copias de seguridade.",
+        ".4 Orientacións pedagóxicas",
+        "intervención educativa na materia de Tecnoloxía desenvolverá o seu currículo e tratará de",
+        "sentar de xeito gradual e progresivo as aprendizaxes que lle faciliten ao alumnado o logro dos",
+        "bxectivos da materia e, en combinación co resto das materias, unha adecuada adquisición das",
+        "ompetencias clave e o logro dos obxectivos da etapa.",
+        "este sentido, no deseño das actividades, o profesorado terá que considerar a relación exis-",
+        "ente entre os obxectivos da materia e as competencias clave a través dos descritores operativos",
+        "o perfil de saída e as liñas de actuación no proceso de ensino e aprendizaxe que se presentan",
+        "os puntos seguintes e seleccionar aqueles criterios de avaliación do currículo que se axusten á",
+        "inalidade buscada, así como empregalos para verificar as aprendizaxes do alumnado e o seu nivel",
+        "e desempeño.",
+        "elación entre os obxectivos da materia de Tecnoloxía e as competencias clave a través dos",
+        "escritores operativos do perfil de saída establecidos no anexo I",
+        "bxectivos",
+        "a materia",
+        "BX1",
+        "BX2",
+        "BX3",
+        "BX4",
+        "BX5",
+        "BX6",
+        "iñas de actuación no proceso de ensino e aprendizaxe",
+        "Esta materia debe afrontarse desde unha perspectiva competencial e eminentemente prác-",
+        "ica, baseada na idea de aprender facendo, para o cal deberá establecerse o desenvolvemento",
+        "e proxectos tecnolóxicos como elemento vertebrador. Deste xeito, deberase propiciar unha",
+        "ontorna axeitada para que o alumnado teña a oportunidade de levar a cabo certas tarefas",
+        "entres explora, descobre, experimenta, aplica e reflexiona sobre o que fai, o que favorecerá",
+        "súa implicación no proceso de aprendizaxe e fará que este sexa máis significativo e duradeiro.",
+        "Proporanse situacións de aprendizaxe que serán desenvolvidas nunha aula taller, entendida",
+        "omo un espazo para materializar os proxectos interdisciplinarios cun enfoque competencial",
+        "práctico onde se poidan incorporar técnicas de traballo, prototipado rápido e fabricación",
+        "ffline con sistemas de impresión en tres dimensións, así como outras ferramentas de fabri-",
+        "ación dixital.",
+        "O uso de distintos métodos que teñan en conta os diferentes ritmos de aprendizaxe e a diver-",
+        "idade do alumnado, que favorezan a capacidade de aprender por si mesmos e que promovan",
+        "traballo en equipo con perspectiva de xénero, guiando o alumnado desde proxectos sinxelos",
+        "ta proxectos máis complexos que permitan o seu logro e a satisfacción do devandito alum-",
+        "ado poñendo en práctica, de ser necesario, mecanismos de reforzo tan pronto como se de-",
+        "ecten dificultades.",
+        "Estratexias para traballar transversalmente a comprensión lectora, a expresión oral e escrita,",
+        "comunicación audiovisual, a competencia dixital e o fomento da creatividade, do espírito",
+        "ientífico e do emprendemento.",
+        "Metodoloxías que propicien un marco de exploración, descubrimento, experimentación, apli-",
+        "ación e reflexión de forma autónoma como parte esencial na formación do alumnado.",
+        "A realización de proxectos interdisciplinarios que permitan o fomento de actitudes como a",
+        "reatividade, a perseveranza e o emprendemento, incorporando tecnoloxías dixitais e a opti-",
+        "ización de recursos cun principio básico de sostibilidade e respecto polo ambiente, refor-",
+        "ando a autoestima, a autonomía, a reflexión e a responsabilidade.",
+        "A integración do primeiro bloque, «O proxecto tecnolóxico», como bloque transversal en re-",
+        "ación cos proxectos que se realicen ao traballar o resto de bloques da materia ao longo do",
+        "urso, aplicando estratexias de resolución de problemas, de planificación, de técnicas colabo-",
+        "ativas e seguindo un proceso desde a ideación ata a resolución e avaliación do resultado.",
+        "A integración do bloque «Documentación e comunicación dixital» en todos os proxectos que",
+        "e realicen, de xeito que lle permita ao alumnado almacenar, organizar, transferir e presentar",
+        "traballo individual e/ou grupal elaborado ao longo do curso.",
+        "A elaboración de proxectos tecnolóxicos que impliquen procesos de investigación, de ideación,",
+        "e deseño, de fabricación, de verificación, de comercialización, de impacto ambiental e social,",
+        "plicando os coñecementos de mecánica, pneumática, electrónica, sistemas de control, pro-",
+        "ramación, automática e robótica.",
+        "A incorporación de técnicas actuais, adaptadas do mundo empresarial e industrial, en que se",
+        "pliquen criterios de sostibilidade no uso de materiais, no deseño dos procesos e no aprovei-",
+        "amento enerxético, tendo en conta a diversidade persoal, social e cultural nunha contorna",
+        "lobal.",
+        "A utilización de sistemas da intelixencia artificial (IA), do big data (BD) e da internet das cousas",
+        "IoT) en proxectos tecnolóxicos que lle posibiliten ao alumnado un coñecemento básico sobre",
+        "stas tecnoloxías."
+      ],
+      "codigos_items": [
+        "5.1",
+        "5.2",
+        "5.3",
+        "5.4",
+        "5.5",
+        "5.6",
+        "5.7",
+        "5.8",
+        "5.9",
+        "5.10",
+        "5.11",
+        "5.12",
+        "5.13",
+        "5.14",
+        "5.15",
+        "5.16",
+        "5.17",
+        "5.18",
+        "5.19",
+        "5.20",
+        "5.21",
+        "5.22",
+        "5.23",
+        "5.24",
+        "5.25",
+        "5.26",
+        "5.27",
+        "5.28",
+        "5.29",
+        "5.30",
+        "5.31",
+        "5.32",
+        "5.33",
+        "5.34",
+        "5.35",
+        "5.36",
+        "5.37",
+        "5.38",
+        "5.39",
+        "5.40",
+        "5.41",
+        "5.42",
+        "5.43",
+        "5.44",
+        "5.45",
+        "5.46",
+        "5.47",
+        "5.48",
+        "5.49",
+        "5.50",
+        "5.51",
+        "5.52",
+        "5.53",
+        "5.54",
+        "5.55",
+        "5.56",
+        "5.57",
+        "5.58",
+        "5.59",
+        "5.60",
+        "5.61",
+        "5.62",
+        "5.63",
+        "5.64",
+        "5.65",
+        "5.66",
+        "5.67",
+        "5.68",
+        "5.69",
+        "5.70",
+        "5.71"
+      ]
+    }
+  ],
+  "comunidad": "galicia",
+  "idioma": "gl"
+}

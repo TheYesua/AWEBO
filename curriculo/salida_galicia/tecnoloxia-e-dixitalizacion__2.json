@@ -1,0 +1,417 @@
+{
+  "materia_oficial": "Tecnoloxía e Dixitalización",
+  "materia": "Tecnoloxía e Dixitalización",
+  "etapa": "ESO",
+  "ciclo": "2º ESO",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Buscar e seleccionar a información adecuada proveniente de diversas fontes, de maneira crítica e segura, aplicando procesos de investigación, métodos de análise de produtos e experimentando con ferramentas de simulación, para definir problemas tecnolóxicos e iniciar procesos de creación de solucións a partir da información obtida.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Abordar problemas tecnolóxicos con autonomía e actitude creativa, aplicando coñecementos interdisciplinarios e traballando de forma cooperativa e colaborativa, para deseñar e planificar solucións a un problema ou necesidade de forma eficaz, innovadora e sostible.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Aplicar de forma apropiada e segura distintas técnicas e coñecementos interdisciplinarios utilizando operadores, sistemas tecnolóxicos e ferramentas, tendo en conta a planificación e o deseño previo para construír ou fabricar solucións tecnolóxicas e sostibles que dean resposta a necesidades en diferentes contextos.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Describir, representar e intercambiar ideas ou solucións a problemas tecnolóxicos ou dixitais, utilizando medios de representación, simboloxía e vocabulario axeitados, así como os instrumentos e os recursos dispoñibles, e valorando a utilidade das ferramentas dixitais para comunicar e difundir información e propostas.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Desenvolver algoritmos e aplicacións informáticas en distintas contornas, aplicando os principios do pensamento computacional e incorporando as tecnoloxías emerxentes, para crear solucións a problemas concretos, automatizar procesos e aplicalos en sistemas de control ou en robótica.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Comprender os fundamentos do funcionamento dos dispositivos e aplicacións habituais da súa contorna dixital de aprendizaxe, analizando os seus compoñentes e funcións e axustándoos ás súas necesidades para facer un uso máis eficiente e seguro destes e para detectar e resolver problemas técnicos sinxelos.",
+      "descriptores": []
+    },
+    {
+      "codigo": "7",
+      "descripcion": "Facer un uso responsable e ético da tecnoloxía, mostrando interese por un desenvolvemento sostible, identificando as súas repercusións e valorando a contribución das tecnoloxías emerxentes para identificar as achegas e o impacto do desenvolvemento tecnolóxico na sociedade e na contorna.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Definir problemas ou necesidades expostas buscando e contrastando información procedente de diferentes fontes de maneira crítica e segura e avaliando a súa fiabilidade e pertinencia."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Comprender e examinar obxectos tecnolóxicos sinxelos de uso habitual a través da análise de obxectos e sistemas, empregando o método científico e utilizando ferramentas de simulación na construción de coñecemento."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "7",
+      "descripcion": "Recoñecer a influencia da actividade tecnolóxica na sociedade e na sostibilidade ambiental ao longo da súa historia, identificando as súas achegas e repercusións e valorando a súa importancia para o desenvolvemento sostible."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "7",
+      "descripcion": "Identificar as achegas das tecnoloxías emerxentes ao benestar, á igualdade social e á diminución do impacto ambiental, facendo un uso responsable e ético delas."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Idear e deseñar solucións eficaces, innovadoras e sostibles a problemas definidos, aplicando conceptos, técnicas e procedementos interdisciplinarios, así como criterios de sostibilidade, con actitude emprendedora, perseverante e creativa."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Seleccionar, planificar e organizar os materiais e ferramentas, así como as tarefas necesarias para a construción dunha solución a un problema exposto, traballando individualmente ou en grupo de maneira cooperativa e colaboradora."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "3",
+      "descripcion": "Fabricar obxectos ou modelos sinxelos empregando ferramentas e/ou máquinas manuais axeitadas e respectando as normas de seguridade e saúde."
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "3",
+      "descripcion": "Deseñar e construír, mediante ferramentas de fabricación dixital, obxectos e modelos sinxelos respectando as normas de seguridade e saúde."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Deseñar e fabricar sistemas mecánicos sinxelos respectando as normas de seguridade e saúde."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Deseñar e montar circuítos eléctricos e electrónicos sinxelos nunha máquina ou sistema que resolvan os problemas propostos respectando as normas de seguridade e saúde"
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Deseñar e montar sistemas de control e robots mediante a incorporación dos sensores, actuadores e elementos de control necesarios para a resolución de problemas propostos respectando as normas de seguridade e saúde."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "5",
+      "descripcion": "Describir, interpretar e deseñar solucións a problemas informáticos e/ou retos de robótica, aplicando os elementos e as técnicas de programación de maneira creativa."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "5",
+      "descripcion": "Programar aplicacións sinxelas para distintos dispositivos (ordenadores, dispositivos móbiles e outros) empregando os elementos de programación de maneira apropiada e aplicando ferramentas de edición e módulos de intelixencia artificial que engadan funcionalidades."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "5",
+      "descripcion": "Automatizar procesos, máquinas e sistemas, coa posibilidade de conexión á internet, mediante a análise e a programación de robots e sistemas de control."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "4",
+      "descripcion": "Representar e comunicar o proceso de creación dun produto desde o seu deseño ata a súa difusión, elaborando documentación técnica e gráfica coa axuda de ferramentas dixitais e empregando os formatos e o vocabulario técnico axeitados, de maneira colaborativa, tanto presencialmente como en remoto."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "6",
+      "descripcion": "Facer un uso eficiente e seguro dos dispositivos dixitais de uso cotián na resolución de problemas sinxelos coñecendo os riscos e adoptando medidas de seguridade para a protección de datos e equipos."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "6",
+      "descripcion": "Crear contidos, elaborar materiais configurando correctamente as ferramentas dixitais habituais da contorna de aprendizaxe, axustándoas ás súas necesidades e respectando os dereitos de autor e a etiqueta dixital."
+    },
+    {
+      "codigo": "5.4",
+      "competencia": "6",
+      "descripcion": "Organizar a información de maneira estruturada aplicando técnicas de almacenamento seguro."
+    },
+    {
+      "codigo": "5.5",
+      "competencia": "6",
+      "descripcion": "Adoptar medidas preventivas para a protección dos dispositivos, dos datos e da saúde persoal, identificando problemas e riscos relacionados co uso da tecnoloxía e facendo unha análise ética e crítica."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "Bloque 1. O proxecto tecnolóxico",
+      "titulo": "O proxecto tecnolóxico",
+      "items": [
+        "Estratexias, técnicas e marcos de resolución de problemas en diferentes contextos e as súas fases.",
+        "Estratexias de procura crítica de información para a investigación e a definición de problemas expostos.",
+        "Análise de produtos e de sistemas tecnolóxicos sinxelos para a construción de coñecemento desde distintos enfoques e ámbitos.",
+        "Emprendemento, resiliencia, perseveranza e creatividade para abordar problemas desde unha perspectiva interdisciplinaria.",
+        "Desenvolvemento tecnolóxico: creatividade, innovación, investigación, obsolescencia e impacto social e ambiental.",
+        "Ética e aplicacións das tecnoloxías emerxentes e sostibles."
+      ],
+      "codigos_items": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4",
+        "1.5",
+        "1.6"
+      ]
+    },
+    {
+      "codigo": "2",
+      "bloque": "Bloque 2. Deseño e fabricación",
+      "titulo": "Deseño e fabricación",
+      "items": [
+        "Aplicacións CAD en 2D para a representación de esquemas, circuítos e planos.",
+        "Deseño de obxectos sinxelos en 3D.",
+        "Uso e mantemento de ferramentas. Técnicas de mecanización de materiais na construción de obxectos e prototipos.",
+        "Respecto das normas de seguridade e hixiene.",
+        "Fabricación dixital. Deseño e construción de pezas con impresión 3D e/ou corte."
+      ],
+      "codigos_items": [
+        "2.1",
+        "2.2",
+        "2.3",
+        "2.4",
+        "2.5"
+      ]
+    },
+    {
+      "codigo": "3",
+      "bloque": "Bloque 3. Elementos de máquinas, sistemas e robots",
+      "titulo": "Elementos de máquinas, sistemas e robots",
+      "items": [
+        "Análise do funcionamento de mecanismos de transmisión e transformación do movemento e as súas aplicacións prácticas. Cálculos sinxelos de relación de transmisión e velocidades aplicados a proxectos.",
+        "Circuítos eléctricos básicos. Montaxe e/ou simulación de circuítos con operadores eléctricos: xeradores, elementos de manobra ou control e receptores. Cálculos de magnitudes eléctricas básicas aplicados aos proxectos.",
+        "Introdución á electrónica. Montaxe e/ou simulación de circuítos electrónicos sinxelos.",
+        "Deseño de sistemas que incorporen mecanismos, circuítos eléctricos e electrónicos para a resolución de problemas técnicos. Interpretación, deseño e aplicación en proxectos.",
+        "Compoñentes e funcionamento dun sistema de control ou robot sinxelo: estrutura, mecánica, sensores, actuadores, controladores e alimentación.",
+        "Deseño e montaxe de sistemas de control ou robots para a resolución de problemas técnicos."
+      ],
+      "codigos_items": [
+        "3.1",
+        "3.2",
+        "3.3",
+        "3.4",
+        "3.5",
+        "3.6"
+      ]
+    },
+    {
+      "codigo": "4",
+      "bloque": "Bloque 4. Programación, control e robótica",
+      "titulo": "Programación, control e robótica",
+      "items": [
+        "Aplicacións informáticas sinxelas para ordenador e/ou dispositivos móbiles.",
+        "Introdución á intelixencia artificial.",
+        "Sistemas de control programado: programación sinxela de dispositivos.",
+        "Introdución á Internet das cousas (IoT).",
+        "Fundamentos da robótica: control programado de robots de maneira física ou por medio de simuladores. Resolución de retos e desafíos de robótica sinxelos.",
+        "Autoconfianza e iniciativa: o erro, a reavaliación e a depuración de erros como parte do proceso de aprendizaxe."
+      ],
+      "codigos_items": [
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4",
+        "4.5",
+        "4.6"
+      ]
+    },
+    {
+      "codigo": "5",
+      "bloque": "Bloque 5. Documentación e comunicación dixital",
+      "titulo": "Documentación e comunicación dixital",
+      "items": [
+        "Vocabulario técnico apropiado.",
+        "Habilidades básicas de comunicación interpersoal. Pautas de conduta propias da contorna virtual.",
+        "Ferramentas dixitais para a elaboración de documentación técnica relativa a proxectos.",
+        "Dispositivos dixitais. Elementos do hardware e do software. Identificación e resolución de problemas técnicos sinxelos.",
+        "Ferramentas e plataformas de aprendizaxe: configuración, mantemento e uso crítico.",
+        "Ferramentas de edición e creación de contidos: instalación, configuración e uso responsable.",
+        "Propiedade intelectual e etiqueta dixital.",
+        "Técnicas de tratamento, organización e almacenamento seguro da información. Copias de seguridade.",
+        "Seguridade na rede: riscos, ameazas e ataques.",
+        "Medidas de protección de datos e información. Benestar dixital: prácticas seguras e riscos (ciberacoso, sextorsión,",
+        "ulneración da propia imaxe e da intimidade, acceso a contidos inadecuados, adiccións...).",
+        ".4 Orientacións pedagóxicas",
+        "intervención educativa na materia de Tecnoloxía e Dixitalización desenvolverá o seu currí-",
+        "ulo e tratará de asentar de xeito gradual e progresivo nos distintos niveis da etapa as aprendi-",
+        "axes que lle faciliten ao alumnado o logro dos obxectivos da materia e, en combinación co resto",
+        "as materias, unha adecuada adquisición das competencias clave e o logro dos obxectivos da",
+        "tapa.",
+        "este sentido, no deseño das actividades, o profesorado terá que considerar a relación exis-",
+        "ente entre os obxectivos da materia e as competencias clave a través dos descritores operativos",
+        "o perfil de saída e as liñas de actuación no proceso de ensino e aprendizaxe que se presentan",
+        "os puntos seguintes e seleccionar aqueles criterios de avaliación do currículo que se axusten á",
+        "inalidade buscada, así como empregalos para verificar as aprendizaxes do alumnado e o seu nivel",
+        "e desempeño.",
+        "elación entre os obxectivos da materia de Tecnoloxía e Dixitalización e as competencias clave",
+        "través dos descritores operativos do perfil de saída establecidos no anexo I",
+        "bxectivos",
+        "a materia",
+        "BX1",
+        "BX2",
+        "BX3",
+        "BX4",
+        "BX5",
+        "BX6",
+        "BX7",
+        "iñas de actuación no proceso de ensino e aprendizaxe",
+        "Esta materia debe afrontarse desde un carácter esencialmente práctico cun enfoque compe-",
+        "encial do currículo. Para iso requírense metodoloxías específicas que o fomenten, como a re-",
+        "olución de problemas baseada no desenvolvemento de proxectos, a construción de sistemas",
+        "ecnolóxicos e prototipos (eléctricos, mecánicos, robóticos etc.), así como outras estratexias",
+        "ue favorezan o uso de aplicacións dixitais para o deseño, a simulación, o dimensionado, a",
+        "omunicación ou a difusión de ideas ou solucións, por exemplo.",
+        "A aplicación de distintas técnicas de traballo (que se complementen entre si) e a diversidade",
+        "e situacións de aprendizaxe que interveñen na materia deben promover a participación do",
+        "lumnado, favorecendo unha visión integral da disciplina que resalte o traballo colectivo como",
+        "orma de afrontar os desafíos e os retos tecnolóxicos que propón a nosa sociedade para redu-",
+        "ir as fendas dixital e de xénero, prestando especial atención á desaparición de estereotipos",
+        "ue dificultan a adquisición de competencias en condicións de igualdade.",
+        "Deberase propiciar unha contorna axeitada para que o alumnado teña a oportunidade de levar",
+        "cabo certas tarefas mentres explora, descobre, experimenta, aplica e reflexiona sobre o que",
+        "ai, o que favorecerá a súa implicación no proceso de aprendizaxe e fará que este sexa máis",
+        "ignificativo e duradeiro. Esa contorna será unha aula taller na cal se poidan desenvolver tanto",
+        "écnicas de traballo manual coma técnicas de fabricación dixital.",
+        "O uso do «Proxecto tecnolóxico», que constitúe o eixe vertebrador ao longo de toda a materia,",
+        "ermite a identificación e a formulación dun problema tecnolóxico ata a súa solución a través",
+        "un proceso planificado que optimice recursos.",
+        "A aplicación dun carácter esencialmente práctico da materia empregando metodoloxías espe-",
+        "íficas, como a resolución de problemas a través do desenvolvemento de proxectos, poñendo",
+        "n práctica sistemas tecnolóxicos (estruturais, mecánicos, eléctricos, robóticos etc.) que esti-",
+        "ulen a aprendizaxe do alumnado.",
+        "A construción de prototipos e doutras estratexias que favorezan o uso de aplicacións dixitais",
+        "ara o deseño, a simulación, o dimensionado, a difusión de ideas e a presentación de solucións.",
+        "O emprego de «Documentación e comunicación dixital», de forma transversal en toda a ma-",
+        "eria, que implique un desenvolvemento de habilidades dixitais que facilite a interacción do",
+        "lumnado co seu ámbito social ao longo da súa vida.",
+        "O uso de distintos métodos que teñan en conta os diferentes ritmos de aprendizaxe e a diver-",
+        "idade do alumnado, que favorezan a capacidade de aprender por si mesmos e que promovan",
+        "traballo en equipo con perspectiva de xénero, guiando o alumnado desde proxectos sinxelos",
+        "ta proxectos máis complexos que permitan o seu logro e satisfacción por parte do devandito",
+        "lumnado, poñendo en práctica, de ser necesario, mecanismos de reforzo tan pronto como se",
+        "etecten dificultades.",
+        "A realización de proxectos significativos para o alumnado e a resolución colaborativa de pro-",
+        "lemas, reforzando a autoestima, a autonomía, a reflexión, a responsabilidade; promovendo",
+        "participación de alumnos e alumnas cunha visión integral da disciplina e reducindo a fenda",
+        "ixital e de xénero en condicións de igualdade ao longo de toda a etapa.",
+        "O uso de estratexias para traballar transversalmente a comprensión lectora; a expresión oral",
+        "escrita; a comunicación audiovisual; a competencia dixital e o fomento da creatividade, do",
+        "spírito científico, do emprendemento e da conciencia para alcanzar os obxectivos de desen-",
+        "olvemento sostible (ODS).",
+        "A aplicación de metodoloxías de traballo creativo, a través de coñecementos científicos e téc-",
+        "icos, para desenvolver ideas e solucións innovadoras e sostibles que dean resposta ás nece-",
+        "idades ou problemas expostos, achegando melloras significativas cunha actitude creativa e",
+        "mprendedora.",
+        "O uso responsable e ético das tecnoloxías dixitais para aprender ao longo da vida e reflexionar",
+        "e forma crítica sobre a sociedade dixital para afrontar situacións e problemas actuais, aten-",
+        "endo á diversidade e sen prexuízos de diferentes razas, linguas, sexos, ideas políticas, reli-",
+        "ións etc.",
+        "A creación de obxectos tendo en conta o deseño, a elección de materiais e a súa fabricación",
+        "entro dunha contorna sostible e respectuosa co ambiente e coas normas de seguridade e",
+        "ixiene."
+      ],
+      "codigos_items": [
+        "5.1",
+        "5.2",
+        "5.3",
+        "5.4",
+        "5.5",
+        "5.6",
+        "5.7",
+        "5.8",
+        "5.9",
+        "5.10",
+        "5.11",
+        "5.12",
+        "5.13",
+        "5.14",
+        "5.15",
+        "5.16",
+        "5.17",
+        "5.18",
+        "5.19",
+        "5.20",
+        "5.21",
+        "5.22",
+        "5.23",
+        "5.24",
+        "5.25",
+        "5.26",
+        "5.27",
+        "5.28",
+        "5.29",
+        "5.30",
+        "5.31",
+        "5.32",
+        "5.33",
+        "5.34",
+        "5.35",
+        "5.36",
+        "5.37",
+        "5.38",
+        "5.39",
+        "5.40",
+        "5.41",
+        "5.42",
+        "5.43",
+        "5.44",
+        "5.45",
+        "5.46",
+        "5.47",
+        "5.48",
+        "5.49",
+        "5.50",
+        "5.51",
+        "5.52",
+        "5.53",
+        "5.54",
+        "5.55",
+        "5.56",
+        "5.57",
+        "5.58",
+        "5.59",
+        "5.60",
+        "5.61",
+        "5.62",
+        "5.63",
+        "5.64",
+        "5.65",
+        "5.66",
+        "5.67",
+        "5.68",
+        "5.69",
+        "5.70",
+        "5.71",
+        "5.72",
+        "5.73",
+        "5.74",
+        "5.75",
+        "5.76",
+        "5.77",
+        "5.78",
+        "5.79",
+        "5.80",
+        "5.81",
+        "5.82",
+        "5.83",
+        "5.84",
+        "5.85",
+        "5.86",
+        "5.87",
+        "5.88",
+        "5.89"
+      ]
+    }
+  ],
+  "comunidad": "galicia",
+  "idioma": "gl"
+}

@@ -1,0 +1,479 @@
+{
+  "materia_oficial": "Oratoria",
+  "materia": "Oratoria",
+  "etapa": "ESO",
+  "ciclo": "3º ESO e 4º ESO",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "3º ESO",
+    "4º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Aprender a falar en público para participar na mellora da vida colectiva, para configurar a propia traxectoria académica, profesional e vital, e para fortalecer unha imaxe propia positiva ante nós mesmos e ante os demais.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Coñecer os fundamentos da oratoria clásica e a súa relación coa retórica e a práctica do debate.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Recoñecer e analizar os distintos discursos persuasivos propios da nosa realidade social e os seus ámbitos de difusión: a prensa, a política, a publicidade e as relacións persoais.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Seleccionar e contrastar información procedente de diferentes fontes de maneira progresivamente autónoma, avaliando a súa fiabilidade e pertinencia.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Desenvolver as destrezas propias da comunicación oral: a competencia lingüística, as competencias sociais e cívicas e o sentido da iniciativa.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Empregar axeitadamente os distintos códigos verbais e non verbais propios do discurso persuasivo.",
+      "descriptores": []
+    },
+    {
+      "codigo": "7",
+      "descripcion": "Empregar distintos soportes e ferramentas tecnolóxicas e informáticas en apoio do discurso persuasivo.",
+      "descriptores": []
+    },
+    {
+      "codigo": "8",
+      "descripcion": "Recoñecer e empregar a capacidade persuasiva da palabra conservando unha base ética sólida e rexeitando usos perversos ou contrarios á convivencia.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "2",
+      "descripcion": "Coñecer as bases fundamentais da oratoria."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "2",
+      "descripcion": "Relacionar a práctica da oratoria coa preceptiva retórica e co debate dialéctico."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "2",
+      "descripcion": "Identificar as partes do proceso oratorio, encamiñado á persuasión."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "3",
+      "descripcion": "Comprender discursos persuasivos de diferentes tipos, identificando o propósito, a tese e os distintos tipos de argumentos."
+    },
+    {
+      "codigo": "1.5",
+      "competencia": "3",
+      "descripcion": "Valorar a forma e o contido de textos persuasivos, avaliando a súa calidade, a súa eficacia e a idoneidade da canle utilizada."
+    },
+    {
+      "codigo": "1.6",
+      "competencia": "8",
+      "descripcion": "Elaborar argumentos e contraargumentos en situacións hipotéticas dadas. Identificar as falacias."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "4",
+      "descripcion": "Identificar e manexar fontes documentais."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "4",
+      "descripcion": "Localizar, seleccionar e contrastar a información procedente de diferentes fontes para afondar no coñecemento do tema do discurso, mediante a documentación e a investigación."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "4",
+      "descripcion": "Diferenciar información e opinión."
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "4",
+      "descripcion": "Calibrar a fiabilidade e a pertinencia da información."
+    },
+    {
+      "codigo": "2.5",
+      "competencia": "7",
+      "descripcion": "Adoptar hábitos de uso crítico, seguro, sostible e saudable das tecnoloxías dixitais para a procura da información."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "6",
+      "descripcion": "Adaptar a creación e o deseño do discurso ás características do contexto comunicativo."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "6",
+      "descripcion": "Organizar as ideas nunha estrutura ordenada e eficaz."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "8",
+      "descripcion": "Empregar recursos propios da argumentación."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "6",
+      "descripcion": "Redactar o discurso con corrección lingüística, creatividade e eficacia persuasiva."
+    },
+    {
+      "codigo": "3.5",
+      "competencia": "6",
+      "descripcion": "Realizar o proceso de revisión do texto."
+    },
+    {
+      "codigo": "3.6",
+      "competencia": "6",
+      "descripcion": "Desenvolver estratexias mnemotécnicas do discurso."
+    },
+    {
+      "codigo": "3.7",
+      "competencia": "6",
+      "descripcion": "Memorizar o discurso deixando espazo para a improvisación e a espontaneidade."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "1",
+      "descripcion": "Aprender a falar en público, en contextos formais e informais, de forma individual ou en grupo."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "1",
+      "descripcion": "Potenciar as emocións positivas na exposición perante o público e controlar a conduta asociada ás emocións negativas."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "6",
+      "descripcion": "Pronunciar con corrección, claridade e expresividade."
+    },
+    {
+      "codigo": "4.4",
+      "competencia": "6",
+      "descripcion": "Empregar a linguaxe corporal e a presenza escénica como códigos comunicativos para enxalzar a expresividade e a eficacia do discurso."
+    },
+    {
+      "codigo": "4.5",
+      "competencia": "7",
+      "descripcion": "Utilizar programas informáticos e audiovisuais para o deseño de presentacións co fin de potenciar o significado e a expresividade do discurso."
+    },
+    {
+      "codigo": "4.6",
+      "competencia": "5",
+      "descripcion": "Recoñecer e asumir as regras de interacción comunicativa e cortesía lingüística."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "Bloque 1. O discurso persuasivo: a arte de falar e convencer",
+      "titulo": "O discurso persuasivo: a arte de falar e convencer",
+      "items": [
+        "As partes da retórica: inventio, dispositio, elocutio, memoria e actio.",
+        "A intención comunicativa nas mensaxes persuasivas.",
+        "A argumentación como factor clave: tipos de argumentos.",
+        "Tipos de discurso persuasivo e os seus ámbitos de difusión: os medios de comunicación social, a publicidade, a política e as relacións persoais."
+      ],
+      "codigos_items": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4"
+      ]
+    },
+    {
+      "codigo": "2",
+      "bloque": "Bloque 2. A selección da información: inventio",
+      "titulo": "A selección da información: inventio",
+      "items": [
+        "Tipos de fontes documentais. Criterios de selección.",
+        "Documentación e investigación. Alfabetización mediática.",
+        "Selección das ideas. Tipos de contidos: contidos lóxicos (datos, teorías, citas etc.) e contidos emocionais (anécdotas, imaxes, vídeos etc.).",
+        "Estratexias de procura e selección das ideas máis adecuadas en función da intención comunicativa e dos elementos da comunicación",
+        "Xestión da información desde un punto de vista crítico que respecte os principios de propiedade intelectual.",
+        "Análise crítica para previr a posverdade e non dar validez unicamente á información afín coas ideas propias."
+      ],
+      "codigos_items": [
+        "2.1",
+        "2.2",
+        "2.3",
+        "2.4",
+        "2.5",
+        "2.6"
+      ]
+    },
+    {
+      "codigo": "3",
+      "bloque": "Bloque 3. A preparación do discurso: dispositio, elocutio e memoria",
+      "titulo": "A preparación do discurso: dispositio, elocutio e memoria",
+      "items": [
+        "Adecuación do discurso ao contexto.",
+        "Axuste do discurso ao modelo textual ou xénero elixido.",
+        "Adaptación ao tempo e á canle de comunicación.",
+        "Estrutura do discurso: introdución, desenvolvemento e conclusión. Disposición das ideas.",
+        "Recursos argumentativos: premisas, teses e siloxismos.",
+        "Claves para deseñar mensaxes altamente eficaces: claridade e brevidade.",
+        "Estratexias para captar a atención e a benevolencia da audiencia.",
+        "Procedementos retóricos. Características estilísticas.",
+        "Coherencia e cohesión.",
+        "Corrección lingüística.",
+        "Proceso de revisión. Uso de correctores lingüísticos.",
+        "Técnicas de memorización do discurso: elaboración e uso do guión, elementos de apoio.",
+        "Interiorización do discurso."
+      ],
+      "codigos_items": [
+        "3.1",
+        "3.2",
+        "3.3",
+        "3.4",
+        "3.5",
+        "3.6",
+        "3.7",
+        "3.8",
+        "3.9",
+        "3.10",
+        "3.11",
+        "3.12",
+        "3.13"
+      ]
+    },
+    {
+      "codigo": "4",
+      "bloque": "Bloque 4. A presentación do discurso: actio",
+      "titulo": "A presentación do discurso: actio",
+      "items": [
+        "Habilidades de comunicación non verbal e xestual.",
+        "Xestión emocional para falar en público (entusiasmo, confianza, asertividade, empatía e seguridade).",
+        "Xestión das emocións negativas (medo escénico, ansiedade, nerviosismo e inseguridade).",
+        "Dicción: pronuncia, volume, ritmo, ton, modulación, intensidade, pausas e silencios.",
+        "Quinésica. Linguaxe corporal: expresión facial, xestos, tics.",
+        "Proxémica: espazo escénico.",
+        "Naturalidade fronte á artificiosidade.",
+        "Soportes informáticos e audiovisuais para apoiar o discurso.",
+        "O debate como ferramenta idónea para practicar a argumentación e a escoita activa: entender, refutar e persuadir respectando as normas de interacción e a cortesía lingüísitca.",
+        ".4 Orientacións pedagóxicas",
+        "intervención educativa na materia de Oratoria desenvolverá o seu currículo e tratará de",
+        "sentar de xeito gradual e progresivo as aprendizaxes que lle faciliten ao alumnado o logro dos",
+        "bxectivos da materia e, en combinación co resto de materias, unha adecuada adquisición das",
+        "ompetencias clave e o logro dos obxectivos da etapa.",
+        "este sentido, no deseño das actividades, o profesorado terá que considerar a relación exis-",
+        "ente entre os obxectivos da materia e as competencias clave a través dos descritores operativos",
+        "as liñas de actuación no proceso de ensino e aprendizaxe, que se presentan nos puntos seguin-",
+        "es, e seleccionar aqueles criterios de avaliación do currículo que se axusten á finalidade buscada,",
+        "sí como empregalos para verificar as aprendizaxes do alumnado e o seu nivel de desempeño.",
+        "elación entre os obxectivos da materia de Oratoria e as competencias clave a través dos des-",
+        "ritores operativos establecidos no anexo I",
+        "bxectivos",
+        "a materia",
+        "BX1",
+        "BX2",
+        "BX3",
+        "BX4",
+        "BX5",
+        "BX6",
+        "BX7",
+        "BX8",
+        "iñas de actuación no proceso de ensino e aprendizaxe",
+        "A organización da materia desde un punto de vista eminentemente práctico, minimizando os",
+        "ontidos teóricos e privilexiando aquelas actividades que permitan desenvolver as destrezas",
+        "inculadas coa oralidade, establecendo, alén diso, un clima de confianza e seguridade que fa-",
+        "oreza a expresión dinámica e fluída do alumnado. Neste sentido, faise necesaria a creación",
+        "e condicións e contextos que estimulen a superación persoal, o desenvolvemento das poten-",
+        "ialidades, o coidado do autoconcepto e a autoestima, así como os procesos da aprendizaxe",
+        "utónoma e o traballo en equipo.",
+        "O fomento de tarefas cooperativas, pois facilita a implicación do alumnado, permite desen-",
+        "olver as competencias lingüística, social e cívica a través da interacción, e propicia a creación",
+        "un ambiente adecuado para a autoavaliación e a coavaliación. A potenciación do traballo en",
+        "rupo permite manter relacións saudables e produtivas cos compañeiros e compañeiras, co-",
+        "aborar na consecución dos obxectivos, respectar as normas establecidas, amosar unha acti-",
+        "ude tolerante cara ás ideas dos demais e cooperar na superación das dificultades que se pre-",
+        "enten.",
+        "A coordinación e o traballo interdisciplinar, pois moitas das habilidades da materia de Oratoria",
+        "resentan aspectos comúns con outras. Son exemplos a xestión da información, a compren-",
+        "ión de lectura, a escoita comprensiva ou a expresión escrita, polo que o tratamento integrado",
+        "estes elementos competenciais suporá un mellor aproveitamento do tempo e redundará en",
+        "eneficio da evolución do alumnado. Neste sentido, o fomento da aprendizaxe baseada en",
+        "roxectos poderá favorecer a dita interdisciplinaridade. Todos os departamentos, coa súa ac-",
+        "ión coordinada, poderán contribuír a perfeccionar os procesos de produción e recepción oral,",
+        "scrita e multimodal, así como a alfabetización informacional. Alén da retroalimentación en-",
+        "re a Oratoria e as materias lingüísticas ou humanísticas, tamén as de carácter científico-tec-",
+        "olóxico se nutren decisivamente das destrezas comunicativas do alumnado, dado que impul-",
+        "an a consolidación e afondamento do pensamento abstracto e o razoamento crítico. As ac-",
+        "ións concretas poden ser, entre outras, a creación dun concurso de debates, a organización",
+        "e conferencias ou seminarios temáticos, presentacións ou simposios literarios, a creación de",
+        "lubs de lectura, obradoiros, podcasts radiofónicos ou a planificación da Semana Cultural do",
+        "entro. Trátase, en definitiva, de deseñar actividades que estimulen o interese do alumnado,",
+        "hábito lector, a práctica da expresión escrita e a capacidade de comunicarse correctamente",
+        "n público.",
+        "A proposta dunha metodoloxía que oriente, promova e facilite o desenvolvemento competen-",
+        "ial do alumnado favorece, alén diso, o tratamento da atención á diversidade, ao respectar os",
+        "istintos estilos de aprendizaxe a través da elaboración de actividades que combinen o traba-",
+        "lo individual e o cooperativo. Neste sentido, recoméndase o fomento do uso de recursos edu-",
+        "ativos en aberto (REA) e de deseño universal de aprendizaxe (DUA) que faciliten a atención á",
+        "iversidade e a inclusión, e que conduzan á creación dun contorno persoal de aprendizaxe (PLE)",
+        "ropio. O emprego responsable dos recursos e fontes de información proporcionados polas",
+        "IC contribúe á reflexión arredor da pertinencia e fiabilidade dos datos obtidos para construír",
+        "xplicacións coherentes e estruturadas da realidade que rodea o alumnado.",
+        "A planificación de estratexias interactivas que permitan unha construción compartida do co-",
+        "ecemento a través do intercambio de ideas entre o alumnado. Este enfoque implicará a rea-",
+        "ización de tarefas variadas desde o punto de vista lingüístico e social. Proponse, así, a elabo-",
+        "ación de actividades de creación de textos, vinculados aos ámbitos académico, social, xorna-",
+        "ístico ou literario, tendo en conta a importancia da situación comunicativa, o rexistro e as",
+        "struturas gramaticais e pragmáticas apropiadas en cada caso. Recoméndase tamén a plani-",
+        "icación de exposicións orais ou debates sobre temas de actualidade, así como a lectura, com-",
+        "rensión e análise de textos orais e escritos de diversa índole. O emprego da lingua na com-",
+        "rensión e creación de discursos favorece o seu desempeño profesional e a súa participación",
+        "ctiva nos ámbitos social e persoal. Convén que o alumnado adquira os recursos necesarios",
+        "ara se expresar correctamente e con eficacia nunha ampla variedade de situacións comuni-",
+        "ativas (espontáneas ou planificadas) e de contextos (formais e informais).",
+        "En relación co anterior, a selección e planificación de estratexias didácticas que faciliten a",
+        "uto-aprendizaxe do alumnado e que permitan a incorporación do uso e rexistro lingüístico",
+        "decuados en situacións comunicativas reais e próximas ao seu contexto académico e social.",
+        "reténdese, así, estimular a reflexión e o pensamento crítico, favorecendo o descubrimento, a",
+        "nvestigación, o espírito emprendedor e a iniciativa persoal. Por iso, as actividades propostas",
+        "eben afondar nos métodos de compilación, sistematización e presentación da información,",
+        "plicando os procesos de análise, observación e experimentación. Recoméndase, polo tanto,",
+        "ue os exercicios prácticos se orienten cara á realización de proxectos inclusivos para a orga-",
+        "ización de debates ou exposicións orais que amosen todo tipo de posicionamentos, roles ou",
+        "onflitos, onde se potencie a expresión oral, corporal, o movemento e a importancia da xestión",
+        "o tempo e o espazo, para construír una axeitada autoimaxe.",
+        "A utilización de instrumentos e procedementos de avaliación diversos, flexibles e adaptados",
+        "s características do alumnado. A avaliación formativa centrada nas competencias permite",
+        "dentificar o grao de adquisición destas, modificar, de ser o caso, aqueles aspectos suscepti-",
+        "les de mellora (metodoloxía, recursos, tarefas...) e detectar as dificultades de aprendizaxe,",
+        "oa consecuente posta en marcha de mecanismos para palialas. Neste sentido, serán moi ade-",
+        "uadas as rúbricas ou escalas de valoración para recoller os datos froito da observación siste-",
+        "ática do seu traballo.",
+        "A posta en práctica, en definitiva, dun método didáctico, con proxección social e cultural, para",
+        "construción da identidade persoal do alumnado, a integración e a igualdade, espertando a",
+        "úa curiosidade polo mundo e favorecendo unha produción discursiva que poida empregar",
+        "omo medio de comunicación oral e audiovisual. Trátase dunha ferramenta que promova o",
+        "onsenso e a organización grupal, optimice a xestión emocional e a resolución dialogada dos",
+        "onflitos, desenvolva as habilidades de liderado positivo e consolide actitudes de tolerancia e",
+        "especto cara ás ideas dos demais."
+      ],
+      "codigos_items": [
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4",
+        "4.5",
+        "4.6",
+        "4.7",
+        "4.8",
+        "4.9",
+        "4.10",
+        "4.11",
+        "4.12",
+        "4.13",
+        "4.14",
+        "4.15",
+        "4.16",
+        "4.17",
+        "4.18",
+        "4.19",
+        "4.20",
+        "4.21",
+        "4.22",
+        "4.23",
+        "4.24",
+        "4.25",
+        "4.26",
+        "4.27",
+        "4.28",
+        "4.29",
+        "4.30",
+        "4.31",
+        "4.32",
+        "4.33",
+        "4.34",
+        "4.35",
+        "4.36",
+        "4.37",
+        "4.38",
+        "4.39",
+        "4.40",
+        "4.41",
+        "4.42",
+        "4.43",
+        "4.44",
+        "4.45",
+        "4.46",
+        "4.47",
+        "4.48",
+        "4.49",
+        "4.50",
+        "4.51",
+        "4.52",
+        "4.53",
+        "4.54",
+        "4.55",
+        "4.56",
+        "4.57",
+        "4.58",
+        "4.59",
+        "4.60",
+        "4.61",
+        "4.62",
+        "4.63",
+        "4.64",
+        "4.65",
+        "4.66",
+        "4.67",
+        "4.68",
+        "4.69",
+        "4.70",
+        "4.71",
+        "4.72",
+        "4.73",
+        "4.74",
+        "4.75",
+        "4.76",
+        "4.77",
+        "4.78",
+        "4.79",
+        "4.80",
+        "4.81",
+        "4.82",
+        "4.83",
+        "4.84",
+        "4.85",
+        "4.86",
+        "4.87",
+        "4.88",
+        "4.89",
+        "4.90",
+        "4.91",
+        "4.92",
+        "4.93",
+        "4.94",
+        "4.95",
+        "4.96",
+        "4.97",
+        "4.98",
+        "4.99",
+        "4.100",
+        "4.101",
+        "4.102",
+        "4.103",
+        "4.104",
+        "4.105",
+        "4.106",
+        "4.107",
+        "4.108",
+        "4.109"
+      ]
+    }
+  ],
+  "comunidad": "galicia",
+  "idioma": "gl"
+}

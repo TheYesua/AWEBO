@@ -1,0 +1,266 @@
+{
+  "materia_oficial": "Intelixencia Artificial para a Sociedade",
+  "materia": "Intelixencia Artificial para a Sociedade",
+  "etapa": "ESO",
+  "ciclo": "4º ESO",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "4º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Coñecer as áreas que constitúen as bases da intelixencia artificial, comprendendo o concepto de axente intelixente, identificando as áreas básicas nel, así como as tecnoloxías que lles dan soporte, favorecer un emprego seguro, responsable e consciente das ferramentas dixitais e avaliar ao mesmo tempo a súa potencialidade e operatividade.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Comprender as repercusións éticas na sociedade e no ambiente do emprego cotián da intelixencia artificial, reflexionando sobre as ameazas que supoñen e tamén sobre as oportunidades que xeran as novas tecnoloxías, facendo uso dos coñecementos e das habilidades dixitais e aplicando o pensamento crítico no proceso de aprendizaxe.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Manexar e representar conxuntos de datos de forma lóxica e razoada analizando criticamente os resultados obtidos polos modelos e algoritmos e realizando unha reflexión continua sobre a pegada humana, os nesgos e o control dos sistemas intelixentes.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Aplicar ferramentas dixitais das tecnoloxías intelixentes que son transversais a diferentes campos de aplicación da intelixencia artificial na sociedade, resolver de xeito automático problemas concretos do mundo real que implican todas as áreas básicas da intelixencia artificial e comprender o proceso de pensamento computacional aplicado e as limitacións das solucións acadadas.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Diferenciar entre intelixencia natural e artificial comprendendo que significa simular a intelixencia nun sistema computacional."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Coñecer as principais áreas da intelixencia artificial no contexto dun axente intelixente que interactúa coa súa contorna."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Coñecer a historia da intelixencia artificial e como evolucionou ao longo do tempo, tendo en conta as diferentes liñas de investigación, os fitos e as razóns da intelixencia artificial."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "1",
+      "descripcion": "Identificar as áreas da intelixencia artificial en exemplos reais en diferentes campos de aplicación da intelixencia artificial na sociedade."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Identificar e analizar as oportunidades e ameazas éticas e ambientais que xorden do uso cotián da intelixencia artificial."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Investigar os casos en que a intelixencia artificial xerou impactos positivos e negativos na sociedade e no ambiente, e avaliar a súa relevancia ética e ambiental."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Analizar en profundidade o impacto da intelixencia artificial no emprego, na economía e no ambiente natural, e propoñer solucións viables para mitigar as súas posibles consecuencias negativas."
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "2",
+      "descripcion": "Identificar e avaliar as implicacións éticas e políticas do deseño e uso de sistemas de intelixencia artificial, incluíndo a equidade, o nesgo, a discriminación e a responsabilidade."
+    },
+    {
+      "codigo": "2.5",
+      "competencia": "2",
+      "descripcion": "Recoñecer a relevancia da lexislación en materia de intelixencia artificial e o seu fundamento, aplicando principios éticos e legais durante a análise de sistemas intelixentes."
+    },
+    {
+      "codigo": "2.6",
+      "competencia": "2",
+      "descripcion": "Comunicar eficazmente as conclusións e recomendacións derivadas da análise crítica da intelixencia artificial utilizando ferramentas dixitais para a presentación da información."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Coñecer os tipos básicos de sensores utilizados na intelixencia artificial e a diferenza entre sensorización e percepción."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Coñecer e identificar os tipos básicos de actuadores utilizados na intelixencia artificial."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Comprender as formas básicas de representación interna dos datos nos sistemas computacionais e a problemática de representar o coñecemento do mundo real."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "3",
+      "descripcion": "Comprender o concepto de algoritmo para resolver problemas e diferencialo do concepto de algoritmo para aprender un modelo a partir de datos."
+    },
+    {
+      "codigo": "3.5",
+      "competencia": "3",
+      "descripcion": "Recoller, representar e analizar conxuntos de datos, utilizando ferramentas e software para visualizalos de forma lóxica e coherente."
+    },
+    {
+      "codigo": "3.6",
+      "competencia": "3",
+      "descripcion": "Avaliar de maneira crítica os resultados obtidos das análises de datos, reflexionando sobre a súa precisión e fiabilidade."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "Bloque 1. Que é a intelixencia artificial",
+      "titulo": "Que é a intelixencia artificial",
+      "items": [
+        "A intelixencia natural e a intelixencia artificial.",
+        "A intelixencia artificial e a contorna: o axente intelixente.",
+        "A intelixencia artificial ao longo da historia.",
+        "A intelixencia artificial feble e a intelixencia artificial forte.",
+        "Campos de aplicación na sociedade."
+      ],
+      "codigos_items": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4",
+        "1.5"
+      ]
+    },
+    {
+      "codigo": "2",
+      "bloque": "Bloque 2. O impacto da intelixencia artificial",
+      "titulo": "O impacto da intelixencia artificial",
+      "items": [
+        "O emprego ético e responsable da intelixencia artificial. Riscos e oportunidades.",
+        "A intelixencia artificial e as súas regras. Actualidade lexislativa.",
+        "A intelixencia artificial para un futuro verde e sostible."
+      ],
+      "codigos_items": [
+        "2.1",
+        "2.2",
+        "2.3"
+      ]
+    },
+    {
+      "codigo": "3",
+      "bloque": "Bloque 3. Fundamentos da intelixencia artificial",
+      "titulo": "Fundamentos da intelixencia artificial",
+      "items": [
+        "A percepción: sensores e obtención dos datos.",
+        "A actuación: movemento, visualización e comunicación.",
+        "A representación: simbólica e numérica.",
+        "O razoamento: algoritmos e resolución de problemas.",
+        "A aprendizaxe automática: ciencia dos datos.",
+        "A aprendizaxe automática: axuste de modelos e análise dos resultados."
+      ],
+      "codigos_items": [
+        "3.1",
+        "3.2",
+        "3.3",
+        "3.4",
+        "3.5",
+        "3.6"
+      ]
+    },
+    {
+      "codigo": "4",
+      "bloque": "Bloque 4. Tecnoloxías transversais na intelixencia artificial",
+      "titulo": "Tecnoloxías transversais na intelixencia artificial",
+      "items": [
+        "A interacción natural coa intelixencia artificial.",
+        "Os robots autónomos.",
+        "Os mundos virtuais.",
+        "A intelixencia artificial xenerativa e preditiva.",
+        "Os recomendadores intelixentes.",
+        "A intelixencia artificial creativa: arte, música e cultura.",
+        ".4 Orientacións pedagóxicas",
+        "intervención educativa na materia de Intelixencia Artificial para a Sociedade desenvolverá",
+        "seu currículo e tratará de asentar de xeito gradual e progresivo as aprendizaxes que lle faciliten",
+        "o alumnado o logro dos obxectivos da materia e, en combinación co resto das materias, unha",
+        "decuada adquisición das competencias clave e o logro dos obxectivos da etapa.",
+        "este sentido, no deseño das actividades, o profesorado terá que considerar a relación exis-",
+        "ente entre os obxectivos da materia e as competencias clave a través dos descritores operativos",
+        "o perfil de saída e as liñas de actuación no proceso de ensino e aprendizaxe que se presentan",
+        "os puntos seguintes, e seleccionar aqueles criterios de avaliación do currículo que se axusten á",
+        "inalidade buscada, así como empregalos para verificar as aprendizaxes do alumnado e o seu nivel",
+        "e desempeño.",
+        "elación entre os obxectivos da materia de Intelixencia Artificial para a Sociedade e as compe-",
+        "encias clave a través dos descritores operativos establecidos no anexo I do Decreto 156/2022,",
+        "o 15 de setembro",
+        "bxectivos",
+        "a materia",
+        "BX1",
+        "BX2",
+        "BX3",
+        "BX4",
+        "iñas de actuación no proceso de ensino e aprendizaxe",
+        "Nos bloques 1 e 2, «Que é a intelixencia artificial» e «O impacto da intelixencia artificial», o",
+        "lumnado poderá buscar información, empregar casos reais e valorar as implicacións éticas,",
+        "odendo empregar unha metodoloxía baseada en desafíos e problemas relacionados coa in-",
+        "elixencia artificial.",
+        "En canto aos bloques 3 e 4, «Fundamentos da intelixencia artificial» e «Aplicacións da inteli-",
+        "encia artificial na sociedade», poderanse deseñar situacións de aprendizaxe con actividades",
+        "aseadas nunha selección de ferramentas de intelixencia artificial sinxelas e seguras coas ca-",
+        "es o alumnado sexa quen de crear, compartir e valorar un produto final relevante para a so-",
+        "iedade.",
+        "O emprego de aplicacións en liña ou programas residentes con instalación local que promovan",
+        "análise de casos de usos reais, especialmente aqueles onde xorde o debate e o interese so-",
+        "ial.",
+        "A realización de proxectos, baixo unha perspectiva de persoa usuaria, nos cales o alumnado",
+        "ncluirá o desenvolvemento de programacións básicas cunha linguaxe de bloques ou superior,",
+        "ependendo da progresión e das destrezas amosadas."
+      ],
+      "codigos_items": [
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4",
+        "4.5",
+        "4.6",
+        "4.7",
+        "4.8",
+        "4.9",
+        "4.10",
+        "4.11",
+        "4.12",
+        "4.13",
+        "4.14",
+        "4.15",
+        "4.16",
+        "4.17",
+        "4.18",
+        "4.19",
+        "4.20",
+        "4.21",
+        "4.22",
+        "4.23",
+        "4.24",
+        "4.25",
+        "4.26",
+        "4.27",
+        "4.28",
+        "4.29",
+        "4.30",
+        "4.31",
+        "4.32",
+        "4.33",
+        "4.34",
+        "4.35",
+        "4.36",
+        "4.37",
+        "4.38",
+        "4.39",
+        "4.40",
+        "4.41",
+        "4.42"
+      ]
+    }
+  ],
+  "comunidad": "galicia",
+  "idioma": "gl"
+}

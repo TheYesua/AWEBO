@@ -156,7 +156,8 @@ class TestLosRecuentosDelCurriculo:
         import json
 
         datos = {}
-        for carpeta in ("salida", "salida_cataluna", "salida_andalucia"):
+        for carpeta in ("salida", "salida_cataluna", "salida_andalucia",
+                        "salida_galicia"):
             ruta = CURRICULO / carpeta
             if not ruta.exists():
                 continue
@@ -177,6 +178,7 @@ class TestLosRecuentosDelCurriculo:
         ("salida", "Ceuta y Melilla"),
         ("salida_cataluna", "Cataluña"),
         ("salida_andalucia", "Andalucía"),
+        ("salida_galicia", "Galicia"),
     ])
     def test_la_tabla_cuadra_con_los_ficheros(self, reales, carpeta, fila):
         """Puse estas cifras de memoria la primera vez y tres de las cuatro de

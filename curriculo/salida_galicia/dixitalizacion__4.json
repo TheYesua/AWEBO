@@ -1,0 +1,327 @@
+{
+  "materia_oficial": "Dixitalización",
+  "materia": "Dixitalización",
+  "etapa": "ESO",
+  "ciclo": "4º ESO",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "4º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Identificar e resolver problemas técnicos sinxelos e conectar e configurar dispositivos a redes domésticas, aplicando os coñecementos de hardware e sistemas operativos para xestionar as ferramentas e instalacións informáticas e de comunicación de uso cotián.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Configurar a contorna persoal de aprendizaxe interactuando e aproveitando os recursos do ámbito dixital para optimizar e xestionar a aprendizaxe permanente.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Desenvolver hábitos que fomenten o benestar dixital aplicando medidas preventivas e correctivas para protexer dispositivos, datos persoais e a propia saúde.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Exercer unha cidadanía dixital crítica coñecendo as posibles accións que se realizan na rede, identificando as súas repercusións para facer un uso activo, responsable e ético da tecnoloxía.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Conectar dispositivos e xestionar redes locais aplicando os coñecementos e procesos asociados a sistemas de comunicación con e sen fíos con autonomía e dun xeito activo."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Instalar e manter sistemas operativos configurando as súas características en función das súas necesidades persoais."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Identificar e resolver problemas técnicos sinxelos analizando compoñentes e funcións dos dispositivos dixitais, avaliando as solucións de maneira crítica e, en caso necesario, reformulando o procedemento."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Xestionar a aprendizaxe no ámbito dixital configurando a contorna persoal de aprendizaxe mediante a integración de recursos dixitais de maneira autónoma."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Buscar, seleccionar e arquivar información en función das súas necesidades facendo uso das ferramentas da contorna persoal de aprendizaxe con sentido crítico e seguindo normas básicas de seguridade na rede."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Crear, integrar e reelaborar contidos dixitais de forma individual ou colectiva, seleccionando as ferramentas máis apropiadas para xerar novo coñecemento e contidos dixitais de maneira creativa e respectando dereitos de autor e licenzas de uso."
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "2",
+      "descripcion": "Interactuar en espazos virtuais de comunicación e plataformas de aprendizaxe colaborativa, compartindo e publicando información e datos, adaptándose a diferentes audiencias cunha actitude participativa e respectuosa."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "2",
+      "descripcion": "Comprender o fundamento básico dos algoritmos de intelixencia artificial, valorando a importancia de facer un uso ético do tratamento da información na elaboración de aplicacións."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "2",
+      "descripcion": "Desenvolver e programar aplicacións sinxelas para ordenadores, dispositivos móbiles ou web, dando solución a problemas definidos cunha actitude emprendedora, perseverante e creativa."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "3",
+      "descripcion": "Protexer os datos persoais e a pegada dixital xerada na internet configurando as condicións de privacidade das redes sociais e dos espazos virtuais de traballo."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "3",
+      "descripcion": "Configurar e actualizar contrasinais, sistemas operativos e antivirus de forma periódica nos distintos dispositivos dixitais de uso habitual."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "3",
+      "descripcion": "Identificar e saber reaccionar ante situacións que representan unha ameaza na rede escollendo a mellor solución entre diversas opcións, desenvolvendo prácticas saudables e seguras e valorando o benestar físico e mental, tanto persoal como colectivo."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "4",
+      "descripcion": "Facer un uso ético dos datos e das ferramentas dixitais aplicando as normas de etiqueta dixital e respectando a privacidade e as licenzas de uso e propiedade intelectual na comunicación, colaboración e participación activa na rede."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "4",
+      "descripcion": "Recoñecer as achegas das tecnoloxías dixitais nas xestións administrativas e no comercio electrónico, sendo consciente da fenda social de acceso, uso e aproveitamento das devanditas tecnoloxías para diversos colectivos."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "4",
+      "descripcion": "Valorar a importancia da oportunidade, facilidade e liberdade de expresión que supoñen os medios dixitais conectados, analizando de forma crítica as mensaxes que se reciben e transmiten tendo en consideración a súa obxectividade, ideoloxía, intencionalidade, nesgos e caducidade."
+    },
+    {
+      "codigo": "5.4",
+      "competencia": "4",
+      "descripcion": "Analizar a necesidade e os beneficios globais dun uso e desenvolvemento ecosociable responsable das tecnoloxías dixitais, tendo en conta criterios de accesibilidade, sostibilidade e impacto."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "Bloque 1. Dispositivos dixitais, sistemas operativos e de comunicación",
+      "titulo": "Dispositivos dixitais, sistemas operativos e de comunicación",
+      "items": [
+        "Arquitectura de ordenadores: elementos, montaxe, configuración e resolución de problemas sinxelos.",
+        "Sistemas operativos: instalación e configuración de usuario. Instalación de software de uso habitual para a creación de contidos e a xestión de arquivos.",
+        "Sistemas operativos: operacións básicas de organización e almacenamento da información.",
+        "Sistemas de comunicación e Internet: dispositivos de rede e funcionamento. Procedemento de configuración dunha rede doméstica e conexión de dispositivos.",
+        "Dispositivos conectados (IoT+ Wearables): configuración e conexión de dispositivos."
+      ],
+      "codigos_items": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4",
+        "1.5"
+      ]
+    },
+    {
+      "codigo": "2",
+      "bloque": "Bloque 2. Creación e edición de información e contidos dixitais",
+      "titulo": "Creación e edición de información e contidos dixitais",
+      "items": [
+        "Procura e selección e arquivamento de información.",
+        "Creación, maquetaxe e publicación de textos.",
+        "Tratamento da información: creación de informes e gráficos derivados do tratamento de datos con follas de cálculo e bases de datos.",
+        "Edición e montaxe de materiais audiovisuais a partir de fontes diversas. Captura de imaxe, de son e de vídeo e conversión a outros formatos.",
+        "Comunicación de información e contidos dixitais. Presentacións dixitais e infografías en diferentes plataformas dixitais.",
+        "Colaboración en rede. Ferramentas de creación de contidos e aprendizaxe colaborativa na rede.",
+        "Utilización da realidade virtual, aumentada e mixta.",
+        "Publicación e difusión responsable en redes."
+      ],
+      "codigos_items": [
+        "2.1",
+        "2.2",
+        "2.3",
+        "2.4",
+        "2.5",
+        "2.6",
+        "2.7",
+        "2.8"
+      ]
+    },
+    {
+      "codigo": "3",
+      "bloque": "Bloque 3. Pensamento computacional",
+      "titulo": "Pensamento computacional",
+      "items": [
+        "Utilización de estruturas de programación: secuenciais, de selección e iterativas.",
+        "Utilización de funcións. Parámetros, código e retorno.",
+        "Uso de datos. Constantes, variables e estruturas de datos.",
+        "Desenvolvemento de aplicacións sinxelas para ordenadores, dispositivos móbiles e/ou webs.",
+        "Introdución á intelixencia artificial. Creación de aplicacións prácticas da IA.",
+        "Ética no desenvolvemento de aplicacións: nesgo algorítmico, obsolescencia programada."
+      ],
+      "codigos_items": [
+        "3.1",
+        "3.2",
+        "3.3",
+        "3.4",
+        "3.5",
+        "3.6"
+      ]
+    },
+    {
+      "codigo": "4",
+      "bloque": "Bloque 4. Seguridade e benestar dixital.",
+      "titulo": "Seguridade e benestar dixital.",
+      "items": [
+        "Seguridade de dispositivos: accións de configuración específicas. Contrasinais e aplicacións relacionadas, medidas preventivas e correctivas para facer fronte a riscos, ameazas e ataques a dispositivos.",
+        "Seguridade e protección de datos: identidade, reputación dixital, privacidade e pegada dixital. Medidas preventivas na configuración nas redes sociais e na xestión de identidades virtuais.",
+        "Seguridade na saúde física e mental: aplicacións ou medidas que se han adoptar fronte aos riscos e ameazas ao benestar persoal. Opcións de resposta e prácticas de uso saudable. Situacións de violencia e de risco na rede (ciberacoso, sextorsión, acceso a contidos inadecuados, dependencia tecnolóxica...)."
+      ],
+      "codigos_items": [
+        "4.1",
+        "4.2",
+        "4.3"
+      ]
+    },
+    {
+      "codigo": "5",
+      "bloque": "Bloque 5. Cidadanía dixital crítica",
+      "titulo": "Cidadanía dixital crítica",
+      "items": [
+        "Interacción na rede: liberdade de expresión, etiqueta dixital, propiedade intelectual e licenzas de uso. Formas de licenciar unha obra ou un contido.",
+        "Educación mediática: xornalismo dixital, blogosfera, estratexias comunicativas e uso crítico da rede. Ferramentas para detectar noticias falsas e fraudes.",
+        "Xestións administrativas: servizos públicos en liña, rexistros dixitais e certificados oficiais.",
+        "Comercio electrónico: facturas dixitais, formas de pagamento e criptomoedas.",
+        "Ética no uso de datos e ferramentas dixitais: intelixencia artificial, nesgos algorítmicos e ideolóxicos, soberanía tecnolóxica e dixitalización sostible.",
+        "Activismo en liña: plataformas de iniciativa cidadá, cibervoluntariado e comunidades de hardware e software libres.",
+        ".4 Orientacións pedagóxicas",
+        "intervención educativa na materia de Dixitalización desenvolverá o seu currículo e tratará",
+        "e asentar de xeito gradual e progresivo as aprendizaxes que lle faciliten ao alumnado o logro",
+        "os obxectivos da materia e, en combinación co resto das materias, unha adecuada adquisición",
+        "as competencias clave e o logro dos obxectivos da etapa.",
+        "este sentido, no deseño das actividades, o profesorado terá que considerar a relación exis-",
+        "ente entre os obxectivos da materia e as competencias clave a través dos descritores operativos",
+        "o perfil de saída e as liñas de actuación no proceso de ensino e aprendizaxe que se presentan",
+        "os puntos seguintes e seleccionar aqueles criterios de avaliación do currículo que se axusten á",
+        "inalidade buscada, así como empregalos para verificar as aprendizaxes do alumnado e o seu nivel",
+        "e desempeño.",
+        "elación entre os obxectivos da materia de Dixitalización e as competencias clave a través dos",
+        "escritores operativos do perfil de saída establecidos no anexo I",
+        "bxectivos",
+        "a materia",
+        "BX1",
+        "BX2",
+        "BX3",
+        "BX4",
+        "iñas de actuación no proceso de ensino e aprendizaxe",
+        "O uso de distintos métodos que teñan en conta os diferentes ritmos de aprendizaxe do alum-",
+        "ado, que favorezan a capacidade de aprender por si mesmos e que promovan o traballo en",
+        "quipo con perspectiva de xénero.",
+        "A énfase na atención á diversidade do alumnado, na atención individualizada, na prevención",
+        "as dificultades de aprendizaxe e na posta en práctica de mecanismos de reforzo tan pronto",
+        "omo se detecten estas dificultades.",
+        "O uso de estratexias para traballar transversalmente a comprensión lectora, a expresión oral",
+        "escrita, a comunicación audiovisual, a competencia dixital e o fomento da creatividade, do",
+        "spírito científico e do emprendemento.",
+        "O uso de metodoloxías activas con traballos prácticos para coñecer e configurar os distintos",
+        "ispositivos dixitais de uso cotiá, proporcionándolle ao alumnado autonomía á hora de",
+        "stablecer a súa contorna dixital e recursos para solucionar os posibles problemas que se",
+        "resenten.",
+        "A realización de proxectos creativos que permitan mellorar as destrezas para escoller e utili-",
+        "ar as ferramentas máis axeitadas para producir documentos dixitais de diversos tipos e sem-",
+        "re respectando as licenzas e dereitos de autor.",
+        "A utilización de ferramentas dixitais colaborativas potenciando as grandes posibilidades que",
+        "mundo dixital proporciona para o traballo en grupo, fomentando actitudes participativas e",
+        "e respecto.",
+        "A difusión dos contidos dixitais creados tanto en espazos virtuais de comunicación como en",
+        "lataformas de aprendizaxe colaborativa, promovendo a liberdade de expresión o respecto",
+        "olos demais e aplicando as normas da etiqueta dixital.",
+        "O bloque «Pensamento computacional» desenvolverase a partir de proxectos que teñan por",
+        "bxectivo a creación de aplicacións que resolvan problemas, afondando no coñecemento do",
+        "ensamento computacional e introducindo mesmo a intelixencia artificial para comprender",
+        "ellor a realidade actual.",
+        "A incorporación de forma transversal do bloque «Seguridade e benestar dixital» farase ao",
+        "ongo dos proxectos e das actividades de todo o curso, permitindo recoñecer, prever e pór",
+        "olución aos riscos e problemas de seguridade propios da sociedade dixital desde o punto de",
+        "ista dos dispositivos, dos datos e da propia integridade persoal.",
+        "A integración do bloque «Cidadanía dixital crítica» farase de xeito transversal e continuado na",
+        "ealización dos proxectos e actividades do curso para que o alumnado se comporte no mundo",
+        "ixital con actitude ética, responsable e crítica; potenciar a reflexión entendendo e respec-",
+        "ando a diversidade sen prexuízo de ideoloxía, sexo, relixión etc."
+      ],
+      "codigos_items": [
+        "5.1",
+        "5.2",
+        "5.3",
+        "5.4",
+        "5.5",
+        "5.6",
+        "5.7",
+        "5.8",
+        "5.9",
+        "5.10",
+        "5.11",
+        "5.12",
+        "5.13",
+        "5.14",
+        "5.15",
+        "5.16",
+        "5.17",
+        "5.18",
+        "5.19",
+        "5.20",
+        "5.21",
+        "5.22",
+        "5.23",
+        "5.24",
+        "5.25",
+        "5.26",
+        "5.27",
+        "5.28",
+        "5.29",
+        "5.30",
+        "5.31",
+        "5.32",
+        "5.33",
+        "5.34",
+        "5.35",
+        "5.36",
+        "5.37",
+        "5.38",
+        "5.39",
+        "5.40",
+        "5.41",
+        "5.42",
+        "5.43",
+        "5.44",
+        "5.45",
+        "5.46",
+        "5.47",
+        "5.48",
+        "5.49",
+        "5.50",
+        "5.51",
+        "5.52",
+        "5.53",
+        "5.54",
+        "5.55",
+        "5.56",
+        "5.57",
+        "5.58",
+        "5.59",
+        "5.60"
+      ]
+    }
+  ],
+  "comunidad": "galicia",
+  "idioma": "gl"
+}

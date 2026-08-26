@@ -1,0 +1,298 @@
+{
+  "materia_oficial": "Proxecto Competencial",
+  "materia": "Proxecto Competencial",
+  "etapa": "ESO",
+  "ciclo": "1º ESO e 2º ESO e 3º ESO e 4º ESO",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º ESO",
+    "2º ESO",
+    "3º ESO",
+    "4º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Deseñar un plan de traballo para a realización dun proxecto ou a resolución dun problema a través da definición de obxectivos e das accións para acadalos, tendo en conta as necesidades da contorna.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Desenvolver o proxecto segundo a planificación prevista mobilizando conxuntamente as competencias transversais que se requiran.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Presentar os resultados asociados ao proxecto competencial empregando dun xeito respectuoso estratexias e ferramentas de comunicación adecuadas cunha linguaxe verbal e corporal positiva, con control das emocións negativas e, de ser o caso, co uso de recursos informáticos e audiovisuais.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Recoñecer a importancia da temática do proxecto que se pretende abordar."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Identificar e determinar os recursos e materiais necesarios para a realización do proxecto."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Identificar, seleccionar e analizar a información que se precisa."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "1",
+      "descripcion": "Realizar a secuencia e a temporización das actuacións necesarias para a execución do proxecto."
+    },
+    {
+      "codigo": "1.5",
+      "competencia": "1",
+      "descripcion": "Prever as incidencias que se poidan producir no desenvolvemento das actuacións do proxecto e propoñer posibles solucións a estas."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Executar as actuacións asociadas coa secuencia e coa temporización prevista."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Aplicar os coñecementos axeitados e mobilizar as competencias cos niveis de calidade requiridos."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Empregar, de ser o caso, os recursos e materiais previstos para a execución das actuacións."
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "2",
+      "descripcion": "Resolver, dentro do seu nivel de autonomía, ou comunicar as incidencias xurdidas durante a execución das actuacións."
+    },
+    {
+      "codigo": "2.5",
+      "competencia": "2",
+      "descripcion": "Valorar os resultados logrados ao termo da execución do proxecto."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Presentar o proxecto realizado e, de ser o caso, os produtos finais obtidos."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Empregar unha linguaxe verbal con corrección e claridade, para enxalzar a expresividade e eficacia do discurso."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Empregar unha linguaxe corporal e a presenza escénica como códigos comunicativos para enxalzar a expresividade e eficacia do discurso."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "3",
+      "descripcion": "Potenciar as emocións positivas na exposición e controlar, de ser o caso, a conduta asociada ás emocións negativas."
+    },
+    {
+      "codigo": "3.5",
+      "competencia": "3",
+      "descripcion": "Empregar recursos dixitais, audiovisuais ou plásticos como apoio na presentación do proxecto."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "Bloque 1. Definición de proxectos",
+      "titulo": "Definición de proxectos",
+      "items": [
+        "Procura e selección de información relacionada cos proxectos.",
+        "Planificación: secuenciación e temporización."
+      ],
+      "codigos_items": [
+        "1.1",
+        "1.2"
+      ]
+    },
+    {
+      "codigo": "2",
+      "bloque": "Bloque 2. Execución de proxectos",
+      "titulo": "Execución de proxectos",
+      "items": [
+        "Execución de proxectos: dinámicas e roles."
+      ],
+      "codigos_items": [
+        "2.1"
+      ]
+    },
+    {
+      "codigo": "3",
+      "bloque": "Bloque 3. Presentación de proxectos",
+      "titulo": "Presentación de proxectos",
+      "items": [
+        "Presentación de proxectos: a expresión verbal e corporal; control das emocións e da conduta.",
+        "Uso de recursos dixitais, audiovisuais ou plásticos de apoio á comunicación para a presentación do proxecto.",
+        ".4 Orientacións pedagóxicas",
+        "intervención educativa na materia de Proxecto Competencial desenvolverá o seu currículo e",
+        "ratará de asentar de xeito gradual e progresivo nos distintos niveis da etapa as aprendizaxes",
+        "ue lle faciliten ao alumnado o logro dos obxectivos da materia e unha adecuada adquisición das",
+        "ompetencias transversais.",
+        "currículo da materia de Proxecto Competencial ten unha formulación aberta co fin de per-",
+        "itirlle ao profesorado un marco amplo de posibilidades de concreción para axustarse ás nece-",
+        "idades do alumnado destinatario, ás súas preocupacións e aos seus intereses, así como á reali-",
+        "ade da contorna do centro docente. Por outra banda, o currículo da materia é común para todos",
+        "s cursos da etapa, polo que o profesorado terá que adecuar as propostas de desenvolvemento",
+        "urricular ao nivel e idade do alumnado buscando unha oportuna progresividade no conxunto dos",
+        "ursos da etapa.",
+        "este sentido, no deseño das actividades, o profesorado terá que considerar a relación exis-",
+        "ente entre os obxectivos da materia e as competencias clave a través dos descritores operativos",
+        "o perfil de saída e as liñas de actuación no proceso de ensino e aprendizaxe, que se presentan",
+        "as epígrafes seguintes, e seleccionar os criterios de avaliación do currículo que se axusten á",
+        "inalidade buscada, así como empregalos para verificar as aprendizaxes do alumnado e o seu nivel",
+        "e desempeño.",
+        "elación entre os obxectivos da materia de Proxecto Competencial e as competencias clave a",
+        "ravés dos descritores operativos do perfil de saída establecidos no anexo I",
+        "bxectivos",
+        "a materia",
+        "BX1",
+        "BX2",
+        "BX3",
+        "iñas de actuación no proceso de ensino e aprendizaxe",
+        "A materia debe enfocarse ao desenvolvemento no alumnado dunha actitude responsable e",
+        "rítica a partir da toma de conciencia das problemáticas ás que se enfrontan a sociedade e as",
+        "ersoas que nela conviven, desde unha visión sistémica, tanto local como global, e da reflexión",
+        "rítica sobre os factores internos e externos que inciden nela, asumindo a responsabilidade",
+        "ersoal na procura de solución para elas.",
+        "Os deseños dos proxectos ou problemas de traballo deben ser significativos e desenvolverse",
+        "n contextos reais que permitan ao alumnado experimentar e vivenciar o proxecto, ter tempos",
+        "espazos de protagonismo, así como obter o recoñecemento da súa valía persoal e das súas",
+        "ontribucións aos diferentes grupos en que desenvolva a actividade, reforzando así a autoes-",
+        "ima, a autonomía, a reflexión e a responsabilidade.",
+        "As actividades que se propoñan dirixiranse a reforzar os aspectos máis transversais do currí-",
+        "ulo, favorecendo a interdisciplinariedade, a conexión entre os diferentes saberes e a mobili-",
+        "ación conxunta das competencias necesarias para utilizar o razoamento lóxico e analizar e",
+        "xuizar criticamente os problemas sociais e históricos.",
+        "A realización do proxecto contribuirá á alfabetización informacional e dixital, empregando",
+        "estrezas e habilidades na procura e na selección de información, o uso ético desta e a xera-",
+        "ión de contidos, e introducindo as tecnoloxías da información e da comunicación como ferra-",
+        "entas de documentación e comunicación que lle permitan ao alumnado almacenar, organi-",
+        "ar, transferir e presentar o traballo elaborado ao longo do curso.",
+        "Impulsarase o traballo cooperativo para a realización das tarefas, que lles permita ás alumnas",
+        "aos alumnos a análise, a expresión e a interpretación de pensamentos, sentimentos e feitos",
+        "n distintos contextos sociais e culturais, así como o uso da linguaxe para regular a conduta e",
+        "elacionarse coas demais persoas.",
+        "O profesorado debe estimular a axuda mutua e o traballo colaborativo co que, a través da",
+        "omunicación oral, o diálogo e a interacción entre o alumnado, se contribuirá a desenvolver a",
+        "ompetencia para participar activamente nun equipo, a análise e a reorganización das propias",
+        "deas, o respecto crítico a outros puntos de vista, o recoñecemento dos propios valores e das",
+        "ropias limitacións, a adaptación ás necesidades colectivas e a solidariedade, a asunción de",
+        "esponsabilidades e o respecto ás normas acordadas.",
+        "O carácter colectivo do proxecto buscará a inclusión do alumnado, desenvolvendo empatía e",
+        "enerosidade.",
+        "Empregaranse distintos métodos, que terán en conta os diferentes ritmos de aprendizaxe do",
+        "lumnado e favorecerán a capacidade de aprender por si mesmo. Estes métodos deben fun-",
+        "amentarse na relación entre o progreso persoal e o académico, porque equilibrio afectivo e",
+        "prendizaxe van unidos e fortalécense mutuamente.",
+        "As propostas metodolóxicas deben favorecer que se integre na vida cotiá do alumnado o co-",
+        "ecemento de principios, valores e estratexias de regulación emocional, contribuíndo así á súa",
+        "ncorporación á vida adulta de maneira satisfactoria, desenvolvendo a capacidade de asumir",
+        "s seus deberes e defender os seus dereitos, de exercer a cidadanía activa e de desenvolver",
+        "nha aprendizaxe permanente ao longo da vida.",
+        "Na aula débese crear un clima emocional de confianza e seguridade que facilite que, progresi-",
+        "amente, o alumnado acepte a incerteza como unha oportunidade para articular respostas",
+        "áis creativas, e reforce as súas emocións positivas, aprendendo a manexar a ansiedade e a",
+        "ontrolar as condutas asociadas ás emocións negativas, evolucionando desde unha posible",
+        "alta de confianza inicial ata a satisfacción que supón ter a oportunidade de presentar en pú-",
+        "lico as propias ideas e opinións.",
+        "A énfase na atención á diversidade do alumnado, na atención individualizada, na prevención",
+        "as dificultades de aprendizaxe e na posta en práctica de mecanismos de reforzo tan pronto",
+        "omo se detecten estas dificultades."
+      ],
+      "codigos_items": [
+        "3.1",
+        "3.2",
+        "3.3",
+        "3.4",
+        "3.5",
+        "3.6",
+        "3.7",
+        "3.8",
+        "3.9",
+        "3.10",
+        "3.11",
+        "3.12",
+        "3.13",
+        "3.14",
+        "3.15",
+        "3.16",
+        "3.17",
+        "3.18",
+        "3.19",
+        "3.20",
+        "3.21",
+        "3.22",
+        "3.23",
+        "3.24",
+        "3.25",
+        "3.26",
+        "3.27",
+        "3.28",
+        "3.29",
+        "3.30",
+        "3.31",
+        "3.32",
+        "3.33",
+        "3.34",
+        "3.35",
+        "3.36",
+        "3.37",
+        "3.38",
+        "3.39",
+        "3.40",
+        "3.41",
+        "3.42",
+        "3.43",
+        "3.44",
+        "3.45",
+        "3.46",
+        "3.47",
+        "3.48",
+        "3.49",
+        "3.50",
+        "3.51",
+        "3.52",
+        "3.53",
+        "3.54",
+        "3.55",
+        "3.56",
+        "3.57",
+        "3.58",
+        "3.59",
+        "3.60",
+        "3.61",
+        "3.62",
+        "3.63",
+        "3.64",
+        "3.65",
+        "3.66",
+        "3.67",
+        "3.68",
+        "3.69",
+        "3.70",
+        "3.71",
+        "3.72",
+        "3.73",
+        "3.74",
+        "3.75",
+        "3.76",
+        "3.77"
+      ]
+    }
+  ],
+  "comunidad": "galicia",
+  "idioma": "gl"
+}

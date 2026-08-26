@@ -1,0 +1,199 @@
+{
+  "materia_oficial": "Música",
+  "materia": "Música",
+  "etapa": "ESO",
+  "ciclo": "2º ESO",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Analizar obras de diferentes épocas e culturas identificando as súas principais características estilísticas e establecendo relacións co seu contexto, para valorar o patrimonio musical e dancístico como fonte de gozo e de enriquecemento persoal.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Explorar as posibilidades expresivas de diferentes técnicas musicais e dancísticas, a través de actividades de improvisación, para incorporalas ao repertorio persoal de recursos e desenvolver un criterio de selección das técnicas máis adecuadas á intención expresiva.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Interpretar pezas musicais e dancísticas xestionando adecuadamente as emocións e empregando diversas estratexias e técnicas vocais, corporais ou instrumentais, para ampliar as posibilidades de expresión persoal.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Crear propostas artístico-musicais, de xeito individual ou grupal, empregando a voz, o corpo, instrumentos musicais e ferramentas tecnolóxicas para potenciar a creatividade e identificar oportunidades de desenvolvemento persoal, social, académico e profesional.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Coñecer, valorar e respectar o patrimonio artístico e musical de Galicia e da contorna, a través das achegas relevantes na cultura e na sociedade galegas, para apreciar a importancia do noso acervo dentro dos procesos de globalización.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Identificar os principais trazos estilísticos de obras musicais e dancísticas de diferentes épocas e culturas, evidenciando unha actitude de apertura, interese e respecto na súa escoita ou no seu visionamento."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Explicar cun vocabulario apropiado e cunha actitude aberta e respectuosa as ideas, sentimentos e emocións propias que nos suxiran as propostas estudadas, así como as funcións desempeñadas por determinadas producións musicais e dancísticas, relacionándoas coas principais características do seu contexto histórico, social e cultural, a través da audición, do visionamento ou da asistencia a eventos musicais."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "3",
+      "descripcion": "Ler, escoitar e analizar partituras sinxelas, a través de diferentes soportes audiovisuais, identificando de forma guiada os elementos básicos da linguaxe musical."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "4",
+      "descripcion": "Apreciar a importancia do silencio, da concentración e da atención para traballar a escoita activa, así como crear un marco de respecto aplicando as normas de comportamento individual e grupal."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Participar, con iniciativa, confianza e creatividade, na exploración de técnicas musicais e dancísticas básicas, por medio de improvisacións pautadas, individuais ou grupais, nas cales se empreguen a voz, o corpo, instrumentos musicais ou ferramentas tecnolóxicas."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Expresar ideas, sentimentos e emocións en actividades pautadas de improvisación, seleccionando as técnicas máis adecuadas de entre as que conforman o repertorio persoal de recursos."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "3",
+      "descripcion": "Ler partituras sinxelas, identificando de forma guiada os elementos básicos da linguaxe musical, demostrando coñecemento dos elementos estudados, así como habilidades musicais básicas individuais e grupais."
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "4",
+      "descripcion": "Empregar técnicas básicas de interpretación vocal, corporal ou instrumental, aplicando estratexias de memorización e valorando os ensaios como espazos de escoita e aprendizaxe, así como mostrando iniciativa nos procesos creativos e interpretativos."
+    },
+    {
+      "codigo": "2.5",
+      "competencia": "3",
+      "descripcion": "Interpretar con corrección pezas musicais e dancísticas sinxelas, individuais e grupais, dentro e fóra da aula, xestionando de forma guiada a ansiedade e o medo escénico e mantendo a concentración e o respecto cara aos demais."
+    },
+    {
+      "codigo": "2.6",
+      "competencia": "4",
+      "descripcion": "Planificar e desenvolver, con creatividade, propostas artístico-musicais, tanto individuais como colaborativas, empregando medios musicais e dancísticos, así como ferramentas analóxicas e dixitais, con actitude inclusiva e cohesionadora."
+    },
+    {
+      "codigo": "2.7",
+      "competencia": "5",
+      "descripcion": "Interpretar e crear a través da voz, do corpo ou dos instrumentos, de maneira individual ou en grupo, diferentes pezas musicais, escénicas e dancísticas con elementos propios da cultura galega."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "1",
+      "descripcion": "Valorar a importancia do noso patrimonio musical e dancístico tradicional e popular, así como o doutras culturas musicais do mundo, sendo consciente da súa relevancia e influencia na evolución da música ata a actualidade."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "5",
+      "descripcion": "Identificar as características e os elementos técnicos de propostas musicais da nosa cultura e doutras, analizando os aspectos comúns e as diferenzas entre elas."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Interpretar con corrección pezas musicais e dancísticas sinxelas, individuais e grupais, das diferentes culturas estudadas, valorando e mantendo unha actitude de respecto cara ao patrimonio artístico das diferentes culturas que conforman o mundo."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "4",
+      "descripcion": "Participar activamente na planificación e na execución de propostas artístico-musicais colaborativas, valorando as achegas do resto dos integrantes do grupo e descubrindo oportunidades de desenvolvemento persoal, social, académico e profesional, usando medios audiovisuais e tecnoloxías dixitais."
+    },
+    {
+      "codigo": "3.5",
+      "competencia": "5",
+      "descripcion": "Identificar as características culturais e sociais, así como os elementos propios da linguaxe musical das obras propostas que constitúen o patrimonio artístico musical galego e da nosa contorna, con actitude de respecto."
+    },
+    {
+      "codigo": "3.6",
+      "competencia": "5",
+      "descripcion": "Utilizar as características e os elementos propios da cultura musical galega como base para crear diferentes composicións musicais, escénicas e/ou dancísticas executadas a través da voz, do corpo ou dos instrumentos."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "Bloque 1. Escoita e percepción",
+      "titulo": "Escoita e percepción",
+      "items": [
+        "O silencio, o son, o ruído e a escoita activa. Sensibilidade ante a polución sonora e a creación de ambientes saudables de escoita.",
+        "Elementos básicos da linguaxe musical. Parámetros do son, intervalos, escalas musicais e acordes básicos.",
+        "Texturas monofónicas e polifónicas, melodía acompañada. Formas musicais: motivo, frase, formas binarias, ternarias, forma rondó, formas musicais da canción popular urbana.",
+        "Obras musicais e dancísticas características do patrimonio cultural e musical galego, español ou do mundo: análise, descrición e valoración dos seus trazos básicos.",
+        "Compositoras e compositores, artistas, intérpretes e agrupacións internacionais, nacionais, rexionais e locais, con especial atención aos da Comunidade Autónoma de Galicia.",
+        "Concertos, actuacións musicais e outras manifestacións artístico-musicais en vivo e rexistradas.",
+        "Ferramentas dixitais para a recepción musical: diferentes soportes audiovisuais.",
+        "Normas de comportamento básicas na recepción musical: respecto e valoración."
+      ],
+      "codigos_items": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4",
+        "1.5",
+        "1.6",
+        "1.7",
+        "1.8"
+      ]
+    },
+    {
+      "codigo": "2",
+      "bloque": "Bloque 2. Interpretación, improvisación e creación escénica",
+      "titulo": "Interpretación, improvisación e creación escénica",
+      "items": [
+        "A partitura: identificación e aplicación de grafías convencionais e non convencionais, lectura e escritura musical.",
+        "Coñecemento práctico da linguaxe musical como instrumento efectivo nas actividades de creación e interpretación: lectura rítmica e melódica en clave de sol, claves, células rítmicas básicas nos compases simples e compostos. Signos que modifican a duración, síncope, contratempo.",
+        "Repertorio vocal, instrumental ou corporal, individual ou grupal, de distintos tipos de música do patrimonio musical propio e doutras culturas.",
+        "Técnicas básicas para a interpretación: técnicas vocais, instrumentais e corporais, técnicas de estudo e de control",
+        "e emocións.",
+        "Técnicas de improvisación guiada e libre.",
+        "Normas de comportamento e participación en actividades musicais e escénicas de interpretación.",
+        "Ferramentas dixitais para a creación musical: manexo de secuenciadores e editores de partituras."
+      ],
+      "codigos_items": [
+        "2.1",
+        "2.2",
+        "2.3",
+        "2.4",
+        "2.5",
+        "2.6",
+        "2.7",
+        "2.8"
+      ]
+    },
+    {
+      "codigo": "3",
+      "bloque": "Bloque 3. Contextos e culturas",
+      "titulo": "Contextos e culturas",
+      "items": [
+        "A voz e os instrumentos: clasificación xeral por familias e características. Principais agrupacións musicais.",
+        "As músicas tradicionais en España e a súa diversidade cultural: instrumentos, cancións, danzas e bailes. Estudo das súas características e interpretación.",
+        "A música en Galicia: instrumentos, formas tradicionais, danzas e xéneros tradicionais, populares e urbanos. Análise, interpretación e creación.",
+        "Tradicións musicais e dancísticas doutras culturas do mundo: características e funcións. Instrumentos, cancións, danzas e bailes en África, Asia, América, Europa e Oceanía.",
+        "Músicas populares, urbanas e contemporáneas: análise, interpretación e creación dun proxecto propio baseado nos estilos estudados.",
+        "O son e a música nos medios audiovisuais e as tecnoloxías dixitais."
+      ],
+      "codigos_items": [
+        "3.1",
+        "3.2",
+        "3.3",
+        "3.4",
+        "3.5",
+        "3.6"
+      ]
+    }
+  ],
+  "comunidad": "galicia",
+  "idioma": "gl"
+}

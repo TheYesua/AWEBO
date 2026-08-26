@@ -1,0 +1,498 @@
+{
+  "materia_oficial": "Filosofía",
+  "materia": "Filosofía",
+  "etapa": "ESO",
+  "ciclo": "4º ESO",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "4º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Buscar, interpretar, producir e transmitir correctamente información relativa a cuestións filosóficas, a partir do emprego contrastado e seguro de fontes, o uso e análise rigorosa delas, e o emprego de procedementos elementais de investigación e comunicación, para xerar e transmitir xuízos e teses persoais, e desenvolver unha actitude indagadora, autónoma, rigorosa e creativa no ámbito da reflexión filosófica.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Practicar o exercicio do diálogo filosófico de maneira rigorosa, crítica, tolerante e empática, interiorizando as pautas éticas e formais que este require, mediante a participación en actividades grupais e a través da formulación dialóxica das cuestións filosóficas, para promover o contraste e intercambio de ideas e o exercicio dunha cidadanía activa e democrática.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Entender o carácter plural das diferentes concepcións, ideas e argumentos en relación cos problemas fundamentais da filosofía, mediante a análise crítica das diversas teses relevantes e dos problemas fundamentais aos que estas responden para comprender as principais e fundamentais teorías filosóficas das máis importantes pensadoras e pensadores.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Comprender e analizar a personalidade humana, establecendo unha aproximación aos estudos da mente e da neurociencia, e vendo as implicacións da motivación, da afectividade e das emocións na súa conformación, a través da investigación e do diálogo entre a filosofía e a ciencia, para comprender e construír discursos sobre a reflexión filosófica acerca do ser humano ao longo da historia do pensamento.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Coñecer e comprender os conceptos e estruturas básicos da cultura, a sociedade e a socialización reflexionando, en común, sobre a natureza cultural e social do ser humano, oralmente e por escrito, cunha actitude crítica, sendo empáticos, equitativos, mantendo un espírito construtivo e valorando o enriquecemento cultural que supón coñecer as achegas culturais diversas.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Adquirir unha visión global da racionalidade humana como característica que nos distingue e nos permite situarnos e orientarnos no mundo, comprendendo e analizando as principais teses filosóficas sobre a capacidade que ten a racionalidade de fornecernos dun coñecemento axeitado do mundo, e valorando o ideal de verdade que perseguen as investigacións teóricas, e sérvelles de guía aos nosos afáns prácticos, para fortalecer no alumnado o espírito crítico e rigoroso á hora de analizar informacións, practicar o diálogo argumentado, e adoptar criterios ben fundados á hora de tomar decisións individuais e colectivas.",
+      "descriptores": []
+    },
+    {
+      "codigo": "7",
+      "descripcion": "Tomar conciencia da centralidade das preguntas metafísicas, ao apuntar directamente á cuestión radical do sentido último da realidade e do papel do ser humano dentro dela, reflexionando de maneira dialóxica e crítica sobre o carácter perenne das preguntas sobre o universo e a natureza, sobre a vida e a morte, sobre o individuo e a historia, e o carácter histórico con que foron e seguen a ser contestadas, para que o alumnado aprecie, valore e se sinta partícipe do esforzo humano por tentar dar un sentido racional á totalidade que o rodea e á súa mesma existencia.",
+      "descriptores": []
+    },
+    {
+      "codigo": "8",
+      "descripcion": "Reflexionar e entender a liberdade humana e a súa relación coa vontade, incluíndo o seu tratamento ao longo da historia do pensamento e recoñecendo que está determinada desde varios niveis, para comprender que é condición da creatividade, tamén colaborativa, e para desenvolver desde esta última unha aproximación ao estudo sobre o que é a arte e a beleza.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "3",
+      "descripcion": "Comprender a radicalidade e transcendencia dos problemas filosóficos e recoñecer as funcións da filosofía en canto a saber crítico que aspira a fundamentar, analizar e argumentar sobre os problemas últimos da realidade, desde unha vertente tanto teórica como práctica."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "3",
+      "descripcion": "Coñecer a orixe da filosofía occidental distinguíndoa doutros saberes, e comparándoa con distintas formas de pensamento noutras culturas."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "3",
+      "descripcion": "Adquirir un coñecemento significativo das máis importantes propostas filosóficas que se sucederon ao longo da historia, a través da indagación sobre elas e a identificación das cuestións a que responden."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "1",
+      "descripcion": "Demostrar un coñecemento práctico dos procedementos elementais da investigación filosófica a través de tarefas como a identificación de fontes fiables, a procura eficiente e segura de información, e a correcta organización, análise, interpretación, avaliación, produción e comunicación desta, tanto dixitalmente como a través de medios máis tradicionais."
+    },
+    {
+      "codigo": "1.5",
+      "competencia": "1",
+      "descripcion": "Desenvolver unha actitude indagadora, autónoma e activa no ámbito da reflexión filosófica, mediante o deseño, elaboración e comunicación pública de produtos orixinais, tales como traballos de investigación, disertacións, comentarios de texto ou outros."
+    },
+    {
+      "codigo": "1.6",
+      "competencia": "2",
+      "descripcion": "Promover o contraste e intercambio de ideas e o exercicio dunha cidadanía activa e democrática a través da participación en actividades grupais e do diálogo racional, respectuoso, aberto, construtivo e comprometido coa verdade, acerca de cuestións e problemas filosoficamente relevantes."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "4",
+      "descripcion": "Achegar unha definición do que é a personalidade, incidindo naquilo que a herdanza xenética"
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "4",
+      "descripcion": "Diferenciar e explicar, desde un punto de vista científico, en que consiste a filosofía da mente, a neurociencia e a neurofilosofía, sobre todo producindo traballos de investigación nos que se preste importancia ás TIC."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "4",
+      "descripcion": "Identificar e recoñecer a importancia da motivación como factor enerxético e direccional da vida humana, facendo que o alumnado poida diferenciar entre teorías cognitivas da motivación e teorías humanistas."
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "4",
+      "descripcion": "Reflexionar sobre a importancia da motivación, das emocións e da afectividade, comprendendo, ao mesmo tempo, a relación entre estes aspectos do ser humano e a súa incidencia na conformación da personalidade e na nosa conduta."
+    },
+    {
+      "codigo": "2.5",
+      "competencia": "4",
+      "descripcion": "Expoñer a reflexión filosófica sobre o ser humano, analizando as posturas máis representativas da dita reflexión ao longo das diferentes épocas e momentos da historia do pensamento."
+    },
+    {
+      "codigo": "2.6",
+      "competencia": "1",
+      "descripcion": "Demostrar un coñecemento práctico dos procedementos elementais da investigación filosófica a través de tarefas como a identificación de fontes fiables, a procura eficiente e segura de información e a correcta organización, análise, interpretación, avaliación, produción e comunicación desta, tanto dixitalmente como a través de medios máis tradicionais."
+    },
+    {
+      "codigo": "2.7",
+      "competencia": "1",
+      "descripcion": "Desenvolver unha actitude indagadora, autónoma e activa no ámbito da reflexión filosófica, mediante o deseño, elaboración e comunicación pública de produtos orixinais, tales como traballos de investigación, disertacións, comentarios de texto ou outros."
+    },
+    {
+      "codigo": "2.8",
+      "competencia": "2",
+      "descripcion": "Promover o contraste e intercambio de ideas e o exercicio dunha cidadanía activa e democrática a través do exercicio da participación en actividades grupais e do diálogo racional, respectuoso, aberto, construtivo e comprometido coa verdade, acerca de cuestións e problemas filosoficamente relevantes."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "5",
+      "descripcion": "Comprender e apreciar dous elementos esenciais que constitúen o ser humano, a natureza e a cultura, identificando o papel do biolóxico e do concepto de «cultura» e os seus compoñentes, así como da diversidade cultural."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "5",
+      "descripcion": "Coñecer e analizar o ser humano como ser social resultado do proceso de socialización, mediante a diferenciación dos elementos e axentes que o levan a cabo, analizando a importancia de cada un deles na formación da nosa personalidade social e moral, e desenvolvendo unhas actitudes positivas e non estereotipadas respecto ao xénero."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "5",
+      "descripcion": "Tomar conciencia das distintas explicacións dadas sobre a aparición da sociedade e a formación do Estado, e tamén dos problemas da nosa sociedade actual mediante a discusión e a posta en común das diferentes solucións a eles."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "1",
+      "descripcion": "Demostrar un coñecemento práctico dos procedementos elementais da investigación filosófica a través de tarefas como a identificación de fontes fiables, a procura eficiente e segura de información, e a correcta organización, análise, interpretación, avaliación, produción e comunicación desta, tanto dixitalmente como a través de medios máis tradicionais."
+    },
+    {
+      "codigo": "3.5",
+      "competencia": "1",
+      "descripcion": "Desenvolver unha actitude indagadora, autónoma e activa no ámbito da reflexión filosófica, mediante o deseño, elaboración e comunicación pública de produtos orixinais, tales como traballos de investigación, disertacións, comentarios de texto ou outros."
+    },
+    {
+      "codigo": "3.6",
+      "competencia": "2",
+      "descripcion": "Promover o contraste e intercambio de ideas e o exercicio dunha cidadanía activa e democrática a través do exercicio da participación en actividades grupais e do diálogo racional, respectuoso, aberto, construtivo e comprometido coa verdade, acerca de cuestións e problemas filosoficamente relevantes."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "6",
+      "descripcion": "Reflexionar sobre a racionalidade humana, analizando de xeito crítico a súa natureza e a súa relación coas compoñentes afectivas do noso psiquismo, e distinguindo o seu uso no coñecemento"
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "6",
+      "descripcion": "Abordar o problema filosófico do coñecemento, identificando de xeito crítico as ideas e teses máis importantes das distintas escolas filosóficas que reflexionaron sobre a súa natureza, os seus límites e posibilidades, a súa validez e o papel das distintas facultades humanas na súa consecución."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "6",
+      "descripcion": "Tomar conciencia da importancia de manter e reforzar o valor da verdade como principio que debe orientar o pensamento e a acción individual e as interaccións sociais, analizando as principais teorías filosóficas que se ocuparon dela, valorando o erro como momento necesario na súa busca e rexeitando a asimilación acrítica de informacións."
+    },
+    {
+      "codigo": "4.4",
+      "competencia": "1",
+      "descripcion": "Demostrar un coñecemento práctico dos procedementos elementais da investigación filosófica a través de tarefas como a identificación de fontes fiables, a procura eficiente e segura de información e a correcta organización, análise, interpretación, avaliación, produción e comunicación desta, tanto dixitalmente como a través de medios máis tradicionais."
+    },
+    {
+      "codigo": "4.5",
+      "competencia": "1",
+      "descripcion": "Desenvolver unha actitude indagadora, autónoma e activa no ámbito da reflexión filosófica, mediante o deseño, elaboración e comunicación pública de produtos orixinais, tales como traballos de investigación, disertacións, comentarios de texto ou outros."
+    },
+    {
+      "codigo": "4.6",
+      "competencia": "2",
+      "descripcion": "Promover o contraste e intercambio de ideas e o exercicio dunha cidadanía activa e democrática a través do exercicio da participación en actividades grupais e do diálogo racional, respectuoso, aberto, construtivo e comprometido coa verdade, acerca de cuestións e problemas filosoficamente relevantes."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "7",
+      "descripcion": "Coñecer o significado do termo «metafísica», comprendendo que é a principal disciplina das que compoñen a filosofía, identificando o seu obxectivo fundamental, consistente en realizar preguntas radicais sobre a realidade, e entendendo en que consiste o «preguntar radical»."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "7",
+      "descripcion": "Comprender e coñecer algunhas das grandes preguntas metafísicas acerca da natureza: a orixe e a finalidade do Universo, a orde que rexe a natureza ou a oposición entre as visións determinista e indeterminista da natureza e as consecuencias que derivan de cada unha delas, a través"
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "7",
+      "descripcion": "Reflexionar sobre a interrogación polo sentido da existencia, explicando as teses centrais dalgunhas teorías filosóficas sobre a vida, por medio de disertacións razoadas sobre a vida e a morte, o devir histórico e o lugar do individuo na realidade, entre outras cuestións metafísicas."
+    },
+    {
+      "codigo": "5.4",
+      "competencia": "1",
+      "descripcion": "Demostrar un coñecemento práctico dos procedementos elementais da investigación filosófica a través de tarefas como a identificación de fontes fiables, a procura eficiente e segura de información e a correcta organización, análise, interpretación, avaliación, produción e comunicación desta, tanto dixitalmente como a través de medios máis tradicionais."
+    },
+    {
+      "codigo": "5.5",
+      "competencia": "1",
+      "descripcion": "Desenvolver unha actitude indagadora, autónoma e activa no ámbito da reflexión filosófica, mediante o deseño, elaboración e comunicación pública de produtos orixinais, tales como traballos de investigación, disertacións, comentarios de texto ou outros."
+    },
+    {
+      "codigo": "5.6",
+      "competencia": "2",
+      "descripcion": "Promover o contraste e intercambio de ideas e o exercicio dunha cidadanía activa e democrática a través do exercicio da participación en actividades grupais e do diálogo racional, respectuoso, aberto, construtivo e comprometido coa verdade, acerca de cuestións e problemas filosoficamente relevantes."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "8",
+      "descripcion": "Comprender, dentro do marco xeral da liberdade, que é o libre albedrío, ou a liberdade interior, en relación coa facultade da vontade, coa autonomía, e coa responsabilidade persoais, reflexionando ao mesmo tempo sobre a existencia do determinismo e analizando a posibilidade que ten o ser humano de ser libre."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "8",
+      "descripcion": "Recoñecer e ser quen de expoñer e de explicar diferentes posturas filosóficas sobre a liberdade da acción ao longo das diferentes épocas e momentos da historia do pensamento."
+    },
+    {
+      "codigo": "6.3",
+      "competencia": "8",
+      "descripcion": "Coñecer a estética como a parte da filosofía que estuda a beleza, o proceso creativo e a"
+    },
+    {
+      "codigo": "6.4",
+      "competencia": "8",
+      "descripcion": "Valorar a liberdade como condición básica para a creatividade humana."
+    },
+    {
+      "codigo": "6.5",
+      "competencia": "8",
+      "descripcion": "Entender a capacidade humana da creatividade como un proceso de innovación e de asunción de riscos, en relación coa imaxinación, estudando as fases do proceso creativo e as técnicas de desenvolvemento da creatividade, e apreciando a importancia da colaboración creativa."
+    },
+    {
+      "codigo": "6.6",
+      "competencia": "1",
+      "descripcion": "Demostrar un coñecemento práctico dos procedementos elementais da investigación filosófica a través de tarefas como a identificación de fontes fiables, a procura eficiente e segura de información, e a correcta organización, análise, interpretación, avaliación, produción e comunicación desta, tanto dixitalmente como a través de medios máis tradicionais."
+    },
+    {
+      "codigo": "6.7",
+      "competencia": "1",
+      "descripcion": "Desenvolver unha actitude indagadora, autónoma e activa no ámbito da reflexión filosófica, mediante o deseño, elaboración e comunicación pública de produtos orixinais, tales como traballos de investigación, disertacións, comentarios de texto ou outros."
+    },
+    {
+      "codigo": "6.8",
+      "competencia": "2",
+      "descripcion": "Promover o contraste e intercambio de ideas e o exercicio dunha cidadanía activa e democrática a través do exercicio da participación en actividades grupais e do diálogo racional, respectuoso, aberto, construtivo e comprometido coa verdade, acerca de cuestións e problemas filosoficamente relevantes."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "Bloque 1. A filosofía",
+      "titulo": "A filosofía",
+      "items": [
+        "Introdución: radicalidade, problematicidade e universalidade da filosofía.",
+        "A filosofía como saber crítico.",
+        "Características da filosofía e os seus usos teórico e práctico.",
+        "A función da filosofía no conxunto da cultura occidental e o pensamento noutras tradicións culturais.",
+        "O contexto do xurdimento da filosofía occidental en Grecia: o paso do mito ao logos e o pensamento sobre a polis.",
+        "Breve síntese das grandes épocas da filosofía.",
+        "O papel das mulleres na cultura e na filosofía.",
+        "O pensamento galego."
+      ],
+      "codigos_items": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4",
+        "1.5",
+        "1.6",
+        "1.7",
+        "1.8"
+      ]
+    },
+    {
+      "codigo": "2",
+      "bloque": "Bloque 2. A persoa",
+      "titulo": "A persoa",
+      "items": [
+        "A reflexión sobre o ser humano: a tradición filosófica e a perspectiva científica.",
+        "A personalidade.",
+        "Teorías e tipos de personalidade.",
+        "O biolóxico e o adquirido na formación da personalidade.",
+        "Teorías da motivación: o cognitivismo fronte á teoría humanista.",
+        "As emocións e a afectividade."
+      ],
+      "codigos_items": [
+        "2.1",
+        "2.2",
+        "2.3",
+        "2.4",
+        "2.5",
+        "2.6"
+      ]
+    },
+    {
+      "codigo": "3",
+      "bloque": "Bloque 3. Socialización",
+      "titulo": "Socialización",
+      "items": [
+        "Natureza e cultura no ser humano.",
+        "O ser humano como ser social.",
+        "Elementos e axentes da socialización.",
+        "O proceso de socialización de xénero.",
+        "Sociedade e estado.",
+        "Teorías sobre a orixe da sociedade.",
+        "Teorías sobre a formación do Estado.",
+        "Problemas da sociedade actual e os retos do século XXI."
+      ],
+      "codigos_items": [
+        "3.1",
+        "3.2",
+        "3.3",
+        "3.4",
+        "3.5",
+        "3.6",
+        "3.7",
+        "3.8"
+      ]
+    },
+    {
+      "codigo": "4",
+      "bloque": "Bloque 4. Pensamento",
+      "titulo": "Pensamento",
+      "items": [
+        "A racionalidade humana. Coñecemento e acción.",
+        "Teorías do coñecemento.",
+        "A posibilidade do coñecemento e as críticas escépticas e relativistas.",
+        "O papel das facultades cognoscitivas: racionalismo, empirismo e criticismo.",
+        "A verdade. Características e valor da verdade.",
+        "Teorías da verdade."
+      ],
+      "codigos_items": [
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4",
+        "4.5",
+        "4.6"
+      ]
+    },
+    {
+      "codigo": "5",
+      "bloque": "Bloque 5. Realidade e metafísica",
+      "titulo": "Realidade e metafísica",
+      "items": [
+        "A metafísica e a pregunta polo ser das cousas.",
+        "Cosmoloxía e filosofía da natureza.",
+        "A natureza e o cosmos. Respostas ás preguntas pola orixe e a finalidade do cosmos.",
+        "Determinismo e indeterminismo físicos.",
+        "O sentido da existencia humana.",
+        "A vida e a morte como problemas metafísicos.",
+        "O lugar do ser humano no mundo.",
+        "O sentido da historia."
+      ],
+      "codigos_items": [
+        "5.1",
+        "5.2",
+        "5.3",
+        "5.4",
+        "5.5",
+        "5.6",
+        "5.7",
+        "5.8"
+      ]
+    },
+    {
+      "codigo": "6",
+      "bloque": "Bloque 6. Liberdade e creatividade",
+      "titulo": "Liberdade e creatividade",
+      "items": [
+        "A liberdade e o libre arbitrio: vontade, autonomía e responsabilidade. Posturas filosóficas sobre a liberdade de acción.",
+        "Determinismo e liberdade.",
+        "Liberdade e creatividade: a liberdade como condición da creatividade.",
+        "A arte e a procura da beleza.",
+        "A creatividade humana: imaxinación, innovación e asunción de riscos.",
+        "Técnicas e fases do proceso creativo.",
+        "Creación colaborativa.",
+        ".4 Orientacións pedagóxicas",
+        "intervención educativa na materia de Filosofía desenvolverá o seu currículo e tratará de",
+        "sentar de xeito gradual e progresivo as aprendizaxes que lle faciliten ao alumnado o logro dos",
+        "bxectivos da materia e, en combinación co resto de materias, unha ade-cuada adquisición das",
+        "ompetencias clave e o logro dos obxectivos da etapa.",
+        "este sentido, no deseño das actividades, o profesorado terá que considerar a relación exis-",
+        "ente entre os obxectivos da materia e as competencias clave a través dos descritores operativos",
+        "o perfil de saída e as liñas de actuación no proceso de ensino e aprendizaxe, que se presentan",
+        "os puntos seguintes, e seleccionar aqueles criterios de avaliación do currículo que se axusten á",
+        "inalidade buscada, así como empregalos para verificar as aprendizaxes do alumnado e o seu nivel",
+        "e desempeño.",
+        "elación entre os obxectivos da materia de Filosofía e as competencias clave a través dos des-",
+        "ritores operativos do perfil de saída establecidos no anexo I",
+        "bxectivos",
+        "a materia",
+        "BX1",
+        "BX2",
+        "BX3",
+        "BX4",
+        "BX5",
+        "BX6",
+        "BX7",
+        "BX8",
+        "iñas de actuación no proceso de ensino e aprendizaxe",
+        "O uso de distintos métodos que teñan en conta os diferentes ritmos de aprendizaxe do alum-",
+        "ado, favorezan a súa capacidade de aprender por si mesmo e promovan o traballo en equipo",
+        "on perspectiva de xénero.",
+        "A realización de proxectos significativos para o alumnado e a resolución colaborativa de pro-",
+        "lemas, reforzando a autoestima, a autonomía, a reflexión e a responsabilidade.",
+        "A énfase na atención á diversidade do alumnado, na atención individualizada, na prevención",
+        "as dificultades de aprendizaxe e na posta en práctica de mecanismos de reforzo tan pronto",
+        "omo se detecten estas dificultades.",
+        "O uso de estratexias para traballar transversalmente a comprensión lectora, a expresión oral",
+        "escrita, a comunicación audiovisual, a competencia dixital, o fomento da creatividade, do",
+        "spírito científico e do emprendemento.",
+        "A xeración dunha experiencia real de descubrimento dos interrogantes filosóficos, a partir da",
+        "al se invite o alumnado á investigación analítica en torno a eles.",
+        "A avaliación crítica das diversas respostas que se lles deron aos interrogantes filosóficos e á",
+        "onstrución rigorosa dos seus propios posicionamentos persoais. O desenvolvemento dunha",
+        "raxe consecuente cos devanditos posicionamentos e que poida orientar a vida persoal, social",
+        "profesional das alumnas e dos alumnos.",
+        "O favorecemento da natureza dialóxica, participativa, interdisciplinar, creativa e comprome-",
+        "ida con problemas de relevancia que posúe en si mesma a actividade filosófica.",
+        "A orientación cara ao logro da autonomía persoal e o exercicio crítico e ecosocialmente res-",
+        "onsable da cidadanía.",
+        "O desempeño concreto na resolución de problemas que simulen contextos reais, mobilizando",
+        "s seus coñecementos, destrezas, valores e actitudes.",
+        "O despreguamento de estratexias como a autoavaliación, a avaliación entre iguais ou a coava-",
+        "iación para favorecer a aprendizaxe desde a reflexión activa e desde a posta en práctica das",
+        "ificultades e as fortalezas do alumnado."
+      ],
+      "codigos_items": [
+        "6.1",
+        "6.2",
+        "6.3",
+        "6.4",
+        "6.5",
+        "6.6",
+        "6.7",
+        "6.8",
+        "6.9",
+        "6.10",
+        "6.11",
+        "6.12",
+        "6.13",
+        "6.14",
+        "6.15",
+        "6.16",
+        "6.17",
+        "6.18",
+        "6.19",
+        "6.20",
+        "6.21",
+        "6.22",
+        "6.23",
+        "6.24",
+        "6.25",
+        "6.26",
+        "6.27",
+        "6.28",
+        "6.29",
+        "6.30",
+        "6.31",
+        "6.32",
+        "6.33",
+        "6.34",
+        "6.35",
+        "6.36",
+        "6.37",
+        "6.38",
+        "6.39",
+        "6.40",
+        "6.41",
+        "6.42",
+        "6.43",
+        "6.44",
+        "6.45",
+        "6.46",
+        "6.47",
+        "6.48",
+        "6.49",
+        "6.50",
+        "6.51",
+        "6.52",
+        "6.53",
+        "6.54",
+        "6.55",
+        "6.56",
+        "6.57"
+      ]
+    }
+  ],
+  "comunidad": "galicia",
+  "idioma": "gl"
+}

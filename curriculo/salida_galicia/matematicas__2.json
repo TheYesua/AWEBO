@@ -1,0 +1,454 @@
+{
+  "materia_oficial": "Matemáticas",
+  "materia": "Matemáticas",
+  "etapa": "ESO",
+  "ciclo": "2º ESO",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Interpretar, modelizar e resolver problemas da vida cotiá e propios das matemáticas aplicando diferentes estratexias e formas de razoamento para explorar distintas maneiras de proceder e obter posibles solucións.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Analizar as solucións dun problema usando diferentes técnicas e ferramentas e avaliando as respostas obtidas para verificar a súa validez e idoneidade desde un punto de vista matemático e a súa repercusión global.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Formular e comprobar conxecturas sinxelas ou expor problemas de forma autónoma, recoñecendo o valor do razoamento e a argumentación para xerar novos coñecementos.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Utilizar os principios do pensamento computacional organizando datos, descompoñendo en partes, recoñecendo patróns, interpretando, modificando e creando algoritmos para modelizar situacións e resolver problemas de forma eficaz.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Recoñecer e utilizar conexións entre os diferentes elementos matemáticos interconectando conceptos e procedementos para desenvolver unha visión das matemáticas como un todo integrado.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Identificar as matemáticas implicadas noutras materias e en situacións reais susceptibles de ser abordadas en termos matemáticos, interrelacionando conceptos e procedementos para aplicalos en situacións diversas.",
+      "descriptores": []
+    },
+    {
+      "codigo": "7",
+      "descripcion": "Representar, de forma individual e colectiva, conceptos, procedementos, información e resultados matemáticos usando diferentes tecnoloxías, para visualizar ideas e estruturar procesos matemáticos.",
+      "descriptores": []
+    },
+    {
+      "codigo": "8",
+      "descripcion": "Comunicar de forma individual e colectiva conceptos, procedementos e argumentos matemáticos usando unha linguaxe oral, escrita ou gráfica e utilizando a terminoloxía matemática apropiada, para lles dar significado e coherencia ás ideas matemáticas.",
+      "descriptores": []
+    },
+    {
+      "codigo": "9",
+      "descripcion": "Desenvolver destrezas persoais identificando e xestionando emocións, poñendo en práctica estratexias de aceptación do erro como parte do proceso de aprendizaxe e adaptándose ante situacións de incerteza para mellorar a perseveranza na consecución de obxectivos e o gozo na aprendizaxe das matemáticas.",
+      "descriptores": []
+    },
+    {
+      "codigo": "10",
+      "descripcion": "Desenvolver destrezas sociais recoñecendo e respectando as emocións e as experiencias dos demais, participando activa e reflexivamente en proxectos en equipos heteroxéneos con roles asignados para construír unha identidade positiva como estudante de matemáticas, fomentar o benestar persoal e grupal e crear relacións saudables.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Interpretar problemas matemáticos organizando e relacionando os datos dados e elaborando representacións matemáticas que permitan atopar estratexias para a súa resolución."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Resolver problemas matemáticos mobilizando os coñecementos necesarios e aplicando as ferramentas e estratexias apropiadas."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "3",
+      "descripcion": "Expor variantes dun problema dado modificando algún dos seus datos ou algunha das súas condicións."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "6",
+      "descripcion": "Recoñecer situacións susceptibles de ser formuladas e resoltas mediante ferramentas e estratexias matemáticas, establecendo e aplicando conexións entre o mundo real e as matemáticas e usando os procesos inherentes á investigación científica e matemática: inferir, medir, comunicar, clasificar e predicir."
+    },
+    {
+      "codigo": "1.5",
+      "competencia": "6",
+      "descripcion": "Identificar conexións coherentes entre as matemáticas e outras materias, recoñecendo a achega das matemáticas ao progreso da humanidade."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "3",
+      "descripcion": "Investigar e comprobar conxecturas sinxelas de forma guiada analizando patróns, propiedades e relacións."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "4",
+      "descripcion": "Modelizar situacións e resolver problemas de forma eficaz interpretando e modificando algoritmos."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "5",
+      "descripcion": "Recoñecer e usar as relacións entre os coñecementos e as experiencias matemáticas formando un todo coherente."
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "5",
+      "descripcion": "Realizar conexións entre diferentes procesos matemáticos aplicando coñecementos e experiencias."
+    },
+    {
+      "codigo": "2.5",
+      "competencia": "7",
+      "descripcion": "Representar conceptos, procedementos e resultados matemáticos usando diferentes ferramentas e valorando a súa utilidade para compartir información."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "4",
+      "descripcion": "Recoñecer patróns, organizar datos e descompoñer un problema en partes máis simples facilitando a súa interpretación computacional."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "4",
+      "descripcion": "Modelizar situacións e resolver problemas de forma eficaz interpretando e modificando algoritmos."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "5",
+      "descripcion": "Recoñecer e usar as relacións entre os coñecementos e experiencias matemáticas formando un todo coherente."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "5",
+      "descripcion": "Realizar conexións entre diferentes procesos matemáticos aplicando coñecementos e experiencias."
+    },
+    {
+      "codigo": "3.5",
+      "competencia": "6",
+      "descripcion": "Recoñecer situacións susceptibles de ser formuladas e resoltas mediante ferramentas e estratexias matemáticas, establecendo e aplicando conexións entre o mundo real e as matemáticas e usando os procesos inherentes á investigación científica e matemática: inferir, medir, comunicar, clasificar e predicir."
+    },
+    {
+      "codigo": "3.6",
+      "competencia": "6",
+      "descripcion": "Identificar conexións coherentes entre as matemáticas e outras materias recoñecendo a achega das matemáticas ao progreso da humanidade."
+    },
+    {
+      "codigo": "3.7",
+      "competencia": "7",
+      "descripcion": "Representar conceptos, procedementos e resultados matemáticos usando diferentes ferramentas, valorando a súa utilidade para compartir información."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "2",
+      "descripcion": "Comprobar a corrección matemática das solucións dun problema."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "2",
+      "descripcion": "Comprobar a validez das solucións dun problema e elaborar respostas coherentes no contexto exposto, avaliando o seu alcance e repercusión desde diferentes perspectivas (de xénero, de sostibilidade, de consumo responsable etc.)."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "3",
+      "descripcion": "Expor variantes dun problema dado modificando algún dos seus datos ou algunha das súas condicións."
+    },
+    {
+      "codigo": "4.4",
+      "competencia": "4",
+      "descripcion": "Recoñecer patróns, organizar datos e descompoñer un problema en partes máis simples facilitando a súa interpretación computacional."
+    },
+    {
+      "codigo": "4.5",
+      "competencia": "4",
+      "descripcion": "Modelizar situacións e resolver problemas de forma eficaz interpretando e modificando algoritmos."
+    },
+    {
+      "codigo": "4.6",
+      "competencia": "6",
+      "descripcion": "Recoñecer situacións susceptibles de ser formuladas e resoltas mediante ferramentas e estratexias matemáticas, establecendo e aplicando conexións entre o mundo real e as matemáticas e usando os procesos inherentes á investigación científica e matemática: inferir, medir, comunicar, clasificar e predicir."
+    },
+    {
+      "codigo": "4.7",
+      "competencia": "8",
+      "descripcion": "Comunicar información utilizando a linguaxe matemática apropiada para describir, explicar e xustificar razoamentos, procedementos e conclusións."
+    },
+    {
+      "codigo": "4.8",
+      "competencia": "8",
+      "descripcion": "Recoñecer e empregar con precisión e rigor a linguaxe matemática presente na vida cotiá."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "3",
+      "descripcion": "Investigar conxecturas sinxelas de forma guiada analizando patróns, propiedades e relacións."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "4",
+      "descripcion": "Recoñecer patróns, organizar datos e descompoñer un problema en partes máis simples facilitando a súa interpretación computacional."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "4",
+      "descripcion": "Modelizar situacións e resolver problemas de forma eficaz interpretando e modificando algoritmos."
+    },
+    {
+      "codigo": "5.4",
+      "competencia": "6",
+      "descripcion": "Recoñecer situacións susceptibles de ser formuladas e resoltas mediante ferramentas e estratexias matemáticas, establecendo e aplicando conexións entre o mundo real e as matemáticas e usando os procesos inherentes á investigación científica e matemática: inferir, medir, comunicar, clasificar e predicir."
+    },
+    {
+      "codigo": "5.5",
+      "competencia": "6",
+      "descripcion": "Identificar conexións coherentes entre as matemáticas e outras materias, recoñecendo a achega das matemáticas ao progreso da humanidade."
+    },
+    {
+      "codigo": "5.6",
+      "competencia": "7",
+      "descripcion": "Representar conceptos, procedementos e resultados matemáticos usando diferentes ferramentas e valorando a súa utilidade para compartir información."
+    },
+    {
+      "codigo": "5.7",
+      "competencia": "8",
+      "descripcion": "Comunicar información utilizando a linguaxe matemática apropiada para describir, explicar e xustificar razoamentos, procedementos e conclusións."
+    },
+    {
+      "codigo": "5.8",
+      "competencia": "8",
+      "descripcion": "Recoñecer e empregar con precisión e rigor a linguaxe matemática presente na vida cotiá."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Recoñecer a achega das matemáticas ao progreso da humanidade e a súa contribución á superación dos retos que demanda a sociedade actual."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "9",
+      "descripcion": "Xestionar as emocións propias e desenvolver o autoconcepto matemático como ferramenta para xerar expectativas positivas ante novos retos matemáticos."
+    },
+    {
+      "codigo": "6.3",
+      "competencia": "9",
+      "descripcion": "Mostrar unha actitude positiva e perseverante aceptando a crítica razoada ao lles facer fronte ás diferentes situacións de aprendizaxe das matemáticas."
+    },
+    {
+      "codigo": "6.4",
+      "competencia": "10",
+      "descripcion": "Colaborar activamente no traballo en equipo respectando diferentes opinións, comunicándose de maneira efectiva, pensando de forma crítica e creativa e tomando decisións e xuízos informados."
+    },
+    {
+      "codigo": "6.5",
+      "competencia": "10",
+      "descripcion": "Participar na repartición de tarefas que deban desenvolverse en equipo, achegando valor, favorecendo a inclusión, a escoita activa, asumindo o rol asignado e responsabilizándose da propia contribución ao equipo."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "Bloque 1. Sentido numérico",
+      "titulo": "Sentido numérico",
+      "items": [
+        "Cantidade.",
+        "Uso das potencias de expoñente natural e enteiro. Transformación e simplificación de expresións con potencias. Notación científica.",
+        "Interpretación de números grandes e pequenos, recoñecemento e utilización da notación exponencial e científica e o seu uso na calculadora.",
+        "Realización de estimacións coa precisión requirida.",
+        "Uso dos números enteiros, fraccións, decimais e raíces para expresar cantidades en contextos da vida cotiá coa precisión requirida.",
+        "Recoñecemento e aplicación de diferentes formas de representación de números enteiros, fraccionarios e decimais, incluída a recta numérica.",
+        "Resolución de problemas en diferentes contextos, seleccionando a representación máis adecuada dunha mesma cantidade (natural, enteiro, decimal, fracción ou raíz).",
+        "Sentido das operacións.",
+        "Identificación e aplicación das operacións con números enteiros, fraccionarios ou decimais útiles para resolver situacións contextualizadas.",
+        "Resolución de problemas contextualizados con operacións combinadas con números naturais, enteiros, fraccionarios e decimais, tendo en conta a xerarquía e aplicando as propiedades adecuadas para realizar os cálculos de maneira eficiente.",
+        "Relacións.",
+        "Comparación e ordenación de fraccións, decimais e porcentaxes de maneira eficiente, atopando a súa situación exacta ou aproximada na recta numérica.",
+        "Razoamento proporcional.",
+        "Comprensión e representación de razóns e proporcións en relacións cuantitativas.",
+        "Recoñecemento das relacións de proporcionalidade directa, inversa e composta. Constante de proporcionalidade. Reparticións proporcionais.",
+        "Comprensión e utilización de porcentaxes na resolución de problemas."
+      ],
+      "codigos_items": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4",
+        "1.5",
+        "1.6",
+        "1.7",
+        "1.8",
+        "1.9",
+        "1.10",
+        "1.11",
+        "1.12",
+        "1.13",
+        "1.14",
+        "1.15",
+        "1.16"
+      ]
+    },
+    {
+      "codigo": "2",
+      "bloque": "Bloque 2. Sentido da medida",
+      "titulo": "Sentido da medida",
+      "items": [
+        "Magnitude.",
+        "Elección das unidades e operacións adecuadas en problemas que impliquen medida.",
+        "Estimación de medidas coa precisión adecuada a cada situación.",
+        "Medición.",
+        "Dedución, interpretación e aplicación das principais fórmulas para obter áreas, volumes e capacidades en formas tridimensionais.",
+        "Uso de representacións planas de obxectos tridimensionais para visualizar e resolver problemas.",
+        "Representación de obxectos tridimensionais usando os medios tecnolóxicos máis adecuados."
+      ],
+      "codigos_items": [
+        "2.1",
+        "2.2",
+        "2.3",
+        "2.4",
+        "2.5",
+        "2.6",
+        "2.7"
+      ]
+    },
+    {
+      "codigo": "3",
+      "bloque": "Bloque 3. Sentido espacial",
+      "titulo": "Sentido espacial",
+      "items": [
+        "Figuras xeométricas de dúas e tres dimensións.",
+        "Descrición e clasificación de figuras xeométricas planas e tridimensionais en función das súas propiedades ou características.",
+        "Identificación da relación pitagórica e o seu uso no cálculo de medidas en figuras planas e tridimensionais.",
+        "Recoñecemento de figuras semellantes. O teorema de Tales.",
+        "Aplicación de escalas no cálculo de distancias en situacións da vida real.",
+        "Construción de figuras xeométricas con ferramentas manipulativas e dixitais, como programas de xeometría dinámica, realidade aumentada etc."
+      ],
+      "codigos_items": [
+        "3.1",
+        "3.2",
+        "3.3",
+        "3.4",
+        "3.5",
+        "3.6"
+      ]
+    },
+    {
+      "codigo": "4",
+      "bloque": "Bloque 4. Sentido alxébrico",
+      "titulo": "Sentido alxébrico",
+      "items": [
+        "Modelo matemático.",
+        "Modelización de situacións sinxelas da vida cotiá usando representacións matemáticas e a linguaxe alxébrica.",
+        "Dedución de conclusións razoables sobre unha situación da vida cotiá unha vez modelizada.",
+        "Uso da linguaxe alxébrica para obter fórmulas e termos xerais baseados na observación de pautas e regularidades.",
+        "Operacións con expresións alxébricas sinxelas. Identidades.",
+        "Variable.",
+        "Comprensión do concepto de variable nas súas diferentes naturezas.",
+        "Igualdade e desigualdade.",
+        "Uso da álxebra simbólica para representar relacións lineais e cadráticas en situacións da vida cotiá.",
+        "Identificación e aplicación da equivalencia de expresións alxébricas na resolución de problemas baseados en relacións lineais e cadráticas.",
+        "Procura de solucións en ecuacións lineais e cadráticas cunha incógnita. Aplicación a problemas contextualizados. Interpretación das solucións.",
+        "Resolución alxébrica e gráfica de sistemas de dúas ecuacións lineais e dúas incógnitas. Aplicación a problemas contextualizados.",
+        "Uso da tecnoloxía para resolver e comprobar as solucións de ecuacións e sistemas de ecuacións lineais.",
+        "Relacións e funcións.",
+        "Identificación de funcións, lineais ou non lineais, estudo e comparación das súas propiedades a partir das súas gráficas ou expresións alxébricas.",
+        "Identificación de relacións cuantitativas e determinación da clase ou clases de funcións que a modelizan en problemas propios doutras materias ou do mundo real.",
+        "Uso da álxebra simbólica para a representación e a explicación de relacións matemáticas a partir de situacións contextualizadas.",
+        "Dedución da información relevante dunha función mediante o uso de diferentes representacións simbólicas.",
+        "Pensamento computacional.",
+        "Xeneralización e transferencia de procesos de resolución de problemas a outras situacións.",
+        "Identificación de estratexias para a interpretación e a modificación de algoritmos.",
+        "Uso de calculadoras gráficas e software específico para a representación de funcións e a análise dos seus elementos característicos."
+      ],
+      "codigos_items": [
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4",
+        "4.5",
+        "4.6",
+        "4.7",
+        "4.8",
+        "4.9",
+        "4.10",
+        "4.11",
+        "4.12",
+        "4.13",
+        "4.14",
+        "4.15",
+        "4.16",
+        "4.17",
+        "4.18",
+        "4.19",
+        "4.20",
+        "4.21",
+        "4.22"
+      ]
+    },
+    {
+      "codigo": "5",
+      "bloque": "Bloque 5. Sentido estocástico",
+      "titulo": "Sentido estocástico",
+      "items": [
+        "Organización e análise de datos.",
+        "Análise e interpretación de táboas e gráficos estatísticos de variables cualitativas, cuantitativas discretas e cuantitativas continuas.",
+        "Recollida e organización de datos en situacións da vida cotiá que involucran unha soa variable. Frecuencias.",
+        "Elaboración das representacións gráficas máis adecuadas mediante diferentes ferramentas tecnolóxicas (calculadora, folla de cálculo, aplicacións...) para pescudar como se distribúen os datos, interpretalos e obter conclusións razoadas.",
+        "Medidas de centralización e dispersión: interpretación e cálculo.",
+        "Comparación de dous conxuntos de datos atendendo ás medidas de centralización e dispersión.",
+        "Uso das medidas de dispersión como complemento da media para explicar a distribución dos datos.",
+        "Cálculo e interpretación das medidas de centralización e dispersión, con apoio tecnolóxico, en contextos da vida real.",
+        "Uso de técnicas estatísticas para o tratamento de grandes cantidades de datos.",
+        "Contribución da estatística ao progreso da sociedade."
+      ],
+      "codigos_items": [
+        "5.1",
+        "5.2",
+        "5.3",
+        "5.4",
+        "5.5",
+        "5.6",
+        "5.7",
+        "5.8",
+        "5.9",
+        "5.10"
+      ]
+    },
+    {
+      "codigo": "6",
+      "bloque": "Bloque 6. Sentido socioafectivo",
+      "titulo": "Sentido socioafectivo",
+      "items": [
+        "Crenzas, actitudes e emocións.",
+        "Fomento da curiosidade, da iniciativa, da perseveranza e da resiliencia cara á aprendizaxe das matemáticas.",
+        "Recoñecemento das emocións que interveñen na aprendizaxe como a autoconciencia e a autorregulación.",
+        "Desenvolvemento da flexibilidade cognitiva para aceptar un cambio de estratexia cando sexa necesario e transformar o erro nunha oportunidade de aprendizaxe.",
+        "Traballo en equipo e toma de decisións.",
+        "Técnicas cooperativas para optimizar o traballo en equipo e compartir e construír coñecemento matemático.",
+        "Condutas empáticas e estratexias de xestión de conflitos.",
+        "Inclusión, respecto e diversidade.",
+        "Promoción de actitudes inclusivas e aceptación da diversidade presente na aula e na sociedade.",
+        "Recoñecemento da contribución das matemáticas ao desenvolvemento dos distintos ámbitos do coñecemento humano desde unha perspectiva de xénero."
+      ],
+      "codigos_items": [
+        "6.1",
+        "6.2",
+        "6.3",
+        "6.4",
+        "6.5",
+        "6.6",
+        "6.7",
+        "6.8",
+        "6.9",
+        "6.10"
+      ]
+    }
+  ],
+  "comunidad": "galicia",
+  "idioma": "gl"
+}

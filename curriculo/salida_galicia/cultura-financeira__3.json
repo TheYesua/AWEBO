@@ -1,0 +1,318 @@
+{
+  "materia_oficial": "Cultura Financeira",
+  "materia": "Cultura Financeira",
+  "etapa": "ESO",
+  "ciclo": "3º ESO",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "3º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Comprender as diferentes características do diñeiro, as formas de obtelo como ingreso e de intercambialo por bens e servizos, reflexionando sobre a contribución persoal e social do consumo ao benestar individual e colectivo.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Elaborar plans financeiros sinxelos en contextos persoais ou familiares, tendo en conta as consecuencias a curto, medio e longo prazo, valorando a importancia de xestionar de forma eficaz os ingresos e os gastos e as decisións de aforro, investimento e financiamento para dotarse de ferramentas e estratexias coas cales lograr melloras no benestar financeiro.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Avaliar as vantaxes e as desvantaxes da asunción de riscos na toma de decisións financeiras comprendendo como mitigalos a través de estratexias de seguridade.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Coñecer os dereitos e deberes asociados ao consumo e ao uso de produtos e servizos financeiros, así como os mecanismos de protección, de información e de asesoramento financeiro existentes para evitar estafas e fraudes, identificando patróns de consumo responsable.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Diferenciar as formas que pode adoptar o diñeiro de curso legal sabendo como identificar moedas e billetes auténticos e desenvolvendo a actitude adecuada ante o diñeiro falso."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Comprender a diferenza entre os distintos métodos de pagamento, sabendo utilizalos de forma segura."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Considerar o valor global ou a utilidade dunha posible compra, así como o seu prezo, comprendendo que o poder adquisitivo do diñeiro pode variar co tempo debido á inflación."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "1",
+      "descripcion": "Entender o contido dunha factura ou dun tícket de compra dentro dunha transacción comercial sinxela."
+    },
+    {
+      "codigo": "1.5",
+      "competencia": "1",
+      "descripcion": "Comprender o significado das partes básicas dun recibo de salarios tipo."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Valorar a elaboración de orzamentos de finanzas persoais como forma de resiliencia financeira."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Elaborar orzamentos de finanzas persoais empregando diferentes técnicas e diferenciando os gastos fixos dos variables."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Identificar diferentes formas de obter ingresos legais."
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "2",
+      "descripcion": "Comprender a necesidade de priorizar os gastos para adecualos aos ingresos."
+    },
+    {
+      "codigo": "2.5",
+      "competencia": "2",
+      "descripcion": "Entender o aforro como un compoñente básico do orzamento persoal."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Analizar o funcionamento das prestacións dunha conta bancaria, especialmente unha conta bancaria de pagamento básica segundo a normativa europea."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Analizar as vantaxes e inconvenientes doutros produtos bancarios para unha mellor xestión das finanzas persoais."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Recoñecer posibles formas de roubos, estafas, fraudes en liña e riscos cibernéticos."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "3",
+      "descripcion": "Valorar as consecuencias de pedir diñeiro prestado na renda dispoñible futura e a importancia de avaliar o custo total do crédito e a probabilidade de poder reembolsalo anticipadamente."
+    },
+    {
+      "codigo": "3.5",
+      "competencia": "3",
+      "descripcion": "Ser consciente do endebedamento que pode derivar dun descuberto ou do uso de créditos de fácil acceso a custo elevado."
+    },
+    {
+      "codigo": "3.6",
+      "competencia": "3",
+      "descripcion": "Comprender os riscos relacionados con certos produtos de investimento como os criptoactivos, aprendendo a cuestionar as ofertas de investimento sospeitosamente atractivas e tomando consciencia de que as emocións ou os nesgos cognitivos poden influír nas decisións de investimento de forma imprevista."
+    },
+    {
+      "codigo": "4.5",
+      "competencia": "4",
+      "descripcion": "Ser consciente de que os bens ou servizos adquiridos poden ter diferentes repercusións ambientais ou sociais en función da súa orixe, das súas condicións de produción ou da xestión que delas fai a empresa que os ofrece."
+    },
+    {
+      "codigo": "4.6",
+      "competencia": "4",
+      "descripcion": "Valorar o mercado de segunda man como unha alternativa sostible fronte ás novas compras, así como a reutilización, a reparación e a reciclaxe dos produtos usados."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "Bloque 1. Diñeiro e transaccións",
+      "titulo": "Diñeiro e transaccións",
+      "items": [
+        "O diñeiro e as súas formas. Procedementos para diferenciar o diñeiro auténtico do diñeiro falso.",
+        "Os diferentes modos de pagamento nun contorno de compra física ou virtual.",
+        "Os prezos. O poder adquisitivo e a inflación.",
+        "A importancia das obrigas fiscais e sociais para o mantemento do estado de benestar.",
+        "As facturas e os tíckets de compra: contido básico e conservación como medio de proba de compra ou de garantía.",
+        "O recibo de salarios básico.",
+        "A diferenza entre ingresos netos e brutos."
+      ],
+      "codigos_items": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4",
+        "1.5",
+        "1.6",
+        "1.7"
+      ]
+    },
+    {
+      "codigo": "2",
+      "bloque": "Bloque 2. Planificación e orzamento",
+      "titulo": "Planificación e orzamento",
+      "items": [
+        "Os orzamentos persoais.",
+        "Técnicas de elaboración de orzamentos manuais e dixitais.",
+        "O aforro como elemento esencial do orzamento para facer fronte a diferentes situacións. Aforros de emerxencia e de alta accesibilidade.",
+        "Formas de obtención de ingresos legais e criterios de priorización do gasto."
+      ],
+      "codigos_items": [
+        "2.1",
+        "2.2",
+        "2.3",
+        "2.4"
+      ]
+    },
+    {
+      "codigo": "3",
+      "bloque": "Bloque 3. A xestión bancaria das finanzas persoais. Riscos e rendemento na xestión do diñeiro",
+      "titulo": "A xestión bancaria das finanzas persoais. Riscos e rendemento na xestión do diñeiro",
+      "items": [
+        "Os produtos bancarios básicos e dixitais.",
+        "Outros produtos financeiros de seguridade e investimento.",
+        "Diferentes formas de estafa e fraude na xestión das finanzas persoais.",
+        "O risco e os custos do endebedamento.",
+        "Produtos financeiros de risco elevado."
+      ],
+      "codigos_items": [
+        "3.1",
+        "3.2",
+        "3.3",
+        "3.4",
+        "3.5"
+      ]
+    },
+    {
+      "codigo": "4",
+      "bloque": "Bloque 4. Educación para o consumo",
+      "titulo": "Educación para o consumo",
+      "items": [
+        "As estratexias de protección dos propios datos persoais. A ciberseguridade.",
+        "Os dereitos e as obrigas da consumidora ou do consumidor.",
+        "Factores que inflúen no custo dun ben ou servizo.",
+        "A etiquetaxe verde, de sustentabilidade e de consumo enerxético.",
+        "A economía social. O consumo ético e responsable.",
+        "A responsabilidade social corporativa.",
+        "O proceso da toma de decisión de compra: elementos e factores internos e externos que ter en conta.",
+        "A influencia dos distintos tipos de publicidade na decisión de compra.",
+        "A xestión das emocións ou dos nesgos cognitivos na toma de decisións de investimento.",
+        ".4 Orientacións pedagóxicas",
+        "intervención educativa na materia de Cultura Financeira desenvolverá o seu currículo e tra-",
+        "ará de asentar de xeito gradual e progresivo as aprendizaxes que lle faciliten ao alumnado o",
+        "ogro dos obxectivos da materia e, en combinación co resto das materias, unha adecuada adqui-",
+        "ición das competencias clave e o logro dos obxectivos da etapa.",
+        "este sentido, no deseño das actividades, o profesorado terá que considerar a relación exis-",
+        "ente entre os obxectivos da materia e as competencias clave a través dos descritores operativos",
+        "o perfil de saída e as liñas de actuación no proceso de ensino e aprendizaxe que se presentan",
+        "os puntos seguintes, e seleccionar aqueles criterios de avaliación do currículo que se axusten á",
+        "inalidade buscada, así como empregalos para verificar as aprendizaxes do alumnado e o seu nivel",
+        "e desempeño.",
+        "elación entre os obxectivos da materia de Cultura Financeira e as competencias clave a través",
+        "os descritores operativos establecidos no anexo I do Decreto 156/2022, do 15 de setembro",
+        "bxectivos",
+        "a materia",
+        "BX1",
+        "BX2",
+        "BX3",
+        "BX4",
+        "iñas de actuación no proceso de ensino e aprendizaxe",
+        "O deseño de tarefas e proxectos de traballo basearase en contextos significativos, actuais e",
+        "decuados ás vivencias do alumnado, tendo en conta especialmente a dixitalización de proce-",
+        "os, os continuos avances tecnolóxicos e os cambios sociais nos hábitos de consumo e nas",
+        "ransaccións do diñeiro.",
+        "O emprego de recursos variados, tanto en formato papel como en formato en liña, que per-",
+        "itan un coñecemento amplo das opcións de que dispón unha persoa para resolver distintas",
+        "ituacións relacionadas coa xestión e a seguridade financeira.",
+        "O uso de diferentes tecnoloxías dixitais como ferramenta de traballo para a busca, a selección,",
+        "almacenaxe e a presentación de información de diferente tipoloxía.",
+        "O uso de estratexias para traballar transversalmente a comprensión lectora, a expresión oral",
+        "escrita, a comunicación audiovisual, a competencia dixital, a creatividade, o espírito crítico",
+        "u o emprendemento, entre outros aspectos. Neste sentido, a proposta de proxectos ou tra-",
+        "allos prácticos, tanto individuais como en equipo, será variada e baseada na resolución de",
+        "roblemas que incentiven o desenvolvemento das competencias, habilidades e actitudes ne-",
+        "esarias para que o alumnado estableza unha contorna segura no manexo das súas finanzas e",
+        "ue lle permita a análise crítica dos problemas sociais actuais.",
+        "A planificación de traballos interdisciplinarios e colaborativos con outras materias, como po-",
+        "en ser: as materias de linguas, especialmente ante o emprego de idiomas estranxeiros no uso",
+        "e novos vocábulos asociados á ciberdelincuencia, á ciberseguridade e aos avances tecnolóxi-",
+        "os; a materia de Educación en Valores Cívicos e Éticos, no contexto de concienciar sobre a",
+        "mportancia da toma de decisións no consumo de bens e servizos; ou mesmo a materia de",
+        "atemáticas na creación de orzamentos ou respecto a outros conceptos de interese para a",
+        "ateria de Cultura Financeira vinculados á competencia matemática.",
+        "A énfase na atención á diversidade do alumnado, na atención individualizada, na prevención",
+        "as dificultades de aprendizaxe e na posta en práctica de mecanismos de reforzo tan pronto",
+        "omo se detecten estas dificultades.",
+        "O uso de distintos métodos que teñan en conta os diferentes ritmos de aprendizaxe do alum-",
+        "ado, que favorezan a capacidade de aprender por si mesmo e promovan o traballo en equipo",
+        "on perspectiva de xénero.",
+        "O emprego de estratexias como a autoavaliación, a avaliación entre iguais ou a coavaliación",
+        "ara favorecer a aprendizaxe desde unha reflexión activa e desde a posta en práctica das difi-",
+        "ultades e as fortalezas do alumnado."
+      ],
+      "codigos_items": [
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4",
+        "4.5",
+        "4.6",
+        "4.7",
+        "4.8",
+        "4.9",
+        "4.10",
+        "4.11",
+        "4.12",
+        "4.13",
+        "4.14",
+        "4.15",
+        "4.16",
+        "4.17",
+        "4.18",
+        "4.19",
+        "4.20",
+        "4.21",
+        "4.22",
+        "4.23",
+        "4.24",
+        "4.25",
+        "4.26",
+        "4.27",
+        "4.28",
+        "4.29",
+        "4.30",
+        "4.31",
+        "4.32",
+        "4.33",
+        "4.34",
+        "4.35",
+        "4.36",
+        "4.37",
+        "4.38",
+        "4.39",
+        "4.40",
+        "4.41",
+        "4.42",
+        "4.43",
+        "4.44",
+        "4.45",
+        "4.46",
+        "4.47",
+        "4.48",
+        "4.49",
+        "4.50",
+        "4.51",
+        "4.52",
+        "4.53",
+        "4.54",
+        "4.55",
+        "4.56",
+        "4.57",
+        "4.58",
+        "4.59",
+        "4.60",
+        "4.61"
+      ]
+    }
+  ],
+  "comunidad": "galicia",
+  "idioma": "gl"
+}

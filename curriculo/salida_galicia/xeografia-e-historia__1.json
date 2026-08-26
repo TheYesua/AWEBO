@@ -1,0 +1,260 @@
+{
+  "materia_oficial": "Xeografía e Historia",
+  "materia": "Xeografía e Historia",
+  "etapa": "ESO",
+  "ciclo": "1º ESO",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Buscar, seleccionar, tratar e organizar información sobre temas relevantes do presente e do pasado, usando criticamente fontes históricas e xeográficas, para adquirir coñecementos, elaborar e expresar contidos en varios formatos.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Indagar, argumentar e elaborar produtos propios sobre problemas xeográficos, históricos e sociais que resulten relevantes na actualidade, desde o local ao global, para desenvolver un pensamento crítico, respectuoso coas diferenzas, que contribúa á construción da propia identidade e a enriquecer o acervo común.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Coñecer os principais desafíos aos cales se enfrontaron distintas sociedades ao longo do tempo, identificando as causas e consecuencias dos cambios producidos e os problemas a que se enfrontan na actualidade, mediante o desenvolvemento de proxectos de investigación e o uso de fontes fiables, para realizar propostas que contribúan ao desenvolvemento sustentable.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Identificar e analizar os elementos da paisaxe e a súa articulación en sistemas complexos naturais, rurais e urbanos, así como a súa evolución no tempo, interpretando as causas das transformacións e valorando o grao de equilibrio existente nos distintos ecosistemas, para promover a súa conservación, mellora e uso sustentable.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Analizar de forma crítica formulacións históricas e xeográficas explicando a construción dos sistemas democráticos e os principios constitucionais que rexen a vida en comunidade, así como asumindo os deberes e dereitos propios do noso marco de convivencia, para promover a participación cidadá e a cohesión social.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Comprender os procesos xeográficos, históricos e culturais que conformaron a realidade multicultural en que vivimos, coñecendo e difundindo a historia e a cultura das minorías étnicas presentes no noso país, e valorando a achega dos movementos en defensa da igualdade e da inclusión, para reducir estereotipos, evitar calquera tipo de discriminación e violencia, e recoñecer a riqueza da diversidade.",
+      "descriptores": []
+    },
+    {
+      "codigo": "7",
+      "descripcion": "Identificar os fundamentos que sosteñen as diversas identidades propias e as alleas, a través do coñecemento e posta en valor do patrimonio material e inmaterial que compartimos para conservalo e respectar os sentimentos de pertenza, así como para favorecer procesos que contribúan á cohesión e solidariedade territorial no tocante aos valores do europeísmo e da Declaración Universal dos Dereitos Humanos.",
+      "descriptores": []
+    },
+    {
+      "codigo": "8",
+      "descripcion": "Tomar conciencia do papel dos ciclos demográficos, o ciclo vital, as formas de vida e as relacións interxeracionais e de dependencia na sociedade actual e a súa evolución ao longo do tempo, analizándoas de forma crítica, para promover alternativas saudables, sustentables, enriquecedoras e respectuosas coa dignidade humana e o compromiso coa sociedade e coa contorna.",
+      "descriptores": []
+    },
+    {
+      "codigo": "9",
+      "descripcion": "Coñecer e valorar a importancia da seguridade integral cidadá na cultura de convivencia nacional e internacional, recoñecendo a contribución do Estado, das súas institucións e doutras entidades sociais á cidadanía global, á paz, á cooperación internacional e ao desenvolvemento sustentable, para promover a consecución dun mundo máis seguro, solidario, sustentable e xusto.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Elaborar, expresar e presentar contidos propios en forma de esquemas, táboas informativas e outros tipos de formato mediante o desenvolvemento de estratexias de procura, selección e tratamento de información relativas a procesos e acontecementos relevantes do presente e do pasado."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "2",
+      "descripcion": "Identificar, valorar e mostrar interese polos principais problemas que afectan a sociedade, adoptando unha posición crítica e proactiva cara a eles."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "2",
+      "descripcion": "Incorporar e utilizar adecuadamente termos, conceptos e acontecementos relacionados coa xeografía, a historia e outras disciplinas das ciencias sociais, a través de intervencións orais, textos escritos e outros produtos, mostrando formulacións orixinais e propostas creativas."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "3",
+      "descripcion": "Adquirir e construír coñecemento relevante do mundo actual e da historia, a través de procesos indutivos, da investigación e do traballo por proxectos, retos ou problemas, mediante a elaboración de produtos que reflictan a comprensión dos fenómenos e problemas abordados."
+    },
+    {
+      "codigo": "1.5",
+      "competencia": "3",
+      "descripcion": "Identificar os principais problemas, retos e desafíos a que se enfrontou a humanidade ao longo da historia, os cambios producidos, as súas causas e consecuencias, así como os que, na actualidade, debemos formular e resolver arredor dos obxectivos de desenvolvemento sustentable."
+    },
+    {
+      "codigo": "1.6",
+      "competencia": "3",
+      "descripcion": "Representar adecuadamente información xeográfica a través de diversas formas de representación gráfica, cartográfica e visual."
+    },
+    {
+      "codigo": "1.7",
+      "competencia": "4",
+      "descripcion": "Interpretar a contorna desde unha perspectiva sistémica e integradora, a través do concepto de paisaxe, identificando os seus principais elementos e as interrelacións existentes."
+    },
+    {
+      "codigo": "1.8",
+      "competencia": "9",
+      "descripcion": "Contribuír á consecución dun mundo máis seguro, xusto, solidario e sustentable, a través da análise dos principais conflitos do presente e do recoñecemento das institucións do Estado, e das asociacións civís que garanten a seguridade integral e a convivencia social, así como dos"
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "1",
+      "descripcion": "Elaborar, expresar e presentar contidos propios en forma de esquemas, táboas informativas e outros tipos de formato mediante o desenvolvemento de estratexias de procura, selección e tratamento de información relativas a procesos e acontecementos relevantes do presente e do pasado."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "1",
+      "descripcion": "Contrastar e argumentar sobre temas e acontecementos da Prehistoria e da Idade Antiga, localizando e analizando de forma crítica fontes primarias e secundarias como probas históricas."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Argumentar de forma crítica sobre problemas de actualidade a través de coñecementos históricos, contrastando e valorando fontes diversas."
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "3",
+      "descripcion": "Identificar e interpretar a conexión de España e Galicia cos grandes procesos históricos da época antiga, valorando o que supuxeron para a súa evolución e sinalando as achegas dos seus habitantes ao longo da historia."
+    },
+    {
+      "codigo": "2.5",
+      "competencia": "3",
+      "descripcion": "Representar adecuadamente información histórica a través de diversas formas de representación gráfica, cartográfica e visual."
+    },
+    {
+      "codigo": "2.6",
+      "competencia": "5",
+      "descripcion": "Identificar, interpretar e analizar os mecanismos que regularon a convivencia e a vida en común ao longo da historia, desde a orixe da sociedade ás distintas civilizacións que se foron"
+    },
+    {
+      "codigo": "2.7",
+      "competencia": "6",
+      "descripcion": "Situar o nacemento e desenvolvemento de distintas civilizacións e situalas no espazo e no tempo, integrando os elementos históricos, culturais, institucionais e relixiosos que as conformaron, explicando a realidade multicultural xerada ao longo do tempo e identificando as súas achegas máis relevantes á cultura universal."
+    },
+    {
+      "codigo": "2.8",
+      "competencia": "7",
+      "descripcion": "Relacionar as culturas e civilizacións que se desenvolveron ao longo da historia antiga, coas diversas identidades colectivas que se foron construíndo ata a actualidade, reflexionando sobre os múltiples significados que adoptan e as achegas de cada unha delas á cultura humana universal."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "2",
+      "descripcion": "Identificar, valorar e mostrar interese polos principais problemas que afectan a sociedade, adoptando unha posición crítica e proactiva cara a eles."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "2",
+      "descripcion": "Elaborar xuízos argumentados, respectando as opinións dos demais e enriquecendo o acervo común no contexto do mundo actual, dos seus retos e conflitos, e desde unha perspectiva sistémica e global, a través da elaboración de xuízos propios, críticos e argumentados, e o respecto ás opinións dos demais."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "4",
+      "descripcion": "Argumentar a necesidade de accións de defensa, protección, conservación e mellora da contorna natural, rural e urbana a través de propostas e iniciativas que reflictan compromisos e condutas en favor da sustentabilidade e da repartición xusta e solidaria dos recursos."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "5",
+      "descripcion": "Mostrar actitudes pacíficas e respectuosas e asumir as normas como marco necesario para a convivencia, demostrando capacidade crítica e identificando e respondendo de maneira asertiva ante as situacións de inxustiza e desigualdade."
+    },
+    {
+      "codigo": "3.5",
+      "competencia": "6",
+      "descripcion": "Valorar a diversidade social e cultural, argumentando e intervindo en favor da inclusión, así como rexeitando e actuando en contra de calquera actitude ou comportamento discriminatorio baseado en estereotipos."
+    },
+    {
+      "codigo": "3.6",
+      "competencia": "6",
+      "descripcion": "Argumentar e intervir sobre a igualdade real de homes e mulleres actuando en contra de calquera actitude e comportamento discriminatorio por razón de xénero."
+    },
+    {
+      "codigo": "3.7",
+      "competencia": "7",
+      "descripcion": "Valorar, protexer e conservar o patrimonio artístico, histórico e cultural como fundamento da identidade colectiva local, autonómica, nacional, europea e universal, considerándoo un ben para o gozo recreativo e cultural e un recurso para o desenvolvemento dos pobos."
+    },
+    {
+      "codigo": "3.8",
+      "competencia": "8",
+      "descripcion": "Relacionar os cambios nos estilos de vida tradicional e contrastalos cos que son saudables e sustentables na contorna, a través de comportamentos respectuosos coa propia saúde, coa dos demais e cos outros seres vivos, tomando conciencia da importancia de promover o propio desenvolvemento persoal."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "Bloque 1. Retos do mundo actual",
+      "titulo": "Retos do mundo actual",
+      "items": [
+        "Localización espacial: representación do espazo, orientación e escalas. Utilización de recursos dixitais e interpretación e elaboración de mapas, esquemas, imaxes e representacións gráficas. Tecnoloxías da información xeográfica (TIX).",
+        "Emerxencia climática: elementos e factores que condicionan o clima e o impacto das actividades humanas. Métodos de recollida de datos meteorolóxicos e interpretación de gráficos. Riscos e catástrofes climáticas no presente, no pasado e no futuro. Vulnerabilidade, prevención e resiliencia da poboación ante as catástrofes naturais e os efectos do cambio climático.",
+        "Biodiversidade. Dinámicas e ameazas dos ecosistemas planetarios. Formas e procesos de modificación da superficie terrestre. A influencia humana na alteración dos ecosistemas no pasado e na actualidade. Conservación e mellora da contorna local e global. Riqueza e valor patrimonial de España e Galicia.",
+        "Tecnoloxías da información. Manexo e utilización de dispositivos, aplicacións informáticas e plataformas dixitais. Procura, tratamento da información e elaboración de coñecemento. Uso seguro das redes de comunicación. Lectura crítica de información.",
+        "Sociedade do coñecemento. Introdución aos obxectivos e estratexias das ciencias sociais e ao uso dos seus procedementos, termos e conceptos. Uso de plataformas dixitais.",
+        "Obxectivos de desenvolvemento sustentable. A visión dos dilemas do mundo actual, punto de partida para o pensamento crítico e o desenvolvemento de xuízos propios."
+      ],
+      "codigos_items": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4",
+        "1.5",
+        "1.6"
+      ]
+    },
+    {
+      "codigo": "2",
+      "bloque": "Bloque 2. Sociedades e territorios",
+      "titulo": "Sociedades e territorios",
+      "items": [
+        "Métodos básicos de investigación para a construción do coñecemento da xeografía e a historia. Metodoloxías do pensamento xeográfico e do pensamento histórico.",
+        "As fontes históricas e arqueolóxicas como base para a construción do coñecemento histórico. Obxectos e artefactos como fonte para a historia e o legado material. O significado dos arquivos, bibliotecas e museos e do legado histórico e cultural como patrimonio colectivo.",
+        "Análise interdisciplinar da orixe do ser humano e do nacemento da sociedade. Grandes migracións humanas e o nacemento das primeiras culturas.",
+        "Condicionantes xeográficos e interpretacións históricas do xurdimento das civilizacións. As grandes rutas comerciais e as estratexias polo control dos recursos: talasocracias e imperios, conquista e colonización.",
+        "Violencia e conflitos armados. O crecemento dos exércitos e a evolución do armamento desde os hoplitas. Os civís durante as guerras.",
+        "Complexidade social e nacemento da autoridade. Desigualdade social e disputa polo poder na Prehistoria e na Antigüidade. O caso galego desde a sociedade castrexa ao reino suevo.",
+        "As persoas invisibilizadas da historia: mulleres, escravos e estranxeiros. Marxinación, segregación, control e submisión na historia da humanidade. Personaxes femininas na historia. A resistencia á opresión.",
+        "A organización política do ser humano e as formulacións estatais no mundo antigo: democracias, repúblicas, imperios e reinos. Evolución da teoría do poder.",
+        "As raíces clásicas da cultura occidental. A construción das identidades culturais, da idea de Europa, e do eurocentrismo, a través do pensamento e da arte. A influencia das civilizacións xudía e islámica na cultura europea.",
+        "O papel da relixión na organización social, a lexitimización do poder e a formación de identidades: politeísmo, monoteísmo e o xurdimento das grandes relixións.",
+        "A transformación humana do territorio e a distribución desigual dos recursos e do traballo. Evolución dos sistemas económicos, dos ciclos demográficos, dos modos de vida e dos modelos de organización social. A loita pola supervivencia e o status social na Prehistoria e na Antigüidade.",
+        "Interpretación do territorio e da paisaxe. A cidade e o mundo rural ao longo da historia: polis, urbes, cidades, vilas e aldeas. A pegada humana e a protección do patrimonio ambiental, histórico, artístico e cultural.",
+        "España e Galicia no tempo e a súa conexión cos grandes procesos da historia da humanidade. O legado histórico e o acervo cultural na formación das identidades colectivas.",
+        "Significado e función das expresións artísticas e culturais nas distintas civilizacións. Diversidade e riqueza cultural. Respecto e conservación do patrimonio material e inmaterial."
+      ],
+      "codigos_items": [
+        "2.1",
+        "2.2",
+        "2.3",
+        "2.4",
+        "2.5",
+        "2.6",
+        "2.7",
+        "2.8",
+        "2.9",
+        "2.10",
+        "2.11",
+        "2.12",
+        "2.13",
+        "2.14"
+      ]
+    },
+    {
+      "codigo": "3",
+      "bloque": "Bloque 3. Compromiso cívico e global",
+      "titulo": "Compromiso cívico e global",
+      "items": [
+        "Alteridade: respecto e aceptación «do outro». Comportamentos non discriminatorios e contrarios a calquera actitude diferenciadora e segregadora.",
+        "Igualdade de xénero. Manifestacións e condutas non sexistas.",
+        "Conservación e defensa do patrimonio histórico, artístico e cultural.",
+        "Conciencia ambiental. Respecto, protección e coidado dos seres vivos e do planeta.",
+        "Seguridade viaria e mobilidade segura, saudable e sustentable. O espazo público."
+      ],
+      "codigos_items": [
+        "3.1",
+        "3.2",
+        "3.3",
+        "3.4",
+        "3.5"
+      ]
+    }
+  ],
+  "comunidad": "galicia",
+  "idioma": "gl"
+}

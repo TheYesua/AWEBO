@@ -1,0 +1,331 @@
+{
+  "materia_oficial": "Educación Plástica, Visual e Audiovisual",
+  "materia": "Educación Plástica, Visual e Audiovisual",
+  "etapa": "ESO",
+  "ciclo": "3º ESO",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "3º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Comprender a importancia que tiveron no desenvolvemento do ser humano algúns exemplos seleccionados das distintas manifestacións culturais e artísticas, amosando interese polo patrimonio como parte da propia cultura, para entender como se converten no testemuño dos valores e das conviccións de cada persoa e da sociedade no seu conxunto, e para recoñecer a necesidade da súa protección e da súa conservación.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Explicar as producións plásticas, visuais e audiovisuais propias, comparándoas coas dos seus iguais e con algunhas das que conforman o patrimonio cultural e artístico, xustificando as opinións e tendo en conta o progreso desde a intención ata a realización, para valorar o intercambio, as experiencias compartidas e o diálogo intercultural, así como para superar estereotipos.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Analizar diferentes propostas plásticas, visuais e audiovisuais, amosando respecto e desenvolvendo a capacidade de observación e interiorización da experiencia e da satisfacción estética, para enriquecer a cultura artística individual e alimentar o imaxinario propio.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Explorar as técnicas, as linguaxes e as intencións de diferentes producións culturais e artísticas, analizando, de forma aberta e respectuosa tanto o proceso como o produto final, a súa recepción e o seu contexto, para descubrir as posibilidades que ofrecen como fonte xeradora de ideas e respostas.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Realizar producións artísticas individuais ou colectivas con creatividade e imaxinación, seleccionando e aplicando ferramentas, técnicas e soportes en función da intencionalidade, para expresar a visión do mundo, as emocións e os sentimentos propios, así como para mellorar a capacidade de comunicación e desenvolver a reflexión crítica e a autoconfianza.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Apropiarse das referencias culturais e artísticas da contorna, identificando as súas singularidades, para enriquecer as creacións propias e desenvolver a identidade persoal, cultural e social.",
+      "descriptores": []
+    },
+    {
+      "codigo": "7",
+      "descripcion": "Aplicar as técnicas, os recursos e as convencións principais das linguaxes artísticas, incorporando de forma creativa as posibilidades que ofrecen as tecnoloxías, para as integrar e enriquecer o deseño e a realización dun proxecto artístico.",
+      "descriptores": []
+    },
+    {
+      "codigo": "8",
+      "descripcion": "Compartir producións e manifestacións artísticas, adaptando o proxecto á intención e ás características do público destinatario, para valorar distintas oportunidades de desenvolvemento persoal.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Recoñecer os factores históricos e sociais que rodean as producións plásticas, visuais e audiovisuais máis relevantes, así como a súa función e a súa finalidade, e describir as súas particularidades e o seu papel como transmisoras de conceptos, valores e convicións, con interese e respecto, desde unha perspectiva de xénero."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Valorar a importancia da conservación do patrimonio cultural e artístico universal e galego a través do coñecemento e da análise guiada de obras de arte."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "2",
+      "descripcion": "Analizar diversas producións artísticas e culturais, incluídas as propias e as dos seus iguais, desenvolvendo con interese unha ollada estética cara ao mundo e respectando a diversidade das expresións culturais."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "3",
+      "descripcion": "Seleccionar e describir propostas plásticas, visuais e audiovisuais de diversos tipos e épocas, analizalas con curiosidade e respecto desde unha perspectiva de xénero, e incorporalas á súa cultura persoal e o seu imaxinario propio."
+    },
+    {
+      "codigo": "1.5",
+      "competencia": "3",
+      "descripcion": "Argumentar a satisfacción producida pola recepción da arte en todas as súas formas e vertentes, compartindo con respecto impresións e emocións, e expresar a opinión persoal de forma aberta."
+    },
+    {
+      "codigo": "1.6",
+      "competencia": "6",
+      "descripcion": "Explicar a súa pertenza a un contexto cultural concreto, a través da análise dos aspectos formais e dos factores sociais que determinan diversas producións culturais e artísticas actuais."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "4",
+      "descripcion": "Analizar de xeito guiado as especificidades das linguaxes de diferentes producións culturais e artísticas, establecendo conexións entre elas, e incorporalas con creatividade nas producións"
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "5",
+      "descripcion": "Expresar conceptos, ideas e sentimentos en diferentes producións plásticas e visuais, a través da experimentación con diversas ferramentas, técnicas e soportes, desenvolvendo a capacidade de comunicación e a reflexión crítica."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Explicar, de forma razoada, a importancia do proceso que media entre a realidade, o imaxinario e a produción, superando estereotipos e amosando un comportamento respectuoso coa diversidade cultural."
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "7",
+      "descripcion": "Realizar un proxecto gráfico-plástico, con creatividade e de xeito consciente, axustándose ao obxectivo proposto, experimentando con distintas técnicas visuais na xeración de mensaxes propias, e amosando iniciativa no emprego de linguaxes, materiais, soportes e ferramentas."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "4",
+      "descripcion": "Recoñecer os trazos particulares de diversas técnicas e linguaxes artísticas, así como os seus procesos e resultados en función dos contextos sociais, históricos, xeográficos e tecnolóxicos, procurando e analizando a información con interese e eficacia."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "5",
+      "descripcion": "Expresar conceptos, ideas e sentimentos en diferentes producións plásticas e visuais, a través da experimentación con diversas ferramentas, técnicas e soportes, desenvolvendo a capacidade de comunicación e a reflexión crítica."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "6",
+      "descripcion": "Utilizar con creatividade referencias culturais e artísticas da contorna na elaboración de producións propias, amosando unha visión persoal."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "7",
+      "descripcion": "Realizar un proxecto artístico, con creatividade e de xeito consciente, axustándose ao obxectivo proposto, experimentando con distintas técnicas visuais na xeración de mensaxes propias, e amosando iniciativa no emprego de linguaxes, materiais, soportes e ferramentas de creación gráficoplástica."
+    },
+    {
+      "codigo": "3.5",
+      "competencia": "8",
+      "descripcion": "Expor os procesos de elaboración e o resultado final de producións gráfico-plásticas, realizadas de forma individual ou colectiva, recoñecendo os erros, procurando as solucións e as estratexias máis adecuadas para as mellorar, e valorando as oportunidades de desenvolvemento persoal que ofrecen."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "2",
+      "descripcion": "Analizar de xeito guiado diversas producións visuais e audiovisuais, incluídas as propias e as dos seus iguais, desenvolvendo con interese unha ollada estética cara ao mundo e respectando a diversidade das expresións culturais."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Recoñecer os trazos particulares de diversas técnicas e linguaxes visuais e audiovisuais, así como os seus procesos e resultados en función dos contextos sociais, históricos, xeográficos e tecnolóxicos, procurando e analizando a información con interese e eficacia."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "6",
+      "descripcion": "Utilizar con creatividade referencias culturais e artísticas da contorna na elaboración de producións audiovisuais propias, amosando unha visión persoal."
+    },
+    {
+      "codigo": "4.4",
+      "competencia": "7",
+      "descripcion": "Realizar un proxecto audiovisual con creatividade e de xeito consciente, axustándose ao obxectivo proposto, experimentando con distintas técnicas visuais ou audiovisuais na xeración de mensaxes propias, e amosando iniciativa no emprego de linguaxes, materiais, soportes e ferramentas."
+    },
+    {
+      "codigo": "4.5",
+      "competencia": "8",
+      "descripcion": "Recoñecer os diferentes usos e as funcións das producións e das manifestacións visuais e audiovisuais, e argumentar de forma individual ou colectiva as súas conclusións acerca das oportunidades que poden xerar, cunha actitude aberta e con interese por coñecer a súa importancia na sociedade."
+    },
+    {
+      "codigo": "4.6",
+      "competencia": "8",
+      "descripcion": "Expor os procesos de elaboración e o resultado final de producións audiovisuais, realizadas de forma individual ou colectiva, recoñecendo os erros, buscando as solucións e as estratexias máis adecuadas para melloralas, e valorando as oportunidades de desenvolvemento persoal que ofrecen."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "Bloque 1. Patrimonio artístico e cultural.",
+      "titulo": "Patrimonio artístico e cultural.",
+      "items": [
+        "Os xéneros artísticos.",
+        "Manifestacións culturais e artísticas clave ao longo da historia, incluídas as contemporáneas e as pertencentes ao patrimonio local: análise dos seus aspectos formais e do seu contexto histórico. Particularidades do patrimonio artístico galego.",
+        "As formas xeométricas na arte e na contorna: xeometría na natureza, a arquitectura e o deseño de obxectos cotiáns."
+      ],
+      "codigos_items": [
+        "1.1",
+        "1.2",
+        "1.3"
+      ]
+    },
+    {
+      "codigo": "2",
+      "bloque": "Bloque 2. Elementos formais da imaxe e da linguaxe visual. A expresión gráfica",
+      "titulo": "Elementos formais da imaxe e da linguaxe visual. A expresión gráfica",
+      "items": [
+        "Posibilidades expresivas e comunicativas dos elementos visuais: elementos básicos, forma, cor e textura.",
+        "A percepción visual. Introdución aos principios perceptivos, elementos e factores.",
+        "A composición. Conceptos de equilibrio, proporción e ritmo aplicados á organización de formas no plano e no espazo."
+      ],
+      "codigos_items": [
+        "2.1",
+        "2.2",
+        "2.3"
+      ]
+    },
+    {
+      "codigo": "3",
+      "bloque": "Bloque 3. Expresión gráfico-plástica e técnica: fundamentos e procedementos",
+      "titulo": "Expresión gráfico-plástica e técnica: fundamentos e procedementos",
+      "items": [
+        "Técnicas básicas de expresión gráfico-plástica en dúas dimensións. Técnicas secas e húmidas. O seu uso na arte e as súas características expresivas.",
+        "Técnicas básicas de expresión gráfico-plástica en tres dimensións. O seu uso na arte e as súas características expresivas.",
+        "O proceso creativo a través de operacións plásticas: manipular, reproducir, illar, transformar e asociar.",
+        "Introdución aos sistemas de representación. Sistema diédrico: vistas. O esbozo isométrico.",
+        "Factores e etapas do proceso creativo. Elección de materiais e técnicas, realización. O esbozo."
+      ],
+      "codigos_items": [
+        "3.1",
+        "3.2",
+        "3.3",
+        "3.4",
+        "3.5"
+      ]
+    },
+    {
+      "codigo": "4",
+      "bloque": "Bloque 4. Imaxe e comunicación visual e audiovisual",
+      "titulo": "Imaxe e comunicación visual e audiovisual",
+      "items": [
+        "Imaxes visuais e audiovisuais: lectura e análise.",
+        "Imaxe en movemento. Características, orixe e evolución. O cine e a animación.",
+        "Técnicas básicas para a realización de producións audiovisuais sinxelas, de xeito individual ou en grupo. Experimentación en contornas virtuais de aprendizaxe.",
+        ".4 Orientacións pedagóxicas",
+        "intervención educativa na materia de Educación Plástica, Visual e Audiovisual desenvolverá",
+        "seu currículo e tratará de asentar de xeito gradual e progresivo nos distintos niveis da etapa as",
+        "prendizaxes que lle faciliten ao alumnado o logro dos obxectivos da materia e, en combinación",
+        "o resto de materias, unha adecuada adquisición das competencias clave e o logro dos obxectivos",
+        "a etapa.",
+        "este sentido, no deseño das actividades, o profesorado terá que considerar a relación exis-",
+        "ente entre os obxectivos da materia e as competencias clave a través dos descritores operativos",
+        "o perfil de saída e as liñas de actuación no proceso de ensino e aprendizaxe, que se presentan",
+        "as epígrafes seguintes, e seleccionar os criterios de avaliación do currículo que se axusten á",
+        "inalidade buscada, así como empregalos para verificar as aprendizaxes do alumnado e o seu nivel",
+        "e desempeño.",
+        "elación entre os obxectivos da materia de Educación Plástica, Visual e Audiovisual e as compe-",
+        "encias clave a través dos descritores operativos do perfil de saída establecidos no anexo I",
+        "bxectivos",
+        "a materia",
+        "BX1",
+        "BX2",
+        "BX3",
+        "BX4",
+        "BX5",
+        "BX6",
+        "BX7",
+        "BX8",
+        "iñas de actuación no proceso de ensino e aprendizaxe",
+        "O uso de distintos métodos que teñan en conta os diferentes ritmos de aprendizaxe do alum-",
+        "ado, favorezan a capacidade de aprender por si mesmo e promovan o traballo en equipo",
+        "olaborativo con perspectiva de xénero.",
+        "A realización de proxectos significativos para o alumnado e a resolución colaborativa de pro-",
+        "lemas, reforzando a autoestima, a autonomía, a reflexión e a responsabilidade, así como a",
+        "apacidade de aprender a aprender.",
+        "A énfase na atención á diversidade do alumnado, na atención individualizada, na prevención",
+        "as dificultades de aprendizaxe e na posta en práctica de mecanismos de reforzo tan pronto",
+        "omo se detecten estas dificultades.",
+        "O uso de estratexias para traballar transversalmente a comprensión de lectura, a expresión",
+        "ral e escrita, a comunicación audiovisual, a competencia dixital e o fomento da creatividade,",
+        "o espírito científico e do emprendemento.",
+        "O respecto, o coñecemento, a análise e a apreciación do propio patrimonio artístico e cultural.",
+        "O deseño de situacións de aprendizaxe que supoñan unha acción continua e combinada coa",
+        "eflexión, así como unha actitude aberta e colaborativa, coa intención de que o alumnado de-",
+        "envolva unha cultura e unha práctica artística persoais e sustentables.",
+        "A concreción de situacións de aprendizaxe que poñan en xogo as competencias da materia e",
+        "ue estean vinculadas a contextos próximos ao alumnado, que favorezan a aprendizaxe signi-",
+        "icativa, que esperten a súa curiosidade e o seu interese pola arte e as súas manifestacións, e",
+        "ue permitan desenvolver a súa identidade persoal e a súa autoestima.",
+        "O deseño das situacións de aprendizaxe que procuren o desenvolvemento do pensamento di-",
+        "erxente e nas que se valore a diversidade das manifestacións culturais e artísticas.",
+        "O uso das achegas teóricas e dos coñecementos culturais que deben ser introducidos polo",
+        "rofesorado en relación coas preguntas que formule cada situación, permitindo así que o",
+        "lumnado adquira métodos e puntos de referencia no espazo e no tempo para captar e expli-",
+        "itar a natureza, o sentido, o contexto e o alcance das obras e dos procesos artísticos estuda-",
+        "os."
+      ],
+      "codigos_items": [
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4",
+        "4.5",
+        "4.6",
+        "4.7",
+        "4.8",
+        "4.9",
+        "4.10",
+        "4.11",
+        "4.12",
+        "4.13",
+        "4.14",
+        "4.15",
+        "4.16",
+        "4.17",
+        "4.18",
+        "4.19",
+        "4.20",
+        "4.21",
+        "4.22",
+        "4.23",
+        "4.24",
+        "4.25",
+        "4.26",
+        "4.27",
+        "4.28",
+        "4.29",
+        "4.30",
+        "4.31",
+        "4.32",
+        "4.33",
+        "4.34",
+        "4.35",
+        "4.36",
+        "4.37",
+        "4.38",
+        "4.39",
+        "4.40",
+        "4.41",
+        "4.42",
+        "4.43",
+        "4.44",
+        "4.45",
+        "4.46",
+        "4.47",
+        "4.48",
+        "4.49",
+        "4.50",
+        "4.51",
+        "4.52",
+        "4.53",
+        "4.54",
+        "4.55"
+      ]
+    }
+  ],
+  "comunidad": "galicia",
+  "idioma": "gl"
+}

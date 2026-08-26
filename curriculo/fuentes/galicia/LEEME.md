@@ -17,7 +17,7 @@ Anexo II entero en un solo documento, y ya se aprendió con Cataluña lo que
 cuesta trocear eso — y lo que cuesta más aún cuando el PDF del boletín trae la
 codificación de fuente rota.
 
-Se descargan con `docs/scripts/descargar-galicia.ps1`, que les pone el nombre
+Se descargan con `docs/scripts/descargar-galicia.cmd`, que les pone el nombre
 de la materia: el portal los sirve con nombres de hash y bajarlos a mano deja
 35 ficheros indistinguibles.
 
@@ -69,8 +69,8 @@ separados.
 * **Todo lleva código oficial**: `OBX1`, `CA1.1`, y los bloques van numerados.
   Es lo que Andalucía tiene y Cataluña no — allí hubo que inventar un contador
   para los bloques de saberes.
-* **Los cursos están en la web**, en la tabla de la Guía LOMLOE, materia por
-  materia. No hay que deducirlos del articulado como en Cataluña.
+* **Los cursos vienen dentro del PDF** en 32 de 35. No hay que deducirlos del
+  articulado como en Cataluña, ni consultar la web salvo para tres materias.
 
 ### Los contidos, resueltos con los ficheros delante
 
@@ -99,7 +99,7 @@ La estructura completa de un bloque es esta:
           – Recoñecemento e utilización de fontes fidedignas.
 ```
 
-Dos detalles que decidirán el extractor:
+Dos detalles que decidieron el extractor:
 
 * Los contidos van a **dos niveles**: un agrupador con `▪` que termina en `:`,
   y los items con `–`. Es el mismo problema de sangrado que en Cataluña, pero
@@ -137,7 +137,13 @@ Contado sobre los ficheros el 16/08/2026:
 * Sumando por materia: **224 obxectivos**, **912 criterios** y **161 bloques**
   distintos.
 
-Si el extractor sale muy por debajo de esas cifras, está perdiendo algo.
+**Ojo con usar esas cifras como contraste**, que es para lo que se anotaron y no
+sirven: están contadas *por PDF*, y **siete materias aparecen en dos** —el
+currículo completo y el del curso suelto—. El extractor saca 199, 809 y 141, y
+eso no es una pérdida del 11 %: es que las repetidas no se cuentan dos veces.
+
+Comprobado fichero a fichero —cuántos OBX y CA hay en cada PDF frente a cuántos
+se extraen de él—, **0 de 35 pierden nada**. Ese es el contraste que vale.
 
 ## Materias (35)
 

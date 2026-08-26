@@ -15,6 +15,7 @@ curriculo/fuentes/ceuta/orden_efp_754_2022.xml    Orden EFP/754/2022 (BOE-A-2022
 curriculo/fuentes/cataluna/decret_175_2022.xml    Decret 175/2022 (Akoma Ntoso del DOGC)
 curriculo/fuentes/cataluna/xtec/*.pdf             un PDF por materia (XTEC)
 curriculo/fuentes/andalucia/*.pdf                 BOJA núm. 104 de 2 de junio de 2023
+curriculo/fuentes/galicia/*.pdf                   un PDF por materia (Guía LOMLOE)
 ```
 
 **Los PDF no están en el repositorio**, por tamaño: son 55 MB. Cada carpeta
@@ -39,12 +40,13 @@ Ambos son texto legal publicado en el BOE, de reproducción libre.
 Los JSON de `salida*/` están en el repositorio **a propósito**, aunque sean un
 producto derivado. La razón es la de arriba: las fuentes en PDF no están, así
 que sin ellos nadie que clone el proyecto podría sembrar el currículo de
-Cataluña ni de Andalucía. Son 2,4 MB de texto.
+Cataluña, Andalucía ni Galicia. Son unos 4 MB de texto.
 
 ```
 curriculo/salida/            estatal y Ceuta (BOE)
 curriculo/salida_cataluna/   Decret 175/2022 + PDF de la XTEC
 curriculo/salida_andalucia/  Orden de 30 de mayo de 2023 (BOJA)
+curriculo/salida_galicia/    Decreto 156/2022 (Guía LOMLOE de la Xunta)
 ```
 
 Cada JSON lleva dentro su `comunidad` y su `idioma`, y **el fichero manda**
@@ -71,17 +73,25 @@ campo y no lo traen, así que para ellos vale el valor por defecto, `ceuta`.)*
 
 1. **Extracción automática**: produce un JSON por cada `(materia, ciclo)` con
    competencias específicas, criterios de evaluación y saberes básicos. Hay
-   **tres extractores**, porque cada boletín publica de una forma distinta y
-   forzar uno solo salía más caro que tener tres:
+   **cuatro extractores**, porque cada boletín publica de una forma distinta
+   y forzar uno solo salía más caro que tener cuatro:
 
    | Módulo | Fuente | Cómo lee |
    |---|---|---|
    | `extractor.py` | BOE y DOGC (XML) | máquina de estados sobre el texto en orden |
    | `extractor_xtec.py` | PDF de la XTEC | posición horizontal: las tablas no tienen bordes |
    | `extractor_boja.py` | PDF del BOJA | celda a celda: estas tablas sí tienen bordes |
+   | `extractor_dog.py` | PDF de la Xunta | celda a celda, más el texto suelto: los cursos no siempre van en tabla |
 
    El BOJA es el único que **numera sus saberes básicos** (`BYG.1.A.8`), y ese
-   código se conserva. En los demás, el cargador les pone un contador propio.
+   código se conserva. Galicia numera los **bloques** pero no los contidos, así
+   que su código lleva la mitad oficial. En los otros dos, el cargador les pone
+   un contador propio.
+
+   Y Galicia usa **otro vocabulario**: donde la LOMLOE dice «competencias
+   específicas», el decreto gallego dice «obxectivos» (`OBX1`), y los saberes
+   básicos son «contidos». No es traducción — el decreto no habla de
+   competencias específicas en el currículo de cada materia.
 
 2. **Revisión humana**: el JSON producido se inspecciona y corrige
    manualmente si fuera necesario (errores de parsing, cabeceras
@@ -97,9 +107,12 @@ campo y no lo traen, así que para ellos vale el valor por defecto, `ceuta`.)*
 | Ceuta y Melilla (Orden EFP/754) | 22 | 42 | 752 | 1461 |
 | Cataluña (Decret 175/2022 + XTEC) | 26 | 36 | 737 | 1918 |
 | Andalucía (Orden 30/05/2023) | 19 | 41 | 737 | 957 |
+| Galicia (Decreto 156/2022 + Guía LOMLOE) | 30 | 60 | 1583 | 4643 |
 
-Un bloque es un par `(materia, cursos)`: Andalucía publica curso a curso y por
-eso tiene más bloques que materias, mientras que Cataluña agrupa 1.º–3.º.
+Un bloque es un par `(materia, cursos)`: Andalucía y Galicia publican curso a
+curso y por eso tienen más bloques que materias, mientras que Cataluña agrupa
+1.º–3.º. Los «saberes» de Galicia son sus contidos, que están más desglosados
+que los saberes básicos de las otras comunidades — de ahí que salgan 4.643.
 
 Empezó siendo cuatro materias —Tecnología, Lengua, Matemáticas e Inglés—, que
 es el alcance con el que nació el proyecto como TFG.
@@ -127,6 +140,7 @@ extraer hay que escribir, así que se hace desde el host.
 docker compose exec api flask seed curriculo --directorio /curriculo/salida
 docker compose exec api flask seed curriculo --directorio /curriculo/salida_cataluna
 docker compose exec api flask seed curriculo --directorio /curriculo/salida_andalucia
+docker compose exec api flask seed curriculo --directorio /curriculo/salida_galicia
 ```
 
 El seed **añade y actualiza, pero no borra**. Cuando un extractor mejora y
@@ -165,6 +179,11 @@ python -m app.curriculo.extractor_boja \
     --pdf "../curriculo/fuentes/andalucia/BOJA23-104-00289-9727-01_00284752.pdf:49:" \
     --pdf "../curriculo/fuentes/andalucia/BOJA23-104-00246-9727-02_00284752.pdf:0:16" \
     --salida ../curriculo/salida_andalucia
+
+# Galicia: un PDF por materia, como la XTEC. Los cursos van dentro del PDF.
+python -m app.curriculo.extractor_dog \
+    --pdfs ../curriculo/fuentes/galicia \
+    --salida ../curriculo/salida_galicia
 ```
 
 ## Formato JSON producido

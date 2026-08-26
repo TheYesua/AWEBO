@@ -1,0 +1,797 @@
+{
+  "materia_oficial": "Ámbito Científico e Tecnolóxico",
+  "materia": "Ámbito Científico e Tecnolóxico",
+  "etapa": "ESO",
+  "ciclo": "2º ESO",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Recoñecer os motivos polos que ocorren os principais fenómenos naturais, a partir de situacións cotiás, e explicalos en termos das leis e teorías científicas adecuadas, para poñer en valor a contribución da ciencia á sociedade.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Interpretar e modelizar en termos científicos problemas e situacións da vida cotiá aplicando diferentes estratexias, formas de razoamento, ferramentas tecnolóxicas e o pensamento computacional, para achar e analizar solucións comprobando a súa validez.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Utilizar os métodos científicos, facendo indagacións e levando a cabo proxectos, para desenvolver os razoamentos propios do pensamento científico e mellorar as destrezas no uso das metodoloxías científicas.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Analizar os efectos de determinadas accións cotiás sobre a saúde, o medio natural e social, baseándose en fundamentos científicos, para valorar a importancia dos hábitos que melloran a saúde individual e colectiva, evitan ou minimizan os impactos ambientais negativos e son compatibles cun desenvolvemento sustentable.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Interpretar e transmitir información e datos científicos, contrastando previamente a súa veracidade, e utilizando linguaxe verbal ou gráfica apropiada, para adquirir e afianzar coñecementos da contorna natural e social.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Identificar as ciencias e as matemáticas implicadas en contextos diversos, interrelacionando conceptos e procedementos para aplicalos en situacións da vida cotiá.",
+      "descriptores": []
+    },
+    {
+      "codigo": "7",
+      "descripcion": "Desenvolver destrezas persoais identificando e xestionando emocións, poñendo en práctica estratexias de aceptación do erro como parte do proceso de aprendizaxe e adaptándose ante situacións de incerteza, para mellorar a perseveranza na consecución de obxectivos e a valoración da aprendizaxe das ciencias.",
+      "descriptores": []
+    },
+    {
+      "codigo": "8",
+      "descripcion": "Desenvolver destrezas sociais e traballar de forma cooperativa en equipos diversos con roles asignados que permitan potenciar o crecemento entre iguais, valorando a importancia de romper os estereotipos de xénero na investigación científica, para o emprendemento persoal.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "3",
+      "descripcion": "Formular preguntas e hipóteses que poidan ser respondidas ou contrastadas utilizando o método científico, a observación, a información e o razoamento, explicando fenómenos naturais e realizando predicións sobre eles."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "3",
+      "descripcion": "Deseñar e realizar experimentos e obter datos cuantitativos e cualitativos sobre fenómenos"
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "3",
+      "descripcion": "Interpretar os resultados obtidos en proxectos de investigación utilizando o razoamento e, cando sexa necesario, ferramentas matemáticas e tecnolóxicas."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "5",
+      "descripcion": "Organizar e comunicar información científica e matemática de forma clara e rigorosa de maneira verbal, gráfica, numérica etc., utilizando o formato máis adecuado."
+    },
+    {
+      "codigo": "1.5",
+      "competencia": "5",
+      "descripcion": "Empregar e citar de forma adecuada fontes fiables seleccionando a información científica relevante na consulta e creación de contidos e mellorando a aprendizaxe propia e colectiva."
+    },
+    {
+      "codigo": "1.6",
+      "competencia": "8",
+      "descripcion": "Asumir responsablemente unha función concreta dentro dun proxecto científico utilizando espazos virtuais cando sexa necesario, achegando valor, analizando criticamente as contribucións do resto do equipo, respectando a diversidade e favorecendo a inclusión."
+    },
+    {
+      "codigo": "1.7",
+      "competencia": "8",
+      "descripcion": "Emprender, de forma guiada e de acordo coa metodoloxía adecuada, proxectos científicos colaborativos orientados á mellora e á creación de valor na sociedade."
+    },
+    {
+      "codigo": "1.8",
+      "competencia": "1",
+      "descripcion": "Valorar a contribución da ciencia á sociedade e o labor das persoas dedicadas a ela, destacando o papel das mulleres e entendendo a investigación como un labor colectivo e interdisciplinar en constante evolución influída polo contexto político e os recursos económicos."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Elaborar representacións que axuden na busca de estratexias de resolución dunha situación problematizada, organizando os datos dados e comprendendo as preguntas formuladas."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Atopar a solución dun problema utilizando coñecementos, datos e información achegados,"
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "5",
+      "descripcion": "Organizar e comunicar información científica e matemática de forma clara e rigorosa de maneira verbal, gráfica, numérica etc., utilizando o formato máis adecuado."
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "5",
+      "descripcion": "Analizar e interpretar información científica e matemática presente na vida cotiá mantendo unha actitude crítica."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "2",
+      "descripcion": "Elaborar representacións que axuden na procura de estratexias de resolución dunha situación problematizada, organizando os datos dados e comprendendo as preguntas formuladas."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "2",
+      "descripcion": "Atopar a solución dun problema utilizando coñecementos, datos e información achegados, estratexias e ferramentas apropiadas."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "5",
+      "descripcion": "Analizar e interpretar información científica e matemática presente na vida cotiá mantendo unha actitude crítica."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "6",
+      "descripcion": "Aplicar procedementos propios das ciencias e das matemáticas en situacións diversas establecendo conexións entre distintas áreas de coñecemento en contextos sociais."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "2",
+      "descripcion": "Elaborar representacións que axuden na procura de estratexias de resolución dunha situación problematizada, organizando os datos dados e comprendendo as preguntas formuladas."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "5",
+      "descripcion": "Organizar e comunicar información científica e matemática de forma clara e rigorosa de maneira verbal, gráfica, numérica etc., utilizando o formato máis adecuado."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "6",
+      "descripcion": "Aplicar procedementos propios das ciencias e das matemáticas en situacións diversas establecendo conexións entre distintas áreas de coñecemento en contextos sociais."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "2",
+      "descripcion": "Elaborar representacións que axuden na procura de estratexias de resolución dunha situación problematizada, organizando os datos dados e comprendendo as preguntas formuladas."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "2",
+      "descripcion": "Atopar a solución dun problema utilizando coñecementos, datos e información achegados, estratexias e ferramentas apropiadas."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "2",
+      "descripcion": "Comprobar a corrección das solucións dun problema e a súa coherencia no contexto exposto."
+    },
+    {
+      "codigo": "5.4",
+      "competencia": "5",
+      "descripcion": "Organizar e comunicar información científica e matemática de forma clara e rigorosa de maneira verbal, gráfica, numérica etc., utilizando o formato máis adecuado."
+    },
+    {
+      "codigo": "5.5",
+      "competencia": "5",
+      "descripcion": "Analizar e interpretar información científica e matemática presente na vida cotiá mantendo unha actitude crítica."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "2",
+      "descripcion": "Atopar a solución dun problema utilizando coñecementos, datos e información achegados, estratexias e ferramentas apropiadas."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "5",
+      "descripcion": "Organizar e comunicar información científica e matemática de forma clara e rigorosa de maneira verbal, gráfica, numérica etc., utilizando o formato máis adecuado."
+    },
+    {
+      "codigo": "6.3",
+      "competencia": "5",
+      "descripcion": "Analizar e interpretar información científica e matemática presente na vida cotiá mantendo unha actitude crítica."
+    },
+    {
+      "codigo": "7.1",
+      "competencia": "1",
+      "descripcion": "Identificar e comprender fenómenos naturais relevantes, a partir de teorías, leis e principios científicos adecuados como estratexia na toma de decisións fundamentadas."
+    },
+    {
+      "codigo": "7.2",
+      "competencia": "2",
+      "descripcion": "Elaborar representacións que axuden na procura de estratexias de resolución dunha situación problematizada, organizando os datos dados e comprendendo as preguntas formuladas."
+    },
+    {
+      "codigo": "7.3",
+      "competencia": "2",
+      "descripcion": "Atopar a solución dun problema utilizando os datos e a información achegados, os propios coñecementos e as estratexias e ferramentas apropiadas."
+    },
+    {
+      "codigo": "7.4",
+      "competencia": "2",
+      "descripcion": "Comprobar a corrección das solucións dun problema e a súa coherencia no contexto exposto."
+    },
+    {
+      "codigo": "8.1",
+      "competencia": "1",
+      "descripcion": "Identificar e comprender fenómenos naturais relevantes, a partir de teorías, leis e principios científicos adecuados como estratexia na toma de decisións fundamentadas."
+    },
+    {
+      "codigo": "8.2",
+      "competencia": "2",
+      "descripcion": "Elaborar representacións que axuden na procura de estratexias de resolución dunha situación problematizada, organizando os datos dados e comprendendo as preguntas formuladas."
+    },
+    {
+      "codigo": "8.3",
+      "competencia": "2",
+      "descripcion": "Atopar a solución dun problema utilizando os datos e información achegados, os propios coñecementos e as estratexias e ferramentas apropiadas."
+    },
+    {
+      "codigo": "8.4",
+      "competencia": "2",
+      "descripcion": "Comprobar a corrección das solucións dun problema e a súa coherencia no contexto exposto."
+    },
+    {
+      "codigo": "8.5",
+      "competencia": "4",
+      "descripcion": "Relacionar, con fundamentos científicos, a preservación da biodiversidade, a conservación do ambiente e a protección dos seres vivos da contorna, co desenvolvemento sustentable e a calidade"
+    },
+    {
+      "codigo": "8.6",
+      "competencia": "5",
+      "descripcion": "Analizar e interpretar información científica e matemática presente na vida cotiá mantendo unha actitude crítica."
+    },
+    {
+      "codigo": "9.1",
+      "competencia": "5",
+      "descripcion": "Explicar a estrutura e dinámica do interior terrestre, interpretando a información que achegan os métodos de estudo e adoptando unha actitude crítica cara ás crenzas infundadas."
+    },
+    {
+      "codigo": "9.2",
+      "competencia": "1",
+      "descripcion": "Comprender os efectos globais da dinámica da xeosfera a través da tectónica de placas e explicando a orixe e a distribución da actividade sísmica e volcánica na Terra."
+    },
+    {
+      "codigo": "9.3",
+      "competencia": "1",
+      "descripcion": "Explicar as principais hipóteses sobre a orixe da vida na Terra utilizando os argumentos das diferentes teorías, mantendo unha actitude crítica, obtendo conclusións e formando opinións propias fundamentadas."
+    },
+    {
+      "codigo": "9.4",
+      "competencia": "1",
+      "descripcion": "Comprender o proceso evolutivo analizando algúns exemplos de adaptacións dos seres vivos e describindo o proceso da hominización."
+    },
+    {
+      "codigo": "10.1",
+      "competencia": "1",
+      "descripcion": "Xustificar a célula como a unidade estrutural e funcional dos seres vivos, exemplificando ou aplicando os postulados da teoría celular."
+    },
+    {
+      "codigo": "10.2",
+      "competencia": "1",
+      "descripcion": "Describir os virus como entidades acelulares, relacionándoos coas enfermidades e analizando o seu papel na evolución."
+    },
+    {
+      "codigo": "10.3",
+      "competencia": "1",
+      "descripcion": "Identificar o ADN como a molécula portadora da información xenética, relacionando a súa organización na célula coa súa función."
+    },
+    {
+      "codigo": "10.4",
+      "competencia": "1",
+      "descripcion": "Recoñecer as etapas do ciclo celular e describir o proceso da división celular, identificando as diferenzas principais entre a mitose e a meiose e relacionando estes procesos coa aparición e desenvolvemento dun cancro."
+    },
+    {
+      "codigo": "10.5",
+      "competencia": "1",
+      "descripcion": "Analizar e explicar os procesos que xeran variabilidade xenética valorando o seu papel na biodiversidade e na evolución."
+    },
+    {
+      "codigo": "10.6",
+      "competencia": "5",
+      "descripcion": "Coñecer as principais técnicas da enxeñaría xenética e interpretar as implicacións éticas, sociais e ambientais en relación cos avances en biotecnoloxía e enxeñaría xenética utilizando fontes fiables e adoptando unha actitude crítica e escéptica cara á informacións sen unha base científica como pseudociencias, teorías conspiratorias, crenzas infundadas, botaos etc."
+    },
+    {
+      "codigo": "11.1",
+      "competencia": "4",
+      "descripcion": "Recoñecer os compoñentes e relacións nun ecosistema analizando os factores causantes de desequilibrios e difundindo accións que favorezan a conservación ambiental."
+    },
+    {
+      "codigo": "11.2",
+      "competencia": "1",
+      "descripcion": "Interpretar o concepto de sucesión ecolóxica exemplificando esta coa formación dun solo, recoñecendo consecuencias de distintos tipos de regresións."
+    },
+    {
+      "codigo": "11.3",
+      "competencia": "4",
+      "descripcion": "Relacionar con fundamentos científicos a preservación da biodiversidade, a conservación do ambiente, a protección dos seres vivos da contorna, o desenvolvemento sustentable e a calidade de vida."
+    },
+    {
+      "codigo": "11.4",
+      "competencia": "4",
+      "descripcion": "Analizar e recoñecer as causas e consecuencias de actividades humanas no ambiente propoñendo accións para a súa conservación."
+    },
+    {
+      "codigo": "11.5",
+      "competencia": "5",
+      "descripcion": "Recoñecer a información con base científica en relación co ambiente, distinguíndoa de pseudociencias, boatos, teorías conspiratorias e crenzas infundadas etc., mantendo unha actitude escéptica ante estes."
+    },
+    {
+      "codigo": "12.1",
+      "competencia": "7",
+      "descripcion": "Mostrar resiliencia ante os retos académicos, asumindo o erro como unha oportunidade para a mellora e desenvolvendo un autoconcepto positivo ante as ciencias."
+    },
+    {
+      "codigo": "12.2",
+      "competencia": "8",
+      "descripcion": "Asumir responsablemente unha función concreta dentro dun proxecto científico utilizando espazos virtuais cando sexa necesario, achegando valor, analizando criticamente as contribucións do resto do equipo, respectando a diversidade e favorecendo a inclusión."
+    },
+    {
+      "codigo": "12.3",
+      "competencia": "8",
+      "descripcion": "Emprender, de forma guiada e de acordo coa metodoloxía adecuada, proxectos científicos colaborativos orientados á mellora e á creación de valor na sociedade."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "Bloque 1. Destrezas científicas básicas",
+      "titulo": "Destrezas científicas básicas",
+      "items": [
+        "Proxectos de investigación. Metodoloxía da investigación científica.",
+        "Identificación e formulación de cuestións.",
+        "Elaboración de hipóteses.",
+        "Comprobación mediante experimentación.",
+        "Análise e interpretación de resultados.",
+        "Espazos e recursos de aprendizaxe científica (como o laboratorio e os espazos virtuais): utilización adecuada, que asegure a conservación da saúde propia e da comunitaria, a seguridade e o respecto ao ambiente.",
+        "Linguaxe científica: interpretación, produción e comunicación eficaz de información de carácter científico no contexto escolar en diferentes formatos.",
+        "Valoración da ciencia e da actividade desenvolvida polas persoas que se dedican a ela e recoñecemento da súa contribución aos distintos ámbitos do saber humano e no avance e mellora da sociedade."
+      ],
+      "codigos_items": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4",
+        "1.5",
+        "1.6",
+        "1.7",
+        "1.8"
+      ]
+    },
+    {
+      "codigo": "2",
+      "bloque": "Bloque 2. Sentido numérico",
+      "titulo": "Sentido numérico",
+      "items": [
+        "Números e operacións.",
+        "Identificación e representación de cantidades con números decimais, racionais e irracionais relevantes (raíces cadradas, π...).",
+        "Representación e ordenación de números na recta numérica.",
+        "Selección da representación máis adecuada dunha cantidade e utilización en distintos contextos.",
+        "Estratexias de cálculo.",
+        "Recontos sistemáticos con diferentes estratexias, como diagramas en árbore ou combinatoria básica.",
+        "Utilización do cálculo para resolver problemas da vida cotiá adaptando a estratexia e o tipo de cálculo ao tamaño dos números.",
+        "Toma de decisións a partir da información numérica relevante: consumo responsable, relaciones calidade-prezo e valor-prezo en contextos cotiáns."
+      ],
+      "codigos_items": [
+        "2.1",
+        "2.2",
+        "2.3",
+        "2.4",
+        "2.5",
+        "2.6",
+        "2.7",
+        "2.8"
+      ]
+    },
+    {
+      "codigo": "3",
+      "bloque": "Bloque 3. Sentido da medida",
+      "titulo": "Sentido da medida",
+      "items": [
+        "Estimación e relacións.",
+        "Toma de decisión xustificada do grao de precisión en situacións de medida.",
+        "Estimación ou cálculo de medidas indirectas, usando diferentes estratexias, en formas e obxectos da vida cotiá.",
+        "Medición.",
+        "Dedución, interpretación e aplicación das principais fórmulas para obter áreas, volumes e capacidades en",
+        "ormas tridimensionais.",
+        "Equivalencia entre medidas de volume e capacidade.",
+        "Uso de representacións planas de obxectos tridimensionais para cálculo de áreas e a súa aplicación na resolución de problemas.",
+        "Uso de instrumentos de debuxo e ferramentas dixitais para modelizar e representar obxectos xeométricos con propiedades fixadas, como as lonxitudes de lados ou as medidas de ángulos."
+      ],
+      "codigos_items": [
+        "3.1",
+        "3.2",
+        "3.3",
+        "3.4",
+        "3.5",
+        "3.6",
+        "3.7",
+        "3.8",
+        "3.9"
+      ]
+    },
+    {
+      "codigo": "4",
+      "bloque": "Bloque 4. Sentido espacial",
+      "titulo": "Sentido espacial",
+      "items": [
+        "Movementos e transformacións.",
+        "Análise de transformacións elementais como xiros, translacións e simetrías en situacións diversas utilizando ferramentas tecnolóxicas ou manipulativas.",
+        "Investigación das transformacións elementais na vida cotiá con ferramentas tecnolóxicas como programas de xeometría dinámica, realidade aumentada etc."
+      ],
+      "codigos_items": [
+        "4.1",
+        "4.2",
+        "4.3"
+      ]
+    },
+    {
+      "codigo": "5",
+      "bloque": "Bloque 5. Sentido alxébrico",
+      "titulo": "Sentido alxébrico",
+      "items": [
+        "Linguaxe alxébrica.",
+        "Expresión de relacións mediante linguaxe alxébrica.",
+        "Equivalencia de expresións alxébricas de segundo grao.",
+        "Resolución alxébrica e gráfica de ecuacións de segundo grao en problemas de contextos diferentes.",
+        "Interpretación da solución dun problema e comprobación da coherencia no contexto.",
+        "Uso de ferramentas tecnolóxicas na resolución de problemas e interpretación das solucións.",
+        "Relacións e funcións.",
+        "Formas de representación dunha relación: enunciado, táboas, gráficas e expresión analítica.",
+        "Interpretación da información relevante en situacións reais, funcións cadráticas, de proporcionalidade inversa etc.",
+        "Estratexias para a interpretación e modificación de algoritmos. Formulación de problemas susceptibles de ser analizados utilizando programas e outras ferramentas."
+      ],
+      "codigos_items": [
+        "5.1",
+        "5.2",
+        "5.3",
+        "5.4",
+        "5.5",
+        "5.6",
+        "5.7",
+        "5.8",
+        "5.9",
+        "5.10"
+      ]
+    },
+    {
+      "codigo": "6",
+      "bloque": "Bloque 6. Sentido estocástico",
+      "titulo": "Sentido estocástico",
+      "items": [
+        "Medidas de centralización e dispersión.",
+        "Cálculo, interpretación e obtención de conclusións razoadas.",
+        "Uso das ferramentas tecnolóxicas adecuadas a cada situación.",
+        "Comparación de dous conxuntos de datos atendendo ás súas medidas de centralización e de dispersión.",
+        "Elaboración das representacións gráficas máis adecuadas mediante diferentes ferramentas tecnolóxicas (calculadora, folla de cálculo, aplicacións...).",
+        "Probabilidade.",
+        "Fenómenos deterministas e aleatorios. Sucesos.",
+        "Aproximación á probabilidade a través das frecuencias relativas.",
+        "Asignación de probabilidades mediante a regra de Laplace e técnicas de reconto.",
+        "Toma de decisións de experimentos simples en diferentes contextos."
+      ],
+      "codigos_items": [
+        "6.1",
+        "6.2",
+        "6.3",
+        "6.4",
+        "6.5",
+        "6.6",
+        "6.7",
+        "6.8",
+        "6.9",
+        "6.10"
+      ]
+    },
+    {
+      "codigo": "7",
+      "bloque": "Bloque 7. A materia e os seus cambios",
+      "titulo": "A materia e os seus cambios",
+      "items": [
+        "Composición da materia.",
+        "Relación, a partir da súa configuración electrónica, da distribución dos elementos na táboa periódica coas súas propiedades fisicoquímicas máis importantes para atopar xeneralidades.",
+        "O enlace químico. Propiedades das substancias en función do enlace e da estrutura.",
+        "Cuantificación da cantidade de materia de sistemas de diferente natureza, e nos termos xerais da linguaxe científica, para manexar diferentes formas de medida e a súa expresión na contorna científica.",
+        "Formulación e nomenclatura de substancias químicas de compostos de relevancia, segundo as normas da IUPAC.",
+        "Reaccións químicas.",
+        "Ecuacións químicas sinxelas: interpretación cualitativa e cuantitativa. Cálculos estequiométricos sinxelos e interpretación dos factores que lles afectan.",
+        "Descrición cualitativa de reaccións químicas de relevancia no mundo cotián, incluíndo as combustións, as neutralizacións e procesos electroquímicos sinxelos, comprobando experimentalmente algúns dos seus parámetros.",
+        "Análise de aspectos enerxéticos e cinéticos das reaccións químicas, aplicando a teoría de colisións, para explicar a reordenación dos átomos e realizar predicións relativas a procesos cotiáns importantes."
+      ],
+      "codigos_items": [
+        "7.1",
+        "7.2",
+        "7.3",
+        "7.4",
+        "7.5",
+        "7.6",
+        "7.7",
+        "7.8",
+        "7.9"
+      ]
+    },
+    {
+      "codigo": "8",
+      "bloque": "Bloque 8. As interaccións e a enerxía",
+      "titulo": "As interaccións e a enerxía",
+      "items": [
+        "Predición e comprobación, mediante o razoamento lóxico-matemático, utilizando ecuacións e gráficas, da variación das principais magnitudes que describen o movemento dun corpo. Estudo dos movementos rectilíneos e circulares sinxelos.",
+        "As forzas.",
+        "Relación das forzas cos cambios que producen sobre os sistemas e aplicación á resolución de problemas da vida cotiá relacionados coas forzas presentes na natureza.",
+        "Recoñecemento das principais forzas da contorna cotiá, como o peso, a normal, o rozamento ou a tensión, e o seu uso na explicación de fenómenos físicos en distintos escenarios.",
+        "Leis de Newton: aplicacións a fenómenos naturais e cotiáns.",
+        "A enerxía.",
+        "Formulación e comprobación de hipóteses sobre as distintas formas de enerxía e as súas aplicacións a partir das súas propiedades e do principio de conservación, como base para a resolución de problemas sinxelos relacionados coa enerxía mecánica.",
+        "Obtención e consumo de enerxía, e as súas repercusións ambientais.",
+        "Análise dos efectos da calor sobre a materia. Recoñecemento de distintos procesos de transferencia de calor nos que están implicadas diferenzas de temperatura, como base da resolución de problemas cotiáns."
+      ],
+      "codigos_items": [
+        "8.1",
+        "8.2",
+        "8.3",
+        "8.4",
+        "8.5",
+        "8.6",
+        "8.7",
+        "8.8",
+        "8.9"
+      ]
+    },
+    {
+      "codigo": "9",
+      "bloque": "Bloque 9. Orixe e evolución da vida e da Terra",
+      "titulo": "Orixe e evolución da vida e da Terra",
+      "items": [
+        "Dinámica terrestre.",
+        "Orixe e historia da Terra.",
+        "Estrutura e dinámica da xeosfera.",
+        "A tectónica de placas e as súas manifestacións.",
+        "A vida na Terra.",
+        "Hipóteses sobre a orixe da vida na Terra.",
+        "Probas e teorías da evolución dos seres vivos.",
+        "A evolución humana."
+      ],
+      "codigos_items": [
+        "9.1",
+        "9.2",
+        "9.3",
+        "9.4",
+        "9.5",
+        "9.6",
+        "9.7",
+        "9.8"
+      ]
+    },
+    {
+      "codigo": "10",
+      "bloque": "Bloque 10. A célula",
+      "titulo": "A célula",
+      "items": [
+        "Teoría celular.",
+        "Formas acelulares: virus.",
+        "ADN: xenes e cromosomas. Expresión xénica.",
+        "Etapas do ciclo celular. A división celular. Mitose e meiose.",
+        "As mutacións e o cancro.",
+        "Procesos que xeran variabilidade xenética e a súa relación coa evolución e a biodiversidade.",
+        "Biotecnoloxía e enxeñaría xenética: aplicacións e implicacións éticas, sociais e ambientais."
+      ],
+      "codigos_items": [
+        "10.1",
+        "10.2",
+        "10.3",
+        "10.4",
+        "10.5",
+        "10.6",
+        "10.7"
+      ]
+    },
+    {
+      "codigo": "11",
+      "bloque": "Bloque 11. Ecoloxía e medio ambiente",
+      "titulo": "Ecoloxía e medio ambiente",
+      "items": [
+        "Os ecosistemas.",
+        "Elementos integrantes. Cadeas e redes tróficas.",
+        "Relacións intraespecíficas e interespecíficas.",
+        "Sucesións ecolóxicas. Regresións.",
+        "Factores que desencadean desequilibrios nos ecosistemas.",
+        "O cambio climático.",
+        "Causas e consecuencias.",
+        "Efectos globais das accións individuais e colectivas."
+      ],
+      "codigos_items": [
+        "11.1",
+        "11.2",
+        "11.3",
+        "11.4",
+        "11.5",
+        "11.6",
+        "11.7",
+        "11.8"
+      ]
+    },
+    {
+      "codigo": "12",
+      "bloque": "Bloque 12. Sentido socioafectivo",
+      "titulo": "Sentido socioafectivo",
+      "items": [
+        "Estratexias para o recoñecemento das emocións que interveñen na aprendizaxe propia para incrementar a curiosidade, a iniciativa, a perseveranza e a resiliencia, así como o pracer de aprender e comprender a ciencia.",
+        "Estratexias de fomento da flexibilidade cognitiva: apertura a cambios de estratexia cando sexa necesario e trans-",
+        "ormación do erro en oportunidade de aprendizaxe.",
+        "Selección de técnicas cooperativas para optimizar o traballo en equipo, uso de condutas empáticas e estratexias",
+        "ara a xestión de conflitos.",
+        "Promoción de actitudes inclusivas e da igualdade efectiva de xénero, así como respecto polas minorías e acepta-",
+        "ión da diversidade presente na aula e na sociedade.",
+        ".4 Orientacións pedagóxicas",
+        "intervención educativa no ámbito Científico-Tecnolóxico desenvolverá o seu currículo e tra-",
+        "ará de asentar de xeito gradual e progresivo as aprendizaxes que lle faciliten ao alumnado o",
+        "ogro dos obxectivos do ámbito e, en combinación co resto de ámbitos e materias, unha adecuada",
+        "dquisición das competencias clave e o logro dos obxectivos da etapa.",
+        "este sentido, no deseño das actividades, o profesorado terá que considerar a relación exis-",
+        "ente entre os obxectivos do ámbito e as competencias clave a través dos descritores operativos",
+        "o perfil de saída e as liñas de actuación no proceso de ensino e aprendizaxe, que se presentan",
+        "os puntos seguintes, e seleccionar aqueles criterios de avaliación do currículo que se axusten á",
+        "inalidade buscada, así como empregalos para verificar as aprendizaxes do alumnado e o seu nivel",
+        "e desempeño.",
+        "elación entre os obxectivos do ámbito Científico-Tecnolóxico e as competencias clave a través",
+        "os descritores operativos do perfil de saída establecidos no anexo I",
+        "bxectivos",
+        "o ámbito",
+        "BX1",
+        "BX2",
+        "BX3",
+        "BX4",
+        "BX5",
+        "BX6",
+        "BX7",
+        "BX8",
+        "iñas de actuación no proceso de ensino e aprendizaxe",
+        "O primeiro e o último bloque son de carácter transversal, deberanse traballar en combinación",
+        "o resto dos bloques ao longo de todo o curso. Estes bloques enfócanse na construción da",
+        "iencia e no desenvolvemento do pensamento científico a través da formulación de hipóteses",
+        "u de problemas; a busca, selección e tratamento da información utilizando fontes fiables en",
+        "iferentes formatos; planificación e desenvolvemento de investigacións; realización de obser-",
+        "acións, ensaios pertinentes ou probas; rexistro, análise e interpretación de datos; ordenación",
+        "as ideas, comparación, xerarquización, explicación, xustificación e argumentación científica",
+        "un acontecemento; comunicación da información de forma clara e ordenada e de forma res-",
+        "ectuosa cara a outras ideas; relación dos contidos aprendidos nas distintas materias reco-",
+        "endando, polo tanto, un traballo interdisciplinar como medio para conectalos coa realidade.",
+        "O uso de distintas estratexias metodolóxicas que teñan en conta os diferentes ritmos de",
+        "prendizaxe do alumnado, favorezan a capacidade de aprender por si mesmos e promovan",
+        "anto o traballo individual como o cooperativo e o colaborativo, o que permite o desenvolve-",
+        "ento das habilidades necesarias que lle permitan seguir aprendendo ao longo da vida.",
+        "O fomento do traballo en equipo permitiralle ao alumnado desenvolver diversas competencias",
+        "anto no eido intelectual como no social. O traballo en equipo vai incrementar a motivación,",
+        "eforzar a autoestima, estimular a creatividade, aumentar a autonomía, promover a reflexión,",
+        "omentar a responsabilidade, intercambiar experiencias e favorecer as habilidades sociais.",
+        "O traballo por proxectos é un exemplo de metodoloxía que axuda o alumnado a organizar o",
+        "eu pensamento, favorecendo a reflexión, a crítica, a elaboración de hipóteses e a tarefa in-",
+        "estigadora a través dun proceso en que cada un aplica, de forma activa, os seus coñecemen-",
+        "os e habilidades a proxectos reais, favorecendo unha aprendizaxe orientada á acción cun im-",
+        "ortante carácter interdisciplinar en que o estudantado conxuga coñecementos, habilidades",
+        "actitudes para levar a bo fin o proxecto proposto.",
+        "A proposta de proxectos variados baseada na resolución de problemas, de investigación, in-",
+        "ovación e actividades de indagación que incentiven o desenvolvemento das competencias,",
+        "abilidades e actitudes tratando de evitar a acumulación e memorización dos contidos cientí-",
+        "icos e que permitan a análise crítica dos problemas sociais actuais.",
+        "A énfase na atención á diversidade do alumnado, na atención individualizada, na prevención",
+        "as dificultades de aprendizaxe e na posta en práctica de mecanismos de reforzo tan pronto",
+        "omo se detecten estas dificultades.",
+        "O uso de estratexias que permitan traballar transversalmente a comprensión lectora, a ex-",
+        "resión oral e escrita, a comunicación audiovisual, as tecnoloxías da información e da",
+        "omunicación, o emprendemento, a educación cívica e constitucional, o fomento do espírito",
+        "rítico, a educación emocional e en valores e a igualdade de xénero. A transversalidade resulta",
+        "undamental para mellorar a aprendizaxe e promover o desenvolvemento de actitudes críticas",
+        "reflexivas no alumnado. Deste xeito facilítase que o alumnado descubra a importancia e a",
+        "tilidade do aprendido, favorecendo un contorno máis motivador. Na formación integral do",
+        "lumnado será fundamental integrar contidos de distintas áreas de coñecemento nos cales se",
+        "eberá mobilizar todo tipo de destrezas e ferramentas.",
+        "O traballo práctico no laboratorio, por ser unha actividade específica da ensinanza das ciencias",
+        "ue lle proporciona ao estudante un campo de probas onde se poden ampliar as súas expe-",
+        "iencias e modificar as súas ideas e interpretacións, facéndoas máis coherentes co coñece-",
+        "ento científico e posibilita a súa conexión coa realidade.",
+        "O estímulo dunha avaliación autorreguladora, que se realice de forma continua ao longo de",
+        "odo o proceso de ensino-aprendizaxe, permitindo a modificación e readaptación da dinámica",
+        "das actividades de aula en función das necesidades do alumnado e do contexto. Resultará",
+        "nha ferramenta de seguimento que proporcionará unha información moi importante para",
+        "oder intervir sobre todos os elementos que forman parte dos procesos de ensino e de apren-",
+        "izaxe. Esta información permitirá tomar decisións encamiñadas a garantir a adquisición das",
+        "ompetencias necesarias para continuar o proceso formativo.",
+        "A contribución a formar cidadáns e cidadás competentes social e emocionalmente, presen-",
+        "ando a ciencia e a tecnoloxía desde unha perspectiva socioafectiva e promovendo o desen-",
+        "olvemento de destrezas que lle permitan ao alumnado autoxestionar as súas emocións, au-",
+        "entar a capacidade de tomar decisións de forma crítica, valorar opinións distintas ás propias,",
+        "ecoñecer o erro como un elemento enriquecedor e dinamizador da aprendizaxe, diminuír as",
+        "ctitudes negativas cara á materia e erradicar calquera sentimento de desigualdade por razón",
+        "e xénero."
+      ],
+      "codigos_items": [
+        "12.1",
+        "12.2",
+        "12.3",
+        "12.4",
+        "12.5",
+        "12.6",
+        "12.7",
+        "12.8",
+        "12.9",
+        "12.10",
+        "12.11",
+        "12.12",
+        "12.13",
+        "12.14",
+        "12.15",
+        "12.16",
+        "12.17",
+        "12.18",
+        "12.19",
+        "12.20",
+        "12.21",
+        "12.22",
+        "12.23",
+        "12.24",
+        "12.25",
+        "12.26",
+        "12.27",
+        "12.28",
+        "12.29",
+        "12.30",
+        "12.31",
+        "12.32",
+        "12.33",
+        "12.34",
+        "12.35",
+        "12.36",
+        "12.37",
+        "12.38",
+        "12.39",
+        "12.40",
+        "12.41",
+        "12.42",
+        "12.43",
+        "12.44",
+        "12.45",
+        "12.46",
+        "12.47",
+        "12.48",
+        "12.49",
+        "12.50",
+        "12.51",
+        "12.52",
+        "12.53",
+        "12.54",
+        "12.55",
+        "12.56",
+        "12.57",
+        "12.58",
+        "12.59",
+        "12.60",
+        "12.61",
+        "12.62",
+        "12.63",
+        "12.64",
+        "12.65",
+        "12.66",
+        "12.67",
+        "12.68",
+        "12.69",
+        "12.70",
+        "12.71",
+        "12.72",
+        "12.73",
+        "12.74",
+        "12.75",
+        "12.76",
+        "12.77",
+        "12.78",
+        "12.79",
+        "12.80",
+        "12.81",
+        "12.82",
+        "12.83",
+        "12.84",
+        "12.85",
+        "12.86",
+        "12.87",
+        "12.88",
+        "12.89"
+      ]
+    }
+  ],
+  "comunidad": "galicia",
+  "idioma": "gl"
+}

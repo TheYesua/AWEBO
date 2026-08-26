@@ -1,0 +1,376 @@
+{
+  "materia_oficial": "Economía e Emprendemento",
+  "materia": "Economía e Emprendemento",
+  "etapa": "ESO",
+  "ciclo": "4º ESO",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "4º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Analizar e valorar as fortalezas e as debilidades propias e as dos demais, reflexionando sobre as aptitudes, xestionando de forma eficaz as emocións e as destrezas necesarias que promovan unha actitude vital creadora para adaptarse a contornas cambiantes e deseñar un proxecto persoal único, cunha actitude emprendedora que xere valor para os demais.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Utilizar estratexias de conformación de equipos, así como habilidades sociais, de comunicación e innovación áxil, aplicándoas con autonomía e motivación ás dinámicas de traballo en distintos contextos, para constituír grupos de traballo eficaces e descubrir o valor de cooperar con outras persoas durante o proceso de ideación e desenvolvemento de solucións emprendedoras.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Elaborar, con sentido ético e solidario, ideas e solucións innovadoras e sostibles que dean resposta ás necesidades locais e globais detectadas, utilizando metodoloxías áxiles de ideación e analizando tanto os seus puntos fortes e débiles como o impacto que poidan xerar esas ideas na contorna, para lograr a superación de retos relacionados coa preservación e co coidado da contorna natural, social, cultural e artística.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Seleccionar e reunir os recursos dispoñibles no proceso de desenvolvemento da idea ou solución creativa proposta, coñecendo os medios de produción e as fontes financeiras que proporcionan estes recursos e aplicando estratexias de captación destes para poñer en marcha o proxecto que leve á realidade a solución emprendedora.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Presentar e expoñer ideas e solucións creativas utilizando estratexias comunicativas áxiles e valorando a importancia dunha comunicación efectiva e respectuosa para transmitir mensaxes convincentes adecuadas ao contexto e aos obxectivos concretos de cada situación e validar as ideas e as solucións presentadas.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Comprender aspectos básicos da economía e das finanzas, valorando criticamente o problema da escaseza de recursos e a necesidade de elixir, así como os principios de interacción social desde o punto de vista económico, para relacionar os devanditos aspectos coa procura e planificación dos recursos necesarios no desenvolvemento da idea ou da solución emprendedora que afronte o reto exposto de maneira eficaz, equitativa e sostible.",
+      "descriptores": []
+    },
+    {
+      "codigo": "7",
+      "descripcion": "Construír e analizar de maneira cooperativa, autónoma e áxil prototipos innovadores e sostibles, aplicando estratexias eficaces de deseño e execución, avaliando todas as fases do proceso de maneira crítica e ética e validando os resultados obtidos tanto para a mellora e perfeccionamento dos prototipos creados como para a aprendizaxe e o desenvolvemento persoal e colectivo.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Adaptarse a contornas complexas e crear un proxecto persoal orixinal e xerador de valor, partindo do autocoñecemento e tomando conciencia de que o proceso emprendedor constitúe unha forma de enriquecemento e crecemento persoal."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Utilizar estratexias de análise razoada das fortalezas e debilidades persoais e da iniciativa e creatividade propia e da dos demais."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Xestionar de forma eficaz as emocións e as destrezas persoais, promovendo e desenvolvendo actitudes creativas, asumindo o risco que supón un proxecto innovador e aprendendo dos erros que cometemos."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "2",
+      "descripcion": "Pór en práctica as habilidades sociais da persoa emprendedora, de comunicación aberta, motivación, liderado e de cooperación e innovación áxil, tanto de maneira presencial como a distancia, en distintos contextos de traballo en equipo, valorando, respectando e asumindo as achegas dos demais nas distintas dinámicas de traballo en grupo."
+    },
+    {
+      "codigo": "1.5",
+      "competencia": "3",
+      "descripcion": "Superar os retos propostos a partir de ideas e solucións innovadoras e sostibles, avaliando o seu impacto na sociedade."
+    },
+    {
+      "codigo": "1.6",
+      "competencia": "3",
+      "descripcion": "Construír ideas creativas e sostibles aplicando metodoloxías áxiles que faciliten a superación dos retos expostos con sentido ético e solidario."
+    },
+    {
+      "codigo": "1.7",
+      "competencia": "5",
+      "descripcion": "Validar as ideas e solucións utilizando estratexias comunicativas áxiles adaptadas a cada situación comunicativa."
+    },
+    {
+      "codigo": "1.8",
+      "competencia": "5",
+      "descripcion": "Presentar e expoñer, con claridade e coherencia, as ideas e solucións creativas, adquirindo habilidades e técnicas de expresión oral con apoio audiovisual na posta en común destas."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "1",
+      "descripcion": "Adaptarse a contornas complexas e crear un proxecto persoal orixinal e xerador de valor, partindo da valoración crítica sobre as propias aptitudes e as posibilidades creativas."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "1",
+      "descripcion": "Xestionar de forma eficaz as emocións e as destrezas persoais promovendo e desenvolvendo actitudes creativas."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "3",
+      "descripcion": "Preservar e coidar a contorna natural, social, cultural e artística a partir de propostas e actuacións locais e globais que promovan o desenvolvemento sostible, con visión creativa, emprendedora e comprometida."
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "3",
+      "descripcion": "Propoñer ideas e solucións innovadoras e sostibles, avaliando o impacto que poidan xerar no eido persoal e na contorna e aplicando metodoloxías áxiles para a obtención de solucións ás"
+    },
+    {
+      "codigo": "2.5",
+      "competencia": "6",
+      "descripcion": "Afrontar os retos en distintos contextos e situacións, reais ou simuladas, transferindo os coñecementos económicos e financeiros necesarios e sendo consciente da importancia para a persoa emprendedora da capacidade de anticipación aos cambios da contorna."
+    },
+    {
+      "codigo": "2.6",
+      "competencia": "6",
+      "descripcion": "Valorar criticamente o problema económico da escaseza de recursos, a necesidade de elixir e a proposta de solucións que supoñan un mellor aproveitamento dos recursos e a reutilización circular das desfeitas xerados que contribúan á sostibilidade do sistema."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "2",
+      "descripcion": "Constituír equipos de traballo baseados en principios de equidade, coeducación e igualdade entre homes e mulleres, actitude participativa e visualización de metas comúns, utilizando estratexias que faciliten a identificación e a optimización dos recursos humanos necesarios que conduzan á consecución do reto proposto."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "2",
+      "descripcion": "Poñer en práctica habilidades sociais, de comunicación aberta, motivación, liderado e de cooperación en distintos contextos de traballo en equipo, valorando as achegas dos demais nas distintas dinámicas de traballo e respectando as decisións tomadas de forma colectiva."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "4",
+      "descripcion": "Planificar e poñer en marcha un proxecto viable que leve á realidade unha solución"
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "4",
+      "descripcion": "Utilizar con autonomía estratexias de captación e xestión de recursos coñecendo as súas características e aplicándoas ao proceso de conversión das ideas e solucións en accións e planificando con coherencia a súa organización, distribución, uso e optimización."
+    },
+    {
+      "codigo": "3.5",
+      "competencia": "5",
+      "descripcion": "Presentar e expoñer, con claridade e coherencia, ideas e solucións creativas, co fin de captar recursos para o financiamento e o mecenado deste."
+    },
+    {
+      "codigo": "3.6",
+      "competencia": "6",
+      "descripcion": "Desenvolver unha idea ou unha solución emprendedora vendo a relación entre os coñecementos adquiridos e os recursos necesarios e dispoñibles que permitan o seu desenvolvemento, identificando os máis adecuados en distintos contextos e situacións, reais ou simuladas e aplicando os coñecementos económicos e financeiros necesarios."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "1",
+      "descripcion": "Adaptarse a contornas complexas cun proxecto persoal orixinal e xerador de valor, logrando progresivamente o control consciente das emocións."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "3",
+      "descripcion": "Superar os retos propostos a partir de ideas e solucións innovadoras e sostibles, avaliando o seu impacto no eido persoal e na contorna."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Poñer en marcha un proxecto viable analizando os recursos materiais, inmateriais e dixitais dispoñibles no proceso de ideación creativa."
+    },
+    {
+      "codigo": "4.4",
+      "competencia": "4",
+      "descripcion": "Utilizar con autonomía estratexias de captación e de xestión de recursos coñecendo as súas características e aplicándoas ao proceso de conversión das ideas e solucións en accións."
+    },
+    {
+      "codigo": "4.5",
+      "competencia": "5",
+      "descripcion": "Validar as ideas e as solucións presentadas mediante mensaxes convincentes e adecuadas, co fin de presentar e expoñer, con claridade e coherencia, as ideas e as solucións creativas, mantendo unha comunicación eficaz e respectuosa ao longo de todo o proceso levado a cabo."
+    },
+    {
+      "codigo": "4.6",
+      "competencia": "6",
+      "descripcion": "Desenvolver unha idea ou unha solución emprendedora a partir dos coñecementos, destrezas"
+    },
+    {
+      "codigo": "4.7",
+      "competencia": "6",
+      "descripcion": "Coñecer e comprender con precisión os contidos necesarios do ámbito económico e financeiro aplicándoos con coherencia a situacións, actividades ou proxectos concretos."
+    },
+    {
+      "codigo": "4.8",
+      "competencia": "6",
+      "descripcion": "Afrontar os retos de maneira eficaz, equitativa e sostible, en distintos contextos aplicando os coñecementos económicos e financeiros necesarios."
+    },
+    {
+      "codigo": "4.9",
+      "competencia": "7",
+      "descripcion": "Utilizar estratexias eficaces de deseño e execución do prototipo final utilizando métodos de traballo áxiles, cooperativos e autónomos, analizando de maneira crítica o proceso de deseño e execución levado a cabo e valorando a súa viabilidade e adecuación empregada na construción deste."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "Bloque 1. O perfil da persoa emprendedora, iniciativa e creatividade",
+      "titulo": "O perfil da persoa emprendedora, iniciativa e creatividade",
+      "items": [
+        "A importancia económica e social da persoa emprendedora.",
+        "O perfil da persoa emprendedora: habilidades.",
+        "Autoconfianza, autocoñecemento, empatía, perseveranza, iniciativa e resiliencia.",
+        "Técnicas de diagnóstico de debilidades e fortalezas internas. Análise DAFO da persoa emprendedora.",
+        "Creatividade, ideas e solucións. A innovación áxil.",
+        "Comunicación, motivación e liderado da persoa emprendedora. Habilidades sociais. Dinámicas de traballo en grupo.",
+        "Xestión de emocións. A importancia da motivación para emprender. Estratexias de xestión da incerteza e toma de decisións en contextos cambiantes. O erro e a validación como oportunidades para aprender."
+      ],
+      "codigos_items": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4",
+        "1.5",
+        "1.6",
+        "1.7"
+      ]
+    },
+    {
+      "codigo": "2",
+      "bloque": "Bloque 2. A contorna como fonte de ideas e de oportunidades",
+      "titulo": "A contorna como fonte de ideas e de oportunidades",
+      "items": [
+        "A economía como ciencia. A perspectiva económica da contorna. O problema económico: a escaseza de recursos e a necesidade de elixir. A elección en economía: custos, análise marxinal, incentivos. O comportamento das persoas nas decisións.",
+        "A contorna económico-empresarial. Os axentes económicos e o fluxo circular da renda.",
+        "O funcionamento dos mercados. Comercio, benestar e desigualdades.",
+        "O mercado e as oportunidades de negocio: análise da contorna xeral ou macrocontorna; análise da contorna específica ou microcontorna. Análise DAFO de proxectos empresariais. Estratexias de exploración da contorna. Procura e xestión da información.",
+        "O sistema financeiro.",
+        "A empresa e a súa responsabilidade social. A decisión empresarial e a innovación como fonte de transformación social.",
+        "O impacto da actividade empresarial: a responsabilidade social corporativa. A contorna social, cultural e ambiental desde unha perspectiva económica. A economía colaborativa. A pegada ecolóxica e a economía circular. A economía social e solidaria. Os obxectivos de desenvolvemento sostible (ODS) e o desenvolvemento local.",
+        "Sectores produtivos e xéneros da contorna cultural e artística. Axentes que apoian a creación de proxectos culturais emprendedores.",
+        "A visión emprendedora."
+      ],
+      "codigos_items": [
+        "2.1",
+        "2.2",
+        "2.3",
+        "2.4",
+        "2.5",
+        "2.6",
+        "2.7",
+        "2.8",
+        "2.9"
+      ]
+    },
+    {
+      "codigo": "3",
+      "bloque": "Bloque 3. Recursos para levar a cabo un proxecto emprendedor",
+      "titulo": "Recursos para levar a cabo un proxecto emprendedor",
+      "items": [
+        "Misión, visión e valores da empresa ou entidade: a cultura empresarial. A organización e a xestión das entidades emprendedoras. Funcións da empresa.",
+        "Os equipos nas empresas e organizacións. Estratexias áxiles de traballo en equipo. Formación e funcionamento de equipos de traballo. Estratexias de comunicación, negociación e solución de conflitos.",
+        "As finanzas da persoa emprendedora: control e xestión do diñeiro. Fontes e control de ingresos e gastos. Recursos financeiros a curto e a longo prazo e a súa relación co benestar financeiro. O endebedamento. Fontes de financiamento e captación de recursos financeiros. A xestión do risco financeiro e os seguros."
+      ],
+      "codigos_items": [
+        "3.1",
+        "3.2",
+        "3.3"
+      ]
+    },
+    {
+      "codigo": "4",
+      "bloque": "Bloque 4. A realización do proxecto emprendedor",
+      "titulo": "A realización do proxecto emprendedor",
+      "items": [
+        "O reto ou o desafío como obxectivo.",
+        "Planificación, xestión e execución dun proxecto emprendedor. Do reto ao prototipo.",
+        "Desenvolvemento áxil do produto.",
+        "Técnicas e ferramentas de prototipado rápido.",
+        "Métodos de análise da competencia. Estratexias competitivas.",
+        "Mercadotecnia do produto. Presentación e introdución do prototipo na contorna. Estratexias de difusión.",
+        "Validación e testado de prototipos. Valoración do proceso de traballo. Innovación áxil.",
+        "Estudo de viabilidade do produto e elección de forma xurídica.",
+        "O usuario como destinatario final do prototipo. A toma de decisións dos usuarios. O usuario como consumidor. Dereitos e obrigas dos consumidores.",
+        ".4 Orientacións pedagóxicas",
+        "intervención educativa na materia de Economía e Emprendemento desenvolverá o seu currí-",
+        "ulo e tratará de asentar de xeito gradual e progresivo as aprendizaxes que lle faciliten ao alum-",
+        "ado o logro dos obxectivos da materia e, en combinación co resto das materias, unha adecuada",
+        "dquisición das competencias clave e o logro dos obxectivos da etapa.",
+        "este sentido, no deseño das actividades, o profesorado terá que considerar a relación exis-",
+        "ente entre os obxectivos da materia e as competencias clave a través dos descritores operativos",
+        "o perfil de saída e as liñas de actuación no proceso de ensino e aprendizaxe que se presentan",
+        "os puntos seguintes e seleccionar aqueles criterios de avaliación do currículo que se axusten á",
+        "inalidade buscada, así como empregalos para verificar as aprendizaxes do alumnado e o seu nivel",
+        "e desempeño.",
+        "elación entre os obxectivos da materia de Economía e Emprendemento e as competencias",
+        "lave a través dos descritores operativos do perfil de saída establecidos no anexo I",
+        "bxectivos",
+        "a materia",
+        "BX1",
+        "BX2",
+        "BX3",
+        "BX4",
+        "BX5",
+        "BX6",
+        "BX7",
+        "iñas de actuación no proceso de ensino e aprendizaxe",
+        "O uso de distintos métodos que teñan en conta os diferentes ritmos de aprendizaxe do alum-",
+        "ado, favorezan a capacidade de aprender por si mesmos e promovan o traballo en equipo con",
+        "erspectiva de xénero.",
+        "A realización de proxectos significativos para o alumnado e a resolución colaborativa de pro-",
+        "lemas, reforzando a autoestima, a autonomía, a reflexión e a responsabilidade.",
+        "A énfase na atención á diversidade do alumnado, na atención individualizada, na prevención",
+        "as dificultades de aprendizaxe e na posta en práctica de mecanismos de reforzo tan pronto",
+        "omo se detecten estas dificultades.",
+        "O uso de estratexias para traballar transversalmente a comprensión lectora, a expresión oral",
+        "escrita, a comunicación audiovisual, a competencia dixital e o fomento da creatividade, do",
+        "spírito científico e do emprendemento.",
+        "Un enfoque da materia teórico-práctico aplicando os saberes ao desenvolvemento dun pro-",
+        "ecto emprendedor en cada unha das súas fases e tendo en conta a igualdade no emprego e",
+        "as relacións laborais.",
+        "Unhas aprendizaxes que partan desde a acción e que se constrúan enfocadas a esta.",
+        "Un prototipo que sexa o eixe da materia e no que a alumna ou o alumno realizará a ideación,",
+        "xestión de recursos, a validación e a toma de decisións desde unha perspectiva emprende-",
+        "ora.",
+        "Un sistema de traballo que fomente a cultura creativa, colaborativa e de participación dirixida",
+        "crear valor para os demais."
+      ],
+      "codigos_items": [
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4",
+        "4.5",
+        "4.6",
+        "4.7",
+        "4.8",
+        "4.9",
+        "4.10",
+        "4.11",
+        "4.12",
+        "4.13",
+        "4.14",
+        "4.15",
+        "4.16",
+        "4.17",
+        "4.18",
+        "4.19",
+        "4.20",
+        "4.21",
+        "4.22",
+        "4.23",
+        "4.24",
+        "4.25",
+        "4.26",
+        "4.27",
+        "4.28",
+        "4.29",
+        "4.30",
+        "4.31",
+        "4.32",
+        "4.33",
+        "4.34",
+        "4.35",
+        "4.36",
+        "4.37",
+        "4.38",
+        "4.39",
+        "4.40",
+        "4.41",
+        "4.42",
+        "4.43",
+        "4.44",
+        "4.45",
+        "4.46",
+        "4.47",
+        "4.48",
+        "4.49",
+        "4.50",
+        "4.51",
+        "4.52"
+      ]
+    }
+  ],
+  "comunidad": "galicia",
+  "idioma": "gl"
+}

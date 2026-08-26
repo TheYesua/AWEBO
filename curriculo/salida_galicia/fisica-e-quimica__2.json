@@ -1,0 +1,273 @@
+{
+  "materia_oficial": "Física e Química",
+  "materia": "Física e Química",
+  "etapa": "ESO",
+  "ciclo": "2º ESO",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Comprender e relacionar os motivos polos que ocorren os principais fenómenos fisicoquímicos da contorna, explicándoos en termos das leis e teorías científicas adecuadas para resolver problemas co fin de aplicalas para mellorar a realidade próxima e a calidade da vida humana.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Expresar as observacións realizadas polo alumnado en forma de preguntas, formulando hipóteses para explicalas e demostrando estas hipóteses a través da experimentación científica, a indagación e a procura de evidencias, para desenvolver os razoamentos propios do pensamento científico e mellorar as destrezas no uso das metodoloxías científicas.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Manexar con soltura as regras e as normas básicas da física e da química no referente á linguaxe da IUPAC, á linguaxe matemática, ao emprego de unidades de medida correctas, ao uso seguro do laboratorio e á interpretación e produción de datos e información en diferentes formatos e fontes, para recoñecer o carácter universal e transversal da linguaxe científica e a necesidade dunha comunicación fiable en investigación e ciencia entre diferentes países e culturas.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Utilizar de forma crítica, eficiente e segura plataformas dixitais e recursos variados, tanto para o traballo individual como en equipo, para fomentar a creatividade, o desenvolvemento persoal e a aprendizaxe individual e social, mediante a consulta de información, a creación de materiais e a comunicación efectiva nas diferentes contornas de aprendizaxe.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Utilizar as estratexias propias do traballo colaborativo, potenciando o crecemento entre iguais como base emprendedora dunha comunidade científica crítica, ética e eficiente, para comprender a importancia da ciencia na mellora da sociedade, as aplicacións e repercusións dos avances científicos, a preservación da saúde e a conservación sostible do ambiente.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Comprender e valorar a ciencia como unha construción colectiva en continuo cambio e evolución, na que non só participan as persoas dedicadas a ela, senón que tamén require dunha interacción co resto da sociedade, para obter resultados que repercutan no avance tecnolóxico, económico, ambiental e social.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "2",
+      "descripcion": "Seleccionar, de acordo coa natureza das cuestións que se traten, a mellor maneira de comprobar ou refutar as hipóteses formuladas, deseñando estratexias de indagación e procura de evidencias que permitan obter conclusións e respostas axustadas á natureza da pregunta formulada."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "2",
+      "descripcion": "Aplicar as leis e teorías científicas coñecidas ao formular cuestións e hipóteses, sendo coherente co coñecemento científico existente e deseñando os procedementos experimentais ou dedutivos necesarios para resolvelas ou comprobalas."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "3",
+      "descripcion": "Utilizar adecuadamente as regras básicas da física e da química, incluído o uso de unidades de medida, os símbolos químicos das substancias máis importantes, así como as ferramentas matemáticas adecuadas, facilitando unha comunicación efectiva con toda a comunidade científica."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "3",
+      "descripcion": "Poñer en práctica as normas de uso dos espazos específicos da ciencia, como os laboratorios de física e química, asegurando a saúde propia e colectiva, a conservación sostible do ambiente e o coidado das instalacións."
+    },
+    {
+      "codigo": "1.5",
+      "competencia": "4",
+      "descripcion": "Utilizar recursos variados, tradicionais e dixitais, mellorando a aprendizaxe autónoma e a interacción con outros membros da comunidade educativa, con respecto cara aos docentes e cara aos estudantes e analizando criticamente as achegas de cada participante."
+    },
+    {
+      "codigo": "1.6",
+      "competencia": "4",
+      "descripcion": "Traballar de forma adecuada e versátil con medios variados, tradicionais e dixitais, na consulta de información e na creación de contidos, seleccionando con criterio as fontes máis fiables e adecuadas e mellorando a aprendizaxe propia e colectiva."
+    },
+    {
+      "codigo": "1.7",
+      "competencia": "5",
+      "descripcion": "Establecer interaccións construtivas e coeducativas emprendendo actividades de cooperación como forma de construír un medio de traballo eficiente na ciencia."
+    },
+    {
+      "codigo": "1.8",
+      "competencia": "5",
+      "descripcion": "Emprender, de forma guiada e de acordo coa metodoloxía adecuada, proxectos científicos que involucren o alumando na mellora da sociedade e que creen un valor individual e colectivo."
+    },
+    {
+      "codigo": "1.9",
+      "competencia": "6",
+      "descripcion": "Recoñecer e valorar, a través da análise histórica dos avances científicos logrados por homes e mulleres de ciencia, que este é un proceso en permanente construción e que existen repercusións mutuas da ciencia actual coa tecnoloxía, coa sociedade e co ambiente."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "1",
+      "descripcion": "Identificar, comprender e explicar fenómenos fisicoquímicos relacionados coa composición e coa estrutura de sistemas materiais cotiáns, a partir dos principios, teorías e leis científicas adecuadas, expresándoos de maneira argumentada e utilizando diversidade de soportes e medios de comunicación."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "1",
+      "descripcion": "Resolver os problemas fisicoquímicos relacionados coa composición e coa estrutura de sistemas materiais utilizando as leis e as teorías científicas adecuadas, razoando os procedementos utilizados para atopar as solucións e expresando adecuadamente os resultados."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Empregar as metodoloxías propias da ciencia na identificación e descrición de fenómenos relacionados cos sistemas materiais a partir de cuestións ás que se poida dar resposta a través da indagación, da dedución, do traballo experimental e do razoamento lóxico-matemático, diferenciándoas das pseudocientíficas."
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "3",
+      "descripcion": "Empregar datos en diferentes formatos para interpretar e comunicar información relativa a sistemas materiais e á súa composición, relacionando entre si o que cada un deles contén e extraendo en cada caso o relevante para a resolución dun problema."
+    },
+    {
+      "codigo": "2.5",
+      "competencia": "3",
+      "descripcion": "Utilizar adecuadamente os símbolos químicos dos elementos e substancias comúns máis importantes facilitando unha comunicación efectiva con toda a comunidade científica."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "1",
+      "descripcion": "Identificar, comprender e explicar fenómenos fisicoquímicos cotiáns relevantes relacionados coa enerxía, a partir dos principios, teorías e leis científicas adecuadas, expresándoos de maneira argumentada e utilizando diversidade de soportes e medios de comunicación."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "1",
+      "descripcion": "Resolver problemas fisicoquímicos relacionados coa enerxía utilizando as leis e as teorías científicas adecuadas, razoando os procedementos utilizados para atopar as solucións e expresando adecuadamente os resultados."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "2",
+      "descripcion": "Empregar as metodoloxías propias da ciencia na identificación e descrición de fenómenos relacionados coa enerxía e as súas manifestacións a partir de cuestións ás que se poida dar resposta a través da indagación, da dedución, do traballo experimental e do razoamento lóxico-matemático, diferenciándoas das pseudocientíficas."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "3",
+      "descripcion": "Empregar datos en diferentes formatos para interpretar e comunicar información relativa á enerxía e ás súas transferencias nun proceso fisicoquímico concreto, relacionando entre si o que cada un deles contén e extraendo en cada caso o relevante para a resolución dun problema."
+    },
+    {
+      "codigo": "3.5",
+      "competencia": "6",
+      "descripcion": "Detectar na contorna as necesidades tecnolóxicas, ambientais, económicas e sociais máis importantes que demanda a sociedade, entendendo a capacidade da ciencia para darlles solución sostible a través da implicación de todos os cidadáns."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "1",
+      "descripcion": "Identificar, comprender e explicar fenómenos cotiáns relacionados con movementos, así como coas forzas e os seus efectos, a partir dos principios, teorías e leis científicas adecuadas, expresándoos de maneira argumentada e utilizando diversidade de soportes e medios de comunicación."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "1",
+      "descripcion": "Resolver problemas sobre movementos e sobre forzas e os seus efectos utilizando as leis e as teorías científicas adecuadas, razoando os procedementos utilizados para atopar as solucións e expresando adecuadamente os resultados."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "1",
+      "descripcion": "Recoñecer e describir na contorna inmediata situacións problemáticas reais de índole científica e emprender iniciativas nas que a ciencia e, en particular, a física e a química poden contribuír á súa solución, analizando criticamente o seu impacto na sociedade."
+    },
+    {
+      "codigo": "4.4",
+      "competencia": "2",
+      "descripcion": "Empregar as metodoloxías propias da ciencia na identificación e descrición de fenómenos relacionados con movementos, así como as forzas e os seus efectos, a partir de cuestións ás que se poida dar resposta a través da indagación, da dedución, do traballo experimental e do razoamento lóxico-matemático, diferenciándoas das pseudocientíficas."
+    },
+    {
+      "codigo": "4.5",
+      "competencia": "3",
+      "descripcion": "Empregar datos en diferentes formatos para interpretar e comunicar información relativa a un proceso fisicoquímico relativa a movementos e a forzas e os seus efectos, relacionando entre si o que cada un deles contén e extraendo en cada caso o relevante para a resolución dun problema."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "1",
+      "descripcion": "Identificar, comprender e explicar cambios físicos e químicos cotiáns a partir dos principios, teorías e leis científicas adecuadas, expresándoos de maneira argumentada e utilizando diversidade de soportes e medios de comunicación."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "1",
+      "descripcion": "Resolver problemas sobre cambios fisicoquímicos utilizando as leis e as teorías científicas adecuadas, razoando os procedementos utilizados para atopar as solucións e expresando adecuadamente os resultados."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "2",
+      "descripcion": "Empregar as metodoloxías propias da ciencia na identificación e descrición de fenómenos relacionados cos cambios físicos e químicos a partir de cuestións ás que se poida dar resposta a través da indagación, da dedución, do traballo experimental e do razoamento lóxico-matemático, diferenciándoas das pseudocientíficas."
+    },
+    {
+      "codigo": "5.4",
+      "competencia": "3",
+      "descripcion": "Empregar datos en diferentes formatos para interpretar e comunicar información relativa a un proceso fisicoquímico concreto, relacionando entre si o que cada un deles contén e extraendo en cada caso o relevante para a resolución dun problema."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "Bloque 1. As destrezas científicas básicas",
+      "titulo": "As destrezas científicas básicas",
+      "items": [
+        "Metodoloxías propias da investigación científica: identificación e formulación de cuestións, elaboración de hipóteses e comprobación experimental destas.",
+        "Traballo experimental e proxectos de investigación: estratexias na resolución de problemas e no desenvolvemento de investigacións mediante a indagación, a dedución, a procura de evidencias e o razoamento lóxico-matemático, facendo inferencias válidas das observacións e obtendo conclusións.",
+        "Contornas e recursos de aprendizaxe científica, como o laboratorio ou as contornas virtuais: materiais, substancias e ferramentas tecnolóxicas.",
+        "Normas de uso de cada espazo, asegurando e protexendo así a saúde propia e comunitaria, a seguridade nas redes e o respecto cara ao ambiente.",
+        "A linguaxe científica: unidades do sistema internacional e os seus símbolos. Ferramentas matemáticas básicas en diferentes escenarios científicos e de aprendizaxe.",
+        "Estratexias de interpretación e produción de información científica utilizando diferentes formatos e diferentes medios: desenvolvemento do criterio propio baseado no que o pensamento científico achega á mellora da sociedade para facela máis xusta, equitativa e igualitaria.",
+        "Valoración da cultura científica e do papel de científicos e científicas nos principais fitos históricos e actuais da física e da química para o avance e a mellora da sociedade."
+      ],
+      "codigos_items": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4",
+        "1.5",
+        "1.6",
+        "1.7"
+      ]
+    },
+    {
+      "codigo": "2",
+      "bloque": "Bloque 2. A materia",
+      "titulo": "A materia",
+      "items": [
+        "Teoría cinético-molecular: aplicación a observacións sobre a materia explicando as súas propiedades, os estados de agregación, os cambios de estado e a formación de mesturas e disolucións.",
+        "Experimentos relacionados cos sistemas materiais: coñecemento e descrición das súas propiedades, a súa composición e a súa clasificación.",
+        "Nomenclatura: participación dunha linguaxe científica común e universal a través da interpretación das fórmulas químicas dalgúns compostos binarios de importancia e o coñecemento dos símbolos dos principais elementos químicos."
+      ],
+      "codigos_items": [
+        "2.1",
+        "2.2",
+        "2.3"
+      ]
+    },
+    {
+      "codigo": "3",
+      "bloque": "Bloque 3. A enerxía",
+      "titulo": "A enerxía",
+      "items": [
+        "A enerxía: formulación de cuestións e hipóteses sobre a enerxía, propiedades e manifestacións que a describan como a causa de todos os procesos de cambio.",
+        "Deseño e comprobación experimental de hipóteses relacionadas co uso doméstico e industrial da enerxía nas súas distintas formas e as transformacións entre elas.",
+        "Elaboración fundamentada de hipóteses sobre o ambiente e a sostibilidade a partir das diferenzas entre fontes de enerxía renovables e non renovables.",
+        "Efectos da calor sobre a materia: análise dos efectos e aplicación en situacións cotiás."
+      ],
+      "codigos_items": [
+        "3.1",
+        "3.2",
+        "3.3",
+        "3.4"
+      ]
+    },
+    {
+      "codigo": "4",
+      "bloque": "Bloque 4. A interacción",
+      "titulo": "A interacción",
+      "items": [
+        "Análise de movementos sinxelos a partir dos conceptos da cinemática, formulando hipóteses comprobables sobre valores futuros das magnitudes implicadas e validándoas a través do cálculo numérico, da interpretación de gráficas ou do traballo experimental.",
+        "As forzas como axentes de cambio: efectos das forzas, tanto no estado de movemento ou de repouso dun corpo coma na produción de deformacións.",
+        "Aplicación das leis de Newton: observación de situacións cotiás ou de laboratorio que permiten entender como se comportan os sistemas materiais ante a acción das forzas e predicir os efectos destas en situacións cotiás e de seguridade viaria.",
+        "Fenómenos gravitatorios, eléctricos e magnéticos: experimentos sinxelos que evidencian a relación coas forzas da natureza."
+      ],
+      "codigos_items": [
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4"
+      ]
+    },
+    {
+      "codigo": "5",
+      "bloque": "Bloque 5. O cambio",
+      "titulo": "O cambio",
+      "items": [
+        "Os sistemas materiais: análise dos diferentes tipos de cambios que experimentan relacionando as causas que os producen coas consecuencias que teñen.",
+        "Interpretación macroscópica e microscópica das reaccións químicas: explicación das relacións da química co ambiente, coa tecnoloxía e coa sociedade."
+      ],
+      "codigos_items": [
+        "5.1",
+        "5.2"
+      ]
+    }
+  ],
+  "comunidad": "galicia",
+  "idioma": "gl"
+}

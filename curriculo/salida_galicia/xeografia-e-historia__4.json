@@ -1,0 +1,402 @@
+{
+  "materia_oficial": "Xeografía e Historia",
+  "materia": "Xeografía e Historia",
+  "etapa": "ESO",
+  "ciclo": "4º ESO",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "4º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Buscar, seleccionar, tratar e organizar información sobre temas relevantes do presente e do pasado, usando criticamente fontes históricas e xeográficas, para adquirir coñecementos, elaborar e expresar contidos en varios formatos.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Indagar, argumentar e elaborar produtos propios sobre problemas xeográficos, históricos e sociais que resulten relevantes na actualidade, desde o local ao global, para desenvolver un pensamento crítico, respectuoso coas diferenzas, que contribúa á construción da propia identidade e a enriquecer o acervo común.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Coñecer os principais desafíos aos cales se enfrontaron distintas sociedades ao longo do tempo, identificando as causas e consecuencias dos cambios producidos e os problemas a que se enfrontan na actualidade, mediante o desenvolvemento de proxectos de investigación e o uso de fontes fiables, para realizar propostas que contribúan ao desenvolvemento sustentable.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Identificar e analizar os elementos da paisaxe e a súa articulación en sistemas complexos naturais, rurais e urbanos, así como a súa evolución no tempo, interpretando as causas das transformacións e valorando o grao de equilibrio existente nos distintos ecosistemas, para promover a súa conservación, mellora e uso sustentable.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Analizar de forma crítica formulacións históricas e xeográficas explicando a construción dos sistemas democráticos e os principios constitucionais que rexen a vida en comunidade, así como asumindo os deberes e dereitos propios do noso marco de convivencia, para promover a participación cidadá e a cohesión social.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Comprender os procesos xeográficos, históricos e culturais que conformaron a realidade multicultural en que vivimos, coñecendo e difundindo a historia e a cultura das minorías étnicas presentes no noso país, e valorando a achega dos movementos en defensa da igualdade e da inclusión, para reducir estereotipos, evitar calquera tipo de discriminación e violencia, e recoñecer a riqueza da diversidade.",
+      "descriptores": []
+    },
+    {
+      "codigo": "7",
+      "descripcion": "Identificar os fundamentos que sosteñen as diversas identidades propias e as alleas, a través do coñecemento e posta en valor do patrimonio material e inmaterial que compartimos para conservalo e respectar os sentimentos de pertenza, así como para favorecer procesos que contribúan á cohesión e solidariedade territorial no tocante aos valores do europeísmo e da Declaración Universal dos Dereitos Humanos.",
+      "descriptores": []
+    },
+    {
+      "codigo": "8",
+      "descripcion": "Tomar conciencia do papel dos ciclos demográficos, o ciclo vital, as formas de vida e as relacións interxeracionais e de dependencia na sociedade actual e a súa evolución ao longo do tempo, analizándoas de forma crítica, para promover alternativas saudables, sustentables, enriquecedoras e respectuosas coa dignidade humana e o compromiso coa sociedade e coa contorna.",
+      "descriptores": []
+    },
+    {
+      "codigo": "9",
+      "descripcion": "Coñecer e valorar a importancia da seguridade integral cidadá na cultura de convivencia nacional e internacional, recoñecendo a contribución do Estado, das súas institucións e doutras entidades sociais á cidadanía global, á paz, á cooperación internacional e ao desenvolvemento sustentable, para promover a consecución dun mundo máis seguro, solidario, sustentable e xusto.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "2",
+      "descripcion": "Xerar produtos orixinais e creativos mediante a reelaboración de coñecementos previos a través de ferramentas de investigación que permitan explicar problemas presentes e pasados da humanidade a distintas escalas temporais e espaciais, do local ao global, utilizando conceptos, situacións e datos relevantes"
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "3",
+      "descripcion": "Interpretar e explicar de forma argumentada a conexión de España cos grandes procesos históricos da época contemporánea, valorando o que supuxeron para a súa evolución e sinalando as achegas dos seus habitantes ao longo da historia, así como as achegas do Estado e as súas institucións á cultura europea e mundial."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "5",
+      "descripcion": "Recoñecer movementos e causas que xeren unha conciencia solidaria, promovan a cohesión social, e traballen para a eliminación da desigualdade, especialmente a motivada por cuestión de xénero, e para o pleno desenvolvemento da cidadanía, mediante a mobilización de coñecementos e estratexias de participación, traballo en equipo, mediación e resolución pacífica de conflitos."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "6",
+      "descripcion": "Rexeitar actitudes discriminatorias e recoñecer a riqueza da diversidade, a partir da análise da relación entre os aspectos xeográficos, históricos, ecosociais e culturais que conformaron a sociedade globalizada e multicultural actual, e o coñecemento da achega dos movementos en defensa dos dereitos das minorías e en favor da inclusión e a igualdade real, especialmente das mulleres e doutros colectivos discriminados."
+    },
+    {
+      "codigo": "1.5",
+      "competencia": "9",
+      "descripcion": "Contribuír á consecución dun mundo máis seguro, xusto, solidario e sustentable, a través da análise dos principais conflitos do presente e o recoñecemento das institucións do Estado, e das asociacións civís que garanten a seguridade integral e a convivencia social, así como dos compromisos internacionais do noso país en favor da paz, a seguridade, a cooperación, a sustentabilidade, os valores democráticos e os obxectivos de desenvolvemento sustentable."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "1",
+      "descripcion": "Establecer conexións e relacións entre os coñecementos e informacións adquiridos,"
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "1",
+      "descripcion": "Transferir adecuadamente a información e o coñecemento por medio de narracións, pósteres, presentacións, exposicións orais, medios audiovisuais e outros produtos."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "1",
+      "descripcion": "Utilizar secuencias cronolóxicas complexas nas que identificar, comparar e relacionar feitos e procesos en diferentes períodos e lugares históricos (simultaneidade, duración, causalidade), utilizando termos e conceptos específicos do ámbito da historia e da xeografía."
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "1",
+      "descripcion": "Analizar procesos de cambio histórico e comparar casos da historia e da xeografía a través do uso de fontes de información diversas, tendo en conta as transformacións de curta e longa duración (conxuntura e estrutura), as continuidades e permanencias en diferentes períodos e lugares."
+    },
+    {
+      "codigo": "2.5",
+      "competencia": "2",
+      "descripcion": "Producir e expresar xuízos e argumentos persoais e críticos de forma aberta e respectuosa, facendo patente a propia identidade e enriquecendo o acervo común no contexto do mundo actual, dos seus retos e dos seus conflitos, e desde unha perspectiva sistémica e global."
+    },
+    {
+      "codigo": "2.6",
+      "competencia": "3",
+      "descripcion": "Coñecer os obxectivos de desenvolvemento sustentable, realizando propostas que contribúan ao seu logro, aplicando métodos e proxectos de investigación, incidindo no uso de mapas e outras representacións gráficas, así como de medios accesibles de interpretación de imaxes."
+    },
+    {
+      "codigo": "2.7",
+      "competencia": "3",
+      "descripcion": "Identificar os principais feitos históricos nos diferentes contextos e valorar os cambios que propiciaron nos aspectos ideolóxicos, sociais, políticos e económicos conformando as bases do mundo contemporáneo e actual; así mesmo, xustificar que feitos do pasado teñen unha incidencia no presente establecendo relacións de causalidade e consecuencialidade que todo acontecemento histórico vai provocar no futuro."
+    },
+    {
+      "codigo": "2.8",
+      "competencia": "5",
+      "descripcion": "Coñecer, valorar e exercitar responsabilidades, dereitos e deberes e actuar en favor do seu desenvolvemento e afirmación a través do coñecemento do noso ordenamento xurídico e constitucional, da comprensión e posta en valor da nosa memoria democrática e dos aspectos fundamentais que a conforman, da contribución dos homes e mulleres a esta, e a defensa dos nosos valores constitucionais."
+    },
+    {
+      "codigo": "2.9",
+      "competencia": "6",
+      "descripcion": "Rexeitar actitudes discriminatorias e recoñecer a riqueza da diversidade, a partir da análise da relación entre os aspectos xeográficos, históricos, ecosociais e culturais que conformaron a sociedade globalizada e multicultural actual, e o coñecemento da achega dos movementos en defensa dos dereitos das minorías e en favor da inclusión e da igualdade real, especialmente das mulleres e doutros colectivos discriminados."
+    },
+    {
+      "codigo": "2.10",
+      "competencia": "7",
+      "descripcion": "Recoñecer os trazos que van conformando a identidade propia e dos demais, a riqueza das identidades múltiples en relación con distintas escalas espaciais, a través da investigación e da análise dos seus fundamentos xeográficos, históricos, artísticos, ideolóxicos e lingüísticos, e o recoñecemento das súas expresións culturais."
+    },
+    {
+      "codigo": "2.11",
+      "competencia": "7",
+      "descripcion": "Coñecer e contribuír a conservar o patrimonio material e inmaterial común, respectando os"
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "2",
+      "descripcion": "Producir e expresar xuízos e argumentos persoais e críticos de forma aberta e respectuosa, facendo patente a propia identidade e enriquecendo o acervo común no contexto do mundo actual, dos seus retos e dos seus conflitos, e desde unha perspectiva sistémica e global."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "5",
+      "descripcion": "Recoñecer movementos e causas que xeren unha conciencia solidaria, promovan a cohesión social e traballen para a eliminación da desigualdade, especialmente a motivada por cuestión de xénero, e para o pleno desenvolvemento da cidadanía, mediante a mobilización de coñecementos e estratexias de participación, traballo en equipo, mediación e resolución pacífica de conflitos."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "6",
+      "descripcion": "Rexeitar actitudes discriminatorias e recoñecer a riqueza da diversidade, a partir da análise da relación entre os aspectos xeográficos, históricos, ecosociais e culturais que conformaron a sociedade globalizada e multicultural actual, e o coñecemento da achega dos movementos en defensa dos dereitos das minorías e en favor da inclusión e da igualdade real, especialmente das mulleres e doutros colectivos discriminados."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "6",
+      "descripcion": "Contribuír ao benestar individual e colectivo a través do deseño, exposición e posta en práctica de iniciativas orientadas a promover un compromiso activo cos valores comúns, a mellora da contorna e o servizo á comunidade."
+    },
+    {
+      "codigo": "3.5",
+      "competencia": "7",
+      "descripcion": "Coñecer e contribuír a conservar o patrimonio material e inmaterial común, respectando os sentimentos de pertenza adoptando compromisos con principios e accións orientados á cohesión e á solidariedade territorial da comunidade política, os valores do europeísmo e da Declaración Universal dos Dereitos Humanos."
+    },
+    {
+      "codigo": "3.6",
+      "competencia": "8",
+      "descripcion": "Adoptar un papel activo e comprometido coa contorna, de acordo con aptitudes, aspiracións, intereses e valores propios, a partir da análise crítica da realidade económica, da distribución e xestión do traballo, e a adopción de hábitos responsables, saudables, sustentables e respectuosos coa dignidade humana e a doutros seres vivos, así como da reflexión ética ante os usos da tecnoloxía e a xestión do tempo libre."
+    },
+    {
+      "codigo": "3.7",
+      "competencia": "8",
+      "descripcion": "Recoñecer as iniciativas da sociedade civil, reflectidas en asociacións e entidades sociais, adoptando actitudes de participación e transformación no ámbito local e comunitario, especialmente no ámbito das relacións interxeracionais."
+    },
+    {
+      "codigo": "3.8",
+      "competencia": "9",
+      "descripcion": "Contribuír á consecución dun mundo máis seguro, xusto, solidario e sustentable, a través da análise dos principais conflitos do presente e o recoñecemento das institucións do Estado, e das asociacións civís que garanten a seguridade integral e a convivencia social, así como dos compromisos internacionais do noso país en favor da paz, a seguridade, a cooperación, a sustentabilidade, os valores democráticos e os obxectivos de desenvolvemento sustentable."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "Bloque 1. Retos do mundo actual",
+      "titulo": "Retos do mundo actual",
+      "items": [
+        "Xeopolítica e principais conflitos no presente. Xenocidios e crimes contra a humanidade. Guerras, terrorismo e outras formas de violencia política. Alianzas e institucións internacionais, mediación e misións de paz. Inxerencia humanitaria e xustiza universal.",
+        "Desigualdade e inxustiza no contexto local e global. Solidariedade, cohesión social e cooperación para o desenvolvemento. A achega de España á cooperación para o desenvolvemento.",
+        "Igualdade de xénero e formas de violencia contra as mulleres. Actitudes e comportamentos sexistas. A situación en España e Galicia."
+      ],
+      "codigos_items": [
+        "1.1",
+        "1.2",
+        "1.3"
+      ]
+    },
+    {
+      "codigo": "2",
+      "bloque": "Bloque 2. Sociedades e territorios",
+      "titulo": "Sociedades e territorios",
+      "items": [
+        "Tempo histórico: construción e interpretación de liñas do tempo a través da linealidade, cronoloxía, simultaneidade e duración.",
+        "Conciencia histórica. Elaboración de xuízos propios e argumentados ante problemas de actualidade contextualizados historicamente. Defensa e exposición crítica destes a través de presentacións e debates.",
+        "Bases ideolóxicas (liberalismo, marxismo e nacionalismo) da contemporaneidade: procesos unificadores e independencias. O movemento obreiro e a súa evolución.",
+        "As revolucións burguesas do século XIX, transición e resistencias ao estado liberal no mundo. A conquista dos dereitos individuais e colectivos na época contemporánea.",
+        "Da Constitución de 1812 á fin da Restauración: orixe, evolución e adaptación dos sistemas liberais en España a través das fontes, e as súas consecuencias para Galicia. A lenta consecución de dereitos sociais en España e Galicia.",
+        "O proceso de transformación da España contemporánea nos seus aspectos políticos, económicos e sociais. Repercusións na Galicia contemporánea.",
+        "A evolución cultural da España do século XIX ao século XX e a formación dunha identidade multicultural compartida. Do Rexionalismo ao Nacionalismo na España periférica. O caso galego.",
+        "As transformacións científicas e tecnolóxicas do século XIX e a súa implicación na sociedade moderna.",
+        "O nacemento das novas expresións artísticas e culturais contemporáneas. Realismo, impresionismo e postimpresionismo. Movementos artísticos do século XIX en España e Galicia.",
+        "As relacións internacionais no século XIX: da Europa da Restauración ao Imperialismo. Causas, desenvolvemento e consecuencias do colonialismo.",
+        "Conflitos e violencias provocadas a fins do século XIX e na primeira metade do século XX: da paz armada á Primeira Guerra Mundial. Principais acontecementos da guerra e as súas repercusións. Estudo crítico e comparativo.",
+        "As relacións internacionais como consecuencia da Primeira Guerra Mundial: da Revolución Rusa á aparición dos totalitarismos (fascismo e nazismo). A economía de entreguerras como detonante político e social: o crack do 29. O caso español: da Segunda República á Ditadura de Franco.",
+        "A conquista dos dereitos individuais e colectivos no século XX. Orixe, evolución e adaptación dos sistemas liberais e democráticos en España e no mundo a través das fontes: A Segunda República española.",
+        "Relacións multicausais na construción da democracia e as orixes do totalitarismo: os movementos pola liberdade, a igualdade e os dereitos humanos.",
+        "Conflitos e violencias no período de entreguerras: orixe, desenvolvemento e consecuencias directas da Segunda Guerra Mundial. Estudo crítico e comparativo. O holocausto xudeu e as súas consecuencias na historia mundial.",
+        "O nacemento das novas expresións artísticas e culturais contemporáneas: do expresionismo á abstracción. A vangarda europea na primeira metade do século XX: o cubismo e o surrealismo a través dos principais artistas españois e galegos.",
+        "Os fundamentos xeoestratégicos desde a segunda metade do século XX ata a actualidade, a política de bloques, os conflitos da descolonización en Asia e África e a nova orde mundial. O papel dos organismos internacionais.",
+        "O proceso de construción europea. Integración económica, monetaria e cidadá. As institucións europeas. A extensión do Estado do benestar en Europa. O futuro de Europa.",
+        "As transformacións científicas e tecnolóxicas dos séculos XX e XXI: a globalización e a era da internet. Dimensión ética da ciencia e da tecnoloxía. Cambios culturais e novos movementos sociais: feminismo, ecoloxismo e pacifismo. Os medios de comunicación de masas e as redes sociais virtuais.",
+        "A acción dos movementos feministas e sufraxistas na loita pola igualdade de xénero. Mulleres relevantes da historia contemporánea.",
+        "A acción dos movementos sociais de cuarta xeración nun mundo globalizado. Procesos de evolución e involución: a perspectiva emancipadora da interpretación do pasado.",
+        "A transición política e a configuración do Estado democrático en España: a Constitución de 1978 e o Estatuto de autonomía de Galicia. O Estado do benestar en España.",
+        "A memoria democrática. Experiencias históricas dolorosas do pasado recente. Represión durante a dictadura. Recoñecemento e reparación das vítimas da violencia.",
+        "Os fundamentos xeoestratégicos desde a fin da Guerra Fría. O papel dos organismos internacionais na actualidade.",
+        "Expresións artísticas e culturais tras a Segunda Guerra Mundial: as segundas vangardas e as novas formas de expresión artística posmodernas no mundo actual. A arte actual en España e Galicia."
+      ],
+      "codigos_items": [
+        "2.1",
+        "2.2",
+        "2.3",
+        "2.4",
+        "2.5",
+        "2.6",
+        "2.7",
+        "2.8",
+        "2.9",
+        "2.10",
+        "2.11",
+        "2.12",
+        "2.13",
+        "2.14",
+        "2.15",
+        "2.16",
+        "2.17",
+        "2.18",
+        "2.19",
+        "2.20",
+        "2.21",
+        "2.22",
+        "2.23",
+        "2.24",
+        "2.25"
+      ]
+    },
+    {
+      "codigo": "3",
+      "bloque": "Bloque 3. Compromiso cívico e global",
+      "titulo": "Compromiso cívico e global",
+      "items": [
+        "Dignidade humana e dereitos universais. Declaración Universal dos Dereitos Humanos.",
+        "Cidadanía ética dixital. Novos comportamentos na sociedade da información.",
+        "Compromiso cívico e participación cidadá. Mediación e xestión pacífica de conflitos e apoio ás vítimas da violencia e do terrorismo.",
+        "Servizo á comunidade. A corresponsabilidade nos cidadáns. As relacións interxeracionais. A responsabilidade colectiva e individual. O asociacionismo e o voluntariado. Contornas e redes sociais.",
+        "O patrimonio como ben e como recurso. Posta en valor, difusión e xestión da riqueza patrimonial. A diversidade cultural no mundo actual. Respecto e conservación do patrimonio material e inmaterial en España e Galicia.",
+        "Cohesión social e integración. Medidas e accións en favor da igualdade e da plena inclusión.",
+        "A igualdade real de mulleres e homes. A discriminación por motivo de diversidade sexual e de xénero. A conquista de dereitos civís nas sociedades democráticas contemporáneas.",
+        "As emocións e o contexto cultural. A perspectiva histórica do compoñente emocional.",
+        "Os valores do europeísmo. Fórmulas de participación en programas educativos europeos.",
+        "Institucións do Estado que garanten a seguridade integral e a convivencia social. Os compromisos internacionais do noso país en favor da paz, a seguridade e a cooperación internacional.",
+        ".4 Orientacións pedagóxicas",
+        "intervención educativa na materia de Xeografía e Historia desenvolverá o seu currículo e",
+        "ratará de asentar de xeito gradual e progresivo nos distintos niveis da etapa as aprendizaxes",
+        "ue lle faciliten ao alumnado o logro dos obxectivos da materia e, en combinación co resto de",
+        "aterias, unha adecuada adquisición das competencias clave e o logro dos obxectivos da etapa.",
+        "este sentido, no deseño das actividades, o profesorado terá que considerar a relación exis-",
+        "ente entre os obxectivos da materia e as competencias clave a través dos descritores operativos",
+        "o perfil de saída e as liñas de actuación no proceso de ensino e aprendizaxe, que se presentan",
+        "os puntos seguintes, e seleccionar aqueles criterios de avaliación do currículo que se axusten á",
+        "inalidade buscada, así como empregalos para verificar as aprendizaxes do alumnado e o seu nivel",
+        "e desempeño.",
+        "elación entre os obxectivos da materia de Xeografía e Historia e as competencias clave a tra-",
+        "és dos descritores operativos do perfil de saída establecidos no anexo I",
+        "bxectivos",
+        "a materia",
+        "BX1",
+        "BX2",
+        "BX3",
+        "BX4",
+        "BX5",
+        "BX6",
+        "BX7",
+        "BX8",
+        "BX9",
+        "iñas de actuación no proceso de ensino e aprendizaxe",
+        "Unha organización, programación e secuenciación de contidos, abordadas desde unha pers-",
+        "ectiva cronolóxica ou máis transversal, en función dos obxectivos didácticos e das situacións",
+        "e aprendizaxe propostas, incidindo na contextualización histórica e xeográfica desde un en-",
+        "oque multicausal e desde unha perspectiva de estudo comparado.",
+        "Un enfoque metodolóxico eminentemente práctico e activo que siga a máxima de que se",
+        "prende facendo e que inclúa a realización de proxectos significativos para o alumnado e a",
+        "esolución colaborativa de problemas, que reforzará a autoestima, a autonomía, a reflexión e",
+        "responsabilidade. Ademais, este modo de aprendizaxe outórgalle tamén ao alumnado o pro-",
+        "agonismo na construción do coñecemento e un papel activo na xeración de contidos por me-",
+        "io de procesos e estratexias de indagación e investigación, a través do manexo de distintas",
+        "ormas de representación.",
+        "Unha concepción do profesorado como orientador, promotor e facilitador do desenvolve-",
+        "ento no alumnado, axustándose ao nivel competencial inicial deste e tendo en conta a aten-",
+        "ión á súa diversidade e individualidade. Isto permitirá, ademais, adaptarse aos seus intereses,",
+        "ptitudes e diferentes ritmos, así como prever as dificultades de aprendizaxe e deseñar, de",
+        "er o caso, os necesarios mecanismos de reforzo. Ten que permitir, igualmente, a necesaria",
+        "iversificación dos itinerarios de aprendizaxe, así como a aplicación de criterios de flexibilidade",
+        "ue permitan poñer en acción propostas e iniciativas educativas que favorezan a inclusión.",
+        "A formulación de estratexias interdisciplinares para as que esta materia representa un papel",
+        "entral como eixe vertebrador, na medida en que incorpora campos temáticos, recursos e pro-",
+        "edementos de diferentes áreas de coñecemento. Isto permitirá que o alumnado perciba a",
+        "prendizaxe desde unha perspectiva conxunta, relacional e global evitando unha visión com-",
+        "artimentada das materias.",
+        "A contextualización das aprendizaxes e a súa conexión cos problemas actuais e retos do pre-",
+        "ente, desde unha perspectiva interpretativa do tempo e comprensiva do espazo, facilitando",
+        "otalas de funcionalidade, interese e utilidade para o alumnado e permitindo crear escenarios",
+        "iversos en que desenvolver iniciativas e proxectos en situacións reais que propician a parti-",
+        "ipación e o compromiso co contorno e coa comunidade.",
+        "A interactuación no seo do grupo, incluída a persoa docente, coa resolución de interrogantes",
+        "a exposición argumentada a través de diálogos e debates sobre asuntos centrais da actuali-",
+        "ade e do pasado, facilitando o intercambio de ideas e a formación da identidade individual, o",
+        "fianzamento dunha actitude tolerante e a creación dunha conciencia cívica que inclúe o res-",
+        "ecto a outras formas de pensar e valorar."
+      ],
+      "codigos_items": [
+        "3.1",
+        "3.2",
+        "3.3",
+        "3.4",
+        "3.5",
+        "3.6",
+        "3.7",
+        "3.8",
+        "3.9",
+        "3.10",
+        "3.11",
+        "3.12",
+        "3.13",
+        "3.14",
+        "3.15",
+        "3.16",
+        "3.17",
+        "3.18",
+        "3.19",
+        "3.20",
+        "3.21",
+        "3.22",
+        "3.23",
+        "3.24",
+        "3.25",
+        "3.26",
+        "3.27",
+        "3.28",
+        "3.29",
+        "3.30",
+        "3.31",
+        "3.32",
+        "3.33",
+        "3.34",
+        "3.35",
+        "3.36",
+        "3.37",
+        "3.38",
+        "3.39",
+        "3.40",
+        "3.41",
+        "3.42",
+        "3.43",
+        "3.44",
+        "3.45",
+        "3.46",
+        "3.47",
+        "3.48",
+        "3.49",
+        "3.50",
+        "3.51",
+        "3.52",
+        "3.53",
+        "3.54",
+        "3.55",
+        "3.56",
+        "3.57",
+        "3.58",
+        "3.59",
+        "3.60",
+        "3.61",
+        "3.62",
+        "3.63",
+        "3.64",
+        "3.65",
+        "3.66",
+        "3.67",
+        "3.68"
+      ]
+    }
+  ],
+  "comunidad": "galicia",
+  "idioma": "gl"
+}

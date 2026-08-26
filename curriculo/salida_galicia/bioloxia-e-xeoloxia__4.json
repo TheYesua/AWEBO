@@ -1,0 +1,484 @@
+{
+  "materia_oficial": "Bioloxía e Xeoloxía",
+  "materia": "Bioloxía e Xeoloxía",
+  "etapa": "ESO",
+  "ciclo": "4º ESO",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "4º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Interpretar e transmitir información e datos científicos argumentando sobre eles e utilizando diferentes formatos para analizar conceptos e procesos das ciencias biolóxicas e xeolóxicas.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Identificar, localizar e seleccionar información, contrastando a súa veracidade, organizándoa e avaliándoa criticamente para resolver preguntas relacionadas coas ciencias biolóxicas e xeolóxicas.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Planificar e desenvolver proxectos de investigación, seguindo os pasos das metodoloxías científicas e cooperando cando sexa necesario para indagar en aspectos relacionados coas ciencias xeolóxicas e biolóxicas.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Utilizar o razoamento e o pensamento computacional, analizando criticamente as respostas e solucións e reformulando o procedemento, de ser necesario, para resolver problemas ou dar explicación a procesos da vida cotiá relacionados coa bioloxía e coa xeoloxía.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Analizar os efectos de determinadas accións sobre o ambiente e a saúde baseándose nos fundamentos das ciencias biolóxicas e da Terra para promover e adoptar hábitos que eviten ou minimicen os impactos ambientais negativos, que sexan compatibles cun desenvolvemento sostible e que permitan manter e mellorar a saúde individual e colectiva.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Analizar os elementos dunha paisaxe concreta valorándoo como patrimonio natural e utilizando coñecementos sobre xeoloxía e ciencias da Terra para explicar a súa historia xeolóxica, propoñer accións encamiñadas á súa protección e identificar posibles riscos naturais.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "3",
+      "descripcion": "Expor preguntas e hipóteses que poidan ser respondidas ou contrastadas utilizando métodos científicos na explicación dos fenómenos biolóxicos e xeolóxicos e na realización de predicións sobre estes."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "3",
+      "descripcion": "Deseñar a experimentación, a toma de datos e a análise de fenómenos biolóxicos e/ou xeolóxicos, de modo que permitan responder preguntas concretas e contrastar unha hipótese exposta evitando nesgos."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "3",
+      "descripcion": "Realizar experimentos e tomar datos cuantitativos ou cualitativos sobre fenómenos biolóxicos e xeolóxicos utilizando os instrumentos, ferramentas ou técnicas adecuados con corrección e precisión."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "3",
+      "descripcion": "Interpretar e analizar os resultados obtidos nun proxecto de investigación utilizando, cando sexa necesario, ferramentas matemáticas e tecnolóxicas e obter conclusións fundamentadas ou valorar a imposibilidade de facelo."
+    },
+    {
+      "codigo": "1.5",
+      "competencia": "3",
+      "descripcion": "Cooperar e colaborar nas distintas fases dun proxecto científico para traballar con maior eficiencia, valorando a importancia da cooperación na investigación, respectando a diversidade e a igualdade de xénero e favorecendo a inclusión."
+    },
+    {
+      "codigo": "1.7",
+      "competencia": "1",
+      "descripcion": "Transmitir opinións propias fundamentadas e información sobre a bioloxía e a xeoloxía de forma clara e rigorosa, facilitando a súa comprensión e análise mediante o uso da terminoloxía e o formato adecuados (modelos, gráficos, táboas, vídeos, informes, diagramas, fórmulas, esquemas, símbolos, contidos dixitais...)."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "1",
+      "descripcion": "Recoñecer a orixe da Terra describindo as diferentes etapas da formación do universo e explicando a estrutura e as características do sistema solar."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Explicar a estrutura e a dinámica do interior terrestre interpretando a información que achegan os métodos de estudo e adoptando unha actitude crítica cara ás crenzas infundadas."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "1",
+      "descripcion": "Comprender os efectos globais da dinámica da xeosfera a través da tectónica de placas, recoñecéndoa como unha teoría integradora e describindo o movemento das placas e as estruturas xeolóxicas dos bordos e das zonas da intraplaca."
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "1",
+      "descripcion": "Identificar pregamentos e fallas relacionando os seus elementos cos esforzos e deformacións a que se ven sometidas as rochas."
+    },
+    {
+      "codigo": "2.5",
+      "competencia": "6",
+      "descripcion": "Describir a modelaxe do relevo analizando os diferentes axentes, procesos e factores que a condicionan, observando o relevo e a paisaxe en Galicia e valorando a súa importancia como recursos."
+    },
+    {
+      "codigo": "2.6",
+      "competencia": "6",
+      "descripcion": "Valorar a importancia da análise dos riscos xeolóxicos externos potenciados por determinadas acción humanas recoñecendo as medidas de predición e prevención para minimizar os seus efectos."
+    },
+    {
+      "codigo": "2.7",
+      "competencia": "2",
+      "descripcion": "Localizar as áreas con riscos externos en Galicia analizando a información das distintas administracións públicas ou doutras fontes."
+    },
+    {
+      "codigo": "2.8",
+      "competencia": "6",
+      "descripcion": "Deducir e explicar en mapas e cortes sinxelos a historia xeolóxica, identificando os seus elementos máis relevantes, utilizando o razoamento dos principios xeolóxicos básicos e reconstruíndo os principais acontecementos xeolóxicos."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "1",
+      "descripcion": "Xustificar a célula como unidade estrutural e funcional dos seres vivos exemplificando ou aplicando os postulados da teoría celular."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "2",
+      "descripcion": "Describir os virus como entidades acelulares utilizando exemplos a través da selección e da análise de información de diferentes fontes e citándoas con respecto pola propiedade intelectual."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "1",
+      "descripcion": "Identificar e comparar modelos ou esquemas de ADN e ARN mediante o deseño, a representación en diferentes formatos (maquetas, debuxos, esquemas...) ou mediante a extracción de ADN dunha célula eucariota e relacionándoos coa súa función."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "1",
+      "descripcion": "Recoñecer as etapas do ciclo celular sinalando a súa relación co cancro, describindo os cambios ao longo das diferentes fases e vinculando a replicación do ADN coa conservación da información xenética."
+    },
+    {
+      "codigo": "3.5",
+      "competencia": "1",
+      "descripcion": "Describir os procesos de división celular indicando as principais diferenzas entre mitose e meiose utilizando fotografías, vídeos e/ou observando as distintas fases da mitose ao microscopio."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Distinguir e explicar os procesos implicados na expresión xénica recoñecendo as características do código xenético e resolvendo cuestións sinxelas utilizando os datos e a información achegados."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Resolver problemas sinxelos de herdanza xenética de caracteres con relación de dominancia e recesividade aplicando as leis de Mendel e interpretando os resultados de forma crítica."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Resolver problemas sinxelos de herdanza xenética de caracteres con relación de codominancia, dominancia incompleta, alelismo múltiple e herdanza ligada ao sexo diferenciando fenotipo e xenotipo e interpretando os resultados de forma crítica."
+    },
+    {
+      "codigo": "4.4",
+      "competencia": "1",
+      "descripcion": "Analizar e explicar os procesos que xeran variabilidade xenética valorando o seu papel na biodiversidade e na evolución."
+    },
+    {
+      "codigo": "4.5",
+      "competencia": "2",
+      "descripcion": "Recoñecer o papel do ambiente na expresión do fenotipo utilizando exemplos no ser humano e noutros organismos a través da selección e da análise crítica de información de diferentes fontes."
+    },
+    {
+      "codigo": "4.6",
+      "competencia": "2",
+      "descripcion": "Describir as principais técnicas da enxeñaría xenética e interpretar as implicacións éticas, sociais e ambientais con relación aos avances en biotecnoloxía e enxeñaría xenética, utilizando fontes fiables e adoptando unha actitude crítica e escéptica cara á informacións sen unha base científica, como pseudociencias, teorías conspiradoras, crenzas infundadas, boatos..."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "1",
+      "descripcion": "Analizar e explicar as principais hipóteses sobre a orixe da vida na Terra utilizando os argumentos das diferentes teorías, mantendo unha actitude crítica, obtendo conclusións e formando opinións propias fundamentadas."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "2",
+      "descripcion": "Contrastar a veracidade da información con respecto ás teorías sobre a evolución dos seres vivos creacionismo e evolucionismo explicando as principais conclusións e adoptando unha actitude crítica e escéptica cara a informacións sen unha base científica."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "1",
+      "descripcion": "Comparar a teoría lamarckista e darwinista e explicar o proceso evolutivo aplicando a teoría neodarwinista utilizando as probas evolutivas para xustificar criticamente a evolución."
+    },
+    {
+      "codigo": "5.4",
+      "competencia": "1",
+      "descripcion": "Recoñecer a especiación identificando os principais procesos que xeran as especies."
+    },
+    {
+      "codigo": "5.5",
+      "competencia": "1",
+      "descripcion": "Describir a evolución dos homínidos analizando os grandes cambios acontecidos."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "1",
+      "descripcion": "Identificar os compoñentes do ecosistema e os niveis tróficos recoñecendo as súas interaccións e explicando a transferencia da materia e da enerxía nunha cadea ou rede trófica utilizando exemplos da contorna."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "1",
+      "descripcion": "Describir as etapas da sucesión ecolóxica tomando como exemplo a formación do solo."
+    },
+    {
+      "codigo": "6.3",
+      "competencia": "4",
+      "descripcion": "Recoñecer as causas e as consecuencias dos impactos antrópicos e analizar criticamente a solución a un problema ambiental propoñendo accións para a conservación do ambiente localizando, seleccionando, organizando e analizando criticamente información de distintas fontes."
+    },
+    {
+      "codigo": "6.4",
+      "competencia": "5",
+      "descripcion": "Identificar e analizar os diferentes problemas ambientais potenciados por determinadas accións humanas sobre unha zona xeográfica, tendo en conta as súas características e os factores socioeconómicos."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "Bloque 1. Proxecto científico",
+      "titulo": "Proxecto científico",
+      "items": [
+        "A evolución histórica do saber científico: a ciencia como labor colectivo, interdisciplinar e en continua construción.",
+        "Estratexias para a elaboración do proxecto científico: Formulación das hipóteses, preguntas e conxecturas científicas.",
+        "Estratexias para a elaboración do proxecto científico: Estratexias de utilización de ferramentas dixitais para a procura de información, a colaboración e a comunicación de procesos, resultados ou ideas científicas a través de ferramentas dixitais e formatos de uso frecuente na ciencia (presentación, gráfica, vídeo, póster, informe...).",
+        "Estratexias para a elaboración do proxecto científico: Recoñecemento e utilización de fontes fidedignas de información científica.",
+        "Estratexias para a elaboración do proxecto científico: Métodos de observación e de toma de datos de fenómenos naturais.",
+        "Estratexias para a elaboración do proxecto científico: Deseño e importancia de controis experimentais (positivos e negativos) para a obtención de resultados científicos obxectivos e fiables.",
+        "Estratexias para a elaboración do proxecto científico: A resposta a cuestións científicas mediante a experimentación e o traballo de campo utilizando instrumentos e espazos necesarios (laboratorio, aulas, contorna...) de forma adecuada e precisa.",
+        "Estratexias para a elaboración do proxecto científico: Métodos de análise de resultados. Diferenciación entre correlación e causalidade.",
+        "Estratexias para a elaboración do proxecto científico: Modelaxe para a representación e a comprensión de procesos ou elementos da natureza.",
+        "O labor científico e as persoas dedicadas á ciencia: contribución ás ciencias biolóxicas e xeolóxicas e importancia social. O papel das mulleres na ciencia."
+      ],
+      "codigos_items": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4",
+        "1.5",
+        "1.6",
+        "1.7",
+        "1.8",
+        "1.9",
+        "1.10"
+      ]
+    },
+    {
+      "codigo": "2",
+      "bloque": "Bloque 2. A dinámica terrestre",
+      "titulo": "A dinámica terrestre",
+      "items": [
+        "A orixe do universo e estrutura e características do sistema solar.",
+        "Métodos de estudo do interior terrestre.",
+        "Estrutura e dinámica da xeosfera.",
+        "Efectos globais da dinámica da xeosfera a través da tectónica de placas: Evidencias da tectónica de placas.",
+        "Efectos globais da dinámica da xeosfera a través da tectónica de placas: A litosfera e o mecanismo de movemento das placas.",
+        "Efectos globais da dinámica da xeosfera a través da tectónica de placas: Tipos de bordos de placas. Estruturas xeolóxicas nos límites e nas zonas da intraplaca.",
+        "Esforzos e deformacións das rochas. Formación de pregamentos e fallas.",
+        "Axentes, procesos e factores que condicionan a modelaxe do relevo.",
+        "A modelaxe do relevo segundo a acción dos axentes xeolóxicos. Relevos litolóxicos e estruturais.",
+        "Diferenzas entre relevo e paisaxe. A súa importancia como recursos. O relevo e a paisaxe en Galicia.",
+        "Análise dos riscos xeolóxicos externos. Medidas de predición e prevención. Os riscos externos en Galicia.",
+        "O tempo xeolóxico. Relación de eóns, eras e sistemas cos principais acontecementos xeolóxicos, paleoxeográficos, climáticos e biolóxicos.",
+        "Mapas e cortes xeolóxicos sinxelos: interpretación e trazado da historia xeolóxica que reflicten mediante a aplicación dos principios de estudo da historia da Terra (horizontalidade, superposición, intersección, sucesión faunística...)."
+      ],
+      "codigos_items": [
+        "2.1",
+        "2.2",
+        "2.3",
+        "2.4",
+        "2.5",
+        "2.6",
+        "2.7",
+        "2.8",
+        "2.9",
+        "2.10",
+        "2.11",
+        "2.12",
+        "2.13"
+      ]
+    },
+    {
+      "codigo": "3",
+      "bloque": "Bloque 3. A célula",
+      "titulo": "A célula",
+      "items": [
+        "Teoría celular.",
+        "Formas acelulares: virus.",
+        "Modelo simplificado da estrutura dos ácidos nucleicos e relación coa súa función.",
+        "ADN: cromosoma e cromatina. Replicación.",
+        "Etapas do ciclo celular e a súa relación co cancro.",
+        "Mitose e meiose: fases e función biolóxica."
+      ],
+      "codigos_items": [
+        "3.1",
+        "3.2",
+        "3.3",
+        "3.4",
+        "3.5",
+        "3.6"
+      ]
+    },
+    {
+      "codigo": "4",
+      "bloque": "Bloque 4. Xenética e herdanza",
+      "titulo": "Xenética e herdanza",
+      "items": [
+        "Expresión xénica: Definición e procesos.",
+        "Expresión xénica: Código xenético: características.",
+        "Leis de Mendel.",
+        "Problemas sinxelos de herdanza xenética de caracteres con relación de dominancia e recesividade, codominancia, dominancia incompleta, herdanza intermedia, alelismo múltiple e ligado ao sexo con un ou dous xenes.",
+        "Procesos que xeran variabilidade xenética e a súa relación coa evolución e a biodiversidade.",
+        "Expresión do fenotipo.",
+        "Técnicas da enxeñaría xenética.",
+        "Biotecnoloxía e enxeñaría xenética: aplicacións e implicacións éticas, sociais e ambientais."
+      ],
+      "codigos_items": [
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4",
+        "4.5",
+        "4.6",
+        "4.7",
+        "4.8"
+      ]
+    },
+    {
+      "codigo": "5",
+      "bloque": "Bloque 5. Orixe e evolución dos seres vivos",
+      "titulo": "Orixe e evolución dos seres vivos",
+      "items": [
+        "Hipóteses sobre a orixe da vida na Terra e investigacións no campo da astrobioloxía.",
+        "Evolución dos seres vivos: Creacionismo e evolucionismo. Principais teorías evolutivas.",
+        "Evolución dos seres vivos: Probas e mecanismos de evolución.",
+        "Evolución dos seres vivos: Especiación.",
+        "Evolución dos seres vivos: Evolución humana."
+      ],
+      "codigos_items": [
+        "5.1",
+        "5.2",
+        "5.3",
+        "5.4",
+        "5.5"
+      ]
+    },
+    {
+      "codigo": "6",
+      "bloque": "Bloque 6. Ecosistemas: interaccións e cambios",
+      "titulo": "Ecosistemas: interaccións e cambios",
+      "items": [
+        "Estrutura do ecosistema.",
+        "Compoñentes. Niveis tróficos. Cadeas e redes tróficas.",
+        "Ciclo da materia e fluxo da enerxía.",
+        "Dinámica do ecosistema: Sucesións ecolóxicas. Regresións.",
+        "Dinámica do ecosistema: Impactos ambientais derivados da actividade humana.",
+        "Dinámica do ecosistema: Problemáticas ambientais e posibles solucións.",
+        ".4 Orientacións pedagóxicas",
+        "intervención educativa na materia de Bioloxía e Xeoloxía desenvolverá o seu currículo e tra-",
+        "ará de asentar de xeito gradual e progresivo nos distintos niveis da etapa as aprendizaxes que",
+        "le faciliten ao alumnado o logro dos obxectivos da materia e, en combinación co resto das ma-",
+        "erias, unha adecuada adquisición das competencias clave e o logro dos obxectivos da etapa.",
+        "este sentido, no deseño das actividades, o profesorado terá que considerar a relación exis-",
+        "ente entre os obxectivos da materia e as competencias clave a través dos descritores operativos",
+        "o perfil de saída e das liñas de actuación no proceso de ensino e aprendizaxe que se presentan",
+        "os puntos seguintes e seleccionar aqueles criterios de avaliación do currículo que se axusten á",
+        "inalidade buscada, así como empregalos para verificar as aprendizaxes do alumnado e o seu nivel",
+        "e desempeño.",
+        "elación entre os obxectivos da materia de Bioloxía e Xeoloxía e as competencias clave a través",
+        "os descritores operativos do perfil de saída establecidos no anexo I",
+        "bxectivos",
+        "a materia",
+        "BX1",
+        "BX2",
+        "BX3",
+        "BX4",
+        "BX5",
+        "BX6",
+        "iñas de actuación no proceso de ensino e aprendizaxe",
+        "A énfase no desenvolvemento intelectual dos estudantes, axudándolles a pensar de forma",
+        "óxica sobre feitos da súa contorna a través da formulación de hipóteses e/ou de problemas;",
+        "a busca, selección e tratamento da información utilizando fontes fiables en diferentes for-",
+        "atos; da planificación e do desenvolvemento de investigacións; da realización de observa-",
+        "ións, ensaios pertinentes ou probas; da análise e interpretación de datos; da ordenación das",
+        "deas, comparación, xerarquización, explicación, xustificación e argumentación científica dun",
+        "contecemento; da comunicación da información de forma clara e ordenada e de forma res-",
+        "ectuosa cara a outras ideas e da relación dos contidos aprendidos nas distintas materias.",
+        "olo tanto, recoméndase un traballo interdisciplinar que favorecerá unha asimilación máis",
+        "rofunda da materia ao estender as súas raíces cara a outras ramas do coñecemento.",
+        "A proposta de proxectos variados baseada na resolución de problemas, investigación, innova-",
+        "ión e actividades indagatorias que incentiven o desenvolvemento das competencias, habili-",
+        "ades e actitudes tratando de evitar a acumulación e a memorización dos contidos científicos",
+        "que permitan a análise crítica dos problemas sociais actuais.",
+        "O fincapé no traballo práctico no laboratorio, por ser unha actividade específica da ensinanza",
+        "as ciencias que lle proporciona ao estudante un campo de probas onde se poden ampliar as",
+        "úas experiencias e modificar as súas ideas e interpretacións facéndoas máis coherentes co",
+        "oñecemento científico e, ademais, posibilita a súa conexión coa realidade.",
+        "Situacións de aprendizaxe, actividades ou tarefas cun obxectivo claro e partindo dun problema",
+        "u realidade coñecida para pasar paulatinamente a unha idea máis abstracta e máis complexa.",
+        "igualmente relevante que estas actividades demanden do alumnado a súa aplicación nunha",
+        "ariedade de contextos significativos e auténticos.",
+        "A proposta de favorecer a capacidade do estudante para aprender por si mesmo reforzando a",
+        "utoestima, a reflexión e a responsabilidade.",
+        "O incentivo da axuda mutua e da aprendizaxe cooperativa para a realización das tarefas que",
+        "les permite ás alumnas e aos alumnos a análise, a expresión e a interpretación de pensamen-",
+        "os, sentimentos e feitos en distintos contextos sociais e culturais, así como o uso da linguaxe",
+        "ara regular a conduta e relacionarse cos demais.",
+        "A énfase na atención á diversidade co uso de métodos que teñan en conta os diferentes ritmos",
+        "a prevención das dificultades de aprendizaxe, ademais da posta en práctica de mecanismos",
+        "e reforzo e estratexias de regulación emocional tan pronto como se detecten estas dificul-",
+        "ades.",
+        "O estímulo dunha avaliación autorreguladora, é dicir, que se realice de forma continua ao",
+        "ongo de todo o proceso de ensino e de aprendizaxe permitindo a modificación e a readapta-",
+        "ión da dinámica e das actividades de aula en función das necesidades do alumnado e do con-",
+        "exto."
+      ],
+      "codigos_items": [
+        "6.1",
+        "6.2",
+        "6.3",
+        "6.4",
+        "6.5",
+        "6.6",
+        "6.7",
+        "6.8",
+        "6.9",
+        "6.10",
+        "6.11",
+        "6.12",
+        "6.13",
+        "6.14",
+        "6.15",
+        "6.16",
+        "6.17",
+        "6.18",
+        "6.19",
+        "6.20",
+        "6.21",
+        "6.22",
+        "6.23",
+        "6.24",
+        "6.25",
+        "6.26",
+        "6.27",
+        "6.28",
+        "6.29",
+        "6.30",
+        "6.31",
+        "6.32",
+        "6.33",
+        "6.34",
+        "6.35",
+        "6.36",
+        "6.37",
+        "6.38",
+        "6.39",
+        "6.40",
+        "6.41",
+        "6.42",
+        "6.43",
+        "6.44",
+        "6.45",
+        "6.46",
+        "6.47",
+        "6.48",
+        "6.49",
+        "6.50",
+        "6.51",
+        "6.52",
+        "6.53",
+        "6.54",
+        "6.55",
+        "6.56",
+        "6.57",
+        "6.58",
+        "6.59",
+        "6.60",
+        "6.61",
+        "6.62",
+        "6.63",
+        "6.64"
+      ]
+    }
+  ],
+  "comunidad": "galicia",
+  "idioma": "gl"
+}
