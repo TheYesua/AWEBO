@@ -1,0 +1,170 @@
+{
+  "materia_oficial": "TEKNOLOGIAKO ETA DIGITALIZAZIOKO HASTAPENAK",
+  "materia": "Teknologiako eta Digitalizazioko Hastapenak",
+  "etapa": "ESO",
+  "ciclo": "Único",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Erronka teknologiko errazei autonomiaz eta jarrera sortzailez heltzea, diziplinarteko ezagutzak aplikatuz eta modu antolatuan eta kooperatiboan lan eginez, haietarako irtenbideak eraginkortasunez diseinatzeko, planifikatzeko eta garatzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Diziplinarteko hainbat teknika eta ezagutza behar bezala aplikatzea, zenbait iturritatik etorritako informazio egokia bilatuz eta hautatuz eta tresna egokiak erabiliz, irtenbide teknologiko iraunkorrak eraikitzeko edo fabrikatzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Problema teknologiko edo digital errazetarako ideiak edo irtenbideak deskribatzea, irudikatzea eta trukatzea, terminologia eta euskarri egokiak erabiliz, informazioa eta proposamenak komunikatzeko eta zabaltzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Algoritmo sinpleak garatzea, blokekako programazio-lengoaiak erabiliz eta pentsamendu konputazionalaren printzipioak aplikatuz, problema errazetarako irtenbideak sortzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Beren ikaste-ingurune digitaleko ohiko gailu eta aplikazioen funtzionamendu-oinarriak ulertzea, euren beharretara egokituz, problema tekniko errazak ebazteko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Trebetasun pertsonalak eta sozialak garatzea, norberaren eta besteen indarrak eta ahuleziak ezagutuz, esleitutako rolak izango dituzten lantalde heterogeneoetan aktiboki parte hartuz, teknologiako eta digitalizazioko ikasle gisa identitate positiboa eraikitzeko, ongizate pertsonala sustatzeko eta ikasleek beren ikaskuntza hobetzea ahalbidetuko dituzten harreman osasungarriak sortzeko.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Zehaztutako problemetarako irtenbide errazak asmatzea eta diseinatzea, diziplinarteko kontzeptuak, teknikak eta prozedurak jarrera eraikitzaileaz aplikatuz."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Materialak eta tresnak hautatzea, planifikatzea eta antolatzea, baita planteatutako problema bati irtenbidea emateko behar diren zereginak ere, banaka edo taldean lan eginez, modu kooperatiboan eta gainerako parte-hartzaileekiko errespetuz."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Planteatutako problemak edo beharrak zehaztea, zenbait iturritatik etorritako informazioa modu kritiko eta seguruan bilatuz eta kontrastatuz, eta horien fidagarritasuna eta egokitasuna ebaluatuz."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Materialak manipulatuta eta konformatuta objektuak edo modeloak fabrikatzea, erreminta eta makina egokiak erabiliz, egituren, mekanismoen eta elektrizitatearen oinarriak aplikatuz eta segurtasun- eta osasun-arauak errespetatuz."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Produktu bat sortzeko prozesua irudikatzea eta jakinaraztea, hura diseinatzen denetik hedatzen den arte, tresna digitalen laguntzaz dokumentazio teknikoa landuz eta formatu eta hitz tekniko egokiak erabiliz."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Algoritmoen eta fluxu-diagramen bidez oinarrizko informatika-problemetarako irtenbideak interpretatzea eta diseinatzea, programazio-elementu eta -teknika egokiak aplikatuz."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Algoritmo sinpleak programatzea, blokekako programazio-elementuak egoki erabiliz eta edizio-tresnak baliatuz."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Arazo errazak ebazteko, egunero erabili ohi diren gailu digitalak eraginkortasunez eta segurtasunez erabiltzea, datuak eta ekipoak babesteko neurriak hartuz."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Edukiak sortzea eta materialak prestatzea, ikaste-inguruneko ohiko tresna digitalak behar bezala konfiguratuz, beren beharretara egokituz eta egile-eskubideak errespetatuz."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "5",
+      "descripcion": "Informazioa modu egituratuan antolatzea, biltegiratze seguruko teknikak aplikatuz."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Norberaren emozioak kudeatzea eta jarrera positiboa erakustea, teknologiak ikasteko egoerei aurre egiteko."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Talde-lanean aktiboki laguntzea eta harreman positiboak eraikitzea, modu eraginkorrean komunikatuz, modu kritikoan eta sortzailean pentsatuz, eta erabaki eta irizpen informatuak hartuz."
+    },
+    {
+      "codigo": "6.3",
+      "competencia": "6",
+      "descripcion": "Taldean egin beharreko lanen banaketan parte hartzea, inklusioa, entzute aktiboa eta emakumeen ahalduntzea bultzatuz, esleitutako rola hartuz eta taldeari egiten zaion ekarpenaz arduratuz."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Problemak ebazteko prozesua",
+      "titulo": "Problemak ebazteko prozesua",
+      "items": [
+        "Problemak ebazteko prozesuak: estrategiak, teknikak eta faseak.",
+        "Produktu eta sistema teknologikoen analisia.",
+        "Oinarrizko sistema mekanikoak eta elektrikoak. Muntaketa fisiko sinpleak.",
+        "Manipulatzeko eta mekanizatzeko erremintak eta teknikak.",
+        "Segurtasun- eta higiene-arauekiko errespetua.",
+        "Teknologia iraunkorra. Garapen iraunkorreko helburuak lortzeko egindako ekarpenaren balorazio kritikoa."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Ideien komunikazioa eta hedapena",
+      "titulo": "Ideien komunikazioa eta hedapena",
+      "items": [
+        "Planoak eta objektuak irudikatzeko 2Dko eta 3Dko CAD aplikazioak.",
+        "Dokumentazio teknikoa lantzeko, argitaratzeko eta hedatzeko tresna digitalak. Hiztegi tekniko egokia."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Pentsamendu konputazionala",
+      "titulo": "Pentsamendu konputazionala",
+      "items": [
+        "Pentsamendu konputazionaleko hastapenak.",
+        "Algoritmo sinpleak.",
+        "Blokekako programazioa."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Ikaste-ingurune pertsonalaren digitalizazioa",
+      "titulo": "Ikaste-ingurune pertsonalaren digitalizazioa",
+      "items": [
+        "Gailu digitalak. Hardwarearen eta softwarearen elementuak. Erabilera segurua. Identitate digitala.",
+        "Ikasteko tresnak eta plataformak. Konfigurazioa, mantentzea eta erabilera kritikoa.",
+        "Edukiak editatzeko eta sortzeko tresnak. Informazioaren erabilera arduratsua eta informazioa tratatzeko, antolatzeko eta modu seguruan biltegiratzeko teknikak."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "E",
+      "bloque": "E. Zentzu sozioemozionala",
+      "titulo": "Zentzu sozioemozionala",
+      "items": [
+        "Problema teknologikoak konpontzeko jakin-minaren, ekimenaren eta pertseberantziaren sustapena, ikaskuntzan esku hartzen duten emozioak ezagutuz.",
+        "Talde-lana optimizatzeko teknika kooperatiboak. Gatazkak kudeatzeko jokabide enpatikoen eta estrategien erabilera.",
+        "Jarrera inklusiboen sustapena eta ikasgelan eta gizartean dagoen aniztasunaren onarpena."
+      ],
+      "codigos_items": []
+    }
+  ],
+  "comunidad": "pais-vasco",
+  "idioma": "eu"
+}

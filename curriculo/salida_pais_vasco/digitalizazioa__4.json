@@ -1,0 +1,251 @@
+{
+  "materia_oficial": "DIGITALIZAZIOA",
+  "materia": "Digitalizazioa",
+  "etapa": "ESO",
+  "ciclo": "Único",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "4º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Problema tekniko sinpleak identifikatu eta ebaztea eta gailuak etxeko sareetan konektatu eta konfiguratzea, hardware-ezagutzak eta sistema eragileak aplikatuz, eguneroko erabilerako tresna eta instalazio informatikoak eta komunikaziokoak kudeatzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Pentsamendu konputazionalaren printzipioak erabiltzea egoera eta arazo zehatzak modu eraginkor, sortzaile eta berritzaile batean konponduko dituzten algoritmoak eta aplikazio informatikoak diseinatu eta garatzeko, programazio-hizkuntza sinple bat erabiliz.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Ikasteko ingurune pertsonala (PLE) konfiguratzea, elkarreraginez eta esparru digitaleko baliabideak baliatuz, etengabeko ikaskuntza optimizatzeko eta kudeatzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Ongizate digitala sustatuko duten ohiturak hartzea, prebentzio- eta zuzenketa-neurriak aplikatuz, gailuak, datu pertsonalak, osasuna bera eta ingurumena babesteko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Herritartasun digital kritikoa eta aktiboa agertzea, teknologia digitalek gizartearen hainbat esparrutan egindako ekarpena aitortuz, sarean egin daitezkeen ekintzak ezagutuz eta haien ondorioak identifikatuz, teknologiari erabilera aktiboa, arduratsua eta etikoa emateko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Ideia, proposamen edo soluzio digitalak hainbat forotan bakarka eta taldean adieraztea, komunikatzea eta hedatzea, hizkuntza-egitura eta terminologia tekniko egokiak eta eskuragarri dauden baliabideak erabiliz eta informazioa partekatzeko eta talde-lana sustatzeko beharrezkoak diren elementuak eta teknikak aplikatuz.",
+      "descriptores": []
+    },
+    {
+      "codigo": "7",
+      "descripcion": "Trebetasun pertsonalak eta sozialak garatzea, norberaren eta besteen indarrak eta ahuleziak ezagutuz eta emozioak eta esperientziak eraginkortasunez identifikatuz eta kudeatuz, ongizate pertsonala sustatzeko eta ikasleei ikaskuntza hobetzea eta zehaztutako helburuak lortzea ahalbidetuko dieten harreman osasungarriak sortzeko.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Sistema eragileak instalatzea eta mantentzea, haien ezaugarriak premia pertsonalen arabera konfiguratuz."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Problema tekniko sinpleak ebaztea, gailu digitalen osagaiak eta funtzioak aztertuz, materialak berrerabiliz, konponbideak kritikoki ebaluatuz eta, beharrezkoa izanez gero, prozedura birformulatuz."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Problema informatikoetarako sormenezko konponbideak deskribatzea, interpretatzea eta diseinatzea algoritmoen eta fluxu-diagramen bidez."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Pentsamendu konputazionalaren printzipioak aplikatzea problemak ebazteko, problema zati sinpleagoetan deskonposatuz, patroiak ezagutuz eta abstrakzioa algoritmoak diseinatzeko oinarri gisa erabiliz."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Hainbat gailutarako aplikazio sinpleak programatzea, programazio-elementuak modu egokian erabiliz eta hainbat edizio-tresna erabiliz."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Ikaskuntza esparru digitalean kudeatzea, ikasteko ingurune pertsonala (PLE) konfiguratuz, baliabide digitalak modu autonomoan integratzearen bidez."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Informazioa premien arabera bilatzea eta hautatzea, ikasteko ingurune pertsonaleko tresnak zentzu kritikoarekin erabiliz."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Eduki digitalak bakarka edo taldean sortzea, integratzea eta berregitea, ezagutza eta eduki digital berriak modu sormenezkoan sortzeko tresnarik egokienak hautatuz."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "3",
+      "descripcion": "Komunikazio-espazio birtualetan eta elkarlaneko ikaskuntzako plataformetan elkarreragitea, informazioa eta datuak partekatuz eta argitaratuz, eta hainbat pertsona motatara parte hartzeko jarrera batekin egokituz."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Datu pertsonalak eta interneten sortutako aztarna digitala babestea, sare sozialen eta lan-espazio birtualen pribatutasun-baldintzak konfiguratuz."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Ohiko erabilerako gailu digitaletan pasahitzak, sistema eragileak eta antibirusak aldizka konfiguratzea eta eguneratzea."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Sarean mehatxua dakarten egoerak identifikatzea eta haien aurrean erantzuten jakitea, hainbat aukeraren artean konponbiderik onena aukeratuz eta ongizate pertsonala eta kolektiboa baloratuz."
+    },
+    {
+      "codigo": "4.4",
+      "competencia": "4",
+      "descripcion": "Teknologia digitalek ingurumenean duten inpaktua identifikatzea eta txikiagotzea, energia aurrezteko ohiturak hartuz eta teknologia horiei erabilera iraunkorra emanez."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Datuak eta tresna digitalak etikoki erabiltzea, etiketa digitalari buruzko arauak aplikatuz eta sareko komunikazioan, kolaborazioan eta parte-hartze aktiboan erabilera-lizentziak eta jabetza intelektualekoak errespetatuz."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Teknologia digitalek gizartearen hainbat esparrutan egindako ekarpenak ezagutzea, bereziki emakumeek egin duten ekarpena baloratuz (haien bokazio zientifiko-teknologikoa sustatzeko) eta hainbat kolektibok teknologia horiek eskuratu, erabili eta baliatzeko jasaten duten eten digitalaz (ekonomikoaz, geografikoaz, generoari lotutakoaz, hizkuntzari lotutakoaz eta abar) jabetuz."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "5",
+      "descripcion": "Konektatutako baliabide digitalek adierazteko eskaintzen duten aukeraren, erraztasunaren eta askatasunaren garrantzia baloratzea, jasotzen diren mezuak kritikoki aztertuz eta haien objektibotasuna, ideologia, asmoa, alborapenak eta iraungitzea kontuan hartuz."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Proposamen edo konponbide teknikoak eraginkortasunez aurkeztea eta zabaltzea, diskurtsoaren hizkuntza-egitura, hiztegi tekniko, intonazio, espresio, denboraren kudeaketa eta egokitzapen egokia eta hizkuntza inklusiboa eta ez-sexista erabiliz eta kultura-aniztasuna eta hura adierazteko moduak errespetatuz."
+    },
+    {
+      "codigo": "7.1",
+      "competencia": "7",
+      "descripcion": "Erronka digitalei aurre egitean norberaren emozioak identifikatzea eta kudeatzea, autokontzientzia eta identitate-zentzua garatuz eta estres-iturriak ezagutuz."
+    },
+    {
+      "codigo": "7.2",
+      "competencia": "7",
+      "descripcion": "Digitalizazioajakintzagaiko ikaskuntza-egoerei aurre egitean pertseberantzia eta motibazio positiboa agertzea, kritika arrazoitua onartuz."
+    },
+    {
+      "codigo": "7.3",
+      "competencia": "7",
+      "descripcion": "Aktiboki laguntzea eta harremanak eraikitzea, talde heterogeneoetan lan eginez, elkarren artean modu eraginkorrean komunikatuz, modu kritiko eta sormenezkoan pentsatuz eta erabaki adostuak eta informatuak hartuz, ikasitako edukiak aplikatzea dakarten problemak ebazteko."
+    },
+    {
+      "codigo": "7.4",
+      "competencia": "7",
+      "descripcion": "Taldean egin beharreko zereginen banaketan parte hartzea, inklusioa eta entzute aktiboa praktikan jarriz, esleitutako rola bere gain hartuz eta egin beharreko ekarpenaz arduratuz."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Gailu digitalak, sistema eragileak, komunikazio-sistemak eta pentsamendu konputazionala",
+      "titulo": "Gailu digitalak, sistema eragileak, komunikazio-sistemak eta pentsamendu konputazionala",
+      "items": [
+        "Ordenagailuen arkitektura: elementuak, muntaia, konfigurazioa eta problemen ebazpena.",
+        "Sistema eragileak: instalazioa eta erabiltzaile-konfigurazioa.",
+        "Algoritmoak eta fluxu-diagramak.",
+        "Algoritmoak interpretatu eta aldatzeko estrategien identifikazioa.",
+        "Gailu mugikorretarako eta webgunerako aplikazio sinpleak, errealitate birtuala, areagotua eta mistoa.",
+        "Komunikazio-sistemak eta internet. Sareko gailuak eta funtzionamendua. Etxeko sare bat konfiguratzeko eta gailuak konektatzeko prozedura.",
+        "Konektatutako gailuak (IoT+Wearableak). Gailuen konfigurazioa eta konexioa.",
+        "Materialen berrerabilera eta energia aurrezteko ohituren sustapena."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Ikasteko ingurune pertsonalaren (PLE) digitalizazioa",
+      "titulo": "Ikasteko ingurune pertsonalaren (PLE) digitalizazioa",
+      "items": [
+        "Ikasteko ingurune pertsonaren kudeaketa eta konfigurazio autonomoa.",
+        "Informazioaren bilaketa eta hautaketa.",
+        "Eduki digitalen edizioa eta sorkuntza, bakarka eta taldean, tresnarik egokienak erabiliz.",
+        "Sareko komunikazioa eta kolaborazioa.",
+        "Argitalpen eta hedapen arduratsua sareetan."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Segurtasun eta ongizate digitala",
+      "titulo": "Segurtasun eta ongizate digitala",
+      "items": [
+        "Gailuen segurtasuna. Gailuen aurkako arrisku, mehatxu eta erasoei aurre egiteko prebentzio- eta zuzenketa- neurriak.",
+        "Datuen segurtasuna eta babesa. Identitatea, ospea, probatutasuna et aztarna digitala. Prebentzio- neurreiak. Konfigurazioa sare sozialetan. Identitate birtualen kudeaketa.*.",
+        "Segurtasuna osasun fisiko eta mentalean.",
+        "Ongizate pertsonalaren aurkako mehatxuak eta arriskuak. Erantzuteko aukerak. Sareko indarkeria- eta arrisku-egoerak.",
+        "Ingurumenaren segurtasuna: teknologia digitalen erabilera iraunkorra."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Herritartasun digital kritikoa",
+      "titulo": "Herritartasun digital kritikoa",
+      "items": [
+        "Sareko elkarreragitea: adierazpen-askatasuna, etiketa digitala, jabetza intelektuala eta erabilera-lizentziak.",
+        "Hezkuntza mediatikoa: kazetaritza digitala, blogosfera, komunikazio-estrategiak eta sarearen erabilera kritikoa, albiste faltsuak eta iruzurrak detektatzeko tresnak.",
+        "Administrazio-kudeaketak: online zerbitzu publikoak, erregistro digitalak eta ziurtagiri ofizialak.",
+        "Merkataritza elektronikoa: faktura digitalak, ordaintzeko moduak eta kriptodirua.",
+        "Etika datu eta tresna digitalak erabiltzean: adimen artifiziala, alborapen algoritmikoak eta ideologikoak, zaharkitze programatua eta burujabetza teknologikoa.",
+        "Online aktibismoa: herritarren ekimeneko eta ziberboluntariotzako plataformak eta hardware- eta software-komunitate libreak.",
+        "Emakumeek konpetentzia digitalen garapenari egindako ekarpena.",
+        "Kultura-aniztasunaren balorazioa.",
+        "Ekomunikazioa eta hedapena Ideien, kontzeptuen edo emaitzen aurkezpena eta hedapena, komunikazio eraginkorra eta hizkuntza teknikoa erabiliz eta ahozko adierazpena, intonazioa, gorputz-hizkuntza eta aurkezpen-denbora kontuan hartuta, eta hainbat forotarako egokitzapena, hizkuntza inklusiboa eta estereotipo sexistarik gabea erabiliz eta kultura-aniztasuna eta hura adierazteko moduak errespetatuz."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "F.1",
+      "bloque": "F.1. Zentzu sozioemozionala · Sinesmenak, jarrerak eta emozioak",
+      "titulo": "Zentzu sozioemozionala · Sinesmenak, jarrerak eta emozioak",
+      "items": [
+        "Problema teknologikoak eta digitalak ebazteko sormena, ekimena, pertseberantzia eta erresilientzia.",
+        "Ikaskuntzan esku hartzen duten emozioen (hala nola autokontzientziaren, autoerregulazioaren eta pertseberantziaren) kudeaketa estereotipatu gabea eta egokia.",
+        "Malgutasun kognitiboaren garapen egokia, beharrezkoa denean estrategia-aldaketa bat bilatuz eta hutsegitea ikasteko aukera bihurtuz."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "F.2",
+      "bloque": "F.2. Zentzu sozioemozionala · Talde-lana eta erabakiak hartzeko jarraibideak",
+      "titulo": "Zentzu sozioemozionala · Talde-lana eta erabakiak hartzeko jarraibideak",
+      "items": [
+        "Erantzukizunak bere gain hartzeko jarraibideak eta parte-hartze aktiboa eta bidezkoa, talde-",
+        "lana optimizatzeko.",
+        "Gatazkak konpontzeko laguntza eskatu, eman eta kudeatzeko prestasuna.",
+        "Erantzukizunak genero-alborapenik gabe hartzeko jarraibideak, taldearen helburuak lortzeko.",
+        "Emakumeen ahalduntzea eta agerikotasuna erantzukizun- eta lidergo-roletan."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "F.3",
+      "bloque": "F.3. Zentzu sozioemozionala · Inklusioa, errespetua eta aniztasuna",
+      "titulo": "Zentzu sozioemozionala · Inklusioa, errespetua eta aniztasuna",
+      "items": [
+        "Jarrera inklusiboen aplikazioa eta ikasgelan eta gizartean dagoen aniztasunaren onarpena.",
+        "Jokabide enpatiko eta asertiboen eta gatazkak konpontzeko estrategien erabilera ingurune analogiko eta digitaletan."
+      ],
+      "codigos_items": []
+    }
+  ],
+  "comunidad": "pais-vasco",
+  "idioma": "eu"
+}

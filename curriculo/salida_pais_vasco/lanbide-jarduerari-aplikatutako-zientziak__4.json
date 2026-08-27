@@ -1,0 +1,202 @@
+{
+  "materia_oficial": "LANBIDE-JARDUERARI APLIKATUTAKO ZIENTZIAK",
+  "materia": "Lanbide-jarduerari Aplikatutako Zientziak",
+  "etapa": "ESO",
+  "ciclo": "Único",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "4º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Jarduera esperimentalak eta ikerketa-proiektuak egitea, zientziaren berezkoak diren metodologiak erabiliz, kasu praktiko errealak testuinguruan lantzeko eta erabaki arduratsuak hartu ahal izateko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Lanbide-inguruneko ekintza jakin batzuek osasunean eta ingurune natural eta sozialean dituzten ondorioak aztertzea, funts zientifikoetan oinarrituz, osasun indibiduala eta kolektiboa hobetzen duten, ingurumen-inpaktu negatiboak saihestu edo txikiagotzen dituzten eta garapen iraunkorrarekin bateragarriak diren ohituren garrantzia baloratzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Zientziak eta aurrerapen teknologikoek emandako ezagutza baliabide naturalak zaindu eta babesteko erabiltzea, baliabideen erabilera iraunkorraren oinarri izango diren prebentzio-tresnak baliatuz, garapen iraunkorraren alde aktiboki eta arduraz parte hartzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Informazio eta datu zientifikoak bilatu, interpretatu eta transmititzea, aldez aurretik haien egiazkotasuna egiaztatuz eta ahozko hizkuntza eta/edo hizkuntza grafiko egokia erabiliz, formatu analogiko eta digitalean, ingurune sozial eta profesionalari buruzko ezagutza zientifikoak eskuratzeko eta finkatzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "I+G+B kontzeptua, haren bilakaera eta sustatzen duten organismoak aztertzea, ekoizpen-sistemetan duen garrantzia deskribatuz, ekoizpen-sektoreen (eta, batez ere, Euskal Autonomia Erkidegokoen) iraunkortasunean, kalitatean eta lehiakortasunean duen eragina baloratzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Askotariko taldeetan, ikerketa zientifikoan berdinen artean hazteko aukera bultzatzea ahalbidetuko duten kooperazio- eta/edo kolaborazio-estrategiak erabiltzea, genero-ikuspegia kontuan hartuz, esparru pertsonalean, lan-arlokoan eta sozialean ekintzailetza zientifikoa sustatzeko.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Egiaztatu edo kontrastatu daitezkeen galderak eta hipotesiak planteatzea, metodo zientifikoak erabiliz."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Esperimentuak egitea eta datu kuantitatiboak edo kualitatiboak hartzea, tresna eta teknika egokiak zuzentasunez eta doitasunez erabiliz."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Egindako praktiketan lortutako emaitzak interpretatu eta aztertzea, ondorio arrazoituak eta oinarrituak lortuz edo hori egiteko ezintasuna baloratuz."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "1",
+      "descripcion": "Kolaborazioak ezartzea lan zientifikoaren faseetan beharrezkoa denean, kooperazioak eta inklusioak ikerketan duten garrantzia baloratuz."
+    },
+    {
+      "codigo": "1.5",
+      "competencia": "1",
+      "descripcion": "Lortutako informazioa eta ondorioak garbi eta zorrotz aurkeztu eta komunikatzea, baliabide egokien bidez: infografiak eta posterrak, formatu analogiko eta/edo digitalean."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Kutsatzaile motarik adierazgarrienak, haiek atmosferan, uretan eta lurzoruan dituzten ondorioak eta industria-jardueraren, nekazaritza-jardueraren eta erradioaktibitatearen ondoriozkoak zehaztea, bidezkoak diren laborategiko saiakuntzak erabiliz."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Ekintza jakin batzuek organismoetan eta ingurune naturalean dituzten ondorioak ebaluatzea eta eskuratutako ezagutzetan eta eskuragarri dagoen informazioan oinarritutako ohitura osasungarriak eta iraunkorrak proposatzea."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Baliabide naturalen kontserbazioa, zaintza eta babesa errazten duten aurrerapen teknologikoak identifikatzea, haien inpaktu positiboak baloratuz."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Jarduera jakin batean sortzen diren hondakin motak identifikatzea, haiek kudeatu, biltegiratu, birziklatu eta desagerrarazteko irtenbideak adieraziz, produktu motaren arabera."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Baliabideen kudeaketa iraunkorra egiten eta ingurumen-inpaktuak murrizten lagunduko duten estrategiak proposatzea, ezagutza zientifikoa eta/edo aurrerapen teknologikorik egokienak erabiliz."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "3",
+      "descripcion": "Garapen iraunkorraren alde aktiboki eta arduraz parte hartzea, baliabideen erabilera iraunkorraren oinarri izango diren prebentzio-tresnak erabiliz."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Informazio zientifikoa garbi eta koherentziaz antolatu eta komunikatzea, lexiko zientifiko-teknikoa eta formaturik egokiena behar bezala erabiliz."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Lanbide-jardueran agertzen den informazio zientifikoa aztertu eta interpretatzea, informazio zientifikoen eta ez-zientifikoen aurrean jarrera kritikoa agertuz."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Iturri fidagarriak behar bezala erabili eta aipatzea, ikaskuntza propioa eta kolektiboa hobetzeko edukiak kontsultatzean eta sortzean informazio zientifiko garrantzitsua hautatuz. 5. konpetenzia espezifikoa"
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "I+G+B prozesuen garrantzia argudiatzea, ekoizpen-sektoreen kalitatea eta lehiakortasuna hobetzeko prozesuak baloratuz."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "I+G+Baren ildorik berrienetako batzuk deskribatzea, informazioaren eta komunikazioaren teknologiak erabiliz."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Zientziak gizarteari egindako ekarpena eta zientzia garatu duten gizonen eta emakumeen lana justifikatzea, ikerketa zientziaren, teknologiaren, gizartearen eta ingurumenaren arteko interakzioaren ondorioz etengabe bilakatzen ari den lan kolektibotzat hartuz."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Interakzio konstruktiboak eta hezkidetza-interakzioak ezartzea eta erantzukizunak bere gain hartzea, kooperazio- eta kolaborazio-jardueren bidez."
+    },
+    {
+      "codigo": "6.3",
+      "competencia": "6",
+      "descripcion": "Talde batean zereginak, baliabideak eta erantzukizunak zuzentasunez bere gain hartzea, enpatia eta tolerantzia sustatuz."
+    },
+    {
+      "codigo": "6.4",
+      "competencia": "6",
+      "descripcion": "Enpresa, erakunde edota herrialde desberdinetan atxikitako taldeen arteko kolaborazioaren garrantzia justifikatzea, lotutako faktore positiboak aztertuz (ekonomikoak, sozialak, iraunkorrak...)."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "1. Laborategiko kalitatea eta segurtasuna",
+      "titulo": "Laborategiko kalitatea eta segurtasuna",
+      "items": [
+        "Laborategia: antolaketa eta materialak. Tresnak. Desinfekzioa eta esterilizazioa.",
+        "Ohiko produktu kimikoak. Etiketen interpretazioa. Erreaktiboen manipulazioa eta garraioa. Piktogramak.",
+        "Lagin biologikoen manipulazioa.",
+        "Substantzia kimikoen arriskua: arrisku fisikoak, osasunerako arriskuak eta ingurumenerako arriskuak.",
+        "Laborategian sortutako hondakinen tratamendua.",
+        "Laborategiko segurtasun eta higienearen inguruko arauak eta jarrerak. Babes-ekipamendurik ohikoenak.",
+        "Lehen sorospen teknikak. Jarduketa proaktiboak larrialdi-egoeren aurrean."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "2",
+      "bloque": "2. Laborategiko teknikak",
+      "titulo": "Laborategiko teknikak",
+      "items": [
+        "Esperimentazio-teknikak Fisikan, Kimikan, Biologian eta Geologian.",
+        "Magnitudeak (bolumena, masa, tenperatura eta abar) neurtzeko eta/edo substantziak identifikatzeko saiakuntza fisikoak eta kimikoak.",
+        "Nahasteak eta substantzia puruak. Disoluzioak. Konzantrazioa. Disoluzioak prestatzeko metodoak..",
+        "Substantziak bereizi eta arazteko teknikak: iragazketa, destilazioa, kristalizazioa, zentrifugazioa, dekantazioa, erauzpena eta kromatografia.",
+        "Elikagaietan biomolekulak identifikatzeko teknikak.",
+        "Erreakzio kimikorik ohikoenak. Azido-base erreakzioak: adierazleak, pH-aren neurria. Erredox erreakzioak: elektrolisia eta korrosioa. Erreakzio kimikoen aplikazioak.",
+        "Eguneroko desinfekzio-prozesuetarako teknika eta tresna egokien aukeraketa eta deskribapena. Industrian eta baliabide profesionaletan duten aplikazioa.",
+        "Kolaborazioa eta kooperazioa ikerketa zientifikoko lan bat lantzean eta egitean: (galderaren edo arazoaren analisia, hainbat iturritatik lortutako datuen hautaketa, hipotesien aurkezpena eta egiaztapena esperimentazioaren bidez, eta emaitzen analisia).",
+        "Prozedura esperimentalen analisia eta zerrenda, industria-arloan edo zerbitzu-arloan duten aplikazioarekin.",
+        "Zientziak inguruneko lanbide-jardueretan dituen aplikazioen ezagutza.",
+        "IKT tresnen erabilera laborategiko lan esperimentalerako. Simulazioak. Urruneko laborategiak."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "3",
+      "bloque": "3. Zientzia garapen iraunkorraren zerbitzura",
+      "titulo": "Zientzia garapen iraunkorraren zerbitzura",
+      "items": [
+        "Kutsadura: kontzeptua eta motak.",
+        "Industria-jarduerako eta nekazaritza-jarduerako kutsatzaileak eta lurzoruan dituzten ondorioak.",
+        "Ura kutsatzen duten agenteak eta haien tratamendua.",
+        "Atmosferaren kutsatzaile motak bereizteko estrategiak, eta kutsadura atmosferikoaren arrazoiak eta ondorioak.",
+        "Erradioaktibitateak ingurumenean eta gizateriaren etorkizunean dituen ondorioak.",
+        "Hondakinak bereizteko eta kudeatzeko faseak. Baliabide materialen birziklatzea eta berrerabilera.",
+        "Euskal Autonomia Erkidegoan garapen iraunkorrari begira egiten diren ingurumen-estrategiak.",
+        "4. multzoa: Ikerketa, Garapena eta Berrikuntza (I+G+B) “Ikerketa”, “garapen” eta “berrikuntza” kontzeptuak.",
+        "I+G+B zikloa: 3 etapen arteko erlazioa: ikerketa, garapena eta berrikuntza. Ekonomia zirkularra.",
+        "Produktu eta prozesuen berrikuntza motei buruzko ikerketa. I+G+Bak egungo gizartean duen eragina eta garrantzia .",
+        "Euskal Autonomia Erkidegoan I+G+Ba sustatzen duten organismoak eta administrazioak.",
+        "Enpresen eta erakundeen berdintasun-planen analisia."
+      ],
+      "codigos_items": []
+    }
+  ],
+  "comunidad": "pais-vasco",
+  "idioma": "eu"
+}

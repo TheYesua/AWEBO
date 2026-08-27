@@ -1,0 +1,243 @@
+{
+  "materia_oficial": "GEOGRAFIA ETA HISTORIA",
+  "materia": "Geografia eta Historia",
+  "etapa": "ESO",
+  "ciclo": "1º ESO y 2º ESO",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º ESO",
+    "2º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Gaur egun garrantzitsuak diren arazo geografiko, historiko eta sozialen inguruan ikertzea, argudiatzea eta hainbat formatuetan produktu propioak egitea, tokikotik globalera, informazioa bilatuz, aukeratuz, tratatuz eta antolatuz, eta iturri historikoak eta geografikoak erabiliz, ezagutzak eskuratzeko eta pentsamendu kritikoa garatzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Paisaiaren elementuak eta horiek sistema konplexu natural eta antropikoetan —landakoak eta hirikoak— duten artikulazioa identifikatzea eta aztertzea, baita denboran izan duten eboluzioa ere, eraldaketen kausak interpretatuz eta ekosistemetan dagoen oreka-maila baloratuz, ekosistema horien kontserbazioa, hobekuntza eta erabilera jasangarria sustatzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Sistema demokratikoak eta horien oinarrizko legeak eraikitzera —konstituzioak— iritsi arte Historian zehar izan diren antolaketa politiko motak azaltzea, komunitatean bizitzeak berezkoak ditugun betebeharrak eta eskubideak onartuz, herritarren parte-hartzea eta gizarte-kohesioa sustatzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Denboran zehar gizarte desberdinek izan dituzten erronka nagusiak ezagutzea, gertatutako aldaketen kausak eta ondorioak eta gaur egun konpondu behar dituzten arazoak identifikatuz, ikerketa- -proiektuak garatuz eta informazio-iturri fidagarriak erabiliz, errealitatea ulertzeko eta egungo erronken aurrean proposamen alternatiboak aintzat hartzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Joera demografikoak, eta bizi-zikloek eta bizimoduek historian zehar izan duten eboluzioa deskribatzea, egungo gizarteak osatu arte gertatu diren aldaketak eta jarraitutasunak kontuan hartuz, gizarte horiek bilakaera historikoaren ondorio direla ulertzeko, eta oinarriak izateko alternatiba osasungarriak, jasangarriak, aberasgarriak eta giza duintasunarekiko errespetuzkoak sustatzeko, baita gizartearekin eta ingurunearekin konpromisoa bultzatzeko ere.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Historian zehar izandako sistema ekonomikoak eta hauek izan dituzten garapen-prozesuak azaltzea, aurrerapenaren ideiaren esanahia baloratuz, gizartean, ingurumenean eta lurraldean dituzten ondorioekin batera, egungo mundu ekonomikoa eta bere nagusitasun-, mendetasun- eta mendekotasun- -harremanak ulertzeko, baita gizarte-eskubideen eta oinarrizkobaliabideen eskuratze unibertsalaren munta ulertzeko ere.",
+      "descriptores": []
+    },
+    {
+      "codigo": "7",
+      "descripcion": "Talde-identitateen jatorri eta kausa historikoak, eta horiek munduaren konfigurazio eta herentzia sozial, politiko eta kulturalerako elementu gisa duten eginkizuna ezagutzea, euren eboluzioa kritikoki aztertuz, gaur egun duten esanahia ulertzeko, gizatalde baten kide izatearen sentimenduak errespetatzeko, eta sortu eta sortzen duten ondare-aberastasuna eta legatu historiko eta kulturala baloratzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "8",
+      "descripcion": "Egungo kultura anitzeko errealitatea osatu duten prozesu geografikoak, historikoak eta kulturalak ezagutzea eta ulertzea, aniztasunaren aberastasuna aintzatetsiz eta berdintasunaren, inklusioaren eta gutxiengoekiko errespetuaren aldeko mugimenduen ekarpena baloratuz, diskriminazio mota oro saihesteko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "9",
+      "descripcion": "Zibilizazioek Historian zehar egin dituzten ekarpen kulturalak, artistikoak, zientifikoak eta pentsamenduzkoak ezagutzea eta balioestea, Euskal Herriari eta Espainiari arreta berezia eskainiz, mendebaldeko kulturaren erroak eta eraldaketak ulertzeko eta egungo edozein kulturaren adierazpenak errespetatzeko.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Egungo eta iraganeko prozesu eta gertaera historiko, geografiko eta sozial esanguratsuei buruzko informazioa modu gidatuan bilatzea, hautatzea, antolatzea eta komunikatzea, hainbat euskarritan aurkeztuz eta zereginaren helburuak kontuan hartuz."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Historiaurretik Aro Modernora arteko gai geografiko eta historikoei buruz modu kritikoan argudiatzea, banaka zein taldean, askotariko iturri fidagarriak kontrastatuz eta baloratuz, eta jakintzagaiaren berezko terminoak eta kontzeptuak egokiro erabiliz."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Lurreko zona klimatikoetako paisaia naturalak identifikatzea eta azaltzea, baita paisaia humanizatuak ere, bertako elementuen eta haien arteko erlazioen ikuspegi sistemiko eta integratzaile baten bidez."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Historiaurretik Aro Modernora arte, baliabideak ustiatzearen ondorioz, gizakiok naturaguneak nola eraldatu ditugun aztertzea, baita horrek populazioaren eboluzioarekin duen lotura ere, espazioen iraunkortasun- eta oreka-maila baloratuz, eta jasangarritasunaren aldeko ekintzen beharra aintzat hartuz."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Historiaurretik Aro Modernora arte bizikidetza eta elkarbizitza arautu dituzten mekanismoak identifikatzea, sortu diren antolaketa politikoko eredu nagusiak nabarmenduz, gaiaren ulermena islatuko duten produktuen bidez."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Antzinako Historiako, Erdi Aroko eta Aro Modernoko sistema politiko aipagarrienak adieraztea eta azaltzea, ondorengo demokrazien aurrekaritzat jotzen direnei arreta berezia eskainita, gure egungo gizarteko betebeharrak eta eskubideak bereiziz eta onartuz."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Historiaurretik Aro Modernora arteko aldaketa historiko garrantzitsuen prozesuak azaltzea, baita gizarte horiek izan zituzten erronka nagusiak ere, kausak eta ondorioak identifikatuz, hainbat lekutako gertaerak eta aldiak sekuentzia kronologikoen bidez erlazionatuz eta jakintzagaiaren berezko termino eta kontzeptu teknikoak erabiliz."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Geografia fisikoari, giza geografiari eta Historiari buruzko informazioa, historiaurretik aro modernora arte, egoki helaraztea, ahozko nahiz idatzizko hainbat komunikazio moten bidez, eta adierazpen grafiko, kartografiko eta bisualen bidez."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Portaera demografikoak, horien eboluzioa, izan dituzten aldaketak eta euren zikloak ezagutzea eta interpretatzea, munduan, Euskal Herrian eta Espainian gaur egun ditugun arazo eta erronka nagusiekin lotuz."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Historiaurretik Aro Modernoa arte ezagutzen diren bizi- -etapen eta bizimoduen ezaugarriak identifikatzea, gaur egungoekin konparatuz, bien arteko antzekotasunak eta ezberdintasunak bereiziz, horien ezagutzak eskaintzen duen aberastasuna baloratuz eta gure inguruan eta ingurune hartan osasungarria eta jasangarria denaren arteko distantzia hautemanez."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Historiaurretik Aro Modernora arte ezagutzen diren sistema ekonomikoak azaltzea, gizartean, lurraldean eta ingurumenean dituzten ondorio askotarikoekin batera, hazkunde- -erritmoak eta -zikloak daudela ulertuz."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Historiaurretik Aro Modernora bitarteko sistema ekonomikoek sortutako zenbait gatazka eta nagusitasun-, mendekotasun- eta dependentzia-harremanak identifikatzea, gizarte-eskubideen garrantziarekin eta gaur egun oinarrizko baliabideetarako eskubide unibertsalaren beharrarekin lotuz."
+    },
+    {
+      "codigo": "7.1",
+      "competencia": "7",
+      "descripcion": "Antzinaroan, erdi aroan eta aro modernoan garatu ziren kulturen eta zibilizazioen elementuak gaur egun arte eraiki diren talde-identitateekin lotzea, horiek zeintzuk diren identifikatuz eta kultura unibertsalari egiten dizkioten ekarpenei buruz hausnartuz."
+    },
+    {
+      "codigo": "7.2",
+      "competencia": "7",
+      "descripcion": "Mundu klasikoak, Erdi Aroak eta Aro Modernoak Europari egindako ekarpenak identifikatzea eta azaltzea, ondare historikoa, instituzionala, artistikoa eta kulturala europako herritarren ondare komun gisa aintzat hartuz eta balioetsiz, eta gizatalde baten kide izatearen sentimendu oro -erlijiosoa, nazionala…errespetatuz."
+    },
+    {
+      "codigo": "7.3",
+      "competencia": "7",
+      "descripcion": "Ondare artistiko, historiko eta kulturala babestu eta kontserbatzeko beharra argudiatzea, tokiko, autonomiako, nazioko, europako eta mundu osoko talde-identitatearen oinarri gisa onartuz."
+    },
+    {
+      "codigo": "8.1",
+      "competencia": "8",
+      "descripcion": "Antzinaroko, Erdi Aroko eta Aro Modernoko zibilizazioak osatu zituzten elementu sozial, historiko, kultural, instituzional eta erlijiosoak deskribatzea, haien sorrera eta garapena espazioan eta denboran kokatuz, eta kultura unibertsalari egindako ekarpen garrantzitsuenak identifikatuz."
+    },
+    {
+      "codigo": "8.2",
+      "competencia": "8",
+      "descripcion": "Jarrera ez-diskriminatzaileak erakustea eta aniztasun soziala eta multikulturala aintzat hartzea, inklusioa, gutxiengo etniko-kulturalen onarpena eta kolaborazioa baloratuz, gizarte-kohesioa bultzatzen duten balio gisa."
+    },
+    {
+      "codigo": "8.3",
+      "competencia": "8",
+      "descripcion": "Gizonen eta emakumeen benetako berdintasunaren alde argudiatzea, hainbat esparrutan emakumezko pertsonaia garrantzitsuek egindako ekarpena nabarmenduz eta baloratuz, eta edozein egoeratan generoagatiko edozein jarrera eta portaera diskriminatzaileren aurka jardunez."
+    },
+    {
+      "codigo": "9.1",
+      "competencia": "9",
+      "descripcion": "Antzinaroko, Erdi Aroko eta Aro Modernoko zibilizazioen ekarpen kulturalak, artistikoak, zientifikoak eta pentsamenduzkoak ezagutzea eta azaltzea, egungo kulturen erroak osatzen dituztenak adieraziz eta elkartasunaren, justiziaren, askatasunaren eta jasangarritasunaren gure kontzeptuarekin lotuz."
+    },
+    {
+      "codigo": "9.2",
+      "competencia": "9",
+      "descripcion": "Egungo euskal eta espainiar kulturen, eta historiaren prozesu handien arteko lotura identifikatzea eta testuinguruan kokatzea, historiaurretik aro modernora arte, elkarri egindako ekarpenak baloratuz."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Egungo munduaren erronkak",
+      "titulo": "Egungo munduaren erronkak",
+      "items": [
+        "1- Geografia Fisikoaren eta Historiaren sistematikarako sarrera: prozedurak, terminoak eta kontzeptuak.",
+        "2- Kokapen espaziala. Espazio geografikoaren irakurketa eta irudikapena: mapak, orientazioa eta eskalak.",
+        "3- Mapen, eskemen, irudien eta irudikapen grafikoen azterketa eta iruzkina, toki-esparrutik esparru globalera. Geografia Informaziorako Teknologiak (GIT).",
+        "4- Gailuen, informatika-aplikazioen eta plataforma digitalen erabilera, Geografia eta Historia aztertzeko. Komunikazio-sareen erabilera segurua.",
+        "5- Informazioaren bilaketa esparru digital eta analogikoetan, informazio horren irakurketa eta balorazio kritikoa eta hainbat formatutan produktu anitzen sorrera, ezagutza lantzeko bide gisa.",
+        "6- Lurrazala aldatzeko erak eta prozesuak:paisaia geografikoak.Erliebearen eraketa eta eraldaketa. Hidrosfera: zikloa, sailkapena eta giza jardueren gaineko eragina. Lurraren mugimenduak eta denborarekin eta klimarekin duten erlazioa. Datu meteorologikoak biltzeko eta grafikoak interpretatzeko metodoak.",
+        "7- Tokiko, eskualdeko eta munduko paisaia naturalak: paisaia-motak eta ezaugarriak.",
+        "8- Euskal Herriko ezaugarri naturalak (kokapen geografikoa, erliebe-formak, hidrografia, klima eta landaredia) penintsulako eta kontinenteko testuinguruan.",
+        "9- Arrisku eta hondamendi klimatikoak: klima-aldaketak gaur egun, iraganean eta etorkizunean. Giza jardueren eragina.",
+        "Hondamendi naturalen eta klima-aldaketaren ondorioen aurrean prebentzioa.",
+        "10- Natura-ondarearen oparotasuna eta balioa. Giza eragina ekosistemen aldaketan, iraganean eta gaur egun.Tokiko ingurunearen eta ingurune globalaren kontserbazioa eta hobekuntza.",
+        "11- Demografiako oinarrizko kontzeptuak. Datuen bilketa, irudikapena eta interpretazioa. Iraganeko eta egungo migrazio-",
+        "mugimenduak. Erronka demografikoak gaur egungo munduan.",
+        "12- Paisaia gizatiartua. Hiri-aglomerazioak eta landatartasuna. Hiriko bizitzaren erronkak eta landa-ingurunearen iraunkortasuna. landa-munduaren despopulazioaren eta hiri-gainpopulazioaren arazoak.",
+        "13- Landa- eta hiri-paisaia Euskal Herrian. Egoera demografikoa eta ekonomikoa, eta etorkizuneko arazo eta erronka nagusiak.",
+        "14- Antolakuntza ekonomikoa: baliabide, sektore, eskualde-merkatu eta merkataritza-politiken deskribapena. Potentzia politiko-ekonomikoen nazioarteko harremanak, kolaborazioa eta tentsioak.",
+        "15- Aberastasunaren kontzentrazioa eta banaketa. Zergen funtzioa. Bizitzeko gutxienekoaren auzia.",
+        "16- Emakumeen eta nesken papera egungo gizarteetan: hezkuntzarako eskubidea, lana eta boterea eskuratzeko aukerak eta haien kontrako diskriminazio-egoerak munduan zehar. Genero-rolak eta horien isla gizartearen eta kulturaren esparru guztietan.",
+        "17- Nazio Batuen Erakundea eta Garapen Jasangarrirako Helburuak, egungo munduaren dilemak eta kontraesanak; eta maila pertsonalean, toki-, estatu- eta mundu-mailan horiei aurre egiteko aukerak. Pentsamendu kritikoa iritzi propioak garapetzeko abiapuntu gisa."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Gizarteak eta lurraldeak",
+      "titulo": "Gizarteak eta lurraldeak",
+      "items": [
+        "1- Historiaren ezagutza eraikitzeko, ikerketako lan-metodologiei eta -teknikei buruzko sarrera: idatzizko iturri historikoak eta kultura materiala. Artxibo, liburutegi eta museoen eta legatu historiko eta kulturalaren esanahia eta azken horren garrantzia ondare kolektibo gisa.",
+        "2- Metodo zientifikoa eta historialarien ikerketak. Eskola historiografiko eta geografiko desberdinen existentziari buruzko sarrera, eta horrek dakartzan pentsamendu historikoaren metodologia anitzak.",
+        "3- Denbora-lerroen eraikuntza eta interpretazioa, linealtasun-, kronologia-, aldiberekotasun- eta iraupen-ikuspuntuen bidez prozesu historikoak ulertzeko.",
+        "4- Gizakiaren jatorria, lehen migrazio adierazgarriak eta Paleolitoko lehen gizarte eta kulturen sorrera.",
+        "5- Paleolitotik Neolitora: elikagaien ekoizpena, sedentarizazioa eta konplexutasun sozialaren areagotzea. Metalen Aroa.",
+        "Historiaurrearen aztarna Euskal Herrian.",
+        "6- Zibilizazioen sorrera: estatu-hirietatik Mesopotamiako eta Egiptoko lehen erresuma eta inperioetara.",
+        "7- Merkataritzaren garapena Antzinaroan. Merkataritza-bide nagusiak. Konkistaren eta kolonizazioaren arteko aldeak.",
+        "8- Gizarte-egituren eboluzioa Mesopotamian, Egipton, Grezian eta Erroman. Antzinaroko gizarteetako kide behartsuenak.",
+        "Emakumeen eguneroko bizitza eta rol ezagunak.",
+        "9- Antolaketa politiko mota desberdinak Antzinako Munduan: oligarkia, erresuma, inperioa, errepublika eta demokrazia, Mesopotamiatik Erroma arte.",
+        "10- Sistema ekonomikoen eboluzioa: lurraldearen giza eraldaketan eta baliabideen eta lanaren banaketa desberdinetan eragina, Historiaurretik Aro Modernora arte. Ziklo demografikoak.",
+        "11- Erlijioa Antzinaroko antolaketa politiko eta sozialean: politeismoa, monoteismoa eta erlijio nagusien sorrera. Boterearen legitimazioa Mesopotamiatik Erroma arte.",
+        "12- Giza komunitateen eboluzioa: bizitza nomada eta Harpetarretik polis etahiriak arte",
+        "13- Iberiar Penintsula eta Euskal Herria Antzinaroaren amaierara arte. Erromanizazioaren kasua Euskal Herrian.",
+        "14- Arte- eta kultura-adierazpenen esanahia eta funtzioa zibilizazio desberdinetan: Arte paleolitotik Arte erromatarra arte.",
+        "Ondare material eta immaterialarenganako errespetua eta horien babesa eta kontserbazioa.",
+        "15- Mendebaldeko kulturaren erro klasikoak. pentsamenduaren bidez kultura-identitateak eraikitzeko hastapen ezagunak, Paleolitotik Erromanizazioa arte.",
+        "16- Gizarte-egituren eboluzioa Mendebaldean, feudalismotik estamentuzko gizartera arte. Botere politikoarekin, erlijiosoarekin, eta agintaritzaren eboluzioarekin izan zuen erlazioa, Erdi Arotik Aro Modernora arte. Bizimoduak eta eguneroko bizitza. Erdi Aroko eta Aro Modernoko gizarteetako kide behartsuenak. Emakumeen eta emakumezko pertsonaia esanguratsuen rol ezaguna.",
+        "17- Antolaketa politikoa eta estatu-formulazioak Erdi Aroan eta Aro Modernoan. Antolaketa politiko mota desberdinak: erresumak, inperioak, errepublika komertzialak eta parlamentarismo britainiarra.",
+        "18- Erlijioak antolaketa politiko eta sozialean, boterearen legitimazioan eta identitate erlijiosoen eraketan izan duen zeregina: monoteismoaren eta erlijio nagusien garaipena. Kristautasunaren hedapena eta Islamaren sorrera eta hedapena. Heresiak, jazarpenak, erreforma protestanteak, kontrarreforma eta erlijio-gerrak.",
+        "19- Hiria eta landa-mundua Erdi Aroko eta Aro Modernoko Historian zehar:. landa-mundutik —hiribilduak eta herrixkak— hirietara itzultzea.",
+        "20- Erdi Aroko eta Aro Modernoko merkataritza-bide nagusiak, eta pertsonak eta baliabideak kontrolatzeko estrategiak: ingurumen-, politika-, ekonomia- eta geografia-faktoreak. Aurkikuntza nabarmenak, bidaiak, kolonizazioa eta merkataritza.",
+        "Hegemonia eta geopolitika Aro Modernoan zehar. Jatorrizko zibilizazioak.",
+        "21- Iberiar Penintsula Erdi Aroan eta Aro Modernoan.",
+        "22- Euskal Herria Erdi Aroan eta Aro Modernoan: Iruñeko erresumaren eraketatik Nafarroako erresumaren konkistara arte.",
+        "Lurralde historikoak Gaztelako koroan sartzea. Foru-sistemaren sorrera eta sendotzea. Eraldaketa sozial, ekonomiko eta kulturalak. Euskaraz idatzitako lehen testuak. Gutxiengoen eta emakumeen egoera: agotak, juduak, sorgin-ehiza, etab.",
+        "23- Erdi Aroko erroak mendebaldeko kulturan. Humanismoa eta Kristautasuna. Zibilizazio islamikoaren eragina Europako kulturan: Al-Andalusetik otomandarrak arte. Pentsamendua Erdi Aroko kulturetan eta kultura modernoetan. Arte prerromanikotik Barrokora arte.",
+        "24- Zientzia, medikuntza eta aurrerapen zientifiko eta teknologikoak Erdi Aroan eta Aro Modernoan: erantzun berriak munduari buruzko galdera nagusiei. Arrazionalismoa eta enpirismoa."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Konpromiso zibikoa",
+      "titulo": "Konpromiso zibikoa",
+      "items": [
+        "1- Giza duintasuna eta eskubide unibertsalak. Haurren Eskubideei buruzko Konbentzioa.",
+        "2- Genero berdintasuna. Adierazpen eta jokabide ez-sexistak eta hizkuntzaren erabilera ez-sexista.",
+        "3- Toki-ingurunean eta ingurune globalean gaur egun dauden erronken eta arazoen aurrean interesa.",
+        "4- Bizikidetza zibikoa eta kultura demokratikoa. Gizarte zibileraren kide izatea eta inplikatzea. Komunitate-proiektuetan parte-hartzea.",
+        "5- Ingurumen-kontzientzia. Izaki bizidunen eta planetarenganako errespetua eta horien babesa eta zaintza.",
+        "6- Natura-, historia-, arte- eta kultura-ondarearen zaintza eta babesa. Euskal Herrian eta Espainian natura- eta kultura-ondarea babesteko legeak.",
+        "7- Bizi-zikloak, aisialdiaren erabilera eta kontsumo-ohiturak: egungo eta iraganeko gizarteetako bizimoduetan dauden desberdintasunak eta aldaketak."
+      ],
+      "codigos_items": []
+    }
+  ],
+  "comunidad": "pais-vasco",
+  "idioma": "eu"
+}

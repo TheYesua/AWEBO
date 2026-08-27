@@ -1,0 +1,182 @@
+{
+  "materia_oficial": "ADIERAZPEN ARTISTIKOA",
+  "materia": "Adierazpen Artistikoa",
+  "etapa": "ESO",
+  "ciclo": "Único",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "4º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Adierazpen kulturalak eta artistikoak genero-alborapenik gabe ezagutzea eta baloratzea, harrera aktiboa eta hainbat tresna erabiliz, jakin-minez, sentikortasunez eta errespetuz, munduaren ezagutza sakona eta kritikoa garatzeko eta ondarea kontserbatzeko beharra ulertzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Ekoizpen propioak, berdinen ekoizpenak eta ondarearen parte direnak ikertzea, aztertzea eta azaltzea, interesa agertuz eta hizkuntza artistikoen ezaugarriak kontuan hartuz, kultura-aniztasunarekiko errespetua garatzeko, kultura artistiko zabala eraikitzeko eta imajinario propioa hornitzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Hizkuntza grafiko-plastikoekin eta ikus-entzunezkoekin esperimentatzea eta proposamen pertsonalak sortzea ikerketaren, berrikuntzaren eta praktikaren bidez, ideiak, sentimenduak eta emozioak sormeneaz adierazi eta komunikatzeko eta hobekuntzarako, autoestimurako eta autokritikarako gaitasuna jarrera irekiarekin garatzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Kolaborazioan oinarritutako ekoizpen kultural eta artistikoak diseinatzen, lantzen, argudiatzen eta zabaltzen parte hartzea, prozesuaren balioa agerian jarriz eta azken emaitza lortzeko hainbat rol bere gain hartuz, sormena, egiletzaren nozioa eta kide izatearen zentzua garatzeko.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Hainbat adierazpen artistikoren arteko puntu komunak nabarmentzea, pentsamendu kritikoarekin, elkarrekiko harremanak eta eragin partekatuak ulertuz, haien mezuen asmoak aurreiritzirik gabe identifikatuz eta hiztegi espezifikoa erabiliz."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Artea mundua ezagutzeko eta ulertzeko modu gisa balioestea, adierazpen kultural eta artistikoen funtsezko alderdiei, gizartean betetzen duten funtzioari eta haien kontserbazioaren garrantziari buruz ekiteko jarrerarekin eta jakin-minez hausnartuz."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Norberaren eta besteen ekoizpenak interesarekin ikertzea, eskaintzen dituzten erantzun alternatiboak aurkituz, hizkuntza artistikoek eskaintzen dituzten ebazpen-aukera ugariak ulertuz eta norberaren imajinarioa zabalduz."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Norberaren eta besteen proposamen artistikoen hizkuntzak eta elementu teknikoak aztertzea eta azaltzea, arau eta kode propioei jarraitzen dieten egiaztatuz eta arau horiek malgutzeko aukera modu irekian baloratuz."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Ekoizpen artistiko grafiko-plastikoa eta/edo ikus-entzunezkoa sormenez proiektatzea, beharrezkoak diren tresnak, baliabideak eta euskarriak identifikatuz, haien aukeraketa modu arrazoituan justifikatuz eta haien erabileraren berrikuntzaren bilaketan saiatuak izanez."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Proposamen artistiko grafiko-plastikoak eta/edo ikus-entzunezkoak sormenez eta adierazpen- eta komunikazio-asmo pertsonal batekin lantzea, gauzatzean plangintza zein bat-batekotasuna gaineratuz eta autokritika garatuz."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Praktika artistikoa norberaren berezitasuna adierazteko, bere buruari buruzko ezagutza finkatzeko eta autokonfiantza sortzeko baliabide gisa ezagutzea, prozesu grafiko-plastikoan eta ikus-entzunezkoan jarrera irekiarekin esperimentatuz eta berrituz."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Ekoizpen artistiko grafiko-plastiko eta/edo ikus-entzunezko kolektibo bat planifikatzea, beharrezkoak diren tresnak eta baliabideak identifikatuz, hainbat rol elkarlanean bere gain hartuz, berdintasunean eta aniztasunarekiko errespetuan oinarritutako hezkidetza-ikuspegi baten bitartez."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Ekoizpen grafiko-plastiko eta/edo ikus-entzunezko kolektibo bat egitea, norberaren baliabideak eta teknikak sormenez erabiliz, adierazpen-asmoekin bat etorriko den azken emaitza bat bilatuz eta aurreikusitako plangintzari jarraituz, iraunkortasun-irizpideekin."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Produktu artistiko baten sorkuntzaren azken emaitza azaltzea, lantzeko prozesuaren garapena, aurkitutako zailtasunak, egindako aurrerapenak eta lorpenen balorazio positiboa partekatuz."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A.1",
+      "bloque": "A.1. Pertzepzio eta hautemate estetikoa eta analisia · Teknika grafikoplastikoak",
+      "titulo": "Pertzepzio eta hautemate estetikoa eta analisia · Teknika grafikoplastikoak",
+      "items": [
+        "Keinuaren eta tresnaren efektuak: tresnak, baliabideak eta euskarriak. Ezaugarri plastikoak eta ikusizko efektuak.",
+        "Birziklatzearen artea. Produktu ekologikoak, iraunkorrak eta berritzaileak praktika artistikoan.",
+        "Artea eta natura.",
+        "Material artistikoen segurtasuna, toxikotasuna eta ingurumen-inpaktua. Hondakinen kudeaketa arduratsua."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "A.2",
+      "bloque": "A.2. Pertzepzio eta hautemate estetikoa eta analisia · Diseinua eta publizitatea",
+      "titulo": "Pertzepzio eta hautemate estetikoa eta analisia · Diseinua eta publizitatea",
+      "items": [
+        "Ikusizko hizkuntzaren eta pertzepzioaren elementuak eta oinarrizko printzipioak. Kolorea eta konposizioa.",
+        "Diseinuaren eremuak eta adarrak: diseinu grafikoa, produktu-diseinua, moda, barnealdeak, eszenografia. Diseinu inklusiboaren hastapenak.",
+        "Publizitatea: baliabide formalak, hizkuntza-baliabideak eta pertsuasio-baliabideak. Publizitate subliminala. Estereotipoak eta kontsumo-gizartea. Kontsumo arduratsua."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "A.3",
+      "bloque": "A.3. Pertzepzio eta hautemate estetikoa eta analisia · Argazkigintza, ikusentzunezko hizkuntza eta multimedia",
+      "titulo": "Pertzepzio eta hautemate estetikoa eta analisia · Argazkigintza, ikusentzunezko hizkuntza eta multimedia",
+      "items": [
+        "Irudi finkoaren narratiba: enkoadraketa eta plangintza, ikuspuntuak eta angeluazioa.",
+        "Irudi sekuentziatua.",
+        "Argazkigintza analogikoa: kamera iluna. Kamerarik gabeko argazkigintza (fotogramak).",
+        "Argazkigintza digitala. Argazkigintza adierazkorra.",
+        "Material artistikoen segurtasuna, toxikotasuna eta ingurumen-inpaktua. Hondakinen kudeaketa arduratsua.",
+        "Ikus-entzunezko narratiba: fotograma, sekuentzia, eszena, hartualdia, planoa eta muntaketa."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "B.1",
+      "bloque": "B.1. Sorkuntza eta interpretazioa · Teknika grafikoplastikoak",
+      "titulo": "Sorkuntza eta interpretazioa · Teknika grafikoplastikoak",
+      "items": [
+        "Marrazketa, ilustrazio eta pinturako teknikak: teknika lehorrak eta hezeak.",
+        "Abangoardia artistikoen teknika mistoak eta alternatiboak. Adierazteko aukerak eta testuinguru historikoa.",
+        "Estanpazio-teknikak: monotipia laua.",
+        "Zuzeneko prozedurak, eransgarriak, kengarriak eta mistoak.",
+        "Grafitia eta horma-pintura.",
+        "Bolumenak modelatzeko oinarrizko teknikak."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "B.2",
+      "bloque": "B.2. Sorkuntza eta interpretazioa · Diseinua eta publizitatea",
+      "titulo": "Sorkuntza eta interpretazioa · Diseinua eta publizitatea",
+      "items": [
+        "Sortzeko prozesua. Gauzatzea eta jarraipena: zirriborroa, gidoia edo proiektua, azken aurkezpena, ebaluazioa (autogogoeta, autoebaluazioa eta ebaluazio kolektiboa) eta hedapena.",
+        "Hedabideak: irratia, telebista, sare sozialak, zerbitzu digitalen plataformak, webguneak, publizitate-hesiak eta abar."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "B.3",
+      "bloque": "B.3. Sorkuntza eta interpretazioa · Argazkigintza, ikusentzunezko hizkuntza eta multimedia",
+      "titulo": "Sorkuntza eta interpretazioa · Argazkigintza, ikusentzunezko hizkuntza eta multimedia",
+      "items": [
+        "Argazkigintza-teknika esperimentalak: zianotipia edo antotipia Argazkigintza analogikoko teknikak: kamera iluna.",
+        "Argazkigintza digitaleko teknikak. Argazkigintza adierazkorra.",
+        "Fotomuntaketa digitala eta tradizionala.",
+        "Gidoia eta story-boarda.",
+        "Oinarrizko animazio-teknikak.",
+        "Bideo-arteko proiektuak."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Orokorrak",
+      "titulo": "Orokorrak",
+      "items": [
+        "Esparru plastikoei, ikusizkoei eta ikus-entzunezkoei lotutako lanbideak. Bokazio profesionalaren ezagutza, balorazioa eta sustapena.",
+        "Genero-ikuspegia eta estereotipoen haustura. Aniztasunarekiko errespetua.",
+        "Portaera-arauak eta jarrera positiboa proposamen grafiko-plastikoen harreran eta sorkuntzan, diseinua eta publizitatea eta argazkigintza. Ikus-entzunezko hizkuntza eta multimedia hainbat espazio kultural eta artistikotan, netiketa-arauak kontuan hartuz.",
+        "Esparru grafiko-plastikoari, diseinuari eta publizitateari, argazkigintzari eta ikus-entzunezko hizkuntzari eta multimediari lotutako hizkuntza eta hiztegia. Ezagutza eta erabilera.",
+        "Akatsa hobetzeko eta ikasteko modutzat hartzea.",
+        "Ahalegina, helburuak lortzeko metodoa eta bidea.",
+        "Ezagutu, errespetatu eta baloratu beharreko askotariko rolak daudela onartu eta ulertzeko jarraibideak. Rolak elkarlanean bere gain hartzea.",
+        "Pentsamendu kritiko eta dibergentea eta sormenaren garapena.",
+        "Enpatia eta hainbat ikuspunturen balorazioa.",
+        "Autonomia, autokonfiantza eta autokritika sendotzea.",
+        "Interesa, jakin-mina, ekimena, jarrera irekia eta sentsibilitatea."
+      ],
+      "codigos_items": []
+    }
+  ],
+  "comunidad": "pais-vasco",
+  "idioma": "eu"
+}

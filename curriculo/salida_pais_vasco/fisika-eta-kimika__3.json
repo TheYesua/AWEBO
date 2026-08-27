@@ -1,0 +1,180 @@
+{
+  "materia_oficial": "FISIKA ETA KIMIKA",
+  "materia": "Fisika eta Kimika",
+  "etapa": "ESO",
+  "ciclo": "3º ESO",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "3º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Inguruneko fenomeno fisiko-kimiko nagusiak zergatik gertatzen diren ulertzea eta erlazionatzea, arazoak konpontzeko lege eta teoria zientifiko egokien arabera azalduz, hurbileko errealitatea eta gizakien bizi-kalitatea hobetzeko aplikatu ahal izateko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Ikasleek egindako behaketak galdera moduan adieraztea, horiek azaltzeko eta frogatzeko hipotesiak formulatuz, esperimentazio zientifikoaren, ikerketaren eta ebidentzien bilaketaren bidez, pentsamendu zientifikoaren arrazoibide propioak garatzeko eta metodologia zientifikoen erabileran trebetasunak hobetzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Fisikaren eta kimikaren oinarrizko erregelak eta arauak erraztasunez erabiltzea IUPACen hizkuntzari, matematika-hizkuntzari, neurketa-unitate zuzenak erabiltzeari, laborategiaren erabilera seguruari, eta datuak eta informazioa hainbat formatutan eta iturritan interpretatu eta sortzeari dagokienez, hizkuntza zientifikoaren izaera unibertsala eta zeharkakoa, eta ikerkuntzan eta zientzian herrialde eta kultura desberdinen arteko komunikazio fidagarriaren beharraz ohartzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Plataforma teknologikoak eta askotariko baliabideak modu kritiko eta efizientean erabiltzea, bai banakako lanerako, bai talde-lanerako, informazioa kontsultatuz, materialak sortuz eta ikaskuntza-inguruneetan komunikazio eraginkorra eginez, sormena, garapen pertsonala eta ikaskuntza indibidual eta soziala sustatzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Lankidetza-lanari dagozkion estrategiak erabiltzea, berdinen arteko hazkundea sustatuz, komunitate zientifiko kritiko, etiko, eraginkor eta ekintzaile baten oinarri gisa, zientziak gizartearen hobekuntzan duen garrantzia, aurrerapen zientifikoen aplikazioak eta ondorioak, osasunaren babesa eta ingurumenaren kontserbazio jasangarria ulertzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Zientzia etengabe aldatzen eta eboluzionatzen ari den eraikuntza kolektibo gisa ulertzea eta balioestea, non zientzian diharduten pertsonek parte hartzeaz gain, gizarteko gainerako pertsonekiko elkarrekintza ere eskatzen duen, aurrerapen teknologikoan, ekonomikoan, ingurumenekoan eta sozialean eragina duten emaitzak lortzeko.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Printzipio, teoria eta lege zientifiko egokietatik abiatuta, eguneroko fenomeno fisiko-kimiko garrantzitsuenak identifikatzea, ulertzea eta azaltzea, modu argudiatuan adierazita, euskarri eta komunikabide anitzak erabiliz."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Planteatutako problema fisiko-kimikoak ebaztea, lege eta teoria zientifiko egokiak erabiliz, soluzioak aurkitzeko erabilitako prozedurak arrazoituz eta emaitzak behar bezala adieraziz."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Zientzia-arloko benetako egoera problematikoak hurbileko ingurunean ezagutzea eta deskribatzea, eta zientziak eta, bereziki, fisikak eta kimikak horiek ebazten lagundu dezaketen ekimenei ekitea, gizartean duten inpaktua kritikoki aztertuz."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Fenomenoak identifikatzean eta deskribatzean zientziaren berezko metodologiak erabiltze, ikerketaren, dedukzioaren, esperimentazioaren eta arrazoiketa logiko matematikoaren bidez, erantzuna eman dakiekeen gaiak abiapuntu hartuz, eta egiaztapen esperimentalik ez duten sasizientifikoak desberdinduz."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Lantzen diren gaien izaeraren arabera, egindako hipotesiak egiaztatzeko edo ezeztatzeko modurik onena hautatzea, ikerketa-estrategiak diseinatuz eta egindako galderaren izaerarekin bat datozen ondorioak eta erantzunak lortzea ahalbidetuko duten ebidentziak bilatuz."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Gaiak eta hipotesiak formulatzean ezagutzen diren lege eta teoria zientifikoak aplikatzea, dagoen ezagutza zientifikoarekin koherentea izanez eta horiek ebazteko edo egiaztatzeko beharrezkoak diren prozedura esperimentalak edo deduktiboak diseinatuz."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Prozesu fisiko-kimiko jakin bati buruzko informazioa interpretatzean eta komunikatzean datuak hainbat formatutan erabiltzea, bakoitzak duena elkarren artean erlazionatuz, eta kasu bakoitzean problema bat ebazteko garrantzitsuena dena kontuan hartuz."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Behar bezala erabiltzea fisikaren eta kimikaren oinarrizko arauak, neurketa-unitateen erabilera, tresna matematikoak eta nomenklatura-arauak barne, komunitate zientifiko osoarekin komunikazio eraginkorra lortuz."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Zientziaren berariazko espazioak —hala nola fisika eta kimikako laborategia— erabiltzeko arauak praktikan jartzea, norberaren eta taldearen osasuna, ingurumenaren kontserbazio jasangarria eta instalazioen zaintza ziurtatuz."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Askotariko baliabideak, tradizionalak eta digitalak, erabiltzea, ikaskuntza autonomoa eta hezkuntza-komunitateko beste kide batzuekiko elkarrekintza hobetuz, irakasleekiko eta ikasleekiko errespetuz, eta parte-hartzaile bakoitzaren ekarpenak kritikoki aztertuz."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Informazioa kontsultatzeko eta edukiak sortzeko askotariko baliabideak, tradizionalak eta digitalak,modu egokian eta moldakorrean erabiltzea, iturririk fidagarrienak irizpidez hautatuz, egokienak ez direnak baztertuz eta norberaren ikaskuntza eta ikaskuntza kolektiboa hobetuz."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Elkarrekintza eraikitzaileak eta hezkidetzaileak ezartzea, kooperazio-jarduerak abiaraziz, zientzian lanerako bitarteko efizientea eraikitzeko modu gisa."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Modu gidatuan,eta metodologia egokiaren arabera, proiektu zientifikoak abiaraztea, ikasleak gizartearen hobekuntzan inplikatuz eta norbanakoarentzat eta komunitatearentzat balioa sortuz."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Zientzia etengabe eraikitzen ari den prozesua dela eta zientziak teknologian, gizartean eta ingurumenean dituen ondorioak onartzea eta balioestea, zientziako gizon-emakumeen analisi historikoaren eta aurrerapen zientifikoen bidez."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Ingurunean hautematea gizarteak eskatzen dituen teknologia-, ingurumen-, ekonomia- eta gizarte-premia garrantzitsuenak, herritar guztien inplikazioaren bidez zientziak soluzio jasangarria emateko duen gaitasuna baloratuz."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Oinarrizko trebetasun zientifikoak",
+      "titulo": "Oinarrizko trebetasun zientifikoak",
+      "items": [
+        "Ikerketa zientifikoaren metodologiak: gaiak identifikatu eta formulatu, hipotesiak egin eta horiek esperimentuak eginez egiaztatu.",
+        "Lan esperimentala eta ikerketa-proiektuak: problemak ebazteko eta ikerketak garatzeko estrategiak, ikerketa, dedukzio, ebidentzien bilaketa eta arrazoiketa logiko-matematikoaren bidez, behaketetatik baliozko inferentziak eginez eta ondorioak lortuz.",
+        "Ikaskuntza zientifikorako hainbat ingurune eta baliabide, hala nola laborategia edo ingurune birtualak: materialak, substantziak eta tresna teknologikoak.",
+        "Espazio bakoitza erabiltzeko arauak, norberaren eta komunitatearen osasuna, sareetako segurtasuna eta ingurumenarekiko errespetua ziurtatuz eta babestuz.",
+        "Hizkuntza zientifikoa: Nazioarteko Sistemaren unitateak eta hauen sinboloak.Oinarrizko tresna matematikoak hainbat zientzia- eta ikas-egoeratan.",
+        "Informazio zientifikoa interpretatzeko eta ekoizteko estrategiak, hainbat formatu eta bitarteko erabiliz: norberaren irizpidearen garapena, pentsamendu zientifikoak gizartearen hobekuntzari egiten dion ekarpenean oinarrituta, gizartea bidezkoagoa, zuzenagoa eta berdinzaleagoa izateko.",
+        "Fisikak eta kimikak gizartearen aurrerapenean eta hobekuntzan dituzten mugarri historiko eta gaur egungo garrantzitsuenetan zientzialariek duten zereginaren eta kultura zientifikoaren balorazioa."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Materia",
+      "titulo": "Materia",
+      "items": [
+        "Egitura atomikoa: eredu atomikoen garapen historikoa, isotopoen existentzia, eraketa eta propietateak, eta elementuen antolamendua taula periodikoan.",
+        "Konposatu kimiko nagusiak: euren eraketa, propietate fisikoak eta kimikoak, euren aplikazioen balorazioa. Masa atomikoa eta masa molekularra:",
+        "Nomenklatura: hizkuntza zientifiko komun eta unibertsal baten erabilera, substantzia sinpleak, ioi monoatomikoak eta konposatu bitarrak formulatuz eta izendatuz, IUPACen nomenklatura-arauen bidez."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Energia",
+      "titulo": "Energia",
+      "items": [
+        "Energia: energiari, propietateei eta aldaketa-prozesu guztien kausa gisa deskribatuko duten adierazpenei buruzko galderen eta hipotesien formulazioa.",
+        "Materiaren izaera elektrikoa: gorputzen elektrizazioa, zirkuitu elektrikoak eta energia elektrikoa lortzeko bideak. Energia aurrezteko beharraren eta ingurumenaren kontserbazio jasangarriaren inguruko kontzientziazioa.",
+        "Elektrizitatearen ekoizpenaren eta erregai fosilen erabileraren ingurumen-arazoak. Erregai fosilen agortzea. Nazioarteko itunen betetzea."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Interakzioa",
+      "titulo": "Interakzioa",
+      "items": [
+        "Fenomeno grabitatorioak, elektrikoak eta magnetikoak: naturaren indarrekiko lotura agerian uzten duten esperimentu errazak."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "E",
+      "bloque": "E. Aldaketa",
+      "titulo": "Aldaketa",
+      "items": [
+        "Erreakzio kimikoen interpretazio makroskopikoa eta mikroskopikoa: kimikak ingurumenarekin, teknologiarekin eta gizartearekin dituen harremanak.",
+        "Masa kontserbatzeko legea eta zehaztutako proportzioen legea: lege horien aplikazioa, materiaren eredu atomiko-molekularra baliozkotzea ahalbidetzen duten ebidentzia esperimental gisa.",
+        "Erreakzio kimikoei eragiten dieten faktoreak: erreakzio kimikoen eboluzioaren aurreikuspen kualitatiboa, zientziak gaur egun dituen arazoak konpontzeko duen garrantzia ulertuta."
+      ],
+      "codigos_items": []
+    }
+  ],
+  "comunidad": "pais-vasco",
+  "idioma": "eu"
+}

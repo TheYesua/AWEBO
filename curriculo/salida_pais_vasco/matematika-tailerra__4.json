@@ -1,0 +1,172 @@
+{
+  "materia_oficial": "MATEMATIKA TAILERRA",
+  "materia": "Matematika Tailerra",
+  "etapa": "ESO",
+  "ciclo": "Único",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "4º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Matematikoak eta eguneroko bizitzakoak diren problemak elkarlanean eta baliabide digitalen laguntzaz ebaztea, askotariko estrategiak erabiliz eta arrazoituz, eta irizpide matematikoekin argudiatuz zein den eraginkorrena. Horrela zentzu eta pentsamendu logiko-matematikoa garatzeko eta partekatutako jakintza sortzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Jakintza geometrikoak aplikatzea eta forma geometrikoak identifikatzeko, ulertzeko, analizatzeko eta sortzeko simulazioak erabiltzea, horiek gehitzen duten edertasuna hautemanez, sormena eta irudimena akuilatzeko eta errealitatea geometriaren ikuspuntutik behatzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Ikuspuntu matematikoa indartzea baliabide teknologiko eta digitalak erabiliz, pentsamendu konputazionalerako irizpideak aplikatuz, zentzu kritikoa eta interpretazioa erabiliz eta informazioa aurkeztuz, matematikaren ikaskuntza eta ikasleen garapen pertsonala indartzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Jolasetan, paradoxetan, magian edo ilusio optikoetan parte hartzen duten zenbaki-, aljebra- eta geometria-osagarriak identifikatzea eguneroko errealitatearekin lotuta matematikaren ikuspuntu positibo, erakargarri, ludiko eta integratzailea sortzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Matematika baloratzea gure kulturaren osagarri gisa, bai ikuspuntu historikotik bai gaur egungotik, konpetentzia eta zentzu matematikoak erabiliz gizarte fenomenoak aztertzeko eta balioesteko, hala nola, aniztasun kulturala, soziala eta ekonomikoa, naturaren eta osasunaren errespetua, kontsumo arduratsua, diskriminazio eza edo bizikidetza baketsua eta integratzailea.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Matematikako eta eguneroko bizitzako problemen ebazpenerako beharrezko enuntziatua, datuak, galderak eta baldintzak interpretatzea eta ulertzea, irakurmen aktiboaren bidez, datu garrantzitsuenak adieraziz (irudiak, eskemak, taulak…) eta ikasleek aldez aurretik dituzten jakintzak mobilizatuz."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Ebazpenerako askotariko estrategiak lantzea eta hautatzea, ereduak, pautak eta erlazioak ezagutuz, emaitzak lortuz eta matematikoki ebazpen egokia lortzeko prozedura argudiatuz."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Erreminta digitalak erabiltzea (simulazioak, laguntzaile matematikoak, geometria dinamikorako programak) elementu geometrikoak manipulatuz eta horiekin elkarrekintzan arituz, planoa eta espazioa esploratuz, aieruak sortuz eta ziurtatuz eta ondo argudiatutako ondorioak ateraz."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Diagramen, krokisen eta marrazkien bidez planoaren eta espazioaren objektu geometriko esanguratsuen propietateak (antzekotasun erlazioak, erlazio metrikoak, trigonometrikoak…) adieraztea, behatutako propietateak ahoz eta idatziz arrazoituta azalduz."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Patroiak identifikatzea eta problematizatutako egoeren adierazpide konputazionala ematea datuak aztertuz eta zenbakien arteko erlazioak, erlazio geometriko eta algebraikoak aurkituz."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Erreminta digitalekin edo eskuz maneiatu daitezkeenekin egiaztatu ahalko diren indukzio-arrazoibidean oinarritutako aieruak planteatzea (erlazioak; egiturak; patroi numerikoak, geometrikoak eta algebraikoak) taldeko elkarrizketa eta eztabaida bultzatzen duten adierazpide grafikoak erabiliz."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Jokoen, paradoxen eta frogantza grafikoen osagarri matematikoak identifikatzea eta deskribatzea erlazioak, propietateak era horietan parte hartzen duten prozesuak ulertuz."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Ikerketaren emaitzak jakinaraztea (estrategia jokoak, frogantza bisualak, paradoxak…) era digitalean adierazpide egokienaren bidez eta hizkuntza matematikoa era egokian erabiliz."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Emozioak identifikatzea eta kudeatzea, jarraikortasuna eta motibazio positiboa mantentzea erronka matematikoei aurre egitean, norberaren eta gainontzekoen akatsak onartuz eta bizitzako esparruetan hobetzeko nahia bultzatuz."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Era aktibo eta kritikoan elkarlanean aritzea, talde heterogeneoetan lan eginez, beharrezko informazioarekin erabakiak eta iritziak sortuz eta arazoak beren testuinguruetan ebatziz, esleitutako rola arduraz eta errespetuz hartuz."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "5",
+      "descripcion": "Matematikaren alderdi historiko eta sozialak baloratzea ezagutza matematikora iritsi ahal izateko baldintzei buruz hausnartuz, baita ezagutza horrek garapen pertsonalerako eta gizarte bidezkoago bat eraikitzeko dakartzan onurez ere."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Problemak ebazteko estrategiak",
+      "titulo": "Problemak ebazteko estrategiak",
+      "items": [
+        "Problemak ebazteko ereduak. Ebazpenaren faseak: arazoa ulertzea, plan bat sortzea, plana gauzatzea eta emaitza egiaztatzea.",
+        "Eragiketak, magnitudeak, zenbaki motak eta bihurketak ikas-egoeretan eta problemak ebaztean.",
+        "Hizkuntza aljebraikoa: aplikazioa modelizazioan eta problemak ebaztean.",
+        "Problemak ebazteko prozesuak: datuak eta erlazioak; hurbilketak, emaitzen zenbatespenak; problema orokortzea eta zabaltzea; emaitzak jakinaraztea… Problemak ebazteko estrategiak: kodeketa, bisualizazio grafikoa, problema eraldatzea, amaieratik hastea, partikularizazioa eta orokortzea, aieruak formulatzea, indukzio-printzipioa, absurdora eramatea…"
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Matematika ludikoa: paradoxak eta jokoak",
+      "titulo": "Matematika ludikoa: paradoxak eta jokoak",
+      "items": [
+        "Matematikaren paradoxak: zenbakizkoak, aljebraikoak, geometrikoak, topologikoak eta probabilistikoak. Infinituaren paradoxak. Ilusio optikoak.",
+        "Frogapen faltsuak. Falazia matematikoak.",
+        "Ezagutza-jokoak (zenbakizkoak, algebraikoak, geometrikoak, ausazkoak eta probabilitatezkoak). Asmamen- eta estrategia-",
+        "jokoak (lerrokatze- eta konfigurazio-jokoak). Joko kooperatiboak.",
+        "Magia eta matematika."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Geometria",
+      "titulo": "Geometria",
+      "items": [
+        "Osagarri geometrikoak: puntuak, zuzenak, planoak. Segmentuak eta angeluak. Kurbak eta eskualdeak. Poligonoak eta poliedroak.",
+        "Planoaren teseladun irudi erregularrak eta irregularrak eta arte geometrikoa.",
+        "Geoplanoak. Tanagram jokoa. Likidoekin edo harearekin bete daitezkeen gorputz geometrikoak. Aldeetatik elkartutako karratuak (poliminoak) eta aurpegietatik elkartutako kuboak (polikuboak): oinarriak, eraikuntza eta ezaugarriak.",
+        "Propietateen frogapen bisualak, pautak eta erlazio aritmetikoak, algebraikoak eta geometrikoak: puntuz, lerroz eta irudi geometrikoz osatutako diagramak."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Simulazioak: fenomeno konplexuen funtsaren adierazpide grafiko eta interaktiboa",
+      "titulo": "Simulazioak: fenomeno konplexuen funtsaren adierazpide grafiko eta interaktiboa",
+      "items": [
+        "Elementuak eta simulazioko osagarrien arteko erlazioak.",
+        "Elkarrekintza simulazioekin.",
+        "Simulazio itxiak. Simulazioak sortzeko baliabidek: kalkulu orriak, laguntzaile matematikoak…"
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "E",
+      "bloque": "E. Matematikaren irakaskuntzarako eta ikaskuntzarako laguntzaile matematikoak: GeoGebra (GG), Gaspable Maths…",
+      "titulo": "Matematikaren irakaskuntzarako eta ikaskuntzarako laguntzaile matematikoak: GeoGebra (GG), Gaspable Maths…",
+      "items": [
+        "GeoGebra webgunea eta atal nagusiak.",
+        "Hautapenen bidez GGn baliabide orokorrak bilatzeko estrategiak.",
+        "Funtzioak: adierazpide grafikotik eratortzen diren ezaugarriak laguntzaile matematikoen bidez.",
+        "Graspable Math (GM) erreminta, ingurune birtuala eta erabilerak.",
+        "Aljebra sinbolikoa. Erlazio linealak eta koadratikoak, baliokidetasunak eta adierazpide aljebraikoen transformazioak GMren bidez."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "G",
+      "bloque": "G. Alderdi sozial eta sozioafektiboak",
+      "titulo": "Alderdi sozial eta sozioafektiboak",
+      "items": [
+        "Matematikaren historia. Oinarrizko matematikaren ikuspuntutik ekarpen nabarmen eta erakargarri batzuk.",
+        "Emakume matematikoak oztopoak oztopo: Hipatia, Maria Gaetana Agnesi, Sophie Germain, Ada Lovelace, Sofia Kovalevskaya, Emmy Nother… Pigmalion efektua edo beraiek bakarrik betetzen diren profeziak.",
+        "Akatsak onartzeko eta horiek ikaskuntza bultzatzeko erabiltzeko estrategiak.",
+        "Talde-lana eta beste pertsonak haien sendotasun eta ahuldadeekin onartzeko jarraibideak.",
+        "Eskuzabaltasuna eta enpatia elkarrekin egiten diren jardueretan eta arrakastak eta porrotak partekatzeko estrategiak."
+      ],
+      "codigos_items": []
+    }
+  ],
+  "comunidad": "pais-vasco",
+  "idioma": "eu"
+}

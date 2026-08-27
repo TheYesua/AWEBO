@@ -1,0 +1,194 @@
+{
+  "materia_oficial": "ATZERRIKO LEHEN HIZKUNTZA",
+  "materia": "Atzerriko Lehen Hizkuntza",
+  "etapa": "ESO",
+  "ciclo": "3º ESO y 4º ESO",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "3º ESO",
+    "4º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Erabili ohi diren diskurtso-generoetako testuak, hizkuntza estandarrean eta garbi adierazitakoak, ulertzea eta interpretatzea, iturri fidagarriak bilatuz eta zenbait estrategia erabiliz, hala nola esanahien inferentzia, betiere zentzu orokorra eta ideia nagusiak ateratzeko eta komunikazio-egoera zehatzetan horien edukia baloratzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Erabili ohi diren diskurtso-generoetako testu originalak sortzea, hedapen ertainekoak, errazak eta antolaketa argikoak, planifikazioa, konpentsazioa edo autokonponketa gisako estrategiak erabiliz, betiere mezu garrantzitsuak sormenez, egokitasunez eta koherentziaz adierazteko eta komunikazio- -helburu zehatzei erantzuteko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Beste pertsona batzuekin gero eta autonomia handiagoz elkarreraginean aritzea, kooperazio-estrategiak erabiliz, baliabide analogikoak eta digitalak baliatuz eta adeitasun-arauak errespetatuz, komunikazio-helburu zehatzei erantzuteko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Hizkuntza desberdinen arteko edo hizkuntza beraren modalitate eta erregistroen arteko bitartekotza egitea eguneroko egoeretan, kontzeptuak azaltzera edo mezuak sinplifikatzera bideratutako estrategia eta ezagutza errazak erabiliz, informazioa modu eraginkor, argi eta arduratsuan transmititzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Norberaren hizkuntza-errepertorioa mobilizatzea eta erabiltzea, errepertorio hori osatzen duten hizkuntzetako bakoitzaren funtzionamenduari buruzko gogoeta kritikoa eginez eta norberaren estrategiez eta ezagutzez jabetuz, betiere atzerriko hizkuntza ikasteko gaitasuna eta komunikazio-behar zehatzetarako erantzuna hobetzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Atzerriko hizkuntzatik abiatuta, hizkuntza-, kultura- eta arte-aniztasuna modu kritikoan baloratzea eta aniztasun horretara egokitzea, hizkuntzen eta kulturen arteko antzekotasunak eta desberdintasunak identifikatuz eta partekatuz, betiere kulturarteko egoeretan enpatiaz, asertibotasunez eta errespetuz jokatzeko.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Zenbait euskarritan, argi eta hizkuntza estandarrean adierazitako luzera ertaineko ahozko testuen eta testu idatzi eta multimodalen zentzu orokorra eta ideia nagusiak ateratzea eta informazio egokia aukeratzea, berriro entzuteko edo berrespena eskatzeko aukerarekin."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Gero eta konplexuagoak diren testuen edukia eta diskurtso-ezaugarriak interpretatzea eta baloratzea."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Komunikazio-egoerarako egokienak diren estrategiak eta ezagutzak hautatzea, antolatzea eta aplikatzea, testuen zentzu orokorra, funtsezko informazioa eta xehetasunik garrantzitsuenak ulertzeko, esanahiak inferitzeko eta hitzezkoak ez diren elementuak interpretatzeko."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "1",
+      "descripcion": "Informazioa bilatu, hautatu eta kontrastatzeko eta informazio hori jabetza intelektuala arautzen duten egiletza-lizentzien arabera kudeatzeko erabili ohi diren estrategiak erabiltzea, baliozkotasun, kalitate, gaurkotasun eta fidagarritasuneko irizpideak aplikatuz ."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Komunikazio-egoerarako egokiak diren testu errazak, egituratuak, ulergarriak eta koherenteak ahoz adieraztea behar besteko zuzentasunez, jariakortasunez, ahoskeraz eta intonazioz, zenbait euskarritan deskribatzeko, kontatzeko, argudiatzeko eta informatzeko, betiere hitzezko baliabideak eta hitzezkoak ez direnak erabiliz eta hizkuntzaren erabilera eraginkorra eta etikoa eginez."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Luzera ertaineko eta lexiko eta egitura aberatseko testuak antolatzea, idaztea eta hedatzea, argitasun, koherentzia, kohesio, zuzentasun eta sormen onargarriez eta proposatutako komunikazio-egoerara, testu tipologiara eta erabili ohi diren tresna analogiko eta digitaletara egokituz."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Testuak planifikatzeko, produzitzeko, berrikusteko eta testuen prestaketan kooperatzeko erabili ohi diren ezagutzak eta estrategiak hautatzea, antolatzea eta aplikatzea, zereginaren eta beharren arabera egokienak diren baliabide analogikoak edo digitalak erabiliz, herritartasun digital zibiko eta gogoetatsua burutuz, jabetza intelektuala errespetatuz eta plagioa saihestuz."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Egoera interaktibo sinkronoak edo asinkronoak planifikatzea eta horietan parte hartzea eta kolaboratzea zenbait euskarriren bidez, ekimena, jarrera kritikoa, sormena, enpatia eta hizkuntza-kortesiaren eta netiketaren aldeko errespetua erakutsiz, baita solaskideen behar, ideia, kezka, ekimen eta motibazioen aldeko enpatia eta errespetua ere, hizkuntzaren erabilera diskriminatzaile eta estereotipo oro baztertuz."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Komunikazioa hasi, mantendu eta amaitzeko, hitza hartu eta uzteko, argibideak eta azalpenak eskatu eta emateko, birformulatu, alderatu, kontrastatu, laburtu, kolaboratu, eztabaidatu, arazoak ebatsi , eta egoera konprometituak kudeatzeko erabili ohi diren estrategia egokiak hautatzea, antolatzea eta erabiltzea, ingurune analogiko eta digitalean."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Plangintza- eta kudeaketa-estrategiak hautatzea eta aplikatzea, baita estrategia kooperatibo errazak eta konplexuak ere, talde-lanean esleitutako erantzukizun indibidualak bere gain hartuz eta ingurune analogikoetan eta digitaletan sortzen diren gatazkak kudeatuz."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Testu, kontzeptu eta komunikazio gero eta luze eta konplexuagoak inferitzea eta azaltzea, aniztasunari erantzun behar zaion eguneroko egoeretan, solaskideekiko eta erabilitako hizkuntzekiko errespetua eta enpatia erakutsiz, ingurune hurbilean elkar ulertzeko eta aditzeko arazoen konponketan parte hartuz, eta zenbait baliabide eta euskarri baliatuz."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Zubiak sortzen laguntzen duten, komunikazioa errazten duten eta testuak, kontzeptuak eta mezuak azaltzeko eta sinplifikatzeko balio duten estrategiak aplikatzea, komunikazio-asmoetara, testuinguruarenezaugarrietara eta testu tipologiara egokituak, baliabide eta laguntza analogikoak edo digitalak erabiliz, unean uneko beharren arabera."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Zenbait hizkuntza alderatzea eta haien arteko antzekotasunak eta desberdintasunak argudiatzea, haien funtzionamenduari buruz gero eta autonomia handiagoz gogoeta eginez."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Atzerriko hizkuntza ikasteko eta gero eta hitz-jario, egokitzapen eta zuzentasun maila handiagoz komunikatzeko gaitasuna hobetuko duten estrategiak eta ezagutzak sormenez erabiltzea, beste parte-hartzaile batzuen eta euskarri analogikoen eta digitalen laguntzaz."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "5",
+      "descripcion": "Atzerriko hizkuntza ikasteko aurrerapenak eta zailtasunak erregistratzea eta aztertzea, zailtasun horiek gainditzeko estrategiarik eraginkorrenak hautatuz eta ikaskuntzaren planifikaziorako, autoebaluaziorako eta koebaluaziorako erabili ohi diren estrategiak eta tresnak erabiliz, hala nola Hizkuntzen Europako Portfolioan (PEL) edo ikaskuntza eguneroko batean proposatutakoak, aurrerapen horiek zehaztuz eta partekatuz."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Egoki, enpatiaz eta errespetuz jokatzea kultura arteko egoeretan —hala nola eTwinning plataformak edo Erasmus+ programak emandakoetan—, hizkuntza eta kulturen arteko loturak eraikiz, eguneroko komunikazio-testuinguruetan edonolako diskriminazio, aurreiritzi eta estereotipoak baztertuz, eta komunikazioa eragozten duten faktore soziokulturaletarako irtenbideak proposatuz."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Atzerriko hizkuntza hitz egiten den herrialdeek berezkoa duten aniztasun linguistikoa, soziokulturala eta artistikoa atseginerako eta aberastasun pertsonalerako iturri gisa kritikoki baloratzea eta horretara egokitzea, kultura partekatua eta iraunkortasunarekin, giza eskubideekin eta balio demokratikoekin konprometitutako herritartasuna garatzen lagunduz."
+    },
+    {
+      "codigo": "6.3",
+      "competencia": "6",
+      "descripcion": "Hizkuntza-, kultura- eta arte-aniztasuna defendatzeko eta aintzat hartzeko erabili ohi diren estrategiak aplikatzea, balio ekosozialak eta demokratikoak kontuan hartuz eta justizia-, ekitate- eta berdintasun-printzipioak errespetatuz."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Komunikazioa",
+      "titulo": "Komunikazioa",
+      "items": [
+        "Gero eta luzeagoak diren eta lexiko eta egitura aberatsagoak dituzten ahozko testuak, testu idatziak eta testu multimodalak planifikatu, gauzatu, kontrolatu eta konpontzeko erabili ohi diren estrategiak.",
+        "Eguneroko egoeretan bitartekotza-jarduerak egitea ahalbidetzen duten ezagutzak, trebetasunak eta jarrerak.",
+        "Komunikazio-esparrura eta -testuingurura egokitutako erabili ohi diren komunikazio-funtzioak: agurtzea eta agur esatea, aurkeztea eta nork bere burua aurkeztea; pertsonak, objektuak, lekuak, fenomenoak eta gertaerak deskribatzea; gertaerak denboran kokatzea; objektuak, pertsonak eta lekuak espazioan kokatzea; eguneroko gaiei buruzko informazioa eskatu eta trukatzea; jarraibideak, aholkuak eta aginduak ematea eta eskatzea; laguntza, proposamenak edo iradokizunak eskaini, onartu eta ukatzea; gustua edo interesa eta emozioak modu partzialean adieraztea; iraganeko gertaerak kontatzea, gaur egungo egoerak deskribatzea eta etorkizuneko gertaerak enuntziatzea; iritzia, aukera, gaitasuna, obligazioa eta debekua adieraztea; argudio errazak adieraztea; hipotesiak eta suposizioak egitea; ziurgabetasuna eta zalantza adieraztea; birformulatzea eta laburtzea.",
+        "Garrantzi pertsonala duten eta esperientziatik hurbil dauden interes publikoko eguneroko gaiei buruzko ahozko testu eta testu idatzi eta multimodal laburrak eta errazak ulertu, produzitu eta koproduzitzeko erabili ohi diren testuinguru-ereduak eta diskurtso-generoak, gero eta luzeagoak eta lexikoan eta egituretan aberatsagoak izango direnak eta pertsonen arteko harremanen, hedabideen eta ikaskuntzaren esparruei dagozkienak, baita ikasleen heldutasun-mailarako egokiak diren literatura-testuak ere: testuinguruaren ezaugarriak eta ezagutza (parte-hartzaileak eta egoera); testuinguruak sortutako itxaropenak; generoaren, testuaren funtzioaren eta egituraren araberako antolaketa eta egituraketa.",
+        "Hizkuntza-unitateak, hala nola erakundearen adierazpena eta haren propietateak, kopurua, gradazioa eta kualitatea, existentzia, espazioa eta espazio-erlazioak, denbora eta denbora-erlazioak, modua, konparazioa, emaitza, baldintza, zeharkako estiloa, aspektu puntuala; iraupenekoa; ohikoa; hasiera ematekoa; amaiera ematekoa eta modalitatea: faktikotasuna, ahalmena, aukera/probabilitatea, beharra, obligazioa, baimena, asmoa eta modalitatea, baieztapena, ukazioa, galdera eta harridura, ohiko erlazio logikoak: lokailuak, deiktikoak eta sinonimoak.",
+        "Ikasleek erabili ohi duten eta beren interesekoa den lexikoa, alderdi hauei buruzkoa: norberaren identifikazioa; pertsonen arteko harremanak; toki eta inguruneak; aisia eta aisialdia; eguneroko bizitza; osasuna eta jarduera fisikoa; etxebizitza eta etxea; klima eta ingurune naturala; informazioaren eta komunikazioaren teknologiak, eskola-sistema eta prestakuntza.",
+        "Erabili ohi diren soinu-, azentu-, erritmo- eta intonazio-patroiak, eta patroi horiei lotutako esanahiak eta komunikazio-asmo orokorrak.",
+        "Erabili ohi diren konbentzio ortografikoak eta formatu, patroi eta elementu grafikoei lotutako esanahiak eta komunikazio-asmoak.",
+        "Erabili ohi diren konbentzioak eta elkarrizketa-estrategiak, formatu sinkronoan edo asinkronoan, komunikazioa hasi, mantendu eta amaitzeko, hitza hartu eta lagatzeko, argibideak eta azalpenak eskatu eta emateko, berriro formulatu, alderatu eta kontrastatzeko, laburtzeko, kolaborazioan aritzeko, eztabaidatzeko eta abar.",
+        "Informazioa bilatu, hautatu eta kudeatzeko oinarrizko estrategiak eta baliabide analogiko eta digitalak.",
+        "Jabetza intelektualarekiko eta egile-eskubideekiko errespetua eta kontsultatutako iturrien eta erabilitako edukien baliagarritasuna, kalitatea, gaurkotasuna eta fidagarritasuna ebaluatzeko estrategiak.",
+        "Ulermen, produkzio eta koprodukziorako —ahozkoa, idatzizkoa eta multimodala— erabili ohi diren tresna analogikoak eta digitalak; eta hezkuntzaren arloko interakzio, kooperazio eta kolaborazioko plataforma birtualak (ikasgela birtualak, bideokonferentziak, kolaborazioko tresna digitalak...), atzerriko hizkuntzako hiztunekin edo ikasleekin ikasteko, komunikatzeko eta proiektuak garatzeko."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Eleaniztasuna eta ikaskuntzari buruzko gogoeta",
+      "titulo": "Eleaniztasuna eta ikaskuntzari buruzko gogoeta",
+      "items": [
+        "Autokonfiantza eta ekimena. Errorea, ikaskuntza-prozesuaren parte gisa.",
+        "Komunikazio-behar jakin bati gero eta arintasun, egokitzapen eta zuzentasun handiagoz eta eraginkortasunez erantzuteko estrategiak eta teknikak, atzerriko hizkuntzako eta norberaren hizkuntza-errepertorioko gainerako hizkuntzetako konpetentzia-mailaren ondoriozko mugen gainetik.",
+        "Hizkuntza-unitateak (lexikoa, morfosintaxia, soinu-patroiak, eta abar) identifikatu, antolatu, atxiki, berreskuratu eta sormenez baliatzeko erabili ohi diren estrategiak, norberaren hizkuntza-errepertorioa osatzen duten hizkuntzen eta barietateen konparaziotik abiatuta.",
+        "Ikasteko baliabideak eta hizkuntza-unitateak (lexikoa, morfosintaxia, soinu-patroiak, eta abar) identifikatu, antolatu, atxiki, berreskuratu eta sormenez baliatzeko erabili ohi diren estrategiak, norberaren hizkuntza-errepertorioa osatzen duten hizkuntzen eta barietateen konparaziotik abiatuta.",
+        "Autoebaluazio, koebaluazio eta autokonponketarako erabili ohi diren estrategia eta tresna analogikoak eta digitalak, indibidualak eta kooperatiboak, baita atzerriko hizkuntza ikasteko aurrerapenak eta zailtasunak erregistratzekoak ere. Hizkuntzen Portfolio Europarra (HPE).",
+        "Komunikazioari, hizkuntzari, ikaskuntzari eta komunikazio- eta ikaskuntza-tresnei (metahizkuntzari) buruzko ideiak trukatzeko erabili ohi diren lexiko eta esamolde espezifikoak.",
+        "Hizkuntzen arteko konparaziorako estrategiak, atzerriko hizkuntzaren eta beste hizkuntza batzuen elementuetatik abiatuta: jatorria eta ahaidetasunak.",
+        "Estrategia kooperatibo errazak eta konplexuak, eta talde-lanean esleitutako banako erantzukizunak bere gain hartzeko estrategiak, ingurune analogiko eta digitaletan. Gatazken kudeaketa."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Kulturartekotasuna",
+      "titulo": "Kulturartekotasuna",
+      "items": [
+        "Atzerriko hizkuntza, pertsonen arteko eta nazioarteko komunikazio-bide, informazio-iturri eta parte-hartze sozialerako eta norberaren aberastasunerako tresna gisa.",
+        "Atzerriko hizkuntzako hiztunekin edo ikasleekin, zenbait bitarteko bidez, komunikazio-trukeak egiteko interesa eta ekimena, betiere ahoskera, erritmo eta intonazio egokiez, erabili ohi diren ortografia-konbentzioak errespetatuz eta testuen aurkezpena zainduz.",
+        "Atzerriko hizkuntzaren berezko kultura-patroiak, erabili ohi direnak.",
+        "Erabili ohi diren eguneroko bizitzari, bizi-baldintzei eta pertsonen arteko harremanei buruzko alderdi soziokulturalak eta soziolinguistikoak, generoaren analisitik; erabili ohi diren gizarte-konbentzioak; hitzik gabeko hizkuntza, hizkuntza-kortesia eta netiketa; atzerriko hizkuntza hitz egiten den herrialdeetako berezko lurralde-banaketa, kultura, arauak, jarrerak, ohiturak eta balioak.",
+        "Erabili ohi diren estrategiak, hizkuntza-, kultura- eta arte-aniztasuna ulertzeko eta estimatzeko, balio ekosozialak eta demokratikoak kontuan hartuta.",
+        "Hitzezko eta hitzik gabeko hizkuntzaren erabilera diskriminatzaileak hautemateko eta horien aurrean jarduteko erabili ohi diren estrategiak.",
+        "Literatura-testuaren eta irakurketaren balorazioa, gozamen-iturri gisa, adierazpen artistiko eta kulturaletara hurbiltzeko eta hizkuntza eta norbera aberasteko.",
+        "Literatura-testuak dramatizatzeko, birsortzeko eta errezitatzeko estrategia errazak.",
+        "Atzerriko hizkuntza munduan eta Euskal Herrian, eta honek euskaran duen eragina.",
+        "Hizkuntzen egoera Europan. Hizkuntza ofizialak, ez-ofizialak, nagusiak eta mendean daudenak. Eremu Urriko Hizkuntzen Europako Karta.",
+        "Euskal diasporak atzerriko hizkuntzaren eta euskararen arteko kontaktuan sortutako hizkuntza-erregistro berriak."
+      ],
+      "codigos_items": []
+    }
+  ],
+  "comunidad": "pais-vasco",
+  "idioma": "eu"
+}

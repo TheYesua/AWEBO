@@ -1,0 +1,329 @@
+{
+  "materia_oficial": "EUSKARA ETA LITERATURA ETA GAZTELANIA ETA LITERATURA",
+  "materia": "Euskara eta Literatura eta Gaztelania eta Literatura",
+  "etapa": "ESO",
+  "ciclo": "1º ESO y 2º ESO",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º ESO",
+    "2º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Euskal Herriko eta inguruneko errealitate elebiduna eta eleaniztuna ezagutzea, interpretatzea eta baloratzea, bertako hizkuntzen eta barietate dialektalen ezaugarriak eta garapena aztertuz eta horiekiko guztiekiko portaera enpatikoa eta errespetuzkoa erakutsiz, gogoeta interlinguistikoa errazteko, hizkuntza-aurreiritziei aurre egiteko, aniztasuna aberastasun-iturri gisa onartzeko eta euskararen erabileraren aldeko portaera asertiboak sustatzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Ahozko testuak eta testu multimodalak ulertzea eta interpretatzea, zentzu orokorra eta informaziorik garrantzitsuena bilduz, igorlearen ikuspuntua eta asmoa identifikatuz eta fidagarritasuna, forma eta edukia baloratuz, ezagutza eraikitzeko, iritzia osatzeko eta gozameneko eta aisiarako aukerak zabaltzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Ahozko testuak eta testu multimodalak jariakortasunez, koherentziaz, kohesioz eta erregistro egokiz sortzea, diskurtso-generoen berezko konbentzioei jarraituz, eta ahozko elkarreraginetan jarrera kooperatiboz eta errespetuz parte hartzea, bai ezagutzak eraikitzeko eta lotura pertsonalak ezartzeko, bai gizarte-testuinguruetan modu aktiboan eta informatuta parte hartzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Testu idatziak ulertzea, interpretatzea eta baloratzea, zentzu kritikoan eta irakurtzeko zenbait xedez, zentzu orokorra eta ideia nagusiak eta bigarren mailakoak ezagutuz, igorlearen asmoa identifikatuz, edukiari eta formari buruzko gogoeta eginez eta kalitatea eta fidagarritasuna ebaluatuz, ezagutza eraikitzeko eta askotariko komunikazio-premiei eta -interesei erantzuteko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Testu idatzi eta multimodal koherenteak, kohesionatuak, egokiak eta zuzenak sortzea, hautatutako diskurtso-generoaren berezko konbentzioei jarraituz, ezagutza eraikitzeko eta komunikazio-eskaera zehatzei modu informatuan, eraginkortasunez eta sormenez erantzuteko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Hainbat iturritako informazioa gero eta modu autonomoagoan hautatzea eta kontrastatzea, informazio horren fidagarritasuna eta egokitasuna irakurketa-helburuen arabera ebaluatuz eta manipulazioeta desinformazio-arriskuak saihestuz; eta informazio hori ezagutza bihurtzea eta komunikatzea, ikuspuntu kritikoa eta pertsonala hartuz eta, aldi berean, jabetza intelektuala errespetatuz.",
+      "descriptores": []
+    },
+    {
+      "codigo": "7",
+      "descripcion": "Gero eta modu autonomoagoan aukeratzea eta irakurtzea hainbat obra —plazer- eta ezagutza-iturri gisa—, obren aniztasunari, konplexutasunari eta kalitateari dagokienez eboluzionatzen duen irakurle-ibilbidea eratuz; eta irakurketa-esperientziak partekatzea, nork bere irakurle-nortasuna eraikitzeko eta irakurketaren gizarte-dimentsioaz gozatzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "8",
+      "descripcion": "Euskal Herriko, Espainiako eta mundu osoko ondarearen parte diren literatura-obrak edo obra horien zatiak irakurtzea, interpretatzea eta baloratzea, metahizkuntza espezifikoa erabiliz eta esperientzia pertsonala eta literatura- eta kultura-ezagutzak mobilizatuz, askotariko testuen arteko loturak eta bestelako arte- eta kultura-adierazpenekiko loturak ezartzeko, norberaren kultura-nortasuna eraikitzeko, literaturaren gozamenerako aukerak zabaltzeko eta literatura-asmoko testuak sortzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "9",
+      "descripcion": "Hizkuntzaren egiturari eta haren erabilerei buruzko ezagutza mobilizatzea eta hizkuntza- eta diskurtso aukeraketei buruz gero eta autonomia handiagoz eta terminologia egokiarekin gogoeta egitea, hizkuntza-kontzientzia garatzeko, komunikazio-errepertorioa handitzeko eta ahozko eta idatzizko produkzio-trebetasunak nahiz ulermen eta interpretazio kritikoko trebetasunak hobetzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "10",
+      "descripcion": "Norberaren komunikazio-praktikak bizikidetza demokratikoaren, gatazken elkarrizketa bidezko kudeaketaren eta pertsona guztien eskubide-berdintasunaren zerbitzura jartzea, hizkuntza ez-diskriminatzailea erabiliz eta hitzaren bidez egiten diren botere-abusuak baztertuz, hizkuntzaren erabilera eraginkorra, etikoa eta demokratikoa bultzatzeko.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Euskal Autonomia Erkidegoko hizkuntza koofizialak eta beren barietateak ezagutzea eta baloratzea, arreta berezia eskainiz lurraldeko bertako hizkuntzei eta Espainiako beste hizkuntzei —ikasleen familia-hizkuntzak barne—, hizkuntzen oinarrizko berezitasun batzuk identifikatuz eta haien ezaugarrietako batzuk kontrastatuz ahozko eta idatzizko adierazpenetan eta adierazpen multimodaletan."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Hizkuntza-aurreiritziak eta -estereotipoak identifikatzea eta baztertzea, kultura-, hizkuntza- eta dialekto-aberastasuna errespetatuz eta baloratuz, inguruneko hizkuntza-aniztasunaren behaketatik abiatuta (digitala barne)."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Euskal Autonomia Erkidegoko hizkuntza-errealitatearen oinarrizko ezaugarriak ezagutzea oinarrizko ezagutza soziolinguistikoen bidez, eta euskararen aldeko hizkuntza-ohitura eta -portaera asertiboak eta enpatikoak hartzea, euskararen erabilera analogikoaren eta digitalaren, euskararen normalizazioaren eta euskal kulturaren transmisioaren aldeko jarrera afektiboa eta proaktiboa azalduz."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "1",
+      "descripcion": "Hizkuntzen funtzionamenduaz jabetzea, eta gogoeta interlinguistikoak hizkuntzak ikasteko eta beren komunikazio- -konpetentzia garatzeko egiten duen ekarpena baloratzea, hizkuntzen zenbait ezaugarri alderatuz."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Zenbait esparrutako ahozko testu eta testu multimodal errazen zentzu orokorra eta egitura ulertzea, baita komunikazio-premien araberako eta igorlearen asmoaren araberako informaziorik garrantzitsuena ere, ahozko ulermen-arazoak ebazteko estrategia egokiak erabiliz eta kodeen arteko elkarreragina aztertuz."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Ahozko testu eta testu multimodal errazen forma eta edukia baloratzea, erabilitako kanalaren kalitatea, fidagarritasuna eta egokitasuna eta erabilitako komunikazio-prozeduren eraginkortasuna ebaluatuz."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Euskal kulturaren aberastasuna ezagutzea, ahozko arte- eta kultura-adierazpenen bidez."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Zenbait plangintza-mailatako interes pertsonaleko eta gizarte- eta hezkuntza-intereseko gaiei buruzko ahozko narrazio eta azalpen errazak sortzea, diskurtso-generoen berezko konbentzioei jarraikiz, jariakortasunez, koherentziaz, kohesioz eta erregistro egokiz, zenbait euskarritan, eta hitzezko baliabideak eta hitzik gabekoak eraginkortasunez erabiliz."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Modu aktibo eta egokian parte hartzea ahozko elkarreragin informaletan, talde-lanean eta elkarrizketa moduko ahozko egoera formaletan, errespetuzko entzute aktiboko jarreraz eta elkarrizketa-kooperazioko eta hizkuntza-kortesiako estrategiez, betiere erabilera diskriminatzaile eta sexistak saihestuz, baita ingurune digitaletan ere."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Zenbait irakurketa-asmori erantzuten dioten hainbat esparrutako testu idatzi eta multimodal errazen zentzu orokorra, egitura, informaziorik garrantzitsuena eta igorlearen asmoa ulertzea eta interpretatzea, irakurriaren ulermenaren arazoakebazteko estrategia eta trebetasun emozional eta kognitibo egokiak gidatuta erabiliz eta behar diren inferentziak eginez."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Esparru publiko edo sozialeko zein esparru pertsonaleko eta/edo etxeko esparruko testu errazen forma eta edukia baloratzea, horien kalitatea, erabilitako kanalaren fidagarritasuna eta egokitasuna eta erabilitako komunikazio-prozeduren eraginkortasuna ebaluatuz."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Testu idatzi eta multimodal errazen idazketa planifikatzea, komunikazio-egoera, hartzailea, helburua eta kanala kontuan hartuz; zirriborroak idaztea eta berrikustea, berdinen arteko elkarrizketaren eta kontsulta-tresnen laguntzaz; eta azken testu koherente eta kohesionatua aurkeztea, erabilera sexista eta diskriminatzailerik gabeko erregistro egokiz."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Testuak aberasteko oinarrizko prozedurak txertatzea, diskurtso-, hizkuntza- eta estilo-alderdiak kontuan hartuz, zehaztasun lexikoz, zuzentasun ortografiko eta gramatikalez, eta erabilera sexista eta diskriminatzailerik gabeko hizkuntza librez, bai ingurune analogikoetan bai digitaletan."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Zenbait iturritako informazioa gero eta modu autonomoagoan aurkitzea, hautatzea eta kontrastatzea, informazio horren fidagarritasuna eta egokitasuna irakurketa-helburuen arabera kalibratuz; eta informazio hori antolatzea eta norberaren eskemetan integratzea, eta modu sortzailean berregitea eta komunikatzea, ikuspuntu kritikoa hartuz eta jabetza intelektualaren printzipioak errespetatuz."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Interes akademiko, pertsonal, sozial edo ekosozialeko askotariko gaiei buruzko ikerketa-lanak gero eta autonomia handiagoz eta zenbait euskarritan egitea, hautatutako informaziotik abiatuz."
+    },
+    {
+      "codigo": "6.3",
+      "competencia": "6",
+      "descripcion": "Teknologia digitalen erabilera kritiko, seguru, iraunkor eta osasungarriko ohiturak gero eta autonomia handiagoz erakustea, informazioaren bilaketari, egile-eskubideen errespetuari eta komunikazioari dagokienez."
+    },
+    {
+      "codigo": "7.1",
+      "competencia": "7",
+      "descripcion": "Aurrez egindako hautaketatik abiatuta, testuak aukeratzea eta irakurtzea, norberaren gustuei, interesei eta premiei jarraikiz, eta irakurle-ibilbidea eta irakurketaren esperientzia jasota utziz."
+    },
+    {
+      "codigo": "7.2",
+      "competencia": "7",
+      "descripcion": "Askotariko euskarritako irakurketaren esperientzia partekatzea, ezagutza, gozamen eta garapen pertsonalerako iturri gisa baloratuz eta obraren zentzua norberaren esperientzia pertsonalarekin eta irakurlearekin erlazionatuz."
+    },
+    {
+      "codigo": "8.1",
+      "competencia": "8",
+      "descripcion": "Irakurritako obren interpretazioa azaltzea eta argudiatzea, jarraibide eta ereduen laguntzaz eta obra osatzen duten elementuen barne-erlazioek obraren zentzuarekin duten loturaren azterketatik abiatuta, literatura-generoen eta -azpigeneroen konfigurazioari erreparatuz."
+    },
+    {
+      "codigo": "8.2",
+      "competencia": "8",
+      "descripcion": "Irakurritako testuen eta bestelako idatzizko edo ahozko testuen edo testu multimodalen eta bestelako adierazpen artistiko eta kulturalen artean lotura arrazoituak ezartzea —gidatuta—, gai, tradizio, topiko, egitura, hizkuntza eta balio etiko eta estetikoen arabera, irakurleak irakurketan duen inplikazioa eta erantzun pertsonala erakutsiz."
+    },
+    {
+      "codigo": "8.3",
+      "competencia": "8",
+      "descripcion": "Testu pertsonalak edo kolektiboak sortzea, literatura-asmoz, estilo-kontzientziaz, zenbait euskarritan eta beste hizkuntza artistiko eta ikus-entzunezko batzuen laguntzaz, askotariko literatura-generoen eta -estiloen konbentzio formalak erabiltzen dituzten obren edo horien zati adierazgarrien irakurketatik abiatuz."
+    },
+    {
+      "codigo": "9.1",
+      "competencia": "9",
+      "descripcion": "Norberaren testuak modu gidatuan berrikustea eta hobetzeko proposamenak egitea, aldaketak metahizkuntza espezifiko batekin eta gogoeta metalinguistikotik eta interlinguistikotik abiatuta argudiatuz; eta irakurriaren ulermenerako arazo batzuk identifikatzea eta zuzentzea, hizkuntzari eta haren erabilerari buruzko ezagutza esplizituak erabiliz."
+    },
+    {
+      "codigo": "9.2",
+      "competencia": "9",
+      "descripcion": "Komunikazio-asmoaren eta igorleak egiten dituen hizkuntza-hautespenen arteko erlazioa azaltzea eta argudiatzea, baita horrek hartzailearengan dituen efektuak ere, hizkuntzaren ezagutza esplizitua eta metahizkuntza espezifki oa erabiliz."
+    },
+    {
+      "codigo": "9.3",
+      "competencia": "9",
+      "descripcion": "Hizkuntzaren funtzionamenduaren oinarrizko alderdiei buruzko orokortasunak formulatzea, enuntziatuen manipulazio, konparazio eta eraldaketatik, hipotesien formulaziotik eta kontraadibideen bilaketatik abiatuta, metahizkuntza espezifikoa erabiliz eta hiztegi, eskuliburu eta gramatika analogiko eta/edo digitalak modu gidatuan kontsultatuz."
+    },
+    {
+      "codigo": "10.1",
+      "competencia": "10",
+      "descripcion": "Hizkuntzaren erabilera diskriminatzaileak, hitzaren bidez egiten diren botere-abusuak eta hizkuntzaren erabilera manipulatzaileak identifikatzea eta baztertzea, erabilitako hizkuntza-, testu- eta diskurtso-elementuen gogoetatik eta azterketatik abiatuta, eta pertsonen arteko komunikazioa arautzen duten hitzik gabeko elementuen gogoetatik eta azterketatik abiatuta, ingurune analogiko eta digitaletan."
+    },
+    {
+      "codigo": "10.2",
+      "competencia": "10",
+      "descripcion": "Gatazkak elkarrizketaren bidez kudeatzeko eta adostasunak bilatzeko estrategiak erabiltzea, esparru pertsonalean zein hezkuntzaren eta gizartearen esparruan."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. HIZKUNTZAK ETA BEREN HIZTUNAK",
+      "titulo": "HIZKUNTZAK ETA BEREN HIZTUNAK",
+      "items": [
+        "*Oinarrizko kontzeptu soziolinguistikoak.",
+        "Norberaren hizkuntza-biografia eta ikastetxeko hizkuntza-aniztasuna behatzeko jarraibideak.",
+        "Ikastetxeko hizkuntzei buruzko oinarrizko nozioak: agurtzeko, eskerrak emateko eta barkamena eskatzeko formulak.",
+        "Hizkuntza familiak eta munduko hizkuntzak, ikastetxeko hizkuntzei dagokienez. *Gogoeta interlinguistikoaren hastapenetarako oinarrizko estrategiak.",
+        "Eleaniztasunaren eta aniztasun dialektalaren arteko desberdintasunak. *Euskararen barietate dialektalak. Hurbileko inguruneko euskalkiaren oinarrizko ezaugarriak. *Euskararen historia, jatorria eta lehen lekukotzak. *Euskara batua: historia eta bilakaera. Oinarrizko arauak. *Bizitza pertsonaleko eta eskola- eta gizarte-bizitzako askotariko esparruetan euskararen erabileraren aldeko interesa, ekimena eta portaera proaktiboa. *Espainiako hizkuntzak: jatorria, banaketa geografikoa eta oinarrizko nozioak.",
+        "Zeinu-hizkuntzen oinarrizko nozioak.",
+        "Espainieraren barietate dialektal nagusiak eta horien ezaugarririk adierazgarrienak, bertakoari arreta berezia jarriz. *Hizkuntza-aurreiritziak eta -estereotipoak identifikatzeko oinarrizko estrategiak, hizkuntzaren erabilera sexista barne, eta horiek saihesteko moduak.",
+        "Euskararen normalizazioaren aldeko eta euskal kulturaren aldeko herri-mugimenduak eta erakundeak: Euskal Kantagintza Berria, Korrika, Euskal Kultur Erakundea (EKE), EIMA…"
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. KOMUNIKAZIOA",
+      "titulo": "KOMUNIKAZIOA",
+      "items": [
+        "Zenbait esparrutako ahozko eta idatzizko testuak eta testu multimodalak sortzeko, ulertzeko eta analisi kritikoa egiteko estrategiak, alderdi hauei arreta eskainiz:"
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "B.1",
+      "bloque": "B.1. KOMUNIKAZIOA · Testua eta testuingurua",
+      "titulo": "KOMUNIKAZIOA · Testua eta testuingurua",
+      "items": [
+        "*Komunikazio-egitatearen osagaien nozioak. *Gaia. Testuaren asmoa. *Oinarrizko testu-sekuentziak, arreta berezia eskainiz narrazioari, deskripzioari, elkarrizketari eta azalpenari. *Testuaren propietateak: koherentzia, kohesioa eta egokitasuna. Oinarrizko nozioak. *Diskurtso-generoak, esparru pertsonalekoak (solasaldia, email...), hezkuntza-esparrukoak (dekalogoa, ahozko azalpena...) eta esparru sozialekoak, barnean direla erakundeenak, saresozialenak eta hedabideenak (informazio-liburuxka, bandoa…).",
+        "Ahozkotasunarekin lotzen diren euskal kultura-tradizioak, hala nola Santa Ageda, Olentzero edo inauteriak.",
+        "Euskal zinema eta antzerkia.",
+        "Euskal musika-ondare tradizionalaren eta garaikidearen erreferentziazko abestiak.",
+        "Testu ikoniko eta hitzezkoen eta multimodalen irudia eta elementu paratestualak aztertzeko jarraibideak. *Hizkuntzaren eta irudien erabilera ez-sexistarako jarraibideak."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "B.2",
+      "bloque": "B.2. KOMUNIKAZIOA · Ulermena",
+      "titulo": "KOMUNIKAZIOA · Ulermena",
+      "items": [
+        "*Ahozko eta irakurriaren ulermenerako estrategiak. Testuaren zentzu globala eta zatien arteko erlazioa, informazio garrantzitsuaren aukeraketa eta atxikipena. Igorlearen asmoa, testuinguru-elementu esplizituetatik abiatuta. *Testuetan hitzezko hizkuntzaren eta hitzik gabekoaren eta ikonikoaren erabilera diskriminatzaileak hautemateko estrategiak. *Generoen testu-egiturak ezagutzeko jarraibideak. *Ahozko eta idatzizko testuen eta testu multimodalen forma eta edukia aztertzeko eta baloratzeko jarraibideak.",
+        "Euskal tradizioko atsotitzak eta esaerak ezagutzeko eta ulertzeko jarraibideak."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "B.3",
+      "bloque": "B.3. KOMUNIKAZIOA · Produkzioa",
+      "titulo": "KOMUNIKAZIOA · Produkzioa",
+      "items": [
+        "*Informazioa bilatzearekin, testuinguruan kokatzearekin eta berrikustearekin lotzen diren ahozko produkzio formalerako eta sormenezko produkziorako estrategiak. Audientziaren eta esposizio-denboraren araberako egokitzapena. Hitzezkoak ez diren elementuak. Ahozkotasun formalaren diskurtso- eta hizkuntza-ezaugarriak. *Testuen idatzizko produkziorako estrategiak, plangintzarekin, idazketarekin, berrikuspenarekin, edizioarekin eta hainbat euskarritan hedatzearekin lotzen direnak.",
+        "Generoen ereduak erreproduzitzeko patroiak. *Pentsamendua antolatzeko eta emozioak kudeatzeko idazketaren erabilerak: idazketa automatikoa, oharrak hartzea, eskemak, buru-mapak, antolatzaile grafikoak, definizioak, laburpenak, eta abar. *Zuzentasun lexikoa."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "B.4",
+      "bloque": "B.4. KOMUNIKAZIOA · Elkarreragina",
+      "titulo": "KOMUNIKAZIOA · Elkarreragina",
+      "items": [
+        "*Ahozko eta idatzizko elkarreragin informalerako estrategiak, testuinguru analogikoetan eta digitaletan: hitza hartzeko eta hitza uzteko estrategiak. *Elkarrizketa-kooperazioa eta hizkuntza-kortesia; entzute aktiboa, asertibitatea eta gatazken elkarrizketa bidezko kudeaketa, genero-ikuspegitik."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "B.5",
+      "bloque": "B.5. KOMUNIKAZIOA · Informazioalfabetatzea",
+      "titulo": "KOMUNIKAZIOA · Informazioalfabetatzea",
+      "items": [
+        "*Informazioa bilatu eta hautatzeko estrategiak, fidagarritasun-, kalitate- eta egokitasun-irizpideak erabiliz; informazioaren azterketa, balorazioa, berrantolaketa eta sintesia —norberaren eskemetan— eta informazioa ezagutza bihurtzeko estrategiak; sormenezko komunikazioa eta hedapena, jabetza intelektuala errespetatzen duena. *Eskola-proiektuak egiteko plataforma birtualak modu seguruan eta sormenez erabiltzeko jarraibideak, horien erabilera baztertzailea eta sexista identifikatuz. *Etiketa digitala eta desinformazio-arriskuak. Pentsamendu kritikoko estrategiak, manipulazioa eta pribatutasunaren urraketa saihesteko."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "B.6",
+      "bloque": "B.6. KOMUNIKAZIOA · Hizkuntzaelementuen onarpena etadiskurtsoerabilera",
+      "titulo": "KOMUNIKAZIOA · Hizkuntzaelementuen onarpena etadiskurtsoerabilera",
+      "items": [
+        "Hizkuntza-baliabideak identifikatzeko, ezaugarritzeko eta erabilera gogoetatsua egiteko estrategiak, igorleak ahozko eta idatzizko testuetan eta testu multimodaletan duen inplikazioa erakusteko: deixi-formak (pertsonala, denborazkoa eta espaziala) eta oinarrizko modalizazio-prozedurak. *Perpausaren osagaiak lotzeko euskararen berezko hizkuntza-elementuak (aditz-komunztadura eta deklinabidea).",
+        "Erregistroa komunikazio-egoerara egokitzeko hizkuntza-baliabideak. *Hizkuntzen erabilera ez-diskriminatzailerako hizkuntza-baliabideak. *Kohesio-mekanismoak identifikatzeko, ezaugarritzeko eta erabilera gogoetatsua egiteko estrategiak. Denbora, azalpen, ordena, kontraste eta abarrerako testu-lokailuak. Barne-erreferentziako mekanismo gramatikalak (ordezkatze pronominalak) eta lexikoak (errepikapenak, sinonimoak, hiperonimoak eta elipsiak). *Testuetan aditz-formak ezagutzeko eta koherentziaz erabiltzeko jarraibideak. Narrazioko iraganaldiko denborak. Kontakizun-diskurtsoko denbora-korrelazioa. *Testuen hizkuntza-zuzentasuna eta berrikuspen ortografikoa eta gramatikala. Euskarri analogikoko edo digitaleko hiztegien, kontsulta-eskuliburuen eta zuzentzaile ortografikoen erabilera. *Oinarrizko puntuazio-zeinuak, idatzizko testua antolatzeko mekanismo gisa. Esanahiarekin duten lotura."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "B.7",
+      "bloque": "B.7. KOMUNIKAZIOA · Lanaren antolaketa eta ikaskuntzari buruzko gogoeta",
+      "titulo": "KOMUNIKAZIOA · Lanaren antolaketa eta ikaskuntzari buruzko gogoeta",
+      "items": [
+        "Banakako eta taldeko lana testuinguru analogiko eta digitaletan antolatzeko estrategiak, genero-ikuspegiarekin.",
+        "Autokonfiantza, ekimena eta ikaskuntzari buruzko gogoeta. Errorea prozesuaren parte gisa eta hobetzeko aukera gisa.",
+        "Estrategia kooperatibo errazak, eta talde-lanean esleitutako banako erantzukizunak bere gain hartzeko estrategiak. *Autoebaluaziorako, autorregulaziorako eta koebaluaziorako erabili ohi diren estrategia eta tresna analogikoak eta digitalak, eta kooperatiboak eta indibidualak."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "C.1",
+      "bloque": "C.1. LITERATURA-HEZKUNTZA · Irakurketa autonomoa",
+      "titulo": "LITERATURA-HEZKUNTZA · Irakurketa autonomoa",
+      "items": [
+        "*Irakurketan gero eta inplikazio autonomoagoa, emakumezko eta gizonezko autoreen obrak barne hartzen dituzten askotariko testuen aurreaukeraketatik abiatuta, eta ereduetan oinarritutako irakurketa-praktikari buruz eta testuei buruz gogoeta egiteko estrategiak.",
+        "Askotariko obrak orientatuta eta genero-ikuspegiarekin hautatzeko jarraibideak, eskolako liburutegiaren eta eskura dagoen liburutegi publikoaren miaketa gidatuan oinarrituta.",
+        "Euskal literatura- eta musika-ondarearekin lotura emozionalak eta kulturalak ezartzeko estrategiak. *Irakurketa-esperientzia ereduen bidez adierazteko tresnak, baita irakurritako testuak modu kritikoan eta sormenez birsortzeko eta menderatzeko modu desberdinak adierazteko tresnak. *Esperientzia pertsonala eta irakurketa-esperientzia mobilizatzeko estrategia kognitiboak eta emozionalak, irakurritako obraren eta gaurkotasuneko alderdien artean loturak ezartzeko, baita beste testu eta adierazpen artistiko eta kultural batzuekin ere.",
+        "Berdinen artean irakurketak gomendatzeko estrategiak, idatziz zein ahoz, eta askotariko euskarritan.",
+        "Literatura- eta irakurle-zirkuluarekin lotzen diren kultura-egintzetan modu aktiboan eta orekatuan parte hartzeko interesa."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "C.2",
+      "bloque": "C.2. LITERATURA-HEZKUNTZA · Irakurketa gidatua",
+      "titulo": "LITERATURA-HEZKUNTZA · Irakurketa gidatua",
+      "items": [
+        "*Gazte-literatura garaikideko eta literatura-ondare unibertsaleko obra garrantzitsuen eta horien zatien irakurketa, gaikaedo genero-ibilbideetan inskribatuta, emakumezko eta gizonezko idazleenak. *Euskal kultura-ondareko obren eta horien zatien irakurketa, hala nola mitologia, elezaharrak, herri-ipuinak… *Estrategia kognitibo eta emozionalak eta genero-analisiko eta analisi kritikoko ereduak, erabilitako obren interpretazioaren eraikuntza partekaturako, irakurketaren aurretik, bitartean eta ondoren. Literatura-solasaldiak. *Literatura-kontaketa. Oinarrizko ezaugarriak. Egitura: hasierako formak, garapen kronologikoa eta amaiera. *Poesia, bertsolaritza eta kopla zaharrak. Oinarrizko ezaugarriak. Baliabide erretorikoak eta erritmikoak, bertsogintza eta gaiak.",
+        "Antzerkia. Oinarrizko ezaugarriak. Antzez-testuaren alderdi formalak. *Literatura-generoaren oinarrizko elementuen eta obraren zentzua eraikitzearen arteko erlaziorako jarraibideak. Baliabide espresiboen balioaren oinarrizko analisia; hartze-prozesuan dituen efektuak. *Irakurritako testuak beste testu batzuekin, beste arte- eta kultura-adierazpen batzuekin eta fikziozko forma berriekin lotzeko eta alderatzeko jarraibideak, gaien, topikoen, egituren eta hizkuntzen arabera. *Literatura-obren eta horien zatien interpretazio eta balorazio pertsonala prozesu eta euskarri dibertsifikatuen bidez adierazteko estrategiak, ereduak eta jarraibideak. *Genero-ikuspegia duen irakurketa.",
+        "Testuen irakurketa espresiboa, dramatizazioa eta errezitazioa, inplikatuta dauden ulermen-, menderatze- eta oralizazio-prozesuekin lotuta. *Testuak sortzeko jarraibideak, hizkuntzaren erabilera sexista eta diskriminatzailea saihestuz, literatura-hizkuntzaren konbentzioak menderatuz eta emandako ereduei erreferentzia eginez (imitazioa, eraldaketa, jarraipena, eta abar)."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. HIZKUNTZARI BURUZKO GOGOETA",
+      "titulo": "HIZKUNTZARI BURUZKO GOGOETA",
+      "items": [
+        "*Hizkuntza-sistemari buruzko nork bere ondorioak gidatuta eraikitzeko eta komunikazio-unitateak behatu, alderatu eta sailkatzeko estrategiak, metahizkuntza espezifikoa erabiliz. *Ahozko hizkuntzaren eta idatzizko hizkuntzaren arteko alde nabarmenak eta elkarguneak behatzeko jarraibideak, alderdi sintaktikoak, lexikoak eta pragmatikoak kontuan hartuta. *Hizkuntzaren —sistema gisa— eta haren oinarrizko unitateen oinarrizko nozioak, maila desberdinak kontuan hartuta: soinua eta idazketa-sistema, hitzak (forma eta esanahia), diskurtsoan duten antolaketa (hitzen ordena, perpausen osagaiak edo esanahien arteko lotura). *Kategoria gramatikalak eta funtzio sintaktikoak. Prozedura lexikoak (afixuak) eta sintaktikoak, kategoria aldaketarako. *Perpaus bakunaren eskema semantikoen eta sintaktikoen arteko erlazioa. Eskema horien arabera enuntziatuak behatzeko eta eraldatzeko jarraibideak eta beharrezko terminologia sintaktikoaren erabilera. Hitzen ordena eta komunztadura. *Hitzak eskuratzeko eta osatzeko prozedurak, eta sexismoaren eragina hitzetan. Esanahian gertatzen diren aldaketei buruzko gogoeta, hitzen eta haien balio denotatiboen eta konnotatiboen arteko erlazio semantikoak, testuinguruaren eta komunikazio-asmoaren arabera. *Hizkuntzen arteko kalkoak eta transferentzia negatiboak identifikatzeko eta zuzentzeko oinarrizko estrategiak."
+      ],
+      "codigos_items": []
+    }
+  ],
+  "comunidad": "pais-vasco",
+  "idioma": "eu"
+}

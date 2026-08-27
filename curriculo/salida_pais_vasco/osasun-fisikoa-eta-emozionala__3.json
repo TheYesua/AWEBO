@@ -1,0 +1,123 @@
+{
+  "materia_oficial": "OSASUN FISIKOA ETA EMOZIONALA",
+  "materia": "Osasun Fisikoa eta Emozionala",
+  "etapa": "ESO",
+  "ciclo": "3º ESO",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "3º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Askotariko barne- eta kanpo-logikadun egoera motorretan jardutea, ezagutza motorra zabalduz, norberaren esku-hartzea baloratuz eta egokituz eta bizitza aktibo eta osasungarri baten ezaugarriak ezagutuz, ikasleen mugimendu-premiari erantzuteko eta haien osasun fisikoa hobetzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Jardun motorrean emozioak kudeatzea, autonomia progresiboarekin eta kontzientzia eta erregulazio emozionala lantzearen bidez, jarduera fisikoez gozatzeko eta ongizate pertsonala lortzen eta estresa murrizten laguntzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Egoera soziomotorren bidez beste pertsona batzuekin harreman onak izateko gaitasuna garatzea, taldearen giro positiboa sustatuz, jarduera fisikoaz gozatzeko eta gizarte-osasuna lortzen eta estresa murrizten laguntzeko.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Proposamen ludomotor eta artistiko-espresibo berriak sortzea joko eta kirol sorta handi batekin esperimentatzearen bidez, haien barne- eta kanpo-logika aztertuz."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Jarduera artistiko-espresiboetan eta kirol-joko tradizional eta/edo egokituetan aktiboki parte hartzea, prozesua eta lortutako azken emaitza azalduz eta norberaren eta gainerakoen esperientziak baloratuz."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Bizitza aktibo eta osasungarri baten ondorio positiboak baloratzea, askotariko testuinguru inklusiboetan jarduera fisiko bizi baten onurak ezagutuz, biziz eta gozatuz."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "1",
+      "descripcion": "Proposamen artistiko-espresiboak era gidatuan garatzea euskal tradizioaren eta beste kultura batzuen ezagutzaren bidez, norberaren gaitasunekiko konfiantza agertuz."
+    },
+    {
+      "codigo": "1.5",
+      "competencia": "1",
+      "descripcion": "Bizitza aktibo eta osasungarri baten ezaugarriak (fisiologikoak, emozionalak, dietetikoak eta abar) eta jardun motor biziaren ondorio positiboak ezagutzea, haren onurak ezagutuz, biziz eta gozatuz."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Norberaren emozioak kontrolatzea, faktore abiarazleak, akzioak eta eragiten dituzten ondorioak aztertuz eta erregulazio emozionaleko hainbat teknika aplikatuz."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Erregulazio emozionaleko hainbat teknika praktikan jartzea, emozioez jabetuz."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Jarduera fisikoa ongizate pertsonalaren eta harreman- -ongizatearen iturri gisa baloratzea, jardun motorrez gozatuz eta estresa murrizteko aplikatuz."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Klima positiboa sortzen eta gatazken kudeaketa dialogikoa egiten laguntzea, errespetua agertuz, desberdintasunak onartuz eta gizarte-trebetasunak erabiliz."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Jokoak eta kirolak",
+      "titulo": "Jokoak eta kirolak",
+      "items": [
+        "Joko eta kirol indibidual edo kolektiboen berezko akzioei eta kirol-keinuei lotutako trebetasun motorrak.",
+        "Joko eta kirol indibidual edo kolektiboen berezko oinarrizko estrategiak.",
+        "Euskal tradizio ludikoa: “jokoa” eta “jolasa’’.",
+        "Beste kultura batzuetako tradizio ludikoa: kultura-aniztasunaren balioa.",
+        "Jolasak eta dantzak sortzeko prozesuak.",
+        "Kirol alternatiboak eta kirol egokitua.",
+        "Barneko eta kanpoko logika aztertzeko elementuak.",
+        "Egindako jarduketak aztertzeko prozedurak."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Gorputz-adierazpena",
+      "titulo": "Gorputz-adierazpena",
+      "items": [
+        "Mugimendua nahiak eta sentimenduak, gogo-aldarteak eta emozioak jakinarazi eta adierazteko baliabide eta eguneroko egoera eta ekintzen adierazpen gisa.",
+        "Gorputza, komunikazio eta adierazpen kreatiborako tresna: gorputzaren eta haren aukerak (keinu, jarrera, zentzumen, adierazpen eta mugimendukoak) ezagutu eta menderatzeko estrategiak.",
+        "Hainbat erritmo zein gune eta objektuen erabilera konbinatuko dituzten adierazpen dramatikoko eta gorputz-adierazpeneko jokoak eta jarduerak.",
+        "Konfiantza- eta integrazio-dinamikak.",
+        "Euskal dantzak eta beste kultura batzuetako dantza tradizionalak.",
+        "Inprobisazio eta sorkuntza kolektiboak eta indibidualak bat-bateko komunikazio-baliabide gisa."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Ongizate fisikoa, emozionala eta soziala",
+      "titulo": "Ongizate fisikoa, emozionala eta soziala",
+      "items": [
+        "Ongizate fisikoa Oinarrizko ezaugarri fisikoak eta egoera fisikoarekin eta osasunarekin duten lotura.",
+        "Egoera fisikoa eta osasunarekin duen lotura (dimentsio guztietan).",
+        "Ariketa fisikoak pertsonaren osasunean eta garapen integralean dituen ondorio positiboak.",
+        "Ohitura jakin batzuek (hala nola egoneko bizitzak), nutrizio-desorekek eta hidratazio desegokiak osasunean dituzten ondorioak.",
+        "Jarduera fisikoetan eta kirol-jardueretan aritzean gertatzen diren lesiorik ohikoenetan egin beharreko oinarrizko jarduketak.",
+        "Nutrizioa eta jarduera fisikoa: osasunerako nutrizio orekatua.",
+        "Ongizate emozionala"
+      ],
+      "codigos_items": []
+    }
+  ],
+  "comunidad": "pais-vasco",
+  "idioma": "eu"
+}

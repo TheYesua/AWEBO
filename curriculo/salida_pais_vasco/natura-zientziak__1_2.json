@@ -1,0 +1,234 @@
+{
+  "materia_oficial": "NATURA ZIENTZIAK",
+  "materia": "Natura Zientziak",
+  "etapa": "ESO",
+  "ciclo": "1º ESO y 2º ESO",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º ESO",
+    "2º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Fenomeno eta prozesu natural nagusien kausak ulertzea eta erlazionatzea, arrazoibide zientifikoa, legeak eta teoria zientifikoak eta/edo pentsamendu konputazionala erabiliz, problemak ebazteko edo eguneroko bizitzako prozesuak azaltzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Informazioa identifikatzea, lokalizatzea eta hautatzea, plataforma teknologikoak eta askotariko baliabideak eraginkortasunez erabiliz, zientziekin lotutako galderak banaka zein elkarlanean ebazteko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Informazio eta datu zientifikoak interpretatzea eta transmititzea, eta horiei buruzko argudioak ematea, hainbat formatu erabiliz zientzien kontzeptuak eta prozesuak aztertzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Behaketak galdera moduan adieraztea, hipotesiak formulatzea eta hipotesi horiek esperimentazio zientifikoaren bidez frogatzea, eta ikerketa-proiektuak garatzea, metodologia zientifikoen urratsei jarraituz zientziekin zerikusia duten alderdiak arakatzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Zientzien oinarrizko arauak eta jarraibideak balidatzea, IUPACen hizkuntza, hizkuntza matematikoa, neurketa-unitate zuzenak eta laborategia segurtasunez erabiliz, hizkuntza zientifikoaren izaera unibertsala eta ikerkuntzan eta zientzian hainbat herrialde eta kulturaren arteko komunikazio fidagarriaren beharra aitortzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Ekintza jakin batzuek ingurumenean eta osasunean dituzten ondorioak aztertzea, zientzien funtsetan oinarrituz, garapen iraunkorrarekin bateragarriak diren eta planetaren osasun indibiduala eta kolektiboa mantentzea eta hobetzea ahalbidetzen duten ohitura arduratsuak sustatzeko eta hartzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "7",
+      "descripcion": "Zientzia etengabe aldatzen eta eboluzionatzen ari den eraikuntza kolektibo gisa ulertzea eta balioestea, non zientzian diharduten pertsonek parte hartzeaz gain, gizarteko gainerako pertsonekiko elkarrekintza ere eskatzen duen, aurrerapen teknologikoan, ekonomikoan, ingurumenekoan eta sozialean eragina duten emaitzak lortzeko.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Eguneroko fenomeno natural garrantzitsuenak azaltzea, printzipio, teoria eta lege zientifiko egokien arabera aztertzea eta adieraztea argudioak erabiliz."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Prozesu naturalak azaltzea, ereduen eta diagramen bidez irudikatuz, eta, beharrezkoa denean, ingeniaritzako diseinuaren urratsak erabiliz (arazoa identifikatzea, miatzea, diseinatzea, sortzea, ebaluatzea eta hobetzea), tresna analogikoen eta digitalen bidez."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Problemak ebaztea edo prozesu naturalak azaltzea, emandako ezagutzak, datuak eta informazioa, arrazoibide logikoa, pentsamendu konputazionala edo baliabide digitalak erabiliz."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "1",
+      "descripcion": "Fenomeno naturalei buruzko problema baten soluzioa kritikoki aztertzea, beharrezkoa denean birformulatuz."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Modu egokian eta moldakorrean lan egitea askotariko baliabideekin, baliabide tradizionalekin eta digitalekin, gaiak ebaztean, informazioa kontsultatzean eta edukiak sortzean, iturri fidagarrienak irizpidez hautatuz eta behar bezala aipatuz."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Informazioa oinarri zientifikoarekin aztertzea, sasizientzietatik, gezurretatik, funtsik gabeko sinesmenetatik eta abar bereiziz, eta horien aurrean jarrera eszeptikoa edukiz."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Eraikuntzako eta hezkidetzako elkarrekintzak ezartzea, jarduera zientifikoetan kolaborazio-lanaren berezko estrategiak erabiliz, aniztasuna errespetatuz eta inklusioa bultzatuz."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Kontzeptuak definitzea, eta fenomeno eta prozesu zientifikoak deskribatzea, informazioa hainbat formatutan aztertuz (ereduak, grafikoak, taulak, diagramak, formulak, eskemak, sinboloak, web-orriak...), jarrera kritikoa mantenduz eta ondorio arrazoituak eskuratuz."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Informazio zientifikoa modu argian komunikatzea, hizkuntza-egitura, terminologia eta formatu egokiak erabiliz (ereduak, grafikoak, taulak, bideoak, txostenak, diagramak, formulak, eskemak, sinboloak, eduki digitalak...)."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Egiaztatzeko modukoak diren galderak eta hipotesiak planteatzea, metodo zientifikoak erabiliz eta fenomeno naturalak azaltzen eta horiei buruzko iragarpenak egiten saiatuz."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Fenomeno zientifikoei buruzko esperimentuak egitea eta datu kuantitatiboak eta/edo kualitatiboak hartzea, baliabide, tresna analogiko eta digital edo teknika egokiak zuzen eta gero eta autonomia handiagoz erabiliz."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Esperimentazioan, araketan edo ikerketa zientifikoko proiektuan lortutako emaitzak interpretatzea, beharrezkoa denean, tresna matematikoak eta teknologikoak erabiliz."
+    },
+    {
+      "codigo": "4.4",
+      "competencia": "4",
+      "descripcion": "Esperimentazioaren, behaketaren eta ebidentzia zientifikoen bidez lortutako informazioa eta ondorioak aurkeztea, formatu analogiko eta/edo digital egokia erabiliz (taulak, grafikoak, txostenak, etab.)."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Komunitate zientifikoarekin eraginkortasunez komunikatzea, zientziaren oinarrizko arauak behar bezala erabiliz, neurketa-unitateen erabilera, tresna matematikoak eta formulazio- eta nomenklatura-arauak barne."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Norberaren eta taldearen osasuna, ingurumenaren kontserbazio jasangarria eta erabilera zientifikoko instalazioekiko errespetua babestea, zientziaren espazio espezifikoen —hala nola zientzien laborategia— erabilera-arauak praktikan jarriz."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Ekintza jakin batzuek ingurumenean eta izaki bizidunen osasunean dituzten ondorioak ezagutzea, zientzien oinarriak eta irizpide zientifikoak aplikatuz."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Biodibertsitatea babestearen, ingurumena zaintzearen, inguruneko izaki bizidunak babestearen, garapen iraunkorraren eta bizi-kalitatearen garrantziaz argudiatzea, datu eta arrazoi zientifikoak erabiliz."
+    },
+    {
+      "codigo": "6.3",
+      "competencia": "6",
+      "descripcion": "Ingurune hurbilean ohitura jasangarriak proposatzea eta hartzea, norberaren eta besteen jarduerak aztertuz eta norberaren arrazoibideetan, eskuratutako ezagutzetan eta eskura dagoen informazioan oinarrituz."
+    },
+    {
+      "codigo": "6.4",
+      "competencia": "6",
+      "descripcion": "Ohitura osasungarriak eta arduratsuak proposatzea eta hartzea, norberaren eta besteen ekintzak aztertuz (elikadura, higienea, gorputz-jarrera, jarduera fisikoa, pertsonen arteko harremanak, atsedena, pantailekiko esposizioa, estresaren kudeaketa, sexu-praktiketan segurtasuna, substantzien kontsumoa...), eta norberaren arrazoibideetan, eskuratutako ezagutzetan eta eskura dagoen informazioan oinarrituz."
+    },
+    {
+      "codigo": "6.5",
+      "competencia": "6",
+      "descripcion": "Inguruneko paisaia eta ekosistemak interpretatzea, bertako elementuak aztertuz eta giza ekintza jakin batzuen ingurumen-inpaktuari buruz hausnartuz."
+    },
+    {
+      "codigo": "7.1",
+      "competencia": "7",
+      "descripcion": "Zientzia etengabe eraikitzen ari den prozesua dela eta zientziak teknologian, gizartean eta ingurumenean dituen ondorioak onartzea eta balioestea, zientziako gizon-emakumeen analisi historikoaren eta aurrerapen zientifikoen bidez."
+    },
+    {
+      "codigo": "7.2",
+      "competencia": "7",
+      "descripcion": "Ingurunean ingurumen- eta gizarte-premia garrantzitsuenak detektatzea, horiei soluzio jasangarria, sortzailea eta genero-irizpidea kontuan hartuta emanez."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Oinarrizko trebetasun zientifikoak eta proiektu zientifikoak:",
+      "titulo": "Oinarrizko trebetasun zientifikoak eta proiektu zientifikoak:",
+      "items": [
+        "Ikerketa zientifikoaren oinarrizko metodologiak:",
+        "Galdera, hipotesi eta aieru zientifikoak.",
+        "Informazioa bilatzeko eta kolaboraziorako estrategiak: tresna digitalak eta zientzian maiz erabiltzen diren formatuak (aurkezpena, grafikoa, bideoa, posterra, txostena, etab.).",
+        "Informazio zientifikoko iturri fidagarriak: errekonozimendua eta erabilera.",
+        "Gai zientifiko jakin bati erantzuteko saiakuntzak eta landa-lana, tresnak eta espazioak (laborategia, ikasgelak, ingurunea…) modu egokian erabiliz.",
+        "Fenomeno naturalak behatzeko eta horiei buruzko datuak hartzeko metodoak.",
+        "Emaitzen analisia pentsamendu logiko edo konputazionalaren bidez.",
+        "Prozesuen, emaitzen edo ideien komunikazioa formatu analogiko edo digitaletan (aurkezpena, grafikoa, bideoa, posterra, txostena…).",
+        "Espazio bakoitza erabiltzeko arauak, horrela norberaren eta komunitatearen osasuna, sareetako segurtasuna eta ingurumenarekiko errespetua ziurtatuz eta babestuz.",
+        "Oinarrizko hizkuntza zientifikoa, unitateen sistemen maneiu egokia barne.",
+        "Zientziek gizartearen aurrerapenean eta hobekuntzan dituzten mugarri historiko eta gaur egungo garrantzitsuenetan zientzialariek duten zereginaren eta kultura zientifikoaren balorazio kritikoaren jarraibideak."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Materia: Materia bizia eta ez-bizia",
+      "titulo": "Materia: Materia bizia eta ez-bizia",
+      "items": [
+        "Materia eta aldaketa Teoria zinetiko-molekularra: materiari buruzko oharretan aplikazioa, haren propietateak, agregazio-egoerak, egoera-aldaketak, eta nahasteen eta disoluzioen eraketa azalduz.",
+        "Sistema materialekin lotutako esperimentuak: beren propietateen, osaeraren eta sailkapenaren ezagupena eta deskribapena.",
+        "Sistema materialak: jasaten dituzten aldaketa moten azterketa, aldaketa horien sorburuak aldaketa horien ondorioekin lotuz.",
+        "Eguneroko bizitzarako material interesgarriak: erabilerak, propietateak eta jasangarritasuna.",
+        "Zelula Zelula izaki bizidunen egitura-unitate eta unitate funtzional gisa.",
+        "Zelula prokariotoa eta bere zatiak.",
+        "Animalien zelula eukariotoa eta bere zatiak.",
+        "Landareen zelula eukariotoa eta bere zatiak.",
+        "Zelula moten behaketa eta alderaketa mikroskopioan.",
+        "Mikroskopioaren teknikak eta erabilera.",
+        "Izaki bizidunak Domeinuak eta erreinuak: Eubacteria, Archaea, Protista, Fungi, Plantae eta Animalia. Sailkapen taxonomikoaren oinarrizko historia.",
+        "Talde taxonomiko nagusiak:inguruneko espezieen behaketa eta sailkapena, euren ezaugarri bereizgarrietatik abiatuta.",
+        "Inguruneko ekosistemetako espezie arruntenak:identifikazio-estrategiak (gidak, gako dikotomikoak, tresna digitalak, visu, etab.).",
+        "Euskal Herriko ekosistemetako izaki bizidunak identifikatzeko, behatzeko eta geoerreferentziatzeko teknika eta tresna berritzaileak.",
+        "Sentitzen duten izakiak: ornodunak. Zefalopodoak etahainbat artropodo. Sentsibilitatea eta sentiberatasunaren arteko desberdintasunak.",
+        "Osasuna eta gaixotasuna izaki bizidunetan Gaixotasun infekziosoak prebenitzeko eta tratatzeko neurriak, eragile kausalaren arabera, eta izaki bizidunetan antibiotikoen erabilera egokiari buruzko hausnarketa.",
+        "Txertaketak gaixotasunen prebentzioan eta bizi-kalitatearen hobekuntzan duen garrantzia.",
+        "Osasun fisikoa, mentala eta soziala kontserbatzera bideratutako ohiturak (loaren higienea, jarrera-ohiturak, teknologia berrien erabilera arduratsua, ariketa fisikoa, estresaren kontrola…).",
+        "Geologia Harriaren eta mineralaren kontzeptuak: ezaugarriak eta propietateak.",
+        "Harriak sailkatzeko estrategiak: sedimentarioak, metamorfikoak eta igneoak. Harrien zikloa.",
+        "Harri eta mineral garrantzitsu batzuk eta/edo ingurunekoak identifikatzeko metodoak.",
+        "Mineralen eta harrien erabilerak: euren erabilera eguneroko materialak eta objektuak fabrikatzeko."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Interakzioa eta Energia",
+      "titulo": "Interakzioa eta Energia",
+      "items": [
+        "Interakzioa Mugimendu errazen iragarpena zinematikaren kontzeptuetatik abiatuta, magnitude horien etorkizuneko balioei buruzko hipotesi egiaztagarriak formulatuz, zenbakizko kalkuluaren, grafikoen interpretazioaren edo lan esperimentalaren bidez baliozkotuz.",
+        "Indarrak aldaketarako eragile gisa: gorputz baten mugimenduedo atseden-egoeran nahiz diharduten sistemetan deformazioak sortuz indarrek dituzten efektuen erlazioa.",
+        "Newtonen legeen aplikazioa: indarren ekintzaren aurrean sistema materialek nola jokatzen duten ulertzea ahalbidetzen duten eguneroko egoeren edo laborategiko egoeren behaketa, eta horiek eguneroko egoeretan eta bide-segurtasunekoetan dituzten ondorioen aurreikuspena.",
+        "Energia Energia: energiari, propietateei eta aldaketa-prozesu guztien kausa gisa deskribatuko duten adierazpenei buruzko galderen eta hipotesien formulazioa.",
+        "Energiaren etxeko erabilerarekin eta erabilera industrialarekin zerikusia duten hipotesien diseinu eta egiaztapen esperimentala, energiaren forma guztiak eta horien arteko eraldaketak aintzat hartuta.",
+        "Ingurumenari eta jasangarritasunari buruzko hipotesien prestaketa oinarritua, energia-iturri berriztagarrien eta ez-berriztagarrien arteko desberdintasunak kontuan hartuz.",
+        "Beroak materian dituen efektuak: efektuen azterketa eta eguneroko egoeratan aplikazioa.",
+        "Ekologia eta jasangarritasuna Inguruneko ekosistemak, horien osagai biotikoak eta abiotikoak, eta erlazio intraespezifiko eta interespezifiko motak.",
+        "Atmosferaren eta hidrosferaren funtzioak eta horiek Lurreko bizitzarako duten funtsezko eginkizuna.",
+        "Ekosistemen kontserbazioaren, biodibertsitatearen eta garapen iraunkorreko eredu bat ezartzearen garrantzia.",
+        "Klima-aldaketaren kausak eta horrek ekosistemetan dituen ondorioak.",
+        "Ohitura jasangarrien garrantzia (kontsumo arduratsua, hondakinen kudeaketa, ingurumenaren errespetatua…).",
+        "Ingurumenaren, gizakien eta beste izaki bizidun batzuen osasunaren arteko erlazioa: one health (osasun bakarra)."
+      ],
+      "codigos_items": []
+    }
+  ],
+  "comunidad": "pais-vasco",
+  "idioma": "eu"
+}

@@ -1,0 +1,458 @@
+{
+  "materia_oficial": "MATEMATIKA",
+  "materia": "Matematika",
+  "etapa": "ESO",
+  "ciclo": "1º ESO y 2º ESO",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º ESO",
+    "2º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Matematikaren berezkoak diren eguneroko bizitzako problemak interpretatzea, modelizatzea eta ebaztea, zenbait estrategia eta arrazoibide aplikatuz, zenbait jardunbide arakatzeko eta soluzio posibleak lortzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Problema baten soluzioak analizatzea, teknika eta tresna desberdinak erabiliz eta lortutako erantzunak ebaluatuz, ikuspuntu logikotik haien baliozkotasuna eta egokitasuna eta ondorio globala egiaztatzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Problema eta aieru berriak modu autonomoan formulatzea, zenbait jakintza erlazionatuz eta irudikapen matematiko egokia emanez, tresna teknologikoen laguntzarekin, ezagutza matematiko berria sortzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Pentsamendu konputazionalaren printzipioak erabiltzea, datuak antolatuz, zatika deskonposatuz, patroiak ezagutuz, eta algoritmoak interpretatuz, aldatuz, orokortuz eta sortuz, egoerak modelizatzeko eta problemak eraginkortasunez ebazteko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Elementu matematikoen arteko loturak ezagutu eta erabiltzea, kontzeptuak eta prozedurak elkarrekin lotuz, matematikaren osotasun integratu gisako ikuspegia garatzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Beste jakintzagai batzuetan eta egoera errealetan inplikatutako matematika identifikatzea, kontzeptuak eta prozedurak elkarrekin lotuz, askotariko egoeretan aplikatzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "7",
+      "descripcion": "Kontzeptu, prozedura, informazio eta emaitza matematikoak modu indibidual eta kolektiboan irudikatzea, zenbait teknologia erabiliz, ideiak bistaratzeko eta prozesu matematikoak egituratzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "8",
+      "descripcion": "Kontzeptu, prozedura eta argudio matematikoak modu indibidual eta kolektiboan komunikatzea, ahozko hizkuntza, hizkuntza idatzia edo grafikoa eta terminologia matematiko egokia erabiliz, ideia matematikoei esanahia eta koherentzia emateko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "9",
+      "descripcion": "Trebetasun pertsonalak garatzea, emozioak identifikatuz eta kudeatuz, errorea ikaskuntza-prozesuaren parte gisa onartzeko estrategiak praktikan jarriz eta ziurgabetasun-egoeren aurrean egokituz, helburuen lorpenean jarraikitasuna hobetzeko eta matematika ikasten gehiago gozatzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "10",
+      "descripcion": "Gizarte-trebetasunak garatzea, besteen emozioak eta esperientziak ezagutuz eta errespetatuz, eta esleitutako rolak dituzten talde heterogeneoetan proiektuetan aktiboki eta gogoetatsu parte hartuz, matematikako ikasle gisa identitate positiboa eraikitzeko, ongizate pertsonala eta taldearena sustatzeko eta harreman osasungarriak sortzeko.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Problema matematikoak interpretatzea, emandako datuak antolatuz eta erlazionatuz eta formulatutako galderak ulertuz."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Ikaste-egoerak eta problemak ebazteko estrategiak bilatzen lagunduko duten irudikapen matematikoak egitea (marrazkiak, taulak, eskemak, diagramak eta adierazpen sinboliko erraz batzuk…)."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Hainbat tresna eta estrategia aplikatzea, problema bat ebazten lagunduko duten egokiak aurkitu arte."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "1",
+      "descripcion": "Problema baten soluzio matematiko arrazoitu posibleak lortzea, ezagutzak eta behar diren tresna teknologikoak mobilizatuz."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Problema baten soluzioen zuzentasun matematikoa egiaztatzea, ebazteko beste estrategia posible batzuk analizatuz."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Problema baten ebazpenak eskatzen dituen baldintzak adieraztea, planteatzen den testuingurua eta zenbaki mota eta eskura dauden ebazpen-tresnak kontuan hartuz."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Aieru errazak modu gidatuan ezagutzea, patroiak, propietateak eta erlazioak analizatuz eta haien baliozkotasuna zenbait argudioren bidez arrazoituz."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Emandako problema baten aldaerak planteatzea, problemaren daturen bat edo baldintzaren bat aldatuz."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Arrazoibide matematikoan oinarritutako aieruak ikertzea, bistaratzea, material manipulatiboak eta digitalak, eta hizkuntza aljebraiko eta grafikoaren aukerak erabiliz."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Patroi errazak ezagutzea, datuak antolatzea eta problema bat zati sinpleagoetan deskonposatzea, haren interpretazio konputazionala erraztuz."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Askotariko egoerak modelizatzea eta problemak modu eraginkorrean ebaztea, oinarrizko algoritmoak interpretatuz, aldatuz eta sortuz."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Ezagutzen (aritmetikoak, aljebraikoak eta geometrikoak) arteko erlazioak eta esperientzia matematikoak —hala nola patroiak identifikatzea edo errealitaterako begirada matematikoa sustatzea— ezagutzea."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Matematikaren alorren (aljebra, geometria…) arteko loturak indartzea, material manipulagarriekin, morroi matematikoekin eta beste baliabide digital batzuekin interakzioan jardunez, eta problemak ebazteko oinarrizko estrategiak garatuz."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Mundu errealaren eta matematikaren artean loturak ezartzea, ikerketa zientifiko eta matematikoaren berezko prozesuak erabiliz: neurtzea, sailkatzea, irudikatzea, ondorioztatzea, iragartzea eta komunikatzea, eguneroko bizitzako egoeretan."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Matematikaren eta beste jakintzagai batzuen arteko lotura logikoak identifikatzea, zenbait esparrutako ezagutzak integratuz eta testuinguruan kokatutako problemak ebatziz."
+    },
+    {
+      "codigo": "6.3",
+      "competencia": "6",
+      "descripcion": "Matematikak gizateriaren aurrerabideari egindako ekarpenak ezagutzea, egungo gizarteak aurre egin beharreko erronkei konponbidea ematen laguntzen dutenak."
+    },
+    {
+      "codigo": "7.1",
+      "competencia": "7",
+      "descripcion": "Oinarrizko kontzeptuak, prozedurak eta emaitzak hitzezko tresnen, tresna grafikoen edo sinbolikoen bidez irudikatzea, ideiak bistaratzeko eta prozesu matematikoak egituratzeko, komunikazioa eta informazio-transferentzia aberasteko duten erabilgarritasuna baloratuz."
+    },
+    {
+      "codigo": "7.2",
+      "competencia": "7",
+      "descripcion": "Irudikatzeko tresnak (hitzezkoak, ikusizkoak, manipulatiboak eta digitalak) erabiltzea, arrazoibide-moduen arteko transferentzia bultzatuz."
+    },
+    {
+      "codigo": "8.1",
+      "competencia": "8",
+      "descripcion": "Informazioa komunikatzea, hizkuntza matematiko egokia erabiliz (ahoz eta idatziz) eta arrazoibideak, prozedurak eta ondorioak argi eta garbi eta ordenatuta deskribatuz eta azalduz."
+    },
+    {
+      "codigo": "8.2",
+      "competencia": "8",
+      "descripcion": "Eguneroko bizitzan hizkuntza matematikoaren presentzia eta horren erabilera eskatzen duten egoerak ezagutzea, modu egokian erabiliz."
+    },
+    {
+      "codigo": "9.1",
+      "competencia": "9",
+      "descripcion": "Matematikarekiko norberaren emozioak identifikatzea, erroreak hobetzeko aukera gisa onartuz eta erronka berrien aurrean itxaropen positiboak sortuz."
+    },
+    {
+      "codigo": "9.2",
+      "competencia": "9",
+      "descripcion": "Motibazio positiboa eta jarraikitasuna erakustea, kritika arrazoitua onartuz matematika ikasteko egoerei aurre egitean."
+    },
+    {
+      "codigo": "10.1",
+      "competencia": "10",
+      "descripcion": "Talde heterogeneoetako lanean aktiboki kolaboratzea eta harremanak ezartzea, eraginkortasunez komunikatuz, erabakiak hartuz eta iritzi informatuak emanez, eta edozein aurreiritzi edo diskriminazio desagerraraziz."
+    },
+    {
+      "codigo": "10.2",
+      "competencia": "10",
+      "descripcion": "Taldean garatu behar diren zereginen banaketan parte hartzea, inongo diskriminaziorik gabeko inklusioaren eta entzute aktiboaren alde eginez, esleitutako rola bere gain hartuz eta norberak taldeari egiten dion ekarpenaz arduratuz."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A.1",
+      "bloque": "A.1. Zentzu numerikoa · Zenbaketa",
+      "titulo": "Zentzu numerikoa · Zenbaketa",
+      "items": [
+        "Problema matematikoak eta eguneroko bizitzakoak ebaztean zenbatespenak eta kontaketa sistematikoak egiteko estrategiak (zuhaitz-diagramak, sarrera biko taulak eta zenbaketa esanguratsuko beste estrategia batzuk)."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "A.2",
+      "bloque": "A.2. Zentzu numerikoa · Kantitatea",
+      "titulo": "Zentzu numerikoa · Kantitatea",
+      "items": [
+        "Zenbaki arrunten erabilgarritasunak (ordenamendua, identifikazioa, kodeketa…) eguneroko egoeretan.",
+        "Zenbatespenak testuinguruak eskatutako zehaztasunarekin egiteko oinarrizko jarraibideak.",
+        "Zenbakien tamaina hainbat testuingurutan ezagutzeko eta konparatzeko jarraibideak. Berretzaile positiboa duten berreturak.",
+        "Problema matematikoak eta eguneroko bizitzakoak ebazteko testuinguruetan kantitateak behar den zehaztasunarekin adierazteko berretura eta erro errazak.",
+        "Kantitate bat adierazteko formak (arrunta, osoa, hamartarra, zatikia, ehunekoa), egoera edo problema bakoitzean egokiena hautatuz, eta haien arteko erlazioa edo baliokidetasuna."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "A.3",
+      "bloque": "A.3. Zentzu numerikoa · Eragiketen zentzua",
+      "titulo": "Zentzu numerikoa · Eragiketen zentzua",
+      "items": [
+        "Idatzizko kalkuluko eta kalkulu mentaleko estrategiak, zenbaki arruntekin, osoekin, dezimalekin eta zatiki errazekin, zenbakizko zuzeneko irudikapenen laguntzarekin ere, testuinguruan kokatutako egoeretan.",
+        "Batuketaren eta kenketaren, biderketaren eta zatiketaren, eta ber bi egitearen eta erro karratua ateratzearen arteko alderantzizko erlazioak."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "A.4",
+      "bloque": "A.4. Zentzu numerikoa · Erlazioak",
+      "titulo": "Zentzu numerikoa · Erlazioak",
+      "items": [
+        "Oinarrizko faktoreak, multiploak eta zatitzaileak. Zenbaki lehenetako faktorizazioa, problemak askotariko estrategien eta/edo tresnen bidez ebazteko, kalkulagailuaren erabilera barne. Zatitzaile komunetako handiena eta multiplo komunetako txikiena.",
+        "Zatikien, dezimalen eta ehunekoen arteko erlazioak.",
+        "Zenbaki osoak, zatikiak, dezimalak, berreturak eta erro errazak: ulertzeko eta horiekin kantitateak adierazteko estrategiak.",
+        "Patroiak eta zenbakizko erregulartasunak (zenbaki osoak eta zatikiak) zenbait testuingurutan."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "A.5",
+      "bloque": "A.5. Zentzu numerikoa · Arrazoibide proportzionala",
+      "titulo": "Zentzu numerikoa · Arrazoibide proportzionala",
+      "items": [
+        "Arrazoiak, proportzioak eta proportzionaltasun-konstantea eguneroko testuinguruetan.",
+        "Eskalak planoak eta mapak irudikatzeko problemetan.",
+        "Zuzeneko eta alderantzizko proportzionaltasuna eguneroko bizitzako problemen ebazpenean.",
+        "Eguneroko testuinguruetan erabili ohi diren oinarrizko ehunekoak. Kalkulu mentala eta idatzizkoa.",
+        "Ehunekoen gehikuntza eta murrizketekin eta proportzioekin erlazionatutako problemak zenbait testuingurutan ebazteko metodoak (prezioen jaitsierak eta igoerak, zergak, eskalak, dibisa-trukea eta abar)."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "A.6",
+      "bloque": "A.6. Zentzu numerikoa · Finantza-hezkuntza",
+      "titulo": "Zentzu numerikoa · Finantza-hezkuntza",
+      "items": [
+        "Finantza-testuinguru pertsonaletan erabakiak hartzeko zenbakizko informazioa eta metodoak.",
+        "Familia-ekonomiako diru-sarrerak eta gastuak kudeatzeko metodoak."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "B.1",
+      "bloque": "B.1. Neurriaren zentzua · Magnitudea",
+      "titulo": "Neurriaren zentzua · Magnitudea",
+      "items": [
+        "Objektu fisikoen eta matematikoen atributu neurgarriak eta horien arteko erlazioa.",
+        "Unitate eta eragiketa egokiak neurtzea eskatzen duten problemetan."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "B.2",
+      "bloque": "B.2. Neurriaren zentzua · Zenbatespena eta erlazioak",
+      "titulo": "Neurriaren zentzua · Zenbatespena eta erlazioak",
+      "items": [
+        "Zenbatespenak eta neurri errealak.",
+        "Hurbileko inguruneetan neurtzeko egoeretan behar den zehaztasun-maila."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "B.3",
+      "bloque": "B.3. Neurriaren zentzua · Neurketa",
+      "titulo": "Neurriaren zentzua · Neurketa",
+      "items": [
+        "Forma lauen eta hiru dimentsiokoen luzera eta azaleren formulak lortzeko jarraibideak. Figura errazagoetako deskonposizioa.",
+        "Hiru dimentsioko oinarrizko objektuen irudikapen lauak. Perimetro, azalera eta bolumenen kalkulua."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "C.1",
+      "bloque": "C.1. Zentzu espaziala · Bi eta hiru dimentsioko forma geometrikoak",
+      "titulo": "Zentzu espaziala · Bi eta hiru dimentsioko forma geometrikoak",
+      "items": [
+        "Askotariko forma geometrikoak eguneroko bizitzako objektuetan (arkitekturan, artean, modan, naturan…). Sailkapen informala.",
+        "Forma geometriko lau eta hiru dimentsioko ohikoenak: propietateen edo ezaugarrien araberako deskribapena eta sailkapena.",
+        "Kongruentzia eta antzekotasuna bezalako erlazio geometrikoak irudi lauetan. Talesen teorema.",
+        "Pitagorasen teorema.",
+        "Hiru dimentsioko forma geometrikoak ohiko tresnekin eta tresna digitalekin eraikitzeko teknikak."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "C.2",
+      "bloque": "C.2. Zentzu espaziala · Lokalizazioa eta irudikapen-sistemak",
+      "titulo": "Zentzu espaziala · Lokalizazioa eta irudikapen-sistemak",
+      "items": [
+        "Koordenatu kartesiarren bidezko irudikapen-sistemak eta lokalizazioa.",
+        "Bi eta hiru dimentsioko objektuen eta horien irudikapen grafikoaren arteko erlazioak.",
+        "Bi eta hiru dimentsioko formen irudikapen grafikoa, hiru dimentsioko gorputzen bistak eta garapena barne."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "C.3",
+      "bloque": "C.3. Zentzu espaziala · Mugimenduak eta transformazioak",
+      "titulo": "Zentzu espaziala · Mugimenduak eta transformazioak",
+      "items": [
+        "Biraketak, translazioak eta simetriak askotariko egoeretan, tresna teknologikoak eta/edo manipulatiboak erabiliz."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "C.4",
+      "bloque": "C.4. Zentzu espaziala · Bistaratze, arrazoitze eta modelizazio geometrikoa",
+      "titulo": "Zentzu espaziala · Bistaratze, arrazoitze eta modelizazio geometrikoa",
+      "items": [
+        "Erlazio geometrikoak: ikerketa hainbat zentzutan (numerikoa eta aljebraiko oinarrizkoa) eta hainbat alorretan (artea, zientzia, eguneroko bizitza).",
+        "Problemen ebazpenean oinarrizko erlazio numeriko eta aljebraikoak irudikatzeko eredu geometrikoak."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "D.1",
+      "bloque": "D.1. Zentzu aljebraikoa eta pentsamendu konputazionala · Patroiak",
+      "titulo": "Zentzu aljebraikoa eta pentsamendu konputazionala · Patroiak",
+      "items": [
+        "Formula eta gai orokorrak: jarraibide eta erregulartasun errazak behatzearen bidez lortzeko estrategiak. Marrazkien, software dinamikoaren eta manipulatzaile birtualen laguntzarekin bistaratzeko estrategiak."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "D.2",
+      "bloque": "D.2. Zentzu aljebraikoa eta pentsamendu konputazionala · Eredu matematikoa",
+      "titulo": "Zentzu aljebraikoa eta pentsamendu konputazionala · Eredu matematikoa",
+      "items": [
+        "Eguneroko bizitzako egoerak modelizatzeko teknikak, irudikapen matematikoak (marrazkiak, eskemak, diagramak…) eta hizkuntza aljebraikoa (oinarrizko eredu linealak eta koadratikoak) erabiliz."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "D.3",
+      "bloque": "D.3. Zentzu aljebraikoa eta pentsamendu konputazionala · Aldagaia",
+      "titulo": "Zentzu aljebraikoa eta pentsamendu konputazionala · Aldagaia",
+      "items": [
+        "Aldagaiaren kontzeptua, haren izaera desberdinetan."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "D.4",
+      "bloque": "D.4. Zentzu aljebraikoa eta pentsamendu konputazionala · Berdintza eta desberdintza",
+      "titulo": "Zentzu aljebraikoa eta pentsamendu konputazionala · Berdintza eta desberdintza",
+      "items": [
+        "Eguneroko bizitzako egoeretan erlazio linealak eta oinarrizko erlazio koadratiko batzuk irudikatzeko aljebra sinbolikoa.",
+        "Adierazpen aljebraiko errazak. Baliokidetasunak eta oinarrizko eragiketak problemen ebazpenean.",
+        "Oinarrizko ekuazio linealak eta koadratikoak: adierazpen aljebraikoen baliokidetasuna eta soluzio-bilaketa eguneroko bizitzako testuinguruetan."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "D.5",
+      "bloque": "D.5. Zentzu aljebraikoa eta pentsamendu konputazionala · Erlazioak eta funtzioak",
+      "titulo": "Zentzu aljebraikoa eta pentsamendu konputazionala · Erlazioak eta funtzioak",
+      "items": [
+        "Funtzioaren kontzeptu intuitiboa. Magnitudeen arteko erlazioa dakarten mundu errealeko hainbat egoera. Funtzio bat adierazteko zenbait forma.",
+        "Funtzio linealak. Irudikapena eta ezaugarri orokorrak. Zuzenaren maldaren interpretazioa.",
+        "Erlazio kuantitatibo linealak eguneroko bizitzako egoeretan: erlazioak modelizatzen dituzten funtzioen identifikazioa eta zehaztapena.",
+        "Funtzio baten informaziorik garrantzitsuena haren adierazpenetatik abiatuta (hitzezkoa, tabularra, grafikoa eta aljebraikoa) lortzeko jarraibideak."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "D.6",
+      "bloque": "D.6. Zentzu aljebraikoa eta pentsamendu konputazionala · Pentsamendu konputazionala",
+      "titulo": "Zentzu aljebraikoa eta pentsamendu konputazionala · Pentsamendu konputazionala",
+      "items": [
+        "Prozesuak eta problemen ebazpena: deskonposizioa eta beste egoera batzuetarako transferentzia.",
+        "Oinarrizko algoritmoak interpretatzeko eta aldatzeko estrategiak.",
+        "Programak eta beste tresna batzuk erabiliz erreproduzitu eta analizatu daitezkeen galderen formulazioa."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "E.1",
+      "bloque": "E.1. Zentzu estokastikoa · Antolaketa eta datuen analisia",
+      "titulo": "Zentzu estokastikoa · Antolaketa eta datuen analisia",
+      "items": [
+        "Aldagai kualitatibo eta kuantitatiboen maiztasun-taulen eta grafiko estatistikoen analisia eta interpretazioa.",
+        "Aldagai bakar bat inplikatzen duten eguneroko bizitzako eta esparru zientifikoko egoeretako datuen bilketa eta antolaketa.",
+        "Zenbait teknologiaren bidezko irudikapen grafikoak, datuak nola banatzen diren interpretatuz.",
+        "Zentralizazio- eta sakabanatze-neurriak: interpretazioa eta kalkulua."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "E.2",
+      "bloque": "E.2. Zentzu estokastikoa · Iragargarritasuna eta ziurgabetasuna",
+      "titulo": "Zentzu estokastikoa · Iragargarritasuna eta ziurgabetasuna",
+      "items": [
+        "Fenomeno deterministak eta ausazkoak: definitzen dituzten ezaugarriak.",
+        "Probabilitatearen nozio intuitiboa. Ausazko fenomeno baten oinarrizko gertaerak eta lagin-espazioa.",
+        "Proportzioaren, maiztasun erlatiboaren eta probabilitatearen arteko erlazioa eta interakzioa.",
+        "Laplace-ren erregela eta probabilitateen esleipena esperimentu errazetan.",
+        "Ausazko fenomenoen portaera analizatzeko esperimentu errazak: plangintza eta simulazioa morroi digitalekin."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "E.3",
+      "bloque": "E.3. Zentzu estokastikoa · Inferentzia",
+      "titulo": "Zentzu estokastikoa · Inferentzia",
+      "items": [
+        "Populazio baten intereseko ezaugarriak aurkitzea ahalbidetzen duten galdera egokiak.",
+        "Ikerketa estatistikoetan planteatutako galderei erantzutea ahalbidetzen duten datu garrantzitsuak.",
+        "Ikerketa baten emaitzetatik abiatuta oinarritutako ondorioak eta arrazoitutako iritziak."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "F.1",
+      "bloque": "F.1. Zentzu sozioafektiboa · Sinesmenak, jarrerak eta emozioak",
+      "titulo": "Zentzu sozioafektiboa · Sinesmenak, jarrerak eta emozioak",
+      "items": [
+        "Matematika ikasteko jakin-mina, ekimena, jarraikitasuna eta erresilientzia.",
+        "Ikaskuntzan esku hartzen duten emozioen autokontzientzia eta autorregulazioa.",
+        "Malgutasun kognitiboa eta, behar denean, estrategia-aldaketarekiko irekitasuna, ikaskuntzan errorea onartuz."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "F.2",
+      "bloque": "F.2. Zentzu sozioafektiboa · Talde-lana eta erabakiak hartzea",
+      "titulo": "Zentzu sozioafektiboa · Talde-lana eta erabakiak hartzea",
+      "items": [
+        "Teknika kooperatiboak talde-lanean.",
+        "Gatazkak kudeatzeko jokabide enpatikoak eta estrategia operatiboak.",
+        "Erantzukizun pertsonala eta bestearen onarpena, ingurune presentzialetan eta lineakoetan taldearen helburuak lortzeari begira."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "F.3",
+      "bloque": "F.3. Zentzu sozioafektiboa · Inklusioa, errespetua eta aniztasuna",
+      "titulo": "Zentzu sozioafektiboa · Inklusioa, errespetua eta aniztasuna",
+      "items": [
+        "Ikasgelan eta gizartean dagoen aniztasun intrintsekoaren aurreko jarrera inklusiboak; balorazioa ingurune presentzialetan eta lineakoetan.",
+        "Matematikak giza ezagutzaren esparruen (zientifikoa, teknologikoa, artistikoa, humanistikoa, soziala) garapenari egin dion ekarpenaren gakoak, inklusioaren ikuspegitik."
+      ],
+      "codigos_items": []
+    }
+  ],
+  "comunidad": "pais-vasco",
+  "idioma": "eu"
+}

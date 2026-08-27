@@ -1,0 +1,173 @@
+{
+  "materia_oficial": "GARAPEN PERTSONALARI ETA SOZIALARI APLIKATUTAKO FILOSOFIA",
+  "materia": "Garapen Pertsonalari eta Sozialari Aplikatutako Filosofia",
+  "etapa": "ESO",
+  "ciclo": "Único",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "4º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Arazoak identifikatzea eta galdera filosofikoak egitea, hurbileko errealitateekin lotutako testu, bideo, joko, dinamika edo beste material batzuetatik abiatuz, pentsamendu kritikoa, autonomoa eta kontzientea garatzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Kontzeptu eta eztabaida filosofiko klasikoak eta garaikideak beren beharrekin eta bizi-ingurunearekin lotzea, material idatzizkoak, ikus-entzunezkoak, artistikoak edo bestelakoak analizatuz, Filosofiak bizitzaren esparru guztietan duen presentzia identifikatzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Argudiaketan oinarritutako elkarrizketa filosofikoa modu zorrotz, kritiko, tolerante eta enpatikoan praktikatzea, jarduera dialogiko kooperatiboetan parte hartuz, ideien trukea eta herritartasun aktibo eta demokratikoaren jarduna sustatzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Filosofiaren izaera hautematea eta ideia eta eztabaida nagusiak ezagutzea, horien ikasketa eta azterketa kritiko eta dialektikoaren bidez, pentsamendu filosofikoaren gutxienekoak ezagutu baina ikusketa integrala sortzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Norberaren nortasunari eta norberaren bizi-proiektuari buruzko gaien inguruan gogoeta egitea, arrazoimenaren, emozioen eta ingurune sozial eta kulturalaren eraginari buruz hausnartuz, autoezagutza sustatzeko eta bizi-planteamendu kontzienteak lantzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Arazo etiko garaikide nagusiak eta horien aurrean egindako proposamenak analizatzea, ikerketaren, elkarrizketaren eta bateratze-lanaren bidez, arazo horiei jarrera kontziente eta aktibo batetik aurre egiteko bidea emango duen jarrera kritikoa eta autonomoa eraikitzeko.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Arazo filosofikoen erradikaltasuna eta garrantzia hautematea, horiek identifikatuz eta horien inguruan gogoeta eginez, testuekin eta beste adierazpide batzuekin lan eginda."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Ideia eta galdera filosofikoak formulatzea, pentsamenduaren historian zehar garatutako gai nagusietatik abiatuz."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Eguneroko gaietan eta beren hurbileko ingurunean dagoen ezkutuko oinarri filosofikoa hautematea, Filosofiako kontzeptu eta eztabaida klasiko eta garaikideen eta analizatutako gertakari eta errealitateen azpian dagoen arazo filosofikoaren arteko loturak ezarriz."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Filosofikoki garrantzitsuak diren gai eta arazoei buruzko ideiak kontrastatzeko eta trukatzeko talde-jardueretan parte hartzea, baita herritartasun aktibo eta demokratikoan jarduten ere, argudiozko elkarrizketa arrazionala, errespetuzkoa, irekia, eraikitzailea eta egiarekin konprometitua erabiliz."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Jardun dialogikorako indarrak eta ahuleziak norbere baitan identifikatzea, bai maila tekniko-argudiozkoan, bai maila emozionalean, norberaren parte-hartzeaz jabetuz eta horiek konpontzeko estrategiak ezarriz."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Arazo filosofikoen ikuskera ez-dogmatikoa sortzea, horien inguruko ideia filosofiko desberdin eta kontrajarrien analisi kritikoaren bidez."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Teoria filosofiko desberdinak analizatzea, gogoetarako eta elkarrizketarako prozesu dinamiko eta beti ireki baten une gisa, tesi eta teoria horien argudioei buruzko analisiaren bidez."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Ikerketaren eta elkarrizketaren bidez, norberaren kontzeptu egoki bat eraikitzea, bere izaeraren eta nortasunaren dimentsio anitzak ezagutuz, bere bizi-proiektua eta helburu pertsonalak lortzeko oinarri gisa."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Norberaren eta besteen emozioak, estimua eta zaintza modu orekatuan kudeatzeko jarrera garatzea, norberaren emozioak identifikatuz, analizatuz eta modu asertiboan adieraziz eta besteenak ezagutuz eta baloratuz."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Ikerketaren eta elkarrizketaren bidez, gaur egungo eztabaida etiko nagusiak ezagutzea eta ulertzea, horien inguruan gogoeta egiteko, horiek eskuratutako ezagutza filosofikoekin erlazionatuz, beren inguruan jarrera propioa eraikitzeko."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A.1",
+      "bloque": "A.1. Filosofia, errealitatea eta ezagutza: · Zer da Filosofia eta zertarako balio digu?",
+      "titulo": "Filosofia, errealitatea eta ezagutza: · Zer da Filosofia eta zertarako balio digu?",
+      "items": [
+        "Filosofiaren jatorria eta definizioa.",
+        "Jakintza filosofikoaren ezaugarriak. Pentsamendu kritikoa eta autonomoa. Filosofiaren adarrak.",
+        "Filosofiaren zeregina garapen pertsonalean eta sozialean."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "A.2",
+      "bloque": "A.2. Filosofia, errealitatea eta ezagutza: · Nola ezagutzen dugu eta zertarako balio digu ezagutzak?",
+      "titulo": "Filosofia, errealitatea eta ezagutza: · Nola ezagutzen dugu eta zertarako balio digu ezagutzak?",
+      "items": [
+        "Ezagutzaren arazoa. Egia: jarrerak eta teoriak.",
+        "Egia eta egungo gizartea. Egia-osteko aroa eta “fake new”ak.",
+        "Ezagutza-moduen analisia: arrazoia, emozioak, intuizioa eta sinesmenak. Arrazoimena eta espiritualtasuna gaur egungo gizartean.",
+        "Ezagutzaren dimentsio politikoa eta soziala: ezagutza, askatasuna eta boterea. Desinformazioa eta gaininformazioa.",
+        "Errealitatea eta berori ulertzeko moduak: esentzialista, erlazionala eta prozesuala."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "B.1",
+      "bloque": "B.1. Nia, gizakia eta bizitza: · Nor naiz eta nor gara?",
+      "titulo": "Nia, gizakia eta bizitza: · Nor naiz eta nor gara?",
+      "items": [
+        "Nor naizen eta nor garen: erantzunak filosofiatik, zientziatik eta erlijiotik.",
+        "Identitate pertsonala eta kolektiboa: horren eraikuntzan eta bilakaeran eragina duten faktoreak.",
+        "Identitateak eta diskriminazioa.",
+        "Identitate eta identifikazio pertsonala. Nia eta taldea: sozializatzeko prozesuak eta moduak.",
+        "Niaren konfigurazioa: arrazoia eta emozioak.",
+        "Gizakia: natura eta kultura.",
+        "Zer da kultura? Gure inguruko aniztasun kulturalaren eta gatazka kulturalen aurreko jarrerak."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "B.2",
+      "bloque": "B.2. Nia, gizakia eta bizitza: · Zer da bizitza eta nola izan zoriontsu?",
+      "titulo": "Nia, gizakia eta bizitza: · Zer da bizitza eta nola izan zoriontsu?",
+      "items": [
+        "Zoriontasunaren teoriak.",
+        "Bizitzaren zentzua filosofiaren historian eta egungo gizartean. Errealizazio pertsonala eta soziala gaur egungo munduan.",
+        "Zoriontasuna norbanakoaren eta gizartearen ikuspegitik: haren eraikuntzan eragina duten faktoreak. Zoriontasunaren bilaketa egungo gizartean."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "C.1",
+      "bloque": "C.1. Filosofia praktikoa hemen eta orain: · Zer dago ondo eta nola bizi gaitezke elkarrekin?",
+      "titulo": "Filosofia praktikoa hemen eta orain: · Zer dago ondo eta nola bizi gaitezke elkarrekin?",
+      "items": [
+        "Etikaren eta Politikaren oinarrizko kontzeptuak. Etikaren eta politikaren arteko erlazioa.",
+        "Jarrera etikoak: unibertsalismoa, erlatibismoa eta eszeptizismoa. Teoria etiko nagusiak.",
+        "Gatazka etikoak eta moralak gure eguneroko ingurunean. Eztabaida etiko garaikideak.",
+        "Gizartea antolatzeko eta boterea kudeatzeko proposamen nagusiak. Eskubideak eta betebeharrak.",
+        "Funtzionamendu politikoa gure gizartean. Politika hemen eta orain.",
+        "Gazteak eta politika."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "C.2",
+      "bloque": "C.2. Filosofia praktikoa hemen eta orain: · Zer ekarpen egiten dio Filosofiak egungo gizarteari?",
+      "titulo": "Filosofia praktikoa hemen eta orain: · Zer ekarpen egiten dio Filosofiak egungo gizarteari?",
+      "items": [
+        "Estetika gaur egungo gizartean: Artea eta Edertasuna Filosofiatik. Estetika eta kontsumo-gizartea. Estetika eta identitatea.",
+        "Problematika garaikideak: planetaren mugak, globalizazioa, genero-desberdintasuna, garapen teknologikoa, migrazio-mugimenduak, bidegabekeria epistemologikoak...",
+        "Filosofiaren zeregina egungo gizartean. Filosofia eta heziketa."
+      ],
+      "codigos_items": []
+    }
+  ],
+  "comunidad": "pais-vasco",
+  "idioma": "eu"
+}

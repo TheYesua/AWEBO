@@ -1,0 +1,207 @@
+{
+  "materia_oficial": "GEOGRAFIA ETA HISTORIA",
+  "materia": "Geografia eta Historia",
+  "etapa": "ESO",
+  "ciclo": "3º ESO y 4º ESO",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "3º ESO",
+    "4º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Gaur egun garrantzitsuak diren arazo geografiko, historiko eta sozialen inguruan ikertzea, argudiatzea eta hainbat formatuetan produktu propioak egitea, tokikotik globalera, informazioa bilatuz, aukeratuz, tratatuz eta antolatuz, eta iturri historikoak eta geografikoak erabiliz, ezagutzak eskuratzeko eta pentsamendu kritikoa garatzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Paisaiaren elementuak eta horiek sistema konplexu natural eta antropikoetan —landakoak eta hirikoak— duten artikulazioa identifikatzea eta aztertzea, baita denboran izan duten eboluzioa ere, eraldaketen kausak interpretatuz eta ekosistemetan dagoen oreka-maila baloratuz, ekosistema horien kontserbazioa, hobekuntza eta erabilera jasangarria sustatzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Sistema demokratikoak eta horien oinarrizko legeak eraikitzera —konstituzioak— iritsi arte Historian zehar izan diren antolaketa politiko motak azaltzea, komunitatean bizitzeak berezkoak ditugun betebeharrak eta eskubideak onartuz, herritarren parte-hartzea eta gizarte-kohesioa sustatzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Denboran zehar gizarte desberdinek izan dituzten erronka nagusiak ezagutzea, gertatutako aldaketen kausak eta ondorioak eta gaur egun konpondu behar dituzten arazoak identifikatuz, ikerketa- -proiektuak garatuz eta informazio-iturri fidagarriak erabiliz, errealitatea ulertzeko eta egungo erronken aurrean proposamen alternatiboak aintzat hartzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Joera demografikoak, eta bizi-zikloek eta bizimoduek historian zehar izan duten eboluzioa deskribatzea, egungo gizarteak osatu arte gertatu diren aldaketak eta jarraitutasunak kontuan hartuz, gizarte horiek bilakaera historikoaren ondorio direla ulertzeko, eta oinarriak izateko alternatiba osasungarriak, jasangarriak, aberasgarriak eta giza duintasunarekiko errespetuzkoak sustatzeko, baita gizartearekin eta ingurunearekin konpromisoa bultzatzeko ere.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Historian zehar izandako sistema ekonomikoak eta hauek izan dituzten garapen-prozesuak azaltzea, aurrerapenaren ideiaren esanahia baloratuz, gizartean, ingurumenean eta lurraldean dituzten ondorioekin batera, egungo mundu ekonomikoa eta bere nagusitasun-, mendetasun- eta mendekotasun- -harremanak ulertzeko, baita gizarte-eskubideen eta oinarrizkobaliabideen eskuratze unibertsalaren munta ulertzeko ere.",
+      "descriptores": []
+    },
+    {
+      "codigo": "7",
+      "descripcion": "Talde-identitateen jatorri eta kausa historikoak, eta horiek munduaren konfigurazio eta herentzia sozial, politiko eta kulturalerako elementu gisa duten eginkizuna ezagutzea, euren eboluzioa kritikoki aztertuz, gaur egun duten esanahia ulertzeko, gizatalde baten kide izatearen sentimenduak errespetatzeko, eta sortu eta sortzen duten ondare-aberastasuna eta legatu historiko eta kulturala baloratzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "8",
+      "descripcion": "Egungo kultura anitzeko errealitatea osatu duten prozesu geografikoak, historikoak eta kulturalak ezagutzea eta ulertzea, aniztasunaren aberastasuna aintzatetsiz eta berdintasunaren, inklusioaren eta gutxiengoekiko errespetuaren aldeko mugimenduen ekarpena baloratuz, diskriminazio mota oro saihesteko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "9",
+      "descripcion": "Zibilizazioek Historian zehar egin dituzten ekarpen kulturalak, artistikoak, zientifikoak eta pentsamenduzkoak ezagutzea eta balioestea, Euskal Herriari eta Espainiari arreta berezia eskainiz, mendebaldeko kulturaren erroak eta eraldaketak ulertzeko eta egungo edozein kulturaren adierazpenak errespetatzeko.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Egungo eta iraganeko prozesu eta gertaera historiko, geografiko eta sozial esanguratsuei buruzko informazioa bilatzea, hautatzea, antolatzea eta komunikatzea, hainbat euskarritan aurkeztuz eta zereginaren helburuak kontuan hartuz."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "2 Aro Garaikideari lotutako gai geografiko eta historikoei buruz modu kritikoan argudiatzea, banaka zein taldean, askotariko iturri fidagarriak kontrastatuz eta baloratuz, jakintzagaiaren berezko terminoak eta kontzeptuak egokiro erabiliz."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Jarduera ekonomikoek eta mugimendu demografikoek lurraldean eta paisaian duten eragina ezagutzea, mundu mailan, natura-, landa- eta hiri-ingurunea kontserbatzen eta hobetzen laguntzen duten portaerak eta ekintzak identifikatuz."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Jarduera ekonomikoek eta mugimendu demografikoek gizarteetan duten eragina aztertzea, baliabideak modu unibertsal, zuzen etabidezkoan eskuratzen laguntzen duten portaerak eta ekintzak identifikatuz, gaur egungo erronka demografikoak kontuan hartuta."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Gaiaren ulermena islatzen duten produktuen bidez, aro garaikideko antolaketa politikoaren eredu nagusiak mundu- -mailan, estatu-mailan eta tokikoan adieraztea eta azaltzea; eskubide eta askatasun indibidual eta kolektiboak ezartzen lagundu zuten sistemei arreta berezia eskainiz, eta eskubide eta askatasun horiek erabiltzeko garaian atzerakadak izan zituzten aldiei edo egoerei kontrajarriz."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Aro Garaikidean kontzientzia solidarioa sortu, herritarren parte-hartzea eta gizarte-kohesioa sustatu eta desparekotasuna ezabatzeko lan egin zuten mugimenduak eta arrazoiak antzematea, parte hartzeko eta lan egiteko era guztietako estrategiak erabiliz."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Historia Garaikidearen eta egungo antolaketa politiko eta ekonomikoaren ezagutza esanahitsua bereganatzea eta eraikitzea dedukzio-prozesuen eta proiektu edo erronken bidezko lanaren bitartez, landutako gaiak ulertzen direla islatzen duten produktuak prestatuz."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Aro Garaikideko aldaketa historiko esanguratsuen prozesuak aztertzea, baita gizarteek aurre egindako erronka nagusiak ere, kausak eta ondorioak identifikatuz, jakintzagaiaren berezko termino eta kontzeptu teknikoak erabiliz eta gertaerak sekuentzia kronologikoen bidez erlazionatuz."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Aro Garaikidean zehar portaera demografikoak, horien eboluzioa, izan dituzten aldaketak eta haien zikloak ezagutzea eta interpretatzea, kontzeptu tekniko zehatzak erabiliz eta gaur egun munduan ditugun arazo eta erronka nagusiekin lotuz."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Aro Garaikidean ezagutzen diren bizi-etapen eta bizimoduen ezaugarriak identifikatzea, gaur egungoekin konparatuz, bien arteko antzekotasunak eta ezberdintasunak bereiziz, horien ezagutzak eskaintzen duen aberastasuna baloratuz eta gure inguruan eta ingurune hartan osasungarria eta jasangarria denaren arteko distantzia hautemanez."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Ekonomiaren garapenaren ideiaren eta horren gizarte-, lurralde- eta ingurumen-ondorioen esanahi historikoaren ezagutza aplikatzea, nazioartean, estatuan eta tokian, agiri ekonomikoen bidez, hazkunde eta atzeraldi erritmoak eta zikloak daudela ulertuz, eta planetaren jasangarritasuna bermatuko duten portaera ekosozialak hartzeko beharra kontuan hartuz."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "aro garaikideko sistema ekonomikoak eta haien garapen- -prozesuak aztertzea eta azaltzea, eta elkarren artean alderatzea, haien arteko erlazioak eta baita nazioartean sortu eta sortzen dituzten gatazkak identifikatuz, eta gizarte-eskubideen garrantziarekin eta oinarrizko baliabideetarako eskubide unibertsalaren beharrarekin lotuz."
+    },
+    {
+      "codigo": "7.1",
+      "competencia": "7",
+      "descripcion": "Historia Garaikidean zehar garatu diren kultura- eta politika-prozesuak gaur egunera arte eraiki diren talde-identitateekin lotzea, norberaren eta besteen identitatea osatzen joan diren ezaugarriak ezagutuz eta errespetatuz, eta bakoitzaren esanahi askotarikoak eta kultura unibertsalari egindako ekarpenak aztertuz."
+    },
+    {
+      "codigo": "7.2",
+      "competencia": "7",
+      "descripcion": "Aro Garaikideko ekarpenak identifikatzea eta azaltzea, ondare historiko, instituzional, artistiko eta kulturala munduko herritarren ondare komun gisa aintzat hartuz eta balioetsiz, eta tokiko, autonomiako, nazioko, Europako eta mundu osoko talde-identitateen oinarritzat onartuz"
+    },
+    {
+      "codigo": "7.3",
+      "competencia": "7",
+      "descripcion": "Ondare artistiko, historiko eta kulturala babestu eta kontserbatzeko beharra argudiatzea, tokiko, autonomiako, nazioko, europako eta mundu osoko talde-identitatearen oinarri gisa onartuz."
+    },
+    {
+      "codigo": "8.1",
+      "competencia": "8",
+      "descripcion": "Gaur egungo estatu eta hegemonien sorrera eta garapena ezagutzea, espainiako estatuaren eta Euskal Autonomia Erkidegoaren eraketa barne, eta horiek espazioan eta denboran kokatzea, haiek osatu dituzten elementu historiko, kultural, instituzional eta erlijiosoak integratuz, sortutako errealitate multikulturala azalduz eta haien ekarpen garrantzitsuenak identifikatuz. 8.2.Jarrera ez-diskriminatzaileak erakustea eta aniztasun soziala eta multikulturala aintzat hartzea, inklusioa, gutxiengo etniko-kulturalen onarpena eta kolaborazioa baloratuz, gizarte-kohesioa bultzatzen duten balio gisa."
+    },
+    {
+      "codigo": "8.3",
+      "competencia": "8",
+      "descripcion": "Gizonen eta emakumeen benetako berdintasunaren alde argudiatzea, hainbat esparrutan aro garaikidean zehar emakumezko pertsonaia garrantzitsuek egindako ekarpena nabarmenduz eta baloratuz, eta edozein egoeratan generoagatiko edozein jarrera eta portaera diskriminatzaileren aurka jardunez."
+    },
+    {
+      "codigo": "9.1",
+      "competencia": "9",
+      "descripcion": "Aro Garaikidean zehar, zibilizazioek egindako kultura-, arte-, zientzia- eta pentsamendu-ekarpen aipagarrienak ezagutzea eta azaltzea, eta egungo euskal eta espainiar kultureak garaiko korronte kulturalekin lotzea, egungo kulturen erroak nabarmenduz eta beste edozein adierazpen kultural errespetatuz."
+    },
+    {
+      "codigo": "9.2",
+      "competencia": "9",
+      "descripcion": "Egungo euskal eta espainiar kulturen, eta historiaren prozesu handien arteko lotura identifikatzea eta testuinguruan kokatzea, historiaurretik aro modernora arte, elkarri egindako ekarpenak baloratuz."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Egungo munduaren erronkak",
+      "titulo": "Egungo munduaren erronkak",
+      "items": [
+        "1- Testu historiografikoek, datu estatistikoek eta abarrek emandako informazioaren bilaketa eta tratamendua, esparru digital eta analogikoetan. Informazioaren irakurketa eta balorazio kritikoa, iturrien fidagarritasuna egiaztatuz eta sareetako desinformazioaren arazoa kontuan hartuz. Produktu desberdinak sortzea hainbat formatutan, ezagutza lantzeko bide gisa.",
+        "2- Herritartasun etiko digitala: pribatutasunaren, datuen babesaren, netiketaren eta jabetza intelektualaren auziak, jakintzagaiaren lanari aplikatzea.",
+        "3- Historia-, Arte- eta Geografiaren berariazko lexikoa erabiltzea.",
+        "4- Geografia aztertzeko teknikak eta metodoak: testuen azterketa, edozein euskarritan adierazitako mapak, eskemak, sintesiak, grafikoak eta irudiak interpretatzea eta prestatzea. Informazio GeografikoarenTeknologiak eta kontzeptu espazialen analisi eta interpretaziorako sarrera -hala nola kokapena, eskala, konexio eta hurbiltasun espaziala, etab.-.",
+        "5- Gaur egungo munduaren antolaketa politikoa: estatu motak eta gobernu ereduak. Zuzenbide-estatua eta konstituzioren balioak. Demokrazia: printzipioak, prozedurak eta erakundeak.",
+        "6- Gaur egungo gatazka nagusiak. Nazioarteko aliantzak eta erakundeak (NBE, NATO, ELGA, EB, AEE, APEC, etab.), bitartekaritza eta bake-misioak. Esku-hartze humanitarioa eta Justizia Unibertsala. Genozidioak eta gizateriaren aurkako krimenak. Gerrak, terrorismoa eta beste indarkeria politiko mota batzuk.",
+        "7- Egitura ekonomikoak gaur egungo munduan: ekonomia globalizatua. Eragile ekonomikoak, aldaketak ekoizpen-sektoreetan eta merkatuen funtzionamenduan. Publikoa eta pribatuaren auzia. Baliabideak, desparekotasuna eta injustizia toki- eta mundu-testuinguruetan. Migrazioak, kultura-aniztasuna eta mestizajea gaur egungo gizarteetan.",
+        "8- Emakumeen papera gaur egungo gizarteetan: hezkuntzarako eskubidea, lana eta boterea eskuratzeko aukerak eta haien aurkako diskriminazio edo indarkeria egoerak munduan zehar. Mugimendu feminista. Jarrera eta portaera sexisten identifikazio gure inguruan eta Giza Eskubideen Adierazpen Unibertsalarekiko lotura."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Gizarteak eta lurraldeak",
+      "titulo": "Gizarteak eta lurraldeak",
+      "items": [
+        "1- Historiaren ezagutza eraikitzeko, ikerketako lan-metodologiei eta -teknikei buruzko sarrera: iturri historikoak, iraganari buruzko ezagutza eraikitzeko oinarri gisa. Eskola historiografikoen teoria eta metodoen arteko kontrastearen zergatia ezagutzea, Historia zientzia gisa eta eskola horien jarraitzaileen ikuspegiak aztertzeari ekiteko.",
+        "2- Azalpen historikoaren kausa anitzak. Prozesu historikoetan parte hartzen duten osagai ekonomiko, sozial, politiko eta kulturalen identifikazioa, korronte historiografikoen arabera.",
+        "3- Denbora historikoa: Denbora-lerroen eraikuntza eta interpretazioa, prozesu historikoak ulertzeko, linealtasun-, kronologia-, aldiberekotasun- eta iraupen-ikuspuntuen bidez.",
+        "4- Gaurkotasuneko arazoen aurrean norberaren iritzi argudiatuak eratzea, Historiarekin erlazionatuz eta testuinguruan kokatuz. Aurkezpen eta eztabaiden bidez horiek defendatu eta kritikoki aurkeztu.",
+        "5- Eraldaketa politikoa Aro Garaikidean: mendekoak izatetik, herritarrak izatera. Legea, kontratu sozial gisa: eskubide indibidual eta kolektiboen lorpena. Iraultza Liberalak. Sistema liberalen jatorria, eboluzioa eta egokitzapena, munduan zehar.",
+        "Ideologia poliltiko nazionalista berriak. Demokraziaren eraikuntza.",
+        "6- Sistema liberalen jatorria, eboluzioa, erresistentziak eta egokitzapena Espainiako Historia Garaikidean. Eraldatze prozesuaren oinarrientestuingurua eta alde politiko, ekonomiko, sozial eta kulturalen azalpena, Independentzia Gerratik 1931era arte.",
+        "7- Euskal lurraldeak Independentzia Gerratik Gerra Karlistak arte: Foru Sistema desagertzeko prozesua eta Ekonomia Itunen Hitzarmen Ekonomikoen sorrera.",
+        "8- Sistema kapitalista, sorreratik gaur egun arte. Ekonomia industria-iraultzetatik: kolonialismoa, inperialismoa eta mendekotasun ekonomiko eta kultural berriak. 1917ko Errusiako Iraultza eta bere ondorioak.",
+        "9- Industrializazioa Euskal Herrian, eraldaketa ekonomiko eta sozialak, eta euskal-nazionalismoaren sorrera.",
+        "10- Aro Garaikideko ziklo demografikoen, bizimoduen eta gizarte-antolaketako ereduen eboluzioa. Langile-mugimenduetatik ongizate-estatura arte.",
+        "11- Espainiaren eta Euskal Herriaren erronka demografikoak Aro Garaikidean: landa-exodotik hiri-kontzentraziora.",
+        "12- Demokrazien krisia eta totalitarismoen sorrera: faxismoak eta estalinismoa. Askatasunaren, berdintasunaren eta giza eskubideen aldeko gizarte-mugimenduak Mundu Garaikidean. Giza Eskubideen Adierazpen Unibertsala.",
+        "13- Nazioarteko harremanak Aro Garaikidean: Lehen Mundu Gerra, Gerren Arteko Garaia, 1929ko Krisia eta Bigarren Mundu Gerra, guztien kausak eta ondorioak.",
+        "14- Espainiako Bigarren Errepublika: erreformak, horien ondorioak eta gizartearen polarizazioa. Ordenamendu arauemaile autonomikoaren sorrera: 1936ko Euskal Autonomia Estatutua. 1936ko Gerra Zibila eta diktadura frankista, ondorioak Euskal Herrian.",
+        "15- Espainiako konstituzioen eboluzioa: 1812ko konstituziotik 1978ko konstituziora arte.",
+        "16- Oinarri geoestrategikoak XX. mendearen bigarren erditik gaur egunera arte: bloke-politika eta Gerra Hotza. Amerikako Estatu Batuen nagusitasunetik mundu multipolarrera. Nazioarteko erakundeen zeregina: NBEren sorrera eta Giza Eskubideen Adierazpen Unibertsala.",
+        "17- Europa eraikitzeko prozesua. Integrazio ekonomikoa, monetarioa eta herritarra. Europako erakundeak. Europaren eta europeismoaren balioen etorkizuna.",
+        "18- Euskal Autonomia Erkidegoaren antolaketaren eta administrazioaren oinarrizko elementuak Espainiako Estatuaren testuinguruan: autogobernuaren iturriak eta 1979ko Autonomia Estatutua.",
+        "19- Emakumeek burututako eskubide zibil eta politikoen lorpena eta emakumeen eta gizonen benetako berdintasunaren aldeko borroka. Historia Garaikideko emakume esanguratsuak.",
+        "20- Arte eta kultura adierazpen berriak Aro Garaikidean, munduan, Espainian eta Euskal Herrian: eredu tradizionalekiko haustura, izaera kritiko eta esperimental berri batetik. Neoklasizismotik XXI. mendeko joera artistikoetara. Ondare materiala eta immateriala errespetatzea eta kontserbatzea.",
+        "21- Eraldaketa zientifiko eta teknologikoak munduan, Espainian eta Euskal Herrian Aro Garaikidean.",
+        "22- Kultura-aldaketak eta gizarte-mugimenduak mundu garaikidean. Eskubideen lorpena gizarte demokratiko garaikideetan.",
+        "Memoria demokratikoa. Komunikabideen eta sare sozialen zeregina."
+      ],
+      "codigos_items": []
+    }
+  ],
+  "comunidad": "pais-vasco",
+  "idioma": "eu"
+}

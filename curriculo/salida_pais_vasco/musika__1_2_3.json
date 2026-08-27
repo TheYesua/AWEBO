@@ -1,0 +1,156 @@
+{
+  "materia_oficial": "MUSIKA",
+  "materia": "Musika",
+  "etapa": "ESO",
+  "ciclo": "1º ESO y 2º ESO y 3º ESO",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º ESO",
+    "2º ESO",
+    "3º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Produkzio musikal eta eszenikoek gizakiaren eta haren kulturaren garapenean izan duten funtzioa ezagutzea, haren eboluzioari buruzko hartze aktiboaren eta hausnarketa kritikoaren bidez, gizabanako bakoitzaren eta gizarte osoaren balioen eta sinesmenen testigantzan nola bihurtzen diren ulertzeko, haiek kontserbatzeak duen garrantzia baloratuz.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Hainbat musika- eta eszena-adierazpenen ezaugarri garrantzitsuenak ezagutzea, gizartearen barruan dituzten elementuak eta asmoak aztertuz, norberaren pentsamendua eta kultura-identitatea garatzeko, eta interesa agertuz eta ondarearen garrantzia baloratuz, kultura aberasteko eta errespeturako iturri gisa.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Emozioen eta adierazpen musikalaren arteko erlazioa aztertzea, norberaren eta besteen iritzien bidez eta ahots-, instrumentu- eta gorputz-inprobisazioen bidez, sormena eta jarrera kolaboratiboa garatzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Musika-, ahots-, instrumentu-, mugimendu- eta dantza-interpretazioaren berezko ezagutza musikalak, trebetasunak eta teknikak aplikatzea, proposamen musikalak eta eszenikoak gauzatuz, sormen- eta adierazpen-aukerak aztertzeko, euren sentimenduak, emozioak eta jarrerak kontrolatzeko eta kudeatzeko, eta autoestimua garatzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Proposamen artistiko-musikalak eta eszenikoak sortzea, banaka edo taldeka, ahotsaren, hainbat instrumenturen, gorputzaren eta tresna teknologikoen euskarriaren bidez, sormena indartzeko eta modu inklusiboan garapen pertsonal, sozial eta ekintzailerako aukerak identifikatzeko.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Produkzio musikal jakin batzuen inguruko faktore historikoak, kulturalak eta sozialak identifikatzea, horien ezaugarriak eta funtzioa ulertuz adibideen azterketaren bidez, eta genero-ikuspegia eta jarrera kritiko, ireki eta errespetuzkoa txertatuz."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Euskal kulturaren eta beste kultura batzuen musika- eta eszena-ondarea kontserbatzearen garrantzia balioestea, proposamen diferenteak ezagutuz, eta norberaren aberastea eta gizarte-kohesioa sustatuz."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Gure kulturaren eta beste batzuen musika-proposamenen ezaugarri, elementu eta teknika garrantzitsuenak identifikatzea, ikus-entzunezko euskarrien bidez, irekitasun-, interes- eta errespetu-jarrera agerian utziz."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Euskal kulturaren eta beste kultura batzuen musika- eta eszena-adierazpenak balioestea, analisi eta hartze aktibo, errespetuzko eta inklusiboaren bidez, horiek sortu ziren gizartearen islatzat hartuz."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Aztertutako musika-proposamenen ideiak, sentimenduak eta emozioak errespetuz, enpatiaz eta sentikortasunez adieraztea, musika-ekitaldiak entzunez, ikusiz edo horietara joanez."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Inprobisazio gidatuak edo askeak egitea, bakarka edo taldean, gorputza edo musika-instrumentuak erabiliz eta sormena eta autokonfiantza garatuz"
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Banakako eta taldeko musika-trebetasunak praktikan jartzea, autoestimua interpretazioaren bidez garatuz eta sendotuz."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Musika- eta gorputz-interpretazioko oinarrizko banakako teknikak erabiltzea musika-trebetasunak garatzeko, eta, horretarako, estereotipatu gabeko emozioen kontrolaren adierazpena eta kudeaketa bultzatuz, baita autokonfiantza eta norberarenganako segurtasuna ere."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Interpretatzaile eta entzule gisa parte hartzea ikastetxeko eta/edo ikastetxetik kanpoko emanaldi eta adierazpen musikal eta eszenikoetan, sormen- eta interpretazio-prozesuetan ekimena erakutsiz."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Musika-interpretazioko eta mugimenduko teknikak aplikatzea ikasgelako eta ikasgelatik kanpoko entzunaldi eta kontzertuetan, sormena eta gainerako pertsonekiko errespetua garatuz."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Proposamen artistiko-musikalak eta eszenikoak sortzea, ikus-entzunezko produktuak garatzeko tresna teknologikoak erabiliz, jarrera inklusiboarekin, kohesioarekin eta jasangarritasun-irizpideekin."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Ahots, instrumentu, koreografia eta diziplina anitzeko konposizioak egitea bakarka eta/edo elkarlanean, taldearen ideien, emozioen eta sentimenduen aniztasuna errespetatuz."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Musika entzutea eta hautematea",
+      "titulo": "Musika entzutea eta hautematea",
+      "items": [
+        "Soinua, zarata eta isilunea. Kutsadura akustikoa. Ingurumenarekiko errespetuari buruzko hausnarketa kritikoa.",
+        "Musikaren funtsezko elementuak: erritmoa, melodia, harmonia, testura, forma eta musika generoak.",
+        "Euskal Herriko eta beste toki batzuetako sortzaileek egindako musika- eta dantza-proposamenak: historian zehar izan dituzten ezaugarri garrantzitsuenen entzutea, azterketa, deskribapena eta balorazioa.",
+        "Tokiko, eskualdeko, nazioko eta beste toki batzuetako konpositoreak, artistak eta taldeak: zuzeneko eta erregistratutako ekitaldi eta adierazpen artistiko-musikalen eta eszenografikoen azterketa.",
+        "Giza ahotsak eta musika-tresnak. Sailkapena, ezaugarriak eta taldekatzeak.",
+        "Musika-arloari lotutako hiztegi espezifikoa. Ezagutza eta erabilera.",
+        "Tresna digitalak eta musika.",
+        "Informazio fidagarria, egokia eta kalitatekoa bilatzeko, hautatzeko eta berriz lantzeko estrategiak.",
+        "Musika-harrerako oinarrizko portaera-arauak: errespetua eta balorazioa musika argudioetan oinarrituta.",
+        "Sentimenduen eta emozioen identifikazioa eta errekonozimendua.",
+        "Sentimenduen eta emozioen adierazpena."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Interpretazioa, inprobisazioa eta sorkuntza eszenikoa",
+      "titulo": "Interpretazioa, inprobisazioa eta sorkuntza eszenikoa",
+      "items": [
+        "Partitura: grafia konbentzionalen eta ez-konbentzionalen identifikazioa. Irakurketa eta idazketa musikala.",
+        "Musika-hizkuntzaren oinarrizko elementuak: Soinuaren parametroak, bitartekariak, musika-eskalak eta oinarrizko akordeak.",
+        "Interpretazio eta inprobisazio gidatu eta askerako oinarrizko teknikak: ahozkoa, instrumentala, gorputzekoa eta eszenikoa.",
+        "Proiektu musikalak eta ikus-entzunezkoak: musika-hizkuntzaren erabilera eta egokitzea aplikazio teknologikoen bidez.",
+        "Jabetza intelektuala eta kulturala: Lizentzia motak. Planteamendu etikoak eta arduratsuak. Egile eskubideen errespetua eta pribatutasuna.",
+        "Musika-sorkuntzarako tresna digitalak.",
+        "Musika-jardueretan portaerako eta parte hartzeko arauak. Besteen produkzioekiko errespetuzko eta diskriminaziorik gabeko jarrera.",
+        "Oinarrizko emozioen autorregulazioa. Autoezagutza eta segurtasuna norberarengan.",
+        "Jakin-mina, sormena eta ekimena arte-proposamenak egitean.",
+        "Autokonfiantza eta autoestimua ikaskuntza-prozesuaren zati gisa."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Musika-testuinguruak eta -kulturak",
+      "titulo": "Musika-testuinguruak eta -kulturak",
+      "items": [
+        "Mendebaldeko musikaren eta dantzaren historia: aldiak, ezaugarriak, generoak, ahotsak, musika-tresnak eta taldekatzeak.",
+        "Euskal Herriko eta beste toki batzuetako musika- eta dantza-tradizioak, kultura- eta genero-aniztasuna. Taldekatze nagusiak: ezaugarriak eta funtzioak.",
+        "Euskal kulturako eta beste kultura batzuetako musika genero herrikoi, hiritar eta garaikideak.",
+        "Soinua eta musika ikus-entzunezko baliabideetan eta teknologia digitaletan.",
+        "Musika- eta dantza-adierazpen desberdinen balorazio kritikoa.",
+        "Genero-joerarik gabeko askotariko musika- eta dantza-adierazpenekiko irekitasuna, interesa eta jarrera inklusiboa."
+      ],
+      "codigos_items": []
+    }
+  ],
+  "comunidad": "pais-vasco",
+  "idioma": "eu"
+}

@@ -108,11 +108,17 @@ campo y no lo traen, así que para ellos vale el valor por defecto, `ceuta`.)*
 | Cataluña (Decret 175/2022 + XTEC) | 26 | 36 | 737 | 1918 |
 | Andalucía (Orden 30/05/2023) | 19 | 41 | 737 | 957 |
 | Galicia (Decreto 156/2022 + Guía LOMLOE) | 30 | 60 | 1583 | 4643 |
+| País Vasco (Decreto 77/2023) | 32 | 43 | 733 | 1479 |
 
 Un bloque es un par `(materia, cursos)`: Andalucía y Galicia publican curso a
 curso y por eso tienen más bloques que materias, mientras que Cataluña agrupa
 1.º–3.º. Los «saberes» de Galicia son sus contidos, que están más desglosados
 que los saberes básicos de las otras comunidades — de ahí que salgan 4.643.
+
+El País Vasco agrupa por **ciclos** —«1.º y 2.º», «3.º y 4.º»—, así que sus
+bloques son pocos para las materias que tiene. Las 32 materias salen de 30
+títulos del Anexo III: Matemáticas de 4.º se desdobla en los itinerarios A y B,
+que tienen currículos distintos.
 
 Empezó siendo cuatro materias —Tecnología, Lengua, Matemáticas e Inglés—, que
 es el alcance con el que nació el proyecto como TFG.

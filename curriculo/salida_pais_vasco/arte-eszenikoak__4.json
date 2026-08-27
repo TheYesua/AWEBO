@@ -1,0 +1,150 @@
+{
+  "materia_oficial": "ARTE ESZENIKOAK",
+  "materia": "Arte Eszenikoak",
+  "etapa": "ESO",
+  "ciclo": "Único",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "4º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Intereseko emozio, ideia, ekintza eta gaien adierazpena eta komunikazioa praktikan jartzea gorputzaren, ahotsaren, mugimenduaren eta/edo testuaren bitartez, osasuna sustatzeko eta autoezagutza, gizarte-trebetasunak eta adierazpen- eta komunikazio-trebetasunak garatzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Gorputz-teknikak, inprobisazio-teknikak eta/edo mugimendu-sekuentziak eta/edo eszenak konposatzeko teknikak praktikan jartzea, eszena-proposamenak gauzatuz, interpretazio- eta sormen-trebetasunak ikertzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Obra eszeniko bat sortzeko prozesuan inplikatzea kolaborazio- eta inklusio-proiektuen bidez, garapen pertsonal, sozial eta artistikorako aukerak sustatzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Obra eszenikoak eszenaratzea eta antzeztea hainbat tresna teknologiko eta artistikoren bidez, ekintza eszenikoa bizi izateko, kultura-ondare immateriala baloratzeko eta eraldaketa-aukerak esperimentatzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Ondare eszeniko klasiko eta garaikideko arte dramatikoko eta dantzako erreferentziazko obren ikusle aktiboak izatea, obra horiek testuinguruan kokatzea eta kritikoki aztertzea, norberaren pentsamendua eta kultura-identitatea garatzeko, ondareak kultura-aberastasunerako, aniztasunarekiko errespeturako eta garapen indibidual eta sozialerako iturri gisa duen garrantzia baloratuz eta interesa agertuz.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Gorputzaren, ahotsaren, mugimenduaren eta/edo testuaren bidez emozioak, ideiak, ekintzak eta intereseko gaiak errespetuz eta era osasungarrian adieraztea, bakarka eta taldean."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Komunikazio-trebetasunak agertzea, interpretazioaren, elkarrizketaren eta sorkuntza-prozesuetan kolaborazioan jardutearen bidez."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Taldean lan egitea, iritzi- eta identitate-aniztasuna onartuz eta estereotipoen aurrean pentsamendu kritikoa agertuz."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Arte dramatikoko edo dantzako obrak egiteko eta interpretatzeko oinarrizko teknikak erabiltzea konpetentzia artistikoa garatzeko, emozioen adierazpena eta erregulazioa eta bere buruarenganako segurtasuna sustatuz."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Bakarkako edo taldeko inprobisazio gidatuak edo libreak egitea, gorputza, ahotsa edo tresnak erabiliz eta sormena eta autokonfiantza garatuz."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Sorkuntza-prozesu eszeniko edo koreografikoetan bakarka eta/edo kooperazioan parte hartzea, taldearen ideia, emozio eta sentimenduekiko errespetua agertuz eta inklusioan lagunduz."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Taldeko sorkuntza-prozesuaren barruan hainbat rol betetzea, kolaborazioa, errespetua eta ahalegin indibidualak guztien onerako duen balioa sustatuz."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Ikastetxearen barruan eta/edo kanpoan pieza eszenikoak eszenaratu eta antzeztea, ekiteko eta erabakiak hartzeko gaitasuna agertuz."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Proposamen eszenikoak sortzeko tresna digitalak erabiltzea, soinu-elementuak, elementu plastikoak eta ikusizkoak elkartuz."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Gure kulturako eta beste kultura batzuetako hainbat proposamen eszenikoren ezaugarri eta elementu historiko, sozial, kultural eta teknikorik garrantzitsuenak identifikatzea, haiek jasoz (ahal bada zuzenean) eta testuinguruan kokatuta eta jarrera tolerante, inklusibo eta iraunkor batekin aztertuz eta komunikatuz."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Ehun profesional eszenikoak gizarteari egindako ekarpena baloratzea eta bertako eta beste kultura batzuetako arte dramatikoko eta dantzako ondare eszenikoa kontserbatzeko beharra onartzea, pieza eszenikoak zuzenean jasoz eta pieza horiek beren testuinguru historikoaren isla direla eta hezkuntza-balio pertsonala eta soziala dutela ulertuz."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Adierazpen-praktika eta komunikazio eszenikoko praktika",
+      "titulo": "Adierazpen-praktika eta komunikazio eszenikoko praktika",
+      "items": [
+        "Emozioen, ideien, ekintzen eta intereseko gaien adierazpena eta komunikazioa gorputzaren, ahotsaren, mugimenduaren eta testuaren bidez."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Gorputz-tekniken, inprobisazio-tekniken eta/edo mugimendu-sekuentzien eta/edo eszenen konposizio-tekniken",
+      "titulo": "Gorputz-tekniken, inprobisazio-tekniken eta/edo mugimendu-sekuentzien eta/edo eszenen konposizio-tekniken",
+      "items": [
+        "praktika.",
+        "Arte dramatikoa eta dantza teknikoki gauzatzeko oinarrizko printzipioak.",
+        "Inprobisazio gidatuak eta libreak egiteko teknikak.",
+        "Antzerki- eta koreografia-errepertorioa."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Inplikazioa obra eszeniko bat sortzeko prozesuan",
+      "titulo": "Inplikazioa obra eszeniko bat sortzeko prozesuan",
+      "items": [
+        "Sorkuntza eszenikorako tresnak eta baliabideak.",
+        "Sormen-tailerrak eta diziplinarteko laborategiak."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Obra eszenikoen eszenaratzea eta antzezpena",
+      "titulo": "Obra eszenikoen eszenaratzea eta antzezpena",
+      "items": [
+        "Sortutako obren eszenaratzea.",
+        "Entseguak eta antzezpen eszenikoa.",
+        "Espazio eszenikoa, argiztapena, soinu-espazioa eta karakterizazioa."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "E",
+      "bloque": "E. Ondare eszeniko klasiko eta garaikideko erreferentziazko obren harrera, testuingurua eta analisi kritikoa",
+      "titulo": "Ondare eszeniko klasiko eta garaikideko erreferentziazko obren harrera, testuingurua eta analisi kritikoa",
+      "items": [
+        "Ikusle gisa parte hartzen den obren testuingurua.",
+        "Ikuskizun eszenikoen analisia eta kritika."
+      ],
+      "codigos_items": []
+    }
+  ],
+  "comunidad": "pais-vasco",
+  "idioma": "eu"
+}

@@ -1,0 +1,200 @@
+{
+  "materia_oficial": "KULTURA ZIENTIFIKOA, DBHKO 3. MAILA",
+  "materia": "Kultura Zientifikoa, DBHko 3. Maila",
+  "etapa": "ESO",
+  "ciclo": "Único",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "3º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Zientziak eta teknologiak bizitzan, osasunean eta ingurumenean duen eragina kritikoki analizatzea, ezagutza zientifikoa erabiliz, bizi-baldintza pertsonal eta globaletan eragina duten eta eztabaida sozialaren eta debate publikoaren xede diren iritzi oinarrituak eratzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Hainbat iturritatik datorren informazio zientifikoa hautatzeko eta erabiltzeko trebetasunak garatzea, fidagarriak direnak modu kritikoan bereiziz eta zuzen aipatuz, arazo eta eztabaidagai zientifikoak ebazteko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Ikerketaren funtsezko elementuak eta prozedurak ulertzea eta baloratzea, metodo zientifikoa aplikatuz, pentsamendu zientifikoaren berezko arrazoibideak garatzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Eduki zientifikoa izango duten mezuak sortzea eta hainbat testuingurutara modu koherentean egokitzea, ahozko eta idatzizko hizkuntza behar bezala erabiliz, baita notazioko eta irudikapeneko beste sistema batzuk ere, azalpen eta argudiaketa zientifikoak eman ahal izateko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Gizarte-intereseko arazoei irizpide zientifikoekin heltzea, horiei irtenbideak kolaborazioan emanez, garapen iraunkorrarekin bateragarriak izango diren ohitura eta erabaki pertsonal arduratsuak sustatzeko eta hartzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Zientzia testuinguru kultural, sozial eta ekonomikoak baldintzatutako eraikuntza-prozesu etengabean dagoela ezagutzea, eztabaida zientifikoek giza ezagutzaren bilakaerari egiten dizkioten ekarpenak baloratuz, pentsamendu kritikoa garatzeko eta zientziaren dimentsio kulturala eta horrek gizartean eta ingurumenean dituen ondorioak balioesteko.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Ezagutza eta irizpide zientifikoetan oinarritutako informazioak eta sinesmenetan eta iritzietan oinarritutakoak bereiztea, alfabetatze zientifikoa izatearen garrantzia baloratuz."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Zientziak eta teknologiak bizi-baldintzak hobetzeko egiten dituzten ekarpenak baloratzea, gizarte-arazo batzuk eragin zituzten kausak identifikatuz, eta arazo horiek erabat edo zati batean konpontzeko zientziak egiten duen ekarpena identifikatuz."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Modu arrazoituan argudiatzea eta eztabaidatzea debate sozialaren eta auzi publikoaren xede diren hainbat gai zientifiko-teknologikoren inguruan."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Hainbat iturritatik datorren informazio zientifikoa hautatzeko eta analizatzeko trebetasunak erabiltzea, fidagarriak direnak bereizten jakinez."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Zientziekin lotutako arazoak eta/edo gaiak jorratzea, eduki zientifiko-teknologikoko informazioak bilatuz, hautatuz eta antolatuz, zereginen helburuen arabera."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Inguruko arazoei erantzungo dieten araketetan oinarritutako ekimenak abiaraztea, eskura dauden baliabideak erabiliz."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Gaurkotasun zientifikoko gai bati buruzko ikerketa-proiektu bat diseinuan, lanketan eta aurkezpenean funtsezko elementuak ezartzea, lehentasunez IKTak erabiliz."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Zenbait ikerketa-proiekturen emaitzak interpretatzea, arrazoibide zientifikoa erabiliz eta/edo, beharrezkoa denean, koebaluatuz, jardueraren arabera."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "3",
+      "descripcion": "Zientziekiko jarrera positiboa erakustea, akatsa eta ziurgabetasuna ikaskuntza-prozesua hobetzeko aukeratzat hartzea."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Mezu zientifikoak, artikuluak, bideoak, podcastak, literatura zientifikoa... koherentziaz azaltzea eta/edo argudiatzea, ahozko eta idatzizko hizkuntza egokia eta hizkuntza zientifikoaren oinarrizko arauak zuzen erabiliz."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Gai zientifikoei buruzko ondorioak eta ideiak zenbait euskarritan komunikatzea askotariko publikoei, informazioaren eta komunikazioaren teknologiak eraginkortasunez erabiliz."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Interes sozialeko arazo zientifikoak identifikatzea, horiei sormenez, kolaborazioan eta modu inklusiboan irtenbideak emanez."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Garapen iraunkorrarekin eta ezagutza eta arrazoibide zientifikoekin bateragarriak izango diren ekimenak eta ohiturak sustatzea."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "5",
+      "descripcion": "Argudiatzea osasunak ez duela soilik esan nahi afekziorik edo gaixotasunik ez dagoela, aldizkako kontrolak, tratamendu aurreratuak eta bizimodu osasungarria lehenesten dituzten prebentzio-neurriak hartzearen garrantzia baloratuz."
+    },
+    {
+      "codigo": "5.4",
+      "competencia": "5",
+      "descripcion": "Ekintza jakin batzuek ingurumenean eta osasunean dituzten ondorioei buruzko erabaki arduratsuak hartzea, eskura dagoen informazioa eta beren ezagutza zientifikoak erabiliz."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Zientzialariak eta haien proiekzio profesionalak zientziari egin dizkioten ekarpenekin erlazionatzea, genero-ikuspegia kontuan hartuz."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Aurrerapen zientifiko-teknologikoak eta horiek historian zehar hainbat esparrutan izan dituzten ondorioak aztertzea, gizarteari egin dizkioten ekarpenak baloratuz."
+    },
+    {
+      "codigo": "6.3",
+      "competencia": "6",
+      "descripcion": "Taldean lan egitea, beharrezkoa denean, zereginetan kooperazio eta parte-hartze arduratsuko jarrerak erakutsiz, eta desberdintasunak errespetuz eta tolerantziaz onartuz."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "1. Zientzia eta informazio zientifikoa",
+      "titulo": "Zientzia eta informazio zientifikoa",
+      "items": [
+        "Lan-metodoak: metodo zientifikoa Arazo-behaketa baten detekzioa. Behaketaren erreproduzigarritasuna.",
+        "Hipotesiak. Behaketen azalpen posibleak eta horien kausa-efektu erlazioa planteatzeko estrategiak. Hipotesiaren ondorioen dedukzioa eta hipotesitik ondoriozta daitezkeen iragarpenak: faltsabilitatea.",
+        "Esperimentazioa. Aldagaien kontrola. Datuen erregistroa eta analisia.",
+        "Emaitzen analisia: hipotesiak frogatzeko edo gezurtatzeko eta ondorioak ezartzeko estrategiak.",
+        "Emaitzen komunikazioa. Eztabaida, informazioa trukatzeko eta iritzi pertsonalak argudiatzeko bitarteko gisa.",
+        "Zientzia vs sasizientziak. Sasizientzien gorakada edo gainbehera."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "2",
+      "bloque": "2. Astronomia, unibertsoa esploratzen",
+      "titulo": "Astronomia, unibertsoa esploratzen",
+      "items": [
+        "Unibertsoaren egitura. Izarren genesia.",
+        "Eguzki-sistema. Exoplanetak.",
+        "Unibertsoa behatzeko metodoak. Teleskopioak , sateliteak eta bestelako behaketa-tresnak.",
+        "Astronomia eta sasizientziak.",
+        "Euskal Herriko zerua eta planisferioa.",
+        "Bidaia espazialak eta zabor espaziala."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "3",
+      "bloque": "3. Osasuna, aurrerapen zientifikoak",
+      "titulo": "Osasuna, aurrerapen zientifikoak",
+      "items": [
+        "Elikadura eta osasuna. Elikagai funtzionalak. Dieta.",
+        "Txertoak eta pandemiak.",
+        "Kirola eta osasuna.",
+        "Adikzioak: substantziak, teknologia berriak..."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "4",
+      "bloque": "4. Ingurumen-inpaktua, aurrerapen teknologikoak",
+      "titulo": "Ingurumen-inpaktua, aurrerapen teknologikoak",
+      "items": [
+        "Nekazaritza eta abeltzaintza iraunkorrak: inpaktua, pestizidak, antibiotikoak, CO2.",
+        "Energia berriztagarriak eta energia berdeak: ingurumen-inpaktua, aurrerapen teknologikoak, bioerregaiak.",
+        "Klima-aldaketa: kausak eta ondorioak. Planetaren etorkizuna. Herritarren erantzukizuna."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "5",
+      "bloque": "5. Generoa eta kultura zientifikoa",
+      "titulo": "Generoa eta kultura zientifikoa",
+      "items": [
+        "Emakumezko zientzialari eta asmatzaileen ikusezintasuna zientziaren historian.",
+        "Zientzialari handien ekarpena zientzien garapenean.",
+        "Kultura zientifikoa eta zientzialarien zeregina zientziaren aurrerapenerako eta hobekuntzarako mugarri nagusietan, historikoetan eta gaur egungoetan."
+      ],
+      "codigos_items": []
+    }
+  ],
+  "comunidad": "pais-vasco",
+  "idioma": "eu"
+}

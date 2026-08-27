@@ -10,8 +10,9 @@ al catálogo oficial.
 
 **El catálogo depende de dónde enseñe el docente.** Además del Real Decreto
 217/2022 y su desarrollo para Ceuta y Melilla, están cargados los currículos de
-**Cataluña** (Decret 175/2022), **Andalucía** (Orden de 30 de mayo de 2023) y
-**Galicia** (Decreto 156/2022): cada docente elige su provincia y trabaja contra
+**Cataluña** (Decret 175/2022), **Andalucía** (Orden de 30 de mayo de 2023),
+**Galicia** (Decreto 156/2022) y el **País Vasco** (Decreto 77/2023): cada
+docente elige su provincia y trabaja contra
 la normativa que se le aplica, no contra la estatal. Ver [`curriculo/README.md`](curriculo/README.md).
 
 > **Origen**: este proyecto nace del Trabajo de Fin de Grado en Ingeniería
@@ -335,7 +336,7 @@ Lo entregado hasta ahora como proyecto personal, agrupado por para qué sirve.
 |---|---|
 | **Anclaje curricular garantizado** | Ya no se pueden crear situaciones de materias y cursos sin currículo —«Matemáticas · 4.º ESO» no existe—, que generaban secciones vacías en silencio. |
 | **De 6 materias a 21** | Extractor sobre el BOE, con los cursos derivados de la parte dispositiva en vez de escritos a mano. |
-| **Currículo por comunidad autónoma** | Ceuta y Melilla, Cataluña, Andalucía y Galicia, cada una con su boletín. El docente elige provincia y ve solo su normativa. Cuatro extractores, porque cada boletín publica de una forma distinta (ver [`curriculo/README.md`](curriculo/README.md)). |
+| **Currículo por comunidad autónoma** | Ceuta y Melilla, Cataluña, Andalucía, Galicia y el País Vasco, cada una con su boletín, y cada una en su lengua propia. El docente elige provincia y ve solo su normativa. Cinco extractores, porque cada boletín publica de una forma distinta (ver [`curriculo/README.md`](curriculo/README.md)). |
 
 **Acceso y datos personales**
 
@@ -360,7 +361,7 @@ estructurado que nunca llegó a funcionar, `/health` informando del proveedor
 equivocado, dos incumplimientos WCAG 2.1 en el tema claro y los reintentos
 sobre errores `4xx` de la API de OpenAI.
 
-**1095 tests** cubren todo lo anterior, en la batería que corre en cada push.
+**1158 tests** cubren todo lo anterior, en la batería que corre en cada push.
 La cifra la comprueba un test: si alguien añade una tanda y no la actualiza
 aquí, falla.
 
@@ -383,7 +384,7 @@ El detalle vive fuera de este repositorio; aquí va el estado.
 | ~~8b~~ | ~~Accesibilidad: audio con IA~~                | M        | ✅ 10/08 · aHoTTS local |
 | ~~9a~~ | ~~Ampliación: más materias~~                   | S        | ✅ 07/08 · de 6 a 21 |
 | 9b | Ampliación: más etapas (Bachillerato, FP)          | M        | Pendiente |
-| 9c | Ampliación: más comunidades autónomas              | XL       | 🚧 Ceuta, Cataluña, Andalucía y Galicia hechas · queda País Vasco |
+| 9c | Ampliación: más comunidades autónomas              | XL       | ✅ Ceuta, Cataluña, Andalucía, Galicia y País Vasco |
 | ~~10~~ | ~~Saldar deuda técnica~~                       | S        | ✅ 08/08 |
 | ~~11~~ | ~~Correo electrónico~~                         | M        | ✅ 09/08 |
 | ~~12~~ | ~~Baja de la propia cuenta~~                   | S–M      | ✅ 10/08 |

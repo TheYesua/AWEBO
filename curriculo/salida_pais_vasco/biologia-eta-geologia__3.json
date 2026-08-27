@@ -1,0 +1,203 @@
+{
+  "materia_oficial": "BIOLOGIA ETA GEOLOGIA",
+  "materia": "Biologia eta Geologia",
+  "etapa": "ESO",
+  "ciclo": "3º ESO",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "3º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Informazioa identifikatzea, lokalizatzea eta hautatzea, bere egiazkotasuna egiaztatuz, jarrera kritikoz antolatuz eta baloratuz, zientzia biologiko eta geologikoekin lotutako galderak ebazteko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Informazio eta datu zientifikoak interpretatzea eta transmititzea, eta horiei buruz argudiatzea, hainbat formatu erabiliz eta hizkuntza zientifikoaren izaera unibertsala aitortuz, zientzia biologiko eta geologikoen kontzeptuak eta prozesuak aztertzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Ikerketa-proiektuak planifikatzea eta garatzea, zientziaren berezko metodologien urratsei jarraituz eta, beharrezkoa denean, kooperatuz, zientzia geologiko eta biologikoekin zerikusia duten alderdiak ikertzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Arrazoibidea eta/edo pentsamendu konputazionala erabiltzea, erantzunak eta soluzioak kritikoki aztertuz eta prozedura birformulatuz, beharrezkoa balitz, biologiarekin eta geologiarekin loturako problemak ebazteko edo biologiarekin eta geologiarekin lotutako eguneroko bizitzako prozesuak azaltzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Ekintza jakin batzuek ingurumenean eta osasunean dituzten ondorioak aztertzea, biologiaren eta Lurraren zientzien funtsetan oinarrituz, garapen iraunkorrarekin bateragarriak diren eta osasun indibiduala eta kolektiboa mantentzea eta hobetzea ahalbidetzen duten ohitura arduratsuak sustatzeko eta hartzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Paisaia jakin bateko elementuak aztertzea, natura ondare gisa baloratuz, eta geologiari eta Lurraren zientziei buruzko ezagutzak erabiliz haien historia geologikoa azaltzeko, haiek babesteko ekintzak proposatzeko eta balizko arrisku naturalak identifikatzeko.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Biologia eta Geologia jakintzagaiaren jakintzekin lotutako gaiak ebaztea, informazioa lokalizatuz, hautatuz eta antolatuz, hainbat iturri analogiko eta digital zuzen erabiliz eta aipatuz."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Informazioa oinarri zientifikoarekin aztertzea, sasizientzietatik, gezurretatik, konspirazio-teorietatik, funtsik gabeko sinesmenetatik eta abar bereiziz, eta mezu horien aurrean jarrera eszeptikoa edukiz."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Biologia eta Geologia jakintzekin lotutako kontzeptuak definitzea, eta, fenomenoak eta prozesuak deskribatzea, informazioa hainbat formatutan aztertuz (eredu grafki oak, taulak, diagramak, formulak, eskemak, sinboloak, weborriak...), jarrera kritikoa mantenduz eta ondorio arrazoituak eskuratuz."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Biologia eta Geologia jakintzagaiaren jakintzekin lotutako informazioa argi eta garbi komunikatzea, hizkuntza-egitura, terminologia eta formatu egokiak erabiliz (ereduak, grafikoak, taulak, bideoak, txostenak, diagramak, formulak, eskemak, sinboloak, eduki digitalak...)."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Fenomeno biologikoak eta geologikoak aztertzea eta azaltzea, eta ereduen eta diagramen bidez adieraztea, tresna analogiko eta digitalak erabiliz."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Erantzun edo kontrastatu daitezkeen galderak eta hipotesiak planteatzea, metodo zientifikoak erabiliz, fenomeno biologikoak eta/edo geologikoak azaltzen saiatuz eta horiei buruzko iragarpenak eginez."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Esperimentazioa, datu-bilketa eta fenomeno biologiko eta geologikoen analisia diseinatzea, galdera zehatzei erantzutea eta planteatutako hipotesi bat kontrastatzea ahalbidetuz."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Fenomeno biologiko eta geologikoei buruzko esperimentuak egitea eta datu kuantitatiboak edo kualitatiboak hartzea, baliabide, tresna analogiko eta digital edo teknika egokiak zuzen erabiliz."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "3",
+      "descripcion": "Ikerketa-proiektuan lortutako emaitzak interpretatzea, beharrezkoa denean, tresna matematikoak eta teknologikoak erabiliz."
+    },
+    {
+      "codigo": "3.5",
+      "competencia": "3",
+      "descripcion": "Proiektu zientifiko baten barruan kooperatzea, eginkizun zehatz bat arduraz hartuz, beharrezkoa denean espazio birtualak erabiliz, aniztasuna errespetatuz eta inklusioa bultzatuz."
+    },
+    {
+      "codigo": "3.6",
+      "competencia": "3",
+      "descripcion": "Esperimentazioaren eta eremuaren behaketaren bidez lortutako informazioa eta ondorioak aurkeztea, formatu analogiko eta/edo digital egokia erabiliz (taulak, grafikoak, txostenak, etab.)."
+    },
+    {
+      "codigo": "3.7",
+      "competencia": "3",
+      "descripcion": "Zientziak gizarteari egiten dion ekarpena eta zientzian diharduten pertsonen lana baloratzea, emakumeen zeregina nabarmenduz eta ikerketa etengabe eboluzionatzen ari den lan kolektibo eta diziplinarteko gisa ulertuz."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Problemak ebaztea eta prozesu biologiko edo geologikoak azaltzea, ezagutzak, datuak eta informazioa, arrazoibide logikoa, pentsamendu konputazionala edo baliabide digitalak erabiliz."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Fenomeno biologiko eta geologikoei buruzko problema baten soluzioa kritikoki aztertzea, ezagutza eta irizpide zientifikoak erabiliz eta, beharrezkoa denean, berriz formulatuz."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Zenbait ekintzak ingurumenean eta izaki bizidunen osasunean dituzten ondorioak ezagutzea, zientzia biologiko eta geologikoen oinarriak aplikatuz."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Biodibertsitatea babestearen, ingurumena zaintzearen, inguruneko izaki bizidunak babestearen, garapen iraunkorraren eta bizi-kalitatearen garrantziaz argudiatzea, oinarri eta irizpide zientifikoak erabiliz."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "5",
+      "descripcion": "Ingurune hurbilean ohitura jasangarriak proposatzea eta hartzea, norberaren eta besteen jarduerak modu kritikoan aztertuz eta norberaren arrazoibideetan, eskuratutako ezagutzetan eta eskura dagoen informazioan oinarrituz."
+    },
+    {
+      "codigo": "5.4",
+      "competencia": "5",
+      "descripcion": "Ohitura osasungarriak eta arduratsuak proposatzea eta hartzea, norberaren eta besteen ekintzak aztertuz (elikadura, higienea, gorputz-jarrera, jarduera fisikoa, pertsonen arteko harremanak, atsedena, pantailekiko esposizioa, estresaren kudeaketa, sexu-praktiketan segurtasuna, substantzien kontsumoa...), jarrera kritikoa erakutsiz eta fisiologiaren funtsetan oinarrituz."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Paisaiak natura-ondare gisa duen garrantzia baloratzea, paisaia osatzen duten elementuen hauskortasuna aztertuz."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Paisaia diferentetan arrisku naturalak eta giza ekintza jakin batzuetatik eratorritakoak identifikatzea, norberaren arrazoibideetan, eskuratutako ezagutzetan eta eskura dagoen informazioan oinarrituz."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Proiektu zientifikoa",
+      "titulo": "Proiektu zientifikoa",
+      "items": [
+        "Ikerketa zientifikoaren oinarrizko metodologiak:",
+        "Galdera, hipotesi eta aieru zientifikoak.",
+        "Informazioa bilatzeko, kolaboraziorako eta hainbat formatutan (aurkezpena, grafikoa, bideoa, posterra, txostena…) prozesuak, emaitzak edo ideiak komunikatzeko tresna digitalak.",
+        "Informazio zientifikoko egiazko iturriak.",
+        "Lan-ekipoak, tresnak eta espazioak (laborategia, ikasgelak, ingurunea...), esperimentazio zientifiko baterako egokiak/beharrezkoak.",
+        "Fenomeno naturalak behatzeko eta horiei buruzko datuak hartzeko metodoak.",
+        "Naturako prozesu edo elementuak sormenez irudikatzeko eta ulertzeko ereduak Emaitzen analisi-metodoak pentsamendu logiko eta/edo konputazionalaren bidez. Korrelazioaren eta kausalitatearen arteko aldea.",
+        "Prozesuen, emaitzen edo ideien komunikazioa formatu analogiko edo digitaletan (aurkezpena, grafikoa, bideoa, posterra, txostena…).",
+        "Zientzialari handien ekarpena zientzia biologiko eta geologikoen garapenean."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Giza gorputza eta ohitura osasungarriak",
+      "titulo": "Giza gorputza eta ohitura osasungarriak",
+      "items": [
+        "Zelula giza gorputzaren egitura-unitate eta unitate funtzional gisa*. Giza histologia.",
+        "Nutrizio-funtzioaren garrantzia, funtzio horretan parte hartzen duten aparatuak eta hauen oinarrizko fisiologia.* Dieta osasungarri eta ekoarduratsu baten berezko elementuen eta ezaugarrien identifikazioa.",
+        "Ugalketa-funtzioa.* Ugaltze-aparatuaren oinarrizko anatomia eta fisiologia.* Sexu-transmisiozko gaixotasunei eta nahi gabeko haurduntzei buruzko gogoeta, eta preserbatiboaren eta praktika sexual arduratsuen bidez prebenitzearen garrantzia.",
+        "Erlazio-funtzioa: zentzumen-hartzaileak, koordinazio-zentroak eta organo efektoreak.",
+        "Galdera eta problema praktikoen ebazpena, nutrizioko, erlazioko eta ugalketako funtzioetan inplikatuta dauden organismoko sistema eta aparatu nagusien fisiologiako eta anatomiako ezagutzak aplikatuta.",
+        "Osasun fisikoa, mentala eta soziala kontserbatzera bideratutako ohiturak (loaren higienea, jarrera-ohiturak, teknologia berrien erabilera arduratsua, ariketa fisikoa, estresaren kontrola…).",
+        "Ehunak bereizteko mikroskopioa eta lupa erabiltzeko eta tindatzeko teknikak."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Osasuna eta gaixotasuna",
+      "titulo": "Osasuna eta gaixotasuna",
+      "items": [
+        "Gaixotasun infekziosoak eta ez-infekziosoak, etiologiaren arabera.",
+        "Gaixotasun infekziosoak prebenitzeko eta tratatzeko neurriak, eragile kausalaren arabera, eta antibiotikoen erabilera egokiari buruzko hausnarketa.",
+        "Patogenoak organismoan sartzea zailtzen duten hainbat oztopo mota (mekanikoak, egiturazkoak, biokimikoak eta biologikoak)."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Geologia",
+      "titulo": "Geologia",
+      "items": [
+        "Geosferaren oinarrizko egitura. Planeten / Eguzki Sistemako osagaien egitura orokorra.",
+        "Atmosferaren, hidrosferaren, geosferaren eta biosferaren arteko elkarrekintzak edafogenesian eta erliebearen modelatzea eta horrek bizitzarako duen garrantzia. Bizitza beste planeta batzuetan.",
+        "Geodibertsitatea eta horrek planetaren jasangarritasunean duen garrantzia.",
+        "Euskadiko interes geologikoko lekuak."
+      ],
+      "codigos_items": []
+    }
+  ],
+  "comunidad": "pais-vasco",
+  "idioma": "eu"
+}

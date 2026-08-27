@@ -1,0 +1,259 @@
+{
+  "materia_oficial": "TEKNOLOGIA",
+  "materia": "Teknologia",
+  "etapa": "ESO",
+  "ciclo": "Único",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "4º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Problema teknologikoak ekimen eta sormenarekin identifikatzea eta proposatzea, hurbileko inguruneko beharrak aztertuz eta proiektuen inguruko estrategia eta prozesu iteratiboak eta kolaborazioan oinarritutakoak aplikatuz, irtenbideak modu eraginkor eta berritzailean asmatzeko eta planifikatzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Diziplinarteko hainbat teknika eta ezagutza behar bezala aplikatzea, prozedura eta baliabide teknologikoak erabiliz eta produktuen bizi-zikloa aztertuz, planteatutako beharrei erantzungo dieten irtenbide teknologikoak lantzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Ideia, proposamen edo irtenbide teknologikoak hainbat forotan eraginkortasunez adieraztea, komunikatzea eta zabaltzea, eskuragarri dauden baliabideak erabiliz eta informazioa trukatzeko eta talde- -lana sustatzeko beharrezkoak diren elementuak eta teknikak aplikatuz.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Planteatutako problemetarako irtenbide automatizatuak garatzea, beharrezkoak diren ezagutzak aplikatuz eta sortzen ari diren teknologiak gaineratuz, kontrol-sistema programagarriak edo robotikoak diseinatzeko eta eraikitzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Tresna digitalen aukerak baliatzea eta erabiltzea, beren beharretara egokituz, konfiguratuz eta diziplinarteko ezagutzak aplikatuz, zereginak modu sortzaileagoan eta efizienteagoan egiteko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Prozesu teknologikoak aztertzea, gizartean eta ingurunean duten inpaktua kontuan hartuz eta iraunkortasun-irizpideak aplikatuz, teknologia modu etiko eta ekosozialki arduratsu batean erabiltzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "7",
+      "descripcion": "Trebetasun pertsonalak eta sozialak garatzea, norberaren eta besteen indarrak eta ahuleziak ezagutuz eta emozioak eta esperientziak eraginkortasunez identifikatuz eta kudeatuz, ongizate pertsonala sustatzeko eta ikasleei ikaskuntza hobetzea eta zehaztutako helburuak lortzea ahalbidetuko dieten harreman osasungarriak sortzeko.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Ingurunerik hurbilenaren behaketatik eta azterketatik abiatuta, komunitatearentzat balio bat sortzen duten ekintzailetza-irtenbide teknologikoak asmatzea eta planifikatzea, beharrak, betekizunak eta hobetzeko aukerak aztertuz."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Proiektuak kudeatzeko kolaborazio-estrategiak ekimenez, diziplinarteko ikuspegiarekin eta baliozkotze-prozesu iteratibo bati jarraituz aplikatzea, asmatzeko fasea hasten denetik problemak ingurune fisiko eta birtualetan ebazten diren arte."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Proiektuaren kudeaketari modu sortzailean ekitea, bidezko kolaborazio-estrategiak eta kolaborazio-teknikak eta ahalik eta irtenbiderik efizienteenak eta berritzaileenak asmatzeko ikerketa-metodoak aplikatuz."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Planteatutako behar bati erantzungo dion produktu baten diseinua aztertzea, haren eskaria, bilakaera eta bizi-zikloaren amaieraren aurreikuspena irizpide etiko eta arduratsu batekin ebaluatuz."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Produktu eta irtenbide teknologikoak fabrikatzea, lagundutako diseinuko tresnak eta eskuz, mekanikoki eta digitalki lantzeko teknikak aplikatuz eta material eta baliabide mekaniko, elektriko, elektroniko eta digital egokiak erabiliz."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Informazioa trukatzea eta talde-lana era asertiboan sustatzea, tresna digital egokiak eta sistema teknologiko egokien hiztegi teknikoa, sinboloak eta eskemak erabiliz."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Proposamen edo irtenbide teknologikoak modu sortzaile eta eraginkorrean aurkeztea eta zabaltzea, hizkuntza-egiturak, hiztegi teknikoa, intonazioa, adierazpena, denboraren kudeaketa, diskurtsoaren egokitzapen egokia eta hizkuntza inklusiboa eta ez-sexista erabiliz."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Sistema automatiko programagarriak eta zereginak autonomiaz egiteko gai diren robotak diseinatzea, eraikitzea, kontrolatzea eta/edo simulatzea, mekanika, elektronika eta pneumatikako ezagutzak, kontrol-sistemen osagaiak eta diziplinarteko beste ezagutza batzuk aplikatuz."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Makina eta sistema teknologikoetan kontrol eta simulazioko aplikazio informatikoak eta teknologia digitalak zentzu kritikoarekin eta etikoarekin txertatzea, hala nola gauzen Internet, Big Data eta adimen artifiziala."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Proposatutako zereginak efizientziaz ebaztea, hainbat aplikazio eta tresna digital erabiliz eta konfiguratuz."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Diziplinarteko ezagutzak autonomiaz aplikatzea, agindutako zereginak ebaztean teknologia digitalak etikoki eta arduraz erabiliz."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Teknologia arduraz erabiltzea, materialen hautaketan eta diseinuan eta produktu teknologikoen fabrikazio-prozesuetan iraunkortasun-irizpideak aztertuz eta aplikatuz, gizartearen eta planetaren gaineko inpaktu negatiboa minimizatuz eta berrerabiltzeko eta birziklatzeko ohiturak sustatuz."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Arkitektura bioklimatikoak eta garraio elektrikoak ingurunea zaintzeko dakartzaten onurak aztertzea, teknologiek garapen iraunkorrari eta energiaren aurrezpenari egindako ekarpena baloratuz."
+    },
+    {
+      "codigo": "6.3",
+      "competencia": "6",
+      "descripcion": "Komunitate irekien, boluntariotza-ekintzen edo komunitateari zerbitzua emateko proiektuen bidez izaera sozialeko proiektu teknologikoen garapenak dituen ondorioak eta onurak identifikatzea eta balioestea."
+    },
+    {
+      "codigo": "6.4",
+      "competencia": "6",
+      "descripcion": "Teknologia digitalek gizartearen hainbat esparrutan egindako ekarpenak ezagutzea, bereziki emakumeek egin duten ekarpena baloratuz (haien bokazio zientifiko-teknologikoa sustatzeko) eta hainbat kolektibok teknologia horiek eskuratu, erabili eta baliatzeko jasaten duten eten teknologiko eta digitalaz (ekonomikoaz, geografikoaz, generoari lotutakoaz, hizkuntzari lotutakoaz eta abar) jabetuz."
+    },
+    {
+      "codigo": "7.1",
+      "competencia": "7",
+      "descripcion": "Erronka teknologikoei aurre egitean norberaren emozioak identifikatzea eta kudeatzea, autokontzientzia eta identitate- -zentzua garatuz eta estres-iturriak ezagutuz."
+    },
+    {
+      "codigo": "7.2",
+      "competencia": "7",
+      "descripcion": "Teknologiaren jakintzagaiko ikaskuntza-egoerei aurre egitean pertseberantzia eta motibazio positiboa agertzea, kritika arrazoitua onartuz."
+    },
+    {
+      "codigo": "7.3",
+      "competencia": "7",
+      "descripcion": "Aktiboki laguntzea eta harremanak eraikitzea, talde heterogeneoetan lan eginez, elkarren artean modu eraginkorrean komunikatuz, modu kritiko eta sortzailean pentsatuz eta erabaki adostuak eta informatuak hartuz, ikasitako edukiak aplikatzea dakarten problemak ebazteko."
+    },
+    {
+      "codigo": "7.4",
+      "competencia": "7",
+      "descripcion": "Taldean egin beharreko zereginen banaketan parte hartzea, inklusioa eta entzute aktiboa praktikan jarriz, esleitutako rola bere gain hartuz eta egin beharreko ekarpenaz arduratuz."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A.1",
+      "bloque": "A.1. Problemak ebazteko prozesua · Estrategiak eta teknikak",
+      "titulo": "Problemak ebazteko prozesua · Estrategiak eta teknikak",
+      "items": [
+        "Kolaborazio-proiektuak kudeatzeko estrategiak eta problemak ebazteko teknika iteratiboak.",
+        "Ikastetxeko beharren, tokikoen, eskualdekoen eta abarren azterketa. Kolaborazioedo kooperazio-proiektuen planteamendua.",
+        "Ideazio-teknikak.",
+        "Ekintzailetza, pertseberantzia eta sormena problemak ebaztean (jarduera teknologikoaren diziplinarteko ikuspegi batetik abiatuta), eta lanaren eta haren kalitatearen inguruko gogobetetzea eta interesa."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "A.2",
+      "bloque": "A.2. Problemak ebazteko prozesua · Produktuak eta materialak",
+      "titulo": "Problemak ebazteko prozesua · Produktuak eta materialak",
+      "items": [
+        "Produktu baten bizi-zikloa eta faseak. Azterketa sinpleak.",
+        "Materialak hautatzeko estrategiak, haien propietate edo betekizunetan oinarrituta."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "A.3",
+      "bloque": "A.3. Problemak ebazteko prozesua · Fabrikazioa",
+      "titulo": "Problemak ebazteko prozesua · Fabrikazioa",
+      "items": [
+        "Ordenagailuz lagundutako 3D diseinuko tresnak proiektuei aplikatutako piezak irudikatzean eta/ edo fabrikatzean.",
+        "Eskuz eta mekanikoki fabrikatzeko teknikak. Aplikazio praktikoak.",
+        "Fabrikazio digitaleko teknikak. 3D inprimaketa eta laser bidezko ebaketa. Aplikazio praktikoak."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "A.4",
+      "bloque": "A.4. Problemak ebazteko prozesua · Hedapena",
+      "titulo": "Problemak ebazteko prozesua · Hedapena",
+      "items": [
+        "Proiektuaren aurkezpena eta hedapena. Elementuak, teknikak eta tresnak. Komunikazio eraginkorra: hizkuntza-egiturak, hiztegi teknikoa, intonazioa, adierazpena, denboraren kudeaketa, diskurtsoaren egokitzapena eta hizkuntza inklusiboaren eta estereotipo sexistarik gabearen erabilera, kultura-aniztasuna eta haren adierazpen motak errespetatuz, ingurune fisiko eta birtualetan."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Operadore teknologikoak",
+      "titulo": "Operadore teknologikoak",
+      "items": [
+        "Elektronika analogikoa. Oinarrizko zirkuituen oinarrizko osagaiak, sinbologia, analisia eta muntaketa fisikoa eta simulatua.",
+        "Oinarrizko elektronika digitala: Boole-ren aljebra, ate logikoak.",
+        "Oinarrizko pneumatika. Zirkuituak: sinbologia, diseinua, simulazioa eta/edo muntaketa.",
+        "Robotikan aplikatutako elementu mekanikoak, elektronikoak eta pneumatikoak. Muntaketa fisikoa edo simulatua."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Pentsamendu konputazionala, automatizazioa eta robotika",
+      "titulo": "Pentsamendu konputazionala, automatizazioa eta robotika",
+      "items": [
+        "Kontrol programatuko sistemen osagaiak: kontrolagailuak, sentsoreak eta eragingailuak.",
+        "Ordenagailua eta gailu mugikorrak programazio- eta kontrol-elementu gisa*. Simulagailu informatikoen erabilera diseinatutako sistemen funtzionamendua egiaztatzean*. Adimen artifizialaren eta Big Dataren hastapenak: aplikazioak. Espazio partekatuak eta disko birtualak.",
+        "Telekomunikazioak kontrol digitaleko sistemetan; gauzen internet: elementuak, komunikazioak eta kontrola; aplikazio praktikoak. Robotika. Robot sinpleen diseinu, eraikuntza eta kontrol fisikoa edo simulatua."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Teknologia iraunkorra",
+      "titulo": "Teknologia iraunkorra",
+      "items": [
+        "Iraunkortasuna materialen hautaketan eta prozesu, produktu eta sistema teknologikoen diseinuan. Berrerabilera eta birziklatzea.",
+        "Arkitektura bioklimatikoa eta iraunkorra. Energiaren aurrezpena eraikinetan.",
+        "Garraioa eta iraunkortasuna.",
+        "Komunitate irekiak, boluntariotza teknologikoa eta komunitateari zerbitzua emateko proiektuak.",
+        "Emakumeek konpetentzia teknologiko eta digitalen garapenari egindako ekarpena."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "E.1",
+      "bloque": "E.1. Zentzu sozioemozionala · Sinesmenak, jarrerak eta emozioak",
+      "titulo": "Zentzu sozioemozionala · Sinesmenak, jarrerak eta emozioak",
+      "items": [
+        "Problema teknologikoak eta digitalak ebazteko sormena, ekimena, pertseberantzia eta erresilientzia.",
+        "Ikaskuntzan esku hartzen duten emozioen (hala nola autokontzientziaren, autoerregulazioaren eta pertseberantziaren) kudeaketa estereotipatu gabea eta egokia.",
+        "Malgutasun kognitiboaren garapen egokia, beharrezkoa denean estrategia-aldaketa bat bilatuz eta hutsegitea ikasteko aukera bihurtuz."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "E.2",
+      "bloque": "E.2. Zentzu sozioemozionala · Talde-lana eta erabakiak hartzeko jarraibideak",
+      "titulo": "Zentzu sozioemozionala · Talde-lana eta erabakiak hartzeko jarraibideak",
+      "items": [
+        "Erantzukizunak bere gain hartzeko jarraibideak eta parte-hartze aktiboa eta bidezkoa, talde-",
+        "lana optimizatzeko.",
+        "Ingurune analogiko eta digitaletan gatazkak konpontzeko laguntza eskatu, eman eta kudeatzeko prestasuna.",
+        "Erantzukizunak genero-alborapenik gabe hartzeko jarraibideak, taldearen helburuak lortzeko."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "E.3",
+      "bloque": "E.3. Zentzu sozioemozionala · Inklusioa, errespetua eta aniztasuna",
+      "titulo": "Zentzu sozioemozionala · Inklusioa, errespetua eta aniztasuna",
+      "items": [
+        "Jarrera inklusiboen aplikazioa eta ikasgelan eta gizartean dagoen aniztasunaren onarpena.",
+        "Gatazkak kudeatzeko jokabide enpatiko eta asertiboen eta estrategien erabilera."
+      ],
+      "codigos_items": []
+    }
+  ],
+  "comunidad": "pais-vasco",
+  "idioma": "eu"
+}
