@@ -362,7 +362,7 @@ def _borrar_sobrantes(
     alguien usó. Si de verdad hay que quitarlas, primero hay que decidir qué
     pasa con las SdA que dependen de ellas, y esa decisión no es de un seed.
     """
-    from sqlalchemy import delete, select as sa_select
+    from sqlalchemy import delete, select as sa_select, update as sa_update
 
     resumen: dict[str, int] = {}
     for tipo, modelo, pk, enlace, col_enlace in _tablas_de_curriculo():
@@ -406,6 +406,32 @@ def _borrar_sobrantes(
             enlazadas |= con_criterios
 
         libres = sobrantes - enlazadas
+
+        # LAS QUE SE CONSERVAN SE RETIRAN DE LA OFERTA
+        # ---------------------------------------------
+        # Conservarlas tal cual crea un ciclo del que no se sale. Pasó el
+        # 27/08 con el País Vasco: seis saberes con el texto mal extraído
+        # sobrevivieron porque una SdA los citaba, siguieron apareciendo en el
+        # catálogo que ve el modelo, y **al regenerar esa misma SdA el modelo
+        # volvió a citarlos**. A la siguiente carga seguían en uso, así que se
+        # conservaban otra vez.
+        #
+        # Vaciar `cursos_aplicables` los saca del contexto sin borrarlos:
+        # `contexto.py` filtra con el operador `?` de JSONB, que con la lista
+        # vacía no casa con ningún curso —la decisión del 16/08 sobre qué
+        # significa una fila sin cursos—. La SdA que ya los cita no se entera:
+        # la exportación lee el texto por la relación ya enlazada y no vuelve
+        # a filtrar por curso.
+        #
+        # Con eso el ciclo se cierra solo: nadie los vuelve a citar, y en la
+        # carga siguiente a que se regenere esa SdA ya se pueden borrar.
+        if enlazadas:
+            db.session.execute(
+                sa_update(modelo)
+                .where(pk.in_(enlazadas))
+                .values(cursos_aplicables=[]),
+                execution_options={"synchronize_session": False},
+            )
 
         if libres:
             # `synchronize_session=False`: es un borrado masivo por clave y no

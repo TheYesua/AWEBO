@@ -226,6 +226,46 @@ class TestNoRompeLasSituacionesQueYaExisten:
         assert total["saber_en_uso"] == 1
         assert total["saber_borradas"] == 0
 
+    def test_lo_conservado_se_retira_de_la_oferta(self, app, db, sda_citando):
+        """EL CICLO QUE ESTO ROMPE.
+
+        Conservar la fila tal cual la deja **en el catálogo que ve el modelo**,
+        y entonces no hay salida: pasó el 27/08 con el País Vasco, donde seis
+        saberes con el texto mal extraído sobrevivieron porque una SdA los
+        citaba, siguieron ofreciéndose, y al regenerar esa misma SdA el modelo
+        volvió a citarlos. A la carga siguiente seguían en uso.
+
+        Vaciar `cursos_aplicables` los saca del contexto sin borrarlos:
+        `contexto.py` filtra con el operador `?` de JSONB, que con la lista
+        vacía no casa con ningún curso.
+        """
+        _escribir(sda_citando, _json("cataluna", "Mates", saberes=[("A.9", "Otro")]))
+
+        seed_curriculo(sda_citando, borrar_sobrantes=True)
+
+        viejo = db.session.scalar(
+            select(SaberBasico).where(SaberBasico.codigo == "A.1")
+        )
+        assert viejo is not None, "no se ha borrado, que es lo que se quería"
+        assert viejo.cursos_aplicables == [], (
+            "sigue ofreciéndose al modelo: se volverá a citar y no habrá "
+            "forma de retirarlo nunca"
+        )
+
+    def test_pero_el_texto_sigue_ahi_para_quien_lo_cita(self, app, db, sda_citando):
+        """La SdA que ya lo cita no se entera: la exportación lee el texto por
+        la relación ya enlazada y no vuelve a filtrar por curso.
+
+        Sin esta comprobación, el arreglo de arriba podría haber dejado el
+        documento diciendo «(no encontrado en el currículo)», que es justo lo
+        que se quería evitar al conservar la fila."""
+        _escribir(sda_citando, _json("cataluna", "Mates", saberes=[("A.9", "Otro")]))
+
+        seed_curriculo(sda_citando, borrar_sobrantes=True)
+
+        sa = db.session.scalar(select(SituacionAprendizaje))
+        assert [s.descripcion for s in sa.saberes] == ["Saber citado"]
+
     def test_la_carga_no_falla_por_intentarlo(self, app, db, sda_citando):
         """Si se intentara borrar sin comprobar el enlace, PostgreSQL lanzaría
         IntegrityError y **se perdería la carga entera**, no solo el borrado."""
