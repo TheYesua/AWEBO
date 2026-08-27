@@ -298,7 +298,9 @@ const T = {
   regenerarTodo: {{ _('Regenerar todo')|tojson }},
   marcarTerminada: {{ _('Marcar como terminada')|tojson }},
   traducirA: {{ _('Traducir a {idioma}')|tojson }},
-  esperaAgotada: {{ _('Tiempo de espera agotado sin respuesta de la tarea.')|tojson }},
+  /* El texto decía solo que se había agotado la espera, y eso dejaba pensar
+     que la generación se había perdido. No se pierde: sigue en el servidor. */
+  esperaAgotada: {{ _('La generación está tardando más de lo normal. Sigue en marcha en el servidor: vuelve a abrir la situación en unos minutos para ver el resultado.')|tojson }},
   noSeHaDeshecho: {{ _('No se ha podido deshacer.')|tojson }},
   cambiosGuardados: {{ _('Cambios guardados correctamente.')|tojson }},
   perfilCorto: {{ _('El perfil del alumnado debe tener al menos 10 caracteres.')|tojson }},
@@ -932,6 +934,27 @@ async function lanzarGeneracion(url) {
    otro bucle, multiplicando las peticiones mientras dura la generación. */
 let sondeandoEstado = false;
 
+/* CUÁNTO SE ESPERA, Y POR QUÉ TANTO
+   ---------------------------------
+   El techo anterior era de 120 intentos a 700 ms: **84 segundos**, y una
+   generación completa son seis secciones contra un modelo de lenguaje, que
+   tardan varios minutos. Así que el sondeo se rendía casi siempre antes de
+   tiempo: la barra se quedaba parada, saltaba el aviso de espera agotada y
+   había que recargar a mano para descubrir que ya estaba lista.
+
+   Ahora se sondea rápido al principio —donde el docente está mirando— y se
+   espacia después, para no hacer 800 peticiones en diez minutos. */
+const SONDEO_RAPIDO = 30;      // intentos a 700 ms  ≈ 21 s
+const SONDEO_MS_RAPIDO = 700;
+const SONDEO_MS_LENTO = 2500;
+const SONDEO_INTENTOS = 250;   // ≈ 21 s + 9 min
+
+/** Espera lo que toque según cuántos intentos lleva. */
+function esperaDeSondeo(intentos) {
+  return new Promise((r) => setTimeout(
+    r, intentos < SONDEO_RAPIDO ? SONDEO_MS_RAPIDO : SONDEO_MS_LENTO));
+}
+
 async function seguirGeneracionEnCurso() {
   sondeandoEstado = true;
   const progreso = document.getElementById('gen-progreso');
@@ -942,9 +965,8 @@ async function seguirGeneracionEnCurso() {
   document.getElementById('gen-seccion').textContent = '—';
 
   try {
-    // El mismo techo que `pollear`: 120 × 700 ms ≈ 84 s.
-    for (let intentos = 0; intentos < 120; intentos++) {
-      await new Promise((r) => setTimeout(r, 700));
+    for (let intentos = 0; intentos < SONDEO_INTENTOS; intentos++) {
+      await esperaDeSondeo(intentos);
       const r = await fetch(`/api/situaciones/${ID}`);
       if (!r.ok) return;
       const sa = await r.json();
@@ -968,7 +990,7 @@ async function pollear(taskId) {
   const compLbl = document.getElementById('gen-completadas');
   const totalLbl = document.getElementById('gen-total');
 
-  for (let intentos = 0; intentos < 120; intentos++) {
+  for (let intentos = 0; intentos < SONDEO_INTENTOS; intentos++) {
     const r = await fetch(`/api/tasks/${taskId}`);
     const body = await r.json();
     if (body.progreso) {
@@ -987,7 +1009,7 @@ async function pollear(taskId) {
       }
       return;
     }
-    await new Promise(r => setTimeout(r, 700));
+    await esperaDeSondeo(intentos);
   }
   alert(T.esperaAgotada);
 }

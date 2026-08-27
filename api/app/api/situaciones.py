@@ -15,7 +15,8 @@ from ..schemas import (
     SugerenciaIn,
     VersionOut,
 )
-from ..extensions import limiter
+from ..extensions import db, limiter
+from ..models.situacion import SituacionAprendizaje
 from ..services import audio as almacen_audio
 from ..services import exportacion_service as exp
 from ..services import situacion_service as svc
@@ -168,9 +169,8 @@ def crear():
     # en borrador para que el docente pueda corregir la materia sin perderla.
     _exigir_curriculo(sa)
 
-    async_result = encolar(
-        tareas_generacion.generar_situacion_completa, sa.id_situacion
-    )
+    async_result = _lanzar_generacion(
+        sa, tareas_generacion.generar_situacion_completa, sa.id_situacion)
     payload = SituacionOut.from_model(sa).model_dump(mode="json")
     payload["task_id"] = async_result.id
     return jsonify(payload), 202
@@ -389,6 +389,49 @@ def listar_adaptaciones(id_situacion: int):
 # ---------------------------------------------------------------------------
 
 
+def _lanzar_generacion(sa, tarea, *args):
+    """Marca la SdA como «generando» **antes** de encolar, y luego encola.
+
+    EL FALLO QUE ESTO ARREGLA
+    --------------------------
+    El estado lo ponía la tarea de Celery al empezar a ejecutarse, no quien la
+    encolaba. Entre las dos cosas hay una carrera que el navegador pierde casi
+    siempre: se crea la SdA con «generar con IA» marcado, el POST responde 202,
+    la página del detalle se abre y pide el estado, y el worker todavía no ha
+    arrancado. La respuesta es `borrador`.
+
+    Y ahí se acaba todo, porque el sondeo de progreso solo arranca
+    `if (sa.estado === 'generando')`. La página se quedaba mostrando
+    «Borrador» indefinidamente mientras la generación corría por detrás, y el
+    docente pulsaba «generar todo el contenido» creyendo que no se había
+    lanzado — encolando una segunda generación de la misma SdA.
+
+    Explicaba los dos síntomas a la vez: el que parecía «la casilla no genera»
+    y el que parecía «la barra no se actualiza».
+
+    EL ORDEN IMPORTA, Y ES ESTE
+    ----------------------------
+    Primero se marca y se confirma, después se encola. Al revés seguiría
+    habiendo carrera, y además con un riesgo peor: si el worker fuera muy
+    rápido podría terminar y dejar la SdA en `generada` **antes** de que este
+    código escribiera `generando` encima, dejándola marcada como en curso para
+    siempre.
+
+    Si encolar falla, se devuelve la SdA a borrador: dejarla en `generando` sin
+    tarea que la atienda la bloquearía —`/generar` responde 409 a lo que ya
+    está generando— y no habría forma de desatascarla desde la interfaz.
+    """
+    estado_previo = sa.estado
+    sa.estado = SituacionAprendizaje.GENERANDO
+    db.session.commit()
+    try:
+        return encolar(tarea, *args)
+    except Exception:
+        sa.estado = estado_previo
+        db.session.commit()
+        raise
+
+
 def _exigir_curriculo(sa) -> None:
     """Aborta si la SA no tiene currículo LOMLOE que anclar.
 
@@ -457,9 +500,8 @@ def generar(id_situacion: int):
             409,
         )
 
-    async_result = encolar(
-        tareas_generacion.generar_situacion_completa, id_situacion
-    )
+    async_result = _lanzar_generacion(
+        sa, tareas_generacion.generar_situacion_completa, id_situacion)
     return (
         jsonify(
             {
@@ -507,9 +549,8 @@ def regenerar_seccion(id_situacion: int, seccion: str):
             409,
         )
 
-    async_result = encolar(
-        tareas_generacion.generar_seccion, id_situacion, seccion
-    )
+    async_result = _lanzar_generacion(
+        sa, tareas_generacion.generar_seccion, id_situacion, seccion)
     return (
         jsonify(
             {
