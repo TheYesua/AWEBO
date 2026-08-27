@@ -168,7 +168,10 @@ class SituacionAprendizaje(db.Model):
     #: cambiar por situación: un docente puede preparar material para otra.
     provincia: Mapped[str | None] = mapped_column(String(30), nullable=True)
     curso: Mapped[str] = mapped_column(String(20), nullable=False, index=True)
-    materia: Mapped[str] = mapped_column(String(50), nullable=False, index=True)
+    #: 120 por lo mismo que en el catálogo (migración `c9e4f2a10b73`). Esta
+    #: es la que de verdad importaba: aquí se guarda la materia que elige el
+    #: docente, así que el límite corto habría fallado al guardar su trabajo.
+    materia: Mapped[str] = mapped_column(String(120), nullable=False, index=True)
 
     # Contexto y configuración
     descripcion: Mapped[str | None] = mapped_column(Text, nullable=True)

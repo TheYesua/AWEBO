@@ -49,7 +49,10 @@ class Competencia(db.Model):
     #: publica en catalán y el BOPV en euskera y castellano.
     idioma: Mapped[str] = mapped_column(String(5), nullable=False)
     tipo: Mapped[str] = mapped_column(String(20), nullable=False)
-    materia: Mapped[str | None] = mapped_column(String(50), nullable=True)
+    #: 120 y no 50 desde el 27/08: cuatro materias del decreto vasco pasan
+    #: de 50 caracteres y la más larga llega a 57. Ver la migración
+    #: `c9e4f2a10b73`, que explica por qué se amplía en vez de acortarlas.
+    materia: Mapped[str | None] = mapped_column(String(120), nullable=True)
     cursos_aplicables: Mapped[list[str]] = mapped_column(
         JSONB, nullable=False, default=list
     )
@@ -88,7 +91,7 @@ class CriterioEvaluacion(db.Model):
         nullable=False,
         index=True,
     )
-    materia: Mapped[str] = mapped_column(String(50), nullable=False)
+    materia: Mapped[str] = mapped_column(String(120), nullable=False)
     cursos_aplicables: Mapped[list[str]] = mapped_column(
         JSONB, nullable=False, default=list
     )
@@ -118,7 +121,7 @@ class SaberBasico(db.Model):
     comunidad: Mapped[str] = mapped_column(String(20), nullable=False)
     idioma: Mapped[str] = mapped_column(String(5), nullable=False)
     bloque: Mapped[str] = mapped_column(String(200), nullable=False)
-    materia: Mapped[str] = mapped_column(String(50), nullable=False)
+    materia: Mapped[str] = mapped_column(String(120), nullable=False)
     cursos_aplicables: Mapped[list[str]] = mapped_column(
         JSONB, nullable=False, default=list
     )
