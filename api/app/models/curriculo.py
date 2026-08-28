@@ -44,6 +44,15 @@ class Competencia(db.Model):
     #: docstring de ese módulo: el nombre es texto de interfaz y cambia; el
     #: código es una clave y no.
     comunidad: Mapped[str] = mapped_column(String(20), nullable=False)
+    #: Etapa educativa de la que es esta fila: «ESO», «Bachillerato».
+    #:
+    #: No es redundante con `cursos_aplicables`. Las competencias específicas
+    #: son comunes a toda la etapa, y por eso el seed fusiona sus cursos en vez
+    #: de crear una fila por curso; sin este campo, «Matemáticas» de la ESO y
+    #: de Bachillerato serían **la misma fila** —mismo código, misma materia,
+    #: misma comunidad— y la segunda carga pisaría a la primera en silencio.
+    #: Ver la migración `d1a7b4e62c95`.
+    etapa: Mapped[str] = mapped_column(String(20), nullable=False)
     #: Lengua en que publica el boletín del que salió esta fila. No es la
     #: preferencia de nadie: es una propiedad del documento oficial. El DOGC
     #: publica en catalán y el BOPV en euskera y castellano.
@@ -85,6 +94,8 @@ class CriterioEvaluacion(db.Model):
     id_criterio: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)
     codigo: Mapped[str] = mapped_column(String(20), nullable=False)
     comunidad: Mapped[str] = mapped_column(String(20), nullable=False)
+    #: Ver el comentario en `Competencia.etapa`.
+    etapa: Mapped[str] = mapped_column(String(20), nullable=False)
     idioma: Mapped[str] = mapped_column(String(5), nullable=False)
     id_competencia: Mapped[int] = mapped_column(
         ForeignKey("competencia.id_competencia", ondelete="RESTRICT"),
@@ -113,12 +124,14 @@ class SaberBasico(db.Model):
 
     __tablename__ = "saber_basico"
     __table_args__ = (
-        Index("ix_saber_comunidad_materia", "comunidad", "materia"),
+        Index("ix_saber_comunidad_etapa_materia", "comunidad", "etapa", "materia"),
     )
 
     id_saber: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)
     codigo: Mapped[str] = mapped_column(String(20), nullable=False)
     comunidad: Mapped[str] = mapped_column(String(20), nullable=False)
+    #: Ver el comentario en `Competencia.etapa`.
+    etapa: Mapped[str] = mapped_column(String(20), nullable=False)
     idioma: Mapped[str] = mapped_column(String(5), nullable=False)
     bloque: Mapped[str] = mapped_column(String(200), nullable=False)
     materia: Mapped[str] = mapped_column(String(120), nullable=False)

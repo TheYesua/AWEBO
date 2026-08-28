@@ -33,23 +33,27 @@ def catalogo(db):
         Competencia(
             comunidad="ceuta",
             idioma="es",
+            etapa="ESO",
             codigo="CE1", tipo=Competencia.ESPECIFICA, materia=MATERIA,
                     cursos_aplicables=[CURSO], descriptores=[], descripcion="Resolver"),
         Competencia(
             comunidad="ceuta",
             idioma="es",
+            etapa="ESO",
             codigo="CE2", tipo=Competencia.ESPECIFICA, materia=MATERIA,
                     cursos_aplicables=[CURSO], descriptores=[], descripcion="Modelizar"),
         # Clave: sin materia. Vale para cualquiera y no debe quedar excluida.
         Competencia(
             comunidad="ceuta",
             idioma="es",
+            etapa="ESO",
             codigo="CCL", tipo=Competencia.PRINCIPAL, materia=None,
                     cursos_aplicables=[CURSO], descriptores=[], descripcion="Lingüística"),
         # LA TRAMPA: mismo código, otra materia.
         Competencia(
             comunidad="ceuta",
             idioma="es",
+            etapa="ESO",
             codigo="CE1", tipo=Competencia.ESPECIFICA, materia="Biología y Geología",
                     cursos_aplicables=[CURSO], descriptores=[], descripcion="Otra cosa"),
     ]
@@ -61,17 +65,20 @@ def catalogo(db):
         CriterioEvaluacion(
             comunidad="ceuta",
             idioma="es",
+            etapa="ESO",
             codigo="1.1", id_competencia=ce1.id_competencia,
                            materia=MATERIA, cursos_aplicables=[CURSO], descripcion="x"),
         # Mismo código, otro curso: tampoco debe colarse.
         CriterioEvaluacion(
             comunidad="ceuta",
             idioma="es",
+            etapa="ESO",
             codigo="1.1", id_competencia=ce1.id_competencia,
                            materia=MATERIA, cursos_aplicables=["1º ESO"], descripcion="y"),
         SaberBasico(
             comunidad="ceuta",
             idioma="es",
+            etapa="ESO",
             codigo="A.3", bloque="Sentido numérico", materia=MATERIA,
                     cursos_aplicables=[CURSO], descripcion="z"),
     ])
@@ -208,7 +215,7 @@ class TestElPrefijoQueSeInventaElModelo:
         db.session.add(Competencia(
             codigo="4", tipo=Competencia.ESPECIFICA, materia=sda.materia,
             descripcion="Competencia sin prefijo", descriptores=[],
-            cursos_aplicables=[sda.curso], comunidad="ceuta", idioma="es",
+            cursos_aplicables=[sda.curso], comunidad="ceuta", etapa="ESO", idioma="es",
         ))
         sda.contenido = {"conexion_curricular": {
             "competencias": [{"codigo": "CE4"}], "criterios": [], "saberes": [],
@@ -247,7 +254,7 @@ class TestElPrefijoQueSeInventaElModelo:
         db.session.add(Competencia(
             codigo="1", tipo=Competencia.ESPECIFICA, materia=sda.materia,
             descripcion="La que NO toca", descriptores=[],
-            cursos_aplicables=[sda.curso], comunidad="ceuta", idioma="es",
+            cursos_aplicables=[sda.curso], comunidad="ceuta", etapa="ESO", idioma="es",
         ))
         sda.contenido = {"conexion_curricular": {
             "competencias": [{"codigo": "CE1"}], "criterios": [], "saberes": [],
@@ -277,7 +284,7 @@ class TestElDocumentoEnseñaElCodigoDelBoletin:
         db.session.add(Competencia(
             codigo="4", tipo=Competencia.ESPECIFICA, materia=sda.materia,
             descripcion="Sin prefijo", descriptores=[],
-            cursos_aplicables=[sda.curso], comunidad="ceuta", idioma="es",
+            cursos_aplicables=[sda.curso], comunidad="ceuta", etapa="ESO", idioma="es",
         ))
         sda.contenido = {"conexion_curricular": {
             "competencias": [{"codigo": "CE4", "justificacion": "x"}],

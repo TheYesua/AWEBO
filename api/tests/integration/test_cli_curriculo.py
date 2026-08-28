@@ -38,6 +38,7 @@ def sda_con_codigos(db):
     db.session.add(Competencia(
             comunidad="ceuta",
             idioma="es",
+            etapa="ESO",
             codigo="CE1", tipo=Competencia.ESPECIFICA, materia=MATERIA,
         cursos_aplicables=[CURSO], descriptores=[], descripcion="Resolver",
     ))
@@ -177,6 +178,7 @@ def catalogo_real(db):
         db.session.add(Competencia(
             comunidad="ceuta",
             idioma="es",
+            etapa="ESO",
             codigo="CE1", tipo=Competencia.ESPECIFICA, materia=materia,
             cursos_aplicables=["4º ESO"], descriptores=[], descripcion="x",
         ))

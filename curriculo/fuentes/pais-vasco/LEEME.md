@@ -127,18 +127,23 @@ Y **no es un fallo de descarga**: la numeración de Berrigasteiz no es
 correlativa con el anexo. Los 30 PDF por materia se corresponden uno a uno con
 los 30 títulos del Anexo III, comprobado por recuento.
 
-## Lo que sigue sin resolver
+## Lo cerrado y lo que sigue abierto
 
-1. **El asterisco de los saberes.** Muchos acaban en `*` —o empiezan por él, en
-   Lengua— y **no se ha encontrado su leyenda** en el decreto. El único
-   asterisco explicado es el de la tabla del artículo 13, que marca las
-   optativas de oferta obligatoria, y no es este. El extractor lo retira como
-   ruido tipográfico sin atribuirle significado.
-2. **Lengua va como una sola materia.** El Anexo III da un currículo conjunto
-   para «Euskara eta Literatura eta Gaztelania eta Literatura»; el artículo 13
-   las lista como dos. Separarlas exigiría repartir los saberes, y los marcados
-   con asterisco son los de contenido vasco: sin saber qué significa la marca,
-   el reparto sería inventado.
+1. ~~**El asterisco de los saberes.**~~ **Cerrado el 27/08: no tiene leyenda.**
+   Se buscó en el articulado, en los seis anexos, en Berrigasteiz y fuera. Los
+   dos asteriscos explicados del decreto son otros —el del artículo 13, que
+   marca las optativas de oferta obligatoria, y el `**` del Anexo VI, casillas
+   de horario sin mínimo—. Va al final del saber salvo en Lengua, donde va al
+   principio, y está en el 26 % de ellos; esa proporción encaja mejor con
+   «añadido vasco» que con «mínimo estatal», pero es conjetura y no se usa. Se
+   retira del texto sin atribuirle significado.
+2. ~~**Lengua va como una sola materia.**~~ **Aceptado el 27/08**, y no por
+   pereza: el Anexo III da un currículo conjunto para «Euskara eta Literatura
+   eta Gaztelania eta Literatura» y el artículo 13 las lista como dos.
+   Separarlas exigiría repartir los saberes entre las dos lenguas, y el único
+   indicio de cuál es de cuál es el asterisco — que, cerrado el punto 1, no se
+   sabe qué significa. Un reparto inventado sería peor que un nombre largo, y
+   además ese nombre es el que el docente vasco reconoce.
 3. **Los ámbitos de diversificación** (`eremua`): el artículo 25.6 nombra dos
    —lingüístico-social y científico-tecnológico— y dice qué materias agrupa
    cada uno, pero **no tienen currículo propio en el Anexo III**. Igual que en

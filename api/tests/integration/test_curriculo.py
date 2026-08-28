@@ -29,6 +29,7 @@ def catalogo_minimo(db):
     ce_mat = Competencia(
             comunidad="ceuta",
             idioma="es",
+            etapa="ESO",
             codigo="CE1",
         tipo=Competencia.ESPECIFICA,
         materia="Matemáticas",
@@ -39,6 +40,7 @@ def catalogo_minimo(db):
     ce_leng = Competencia(
             comunidad="ceuta",
             idioma="es",
+            etapa="ESO",
             codigo="CE1",
         tipo=Competencia.ESPECIFICA,
         materia="Lengua",
@@ -54,6 +56,7 @@ def catalogo_minimo(db):
             CriterioEvaluacion(
             comunidad="ceuta",
             idioma="es",
+            etapa="ESO",
             codigo="1.1",
                 id_competencia=ce_mat.id_competencia,
                 materia="Matemáticas",
@@ -63,6 +66,7 @@ def catalogo_minimo(db):
             CriterioEvaluacion(
             comunidad="ceuta",
             idioma="es",
+            etapa="ESO",
             codigo="1.1",
                 id_competencia=ce_leng.id_competencia,
                 materia="Lengua",
@@ -72,6 +76,7 @@ def catalogo_minimo(db):
             CriterioEvaluacion(
             comunidad="ceuta",
             idioma="es",
+            etapa="ESO",
             codigo="1.1",
                 id_competencia=ce_leng.id_competencia,
                 materia="Lengua",
@@ -81,6 +86,7 @@ def catalogo_minimo(db):
             SaberBasico(
             comunidad="ceuta",
             idioma="es",
+            etapa="ESO",
             codigo="A.1",
                 bloque="Sentido numérico",
                 materia="Matemáticas",
@@ -90,6 +96,7 @@ def catalogo_minimo(db):
             SaberBasico(
             comunidad="ceuta",
             idioma="es",
+            etapa="ESO",
             codigo="B.1",
                 bloque="Sentido de la medida",
                 materia="Matemáticas",

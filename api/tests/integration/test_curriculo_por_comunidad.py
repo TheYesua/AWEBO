@@ -39,7 +39,7 @@ def _catalogo(db, comunidad: str, idioma: str, descripcion: str) -> None:
 
     ce = Competencia(
         codigo="CE1", tipo=Competencia.ESPECIFICA, materia=MATERIA,
-        comunidad=comunidad, idioma=idioma,
+        comunidad=comunidad, etapa="ESO", idioma=idioma,
         cursos_aplicables=[CURSO], descriptores=[], descripcion=descripcion,
     )
     db.session.add(ce)
@@ -47,12 +47,12 @@ def _catalogo(db, comunidad: str, idioma: str, descripcion: str) -> None:
     db.session.add_all([
         CriterioEvaluacion(
             codigo="1.1", id_competencia=ce.id_competencia, materia=MATERIA,
-            comunidad=comunidad, idioma=idioma,
+            comunidad=comunidad, etapa="ESO", idioma=idioma,
             cursos_aplicables=[CURSO], descripcion=descripcion,
         ),
         SaberBasico(
             codigo="A.1", bloque="Bloque", materia=MATERIA,
-            comunidad=comunidad, idioma=idioma,
+            comunidad=comunidad, etapa="ESO", idioma=idioma,
             cursos_aplicables=[CURSO], descripcion=descripcion,
         ),
     ])
@@ -76,7 +76,7 @@ def dos_comunidades(db):
 
     db.session.add(Competencia(
         codigo="CE1", tipo=Competencia.ESPECIFICA, materia=MATERIA_SOLO_CATALANA,
-        comunidad="cataluna", idioma="ca",
+        comunidad="cataluna", etapa="ESO", idioma="ca",
         cursos_aplicables=[CURSO], descriptores=[], descripcion="Només a Catalunya",
     ))
     db.session.commit()

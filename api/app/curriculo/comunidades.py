@@ -69,6 +69,30 @@ COMUNIDADES: dict[str, str] = {
 POR_DEFECTO = "ceuta"
 
 
+#: código -> norma de la que salió el currículo cargado de esa comunidad.
+#:
+#: Solo están las que tienen currículo. Es a propósito: si algún día se carga
+#: otra y alguien olvida esta línea, `norma()` devuelve `None` y el documento
+#: sale sin la cita, que es visible. Rellenarlo con un valor por defecto lo
+#: dejaría citando la norma equivocada, que no lo es.
+#:
+#: Se escribe la denominación **corta**, la que un docente pone en su
+#: programación. La referencia completa —número de boletín y fecha— está en
+#: `curriculo/fuentes/<comunidad>/LEEME.md`.
+NORMAS: dict[str, str] = {
+    "ceuta": "Orden EFP/754/2022",
+    "andalucia": "Orden de 30 de mayo de 2023",
+    "cataluna": "Decret 175/2022",
+    "galicia": "Decreto 156/2022",
+    "pais-vasco": "Decreto 77/2023",
+}
+
+
+def norma(codigo: str | None) -> str | None:
+    """Norma de la que salió el currículo de esa comunidad, o `None`."""
+    return NORMAS.get(codigo) if codigo else None
+
+
 def _sin_tildes(texto: str) -> str:
     """«Andalucía» → «andalucia». Descompone y tira los diacríticos."""
     descompuesto = unicodedata.normalize("NFD", texto)
@@ -141,4 +165,4 @@ def nombre(codigo: str | None) -> str | None:
     return COMUNIDADES.get(codigo) if codigo else None
 
 
-__all__ = ["COMUNIDADES", "POR_DEFECTO", "normalizar", "nombre"]
+__all__ = ["COMUNIDADES", "NORMAS", "POR_DEFECTO", "norma", "normalizar", "nombre"]

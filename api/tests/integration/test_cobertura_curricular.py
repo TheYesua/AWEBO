@@ -27,6 +27,7 @@ def catalogo(db):
         ce = Competencia(
             comunidad="ceuta",
             idioma="es",
+            etapa="ESO",
             codigo=codigo,
             tipo=Competencia.ESPECIFICA,
             materia=materia,
@@ -40,6 +41,7 @@ def catalogo(db):
             CriterioEvaluacion(
             comunidad="ceuta",
             idioma="es",
+            etapa="ESO",
             codigo=f"{codigo}.1",
                 id_competencia=ce.id_competencia,
                 materia=materia,
@@ -51,6 +53,7 @@ def catalogo(db):
             SaberBasico(
             comunidad="ceuta",
             idioma="es",
+            etapa="ESO",
             codigo="A.1",
                 bloque="Bloque A",
                 materia=materia,
@@ -69,6 +72,7 @@ def catalogo(db):
         Competencia(
             comunidad="ceuta",
             idioma="es",
+            etapa="ESO",
             codigo="CE9",
             tipo=Competencia.ESPECIFICA,
             materia="Materia Incompleta",

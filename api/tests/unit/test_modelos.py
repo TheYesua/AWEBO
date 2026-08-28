@@ -154,6 +154,7 @@ def test_situacion_se_relaciona_con_el_curriculo(db):
     competencia = Competencia(
             comunidad="ceuta",
             idioma="es",
+            etapa="ESO",
             codigo="STEM1",
         tipo=Competencia.ESPECIFICA,
         materia="Tecnología",
@@ -167,6 +168,7 @@ def test_situacion_se_relaciona_con_el_curriculo(db):
     criterio = CriterioEvaluacion(
             comunidad="ceuta",
             idioma="es",
+            etapa="ESO",
             codigo="1.1",
         id_competencia=competencia.id_competencia,
         cursos_aplicables=["1º ESO"],
@@ -176,6 +178,7 @@ def test_situacion_se_relaciona_con_el_curriculo(db):
     saber = SaberBasico(
             comunidad="ceuta",
             idioma="es",
+            etapa="ESO",
             codigo="A.1",
         bloque="Resolución de problemas",
         materia="Tecnología",

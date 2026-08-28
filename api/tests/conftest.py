@@ -200,6 +200,7 @@ def sembrar_curriculo(db):
             materia=materia,
             comunidad=comunidad,
             idioma=idioma,
+            etapa="ESO",
             cursos_aplicables=cursos,
             descriptores=["STEM1"],
             descripcion=f"Competencia específica de {materia}.",
@@ -213,6 +214,7 @@ def sembrar_curriculo(db):
                 materia=materia,
                 comunidad=comunidad,
                 idioma=idioma,
+                etapa="ESO",
                 cursos_aplicables=cursos,
                 descripcion="Criterio de evaluación de prueba.",
             )
@@ -224,6 +226,7 @@ def sembrar_curriculo(db):
                 materia=materia,
                 comunidad=comunidad,
                 idioma=idioma,
+                etapa="ESO",
                 cursos_aplicables=cursos,
                 descripcion="Saber básico de prueba.",
             )

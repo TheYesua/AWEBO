@@ -168,7 +168,8 @@ class Perfil:
 #: Es el Anexo II **entero**. El RD trae además, en el Anexo V, dos ámbitos de
 #: ciclos formativos de grado básico (Ciencias Aplicadas y Comunicación y
 #: Ciencias Sociales) que se extraen igual de bien pero **no son ESO**, y
-#: ``MateriaCiclo.to_dict()`` escribe ``"etapa": "ESO"`` sin preguntar. Meterlos
+#: ``MateriaCiclo.to_dict()`` escribe la etapa del propio objeto, «ESO» salvo
+#: que se diga otra cosa. Meterlos
 #: aquí guardaría un dato falso en la base de datos, así que quedan fuera hasta
 #: que el modelo distinga etapas.
 #:
@@ -460,6 +461,14 @@ class MateriaCiclo:
     ciclo: str             # Texto descriptivo del ciclo o "Único"
     cursos_aplicables: list[str]
     itinerario: str | None = None  # "A" o "B" para Matemáticas 4.º, None resto
+    #: «ESO» o «Bachillerato». Por defecto la ESO, que es de donde salen los
+    #: cinco extractores actuales; los de Bachillerato la pasan explícita.
+    #:
+    #: No es cosmética: es parte de la clave del upsert. «Matemáticas» existe
+    #: en las dos etapas, en la misma comunidad y con las competencias
+    #: numeradas igual, así que sin este campo la segunda carga pisaría a la
+    #: primera en silencio. Ver la migración `d1a7b4e62c95`.
+    etapa: str = "ESO"
 
     competencias: list[CompetenciaEspecifica] = field(default_factory=list)
     criterios: list[Criterio] = field(default_factory=list)
@@ -476,7 +485,7 @@ class MateriaCiclo:
         return {
             "materia_oficial": self.materia_oficial,
             "materia": self.materia_efectiva,
-            "etapa": "ESO",
+            "etapa": self.etapa,
             "ciclo": self.ciclo,
             "itinerario": self.itinerario,
             "cursos_aplicables": self.cursos_aplicables,

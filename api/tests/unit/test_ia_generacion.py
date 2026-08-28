@@ -33,6 +33,7 @@ def sa_con_curriculo(db):
     ce = Competencia(
             comunidad="ceuta",
             idioma="es",
+            etapa="ESO",
             codigo="CE1",
         tipo=Competencia.ESPECIFICA,
         materia="Matemáticas",
@@ -48,6 +49,7 @@ def sa_con_curriculo(db):
             CriterioEvaluacion(
             comunidad="ceuta",
             idioma="es",
+            etapa="ESO",
             codigo="1.1",
                 id_competencia=ce.id_competencia,
                 materia="Matemáticas",
@@ -57,6 +59,7 @@ def sa_con_curriculo(db):
             SaberBasico(
             comunidad="ceuta",
             idioma="es",
+            etapa="ESO",
             codigo="A.1",
                 bloque="Sentido numérico",
                 materia="Matemáticas",

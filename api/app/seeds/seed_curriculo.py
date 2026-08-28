@@ -3,19 +3,23 @@
 Lee los ficheros JSON generados por ``app.curriculo.extractor`` (uno por
 cada par materia/ciclo) y los inserta o actualiza de forma idempotente.
 
-Esquema de unicidad utilizado para los UPSERT. **La comunidad entra en todas
-las claves**: sin ella, cargar el decreto de una segunda comunidad actualizaría
-las filas de la primera en vez de añadir las suyas —los códigos y las materias
-coinciden— y el currículo de Ceuta acabaría con las descripciones catalanas.
+Esquema de unicidad utilizado para los UPSERT. **La comunidad y la etapa entran
+en todas las claves.** Sin la comunidad, cargar el decreto de una segunda
+actualizaría las filas de la primera en vez de añadir las suyas —los códigos y
+las materias coinciden— y el currículo de Ceuta acabaría con las descripciones
+catalanas. Sin la etapa pasa lo mismo entre la ESO y Bachillerato, donde
+«Matemáticas» existe en las dos y sus competencias se numeran igual.
 
-* **Competencia**: ``(comunidad, codigo, materia)`` — las competencias específicas son
-  comunes a todos los cursos de la etapa, así que se fusiona el campo
-  ``cursos_aplicables`` haciendo unión con lo ya almacenado.
-* **CriterioEvaluacion**: ``(comunidad, codigo, materia, cursos_aplicables)`` — los
-  criterios pueden repetir código entre cursos con descripciones distintas
+* **Competencia**: ``(comunidad, etapa, codigo, materia)`` — las competencias
+  específicas son comunes a todos los cursos de **su** etapa, así que se fusiona
+  ``cursos_aplicables`` haciendo unión con lo ya almacenado. Por eso los cursos
+  no están en la clave, y por eso hace falta la etapa: es lo único que separa la
+  competencia 1 de Matemáticas de la ESO de la 1 de Matemáticas de Bachillerato.
+* **CriterioEvaluacion**: ``(comunidad, etapa, codigo, materia, cursos_aplicables)``
+  — los criterios pueden repetir código entre cursos con descripciones distintas
   (caso de Lengua/Inglés en la Orden EFP/754).
-* **SaberBasico**: ``(comunidad, codigo, materia, cursos_aplicables, descripcion)`` —
-  cada item de saber básico es una fila independiente.
+* **SaberBasico**: ``(comunidad, etapa, codigo, materia, cursos_aplicables,
+  descripcion)`` — cada item de saber básico es una fila independiente.
 
 La fuente por defecto es ``implementacion/curriculo/salida/`` (montada en
 el contenedor como ``/app/curriculo/salida/``).
@@ -44,11 +48,27 @@ RUTA_SALIDA_DEFECTO = Path("/curriculo/salida")
 # ---------------------------------------------------------------------------
 
 
+#: Orden de presentación de los cursos. Primero la ESO y después Bachillerato,
+#: que es el orden en que los cursa quien los cursa.
+#:
+#: La versión anterior solo conocía «Nº ESO» y mandaba todo lo demás al final
+#: con un 99: con Bachillerato eso habría dejado sus dos cursos empatados y en
+#: orden arbitrario, sin fallar. Se escribe la lista entera en vez de analizar
+#: la cadena porque son seis valores y no cambian.
+_ORDEN_CURSOS = {
+    **{f"{i}º ESO": i for i in range(1, 5)},
+    "1º Bachillerato": 5,
+    "2º Bachillerato": 6,
+}
+
+
 def _union_cursos(actual: list[str], nuevos: list[str]) -> list[str]:
-    """Fusiona dos listas de cursos preservando el orden 1.º → 4.º ESO."""
-    orden = {f"{i}º ESO": i for i in range(1, 5)}
+    """Fusiona dos listas de cursos preservando el orden 1.º ESO → 2.º Bach."""
     unidos = set(actual) | set(nuevos)
-    return sorted(unidos, key=lambda c: orden.get(c, 99))
+    # Lo desconocido va al final y **por orden alfabético**, no en el que
+    # llegue: un orden que depende del recorrido de un `set` produce
+    # diferencias entre cargas que parecen cambios de datos.
+    return sorted(unidos, key=lambda c: (_ORDEN_CURSOS.get(c, 99), c))
 
 
 def _upsert_competencia(
@@ -59,12 +79,14 @@ def _upsert_competencia(
     descriptores: list[str],
     descripcion: str,
     comunidad: str,
+    etapa: str,
     idioma: str,
 ) -> tuple[Competencia, bool]:
     """Inserta o actualiza una Competencia por (comunidad, codigo, materia)."""
     existente = db.session.scalar(
         select(Competencia).where(
             Competencia.comunidad == comunidad,
+            Competencia.etapa == etapa,
             Competencia.codigo == codigo,
             Competencia.materia == materia,
         )
@@ -75,6 +97,7 @@ def _upsert_competencia(
             tipo=Competencia.ESPECIFICA,
             materia=materia,
             comunidad=comunidad,
+            etapa=etapa,
             idioma=idioma,
             cursos_aplicables=list(cursos),
             descriptores=list(descriptores),
@@ -103,6 +126,7 @@ def _upsert_criterio(
     cursos: list[str],
     descripcion: str,
     comunidad: str,
+    etapa: str,
     idioma: str,
 ) -> tuple[CriterioEvaluacion, bool]:
     """Upsert por (comunidad, codigo, materia, cursos). True si se creó.
@@ -114,6 +138,7 @@ def _upsert_criterio(
     candidatos = db.session.scalars(
         select(CriterioEvaluacion).where(
             CriterioEvaluacion.comunidad == comunidad,
+            CriterioEvaluacion.etapa == etapa,
             CriterioEvaluacion.codigo == codigo,
             CriterioEvaluacion.materia == materia,
         )
@@ -129,6 +154,7 @@ def _upsert_criterio(
         id_competencia=id_competencia,
         materia=materia,
         comunidad=comunidad,
+        etapa=etapa,
         idioma=idioma,
         cursos_aplicables=list(cursos),
         descripcion=descripcion,
@@ -145,6 +171,7 @@ def _upsert_saber_item(
     cursos: list[str],
     descripcion: str,
     comunidad: str,
+    etapa: str,
     idioma: str,
 ) -> tuple[SaberBasico, bool]:
     """Upsert por (comunidad, codigo, materia, cursos, descripcion).
@@ -155,6 +182,7 @@ def _upsert_saber_item(
     candidatos = db.session.scalars(
         select(SaberBasico).where(
             SaberBasico.comunidad == comunidad,
+            SaberBasico.etapa == etapa,
             SaberBasico.codigo == codigo,
             SaberBasico.materia == materia,
             SaberBasico.descripcion == descripcion,
@@ -170,6 +198,7 @@ def _upsert_saber_item(
         bloque=bloque,
         materia=materia,
         comunidad=comunidad,
+        etapa=etapa,
         idioma=idioma,
         cursos_aplicables=list(cursos),
         descripcion=descripcion,
@@ -210,6 +239,12 @@ def _procesar_fichero(
         )
     comunidad = datos.get("comunidad") or comunidad
     idioma = datos.get("idioma") or idioma
+    # La etapa la pone el extractor en el JSON y **no se pasa por la línea de
+    # órdenes**, al revés que la comunidad y el idioma: no hay ningún caso en
+    # que tenga sentido cargar un fichero de Bachillerato diciendo que es de
+    # la ESO. Si falta, se cae al valor de las cinco comunidades ya cargadas,
+    # que es lo único que puede ser un fichero anterior a este campo.
+    etapa = datos.get("etapa") or "ESO"
 
     stats: dict[str, object] = {
         "ce_nuevas": 0, "ce_actualizadas": 0, "cr_nuevos": 0, "sb_nuevos": 0,
@@ -239,6 +274,7 @@ def _procesar_fichero(
             descriptores=ce.get("descriptores") or [],
             descripcion=ce["descripcion"],
             comunidad=comunidad,
+            etapa=etapa,
             idioma=idioma,
         )
         competencias_por_codigo[ce["codigo"]] = obj
@@ -263,6 +299,7 @@ def _procesar_fichero(
             continue
         fila, creado = _upsert_criterio(
             comunidad=comunidad,
+            etapa=etapa,
             idioma=idioma,
             codigo=cr["codigo"],
             id_competencia=comp.id_competencia,
@@ -292,6 +329,7 @@ def _procesar_fichero(
             codigo = codigos[idx - 1] if idx <= len(codigos) else f"{cod_bloque}.{idx}"
             fila, creado = _upsert_saber_item(
                 comunidad=comunidad,
+                etapa=etapa,
                 idioma=idioma,
                 codigo=codigo,
                 bloque=titulo,

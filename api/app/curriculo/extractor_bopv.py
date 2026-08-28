@@ -58,23 +58,37 @@ LO QUE SÍ HA COSTADO
 4. **Los cursos salen de la cabecera de esas tablas** —«Lehen eta bigarren
    mailak»— cuando la materia se imparte en varios. Las que no la traen se
    resuelven con la tabla del artículo 13; ver `CURSOS_DEL_ARTICULADO`.
-5. **El boletín marca los bloques de saberes de tres formas distintas**:
-   `A. Problemak ebazteko prozesua`, `A. HIZKUNTZAK ETA BEREN HIZTUNAK.` en
-   mayúsculas, y `D multzoa. Aurkaritza-egoerak`. Las tres son del mismo
-   decreto y a veces de páginas contiguas.
+5. **El boletín marca los bloques de saberes de cinco formas distintas** —ver
+   `RX_BLOQUE` y `RX_BLOQUE_MULTZOA`—, incluida una con número en vez de letra
+   y sin espacio tras el punto. Las cinco son del mismo decreto y algunas de
+   páginas contiguas.
 6. **El código del criterio lleva punto final unas veces y otras no**: `1.1.`
    en Teknologia y `1.1` en Heziketa Fisikoa.
+7. **Las tablas de saberes van a dos niveles**: la primera columna es un
+   subapartado numerado y la segunda los saberes que cuelgan de él. Leídas de
+   corrido, el título se pegaba al primer saber —157 casos en 12 materias— y
+   eso llegó al documento del docente. Ver `_subapartado`.
 
-EL ASTERISCO DE LOS SABERES, SIN RESOLVER
-------------------------------------------
-Muchos saberes acaban en `*` —o empiezan, en Lengua—. **No se ha encontrado su
-leyenda** en el decreto: el único asterisco explicado es el de la tabla del
-artículo 13, que marca las optativas de oferta obligatoria, y no es este.
+EL ASTERISCO DE LOS SABERES: BUSCADO Y NO ENCONTRADO
+-----------------------------------------------------
+Muchos saberes llevan un `*`. Se buscó su leyenda el 27/08 en el articulado,
+en los seis anexos y fuera del decreto, y **no existe**. Los dos asteriscos que
+sí están explicados son otros: el del artículo 13 marca las optativas de oferta
+obligatoria, y el `**` del Anexo VI, casillas de horario sin mínimo.
 
-Se retira del texto por ser ruido tipográfico y **no se le atribuye ningún
-significado**, que es lo honesto mientras no aparezca la leyenda. Si algún día
-resulta que marcaba los mínimos del Estado o los añadidos vascos, el dato se
-habrá perdido y habrá que reextraer — barato, porque el PDF no cambia.
+Lo que sí se sabe, por si algún día sirve:
+
+* Va **al final del saber en todas las materias salvo en Lengua**, donde va al
+  principio. Son dos maquetaciones del mismo signo, no dos signos.
+* Está en el **26 %** de los saberes.
+
+Esa proporción encaja mejor con «añadido propio del País Vasco» que con
+«mínimo del Estado», pero es una conjetura y **por eso no se usa**. El
+asterisco se retira del texto sin atribuirle significado, que es lo honesto:
+elegir una de las tres lecturas posibles sería inventarla.
+
+Si algún día aparece la leyenda, reextraer cuesta un minuto — el PDF no
+cambia.
 """
 from __future__ import annotations
 
