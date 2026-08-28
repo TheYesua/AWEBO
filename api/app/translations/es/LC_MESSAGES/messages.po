@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: AWEBO VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-08-24 12:43+0200\n"
+"POT-Creation-Date: 2026-08-28 11:45+0200\n"
 "PO-Revision-Date: 2026-08-04 15:31+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: es\n"
@@ -48,57 +48,132 @@ msgstr "Si es lo que quieres, abre este enlace para confirmarlo:"
 msgid "Confirma la baja de tu cuenta de AWEBO"
 msgstr "Confirma la baja de tu cuenta de AWEBO"
 
-#: app/services/exportacion_service.py:48
-#: app/templates/situaciones/detalle.html:356
+#: app/services/exportacion_service.py:50
+#: app/templates/situaciones/detalle.html:358
 msgid "Descripción de la situación"
 msgstr "Descripción de la situación"
 
-#: app/services/exportacion_service.py:49
-#: app/templates/situaciones/detalle.html:357
+#: app/services/exportacion_service.py:51
+#: app/templates/situaciones/detalle.html:359
 msgid "Objetivos didácticos"
 msgstr "Objetivos didácticos"
 
-#: app/services/exportacion_service.py:50
+#: app/services/exportacion_service.py:52
 msgid "Conexión curricular"
 msgstr "Conexión curricular"
 
-#: app/services/exportacion_service.py:51
-#: app/templates/situaciones/detalle.html:359
+#: app/services/exportacion_service.py:53
+#: app/templates/situaciones/detalle.html:361
 msgid "Secuencia de sesiones"
 msgstr "Secuencia de sesiones"
 
-#: app/services/exportacion_service.py:52
+#: app/services/exportacion_service.py:54
 msgid "Evaluación"
 msgstr "Evaluación"
 
-#: app/services/exportacion_service.py:53
+#: app/services/exportacion_service.py:55
 msgid "Atención a la diversidad"
 msgstr "Atención a la diversidad"
 
-#: app/services/exportacion_service.py:69
+#: app/services/exportacion_service.py:71
 msgid "(no encontrado en el currículo)"
 msgstr "(no encontrado en el currículo)"
 
-#: app/services/exportacion_service.py:347
-#: app/templates/exportacion/pdf.html:327
+#: app/services/exportacion_service.py:416
+#: app/templates/exportacion/pdf.html:341
 msgid "competencias específicas"
 msgstr "competencias específicas"
 
-#: app/services/exportacion_service.py:348
-#: app/templates/exportacion/pdf.html:328
+#: app/services/exportacion_service.py:417
+#: app/templates/exportacion/pdf.html:342
 msgid "criterios de evaluación"
 msgstr "criterios de evaluación"
 
-#: app/services/exportacion_service.py:349
-#: app/templates/exportacion/pdf.html:329
+#: app/services/exportacion_service.py:418
+#: app/templates/exportacion/pdf.html:343
 msgid "saberes básicos"
 msgstr "saberes básicos"
 
-#: app/services/exportacion_service.py:376
-#: app/templates/exportacion/pdf.html:334
+#: app/services/exportacion_service.py:441
+#, python-brace-format
+msgid "Currículo aplicado: {comunidad} ({norma})."
+msgstr "Currículo aplicado: {comunidad} ({norma})."
+
+#: app/services/exportacion_service.py:444
+#, python-brace-format
+msgid "Currículo aplicado: {comunidad}."
+msgstr "Currículo aplicado: {comunidad}."
+
+#: app/services/exportacion_service.py:448
+#, python-brace-format
+msgid "El texto curricular se reproduce en {idioma}, que es la lengua en que lo publica el boletín."
+msgstr "El texto curricular se reproduce en {idioma}, que es la lengua en que lo publica el boletín."
+
+#: app/services/exportacion_service.py:453
+msgid "Atención: esta situación cita currículo de más de una comunidad."
+msgstr "Atención: esta situación cita currículo de más de una comunidad."
+
+#: app/services/exportacion_service.py:485
+#: app/templates/exportacion/pdf.html:348
 #, python-brace-format
 msgid "Esta conexión curricular está incompleta: falta {partes}. Regenera la sección para completarla."
 msgstr "Esta conexión curricular está incompleta: falta {partes}. Regenera la sección para completarla."
+
+#: app/services/exportacion_service.py:504
+#: app/templates/exportacion/pdf.html:361
+msgid "Competencias específicas"
+msgstr "Competencias específicas"
+
+#: app/services/exportacion_service.py:509
+#: app/services/exportacion_service.py:517
+#: app/templates/exportacion/pdf.html:362
+#: app/templates/exportacion/pdf.html:366
+msgid "Código"
+msgstr "Código"
+
+#: app/services/exportacion_service.py:509
+#: app/templates/exportacion/pdf.html:362
+msgid "Competencia"
+msgstr "Competencia"
+
+#: app/services/exportacion_service.py:509
+#: app/services/exportacion_service.py:518
+#: app/services/exportacion_service.py:526
+#: app/templates/exportacion/pdf.html:362
+#: app/templates/exportacion/pdf.html:366
+#: app/templates/exportacion/pdf.html:371
+msgid "Justificación"
+msgstr "Justificación"
+
+#: app/services/exportacion_service.py:512
+#: app/templates/exportacion/pdf.html:365
+msgid "Criterios de evaluación"
+msgstr "Criterios de evaluación"
+
+#: app/services/exportacion_service.py:517
+#: app/templates/exportacion/pdf.html:366
+msgid "Comp."
+msgstr "Comp."
+
+#: app/services/exportacion_service.py:517
+#: app/templates/exportacion/pdf.html:366
+msgid "Criterio"
+msgstr "Criterio"
+
+#: app/services/exportacion_service.py:521
+#: app/templates/exportacion/pdf.html:369
+msgid "Saberes básicos"
+msgstr "Saberes básicos"
+
+#: app/services/exportacion_service.py:526
+#: app/templates/exportacion/pdf.html:371
+msgid "Bloque"
+msgstr "Bloque"
+
+#: app/services/exportacion_service.py:526
+#: app/templates/exportacion/pdf.html:371
+msgid "Saber básico"
+msgstr "Saber básico"
 
 #: app/services/reclamacion.py:144
 #, python-brace-format
@@ -915,7 +990,7 @@ msgstr "Situaciones recientes"
 #: app/templates/admin/panel.html:155 app/templates/index.html:28
 #: app/templates/perfil.html:9 app/templates/situaciones/detalle.html:9
 #: app/templates/situaciones/listar.html:9
-#: app/templates/situaciones/listar.html:110
+#: app/templates/situaciones/listar.html:115
 msgid "Cargando…"
 msgstr "Cargando…"
 
@@ -1031,38 +1106,38 @@ msgstr "Estadísticas de la plataforma"
 
 #: app/templates/admin/panel.html:120 app/templates/admin/panel.html:308
 #: app/templates/index.html:164 app/templates/situaciones/detalle.html:85
-#: app/templates/situaciones/detalle.html:308
-#: app/templates/situaciones/listar.html:62
-#: app/templates/situaciones/listar.html:123
+#: app/templates/situaciones/detalle.html:310
+#: app/templates/situaciones/listar.html:67
+#: app/templates/situaciones/listar.html:128
 msgid "Borrador"
 msgstr "Borrador"
 
 #: app/templates/admin/panel.html:121 app/templates/admin/panel.html:309
-#: app/templates/index.html:165 app/templates/situaciones/detalle.html:309
-#: app/templates/situaciones/detalle.html:327
-#: app/templates/situaciones/listar.html:63
-#: app/templates/situaciones/listar.html:124
+#: app/templates/index.html:165 app/templates/situaciones/detalle.html:311
+#: app/templates/situaciones/detalle.html:329
+#: app/templates/situaciones/listar.html:68
+#: app/templates/situaciones/listar.html:129
 msgid "Generando…"
 msgstr "Generando…"
 
 #: app/templates/admin/panel.html:122 app/templates/admin/panel.html:310
 #: app/templates/index.html:166 app/templates/situaciones/detalle.html:86
-#: app/templates/situaciones/detalle.html:310
-#: app/templates/situaciones/listar.html:64
-#: app/templates/situaciones/listar.html:125
+#: app/templates/situaciones/detalle.html:312
+#: app/templates/situaciones/listar.html:69
+#: app/templates/situaciones/listar.html:130
 msgid "Generada"
 msgstr "Generada"
 
 #: app/templates/errores/error.html:10 app/templates/index.html:167
-#: app/templates/situaciones/listar.html:126
+#: app/templates/situaciones/listar.html:131
 msgid "Error"
 msgstr "Error"
 
 #: app/templates/admin/panel.html:124 app/templates/admin/panel.html:312
 #: app/templates/index.html:168 app/templates/situaciones/detalle.html:87
-#: app/templates/situaciones/detalle.html:311
-#: app/templates/situaciones/listar.html:66
-#: app/templates/situaciones/listar.html:127
+#: app/templates/situaciones/detalle.html:313
+#: app/templates/situaciones/listar.html:71
+#: app/templates/situaciones/listar.html:132
 msgid "Finalizada"
 msgstr "Finalizada"
 
@@ -1378,7 +1453,7 @@ msgid "Enviarme el correo de confirmación"
 msgstr "Enviarme el correo de confirmación"
 
 #: app/templates/perfil.html:300 app/templates/situaciones/detalle.html:292
-#: app/templates/situaciones/listar.html:111
+#: app/templates/situaciones/listar.html:116
 #: app/templates/situaciones/nueva.html:185
 msgid "(sin currículo todavía)"
 msgstr "(sin currículo todavía)"
@@ -1614,13 +1689,13 @@ msgstr "Situaciones"
 
 #: app/templates/admin/panel.html:93 app/templates/admin/panel.html:117
 #: app/templates/admin/panel.html:148 app/templates/situaciones/detalle.html:83
-#: app/templates/situaciones/listar.html:59
-#: app/templates/situaciones/listar.html:90
+#: app/templates/situaciones/listar.html:64
+#: app/templates/situaciones/listar.html:95
 msgid "Estado"
 msgstr "Estado"
 
 #: app/templates/admin/panel.html:94 app/templates/admin/panel.html:151
-#: app/templates/situaciones/listar.html:92
+#: app/templates/situaciones/listar.html:97
 msgid "Acciones"
 msgstr "Acciones"
 
@@ -1636,14 +1711,14 @@ msgstr "Situaciones de aprendizaje"
 msgid "Solo se muestran los datos necesarios para identificarlas. No es posible abrir su contenido."
 msgstr "Solo se muestran los datos necesarios para identificarlas. No es posible abrir su contenido."
 
-#: app/templates/admin/panel.html:119 app/templates/situaciones/listar.html:61
-#: app/templates/situaciones/listar.html:117
+#: app/templates/admin/panel.html:119 app/templates/situaciones/listar.html:66
+#: app/templates/situaciones/listar.html:122
 msgid "Todos"
 msgstr "Todos"
 
 #: app/templates/admin/panel.html:123 app/templates/admin/panel.html:311
-#: app/templates/situaciones/detalle.html:320
-#: app/templates/situaciones/listar.html:65
+#: app/templates/situaciones/detalle.html:322
+#: app/templates/situaciones/listar.html:70
 msgid "Error de generación"
 msgstr "Error de generación"
 
@@ -1651,16 +1726,16 @@ msgstr "Error de generación"
 msgid "Cuenta"
 msgstr "Cuenta"
 
-#: app/templates/admin/panel.html:130 app/templates/situaciones/listar.html:45
-#: app/templates/situaciones/listar.html:118
+#: app/templates/admin/panel.html:130 app/templates/situaciones/listar.html:50
+#: app/templates/situaciones/listar.html:123
 msgid "Todas"
 msgstr "Todas"
 
-#: app/templates/admin/panel.html:135 app/templates/situaciones/listar.html:73
+#: app/templates/admin/panel.html:135 app/templates/situaciones/listar.html:78
 msgid "Aplicar filtros"
 msgstr "Aplicar filtros"
 
-#: app/templates/admin/panel.html:136 app/templates/situaciones/listar.html:74
+#: app/templates/admin/panel.html:136 app/templates/situaciones/listar.html:79
 msgid "Limpiar"
 msgstr "Limpiar"
 
@@ -1669,26 +1744,26 @@ msgid "Situaciones de aprendizaje de todas las cuentas"
 msgstr "Situaciones de aprendizaje de todas las cuentas"
 
 #: app/templates/admin/panel.html:145 app/templates/situaciones/detalle.html:34
-#: app/templates/situaciones/listar.html:87
+#: app/templates/situaciones/listar.html:92
 #: app/templates/situaciones/nueva.html:51
 msgid "Título"
 msgstr "Título"
 
 #: app/templates/admin/panel.html:146 app/templates/situaciones/detalle.html:73
-#: app/templates/situaciones/listar.html:53
-#: app/templates/situaciones/listar.html:89
+#: app/templates/situaciones/listar.html:58
+#: app/templates/situaciones/listar.html:94
 #: app/templates/situaciones/nueva.html:99
 msgid "Materia"
 msgstr "Materia"
 
 #: app/templates/admin/panel.html:147 app/templates/situaciones/detalle.html:64
-#: app/templates/situaciones/listar.html:49
-#: app/templates/situaciones/listar.html:88
+#: app/templates/situaciones/listar.html:54
+#: app/templates/situaciones/listar.html:93
 #: app/templates/situaciones/nueva.html:83
 msgid "Curso"
 msgstr "Curso"
 
-#: app/templates/admin/panel.html:150 app/templates/situaciones/listar.html:91
+#: app/templates/admin/panel.html:150 app/templates/situaciones/listar.html:96
 msgid "Modificada"
 msgstr "Modificada"
 
@@ -1804,20 +1879,20 @@ msgstr "Editando {correo}"
 msgid "Cambios guardados."
 msgstr "Cambios guardados."
 
-#: app/templates/admin/panel.html:209 app/templates/situaciones/listar.html:119
+#: app/templates/admin/panel.html:209 app/templates/situaciones/listar.html:124
 msgid "Anterior"
 msgstr "Anterior"
 
-#: app/templates/admin/panel.html:210 app/templates/situaciones/listar.html:120
+#: app/templates/admin/panel.html:210 app/templates/situaciones/listar.html:125
 msgid "Siguiente"
 msgstr "Siguiente"
 
-#: app/templates/admin/panel.html:211 app/templates/situaciones/listar.html:121
+#: app/templates/admin/panel.html:211 app/templates/situaciones/listar.html:126
 #, python-brace-format
 msgid "Página {actual} de {ultima} · {total} en total"
 msgstr "Página {actual} de {ultima} · {total} en total"
 
-#: app/templates/admin/panel.html:212 app/templates/situaciones/listar.html:112
+#: app/templates/admin/panel.html:212 app/templates/situaciones/listar.html:117
 msgid "Sin resultados"
 msgstr "Sin resultados"
 
@@ -1874,94 +1949,51 @@ msgstr "Pregunta guía"
 msgid "Producto final"
 msgstr "Producto final"
 
-#: app/templates/exportacion/pdf.html:347
-msgid "Competencias específicas"
-msgstr "Competencias específicas"
-
-#: app/templates/exportacion/pdf.html:348
-#: app/templates/exportacion/pdf.html:352
-msgid "Código"
-msgstr "Código"
-
-#: app/templates/exportacion/pdf.html:348
-msgid "Competencia"
-msgstr "Competencia"
-
-#: app/templates/exportacion/pdf.html:348
-#: app/templates/exportacion/pdf.html:352
-#: app/templates/exportacion/pdf.html:357
-msgid "Justificación"
-msgstr "Justificación"
-
-#: app/templates/exportacion/pdf.html:351
-msgid "Criterios de evaluación"
-msgstr "Criterios de evaluación"
-
-#: app/templates/exportacion/pdf.html:352
-msgid "Comp."
-msgstr "Comp."
-
-#: app/templates/exportacion/pdf.html:352
-msgid "Criterio"
-msgstr "Criterio"
-
-#: app/templates/exportacion/pdf.html:355
-msgid "Saberes básicos"
-msgstr "Saberes básicos"
-
-#: app/templates/exportacion/pdf.html:357
-msgid "Bloque"
-msgstr "Bloque"
-
-#: app/templates/exportacion/pdf.html:357
-msgid "Saber básico"
-msgstr "Saber básico"
-
-#: app/templates/exportacion/pdf.html:372
+#: app/templates/exportacion/pdf.html:386
 msgid "Actividades"
 msgstr "Actividades"
 
-#: app/templates/exportacion/pdf.html:382
+#: app/templates/exportacion/pdf.html:396
 msgid "Recursos"
 msgstr "Recursos"
 
-#: app/templates/exportacion/pdf.html:388
+#: app/templates/exportacion/pdf.html:402
 msgid "Criterios trabajados"
 msgstr "Criterios trabajados"
 
-#: app/templates/exportacion/pdf.html:398
+#: app/templates/exportacion/pdf.html:412
 msgid "Instrumentos de evaluación"
 msgstr "Instrumentos de evaluación"
 
-#: app/templates/exportacion/pdf.html:400
+#: app/templates/exportacion/pdf.html:414
 msgid "Instrumento"
 msgstr "Instrumento"
 
-#: app/templates/exportacion/pdf.html:400
+#: app/templates/exportacion/pdf.html:414
 msgid "Momento"
 msgstr "Momento"
 
-#: app/templates/exportacion/pdf.html:400
+#: app/templates/exportacion/pdf.html:414
 msgid "Peso"
 msgstr "Peso"
 
-#: app/templates/exportacion/pdf.html:413
+#: app/templates/exportacion/pdf.html:427
 msgid "Rúbricas por criterio"
 msgstr "Rúbricas por criterio"
 
-#: app/templates/exportacion/pdf.html:436
+#: app/templates/exportacion/pdf.html:450
 msgid "Principios DUA aplicados"
 msgstr "Principios DUA aplicados"
 
-#: app/templates/exportacion/pdf.html:442
+#: app/templates/exportacion/pdf.html:456
 msgid "Ajustes no significativos"
 msgstr "Ajustes no significativos"
 
-#: app/templates/exportacion/pdf.html:448
+#: app/templates/exportacion/pdf.html:462
 msgid "Ajustes significativos"
 msgstr "Ajustes significativos"
 
-#: app/templates/exportacion/pdf.html:475
+#: app/templates/exportacion/pdf.html:489
 msgid "Sección sin renderizador específico."
 msgstr "Sección sin renderizador específico."
 
@@ -2060,7 +2092,7 @@ msgid "Se queda en el historial de versiones"
 msgstr "Se queda en el historial de versiones"
 
 #: app/templates/situaciones/detalle.html:139
-#: app/templates/situaciones/listar.html:70
+#: app/templates/situaciones/listar.html:75
 #: app/templates/situaciones/nueva.html:110
 msgid "Elige antes la provincia: el curso y la materia dependen del currículo de tu comunidad."
 msgstr "Elige antes la provincia: el curso y la materia dependen del currículo de tu comunidad."
@@ -2211,178 +2243,178 @@ msgstr "Regenerar todo"
 msgid "Traducir a {idioma}"
 msgstr "Traducir a {idioma}"
 
-#: app/templates/situaciones/detalle.html:301
-msgid "Tiempo de espera agotado sin respuesta de la tarea."
-msgstr "Tiempo de espera agotado sin respuesta de la tarea."
+#: app/templates/situaciones/detalle.html:303
+msgid "La generación está tardando más de lo normal. Sigue en marcha en el servidor: vuelve a abrir la situación en unos minutos para ver el resultado."
+msgstr "La generación está tardando más de lo normal. Sigue en marcha en el servidor: vuelve a abrir la situación en unos minutos para ver el resultado."
 
-#: app/templates/situaciones/detalle.html:302
+#: app/templates/situaciones/detalle.html:304
 msgid "No se ha podido deshacer."
 msgstr "No se ha podido deshacer."
 
-#: app/templates/situaciones/detalle.html:303
+#: app/templates/situaciones/detalle.html:305
 msgid "Cambios guardados correctamente."
 msgstr "Cambios guardados correctamente."
 
-#: app/templates/situaciones/detalle.html:304
+#: app/templates/situaciones/detalle.html:306
 msgid "El perfil del alumnado debe tener al menos 10 caracteres."
 msgstr "El perfil del alumnado debe tener al menos 10 caracteres."
 
-#: app/templates/situaciones/detalle.html:305
+#: app/templates/situaciones/detalle.html:307
 msgid "Regenerar"
 msgstr "Regenerar"
 
-#: app/templates/situaciones/detalle.html:306
+#: app/templates/situaciones/detalle.html:308
 msgid "Deshacer"
 msgstr "Deshacer"
 
-#: app/templates/situaciones/detalle.html:314
+#: app/templates/situaciones/detalle.html:316
 msgid "Hay dos redacciones de esta sección."
 msgstr "Hay dos redacciones de esta sección."
 
-#: app/templates/situaciones/detalle.html:315
+#: app/templates/situaciones/detalle.html:317
 msgid "Quédate con una para seguir. La descartada permanece en el historial de versiones, así que podrás recuperarla."
 msgstr "Quédate con una para seguir. La descartada permanece en el historial de versiones, así que podrás recuperarla."
 
-#: app/templates/situaciones/detalle.html:316
+#: app/templates/situaciones/detalle.html:318
 msgid "Versión actual"
 msgstr "Versión actual"
 
-#: app/templates/situaciones/detalle.html:317
+#: app/templates/situaciones/detalle.html:319
 msgid "Alternativa propuesta"
 msgstr "Alternativa propuesta"
 
-#: app/templates/situaciones/detalle.html:318
+#: app/templates/situaciones/detalle.html:320
 msgid "Quedarme con esta"
 msgstr "Quedarme con esta"
 
-#: app/templates/situaciones/detalle.html:321
+#: app/templates/situaciones/detalle.html:323
 msgid "Reabrir situación"
 msgstr "Reabrir situación"
 
-#: app/templates/situaciones/detalle.html:322
+#: app/templates/situaciones/detalle.html:324
 msgid "Escuchar"
 msgstr "Escuchar"
 
-#: app/templates/situaciones/detalle.html:323
+#: app/templates/situaciones/detalle.html:325
 msgid "Parar"
 msgstr "Parar"
 
-#: app/templates/situaciones/detalle.html:324
+#: app/templates/situaciones/detalle.html:326
 msgid "Leyendo en voz alta…"
 msgstr "Leyendo en voz alta…"
 
-#: app/templates/situaciones/detalle.html:325
+#: app/templates/situaciones/detalle.html:327
 #, python-brace-format
 msgid "Tu sistema no tiene ninguna voz instalada para {idioma}, así que la lectura inmediata no está disponible. Puedes generar el audio en el servidor con el botón «Generar audio» de cada sección: tarda unos segundos y luego se puede escuchar y descargar."
 msgstr "Tu sistema no tiene ninguna voz instalada para {idioma}, así que la lectura inmediata no está disponible. Puedes generar el audio en el servidor con el botón «Generar audio» de cada sección: tarda unos segundos y luego se puede escuchar y descargar."
 
-#: app/templates/situaciones/detalle.html:326
+#: app/templates/situaciones/detalle.html:328
 msgid "Generar audio"
 msgstr "Generar audio"
 
-#: app/templates/situaciones/detalle.html:328
+#: app/templates/situaciones/detalle.html:330
 msgid "Audio generado"
 msgstr "Audio generado"
 
-#: app/templates/situaciones/detalle.html:329
+#: app/templates/situaciones/detalle.html:331
 msgid "No se ha podido generar el audio. Inténtalo de nuevo en un momento."
 msgstr "No se ha podido generar el audio. Inténtalo de nuevo en un momento."
 
-#: app/templates/situaciones/detalle.html:330
+#: app/templates/situaciones/detalle.html:332
 msgid "Descargar"
 msgstr "Descargar"
 
-#: app/templates/situaciones/detalle.html:331
+#: app/templates/situaciones/detalle.html:333
 msgid "Ya hay una generación en curso."
 msgstr "Ya hay una generación en curso."
 
-#: app/templates/situaciones/detalle.html:332
+#: app/templates/situaciones/detalle.html:334
 msgid "No se pudo lanzar la generación."
 msgstr "No se pudo lanzar la generación."
 
-#: app/templates/situaciones/detalle.html:333
+#: app/templates/situaciones/detalle.html:335
 msgid "La generación terminó con error: "
 msgstr "La generación terminó con error: "
 
-#: app/templates/situaciones/detalle.html:334
+#: app/templates/situaciones/detalle.html:336
 msgid "No se ha podido guardar la elección."
 msgstr "No se ha podido guardar la elección."
 
-#: app/templates/situaciones/detalle.html:335
+#: app/templates/situaciones/detalle.html:337
 msgid "Adaptación lanzada. Serás redirigido a la nueva SA…"
 msgstr "Adaptación lanzada. Serás redirigido a la nueva SA…"
 
-#: app/templates/situaciones/detalle.html:336
+#: app/templates/situaciones/detalle.html:338
 msgid "Aún no hay adaptaciones generadas para esta situación."
 msgstr "Aún no hay adaptaciones generadas para esta situación."
 
-#: app/templates/situaciones/detalle.html:337
+#: app/templates/situaciones/detalle.html:339
 #, python-brace-format
 msgid "El idioma destino es el de la situación ({idioma}). Cámbialo arriba, en el campo Idioma."
 msgstr "El idioma destino es el de la situación ({idioma}). Cámbialo arriba, en el campo Idioma."
 
-#: app/templates/situaciones/detalle.html:338
+#: app/templates/situaciones/detalle.html:340
 #, python-brace-format
 msgid "¿Regenerar la sección «{nombre}»? Se sobrescribirá su contenido actual."
 msgstr "¿Regenerar la sección «{nombre}»? Se sobrescribirá su contenido actual."
 
-#: app/templates/situaciones/detalle.html:339
+#: app/templates/situaciones/detalle.html:341
 msgid "¿Seguro que quieres eliminar esta situación? Se eliminará también su historial de versiones."
 msgstr "¿Seguro que quieres eliminar esta situación? Se eliminará también su historial de versiones."
 
-#: app/templates/situaciones/detalle.html:345
+#: app/templates/situaciones/detalle.html:347
 msgid "español"
 msgstr "español"
 
-#: app/templates/situaciones/detalle.html:346
+#: app/templates/situaciones/detalle.html:348
 msgid "catalán"
 msgstr "catalán"
 
-#: app/templates/situaciones/detalle.html:347
+#: app/templates/situaciones/detalle.html:349
 msgid "gallego"
 msgstr "gallego"
 
-#: app/templates/situaciones/detalle.html:348
+#: app/templates/situaciones/detalle.html:350
 msgid "euskera"
 msgstr "euskera"
 
-#: app/templates/situaciones/detalle.html:349
+#: app/templates/situaciones/detalle.html:351
 msgid "inglés"
 msgstr "inglés"
 
-#: app/templates/situaciones/detalle.html:350
+#: app/templates/situaciones/detalle.html:352
 msgid "francés"
 msgstr "francés"
 
-#: app/templates/situaciones/detalle.html:351
+#: app/templates/situaciones/detalle.html:353
 msgid "árabe"
 msgstr "árabe"
 
-#: app/templates/situaciones/detalle.html:358
+#: app/templates/situaciones/detalle.html:360
 msgid "Conexión curricular (competencias · criterios · saberes)"
 msgstr "Conexión curricular (competencias · criterios · saberes)"
 
-#: app/templates/situaciones/detalle.html:360
+#: app/templates/situaciones/detalle.html:362
 msgid "Evaluación (instrumentos y rúbricas)"
 msgstr "Evaluación (instrumentos y rúbricas)"
 
-#: app/templates/situaciones/detalle.html:361
+#: app/templates/situaciones/detalle.html:363
 msgid "Atención a la diversidad (DUA)"
 msgstr "Atención a la diversidad (DUA)"
 
-#: app/templates/situaciones/detalle.html:516
+#: app/templates/situaciones/detalle.html:518
 msgid "Resumir"
 msgstr "Resumir"
 
-#: app/templates/situaciones/detalle.html:517
+#: app/templates/situaciones/detalle.html:519
 msgid "Desarrollar"
 msgstr "Desarrollar"
 
-#: app/templates/situaciones/detalle.html:518
+#: app/templates/situaciones/detalle.html:520
 msgid "Traducir"
 msgstr "Traducir"
 
-#: app/templates/situaciones/detalle.html:519
+#: app/templates/situaciones/detalle.html:521
 msgid "Proponer alternativa"
 msgstr "Proponer alternativa"
 
@@ -2402,32 +2434,32 @@ msgstr "Buscar por título"
 msgid "Ej: Robótica"
 msgstr "Ej: Robótica"
 
-#: app/templates/situaciones/listar.html:79
+#: app/templates/situaciones/listar.html:84
 msgid "No hay situaciones que coincidan con los filtros aplicados. <a href=\"/situaciones/nueva\" class=\"link\">Crea la primera</a>."
 msgstr "No hay situaciones que coincidan con los filtros aplicados. <a href=\"/situaciones/nueva\" class=\"link\">Crea la primera</a>."
 
-#: app/templates/situaciones/listar.html:84
+#: app/templates/situaciones/listar.html:89
 msgid "Listado de situaciones de aprendizaje del docente"
 msgstr "Listado de situaciones de aprendizaje del docente"
 
-#: app/templates/situaciones/listar.html:98
+#: app/templates/situaciones/listar.html:103
 msgid "Páginas de resultados"
 msgstr "Páginas de resultados"
 
-#: app/templates/situaciones/listar.html:113
+#: app/templates/situaciones/listar.html:118
 #, python-brace-format
 msgid "{n} situaciones encontradas"
 msgstr "{n} situaciones encontradas"
 
-#: app/templates/situaciones/listar.html:114
+#: app/templates/situaciones/listar.html:119
 msgid "1 situación encontrada"
 msgstr "1 situación encontrada"
 
-#: app/templates/situaciones/listar.html:115
+#: app/templates/situaciones/listar.html:120
 msgid "Abrir"
 msgstr "Abrir"
 
-#: app/templates/situaciones/listar.html:116
+#: app/templates/situaciones/listar.html:121
 #, python-brace-format
 msgid "Abrir situación {titulo}"
 msgstr "Abrir situación {titulo}"
@@ -2606,4 +2638,7 @@ msgstr "Creando…"
 
 #~ msgid "<strong>Conservar tus situaciones.</strong> Tu cuenta deja de poder entrar, pero el contenido se guarda <strong>90 días</strong>. Si dentro de ese plazo vuelves a registrarte con el mismo correo, puedes pedir recuperarlo; lo aprueba un administrador. Pasado el plazo, el borrado es definitivo."
 #~ msgstr "<strong>Conservar tus situaciones.</strong> Tu cuenta deja de poder entrar, pero el contenido se guarda <strong>90 días</strong>. Si dentro de ese plazo vuelves a registrarte con el mismo correo, puedes pedir recuperarlo; lo aprueba un administrador. Pasado el plazo, el borrado es definitivo."
+
+#~ msgid "Tiempo de espera agotado sin respuesta de la tarea."
+#~ msgstr "Tiempo de espera agotado sin respuesta de la tarea."
 

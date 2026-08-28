@@ -41,6 +41,10 @@ def _sa(citados: dict, competencias=(), criterios=(), saberes=()):
         competencias=list(competencias),
         criterios=list(criterios),
         saberes=list(saberes),
+        # La SdA real siempre tiene idioma: es lo que decide en qué lengua se
+        # redacta, y de compararlo con el del currículo sale el aviso de
+        # documento bilingüe.
+        idioma="ca",
     )
 
 
@@ -50,10 +54,17 @@ CATALAN = _sa(
         "criterios": [{"codigo": "2.1", "competencia": "2", "justificacion": "Justif. crit."}],
         "saberes": [{"codigo": "20.1", "justificacion": "Justif. saber."}],
     },
-    competencias=[NS(codigo="2", descripcion="Cercar i seleccionar informació")],
-    criterios=[NS(codigo="2.1", descripcion="Analitzar conceptes i processos")],
+    # `comunidad` e `idioma` van en el doble porque van en la fila real: son
+    # NOT NULL en las tres tablas desde la migración `a4c81e9d2f60`. Un doble
+    # que no se parece a lo que sustituye deja pasar fallos — este los dejó
+    # pasar hasta que `procedencia_del_curriculo` los pidió.
+    competencias=[NS(codigo="2", descripcion="Cercar i seleccionar informació",
+                     comunidad="cataluna", idioma="ca")],
+    criterios=[NS(codigo="2.1", descripcion="Analitzar conceptes i processos",
+                  comunidad="cataluna", idioma="ca")],
     saberes=[NS(codigo="20.1", bloque="Comunicació · Context",
-                descripcion="Els elements del context comunicatiu")],
+                descripcion="Els elements del context comunicatiu",
+                comunidad="cataluna", idioma="ca")],
 )
 
 

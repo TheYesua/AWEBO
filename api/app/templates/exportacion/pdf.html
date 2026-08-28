@@ -316,7 +316,21 @@
   fichero aparte y lo importe, y entonces la tabla saldría vacía sin ningún
   error. Explícito es más largo y no se rompe solo.
 -#}
-{%- macro render_conexion_curricular(d, conexion) -%}
+{%- macro render_conexion_curricular(d, conexion, procedencia) -%}
+  {#
+    De qué norma sale el currículo, y en qué lengua está si no coincide con la
+    de la redacción. El texto se compone en `texto_de_procedencia()` y no aquí:
+    el DOCX tiene que decir exactamente lo mismo, y ya se cometió una vez el
+    error de tocar solo una de las dos rutas.
+
+    Sin el ⚠ del aviso de arriba, a propósito: aquello señala que algo va mal;
+    esto solo da contexto, y con el mismo signo parecería un problema.
+  #}
+  {% if procedencia %}
+    <p style="margin:4px 0 10px;font-style:italic;font-size:9pt;color:#475569;">
+      {{ procedencia }}
+    </p>
+  {% endif %}
   {#
     `select` sin argumento se queda con los valores verdaderos, así que los
     `None` desaparecen. Se hace así y no con `{% do %}` porque esa etiqueta
@@ -468,7 +482,7 @@
     {% if clave == 'atencion_diversidad' %}
       {{ render_atencion_diversidad(datos, sa.tipo_adaptacion) }}
     {% elif clave == 'conexion_curricular' %}
-      {{ render_conexion_curricular(datos, conexion) }}
+      {{ render_conexion_curricular(datos, conexion, procedencia) }}
     {% elif RENDERS[clave] %}
       {{ RENDERS[clave](datos) }}
     {% else %}

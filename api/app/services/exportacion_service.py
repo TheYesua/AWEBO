@@ -23,6 +23,8 @@ from weasyprint import HTML
 
 from ..models import SituacionAprendizaje, Usuario
 from ..prompts import ORDEN_SECCIONES
+from ..curriculo import comunidades
+from ..i18n import IDIOMAS
 
 
 # Etiquetas humanas alineadas con SECCIONES de detalle.html.
@@ -149,6 +151,63 @@ def filas_de_conexion(sa: SituacionAprendizaje) -> dict[str, list[dict[str, str]
     return filas
 
 
+def procedencia_del_curriculo(sa: SituacionAprendizaje) -> dict[str, str] | None:
+    """De qué norma y en qué lengua está el currículo que cita la SdA.
+
+    POR QUÉ EL DOCUMENTO TIENE QUE DECIRLO
+    ---------------------------------------
+    Un documento que cita currículo sin decir de qué norma sale obliga a
+    quien lo lea a fiarse. Y desde que hay cinco comunidades cargadas, cada una
+    con su decreto y **en su propia lengua**, el documento puede salir
+    mezclado sin avisar: la SdA 60 se redactó en castellano y sus criterios
+    salieron en euskera, correctos y sin una línea que explicara por qué.
+
+    Se pensó que esto se resolvería solo al cargar cada comunidad en su lengua
+    —«una SdA en catalán cita criterios en catalán, y deja de haber mezcla»—,
+    y no es así: **la lengua de redacción la elige el docente y la del
+    currículo la fija el boletín**, así que pueden no coincidir y de hecho no
+    coinciden a menudo.
+
+    QUÉ DEVUELVE
+    ------------
+    `None` cuando no hay nada enlazado, que es el caso de una SdA en borrador o
+    sin currículo. Si no, la comunidad, la norma y si hay mezcla de lenguas.
+
+    El dato sale de **las filas enlazadas**, no de la SdA: la comunidad de la
+    SdA dice contra qué se generó, pero lo que el documento reproduce es el
+    texto de esas filas, y es de ese texto de lo que hay que responder.
+    """
+    filas = [*(sa.competencias or []), *(sa.criterios or []), *(sa.saberes or [])]
+    if not filas:
+        return None
+
+    # `getattr` y no acceso directo, igual que en `filas_de_conexion`: una
+    # exportación no debe caerse por un atributo. Si falta, no hay nota — que
+    # es visible y seguro, al revés que reventar la descarga entera.
+    comunidades_citadas = {c for f in filas if (c := getattr(f, "comunidad", None))}
+    idiomas = {i for f in filas if (i := getattr(f, "idioma", None))}
+    if not comunidades_citadas:
+        return None
+
+    # Más de una comunidad en la misma SdA no debería pasar —los enlaces se
+    # filtran por la comunidad de la situación— pero si pasara, decirlo es
+    # mejor que elegir una: significaría que el catálogo tiene filas cruzadas.
+    codigo = sorted(comunidades_citadas)[0]
+    idioma = sorted(idiomas)[0] if idiomas else None
+
+    return {
+        "comunidad": comunidades.nombre(codigo) or codigo,
+        "norma": comunidades.norma(codigo) or "",
+        "idioma": idioma or "",
+        "idioma_nombre": IDIOMAS.get(idioma, "") if idioma else "",
+        # El aviso de mezcla solo cuando la hay: repetirlo cuando las dos
+        # lenguas coinciden sería ruido en la mayoría de los documentos.
+        "mezcla": bool(idioma and getattr(sa, "idioma", None)
+                       and idioma != sa.idioma),
+        "varias_comunidades": len(comunidades_citadas) > 1,
+    }
+
+
 def renderizar_pdf(sa: SituacionAprendizaje, usuario: Usuario) -> bytes:
     """Devuelve los bytes del PDF generado para ``sa``.
 
@@ -161,6 +220,7 @@ def renderizar_pdf(sa: SituacionAprendizaje, usuario: Usuario) -> bytes:
         usuario=usuario,
         secciones=secciones_para_export(),
         conexion=filas_de_conexion(sa),
+        procedencia=texto_de_procedencia(procedencia_del_curriculo(sa)),
         generado_en=datetime.now(timezone.utc).astimezone(),
     )
     # ``base_url`` permitiría a WeasyPrint resolver assets relativos si
@@ -265,6 +325,19 @@ def _add_aviso(doc: Document, texto: str) -> None:
     _add_run(p, texto, size=10, italic=True)
 
 
+def _add_nota(doc: Document, texto: str) -> None:
+    """Una nota informativa, sin el signo de aviso.
+
+    Distinta de `_add_aviso` a propósito: aquella señala que algo va mal y hay
+    que actuar; esta solo da contexto. Con el mismo ⚠ delante, decir de qué
+    decreto sale el currículo parecería un problema.
+    """
+    p = doc.add_paragraph()
+    p.paragraph_format.space_before = Pt(2)
+    p.paragraph_format.space_after = Pt(6)
+    _add_run(p, texto, size=9, italic=True)
+
+
 def _add_label_value(doc: Document, etiqueta: str, valor: str) -> None:
     """Añade un párrafo con etiqueta destacada y valor a continuación."""
     if not valor:
@@ -350,7 +423,47 @@ _PARTES_CONEXION = (
 )
 
 
-def _docx_conexion_curricular(doc, d, conexion=None):
+def texto_de_procedencia(p: dict[str, str] | None) -> str:
+    """La línea que dice de qué norma sale el currículo, y en qué lengua.
+
+    Vive aquí y no en cada plantilla porque el PDF y el DOCX tienen que decir
+    lo mismo. Ya se cometió el error contrario con el aviso de sección
+    incompleta: se añadió al DOCX y el PDF salió sin él durante un día.
+
+    La coletilla del idioma **solo cuando hay mezcla**. Repetirla cuando las
+    dos lenguas coinciden sería ruido en la mayoría de los documentos, y lo que
+    hay que explicar es la excepción: por qué un documento redactado en
+    castellano cita criterios en euskera.
+    """
+    if not p:
+        return ""
+    # «Currículo aplicado: X» y no «Currículo de X»: unas comunidades piden
+    # artículo —«del País Vasco»— y otras no —«de Cataluña»—, y resolverlo
+    # habría exigido guardar el artículo de cada una en cuatro lenguas. Los dos
+    # puntos esquivan el problema entero.
+    if p.get("norma"):
+        linea = str(_("Currículo aplicado: {comunidad} ({norma}).")).format(
+            comunidad=p["comunidad"], norma=p["norma"])
+    else:
+        linea = str(_("Currículo aplicado: {comunidad}.")).format(
+            comunidad=p["comunidad"])
+    if p.get("mezcla") and p.get("idioma_nombre"):
+        linea += " " + str(_(
+            "El texto curricular se reproduce en {idioma}, que es la lengua en "
+            "que lo publica el boletín."
+        )).format(idioma=p["idioma_nombre"])
+    if p.get("varias_comunidades"):
+        linea += " " + str(_(
+            "Atención: esta situación cita currículo de más de una comunidad."
+        ))
+    return linea
+
+
+def _docx_conexion_curricular(doc, d, conexion=None, procedencia=None):
+    nota = texto_de_procedencia(procedencia)
+    if nota:
+        _add_nota(doc, nota)
+
     # UNA SECCIÓN QUE FALTA SE DICE, NO SE OMITE
     # -------------------------------------------
     # Cada bloque se pintaba solo si tenía datos, así que una generación
@@ -562,6 +675,7 @@ def renderizar_docx(sa: SituacionAprendizaje, usuario: Usuario) -> bytes:
     # Secciones
     contenido = sa.contenido or {}
     conexion = filas_de_conexion(sa)
+    procedencia = procedencia_del_curriculo(sa)
     for clave, etiqueta in secciones_para_export():
         datos = contenido.get(clave)
         if not datos:
@@ -570,7 +684,7 @@ def renderizar_docx(sa: SituacionAprendizaje, usuario: Usuario) -> bytes:
         if clave == "atencion_diversidad":
             _docx_atencion_diversidad(doc, datos, sa.tipo_adaptacion)
         elif clave == "conexion_curricular":
-            _docx_conexion_curricular(doc, datos, conexion)
+            _docx_conexion_curricular(doc, datos, conexion, procedencia)
         else:
             render = _RENDERS_DOCX.get(clave)
             if render:
