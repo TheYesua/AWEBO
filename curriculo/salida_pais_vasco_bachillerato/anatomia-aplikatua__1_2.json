@@ -1,0 +1,150 @@
+{
+  "materia_oficial": "ANATOMIA APLIKATUA",
+  "materia": "Anatomia Aplikatua",
+  "etapa": "Bachillerato",
+  "ciclo": "Único",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato",
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Giza gorputza “makroegitura global” gisa ulertzea, antolaketa estrukturalaren mailak identifikatuz, giza gorputza osagaiak erlazionatuta eta koordinatuta dituen unitate biologiko gisa aurkezteko. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Informazio zientifikoa bilatzea, hautatzea, interpretatzea eta transmititzea, hainbat baliabide eta euskarri erabiliz eta terminologia eta hizkuntza egokia baliatuz, problemak ebazteko eta ikerketa anatomiko-funtzional txikiak egiteko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Giza gorputzaren errealitatea azaltzeko eskemak eta ereduak egitea, kontzeptu, printzipio eta estrategiak erabiliz egitura anatomikoak eta horien funtzioa ezagutzeko eta hobeto ulertzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Anatomiaren eta fisiologiaren zientzia gisako izaera ezagutzea, beste zientzia eta adierazpen artistiko batzuekin duten erlazioa baloratuz, pertsonen prestakuntza integralerako ekarpenak eta gizartearen gaineko ondorioak aintzat hartzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Laborategian arakatzeko eta problemak ebazteko trebetasunak eta abileziak garatzea, anatomia eta fisiologiako lan esperimentalak eginez, ezagutza eraikitzeko eta ereduak azaltzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Anatomiaren eta fisiologiaren ezagutza giza gorputza zaintzeko zein garrantzitsua den ulertzea, osasunaren eta bizi-hobekuntzaren aldeko ekintzak identifikatuz, ohitura osasungarriak, arduratsuak eta iraunkorrak hartzeko.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Giza gorputzaren antolaketa unitate biologiko gisa deskribatzea, elementuak eta egiturak hainbat formatu eta euskarritan identifikatuz."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Giza gorputzaren sistemak eta aparatuak osatzen dituzten egiturazko elementuak aztertzea, anatomikoki kokatuz eta analogiak eta ezberdintasunak adieraziz."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Giza gorputzaren egitura ulertzea eta ezagutzea, molekulei, zelulei, ehunei, organoei eta sistemei dagokienez, bizitzaren etapa ezberdinetan eta sexuen arabera, analogiak eta ezberdintasunak identifikatuz."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Anatomia-problemak ebaztea, informazio zientifikoa behar bezala bilatuz, tratatuz eta komunikatuz eta egiazko iturri fidagarriak aipatuz eta erabiliz."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Dokumentu-ikerketa txikiak eta kasuak ebaztekoak egitea, bakarka edo taldean, hizkuntza eta terminologia zehaztasunez eta zuzentasunez erabiliz."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Egitura anatomikoak aztertzea, eskemak, marrazkiak eta ereduak eginez, organoen forma, topografia, kokapena, antolaketa eta horien arteko lotura kontuan hartuz."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Laborategian egindako disekzioetan behatuta edo beste iturrien bidez (argazkiak, bideoak, 3D ereduak…) egindako disekzioetan behatuta egitura anatomikoak interpretatzea eta ulertzea, dagokien kontzeptu eta estrategien bidez azalduz."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Anatomiak gure gorputzaren ezagutzari egindako ekarpena baloratzea, osasuna hobetzeko eta zaintzeko eta pertsonen prestakuntza integralean duen garrantzia identifikatuz."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Anatomiaren ekarpenak beste zientzia eta adierazpen artistikoekin erlazionatzea, horietan egindako ekarpena baloratuz."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Zientziaren prozedurekin bat datozen esperimentu-ikerketarako trebetasunak aplikatzea, ereduak adierazteko eta giza gorputzari buruzko ezagutza sortzeko erabiliz."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Disekzionatzeko, behatzeko edo problemak ebazteko esperimentu-prozedura behar bezala egitea, laborategiko tresnak, materialak eta ekipoak manipulatuz eta erabilitako ikerketa-teknikei buruzko erabakiak hartuz."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "5",
+      "descripcion": "Jakin-mina, sormena, araketa-jarduera eta espiritu kritikoa adieraztea, jardun zientifikoaren ezaugarri garrantzitsuak direla aintzat hartuz."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Norbanakoen eta kolektiboaren osasuna hobetzeko ekintzak identifikatzea, horien onurak azalduz eta norberaren ongizatea hobetzeko ondorioak deduzituz."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Ohitura osasuntsuak sustatzea, bizitzako etapa ezberdinetan bereganatzeko epe labur edo luzeko erronkak edo helburuak planifikatuz."
+    },
+    {
+      "codigo": "6.3",
+      "competencia": "6",
+      "descripcion": "Lesioak edo patologiak eragin ditzaketen ohiturekiko jarrera kritikoa adieraztea, horiek prebenitzeko anatomiaren ezagutzak duen garrantzia ulertuz."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "1. Anatomia Aplikatua",
+      "titulo": "Anatomia Aplikatua",
+      "items": [
+        "Ikerketa-proiektuak edo kasuen ebazpena Hipotesiak, galderak, problemak eta aieruak: ikuspegi zientifikoa duen planteamendua.",
+        "Informazioa bilatzeko, kolaboratzeko, komunikatzeko eta erakunde zientifikoekin interakzioan jarduteko estrategiak: tresna digitalak, eta prozesuak, emaitzak eta ideiak aurkezteko formatuak (diapositibak, grafikoak, bideoak, posterrak, txostenak 2023ko uztailaren 24a, astelehena Informazio-iturri fidagarriak: bilaketa, ezagutzea eta erabilera.",
+        "Laborategiko esperientzia zientifikoak: diseinua, plangintza eta gauzatzea.",
+        "Emaitza zientifikoak analizatzeko metodoak: antolaketa, irudikapena eta tresna estatistikoak.",
+        "Komunikazio zientifikoko estrategiak: hiztegi zientifikoa, formatuak (txostenak, bideoak, ereduak, grafikoak eta bestelakoak) Laborategiko esperientziak Laborategian ehunak behatzeko teknikak.",
+        "Laborategian egiturak eta organoak disekzionatu eta behatzeko teknikak.",
+        "Laborategian jarduera enpirikoaren berezko trebetasunak eta jarrerak. Lankidetza eta erantzukizuna.",
+        "Giza gorputzaren antolaketa eta egiturak",
+        "Anatomia orokorra: Giza gorputzaren antolaketa. Egitura eta konfigurazioa. Termino deskribatzaileak eta plano Hezurrak. Hezur-ehuna. Hezur motak eta kokapena. Muskuluak. Muskulu motak eta kokapena. Muskulu-zuntzaren antolaketa. Artikulazioak. Motak.",
+        "Sistema kardiobaskularra eta arnas sistema.",
+        "Bihotzaren egitura anatomikoa eta histologikoa. Zirkulazio-aparatuaren ezaugarri orokorrak. Arteria-, zain- eta kapilar-",
+        "zirkulazioa. Arnas aparatuaren ezaugarri anatomikoak. Biriken propietate fisikoak.",
+        "Digestio-aparatua. Iraitz-aparatua.",
+        "Iraitz-aparatuaren ezaugarri anatomikoak. Gernu-aparatuaren anatomia. Nefronaren egitura.",
+        "Nerbio-sistemaren antolaketa. Nerbio-sistema zentrala eta periferikoa. Nerbio-sistema somatikoa eta begetatiboa.",
+        "Nerbio-sistemaren zelulak: Neuronak eta neurogliaren zelulak.",
+        "Bi sexuen ugaltze-sistemaren anatomia. Haurdunaldiaren anatomia. Aldaketa anatomikoak. Giza enbriologia. Enbrioi-",
+        "Osasuna eta gaixotasuna bizitzako etapa ezberdinetan. Giza egitura anatomiko bakoitzarekin lotutako ohiko lesioak eta patologiak. Prebentziorako ohiturak."
+      ],
+      "codigos_items": []
+    }
+  ],
+  "comunidad": "pais-vasco",
+  "idioma": "eu"
+}

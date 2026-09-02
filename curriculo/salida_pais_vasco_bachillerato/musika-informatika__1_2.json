@@ -1,0 +1,111 @@
+{
+  "materia_oficial": "MUSIKA-INFORMATIKA",
+  "materia": "Musika-informatika",
+  "etapa": "Bachillerato",
+  "ciclo": "Único",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato",
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Informatikak musika sortzeko, grabatzeko, editatzeko eta erreproduzitzeko eskaintzen dituen aukerak ezagutzea, horretarako egokiak diren baliabideak eta oinarrizko funtzionamendua identifikatuz, horiek autoikaskuntzarako, gozamenerako eta norbera aberasteko tresna gisa baliatzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Musika sortzeko, grabatzeko, editatzeko eta erreproduzitzeko hainbat euskarri eta formatu informatiko modu eraginkorrean erabiltzea, banaka edo taldeka, lanerako egokitasunaren arabera hautatuz, eta euren erabilera segurua, arduratsua eta etikoa ziurtatuz, esparru akademiko, pertsonal eta profesionalarekin lotutako beharrak asetzeko. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Soinuaren oinarri fisikoak eta musika-hizkuntzaren ezagutza espezifikoak aplikatzea arte-konposizioan eta -ekoizpenean, hainbat programa eta aplikazio informatikoren bidez, musikaren eta haren adierazpen-aukeren ulermena areagotzeko, baita beste pertsona batzuekin errespetuz eta enpatiaz komunikatzeko ere.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Diziplina anitzeko kolaborazio-proiektu berritzaileak eta iraunkorrak sortzea, musikako informatika- -programa eta -aplikazioez baliatuz, eskuratutako ezagutzak aplikatuz eta produkzioaren berezko rolak eta zereginak ikuspegi inklusibo batetik hartuz, hazkunde artistiko propioa bultzatzeko, kultura- -ingurunea aberasteko eta garapen pertsonalerako, sozialerako, akademikorako edo profesionalerako aukerak identifikatzeko.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Hainbat baliabide informatikoren funtzionamendua ezagutzea, musikaren sorkuntzan, grabazioan eta erreprodukzioan eskaintzen dituzten autoikaskuntza, gozamen eta aberaste pertsonaleko aukerak baliatuz. 2. konpetentzia espezifikoa."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Musikako eduki digitalak sortzea, grabatzea, editatzea eta erreproduzitzea, banaka edo taldeka, zereginerako tresnarik egokienak hautatuz eta erabilera segurua, arduratsua eta etikoa ziurtatuz. 3. konpetentzia espezifikoa."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Soinuaren oinarri fisikoak eta musika-hizkuntzaren ezagutza espezifikoak txertatzea musika-konposizio eta -ekoizpen txikietan baliabide digitalen bitartez."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Programa eta aplikazio informatikoak behar bezala erabiltzea, garatu beharreko musika-proposamenen ezaugarrien eta adierazpen-beharren arabera, banaka edo taldean, errespetuz eta enpatiaz. 2023ko uztailaren 24a, astelehena 4. konpetentzia espezifikoa."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Diziplina anitzeko kolaborazio-proiektuak sortzen aktiboki parte hartzea, produkzio- rolak eta -zereginak modu inklusiboan hartuz, eta garapen pertsonalerako, sozialerako, akademikorako edo profesionalerako aukerak identifikatuz."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Arte-sorkuntzako zereginetan ekimenez eta erantzukizunez eskuratutako ezagutza teknologikoak aplikatzea, berrikuntza- eta iraunkortasun-irizpideak kontuan hartuz."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. SOINUA. MUSIKA HIZKUNTZA",
+      "titulo": "SOINUA. MUSIKA HIZKUNTZA",
+      "items": [
+        "Soinuaren oinarri fisikoak eta audioaren eboluzioa gaur egunera arte.",
+        "Uhin-formak, maiztasuna, anplitudea. Soinu sinpleak eta konplexuak.",
+        "Soinu-mailak. Osasunerako eta ingurumen-segurtasunerako garrantzia.",
+        "Soinu elektronikoak eta elektroakustikoak.",
+        "Musika-hizkuntzaren oinarrizko kontzeptuak. Aplikazio praktikoa informatika musikaleko programetan."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. MUSIKAREN GRABAZIOA, EDIZIOA ETA ERREPRODUKZIOA",
+      "titulo": "MUSIKAREN GRABAZIOA, EDIZIOA ETA ERREPRODUKZIOA",
+      "items": [
+        "Soinua grabatzeari, editatzeari eta erreproduzitzeari buruzko oinarrizko nozioak.",
+        "Soinua grabatzeko formatuak.",
+        "Erreproduzigailu motak, euskarriak eta musika-artxiboak. Biltegiratzea, fitxategiak bihurtzea eta euskarri batetik besterako aldaketa.",
+        "Soinuak editatzeko eta musika-sorkuntzan aplikatzeko programak.",
+        "Sintesi-soinuak sortzeko programak.",
+        "Musika-produkzioaren hastapenak: grabazioa hainbat pistatan, ekualizazioa, iragazkien eta efektuen aplikazioa, nahasketa.",
+        "Erabilera-lizentziak eta egile-eskubideak."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. MUSIKA SORKUNTZA",
+      "titulo": "MUSIKA SORKUNTZA",
+      "items": [
+        "Musika-eduki digitalen sorkuntza genero-estereotiporik gabe.",
+        "Teknika, baliabide eta korronte estetiko nagusien oinarrizko ezagutza.",
+        "Hainbat arte-hizkuntza estimatzeko jarrera.",
+        "Ekintzailetza, iraunkortasuna, malgutasuna eta sormena diziplina anitzeko proposamenak egitean.",
+        "Ingurune digitalarekin lotutako problemak ebazteko jakin-mina eta ekimena.",
+        "Kultura-aniztasunaren eta haren adierazpen- eta komunikazio-moduen balorazioa."
+      ],
+      "codigos_items": []
+    }
+  ],
+  "comunidad": "pais-vasco",
+  "idioma": "eu"
+}

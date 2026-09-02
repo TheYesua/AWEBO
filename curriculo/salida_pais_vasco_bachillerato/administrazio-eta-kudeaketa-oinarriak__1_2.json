@@ -1,0 +1,155 @@
+{
+  "materia_oficial": "ADMINISTRAZIO ETA KUDEAKETA OINARRIAK",
+  "materia": "Administrazio eta Kudeaketa Oinarriak",
+  "etapa": "Bachillerato",
+  "ciclo": "Único",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato",
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Inguruneko informazio ekonomikoa aztertzea, berrikuntza- eta digitalizazio faktoreak baloratuz, negozio-ideia bideragarria hautatzeko zenbait dinamikaren bidez.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Forma juridikoak eta legezko tramiteak identifikatzea, horiek zer erakundetan aurkeztu behar diren ezagutuz, enpresa abian jartzeko beharrezkoa den dokumentazioa behar bezala kudeatzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Kontabilitate-zikloaren garapena ulertzea, Kontabilitate Plan Orokorrean ezarritako irizpideak betez, enpresaren irudi fidela islatzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Modu kritikoan eta gogoetatsuan analizatzea sailen funtzionamendu koordinatua, horietako bakoitzarentzat plan osagarriak prestatuz, enpresak hasiera batean planteatutako helburuak eta xedeak lortzeko. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Beharrezkoa den inbertsioa eta enpresaren finantza-beharrak zehaztea, enpresak finantzaketa-iturriak baliatu ahal izatea baloratuz, enpresaren bideragarritasuna ziurtatzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Komunikazio-trebetasunak garatzea, tresna informatikoak eta ikus-entzunezkoak erabiliz, enpresa proiektua jendaurrean azaltzeko eta komunikatzeko.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Inguruneko informazio ekonomikoa, soziala, kulturala eta abar aztertzea, berrikuntzak eta teknologiak enpresa-jardueran betetzen duten funtsezko zeregina baloratuz."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Negozio-ideia hautatzea, aukeraketa hori modu teknikoan arrazoituz, behin abantailak eta eragozpenak aztertu ondoren."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Behar den dokumentazioa indarreko legediaren arabera betetzea, dokumentazioa aurkeztu behar den erakunde egokiak ezagutuz eta hori betetzea Gizarte Erantzukizun Korporatiboaren printzipiotzat hartuz."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Enpresaren forma juridikoa hautatzea, aukeraketa horren egokitasuna argudio bidez justifikatuz."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Enpresaren eragiketen ondoriozko kontabilitate-egitateak Kontabilitate Plan Orokorraren printzipioen arabera kontabilizatzea, kontabilitate-aplikazio informatikoa oinarrizko mailan erabiliz."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Enpresaren azken helburuekin koherentea izango den eta koordinatuko den hornikuntzaplana diseinatzea, enpresarentzako hornitzailerik egokienak aukeratuz eta haiekin komunikatzeko prozesuan sortutako dokumentazioa behar bezala administratuz."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Produktuen merkaturatzea garatuko duen marketin-plana egitea, produktu horiek saltzeko merkataritza-prozesuan sortutako dokumentazioa eraginkortasunez erabiliz."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Enpresako langile-beharrak ebaluatzea eta lanpostu horien eginkizunak deskribatzea, hautespen-, prestakuntza- eta ordainketa-prozesuan sortutako dokumentuak aztertuz."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Inbertsio-plana prestatzea, beharrezkoak diren finantzaketa-iturriak baloratuz eta hautatuz."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Enpresaren bideragarritasuna zehaztea, zenbait metodo aplikatuz, analisi-ikuspegien arabera."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Komunikazio-trebetasunak erabiltzea negozio-plana aurkezteko, proiektua eraginkortasunez hedatzen lagunduko duten tresna informatiko eta ikus-entzunezko erakargarriak erabiliz."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Negozio-ideia: enpresa-proiektua",
+      "titulo": "Negozio-ideia: enpresa-proiektua",
+      "items": [
+        "1. Enpresaburuaren eta ekintzailearen irudiaren aitorpena. Enpresa-arriskua. Euskal enpresa-kultura*.",
+        "2. Genero-rolen haustura enpresa-jardueran.",
+        "3. Berrikuntza eta digitalizazioa.",
+        "4. Lokalizazioa eta enpresaren ingurunearen analisia*.",
+        "5. Sormena, ideiak eta soluzioak; negozio-ideiak hautatzeko dinamikak.",
+        "6. Egungo enpresa-erronkak: etika, Gizarte Erantzukizun Korporatiboa eta Garapen Iraunkorrerako Helburuak. *Euskal gizartearen konpromisoa 2030 Agendarekin, Garapen Iraunkorrerako Helburuak betetzeko*."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Enpresa abian jartzea: forma juridikoa, administrazio- eta kontabilitatetramiteak",
+      "titulo": "Enpresa abian jartzea: forma juridikoa, administrazio- eta kontabilitatetramiteak",
+      "items": [
+        "1. Enpresen forma juridikoak*.",
+        "2. Enpresa-esparru juridikoa. Enpresaren zerga- eta lan-arloko betebeharrak halabeharrez bete izanaren balorazioa; *euskal zerga-sistema*. Gizarte Segurantza.",
+        "2023ko uztailaren 24a, astelehena 3. Kontabilitate Plan Orokorra. Enpresaren informazioa: *kontabilitate-betebeharrak*. Ondarearen osaera eta balorazioa.",
+        "Urteko kontuak eta irudi fidela. Balantzearen elaborazioa eta galdu-irabazien kontua. Kontabilitate-liburuak. Kontabilitate-",
+        "tresna informatikoak."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Enpresen barne-antolaketa: sailak eta beren funtzioak",
+      "titulo": "Enpresen barne-antolaketa: sailak eta beren funtzioak",
+      "items": [
+        "1. Merkataritza-saila*. Marketin Mixeko politikak (produktua, prezioa, sustapena eta banaketa). Fakturazioa (deskontuak, garraioak, ontziak).",
+        "2. Hornikuntza-saila*. Plangintza, negoziazioa eta hornitzaileen aukeraketa. Salerosketaeragiketen dokumentazioaren formalizazioa (eskaerak, albaranak eta fakturak), baita ordainketa-bitartekoena ere (ordainagiriak, kanbio-letrak eta txekeak).",
+        "3. Giza baliabideen saila*. Plangintza, aukeraketa eta langileen kontratazioa. Talde arinen osaera eta funtzionamendua.",
+        "Ordainketa- eta kontratazio-prozesuaren dokumentuak. Enpresetan berdintasun- eta inklusio-plan bat lantzearen beharraren onarpena.",
+        "4. Inbertsio- eta finantza-saila*. Inbertsio-plana eta diruzaintzako aurrekontua egiteko prozedura. Finantzaketa-iturrien aukeraketa. Finantza-bitartekarien zeregina.",
+        "Merkataritza- eta ingurumen-bideragarritasuna uztartzeko konpromisoa."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Negozio-ideiaren garapenaren jendaurreko erakusketa",
+      "titulo": "Negozio-ideiaren garapenaren jendaurreko erakusketa",
+      "items": [
+        "1. Negoziazio- eta komunikazio-teknikak*.",
+        "2. Proiektu edo ideia baten aurkezpen eraginkor eta laburraren garrantziaren balorazioa*. Metodologia: istorioen kontaketa (storytelling) eta igogailuko diskurtsoa (elevator pitch)."
+      ],
+      "codigos_items": []
+    }
+  ],
+  "comunidad": "pais-vasco",
+  "idioma": "eu"
+}

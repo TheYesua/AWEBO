@@ -1,0 +1,114 @@
+{
+  "materia_oficial": "KORU ETA AHOTS-TEKNIKA",
+  "materia": "Koru eta Ahots-teknika",
+  "etapa": "Bachillerato",
+  "ciclo": "1º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Estilo, genero eta kultura ezberdinetako lanak aktiboki entzutea eta ikuskatzea, beren estilo- eta interpretazio-espezifikotasunak lengoaia tekniko egoki baten bitartez aztertuz, iritzi estetikoa garatzeko, entzute aktiboaren ohitura bultzatzeko eta musikaz kultura- eta arte-aniztasunaren iturri gisa gozatzeko izango dituzten aukerak handitzeko. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Ahoz eta gorputzez adieraztea eta komunikatzea, indibidualki edo taldeka, hainbat teknika aplikatuz eta inprobisazioak eginaz, autoestimua eta autokonfiantza indartzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Musika-estilo eta genero-ezberdinetako lanak interpretatzea, ahots talde ezberdinetan parte hartuz, komunikazio artistiko aberats bat, emozioen adierazpena eta balio kolektiboen garapena indartzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Diziplina anitzeko proiektuak sortzea, berritzaileak eta iraunkorrak, ekoizpenak berezko dituen rol eta zeregin ezberdinak hartuz eta bide eta euskarri anitzak erabiliz, norberaren hazkunde artistikoa bultzatzeko, kultura-ingurunea aberasteko eta garapen pertsonal, sozial, akademiko edo profesionalerako aukerak identifikatzeko. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Ahozko lanak aztertzea, era arrazoituan eta abegitsuan azalduz lan hori estilo, genero edo kultura zehatz bati lotzen duten ezaugarriak azalduz, bai eta interpretazioaren eta eszenaratzearen beste ezaugarri batzuk ere. 2. Konpetentzia espezifikoa."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Inprobisatzea eta ahoz eta gorputzez ariketak adieraztea, indibidualki zein taldeka, ahotsa eta gorputza zaintzeko teknikak aplikatuz eta autoestimua eta autokonfiantza indartuz. 3. Konpetentzia espezifikoa."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Ahots talde ezberdinetan parte hartzea, elkarlanean eta enpatiaz, musika-estilo eta -genero ezberdinetako lanak interpretatuz eta zuzendariaren jarraibideak aintzat hartuz."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Eszena-jarrera egokia eta publikoarekiko begirunea agertzea antzezpenetan."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Aktiboki parte hartzea proiektu eszenikoen muntaian, geroz eta autonomia handiagoa agertuz eta rol eta eginkizun ezberdinak hartuz, indibidualki zein talde-lanaren barruan."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Analisia",
+      "titulo": "Analisia",
+      "items": [
+        "Hiztegi espezifikoa.",
+        "Entzute aktiborako estrategiak.",
+        "Hautatutako musika-estilo, -genero eta -kulturen funtsezko ezaugarriak.",
+        "Ahotserako lan errazak, mendebaldeko aldi eta estilo ezberdinetakoak, bai eta beste kultura-eremu batzuetakoak eta herrikoiak ere."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Ahots-teknika",
+      "titulo": "Ahots-teknika",
+      "items": [
+        "Erlaxazioa eta kontzentrazioa praktikatzeko estrategiak.",
+        "Ahotsa eta gorputzaren jarrera zaintzeko estrategiak.",
+        "Ahots produkzioaren osagaiak: arnasketa, emisioa, artikulazioa, erresonantziak eta dinamika.",
+        "Ahots erregistroak. Tesitura eta koloratura. Afinazioa eta enpastea taldean.",
+        "Gorputz adierazpenerako teknikak. Ahots emisioaren eta mugimenduaren arteko harremana.",
+        "Bokalizazioak eta inprobisazioak.",
+        "Belarri harmonikoa eta afinazioa: tarte melodikoen eta harmoniko errazen intonazioa."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Talde-praktika",
+      "titulo": "Talde-praktika",
+      "items": [
+        "Taldearen soinua: arnasketa, ekitea, afinazioa, artikulazioa, erritmoa, fraseatzea eta dinamika. Ahotsen eta soinu-planoen arteko oreka.",
+        "Taldeko inprobisazioa garatzeko oinarriak.",
+        "Gorputz-perkusioa eta beste diseinu koreografiko batzuk.",
+        "Notazio konbentzionala eta ez konbentzionala duten partituren oinarrizko irakurketa egiteko estrategiak.",
+        "Musika-memoria.",
+        "Konpromisoa taldearen helburuekiko.",
+        "Zuzendaritza koralaren oinarrizko jarraibideak eta keinuak.",
+        "Isiltasuna, musika-interpretazioaren eta -entzutearen esparru gisa.",
+        "Mendebaldeko aldi eta estilo ezberdinetako eta beste kultura-arlo batzuetako koru-errepertorioa, oinarrizko maila, musika-",
+        "tresnen laguntzarekin edo laguntzarik gabe.",
+        "Testua eta bere metrika, artikulazioaren, abiaduraren eta erritmo-zorroztasunaren oinarri.",
+        "Jarrera eszenatokian eta publikoarekiko harremana.",
+        "Bitarteko analogiko eta digitalak era kritikoan, seguruan eta arduratsuan erabiltzeko estrategiak, datuen babesa, jabetza intelektuala eta egile-eskubideak errespetatzeko jarraibideak.",
+        "Aniztasuna kultura- eta arte-aberastasunaren iturri gisa baloratzeko estrategiak.",
+        "Sorkuntza- eta interpretazio-prozesuetan autokonfiantza, autoestimua, ekimena eta lidergoa indartzeko estrategiak.",
+        "Sentimenduak, emozioak eta ideia artistikoak adierazteko eta komunikatzeko trebetasunak."
+      ],
+      "codigos_items": []
+    }
+  ],
+  "comunidad": "pais-vasco",
+  "idioma": "eu"
+}

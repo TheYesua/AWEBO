@@ -1,0 +1,168 @@
+{
+  "materia_oficial": "MARRAZKETA TEKNIKOA",
+  "materia": "Marrazketa Teknikoa",
+  "etapa": "Bachillerato",
+  "ciclo": "1º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Arkitekturako edo ingeniaritzako elementuak edo multzoak aztertzea, erabilitako egitura geometrikoak eta elementu teknikoak aztertuz, pentsamendu dibergentea sortzailea garatzeko eta haien estimazioa eta kontserbazioa sustatzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Problema grafiko-matematikoetan arrazoibide induktiboak, deduktiboak eta logikoak erabiltzea, geometria lauaren oinarriak aplikatuz eta haiek gauzatzeko zorroztasuna erabiliz, eragiketa matematikoak, erlazioak, eraikuntzak eta transformazioak grafikoki ebazteko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Ikuspegi espaziala garatzea, proiektu sinpleetan geometria deskribatzailea erabiliz, marrazketak arkitekturan eta ingeniaritzetan duen garrantzia kontuan hartuz, problemak ebazteko eta planoan hiru dimentsioko errealitatea interpretatzeko eta grafikoki birsortzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Diseinu teknikoak formalizatzea, definitzea eta lantzea, UNE ISO arauak era egokian aplikatuz eta krokisak duen garrantzia baloratuz, arkitektura- eta ingeniaritza-proiektuak grafikoki dokumentatzeko. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Elementu, plano eta eskema teknikoak digitalki ikertzea, esperimentatzea eta irudikatzea CAD programa espezifikoak bakarka edo taldean erabiltiz, egungo lanbideetan duten erabilera balioetsiz, 2 eta 3 dimentsioko objektuak eta espazioak birtualizatzeko.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Matematikak eta marrazketa geometrikoak historian izan duten erlazioa azaltzea, hiztegi espezifikoa behar bezala erabiliz, hainbat esparrutan (hala nola arkitekturan eta ingeniaritzan) duten garrantzia baloratuz eta genero-ikuspegitik eta kultura-aniztasunetik abiatuz."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Hainbat arkitektura- eta ingeniaritza-multzoren egitura geometrikoak eta elementu teknikoak aztertzea, alderdi berari emandako erantzun tekniko desberdinak eta haien kontserbazioaren garrantzia baloratuz."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Kalkulu matematikoak eta oinarrizko transformazioak grafikoki egitea, geometria lauaren kontzeptuak eta propietateak zehaztasunez, argitasunez eta garbitasunez aplikatuz."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Eraikuntza poligonalak grafikoki trazatzea, haien propietateetan oinarrituz eta zehaztasunarekiko, argitasunarekiko, garbitasunarekiko eta ongi egindako lanarekiko interesa agertuz."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Ukitzaileak grafikoki ebaztea eta kurbak marraztea, haien propietateak aplikatuz, horiek gauzatzen zorroztasunez jokatuz"
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Espazioko oinarrizko elementuak sistema diedrikoan irudikatzea, haien pertenentzia-erlazioa, posizioa eta distantzia zehaztuz eta arrazoibideetan zorroztasuna agertuz."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Elementu eta figura lauak sistema axonometrikoan definitzea, haren oinarriak aplikatuz eta espazioa irudikatzeko metodo gisa duen garrantzia baloratuz."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Plano akotatuen sisteman oinarrizko elementuak irudikatzea eta interpretatzea, haren oinarriak erabiliz eta egindako prozesuari eta lortutako emaitzari buruzko gogoeta eginez."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "3",
+      "descripcion": "Elementuak perspektiba konikoan marraztea, beharrezkoak diren ezagutza teknikoak aplikatuz eta prozesuan beharrezkoa den zorroztasun grafikoa eta ongi egindako lana baloratuz."
+    },
+    {
+      "codigo": "3.5",
+      "competencia": "3",
+      "descripcion": "Dauden irudikapen-sistemetan marraztea, prozesuan beharrezkoa den zorroztasun grafikoa eta ebazpen eta eraikuntza grafikoko prozesuaren argitasuna eta zehaztasuna baloratuz."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Objektu sinpleak haien bista akotatuen bidez grafikoki dokumentatzea, sintaxia, eskalak eta formatuak erabiltzean UNE ISO araudia aplikatuz, hizkuntza tekniko komun bat erabiltzearen garrantzia baloratuz eta zehaztasunarekiko interesa agertuz."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Krokisa eta zirriborroa gogoeta-elementu gisa erabiltzea lan-prozesuetarako alternatiba eta soluzioetara hurbiltzean eta haiek ikertzean."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Marrazketa bektorialeko programen bidez figura lauak eta hiru dimentsiokoak sortzea, eskaintzen dituzten tresnak eta lotutako teknikak modu seguru eta arduratsuan erabiliz."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Hiru dimentsioko piezak birtualki birsortzea, taldekako proiektuak aurkezteko jatorrizkoen arteko eragiketa aljebraikoak aplikatuz, enpatia agertuz eta dauden ikuspuntuak kontuan hartuz."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Oinarri geometrikoak",
+      "titulo": "Oinarri geometrikoak",
+      "items": [
+        "Marrazketa teknikoaren garapen historikoa, genero-ikuspegia eta kultura-aniztasuna kontuan hartuz. Ekintza-esparruak eta aplikazioak: marrazketa arkitektonikoa, mekanikoa, elektrikoa eta elektronikoa, geologikoa, hirigintzakoa eta abar eraikuntzetan.",
+        "Geometria laua.",
+        "Geometriaren jatorria. Tales, Pitagoras, Euklides, Hipatia Alexandriakoa.",
+        "Leku geometrikoaren kontzeptua eta aplikazioa. Arku kapaza. Leku geometrikoen aplikazioak oinarrizko eraikuntzetan.",
+        "Proportzionaltasuna, baliokidetasuna eta antzekotasuna.",
+        "Triangeluak, laukiak eta poligono erregularrak. Propietateak eta eraikuntza-metodoak.",
+        "Oinarrizko ukitzaileak. Kurba teknikoak."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Geometria proiektiboa",
+      "titulo": "Geometria proiektiboa",
+      "items": [
+        "Geometria proiektiboaren oinarriak.",
+        "Sistema diedrikoa. Oinarriak eta oinarrizko elementuak. Puntuaren, zuzenaren eta planoaren irudikapena. Proiekzio-planoen bidezko aztarnak. Planoaren zehaztapena. Pertenentzia.",
+        "Elementuen arteko erlazioak: ebakidurak, paralelismoa eta elkarzutasuna. Distantzien lorpena.",
+        "Sistema axonometriko eta zeiharra. Perspektiba isometrikoa eta Cavalieri perspektiba. Ardatzen antolaera eta erredukzio-",
+        "koefizienteen erabilera. Oinarrizko elementuak: puntua, zuzena, planoa.",
+        "Plano akotatuen sistema. Oinarriak eta oinarrizko elementuak.",
+        "Planoetan interpretatzeko elementuen identifikazioa.",
+        "Sistema konikoa: sistemaren oinarriak eta elementuak. Aurretiko perspektiba eta perspektiba zeiharra."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Normalizazioa eta proiektuen dokumentazio grafikoa",
+      "titulo": "Normalizazioa eta proiektuen dokumentazio grafikoa",
+      "items": [
+        "Zenbakizko eskala eta eskala grafikoa. Eraikuntza eta erabilera.",
+        "Formatuak. Planoen tolestea. “Normalizazio” kontzeptua. Oinarrizko arauak: UNE, ISO.",
+        "Normalizazioaren aplikazioak: sinbologia industriala eta arkitektonikoa.",
+        "Beharrezko bistak hautatzea. Linea normalizatuak. Akotazioa."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. CAD sistemak",
+      "titulo": "CAD sistemak",
+      "items": [
+        "2-3 dimentsioko aplikazio bektorialak.",
+        "3 dimentsioko piezen diseinu-oinarriak.",
+        "Kaxa-modelatzea. Oinarrizko eragiketak jatorrizkoekin.",
+        "Pieza sinpleekin pieza konplexuak osatzeko talde-laneko aplikazioak."
+      ],
+      "codigos_items": []
+    }
+  ],
+  "comunidad": "pais-vasco",
+  "idioma": "eu"
+}

@@ -1,0 +1,159 @@
+{
+  "materia_oficial": "MARRAZKETA TEKNIKOA",
+  "materia": "Marrazketa Teknikoa",
+  "etapa": "Bachillerato",
+  "ciclo": "2º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Arkitekturako edo ingeniaritzako elementuak edo multzoak aztertzea, erabilitako egitura geometrikoak eta elementu teknikoak aztertuz, pentsamendu dibergentea sortzailea garatzeko eta haien estimazioa eta kontserbazioa sustatzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Problema grafiko-matematikoetan arrazoibide induktiboak, deduktiboak eta logikoak erabiltzea, geometria lauaren oinarriak aplikatuz eta haiek gauzatzeko zorroztasuna erabiliz, eragiketa matematikoak, erlazioak, eraikuntzak eta transformazioak grafikoki ebazteko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Ikuspegi espaziala garatzea, proiektu sinpleetan geometria deskribatzailea erabiliz, marrazketak arkitekturan eta ingeniaritzetan duen garrantzia kontuan hartuz, problemak ebazteko eta planoan hiru dimentsioko errealitatea interpretatzeko eta grafikoki birsortzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Diseinu teknikoak formalizatzea, definitzea eta lantzea, UNE ISO arauak era egokian aplikatuz eta krokisak duen garrantzia baloratuz, arkitektura- eta ingeniaritza-proiektuak grafikoki dokumentatzeko. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Elementu, plano eta eskema teknikoak digitalki ikertzea, esperimentatzea eta irudikatzea CAD programa espezifikoak bakarka edo taldean erabiltiz, egungo lanbideetan duten erabilera balioetsiz, 2 eta 3 dimentsioko objektuak eta espazioak birtualizatzeko.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Arkitektura eta ingeniaritza garaikideetan egitura geometrikoek eta elementu teknikoek izan duten bilakaera aztertzea, aurrerabide teknologikoak eta irudikapen- eta modelatze-teknika digitalek arkitekturan eta ingeniaritzan duten eragina baloratuz."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Hainbat arkitektura- eta ingeniaritza-multzoren egitura geometrikoak eta elementu teknikoak aztertzea, alderdi berari emandako erantzun tekniko desberdinak eta haien kontserbazioaren garrantzia baloratuz."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Figura lauak eraikitzea, transformazio geometrikoak aplikatuz, irudikapen-sistemetan duten erabilgarritasuna baloratuz eta egikaritzean zorroztasuna erabiliz."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Ukitzaileak ebaztea, “potentzia” kontzeptuak zehaztasunez egikaritzeko jarrera batekin aplikatuz."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Kurba konikoak eta haien zuzen ukitzaileak trazatzea, propietateak eta eraikuntza-metodoak aplikatuz eta zehaztasunarekiko interesa agertuz."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Problema geometrikoak eraispen, biraketa eta plano-aldaketen bidez ebaztea, arrazoibideetan zorroztasuna agertuz eta erabilitako metodoei eta lortutako emaitzei buruzko gogoeta eginez."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Gorputz geometrikoak eta biraketa-gorputzak irudikatzea, sistema diedrikoaren oinarriak aplikatuz eta zehaztasuna eta ongi egindako lana baloratuz."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Hiru dimentsioko errealitatea irudikatzea solidoak perspektiba axonometrikoan eta konikoan irudikatzearen bidez, prozesuaren zehaztasun grafikoa eta sistema horiek arkitekturan eta ingeniaritzan duten erabilera baloratuz."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "3",
+      "descripcion": "Proiektu grafiko sinpleak plano akotatuen sistemaren bidez garatzea, sistema horri buruzko ezagutza espezifikoak aplikatuz eta egikaritzean zehaztasuna eta garbitasuna agertuz."
+    },
+    {
+      "codigo": "3.5",
+      "competencia": "3",
+      "descripcion": "Dauden irudikapen-sistemetan marraztea, ebazpen eta eraikuntza grafikoko prozesuaren argitasuna eta zehaztasuna baloratuz."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Hainbat eremutako proiektuetarako dokumentazio grafiko egokia lantzea, diseinu teknikoak formalizatuz eta definituz, arauen araberako krokisak eta planoak erabiliz, eta zehaztasunarekiko interesa erakutsiz."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Krokisa eta zirriborroa gogoeta-elementu gisa erabiltzea lan-prozesuetarako alternatiba eta soluzioetara hurbiltzean eta haiek ikertzean."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Objektuak eta eraikuntzak irudikatzean euskarri digitala kritikoki, etikoki eta arduraz eta CAD aplikazioen bidez integratzea, tresna horiek marrazketarako eta kolaborazio-lanerako ematen dituzten aukerak baloratuz."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Hiru dimentsioko piezak birtualki birsortzea, taldekako proiektuak aurkezteko jatorrizkoen arteko eragiketa aljebraikoak aplikatuz, enpatia agertuz eta dauden ikuspuntuak kontuan hartuz."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Oinarri geometrikoak",
+      "titulo": "Oinarri geometrikoak",
+      "items": [
+        "Geometria arkitekturan eta ingeniaritzan, industria-iraultzaz geroztik. Garapen teknologikoan eta forma berrien eraikuntzari aplikatutako teknika digitaletan lortutako aurrerapenak.",
+        "Transformazio geometrikoak: homologia eta afinitatea. Irudikapen-sistemetan problemak ebazteko aplikazioa.",
+        "Puntu baten potentzia zirkunferentzia batekiko. Ardatz erradikala eta zentro erradikala. Aplikazioak tangentzietan.",
+        "Kurba konikoak: elipsea, hiperbola eta parabola. Propietateak eta eraikuntza-metodoak. Zuzen ukitzaileak. Trazadura tresna digitalekin eta gabe."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Geometria proiektiboa",
+      "titulo": "Geometria proiektiboa",
+      "items": [
+        "Sistema diedrikoa. Planoetan dauden figurak. Eraispenak eta benetako magnitudeak. Biraketak eta plano-aldaketak. Aplikazioak. Gorputz geometrikoen irudikapena: prismak eta piramideak. Sekzio lauak eta sekzioaren benetako magnitudeak.",
+        "Biraketa-gorputz zuzenen irudikapena: zilindroak eta konoak. Poliedro erregularren irudikapena: tetraedroa, hexaedroa eta oktaedroa.",
+        "Sistema axonometrikoa, ortogonala eta zeiharra. Figuren eta solidoen irudikapena.",
+        "Plano akotatu sistema. Estalki sinpleen problemen ebazpena. Lur-profilen edo lur-sekzioen irudikapena haien sestra-kurbetatik abiatuz.",
+        "Perspektiba konikoa. Solidoen eta hiru dimentsioko formen irudikapena haien bistetatik abiatuz."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Normalizazioa eta proiektuen dokumentazio grafikoa",
+      "titulo": "Normalizazioa eta proiektuen dokumentazio grafikoa",
+      "items": [
+        "Industria-gorputz eta industria-pieza sinpleen irudikapena. Tailerreko krokisak eta planoak. Ebakidurak, sekzioak eta hausturak. Perspektiba normalizatuak.",
+        "Diseinua, ekologia eta iraunkortasuna.",
+        "Kolaborazioan egiteko proiektuak. Ingeniaritza- edo arkitektura proiektu sinple baten dokumentazio grafikoa lantzea..",
+        "Muntaketa-plano sinpleak. Lantzeko eta interpretatzeko jarraibideak."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. CAD sistemak",
+      "titulo": "CAD sistemak",
+      "items": [
+        "CAD aplikazioak. Eraikuntza grafikoak euskarri digitalean."
+      ],
+      "codigos_items": []
+    }
+  ],
+  "comunidad": "pais-vasco",
+  "idioma": "eu"
+}

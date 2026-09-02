@@ -1,0 +1,174 @@
+{
+  "materia_oficial": "GIZA ANATOMIA ETA FISIOLOGIA",
+  "materia": "Giza Anatomia eta Fisiologia",
+  "etapa": "Bachillerato",
+  "ciclo": "Único",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato",
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Giza gorputza “makroegitura global” gisa ulertzea, antolaketa estrukturalaren mailak identifikatuz, giza gorputza osagaiak erlazionatuta eta koordinatuta dituen unitate biologiko gisa aurkezteko. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Informazio zientifikoa bilatzea, hautatzea, interpretatzea eta transmititzea, hainbat baliabide eta euskarri erabiliz eta terminologia eta hizkuntza egokia baliatuz, problemak ebazteko eta ikerketa anatomiko-funtzional txikiak egiteko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Giza gorputzaren errealitatea azaltzeko eskemak eta ereduak egitea, kontzeptu, printzipio eta estrategiak erabiliz egitura anatomikoak eta horien funtzioa ezagutzeko eta hobeto ulertzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Anatomiaren eta fisiologiaren zientzia gisako izaera ezagutzea, beste zientzia eta adierazpen artistiko batzuekin duten erlazioa baloratuz, pertsonen prestakuntza integralerako ekarpenak eta gizartearen gaineko ondorioak aintzat hartzeko. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Laborategian arakatzeko eta problemak ebazteko trebetasunak eta abileziak garatzea, anatomia eta fisiologiako lan esperimentalak eginez, ezagutza eraikitzeko eta ereduak azaltzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Anatomiaren eta fisiologiaren ezagutza giza gorputza zaintzeko zein garrantzitsua den ulertzea, osasunaren eta bizi-hobekuntzaren aldeko ekintzak identifikatuz, ohitura osasungarriak, arduratsuak eta iraunkorrak hartzeko.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Giza gorputzaren egitura eta funtzioa ulertzea, bizitzaren etapetan eta sexuen arabera, analogiak eta desberdintasunak azalduz."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Giza organismo osasuntsuaren aparatu eta sistemen eta gizakiarengan homeostasia mantentzen laguntzen duten kontrol-mekanismo fisiologikoen funtzionamendua ulertzea eta deskribatzea modu arrazoituan."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Giza gorputzaren funtzionamendua interpretatzea, haren antolaketa-mailak osatzen dituzten eta unitate estruktural eta funtzional gisa ezaugarritzen duten elementuen integrazio anatomiko eta funtzionalaren emaitza gisa modu arrazoituan."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Problema eta kasu fisiopatologikoak ebaztea, fisiologiaren ezagutza teorikoak eta praktikoak aplikatuz."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Fisiologiako problemak ebaztea informazio zientifikoaren bilaketa, tratamendu eta komunikazio egokiaren bidez eta iturri egiazkoen eta fidagarrien aipamenaren eta erabileraren bidez."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Dokumentu-ikerketa txikiak eta kasuak ebaztekoak egitea, bakarka edo taldean, hizkuntza eta terminologia zehaztasunez eta zuzentasunez erabiliz. 2023ko uztailaren 24a, astelehena"
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Egitura anatomikoen funtzionamendua azaltzea, zenbait bitarteko eta euskarri modu sortzailean erabiliz."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Organo, aparatu eta sistemen egitura anatomikoa eta funtzioa erlazionatzea, eskemak eta ereduak eginez haiek azaltzean."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Bizitzaren etapa bakoitzean aparatu eta sistemen funtzionamenduan dauden desberdintasun fisiologiko garrantzitsuenak identifikatzea, horien arteko erlazioak eta sortutako aldaketak analizatuz."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "3",
+      "descripcion": "Gaixotasunak giza gorputzaren egituran eta funtzioan dituen eraginak, mekanismoak eta adierazpenak ulertzea eta ezagutzea, giza gorputzaren funtzionamendu egokiarekin konparatuz."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Fisiologiak gure gorputza ezagutzeko egiten dituen ekarpenak baloratzea, osasunaren hobekuntzan eta zaintzan eta pertsonen prestakuntza integralean duen garrantzia eta gizartean dituen ondorioak identifikatuz."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Giza sistemen eta aparatuen egiturei eta funtzionamenduari buruzko ezagutza jarduera fisikoekin, kirol-jarduerekin eta jarduera artistikoekin erlazionatzea, jarduera horiei egiten dieten ekarpena baloratuz."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Sistemek eta aparatuek organismoaren funtzionamendu orokorrean betetzen duten zeregina identifikatzea, eguneroko jarduera fisikoen, kirol-jardueren eta gorputz-jarduera artistikoen gaineko errendimenduarekin erlazionatuz."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Esperimentu zientifikoetatik datozen datuak interpretatzea eta analizatzea —nutrizioa eta dietak, odol- eta gernu-analisiak…—, giza gorputzaren funtzionamenduari buruzko ereduei azalpenak emanez."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Fisiologiako problema praktikoak ebaztea, laginak, argazkiak, bideoak… behatuz, informazioa zorroztasunez bilatuz eta analizatuz eta soluzioari buruz hausnartuz."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Prozesu fisiologikoak eta patologikoak bereiztea, giza gorputzaren asalduei eta gaixotasunei buruzko ezagutzaren bidez."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Nutrizio- eta metabolismo-prozesuak deskribatzea, inplikatutako egiturak, jarduera fisikoarekiko erlazioa eta fisiopatologiak azalduz."
+    },
+    {
+      "codigo": "6.3",
+      "competencia": "6",
+      "descripcion": "Osasunean eta gorputz-jardueren errendimenduan eragin positiboa duten nutrizio-ohiturak baloratzea, nutrizio-portaeraren nahasmendurik ohikoenak eta osasunaren gainean dituzten ondorioak identifikatuz."
+    },
+    {
+      "codigo": "6.4",
+      "competencia": "6",
+      "descripcion": "Osasun arduratsuaren aldeko ekintzak identifikatzea, osasungarriak ez diren, gizartean onartu ohi diren eta organismoaren funtzionamendu egokian eragina duten ohiturekiko jarrera kritikoa erakutsiz."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "1. Giza Anatomia eta Fisiologia",
+      "titulo": "Giza Anatomia eta Fisiologia",
+      "items": [
+        "Ikerketa proiektuak edo kasuen ebazpena: Hipotesiak, galderak, problemak eta aieruak: ikuspegi zientifikoa duen planteamendua.",
+        "Informazioa bilatzeko, kolaboratzeko, komunikatzeko eta erakunde zientifikoekin interakzioan jarduteko estrategiak: tresna digitalak, eta prozesuak, emaitzak eta ideiak aurkezteko formatuak (diapositibak, grafikoak, bideoak, posterrak, txostenak Informazio-iturri fidagarriak: bilaketa, ezagutzea eta erabilera.",
+        "Laborategiko esperientzia zientifikoak: diseinua, plangintza eta gauzatzea.",
+        "Emaitza zientifikoak analizatzeko metodoak: antolaketa, irudikapena eta tresna estatistikoak.",
+        "Komunikazio zientifikoko estrategiak: hiztegi zientifikoa, formatuak (txostenak, bideoak, ereduak, grafikoak eta bestelakoak) Laborategiko esperientziak Odol- eta gernu-analisi klinikoen analisia.",
+        "2023ko uztailaren 24a, astelehena Gernu-analisi komertziala.",
+        "Elektrokardiogramen eta espirometrien analisia.",
+        "Kasu patologikoen eta fisiologikoen analisia.",
+        "Konstanteen neurketa (tenperatura, tentsioa, pultsua…) zenbait jarduera-egoeretan.",
+        "Laborategiko lan enpirikoaren berezko trebetasunak eta jarrerak. Kolaborazioa eta erantzukizuna.",
+        "Giza gorputzaren funtzionamendua Fisiologia orokorra. Homeostasia. Mintz plasmatikoan zeharreko garraioa.",
+        "Biomolekulak. Metabolismoa. Digestio-funtzioa, digestioaren fisiologia.",
+        "Zirkulazio-aparatuaren fisiologia: kardiobaskularra, fetala eta porta.",
+        "Arnas aparatuaren fisiologia.",
+        "Odola. Odol-zelulen funtzioak. Globulu gorriak: garraioa eta tanpoi-sistema. Plaketak: hemostasia eta koagulazio-prozesua.",
+        "Globulu zuriak: immunitatea.",
+        "Sistema linfatikoa. Linfa eta gongoil linfatikoak.",
+        "Nerbio-sistemaren fisiologia. Seinale elektrikoa. Nerbio-sistemaren komunikazioa. Sinapsia eta neurotransmisoreak.",
+        "Lokomozio-sistemaren fisiologia. Jarduera fisikoa eta kultura-adierazpena.",
+        "Hormonak eta sistema endokrinoa.",
+        "Osasuna eta gaixotasuna. Fisiopatologiak. Fisiopatologien prebentziora bideratutako ohitura osasungarriak. Transplanteak.",
+        "Aurrerapen medikoak eta teknologikoak."
+      ],
+      "codigos_items": []
+    }
+  ],
+  "comunidad": "pais-vasco",
+  "idioma": "eu"
+}

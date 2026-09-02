@@ -1,0 +1,245 @@
+{
+  "materia_oficial": "IRUDIA ETA SOINUA",
+  "materia": "Irudia eta Soinua",
+  "etapa": "Bachillerato",
+  "ciclo": "Único",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato",
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Ikusizko eta ikus-entzunezko hizkuntza onartzea mundua ezagutu eta ulertzeko bitarteko gisa, jakin-mina, errespetua eta irizpide propioa erakutsiz, hizkuntza horren bilakaeraz, gizartean duen funtzioaz eta gizarte-iruditerian eta identitate kolektiboan duen eraginaz gogoeta eginez, eta terminologia espezifikoa erabiliz, kultura aniztasuna aberastasun-iturri gisa baloratzeko, estereotipoak desagerrarazteko eta ikusizko eta ikus-entzunezko ondarea babesteko. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Ikusizko eta ikus-entzunezko ekoizpenak jarrera proaktibo eta kritikoz aztertzea, erabilitako hizkuntzak, bilatutako asmoa, mezua eta sortu diren testuingurua identifikatuz eta gai berari emandako irtenbideak zehaztuz, arte-prestakuntza zabaltzeko eta gozamen estetikoa sustatzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Ikusizko eta ikus-entzunezko hizkuntzako elementuak ezagutzea eta horiekin esperimentatzea, tresna digitalen aukerak barne, iraunkortasun- eta berrikuntza irizpideak erakutsiz, horien aukerak ezagutuz eta horien erabilera menderatuz eta trebetasuna eskuratuz, norberaren arte-errepertorioan txertatzeko eta lanean ahalegina eta jarraitutasuna baloratzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Ikusizko eta ikus-entzunezko obrak sormenez egitea, iraunkortasun- eta berrikuntza-irizpideak erakutsiz, bizi-esperientzietatik edo emandako gai batetik abiatuz, erabilitako elementuen eta tekniken erabilera argudiatuz, akatsa hobetzeko aukeratzat hartuz eta bere adierazpena hobetzeko, bere buruaren gaineko konfiantza eta ezagutza indartzeko eta autokritikarako gaitasuna areagotzeko. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Proiektu artistiko indibidualak edo kolektiboak egitea, faseak planifikatuz, proiektuaren beharretara egokitzen diren elementuak hautatuz, erantzukizunak bere gain hartuz eta besteen iritziak kontuan hartuz, sorkuntza artistikoak eta lan kolaboratiboak eskaintzen dituzten aukerak baloratzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Ikusizko eta ikus-entzunezko produkzioak hedatzea, sorkuntza-prozesua zein norberaren lan-prozesua bera eta azken emaitza ebaluatuz, baita espazio birtualen arriskuak eta onurak ebaluatuz ere, ikusleen erreakzioei buruz modu irekian eta errespetuz gogoeta egiteko.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Ikusizko eta ikus-entzunezko hizkuntza onartzea mundua ezagutzeko eta ulertzeko bitarteko gisa, jakin-mina eta errespetua erakutsiz, Historian izan duen bilakaerari eta gizartean betetzen duen funtzioari buruz gogoeta eginez eta berariazko hiztegia eta terminologia zuzen erabiliz. 2023ko uztailaren 24a, astelehena"
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Ikusizko eta ikus-entzunezko hizkuntzek identitate kolektiboen konfigurazioan duten eraginari buruz gogoeta egitea, norberaren irizpidearekin eta errespetuz, eta berariazko hiztegia eta terminologia zuzen erabiliz eta estereotipoak ezabatuz. 2. konpetentzia espezifikoa."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Ikusizko eta ikus-entzunezko zenbait ekoizpenetan erabilitako hizkuntzaren elementuak, ezaugarriak eta berezitasunak identifikatzea, baita gai berari emandako konponbideak ere, berariazko hiztegia eta terminologia erabiliz."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Ikusizko eta ikus-entzunezko ekoizpenak alderatzea, haien asmoa, mezua eta sortu diren testuingurua identifikatuz eta horiekin gozatuz. 3. konpetentzia espezifikoa."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Arduraz esperimentatzea zenbait teknika eta tresnarekin —digitalak barne—, haien adierazpen-aukerak ezagutuz eta ingurumenean duten eraginaz eta ondorengo birziklapenaz jabetuz"
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Ikusizko eta ikus-entzunezko ekoizpenak egitea, beharrezkoak diren bitartekoak, tresnak eta gaitasunak trebetasunez eta modu berritzailean erabiliz eta lanean ahalegin eta jarraitutasun jarrera hartuz. 4. konpetentzia espezifikoa."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Bizi-esperientzietatik abiatuta, ikusizko eta ikus-entzunezko obrak sortzea, iraunkoritasun- eta berrikuntza-irizpideak erabiliz, akatsa hobekuntza-aukera gisa onartuz, norberaren mugak aitortuz eta gainditzen saiatuz."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Ikusizko eta ikus-entzunezko ekoizpenak egitea, gai jakin bati buruzko norberaren ideiak eta sentimenduak sormenez adieraziz, erabilitako elementuak eta teknikak argudiatuz eta nork bere buruarekiko konfiantza indartuz. 5. konpetentzia espezifikoa."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Ikusizko eta ikus-entzunezko arloarekin lotzen diren lanbideen adibideak identifikatzea, eskaintzen dituzten aukerak ulertuz, sorkuntzak lanean duen balio erantsia ulertuz eta norberaren iritzia modu arrazoituan eta errespetuz adieraziz."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Proiektu artistiko indibiduala edo kolektiboa sortzea, faseak planifikatuz, erantzukizunak bere gain hartuz, proiektuaren beharretarako tresna eta teknikarik egokienak hautatuz eta lan kooperatiboa baloratuz."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "5",
+      "descripcion": "Prozesua eta azken produktua ebaluatzea, aldeko eta kontrako iritziak kontuan hartuz eta aurkitutako zailtasunak eta hartutako irtenbide teknikoak baloratuz 6. konpetentzia espezifikoa."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Ikusizko eta ikus-entzunezko ekoizpenak hedatzea, hedapenerako bideak hautatuz eta espazio digitalak modu kritiko, seguru eta arduratsuan erabiliz, sormen-prozesuan aurkitutako zailtasunak eta erdietsitako lorpenak partekatuz."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Modu irekian eta errespetuz aurkeztutako ikusizko eta ikus-entzunezko ekoizpenen harrera aztertzea, iritzi positiboak eta negatiboak kontuan hartuz, eta horretatik hazkunde artistikorako ikaskuntza ateraz."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Oinarri fisikoak eta pertzepziozkoak",
+      "titulo": "Oinarri fisikoak eta pertzepziozkoak",
+      "items": [
+        "Irudi-kontzeptua.",
+        "Analogia eta ikonikotasun-mailak. Irudikapen ikonikoak, askotariko kualitateak dituzten artifizio gisa.",
+        "Irudiaren atributu nagusiak: distira, kontrastea, saturazioa eta definizioa. Bereizketa eta aldakuntza.",
+        "Soinuaren izaera eta ezaugarriak: maiztasuna, tinbrea eta intentsitatea. Maiztasunaren eta intentsitatearen aldaketa.",
+        "Irudien kategorizazioa, erreferentearekiko analogia-mailari erreparatuta."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Irudiaren eta ikus-entzunezko ekoizpenen historia",
+      "titulo": "Irudiaren eta ikus-entzunezko ekoizpenen historia",
+      "items": [
+        "Argazkia: gela ilunetik tresna digitaletara.",
+        "Zinema: mugimenduaren ilusioaren aurrekariak, sorrera, masa-ikuskizuna, soinua eta kolorea.",
+        "Irratia: adierazpen-elementuak (ahotsa eta hizkuntza, musika eta motak, soinu efektuak).",
+        "Telebista: hasierako esperimentuetatik, lehen emisio erregularretara eta kolorera. Zuzeneko programak eta aurrez grabatuak. Norberaren eta besteen programak.",
+        "Bideoa: hasieratik egungo erabilerara."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "C.1",
+      "bloque": "C.1. Ikus-entzunezko erregistroa eta erreprodukzioa · Argazkia",
+      "titulo": "Ikus-entzunezko erregistroa eta erreprodukzioa · Argazkia",
+      "items": [
+        "Argazki-kamera: formatuak eta motak.",
+        "Egitura, zatiak eta funtzioak: bisorea,objektiboa, obturadorea, diafragma eta fotometroa.",
+        "Enkoadraketa.",
+        "Objektiboak: fokuratze-distantzia. Motak, ezaugarriak eta aplikazioak. Ikus-angelua eta perspektiba.",
+        "Eremu-sakonera: kontzeptua, fokuratze-distantziaren eta objektiboaren araberako aldaketa Argiztapena: argi naturala eta artifiziala, kolorearen tenperatura eta iragazkiak, zuzenekoa eta islatua, gogorra eta leuna, flasha, argiztapen-teknikak"
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "C.2",
+      "bloque": "C.2. Ikus-entzunezko erregistroa eta erreprodukzioa · Zinema",
+      "titulo": "Ikus-entzunezko erregistroa eta erreprodukzioa · Zinema",
+      "items": [
+        "Kamera eta euskarri zinematografikoak.",
+        "Trukoketa: agerpenak eta desagerpenak, gardentasunak, gainjartzeak eta erreserbak, eraldaketak, maketak.",
+        "Animazioa.",
+        "Soinu optikoa eta magnetikoa.",
+        "Muntaia, prozesu gisa."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "C.3",
+      "bloque": "C.3. Ikus-entzunezko erregistroa eta erreprodukzioa · Soinua",
+      "titulo": "Ikus-entzunezko erregistroa eta erreprodukzioa · Soinua",
+      "items": [
+        "Soinua erregistratzeko sistemak. Soinua sortzeko oinarrizko printzipioak.",
+        "Soinu-erreprodukzioa: soinu-iturriak eta seinale motak, anplifikadoreak eta bozgorailuak.",
+        "Soinu-seinaleak eta tratamendua.",
+        "Soinu-pertzepzioa; oinarrizko elementuak (erreberberazioa, distortsioa, intentsitatea…).",
+        "2023ko uztailaren 24a, astelehena"
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "C.4",
+      "bloque": "C.4. Ikus-entzunezko erregistroa eta erreprodukzioa · Bideoa",
+      "titulo": "Ikus-entzunezko erregistroa eta erreprodukzioa · Bideoa",
+      "items": [
+        "Irudiaren atzipena.",
+        "Bideo-kamera. Motak.",
+        "Bideo-seinalearen grabaketa eta erreprodukzioa.",
+        "Konexio eta seinale motak. Sarrerak eta irteerak.",
+        "Edizio elektronikoa edo bideo-seinalearen muntaia."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Garapen teknologikoa",
+      "titulo": "Garapen teknologikoa",
+      "items": [
+        "Transmisio-sistemak: airez eta kable bidez.",
+        "Bereizmen handiko bideoa eta telebista.",
+        "Irudia eta informatika. Irudi digitalizatua eta sorkuntza digitaleko irudia. Infografia. Argazki magnetikoa. Zuri-beltzeko filmen koloreztatzea.",
+        "Soinu eta teknologia digitala.",
+        "Errealitate berriak ikus-entzunezko informazioan, komunikazioan eta transmisioan: interaktibitatea eta biltegiratzea multimedia-euskarrietan —idatzizkoa, grafikoa, soinuduna eta ikusizkoa—, zuntz optikozko kableak, telekomunikaziosateliteak, irrati- eta telebista-transmisio digitala.",
+        "Errealitatearen pertzepzioa eta ikus-entzunezko berreraikuntza.",
+        "Ikus-entzunezko komunikazioa eta informazioa: objektibitatea eta subjektibitatea.",
+        "Ikus-entzunezko bitartekoen zeregina iritzi publikoaren konfigurazioan, informazioaren bidez.",
+        "Ikus-entzunezko informazioaren eta komunikazioaren eskuragarritasuna.",
+        "Hedapena: sare sozialak, areto komertzialak, erakusketa-espazio alternatiboak, Internet."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "E",
+      "bloque": "E. Adierazpen-baliabideak",
+      "titulo": "Adierazpen-baliabideak",
+      "items": [
+        "1- Espazioa eta osaera.",
+        "Enkoadraketa, errealitatearen hautespena.",
+        "Ikuspuntua eta angelu motak, planoak: adierazpen-balioak eta hautespena.",
+        "Irudi dinamikoa eta irudien segida.",
+        "2- Mugimendua.",
+        "Mugimendua enkoadraketaren barruan eta kameraren mugimendua.",
+        "Panoramika. Motak: horizontala, bertikala, zeiharra, zirkularra, ekortzea. Behar bezala lortzeko arauak.",
+        "Travelling-a. Motak: hurbilketakoa, urruntzekoa, akonpainamendukoa, zirkularra.",
+        "Garabia, espazio tridimentsionalean mugimenduak konbinatzeko aukerak. Teknologia berriak.",
+        "Kameraren mugimenduak ordenagailu bidez kontrolatzeko aplikazioa.",
+        "Zooma, mugimendu faltsu gisa.",
+        "3- Denbora dimentsioak.",
+        "Denbora kronometrikoa eta dramatikoa. Elipsia eta horren kausak.",
+        "Planoaren iraunaldia.",
+        "Eszena, sekuentzia eta plano/sekuentzia.",
+        "Iragate moduak: ebaketa, itzaltzea, itzaltze kateatua, desfokuratzeak eta desegiteak, ekortzea, errezel-efektua Kontakizun-denbora: bizkortzeak eta mantsotzeak.",
+        "Flash-back-a eta flash-forward-a. Ekintza paraleloak.",
+        "Ikus-jarraitutasuna eta raccord-ak. “Jarraitutasun artifizialari” eusteko moduak.",
+        "4- Muntaia.",
+        "Plano/sekuentziatik muntaiara: muntaia espazioaren eta denboraren manipulazio gisa.",
+        "2023ko uztailaren 24a, astelehena",
+        "5- Soinua.",
+        "Soinu-planoak eta soinu-perspektiba.",
+        "Soinu-bandaren osagaiak: hitza, musika eta soinu-efektuak.",
+        "Grabazio-teknikak.",
+        "Bikoizketa eta jatorrizko soinu-banda. Sinkronizazioa.",
+        "Soinu-efektuen sorrera."
+      ],
+      "codigos_items": []
+    }
+  ],
+  "comunidad": "pais-vasco",
+  "idioma": "eu"
+}

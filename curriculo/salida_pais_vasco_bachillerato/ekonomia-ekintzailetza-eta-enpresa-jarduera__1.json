@@ -1,0 +1,151 @@
+{
+  "materia_oficial": "EKONOMIA, EKINTZAILETZA ETA ENPRESA JARDUERA",
+  "materia": "Ekonomia, Ekintzailetza eta Enpresa Jarduera",
+  "etapa": "Bachillerato",
+  "ciclo": "Único",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Zientzia ekonomikoaren ekarpenak modu kritiko eta gogoetatsuan analizatzea, beste diziplina batzuekin duen erlazioa baloratuz, errealitatea ikuspegi integral batetik ulertzeko eta herritar arduratsu, autonomo eta konprometitu gisa jarduteko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Erabaki ekonomikoak hartzeko portaera bai indibiduala, bai kolektiboa diziplinarteko ikuspegitik analizatzea, eskasiaren arazoa eta horren ondorioak ebaluatuz, arazo horren ondoriozko aldaketa ekonomikoak eta sozialak ulertzeko eta horren arabera jarduteko. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Korrespondentziak ezartzea garapen iraunkorreko helburuen eta kasu errealak aztertuz eskuratutako ikaskuntzen artean, ekonomia- eta enpresa-tresnen laguntzaz haiek analizatuz, egungo erronkei erantzuten lagunduko duen jarrera sentikorra eta portaera arduratsua eta proaktiboa sortzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Ekintzaileak egungo errealitatearen barruan ezaugarritzen dituzten trebetasunak eta konpetentziak identifikatzea eta baloratzea, haien profilak eta erronkei aurre egiteko modua analizatuz, norberaren ekintzailetza-trebetasunak ezagutzeko eta indartzeko eta bizitzako egoera errealetan aplikatzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Enpresa-estrategiak ulertzea, horien bilakaera analizatuz eta hainbat esparru eta sektoreri lotutako erakundeek garatutako negozio-eredu berriak bereiziz, enpresen filosofia identifikatzeko, joerak ezagutzeko eta egungo gizartean enpresek duten jarduerari zentzu kritikoz balioa emateko. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Eraldaketa ekonomikoa eta soziala eta horren ondorioak analizatzea, berrikuntzak eta iraultza digitalak enpresa-jardueran duten garrantzia ezagutuz, enpresek egungo erronkei ematen dizkieten erantzunak ulertzeko eta erronka horietarako alternatibak eta irtenbide berriak proposatzeko.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Errealitatea ulertzea, zientzia ekonomikoak eskaintzen dituen ekarpenei buruzko analisi kritiko eta gogoetatsutik abiatuz eta beste diziplina batzuekin duen erlazioa baloratuz, haren ikuspegi integrala lortzeko eta erantzukizunak eta konpromisoak hartzeko."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Aldaketa ekonomikoak eta sozialak ulertzea, erabakiak hartzeko prozesuan gizakiak duen portaerari buruzko diziplinarteko analisi batetik abiatuz, eskasiaren arazoa eta horren ondorioak ebaluatuz eta ikasleak horren arabera jokatzera bultatuz."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Garapen iraunkorreko helburuen (GIH) eta garapen ekonomiko eta sozialaren artean dagoen erlazioaz jabetzea, erlazio hori tresna ekonomiko eta enpresarialen bidez analizatuz eta horren ondorioak irudikatuz."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Jarrera sentikorrak eta portaera arduratsuak eta proaktiboak sortzea, kasu errealen azterketatik abiatuta egungo erronkei erantzuten laguntzeko, errealitatearen eta eskuratutako ikaskuntzen arteko korrespondentziak ezarriz."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Norberaren ekintzailetza-trebetasunak ezagutzea eta indartzea, hurbileko ekintzaileek dituzten trebetasunak eta bizitzako benetako erronkei aurre egiteko modua identifikatuz eta baloratuz."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Enpresen joerak ezagutzea eta haien filosofia identifikatzea, haien enpresa-estrategiak ulertuz eta haien bilakaera analizatuz, baita garatutako negozio-ereduak ere, enpresajarduerari zentzu kritikoz balioa emanez."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Hainbat sektore eta esparrutako enpresek garatutako negozio-eredu berriak bereiztea, horien aukerak eta mugak analizatuz."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Enpresek egungo erronkei ematen dizkieten erantzunak ulertzea, gizartea izaten ari den eraldaketa ekonomikoa, laborala eta soziala analizatuz."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Gaur egungo erronketarako alternatibak eta irtenbide berriak proposatzea, berrikuntzak eta iraultza digitalak enpresa- -jardueran duten garrantzia ezagutuz. 2023ko uztailaren 24a, astelehena"
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A.1",
+      "bloque": "A.1. Ekonomia · Eskasia eta arazo ekonomikoa",
+      "titulo": "Ekonomia · Eskasia eta arazo ekonomikoa",
+      "items": [
+        "Eskasia eta horren ondorioak. Baliabideen gehiegizko ustiapenaren ondorioekiko sentsibilizazioa*. Aukera-kostua. Eskasia eta efizientzia. Ondasunen balioaren, erabilera-balioaren eta kanbiobalioaren paradoxa.",
+        "Eskasia, eta baliabideak esleitzeko sistemak. Ondasun eta zerbitzuen merkatuaren funtzionamendua*.",
+        "Lan-merkatua: Funtzionamendua eta joerak*.",
+        "Merkatuaren akatsak eta sektore publikoaren esku-hartzearen balorazio positiboa. Sektore publikoaren akatsak eta horien inplikazioak*.",
+        "Errentaren fluxu zirkularra*. Eskaintza eta eskari agregatua. Errealitate ekonomikoaren elementu eta agregatuen artean dauden erlazioei buruzko analisia.",
+        "Finantza-sistema*. Dirua eta transakzioak. Finantza pertsonalen plangintza eta kudeaketa: arriskua eta onura.",
+        "Garapen iraunkorreko helburuak (GIH) eta gaur egungo erronka ekonomikoak.*Tokiko kasuen azterketa: euskal gizarteak GIHak betetzeko Agenda 2030arekiko duen konpromisoa; aliantza sozialak eta ekonomikoak."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "A.2",
+      "bloque": "A.2. Ekonomia · Ekonomia eta beste diziplina batzuk",
+      "titulo": "Ekonomia · Ekonomia eta beste diziplina batzuk",
+      "items": [
+        "Ekonomia gizarte-zientzia gisa*. Analisi ekonomikorako arazo nagusiei buruzko gogoeta kritikoa: errealitatearen konplexutasuna eta suposizio sinplifikatzaileen txertaketa. Lege orokorrak ezartzeko zailtasunen onarpena.",
+        "Ekonomia matematikarekin eta estatistikarekin lotuta. Modelizazio matematikoa analisi ekonomikorako tresna gisa.",
+        "Ekonomia eta soziologia*. Analisi ekonomikoa eta indibidualismo metodologikoa. Errealitate soziala analizatzeko beste alternatiba batzuk. Ikuspegi soziologikoa: talde soziala analisi ekonomikorako unitate gisa. Ongizate soziala eta bizi-kalitatea ikuspegi soziologikotik Ekonomia eta psikologia*. Gizabanakoak eta portaera arrazionala. Arrazionaltasunaren akatsak.",
+        "Portaeraren ekonomia, psikologia ekonomikoa eta erabakiaren teoria. Ongizatea psikologia positiboan.",
+        "Filosofia, etika eta ekonomia: utilitarismoa eta zoriontasuna. Eragile ekonomikoak eta horien erabilgarritasunaren maximizazioa*. Ongizate sozialaren maximizazioa eta eraginkortasuna versus ekitatea eztabaida ikuspegi etiko batetik."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Ekintzailetza",
+      "titulo": "Ekintzailetza",
+      "items": [
+        "Ekintzailea eta barne-ekintzailea. Konpetentziak, ezaugarriak eta ohiturak.*Adimen emozionala* eta adimen exekutiboa.",
+        "Espiritu ekintzailea: beharren eta aukeren bilaketa.*Jarrera ekintzailearen sustapena. Sormenaren eta proaktibitatearen entrenamendua*.",
+        "Ekintzailetzari buruzko usteak*. Ekiteko beldurra: Akatsaren ezagutza eta balorazioa ikasteko aukera gisa.",
+        "Estereotipoak enpresa-profilean; genero-rolen haustura enpresa-jardueran.",
+        "Gizarte-trebetasunak. Motak eta aplikazioa. Taldeen kudeaketa eta giza harremanen teoria.",
+        "Ekintzailearen misioa eta ikuspegia. Ideia versus errealitatea:*proiektu ekintzailea sortzeari eta abian jartzeari buruzko oinarrizko nozioak*.",
+        "Ideiaren, produktuaren eta markaren babesa*.",
+        "Ekintzailearen autoebaluazioa. Tresnak."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Enpresa-jarduera",
+      "titulo": "Enpresa-jarduera",
+      "items": [
+        "Iraultza teknologikoa. Teknologikoaren boterea. Negozio-ereduak. Eraldaketa digitala. *Iraultza digitalak eta teknologikoak eragindako aldaketen balorazio kritikoa.",
+        "Merkatua eta bezeroak. Marketin digitala.*Negozio-eredu berriak.",
+        "2023ko uztailaren 24a, astelehena Enpresa-kultura eta talentuaren kudeaketa. Lidergoa. Emakumearen zeregina enpresajardueran.",
+        "Lanlekua. Etorkizuneko enpresa. Joerak.",
+        "Enpresaren estrategia eta kudeaketa.*Berrikuntza. Iraunkortasuna*.",
+        "Enpresa-kasuen analisia: barneko eta kanpoko analisia.*AMIA*."
+      ],
+      "codigos_items": []
+    }
+  ],
+  "comunidad": "pais-vasco",
+  "idioma": "eu"
+}

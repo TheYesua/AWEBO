@@ -13,7 +13,9 @@ al catálogo oficial.
 **Cataluña** (Decret 175/2022), **Andalucía** (Orden de 30 de mayo de 2023),
 **Galicia** (Decreto 156/2022) y el **País Vasco** (Decreto 77/2023): cada
 docente elige su provincia y trabaja contra
-la normativa que se le aplica, no contra la estatal. Ver [`curriculo/README.md`](curriculo/README.md).
+la normativa que se le aplica, no contra la estatal. Del País Vasco está además
+el currículo de **Bachillerato** (Decreto 76/2023), que es la primera etapa
+cargada distinta de la ESO. Ver [`curriculo/README.md`](curriculo/README.md).
 
 > **Origen**: este proyecto nace del Trabajo de Fin de Grado en Ingeniería
 > Informática (Universidad de Granada) de Jesús José Cantero López. AWEBO es su
@@ -139,10 +141,13 @@ Despliegue mediante Docker Compose. Seis servicios más dos de desarrollo:
    docker compose exec api flask seed curriculo --directorio /curriculo/salida_cataluna
    docker compose exec api flask seed curriculo --directorio /curriculo/salida_andalucia
    docker compose exec api flask seed curriculo --directorio /curriculo/salida_galicia
+   docker compose exec api flask seed curriculo --directorio /curriculo/salida_pais_vasco
+   docker compose exec api flask seed curriculo --directorio /curriculo/salida_pais_vasco_bachillerato
    ```
 
    No hace falta indicar comunidad ni idioma: cada JSON los trae dentro y el
-   fichero manda sobre la opción.
+   fichero manda sobre la opción. La **etapa** también: el último directorio
+   carga Bachillerato sin tocar la ESO, porque forma parte de la clave.
 
 4. **Verifica el estado**:
    ```powershell
@@ -361,7 +366,7 @@ estructurado que nunca llegó a funcionar, `/health` informando del proveedor
 equivocado, dos incumplimientos WCAG 2.1 en el tema claro y los reintentos
 sobre errores `4xx` de la API de OpenAI.
 
-**1174 tests** cubren todo lo anterior, en la batería que corre en cada push.
+**1210 tests** cubren todo lo anterior, en la batería que corre en cada push.
 La cifra la comprueba un test: si alguien añade una tanda y no la actualiza
 aquí, falla.
 

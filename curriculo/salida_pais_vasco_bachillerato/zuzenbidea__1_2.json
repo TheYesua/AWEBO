@@ -1,0 +1,157 @@
+{
+  "materia_oficial": "ZUZENBIDEA",
+  "materia": "Zuzenbidea",
+  "etapa": "Bachillerato",
+  "ciclo": "Único",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato",
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Zuzenbidearen adar ezberdinen funtzioa aztertzea, horien berezko terminologia ulertuz eta bereganatuz, Zuzenbideak banakako edota taldeko gatazkak ebazteko eta gizarte-elkarbizitza hobetzeko egindako ekarpena balioesteko. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Merkatuaren eta enpresaren araudi juridikoa interpretatzea, bi eremuotan eragile ekonomikoek duten funtzioari buruz hausnartuz, praktika espekulatzaile bidegabeen aurrean Zuzenbidea zorrotz betetzearen garrantzia egiaztatzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Langileen Estatutuaren edukia eta egitura aztertzea eta ebaluatzea, lan- kontratuari, ordezkaritza- -eskubideari eta norbanakoen zein kolektiboen gatazken ebazpenari garrantzia emanez, gaur egungo laneko legediari buruzko hausnarketa kritikoa egiteko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Gizarte Segurantzak antolamendu juridikoan duen funtzionamendua deskribatzea, zerga-bilketaren mekanismoa ulertuz eta afiliatuek jasotzeko eskubidea duten hainbat prestazioren ezaugarriak azalduz, Gizarte Segurantzak errentaren birbanatzaile eta ongizate-estatuaren bermatzaile gisa duen funtzio solidarioa ezagutzeko. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Hainbat erakunde publikoren zergak biltzeko funtzioa balioestea, zergak biltzeko sistema ezberdinak ezagutuz, baita herritarren kontzientzia arduratsua bereganatzeko zerga adierazgarrienak ezagutuz ere, zerga-betebeharrak betetzeko eta zergak ordaintzea saihestearen gizarte-kostua ekiditeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Gure gizartearen antolaketa juridiko-politikoa ulertzea, Espainiako Konstituzioaren eta Euskal Autonomia Erkidegoko Estatutuaren alderdi adierazgarrienak eztabaidatuz eta azalduz, gure arau eta erakundeen aldeko prestutasuna adierazteko eta horien behar bezalako funtzionamendua ziurtatu eta horien oinarri diren eta sustatzen dituzten balio demokratikoak bere egiteko. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    },
+    {
+      "codigo": "7",
+      "descripcion": "Komunikatzeko trebetasunak garatzea, tresna informatikoak eta ikusentzunezkoak erabiliz, kasu praktikoen ebazpena jendaurrean azaltzeko eta komunikatzeko.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Zuzenbidearen adar ezberdinen ekarpenak ezagutzea, kasu adierazgarrien analisien bidez, ad hoc terminologiaren erabilera errespetatuz eta gatazkak ebazteko egindako ekarpena positiboki balioetsiz."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Eragile ekonomikoen funtzioa aztertzea, harreman ekonomikoak arautzen dituen araudia betetzeko beharrizanari buruz hausnartuz, hala etorkizunean bidegabeko jokabideak saihesteko."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Gaur egungo laneko legedia interpretatzea eta balioestea, aurrez hautatutako kasu adierazgarrien azterketaren bidez: kontratu-egoera, ordezkaritza-eskubideak eta negoziazioa eta norbanakoen zein kolektiboen gatazkak ebazteko prozesuak."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Gizarte Segurantzaren zergak biltzeko sistema ulertzea, hainbat dokumentu formal aztertuz: nomina eta Gizarte Segurantzaren TC2 eta TC1 ereduak."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Gizarte Segurantzak jasotzen dituen egoerak aztertzea, bakoitzaren ezaugarri baldintzatzaileak eta bakoitzari dagozkion prestazioak azalduz eta, hala, aipatu erakundearen funtzionamendua ulertuz."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Zerga-sistema orokorra eta euskal foru-zerga sistema ezagutzea, zerga eta zerga-sistema ezberdinak ezagutuz eta baliabide monetarioak lortzeko beharra birbanaketa-justiziaren printzipio gisa balioetsiz."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Zerga-iruzurreko eguneroko benetako kasuak identifikatzea eta aztertzea, iruzurgileen praktika insolidarioek gizarteari eragiten dioten kalteari buruz hausnartuz. 2023ko uztailaren 24a, astelehena"
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Giza eskubideak, ingurumen-eskubideak eta bereziki kalteberak diren kolektiboen eskubideak babestearen beharrari buruz hausnartzea, hori defendatzea bermatzen duten hurbileko araudi-testuak aztertuz eta gure legediak horretan egiten duen ekarpena balioetsiz."
+    },
+    {
+      "codigo": "7.1",
+      "competencia": "7",
+      "descripcion": "Ideiak aurkeztu eta argudiatzeko komunikazio-trebetasunak erabiltzea, ideiak eraginkortasunez hedatzeko tresna informatiko edota ikus-entzunezko erakargarriak erabiliz."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Zuzenbidearen funtsezko oinarriak",
+      "titulo": "Zuzenbidearen funtsezko oinarriak",
+      "items": [
+        "Antolamendu juridikoaren iturriak. Zuzenbidearen printzipio nagusiak: eskubide naturala eta eskubide positiboa.",
+        "Arauen hierarkia eta Zuzenbidearen adarrak; Zuzenbide Zibilaren, Penalaren eta Administratiboaren ezaugarriak eta oinarrizko funtzioak. Kasuen analisia.",
+        "Legedia versus justizia."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Zuzenbidea, enpresa eta lana",
+      "titulo": "Zuzenbidea, enpresa eta lana",
+      "items": [
+        "B.1. Merkataritzazuzenbidea Merkataritza-zuzenbidearen oinarrizko kontzeptuak eta gainerako araudi juridiko ekonomikora hurbilpena. Enpresa motaren araberako erantzukizun juridikoa. Kiebra jotzea eta ordainketa-",
+        "etendura. Merkatuaren oinarrizko erregulazioa.",
+        "Balore-burtsaren eta finantza-bitartekarien funtzionamenduari buruzko oinarrizko araudia.",
+        "Balore-merkatuek espekulazio-foro gisa duten funtzioaren aurrean jarrera kritikoa.",
+        "B.2. Lan-zuzenbidea Lan-zuzenbidearen kontzeptua: Langileen Estatutua: edukia eta egitura. Langileen Estatutuak gizarte justuagoa lortzeko egiten duen ekarpenaren balioespena. Soldata-arrakala eta emakumeen laneko diskriminazioa.",
+        "Norbanakoen harremanen tratamendua Langileen Estatutuan: Lankontratua: kontzeptua eta motak. Gizabanakoen gatazkak.",
+        "Harreman kolektiboen tratamendua Langileen Estatutuan: ordezkaritzaeskubidea, negoziazio kolektiboa eta gatazka kolektiboak.",
+        "Gizabanakoen eta kolektiboen ebazpenei buruzko benetako kasu praktikoen analisia.",
+        "Gizarte Segurantza: kontzeptua eta prestazioak.",
+        "Gizarte Segurantza ongizate-estatuaren bermatzaile izateko balioespena.",
+        "B.3. Zerga-zuzenbidea Zerga-sistemaren egitura: Ogasun Publikoa, Zentrala, Tokikoa eta Euskal Foru Ogasuna.",
+        "Zerga-bilketarako sistemak. Zuzeneko zergak eta zeharkakoak.",
+        "Zerga-motak: Sozietateak, PFEZ, BEZ eta beste zerga batzuk.",
+        "Euskal Autonomia Erkidegoaren foru-izaeraren ezagutza eta balioespena.",
+        "Zerga-iruzurrarekiko sentsibilizazioa."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Zuzenbidea eta gizartea",
+      "titulo": "Zuzenbidea eta gizartea",
+      "items": [
+        "Estatua: kontzeptua, Espainiako estatuaren antolaketa, Erkidegoen Estatua eta nazioz gaindiko erakundeak.",
+        "78ko Espainiako Konstituzioa: artikulu adierazgarrienen analisia. Funtsezko Eskubideen babesari buruzko hausnarketa kritikoa.",
+        "Euskal Autonomia Erkidegoko Autonomia Estatutua: eskumenak, erakundeak eta ahalmenak. Eskumen adierazgarrienen analisia. Autogobernuaren defentsarekiko eta jarduerarekiko konpromisoa.",
+        "2023ko uztailaren 24a, astelehena Giza Eskubideen Adierazpen Unibertsalaren aintzatespena; Giza Eskubideak babesten dituzten erakundeak; Arartekoa.",
+        "Euskal gizarteak 2030 Agendan GJHak betetzeko konpromisoa. Ingurumenaren oinarrizko araudia.",
+        "Kalteberatasun bereziko testuinguruetan kolektiboak babesteko arauak."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Kasuen garapenaren azalpen publikoa",
+      "titulo": "Kasuen garapenaren azalpen publikoa",
+      "items": [
+        "Negoziazio eta komunikaziorako teknikak.",
+        "Aurkezpen eraginkor eta zehatza egitearen garrantziaren balioespena. Aurkezpenetarako tresnak."
+      ],
+      "codigos_items": []
+    }
+  ],
+  "comunidad": "pais-vasco",
+  "idioma": "eu"
+}

@@ -1,0 +1,199 @@
+{
+  "materia_oficial": "BIOLOGIA",
+  "materia": "Biologia",
+  "etapa": "Bachillerato",
+  "ciclo": "Único",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Iturri fidagarriak aurkitzea eta erabiltzea, informazioa identifikatuz, hautatuz eta antolatuz, hura kritikoki ebaluatuz eta egiazkotasuna egiaztatuz, modu autonomoan planteatutako galderak ebazteko eta zientzia biologikoekin erlazionatutako edukiak sortzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Informazioa eta datuak interpretatzea eta transmititzea lan zientifikoetatik abiatuz eta lan horiei buruz zehaztasunez argudiatzea, hainbat formatu erabiliz, zientzia biologikoen kontzeptuak, prozesuak, metodoak, esperimentuak edo emaitzak aztertzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Zientzia biologikoekin lotutako ikerketa- edo dibulgazio-lanak aztertzea, haien egiazkotasuna edo metodo zientifikoaren urratsak zuzen jarraitu ote dituzten zentzu kritikoz egiaztatuz, ondorioen fidagarritasuna ebaluatzeko eta zientziak gizarteari egiten dion ekarpenari buruz argudiatzeko. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Problemak planteatzea eta ebaztea, estrategia egokiak bilatuz eta erabiliz, soluzioak kritikoki aztertuz eta, beharrezkoa balitz, prozedura birformulatuz, zientzia biologikoekin lotutako fenomenoak azaltzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Iraunkorrarekin eta osasunarekin lotutako ekintza jakin batzuk kritikoki aztertzea, biologia molekularraren funtsetan oinarrituz, ohitura jasangarriak eta osasungarriak hartzeak duen garrantziari buruz argudiatzeko. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Biomolekula, bioelementu eta horien egitura eta interakzio biokimiko nagusien funtzioa aztertzea, organismo bizidunetan duten garrantziari buruz argudiatuz, horien ezaugarri makroskopikoak ezaugarri molekularretatik abiatuta azaltzeko.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Galderak planteatzea eta ebaztea eta jakintzagaiaren jakintzekin lotutako edukiak sortzea, iturriak modu egokian aurkittuz eta aipatuz, eta informazioa hautatuz, antolatuz eta kritikoki aztertuz."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Jakintzagaiarekin lotutako informazioaren egiazkotasuna kontrastatzea eta justifikatzea, iturri fidagarriak erabiliz, datuak emanez eta oinarri zientifikorik gabeko informazioekiko —hala nola sasizientziak, konspirazio-teoriak, funtsik gabeko sinesmenak, gezurrak, etab.— jarrera kritiko eta eszeptikoa hartuz."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Kontzeptu eta prozesu biologikoak kritikoki aztertzea, informazioa hainbat formatutan (ereduak, grafikoak, taulak, diagramak, formulak, eskemak edo bestelakoak) hautatuz eta interpretatuz."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Jakintzagaiari buruzko jakintzekin lotutako informazio edo iritzi arrazoituak komunikatzea, modu argi eta zorrotzean transmitituz, terminologia eta formatu egokiak erabiliz (ereduak, grafikoak, taulak, bideoak, txostenak, diagramak, formulak, eskemak, sinboloak edo eduki digitalak, besteak beste), eta prozesuan zehar sor daitezkeen galderei modu arrazoitu eta zehatzean erantzunez."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Irizpide zientifikoekin argudiatzea jakintzagaiari buruzko jakintzekin zerikusia duten alderdiei buruz, jarrera desberdinen indarguneak eta ahuleziak arrazoituz eta besteen iritziarekiko jarrera ireki, malgu, hartzaile eta errespetuzkoa kontuan hartuz."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Jakintzagaiari buruzko jakintzekin lotutako ikerketa edo dibulgazio zientifikoko lan baten ondorioen fidagarritasuna ebaluatzea, lortutako emaitzen interpretazioa kontuan hartuz. 2023ko uztailaren 24a, astelehena"
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Zientziak gizarteari egiten dion ekarpenari buruz —adibide zehatzak erabiliz— eta zientzian diharduten pertsonen lana argudiatzea, emakumearen zeregina nabarmenduz eta ikerketa etengabe eboluzionatzen ari den lan kolektibo eta diziplinarteko gisa ulertuz, testuinguru politikoak eta baliabide ekonomikoek eraginda."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Fenomeno biologikoak azaltzea, problemak planteatuz eta ebatziz, eta estrategia eta baliabide egokiak bilatuz eta erabiliz."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Problema baten soluzioa kritikoki aztertzea, Biologia jakintzagaiaren jakintzak erabiliz, eta erabilitako prozedurak edo ondorioak birformulatzea, soluzio hori bideragarria ez bada, edo geroago emandako edo aurkitutako datu berrien aurrean."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Ohitura osasungarriak hartzearen garrantziari buruz argudiatzea, biologia molekularraren printzipioetan oinarrituz eta prozesu makroskopikoekin lotuz."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Garapen iraunkorreko eredu baten garrantzia justifikatzea, biologia molekularraren printzipioetan oinarrituz eta prozesu makroskopikoekin lotuz."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Izaki bizidunen ezaugarriak eta bizi-prozesuak azaltzea, haien biomolekulak, haien arteko interakzio biokimikoak eta erreakzio metabolikoak aztertuz."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Laborategian metodologia analitikoak aplikatzea material egokiak zehaztasunez erabiliz."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Biomolekulak",
+      "titulo": "Biomolekulak",
+      "items": [
+        "Bioelementuak, ezaugarri orokorrak eta izaki bizidunentzako garrantzia.",
+        "Biomolekula organikoak eta inorganikoak: ezaugarri orokorrak eta desberdintasunak.",
+        "Ura eta gatz mineralak: euren ezaugarri kimikoen eta funtzio biologikoen arteko erlazioa.",
+        "Monosakaridoak: ezaugarri kimikoak, forma linealak eta ziklikoak, isomeriak, loturak eta funtzioak.",
+        "Disakaridoak eta polisakaridoak: garrantzi biologiko handiena dutenen adibideak.",
+        "Lipido saponifikagarriak eta ez-saponifikagarriak: ezaugarri kimikoak, motak, desberdintasunak eta funtzio biologikoak.",
+        "Proteinak: ezaugarri kimikoak, egitura, funtzio biologikoa, paper biokatalizatzailea.",
+        "Bitaminak eta gatzak: funtzio biologikoa kofaktore entzimatiko gisa eta haiek dietan sartzearen garrantzia.",
+        "Azido nukleikoak: motak, ezaugarri kimikoak, egitura eta funtzio biologikoa."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Genetika molekularra",
+      "titulo": "Genetika molekularra",
+      "items": [
+        "DNAren erreplikazio-mekanismoa: eredu prokariotoa.",
+        "Adierazpen genikoaren etapak: eredu prokariotoa. Kode genetikoa: ezaugarriak eta problemen ebazpena.",
+        "Mutazioak: DNAren erreplikazioarekin, eboluzioarekin eta biodibertsitatearekin duten lotura.",
+        "Adierazpen genikoaren erregulazioa: zelulen bereizketan duen garrantzia.",
+        "Genoma prokariotoak eta eukariotoak: ezaugarri orokorrak eta desberdintasunak."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Biologia zelularra",
+      "titulo": "Biologia zelularra",
+      "items": [
+        "Teoria zelularra: inplikazio biologikoak.",
+        "Mikroskopia optikoa eta elektronikoa: irudiak, bereizmena eta laginak prestatzeko teknikak.",
+        "Mintz plasmatikoa: ultraegitura eta propietateak.",
+        "Prozesu osmotikoa: animalia-zelularen, landare-zelularen eta zelula prokariotoaren gaineko eragina.",
+        "2023ko uztailaren 24a, astelehena Mintz plasmatikoaren bidezko garraioa: mekanismoak (difusio sinplea eta erraztua, garraio aktiboa, endozitosia eta exozitosia) eta horietako bakoitzarekin garraiatutako molekula motak.",
+        "Organulu zelular eukariotoak eta prokariotoak: oinarrizko funtzioak.",
+        "Ziklo zelularra: faseak eta errregulazio-mekanismoak.",
+        "Mitosia eta meiosia: faseak eta funtzio biologikoa.",
+        "Minbizia: mutazioekin eta ziklo zelularraren alterazioarekin lotura. Azken ikerketak."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Metabolismoa",
+      "titulo": "Metabolismoa",
+      "items": [
+        "Metabolismoaren kontzeptua.",
+        "Anabolismoaren eta katabolismoaren kontzeptuak: desberdintasunak.",
+        "Arnasketa zelular anaerobikoan (glukolisia eta hartzidura) eta aerobikoan (gantz-azidoen β-oxidazioa, Krebs zikloa, elektroien garraio-katea eta fosforilazio oxidatiboa) inplikatutako prozesuak.",
+        "Metabolismo aerobikoa eta anaerobikoa: hauen errendimendu energetikoen kalkulu konparatiboa.",
+        "Anabolismo heterotrofoaren (aminoazidoen, proteinen eta gantz-azidoen sintesia) eta autotrofoaren (fotosintesia eta kimiosintesia) bidezidor nagusiak: garrantzi biologikoa."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "E",
+      "bloque": "E. Ingeniaritza genetikoa eta Bioteknologia",
+      "titulo": "Ingeniaritza genetikoa eta Bioteknologia",
+      "items": [
+        "Transgenearen kontzeptua. Edizio genetikoaren eta transgenesiaren arteko aldeak.",
+        "Ingeniaritza genetikoko teknikak eta horien aplikazioak: PCR, murrizketa-entzimak, klonazio molekularra, CRISPR-CAS9, etab.",
+        "Bioteknologiaren garrantzia eta ondorioak: aplikazioak osasunean, nekazaritzan, ingurumenean, material berrietan, elikagaien industrian, etab. Mikroorganismoen zeregin azpimarragarria."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "F",
+      "bloque": "F. Immunologia",
+      "titulo": "Immunologia",
+      "items": [
+        "Immunitatearen kontzeptua.",
+        "Kanpoko hesiak: patogenoen sarrera zailtzeko duten garrantzia.",
+        "Berezko eta berariazko immunitatea: desberdintasunak.",
+        "Immunitate humorala eta zelularra: ekintza-mekanismoak.",
+        "Immunitate artifiziala eta naturala, pasiboa eta aktiboa: funtzionamendu-mekanismoak.",
+        "Gaixotasun infekziosoak: faseak.",
+        "Immunitate-sistemaren patologia nagusiak: kausak eta garrantzi klinikoa."
+      ],
+      "codigos_items": []
+    }
+  ],
+  "comunidad": "pais-vasco",
+  "idioma": "eu"
+}

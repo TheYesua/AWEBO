@@ -1,0 +1,258 @@
+{
+  "materia_oficial": "TEKNOLOGIA ETA INGENIARITZA",
+  "materia": "Teknologia eta Ingeniaritza",
+  "etapa": "Bachillerato",
+  "ciclo": "1º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Ikerketa-proiektuak jarrera ekintzaileaz koordinatzea, problemak ebazteko estrategia eta teknika efizienteak ezarriz eta emaitzak behar bezala aurkeztuz, produktuak eta sistemak etengabe sortzeko eta hobetzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Materialak hautatzea, irizpide teknikoak eta iraunkortasunekoak aplikatuz, kalitatezko produktuak fabrikatzeko eta planteatutako problema eta atazei ikuspegi etikoz eta arduratsuz erantzungo dieten inpaktu-azterketak egiteko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Tresna digital egokien aukerak baliatzea, beren beharretara konfiguratuz eta diziplinarteko ezagutzak aplikatuz, atazak ebazteko eta emaitzak modu optimoan aurkezteko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Ezagutzak sortzea eta trebetasun teknikoak hobetzea, beste diziplina zientifiko batzuetako jakintzak transferituz eta aplikatuz, ingeniaritzaren esparruetako beharrak kalkulatzeko, problemak ebazteko edo haiei erantzuteko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Sistema teknologikoak diseinatzea eta sortzea, erregulazio automatikoari, kontrol programatuari eta sortzen ari diren teknologiek eskaintzen dituzten aukerei buruzko ezagutzak aplikatuz, sistema teknologiko eta robotikoetako atazak aztertzeko, kontrolatzeko eta automatizatzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Ingeniaritzaren esparruetako sistema teknologikoak analizatzea eta ulertzea, horien ezaugarriak aztertuz eta duten kontsumoa eta energia-efizientzia baloratuz, teknologiaren erabilera arduratsua eta iraunkorra ebaluatzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "7",
+      "descripcion": "Ideia teknologikoak banaka eta taldean komunikatzea, euskarri, terminologia eta zorroztasun egokia erabiliz, beren pentsamendu teknologikoa antolatzeko eta sendotzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "8",
+      "descripcion": "Trebetasun pertsonalak erabiltzea, emozioak identifikatuz eta kudeatuz eta ikaste-prozesuaren parte gisa akatsetik ikasiz, eta ziurgabetasun-egoerei aurre egitea, helburuak lortzen saiatua izateko, jakintzagai teknikoen ikaskuntzarekin gozatuz. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    },
+    {
+      "codigo": "9",
+      "descripcion": "Gizarte-trebetasunak erakustea, besteen emozioak eta esperientziak identifikatuz eta babestuz, eta esleitutako rolak dituzten talde heterogeneoetan lana aktiboki kudeatzea, Teknologiako eta Ingeniaritzako ikasle gisa identitate positiboari eusteko, talde-ongizatea eta harreman osasungarriak sustatuz.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Produktu baten sorrera eta hobekuntza modu grafikoan erakusten duten proiektuak ikertzea eta diseinatzea, erlazionatutako informazioa hautatuz, erreferentziatuz eta interpretatuz."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Produktu bideragarriak eta sozialki arduratsuak sortzeko eta etengabe hobetzeko proiektuak garatzen eta koordinatzen parte hartzea, hobekuntzak identifikatuz eta prozesu iteratibo baten bidez prototipoak sortuz, jarrera ekintzaileaz."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Dokumentazio teknikoa lantzea, diagrama funtzionalak sortuz eta eskuzko bitartekoak eta/edo aplikazio digitalak erabiliz."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Produktu baten bizi-zikloa zehaztea, etapa bakoitzean kalitatea kontrolatzeko neurriak planifikatuz eta aplikatuz, diseinutik hasi eta merkaturatzera iritsi arte, etengabe hobetzeko estrategiak kontuan hartuz."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Kalitatezko produktuak fabrikatzeko material egokiak, tradizionalak edo belaunaldi berrikoak, hautatzea, haien ezaugarri teknikoetan oinarrituz eta iraunkortasun-irizpideak modu etikoan eta arduratsuan kontuan hartuz."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Ereduak edo prototipoak fabrikatzea, fabrikazio-teknika egokienak erabiliz eta beharrezko irizpide teknikoak eta iraunkortasunekoak aplikatuz."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Proposatutako atazak eta esleitutako funtzioak modu optimoan ebaztea, hainbat tresna digital erabiliz eta konfiguratuz eta diziplinarteko ezagutzak modu kritiko, seguru eta arduratsuan aplikatuz."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Proiektuak aurkeztea, aplikazio digital egokiak erabiliz."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Sistema eta instalazio mekanikoei lotutako problemak ebaztea, mugimenduen transmisio eta transformazioko, euskarriko eta loturako mekanismoen oinarriak aplikatuz."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Sistema eta instalazio elektriko eta elektronikoekin lotutako problemak ebaztea, korronte zuzenaren eta makina elektrikoen oinarriak aplikatuz."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Sistema teknologiko eta robotikoen funtzionamendua kontrolatzea, programazio-hizkuntzak erabiliz eta sortzen ari diren teknologiek (hala nola Adimen Artifiziala, Telemetria, Gauzen Internet, Big Data...) eskaintzen dituzten aukerak aplikatuz."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Roboten mugimenduak automatizatzea eta programatzea, modelizazioaren bidez eta algoritmo sinpleak aplikatuz."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Energia-sistemak eta -merkatuak ebaluatzea, horien ezaugarriak aztertuz, beren magnitudeak kalkulatuz eta beren efizientzia baloratuz."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Etxebizitza bateko instalazioak energia-efizientziaren ikuspegitik analizatzea, iraunkortasunarekin konpromiso handiena duten aukerak bilatuz eta horien erabilera arduratsua sustatuz."
+    },
+    {
+      "codigo": "7.1",
+      "competencia": "7",
+      "descripcion": "Ideia teknologikoak komunikatzean antolamendua erakustea, euskarri, terminologia eta zorroztasun egokia erabiliz, jabetza intelektuala errespetatuz eta informazioa behar bezala erreferentziatuz."
+    },
+    {
+      "codigo": "7.2",
+      "competencia": "7",
+      "descripcion": "Hizkuntza teknikoa testuinguru analogiko eta digitaletan ezagutzea eta erabiltzea, informazioa zehaztasunez eta zorroztasunez komunikatuz."
+    },
+    {
+      "codigo": "8.1",
+      "competencia": "8",
+      "descripcion": "Ziurgabetasun-egoeretan helburuak lortzen saiatua izatea, emozioak identifikatuz eta kudeatuz eta akatsa ikaste-prozesuaren partetzat baliatuz."
+    },
+    {
+      "codigo": "8.2",
+      "competencia": "8",
+      "descripcion": "Teknologia ikasteko egoerei aurre egitean saiatua izatea eta motibazio positiboa agertzea, kritika arrazoitua onartuz eta horretatik ikasiz."
+    },
+    {
+      "codigo": "9.1",
+      "competencia": "9",
+      "descripcion": "Ataza teknologikoetan modu aktiboan parte hartzea talde heterogeneoetan, besteen emozioak eta esperientziak babestuz eta testuinguru analogiko eta digitaletan gizarte-trebetasun aproposenak identifikatuz."
+    },
+    {
+      "codigo": "9.2",
+      "competencia": "9",
+      "descripcion": "Ataza teknologikoak modu inklusiboan banatzen laguntzea talde heterogeneoetan, besteen arrazoibideak entzunez, esleitutako rolaren bidez taldeari ekarpenak eginez eta talde-ongizatea eta harreman osasungarriak sustatuz."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Ikerketa- eta garapen-proiektuak",
+      "titulo": "Ikerketa- eta garapen-proiektuak",
+      "items": [
+        "Proiektuak kudeatzeko eta garatzeko estrategiak: Design Thinking. Ikertzeko eta asmatzeko teknikak.",
+        "Produktuak: bizi-zikloa. Etengabe hobetzeko estrategiak. Diseinuaren eta merkaturatzearen plangintza eta garapena. Logistika, garraioa eta banaketa. Metrologia eta normalizazioa. Kalitate-kontrola.",
+        "Adierazpide grafikoa. CAD-CAE-CAM aplikazioak. Diagrama funtzionalak, eskemak eta krokisak.",
+        "Ekintzailetza, erresilientzia, pertseberantzia eta sormena, problemei diziplinarteko ikuspegitik heltzeko."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Materialak eta fabrikazioa",
+      "titulo": "Materialak eta fabrikazioa",
+      "items": [
+        "Material teknikoak eta material berriak. Sailkapena. Hautaketa eta aplikazio bereizgarriak.",
+        "Fabrikazio-teknikak: prototipatze azkarra eta eskaripekoa. Proiektuei aplikatutako fabrikazio digitala."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Sistema mekanikoak",
+      "titulo": "Sistema mekanikoak",
+      "items": [
+        "Mugimenduak transmititzeko eta transformatzeko mekanismoak. Elementu mekanikoen euskarriak eta lotura. Diseinua, kalkulua, muntaia eta esperimentazio fisikoa edo simulatua. Proiektuetarako aplikazio praktikoa."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Sistema elektriko eta elektronikoak",
+      "titulo": "Sistema elektriko eta elektronikoak",
+      "items": [
+        "Korronte zuzeneko zirkuituak eta makina elektrikoak. Zirkuituen interpretazioa eta irudikapen eskematizatua, kalkulua, muntaia eta esperimentazio fisikoa edo simulatua. Proiektuetarako aplikazioa."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "E",
+      "bloque": "E. Automatizazioa",
+      "titulo": "Automatizazioa",
+      "items": [
+        "Testu-programazioko hizkuntzak. Prozesuen automatizazioari aplikatutako programen sorkuntza.",
+        "Kontrol-sistemak. Kontzeptuak eta elementuak. Sistema sinpleen modelizazioa.",
+        "Kontrol-sistemei aplikatutako Adimen Artifiziala.",
+        "Komunikazio-protokoloak. Telemetria eta monitorizazioa. Gauzen Internet eta Big Data.",
+        "Robotika: mugimendu eta ekintza mekanikoen modelizazioa.",
+        "Autokonfiantza eta ekimena. Akatsa eta berrebaluazioa ikaskuntza-prozesuaren partetzat."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "F",
+      "bloque": "F. Teknologia iraunkorra",
+      "titulo": "Teknologia iraunkorra",
+      "items": [
+        "Energia-sistemak eta -merkatuak. Energia-kontsumo iraunkorra, aurrezteko teknikak eta irizpideak. Etxeko hornidurak.",
+        "2023ko uztailaren 24a, astelehena Etxebizitzetako instalazioak: elektrikoak, uretakoak, klimatizaziokoak, komunikaziokoak eta domotikoak. Energia berriztagarriak, energia-efizientzia eta iraunkortasuna."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "G.1",
+      "bloque": "G.1. Zentzu sozioemozionala · Sinesmenak, jarrerak eta emozioak",
+      "titulo": "Zentzu sozioemozionala · Sinesmenak, jarrerak eta emozioak",
+      "items": [
+        "Norberaren sentimenduak eta emozioak ezagutzeko autokontzientzia-trebetasunak, ikaskuntza teknologikoan litezkeen estres- eta antsietate-egoerei aurre eginez.",
+        "Akats indibidualaren eta kolektiboaren tratamendua, eskuratutako jakintzak mobilizatzeko eta teknologia-gelan ikasteko aukerak sortzeko elementu gisa."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "G.2",
+      "bloque": "G.2. Zentzu sozioemozionala · Talde-lana eta erabakiak hartzeko estrategiak",
+      "titulo": "Zentzu sozioemozionala · Talde-lana eta erabakiak hartzeko estrategiak",
+      "items": [
+        "Erabakiak hartzean aukerak ebaluatzeko eta problemak ebazteko oinarrizko trebetasunak.",
+        "Problemak ebaztean planteamendu desberdinak ezagutzeko eta onartzeko estrategiak, besteen ikuspegiak estrategia propio berri eta hobetuetan eraldatuz, eta prozesuan enpatia eta errespetua erakutsiz.",
+        "Problema eta ataza teknologikoak talde heterogeneoetan eta mistoetan ebazteko talde-lanerako teknikak eta estrategiak, hala nola ikasketa kooperatiboa eta lidergo banatua."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "G.3",
+      "bloque": "G.3. Zentzu sozioemozionala · Inklusioa, errespetua eta aniztasuna",
+      "titulo": "Zentzu sozioemozionala · Inklusioa, errespetua eta aniztasuna",
+      "items": [
+        "Komunikazio eraginkorra, entzute aktiboa, eta galderak egiteko edo, beharrezkoa denean, laguntza eskatzeko eta emateko moduak garatzeko trebetasunak.",
+        "Teknologiak eta ingeniaritzak historian zehar zientziaren eta teknologiaren analisian eta aurrerapenean izan duten eraginaren balorazioa."
+      ],
+      "codigos_items": []
+    }
+  ],
+  "comunidad": "pais-vasco",
+  "idioma": "eu"
+}

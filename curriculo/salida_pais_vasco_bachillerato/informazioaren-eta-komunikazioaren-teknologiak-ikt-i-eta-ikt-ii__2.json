@@ -1,0 +1,212 @@
+{
+  "materia_oficial": "INFORMAZIOAREN ETA KOMUNIKAZIOAREN TEKNOLOGIAK (IKT I ETA IKT II)",
+  "materia": "Informazioaren eta Komunikazioaren Teknologiak (ikt I eta Ikt Ii)",
+  "etapa": "Bachillerato",
+  "ciclo": "2º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Proiektuak koordinatu eta kudeatzea, banaka eta taldean, gailuak eta sareak konektatu eta konfiguratzea beharrezkoa den konplexutasun anitzeko benetako arazoei irtenbidea emateko, hardware eta software ezagutzak aplikatuz, eguneroko informatikako eta komunikazioko tresnak eta instalazioak kudeatzeko. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Hainbat konplexutasun mailatako proiektuak koordinatu eta kudeatzea, benetako arazoei soluzio eraginkor, sortzaile eta berritzailea emateko, pentsamendu konputazionalaren printzipioak erabiliz eta programazio-lengoaia errazak eta intuitiboak erabiliz, programa informatikoetan inplementa daitezkeen algoritmoak diseinatzeko eta garatzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Ikaskuntzarako ingurune pertsonala kudeatzea eta aberastea, norberaren beharrizanetara egokituz, jakin-min berdinak dituzten beste pertsonekin sarean kudeatuz eta eremu digitaleko baliabideak baliatuz etengabeko ikaskuntza optimizatzeko eta kudeatzeko. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "IKTak modu seguruan, arduratsuan eta etikoan erabiltzea, arriskuak ezagutuz eta gure segurtasuna eta pribatutasuna babesteko neurriak hartuz, IKTak modu jasangarrian erabiliz eta gizarteari egiten dioten ekarpena aintzat hartuz, herritar digital kritikoak, aktiboak eta arduratsuak bilakatzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Ideia teknologikoak eta digitalak komunikatzea, banaka eta taldean, dagokion euskarria, terminologia eta zorroztasuna erabiliz, pentsamendu digitala antolatzeko eta sendotzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Norberaren eta besteen emozioak identifikatu eta kudeatzeko trebetasun pertsonal eta sozialak erabiltzea, akatsak ikaskuntza-prozesuaren parte direla ikastea, ziurgabetasun-egoerei aurre egitea, lana talde heterogeneoetan aktiboki kudeatzea, IKT ikasle gisa nortasun positiboa edukitzea eta norberaren eta taldearen ongizatea eta harreman osasuntsuak sustatzea. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Ikerketa- eta berrikuntza-proiektuak garatzea eta kudeatzea, beharrezko gailuen, tokiko sareen eta aplikazioen konexioari eta konfigurazioari lotutako hainbat konplexutasun- -mailatako benetako arazoen soluzioak sortuz eta hobetuz, proiektuan esku hartzen duten hainbat sistemarekin lotutako ezagutzak eta prozesuak aplikatuz, soluzioak kritikoki ebaluatuz eta, hala badagokio, prozedura birformulatuz."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Hardware eta software proiektu jasangarriak koordinatzeko taldeen zereginak antolatzea eta planifikatzea, hobekuntzak identifikatuz eta iterazio-prozesu bidezko prototipoak sortuz, jarrera ekintzailea adieraziz."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Proiektuaren dokumentazio teknikoa osatzea, proiektuaren ezaugarriak, funtzionaltasunak, abantailak eta desabantailak identifikatuz, lengoaia argi eta zorrotzarekin, dagozkion aplikazio informatikoen erabileraren bidez."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "1",
+      "descripcion": "Erabilitako materialak berrerabiltzea, behin eta berriz edo hainbat modutara erabiliz, eta energia aurrezteko ohiturak hartzea, ingurumen-inpaktu txikiena duten gailuak hautatuz, alferrikako zabor teknologikoa sortzea saihestuz eta behar bezala birziklatuz"
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Beharrizan eta interesen araberako aplikazioak programatzea, zailtasun desberdinetakoak, programazio-elementuak behar bezala erabiliz eta kode irekiko programazio-lengoaiak eta -inguruneak baliatuz."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Software-proiektu errazak garatzea eta kudeatzea, diziplina zientifiko-teknikoan erabili ohi diren aplikazioak garatzearekin lotutako hainbat konplexutasun-mailatako arazo informatikoei irtenbidea emateko eta ikasleen interesekoak izateko, egin beharreko hainbat zeregin garatzea antolatuz eta planifikatuz: definizioa, analisia, diseinua, inplementazioa, frogak eta dokumentazioa."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Ikasleek egunerokoan erabiltzen dituzten hainbat gailutarako aplikazio errazak diseinatzea, dagozkion programazio-elementuak erabiliz eta programazio-lengoaia erraz eta intuitiboak erabiliz."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Ikaskuntzarako ingurune pertsonalean baliabide digital eta ezagutza berriak txertatzea, ezagutza eta etengabeko ikaskuntza sortzen aurrera egiteko."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Komunikazioko espazio birtualetan eta ikaskuntza kolaboratiboko plataformetan elkarri eragitea, informazioa eta datuak partekatuz eta argitaratuz, hainbat erabiltzailetara jarrera parte-hartzaile bidez egokituz."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Eremu digitalean lankidetza-sareak sortzea, antzeko interesak dituzten pertsonekin edo taldeekin harremanetan jarriz, berdinen arteko ikaskuntza eta lankidetza sustatuz."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Informazioaren gizartearen ezaugarriak eta Jakintzaren gizarterantz egindako bilakaera ezagutzea eta aintzat hartzea, informazioaren eta haren sareko ezaugarrien garrantzia kontuan hartuz."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "IKTek gizartearen eraldaketan duten eragina ezagutzea, hainbat testuingurutan, hala nola hezkuntzan, familian, gizartean, kulturan eta politikan egindako ekarpena baloratuz, emakumeek beren bokazio zientifiko-teknologikoa sustatzeko egindakoa bereziki aintzat hartuz eta hainbat kolektibok aipatu teknologiak erabiltzeko duten eten digitalaz (ekonomikoa, geografikoa, generokoa, hizkuntzakoa…) jabetuz."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Konektatutako bitarteko digitalek adierazteko ematen duten aukeraren, erraztasunaren eta askatasunaren garrantzia aintzat hartzea, bitartekoen objektibotasuna, ideologia, nahitasuna, joera eta iraungipena kontuan hartuta jasotzen diren mezuak kritikoki aztertuz."
+    },
+    {
+      "codigo": "4.4",
+      "competencia": "4",
+      "descripcion": "Gailuak erabiltzean osasun fisikoa babesteko ohitura osasungarriak hartzea, honako neurri hauek hartuz: behar bezalako jesartzea, pantailarekiko distantzia, teklatuaren eta saguaren erabilera, neke fisikoari eta buruko nekeari kontra egiteko etenaldiak eginez."
+    },
+    {
+      "codigo": "4.5",
+      "competencia": "4",
+      "descripcion": "Teknologia digitalen ingurumen-inpaktua identifikatzea, horiek modu jasangarrian erabiltzea sustatuz."
+    },
+    {
+      "codigo": "4.6",
+      "competencia": "4",
+      "descripcion": "Datu eta tresna digitalak etikoki erabiltzea, etiketa digitalaren arauak aplikatuz eta sareko gainerako erabiltzaileak errespetatuz."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Ideia eta soluzio teknologikoak zorroztasunez, argitasunez eta koherentziaz komunikatzea, hartutako erabaki eta soluzioak lengoaia teknikoz arrazoituz eta defendatuz."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Soluzio tekniko jakin bat garatu eta defendatzen duen talde tekniko baten testuingurura egokitutako terminologia zehatz eta zorrotz erabiltzea."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Ziurgabetasun-egoeretan helburuak gero eta hobeto lortzea, emozioak identifikatuz eta kudeatuz eta akatsa ikaskuntza-prozesuaren parte dela ulertuz."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Motibazio positiboa eta pertseberantzia adieraztea, arrazoitutako kritika onartuz eta ikasiz, teknologia digitalen ikas-egoerei aurre egiteko."
+    },
+    {
+      "codigo": "6.3",
+      "competencia": "6",
+      "descripcion": "Zeregin tekniko eta digitalak talde heterogeneoetan inklusiboki banatzea, besteen arrazoiketa entzunez, norbere funtzioaren bidez ekarpenak eginez eta taldearen ongizatea eta harreman mesedegarriak sustatuz."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Ikerketa- eta garapen-proiektuak",
+      "titulo": "Ikerketa- eta garapen-proiektuak",
+      "items": [
+        "* Hardware eta software proiektuen kudeaketa eta garapena: motak, ezaugarriak eta aplikazioa. * Dokumentazio teknikoaren hedapena eta komunikazioa. Osaera, erreferentziak eta aurkezpena. * Komunikazio-sistemak eta Internet. Sareko gailuak eta funtzionamendua. Tokiko sarea sortzeko prozedura eta gailuen konexioa. * Hainbat konplexutasun-mailatako aplikazio informatikoak. Kode irekiko programazio-ingurune eta -lengoaiak.",
+        "Konektatutako gailuak (IoT+Wearables), adimen artifiziala (AA) eta big data. * Ideia, kontzeptuak edo emaitzak zorrotz, zehatz eta dagokion hiztegi tekniko bidez aurkeztu eta hedatzeko estrategiak, hainbat forotara egokituta eta lengoaia inklusiboa eta estereotipo sexistarik gabe erabilita."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Ikaskuntzarako ingurune pertsonala",
+      "titulo": "Ikaskuntzarako ingurune pertsonala",
+      "items": [
+        "* Ikaskuntzarako ingurune pertsonala hobetzen jarraitzeko estrategiak, ikasleen interesak eta beharrizanak kontuan hartuz. * Komunikazioa eta sareko kolaborazioa. * Argitalpen eta hedapen arduratsua sarean. * Informazio-iturrien eta edukien zaintzaren kudeaketa. * Aipuak eta erreferentzia bibliografikoak. Estilo bibliografikoak. * Irudiak, audioak eta bideoak editatzeko aplikazioak.",
+        "Datu-baseak."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Segurtasuna, pribatutasuna eta herritar digital kritikoak",
+      "titulo": "Segurtasuna, pribatutasuna eta herritar digital kritikoak",
+      "items": [
+        "* Datu pertsonalak babesteari buruzko eskubideak. Interneteko iruzur eta mehatxu ohikoenak. * Informazioaren gizartea eta jakintzaren gizartea. * IKTek gizarteko hainbat testuinguru eraldatzeko egindako ekarpena: hezkuntzan, familian, gizartean, kulturan eta politikan. * Konpetentzia digitalak Europako esparruan: DigComp, digCompEdu, Selfie. * Etika datuen eta tresna digitalen erabileran: adimen artifiziala, joerak (algoritmikoak eta ideologikoak), zaharkitzapen programatua eta burujabetza teknologikoa."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "D.1",
+      "bloque": "D.1. Alderdi sozio-emozionala · Iritziak, jarrerak eta emozioak",
+      "titulo": "Alderdi sozio-emozionala · Iritziak, jarrerak eta emozioak",
+      "items": [
+        "* Norbere sentimenduak eta emozioak ezagutzeko autokontzientzia eta autokudeaketarako trebetasunak, teknologia digitalen ikaskuntzan estres- eta antsietate-egoerei aurre eginez. * Akatsaren tratamendua eta analisia, banakakoa eta kolektiboa, bereganatutako aurretiazko ezagutzak mobilizatzeko elementu gisa eta IKTak ikasteko aukera-sortzaile gisa.",
+        "Ekintzailetzan eta kreatibitatean saiatzea arazoak diziplinarteko ikuspegitik jorratzeko.",
+        "2023ko uztailaren 24a, astelehena"
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "D.2",
+      "bloque": "D.2. Alderdi sozio-emozionala · Talde-lana eta erabakiak hartzea",
+      "titulo": "Alderdi sozio-emozionala · Talde-lana eta erabakiak hartzea",
+      "items": [
+        "* Jokabide enpatikoak eta gatazkak kudeatzeko estrategiak. * IKT testuinguruetan arazoak ebazteko erabaki eraginkorrak hartzeko estrategiak."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "D.3",
+      "bloque": "D.3. Alderdi sozio-emozionala · Inklusioa, errespetua eta dibertsitatea",
+      "titulo": "Alderdi sozio-emozionala · Inklusioa, errespetua eta dibertsitatea",
+      "items": [
+        "* Jarrera inklusiboak sustatzeko eta ikasgelako eta gizarteko dibertsitatea onartzeko estrategietan jarraipena.",
+        "Proposatutako helburu guztietan gizakiaren mugak ezagutzea, nork bere mugak eta akatsak onartuz eta helburuak lortzeko erresilientziaz jokatuz."
+      ],
+      "codigos_items": []
+    }
+  ],
+  "comunidad": "pais-vasco",
+  "idioma": "eu"
+}

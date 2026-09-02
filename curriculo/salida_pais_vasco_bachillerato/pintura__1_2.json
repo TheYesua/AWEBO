@@ -1,0 +1,123 @@
+{
+  "materia_oficial": "PINTURA",
+  "materia": "Pintura",
+  "etapa": "Bachillerato",
+  "ciclo": "Único",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato",
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Pintura-artelanak ezagutzea eta baloratzea, adierazpen artistiko desberdinak behatuz, gizarte-, historia- eta kultura-testuinguruarekin erlazionatu ahal izateko eta ondarea kontserbatzeko beharra ulertzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Pintura-artelanak ikertzea eta aztertzea artearen historiako mugimendu eta aldi desberdinak kontuan hartuz, harrera eta gozamen estetikoa garatzeko eta proposamen horien asmoa eta zentzua ulertzeko, terminologia espezifikoa zuzen erabiliz.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Pintura-ekoizpenen harreran aktiboki parte hartzea, haien sorkuntza-prozesuak ikertuz, haien iraunkortasun-maila eta ingurumen-inpaktua bereizteko gaitasuna garatzeko. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Adierazteko gaitasuna garatzea, hainbat material, tresna eta teknikarekin esperimentatuz, norberaren autonomia, sormena eta irudimena garatzeko, eta zentzu kritikoa eraikitzea autoestimuko eta norberaren buruarekiko konfiantzazko giroan.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Arte-ekoizpenak egitea, banakakoak zein taldekoak, baliabideak egokituz eta gauzatzearen kalitatea baloratuz, ideiak, iritziak eta sentimenduak adierazteko eta norberaren eta besteen lanaren aldeko diskurtso enpatikoa ezartzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Arte-ekoizpen bat —banakakoa eta/edo kolektiboa— egiteko faseak modu aktiboan planifikatzea eta parte hartzea, proposamen bati eraginkortasunez eta sormenez erantzuteko, eta sortzen diren ondorio inklusiboak, sozialak eta aukera pertsonalak ulertzea, lanbide-aukerekin lotutakoak barne. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Pintura-teknikak eta -estiloak testuinguru sozial, historiko eta kulturalarekin lotzea, artelanak aurreiritzirik gabe behatuz."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Hainbat garai eta testuingurutako ekoizpenak ezagutzea, teknika eta estilo piktorikoen kultura eta arte-aniztasunak dakarren aberastasuna eta horiek kontserbatzearen garrantzia baloratuz. 2. konpetentzia espezifikoa."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Arte-ekoizpenak aztertzea, askotariko testuinguru kulturanitzean gozamen estetikoa sustatzeko, hurbiltzeko eta ikasteko askotariko metodologiak ezarriz. 2.2.Arte-ekoizpenen intentzionalitatea eta zentzua erabilitako pintura-teknikekin lotzea, ikusizko azterketarako gaitasuna aktiboki garatuz, terminologia espezifikoa zuzen erabiliz. 3. konpetentzia espezifikoa."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Pinturak sortzeko prozesuan esku hartzen duten prozedurak, materialak eta tresnak interes handiz ezagutzea, informazioa behatzeko, bilatzeko eta hautatzeko prozedurak aplikatuz, eta horien jasangarritasuna eta ingurumen-inpaktua aztertuz."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Pintura-teknikak sailkatzea, haien testuinguru historiko, komunikatibo eta adierazkorrari jarraiki, aurrez pentsatutako ideiarik gabe, aldi eta artista garrantzitsuenen artelanak aztertuz. 4. konpetentzia espezifikoa."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Pintura-hizkuntzaren bitartekoekin modu sortzailean esperimentatzea, adierazpen pertsonal eta autonomorako gaitasuna garatuz, proposamen askeek zein orientatuek motibatutako arte ekoizpenak sortuz. 4.2.. Sormenez eta irudimenez inprobisatzea, pintura-teknika desberdinekin banakako proiektu batean, zentzu kritikoa eraikiz eta hazkunde pertsonala sustatzen duen autoestimua garatuz. 5. konpetentzia espezifikoa."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Adierazpen- eta komunikazio-egoera bakoitzerako baliabide egokiak sormenez hautatzea, arrazoi jakin batekin ekoizpen plastikoak egitean aplikatuz 5.2.Proposamen artistiko indibidualak eta kolektiboak trebetasunez eta teknika kontrolatuz ebaztea gai zehatzen bidez. 6. konpetentzia espezifikoa."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Pintura-lan baten produkzioa planifikatzea, sormenez eta irudimenez banakako edo kolaborazioko proposamen zehatz batera egokitzeko baliabide egokiak hautatuz, haiek ebaztean sortzen diren aukera pertsonalak, sozialak eta inklusiboak baloratuz."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Proiektu artistiko kolektibo baten faseetan aktiboki inplikatzea, kohesioa, integrazioa eta inklusioa sortuz, eta proiektua norberaren esperientziarekin aberastuz. 2023ko uztailaren 24a, astelehena"
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "1. Pintura",
+      "titulo": "Pintura",
+      "items": [
+        "Ikusizko hizkuntzaren eta pertzepzioaren oinarrizko elementuak eta printzipioak.",
+        "Espazioa antolatzeko oinarrizko egiturak.",
+        "Pertzepzio-kategoriak: norabidea, oreka, pisu bisuala, herenaren legea, urrezko sekzioa, forma, kolorea, espazioa, argia, perspektiba, mugimendua, dinamika, erritmoa, adierazkortasuna.",
+        "Pinturari lotutako materialak, tresnak eta euskarriak. Ezaugarriak eta terminologia espezifikoa.",
+        "Pintura-teknikei lotutako euskarriak, tresnak, pigmentuak, aglutinatzaileak eta disolbatzaileak. Eboluzio historikoa. Materialen arteko elkarrekintza.",
+        "Material artistikoen segurtasuna, toxikotasuna eta ingurumen-inpaktua.",
+        "Teknika lehorrak: grafitozko arkatzak, ikatz-ziria, arkatz konposatuak, sanginak, barra koipetsuak, kolorekoak eta pastelak.",
+        "Teknika hezeak eta mistoak. Tinta eta bere tresnak. Aplikazioa lanak egitean.",
+        "Teknika solidoak, oliozkoak eta mistoak. Arrautza-tenplea. Enkaustadurak. Pastelak. Olioak. Urarekin nahas daitezkeen olioak. Pintura biodegradagarriak. Aplikazioa proiektuak eta lanak egitean.",
+        "Estilo eta garai askotako pintura-lanak: analisi teknikoa eta prozedurazkoa.",
+        "Euskal Herriko jatorrizko obrak. Aberastasuna eta adierazpen-balioa.",
+        "Proiektu grafiko-plastikoak.Jarrerak.",
+        "Proiektu grafiko-plastikoak planifikatzeko eta garatzeko estrategiak.",
+        "Lan-taldeen antolamendua.Parte-hartze aktiboa berdintasunean, ikuspegi inklusiboa, ez-sexista eta diskriminatzen duten estereotipoak gainditzekoa hartuz.",
+        "Diziplina- eta erantzukizun-ohiturak talde-lanean.",
+        "Pintura-lan bat egiteko prozesua.",
+        "Autonomia eta zorroztasuna lanak egitean eta/edo egikaritzean.",
+        "Proiektu grafiko-plastikoen erakusketa eta hedapena.",
+        "Proiektu grafikoen faseak eta emaitzak ebaluatzeko estrategiak. Errorea hobetzeko eta ikasteko aukera gisa.",
+        "Ingurumen-jasangarritasuna.",
+        "Jakin-mina, jarrera irekia eta sentsibilitatea artearekiko eta haren norabide berriekiko."
+      ],
+      "codigos_items": []
+    }
+  ],
+  "comunidad": "pais-vasco",
+  "idioma": "eu"
+}

@@ -1,0 +1,180 @@
+{
+  "materia_oficial": "ENPRESA ETA NEGOZIO EREDUEN DISEINUA",
+  "materia": "Enpresa eta Negozio Ereduen Diseinua",
+  "etapa": "Bachillerato",
+  "ciclo": "Único",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Enpresa-jarduera eta jarduera ekintzailea aztertzea, gizartean duten eraldatzeahalmena onartuz eta prozesu horretako berrikuntzaren eta digitalizazioaren balioaz gogoeta eginez, gaur egungo ekonomiaren funtzionamendu orokorrean duten zeregina ulertzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Ingurune ekonomikoa eta soziala eta ingurune horrek enpresa-jardueran duen eragina ikertzea, enpresen eta ingurunearen arteko erlazioak aztertuz eta erantzukizun sozial korporatiboaren, berdintasunaren eta inklusioaren irizpideetatik abiatzen diren estrategia bideragarriak identifikatuz, enpresen egokitze-gaitasuna baloratzeko. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Egungo negozio-ereduak ezagutzea eta ulertzea, beste eredu tradizional batzuekin alderatuz eta sormen-diseinua errazten duten estrategiak eta tresnak aplikatuz, balioa eman, beharrak ase eta ongizate ekonomiko eta sozialari laguntzen dioten negozioereduak proposatzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Enpresa-munduan aplikatzekoak diren komunikazio-estrategiak baloratzea eta aukeratzea, formula berriak erabiliz eta enpresaren barruan nahiz kanpoan sortzen den informazioa lortuz, erabakiak hartzeko prozesuan beharrezkoa den informazioa eraginkortasunez kudeatzeko eta behar bezala transmititzeko. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Diseinatutako negozio-ereduaren behin-behineko analisia egitea, gauzatutako prozesu osoa ulertzeko eta negozio-ereduaren proposamena baliozkotzeko behar diren enpresa-analisirako tresnak aplikatuz.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Enpresa-jarduerak eta ekintzailetzak egungo ekonomian duten garrantzia ulertzea, gizartean duten eraldatze-ahalmena ezagutuz eta berrikuntzaren eta digitalizazioaren balioaz hausnartuz."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "I+G+Bak gizarte- eta enpresa-garapenean betetzen duen eginkizuna aztertzea, ekonomian inpaktu handia duten joera eta teknologia berriak identifikatuz."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Enpresak jarduera garatzen duen ingurunearen ezaugarriak identifikatzea eta aztertzea, horietatik abiatuta hartutako estrategiak eta erabakiak azalduz eta jarduerak gizartean eta ingurumenean izan ditzakeen ondorioak azalduz."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Enpresa motak, enpresen elementuak eta eginkizunak eta enpresek hartzen dituzten forma juridikoak ezagutzea, jabeen eta kudeatzaileen legezko erantzukizunak eta kapitalaren eskakizunak horietako bakoitzarekin erlazionatuz."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Enpresek inguruko aldaketetara eta merkatuaren eskakizunetara azkar, arduraz eta modu jasangarrian egokitzeko duten gaitasuna baloratzea, haien ingurune ekonomikoa eta soziala eta enpresa-jardueran duten eragina ikertuz."
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "2",
+      "descripcion": "Negozio-eredua abian jartzeko tramite fiskalak, lanekoak eta Gizarte Segurantzakoak ezagutzea, legezko betekizun horiek betetzearen garrantzia baloratuz."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Egungo beharrei erantzutea ahalbidetuko duen negozio-eredu eraldatzailea proposatzea, eredu desberdinak konparatuz eta sormen-diseinuko estrategiak eta tresnak erabiliz."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Enpresa-erakundeen arloak aztertzea, hala nola ekoizpen-arloa, merkataritzakoa, finantzetakoa edo giza baliabideetakoa, arlo horien ezaugarriak aztertuz, negozio-eredu berritzaile baten kudeaketa efizientea lortzeko."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Enpresaren barne- eta kanpo-esparruan lortutako informazioa eraginkortasunez kudeatzea, komunikazio-formula berrien bidez informazioaren transmisioa errazten duten komunikazio-estrategiak hautatuz."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Gauzatutako negozio-ereduaren proiektua azaltzea, hizkuntzen erabilera eraginkorraren bidez eta gainerakoak balio proposamenarekin erakartzeko eta interesa pizteko behar diren tresnen erabilera eraginkorraren bidez. 2023ko uztailaren 24a, astelehena"
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Planteatutako negozio-eredurako inbertsio-proiektuak baloratzea, VAN eta PAYBACK emaitzetatik abiatuta alternatibarik onuragarrienaren aukeraketa modu arrazoituan justifikatuz."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Diru-sarreren eta kostuen egitura zehaztea, haien etekina eta errentagarritasun-atalasea kalkulatuz, planteatutako negozio-eredutik abiatuta."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "5",
+      "descripcion": "Simulatutako agertoki jakin batean oinarrizko negozio-plana egitea, hartutako erabakiak justifikatuz."
+    },
+    {
+      "codigo": "5.4",
+      "competencia": "5",
+      "descripcion": "Ekonomia- eta finantza-egoera aztertzea eta azaltzea, balantzean zein galdu-irabazien kontuan jasotako informaziotik abiatuta, aurkitutako desoreketarako balizko soluzioak adieraziz."
+    },
+    {
+      "codigo": "5.5",
+      "competencia": "5",
+      "descripcion": "Testuinguru jakin batean diseinatutako negozio-ereduaren proposamena baliozkotzea, gauzatutako prozesu osoa barne hartuz, enpresa-analisirako zenbait tresnaren bidez."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Enpresa eta bere ingurunea",
+      "titulo": "Enpresa eta bere ingurunea",
+      "items": [
+        "1. Enpresaburua. Ekintzailea. Profilak*. Enpresaburuen irudiaren aitortza, egungo testuinguruaren eragile eraldatzaile gisa.",
+        "Ekintzailetza-kulturaren sustapena.",
+        "2. Enpresa. Sailkapena.*Enpresaren lokalizazioa eta dimentsioa: enpresa txiki eta ertainek euskal industria-ehunean duten garrantzi berezia*. Enpresa-jarduera arautzen duen esparru juridikoa.*Enpresen forma juridikoak. Kasu espezifiko bat: euskal kooperatibismoa.",
+        "3. Enpresa-ingurunea*. Erantzukizun sozial korporatiboa. Emakumea eta ekintzailetza. Gizarteratzea eta ekintzailetza.",
+        "Enpresak Garapen Iraunkorrerako Helburuekin duen konpromisoa: 2030 Agenda.",
+        "4. Enpresaren zerga- eta lan-arloko betebeharrak halabeharrez bete izanaren ikuskapena; euskal zerga-sistema eta Gizarte Segurantza.",
+        "5. *Enpresa, digitalizazioa eta berrikuntza. I+G+B*. Berrikuntzaren teoriak. Berrikuntza motak. Joera emergenteak. Berrikuntza-estrategiak. Iraultza digitalak eta teknologikoak eragindako aldaketen balorazio kritikoa."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Negozio- eta kudeaketa-eredua",
+      "titulo": "Negozio- eta kudeaketa-eredua",
+      "items": [
+        "1. Enpresa eta negozio-ereduak. Tradizionala versus egungoa.",
+        "2. Merkataritza-funtzioa*. Bezeroen segmentua. Balio-proposamena. Kanalak. Bezeroekiko harremanak. Diru-sarreren iturriak.*Marketin-estrategiak: marketin 2.0.",
+        "3. Ekoizpen- eta hornikuntza-funtzioa*. Ekoizpen-prozesua. Efizientzia eta produktibitatea. Funtsezko jarduerak. Funtsezko baliabideak. Funtsezko asoziazioak.*Kostuen egitura: kostuen sailkapena eta kalkulua.* Izakinak baloratzeko metodoak: FIFO eta batez besteko prezio haztatua; inbentarioaren kudeaketa: Eskabide-puntua. JIT.",
+        "4. Giza baliabideen kudeaketa*. Talde arinen osaera eta funtzionamendua. Lan-merkatuak eskatzen dituen gaitasunak: lan kolaboratiboa eta talde-lana arintzen duten trebetasunen garapena eta hobekuntza. Kontratazioa eta enpresaren lan-erlazioak. Enpresetako berdintasuneta inklusio-politikak.",
+        "5. Finantza-funtzioa*. Ekonomia- eta finantza-egitura. Inbertsioa.*Inbertsioen balorazioa eta aukeraketa: VAN eta PAYBACK*.",
+        "Finantza-baliabideak. Barne- eta kanpo-finantzaketako iturri alternatiboen analisia.",
+        "6. Enpresako informazioa: kontabilitate-betebeharrak. Ondarearen osaera eta balorazioa. Urteko kontuak eta irudi fidela.",
+        "Balantzearen elaborazioa* eta galdu-irabazien kontua."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Negozio- eta kudeaketa-ereduetan berritzeko tresnak",
+      "titulo": "Negozio- eta kudeaketa-ereduetan berritzeko tresnak",
+      "items": [
+        "1. Negozio- eta kudeaketa-ereduaren mihisea: kontzeptua, arloak, multzoak, utilitatea eta negozioereduen patroiak*(CAN- VAS eredua).",
+        "2. Bezeroen ikuspuntua:*enpatia-mapa.",
+        "3. Sormen-pentsamenduaren sustapena*, negozio- eta kudeaketa-ereduaren diseinura aplikatua.*Sormen-prozesua:* dibergentzia eta konbergentzia. Negozio-ereduetarako ideia berriak sortzeko dinamikak.",
+        "2023ko uztailaren 24a, astelehena 4. Lehia eta merkatu-hobiak bilatzeko tresnak:*Google Trends.",
+        "5. Ideiak antolatzeko tresnak: ikus-pentsamendua edo Visual Thinking. Laburtzeko gaitasuna. Ideiagintza.*Komunikazioa.",
+        "6. Prototipogintza: kontzeptua eta utilitatea. Prototipogintzaren aukerak: ondasunak, zerbitzuak eta aplikazioak.",
+        "7. Proiektu edo ideia baten aurkezpen eraginkor eta laburraren garrantziaren balorazioa*. Metodologia: istorioen kontaketa edo storytelling eta igogailuko diskurtsoa edo elevator pitch. Beste metodologia batzuk.",
+        "8. Agertokiak: ideien esplorazioa, etorkizuneko agertokiak eta negozio-eredu berriak.",
+        "9. Negozio- eta kudeaketa-ereduetan berritzeko beste tresna batzuk."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Enpresa-estrategia eta enpresa-errealitatea aztertzeko metodoak",
+      "titulo": "Enpresa-estrategia eta enpresa-errealitatea aztertzeko metodoak",
+      "items": [
+        "1. Negozio-ereduaren ingurunea. Aurreikuspena: funtsezko joerak. Makroekonomia: aldagai makroekonomikoak. Lehia: lehia-indarrak.",
+        "2. Negozio-ereduaren aurretiazko ebaluazioa:*AMIA analisia* Diru-sarreren eta kostuen aurreikuspenaren analisia eta*errentagarritasun-atalasea*.",
+        "3. Negozio-ereduaren balidazioa. Lean Startup. Bezeroen garapena. Produktu arineko garapena.",
+        "4. Ideiaren, produktuaren eta markaren babesa.",
+        "5. Erabakiak hartzeko prozesua. Estrategiak. Simulazioa kalkulu-orrian. Oinarrizko negozioplanaren idazketa.",
+        "6. Emaitzen analisia: merkatuaren azterketa,*kontabilitate informazioaren interpretazioa* eta analisia, eta finantzako egoera-orrien analisia."
+      ],
+      "codigos_items": []
+    }
+  ],
+  "comunidad": "pais-vasco",
+  "idioma": "eu"
+}

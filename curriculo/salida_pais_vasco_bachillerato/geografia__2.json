@@ -1,0 +1,182 @@
+{
+  "materia_oficial": "GEOGRAFIA",
+  "materia": "Geografia",
+  "etapa": "Bachillerato",
+  "ciclo": "Único",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Euskal Herriko eta Espainiako egungo eta etorkizuneko erronka ekosozialei buruzko argudioak modu kritikoan eta irizpide geografikoekin ematea, kanal ofizialetatik eta ez-ofizialetatik —formaletatik eta informaletatik— jasotako mezuen kalitatea, fidagarritasuna eta asmoa identifikatuz, bizitza-ohiturak eta kontsumo-eredu jasangaitzak aldatzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Paisaia naturalak eta gizatiartuak osatzen dituzten elementuak identifikatzea eta aztertzea, informazio-iturri bisualak, kartografikoak, estatistikoak, grafikoak eta idatziak interpretatuz, espazio geografikoaren eta haren osagaien arteko elkarreraginen konplexutasuna ulertzeko, haren aberastasuna estimatzeko eta jasangarritasuna ingurumen-kontserbaziorako ezinbesteko printzipio gisa aitortzeko. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Euskal Herriko eta Espainiako dibertsitate naturala eta Europarekiko berezitasun geografikoak aztertzea, erliebearen, klimaren, hidrografiaren eta biodibertsitatearen arloko ezaugarri komunak eta espezifikoak alderatuz, espazioaren pertzepzio pertsonalari buruz gogoeta egiteko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Fenomeno naturalak eta giza fenomenoak lokalizatzea eta haien mugak edo kategoriak zehaztasunez argudiatzea, Geografia Informaziorako Teknologiak (GIT) aplikatuz eta geografiaren eta kideko beste edozein zientzien berezko beste metodo eta teknika batzuk aplikatuz, edozein azterketatan edo ondoriozko jarduketa-proposamenetan eskalak zer garrantzi duen ulertzeko. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Bai globalizazioaren kausak eta ondorioak, zein sistema ekonomikoen bilakaeran eta azkenaldiko gizarte-portaeretan globalizazioak duen eragina ulertzea, egungo munduaren interkonexioari eta interdependentziari buruz ikertuko duten berezko produktuak sortuz, egungo sistemak giza duintasunaren eta ingurumenaren gainean dituen zenbait eskalatako ondorioez jabetzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Euskal Herriko eta Espainiako lurraldeen arteko desorekak eta egitura soziolaborala eta demografikoa modu kritikoan azaltzea, haien kausak aztertuz, lurraldeen arteko interdependentziaz jabetzeko eta elkartasuna, kooperazio-mekanismoak eta gizarte-kohesioa baloratzeko. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    },
+    {
+      "codigo": "7",
+      "descripcion": "Aurretiko ezagutzak, berriak eta beste jakintza arloetatik datozenak mobilizatzea, iraganeko, egungo eta etorkizuneko egoerei ekitean, erabakiak eta banaka- zein talde-lanerako estrategiak planifikatuz eta birplanteatuz, inguru hurbileko erronkak identifikatzeko eta eraldatzen ari diren testuinguruei irtenbide berritzaileak emateko.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Euskal Herriak eta Espainiak gaur egun eta etorkizunean izango dituzten erronka ekosozial nagusiak identifikatzea, geografiaren ikuspegiaren bidez haien kausak eta ondorioak azalduz."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Euskal Herriko eta Espainiako erronka natural eta sozialei buruz argudiatzea, modu konprometituan eta besteen iritzia errespetatuz, eskuratutako jakintzak erabiliz eta jendaurrean datu zorrotzak aurkeztuz, grafikoen, irudien eta kartografiaren laguntza digitalarekin."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Jasangaitzak diren bizimoduak eta kontsumo-ereduak auzitan jartzea eta egon daitezkeen alternatibak baloratzea, egungo eta etorkizuneko erronka ekosozialak jorratzen dituzten orotariko informazio-iturrien analisi geografikoaren bidez eraikitako argudioetan oinarrituz."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Paisaia naturalei eta gizatiartuei buruzko informazioa zenbait iturritatik ateratzea, elementuak bereiziz eta faktore fisikoen eta giza faktoreen arteko elkarreraginak eta erlazioak interpretatuz."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Iraunkortasun printzipioa ingurune naturala kontserbatzeko modu gisa baloratzea, haren konplexutasun sistemikoa onartuz eta ekintza antropikoak haren gainean duen eragina onartuz."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Euskal Herriko, Espainiako eta Europako paisaia naturalen aniztasuna eta berezitasunak identifikatzea, haien elementuak, banaketa, ezaugarriak eta kontrasteak zenbait eskalatan alderatuz, baita gizakiak ingurune horiekin erlazionatzeko moduak alderatuz ere."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Espazio geografikoaren pertzepzioari buruz gogoeta egitea, mapetan ezaugarri komun eta espezifikoak dituzten eskualde geomorfologikoak eta bioklimatikoak lokalizatuz eta ezagutuz, eta ingurunearen iraunkortasunari egiten dion ekarpena nabarmenduz. 2023ko uztailaren 24a, astelehena"
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Geografia Informaziorako Teknologiek, eta geografiaren eta kideko zientzietako beste metodo eta teknika batzuek, ezagutza geografikoa eraikitzeko egiten duten ekarpena baloratzea, horien erabilerarekin ohituz."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Geografia Informaziorako Teknologien laguntzaz, edozein fenomeno fisiko edo giza fenomeno lokalizatzea edo irudikatzea, eskala egokia erabiliz eta aukeratutako metodoak eta datuak justifikatuz, baita eskualdeak edo analisirako kategoriak eta trantsizio-eremuak mugatuz ere."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Azalpenak emateko helburua duten banakako edo taldeko produktu propioak sortzea, diagnostikoak jakinaraziz, hipotesiak edo ondorioak proposatuz eta Geografia Informaziorako Teknologiak aplikatuz."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Globalizazioaren kausak azaltzea, baita globalizazioak antolamenduan eta sektore ekonomikoetan —zenbait eskalatan— dituen ondorioak ere, egitura ekonomikoaren bilakaerarekin eta ingurune hurbileko portaera sozialekin erlazionatuz."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Gure ekintzek ingurune hurbileko zein beste herrialde batzuetako lan- eta bizi-baldintzetan dituzten ondorioak azaltzen dituzten produktuak sortzea, formatu analogikoan nahiz digitalean, arrazoizko irtenbideak proposatuz."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "5",
+      "descripcion": "Ingurumena zaintzeko beharra adieraztea, ekoizpen-, banaketa- eta kontsumo-moduek tokiko eskalan eta eskala globalean duten inpaktua aztertuz eta hobetzeko jarduerak proposatuz."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Euskal Herriko eta Espainiako estatuaren lurralde- eta administrazio-egitura eta Europar Batasunean sartzearen ondorioak aztertzea, erabaki politikoek biztanleriaren eta errentaren banaketan duten eragina antzemanez."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Euskal Herriko, Espainiako eta Europako desoreka sozioekonomikoen jatorria argudiatzea, adierazle demografiko eta sozioekonomiko nagusiak interpretatuz eta gizarte tertziarizatuetan jarduera ekonomikoen eta biztanleriaren lokalizazio- -faktoreak aztertuz."
+    },
+    {
+      "codigo": "6.3",
+      "competencia": "6",
+      "descripcion": "Norbanakoen arteko desberdintasunak eta lurralde-desberdintasunak konpentsatzeko mekanismoen beharra argudiatzea, mekanismo horiek sortu dituzten prozesuak eta kausak eta horien ondorio soziolaboralak eta demografikoak identifikatuz."
+    },
+    {
+      "codigo": "7.1",
+      "competencia": "7",
+      "descripcion": "Tokiko eskalan eta eskala indibidual eta kolektiboan garrantzitsuak diren fenomeno naturalei eta giza fenomenoei buruzko jakintzak berregitea, pentsamendu geografikoa aplikatuz, aldez aurreko ezagutzak eta ezagutza berriak mobilizatuz eta modu kritikoan berrikusiz, hurbileko landa- edo hiri-inguruneko arazoak eta aukerak diagnostikatuz eta aurreikuspenak eta balizko irtenbideak arrazoituz."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Ingurune fisikoaren jasangarritasuna",
+      "titulo": "Ingurune fisikoaren jasangarritasuna",
+      "items": [
+        "Espainia eta Euskal Herria: munduan duten lokalizazioa eta situazio geografikoa, erliebe-mapen eta mapa bioklimatikoen bidez. Geoposizionamendua eta gailu mugikorrak. Geografia Informaziorako Teknologiak, baliagarritasuna eta aplikazio praktikoak.",
+        "Faktore fisikoak eta paisaien eta ekosistemen aniztasuna. Irudien, kartografiaren eta datuen interpretazioa. Euskal Herriko eta Espainiako faktore fisikoen —geomorfologia, klimatologia, edafologia, hidrografia eta landaredia—, eta paisaien aniztasunaren analisia. Faktore fisikoak, giza jardueren baldintzatzaileak; eta giza jarduerek faktore fisikoei eragindako alterazioak.* Pertsonekin Pertsonentzat arriskuen prebentzioa.",
+        "Geomorfologia. Erliebearen eraketa eta eraldaketa. Iberiar penintsularen formazio geologikoa eta eremu litologikoak. Erliebe-unitate nagusien identifikazioa eta banaketa. Giza jarduerek erliebearen gainean duten inpaktua.",
+        "Aniztasun klimatikoa. Klimen banaketari eta irudikapenari buruzko analisi konparatiboak. Euskal Herriko eta Espainiako eskualde klimatikoak irudikatzen dituzten klimogramen azterketa. Klima-larrialdia: aldaketak eredu termoplubiometrikoetan.",
+        "Kausak, ondorioak eta egokitze-neurriak. Eguraldia interpretatzeko estrategiak* eta alerta meteorologikoak; web-orriak eta aplikazio mugikorrak.",
+        "Biodibertsitatea, lurzoruak eta sare hidrikoa. Ezaugarri hidrikoak, edafikoak eta begetalak, eskualde naturalen arabera.",
+        "Euskal Herriko eta Espainiako arro hidrografiko nagusiak eta ibai-erregimenak. Giza jardueren inpaktua eta horien gaineko ondorioak*: biodibertsitatearen galera, lurzoruen galera eta uraren kudeaketa. Pertsonek sortutako arriskuak.",
+        "2023ko uztailaren 24a, astelehena Ingurumen-politikak: natura-ondarea babesteko diagnostiko-tresnen erabilera. Naturagune Babestuen Sarea eta Natura 2000 Sarea.*Garapen-ereduaren aldaketei buruzko eztabaida: iraunkortasun printzipioa."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Euskal Herria, Espainia, Europa eta Globalizazioa",
+      "titulo": "Euskal Herria, Espainia, Europa eta Globalizazioa",
+      "items": [
+        "Euskal Herria eta Espainia munduan. Egoera geografikoa munduan, mapa politikoen bidez. Munduan duten posizio erlatiboa, zenbait adierazle sozioekonomikotan. Globalizazioaren mehatxuak eta aukerak. Munduko testuinguru geopolitikoa eta nazioarteko erakundeetan parte hartzea.* Nazioarteko kooperazioa eta kanpo misioak. Garapen Iraunkorrerako Helburuekiko konpromisoen diagnostikoa.",
+        "Europa: herrialdeen lokalizazioa eta alderdi naturalak. Europar Batasuna gaur egun:* lurralde desorekak eta kohesioa politikak, mapa eta adierazle sozioekonomikoen bidez.",
+        "Euskal Herriko administrazio-antolamendua, Espainiako Estatuaren testuinguruan*: lurraldeen arteko desoreken azterketa, nazio eta autonomia mailan.*Adierazle sozioekonomiko ofizialen erabilpena eta erabilera: Eustat, IGN, Espainiako Atlas Nazionala.* Lurraldearen kudeaketa eta antolamendua: eskualdearen kohesio eta garapenerako politikei buruzko eztabaida.*Ongizate estatuaren egungo egoera eta proiekzioak."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Lurraldearen antolamendua ikuspegi ekosozialean",
+      "titulo": "Lurraldearen antolamendua ikuspegi ekosozialean",
+      "items": [
+        "Biztanleriaren bilakaera eta egungo egoera: egituraren eta desoreken analisia. Adierazle nagusiak eta eredu demografikoak.",
+        "Datuen, grafikoen eta mapen interpretazioa: iraganeko eta oraingo joerak eta proiekzioak. Migrazio-mugimenduak: kanpoko eta barneko migrazioak eta migrazioen ondorioak.* Aniztasun etnokulturalarekiko errespetua. Erronka demografikoak, kasuen azterketa: biztanleriaren zahartzea, eta landa-espazioaren despopulazioa… Hiri-espazioak: hiri-kontzentrazio handiak* Europako eta munduko testuinguruan.*Hiriaren funtzioak eta inguruko lurraldearekiko interdependentzia-erlazioak. Hiri-egitura, planoen bidez. Hirigintza-politikek bizimoduan dituzten ondorioak eta ingurumen-inpaktuak.* Hiri jasangarrien ereduak; mugikortasuna. Egungo hirien erronkak, kasuen azterketa: etxebizitzaren arazoa, espazio publikoaren erabilerak, gentrifikazio-prozesuak, suburbanizazioa, eta abar.",
+        "Landa-espazioak. Nekazaritza paisaien identifikazioa eta elementuak.* Nekazaritza- eta abeltzaintza-jardueren eraldaketak: jardunbide jasangarriak eta jasangaitzak. Hurbileko nekazaritzako elikagaien eta baso-produktuen gizarte-, ingurumen- eta ekonomia-balioa*: aztarna ekologikoen eta egitura soziolaboralaren azterketa. Egungo Nekazaritza Politika Erkideak landa garapenean eta iraunkortasunean duen eragina. Kasuen azterketa: etiketa bereiziak, ekologikoa eta abar.",
+        "Itsas baliabideak eta itsasertzaren eraldaketa: arrantza, akuikultura eta bestelako aprobetxamenduak.* Iraunkortasuna eta Arrantza Politika Erkidea. Kasuen azterketa: itsaski-bilketa, baxurako eta alturako arrantza, akuikultura, arrantza-kalen gehiegizko ustiapena, eta abar. *Bigarren sektoreko espazioak. Industria-jardueren bilakaera eta eraldaketak, lehengaien erauzketa eta energia-ekoizpena.",
+        "Bigarren sektoreko jarduerek paisaian duten inpaktua.* Aztarna ekologikoen ebaluazioa; energia-mendekotasuna eta",
+        "trantsizioa;*industria-, gizarte- eta lan-sarearen egitura eta zeharkako enplegua.* Kasuen azterketa: eraikuntza, automobilgintza, nekazaritzako elikagaien industria, eta abar. Lokalizazio-faktoreak.*Europar Batasuneko politiken eraginari eta globalizazioari buruzko eztabaida: desindustrializazioa, deslokalizazioa eta industria-birmoldaketa.* *Espazio tertziarizatuak. Gizarte postindustrialak eta ekonomiaren tertziarizazioa. Aztarna ekologikoen, lurralde-antolaketaren eta gizarte- eta lan-egituraren analisi kritikoa,* erantzukizun sozial korporatiboa eta kontsumitzaileen erantzukizuna.*Hirugarren sektoreko jarduerek paisaian duten inpaktua: lokalizazio-faktoreak, zerbitzuen eredu jasangaitzak eta alternatibak.",
+        "Kasuen azterketa: lehiakortasuna eta desorekak garraioan, merkataritzan, turismoan, funtsezko zerbitzuetan, eta abar.",
+        "Ekonomia zirkularreko ereduak eta zerbitzuak: ekoizpenaren, banaketaren eta salmentaren arteko erlazioak. Ekonomia digitala: «ekonomia kolaboratiboaren» inpaktua eta negozio-eredu berriak testuinguru globalean eta Europar Batasunean.",
+        "Ingurumen-politikak: natura-ondarea babesteko diagnostiko-tresnen erabilera. Naturagune Babestuen Sarea eta Natura 2000 Sarea. Garapen-ereduaren aldaketei buruzko eztabaida: jasangarritasunaren printzipioa."
+      ],
+      "codigos_items": []
+    }
+  ],
+  "comunidad": "pais-vasco",
+  "idioma": "eu"
+}

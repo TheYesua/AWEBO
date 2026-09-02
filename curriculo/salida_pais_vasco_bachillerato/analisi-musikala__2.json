@@ -1,0 +1,134 @@
+{
+  "materia_oficial": "ANALISI MUSIKALA",
+  "materia": "Analisi Musikala",
+  "etapa": "Bachillerato",
+  "ciclo": "2º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Hainbat lanetako musika-elementuak aztertzea, entzute aktiboa eta partituren azterketa erabiliz, horien ezaugarriak deskribatzeko eta konparazioak egiteko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Konposizio baten musika-elementuen arteko erlazioak ezartzea, haren egitura eta erabilitako konposizio-prozedurak aztertuz, musika-lana genero, estilo eta sorkuntza-testuinguru batekin lotzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Aztertutako obrei buruzko musika-iruzkinak eta -kritikak egitea, terminologia egokia erabiliz eta hainbat informazio-iturri kontsultatuz, iritzi pertsonal oinarrituak adierazteko eta musika-ondarea zabaltzen laguntzeko. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Oinarrizko konposizio-prozedurak eta teknologia digitalak erabiltzea, musika-elementu eta -egitura egokienak erabiliz, obra errazak sortzeko eta inprobisazioak egiteko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Musikaren erabilera helburu terapeutikoekin, eta beste adierazpide artistiko batzuekin batera, ikertzea, hainbat informazio-iturri erabiliz eta musika-lanen ezaugarri musikalak aztertuz, musika-ezaugarri jakin batzuek osasunean eta emozioetan nola eragiten duten ulertzeko.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Entzute aktibotik eta partituren azterketatik abiatuta, musika-lan baten musika-ezaugarriak deskribatzea, haiek osatzen dituzten elementuak eta konposizioaren barruan betetzen duten funtzioa jarrera irekiaz eta errespetuz aztertuz."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Hainbat musika-proposamenen osagaiak eta ezaugarriak alderatzea, haien arteko analogiak eta desberdintasunak ezarriz eta kultura-aniztasuna errespetatuz."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Historian zehar musika-genero nagusiek izan dituzten forma-, konposizio- eta estilo-ezaugarriak identifikatzea, euren elementu teknikoen eta egitura formalaren analisian oinarrituz, jarrera irekiarekin eta ikuspegi estetikotik duten garrantzia baloratuz."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Aztertutako musika-lanak genero, estilo eta sorkuntza- -testuinguru jakin batekin lotzea, egitura formala, erabilitako konposizio-prozedurak eta asmo artistikoa modu autonomoan identifikatuz."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Aztertutako musika-lanei buruzko iritzi pertsonalak adieraztea, musika-terminologia egokia erabiliz, besteen iritziekiko jarrera gogoetatsu eta errespetuzkoarekin."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Aztertutako musika-lanei buruzko norberaren iritzia justifikatzea, baliabide analogiko eta digitaletatik informazio egokiena ikertu, hautatu eta tratatuz."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Musika-kritikak eta norberaren iruzkinak egitea eta zabaltzea, baliabide analogiko zein digitalen bidez, argudio eta irizpide musikal egokietan oinarrituz, egile-eskubideak eta jabetza intelektuala errespetatuz."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Musika-lan bat osatzen duten elementuak sormenez aplikatzea konposizioetarako oinarri gisa, patroi melodiko, erritmiko, harmoniko eta formalak eta funtsezko konposizio- -prozedurak erabiliz."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Inprobisazioen bidez, arte-hizkuntzaren erabilera desberdinekin taldean esperimentatzea, enpatia eta kolaborazioa erakutsiz."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Analisi musikalari aplikatutako metodoak eta teknikak eraginkortasunez erabiltzea, tresna teknologikoen laguntzaz, musika-ondarea zabaltzen, hedatzen eta balioesten laguntzeko autonomia erakutsiz."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Musikaren erabilera terapeutikoak aztertzea, baita zenbait musika-ezaugarrik osasunean eta emozioetan nola eragiten duten ere, informazio-iturri fidagarrietan lortutako informaziotik abiatuz."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Helburu terapeutikoekin erabiltzen den musikaren ezaugarriak deskribatzea, obren adibideak aztertuz eta haien ezaugarriek entzulearengan izan dezaketen ondorioekin lotuz."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Analisi musikalaren teknikak",
+      "titulo": "Analisi musikalaren teknikak",
+      "items": [
+        "Konparazioa teknika analitiko gisa.",
+        "Entzumena eta partiturak aztertzeko teknikak.",
+        "Sorkuntza-testuingurua aztertzeko teknikak.",
+        "Sortzailearen pentsamendua, testuinguru-baldintzatzaileak eta obraren interpretazioa.",
+        "Iruzkinak, ahozko gogoetak eta musika-kritikak.",
+        "Musika ikertzeko, konposatzeko eta zabaltzeko baliabide digitalak.",
+        "Egile-eskubideak eta jabetza intelektuala.",
+        "Kultura digitalaren jarrera kritikoa, etikoa eta arduratsua."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Musika-generoak",
+      "titulo": "Musika-generoak",
+      "items": [
+        "Musikaren soinu- eta estilo-ezaugarriak Erdi Arotik gaur egunera arte.",
+        "Musika-formak eta -generoak Erdi Arotik gaur egunera arte.",
+        "Musikaren erabilera helburu terapeutikoekin.",
+        "Orkestraren barruko instrumentu-familia nagusien erabilera eta eboluzio organologikoa.",
+        "Talde-lanean parte-hartze aktiboa eta arduratsua, diskriminazioa dakarten estereotipoak gaindituz.",
+        "Musikak osasunean eta emozioetan dituen eraginak.",
+        "2023ko uztailaren 24a, astelehena"
+      ],
+      "codigos_items": []
+    }
+  ],
+  "comunidad": "pais-vasco",
+  "idioma": "eu"
+}

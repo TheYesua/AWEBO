@@ -1,0 +1,214 @@
+{
+  "materia_oficial": "FISIKA ETA KIMIKA",
+  "materia": "Fisika eta Kimika",
+  "etapa": "Bachillerato",
+  "ciclo": "Único",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Fisika eta Kimikarekin loturiko problemak eta egoerak ebaztea, dagozkion lege eta teoria zientifikoak aplikatuz, gertakari naturalak ulertzeko eta azaltzeko eta zientzia horiek guztion ongizatea eta eguneroko errealitatea hobetzeko duten funtzioa nabarmentzeko. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Gaitasunez arrazoitzea, pentsamendu zientifikoa eta zientziaren lanarekin lotutako trebetasunak erabiliz, natura eta ingurunea behatzeari, galderen eta hipotesien formulazioari eta horiek esperimentazioaren, ikerketaren eta ebidentzien bilaketaren bidez balioztatzeari aplikatzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Informazio-fluxuak jabetasunez eta kaudimenez erabiltzea zientziaren komunikazio-erregistro desberdinetan, hala nola konposatu kimikoen nomenklaturan, lengoaia matematikoaren erabileran, neurtzeko unitateen behar bezalako erabileran, segurtasuna lan esperimentalean, informazioa ekoizteko eta interpretatzeko, hainbat formatu eta iturri erabiliz.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Plataforma digitalak eta askotariko baliabideak autonomiaz, kritikoki eta eraginkortasunez erabiltzea, banakako zein taldeko lanean, egiazko informazio zientifikoa kontsultatuz eta hautatuz, hainbat formatutako materialak sortuz eta ikaskuntza-ingurune ezberdinetan eraginkortasunez komunikatuz, kreatibitatea, garapen pertsonala eta norberaren ikaskuntza eta gizarte-ikaskuntza sustatzeko. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Askotariko taldetan kolaboratiboki lan egitea, koordinazioko, komunikazioko, ekintzailetzako trebetasunak eta erantzukizunen banaketa orekatua aplikatuz, aurrerapen zientifikoen ondorioak eta horiek norbanakoen eta komunitatearen osasunean eta ingurumen jasangarriko garapenean duten eragina aurreikusteko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Ezagutza zientifikoaren eraikuntza kolektibo eta ebolutiboan aktiboki parte hartzea, haren eguneroko eta hurbileko ingurunean, pentsamendu zientifikoa hedatzeko eragile aktibo bihurtzeko, informazio zientifiko eta teknologikora eszeptiko hurbilketaren bidez, eta ingurumenaren eta osasun publikoaren zaintza, garapen ekonomikoa eta gizarte berdinzalearen bilaketa balioan jarriz. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Eguneroko gertakari fisiko-kimikoen analisian lege eta teoria zientifikoak aplikatzea, gertakarien arrazoiak ulertuz eta komunikatzeko hainbat euskarri eta bitarteko erabiliz azalduz."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Eguneroko egoeretatik abiatuta proposatutako problema fisiko-kimikoak ebaztea, lege eta teoria zientifikoak aplikatuz, soluzioak aurkituz eta argudiatuz, eta emaitzak behar bezala azalduz."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Eguneroko ingurunean egoera problematikoak identifikatzea, fisikatik eta kimikatik ekimenei ekitea eta soluzio jasangarriak bilatzea, gizartean eta ingurumenean eragindako inpaktua kritikoki aztertuz."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Hainbat problema eta behaketari erantzuna emateko hipotesiak formulatzea eta egiaztatzea, lan esperimentala, ikerketa, ebidentzien bilaketa eta arrazoitze logiko-matematikoa erraztasunez erabiliz."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Gai edo behaketa bati erantzuna bilatzeko hainbat metodo erabiltzea, lortutako emaitzak alderatuz, hala koherentzia eta fidagarritasuna ziurtatuz."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Formulatutako hipotesien baliozkotzearen prozedura garatzean lege eta teoria zientifiko ezagunak integratzea, aldagai ezberdinen arteko lotura kualitatibo eta kuantitatiboak aplikatuz, prozesua fidagarriagoa eta koherenteagoa izateko bereganatutako ezagutza zientifikoarekin."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Hainbat unitate-sistema zorroztasunez erabiltzea eta lotzea, horien idazkera eta baliokidetasuna behar bezala erabiliz, komunitate zientifiko osoarekin komunikazio eraginkorra ahalbideratuz."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Substantzia sinpleal, ioiak eta konposatu kimiko inorganiko eta organikoak behar bezala izendatu eta formulatzea, IUPAC arauak erabiliz, komunitate zientifiko osoarentzako lengoaia integratzaile eta unibertsalaren parte gisa."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Prozesu fisiko-kimiko jakin bati buruzko informazioa interpretatu eta adierazteko hainbat formatu erabiltzea, bakoitzak duen informazioa alderatuz eta, problema bat ebaztean, informazio adierazgarriena ateraz."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "3",
+      "descripcion": "Laborategian edo alorrean esperimentazio zientifikoan bereganatutako ezagutzak praktikan jartzea, materialen ezagutza eta erabiltzeko oinarrizko araudia barne hartuz, baita espazio horien berezko segurtasun-arauak ere, eta aurrerabide zientifiko eta ekintzailean esperimentazio seguruak, norberaren eta kolektiboaren integritatea arriskuan jarri gabe, duen garrantzia ulertuz."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Hainbat ikaskuntza-inguruneren, benetakoen eta birtualen, bidez hezkuntza-komunitateko beste kideekin harremanetan egotea, askotariko baliabideak, tradizionalak eta digitalak, autonomiaz, zorroztasunez eta errespetuz erabiliz eta denen ekarpenak kritikoki aztertuz."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Edukiak sortzean eta informazioa kontsultatzean, banaka eta taldean, autonomiaz eta malgutasunez lan egitea, iturri eta tresna fidagarrienak zentzuz erabiliz eta egokienak ez direnak baztertuz, hala norberaren eta taldearen ikaskuntza hobetuz."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Ezagutza zientifikoaren eraikuntzan aktiboki parte hartzea, interakzioaren, kooperazioaren eta berdinen arteko ebaluazioaren presentzia agerian jarriz, problema baten edo ikas-egoera baten ebazpenean adostasuna lortzean eztabaidatzea, hausnarketa eta elkarrizketa hobetuz."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Taldeko lanaren bidez ezagutzak eraiki eta sortzea, baita sortutako ezagutzak asimilatzea gainditzeko alternatibak bilatzea ere, analisirako, eztabaidarako eta sintesirako uneak aurkituz, txostenetan, posterretan, aurkezpenetan edota artikuluetan irudikatutako produktuak osatzea ondorio emanez. 2023ko uztailaren 24a, astelehena"
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "5",
+      "descripcion": "Zientzien garapenarekin lotutako ingurumeneko, gizarteko eta etikako hainbat gairi buruz eztabaidatzea, informazioa eta arrazoitzea oinarri, aurrerapen horien ondorioei buruzko adostasuna lortuz eta proposatutako gaiei denen arteko sormenezko soluzioak proposatuz."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Ikasleak bere eguneroko bizitzan egiten dituen ekintzen ondorioak zientifikoki identifikatzea eta arrazoitzea, horiek nola hobetu aztertuz, gizarte hobe bat eraikitzeko aktiboki parte hartzeko modu gisa."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Gizartearen beharrizanak detektatzea, horiek hobetzen laguntzeko ezagutza zientifiko egokiak aplikatzeko, bereziki eraginez alderdi garrantzitsuetan, hala nola ingurumeneko erronka handien ebazpenean, garapen jasangarrian eta osasunaren zaintzan."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Zientziaren trebetasunak eta ikerkuntza zientifikoa",
+      "titulo": "Zientziaren trebetasunak eta ikerkuntza zientifikoa",
+      "items": [
+        "Metodologia zientifikoa eta horren oinarrizko ezaugarriak gaien azalpenean, problemen ebazpenean, lan esperimentalean eta izaera zientifikoko proiektuan abiaraztean aplikatzeko irizpideak eta jarraibideak.",
+        "Ikaskuntza zientifikoko hainbat ingurune eta baliabide erabiltzea: Fisika edo Kimikako laborategiko materiala eta tresna teknologikoak behar bezala erabiltzea. Laborategian jarduteko, lan egiteko eta segurtasuneko arauak. Laborategian hondakinak kudeatzeko oinarrizko arauak eta teknikak.",
+        "Informazio zientifikoa interpretatzeko eta ekoizteko hainbat formatu, hainbat bitartekoren bidez.",
+        "Jardun zientifikoaren berezko estrategiak, lan esperimentalean zorroztasunarekin lotutakoak, eta lengoaia zientifikoaren behar bezalako erabilerarekin lotutakoak, unitate-sistemak eta tresna matematikoak behar bezala erabiltzea barne hartuz.",
+        "Informazio zientifikoaren interpretazioa eta ekoizpena, hainbat formatu eta bitarteko erabiliz: norberaren irizpidearen garapena, pentsamendu zientifikoak gizartearen hobekuntzari egiten dion ekarpenean oinarrituta, gizarte justuagoa, bidezkoagoa eta berdinzaleagoa izan dadin.",
+        "Fisika eta kimikaren mugarri historikoetan eta gaur egungo mugarrietan kultura zientifikoaren eta zientzialarien zeregina baloratzea, eta gizartearen aurrerapenean eta hobekuntzan duen isla."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Lotura kimikoa eta materiaren egitura",
+      "titulo": "Lotura kimikoa eta materiaren egitura",
+      "items": [
+        "Taula periodikoaren garapena: gaur egungo osaerari egindako ekarpen historikoak eta elementuen propietateak aurreikusteko tresna gisa duen garrantzia.",
+        "Atomoen egitura elektronikoa, erradiazio elektromagnetikoarekin interakzioaren analisiaren ondoren: elementu batek taula periodikoan duen posizioaren azalpena eta talde bakoitzeko elementu kimikoen propietateen antzekotasunen azalpena.",
+        "Atomoen eta ioien egonkortasunari buruzko teoriak: elementuen arteko loturen sorrera aurreikustea, horiek irudikatzea eta sustantzia kimikoen propietateak ondorioztatzea. Behaketaren eta esperimentazioaren bidez egiaztatzea.",
+        "Sustantzia sinpleen, ioien eta konposatu kimiko organikoen nomenklatura: konposizioa eta eguneroko bizitzan dituzten aplikazioak."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Erreakzio kimikoak",
+      "titulo": "Erreakzio kimikoak",
+      "items": [
+        "Kimikaren oinarrizko legeak: erlazio estekiometrikoak erreakzio kimikoetan eta konposatuen konposizioan. Eguneroko bizitzako kimikarekin lotutako gai kuantitatiboak ebaztea.",
+        "Erreakzio kimikoen sailkapena: kimikaren eta egungo gizarteko alderdi garrantzitsuen arteko loturak, adibidez, ingurumenaren kontserbazioa eta farmakoen garapena.",
+        "Sistema fisiko-kimikoetan materia-kantitateen kalkulua, adibidez, gas idealak edo disoluzioak eta horien propietateak: horiek eguneroko bizitzan dituzten egoeren berezko aldagai neurgarriak.",
+        "Erreakzio kimikoen estekiometria: ingeniaritza kimikoaren industria-prozesu adierazgarrienetan dituzten aplikazioak."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Kimika organikoa",
+      "titulo": "Kimika organikoa",
+      "items": [
+        "Konposatu organikoen propietate fisiko eta kimiko orokorrak, talde funtzionalen egitura kimikoetatik abiatuta: serie homologoetako orokortasunak eta mundu errealeko aplikazioak.",
+        "2023ko uztailaren 24a, astelehena IUPAC arauak konposatu mono eta polifuntzional batzuk behar bezala formulatu eta izendatzeko (hidrokarburoak, konposatu oxigenatuak eta konposatu nitrogenatuak)."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "E",
+      "bloque": "E. Zinematika",
+      "titulo": "Zinematika",
+      "items": [
+        "Objektu batek, kanpoko indarrarekin edo gabe, izan ditzakeen mugimendu ezberdinen denboraren araberako aldagai zinematikoak: fisikarekin eta eguneroko ingurunearekin lotutako benetako egoeren ebazpena.",
+        "Mugimendu zuzen eta zirkularrean eragiten duten aldagaiak: magnitudeak eta erabilitako unitateak. Ibilbide mota horiek dituzten eguneroko mugimenduak.",
+        "Mugimendu konposatu baten ibilbidearen eta hori deskribatzeko magnitudeen arteko lotura."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "F",
+      "bloque": "F. Estatika eta dinamika",
+      "titulo": "Estatika eta dinamika",
+      "items": [
+        "Partikula baten eta solido zurrun baten portaera estatiko edo dinamikoaren aurreikuspena, osaera bektorialetatik abiatuta eta indar pare baten eraginpean.",
+        "Partikula baten gainean aplikatutako mekanika bektorialaren eta bere atseden- edo mugimendu-egoeraren arteko erlazioa: fisikaren aplikazio estatiko edo dinamikoak beste eremuetan, adibidez, ingeniaritzan edo kirolean.",
+        "Dinamikaren legeen interpretazioa, magnitudeen terminoetan, momentu lineala eta bultzada mekanikoa kasu: benetako munduan aplikazioak."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "G",
+      "bloque": "G. Energia",
+      "titulo": "Energia",
+      "items": [
+        "Lan- eta potentzia-kontzeptuak: eguneroko ingurunearen sistema mekanikoen edo elektrikoen energia-kontsumoari eta errendimenduari buruzko hipotesiak egitea.",
+        "Sistema sinple baten energia potentziala eta energia zinetikoa: sistema kontserbatzaile eta ez-kontserbatzaileetan energia mekanikoa kontserbatzeko eta mundu errealean objektuen mugimendua eragiten duten kausak aztertzeko aplikazioa.",
+        "Sistema baten aldagai termodinamikoak, baldintzen arabera: esperimentatzen dituen tenperatura-aldaketen zehaztapena eta ingurunearekin gertatzen diren energia-transferentziak."
+      ],
+      "codigos_items": []
+    }
+  ],
+  "comunidad": "pais-vasco",
+  "idioma": "eu"
+}

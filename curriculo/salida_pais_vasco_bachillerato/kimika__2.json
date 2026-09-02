@@ -1,0 +1,290 @@
+{
+  "materia_oficial": "KIMIKA",
+  "materia": "Kimika",
+  "etapa": "Bachillerato",
+  "ciclo": "Único",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Prozesu kimikorik garrantzitsuenen oinarriak ulertzea, deskribatzea eta aplikatzea, haien oinarri esperimentala eta deskribatzen dituzten fenomenoak kontuan hartuz, kimikak gizartearen garapenean betetzen duen zeregin garrantzitsua ezagutzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Sistema materialen propietateak aztertzearen bidez kimikaren ereduak eta legeak baliatzea, kimikaren aplikazio praktikoei eta ingurumenean dituzten ondorioei lotutako eguneroko problemetarako konponbide orokorrak ondorioztatzeko. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Hizkuntza kimikoaren kodeak (nomenklatura kimikoa, unitateak, ekuazioak eta abar) zuzen erabiltzea, erregela espezifikoak aplikatuz, komunitate zientifiko desberdinen arteko komunikazio egoki baterako oinarri gisa eta kimikaren ikerketarako funtsezko tresna gisa erabiltzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Produktu eta prozesu kimikoen erabilera arduratsuak duen garrantzia ezagutzea, kimikak egungo gizartean duen eragin positiboari buruzko argudio informatuak landuz, askotan “kimiko” terminoari ematen zaizkion konnotazio negatiboak gainditzen laguntzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Kimikako problemak ebaztean eta lotutako egoerak interpretatzean zientzia esperimentalen eta arrazoibide logiko-matematikoaren berezko lan-teknikak aplikatzea, kooperazioaren garrantzia baloratuz, balio etiko eta iraunkorretan oinarritutako gizarte batean kimikak beteko duen zereginaren balioa agerian jartzeko. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Kimika jakintza-arlo diziplina anitzeko eta moldakorra gisa ezagutzea eta aztertzea, beste zientzia eta jakintza-arlo batzuekiko loturak agerian utziz, haren bidez ezagutza zientifiko eta globalerako hurbilketa holistiko bat egiteko.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Kimikak eta beste arlo batzuekin dituen loturek gizartearen garapenean, zientziaren aurrerapenean, teknologian, ekonomian eta ingurumena errespetatuko duen garapen iraunkorrean duten garrantzia ezagutzea, kimikak alderdi horietan egin dituen eta funtsezkoak izan diren aurrerapenak identifikatuz."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Ingurunean gertatzen diren prozesu kimiko nagusiak eta sistema materialen propietateak deskribatzea, kimikaren barruko diziplinen berezko ezagutzen, trebetasunen eta jarreren bidez."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Kimikaren izaera esperimentala eta diziplinartekoa eta ikerketa zientifikoan eta egungo lan- eta ekonomia-esparruetan duen eragina ezagutzea, gertakari enpirikoak eta ezagutzaren eta giza jardueraren beste eremu batzuetan dituen aplikazioak kontuan hartuz. 2023ko uztailaren 24a, astelehena 2. konpetentzia espezifikoa."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Kimikaren printzipioak zientziaren garapenari lotutako egungo arazo nagusiekin lotzea, komunikabideetan nola komunikatzen diren eta eguneroko esperientzian nola ikusten diren aztertuz."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Kimikaren oinarriak gizarte-, ekonomia-, politika- eta etika-arloetako gai esanguratsuak aztertzeko eta eztabaidatzeko testuinguruaren barruan ezinbesteko ezagutza-multzoa direla onartzea eta jakinaraztea, eta oinarri horiek eremu horietan duten presentzia eta eragina identifikatuz."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Kimikaren ereduak eta legeak modu informatu, koherente eta arrazoituan aplikatzea, esperimentuen, fenomeno naturalen, industria-prozesuen eta aurkikuntza zientifikoen ondorioak azalduz eta iragarriz. 3. konpetentzia espezifikoa."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "IUPACen nomenklatura-arauak komunitate zientifiko osoan komunikazio eraginkorra ahalbidetuko duen kimikarako hizkuntza unibertsal baten oinarri gisa zuzen erabiltzea, arau horiek hainbat espezie kimikoren formulak eta izenak ezagutzean eta idaztean aplikatuz."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Kimika ikastean lortzen den pentsamendu zientifikoa garatzen laguntzeko tresna matematikoak zorrotz erabiltzea, tresna horiek problemak ebazteko aplikatuz eta, horretarako, ekuazioak, unitateak, eragiketak eta abar erabiliz."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Laborategian eta beste ingurune batzuetan substantzia kimikoak manipulatzearekin lotutako segurtasun-arauak praktikatzea eta errespetaraztea, bai eta hondakinak behar bezala kudeatzeko eta ezabatzeko prozedurak ere, kimikaren komunikazio-kode bereizgarriak behar bezala erabiliz. 4. konpetentzia espezifikoa."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Ingurunerik hurbilenean, ingurune naturalean eta ingurune industrial eta teknologikoan dauden sistema materialen konposizio kimikoa aztertzea, haien propietateak, aplikazioak eta onurak kimikaren printzipioetan oinarrituta daudela frogatuz."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Substantzia jakin batzuek ingurunean eta osasunean dituzten ondorio negatiboak zientzia kimikoak eragiten ez dituela eta produktu horiek oker edo zabarkeriaz erabiltzearen emaitza direla era informatuan argudiatzea, kimikaren teoriak eta legeak aplikatuz."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Teknologia kimikoari lotutako produktu ugariren onurak zein diren eta haien erabilerak eta aplikazioak gizartearen aurrerapenean nola lagundu duten azaltzea, ezagutza zientifiko egokiak erabiliz. 5. konpetentzia espezifikoa."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Hainbat diziplina zientifikotako espezialisten arteko kolaborazio-lanak kimikari egindako ekarpen handia ezagutzea, diziplina bakoitzaren berezko legeen eta teorien arteko konexioak agerian jarriz."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Kimikak pentsamendu zientifikoaren garapenari eta pentsamendu kritikoaren autonomiari egindako ekarpena ezagutzea, diziplina zientifikoen berezko lan-metodologiak praktikan jarriz."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "5",
+      "descripcion": "Kimikari lotutako problemak ebaztea eta kimikari lotutako egoerak aztertzea, taldeko kide bakoitzak egiten duen ekarpenaren garrantziaz eta pentsamendu-aniztasunaz jabetuz eta lantaldeen barruan gizarte-trebetasun positiboak sendotuz."
+    },
+    {
+      "codigo": "5.4",
+      "competencia": "5",
+      "descripcion": "Zailtasun handienak dituzten kimika-kontzeptuak eraginkortasunez irudikatzea eta bistaratzea, tresna digitalak eta askotariko baliabideak erabiliz, laborategi erreal eta birtualeko esperientziak barne. 6. konpetentzia espezifikoa."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Kimikaren oinarrian dauden funtsezko kontzeptuak azaltzea eta arrazoitzea, beste diziplina zientifiko batzuen (eta, bereziki, Fisikaren) kontzeptuak, legeak eta teoriak aplikatuz, esperimentazioaren eta ikerketaren bidez."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Beste diziplina zientifiko batzuen (hala nola biologiaren edo teknologiaren) funtsezko ideiak ondorioztatzea, haien oinarrizko edukien eta kimikaren berezko lege eta teorien arteko erlazioaren bidez."
+    },
+    {
+      "codigo": "6.3",
+      "competencia": "6",
+      "descripcion": "Kimikaren problema eta alderdi bereizgarriak ebaztea, matematikak eta teknologiak eskaintzen dituzten tresnak erabiliz eta, era horretan, fenomeno esperimental eta naturalen eta diziplina honen berezko kontzeptuen arteko erlazioa ezagutuz. 2023ko uztailaren 24a, astelehena"
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Zientziaren eta ikerketa zientifikoaren trebetasunak",
+      "titulo": "Zientziaren eta ikerketa zientifikoaren trebetasunak",
+      "items": [
+        "Gaiak planteatzean, problemak ebaztean, lan esperimentala egitean eta proiektu zientifikoei ekitean metodologia zientifikoa eta haren oinarrizko ezaugarriak aplikatzeko irizpideak eta jarraibideak.",
+        "Ikaskuntza zientifikorako hainbat ingurune eta baliabideren erabilera: Fisikako edo Kimikako laborategiko materialaren eta tresna teknologikoen erabilera egokia. Laborategiko portaera-, lan- eta segurtasun-arauak. Laborategian hondakinak kudeatzeko oinarrizko arauak eta teknikak.",
+        "Hainbat euskarrietatik abiatuta, informazio zientifikoa interpretatu eta ekoizteko formatu desberdinak.",
+        "Lan zientifikoaren berezko estrategiak, lan esperimentalaren zorroztasun eta doitasunari eta hizkuntza zientifikoaren erabilera zuzenari lotuak, unitate-sistemen eta tresna matematikoen erabilera egokia barne.",
+        "Kultura zientifikoaren, emakume gizon-zientzialariek kimikaren mugarri historikoetan eta egungoetan bete duten zereginaren eta gizartearen aurrerapenean eta hobekuntzan duten islaren balorazioa."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "B.1",
+      "bloque": "B.1. Lotura kimikoa eta materiaren egitura · Espektro atomikoak",
+      "titulo": "Lotura kimikoa eta materiaren egitura · Espektro atomikoak",
+      "items": [
+        "Espektro atomikoak, eredu atomikoa berrikusteko beharraren erantzule gisa. Fenomeno horrek eredu atomikoaren garapen historikoaren testuinguruan duen garrantzia.",
+        "Elementuen igorpen-espektroaren eta xurgapen-espektroaren interpretazioa. Atomoaren egitura elektronikoarekiko erlazioa."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "B.2",
+      "bloque": "B.2. Lotura kimikoa eta materiaren egitura · Egitura atomikoaren printzipio kuantikoak",
+      "titulo": "Lotura kimikoa eta materiaren egitura · Egitura atomikoaren printzipio kuantikoak",
+      "items": [
+        "Espektro atomikoen fenomenoaren eta energiaren kuantizazioaren arteko erlazioa. Bohr-en eredutik eredu mekano-kuantikoetara: hainbat mailatako egitura elektroniko baten beharra.",
+        "Heisenberg-en ziurgabetasunaren printzipioa eta elektroiaren uhina-korpuskulua izaera bikoitza “Orbital” kontzeptuaren izaera probabilistikoa.",
+        "Zenbaki kuantikoak eta Pauliren esklusio-printzipioa. Atomoaren egitura elektronikoa. Moeller-",
+        "en diagramaren erabilera elementu kimikoen konfigurazio elektronikoa idazteko."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "B.3",
+      "bloque": "B.3. Lotura kimikoa eta materiaren egitura · Taula periodikoa eta atomoen propietateak",
+      "titulo": "Lotura kimikoa eta materiaren egitura · Taula periodikoa eta atomoen propietateak",
+      "items": [
+        "Taula periodikoaren jatorriaren izaera esperimentala, elementuak beren propietateen arabera taldekatzeari dagokionez. Egungo teoria atomikoa eta behatutako lege esperimentalekin duen erlazioa.",
+        "Elementu batek taula periodikoan duen posizioa, haren konfigurazio elektronikoaren arabera.",
+        "Joera periodikoak. Taulako elementuen propietateen balioen aurreikuspenean duten aplikazioa, taulako posizioaren arabera.",
+        "Lotura kimikoa eta molekulen arteko indarrak.",
+        "Lotura motak, osatzen dituzten elementu indibidualen ezaugarrien arabera. Molekulen, kristalen eta egitura makroskopikoen osaeran inplikatutako energia. Substantzia kimikoen propietateak.",
+        "Lewis-en ereduak, balentzia-geruzaren elektroi bikotearen pareen aldarapenaren teoria (BGE- PAT) eta orbitalen hibridazioa. Konposatu molekularren konfigurazio geometrikoa eta solidoen ezaugarria.",
+        "Born-Haber zikloa. Kristal ionikoak sortzean trukatutako energia.",
+        "Hodei elektronikoaren ereduak eta banden teoria kristal metalikoen propietate bereizgarriak azaltzeko.",
+        "Molekulen arteko indarrak lotura kimikoaren ezaugarrien eta molekulen geometriaren arabera.",
+        "Konposatu molekularren propietate makroskopikoak."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "C.1",
+      "bloque": "C.1. Erreakzio kimikoak · Termodinamika kimikoa",
+      "titulo": "Erreakzio kimikoak · Termodinamika kimikoa",
+      "items": [
+        "Termodinamikaren lehen printzipioa: sistemen arteko energia-trukeak beroaren eta lanaren bidez.",
+        "Ekuazio termokimikoak. “Erreakzio-entalpia” kontzeptua. Prozesu endotermikoak eta exotermikoak.",
+        "Produktuen eta erreaktiboen arteko energia-balantzea Hess-en legearen arabera, formazio-",
+        "entalpia estandarraren edo lotura-energien bidez erreakzio baten entalpia lortzeko.",
+        "2023ko uztailaren 24a, astelehena Termodinamikaren bigarren printzipioa. Entropia, prozesu kimikoen espontaneotasuna eta itzulezintasuna eraginpean hartzen dituen magnitudea.",
+        "Erreakzio kimikoen Gibbs-en energiaren kalkulua eta haien espontaneotasuna sistemaren tenperaturaren arabera."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "C.2",
+      "bloque": "C.2. Erreakzio kimikoak · Zinetika kimikoa",
+      "titulo": "Erreakzio kimikoak · Zinetika kimikoa",
+      "items": [
+        "Talka-teoria, erreakzio kimikoen eskala mikroskopikoko eredu gisa. “Erreakzio-abiadura” eta “aktibazio-energia” kontzeptuak.",
+        "Erreakzio-baldintzek erreakzioaren abiaduran duten eragina.",
+        "Erreakzio kimiko baten abiaduraren lege diferentziala eta erreakzio-ordenak, erreakzio-abiadurari buruzko datu esperimentaletatik abiatuta."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "C.3",
+      "bloque": "C.3. Erreakzio kimikoak · Oreka kimikoa",
+      "titulo": "Erreakzio kimikoak · Oreka kimikoa",
+      "items": [
+        "Oreka kimikoa prozesu dinamiko gisa: abiadura-ekuazioak eta alderdi termodinamikoak. Oreka-konstantearen adierazpena masa-ekintzaren legearen bidez.",
+        "Erreakzioen oreka-konstantea erreaktiboak egoera fisiko desberdinetan daudenean. Kc-ren, Kp-ren eta disolbagarritasun-produktuaren arteko erlazioa oreka heterogeneoetan.",
+        "Le Châtelier-en printzipioa eta erreakzio-kozientea. Orekan dauden sistemen bilakaera, sistemaren kontzentrazio-, presioedo tenperatura-baldintzen aldakuntzaren arabera."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "C.4",
+      "bloque": "C.4. Erreakzio kimikoak · Azido-base erreakzioak",
+      "titulo": "Erreakzio kimikoak · Azido-base erreakzioak",
+      "items": [
+        "Substantzia baten izaera azidoa edo basikoa, Arrhenius-en eta Brønsted eta Lowry-ren teorien arabera.",
+        "Azido eta base sendoak eta ahulak. Disoziazio-maila uretako disoluzio batean.",
+        "Disoluzio azidoen eta basikoen pH-a. Ka eta Kb konstanteen adierazpena. “Azido-base bikote konjugatu” kontzeptua. Disoluzioen izaera azidoa edo basikoa, gatz baten hidrolisia gertatzen denean.",
+        "Azidoen eta baseen arteko erreakzioak. “Neutralizazio” kontzeptua. Azido-base bolumetriak.",
+        "Ingurumena kontserbatzeko prozesuan eragin berezia duten industria- eta kontsumo-mailako azido eta base garrantzitsuak."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "C.5",
+      "bloque": "C.5. Erreakzio kimikoak · Erredox erreakzioak",
+      "titulo": "Erreakzio kimikoak · Erredox erreakzioak",
+      "items": [
+        "Oxidazio-egoera. Erreakzio batean murrizten edo oxidatzen diren espezieak, oxidazio-zenbakiaren aldakuntzaren arabera.",
+        "Oxidazio-erredukzio ekuazio kimikoak doitzeko ioi-elektroi metodoa. Kalkulu estekiometrikoak.",
+        "Erredox bolumetriak.",
+        "Erredox bikote baten potentzial estandarra. Bi erredox bikote inplikatzen dituzten prozesu kimiko eta elektrokimikoen espontaneotasuna.",
+        "Faraday-ren legeak: karga elektrikoaren kantitatea eta substantzia kantitateak prozesu elektrokimiko batean. Kalkulu estekiometrikoak upel elektrolitikoetan.",
+        "Oxidazio- eta erredukzio-erreakzioak bateria elektrikoen, upel elektrolitikoen eta erregai-pilen fabrikazioan eta funtzionamenduan, eta metalen korrosioaren prebentzioan."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "D.1",
+      "bloque": "D.1. Kimika organikoa · Isomeria",
+      "titulo": "Kimika organikoa · Isomeria",
+      "items": [
+        "Konposatu organikoen formula molekularrak eta garatuak. Isomeria estrukturala: motak.",
+        "Eredu molekularrak edo molekulen 3D irudikapenerako teknikak. Konposatu baten isomero espazialak eta haien propietateak."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "D.2",
+      "bloque": "D.2. Kimika organikoa · Erreaktibitate organikoa",
+      "titulo": "Kimika organikoa · Erreaktibitate organikoa",
+      "items": [
+        "Funtzio organikoen propietate kimiko nagusiak. Portaera disoluzioan edo erreakzio kimikoetan.",
+        "Erreakzio organiko mota nagusiak. Konposatu organikoen arteko erreakzioaren produktuak eta dagozkien ekuazio kimikoak."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "D.3",
+      "bloque": "D.3. Kimika organikoa · Polimeroak",
+      "titulo": "Kimika organikoa · Polimeroak",
+      "items": [
+        "Polimeroak osatzeko prozesua, dagozkien monomeroetatik abiatuta. Egitura eta propietateak.",
+        "Polimeroen sailkapena izaeraren, egituraren eta konposizioaren arabera. Aplikazioak, propietateak eta lotutako ingurumen-arriskuak.",
+        "2023ko uztailaren 24a, astelehena"
+      ],
+      "codigos_items": []
+    }
+  ],
+  "comunidad": "pais-vasco",
+  "idioma": "eu"
+}

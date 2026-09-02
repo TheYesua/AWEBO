@@ -108,7 +108,8 @@ campo y no lo traen, así que para ellos vale el valor por defecto, `ceuta`.)*
 | Cataluña (Decret 175/2022 + XTEC) | 26 | 36 | 737 | 1918 |
 | Andalucía (Orden 30/05/2023) | 19 | 41 | 737 | 957 |
 | Galicia (Decreto 156/2022 + Guía LOMLOE) | 30 | 60 | 1583 | 4643 |
-| País Vasco (Decreto 77/2023) | 32 | 43 | 733 | 1479 |
+| País Vasco (Decreto 77/2023) | 32 | 43 | 733 | 1491 |
+| País Vasco · Bachillerato (Decreto 76/2023) | 65 | 75 | 1144 | 2349 |
 
 Un bloque es un par `(materia, cursos)`: Andalucía y Galicia publican curso a
 curso y por eso tienen más bloques que materias, mientras que Cataluña agrupa
@@ -119,6 +120,13 @@ El País Vasco agrupa por **ciclos** —«1.º y 2.º», «3.º y 4.º»—, as�
 bloques son pocos para las materias que tiene. Las 32 materias salen de 30
 títulos del Anexo III: Matemáticas de 4.º se desdobla en los itinerarios A y B,
 que tienen currículos distintos.
+
+Bachillerato es la **única etapa cargada que no es la ESO**, y de momento solo
+del País Vasco. Sale del mismo lector —`extractor_bopv.py --etapa bachillerato`,
+Anexo II del Decreto 76/2023— y tiene el doble de materias que la ESO porque
+suma las cuatro modalidades y sus optativas. Los cursos no están en el anexo:
+se transcriben de los artículos 11 a 15 en `app/curriculo/bopv_etapas.py`, y
+ahí se explica por qué a mano.
 
 Empezó siendo cuatro materias —Tecnología, Lengua, Matemáticas e Inglés—, que
 es el alcance con el que nació el proyecto como TFG.

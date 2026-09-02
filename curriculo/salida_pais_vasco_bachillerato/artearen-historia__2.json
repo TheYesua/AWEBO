@@ -1,0 +1,227 @@
+{
+  "materia_oficial": "ARTEAREN HISTORIA",
+  "materia": "Artearen Historia",
+  "etapa": "Bachillerato",
+  "ciclo": "Único",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Arte-terminologia espezifikoa ezagutu eta erabiltzea, Artearen Historiako edozein garaitako artelanen eta artisten ezaugarri formal, tekniko eta adierazkor esanguratsuenak argi eta koherentziaz adierazteko, eta norberaren gogoetak arin, ahoz edota sintesi, laburpen, txosten, aipamen edo berezko aurkezpenen bidez komunikatzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Estilo artistiko nagusiak identifikatzea eta ezaugarritzea, informazioa hautatuz eta haien artean sortzen diren eragin-, mailegu-, jarraitutasun- eta haustura-harremanak ezagutuz, artearen historiaren bilakaera zuzentzen duten mekanismoak ulertzeko eta edozein garai eta kulturatako arte-adierazpenekiko errespetua eta estimua garatzeko. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Arte-adierazpen garrantzitsuenak aztertzea eta espazioan eta denboran kokatzea, haien ezaugarri teknikoak, formalak, funtzioa eta ingurune sozial, politiko eta kulturala iruzkinduz, artelanak eta artistak korronte jakin baten adierazle gisa eta bere garaiko eta esparruko adierazpide gisa baloratzeko eta bere sormena balioesteko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Arte-mintzairak ezagutzea eta ideien, desioen eta emozioen komunikazio eta adierazpide estetikorako bide gisa identifikatzea, esparru artistikoarekin zerikusia duten komunikazio-egoeretan jarrera kooperatiboz parte hartuz, nork bere iritziak eta sentimenduak koherentziaz eta arintasunez adierazteko, besteen estimazio eta adierazpideekiko errespetua eta enpatia gordeta. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Arteak historian zehar izan dituen funtzioak eta kontzeptzioak bereiztea eta aztertzea, informazioa modu kritikoan hautatuz eta aztertuz eta horren ikuspegi orokorra lortuz, ekoizpen anitzak giza sormenaren emaitza gisa baloratzeko eta artelanei buruzko iritzi arrazoituak eta informatuak emateko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Artearen historian izandako aldaketa estetikoak eta edertasun-kanonak deskribatzea, zenbait estilo, garai eta tokitako artelanen arteko analisi konparatiboak eginez, artisten eta irudikatutako pertsonaien psikologia eta asmoa atzematen ikasteko, eta aniztasunarekiko sentsibilitatea eta errespetua lortzea ahalbidetuko duen heldutasun pertsonala lortzeko, estereotipoak eta aurreiritziak gaindituz. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    },
+    {
+      "codigo": "7",
+      "descripcion": "Tokiko, nazioko eta munduko Ondare Artistikoa identifikatzea eta baloratzea, identitate indibidual eta kolektiboak eta kulturalak definitzen eta transmititzen dituen elementu gisa, betiere haren funtzioen eta kudeaketaren adibide zehatzak modu kritikoan eta elkarrizketaren bidez ikertuz eta aztertuz, ondare artistikoaren kontserbaziorako eta hedapenerako konpromiso arduratsua hartzeko eta Garapen Iraunkorreko Helburuak lortzearekin erlazionatzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "8",
+      "descripcion": "Artearen Historiaren ikasketan genero-ikuspegia txertatzea, obra garrantzitsuetan aztertuz emakumeak zer zeregin bete duen eta emakumeen zer irudi eman den estilo eta mugimendu artistikoetan, emakumezko artistak ikusarazteko eta benetako berdintasuna sustatzeko. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Artearen historiaren jakintzagaiko terminologia espezializatuari dagozkion kontzeptu nagusiak ezagutzea eta erabiltzea, kontzeptu horiek behar bezala aplikatuz edozein garaitako obra orori buruzko irizpen formalak eta teknikoak argitasunez eta koherentziaz adierazteko, gogoeta pertsonalak arin komunikatzeko eta norberaren produktuak egiteko."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Historiako estilo artistiko nagusiak identifikatzea, informazioa hautatuz, oinarrizko ezaugarriak eta horiek denboran izan duten garapena deskribatuz eta arte-adierazpen guztiekiko errespetua erakutsiz."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Artearen historiaren bilakaera zuzentzen duten mekanismoak ezagutzea eta azaltzea, zenbait garaitako artelanen analisi konparatibotik, eta estiloen, artisten eta mugimenduen artean sortzen diren eragin, mailegu, jarraipen eta hausturako erlazioen azalpenetik abiatuta."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Zenbait hizkuntza, mugimendu artistiko eta garaitako artelanak aztertzea eta iruzkintzea, haien ezaugarri bereziak (teknikoak, formalak, funtzioa...) antzemanez baita egileak dagozkien korronteen adierazgarri gisa ere, prozeduraren ikuspegi orokorra erakutsiz eta sormena baloratuz."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Artelanak beren testuinguru ideologikoan, erlijiosoan, sozialean, politikoan, kulturalean eta ekonomikoan kokatzea, aurreiritziak saihestuz, erlazio horiek azalduz eta aurreko eta ondorengo testuinguruekin loturak bilatuz, irizpen kritiko eta arrazoitu baten bidez."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Arte-mintzairak ezagutzea, garai, une historiko, kultura, genero, estilo edo artista bakoitzari dagozkion bai teknikak, bai kode adierazgarriak eta bisualak ezagutuz."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Artelanak komunikabide gisa betetzen duten paperari buruzko iritziak sortzea, esparru artistikoarekin lotutako komunikazio-egoeretan jarrera kooperatiboz parte hartuz, ideiak argi, koherentziaz eta arintasunez adieraziz, eta besteen iritzi eta adierazpenekiko errespetua eta enpatia erakutsiz."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Zenbait artelanek beren testuinguruari dagokionez betetzen duten funtzioa bereiztea, informazioa hautatzetik eta adibide zehatzak aztertzetik abiatuta, horren guztiaren ulermen eta irizpen kritiko eta arrazoitua erakutsiz."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Artearen kontzepzioa historian zehar modu kritikoan aztertzea eta azaltzea, artearen kodeak, mintzairak, sinboloak eta interpretazioak aintzat hartuz, ekoizpenen aniztasuna, giza sormenaren emaitza gisa, modu arrazoituan eta informatuan baloratuz eta haiekiko errespetua erakutsiz."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Artearen historian edertasunaren ideia sozialak eta filosofikoak eta haren proiekzio estetikoko kanonek izan duten bilakaera ezagutzea eta azaltzea, dagozkien artelanetan identifikatuz eta etapa bakoitzeko ikuspegi nagusia aztertuz, aldi desberdinetako adibideen azterketa konparatiboaren bidez."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Estilo eta garai desberdinetako artelanetan edertasun-kanon desberdinei buruzko nork bere argudioak egitea, irudikapen horien formak eta helburuak identifikatuz, aniztasuna aberastasun-iturri gisa aintzat hartuz eta estereotipoak eta aurreiritziak gaindituz."
+    },
+    {
+      "codigo": "7.1",
+      "competencia": "7",
+      "descripcion": "Artelan nabarmen batzuk kultura-adierazpen eta identitate indibidual eta kolektiboen adierazpen transmisore gisa definitzen dituzten elementuak identifikatzea, horretan lagungarri izan diren baliabide estetiko eta ikonografikoen erabilera, modu kritikoan eta elkarrizketan, historiaren garai guztietako adibide zehatzak aztertuz. 2023ko uztailaren 24a, astelehena"
+    },
+    {
+      "codigo": "7.2",
+      "competencia": "7",
+      "descripcion": "Ondare artistikoaren garrantzia azaltzea eta baloratzea, ondare hori eskuratzeko, kontserbatzeko eta hedatzeko prozesuei buruz eta haren funtzioei buruz ikertuz, ondare hori arautzen duten legeen existentzia ezagutuz, artista sortzailearekin zerikusirik ez duten ekintzek arte-lanetan duten eragin positiboaz eta negatiboaz jabetuz eta egungo artea Garapen Iraunkorreko Helburuak lortzeko kontzientziazio-tresna gisa hartuz."
+    },
+    {
+      "codigo": "8.1",
+      "competencia": "8",
+      "descripcion": "Artearen historiako emakumezko figura nagusien ibilbidea eta garrantzi artistikoa ezagutu eta azaltzea, emakumea artista gisa ikusaraziz, bere lanaren garapenaren testuinguru politiko, sozial eta kulturala aztertuz, eta testuinguru horretan bere burua baliatzeko egindako ahalegina aintzatetsiz."
+    },
+    {
+      "codigo": "8.2",
+      "competencia": "8",
+      "descripcion": "Emakumeek artearen historian duten irudiaren eboluzioa kritikoki aztertzea, hainbat mugimendu, artelan garrantzitsuen iruzkina, eta irudi femeninoa irudikatuta dagoen zenbait garai eta kulturatako obren analisi konparatiboa eginez, elementu teknikoetan, formaletan eta estilistikoetan oinarrituta."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Artearen historiari hurbilketa",
+      "titulo": "Artearen historiari hurbilketa",
+      "items": [
+        "1. Artearen terminologia eta hiztegi espezifikoa, arkitekturan, eskulturan eta pinturan.",
+        "2. Arte-ekoizpenak aztertzeko tresnak: elementu teknikoak, formalak eta estilistikoak, haien esanahia, identifikazioa, testuingurua eta garrantzia. Analisi konparatiboa.",
+        "3. Artearen kontzeptua eta funtzioak historian zehar.",
+        "4. Arte-mintzairak komunikazio-bide gisa. Artean dauden askotariko kodeak. Sormeneko eta iritzi estetikoko subjektibotasuna.",
+        "5. Eraginak, maileguak, jarraipenak eta hausturak Artearen historian.",
+        "6. Herritartasun etikoa ingurune analogiko eta digitaletan: artelana, egile-eskubideak eta jabetza intelektualarekiko errespetua. Informazioa, desinformazioa eta manipulazioa."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Artea eta bere funtzioak historian zehar",
+      "titulo": "Artea eta bere funtzioak historian zehar",
+      "items": [
+        "1. Artea eta bere funtzio magiko-erlijiosoa. Historiaurreko artea: interpretazio-teoriak, ezaugarri nagusiak, aroak eta adibideak. Labar-artea eta Arte higigarria Europan.* Arte etnikoa historiaurreko kulturak ulertzeko laguntza gisa.",
+        "2. Artea eta bere funtzio politikoa, boterearen komunikazio-tresna gisa. Testuinguruan kokatutako kasuen azterketa, ezaugarri nagusiak, aroak, artistak, adibideak eta bilakaera:",
+        "Arte mesopotamiarra, Arte egiptoarra eta Arte erromatarra.",
+        "Gustuaren ordenamendu ofizialaren erabilera napoleonikoa: Arte neoklasikoa.",
+        "Sobietar Errepublika Sozialisten Batasuneko Errealismo sozialista, estetika faxista italiarra, nazi alemaniarra eta haren interpretazioa Espainia frankistan: pentsamendu politikoaren adierazpenaren adibideak arkitekturan, eskulturan, pinturan, karteletan, argazkilaritzan eta zineman.",
+        "Artearen eta interes politiko eta ekonomikoen arteko harremana, Aro garaikideko herritar berriak prestatzeko.",
+        "3. Artea eta bere funtzio estetikoa. Arte grekoaren azterketa, testuinguruan kokatzea, ezaugarri nagusiak, aroak, artistak, adibideak eta bilakaera.",
+        "4. Artea eta bere funtzio propagandistikoa. Artea kontsumo-gizartean —artelana kontsumo-objektu gisa eta publizitatea gizartearen isla gisa (gustuak, ezinikusiak eta kontsumo-ohiturak)—. Pop art-etik artelanen auraren galerara, Walter Benjamin-en iritziz.",
+        "5. Artea eta bere funtzio pedagogiko erlijiosoa gizarte teozentrikoetan. Azterketa, testuinguruan kokatzea, ezaugarri orokorrak, aroak, adibideak, bilakaera eta kasuen arteko erlazioa:",
+        "Arte paleokristaua eta Arte bizantziarra.",
+        "Arte islamiarra Penintsula iberikoan.",
+        "Arte erromanikoa eta Arte gotikoa.",
+        "Arte erromanikoaren eta Arte gotikoaren gorabehera Euskal Herrian.",
+        "2023ko uztailaren 24a, astelehena 6. Artea eta gizarte-bereizle gisa betetzen duen funtzioa: mezenasgoa eta bilduma- zaletasuna. Azterketa, testuinguruan kokatzea, ezaugarri orokorrak, aroak, adibideak, bilakaera eta kasuen arteko erlazioa:",
+        "Errenazimenduko artea.",
+        "Arte barrokoa.",
+        "Errenazimendua eta Barrokoa Euskal Herrian.",
+        "7. Artea eta bere funtzio kritikoa. Azterketa, testuinguruan kokatzea, ezaugarri orokorrak, aroak, adibideak, bilakaera eta kasuen arteko erlazioa:",
+        "Goyaren pintura.",
+        "Erromantizismoa.",
+        "Errealismoa.",
+        "Dadaismoaren ukapenetik eta transgresiotik Surrealismoaren baieztapenera.",
+        "Neodadaismoa.",
+        "Pop artea.",
+        "8. Artea, eta arteak sentimenduak eta emozioak komunikatzeko betetzen duen funtzioa. Testuinguruan kokatzea, ezaugarri orokorrak, aroak, adibideak eta bilakaera:",
+        "Erromantizismoa.",
+        "Pintura inpresionista eta postinpresionista.",
+        "Fauvismo frantziarra.",
+        "Espresionismoa eta Espresionismo abstraktua.",
+        "9. Artea eta aurrerapen teknologikoak, Industria Iraultzatik aro digitalera.",
+        "Industria Iraultza: material berriak, joera arkitektoniko berriak, espazioaren ikuskera berria eta hiri-zabalguneak.",
+        "Testuinguruan kokatzea, ezaugarri orokorrak, aroak, adibideak eta bilakaera:",
+        "Funtzionalismo arkitektonikoa.",
+        "Futurismoa.",
+        "Argazkilaritzaren eta zinemaren iraultza.",
+        "Postmodernitatea eta Arte digitala.",
+        "10. XIX. eta XX. mendeetako artea Euskal Herrian. Adibideak: Adolfo Guiard, Arteta, Iturrino, Oteiza eta Chillida. Pintura berria eta euskal eskultura: Ruiz Balerdi, Zumeta, Dora Salazar, Txomin Badiola, Cristina Iglesias, Juan Luis Moraza.",
+        "11. Artisautzatik diseinura. Testuinguruan kokatzea, ezaugarri orokorrak, aroak, adibideak eta bilakaera: Modernismoa, Art Noveau eta Art Decó.",
+        "12. Artea eta Abstrakzioa. Testuinguruan kokatzea, ezaugarri orokorrak, aroak, adibideak eta bilakaera:",
+        "Kubismoa.",
+        "Suprematismoa eta Neoplastizismoa.",
+        "Abangoardiako eskultura.",
+        "Europako Informalismoa.",
+        "Abstrakzio postpiktorikoa."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Artearen dimentsio indibidual eta soziala",
+      "titulo": "Artearen dimentsio indibidual eta soziala",
+      "items": [
+        "1. Artea eta identitate indibiduala eta kolektiboa. Geure burua irudikatzeko beharra: giza gorputzaren irudia eta erretratua. Artistaren irudiaren bilakaera. Eskolak, erregionalismoak eta identitate kolektiboak.",
+        "2. Emakumea artean:",
+        "Emakumearen irudikapena, ikuspegi kritikotik.",
+        "Emakumeak artista gisa eta ikusgarritasuna lortzeko egin duten borroka, historian zehar. Artemisia Gentileschi-tik Helen Frankenthaler-era.",
+        "3. Ondare artistikoa: balio soziala, kulturala eta memoria kolektibokoa. Zaintza, kontserbazioa, zaharberritzea eta erabilera jasangarriak. Museografiaren eta Museologiaren arteko aldea eta elkarren osagarriak. Ondare nazionalaren legea eta Euskal Autonomia Erkidegoko Ondarearen legea."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Errealitatea, espazioa eta lurraldea Artean",
+      "titulo": "Errealitatea, espazioa eta lurraldea Artean",
+      "items": [
+        "1. Pintura, espazioa eta perspektiba: hirugarren dimentsioaren konkista.",
+        "2. Arkitektura eta espazioa: espazio arkitektonikoen sorrera. Funtzionalismo eta Arrazionalismo arkitektonikoa.",
+        "2023ko uztailaren 24a, astelehena 3. Artea eta lurraldean esku hartzea: hirigintza arte gisa.",
+        "4. Arkitektura eta hirigintza Euskal Herrian.",
+        "5. Artea eta ingurumena.",
+        "Arkitektura, hirigintza eta diseinu jasangarria.",
+        "Arteak Garapen Iraunkorreko Helburuei egiten dien ekarpena."
+      ],
+      "codigos_items": []
+    }
+  ],
+  "comunidad": "pais-vasco",
+  "idioma": "eu"
+}

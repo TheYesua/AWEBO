@@ -1,0 +1,210 @@
+{
+  "materia_oficial": "GEOLOGIA ETA INGURUMEN-ZIENTZIAK",
+  "materia": "Geologia eta Ingurumen-zientziak",
+  "etapa": "Bachillerato",
+  "ciclo": "Único",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Lan zientifikoetatik ateratako informazioa eta datuak zehaztasunez interpretatzea eta transmititzea, geologia- eta ingurumen-zientziekin lotutako kontzeptuak, prozesuak, metodoak, esperimentuak eta emaitzak aztertzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Iturri fidagarriak aurkitzea eta erabiltzea, informazioa identifikatuz, hautatuz eta antolatuz, kritikoki ebaluatuz eta egiazkotasuna alderatuz, proposatutako galderak autonomiaz ebazteko eta geologia- eta ingurumen-zientziekin lotutako edukiak sortzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Geologia- eta ingurumen-zientziekin lotutako ikerketa- edo dibulgazio-lanak kritikoki aztertzea, metodo zientifikoen jarraibideak behar bezala bete dituztela egiaztatuz, horien ondorioen fidagarritasuna ebaluatzeko. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Problemak proposatu eta ebaztea, estrategia egokiak bilatuz eta erabiliz, soluzioak kritikoki aztertuz eta, hala badagokio, prozedura birformulatuz, geologia- eta ingurumen-zientziekin lotutako fenomenoak azaltzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Ekintza jakin batzuk ingurumenean duten eragina edo baliabideen eskuragarritasuna landako behaketa bidez edo hainbat formatutako informazio bidez aztertzea, oinarri zientifikoetan oinarrituz, garapen jasangarriarekin bat datozen ohiturak sustatu eta hartzeko. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Erliebearen elementu geologikoak identifikatzea eta aztertzea, landako behaketa bidez edo hainbat formatutako informazioaren bidez, fenomenoak azaltzeko, historia geologikoa berreraikitzeko, aurreikuspenak egiteko eta gune jakin batean arrisku geologikoak identifikatzeko.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Gaiaren jakintzekin lotutako kontzeptuak eta prozesuak kritikoki aztertzea, informazioa hainbat formatutan hautatuz eta interpretatuz: mapak (topografikoak, hidrografikoak, geologiakok, landarediakoak, etab.), zehar-ebakiak, ereduak, fluxu-diagramak eta abar."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Gaiaren jakintzekin lotutako informazio edo iritzi arrazoituak komunikatzea, argi eta zehaztasunez transmitituz eta hiztegi eta formatu egokiak erabiliz: mapak (topografikoak, hidrografikoak, geologiakok, landarediakoak, etab.), zehar-ebakiak, ereduak, fluxu-diagramak edo bestelakoak, eta azalpenean zehar ager daitezkeen gaiei zehaztasunez erantzunez."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Gaiaren jakintzekin lotutako alderdiei buruzko eztabaida zientifikoak egitea, iritzi ezberdinen indarguneak eta ahuleziak modu arrazoituan kontuan hartuz eta gainerakoen iritzia harberatasunez eta errespetuz jasoaz."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Gaiak proposatu eta ebaztea eta gaiaren jakintzekin lotutako edukiak sortzea, iturriak behar bezala kokatuz eta aipatuz; informazioa kritikoki hautatuz, antolatuz eta aztertuz."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Gaiaren jakintzekin lotutako informazioa kontrastatzea eta egiazkotasuna justifikatzea, iturri fidagarriak erabiliz eta oinarri zientifikorik gabeko informazioekiko (sasizientziak, teoria konspiratzaileak, funsgabeko sinesmenak, gezurrak, etab.) jarrera kritiko eta eszeptikoa agertzea."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Geologia eta Ingurumen Zientzietako gaiaren jakintzekin lotutako ikerketa edo dibulgazio zientifikoko lan baten ondorioen fidagarritasuna ebaluatzea, lortutako emaitzen interpretazioaren arabera. 2023ko uztailaren 24a, astelehena"
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Zientziak eta zientzialariek gizarteari egiten dioten ekarpena argudiatzea, adibide zehatzak erabiliz, emakumeen zeregina nabarmenduz eta ikerkuntza testuinguru politikoak eta baliabide ekonomikoak baldintzatutako etengabe aldatzen ari den taldeko diziplinarteko lana dela ulertuz."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Geologia eta Ingurumen Zientzietako gaiaren jakintzekin lotutako fenomenoak problemen azalpen eta ebazpen bidez azaltzea, dagozkion estrategiak eta baliabideak bilatuz eta erabiliz."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Geologia eta Ingurumen Zientzietako gaiaren jakintzekin lotutako problema baten soluzioa kritikoki aztertzea eta erabilitako prozedurak edo ondorioak birformulatzea, soluzioa bideragarria ez bada edo emandako edo ondoren aurkitutako datu berrien aurrean."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Baliabide geologiko eta biosferako baliabide mota ezberdinen analisitik eta horien erabileratik abiatuta ohitura jasangarriak sustatzea eta hartzea."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Baliabide batzuen ustiapenaren inpaktua eta ingurumenaren narriadura lotzea, baliabideak arduraz kontsumitu eta aprobetxatzeak duen garrantziari buruz argudiatuz."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Eremu jakin baten historia geologikoa ondorioztatzea eta azaltzea, eta haren elementu geologikoak identifikatzea eta aztertzea, hainbat formatutako informazioan oinarrituta (argazkiak, zehar-ebakiak, mapa geologikoak, etab.)."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Gune zehatz bateko fenomeno geologikoen eta natura-arriskuen gaineko aurreikuspenak egitea, horien gainean eragiten duten hainbat faktore aztertuz (gizakiaren jarduera, klimatologia, erliebea, landaredia, kokapena, barne-prozesu geologikoak, etab.) eta ondorio negatiboak prebenitzeko edo murrizteko ekintzak proposatuz."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Geologian eta Ingurumen Zientzietan esperimentazioa",
+      "titulo": "Geologian eta Ingurumen Zientzietan esperimentazioa",
+      "items": [
+        "Geologiako eta ingurumeneko informazio-iturriak: bilaketa, identifikazioa eta erabilera.",
+        "Geologiako eta ingurumeneko informazio-iturriak (mapak, zehar-ebakiak, aireko argazkiak, testuak, sateliteko irudiak, fluxu-diagramak, etab.): interpretazioa.",
+        "Lan geologikorako eta ingurumenekorako tresnak: landako eta laborategiko erabilera.",
+        "Erakunde zientifikoekin informazioa bilatzeko, kolaboratzeko, komunikatzeko eta elkarri eragiteko estrategiak: tresna digitalak, prozesuak, emaitzak eta ideiak aurkezteko formatuak (diapositibak, grafikoak, bideoak, posterrak, txostenak, eta abar).",
+        "Informazio geologikoa eta ingurumenekoa irudikatzeko tresnak: zutabe estratigrafikoa, zeharrebakiak, mapa, fluxu-diagrama, etab.",
+        "Ondare geologikoa eta ingurumenekoa: garrantziaren eta kontserbazioaren balioespena.",
+        "Eginkizun zientifikoa eta zientzialariak: geologia eta ingurumen-zientziak garatzeko ekarpena eta gizarte-garrantzia.",
+        "Emakumearen eginkizuna.",
+        "Jakintza zientifikoaren bilakaera historikoa: geologiaren eta ingurumen-zientzien aurrerapena taldeko, diziplinarteko eta etengabeko eraikuntzako lan gisa."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Plaken tektonika eta barne-geodinamika",
+      "titulo": "Plaken tektonika eta barne-geodinamika",
+      "items": [
+        "Planetaren barne-geodinamika: erliebearen gaineko eragina (bolkanismoa, seismoak, orogenia, mugimendu kontinentalak, etab.). Plaken tektonikaren teoria.",
+        "Wilson zikloa: horren eragina kontinenteen antolamenduan eta gertaera orogeniko nagusietan.",
+        "Barne-geodinamikaren egungo adierazpenak.",
+        "Arroken deformazioa: elastikoak, plastikoak eta hauskorrak. Arroken gainean eragiten duten indarrekin eta beste faktoreekin lotura.",
+        "2023ko uztailaren 24a, astelehena Barne-prozesu geologikoak eta horiei lotutako natura-arriskuak: giza jarduerarekin lotura. Lurralde antolamenduaren garrantzia."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Kanpo-prozesu geologikoak",
+      "titulo": "Kanpo-prozesu geologikoak",
+      "items": [
+        "Kanpo-prozesu geologikoak (meteorizazioa, edafogenesia, higadura, garraioa eta sedimentazioa) eta horren eraginak erliebean.",
+        "Erliebearen modelatuaren forma nagusien arteko lotura, eragile geologikoak, klima eta arroka nagusien propietateak eta antolamendu erlatiboa.",
+        "Erliebearen modelatuaren formak: eragile geologikoekin, klimarekin eta arroka nagusien propietate eta antolamendu erlatiboarekin loturak.",
+        "Kanpo-prozesu geologikoak eta horiei lotutako natura-arriskuak: giza jarduerarekin lotura. Lurralde antolamenduaren garrantzia."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Mineralak, arroken osagaiak",
+      "titulo": "Mineralak, arroken osagaiak",
+      "items": [
+        "Mineral-kontzeptua.",
+        "Sailkapena.",
+        "Mineralak ezaugarri fisikoen arabera identifikatzea: identifikatzeko tresnak (gidak, gakoak, tresnak, baliabide teknologikoak, etab.).",
+        "Fase-diagrama: mineralak sortzeko eta eraldatzeko baldintzak."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "E",
+      "bloque": "E. Arroka igneoak, sedimentarioak eta metamor ikoak",
+      "titulo": "Arroka igneoak, sedimentarioak eta metamor ikoak",
+      "items": [
+        "Arroka-kontzeptua.",
+        "Arrokak jatorriaren arabera sailkatzea (igneoak, sedimentarioak eta metamorfikoak). Arroken jatorriaren eta ezaugarri behagarrien lotura.",
+        "Arroak ezaugarri fisikoen arabera identifikatzea: identifikatzeko tresnak (gidak, gakoak, tresnak, baliabide teknologikoak, etab.).",
+        "Magmak: sailkapena, osaera, bilakaera, arroka erresultantea, loturiko erupzio bolkaniko-motak eta sortutako erliebeak.",
+        "Diagenesia: kontzeptua, arroka sedimentario erresultante-motak, jatorrizko materialaren eta sedimentuaren arabera.",
+        "Arroka metamorfikoak: motak, osaeran eragiten duten faktoreak eta horien arteko lotura.",
+        "Ziklo litologikoa: osaera, arroka mota ezberdinen suntsiketa eta eraldaketa, plaken tektonikarekin eta kanpo-prozesu geolo-gikoekin lotura."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "F",
+      "bloque": "F. Lurraren geruza jariakorrak",
+      "titulo": "Lurraren geruza jariakorrak",
+      "items": [
+        "Atmosfera eta hidrosfera: egitura, dinamika, funtzioak, lurreko kliman duen eragina, izaki bizidunentzako garrantzia.",
+        "Atmosferaren eta hidrosferaren kutsadura: definizioa, motak, kausak eta ondorioak."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "G",
+      "bloque": "G. Baliabideak eta horien kudeaketa jasangarria",
+      "titulo": "Baliabideak eta horien kudeaketa jasangarria",
+      "items": [
+        "Baliabide geologikoak eta biosferaren baliabideak: eguneroko bizitzan aplikatzea.",
+        "Baliabide, meategi eta erreserba kontzeptuak.",
+        "Hainbat baliabideren ustiapenaren ingurumen-inpaktua (hidrikoak, paisaietakoak, meatzaritzakoak, energetikoak, edafikoak, etab.). Baliabideen kontsumo arduratsuaren garrantzia, eraberritze-tasaren eta interes ekonomikoaren arabera.",
+        "Ur-baliabideak: ugaritasun erlatiboa, ustiapena, erabilerak eta kudeaketa jasangarrirako uren tratamenduaren garrantzia.",
+        "Lurzorua: ezaugarriak, ehundura, egitura, garrantzi ekologikoa eta produktibitatea.",
+        "Lurzoruen eta uren kutsadura eta degradazioa: giza jarduera batzuekin lotura (deforestazioa, nekazaritza eta abeltzaintza intentsiboak).",
+        "Geosferako arroken, mineralen eta baliabide energetikoen ustiapena: motak eta ingurumen-inpaktuaren ebaluazioa.",
+        "Hondakinen kudeaketa: garrantzia eta helburuak (murriztea, balorizazioa, eraldaketa eta eliminazioa).",
+        "Baliabideen ustiapenaren ingurumen-inpaktuak (hidrikoak, paisaietakoak, meatzaritzakoak, energetikoak, edafikoak, etab.): prebentziorako neurriak, neurri zuzentzaileak eta neurri konpentsatzaileak.",
+        "2023ko uztailaren 24a, astelehena"
+      ],
+      "codigos_items": []
+    }
+  ],
+  "comunidad": "pais-vasco",
+  "idioma": "eu"
+}

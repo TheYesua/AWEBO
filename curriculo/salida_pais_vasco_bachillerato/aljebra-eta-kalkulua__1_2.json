@@ -1,0 +1,202 @@
+{
+  "materia_oficial": "ALJEBRA ETA KALKULUA",
+  "materia": "Aljebra eta Kalkulua",
+  "etapa": "Bachillerato",
+  "ciclo": "Único",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato",
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Aljebra eta Kalkulu problemak modelatzea eta ebaztea, hainbat estrategia eta arrazoitzeko modu aplikatuz, soluzioen egokitasuna aztertuz eta egiaztatuz, ezagutza matematiko berria sortzeko eta errealitate konplexua interpretatzeko, baliabide digitalen laguntzaz.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Kalkuluaren tresnekin aieruak eta problemak formulatzea eta ikertzea, hainbat jakintza erlazionatuz eta irudikapen analitiko-aljebraiko egokia emanez, tresna teknologikoen laguntzarekin, ezagutza matematiko berria sortzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Zenbaki konplexuekin eta ekuazio- eta inekuazio-sistemekin zentzu aljebraikoa garatzea, problemak ebazteko sinboloak eta propietateak erabiliz, errealitatea modelizatzeko fokua erlazio matematikoetan jarriz.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Aljebra eta Kalkuluaren, beste matematika-esparru batzuen eta beste jakintza-arlo batzuen arteko loturak ezagutzea eta ikertzea, kontzeptuak eta prozedurak elkarrekin lotuz, ikuspegi matematiko integratua garatzeko eta hainbat egoeratan problemak ebazteko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Kontzeptuak, prozedurak eta emaitza matematikoak irudikatzea eta komunikatzea, kasu bakoitzean egokiena den teknologia eta/edo hizkuntza hautatuz (digitala, grafikoa, ahozkoa, idatzizkoa, sinbolikoa...), ideiak adierazpen aljebraikoen bidez bistaratzeko, kalkulu arrazoituko prozesuak egituratzeko, eta ideia matematikoei esanahia eta koherentzia emateko. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Trebetasun pertsonalak eta sozialak garatzea, emozioak identifikatuz eta kudeatuz, akatsa eta ziurgabetasuna onartuz, erlazio osasungarriak sortuz eta talde heterogeneoetako proiektuetan aktiboki eta hausnarketa bidez parte hartuz, Aljebra eta Kalkulua ikasteko helburuak hobeto lortzeko.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Hainbat esparrutan (matematika, esparru zientifiko-teknikoa, eguneroko bizitza...) problemak ebaztea —tresna aljebraikoen bidez modeliza daitezkeenak (ekuazioak, inekuazioak eta sistemak)—, adierazpen sinbolikorik egokiena hautatuz, soluzio egokiak lortu arte eraldatuz, baliabide digitalen laguntzaz soluzio horien egokitasuna egiaztatuz, eta ahoz eta idatziz jarraitutako prozedura justifikatuz."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Analisi matematikoarekin lotutako kontzeptuak, ideiak eta prozesuak (mugak, asintotak, jarraitutasuna, deribatuak...) nahasten dituzten problemak ebazteko estrategiak erabiltzea, lortutako soluzioak tresna teknologikoen laguntzaz interpretatuz, aztertuz eta kontrastatuz."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Ezagutza berriak eskuratzea, egoera errealak modelizatzen dituzten funtzioekin eta horien propietate garrantzitsuenekin lotutako aieruak eta hipotesiak formulatuz eta, horretarako, manipulatzeko aukera ematen duten tresna aljebraikoak, eta bistaratzen eta egiaztatzen lagunduko duten aplikazio informatikoen simulazioak erabiliz."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Egituren, patroien (numerikoak, geometrikoak, aljebraikoak) eta euren arteko erlazioen inguruan aieratzea, modu autonomoan eta taldean, elementu eta konexio matematikoak eta errealitatearenak interpretatuz eta ondorioztatutako propietateak egiaztatuz. 2023ko uztailaren 24a, astelehena"
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Dagoeneko ebatzita dauden problemen aldaerak eta orokortzeak planteatzea, errealitatearen ikuspegi zabalagoa eta munduaren konplexutasunaren aurrean ikuspegi sortzailea errazteko, modelizazioa sustatuz, errealitatea eraginkortasunez kudeatzeko tresna gisa."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Askotariko ekuazioak, inekuazioak eta adierazpen aljebraikoak ebaztea, baliabide digital elkarreragileak erabiliz, elementuekin eta horiek osatzen dituzten erlazioekin elkarreragitea ahalbidetzen duten hizkuntza eta propietateak ulertuz."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Funtzioak eta horien propietateak ezagutzea, irudikatzea eta interpretatzea, errealitatearen fenomenoak modelizatzeko, horietan garrantzitsuak diren elementuak eta erlazioak identifikatuz."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Deribatuaren kontzeptua eta haren irudikapenak erabiltzea aldaketa eta haren intentsitatea adierazteko modu gisa, deribatua puntu batean, bat-bateko truke-tasa, zuzen ukitzailearen malda, funtzio deribatua eta beste hainbat kontzeptu erlazionatuz, simulagailu birtualak erabiliz."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Hainbat ideia matematiko (aritmetikoak, aljebraikoak, geometrikoak…) erlazionatzea eta lotzea, errealitatearen begirada integratua eta kritikoa osatuz, tresna digital interaktiboen laguntzarekin."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Matematikaren hainbat arlo, ezagutzaren beste esparru batzuk eta bizitza erreala lotzea, hainbat testuingurutan problemak ebatziz eta fenomeno natural eta sozialekiko begirada kritiko eta autonomoa garatuz."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Matematikak baliabideak kudeatzeko eta gizateriaren aurrerabideari laguntzeko ezartzen dituen errealitatea aztertzeko tresnak baloratzea."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Ideia matematikoen hainbat irudikapen interpretatzea eta osatzea, zentzu kritikoa garatuz eta tresna aljebraikoak eta aplikazio informatikoak erabiliz."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Problema matematikoak ebazteko kontzeptuak, prozedurak eta prozesuak zehaztasunez komunikatzea, hizkuntza eta irudikapen-sistema egokienak eta lana erraztuko duten tresna digitalak erabiliz."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Norberaren sentsazioak identifikatzea eta kudeatzea, autokontzientzia eta autorregulazioa garatzea eta erronka matematikoei heltzean ahuleziak eta indarguneak ezagutzea."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Matematikaren ikaskuntzan zein bizitzako beste esparru batzuetan kritika onartuz jarraitzea."
+    },
+    {
+      "codigo": "6.3",
+      "competencia": "6",
+      "descripcion": "Talde heterogeneoetan erabakiak hartzen eta ondorioak ateratzen laguntzea, matematikako eta beste esparru batzuetako problemak ebatziz."
+    },
+    {
+      "codigo": "6.4",
+      "competencia": "6",
+      "descripcion": "Talde-lanean esleitutako rola bere gain hartzea, zereginen garapenean erantzukizunez eta errespetuz parte hartuz."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Problemen ebazpena",
+      "titulo": "Problemen ebazpena",
+      "items": [
+        "Problemak ebazteko ereduak: problema ulertu, plan bat sortu, plana gauzatu eta soluzioa egiaztatu.",
+        "Problemak ebazteko estrategiak: kodifikazioa, bistaratze grafikoa, problemaren aldaketa, amaieratik hasi, partikularizatu eta orokortu, aieratu, indukzio-printzipioa, absurdora murriztu… Problema irekiak: problemaren eztabaida, metodo zientifikora hurbilketa; jarraibide numerikoak, alfanumerikoak eta geometrikoak; datuen aieruak eta aldaketak."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Aljebra",
+      "titulo": "Aljebra",
+      "items": [
+        "Zenbakizko segidak. Termino orokorra.",
+        "Zenbaki konplexuak: eragiketak eta irudikapena.",
+        "Hizkuntza aljebraikoa problemak ebaztean: egoera errealak aljebraikoki modelizatzeko estrategiak.",
+        "2023ko uztailaren 24a, astelehena Ekuazio aljebraikoak eta ez-aljebraikoak (irrazionalak, esponentzialak, logaritmikoak...). Ebazpen-metodoak. Aplikazioa problemak ebaztean.",
+        "Lehen eta bigarren mailako inekuazioak. Inekuazio-sistemak. Ebazpena eta aplikazioa testuinguruan kokatutako egoeretan.",
+        "Ekuazio linealen sistemak. Matrize-eskritura. Gauss-en metodoa."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Kalkulua",
+      "titulo": "Kalkulua",
+      "items": [
+        "Funtzioak eta funtzioak dituzten eragiketak Zuzen erreala: tarteak eta inguruneak. Zenbakizko segida. Segida baten muga. Mugen kalkulua.",
+        "Mugak eta jarraitutasuna. Adar amaigabeak. Asintotak. Jarraitutasuna puntu batean eta tarte batean.",
+        "Deribatua eta horren aplikazioak. Deribatua puntu batean. Funtzio deribatua. Funtzio baten deribatua eta irudikapen grafikoa."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Simulazioak eta laguntzaile matematikoak",
+      "titulo": "Simulazioak eta laguntzaile matematikoak",
+      "items": [
+        "Osagaiak, horien arteko harremanak eta elkarrekintza simulazio batekin.",
+        "Sarean bilaketa, simulazio itxien eta simulazioak sortzeko baliabideen antolaketa eta bilketa.",
+        "Matematika irakasteko eta ikasteko laguntzaile matematikoak: GeoGebra, Desmos…"
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "E",
+      "bloque": "E. Aljebra ikasteko modu berriak: Graspable Math",
+      "titulo": "Aljebra ikasteko modu berriak: Graspable Math",
+      "items": [
+        "Graspable Math tresna: ingurune birtuala eta haren erabilgarritasunak.",
+        "Aljebra sinbolikoa. GM bidezko adierazpen aljebraikoen erlazio linealak eta koadratikoak, baliokidetasunak eta transformazioak.",
+        "Ekuazioak, ekuazio-sistemak eta inekuazioak: GM tresna digital interaktiboaren laguntzaz ebatzi eta interpretatu."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "F",
+      "bloque": "F. Alderdi sozioafektiboak",
+      "titulo": "Alderdi sozioafektiboak",
+      "items": [
+        "Akatsaren onarpena eta erabilera ikaskuntzarako palanka gisa.",
+        "Talde-lana eta bestearen onarpena, bere indargune eta ahuleziekin.",
+        "Eskuzabaltasuna eta enpatia jarduera komunetan, eta arrakastak eta porrotak partekatu."
+      ],
+      "codigos_items": []
+    }
+  ],
+  "comunidad": "pais-vasco",
+  "idioma": "eu"
+}

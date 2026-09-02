@@ -1,0 +1,123 @@
+{
+  "materia_oficial": "ANALISI MUSIKALA",
+  "materia": "Analisi Musikala",
+  "etapa": "Bachillerato",
+  "ciclo": "1º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Hainbat lanetako musika-elementuak aztertzea, entzute aktiboa eta partituren azterketa erabiliz, horien ezaugarriak deskribatzeko eta konparazioak egiteko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Konposizio baten musika-elementuen arteko erlazioak ezartzea, haren egitura eta erabilitako konposizio-prozedurak aztertuz, musika-lana genero, estilo eta sorkuntza-testuinguru batekin lotzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Aztertutako obrei buruzko musika-iruzkinak eta -kritikak egitea, terminologia egokia erabiliz eta hainbat informazio-iturri kontsultatuz, iritzi pertsonal oinarrituak adierazteko eta musika-ondarea zabaltzen laguntzeko. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Oinarrizko konposizio-prozedurak eta teknologia digitalak erabiltzea, musika-elementu eta -egitura egokienak erabiliz, obra errazak sortzeko eta inprobisazioak egiteko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Musikaren erabilera helburu terapeutikoekin, eta beste adierazpide artistiko batzuekin batera, ikertzea, hainbat informazio-iturri erabiliz eta musika-lanen ezaugarri musikalak aztertuz, musika-ezaugarri jakin batzuek osasunean eta emozioetan nola eragiten duten ulertzeko.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Musika-lan bat osatzen duten elementuak eta horien funtzioa identifikatzea, entzute aktiboaren bidez eta partituraren eta entzutearen plazer estetikoaren laguntzaz."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Hainbat musika-konposiziotako oinarrizko elementu teknikoak eta egitura formal bereizgarrienak deskribatzea, askotariko obrak aztertuz, eta besteen iritziekiko errespetuzko jarrera erakutsiz."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Musika-lanak modu gidatuan aztertzea, erabilitako egitura formala eta konposizio-prozedurak identifikatuz, hainbat baliabide eta euskarritan oinarrituz."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Aztertutako musika-lanak beren sorkuntza-testuinguruarekin lotzea, egileari eta garaiari buruzko banakako eta taldeko ikerketa-prozesuen bidez, informazioa iturri fidagarrietatik hautatuz eta hizkuntza tekniko egokia erabiliz."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Entzundako musikak eragindako zirrarak eta sentimenduak askatasunez eta jarrera irekiz adieraztea, pentsamendu kritikoaren garapena erakusten duten argudioak erabiliz, eta beste adierazpen artistiko batzuekiko lotura ezarriz."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Kultura-zabalkunde analogikoko eta/edo digitaleko proiektuetan parte hartzea, analista kritiko gisa kolaboratuz eta egile-eskubideak eta jabetza intelektuala errespetatuz."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Aurrez aztertutako musika-eredu jakin batzuk ahots-, gorputz- edo instrumentu-interpretazioaren bidez erreproduzitzea, haien egitura barneratuz, pertzepzio fisiko-motorraren eta soinu-pertzepzioaren bidez, eta memorizazio-estrategiak aplikatuz."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Musika-egitura eta -sorkuntza laburrak inprobisatzea, beren funtsezko elementuen ezagutzatik eta analisitik abiatuz."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Teknologia digitalak musika-konposizioan erabiltzea modu kritiko, seguru eta arduratsuz."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Musikak beste adierazpide batzuekin (zinema, antzerkia, dantza…) erlazionatzen denean betetzen dituen funtzioak identifikatzea, horien ezaugarriak eta ikuslearengan sortzen duen efektua aztertuz."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Analisi musikalaren hastapena",
+      "titulo": "Analisi musikalaren hastapena",
+      "items": [
+        "Partitura eta entzute aktiboa analisi musikalaren euskarri gisa.",
+        "Musika-proposamen baten oinarrizko elementuak eta horien arteko erlazioa: erritmoa, melodia, harmonia dinamikoa, agogikoa, testura eta instrumentazioa.",
+        "Hainbat garai, estilo eta generotako musika-proposamen adierazgarriak entzuteko analisi-estrategiak.",
+        "Proiektuak ikertu, konposatu, zabaldu eta lantzeko baliabide digitalak eta musika-aplikazioak.",
+        "Iruzkinak, ahozko gogoetak eta musika-aipamenak.",
+        "Egile-eskubideak eta jabetza intelektuala.",
+        "Tresna digitalen erabilera kritikoa, iraunkorra eta arduratsua.",
+        "Enpatia eta hainbat ikuspunturen balorazioa."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Forma musikala",
+      "titulo": "Forma musikala",
+      "items": [
+        "Forma musikalaren oinarrizko elementuak identifikatzeko estrategiak.",
+        "Oinarrizko konposizio-printzipioak: errepikapena, bariazioa, kontrastea eta garapena.",
+        "Sailkapena eta tipologia formalak: forma sinpleak, konposatuak eta libreak.",
+        "Musikaren funtzioa beste adierazpen artistiko batzuekin batera.",
+        "Jarrera inklusiboen sustapena eta kultura-aniztasunaren onarpena.",
+        "Musika-proposamen sortzaileak beste arte batzuekin batera."
+      ],
+      "codigos_items": []
+    }
+  ],
+  "comunidad": "pais-vasco",
+  "idioma": "eu"
+}

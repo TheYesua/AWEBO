@@ -1,0 +1,192 @@
+{
+  "materia_oficial": "EKONOMIA",
+  "materia": "Ekonomia",
+  "etapa": "Bachillerato",
+  "ciclo": "Único",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Eskasiaren arazoa eta arlo ekonomikoko erabakiak hartzearen garrantzia baloratzea, sektoreetan duen eragina aztertuz eta sistemek eskaintzen dituzten soluzio alternatiboak alderatuz, errealitate ekonomikoaren funtzionamendua ulertzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Merkatuaren funtzionamendua ezagutzea eta ulertzea, merkatuaren akatsak analizatuz, akats horiek ingurunean duten eragina aztertzeko eta erabaki ekonomikoak errazago hartzeko. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Errentaren fluxu zirkularrean esku hartzen duten eragile ekonomikoen zeregina bereiztea eta baloratzea, haren interakzioak ulertuz eta sortzen dituen onurak eta desorekak zentzu kritikoan onartuz, garapen ekonomikoa nola gertatzen den eta gizartearen ongizatearekin zer lotura duen azaltzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Finantza-sistemaren eta diru-politikaren funtzionamendua ezagutzea eta ulertzea, ekonomia errealean dituzten ondorioak baloratuz eta finantzaerabakietan esku hartzen duten elementuak aztertuz, norberaren finantzak erantzukizunez eta autonomiaz planifikatu eta kudeatzeko eta finantza-erabaki arrazoituak hartzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Egungo ekonomiak aurre egin beharreko erronkak eta desafioak identifikatzea eta baloratzea, globalizazio ekonomikoaren, ekonomia berriaren eta iraultza digitalaren inpaktua aztertuz, ekitatea, justizia eta jasangarritasuna sustatzen dituzten ekimenak proposatzeko. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Egungo arazo ekonomikoak kasuen azterketaren, ikerketaren eta esperimentazioaren bidez analizatzea, analisi ekonomikorako tresnak erabiliz eta eragile ekonomikoen erabakiak baldintzatzen dituzten faktoreak kontuan hartuz, arazo horiek errazago ulertzeko eta behar indibidualei eta kolektiboei erantzungo dieten soluzio berritzaileak eta jasangarriak planteatzeko.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Egungo errealitate ekonomikoa ulertzea, integrazio ekonomikoko prozesuak baloratuz, eta hartutako erabakiek sektore ekonomikoetan duten eragina eta horren ondoriozko desoreka sektorialak aztertuz, euskal testuinguruan ere bai."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Gaia jorratuko duen ikerketaren bidez, eskasiaren arazoa baloratzea, baita sistema ekonomiko ororen oinarrizko arazoen giltzarri erabakigarriak aukeratzeko beharra ere, sistemek eskaintzen dituzten soluzio alternatiboei buruzko konparazioak eginez."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Globalizazioak eta kooperazio-prozesuek ekoizpen-egitura globala, egitura ekonomikoa, enpresen portaera eta gizarte osoa aldatzen duten moduaz gogoeta egitea."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "1",
+      "descripcion": "Erabaki ekonomikoak modu indibidualean eta kolektiboan hartzeko garaian esku hartzen duten prozesuak ezagutzea, gizartean duten eragina aztertuz."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Merkatuaren funtzionamendua eta merkatuan egiten diren transakzioen izaera ulertzea, ekonomia eta gizartea hobetzeko iturri gisa duten garrantziari buruz gogoeta eginez."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Merkatuaren akatsak espiritu kritikoz aztertzea, akats horien ondorioak ebaluatuz eta izan ditzaketen soluzioei buruz hausnartuz."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Ekonomia-politikak, sektore publikoak esku hartzeko neurri gisa, duen garrantzia onartzea, ongizate-estatua mantentzeko eta sostengatzeko betetzen duen funtsezko eginkizuna baloratuz. 2023ko uztailaren 24a, astelehena"
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "2",
+      "descripcion": "Euskal berezitasun fiskalari buruzko ikerketa-lanaren bidez, Euskal Autonomia Erkidegoak zerga- eta finantzaketa-sistema propioa izatearen ondorioak baloratzea, Ekonomia Itunak Estatuko gainerako lurraldeekiko zerga- eta finantza-harremanen elementu egituratzaile gisa betetzen duen eginkizuna aitortuz."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Ekonomiaren garapena eta hazkundea eta gizarte-ongizatea nola gertatzen diren azaltzea, errentaren fluxu zirkularrean esku hartzen duten eragile ekonomikoen interakzioa zentzu kritikoan ulertuz eta baloratuz."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Errenta-fluxuaren ondoriozko hazkundeak sortzen dituen desorekak eta onurak ezagutzea, desoreka horietarako balizko soluzio izan daitezkeen alternatibak planteatuz."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Finantza-sistemaren funtzionamendua ezagutzea eta ulertzea, ekonomia errealean dituen ondorioak baloratuz eta inbertsioan, aurrezkian eta finantza-produktuetan duen eragina aztertuz."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Eguneroko bizimoduan eragina duten erabaki ekonomikoak hartzerakoan, jakintzagaiaren bidez eskuratutako finantza- -ezagutzak erabiltzea eta aplikatzea, erantzukizunez planifikatuz eta kudeatuz, eta ezagutza horien egokitasuna eta ekonomia errealean izan ditzaketen ondorioak baloratuz."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Diru-politikaren berezko tresnak ezagutzea eta aztertzea, finantza-merkatuaren testuinguruan aplikatuz eta ikuspegi globaletik ekonomian duten eragina modu kritikoan baloratuz."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Ekitatea, justizia eta jasangarritasuna sustatuko dituzten ekimenak proposatzea, egungo ekonomiak planteatzen dituen erronken eta desafioen identifikaziotik abiatuta, eta globalizazioak, ekonomia berriak eta iraultza digitalak herritarren ongizate ekonomiko eta sozialean eragiten duten eragina zentzu kritikoan aztertuz."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Egungo erronka ekonomikoak ulertzea, ingurunea modu kritikoan eta eraikitzailean aztertuz, ekonomia baldintzatzen eta eraldatzen duten elementuak identifikatuz eta erronka horiek planteatzen dituzten beharrei erantzungo dieten ekimenak sustatuz."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Behar indibidualei eta kolektiboei erantzungo dieten soluzio sozioekonomikoak planteatzea, errealitate ekonomikoa ikertuz, zenbait faktore kontuan hartuz eta ekonomiaren esparruko berezko tresnak aplikatuz."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Erabaki ekonomikoak",
+      "titulo": "Erabaki ekonomikoak",
+      "items": [
+        "1. Ekonomia, beharrak, ondasunak eta eskasia. Energia-baliabideen mendekotasunaren eta gainustiapenaren ondorioekiko sentsibilizazioa*. Gizarteharremanen eduki ekonomikoa. Erabaki ekonomikoek hainbat sektoretan duten inpaktua ezagutzea: Euskal Autonomia Erkidegoko ekonomia-sektoreen bilakaera eta horren ondoriozko desoreka sektorialak. Modelizazioa, interakzio ekonomikoak ulertzeko tresna gisa.",
+        "2. Erabaki ekonomikoak hartzeko prozesua. Arrazionaltasuna. Aukera-kostua*. Kostu berreskuraezinak. Analisi marjinala.",
+        "Pizgarriak eta igurikapenak. Jokoen teoria.*Efizientzia. Arriskua eta ziurgabetasuna.",
+        "3. Ekonomia-antolamendu eta ekonomia-sistemak; balorazioa eta konparazioa*.",
+        "4. Finantza-erabakien plangintza eta kudeaketa: inbertsioa, aurrezkia eta kontsumoa. Dirua eta transakzioak. Diruaren funtzioak eta diru-formak. Arriskua eta etekina. Bankuek ekonomian betetzen duten zereginari buruzko gogoeta kritikoa.",
+        "Finantzaproduktuen funtzionamendua, hala nola maileguak, hipotekak eta horien ordezkoak*. Aseguruak.",
+        "5. Portaeraren ekonomia. Arrazionaltasun ekonomikoaren desbideratzeak. Erabaki ekonomikoak eta etika.",
+        "6. Errealitate ekonomikoa aztertzeko metodoak: metodo zientifikoa, modelizazioa eta esperimentu edo entsegu ekonomikoak."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Errealitate ekonomikoa. Mundua ikuspegi mikroekonomikotik ulertzeko tresnak",
+      "titulo": "Errealitate ekonomikoa. Mundua ikuspegi mikroekonomikotik ulertzeko tresnak",
+      "items": [
+        "1. Trukea eta merkatua.* Merkatu motak eta funtzionamendua*. Irudikapen grafikoa. Elastikotasuna.*Merkatu-akatsak eta sektore publikoaren esku-hartzearen balorazio positiboa*. Kostua/etekina analisia.",
+        "2023ko uztailaren 24a, astelehena"
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Errealitate ekonomikoa. Mundua ikuspegi makroekonomikotik ulertzeko tresnak",
+      "titulo": "Errealitate ekonomikoa. Mundua ikuspegi makroekonomikotik ulertzeko tresnak",
+      "items": [
+        "1. Makroekonomia. Eragile ekonomikoak eta errentaren fluxu zirkularra.* Eskari erantsia, eskaintza erantsia eta horien funtzionamendua.",
+        "2. Hazkunde ekonomikoari eta garapenari buruzko analisi kritikoa. Hazkundearen faktoreak*. Errentaren banaketa: efizientziaren eta ekitatearen arteko erlazioa.* Garapen sozialaren adierazleak*. Ongizatea eta bizi-kalitatea.",
+        "3. Lan-ekonomia. Lan-merkatuen funtzionamendua eta joerak.*Iraultza digitalak eta teknologikoak merkatu horretan eragindako aldaketen balorazio kritikoa. Langabezia motak. Ondorioak eta neurri zuzentzaileak. Soldata-arrakala. Euskal Autonomia Erkidegoko lan-merkatuaren berezitasuna",
+        "4. Nazioarteko merkataritza, integrazio ekonomikoko prozesuak eta horien ondorioak. Protekzionismoa eta merkataritza askea.*Europako Diru Batasuna",
+        "5. Finantza-sistema, haren funtzionamendua eta ondorioak*. Finantza-panoramaren bilakaera. Dirua. Diruaren tipologia eta dirua sortzeko prozesua."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Ekonomia-politikak",
+      "titulo": "Ekonomia-politikak",
+      "items": [
+        "1. Ekonomia positiboa eta ekonomia normatiboa.* Estatuaren esku-hartzea eta horren justifikazioa. Ekonomia-politika eta haren ondorioak*.",
+        "2. Zerga-politika. Euskal Autonomia Erkidegoko fiskalitatea eta Ekonomia Ituna. Ongizate-estatua eta horren finantzaketa.",
+        "Euskal Autonomia Erkidegoko aurrekontu publikoak, generoaren ikuspegitik. Solidaritate-printzipioa eta zergen balio sozialaren onarpena. Defizit publikoa, zor publikoa eta horien ondorioak. Ezkutuko ekonomia*.",
+        "3. Diru-politika eta prezioen egonkortasuna. Diru-merkatuaren funtzionamendua. Inflazioa: azalpen-teoriak. Diru-politikek inflazioan, hazkundean eta ongizatean duten ondorioa*."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "E",
+      "bloque": "E. Espainiako eta Euskal Autonomia Erkidegoko ekonomiaren erronkak testuinguru globalizatuan",
+      "titulo": "Espainiako eta Euskal Autonomia Erkidegoko ekonomiaren erronkak testuinguru globalizatuan",
+      "items": [
+        "1. Globalizazioa: azalpen-faktoreak, aukerak eta arriskuak. Krisiaren, aukera gisa, onarpena eta balorazioa. Desberdintasunen gutxitzea/handitzea: azpigarapena. Pobrezia herrialde garatuetan: Euskal Autonomia Erkidegoaren kasua*.",
+        "2. Ekonomia berria eta iraultza digitala*. Ekonomia kolaboratiboa. Ekonomia zirkularra. Iraultza digitalak enpleguan eta errentaren banaketan duen inpaktuari buruzko irizpen kritikoak. Biztanleria aktiboa iraultza digitalaren erronketara egokitzeko estrategia.",
+        "3. Ongizate-estatuaren etorkizuna*. Pentsioen jasangarritasuna.* Euskal Autonomia Erkidegoko biztanleriaren zahartzearen problematika*. Migrazio-fluxuak eta horien inplikazio sozioekonomikoak.",
+        "4. Beherakada ekonomikoari buruzko teoriak.",
+        "5. Garapen Iraunkorraren Helburuak (GIH) eta egungo erronka ekonomikoak*. Aztarna eta zor ekologikoa. Tokiko kasuen azterketa: Garapenerako 2030 Agendari Euskal Autonomia Erkidegoak egiten dion ekarpena; gizarte- eta ekonomia-itunak."
+      ],
+      "codigos_items": []
+    }
+  ],
+  "comunidad": "pais-vasco",
+  "idioma": "eu"
+}

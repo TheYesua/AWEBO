@@ -1,0 +1,253 @@
+{
+  "materia_oficial": "ELEKTRONIKA",
+  "materia": "Elektronika",
+  "etapa": "Bachillerato",
+  "ciclo": "Único",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato",
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Elektronikaren arloan berrikuntza teknologikoa historian zehar aztertzea, jasangarritasun- edo irisgarritasun-irizpideak aplikatuz, komunikazioen, industriaren edo medikuntzaren garapenari egiten dion ekarpena zentzu kritikoz baloratuz, diziplina honek eskaintzen dituen aukerak ezagutzeko eta ulertzeko, baita gaur egun arlo horretan egiten diren lanak ere. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Zirkuitu elektroniko analogikoetan eta digitaletan erabiltzen diren seinale elektrikoak deskribatzea, horiek definitzen dituzten magnitudeak kalkulatuz eta/edo neurtuz, hauek erabiltzen dituzten sistemen erantzunak ondorioztatzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Zirkuitu elektronikoen eskemak interpretatzea, haien multzo funtzionalak aztertuz eta osagaiak dokumentazio teknikoarekin lagunduta deskribatuz, eta kalkuluak eta/edo neurketak eginez, beharrezkoa denean, horiek hobetzeko edo egokitzeko proposamenak egiteko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Sistema elektronikoak diseinatzea, programatzea eta simulatzea, hainbat tresna digital erabiliz, kalkuluak eta neurketak eginez, parametro desberdinen aldaketak printzipio funtzionalen arabera duen eragina aztertzeko eta emaitzak espero direnetara egokitzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Zirkuitu elektroniko sinpleak muntatzea eta ebaluatzea, diziplina honetan eta beste batzuetan eskuratutako kontzeptuzko eta prozedurazko ezagutzak transferituz, lanaren faseak antolatuz, segurtasun-arauak kontuan hartuz eta beharrezkoak diren egiaztapenak eta neurketak eginez, aurreikusitako funtzionamendua eta emaitzak lortzeko. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Informazioaren tratamendu egokia egitea, tresna digitalak zuzen eta arduraz erabiliz, diziplinarteko jakintzak estrategikoki transferituz eta aplikatuz, ezagutzak sortzeko, trebetasun teknikoak hobetzeko, problemak kalkulatu eta ebazteko, edo ideiak testuinguru desberdinetan jarrera sortzailearekin zabaltzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "7",
+      "descripcion": "Trebetasun pertsonalak eta gizarte-trebetasunak erabiltzea, motibazioa eta emozioak autorregulatuz eta errorea edo ziurgabetasuna ikaskuntza-prozesuaren parte gisa ulertuz, erantzukizunak hartuz, enpatia erakutsiz, aktiboki entzunez eta elkarrizketa gatazkak kudeatzeko tresna gisa baloratuz, zenbait zeregin banaka edo taldean garatzeko aldez aurreko plangintza bati jarraikiz.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Elektronikak historian zehar zientziak eta teknologiak aurrera egiteko izan duen ekarpena baloratzea, elektronikaren objektuak une egokian kokatuz, eta jasangarritasuneko eta ingurumen-inpaktuko irizpideak kontuan hartuz."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Elektronikako aplikazio-arloak eta produktuak identifikatzea, gaur egun toki-mailan eta maila globalean elektronikarekin lotuta garatzen diren jarduerak kokatuz."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Seinale elektriko motak identifikatzea, haien balio bereizgarriak adieraziz eta seinale-forma desberdinak bereiziz."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Zirkuitu elektrikoetan kalkuluak egitea, magnitude elektrikoen balio bereizgarriak erlazionatzen dituzten algoritmoak behar bezala aplikatuz."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Zirkuitu elektrikoen funtzionamendua azaltzea, tentsio zuzenean zein alternoan, hainbat parametroren neurketak eginez."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Zirkuitu elektroniko baten osagaiak identifikatzea eta bere zehaztapen teknikoak interpretatzea, horien funtzioa deskribatuz."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Zirkuitu elektronikoak aztertzea, multzo funtzionalak adieraziz eta multzo bakoitzak osotasunean duen funtzioa identifikatuz."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Zirkuitu elektronikoetan kalkuluak eta/edo neurketak egitea, emaitzak interpretatuz eta zirkuituaren portaera ondorioztatuz."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Hainbat zehaztapen betetzen dituzten zirkuitu elektronikoak diseinatzea, tresna desberdinak erabiliz."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Funtzio desberdinak betetzen dituzten sistema elektronikoen funtzionamendua kontrolatzea, programazio-lengoaiak eta tresna digitalak erabiliz."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Zirkuitu elektronikoen simulazioak egitea, hainbat parametro aldatuz eta lortutako emaitzak doituz."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Zirkuitu elektronikoak muntatzea edo dagoeneko muntatuta daudenetan aldaketak egitea, eskema bati jarraituz, osagai elektronikoak behar bezala konektatuz, erremintak behar bezala erabiliz eta muntaian segurtasun-arauak errespetatuz."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Hainbat zirkuitu elektronikoren funtzionamendua aztertzea eta ebaluatzea, neurketak eta doikuntzak eginez eta lortutako emaitzak aurreikusitakoekin kontrastatuz."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Proposatutako zereginak eta esleitutako funtzioak modu egokian ebaztea, hainbat tresna digital erabiliz eta konfiguratuz eta, hala badagokio, programatuz, diziplinarteko ezagutzak autonomiaz aplikatuz, modu kritikoan, seguruan, arduratsuan eta jabetza intelektualarekiko errespetuz."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Hizkuntza zientifiko-teknikoa, ahozkoa nahiz grafikoa, hainbat testuinguru eta formatutan ezagutzea eta interpretatzea, hainbat iturritatik datorren informazioa aurkituz, hautatuz eta kontrastatuz, eta haren egokitasuna ebaluatuz, integratuz eta ezagutzan eraldatuz."
+    },
+    {
+      "codigo": "6.3",
+      "competencia": "6",
+      "descripcion": "Ideiak, proposamenak edo soluzioak modu eraginkorrean eta antolatuan komunikatzea eta zabaltzea, ikuspegi sortzailea hartuz, ikasitakoa transferituz eta hizkuntza teknikoa —ahozkoa zein grafikoa— erabiltzean euskarri, terminologia eta zorroztasun egokiak erabiliz."
+    },
+    {
+      "codigo": "7.1",
+      "competencia": "7",
+      "descripcion": "Helburuak lortzeko jarraikitasuna eta motibazio positiboa erakustea, emozioak identifikatuz eta kudeatuz, beste diziplina batzuetako ezagutzak transferituz eta errorea edo kritika arrazoitua ikaskuntza-prozesuaren parte gisa ulertuz."
+    },
+    {
+      "codigo": "7.2",
+      "competencia": "7",
+      "descripcion": "Talde heterogeneoetan modu aktibo eta arduratsuan parte hartzea, erabakiak adostasunez hartuz, lanaren plangintzan eta garapenean lagunduz, testuinguru analogiko eta digitaletan esleitutako rolaren bidez."
+    },
+    {
+      "codigo": "7.3",
+      "competencia": "7",
+      "descripcion": "Zereginak talde heterogeneoetan zuzen banatzen laguntzea, gainerako kideen arrazoibideak aktiboki entzunez, ideiak eta iritziak asertiboki emanez eta talde-ongizatea eta erlazio osasungarri eta inklusiboak sustatuz. 2023ko uztailaren 24a, astelehena"
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Elektronika: eboluzioa eta egungo egoera",
+      "titulo": "Elektronika: eboluzioa eta egungo egoera",
+      "items": [
+        "Sistema elektronikoen eboluzioa. Garapen-etapak. Gizarte-eragina eta ingurumen-inpaktua.",
+        "Sistema elektronikoen aplikazioak. Arlo teknologikoak: telekomunikazioak, erregulazioa eta kontrola, informazioa tratatzeko sistemak, nanoteknologia… Produktu-arloak: elektronika industriala, kontsumoko elektronika, elektromedikuntza, automobilgintzako elektronika, beste batzuk. Produkzio-prozesuak: osagaiak, ekipoak eta sistemak."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Zirkuitu eta osagai elektronikoak",
+      "titulo": "Zirkuitu eta osagai elektronikoak",
+      "items": [
+        "Magnitude elektrikoak: erresistentzia, tentsioa, intentsitatea eta potentzia.",
+        "Kalkuluak korronte zuzeneko eta korronte alternoko zirkuitu elektrikoetan.",
+        "Osagai pasiboak: motak, ezaugarriak eta aplikazioak.",
+        "Osagai aktiboak: motak, ezaugarriak eta aplikazioak.",
+        "Beste osagai batzuk: erresistentzia aldakorrak, gailu optoelektronikoak, erreleak… Seinale elektrikoen neurketa eta behaketa. Neurgailuak. Erabiltzeko arauak."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Elektronika analogikoa",
+      "titulo": "Elektronika analogikoa",
+      "items": [
+        "Kommutazio-zirkuituak. Transistorea kommutazioan. Multibibratzaileak, osziladoreak. 555 zirkuitu integratua.",
+        "Artezketa, iragaztea, egonkortzea eta erregulazioa. Elikadura-iturriak.",
+        "Anplifikazio-zirkuituak. Transistorea anplifikazioan. Anplifikadore integratuak.",
+        "Eskemen interpretazioa. Osagaien eta multzo funtzionalen identifikazioa.",
+        "Zirkuituen diseinua, simulazioa eta ebaluazioa. Kalkuluak eta neurketak.",
+        "Zirkuituen muntaketa."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Elektronika digitala",
+      "titulo": "Elektronika digitala",
+      "items": [
+        "Kode bitarra. Booleren aljebra.",
+        "Funtzio logikoak. Ate logikoak.",
+        "Zirkuitu konbinazionalak.",
+        "Zirkuitu sekuentzialak.",
+        "Eskemen interpretazioa. Osagaien eta multzo funtzionalen identifikazioa.",
+        "Zirkuituen diseinua, simulazioa eta ebaluazioa.",
+        "Zirkuituen muntaketa.",
+        "Konbertsio analogiko-digitala eta digital-analogikoa."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "E",
+      "bloque": "E. Sistema elektroniko programagarriak. Automatizazioa",
+      "titulo": "Sistema elektroniko programagarriak. Automatizazioa",
+      "items": [
+        "Sistema automatikoak eta kontrolekoak. Txartel programagarriak. Ezaugarriak eta elementuak.",
+        "Prozesuen automatizazio programatua: diseinua, programazioa, simulazioa edo muntaketa eta ebaluazioa."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "F",
+      "bloque": "F. Tresna digitalen erabilera eta informazioaren kudeaketa",
+      "titulo": "Tresna digitalen erabilera eta informazioaren kudeaketa",
+      "items": [
+        "1. Tresna digitalak.",
+        "Diseinuko eta simulazioko tresnak, laborategi birtualak… 2. Dokumentazio teknikoa.",
+        "Informazio teknikoaren bilaketa, interpretazioa eta hautaketa: osagai elektronikoen ezaugarriak (Data Sheets), katalogo eta eskuliburu teknikoak, segurtasun-arauak… Sinbologia elektrikoaren eta elektronikoaren interpretazioa.",
+        "Diagrama funtzionalen eta eskemen interpretazioa.",
+        "2023ko uztailaren 24a, astelehena Electronika 3. Ideien / soluzioen komunikazioa eta hedapena.",
+        "Txostenen eta dokumentazio teknikoaren elaborazioa.",
+        "Hizkuntza teknikoaren erabilera eta datuen adierazpen grafikoa.",
+        "Sinbologia elektrikoaren eta elektronikoaren erabilera.",
+        "Diagrama funtzionalen eta eskemen prestaketa."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "G",
+      "bloque": "G. Zentzu sozioemozionala",
+      "titulo": "Zentzu sozioemozionala",
+      "items": [
+        "1. Jarrerak eta autorregulazioa.",
+        "Estilo kognitiboaren, motibazioaren eta emozioen autorregulazioa. Ekintzailetza, erresilientzia, jarraikitasuna eta sormena.",
+        "Autokonfiantza eta ekimena. Errorearen tratamendua (banakakoa edo kolektiboa) eta berrebaluazioa jakintzak mugiarazteko eta ikasteko aukerak sortzeko elementu gisa.",
+        "2. Erabakiak hartzea, plangintza eta talde-lana.",
+        "2.1. Erabakiak hartzea.",
+        "Problemak ebazteko hainbat aukera ezagutzeko, onartzeko eta ebaluatzeko eta erabakiak hartzeko oinarrizko trebetasunak.",
+        "2.2. Plangintza.",
+        "Ideien, zereginen eta proiektuen bideragarritasunaren planifikazioa eta analisia.",
+        "Planifikatutakoaren gauzatzea eta, hala badagokio, doikuntza (epeak, materialen zaintza eta erabilera egokia…).",
+        "Planifikatutakoaren eta egindakoaren ebaluazioa eta hobekuntza-proposamenen garapena (prozesuaren optimizazioa).",
+        "2.3. Talde-lana.",
+        "Talde heterogeneoetako lan-teknikak eta -estrategiak. Zereginetan kolaboratu eta kooperatu ingurune fisiko zein birtualetan.",
+        "Erantzukizunak bere gain hartzeko jarraibideak. Lidergo banatua.",
+        "3. Inklusioa, errespetua eta aniztasuna.",
+        "Komunikazio eraginkorra garatzeko trebetasunak; enpatia, entzute aktiboa eta asertibitatea.",
+        "Hizkuntzaren erabilera ez-diskriminatzailea. Estereotipo sexisten identifikazioa."
+      ],
+      "codigos_items": []
+    }
+  ],
+  "comunidad": "pais-vasco",
+  "idioma": "eu"
+}

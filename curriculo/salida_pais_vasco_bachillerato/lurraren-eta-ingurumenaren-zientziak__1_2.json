@@ -1,0 +1,196 @@
+{
+  "materia_oficial": "LURRAREN ETA INGURUMENAREN ZIENTZIAK",
+  "materia": "Lurraren eta Ingurumenaren Zientziak",
+  "etapa": "Bachillerato",
+  "ciclo": "Único",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato",
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Ikerketa zientifikoaren berezko estrategia dokumentalak zein esperimentalak erabiltzea, bakarka zein taldean, Lurraren eta Ingurumenaren Zientzien inguruko kontzeptuak, teoriak eta ereduak erlazionatuz, ikuspegi orokor bat izateko eta Lurra sistemaren funtzionamendua interpretatzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Gure planetan gertatzen diren erlazioez jabetzea, fenomeno naturalak eta giza ekintzak sortutakoak interpretatuz, ekosistema naturalen funtzionamendua eta sistema antropogenikoekin duten interakzioa ulertzeko, bai testuinguru zientifikoan, bai eguneroko bizitzaren testuinguruan.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Lurraren eta Ingurumenaren Zientzien ezagutzak sistema naturaletako egoera problematiko errealetan aplikatzea, sistema horiek aztertuz, interpretatuz eta baloratuz, ingurune naturala kontserbatzen, babesten eta hobetzen laguntzeko eta etorkizun iraunkor bat eraikitzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Zientzien hizkuntza zehaztasunez ulertzea eta erabiltzea, zorroztasuna, argitasuna eta ordena baloratuz eta hainbat euskarri eta baliabide erabiliz, Lurraren eta Ingurumenaren Zientziei lotutako gaiak zehatz-mehatz komunikatzeko. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Baliabide naturalak eta haien aplikazioak erabiltzeko aukerak ebaluatzea eta baliabide horien mugak ezagutzea, erabilera berritzeko ahalmenera egokitzeko beharra pentsamendu kritikoarekin baloratuz, gizartearen garapenak ingurumenerako dituen inplikazioak ulertzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Lurraren eta Ingurumenaren Zientziek pertsonen prestakuntza integralean duten kultura-dimentsioa aintzat hartzea eta zientzia horien ekarpenek jendartean eta ingurumenean duten eragina baloratzea, hipotesiak eta teoriak aztertuz eta konparatuz eta etengabeko eraikuntza-prozesu batean murgilduta dagoen zientziaren izaera aitortuz, ingurumena toki-mailan eta maila globalean hobetzeko ekintzetan aktiboki eta arduraz parte hartzeko. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Landako eta laborategiko datuak eta behaketak, teknika eta tresna egokiekin aztertzea eta interpretatzea, emaitzak txostenetan edo landa-koadernoan behar bezala dokumentatuz."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Landako eta laborategiko lana modu arduratsu eta seguruan egitea, ikerketa zientifikoaren berezko estrategiak bakarka edo taldean aplikatuz."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Lurra-sistemaren funtzionamendua modu globalean interpretatzea, Lurraren eta Ingurumenaren Zientzien inguruko kontzeptuak, teoriak eta ereduak erlazionatuz."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Bizitzaren agerpenaren eta giza jardueren ondorioz gertatutako ingurumen-aldaketetan sistemen dinamika azaltzea, Lurra sortu zenetik izan diren aldaketa atmosferiko, hidriko eta biologiko nagusiak aztertuz eta interpretatuz."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Ekosistema naturalen funtzionamendua eta sistema antropogenikoekiko interakzioa ulertzea, osagaiak testuinguru zientifiko batean zein eguneroko bizitzako testuinguru batean identifikatuz."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Arrisku naturalen arrazoiak aztertzea, Lurraren eta Ingurumenaren Zientziei buruzko ezagutzak egoera problematiko errealetan aplikatuz."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Ingurune naturalaren inguruko prebentzio-, zuzenketa- eta babes-neurriak proposatzea, sistema naturalak eta sor daitezkeen arriskuak aztertuz eta baloratuz."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Jakintzagaiari buruzko informazioa publiko espezializatu baten edo bestelako publiko baten aurrean zorroztasun, argitasun, doitasun eta ordenarekin interpretatzea eta transmititzea, idatziz zein ahoz."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Irakasgaiko jakintzei lotutako informazioak modu arrazoituan komunikatzea, terminologia eta formatu egokiak erabiliz (ereduak, grafikoak, taulak, bideoak, txostenak, diagramak, formulak, eskemak, sinboloak edo eduki digitalak, besteak beste) eta prozesuan sor daitezkeen galderei oinarri egokiarekin eta doitasunarekin erantzunez."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Ingurumen-prozesuak eta lotutako arriskuak ezagutzea eta ulertzea, Lurreko baliabideak ustiatzeko zein kontserbatzeko beharra argudiatuz."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Gizartearen garapenak ingurumenerako dituen inplikazioak ulertzea, toki-mailan edo maila globalean kontsumo eta ekoizpen iraunkorreko ekimenak sustatuz."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "5",
+      "descripcion": "Gizartearen garapenak ingurumenean dituen inplikazioak (positiboak eta negatiboak) identifikatzea, baliabide naturalen erabilera aztertuz."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Ingurumena hobetzeko helburua duten ekintzak proposatzea eta sustatzea, ondare geologikoa eta ingurumen-ondarea toki-mailan eta maila globalean baloratuz."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Euskal Herriko ondare geologikoa eta ingurumen-ondarea identifikatzea eta ezagutzea, ondare horren ezaugarriak aztertuz eta konparatuz eta baliabide natural eta kultural gisa duen balioa aitortuz."
+    },
+    {
+      "codigo": "6.3",
+      "competencia": "6",
+      "descripcion": "Formazio geologikoei buruzko hipotesiak eta teoriak aztertzea eta konparatzea, egungo paisaia interpretatuz eta etorkizuneko paisaia aurreikusiz."
+    },
+    {
+      "codigo": "6.4",
+      "competencia": "6",
+      "descripcion": "Herrialdeek adostutako protokoloen eta konpromisoen garrantzia baloratzea (Garapen Iraunkorrerako Helburuak, Agenda 2030, Milurtekoko Garapen Helburuak eta abar), haien beharra eta gizartearen eta ingurumenaren hobekuntzan duten eragina toki-mailan eta maila globalean ebaluatuz. 2023ko uztailaren 24a, astelehena"
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "0",
+      "bloque": "0. Ikerketa proiektuak edo kasuen ebazpena",
+      "titulo": "Ikerketa proiektuak edo kasuen ebazpena",
+      "items": [
+        "Hipotesiak, galderak, problemak eta aieruak: ikuspegi zientifikoaren bidezko planteamendua.",
+        "Informazioa bilatzeko estrategiak, kolaboraziokoak, komunikaziokoak eta erakunde zientifikoekiko interakziokoak: tresna digitalak, prozesuak aurkezteko formatuak, emaitzak eta ideiak (diapositibak, grafikoak, bideoak, posterrak, txostenak eta bestelakoak).",
+        "Informazio-iturri fidagarriak: bilatzeko, ezagutzeko eta erabiltzeko estrategiak.",
+        "Emaitza zientifikoak aztertzeko metodoak: antolamendua, irudikapena eta tresna estatistikoak.",
+        "Komunikazio zientifikorako estrategiak: hiztegi zientifikoa, formatuak (txostenak, bideoak, ereduak, grafikoak eta bestelakoak) eta tresna digitalak.",
+        "Ikerketa-lanaren berezko trebetasunak eta jarrerak. Kolaborazioa eta erantzukizuna."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "1",
+      "bloque": "1. Lurra izeneko sistema",
+      "titulo": "Lurra izeneko sistema",
+      "items": [
+        "Atmosfera.",
+        "Hidrosfera.",
+        "Geosfera. Plaken tektonika, teoria globala.",
+        "Biosfera. Lurraren bilakaera eta dibertsitate biologikoa.",
+        "Lurraren sistemaren interakzioak eta globaltasuna. Ekosfera."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "2",
+      "bloque": "2. Ingurumena eta giza-espeziea",
+      "titulo": "Ingurumena eta giza-espeziea",
+      "items": [
+        "“Ingurumen” kontzeptua. Ingurumen-sistemen ereduak.",
+        "Baliabide naturalak, erabilerak, arriskuak eta inpaktuak: Arrokak eta mineralak: Lur arraroak, XXI. mendeko elementu gutiziatuak.",
+        "Ura: lehengairik preziatuena etorkizunean.",
+        "Biosferaren baliabideak: Izaki bizidun guztien oinarrizko beharra estalita? Lurzorua: deforestazioa eta lurzoruaren suntsipena.",
+        "Klima-arriskuak. Iraganeko aldaketa klimatikoak, egungoaren ondorioak aurreikusteko.",
+        "Barneko eta kanpoko arrisku geologikoak. Prebenitzeko ezagutu.",
+        "Giza jarduerak ingurumenean eragindako arriskuak eta inpaktua. Antropozenoa. Biodibertsitatearen galera. Ekosistemetarako ondorioak.",
+        "Euskal Herrian sortutako hondakinak eta uraren, airearen, lurzoruaren eta abarren kutsatzaileak."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "3",
+      "bloque": "3. Lurra eta ingurumena ulertzea",
+      "titulo": "Lurra eta ingurumena ulertzea",
+      "items": [
+        "Ikerketa zientifikoaren izaera. Teoria zientifiko nagusien bilakaera eta garapena.",
+        "Ezagutza zientifikoaren garapenean eta dedukzioan esku hartzen duten behaketa-teknikak eta arrazoitze-prozesuak. Baliabideak, hondakinak eta kutsatzaileak ikertzeko eta kudeatzeko teknologiak.",
+        "Lurra espaziotik."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "4",
+      "bloque": "4. Ingurumena eta garapena",
+      "titulo": "Ingurumena eta garapena",
+      "items": [
+        "Naturaren eta gizakiaren arteko interakzioak eta haien ondorioak. Kontrolik gabeko desarrollismoa, kontserbazionismoa eta garapen iraunkorra.",
+        "Ingurumen Hezkuntza. Garapen Iraunkorrerako Helburuak zabaltzeko eta haien inguruan kontzientziatzeko oinarria.",
+        "Protokoloak, konpromisoak eta ingurumen-araudia. Garapen Iraunkorrerako Helburuak, Agenda 2030, gune babestuak, Europako Itun Berdea (Basque Green Deal ibilbidea) … Ingurumen-ebaluaziorako tresnak.",
+        "Euskal Herriko ondare biogeologikoa. Kontserbazioa eta babesa.",
+        "2023ko uztailaren 24a, astelehena"
+      ],
+      "codigos_items": []
+    }
+  ],
+  "comunidad": "pais-vasco",
+  "idioma": "eu"
+}

@@ -1,0 +1,200 @@
+{
+  "materia_oficial": "ARGAZKIGINTZA",
+  "materia": "Argazkigintza",
+  "etapa": "Bachillerato",
+  "ciclo": "Único",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato",
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Argazki-hizkuntza mundua ezagutzeko eta ulertzeko baliabide gisa kritikoki ezaguzea, jakin-mina eta errespetua erakutsiz, argazkigintzak hainbat eremutan izan dituen eta dituen erabilerak eta aplikazioak eta pertsonengan eta gizarteetan duen eragina kontuan hartuz, terminologia espezifikoa erabiliz, gizartean betetzen duen funtzioa eta kultura aniztasuna aberastasun-iturri gisa aintzat hartzeko eta argazki-ondarea sustatu eta kontserbatzeko. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Hainbat argazki-ekoizpen aztertzea inolako alborapenik gabe, jakin-mina, errespetua eta jarrera irekia agertuz, hizkuntza, elementu teknikoak, adierazkortasuna, asmoa, mezua eta sortu diren testuingurua identifikatuz eta terminologia espezifikoa behar bezala erabiliz, estereotipoak eta konbentzionalismoak desagerrarazteko, irizpide estetikoa eta diskurtso kritikoa eta librea garatzeko eta iruditeria zabaltzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Argazkigintzako tresnak, euskarriak eta elementuak ezagutzea eta esperimentatzea, autonomiaz eta trebetasunez, adierazteko eskaintzen dituzten aukerak eta arazo bera konpontzeko ematen dituzten irtenbide desberdinak aurkituz, iraunkortasun- eta berrikuntza-irizpideak erakutsiz, eta ahalegina helburuak lortzeko metodo gisa barneratuz, norberaren argazki-hizkuntzan txertatzeko eta pentsamendu dibergentea garatzeko. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Sormenez, jarrera ireki eta positiboz argazki-lanak sortzea, norberaren esperientzietatik edo gai jakin batetik abiatuz, teknika, tresna eta euskarri egokiak hautatuz eta akatsa hobetzeko aukera gisa barneratuz, bere konfiantza, autoezagutza eta autokritikarako gaitasuna sendotzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Argazki-ekoizpenak bakarka edo taldeka egitea, iraunkortasun-irizpideak erakutsiz, prozesuaren faseak diseinatuz, erantzukizuna bere gain hartuz eta teknika, tresna eta euskarririk egokienak hautatuz, ekoizpen horiek eskaintzen dituzten aukerak eta talde-lana baloratzeko eta nortasun artistiko zabala eta askotarikoa osatzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Argazki-ekoizpenak publikoki komunikatzea, sortzeko prozesua zein norberaren lan prozesua, azken emaitza eta espazio birtualen arriskuak eta onurak ebaluatuz, ikusleen erreakzioei buruzko gogoeta irekia eta errespetuzkoa egiteko. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Historian argazkigintzak izan dituen eta dituen erabilerak eta aplikazioak eta haien balioa ezaguzea, jakin-minetik eta errespetutik abiatuz, terminologia espezifikoa behar bezala erabiliz eta kultura-aniztasuna aberastasun-iturri gisa baloratuz."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Argazki-hizkuntza mundua ezagutzeko eta ulertzeko baliabide gisa kritikoki baloratzea, pertsonengan duen oihartzuna eta gizartean betetzen duen funtzioa aintzat hartuz, terminologia espezifikoa zuzen erabiliz eta, era horretan, argazki-ondarearen kontserbazioa sustatuz. 2. konpetentzia espezifikoa."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Argazki-hizkuntza, haren elementu teknikoak eta hainbat argazki-ekoizpen adierazkortasuna identifikatzea, jakin-mina erakutsiz, hiztegi eta terminologia espezifikoa behar bezala erabiliz eta irudimena eta zentzu estetikoa zabalduz."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Hainbat argazki-ekoizpen jarrera irekiarekin eta errespetuz erlazionatzea, asmoa, mezua eta sortu diren testuingurua aztertuz, hiztegi eta terminologia espezifikoa behar bezala erabiliz eta estereotipoak desagerraraziz. 3. konpetentzia espezifikoa."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Hainbat teknika, tresna eta euskarrirekin esperimentatzea, haien adierazpen-aukerak ezagutuz, arazo berari konponbide desberdina aurkituz eta hondakinak eta haien birziklatzea arduraz kudeatuz."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Argazki-ekoizpenak egitea, beharrezkoak diren baliabideak, tresnak eta trebetasunak behar bezala eta modu berritzailean erabiliz, aldez aurretik prestatutako proiektura egokituz eta lanean ahalegina eta jarraitutasuna baloratuz. 4. konpetentzia espezifikoa."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Sormenezko argazki-ekoizpenak norberaren adierazpen- eta komunikazio-asmoarekin egitea, akatsa hobetzeko aukeratzat hartuz eta argazki-adierazpena ingurunea eta bere burua ikertzeko tresna gisa erabiliz. 5. konpetentzia espezifikoa."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Argazkigintzari lotutako lanbideen adibideak identifikatzea, eskaintzen dituzten aukerak eta lanean sormenak duen balio erantsia ulertuz eta norberaren iritzia era arrazoituan eta errespetuarekin adieraziz."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Argazki-proiektu artistiko bat sortzea, bakarka edo taldean, fase guztiak planifikatuz, erantzukizunak bere gain hartuz, proiektuaren beharretarako tresnarik eta teknikarik egokienak hautatuz eta kooperazio-lana baloratuz."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "5",
+      "descripcion": "Prozesua eta azken produktua ebaluatzea, aldeko zein kontrako iritziak kontuan hartuz eta aurkitutako zailtasunak eta emandako irtenbide teknikoak baloratuz. 6. konpetentzia espezifikoa."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Argazki-ekoizpen baten azken emaitza azaltzea, tresna digitalak modu kritiko, seguru eta arduratsuan erabiliz eta ekoizpen horren garapena, aurkitutako zailtasunak, egindako aurrerapenak eta lorpenen balorazioa partekatuz."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Aurkeztutako argazki-ekoizpenen hartzea modu irekian eta errespetuz aztertzea, iritzi positiboak zein negatiboak kontuan hartuz eta, horretatik arte-hazkunderako ikaskuntza ateraz. 2023ko uztailaren 24a, astelehena"
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Orokorrak",
+      "titulo": "Orokorrak",
+      "items": [
+        "Argazkiak egiteko erabilitako argazki-kameren, aparatuen, materialen eta espazioen erabilera eta manipulazio zuzena.",
+        "Hiztegi eta teminologia espezifikoaren ezagutza eta erabilera zuzena.",
+        "Aniztasunaren balorazioa aberasteko eta estereotipoak desagerrarazteko iturri gisa.",
+        "Argazki-hizkuntza mundua ezagutzeko eta ulertzeko baliabidea.",
+        "Kultura- eta arte-ondarearen sustapena eta kontserbazioa.",
+        "Sentsibilitate artistikoaren eta irizpide estetikoaren garapena.",
+        "Jarrera proaktiboa, jakin-min jarrera eta errespetu-jarrera.",
+        "Gozamen estetikoa sustatzea eta espiritu ekintzailea, sormena eta pentsamendu dibergentea eta kritikoa finkatzea.",
+        "Ingurumen-berrikuntza eta ingurumen-iraunkortasuna, sortutako hondakinen kudeaketa eta birziklatzea.",
+        "Tresna digitalen erabilera kritikoa, segurua, adierazkorra eta arduratsua, datuen babesarekiko, jabetza intelektualarekiko eta egile-eskubideekiko errespetua.",
+        "Lan-ohituren finkapena, ahalegina helburuak lortzeko metodo gisa.",
+        "Akatsa hobetzeko eta ikasteko modutzat hartzea.",
+        "Norberaren ezagutza, autonomia, autokonfiantza, autokritika, apaltasuna eta bestearen ulermena sendotzea.",
+        "Kolaborazio-lanaren, erantzukizuna, erabakiak hartzea, enpatia eta gainerakoen iritzien baloratzea.",
+        "Argazkigintzari lotutako lanbideak.",
+        "Ingurune fotografikoak eskaintzen dituen aukerak baloratzea, baita horrek eragiten dituen eraldaketa sozialak eta produktiboak ere. Kontsumo kritikoko ohiturak."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Argazkigintzaren bilakaera historikoa",
+      "titulo": "Argazkigintzaren bilakaera historikoa",
+      "items": [
+        "Argazkigintzaren jatorria.",
+        "Argazki-irudikapeneko sistemen bilakaera historikoa, alborapenik gabe. Argazkigintza digitalaren aurrekariak.",
+        "Argazkigintzaren historiako une nagusien deskribapena eta analisia.",
+        "Argazkigintzak beste arte eta diziplina batzuetan eta gizartean duen garrantzia.",
+        "Argazkigintzaren esparruak: artistikoa, fotokazetaritza, argazki-edizioa… Argazkigintza-generoen sailkapena eta karakterizazioa."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Argia eta kolorea",
+      "titulo": "Argia eta kolorea",
+      "items": [
+        "Argia. Izaera eta ezaugarriak.",
+        "Argia. Jatorria: naturala, girotze-argia, artifiziala.",
+        "Argia. Hedapena: gogorra, ertaina, leuna.",
+        "Argia. Norabidea: zenit-argia, baxua, albokoa, argi-kontrakoa, aurrekoa, hiru puntukoa.",
+        "Zuria eta beltza. Kolorea. Kontraste kromatikoa. Argi-koloreak eta materia-koloreak.",
+        "Argiaren erabilera egokia, formaren eta kontrastea.",
+        "Argiztapena argazkigintzan. Argiaren garrantzia argazki-prozesuan.",
+        "Argiztapen-ekipamenduak."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Argazki-kamera",
+      "titulo": "Argazki-kamera",
+      "items": [
+        "Irudi estenopeikoak eta optikoak. Kameraren printzipioak: kamera iluna eta objektiboak.",
+        "Gizakiaren begia eta kamera.",
+        "Argazki-kamera. Motak.",
+        "2023ko uztailaren 24a, astelehena Lenteak eta objektiboak: objektibo motak eta objektiboaren elementuak.",
+        "Esposizioa: diafragma, eremu-sakonera, f zenbakiak, obturadorea… Enkoadraketa: planoak, angeluak eta konposizioa."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "E",
+      "bloque": "E. Laborategia",
+      "titulo": "Laborategia",
+      "items": [
+        "Filmaren errebelatzea. Oinarrizko ekipamendua: errebelatze-tankea, film-karga, errebelatzailea, paro-bainua, finkatzailea, garbiketa eta lehorketa. Ezagutza eta manipulazioa.",
+        "Positibatzea: handigailua, argazki-paperaren esposizioa, errebelatzea. Ezagutza eta manipulazioa.",
+        "Laborategiko lanaren antolaketa."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "F",
+      "bloque": "F. Irudi digitala",
+      "titulo": "Irudi digitala",
+      "items": [
+        "Argazkigintza digitalaren oinarrizko funtsak.",
+        "Irudi digitala hartzeko gailuak. Bereizmena, kuantifikazioa, konpresioa.",
+        "Digitalizazioa. Bit-mapa. Kolore-sakontasuna.",
+        "Kamera digitala. Oinarrizko elementuak.",
+        "Biltegiratze-sistemak. Irudiaren tamaina. Artxibo-formatuak.",
+        "Irudien tratamendu digitala. Irudia tratatzeko programak."
+      ],
+      "codigos_items": []
+    }
+  ],
+  "comunidad": "pais-vasco",
+  "idioma": "eu"
+}

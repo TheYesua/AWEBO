@@ -1,0 +1,195 @@
+{
+  "materia_oficial": "ARTEAREN OINARRIAK",
+  "materia": "Artearen Oinarriak",
+  "etapa": "Bachillerato",
+  "ciclo": "Único",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Artearen sorkuntzan gertatutako aldaketak ulertzea, garai historiko eta kultura-testuinguru bakoitzaren arteko berdintasunak eta ezberdintasunak aztertuz, aniztasuna aberasgarria dela azaltzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Arteak historian zehar izan dituen funtzioen inguruan hausnartzea, garai bakoitzeko funtzioaren bilakaera aztertuz, berezitasunak aintzat hartzeko eta edozein garaitako ondare kultural eta artistikoa balioan jartzeko. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Garai eta estilo ezberdinetako ekoizpen artistikoak formalki, funtzionalki eta semantikoki aztertzea, elementu eratzaileak eta lengoaien gakoak aintza hartuz eta hiztegi espezifikoa erabiliz, irizpide estetikoa garatzeko eta arteaz gozatzeko aukerak zabaltzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Hainbat bitarteko eta euskarri bidez egindako obra artistikoak azaltzea, sortu zireneko gizarte-, geografia- eta historia-testuingurua identifikatuz, baita eragin eta proiekzio posibleak ere, garai eta kultura bateko lekuko eta ondarearen elementu gisa balioesteko. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Artearen ahalmen komunikatiboa ulertzea, hainbat ekoizpenetan bizitzako esperientzien isla identifikatuz eta aintzat hartuz, adierazpide artistikoa sormena, irudimena, autoestimua eta hazkunde pertsonala indartzeko tresna gisa balioesteko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Hainbat obra artistiko formaren, esanahiaren, sorrera- eta harrera-testuinguruaren arabera interpretatzea, sentiberatasuna eta zentzu kritikoa garatzeko eta ekoizpen artistikoekiko pertzepzio eta iritzi ezberdinak balioesteko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "7",
+      "descripcion": "Banakako edo taldeko proiektu artistikoak kreatibitatez sortzea, diziplina anitzeko estiloak, teknika eta lengoaiak ikertuz eta egokienak direnak hautatu eta aplikatuz, proposatutako ideia eta helburuak osatzeko eta erronka artistiko berriei aurre egiten ikasteko. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Aniztasunak artean eragiten duen aberastasuna errespetuz azaltzea, garai eta kultura ezberdinetako obrak testuinguruan kokatzearekin lotuta ikertuz eta dagokion arte-kontzeptua aztertuz."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Arteak historian izan duen ikusmoldearen bilakaera argudiatzea, garai eta kultura ezberdinetako esanahiak alderatuz eta antzekotasunak eta ezberdintasunak aztertuz."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Arteak historian zehar izandako funtzioak bereiztea, haren bilakaera aurreiritzirik gabe aztertuz, hainbat estilo eta garaitako ekoizpen artistikoen azterketatik abiatuta."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Hainbat adierazpide kultura eta artistikoren berezitasunak modu irekian, kritikoan eta errespetuz azaltzea, dagokion funtzioarekin lotuz."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Hainbat garai eta estilotako adierazpide artistikoen elementu eratzaileak identifikatzea, horien lengoaien gakoak aintzat hartuz eta horiek dagokien garai, artista edo mugimenduarekin duten lotura justifikatuz."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Hainbat adierazpide artistiko formalki, funtzionalki eta semantikoki aztertzea, irizpidez eta sentiberatasunez, dagozkien lengoaien terminologia espezifikoa erabiliz."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Hainbat estilo eta garaitako ekoizpen artistikoak aztertzea, hainbat bitarteko eta euskarritan egindakoak, sortu zeneko testuinguru sozial, geografiko eta historikoarekin lotuz eta beste garai eta kulturetako obrekin izan ditzakeen harremanak azalduz."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Hainbat estilo eta garaitako ekoizpen artistikoei buruzko ikerketen ondorioak azaltzea eta dagokion testuinguruan jartzea, bitarteko analogiko eta digital egokienak erabiliz."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Artearen adierazteko aukera askotarikoak eta ideiak, kontzeptuak, sentimenduak eta emozioak transmititzeko ahalmena azaltzea, garai eta estilo ezberdinetako artisten obrak abiapuntu hartuta, horien inguruan egin diren interpretazio ezberdinak aztertuz."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Hainbat garai eta estilotako ekoizpen artistikoak aztertzea, norberaren eta besteen bizitzako esperientziekin kreatiboki lotuz, eta sormena, irudimena, autoestimua eta hazkunde pertsonala indartzeko tresna gisa balioetsiz."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Hainbat garai eta estilotako obra artistikoak interpretatzea, horien forma, esanahia eta sortu zeneko testuingurua aztertuz eta norberaren ideiak, ezagutzak, emozioak eta sentimenduak txertatuz."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Hainbat adierazpide artistikoren inguruko interpretazioak alderatzea, ikuspuntu ezberdinak aztertuz eta norberaren iritzia proposatuz."
+    },
+    {
+      "codigo": "7.1",
+      "competencia": "7",
+      "descripcion": "Proiektu artistikoak azaltzea, banakakoak edo taldekoak, diziplina anitzetako estilo, teknika eta lengoaia egokienak hautatuz, eta zereginak modu arrazoituan antolatu eta banatuz."
+    },
+    {
+      "codigo": "7.2",
+      "competencia": "7",
+      "descripcion": "Banakako zein taldeko proiektu artistikoak kreatibotasunez egitea, proposatutako ideia eta helburuak lortuz eta bereganatutako ikaskuntzak aplikatuz."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Arte-kontzeptua: jatorriaren bila",
+      "titulo": "Arte-kontzeptua: jatorriaren bila",
+      "items": [
+        "Artearen teoriak. Artearen definizioa historian zehar. Genero-ikuspegitik.",
+        "2023ko uztailaren 24a, astelehena"
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Arte klasikoaren proiekzioa",
+      "titulo": "Arte klasikoaren proiekzioa",
+      "items": [
+        "Greziako arkitektura eta eskultura. Sarrera. Ordenak. Obra eta garai adierazgarrienak.",
+        "Antzinako Erromaren eraikuntza. Eskultura-erretratua antzinako Erroman."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Argia eta espiritualitatea artean",
+      "titulo": "Argia eta espiritualitatea artean",
+      "items": [
+        "Adierazpen plastiko eta bisualeko bitartekoen bilakaera, Erdi Arotik Barrokora bitarte. Arte modernoa."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Artea eta errepresentazioa",
+      "titulo": "Artea eta errepresentazioa",
+      "items": [
+        "Artearen aldaketak, Arte Klasikora itzuli zenetik, tradizioarekin apurtu zenera arte. (XIX. mendera arte)."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "E",
+      "bloque": "E. Artea adierazpen gisa",
+      "titulo": "Artea adierazpen gisa",
+      "items": [
+        "XX. mendea. Lehenengo abangoardiak.",
+        "Artea 1945etik aurrera. Bigarren abangoardiak.",
+        "Azken joerak. Abangoardien krisia."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "F",
+      "bloque": "F. Natura, gizartea eta komunikazioa artean",
+      "titulo": "Natura, gizartea eta komunikazioa artean",
+      "items": [
+        "Artea eta ekologia. Land Art-etik eta Povera-tik gaur egunera arte."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "G",
+      "bloque": "G. Metodologiak eta estrategiak",
+      "titulo": "Metodologiak eta estrategiak",
+      "items": [
+        "Mugimendu eta estilo artistikoei lotutako formak, funtzioak eta esanahiak aztertzeko eta artelanaren teknikaren eta prozeduraren analisia egiteko metodologiak. Ezagutzan konfiantza, garapenerako motor gisa.",
+        "Zereginen banaketak proiektu artistikoetan: eskatutako trebetasunen araberako hautaketa-irizpideak.",
+        "Proiektuen metodologia. Proiektu artistikoen faseak. Berdintasunean parte-hartze aktiborako estrategiak, diskriminaziorik ezako ikuspegi inklusibo, ez sexista eta estereotipo gabekoak.",
+        "Estiloak, teknikak eta lengoaiak hautatzeko estrategiak.",
+        "Jabetza intelektualarekiko jarrera etikoa, erabilera arduratsuak.",
+        "Eremu artistikoari lotutako lengoaia eta hiztegi espezifikoa. Ezagutza eta erabilera."
+      ],
+      "codigos_items": []
+    }
+  ],
+  "comunidad": "pais-vasco",
+  "idioma": "eu"
+}

@@ -1,0 +1,232 @@
+{
+  "materia_oficial": "KULTURA ZIENTIFIKOA",
+  "materia": "Kultura Zientifikoa",
+  "etapa": "Bachillerato",
+  "ciclo": "Único",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato",
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Zientziaren gaitasun potentziala eta mugak kritikoki baloratzea eta balioestea, ezagutza zientifikoak erabiliz, ongizate pertsonal eta kolektibo handiagoa lortzeko. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Premia sozialen eta garapen zientifiko-teknologikoaren arteko erlazioa kritikoki aztertzea eta ebaluatzea, herritarren informazioa eta parte-hartzea baloratuz, soluzioak bilatzeko eta Garapen Iraunkorreko Helburuen araberako neurriak hartzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Komunikazio-abileziak eta -trebetasunak garatzea dibulgazio zientifikoaren berezko tresna eta instrumentuen bidez, zientzia komunitatera hurbiltzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Ezagutza zientifikoak giza pentsamenduari egindako ekarpenak aitortzea, gizateriaren historia eta bere bizi-baldintzak markatu dituzten eztabaida eta iraultza handiak aintzat hartuz, zientzia etengabeko aldaketan eta eboluzioan dagoen —non gizonek eta emakumeek parte hartzen duten— eraikuntza kolektibo gisa baloratzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Lan zientifikoaren berezko jarrerak erakustea, hala nola informazioa kritikoki bilatzea eta baloratzea, deskribatutako gertaerak egiaztatu eta kontrastatzea eta talde-lana, metodologia zientifikoarekin koherenteak diren arauak erabiliz (zorroztasuna, objektibotasuna) mezu, azalpen eta argudio zientifikoak sortzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Euskal Herrian garatzen diren zientzia-ekimenak ezagutzea, protagonisten zeregina baloratuz, ikasleen eta ikertzaileen, unibertsitateen eta zientzia-jarduera gauzatzen den zentroen arteko kolaborazioa eta zabalkundea sustatzeko. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Zientziaren aurrerapenak eta hobekuntzak ezagutzea, gizartean, ekonomian, ingurumenean eta abar dituen ondorioak baloratuz."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Ezagutzak, trebetasunak eta jarrera zientifikoak hainbat testuingurutan (osasuna, aurrerapen teknologikoak, zahartzea…) erabiltzea, zientziaren potentziala eta mugak balioetsiz eta baloratuz."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Ekarpen zientifiko-teknologikoak eta horiek ongizate pertsonal eta kolektiboan duten eragina aztertzea, zientziaren indarguneak eta mugak baloratuz."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Gizarte-beharrak (elikadura-iraultza, material berriak...) eta garapen zientifiko-teknologikoaren ekarpenak erlazionatzea, horien abantailak eta desabantailak ikuspegi zientifikotik baloratuz."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Ikasleengandik hurbil dauden eta GIHekin bat datozen gizarte-arazoei (kontsumo arduratsua, osasuna eta ongizatea, klimaren aldeko ekintza...) soluzioak bilatzea, premia soziala eta garapen zientifiko-teknologikoa kritikoki ebaluatuz."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "XXI. mendeko erronkekin bat datozen ekintza osasungarriak eta iraunkorrak planteatu eta sustatzea, ezagutza zientifikoak erabiliz eta hezkuntza-komunitatearen ekarpenak kontuan hartuz."
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "2",
+      "descripcion": "Informazio- eta komunikazio-tresna batzuen gizarte-ondorioak eta erabilgarritasuna ezagutzea, horiek kontsumo-ohituretan eta gizarte-harremanetan duten eragina aztertuz."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Zientzia herritarrengana hurbiltzea, komunikazio-trebetasunak eta -abileziak, baliabideak eta zientzia-dibulgaziorako tresnak (digitalak, ikus-entzunezkoak, ahozkoak, idatzizkoak) erabiliz, zein publikori zuzenduta dagoen kontuan hartuta."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Albiste edo ikerketa zientifikoak (pandemia, medikamentuak, genetika, elikadura…) erraztasunez identifikatzea, egiazkotasuna eta fidagarritasun zientifikoa ematen dioten elementuak bereiziz."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Jakintzagaiaren jakintzekin lotutako berriak edo ikerketa-proiektuak jakinaraztea, arrazoibide zientifikoa erabiliz."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "3",
+      "descripcion": "Testu zientifikoak edo iturri zientifiko-grafikoak aztertzea, horien zorroztasuna eta fidagarritasuna zein edukia kritikoki balioetsiz."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Zientzia eta bertan parte hartzen duten pertsonak baloratzea, ezagutza zientifikoak giza pentsamenduari egiten dizkion ekarpenak aitortuz."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Historia eta bizi-baldintzak markatu dituzten eztabaida nagusiak eta iraultzak aztertzea, zientziaren ekarpenak baloratuz."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Gizartearen arazo, eztabaida eta iraultza nagusiei buruz eztabaidatzea, testu eta diskurtso zientifikoen azterketa kritikotik abiatuz."
+    },
+    {
+      "codigo": "4.4",
+      "competencia": "4",
+      "descripcion": "Zientzia etengabe aldatzen ari den eraikuntza kolektiboa dela ulertzea eta argudiatzea, emakumeek zein gizonek gizateriaren aurrerabidean duten parte-hartzea balioetsiz."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Mezu, azalpen eta argudiaketa zientifikoak sortzea, lan zientifikoarekin koherenteak diren arauak erabiliz (objektibotasuna, zorroztasuna, etab.)."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Eztabaida edo jarduera zientifikoak (genetika, erronka zientifikoak, ohiturak, osasuna…) planifikatzea eta horietan parte hartzea, norberaren ideiak partekatuz eta defendatuz eta talde osoarenak errespetatuz."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "5",
+      "descripcion": "Gertaera zientifikoak (zulo beltzak, pandemia, transgenikoak…) aztertzea, erabilitako iturrien fidagarritasuna banaka edo taldean egiaztatuz, eta zientziarekiko jarrera kritikoa eta positiboa erakutsiz. 2023ko uztailaren 24a, astelehena"
+    },
+    {
+      "codigo": "5.4",
+      "competencia": "5",
+      "descripcion": "Taldean lan egitea, beharrezkoa denean, zereginetan kooperazio, kolaborazio eta parte-hartze arduratsuko jarrerak erakutsiz, rolak asumituz eta desberdintasunak errespetuz eta tolerantziaz onartuz."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Hezkuntza- edo zientzia-esparru diferentetan kolaborazioak proposatzea, Euskal Herrian garatzen diren ekimenak balioetsiz."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Unibertsitateek eta ikerketa-zentroek garatzen dituzten jarduera eta ekimen zientifikoak hezkuntza-komunitatean zabaltzea, txostenak, aurkezpenak... sortuz, hainbat formatutan."
+    },
+    {
+      "codigo": "6.3",
+      "competencia": "6",
+      "descripcion": "Zientzian diharduten pertsonek betetzen duten zeregina baloratzea, hainbat arlotan haiek egindako ikerketak, dibulgazioak eta ekarpen zientifikoak aztertuz."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "1. ZER JATEN DUGU?",
+      "titulo": "ZER JATEN DUGU?",
+      "items": [
+        "Elikagai funtzionalak: Omega 3, bifidus, lactobacillus… Proteina artifizialak.",
+        "Elikagai transgenikoak.",
+        "Elikagaien kontserbatzaileak eta gehigarriak: alde onak eta txarrak.",
+        "Esteroide anabolizatzaileak.",
+        "Elikadura-iraultza: elikagai berriak, 3D inprimaketa edo gastronomia zientifikoa."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "2",
+      "bloque": "2. ZAHARTZEA",
+      "titulo": "ZAHARTZEA",
+      "items": [
+        "Zelulen birprogramazioa.",
+        "Menopausia.",
+        "Telomeroak, zahartzea eta minbizia.",
+        "Neuronak.",
+        "Zahartze osasungarria. Gehiago eta hobeto bizi?"
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "3",
+      "bloque": "3. INGENIARITZA GENETIKOA",
+      "titulo": "INGENIARITZA GENETIKOA",
+      "items": [
+        "Genetika: edizio genomikoa eta transgenikoak.",
+        "Sekuentziazio genoma. Atlas zelularra.",
+        "Lagundutako ugalketa-teknikak. Agur gaixotasun genetikoei.",
+        "Genoma eta epigenetika."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "4",
+      "bloque": "4. OSASUNA ETA MEDIKAMENTUAK",
+      "titulo": "OSASUNA ETA MEDIKAMENTUAK",
+      "items": [
+        "Farmakologia: droga, medikamentuak eta eszipientea. Farmakoen dosia eta administrazioa. Generikoak eta patenteak.",
+        "Koordainketak.",
+        "Medikuntza eta etika: baimen informatua. Saiakuntza klinikoak: faseak. Animalia-esperimentazioa. Giza akuria.",
+        "Zainketa aringarriak. Bizi-testamentua."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "5",
+      "bloque": "5. MUNDU JASANGARRIAGO BAT: MUNDU HOBEA?",
+      "titulo": "MUNDU JASANGARRIAGO BAT: MUNDU HOBEA?",
+      "items": [
+        "Ingurumen-hezkuntza. Funtzioak eta helburuak. Garapen Iraunkorrerako Helburuak (GIH).",
+        "Dibulgazioa eta eztabaida zientifikoak, esparru formaletan eta ez-formaletan.",
+        "Ekimen zientifikoak. Herritarrentzako zientzia.",
+        "2023ko uztailaren 24a, astelehena"
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "6",
+      "bloque": "6. ERRONKA ZIENTIFIKOAK ETA ETORKIZUNERAKO LEHENTASUNAK",
+      "titulo": "ERRONKA ZIENTIFIKOAK ETA ETORKIZUNERAKO LEHENTASUNAK",
+      "items": [
+        "Unibertsoa jomugan.",
+        "Material berriak.",
+        "Nüwa proiektua."
+      ],
+      "codigos_items": []
+    }
+  ],
+  "comunidad": "pais-vasco",
+  "idioma": "eu"
+}

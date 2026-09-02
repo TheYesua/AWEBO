@@ -1,0 +1,230 @@
+{
+  "materia_oficial": "LABORATEGIKO TEKNIKAK",
+  "materia": "Laborategiko Teknikak",
+  "etapa": "Bachillerato",
+  "ciclo": "Único",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato",
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Laborategiko abileziak eta trebetasunak garatzea, prozedura, teknika, material eta tresnarik egokienak doitasunez erabiliz, prozesu fisiko, kimiko, biologiko eta geologikoei lotutako galderei erantzuteko. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Laborategian egin daitezkeen lanen ikuspegi orokorra eta aniztasuna aitortzea, hainbat teknika eta esperientzia ezagutuz eta aplikatuz, trebetasun eta jarrera zientifikoak garatzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Problemak ebaztea eta ikerketa txikiak egitea, bakarka zein taldean, laborategiko lanaren berezko metodologia zientifikoak autonomiaz erabiliz, eguneroko bizitzako produktuak eta materialak aztertzeko, kontrolatzeko eta lortzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Prozedurazko lanaren garrantzia ulertzea, metodo analitikoen bidez egindako kalitate-kontrola baloratuz, eguneroko bizitzan erabiltzen eta kontsumitzen diren produktuen propietateak ezagutzea ahalbidetuko duten datuak eta emaitzak lortzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Informazio zientifiko-teknologikoa eta lortutako datuak zehaztasunez interpretatzea, tratatzea eta komunikatzea, hainbat euskarri, material eta baliabide eta hiztegi zientifiko egokia erabiliz, lanaren emaitzak eta ondorioak aurkezteko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Ezagutza fisikoak, kimikoak, geologikoak eta biologikoak modu integratuan, eta haiek teknologiarekin, gizartearekin eta ingurumenarekin dituzten erlazioak hainbat testuingurutan erabiltzea, eguneroko egoeretako problemak aztertuz, egungo munduaren erronkekin bat datozen erabaki arduratsuak hartzeko.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Prozesuetan materialak eta tresnak doitasunez erabiltzea, kasu bakoitzean teknikarik egokiena erabiliz."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Ingurune naturalean behatutako prozesuen inguruan planteatutako galderak edo gaiak ebaztea, laborategiaren berezko trebetasunak eta abileziak erabiliz eta, beharrezkoa denean, inplikatutako legeak eta teoriak kontuan hartuz."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Fenomeno zientifikoei buruzko hipotesien egiazkotasuna edo faltsutasuna egiaztatzea, esperimentuak eginez eta esperimentazio-inguruneko arauak betez."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Metodologia zientifikoen berezko trebetasunak eta jarrerak garatzea, hainbat teknika eta esperientzia ezagutuz eta aplikatuz, eta laborategiko lanen aniztasuna baloratuz."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Laborategiko teknikei eta haien aplikazioei buruzko iritziak eta erabakiak lantzea, argudiatzea eta adieraztea, haien garapena, aukerak eta mugak aztertuz."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Konposatuen fabrikazio-prozesuak eta oinarrizko eragiketak identifikatzea eta bereiztea, osagaiak bereizteko eta produktuak lortzeko hainbat ekipamendu eta material erabiliz."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Egunero erabiltzen diren produktuak eta materialak aztertzea, kontrolatzea eta lortzea, bakarka zein taldean ikerketa txikiak eginez. 2023ko uztailaren 24a, astelehena"
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Beharrezkoa denean taldean lan egitea, zereginetan kooperazio, kolaborazio eta parte-hartze arduratsuko jarrerak agertuz, rolak bere gain hartuz eta desberdintasunak errespetuarekin eta tolerantziarekin onartuz."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Laborategiko lanaren berezko metodologiak autonomiaz erabiltzea, problemak ebazteko teknikarik egokiena planifikatuz eta hautatuz."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "3",
+      "descripcion": "Ikerketak bakarka edo taldean planifikatzea eta egitea, laborategiko segurtasun-arauak eta materialen eta produktuen erabilera arduratsua errespetatuz."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Aldagai fisiko-kimikoak neurtzea (masa, bolumena, tenperatura, biskositatea eta abar), laginerako teknika eta aparatu egokia hautatuz eta erabiliz eta prozedurazko lana era egokian eginez (zehaztasuna, objektibotasuna, doitasuna eta abar)."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Lagin bat identifikatzean eta kuantifikatzean lortutako datuak eta emaitzak aztertzea, kalitate-kontrolak erabilitako baliabide analitikoetan duen garrantzia baloratuz."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Egindako analisietan lortutako emaitzak modu egokian eta hainbat formatutan adieraztea, esperientzien soluzioak irizpide egokiarekin argudiatuz."
+    },
+    {
+      "codigo": "4.4",
+      "competencia": "4",
+      "descripcion": "Egunero erabiltzen eta kontsumitzen diren produktuen propietateak identifikatzea eta ezagutzea, erabilitako laginerako teknika eta tresna egokiak erabiliz, lortutako emaitzak aztertuz eta, beharrezkoa denean, birformulatuz."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Laborategi erreal edo birtualetan prozesu jakin batzuk erreproduzitzea edo simulatzea, baldintzatzen duten aldagaiak aldatuz, inplikatutako printzipioak, legeak eta teoriak kontuan hartuz eta emaitzak era egokian adieraziz."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Lan esperimentalaren eta ikerketa-lanaren memoria edo txostenak lantzea, hainbat iturritako testuak, eskemak eta irudikapen grafikoak hainbat formatutan erabiliz."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "5",
+      "descripcion": "Lan zientifiko esperimental edo dokumentalaren emaitzak eta ondorioak aurkeztea, informazio zientifikoa zehaztasunez eta era egokian interpretatuz, tratatuz eta komunikatuz, egile-eskubideak errespetatuz eta oinarrizko printzipio etikoei jarraituz."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Eguneroko egoerei lotutako problemak aztertzea, horiek ebazten lagunduko duten proposamenak eginez eta erabaki arduratsuak eta garapen iraunkorrerako helburuekin koherenteak hartuz."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Zientziaren diziplina anitzeko izaera eta diziplina batzuek besteei egindako ekarpenak aitortzea, biologiako, fisikako, geologiako eta kimikako ezagutzak, trebetasunak eta jarrerak erabiliz eta eguneroko bizitzako egoerak aztertuz."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "1. Oinarrizko laborategia: antolaketa, segurtasuna eta higienea",
+      "titulo": "Oinarrizko laborategia: antolaketa, segurtasuna eta higienea",
+      "items": [
+        "Laborategiko instalazioak.",
+        "Laborategiko materialak: beirazko material orokorra: graduatua eta graduatu gabea. Erabilera komun eta anitzeko materialak.",
+        "Askotariko aparatuak, ekipamenduak eta tresnak: berotze-ekipamenduak, ur-desmineralizatzailea, lehorgailuak, irabiagailu magnetikoak, balantzak, dosifikagailuak eta abar. Lupak, mikroskopioak eta haien erabilerak.",
+        "Ur motak eta laborategiko produktu kimikoak. Aurkezteko moduak eta ontzi motak.",
+        "Laborategiko segurtasunari eta higieneari buruzko arau orokorrak. Laborategian gerta daitezkeen istripuen aurrean jarduteko protokoloak.",
+        "Laborategiko ekipamendu konbentzionalen erabilera eta garbiketa.",
+        "Produktuen manipulazioa eta etiketatzea.",
+        "Hondakinen kudeaketa.",
+        "Produktu kimikoen biltegiratzea.",
+        "2023ko uztailaren 24a, astelehena"
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "2",
+      "bloque": "2. Saiakuntza fisiko-kimikoak",
+      "titulo": "Saiakuntza fisiko-kimikoak",
+      "items": [
+        "Aldagai fisiko-kimikorik ohikoenen eta haien unitateen azterketa.",
+        "Doitasunaren eta zehaztasunaren arteko aldea.",
+        "Kalibratzea eta ziurgabetasuna: aldizkakotasuna eta erregistro dokumentalak. Trazabilitatea.",
+        "Neurriak: bolumena, masa, dentsitatea, tenperatura eta presioa."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "3",
+      "bloque": "3. Oinarrizko eragiketak eta prozesuak",
+      "titulo": "Oinarrizko eragiketak eta prozesuak",
+      "items": [
+        "Laborategiko oinarrizko eragiketak: funtsa, sailkapena eta aplikazioak.",
+        "Bereizketak: mekanikoak, termikoak eta difusionalak.",
+        "Prozesu kimikoa. Erreakzioak, produktuen lorpena, erreaktibo mugatzailea eta errendimendua.",
+        "Erreakzio kimikoak: endotermikoak, exotermikoak eta berezkoak.",
+        "Erreakzio-abiaduran eragina duten faktoreak."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "4",
+      "bloque": "4. Analisi kimikoa",
+      "titulo": "Analisi kimikoa",
+      "items": [
+        "Azidotasuna eta basikotasuna.",
+        "Disoluzio baten kontzentrazioaren kalkulua, laborategian.",
+        "Analisi kualitatiboa: katioien analisia, funtzio organikoen identifikazioa.",
+        "Analisi kuantitatiboa: bolumetriak eta grabimetriak.",
+        "Analisirako merkataritza-metodoak: identifikazio-kita eta in situ balorazioa."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "5",
+      "bloque": "5. Analisi instrumentala",
+      "titulo": "Analisi instrumentala",
+      "items": [
+        "Metodo instrumentalak: funtsa, sailkapena eta aplikazioak.",
+        "Metodo elektrikoak.",
+        "Metodo optikoak.",
+        "Bereizketa kromatografikorako metodoak."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "6",
+      "bloque": "6. Saiakuntza mikrobiologikoak, biokimikoak eta bioteknologikoak",
+      "titulo": "Saiakuntza mikrobiologikoak, biokimikoak eta bioteknologikoak",
+      "items": [
+        "Mikroorganismoak. Motak eta bereizketa (laborategian): archaea, eubakterioak, onddoak eta protistoak.",
+        "Laborategi mikrobiologikoko aparatu espezifikoak. Mikrobiologiako laborategian jarraitu beharreko arau orokorrak. Arriskuen analisia.",
+        "Esterilizazio-metodoak: bero lehorra, bero hezea, iragazketa eta esterilizazio kimikoa.",
+        "Kultibo-baliabideen prestaketa. Mikroorganismoen kultiboak: kultibo motak, ereiteko eta inkubatzeko teknikak.",
+        "Mikroorganismoen isolamendua eta kontaketa.",
+        "Proba biokimiko klasikoak eta mikroorganismoak identifikatzeko merkataritza-sistemak.",
+        "Analitika klinikoa: konposizioa eta gernu- eta odol-analisirako testa.",
+        "Elikagaien eta haien kutsatzaile kimiko eta mikrobiologikorik ohikoenen analisia eta konposizioa.",
+        "Elikadura-bioteknologia: esnekien ekoizpena, bakterioetatik eta onddoetatik abiatuta.",
+        "Bioteknologia aplikatua eta ikerketa-bioteknologia: bakterioen eta eukariotoen DNAren erauzketa. Entzimen bioekoizpenaren detekzioa."
+      ],
+      "codigos_items": []
+    }
+  ],
+  "comunidad": "pais-vasco",
+  "idioma": "eu"
+}

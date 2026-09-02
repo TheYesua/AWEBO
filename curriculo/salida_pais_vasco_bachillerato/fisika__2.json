@@ -1,0 +1,188 @@
+{
+  "materia_oficial": "FISIKA",
+  "materia": "Fisika",
+  "etapa": "Bachillerato",
+  "ciclo": "Único",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Prozesu fisiko garrantzitsuenak arautzen dituzten teoriak, printzipioak eta legeak erabiltzea, euren oinarri esperimentala eta problemak ebaztean garapen matematikoa kontuan hartuz, fisika teknologiaren, ekonomiaren, gizartearen eta ingurumen-jasangarritasunaren garapenean inplikatutako zientzia garrantzitsutzat hartzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Fisikaren eredu, teoria eta lege onartuak sistema naturalen azterketa-oinarri gisa hartzea, haien eboluzioa aurreikusiz, gizarteak teknologia-, industria- eta biosanitario-arloan eskatzen dituen aplikazio praktikoekin erlazionatutako eguneroko problemei soluzio orokorrak emateko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Fisikaren hizkuntza erabiltzea bere printzipio, magnitude, unitate, ekuazio eta abarren formulazio matematikoaz baliatuz, komunitate zientifikoen arteko komunikazio egokia ezartzeko, eta ikerketarako funtsezko tresna bat gisa.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Banakako eta taldeko lanean, modu autonomoan, eraginkorrean, kritikoan eta arduratsuan erabiltzea baliabideak hainbat formatutan, informazio- eta komunikazio-plataforma digitalak, sormena sustatzeko, zientzia- eta dibulgazio-materialak ekoiztuz eta elkartrukatuz, eta fisika gizarteari hurbiltzea errazteko, jakintza-eremu irisgarri gisa.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Fisikaren berezko lan- eta ikerketa-teknikak aplikatzea, baita esperimentazioa, arrazoiketa logiko- -matematikoa eta lankidetza ere, problemak ebatziz eta erlazionatutako egoerak interpretatuz, balio etiko eta jasangarrietan oinarritutako gizartean fisikak duen zeregina balioesteko. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Fisikaren diziplina anitzeko izaera aitortzea eta aztertzea, haren ibilbide historiko garrantzitsua eta ezagutza zientifikoak aurrera egiteko egindako ekarpenak etengabeko eboluzioan eta berrikuntzan oinarritutako prozesutzat hartuz, beste diziplina zientifiko batzuekin ezagutza- eta erlazio-oinarriak ezartzeko.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Fisikak zientziaren, teknologiaren, ekonomiaren, gizartearen eta ingurumen-jasangarritasunaren garapenean duen garrantzia ezagutzea, esparru horiei buruzko oinarri zientifikoak behar bezala erabiliz."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Problemak modu esperimentalean eta analitikoan ebaztea, fisikaren printzipioak, legeak eta teoriak erabiliz. 2. konpetentzia espezifikoa."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Sistema naturalen eboluzioa aztertzea eta ulertzea, fisikaren ereduak, legeak eta teoriak erabiliz."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Problema orokorretarako soluzioak ekartzea, egoera partikularrak eta horien mende dauden aldagaiak aztertuz."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Teknologia-, industria- eta biosanitario-alorretan gizartearentzat baliagarriak diren aplikazio praktikoak eta produktuak ezagutzea, fisikaren ereduak, legeak eta teoriak oinarri hartuta haiek aztertuz. 3. konpetentzia espezifikoa."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Printzipio, lege eta teoria zientifikoak aplikatzea inguruneko prozesu fisikoen azterketa kritikoan, hala nola komunikabide desberdinetan behatutakoak eta argitaratutakoak, horien sorburuak aztertuz, ulertuz eta azalduz. 2023ko uztailaren 24a, astelehena"
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Aldagai fisikoen unitateak zorrotz erabiltzea unitate-sistema desberdinetan, euren notazioa eta baliokidetasunak behar bezala erabiliz, eta aldagai fisikoak erlazionatzen dituzten grafikoak behar bezala lantzea eta interpretatzea, komunitate zientifiko osoarekin komunikazio eraginkorra ahalbidetuz."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Ariketak eta problemak ebaztean, emaitzak behar bezala adieraztea, lortutako irtenbideak argudiatuz, bai egoera errealen bidez, bai egoera idealen bidez. 4. konpetentzia espezifikoa."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Ikaskuntza-inguruneko beste kide batzuekin zientzia- eta dibulgazio-materialak kontsultatzea, lantzea eta trukatzea hainbat formatutan, plataforma digitalak modu autonomoan eta efizientean erabiliz."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Komunikabide digitalak eta tradizionalak modu kritikoan, etikoan eta arduratsuan erabiltzea, banakako eta taldeko lanaren bidez ikaskuntza aberasteko modu gisa. 5. konpetentzia espezifikoa."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Aldagai fisikoen arteko erlazioak lortzea, datu esperimentalak neurtuz eta tratatuz, erroreak zehaztuz eta irudikapen grafikoko sistemak erabiliz."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Prozesu fisiko jakin batzuk —errealak edo birtualak izan daitezke— laborategietan erreproduzitzea, haiek baldintzatzen dituzten aldagaiak aldatuz, inplikatuta dauden printzipio, lege edo teoriak kontuan hartuz, dagokion txostena formatu egokiarekin sortuz eta argudioak, ondorioak, datu-taulak, grafikoak eta erreferentzia bibliografikoak barne hartuz."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "5",
+      "descripcion": "Fisika baloratzea, bere aurrerapenen inguruan eta, etikaren eta jasangarritasunaren ikuspegitik, gizartean duen inplikazioaren inguruan modu arrazoituan eztabaidatuz. 6. konpetentzia espezifikoa."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Zientzia-diziplina guztietan gaur egun onartuta dauden legeak eta teoriak formulatzen lagundu duten fisikarekin erlazionatutako aurrerapen zientifiko nagusiak identifikatzea, hala nola zientziaren metodologiak, horien etengabeko eboluzioa eta unibertsaltasuna ulertzeko faseak."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Zientziaren diziplina anitzeko izaera eta diziplina batzuek besteei egiten dizkieten ekarpenak onartzea, fisikaren, kimikaren, biologiaren, geologiaren edo matematikaren arteko erlazioak ezarriz."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Zientziaren eta ikerketa zientifikoaren trebetasunak",
+      "titulo": "Zientziaren eta ikerketa zientifikoaren trebetasunak",
+      "items": [
+        "Metodologia zientifikoa eta honen oinarrizko ezaugarriak aplikatzeko irizpideak eta jarraibideak galderak planteatzean, problemak ebaztean, lan esperimentalean eta proiektu zientifikoen ekintzailetzan.",
+        "Zientzia-ikaskuntzako inguruneen eta baliabideen erabilera egokia.",
+        "Hainbat bitartekotatik abiatuta, informazio zientifikoa interpretatzeko eta ekoizteko formatuak.",
+        "Lan esperimentalaren zorroztasunarekin eta zehaztasunarekin, eta hizkuntza zientifikoaren erabilera zuzenarekin lotutako lan zientifikoaren berezko estrategiak, unitate eta tresna matematikoen sistemen erabilera egokia barne.",
+        "Fisikaren eta kimikaren mugarri historiko eta egungo garrantzitsuenetan zientzia-kulturaren eta gizon eta emakume zientzialarien zereginaren balorazioa, eta horrek gizartearen aurrerapenean eta hobekuntzan duen isla."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Eremu grabitatorioa",
+      "titulo": "Eremu grabitatorioa",
+      "items": [
+        "Kalkulu bektorialaren bidez, masa-sistema batek sortutako eremu grabitatorioaren zehaztapena. Eremuan murgilduta dauden objektuen aldagai zinematikoen eta dinamikoen gaineko eraginak.",
+        "Eremu grabitatorio bateko objektu baten momentu angeluarra: kalkulua, indar zentralekiko erlazioa eta haren kontserbazioaren aplikazioa mugimenduaren azterketan.",
+        "Eremu grabitatorio baten mende dagoen objektu baten energia mekanikoa: berak duen mugimendu mota deduzitzea, posizio, abiadura eta ibilbide mota desberdinen arteko desplazamenduetan dauden energia-balantzeen edo lanaren kalkulua.",
+        "Mugimendu planetarioan egiaztatzen diren legeak eta sateliteen eta zeruko gorputzen mugimendura estrapolazioa.",
+        "2023ko uztailaren 24a, astelehena Kosmologiarako eta astrofisikarako sarrera, eremu grabitatorioaren aplikazio gisa: fisikaren inplikazioa objektu astronomikoen eboluzioan, unibertsoaren ezagutzan eta ikerketaren eragina esparru horietan, industrian, teknologian, ekonomian eta gizartean."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Eremu elektromagnetikoa",
+      "titulo": "Eremu elektromagnetikoa",
+      "items": [
+        "Eremu elektrikoa eta magnetikoa: tratamendu bektoriala, karga elektriko libreen aldagai zinematikoen eta dinamikoen zehaztapena eremu horien aurrean. Efektu horiek dituzten fenomeno naturalak eta aplikazio teknologikoak.",
+        "Eremu elektrikoaren intentsitatea karga diskretu eta jarraituen banaketetan: eremu elektrikoko fluxuaren kalkulua eta interpretazioa.",
+        "Karga estatikoen banaketa baten energia: karga libreak potentzial elektriko desberdineko puntuen artean mugitzean aldatzen diren eta konstante irauten duten magnitudeak.",
+        "Hainbat konfigurazio geometrikotan korronte elektrikoa duten hariek sortutako eremu magnetikoak: zuzenak, espirak, solenoideak edo torikoak. Elkarrekintza ingurunean dauden karga elektriko libreekin.",
+        "Karga sinpleen, imanen eta korronte elektrikoa duten harien banaketek konfigurazio geometriko desberdinetan sortutako eremu elektriko eta magnetikoko lineak.",
+        "Indar elektroeragilearen sorkuntza: motorren, sorgailuen eta transformadoreen funtzionamendua fluxu magnetikoaren aldaketa gertatzen den sistemetatik abiatuta."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Bibrazioak eta uhinak",
+      "titulo": "Bibrazioak eta uhinak",
+      "items": [
+        "Oszilazio-higidura: gorputz oszilatzaile baten aldagai zinematikoak eta energia-kontserbazioa sistema horietan.",
+        "Uhin-higidura: oszilazio-grafikoak posizioaren eta denboraren arabera, hori deskribatzen duen uhin-ekuazioa eta mugimendu harmoniko sinplearekin duen erlazioa. Uhin-higidura mota desberdinak naturan.",
+        "Uhin-fenomenoak: zenbait uhin-fenomeno eta aplikazio agerian uzten dituzten egoera eta testuinguru naturalak. Soinu-uhinak eta horien ezaugarriak. Aldaketak uhinen propietateetan, igorlearen eta hartzailearen desplazamenduaren arabera.",
+        "Argiaren natura: eztabaida eta debate historikoak. Argia uhin elektromagnetiko gisa. Espektro elektromagnetikoa.",
+        "Irudien eraketa errefrakzio-indize desberdineko bitarteko eta objektuetan. Sistema optikoak: lente meheak, ispilu lauak eta kurbatuak eta horien aplikazioak."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "E",
+      "bloque": "E. Fisika erlatibista, kuantikoa, nuklearra eta partikulena",
+      "titulo": "Fisika erlatibista, kuantikoa, nuklearra eta partikulena",
+      "items": [
+        "Erlatibitate espazialaren oinarrizko printzipioak eta ondorioak: luzeraren uzkurdura, denboraren dilatazioa, energia eta masa erlatibistak.",
+        "Uhin-korpuskulu dualtasuna eta kuantizazioa: De Broglie-ren hipotesia eta efektu fotoelektrikoa. Ziurgabetasun-printzipioa, denboran eta energian oinarrituta formulatua.",
+        "Partikulen fisikaren eredu estandarra. Funtsezko partikulen sailkapenak. Funtsezko elkarrekintzak, partikulak trukatzeko prozesu gisa (bosoiak). Partikulen azeleragailuak.",
+        "Nukleo atomikoak eta isotopoen egonkortasuna. Erradioaktibitate naturala eta beste prozesu nuklear batzuk. Aplikazioak ingeniaritzaren, teknologiaren eta osasunaren arloetan."
+      ],
+      "codigos_items": []
+    }
+  ],
+  "comunidad": "pais-vasco",
+  "idioma": "eu"
+}

@@ -1,0 +1,205 @@
+{
+  "materia_oficial": "ZIENTZIA OROKORRAK",
+  "materia": "Zientzia Orokorrak",
+  "etapa": "Bachillerato",
+  "ciclo": "Único",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Zientziaren berezko metodologiak aplikatzea, prozedura, material eta tresna egokiak zehaztasunez erabiliz, prozesu fisiko, kimiko, biologiko eta geologikoei buruzko galderei erantzuteko. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Fenomeno naturalak eta giza jarduerak ingurunean eragiten dituen aldaketak ulertzea eta azaltzea, printzipio, lege eta teoria zientifiko egokiak erabiliz, ingurune naturalaren funtzionamenduaren ikuspegi holistikoa lortzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Ohitura jasangarri eta osasungarrien garrantziari buruz argudiatzea, funts zientifikoetan oinarrituz, haiek baloratzeko eta beren ingurunean sustatzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Pentsamendu zientifikoa eta arrazoibide logiko-matematikoak aplikatzea, estrategia eta tresna egokiak bilatuz eta hautatuz, zientzia esperimentalekin lotutako problemak ebazteko. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Zientziak eta zientzian diharduten pertsonek egiten duten ekarpena analizatzea, genero-ikuspegiaz eta hura etengabe eraikitzen ari den prozesu kolektibo eta diziplinartekotzat ulertuz, gizartearen aurrerabidean duen funtsezko eginkizuna baloratzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Askotariko baliabideak erabiltzea, zentzu kritikoz eta etikoz, kontrastatutako informazioa bilatzeko eta hautatzeko eta kolaborazioak ezartzeko. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Ingurunean behatutako prozesu fisiko, kimiko, biologiko eta geologikoei buruzko galderak planteatzea eta erantzutea, metodologia zientifikoen jarraibideak betez."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Hipotesiak kontrastatzea, laborategietan edo ingurune birtualetan esperimentuak eginez, dagozkion segurtasun-arauei jarraituz."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Esperimentu edo lan zientifiko baten emaitzak interpretatzea eta analizatzea, galderei modu arrazoituan erantzunez."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "1",
+      "descripcion": "Esperimentu edo lan zientifiko baten emaitzak jakinaraztea, baliabide egokiak erabiliz eta oinarrizko printzipio etikoen arabera."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Inguruneko fenomenoak analizatzea eta azaltzea, adierazpenen, taulen, grafikoen, ereduen, simulazioen, diagramen edo bestelako formatuen bidez."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Inguruan gertatzen diren fenomenoak azaltzea, natura-zientzien printzipioak, legeak eta teoriak erabiliz."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Fenomeno fisiko-kimiko garrantzitsuenak ezagutzea eta analizatzea, horiek lege edo teoria zientifiko nagusien bidez azalduz."
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "2",
+      "descripcion": "Biosferaren eta geosferaren oinarrizko elementuak eta prozesuak analizatzea eta azaltzea, oinarri zientifiko egokiak erabiliz."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Garapen iraunkorreko eredu batekin bateragarriak diren ohiturak sustatzea eta horien garrantzia baloratzea, oinarri zientifikoak argudiatuz eta erabiliz."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Ohitura osasungarriak sustatzea (dieta orekatua, higienea, txertaketa, antibiotikoen erabilera egokia, drogen kontsumoa gaitzestea, ariketa fisikoa, loaren higienea, jarrera egokiak...) eta horien garrantzia baloratzea, argudiatuz eta giza fisiologiaren oinarriak erabiliz."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Fenomeno eta prozesu fisiko, kimiko, biologiko eta geologikoekin lotutako problemak ebaztea, pentsamendu zientifikoa eta arrazoibide logiko-matematikoa erabiliz eta, beharrezkoa denean, ebazteko estrategia alternatiboak bilatuz."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Fenomeno eta prozesu fisiko, kimiko, biologiko eta geologikoekin lotutako problema baten soluzioa kritikoki analizatzea, erabilitako ondorioak edo estrategiak aldatuz, soluzioa bideragarria ez bada edo emandako datu berrien aurrean."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Zientzia ezagutza globaleko arlotzat baloratzea, hura osatzen duten diziplina guztien arteko erlazioa eta mendekotasuna analizatuz."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Zientziak gizartearen aurrerabidean duen garrantzia ezagutzea, ikerketa zientifikoaren jardunean pertsonek duten zeregin garrantzitsua baloratuz."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "5",
+      "descripcion": "Zientzia etengabe eraikitzen ari den jakintza gisa baloratzea, egungo ezagutza zientifikora nola iritsi den erakutsiz."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Fenomeno eta prozesu fisiko, kimiko, biologiko edo geologikoei buruzko informazioa hainbat formatutan bilatzea, kontrastatzea eta hautatzea, behar diren baliabide digitalak edo bestelakoak erabiliz, informazioa behar bezala erreferentziatuz eta egiletza-eskubideak errespetatuz."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Kolaborazioak ezartzea, proiektu zientifikoaren etapa bakoitzean, jarduerak egitean edo problemak ebaztean behar diren baliabideak erabiliz. 2023ko uztailaren 24a, astelehena"
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Zientzia eraikitzen",
+      "titulo": "Zientzia eraikitzen",
+      "items": [
+        "Ikerketa zientifikoaren berezko metodologiak, gaiak identifikatzeko eta formulatzeko, hipotesiak lantzeko eta horien egiaztapen esperimentala egiteko.",
+        "Esperimentuak eta ikerketa-proiektuak: tresna egokien erabilera, kontrol esperimentalak eta arrazoibide logiko-matematikoa.",
+        "Ingurunearekin lotutako problemak eta gai zientifikoak ebaztean lortutako emaitzak analizatzeko metodoak.",
+        "Iturri egiatiak eta kolaborazio-bitartekoak: informazio zientifikoaren bilaketa hainbat formatutan eta tresna egokiekin.",
+        "Informazio zientifikoa: interpretazioa eta produkzioa, hizkuntza egokian. Ebidentzian eta arrazoibidean oinarritutako irizpide propioaren garapena.",
+        "Zientzialarien ekarpena zientziaren mugarri nagusietan, gizarteak aurrera egin eta hobetu dezan."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Materiaren eta energiaren unibertsoa",
+      "titulo": "Materiaren eta energiaren unibertsoa",
+      "items": [
+        "Sistema material makroskopikoak: eredu mikroskopikoen erabilera haien propietateak eta agregazio-egoerak analizatzeko, baita aldaketako prozesu fisiko eta kimikoak ere.",
+        "Sistema materialen sailkapena horien konposizioaren arabera: sistema naturalak deskribatzeko eta lotutako problemak ebazteko aplikazioa.",
+        "Materiaren barne-egitura eta horren lotura taula periodikoan gertatzen diren erregulartasunekin. Historian eta gaur egun duen garrantziaren ezagutza.",
+        "Konposatu kimikoen formazioa: nomenklatura oinarrizko alfabetatze zientifiko baten oinarri gisa (komunitate zientifiko osoarekin komunikazio efizientea ezartzea ahalbidetuko duen alfabetatze zientifikoa).",
+        "Sistema materialen transformazio kimikoak eta horiek arautzen dituzten legeak: garrantzia gaur egungo munduko industria-, ingurumen- eta gizarte-prozesuetan.",
+        "Sistema batean jasotako energia, haren propietateak eta adierazpenak: energia mekanikoaren kontserbazio-teorema eta prozesu termodinamiko garrantzitsuenak. Energia-kontsumoarekin eta garapen iraunkorraren beharrarekin lotutako problemen ebazpena."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Mugitzen gaituzten indarrak",
+      "titulo": "Mugitzen gaituzten indarrak",
+      "items": [
+        "Naturaren funtsezko indarrak: ingurune naturaleko prozesu fisiko garrantzitsuenak, hala nola fenomeno elektromagnetikoak, planeten mugimendua edo prozesu nuklearrak.",
+        "Estatikaren legeak: fisikarekin, biologiarekin, geologiarekin edo ingeniaritzarekin lotutako egiturak.",
+        "Mugimenduarekin lotutako mekanikaren legeak: objektu mugikor baten portaera eta horren aplikazioak, adibidez, bide-segurtasunean edo garapen teknologikoan."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Lurra sistema",
+      "titulo": "Lurra sistema",
+      "items": [
+        "Unibertsoaren, eguzki-sistemaren eta Lurraren jatorria: beraien ezaugarriekiko erlazioa.",
+        "Lurra eta Ilargia: mugimenduak eta horien efektuak.",
+        "Bizitzaren jatorria Lurrean: hipotesi nabariak. Beste planeta batzuetan bizitzeko aukera.",
+        "Ekosistemaren kontzeptua: osagai biotikoen eta abiotikoen arteko erlazioa.",
+        "Geosfera: egitura, dinamika, barneko eta kanpoko prozesu geologikoak. Plaken tektonikaren teoria.",
+        "Lurraren geruza fluidoak: funtzioak, dinamika, lurrazalarekiko eta izaki bizidunekiko interakzioa edafogenesian.",
+        "Izaki bizidunak ekosistemaren osagai biotiko gisa: Woese-ren araberako sailkapena (1977), ezaugarriak eta ingurunearekiko egokitzapenak. Eboluzioaren Teoria.",
+        "Ekosistemen dinamika: energia-fluxuak, materiaren zikloak eta erlazio trofikoak. Erlazionatutako problemen ebazpena.",
+        "2023ko uztailaren 24a, astelehena Ingurumen-arazo nagusiak (berotze globala, ozono-geruza, naturaguneen suntsipena, biodibertsitatearen galera...) eta arrisku geologikoak: kausak eta ondorioak.",
+        "Garapen iraunkorraren eredua: garrantzia. Baliabide berriztagarriak eta berriztaezinak: horien erabilera eta ustiapen arduratsuaren garrantzia. Energia berriztagarriak. Hondakinen kudeaketa. Ekonomia zirkularra.",
+        "Ingurumenaren kontserbazioaren, osasunaren eta gizartearen garapen ekonomikoaren arteko erlazioa. One health kontzeptua (osasun bakarra)."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "E",
+      "bloque": "E. XXI. menderako biologia",
+      "titulo": "XXI. menderako biologia",
+      "items": [
+        "Biomolekula nagusiak (gluzidoak, lipidoak, proteinak eta azido nukleikoak): oinarrizko egitura eta haien funtzioekiko eta garrantzi biologikoarekiko erlazioa.",
+        "Informazio genetikoaren adierazpena: inplikatutako prozesuak. Kode genetikoaren ezaugarriak eta funtzio biologikoarekiko erlazioa.",
+        "Karaktereen transmisio genetikoa: problemen ebazpena eta aleloak heredatzeko edo fenotipoak agertzeko probabilitatearen analisia.",
+        "Ingeniaritza genetikoko teknikak: PCR, murrizte-entzimak, klonazio molekularra eta CRISPR-CAS9. Transgenearen kontzeptua. Edizio genetikoaren eta transgenesiaren arteko aldeak. DNA modu gidatuan manipulatzeko aukerak.",
+        "Gaixotasun infekziosoak eta ez-infekziosoak: kausak, prebentzioa eta tratamendua. Zoonosiak eta pandemiak. Txertoen mekanismoa eta garrantzia eta antibiotikoak egoki erabiltzearen garrantzia.",
+        "Bioteknologiaren aplikazioak eta ondorioak: nekazaritza, abeltzaintza, medikuntza edo ingurumen-leheneratzea. Mikroorganismoen garrantzi bioteknologikoa."
+      ],
+      "codigos_items": []
+    }
+  ],
+  "comunidad": "pais-vasco",
+  "idioma": "eu"
+}

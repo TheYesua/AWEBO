@@ -1,0 +1,160 @@
+{
+  "materia_oficial": "ARTE ESZENIKOAK",
+  "materia": "Arte Eszenikoak",
+  "etapa": "Bachillerato",
+  "ciclo": "1º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Garai eta tradizio desberdinetako adierazpen eszenikoak aztertzea, horien ezaugarriak deskribatuz, euren testuinguruarekin erlazioak ezarriz eta balizko eraginak eta proiekzioak identifikatuz, ondarea baloratzeko eta norberaren iruditeria aberasteko. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Eszena-esangurako sistema, bitarteko eta kodeen adierazpen-aukerak aztertzea, jarduera praktikoen bidez, haien erabilera baliabideen errepertorio pertsonalean txertatzeko, eta komunikazio-asmoaren arabera egokienak direnak hautatzeko irizpidea garatzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Ekintza dramatikoaren edo dantza-ekintzaren birsorkuntza eta irudikapena lantzea, mota guztietako pertsonaiak eta gatazkak erakusten dituzten eszenen eraikuntza kolektibotik abiatuz, komunikazioeta negoziazio-trebetasunak garatzeko eta autoezagutza, sormena, enpatia, irudimena eta espiritu ekintzailea indartzeko hainbat egoera eta testuingurutan. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Sorkuntza eta hedapen eszenikoko proiektuak egitea, horien faseak planifikatuz, esanahi-elementuak hautatuz eta egituratuz, eta hainbat funtzio ekimenez eta erantzukizunez hartuz, komunikazio- -asmoa adierazteko, kultura-ingurunea aberasteko eta garapen pertsonal, sozial, akademiko edo profesionalerako aukerak identifikatzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Adierazpen eszenikoak kritikoki baloratzea, zein publikori zuzendua dagoen identifikatuz eta haien ezaugarriak eta aurrekontu artistikoak aztertuz, irizpide estetikoa garatzeko, ondarea zabaltzeko eta arte eszenikoez gozatzeko aukerak zabaltzeko. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Hiztegi egokiarekin, garai eta tradizio desberdinetako adierazpen eszenikoen ezaugarri nagusiak identifikatzea, haien testuinguruarekin erlazioak ezarriz eta horiek modu aktiboan jasotzeko irekitasun-, interes- eta errespetu-jarrera nabarmenduz."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Garai eta tradizio desberdinetako adierazpen eszenikoen arteko loturak ezartzea, egungo arte eszenikoetan duten eragina baloratuz."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Eszena-esangurako sistemak, bitartekoak eta kodeak esploratzen ekimenez, konfiantzaz eta sormenez parte hartzea, jarduera praktikoen bidez."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Ekintza dramatikoa edo dantzakoa, pertsonaien diseinua eta egoeren eta eszenen konfigurazioa islatzea, baliabideen errepertorio pertsonala osatzen duten tekniken artean teknika egokienak hautatuz."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Interpretatzeko oinarrizko teknikak erabiltzea, buruz ikasteko estrategiak aplikatuz eta entseguak entzute-, elkarrizketa- eta ikaskuntza-espazio gisa baloratuz."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Ekintza dramatikoa edo dantzatua islatzea eta irudikatzea, eraginkortasuna erakutsiz, zuzendaritzaren jarraibideei jarraituz, kontzentrazioari eutsiz eta antsietatea eta beldur eszenikoa modu gidatuan kudeatuz."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Sorkuntza eta hedapen eszenikoko proiektu kolektiboen errealizazioan aktiboki parte hartzea, hainbat funtzio ekimenez eta erantzukizunez hartuz, eta taldeko gainerako kideen ekarpenak eta esperientziak baloratuz eta errespetatuz."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Sorkuntza eta hedapen eszenikoko proiektuetan parte hartzearen emaitzak ebaluatu eta aurkeztea, planteatutako helburuen eta lortutako azken produktuaren arteko erlazioa aztertuz, eta horien artean egon daitezkeen desberdintasunak modu arrazoituan azalduz."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Ikuskizun jakin bat zer publiko motari zuzentzen zaion identifikatzea, argumentuak obraren analisian eta ikusleen erreakzioetan oinarrituz."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Adierazpen eszenikoak komentatzea, terminologia egokia erabiliz, iturri fidagarrietatik informazioa birlanduz, eta horien ezaugarri eta aurrekontu artistikoei buruzko gogoeta kritikoa eginez."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Ondare eszenikoa",
+      "titulo": "Ondare eszenikoa",
+      "items": [
+        "Arte eszenikoak: kontzeptua, tipologiak eta tradizioak.",
+        "Arte eszenikoak eta hauen historia: aldaketak eta eraldaketak.",
+        "Dramatikotasuna, antzerki-izaera eta performatibitatea.",
+        "Ondare immateriala."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Adierazpen eta komunikazio eszenikoa",
+      "titulo": "Adierazpen eta komunikazio eszenikoa",
+      "items": [
+        "Eszena-esangurako kodeak: izaera, deskribapena eta sailkapena.",
+        "Espazio eszenikoa esanahi-sortzaile gisa. Antzerki-konbentzioa.",
+        "Baliabide plastikoak: eszenografia bolumetrikoa eta birtuala, karakterizazioa, argiztapena eta soinu-espazioa.",
+        "Literatura-baliabideak eta bestelako materialak. Testu dramatikoa.",
+        "Gatazka dramatikoa: pertsonaia, egoera eta ekintza dramatikoa.",
+        "Pertsonaia dramatikoa: analisia, karakterizazioa eta eraikuntza.",
+        "Joko dramatikoa Eszena-esangurako kodeak: izaera, deskribapena eta sailkapena."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Interpretazioa",
+      "titulo": "Interpretazioa",
+      "items": [
+        "Prestakuntza fisikoa eta adierazpen aurreko prestakuntza. Gorputzaren zaintza.",
+        "Interpretazioko edo dantzako metodoak eta teknikak.",
+        "Interpretearen instrumentuak: gorputz-adierazpena, keinu-adierazpena, ahozkoa eta erritmiko-musikala. Kontzientzia emozionala.",
+        "Pertsonaia dramatikoa: irudikapen-mailak, helburuak eta funtzioak.",
+        "Interpretazio-partitura eta haren gauzatzea"
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Antzezpena eta eszenifikazioa",
+      "titulo": "Antzezpena eta eszenifikazioa",
+      "items": [
+        "Ikuskizun eszenikoa: kontzeptua eta ezaugarriak.",
+        "2023ko uztailaren 24a, astelehena Ikuskizunaren oinarrizko tipologiak: klasikoa, abangoardiakoa, gorputzekoa, mendebaldekoa, ekialdekoa, objektuena, musikala, dantzakoa, barrukoa, kalekoa.",
+        "Bestelako aurkezpen eszenikoak: happening, performance, bideo-antzerkia edo antzerki-dantza.",
+        "Ikuskizun baten diseinua: ekipoak, faseak eta lan-arloak.",
+        "Entseguak: tipologia, helburuak eta antolamendua.",
+        "Ikuskizun eszenikoen antzezpena.",
+        "Talde-laneko estrategiak. Gatazken konponketa."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "E",
+      "bloque": "E. Harrera arte eszenikoetan",
+      "titulo": "Harrera arte eszenikoetan",
+      "items": [
+        "Publikoa: kontzeptua eta tipologiak.",
+        "Antzerki-harrera: katarsia, arroztasuna eta partaidetza.",
+        "Adierazpen eszenikoak aztertzeko estrategiak eta teknikak.",
+        "Jabetza intelektualaren errespetua. Norberaren sormenaren babesa."
+      ],
+      "codigos_items": []
+    }
+  ],
+  "comunidad": "pais-vasco",
+  "idioma": "eu"
+}

@@ -1,0 +1,136 @@
+{
+  "materia_oficial": "ARTE PLASTIKOEI ETA DISEINUARI APLIKATUTAKO MARRAZKETA TEKNIKOA",
+  "materia": "Arte Plastikoei eta Diseinuari Aplikatutako Marrazketa Teknikoa",
+  "etapa": "Bachillerato",
+  "ciclo": "2º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Geometriak naturan, ingurune eraikian eta artean duen presentzia behatzea, aztertzea eta baloratzea, haren egitura geometrikoak, elementuak eta kodeak identifikatuz, hautemateko eta gozatzeko jarrera proaktiboarekin, haren jatorria, funtzioa eta asmoa hainbat testuingurutan eta baliabidetan azaltzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Proposamen grafikoak eta diseinukoak garatzea, esku hutsezko marrazketa eta marrazketa teknikoaren berezko materialak erabiliz, planoan trazadurak, konposizioak eta eraldaketa geometrikoak modu intuitiboan eta arrazoituan eginez, eta zorroztasunarekiko interesa agertuz, norberaren hizkuntza plastikoan txertatzeko. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Espazioa eta hiru dimentsioko objektuak ulertzea eta irudikatzea, irudikapen artistikoetan duten presentzia baloratuz, eta irudikapen-sistema egokiena hautatuz eta erabiliz ilustrazioak eta objektuak eta espazioak diseinatzeko proiektuak egiteko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Bozetoak aztertzea, definitzea eta egitea, banaka edo taldean, UNE eta ISO funtsezko arauak aplikatuz objektuak eta espazioak interpretatzeko eta irudikatzeko, baita diseinu-proiektuak dokumentatzea ere.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Tresna digitalek eskaintzen dituzten aukerak modu kritiko, seguru eta arduratsuan integratzea eta aprobetxatzea, 2D marrazketa bektorialeko eta 3D modelatuko programa eta aplikazio espezifikoak hautatuz eta erabiliz, arte-sorkuntza pertsonaleko edo diseinuko prozesuak garatzeko. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Hautemateko eta gozatzeko jarrera proaktiboarekin, artean eta diseinuan forma eta erlazio geometrikoen presentzia aztertzea, berariazko hiztegi teknikoa eta artistikoa, horiek erabiltzeko arrazoia edo asmoa eta gai berari emandako soluzioak ulertuz eta erabiliz. 2. konpetentzia espezifikoa."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Patroiak eta mosaikoak diseinatzea, transformazio geometrikoak haien diseinura aplikatuz, zereginean zehaztasuna, argitasuna eta garbitasuna erakutsiz."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Sormenezko formak diseinatzea, ukitzaileak, loturak eta kurba konikoak erabiliz, eta haien zehaztasunean zorroztasuna erabiliz. 3. konpetentzia espezifikoa."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Perspektiba isometrikoan eta cavalieri perspektiban forma bolumetrikoak marraztea, kurbak txertatuz, eta irudikapen-sistema horiek artearen eta diseinuaren eremuetan duten aplikazioa balioetsiz."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Espazioak edo eszenografiak diseinatzea, perspektiba konikoa aplikatuz, edukitako objektuen argiak eta itzalak irudikatuz eta egindako prozesuari eta lortutako emaitzari buruz hausnartuz"
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Ontzi errazak diseinatzea, perspektiba isometrikoan edo cavalieri-perspektiban irudikatuz, beharrezko ezagutza teknikoak aplikatuz, eta egindako prozesuari eta lortutako emaitzari buruz hausnartuz."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "3",
+      "descripcion": "Ilustrazioak edo binetak marraztea, perspektiba konikoaren teknikak aplikatuz espazioak, objektuak edo pertsonak hainbat ikuspuntutatik irudikatzean, eta lanean egindako ahalegina eta jarraitutasuna baloratuz. 4. konpetentzia espezifikoa."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Diseinu erraza proiektatzea, banaka edo taldean, normalizazioaren bidez haren forma eta dimentsioak argi eta garbi komunikatuz, kolaborazio lana arinduko duten estrategiak eta trebetasunak aplikatuz, errespetua, enpatia eta iritzi eta ikuspuntu desberdinen balorazioa erakutsiz. 5. konpetentzia espezifikoa."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Proiektuak egitea eta aurkeztea, marrazketa bektorialeko tresnek diseinuaren eta artearen arloei eskaintzen dizkieten aukerak aprobetxatuz, hura egikaritzean zorroztasunez jokatuz eta lanean jarraitutasuna erakutsiz."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "3Dko modelazioan hastea, eskulturak edo instalazioak diseinatuz, sorkuntza-tresna gisa duen ahalmena baloratuz, eta laneko eta erantzukizuneko ohitura sendotuz."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Geometria, artea eta ingurunea",
+      "titulo": "Geometria, artea eta ingurunea",
+      "items": [
+        "Konposizio modularrak diseinu grafikoan, objektuen diseinuan eta espazioen diseinuan.",
+        "Geometria eta ilusio optikoak artean eta diseinuan.",
+        "Kurba konikoak naturan, ingurunean, artean eta diseinuan.",
+        "Espazioaren irudikapena diseinu eta arte garaikidean Mosaikoen eta patroien sorrerari aplikatutako transformazio geometrikoak. Trazadura tresna digitalekin eta gabe.",
+        "Loturak eta ukitzaileak. Aplikazioa diseinu grafikoan, eskuzko trazaduraren eta trazadura digitalaren bidez."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Espazioaren irudikapen-sistema aplikatuak",
+      "titulo": "Espazioaren irudikapen-sistema aplikatuak",
+      "items": [
+        "Zirkunferentzia eta solido sinpleen irudikapena perspektiba isometrikoan eta cavalieri perspektiban. Hiru dimentsioko formak diseinatzeko aplikazioa.",
+        "Egitura poliedrikoak. Solido platonikoak.Aplikazioa arkitekturan eta diseinuan.",
+        "Perspektiba konikoaren, aurretiko perspektibaren, zeiharreko perspektibaren eta koadro inklinatukoaren aplikazioak espazioen eta objektuen diseinuan. Argien eta itzalen irudikapena."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Proiektuen diseinua eta normalizazioa",
+      "titulo": "Proiektuen diseinua eta normalizazioa",
+      "items": [
+        "Diseinu-proiektu baten faseak: krokisetik tailerreko planora.",
+        "Objektuen irudikapena beren bista akotatuen bidez. Ebaketak, sekzioak eta hausturak."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Diseinurako tresna digitalak",
+      "titulo": "Diseinurako tresna digitalak",
+      "items": [
+        "Arte- eta diseinu-proiektuei aplikatutako ordenagailuz lagundutako marrazketa."
+      ],
+      "codigos_items": []
+    }
+  ],
+  "comunidad": "pais-vasco",
+  "idioma": "eu"
+}

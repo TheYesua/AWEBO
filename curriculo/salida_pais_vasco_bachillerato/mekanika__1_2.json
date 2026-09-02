@@ -1,0 +1,240 @@
+{
+  "materia_oficial": "MEKANIKA",
+  "materia": "Mekanika",
+  "etapa": "Bachillerato",
+  "ciclo": "Único",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato",
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Mekanikaren alorrean historian zehar izandako berrikuntza ezagutzea eta zentzu kritikoarekin analizatzea, haren oinarri zientifikoa zein aplikazio teknikoak kontuan hartuz, garapen teknologikoari egindako ekarpena, egungo aplikazio praktikoak eta ingurumen-iraunkortasunaren gaineko inpaktua ulertzeko eta baloratzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Mekanikaren teoriak, legeak eta ereduak aplikatzea, testuinguru errealak ezarritako mugak kontuan hartuz, zenbait sistema mekanikoren ezaugarriak justifikatzeko eta haien portaera inferitzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Arrazoibide logiko-matematikoa eta esperimentazioa erabiltzea, mekanikaren berezko printzipio, magnitude, unitate eta abarren formulazio matematikoa zorrotz eta zuzentasunez aplikatuz eta datuen tratamendu grafiko zuzena eginez, ezagutza-oinarriak ezartzeko eta adibide simulatuetan edo aplikazio praktiko errealetan problemak ebazteko. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Zientziaren eta ingeniaritzaren berezko prozedurak eta teknikak, hala nola ikerketa zientifikoa edo problema teknologikoak ebazteko prozesuak aplikatzea, modu autonomo, eraginkor, kritiko eta arduratsuan, behar diren ezagutzak transferituz, proiektuak plangintza bati jarraikiz modu indibidualean edo kooperatiboan garatzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Informazioaren tratamendu egokia egitea, tresna digitalak zuzentasunez eta erantzukizunez erabiliz, diziplinarteko jakintzak estrategikoki aplikatuz eta transferituz, ezagutzak sortzeko, trebetasun teknikoak hobetzeko, kalkulatzeko eta problemak ebazteko edo ideiak zabaltzeko, zenbait testuingurutan eta jarrera sortzailea erakutsita. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Trebetasun pertsonalak eta sozialak erabiltzea, motibazioa eta emozioak autorregulatuz eta errorea edo ziurgabetasuna ikasteko prozesuaren parte dela ulertuz, erantzukizunak bere gain hartuz, enpatia erakutsiz, modu aktiboan entzunez eta elkarrizketa gatazkak kudeatzeko tresna gisa baloratuz, zenbait zeregin bakarka edo taldean garatzeko, aldez aurreko plangintzari jarraikiz.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Mekanikaren zientzia aplikatuaren izaera ezagutzea, diziplina hori gorputzen mugimendua eta oreka aztertzen dituen fisikaren adarra eta, aldi berean, sistema mekanikoen azterketan, eraikuntzan eta hobekuntzan ardaztutako teknologiaren espezialitatea dela ulertuz."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Lege eta teoria fisikoak formulatzen eta gizartearentzat funtsezkoak diren sistema eta produktu teknologikoak garatzen lagundu duten mekanikaren alorreko aurrerapen nagusiak identifikatzea eta baloratzea, diziplina horrek garapen zientifiko- -teknologikoari egiten dion ekarpena analizatuz, etikaren eta iraunkortasunaren irizpideak aplikatuz."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Sistema mekanikoen portaera inferitzea, horietan biltzen diren ekintzak eta horien interrelazioa analizatuz."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Zenbait objektu eta sistema mekanikoren morfologia, dimentsioak, erabilitako materialak eta eraikuntza-modua justifikatzea, ezaugarri horiek jasaten dituzten eskakizun mekanikoekin erlazionatuz."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Problemak modu analitikoan ebaztea, mekanikan erabiltzen diren printzipio, magnitude, unitate eta abarren formulazio matematikoa zuzentasunez eta zorrotz erabiliz, eta zenbait aldagai erlazionatzen dituzten grafikoak modu egokian eginez eta interpretatuz."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Prozesu jakin batzuk laborategi errealetan edo birtualetan erreproduzitzea edo simulatzea, sistemek haiek baldintzatzen dituzten aldagaien balioak aldatzean ematen dituzten erantzunak behatuz eta inplikatutako printzipio, lege edo teoriak kontuan hartuz."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Zenbait magnituderen arteko erlazioak lortzea, datu esperimentalak neurtuz eta tratatuz, erroreak zehaztuz eta datu- -taulak, kalkulu-tresnak eta irudikapen grafikoko sistemak behar bezala erabiliz. 2023ko uztailaren 24a, astelehena"
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Metodologia zientifikoa (behaketa, eztabaida, hipotesien formulazioa, esperimentazioa, datuen analisia, ondorioak ateratzea eta emaitzen komunikazioa) zenbait egoeratan aplikatzea, modu autonomo, eraginkor, kritiko eta sortzailean."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Problema teknologikoak ebazteko metodoak (problemaren edo beharraren identifikazioa, informazio-bilaketa, diseinua, plangintza, eraikuntza, ebaluazioa eta doikuntzak, eta emaitzen komunikazioa) aplikatzea, modu autonomo, eraginkor, kritiko eta sortzailean."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Egindako lanari buruzko txostenak egitea, hizkuntza zientifiko-teknikoa eta tresna egokiak zorrotz erabiliz, lortutako ondorioak analizatuz, ulertuz eta azalduz, eta argudioak, datu-taulak, grafikoak eta erreferentzia bibliografikoak barne hartuz."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Proposatutako zereginak eta esleitutako funtzioak modu optimoan ebaztea, zenbait tresna digital erabiliz eta konfiguratuz, eta diziplinarteko ezagutzak modu kritiko, seguru eta arduratsuan eta jabetza intelektuala errespetatzeko moduan aplikatuz."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Hizkuntza zientifiko-tekniko hitzezkoa zein grafikoa zenbait testuinguru eta formatutan ezagutzea eta interpretatzea, zenbait iturritatik datorren informazioa lokalizatuz, hautatuz eta kontrastatuz, haren egokitasuna ebaluatuz, integratuz eta ezagutza bihurtuz."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "5",
+      "descripcion": "Ideiak, proposamenak edo soluzioak modu eraginkor eta antolatuan komunikatzea eta zabaltzea, ikuspuntu sortzailea hartuz, ikasitakoa transferituz eta euskarri, terminologia eta zorroztasun egokiak erabiliz hizkuntza tekniko hitzezkoa zein grafikoa erabiltzean."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Helburuak lortzen jarraikitasuna eta motibazio positiboa erakustea, emozioak identifikatuz eta kudeatuz, beste diziplina batzuetako ezagutzak transferituz, eta errorea edo kritika arrazoitua ikasteko prozesuaren parte dela ulertuz."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Talde heterogeneoetan modu aktibo eta arduratsuan parte hartzea, erabakiak modu adostuan hartuz, lana planifikatzen eta garatzen lagunduz, esleitutako rolaren bitartez, testuinguru analogiko eta digitaletan."
+    },
+    {
+      "codigo": "6.3",
+      "competencia": "6",
+      "descripcion": "Talde heterogeneoetan zereginak ekitatez banatzen laguntzea, gainerako kideen arrazoibideak aktiboki entzunez, ideiak eta iritziak modu asertiboan emanez, eta talde-ongizatea eta harreman osasungarriak eta inklusiboak sustatuz."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Mekanika: sarrera eta oinarrizko kontzeptuak",
+      "titulo": "Mekanika: sarrera eta oinarrizko kontzeptuak",
+      "items": [
+        "Mekanikako aurrerapenen historian zeharreko ekarpena. Soluzioen bilakaera.",
+        "Mekanikaren aplikazioak: kontsumoa, industria, automobilgintza, bestelakoak.",
+        "Mekanikaren sektorea Euskadin: industria-sektorea, zentro teknologikoak (I+G+B), erlazionatutako ikasketak.",
+        "Neurri-sistemak: SI, CGS eta teknikoa. Baliokidetasunak.",
+        "Bektore eta momentuekin egindako eragiketak.",
+        "Oinarrizko kontzeptuak: masa-geometria, grabitate-zentroa, inertzia-momentua, biraketa-erradioa.",
+        "Lotura mekanikoak. Motak, ezaugarriak, askatasun-graduak. Lotura mekanikoen azterketa eta modelizazioa mekanismo eta sistema material errealetan.",
+        "Sistema material baten gaineko ekintzak. Barne- eta kanpo-indarrak; motak. Indar baten momentua. Indar-parea. Ekintzen azterketa eta modelizazioa mekanismo eta sistema material errealetan.",
+        "Lotura mekaniko perfektuen bidezko indar- eta momentu-transmisioa. Lotura mekaniko errealak; marruskadura."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Zinematika",
+      "titulo": "Zinematika",
+      "items": [
+        "Puntuaren zinematika. Higidura lineala, zirkularra eta harmonikoa.",
+        "Solidoaren zinematika. Translazio-higidura, ardatz baten inguruko biraketa-higidura eta higidura helikoidala: higidura uniformea eta azelerazio uniformeko higidura. Eragileak. Higidura absolutua, erlatiboa eta arrastekoa. Sistema inertzialak.",
+        "2023ko uztailaren 24a, astelehena Higidura laua. Aldiuneko biraketa-zentroa. Higidura-konposizioa.",
+        "Mekanismoen eta makinen elementuen analisi zinematikoa. Tresna digitalekin egindako simulazioa."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Dinamika",
+      "titulo": "Dinamika",
+      "items": [
+        "Newtonen legeak higidura lineal eta zirkularretan.",
+        "Puntuaren dinamika. Bulkada angeluarra, momentuak. Ekuazioak.",
+        "Solidoaren dinamika. Planoko translazioa eta ardatz baten inguruko biraketa. Inertzia-momentua. Momentu lineala eta angeluarra. Ekuazioak.",
+        "Lana, energia eta potentzia. Energia zinetikoaren teorema. Energia mekanikoaren kontserbazioa sistema isolatu batean.",
+        "Potentzia, momentua eta biraketa-erregimena.",
+        "Makina eta mekanismoen analisi dinamikoa; horien gaineko ekintzak. Makina eta mekanismoen errendimendua.",
+        "Bibrazioaren eraginpeko solido elastikoa. Erresonantzia."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Estatika",
+      "titulo": "Estatika",
+      "items": [
+        "Puntu materialen sistema baten oreka: oreka-baldintza unibertsalak.",
+        "Indar planokideen sistema baten eraginpeko solido zurrun libre edo lotura finkodun baten oreka. Marruskadura estatikoa eta dinamikoa.",
+        "Egitura artikulatuen azterketa estatikoa. Egituretan tentsioak kalkulatzeko metodoak: Korapiloak, Sekzioak (Ritter), Cremona.",
+        "Mekanismo lauen eta makina sinpleen azterketa estatikoa.",
+        "Oreka-egoeren analisia eta simulazioa tresna digitalekin."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "E",
+      "bloque": "E. Materialen erresistentzia",
+      "titulo": "Materialen erresistentzia",
+      "items": [
+        "Materialen elastikotasuna eta plastikotasuna; Hookeren legea. Segurtasun-koefizientea.",
+        "Trakzio-, konpresio-, ebaketa-, bihurdura- eta makurdura-esfortzuak. Kargak, indarrak eta momentuak; deformazioak, diagramak, aplikazioak.",
+        "Esfortzu termikoak.",
+        "Esfortzu-kontzentrazioa. Nekea.",
+        "Katalogoen eta araudi teknikoaren analisia. Dimentsionatua, parametro tipikoak. Kalkuluetako aplikazioa. Saiakuntzak."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "F",
+      "bloque": "F. Tresna digitalen erabilera eta informazioaren kudeaketa",
+      "titulo": "Tresna digitalen erabilera eta informazioaren kudeaketa",
+      "items": [
+        "1. Tresna digitalak.",
+        "Diseinu- eta simulazio-tresnak, laborategi birtualak… 2. Dokumentazio zientifiko-teknikoa.",
+        "Informazio zientifiko-teknikoaren bilaketa, interpretazioa eta hautaketa.",
+        "Katalogoen eta araudi teknikoaren analisia (dimentsionatua, parametro tipikoak, segurtasun-arauak…). Kalkuluetako aplikazioa.",
+        "Diagrama funtzionalen eta eskemen interpretazioa.",
+        "3. Ideien/soluzioen komunikazioa eta zabalkundea.",
+        "Txostenen eta dokumentazio teknikoaren elaborazioa.",
+        "Hizkuntza matematikoaren eta teknikoaren erabilera. Datuen irudikapen grafikoa.",
+        "Mekanikaren berezko notazio eta sinbologiaren erabilera.",
+        "Diagrama funtzionalen eta eskemen elaborazioa."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "G",
+      "bloque": "G. Zentzu sozioemozionala",
+      "titulo": "Zentzu sozioemozionala",
+      "items": [
+        "1. Jarrerak eta autorregulazioa.",
+        "Estilo kognitiboaren, motibazioaren eta emozioen autorregulazioa. Ekintzailetza, erresilientzia, jarraikitasuna eta sormena.",
+        "Autokonfiantza eta ekimena. Errorearen (indibiduala edo kolektiboa) tratamendua eta berrebaluazioa, jakintzak mobilizatzen dituen eta ikasteko aukerak sortzen dituen elementu gisa.",
+        "2023ko uztailaren 24a, astelehena 2. Erabakiak hartzeko jarraibideak, plangintza eta talde-lana.",
+        "2.1. Erabakiak hartzeko jarraibideak.",
+        "Problemen ebazpenean zenbait aukera ezagutzeko, onartzeko eta ebaluatzeko eta erabakiak hartzeko oinarrizko trebetasunak.",
+        "2.2. Plangintza.",
+        "Ideia, zeregin eta proiektuen bideragarritasunaren plangintza eta analisia.",
+        "Planifikatutakoaren exekuzioa eta, hala badagokio, doikuntza (epeak, materialen zaintza eta erabilera zuzena…).",
+        "Planifikatu eta egindakoaren ebaluazioa eta hobekuntza-proposamenen garapena (prozesuaren optimizazioa).",
+        "2.3. Talde-lana.",
+        "Talde heterogeneoetan lan egiteko teknikak eta estrategiak. Zereginetan kolaboratu eta kooperatu ingurune fisikoetan zein birtualetan Erantzukizunak bere gain hartzeko jarraibideak. Lidergo banatua.",
+        "3. Inklusioa, errespetua eta aniztasuna.",
+        "Komunikazio eraginkorra garatzeko trebetasunak; enpatia, entzute aktiboa eta asertibitatea.",
+        "Hizkuntzaren erabilera ez-diskriminatzailea. Estereotipo sexisten identifikazioa."
+      ],
+      "codigos_items": []
+    }
+  ],
+  "comunidad": "pais-vasco",
+  "idioma": "eu"
+}

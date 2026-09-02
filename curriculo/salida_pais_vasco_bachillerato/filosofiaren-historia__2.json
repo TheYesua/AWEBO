@@ -1,0 +1,208 @@
+{
+  "materia_oficial": "FILOSOFIAREN HISTORIA",
+  "materia": "Filosofiaren Historia",
+  "etapa": "Bachillerato",
+  "ciclo": "Único",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Gertakari historiko-filosofikoei buruzko informazioa bilatzea, aztertzea, interpretatzea, ekoiztea eta adieraztea, iturriak modu kritiko eta seguruan erabiliz eta oinarrizko ikerketa-teknikak menderatuz, arazo eta ideia filosofikoen historiaren inguruko ezagutza eta ekoizpen propioak sortzeko. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Argudiatze eta elkarrizketa filosofikoaren arauak eta jarraibideak ezagutzea, arau eta jarraibide horiek hainbat euskarri eta jardueretan identifikatuz eta aztertuz, argudioak osatzean eta azaltzean eta gainerakoekin hitz egitean zorroztasunez aplikatzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Elkarrizketa filosofikoan modu zorrotz, kritiko, tolerante eta enpatikoan parte hartzea, elkarrizketa horrek behar dituen jarraibide etiko eta formalak barneratuz eta eskatzen digun kudeaketa emozionala identifikatuz, talde-jardueretan parte hartzearen eta gai filosofikoen planteamendu dialogikoaren bidez, ideien kontrastea eta elkartrukea sustatzeko eta herritartasun aktiboa, emozionalki gaitua eta demokratikoa gauzatzeko. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Historikoki izan diren ikuskera filosofikoak ulertzea eta adieraztea, iturrietara hurbilduz eta haien inguruko lan kritikoa eginez, kultura-ondare komunaren eta herritartasun ilustratu baten ondare intelektualaren funtsezko parte diren ideien ezagutza garatzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Historikoki izan diren ikusmolde filosofikoen izaera funtsean plurala eta askotarikoa ezagutzea, erlazio dialektikoan, konfrontazio-erlazioan eta osagarritasun-erlazioan jarriz, pentsamenduaren historiaren ikuskera konplexu eta dinamikoa sortzeko eta gatazken konponbidean jarrera zentzuzko eta elkarrizketatzaile zein tolerante batekin konpromesua hartzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Arazo filosofiko berak hainbat garaitan eta ikuskera filosofikotan nola planteatu diren ezagutzea, testuak eta beste adierazpide filosofiko, historiko edo kultural batzuk aztertuz eta interpretatuz, arazo horiei tradizioaren ekarpenaren ezagutzari buruzko gogoeta kritiko batetik abiatuta aurre egiteko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "7",
+      "descripcion": "Galdera filosofikoak eta haiei erantzuteko ahaleginak kulturaren beste esparru batzuetan historikoki nola aurkeztu diren ezagutzea, esparru horietako testuen eta beste adierazpen batzuen interpretazio-azterketa eginez, mendebaldeko kulturaren historiaren eta ideia filosofikoek bete duten zereginaren ikuskera sistematiko, erlazional eta konplexu bat sustatzeko.",
+      "descriptores": []
+    },
+    {
+      "codigo": "8",
+      "descripcion": "Egungo gai garrantzitsuen planteamenduan ikuspegi sistemiko eta diziplinaz haraindiko bat eskuratzea, gai horien inguruko jarrera historiko-filosofiko desberdinak kritikoki azalduz, haien askotariko alderdiak aztertuz eta kategorizatuz, funtsezkoa dena eta osagarria dena bereiziz eta hainbat diziplina-esparrutako informazioa eta ideiak txertatuz, judizio-autonomia garatzeko eta etikoki kontsekuenteak diren jarrerak sustatzeko. 2023ko uztailaren 24a, astelehena",
+      "descriptores": []
+    },
+    {
+      "codigo": "9",
+      "descripcion": "Pentsamendu kritikoa eta emozioen hezkuntza garatzea, kooperazio-prozesu dialogikoetan parte hartzearen bidez eta gai horiei buruzko berariazko gogoeta egin duten egileen bitartez, elementu horiek pentsamenduaren garapenean betetzen duten zeregina hobeto ulertzeko eta autoezagutza eta kudeaketa pertsonal handiagoa lortzeko.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Filosofikoki garrantzitsuak diren iturri eta dokumentuen ezagutza zehatza sortzea, haiek bilatu, antolatu, aztertu, konparatu eta interpretatzeko teknikak testuinguru analogikoetan zein digitaletan aplikatuz eta testuinguru historikoekin, arazoekin, tesiekin, egileekin eta beste kulturaesparru batzuetako elementuekin behar bezala lotuz. 2023ko uztailaren 24a, astelehena"
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Arazo historiko-filosofikoei buruzko iritzi propioak eraikitzea, haiei buruzko dokumentuak eta ikerketa-lanak zehaztasunez eginez eta aurkeztuz, ohiko protokoloak bakarka zein taldean eta kooperazioan aplikatuz, jabetza intelektuala errespetatuz eta informazioa behar bezala erreferentziatuz."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Argudioak zehatz erabiltzea, arau, teknika eta jarraibide logikoak, erretorikoak eta argudiatzekoak ezagutuz eta aplikatuz, eta iritziak eta hipotesiak defendatzeko modu dogmatikoak, faltsuak eta partzialak saihestuz."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Argudioetan oinarritutako elkarrizketa enpatikoa, irekia eta ezagutzaren bilaketarekin konstruktiboki konprometitua erabiltzeko ohitura hartzea, proposatzen diren jarduera guztietan aktiboki, errespetuz eta elkarlanean parte hartuz."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Gai eta arazo filosofikoei buruzko ahozko eta idatzizko argudio-diskurtsoak egitea eta ebaluatzea, arau eta jarraibide logikoen, erretorikoen eta argudiatzekoen erabilera zuzena erakutsiz."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Iritziak eta hipotesiak defendatzeko modu dogmatikoak, faltsuak eta partzialak detektatzea eta saihestea, eta argudiatzearen ahalmenak baliatzea, modu faltsu eta partzial horien izaera azalduz."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Kooperazioaren, egiarekiko konpromisoaren, aniztasunarekiko errespetuaren eta jarrera diskriminatzaile edo arbitrario ororen bazterketaren garrantzia ezagutzea, pentsamendu arretatsuaren ideian oinarrituta printzipio horiek argudiatze-jardunean eta gainerakoekiko elkarrizketan aplikatuz."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Historian egin diren proposamen filosofikorik garrantzitsuei buruzko ezagutza esanguratsua eskuratzea eta adieraztea, haiei buruzko ikerketa eginez eta erantzun duten galderak identifikatuz."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Pentsamenduaren historiako arazo, ideia, tesi eta eztabaida filosofiko nagusiak identifikatzea, ulertzea eta haiei buruz eztabaidatzea, testu eta dokumentu filosofikoen edo filosofian garrantzitsuak diren galderen azterketa eta iruzkin kritikoak eginez."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Pentsamenduaren historiaren ikuskera plural, dialektiko eta kritiko bat sortzea, azterketa-, konparazio- eta sintesi-jardueren bidez garai edo tradizio bereko edo garai eta tradizio desberdinetako tesi, eskola eta filosofoen arteko aurkakotasuneta osagarritasun-erlazioak ulertuz eta adieraziz."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Gatazken zentzuzko eta elkarrizketan oinarritutako konponbide batekin konprometitutako jarrera irekia eta tolerantea garatzea, gai filosofikoen aniztasuna eta konplexutasuna barneratuz."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Arazo filosofiko handiak ezagutzea, haien denbora-dimentsioa eta dimentsio unibertsala ulertuz, arazo horien agerpenari eta bilakaerari lotutako kultura-baldintzei eta garai, eskola, tradizio eta egile desberdinek arazo horiei emandako tratamendu filosofikoari buruzko azterketa kritikoaren bidez."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Gauzak zalantzan jartzea pentsamendu filosofikoaren historiaren funtsezko elementutzat hartzea, garai desberdinetako filosofoek egindako galderen bidez pentsamendu hori egituratzen duten galderak identifikatuz."
+    },
+    {
+      "codigo": "7.1",
+      "competencia": "7",
+      "descripcion": "Mendebaldeko kulturaren historiaren eta ideia filosofikoek historia horretan bete duten zereginaren ikuskera sistemikoa eta erlazionala eskuratzea, literatura-izaerako testu edo dokumentuen, historiografikoen, kazetaritzakoen, zientifikoen edo erlijiosoen eta filosofiaren historian garrantzitsuak izan diren arazoak eta ikuskerak adierazten dituzten mota orotako kultura-adierazpenen konparazioazterketa eta konparazio-iruzkina eginez."
+    },
+    {
+      "codigo": "8.1",
+      "competencia": "8",
+      "descripcion": "Egungo funtsezko arazoen inguruko judizio-autonomia garatzea eta etikoki eta zibikoki kontsekuenteak diren planteamenduak, jarrerak eta ekintzak sustatzea, arazo horiek argitzen lagundu dezaketen ideia, teoria eta eztabaida historiko-filosofikoak ulertuz eta ikuspegi global, sistemiko eta diziplinaz haraindiko batean oinarrituta proposamen kritikoak eta pertsonalak eginez."
+    },
+    {
+      "codigo": "9.1",
+      "competencia": "9",
+      "descripcion": "Arazo filosofikoak kontuan hartzean alderdi arrazionalaren eta alderdi emozionalaren arteko oreka egokia lortzea, historian arazo horien inguruan egin diren ekarpen teorikoak ulertuz eta oreka horren garapena sustatuko duten jardueretan parte hartuz."
+    },
+    {
+      "codigo": "9.2",
+      "competencia": "9",
+      "descripcion": "Gaitasun kritikoa eta gogoeta egitekoa garatzea, historian arazo horien inguruan egin diren ekarpen teorikoak ulertuz eta oreka horren garapena sustatuko duten jardueretan parte hartuz. 2023ko uztailaren 24a, astelehena"
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Filosofiaren sorreratik Grezian, antzinaroaren amaierara",
+      "titulo": "Filosofiaren sorreratik Grezian, antzinaroaren amaierara",
+      "items": [
+        "Arazo eta ikuskera filosofikoen historikotasuna eta unibertsaltasuna. *Filosofoaren oinarrizko metodoak eta tresnak:*iturrien erabilera eta azterketa kritikoa; dokumentu filosofikoen ulermena eta interpretazioa; arazo filosofikoen identifikazioa kulturaren beste esparru batzuetan;*argudioan oinarritutako pentsamendua eta elkarrizketa; ikerketa eta mintzaldi filosofikoa.",
+        "Mendebaldeko filosofiaren sorrera Grezian. Mundu-ikuskera mitikoa eta teorizazio filosofikoa.",
+        "Errealitatearen arazoa presokratikoengan.",
+        "Filosofia eta herritartasuna Greziako Ilustrazioan: sofistak eta Sokrates.* Aspasia Miletokoa eta emakumeek Greziako kulturan eta filosofian bete duten zeregina.",
+        "Ideia eta izaera: ezagutza eta errealitatea Platonengan eta Aristotelesengan.",
+        "Antropologia filosofia klasikoan: Sokrates eta norberaren gaineko ezagutza; psikea Platonengan eta Aristotelesengan.",
+        "Eztabaida etikoa: intelektualismo sokratiko-platonikoa*; bertuteen teoria Platonengan eta Aristotelesengan; “eudaimonia” kontzeptua.",
+        "Eztabaida politikoa: Platonen proiektu politikoa eta Aristotelesen politika.",
+        "Polisetatik inperiora. Filosofia, zientzia eta kultura helenismoan. Estoizismoa, epikureismoa, zinismoa eta eszeptizismoa*.",
+        "Hipatia Alexandriakoaren figura historikoa."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Erdi Arotik Europako Modernitatera",
+      "titulo": "Erdi Arotik Europako Modernitatera",
+      "items": [
+        "Erdi Aroko filosofiaren etapak, metodoak eta funtsezko gaiak*. Jainkoaren existentzia hainbat egilerengan. Agustin Hiponakoa, Tomas Akinokoa eta Gilen Ockhamgoa. Hildegard von Bingen-en nortasun polifazetikoa.",
+        "Greziar filosofiaren asimilazioa Erdi Aroko teologian. Fedearen eta arrazoiaren arteko erlazioaren arazoa*.",
+        "Europako modernitatearen sorrera*. Errenazimentua. Protestantismoa. Iraultza zientifikoa. Comte eta positibismoa.",
+        "Arrazionalismoa eta enpirismoa*. René Descartes eta David Hume.",
+        "Eztabaida metafisiko modernoa. Substantzien teoria kartesiarra* . Materialismoa, Thomas Hobbesengandik Ilustraziora.",
+        "Gizartearen eta boterearen jatorria eta funtsa*. Makiavelo. Erdi Aroko pentsamendu politikotik kontratu sozialaren teoriara, Thomas Hobbes, John Locke eta Jean-Jacques Rousseauren arabera.",
+        "Utilitarismoa eta liberalismo politikoa, gizarte kapitalistaren jatorri: lehiakortasuna eta kooperazioa*."
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Modernitatetik postmodernitatera",
+      "titulo": "Modernitatetik postmodernitatera",
+      "items": [
+        "Proiektu ilustratua: arrazoiaren ahalmena eta mugak. Gizakiaren eskubideak. Lehen bolada feminista: Mary Wollstonecraft eta Olympe de Gouges*.",
+        "Immanuel Kant-en filosofia kritikoa eta metafisikaren arazoa jakintza gisa*.",
+        "Zoriontasunaren etikak eta betebeharraren etikak. Kant-en etika utilitarismoaren aurrean*. Joxe Azurmendiren ekarpena.",
+        "Susmoaren filosofoak: Freud, Nietzsche eta Marx. Haien pentsamenduari buruzko sarrera*.",
+        "Kapitalismoaren kritika: Karl Marx-en pentsamendu iraultzailea eta Ilustrazioaren dialektika Frankfurteko Eskolan*. Estatuaren interbentzionismoa (Popper-Habermas eztabaida). Hannah Arendt-en totalitarismoaren analisia*. John Rawls: ongizate-estatuan izan duen eragina.",
+        "Mendebaldeko tradizioaren dekonstrukzioa Friedrich Nietzsche-rengan, eta herentzia postmodernoa*. Postmodernitatearen ezaugarriak eta proposamenak: Habermas eta modernitatearen erreforma hausturaren aldeko pentsalarien aurrean.",
+        "Arazo filosofikoak hizkuntzaren analisia kontuan hartuta: Ludwig Wittgenstein eta filosofia analitikoa. Hizkuntzaren filosofia: euskaratik abiatutako analisia, Jose Luis Alvarez Enparantza “Txillardegi”.",
+        "Existentzialismoa: Martin Heidegger eta Jean-Paul Sartre. Bizi-arrazoia eta arrazoi poetikoa: José Ortega y Gasset, María Zambrano* eta Miguel de Unamuno.",
+        "Feminismoaren garapen garaikidea: Simone de Beauvoir*.",
+        "Egungo gizartea eta XXI. mendeko erronkak: globalizazioa, kapitalismoa, ekologismoa, generoalderdia eta mundu birtuala: Naomi Klein, Zygmunt Bauman, Martha Nussbaum, Noam Chomsky, Byung-Chul Han, Judith Butler, Yayo Herrero eta Paul"
+      ],
+      "codigos_items": []
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Preciado*",
+      "titulo": "Preciado*",
+      "items": [
+        "2023ko uztailaren 24a, astelehena"
+      ],
+      "codigos_items": []
+    }
+  ],
+  "comunidad": "pais-vasco",
+  "idioma": "eu"
+}
