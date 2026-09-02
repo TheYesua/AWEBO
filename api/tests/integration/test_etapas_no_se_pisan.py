@@ -117,6 +117,93 @@ class TestLaESOSobreviveACargarBachillerato:
         assert {f.etapa for f in filas} == {"ESO", "Bachillerato"}
 
 
+class TestElBorradoDeSobrantesRespetaLaEtapa:
+    """LO QUE ESTE FICHERO NO CUBRÍA, Y COSTÓ EL CURRÍCULO DE LA ESO.
+
+    Los tests de arriba comprueban que cargar Bachillerato no **sobrescriba**
+    la ESO. El 02/09/2026 se recargó Bachillerato del País Vasco con
+    `--borrar-sobrantes` y la ESO del País Vasco **desapareció**: 723 criterios
+    y 1480 saberes borrados, sobreviviendo solo los 28 que alguna SdA citaba.
+
+    El borrado acotaba por comunidad y no por etapa, así que todo lo vasco que
+    no viniera en la carpeta de Bachillerato era sobrante. Y la ESO no venía,
+    claro: se estaba cargando Bachillerato.
+
+    Sobrescribir y borrar son dos operaciones distintas. Al meter la etapa en
+    el esquema se revisó la primera y no la segunda, y estos tests —escritos
+    aquel mismo día, y por una vez antes del fallo— dieron una sensación de
+    cobertura que no era real. La lección no es «faltaba un test»: es que
+    proteger una clave de escritura no protege la de borrado, y hay que
+    buscarlas todas cuando se añade una dimensión al modelo.
+    """
+
+    @pytest.fixture()
+    def con_las_dos_etapas(self, app, db, tmp_path):
+        """La ESO cargada y, aparte, la carpeta de Bachillerato sola."""
+        eso = tmp_path / "eso"
+        eso.mkdir()
+        (eso / "mates.json").write_text(
+            json.dumps(_json("ESO", ["1º ESO", "2º ESO"], "Competencia ESO")),
+            encoding="utf-8")
+        seed_curriculo(eso)
+
+        bach = tmp_path / "bach"
+        bach.mkdir()
+        (bach / "mates.json").write_text(
+            json.dumps(_json("Bachillerato", ["1º Bachillerato"],
+                             "Competencia Bachillerato")),
+            encoding="utf-8")
+        return bach
+
+    def test_recargar_bachillerato_no_borra_la_eso(self, app, db,
+                                                   con_las_dos_etapas):
+        """El fallo, exactamente como ocurrió."""
+        seed_curriculo(con_las_dos_etapas, borrar_sobrantes=True)
+
+        criterios = db.session.scalars(
+            select(CriterioEvaluacion).where(
+                CriterioEvaluacion.etapa == "ESO")
+        ).all()
+        assert criterios, "la ESO se ha borrado al recargar Bachillerato"
+
+    @pytest.mark.parametrize("modelo", [Competencia, CriterioEvaluacion,
+                                        SaberBasico])
+    def test_ninguna_de_las_tres_tablas_pierde_la_eso(self, app, db,
+                                                      con_las_dos_etapas,
+                                                      modelo):
+        """Las tres se borran en el mismo bucle, así que las tres fallaban.
+        Se comprueban por separado para que el día que alguien toque una sola
+        no haya que deducirlo del recuento."""
+        seed_curriculo(con_las_dos_etapas, borrar_sobrantes=True)
+
+        filas = db.session.scalars(select(modelo)).all()
+        assert {f.etapa for f in filas} == {"ESO", "Bachillerato"}, (
+            f"{modelo.__name__}: quedan {[f.etapa for f in filas]}"
+        )
+
+    def test_dentro_de_la_etapa_sigue_borrando(self, app, db,
+                                               con_las_dos_etapas):
+        """El arreglo no puede desactivar el flag: lo que sobra **dentro** del
+        par (comunidad, etapa) que se carga tiene que seguir yéndose. Es lo que
+        el flag existe para hacer."""
+        seed_curriculo(con_las_dos_etapas, borrar_sobrantes=True)
+
+        # Segunda pasada de Bachillerato con la materia renombrada: la anterior
+        # queda obsoleta y debe desaparecer.
+        datos = _json("Bachillerato", ["1º Bachillerato"], "Otra competencia")
+        datos["materia"] = datos["materia_oficial"] = "Matemáticas II"
+        (con_las_dos_etapas / "mates.json").write_text(
+            json.dumps(datos), encoding="utf-8")
+        seed_curriculo(con_las_dos_etapas, borrar_sobrantes=True)
+
+        materias = {
+            c.materia for c in db.session.scalars(
+                select(Competencia).where(Competencia.etapa == "Bachillerato")
+            ).all()
+        }
+        assert materias == {"Matemáticas II"}, materias
+
+
 class TestElOrdenDeLosCursos:
 
     def test_bachillerato_va_despues_de_la_eso(self):
