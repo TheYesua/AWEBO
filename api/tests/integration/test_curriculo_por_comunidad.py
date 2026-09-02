@@ -290,7 +290,9 @@ class TestLosEndpointsDeConsulta:
 
         cuerpo = client.get("/api/curriculo/cobertura").get_json()
 
-        assert cuerpo == [{"materia": MATERIA, "cursos": [CURSO]}]
+        # La etapa entró en cada entrada el 02/09: el frontend la necesita para
+        # acotar los desplegables sin deducirla del texto del curso.
+        assert cuerpo == [{"materia": MATERIA, "etapa": "ESO", "cursos": [CURSO]}]
 
     def test_sin_comunidad_no_se_ofrece_nada(self, client, db, dos_comunidades):
         """Enseñarle un catálogo que no va a poder usar es peor que no

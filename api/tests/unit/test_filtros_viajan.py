@@ -51,7 +51,7 @@ def html() -> str:
 
 
 class TestLosSelectoresViajan:
-    @pytest.mark.parametrize("campo", ["provincia", "curso", "materia"])
+    @pytest.mark.parametrize("campo", ["provincia", "curso", "materia", "etapa"])
     def test_cada_filtro_tiene_name(self, html, campo):
         """Sin `name`, `FormData` no lo recoge y el filtro no sale del navegador."""
         patron = re.compile(
@@ -76,15 +76,17 @@ class TestElServidorLosAplica:
     Son tres saltos —plantilla, endpoint y servicio— y basta que uno falte
     para que el filtro no haga nada sin dar ningún error."""
 
-    def test_el_endpoint_lee_la_provincia(self):
-        assert 'provincia=request.args.get("provincia")' in ENDPOINT.read_text(
+    @pytest.mark.parametrize("campo", ["provincia", "etapa"])
+    def test_el_endpoint_lee_el_filtro(self, campo):
+        assert f'{campo}=request.args.get("{campo}")' in ENDPOINT.read_text(
             encoding="utf-8"
         )
 
-    def test_el_servicio_construye_la_condicion(self):
+    @pytest.mark.parametrize("campo", ["provincia", "etapa"])
+    def test_el_servicio_construye_la_condicion(self, campo):
         py = SERVICIO.read_text(encoding="utf-8")
 
-        assert "SituacionAprendizaje.provincia == provincia" in py
+        assert f"SituacionAprendizaje.{campo} == {campo}" in py
 
     def test_listar_y_contar_reciben_lo_mismo(self):
         """Comparten `_filtros_listado` justamente para no divergir. Si una
@@ -94,6 +96,9 @@ class TestElServidorLosAplica:
 
         assert py.count("provincia: str | None = None") >= 3, (
             "provincia debe estar en _filtros_listado, listar y contar"
+        )
+        assert py.count("etapa: str | None = None") >= 3, (
+            "etapa debe estar en _filtros_listado, listar y contar"
         )
 
 
@@ -133,3 +138,20 @@ class TestLaCondicionSeConstruyeDeVerdad:
         """«Todas» manda cadena vacía, no ausencia. Si se tratara como valor,
         el listado saldría siempre vacío."""
         assert len(self._filtros(provincia="")) == len(self._filtros())
+
+    def test_la_etapa_sola_anade_su_condicion(self):
+        """El filtro que Bachillerato hizo necesario: «enséñame todo lo de
+        Bachillerato» sin ir curso por curso."""
+        con = self._filtros(etapa="Bachillerato")
+
+        assert len(con) == len(self._filtros()) + 1
+        assert any("etapa" in str(c) for c in con)
+
+    def test_una_etapa_vacia_tampoco_filtra(self):
+        assert len(self._filtros(etapa="")) == len(self._filtros())
+
+    def test_etapa_y_curso_conviven(self):
+        """No es redundante aunque el curso lleve la etapa en el nombre: se
+        pueden combinar, y la condición tiene que ser una más, no la misma."""
+        assert len(self._filtros(etapa="ESO", curso="1º ESO")) == \
+            len(self._filtros()) + 2

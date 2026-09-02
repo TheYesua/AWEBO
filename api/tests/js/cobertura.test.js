@@ -15,8 +15,9 @@
  * Se prefiere eso a instalar Node en la imagen del proyecto: engordaría una
  * imagen de producción para ejecutar un test.
  *
- * Cubren solo las dos funciones puras — `cursosDe` y `materiasDe` —, que son
- * las que deciden qué se puede elegir. `enlazar` toca el DOM y queda fuera.
+ * Cubren las funciones puras —`cursosDe`, `materiasDe`, `etapasDe` y
+ * `soloDeLaEtapa`—, que son las que deciden qué se puede elegir, más lo que
+ * de `enlazar` se puede comprobar con un doble mínimo del DOM.
  *
  * Origen: los desplegables de curso y materia eran independientes y permitían
  * «Matemáticas · 4º ESO», combinación que no existe porque en 4.º la materia
@@ -36,7 +37,8 @@ contexto.window.document = contexto.document;
 vm.createContext(contexto);
 vm.runInContext(fs.readFileSync(ruta, 'utf8'), contexto);
 
-const { cursosDe, materiasDe, explicarMateria, enlazarProvincia, enlazar } = contexto.window.Cobertura;
+const { cursosDe, materiasDe, explicarMateria, enlazarProvincia, enlazar,
+        etapasDe, soloDeLaEtapa } = contexto.window.Cobertura;
 
 /** Cobertura real del despliegue, tal y como la devuelve /api/curriculo/cobertura. */
 const COBERTURA = [
@@ -266,6 +268,59 @@ check('al cambiar de provincia NO arrastra la materia de la anterior',
    elegir sin ninguna explicación. */
 check('y el desplegable de curso no se queda vacío por acotarlo con ella',
   pintados[0].length > 0, `cursos ofrecidos: [${pintados[0].join(',')}]`);
+
+/* ===========================================================================
+   LA ETAPA
+   ---------------------------------------------------------------------------
+   Desde que hay Bachillerato cargado, la cobertura viene partida por etapa y
+   una misma materia puede aparecer dos veces. Es el caso real del País Vasco:
+   «Matematika» existe en la ESO y en Bachillerato con currículos distintos.
+   ======================================================================== */
+
+const COB_VASCA = [
+  { materia: 'Matematika', etapa: 'ESO', cursos: ['1º ESO', '2º ESO'] },
+  { materia: 'Matematika', etapa: 'Bachillerato', cursos: ['1º Bachillerato', '2º Bachillerato'] },
+  { materia: 'Filosofia', etapa: 'Bachillerato', cursos: ['1º Bachillerato'] },
+  { materia: 'Musika', etapa: 'ESO', cursos: ['1º ESO'] },
+];
+
+console.log('\netapasDe');
+check('las devuelve en orden educativo, no alfabético',
+  JSON.stringify(etapasDe(COB_VASCA)) === JSON.stringify(['ESO', 'Bachillerato']),
+  etapasDe(COB_VASCA).join(','));
+check('sin repetir aunque haya varias materias por etapa',
+  etapasDe(COB_VASCA).length === 2);
+check('una etapa desconocida no desaparece: va al final',
+  etapasDe([...COB_VASCA, { materia: 'X', etapa: 'FP', cursos: [] }]).join(',')
+    === 'ESO,Bachillerato,FP');
+check('con una cobertura sin etapa devuelve lista vacía',
+  etapasDe(COBERTURA).length === 0);
+
+console.log('\nsoloDeLaEtapa');
+check('recorta a la etapa pedida',
+  soloDeLaEtapa(COB_VASCA, 'Bachillerato').length === 2);
+check('sin etapa devuelve la cobertura entera',
+  soloDeLaEtapa(COB_VASCA, '').length === 4);
+
+console.log('\nla materia repetida en dos etapas');
+/* EL FALLO QUE ESTO FIJA
+   `cursosDe` usaba `find`, que devuelve la PRIMERA entrada. Con «Matematika»
+   en dos etapas habría dado solo los cursos de una de las dos, y el docente
+   habría visto un desplegable al que le faltan cursos sin ningún aviso: la
+   materia existe, el curso simplemente no está. */
+check('sin filtrar, cursosDe junta los cursos de las dos etapas',
+  JSON.stringify(cursosDe(COB_VASCA, 'Matematika'))
+    === JSON.stringify(['1º ESO', '2º ESO', '1º Bachillerato', '2º Bachillerato']),
+  cursosDe(COB_VASCA, 'Matematika').join(','));
+check('y filtrando por etapa, solo los de esa',
+  JSON.stringify(cursosDe(soloDeLaEtapa(COB_VASCA, 'ESO'), 'Matematika'))
+    === JSON.stringify(['1º ESO', '2º ESO']),
+  cursosDe(soloDeLaEtapa(COB_VASCA, 'ESO'), 'Matematika').join(','));
+check('materiasDe no la ofrece dos veces',
+  materiasDe(COB_VASCA, '').filter((m) => m === 'Matematika').length === 1,
+  materiasDe(COB_VASCA, '').join(','));
+check('y filtrando por etapa desaparecen las de la otra',
+  !materiasDe(soloDeLaEtapa(COB_VASCA, 'ESO'), '').includes('Filosofia'));
 
 console.log(fallos === 0 ? '\nTODO CORRECTO\n' : `\n${fallos} FALLOS\n`);
 process.exit(fallos === 0 ? 0 : 1);

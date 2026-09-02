@@ -28,8 +28,9 @@
       <p class="help">{{ _('Los campos marcados con') }} <span aria-hidden="true" style="color: var(--color-danger-strong);">*</span>
         {{ _('son obligatorios.') }}</p>
 
-      <div class="row row--titulo">
-        <div class="field field--ancho">
+      {# El título, a todo el ancho: ver el comentario de `nueva.html`. #}
+      <div class="row row--solo">
+        <div class="field">
           <label for="titulo">
             {{ _('Título') }}
             <span class="req" aria-hidden="true">*</span>
@@ -37,11 +38,16 @@
           </label>
           <input type="text" id="titulo" name="titulo" required minlength="2" maxlength="255">
         </div>
-        {#
-          La provincia también aquí, y no solo al crear: es lo que decide el
-          currículo, y una SdA heredada del TFG puede no tenerla. Sin este
-          selector, la única forma de arreglarla sería la consola.
-        #}
+      </div>
+
+      {#
+        La provincia también aquí, y no solo al crear: es lo que decide el
+        currículo, y una SdA heredada del TFG puede no tenerla. Sin este
+        selector, la única forma de arreglarla sería la consola.
+
+        Comparte fila con la etapa, igual que en el formulario de creación.
+      #}
+      <div class="row row--dos">
         <div class="field">
           <label for="provincia">
             {{ _('Provincia') }}
@@ -54,6 +60,18 @@
           </select>
           <small id="provincia-help" class="help">
             {{ _('Si la cambias, tendrás que volver a elegir curso y materia: el currículo es otro.') }}
+          </small>
+        </div>
+        {#
+          Sin `name`, como en el formulario de creación: la etapa de la SdA la
+          recalcula el servidor cuando cambian el curso o la materia. Aquí solo
+          acota lo que ofrecen los dos desplegables de abajo.
+        #}
+        <div class="field" hidden>
+          <label for="etapa">{{ _('Etapa') }}</label>
+          <select id="etapa" aria-describedby="etapa-help"></select>
+          <small id="etapa-help" class="help">
+            {{ _('Acota el curso y la materia. Cambiarla vacía los dos.') }}
           </small>
         </div>
       </div>
@@ -290,6 +308,7 @@ const EXPLICACIONES_MATERIA = {
 const T = {
   errorDesconocido: {{ _('Error desconocido')|tojson }},
   sinCurriculo: {{ _('(sin currículo todavía)')|tojson }},
+  todasLasEtapas: {{ _('Todas las etapas')|tojson }},
   faltaCursoMateria: {{ _('Elige curso y materia antes de guardar.')|tojson }},
   sinPermiso: {{ _('No tienes permiso para ver esta situación')|tojson }},
   noEncontrada: {{ _('No encontrada')|tojson }},
@@ -409,6 +428,7 @@ async function cargar() {
   const selProvincia = document.getElementById('provincia');
   const selCurso     = document.getElementById('curso');
   const selMateria   = document.getElementById('materia');
+  const selEtapa     = document.getElementById('etapa');
 
   /* `alCambiar` se dispara también al enlazar por primera vez, y esa primera
      vez hay que distinguirla: es cuando se conservan el curso y la materia que
@@ -436,8 +456,27 @@ async function cargar() {
      el catálogo nuevo. */
   function repintarCobertura(provincia, primeraVez) {
     return Cobertura.cargar(provincia).then((cobertura) => {
-      Cobertura.enlazar({
+      /* La primera vez el desplegable arranca en la etapa que ya tiene la
+         SdA, para que curso y materia salgan acotados a lo suyo. Al cambiar
+         de provincia se suelta: el catálogo es otro y esa etapa puede no
+         existir en él. */
+      Cobertura.enlazarEtapa({
         cobertura,
+        selEtapa,
+        selCurso,
+        selMateria,
+        aviso: document.getElementById('materia-aviso'),
+        placeholder: T.todasLasEtapas,
+        etapaActual: primeraVez ? (sa.etapa || '') : '',
+        alCambiar: () => { pintarExplicacion(); revisarGuardar(); },
+      });
+      /* Y el enlace de curso y materia se hace aquí, no con la función que
+         devuelve `enlazarEtapa`: esa vacía los dos campos, que es lo correcto
+         al cambiar de etapa a mano y lo contrario de lo que hace falta al
+         abrir una SdA, donde hay que **preservar** lo que el docente eligió
+         aunque hoy sea una combinación inválida. */
+      Cobertura.enlazar({
+        cobertura: Cobertura.soloDeLaEtapa(cobertura, selEtapa.value),
         selCurso,
         selMateria,
         aviso: document.getElementById('materia-aviso'),

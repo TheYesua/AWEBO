@@ -72,10 +72,21 @@ class TestDeDondeSaleElDato:
         salidas = [p.name for p in raiz.glob("salida*") if p.is_dir()]
         if not salidas:
             pytest.skip("no hay ninguna salida generada")
-        # `salida` a secas es Ceuta, por historia.
-        codigos = {"salida": "ceuta"}
+        # La comunidad se lee **del propio JSON** y no se deduce del nombre del
+        # directorio. Deducirla funcionaba mientras hubo una carpeta por
+        # comunidad y dejó de funcionar con `salida_pais_vasco_bachillerato`:
+        # ese nombre lleva también la etapa, y «pais-vasco-bachillerato» no es
+        # ninguna comunidad. El dato está dentro del fichero; sacarlo del
+        # nombre era una segunda fuente esperando a divergir.
+        import json as _json
+        codigos = set()
         for s in salidas:
-            codigo = codigos.get(s) or s.replace("salida_", "").replace("_", "-")
+            for f in (raiz / s).glob("*.json"):
+                datos = _json.loads(f.read_text(encoding="utf-8"))
+                # Los de `salida/` son anteriores al campo: son de Ceuta.
+                codigos.add(datos.get("comunidad") or "ceuta")
+                break
+        for codigo in sorted(codigos):
             assert comunidades.norma(codigo), (
                 f"«{codigo}» tiene currículo generado y no está en NORMAS: "
                 "sus documentos saldrían sin citar la norma"

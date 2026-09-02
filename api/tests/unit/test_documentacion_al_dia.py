@@ -157,7 +157,8 @@ class TestLosRecuentosDelCurriculo:
 
         datos = {}
         for carpeta in ("salida", "salida_cataluna", "salida_andalucia",
-                        "salida_galicia", "salida_pais_vasco"):
+                        "salida_galicia", "salida_pais_vasco",
+                        "salida_pais_vasco_bachillerato"):
             ruta = CURRICULO / carpeta
             if not ruta.exists():
                 continue
@@ -179,7 +180,8 @@ class TestLosRecuentosDelCurriculo:
         ("salida_cataluna", "Cataluña"),
         ("salida_andalucia", "Andalucía"),
         ("salida_galicia", "Galicia"),
-        ("salida_pais_vasco", "País Vasco"),
+        ("salida_pais_vasco", "País Vasco (Decreto 77/2023)"),
+        ("salida_pais_vasco_bachillerato", "País Vasco · Bachillerato"),
     ])
     def test_la_tabla_cuadra_con_los_ficheros(self, reales, carpeta, fila):
         """Puse estas cifras de memoria la primera vez y tres de las cuatro de
