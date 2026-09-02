@@ -131,28 +131,40 @@ def cobertura():
     if comunidad is None:
         return jsonify([]), 200
 
-    def _pares(modelo) -> set[tuple[str, str]]:
+    def _pares(modelo) -> set[tuple[str, str, str]]:
         filas = db.session.execute(
             select(
                 modelo.materia,
                 func.jsonb_array_elements_text(modelo.cursos_aplicables).label("curso"),
+                modelo.etapa,
             )
             .where(modelo.comunidad == comunidad)
             .where(modelo.materia.is_not(None))
         ).all()
-        return {(m, c) for m, c in filas}
+        return {(m, c, e) for m, c, e in filas}
 
     completos = _pares(Competencia) & _pares(CriterioEvaluacion) & _pares(SaberBasico)
 
-    por_materia: dict[str, list[str]] = {}
-    for materia, curso in completos:
-        por_materia.setdefault(materia, []).append(curso)
+    # LA ETAPA VIAJA EN LA COBERTURA, Y NO SE DEDUCE EN EL NAVEGADOR
+    # ---------------------------------------------------------------
+    # El frontend necesita saber de qué etapa es cada par para poder acotar los
+    # desplegables. Podría mirar si el curso contiene «Bachillerato», pero eso
+    # sería la misma deducción sobre texto libre que se rechazó en el servidor
+    # —ver `situacion_service.etapa_de`— y encima duplicada en otro lenguaje,
+    # donde divergiría sin que ningún test de Python lo notara.
+    #
+    # La etapa entra además en la clave del par: una misma materia puede
+    # existir en las dos etapas —«Matemática» en la ESO y en Bachillerato del
+    # País Vasco— y sus cursos no deben mezclarse en la misma entrada.
+    por_materia: dict[tuple[str, str], list[str]] = {}
+    for materia, curso, etapa in completos:
+        por_materia.setdefault((materia, etapa), []).append(curso)
 
     return (
         jsonify(
             [
-                {"materia": m, "cursos": sorted(cursos)}
-                for m, cursos in sorted(por_materia.items())
+                {"materia": m, "etapa": e, "cursos": sorted(cursos)}
+                for (m, e), cursos in sorted(por_materia.items())
             ]
         ),
         200,
