@@ -128,12 +128,28 @@ def _upsert_criterio(
     comunidad: str,
     etapa: str,
     idioma: str,
+    ya_vistas: set | None = None,
 ) -> tuple[CriterioEvaluacion, bool]:
     """Upsert por (comunidad, codigo, materia, cursos). True si se creó.
 
     Devuelve también la fila —como `_upsert_competencia`— porque el modo de
     recarga limpia necesita saber **qué filas ha visto** para poder distinguir
     las que sobran. Con un booleano solo se sabe cuántas, no cuáles.
+
+    POR QUÉ SE MIRA LO YA VISTO EN ESTA MISMA CARGA
+    ------------------------------------------------
+    Porque **el código no siempre es único dentro de una materia**. El Decreto
+    76/2023 publica dos criterios distintos con el código `8.3` en Euskara eta
+    Literatura, y el decreto no dice en ninguna parte cuál de los dos está mal
+    numerado — a diferencia de los otros cinco casos, que el extractor sí puede
+    deducir de la cabecera.
+
+    Sin esta comprobación el segundo `8.3` **actualizaba la fila del primero**:
+    el texto del primero se perdía y el recuento decía `cr_nuevos` uno menos
+    que criterios había en el JSON. Una fila que ya se ha tocado en esta carga
+    no puede volver a ser el destino de otro criterio: si el código se repite,
+    el segundo va a una fila nueva. Se acepta el código duplicado, que es lo
+    que publica el boletín, y no se pierde texto curricular.
     """
     candidatos = db.session.scalars(
         select(CriterioEvaluacion).where(
@@ -144,7 +160,10 @@ def _upsert_criterio(
         )
     ).all()
     cursos_norm = sorted(cursos)
+    vistas = ya_vistas or set()
     for c in candidatos:
+        if c in vistas:
+            continue
         if sorted(c.cursos_aplicables or []) == cursos_norm:
             c.descripcion = descripcion
             c.id_competencia = id_competencia
@@ -251,6 +270,9 @@ def _procesar_fichero(
         # No es un contador: es la comunidad que **acabó mandando**, para que
         # quien llama pueda decir en el log qué se cargó de verdad.
         "comunidad": comunidad,
+        # Y la etapa, por lo mismo: el borrado de sobrantes se acota a los
+        # pares (comunidad, etapa) que esta carga ha tocado.
+        "etapa": etapa,
         # Las filas que este fichero ha tocado. Es lo que permite después
         # distinguir lo que sobra: todo lo de esta comunidad que no esté aquí
         # es de una carga anterior y ya no existe en la norma.
@@ -306,6 +328,7 @@ def _procesar_fichero(
             materia=materia,
             cursos=cursos,
             descripcion=cr["descripcion"],
+            ya_vistas=vistas["criterio"],
         )
         vistas["criterio"].add(fila)
         if creado:
@@ -377,7 +400,7 @@ def _tablas_de_curriculo():
 
 
 def _borrar_sobrantes(
-    comunidades_vistas: set[str], vistas: dict[str, set[int]]
+    ambitos_vistos: set[tuple[str, str]], vistas: dict[str, set[int]]
 ) -> dict[str, int]:
     """Borra lo que quedó de una carga anterior y ya no está en los ficheros.
 
@@ -399,16 +422,35 @@ def _borrar_sobrantes(
     Así que se informan y se dejan. Son currículo viejo, pero currículo que
     alguien usó. Si de verdad hay que quitarlas, primero hay que decidir qué
     pasa con las SdA que dependen de ellas, y esa decisión no es de un seed.
+
+    EL ÁMBITO ES (COMUNIDAD, ETAPA), Y COSTÓ UN CURRÍCULO ENTERO
+    -------------------------------------------------------------
+    El 02/09/2026 se recargó Bachillerato del País Vasco con este flag y
+    **desapareció la ESO del País Vasco**: 723 criterios y 1480 saberes
+    borrados, y solo sobrevivieron los 28 que alguna SdA citaba.
+
+    El filtro miraba la comunidad y nada más, así que todo lo vasco que no
+    viniera en esa carpeta era sobrante — y la ESO no venía, porque estaba
+    cargando Bachillerato. El comentario que había aquí decía «sin este filtro,
+    cargar Cataluña borraría el currículo de Andalucía entero» y el mismo
+    razonamiento valía palabra por palabra para la etapa; sencillamente no se
+    hizo cuando la etapa entró en el esquema.
+
+    Que la etapa estuviera ya en la clave de los tres upsert no protegía de
+    nada: eso evita **sobrescribir**, no borrar. Son dos operaciones distintas
+    y solo una se revisó al añadir la columna.
     """
-    from sqlalchemy import delete, select as sa_select, update as sa_update
+    from sqlalchemy import delete, select as sa_select, update as sa_update, tuple_
 
     resumen: dict[str, int] = {}
     for tipo, modelo, pk, enlace, col_enlace in _tablas_de_curriculo():
-        # Solo de las comunidades que esta carga ha tocado. Sin este filtro,
-        # cargar Cataluña borraría el currículo de Andalucía entero.
+        # Solo de los pares (comunidad, etapa) que esta carga ha tocado. Sin la
+        # comunidad, cargar Cataluña borraría el currículo de Andalucía entero;
+        # sin la etapa, cargar Bachillerato se lleva la ESO de esa misma
+        # comunidad, que es lo que pasó.
         sobrantes = set(db.session.scalars(
             sa_select(pk).where(
-                modelo.comunidad.in_(comunidades_vistas),
+                tuple_(modelo.comunidad, modelo.etapa).in_(ambitos_vistos),
                 pk.notin_(vistas[tipo] or {-1}),
             )
         ).all())
@@ -560,6 +602,9 @@ def seed_curriculo(
         "cada fichero)", base, codigo, lengua,
     )
     comunidades_vistas: set[str] = set()
+    #: Pares (comunidad, etapa) que esta carga toca. Es el ámbito del borrado
+    #: de sobrantes: fuera de él no se toca nada.
+    ambitos_vistos: set[tuple[str, str]] = set()
     vistas: dict[str, set[int]] = {"competencia": set(), "criterio": set(), "saber": set()}
     for ruta in ficheros:
         logger.info("Procesando %s", ruta.name)
@@ -568,6 +613,8 @@ def seed_curriculo(
             if k in total:
                 total[k] += v
         comunidades_vistas.add(str(stats.get("comunidad") or codigo))
+        ambitos_vistos.add((str(stats.get("comunidad") or codigo),
+                            str(stats.get("etapa") or "ESO")))
         for tipo, ids in (stats.get("vistas") or {}).items():
             vistas[tipo] |= ids
 
@@ -585,7 +632,7 @@ def seed_curriculo(
                 ("saber", "id_saber", vistas["saber"]),
             )
         }
-        total.update(_borrar_sobrantes(comunidades_vistas, ids))
+        total.update(_borrar_sobrantes(ambitos_vistos, ids))
 
     db.session.commit()
     total["ficheros"] = len(ficheros)
