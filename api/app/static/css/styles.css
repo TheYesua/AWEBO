@@ -781,10 +781,30 @@ code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; background: 
    El título se lleva dos tercios: es el campo más importante del formulario y
    el que más se escribe, así que se le recorta lo justo para que la provincia
    quepa a su lado. Van juntos porque la provincia condiciona al curso y a la
-   materia, y un campo que manda sobre otros dos no puede aparecer después. */
+   materia, y un campo que manda sobre otros dos no puede aparecer después.
+
+   Ya no lo usa el formulario de crear —ahí el título va solo, ver `.row--solo`,
+   desde que la etapa comparte fila con la provincia—, pero sigue en uso en el
+   detalle. */
 .row--titulo { grid-template-columns: 2fr 1fr; }
 @media (max-width: 600px) {
   .row--titulo { grid-template-columns: 1fr; }
+}
+
+/* Una fila de un solo campo, a todo el ancho.
+   `.row` reparte en tres columnas, así que un campo suelto se quedaba con un
+   tercio y dos huecos: en un formulario de escritorio eso se lee como un fallo
+   de maquetación, no como una decisión. */
+.row--solo { grid-template-columns: 1fr; }
+
+/* Dos campos, mitad y mitad, y **uno de ellos puede estar oculto**.
+   Es el caso de provincia + etapa: la etapa solo se ofrece cuando la comunidad
+   tiene más de una. Con `repeat(2, 1fr)` la provincia se quedaría con la mitad
+   y dejaría el otro medio en blanco, así que las columnas se declaran `auto` y
+   la rejilla se ajusta a los campos que de verdad hay. */
+.row--dos { grid-template-columns: repeat(auto-fit, minmax(0, 1fr)); }
+@media (max-width: 600px) {
+  .row--dos { grid-template-columns: 1fr; }
 }
 
 /* Un <select> deshabilitado tiene que verse deshabilitado, pero el color NO es
@@ -835,9 +855,19 @@ input:disabled {
 }
 
 /* Filtros */
+/* La barra de filtros: **flex, y no grid con columnas contadas**.
+   Era `grid-template-columns: 2fr 1fr 1fr 1fr auto`, cinco tracks escritos a
+   mano para los campos que había entonces. Al aparecer el filtro de etapa
+   —solo visible en comunidades con más de una— pasaron a ser seis, y los que
+   sobraban caían a una segunda fila descolocados: el desplegable que se
+   añadiera se llevaba por delante la maquetación de todos los demás.
+
+   Con flex no hay que contar nada. Cada campo pide su ancho mínimo y crece a
+   partes iguales; el buscador pide el doble porque es donde se escribe. Añadir
+   o quitar un filtro deja de ser un cambio de CSS. */
 .filtros {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr auto;
+  display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   align-items: end;
   background: var(--surface);
@@ -846,6 +876,15 @@ input:disabled {
   padding: 1rem;
   margin-bottom: 1rem;
 }
+.filtros .field { flex: 1 1 9rem; }
+/* El buscador se lleva el doble: es texto libre y lo demás son desplegables. */
+.filtros .field--busqueda { flex: 2 1 14rem; }
+/* El aviso y los botones, a línea completa. El aviso explica por qué están
+   bloqueados curso y materia, así que tiene que leerse entero y no encajado en
+   la columna de un campo. */
+.filtros .actions,
+.filtros > .help,
+.filtros > .alert { flex: 1 0 100%; }
 .filtros .actions { margin: 0; }
 
 /* Un track `1fr` tiene `min-width: auto`, o sea que no baja del min-content de
@@ -864,9 +903,15 @@ input:disabled {
   text-overflow: ellipsis;
 }
 
+/* En pantalla estrecha, dos campos por fila. Con flex basta con subir el ancho
+   mínimo: el reparto lo hace solo, sin declarar columnas. */
 @media (max-width: 800px) {
-  .filtros { grid-template-columns: 1fr 1fr; }
-  .filtros .actions { grid-column: 1 / -1; }
+  .filtros .field,
+  .filtros .field--busqueda { flex: 1 1 calc(50% - 0.5rem); }
+}
+@media (max-width: 480px) {
+  .filtros .field,
+  .filtros .field--busqueda { flex: 1 1 100%; }
 }
 
 /* Botón destructivo */
