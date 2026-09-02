@@ -15,7 +15,7 @@
   </div>
 
   <form id="filtros" class="filtros" aria-label="{{ _('Filtros de búsqueda') }}">
-    <div class="field">
+    <div class="field field--busqueda">
       <label for="f-q">{{ _('Buscar por título') }}</label>
       <input type="search" id="f-q" name="q" placeholder="{{ _('Ej: Robótica') }}">
     </div>
@@ -47,6 +47,19 @@
         cumple. Ahora el servidor sí lo acepta.
       #}
       <select id="f-provincia" name="provincia" aria-describedby="f-bloqueo-aviso">
+        <option value="">{{ _('Todas') }}</option>
+      </select>
+    </div>
+    {#
+      La etapa **sí** lleva `name`, al revés que en el formulario de crear.
+      Allí es solo un recorte del catálogo y el servidor deriva la etapa de la
+      SdA; aquí es un filtro de verdad que viaja como parámetro. La distinción
+      importa: un desplegable con `name` promete que filtra, y prometerlo sin
+      cumplirlo es el fallo que tuvo la provincia hasta el 16/08.
+    #}
+    <div class="field" hidden>
+      <label for="f-etapa">{{ _('Etapa') }}</label>
+      <select id="f-etapa" name="etapa" aria-describedby="f-bloqueo-aviso">
         <option value="">{{ _('Todas') }}</option>
       </select>
     </div>
@@ -293,13 +306,29 @@ document.getElementById('filtros').addEventListener('reset', () => {
 const selProvincia = document.getElementById('f-provincia');
 const selCurso     = document.getElementById('f-curso');
 const selMateria   = document.getElementById('f-materia');
+const selEtapa     = document.getElementById('f-etapa');
 
 let yaPintado = false;
 
 function repintarCobertura(provincia) {
   return Cobertura.cargar(provincia).then((cobertura) => {
-    Cobertura.enlazar({
+    const aplicarEtapa = Cobertura.enlazarEtapa({
       cobertura,
+      selEtapa,
+      selCurso,
+      selMateria,
+      aviso: document.getElementById('f-materia-aviso'),
+      placeholder: T.todas,
+      /* Se conserva la etapa que ya estuviera elegida. Cambiar de provincia
+         repinta este desplegable, y perder la etapa dejaría al docente viendo
+         un listado más amplio del que había pedido sin haber tocado ese
+         campo. Si la comunidad nueva no tiene esa etapa, `enlazarEtapa` la
+         descarta sola porque no estará entre las opciones. */
+      etapaActual: selEtapa.value,
+    });
+    aplicarEtapa(false);
+    Cobertura.enlazar({
+      cobertura: Cobertura.soloDeLaEtapa(cobertura, selEtapa.value),
       selCurso,
       selMateria,
       aviso: document.getElementById('f-materia-aviso'),
@@ -317,6 +346,14 @@ function vaciarCursoYMateria() {
     s.innerHTML = '';
     s.appendChild(new Option(s === selCurso ? T.todos : T.todas, ''));
   });
+  /* La etapa se va con ellos. Sin provincia no hay catálogo, así que ofrecer
+     «Bachillerato» sería ofrecer un filtro sobre un catálogo que no se ha
+     cargado; y peor: dejaría un filtro activo que el docente no ve, porque el
+     campo se oculta cuando no hay etapas que elegir. */
+  selEtapa.innerHTML = '';
+  selEtapa.appendChild(new Option(T.todas, ''));
+  const campo = selEtapa.closest('.field');
+  if (campo) campo.hidden = true;
 }
 
 Cobertura.cargarProvincias().then((grupos) => {

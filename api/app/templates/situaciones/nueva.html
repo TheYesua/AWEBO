@@ -45,8 +45,15 @@
     <p class="help">{{ _('Los campos marcados con') }} <span aria-hidden="true" style="color: var(--color-danger-strong);">*</span>
       {{ _('son obligatorios.') }}</p>
 
-    <div class="row row--titulo">
-      <div class="field field--ancho">
+    {#
+      El título ocupa su fila entera. Antes compartía con la provincia —dos
+      tercios y un tercio— y funcionaba mientras al lado hubiera un solo campo.
+      Con la etapa hay dos, y meter tres cosas de anchura desigual en la misma
+      fila dejaba el formulario descuadrado; sacarla a una fila propia solo
+      para ella dejaba un hueco peor.
+    #}
+    <div class="row row--solo">
+      <div class="field">
         <label for="titulo">
           {{ _('Título') }}
           <span class="req" aria-hidden="true">*</span>
@@ -55,12 +62,20 @@
         <input type="text" id="titulo" name="titulo" required minlength="2" maxlength="255"
                placeholder="{{ _('Ej: La Antártida: una expedición científica') }}" autofocus>
       </div>
-      {#
-        La provincia va aquí, y no al final del formulario, porque **manda
-        sobre el curso y la materia**: de ella sale la comunidad, y de la
-        comunidad el currículo. Un campo que condiciona a otros dos y aparece
-        después de ellos invita a rellenarlos en el orden equivocado.
-      #}
+    </div>
+
+    {#
+      Provincia y etapa juntas, y antes del curso y la materia, porque **las dos
+      mandan sobre ellos**: de la provincia sale la comunidad y de ahí el
+      currículo; la etapa recorta ese currículo. Un campo que condiciona a otros
+      dos y aparece después invita a rellenarlos en el orden equivocado.
+
+      La etapa se oculta cuando la comunidad tiene una sola —hoy, todas menos el
+      País Vasco—, y entonces la provincia se queda sola en la fila. Por eso la
+      rejilla es de dos columnas y no de tres: un hueco vacío de un tercio se ve
+      como un fallo de maquetación.
+    #}
+    <div class="row row--dos">
       <div class="field">
         <label for="provincia">
           {{ _('Provincia') }}
@@ -73,6 +88,20 @@
         </select>
         <small id="provincia-help" class="help">
           {{ _('Determina el currículo que se aplica: cada comunidad tiene el suyo.') }}
+        </small>
+      </div>
+      {#
+        Sin asterisco y sin `name`: no viaja al servidor. La etapa de la SdA la
+        deriva el backend del par materia/curso contra el catálogo (ver
+        `situacion_service.etapa_de`). Aquí solo recorta la lista, y mandarla
+        sería ofrecer un dato que el servidor va a ignorar — el mismo error que
+        se cometió con la provincia en el buscador el 15/08.
+      #}
+      <div class="field" hidden>
+        <label for="etapa">{{ _('Etapa') }}</label>
+        <select id="etapa" aria-describedby="etapa-help"></select>
+        <small id="etapa-help" class="help">
+          {{ _('Acota el curso y la materia. Déjalo en «Todas» para ver el catálogo completo.') }}
         </small>
       </div>
     </div>
@@ -184,6 +213,7 @@ const T = {
   errorDesconocido: {{ _('Error desconocido')|tojson }},
   sinCurriculo: {{ _('(sin currículo todavía)')|tojson }},
   sinEspecificar: {{ _('— Sin especificar —')|tojson }},
+  todasLasEtapas: {{ _('Todas las etapas')|tojson }},
   productoFinal: {{ _('Producto final:')|tojson }},
   usarPropuesta: {{ _('Usar esta propuesta')|tojson }},
   usarPropuestaN: {{ _('Usar la propuesta {n}: {titulo}')|tojson }},
@@ -232,16 +262,26 @@ const pintarExplicacion = Cobertura.enlazarExplicacion(
 const selProvincia = document.getElementById('provincia');
 const selCurso     = document.getElementById('curso');
 const selMateria   = document.getElementById('materia');
+const selEtapa     = document.getElementById('etapa');
 
 function repintarCobertura(provincia) {
   return Cobertura.cargar(provincia).then((cobertura) => {
-    Cobertura.enlazar({
+    /* La etapa se enlaza en vez de llamar directamente a `enlazar`: es quien
+       decide con qué recorte de la cobertura trabajan curso y materia, y
+       devuelve la función que hace el primer pintado. Cambiar de provincia
+       vuelve a pasar por aquí, y con ello se rehacen los tres desplegables
+       contra el catálogo de la comunidad nueva. */
+    const aplicarEtapa = Cobertura.enlazarEtapa({
       cobertura,
+      selEtapa,
       selCurso,
       selMateria,
       aviso: document.getElementById('materia-aviso'),
+      placeholder: T.todasLasEtapas,
+      alCambiar: () => pintarExplicacion(),
     });
-    // Después de `enlazar`, que es quien rellena el <select>.
+    aplicarEtapa(false);
+    // Después de enlazar, que es quien rellena el <select>.
     pintarExplicacion();
   });
 }

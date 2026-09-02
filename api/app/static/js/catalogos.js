@@ -70,9 +70,25 @@ window.rellenarSelect = function (sel, opciones, opts = {}) {
 (function (global) {
   'use strict';
 
-  /* "1º ESO" antes que "2º ESO"; numeric para que 10.º no fuese antes que 2.º */
-  const porCurso = (a, b) => a.localeCompare(b, 'es', { numeric: true });
   const porTexto = (a, b) => a.localeCompare(b, 'es');
+
+  /* "1º ESO" antes que "2º ESO"; numeric para que 10.º no fuese antes que 2.º.
+     Y primero la etapa: con Bachillerato cargado, ordenar solo por número
+     intercalaba las dos —«1º Bachillerato, 1º ESO, 2º Bachillerato, 2º ESO»—,
+     que es un desplegable que nadie lee de un vistazo.
+
+     Aquí SÍ se mira el texto del curso para saber la etapa, al revés que en el
+     servidor. Es distinto: esto solo decide en qué orden se pintan unas
+     opciones. Si mañana una etapa nueva no se reconoce, sus cursos salen al
+     final agrupados, que es una fealdad y no un dato equivocado. */
+  const ORDEN_ETAPAS = ['ESO', 'Bachillerato'];
+  const etapaDelCurso = (curso) => {
+    const i = ORDEN_ETAPAS.findIndex((e) => curso.includes(e));
+    return i === -1 ? ORDEN_ETAPAS.length : i;
+  };
+  const porCurso = (a, b) =>
+    etapaDelCurso(a) - etapaDelCurso(b) ||
+    a.localeCompare(b, 'es', { numeric: true });
 
   /**
    * Cursos en los que se imparte `materia`. Sin materia, todos los cursos
@@ -85,8 +101,17 @@ window.rellenarSelect = function (sel, opciones, opts = {}) {
       for (const c of cobertura) for (const curso of c.cursos) todos.add(curso);
       return [...todos].sort(porCurso);
     }
-    const entrada = cobertura.find((c) => c.materia === materia);
-    return entrada ? [...entrada.cursos].sort(porCurso) : [];
+    /* Se acumulan TODAS las entradas de esa materia, no la primera.
+       Desde que la cobertura viene partida por etapa hay materias con dos
+       entradas —«Matematika» existe en la ESO y en Bachillerato del País
+       Vasco—, y un `find` habría devuelto los cursos de una sola de las dos
+       sin que nada fallara: el desplegable, simplemente, se dejaría cursos
+       fuera. */
+    const todos = new Set();
+    for (const c of cobertura) {
+      if (c.materia === materia) for (const curso of c.cursos) todos.add(curso);
+    }
+    return [...todos].sort(porCurso);
   }
 
   /**
@@ -96,7 +121,40 @@ window.rellenarSelect = function (sel, opciones, opts = {}) {
     const filtradas = curso
       ? cobertura.filter((c) => c.cursos.includes(curso))
       : cobertura;
-    return filtradas.map((c) => c.materia).sort(porTexto);
+    // Sin repetir: la misma materia puede venir en dos etapas.
+    return [...new Set(filtradas.map((c) => c.materia))].sort(porTexto);
+  }
+
+  /* -------------------------------------------------------------------------
+     La etapa
+     -------------------------------------------------------------------------
+     No es un tercer campo que se restrinja con los otros dos, como el curso y
+     la materia entre sí: es un **filtro previo** que decide sobre qué catálogo
+     trabajan los dos. Por eso no entra en `enlazar` con más ramas, sino que
+     recorta la cobertura y se vuelve a enlazar con la recortada — el mismo
+     mecanismo que ya usa el cambio de provincia, y que `enlazar` sabe deshacer.
+
+     El orden es fijo y no alfabético: «Bachillerato» va detrás de «ESO» porque
+     es lo que viene después, y ordenarlo por texto lo pondría delante.
+     ---------------------------------------------------------------------- */
+
+  /* `ORDEN_ETAPAS` se declara arriba, junto al comparador de cursos: las dos
+     cosas dependen del mismo orden y tenerlo en dos sitios era la manera de
+     que un día dijeran cosas distintas. */
+
+  /** Etapas presentes en la cobertura, en orden educativo. */
+  function etapasDe(cobertura) {
+    const vistas = new Set(cobertura.map((c) => c.etapa).filter(Boolean));
+    const conocidas = ORDEN_ETAPAS.filter((e) => vistas.has(e));
+    // Lo que no esté en la lista va detrás, en orden estable: si mañana entra
+    // FP, aparece en el desplegable en vez de desaparecer en silencio.
+    const resto = [...vistas].filter((e) => !ORDEN_ETAPAS.includes(e)).sort(porTexto);
+    return [...conocidas, ...resto];
+  }
+
+  /** La cobertura de una etapa. Sin etapa, la entera. */
+  function soloDeLaEtapa(cobertura, etapa) {
+    return etapa ? cobertura.filter((c) => c.etapa === etapa) : cobertura;
   }
 
   /**
@@ -327,10 +385,81 @@ window.rellenarSelect = function (sel, opciones, opts = {}) {
     return pintar;
   }
 
+  /**
+   * Ata el <select> de etapa a los de curso y materia.
+   *
+   * Al cambiar la etapa se vuelve a enlazar con la cobertura recortada, así
+   * que curso y materia pasan a ofrecer solo lo de esa etapa. Devuelve la
+   * función de aplicación para que el llamante la dispare cuando quiera.
+   *
+   * POR QUÉ SE VACÍAN CURSO Y MATERIA AL CAMBIAR DE ETAPA
+   * ------------------------------------------------------
+   * Porque casi nunca sobreviven. «3º ESO» no existe en Bachillerato, y una
+   * materia que exista en las dos —«Matematika»— tendría otros cursos. Dejar
+   * el valor anterior puesto obligaría a comprobar en cada combinación si
+   * sigue siendo válido, y el caso en que lo es no compensa: quien cambia de
+   * etapa está eligiendo otra cosa, no matizando la que tenía.
+   *
+   * Lo que sí se hace es **decirlo**, en vez de borrarlo en silencio.
+   */
+  function enlazarEtapa({
+    cobertura,
+    selEtapa,
+    selCurso,
+    selMateria,
+    aviso,
+    placeholder = 'Todas',
+    etapaActual = '',
+    alCambiar,
+  }) {
+    if (!selEtapa) return () => {};
+
+    const etapas = etapasDe(cobertura);
+    global.rellenarSelect(selEtapa, etapas, {
+      placeholder,
+      valor: etapas.includes(etapaActual) ? etapaActual : undefined,
+    });
+
+    // Con una sola etapa cargada el desplegable no decide nada: se oculta en
+    // vez de ofrecer una elección que no lo es. Vuelve solo si algún día se
+    // carga otra, porque esto se recalcula con cada cobertura.
+    const contenedor = selEtapa.closest('.field') || selEtapa.parentElement;
+    if (contenedor) contenedor.hidden = etapas.length < 2;
+
+    const aplicar = (limpiando) => {
+      const etapa = selEtapa.value;
+      if (limpiando) {
+        selCurso.value = '';
+        selMateria.value = '';
+      }
+      enlazar({
+        cobertura: soloDeLaEtapa(cobertura, etapa),
+        selCurso,
+        selMateria,
+        aviso,
+        cursoActual: '',
+        materiaActual: '',
+      });
+      if (typeof alCambiar === 'function') alCambiar(etapa);
+    };
+
+    if (selEtapa._enlaceEtapa) {
+      selEtapa.removeEventListener('change', selEtapa._enlaceEtapa);
+    }
+    const alCambiarEtapa = () => aplicar(true);
+    selEtapa.addEventListener('change', alCambiarEtapa);
+    selEtapa._enlaceEtapa = alCambiarEtapa;
+
+    return aplicar;
+  }
+
   global.Cobertura = {
     cursosDe,
     materiasDe,
+    etapasDe,
+    soloDeLaEtapa,
     enlazar,
+    enlazarEtapa,
     cargar,
     explicarMateria,
     enlazarExplicacion,
