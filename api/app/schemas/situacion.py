@@ -38,7 +38,14 @@ class SituacionCreateIn(BaseModel):
 
     titulo: str = Field(min_length=2, max_length=255)
     curso: str = Field(min_length=1, max_length=20)
-    materia: str = Field(min_length=1, max_length=50)
+    #: 120, como la columna. Estaba en 50 y **ya rechazaba materias que el
+    #: catálogo tiene cargadas**: «Garapen Pertsonalari eta Sozialari
+    #: Aplikatutako Filosofia» son 57 caracteres y es de la ESO vasca, así
+    #: que el docente que la eligiera recibía un 422 al guardar. Con
+    #: Bachillerato hay ocho materias así, la mayor de 100. La columna se
+    #: amplió el 27/08 (`c9e4f2a10b73`) y el esquema se quedó atrás: el
+    #: límite de verdad es el que rechaza antes, no el más grande.
+    materia: str = Field(min_length=1, max_length=120)
 
     comunidad_autonoma: str | None = Field(default=None, max_length=50)
     #: Lo que el docente elige. La comunidad se deriva de ella al guardar, así
@@ -61,7 +68,7 @@ class SituacionUpdateIn(BaseModel):
 
     titulo: str | None = Field(default=None, min_length=2, max_length=255)
     curso: str | None = Field(default=None, min_length=1, max_length=20)
-    materia: str | None = Field(default=None, min_length=1, max_length=50)
+    materia: str | None = Field(default=None, min_length=1, max_length=120)
     comunidad_autonoma: str | None = Field(default=None, max_length=50)
     #: Lo que el docente elige. La comunidad se deriva de ella al guardar, así
     #: que `comunidad_autonoma` que venga en la petición se ignora.
@@ -123,6 +130,10 @@ class SituacionListItemOut(BaseModel):
     id_situacion: int
     titulo: str
     curso: str
+    #: Por el mismo motivo que la provincia, justo debajo: hay un filtro de
+    #: etapa y un filtro cuyo valor no se ve en los resultados obliga a abrir
+    #: una SdA para saber si hizo algo.
+    etapa: str
     materia: str
     #: Va en el listado desde que la provincia **filtra** (16/08). Un filtro
     #: cuyo valor no se ve en los resultados obliga a abrir una SdA para saber
@@ -142,6 +153,7 @@ class SituacionListItemOut(BaseModel):
             id_situacion=sa.id_situacion,
             titulo=sa.titulo,
             curso=sa.curso,
+            etapa=sa.etapa,
             materia=sa.materia,
             provincia=sa.provincia,
             estado=sa.estado,
@@ -161,6 +173,9 @@ class SituacionOut(BaseModel):
     id_usuario: int
     titulo: str
     curso: str
+    #: **No se acepta en la entrada**, solo se devuelve: la calcula el servicio
+    #: contra el catálogo. Ver `situacion_service.etapa_de`.
+    etapa: str
     materia: str
     comunidad_autonoma: str | None
     #: Sin esto el formulario de detalle no puede preseleccionar el desplegable

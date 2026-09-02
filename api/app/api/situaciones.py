@@ -111,6 +111,10 @@ def listar():
         # funcionar, lo que hacía el fallo más difícil de describir que de
         # arreglar.
         provincia=request.args.get("provincia"),
+        # La etapa entra por el mismo sitio y en el mismo `dict` que los demás:
+        # ese `filtros` compartido es lo que impide que el total y las filas
+        # se calculen con criterios distintos.
+        etapa=request.args.get("etapa"),
     )
     items = svc.listar(
         current_user,

@@ -25,6 +25,29 @@ if TYPE_CHECKING:
     from .usuario import Usuario
 
 
+#: Etapas conocidas, de la más antigua a la más reciente. El orden importa
+#: poco aquí; la lista está para que añadir una no obligue a tocar la función.
+_ETAPAS_EN_EL_CURSO = ("Bachillerato",)
+
+
+def _etapa_del_curso(curso: str | None) -> str:
+    """Etapa deducida de la cadena del curso. **Es la red, no la regla.**
+
+    La regla es `situacion_service.etapa_de`, que la lee del catálogo. Esto
+    solo se usa como `default` del ORM, cuando se construye una
+    `SituacionAprendizaje` sin pasar por el servicio: tests, scripts y
+    cualquier camino futuro que se olvide del campo.
+
+    Deducir de texto libre es frágil —por eso no manda— pero aquí el coste de
+    equivocarse es que una fila creada a mano diga «ESO» cuando no lo es, y el
+    de no tenerlo era que ochenta ficheros de test no pudieran insertar nada.
+    """
+    for etapa in _ETAPAS_EN_EL_CURSO:
+        if curso and etapa.lower() in curso.lower():
+            return etapa
+    return "ESO"
+
+
 # =============================================================================
 # Tablas de asociación (muchos a muchos)
 # =============================================================================
@@ -168,6 +191,30 @@ class SituacionAprendizaje(db.Model):
     #: cambiar por situación: un docente puede preparar material para otra.
     provincia: Mapped[str | None] = mapped_column(String(30), nullable=True)
     curso: Mapped[str] = mapped_column(String(20), nullable=False, index=True)
+    #: Etapa educativa: «ESO» o «Bachillerato». Ver la migración
+    #: `e5b93c47da10`.
+    #:
+    #: QUIÉN LA PONE, Y POR QUÉ HAY UNA RED DEBAJO
+    #: --------------------------------------------
+    #: La pone el servicio, leyéndola del catálogo
+    #: (`situacion_service.etapa_de`): esa es la fuente de verdad y es la que
+    #: distingue «Matematika · 1º ESO» de «Matematika · 1º Bachillerato».
+    #:
+    #: El `default` de aquí **no compite con eso**: solo actúa cuando alguien
+    #: construye el modelo a mano sin pasar por el servicio, y entonces deriva
+    #: la etapa del curso igual que hace el backfill de la migración con las
+    #: filas antiguas.
+    #:
+    #: Nació sin default y NOT NULL, razonando que «una SdA sin etapa debe
+    #: fallar». El resultado fueron **doscientos tests rotos**: hay ochenta
+    #: ficheros que instancian este modelo directamente, y ninguno tenía por
+    #: qué saber de un campo nuevo. Una columna obligatoria sin forma de
+    #: rellenarse sola no protege de nada: obliga a repetir el mismo dato en
+    #: cada sitio, que es justo donde se cuelan las incoherencias.
+    etapa: Mapped[str] = mapped_column(
+        String(20), nullable=False,
+        default=lambda ctx: _etapa_del_curso(ctx.get_current_parameters().get("curso")),
+    )
     #: 120 por lo mismo que en el catálogo (migración `c9e4f2a10b73`). Esta
     #: es la que de verdad importaba: aquí se guarda la materia que elige el
     #: docente, así que el límite corto habría fallado al guardar su trabajo.

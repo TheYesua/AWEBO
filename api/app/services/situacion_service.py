@@ -138,6 +138,59 @@ def _proximo_numero_version(id_situacion: int) -> int:
 # ---------------------------------------------------------------------------
 
 
+#: Etapa a la que se atribuye una SdA cuyo par materia/curso no está en el
+#: catálogo. Ver `etapa_de`.
+_ETAPA_POR_DEFECTO = "ESO"
+
+
+def etapa_de(sa: SituacionAprendizaje) -> str:
+    """La etapa de una SdA, **leída del catálogo**.
+
+    POR QUÉ NO SE DEDUCE DE LA CADENA DEL CURSO
+    --------------------------------------------
+    Porque «1º Bachillerato» contiene la etapa por costumbre, no por contrato.
+    En cuanto una comunidad escriba «1.º» con punto, o entre un ciclo de FP, o
+    aparezca «1º Bachillerato (nocturno)», la deducción empieza a mentir sin
+    fallar. El catálogo, en cambio, **tiene la etapa en una columna** desde la
+    migración `d1a7b4e62c95`: preguntarle es leer un dato, no interpretarlo.
+
+    POR QUÉ NO LA MANDA EL CLIENTE
+    -------------------------------
+    Igual que `comunidad_autonoma`, que se calcula de la provincia y se ignora
+    si viene en la petición. Aceptarla permitiría guardar una SdA que dice ser
+    de la ESO con el curso «2º Bachillerato», y esa incoherencia no la
+    detectaría nadie después: los dos campos son plausibles por separado.
+
+    CUANDO EL CATÁLOGO NO SABE
+    ---------------------------
+    Se devuelve «ESO» y se registra. Pasa con las SdA anteriores al currículo
+    por comunidad y con cualquier par que el docente escriba a mano. No se
+    lanza error: la creación de un borrador nunca ha exigido currículo —lo que
+    lo exige es *generar*— y romperla aquí quitaría una funcionalidad que
+    existe, para ganar una etapa exacta en una SdA que de todas formas no se
+    va a poder generar.
+    """
+    # `geografia.comunidad_de` y no `sa.comunidad_autonoma`: esa columna es
+    # texto libre —«País Vasco», «Euskadi», «  cataluña  »— y el catálogo se
+    # indexa por el **código** («pais-vasco»). Comparar el uno con el otro no
+    # casa nunca y la etapa salía siempre «ESO», sin fallar. Es el mismo
+    # ayudante que usan los enlaces curriculares, y por lo mismo.
+    comunidad = geografia.comunidad_de(sa)
+    if comunidad:
+        etapa = db.session.scalar(
+            select(Competencia.etapa)
+            .where(Competencia.comunidad == comunidad)
+            .where(Competencia.materia == sa.materia)
+            .where(Competencia.cursos_aplicables.contains([sa.curso]))
+            .limit(1)
+        )
+        if etapa:
+            return etapa
+    log.info("etapa_no_esta_en_el_catalogo", comunidad=comunidad,
+             materia=sa.materia, curso=sa.curso, se_usa=_ETAPA_POR_DEFECTO)
+    return _ETAPA_POR_DEFECTO
+
+
 def crear(usuario: Usuario, datos: dict[str, Any]) -> SituacionAprendizaje:
     """Crea una nueva situación de aprendizaje propiedad del usuario dado.
 
@@ -154,6 +207,7 @@ def crear(usuario: Usuario, datos: dict[str, Any]) -> SituacionAprendizaje:
     """
     provincia = datos.pop("provincia", None) or usuario.provincia
     datos.pop("comunidad_autonoma", None)   # se calcula, no se acepta suelta
+    datos.pop("etapa", None)                # ídem: sale del catálogo
 
     sa = SituacionAprendizaje(id_usuario=usuario.id_usuario, **datos)
 
@@ -166,6 +220,10 @@ def crear(usuario: Usuario, datos: dict[str, Any]) -> SituacionAprendizaje:
         # Sin provincia reconocible se conserva la comunidad del perfil, que es
         # lo que tienen las cuentas anteriores a que existiera este campo.
         sa.comunidad_autonoma = usuario.comunidad_autonoma
+
+    # Después de fijar la provincia, porque de ella sale la comunidad y sin
+    # comunidad no hay catálogo al que preguntar.
+    sa.etapa = etapa_de(sa)
 
     db.session.add(sa)
     db.session.commit()
@@ -187,6 +245,7 @@ def _filtros_listado(
     q: str | None,
     incluir_adaptaciones: bool,
     provincia: str | None = None,
+    etapa: str | None = None,
 ) -> list:
     """Condiciones WHERE del listado, compartidas por la página y el conteo.
 
@@ -211,6 +270,11 @@ def _filtros_listado(
     # en cuanto se añadía un curso.
     if provincia:
         condiciones.append(SituacionAprendizaje.provincia == provincia)
+    # La etapa es el filtro grueso: acota antes que el curso y sirve para
+    # «enséñame todo lo de Bachillerato» sin ir curso por curso, que es lo
+    # único que no se podía hacer deduciéndola de la cadena del curso.
+    if etapa:
+        condiciones.append(SituacionAprendizaje.etapa == etapa)
     if curso:
         condiciones.append(SituacionAprendizaje.curso == curso)
     if materia:
@@ -233,6 +297,7 @@ def listar(
     q: str | None = None,
     incluir_adaptaciones: bool = True,
     provincia: str | None = None,
+    etapa: str | None = None,
     limit: int = POR_PAGINA,
     offset: int = 0,
 ) -> list[SituacionAprendizaje]:
@@ -252,6 +317,7 @@ def listar(
         q=q,
         incluir_adaptaciones=incluir_adaptaciones,
         provincia=provincia,
+        etapa=etapa,
     )
     stmt = (
         select(SituacionAprendizaje)
@@ -275,6 +341,7 @@ def contar(
     q: str | None = None,
     incluir_adaptaciones: bool = True,
     provincia: str | None = None,
+    etapa: str | None = None,
 ) -> int:
     """Cuántas situaciones devolvería ``listar`` sin límite de página."""
     condiciones = _filtros_listado(
@@ -285,6 +352,7 @@ def contar(
         q=q,
         incluir_adaptaciones=incluir_adaptaciones,
         provincia=provincia,
+        etapa=etapa,
     )
     return (
         db.session.scalar(
@@ -402,6 +470,12 @@ def actualizar(
     if provincia is not None:
         geografia.fijar_provincia(sa, provincia)   # validada más arriba
 
+    # La etapa se recalcula si cambió algo de lo que depende. Sin esto, mover
+    # una SdA de «3º ESO» a «1º Bachillerato» la dejaría archivada como de la
+    # ESO, y el filtro del buscador la enseñaría en el sitio equivocado.
+    if {"curso", "materia"} & cambios.keys() or provincia is not None:
+        sa.etapa = etapa_de(sa)
+
     db.session.commit()
     return sa
 
@@ -447,6 +521,11 @@ def reasignar_curriculo(
 
     sa.materia = materia
     sa.curso = curso
+    # Reasignar el currículo puede cruzar la etapa —de la ESO a Bachillerato—,
+    # así que se recalcula aquí igual que en `actualizar`. Los dos caminos que
+    # cambian materia o curso tienen que dejar la etapa coherente; si solo uno
+    # lo hiciera, el fallo dependería de por dónde se hubiera editado.
+    sa.etapa = etapa_de(sa)   # `sa` ya lleva la materia y el curso nuevos
     db.session.commit()
 
     log.info(
@@ -491,6 +570,12 @@ def duplicar(
         titulo=titulo,
         curso=original.curso,
         materia=original.materia,
+        # Se copia en vez de recalcularse: la copia es del mismo par
+        # materia/curso, así que su etapa es la misma por definición. Volver a
+        # preguntar al catálogo podría devolver otra cosa si el currículo
+        # cambió desde que se creó el original, y entonces la copia y su
+        # original dirían etapas distintas sin que nadie los haya movido.
+        etapa=original.etapa,
         comunidad_autonoma=original.comunidad_autonoma,
         descripcion=original.descripcion,
         metodologia=original.metodologia,

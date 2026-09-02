@@ -18,7 +18,7 @@ class SugerenciaIn(BaseModel):
     model_config = ConfigDict(extra="forbid", str_strip_whitespace=True)
 
     curso: str = Field(min_length=1, max_length=20)
-    materia: str = Field(min_length=1, max_length=50)
+    materia: str = Field(min_length=1, max_length=120)
     contexto: str | None = Field(
         default=None,
         max_length=1000,
