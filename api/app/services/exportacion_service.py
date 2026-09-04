@@ -186,6 +186,11 @@ def procedencia_del_curriculo(sa: SituacionAprendizaje) -> dict[str, str] | None
     # es visible y seguro, al revés que reventar la descarga entera.
     comunidades_citadas = {c for f in filas if (c := getattr(f, "comunidad", None))}
     idiomas = {i for f in filas if (i := getattr(f, "idioma", None))}
+    # LA ETAPA TAMBIÉN SALE DE LAS FILAS, por lo mismo que la comunidad: es de
+    # su texto de lo que hay que responder. Tomarla de `sa.etapa` daría la
+    # etapa contra la que se generó, que puede no ser la de lo que acabó
+    # enlazado.
+    etapas = {e for f in filas if (e := getattr(f, "etapa", None))}
     if not comunidades_citadas:
         return None
 
@@ -194,10 +199,16 @@ def procedencia_del_curriculo(sa: SituacionAprendizaje) -> dict[str, str] | None
     # mejor que elegir una: significaría que el catálogo tiene filas cruzadas.
     codigo = sorted(comunidades_citadas)[0]
     idioma = sorted(idiomas)[0] if idiomas else None
+    # Con una sola etapa citada se usa; con varias **no se elige una**, porque
+    # la nota diría una norma que no cubre la mitad de lo que el documento
+    # reproduce. Se calla, que es lo que se hace aquí con todo lo que no se
+    # sabe. La columna es NOT NULL, así que «ninguna etapa» solo pasa si no hay
+    # filas, y ahí ya se ha vuelto antes.
+    etapa = next(iter(etapas)) if len(etapas) == 1 else None
 
     return {
         "comunidad": comunidades.nombre(codigo) or codigo,
-        "norma": comunidades.norma(codigo) or "",
+        "norma": (comunidades.norma(codigo, etapa) or "") if etapa else "",
         "idioma": idioma or "",
         "idioma_nombre": IDIOMAS.get(idioma, "") if idioma else "",
         # El aviso de mezcla solo cuando la hay: repetirlo cuando las dos

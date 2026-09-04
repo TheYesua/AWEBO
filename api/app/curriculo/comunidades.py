@@ -69,7 +69,20 @@ COMUNIDADES: dict[str, str] = {
 POR_DEFECTO = "ceuta"
 
 
-#: código -> norma de la que salió el currículo cargado de esa comunidad.
+#: (código, etapa) -> norma de la que salió ese currículo.
+#:
+#: LA ETAPA ES PARTE DE LA CLAVE, Y NO LO ERA
+#: -------------------------------------------
+#: Esta tabla iba solo por comunidad, y **cada comunidad tiene una norma
+#: distinta por etapa**. La consecuencia se vio en el PDF de la SdA 62, de 1.º
+#: de Bachillerato en Cataluña: decía «Currículo aplicado: Cataluña (Decret
+#: 175/2022)», que es el decreto de la **ESO**. El suyo es el 171/2022.
+#:
+#: No es un detalle de estilo: el documento que el docente adjunta a su
+#: programación estaba **citando la norma equivocada**, y es justo el dato que
+#: esta nota existe para dar. Lo mismo llevaba pasando con el Bachillerato
+#: vasco desde el 02/09, que salía citando el Decreto 77/2023 en vez del
+#: 76/2023.
 #:
 #: Solo están las que tienen currículo. Es a propósito: si algún día se carga
 #: otra y alguien olvida esta línea, `norma()` devuelve `None` y el documento
@@ -79,18 +92,38 @@ POR_DEFECTO = "ceuta"
 #: Se escribe la denominación **corta**, la que un docente pone en su
 #: programación. La referencia completa —número de boletín y fecha— está en
 #: `curriculo/fuentes/<comunidad>/LEEME.md`.
-NORMAS: dict[str, str] = {
-    "ceuta": "Orden EFP/754/2022",
-    "andalucia": "Orden de 30 de mayo de 2023",
-    "cataluna": "Decret 175/2022",
-    "galicia": "Decreto 156/2022",
-    "pais-vasco": "Decreto 77/2023",
+#:
+#: Del Decret 171/2022 se cita el número original y no su modificación: el
+#: Decret 103/2026 lo modifica, no lo sustituye, y lo que un docente escribe en
+#: su programación es la norma que ordena la etapa. De qué versión salieron los
+#: datos está en el LEEME de las fuentes.
+NORMAS: dict[tuple[str, str], str] = {
+    ("ceuta", "ESO"): "Orden EFP/754/2022",
+    ("andalucia", "ESO"): "Orden de 30 de mayo de 2023",
+    ("cataluna", "ESO"): "Decret 175/2022",
+    ("cataluna", "Bachillerato"): "Decret 171/2022",
+    ("galicia", "ESO"): "Decreto 156/2022",
+    ("pais-vasco", "ESO"): "Decreto 77/2023",
+    ("pais-vasco", "Bachillerato"): "Decreto 76/2023",
 }
 
+#: La etapa que se supone cuando no se dice. Es la de todo lo que había antes
+#: de que existiera la columna, y la de las cinco comunidades que solo tienen
+#: una.
+ETAPA_POR_DEFECTO = "ESO"
 
-def norma(codigo: str | None) -> str | None:
-    """Norma de la que salió el currículo de esa comunidad, o `None`."""
-    return NORMAS.get(codigo) if codigo else None
+
+def norma(codigo: str | None, etapa: str | None = None) -> str | None:
+    """Norma de la que salió el currículo de esa comunidad y etapa, o `None`.
+
+    Sin etapa se supone la ESO. **No se cae hacia la ESO cuando la etapa se
+    da y no está en la tabla**: eso es lo que hacía la versión anterior sin
+    querer, y el resultado era una cita falsa en el documento del docente. Si
+    no se sabe, no hay nota.
+    """
+    if not codigo:
+        return None
+    return NORMAS.get((codigo, etapa or ETAPA_POR_DEFECTO))
 
 
 def _sin_tildes(texto: str) -> str:

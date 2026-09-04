@@ -34,8 +34,8 @@ from app.services.exportacion_service import (
 )
 
 
-def _fila(comunidad="pais-vasco", idioma="eu"):
-    return SimpleNamespace(comunidad=comunidad, idioma=idioma,
+def _fila(comunidad="pais-vasco", idioma="eu", etapa="ESO"):
+    return SimpleNamespace(comunidad=comunidad, idioma=idioma, etapa=etapa,
                            codigo="1.1", descripcion="Testua")
 
 
@@ -63,34 +63,75 @@ class TestDeDondeSaleElDato:
         peor que callar."""
         assert procedencia_del_curriculo(_sa(filas=[])) is None
 
-    def test_todas_las_comunidades_cargadas_tienen_su_norma(self):
-        """Si se carga una comunidad y se olvida la norma, el documento sale
-        sin la cita. Este test lo dice antes de que salga así."""
+    @pytest.mark.parametrize("comunidad, etapa, esperada", [
+        ("cataluna", "ESO", "Decret 175/2022"),
+        ("cataluna", "Bachillerato", "Decret 171/2022"),
+        ("pais-vasco", "ESO", "Decreto 77/2023"),
+        ("pais-vasco", "Bachillerato", "Decreto 76/2023"),
+    ])
+    def test_cada_etapa_cita_su_decreto(self, comunidad, etapa, esperada):
+        """EL FALLO DE LA SdA 62. Su PDF, de 1.º de Bachillerato en Cataluña,
+        decía «Currículo aplicado: Cataluña (Decret 175/2022)», que es el
+        decreto de la ESO. El suyo es el 171/2022.
+
+        Es el dato que esa nota existe para dar, así que darlo mal es peor que
+        no darlo: el documento va a la programación de un docente.
+        """
+        sa = _sa(filas=[_fila(comunidad=comunidad, etapa=etapa, idioma="ca")])
+
+        assert procedencia_del_curriculo(sa)["norma"] == esperada
+
+    def test_con_dos_etapas_citadas_no_se_elige_una(self):
+        """No debería pasar —los enlaces se filtran por curso— pero si pasara,
+        citar la norma de una de las dos afirmaría algo falso sobre la mitad
+        del documento. Sin nota es peor de ver y mejor de fiar."""
+        sa = _sa(filas=[_fila(comunidad="cataluna", etapa="ESO", idioma="ca"),
+                        _fila(comunidad="cataluna", etapa="Bachillerato",
+                              idioma="ca")])
+
+        assert procedencia_del_curriculo(sa)["norma"] == ""
+
+    def test_cada_comunidad_y_etapa_cargada_tiene_su_norma(self):
+        """Si se carga un currículo y se olvida su norma, el documento sale
+        sin la cita. Este test lo dice antes de que salga así.
+
+        **SE COMPRUEBA POR (COMUNIDAD, ETAPA), Y ANTES SOLO POR COMUNIDAD.**
+        Ese era el agujero: con `norma("cataluna")` bastaba que existiera la
+        norma de la ESO para que el test pasara, y el Bachillerato catalán
+        salía citando el Decret 175/2022 —el de la ESO— en el PDF de la SdA
+        62. El vasco llevaba igual desde el 02/09.
+
+        Comprobar la clave entera es lo que convierte esto en una guarda: la
+        pareja que no esté en la tabla no puede colarse por parecerse a otra.
+        """
         from pathlib import Path
         raiz = Path("/curriculo") if Path("/curriculo").is_dir() \
             else Path(__file__).resolve().parents[3] / "curriculo"
-        salidas = [p.name for p in raiz.glob("salida*") if p.is_dir()]
+        salidas = [p for p in raiz.glob("salida*") if p.is_dir()]
         if not salidas:
             pytest.skip("no hay ninguna salida generada")
-        # La comunidad se lee **del propio JSON** y no se deduce del nombre del
-        # directorio. Deducirla funcionaba mientras hubo una carpeta por
-        # comunidad y dejó de funcionar con `salida_pais_vasco_bachillerato`:
-        # ese nombre lleva también la etapa, y «pais-vasco-bachillerato» no es
-        # ninguna comunidad. El dato está dentro del fichero; sacarlo del
-        # nombre era una segunda fuente esperando a divergir.
+        # La comunidad y la etapa se leen **del propio JSON** y no se deducen
+        # del nombre del directorio. Deducirlas funcionaba mientras hubo una
+        # carpeta por comunidad y dejó de funcionar con
+        # `salida_pais_vasco_bachillerato`: ese nombre lleva también la etapa,
+        # y «pais-vasco-bachillerato» no es ninguna comunidad. El dato está
+        # dentro del fichero; sacarlo del nombre era una segunda fuente
+        # esperando a divergir.
         import json as _json
-        codigos = set()
+        parejas = set()
         for s in salidas:
-            for f in (raiz / s).glob("*.json"):
+            for f in s.glob("*.json"):
                 datos = _json.loads(f.read_text(encoding="utf-8"))
-                # Los de `salida/` son anteriores al campo: son de Ceuta.
-                codigos.add(datos.get("comunidad") or "ceuta")
-                break
-        for codigo in sorted(codigos):
-            assert comunidades.norma(codigo), (
-                f"«{codigo}» tiene currículo generado y no está en NORMAS: "
-                "sus documentos saldrían sin citar la norma"
-            )
+                # Los de `salida/` son anteriores a los dos campos: son de
+                # Ceuta y de la ESO.
+                parejas.add((datos.get("comunidad") or "ceuta",
+                             datos.get("etapa") or "ESO"))
+        sin_norma = sorted(p for p in parejas if not comunidades.norma(*p))
+
+        assert sin_norma == [], (
+            f"tienen currículo generado y no están en NORMAS: {sin_norma}. "
+            "Sus documentos saldrían sin citar la norma"
+        )
 
 
 class TestLaMezclaDeLenguas:
