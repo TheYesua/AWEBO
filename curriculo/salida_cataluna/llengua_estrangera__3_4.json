@@ -84,7 +84,12 @@
     {
       "codigo": "2.2",
       "competencia": "2",
-      "descripcion": "Interpretar i valorar el contingut i els trets discursius de textos progressivament més complexos"
+      "descripcion": "Interpretar i valorar el contingut i els trets discursius de textos progressivament més complexos propis dels àmbits de les relacions interpersonals, dels mitjans de comunicació social i de l’aprenentatge, i també de textos literaris adequats al nivell de maduresa de l’alumnat."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Seleccionar, organitzar i aplicar les estratègies i els coneixements més adequats en cada situació comunicativa per comprendre el sentit general, la informació essencial i els detalls més rellevants dels textos; inferir significats i interpretar elements no verbals, i cercar, seleccionar i gestionar informació veraç."
     },
     {
       "codigo": "3.1",
@@ -124,12 +129,22 @@
     {
       "codigo": "5.2",
       "competencia": "5",
-      "descripcion": "Aplicar coneixements i estratègies per a planificar, produir, revisar i cooperar en l’elaboració de textos"
+      "descripcion": "Aplicar coneixements i estratègies per a planificar, produir, revisar i cooperar en l’elaboració de textos coherents, cohesionats i adequats a les intencions comunicatives, les característiques contextuals, els aspectes socioculturals i la tipologia textual, usant els recursos físics o digitals més adequats en funció de la tasca i de les necessitats de l’audiència o del lector potencial a qui s’adreça el text."
     },
     {
       "codigo": "6.1",
       "competencia": "6",
-      "descripcion": "Aplicar estratègies de cerca d’informació (localització, selecció i contrast), en diferents fonts, incloses les digitals, calibrant-ne la fiabilitat i"
+      "descripcion": "Aplicar estratègies de cerca d’informació (localització, selecció i contrast), en diferents fonts, incloses les digitals, calibrant-ne la fiabilitat i pertinència en funció dels objectius de lectura, sobre temes d’interès acadèmic, personal, ecològic i social, de forma autònoma, a la xarxa i a la biblioteca, valorant críticament el resultat de la cerca."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Elaborar treballs d’investigació i comunicar de forma creativa i respectant els drets de la propietat intel·lectual, els resultats d’un procés d’investigació, individual o grupal, organitzant la informació, integrant-la en esquemes propis i reelaborant-la, i adoptant un punt de vista crític i respectuós amb els principis de propietat intel·lectual, sobre temes d’interès acadèmic, personal, ecològic i social, que incloguin els objectius de desenvolupament sostenible."
+    },
+    {
+      "codigo": "6.3",
+      "competencia": "6",
+      "descripcion": "Adoptar hàbits d’ús crític, segur, sostenible i saludable de les tecnologies digitals en relació amb la cerca i la comunicació de la informació."
     },
     {
       "codigo": "7.1",
@@ -179,66 +194,35 @@
   ],
   "saberes_basicos": [
     {
-      "codigo": "31",
-      "bloque": "31. Comunicació · Context",
+      "codigo": "1",
+      "bloque": "1. Les llengües i els seus parlants",
+      "titulo": "Les llengües i els seus parlants",
+      "items": [
+        "Anàlisi i valoració de la llengua estrangera com a mitjà de comunicació interpersonal i internacional, font d’informació, i com a eina de participació social i d’enriquiment personal, en situacions de la vida personal, social i acadèmica, incloses les xarxes socials i els mitjans de comunicació.",
+        "Interès i iniciativa en la realització d’intercanvis comunicatius a través de diferents mitjans amb parlants o estudiants de la llengua estrangera per al desenvolupament i millora de l’aprenentatge de la llengua.",
+        "Anàlisi i valoració d’aspectes socioculturals i sociolingüístics d’ús comú relatius a la vida quotidiana, les condicions de vida i les relacions interpersonals; convencions socials d’ús comú; llenguatge no verbal, cortesia lingüística i etiqueta digital; cultura, normes, actituds, costums i valors propis de països on es parla la llengua estrangera.",
+        "Aplicació d’estratègies d’ús comú per entendre i apreciar la diversitat lingüística, cultural i artística, atenent a valors ecològics, socials i democràtics en escenaris presencials, híbrids i en línia."
+      ]
+    },
+    {
+      "codigo": "2",
+      "bloque": "2. Comunicació · Context",
       "titulo": "Comunicació · Context",
       "items": [
         "Anàlisi dels components de fet comunicatiu: grau de formalitat de la situació i caràcter públic o privat; distància social entre els interlocutors; propòsits comunicatius i interpretació d’intencions; canal de comunicació i elements no verbals de la comunicació, en situacions d’aula, de la vida quotidiana i dels mitjans de comunicació."
       ]
     },
     {
-      "codigo": "32",
-      "bloque": "32. Comunicació · Gèneres discursius",
-      "titulo": "Comunicació · Gèneres discursius",
-      "items": [
-        "Anàlisi i ús de models contextuals i gèneres discursius bàsics en la comprensió, producció i coproducció de textos orals, escrits i multimodals, breus i senzills, literaris i no literaris: característiques i reconeixement del context (participants i situació), expectatives generades pel context; organització i estructuració segons el gènere, la funció textual i l’estructura."
-      ]
-    },
-    {
-      "codigo": "33",
-      "bloque": "33. Comunicació · Processos",
-      "titulo": "Comunicació · Processos",
-      "items": [
-        "Desenvolupament progressiu de l’autoconfiança. Valoració de l’error com a instrument de millora i proposta de reparació en qualsevol tipus de situació d’aprenentatge de la llengua (formal, no formal, informal).",
-        "Aplicació d’estratègies d’ús comú per a la planificació, execució, control i reparació de la comprensió, la producció i la coproducció de textos orals i multimodals, com ara reformular, comparar i contrastar, resumir, col·laborar, debatre, resoldre problemes i gestionar situacions compromeses, en situacions comunicatives informals, semiformals, no formals i formals.",
-        "Aplicació d’estratègies d’ús comú per a la planificació, execució, control i reparació de la comprensió, la producció i la coproducció de textos orals, escrits i multimodals, com ara reformular, comparar i contrastar, resumir, col·laborar, debatre, resoldre problemes i gestionar situacions compromeses, identificar informació rellevant, realitzar inferències, determinar l’actitud i el propòsit del parlant, en situacions comunicatives informals, semiformals, no formals i formals.",
-        "Utilització d’eines analògiques i digitals d’ús comú per a la comprensió, producció i coproducció oral, escrita i multimodal; i plataformes virtuals d’interacció i col·laboració educativa (aules virtuals, videoconferències, eines digitals col·laboratives...) per a l’aprenentatge, la comunicació i el desenvolupament de projectes amb parlants o estudiants de la llengua estrangera.",
-        "Anàlisi i ús de funcions comunicatives bàsiques adequades a l’àmbit i al context comunicatiu: salutacions, comiats i presentacions; descripció de persones, objectes i llocs; situar esdeveniments en el temps; situar objectes, persones i llocs en l’espai; petició i intercanvi d’informació sobre qüestions quotidianes; instruccions i ordres; oferir, acceptar i rebutjar ajuda, proposicions o suggeriments; expressar parcialment el gust o l’interès i emocions bàsiques; narració d’esdeveniments passats, descripció de situacions presents, i expressió de successos futurs; expressar l’opinió i la possibilitat.",
-        "Identificació i respecte de l’autoria de les fonts consultades i els continguts utilitzats, en contextos personals, socials i acadèmics.",
-        "Cerca d’informació que impliqui l’ús de recursos per a l’aprenentatge i estratègies bàsiques: diccionaris, llibres de consulta, biblioteques, recursos digitals i informàtics, etc. en contextos de l’àmbit personal i acadèmic."
-      ]
-    },
-    {
-      "codigo": "34",
-      "bloque": "34. Comunicació · Reconeixement, anàlisi i ús discursiu dels elements lingüístics",
-      "titulo": "Comunicació · Reconeixement, anàlisi i ús discursiu dels elements lingüístics",
-      "items": [
-        "Identificació, reflexió i aplicació de convencions i estratègies conversacionals bàsiques, en format síncron o asíncron, per iniciar, mantenir i acabar la comunicació, prendre i cedir la paraula, demanar i donar aclariments i explicacions, reformular, comparar i contrastar, resumir, col·laborar, debatre, etc.",
-        "Anàlisi i utilització d’unitats lingüístiques bàsiques i significats associats a aquestes unitats tals com l’expressió de l’entitat i les seves propietats, quantitat i qualitat, l’espai i les relacions espacials, el temps i les relacions temporals, l’afirmació, la negació, la interrogació i l’exclamació, relacions lògiques bàsiques en situacions personals, socials i acadèmiques.",
-        "Anàlisi i ús de lèxic d’ús comú i d’interès per a l’alumnat, relatiu a la identificació personal, relacions interpersonals, llocs i entorns propers, oci i temps lliure, vida quotidiana, salut i activitat física, habitatge i llar, clima i entorn natural, tecnologies de la informació i la comunicació, tenint en compte la perspectiva de gènere.",
-        "Reconeixement, anàlisi i ús de patrons sonors, accentuals, rítmics i d’entonació d’ús comú, i significats i intencions comunicatives generals associades a aquests patrons, en situacions informals i semiformals.",
-        "Inferència i aplicació de convencions ortogràfiques bàsiques i significats i intencions comunicatives associats als formats, patrons i elements gràfics, inclosos els recursos i plataformes digitals."
-      ]
-    },
-    {
-      "codigo": "82",
-      "bloque": "82. Comunicació · Context",
-      "titulo": "Comunicació · Context",
-      "items": [
-        "Anàlisi dels components de fet comunicatiu: grau de formalitat de la situació i caràcter públic o privat; distància social entre els interlocutors; propòsits comunicatius i interpretació d’intencions; canal de comunicació i elements no verbals de la comunicació, en situacions d’aula, de la vida quotidiana i dels mitjans de comunicació."
-      ]
-    },
-    {
-      "codigo": "83",
-      "bloque": "83. Comunicació · Gèneres discursius",
+      "codigo": "3",
+      "bloque": "3. Comunicació · Gèneres discursius",
       "titulo": "Comunicació · Gèneres discursius",
       "items": [
         "Anàlisi, argumentació i ús de models contextuals i gèneres discursius d’ús comú en la comprensió, producció i coproducció de textos orals, escrits i multimodals, breus i senzills, literaris i no literaris: característiques i reconeixement del context (participants i situació), expectatives generades pel context; organització i estructuració segons el gènere, la funció textual i l’estructura."
       ]
     },
     {
-      "codigo": "84",
-      "bloque": "84. Comunicació · Processos",
+      "codigo": "4",
+      "bloque": "4. Comunicació · Processos",
       "titulo": "Comunicació · Processos",
       "items": [
         "Desenvolupament de l’autoconfiança i iniciativa. Valoració de l’error com a part integrant del procés d’aprenentatge de la llengua.",
@@ -251,8 +235,8 @@
       ]
     },
     {
-      "codigo": "85",
-      "bloque": "85. Comunicació · Reconeixement, anàlisi i ús discursiu dels elements lingüístics",
+      "codigo": "5",
+      "bloque": "5. Comunicació · Reconeixement, anàlisi i ús discursiu dels elements lingüístics",
       "titulo": "Comunicació · Reconeixement, anàlisi i ús discursiu dels elements lingüístics",
       "items": [
         "Anàlisi i aplicació de convencions i estratègies conversacionals d’ús comú, en format síncron o asíncron, per iniciar, mantenir i acabar la comunicació, prendre i cedir la paraula, demanar i donar aclariments i explicacions, reformular, comparar i contrastar, resumir, col·laborar, debatre, etc.",
@@ -260,6 +244,32 @@
         "Anàlisi, valoració i ús de lèxic d’ús comú i d’interès per a l’alumnat, relatiu a la identificació personal, relacions interpersonals, llocs i entorns, oci i temps lliure, salut i activitat física, vida quotidiana, habitatge i llar, clima i entorn natural, tecnologies de la informació i la comunicació, sistema escolar i formació, tenint en compte la perspectiva de gènere.",
         "Reconeixement, anàlisi i ús de patrons sonors, accentuals, rítmics i d’entonació d’ús comú, i significats i intencions comunicatives generals associades a aquests patrons, en situacions informals i semiformals.",
         "Anàlisi i aplicació de convencions ortogràfiques d’ús comú i significats i intencions comunicatives associats als formats, patrons i elements gràfics."
+      ]
+    },
+    {
+      "codigo": "6",
+      "bloque": "6. Educació literària",
+      "titulo": "Educació literària",
+      "items": [
+        "Implicació en la lectura de manera progressivament autònoma i reflexió sobre els textos llegits i sobre la pròpia pràctica de lectura.",
+        "Selecció, de manera progressivament autònoma, d’obres variades que incloguin autores i autors a partir de la utilització autònoma de la biblioteca escolar i pública disponible.",
+        "Aplicació d’estratègies de presa de consciència i verbalització dels propis gustos i identitat lectora en l’àmbit personal i social (lectures compartides).",
+        "Expressió de l’experiència lectora i de diferents formes d’apropiació i recreació dels textos llegits, en el context personal i social (converses a l’aula.",
+        "Aplicació d’estratègies de mobilització de l’experiència personal, lectora i cultural que permetin establir vincles de manera argumentada entre l’obra llegida i aspectes de l’actualitat, així com amb altres textos i manifestacions artístiques.",
+        "Aplicació d’estratègies per a la recomanació de les lectures en suports variats o bé oralment entre iguals, emmarcant de manera bàsica les obres en els gèneres i subgèneres literaris."
+      ]
+    },
+    {
+      "codigo": "7",
+      "bloque": "7. Reflexió sobre la llengua",
+      "titulo": "Reflexió sobre la llengua",
+      "items": [
+        "Desenvolupament dels coneixements, destreses i actituds que permeten dur a terme activitats de mediació en situacions informals, semiformals, no formals i formals.",
+        "Aplicació d’estratègies i tècniques per respondre eficaçment i amb nivells creixents de fluïdesa, adequació i correcció a una necessitat comunicativa concreta tot i les limitacions derivades del nivell de competència en la llengua estrangera i en les llengües familiars, en comunicacions orals, escrites i multimodals.",
+        "Aplicació d’estratègies d’ús comú per identificar, organitzar, retenir, recuperar i utilitzar creativament unitats lingüístiques (lèxic, morfosintaxi, patrons sonors, etc.), a partir de l’ús tàctic dels coneixements que es tenen de les llengües, i les seves varietats, i que conformen el repertori lingüístic, de forma autònoma.",
+        "Aplicació d’estratègies i eines d’ús comú per a l’autoavaluació, la coavaluació i l’autoreparació, analògiques i digitals, individuals i cooperatives que permetin el desenvolupament, la regulació i la millora del procés d’aprenentatge de la llengua.",
+        "Ús d’estructures morfosintàctiques i de lèxic adequat, tot reflexionant sobre els processos comunicatius implicats, amb la utilització del metallenguatge específic.",
+        "Aplicació dels coneixements de les diferents llengües del repertori lingüístic com a eina d’aprenentatge de la llengua estrangera."
       ]
     }
   ],
