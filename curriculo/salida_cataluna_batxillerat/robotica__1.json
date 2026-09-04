@@ -1,0 +1,31 @@
+{
+  "materia_oficial": "Robòtica",
+  "materia": "Robòtica",
+  "etapa": "Bachillerato",
+  "ciclo": "1º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Dissenyar prototips creatius i funcionals mitjançant projectes col·laboratius, utilitzant tècniques de design thinking per donar resposta a problemes, situacions i reptes concrets.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Configurar i interconnectar plaques de prototipatge programables, sensors i actuadors utilitzant coneixements d’electrònica i programar les plaques fent servir estructures lògiques a partir de llenguatges de programació per donar resposta a reptes, situacions i problemes.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Verificar i millorar el funcionament de prototips creats, comparant el resultat amb el disseny inicial previst i introduint canvis per incrementar-ne l’eficiència i aconseguir solucions òptimes.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [],
+  "saberes_basicos": [],
+  "comunidad": "cataluna",
+  "idioma": "ca"
+}

@@ -1,0 +1,217 @@
+{
+  "materia_oficial": "Tecnologia i Enginyeria",
+  "materia": "Tecnologia i Enginyeria",
+  "etapa": "Bachillerato",
+  "ciclo": "1º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Analitzar, coordinar i dissenyar projectes de recerca amb una actitud crítica i emprenedora, ideant i implementant estratègies i tècniques sostenibles i eficients de resolució de problemes, tot comunicant els resultats de manera ordenada i raonada, per crear i millorar productes i sistemes de manera continuada.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Comparar i seleccionar materials, aplicant criteris tècnics i sostenibles, per fabricar productes de qualitat i elaborar estudis d’impacte que aportin respostes a problemes o a situacions plantejades amb un enfocament ètic i ecosocialment responsable.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Seleccionar, utilitzar i configurar les eines digitals necessàries, aplicant coneixements interdisciplinaris, per resoldre tasques i comunicar els resultats de manera ordenada i precisa, amb l’ús acurat del llenguatge gràfic i la terminologia tècnica adequada.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Construir nous coneixements i millorar les destreses tècniques, aplicant i transferint sabers d’altres disciplines amb una actitud creativa, per calcular, mesurar i resoldre problemes o aportar respostes a diferents necessitats pròpies dels àmbits de l’enginyeria.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Dissenyar, crear i avaluar sistemes tecnològics aplicant coneixements de la regulació automàtica, del control programat i de les possibilitats que ofereixen les tecnologies emergents, per estudiar, controlar i automatitzar tasques en sistemes tecnològics i robòtics.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Identificar i analitzar els diferents sistemes tecnològics dels àmbits de l’enginyeria, estudiant i comparant les seves característiques, tot valorant l’ús de l’energia i l’eficiència energètica per avaluar i valorar l’ús sostenible i ecosocialment responsable que es fa de la tecnologia.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Investigar i dissenyar projectes tècnics que mostrin la creació i millora d’un producte o sistema, argumentant-ho mitjançant la interpretació i la referenciació d’informació."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Participar en el desenvolupament i la coordinació de projectes de creació i innovació contínua de productes viables i socialment responsables, identificant millores i creant prototips mitjançant un procés iteratiu, amb una actitud emprenedora."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Col·laborar en les tasques tecnològiques, mostrant una actitud proactiva i de respecte cap a les aportacions i raonaments duts a terme per tots els membres del grup, fomentant la cooperació i el benestar grupal."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "1",
+      "descripcion": "Elaborar la documentació tècnica, de manera precisa i acurada, que inclogui la informació més significativa de caràcter textual, numèrica i gràfica tot utilitzant aplicacions digitals."
+    },
+    {
+      "codigo": "1.5",
+      "competencia": "1",
+      "descripcion": "Comunicar de manera eficaç i organitzada les idees i solucions tecnològiques, emprant el suport, la terminologia i el rigor apropiats. Aquesta competència específica planteja tant la participació de l’alumnat en la resolució de problemes tècnics, com la coordinació i la gestió de projectes de recerca cooperatius i col·laboratius. Això implica, entre altres aspectes, mostrar empatia, establir i mantenir relacions positives, exercitar l’escolta activa i la comunicació assertiva, identificant i gestionant les emocions en el procés d’aprenentatge, reconeixent les fonts d’estrès i sent perseverant en la consecució dels objectius. Addicionalment, s’incorporen tècniques específiques de recerca, facilitadores del procés d’ideació i de presa de decisions, i estratègies iteratives per organitzar i planificar les tasques a desenvolupar pels equips, resolent a partir d’una solució inicial bàsica que, en diverses fases, serà completada a nivell funcional tot establint diferents prioritats. En aquest aspecte, el mètode del pensament de dissenyador (design thinking) i les metodologies àgils (Agile) són d’ús habitual a les empreses tecnològiques, ja que aporten una major flexibilitat davant de qualsevol canvi en les demandes dels clients. Es té en compte també la millora contínua de productes com a plantejament de partida de projectes a desenvolupar, que és un reflex del que passa a l’àmbit industrial. S’ha de fomentar la superació d’estereotips i d’idees preconcebudes associades a les matèries tecnològiques i a l’enginyeria com ara les de gènere. En aquesta competència específica cal destacar la investigació com un apropament als projectes d’R+D+I, de manera crítica i creativa, on la correcta referenciació d’informació i l’elaboració de documentació tècnica adquireixen una gran importància. Per tant, el desenvolupament d’aquesta competència comporta expressar fets, idees, conceptes i procediments complexos aonadament, analíticament i gràficament, de forma veraç i precisa, utilitzant la terminologia adequada, per comunicar i difondre les idees i les solucions generades."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Determinar el cicle de vida d’un producte, planificant i aplicant mesures de control de qualitat en les diferents etapes, des del disseny fins a la comercialització, tenint en consideració estratègies de millora continuada."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Comparar i seleccionar materials, tradicionals o de nova generació, per a la fabricació de productes de qualitat basant-se en les característiques tècniques i atenent els criteris de sostenibilitat de manera responsable i ètica."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Fabricar models o prototips emprant les tècniques de fabricació més adients, aplicant-hi criteris tècnics i sostenibles. Aquesta competència es refereix a la capacitat de comparar i seleccionar els materials més adequats per a la creació de productes en funció de les seves característiques, així com dur a terme l’estudi i l’avaluació de l’impacte ambiental generat. A l’hora de determinar els materials s’atendran criteris relatius a les propietats tècniques (aspectes com la duresa, la resistència, la conductivitat elèctrica, l’aïllament tèrmic, etc.). Anàlogament, l’alumnat tindrà en compte aspectes relacionats amb la capacitat per ser conformats aplicant una tècnica o una altra, segons sigui convenient per a l’aplicació final del producte. A més a més s’han de considerar els criteris relatius a la capacitat del material per ser tractat, modificat o aliat per tal de millorar-ne les característiques finals. Finalment, l’alumnat valorarà aspectes de sostenibilitat per determinar quins materials són els més apropiats en relació amb, la contaminació generada i amb el consum energètic durant tot el cicle de vida. Igualment, cal considerar la capacitat de reciclatge en finalitzar la seva vida útil, la biodegradabilitat del material i altres aspectes vinculats a l’ús controlat de recursos o a la relació que s’estableix entre els materials i les persones que finalment fan ús del producte."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Resoldre amb autonomia i de manera òptima tasques i funcions proposades, mitjançant l’ús i la configuració de diferents eines digitals, tot aplicant coneixements interdisciplinaris."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Efectuar la presentació de projectes tècnics, argumentant les decisions preses, tot emprant les aplicacions digitals més adients per a cada situació. En aquesta etapa la competència aborda els aspectes relatius a la incorporació de la digitalització en el procés habitual de l’aprenentatge. Així doncs, i continuant amb les habilitats adquirides a l’etapa anterior, s’amplia i es reforça l’ús de les eines digitals en les tasques associades a la matèria. En són exemple les activitats vinculades a la investigació, a la cerca i a la selecció d’informació o a l’anàlisi de productes i sistemes tecnològics, realitzant un bon ús de les eines de cerca de la informació, valorant-ne la procedència i contrastant-ne la fiabilitat tot fent-ne una anàlisi crítica. El treball col·laboratiu, la comunicació d’idees o la difusió i la presentació de treballs consoliden nous aprenentatges i impliquen el coneixement de les característiques de les eines de comunicació disponibles, les seves aplicacions, opcions i funcionalitats, depenent del context. De la mateixa manera, el procés de disseny i creació es complementa amb un conjunt de programes que permeten el dimensionament, la simulació, la programació i el control de sistemes o la fabricació de productes. L’ús i l’aplicació de les eines digitals, per facilitar la creació de solucions i la millora dels resultats, es converteixen en instruments essencials en qualsevol de les fases del procés. Abasten tant les activitats relatives a la gestió, al disseny o al desenvolupament de solucions tecnològiques, com les relatives a la resolució pràctica d’exercicis senzills o a l’elaboració i la difusió de documentació tècnica relativa als projectes."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Experimentar, mesurar, interpretar i resoldre problemes associats a sistemes d’instal·lacions mecàniques aplicant els fonaments de mecanismes de transmissió i transformació del moviment."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Experimentar, mesurar, interpretar i resoldre problemes associats als sistemes mecànics de suport i d’unió fixos i mòbils."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Experimentar, mesurar, interpretar i resoldre problemes associats a sistemes de circuits electrònics i d’instal·lacions elèctriques, tot aplicant els fonaments dels circuits de corrent continu, així com de les màquines elèctriques rotatives. La resolució d’un simple exercici o d’un problema tecnològic complex requereix l’aplicació de tècniques, procediments i sabers que ofereixen diferents àmbits de coneixement científics. Aquesta competència específica té, d’una banda, la finalitat que l’alumnat utilitzi els coneixements adquirits a les matèries de matemàtiques o fonaments de física o química, per calcular magnituds i variables de problemes mecànics, elèctrics, electrònics, d’automatització o per desenvolupar programes. De l’altra banda, pot utilitzar l’experimentació, a través de muntatges o simulacions, com a eina de consolidació dels coneixements adquirits. Aquesta transferència de sabers aplicada a nous i diversos problemes o situacions, permet ampliar els coneixements de l’alumnat i fomentar la competència d’aprendre a aprendre."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Controlar i experimentar el funcionament de sistemes tecnològics i robòtics, utilitzant llenguatges de programació i aplicant les possibilitats que ofereixen les tecnologies emergents, com ara la intel·ligència artificial, la telemetria, la internet de les coses, el tractament massiu de dades (big data), etc."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Automatitzar, programar i experimentar funcionalitats i trajectòries de robots, mitjançant la seva modelització i aplicant algorismes senzills. Aquesta competència específica fa referència a l’adequació de productes o solucions tecnològiques perquè puguin executar certes tasques de forma autònoma. Es tracta d’incorporar elements de regulació automàtica o de control programat en els dissenys, permetent accions senzilles a les màquines o als sistemes tecnològics. En aquest sentit, s’inclouen, per exemple, el control de desplaçaments o moviments dels elements d’un robot, l’accionament regulat d’actuadors, com ara llums o motors, l’estabilitat dels valors de magnituds concretes, etc. D’aquesta manera, es possibilita que l’alumnat automatitzi tasques en màquines i en robots mitjançant la implementació de programes adequats a targetes de control. En aquesta línia d’actuació cal destacar el paper de les tecnologies emergents (intel·ligència artificial, internet de les coses, big data, etc.), aplicades al control d’objectes."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Analitzar i avaluar els diferents sistemes de generació i distribució d’energia elèctrica i les característiques dels mercats energètics, desenvolupant els càlculs necessaris per determinar-ne i valorar-ne l’eficiència i l’impacte ambiental, social i econòmic. L’objectiu que persegueix aquesta competència específica és proporcionar a l’alumnat un criteri informat sobre l’ús i l’impacte de l’energia en la societat i en el medi ambient, mitjançant l’adquisició d’una visió general dels diferents sistemes energètics, dels agents que hi intervenen i dels aspectes bàsics relacionats amb els subministraments domèstics. De manera complementària, es pretén proporcionar a l’alumnat els criteris a emprar en l’avaluació de l’impacte social i ambiental lligat a projectes de caire divers. Per al desenvolupament d’aquesta competència s’aborden, d’una banda, els sistemes de generació, transport, distribució de l’energia i del subministrament, així com el funcionament dels mercats energètics. D’altra banda, es treballen les instal·lacions en habitatges de màquines tèrmiques i de fonaments de regulació automàtica, tenint en compte criteris relacionats amb l’eficiència i l’estalvi energètic, afavorint que l’alumnat faci un ús responsable i sostenible de la tecnologia."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "1. Projectes de recerca i desenvolupament",
+      "titulo": "Projectes de recerca i desenvolupament",
+      "items": [
+        "Estratègies de gestió i desenvolupament de projectes: pensament de dissenyador (design thinking). Tècniques de recerca i d’ideació.",
+        "Aplicació d’estratègies de gestió i de desenvolupament de projectes basades en el pensament de dissenyador i en les tècniques de recerca i d’ideació, en el context personal, social o cultural, en un àmbit local o global.",
+        "Productes de l’entorn proper: cicle de vida. Estratègies de millora contínua. Planificació i desenvolupament de disseny i comercialització. Logística, transport i distribució.",
+        "Metrologia i normalització. Control de qualitat.",
+        "Anàlisi del cicle de vida de diferents productes, aplicant estratègies de millora continuada. Planificació i desenvolupament del disseny i comercialització de diferents productes amb l’optimització de la logística, el transport i la distribució.",
+        "Planificació de tècniques de control de qualitat en la producció. Aplicació de la metrologia i la normalització industrial.",
+        "Expressió gràfica. Aplicacions CAD-CAE-CAM. Diagrames funcionals, esquemes i croquis.",
+        "Utilització de diferents eines i aplicacions d’expressió gràfica de disseny, anàlisi i fabricació assistits per ordinador (CAD-CAE-CAM). Elaboració de diagrames funcionals i esquemes amb eines digitals i croquis en situacions reals.",
+        "Emprenedoria, resiliència, perseverança i creativitat per abordar problemes des d’una perspectiva interdisciplinària, a partir d’exemples rellevants.",
+        "Resolució de tasques i projectes amb una actitud emprenedora, resilient, perseverant i creativa per abordar problemes des d’una perspectiva interdisciplinària.",
+        "Autoconfiança i iniciativa. Identificació i gestió d’emocions. L’error i la reavaluació com a part del procés d’aprenentatge en diferents contextos; personal, social o cultural, en l’àmbit local o global.",
+        "Desenvolupament de l’autoconfiança i de la iniciativa personal. Identificació i gestió de les emocions, valorant l’error i la reavaluació com una part del procés d’aprenentatge."
+      ]
+    },
+    {
+      "codigo": "2",
+      "bloque": "2. Materials i fabricació",
+      "titulo": "Materials i fabricació",
+      "items": [
+        "Materials tècnics i nous materials. Classificació. Selecció i aplicacions característiques a partir d’exemples contextualitzats i reals.",
+        "Anàlisi i comparació de les característiques de diferents materials tècnics i materials de nova creació. Diferenciació i selecció dels materials segons els seus usos i aplicacions.",
+        "Aplicació a casos plantejats a l’aula.",
+        "Tècniques de fabricació: prototipatge ràpid i sota demanda. Fabricació digital aplicada a projectes.",
+        "Descripció de les principals tècniques de fabricació industrial per a l’obtenció de productes tecnològics duts a terme amb materials diversos com metalls, plàstic i fusta.",
+        "Maquinària específica. Possibles aplicacions a situacions reals.",
+        "Disseny i creació ràpida de prototips amb l’ús de la fabricació digital contextualitzats en l’entorn escolar.",
+        "Aplicació de la fabricació digital, sota demanda, per a la producció personalitzada de projectes amb solucions eficients, innovadores i respectuoses amb el medi ambient, a partir de casos reals.",
+        "Normes de seguretat i higiene en el treball en l’entorn laboral i escolar.",
+        "Aplicació de les normes de seguretat i higiene en el desenvolupament de tasques en els diferents espais de treball."
+      ]
+    },
+    {
+      "codigo": "3",
+      "bloque": "3. Sistemes mecànics",
+      "titulo": "Sistemes mecànics",
+      "items": [
+        "Mecanismes de transmissió i transformació de moviments. Suports i unió d’elements mecànics. Disseny, càlcul, muntatge i experimentació física o simulada. Aplicació pràctica a projectes plantejats a l’aula.",
+        "Descripció dels diferents mecanismes de transmissió i transformació del moviment i concreció de les característiques i dels paràmetres geomètrics d’aquests, a partir d’exemples propers.",
+        "Disseny, càlcul, muntatge i experimentació física o simulada de sistemes mecànics que tinguin una aplicació pràctica en els projectes a desenvolupar."
+      ]
+    },
+    {
+      "codigo": "4",
+      "bloque": "4. Sistemes elèctrics i electrònics",
+      "titulo": "Sistemes elèctrics i electrònics",
+      "items": [
+        "Circuits i màquines elèctriques de corrent continu. Interpretació i representació esquematitzada de circuits, càlcul, muntatge i experimentació física o simulada. Aplicació a projectes.",
+        "Interpretació i representació d’esquemes de circuits elèctrics de corrent continu i circuits electrònics analògics emprant la simbologia normalitzada. Documentació de projectes.",
+        "Disseny, càlcul, simulació, muntatge, mesura i experimentació de circuits elèctrics de corrent continu i de circuits electrònics analògics bàsics, en el context escolar.",
+        "Descripció, càlcul i aplicació de màquines rotatives de corrent continu integrades en projectes."
+      ]
+    },
+    {
+      "codigo": "5",
+      "bloque": "5. Automatització",
+      "titulo": "Automatització",
+      "items": [
+        "Llenguatges de programació textual. Creació de programes aplicats a l’automatització de processos a partir d’exemples reals.",
+        "Creació de programes aplicats a l’automatització de processos amb llenguatges de programació textual i gràfica.",
+        "Sistemes de control. Conceptes i elements. Modelització de sistemes senzills i estudi de possibles aplicacions al món real.",
+        "Anàlisi de sistemes de control. Definició de conceptes i d’elements d’un sistema.",
+        "Modelització de sistemes senzills.",
+        "Intel·ligència artificial aplicada als sistemes de control a partir d’exemples de l’entorn proper.",
+        "Anàlisi de programes d’intel·ligència artificial aplicats als sistemes de control.",
+        "Protocols de comunicació. Telemetria i monitoratge. Internet de les coses i tractament massiu de dades (big data), a partir d’exemples rellevants.",
+        "Descripció dels protocols de comunicació en sistemes d’automatització. Usos de la telemetria i del monitoratge. Descripció de les aplicacions de la internet de les coses i del tractament massiu de dades (big data).",
+        "Robòtica: modelització de moviments i d’accions mecàniques aplicats a contextos propers a l’alumne.",
+        "Aplicació de la robòtica. Disseny, modelització i programació de trajectòries de moviments i accions mecàniques."
+      ]
+    },
+    {
+      "codigo": "6",
+      "bloque": "6. Tecnologia sostenible",
+      "titulo": "Tecnologia sostenible",
+      "items": [
+        "Sistemes i mercats energètics. Consum energètic sostenible, tècniques i criteris d’estalvi.",
+        "Subministraments domèstics.",
+        "Anàlisi dels sistemes i dels mercats energètics. Descripció de les fonts energètiques primàries i del seu origen. Anàlisi de l’impacte dels costos energètics en l’economia i en la societat. Caracterització de la transició energètica a energies renovables a partir d’exemples de l’entorn proper.",
+        "Ús sostenible de l’energia, tècniques i criteris d’ús responsable en diferents àmbits de l’enginyeria.",
+        "Descripció dels diferents tipus de subministraments domèstics i de les normatives específiques. Aplicació a casos de l’entorn proper a l’alumnat.",
+        "Instal·lacions en habitatges: elèctriques, d’aigua i climatització, de comunicació i domòtiques. Energies renovables, eficiència energètica i sostenibilitat.",
+        "Caracterització de les instal·lacions en habitatges: elèctriques, d’aigua i climatització, de comunicació i domòtiques. Descripció del bioclimatisme: les energies renovables, eficiència energètica i sostenibilitat. Anàlisi de les tecnologies energètiques emergents: l’aerotèrmia, l’autoconsum fotovoltaic i la geotèrmia. Aplicació a casos de l’entorn proper a l’alumnat."
+      ]
+    }
+  ],
+  "comunidad": "cataluna",
+  "idioma": "ca"
+}

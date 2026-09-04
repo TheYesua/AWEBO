@@ -1,0 +1,31 @@
+{
+  "materia_oficial": "Problemàtiques Socials",
+  "materia": "Problemàtiques Socials",
+  "etapa": "Bachillerato",
+  "ciclo": "1º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Identificar, seleccionar, organitzar i avaluar críticament informació, contrastant-ne la fiabilitat per resoldre preguntes plantejades de forma autònoma i crear continguts relacionats amb les ciències socials.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Aplicar els aprenentatges de manera integrada i les diverses formes de raonament pròpies de les ciències socials, per interpretar els problemes socials rellevants i plantejar alternatives, cercant i utilitzant les estratègies adequades, analitzant críticament les solucions i reformulant el procediment, si calgués.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Identificar i fer servir les idees, evidències, arguments científics que sustenten l’explicació de fenòmens i processos relacionats amb les ciències socials per adoptar una posició i interpretació personal basada en criteris científics i plantejaments ètics.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [],
+  "saberes_basicos": [],
+  "comunidad": "cataluna",
+  "idioma": "ca"
+}

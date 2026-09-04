@@ -1,0 +1,124 @@
+{
+  "materia_oficial": "Dibuix Tècnic",
+  "materia": "Dibuix Tècnic",
+  "etapa": "Bachillerato",
+  "ciclo": "2º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Examinar elements i formes de l’entorn que permetin fer evidents conceptes propis de la geometria plana i projectiva, per analitzar de forma raonada les estructures geomètriques i els elements tècnics implícits.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Analitzar formes i traçats d’acord amb els principis propis del llenguatge de la geometria plana, per decidir els procediments idonis que permetin traçar-los gràficament amb precisió i de forma raonada.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Avaluar i decidir els procediments més adequats, fent ús de la geometria plana i descriptiva, així com de les convencions pròpies de la normalització de forma apropiada, per crear i concretar formes bidimensionals i tridimensionals.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Dissenyar i reelaborar formes bidimensionals i tridimensionals, valorant la importància del croquis a mà alçada, per representar-les amb precisió en projectes gràfics col·laboratius que permetin proposar, criticar, revisar, comparar, fer hipòtesis i traçar de forma consensuada i eficaç, fent ús de les eines digitals disponibles.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Analitzar l’evolució de les formes geomètriques a l’arquitectura i a les enginyeries contemporànies valorant la influència de la tecnologia i les eines digitals en camps com l’arquitectura o l’enginyeria."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Construir figures planes aplicant els traçats propis de les transformacions geomètriques."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Resoldre tangències aplicant els conceptes de potència, valorant la necessitat de la precisió dels traçats."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Representar corbes còniques i les seves tangents aplicant propietats i mètodes de construcció, valorant la necessitat de la precisió dels traçats."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Valorar els procediments propis de l’operativitat dièdrica (abatiment, canvi de pla i gir) resolent i concretant formes en sistema dièdric directe i avaluant la idoneïtat de cada procediment."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Representar sòlids polièdrics i de revolució aplicant els fonaments del sistema dièdric directe."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Representar sòlids polièdrics aplicant els procediments de les perspectives axonomètriques."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "3",
+      "descripcion": "Dissenyar projectes gràfics senzills fent ús del sistema de plans acotats."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Desenvolupar projectes col·laboratius elaborant la documentació gràfica (croquis, plànols) necessària fent ús de les convencions pròpies de la normalització."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Desenvolupar projectes col·laboratius integrant les eines digitals CAD, valorant les possibilitats que aporten al desenvolupament de projectes compartits."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "1. Fonaments geomètrics",
+      "titulo": "Fonaments geomètrics",
+      "items": [
+        "Comprensió i anàlisi de la presència i l’evolució de la geometria atenent la transformació tecnològica a l’arquitectura i l’enginyeria a partir de la revolució industrial fins als nostres dies.",
+        "Anàlisi i traçat de les transformacions geomètriques i l’aplicació de l’homologia i l’afinitat a la resolució de problemes als sistemes de representació, com per exemple la secció plana de sòlids.",
+        "Anàlisi i traçat del concepte de potència d’un punt respecte a una circumferència, eix radical i centre radical aplicant-los amb criteri a la resolució de tangències.",
+        "Anàlisi i traçat de corbes còniques i les seves tangents atenent les seves propietats, aplicant amb criteri els mètodes de construcció."
+      ]
+    },
+    {
+      "codigo": "2",
+      "bloque": "2. Geometria projectiva",
+      "titulo": "Geometria projectiva",
+      "items": [
+        "Anàlisi i traçat de l’operativitat dièdrica: abatiment, canvi de pla i gir atenent les seves aplicacions, com per exemple a l’obtenció de verdaderes magnituds i la resolució de problemes de distàncies, entre d’altres.",
+        "Anàlisi i traçat de sòlids polièdrics, concretament de la piràmide i del prisma en sistema dièdric directe.",
+        "Anàlisi i traçat de cossos de revolució, concretament del con i el cilindre rectes en sistema dièdric directe.",
+        "Anàlisi i traçat de poliedres regulars, concretament del tetraedre, l’hexaedre i l’octaedre en sistema dièdric directe.",
+        "Anàlisi i traçat de seccions planes i la seva verdadera magnitud en sistema dièdric aplicades als sòlids anteriors.",
+        "Anàlisi i traçat de sòlids polièdrics amb corbes fent ús dels sistemes axonomètrics normalitzats.",
+        "Anàlisi i traçat de cobertes simples i representació de perfils i seccions de terrenys partint de la seva representació amb corbes de nivell en sistema acotat.",
+        "Anàlisi i traçat de sòlids i formes tridimensionals, sistema cònic frontal i oblic, fent ús del programari DAO més adequat per facilitar que l’alumnat experimenti les diverses possibilitats d’aquest sistema de perspectiva sense la limitació del format paper."
+      ]
+    },
+    {
+      "codigo": "3",
+      "bloque": "3. Documentació gràfica de projectes: normalització i DAO",
+      "titulo": "Documentació gràfica de projectes: normalització i DAO",
+      "items": [
+        "Comprensió i anàlisi de sòlids i volums senzills fent ús del croquis i representant-los desenvolupant projectes gràfics, aplicant amb criteri els talls, les seccions i els trencaments adequats, així com les perspectives normalitzades necessàries.",
+        "Disseny i proposta de la documentació gràfica necessària en el desenvolupament de projectes en col·laboració i fent ús de les eines DAO.",
+        "Avaluació crítica de projectes i propostes, incloent-hi les pròpies propostes atenent criteris d’ecologia i sostenibilitat."
+      ]
+    }
+  ],
+  "comunidad": "cataluna",
+  "idioma": "ca"
+}

@@ -1,0 +1,202 @@
+{
+  "materia_oficial": "Ciències Generals",
+  "materia": "Ciències Generals",
+  "etapa": "Bachillerato",
+  "ciclo": "2º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Aplicar les diverses formes de raonament pròpies de la ciència i dur a terme investigacions experimentals i estudis observacionals utilitzant amb precisió material i instruments adequats per respondre a qüestions que esdevenen en l’entorn sobre processos físics, químics, biològics i geològics",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Aplicar principis, lleis i teories científiques vigents en l’explicació i la predicció del comportament dels fenòmens i components de l’entorn per adquirir una visió holística del funcionament de la naturalesa",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Argumentar sobre la importància d’incorporar hàbits saludables i sostenibles basats en els fonaments científics per adoptar-los i promoure’ls en el seu entorn.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Aplicar els coneixements i les diverses formes de raonament pròpies de la ciència, mantenint la ment oberta amb relació als procediments que segueix i als resultats que obté per resoldre problemes relacionats amb les ciències experimentals",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Justificar la contribució de la ciència, concebuda com un procés col·lectiu i interdisciplinari i en construcció contínua, a la societat i destacar la funció de les persones que s’hi dediquen, per avaluar-ne el paper essencial en el progrés de la humanitat.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Utilitzar recursos variats, de tipologia i format diversos, per buscar i seleccionar informació fiable i contrastada i establir col·laboracions aplicant el sentit crític i ètic.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Definir problemes investigables, formular hipòtesis i planificar de manera coherent processos de recerca d’acord amb les formes de raonament pròpies del pensament científic"
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Desenvolupar processos de recerca per verificar o descartar les hipòtesis formulades mb a un problema o fenomen científic investigable aplicant totes les mesures pròpies del treball experimental."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Processar la informació derivada d’una recerca mitjançant la construcció de taules, gràfics, models, simulacions, diagrames o altres formats i interpretar els fenòmens naturals que expressen aquests instruments."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "1",
+      "descripcion": "Comunicar els resultats d’una recerca mitjançant l’ús de recursos adequats i d’acord amb els principis ètics bàsics."
+    },
+    {
+      "codigo": "1.5",
+      "competencia": "1",
+      "descripcion": "Elaborar les conclusions d’una recerca posant de manifest la relació entre els resultats i el marc teòric en què s’interpreten. Per aconseguir una alfabetització científica bàsica, cada alumne o alumna ha de comprendre abans que res com és el modus operandi de tota la comunitat científica pel que fa a l’estudi dels fenòmens naturals i quines són les eines de què es disposa. Les metodologies científiques són procediments fonamentals de treball a la ciència. L’alumnat competent ha de desenvolupar les habilitats per observar, emetre hipòtesis i experimentar sobre fenòmens fisicoquímics i naturals, així com les que li permetin posar en comú amb la resta de la comunitat investigadora els resultats que obtingui. Així mateix, encara que l’alumnat no optés en el futur per dedicar-se a la ciència com a activitat professional, el desenvolupament d’aquesta competència li atorga algunes habilitats i destreses pròpies del pensament científic."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Aplicar el coneixement científic vigent en l’elaboració d’explicacions i prediccions del comportament dels fenòmens que es produeixen a la naturalesa."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Reconèixer, analitzar i interpretar els fenòmens fisicoquímics més rellevants fent servir les principals lleis físiques i químiques."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Reconèixer, analitzar i interpretar els elements i processos bàsics de la biosfera i la geosfera fent servir els fonaments científics vigents. El desenvolupament de la competència científica té com a base essencial comprendre els fenòmens observats de la naturalesa referits a processos, elements naturals de l’entorn, artefactes tecnològics, etc., i interpretar-los en vista dels principis, de les lleis i de les teories científiques bàsiques. Amb el desenvolupament d’aquesta competència específica també es contribueix a adquirir el pensament científic, clau per a la creació de nous coneixements fonamentats en els principis, les lleis i les teories de la ciència. A més, la mobilització de coneixement pràctic, és a dir, l’habilitat per trobar una aplicació directa als coneixements teòrics apresos, està en línia amb els principis de l’aprenentatge STEM, que pretén crear un aprenentatge global de les ciències com un tot integrat de disciplines interrelacionades entre si. L’alumnat que cursa aquesta matèria aprèn a relacionar conceptes, perquè hi troba un exemple clar dels coneixements, de les destreses i de les actituds que són la base per a una alfabetització científica general i que es presenten de manera conjunta, atès que la ciència és un conjunt de sabers dependents entre si."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Revisar i avaluar les pròpies idees en relació amb l’adopció d’un estil de vida compatible amb un model de desenvolupament sostenible."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Defensar i justificar, fent propostes d’acció coherents i utilitzant fonaments científics procedents de diferents disciplines, la importància del compromís personal i de l’adopció d’un estil de vida compatible amb un model de desenvolupament sostenible."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Revisar i avaluar les pròpies idees en relació amb l’adopció d’un estil de vida saludable (dieta equilibrada, rebuig al consum de drogues, exercici físic, higiene del son, postures adequades, etc.)."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "3",
+      "descripcion": "Defensar i justificar, fent propostes d’acció coherents i utilitzant fonaments derivats de la fisiologia humana, la importància d’adoptar i promoure hàbits saludables. Actualment, un dels reptes més grans i més importants a què s’enfronta la humanitat és la degradació mediambiental que posa en perill el desenvolupament econòmic i la societat de benestar. Una condició indispensable per abordar aquest desafiament és adoptar un model de desenvolupament sostenible. Per això, és essencial que la ciutadania comprengui la seva dependència del medi natural per així valorar la importància de la seva conservació i actuar de manera conseqüent i compromesa amb aquest objectiu. L’assoliment i el desenvolupament d’aquesta competència específica permetrà a l’alumnat, a través del coneixement del funcionament del seu propi organisme i dels ecosistemes, comprendre la relació entre la salut, la conservació del medi ambient i el desenvolupament econòmic i esdevenir així un ciutadà o ciutadana compromès i crític amb els problemes del nostre temps."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Aplicar els coneixements i les diverses formes de raonament pròpies de la ciència en la resolució de problemes relacionats amb fenòmens i processos físics, químics, biològics i geològics buscant estratègies alternatives de resolució quan sigui necessari."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Mantenir una ment oberta basant-se en l’anàlisi crítica de les solucions proposades per a problemes relacionats amb fenòmens i processos físics, químics, biològics i geològics reformulant, si s’escau, les estratègies seguides o les conclusions elaborades si així ho suggereixen les dades de què es disposa. El raonament és una eina essencial en la investigació científica, atès que és necessari en el plantejament d’hipòtesis o de noves estratègies que permetin continuar avançant davant de dificultats per assolir els objectius proposats. Així mateix, en certes disciplines científiques no és possible obtenir evidències directes dels processos o objectes d’estudi, per la qual cosa cal utilitzar el raonament lògic per poder connectar els resultats amb la realitat que reflecteixen. De la mateixa manera, és comú trobar escenaris de la vida quotidiana que requereixen l’ús de la lògica i el raonament. També cal destacar que la resolució de problemes és un procés complex en què es mobilitzen no només les destreses per al raonament, sinó també els coneixements sobre la matèria i actituds per afrontar els reptes de manera positiva. Per això, és imprescindible que l’alumnat desenvolupi aquesta competència específica, ja que li permetrà madurar intel·lectualment i millorar la resiliència per abordar amb èxit diferents tipus de situacions a què s’enfrontarà al llarg de la seva vida professional, social i personal."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Aportar arguments que evidenciïn que la ciència és una àrea de coneixement global formada per diferents disciplines relacionades entre si i dependents les unes de les altres."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Demostrar la rellevància de la ciència per al progrés de la societat, així com l’important paper que juguen homes i dones en la realització de la recerca científica com a activitat laboral. Actualment, un nombre important de persones es dediquen en la seva activitat laboral a la recerca científica i al desenvolupament tecnològic. No obstant això, i encara que la situació estigui millorant a poc a poc, la ciència no sempre gaudeix del reconeixement i la repercussió que es mereix i, de vegades, el valor de la contribució de la ciència a la millora i el progrés no és prou valorat, generalment per la manca d’informació fonamentada i per la difusió d’informació errònia. Lluitar per millorar aquesta situació i formar ciutadans amb una cultura científica rica i que cada vegada més homes i dones tinguin vocació per dedicar-se a activitats científiques, és fonamental per aconseguir el desenvolupament d’un món millor. A través d’aquesta competència específica, l’alumnat adquireix consciència sobre la rellevància que la ciència té a la societat actual. Així mateix, reconeix el caràcter interdisciplinari de la ciència, marcat per una clara interdependència entre les diferents disciplines de coneixement que enriqueix tota activitat científica i que es reflecteix en un desenvolupament holístic de la recerca i el treball en ciència."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Cercar, contrastar, seleccionar i combinar informació sobre fenòmens i processos físics, químics, biològics o geològics en diferents formats i utilitzant els recursos necessaris, tecnològics o no."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Establir col·laboracions utilitzant els recursos necessaris, tecnològics o no, en les diferents etapes del projecte científic, en la realització d’activitats o en la resolució de problemes relacionats amb fenòmens i processos físics, químics, biològics o geològics. La comunicació i la col·laboració són components inherents al procés d’avenç científic. Part d’aquest procés comunicatiu implica cercar i seleccionar informació científica publicada per fonts fidedignes, que ha de ser interpretada per respondre preguntes concretes i establir conclusions fonamentades. Per això, cal analitzar la informació obtinguda de manera crítica, tenint-ne en compte l’origen i diferenciant les fonts adequades d’aquelles menys fiables. La cooperació és un altre aspecte essencial de les metodologies científiques i té com a objectiu millorar l’eficiència del treball en unir els esforços de diverses persones mitjançant l’intercanvi d’informació, i aconseguir així un efecte sinèrgic. A més, desenvolupar aquesta competència específica és molt útil en altres entorns professionals no científics, així com en el context social i personal, com en l’aprenentatge al llarg de la vida o en l’exercici d’una ciutadania democràtica activa. La comunicació i la col·laboració impliquen el desplegament de destreses socials, sentit crític, respecte a la diversitat i, sovint, utilització eficient, ètica i responsable dels recursos tecnològics, per la qual cosa aquesta competència és essencial per al ple desenvolupament de l’alumnat com a ciutadà."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "1. Construint ciència",
+      "titulo": "Construint ciència",
+      "items": [
+        "Ús de les metodologies d’investigació científica per a la identificació i la formulació de preguntes i conjectures, l’elaboració d’hipòtesis i la verificació experimental d’aquestes en la resolució de problemes investigables.",
+        "Disseny i execució d’experiments i projectes de recerca experimental i estudis observacionals utilitzant instruments adequats, controls experimentals i raonament lògic i anàlisi dels resultats obtinguts en la resolució de problemes i qüestions científiques relacionades amb el medi ambient.",
+        "Reconeixement i ús de fonts fiables i mitjans de col·laboració per a la cerca d’informació científica en diferents formats i l’ús de les eines necessàries.",
+        "Interpretació i producció d’informació científica amb un llenguatge adequat per desenvolupar un criteri basat en l’evidència i el raonament.",
+        "Avaluació de la contribució dels científics i científiques a les principals fites de la ciència per al progrés i la millora de la societat."
+      ]
+    },
+    {
+      "codigo": "2",
+      "bloque": "2. Un univers de matèria i energia",
+      "titulo": "Un univers de matèria i energia",
+      "items": [
+        "Anàlisi de les propietats macroscòpiques dels sistemes materials i els estats d’agregació, així com els processos físics i químics de canvi usant models microscòpics.",
+        "Classificació dels sistemes materials segons la seva composició, aplicant-los a la descripció dels sistemes naturals i a la resolució de problemes relacionats.",
+        "Reconeixement de la importància històrica i actual de la taula periòdica, descrivint les regularitats que s’hi observen i la relació amb l’estructura interna de la matèria.",
+        "Estudi de la formació de compostos químics, interpretació de la seva formulació i nomenclatura com a base per a una alfabetització científica bàsica que permeti establir una comunicació eficient amb tota la comunitat científica.",
+        "Aplicació de les transformacions químiques dels sistemes materials i les lleis que els regeixen, en els processos industrials, ambientals i socials del món actual.",
+        "Resolució de problemes relacionats amb el consum d’energia i la necessitat de desenvolupament sostenible, en vista del teorema de conservació de l’energia mecànica i dels processos termodinàmics més rellevants, considerant l’anàlisi de l’energia continguda en un sistema, les seves propietats i les seves manifestacions."
+      ]
+    },
+    {
+      "codigo": "3",
+      "bloque": "3. El sistema Terra",
+      "titulo": "El sistema Terra",
+      "items": [
+        "Interpretació de les característiques dels astres del sistema solar relacionant-les amb els processos que van tenir lloc durant l’origen de l’Univers.",
+        "Discussió sobre la possibilitat de vida en altres planetes incorporant les hipòtesis de l’origen de la vida a la Terra.",
+        "Exemplificació de les relacions entre la comunitat d’organismes i les característiques de l’entorn dels sistemes naturals. El cas dels éssers vius en la formació del sòl.",
+        "Anàlisi de l’estructura i dinàmica de la geosfera, en vista de la tectònica de plaques i dels processos i riscos geològics que se’n deriven.",
+        "Anàlisi de les funcions i les dinàmiques de les capes fluides de la Terra, la seva interacció amb la superfície terrestre i els riscos geològics que se’n deriven.",
+        "Anàlisi de la classificació bàsica dels éssers vius i les seves adaptacions a les característiques físiques de l’entorn en què viuen.",
+        "Resolució de problemes sobre la dinàmica dels ecosistemes: fluxos d’energia, cicles de matèria i relacions tròfiques.",
+        "Investigació i reflexió sobre les causes i les conseqüències dels principals problemes ambientals del nostre temps (escalfament global, forat a la capa d’ozó, destrucció d’espais naturals, pèrdua de biodiversitat, etc.) i formulació de propostes d’acció.",
+        "Argumentació i defensa de la importància de l’ús dels recursos renovables davant dels no renovables, de la seva explotació responsable, de les energies renovables, de la gestió de residus i de l’economia circular en el context de construcció d’un model de desenvolupament alineat amb els objectius de desenvolupament sostenible.",
+        "Anàlisi de les relacions entre la conservació del medi ambient, la salut humana i el desenvolupament econòmic de la societat des de la perspectiva dels objectius de desenvolupament sostenible.",
+        "Estudi de cas d’una pandèmia: causes, prevenció i tractament de les malalties infeccioses i no infeccioses més rellevants, amb especial incidència en el mecanisme i la importància de les vacunes i l’ús adequat d’antibiòtics."
+      ]
+    },
+    {
+      "codigo": "4",
+      "bloque": "4. Biologia per al segle XXI",
+      "titulo": "Biologia per al segle XXI",
+      "items": [
+        "Diferenciació de les principals biomolècules sobre la base de la seva estructura bàsica i de les funcions que exerceixen en els éssers vius.",
+        "Anàlisi i diferenciació dels processos implicats en l’expressió de la informació genètica i la seva relació amb l’expressió d’un caràcter, destacant la importància central del codi genètic.",
+        "Anàlisi del procediment i de la valoració de les implicacions socials i ètiques de l’ús de les tècniques d’enginyeria genètica més rellevants (PCR, enzims de restricció, clonació molecular o CRISPR-CAS9) de les teràpies gèniques, del trasplantament de cèl·lules mare i altres tecnologies biomèdiques aplicades a la salut humana i a altres camps de la recerca i la producció.",
+        "Aplicació d’estratègies per a la resolució de problemes d’herència mendeliana, d’un i dos caràcters simultàniament i dels caràcters que es transmeten lligats a la determinació del sexe genètic mitjançant l’anàlisi de les probabilitats d’herència d’al·lels o manifestació de fenotips."
+      ]
+    },
+    {
+      "codigo": "5",
+      "bloque": "5. Les forces que ens fan moure",
+      "titulo": "Les forces que ens fan moure",
+      "items": [
+        "Aplicació de les forces fonamentals de la natura en la descripció dels processos físics més rellevants del medi natural, com són els fenòmens electromagnètics, el moviment de planetes o els processos nuclears.",
+        "Anàlisi d’estructures en relació amb la física, la biologia, la geologia o l’enginyeria fent servir les lleis de l’estàtica.",
+        "Anàlisi i interpretació del moviment d’un objecte a partir de les lleis de la mecànica, com a base per explicar el comportament d’un objecte en moviment i les seves aplicacions, per exemple, en seguretat viària o desenvolupament tecnològic."
+      ]
+    }
+  ],
+  "comunidad": "cataluna",
+  "idioma": "ca"
+}

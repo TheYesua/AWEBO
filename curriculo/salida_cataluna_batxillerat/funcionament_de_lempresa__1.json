@@ -1,0 +1,31 @@
+{
+  "materia_oficial": "Funcionament de l’Empresa",
+  "materia": "Funcionament de l’Empresa",
+  "etapa": "Bachillerato",
+  "ciclo": "1º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Adquirir una visió general de l’activitat empresarial com a generadora de benestar, treball i riquesa en la societat, planificant i gestionant les activitats a portar terme i prenent les decisions oportunes per arribar a un objectiu concret.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Utilitzar determinades estratègies metodològiques empresarials mitjançant activitats ordenades i relacionades entre si i enfocades cap a un propòsit de progrés econòmic i social.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Identificar i analitzar les principals àrees funcionals de l’empresa, la funció que desenvolupen i les seves interrelacions, utilitzant la recerca i desenvolupant la iniciativa personal i col·lectiva en la gestió empresarial.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [],
+  "saberes_basicos": [],
+  "comunidad": "cataluna",
+  "idioma": "ca"
+}

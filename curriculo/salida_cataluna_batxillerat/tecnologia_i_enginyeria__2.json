@@ -1,0 +1,184 @@
+{
+  "materia_oficial": "Tecnologia i Enginyeria",
+  "materia": "Tecnologia i Enginyeria",
+  "etapa": "Bachillerato",
+  "ciclo": "2º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Analitzar, coordinar i dissenyar projectes de recerca amb una actitud crítica i emprenedora, ideant i implementant estratègies i tècniques sostenibles i eficients de resolució de problemes, tot comunicant els resultats de manera ordenada i raonada, per crear i millorar productes i sistemes de manera continuada.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Comparar i seleccionar materials, aplicant criteris tècnics i sostenibles, per fabricar productes de qualitat i elaborar estudis d’impacte que aportin respostes a problemes o a situacions plantejades amb un enfocament ètic i ecosocialment responsable.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Seleccionar, utilitzar i configurar les eines digitals necessàries, aplicant coneixements interdisciplinaris, per resoldre tasques i comunicar els resultats de manera ordenada i precisa, amb l’ús acurat del llenguatge gràfic i la terminologia tècnica adequada.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Construir nous coneixements i millorar les destreses tècniques, aplicant i transferint sabers d’altres disciplines amb una actitud creativa, per calcular, mesurar i resoldre problemes o aportar respostes a diferents necessitats pròpies dels àmbits de l’enginyeria.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Dissenyar, crear i avaluar sistemes tecnològics aplicant coneixements de la regulació automàtica, del control programat i de les possibilitats que ofereixen les tecnologies emergents, per estudiar, controlar i automatitzar tasques en sistemes tecnològics i robòtics.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Identificar i analitzar els diferents sistemes tecnològics dels àmbits de l’enginyeria, estudiant i comparant les seves característiques, tot valorant l’ús de l’energia i l’eficiència energètica per avaluar i valorar l’ús sostenible i ecosocialment responsable que es fa de la tecnologia.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Desenvolupar projectes de recerca i innovació amb la finalitat de crear i millorar productes de manera continuada i sostenible, utilitzant models de gestió cooperatius i flexibles."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Comunicar, argumentar i difondre de manera clara, ordenada i comprensible el projecte elaborat, presentant la documentació tècnica tot utilitzant aplicacions digitals."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Perseverar en la consecució d’objectius en situacions d’incertesa, identificant i gestionant emocions, acceptant i aprenent de la crítica raonada i fent servir l’error com a part del procés d’aprenentatge."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Analitzar i valorar la idoneïtat dels materials tècnics en la fabricació de productes sostenibles i de qualitat, tot estudiant l’estructura interna, les propietats i els tractaments de modificació i millora de les seves propietats."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Elaborar, argumentar i difondre informes tècnics d’avaluació de l’impacte ambiental que valori les repercussions que es poden derivar de la implementació d’un projecte tècnic."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Resoldre els problemes associats a les diferents fases del desenvolupament i de la gestió d’un projecte tècnic (disseny, simulació, muntatge i presentació), utilitzant les eines i les aplicacions digitals adients."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Calcular, simular i experimentar amb estructures senzilles, analitzant i valorant els tipus de càrregues a les quals es puguin veure sotmeses, tot avaluant-ne els esforços i l’estabilitat."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Analitzar i comparar les diferents màquines tèrmiques: màquines frigorífiques, bombes de calor i motors tèrmics, diferenciant-ne i interpretant-ne el funcionament i duent a terme els càlculs essencials per poder-ne determinar l’eficiència."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Interpretar, dissenyar, simular o construir circuits pneumàtics d’automatització, relacionant cadascun dels elements del circuit en el funcionament del sistema."
+    },
+    {
+      "codigo": "4.4",
+      "competencia": "4",
+      "descripcion": "Interpretar, dissenyar i simular circuits oleohidràulics, relacionant cadascun dels elements del circuit amb el funcionament del sistema."
+    },
+    {
+      "codigo": "4.5",
+      "competencia": "4",
+      "descripcion": "Experimentar i dissenyar circuits combinacionals i seqüencials físics i simulats aplicant fonaments de l’electrònica digital i explicant-ne el funcionament en el disseny de solucions tecnològiques."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Interpretar, simular i experimentar el funcionament dels processos tecnològics basats en sistemes automàtics de llaç obert i llaç tancat, aplicant tècniques de simplificació i analitzant-ne l’estabilitat."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Analitzar les diferents instal·lacions d’un habitatge des del punt de vista de l’eficiència energètica, cercant aquelles opcions més compromeses amb la sostenibilitat i aplicant solucions basades en baixos requeriments energètics i energies renovables."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "1. Projectes de recerca i desenvolupament",
+      "titulo": "Projectes de recerca i desenvolupament",
+      "items": [
+        "Gestió i desenvolupament de projectes amb l’aplicació de diferents tècniques i estratègies de treball en equip. Metodologies Agile. Tipus, característiques i aplicacions a partir d’exemples de l’entorn proper.",
+        "Difusió i comunicació de documentació tècnica. Elaboració, referenciació i presentació en el context escolar.",
+        "Autoconfiança i iniciativa. Identificació i gestió d’emocions. L’error i la reavaluació com a part del procés d’aprenentatge en casos propers a l’alumnat.",
+        "Desenvolupament de l’autoconfiança i de la iniciativa. Identificació i gestió de les emocions, valorant l’error i la reavaluació com una part del procés d’aprenentatge.",
+        "Emprenedoria, resiliència, perseverança i creativitat per abordar problemes des d’una perspectiva interdisciplinària a partir de casos reals.",
+        "Resolució de tasques i projectes amb una actitud emprenedora, resilient, perseverant i creativa per abordar problemes des d’una perspectiva interdisciplinària."
+      ]
+    },
+    {
+      "codigo": "2",
+      "bloque": "2. Materials i fabricació",
+      "titulo": "Materials i fabricació",
+      "items": [
+        "Estructura interna. Propietats i procediments d’assaig a partir d’exemples de diferents materials.",
+        "Anàlisi de l’estructura interna dels materials. Determinació de les propietats i dels procediments d’assaig de materials.",
+        "Tècniques de disseny i tractaments de modificació i millora de les propietats i sostenibilitat. Tècniques de fabricació industrial a partir d’exemples propers i rellevants.",
+        "Descripció de les tècniques de disseny i dels tractaments de modificació i millora de les propietats dels materials i de la sostenibilitat. Tècniques de fabricació industrial a partir de casos rellevants."
+      ]
+    },
+    {
+      "codigo": "3",
+      "bloque": "3. Sistemes mecànics",
+      "titulo": "Sistemes mecànics",
+      "items": [
+        "Estructures senzilles. Tipus de càrregues, estabilitat i càlculs bàsics a partir d’exemples propers.",
+        "Anàlisi d’estructures senzilles. Identificació dels tipus de càrregues, determinació de l’estabilitat i realització de càlculs bàsics. Simulació i experimentació d’exemples senzills.",
+        "Màquines tèrmiques: màquina frigorífica, bomba de calor i motors tèrmics. Càlculs bàsics i aplicacions a l’entorn proper.",
+        "Caracterització de les màquines tèrmiques: màquina frigorífica, bomba de calor i motors tèrmics. Realització de càlculs bàsics, simulacions i aplicacions.",
+        "Pneumàtica i hidràulica: components i principis físics. Descripció i anàlisi. Esquemes característics d’aplicació. Disseny i muntatge físic o simulat a partir de casos reals.",
+        "Descripció i anàlisi dels automatismes pneumàtics i electropneumàtics: components i principis físics. Interpretació i representació d’esquemes característics d’aplicació.",
+        "Disseny, simulació i muntatge de circuits pneumàtics i electropneumàtics.",
+        "Descripció i anàlisi de circuits oleohidràulics: components i principis físics. Interpretació i representació d’esquemes característics d’aplicació."
+      ]
+    },
+    {
+      "codigo": "4",
+      "bloque": "4. Sistemes elèctrics i electrònics",
+      "titulo": "Sistemes elèctrics i electrònics",
+      "items": [
+        "Circuits de corrent altern. Triangle de potències. Càlcul, muntatge o simulació.",
+        "Anàlisi, càlcul i muntatge o simulació de circuits de corrent altern. Càlcul de potències i determinació del triangle de potències.",
+        "Electrònica digital combinacional. Disseny i simplificació. Experimentació en simuladors.",
+        "Disseny, representació i aplicació de circuits d’electrònica digital combinacional.",
+        "Aplicació de l’àlgebra de Boole i simplificació d’expressions i circuits. Simulació i experimentació de circuits, a partir de casos reals.",
+        "Electrònica digital seqüencial. Experimentació en simuladors.",
+        "Disseny, representació i aplicació de circuits d’electrònica digital seqüencial. Simulació i experimentació de circuits."
+      ]
+    },
+    {
+      "codigo": "5",
+      "bloque": "5. Automatització",
+      "titulo": "Automatització",
+      "items": [
+        "Àlgebra de blocs i simplificació de sistemes. Estabilitat. Experimentació en simuladors.",
+        "Anàlisi de sistemes de control i de les seves aplicacions. Identificació i representació de blocs de control. Determinació dels paràmetres d’un sistema de control i de la seva estabilitat. Experimentació o simulació."
+      ]
+    },
+    {
+      "codigo": "6",
+      "bloque": "6. Tecnologia sostenible",
+      "titulo": "Tecnologia sostenible",
+      "items": [
+        "Impacte social i ambiental. Informes d’avaluació. Valoració crítica de la sostenibilitat en l’ús de la tecnologia, a partir de casos reals.",
+        "Determinació dels impactes social i ambiental d’un projecte tecnològic. Elaboració d’informes d’avaluació de l’impacte. Valoració crítica de la sostenibilitat en l’ús de la tecnologia."
+      ]
+    }
+  ],
+  "comunidad": "cataluna",
+  "idioma": "ca"
+}

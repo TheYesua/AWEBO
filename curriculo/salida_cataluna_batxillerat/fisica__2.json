@@ -1,0 +1,176 @@
+{
+  "materia_oficial": "Física",
+  "materia": "Física",
+  "etapa": "Bachillerato",
+  "ciclo": "2º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Analitzar fenòmens i resoldre problemes basats en situacions properes mitjançant l’ús de les teories, principis i lleis de la física, atenent-ne la base experimental, la descripció teòrica i el desenvolupament matemàtic, per evidenciar-ne la implicació en el desenvolupament de la tecnologia, l’economia, la societat i la sostenibilitat ambiental.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Analitzar l’entorn proper i predir-ne l’evolució a partir dels models, les teories i les lleis de la física mitjançant la formulació de preguntes investigables, la indagació i la cerca d’evidències per proposar solucions generals a problemes quotidians relacionats amb les aplicacions pràctiques de la física en els camps tecnològic, industrial i biosanitari.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Utilitzar amb propietat, correcció i fluïdesa, als diferents registres de comunicació de la ciència, el llenguatge de la física amb la formulació matemàtica dels seus principis, magnituds, unitats de mesura, i altres continguts, per evidenciar la necessitat d’establir una eina de comunicació entre comunitats científiques i en la investigació.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Seleccionar i avaluar críticament la informació i els recursos, en diferents formats i plataformes, tant al treball individual com al col·lectiu, per crear continguts científics i divulgatius relacionats amb la física, i argumentar el seu paper a la societat.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Aplicar tècniques de treball i indagació pròpies de la física (com l’experimentació en entorns reals o virtuals i el raonament logicomatemàtic), de forma individual o en entorns col·laboratius similars als de la comunitat científica, per reconèixer el paper de la física i predir-ne la influència dels avenços en una societat basada en valors ètics i sostenibles.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Justificar el caràcter multidisciplinari de la física i la seva contribució històrica a l’avenç del coneixement científic, per actuar com a agents crítics en l’anàlisi i la difusió de la informació i per promoure una societat igualitària, saludable i sostenible.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Reconèixer la rellevància i les aportacions de la física en el desenvolupament de la ciència, la tecnologia, l’economia, la societat i la sostenibilitat ambiental, emprant adequadament els fonaments científics relatius a aquests àmbits."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Resoldre problemes plantejats a partir de situacions quotidianes de manera experimental i analítica, fent servir principis, lleis i teories de la física. Utilitzar els principis, les lleis i les teories de la física requereix un ampli coneixement dels seus fonaments teòrics. La capacitat de comprendre i descriure, mitjançant l’experimentació o l’ús de desenvolupaments matemàtics, les interaccions que es produeixen entre cossos i sistemes a la naturalesa, permet, alhora, desenvolupar el pensament científic per construir nou coneixement aplicat a la resolució de problemes en els diferents contextos en què intervé la física. Això implica apreciar la física com un camp del saber amb importants implicacions en la tecnologia, l’economia, la societat i la sostenibilitat ambiental. D’aquesta manera, a partir de la comprensió de les implicacions de la física en altres camps de la vida quotidiana, s’adquireix la capacitat de formar-se una opinió fonamentada sobre les situacions que afecten cada context, la qual cosa és necessària per desenvolupar un pensament crític i una actitud de contribuir al progrés a través del coneixement científic adquirit, aportant solucions sostenibles."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Analitzar i comprendre l’evolució dels sistemes naturals, utilitzant models, lleis i teories de la física."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Inferir solucions generals a problemes generals a partir de l’anàlisi de situacions particulars i les variables de què depenen."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Utilitzar els models, les lleis i les teories de la física per analitzar i comprendre el funcionament general d’aplicacions pràctiques i productes útils per a la societat en els camps tecnològic, industrial i biosanitari. L’estudi de la física, com a ciència de la naturalesa, ha de generar la capacitat per analitzar fenòmens que es produeixen a l’entorn natural més proper. Per a això, cal adoptar els models, les teories i les lleis que formen els pilars fonamentals d’aquest camp de coneixement, i que alhora permeten predir l’evolució dels sistemes i els objectes naturals. Al mateix temps, aquesta adopció es dona quan es desenvolupa la capacitat de relacionar els fenòmens observats en situacions quotidianes amb els fonaments i principis de la física. Així, a partir de l’anàlisi de diverses situacions particulars s’adquireix la capacitat d’inferir solucions generals als problemes quotidians, que poden redundar en aplicacions pràctiques necessàries per a la societat i que donaran lloc a productes i beneficis a través del seu desenvolupament des dels camps tecnològic, industrial o biosanitari."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Aplicar els principis, les lleis i les teories científiques en l’anàlisi crítica de processos físics de l’entorn, com els observats i els publicats en diferents mitjans de comunicació, analitzant, comprenent i explicant de manera argumentada les causes que els produeixen."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Utilitzar de manera rigorosa les unitats de les variables físiques expressades en el sistema internacional d’unitats (SI) i altres sistemes d’unitats rellevants, emprant-ne correctament la notació i les equivalències, i elaborar i interpretar adequadament gràfics que relacionin variables físiques, reconeixent el seu paper com a eina de comunicació efectiva entre la comunitat científica."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Expressar de manera adequada els resultats, argumentant les solucions obtingudes, en la resolució d’exercicis i problemes definits a partir de situacions basades en contextos realistes o ideals. El desenvolupament d’aquesta competència específica pretén traslladar als estudiants un conjunt de criteris per a l’ús de formalismes amb base científica, amb la finalitat de plantejar i discutir adequadament la resolució de problemes de física i les seves aplicacions al món que els envolta. A més, es pretén que els estudiants valorin la universalitat del llenguatge matemàtic i la seva formulació com a eina per intercanviar plantejaments físics i les seves resolucions a diferents entorns de comunicació. Introduir l’alumnat en la participació col·laborativa entre la comunitat científica requereix un codi específic, rigorós i comú que asseguri la claredat dels missatges que s’intercanvien entre els seus membres."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Consultar, elaborar i intercanviar materials científics i divulgatius en diferents formats amb altres membres de l’entorn d’aprenentatge, utilitzant plataformes digitals de manera autònoma i eficient."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Utilitzar mitjans de comunicació digitals i tradicionals de manera crítica, ètica i responsable, per enriquir l’aprenentatge i el treball individual i el col·lectiu i per reconèixer la presència de la física a la societat. Entre les capacitats que cal adquirir en els nous contextos d’ensenyament-aprenentatge actuals hi ha l’ús de plataformes i entorns virtuals d’aprenentatge. Aquestes plataformes serveixen de repositori de recursos i materials de diferents tipus i en diferents formats; són útils per a l’aprenentatge de la física, i serveixen com mitjans per a l’aprenentatge individual i social. Cal desenvolupar la capacitat d’utilitzar aquests recursos de manera autònoma i eficient per facilitar l’aprenentatge autoregulat i al mateix temps per ser responsable en les interaccions amb altres estudiants i amb el professorat. Alhora, la producció i l’intercanvi de materials científics i divulgatius permeten apropar la física de manera creativa a la societat, presentant-la com un camp de coneixements accessible."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Obtenir relacions entre variables físiques, mesurant i tractant les dades experimentals, determinant-ne els errors i utilitzant sistemes de representació gràfica en entorns analògics o digitals."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Reproduir en laboratoris reals o virtuals determinats processos físics modificant les variables que els condicionen, considerant les lleis, les teories o els principis implicats, generant l’informe corresponent amb el format adequat i incloent-hi argumentacions, conclusions, taules de dades, gràfics i referències bibliogràfiques."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "5",
+      "descripcion": "Valorar les aportacions de la física a la societat, debatent de manera fonamentada sobre el seu impacte des del punt de vista de l’ètica i de la sostenibilitat, i reflexionant sobre les causes i les conseqüències dels biaixos de gènere en les ciències. Les ciències de la naturalesa tenen un caràcter experimental intrínsec. Un dels principals objectius de qualsevol d’aquestes disciplines científiques és l’explicació dels fenòmens naturals, cosa que permet formular teories i lleis per a la seva aplicació a diferents sistemes. El cas de la física no és diferent; és rellevant traslladar als alumnes la curiositat pels fenòmens que succeeixen al seu entorn i en diferents escales. Hi ha processos físics quotidians que són reproduïbles fàcilment i que poden ser explicats i descrits a partir de principis i lleis de la física. També hi ha processos que, encara que no siguin reproduïbles, estan presents a l’entorn natural de manera generalitzada i que, gràcies als laboratoris virtuals, es poden simular per estudiar-los més fàcilment. El treball experimental constitueix en un conjunt d’etapes que fomenten la col·laboració i l’intercanvi d’informació, molt necessaris en els camps d’investigació actuals. Per això, cal fomentar l’experimentació i l’estimació dels errors, la utilització de diferents fonts documentals en diversos idiomes, i l’ús amb destresa i rigor dels recursos tecnològics disponibles. Finalment, cal plasmar la informació en informes que recullin tot aquest procés."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Identificar els principals avenços científics relacionats amb la física que han contribuït a les lleis i teories acceptades actualment en el conjunt de les disciplines científiques, com les fases per a la comprensió de les metodologies de la ciència, la seva evolució constant i la seva universalitat."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Reconèixer el caràcter multidisciplinari de la ciència i les contribucions d’unes disciplines sobre les altres, establint relacions entre la física i altres disciplines com la química, la biologia o les matemàtiques, a partir de propostes d’aprenentatge contextualitzades i realistes. La física és una ciència que està profundament implicada en diferents àmbits de les nostres vides quotidianes i que, per tant, forma part del desenvolupament científic, tecnològic i industrial. L’aplicació adequada dels principis i lleis de la física permet la resolució de diversos problemes basats en els mateixos coneixements; la possibilitat d’aplicar, en situacions diferents, alguns plantejaments similars als estudiats mostra la universalitat de la ciència. Els coneixements i les aplicacions de la física, juntament amb els d’altres ciències com les matemàtiques o la tecnologia, formen un sistema simbiòtic en què les aportacions de cada àmbit de coneixement proporcionen un benefici conjunt. La necessitat de formalitzar experiments per verificar els estudis implica un incentiu en el desenvolupament tecnològic, i, viceversa, el progrés de la tecnologia il·lumina nous descobriments que necessiten explicació mitjançant les ciències bàsiques, com la física. La col·laboració entre diferents comunitats científiques expertes en diferents disciplines és imprescindible en tot aquest desenvolupament."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "1. Camp gravitatori",
+      "titulo": "Camp gravitatori",
+      "items": [
+        "Determinació, a través del càlcul vectorial, del camp gravitatori produït per un sistema de masses. Efectes sobre les variables cinemàtiques i dinàmiques d’objectes immersos al camp.",
+        "Moment angular d’un objecte en un camp gravitatori: càlcul, relació amb les forces centrals i aplicació de la conservació en l’estudi del moviment.",
+        "Energia mecànica d’un objecte sotmès a un camp gravitatori: deducció del tipus de moviment, i càlcul del treball o dels balanços energètics existents en desplaçaments entre diferents posicions, velocitats i tipus de trajectòries.",
+        "Lleis que es verifiquen en el moviment planetari i extrapolació al moviment de satèl·lits i cossos celestes.",
+        "Introducció a la cosmologia i l’astrofísica com a aplicacions del camp gravitatori: evolució històrica de les teories cosmològiques; implicació de la física en l’evolució d’objectes astronòmics i en el coneixement de l’univers, i repercussió de la recerca en aquests àmbits a la indústria, la tecnologia, l’economia i la societat."
+      ]
+    },
+    {
+      "codigo": "2",
+      "bloque": "2. Camp electromagnètic",
+      "titulo": "Camp electromagnètic",
+      "items": [
+        "Camps elèctric i magnètic: tractament vectorial i determinació de les variables cinemàtiques i dinàmiques de càrregues elèctriques lliures en presència d’aquests camps.",
+        "Descripció i anàlisi dels fenòmens naturals i de les aplicacions tecnològiques en què s’aprecien aquests efectes.",
+        "Càlcul i anàlisi qualitativa de la intensitat del camp elèctric en distribucions de càrregues discretes i contínues i interpretació del flux de camp elèctric.",
+        "Càlcul i anàlisi qualitativa de l’energia d’una distribució de càrregues estàtiques. Descripció raonada de les magnituds que es modifiquen o que romanen constants amb el desplaçament de càrregues lliures entre punts de potencial elèctric diferent.",
+        "Descripció qualitativa i càlcul de les intensitats dels camps magnètics generats per fils amb corrent elèctric en diferents configuracions geomètriques: rectilinis, espires, solenoides o tors.",
+        "Anàlisi dels efectes de la interacció dels camps magnètics amb càrregues elèctriques lliures presents al seu entorn.",
+        "Representació gràfica i anàlisi de les línies del camp elèctric i magnètic produït per distribucions de càrrega senzilles, imants i fils amb corrent elèctric en diferents configuracions geomètriques.",
+        "Generació de la força electromotriu: anàlisi del funcionament de motors, generadors i transformadors a partir de sistemes en què es produeix una variació del flux magnètic."
+      ]
+    },
+    {
+      "codigo": "3",
+      "bloque": "3. Vibracions i ones",
+      "titulo": "Vibracions i ones",
+      "items": [
+        "Estudi del moviment oscil·latori: obtenció i descripció de l’evolució temporal de les variables cinemàtiques d’un cos oscil·lant i conservació d’energia en aquests sistemes.",
+        "Moviment ondulatori: anàlisi i obtenció dels gràfics d’oscil·lació en funció de la posició i del temps, de l’equació d’ona que el descriu i de la relació amb el moviment harmònic simple.",
+        "Estudi dels diferents tipus de moviments ondulatoris a la natura.",
+        "Fenòmens ondulatoris: situacions i contextos naturals en què es posen de manifest diferents fenòmens ondulatoris; aplicacions. Característiques principals de les ones sonores.",
+        "Contextualització en situacions quotidianes (instruments musicals, oïda humana, generació de la veu i ecolocalització, entre d’altres).",
+        "Descripció de la naturalesa de la llum a partir de les controvèrsies i els debats històrics.",
+        "La llum visible com a exemple d’ona electromagnètica. L’espectre electromagnètic i les propietats i aplicacions dels diversos tipus d’ones electromagnètiques.",
+        "Anàlisi del comportament de la llum i la formació d’imatges en medis i objectes amb un índex de refracció diferent.",
+        "Estudi de la generació d’imatges en sistemes òptics: lents primes i miralls plans o corbs; aplicacions corresponents."
+      ]
+    },
+    {
+      "codigo": "4",
+      "bloque": "4. Física relativista, quàntica, nuclear i de partícules",
+      "titulo": "Física relativista, quàntica, nuclear i de partícules",
+      "items": [
+        "Limitacions de la física clàssica. Descripció i aplicació dels principis de la relativitat, de la física quàntica i de la física de partícules a l’estudi de les principals partícules involucrades en la física atòmica i nuclear: propietats i interaccions. Implicacions de la dualitat ona- corpuscle i del principi d’incertesa. Valoració del desenvolupament científic i tecnològic possible gràcies a la física quàntica.",
+        "Estudi qualitatiu i quantitatiu de l’efecte fotoelèctric com a sistema de transformació energètica i de producció de diferències de potencial elèctric per aplicar-lo tecnològicament.",
+        "Estudi de la radioactivitat natural: descripció de les constants i els processos implicats que permeten els càlculs de la variació poblacional i l’activitat de mostres radioactives. Aplicació als camps de les ciències i la salut."
+      ]
+    }
+  ],
+  "comunidad": "cataluna",
+  "idioma": "ca"
+}

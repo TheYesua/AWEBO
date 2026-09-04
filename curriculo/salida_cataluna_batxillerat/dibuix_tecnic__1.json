@@ -1,0 +1,127 @@
+{
+  "materia_oficial": "Dibuix Tècnic",
+  "materia": "Dibuix Tècnic",
+  "etapa": "Bachillerato",
+  "ciclo": "1º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Examinar elements i formes de l’entorn que permetin fer evidents conceptes propis de la geometria plana i projectiva, per analitzar de forma raonada les estructures geomètriques i els elements tècnics implícits.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Analitzar formes i traçats d’acord amb els principis propis del llenguatge de la geometria plana, per decidir els procediments idonis que permetin traçar-los gràficament amb precisió i de forma raonada.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Avaluar i decidir els procediments més adequats, fent ús de la geometria plana i descriptiva, així com de les convencions pròpies de la normalització de forma apropiada, per crear i concretar formes bidimensionals i tridimensionals.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Dissenyar i reelaborar formes bidimensionals i tridimensionals, valorant la importància del croquis a mà alçada, per representar-les amb precisió en projectes gràfics col·laboratius que permetin proposar, criticar, revisar, comparar, fer hipòtesis i traçar de forma consensuada i eficaç, fent ús de les eines digitals disponibles.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Analitzar, al llarg de la història, la relació entre les matemàtiques i el dibuix geomètric valorant-ne la importància en diferents camps com l’arquitectura o l’enginyeria. El dibuix tècnic ha ocupat i ocupa un lloc important a la cultura; aquesta disciplina és present a les obres d’arquitectura i d’enginyeria de tots els temps, no només pel paper que exerceix en la seva concepció i producció, sinó també com a part de la seva expressió artística. L’anàlisi i l’estudi fonamental de les estructures i els elements geomètrics d’obres del passat i del present contribuirà al procés d’apreciació i disseny d’objectes i espais que tinguin rigor tècnic i sensibilitat expressiva."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Solucionar gràficament càlculs matemàtics i transformacions bàsiques aplicant conceptes i propietats de la geometria plana."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Traçar gràficament construccions poligonals basant-se en les seves propietats i mostrant interès per la precisió, la claredat i la neteja."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Resoldre gràficament tangències i traçar corbes aplicant-ne les propietats amb una actitud de rigor en la seva execució. Aquesta competència aborda l’estudi de la geometria plana aplicada al dibuix arquitectònic i enginyer per mitjà de conceptes, propietats, relacions i construccions fonamentals. Proporciona eines per a la resolució de problemes matemàtics de certa complexitat de manera gràfica, aplicant mètodes inductius i deductius amb rigor i valorant aspectes com la precisió i la qualitat pràctica."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Representar en sistema dièdric directe els elements bàsics a l’espai i determinar-ne la relació de pertinença, posició i distància."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Definir en sistemes axonomètrics elements i figures planes valorant-ne la importància com a mètodes de representació espacial."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Dibuixar elements a l’espai fent servir la perspectiva cònica. Els sistemes de representació derivats de la geometria descriptiva són necessaris en tots els processos constructius, ja que qualsevol procés projectual requereix el coneixement dels mètodes que permetin determinar, a partir de la seva representació, les magnituds, les formes i les relacions espacials entre si. Aquesta competència es vincula, d’una banda, amb la capacitat per representar figures planes i cossos i, de l’altra, amb la capacitat d’expressar i calcular les solucions a problemes geomètrics a l’espai, aplicant-hi coneixements tècnics específics i reflexionant sobre el procés realitzat i el resultat obtingut."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Documentar gràficament objectes senzills mitjançant les vistes acotades aplicant la normativa UNE ISO en la utilització de sintaxi, escales i formats, valorant la importància d’usar un llenguatge tècnic comú."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Crear figures planes i tridimensionals mitjançant programes de dibuix vectorial, fent ús de les eines que aporten i les tècniques associades."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Recrear virtualment peces en tres dimensions per a la presentació de projectes en grup. El dibuix és el principal vehicle de comunicació entre els diferents agents del procés constructiu, que possibilita des d’una primera expressió de possibles solucions mitjançant esbossos i croquis fins a la formalització final per mitjà de plànols de taller i/o de construcció. Les solucions gràfiques que aporten els sistemes CAD formen part d’una realitat ja quotidiana en els processos de creació de projectes d’enginyeria o d’arquitectura. Atenent aquesta realitat, aquesta competència aporta una base formativa sobre els processos, els mecanismes i les possibilitats que ofereixen les eines digitals en aquesta disciplina, i es considera una iniciació a l’ús i l’aprofitament de les seves potencialitats de manera transversal als sabers de la matèria aplicats a representacions al pla i a l’espai. Aquesta competència també recull la relació amb altres components mitjançant l’elaboració de plans de muntatge senzills. Aquesta competència específica està associada a funcions instrumentals d’anàlisi, expressió i comunicació. D’altra banda, i perquè la comunicació entre els diferents agents sigui efectiva, cal vincular- se necessàriament al coneixement d’unes normes i simbologia establertes, les normes UNE i ISO, i iniciar-se en la documentació gràfica de projectes tècnics."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "1. Fonaments geomètrics",
+      "titulo": "Fonaments geomètrics",
+      "items": [
+        "Comprensió i anàlisi de la presència de la geometria i el desenvolupament del dibuix tècnic aplicat als àmbits de l’arquitectura i l’urbanisme, el disseny industrial, l’electrònica, la geologia, valorant la necessitat de la qualitat gràfica i precisió en els traçats.",
+        "Identificació i traçat dels llocs geomètrics fonamentals incloent-hi l’arc capaç, aplicant-los amb criteri a les construccions fonamentals.",
+        "Comparació i traçat de formes poligonals aplicant amb criteri les relacions de proporcionalitat i semblança, així com d’equivalència.",
+        "Traçat dels polígons, concretament de triangles, quadrilàters i polígons regulars, aplicant amb criteri mètodes de construcció i propietats pròpies.",
+        "Anàlisi i traçat de tangències bàsiques i corbes tècniques aplicant amb criteri mètodes de construcció propis."
+      ]
+    },
+    {
+      "codigo": "2",
+      "bloque": "2. Geometria projectiva",
+      "titulo": "Geometria projectiva",
+      "items": [
+        "Comprensió i anàlisi dels sistemes de representació atenent els fonaments de la geometria projectiva.",
+        "Anàlisi i traçat en sistema dièdric directe de punt, recta i pla atenent les condicions de pertinença i les diferents possibilitats de determinació del pla.",
+        "Anàlisi i traçat de les relacions entre elements, intersecció, paral·lelisme i perpendicularitat, en sistema dièdric directe.",
+        "Anàlisi dels sistemes axonomètrics ortogonals i oblics atenent el càlcul dels diferents coeficients de reducció.",
+        "Anàlisi i traçat de sòlids polièdrics fent ús dels sistemes axonomètrics normalitzats.",
+        "Anàlisi i valoració del sistema de plans acotats aplicat al traçat d’elements fonamentals i la interpretació en representacions topogràfiques.",
+        "Anàlisi i traçat dels fonaments del sistema cònic frontal i oblic atenent els seus elements fonamentals."
+      ]
+    },
+    {
+      "codigo": "3",
+      "bloque": "3. Documentació gràfica de projectes: normalització i DAO",
+      "titulo": "Documentació gràfica de projectes: normalització i DAO",
+      "items": [
+        "Ús i traçat d’escales numèriques i gràfiques aplicades al desenvolupament de projectes gràfics.",
+        "Anàlisi del concepte de normalització atenent el desenvolupament de projectes gràfics.",
+        "Comprensió i anàlisi de la normalització aplicada a l’acotació, línies normalitzades i els seus significats, i al format i plegat de plànols.",
+        "Experimentació i ús del traçat de croquis a mà alçada en la representació i l’anàlisi de sòlids del disseny industrial.",
+        "Avaluació i tria de les vistes dièdriques significatives en el desenvolupament de projectes gràfics i de narrativa visual.",
+        "Experimentació i ús de les eines DAO de dibuix vectorial en 2D i 3D en el desenvolupament de projectes gràfics i de narrativa visual."
+      ]
+    }
+  ],
+  "comunidad": "cataluna",
+  "idioma": "ca"
+}

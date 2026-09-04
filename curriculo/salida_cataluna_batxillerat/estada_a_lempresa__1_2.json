@@ -1,0 +1,135 @@
+{
+  "materia_oficial": "Estada a l’Empresa",
+  "materia": "Estada a l’Empresa",
+  "etapa": "Bachillerato",
+  "ciclo": "1º Bachillerato i 2º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato",
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Seleccionar i utilitzar en diferents situacions, de forma eficaç̧ i espontània, les estratègies adequades a una bona comunicació́ oral i/o escrita, en relació amb les tasques pròpies de l’activitat empresarial per saber reconèixer i utilitzar correctament les vies de comunicació habituals al món de l’empresa.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Identificar i analitzar les principals àrees funcionals de l’empresa i les activitats que porten a terme, reconeixent i valorant la importància de la iniciativa personal i col·lectiva necessària per comprendre i intervenir en els processos de funcionament i organització de les empreses.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Afrontar amb autonomia, de manera participativa i actitud responsable tant les situacions i tasques que es plantegen en el centre de treball com les gestions de seguiment que se’n deriven, per integrar els diferents protocols i processos vinculats a un lloc de treball i ser capaç d’aplicar-los en l’activitat laboral.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Treballar conjuntament amb la resta de membres de l’equip i responsabilitzar-se de les tasques o activitats assignades, mantenint una actitud de cooperació, per saber reconèixer els objectius que es poden plantejar en un entorn de treball i desenvolupar-los de manera coordinada.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Posar en pràctica habilitats socials, de comunicació, motivació i cooperació, en diferents contextos de treball."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Seleccionar les estratègies de comunicació efectiva que s’adeqüin als contextos i els objectius concrets de cada situació comunicativa."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Usar correctament la terminologia tècnica en la comunicació oral i escrita."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Reconèixer l’estructura organitzativa d’una empresa i les funcions que desenvolupa en el món econòmic, productiu i/o social."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Identificar els diferents models empresarials existents i les seves característiques estratègies comercials, fonts de finançament, productivitat, etc."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Demostrar determinació a l’hora de prendre les decisions necessàries en l’organització i distribució del treball."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Executar adequadament les tasques assignades per l’empresa i les gestions de seguiment corresponents a la plataforma Qbid, amb iniciativa i autonomia durant el període de pràctiques."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Demostrar actitud crítica envers el propi treball i predisposició cap a la recerca de la qualitat."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Identificar situacions de risc derivades del treball i aplicar els mitjans de prevenció i protecció adequats."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Analitzar el sistema organitzatiu de l’empresa i les relacions professionals i humanes que s’hi estableixen."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Treballar en equip i cooperar-hi de manera activa."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Demostrar el compromís adquirit envers les normes establertes per l’empresa i les tasques encomanades."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "1. L’empresa i el seu entorn",
+      "titulo": "L’empresa i el seu entorn",
+      "items": [
+        "Identificació del paper social de les empreses com a proveïdores de béns i serveis, com a generadores de llocs de treball i com a generadores de rendes i de benestar en la societat. (*)",
+        "Reconeixement de les funcions necessàries per a l’activitat empresarial i les seves interrelacions, els objectius, els conflictes i les tipologies generals d’empresa.",
+        "Caracterització de les empreses que incorporen la responsabilitat social corporativa (RSC) i els objectius el desenvolupament sostenible (ODS) per a un món més solidari i sostenible. (*)",
+        "Classificació, localització i dimensió de l’empresa com a elements caracteritzadors de la realitat empresarial.",
+        "Identificació del marc jurídic que regula l’activitat empresarial. Elecció de la forma jurídica de l’empresa més adient tenint en compte les necessitats de capital, el tipus de responsabilitat, el nombre de socis i els impostos a pagar."
+      ]
+    },
+    {
+      "codigo": "2",
+      "bloque": "2. El model de negoci",
+      "titulo": "El model de negoci",
+      "items": [
+        "Definició de la proposta de valor, les relacions amb els clients, les fonts d’ingressos i l’estructura de costos.",
+        "Establiment d’estratègies comercials i de màrqueting oportunes.",
+        "Descripció del procés productiu i la valoració de l’eficiència i la productivitat en l’ús dels recursos. (*)",
+        "Anàlisi de l’estructura de les inversions i de les fonts de finançament, i selecció justificada de les més adients."
+      ]
+    },
+    {
+      "codigo": "3",
+      "bloque": "3. Prevenció de riscos laborals",
+      "titulo": "Prevenció de riscos laborals",
+      "items": [
+        "Avaluació de riscos a l’empresa com a element bàsic de l’activitat preventiva. (*)",
+        "Efectes de les condicions de treball sobre la salut. L’accident de treball, la malaltia professional i les malalties inespecífiques. (*)",
+        "Riscos professionals. Anàlisi i classificació de riscos: riscos relatius a les condicions de seguretat, riscos relatius a les condicions ambientals i riscos relatius a les condicions ergonòmiques i psicosocials.",
+        "Danys per a la salut ocasionats pels riscos professionals.",
+        "Interpretació de la senyalització de seguretat. (*)",
+        "Consignes i protocols d’actuació davant d’una situació d’emergència. (*)"
+      ]
+    }
+  ],
+  "comunidad": "cataluna",
+  "idioma": "ca"
+}

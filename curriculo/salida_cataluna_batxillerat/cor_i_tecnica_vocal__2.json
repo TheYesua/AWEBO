@@ -1,0 +1,130 @@
+{
+  "materia_oficial": "Cor i Tècnica Vocal",
+  "materia": "Cor i Tècnica Vocal",
+  "etapa": "Bachillerato",
+  "ciclo": "2º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Determinar les característiques estilístiques de les obres vocals, mitjançant l’anàlisi crítica per interpretar-les d’acord amb la intencionalitat del compositor i amb la identitat i el context de l’intèrpret.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Establir les característiques i les intencionalitats de la música vocal, escoltant i visionant manifestacions de diferents estils i gèneres vocals, per desenvolupar un criteri propi sobre el valor del patrimoni coral.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Aplicar les diferents tècniques d’interpretació vocal mitjançant la interpretació individual i col·lectiva per desenvolupar la cura i la consciència cap al cos com a instrument musical viu.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Interpretar diferents estils i gèneres musicals a través diverses agrupacions vocals, per conèixer-les i gaudir-les, a més de compartir amb el grup processos de socialització, solidaritat i compromís.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Produir projectes artístics a través d’actuacions i propostes escèniques basades en el treball de l’aula, utilitzant diversos mitjans i suports audiovisuals, per participar cooperativament en la visibilització cultural de la música i la pràctica vocal.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Defensar amb criteris fonamentats els aspectes singulars i el valor social de diferents peces vocals, contextualitzant-les i valorant-ne l’impacte en la societat."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Analitzar críticament la relació del text amb la música, millorant la comprensió i buscant solucions que ajudin a una millor interpretació."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Comparar interpretacions vocals analitzant proactivament l’enriquiment que representa la diversitat d’interpretacions per al patrimoni coral."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Apreciar amb respecte l’evolució de la música vocal valorant les funcions socials i culturals que ha tingut el repertori coral al llarg de la història."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Aplicar els coneixements del llenguatge musical mitjançant la lectura i la interpretació d’una diversitat de partitures."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Explorar les possibilitats interpretatives de la veu participant activament com a intèrpret en diferents agrupacions i estils."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Reconèixer la necessitat del desenvolupament constant de les habilitats físiques i mentals participant en les interpretacions vocals de grup."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Demostrar interès en el desenvolupament tècnic continu de la competència vocal interpretant propostes musicals en diferents formacions."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Expressar emocions i sentiments interpretant de manera crítica obres de diferents gèneres i estils."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Connectar les interpretacions vocals amb altres arts i disciplines, dissenyant projectes artístics innovadors i creatius."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Participar activament en el muntatge d’actuacions públiques assumint diferents rols."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "5",
+      "descripcion": "Construir un projecte musical on la veu jugui un paper cabdal respectant les opinions dels components del grup."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "1. Tècnica vocal",
+      "titulo": "Tècnica vocal",
+      "items": [
+        "Domini de les tècniques adequades per a l’ús de l’aparell de fonació: relaxació, respiració, vocalització, dicció, articulació, emissió i control del so.",
+        "Aplicació de tècniques per al domini de les qualitats del so en la pràctica vocal: alçada, intensitat i durada.",
+        "Entonació d’acords, cadències i intervals consonants i dissonants per refermar l’afinació.",
+        "Anàlisi fonètica dels textos de diversitat de repertori vocal."
+      ]
+    },
+    {
+      "codigo": "2",
+      "bloque": "2. Pràctica de conjunt",
+      "titulo": "Pràctica de conjunt",
+      "items": [
+        "Pràctica de conjunt de diverses obres d’estils, èpoques, formes i estructures diverses.",
+        "Desenvolupament de la consciència de la unitat sonora del conjunt: respiració, atac, afinació, articulació, ritme i fraseig.",
+        "Pràctica de l’afinació dins l’agrupació mitjançant la tècnica del transport.",
+        "L’anacrusi com a moviment bàsic de la pràctica del grup. Reacció i comprensió davant les diferents anacrusis amb o sense director o directora.",
+        "Lectura a primera vista com a tècnica de familiarització amb el repertori nou.",
+        "Interpretació individual i col·lectiva de repertori musical de diferents èpoques, estils i gèneres, incloent-hi la música actual.",
+        "Pràctica de repertori amb improvisacions i moviment en diversos contextos interpretatius.",
+        "Anàlisi de les agrupacions vocals al llarg de la història.",
+        "Pràctica inicial de la direcció d’agrupacions vocals aplicant les tècniques bàsiques de direcció."
+      ]
+    }
+  ],
+  "comunidad": "cataluna",
+  "idioma": "ca"
+}

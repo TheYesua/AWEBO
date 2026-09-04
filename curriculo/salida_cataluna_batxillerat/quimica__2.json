@@ -1,0 +1,282 @@
+{
+  "materia_oficial": "Química",
+  "materia": "Química",
+  "etapa": "Bachillerato",
+  "ciclo": "2º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Analitzar fenòmens i resoldre problemes basats en situacions relacionades amb la química mitjançant l’ús dels seus models, lleis i teories, atenent la base experimental i la conceptualització, per evidenciar la importància de la química com a ciència rellevant, i les connexions amb la vida quotidiana, el benestar comú i la sostenibilitat ambiental.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Formular preguntes i hipòtesis i contrastar-les a través de la indagació i l’experimentació atenent normes de seguretat, i argumentar mitjançant models i lleis de la química en situacions relacionades amb els sistemes materials i les aplicacions pràctiques de la química per proposar solucions a problemàtiques sociomediambientals.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Interpretar i organitzar informació en diferents formats a partir de fonts diverses, utilitzant de manera adequada els diversos registres de comunicació de la química (unitats, formulació, llenguatge simbòlic, matemàtic i d’altres), per evidenciar la necessitat d’establir una eina de comunicació entre comunitats científiques i en la investigació.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Seleccionar i avaluar críticament informació i recursos, en diferents formats i plataformes, tant en el treball individual com col·lectiu, crear i comunicar coneixement de manera efectiva i en diversos formats i argumentar l’ús responsable de substàncies i processos químics per al reconeixement de la influència positiva de la química en la societat.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Resoldre i interpretar problemes en contextos relacionats amb la química, aplicant habilitats de cooperació, coordinació, emprenedoria i tècniques de treball pròpies de la comunitat química (experimentació, indagació, raonament logicomatemàtic, etc.), per reconèixer el paper de la química i predir la influència dels seus avenços en una societat basada en valors ètics i sostenibles.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Construir coneixement químic de forma activa, col·lectiva i evolutiva, a partir de situacions de l’entorn proper o global, i argumentar el caràcter multidisciplinari i versàtil de la química i les seves relacions amb altres camps de coneixement per actuar com a agents crítics en l’anàlisi i la difusió d’informació i promoure una societat igualitària, saludable i sostenible.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Reconèixer la importància de la química i les seves connexions amb altres àrees en el desenvolupament de la societat, el progrés de la ciència, la tecnologia, l’economia i la sostenibilitat, identificant els avenços en el camp de la química que han estat fonamentals en aquests aspectes."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Descriure els principals processos químics que succeeixen a l’entorn i les propietats dels sistemes materials a partir dels coneixements, les destreses i les actituds propis de les diferents disciplines de la química."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Reconèixer la naturalesa experimental i interdisciplinària de la química i la seva influència en la investigació científica i en els àmbits econòmic i laboral actuals, i les seves aplicacions en altres camps del coneixement i de l’activitat humana. El desenvolupament d’aquesta competència requereix el coneixement de les formes i dels procediments estàndard que s’utilitzen en la recerca científica del món natural i permet a l’alumnat, al seu torn, forjar una opinió informada dels aspectes que afecten la seva realitat propera per actuar amb sentit crític en la seva millora per mitjà del coneixement científic. Permet detectar problemes de l’entorn quotidià i abordar-los des de la perspectiva de la química, cercant solucions sostenibles que repercuteixin en el benestar social comú. Amb competència específica es pretén que l’alumnat comprengui també que la química és una ciència viva, les repercussions de la qual no només han estat importants en el passat, sinó que també comporten una important contribució a la millora de la societat present i futura. Mitjançant les diferents branques de la química, l’alumnat serà capaç de descobrir quines són les seves aportacions més rellevants a la tecnologia, l’economia, la societat i el medi ambient."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Relacionar la química amb situacions problemàtiques actuals, associades al desenvolupament de la ciència i la tecnologia, analitzant com es presenta a través dels mitjans de comunicació o com són percebuts en la vida quotidiana."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Reconèixer i comunicar que la química constitueix un cos de coneixement imprescindible per a l’estudi i la discussió de qüestions significatives en els àmbits social, econòmic, polític i ètic, identificant-ne la presència i la influència."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Aplicar de manera informada, coherent i raonada els models i les lleis de la química, explicant i predient les conseqüències d’experiments, fenòmens naturals, processos industrials i descobriments científics."
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "2",
+      "descripcion": "Posar en pràctica els coneixements adquirits en l’experimentació científica al laboratori, al camp o a altres entorns, incloent-hi el coneixement dels materials i els aparells de mesura i de recollida i tractament de dades, la normativa bàsica i normes de seguretat pròpies d’aquests espais, i comprenent la importància de la seguretat en el progrés científic i emprenedor. Aquesta competència específica contribueix a aconseguir que l’alumnat sigui capaç d’investigar sobre els fenòmens naturals per mitjà de l’experimentació, la recerca d’evidències i el raonament científic, fent ús dels coneixements que adquireix en la seva formació, utilitzant la metodologia científica amb més rigor i obtenint conclusions i respostes de més abast i millor elaborades. Les qüestions que plantegen i les hipòtesis que formulen estan elaborades d’acord amb coneixements fonamentats i posen en evidència les relacions entre les variables. També contribueix a fer un bon ús de la normativa de seguretat dels laboratoris científics. L’alumnat ha de ser capaç d’identificar els principis bàsics de la química que justifiquen que els sistemes materials tinguin determinades propietats i aplicacions d’acord amb la seva composició i que hi ha una base fonamental de caràcter químic al fons de cadascuna de les qüestions mediambientals actuals i també en les idees i els mètodes per solucionar els problemes relacionats. D’aquesta manera es podran trobar respostes i solucions efectives a qüestions reals i pràctiques, tal com es presenten mitjançant la nostra percepció o com es formulen als mitjans de comunicació."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Utilitzar correctament el Sistema Internacional d’Unitats (SI) i altres sistemes d’unitats, i les normes de nomenclatura de la IUPAC com a base d’un llenguatge universal per a la química, que permeti una comunicació efectiva amb tota la comunitat científica."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Emprar amb rigor eines matemàtiques per donar suport al desenvolupament del pensament científic, aplicant aquestes eines en la resolució de problemes, usant equacions, unitats i operacions."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Practicar i fer respectar les normes de seguretat relacionades amb la manipulació de substàncies químiques al laboratori i en altres entorns, i els procediments per a la correcta gestió i eliminació dels residus, utilitzant correctament els codis de comunicació característics de la química. El desenvolupament d’aquesta competència en aquesta etapa educativa pretén que els i les alumnes comprenguin la informació que se’ls proporciona sobre els fenòmens fisicoquímics que ocorren al món quotidià, sigui quin sigui el format en què els sigui proporcionada, i produir també nova informació amb correcció, veracitat i fidelitat, utilitzant correctament el llenguatge matemàtic, els sistemes d’unitats, les normes de la IUPAC i la normativa de seguretat dels laboratoris científics, amb la finalitat de reconèixer el valor universal del llenguatge científic en la transmissió de coneixement que es necessita per a la construcció d’una societat millor. L’ús correcte del llenguatge científic universal i la facilitat a l’hora d’interpretar i produir informació de caràcter científic permeten a cada estudiant crear relacions constructives entre la física, la química i les altres disciplines científiques i no científiques pròpies d’altres àrees de coneixement que s’estudien al batxillerat. A més, prepara els estudiants per establir connexions amb una comunitat científica activa, preocupada per aconseguir una millora de la societat que repercuteixi en aspectes tan importants com la conservació del medi ambient i la salut individual i col·lectiva, cosa que dota aquesta competència específica d’un caràcter essencial per a aquest currículum. Aquesta competència específica comporta un suport molt important per a la ciència en general, i per a la química en particular."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Analitzar la composició química dels sistemes materials que es troben a l’entorn proper, al medi natural i a l’entorn industrial i tecnològic, argumentant que les seves propietats, aplicacions i beneficis estan basats en els principis de la química."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Argumentar de manera informada, aplicant les teories i les lleis de la química, que els efectes negatius de determinades substàncies en l’ambient i en la salut es deuen al mal ús que es fa d’aquests productes o a la negligència, i no a la ciència química en si."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Explicar, emprant els coneixements científics adequats, quins són els beneficis dels nombrosos productes de la tecnologia química i com el seu ús i la seva aplicació han contribuït al progrés de la societat. El desenvolupament de les competències científiques, i aquesta en especial, requereix l’accés a la diversitat de fonts d’informació per a la selecció i la utilització de recursos didàctics, tant tradicionals com digitals. Actualment, molts dels recursos necessaris per a l’ensenyament i l’aprenentatge de la química poden trobar-se en diferents plataformes digitals de continguts, per la qual cosa el seu ús autònom facilita el desenvolupament de processos cognitius de nivell superior i propicia la comprensió, l’elaboració de judicis, la creativitat i el desenvolupament personal. Aquesta competència està relacionada amb l’ús crític i eficient i amb la capacitat de seleccionar els recursos més adients en funció dels objectius, citant-ne les fonts, i l’adquisició d’autonomia i destresa en les eines de comunicació per al treball col·laboratiu. D’altra banda, aquesta competència ha de contribuir al reconeixement de la influència positiva de la química en la societat, i evitar el significat pejoratiu de la paraula química, tan arrelat en la nostra societat, i fruit de la manca d’informacions contrastades, i d’una alfabetització científica i, en concret, en química. La competència ha de contribuir també a desenvolupar la capacitat d’argumentació sobre els beneficis que el progrés de la química ha tingut sobre el benestar de la societat."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Reconèixer la important contribució a la química del treball col·laboratiu entre especialistes de diferents disciplines científiques posant en relleu les connexions entre les lleis i les teories pròpies de cada disciplina."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Reconèixer l’aportació de la química al desenvolupament del pensament científic i a l’autonomia de pensament crític a través de la posada en pràctica de les metodologies de treball pròpies de les disciplines científiques."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "5",
+      "descripcion": "Valorar les aportacions de la química a la societat, debatent de manera fonamentada sobre el seu impacte des del punt de vista de l’ètica i de la sostenibilitat, i reflexionant sobre les causes i les conseqüències dels biaixos de gènere en les ciències."
+    },
+    {
+      "codigo": "5.4",
+      "competencia": "5",
+      "descripcion": "Resoldre problemes relacionats amb la química i estudiar situacions relacionades amb aquesta ciència, reconeixent la importància de la contribució particular de cada membre de l’equip i la diversitat de pensament, i consolidant habilitats socials positives en els equips de treball."
+    },
+    {
+      "codigo": "5.5",
+      "competencia": "5",
+      "descripcion": "Representar i visualitzar de forma eficient els conceptes de química que presentin més dificultats utilitzant eines digitals i recursos variats, incloent-hi experiències de laboratori real i virtual. Aquesta competència implica que l’alumnat desenvolupi una actitud compromesa amb el treball experimental i el desenvolupament de projectes de recerca en equip, que adopti certes posicions ètiques i compromís social. Implica també el treball actiu integrat amb la lectura, l’escriptura, l’expressió oral, la tecnologia i les matemàtiques. Aquest treball té molt més sentit si es duu a terme en col·laboració dins d’un grup divers que respecti les diferències de sexe, d’orientació, d’ideologia, etc. Les idees que es plantegen es validen mitjançant l’argumentació, de la mateixa manera que en la comunitat científica, on el consens és un requisit per a l’acceptació universal de les noves idees i descobriments. Cal destacar la interdependència positiva entre els membres de l’equip, la complementarietat, la responsabilitat compartida, etc. En tota activitat científica, la col·laboració entre diferents individus i entitats és fonamental per aconseguir el progrés científic. Treballar en equip, utilitzar amb fluïdesa eines digitals i recursos variats i compartir els resultats dels estudis repercuteix en un creixement notable de la investigació científica, ja que l’avenç és cooperatiu. Que hi hagi una aposta ferma per la millora de la investigació científica, amb homes i dones que s’hi vulguin dedicar per vocació, és molt important per a la nostra societat actual, ja que implica la millora de la qualitat de vida, de la tecnologia i de la salut, entre d’altres. Aquesta competència específica afavoreix el desenvolupament del treball en l’alumnat d’acord amb els principis bàsics que es posen en pràctica a les ciències experimentals i una afinitat per les entitats i per les persones que s’hi dediquen i que treballen per vèncer les desigualtats de gènere, d’orientació, de creença, etc. Alhora, en adquirir destreses en l’ús del raonament científic, l’alumnat desenvolupa la capacitat d’interpretar i de resoldre situacions problemàtiques en diferents contextos de la investigació, del món laboral i de la seva realitat quotidiana."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Explicar i raonar els conceptes fonamentals que es troben a la base de la química aplicant els conceptes, les lleis i les teories d’altres disciplines científiques (especialment de la física) per mitjà de l’experimentació i la indagació."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Deduir les idees fonamentals d’altres disciplines científiques (per exemple, la biologia o la tecnologia) per mitjà de la relació entre els seus continguts bàsics i les lleis i teories que són pròpies de la química."
+    },
+    {
+      "codigo": "6.3",
+      "competencia": "6",
+      "descripcion": "Solucionar problemes i qüestions que són característics de la química utilitzant les eines proveïdes per les matemàtiques i la tecnologia, reconeixent així la relació entre els fenòmens experimentals i naturals i conceptes propis d’aquesta disciplina. Aquesta competència específica pretén desenvolupar en l’alumnat la capacitat de decidir amb criteris científicament fonamentats per poder valorar la repercussió tècnica, social, econòmica i mediambiental de les diferents aplicacions que tenen els avenços, les investigacions i els descobriments que ha fet la comunitat científica en el transcurs de la història, amb la finalitat de construir ciutadans i ciutadanes competents compromesos amb el món on viuen. Aquest coneixement permet valorar críticament quines són les repercussions que tenen, i afavoreix en l’alumnat la presa de decisions sobre els usos adequats dels mitjans i productes científics i tecnològics. Així mateix, aquesta competència específica es desenvolupa a través de la participació activa de l’alumnat en projectes que involucren la presa de decisions i l’execució d’accions científicament fonamentades en la seva vida quotidiana i en el seu entorn social. Amb això millora la consciència social de la ciència, la qual cosa és necessària per construir una societat de coneixement més avançada. No és possible comprendre profundament els conceptes fonamentals de la química sense conèixer les lleis i teories d’altres camps de la ciència relacionats amb ella. De la mateixa manera, cal aplicar les idees bàsiques de la química per entendre els fonaments d’altres disciplines científiques. Les aportacions de la química contribueixen al desenvolupament d’altres ciències i camps de coneixement (i viceversa) i són imprescindibles per al progrés global de la ciència, la tecnologia i la societat. Perquè l’alumnat arribi a ser competent, desenvoluparà el seu aprenentatge mitjançant l’estudi experimental i l’observació de situacions en què es posa de manifest aquesta relació interdisciplinària, l’aplicació d’eines tecnològiques en la indagació i en l’experimentació, i l’ús d’eines matemàtiques i el raonament lògic en la resolució de problemes propis de la química. Aquesta base de caràcter interdisciplinari i holístic és inherent a la química i proporciona als alumnes que l’estudien uns fonaments adequats perquè puguin continuar estudis en diferents branques de coneixement, i mitjançant diferents itineraris formatius, la qual cosa contribueix de forma eficient a la formació de persones competents per a la societat."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "1. Enllaç químic i estructura de la matèria · Espectres atòmics i tècniques espectroscòpiques",
+      "titulo": "Enllaç químic i estructura de la matèria · Espectres atòmics i tècniques espectroscòpiques",
+      "items": [
+        "Caracterització dels espectres atòmics com a evidència experimental responsable de la necessitat de la revisió del model atòmic. Identificació i argumentació de la rellevància de l’espectroscòpia en el context del desenvolupament històric del model atòmic.",
+        "Interpretació dels espectres d’emissió i absorció dels elements i de la seva contribució en el coneixement de l’Univers. Relació amb l’estructura electrònica de l’àtom.",
+        "Utilització de dades de diverses tècniques espectroscòpiques (UV, IR, RMN i espectrometria de masses) en la identificació de substàncies d’interès i rellevància en la vida quotidiana i qüestions sociocientífiques d’actualitat. Explicació de les bases del seu funcionament."
+      ]
+    },
+    {
+      "codigo": "2",
+      "bloque": "2. Enllaç químic i estructura de la matèria · Principis quàntics de l’estructura atòmica",
+      "titulo": "Enllaç químic i estructura de la matèria · Principis quàntics de l’estructura atòmica",
+      "items": [
+        "Relació entre el fenomen dels espectres atòmics i la quantització de l’energia. Del model de Bohr als models mecano-quàntics: necessitat d’una estructura electrònica a diferents nivells i les seves connexions amb la recerca científica bàsica i amb els avenços cientificotecnològics actuals.",
+        "Explicacions i aplicació del principi d’incertesa de Heisenberg i de la doble naturalesa ona- corpuscle de l’electró i de la naturalesa probabilística del concepte d’orbital.",
+        "Identificació dels nombres quàntics i aplicació del principi d’exclusió de Pauli. Construcció de l’estructura electrònica de l’àtom. Utilització del diagrama de Moeller per escriure la configuració electrònica dels elements químics més freqüents a l’entorn i al cos humà, i/o els protagonistes de situacions reals en controvèrsia i amb impacte socioambiental."
+      ]
+    },
+    {
+      "codigo": "3",
+      "bloque": "3. Enllaç químic i estructura de la matèria · Taula periòdica i propietats dels àtoms",
+      "titulo": "Enllaç químic i estructura de la matèria · Taula periòdica i propietats dels àtoms",
+      "items": [
+        "Argumentació basada en evidències de la naturalesa experimental de l’origen de la taula periòdica. Justificació de la llei periòdica i agrupament dels elements sobre la base de les propietats.",
+        "Relacions entre la teoria atòmica actual i les lleis experimentals observades.",
+        "Predicció de la situació d’un element a la taula periòdica a partir de la configuració electrònica, i de la configuració electrònica a partir de la situació de l’element, tot establint connexions amb les característiques i els usos de les substàncies quotidianes que el contenen.",
+        "Raonament en base a les dades, o en base al model de càrrega de l’àtom, de les tendències periòdiques. Aplicació a la predicció dels valors de les propietats dels elements de la taula a partir de la seva posició."
+      ]
+    },
+    {
+      "codigo": "4",
+      "bloque": "4. Enllaç químic i estructura de la matèria · Enllaç químic i forces intermoleculars",
+      "titulo": "Enllaç químic i estructura de la matèria · Enllaç químic i forces intermoleculars",
+      "items": [
+        "Predicció i justificació del tipus d’enllaç a partir de les característiques dels elements individuals que el formen en relació amb les propietats de la substància formada i amb la seva presència a la vida quotidiana.",
+        "Interpretació de l’energia implicada en la formació de molècules, estructures cristal·lines 3D i estructures macromoleculars. Predicció i justificació de propietats de les substàncies químiques en relació amb la vida quotidiana i amb els seus usos i interès.",
+        "Aplicació de les estructures de Lewis i teoria de RPECV per explicar i predir geometries de compostos moleculars i la seva polaritat amb relació al seu comportament en fenòmens de l’entorn quotidià.",
+        "Aplicació del cicle de Born-Haber i de l’energia intercanviada en la formació de cristalls iònics.",
+        "Aplicació dels models del núvol electrònic per explicar les propietats característiques dels cristalls metàl·lics en metalls d’ús destacat en situacions d’actualitat.",
+        "Relacions entre forces intermoleculars i propietats macroscòpiques de compostos moleculars. Relació de les propietats amb l’estructura (geometria i enllaç) en substàncies que intervenen en situacions reals d’interès local o global."
+      ]
+    },
+    {
+      "codigo": "5",
+      "bloque": "5. Reaccions químiques · Termodinàmica química",
+      "titulo": "Reaccions químiques · Termodinàmica química",
+      "items": [
+        "Aplicació del primer principi de la termodinàmica: intercanvis d’energia entre sistemes per mitjà de la calor i del treball en contextos de consum i eficiència energètica.",
+        "Representació i utilització d’equacions termoquímiques i càlcul d’entalpies de reacció.",
+        "Concepte d’entalpia de reacció i aplicació en situacions i contextos reals com ara els combustibles, els éssers vius, etc., i relació amb problemàtiques com ara l’augment de les emissions de diòxid de carboni. Diferenciació entre processos endotèrmics i exotèrmics.",
+        "Aplicació del balanç energètic entre productes i reactius mitjançant la llei de Hess, per mitjà de l’entalpia de formació estàndard o de les energies d’enllaç, per obtenir l’entalpia d’una reacció en contextos propers o d’actualitat.",
+        "Aplicació del segon principi de la termodinàmica. L’entropia com a magnitud que afecta l’espontaneïtat i la irreversibilitat dels processos químics en contextos propers o d’actualitat.",
+        "Càlcul de l’energia de Gibbs de les reaccions químiques i de la seva espontaneïtat en funció de la temperatura del sistema, i interpretació dels resultats en contextos propers o d’actualitat."
+      ]
+    },
+    {
+      "codigo": "6",
+      "bloque": "6. Reaccions químiques · Cinètica química",
+      "titulo": "Reaccions químiques · Cinètica química",
+      "items": [
+        "Elaboració d’explicacions i prediccions basades en la teoria de les col·lisions com a model a escala submicroscòpica de les reaccions químiques. Conceptes de velocitat de reacció i energia d’activació en contextos propers o d’actualitat.",
+        "Elaboració d’explicacions i prediccions basades en la influència de les condicions de reacció sobre la seva velocitat en contextos propers o d’actualitat.",
+        "Aplicació de la llei diferencial de la velocitat d’una reacció química i càlcul dels ordres de reacció a partir de dades experimentals de velocitat de reacció."
+      ]
+    },
+    {
+      "codigo": "7",
+      "bloque": "7. Reaccions químiques · Equilibri químic",
+      "titulo": "Reaccions químiques · Equilibri químic",
+      "items": [
+        "Aplicació i conceptualització de l’equilibri químic com a procés dinàmic: equacions de velocitat i aspectes termodinàmics. Expressió de la constant d’equilibri mitjançant la llei d’acció de masses. Aplicació en contextos propers o d’actualitat i de rellevància sociocientífica.",
+        "Càlcul de la constant d’equilibri de reaccions en què els reactius es trobin en diferent estat físic. Relació entre Kc i Kp i producte de solubilitat en equilibris heterogenis i la seva connexió amb processos naturals i industrials.",
+        "Aplicació del principi de Le Châtelier i del quocient de reacció. Evolució de sistemes en equilibri a partir de la variació de les condicions de concentració, pressió o temperatura del sistema, i aplicacions en contextos propers o d’actualitat."
+      ]
+    },
+    {
+      "codigo": "8",
+      "bloque": "8. Reaccions químiques · Reaccions àcid-base",
+      "titulo": "Reaccions químiques · Reaccions àcid-base",
+      "items": [
+        "Justificació de la naturalesa àcida o bàsica d’una substància a partir de les teories d’Arrhenius i de Brønsted i Lowry i les seves implicacions en la classificació d’àcids i bases de substàncies de l’entorn quotidià.",
+        "Diferenciació entre àcids i bases forts i febles. Càlcul del grau de dissociació en dissolució aquosa en contextos propers o d’actualitat.",
+        "Càlcul i justificació del pH de dissolucions àcides i bàsiques. Expressió de les constants Ka i Kb, en relació amb la vida quotidiana i en contextos com ara la cuina, els medicaments, el medi ambient, etc.",
+        "Representació i concepte de parells àcid i base conjugats. Predicció del caràcter àcid o bàsic de les dissolucions en què es produeix la hidròlisi d’una sal, a partir de situacions de l’entorn quotidià.",
+        "Identificació i representació de reaccions entre àcids i bases i càlculs estequiomètrics en exemples de contextos propers o d’actualitat. Concepte de neutralització. Realització de volumetries àcid-base, dels càlculs corresponents i raonament dels resultats en relació amb situacions reals i en connexió amb la quotidianitat.",
+        "Relació entre propietats i aplicacions dels àcids i de les bases rellevants en l’àmbit industrial i de consum, amb especial incidència en el procés de conservació del medi ambient."
+      ]
+    },
+    {
+      "codigo": "9",
+      "bloque": "9. Reaccions químiques · Reaccions redox",
+      "titulo": "Reaccions químiques · Reaccions redox",
+      "items": [
+        "Càlcul i aplicació de l’estat d’oxidació. Identificació de les espècies que es redueixen o oxiden en una reacció a partir de la variació del nombre d’oxidació en processos de rellevància per la seva quotidianitat i/o impacte socioambiental.",
+        "Igualació pel mètode de l’ió-electró d’equacions químiques d’oxidació-reducció en contextos propers o d’actualitat. Càlculs estequiomètrics i volumetries redox.",
+        "Aplicació i conceptualització del potencial estàndard d’un parell redox. Espontaneïtat de processos químics i electroquímics que impliquen dos parells redox amb relació a contextos propers o d’actualitat.",
+        "Aplicació de les lleis de Faraday: quantitat de càrrega elèctrica i quantitats de substància en un procés electroquímic. Càlculs estequiomètrics en cel·les electrolítiques en contextos propers o d’actualitat.",
+        "Identificació i càlculs en reaccions d’oxidació i reducció en la fabricació i el funcionament de bateries elèctriques, cel·les electrolítiques i piles de combustible, i també en la prevenció de la corrosió de metalls."
+      ]
+    },
+    {
+      "codigo": "10",
+      "bloque": "10. Química orgànica · Isomeria",
+      "titulo": "Química orgànica · Isomeria",
+      "items": [
+        "Utilització de fórmules moleculars i desenvolupades de compostos orgànics, amb relació a les seves propietats, orígens o usos. Diferents tipus d’isomeria estructural en compostos en relació amb la vida quotidiana i/o problemàtiques rellevants.",
+        "Utilització de models moleculars o tècniques de representació 3D de molècules. Isòmers espacials d’un compost i propietats en compostos en relació amb la vida quotidiana i/o problemàtiques rellevants."
+      ]
+    },
+    {
+      "codigo": "11",
+      "bloque": "11. Química orgànica · Reactivitat orgànica",
+      "titulo": "Química orgànica · Reactivitat orgànica",
+      "items": [
+        "Identificació de les principals propietats químiques de les diferents funcions orgàniques i de les seves propietats i reaccions químiques, en especial en contextos propers a l’alumnat.",
+        "Identificació dels principals tipus de reaccions orgàniques. Productes de la reacció entre compostos orgànics i les equacions químiques corresponents amb relació a substàncies d’especial interès i properes a l’alumnat."
+      ]
+    },
+    {
+      "codigo": "12",
+      "bloque": "12. Química orgànica · Polímers",
+      "titulo": "Química orgànica · Polímers",
+      "items": [
+        "Classificació dels diferents processos de formació dels polímers a partir dels corresponents monòmers. Estructura i propietats.",
+        "Classificació dels polímers segons la naturalesa, l’estructura i la composició. Aplicacions, propietats i riscos mediambientals associats."
+      ]
+    }
+  ],
+  "comunidad": "cataluna",
+  "idioma": "ca"
+}

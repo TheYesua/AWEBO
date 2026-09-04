@@ -1,0 +1,31 @@
+{
+  "materia_oficial": "Biomedicina",
+  "materia": "Biomedicina",
+  "etapa": "Bachillerato",
+  "ciclo": "1º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Aplicar amb autonomia i de manera integrada els aprenentatges desenvolupats i les diverses formes de raonament i de recerca pròpies de la biologia per dur a terme recerques experimentals i estudis observacionals sobre problemes relatius a les funcions vitals de l’ésser humà i d’altres que relacionin la salut amb els estils de vida i els hàbits de consum.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Analitzar situacions que es donen al llarg de la vida de les persones, tant en el seu estat de salut com en situacions de malaltia, per entendre i relacionar els processos biològics en què se sustenten les alteracions dels estats de salut, així com el normal desenvolupament, creixement, envelliment i herència dels caràcters en els humans.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Explicar els fonaments biològics d’algunes contribucions recents de la investigació biomèdica, com les teràpies gèniques i cel·lulars, les noves vacunes i els nous medicaments, i valorar i aportar arguments sobre els possibles beneficis, riscos, conseqüències i implicacions ètiques de la seva aplicació per tal de prendre posició en el debat social relatiu a les implicacions socials i ètiques d’aquestes teràpies.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [],
+  "saberes_basicos": [],
+  "comunidad": "cataluna",
+  "idioma": "ca"
+}

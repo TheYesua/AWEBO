@@ -1,0 +1,446 @@
+{
+  "materia_oficial": "Matemàtiques",
+  "materia": "Matemàtiques",
+  "etapa": "Bachillerato",
+  "ciclo": "2º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Modelitzar i resoldre problemes de la vida quotidiana i de diversos àmbits de coneixement, incloent-hi el matemàtic, aplicant diferents estratègies i formes de raonament, per plantejar i resoldre reptes.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Argumentar la idoneïtat de les solucions d’un problema, emprant el raonament i la lògica matemàtica, per verificar-ne la validesa.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Formular conjectures o problemes, utilitzant el raonament i l’argumentació, la creativitat i les eines tecnològiques, per generar nou coneixement matemàtic.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Utilitzar el pensament computacional modificant, creant i generalitzant estratègies i algorismes amb suport digital per modelitzar i resoldre situacions de la vida quotidiana o de diversos àmbits del coneixement, incloent-hi el matemàtic.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Connectar diferents idees matemàtiques, establint vincles entre conceptes, procediments, arguments i models, per donar significat a l’aprenentatge matemàtic i estructurar-lo.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Vincular i contextualitzar les matemàtiques a altres àrees de coneixement, abordant les situacions que se’n desprenguin, per modelitzar i resoldre problemes i desenvolupar la capacitat crítica, creativa i innovadora en situacions diverses.",
+      "descriptores": []
+    },
+    {
+      "codigo": "7",
+      "descripcion": "Comunicar i representar, de forma individual i col·lectiva, conceptes, procediments i resultats matemàtics usant el llenguatge oral, escrit, gràfic i multimèdia, mitjançant diferents tipus de suports, incloent-hi els tecnològics, per donar significat al coneixement, transferir-lo i compartir-lo.",
+      "descriptores": []
+    },
+    {
+      "codigo": "8",
+      "descripcion": "Desenvolupar l’autoregulació i les destreses personals que ajudin a identificar i gestionar emocions, aprenent de l’error i afrontant les situacions d’incertesa com una oportunitat, per perseverar i gaudir del procés d’aprendre matemàtiques.",
+      "descriptores": []
+    },
+    {
+      "codigo": "9",
+      "descripcion": "Cooperar, desenvolupant les destreses socials necessàries per participar activament en els equips de treball inclusius reconeixent la diversitat i el valor de les aportacions dels altres, per compartir i construir coneixement matemàtic de manera col·lectiva.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Generar models a partir de situacions plantejades en contextos diversos, tant de la vida quotidiana com de l’àmbit acadèmic, que permetin convertir les situacions en reptes o problemes matemàtics."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Utilitzar eines i estratègies que permetin resoldre problemes o fer propostes creatives a les situacions que hagin estat modelitzades."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Obtenir solucions i fer propostes creatives a les situacions plantejades en contextos diversos, tant de la vida quotidiana com de l’àmbit acadèmic."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "1",
+      "descripcion": "Analitzar i valorar diferents modelitzacions, eines i estratègies."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Expressar amb coherència científica idees i raonaments que permetin justificar la validesa de les solucions, dels processos i de les conclusions."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Construir i expressar amb coherència científica textos amb arguments matemàtics que permetin fer judicis crítics o prendre decisions tecnològiques, socials, artístiques i culturals en un context sostenible, ètic i respectuós amb el medi ambient, en relació amb la situació o amb el problema plantejat."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Plantejar preguntes en contextos diversos que es puguin respondre per mitjà del coneixement matemàtic."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Fer conjectures matemàtiques de manera autònoma i raonada en un context en el qual l’alumnat tingui llibertat creativa fent ús, si cal, d’eines tecnològiques (llenguatges de programació, fulls de càlcul, GeoGebra, fotografia matemàtica, vídeo, etc.)."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Proposar problemes de manera autònoma, creativa i raonada en un context en el qual l’alumnat tingui llibertat creativa fent ús, si cal, d’eines tecnològiques (llenguatges de programació, fulls de càlcul, GeoGebra, fotografia matemàtica, vídeo, etc.)."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Descompondre un problema o una situació de la vida quotidiana en diferents parts, abordant-les d’una en una per poder trobar després la solució global amb dispositius digitals."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Reconèixer patrons, similituds i tendències en els problemes o situacions que es volen solucionar."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Trobar els principis que generen els patrons d’un problema descartant les dades irrellevants tot identificant les parts més importants."
+    },
+    {
+      "codigo": "4.4",
+      "competencia": "4",
+      "descripcion": "Generar instruccions pas a pas per resoldre un problema i d’altres de similars provant i duent a terme possibles solucions amb llenguatges de programació o amb fulls de càlcul, GeoGebra i desenvolupadors d’aplicacions mòbils entre d’altres."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Identificar vincles entre diferents models matemàtics per disposar de més eines a l’hora d’abordar un repte."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Traduir entre diferents representacions d’un mateix concepte matemàtic per extreure informació d’un i aplicar-la a l’altra."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "5",
+      "descripcion": "Aplicar conceptes matemàtics interconnectats per abordar un repte."
+    },
+    {
+      "codigo": "5.4",
+      "competencia": "5",
+      "descripcion": "Treure conclusions mitjançant una visió integrada de les matemàtiques."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Reconèixer i utilitzar les matemàtiques presents a la vida quotidiana usant els processos inherents a la investigació científica i matemàtica: inferir, mesurar, comunicar, classificar, predir, etc. en situacions susceptibles de ser abordades en termes matemàtics."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Reconèixer i utilitzar les connexions entre les matemàtiques i altres matèries en situacions susceptibles de ser abordades en termes matemàtics."
+    },
+    {
+      "codigo": "6.3",
+      "competencia": "6",
+      "descripcion": "Utilitzar el potencial creatiu de les matemàtiques per fer propostes innovadores en contextos científics, tecnològics, socials, artístics i culturals."
+    },
+    {
+      "codigo": "6.4",
+      "competencia": "6",
+      "descripcion": "Identificar i valorar l’aportació actual i històrica de les matemàtiques al progrés de la humanitat, també des d’una perspectiva de gènere, davant dels reptes que planteja la societat actual."
+    },
+    {
+      "codigo": "6.5",
+      "competencia": "6",
+      "descripcion": "Argumentar matemàticament i amb esperit crític sobre diferents aspectes socioculturals com ara pseudociències, política, medi ambient, economia i consumisme, desigualtats, tradicions i costums, etc."
+    },
+    {
+      "codigo": "7.1",
+      "competencia": "7",
+      "descripcion": "Mostrar organització en comunicar les idees matemàtiques."
+    },
+    {
+      "codigo": "7.2",
+      "competencia": "7",
+      "descripcion": "Usar la terminologia, la simbologia i el rigor matemàtic en la comunicació i la representació de les matemàtiques."
+    },
+    {
+      "codigo": "7.3",
+      "competencia": "7",
+      "descripcion": "Expressar oralment les idees matemàtiques amb un registre coherent i precís."
+    },
+    {
+      "codigo": "7.4",
+      "competencia": "7",
+      "descripcion": "Escriure textos matemàtics de tot tipus (descriptius, argumentatius, expositius, instructius, etc.) amb rigor científic, de lectura fluïda i coherent i en els quals l’ús del llenguatge i de la simbologia matemàtica sigui precís."
+    },
+    {
+      "codigo": "7.5",
+      "competencia": "7",
+      "descripcion": "Dissenyar representacions matemàtiques que siguin capaces, per si soles, d’expressar idees matemàtiques sintetitzades."
+    },
+    {
+      "codigo": "7.6",
+      "competencia": "7",
+      "descripcion": "Utilitzar l’expressió artística i creativa per comunicar, representar i expressar idees i raonaments matemàtics, com per exemple la fotografia matemàtica, els vídeos matemàtics, les obres visuals i la música."
+    },
+    {
+      "codigo": "7.7",
+      "competencia": "7",
+      "descripcion": "Dialogar entre iguals i debatre idees matemàtiques per descriure, explicar i justificar raonaments, processos i conclusions."
+    },
+    {
+      "codigo": "8.1",
+      "competencia": "8",
+      "descripcion": "Identificar els errors propis que es fan en matemàtiques, descobrir els elements conceptuals, de procediment o d’estratègia que els provoquen i, finalment, expressar de manera raonada el motiu de l’error."
+    },
+    {
+      "codigo": "8.2",
+      "competencia": "8",
+      "descripcion": "Decidir i posar en pràctica estratègies concretes que permetin evitar l’error i superar la dificultat."
+    },
+    {
+      "codigo": "8.3",
+      "competencia": "8",
+      "descripcion": "Perseverar en la consecució dels objectius implementant noves estratègies matemàtiques tot identificant i gestionant les pròpies emocions."
+    },
+    {
+      "codigo": "8.4",
+      "competencia": "8",
+      "descripcion": "Participar activament de l’autoavaluació, compartint i consensuant amb el professorat les estratègies de millora."
+    },
+    {
+      "codigo": "8.5",
+      "competencia": "8",
+      "descripcion": "Desenvolupar la capacitat creativa fent propostes matemàtiques innovadores relacionades amb aspectes artístics, culturals, socials i tecnològics i gaudint de la llibertat de decidir sense mostrar por a equivocar-se."
+    },
+    {
+      "codigo": "9.1",
+      "competencia": "9",
+      "descripcion": "Aportar i compartir estratègies i raonaments matemàtics amb els companys i valorar l’èxit col·lectiu com una estratègia de millora personal."
+    },
+    {
+      "codigo": "9.2",
+      "competencia": "9",
+      "descripcion": "Col·laborar en el treball en equip tant en entorns presencials com virtuals, escoltant els altres i valorant les seves aportacions, respectant la perspectiva de gènere i la multiculturalitat, compartint i construint coneixement matemàtic de manera conjunta."
+    },
+    {
+      "codigo": "9.3",
+      "competencia": "9",
+      "descripcion": "Idear, dissenyar i aportar activitats i problemes matemàtics de qualitat conceptual a la resta de companys per tal de participar activament en la construcció col·lectiva del coneixement matemàtic."
+    },
+    {
+      "codigo": "9.4",
+      "competencia": "9",
+      "descripcion": "Ajudar a identificar errors i dificultats d’aprenentatge de les companyes i companys fent aportacions constructives i concretes que puguin ajudar a superar- los i a millorar."
+    },
+    {
+      "codigo": "9.5",
+      "competencia": "9",
+      "descripcion": "Utilitzar la llengua catalana en l’aprenentatge de les matemàtiques com una eina de cohesió, inclusió i equitat."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "1. Sentit de la mesura · Mesura",
+      "titulo": "Sentit de la mesura · Mesura",
+      "items": [
+        "Resolució de problemes que impliquin mesures de longitud, superfície o volum en un sistema de coordenades cartesianes.",
+        "Interpretació de la integral definida com l’àrea sota una corba.",
+        "Càlcul d’àrees sota una corba a través del càlcul de primitives, utilitzant tècniques elementals.",
+        "Resolució de problemes que impliquin càlcul de superfícies planes o volums de revolució, aplicant el concepte d’integral."
+      ]
+    },
+    {
+      "codigo": "2",
+      "bloque": "2. Sentit de la mesura · Canvi",
+      "titulo": "Sentit de la mesura · Canvi",
+      "items": [
+        "Aplicació dels conceptes de límit, continuïtat i derivabilitat a la representació i a l’estudi de situacions susceptibles de ser modelitzades mitjançant funcions.",
+        "Ús de la derivada com a raó de canvi en la resolució de problemes d’optimització en contextos diversos."
+      ]
+    },
+    {
+      "codigo": "3",
+      "bloque": "3. Sentit algebraic · Model matemàtic",
+      "titulo": "Sentit algebraic · Model matemàtic",
+      "items": [
+        "Identificació de la classe de funció (polinòmiques, exponencials, irracionals, racionals, logarítmiques, trigonomètriques i funcions a trossos) que modelitza relacions quantitatives en contextos diversos: científics, socials i propis de les matemàtiques.",
+        "Ús d’eines tecnològiques per determinar els models funcionals més apropiats en contextos diversos o per resoldre les equacions que se’n desprenen."
+      ]
+    },
+    {
+      "codigo": "4",
+      "bloque": "4. Sentit algebraic · Igualtat i desigualtat",
+      "titulo": "Sentit algebraic · Igualtat i desigualtat",
+      "items": [
+        "Resolució d’equacions, d’inequacions i de sistemes per trobar solucions a reptes que es plantegin a partir de la modelització d’una situació."
+      ]
+    },
+    {
+      "codigo": "5",
+      "bloque": "5. Sentit algebraic · Relacions i funcions",
+      "titulo": "Sentit algebraic · Relacions i funcions",
+      "items": [
+        "Anàlisi, representació i interpretació de relacions quantitatives fent servir eines tecnològiques quan sigui necessari.",
+        "Estudi de les propietats de diverses classes de funcions: polinòmiques, exponencials, irracionals, racionals, logarítmiques, trigonomètriques i funcions a trossos.",
+        "Ús de l’àlgebra simbòlica en la representació i l’explicació de relacions matemàtiques en diferents contextos."
+      ]
+    },
+    {
+      "codigo": "6",
+      "bloque": "6. Sentit algebraic · Pensament computacional",
+      "titulo": "Sentit algebraic · Pensament computacional",
+      "items": [
+        "Formulació, resolució i anàlisi de problemes en contextos diversos amb les eines i els programes més adequats.",
+        "Comparació d’algorismes alternatius per resoldre el mateix problema mitjançant raonament lògic."
+      ]
+    },
+    {
+      "codigo": "7",
+      "bloque": "7. Sentit de la mesura · Mesura",
+      "titulo": "Sentit de la mesura · Mesura",
+      "items": [
+        "Resolució de problemes que impliquin mesures de longitud, superfície o volum en un sistema de coordenades cartesianes."
+      ]
+    },
+    {
+      "codigo": "8",
+      "bloque": "8. Sentit espacial · Formes geomètriques de dues i tres dimensions",
+      "titulo": "Sentit espacial · Formes geomètriques de dues i tres dimensions",
+      "items": [
+        "Objectes geomètrics de tres dimensions: anàlisi de les propietats i de les característiques fonamentals.",
+        "Resolució de problemes relatius a objectes geomètrics a l’espai representats amb coordenades cartesianes."
+      ]
+    },
+    {
+      "codigo": "9",
+      "bloque": "9. Sentit espacial · Localització i sistemes de representació",
+      "titulo": "Sentit espacial · Localització i sistemes de representació",
+      "items": [
+        "Relacions d’objectes geomètrics a l’espai: representació i exploració amb ajuda d’eines digitals.",
+        "Expressions algebraiques dels objectes geomètrics a l’espai: selecció de la més adequada en funció de la situació a resoldre."
+      ]
+    },
+    {
+      "codigo": "10",
+      "bloque": "10. Sentit espacial · Visualització, raonament i modelització geomètrica",
+      "titulo": "Sentit espacial · Visualització, raonament i modelització geomètrica",
+      "items": [
+        "Representació d’objectes geomètrics a l’espai mitjançant eines digitals.",
+        "Ús de models matemàtics (geomètrics, algebraics, etc.) per resoldre problemes a l’espai tant del context matemàtic com en connexió amb altres disciplines i àrees d’interès.",
+        "Validació per mitjà de la deducció i la demostració de teoremes de conjectures geomètriques a l’espai.",
+        "Modelització de la posició i del moviment d’un objecte a l’espai utilitzant vectors."
+      ]
+    },
+    {
+      "codigo": "11",
+      "bloque": "11. Sentit algebraic · Model matemàtic",
+      "titulo": "Sentit algebraic · Model matemàtic",
+      "items": [
+        "Ús de les matrius per modelar situacions derivades de contextos científics, socials i de la vida quotidiana."
+      ]
+    },
+    {
+      "codigo": "12",
+      "bloque": "12. Sentit algebraic · Igualtat i desigualtat",
+      "titulo": "Sentit algebraic · Igualtat i desigualtat",
+      "items": [
+        "Tècniques i ús de matrius per modelitzar situacions en què apareguin sistemes d’equacions lineals."
+      ]
+    },
+    {
+      "codigo": "13",
+      "bloque": "13. Sentit algebraic · Relacions i funcions",
+      "titulo": "Sentit algebraic · Relacions i funcions",
+      "items": [
+        "Ús de l’àlgebra simbòlica en la representació i l’explicació de relacions matemàtiques en diferents contextos."
+      ]
+    },
+    {
+      "codigo": "14",
+      "bloque": "14. Sentit algebraic · Pensament computacional",
+      "titulo": "Sentit algebraic · Pensament computacional",
+      "items": [
+        "Formulació, resolució i anàlisi de problemes en contextos diversos amb les eines i els programes més adequats.",
+        "Comparació d’algorismes alternatius per resoldre el mateix problema mitjançant el raonament lògic."
+      ]
+    },
+    {
+      "codigo": "15",
+      "bloque": "15. Sentit de la mesura · Mesura",
+      "titulo": "Sentit de la mesura · Mesura",
+      "items": [
+        "Anàlisi de la incertesa associada a un fenomen aleatori mitjançant la probabilitat: interpretació subjectiva, clàssica i freqüentista."
+      ]
+    },
+    {
+      "codigo": "16",
+      "bloque": "16. Sentit estocàstic · Incertesa",
+      "titulo": "Sentit estocàstic · Incertesa",
+      "items": [
+        "Càlcul de probabilitats en experiments compostos. Probabilitat condicionada i independència entre successos aleatoris. Diagrames d’arbre i taules de contingència.",
+        "Resolució de problemes i interpretació del teorema de Bayes per actualitzar la probabilitat a partir de l’observació i l’experimentació i la presa de decisions en condicions d’incertesa."
+      ]
+    },
+    {
+      "codigo": "17",
+      "bloque": "17. Sentit estocàstic · Distribucions de probabilitat",
+      "titulo": "Sentit estocàstic · Distribucions de probabilitat",
+      "items": [
+        "Identificació dels diferents tipus de variables aleatòries discretes i contínues.",
+        "Ús i interpretació dels paràmetres d’una distribució i aplicació a les distribucions binomial i normal.",
+        "Modelització de fenòmens estocàstics mitjançant les distribucions de probabilitat binomial i normal. Càlcul de probabilitats associades mitjançant eines tecnològiques."
+      ]
+    },
+    {
+      "codigo": "18",
+      "bloque": "18. Sentit socioemocional · Creences, actituds i emocions",
+      "titulo": "Sentit socioemocional · Creences, actituds i emocions",
+      "items": [
+        "Habilitats d’autoregulació encaminades a descobrir els propis espais de millora i de recorregut personal.",
+        "Predisposició a endinsar-se en determinats aspectes de l’abstracció matemàtica com a únic camí per millorar-ne l’aplicabilitat.",
+        "Perseverança en la consecució d’una fita explorant i redefinint, si cal, les estratègies necessàries en el creixement personal.",
+        "Capacitat creativa fent propostes matemàtiques innovadores relacionades amb aspectes artístics, culturals, socials i tecnològics en els quals el gaudi de fer matemàtiques sigui present.",
+        "Habilitat a identificar les confusions conceptuals pròpies que determinen els errors que es fan en matemàtiques valorant-les com una important font d’aprenentatge."
+      ]
+    },
+    {
+      "codigo": "19",
+      "bloque": "19. Sentit socioemocional · Presa de decisions",
+      "titulo": "Sentit socioemocional · Presa de decisions",
+      "items": [
+        "Capacitat de posar en pràctica estratègies concretes que ajudin a superar confusions conceptuals pròpies.",
+        "Destreses per explorar i valorar diferents estratègies en el tractament matemàtic d’un problema o d’una situació.",
+        "Destreses a l’hora de millorar les estratègies d’aprenentatge a partir dels suggeriments de millora que es fan en les avaluacions i coavaluacions.",
+        "Capacitat de prendre decisions personals a partir de l’anàlisi crítica d’una situació susceptible de ser tractada amb argumentació matemàtica."
+      ]
+    },
+    {
+      "codigo": "20",
+      "bloque": "20. Sentit socioemocional · Inclusió, respecte i diversitat",
+      "titulo": "Sentit socioemocional · Inclusió, respecte i diversitat",
+      "items": [
+        "Capacitat d’escoltar, respectar i provar estratègies matemàtiques proposades per una altra persona.",
+        "Habilitat a aportar idees i arguments que ajudin a l’aprenentatge dels companys.",
+        "Capacitat de consensuar opinions i estratègies diverses a l’hora de prendre una decisió col·lectiva en el desenvolupament d’una activitat matemàtica.",
+        "Apreciació de l’èxit col·lectiu com un èxit individual.",
+        "Apreciació de la contribució de les matemàtiques i del paper de matemàtics i matemàtiques al llarg de la història en múltiples aspectes que ens envolten, tant de l’àmbit artístic, com cultural, social, científic i tecnològic."
+      ]
+    }
+  ],
+  "comunidad": "cataluna",
+  "idioma": "ca"
+}

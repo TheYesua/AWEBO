@@ -1,0 +1,96 @@
+{
+  "materia_oficial": "Dibuix Tècnic Aplicat a les Arts Plàstiques i el Disseny",
+  "materia": "Dibuix Tècnic Aplicat a les Arts Plàstiques i el Disseny",
+  "etapa": "Bachillerato",
+  "ciclo": "2º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Examinar la presència de la geometria a l’entorn físic i cultural, identificant les estructures i els traçats implícits, per analitzar gràficament i de forma raonada les estructures geomètriques i els elements tècnics implícits.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Avaluar i decidir quins són els procediments i els recursos propis de la geometria plana, descriptiva i de la normalització més idonis, per crear i concretar formes bidimensionals i tridimensionals de forma adequada i coherent als condicionants propis de cada tasca i amb les intencions creatives pròpies.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Dissenyar i elaborar formes bidimensionals i tridimensionals, valorant la importància del croquis a mà alçada així com de les convencions pròpies de la normalització, per representar-les amb precisió en projectes gràfics col·laboratius que permetin proposar, criticar, revisar, comparar, fer hipòtesis i proposar solucions de forma consensuada i eficaç, fent ús de les eines digitals disponibles.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Distingir tipologies i estructures geomètriques presents a l’art, al disseny, a l’entorn físic i a la natura, visualitzant-les i analitzant-les gràficament, valorant la seva funció i la seva idoneïtat per elaborar propostes."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Dissenyar elements bidimensionals i/o tridimensionals, fent ús dels procediments propis del disseny modular atenent les alteracions que les transformacions geomètriques possibiliten, mostrant interès per la precisió i la qualitat gràfica."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Dissenyar elements bidimensionals i/o tridimensionals, fent ús dels enllaços per generar línies compostes aplicables a la resolució de formes, com per exemple la geometrització de traços a mà alçada i la concreció de les generatrius en sòlids de revolució com els envasos, entre d’altres, mostrant interès per la precisió i la qualitat gràfica."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Traçar formes volumètriques amb corbes, aplicant els procediments propis de les axonometries normalitzades, mostrant interès per la precisió i la qualitat gràfica."
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "2",
+      "descripcion": "Modelar formes implicades en propostes creatives representades en perspectiva cònica, aplicant els procediments més apropiats per representar llums i ombres."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Crear propostes de l’àmbit del disseny de productes i d’interiors, l’escultura, la instal·lació, la curadoria, etc., elaborant projectes gràfics compartits, fent ús dels sistemes de representació i les convencions pròpies de la normalització necessàries per poder comunicar-se de manera eficient, mostrant interès per la precisió i la qualitat gràfica."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "1. Geometria, art i entorn",
+      "titulo": "Geometria, art i entorn",
+      "items": [
+        "Anàlisi i experimentació gràfiques i volumètriques mitjançant l’ús d’estructures modulars en els camps del disseny, l’art i l’arquitectura, entre d’altres.",
+        "Anàlisi i experimentació dels mètodes geomètrics implícits en la creació d’il·lusions òptiques i d’espais il·lusoris i onírics.",
+        "Diferenciació, anàlisi i ús de les corbes còniques i la seva presència en l’art, la natura, l’entorn i el disseny.",
+        "Anàlisi i diferenciació dels diferents sistemes de representació de l’espai aplicats a la creació contemporània en disseny i art.",
+        "Experimentació i ús de les transformacions geomètriques aplicades a les composicions fonamentades en estructures modulars, incloent-hi eines digitals.",
+        "Experimentació i ús de les tangències i els enllaços al disseny i a la creació de formes, incloent-hi eines digitals."
+      ]
+    },
+    {
+      "codigo": "2",
+      "bloque": "2. Sistemes de representació de l’espai",
+      "titulo": "Sistemes de representació de l’espai",
+      "items": [
+        "Experimentació i ús dels sistemes axonomètrics normalitzats en la representació de sòlids polièdrics amb corbes, en l’àmbit de l’arquitectura, el disseny i l’escultura, entre d’altres.",
+        "Anàlisi i experimentació d’estructures polièdriques i cossos platònics atenent l’entorn immediat i a la seva aplicació en projectes col·lectius i col·laboratius.",
+        "Anàlisi i traçat de sòlids i formes tridimensionals i sistema cònic frontal i oblic fent ús del programari DAO més adequat per facilitar que l’alumnat experimenti les diverses possibilitats d’aquest sistema de perspectiva sense la limitació del format paper.",
+        "Experimentació i ús de la representació d’ombres en l’àmbit de les perspectives axonomètriques i còniques aplicades al disseny d’espais i objectes."
+      ]
+    },
+    {
+      "codigo": "3",
+      "bloque": "3. Disseny de projectes i normalització",
+      "titulo": "Disseny de projectes i normalització",
+      "items": [
+        "Diferenciació i anàlisi de les fases del projecte gràfic aplicat al disseny i elaboració de croquis i plànols.",
+        "Experimentació i ús de la representació normalitzada aplicant l’acotació, els talls, les seccions i els trencaments."
+      ]
+    }
+  ],
+  "comunidad": "cataluna",
+  "idioma": "ca"
+}

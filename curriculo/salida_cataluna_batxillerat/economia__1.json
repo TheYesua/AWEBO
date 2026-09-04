@@ -1,0 +1,189 @@
+{
+  "materia_oficial": "Economia",
+  "materia": "Economia",
+  "etapa": "Bachillerato",
+  "ciclo": "1º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Prendre consciència de la importància de prendre decisions a escala econòmica, comparant els sistemes econòmics i reflexionant sobre la interdependència dels factors i dels agents econòmics, valorant els processos d’integració econòmica per intervenir en la realitat econòmica actual.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Analitzar el funcionament de mercat, utilitzant i valorant els models per a l’anàlisi de la realitat econòmica, per prendre decisions en l’àmbit microeconòmic.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Interpretar les interrelacions que es produeixen entre els agents econòmics en el flux circular de la renda, valorant-ne els beneficis i els costos que provoquen, per contribuir a un desenvolupament econòmic sostenible i al benestar de la societat.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Comprendre i valorar el funcionament del sistema financer, comparant diverses fonts de finançament, valorant-ne els efectes sobre l’economia real, per planificar i gestionar les pròpies finances com a ciutadans responsables.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Identificar i valorar els reptes i els desafiaments de l’economia actual, analitzant críticament la globalització, la nova economia i la revolució digital, per proposar iniciatives que fomentin l’equitat, la justícia i la sostenibilitat.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Analitzar els problemes econòmics actuals, utilitzant diverses fonts d’informació, tècniques de l’anàlisi econòmica i procediments de recerca, per plantejar solucions innovadores i sostenibles que responguin a necessitats individuals i col·lectives.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Interpretar la realitat econòmica prenent consciència de la importància de prendre decisions econòmiques i de les seves repercussions, segons els diferents sistemes econòmics."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Identificar l’escassetat com a problema bàsic de l’economia determinant el comportament i les interrelacions dels agents econòmics, i valorar les diferents estratègies econòmiques per resoldre’l."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Analitzar els processos de presa de decisions econòmiques, tant individuals com col·lectives, i l’impacte que tenen en la societat. Ser conscients de la realitat actual des d’una perspectiva econòmica permet comprendre millor el nostre comportament a l’hora de prendre decisions responsables, ja sigui en la recerca de la satisfacció de necessitats pròpies com en la distribució equitativa dels recursos. Cal estudiar en tota l’extensió el problema econòmic de l’escassetat i analitzar com afecta els diferents sectors, així com les solucions alternatives que proposen els diferents sistemes econòmics, i aprendre a valorar amb esperit crític els avantatges i els inconvenients de cadascun. Així mateix, és necessari reflexionar sobre com la globalització i els processos de cooperació i integració econòmica estan modificant no només l’estructura productiva global, sinó també l’estructura econòmica i la mateixa societat en conjunt."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Analitzar les fallades de mercat i identificar mesures de correcció, amb esperit crític, proposant-ne solucions."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Utilitzar els models econòmics per comprendre el funcionament del mercat i els seus elements, per actuar com a ciutadans formats i informats."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Valorar l’estat del benestar i les polítiques econòmiques com a font de millora econòmica i social. Un dels aspectes més rellevants en la realitat econòmica dels individus i de les famílies és entendre el funcionament de les diferents estructures de mercat, així com dels diferents models de competència, doncs amb això podran interpretar els efectes que algunes variacions provoquen en les corbes de l’oferta i la demanda, i actuar en conseqüència. Així, els i les alumnes seran capaços de detectar i analitzar les fallades i els límits del mercat amb esperit crític. L’existència de béns públics i les fallades de mercat com la inestabilitat dels cicles econòmics, les externalitats, la competència imperfecta i la distribució desigual de la renda, expliquen la necessitat d’intervenir en el funcionament de l’economia mitjançant diverses mesures de política econòmica. Per tot això és important saber reconèixer el paper regulador que té la intervenció del sector públic i les mesures de política econòmica i fiscal que duu a terme. Aquest coneixement permetrà a l’alumnat reflexionar sobre els efectes que aquestes polítiques tenen en la igualtat d’oportunitats, el creixement i la redistribució de la renda, així com valorar els beneficis que proporciona l’estat del benestar i analitzar-ne la sostenibilitat."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Analitzar les funcions i les interrelacions dels diferents agents en el flux circular de la renda determinant-ne la repercussió en el desenvolupament econòmic."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Valorar-ne la contribució al desenvolupament sostenible i al benestar social. Per entendre la realitat econòmica des d’un punt de vista macroeconòmic cal analitzar el paper que els diferents agents econòmics —Estat, empreses, famílies i altres— juguen en el desenvolupament econòmic i en el benestar de la societat. Cadascú, amb la seva participació, col·labora en aquest desenvolupament econòmic, ja sigui a través del treball, l’estalvi/despesa, les polítiques fiscals o les subvencions. Aquest creixement derivat del flux de la renda genera molts beneficis, però també alguns desequilibris, que l’alumnat ha de valorar amb esperit crític, com ara la desocupació i els seus costos, els fluxos migratoris com a conseqüència de la concentració empresarial, l’economia submergida o el desequilibri mediambiental. Conèixer i valorar aquests elements permetrà que l’alumnat adquireixi progressivament, al llarg de la vida, els coneixements necessaris per plantejar alternatives i vies de solució a situacions problemàtiques."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Comprendre el funcionament del sistema financer en l’economia real, analitzant els elements que hi intervenen."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Identificar diferents fonts de finançament per prendre decisions financeres fonamentades."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Aplicar els coneixements financers adquirits per planificar i gestionar amb responsabilitat i autonomia les finances personals. Adquirir coneixements de cultura financera permet millorar la planificació i la gestió de les pròpies finances personals, així com contribuir a una ciutadania crítica i responsable. Posar a l’abast dels estudiants eines, habilitats i coneixements per prendre decisions financeres informades, apropiades i ajustades al seu perfil de risc, necessitats i expectatives, redunda en una millora de l’estabilitat i la confiança en el sistema financer i el creixement econòmic sostenible. Com millor comprenem el món en què vivim, més capaços som de prendre decisions que ens permetin millorar la nostra vida, la societat i l’entorn en el qual vivim."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Identificar els reptes que planteja l’economia analitzant, amb sentit crític, l’impacte que provoca la globalització, la nova economia i la revolució digital al benestar econòmic i social dels ciutadans."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Argumentar, de manera crítica i constructiva, per proposar iniciatives que fomentin l’equitat, la justícia i la sostenibilitat a partir dels desafiaments de l’economia actual. L’economia actual s’enfronta a reptes importants dins un context globalitzat on les relacions econòmiques són cada cop més complexes. És molt important en aquest nou context saber reconèixer l’impacte que la nova economia i la revolució digital representen sobre l’ocupació i la distribució de la renda. L’alumnat ha de valorar de manera crítica el seu comportament com a futurs consumidors, usuaris i generadors de renda i, per això, és necessari que conegui i comprengui aspectes sobre l’empremta de la globalització i els problemes associats, com ara la desocupació, l’esgotament de recursos, la pobresa o el consumisme. Adquirir aquests coneixements els proporcionarà una base teòrica necessària per estimular iniciatives dins del seu entorn més proper i dur a terme accions que propiciïn la igualtat, el consum responsable, la millora contínua i el benestar social, participant activament en l’economia."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Utilitzar procediments de recerca i tècniques d’anàlisi econòmica, seleccionant i emprant fonts diverses d’informació, per plantejar solucions innovadores i sostenibles als problemes de la societat actual."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Comprendre els factors psicològics, socials, cognitius, emocionals i mediambientals que condicionen les decisions dels agents econòmics que responguin a necessitats individuals i col·lectives. L’estudi de la realitat socioeconòmica és complex. Per això és important disposar de diversos mètodes d’anàlisi d’aquesta realitat que en permetin una comprensió més profunda i representin una ajuda per poder intervenir-hi oferint propostes i solucions de valor que contribueixin a la millora i el benestar de la societat. És important que l’alumnat aprengui a utilitzar eines pròpies de l’economia experimental, per exemple, dissenyant i posant en marxa experiments econòmics senzills sobre qüestions properes, analitzant el cost-benefici en un projecte de caràcter economicoempresarial bàsic o fent un estudi de casos sobre la realitat econòmica aplicant el mètode científic. D’altra banda, també és interessant que sàpiga analitzar la realitat econòmica des de la perspectiva de l’economia del comportament, per la qual cosa hauran d’observar, a més dels aspectes econòmics, altres factors de caràcter sociològic, psicològic o emocional, per oferir respostes a problemes actuals."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "1. Les decisions econòmiques",
+      "titulo": "Les decisions econòmiques",
+      "items": [
+        "Anàlisi de la relació entre l’escassetat de recursos i les necessitats com a problema bàsic de l’economia per prendre decisions per part dels agents econòmics en el flux circular de la renda considerant el cost d’oportunitat.",
+        "Argumentació i debat a l’aula sobre els principis d’interacció social des d’una visió econòmica, benestar i desigualtats.",
+        "Aplicació d’estratègies de modelització com a eina per entendre les decisions en l’àmbit econòmic.",
+        "Comparació dels principals sistemes econòmics per assignar els recursos i situar-los en el temps amb esperit crític.",
+        "Coneixement i valoració del funcionament del sector financer i principals productes financers (préstecs, hipoteques i els seus substituts; assegurances).",
+        "Planificació i gestió de les decisions financeres (inversió, estalvi i consum) i de les finances personals: risc i benefici en la societat.",
+        "Identificació i ús d’estratègies de gestió de la incertesa i presa de decisions en entorns canviants: teoria de jocs, el dilema del presoner, jocs repetits i equilibris cooperatius."
+      ]
+    },
+    {
+      "codigo": "2",
+      "bloque": "2. La realitat econòmica. Eines per entendre el món amb una visió microeconòmica",
+      "titulo": "La realitat econòmica. Eines per entendre el món amb una visió microeconòmica",
+      "items": [
+        "Utilització de diferents models gràfics del mercat de competència per descriure el funcionament dels mercats i valorar-ne els avantatges i els inconvenients. Elasticitat.",
+        "Anàlisi cost-benefici.",
+        "Anàlisi de les fallades del mercat, valorant la intervenció reguladora del sector públic."
+      ]
+    },
+    {
+      "codigo": "3",
+      "bloque": "3. La realitat econòmica. Eines per entendre el món amb una visió macroeconòmica",
+      "titulo": "La realitat econòmica. Eines per entendre el món amb una visió macroeconòmica",
+      "items": [
+        "Anàlisi de la interacció entre els agents econòmics i el flux circular de la renda a escala macroeconòmica: la demanda agregada, l’oferta agregada i el seu funcionament.",
+        "Identificació dels indicadors per analitzar el desenvolupament i els desequilibris econòmics. Eficiència versus equitat.",
+        "Anàlisi de l’evolució del mercat de treball: l’empresa del futur, tipus d’atur i mesures correctores, l’impacte dels costos d’acomiadament, la segmentació del mercat de treball i la bretxa salarial per qüestions de gènere i edat.",
+        "Identificació de les principals àrees d’integració econòmica i reconeixement de la Unió",
+        "Europea com a entitat supranacional que determina algunes polítiques econòmiques.",
+        "Caracterització de les tendències del comerç internacional i valoració de l’impacte del proteccionisme o de la llibertat d’intercanvis en les economies dels països i el nivell de vida dels seus habitants. Coneixement i valoració del comerç just com a mesura d’equitat i sostenibilitat.",
+        "Reconeixement del paper dels moviments de capitals i dels mercats financers en l’economia global, així com de les funcions que tenen les principals organitzacions financeres internacionals. Coneixement i valoració de la banca ètica com a mesura d’equitat i sostenibilitat.",
+        "Funcionament, evolució i efectes del sistema financer. Cadena de blocs (blockchain), criptomonedes i ciberseguretat."
+      ]
+    },
+    {
+      "codigo": "4",
+      "bloque": "4. Les polítiques econòmiques",
+      "titulo": "Les polítiques econòmiques",
+      "items": [
+        "Reconeixement i valoració dels efectes que les mesures de política fiscal tenen en la producció i la renda i en la seva distribució. Dèficit públic i deute públic. Cost d’oportunitat que implica la política econòmica. El principi de solidaritat i els impostos.",
+        "L’economia submergida.",
+        "Participació en debats a l’aula sobre els avantatges i els inconvenients d’alguna mesura de política econòmica, mostrant arguments coherents i fonamentats i respecte per les opinions dels altres.",
+        "Valoració dels efectes de la inflació sobre la societat i anàlisi de casos d’hiperinflació i/o deflació.",
+        "Coneixement dels instruments de política monetària, anàlisi d’alguna actuació del Banc",
+        "Central Europeu i valoració dels efectes de la política monetària sobre la inflació, el creixement econòmic i el benestar de les persones."
+      ]
+    },
+    {
+      "codigo": "5",
+      "bloque": "5. Els reptes de l’economia actual. Fortaleses i febleses de l’economia",
+      "titulo": "Els reptes de l’economia actual. Fortaleses i febleses de l’economia",
+      "items": [
+        "Reconeixement dels aspectes crítics de la globalització en relació amb la sobreexplotació de recursos naturals i les condicions de treball.",
+        "Anàlisi del funcionament dels mercats en l’entorn local i global com a font d’oportunitats.",
+        "Anàlisi i valoració de l’impacte econòmic i social de les estratègies de la recerca, la innovació i la digitalització com a motor de canvi, en casos reals. Empresa ambidextra.",
+        "Indústria 4.0.",
+        "Identificació dels factors de creixement econòmic i desenvolupament sostenible. Els reptes del creixement econòmic. Limitacions ecològiques. Creixement demogràfic.",
+        "Economia circular, economia col·laborativa i solidària. Acompliment dels ODS.",
+        "Anàlisi de la situació de l’estat del benestar: paper de les polítiques actives d’ocupació i sostenibilitat de les pensions."
+      ]
+    }
+  ],
+  "comunidad": "cataluna",
+  "idioma": "ca"
+}

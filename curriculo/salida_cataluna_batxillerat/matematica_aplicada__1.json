@@ -1,0 +1,31 @@
+{
+  "materia_oficial": "Matemàtica Aplicada",
+  "materia": "Matemàtica Aplicada",
+  "etapa": "Bachillerato",
+  "ciclo": "1º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Identificar, seleccionar, organitzar i avaluar críticament informació, contrastant-ne la fiabilitat, per resoldre preguntes plantejades de forma autònoma i crear continguts relacionats amb l’aplicació de les matemàtiques.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Aplicar els aprenentatges de manera integrada i les diverses formes de raonament matemàtic, per plantejar i resoldre problemes de disciplines i camps diversos que utilitzen eines matemàtiques cercant i utilitzant les estratègies adequades, analitzant críticament les solucions i reformulant el procediment, si calgués.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Identificar i fer servir les idees, evidències i arguments que utilitzin algun dels diferents sentits matemàtics (numèric, algebraic, espacial, mètric, estocàstic i socioafectiu), que sustenten l’explicació de fenòmens i processos de diferents disciplines per adoptar una posició i interpretació personal basada en criteris cientificomatemàtics.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [],
+  "saberes_basicos": [],
+  "comunidad": "cataluna",
+  "idioma": "ca"
+}

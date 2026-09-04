@@ -1,0 +1,206 @@
+{
+  "materia_oficial": "Educació Física",
+  "materia": "Educació Física",
+  "etapa": "Bachillerato",
+  "ciclo": "1º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Autogestionar la condició física per a l’adopció d’un estil de vida actiu i saludable.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Resoldre situacions motrius diverses amb control i domini corporal per a la superació de reptes.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Organitzar activitats fisicoesportives per a l’ocupació i el gaudi del temps de lleure activament.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Aplicar actituds, valors i habilitats socials de forma proactiva en la pràctica d’activitat física i esportiva per a la millora de la convivència.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Elaborar un pla de treball personalitzat per al manteniment o la millora de la salut."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Consolidar els hàbits saludables valorant els beneficis que suposen al llarg de la vida."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Utilitzar els protocols d’actuació dels primers auxilis i de prevenció de lesions."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "1",
+      "descripcion": "Aplicar recursos digitals per a la monitorització de l’activitat física i l’adquisició d’hàbits saludables. L’assoliment d’aquesta competència específica es materialitzarà quan l’alumnat, conscient de tots els elements que condicionen la salut i l’activitat física, sigui capaç de tenir-los en compte, adaptar-los i coordinar-los per gestionar, planificar i autoregular la seva pròpia pràctica motriu i els seus hàbits de vida sobre la base dels seus interessos i objectius personals. Aquesta competència de caràcter transdisciplinari impregna la globalitat de l’àrea d’educació física, i es pot abordar des de l’autogestió de la condició física, la participació activa, l’alimentació saludable, l’educació postural, la cura del cos, l’autoconcepte, l’autoestima i la imatge percebuda en el camp de l’activitat física i l’esport. Hi ha diferents fórmules i contextos d’aplicació per materialitzar aquests aprenentatges, començant per la planificació personal de la pràctica motriu (de manera clàssica o mitjançant aplicacions digitals amb més possibilitats) o l’anàlisi de diferents aspectes per mantenir una dieta saludable, els primers auxilis, la prevenció de lesions o la participació en una àmplia gamma de propostes fisicoesportives que hi aportin context mitjançant la transferència a la seva vida quotidiana."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Resoldre situacions en diferents modalitats esportives i medis aplicant habilitats tècniques, tàctiques i estratègiques."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Aplicar els elements i tècniques d’expressió corporal adequats a cada composició. El bagatge motor que l’alumnat té en aquesta etapa li permetrà anticipar-se a les diferents situacions i adaptar les seves habilitats motrius a les exigències de cada situació. Això, li permetrà focalitzar la seva atenció en aspectes que fins ara quedaven en un pla secundari, millorant i perfeccionant així la seva execució tècnica i tàctica i identificant els errors més habituals que es donen en cada situació per poder-los evitar. Com en etapes anteriors, aquests aspectes s’hauran de desenvolupar en contextos de pràctica molt variats, entre els quals es poden destacar els reptes físics cooperatius i projectes motrius relacionats amb situacions de joc reduït o pròpies de l’esport. S’ha de prioritzar, en la mesura que sigui possible i segons les circumstàncies de cada centre, les manifestacions menys conegudes per l’alumnat i/o que destaquin pel seu caràcter mixt i inclusiu. D’altra banda, aquest bagatge motor, també li permetrà continuar consolidant la identitat pròpia, el coneixement expressiu i comunicatiu i la millora de les tècniques artisticoexpressives i ritmicomusicals que de manera progressiva anirà integrant en projectes artístics i representacions. Per abordar la cultura artisticoexpressiva es podrien emprar tècniques expressives concretes (com la improvisació, la mímica o la pantomima), el teatre (teatre gestual o de màscares, teatre d’ombres, teatre de llum negra, teatre de carrer, musical o similars), representacions més elaborades (lluita escènica, jocs de rol o activitats circenses, entre d’altres), o activitats ritmicomusicals amb caràcter expressiu (percussió corporal, balls, coreografies o altres expressions semblants)."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Gestionar activitats, sessions o jornades esportives desenvolupant funcions d’organització i dinamització."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Crear produccions d’expressió corporal incorporant-hi elements de crítica social."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Organitzar activitats físiques en el medi natural i urbà aplicant normes de seguretat i de conservació del medi ambient."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "3",
+      "descripcion": "Valorar les sortides professionals associades a l’activitat física i l’esport. Continuant amb el treball iniciat en les etapes prèvies i amb l’objectiu d’ampliar-ne el bagatge motor i les experiències, l’alumnat de batxillerat haurà de participar en activitats diverses realitzades en tot tipus de contextos, dins i fora del centre. A més, en aquests contextos també dissenyaran i organitzaran esdeveniments, espectacles i activitats fisicoesportives per a altres, amb un enfocament de responsabilitat ecològica i social en la línia de plantejaments com l’aprenentatge-servei. Es plantejaran situacions en què l’alumnat haurà d’implicar-se en la presa de decisions ajustades a les circumstàncies, en reptes o projectes que se li plantegin, en la definició d’objectius concrets, en l’elaboració de plans de treball i la seva execució, en la dinamització d’aquestes accions, en l’anàlisi del procés d’implementació d’aquestes i en la valoració del resultat final. Amb això, es pretendrà que l’alumnat transfereixi aquests aprenentatges i sigui capaç de gestionar activitats fisicoesportives fora d’horari escolar per a l’ocupació i el gaudi del seu temps de lleure. Els entorns on es podrà portar a terme l’organització d’aquestes activitats seran molt variats: dins del centre, poliesportius, escenaris, centres cívics, entorns urbans (circuits de cal·listènia, crossfit, patinatge, skate, parkour, etc.) i entorns naturals tant terrestres com aquàtics (senderisme, escalada, ràpel, esquí, orientació, rutes BTT, etc.). Finalment, també en el treball d’aquesta competència es posaran en valor les diferents sortides professionals vinculades a l’activitat física i l’esport perquè l’alumnat les conegui."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Cooperar en diferents situacions motrius mostrant maduresa en la gestió emocional i personal en l’assumpció dels diferents rols."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Resoldre conflictes mitjançant l’aplicació d’habilitats socials i valors davant situacions discriminatòries i de violència en la pràctica fisicoesportiva. Aquesta competència específica pretén superar les desigualtats i els comportaments incívics i antidemocràtics que de vegades es reprodueixen en els contextos fisicoesportius. Per això, d’una banda, incideix en les habilitats personals, en la gestió de les emocions i en el foment d’actituds de superació, tolerància a la frustració i maneig de l’èxit i del fracàs en contextos de pràctica motriu. Mentre que, de l’altra, en el pla col·lectiu, implica posar en joc habilitats socials per afrontar la interacció amb les persones amb les quals es convergeix en la pràctica motriu. Es tracta de dialogar, debatre, contrastar idees i posar-se d’acord per resoldre situacions, expressar propostes, pensaments i emocions, escoltar activament i actuar amb assertivitat. Com a conseqüència d’això es plantejaran situacions en què l’alumnat hagi d’exercir rols diversos relacionats amb la pràctica física (participant, espectador, àrbitre, entrenador, etc.) que ajudaran a analitzar i vivenciar les relacions socials des de diferents perspectives. D’altra banda, aquesta competència pretén anar un pas més enllà en aquesta etapa, i contribuir a generalitzar i democratitzar les pràctiques motrius que es practiquin al centre, així com els espais d’interacció en què es reprodueixin, fomentant la difusió de manifestacions esportives que no estan afectades per estereotips de gènere o competència motriu, com sí que passa en altres contextos."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "1. Vida activa i saludable · Activitat física saludable",
+      "titulo": "Vida activa i saludable · Activitat física saludable",
+      "items": [
+        "Disseny i planificació d’un programa personal d’activitat física: autoavaluació de les capacitats físiques i coordinatives, identificació d’objectius personals i desenvolupament d’aquests, sistemes d’entrenament, autoregulació i control de les càrregues de treball, progressió, avaluació dels resultats aconseguits i reorientació de les activitats a partir dels resultats."
+      ]
+    },
+    {
+      "codigo": "2",
+      "bloque": "2. Vida activa i saludable · Hàbits saludables",
+      "titulo": "Vida activa i saludable · Hàbits saludables",
+      "items": [
+        "Anàlisi i reflexió de dietes equilibrades segons les característiques físiques i personals amb una mirada saludable.",
+        "Planificació de tècniques i activitats específiques de relaxació, respiració i de prevenció i millora de la postura corporal.",
+        "Conscienciació dels efectes negatius que poden tenir alguns hàbits individuals i socials i pràctiques d’activitat física en la salut individual i col·lectiva."
+      ]
+    },
+    {
+      "codigo": "3",
+      "bloque": "3. Vida activa i saludable · Primers auxilis i prevenció de lesions",
+      "titulo": "Vida activa i saludable · Primers auxilis i prevenció de lesions",
+      "items": [
+        "Actuacions adequades davant d’accidents: desplaçament i transport d’accidentats, reanimació amb desfibril·lador automàtic (DEA) o semiautomàtic (DESA), protocol RCP, tècniques específiques en indicis d’accidents cardiovasculars i coneixement del contingut bàsic del kit d’assistència.",
+        "Prevenció i planificació de mesures de seguretat en la pràctica d’activitat física."
+      ]
+    },
+    {
+      "codigo": "4",
+      "bloque": "4. Vida activa i saludable · Recursos digitals al servei de la pràctica esportiva",
+      "titulo": "Vida activa i saludable · Recursos digitals al servei de la pràctica esportiva",
+      "items": [
+        "Ús d’aplicacions i recursos digitals per a la gestió de la pràctica d’activitat física."
+      ]
+    },
+    {
+      "codigo": "5",
+      "bloque": "5. Resolució de situacions motrius · Habilitats motrius",
+      "titulo": "Resolució de situacions motrius · Habilitats motrius",
+      "items": [
+        "Perfeccionament de les habilitats tècniques, tàctiques i estratègiques dels esports individuals, d’adversari, d’oposició o col·lectius.",
+        "Pràctica de diferents modalitats esportives, esports alternatius, esports adaptats i esports al medi natural.",
+        "Resolució de situacions motrius variades amb domini corporal en jocs i esports."
+      ]
+    },
+    {
+      "codigo": "6",
+      "bloque": "6. Resolució de situacions motrius · Expressió i comunicació corporal",
+      "titulo": "Resolució de situacions motrius · Expressió i comunicació corporal",
+      "items": [
+        "Utilització eficient i precisa d’elements i tècniques d’expressió corporal en representacions i dramatitzacions.",
+        "Pràctica d’activitats ritmicomusicals amb intencionalitat estètica i expressiva."
+      ]
+    },
+    {
+      "codigo": "7",
+      "bloque": "7. Organització i creació d’activitats, produccions i esdeveniments · Gestió d’activitats fisicoesportives",
+      "titulo": "Organització i creació d’activitats, produccions i esdeveniments · Gestió d’activitats fisicoesportives",
+      "items": [
+        "Planificació i gestió efectiva en l’organització d’activitats fisicoesportives en diferents medis i entorns.",
+        "Assumpció de rols de dinamització i organització (coordinador/a, director/a, responsable de grup, etc.) en activitats, jornades i esdeveniments.",
+        "Disseny de les activitats fisicoesportives atenent als elements necessaris: objectius, medi, seguretat, temps, espais, col·lectiu al qual va dirigit, material, etc.",
+        "Utilització òptima de materials, equipaments i espais segons les especificacions tècniques i per a la seva conservació i millora."
+      ]
+    },
+    {
+      "codigo": "8",
+      "bloque": "8. Organització i creació d’activitats, produccions i esdeveniments · Creació de composicions d’expressió corporal",
+      "titulo": "Organització i creació d’activitats, produccions i esdeveniments · Creació de composicions d’expressió corporal",
+      "items": [
+        "Creació de composicions individuals i col·lectives d’expressió corporal per comunicar històries, idees, sentiments, etc.",
+        "Incorporació crítica d’elements socialment i culturalment rellevants a les representacions i les creacions pròpies."
+      ]
+    },
+    {
+      "codigo": "9",
+      "bloque": "9. Organització i creació d’activitats, produccions i esdeveniments · Sortides professionals i ús del temps de lleure",
+      "titulo": "Organització i creació d’activitats, produccions i esdeveniments · Sortides professionals i ús del temps de lleure",
+      "items": [
+        "Valoració de les activitats fisicoesportives i expressives com una manera d’ocupar el temps de lleure.",
+        "Identificació de les professions vinculades a l’activitat física, la salut i les arts escèniques com a possibles sortides laborals."
+      ]
+    },
+    {
+      "codigo": "10",
+      "bloque": "10. Valors, autoregulació emocional i interacció social en situacions motrius · Gestió personal i emocional",
+      "titulo": "Valors, autoregulació emocional i interacció social en situacions motrius · Gestió personal i emocional",
+      "items": [
+        "Gestió i regulació assertiva d’emocions i habilitats personals en situacions motrius: resiliència, superació, gestió de l’èxit, del fracàs, etc."
+      ]
+    },
+    {
+      "codigo": "11",
+      "bloque": "11. Valors, autoregulació emocional i interacció social en situacions motrius · Habilitats socials i valors",
+      "titulo": "Valors, autoregulació emocional i interacció social en situacions motrius · Habilitats socials i valors",
+      "items": [
+        "Aplicació d’estratègies i habilitats socials (escolta activa, diàleg, resolució de conflictes, entesa, compromís social) que fomentin la integració, la participació, la cooperació i el respecte a les diferències en les activitats amb grup."
+      ]
+    },
+    {
+      "codigo": "12",
+      "bloque": "12. Valors, autoregulació emocional i interacció social en situacions motrius · Activitat física, gènere i discriminació",
+      "titulo": "Valors, autoregulació emocional i interacció social en situacions motrius · Activitat física, gènere i discriminació",
+      "items": [
+        "Reconeixement i actitud proactiva respecte a conductes o situacions contràries a la convivència.",
+        "Adaptació de les activitats i les normes fomentant l’equitat i la igualtat de gènere en la pràctica fisicoesportiva."
+      ]
+    }
+  ],
+  "comunidad": "cataluna",
+  "idioma": "ca"
+}

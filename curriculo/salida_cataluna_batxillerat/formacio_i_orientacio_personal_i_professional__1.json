@@ -1,0 +1,36 @@
+{
+  "materia_oficial": "Formació i Orientació Personal i Professional",
+  "materia": "Formació i Orientació Personal i Professional",
+  "etapa": "Bachillerato",
+  "ciclo": "1º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Identificar les principals característiques del desenvolupament evolutiu de la persona, així com els processos físics i psicològics implicats en la cognició, la motivació i l’aprenentatge, analitzant les seves implicacions en la conducta i potenciant les qualitats personals i de relació social pròpies i dels altres, per afrontar de forma autònoma i eficaç els reptes de l’itinerari vital i desenvolupar estratègies de gestió emocional i d’autoaprenentatge en els àmbits personal, social i acadèmic.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Integrar les dimensions social i antropològica de l’ésser humà, considerant de forma respectuosa i empàtica els factors personals i socioculturals diferencials que intervenen en la configuració psicològica de la persona, per fomentar l’esperit crític envers els altres i l’entorn, i per desenvolupar, de forma inclusiva, les estratègies i habilitats socials necessàries en l’adaptació als canvis de la societat, i promoure el compromís d’un desenvolupament sostenible en la societat.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Reflexionar sobre les aptituds i competències pròpies, els trets de personalitat, els interessos professionals i els valors ocupacionals, així com sobre els diferents itineraris formatius, desenvolupant actituds d’autosuperació, adaptabilitat i iniciativa, i les destreses necessàries per a una presa de decisions ajustada i relacionada amb el projecte vital, acadèmic i professional propi.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Dissenyar el propi itinerari formatiu i professional en funció de les seves expectatives personals i de l’autoconeixement, integrant elements ocupacionals com un pla de recerca activa d’ocupació i/o autoocupació, tot identificant metes realistes i pertinents per a una inserció en el món laboral i social.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [],
+  "saberes_basicos": [],
+  "comunidad": "cataluna",
+  "idioma": "ca"
+}

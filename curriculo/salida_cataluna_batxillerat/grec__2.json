@@ -1,0 +1,300 @@
+{
+  "materia_oficial": "Grec",
+  "materia": "Grec",
+  "etapa": "Bachillerato",
+  "ciclo": "2º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Identificar els aspectes bàsics de la llengua grega, distingir i analitzar les unitats lingüístiques i reflexionar-hi mitjançant la comparació amb la llengua d’ensenyament i amb altres llengües del repertori individual de l’alumnat, per traduir i interpretar textos grecs que siguin significatius per a l’estudiant.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Distingir els ètims i formants grecs presents en el lèxic d’ús quotidià, identificant els canvis semàntics que hagin tingut lloc i establint una comparació amb la llengua d’ensenyament i altres llengües del repertori individual de l’alumnat, per deduir el significat etimològic del lèxic conegut i els significats de lèxic nou o especialitzat.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Interpretar i valorar, amb sentit crític, textos grecs de diferents gèneres i èpoques, assumint el procés creatiu com a complex i inseparable del context històric, social i polític i de les seves influències artístiques, per identificar-ne la genealogia i valorar- ne l’aportació a la literatura europea en general i catalana en particular.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Analitzar i percebre les característiques de la civilització grega en l’àmbit personal — individual i col·lectiu— religiós i sociopolític, adquirint coneixements sobre el món hel·lènic i comparant críticament el present i el passat, per valorar les aportacions del món clàssic grec al nostre entorn com a base d’una ciutadania democràtica i compromesa.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Valorar críticament el patrimoni històric, arqueològic, artístic i cultural heretat de la civilització grega, promovent-ne la sostenibilitat i reconeixent-lo com a producte de la creació humana i com a testimoni de la història, per explicar el llegat material i immaterial grec com a transmissor de coneixement i font d’inspiració de creacions modernes i contemporànies.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Fer traduccions directes i/o inverses de textos o fragments de dificultat mitjana-alta (originals o adaptats), amb correcció ortogràfica i expressiva, per tal d’identificar i analitzar unitats lingüístiques regulars de la llengua grega i apreciar variants i coincidències amb altres llengües conegudes per l’alumnat."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Ampliar el coneixement iniciat en el curs anterior de paraules polisèmiques, a partir de diversos suports, tant escrits com digitals, amb l’objectiu d’aprofundir en la millora de la competència lingüística de l’alumnat tant en la llengua de partida com d’arribada."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Revisar i esmenar de manera progressivament autònoma les pròpies traduccions i les dels companys i companyes, per tal de ser capaç de fer propostes de millora i argumentar els canvis amb terminologia especialitzada a partir de la reflexió lingüística."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "1",
+      "descripcion": "Aprofundir en l’anàlisi dels progressos i de les dificultats d’aprenentatge de la llengua grega, seleccionant les estratègies més adequades i eficaces per superar aquestes dificultats i consolidar-ne l’aprenentatge, amb l’objectiu de poder fer activitats de planificació del propi aprenentatge, autoavaluació i coavaluació, com les proposades a primer."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Deduir el significat etimològic d’un terme d’ús específic i poc freqüent i inferir el significat de termes de nova aparició o procedents de lèxic especialitzat, aplicant, de manera guiada, estratègies de reconeixement de formants grecs, tot atenent els canvis fonètics, morfològics o semàntics que hagin tingut lloc, per tal de millorar la precisió lèxica en la llengua o llengües d’ús habitual de l’alumne o alumna."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Explicar la relació del grec amb les llengües modernes més enllà de les 2n curs llengües oficials de Catalunya i molt especialment amb el grec modern, utilitzant amb iniciativa estratègies i coneixements de les llengües i els llenguatges que conformen el repertori de l’alumnat, amb l’objectiu d’apreciar la continuïtat de la llengua grega fins als nostres dies en molts idiomes moderns."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Analitzar críticament i denunciar prejudicis i estereotips lingüístics adoptant una actitud de respecte i valoració de la diversitat com a riquesa cultural, lingüística i dialectal per ajudar a crear una societat més tolerant i integradora."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Analitzar, interpretar i comentar textos i fragments literaris de diversa índole, de complexitat mitjana o alta, aplicant estratègies d’anàlisi i reflexió que impliquin mobilitzar la pròpia experiència, com a eina per comprendre el món i la condició humana i desenvolupar la sensibilitat estètica i l’hàbit lector."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Analitzar i explicar els temes, els tòpics, els gèneres i els valors ètics o estètics d’obres o fragments literaris grecs, comparant-los amb obres o fragments literaris posteriors (procedents especialment de la literatura catalana), des d’un enfocament intertextual guiat, per tal de valorar les arrels gregues de la civilització occidental."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Identificar i definir paraules gregues que designen conceptes específics per a l’estudi i la comprensió de la civilització hel·lena, l’aprenentatge dels quals combina coneixements lèxics i culturals, en textos de diferents formats, perquè l’alumnat aprofundeixi en el coneixement de conceptes clau de la civilització grega i universal."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "3",
+      "descripcion": "Crear textos d’una certa extensió, de manera individual o col·lectiva, amb una clara intenció literària i consciència d’estil, en diferents suports i amb ajuda d’altres llenguatges artístics i audiovisuals, a partir de la lectura d’obres o fragments significatius en els quals s’hagi partit de la civilització i la cultura gregues com a font d’inspiració, amb la finalitat que l’alumne o alumna sigui conscient de la utilitat de la llengua i la literatura gregues per millorar la llengua pròpia."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Cercar, contrastar, seleccionar i combinar informacions obtingudes des de diferents fonts sobre la pervivència del llegat grec en el món modern i molt especialment en la cultura catalana."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Debatre sobre la importància, l’evolució, l’assimilació o el qüestionament de diferents aspectes del llegat grec a la nostra societat, tot utilitzant estratègies retòriques i oratòries de manera guiada, per tal que l’estudiant prengui consciència del seu potencial paper com a mediador entre posicions contraposades quan sigui necessari, seleccionant i contrastant informació i experiències veraces i mostrant interès, respecte i empatia per altres opinions i 2n curs argumentacions."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Elaborar treballs de recerca de manera progressivament autònoma en diferents suports sobre aspectes del llegat de la civilització grega en l’àmbit personal, religiós i sociopolític, localitzant, seleccionant i contrastant informació procedent de diferents fonts, calibrant-ne la fiabilitat i pertinència i respectant els principis de rigor i propietat intel·lectual, per tal de desvetllar en l’alumnat una actitud responsable i de respecte vers les fonts d’informació utilitzades."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Aprofundir en la identificació i l’explicació del llegat material i immaterial de la civilització grega com a font d’inspiració, i analitzar produccions culturals i artístiques posteriors (de l’àmbit fonamentalment català) a partir de criteris donats, per prendre així consciència de la petja inesborrable que ha deixat damunt d’aquestes la civilització grega."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Aprofundir en el coneixement i la valoració del patrimoni històric, arqueològic, artístic i cultural universal i, sobretot, català, heretat de la civilització grega, interessant-se pels processos de construcció, preservació, conservació i restauració i per les actituds cíviques que n’asseguren la sostenibilitat."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "5",
+      "descripcion": "Fomentar una actitud crítica i compromesa de l’alumnat per ser capaç de denunciar totes les accions que puguin posar en risc la conservació del patrimoni grec (material o immaterial) i la seva pervivència en el futur, tot fent propostes d’acció coherents per protegir-lo i llegar-lo en perfectes condicions a les generacions futures."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "1. Traducció · Unitats lingüístiques de la llengua grega",
+      "titulo": "Traducció · Unitats lingüístiques de la llengua grega",
+      "items": [
+        "Aplicació pràctica del concepte de llengua flexiva: flexió nominal, pronominal i verbal de"
+      ]
+    },
+    {
+      "codigo": "2",
+      "bloque": "2. Traducció · la llengua grega en el procés de traducció i interpretació",
+      "titulo": "Traducció · la llengua grega en el procés de traducció i interpretació",
+      "items": [
+        "Interpretació i anàlisi de la sintaxi oracional: sintaxi dels casos, així com de les estructures"
+      ]
+    },
+    {
+      "codigo": "5",
+      "bloque": "5. Traducció · La traducció: tècniques, processos i eines",
+      "titulo": "Traducció · La traducció: tècniques, processos i eines",
+      "items": [
+        "Valoració de la importància de l’anàlisi morfosintàctica no tant per se sinó com a eina al"
+      ]
+    },
+    {
+      "codigo": "6",
+      "bloque": "6. Traducció · servei de la traducció i la interpretació",
+      "titulo": "Traducció · servei de la traducció i la interpretació",
+      "items": [
+        "Identificació i aplicació pràctica de les principals estratègies de traducció, per"
+      ]
+    },
+    {
+      "codigo": "12",
+      "bloque": "12. Traducció · freqüents de traducció i tècniques per evitar-los",
+      "titulo": "Traducció · freqüents de traducció i tècniques per evitar-los",
+      "items": [
+        "Maneig adequat de les eines de traducció: glossaris, diccionaris, atles o correctors"
+      ]
+    },
+    {
+      "codigo": "14",
+      "bloque": "14. Traducció · interpretació de textos",
+      "titulo": "Traducció · interpretació de textos",
+      "items": [
+        "Aprenentatge i aplicació pràctica de les tècniques pròpies de la lectura comparada i del"
+      ]
+    },
+    {
+      "codigo": "17",
+      "bloque": "17. Traducció · traduccions originals i impreses fent servir terminologia metalingüística",
+      "titulo": "Traducció · traduccions originals i impreses fent servir terminologia metalingüística",
+      "items": [
+        "Comprensió i identificació dels recursos estilístics més freqüents i la seva relació amb el"
+      ]
+    },
+    {
+      "codigo": "18",
+      "bloque": "18. Traducció · contingut del text, que facilitin la interpretació textual",
+      "titulo": "Traducció · contingut del text, que facilitin la interpretació textual",
+      "items": [
+        "Aplicació de les estratègies que facilitin la producció de textos breus en grec clàssic a"
+      ]
+    },
+    {
+      "codigo": "20",
+      "bloque": "20. Traducció · grega per millorar el domini d’altres llengües properes a l’alumnat",
+      "titulo": "Traducció · grega per millorar el domini d’altres llengües properes a l’alumnat",
+      "items": [
+        "Presa de consciència de la importància de la traducció com a instrument que afavoreix"
+      ]
+    },
+    {
+      "codigo": "23",
+      "bloque": "23. Traducció · societat tolerant i solidària",
+      "titulo": "Traducció · societat tolerant i solidària",
+      "items": [
+        "Establiment d’estratègies i adopció d’eines, analògiques i digitals, individuals i"
+      ]
+    },
+    {
+      "codigo": "27",
+      "bloque": "27. Plurilingüisme",
+      "titulo": "Plurilingüisme",
+      "items": [
+        "Domini i ús correcte del lèxic grec, així com de procediments de complexitat mitjana- alta de composició i derivació en la formació de paraules gregues, de lexemes, sufixos i prefixos d’origen grec en el lèxic específic de les ciències i la tècnica, de la influència del grec en l’evolució de la llengua d’ensenyament, de la resta de llengües que conformen el repertori lingüístic individual de l’alumnat, a partir del lèxic que aparegui en els textos traduïts a classe, per tal que la traducció i l’estudi de les etimologies d’origen grec presents en les llengües de l’alumnat es complementin mútuament.",
+        "Ampliació de les tècniques bàsiques apreses a primer per a l’elaboració de famílies lèxiques i d’un vocabulari bàsic grec de freqüència a partir dels textos traduïts a classe.",
+        "Foment de l’interès i la curiositat dels i les alumnes per conèixer el significat etimològic de les paraules i la importància de l’ús adequat del vocabulari com a instrument bàsic en la comunicació, prenent novament com a base els textos traduïts.",
+        "Reforç de l’actitud de respecte de l’alumnat per totes les llengües i acceptació de les diferències culturals de la gent que les parla com a element enriquidor de la pròpia personalitat.",
+        "Valoració de la importància de la tècnica de traducció per a l’assimilació i l’ús de continguts lingüístics en altres idiomes moderns, incloent-hi la llengua grega moderna, hereva directa del grec clàssic, idioma oficial de la República Hel·lènica i de la",
+        "República de Xipre, a partir de textos senzills en aquestes llengües que permetin valorar la influència que sobre aquestes ha exercit la llengua grega clàssica.",
+        "Maneig adequat de les eines analògiques i digitals per a l’aprenentatge, la comunicació i el desenvolupament de projectes amb parlants o estudiants de grec a escala transnacional, per tal de fomentar la interrelació i l’enriquiment personal i emocional de l’alumnat.",
+        "Coneixement i ús correcte en diversos contextos orals i escrits de les expressions i el lèxic específic grec per compartir amb els altres la reflexió sobre la comunicació, la llengua i les eines de comunicació i aprenentatge, enteses aquestes com a part fonamental de l’educació integral de l’alumnat."
+      ]
+    },
+    {
+      "codigo": "28",
+      "bloque": "28. Educació literària",
+      "titulo": "Educació literària",
+      "items": [
+        "Aprofundiment en l’anàlisi de les principals etapes i vies de transmissió de la literatura grega a partir d’exemples pràctics extrets d’obres literàries de diferents èpoques, així com dels principals gèneres literaris, ja sigui per mitjà de les explicacions de l’ensenyant o amb la lectura de fragments traduïts: origen, tipologia, cronologia, temes, motius, tradicions, característiques i principals autors i autores.",
+        "Aprofundiment en els principis de la crítica literària de manera coordinada amb la resta de matèries de l’àrea lingüística, per tal que es pugui aprofundir convenientment en la lectura, la interpretació i la valoració dels textos grecs i la seva importància per a la configuració del llegat literari occidental.",
+        "Argumentació i justificació de la influència i pervivència de la literatura grega en la producció cultural europea en general i catalana en particular a partir de la lectura i el comentari de fragments d’obres en prosa i de poemes on es faci evident aquesta influència.",
+        "Foment de la lectura d’obres gregues traduïdes a alguna de les llengües del repertori lingüístic de l’alumnat i d’obres literàries d’altres llengües, especialment catalanes, que posin de manifest la influència determinant de la literatura grega sobre la catalana, així com d’episodis històrics clau per a les relacions seculars de Catalunya amb la terra de",
+        "Grècia.",
+        "Establiment d’analogies de diferències entre els gèneres literaris grecs i els de les literatures modernes a partir d’obres o fragments concrets que permetin apreciar tant el llegat clàssic de la cultura occidental com els trets d’innovació que li són propis.",
+        "Aprofundiment en els principis bàsics de la crítica literària de manera coordinada amb la resta de matèries de l’àrea lingüística, com a eina per optimitzar la lectura, la interpretació i la valoració dels textos grecs i la seva importància per a la configuració del llegat literari occidental.",
+        "Foment de l’interès de l’alumnat cap a la literatura com a font de plaer i de coneixement del món a partir, fonamentalment, d’obres senceres i, eventualment, de fragments seleccionats, mitjançant la lectura amb perspectiva de gènere.",
+        "Conscienciació de l’alumnat sobre la necessitat de respectar la propietat intel·lectual i els drets d’autor respecte de les fonts consultades i els continguts utilitzats, en el benentès que el plagi atempta contra la creació artística i literària."
+      ]
+    },
+    {
+      "codigo": "31",
+      "bloque": "31. L’antiga Grècia · d’obres gregues de referència",
+      "titulo": "L’antiga Grècia · d’obres gregues de referència",
+      "items": [
+        "Interpretació de les institucions, les creences i les formes de vida de la civilització"
+      ]
+    },
+    {
+      "codigo": "34",
+      "bloque": "34. L’antiga Grècia · d’oportunitats i que, segons els criteris actuals, mereixen un clar rebuig",
+      "titulo": "L’antiga Grècia · d’oportunitats i que, segons els criteris actuals, mereixen un clar rebuig",
+      "items": [
+        "Reconeixement de la influència de la cultura grega damunt la civilització llatina"
+      ]
+    },
+    {
+      "codigo": "37",
+      "bloque": "37. L’antiga Grècia · d’empremta grega",
+      "titulo": "L’antiga Grècia · d’empremta grega",
+      "items": [
+        "Presa de consciència sobre l’aportació crucial de Grècia a la cultura i al pensament de"
+      ]
+    },
+    {
+      "codigo": "39",
+      "bloque": "39. L’antiga Grècia · de cultures i èpoques diferents",
+      "titulo": "L’antiga Grècia · de cultures i èpoques diferents",
+      "items": [
+        "Valoració de la relació de l’antiga Grècia amb altres cultures de l’antiguitat i religions"
+      ]
+    },
+    {
+      "codigo": "42",
+      "bloque": "42. L’antiga Grècia · valor a defensar i un model a seguir en el món actual",
+      "titulo": "L’antiga Grècia · valor a defensar i un model a seguir en el món actual",
+      "items": [
+        "Percepció del mar Mediterrani com a cruïlla de cultures ahir i avui i com a marc ideal per"
+      ]
+    },
+    {
+      "codigo": "44",
+      "bloque": "44. L’antiga Grècia · o xenòfobes respecte de realitats humanes com la dels refugiats",
+      "titulo": "L’antiga Grècia · o xenòfobes respecte de realitats humanes com la dels refugiats",
+      "items": [
+        "Conscienciació de l’alumnat sobre la importància del règim democràtic i les seves arrels"
+      ]
+    },
+    {
+      "codigo": "47",
+      "bloque": "47. Llegat i patrimoni",
+      "titulo": "Llegat i patrimoni",
+      "items": [
+        "Valoració de la importància dels conceptes de llegat, herència i patrimoni a partir tant de realitats properes de l’alumnat com d’altres de més allunyades però igualment útils.",
+        "Presa de consciència del valor per se de la transmissió textual grega i com a patrimoni cultural i font de coneixement mitjançant diferents cultures i èpoques.",
+        "Valoració de la important presència dels principals mites clàssics en manifestacions literàries i artístiques i de la importància que aquests mites han tingut i segueixen tenint en la història de la humanitat, partint d’exemples de llengües, cultures i èpoques diferents.",
+        "Identificació de les principals obres públiques gregues així com de la seva continuïtat fins a temps moderns, i valoració de la importància de la seva conservació, preservació i restauració per tal de garantir-ne la sostenibilitat i la transmissió, en el millor estat possible, a les generacions futures.",
+        "Presa de consciència de la importància de l’arqueologia grega a Catalunya (ciutats gregues d’Empúries i Roses i principals peces gregues —o d’influència grega— de la museografia catalana).",
+        "Valoració de les principals obres artístiques de l’antiguitat grega, de la seva continuïtat i influència en el món occidental, a partir d’exemples pràctics, per apreciar el grau de dependència de moltes manifestacions artístiques actuals respecte dels seus referents grecs."
+      ]
+    }
+  ],
+  "comunidad": "cataluna",
+  "idioma": "ca"
+}

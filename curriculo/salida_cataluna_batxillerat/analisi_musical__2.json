@@ -1,0 +1,124 @@
+{
+  "materia_oficial": "Anàlisi Musical",
+  "materia": "Anàlisi Musical",
+  "etapa": "Bachillerato",
+  "ciclo": "2º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Analitzar una diversitat d’obres musicals de rellevància cultural, social i històrica a través de l’escolta reflexiva i crítica per apreciar el patrimoni musical i desenvolupar la identitat personal i cultural.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Examinar l’estructura, la forma i l’harmonia d’una obra musical, mitjançant l’anàlisi auditiva i gràfica per argumentar la relació de les obres musicals amb el seu autor, el context social, la funció comunicativa i el sentit expressiu.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Opinar críticament sobre obres musicals diverses i la seva relació amb altres arts com la dansa, el teatre i la literatura per comprovar la diversitat creativa i el seu impacte emocional.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Compondre creacions musicals pròpies a partir dels paràmetres d’anàlisi d’una obra mitjançant les eines digitals per produir creacions musicals que donin resposta a una voluntat comunicativa concreta i personal.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Creació de produccions musicals multidisciplinàries i col·laboratives per prendre consciència de la relació de la música amb les altres arts i analitzar el resultat final dels processos de creació propis i dels altres.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Explicar els factors socials i culturals inherents a les propostes musicals, concretant les seves funcions i característiques a través de l’anàlisi de diferents exemples amb una actitud oberta i respectuosa."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Defensar les similituds i les diferències dels aspectes identificadors d’una proposta musical exposant criteris personals d’apreciació musical basats en els valors de respecte envers la diversitat cultural."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Determinar les característiques dels principals estils musicals, basant-se en la disposició dels elements tècnics i l’estructura formal amb actitud oberta i valorant-ne l’interès."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Investigar les intencionalitats artístiques i musicals dels autors i autores de diverses obres, analitzant-ne les característiques estructurals, formals i contextuals."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Debatre, de manera crítica i analítica, les impressions i els sentiments produïts per la música mitjançant l’anàlisi de diverses manifestacions artístiques en diferents suports."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Analitzar diferents propostes musicals mitjançant l’audició i amb el suport de la partitura, relacionant les obres amb el context històric i el vincle amb les altres arts."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Adaptar amb creativitat els diferents elements que constitueixen una obra musical, com a base per a composicions guiades, utilitzant els diferents patrons melòdics, rítmics, harmònics i formals."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Experimentar col·lectivament amb els diferents usos del llenguatge artístic mitjançant improvisacions grupals demostrant empatia i col·laboració."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Integrar amb esperit crític i sensibilitat composicions musicals basades en patrons melòdics, rítmics, harmònics i formals en projectes artístics sostenibles vinculats amb la diversitat cultural."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Analitzar les creacions musicals de l’aula, posant en valor el producte final i la seva relació amb diferents projectes artístics."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "5",
+      "descripcion": "Organitzar diferents propostes musicals, mitjançant l’ús de diferents suports tecnològics, mostrant iniciativa, respecte cap a l’opinió dels altres i capacitat d’integració i d’adaptació en el grup de treball."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "1. Fonaments teoricopràctics comuns",
+      "titulo": "Fonaments teoricopràctics comuns",
+      "items": [
+        "Anàlisi auditiva i gràfica de les textures musicals: monòdica, polifònica, homofònica, contrapuntística i melodia acompanyada.",
+        "Anàlisi harmònica de cadències, modulacions i progressions en diverses obres i exemples musicals.",
+        "Identificació dels elements melòdics: la frase, semifrase, el motiu o cèl·lula en diversitat de contextos musicals.",
+        "Anàlisi de la funció estructural de diversos textos de la música vocal.",
+        "Anàlisi auditiva i gràfica de la diversitat d’estructures i patrons rítmics.",
+        "Identificació i anàlisi dels principals processos compositius com la repetició, la seqüència, la imitació, la variació i el desenvolupament.",
+        "Pràctica interpretativa tant vocal com instrumental i corporal de diverses obres musicals de rellevància cultural i històrica.",
+        "Aplicació de recursos digitals i aplicacions musicals per a la creació de composicions i projectes musicals."
+      ]
+    },
+    {
+      "codigo": "2",
+      "bloque": "2. Gèneres musicals",
+      "titulo": "Gèneres musicals",
+      "items": [
+        "Anàlisi de les principals formes històriques des de l’actualitat a la música medieval: música vocal, instrumental i escènica.",
+        "Identificació dels compositors i compositores més rellevants en els diferents períodes.",
+        "Coneixement i exemplificació de les obres o exemples més rellevants de les músiques tradicionals, d’arrel i músiques ètniques.",
+        "Anàlisi social, cultural i artística de les músiques populars urbanes dels segles XX i XXI: blues, jazz, pop, rock, folk i altres estils."
+      ]
+    }
+  ],
+  "comunidad": "cataluna",
+  "idioma": "ca"
+}

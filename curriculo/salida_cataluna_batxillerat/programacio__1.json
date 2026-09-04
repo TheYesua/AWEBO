@@ -1,0 +1,31 @@
+{
+  "materia_oficial": "Programació",
+  "materia": "Programació",
+  "etapa": "Bachillerato",
+  "ciclo": "1º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Analitzar situacions reals que puguin requerir una solució informàtica. Detectar les necessitats funcionals de les situacions i, atenent les característiques dels usuaris potencials, proposar solucions en forma de programes, aplicacions o serveis web.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Crear prototips visuals de programes i aplicacions i utilitzar-los per crear interfícies d’usuari amb les eines informàtiques adients.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Partint de la descripció funcional d’una solució informàtica, desenvolupar el programa, l’aplicació o el servei web que les implementa utilitzant un llenguatge i un entorn de programació adients.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [],
+  "saberes_basicos": [],
+  "comunidad": "cataluna",
+  "idioma": "ca"
+}

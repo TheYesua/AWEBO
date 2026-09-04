@@ -1,0 +1,31 @@
+{
+  "materia_oficial": "Publicitat",
+  "materia": "Publicitat",
+  "etapa": "Bachillerato",
+  "ciclo": "1º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Analitzar els elements formals, els valors estètics, els valors semàntics i les eines i procediments emprats en produccions publicitàries (com els recursos expressius verbals, la tipografia, l’ús del color i el seu impacte emocional, la composició, la llum, les textures, els plans, els angles, la veu, la música, etc.) i valorar l’impacte que tenen en l’espectador.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Dissenyar produccions publicitàries (packaging, espots publicitaris, cartelleria, fotografia, etc.) tenint en compte tot el procés, des de la identificació del públic objectiu i les estratègies més adequades, fins a l’ús dels diferents llenguatges i elements compositius i creatius del fenomen publicitari, i l’impacte que tenen en l’espectador.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Valorar críticament els estereotips, les estratègies de persuasió i els valors presents en la publicitat a través dels diferents elements compositius, tenint en compte la convivència democràtica i rebutjant les discriminacions de qualsevol mena, i tenint en compte també els objectius de desenvolupament sostenible.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [],
+  "saberes_basicos": [],
+  "comunidad": "cataluna",
+  "idioma": "ca"
+}

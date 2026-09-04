@@ -1,0 +1,31 @@
+{
+  "materia_oficial": "Món Clàssic",
+  "materia": "Món Clàssic",
+  "etapa": "Bachillerato",
+  "ciclo": "1º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Distingir ètims, formants i expressions grecollatines presents en el lèxic d’ús quotidià, científic i acadèmic, identificant els canvis semàntics que hagin tingut lloc i establint una comparació amb la llengua d’ensenyament i amb altres llengües del repertori individual de l’alumnat, per deduir el significat etimològic del lèxic conegut i els significats de lèxic nou o especialitzat.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Analitzar i percebre les característiques de la civilització grega i llatina en l’àmbit personal, de perspectiva de gènere, mitològic i sociopolític, adquirint coneixements sobre el món grecollatí i comparant críticament el present i el passat, per valorar les aportacions del món clàssic al nostre entorn com a base d’una ciutadania democràtica i compromesa.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Valorar críticament el patrimoni històric, arqueològic, artístic i cultural heretat de la civilització grega i llatina, promovent-ne la sostenibilitat i reconeixent-lo com a producte de la creació humana i com a testimoni de la història, per explicar el llegat material i immaterial grec i llatí com a transmissor de coneixement i font d’inspiració de creacions modernes i contemporànies.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [],
+  "saberes_basicos": [],
+  "comunidad": "cataluna",
+  "idioma": "ca"
+}

@@ -1,0 +1,31 @@
+{
+  "materia_oficial": "Reptes Científics Actuals (Física i Química)",
+  "materia": "Reptes Científics Actuals (Física i Química)",
+  "etapa": "Bachillerato",
+  "ciclo": "1º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Identificar, seleccionar, organitzar i avaluar críticament informació, contrastant-ne la fiabilitat per resoldre preguntes plantejades de forma autònoma i crear continguts relacionats amb la física i la química.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Aplicar els aprenentatges de manera integrada i les diverses formes de raonament pròpies de la ciència, per plantejar i resoldre problemes relacionats amb la física i la química, cercant i utilitzant les estratègies adequades, analitzant críticament les solucions i reformulant el procediment, si calgués.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Identificar i fer servir les idees, evidències, arguments científics que sustenten l’explicació de fenòmens i processos relacionats amb la física i la química per adoptar una posició i interpretació personal basada en criteris científics.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [],
+  "saberes_basicos": [],
+  "comunidad": "cataluna",
+  "idioma": "ca"
+}

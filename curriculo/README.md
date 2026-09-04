@@ -14,8 +14,11 @@ curriculo/fuentes/estatal/rd_217_2022.xml         RD 217/2022 (BOE-A-2022-4975)
 curriculo/fuentes/ceuta/orden_efp_754_2022.xml    Orden EFP/754/2022 (BOE-A-2022-13172)
 curriculo/fuentes/cataluna/decret_175_2022.xml    Decret 175/2022 (Akoma Ntoso del DOGC)
 curriculo/fuentes/cataluna/xtec/*.pdf             un PDF por materia (XTEC)
+curriculo/fuentes/cataluna-batxillerat/*.pdf      Decret 171/2022, un PDF por materia (XTEC)
 curriculo/fuentes/andalucia/*.pdf                 BOJA núm. 104 de 2 de junio de 2023
 curriculo/fuentes/galicia/*.pdf                   un PDF por materia (Guía LOMLOE)
+curriculo/fuentes/pais-vasco/*.pdf                Decreto 77/2023 (BOPV), en euskera
+curriculo/fuentes/pais-vasco-bachillerato/*.pdf   Decreto 76/2023 (BOPV), en euskera
 ```
 
 **Los PDF no están en el repositorio**, por tamaño: son 55 MB. Cada carpeta
@@ -43,10 +46,13 @@ que sin ellos nadie que clone el proyecto podría sembrar el currículo de
 Cataluña, Andalucía ni Galicia. Son unos 4 MB de texto.
 
 ```
-curriculo/salida/            estatal y Ceuta (BOE)
-curriculo/salida_cataluna/   Decret 175/2022 + PDF de la XTEC
-curriculo/salida_andalucia/  Orden de 30 de mayo de 2023 (BOJA)
-curriculo/salida_galicia/    Decreto 156/2022 (Guía LOMLOE de la Xunta)
+curriculo/salida/                      estatal y Ceuta (BOE)
+curriculo/salida_cataluna/             Decret 175/2022 + PDF de la XTEC
+curriculo/salida_cataluna_batxillerat/ Decret 171/2022 (modif. 103/2026) + XTEC
+curriculo/salida_andalucia/            Orden de 30 de mayo de 2023 (BOJA)
+curriculo/salida_galicia/              Decreto 156/2022 (Guía LOMLOE de la Xunta)
+curriculo/salida_pais_vasco/           Decreto 77/2023 (BOPV)
+curriculo/salida_pais_vasco_bachillerato/ Decreto 76/2023 (BOPV)
 ```
 
 Cada JSON lleva dentro su `comunidad` y su `idioma`, y **el fichero manda**
@@ -73,8 +79,8 @@ campo y no lo traen, así que para ellos vale el valor por defecto, `ceuta`.)*
 
 1. **Extracción automática**: produce un JSON por cada `(materia, ciclo)` con
    competencias específicas, criterios de evaluación y saberes básicos. Hay
-   **cuatro extractores**, porque cada boletín publica de una forma distinta
-   y forzar uno solo salía más caro que tener cuatro:
+   **cinco extractores**, porque cada boletín publica de una forma distinta
+   y forzar uno solo salía más caro que tener cinco:
 
    | Módulo | Fuente | Cómo lee |
    |---|---|---|
@@ -82,10 +88,17 @@ campo y no lo traen, así que para ellos vale el valor por defecto, `ceuta`.)*
    | `extractor_xtec.py` | PDF de la XTEC | posición horizontal: las tablas no tienen bordes |
    | `extractor_boja.py` | PDF del BOJA | celda a celda: estas tablas sí tienen bordes |
    | `extractor_dog.py` | PDF de la Xunta | celda a celda, más el texto suelto: los cursos no siempre van en tabla |
+   | `extractor_bopv.py` | PDF del BOPV | texto en orden, en euskera, con las tablas del anexo |
+
+   **Ninguno se duplica para Bachillerato.** Los dos que ya leen esa etapa
+   —`extractor_bopv.py` y `extractor_xtec.py`— se parametrizan con un módulo
+   aparte, `bopv_etapas.py` y `xtec_etapas.py`, donde vive lo único que cambia:
+   de qué anexo se lee, cómo se titulan las columnas y qué cursos tiene cada
+   materia.
 
    El BOJA es el único que **numera sus saberes básicos** (`BYG.1.A.8`), y ese
    código se conserva. Galicia numera los **bloques** pero no los contidos, así
-   que su código lleva la mitad oficial. En los otros dos, el cargador les pone
+   que su código lleva la mitad oficial. En los otros tres, el cargador les pone
    un contador propio.
 
    Y Galicia usa **otro vocabulario**: donde la LOMLOE dice «competencias
@@ -105,7 +118,8 @@ campo y no lo traen, así que para ellos vale el valor por defecto, `ceuta`.)*
 | Comunidad | Materias | Bloques | Criterios | Saberes |
 |---|---:|---:|---:|---:|
 | Ceuta y Melilla (Orden EFP/754) | 22 | 42 | 752 | 1461 |
-| Cataluña (Decret 175/2022 + XTEC) | 26 | 36 | 737 | 1918 |
+| Cataluña (Decret 175/2022 + XTEC) | 26 | 37 | 759 | 1330 |
+| Cataluña · Bachillerato (Decret 171/2022, modif. 103/2026) | 73 | 87 | 1133 | 1972 |
 | Andalucía (Orden 30/05/2023) | 19 | 41 | 737 | 957 |
 | Galicia (Decreto 156/2022 + Guía LOMLOE) | 30 | 60 | 1583 | 4643 |
 | País Vasco (Decreto 77/2023) | 32 | 43 | 733 | 1491 |
@@ -121,12 +135,26 @@ bloques son pocos para las materias que tiene. Las 32 materias salen de 30
 títulos del Anexo III: Matemáticas de 4.º se desdobla en los itinerarios A y B,
 que tienen currículos distintos.
 
-Bachillerato es la **única etapa cargada que no es la ESO**, y de momento solo
-del País Vasco. Sale del mismo lector —`extractor_bopv.py --etapa bachillerato`,
-Anexo II del Decreto 76/2023— y tiene el doble de materias que la ESO porque
-suma las cuatro modalidades y sus optativas. Los cursos no están en el anexo:
-se transcriben de los artículos 11 a 15 en `app/curriculo/bopv_etapas.py`, y
-ahí se explica por qué a mano.
+Bachillerato es la otra etapa cargada, de momento en **dos comunidades**: País
+Vasco y Cataluña. En las dos sale del mismo lector que su ESO —`extractor_bopv.py
+--etapa bachillerato` y `extractor_xtec.py --etapa bachillerato`— y en las dos
+tiene el doble o el triple de materias que la ESO, porque suma las modalidades
+y sus optativas.
+
+Y en las dos **los cursos no están en la fuente del currículo**, así que se
+transcriben a mano en un módulo aparte —`bopv_etapas.py` y `xtec_etapas.py`—,
+donde se explica de qué norma sale cada uno y por qué no se analiza. En
+Cataluña hay un motivo más para mirarlo con lupa: el **Decret 103/2026, de 7 de
+julio** modificó el 171/2022 y cambió el reparto de 1.º de ciencias a partir del
+curso 2026-2027 —Biologia i Geologia se unifica con Ciències Ambientals, y
+Física con Química—, así que el articulado original que sigue publicado da el
+reparto **anterior**. La tabla se transcribe del documento del Departament que
+concreta el currículo para el curso en vigor.
+
+De las 73 materias catalanas de Bachillerato, **22 no traen criterios ni
+saberes**: son optativas cuyo currículo dice expresamente que los fija el
+profesorado del centro. Se cargan con sus competencias específicas, que es todo
+lo que el decreto publica de ellas.
 
 Empezó siendo cuatro materias —Tecnología, Lengua, Matemáticas e Inglés—, que
 es el alcance con el que nació el proyecto como TFG.
