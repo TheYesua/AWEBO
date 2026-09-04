@@ -129,27 +129,48 @@
   "saberes_basicos": [
     {
       "codigo": "1",
-      "bloque": "1. Procés de resolució de problemes i projectes",
-      "titulo": "Procés de resolució de problemes i projectes",
+      "bloque": "1. Procés de resolució de problemes i projectes · Estratègies i tècniques",
+      "titulo": "Procés de resolució de problemes i projectes · Estratègies i tècniques",
       "items": [
         "Aplicació d’estratègies de gestió de projectes col·laboratius i de tècniques de resolució de problemes iteratives.",
         "Cerca, comparació i estudi de les necessitats del centre educatiu, dels àmbits local i regional, etc. per al plantejament de projectes col·laboratius o cooperatius.",
         "Implementació de diferents tècniques d’ideació per a la resolució de problemes.",
-        "Resolució de problemes amb actitud emprenedora, creativa i perseverant, des d’una perspectiva interdisciplinària de l’activitat tecnològica, tot fomentant la satisfacció i l’interès pel treball i la qualitat del mateix.",
-        "Selecció i utilització de diferents productes i materials per a la resolució de problemes.",
-        "Anàlisi del cicle de vida d’un producte i identificació de les diferents fases.",
-        "Selecció de materials tot utilitzant diverses estratègies, d’acord amb les seves propietats o requisits, per a la resolució de problemes i projectes.",
-        "Valoració, selecció i utilització de diferents tècniques de fabricació en la resolució de problemes i projectes.",
-        "Utilització de diferents eines de disseny i de fabricació assistit per ordinador en 2D i",
-        "3D, per a la representació i/o fabricació de peces aplicades a projectes.",
-        "Valoració, selecció i utilització de diferents tècniques de fabricació manual i mecànica, en les aplicacions pràctiques.",
-        "Implementació, en aplicacions pràctiques, de tècniques de fabricació digital, com la impressió 3D i el tall.",
-        "Documentació, presentació i difusió de projectes, integrant diferents elements, tècniques i eines. Utilització d’una comunicació efectiva basada en una entonació, expressió, gestió del temps i adaptació del discurs i amb un ús de llenguatge inclusiu i lliure d’estereotips de gènere."
+        "Resolució de problemes amb actitud emprenedora, creativa i perseverant, des d’una perspectiva interdisciplinària de l’activitat tecnològica, tot fomentant la satisfacció i l’interès pel treball i la qualitat del mateix."
       ]
     },
     {
       "codigo": "2",
-      "bloque": "2. Operadors tecnològics",
+      "bloque": "2. Procés de resolució de problemes i projectes · Productes i materials",
+      "titulo": "Procés de resolució de problemes i projectes · Productes i materials",
+      "items": [
+        "Selecció i utilització de diferents productes i materials per a la resolució de problemes.",
+        "Anàlisi del cicle de vida d’un producte i identificació de les diferents fases.",
+        "Selecció de materials tot utilitzant diverses estratègies, d’acord amb les seves propietats o requisits, per a la resolució de problemes i projectes."
+      ]
+    },
+    {
+      "codigo": "3",
+      "bloque": "3. Procés de resolució de problemes i projectes · Fabricació",
+      "titulo": "Procés de resolució de problemes i projectes · Fabricació",
+      "items": [
+        "Valoració, selecció i utilització de diferents tècniques de fabricació en la resolució de problemes i projectes.",
+        "Utilització de diferents eines de disseny i de fabricació assistit per ordinador en 2D i",
+        "3D, per a la representació i/o fabricació de peces aplicades a projectes.",
+        "Valoració, selecció i utilització de diferents tècniques de fabricació manual i mecànica, en les aplicacions pràctiques.",
+        "Implementació, en aplicacions pràctiques, de tècniques de fabricació digital, com la impressió 3D i el tall."
+      ]
+    },
+    {
+      "codigo": "4",
+      "bloque": "4. Procés de resolució de problemes i projectes · Difusió",
+      "titulo": "Procés de resolució de problemes i projectes · Difusió",
+      "items": [
+        "Documentació, presentació i difusió de projectes, integrant diferents elements, tècniques i eines. Utilització d’una comunicació efectiva basada en una entonació, expressió, gestió del temps i adaptació del discurs i amb un ús de llenguatge inclusiu i lliure d’estereotips de gènere."
+      ]
+    },
+    {
+      "codigo": "5",
+      "bloque": "5. Operadors tecnològics",
       "titulo": "Operadors tecnològics",
       "items": [
         "Identificació dels components electrònics analògics bàsics i la seva simbologia, amb l’anàlisi i el muntatge físic i simulats de circuits elementals.",
@@ -159,8 +180,8 @@
       ]
     },
     {
-      "codigo": "3",
-      "bloque": "3. Pensament computacional, automatització i robòtica",
+      "codigo": "6",
+      "bloque": "6. Pensament computacional, automatització i robòtica",
       "titulo": "Pensament computacional, automatització i robòtica",
       "items": [
         "Utilització de diferents components de sistemes de control programat: controladors, sensors i actuadors, que permetin l’optimització dels recursos i apliquin l’automatització i la robotització.",
@@ -170,8 +191,8 @@
       ]
     },
     {
-      "codigo": "4",
-      "bloque": "4. Tecnologia sostenible",
+      "codigo": "7",
+      "bloque": "7. Tecnologia sostenible",
       "titulo": "Tecnologia sostenible",
       "items": [
         "Selecció de materials i disseny de processos, productes i sistemes tecnològics per a una sostenibilitat mediambiental, econòmica i social.",

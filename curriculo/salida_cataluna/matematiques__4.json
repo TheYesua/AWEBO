@@ -213,265 +213,16 @@
   ],
   "saberes_basicos": [
     {
-      "codigo": "16",
-      "bloque": "16. Sentit numèric · Comptatge",
+      "codigo": "1",
+      "bloque": "1. Sentit numèric · Comptatge",
       "titulo": "Sentit numèric · Comptatge",
       "items": [
         "Resolució de problemes i situacions de la vida quotidiana en els quals s’hagin de fer recomptes sistemàtics, utilitzant diferents estratègies (diagrames d’arbre, tècniques de combinatòria, etc.)."
       ]
     },
     {
-      "codigo": "17",
-      "bloque": "17. Sentit numèric · Quantitat",
-      "titulo": "Sentit numèric · Quantitat",
-      "items": [
-        "Interpretació de nombres grans i petits, reconeixement i utilització de la notació exponencial i científica. Incloent la lectura d’aquestes quantitats en la calculadora o full de càlcul",
-        "Expressió d’estimacions amb la precisió requerida.",
-        "Ús dels nombres enters, fraccions, decimals i arrels per a expressar quantitats en diferents contextos, inclosos els de la vida quotidiana, amb la precisió requerida.",
-        "Ús dels nombres indoaràbics, la introducció del zero i els nombres negatius en la història de les matemàtiques.",
-        "Ús de les fraccions en l’antiguitat (Egipte, l’Índia i Grècia) i en l’actualitat.",
-        "Reconeixement i aplicació de diferents formes de representació de nombres enters, fraccionaris i decimals, inclosa la recta numèrica.",
-        "Selecció i utilització de la representació més adequada d’una mateixa quantitat (natural, sencer, decimal o fracció) per a cada situació o problema."
-      ]
-    },
-    {
-      "codigo": "18",
-      "bloque": "18. Sentit numèric · Sentit de les operacions",
-      "titulo": "Sentit numèric · Sentit de les operacions",
-      "items": [
-        "Aplicació d’estratègies de càlcul mental amb nombres naturals, fraccions i decimals.",
-        "Reconeixement i aplicació de les operacions amb nombres enters, fraccionaris o decimals útils per resoldre situacions contextualitzades.",
-        "Comprensió i utilització de les relacions inverses, entre: l’addició i la sostracció, la multiplicació i la divisió, la potència i les arrels, per simplificar i resoldre problemes.",
-        "Interpretació dels efectes de les operacions aritmètiques amb nombres enters, fraccions i expressions decimals.",
-        "Ús de les propietats de les operacions aritmètiques (suma, resta, multiplicació i divisió) per realitzar càlculs de manera eficient amb nombres naturals, enters, fraccionaris i decimals tant mentalment com de manera manual, amb calculadora o full de càlcul, adaptant les estratègies a cada situació."
-      ]
-    },
-    {
-      "codigo": "19",
-      "bloque": "19. Sentit numèric · Relacions",
-      "titulo": "Sentit numèric · Relacions",
-      "items": [
-        "Utilització de factors primers, múltiples i divisors per a resoldre problemes, mitjançant estratègies i/o eines diverses, inclòs l’ús de la calculadora.",
-        "Comparació i ordenació de fraccions, decimals i percentatges amb eficàcia trobant la seva situació exacta o aproximada en la recta numèrica."
-      ]
-    },
-    {
-      "codigo": "20",
-      "bloque": "20. Sentit numèric · Raonament proporcional",
-      "titulo": "Sentit numèric · Raonament proporcional",
-      "items": [
-        "Identificació de situacions proporcionals i no proporcionals (incloent situacions de proporcionalitat inversa) en problemes de la vida quotidiana. Comprensió i representació de les relacions quantitatives.",
-        "Percentatges: comprensió i utilització en la resolució de problemes, inclosos els majors que 100% o menors que 1%.",
-        "Desenvolupament i anàlisi de mètodes per resoldre problemes en situacions de proporcionalitat directa en diferents contextos (augments i disminucions percentuals, rebaixes i pujades de preus, impostos, canvis de divises, càlculs geomètrics, escales, etc.)."
-      ]
-    },
-    {
-      "codigo": "21",
-      "bloque": "21. Sentit numèric · Educació financera",
-      "titulo": "Sentit numèric · Educació financera",
-      "items": [
-        "Interpretació de la informació numèrica en contextos financers senzills.",
-        "Mètodes per a la presa de decisions de consum responsable ateses les relacions qualitat-preu i al valor-preu en contextos quotidians."
-      ]
-    },
-    {
-      "codigo": "22",
-      "bloque": "22. Sentit de la mesura · Magnitud",
-      "titulo": "Sentit de la mesura · Magnitud",
-      "items": [
-        "Atributs mesurables dels objectes físics i matemàtics: recerca i relació entre aquests.",
-        "Elecció de les unitats i operacions adequades en situacions que impliquin mesura.",
-        "Comparació de les unitats pròpies del sistema mètric decimal amb unes altres presents en diferents contextos.",
-        "Avaluació de la importància de l’establiment del metre com a mesura universal en el context històric en què es va produir i en el context actual."
-      ]
-    },
-    {
-      "codigo": "23",
-      "bloque": "23. Sentit de la mesura · Mesurament",
-      "titulo": "Sentit de la mesura · Mesurament",
-      "items": [
-        "Selecció i ús d’instruments (analògic o digital) i unitats adequades per mesurar de manera directa diferents magnituds de l’entorn.",
-        "Deducció, interpretació i aplicació de les principals estratègies per obtenir longituds, àrees i volums en figures planes i tridimensionals.",
-        "Relació entre les aplicacions dels teoremes de Tales i de Pitàgores en els diferents contextos històrics en què s’han utilitzat (Grècia, Índia, Xina).",
-        "Ús de representacions planes d’objectes tridimensionals per visualitzar i resoldre problemes d’àrees, entre d’altres.",
-        "Generació de representacions planes, manualment o digitalment, d’objectes geomètrics plans o tridimensionals, amb característiques donades, com les longituds dels costats, les mesures dels angles, les longituds de les arestes."
-      ]
-    },
-    {
-      "codigo": "24",
-      "bloque": "24. Sentit de la mesura · Estimació i relacions",
-      "titulo": "Sentit de la mesura · Estimació i relacions",
-      "items": [
-        "Formulació de conjectures sobre mesures o relacions entre les mateixes basades en estimacions.",
-        "Presa de decisió justificada del grau de precisió requerida en situacions de mesura.",
-        "Valoració de les mesures del radi de la Terra i de les distàncies Terra-Lluna a la",
-        "Grècia antiga."
-      ]
-    },
-    {
-      "codigo": "25",
-      "bloque": "25. Sentit espacial · Formes geomètriques de dues i tres dimensions",
-      "titulo": "Sentit espacial · Formes geomètriques de dues i tres dimensions",
-      "items": [
-        "Descripció i classificació de formes geomètriques planes i tridimensionals en funció de les seves propietats o característiques.",
-        "Reconeixement de les relacions geomètriques com la congruència, la semblança i la relació pitagòrica en figures planes i tridimensionals.",
-        "Construcció de formes geomètriques amb diferents eines: materials manipulables, instruments de dibuix, programes de geometria dinàmica, realitat augmentada, etc.",
-        "Construcció de figures geomètriques en diferents contextos històrics, en particular a la Grècia antiga (Euclides)."
-      ]
-    },
-    {
-      "codigo": "26",
-      "bloque": "26. Sentit espacial · Localització i sistemes de representació",
-      "titulo": "Sentit espacial · Localització i sistemes de representació",
-      "items": [
-        "Localització i descripció de relacions espacials: coordenades geomètriques i altres sistemes de representació."
-      ]
-    },
-    {
-      "codigo": "27",
-      "bloque": "27. Sentit espacial · Moviments i transformacions",
-      "titulo": "Sentit espacial · Moviments i transformacions",
-      "items": [
-        "Anàlisis de transformacions elementals com a girs, translacions i simetries en situacions diverses utilitzant eines tecnològiques i/o manipulatives."
-      ]
-    },
-    {
-      "codigo": "28",
-      "bloque": "28. Sentit espacial · Visualització i modelització geomètrica",
-      "titulo": "Sentit espacial · Visualització i modelització geomètrica",
-      "items": [
-        "Ús de models geomètrics per representar i explicar relacions numèriques i algebraiques en situacions diverses.",
-        "Reconeixement de connexions entre el sentit espacial amb els altres sentits (numèric, algebraic…) i amb altres disciplines (art, ciència, vida diària)."
-      ]
-    },
-    {
-      "codigo": "29",
-      "bloque": "29. Sentit algebraic · Patrons",
-      "titulo": "Sentit algebraic · Patrons",
-      "items": [
-        "Patrons: identificació i comprensió, determinant la regla de formació de col·leccions numèriques o gràfiques.",
-        "Fórmules i termes generals: obtenció mitjançant l’observació de pautes i regularitats senzilles i la seva generalització.",
-        "Identificació de la successió de Fibonacci i la proporció àuria a la natura."
-      ]
-    },
-    {
-      "codigo": "30",
-      "bloque": "30. Sentit algebraic · Model matemàtic",
-      "titulo": "Sentit algebraic · Model matemàtic",
-      "items": [
-        "Modelització i resolució de problemes contextualitzats, també de la vida quotidiana, secundant-se en representacions matemàtiques i en el llenguatge algebraic.",
-        "Obtenció de conclusions raonables sobre una situació de la vida quotidiana una vegada modelitzada."
-      ]
-    },
-    {
-      "codigo": "31",
-      "bloque": "31. Sentit algebraic · Variable",
-      "titulo": "Sentit algebraic · Variable",
-      "items": [
-        "Comprensió del concepte de variable en les seves diferents naturaleses."
-      ]
-    },
-    {
-      "codigo": "32",
-      "bloque": "32. Sentit algebraic · Igualtat i desigualtat",
-      "titulo": "Sentit algebraic · Igualtat i desigualtat",
-      "items": [
-        "Ús de l’àlgebra simbòlica per representar relacions lineals i quadràtiques en situacions contextualitzades, també de la vida quotidiana.",
-        "Anàlisi dels diferents mètodes de resolució d’equacions al llarg de la història, en particular els mètodes geomètrics d’Al-Khwarizmi.",
-        "Identificació i aplicació de l’equivalència d’expressions algebraiques en la resolució de problemes basats en relacions lineals i quadràtiques.",
-        "Cerca de solucions en equacions o sistemes lineals i equacions quadràtiques, tant de manera manual com utilitzant la tecnologia."
-      ]
-    },
-    {
-      "codigo": "33",
-      "bloque": "33. Sentit algebraic · Relacions i funcions",
-      "titulo": "Sentit algebraic · Relacions i funcions",
-      "items": [
-        "Aplicació i comparació de les diferents formes de representació d’una relació.",
-        "Identificació i ús de funcions, lineals o no lineals i comparació de les seves propietats a partir de taules, gràfiques o expressions algebraiques.",
-        "Identificació de relacions quantitatives en situacions contextualitzades, incloent la vida quotidiana i determinació dels tipus de funcions que les modelitzen (lineals i quadràtiques).",
-        "Deducció de la informació rellevant d’una funció mitjançant l’ús de diferents representacions simbòliques."
-      ]
-    },
-    {
-      "codigo": "34",
-      "bloque": "34. Sentit algebraic · Pensament computacional",
-      "titulo": "Sentit algebraic · Pensament computacional",
-      "items": [
-        "Identificació i ús d’estratègies quan s’interpreten, modifiquen o creen algorismes de programació per blocs i/o programació textuals que incorporen: diferenciació entre processos seqüencials i paral·lels; comprensió de les instruccions de bucle, condicionals i instruccions niades; comprensió de la gestió de dades amb variables; ús d’operadors lògics i d’esdeveniments.",
-        "Formulació de qüestions susceptibles de ser analitzades utilitzant programes i altres eines."
-      ]
-    },
-    {
-      "codigo": "35",
-      "bloque": "35. Sentit estocàstic · Distribució",
-      "titulo": "Sentit estocàstic · Distribució",
-      "items": [
-        "Anàlisi i interpretació de taules i gràfics estadístics de variables qualitatives, quantitatives discretes i quantitatives contínues.",
-        "Recollida i organització de dades de situacions contextualitzades, incloent la vida quotidiana, que involucren una sola variable.",
-        "Generació de representacions gràfiques adequades mitjançant diferents tecnologies (calculadora, full de càlcul, apps...) per esbrinar com es distribueixen les dades, interpretar-les i obtenir conclusions raonades.",
-        "Mesures de centralització i dispersió: interpretació i càlcul.",
-        "Comparació de dos conjunts de dades ateses les mesures de centralització i dispersió.",
-        "Reconeixement que les mesures de dispersió descriuen la variabilitat de les dades.",
-        "Càlcul, amb suport tecnològic, i interpretació de les mesures de centralització i dispersió en situacions reals."
-      ]
-    },
-    {
-      "codigo": "36",
-      "bloque": "36. Sentit estocàstic · Inferència",
-      "titulo": "Sentit estocàstic · Inferència",
-      "items": [
-        "Formulació de preguntes adequades per conèixer les característiques d’interès d’una població.",
-        "Presentació de dades rellevants per donar resposta a qüestions plantejades en recerques estadístiques.",
-        "Obtenció de conclusions raonables a partir dels resultats obtinguts amb la finalitat d’emetre judicis i prendre decisions adequades.",
-        "Ús de dades estadístiques al llarg de la història en la construcció de censos de població.",
-        "Usos de dades estadístiques en la medicina actual (covid 19) i en la història, el cas de Florence Nightingale."
-      ]
-    },
-    {
-      "codigo": "37",
-      "bloque": "37. Sentit estocàstic · Predictibilitat i incertesa",
-      "titulo": "Sentit estocàstic · Predictibilitat i incertesa",
-      "items": [
-        "Identificació de fenòmens deterministes i aleatoris.",
-        "Interpretació de la probabilitat com a mesura associada a la incertesa d’experiments aleatoris.",
-        "Planificació i realització d’experiències senzilles per analitzar el comportament de fenòmens aleatoris.",
-        "Assignació de la probabilitat a partir de l’experimentació i el concepte de freqüència relativa.",
-        "Anàlisi de l’origen de la teoria de la probabilitat (Fermat i Pascal) en el context dels jocs d’atzar.",
-        "Assignació de probabilitats mitjançant la regla de Laplace."
-      ]
-    },
-    {
-      "codigo": "38",
-      "bloque": "38. Sentit socioemocional · Creences, actituds i emocions",
-      "titulo": "Sentit socioemocional · Creences, actituds i emocions",
-      "items": [
-        "Desenvolupament de la curiositat, la iniciativa, la perseverança i la resiliència cap a l’aprenentatge de les matemàtiques.",
-        "Gestió de les emocions que intervenen en l’aprenentatge com l’autoconsciència i l’autoregulació.",
-        "Desenvolupament de la flexibilitat cognitiva per acceptar un canvi d’estratègia quan sigui necessari i transformar l’error en una oportunitat d’aprenentatge i al seu torn, interpretar cada problema resolt com una oportunitat per generar noves preguntes."
-      ]
-    },
-    {
-      "codigo": "39",
-      "bloque": "39. Sentit socioemocional · Treball en equip i presa de decisions",
-      "titulo": "Sentit socioemocional · Treball en equip i presa de decisions",
-      "items": [
-        "Assumpció de responsabilitats i participació activa per optimitzar el treball en equip.",
-        "Selecció de tècniques cooperatives per compartir i construir coneixement de manera col·lectiva.",
-        "Ús d’estratègies de gestió i presa de decisions adequades pera resoldre situacions pròpies del treball en equip."
-      ]
-    },
-    {
-      "codigo": "44",
-      "bloque": "44. Sentit numèric · Comptatge",
-      "titulo": "Sentit numèric · Comptatge",
-      "items": [
-        "Resolució de problemes i situacions de la vida quotidiana en els quals s’hagin de fer recomptes sistemàtics, utilitzant diferents estratègies (diagrames d’arbre, tècniques de combinatòria, etc.)."
-      ]
-    },
-    {
-      "codigo": "45",
-      "bloque": "45. Sentit numèric · Quantitat",
+      "codigo": "2",
+      "bloque": "2. Sentit numèric · Quantitat",
       "titulo": "Sentit numèric · Quantitat",
       "items": [
         "Expressió d’estimacions en diversos contextos analitzant l’error comès.",
@@ -481,8 +232,8 @@
       ]
     },
     {
-      "codigo": "46",
-      "bloque": "46. Sentit numèric · Sentit de les operacions",
+      "codigo": "3",
+      "bloque": "3. Sentit numèric · Sentit de les operacions",
       "titulo": "Sentit numèric · Sentit de les operacions",
       "items": [
         "Elecció de les operacions adequades amb nombres reals per resoldre situacions contextualitzades.",
@@ -493,8 +244,8 @@
       ]
     },
     {
-      "codigo": "47",
-      "bloque": "47. Sentit numèric · Relacions",
+      "codigo": "4",
+      "bloque": "4. Sentit numèric · Relacions",
       "titulo": "Sentit numèric · Relacions",
       "items": [
         "Comparació i ordenació de nombres reals amb eficàcia trobant la seva situació exacta o aproximada en la recta numèrica.",
@@ -502,16 +253,16 @@
       ]
     },
     {
-      "codigo": "48",
-      "bloque": "48. Sentit numèric · Educació financera",
+      "codigo": "5",
+      "bloque": "5. Sentit numèric · Educació financera",
       "titulo": "Sentit numèric · Educació financera",
       "items": [
         "Desenvolupament, anàlisi i explicació de mètodes per a la resolució de problemes relacionats amb augments i disminucions percentuals, d’interessos i taxes en contextos financers."
       ]
     },
     {
-      "codigo": "49",
-      "bloque": "49. Sentit de la mesura · Mesurament",
+      "codigo": "6",
+      "bloque": "6. Sentit de la mesura · Mesurament",
       "titulo": "Sentit de la mesura · Mesurament",
       "items": [
         "Deducció de les mesures dels elements d’un triangle en situacions que es poden modelitzar amb triangles rectangles. (*) Utilització de les raons trigonomètriques i les seves relacions en la resolució de problemes que es poden modelitzar amb triangles rectangles.",
@@ -519,8 +270,8 @@
       ]
     },
     {
-      "codigo": "50",
-      "bloque": "50. Sentit espacial · Formes geomètriques de dues i tres dimensions",
+      "codigo": "7",
+      "bloque": "7. Sentit espacial · Formes geomètriques de dues i tres dimensions",
       "titulo": "Sentit espacial · Formes geomètriques de dues i tres dimensions",
       "items": [
         "Elaboració de conjectures i reconeixement de propietats geomètriques de figures planes i tridimensionals a través de la recerca amb programes de geometria dinàmica.",
@@ -531,32 +282,32 @@
       ]
     },
     {
-      "codigo": "51",
-      "bloque": "51. Sentit espacial · Moviments i transformacions",
+      "codigo": "8",
+      "bloque": "8. Sentit espacial · Moviments i transformacions",
       "titulo": "Sentit espacial · Moviments i transformacions",
       "items": [
         "Anàlisi de transformacions elementals incloent homotècies en situacions diverses utilitzant eines tecnològiques i/o manipulatives (*) o mitjançant l’ús de la geometria analítica."
       ]
     },
     {
-      "codigo": "52",
-      "bloque": "52. Sentit espacial · Visualització i modelització geomètrica",
+      "codigo": "9",
+      "bloque": "9. Sentit espacial · Visualització i modelització geomètrica",
       "titulo": "Sentit espacial · Visualització i modelització geomètrica",
       "items": [
         "Generació de models geomètrics per representar i explicar relacions numèriques i algebraiques en situacions diverses, incloent-hi les quotidianes."
       ]
     },
     {
-      "codigo": "53",
-      "bloque": "53. Sentit algebraic · Patrons",
+      "codigo": "10",
+      "bloque": "10. Sentit algebraic · Patrons",
       "titulo": "Sentit algebraic · Patrons",
       "items": [
         "Comprensió i anàlisi de patrons, determinant la regla de formació de diverses col·leccions numèriques o gràfiques."
       ]
     },
     {
-      "codigo": "54",
-      "bloque": "54. Sentit algebraic · Model matemàtic",
+      "codigo": "11",
+      "bloque": "11. Sentit algebraic · Model matemàtic",
       "titulo": "Sentit algebraic · Model matemàtic",
       "items": [
         "Modelització i resolució de problemes contextualitzats, també de la vida quotidiana, secundant-se en representacions matemàtiques i en el llenguatge algebraic, fent ús de diferents tipus de funcions.",
@@ -564,8 +315,8 @@
       ]
     },
     {
-      "codigo": "55",
-      "bloque": "55. Sentit algebraic · Variable",
+      "codigo": "12",
+      "bloque": "12. Sentit algebraic · Variable",
       "titulo": "Sentit algebraic · Variable",
       "items": [
         "Utilització dels diferents usos de variables associant expressions simbòliques al context del problema.",
@@ -573,8 +324,8 @@
       ]
     },
     {
-      "codigo": "56",
-      "bloque": "56. Sentit algebraic · Igualtat i desigualtat",
+      "codigo": "13",
+      "bloque": "13. Sentit algebraic · Igualtat i desigualtat",
       "titulo": "Sentit algebraic · Igualtat i desigualtat",
       "items": [
         "Ús de l’àlgebra simbòlica per representar relacions funcionals en contextos diversos, també de la vida quotidiana.",
@@ -582,8 +333,8 @@
       ]
     },
     {
-      "codigo": "57",
-      "bloque": "57. Sentit algebraic · Relacions i funcions",
+      "codigo": "14",
+      "bloque": "14. Sentit algebraic · Relacions i funcions",
       "titulo": "Sentit algebraic · Relacions i funcions",
       "items": [
         "Identificació i ús de la forma de representació més adequada de funcions elementals en la resolució de situacions contextualitzades, incloent la vida quotidiana",
@@ -592,8 +343,8 @@
       ]
     },
     {
-      "codigo": "58",
-      "bloque": "58. Sentit algebraic · Pensament computacional",
+      "codigo": "15",
+      "bloque": "15. Sentit algebraic · Pensament computacional",
       "titulo": "Sentit algebraic · Pensament computacional",
       "items": [
         "Identificació i anàlisi d’estratègies (seqüències de passos ordenats, esquemes, simulacions, patrons repetitius, bucles, instruccions niades i condicionals, representacions computacionals, programació per blocs, robòtica educativa...) per a la interpretació, modificació i creació d’algorismes.",
@@ -602,8 +353,8 @@
       ]
     },
     {
-      "codigo": "59",
-      "bloque": "59. Sentit estocàstic · Distribució",
+      "codigo": "16",
+      "bloque": "16. Sentit estocàstic · Distribució",
       "titulo": "Sentit estocàstic · Distribució",
       "items": [
         "Anàlisi i interpretació de taules i gràfics estadístics de dues variables qualitatives, quantitatives discretes i quantitatives contínues.",
@@ -613,8 +364,8 @@
       ]
     },
     {
-      "codigo": "60",
-      "bloque": "60. Sentit estocàstic · Inferència",
+      "codigo": "17",
+      "bloque": "17. Sentit estocàstic · Inferència",
       "titulo": "Sentit estocàstic · Inferència",
       "items": [
         "Disseny d’estudis estadístics reflexionant sobre les diferents etapes del procés estadístic.",
@@ -624,8 +375,8 @@
       ]
     },
     {
-      "codigo": "61",
-      "bloque": "61. Sentit estocàstic · Predictibilitat i incertesa",
+      "codigo": "18",
+      "bloque": "18. Sentit estocàstic · Predictibilitat i incertesa",
       "titulo": "Sentit estocàstic · Predictibilitat i incertesa",
       "items": [
         "Planificació i realització d’experiments simples i compostos per a estudiar el comportament de fenòmens aleatoris.",
@@ -633,8 +384,8 @@
       ]
     },
     {
-      "codigo": "62",
-      "bloque": "62. Sentit socioemocional · Creences, actituds i emocions",
+      "codigo": "19",
+      "bloque": "19. Sentit socioemocional · Creences, actituds i emocions",
       "titulo": "Sentit socioemocional · Creences, actituds i emocions",
       "items": [
         "Desenvolupament de la curiositat, la iniciativa, la perseverança i la resiliència cap a l’aprenentatge de les matemàtiques.",
@@ -643,8 +394,8 @@
       ]
     },
     {
-      "codigo": "63",
-      "bloque": "63. Sentit socioemocional · Treball en equip i presa de decisions",
+      "codigo": "20",
+      "bloque": "20. Sentit socioemocional · Treball en equip i presa de decisions",
       "titulo": "Sentit socioemocional · Treball en equip i presa de decisions",
       "items": [
         "Assumpció de responsabilitats i participació activa per optimitzar el treball en equip.",

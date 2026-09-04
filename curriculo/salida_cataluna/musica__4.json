@@ -1,0 +1,124 @@
+{
+  "materia_oficial": "Música",
+  "materia": "Música",
+  "etapa": "ESO",
+  "ciclo": "4º ESO",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "4º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Analitzar produccions musicals a través de l’escolta activa, la identificació d’elements i la reflexió per entendre’n l’evolució i funcions dins la cultura.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Expressar-se musicalment a través d’improvisacions vocals o instrumentals tenint en compte les emocions que provoquen i per desenvolupar la creativitat amb una actitud col·laborativa.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Interpretar a través de la veu, els instruments i la dansa per explorar les possibilitats creatives, expressives i emocionals i desenvolupar l’autoestima.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Crear projectes musicals a través de la veu, els instruments i el cos amb el suport de les eines tecnològiques per desenvolupar oportunitats personals, socials i professionals de forma inclusiva.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Explicar els factors històrics, culturals i socials que envolten determinades produccions musicals, comprenent-ne les característiques i la funció a través de l’anàlisi d’exemples amb una actitud oberta i respectuosa."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Valorar tot tipus de manifestacions musicals del segle XX i de l’actualitat incloent-hi el cinema, en relació amb els seus elements característics com a reflex de la societat on van ser creades des d’una actitud d’obertura, interès i respecte."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Relacionar l’opinió personal i les emocions experimentades amb els coneixements musicals de manera respectuosa i crítica sobre exemples de músiques estudiades a través de l’audició, visionat o l’assistència a esdeveniments musicals."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Aplicar tècniques d’improvisació individuals o grupals, utilitzant el cos, la veu, els instruments o les eines tecnològiques i desenvolupant la creativitat i l’autoconfiança."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Desenvolupar habilitats musicals individuals i grupals a través de la interpretació, enfortint l’autoestima i la consciència col·lectiva."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Utilitzar tècniques d’interpretació musical i corporal adequades al context per a l’aprofundiment de les destreses musicals, potenciant l’expressió d’emocions i la seguretat en si mateix/a."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Mostrar autonomia i responsabilitat en els processos creatius participant com a intèrpret en actuacions i manifestacions musicals i escèniques dins i fora de centre."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Proposar tècniques d’interpretació musical i de moviment per a audicions i concerts a l’aula i fora, desenvolupant la creativitat i el respecte cap als altres."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Crear composicions complexes vocals, instrumentals, coreogràfiques i multidisciplinàries de manera individual i/o col·laborativa, mostrant respecte a idees, emocions i sentiments del grup."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Organitzar produccions que utilitzin la veu, el cos, els instruments i/o les eines digitals per al desenvolupament de projectes musicals, generant les oportunitats de desenvolupament personal, social i professional fruit de la feina col·laborativa."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "1. A. Escolta i percepció musical",
+      "titulo": "A. Escolta i percepció musical",
+      "items": [
+        "Anàlisi descriptiva de les característiques més rellevants de diverses propostes musicals",
+        "Relació entre les danses, les agrupacions vocals i instrumentals en les diferents etapes històriques.",
+        "Recerca d’artistes i agrupacions locals, regionals, nacionals i d’arreu.",
+        "Anàlisi d’esdeveniments i manifestacions musicals, escèniques i dansístiques en viu i registrades."
+      ]
+    },
+    {
+      "codigo": "2",
+      "bloque": "2. B. Interpretació, improvisació i creació",
+      "titulo": "B. Interpretació, improvisació i creació",
+      "items": [
+        "Pràctica de les tècniques elementals per a la interpretació: tècniques vocals, instrumentals i corporals, tècniques d’estudi i de regulació de les emocions.",
+        "Interpretació de repertori vocal, instrumental o corporal individual i/o grupal de diferents tipus de música actual.",
+        "Improvisació guiada i lliure a partir de tècniques vocals, instrumentals i/o corporals.",
+        "Creació de productes musicals i audiovisuals a partir de diferents elements i recursos.",
+        "Edició de partitures i aplicacions informàtiques en la creació, la interpretació i la improvisació.",
+        "Participació en activitats musicals mostrant les normes socials de comportament adequades."
+      ]
+    },
+    {
+      "codigo": "3",
+      "bloque": "3. C. Context i cultures musicals, mitjans de comunicació i tecnologies",
+      "titulo": "C. Context i cultures musicals, mitjans de comunicació i tecnologies",
+      "items": [
+        "Edició, gravació i reproducció del so en diferents contextos.",
+        "Ús de sistemes d’enregistrament i reproducció de so dins i fora de l’aula.",
+        "Contextualització històrica i social de la música al cinema.",
+        "Anàlisi de les músiques populars urbanes nacionals i internacionals des dels anys 50 fins a l’actualitat. El rock. El jazz. Principals solistes i grups musicals.",
+        "Valoració de la transformació dels valors, els hàbits, el consum i el gust musical com a conseqüència dels avenços tecnològics."
+      ]
+    }
+  ],
+  "comunidad": "cataluna",
+  "idioma": "ca"
+}

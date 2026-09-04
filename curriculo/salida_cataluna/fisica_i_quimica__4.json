@@ -35,7 +35,7 @@
     },
     {
       "codigo": "6",
-      "descripcion": "Interpretar i valorar la ciència com una construcció col·lectiva en continu canvi i evolució, que requereix la interacció amb la resta de la societat per generar millores que repercuteixin en l’avenç tecnològic, econòmic, ambiental i social. Criteris avaluació 1r, 2n i 3r 4t 6.1 Interpretar la ciència com un procés en construcció, a través de l’anàlisi amb perspectiva històrica dels avenços científics dels homes i dones que hi van participar, i valorar les repercussions mútues de la ciència actual amb la tecnologia, la societat i el medi ambient. 6.2 Raonar la capacitat de la ciència per proposar, mitjançant la implicació ciutadana, solucions sostenibles per a les necessitats tecnològiques, ambientals, econòmiques i socials, detectades en l’entorn, sense biaixos de gènere. 6.1 Interpretar la ciència com un procés en construcció, tant a través de l’anàlisi amb perspectiva històrica dels avenços científics dels homes i dones que hi van participar, com de les línies de recerca actuals, i valorar les repercussions mútues i les implicacions socials, econòmiques i mediambientals de la ciència actual en la societat. 6.2 Argumentar la capacitat de la ciència per proposar, mitjançant la implicació ciutadana, solucions sostenibles per a les necessitats tecnològiques, ambientals, econòmiques i socials, detectades en l’entorn, sense biaixos de gènere. Per completar el desenvolupament competencial de la matèria de Física i Química, l’alumne o alumna ha d’assumir que la ciència no és un procés finalitzat, sinó que està en una contínua construcció recíproca amb la tecnologia i la societat. La recerca de noves explicacions, la millora de procediments, els nous descobriments científics, etc. influeixen sobre la societat, i conèixer de forma global els impactes que la ciència hi produeix és fonamental en l’elecció del camí correcte per al desenvolupament. En aquesta línia, l’alumnat competent ha de tenir en compte valors com la importància dels avenços científics per a una societat demandant, els límits de la ciència, les qüestions ètiques i la confiança en els científics i en la seva activitat. Tot això forma part d’una consciència social en la qual no només intervé la comunitat científica, sinó que requereix la participació de tota la societat, ja que implica un avenç individual i social conjunt.",
+      "descripcion": "Interpretar i valorar la ciència com una construcció col·lectiva en continu canvi i evolució, que requereix la interacció amb la resta de la societat per generar millores que repercuteixin en l’avenç tecnològic, econòmic, ambiental i social.",
       "descriptores": []
     }
   ],
@@ -78,12 +78,27 @@
     {
       "codigo": "2.5",
       "competencia": "2",
-      "descripcion": "Presentar de manera clara i rigorosa els resultats i les conclusions obtingudes mitjançant l’experimentació, argumentant la connexió entre uns i altres, i l’observació de camp utilitzant el format adequat"
+      "descripcion": "Presentar de manera clara i rigorosa els resultats i les conclusions obtingudes mitjançant l’experimentació, argumentant la connexió entre uns i altres, i l’observació de camp utilitzant el format adequat (taules, gràfics, informes, etc.) i eines digitals."
+    },
+    {
+      "codigo": "2.6",
+      "competencia": "2",
+      "descripcion": "Valorar la contribució de la ciència a la societat i la tasca de les persones que s’hi han dedicat, argumentant sobre els biaixos de gènere en les ciències i la tecnologia i entenent la recerca com una tasca col·lectiva i interdisciplinària en constant evolució, influïda pel context polític i els recursos econòmics."
     },
     {
       "codigo": "3.1",
       "competencia": "3",
-      "descripcion": "Generar i usar dades de fonts i formats diversos (textos, taules, gràfiques, diagrames, etc.) per interpretar, validar i comunicar informació relativa a un procés físic o químic concret, mitjançant la"
+      "descripcion": "Generar i usar dades de fonts i formats diversos (textos, taules, gràfiques, diagrames, etc.) per interpretar, validar i comunicar informació relativa a un procés físic o químic concret, mitjançant la selecció crítica d’allò més rellevant per a la resolució del problema."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Utilitzar adequadament les regles bàsiques de la física i la química, incloent- hi l’ús adequat de diversos sistemes d’unitats de mesura, les eines matemàtiques necessàries i la formulació i nomenclatura IUPAC, com a elements bàsics del llenguatge científic i d’una comunicació efectiva per a l’intercanvi de coneixement entre la comunitat científica."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Utilitzar de manera pràctica, responsable i rigorosa les normes d’ús dels espais específics de ciència, com el laboratori de física i química, com a mitjà per assegurar la salut pròpia i col·lectiva, la conservació sostenible del medi ambient i el respecte per les instal·lacions."
     },
     {
       "codigo": "4.1",
@@ -119,82 +134,22 @@
       "codigo": "5.4",
       "competencia": "5",
       "descripcion": "Emprendre, de forma autònoma amb la metodologia adequada, projectes científics relacionats amb la millora de la societat i que afavoreixin el creixement entre iguals com a base d’una comunitat científica escolar crítica i ètica."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Interpretar la ciència com un procés en construcció, tant a través de l’anàlisi amb perspectiva històrica dels avenços científics dels homes i dones que hi van participar, com de les línies de recerca actuals, i valorar les repercussions mútues i les implicacions socials, econòmiques i mediambientals de la ciència actual en la societat."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Argumentar la capacitat de la ciència per proposar, mitjançant la implicació ciutadana, solucions sostenibles per a les necessitats tecnològiques, ambientals, econòmiques i socials, detectades en l’entorn, sense biaixos de gènere."
     }
   ],
   "saberes_basicos": [
     {
-      "codigo": "2",
-      "bloque": "2. Habilitats científiques bàsiques",
-      "titulo": "Habilitats científiques bàsiques",
-      "items": [
-        "Utilització de metodologies pròpies de la investigació científica per a la identificació i la formulació de qüestions, l’elaboració d’hipòtesis i el seu contrast experimental.",
-        "Disseny i realització de treball experimental i emprenedoria de projectes de recerca per a la resolució de problemes mitjançant l’ús de l’experimentació, la indagació, la deducció, la recerca d’evidències o el raonament logicomatemàtic per fer inferències vàlides a partir de les observacions i l’elaboració de conclusions pertinents i generals que vagin més enllà de les condicions experimentals, per aplicar-les a nous escenaris.",
-        "Ús de diversos entorns i recursos d’aprenentatge científic, com ara el laboratori o els entorns virtuals, utilitzant de forma correcta els materials, els productes i les eines tecnològiques i atenent les normes d’ús de cada espai per assegurar la conservació de la salut pròpia i comunitària, la seguretat en xarxes i el respecte al medi ambient.",
-        "Ús del llenguatge científic, incloent-hi l’ús adequat de representacions, sistemes d’unitats i eines matemàtiques, per aconseguir una comunicació argumentada en diferents entorns científics i d’aprenentatge.",
-        "Interpretació i producció d’informació científica en diferents formats i amb diferents mitjans per desenvolupar un criteri propi basat en allò que el pensament científic aporta a la millora de la societat.",
-        "Valoració de la cultura científica i del paper de les científiques i els científics en les principals fites històriques i actuals de la física i la química, posant de manifest referents femenins invisibilitzats, per a l’avenç i la millora d’una societat equitativa i plural."
-      ]
-    },
-    {
-      "codigo": "3",
-      "bloque": "3. La matèria",
-      "titulo": "La matèria",
-      "items": [
-        "Aplicació del model cinètic de la matèria i la teoria cineticomolecular a partir d’observacions sobre la matèria per explicar-ne les propietats, els estats d’agregació i els canvis d’estat, i la formació de barreges i dissolucions.",
-        "Realització d’experiments relacionats amb els sistemes materials per conèixer-ne i descriure’n les propietats, la composició i la classificació.",
-        "Diferenciació de substàncies i mescles per les seves propietats, i de substàncies elementals i compostes.",
-        "Identificació dels criteris d’ordenació dels elements en la taula periòdica i la seva utilitat.",
-        "Aplicació dels coneixements sobre l’estructura atòmica de la matèria per entendre la formació de ions, l‘existència d’isòtops i les seves propietats, el desenvolupament històric del model atòmic i la seva contribució a l’ordenació dels elements a la taula periòdica.",
-        "Relació entre les propietats físiques i químiques de les substàncies elementals i la situació dels corresponents elements a la taula periòdica.",
-        "Valoració de les aplicacions dels principals compostos químics, la seva formació i les seves propietats físiques i químiques, així com l’expressió de la quantitat de matèria.",
-        "Ús adequat d’un llenguatge científic comú i universal a través de la formulació i la nomenclatura de substàncies simples, ions monoatòmics i compostos binaris més freqüents mitjançant les regles de nomenclatura de la IUPAC."
-      ]
-    },
-    {
-      "codigo": "4",
-      "bloque": "4. L’energia",
-      "titulo": "L’energia",
-      "items": [
-        "Formulació de qüestions i hipòtesis sobre l’energia, les manifestacions i les propietats per a l’elaboració d’explicacions amb relació als processos de canvi.",
-        "Raonament dels aspectes energètics associats a canvis físics i els canvis químics i la seva identificació en fenòmens quotidians.",
-        "Experimentació amb materials d’ús quotidià de fenòmens de transferència d’energia en forma de llum i so.",
-        "Representació i interpretació de gràfics de temperatura, temps en processos d’escalfament i refredament i en els canvis d’estat.",
-        "Disseny i comprovació experimental d’hipòtesis relacionades amb l’ús domèstic i industrial de l’energia en les diferents formes i les seves transferències i transformacions.",
-        "Elaboració fonamentada d’hipòtesis sobre el medi ambient i la sostenibilitat a partir de les diferències entre fonts d’energia renovables i no renovables i el seu contrast amb dades reals i la presa argumentada de decisions.",
-        "Anàlisi i aplicació dels mecanismes i efectes de la transferència i conducció de calor sobre els sistemes materials (fluids i sòlids), l’assoliment de l’equilibri tèrmic, en situacions quotidianes i de rellevància ambiental i social.",
-        "Realització d’experiments relacionats amb la naturalesa elèctrica de la matèria, i comprovació i interpretació de les propietats conductores dels materials.",
-        "Disseny, muntatge i anàlisi de circuits elèctrics elementals, tant en un entorn físic com simulat.",
-        "Anàlisi crítica dels diferents processos d’obtenció d’energia elèctrica, per desenvolupar consciència sobre la necessitat de l’estalvi energètic i la conservació sostenible del medi ambient i la societat."
-      ]
-    },
-    {
-      "codigo": "5",
-      "bloque": "5. Interacció",
-      "titulo": "Interacció",
-      "items": [
-        "Predicció de les característiques fonamentals del moviment dels objectes a partir dels conceptes de la cinemàtica, per formular hipòtesis sobre valors futurs d’aquestes magnituds, mitjançant l’ús del càlcul numèric elemental, la interpretació de gràfiques i el disseny, muntatge i anàlisi d’activitats experimentals com a eines de contrast de les hipòtesis relacionades amb el moviment dels objectes.",
-        "Diferenciació dels efectes de les forces, com a agents del canvi tant a l’estat de moviment o de repòs d‘un cos, així com productores de deformacions, amb els canvis que produeixen en els sistemes sobre els quals actuen.",
-        "Descripció dels efectes de les forces a partir d’observacions de fenòmens quotidians o de situacions simulades en el laboratori.",
-        "Aplicació de les lleis de Newton per entendre com es comporten els sistemes materials davant l’acció de les forces i predir-ne els efectes en situacions quotidianes i de seguretat viària.",
-        "Identificació i comparació de les propietats elàstiques dels materials i relació amb la seva utilització."
-      ]
-    },
-    {
-      "codigo": "6",
-      "bloque": "6. El canvi",
-      "titulo": "El canvi",
-      "items": [
-        "Anàlisi dels diferents tipus de canvis que experimenten els sistemes materials per relacionar-los amb les causes que els produeixen i amb les conseqüències que tenen.",
-        "Diferenciació de canvis físics i canvis químics basant-se en evidències experimentals i en el concepte de substància.",
-        "Interpretació de les reaccions químiques a escala macroscòpica i submicroscòpica per explicar les relacions de la química amb el medi ambient, la tecnologia i la societat.",
-        "Cerca de similituds i diferències entre processos en els quals intervenen àcids i bases, oxidacions i formacions de precipitats i interpretació de les propietats de les substàncies que intervenen en contextos quotidians i d’actualitat.",
-        "Aplicació de la llei de conservació de la massa i de la llei de les proporcions definides, per utilitzar-les com a evidències experimentals, i interpretació sobre la base del model atomicomolecular de la matèria.",
-        "Anàlisi dels factors que afecten les reaccions químiques per predir-ne l’evolució de forma qualitativa i valoració de la contribució de diversos àmbits de la química en la resolució de problemes actuals, al desenvolupament sostenible, a la salut i el benestar i als productes quotidians."
-      ]
-    },
-    {
-      "codigo": "8",
-      "bloque": "8. Les destreses científiques bàsiques",
+      "codigo": "1",
+      "bloque": "1. Les destreses científiques bàsiques",
       "titulo": "Les destreses científiques bàsiques",
       "items": [
         "Disseny del treball experimental i emprenedoria de projectes de recerca per a la resolució de problemes mitjançant l’ús de l’experimentació i el tractament de l’error, la indagació, la deducció, la recerca d’evidències o el raonament logicomatemàtic per fer inferències vàlides sobre la base de les observacions i treure’n conclusions pertinents i generals que vagin més enllà de les condicions experimentals per aplicar-les a nous escenaris.",
@@ -205,8 +160,8 @@
       ]
     },
     {
-      "codigo": "9",
-      "bloque": "9. La matèria",
+      "codigo": "2",
+      "bloque": "2. La matèria",
       "titulo": "La matèria",
       "items": [
         "Realització d’activitats de naturalesa variada sobre els sistemes materials més comuns, incloent-hi dissolucions i sistemes dispersos, per a la resolució de problemes relacionats amb situacions quotidianes diverses.",
@@ -220,8 +175,8 @@
       ]
     },
     {
-      "codigo": "10",
-      "bloque": "10. L’energia",
+      "codigo": "3",
+      "bloque": "3. L’energia",
       "titulo": "L’energia",
       "items": [
         "Formulació i comprovació d’hipòtesis sobre les diferents formes d’energia i les seves aplicacions a partir de les seves propietats i del principi de conservació, per a la resolució de problemes relacionats amb l’energia mecànica en situacions quotidianes i de rellevància social.",
@@ -230,20 +185,20 @@
       ]
     },
     {
-      "codigo": "11",
-      "bloque": "11. La interacció",
+      "codigo": "4",
+      "bloque": "4. La interacció",
       "titulo": "La interacció",
       "items": [
         "Predicció i comprovació, utilitzant l’experimentació i el raonament logicomatemàtic, de les magnituds, equacions i gràfiques principals que descriuen el moviment d’un cos, per relacionar-lo amb situacions quotidianes i la millora de la qualitat de vida.",
         "Reconeixement de la força com a agent de canvis als cossos que s’aplica a altres camps com el disseny, l’esport o l’enginyeria, entre d’altres.",
         "Ús de la representació vectorial en gràfics i operacions numèriques amb forces i la seva aplicació a la resolució de problemes relacionats amb sistemes sotmesos a conjunts de forces, i valoració de la seva importància en situacions quotidianes.",
-        "Identificació i representació  de les principals forces de l’entorn quotidià, com ara el pes, la normal, el fregament, la tensió o l’empenta, i el seu ús en l’explicació de fenòmens físics en diferents contextos.",
+        "Identificació i representació de les principals forces de l’entorn quotidià, com ara el pes, la normal, el fregament, la tensió o l’empenta, i el seu ús en l’explicació de fenòmens físics en diferents contextos.",
         "Valoració dels efectes de les forces aplicades en líquids i gasos, i especialment del concepte de pressió, i els seus efectes en diferents situacions."
       ]
     },
     {
-      "codigo": "12",
-      "bloque": "12. El canvi",
+      "codigo": "5",
+      "bloque": "5. El canvi",
       "titulo": "El canvi",
       "items": [
         "Utilització de la informació continguda en una equació química ajustada i de les lleis més rellevants de les reaccions químiques per fer prediccions qualitatives i quantitatives per mètodes experimentals i numèrics, i relacionar-ho amb els processos fisicoquímics de la indústria, el medi ambient i la societat.",

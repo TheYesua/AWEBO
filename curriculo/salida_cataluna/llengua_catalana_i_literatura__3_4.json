@@ -122,14 +122,34 @@
       "descripcion": "Elaborar treballs d’investigació i comunicar de forma creativa i respectant els drets de la propietat intel·lectual, els resultats d’un procés d’investigació , individual o grupal, organitzant la informació, integrant-la en esquemes propis i reelaborant-la, i adoptant un punt de vista crític i respectuós amb els principis de propietat intel·lectual, sobre temes d’interès acadèmic, personal, ecològic i social, que incloguin els objectius de desenvolupament sostenible."
     },
     {
+      "codigo": "6.3",
+      "competencia": "6",
+      "descripcion": "Adoptar hàbits d’ús crític, segur, sostenible i saludable de les tecnologies digitals en relació amb la cerca i la comunicació de la informació."
+    },
+    {
       "codigo": "7.1",
       "competencia": "7",
       "descripcion": "Llegir de manera autònoma textos i obres seleccionats en funció dels propis gustos, interessos i necessitats, i deixar constància del progrés del propi itinerari lector i cultural explicant els criteris de selecció de les lectures, les formes d’accés a la cultura literària i l’experiència de lectura."
     },
     {
+      "codigo": "7.2",
+      "competencia": "7",
+      "descripcion": "Compartir l’experiència de lectura en suports diversos, tot relacionant el sentit de l’obra amb la pròpia experiència biogràfica, lectora i cultural."
+    },
+    {
       "codigo": "8.1",
       "competencia": "8",
       "descripcion": "Explicar i argumentar la interpretació de les obres llegides a partir de l’anàlisi de les relacions internes dels seus elements constitutius amb el sentit de l’obra, i de les relacions externes del text amb el seu context sociohistòric, atesa la configuració i evolució dels gèneres i subgèneres literaris."
+    },
+    {
+      "codigo": "8.2",
+      "competencia": "8",
+      "descripcion": "Establir, de manera progressivament autònoma, vincles argumentats entre els textos llegits i altres textos escrits, orals o multimodals i altres manifestacions artístiques en funció de temes, tòpics, estructures, llenguatge i valors ètics i estètics, mostrant la implicació i la resposta personal del lector en la lectura."
+    },
+    {
+      "codigo": "8.3",
+      "competencia": "8",
+      "descripcion": "Crear textos personals o col·lectius amb intenció literària i consciència d’estil, en diferents suports i amb ajuda d’altres llenguatges artístics i audiovisuals, a partir de la lectura d’obres o fragments significatius en els quals s’utilitzin les convencions formals dels diversos gèneres i estils literaris."
     },
     {
       "codigo": "9.1",
@@ -159,93 +179,37 @@
   ],
   "saberes_basicos": [
     {
-      "codigo": "31",
-      "bloque": "31. Comunicació · Context",
-      "titulo": "Comunicació · Context",
+      "codigo": "1",
+      "bloque": "1. Les llengües i els seus parlants",
+      "titulo": "Les llengües i els seus parlants",
       "items": [
-        "Anàlisi dels components de fet comunicatiu: grau de formalitat de la situació i caràcter públic o privat; distància social entre els interlocutors; propòsits comunicatius i interpretació d’intencions; canal de comunicació i elements no verbals de la comunicació, en situacions d’aula, de la vida quotidiana i dels mitjans de comunicació."
+        "Anàlisi de la pròpia biografia lingüística i de la diversitat lingüística del centre i de la localitat.",
+        "Anàlisi del desenvolupament sociohistòric de les llengües d’Espanya, amb especial atenció a la llengua catalana, per a la comprensió de la realitat plurilingüe i pluricultural.",
+        "Desenvolupament de la reflexió interlingüística en el context de la matèria.",
+        "Comparació i contrastació dels trets propis de les varietats dialectals (fònics, gramaticals i lèxics) i els relatius als sociolectes i els registres que permetin la comprensió de la realitat plurilingüe i pluricultural i el respecte a aquesta diversitat.",
+        "Exploració i qüestionament de prejudicis i estereotips lingüístics, especialment en els fenòmens de contacte entre llengües: bilingüisme, préstecs, interferències; diglòssia lingüística i diglòssia dialectal, que permetin la comprensió de la realitat plurilingüe i pluricultural i el respecte a aquesta diversitat.",
+        "Indagació entorn dels drets lingüístics i la seva expressió en lleis i declaracions institucionals."
       ]
     },
     {
-      "codigo": "32",
-      "bloque": "32. Comunicació · Gèneres discursius",
-      "titulo": "Comunicació · Gèneres discursius",
-      "items": [
-        "Detecció, anàlisi i ús de gèneres discursius de l’àmbit personal (conversa); educatiu de caràcter narratiu, descriptiu, dialogat i expositiu, d’acord amb les propietats textuals (adequació, coherència, cohesió i correcció), i social, parant especial atenció a les xarxes socials i mitjans de comunicació; respecte a l’etiqueta digital; avaluació de riscos de desinformació, manipulació i vulneració de la privacitat a la xarxa. Anàlisi de la imatge i elements paratextuals dels textos icònics, verbals i multimodals."
-      ]
-    },
-    {
-      "codigo": "33",
-      "bloque": "33. Comunicació · Processos",
-      "titulo": "Comunicació · Processos",
-      "items": [
-        "Interacció oral i escrita de caràcter informal. Consciència i ús dels actes de prendre i deixar la paraula, de la cooperació conversacional i la cortesia lingüística; de l’escolta activa, l’assertivitat i la resolució dialogada dels conflictes en el context de l’aula, de la vida quotidiana i dels mitjans de comunicació, incloses les xarxes, i en les activitats acadèmiques.",
-        "Comprensió del sentit global del text oral i relació entre les seves parts, selecció i retenció de la informació rellevant. Detecció i rebuig d’usos discriminatoris del llenguatge verbal i no verbal. en el context de l’aula, de la vida quotidiana i dels mitjans de comunicació, incloses les xarxes, i en les activitats acadèmiques.",
-        "Planificació i recerca d’informació, textualització i revisió de la producció oral formal.",
-        "Adequació a l’audiència i al temps d’exposició. Detecció i utilització d’elements no verbals. Anàlisi i ús dels trets discursius i lingüístics de l’oralitat formal, en el context de l’aula, de la vida quotidiana i dels mitjans de comunicació, incloses les xarxes, i en les activitats acadèmiques.",
-        "Comprensió del sentit global del text escrit i relació entre les parts. La intenció de l’emissor. Detecció d’usos discriminatoris del llenguatge verbal i icònic, en el context de l’aula, de la vida quotidiana i dels mitjans de comunicació, incloses les xarxes, i en les activitats acadèmiques.",
-        "Planificació, redacció, revisió i edició en diferents suports de textos escrits. Correcció gramatical i ortogràfica. Propietat lèxica. Usos de l’escriptura per a l’organització del pensament: presa de notes, esquemes, mapes conceptuals, definicions, resums, etc., en el context de l’aula, de la vida quotidiana i dels mitjans de comunicació, incloses les xarxes, i en les activitats acadèmiques.",
-        "Cerca i selecció de la informació amb criteris de fiabilitat, qualitat i pertinència; anàlisi, valoració, reorganització i síntesi de la informació en esquemes propis i transformació en coneixement; comunicació i difusió de manera creativa i respectuosa amb la propietat intel·lectual. Utilització de plataformes virtuals per a la realització de projectes escolars."
-      ]
-    },
-    {
-      "codigo": "34",
-      "bloque": "34. Comunicació · Reconeixement i ús discursiu dels elements lingüístics",
-      "titulo": "Comunicació · Reconeixement i ús discursiu dels elements lingüístics",
-      "items": [
-        "Reconeixement, anàlisi i ús discursiu dels elements lingüístics amb especial atenció als recursos lingüístics per mostrar la implicació de l’emissor en els textos: formes de dixi (personal, temporal i espacial) i procediments de modalització; recursos lingüístics per adequar el registre a la situació de comunicació; mecanismes de cohesió; connectors textuals temporals, explicatius, d’ordre i de contrast; mecanismes de referència interna gramaticals (substitucions pronominals) i lèxics (repeticions, sinònims, hiperònims i el·lipsis); coherència de les formes verbals en els textos; els temps de pretèrit en la narració; correlació temporal en el discurs relatat, en el context de l’aula, de la vida quotidiana i dels mitjans de comunicació, incloses les xarxes, i en les activitats acadèmiques.",
-        "Correcció lingüística i revisió ortogràfica i gramatical de diferents tipus de text i en diferents situacions. Ús de diccionaris, manuals de consulta i de correctors ortogràfics en suport analògic o digital per a la correcció i millora dels textos.",
-        "Ús dels signes bàsics de puntuació com a mecanisme organitzador del text escrit, la seva relació amb el significat."
-      ]
-    },
-    {
-      "codigo": "35",
-      "bloque": "35. Educació literària · Lectura autònoma",
-      "titulo": "Educació literària · Lectura autònoma",
-      "items": [
-        "Implicació en la lectura de manera progressivament autònoma a partir d’una preselecció de textos variats que incloguin obres d’autores i autors. Reflexió sobre els textos i sobre la pròpia pràctica de lectura sustentada en models.",
-        "Selecció d’obres variades que incloguin autores i autors de manera orientada a partir de l’exploració guiada de la biblioteca escolar i pública disponible.",
-        "Participació activa en actes culturals vinculats al circuit literari i lector.",
-        "Aplicació d’estratègies de presa de consciència dels propis gustos i identitat lectora, en l’àmbit personal i social (lectures compartides).",
-        "Expressió, a través de models comentats a l’aula o bé aportats per l’alumnat, de l’experiència lectora i de diferents formes d’apropiació i recreació dels textos llegits.",
-        "Aplicació d’estratègies de mobilització de l’experiència personal i lectora que permetin establir vincles entre l’obra llegida i aspectes de l’actualitat, així com amb altres textos i manifestacions artístiques, en l’àmbit personal i en conversa a l’aula.",
-        "Aplicació d’estratègies per a la recomanació de les lectures, en suports variats o bé oralment entre iguals."
-      ]
-    },
-    {
-      "codigo": "36",
-      "bloque": "36. Educació literària · Lectura guiada",
-      "titulo": "Educació literària · Lectura guiada",
-      "items": [
-        "Lectura d’obres rellevants de la literatura juvenil contemporània i del patrimoni literari universal, inscrites en itineraris temàtics o de gènere, que incloguin la presència d’autores i autors, en el context de l’aula i de l’entorn proper que permeti fer la transferència a altres situacions de caràcter literari i cultural amb vincles amb la pròpia vida.",
-        "Aplicació d’estratègies i models de construcció compartida de la interpretació de les obres a través de converses literàries, clubs de lectura i canals de difusió com revistes, blogs o clips audiovisuals.",
-        "Relació i contrast entre els elements constitutius del gènere literari i la construcció del sentit de l’obra. Anàlisi bàsica del valor dels recursos expressius; els seus efectes en la recepció.",
-        "Relació i comparació dels textos llegits amb altres textos, amb altres manifestacions artístiques i amb les noves formes de ficció en funció de gèneres, temes, tòpics, estructures i llenguatges. Gèneres: novel·la, narració breu, teatre, poesia, assaig, etc.",
-        "Temes: amor, amistat, mort, viatge, etc. Tòpics: carpe diem, tempus fugit, locus amoenus, captatio benevolentiae, ubi sunt, etc.",
-        "Aplicació d’estratègies, models i pautes per a l’expressió de la interpretació i valoració personal d’obres i fragments literaris, a través de processos i suports diversificats i tenint en compte la perspectiva de gènere.",
-        "Lectura expressiva, dramatització i recitació dels textos atenent als processos de comprensió, apropiació i oralització implicats.",
-        "Creació de textos a partir de l’apropiació de les convencions del llenguatge literari i en referència a models donats (imitació, transformació, continuació, etc.) en el context de l’expressió dels sentiments, emocions i experiències pròpies."
-      ]
-    },
-    {
-      "codigo": "82",
-      "bloque": "82. Comunicació · Context: components de fet comunicatiu",
+      "codigo": "2",
+      "bloque": "2. Comunicació · Context: components de fet comunicatiu",
       "titulo": "Comunicació · Context: components de fet comunicatiu",
       "items": [
         "Anàlisi dels components de fet comunicatiu: grau de formalitat de la situació i caràcter públic o privat; distància social entre els interlocutors; propòsits comunicatius i interpretació d’intencions; canal de comunicació i elements no verbals de la comunicació, en situacions d’aula, de la vida quotidiana i dels mitjans de comunicació."
       ]
     },
     {
-      "codigo": "83",
-      "bloque": "83. Comunicació · Els gèneres discursius",
+      "codigo": "3",
+      "bloque": "3. Comunicació · Els gèneres discursius",
       "titulo": "Comunicació · Els gèneres discursius",
       "items": [
         "Detecció, anàlisi i ús de gèneres discursius de l’àmbit personal (conversa, amb especial atenció als actes de parla que amenacen la imatge de l’interlocutor (la discrepància, la queixa, l’ordre, la reprovació); educatiu de caràcter expositiu i argumentatiu, d’acord amb les propietats textuals (adequació, coherència, cohesió i correcció), i social, parant especial atenció a les xarxes socials i mitjans de comunicació; respecte a l’etiqueta digital; avaluació de riscos de desinformació, manipulació i vulneració de la privacitat a la xarxa. Anàlisi de la imatge i elements paratextuals dels textos icònics, verbals i multimodals."
       ]
     },
     {
-      "codigo": "84",
-      "bloque": "84. Comunicació · Processos",
+      "codigo": "4",
+      "bloque": "4. Comunicació · Processos",
       "titulo": "Comunicació · Processos",
       "items": [
         "Interacció oral i escrita de caràcter informal. Prendre i deixar la paraula. Cooperació conversacional i cortesia lingüística. Escolta activa, assertivitat i resolució dialogada dels conflictes, en el context de l’aula, de la vida quotidiana i dels mitjans de comunicació, incloses les xarxes, i en les activitats acadèmiques..",
@@ -259,8 +223,8 @@
       ]
     },
     {
-      "codigo": "85",
-      "bloque": "85. Comunicació · Reconeixement i ús discursiu dels elements lingüístics",
+      "codigo": "5",
+      "bloque": "5. Comunicació · Reconeixement i ús discursiu dels elements lingüístics",
       "titulo": "Comunicació · Reconeixement i ús discursiu dels elements lingüístics",
       "items": [
         "Reconeixement, anàlisi i ús discursiu, en el context de l’aula, de la vida quotidiana i dels mitjans de comunicació, incloses les xarxes, i en les activitats acadèmiques, dels elements lingüístics amb especial atenció a l’expressió de la subjectivitat en textos de caràcter expositiu i argumentatiu; la identificació i ús de les variacions de les formes díctiques (fórmules de confiança i cortesia) en relació amb situacions de comunicació diverses; recursos lingüístics per adequar el registre a la situació de comunicació; procediments explicatius bàsics: l’aposició i les oracions de relatiu; mecanismes de cohesió: connectors textuals distributius, d’ordre, contrast, explicació, causa, conseqüència, condició i hipòtesi; mecanismes de referència interna, gramaticals i lèxics (nominalitzacions i hiperònims de significat abstracte); coherència de les formes verbals en els textos; correlació temporal en la coordinació i subordinació d’oracions, i en el discurs relatat.",
@@ -269,8 +233,8 @@
       ]
     },
     {
-      "codigo": "86",
-      "bloque": "86. Educació literària · Lectura autònoma",
+      "codigo": "6",
+      "bloque": "6. Educació literària · Lectura autònoma",
       "titulo": "Educació literària · Lectura autònoma",
       "items": [
         "Implicació en la lectura de manera progressivament autònoma i reflexió sobre els textos llegits i sobre la pròpia pràctica de lectura.",
@@ -283,8 +247,8 @@
       ]
     },
     {
-      "codigo": "87",
-      "bloque": "87. Educació literària · Lectura guiada",
+      "codigo": "7",
+      "bloque": "7. Educació literària · Lectura guiada",
       "titulo": "Educació literària · Lectura guiada",
       "items": [
         "Lectura d’obres rellevants del patrimoni literari nacional i universal i de la literatura actual inscrites en itineraris temàtics o de gènere, que incloguin la presència d’autores i autors, en el context de l’aula i de l’entorn proper, i que permetin fer la transferència a altres situacions de caràcter literari i cultural amb vincles amb la pròpia vida. Gèneres: novel·la, narració breu, teatre, poesia, etc. Temes: amor, amistat, mort, viatge, etc. Tòpics: carpe diem, tempus fugit, locus amoenus, captatio benevolentiae, ubi sunt, etc.",
@@ -296,6 +260,21 @@
         "Indagació al voltant de les obres llegides que promoguin l’interès per construir la interpretació de les obres i establir connexions entre textos.",
         "Lectura expressiva, dramatització i recitació dels textos atenent als processos de comprensió, apropiació i oralització implicats.",
         "Creació de textos a partir de l’apropiació de les convencions del llenguatge literari i en referència a models donats (imitació, transformació, continuació, etc.) en el context de l’expressió dels sentiments, emocions i experiències pròpies."
+      ]
+    },
+    {
+      "codigo": "8",
+      "bloque": "8. Reflexió sobre la llengua",
+      "titulo": "Reflexió sobre la llengua",
+      "items": [
+        "Aplicació d’estratègies per a la construcció guiada de conclusions pròpies sobre el sistema lingüístic. Observació, comparació i classificació d’unitats comunicatives.",
+        "Experimentació amb estructures, formulació d’hipòtesis, contraexemples, generalitzacions i contrast entre llengües, utilitzant el metallenguatge específic, en el marc de la millora en la comprensió i producció dels textos orals, escrits i multimodals en situacions diverses, tant personals i socials com acadèmiques.",
+        "Observació, contrast i anàlisi de les diferències rellevants i interseccions entre llengua oral i llengua escrita atenent a aspectes sintàctics, lèxics i pragmàtics, per a la millora en la comprensió i producció dels textos orals, escrits i multimodals en situacions diverses, tant personals i socials com acadèmiques.",
+        "Comprensió, anàlisi i valoració de la llengua com a sistema i de les seves unitats bàsiques tenint en compte els diferents nivells: el so i sistema d’escriptura, les paraules (forma i significat), la seva organització en el discurs (ordre de les paraules, components de les oracions o connexió entre els significats), per a la millora en la comprensió i producció dels textos orals, escrits i multimodals en situacions diverses, tant personals i socials com acadèmiques.",
+        "Distinció i reflexió entre la forma (categoria gramatical) i la funció de les paraules (funcions sintàctiques de l’oració simple) i consolidació dels procediments lèxics (afixos) i sintàctics per al canvi de categoria, en situacions de comprensió i expressió de textos orals i escrits.",
+        "Relació entre els esquemes semàntic i sintàctic de l’oració simple. Observació i transformació d’enunciats d’acord amb aquests esquemes i ús de la terminologia sintàctica necessària per fer comprensible els textos.",
+        "Anàlisi i valoració dels procediments d’adquisició i formació de paraules. Reflexió sobre els canvis en el seu significat, les relacions semàntiques entre paraules i els seus valors denotatius i connotatius en funció del context i el propòsit comunicatiu, per a la comprensió i enriquiment dels textos.",
+        "Aplicació d’estratègies d’ús progressivament autònom de diccionaris i manuals de gramàtica."
       ]
     }
   ],
