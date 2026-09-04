@@ -33,6 +33,8 @@ from app.curriculo.extractor_xtec import (
     titulos_de,
     leer_lineas,
 )
+from app.curriculo.xtec_etapas import ESO as ESO_XTEC
+from app.curriculo.xtec_etapas import BACHILLERATO, CURSOS_BACHILLERATO
 
 
 _FUENTES = Path(__file__).resolve().parents[2].parent / "curriculo" / "fuentes" / "cataluna"
@@ -42,6 +44,76 @@ ARTICULADO = _FUENTES / "decret_175_2022.xml"
 MATES = XTEC / "Matematiques.pdf"
 LENGUAS = XTEC / "Aranes.Castella.-Catala.pdf"
 CULTURA = XTEC / "Cultura-Cientifica.pdf"
+
+
+def _codigos_de_criterio(pdf: Path) -> int:
+    """Cuántas líneas del PDF empiezan por un código de criterio, «3.2 ».
+
+    LA COMPROBACIÓN MÁS FUERTE DEL FICHERO, y la que faltaba: aquí sí se puede
+    exigir **igualdad**, no una cota. Cada criterio del decreto empieza su
+    primera línea con su código, así que contarlos en el PDF da el número
+    exacto que tiene que salir del extractor.
+
+    Con ella se encontraron de golpe tres fallos que llevaban meses cargados y
+    ninguno daba error:
+
+    - Las tablas que cruzan de página perdían su continuación, porque el corte
+      se hacía comparando solo la `y` y en la página siguiente la `y` es
+      pequeña. 67 criterios de Bachillerato y 18 de la ESO.
+    - «Criteris avaluació» sin la `d'`, en Física i Química: cuatro criterios.
+    - Dos columnas cuya cabecera no se reconocía se fundían en un tramo, con
+      el código repetido; al cargar, el segundo pisaba al primero.
+    """
+    import re
+
+    import pymupdf
+
+    doc = pymupdf.open(pdf)
+    return sum(
+        1
+        for pagina in doc
+        for bloque in pagina.get_text("dict")["blocks"]
+        for linea in bloque.get("lines", [])
+        if re.match(r"^\d+\.\d+\.?\s+\S",
+                    "".join(s["text"] for s in linea["spans"]).strip())
+    )
+
+
+def _guiones_de_sabers(pdf: Path) -> int:
+    """Cuántas líneas del epígrafe «Sabers» empiezan por guion.
+
+    LA GUARDA QUE FALTABA, y por qué se cuenta así. Los tests de este fichero
+    detectaban «cero saberes» y «el total se desploma». No detectaban **«sale
+    poco, pero no cero»**, que es como falló «Química»: doce items en trece
+    páginas de decreto, todos ellos títulos de subbloque, porque ese PDF sangra
+    el subbloque a la derecha del saber y no al revés.
+
+    Doce no dispara ninguna alarma y los textos parecen saberes cortos. Lo que
+    sí lo delata es que el PDF tiene 44 renglones que empiezan por guion.
+
+    Es una cota, no una igualdad: hay saberes escritos sin guion —«Estada a
+    l'Empresa» no usa ninguno— y continuaciones que se vuelven a juntar. Por
+    eso la comprobación es «no puede haber menos items que guiones», con dos de
+    margen.
+    """
+    import re
+
+    import pymupdf
+
+    doc = pymupdf.open(pdf)
+    dentro, n = False, 0
+    for pagina in doc:
+        for bloque in pagina.get_text("dict")["blocks"]:
+            for linea in bloque.get("lines", []):
+                t = "".join(s["text"] for s in linea["spans"]).strip()
+                if not t:
+                    continue
+                if t == "Sabers":
+                    dentro = True
+                    continue
+                if dentro and re.match(r"^[-–—−]($|\s)", t):
+                    n += 1
+    return n
 
 
 class TestLimpiezaDeTitulos:
@@ -256,10 +328,61 @@ class TestElConjuntoCompleto:
 
         Se fija una cota inferior y no un número exacto porque lo que hay que
         detectar es el desplome, no una variación de dos items.
+
+        LA COTA BAJÓ DE 1800 A 1250 EL 03/09, Y NO PORQUE SE PERDIERA NADA.
+        Hasta esa fecha nueve materias contaban sus saberes **dos veces**: su
+        epígrafe viene partido en «Primer i segon curs» / «Tercer i quart
+        curs» y los dos tramos se cargaban con los dos juegos enteros. Al
+        repartirlos, el total pasó de 1918 a 1330 sin que desapareciera un solo
+        item —lo comprueba `test_el_reparto_por_curso_no_pierde_ni_duplica`—.
         """
         items = sum(len(b.items) for mc in todo for b in mc.saberes)
 
-        assert items > 1800, f"solo {items} items de saberes: algo dejó de leerse"
+        assert items > 1250, f"solo {items} items de saberes: algo dejó de leerse"
+
+    def test_el_reparto_por_curso_no_pierde_ni_duplica(self, todo):
+        """La propiedad que de verdad importa del reparto por curso.
+
+        Seis PDF de la ESO parten los saberes con «Primer i segon curs» y
+        «Tercer i quart curs», y Ciències Socials con «Primer i segon» a secas.
+        Antes del 03/09 cada tramo se llevaba los dos juegos: **en 1.º de ESO
+        salían los saberes de 4.º**. No fallaba nada; solo era falso.
+
+        Contar items no basta para comprobarlo —repartir mal la mitad da el
+        mismo total—, así que lo que se comprueba es que **cada tramo tenga
+        saberes que el otro no tenga**. Con el fallo los dos conjuntos eran
+        idénticos; ahora tienen que solaparse poco y nada más.
+
+        NO SE EXIGE SOLAPE CERO, y se comprobó antes de rebajarlo: el decreto
+        repite literalmente algunos saberes en los dos tramos. «Formulació de
+        preguntes, hipòtesis i conjectures científiques» aparece dos veces en
+        el PDF de Biologia i Geologia, una por tramo. Son 5 de 43 y 5 de 23.
+        """
+        por_materia: dict[str, list[set[str]]] = {}
+        for mc in todo:
+            por_materia.setdefault(mc.materia_oficial, []).append(
+                {i for b in mc.saberes for i in b.items}
+            )
+
+        # Emprenedoria no sale de un epígrafe partido sino de **dos PDF**
+        # distintos, uno de 1.º-3.º y otro de 4.º, y el decreto repite diez
+        # saberes idénticos entre los dos. Se comprobó contándolos en el texto
+        # de cada fichero: uno y uno, no dos en el mismo.
+        DE_DOS_FICHEROS = {"Emprenedoria"}
+
+        iguales = []
+        muy_solapados = []
+        for m, tramos in por_materia.items():
+            if len(tramos) != 2 or not all(tramos) or m in DE_DOS_FICHEROS:
+                continue
+            uno, otro = tramos
+            if uno == otro:
+                iguales.append(m)
+            elif len(uno & otro) > 0.4 * min(len(uno), len(otro)):
+                muy_solapados.append((m, len(uno & otro), len(uno), len(otro)))
+
+        assert iguales == [], f"los dos tramos traen lo mismo: {iguales}"
+        assert muy_solapados == [], f"solape sospechoso: {muy_solapados}"
 
     def test_NINGUNA_materia_se_queda_sin_saberes(self, todo):
         """Estuvo en 17 durante una tarde, anotado como deuda con este mismo
@@ -390,3 +513,279 @@ class TestLaMateriaQueElDecretoNoLista:
         fuente = inspect.getsource(m.main)
 
         assert "por_clave.get(clave) or fuera.get(clave" in fuente
+
+
+# ---------------------------------------------------------------------------
+# Bachillerato: Decret 171/2022, modificado por el Decret 103/2026
+# ---------------------------------------------------------------------------
+
+BATX = (Path(__file__).resolve().parents[2].parent
+        / "curriculo" / "fuentes" / "cataluna-batxillerat")
+
+
+class TestLaTablaDeCursosDeBachillerato:
+    """Sin PDF: lo que se transcribió del DOIGC del curso 2026-2027."""
+
+    def test_las_ciencias_de_primero_son_las_unificadas(self):
+        """EL CAMBIO DEL DECRET 103/2026, que es lo que más fácil sería cargar
+        mal: desde 2026-2027 en 1.º no hay Biologia ni Física por separado,
+        sino «Biologia, Geologia i Ciències Ambientals» y «Física i Química».
+        Las sueltas son de 2.º.
+
+        El articulado original del 171/2022 —que sigue publicado como texto
+        aprobado por el Govern— da el reparto anterior. Si alguien lo usa para
+        «corregir» esta tabla, este test lo dice.
+        """
+        assert CURSOS_BACHILLERATO["Biologia, Geologia i Ciències Ambientals"] == \
+            ["1º Bachillerato"]
+        assert CURSOS_BACHILLERATO["Física i Química"] == ["1º Bachillerato"]
+        assert CURSOS_BACHILLERATO["Biologia"] == ["2º Bachillerato"]
+        assert CURSOS_BACHILLERATO["Física"] == ["2º Bachillerato"]
+        assert CURSOS_BACHILLERATO["Química"] == ["2º Bachillerato"]
+        assert CURSOS_BACHILLERATO["Geologia i Ciències Ambientals"] == \
+            ["2º Bachillerato"]
+
+    def test_las_cabeceras_de_columna_de_bachillerato_casan(self):
+        """La de la ESO no contempla la palabra «curs». Con ella, las 17
+        materias con tabla de dos columnas salían con los criterios de los dos
+        cursos revueltos en un solo tramo."""
+        assert BACHILLERATO.cursos_de_cabecera("1r curs") == ["1º Bachillerato"]
+        assert BACHILLERATO.cursos_de_cabecera("2n curs") == ["2º Bachillerato"]
+        assert BACHILLERATO.rx_cabecera_cursos.match("1r curs")
+        assert not ESO_XTEC.rx_cabecera_cursos.match("1r curs")
+
+    @pytest.mark.parametrize("cabecera, cursos", [
+        ("Primer curs", ["1º Bachillerato"]),
+        ("Segon curs", ["2º Bachillerato"]),
+    ])
+    def test_las_cabeceras_que_parten_los_saberes(self, cabecera, cursos):
+        assert BACHILLERATO.curso_de_saberes(cabecera) == cursos
+
+    @pytest.mark.parametrize("cabecera, cursos", [
+        ("Primer i segon curs", ["1º ESO", "2º ESO"]),
+        ("Primer i segon", ["1º ESO", "2º ESO"]),
+        ("De primer a tercer curs", ["1º ESO", "2º ESO", "3º ESO"]),
+        ("Primer, segon i tercer curs", ["1º ESO", "2º ESO", "3º ESO"]),
+        ("Cursos de primer a tercer", ["1º ESO", "2º ESO", "3º ESO"]),
+        ("Matèria optativa de quart curs", ["4º ESO"]),
+        ("Quart curs", ["4º ESO"]),
+    ])
+    def test_las_cinco_maneras_de_decir_lo_mismo_en_la_eso(self, cabecera, cursos):
+        """Cada fórmula sale de un PDF distinto, y todas parten los saberes.
+
+        «Matèria optativa de quart curs» estuvo un rato en un test que decía
+        justo lo contrario —que NO era una cabecera—, escrito mirando la
+        expresión regular en vez del PDF de Música. Lo es, y no reconocerla
+        dejaba los dos tramos de Música con los mismos saberes.
+        """
+        assert ESO_XTEC.curso_de_saberes(cabecera) == cursos
+
+    def test_un_titulo_de_bloque_no_se_confunde_con_una_cabecera(self):
+        assert ESO_XTEC.curso_de_saberes("Sentit numèric") is None
+        assert ESO_XTEC.curso_de_saberes("A. Escolta i percepció musical") is None
+
+
+@pytest.mark.skipif(not BATX.exists(), reason=f"no está {BATX}")
+class TestElBachilleratoCatalanCompleto:
+    """Los 79 PDF de la XTEC, leídos enteros."""
+
+    @pytest.fixture(scope="class")
+    def todo(self):
+        bloques = []
+        for pdf in sorted(BATX.glob("*.pdf")):
+            for mc in extraer(pdf, etapa=BACHILLERATO):
+                if not mc.cursos_aplicables:
+                    mc.cursos_aplicables = list(
+                        CURSOS_BACHILLERATO.get(mc.materia_oficial, [])
+                    )
+                bloques.append(mc)
+        return bloques
+
+    def test_todas_las_materias_tienen_cursos(self, todo):
+        """Una materia sin cursos no da error: se carga, sale en el
+        desplegable y no se ofrece en ninguna parte. Aquí no puede quedar
+        ninguna porque la tabla se transcribió entera del DOIGC."""
+        sin = sorted({b.materia_oficial for b in todo if not b.cursos_aplicables})
+
+        assert sin == [], f"materias sin cursos: {sin}"
+
+    def test_todas_tienen_competencias(self, todo):
+        """El decreto de Bachillerato escribe «Competència 3» y el de la ESO
+        «Competència específica 3». Con el patrón de la ESO a secas, las 79
+        materias salían con cero competencias y los criterios colgando de una
+        competencia «1» inventada."""
+        sin = sorted({b.materia_oficial for b in todo if not b.competencias})
+
+        assert sin == []
+
+    def test_las_que_no_traen_criterios_son_las_que_el_decreto_deja_abiertas(self, todo):
+        """No es un fallo de lectura: veintiuna optativas no llevan criterios
+        ni saberes porque el propio currículo dice que los fija el centro
+        —«El professorat establirà els criteris d'avaluació… i seleccionarà
+        els sabers»—. Se fija la lista entera para que, si mañana una materia
+        con currículo completo se queda sin criterios, salte aquí.
+        """
+        sin = sorted({b.materia_oficial for b in todo if not b.criterios})
+
+        assert sin == [
+            "Biomedicina",
+            "Ciutadania, Política i Dret",
+            "Comunicació Audiovisual",
+            "Creació Fotogràfica i Cinema",
+            "Creació Literària",
+            "Disseny 2D i 3D",
+            "Formació i Orientació Personal i Professional",
+            "Funcionament de l’Empresa",
+            "Llenguatges Artístics Contemporanis",
+            "Matemàtica Aplicada",
+            "Món Clàssic",
+            "Música i Comunicació",
+            "Objectius de Desenvolupament Sostenible (ODS)",
+            "Problemàtiques Socials",
+            "Programació",
+            "Projecte de Comissariat d’Exposicions",
+            "Psicologia",
+            "Publicitat",
+            "Reptes Científics Actuals (Biologia i Geologia)",
+            "Reptes Científics Actuals (Física i Química)",
+            "Robòtica",
+            "Taller de Creació Escènica",
+        ], f"lista distinta: {sin}"
+
+    def test_las_de_dos_cursos_no_comparten_saberes(self, todo):
+        """En Bachillerato el epígrafe «Sabers» de las materias de dos cursos
+        viene partido en «Primer curs» y «Segon curs». Sin reconocerlo, 1.º se
+        cargaba con los saberes de 2.º además de los suyos, sin dar error.
+
+        Se indexa por (materia, cursos) y no por materia a secas porque seis
+        materias vienen **dos veces**, una por cada sección del portal en que
+        se ofertan, con el mismo curso: comparar esas dos copias daría un falso
+        positivo, ya que son el mismo fichero.
+        """
+        por_materia: dict[str, dict[tuple[str, ...], set[str]]] = {}
+        for mc in todo:
+            por_materia.setdefault(mc.materia_oficial, {})[
+                tuple(mc.cursos_aplicables)
+            ] = {i for b in mc.saberes for i in b.items}
+
+        iguales = [m for m, tramos in por_materia.items()
+                   if len(tramos) == 2 and all(tramos.values())
+                   and len(set(map(frozenset, tramos.values()))) == 1]
+
+        assert iguales == [], f"los dos cursos traen lo mismo: {iguales}"
+
+    def test_los_parentesis_del_titulo_no_se_recortan(self, todo):
+        """En la ESO el paréntesis del título es una coletilla de curso y se
+        quita. En Bachillerato es parte del nombre: recortarlo fundiría las dos
+        «Reptes Científics Actuals» en una y la segunda pisaría a la primera.
+        """
+        nombres = {b.materia_oficial for b in todo}
+
+        assert "Reptes Científics Actuals (Biologia i Geologia)" in nombres
+        assert "Reptes Científics Actuals (Física i Química)" in nombres
+
+    def test_los_titulos_no_son_frases_del_cuerpo(self, todo):
+        """PyMuPDF da a una línea el tamaño de su fragmento más grande, y en
+        seis párrafos de «Biologia, Geologia i Ciències Ambientals» el punto
+        final viene un punto mayor que el resto. Tomando «todas las líneas del
+        tamaño mayor», esas seis frases se cargaban como materias."""
+        largos = sorted(n for n in {b.materia_oficial for b in todo} if len(n) > 50)
+
+        assert largos == [
+            "Dibuix Tècnic Aplicat a les Arts Plàstiques i el Disseny",
+            "Funcionament de l’Empresa i Disseny de Models de Negoci",
+        ]
+
+    @pytest.mark.parametrize("etapa, carpeta", [
+        (BACHILLERATO, BATX),
+        (ESO_XTEC, XTEC),
+    ])
+    def test_salen_exactamente_los_criterios_que_hay_en_el_pdf(self, etapa, carpeta):
+        """Igualdad, PDF a PDF. Ver `_codigos_de_criterio`.
+
+        Se cuenta por tramo distinto y no por bloque: un PDF con varias
+        materias repite los mismos criterios una vez por materia.
+        """
+        if not carpeta.exists():
+            pytest.skip(f"no está {carpeta}")
+
+        descuadres = []
+        for pdf in sorted(carpeta.glob("*.pdf")):
+            en_el_pdf = _codigos_de_criterio(pdf)
+            vistos, extraidos = set(), 0
+            for mc in extraer(pdf, etapa=etapa):
+                cursos = tuple(mc.cursos_aplicables)
+                if cursos in vistos:
+                    continue
+                vistos.add(cursos)
+                extraidos += len(mc.criterios)
+            if extraidos != en_el_pdf:
+                descuadres.append((pdf.name, en_el_pdf, extraidos))
+
+        assert descuadres == [], f"(fichero, en el PDF, extraídos): {descuadres}"
+
+    @pytest.mark.parametrize("etapa, carpeta", [
+        (BACHILLERATO, BATX),
+        (ESO_XTEC, XTEC),
+    ])
+    def test_ningun_codigo_de_criterio_se_repite_dentro_de_un_tramo(self, etapa, carpeta):
+        """Un código repetido dentro de (materia, cursos) es la firma de dos
+        columnas fundidas: el decreto numera 1.1 en cada curso, no dos veces
+        en el mismo.
+
+        Importa porque el cargador hace *upsert* por esa clave: con el código
+        repetido, el segundo criterio **actualiza la fila del primero** y el
+        texto del primero se pierde. Así estuvieron 50 criterios catalanes
+        desde el 14/08.
+        """
+        if not carpeta.exists():
+            pytest.skip(f"no está {carpeta}")
+
+        repetidos = []
+        for pdf in sorted(carpeta.glob("*.pdf")):
+            for mc in extraer(pdf, etapa=etapa):
+                codigos = [c.codigo for c in mc.criterios]
+                if len(codigos) != len(set(codigos)):
+                    repetidos.append((mc.materia_oficial, mc.ciclo))
+
+        assert repetidos == [], f"códigos repetidos en un tramo: {repetidos}"
+
+    @pytest.mark.parametrize("etapa, carpeta", [
+        (BACHILLERATO, BATX),
+        (ESO_XTEC, XTEC),
+    ])
+    def test_no_hay_menos_saberes_que_guiones(self, etapa, carpeta):
+        """La guarda del modo de fallo «sale poco, pero no cero».
+
+        Se comprueba PDF a PDF, no en total: en el total, «Química» perdiendo
+        32 saberes se compensaba con otras materias y no se notaba.
+        """
+        if not carpeta.exists():
+            pytest.skip(f"no está {carpeta}")
+
+        cortos = []
+        for pdf in sorted(carpeta.glob("*.pdf")):
+            guiones = _guiones_de_sabers(pdf)
+            vistos, items = set(), 0
+            for mc in extraer(pdf, etapa=etapa):
+                cursos = tuple(mc.cursos_aplicables)
+                if cursos in vistos:
+                    # Un PDF con varias materias repite los mismos saberes.
+                    continue
+                vistos.add(cursos)
+                items += sum(len(b.items) for b in mc.saberes)
+            if items < guiones - 2:
+                cortos.append((pdf.name, guiones, items))
+
+        assert cortos == [], f"saberes perdidos: {cortos}"
+
+    def test_la_edicion_anterior_de_llati_no_se_carga_aparte(self, todo):
+        """El portal sirve «Llengua i Cultura Llatines» y «Llatí», que son el
+        mismo currículo con el nombre que cambió el Decret 103/2026 —difieren
+        en 276 caracteres, todos el nombre dentro del texto—. Cargar las dos
+        daría dos materias para lo mismo, y por orden alfabético ganaría la
+        vieja."""
+        nombres = {b.materia_oficial for b in todo}
+
+        assert "Llatí" in nombres
+        assert "Llengua i Cultura Llatines" not in nombres

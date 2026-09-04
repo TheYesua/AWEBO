@@ -50,6 +50,7 @@ from .extractor import (
     MateriaCiclo,
     retirar_huerfanos,
 )
+from .xtec_etapas import ESO, ETAPAS, EtapaXTEC
 
 
 logger = logging.getLogger("curriculo.extractor_xtec")
@@ -59,11 +60,20 @@ logger = logging.getLogger("curriculo.extractor_xtec")
 # Reconocimiento
 # ---------------------------------------------------------------------------
 
-#: «Competència específica 3»
-RX_COMPETENCIA = re.compile(r"^Compet[èe]ncia espec[íi]fica\s+(\d+)\s*$")
+#: «Competència específica 3» en la ESO, «Competència 3» en Bachillerato. Los
+#: dos decretos son de la misma casa y no llaman igual al mismo epígrafe: con
+#: la forma larga sola, las 79 materias de Bachillerato salían con **cero
+#: competencias** y los criterios colgados de una competencia «1» inventada.
+RX_COMPETENCIA = re.compile(r"^Compet[èe]ncia(?:\s+espec[íi]fica)?\s+(\d+)\s*$")
 
 #: «Criteris d'avaluació», con apóstrofo tipográfico o recto.
-RX_CRITERIOS = re.compile(r"^Criteris d[’']avaluaci[óo]\s*$")
+#:
+#: Y **con la `d'` opcional**, porque en la competencia 6 de Física i Química
+#: el decreto escribe «Criteris avaluació», sin ella. No es una errata que se
+#: pueda ignorar: sin este epígrafe, el extractor no ve la tabla que viene
+#: debajo y esa competencia se queda con cero criterios. Cuatro criterios
+#: perdidos, dos por curso, y ningún error.
+RX_CRITERIOS = re.compile(r"^Criteris\s+(?:d[’']\s*)?avaluaci[óo]\s*$")
 
 RX_SABERES = re.compile(r"^Sabers\s*$")
 
@@ -73,25 +83,52 @@ RX_SABERES = re.compile(r"^Sabers\s*$")
 #: segunda no casaba ni un criterio y la materia salía con cero, sin dar error.
 RX_CRITERIO = re.compile(r"^(\d+)\.(\d+)\.?\s+(.*)$")
 
-#: Cabecera de columna: «1r i 2n», «1r, 2n i 3r», «4t», «3r i 4t».
-RX_CABECERA_CURSOS = re.compile(r"^(?:1r|2n|3r|4t)(?:[\s,i]+(?:1r|2n|3r|4t))*$")
+#: Cabecera de columna de la ESO: «1r i 2n», «1r, 2n i 3r», «4t», «3r i 4t».
+#: La de Bachillerato es distinta —«1r curs»— y vive en `xtec_etapas`; esta se
+#: conserva como nombre público porque es lo que importan los tests.
+RX_CABECERA_CURSOS = ESO.rx_cabecera_cursos
 
-_ORDINAL_A_CURSO = {"1r": "1º ESO", "2n": "2º ESO", "3r": "3º ESO", "4t": "4º ESO"}
-
-#: Pie de página que se repite en todas las páginas y no es contenido.
-RX_PIE = re.compile(r"^Decret 175/2022|^\d+/\d+$")
+#: Pie de página que se repite en todas las páginas y no es contenido. También
+#: depende de la etapa: cita el decreto, y son dos decretos distintos.
+RX_PIE = ESO.rx_pie
 
 #: «(matèria optativa de quart d'ESO)» en el título: dice el curso cuando no
-#: hay tabla de dos columnas que lo diga.
+#: hay tabla de dos columnas que lo diga. **Solo de la ESO**: en Bachillerato
+#: ningún título lleva el curso dentro.
 RX_OPTATIVA_CURSO = re.compile(
     r"optativa de\s+(primer|segon|tercer|quart)(?:\s+a\s+(primer|segon|tercer|quart))?", re.I
 )
 _ORDINAL_LARGO = {"primer": 1, "segon": 2, "tercer": 3, "quart": 4}
 
 
-def _cursos_de_cabecera(texto: str) -> list[str]:
-    """«1r, 2n i 3r» -> ``["1º ESO", "2º ESO", "3º ESO"]``."""
-    return [_ORDINAL_A_CURSO[o] for o in re.findall(r"1r|2n|3r|4t", texto)]
+#: El curso que el título lleva pegado al final, **sin la palabra «optativa»**:
+#: «Educació Plàstica, Visual i Audiovisual de primer a tercer», «Expressió
+#: Artística de quart».
+RX_CURSO_EN_EL_TITULO = re.compile(
+    r"\bde\s+(primer|segon|tercer|quart)(?:\s+a\s+(primer|segon|tercer|quart))?"
+    r"\s*$", re.I
+)
+
+
+def _cursos_del_titulo_propio(titulo: str) -> list[str] | None:
+    """Los cursos que declara **ese** título, no los de la portada entera.
+
+    PARA QUÉ HACE FALTA, HABIENDO YA `_cursos_del_titulo`. Aquel lee la portada
+    como un bloque y sirve para las optativas, que solo cubren un tramo. Este
+    hace falta cuando **un PDF trae dos materias que van a cursos distintos**:
+    «Educació Plàstica, Visual i Audiovisual de primer a tercer» y «Expressió
+    Artística de quart» comparten fichero y comparten competencias, pero cada
+    una tiene su columna de criterios.
+
+    Sin distinguirlas, las dos se llevaban las dos columnas: Expressió
+    Artística, que es de 4.º, cargaba también los criterios de 1.º a 3.º.
+    """
+    m = RX_CURSO_EN_EL_TITULO.search(titulo)
+    if not m:
+        return None
+    ini = _ORDINAL_LARGO[m.group(1).lower()]
+    fin = _ORDINAL_LARGO[m.group(2).lower()] if m.group(2) else ini
+    return [f"{n}º ESO" for n in range(ini, fin + 1)]
 
 
 def _cursos_del_titulo(titulo: str) -> list[str] | None:
@@ -126,7 +163,7 @@ class Linea:
     texto: str
 
 
-def leer_lineas(pdf: Path) -> list[Linea]:
+def leer_lineas(pdf: Path, etapa: EtapaXTEC = ESO) -> list[Linea]:
     """Todas las líneas del PDF, en orden de lectura, con su posición.
 
     Se conserva ``x`` porque es lo único que distingue la columna de 1.º de la
@@ -140,7 +177,7 @@ def leer_lineas(pdf: Path) -> list[Linea]:
             for linea in bloque.get("lines", []):
                 spans = linea["spans"]
                 texto = "".join(s["text"] for s in spans).strip()
-                if not texto or RX_PIE.match(texto):
+                if not texto or etapa.rx_pie.match(texto):
                     continue
                 lineas.append(
                     Linea(
@@ -155,7 +192,8 @@ def leer_lineas(pdf: Path) -> list[Linea]:
     return lineas
 
 
-def titulos_de(lineas: list[Linea]) -> list[str]:
+def titulos_de(lineas: list[Linea], etapa: EtapaXTEC = ESO,
+               limpiar: bool = True) -> list[str]:
     """Las materias que cubre el PDF.
 
     Normalmente una. Pero el bloque lingüístico catalán publica **tres materias
@@ -163,16 +201,36 @@ def titulos_de(lineas: list[Linea]) -> list[str]:
     Catalana— en un mismo fichero y con tres títulos en la portada. Devolver
     solo el primero habría dejado dos materias enteras sin currículo, y sin dar
     ningún error: simplemente no aparecerían en el desplegable.
+
+    NO VALE «TODAS LAS LÍNEAS DEL TAMAÑO MAYOR», que es lo que hacía antes.
+    PyMuPDF da como tamaño de una línea el mayor de sus fragmentos, y en los
+    PDF de Bachillerato **el punto final de algunos párrafos viene un punto más
+    grande que el resto**: seis frases sueltas de la introducción de «Biologia,
+    Geologia i Ciències Ambientals» se colaban como si fueran materias, y se
+    cargaban como tales, con el currículo entero repetido debajo de cada una.
+
+    El título es la **primera tanda** de líneas grandes de la portada: en
+    cuanto aparece una línea normal, lo que venga después es cuerpo.
     """
     de_portada = [l for l in lineas if l.pagina == 1]
     if not de_portada:
         return []
     mayor = max(l.tam for l in de_portada)
-    crudos = [l.texto for l in de_portada if l.tam >= mayor - 0.1 and len(l.texto) > 3]
-    return [_limpiar_titulo(t) for t in crudos]
+    crudos: list[str] = []
+    for l in de_portada:
+        if l.tam >= mayor - 0.1:
+            if len(l.texto) > 3:
+                crudos.append(l.texto)
+        elif crudos:
+            break
+    # `limpiar=False` devuelve el título tal cual viene en la portada. Lo pide
+    # `extraer` porque la coletilla que aquí se quita —«de primer a tercer»—
+    # es lo único que dice a qué columna de criterios pertenece cada materia
+    # cuando el PDF trae dos.
+    return [_limpiar_titulo(t, etapa) if limpiar else t for t in crudos]
 
 
-def _limpiar_titulo(titulo: str) -> str:
+def _limpiar_titulo(titulo: str, etapa: EtapaXTEC = ESO) -> str:
     """Quita del título lo que dice el curso, que no es parte del nombre.
 
     «Cultura Científica (matèria optativa de quart d'ESO)» y «Educació
@@ -180,7 +238,15 @@ def _limpiar_titulo(titulo: str) -> str:
     y sin coletilla. Si la coletilla se queda dentro, la materia guardada no
     coincide con la que lista el articulado y el desplegable ofrece dos
     entradas para lo mismo.
+
+    EN BACHILLERATO EL PARÉNTESIS SÍ ES PARTE DEL NOMBRE, y por eso la limpieza
+    es opcional: «Reptes Científics Actuals (Biologia i Geologia)» y «Reptes
+    Científics Actuals (Física i Química)» son **dos materias distintas** con
+    currículos distintos, y recortarlas por el paréntesis las fundiría en una
+    —la segunda pisando a la primera— sin dar ningún error.
     """
+    if not etapa.limpiar_coletilla_de_curso:
+        return titulo.strip(" .,")
     limpio = re.sub(r"\s*\(.*", "", titulo)
     limpio = re.sub(
         r"\s+(?:de|d[’'])\s+(?:primer|segon|tercer|quart)\b.*$", "", limpio, flags=re.I
@@ -201,7 +267,8 @@ class _Columna:
     criterios: list[Criterio] = field(default_factory=list)
 
 
-def _agrupar_criterios(lineas: list[Linea], competencia: str) -> list[_Columna]:
+def _agrupar_criterios(lineas: list[Linea], competencia: str,
+                       etapa: EtapaXTEC = ESO) -> list[_Columna]:
     """Los criterios de una competencia, repartidos por columna.
 
     ``lineas`` va desde la cabecera de columnas hasta el final del bloque.
@@ -210,19 +277,26 @@ def _agrupar_criterios(lineas: list[Linea], competencia: str) -> list[_Columna]:
     punto medio fijo: las tablas no están siempre en el mismo sitio y una
     materia sin tabla tiene una sola columna que ocupa todo el ancho.
     """
-    cabeceras = [l for l in lineas if RX_CABECERA_CURSOS.match(l.texto)]
+    cabeceras = [l for l in lineas if etapa.rx_cabecera_cursos.match(l.texto)]
     if not cabeceras:
         return []
 
-    # Las de la primera fila: las que comparten la `y` de la primera cabecera.
-    y0 = cabeceras[0].y
-    cabeceras = [c for c in cabeceras if abs(c.y - y0) < 5]
+    # Las de la primera fila: las que comparten página y `y` con la primera.
+    pagina0, y0 = cabeceras[0].pagina, cabeceras[0].y
+    cabeceras = [c for c in cabeceras
+                 if c.pagina == pagina0 and abs(c.y - y0) < 5]
     cabeceras.sort(key=lambda c: c.x)
 
-    columnas = [_Columna(cursos=_cursos_de_cabecera(c.texto), x_min=c.x, x_max=0)
+    columnas = [_Columna(cursos=etapa.cursos_de_cabecera(c.texto), x_min=c.x, x_max=0)
                 for c in cabeceras]
 
-    cuerpo = [l for l in lineas if l.y > y0 + 5]
+    # LA `y` SOLA NO ORDENA UN DOCUMENTO DE VARIAS PÁGINAS, y aquí estaba
+    # comparándose como si sí. Una tabla que empieza al pie de una página y
+    # sigue en la siguiente tiene su continuación con una `y` **pequeña**, así
+    # que `l.y > y0 + 5` la descartaba entera. Educació Plàstica perdía 2
+    # criterios de cada columna por eso, y el síntoma era el de siempre:
+    # ninguno.
+    cuerpo = [l for l in lineas if (l.pagina, l.y) > (pagina0, y0 + 5)]
     if not cuerpo:
         return columnas
 
@@ -316,29 +390,73 @@ def _extraer_saberes(lineas: list[Linea]) -> list[BloqueSaberes]:
 
     Y no se detectó antes porque el arreglo se comprobó en Matemàtiques, que es
     justo la que tiene tres niveles: el caso que ya funcionaba.
+
+    Y LOS NIVELES SE CUENTAN POR BLOQUE, NO POR DOCUMENTO. Esa es la tercera
+    versión, y la puso «Segona Llengua Estrangera»: ahí el bloque
+    «Comunicació» usa tres niveles y los otros cuatro usan dos, en el mismo
+    fichero. Contando los niveles de todo el documento salían tres, así que en
+    los bloques de dos cada item se tomaba por un subbloque vacío y los cuatro
+    bloques se perdían: catorce saberes en vez de treinta y tantos. El mismo
+    fallo de siempre, ahora dentro de un solo PDF.
     """
     utiles = [l for l in lineas if not _es_vineta(l.texto)]
     if not utiles:
         return []
 
-    # Los `x` se agrupan, no se listan: dentro de un mismo nivel hay
-    # variaciones de dos o tres puntos —103 y 106 son el mismo sangrado— y
-    # tomar «el tercer valor distinto» daba 106 en Matemàtiques, con lo que el
-    # nivel de subbloque quedaba por encima del umbral y se perdía entero.
-    niveles: list[int] = []
-    for x in sorted({round(l.x) for l in utiles}):
-        if not niveles or x - niveles[-1] > 6:
-            niveles.append(x)
+    def _agrupar(xs) -> list[int]:
+        """Los `x` se agrupan, no se listan.
 
-    margen = niveles[0]
-    # Con tres niveles el segundo es subbloque; con dos, el segundo ya es el
-    # item y no hay subbloque que valga.
-    hay_subbloque = len(niveles) >= 3
-    x_item = niveles[2] if hay_subbloque else (niveles[1] if len(niveles) > 1 else margen)
+        Dentro de un mismo nivel hay variaciones de dos o tres puntos —103 y
+        106 son el mismo sangrado— y tomar «el tercer valor distinto» daba 106
+        en Matemàtiques, con lo que el nivel de subbloque quedaba por encima
+        del umbral y se perdía entero.
+        """
+        niveles: list[int] = []
+        for x in sorted({round(v) for v in xs}):
+            if not niveles or x - niveles[-1] > 6:
+                niveles.append(x)
+        return niveles
+
+    margen = _agrupar(l.x for l in utiles)[0]
+
+    # SIN SANGRADO, LA VIÑETA ES LO ÚNICO QUE QUEDA
+    # ----------------------------------------------
+    # En los PDF reeditados de Bachillerato todo va al mismo margen: título de
+    # bloque e items comparten `x`, y lo único que los separa es que el item
+    # empieza por guion. Encima la negrita está mal aplicada —se derrama sobre
+    # la primera línea de cada bloque y sobre alguna frase suelta de la
+    # introducción—, así que con la negrita a secas «- Descripció i anàlisi de
+    # les diferents fases del mètode científic» se cargaba como **título de
+    # bloque** y su propio texto quedaba de item.
+    #
+    # Cuando se da ese caso, y solo entonces, la viñeta manda: lo que empieza
+    # por ella es item pase lo que pase, y lo que no empieza por ella y no
+    # continúa a un item anterior no es nada. En la ESO no se activa, y hace
+    # falta que no se active: allí hay títulos de bloque que **sí** empiezan
+    # por viñeta —«● Context»— y los sangrados distinguen los niveles.
+    def _con_vineta(texto: str) -> bool:
+        m = _RX_MARCA_INICIAL.match(texto)
+        return bool(m) and m.group(0).strip() != ""
+
+    #: EL GUION ES DEL ITEM; LAS DEMÁS VIÑETAS, NO. Los PDF usan dos marcas a la
+    #: vez y no significan lo mismo: en «Química» el subbloque lleva «•» y el
+    #: saber «-», y en «Educació Física» el subbloque lleva «●» y el guion de
+    #: cada saber va en su propia línea. En las dos, la marca de item es el
+    #: guion. Distinguirlas es lo que permite leer «Química», que reparte los
+    #: niveles al revés que las demás: el subbloque **sangrado** y el saber al
+    #: margen. Sin esto se cargaban sus doce subbloques como si fueran los
+    #: saberes, y los sesenta saberes de verdad se perdían.
+    def _con_guion(texto: str) -> bool:
+        return bool(re.match(r"^[-–—−]\s+\S", texto))
+
+    hay_sangrado = len(_agrupar(l.x for l in utiles)) > 1
+    estricto = not hay_sangrado and sum(_con_vineta(l.texto) for l in utiles) >= 3
+
+    def es_titulo_de_bloque(l: Linea) -> bool:
+        return (l.x <= margen + 6 and l.negrita
+                and not (estricto and _con_vineta(l.texto)))
 
     bloques: list[BloqueSaberes] = []
-    titulo_bloque = ""
-    actual: BloqueSaberes | None = None
 
     def abrir(nombre: str) -> BloqueSaberes:
         # EL CÓDIGO ES NUESTRO, NO DEL DECRETO. Conviene tenerlo claro porque
@@ -367,45 +485,150 @@ def _extraer_saberes(lineas: list[Linea]) -> list[BloqueSaberes]:
         bloques.append(b)
         return b
 
-    for l in utiles:
-        es_bloque = l.x <= margen + 6 and l.negrita
-        es_item = l.x >= x_item - 4
+    def añadir(bloque: BloqueSaberes, l: Linea) -> None:
+        # LA VIÑETA MANDA SOBRE LA MAYÚSCULA, y esto es lo segundo que cambia
+        # en Bachillerato. En la ESO el guion de cada item va en su propia
+        # línea a la izquierda —`_es_vineta` la descarta— y el texto empieza
+        # sangrado y en mayúscula, así que la mayúscula basta para saber dónde
+        # empieza uno.
+        #
+        # En los PDF que la XTEC volvió a publicar en 2026 el guion va
+        # **pegado al texto**, todo en el mismo renglón y al mismo margen:
+        # «- Identificació i argumentació del desenvolupament…». Con la regla
+        # de la mayúscula, ninguna línea empieza item y los cuatro o cinco de
+        # cada bloque se fundían en uno solo, larguísimo: Física i Química se
+        # cargaba con 9 saberes en vez de 19.
+        vineta = _con_vineta(l.texto)
+        texto = _sin_marca(l.texto)
+        if not texto:
+            return
+        if estricto and not vineta and not bloque.items:
+            # Prosa colada entre el título y el primer item, o bajo un título
+            # que en realidad no lo era —de los que crea la negrita mal
+            # aplicada—. No es un saber.
+            return
+        if bloque.items and not vineta and not re.match(r"^[A-ZÀ-Ú¡¿0-9]", texto):
+            # Continuación del item anterior, partido por el ancho de la celda.
+            bloque.items[-1] = f"{bloque.items[-1]} {texto}".strip()
+        else:
+            bloque.items.append(texto)
 
-        if es_bloque:
-            titulo_bloque = _sin_marca(l.texto).rstrip(".")
-            # Sin subbloque, el bloque recoge sus items directamente.
-            actual = None if hay_subbloque else abrir(titulo_bloque)
-        elif hay_subbloque and not es_item:
-            sub = _sin_marca(l.texto).rstrip(".")
-            actual = abrir(f"{titulo_bloque} · {sub}" if titulo_bloque else sub)
-        elif es_item and actual is not None:
-            if actual.items and not re.match(r"^[A-ZÀ-Ú¡¿0-9]", l.texto):
-                # Continuación del item anterior, partido por el ancho de la
-                # celda. Se decide por la mayúscula inicial: un item nuevo
-                # siempre empieza por una.
-                actual.items[-1] = f"{actual.items[-1]} {l.texto}".strip()
-            else:
-                actual.items.append(l.texto)
+    # El documento se parte en bloques y **cada uno decide si tiene
+    # subbloques**. Los items son siempre el nivel más profundo del bloque.
+    #
+    # QUÉ ES UN SUBBLOQUE Y QUÉ ES PROSA, que es lo único difícil de aquí. Un
+    # subbloque o está sangrado más que el título del bloque —«Comptatge» a
+    # x≈103 en Matemàtiques— o lleva viñeta —«● Esquema corporal» en Educació
+    # Física, que además va **cuatro puntos a la izquierda** del título de su
+    # bloque, así que por sangrado no se distingue de él—. Lo que no cumple
+    # ninguna de las dos y no es item es la prosa introductoria del bloque, y
+    # esa no es un saber.
+    cortes = [i for i, l in enumerate(utiles) if es_titulo_de_bloque(l)]
+    for n, ini in enumerate(cortes):
+        fin = cortes[n + 1] if n + 1 < len(cortes) else len(utiles)
+        titulo_bloque = _sin_marca(utiles[ini].texto).rstrip(".")
+        cuerpo = utiles[ini + 1:fin]
+        if not cuerpo:
+            continue
+
+        # El nivel de los items lo marca el guion cuando lo hay; si no, es el
+        # más profundo del bloque.
+        con_guion = [l for l in cuerpo if _con_guion(l.texto)]
+        x_item = (_agrupar(l.x for l in con_guion)[0] if len(con_guion) >= 2
+                  else _agrupar(l.x for l in cuerpo)[-1])
+
+        def es_item(l: Linea) -> bool:
+            return abs(l.x - x_item) <= 6
+
+        def es_subbloque(l: Linea) -> bool:
+            return (not es_item(l)
+                    and (l.x > margen + 6 or _con_vineta(l.texto)))
+
+        con_subbloques = any(es_subbloque(l) for l in cuerpo)
+        actual = None if con_subbloques else abrir(titulo_bloque)
+        for l in cuerpo:
+            if es_item(l):
+                if actual is not None:
+                    añadir(actual, l)
+            elif es_subbloque(l):
+                sub = _sin_marca(l.texto).rstrip(".")
+                actual = abrir(f"{titulo_bloque} · {sub}" if titulo_bloque else sub)
     return [b for b in bloques if b.items]
 
 
-def extraer(pdf: Path, etiquetas: dict[str, str] | None = None) -> list[MateriaCiclo]:
+def _saberes_por_curso(
+    lineas: list[Linea], etapa: EtapaXTEC
+) -> dict[tuple[str, ...], list[BloqueSaberes]]:
+    """Los saberes, repartidos por curso si el epígrafe viene partido.
+
+    EL CASO QUE ESTO RESUELVE, Y POR QUÉ NO SE VE VENIR
+    ----------------------------------------------------
+    En la ESO el epígrafe «Sabers» es uno y vale para todos los cursos que
+    cubra el PDF. En Bachillerato **no**: las 17 materias que duran dos cursos
+    ponen dentro «Primer curs» y «Segon curs», en negrita y al mismo sangrado
+    que los títulos de bloque, y debajo de cada uno los suyos.
+
+    Leídos sin distinguir, los dos juegos salen en una sola lista y esa lista
+    se guarda **entera en los dos tramos**: 1.º de Dibuix Tècnic recibiría los
+    saberes de 2.º además de los suyos. El síntoma es ninguno —no falta nada,
+    sobra—, y el error solo aparece cuando un docente ve en su curso un saber
+    que no toca.
+
+    Devuelve ``{(): [...]}`` cuando no hay partición, que es el caso de la ESO
+    y el de las 62 materias de Bachillerato de un solo curso.
+    """
+    if etapa.rx_curso_saberes is None:
+        return {(): _extraer_saberes(lineas)}
+
+    # Índice de las cabeceras «Primer curs» / «Segon curs». Se exige negrita
+    # porque la misma frase aparece en la prosa introductoria del epígrafe.
+    cortes = [(i, etapa.curso_de_saberes(l.texto))
+              for i, l in enumerate(lineas)
+              if l.negrita and etapa.curso_de_saberes(l.texto)]
+    if not cortes:
+        return {(): _extraer_saberes(lineas)}
+
+    por_curso: dict[tuple[str, ...], list[BloqueSaberes]] = {}
+    for n, (idx, cursos) in enumerate(cortes):
+        fin = cortes[n + 1][0] if n + 1 < len(cortes) else len(lineas)
+        # Lo de antes del primer corte es la prosa introductoria del epígrafe,
+        # que no es un saber de nadie: se queda fuera a propósito.
+        por_curso[tuple(cursos)] = _extraer_saberes(lineas[idx + 1:fin])
+    return por_curso
+
+
+def extraer(pdf: Path, etiquetas: dict[str, str] | None = None,
+            etapa: EtapaXTEC = ESO) -> list[MateriaCiclo]:
     """Devuelve un `MateriaCiclo` por cada (materia, grupo de cursos).
 
     :param etiquetas: nombre oficial -> etiqueta corta para la aplicación. Lo
         que no esté aquí conserva su nombre oficial.
     """
     etiquetas = etiquetas or {}
-    lineas = leer_lineas(pdf)
+    lineas = leer_lineas(pdf, etapa)
     if not lineas:
         logger.error("PDF sin texto extraíble: %s", pdf)
         return []
 
     portada = " ".join(l.texto for l in lineas if l.pagina == 1)
-    titulos = titulos_de(lineas)
+    titulos = titulos_de(lineas, etapa)
     if not titulos:
         logger.error("No se encontró ningún título de materia en %s", pdf)
         return []
+
+    # Ediciones anteriores que el portal sigue sirviendo: mismo currículo con
+    # el nombre viejo. Se renombran aquí, no se descartan, para que el aviso
+    # diga qué fichero era.
+    # Se guardan los crudos en paralelo: el limpio es el nombre de la materia
+    # y el crudo es el que dice a qué cursos va.
+    crudos = titulos_de(lineas, etapa, limpiar=False)
+    vigentes: list[tuple[str, str]] = []
+    for t, crudo in zip(titulos, crudos):
+        nuevo = etapa.ediciones_anteriores.get(t)
+        if nuevo:
+            logger.info("«%s» es la edición anterior de «%s» (%s): se usa el "
+                        "nombre vigente", t, nuevo, pdf.name)
+        vigentes.append((nuevo or t, crudo))
 
     # Índice de los hitos del documento.
     hitos: list[tuple[int, str, str]] = []
@@ -415,12 +638,22 @@ def extraer(pdf: Path, etiquetas: dict[str, str] | None = None) -> list[MateriaC
             hitos.append((i, "ce", m.group(1)))
         elif RX_CRITERIOS.match(l.texto):
             hitos.append((i, "criterios", ""))
-        elif RX_SABERES.match(l.texto) and l.tam >= 11.5:
+        elif RX_SABERES.match(l.texto) and (l.tam >= 11.5 or l.negrita):
+            # El tamaño solo no basta. Las materias que la XTEC volvió a
+            # publicar tras el Decret 103/2026 —las diez de ciencias, Grec y
+            # Llatí— maquetan el epígrafe en negrita **del mismo cuerpo que el
+            # texto**, y con el umbral de tamaño a secas se quedaban con cero
+            # saberes. La palabra «Sabers» a solas en una línea no aparece en
+            # el cuerpo de ningún PDF, así que la negrita es suficiente.
             hitos.append((i, "saberes", ""))
 
     competencias: list[CompetenciaEspecifica] = []
     por_cursos: dict[tuple[str, ...], list[Criterio]] = {}
-    saberes: list[BloqueSaberes] = []
+    # Arranca con la lista vacía compartida y no en blanco: hay 21 optativas
+    # de Bachillerato que **no traen epígrafe de saberes** —el currículo deja
+    # que los fije el profesorado— y sin esto se avisaba de un reparto por
+    # curso que en ese PDF ni existe.
+    saberes_por_cursos: dict[tuple[str, ...], list[BloqueSaberes]] = {(): []}
 
     for n, (idx, tipo, dato) in enumerate(hitos):
         fin = hitos[n + 1][0] if n + 1 < len(hitos) else len(lineas)
@@ -435,10 +668,10 @@ def extraer(pdf: Path, etiquetas: dict[str, str] | None = None) -> list[MateriaC
             )
         elif tipo == "criterios":
             competencia = competencias[-1].codigo if competencias else "1"
-            for col in _agrupar_criterios(cuerpo, competencia):
+            for col in _agrupar_criterios(cuerpo, competencia, etapa):
                 por_cursos.setdefault(tuple(col.cursos), []).extend(col.criterios)
         elif tipo == "saberes":
-            saberes = _extraer_saberes(cuerpo)
+            saberes_por_cursos = _saberes_por_curso(cuerpo, etapa)
 
     if not por_cursos:
         # Materia sin tabla de dos columnas: los cursos los dice el título, y
@@ -459,19 +692,43 @@ def extraer(pdf: Path, etiquetas: dict[str, str] | None = None) -> list[MateriaC
                     criterios[-1].descripcion += " " + l.texto
         por_cursos[tuple(cursos)] = criterios
 
+    # Saberes de cada tramo. Cuando el epígrafe no viene partido —la ESO
+    # entera y las materias de un solo curso— hay una sola lista y vale para
+    # todos los tramos; cuando sí, cada tramo se lleva **los suyos**, y si no
+    # los encuentra se queda vacío en vez de heredar los del otro curso.
+    unicos = saberes_por_cursos.get(())
+
+    def saberes_de(cursos: tuple[str, ...]) -> list[BloqueSaberes]:
+        if unicos is not None:
+            return unicos
+        propios = saberes_por_cursos.get(cursos)
+        if propios is None:
+            logger.warning(
+                "%s: el tramo %s no tiene saberes propios en un epígrafe "
+                "partido por curso", pdf.name, " i ".join(cursos) or "Únic")
+            return []
+        return propios
+
     resultados: list[MateriaCiclo] = []
-    for titulo in titulos:
-        oficial = titulo
+    for oficial, crudo in vigentes:
+        # SI EL TÍTULO DICE SU CURSO, MANDA SOBRE EL PRODUCTO CRUZADO. Con dos
+        # materias y dos columnas, cruzarlas da cuatro bloques y dos de ellos
+        # son falsos: Expressió Artística, que es de 4.º, se llevaba también
+        # los criterios de 1.º a 3.º.
+        suyos = _cursos_del_titulo_propio(crudo) if len(vigentes) > 1 else None
         for cursos, criterios in por_cursos.items():
+            if suyos is not None and cursos and set(cursos) != set(suyos):
+                continue
             resultados.append(
                 MateriaCiclo(
                     materia_oficial=oficial,
                     materia_corta=etiquetas.get(oficial, oficial),
                     ciclo=" i ".join(cursos) if cursos else "Únic",
                     cursos_aplicables=list(cursos),
+                    etapa=etapa.nombre,
                     competencias=list(competencias),
                     criterios=criterios,
-                    saberes=saberes,
+                    saberes=saberes_de(cursos),
                 )
             )
     return resultados
@@ -626,12 +883,17 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--comunidad", default="cataluna")
     p.add_argument("--idioma", default="ca")
     p.add_argument("--articulado", type=Path,
-                   help="XML del decreto, para los cursos que el PDF no dice.")
+                   help="XML del decreto, para los cursos que el PDF no dice. "
+                        "Solo la ESO: los de Bachillerato están en xtec_etapas.")
+    p.add_argument("--etapa", choices=sorted(ETAPAS), default="eso",
+                   help="Qué decreto se está leyendo (por defecto, la ESO).")
     p.add_argument("--verbose", "-v", action="store_true")
     args = p.parse_args(argv)
 
     logging.basicConfig(level=logging.DEBUG if args.verbose else logging.INFO,
                         format="%(levelname)s %(name)s | %(message)s")
+
+    etapa = ETAPAS[args.etapa]
 
     pdfs = sorted(args.pdfs.glob("*.pdf"))
     if not pdfs:
@@ -640,10 +902,20 @@ def main(argv: list[str] | None = None) -> int:
 
     del_articulado = cursos_del_articulado(args.articulado) if args.articulado else {}
     por_clave = {_clave(k): v for k, v in del_articulado.items()}
+    # La tabla de la etapa se une a la del articulado. En la ESO está vacía y
+    # manda el articulado; en Bachillerato es al revés.
+    por_clave.update({_clave(k): v for k, v in etapa.cursos.items()})
 
     todos: list[MateriaCiclo] = []
+    # EL PORTAL SIRVE LA MISMA MATERIA MÁS DE UNA VEZ. Seis materias de
+    # Bachillerato valen para dos modalidades y la XTEC publica un PDF por
+    # sección: los ficheros son idénticos byte a byte, comprobado. Sin esto
+    # salen duplicadas en el recuento y `volcar` escribe dos veces el mismo
+    # fichero, lo que no rompe nada pero esconde el día que **dejen** de ser
+    # idénticas.
+    vistas: dict[tuple[str, tuple[str, ...]], str] = {}
     for pdf in pdfs:
-        res = extraer(pdf)
+        res = extraer(pdf, etapa=etapa)
         if not res:
             logger.warning("Sin resultados: %s", pdf.name)
         for mc in res:
@@ -654,7 +926,14 @@ def main(argv: list[str] | None = None) -> int:
                     por_clave.get(clave) or fuera.get(clave, [])
                 )
                 mc.ciclo = " i ".join(mc.cursos_aplicables) or "Únic"
-        todos.extend(res)
+            clave_mc = (mc.materia_efectiva, tuple(mc.cursos_aplicables))
+            anterior = vistas.get(clave_mc)
+            if anterior is not None:
+                logger.info("«%s» (%s) ya venía de %s: se ignora la copia de %s",
+                            mc.materia_efectiva, mc.ciclo, anterior, pdf.name)
+                continue
+            vistas[clave_mc] = pdf.name
+            todos.append(mc)
 
     sin_cursos = sorted({mc.materia_oficial for mc in todos if not mc.cursos_aplicables})
     if sin_cursos:
