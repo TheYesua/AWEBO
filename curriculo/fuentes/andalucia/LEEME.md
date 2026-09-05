@@ -176,3 +176,39 @@ páginas comprobadas, y lo mismo en el PDF de ADIDE.
 
 Si alguien vuelve a ver esas letras sueltas, que compruebe con el extractor
 antes de escribir una reparación que no hace falta.
+
+## Pero SÍ hay palabras partidas, y no las parte el visor: las parte la tabla
+
+Lo de arriba sigue siendo cierto —el **texto** del PDF está entero— y aun así,
+durante tres semanas, 122 de los 737 criterios se cargaron mutilados. Lo que
+los partía no era la extracción de texto sino **la detección de columnas**:
+PyMuPDF encuentra en muchas páginas una columna de más, con la línea vertical
+cayendo a mitad del párrafo, y `tabla.extract()` corta ahí.
+
+```
+col1: '1.2. Comenzar a incorpo\nprocesos de activación c\nporal, dosificación\n…'
+col2: 'rar EFI.1.A.1.2.\nor- EFI.1.A.1.3.\ndel EFI.1.A.1.4.\n…'
+```
+
+El final de cada renglón acaba pegado a los códigos de saber de la celda de al
+lado, y se pierde. Cuatro materias-curso estaban así **enteras**: Matemáticas
+2.º, Lengua Castellana 1.º y Educación Física 1.º y 3.º.
+
+**La moraleja es la del apartado anterior, del revés.** Allí se comprobó que el
+texto estaba bien y se dio por buena toda la lectura; el texto estaba bien y la
+lectura no. Lo que faltaba era compararlo con el boletín, que es lo que ahora
+hace `test_los_criterios_estan_literalmente_en_el_boletin`.
+
+Quedan **63** por el mismo motivo, cuando lo que se pierde es una palabra
+corta. Está en la hoja de ruta con lo que ya se descartó.
+
+## El Anexo III no está cargado
+
+Las 19 materias que hay salen todas del **Anexo II**. El **Anexo III** —las
+optativas propias de Andalucía— trae **321 criterios más** y no se ha leído
+nunca. No fue una decisión: no está escrita en ninguna parte, y se descubrió
+contando los códigos de criterio de los dos anexos y viendo cuáles llegaban a
+la salida.
+
+Decidido el 05/09: **se carga**. Antes hay que mirar si su maquetación es la
+misma que la del Anexo II; el extractor está escrito contra esa.
