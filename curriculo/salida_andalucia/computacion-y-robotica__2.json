@@ -1,0 +1,291 @@
+{
+  "materia_oficial": "Computación y Robótica",
+  "materia": "Computación y Robótica",
+  "etapa": "ESO",
+  "ciclo": "2º ESO",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Comprender el impacto que la computación y la robótica tienen en nuestra sociedad y desarrollar el pensamiento computacional para realizar proyectos de construcción de sistemas digitales de forma sostenible. CL3, STEM2, STEM3, CD1, CD4, CPSAA1, CC4 y CE1. Comprender el impacto que la computación y la robótica tienen en nuestra sociedad y desarrollar el pensamiento computacional para realizar proyectos de construcción de sistemas digitales de forma sostenible. Comprender el impacto que la computación y la robótica tienen en nuestra sociedad y desarrollar el pensamiento computacional para realizar proyectos de construcción de sistemas digitales de forma sostenible. CL3, STEM2, STEM3, CD1, CD4 , CPSAA1, CC4 y CE1.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Producir programas informáticos, colaborando en un equipo de trabajo y creando aplicaciones sencillas, mediante lenguaje de bloques, utilizando las principales estructuras de un lenguaje de programación para solventar un problema determinado o exhibir un comportamiento deseado. STEM1, STEM3, CD3, CD5, CPSAA3, CE3, CCEC3. Producir programas informáticos, colaborando en un equipo de trabajo y creando aplicaciones sencillas, mediante lenguaje de bloques, utilizando las principales estructuras de un lenguaje de programación para solventar un problema determinado o exhibir un comportamiento deseado. STEM1, STEM3, CD3, CD5, CPSAA3, CE3, CCEC3.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Diseñar y construir sistemas de computación físicos o robóticos sencillos, aplicando los conocimientos necesarios para desarrollar soluciones automatizadas a problemas planteados. STEM2, STEM3, STEM5, CD3, CD4, CD5, CC3, CE3. Diseñar y construir sistemas de computación físicos o robóticos sencillos, aplicando los conocimientos necesarios para desarrollar soluciones automatizadas a problemas planteados. STEM2, STEM3, STEM5, CD3, CD4, CD5, CC3, CE3.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Recopilar, almacenar y procesar datos, identificando patrones y descubriendo conexiones para resolver Recopilar, almacenar y procesar datos, identificando patrones y descubriendo conexiones para resolver problemas mediante la Inteligencia Artificial entendiendo cómo nos ayuda a mejorar nuestra comprensión del mundo. Recopilar, almacenar y procesar datos, identificando patrones y descubriendo conexiones para resolver problemas mediante la Inteligencia Artificial entendiendo cómo nos ayuda a mejorar nuestra comprensión del mundo. STEM5, CD1, CD4, CPSAA5, CC3.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Utilizar y crear aplicaciones informáticas y web sencillas, entendiendo su funcionamiento interno, de forma segura, responsable y respetuosa, protegiendo la identidad online y la privacidad. STEM1, STEM3, CD5, CPSAA3, CPSAA4, CPSAA5, CC3, CE3. Utilizar y crear aplicaciones informáticas y web sencillas, entendiendo su funcionamiento interno, de forma segura, responsable y respetuosa, protegiendo la identidad online y la privacidad. STEM1, STEM3, CD5, CPSAA3, CPSAA4, CPSAA5, CC3, CE3.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Conocer y aplicar los principios de la ciberseguridad, adoptando hábitos y conductas de seguridad, para permitir la protección del individuo en su interacción en la red. STEM1, STEM3, CD1, CD4, CD5, CPSAA3, CC3, CCEC4. Conocer y aplicar los principios de la ciberseguridad, adoptando hábitos y conductas de seguridad, para permitir la protección del individuo en su interacción en la red. STEM1, STEM3, CD1, CD4, CD5, CPSAA3, CC3, CCEC4.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Comprender el funcionamiento de los sistemas de computación física, sus componentes y principales características."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Reconocer el papel de la robótica en nuestra sociedad, conociendo las aplicaciones más comunes."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Entender cómo funciona un programa informático, la manera de elaborarlo y sus principales componentes."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "1",
+      "descripcion": "Comprender los principios de ingeniería en los que se basan los robots, su funcionamiento, componentes y características."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Conocer y resolver la variedad de problemas posibles, desarrollando un programa informático y generalizando las soluciones, tanto de forma individual como trabajando en equipo, colaborando y comunicándose de forma adecuada."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Entender el funcionamiento interno de las aplicaciones móviles y cómo se construyen, dando respuesta a las posibles demandas del escenario a resolver."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Conocer y resolver la variedad de problemas posibles desarrollando una aplicación móvil y generalizando las soluciones."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Ser capaz de construir un sistema de computación o robótico, promoviendo la interacción con el mundo físico en el contexto de un problema del mundo real, de forma sostenible."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Conocer las aplicaciones actuales del Big Data, así como la naturaleza de los distintos tipos de datos y metadatos generados, siendo capaces de analizarlos, visualizarlos y compararlos, empleando a su vez un espíritu crítico y científico."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Comprender los principios básicos de funcionamiento de los agentes inteligentes y de las técnicas de aprendizaje automático, con objeto de aplicarlos para la resolución de situaciones mediante la Inteligencia Artificial de forma ética y responsable."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Conocer la construcción de aplicaciones informáticas y web, entendiendo su funcionamiento interno, de forma segura, responsable y respetuosa."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Conocer y resolver la variedad de problemas potencialmente presentes en el desarrollo de una aplicación web, tratando de generalizar posibles soluciones."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Adoptar conductas y hábitos que permitan la protección activa del individuo en su interacción en la red."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Acceder a servicios de intercambio y publicación de información digital aplicando criterios de seguridad y uso responsable."
+    },
+    {
+      "codigo": "6.3",
+      "competencia": "6",
+      "descripcion": "Reconocer y comprender los derechos de los materiales alojados en la Internet."
+    },
+    {
+      "codigo": "6.4",
+      "competencia": "6",
+      "descripcion": "Adoptar conductas de seguridad activa y pasiva en la protección de datos y en el intercambio de información. Computación y Robótica 3º Criterios de evaluación 3º ESO"
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Introducción a la Programación",
+      "titulo": "Introducción a la Programación",
+      "items": [
+        "Lenguajes de programación visuales: ventajas e inconvenientes.",
+        "Elementos de los programas con lenguaje de bloques.",
+        "Secuencia de instrucciones. Medios de expresión de algoritmos.",
+        "Generación de tareas repetitivas y condicionales.",
+        "Pantallas de interacción con el usuario."
+      ],
+      "codigos_items": [
+        "CYR.2.A.1",
+        "CYR.2.A.2",
+        "CYR.2.A.3",
+        "CYR.2.A.4",
+        "CYR.2.A.5"
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Internet de las cosas",
+      "titulo": "Internet de las cosas",
+      "items": [
+        "Clasificación de los sensores IoT.",
+        "Conexión dispositivo a dispositivos.",
+        "Conexión BLE (Bluetooth Low Energy).",
+        "Aplicaciones de IoT industrial."
+      ],
+      "codigos_items": [
+        "CYR.2.B.1",
+        "CYR.2.B.2",
+        "CYR.2.B.3",
+        "CYR.2.B.4"
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Robótica",
+      "titulo": "Robótica",
+      "items": [
+        "Clasificación de robots: industriales y de servicios.",
+        "Aplicaciones de los robots.",
+        "Componentes: Sensores, efectores y actuadores.",
+        "Robots móviles:aplicaciones.",
+        "Programación con lenguajes de bloques."
+      ],
+      "codigos_items": [
+        "CYR.2.C.1",
+        "CYR.2.C.2",
+        "CYR.2.C.3",
+        "CYR.2.C.4",
+        "CYR.2.C.5"
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Desarrollo móvil",
+      "titulo": "Desarrollo móvil",
+      "items": [
+        "Ejemplos de IDEs de lenguajes de bloques para móviles.",
+        "Programación orientada a eventos: características, ventajas e inconvenientes.",
+        "Dependencia de eventos.",
+        "Tipos de eventos.",
+        "Descripción de eventos de E/S."
+      ],
+      "codigos_items": [
+        "CYR.2.D.1",
+        "CYR.2.D.2",
+        "CYR.2.D.3",
+        "CYR.2.D.4",
+        "CYR.2.D.5"
+      ]
+    },
+    {
+      "codigo": "E",
+      "bloque": "E. Desarrollo web",
+      "titulo": "Desarrollo web",
+      "items": [
+        "Estructura básica de una página web.",
+        "Servidores web: funcionamiento.",
+        "Lenguajes para la edición de páginas web: diferencias.",
+        "Tipos de animación web."
+      ],
+      "codigos_items": [
+        "CYR.2.E.1",
+        "CYR.2.E.2",
+        "CYR.2.E.3",
+        "CYR.2.E.4"
+      ]
+    },
+    {
+      "codigo": "F",
+      "bloque": "F. Fundamentos de la computación",
+      "titulo": "Fundamentos de la computación",
+      "items": [
+        "Sistemas de computación: tipologías.",
+        "Microcontroladores: historia.",
+        "Hardware: periféricos de entrada y salida. Software: de base y de aplicación.",
+        "Seguridad eléctrica: sistemas de alimentación ininterrumpida (SAI)."
+      ],
+      "codigos_items": [
+        "CYR.2.F.1",
+        "CYR.2.F.2",
+        "CYR.2.F.3",
+        "CYR.2.F.4"
+      ]
+    },
+    {
+      "codigo": "G",
+      "bloque": "G. Datos masivos",
+      "titulo": "Datos masivos",
+      "items": [
+        "Aplicaciones del Big data.",
+        "Datos cualitativos y cuantitativos.",
+        "Distinción entre datos y metadatos.",
+        "Ciclo de vida de los metadatos."
+      ],
+      "codigos_items": [
+        "CYR.2.G.1",
+        "CYR.2.G.2",
+        "CYR.2.G.3",
+        "CYR.2.G.4"
+      ]
+    },
+    {
+      "codigo": "H",
+      "bloque": "H. Inteligencia Artificial",
+      "titulo": "Inteligencia Artificial",
+      "items": [
+        "Historia de la Inteligencia Artificial.",
+        "Ética y responsabilidad social en el uso de IA: análisis.",
+        "Agentes inteligentes simples: tipologías.",
+        "Aprendizaje automático: usos.",
+        "Aprendizaje supervisado y no supervisado:aplicaciones."
+      ],
+      "codigos_items": [
+        "CYR.2.H.1",
+        "CYR.2.H.2",
+        "CYR.2.H.3",
+        "CYR.2.H.4",
+        "CYR.2.H.5"
+      ]
+    },
+    {
+      "codigo": "I",
+      "bloque": "I. Ciberseguridad",
+      "titulo": "Ciberseguridad",
+      "items": [
+        "Privacidad e identidad.",
+        "Tipología de los diferentes riesgos por la exposición de los usuarios.",
+        "Concepto de Malware y antimalware.",
+        "Interacción de plataformas virtuales: vulnerabilidades.",
+        "Protección de la propiedad intelectual."
+      ],
+      "codigos_items": [
+        "CYR.2.I.1",
+        "CYR.2.I.2",
+        "CYR.2.I.3",
+        "CYR.2.I.4",
+        "CYR.2.I.5"
+      ]
+    }
+  ],
+  "comunidad": "andalucia",
+  "idioma": "es"
+}

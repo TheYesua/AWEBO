@@ -1,0 +1,261 @@
+{
+  "materia_oficial": "Aprendizaje Social y Emocional",
+  "materia": "Aprendizaje Social y Emocional",
+  "etapa": "ESO",
+  "ciclo": "4º ESO",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "4º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Desarrollar destrezas personales, identificando las emociones, comprendiendo la importancia del autoconocimiento y la gestión emocional en el desarrollo personal e interpersonal, analizando sus implicaciones en la conducta, desarrollando estrategias para mejorar el desempeño en el ámbito personal y social, potenciando las cualidades personales y de relación social para desenvolverse con autonomía, y afrontar de forma proactiva los desafíos de la vida, ya sean privados, profesionales o sociales.",
+      "descriptores": [
+        "CPSAA5"
+      ]
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Establecer y mantener relaciones positivas escuchando activamente y respetando a los demás, practicando habilidades sociales, tomando decisiones responsables, desarrollando la iniciativa personal, practicando formas de aprendizaje colaborativo basadas en el respeto y la cooperación, asumiendo responsabilidades y reconociendo la importancia de la participación grupal para la consecución de los objetivos.",
+      "descriptores": [
+        "CPSAA4",
+        "CPSAA5",
+        "CC1"
+      ]
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Actuar e interaccionar a partir del análisis y el respeto a lo diferente y lo diverso, promoviendo una convivencia pacífica, respetuosa y comprometida con el bien común, mostrando compromiso e implicación en la realización de acciones solidarias, investigando y seleccionando temáticas que permitan desarrollar la sensibilidad y la conciencia cultural andaluza, fomentando el espíritu crítico sobre cuestiones y aspectos que dirigen el funcionamiento humano, social y cultural.",
+      "descriptores": [
+        "CPSAA4",
+        "CPSAA5",
+        "CC1",
+        "CC3",
+        "CC4",
+        "CE2"
+      ]
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Iniciar, planificar y desarrollar proyectos de investigación sobre problemáticas destacadas del mundo actual y de la sociedad andaluza, explorando las oportunidades profesionales que ofrece el entorno, por medio de la recopilación de información procedente de una pluralidad de fuentes, organizada, editada y presentada haciendo uso de tecnologías digitales, identificando las distintas etapas, recabando información para la detección de necesidades, resolviendo las dificultades, priorizando las necesidades e intereses personales, desarrollando la adaptabilidad, el espíritu de iniciativa y de superación y la resiliencia.",
+      "descriptores": [
+        "STEM3",
+        "CD3"
+      ]
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Implementar y difundir los proyectos de investigación, describiendo verbalmente y por escrito todas las etapas del proyecto, haciendo uso de tecnologías digitales, reflexionando sobre el aprendizaje realizado, sobre las habilidades sociales que han desarrollado y sobre los aspectos a mejorar en la gestión y organización.",
+      "descriptores": [
+        "CE2",
+        "STEM3",
+        "CD3"
+      ]
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Mejorar el desempeño personal, identificando los puntos fuertes y los ámbitos que necesita mejorar, aplicando estrategias de gestión emocional y tomando conciencia de las propias emociones y las de los demás."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Conocer los procesos implicados en el desarrollo de las emociones: la relación entre emoción, cognición y comportamiento y desarrollar estrategias de afrontamiento y para autogenerarse emociones positivas."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Desarrollar autogestión personal y autoeficacia emocional, buena autoestima, actitud positiva ante la vida, responsabilidad, capacidad para analizar críticamente las normas sociales y capacidad para buscar ayuda y recursos."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "1",
+      "descripcion": "Mostrar resiliencia, transformar el error o las dificultades en nuevas oportunidades de aprendizaje, adoptar comportamientos responsables para afrontar los desafíos de la vida, ya sean privados, profesionales o sociales, así como las situaciones excepcionales que acontezcan."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Desarrollar habilidades sociales y de aprendizaje colaborativo y reconocer los beneficios del trabajo en equipo."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Participar en diálogos y debates manifestando una actitud de respeto y escucha activa hacia ideas diferentes a las propias y argumentando la posición personal defendida."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Asumir la responsabilidad de la participación en el grupo, respetar y mostrar empatía por todos los miembros del grupo, escuchar activamente los distintos puntos de vista y las aportaciones de sus compañeros y compañeras."
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "2",
+      "descripcion": "Identificar criterios que permitan evaluar, de forma crítica y reflexiva, la participación de todos los miembros del grupo."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Valorar la importancia de la participación en la vida política u otras formas de participación ciudadana, como la cooperación, el asociacionismo y el voluntariado en Andalucía."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Mostrar responsabilidad y compromiso con cuestiones de importancia local, nacional e internacional."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Reconocerse miembros de una ciudadanía global. Mostrar respeto crítico por las costumbres y modos de vida de poblaciones distintas a la propia y manifestar comportamientos solidarios con las personas y colectivos desfavorecidos."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "3",
+      "descripcion": "Valorar la diversidad, especialmente la de la sociedad andaluza, desde el respeto y la inclusión, considerándola un elemento enriquecedor y de valor a nivel personal, social y cultural."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Articular las etapas del proyecto, identificación del objetivo o propósito, preparación, acción, reflexión continua y demostración."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Afrontar de forma eficaz la organización, gestión y planificación de las tareas."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Desarrollar un plan de acción coherente teniendo en cuenta la finalidad o el propósito, las actividades y los recursos."
+    },
+    {
+      "codigo": "4.4",
+      "competencia": "4",
+      "descripcion": "Mostrar iniciativa, hacer propuestas, participar, colaborar e interactuar a lo largo de todo el proyecto."
+    },
+    {
+      "codigo": "4.5",
+      "competencia": "4",
+      "descripcion": "Afrontar de forma eficaz las dificultades y los obstáculos, utilizando habilidades sociales, valorando la participación e integración de todos los miembros."
+    },
+    {
+      "codigo": "4.6",
+      "competencia": "4",
+      "descripcion": "Comunicarse de manera asertiva, reconociendo y valorando a todos los miembros del proyecto."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Desarrollar y ejecutar un proyecto de investigación."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Describir y difundir el desarrollo del proyecto haciendo uso de las tecnologías digitales."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "5",
+      "descripcion": "Emplear herramientas digitales para exponer y compartir el proyecto de investigación."
+    },
+    {
+      "codigo": "5.4",
+      "competencia": "5",
+      "descripcion": "Utilizar estrategias diversas, incluidas las herramientas"
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Autoconocimiento personal y regulación emocional",
+      "titulo": "Autoconocimiento personal y regulación emocional",
+      "items": [
+        "Conocimiento de uno mismo. Factores que influyen en el desarrollo del autoconcepto y la autopercepción.",
+        "Construcción de una memoria autobiográfica que incluya la compresión emocional de uno mismo.",
+        "Conductas intrapersonales que impliquen el desarrollo de la independencia, la búsqueda de la autorrealización personal, y fomenten la equidad.",
+        "Regulación emocional: conocimiento de los estilos atribucionales e identificación de los propios. Capacidad autocrítica.",
+        "Desarrollo de estrategias para la autorregulación y de habilidades para generar emociones positivas en uno mismo y resiliencia, asertividad y resolución pacífica de conflictos.",
+        "Habilidades emocionales, cognitivas y socioculturales para aumentar la capacidad de adaptación a situaciones adversas."
+      ],
+      "codigos_items": [
+        "ASE.4.A.1",
+        "ASE.4.A.2",
+        "ASE.4.A.3",
+        "ASE.4.A.4",
+        "ASE.4.A.5",
+        "ASE.4.A.6"
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Relaciones interpersonales y participación",
+      "titulo": "Relaciones interpersonales y participación",
+      "items": [
+        "Relaciones interpersonales: habilidades y estrategias para la mejora de las relaciones interpersonales y la comunicación: conocimiento del concepto de empatía y conductas que la promueven. Conocimiento de barreras en la comunicación y desarrollo de estrategias para superarlas.",
+        "Conocimiento y desarrollo de habilidades sociales y asertividad. Conducta prosocial y cooperativa. Comunicación receptiva y expresiva.",
+        "Dinamismo, iniciativa y liderazgo: identificación del concepto de liderazgo y conocimiento de técnicas y habilidades de liderazgo y desarrollo de la capacidad de negociación.",
+        "Capacidades para dinamizar y tomar la iniciativa en situaciones grupales.",
+        "Componentes interpersonales: habilidades de organización y gestión del tiempo y planificación de tareas.",
+        "Trabajo en equipo: conocimiento de técnicas cooperativas para optimizarlo."
+      ],
+      "codigos_items": [
+        "ASE.4.B.1",
+        "ASE.4.B.2",
+        "ASE.4.B.3",
+        "ASE.4.B.4",
+        "ASE.4.B.5",
+        "ASE.4.B.6"
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Reflexión ética y responsabilidad social",
+      "titulo": "Reflexión ética y responsabilidad social",
+      "items": [
+        "Reflexión ética y ciudadanía activa: concepto de ciudadanía activa y valoración.",
+        "Desarrollo de capacidades para participar en la sociedad andaluza con actitud crítica.",
+        "Responsabilidad social: conocimiento y adquisición de estrategias de resolución pacífica de los conflictos para el respeto mutuo y la cooperación entre iguales. La mediación como estrategia de resolución.",
+        "Implicación y compromiso social. Conocimiento e implicación con el asociacionismo andaluz, el voluntariado y el desarrollo de proyectos comunitarios. Conocimiento del papel y las funciones que desempeñan las asociaciones en la sociedad andaluza.",
+        "Desarrollo de actitudes de respeto mutuo y de conductas de cooperación entre iguales.",
+        "Desigualdad económica: reflexión sobre las causas que originan la desigualdad económica y consecuencias. El comercio justo, la ética ambiental y la sostenibilidad.",
+        "Sostenibilidad y ética ambiental: objetivos del desarrollo sostenible. Sensibilización y concienciación sobre la necesidad de lograr un modelo de desarrollo y sociedad andaluza sostenible. Realización de acciones ambientalmente sostenibles: consumo responsable.",
+        "Lucha contra la pobreza: sensibilización ante la desigualdad en el reparto de la riqueza. Identificación y reflexión sobre posibles soluciones. Asunción de responsabilidades y compromiso en la lucha contra la pobreza y la desigualdad.",
+        "Respeto por la diversidad étnico cultural. Conocimiento y valoración de la diversidad y riqueza étnica andaluza producto de la historia de nuestra Comunidad."
+      ],
+      "codigos_items": [
+        "ASE.4.C.1",
+        "ASE.4.C.2",
+        "ASE.4.C.3",
+        "ASE.4.C.4",
+        "ASE.4.C.5",
+        "ASE.4.C.6",
+        "ASE.4.C.7",
+        "ASE.4.C.8",
+        "ASE.4.C.9"
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Proyecto de investigación",
+      "titulo": "Proyecto de investigación",
+      "items": [
+        "Creatividad, actividad y experiencias de servicio. Diseño de un proyecto CAS en el contexto de Andalucía.",
+        "Desarrollo de un proyecto CAS según la planificación de cada una de sus etapas.",
+        "Implementación de un proyecto CAS según la planificación de cada una de sus etapas.",
+        "Análisis y valoración de los resultados de un proyecto CAS, utilizando distintas herramientas digitales.",
+        "Difusión de la puesta en práctica de un proyecto CAS, utilizando distintas herramientas digitales. digitales, para recopilar y presentar información oralmente y por escrito, en un entorno de trabajo colaborativo."
+      ],
+      "codigos_items": [
+        "ASE.4.D.1",
+        "ASE.4.D.2",
+        "ASE.4.D.3",
+        "ASE.4.D.4",
+        "ASE.4.D.5"
+      ]
+    }
+  ],
+  "comunidad": "andalucia",
+  "idioma": "es"
+}

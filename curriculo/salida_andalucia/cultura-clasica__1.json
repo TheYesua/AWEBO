@@ -1,0 +1,299 @@
+{
+  "materia_oficial": "Cultura Clásica",
+  "materia": "Cultura Clásica",
+  "etapa": "ESO",
+  "ciclo": "1º ESO",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Tomar contacto con las civilizaciones griega y romana, siendo consciente de los espacios geográficos más relevantes en los que se desarrollaron dichas civilizaciones, utilizando diversidad de medios y soportes, reconociendo su localización e incidencia en Andalucía.",
+      "descriptores": [
+        "CPSAA3",
+        "CPSAA4",
+        "CCEC1"
+      ]
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Distinguir a grandes rasgos el marco y el contexto histórico en el que ocurren los distintos momentos históricos de Grecia y Roma, identificando los principales episodios asociados a ellos, tomando conciencia de su repercusión en nuestra historia actual y situando las civilizaciones griega y romana en un marco histórico general.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Conocer los principales sistemas políticos de la antigüedad clásica, las distintas clases sociales y los modelos familiares, reflexionando sobre los papeles asignados a ellas y describiendo las principales formas de ocio relacionadas con estas.",
+      "descriptores": [
+        "CCEC2"
+      ]
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Conocer los conceptos de dioses y héroes de la mitología grecolatina, identificando aspectos importantes de estos seres mitológicos y comparándolos con los actuales, siendo consciente de la presencia de los mismos en Andalucía y valorando el sentido clásico y moderno.",
+      "descriptores": [
+        "CCEC2"
+      ]
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Reconocer en imágenes las características principales del arte clásico, señalando su presencia en las producciones artísticas de hoy día y relacionándolas con los modelos clásicos de Grecia y Roma, partiendo del análisis de los monumentos clásicos más importantes del patrimonio español y andaluz, particularmente, y mostrando respeto hacia el patrimonio artístico de otras civilizaciones y culturas.",
+      "descriptores": [
+        "CCEC2",
+        "CCEC4"
+      ]
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Tomar conciencia del valor de las lenguas clásicas desde su perspectiva etimológica y como elemento transmisor de las civilizaciones griega y romana, identificando las lenguas romances y no romances a partir del latín, distinguiendo vocabulario técnico y científico clásico en nuestra lengua, conociendo y valorando la importancia de la literatura grecolatina en modelos posteriores.",
+      "descriptores": [
+        "CCEC1",
+        "CCEC2",
+        "CCEC3"
+      ]
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Localizar, de manera guiada, en un mapa enclaves concretos relevantes de las civilizaciones griega y romana, señalando lugares de relevancia histórica, artística o arqueológica, empleando diversidad de medios y soportes analógicos y digitales."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Identificar, a grandes rasgos, lugares concretos en el que se han desarrollado las civilizaciones griega y romana, reconociendo conexión con Andalucía."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Conocer el origen grecorromano de las ciudades de Hispania romana, sobre todo las andaluzas."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Reconocer hitos esenciales en la historia de Grecia y Roma, valorando la pervivencia de algunos de ellos en la actualidad."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Acercarse, de manera guiada, a personajes célebres en la Antigua Roma procedentes de Hispania romana, con especial atención a los de la Bética."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Conocer el origen de las primeras formas de política en Grecia y Roma, especialmente el nacimiento de la democracia."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Reconocer los distintos trabajos y empleos en el mundo grecorromano, reflexionando sobre los modelos sociales que configuran."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Conocer la organización familiar griega y romana y el papel que desarrollaban cada uno de sus miembros."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "3",
+      "descripcion": "Conocer y reflexionar el sentido del ocio público, describiendo sus características principales."
+    },
+    {
+      "codigo": "3.5",
+      "competencia": "3",
+      "descripcion": "Reconocer modelos clásicos en la organización familiar, ocio y espectáculo."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Conocer e identificar en textos las semejanzas y diferencias entre mitos y héroe grecolatinos."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Conocer los principales dioses de la mitología grecolatina."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Conocer las características de la religiosidad y religión grecolatina."
+    },
+    {
+      "codigo": "4.4",
+      "competencia": "4",
+      "descripcion": "Reconocer en Andalucía la presencia del mito clásico en las leyendas sobre dioses, héroes."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Conocer las características básicas del arte clásico, identificando los monumentos clásicos más significativos."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Reconocer en las artes su poder expresivo de crítica y legitimación."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "5",
+      "descripcion": "Conocer monumentos clásicos del patrimonio español y europeo, mostrando respeto hacia la herencia artística de otros pueblos."
+    },
+    {
+      "codigo": "5.4",
+      "competencia": "5",
+      "descripcion": "Conocer monumentos clásicos representativos en Andalucía y en la Península Ibérica."
+    },
+    {
+      "codigo": "5.5",
+      "competencia": "5",
+      "descripcion": "Exponer de forma oral o escrita características básicas del legado artístico de la civilización romana y su pervivencia en el presente, sobre todo en monumentos del patrimonio andaluz, a través de soportes analógicos y digitales."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Distinguir distintos tipos de alfabetos usados en la actualidad."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Conocer el origen común de diferentes lenguas romances."
+    },
+    {
+      "codigo": "6.3",
+      "competencia": "6",
+      "descripcion": "Aproximarse al origen de las lenguas romances a partir del latín."
+    },
+    {
+      "codigo": "6.4",
+      "competencia": "6",
+      "descripcion": "Conocer las lenguas romances y no romances de la Península Ibérica, localizándolas en un mapa."
+    },
+    {
+      "codigo": "6.5",
+      "competencia": "6",
+      "descripcion": "Identificar el léxico de origen grecolatino en la propia lengua."
+    },
+    {
+      "codigo": "6.6",
+      "competencia": "6",
+      "descripcion": "Conocer principales los géneros literarios grecolatinos."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Geografía e Historia",
+      "titulo": "Geografía e Historia",
+      "items": [
+        "Grecia y Roma entre Oriente y Occidente I: una geografía: la Acrópolis de Atenas.",
+        "Grecia y Roma entre Oriente y Occidente II: una geografía: las siete colinas de Roma.",
+        "El viaje en la Antigüedad: Las calzadas romanas: La vía Augusta y la vía de la Plata",
+        "El viaje en la Antigüedad por los caminos de Europa: Importancia de la red de las calzadas para el desarrollo de la península Ibérica.",
+        "Grecia y Roma: fundamento de las ciudades de la Hispania romana, sobre todo andaluzas: Híspalis (Sevilla), Corduba (Córdoba), Astigi (Écija) o Gades (Cádiz)",
+        "Etnografía y biografía histórica I: pueblos y personajes griegos y romanos importantes. Alejandro Magno. Safó de Lesbos",
+        "Tiempo y ciudades de la cultura clásica I. Grecia y Atenas. Entre la realidad y el mito: El monte Parnaso y el río Aqueronte.",
+        "Tiempo y ciudades de la cultura clásica II. Entre la realidad y el mito: la fundación de Roma.",
+        "Personajes célebres en la Antigua Roma procedentes de la Hispania romana, prestando especial atención a los de la Bética. Adriano y Trajano"
+      ],
+      "codigos_items": [
+        "CCL.1.A.1",
+        "CCL.1.A.2",
+        "CCL.1.A.3",
+        "CCL.1.A.4",
+        "CCL.1.A.5",
+        "CCL.1.A.6",
+        "CCL.1.A.8",
+        "CCL.1.A.9",
+        "CCL.1.A.10"
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Sociedad y vida cotidiana",
+      "titulo": "Sociedad y vida cotidiana",
+      "items": [
+        "Ciudades de Roma y Atenas: la polis griega y la civitas romana.",
+        "Formas de organización política en el mundo clásico. La democracia griega.",
+        "Clases sociales. Esclavos y hombres libres en Grecia y Roma.",
+        "La familia y los roles familiares. El papel del pater y mater familias.",
+        "El ocio cotidiano de griegos y romanos. Espectáculo de poder. Los juegos Olímpicos. Los Iuvenalia y Neronia.",
+        "Presencia de modelos clásicos en la familia y el"
+      ],
+      "codigos_items": [
+        "CCL.1.B.1",
+        "CCL.1.B.2",
+        "CCL.1.B.3",
+        "CCL.1.B.4",
+        "CCL.1.B.5",
+        "CCL.1.B.6"
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Mitología y Religión",
+      "titulo": "Mitología y Religión",
+      "items": [
+        "El mito como base fundamental del desarrollo de personas y pueblos. El caballo de Troya y otros mitos en la obra de Homero.",
+        "El mundo divino griego y romano. El Olimpo",
+        "Las festividades religiosas en Grecia y Roma. Deporte y juegos olímpicos. Origen mitológico.",
+        "Valor y presencia de mitos clásicos y actuales en Andalucía. Las doce columnas de Hércules y su relación con el escudo de Andalucía."
+      ],
+      "codigos_items": [
+        "CCL.1.C.1",
+        "CCL.1.C.2",
+        "CCL.1.C.3",
+        "CCL.1.C.4"
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Arte",
+      "titulo": "Arte",
+      "items": [
+        "Las artes para gloria de dioses y humanos. El Olimpo griego a través del arte.",
+        "Formas, modelos y ejemplos grecorromanos más importantes.",
+        "Las artes y el poder.",
+        "Pervivencia del mundo clásico en España.",
+        "El arte clásico y Andalucía en el marco de la Península Ibérica y el mundo mediterráneo.",
+        "Herramientas analógicas y digitales para la compresión, producción y coproducción oral, escrita y multimodal.",
+        "Respeto de la propiedad intelectual y derechos de autor sobre las fuentes consultadas y los contenidos utilizados."
+      ],
+      "codigos_items": [
+        "CCL.1.D.1",
+        "CCL.1.D.2",
+        "CCL.1.D.3",
+        "CCL.1.D.4",
+        "CCL.1.D.5",
+        "CCL.1.D.6",
+        "CCL.1.D.7"
+      ]
+    },
+    {
+      "codigo": "E",
+      "bloque": "E. Lengua, léxico y literatura",
+      "titulo": "Lengua, léxico y literatura",
+      "items": [
+        "El nacimiento de nuestra escritura: El alfabeto griego y latino. Origen.",
+        "Los soportes de escritura: Las tablillas enceradas, punzones y cálamos.",
+        "Un viaje al origen de nuestras lenguas I: del latín a las lenguas romances.",
+        "Un viaje al origen de nuestras lenguas II: del latín a las lenguas romances. La comparación de elementos lingüísticos comunes a las mismas.",
+        "Conocer la terminología científico-técnica de origen grecolatino en nuestra lengua.",
+        "Grandes géneros y autores de la literatura grecolatina. Autores contemporáneos influidos por la literatura grecorromana. (I)",
+        "Tópicos literarios heredados de Grecia y Roma."
+      ],
+      "codigos_items": [
+        "CCL.1.E.1",
+        "CCL.1.E.2",
+        "CCL.1.E.3",
+        "CCL.1.E.4",
+        "CCL.1.E.6",
+        "CCL.1.E.7",
+        "CCL.1.E.8"
+      ]
+    }
+  ],
+  "comunidad": "andalucia",
+  "idioma": "es"
+}

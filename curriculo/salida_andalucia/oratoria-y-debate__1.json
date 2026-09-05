@@ -1,0 +1,266 @@
+{
+  "materia_oficial": "Oratoria y Debate",
+  "materia": "Oratoria y Debate",
+  "etapa": "ESO",
+  "ciclo": "1º ESO",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Adquirir y conocer con solidez y actitud crítica los conceptos básicos del discurso persuasivo y argumentativo, identificando las principales características de los diferentes tipos de discurso y sus diversas posibilidades de representación, así como sus intenciones comunicativas, potenciando y valorando el uso de la argumentación a través del conocimiento y empleo de estrategias necesarias para el desarrollo de la expresión oral en público, y analizando las diversas manifestaciones, estilos y expresiones discursivas de su entorno sociocultural.",
+      "descriptores": [
+        "CPSAA3",
+        "CC3",
+        "CCEC3"
+      ]
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Conocer y utilizar las diferentes técnicas que faciliten la elaboración del discurso argumentativo y persuasivo, adaptándolo a las necesidades argumentativas, mediante el uso de diferentes técnicas de documentación e investigación, atendiendo a la corrección lingüística, así como a la coherencia y cohesión del mismo y al uso adecuado de figuras retóricas propias de la disciplina.",
+      "descriptores": [
+        "STEM2",
+        "CD1",
+        "CD2",
+        "CD3",
+        "CPSAA1",
+        "CPSAA5",
+        "CC1",
+        "CC3",
+        "CCEC3"
+      ]
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Desarrollar las habilidades, capacidades y destrezas para facilitar la recreación y presentación de las diferentes producciones argumentativas, tanto desde el punto de vista comunicativo como gestual, a través del empleo adecuado de diversas herramientas y soportes técnicos propios de la comunicación corporal y manejo del espacio escénico.",
+      "descriptores": [
+        "CD3",
+        "CPSAA1",
+        "CPSAA4",
+        "CC3",
+        "CCEC3"
+      ]
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Estimular y desarrollar las capacidades expresivas, creativas y comunicativas propias de la oratoria en las producciones argumentativas propias y ajenas, a través del trabajo individual y en equipo, conociendo las intenciones comunicativas y utilizando lenguajes y códigos de carácter comunicativo y gestual, así como estrategias que garanticen la construcción de un discurso veraz, fomentando la autoconfianza, la asertividad y la empatía para promover la participación del alumnado de manera respetuosa en la vida democrática.",
+      "descriptores": [
+        "CPSAA1",
+        "CPSAA3",
+        "CPSAA4",
+        "CC1",
+        "CC2",
+        "CC3",
+        "CCEC3"
+      ]
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Participar y valorar la intervención en debates académicos, reconociendo adecuadamente los distintos tipos y gestionando las reglas de interacción, los espacios y los tiempos, así como los diversos roles propios del debate educativo para valorarlo y disfrutarlo como una manifestación argumentativa y persuasiva que forma parte del acervo cultural y social de los pueblos, participando activamente en su mantenimiento, desarrollo y proyección.",
+      "descriptores": [
+        "CPSAA1",
+        "CPSAA3",
+        "CPSAA5",
+        "CC1",
+        "CC3",
+        "CCEC1",
+        "CCEC3"
+      ]
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Leer, comprender y escuchar discursos persuasivos sencillos."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Identificar y valorar los diferentes estilos argumentativos."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Reconocer y valorar los elementos propios de la puesta en escena de los discursos persuasivos orales."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Reconocer en un texto breve el núcleo del discurso, la tesis."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Adaptar las características del discurso al contexto comunicativo."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Conocer las diferentes estrategias para captar la atención de la audiencia."
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "2",
+      "descripcion": "Conocer las técnicas de documentación e investigación para plantear el discurso argumentativo."
+    },
+    {
+      "codigo": "2.5",
+      "competencia": "2",
+      "descripcion": "Seleccionar las ideas más adecuadas y organizadas en una estructura textual ordenada."
+    },
+    {
+      "codigo": "2.6",
+      "competencia": "2",
+      "descripcion": "Conocer los recursos propios de la argumentación con corrección lingüística."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Conocer distintas estrategias mnemotécnicas en el discurso persuasivo."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Gestionar las emociones positivas y negativas para la exposición de las ideas y opiniones en público."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Pronunciar el discurso con corrección y claridad."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "3",
+      "descripcion": "Usar de manera adecuada soportes técnicos para apoyar el discurso y mantener la atención del interlocutor."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Usar la oratoria como instrumento ético para la construcción o aproximación a la verdad."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Aprender a elaborar textos relacionados con diversos ámbitos de participación social, identificando y conociendo las normas básicas de convivencia."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Entender como valor positivo para las relaciones interpersonales el uso cívico de la palabra."
+    },
+    {
+      "codigo": "4.4",
+      "competencia": "4",
+      "descripcion": "Conocer los elementos propios del lenguaje gestual que garanticen la atención del interlocutor."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Conocer la estructura del debate, conociendo y valorando las reglas de interacción, intervención y cortesía para participar activamente en debates escolares."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Aprender a gestionar de manera apropiada los tiempos y espacios del debate académico, así como a identificarlas."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "5",
+      "descripcion": "Conocer, valorar y disfrutar el debate como manifestación cultural y social de los pueblos."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. El discurso persuasivo y argumentativo",
+      "titulo": "El discurso persuasivo y argumentativo",
+      "items": [
+        "El discurso y la argumentación. La intención comunicativa.",
+        "Distintos estilos de discurso.",
+        "El discurso público. Su uso formal e informal. Características.",
+        "Los aspectos esenciales de la puesta en escena de los discursos orales."
+      ],
+      "codigos_items": [
+        "OYD.1.A.1",
+        "OYD.1.A.2",
+        "OYD.1.A.3",
+        "OYD.1.A.4"
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Elaboración del discurso persuasivo y argumentativo",
+      "titulo": "Elaboración del discurso persuasivo y argumentativo",
+      "items": [
+        "Concreción de un mensaje persuasivo y argumentativo. La síntesis y claridad como elementos básicos de su elaboración. Saberes básicos 2ºESO",
+        "La importancia del contexto en la elaboración de discursos. Estrategias para captar la atención y el interés.",
+        "Alfabetización digital y mediática. La búsqueda y selección de información en la elaboración de discursos. Estrategias de búsqueda de información. Detección de noticias falsas y bulos.",
+        "Tipos de contenidos: lógicos (datos, teorías, citas) y emocionales (anécdotas, imágenes, vídeos). Aplicación al discurso.",
+        "La estructura del discurso: introducción, desarrollo y conclusión. Coherencia y cohesión. Corrección lingüística."
+      ],
+      "codigos_items": [
+        "OYD.1.B.1",
+        "OYD.1.B.2",
+        "OYD.1.B.3",
+        "OYD.1.B.4",
+        "OYD.1.B.5"
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. La presentación del discurso persuasivo y argumentativo",
+      "titulo": "La presentación del discurso persuasivo y argumentativo",
+      "items": [
+        "Memorización del discurso. Reglas mnemotécnicas. Interiorización del discurso.",
+        "Gestión emocional para hablar en público (autoconfianza, seguridad, entusiasmo). Gestión de las emociones negativas.",
+        "Uso de aspectos relacionados con la dicción como pronunciación, ritmo, volumen, intensidad, pausas y silencios.",
+        "Comunicación corporal y gestión del espacio escénico.",
+        "Uso de Soportes audiovisuales e informáticos de apoyo al discurso."
+      ],
+      "codigos_items": [
+        "OYD.1.C.1",
+        "OYD.1.C.2",
+        "OYD.1.C.3",
+        "OYD.1.C.4",
+        "OYD.1.C.5"
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Oratoria, valores y educación emocional",
+      "titulo": "Oratoria, valores y educación emocional",
+      "items": [
+        "Oratoria para la construcción de la veracidad del discurso.",
+        "Oratoria para la participación activa en la democracia.",
+        "Representación de las habilidades personales y sociales del discurso. Autoconfianza, empatía y asertividad.",
+        "Discursos persuasivos y argumentativos orales en situaciones informales y formales (debates y presentaciones). Los tipos de discurso persuasivo y argumentativo. Características y estructura."
+      ],
+      "codigos_items": [
+        "OYD.1.D.1",
+        "OYD.1.D.2",
+        "OYD.1.D.3",
+        "OYD.1.D.4"
+      ]
+    },
+    {
+      "codigo": "E",
+      "bloque": "E. El debate",
+      "titulo": "El debate",
+      "items": [
+        "El debate y sus tipos.",
+        "Valoración del sentido global del debate. Las normas básicas que regulan los debates.",
+        "Conocer la organización y estructura de un debate. Entender las normas básicas que regulan la participación en un debate. Características y usos."
+      ],
+      "codigos_items": [
+        "OYD.1.E.1",
+        "OYD.1.E.2",
+        "OYD.1.E.3"
+      ]
+    }
+  ],
+  "comunidad": "andalucia",
+  "idioma": "es"
+}

@@ -1,0 +1,268 @@
+{
+  "materia_oficial": "Cultura Científica",
+  "materia": "Cultura Científica",
+  "etapa": "ESO",
+  "ciclo": "4º ESO",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "4º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Comprender y utilizar las estrategias y los conceptos básicos de la Ciencia y la Tecnología para interpretar los problemas medioambientales a nivel mundial, español y andaluz, así como para analizar y valorar las repercusiones del desarrollo científico en general y sus aplicaciones.",
+      "descriptores": [
+        "CPSAA3",
+        "CC3",
+        "CC4",
+        "CE3"
+      ]
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Utilizar con solvencia y responsabilidad diversas fuentes, incluidas las tecnologías de la información y la comunicación, desarrollando las destrezas básicas para la selección y utilización de la información de carácter científico proveniente de las mismas.",
+      "descriptores": [
+        "CD2",
+        "CD3",
+        "CPSAA1",
+        "CPSAA3",
+        "CPSAA4",
+        "CC3",
+        "CE1"
+      ]
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Conocer y valorar de forma crítica la contribución de la ciencia y la tecnología en el cambio de las condiciones de vida actuales, desarrollando actitudes y hábitos de salud personal, afianzando el respeto hacia el medio ambiente y el desarrollo sostenible.",
+      "descriptores": [
+        "CPSAA1",
+        "CPSAA2",
+        "CC1"
+      ]
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Desarrollar hábitos de trabajo en equipo, de debate y evaluación sobre propuestas y aplicaciones de los últimos avances científicos, en relación con el estudio del Universo, que aparecen en los medios de comunicación, y los realizados en la Comunidad Autónoma Andaluza.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Conocer y valorar los elementos y procedimientos fundamentales de la investigación y de los métodos científicos, reconociendo las aportaciones del conocimiento científico al descubrimiento y uso de materiales, y cómo esto ha influenciado en la sociedad humana, a lo largo de la historia.",
+      "descriptores": [
+        "CPSAA1",
+        "CPSAA2",
+        "CC1",
+        "CE2"
+      ]
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Identificar los principales problemas medioambientales, universales y andaluces, las causas que los provocan y los factores que los intensifican, así como predecir sus consecuencias y proponer soluciones a los mismos."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Valorar las graves implicaciones sociales, tanto en la actualidad como en el futuro, de la sobreexplotación de recursos naturales a nivel global y a nivel local."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Justificar la necesidad de buscar nuevas fuentes de energía no contaminantes y económicamente viables, para mantener el estado de bienestar de la sociedad actual."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "1",
+      "descripcion": "Comparar el estado de desarrollo de las energías renovables en Andalucía con respecto al resto de España y del mundo."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Obtener, seleccionar y valorar informaciones relacionadas con temas científicos de la actualidad."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Valorar la importancia que tiene la investigación y el desarrollo tecnológico en la actividad cotidiana."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Comunicar conclusiones e ideas en distintos soportes a públicos diversos, utilizando eficazmente las tecnologías de la información y comunicación para transmitir conclusiones propias argumentadas."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Reconocer que la salud no es solamente la ausencia de afecciones."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Diferenciar los tipos de enfermedades más frecuentes, identificando algunos indicadores, causas y tratamientos más comunes."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Conocer las principales características del cáncer, diabetes, enfermedades cardiovasculares y enfermedades mentales, entre otras, así como los principales tratamientos y la importancia de las revisiones preventivas."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "3",
+      "descripcion": "Valorar la importancia de adoptar medidas preventivas que eviten los contagios y prioricen los controles médicos periódicos y los estilos de vida saludables."
+    },
+    {
+      "codigo": "3.5",
+      "competencia": "3",
+      "descripcion": "Argumentar sobre la necesidad de una gestión sostenible de los recursos que proporciona la Tierra."
+    },
+    {
+      "codigo": "3.6",
+      "competencia": "3",
+      "descripcion": "Conocer el sistema de salud de Andalucía valorando su importancia para el bienestar de la sociedad andaluza."
+    },
+    {
+      "codigo": "3.7",
+      "competencia": "3",
+      "descripcion": "Conocer y valorar el trabajo de investigación biomédica que se desarrolla en Andalucía."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Conocer, mediante búsquedas por la web, las teorías que han surgido sobre el origen del Universo (Big Bang)."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Señalar qué observaciones ponen de manifiesto la existencia de un agujero negro, y cuáles son sus características."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Describir la organización del Universo y cómo se agrupan las estrellas y los planetas."
+    },
+    {
+      "codigo": "4.4",
+      "competencia": "4",
+      "descripcion": "Conocer y valorar las aportaciones de los centros de investigación y observatorios astronómicos en Andalucía."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Realizar estudios sencillos y presentar conclusiones sobre aspectos relacionados con los materiales y su influencia en el desarrollo de la Humanidad."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Conocer los principales métodos de obtención de materias primas y sus posibles repercusiones sociales y medioambientales."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "5",
+      "descripcion": "Conocer las aplicaciones de los nuevos materiales en campos tales como la electricidad y la electrónica, entre otros."
+    },
+    {
+      "codigo": "5.4",
+      "competencia": "5",
+      "descripcion": "Conocer las principales zonas de explotación de recursos materiales en Andalucía, y comprender su impacto medioambiental y su proceso de reconversión a modelos de producción más sostenibles."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Avances tecnológicos e impacto ambiental",
+      "titulo": "Avances tecnológicos e impacto ambiental",
+      "items": [
+        "Valoración de los problemas ambientales actuales en el mundo y Andalucía y su relación con su desarrollo científico-tecnológico.",
+        "Determinación de la influencia de los impactos ambientales de la sociedad actual y futura.",
+        "Análisis de la utilización de energías limpias y renovables, como la pila de combustible.",
+        "Reflexión del estado de desarrollo en Andalucía de las energías renovables.",
+        "Gestión sostenible de los recursos."
+      ],
+      "codigos_items": [
+        "CCI.4.A.1",
+        "CCI.4.A.2",
+        "CCI.4.A.3",
+        "CCI.4.A.4",
+        "CCI.4.A.5"
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Información científica y uso de herramientas TIC",
+      "titulo": "Información científica y uso de herramientas TIC",
+      "items": [
+        "Estrategias para la búsqueda, comprensión y selección de información científica relevante de diferentes fuentes.",
+        "Uso de las herramientas TIC para transmitir y recibir información.",
+        "El debate como medio de intercambio de información y de argumentación de opiniones personales.",
+        "Aplicaciones tecnológicas en la vida cotidiana."
+      ],
+      "codigos_items": [
+        "CCI.4.B.1",
+        "CCI.4.B.2",
+        "CCI.4.B.3",
+        "CCI.4.B.4"
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Calidad de vida",
+      "titulo": "Calidad de vida",
+      "items": [
+        "Determinación del concepto de Salud.",
+        "Caracterización de las enfermedades más frecuentes, sus síntomas y tratamiento.",
+        "Reconocimiento de la medicina preventiva y su importancia en las enfermedades cardiovasculares, mentales, cáncer y diabetes.",
+        "Reconocimiento de los estilos de vida saludables, controles médicos periódicos y medidas preventivas frente a enfermedades infecciosas en nuestra sociedad.",
+        "Sistema Andaluz de Salud y asistencia sanitaria.",
+        "La investigación Biomédica en Andalucía."
+      ],
+      "codigos_items": [
+        "CCI.4.C.1",
+        "CCI.4.C.2",
+        "CCI.4.C.3",
+        "CCI.4.C.4",
+        "CCI.4.C.5",
+        "CCI.4.C.6"
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. El Universo",
+      "titulo": "El Universo",
+      "items": [
+        "Evaluación de las teorías más actualizadas y creencias no científicas sobre el origen del Universo.",
+        "Aproximación al estudio de los agujeros negros y su importancia en el estudio del Universo.",
+        "Apreciación de la exploración del Universo desde Andalucía.",
+        "La organización del Universo, agrupaciones de estrellas y planetas.",
+        "Centros de investigación y observatorios astronómicos en Andalucía."
+      ],
+      "codigos_items": [
+        "CCI.4.D.1",
+        "CCI.4.D.2",
+        "CCI.4.D.3",
+        "CCI.4.D.4",
+        "CCI.4.D.5"
+      ]
+    },
+    {
+      "codigo": "E",
+      "bloque": "E. Materiales",
+      "titulo": "Materiales",
+      "items": [
+        "El uso de los materiales y la evolución de la Humanidad.",
+        "La obtención de materias primas y sus repercusiones sociales y medioambientales. Impactos en Andalucía.",
+        "El descubrimiento de nuevos materiales y el desarrollo futuro de la sociedad.",
+        "Zonas de explotación de los recursos materiales en Andalucía."
+      ],
+      "codigos_items": [
+        "CCI.4.E.1",
+        "CCI.4.E.2",
+        "CCI.4.E.3",
+        "CCI.4.E.4"
+      ]
+    }
+  ],
+  "comunidad": "andalucia",
+  "idioma": "es"
+}

@@ -1,0 +1,209 @@
+{
+  "materia_oficial": "Dibujo Técnico",
+  "materia": "Dibujo Técnico",
+  "etapa": "ESO",
+  "ciclo": "4º ESO",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "4º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Observar, analizar y valorar la presencia de la geometría en la naturaleza, en el entorno y en el arte, identificando sus estructuras geométricas. CCL1, CCL2, CCL3, STEM4, CD1, CPSAA3, CC1, CCEC1, CCEC2, CCEC4.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Realizar propuestas gráficas utilizando tanto el dibujo a mano alzada como el dibujo técnico y elaborando trazados y composiciones en el plano. CCL1, STEM2, CPSAA1, CPSAA3, CPSAA5, CCEC3, CCEC4.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Desarrollar la visión espacial analizando el espacio tridimensional y su representación en el plano en proyectos artísticos y técnicos sencillos. CCL1, STEM1, STEM3, STEM4, CPSAA3, CE3, CCEC4.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Formalizar diseños técnicos aplicando las normas UNE e ISO y valorando las mismas como lenguaje universal facilitador de la cooperación internacional. CCL1, CCL2, STEM1, STEM3, STEM4, CPSAA3, CE3, CCEC4.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Hacer uso de las herramientas digitales y aplicaciones específicas de dibujo, en 2D y 3D, para la creación artística. CCL1, STEM3, STEM4, CD2, CD3, CPSAA3, CPSAA5, CE3, CCEC3, CCEC4.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Reconocer diferentes tipos de estructuras, formas y relaciones geométricas en la naturaleza, el entorno, el arte y el diseño."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Analizar la importancia de la geometría en la Historia del Arte, especialmente en el Patrimonio Artístico Andaluz."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Analizar mediante la realización de bocetos y croquis a mano alzada la geometría interna de formas bidimensionales."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Dibujar formas geométricas poligonales y curvilíneas, resolver tangencias básicas y transformaciones geométricas."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Presentar el trabajo realizado con limpieza y precisión en el trazado, tanto a mano alzada como en el trazado geométrico."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Diferenciar las características de los distintos sistemas de representación."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Dibujar objetos y espacios sencillos mediante los distintos sistemas de representación."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Aplicar rigor, limpieza y precisión en la representación gráfica de la geometría descriptiva."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Representar objetos sencillos a través de bocetos y croquis, aplicando la creatividad unida a la corrección técnica."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Representar objetos sencillos mediante sus vistas acotadas aplicando la normalización vigente."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Representar un modelo tridimensional de un objeto o espacio, partiendo de su representación técnica y normalizada."
+    },
+    {
+      "codigo": "4.4",
+      "competencia": "4",
+      "descripcion": "Aplicar los principios de precisión y limpieza en la normalización, haciendo un uso correcto del material técnico necesario"
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Adquirir destrezas en el manejo de herramientas y técnicas de dibujo digital en 2D, aplicándolos a la realización de proyectos creativos."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Iniciarse en el modelado en 3D mediante el diseño de propuestas que incorporen volúmenes sencillos."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "5",
+      "descripcion": "Desarrollar un proyecto artístico utilizando las herramientas digitales más apropiadas, hasta su concreción física o digital."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Fundamentos de la Geometría",
+      "titulo": "Fundamentos de la Geometría",
+      "items": [
+        "La geometría en la naturaleza y en el entorno. Observación directa e indirecta.",
+        "Aplicación del dibujo técnico como elemento de comunicación gráfica y generador de formas.",
+        "Desarrollo histórico del Dibujo Técnico. Referencias en el Patrimonio Cultural Andaluz.",
+        "Presencia de la geometría en las distintas expresiones artísticas (patrimonio arquitectónico, diseño gráfico, cómic, diseño industrial, pintura, etc.). Referentes en el Patrimonio Artístico Andaluz.",
+        "Precisión, claridad y limpieza en las ejecuciones. Uso correcto de los materiales propios del Dibujo Técnico. B Geometría plana."
+      ],
+      "codigos_items": [
+        "DBT.4.A.1",
+        "DBT.4.A.2",
+        "DBT.4.A.3",
+        "DBT.4.A.4",
+        "DBT.4.A.5"
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Bloque B",
+      "titulo": "Bloque B",
+      "items": [
+        "Conceptos y trazados elementales en el plano. Construcciones poligonales. Clasificación de polígonos. Triángulos, cuadriláteros, polígonos regulares y polígonos estrellados. Aplicación de trazados fundamentales para el diseño de redes modulares.",
+        "Proporcionalidad, razón de proporción, reglas de proporción. Equivalencia y semejanza.",
+        "Transformaciones geométricas en el plano.",
+        "Geometría curvilínea, tangencias básicas y enlaces. Definición y trazados. C Geometría descriptiva."
+      ],
+      "codigos_items": [
+        "DBT.4.B.1",
+        "DBT.4.B.2",
+        "DBT.4.B.3",
+        "DBT.4.B.4"
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Bloque C",
+      "titulo": "Bloque C",
+      "items": [
+        "Tipos de proyección y de sistemas de representación y su aplicación.",
+        "Sistema diédrico: representación de punto, recta y plano.",
+        "Sistema diédrico: Relaciones entre elementos: intersecciones, paralelismo y perpendicularidad.",
+        "Proyecciones diédricas de sólidos geométricos sencillos.",
+        "Sistema axonométrico, ortogonal y oblicuo. Perspectivas isométrica y caballera. Representación de sólidos geométricos sencillos.",
+        "Sistema cónico: fundamentos y elementos del sistema. Perspectiva frontal. Representación de sólidos geométricos y espacios sencillos."
+      ],
+      "codigos_items": [
+        "DBT.4.C.1",
+        "DBT.4.C.2",
+        "DBT.4.C.3",
+        "DBT.4.C.4",
+        "DBT.4.C.5",
+        "DBT.4.C.6"
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Normalización y documentación gráfica de proyectos",
+      "titulo": "Normalización y documentación gráfica de proyectos",
+      "items": [
+        "Escalas y formatos. Representación del entorno según finalidad.",
+        "Concepto de normalización. Las normas fundamentales UNE e ISO.",
+        "Representación de cuerpos y piezas industriales sencillas. Vistas principales.",
+        "Acotación. Tipos de líneas y grosores.",
+        "Aplicación del lenguaje técnico en la creación de un proyecto tridimensional, desde el boceto hasta la materialización."
+      ],
+      "codigos_items": [
+        "DBT.4.D.1",
+        "DBT.4.D.2",
+        "DBT.4.D.3",
+        "DBT.4.D.4",
+        "DBT.4.D.5"
+      ]
+    },
+    {
+      "codigo": "E",
+      "bloque": "E. Herramientas digitales para dibujo",
+      "titulo": "Herramientas digitales para dibujo",
+      "items": [
+        "Iniciación al dibujo digital en 2D y 3D. Aplicaciones informáticas",
+        "Generación de volúmenes básicos.",
+        "Creación digital de un proyecto artístico."
+      ],
+      "codigos_items": [
+        "DBT.4.E.1",
+        "DBT.4.E.2",
+        "DBT.4.E.3"
+      ]
+    }
+  ],
+  "comunidad": "andalucia",
+  "idioma": "es"
+}

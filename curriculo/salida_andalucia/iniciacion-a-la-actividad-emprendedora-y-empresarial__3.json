@@ -1,0 +1,229 @@
+{
+  "materia_oficial": "Iniciación a la Actividad Emprendedora y Empresarial",
+  "materia": "Iniciación a la Actividad Emprendedora y Empresarial",
+  "etapa": "ESO",
+  "ciclo": "3º ESO",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "3º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Analizar y valorar las fortalezas y debilidades propias y de los demás, reflexionando sobre las aptitudes y gestionando las emociones y las destrezas necesarias, para adaptarse a entornos cambiantes y diseñar un proyecto personal único que genere valor para los demás.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Utilizar estrategias de conformación de equipos, así como habilidades sociales, de comunicación e innovación, aplicándolas con autonomía y motivación a las dinámicas de trabajo en distintos contextos, para constituir equipos de trabajo y descubrir el valor de cooperar con otras personas durante el proceso de",
+      "descriptores": [
+        "CPSAA3",
+        "CC1",
+        "CE2"
+      ]
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Elaborar, con sentido ético y solidario, ideas y soluciones innovadoras y sostenibles que den respuesta a las necesidades locales y globales detectadas, teniendo en cuenta la realidad económica andaluza, analizando tanto sus puntos fuertes y débiles como el impacto que puedan generar esas ideas en el entorno, para lograr la superación de retos relacionados con la preservación y cuidado del entorno.",
+      "descriptores": [
+        "CE3",
+        "CCEC3"
+      ]
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Comprender aspectos básicos de la economía y las finanzas, profundizando en la realidad económica andaluza, valorando críticamente el problema de la escasez de recursos y la necesidad de elegir, así como los principios de interacción social desde el punto de vista económico para relacionar dichos aspectos con la búsqueda y planificación de los recursos necesarios en el desarrollo de la idea o solución emprendedora que afronte el reto planteado de manera eficaz, equitativa y sostenible.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Seleccionar y reunir los recursos disponibles en el proceso de desarrollo de la idea o solución creativa propuesta, teniendo nociones básicas de los medios de producción y las fuentes financieras que proporcionan dichos recursos y proponiendo estrategias de captación de estos, para poner en marcha un proyecto que lleve a la realidad la solución emprendedora.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Construir y analizar de manera cooperativa, autónoma y válida prototipos innovadores y sostenibles, aplicando estrategias eficaces de diseño y ejecución, evaluando todas las fases del proceso con el objetivo de mejorar y perfeccionar los prototipos creados y para contribuir al aprendizaje y el desarrollo personal y social.",
+      "descriptores": [
+        "CPSAA5",
+        "CE2",
+        "CE3"
+      ]
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Adaptarse al entorno y crear un proyecto personal original y generador de valor, partiendo de la valoración crítica sobre las propias aptitudes y las posibilidades creativas."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Utilizar estrategias de análisis razonado de las fortalezas y debilidades personales y de la iniciativa y creatividad propia y de los demás."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Gestionar de forma eficaz las emociones y destrezas personales, promoviendo y desarrollando actitudes creativas."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Constituir equipos de trabajo basados en principios de equidad, coeducación e igualdad entre hombres y mujeres, actitud participativa y visualización de metas comunes, utilizando estrategias que faciliten la identificación y optimización de los recursos humanos necesarios que conduzcan a la consecución del reto propuesto."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Poner en práctica habilidades sociales, de comunicación abierta, motivación, liderazgo y de cooperación en distintos contextos de trabajo en equipo."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Valorar y respetar las aportaciones de los demás en las distintas dinámicas de trabajo y fases del proceso llevado a cabo, respetando las decisiones tomadas de forma colectiva."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Preservar y cuidar el entorno natural, social, cultural y artístico a partir de propuestas y actuaciones locales y globales que promuevan el desarrollo sostenible, con visión creativa, emprendedora y comprometida."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Superar los retos propuestos a partir de ideas y soluciones innovadoras y sostenibles, evaluando sus ventajas e inconvenientes, así como, el impacto que pudieran generar a nivel personal y en el entorno, teniendo en cuenta la realidad económica de Andalucía."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Aplicar diversas metodologías siguiendo los criterios y pautas establecidos en el proceso de construcción de ideas creativas y sostenibles que faciliten la superación de los retos planteados y la obtención de soluciones a las necesidades detectadas con sentido ético y solidario."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "3",
+      "descripcion": "Validar las ideas y soluciones presentadas formulando y aplicando criterios para evaluar objetivos concretos, y exponer las conclusiones logradas utilizando estrategias comunicativas ágiles adaptadas a cada situación comunicativa."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Desarrollar una idea o solución emprendedora a partir de los conocimientos, destrezas y actitudes adquiridos desde el ámbito de la economía y las finanzas, viendo la relación entre estos y los recursos necesarios y disponibles que permitieran su desarrollo."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Conocer y comprender con precisión los conocimientos, destrezas y actitudes necesarios del ámbito económico y financiero, aplicándolos con coherencia a situaciones, actividades o proyectos concretos."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Afrontar los retos de manera eficaz, equitativa y sostenible, en distintos contextos y situaciones, reales o simuladas, transfiriendo los saberes económicos y financieros necesarios, para aplicarlos en el contexto andaluz."
+    },
+    {
+      "codigo": "4.4",
+      "competencia": "4",
+      "descripcion": "Valorar críticamente el problema económico de la escasez de recursos y la necesidad de elegir, conocer la realidad económica andaluza y los principios de interacción social desde el punto de vista económico."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Poner en marcha un proyecto viable que lleve a la realidad una solución emprendedora, seleccionando y reuniendo los recursos materiales, humanos, financieros y digitales disponibles en el proceso de ideación creativa."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Utilizar con autonomía estrategias de captación y gestión de recursos conociendo sus características y aplicándolas al proceso de conversión de las ideas y soluciones en acciones."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "5",
+      "descripcion": "Reunir, analizar y seleccionar con criterios propios los recursos disponibles, planificando con coherencia su organización, distribución, uso y optimización."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Valorar la contribución del prototipo final, tanto para el aprendizaje como para el desarrollo personal y colectivo, evaluando de manera crítica y ética todas las fases del proceso llevado a cabo, así como la adecuación de las estrategias empleadas en la construcción de este."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Analizar de manera crítica el proceso de diseño y ejecución llevado a cabo en la realización de los prototipos creados."
+    },
+    {
+      "codigo": "6.3",
+      "competencia": "6",
+      "descripcion": "Utilizar estrategias de diseño y ejecución seleccionando aquellas que faciliten la construcción del prototipo final."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. El perfil de la persona emprendedora, iniciativa y creatividad",
+      "titulo": "El perfil de la persona emprendedora, iniciativa y creatividad",
+      "items": [
+        "El perfil de la persona emprendedora. Autoconfianza, autoconocimiento, empatía, perseverancia, iniciativa y resiliencia.",
+        "Técnicas de diagnóstico de debilidades y fortalezas. Creatividad, ideas y soluciones.",
+        "Comunicación, motivación, negociación y liderazgo.",
+        "Gestión de emociones. Estrategias de gestión de la incertidumbre y toma de decisiones en contextos cambiantes. El error y la validación como oportunidades para aprender."
+      ],
+      "codigos_items": [
+        "IAE.3.A.1",
+        "IAE.3.A.2",
+        "IAE.3.A.3",
+        "IAE.3.A.4"
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. El entorno económico como fuente de ideas y oportunidades",
+      "titulo": "El entorno económico como fuente de ideas y oportunidades",
+      "items": [
+        "La perspectiva económica del entorno. El problema económico: la escasez de recursos y la necesidad de elegir. La elección en economía: costes de oportunidad e incentivos. El comportamiento de las personas en las decisiones. Comercio, bienestar y desigualdades.",
+        "El entorno económico-empresarial. Los agentes económicos y el flujo circular de la renta. El funcionamiento de los mercados. El mercado y las oportunidades de negocio: análisis del entorno general o macroentorno; análisis del entorno específico o microentorno. Oportunidades de negocio en Andalucía.",
+        "El sistema financiero. La empresa y su responsabilidad social. La decisión empresarial y la innovación como fuente de transformación social.",
+        "El entorno social, cultural y ambiental desde una perspectiva económica. La economía colaborativa. La huella ecológica y la economía circular. La economía social y solidaria. Los Objetivos de Desarrollo Sostenible (ODS) y el desarrollo local. Agentes que apoyan la creación de proyectos culturales emprendedores.",
+        "Estrategias de exploración del entorno. Métodos de análisis de la competencia."
+      ],
+      "codigos_items": [
+        "IAE.3.B.1",
+        "IAE.3.B.2",
+        "IAE.3.B.3",
+        "IAE.3.B.4",
+        "IAE.3.B.5"
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Recursos para llevar a cabo un proyecto emprendedor",
+      "titulo": "Recursos para llevar a cabo un proyecto emprendedor",
+      "items": [
+        "Misión, visión y valores de la empresa o entidad. La organización y gestión de las entidades emprendedoras. Funciones de la empresa.",
+        "Los equipos de trabajo en las empresas y organizaciones. Formación y funcionamiento de equipos de trabajo.",
+        "Las finanzas personales y del proyecto emprendedor: control y gestión del dinero. Fuentes y control de ingresos y gastos. Recursos financieros a corto y largo plazo y su relación con el bienestar financiero.",
+        "El endeudamiento. Fuentes de financiación y captación de recursos financieros. La gestión del riesgo financiero y los seguros."
+      ],
+      "codigos_items": [
+        "IAE.3.C.1",
+        "IAE.3.C.2",
+        "IAE.3.C.3",
+        "IAE.3.C.4"
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. La realización del proyecto emprendedor",
+      "titulo": "La realización del proyecto emprendedor",
+      "items": [
+        "El reto o desafío como objetivo. El usuario como destinatario final del prototipo.",
+        "Planificación, gestión y ejecución de un proyecto emprendedor. Del reto al prototipo.",
+        "Presentación e introducción del prototipo en el entorno. Estrategias de difusión.",
+        "La toma de decisiones de los usuarios. El usuario como consumidor. Derechos y obligaciones de los consumidores. Derechos sobre el prototipo: la propiedad intelectual e industrial."
+      ],
+      "codigos_items": [
+        "IAE.3.D.1",
+        "IAE.3.D.2",
+        "IAE.3.D.3",
+        "IAE.3.D.4"
+      ]
+    }
+  ],
+  "comunidad": "andalucia",
+  "idioma": "es"
+}

@@ -1,0 +1,236 @@
+{
+  "materia_oficial": "Artes Escénicas y Danza",
+  "materia": "Artes Escénicas y Danza",
+  "etapa": "ESO",
+  "ciclo": "4º ESO",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "4º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Conocer y explicar la función de las artes escénicas y su importancia a lo largo de la historia en situaciones y contextos diversos, actos de la vida cotidiana, espectáculos y medios de comunicación.",
+      "descriptores": [
+        "CCEC1"
+      ]
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Participar como intérprete en actuaciones y manifestaciones musicales y escénicas dentro y/o fuera del centro, mostrando iniciativa en los procesos creativos e interpretativos asumiendo diferentes roles, tareas y responsabilidades.",
+      "descriptores": [
+        "CCEC4"
+      ]
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Estimular el desarrollo de las capacidades expresivas, creativas y comunicativas propias a partir del trabajo individual y grupal, experimentando diferentes lenguajes y códigos mostrando respeto a las ideas, las emociones y los sentimientos del grupo.",
+      "descriptores": [
+        "CPSAA3",
+        "CC3",
+        "CE3",
+        "CCEC3",
+        "CCEC4"
+      ]
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Desarrollar las habilidades, capacidades y destrezas necesarias para responder con creatividad y originalidad en el marco de la ficción dramática y la creación coreográfica, utilizando lenguajes, códigos, técnicas y recursos de carácter escénico.",
+      "descriptores": [
+        "CCEC2",
+        "CCEC3",
+        "CCEC4"
+      ]
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Analizar diferentes tipos de representaciones escénicas, a través de sus elementos y técnicas, entendiendo y respetando su relación con el contexto.",
+      "descriptores": [
+        "CCEC1",
+        "CCEC2"
+      ]
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Desarrollar la capacidad crítica para valorar, con coherencia, la realidad artística y cultural, mediante procesos de búsqueda y análisis de información, prestando especial atención a las manifestaciones escénicas del entorno sociocultural andaluz, teniendo en cuenta sus presupuestos artísticos y el contexto social, económico y cultural en el que se producen, fomentando, con todo ello, las cualidades de un futuro buen espectador y espectadora.",
+      "descriptores": [
+        "CCEC2",
+        "CCEC3"
+      ]
+    },
+    {
+      "codigo": "7",
+      "descripcion": "Valorar y disfrutar de las artes escénicas como una manifestación artística que forma parte del patrimonio cultural común de los pueblos, participando activamente en su mantenimiento, desarrollo y proyección, reconociendo especialmente el valor de las artes escénicas andaluzas.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Exponer de forma crítica la opinión personal respecto a la función de las artes escénicas y su importancia como medio de expresión de sentimientos, emociones, ideas y sensaciones."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Identificar los factores históricos, culturales y sociales que rodean determinadas producciones escénicas, comprendiendo sus características y función a través del análisis de ejemplos, con una actitud abierta y respetuosa."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Reconocer, clasificar y situar en el tiempo, cultura y estilo las distintas representaciones tratadas previamente en el aula."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Interpretar en un espacio escénico una pieza vocal, instrumental, coreográfica o multidisciplinar donde se valoren las destrezas y habilidades adquiridas"
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Interpretar en grupo diferentes danzas a través del aprendizaje de coreografías memorizadas y ensayadas a lo largo del curso."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Diseñar una propuesta artística para un espacio escénico: pieza vocal, instrumental, coreográfica o teatral donde se valoren las destrezas y habilidades adquiridas con o sin medios tecnológicos y/o digitales."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Integrarse en dinámicas de grupo creativas que fomenten un comportamiento social, solidario, tolerante, responsable y asertivo que lo ayude a superar inhibiciones, miedos y obstáculos comunicativos."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Entender las artes escénicas y la danza como un espacio activo de escucha y diálogo, procurando modos de expresión más allá de la palabra."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Demostrar la capacidad para improvisar una secuencia de movimientos, libres o con un fin determinado."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Aplicar las habilidades técnicas necesarias en las actividades de interpretación de un repertorio escénico variado."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Utilizar con rigor los elementos y las cualidades del movimiento, la imagen, la palabra, el espacio, el tiempo o la expresión corporal en la improvisación teatral."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Realizar una reflexión sobre los distintos espectáculos contemplados dentro de las artes escénicas a través de la investigación y el análisis de sus elementos y técnicas."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Analizar y comentar los espectáculos de artes escénicas a los que ha asistido, relacionándolos con los contenidos estudiados."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "5",
+      "descripcion": "Explicar los diferentes estilos y formas de teatro: textual, gestual, musical y lírico."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Realizar una reflexión sobre los distintos espectáculos de danza, de teatro y de otras artes escénicas."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Analizar y comentar los espectáculos de danza, teatro y otras artes escénicas a los que se ha asistido, relacionándolos con los contenidos estudiados, teniendo en cuenta el contexto socioeconómico y cultural en el que fueron creados."
+    },
+    {
+      "codigo": "7.1",
+      "competencia": "7",
+      "descripcion": "Apreciar la importancia del patrimonio, español en general y andaluz en particular, de las artes escénicas para comprender el valor de conservar y transmitir su legado."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Bloque general",
+      "titulo": "Bloque general",
+      "items": [
+        "La función de las artes escénicas y su importancia a lo largo de la historia y en nuestra época.",
+        "Importancia del patrimonio español en las artes escénicas, con especial referencia al legado andaluz, su conservación y su transmisión.",
+        "Reflexión sobre los diversos tipos de espectáculos de teatro, de danza y de otras artes escénicas.",
+        "Capacidades y destrezas lingüísticas orales y escritas, y no verbales, gestuales y mímicas.",
+        "Características, evolución y papel en la sociedad de otras artes escénicas."
+      ],
+      "codigos_items": [
+        "AED.4.A.1",
+        "AED.4.A.2",
+        "AED.4.A.3",
+        "AED.4.A.4",
+        "AED.4.A.5"
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Teatro",
+      "titulo": "Teatro",
+      "items": [
+        "Las distintas formas de teatro: textual, gestual, musical y lírico.",
+        "Interpretación de obras de teatro del patrimonio español en general y del andaluz en particular.",
+        "Improvisación de secuencias en las que se integren texto y movimientos, sea con un fin determinado o no. La importancia de la improvisación teatral.",
+        "Capacidad de integración en dinámicas de grupo creativas que fomenten un comportamiento social, solidario, tolerante, responsable y asertivo que ayude a superar inhibiciones, miedos y obstáculos comunicativos."
+      ],
+      "codigos_items": [
+        "AED.4.B.1",
+        "AED.4.B.2",
+        "AED.4.B.3",
+        "AED.4.B.4"
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Danza",
+      "titulo": "Danza",
+      "items": [
+        "La danza como forma de expresión artística y como forma de comunicación de los pueblos, atendiendo especialmente a nuestra esencia como andaluces.",
+        "La danza como arte escénico: origen, desarrollo, evolución y transformación.",
+        "Elementos de la danza: tiempo, peso, espacio, fluidez.",
+        "Cualidades del movimiento: fuerza, velocidad, precisión.",
+        "Danza libre, danza codificada.",
+        "Los elementos estructurales del baile flamenco como raíz histórica y artística.",
+        "La improvisación como elemento del desarrollo de la creatividad."
+      ],
+      "codigos_items": [
+        "AED.4.C.1",
+        "AED.4.C.2",
+        "AED.4.C.3",
+        "AED.4.C.4",
+        "AED.4.C.5",
+        "AED.4.C.6",
+        "AED.4.C.7"
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Otras artes escénicas",
+      "titulo": "Otras artes escénicas",
+      "items": [
+        "La música escénica: origen, desarrollo, evolución y transformación.",
+        "Técnicas elementales para la interpretación: técnicas vocales, instrumentales y corporales, técnicas de estudio y de control de las emociones.",
+        "Técnicas de improvisación guiada y libre: vocales, instrumentales y corporales.",
+        "Elementos y recursos, analógicos o digitales, para la creación de piezas musicales y audiovisuales.",
+        "Normas de comportamiento y participación en actividades escénicas."
+      ],
+      "codigos_items": [
+        "AED.4.D.1",
+        "AED.4.D.2",
+        "AED.4.D.3",
+        "AED.4.D.4",
+        "AED.4.D.5"
+      ]
+    }
+  ],
+  "comunidad": "andalucia",
+  "idioma": "es"
+}

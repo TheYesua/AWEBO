@@ -1,0 +1,219 @@
+{
+  "materia_oficial": "Filosofía y Argumentación",
+  "materia": "Filosofía y Argumentación",
+  "etapa": "ESO",
+  "ciclo": "3º ESO",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "3º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Identificar problemas y formular preguntas acerca del fundamento, valor y sentido de la realidad y la existencia humana, a partir del análisis e interpretación de textos y otras formas de expresión filosófica y cultural, reconociendo la trascendencia de estas cuestiones, así como la necesidad de afrontarlos para desarrollar una vida reflexiva y consciente de sí.",
+      "descriptores": [
+        "CPSAA3",
+        "CC1",
+        "CC3"
+      ]
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Buscar, organizar, interpretar y transmitir información relativa a cuestiones filosóficas, aplicando procedimientos elementales de investigación y comunicación, usando con seguridad y rigurosidad diferentes fuentes de información, para generar y transmitir juicios y tesis personales, y desarrollar una actitud indagadora, con creciente autonomía, rigurosa y creativa en el ámbito de la reflexión filosófica.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Apreciar y producir discursos orales y escritos sobre objetos de estudio de la filosofía, estructurando adecuadamente los argumentos, para evitar los dogmatismos y las opiniones subjetivas sin fundamentación.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Participar de manera rigurosa, crítica, tolerante y empática en actividades grupales de diálogo y contraste de ideas, respetando las pautas éticas y formales que se requieren, con el fin de ser proactivo en el intercambio de ideas.",
+      "descriptores": [
+        "CC2",
+        "CC3"
+      ]
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Adoptar y promover una actitud abierta, tolerante, y comprometida con la resolución racional y pacífica de los conflictos en torno al análisis crítico de las principales tesis filosóficas relativas a los problemas fundamentales que aborda el pensamiento filosófico para sentar las bases de una ciudadanía democrática.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Abordar el planteamiento de cuestiones fundamentales y de actualidad con una perspectiva global, transversal, integrando información e ideas de distintos ámbitos disciplinares, de forma estructurada y poder generar puntos de vista creativos y fundamentados.",
+      "descriptores": []
+    },
+    {
+      "codigo": "7",
+      "descripcion": "Conocer y analizar dilemas morales mediante la exposición crítica y dialéctica de todas las posiciones pertinentes en la interpretación y la resolución de los mismos, para desarrollar el juicio propio y la autonomía moral.",
+      "descriptores": []
+    },
+    {
+      "codigo": "8",
+      "descripcion": "Desarrollar la creatividad personal y la sensibilidad hacia diferentes manifestaciones artísticas u otras con valor estético, a partir del uso de imágenes y medios audiovisuales para la argumentación racional, comprendiendo los componentes emocionales y comunicativos implicados, así como su dimensión personal y social.",
+      "descriptores": [
+        "CCEC4"
+      ]
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Identificar y exponer las preguntas esenciales del interés del ser humano por conocerse a sí mismo y al mundo que lo rodea."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Desarrollar una actitud reflexiva sobre las grandes preguntas filosóficas y la repercusión vital de las diferentes formas de alcanzar y afrontar sus respuestas."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Definir y utilizar conceptos como lógica, epistemología, metafísica, ética, estética, antropología filosófica, filosofía del lenguaje, cálculo, algoritmo, argumento, deducción, inducción, falacia, paradoja, disertación y dilema moral."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Aplicar con autonomía creciente procedimientos elementales en las tareas de búsqueda de información sobre los temas filosóficos y procedimientos de argumentación que se traten, identificando fuentes fiables y seguras."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Organizar eficientemente la información obtenida en las tareas de investigación o la proporcionada por el profesorado, demostrando eficacia en la capacidad de análisis y síntesis, produciendo tesis fiables."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Desarrollar una actitud indagadora, autónoma y activa en el ámbito de la reflexión filosófica mediante tareas y proyectos de investigación."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Conocer y aplicar normas lógicas, retóricas y argumentativas básicas en la producción, valoración y defensa de disertaciones filosóficas y dilemas morales."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Detectar y evitar errores argumentativos o desarrollos dogmáticos, falaces y sesgados para sostener hipótesis sobre cuestiones o problemas filosóficos."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Aceptar el respeto a la pluralidad y observar el compromiso con la verdad, adoptando actitudes de rechazo ante cualquier actitud discriminatoria o arbitraria."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Exponer con respeto las ideas propias aceptando la crítica y el debate como fuente de mejora personal y colectiva."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Promover activamente el intercambio de ideas respetando pautas éticas y formales para un debate constructivo."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Participar de forma respetuosa en tareas colectivas que favorezcan el debate y la puesta en común de hipótesis y planteamientos diversos."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Contrastar e intercambiar ideas en torno temas filosóficos de implicación social y política, entendiendo la necesidad de aceptar y pensar ideas opuestas como proceso dinámico y siempre abierto de elaboración de los propios conceptos."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Aprender a comunicarse con asertividad como actitud básica en el intercambio de ideas, estimulando el diálogo y la participación con los demás, desarrollando la empatía en la escucha activa."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Abordar las cuestiones fundamentales y actuales como temas complejos que requieren una aproximación sistemática desde múltiples perspectivas, desechando explicaciones unívocas, simplistas o falaces."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Demostrar la capacidad de aplicar distintos ámbitos del conocimiento al abordar cuestiones fundamentales y de actualidad, siendo capaces de elaborar respuestas como resultado de síntesis propias originales, y someterlas a discusión."
+    },
+    {
+      "codigo": "7.1",
+      "competencia": "7",
+      "descripcion": "Reconocer la necesidad de plantearse problemas éticos y políticos como medio para alcanzar la autonomía moral y una ciudadanía consciente y responsable."
+    },
+    {
+      "codigo": "7.2",
+      "competencia": "7",
+      "descripcion": "Identificar, analizar y resolver dilemas morales desde la argumentación racional y el intercambio de ideas."
+    },
+    {
+      "codigo": "8.1",
+      "competencia": "8",
+      "descripcion": "Conocer y valorar los distintos elementos del proceso creativo, desde la aproximación de diferentes manifestaciones artísticas y creativas."
+    },
+    {
+      "codigo": "8.2",
+      "competencia": "8",
+      "descripcion": "Crear imágenes y productos audiovisuales para la argumentación racional."
+    },
+    {
+      "codigo": "8.3",
+      "competencia": "8",
+      "descripcion": "Valorar las manifestaciones artísticas como expresión social y riqueza cultural de los pueblos, especialmente el andaluz."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Los problemas de la Filosofía",
+      "titulo": "Los problemas de la Filosofía",
+      "items": [
+        "Los saberes racionales. Las concepciones históricas de la filosofía: la filosofía como teoría o interpretación conceptual y la filosofía como arte de vivir. La Práctica filosófica contemporánea.",
+        "Las dimensiones de la filosofía: metafísica, epistemología, lógica, filosofía del lenguaje, antropología filosófica (filosofía de la mente, ética, estética y filosofía de las artes, filosofía social, filosofía política, filosofía del derecho, filosofía de la historia, filosofía de la religión), metafilosofía…",
+        "Selección y análisis de un problema filosófico: la naturaleza de las cosas, la identidad personal, la verdad, la justicia, la belleza, la libertad, la muerte y el sentido de la vida, la igualdad, los principios de la convivencia democrática, el bien y el mal, la felicidad, etc."
+      ],
+      "codigos_items": [
+        "FYA.3.A.1",
+        "FYA.3.A.2",
+        "FYA.3.A.3"
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. El ámbito de la lógica",
+      "titulo": "El ámbito de la lógica",
+      "items": [
+        "La lógica como ciencia. Los principios de la lógica clásica. Lógica teórica y lógica aplicada.",
+        "El concepto de validez o corrección formal. Los cálculos lógicos. Los algoritmos lógicos: tablas de verdad. Verdad y posverdad.",
+        "La filosofía como actividad argumentativa. La argumentación y sus tipos principales (por medio de ejemplos, por analogía, los argumentos de autoridad, los argumentos acerca de las causas, los argumentos inductivos y deductivos…). Composición, análisis y valoración de argumentos.",
+        "Falacias y paradojas."
+      ],
+      "codigos_items": [
+        "FYA.3.B.1",
+        "FYA.3.B.2",
+        "FYA.3.B.3",
+        "FYA.3.B.4"
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. La argumentación filosófica",
+      "titulo": "La argumentación filosófica",
+      "items": [
+        "La disertación filosófica. Epistemología y argumentación.",
+        "Los dilemas morales. Ética y argumentación.",
+        "La argumentación a través de imágenes y medios audiovisuales: dibujo, cómic, fotografía, vídeo… Estética y argumentación."
+      ],
+      "codigos_items": [
+        "FYA.3.C.1",
+        "FYA.3.C.2",
+        "FYA.3.C.3"
+      ]
+    }
+  ],
+  "comunidad": "andalucia",
+  "idioma": "es"
+}

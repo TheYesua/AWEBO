@@ -199,16 +199,113 @@ texto estaba bien y se dio por buena toda la lectura; el texto estaba bien y la
 lectura no. Lo que faltaba era compararlo con el boletín, que es lo que ahora
 hace `test_los_criterios_estan_literalmente_en_el_boletin`.
 
-Quedan **63** por el mismo motivo, cuando lo que se pierde es una palabra
-corta. Está en la hoja de ruta con lo que ya se descartó.
+## Y la causa era que el borde no estaba donde PyMuPDF decía (05/09, tarde)
 
-## El Anexo III no está cargado
+Lo de arriba describe bien el síntoma y **se equivoca en el remedio**. La
+reconstrucción por *huecos entre palabras* deja el problema a medias porque una
+sola fila la estropea: la cabecera fusionada «Criterios de evaluación / Saberes
+básicos» cruza la separación de columnas y la banda deja de estar libre.
 
-Las 19 materias que hay salen todas del **Anexo II**. El **Anexo III** —las
-optativas propias de Andalucía— trae **321 criterios más** y no se ha leído
-nunca. No fue una decisión: no está escrita en ninguna parte, y se descubrió
-contando los códigos de criterio de los dos anexos y viendo cuáles llegaban a
-la salida.
+La causa de verdad: **`find_tables()` agrupa las verticales con tolerancia** y
+devuelve el borde lejos de la línea real.
 
-Decidido el 05/09: **se carga**. Antes hay que mirar si su maquetación es la
-misma que la del Anexo II; el extractor está escrito contra esa.
+```
+Educación Física 1.º y 2.º, página 89 del primer PDF
+  find_tables() dice          64,2  204,4  298,1  366,4  473,0  528,4
+  el PDF DIBUJA la raya en    64,4  204,4  311,2  366,4  473,0  528,3
+                                           ^^^^^ trece puntos
+```
+
+Trece puntos son dos o tres caracteres por renglón. Ahora los bordes salen de
+`rayas_verticales()`, que lee `get_drawings()`: el hueco queda de plan B y los
+bordes de PyMuPDF de último recurso.
+
+**Quedan cinco**, de tres causas medidas y escritas en el test: dos con la
+cabecera de la página siguiente dentro de la frase, uno con una palabra en
+cursiva descolocada, y dos de Matemáticas 3.º con una palabra de menos.
+
+### Y dos fallos más del maquetado estrecho
+
+En Matemáticas caben tres cursos en la misma tabla, así que la columna mide
+sesenta puntos, y eso trae dos cosas que no pasan en ninguna otra materia:
+
+* El código se queda **solo en su renglón** —«2.1.»— porque no cabe con la
+  primera palabra al lado. Matemáticas 1.º salía con 17 criterios en vez de 23.
+* La palabra se parte **sin guion**: «conocimiento» cierra un renglón y «s
+  necesarios,» abre el siguiente.
+
+### Ojo con la comprobación, que también engañaba
+
+El contraste «¿están los primeros sesenta caracteres del criterio seguidos en el
+texto del boletín?» **sobrecontaba**: en una tabla de cinco columnas el orden de
+lectura de PyMuPDF entrelaza las celdas vecinas, así que un criterio intacto
+puede no aparecer seguido. De los 62 que señalaba, **48 estaban bien**.
+
+Es la tercera vez que un detector de este fichero engaña —las otras dos son los
+«1327 glifos rotos» y las «letras sueltas» de más arriba—. **Antes de creerse un
+recuento alto, mirar tres casos concretos.**
+
+## El Anexo III, cargado el 05/09
+
+Las 19 materias que había salían todas del **Anexo II**. El **Anexo III** —las
+optativas propias de Andalucía— no se había leído nunca, y no fue una decisión:
+no estaba escrita en ninguna parte. Se descubrió contando los códigos de
+criterio de los dos anexos y viendo cuáles llegaban a la salida.
+
+Ya está dentro: **13 materias en 19 bloques, 370 criterios y 504 saberes**, con
+lo que Andalucía queda en 32/60/1113/1461. Va en el segundo PDF del BOJA, de la
+**página 16 a la 118** —el Anexo IV empieza en la 119—, y **su maquetación es la
+misma que la del Anexo II**, así que se lee con los mismos tramos concatenados:
+
+```
+--pdf "...00289...pdf:49:"   --pdf "...00246...pdf:0:16"   --pdf "...00246...pdf:16:119"
+```
+
+La estimación previa de «321 criterios» era baja: salió de contar códigos
+únicos, y el anexo repite códigos entre cursos.
+
+Un detalle que conviene saber: el título del anexo, «Materias optativas propias
+de la Comunidad Andaluza», se cuela como si fuera una materia. El extractor lo
+descarta solo, porque viene sin criterios ni saberes, y hay un test que lo fija.
+
+## Y el fallo que llevaba aquí desde el principio: los saberes
+
+Todo lo de arriba es sobre criterios. Los saberes tenían el suyo y **no lo vio
+nadie hasta el 05/09 por la tarde**, porque el recuento salía bien y el reparto
+por bloques también.
+
+Una materia acaba a media página y la siguiente empieza debajo, así que la
+última página de su tramo trae las dos. El último saber es el que queda abierto
+y se comía **la introducción entera de la materia siguiente**:
+
+```
+59 de los 957 saberes pasaban de 400 caracteres
+el peor tenía 4238, con el texto de otra materia dentro
+```
+
+Lo destapó cargar el Anexo III, que puso una portada de anexo justo en la
+costura: `TYD.3.E.2` —el último saber de Tecnología y Digitalización 3.º, que es
+la última materia del Anexo II— llegó a la base con 4102 caracteres y la
+introducción de Ampliación de Cultura Clásica dentro.
+
+Tres correcciones, cada una con su medida:
+
+| | máximo |
+|---|---:|
+| como estaba | 4513 |
+| cortando por la altura del título siguiente | 1962 |
+| + clasificando la tabla con las celdas reconstruidas | 1094 |
+| + descartando la línea del título dentro de la tabla | 1094, y ninguno acaba con nombre de materia |
+
+**Ojo con reconstruir de más.** Leer los saberes con las celdas reconstruidas
+palabra a palabra *estropea* Geografía e Historia: sus columnas se leen enteras
+de arriba abajo y reconstruir una tabla cuyo borde ya estaba bien entrelaza los
+renglones de los dos cursos. Se reconstruye solo si el borde se movió más de
+tres puntos.
+
+Y un cuarto, aparte: `TYD.3.E.2` **repetía su última frase** porque el saber se
+parte entre dos páginas y la segunda lo vuelve a imprimir en una tabla propia.
+Ninguna de las cotas lo veía —el texto repetido es literal del boletín y mide
+veinte caracteres—: se vio leyendo el PDF de una SdA. Se quita la cola que ya
+está dicha justo antes, con un mínimo de treinta caracteres; medido sobre los
+1461 saberes, con treinta salta ese y ninguno más.

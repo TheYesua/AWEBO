@@ -1,0 +1,262 @@
+{
+  "materia_oficial": "Filosofía",
+  "materia": "Filosofía",
+  "etapa": "ESO",
+  "ciclo": "4º ESO",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "4º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Identificar problemas y formular preguntas acerca del fundamento, valor y sentido de la realidad y la existencia humana, a partir del análisis e interpretación de textos y otras formas de expresión filosófica y cultural, reconociendo la trascendencia de estas cuestiones, así como la necesidad de afrontarlos para desarrollar una vida reflexiva y consciente de sí mismo.",
+      "descriptores": [
+        "CPSAA3",
+        "CC1",
+        "CC3"
+      ]
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Buscar, organizar, interpretar y transmitir información relativa a cuestiones filosóficas, aplicando procedimientos elementales de investigación y comunicación, usando con seguridad y rigurosidad diferentes fuentes de información, para generar y transmitir juicios y tesis personales, y desarrollar una actitud indagadora, con creciente autonomía, rigurosa y creativa en el ámbito de la reflexión filosófica.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Apreciar y producir discursos orales y escritos sobre objetos de estudio de la filosofía, estructurando adecuadamente los argumentos, evitando los dogmatismos y las opiniones subjetivas sin fundamentación.",
+      "descriptores": [
+        "CC3"
+      ]
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Participar de manera rigurosa, crítica, tolerante y empática en actividades grupales de diálogo y contraste de ideas, respetando las pautas éticas y formales que se requieren, siendo proactivo en el intercambio de ideas.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Adoptar y promover una actitud abierta, tolerante, y comprometida con la resolución racional y pacífica de los conflictos como base de una ciudadanía democrática en torno al análisis crítico de las principales tesis filosóficas relativas a los problemas fundamentales que aborda el pensamiento filosófico.",
+      "descriptores": [
+        "CC3"
+      ]
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Conocer y comprender el origen histórico y el desarrollo conceptual del pensamiento filosófico, sus principales ideas y teorías, mediante su examen crítico y dialéctico, generando una concepción rigurosa de su influencia y aportación al patrimonio cultural común, y de manera específica al de Andalucía.",
+      "descriptores": [
+        "CCEC2"
+      ]
+    },
+    {
+      "codigo": "7",
+      "descripcion": "Abordar el planteamiento de cuestiones fundamentales y de actualidad con una perspectiva global, transversal, integrando información e ideas de distintos ámbitos disciplinares, de forma estructurada y generando puntos de vista creativos y fundamentados.",
+      "descriptores": []
+    },
+    {
+      "codigo": "8",
+      "descripcion": "Conocer y analizar problemas éticos y políticos mediante la exposición crítica y dialéctica de todas las posiciones filosóficamente pertinentes en la interpretación y resolución de los mismos, para desarrollar el juicio propio y la autonomía moral.",
+      "descriptores": [
+        "CC3"
+      ]
+    },
+    {
+      "codigo": "9",
+      "descripcion": "Desarrollar la sensibilidad a diferentes manifestaciones artísticas u otras con valor estético, desde la aproximación del pensamiento filosófico a la belleza y creatividad, comprendiendo los componentes emocionales y comunicativos implicados, así como su dimensión personal y social.",
+      "descriptores": [
+        "CCEC3",
+        "CCEC4"
+      ]
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Identificar y exponer las preguntas esenciales del interés del ser humano por conocerse a sí mismo y al mundo que le lo rodea."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Desarrollar una actitud reflexiva sobre las grandes cuestiones metafísicas y la incidencia vital que tienen las diferentes formas de alcanzar y afrontar sus respuestas."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Definir y utilizar conceptos como metafísica, realidad, pregunta radical, naturaleza, cosmos, caos, creación, finalismo, contingente, mecanicismo, determinismo."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Aplicar con autonomía creciente procedimientos elementales en las tareas de búsqueda de información sobre los temas filosóficos que se traten, identificando fuentes fiables y seguras."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Organizar eficientemente la información obtenida en las tareas de investigación o la proporcionada por el profesorado, demostrando eficacia en la capacidad de análisis y síntesis, produciendo tesis fiables."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Desarrollar una actitud indagadora, autónoma y activa en el ámbito de la reflexión filosófica mediante tareas y proyectos de investigación."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Aplicar normas lógicas, retóricas y argumentativas básicas en la producción de discursos sobre cuestiones y problemas filosóficos."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Detectar y evitar errores argumentativos o desarrollos dogmáticos, falaces y sesgados para sostener hipótesis sobre cuestiones o problemas filosóficos."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Aceptar el respeto a la pluralidad y observar el compromiso con la verdad, adoptando actitudes de rechazo ante cualquier actitud discriminatoria o arbitraria."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Exponer con respeto las ideas propias, aceptando la crítica y el debate como fuente de mejora personal y colectiva."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Promover activamente el intercambio de ideas, respetando pautas éticas y formales para un debate constructivo."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Participar de forma respetuosa en tareas colectivas que favorezcan el debate y la puesta en común de hipótesis y planteamientos diversos."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Contrastar e intercambiar ideas en torno a temas filosóficos de implicación social y política, entendiendo la necesidad de aceptar y pensar ideas opuestas como proceso dinámico y siempre abierto de elaboración de los propios conceptos."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Aprender a comunicarse con asertividad como actitud básica en el intercambio de ideas, estimulando el diálogo y la participación con los demás, desarrollando la empatía en la escucha activa."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Demostrar un conocimiento amplio de las ideas y teorías filosóficas de los principales pensadores y pensadoras de la historia, haciendo hincapié en la contribución de los filósofos y filósofas andaluces, mediante su análisis y aplicación al contexto histórico y actual."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Comprender y analizar desde una perspectiva histórica la evolución del pensamiento filosófico y su influencia en el proceso de construcción cultural de occidente en contraste con otras culturas."
+    },
+    {
+      "codigo": "6.3",
+      "competencia": "6",
+      "descripcion": "Demostrar la capacidad de entender la historia como un proceso sistémico y dinámico, afectado por diversidad de factores en interrelación, incluyendo el pensamiento filosófico."
+    },
+    {
+      "codigo": "7.1",
+      "competencia": "7",
+      "descripcion": "Abordar las cuestiones fundamentales y actuales como temas complejos que requieren una aproximación sistemática desde múltiples perspectivas, desechando explicaciones unívocas, simplistas o falaces."
+    },
+    {
+      "codigo": "7.2",
+      "competencia": "7",
+      "descripcion": "Demostrar la capacidad de aplicar distintos ámbitos del conocimiento al abordar cuestiones fundamentales y de actualidad, siendo capaces de elaborar respuestas como resultado de síntesis propias originales, y someterlas a discusión."
+    },
+    {
+      "codigo": "8.1",
+      "competencia": "8",
+      "descripcion": "Reconocer la necesidad de plantearse problemas éticos y políticos como medio para alcanzar una ciudadanía consciente y responsable."
+    },
+    {
+      "codigo": "8.2",
+      "competencia": "8",
+      "descripcion": "Analizar los principales problemas éticos y políticos desde el intercambio de ideas y una actitud activa en pro de los principios constitucionales, los derechos humanos y de la infancia."
+    },
+    {
+      "codigo": "9.1",
+      "competencia": "9",
+      "descripcion": "Conocer y valorar los distintos elementos del proceso creativo, desde la aproximación de diferentes manifestaciones artísticas y creativas."
+    },
+    {
+      "codigo": "9.2",
+      "competencia": "9",
+      "descripcion": "Generar un equilibrio entre la aproximación racional y emotiva a las manifestaciones artísticas, especialmente desde el ámbito de la estética desde una perspectiva filosófica."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. El saber filosófico",
+      "titulo": "El saber filosófico",
+      "items": [
+        "El origen de la filosofía occidental, los primeros interrogantes, la distinción de los saberes pre-racionales.",
+        "Características del saber filosófico. Otros modos de saber y su relación con la filosofía: el saber común, la poesía y la literatura, las creencias religiosas, las ciencias empíricas, el problema del saber metafísico.",
+        "Métodos y herramientas básicas del filósofo. Uso y análisis crítico de las fuentes, la comprensión e interpretación de textos filosóficos, identificación de los problemas filosóficos en otros ámbitos de interpretación. El pensamiento y el diálogo argumentativo, la investigación y disertación filosófica.",
+        "El debate y el aprendizaje cooperativo. El servicio a la comunidad.",
+        "El razonamiento y la argumentación.",
+        "La detección de falacias y sesgos cognitivos.",
+        "Principales pensadores y pensadoras de la filosofía occidental. Pensadores y pensadoras andaluces.",
+        "Discriminación de la mujer en la historia del pensamiento filosófico. La participación de la mujer en los distintos campos del saber y su aportación social."
+      ],
+      "codigos_items": [
+        "FIL.4.A.1",
+        "FIL.4.A.2",
+        "FIL.4.A.3",
+        "FIL.4.A.4",
+        "FIL.4.A.5",
+        "FIL.4.A.6",
+        "FIL.4.A.7",
+        "FIL.4.A.8"
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. El conocimiento y la realidad",
+      "titulo": "El conocimiento y la realidad",
+      "items": [
+        "Teorías del conocimiento: racionalismo, empirismo y otras teorías.",
+        "La metafísica y el conocimiento científico. La metafísica y el orden natural.",
+        "Metafísica y conocimiento religioso. El problema filosófico de la existencia de Dios. Teísmo, ateísmo y agnosticismo.",
+        "El determinismo científico.",
+        "El problema mente-cuerpo. El debate en torno a la inteligencia artificial.",
+        "Teorías psicológicas y filosóficas sobre el ser humano y la sociedad. Génesis y definición de la naturaleza humana: especificidad natural y condicionantes histórico-culturales.",
+        "La estructura psicosomática de la personalidad: sensibilidad, emotividad, deseos y volición, las facultades perceptivas y cognitivas. Conciencia y lenguaje. Identidad personal y etapas de desarrollo.",
+        "Dimensión social y política del conocimiento. El hombre como ser social y político.",
+        "El diálogo en torno a los principios políticos fundamentales: igualdad y libertad; individuo y Estado; trabajo, propiedad y distribución de la riqueza.",
+        "Los movimientos sociales y políticos. El feminismo y la perspectiva de género en la filosofía.",
+        "Grandes problemas éticos de nuestro tiempo: desigualdad y pobreza; guerras y otras formas de violencia, igualdad efectiva entre hombres y mujeres; discriminación, inclusión y respeto a las minorías; los problemas ecosociales y medioambientales."
+      ],
+      "codigos_items": [
+        "FIL.4.B.1",
+        "FIL.4.B.2",
+        "FIL.4.B.3",
+        "FIL.4.B.4",
+        "FIL.4.B.5",
+        "FIL.4.B.6",
+        "FIL.4.B.7",
+        "FIL.4.B.8",
+        "FIL.4.B.9",
+        "FIL.4.B.10",
+        "FIL.4.B.11"
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Acción y creación",
+      "titulo": "Acción y creación",
+      "items": [
+        "La acción humana.",
+        "La creatividad y la cultura."
+      ],
+      "codigos_items": [
+        "FIL.4.C.1",
+        "FIL.4.C.2"
+      ]
+    }
+  ],
+  "comunidad": "andalucia",
+  "idioma": "es"
+}

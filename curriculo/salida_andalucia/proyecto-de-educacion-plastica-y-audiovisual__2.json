@@ -1,0 +1,174 @@
+{
+  "materia_oficial": "Proyecto de Educación Plástica y Audiovisual",
+  "materia": "Proyecto de Educación Plástica y Audiovisual",
+  "etapa": "ESO",
+  "ciclo": "2º ESO",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Analizar manifestaciones artísticas, contextualizándolas, describiendo sus aspectos esenciales y valorando el proceso de creación y el resultado final, para educar la mirada, alimentar el imaginario, reforzar la confianza y ampliar las posibilidades de disfrute del patrimonio cultural y artístico.",
+      "descriptores": [
+        "CPSAA3",
+        "CC1",
+        "CCEC1",
+        "CCEC2"
+      ]
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Explorar las posibilidades expresivas de diferentes técnicas gráfico-plásticas, empleando distintos medios, soportes, herramientas y lenguajes, para incorporarlas al repertorio personal de recursos y desarrollar el criterio de selección de las más adecuadas a cada necesidad o intención.",
+      "descriptores": [
+        "CCEC3",
+        "CCEC4"
+      ]
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Explorar las posibilidades expresivas de diferentes medios, técnicas y formatos audiovisuales, decodificando sus lenguajes, identificando las herramientas y distinguiendo sus fines, para incorporarlos al repertorio personal de recursos y desarrollar el criterio de selección de los más adecuados a cada necesidad o intención.",
+      "descriptores": [
+        "CCEC3",
+        "CCEC4"
+      ]
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Crear producciones artísticas, realizadas con diferentes técnicas y herramientas a partir de un motivo o intención previos, adaptando el diseño y el proceso a las necesidades e indicaciones de realización y teniendo en cuenta las características del público destinatario, para compartirlas y valorar las oportunidades que puedan derivarse de esta actividad.",
+      "descriptores": [
+        "CPSAA3",
+        "CPSAA5",
+        "CE3",
+        "CCEC4"
+      ]
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Analizar manifestaciones artísticas de diferentes épocas y culturas, contextualizándolas, describiendo sus aspectos esenciales, valorando el proceso de creación del resultado final, y evidenciando una actitud de apertura, interés y respeto en su recepción."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Valorar críticamente los hábitos, los gustos y los referentes artísticos de diferentes épocas y culturas, reflexionando sobre su evolución y sobre su relación con los del presente."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Participar, con iniciativa, confianza y creatividad, en la exploración de diferentes técnicas gráfico-plásticas, empleando herramientas, medios, soportes y lenguajes."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Elaborar producciones gráfico-plásticas de forma creativa, determinando las intenciones expresivas y seleccionando con corrección las herramientas, medios, soportes y lenguajes más adecuados de entre los que conforman el repertorio personal de recursos."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Participar, con iniciativa, confianza y creatividad, en la exploración de diferentes medios, técnicas y formatos audiovisuales, decodificando sus lenguajes, identificando las herramientas y distinguiendo sus fines."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Realizar producciones audiovisuales, individuales o colaborativas, asumiendo diferentes funciones; incorporando el uso de las tecnologías digitales con una intención expresiva; buscando un resultado final ajustado al proyecto preparado previamente; y seleccionando y empleando, con corrección y de forma creativa, las herramientas y medios disponibles más adecuados."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Crear un producto artístico, diseñando las fases del proceso y seleccionando las técnicas y herramientas más adecuadas para conseguir un resultado adaptado a una intención y a un público determinados."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Exponer el resultado final de la creación de un producto artístico, individual o grupal, poniendo en común y valorando críticamente el desarrollo de su elaboración, las dificultades encontradas, los procesos realizados y los logros alcanzados."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Identificar oportunidades relacionadas con el ámbito artístico, comprendiendo su valor añadido y expresando la opinión personal de forma razonada y respetuosa."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Técnicas gráfico-plásticas",
+      "titulo": "Técnicas gráfico-plásticas",
+      "items": [
+        "Los efectos del gesto y del instrumento: herramientas, medios y soportes. Cualidades plásticas y efectos visuales.",
+        "Técnicas de dibujo, ilustración y pintura. Técnicas secas: lápices, carboncillo, pastel. Fijadores. Técnicas húmedas: tinta, rotulador, acuarela, acrílico, témpera. Selección del soporte adecuado en función de la técnica empleada.",
+        "Técnicas mixtas y alternativas de las vanguardias artísticas. Posibilidades expresivas y contexto histórico.",
+        "Técnicas de estampación. Mononotipia plana. Procedimientos directos, aditivos, sustractivos y mixtos. El grabado, contexto histórico: Durero, Mantegna y Rembrant (s.XVI) Piranesi y Goya (s.XVIII), Toulouse-Lautrec (s.XIX), Matisse, Picasso y Joan Miró (s.XX), entre otros.",
+        "Pintura mural. Desde las pinturas rupestres a los murales de Diego Ribera.",
+        "El Graffiti como elemento de expresión artística: Keith Haring, Jean Michel Basquiat y Banksy, entre otros.",
+        "Ejemplos de aplicación de técnicas gráfico-plásticas en diferentes manifestaciones artísticas y en el ámbito del diseño.",
+        "Técnicas básicas de modelado de volúmenes. Generar un volumen por adición o sustracción de material. El molde y el vaciado. Modelado a mano. El torno.",
+        "El arte del reciclaje. Productos ecológicos, sostenibles e innovadores en la práctica artística. Arte y naturaleza.",
+        "Seguridad, toxicidad e impacto de los diferentes materiales artísticos en técnicas gráfico plásticas. Prevención y gestión responsable de los residuos."
+      ],
+      "codigos_items": [
+        "PEPA.2.A.1",
+        "PEPA.2.A.2",
+        "PEPA.2.A.3",
+        "PEPA.2.A.4",
+        "PEPA.2.A.5",
+        "PEPA.2.A.6",
+        "PEPA.2.A.7",
+        "PEPA.2.A.8",
+        "PEPA.2.A.9",
+        "PEPA.2.A.10"
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Diseño y publicidad",
+      "titulo": "Diseño y publicidad",
+      "items": [
+        "El proceso de creación. Fases de realización y seguimiento. Identificación del objetivo. Selección y recopilación de información. Fuentes de información. Experimentación y aproximación mediante la elaboración de bocetos. Concreción del guion o proyecto. Presentación final y evaluación (autorreflexión, autoevaluación y evaluación colectiva).",
+        "La forma bidimensional y tridimensional. Geometría aplicada al diseño.",
+        "Aplicación de los sistemas de representación en el diseño (sistemas diédrico, axonométrico y cónico).",
+        "Elementos y principios básicos del lenguaje visual y de la percepción: color y composición.",
+        "Campos y ramas del diseño: gráfico, de producto, moda, interiores, escenografía. Iniciación al diseño inclusivo.",
+        "Publicidad. Recursos formales, lingüísticos y persuasivos. Funciones y tipología de la publicidad."
+      ],
+      "codigos_items": [
+        "PEPA.2.B.1",
+        "PEPA.2.B.2",
+        "PEPA.2.B.3",
+        "PEPA.2.B.4",
+        "PEPA.2.B.5",
+        "PEPA.2.B.6"
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Fotografía, lenguaje audiovisual y multimedia",
+      "titulo": "Fotografía, lenguaje audiovisual y multimedia",
+      "items": [
+        "Narrativa de la imagen fija. Encuadre y planificación, puntos de vista y angulación. La imagen secuenciada: el cómic y la fotonovela.",
+        "Fotografía analógica: cámara oscura. Fotografía sin cámara (fotogramas).",
+        "Técnicas fotográficas experimentales: cianotipia o antotipia.",
+        "Fotografía digital. El fotomontaje digital y tradicional.",
+        "La imagen secuenciada.",
+        "Seguridad, toxicidad e impacto medioambiental de los diferentes materiales artísticos en la fotografía. Prevención y gestión responsable de los residuos.",
+        "Narrativa audiovisual. Fotograma, secuencia, escena, toma, plano y montaje. El guion y el story-board. Técnicas básicas de animación: stop-motion.",
+        "Recursos digitales para la realización de proyectos de vídeo-arte."
+      ],
+      "codigos_items": [
+        "PEPA.2.C.1",
+        "PEPA.2.C.2",
+        "PEPA.2.C.3",
+        "PEPA.2.C.4",
+        "PEPA.2.C.5",
+        "PEPA.2.C.6",
+        "PEPA.2.C.7",
+        "PEPA.2.C.8"
+      ]
+    }
+  ],
+  "comunidad": "andalucia",
+  "idioma": "es"
+}

@@ -10,7 +10,8 @@ al catálogo oficial.
 
 **El catálogo depende de dónde enseñe el docente.** Además del Real Decreto
 217/2022 y su desarrollo para Ceuta y Melilla, están cargados los currículos de
-**Cataluña** (Decret 175/2022), **Andalucía** (Orden de 30 de mayo de 2023),
+**Cataluña** (Decret 175/2022), **Andalucía** (Orden de 30 de mayo de 2023,
+con sus optativas propias del Anexo III),
 **Galicia** (Decreto 156/2022) y el **País Vasco** (Decreto 77/2023): cada
 docente elige su provincia y trabaja contra
 la normativa que se le aplica, no contra la estatal. Está además el currículo
@@ -368,7 +369,7 @@ estructurado que nunca llegó a funcionar, `/health` informando del proveedor
 equivocado, dos incumplimientos WCAG 2.1 en el tema claro y los reintentos
 sobre errores `4xx` de la API de OpenAI.
 
-**1266 tests** cubren todo lo anterior, en la batería que corre en cada push.
+**1276 tests** cubren todo lo anterior, en la batería que corre en cada push.
 La cifra la comprueba un test: si alguien añade una tanda y no la actualiza
 aquí, falla.
 

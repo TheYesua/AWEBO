@@ -1,0 +1,158 @@
+{
+  "materia_oficial": "Cultura del Flamenco",
+  "materia": "Cultura del Flamenco",
+  "etapa": "ESO",
+  "ciclo": "3º ESO",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "3º ESO"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Reconocer las características más relevantes de diferentes propuestas del repertorio flamenco, identificando todos sus elementos, para valorar el patrimonio musical y dancístico andaluz como manera de favorecer procesos creativos y oportunidades de desarrollo personal, así como el disfrute de una expresión artística con raíces en nuestra comunidad.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Conocer y explicar la función e importancia del Flamenco a lo largo de sus distintas etapas históricas, entendiendo su paso por situaciones y contextos diversos, para valorarlo como fruto de nuestra propia identidad y como medio para el enriquecimiento cultural entre iguales, la superación de barreras y estereotipos sociales, culturales o sexistas.",
+      "descriptores": [
+        "CPSAA4",
+        "CC1",
+        "CC3",
+        "CCEC1",
+        "CCEC2"
+      ]
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Realizar proyectos musicales y de danza relacionados con el repertorio flamenco, empleando diversas estrategias y técnicas vocales, corporales o instrumentales e incorporando la improvisación, para vivenciar todas las posibilidades expresivas de este arte.",
+      "descriptores": [
+        "CC1",
+        "CE1",
+        "CCEC3"
+      ]
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Valorar y disfrutar del Flamenco como una manifestación artística que forma parte de la riqueza cultural andaluza, participando activamente en su mantenimiento, desarrollo y proyección, para reconocer especialmente su valor actual al ser designado por la UNESCO como Patrimonio Cultural Inmaterial de la Humanidad.",
+      "descriptores": [
+        "CCEC2"
+      ]
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Identificar las principales características musicales y coreográficas de los palos más representativos del Flamenco."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Desarrollar un pensamiento crítico, reflexivo y una actitud de respeto en la escucha o el visionado de las piezas del repertorio flamenco."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Identificar los factores históricos, sociales y culturales que han influido en el desarrollo de las etapas del flamenco, a través del análisis de distintos ejemplos, con una actitud abierta y respetuosa hacia la diversidad y favoreciendo la inclusión."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Valorar críticamente la evolución de cantes, bailes y toques, relacionándolas con las aportaciones de diferentes artistas, desde sus formas primitivas hasta las actuales y como fruto de su contexto histórico, social y cultural."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Crear propuestas flamencas de forma individual o grupal, en las que se empleen la voz, el cuerpo, instrumentos musicales o herramientas tecnológicas, potenciando la creatividad de forma abierta y colaborativa."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Elaborar piezas musicales o coreográficas de carácter flamenco estructuradas, a partir de actividades de improvisación, sirviendo de vehículo de expresión de emociones, sentimientos e ideas."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Participar como intérprete en actuaciones y manifestaciones flamencas, dentro y fuera del aula, mostrando iniciativa y liderazgo en los procesos creativos e interpretativos."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Conocer la importancia de la conservación y la transmisión del Flamenco, a partir de la recepción y análisis de diferentes propuestas, comprendiendo la importancia de la libertad de expresión, la tolerancia y la igualdad."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Elaborar proyectos que posibiliten conocer los diferentes mecanismos, profesiones e instituciones que intervienen en la conservación y difusión del Flamenco desde la perspectiva de género y la diversidad cultural empleando estrategias cooperativas."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Percepción auditiva y visual",
+      "titulo": "Percepción auditiva y visual",
+      "items": [
+        "Los pilares del Flamenco: cante, toque y baile.",
+        "Elementos del lenguaje musical Flamenco (métrica, armonía, melodía, forma y texto)",
+        "Principales palos flamencos: análisis, descripción y valoración de sus características básicas, atendiendo a sus aspectos sintácticos y sonoros y visuales. Diferentes clasificaciones.",
+        "Tipos de voces flamencas. La guitarra como instrumentos solista. El acompañamiento musical del Flamenco: palmas, guitarra, cajón…. Novedades tímbricas en el Flamenco actual.",
+        "Conciertos, actuaciones musicales y otras manifestaciones en vivo y grabadas en distintos tipos de soportes. CF.A.3.6. Estereotipos y roles de género trasmitidos a través del Flamenco."
+      ],
+      "codigos_items": [
+        "CF.3.A.1",
+        "CF.3.A.2",
+        "CF.3.A.3",
+        "CF.3.A.4",
+        "CF.3.A.5"
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Interpretación e improvisación",
+      "titulo": "Interpretación e improvisación",
+      "items": [
+        "Interpretaciones de obras vocales, instrumentales y/o coreográficas, individuales o en grupo, relacionadas con el Flamenco.",
+        "Estrategias y técnicas de improvisación sobre esquemas rítmico-melódicos y armónicos establecidos o libres, de carácter Flamenco.",
+        "Integración de recursos digitales para la creación de producciones musicales y audiovisuales.",
+        "Utilización de medios audiovisuales e informáticos para favorecer la interpretación y la escucha de las producciones propias para mejorar la autocrítica a través de grabaciones en diferentes soportes.",
+        "Elaboración de proyectos escénicos cooperativos de contenido Flamenco, valorando y respetando las aportaciones y experiencias de todos los integrantes del grupo."
+      ],
+      "codigos_items": [
+        "CF.3.B.1",
+        "CF.3.B.2",
+        "CF.3.B.3",
+        "CF.3.B.4",
+        "CF.3.B.5"
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Contextos e investigación",
+      "titulo": "Contextos e investigación",
+      "items": [
+        "El Flamenco como manifestación artística del pueblo andaluz. Origen y evolución en etapas históricas. Aportaciones del pueblo gitano y de minorías olvidadas y marginadas a lo largo de la historia (mudéjar, morisca, judía, etc.). Análisis sociológico.",
+        "Principales corrientes, escuelas, artistas y concursos flamencos.",
+        "Compositores, bailarines, poetas y otros artistas influidos por el Flamenco.",
+        "El Flamenco en la actualidad, nueva estética y estilos fusión. Sensibilización ante las nuevas propuestas, valorando sus elementos creativos e innovadores.",
+        "La propiedad intelectual y cultural en el Flamenco. Hábitos de consumo musical responsable.",
+        "El registro discográfico y en imágenes como base de la conservación de nuestro patrimonio: evolución del Flamenco a través del desarrollo de los medios de grabación sonora y audiovisual.",
+        "El Flamenco como Bien de Interés Cultural (BIC). Interés por conocer, respetar y difundir el patrimonio musical y dancístico andaluz. Reconocimiento de la labor de las instituciones.",
+        "Colaboraciones en proyectos que fomenten la difusión del Flamenco como elemento integrador de sectores desfavorecidos, así como potenciador de la cohesión social, la solidaridad, el respeto a la diversidad y el derecho de las minorías."
+      ],
+      "codigos_items": [
+        "CF.3.C.1",
+        "CF.3.C.2",
+        "CF.3.C.3",
+        "CF.3.C.4",
+        "CF.3.C.5",
+        "CF.3.C.6",
+        "CF.3.C.7",
+        "CF.3.C.8"
+      ]
+    }
+  ],
+  "comunidad": "andalucia",
+  "idioma": "es"
+}

@@ -120,14 +120,23 @@ campo y no lo traen, así que para ellos vale el valor por defecto, `ceuta`.)*
 | Ceuta y Melilla (Orden EFP/754) | 22 | 42 | 752 | 1461 |
 | Cataluña (Decret 175/2022 + XTEC) | 26 | 37 | 759 | 1330 |
 | Cataluña · Bachillerato (Decret 171/2022, modif. 103/2026) | 73 | 87 | 1133 | 1972 |
-| Andalucía (Orden 30/05/2023) | 19 | 41 | 737 | 957 |
+| Andalucía (Orden 30/05/2023, anexos II y III) | 32 | 60 | 1113 | 1461 |
 | Galicia (Decreto 156/2022 + Guía LOMLOE) | 30 | 60 | 1583 | 4643 |
 | País Vasco (Decreto 77/2023) | 32 | 43 | 733 | 1491 |
 | País Vasco · Bachillerato (Decreto 76/2023) | 65 | 75 | 1144 | 2349 |
 
 Un bloque es un par `(materia, cursos)`: Andalucía y Galicia publican curso a
 curso y por eso tienen más bloques que materias, mientras que Cataluña agrupa
-1.º–3.º. Los «saberes» de Galicia son sus contidos, que están más desglosados
+1.º–3.º.
+
+De las 32 materias andaluzas, **19 son del Anexo II** —las comunes y las
+optativas de todo el Estado— y **13 del Anexo III**, que son las optativas
+propias de Andalucía: Computación y Robótica, Cultura del Flamenco, Oratoria y
+Debate, Cultura Clásica, Filosofía y Argumentación y ocho más. El Anexo III
+estuvo sin cargar hasta el 05/09/2026 y no por una decisión: no estaba escrito
+en ninguna parte, y se descubrió contando los códigos de criterio de los dos
+anexos y viendo cuáles llegaban a la salida. Aporta 370 criterios y 504
+saberes. Los «saberes» de Galicia son sus contidos, que están más desglosados
 que los saberes básicos de las otras comunidades — de ahí que salgan 4.643.
 
 El País Vasco agrupa por **ciclos** —«1.º y 2.º», «3.º y 4.º»—, así que sus
@@ -217,9 +226,12 @@ python -m app.curriculo.extractor_xtec \
 # El Anexo II del BOJA está partido entre dos ficheros y una materia queda a
 # caballo, así que los tramos se concatenan antes de leer. El formato es
 # RUTA:DESDE:HASTA, con las páginas en base 0 y HASTA excluido.
+# Los tres tramos son: Anexo II (49→fin del primer PDF, y 0→16 del segundo) y
+# Anexo III (16→119 del segundo, donde empieza el Anexo IV).
 python -m app.curriculo.extractor_boja \
     --pdf "../curriculo/fuentes/andalucia/BOJA23-104-00289-9727-01_00284752.pdf:49:" \
     --pdf "../curriculo/fuentes/andalucia/BOJA23-104-00246-9727-02_00284752.pdf:0:16" \
+    --pdf "../curriculo/fuentes/andalucia/BOJA23-104-00246-9727-02_00284752.pdf:16:119" \
     --salida ../curriculo/salida_andalucia
 
 # Galicia: un PDF por materia, como la XTEC. Los cursos van dentro del PDF.

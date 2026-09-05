@@ -117,7 +117,17 @@
     {
       "codigo": "1.3",
       "competencia": "1",
-      "descripcion": "Obtener las soluciones matemáticas en problemas de contextos cercanos de la vida cotidiana, activando los conocimiento s necesarios, aceptando el error como parte del proceso. 2.1. Comprobar, de forma razonada la corrección de las soluciones de un problema, usando herramientas digitales como calculadoras, hojas de cálculo o programas específicos. 2.2. Comprobar, mediante la lectura comprensiva, la validez de las soluciones obtenidas en un problema comprobando su coherencia en el contexto planteado y evaluando el alcance y repercusión de estas soluciones desde diferentes perspectivas: igualdad de género, sostenibilidad, consumo responsable, equidad o no discriminació n."
+      "descripcion": "Obtener las soluciones matemáticas en problemas de contextos cercanos de la vida cotidiana, activando los conocimiento s necesarios, aceptando el error como parte del proceso."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Comprobar, de forma razonada la corrección de las soluciones de un problema, usando herramientas digitales como calculadoras, hojas de cálculo o programas específicos."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Comprobar, mediante la lectura comprensiva, la validez de las soluciones obtenidas en un problema comprobando su coherencia en el contexto planteado y evaluando el alcance y repercusión de estas soluciones desde diferentes perspectivas: igualdad de género, sostenibilidad, consumo responsable, equidad o no discriminació n."
     },
     {
       "codigo": "3.1",
@@ -167,12 +177,22 @@
     {
       "codigo": "6.3",
       "competencia": "6",
-      "descripcion": "Reconocer en diferentes contextos del entorno más cercano, la aportación de las matemáticas al progreso de la humanidad y su contribución a la superación de los retos que demanda la sociedad actual, identificando algunas aportaciones hechas desde nuestra comunidad. 7.1. Representar conceptos, procedimient os, información y resultados matemáticos usando herramientas digitales sencillas, y formas de representació n adecuadas para visualizar ideas y estructurar procesos matemáticos, interpretando y resolviendo problemas del entorno cercano y valorando su utilidad para compartir información."
+      "descripcion": "Reconocer en diferentes contextos del entorno más cercano, la aportación de las matemáticas al progreso de la humanidad y su contribución a la superación de los retos que demanda la sociedad actual, identificando algunas aportaciones hechas desde nuestra comunidad."
+    },
+    {
+      "codigo": "7.1",
+      "competencia": "7",
+      "descripcion": "Representar conceptos, procedimient os, información y resultados matemáticos usando herramientas digitales sencillas, y formas de representació n adecuadas para visualizar ideas y estructurar procesos matemáticos, interpretando y resolviendo problemas del entorno cercano y valorando su utilidad para compartir información."
     },
     {
       "codigo": "7.2",
       "competencia": "7",
-      "descripcion": "Esbozar representacio nes matemáticas utilizando herramientas de interpretación y modelización como expresiones simbólicas o gráficas que ayuden en la búsqueda de estrategias de resolución de una situación problematizad a. 8.1. Comunicar ideas, conceptos y procesos sencillos, utilizando el lenguaje matemático apropiado, empleando diferentes medios, incluidos los digitales, oralmente y por escrito, al describir, explicar y justificar sus conocimiento s matemáticos."
+      "descripcion": "Esbozar representacio nes matemáticas utilizando herramientas de interpretación y modelización como expresiones simbólicas o gráficas que ayuden en la búsqueda de estrategias de resolución de una situación problematizad a."
+    },
+    {
+      "codigo": "8.1",
+      "competencia": "8",
+      "descripcion": "Comunicar ideas, conceptos y procesos sencillos, utilizando el lenguaje matemático apropiado, empleando diferentes medios, incluidos los digitales, oralmente y por escrito, al describir, explicar y justificar sus conocimiento s matemáticos."
     },
     {
       "codigo": "8.2",
@@ -187,7 +207,17 @@
     {
       "codigo": "9.2",
       "competencia": "9",
-      "descripcion": "Mostrar una actitud positiva y perseverante, aceptando la crítica razonada, analizando sus limitaciones y buscando ayuda al hacer frente a las diferentes situaciones de aprendizaje de las matemáticas. 10.1. Colaborar activamente y construir relaciones saludables en el trabajo de las matemáticas en equipos heterogéneos, respetando diferentes opiniones, iniciándose en el desarrollo de destrezas: de comunicación efectiva, de planificación, de indagación, de motivación y confianza en sus propias posibilidades y de pensamiento crítico y creativo, tomando decisiones y realizando juicios informados. 10.2. Participar en el reparto de tareas que deban"
+      "descripcion": "Mostrar una actitud positiva y perseverante, aceptando la crítica razonada, analizando sus limitaciones y buscando ayuda al hacer frente a las diferentes situaciones de aprendizaje de las matemáticas."
+    },
+    {
+      "codigo": "10.1",
+      "competencia": "10",
+      "descripcion": "Colaborar activamente y construir relaciones saludables en el trabajo de las matemáticas en equipos heterogéneos, respetando diferentes opiniones, iniciándose en el desarrollo de destrezas: de comunicación efectiva, de planificación, de indagación, de motivación y confianza en sus propias posibilidades y de pensamiento crítico y creativo, tomando decisiones y realizando juicios informados."
+    },
+    {
+      "codigo": "10.2",
+      "competencia": "10",
+      "descripcion": "Participar en el reparto de tareas que deban"
     }
   ],
   "saberes_basicos": [
