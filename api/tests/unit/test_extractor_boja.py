@@ -316,3 +316,99 @@ class TestElAnexoEntero:
         for b in bloques:
             assert len(b.cursos_aplicables) == 1, (b.materia_efectiva, b.cursos_aplicables)
             assert b.cursos_aplicables[0].endswith("º ESO")
+
+    def test_los_criterios_estan_literalmente_en_el_boletin(self, bloques):
+        """EL FALLO 7, Y EL PEOR DE TODOS: criterios mutilados.
+
+        PyMuPDF detecta en muchas páginas **una columna de más**, con la línea
+        vertical cayendo a mitad del texto de los criterios. `tabla.extract()`
+        corta ahí, y el final de cada renglón —«rar», «or-», «del»— se va a la
+        celda de los códigos de saber y se pierde. El criterio llega al docente
+        así:
+
+            «Identificar y establec secuencias sencillas de ac vidad física,
+             orientada concepto integral de salu»
+
+        **122 de los 737 criterios andaluces estaban así**, y cuatro
+        materias-curso al completo. Ninguna comprobación lo veía: el criterio
+        existía, tenía su código, su competencia y su curso, y hasta la
+        longitud parecía razonable. Solo se ve comparándolo con el boletín.
+
+        SE COMPRUEBA CON UNA COTA Y NO CON CERO, y la cota es deuda escrita.
+        Quedan 63: el mismo fallo cuando lo que se pierde es una palabra corta
+        —«y», «la», «de»—. Detectarlos es fácil; arreglarlos activa la
+        reconstrucción en tablas donde `extract()` acierta y la reconstrucción
+        no, y esa causa **no está demostrada**. Ver la hoja de ruta.
+
+        Si el número sube, algo ha empeorado. Si baja, se baja la cota.
+        """
+        import re
+        import unicodedata
+
+        import pymupdf
+
+        from app.curriculo.extractor_boja import RX_PIE
+
+        def norm(s: str) -> str:
+            s = unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode()
+            return re.sub(r"[^a-z0-9]+", "", s.lower())
+
+        # El pie se retira antes de unir: un criterio partido entre dos páginas
+        # lo lleva justo en medio y parecería que no está.
+        crudo = " ".join(
+            l.strip()
+            for pdf, (desde, hasta) in zip((PDF1, PDF2), TRAMOS)
+            for pagina in list(pymupdf.open(pdf))[desde:hasta]
+            for l in pagina.get_text().splitlines()
+            if l.strip() and not RX_PIE.match(l.strip())
+        )
+        boletin = norm(crudo)
+
+        sueltos = [
+            (b.materia_efectiva, b.ciclo, cr.codigo)
+            for b in bloques for cr in b.criterios
+            if norm(cr.descripcion)[:60] not in boletin
+        ]
+
+        assert len(sueltos) <= 63, (
+            f"{len(sueltos)} criterios no aparecen literalmente en el BOJA "
+            f"(la cota es 63): {sueltos[:8]}"
+        )
+
+    @pytest.mark.parametrize("materia, curso", [
+        ("Matemáticas", "2º ESO"),
+        ("Lengua Castellana y Literatura", "1º ESO"),
+        ("Educación Física", "1º ESO"),
+        ("Educación Física", "3º ESO"),
+    ])
+    def test_las_cuatro_que_estaban_rotas_enteras(self, bloques, materia, curso):
+        """Las cuatro materias-curso donde **todos** los criterios estaban
+        mutilados. Se fijan una a una porque una cota global las dejaría
+        volver sin que nadie lo notara: 63 sobre 737 no llama la atención.
+        """
+        import re
+        import unicodedata
+
+        import pymupdf
+
+        from app.curriculo.extractor_boja import RX_PIE
+
+        def norm(s: str) -> str:
+            s = unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode()
+            return re.sub(r"[^a-z0-9]+", "", s.lower())
+
+        boletin = norm(" ".join(
+            l.strip()
+            for pdf, (desde, hasta) in zip((PDF1, PDF2), TRAMOS)
+            for pagina in list(pymupdf.open(pdf))[desde:hasta]
+            for l in pagina.get_text().splitlines()
+            if l.strip() and not RX_PIE.match(l.strip())
+        ))
+        suyos = [b for b in bloques
+                 if b.materia_efectiva == materia and b.cursos_aplicables == [curso]]
+        assert suyos, f"no está {materia} · {curso}"
+
+        rotos = [cr.codigo for b in suyos for cr in b.criterios
+                 if norm(cr.descripcion)[:60] not in boletin]
+
+        assert len(rotos) <= 10, f"{materia} {curso}: {len(rotos)} mutilados, {rotos[:6]}"
