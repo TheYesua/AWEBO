@@ -548,6 +548,8 @@ def extraer_criterios(
         for pno in range(desde, min(hasta, len(doc))):
             for tabla in doc[pno].find_tables().tables:
                 filas = tabla.extract()
+                if _tiene_columna_partida(filas):
+                    filas = filas_por_palabras(doc[pno], tabla)
                 if not _es_tabla_de_criterios(filas):
                     continue
                 if len(filas[0]) != anchura:
@@ -612,6 +614,122 @@ def _orden_criterio(par: tuple[str, Criterio]) -> tuple[int, int]:
     return int(a), int(b or 0)
 
 
+def _tiene_columna_partida(filas: list[list[str | None]]) -> bool:
+    """¿El borde de la tabla ha partido el texto de los criterios?
+
+    La señal es inequívoca: una celda **de saberes** —las de índice par a
+    partir del 2— trae renglones que no son códigos. Los saberes solo contienen
+    códigos; si aparece «rar», «or-» o «del», ese texto es el final de los
+    renglones de la celda de criterios de al lado.
+
+    LA COMPROBACIÓN ES DELIBERADAMENTE CONSERVADORA: basta con que la línea
+    contenga un código para darla por buena. La versión estricta —exigir que
+    no quede nada al retirarlo— detecta además las líneas donde lo que se cuela
+    es una palabra corta, «y EFI.1.A.1.2.», y arregla tres criterios más… pero
+    activa la reconstrucción en tablas donde `extract()` acertaba y la
+    reconstrucción no: Lengua Castellana 3.º pasaba de 0 a 19 criterios con
+    números de competencia intercalados en mitad de la frase. Se midieron las
+    dos y esta deja menos daño. Lo que queda está anotado en la hoja de ruta.
+
+    Se comprueba y no se reconstruye siempre porque `tabla.extract()` acierta
+    en la mayoría de las páginas, y cambiar las que ya salen bien por otra
+    lectura solo añade formas nuevas de equivocarse. Aquí se prefiere arreglar
+    lo que está medido roto.
+    """
+    if not filas or len(filas[0]) < 3:
+        return False
+    for fila in filas:
+        for j in range(2, len(fila), 2):
+            for linea in (fila[j] or "").split("\n"):
+                linea = linea.strip()
+                if not linea or _norm(linea) in _CABECERAS_TABLA:
+                    continue
+                if not RX_SABER_SUELTO.search(linea):
+                    return True
+    return False
+
+
+def filas_por_palabras(pagina, tabla) -> list[list[str | None]]:
+    """Las filas de la tabla, reconstruidas **palabra a palabra**.
+
+    POR QUÉ NO SE USA `tabla.extract()`, QUE ES PARA ESTO
+    -----------------------------------------------------
+    Porque **parte las palabras por el borde de la celda**. Y en estas tablas
+    el borde no está donde uno cree: PyMuPDF detecta en muchas páginas una
+    columna de más, con la línea vertical cayendo a mitad del texto de los
+    criterios. El resultado no es que falte una celda: es que cada renglón
+    pierde sus últimas letras y el sobrante aparece pegado a los códigos de
+    saber de la celda de al lado.
+
+        col1: '1.2. Comenzar a incorpo\\nprocesos de activación c\\nporal, …'
+        col2: 'rar EFI.1.A.1.2.\\nor- EFI.1.A.1.3.\\ndel EFI.1.A.1.4.\\n…'
+
+    Cargado así, el criterio le llega al docente como «Comenzar a incorpo
+    procesos de activación c poral, dosificación esfuerzo». **122 de los 737
+    criterios andaluces estaban mutilados**, y cuatro materias-curso al
+    completo: Matemáticas 2.º, Lengua Castellana 1.º y Educación Física 1.º y
+    3.º. Ninguna daba error: el criterio existía, tenía su código y su curso.
+
+    LA REGLA ES EL PRINCIPIO DE LA PALABRA, NO SU CENTRO NI SU CAJA
+    ---------------------------------------------------------------
+    Una palabra pertenece a la celda **donde empieza**, y se toma entera aunque
+    sobresalga. Con el centro no bastaba —«cor-» empieza dentro y su centro cae
+    fuera— y recortando por la caja se vuelve al problema de origen.
+
+    Efecto secundario que conviene saber: los códigos de saber escritos a
+    caballo del borde —«GE» en una celda y «H.3.A.2.» en la otra— dejan de
+    partirse, porque la palabra va entera a donde empieza.
+    """
+    palabras = pagina.get_text("words")
+    originales = tabla.extract()
+    filas: list[list[str | None]] = []
+    for n, fila in enumerate(tabla.rows):
+        celdas: list[str | None] = []
+        for j, caja in enumerate(fila.cells):
+            if caja is None:
+                celdas.append(None)
+                continue
+            x0, y0, x1, y1 = caja
+            renglones: dict[int, list[str]] = {}
+            for palabra in palabras:
+                px0, py0, _px1, py1 = palabra[:4]
+                # El centro vertical y no la caja: una palabra con tilde o
+                # con letra descendente se sale del alto de su renglón.
+                if not (y0 - 1 <= (py0 + py1) / 2 <= y1 + 1):
+                    continue
+                if not (x0 - 1 <= px0 < x1):
+                    continue
+                renglones.setdefault(round(py0), []).append(palabra[4])
+            nuevo = "\n".join(" ".join(v) for _, v in sorted(renglones.items()))
+            viejo = originales[n][j] if n < len(originales) and j < len(originales[n]) else None
+            celdas.append(nuevo if _solo_completa(viejo, nuevo) else viejo)
+        filas.append(celdas)
+    return filas
+
+
+def _solo_completa(viejo: str | None, nuevo: str) -> bool:
+    """¿La celda reconstruida es la de `extract()` **con sus finales de línea**?
+
+    LA GUARDA QUE HACE SEGURO EL CAMBIO. Reconstruir por palabras arregla el
+    borde que parte a mitad de palabra, pero abre la puerta a lo contrario:
+    traerse texto de la columna de al lado. Cuando eso pasó —números de
+    competencia intercalados en mitad de un criterio de Lengua Castellana— el
+    resultado era ilegible y, peor, ninguna comprobación de recuento lo veía.
+
+    Así que la reconstrucción **solo se acepta si completa**: mismo número de
+    renglones, y cada uno empezando por lo que ya había. Cualquier otra cosa
+    —un renglón de más, uno que cambia— significa que se ha mezclado otra
+    columna, y entonces vale más lo de `extract()` aunque esté cortado.
+    """
+    if viejo is None:
+        return False
+    antes = [l.strip() for l in viejo.split("\n")]
+    despues = [l.strip() for l in nuevo.split("\n")]
+    if len(antes) != len(despues):
+        return False
+    return all(b.startswith(a) for a, b in zip(antes, despues))
+
+
 def _es_tabla_de_criterios(filas: list[list[str | None]]) -> bool:
     """Por la **forma** y el contenido, no por la cabecera.
 
@@ -659,7 +777,16 @@ def _leer_fila_de_criterios(
     for i in range(1, len(fila), 2):
         celda = fila[i] or ""
         codigos_celda = fila[i + 1] if i + 1 < len(fila) else ""
-        cursos_citados = _cursos_de(codigos_celda or "")
+        # EL CURSO SE BUSCA EN LAS DOS CELDAS, y no solo en la de saberes.
+        #
+        # Desde que las celdas se reconstruyen palabra a palabra, un código
+        # escrito a caballo del borde ya no se parte: se va **entero** a la
+        # celda donde empieza, que a veces es la de criterios. Cuando eso pasa
+        # en toda una tabla, la celda de saberes queda vacía y la materia se
+        # cargaba con **cero criterios** — Geografía e Historia 3.º, Lengua
+        # Castellana 3.º y Lengua Extranjera 1.º y 3.º—: los criterios se leían
+        # bien y luego no había curso al que asignarlos.
+        cursos_citados = _cursos_de(codigos_celda or "") or _cursos_de(celda)
         preludio, criterios = _criterios_de_celda(celda, prefijo)
 
         # Lo que hay antes del primer código de la celda es la cola del
@@ -732,6 +859,12 @@ def _criterios_de_celda(
     preludio: list[str] = []
     for linea in celda.split("\n"):
         linea = linea.strip()
+        # El código **entero** que se coló en esta celda, no solo su resto. Con
+        # las celdas reconstruidas palabra a palabra el código ya no se parte,
+        # así que aparece completo al final del renglón: «Elaborar contenidos
+        # GEH.3.A.2. propios». El curso ya se ha leído de aquí en
+        # `_leer_fila_de_criterios`; lo que queda es que no ensucie el texto.
+        linea = RX_SABER_SUELTO.sub("", linea).strip()
         for resto in trozos:
             if linea.endswith(" " + resto):
                 linea = linea[: -len(resto)].rstrip()
