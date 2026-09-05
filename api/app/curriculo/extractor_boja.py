@@ -89,6 +89,14 @@ RX_BLOQUE = re.compile(r"^([A-Z])\.\s+(.+?)\.?\s*$")
 #: código es opcional por la misma razón que arriba.
 RX_CRITERIO = re.compile(r"^(\d{1,2})\.(\d{1,2})\.?\s+(.*)$")
 
+#: El código del criterio **solo en su renglón**, con el enunciado empezando en
+#: el siguiente. Pasa donde la columna es estrecha —Matemáticas 1.º, que tiene
+#: tres cursos en la misma tabla y unos sesenta puntos por columna—: «2.1.» no
+#: cabe con la primera palabra al lado. Sin esta regla el criterio no empieza y
+#: su texto se pega al anterior: 1.3 salía con 2.1 y 2.2 dentro, y Matemáticas
+#: 1.º con diecisiete criterios en vez de veintidós.
+RX_CRITERIO_SOLO = re.compile(r"^(\d{1,2})\.(\d{1,2})\.$")
+
 #: Competencia específica en el texto corrido: «3. Planificar y desarrollar…».
 #: Se distingue de un criterio porque **no lleva subnúmero**.
 RX_COMPETENCIA = re.compile(r"^(\d{1,2})\.\s+([A-ZÁÉÍÓÚÑ].*)$")
@@ -105,6 +113,13 @@ RX_COMPETENCIA_SOLA = re.compile(r"^(\d{1,2})\.$")
 RX_DESCRIPTORES = re.compile(
     r"^((?:CCL|CP|STEM|CD|CPSAA|CC|CE|CCEC)\d[, ]*)+\.?\s*$"
 )
+
+#: Encabezado de anexo: «ANEXO III». Cierra lo que estuviera abierto. Los
+#: tramos del Anexo II y del III se concatenan, y entre el último saber de
+#: Tecnología y Digitalización 3.º y la primera materia del Anexo III están
+#: estas dos líneas —el rótulo y «Materias optativas propias de la Comunidad
+#: Andaluza»—, que se pegaban al saber porque no son título de materia.
+RX_ANEXO = re.compile(r"^ANEXO\s+[IVXLC]+\b")
 
 RX_MARCA_COMPETENCIAS = re.compile(r"^Competencias espec[íi]ficas\.?\s*$")
 RX_MARCA_SABERES = re.compile(r"^Saberes b[áa]sicos\b.*$")
@@ -380,8 +395,17 @@ def _frontera(lineas: list[Linea]) -> float:
     return corte if hueco >= 100 else float("inf")
 
 
-def texto_de_saberes(pdf: Path, desde: int, hasta: int) -> list[str]:
+def texto_de_saberes(pdf: Path, desde: int, hasta: int,
+                     corte: tuple[int, float] | None = None) -> list[str]:
     """Las líneas de los saberes, **desenredadas por celdas**.
+
+    `corte` es (página, y) del título de la materia siguiente, y **hace falta**.
+    Una materia acaba a media página y la siguiente empieza debajo, así que la
+    última página del tramo trae las dos. Sin cortar, la introducción de la
+    materia siguiente se pega al último saber de esta, que es el que sigue
+    abierto: 59 de los 957 saberes andaluces medían más de 400 caracteres y el
+    peor 4238, con el texto de otra materia dentro. Va al documento del docente
+    tal cual, y ni el recuento ni el reparto por bloques lo notan.
 
     POR QUÉ NO BASTA CON LA POSICIÓN HORIZONTAL, que es lo que se hizo primero
     y lo que funciona en el extractor catalán: aquí los saberes van dentro de
@@ -401,21 +425,45 @@ def texto_de_saberes(pdf: Path, desde: int, hasta: int) -> list[str]:
     try:
         for pno in range(desde, min(hasta, len(doc))):
             pagina = doc[pno]
-            tablas = [t for t in pagina.find_tables().tables]
+            # En la página donde empieza la materia siguiente, solo lo que va
+            # **estrictamente por encima** de su título. Sin holgura, y a
+            # propósito: el título es justo la línea que no debe entrar. Con
+            # cinco puntos de margen, el último saber de Latín 4.º acababa en
+            # «…y la autorreparación. Lengua Castellana y Literatura».
+            tope = corte[1] if corte and pno == corte[0] else None
+            tablas = [t for t in pagina.find_tables().tables
+                      if tope is None or t.bbox[1] < tope]
             cajas = [t.bbox for t in tablas]
             sueltas = [
                 (linea["bbox"][1], "".join(s["text"] for s in linea["spans"]).strip())
                 for bloque in pagina.get_text("dict")["blocks"]
                 for linea in bloque.get("lines", [])
                 if not _dentro(linea["bbox"], cajas)
+                and (tope is None or linea["bbox"][1] < tope)
             ]
             for _, t in sorted(sueltas):
                 if t and not RX_PIE.match(t):
                     salida.append(t)
             for tabla in tablas:
-                filas = tabla.extract()
-                if _es_tabla_de_criterios(filas):
+                # `filas_por_palabras` y no `tabla.extract()`, por lo mismo que
+                # en los criterios: el borde de PyMuPDF cae dentro del párrafo.
+                # Aquí además **estropea la clasificación**: con las celdas mal
+                # partidas, la tabla de criterios de Oratoria y Debate 3.º no se
+                # reconocía como tal y se volcaba entera en los saberes, con lo
+                # que su último saber medía 1962 caracteres y traía las
+                # competencias de la materia dentro.
+                reconstruida = filas_por_palabras(pagina, tabla)
+                if _es_tabla_de_criterios(reconstruida):
                     continue
+                # SE RECONSTRUYE SOLO SI EL BORDE ESTABA MAL. Clasificar sí se
+                # hace siempre con la reconstruida —con las celdas partidas, la
+                # tabla de criterios de Oratoria y Debate 3.º no se reconocía y
+                # se volcaba entera en los saberes—, pero para **leer** manda
+                # `extract()` cuando el borde ya estaba en su sitio: aquí las
+                # columnas se leen enteras de arriba abajo, y reconstruir una
+                # tabla que no lo necesitaba entrelazaba los renglones de los
+                # dos cursos en Geografía e Historia.
+                filas = reconstruida if _bordes_movidos(pagina, tabla) else tabla.extract()
                 # Columna por columna: dentro de una columna las filas van en
                 # orden, y así un saber partido en dos filas se vuelve a juntar.
                 for col in range(max((len(f) for f in filas), default=0)):
@@ -446,6 +494,9 @@ def extraer_saberes(textos: list[str]) -> dict[int, list[BloqueSaberes]]:
 
     for t in textos:
         if _norm(t) in _CABECERAS_TABLA or _es_cabecera_curso(t):
+            continue
+        if RX_ANEXO.match(t):
+            actual = None
             continue
         m = RX_SABER.match(t)
         if m:
@@ -547,9 +598,7 @@ def extraer_criterios(
     try:
         for pno in range(desde, min(hasta, len(doc))):
             for tabla in doc[pno].find_tables().tables:
-                filas = tabla.extract()
-                if _tiene_columna_partida(filas):
-                    filas = filas_por_palabras(doc[pno], tabla)
+                filas = filas_por_palabras(doc[pno], tabla)
                 if not _es_tabla_de_criterios(filas):
                     continue
                 if len(filas[0]) != anchura:
@@ -649,85 +698,271 @@ def _tiene_columna_partida(filas: list[list[str | None]]) -> bool:
     return False
 
 
-def filas_por_palabras(pagina, tabla) -> list[list[str | None]]:
-    """Las filas de la tabla, reconstruidas **palabra a palabra**.
+def rayas_verticales(pagina, tabla, minimo_alto: float = 3.0) -> list[float]:
+    """Las líneas verticales que el PDF **dibuja** dentro de la tabla.
 
-    POR QUÉ NO SE USA `tabla.extract()`, QUE ES PARA ESTO
-    -----------------------------------------------------
-    Porque **parte las palabras por el borde de la celda**. Y en estas tablas
-    el borde no está donde uno cree: PyMuPDF detecta en muchas páginas una
-    columna de más, con la línea vertical cayendo a mitad del texto de los
-    criterios. El resultado no es que falte una celda: es que cada renglón
-    pierde sus últimas letras y el sobrante aparece pegado a los códigos de
-    saber de la celda de al lado.
+    Es la única fuente exacta de dónde está cada columna: son las reglas de la
+    tabla tal y como las trazó el maquetador. `find_tables()` las agrupa con
+    tolerancia y a veces devuelve el borde desplazado más de diez puntos
+    —Educación Física 1.º: PyMuPDF dice 298,1 y la raya está en 311,2—, que es
+    lo que partía los criterios por la mitad.
 
-        col1: '1.2. Comenzar a incorpo\\nprocesos de activación c\\nporal, …'
-        col2: 'rar EFI.1.A.1.2.\\nor- EFI.1.A.1.3.\\ndel EFI.1.A.1.4.\\n…'
-
-    Cargado así, el criterio le llega al docente como «Comenzar a incorpo
-    procesos de activación c poral, dosificación esfuerzo». **122 de los 737
-    criterios andaluces estaban mutilados**, y cuatro materias-curso al
-    completo: Matemáticas 2.º, Lengua Castellana 1.º y Educación Física 1.º y
-    3.º. Ninguna daba error: el criterio existía, tenía su código y su curso.
-
-    LA REGLA ES EL PRINCIPIO DE LA PALABRA, NO SU CENTRO NI SU CAJA
-    ---------------------------------------------------------------
-    Una palabra pertenece a la celda **donde empieza**, y se toma entera aunque
-    sobresalga. Con el centro no bastaba —«cor-» empieza dentro y su centro cae
-    fuera— y recortando por la caja se vuelve al problema de origen.
-
-    Efecto secundario que conviene saber: los códigos de saber escritos a
-    caballo del borde —«GE» en una celda y «H.3.A.2.» en la otra— dejan de
-    partirse, porque la palabra va entera a donde empieza.
+    Se recogen tanto los trazos (`l`) como los rectángulos finos (`re`), porque
+    Word exporta las reglas de las dos maneras según el grosor. Se agrupan las
+    que caen a menos de 1,5 puntos: una misma regla puede venir en varios
+    trozos, uno por fila.
     """
+    x0t, y0t, x1t, y1t = tabla.bbox
+    xs: list[float] = []
+    for dibujo in pagina.get_drawings():
+        for elemento in dibujo["items"]:
+            if elemento[0] == "l":
+                a, b = elemento[1], elemento[2]
+                x, ya, yb = (a.x + b.x) / 2, min(a.y, b.y), max(a.y, b.y)
+                if abs(a.x - b.x) > 0.6:
+                    continue
+            elif elemento[0] == "re":
+                r = elemento[1]
+                x, ya, yb = (r.x0 + r.x1) / 2, r.y0, r.y1
+                if r.width > 1.2:
+                    continue
+            else:
+                continue
+            if yb - ya < minimo_alto:
+                continue
+            # Dentro de la tabla, y solapando su alto: el pie de página trae
+            # rayas finas del logotipo justo debajo y son treinta.
+            if not (x0t - 2 <= x <= x1t + 2):
+                continue
+            if min(yb, y1t) - max(ya, y0t) < minimo_alto:
+                continue
+            xs.append(x)
+    agrupadas: list[float] = []
+    for x in sorted(xs):
+        if agrupadas and x - agrupadas[-1] <= 1.5:
+            continue
+        agrupadas.append(x)
+    return agrupadas
+
+
+def _huecos_verticales(pagina, tabla, minimo: int = 4,
+                       palabras=None) -> list[float]:
+    """Las bandas verticales que **ninguna palabra de la tabla ocupa**.
+
+    Es el plan B de `bordes_de_columna`, para las tablas sin reglas dibujadas:
+    por una banda libre no pasa texto en ninguna fila, así que cortar por ella
+    no puede partir nada.
+    """
+    x0t, y0t, x1t, y1t = tabla.bbox
+    dentro = [
+        w for w in (pagina.get_text("words") if palabras is None else palabras)
+        if w[0] >= x0t - 2 and w[2] <= x1t + 2
+        and y0t - 2 <= (w[1] + w[3]) / 2 <= y1t + 2
+    ]
+    if not dentro:
+        return []
+    ini, fin = int(x0t), int(x1t) + 1
+    ocupado = bytearray(fin - ini + 2)
+    for w in dentro:
+        for x in range(max(ini, int(w[0])), min(fin, int(w[2]) + 1)):
+            ocupado[x - ini] = 1
+    huecos, x = [], 0
+    while x < len(ocupado):
+        if ocupado[x]:
+            x += 1
+            continue
+        j = x
+        while j < len(ocupado) and not ocupado[j]:
+            j += 1
+        if j - x >= minimo:
+            huecos.append((x + j) / 2 + ini)
+        x = j
+    return huecos
+
+
+def bordes_de_columna(pagina, tabla, tolerancia: float = 20.0,
+                      palabras=None) -> list[float]:
+    """Dónde están de verdad las columnas: primero la raya, luego el hueco.
+
+    POR QUÉ NO VALEN LAS DE PyMuPDF TAL CUAL
+    -----------------------------------------
+    Porque en el BOJA caen **dentro del texto**, y no siempre por el mismo
+    lado. Los dos casos, medidos:
+
+        Educación Física 1.º  borde en 298, la raya está en 311,2
+                              → «1.2. Comenzar a incorpo | rar EFI.1.A.1.2.»
+        Oratoria y Debate 3.º borde en 298, la raya está en 288
+                              → «…de los diferentes tipos de discu | .1. Leer»
+
+    En el primero el borde se come el final de cada renglón; en el segundo, el
+    principio, y con él el primer dígito del código: el criterio «1.1» queda
+    como «.1» y **no casa como criterio**. Oratoria y Debate 3.º salía con cero.
+
+    Por eso no sirve ninguna regla de reparto de palabras. Se probaron tres
+    —por el inicio, por el centro, por la caja— y cada una arregla un sentido y
+    estropea el otro.
+
+    LAS TRES FUENTES, EN ORDEN
+    --------------------------
+    1. **La raya dibujada** (`rayas_verticales`). Es la buena: no se deduce de
+       nada, está en el PDF. Se usa si sale el mismo número de bordes que
+       columnas ve PyMuPDF, que en eso sí acierta.
+    2. **El hueco entre palabras** (`_huecos_verticales`), para las tablas que
+       no dibujan reglas.
+    3. Los bordes de PyMuPDF, si no hay ni una cosa ni la otra.
+
+    El número de columnas se conserva siempre. Un cambio de anchura
+    desplazaría los pares (criterios, saberes) y eso rompería la lectura
+    entera, así que cualquier candidato que no cuadre en número se descarta.
+    """
+    lineas = sorted({
+        round(v, 1)
+        for fila in tabla.rows for celda in fila.cells if celda
+        for v in (celda[0], celda[2])
+    })
+    rayas = rayas_verticales(pagina, tabla)
+    # Mismo número **y cada una cerca de la suya**. Con solo lo primero, la
+    # tabla de saberes de Geografía e Historia 2.º casaba en número con las
+    # rayas de otra cosa y las dos columnas de cursos se fundían en una: los
+    # saberes de 1.º y de 2.º salían entrelazados renglón a renglón.
+    if len(rayas) == len(lineas) and all(
+            abs(r - l) <= tolerancia for r, l in zip(rayas, lineas)):
+        return rayas
+    huecos = _huecos_verticales(pagina, tabla, palabras=palabras)
+    if not huecos:
+        return lineas
+    ajustados = []
+    for borde in lineas:
+        cerca = [h for h in huecos if abs(h - borde) <= tolerancia]
+        ajustados.append(min(cerca, key=lambda h: abs(h - borde)) if cerca else borde)
+    ajustados = sorted(set(ajustados))
+    return ajustados if len(ajustados) == len(lineas) else lineas
+
+
+def _limpio(palabra: str) -> str:
+    """La palabra sin puntuación ni tildes y en minúscula, para comparar."""
+    sin_tildes = unicodedata.normalize("NFKD", palabra)
+    sin_tildes = sin_tildes.encode("ascii", "ignore").decode()
+    return re.sub(r"[^a-z0-9]", "", sin_tildes.lower())
+
+
+def _pegar_partidas(celda: str, vocabulario: set[str]) -> str:
+    """Recompone la palabra que el renglón partió **sin poner guion**.
+
+    En Matemáticas 1.º las tres columnas de criterios miden sesenta puntos y el
+    maquetador parte dentro de la palabra sin marcar nada:
+
+        …activando los           …de una situación
+        conocimiento             problematizad
+        s necesarios,            a. 8.1. Comunicar…
+
+    Uniendo los renglones con un espacio sale «conocimiento s necesarios», que
+    es lo que llegaba al docente. No vale la regla del guion final, porque aquí
+    no hay guion, ni la de «trozo corto», porque «y», «la» o «de» abren renglón
+    legítimamente muchas veces.
+
+    LA PRUEBA LA DA EL PROPIO PDF. Se pegan los dos trozos si la palabra
+    resultante existe en la página y **al menos uno de los dos trozos no
+    existe** por su cuenta: «conocimiento»+«s» da «conocimientos», que está tres
+    veces en esa misma página, y «s» no es palabra. En cambio «el»+«los» no se
+    pegan aunque «ellos» exista, porque los dos trozos son palabras.
+    """
+    renglones = celda.split("\n")
+    if len(renglones) < 2:
+        return celda
+    salida = [renglones[0]]
+    for siguiente in renglones[1:]:
+        anterior = salida[-1]
+        izq = anterior.rsplit(" ", 1)[-1]
+        der = siguiente.split(" ", 1)[0]
+        pegada = _limpio(izq) + _limpio(der)
+        if (izq and der and pegada in vocabulario
+                and not (_limpio(izq) in vocabulario and _limpio(der) in vocabulario)):
+            salida[-1] = anterior + der
+            resto = siguiente.split(" ", 1)
+            salida.append(resto[1] if len(resto) > 1 else "")
+        else:
+            salida.append(siguiente)
+    return "\n".join(l for l in salida if l)
+
+
+def _bordes_movidos(pagina, tabla, minimo: float = 3.0) -> bool:
+    """Si algún borde se corrigió más de `minimo` puntos respecto a PyMuPDF.
+
+    Tres puntos es medio carácter: por debajo de eso la corrección no cambia a
+    qué columna va ninguna palabra, y reconstruir no aporta nada.
+    """
+    lineas = sorted({
+        round(v, 1)
+        for fila in tabla.rows for celda in fila.cells if celda
+        for v in (celda[0], celda[2])
+    })
+    bordes = bordes_de_columna(pagina, tabla)
+    if len(bordes) != len(lineas):
+        return True
+    return any(abs(b - l) > minimo for b, l in zip(bordes, lineas))
+
+
+def filas_por_palabras(pagina, tabla) -> list[list[str | None]]:
+    """Las filas de la tabla, reconstruidas palabra a palabra.
+
+    Se usa en lugar de `tabla.extract()`, que corta las palabras por el borde
+    de la celda —ver `bordes_de_columna` para el porqué y para las cifras—.
+
+    Cada palabra va entera a la columna donde cae su centro. Aquí sí vale el
+    centro, y en la versión anterior no: los bordes ya están puestos en huecos
+    por los que no pasa ninguna palabra, así que ninguna los cruza y da igual
+    qué punto de ella se mire.
+
+    EL ALTO SE TOMA DE LA CELDA, NO DE LA FILA, y esa distinción no es
+    cosmética: `tabla.rows` trae **filas anidadas** —una que abarca a varias, de
+    las celdas fusionadas—, 289 pares solapados en el Anexo II y 222 en el III.
+    Filtrando por el alto de la fila, la misma palabra cae en la madre y en la
+    hija, el criterio se emite dos veces y se concatena consigo mismo:
+    «Incorporar procedimientos para enriquecer los textos Incorporar
+    procedimientos para…».
+
+    """
+    bordes = bordes_de_columna(pagina, tabla)
+    if len(bordes) < 2:
+        return tabla.extract()
     palabras = pagina.get_text("words")
-    originales = tabla.extract()
+    vocabulario = {_limpio(w[4]) for w in palabras} - {""}
     filas: list[list[str | None]] = []
-    for n, fila in enumerate(tabla.rows):
+    for fila in tabla.rows:
         celdas: list[str | None] = []
-        for j, caja in enumerate(fila.cells):
-            if caja is None:
+        for i in range(len(bordes) - 1):
+            izq, der = bordes[i], bordes[i + 1]
+            # La celda original que ocupa esta banda: la de mayor solape. Es la
+            # que dice hasta dónde llega verticalmente este trozo de fila.
+            propia = max(
+                (c for c in fila.cells if c),
+                key=lambda c: min(c[2], der) - max(c[0], izq),
+                default=None,
+            )
+            if propia is None or min(propia[2], der) - max(propia[0], izq) <= 0:
                 celdas.append(None)
                 continue
-            x0, y0, x1, y1 = caja
-            renglones: dict[int, list[str]] = {}
-            for palabra in palabras:
-                px0, py0, _px1, py1 = palabra[:4]
-                # El centro vertical y no la caja: una palabra con tilde o
-                # con letra descendente se sale del alto de su renglón.
+            y0, y1 = propia[1], propia[3]
+            renglones: dict[int, list[tuple[float, str]]] = {}
+            for px0, py0, px1, py1, texto, *_ in palabras:
+                # El centro vertical y no la caja: una palabra con tilde o con
+                # letra descendente se sale del alto de su renglón.
                 if not (y0 - 1 <= (py0 + py1) / 2 <= y1 + 1):
                     continue
-                if not (x0 - 1 <= px0 < x1):
+                if not (izq - 1 <= (px0 + px1) / 2 < der):
                     continue
-                renglones.setdefault(round(py0), []).append(palabra[4])
-            nuevo = "\n".join(" ".join(v) for _, v in sorted(renglones.items()))
-            viejo = originales[n][j] if n < len(originales) and j < len(originales[n]) else None
-            celdas.append(nuevo if _solo_completa(viejo, nuevo) else viejo)
+                renglones.setdefault(round(py0), []).append((px0, texto))
+            celdas.append(
+                _pegar_partidas(
+                    "\n".join(" ".join(t for _, t in sorted(v))
+                              for _, v in sorted(renglones.items())),
+                    vocabulario,
+                )
+                if renglones else None
+            )
         filas.append(celdas)
     return filas
-
-
-def _solo_completa(viejo: str | None, nuevo: str) -> bool:
-    """¿La celda reconstruida es la de `extract()` **con sus finales de línea**?
-
-    LA GUARDA QUE HACE SEGURO EL CAMBIO. Reconstruir por palabras arregla el
-    borde que parte a mitad de palabra, pero abre la puerta a lo contrario:
-    traerse texto de la columna de al lado. Cuando eso pasó —números de
-    competencia intercalados en mitad de un criterio de Lengua Castellana— el
-    resultado era ilegible y, peor, ninguna comprobación de recuento lo veía.
-
-    Así que la reconstrucción **solo se acepta si completa**: mismo número de
-    renglones, y cada uno empezando por lo que ya había. Cualquier otra cosa
-    —un renglón de más, uno que cambia— significa que se ha mezclado otra
-    columna, y entonces vale más lo de `extract()` aunque esté cortado.
-    """
-    if viejo is None:
-        return False
-    antes = [l.strip() for l in viejo.split("\n")]
-    despues = [l.strip() for l in nuevo.split("\n")]
-    if len(antes) != len(despues):
-        return False
-    return all(b.startswith(a) for a, b in zip(antes, despues))
 
 
 def _es_tabla_de_criterios(filas: list[list[str | None]]) -> bool:
@@ -872,11 +1107,14 @@ def _criterios_de_celda(
         if not linea or _norm(linea) in _CABECERAS_TABLA:
             continue
         m = RX_CRITERIO.match(linea)
-        if m:
+        solo = RX_CRITERIO_SOLO.match(linea)
+        if solo:
+            salida.append((f"{solo.group(1)}.{solo.group(2)}", ""))
+        elif m:
             salida.append((f"{m.group(1)}.{m.group(2)}", m.group(3)))
         elif salida:
             codigo, texto = salida[-1]
-            salida[-1] = (codigo, f"{texto} {linea}")
+            salida[-1] = (codigo, f"{texto} {linea}".strip())
         else:
             preludio.append(linea)
     return " ".join(preludio), salida
@@ -926,7 +1164,28 @@ def _norm(s: str) -> str:
 def _juntar(t: str) -> str:
     """Junta líneas partidas por el ancho de la celda y arregla los guiones."""
     t = re.sub(r"(\w)-\s+(\w)", r"\1\2", t)
-    return re.sub(r"\s+", " ", t).strip()
+    return _sin_cola_repetida(re.sub(r"\s+", " ", t).strip())
+
+
+def _sin_cola_repetida(t: str, minimo: int = 30) -> str:
+    """Quita el final que ya está dicho justo antes, palabra por palabra.
+
+    Pasa cuando un saber se parte entre dos páginas y la segunda repite el
+    trozo en una tabla propia. El único caso en los dos anexos es `TYD.3.E.2`,
+    que llegaba al docente así:
+
+        «Tecnología sostenible. Valoración crítica de la contribución a la
+         consecución de los Objetivos de Desarrollo Sostenible. contribución a
+         la consecución de los Objetivos de Desarrollo Sostenible.»
+
+    El mínimo de treinta caracteres es lo que separa esto de una repetición
+    legítima. Medido sobre los 1461 saberes andaluces: con treinta salta este y
+    ningún otro.
+    """
+    for n in range(len(t) // 2, minimo - 1, -1):
+        if t[-n:] == t[-2 * n:-n]:
+            return t[:-n].strip()
+    return t
 
 
 def _slug(s: str) -> str:
@@ -1031,17 +1290,44 @@ def extraer(pdf: Path, desde: int = 0, hasta: int | None = None) -> list[Materia
         p_ini = cuerpo[0].pagina if cuerpo else 0
         p_fin = (lineas[mat.fin].pagina + 1) if mat.fin < len(lineas) else (hasta or 10 ** 6)
 
-        saberes = extraer_saberes(texto_de_saberes(pdf, p_ini, p_fin))
+        corte = ((lineas[mat.fin].pagina, lineas[mat.fin].y)
+                 if mat.fin < len(lineas) else None)
+        # El corte por altura no basta cuando `find_tables()` mete el título de
+        # la materia siguiente **dentro** de la caja de la última tabla: ahí ya
+        # no es una línea suelta y el filtro no lo ve. Trece saberes acababan
+        # así, con «…y la autorreparación. Lengua Castellana y Literatura».
+        siguiente = _limpiar_titulo(lineas[mat.fin].texto) if mat.fin < len(lineas) else None
+        textos = [
+            t for t in texto_de_saberes(pdf, p_ini, p_fin, corte)
+            if not siguiente or _limpiar_titulo(t) != siguiente
+        ]
+        saberes = extraer_saberes(textos)
         prefijo = _prefijo_de(saberes)
         saberes = _solo_del_prefijo(saberes, prefijo)
         criterios = extraer_criterios(pdf, p_ini, p_fin, prefijo)
-        if not competencias:
-            competencias = competencias_de_tabla(pdf, p_ini, p_fin)
-            if competencias:
+        # LA TABLA MANDA CUANDO LA SECCIÓN SE QUEDA CORTA, no solo cuando falta.
+        #
+        # La condición era «si no hay competencias». Con eso quedaban cubiertas
+        # Matemáticas A y B, que van del título a los saberes sin sección. Pero
+        # **Dibujo Técnico sí la tiene y en el sitio equivocado**: el boletín
+        # lista las cinco competencias y escribe el rótulo «Competencias
+        # específicas.» **debajo**, así que solo se leía la quinta. Una
+        # materia con una competencia de cinco no da error: los criterios 1.x a
+        # 4.x apuntan a competencias que no existen y la conexión curricular
+        # sale coja.
+        #
+        # Se comparan con las que citan los criterios, que es el número que
+        # tiene que salir, y si faltan se toman de la tabla.
+        citadas = {cr.competencia for lista in criterios.values() for cr in lista}
+        if len(competencias) < len(citadas):
+            de_tabla = competencias_de_tabla(pdf, p_ini, p_fin)
+            if len(de_tabla) > len(competencias):
                 logger.info(
-                    "%s: sin sección de competencias, se toman de la tabla (%d)",
-                    mat.nombre, len(competencias),
+                    "%s: la sección da %d competencias y los criterios citan "
+                    "%d; se toman las %d de la tabla",
+                    mat.nombre, len(competencias), len(citadas), len(de_tabla),
                 )
+                competencias = de_tabla
 
         # «Matemáticas A» ya lleva el itinerario en el nombre. Dejarlo en los
         # dos sitios da «Matemáticas A A» en el desplegable, porque
