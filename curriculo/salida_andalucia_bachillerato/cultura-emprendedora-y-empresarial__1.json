@@ -1,0 +1,244 @@
+{
+  "materia_oficial": "Cultura Emprendedora y Empresarial",
+  "materia": "Cultura Emprendedora y Empresarial",
+  "etapa": "Bachillerato",
+  "ciclo": "1º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Comprender el sentido y la relevancia de la cultura emprendedora, realizando investigaciones que permitan estudiar e identificar en diferentes tipos de textos y otros soportes rasgos propios de las personas emprendedoras con el fin de valorar la relevancia del autoconocimiento y de la identificación de las habilidades emprendedoras propias y de otros para emplearlas en la creación de valor tanto en la gestión de la vida académica y profesional como en la mejora del entorno económico y social.",
+      "descriptores": [
+        "CE1",
+        "CE2"
+      ]
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Explorar y detectar las necesidades de un mercado o de un grupo social concreto, utilizando la creatividad y el pensamiento divergente para realizar propuestas innovadoras sobre bienes o servicios, con el fin de valorar la importancia de los procesos de investigación, desarrollo e innovación en los proyectos de emprendimiento.",
+      "descriptores": [
+        "CPSAA1",
+        "CPSAA5",
+        "CC4",
+        "CE1",
+        "CE2"
+      ]
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Identificar las áreas funcionales de las empresas y de otras organizaciones, aplicando correctamente técnicas específicas relacionadas con la organización y la gestión de cada una de ellas, para comprender la relevancia de la formación científica en el ámbito económico financiero y de la administración de empresas en el desarrollo de proyectos emprendedores y en el logro de sus objetivos.",
+      "descriptores": [
+        "CPSAA4",
+        "CPSAA5",
+        "CE1"
+      ]
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Implementar técnicas para el diseño y el análisis de la viabilidad económica y financiera de proyectos, la aplicación de legislación mercantil, laboral, tributaria y sobre asociaciones, el estudio del impacto de la iniciativa emprendedora sobre el entorno, así como sobre la difusión de proyectos, gestionando sus trámites para la puesta su puesta en marcha.",
+      "descriptores": [
+        "CPSAA5",
+        "CC3",
+        "CC4",
+        "CE1",
+        "CE2",
+        "CE3"
+      ]
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Identificar y conocer las características de las personas emprendedoras."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Realizar procesos reflexivos para identificar las características propias, mejorar el autoconocimiento y la autoestima."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Detectar los intereses propios, las aptitudes necesarias para diferentes perfiles profesionales y diseñar un itinerario académico profesional coherente con ellas y con los objetivos personales."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "1",
+      "descripcion": "Conocer técnicas actuales de búsqueda activa de empleo valorando la importancia del autoempleo como vía de inserción laboral y comprendiendo las ventajas e inconvenientes a los que se enfrentan los emprendedores empresariales."
+    },
+    {
+      "codigo": "1.5",
+      "competencia": "1",
+      "descripcion": "Determinar las características de los líderes, sus atributos y su papel en la dirección de organizaciones."
+    },
+    {
+      "codigo": "1.6",
+      "competencia": "1",
+      "descripcion": "Diferenciar creatividad de investigación, innovación y desarrollo, valorando la importancia de las actividades relacionadas con ellas en el diseño e implementación de propuestas de valor."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Aplicar técnicas de investigación de mercados e investigación social para detectar las necesidades de productos y atención social de personas y organizaciones del entorno."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Diseñar y llevar a cabo con autonomía las fases de un proyecto emprendedor, aplicando técnicas específicas de gestión del liderazgo, planificación de tareas, definición de objetivos, organización del trabajo cooperativo, resolución de conflictos y comunicación."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Describir las dimensiones de la responsabilidad social de proyectos emprendedores y el papel de los grupos de interés o en su desarrollo. stakeholders"
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "2",
+      "descripcion": "Investigar y analizar los clientes o usuarios potenciales relacionados con un proyecto emprendedor detallando las estrategias de segmentación empleadas."
+    },
+    {
+      "codigo": "2.5",
+      "competencia": "2",
+      "descripcion": "Fomentar y valorar la creación de valor mediante el empleo de productos o servicios innovadores que aporten nuevas utilidades o aporten soluciones colaborativas originales."
+    },
+    {
+      "codigo": "2.6",
+      "competencia": "2",
+      "descripcion": "Utilizar métodos y estrategias de visualización y presentación de proyectos para comunicar sus principales aspectos."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Identificar las áreas funcionales de las organizaciones y sus tareas principales."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Aplicar técnicas económico-financieras y de administración de empresas específicas de cada una de las áreas funcionales que contribuyan al logro de los objetivos de un proyecto emprendedor."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Analizar y determinar las fuentes de ingresos y costes de un proyecto emprendedor, comprendiendo la relevancia de su análisis para establecer su viabilidad."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "3",
+      "descripcion": "Estudiar fuentes de financiación propia y ajena determinando la estructura financiera óptima que permite implementar un proyecto emprendedor."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Determinar, mediante distintos métodos, la viabilidad económica y financiera de proyectos personales y de organizaciones."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Redactar y adaptar a un proyecto emprendedor concreto modelos de estatutos sociales de empresas o de asociaciones."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Conocer los trámites tributarios, laborales y administrativos que son necesarios para poner en marcha un proyecto emprendedor."
+    },
+    {
+      "codigo": "4.4",
+      "competencia": "4",
+      "descripcion": "Utilizar diferentes soportes digitales y las redes sociales para difundir un proyecto personal o emprendedor."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Autonomía personal, liderazgo e innovación",
+      "titulo": "Autonomía personal, liderazgo e innovación",
+      "items": [
+        "Las personas emprendedoras.",
+        "Proyectos emprendedores empresariales y sociales que transformaron su entorno.",
+        "Autonomía y autoconocimiento.",
+        "Técnicas de búsqueda de empleo. Autoempleo y emprendimiento.",
+        "Liderazgo personal y organizacional.",
+        "Innovación personal, empresarial y social."
+      ],
+      "codigos_items": [
+        "CEE.1.A.1",
+        "CEE.1.A.2",
+        "CEE.1.A.3",
+        "CEE.1.A.4",
+        "CEE.1.A.5",
+        "CEE.1.A.6"
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Exploración y planificación",
+      "titulo": "Exploración y planificación",
+      "items": [
+        "Estudio del entorno y detección de necesidades.",
+        "Una visión de conjunto: las fases del proyecto, objetivos y sus tareas principales. Cronogramas y otros recursos.",
+        "Las dimensiones empresariales y sociales del proyecto.",
+        "Análisis de los clientes o usuarios potenciales.",
+        "Productos y servicios innovadores para crear valor.",
+        "Técnicas de visualización del proyecto."
+      ],
+      "codigos_items": [
+        "CEE.1.B.1",
+        "CEE.1.B.2",
+        "CEE.1.B.3",
+        "CEE.1.B.4",
+        "CEE.1.B.5",
+        "CEE.1.B.6"
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Organización y gestión",
+      "titulo": "Organización y gestión",
+      "items": [
+        "Las áreas funcionales de la empresa y de las organizaciones.",
+        "Diseño de productos innovadores y prototipado. Paneles de consumidores y usuarios.",
+        "Estimación de necesidades de recursos, ingresos y costes.",
+        "Diseño de la propuesta de valor: marketing empresarial, social y digital.",
+        "Departamentalización: reparto de tareas y coordinación.",
+        "Perfiles profesionales y gestión de recursos humanos.",
+        "Fuentes de financiación.",
+        "El patrimonio empresarial. Nociones de contabilidad básica."
+      ],
+      "codigos_items": [
+        "CEE.1.C.1",
+        "CEE.1.C.2",
+        "CEE.1.C.3",
+        "CEE.1.C.4",
+        "CEE.1.C.5",
+        "CEE.1.C.6",
+        "CEE.1.C.7",
+        "CEE.1.C.8"
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Evaluación de proyectos",
+      "titulo": "Evaluación de proyectos",
+      "items": [
+        "Viabilidad económica-financiera.",
+        "Los estatutos sociales de la empresa o asociación.",
+        "Tributos y otros trámites con la administración pública.",
+        "Análisis del impacto en el entorno: diseño y aplicación de matrices de responsabilidad social.",
+        "Difusión del proyecto: páginas web y redes sociales."
+      ],
+      "codigos_items": [
+        "CEE.1.D.1",
+        "CEE.1.D.2",
+        "CEE.1.D.3",
+        "CEE.1.D.4",
+        "CEE.1.D.5"
+      ]
+    }
+  ],
+  "comunidad": "andalucia",
+  "idioma": "es"
+}

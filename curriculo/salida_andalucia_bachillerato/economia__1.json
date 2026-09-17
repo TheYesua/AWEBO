@@ -1,0 +1,234 @@
+{
+  "materia_oficial": "Economía",
+  "materia": "Economía",
+  "etapa": "Bachillerato",
+  "ciclo": "1º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Valorar el problema de la escasez y la importancia de adoptar decisiones adecuadamente fundamentadas en el ámbito económico, analizando su repercusión en los distintos sectores, comparando soluciones alternativas que ofrecen los diferentes modelos y sistemas, para comprender el funcionamiento de la realidad económica española y andaluza.",
+      "descriptores": [
+        "CE2"
+      ]
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Reconocer y comprender el funcionamiento y criterios de actuación de los agentes económicos, así como del mercado, analizando sus fallos, para estudiar la repercusión de estos en el entorno y facilitar la toma de decisiones en el ámbito económico.",
+      "descriptores": [
+        "CC3",
+        "CE1",
+        "CE2"
+      ]
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Distinguir y valorar el papel de los distintos agentes económicos que intervienen en el flujo circular de la renta, comprendiendo sus interacciones y reconociendo, con sentido crítico, los beneficios y costes que genera, para explicar cómo se produce el desarrollo económico y su relación con el bienestar de la sociedad.",
+      "descriptores": [
+        "CC3",
+        "CC4",
+        "CE1",
+        "CE2"
+      ]
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Conocer y comprender el funcionamiento del sistema financiero y de la política monetaria, valorando sus efectos sobre la economía real y analizando los elementos que intervienen en las decisiones financieras, para evaluar el impacto en las decisiones de política monetaria, así como planificar y gestionar con responsabilidad y autonomía las propias finanzas y adoptar decisiones financieras fundamentadas.",
+      "descriptores": [
+        "CPSAA4",
+        "CPSAA5",
+        "CE1",
+        "CE2"
+      ]
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Identificar y valorar los retos y desafíos a los que se enfrenta la economía actual, analizando el impacto de la globalización económica, la nueva economía y la revolución digital, para proponer iniciativas que fomenten la equidad, la justicia y la sostenibilidad.",
+      "descriptores": [
+        "CPSAA5",
+        "CE1"
+      ]
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Analizar los problemas económicos actuales mediante el estudio de casos, la investigación y la experimentación, utilizando herramientas del análisis económico y teniendo en cuenta los factores que condicionan las decisiones de los agentes económicos, para facilitar la comprensión de esos problemas y plantear soluciones innovadoras y sostenibles que respondan a necesidades individuales y colectivas.",
+      "descriptores": [
+        "CE3",
+        "CCEC2"
+      ]
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Comprender la realidad económica española y andaluza actual, analizando la repercusión de las decisiones adoptadas en el ámbito económico, valorando los procesos de integración económica y estableciendo comparaciones sobre las soluciones alternativas que ofrecen los distintos sistemas."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Comprender el problema de la escasez identificando los motivos y comparando, de manera justificada, diferentes estrategias económicas de resolución del mismo."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Conocer los procesos que intervienen en la toma de las decisiones económicas de manera individual y colectiva, analizando el impacto que tienen en la sociedad."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "1",
+      "descripcion": "Valorar la relevancia de los modelos económicos y de la investigación científica, diferenciando lo positivo de lo normativo."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Valorar la repercusión de los fallos del mercado a nivel microeconómico y facilitar el proceso de toma de decisiones en este ámbito, reconociendo y comprendiendo el funcionamiento del mismo."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Entender el funcionamiento del mercado y la naturaleza de las transacciones que tienen lugar en él, analizando elementos como la relación entre producción, costes y beneficio, así como la oferta, la demanda, los precios y cantidades de equilibrio con sus cambios, la elasticidad, los tipos de mercado y los agentes implicados y reflexionado sobre su importancia como fuente de mejora económica y social."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Analizar con espíritu crítico las dimensiones relacionadas con la eficiencia y la equidad asociadas a los fallos del mercado, evaluando sus consecuencias y reflexionando sobre sus posibles soluciones."
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "2",
+      "descripcion": "Comprender la relevancia del papel de las empresas y otras instituciones en los procesos de innovación y generación de valor añadido que contribuyen a la resolución de los problemas económicos y sociales con eficiencia y creatividad, valorando en casos concretos la aportación de los agentes implicados a la mejora del bienestar social."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Conocer cómo se produce el desarrollo económico y el bienestar social, valorando con sentido crítico y analítico, cómo se evalúa, mediante macromagnitudes y otros indicadores, el papel de los distintos agentes económicos que intervienen en el flujo circular de la renta."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Diferenciar los costes y beneficios que se generan en el flujo circular de la renta para cada uno de los agentes económicos, estableciendo las principales características de las relaciones entre ellos mediante el uso del modelo de demanda y de oferta agregadas, y determinando su repercusión en el desarrollo económico y el bienestar social, para comprender la importancia de sus interacciones y la relevancia de los modelos económicos en su interpretación."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Valorar la importancia de la recopilación sistemática de datos estadísticos y su correcta interpretación para comprender la realidad económica y evaluar las consecuencias de las intervenciones de los agentes."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Conocer y comprender el funcionamiento del sistema financiero y de las políticas monetarias, valorando sus efectos sobre la economía real y analizando los elementos que intervienen en las decisiones financieras relacionadas con la inversión, el ahorro, los productos financieros y la búsqueda de fuentes de financiación, para planificar y gestionar con mayor responsabilidad y autonomía las propias finanzas y adoptar decisiones financieras fundamentadas."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Planificar y gestionar con responsabilidad y progresiva autonomía las finanzas personales y adoptar decisiones fundamentadas a partir del conocimiento y comprensión del sistema financiero, valorando los elementos que intervienen en las decisiones financieras y los efectos que estos pueden provocar en la economía real."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Adquirir conocimientos financieros a partir del análisis del sistema financiero, su funcionamiento y los efectos que se derivan de las decisiones adoptadas en él y estableciendo conexiones entre estos aprendizajes y sus decisiones financieras personales que afectan a su vida cotidiana y comprendiendo la influencia de las decisiones financieras en la viabilidad de los proyectos personales, de las empresas y del sector público."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Proponer iniciativas que fomenten la equidad, la justicia y la sostenibilidad a partir de la identificación de los retos y desafíos que plantea la economía actual, valorando sus ventajas e inconvenientes y analizando, con sentido crítico, el impacto que provoca la globalización, la nueva economía y la revolución digital en el bienestar económico y social de los ciudadanos."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Las decisiones económicas",
+      "titulo": "Las decisiones económicas",
+      "items": [
+        "La Economía, las necesidades, los bienes y la escasez. El contenido económico de las relaciones sociales. La modelización como herramienta para entender las interacciones económicas. La Frontera de Posibilidades de producción. Los sectores económicos. Definición y ámbito de estudio de la Ciencia Económica. Ramas de la Economía.",
+        "El proceso de toma de decisiones económicas. La racionalidad y el principio «ceteris paribus». El coste de oportunidad. Los costes irrecuperables. El análisis marginal. Los incentivos y las expectativas. Teoría de juegos. La eficiencia. Riesgo e incertidumbre.",
+        "La organización económica, las doctrinas y los sistemas económicos; valoración y comparación. Problemas que debe resolver todo sistema económico. Economía de mercado. Economía de planificación central. Sistema de Economía mixta.",
+        "Planificación y gestión de las decisiones financieras: la inversión, el ahorro y el consumo. Dinero y transacciones. Funciones del dinero y formas de dinero. Riesgo y beneficio. El papel de los bancos en la economía. Funcionamiento de los productos financieros como préstamos, hipotecas, y sus sustitutos. Los seguros.",
+        "Economía del comportamiento. Desviaciones de la racionalidad económica. Decisiones económicas y ética.",
+        "Métodos para el análisis de la realidad económica: el método científico, la modelización y experimentos o ensayos económicos. B. La realidad económica. Herramientas para entender el mundo con una visión microeconómica."
+      ],
+      "codigos_items": [
+        "ECON.1.A.1",
+        "ECON.1.A.2",
+        "ECON.1.A.3",
+        "ECON.1.A.4",
+        "ECON.1.A.5",
+        "ECON.1.A.6"
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Bloque B",
+      "titulo": "Bloque B",
+      "items": [
+        "Empresa y generación de valor añadido. Productividad, ingresos, costes y beneficio.",
+        "Intercambio y mercado. Factores de los que depende la demanda y la oferta. Estudio de la elasticidad. Tipos y funcionamiento de los mercados: desplazamientos y nuevos equilibrios. Representación gráfica.",
+        "La elasticidad. La competencia perfecta, la competencia imperfecta y otros fallos de mercado. La competencia monopolística. El oligopolio y el monopolio: ejemplos en la historia de España. El análisis coste-beneficio. C. La realidad económica. Herramientas para entender el mundo con una visión macroeconómica."
+      ],
+      "codigos_items": [
+        "ECON.1.B.1",
+        "ECON.1.B.2",
+        "ECON.1.B.3"
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Bloque C",
+      "titulo": "Bloque C",
+      "items": [
+        "La macroeconomía. Macromagnitudes: del PIB a la renta personal disponible. Limitaciones e indicadores alternativos. Los agentes económicos y el flujo circular de la renta. La demanda agregada, la oferta agregada y su funcionamiento.",
+        "Crecimiento económico y desarrollo. Los factores del crecimiento. La distribución de la renta: relación entre eficiencia y equidad. Indicadores del desarrollo social. Bienestar y calidad de vida.",
+        "Economía laboral. Clasificación de la población a efectos laborales y tasas. El funcionamiento y las tendencias de los mercados de trabajo. Tasas y fuentes estadísticas para medir el paro. Tipos de desempleo. Causas, efectos y medidas correctoras. La diferencias salariales y la brecha salarial.",
+        "El comercio internacional, los procesos de integración económica y sus efectos. Proteccionismo y libre comercio. La balanza de pagos. El mercado de divisas: oferta, demanda y los tipos de cambio. La Unión Europea y Monetaria: ventajas e inconvenientes. Instituciones y funciones. El presupuesto europeo.",
+        "El dinero. Tipología del dinero y su proceso de creación. El sistema financiero, su funcionamiento y sus efectos. Los activos financieros: tipos y características. Evolución del panorama financiero: el blockchain o cadena de bloques, las criptomonedas y la ciberseguridad."
+      ],
+      "codigos_items": [
+        "ECON.1.C.1",
+        "ECON.1.C.2",
+        "ECON.1.C.3",
+        "ECON.1.C.4",
+        "ECON.1.C.5"
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Las políticas económicas",
+      "titulo": "Las políticas económicas",
+      "items": [
+        "Economía positiva y Economía normativa. La intervención del Estado y su justificación. La política económica: sus tipos y sus efectos.",
+        "La política fiscal. El estado del bienestar y su financiación. Tipos de impuestos. El principio de solidaridad y los impuestos en España. El gasto público y los presupuestos generales. El déficit público, la deuda pública y sus efectos. La política fiscal: estabilizadores automáticos e instrumentos discrecionales; efectos. La economía sumergida.",
+        "La política monetaria y la estabilidad de precios. El Banco Central Europeo. Funcionamiento del mercado monetario. La inflación: medición, teorías explicativas e impacto sobre los agentes. Efecto de las políticas monetarias sobre la inflación, el crecimiento y el bienestar."
+      ],
+      "codigos_items": [
+        "ECON.1.D.1",
+        "ECON.1.D.2",
+        "ECON.1.D.3"
+      ]
+    },
+    {
+      "codigo": "E",
+      "bloque": "E. Los retos de la economía andaluza y española en un contexto globalizado",
+      "titulo": "Los retos de la economía andaluza y española en un contexto globalizado",
+      "items": [
+        "La globalización: factores explicativos, oportunidades y riesgos. La reducción de las desigualdades. Las causas de la pobreza.",
+        "La nueva economía y la revolución digital. La economía colaborativa. La economía colaborativa, ecológica y la economía circular. El impacto de la revolución digital sobre el empleo y la distribución de la renta. La adaptación de la población activa ante los retos de la revolución digital.",
+        "Democracia y estado de bienestar. El futuro del estado del bienestar en España y Andalucía, su relación con la democracia. Sostenibilidad de las pensiones. Los flujos migratorios y sus implicaciones socioeconómicas. La economía sumergida.",
+        "Teorías sobre el decrecimiento económico.",
+        "Los Objetivos de Desarrollo Sostenible (ODS) y los retos económicos actuales. Estudio de casos. Retos actuales de la economía andaluza."
+      ],
+      "codigos_items": [
+        "ECON.1.E.1",
+        "ECON.1.E.2",
+        "ECON.1.E.3",
+        "ECON.1.E.4",
+        "ECON.1.E.5"
+      ]
+    }
+  ],
+  "comunidad": "andalucia",
+  "idioma": "es"
+}

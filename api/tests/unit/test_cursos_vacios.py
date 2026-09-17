@@ -93,7 +93,8 @@ class TestLosDatosNoTienenFilasSinCursos:
     """Ya no debería haberlas. Si vuelve a aparecer una, es un fallo del
     extractor y conviene enterarse aquí y no en producción."""
 
-    @pytest.mark.parametrize("carpeta", ["salida", "salida_cataluna", "salida_andalucia"])
+    @pytest.mark.parametrize("carpeta", ["salida", "salida_cataluna", "salida_andalucia",
+                                        "salida_andalucia_bachillerato"])
     def test_ningun_json_viene_sin_cursos(self, carpeta):
         import json
 

@@ -1,0 +1,113 @@
+{
+  "materia_oficial": "Educación para la Convivencia Democrática",
+  "materia": "Educación para la Convivencia Democrática",
+  "etapa": "Bachillerato",
+  "ciclo": "1º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Entender el diálogo como un ejercicio de rigor, espíritu crítico, tolerancia y empatía, a través de la resolución de cuestiones de manera dialógica y respetuosa con las opiniones contrarias de las cuestiones que atañen a la vida en común y a los problemas derivados de esta para la práctica de una ciudadanía activa y democrática.",
+      "descriptores": [
+        "CC2",
+        "CC3",
+        "CCEC1",
+        "CCEC2"
+      ]
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Comprender la necesidad de las normas, así como distinguir, en el ejercicio del poder del Estado, las acciones que garanticen y promuevan la consecución de los valores de libertad, igualdad y justicia, partiendo de su vida escolar y trascendiendo al resto de contextos vitales, para guiar nuestra acción ética y política de manera responsable, crítica y comprometida con la convivencia pacífica y con el bien común.",
+      "descriptores": [
+        "CCEC1"
+      ]
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Analizar problemas éticos y políticos fundamentales, derivados de cuestiones de actualidad como la manipulación y el control a través de los medios de comunicación e internet, la igualdad de género y el papel del ser humano en la destrucción del medioambiente y la pandemia, mediante la exposición crítica y dialéctica de distintas posiciones filosóficas pertinentes en la interpretación y resolución de los mismos, para desarrollar el juicio propio y la autonomía moral.",
+      "descriptores": [
+        "CC2",
+        "CC4"
+      ]
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Adquirir una perspectiva global, sistémica y transdisciplinar en el planteamiento de cuestiones fundamentales y de actualidad, integrando información e ideas de distintos ámbitos disciplinares a través de la perspectiva que otorga el conocimiento de los conceptos y corrientes filosóficas en juego, para tratar problemas complejos de modo crítico, creativo y transformador.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Entender el diálogo de manera rigurosa, racional, respetuosa, abierta, constructiva y comprometida con la verdad, abordando los temas que se le plantean en forma de cuestión relevante para la vida en común y la consecución de valores como libertad, igualdad y justicia."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Producir y evaluar discursos orales acerca de cuestiones éticas y políticas, usando la argumentación de manera correcta, así como detectando y evitando modos dogmáticos y sesgados de sostener opiniones e hipótesis."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Comprender críticamente los conceptos de ley, poder, justicia, Estado, democracia, igualdad económica, así como igualdad ante la ley y de oportunidades, violencia y desobediencia a la ley, a través de la toma razonada y dialogante de posición en torno a cuestiones éticas y políticas de actualidad que atañen al papel del Estado ante asuntos relativos a la igualdad, las libertades y los derechos."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Generar un compromiso activo con el bien común, tomando conciencia de su papel relevante frente a problemas éticos presentes en la convivencia social, partiendo de su vida escolar y trascendiendo al resto de contextos vitales."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Analizar problemas éticos y políticos fundamentales y de actualidad, como los derivados de las nuevas tecnologías de la comunicación o de nuestra relación con el medio ambiente."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Tomar consciencia de la lucha por una efectiva igualdad de género, a través del análisis de las teorías en torno a la cuestión del género como una creación social, y de la comprensión de los conceptos más importantes del feminismo, para la consecución de una actitud igualitaria ante las distintas discriminaciones practicadas sobre la mujer."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Utilizar conceptos e ideas provenientes de distintos campos del saber, afrontando temas complejos como el ejercicio del poder, el uso y recepción de las nuevas tecnologías de la información, las relaciones de género o el papel del ser humano ante catástrofes medioambientales o sociales analizándolos desde una perspectiva global, sistémica y transdisciplinar. Utilizar conceptos, datos y métodos de análisis provenientes de distintos campos del saber, desde concepciones filosoficas a explicaciones científicas, afrontando temas complejos como el ejercicio del poder, el uso y recepción de las nuevas tecnologías de la información, las relaciones de género o el papel del ser humano ante catástrofes medioambientales o sociales analizándolos desde una perspectiva global, sistémica y transdisciplina."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. El poder. Relación con la libertad, igualdad y justicia",
+      "titulo": "El poder. Relación con la libertad, igualdad y justicia",
+      "items": [
+        "1. Conceptos de poder, Estado, democracia y sociedad civil. Concepto normativo de Estado de derecho. Derechos fundamentales del ciudadano.",
+        "1. La igualdad económica o social y el concepto de propiedad. Teorías clásicas y actuales sobre la distribución justa de la riqueza.",
+        "1. El pensamiento ilustrado y las teorías del contrato social."
+      ],
+      "codigos_items": [
+        "EPCD.1.A.1",
+        "EPCD.1.A.2",
+        "EPCD.1.A.3"
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Retos y problemas de la actualidad",
+      "titulo": "Retos y problemas de la actualidad",
+      "items": [
+        "1. La función social del arte a través de los medios. La función social de la cultura de masas. La sociedad del espectáculo. Guy Debord.",
+        "1. La distinción entre sexo y género. Simone de Beauvoir y El segundo sexo.",
+        "1. El cambio de visión de la historia y la EPCD.A.1. El concepto de poder y su relación con la libertad."
+      ],
+      "codigos_items": [
+        "EPCD.1.B.1",
+        "EPCD.1.B.2",
+        "EPCD.1.B.3"
+      ]
+    }
+  ],
+  "comunidad": "andalucia",
+  "idioma": "es"
+}

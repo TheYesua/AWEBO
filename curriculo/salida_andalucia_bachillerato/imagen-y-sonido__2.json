@@ -1,0 +1,151 @@
+{
+  "materia_oficial": "Imagen y Sonido",
+  "materia": "Imagen y Sonido",
+  "etapa": "Bachillerato",
+  "ciclo": "2º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Conocer y utilizar diversos recursos expresivos para realizar productos audiovisuales y multimedia con criterio estético y sensibilidad artística.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Conocer y aplicar técnicas y elementos del lenguaje audiovisual utilizado el guion audiovisual como eje para elaborar guiones literario-técnicos o gráficos o storyboards.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Conocer y aplicar las técnicas de captación de fotografía y vídeos, eligiendo los elementos más adecuados de captación de imágenes para su posterior edición digital.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Editar digitalmente piezas visuales, integrar sonido al producto audiovisual y reconocer las prestaciones técnicas de los equipos que se usan, insertando transiciones y sincronizando los distintos datos sonoros para el tratamiento digital de las imágenes, así como para la postproducción de las secuencias visuales.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Conocer y analizar los recursos expresivos utilizados en las producciones audiovisuales, relacionando las características funcionales y topológicas con la consecución de los objetivos comunicativos."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Analizar situaciones audiovisuales extraídas de productos cinematográficos de diversos géneros, aplicando las técnicas de lenguaje audiovisual."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Elaborar guiones audiovisuales aplicando una estructura narrativa coherente con las posibilidades expresivas de la imagen, sonido y la música."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Grabar piezas audiovisuales aplicando técnicas de captación de imágenes fotográficas y de vídeo, y reforzando su expresividad mediante los recursos y medios técnicos del lenguaje audiovisual."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Realizar el tratamiento digital de imágenes, valorando características de color, formatos y contraste y empleando técnicas de generación, procesamiento y retoque de imagen fija."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Integrar el sonido e imagen en un producto multimedia, audiovisual o programa de radio, aplicando los recursos expresivos del lenguaje sonoro y relacionando sus posibilidades de articulación y combinación según los tipos de destinatarios."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Reconocer las cualidades técnicas del equipamiento de sonido idóneo en programas de radio, grabaciones musicales y proyectos audiovisuales, justificando sus características funcionales y operativas."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Identificar las prestaciones del equipamiento técnico en proyectos multimedia, identificando sus especificaciones y justificando sus aptitudes en relación con los requerimientos del medio y las necesidades de los proyectos."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Recursos expresivos y análisis de situaciones en producciones audiovisuales",
+      "titulo": "Recursos expresivos y análisis de situaciones en producciones audiovisuales",
+      "items": [
+        "Recursos expresivos. Características funcionales, tipológicas y consecución de objetivos comunicativos.",
+        "Técnicas y elementos del lenguaje audiovisual."
+      ],
+      "codigos_items": [
+        "IMYS.2.A.1",
+        "IMYS.2.A.2"
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Elaboración de guiones audiovisuales",
+      "titulo": "Elaboración de guiones audiovisuales",
+      "items": [
+        "El guion literario. Fases de elaboración. Escena y secuencia dramática. La escaleta.",
+        "El guion técnico y el storyboard."
+      ],
+      "codigos_items": [
+        "IMYS.2.B.1",
+        "IMYS.2.B.2"
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Captación de imágenes fotográficas y de video",
+      "titulo": "Captación de imágenes fotográficas y de video",
+      "items": [
+        "Técnicas de captación. Ajustes técnicos y de identificación.",
+        "De la cámara estenopeica a la cámara digital: captura de la imagen, valor de exposición, escalas, objetivos y sensibilidad.",
+        "El ojo humano y los sistemas de captación y reproducción. Soportes de registro analógico y digital. Niveles e histograma de la imagen."
+      ],
+      "codigos_items": [
+        "IMYS.2.C.1",
+        "IMYS.2.C.2",
+        "IMYS.2.C.3"
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Diseño de bandas sonoras",
+      "titulo": "Diseño de bandas sonoras",
+      "items": [
+        "El lenguaje sonoro en el cine y en la radio.",
+        "Programas de edición de sonido.",
+        "Formatos de audio.",
+        "Audiodescripción y subtitulación."
+      ],
+      "codigos_items": [
+        "IMYS.2.D.1",
+        "IMYS.2.D.2",
+        "IMYS.2.D.3",
+        "IMYS.2.D.4"
+      ]
+    },
+    {
+      "codigo": "E",
+      "bloque": "E. Equipamiento técnico en proyectos multimedia",
+      "titulo": "Equipamiento técnico en proyectos multimedia",
+      "items": [
+        "Equipamiento de sonido en diferentes entornos.",
+        "Equipos informáticos multimedia: prestaciones técnicas y operativas.",
+        "Formatos de imagen, audio y vídeo. Soportes y difusión."
+      ],
+      "codigos_items": [
+        "IMYS.2.E.1",
+        "IMYS.2.E.2",
+        "IMYS.2.E.3"
+      ]
+    }
+  ],
+  "comunidad": "andalucia",
+  "idioma": "es"
+}

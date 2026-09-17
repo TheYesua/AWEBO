@@ -1,0 +1,133 @@
+{
+  "materia_oficial": "Programación y Computación",
+  "materia": "Programación y Computación",
+  "etapa": "Bachillerato",
+  "ciclo": "2º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Desarrollar la capacidad de abstracción, producir programas informáticos funcionales e integrarse en un equipo de desarrollo de software que sea capaz de afrontar proyectos acordes al nivel de desarrollo del alumnado, fomentando sus habilidades sociales y aplicando la creatividad.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Recopilar y procesar datos que ayuden en la resolución de un problema, analizando cómo su almacenamiento, transmisión y presentación se benefician de la manipulación computacional.",
+      "descriptores": [
+        "CE3"
+      ]
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Desarrollar aplicaciones web sencillas con acceso a una base de datos utilizando html, css y un lenguaje de script, elaborando páginas web con el fin de programar de manera accesible.",
+      "descriptores": [
+        "CE3"
+      ]
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Explorar la computación física, construyendo un sistema hardware y software que interactúe con el medio físico, detectando y respondiendo a cambios en el mundo real, para comprender las diferencias entre los mundos digital y analógico.",
+      "descriptores": [
+        "CE3"
+      ]
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Transformar ideas en aplicaciones de forma creativa, descomponiendo problemas complejos en otros más simples e ideando modelos abstractos de los mismos y algoritmos que permitan implementar una solución computacional."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Escribir programas, convenientemente estructurados y comentados, que recogen y procesan la información procedente de diferentes fuentes y generan la correspondiente salida."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Identificar y aplicar los principales pasos del ciclo de vida de una aplicación, y trabajar de forma colaborativa en equipos de desarrollo, utilizando IDE’s, depuradores y herramientas de control de versiones de código."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Explotar las posibilidades de las bases de datos para la recogida y procesamiento de grandes cantidades de datos en la búsqueda de patrones y conexiones que faciliten la resolución de problemas computacionales."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Utilizar los lenguajes de marcado y estilos para la creación de páginas web, teniendo en cuenta aspectos relativos al diseño adaptativo."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Diseñar, programar y probar una aplicación web sencilla con acceso a una base de datos, utilizando un lenguaje de script."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Diseñar, programar y probar una aplicación que lea datos de un sensor, los procese, y como resultado, ejecute un actuador."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Programación",
+      "titulo": "Programación",
+      "items": [
+        "Lenguajes de programación.",
+        "Orientación a objetos.",
+        "Ciclo de vida del software."
+      ],
+      "codigos_items": [
+        "PRYC.2.A.1",
+        "PRYC.2.A.2",
+        "PRYC.2.A.3"
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Datos e Información",
+      "titulo": "Datos e Información",
+      "items": [
+        "Bases de datos relacionales.",
+        "Big data."
+      ],
+      "codigos_items": [
+        "PRYC.2.B.1",
+        "PRYC.2.B.2"
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Desarrollo web",
+      "titulo": "Desarrollo web",
+      "items": [
+        "Lenguajes descriptivos.",
+        "Lenguajes de programación."
+      ],
+      "codigos_items": [
+        "PRYC.2.C.1",
+        "PRYC.2.C.2"
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Computación física y robótica",
+      "titulo": "Computación física y robótica",
+      "items": [
+        "Robótica.",
+        "El Internet de las Cosas."
+      ],
+      "codigos_items": [
+        "PRYC.2.D.1",
+        "PRYC.2.D.2"
+      ]
+    }
+  ],
+  "comunidad": "andalucia",
+  "idioma": "es"
+}

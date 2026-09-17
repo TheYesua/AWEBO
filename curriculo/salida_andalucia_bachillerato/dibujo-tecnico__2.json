@@ -1,0 +1,173 @@
+{
+  "materia_oficial": "Dibujo Técnico",
+  "materia": "Dibujo Técnico",
+  "etapa": "Bachillerato",
+  "ciclo": "2º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Interpretar elementos o conjuntos arquitectónicos y de ingeniería, empleando recursos asociados a la percepción, estudio, construcción e investigación de formas, para analizar las estructuras geométricas y los elementos técnicos utilizados.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Utilizar razonamientos inductivos, deductivos y lógicos en problemas de índole gráfico-matemáticos, aplicando fundamentos de la geometría plana para resolver gráficamente operaciones matemáticas, relaciones, construcciones y transformaciones.",
+      "descriptores": [
+        "CPSAA5",
+        "CE2"
+      ]
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Desarrollar la visión espacial, utilizando la geometría descriptiva en proyectos sencillos, considerando la importancia del dibujo en arquitectura e ingenierías, para resolver problemas e interpretar y recrear",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Formalizar y definir diseños técnicos aplicando las normas UNE e ISO de manera apropiada, valorando la importancia que tiene el croquis para documentar gráficamente proyectos arquitectónicos e ingenieriles.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Investigar, experimentar y representar digitalmente elementos, planos y esquemas técnicos, mediante el uso de programas específicos CAD (Computer Aided Design), de manera individual o grupal, apreciando su uso en las profesiones actuales, para virtualizar objetos y espacios en dos dimensiones y tres dimensiones.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Analizar la evolución de las estructuras geométricas y elementos técnicos en la arquitectura e ingeniería contemporáneas, valorando la influencia del progreso tecnológico y de las técnicas digitales de representación y modelado en los campos de la arquitectura y la ingeniería."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Construir figuras planas aplicando transformaciones geométricas y valorando su utilidad en los sistemas de representación, mostrando interés por la precisión."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Resolver tangencias aplicando los conceptos de potencia con una actitud de rigor en la ejecución."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Trazar curvas cónicas y sus rectas tangentes, aplicando propiedades y métodos de construcción, mostrando interés por la precisión."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Resolver problemas geométricos mediante abatimientos, giros y cambios de plano, reflexionando sobre los métodos utilizados, sobre el uso más adecuado de cada uno de ellos para la obtención de verdaderas magnitudes y los resultados obtenidos."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Representar cuerpos geométricos y de revolución, aplicando los fundamentos, las relaciones entre elementos y los métodos operativos del sistema diédrico."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Recrear la realidad tridimensional mediante la representación de sólidos en perspectivas axonométricas y cónica, aplicando los conocimientos específicos de dichos sistemas de representación."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "3",
+      "descripcion": "Desarrollar proyectos gráficos sencillos mediante el sistema de planos acotados."
+    },
+    {
+      "codigo": "3.5",
+      "competencia": "3",
+      "descripcion": "Valorar el rigor gráfico del proceso; la claridad, la precisión y el proceso de resolución y construcción gráfica."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Elaborar la documentación gráfica apropiada a proyectos de diferentes campos, formalizando y definiendo diseños técnicos, empleando croquis y planos conforme a la normativa UNE e ISO."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Elaborar proyectos sencillos en grupo, valorando la importancia de la sostenibilidad de un proyecto y reflexionando sobre la necesidad de la superación de la brecha de género que existe actualmente en los estudios técnicos."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Reflexionar desde un enfoque inclusivo sobre la brecha de género existente en la actualidad en los estudios técnicos, valorando la necesidad de la superación de esta."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Integrar el soporte digital en la representación de objetos y construcciones mediante aplicaciones CAD (Computer Aided Design), valorando las posibilidades que estas herramientas aportan al dibujo y al trabajo colaborativo."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Fundamentos geométricos",
+      "titulo": "Fundamentos geométricos",
+      "items": [
+        "La geometría en la arquitectura e ingeniería desde la revolución industrial. Los avances en el desarrollo tecnológico y en las técnicas digitales aplicadas a la construcción de nuevas formas. Referentes en obras arquitectónicas e industriales del patrimonio andaluz de los siglos XIX y XX: bodegas, estaciones, pabellones expositivos, puentes, viviendas singulares y obras de arquitectura efímera.",
+        "Transformaciones geométricas: isométricas, isomórficas y anamórficas: inversión (determinación de figuras inversas), homología (determinación de sus elementos y trazado de figuras homólogas) y afinidad (determinación de sus elementos y trazado de figuras afines). Aplicación para la resolución de problemas en los sistemas de representación. Resolución de problemas geométrico-matemáticos. Proporcionalidad áurea: aplicaciones. Equivalencia de figuras planas.",
+        "Potencia de un punto respecto a una circunferencia. Eje radical y centro radical. Aplicaciones en tangencias.",
+        "Curvas cónicas: elipse, hipérbola y parábola. Propiedades y métodos de construcción. Rectas tangentes. Trazado con y sin herramientas digitales. Curvas técnicas: hélices, curvas cíclicas y envolventes: origen y trazado, aplicaciones."
+      ],
+      "codigos_items": [
+        "DIBT.2.A.1",
+        "DIBT.2.A.2",
+        "DIBT.2.A.3",
+        "DIBT.2.A.4"
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Geometría proyectiva",
+      "titulo": "Geometría proyectiva",
+      "items": [
+        "Sistema diédrico:. Representación punto, recta y plano. Recta de máxima pendiente y máxima inclinación. Intersecciones, paralelismo, perpendicularidad y distancias. Verdadera magnitud de los segmentos. Figuras contenidas en planos. Abatimientos y verdaderas magnitudes. Giros, cambios de plano y verdaderas magnitudes. Aplicaciones. Representación de cuerpos geométricos: prismas y pirámides. Secciones planas y verdaderas magnitudes de la sección. Representación de cuerpos de revolución rectos: cilindros y conos (representación de la esfera, secciones planas, intersección en una recta). Representación de poliedros regulares: tetraedro, hexaedro y octaedro (desarrollos, posiciones características, secciones principales, intersección en una recta).",
+        "Sistema axonométrico, ortogonal y oblicuo. Representación de figuras y sólidos. Determinación del triedro fundamental. Triángulo de trazas y ejes. Coeficientes de reducción. Representación de figuras planas. Intersecciones. Representación simplificada de la circunferencia. Representación de sólidos y cuerpos geométricos. Representación de espacios tridimensionales.",
+        "Sistema de planos acotados. Resolución de problemas de cubiertas sencillas. Representación de perfiles o secciones de terreno a partir de sus curvas de nivel.",
+        "Perspectiva cónica. Representación de sólidos y formas tridimensionales a partir de sus vistas."
+      ],
+      "codigos_items": [
+        "DIBT.2.B.1",
+        "DIBT.2.B.2",
+        "DIBT.2.B.3",
+        "DIBT.2.B.4"
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Normalización y documentación gráfica de",
+      "titulo": "Normalización y documentación gráfica de",
+      "items": [
+        "Representación de cuerpos y piezas industriales sencillas. Vistas principales. Croquis y planos de taller. Cortes, secciones y roturas. Normas de acotación. Perspectivas normalizadas.",
+        "Diseño, ecología y sostenibilidad. La brecha de género en los estudios técnicos.",
+        "Proyectos en colaboración. Elaboración de la documentación gráfica de un proyecto ingenieril o arquitectónico sencillo.",
+        "Planos de montaje sencillos. Elaboración e"
+      ],
+      "codigos_items": [
+        "DIBT.2.C.1",
+        "DIBT.2.C.2",
+        "DIBT.2.C.3",
+        "DIBT.2.C.4"
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Sistemas CAD (Computer Aided Design)",
+      "titulo": "Sistemas CAD (Computer Aided Design)",
+      "items": [
+        "Aplicaciones CAD (Computer Aided Design). Construcciones gráficas en soporte digital. Aplicación de las Tecnologías de la Información y la Comunicación al diseño, archivo y presentación de proyectos. Dibujo vectorial: 2D (dibujo y edición, creación de bloques, visibilidad de capas), 3D (inserción y edición de sólidos, galerías y bibliotecas de modelos, texturas), selección, encuadre, iluminación y punto de vista."
+      ],
+      "codigos_items": [
+        "DIBT.2.D.1"
+      ]
+    }
+  ],
+  "comunidad": "andalucia",
+  "idioma": "es"
+}

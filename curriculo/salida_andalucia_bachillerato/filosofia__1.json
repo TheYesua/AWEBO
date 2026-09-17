@@ -1,0 +1,190 @@
+{
+  "materia_oficial": "Filosofía",
+  "materia": "Filosofía",
+  "etapa": "Bachillerato",
+  "ciclo": "1º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Identificar problemas y formular preguntas acerca del fundamento, valor y sentido de la realidad y la existencia humana, a partir del análisis e interpretación de textos y otras formas de expresión filosófica y cultural, para reconocer la radicalidad y trascendencia de tales cuestiones, así como la necesidad de afrontarlas para desarrollar una vida reflexiva y consciente de sí.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Buscar, gestionar, interpretar, producir y transmitir correctamente información relativa a cuestiones filosóficas, a partir del empleo contrastado y seguro de fuentes, el uso y análisis riguroso de las mismas, y el empleo de procedimientos elementales de investigación y comunicación, para desarrollar una actitud indagadora, autónoma, rigurosa y creativa en el ámbito de la reflexión filosófica.",
+      "descriptores": [
+        "CC3",
+        "CE3"
+      ]
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Usar y valorar adecuadamente argumentos y estructuras argumentales a partir de su análisis, tanto formal como informal, para producir y apreciar distintos tipos de discurso de forma rigurosa, y evitar modos",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Practicar el ejercicio del diálogo filosófico de manera rigurosa, crítica, tolerante y empática, interiorizando las pautas éticas y formales que este requiere, mediante la participación en actividades grupales y a través del planteamiento dialógico de las cuestiones filosóficas, para promover el contraste e intercambio de ideas y el ejercicio de una ciudadanía activa y democrática.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Reconocer el carácter plural de las concepciones, ideas y argumentos en torno a cada uno de los problemas fundamentales de la Filosofía, mediante el análisis crítico de diversas tesis relevantes con respecto a los mismos, para generar una concepción compleja y no dogmática de dichas cuestiones e ideas y una actitud abierta, tolerante, y comprometida con la resolución racional y pacífica de los conflictos.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Comprender las principales ideas y teorías filosóficas de los más importantes pensadores y pensadoras, mediante el examen crítico y dialéctico de las mismas y de los problemas fundamentales a los que estas responden, para generar una concepción rigurosa y personal de lo que significa la Filosofía, de su riqueza e influencia cultural e histórica y de su aportación al patrimonio común.",
+      "descriptores": []
+    },
+    {
+      "codigo": "7",
+      "descripcion": "Adquirir una perspectiva global, sistémica y transdisciplinar en el planteamiento de cuestiones fundamentales y de actualidad, analizando y categorizando sus múltiples aspectos, distinguiendo lo más substancial de lo accesorio, e integrando información e ideas de distintos ámbitos disciplinares, desde la perspectiva fundamental de la Filosofía, para tratar problemas complejos de modo crítico, creativo y transformador.",
+      "descriptores": []
+    },
+    {
+      "codigo": "8",
+      "descripcion": "Analizar problemas éticos y políticos fundamentales y de actualidad, mediante la exposición crítica y dialéctica de distintas posiciones filosóficamente pertinentes en la interpretación y resolución de los mismos, para desarrollar el juicio propio y la autonomía moral.",
+      "descriptores": []
+    },
+    {
+      "codigo": "9",
+      "descripcion": "Desarrollar la sensibilidad y la comprensión crítica del arte y otras manifestaciones y actividades con valor estético mediante el ejercicio del pensamiento filosófico acerca de la belleza y la creación artística, para contribuir a la educación de los sentimientos estéticos y al desarrollo de una actitud reflexiva con respecto al lenguaje y sentido de las imágenes.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Reconocer la radicalidad y trascendencia de los problemas filosóficos mediante su reconocimiento, análisis y reformulación en textos y otros medios de expresión tanto filosóficos como literarios, históricos, científicos, artísticos o relativos a cualquier otro ámbito cultural, y utilizando adecuadamente el vocabulario técnico específico de las distintas ramas de la Filosofía para formular y analizar estos problemas."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Demostrar un conocimiento práctico de los procedimientos elementales de la investigación filosófica a través de tareas como la identificación de fuentes fiables, la búsqueda eficiente y segura de información, y la correcta organización, análisis, interpretación, evaluación, producción y comunicación de esta, tanto digitalmente como por medios más tradicionales."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Desarrollar una actitud indagadora, autónoma y activa en el ámbito de la reflexión filosófica, mediante el diseño, la elaboración y la comunicación pública de productos originales, tales como trabajos de investigación, disertaciones o comentarios de texto."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Producir y evaluar discursos argumentativos, orales y escritos, acerca de cuestiones y problemas filosóficos, demostrando un uso correcto de normas, pautas, reglas y procedimientos lógicos, retóricos y argumentativos y utilizando, cuando sea necesario, las técnicas de la lógica formal tanto para producir argumentos válidos como para analizar la validez de argumentos expresados en el lenguaje natural."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Detectar y evitar modos dogmáticos, falaces y sesgados de sostener opiniones e hipótesis, explicando la naturaleza o mecanismo de dichos sesgos y falacias."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Reconocer la importancia de la cooperación, el compromiso con la verdad, el respeto a la pluralidad y el rechazo de toda actitud discriminatoria o arbitraria, aplicando dichos principios a la práctica argumentativa y al diálogo con los demás."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Promover el contraste e intercambio de ideas y la práctica de una ciudadanía activa y democrática a través del ejercicio de la participación en actividades grupales y el ejercicio del diálogo racional, respetuoso, abierto, constructivo y comprometido con la búsqueda de la verdad, acerca de cuestiones y problemas filosóficamente relevantes."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Generar una concepción compleja y no dogmática de los problemas filosóficos fundamentales de las principales ramas de la Filosofía mediante el análisis crítico de tesis filosóficas distintas y opuestas en torno a los mismos."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Comprender y exponer distintas tesis y teorías de las principales ramas de la Filosofía como momentos de un proceso dinámico y siempre abierto a la reflexión y al diálogo, a través del análisis comparativo de los argumentos, principios, presupuestos, metodologías y enfoques de dichas tesis y teorías."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Tomar consciencia de la riqueza e influencia del pensamiento filosófico, identificando y analizando las principales ideas y teorías filosóficas de cada periodo histórico en textos o documentos pertenecientes a ámbitos culturales diversos, así como poniéndolas en relación con experiencias, acciones o acontecimientos comunes y de actualidad."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Adquirir y demostrar un conocimiento profundo y significativo de las ideas y teorías filosóficas de algunos de los más importantes pensadores y pensadoras de la historia, mediante su aplicación y el análisis crítico de aquellas en el contexto de la práctica individual o colectiva de la indagación filosófica."
+    },
+    {
+      "codigo": "7.1",
+      "competencia": "7",
+      "descripcion": "Afrontar cuestiones y problemas complejos, de carácter fundamental y de actualidad, de modo interdisciplinar, sistemático y creativo, utilizando conceptos, ideas y procedimientos provenientes de distintos campos del saber, y orientándolos y articulándolos críticamente desde una perspectiva filosófica."
+    },
+    {
+      "codigo": "7.2",
+      "competencia": "7",
+      "descripcion": "Entender las relaciones entre la Filosofía y otros modos de saber -especialmente, el conocimiento científico-, así como sus influencias e interacciones mutuas, y utilizar este conocimiento para analizar problemas complejos de actualidad y rechazar actitudes pseudocientíficas e irracionales."
+    },
+    {
+      "codigo": "8.1",
+      "competencia": "8",
+      "descripcion": "Desarrollar el propio juicio y la autonomía moral mediante el análisis filosófico de problemas éticos y políticos fundamentales y de actualidad, considerando las distintas posiciones en disputa y elaborando, argumentando, exponiendo y sometiendo al diálogo con los demás las propias tesis al respecto."
+    },
+    {
+      "codigo": "8.2",
+      "competencia": "8",
+      "descripcion": "Obtener y demostrar un conocimiento suficientemente profundo de las principales teorías éticas y políticas, utilizándolas para analizar problemas contemporáneos en el ámbito social y político."
+    },
+    {
+      "codigo": "9.1",
+      "competencia": "9",
+      "descripcion": "Generar un adecuado equilibrio entre el aspecto racional y el emotivo en la consideración de los problemas filosóficos, especialmente los referidos al ámbito de la estética, a través de la reflexión expresa en torno al arte y a otras actividades o experiencias con valor estético y el análisis del papel de las imágenes y el lenguaje audiovisual en la cultura contemporánea."
+    },
+    {
+      "codigo": "9.2",
+      "competencia": "9",
+      "descripcion": "Obtener y demostrar un conocimiento suficientemente profundo de las principales teorías filosóficas sobre el arte y utilizarlas para analizar diferentes corrientes o productos artísticos."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. La Filosofía y el ser humano",
+      "titulo": "La Filosofía y el ser humano",
+      "items": [
+        "La reflexión filosófica en torno a la propia Filosofía.",
+        "El ser humano como sujeto y objeto de la experiencia filosófica."
+      ],
+      "codigos_items": [
+        "FILO.1.A.1",
+        "FILO.1.A.2"
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. El conocimiento y la realidad",
+      "titulo": "El conocimiento y la realidad",
+      "items": [
+        "El problema filosófico del conocimiento y la verdad.",
+        "La cuestión de la naturaleza última de la realidad."
+      ],
+      "codigos_items": [
+        "FILO.1.B.1",
+        "FILO.1.B.2"
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Acción y creación",
+      "titulo": "Acción y creación",
+      "items": [
+        "La acción humana: Filosofía ética y política.",
+        "La reflexión filosófica en torno a la creación artística."
+      ],
+      "codigos_items": [
+        "FILO.1.C.1",
+        "FILO.1.C.2"
+      ]
+    }
+  ],
+  "comunidad": "andalucia",
+  "idioma": "es"
+}

@@ -1,0 +1,165 @@
+{
+  "materia_oficial": "Tecnologías de la Información y Comunicación",
+  "materia": "Tecnologías de la Información y Comunicación",
+  "etapa": "Bachillerato",
+  "ciclo": "1º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Reconocer el proceso de transformación como agente de cambio, analizando aspectos positivos y negativos de dicho proceso para entender el papel principal de las tecnologías de la información y la comunicación en la sociedad actual, su impacto en los ámbitos social, económico y cultural, y su importancia en la innovación y el empleo.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Configurar ordenadores y equipos informáticos, utilizando de forma segura, responsable y respetuosa dichos dispositivos, para comprender el funcionamiento de los componentes hardware y software que conforman ordenadores y equipos digitales.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Usar, seleccionar y combinar múltiples aplicaciones informáticas, atendiendo a cuestiones de diseño, usabilidad y accesibilidad, incluyendo la creación de un proyecto web, para crear producciones digitales que cumplan unos objetivos determinados.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Comprender el funcionamiento de Internet y de las tecnologías de búsqueda, analizando de forma crítica los contenidos publicados y fomentando un uso compartido de la información, para permitir la producción colaborativa y la difusión de conocimiento.",
+      "descriptores": [
+        "CC1",
+        "CE1"
+      ]
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Comprender qué es un algoritmo y cómo son implementados en forma de programa, analizando y aplicando los principios de la ingeniería del software, para desarrollar y depurar aplicaciones informáticas y resolver problemas.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Analizar y valorar el impacto de las tecnologías de la información y la comunicación en la transformación de la sociedad actual."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Explicar cómo se representa digitalmente la información en forma de secuencias binarias y describir los mecanismos de abstracción empleados."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Seleccionar y utilizar de manera combinada aplicaciones informáticas para la creación de contenidos digitales y la resolución de problemas específicos."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Utilizar aplicaciones de procesamiento de texto de manera avanzada, dados unos requisitos de usuario y unos objetivos complejos."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Utilizar aplicaciones de hojas de cálculo de manera avanzada, dados unos requisitos de usuario y unos objetivos complejos."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "3",
+      "descripcion": "Diseñar, crear y manipular una base de datos relacional sencilla, utilizando comandos de SQL."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Explicar el funcionamiento de Internet, conociendo su arquitectura, principales componentes y los protocolos de comunicación empleados."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Buscar recursos digitales en Internet, entendiendo cómo se seleccionan y organizan los resultados, evaluando de forma crítica los contenidos y recursos disponibles en la red."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Conocer y comprender la sintaxis y la semántica de un lenguaje de programación, analizar la estructura de programas sencillos y desarrollar pequeñas aplicaciones."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Analizar y resolver problemas de tratamiento de la información, dividiéndolos en subproblemas y definiendo algoritmos que los resuelvan."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Desarrollo de Software",
+      "titulo": "Desarrollo de Software",
+      "items": [
+        "Impacto de la informática.",
+        "Información digital."
+      ],
+      "codigos_items": [
+        "TICO.1.A.1",
+        "TICO.1.A.2"
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Publicación de contenidos",
+      "titulo": "Publicación de contenidos",
+      "items": [
+        "Arquitectura de ordenadores.",
+        "Sistemas operativos."
+      ],
+      "codigos_items": [
+        "TICO.1.B.1",
+        "TICO.1.B.2"
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Seguridad Informática",
+      "titulo": "Seguridad Informática",
+      "items": [
+        "Sofwt are.",
+        "Procesadores de texto.",
+        "Hojas de cálculo.",
+        "Bases de datos."
+      ],
+      "codigos_items": [
+        "TICO.1.C.1",
+        "TICO.1.C.2",
+        "TICO.1.C.3",
+        "TICO.1.C.4"
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Internet y redes de ordenadores",
+      "titulo": "Internet y redes de ordenadores",
+      "items": [
+        "Internet.",
+        "Buscadores."
+      ],
+      "codigos_items": [
+        "TICO.1.D.1",
+        "TICO.1.D.2"
+      ]
+    },
+    {
+      "codigo": "E",
+      "bloque": "E. Programación",
+      "titulo": "Programación",
+      "items": [
+        "Fundamentos de programación.",
+        "Diseño de software y resolución de problemas."
+      ],
+      "codigos_items": [
+        "TICO.1.E.1",
+        "TICO.1.E.2"
+      ]
+    }
+  ],
+  "comunidad": "andalucia",
+  "idioma": "es"
+}

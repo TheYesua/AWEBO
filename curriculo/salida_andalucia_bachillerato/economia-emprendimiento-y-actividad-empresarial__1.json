@@ -1,0 +1,199 @@
+{
+  "materia_oficial": "Economía, Emprendimiento y Actividad Empresarial",
+  "materia": "Economía, Emprendimiento y Actividad Empresarial",
+  "etapa": "Bachillerato",
+  "ciclo": "1º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Analizar de forma crítica y reflexiva las aportaciones de la ciencia económica, valorando su interrelación con otras disciplinas, para entender la realidad desde una visión integral y actuar como ciudadanos y ciudadanas responsables, autónomos y comprometidos.",
+      "descriptores": [
+        "CPSAA5",
+        "CC1",
+        "CE1",
+        "CE2"
+      ]
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Analizar, desde un enfoque interdisciplinar, el comportamiento tanto individual como colectivo en la toma de decisiones económicas al interactuar y coordinarse en diferentes tipos de mercados, evaluando el problema de la escasez y sus efectos, así como las relaciones entre eficiencia y equidad, para comprender los cambios económicos y sociales derivados de dicho problema y actuar en consecuencia.",
+      "descriptores": [
+        "CE2"
+      ]
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Establecer correspondencias entre los Objetivos de Desarrollo Sostenible y los aprendizajes adquiridos a través del estudio de casos reales, analizándolos con ayuda de herramientas económicas y empresariales para generar una actitud sensible y un comportamiento responsable y proactivo que contribuya a dar respuesta a los retos actuales.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Identificar y valorar habilidades y competencias que caracterizan a las personas emprendedoras dentro de la realidad actual, analizando sus perfiles y su forma de afrontar los retos, para reconocer y potenciar las destrezas emprendedoras propias y aplicarlas a situaciones reales de la vida.",
+      "descriptores": [
+        "CE2"
+      ]
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Comprender las estrategias empresariales, analizando su evolución y distinguiendo los nuevos modelos de negocio desarrollados por entidades vinculadas a diferentes ámbitos y sectores, para identificar la filosofía de las empresas, reconocer las tendencias y poner en valor, con sentido crítico, su actividad en la sociedad andaluza y española actual.",
+      "descriptores": [
+        "CE2",
+        "CCEC2"
+      ]
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Analizar la transformación económica y social y sus consecuencias, reconociendo la importancia que tienen la innovación y la revolución digital en la actividad empresarial, para comprender las respuestas que las",
+      "descriptores": [
+        "CE2"
+      ]
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Entender la realidad partiendo del análisis crítico y reflexivo sobre las aportaciones que ofrece la ciencia económica, valorando su interrelación con otras disciplinas y adquiriendo una visión integral de la misma que favorezca la asunción de responsabilidades y compromisos."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Valorar la relevancia de los modelos económicos para comprender la realidad, diferenciando los datos objetivos y las relaciones entre variables de las propuestas de modificación de la realidad que corresponden a aspectos axiológicos."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Comprender los cambios económicos y sociales desde un análisis interdisciplinar sobre el comportamiento humano en el proceso de toma de decisiones, evaluando el problema de la escasez y sus efectos, y estimulando al alumnado a actuar en consecuencia."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Analizar las relaciones entre ingresos y costes, así como su influencia en las decisiones empresariales."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Entender las variables que influyen en los agentes para la toma de sus decisiones de intercambio y aplicar los instrumentos que facilita el análisis económico para explicar los cambios en diferentes tipos de mercados."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Mostrar actitudes sensibles y comportamientos responsables y proactivos que contribuyan a dar respuesta a los retos actuales a partir del estudio de casos reales, estableciendo correspondencias entre la realidad y los aprendizajes adquiridos."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Tomar conciencia de los problemas globales y locales, analizándolos a través de herramientas económicas y empresariales y aportando soluciones a los mismos."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Identificar los fallos microeconómicos y macroeconómicos de mercado, comprendiendo el papel del sector público para su corrección, con especial atención a las modalidades de política económica y sus efectos sobre el crecimiento, el empleo, la inflación y el bienestar social."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "3",
+      "descripcion": "Comprender las relaciones entre consumo, ahorro e inversión, definiendo las características del sistema financiero y valorando el papel de los activos financieros y reales en la planificación de la vida personal y en la gestión de proyectos emprendedores."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Reconocer y potenciar las destrezas emprendedoras propias, identificando y valorando previamente las habilidades que poseen personas emprendedoras cercanas y analizando sus competencias a la hora de afrontar los retos que se les presentan."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Afrontar retos sencillos de la vida cotidiana aplicando las destrezas propias que caracterizan a una persona emprendedora."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Reconocer las tendencias e identificar la filosofía de las empresas, comprendiendo las estrategias empresariales llevadas a cabo por estas y analizando su evolución, así como los modelos de negocio desarrollados, poniendo en valor, con sentido crítico, su actividad empresarial."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Distinguir los nuevos modelos de negocio desarrollados por empresas pertenecientes a diversos sectores y ámbitos, analizando sus posibilidades y limitaciones."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "5",
+      "descripcion": "Identificar las áreas funcionales de las empresas y sus principales actividades, comprendiendo la importancia de su coordinación para el desarrollo de proyectos emprendedores viables y valorando su impacto en el entorno andaluz y español."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Comprender las respuestas que ofrecen las empresas a los desafíos actuales, analizando la transformación económica y social que está experimentando la sociedad."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Proponer alternativas y nuevas soluciones a los desafíos actuales, analizando los efectos de la transformación económica y social y reconociendo la importancia que tiene la innovación y revolución digital en la actividad empresarial."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Economía",
+      "titulo": "Economía",
+      "items": [
+        "La escasez y el problema económico.",
+        "Economía y otras disciplinas."
+      ],
+      "codigos_items": [
+        "ECYE.1.A.1",
+        "ECYE.1.A.2"
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Emprendimiento",
+      "titulo": "Emprendimiento",
+      "items": [
+        "La persona emprendedora e intraemprendedora. Competencias, cualidades y hábitos. La inteligencia emocional y la inteligencia ejecutiva.",
+        "El espíritu emprendedor: búsqueda de necesidades y oportunidades. Entrenamiento de la creatividad y proactividad.",
+        "Creencias sobre emprendimiento. El miedo a emprender: la gestión del error como una oportunidad para aprender.",
+        "Competencias sociales. Tipos y aplicación. La gestión de grupos y la teoría de las relaciones humanas. Teoría y factores de la motivación.",
+        "Misión y visión de la persona emprendedora. Creación y puesta en marcha de su proyecto emprendedor en el aula de Economía, Emprendimiento y Actividad Empresarial. Protección de la idea, el producto y la marca. Ventajas e inconvenientes de las patentes.",
+        "Autoevaluación de la persona emprendedora. Herramientas."
+      ],
+      "codigos_items": [
+        "ECYE.1.B.1",
+        "ECYE.1.B.2",
+        "ECYE.1.B.3",
+        "ECYE.1.B.4",
+        "ECYE.1.B.5",
+        "ECYE.1.B.6"
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Actividad empresarial",
+      "titulo": "Actividad empresarial",
+      "items": [
+        "Las áreas funcionales de la empresa y sus actividades. El entorno empresarial.",
+        "La revolución tecnológica. El poder de la tecnología. Los modelos de negocio. Importancia de las startup.",
+        "Mercado y clientes. Neuromarketing. Marketing digital. El marketing mix. La importancia del Big Data. Nuevos modelos de negocio.",
+        "Cultura empresarial y gestión del talento. El liderazgo. Diseño del perfil profesional. El papel de la mujer en la actividad empresarial.",
+        "El lugar de trabajo. La empresa del futuro. Tendencias.",
+        "Estrategia y gestión de la empresa. Funciones de la dirección de una empresa. Transformación digital. Innovación. Sostenibilidad. Criterios de clasificación de empresas. Tipos de empresas según su forma jurídica. Investigación, Desarrollo e Innovación (I+D+I). Crecimiento económico de una empresa y productividad. Obligaciones fiscales de las empresas.",
+        "Análisis de casos: análisis interno y externo. DAFO."
+      ],
+      "codigos_items": [
+        "ECYE.1.C.1",
+        "ECYE.1.C.2",
+        "ECYE.1.C.3",
+        "ECYE.1.C.4",
+        "ECYE.1.C.5",
+        "ECYE.1.C.6",
+        "ECYE.1.C.7"
+      ]
+    }
+  ],
+  "comunidad": "andalucia",
+  "idioma": "es"
+}

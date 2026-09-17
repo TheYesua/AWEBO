@@ -1,0 +1,225 @@
+{
+  "materia_oficial": "Física y Química",
+  "materia": "Física y Química",
+  "etapa": "Bachillerato",
+  "ciclo": "1º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Resolver problemas y situaciones relacionados con la Física y la Química, aplicando las leyes y teorías científicas adecuadas, para comprender y explicar los fenómenos naturales y evidenciar el papel de estas ciencias en la mejora del bienestar común y en la realidad cotidiana.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Razonar con solvencia, usando el pensamiento científico y las destrezas relacionadas con el trabajo de la ciencia, para aplicarlos a la observación de la naturaleza y el entorno, a la formulación de preguntas e hipótesis y a la validación de las mismas a través de la experimentación, la indagación y la búsqueda de evidencias.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Manejar con propiedad y solvencia el flujo de información en los diferentes registros de comunicación de la ciencia como la nomenclatura de compuestos químicos, el uso del lenguaje matemático, el uso correcto de las unidades de medida, la seguridad en el trabajo experimental, para la producción e interpretación de información en diferentes formatos y a partir de fuentes diversas.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Utilizar de forma autónoma, crítica y eficiente plataformas digitales y recursos variados, tanto para el trabajo individual como en equipo, consultando y seleccionando información científica veraz, creando materiales en diversos formatos y comunicando de manera efectiva en diferentes entornos de aprendizaje, para fomentar la creatividad, el desarrollo personal y el aprendizaje individual y social.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Trabajar de forma colaborativa en equipos diversos, aplicando habilidades de coordinación, comunicación, emprendimiento y reparto equilibrado de responsabilidades, para predecir las consecuencias de los avances científicos y su influencia sobre la salud propia y comunitaria y sobre el desarrollo medioambiental sostenible.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Participar de forma activa en la construcción colectiva y evolutiva del conocimiento científico, en su entorno cotidiano y cercano, para convertirse en agentes activos de la difusión del pensamiento científico, la aproximación escéptica a la información científica y tecnológica y la puesta en valor de la preservación del medioambiente y la salud pública, el desarrollo económico y la búsqueda de una sociedad igualitaria.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Aplicar las leyes y teorías científicas en el análisis de fenómenos fisicoquímicos cotidianos, comprendiendo las causas que los producen y explicándolas utilizando diversidad de soportes y medios de comunicación."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Resolver problemas fisicoquímicos planteados a partir de situaciones cotidianas, aplicando las leyes y teorías científicas para encontrar y argumentar las soluciones, expresando adecuadamente los resultados."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Identificar situaciones problemáticas en el entorno cotidiano, emprender iniciativas y buscar soluciones sostenibles desde la Física y la Química, analizando críticamente el impacto producido en la sociedad y el medioambiente."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Formular y verificar hipótesis como respuestas a diferentes problemas y observaciones, manejando con soltura el trabajo experimental, la indagación, la búsqueda de evidencias y el razonamiento lógico-matemático."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Utilizar diferentes métodos para encontrar la respuesta a una sola cuestión u observación, cotejando los resultados obtenidos por diferentes métodos y asegurándose así de su coherencia y fiabilidad."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Integrar las leyes y teorías científicas conocidas en el desarrollo del procedimiento de la validación de las hipótesis formuladas, aplicando relaciones cualitativas y cuantitativas entre las diferentes variables, de manera que el proceso sea más fiable y coherente con el conocimiento científico adquirido."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Utilizar y relacionar de manera rigurosa diferentes sistemas de unidades, empleando correctamente su notación y sus equivalencias, haciendo posible una comunicación efectiva con toda la comunidad científica."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Nombrar y formular correctamente sustancias simples, iones y compuestos químicos inorgánicos y orgánicos utilizando las normas de la IUPAC, como parte de un lenguaje integrador y universal para toda la comunidad científica."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Emplear diferentes formatos para interpretar y expresar información relativa a un proceso fisicoquímico concreto, relacionando entre sí la información que cada uno de ellos contiene y extrayendo de él lo más relevante durante la resolución de un problema."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "3",
+      "descripcion": "Poner en práctica los conocimientos adquiridos en la experimentación científica en laboratorio o campo, incluyendo el conocimiento de sus materiales y su normativa básica de uso, así como de las normas de seguridad propias de estos espacios, y comprendiendo la importancia en el progreso científico y emprendedor de que la experimentación sea segura, sin comprometer la integridad física propia ni colectiva."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Interactuar con otros miembros de la comunidad educativa a través de diferentes entornos de aprendizaje, reales y virtuales, utilizando de forma autónoma y eficiente recursos variados, tradicionales y digitales, con rigor y respeto y analizando críticamente las aportaciones de todo el mundo."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Trabajar de forma autónoma y versátil, individualmente y en equipo, en la consulta de información y la creación de contenidos, utilizando con criterio las fuentes y herramientas más fiables, y desechando las menos adecuadas, mejorando así el aprendizaje propio y colectivo."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Participar de manera activa en la construcción del conocimiento científico, evidenciando la presencia de la interacción, la cooperación y la evaluación entre iguales, mejorando el cuestionamiento, la reflexión y el debate al alcanzar el consenso en la resolución de un problema o situación de aprendizaje."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Construir y producir conocimientos a través del trabajo colectivo, además de explorar alternativas para superar la asimilación de conocimientos ya elaborados y encontrando momentos para el análisis, la discusión y la síntesis, obteniendo como resultado la elaboración de productos representados en informes, pósteres, presentaciones, artículos, etc."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "5",
+      "descripcion": "Debatir, de manera informada y argumentada, sobre las diferentes cuestiones medioambientales, sociales y éticas relacionadas con el desarrollo de las ciencias, alcanzando un consenso sobre las consecuencias de estos avances y proponiendo soluciones creativas en común a las cuestiones planteadas."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Identificar y argumentar científicamente las repercusiones de las acciones que el alumnado emprende en su vida cotidiana, analizando cómo mejorarlas como forma de participar activamente en la construcción de una sociedad mejor."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Detectar las necesidades de la sociedad sobre las que aplicar los conocimientos científicos adecuados que ayuden a mejorarla, incidiendo especialmente en aspectos importantes como la resolución de los grandes retos ambientales, el desarrollo sostenible y la promoción de la salud."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Enlace químico y estructura de la materia",
+      "titulo": "Enlace químico y estructura de la materia",
+      "items": [
+        "Desarrollo de la tabla periódica: contribuciones históricas a su elaboración actual e importancia como herramienta predictiva de las propiedades de los elementos. Primeros intentos de clasificación de los elementos químicos: las triadas de Döbereiner y las octavas de Newlands, entre otros. Clasificaciones periódicas de Mendeleiev y Meyer. La tabla periódica actual.",
+        "Estructura electrónica de los átomos: explicación de la posición de un elemento en la tabla periódica y de la variación en las propiedades de los elementos químicos de cada grupo y periodo. Los espectros atómicos y la estructura electrónica de los átomos. La configuración electrónica y el sistema periódico. Propiedades periódicas de los elementos químicos: radio atómico, energía de ionización y afinidad electrónica.",
+        "Teorías sobre la estabilidad de los átomos e iones: predicción de la formación de enlaces entre los elementos, representación de estos y deducción de cuáles son las propiedades de las sustancias químicas. Comprobación a través de la observación y la experimentación. El enlace covalente: estructuras de Lewis para el enlace covalente. La polaridad de las moléculas. Fuerzas intermoleculares. Estructura y propiedades de las sustancias con enlace covalente: sustancias moleculares y redes covalentes. El enlace iónico. Cristales iónicos. Propiedades de los compuestos iónicos. El enlace metálico. Estructura y propiedades. Propiedades de las sustancias con enlace metálico.",
+        "Formulación y nomenclatura de sustancias simples, iones y compuestos químicos inorgánicos (normas establecidas por la IUPAC): composición y las aplicaciones que tienen en la vida cotidiana."
+      ],
+      "codigos_items": [
+        "FISQ.1.A.1",
+        "FISQ.1.A.2",
+        "FISQ.1.A.3",
+        "FISQ.1.A.4"
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Reacciones químicas",
+      "titulo": "Reacciones químicas",
+      "items": [
+        "Leyes fundamentales de la Química: relaciones estequiométricas en las reacciones químicas y en la composición de los compuestos. Resolución de cuestiones cuantitativas relacionadas con la Química en la vida cotidiana. Ley de Lavoisier de conservación de la masa, ley de Proust de las proporciones definidas y ley de Dalton de las proporciones múltiples. Composición centesimal de un compuesto. Cálculos estequiométricos en las reacciones químicas. Riqueza de un reactivo. Rendimiento de una reacción. Reactivo limitante y reactivo en exceso.",
+        "Clasificación de las reacciones químicas: relaciones que existen entre la química y aspectos importantes de la sociedad actual como, por ejemplo, la conservación del medioambiente o el desarrollo de fármacos. Reacciones exotérmicas y endotérmicas. Reacciones de síntesis, sustitución, doble sustitución, descomposición y combustión. Observación de distintos tipos de reacciones y comprobación de su estequiometría. Importancia de las reacciones de combustión y su relación con la sostenibilidad y medio ambiente. Importancia de la industria química en la sociedad actual.",
+        "Cálculo de cantidades de materia en sistemas fisicoquímicos concretos, como gases ideales o disoluciones y sus propiedades: variables mesurables propias del estado de los mismos en situaciones de la vida cotidiana. Constante de Avogrado. Concepto de mol, masa atómica, masa molecular y masa fórmula. Masa molar. Leyes de los gases ideales. Volumen molar. Condiciones normales o estándar de un gas. Ley de Dalton de las presiones parciales. Concentración de una disolución: concentración en masa, molaridad y fracción molar.",
+        "Estequiometría y termoquímica de las reacciones químicas: aplicaciones en los procesos industriales más significativos de la ingeniería química. Los sistemas termodinámicos en Química. Variables de estado. Equilibrio térmico y temperatura. Procesos a volumen y presión constantes. Concepto de Entalpía. La ecuación termoquímica y los diagramas de entalpía. Determinación experimental de la entalpía de reacción. Entalpías de combustión, formación y enlace. La ley de Hess."
+      ],
+      "codigos_items": [
+        "FISQ.1.B.1",
+        "FISQ.1.B.2",
+        "FISQ.1.B.3",
+        "FISQ.1.B.4"
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Química orgánica",
+      "titulo": "Química orgánica",
+      "items": [
+        "Propiedades Físicas y Químicas generales de los compuestos orgánicos a partir de las estructuras químicas de sus grupos funcionales: generalidades en las diferentes series homólogas y aplicaciones en el mundo real. Características del átomo de carbono. Enlaces sencillos, dobles y triples. Grupo funcional y serie homóloga. Propiedades físicas y químicas generales de los hidrocarburos, los compuestos oxigenados y los nitrogenados.",
+        "Reglas de la IUPAC para formular y nombrar correctamente algunos compuestos orgánicos mono y polifuncionales (hidrocarburos, compuestos oxigenados y compuestos nitrogenados)."
+      ],
+      "codigos_items": [
+        "FISQ.1.C.1",
+        "FISQ.1.C.2"
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Cinemática",
+      "titulo": "Cinemática",
+      "items": [
+        "Variables cinemáticas en función del tiempo en los distintos movimientos que puede tener un objeto, con o sin fuerzas externas: resolución de situaciones reales relacionadas con la Física y el entorno cotidiano. Posición, desplazamiento, velocidad media e instantánea, aceleración, componentes intrínsecas de la aceleración. Carácter vectorial de estas magnitudes.",
+        "Variables que influyen en un movimiento rectilíneo y circular: magnitudes y unidades empleadas. Movimientos cotidianos que presentan estos tipos de trayectoria. Clasificación de los movimientos en función del tipo de trayectorias y de las composiciones intrínsecas de la aceleración. Estudio y elaboración de gráficas de movimientos a partir de observaciones experimentales y/o simulaciones interactivas. Estudio de los movimientos rectilíneo y uniforme, rectilíneo uniformemente acelerado, circular uniforme y circular uniformemente acelerado.",
+        "Relación de la trayectoria de un movimiento compuesto con las magnitudes que lo describen. Relatividad de Galileo. Composición de movimientos: tiro horizontal y tiro oblicuo."
+      ],
+      "codigos_items": [
+        "FISQ.1.D.1",
+        "FISQ.1.D.2",
+        "FISQ.1.D.3"
+      ]
+    },
+    {
+      "codigo": "E",
+      "bloque": "E. Estática y dinámica",
+      "titulo": "Estática y dinámica",
+      "items": [
+        "Predicción, a partir de la composición vectorial, del comportamiento estático o dinámico de una partícula y un sólido rígido bajo la acción de un par de fuerzas. Composición vectorial de un sistema de fuerzas. Fuerza resultante. La fuerza peso y la fuerza normal. Centro de gravedad de los cuerpos. La fuerza de rozamiento. La fuerza tensión. Determinación experimental de fuerzas en relación con sus efectos. La fuerza elástica. Ley de Hooke. La fuerza centrípeta. Dinámica del movimiento circular. Leyes de Newton de la dinámica. Condiciones de equilibrio de traslación. Concepto de sólido rígido. Momentos y pares de fuerzas. Condiciones de equilibrio de rotación.",
+        "Relación de la mecánica vectorial aplicada sobre una partícula o un sólido rígido con su estado de reposo o de movimiento: aplicaciones estáticas o dinámicas de la Física en otros campos, como la ingeniería o el deporte. El centro de gravedad en el cuerpo humano y su relación con el equilibrio en la práctica deportiva. El centro de gravedad en una estructura y su relación con la estabilidad.",
+        "Interpretación de las leyes de la dinámica en términos de magnitudes como el momento lineal y el impulso mecánico: aplicaciones en el mundo real. Momento lineal e impulso mecánico. Relación entre ambas magnitudes. Conservación del momento lineal. Reformulación de las leyes de la dinámica en función del concepto de momento lineal."
+      ],
+      "codigos_items": [
+        "FISQ.1.E.1",
+        "FISQ.1.E.2",
+        "FISQ.1.E.3"
+      ]
+    },
+    {
+      "codigo": "F",
+      "bloque": "F. Energía",
+      "titulo": "Energía",
+      "items": [
+        "Conceptos de trabajo y potencia: elaboración de hipótesis sobre el consumo energético de sistemas mecánicos o eléctricos del entorno cotidiano y su rendimiento, verificándolas experimentalmente, mediante simulaciones o a partir del razonamiento lógico-matemático. El trabajo como transferencia de energía entre los cuerpos: trabajo de una fuerza constante, interpretación gráfica del trabajo de una fuerza variable.",
+        "Energía potencial y energía cinética de un sistema sencillo: aplicación a la conservación de la energía mecánica en sistemas conservativos y no conservativos y al estudio de las causas que producen el movimiento de los objetos en el mundo real. Energía cinética. Teorema del trabajo-energía. Fuerzas conservativas. Energía potencial: gravitatoria y elástica. La fuerza de rozamiento: una fuerza no conservativa. Principio de conservación de la energía mecánica en sistemas conservativos y no conservativos.",
+        "Variables termodinámicas de un sistema en función de las condiciones: determinación de las variaciones de temperatura que experimenta y las transferencias de energía que se producen con su entorno. El calor como mecanismo de transferencia de energía entre dos cuerpos. Energía interna de un sistema. Primer principio de la termodinámica. Clasificación de los procesos termodinámicos. Conservación y degradación de la energía. Segundo principio de la termodinámica."
+      ],
+      "codigos_items": [
+        "FISQ.1.F.1",
+        "FISQ.1.F.2",
+        "FISQ.1.F.3"
+      ]
+    }
+  ],
+  "comunidad": "andalucia",
+  "idioma": "es"
+}

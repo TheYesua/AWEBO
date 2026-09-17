@@ -1,0 +1,246 @@
+{
+  "materia_oficial": "Geografía",
+  "materia": "Geografía",
+  "etapa": "Bachillerato",
+  "ciclo": "2º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Reconocer los retos ecosociales actuales y futuros de España y Andalucía, debatiendo desde la perspectiva geográfica sobre los mensajes recibidos por canales oficiales e informales y desarrollando el pensamiento crítico para transformar patrones de consumo insostenibles y adoptar estilos de vida saludables.",
+      "descriptores": [
+        "CPSAA4",
+        "CC1",
+        "CC4",
+        "CE1"
+      ]
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Comprender la complejidad del espacio geográfico mediante la interpretación de fuentes de información visuales para apreciar la riqueza de los paisajes naturales y humanizados, tomar conciencia del concepto de paisaje como resultado cultural y valorar la sostenibilidad como principio de las relaciones entre los ecosistemas naturales y la acción humana.",
+      "descriptores": [
+        "CC1",
+        "CC4",
+        "CE1",
+        "CCEC1",
+        "CCEC2"
+      ]
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Analizar la diversidad natural de Andalucía, España y su singularidad geográfica dentro de Europa a través de la comparación de características comunes y específicas del relieve, el clima, la hidrografía y la biodiversidad para reflexionar sobre la percepción personal del espacio.",
+      "descriptores": [
+        "CC1",
+        "CC3",
+        "CC4",
+        "CCEC1"
+      ]
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Aplicar las Tecnologías de la Información Geográfica (TIG), métodos y técnicas propios o de ciencias afines, localizando fenómenos naturales y humanos, y argumentando con rigor sus límites o categorías para resolver eficientemente el problema de la escala en cualquier análisis o propuesta de actuación.",
+      "descriptores": [
+        "CD2",
+        "CD5",
+        "CC3",
+        "CE1",
+        "CE3"
+      ]
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Asumir la globalización como contexto que enmarca la evolución de los sistemas económicos y los comportamientos sociales recientes, investigando sus relaciones de causa y efecto, creando productos propios que demuestren la interconexión y la interdependencia a todas las escalas, para promover el respeto a la dignidad humana y al medio ambiente como base de una ciudadanía global.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Explicar de forma crítica los desequilibrios territoriales de España y de su estructura sociolaboral y demográfica, reconociendo los procesos y las decisiones, locales y globales, que han contribuido a las desigualdades presentes, para reforzar la conciencia de solidaridad y el compromiso con los mecanismos de cooperación y cohesión españoles y europeos.",
+      "descriptores": []
+    },
+    {
+      "codigo": "7",
+      "descripcion": "Movilizar conocimientos previos, nuevos y de otros campos del saber al abordar situaciones del pasado, del presente o del futuro, mediante el estudio de las interacciones que configuran la relación de las actividades humanas con el espacio, reorientando eficazmente decisiones y estrategias de trabajo individual o en equipo para aportar soluciones innovadoras a contextos en transformación y fomentar el aprendizaje permanente.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Cuestionar modos de vida insostenibles mediante el análisis geográfico de todo tipo de fuentes de información que trate los retos ecosociales presentes y futuros desde argumentos fundados en la relevancia y la necesidad de las acciones para afrontarlos."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Debatir sobre los retos naturales y sociales de España de forma comprometida y respetuosa con opiniones ajenas, utilizando estrategias orales con apoyo digital de gráficos, imágenes y cartografía y manejando datos rigurosos."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Identificar problemas económicos, sociales y ambientales, a nivel local, valorando las responsabilidades personales y proponiendo actuaciones propias y directas."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Documentar el concepto de paisaje como resultado cultural, identificando paisajes diferentes como producto de procesos culturales distintos."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Valorar todo impacto de la acción antrópica desde el principio de sostenibilidad, reconociendo la complejidad sistémica del medio natural y de las propias actividades humanas."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Extraer información de paisajes naturales y humanizados, analizando fuentes visuales, distinguiendo elementos geográficos e interpretando la influencia e interrelaciones de factores físicos y humanos."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Reflexionar sobre la percepción del espacio geográfico, localizando y reconociendo en mapas las principales unidades geomorfológicas, litológicas y edáficas con características comunes y específicas."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Analizar la diversidad climática en España, distinguiendo los distintos factores y elementos del clima e interpretando mapas meteorológicos junto con otros datos climatológicos proporcionados por las TIG para reconocer y analizar la variedad de tipos de tiempo atmosférico, evaluando su incidencia en la conformación de las diferentes regiones vegetales y valorando sus consecuencias sobre el territorio, la población y los recursos."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Analizar e interpretar la diversidad hídrica de la península ibérica, identificando los diversos regímenes hídricos existentes, valorando y debatiendo su importancia ecológica y el aprovechamiento que se realiza de los recursos hídricos en nuestro país."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "3",
+      "descripcion": "Identificar la diversidad y singularidad de paisajes naturales, comparando su distribución, características y contrastes a escala autonómica, de España y de Europa, así como formas humanas de relación con esos entornos."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Emplear la escala apropiada para localizar o representar con apoyo de las TIG cualquier fenómeno físico o humano, justificando los métodos y datos elegidos y la delimitación de regiones o categorías de análisis, así como de áreas de transición."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Interpretar los fenómenos naturales y humanos, valorando la información que nos facilitan y ofrecen las Tecnologías de la Información Geográfica (TIG) y métodos y técnicas propios de otras ciencias afines, con la finalidad de identificar, describir, analizar e interpretar los elementos que integran el espacio geográfico, distinguiendo entra paisajes naturales y culturales."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Crear productos propios individuales o en grupo con fines explicativos comunicando diagnósticos, proponiendo hipótesis o conclusiones, y aplicando las TIG."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Valorar la globalización como contexto de evolución socioeconómica y cultural, analizando el impacto de las relaciones entre España y las grandes áreas geopolíticas y socioeconómicas mundiales a través de distintas fuentes de información, con la finalidad de valorar los aspectos más relevantes de la situación de España en el orden mundial y, más concretamente, en la Unión Europea."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Valorar la dignidad humana analizando críticamente las consecuencias de nuestras acciones sobre las condiciones laborales y de vida, tanto en Andalucía y España como en otros países, investigando el sistema de relaciones económicas globalizadas y los sectores económicos, y planteando soluciones razonables."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "5",
+      "descripcion": "Expresar la necesidad de preservar el medio natural indagando sobre los impactos de los modos de producción, distribución y consumo a escala local y global, y proponiendo actuaciones de mejora."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Justificar la necesidad de mecanismos de compensación de las desigualdades individuales y territoriales, identificando los procesos pasados y recientes, así como, sus causas y consecuencias sociolaborales y demográficas."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Argumentar sobre el origen de los desequilibrios socioeconómicos de España y Europa, analizando los factores de localización de las actividades económicas y de la población en una sociedad terciarizada."
+    },
+    {
+      "codigo": "6.3",
+      "competencia": "6",
+      "descripcion": "Situar en el contexto cercano ejemplos de desequilibrios identificando su origen."
+    },
+    {
+      "codigo": "7.1",
+      "competencia": "7",
+      "descripcion": "Reelaborar saberes sobre fenómenos naturales y humanos relevantes a diferentes escalas y en nuevos contextos, aplicando el pensamiento geográfico, movilizando y revisando críticamente conocimientos previos y nuevos, diagnosticando problemas y oportunidades, y razonando sobre posibles previsiones y soluciones."
+    },
+    {
+      "codigo": "7.2",
+      "competencia": "7",
+      "descripcion": "Reflexionar sobre el conflicto generado entre espacio natural y actividad antrópica, analizando, debatiendo y exponiendo en grupo, a partir de argumentos diferentes."
+    },
+    {
+      "codigo": "7.3",
+      "competencia": "7",
+      "descripcion": "Documentar la actual organización territorial del Estado Español, tomando como base la evolución histórica y la Constitución de 1978, analizando, debatiendo y exponiendo en grupo la información extraída de distintas fuentes y recursos, sobre las causas de los desequilibrios y contrastes territoriales, así como sus posibles mecanismos correctores."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. España, Europa y la globalización",
+      "titulo": "España, Europa y la globalización",
+      "items": [
+        "España: localización y situación geográfica en el mundo a través de mapas de relieve, bioclimáticos y políticos. Técnicas cartográficas y nuevas tecnologías de la información geográfica. Geoposicionamiento y dispositivos móviles.",
+        "España en el mundo.",
+        "España en Europa.",
+        "Organización territorial y administrativa de España."
+      ],
+      "codigos_items": [
+        "GEOG.2.A.1",
+        "GEOG.2.A.2",
+        "GEOG.2.A.3",
+        "GEOG.2.A.4"
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. La sostenibilidad del medio físico de España",
+      "titulo": "La sostenibilidad del medio físico de España",
+      "items": [
+        "Localización y distribución de las grandes unidades geomorfológicas.",
+        "Factores físicos y diversidad de paisajes y ecosistemas. Análisis de los condicionantes geomorfológicos, bioclimáticos, edáficos, hídricos y relativos a las actividades humanas y prevención de los riesgos asociados para las personas.",
+        "Diversidad climática de España.",
+        "Biodiversidad, suelos y red hídrica. Aguas superficiales y subterráneas. Cuencas fluviales y vertientes hidrográficas peninsulares. Humedales. Acuíferos. Factores geográficos y distribución de las formaciones vegetales en España. Variedad edáfica y características de los suelos españoles. Características por regiones naturales. Impacto de las actividades humanas y efectos sobre las mismas: pérdida de biodiversidad, de suelos y gestión del agua. Interpretación de imágenes, cartografía y datos. Riesgos generados por las personas.",
+        "La red de Espacios Naturales Protegidos, Parques Nacionales y Parques y Monumentos Naturales de Andalucía, y la red Natura 2000.",
+        "Políticas ambientales en España y la Unión Europea: uso de herramientas de diagnóstico. Debate sobre los cambios del modelo de desarrollo: el principio de sostenibilidad."
+      ],
+      "codigos_items": [
+        "GEOG.2.B.1",
+        "GEOG.2.B.2",
+        "GEOG.2.B.3",
+        "GEOG.2.B.4",
+        "GEOG.2.B.5",
+        "GEOG.2.B.6"
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. La ordenación del territorio en el enfoque ecosocial",
+      "titulo": "La ordenación del territorio en el enfoque ecosocial",
+      "items": [
+        "La población española: análisis de su estructura y desequilibrios. Interpretación causal de datos, gráficos y mapas: tendencias pasadas, presentes y proyecciones. Ventajas e inconvenientes de los movimientos migratorios; el respeto por la diversidad étnica y cultural. El reto demográfico: envejecimiento y despoblación rural. La España vaciada. El caso de Andalucía.",
+        "Los espacios urbanos en España.",
+        "Los espacios rurales.",
+        "Los recursos marinos: pesca, acuicultura y otros aprovechamientos. Los espacios pesqueros españoles: localización y condicionantes físicos. La actividad pesquera y su participación en la economía española. Análisis de las características y de la producción pesquera en España. Sostenibilidad y Política Pesquera Común. Estudio de casos: marisqueo, pesca de bajura y altura, acuicultura, sobreexplotación de caladeros, etc. La importancia del sector en Andalucía.",
+        "Los espacios industriales. La actividad industrial y su aportación a la economía española. Transformaciones en las actividades industriales y los paisajes: materias primas y fuentes de energía. Evaluación de huellas ecológicas; dependencia y transición energéticas. El proceso de industrialización en España: evolución histórica y características. Estructura del tejido industrial, sociolaboral y de empleo indirecto. Impacto de la deslocalización sobre sectores de la industria española. Estudio de casos: construcción, automovilístico, agroalimentario, etc., y factores de localización. Debate sobre la influencia de las políticas de la Unión Europea. Situación del sector industrial andaluz.",
+        "Los espacios terciarizados y el proceso de terciarización económica: causas, rasgos y participación en la economía. El modelo de economía circular y los servicios: relaciones entre producción, distribución y venta. Las tipologías de transporte. Los espacios turísticos y la evolución del modelo turístico: del binomio «sol y playa» hacia la reconversión del sector. Repercusiones, problemática y políticas. El modelo turístico andaluz. La economía digital: impacto de la «economía colaborativa» y nuevos modelos de negocio en el contexto global y de la Unión Europea. Otras actividades terciarias: sanidad, educación, servicios públicos, servicios a empresas y finanzas. El sistema de transportes como forma de articulación territorial: características, problemática y políticas.",
+        "Espacio geográfico como centro de relaciones humanas y sociales."
+      ],
+      "codigos_items": [
+        "GEOG.2.C.1",
+        "GEOG.2.C.2",
+        "GEOG.2.C.3",
+        "GEOG.2.C.4",
+        "GEOG.2.C.5",
+        "GEOG.2.C.6",
+        "GEOG.2.C.7"
+      ]
+    }
+  ],
+  "comunidad": "andalucia",
+  "idioma": "es"
+}

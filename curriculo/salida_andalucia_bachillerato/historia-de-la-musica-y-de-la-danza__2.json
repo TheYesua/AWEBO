@@ -1,0 +1,181 @@
+{
+  "materia_oficial": "Historia de la Música y de la Danza",
+  "materia": "Historia de la Música y de la Danza",
+  "etapa": "Bachillerato",
+  "ciclo": "2º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Identificar las características de la música y de la danza, apreciando su evolución a lo largo de la historia a través del análisis de las fuentes de estudio disponibles, para reconocer los rasgos de época y estilo y su función en un determinado contexto.",
+      "descriptores": [
+        "CC3",
+        "CCEC2"
+      ]
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Relacionar la música y la danza con otras formas de expresión artística, vinculándolas con la evolución del pensamiento humano, para comprender el carácter interdisciplinar del arte y valorar la importancia de su conservación y difusión como patrimonio cultural.",
+      "descriptores": [
+        "CCEC2"
+      ]
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Interpretar fragmentos musicales o adaptaciones de obras relevantes de la música y de la danza de diferentes épocas y estilos, incluyendo el rico patrimonio musical andaluz, a través de la dramatización y el empleo de la voz, el cuerpo y distintos instrumentos, para vivenciar el hecho artístico y comprenderlo desde la propia experiencia.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Investigar sobre los principales compositores, intérpretes y obras de la historia de la música y de la danza, fuentes de información fiables, para analizar las diferentes corrientes interpretativas y reflexionar sobre la riqueza del patrimonio musical y sobre la propia identidad cultural.",
+      "descriptores": [
+        "CCEC1",
+        "CCEC2"
+      ]
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Transmitir opiniones e ideas propias, informadas y fundamentadas, sobre la evolución de la música y de la danza, usando un vocabulario específico, formulando argumentos de carácter teórico y estético y analizando críticamente la obra, su interpretación y su contexto, para desarrollar la capacidad comunicativa sobre el hecho musical.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Reconocer los rasgos estilísticos de la música y de la danza en las diferentes épocas históricas, a través de la escucha activa y del visionado de manifestaciones artísticas, así como del análisis de partituras y textos representativos."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Determinar la función de la música y de la danza en los diferentes contextos, estableciendo vínculos entre las características de estas manifestaciones artísticas y los hechos histórico-estéticos que determinan el periodo."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Explicar la relación entre la música, la danza y otras manifestaciones artísticas, identificando los condicionantes históricos y los fundamentos estéticos que comparten y analizando su carácter interdisciplinar."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Analizar la importancia del patrimonio musical y dancístico, universal y andaluz, conociéndolo y apreciándolo como expresión de una época, valorando la responsabilidad sobre su conservación y difusión."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Experimentar con las características de la música y de la danza de un periodo histórico determinado, interpretando fragmentos o adaptaciones de obras relevantes con instrumentos musicales, la voz o el propio cuerpo."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Valorar la riqueza del patrimonio musical y dancístico a través del reconocimiento de las características de un determinado periodo en la adaptación de las interpretaciones y el contraste con las muestras originales."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Participar activamente en las interpretaciones, asumiendo las diferentes funciones que se asignen y mostrando interés por aproximarse al conocimiento y disfrute del repertorio propuesto."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Analizar las diferentes corrientes interpretativas, comparando distintas versiones musicales de una misma obra e identificando su vinculación con la estética del periodo."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Utilizar fuentes de información fiables en investigaciones sobre los principales compositores, intérpretes y obras de la historia de la música y de la danza, con especial atención a las de nuestra comunidad, aplicando estrategias de búsqueda, de selección y de reelaboración de la información."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Reconocer la identidad cultural propia, valorando la riqueza del patrimonio musical a través de las investigaciones realizadas."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Explicar los distintos conceptos teórico-estéticos aplicados a la música y la danza, usando de forma fiable y responsable las tecnologías digitales y respetando los derechos de autor y la propiedad intelectual."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Expresar opiniones e ideas propias, informadas y fundamentadas, sobre el patrimonio musical y dancístico, usando un vocabulario específico, formulando argumentos de carácter teórico y estético y analizando críticamente el contexto de creación de las obras, con especial atención al de la comunidad andaluza."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Percepción visual y auditiva",
+      "titulo": "Percepción visual y auditiva",
+      "items": [
+        "Elementos de la música y de la danza: identificación y análisis. Elementos de la música: ritmo, melodía y armonía. Elementos de la danza: cuerpo, espacio, ritmo y música.",
+        "Características que definen la música y la danza de diferentes periodos históricos a nivel auditivo y visual.",
+        "Aspectos socioculturales de la recepción artística. Evolución de los formatos y desarrollo del público.",
+        "Estrategias de escucha, visionado y análisis de textos y partituras."
+      ],
+      "codigos_items": [
+        "HMUS.2.A.1",
+        "HMUS.2.A.2",
+        "HMUS.2.A.3",
+        "HMUS.2.A.4"
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Contextos de creación",
+      "titulo": "Contextos de creación",
+      "items": [
+        "Factores culturales, sociales, económicos y políticos que inciden en la creación musical. Función social de la música y de la danza.",
+        "Características y evolución estética y estilística de la música y de la danza a lo largo de la historia.",
+        "Principales corrientes, escuelas, autores, intérpretes y obras representativas de la música y de la danza desde la Antigüedad clásica hasta nuestros días. La Antigüedad: relevancia en la sociedad clásica, influencia en el relato mitológico, la música en el teatro y en el pensamiento clásico, el papel del coro. La Edad Media: la música religiosa (el canto Gregoriano), la música profana (el canto de los trovadores), los comienzos de la polifonía, formas de danzas medievales, la organología medieval. El Renacimiento: música Reformista y Contrarreformista, música vocal profana y música instrumental, los pares de danza. El Barroco: el teatro musical, el nacimiento de la ópera, música vocal religiosa, música de cámara barroca, el nacimiento del estilo de la danza española, danza y vida cortesana. El Clasicismo: la reforma de la ópera, la sonata y su influencia, la escuela bolera española, el ballet d’action o ballet pantomima. El Romanticismo: la música programática, la ópera como espectáculo burgués, la zarzuela, música para piano, los grandes ballets, la danza española. Siglo XX y comienzos del S. XXI: música y tecnología, las vanguardias musicales, la danza neoclásica, música y danza en el cine, el Flamenco y la copla, música y danza hispanoamericana, la música popular.",
+        "El papel del intérprete a lo largo de la historia.",
+        "La música y la danza y su relación con las demás artes. Vinculación de ambas con el texto literario.",
+        "Interés por conocer, respetar y difundir el patrimonio musical y dancístico.",
+        "El folclore andaluz y el Flamenco: historia, evolución y desarrollo, desde sus orígenes hasta nuestros días."
+      ],
+      "codigos_items": [
+        "HMUS.2.B.1",
+        "HMUS.2.B.2",
+        "HMUS.2.B.3",
+        "HMUS.2.B.4",
+        "HMUS.2.B.5",
+        "HMUS.2.B.6",
+        "HMUS.2.B.7"
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Investigación, opinión crítica y difusión",
+      "titulo": "Investigación, opinión crítica y difusión",
+      "items": [
+        "La investigación musical: procesos de búsqueda, selección, tratamiento y difusión de la información. Fuentes de investigación musical: fiabilidad y validez.",
+        "Uso de las tecnologías digitales en la difusión de la música y de la danza. Reseñas, comentarios y críticas musicales. Respeto de los derechos de autor y de la propiedad intelectual.",
+        "Análisis crítico de eventos y manifestaciones artístico-musicales en vivo y grabadas."
+      ],
+      "codigos_items": [
+        "HMUS.2.C.1",
+        "HMUS.2.C.2",
+        "HMUS.2.C.3"
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Experimentación activa",
+      "titulo": "Experimentación activa",
+      "items": [
+        "Técnicas sencillas de interpretación vocal y/o instrumental, individuales y/o grupales, de obras adaptadas o fragmentos musicales representativos del repertorio musical, prestando especial atención al andaluz.",
+        "Práctica de danzas sencillas de diferentes periodos históricos, cultas y populares, prestando especial atención a las andaluzas. Desde los bailes medievales y su simbolismo cultural (danza de la muerte) hasta las técnicas de algunas de las escuelas contemporáneas (Limón o método Graham), pasando por el folklore local y la academización de la danza, identificándose sus posiciones básicas de pies y brazos.",
+        "Estrategias y técnicas básicas de dramatización de textos de la música vocal y su dramatización en obras musicales y dancísticas."
+      ],
+      "codigos_items": [
+        "HMUS.2.D.1",
+        "HMUS.2.D.2",
+        "HMUS.2.D.3"
+      ]
+    }
+  ],
+  "comunidad": "andalucia",
+  "idioma": "es"
+}

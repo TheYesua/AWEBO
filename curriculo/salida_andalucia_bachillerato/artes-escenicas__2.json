@@ -1,0 +1,205 @@
+{
+  "materia_oficial": "Artes Escénicas",
+  "materia": "Artes Escénicas",
+  "etapa": "Bachillerato",
+  "ciclo": "2º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Analizar manifestaciones escénicas de diferentes épocas y tradiciones, describiendo sus características, estableciendo relaciones con su contexto e identificando posibles influencias y proyecciones, para valorar el patrimonio y enriquecer el imaginario propio.",
+      "descriptores": [
+        "CCEC2"
+      ]
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Explorar las posibilidades expresivas de diferentes sistemas, medios y códigos de significación escénica, a través de actividades de carácter práctico, para incorporar su uso al repertorio personal de recursos y desarrollar el criterio de selección de los más adecuados a la intención comunicativa.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Abordar la recreación y representación de la acción dramática, a partir de la construcción colectiva de escenas que muestren todo tipo de personajes y conflictos, para desarrollar habilidades de comunicación y negociación y reforzar el autoconocimiento, la creatividad, la empatía, la imaginación y el espíritu emprendedor en diversas situaciones y contextos.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Realizar proyectos de creación y difusión escénica, planificando sus fases, seleccionando y estructurando los elementos de significación y asumiendo diferentes funciones con iniciativa y responsabilidad, para expresar una intención comunicativa, enriquecer el entorno cultural e identificar oportunidades de desarrollo personal, social, académico o profesional.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Valorar críticamente manifestaciones escénicas, identificando el público al que se dirigen y analizando sus características y sus presupuestos artísticos, para desarrollar el criterio estético, difundir el patrimonio y ampliar las posibilidades de disfrute de las Artes Escénicas.",
+      "descriptores": [
+        "CCEC2"
+      ]
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Analizar, con un vocabulario adecuado, manifestaciones escénicas de diferentes épocas y tradiciones, describiendo sus características, estableciendo relaciones con su contexto y evidenciando una actitud de apertura, interés y respeto en la recepción activa de las mismas."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Valorar críticamente los hábitos, los gustos y los referentes escénicos de diferentes épocas y tradiciones, prestando especial atención al Flamenco y al teatro andaluz, reflexionando sobre su evolución y sobre su relación con los del presente."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Participar, con iniciativa, confianza y creatividad, en la exploración de sistemas, medios y códigos de significación escénica, a través de actividades de carácter práctico."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Recrear la acción dramática, el diseño de personajes y la configuración de situaciones y escenas, seleccionando las técnicas del repertorio personal de recursos más adecuadas a la intención comunicativa."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Emplear diferentes técnicas de interpretación de forma creativa, aplicando estrategias de memorización y valorando los ensayos como espacios de escucha, diálogo y aprendizaje."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Recrear y representar la acción dramática, demostrando precisión, eficacia y expresividad, siguiendo las indicaciones de la dirección, manteniendo la concentración y gestionando de forma guiada la ansiedad y el miedo escénico."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Participar, con iniciativa, responsabilidad y conciencia de grupo, en el diseño, la planificación y la realización de proyectos colectivos de creación y difusión escénica, organizando correctamente sus fases, distribuyendo de forma razonada las tareas, evaluando su viabilidad y sostenibilidad, y seleccionando y estructurando los elementos de significación, así como las directrices de interpretación, representación o escenificación."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Evaluar y presentar los resultados de proyectos de creación y difusión escénica, analizando la relación entre los objetivos planteados y el producto final obtenido, y explicando las posibles diferencias entre ellos."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Identificar oportunidades de desarrollo personal, social, académico o profesional relacionadas con el ámbito artístico, comprendiendo su valor añadido y expresando la opinión personal de forma crítica y respetuosa."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Valorar la recepción brindada a un espectáculo determinado, relacionando las características de la obra, el contexto de la puesta en escena y las reacciones del público."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Realizar y compartir reseñas y críticas escénicas, empleando la terminología adecuada, consultando fuentes fiables y reflexionando,"
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Patrimonio escénico",
+      "titulo": "Patrimonio escénico",
+      "items": [
+        "Las Artes Escénicas y su historia: cambios y transformaciones. La representación escénica y performativa en el siglo XX. Formas tradicionales de representación escénica en Asia y otros continentes. El patrimonio andaluz, tradiciones, folclore y Flamenco.",
+        "Significado social de las Artes Escénicas: memoria y reflejo. La perspectiva de género y la perspectiva intercultural. Identidad y performatividad.",
+        "Manifestaciones espectaculares: rituales y sociales. Los festejos populares.",
+        "Tendencias actuales en la representación escénica y performativa.",
+        "Manifestaciones escénicas no orales."
+      ],
+      "codigos_items": [
+        "ARES.2.A.1",
+        "ARES.2.A.2",
+        "ARES.2.A.3",
+        "ARES.2.A.4",
+        "ARES.2.A.5"
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Expresión y comunicación escénica",
+      "titulo": "Expresión y comunicación escénica",
+      "items": [
+        "Juego dramático, improvisación, dramatización y creación colectiva.",
+        "Actos performativos: generación de realidad.",
+        "Características del espacio escénico y performativo actual.",
+        "Estructuras dramáticas actuales. La memoria performativa.",
+        "El personaje en acción en las manifestaciones",
+        "Espacios no escénicos: adaptación de recursos plásticos."
+      ],
+      "codigos_items": [
+        "ARES.2.B.1",
+        "ARES.2.B.2",
+        "ARES.2.B.3",
+        "ARES.2.B.4",
+        "ARES.2.B.5",
+        "ARES.2.B.6"
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Interpretación",
+      "titulo": "Interpretación",
+      "items": [
+        "Métodos interpretativos actuales. Aproximación a la historia de las principales teorías y escuelas de interpretación del siglo XX: Stanislavski y sus seguidores, tradición francesa de teatro del cuerpo (Copeau, Decroux, Lecoq, entre otros), otros planteamientos (Brecht, Grotowski, Brook, Boal, entre otros).",
+        "Profundización en los instrumentos del intérprete: expresión corporal, gestual, oral y rítmicomusical. La conciencia emocional.",
+        "La construcción actual del personaje dramático.",
+        "Creación performativa: proceso y ejecución."
+      ],
+      "codigos_items": [
+        "ARES.2.C.1",
+        "ARES.2.C.2",
+        "ARES.2.C.3",
+        "ARES.2.C.4"
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Representación y escenificación",
+      "titulo": "Representación y escenificación",
+      "items": [
+        "El diseño de un espectáculo: equipos, fases y áreas de trabajo. Espacios escénicos y espacios no escénicos. Integración de lenguajes no orales y tecnológicos.",
+        "Utilización de medios audiovisuales e informáticos en las producciones propias para favorecer la autocrítica a través de grabaciones en diferentes soportes.",
+        "Estrategias de trabajo en equipo. Distribución de tareas y liderazgo compartido. Resolución de conflictos.",
+        "La dramaturgia en el diseño de un proyecto escénico.",
+        "La producción y la realización de un proyecto escénico.",
+        "La dirección artística en proyectos escénicos.",
+        "Los ensayos: funciones de la dirección escénica y regiduría.",
+        "Representación de espectáculos escénicos.",
+        "Exhibición, difusión, distribución y evaluación de productos escénicos. La gira.",
+        "El desarrollo personal, social, académico y profesional, oportunidades vinculadas con la materia."
+      ],
+      "codigos_items": [
+        "ARES.2.D.1",
+        "ARES.2.D.2",
+        "ARES.2.D.3",
+        "ARES.2.D.4",
+        "ARES.2.D.5",
+        "ARES.2.D.6",
+        "ARES.2.D.7",
+        "ARES.2.D.8",
+        "ARES.2.D.9",
+        "ARES.2.D.10"
+      ]
+    },
+    {
+      "codigo": "E",
+      "bloque": "E. Recepción en las Artes Escénicas",
+      "titulo": "Recepción en las Artes Escénicas",
+      "items": [
+        "El público como elemento participativo en manifestaciones escénicas actuales.",
+        "Estrategias y técnicas de análisis de manifestaciones escénicas. El texto en su relación con la puesta en escena.",
+        "La crítica escénica. Estrategias y técnicas de elaboración de una reseña.",
+        "El respeto de la propiedad intelectual. La protección de la creatividad personal. andaluz, empleando la terminología adecuada, reelaborando información a partir de fuentes fiables, y reflexionando críticamente sobre sus características y presupuestos artísticos. con rigor y solidez, sobre las características, los presupuestos artísticos y la recepción de la obra."
+      ],
+      "codigos_items": [
+        "ARES.2.E.1",
+        "ARES.2.E.2",
+        "ARES.2.E.3",
+        "ARES.2.E.4"
+      ]
+    }
+  ],
+  "comunidad": "andalucia",
+  "idioma": "es"
+}

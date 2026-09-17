@@ -1,0 +1,189 @@
+{
+  "materia_oficial": "Cultura Audiovisual",
+  "materia": "Cultura Audiovisual",
+  "etapa": "Bachillerato",
+  "ciclo": "1º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Analizar imágenes fotográficas fijas y producciones audiovisuales de distintos estilos, formatos, géneros y culturas, reconociendo sus cualidades plásticas, formales y semánticas y reflexionando sobre la historia de ambos medios, para desarrollar el criterio estético, valorar el patrimonio, ampliar las posibilidades de disfrute y enriquecer el imaginario propio.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Elaborar producciones audiovisuales individuales o colectivas, empleando la propia presencia en la imagen y la banda de sonido y evaluando el rigor ético y formal de los procedimientos, para expresar y comunicar ideas, opiniones y sentimientos y construir una personalidad creativa abierta, amplia y diversa.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Seleccionar y utilizar las técnicas, herramientas y convenciones del lenguaje y la producción audiovisual, teniendo en cuenta todos sus aspectos (guion, planificación, interpretación, grabación, edición, etc.), para realizar creaciones audiovisuales de forma colectiva y aprender a desenvolverse en circunstancias diversas.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Determinar el público destinatario de una producción audiovisual, analizando sus características y atendiendo al propósito de la obra, para adoptar el lenguaje, el formato y los medios técnicos más adecuados y seleccionar las vías de difusión más oportunas.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Explicar los aspectos esenciales de la evolución del lenguaje fotográfico y audiovisual, valorando los cambios que se han producido a lo largo de la historia del medio."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Analizar las cualidades plásticas, formales y semánticas de producciones fotográficas y audiovisuales de distintos estilos, formatos, géneros y culturas, determinando las reglas y códigos por las que se rigen y valorando la flexibilidad de esas normas."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Proponer interpretaciones personales del patrimonio fotográfico y audiovisual, argumentando desde un criterio estético propio."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Diseñar producciones audiovisuales creativas que representen las ideas, opiniones y sentimientos propios a partir de un tema o motivo previos, incorporando las experiencias personales y el acercamiento a otros medios de expresión."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Evaluar el rigor ético y formal con el que se usan las herramientas de creación audiovisual, analizando diversas producciones, distinguiendo críticamente los modos de presentar las informaciones y los mensajes, identificando su posible manipulación y reflexionando sobre la necesidad de respeto de la propiedad intelectual y los derechos de autor."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Realizar producciones audiovisuales creativas que representen las ideas, opiniones y sentimientos propios a partir de un tema o motivo previos, utilizando la propia presencia en la imagen y la banda de sonido y empleando el lenguaje y los medios de producción con rigor ético y formal."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Confeccionar adecuadamente los equipos de trabajo para producciones audiovisuales colectivas, identificando las diferentes habilidades requeridas y repartiendo las tareas con criterio."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Planificar producciones audiovisuales, determinando los medios y habilidades necesarios, teniendo en cuenta todos sus aspectos: guion, planificación, interpretación, grabación, edición u otros, justificando razonadamente su elección y considerando los posibles imprevistos y la manera de resolverlos."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Demostrar flexibilidad y habilidad para resolver los imprevistos propios de las producciones audiovisuales, teniéndolos en cuenta en su planificación y considerando de manera abierta las diferentes posibilidades para resolver un problema sobrevenido."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "3",
+      "descripcion": "Realizar producciones audiovisuales de manera creativa, utilizando correctamente las técnicas, herramientas y convenciones del lenguaje necesarias, valorando el trabajo colaborativo e intentando conseguir un resultado final ajustado al proyecto preparado previamente."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Justificar la elección del lenguaje, el formato y los medios técnicos en producciones audiovisuales, considerando previamente el tipo de público al que se quieren dirigir."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Seleccionar las vías de difusión más adecuadas para producciones audiovisuales, teniendo en cuenta su propósito, valorando de manera crítica e informada las posibilidades existentes, utilizando entornos seguros y respetando la propiedad intelectual y los derechos de autor."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Analizar de manera abierta y respetuosa la recepción de las producciones audiovisuales presentadas, comprobando la adecuación del lenguaje, el formato y los medios técnicos de la obra, así como de las vías de difusión, y extrayendo de ello un aprendizaje para el crecimiento creativo."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Hitos y contemporaneidad de la fotografía y el audiovisual. Formatos audiovisuales",
+      "titulo": "Hitos y contemporaneidad de la fotografía y el audiovisual. Formatos audiovisuales",
+      "items": [
+        "Creación y evolución de la fotografía y el lenguaje audiovisual. Principales corrientes en fotografía y cine. Mujeres pioneras en el mundo de la fotografía.",
+        "La diversidad en las manifestaciones fotográficas y audiovisuales contemporáneas y del pasado. Lectura y análisis comparativo, considerando su contexto histórico. Medios de comunicación convencionales e internet. El mundo audiovisual como representación del mundo real. Evolución de la construcción de imágenes: de los orígenes al new media art. Tipología y características de los medios audiovisuales convencionales y de los new media y su influencia social en las audiencias. Cambio de paradigma de la publicidad en los medios convencionales e internet.",
+        "Géneros fotográficos y nuevos lenguajes de la imagen.",
+        "Principales formatos audiovisuales: corto, medio y largometraje de ficción, corto, medio y largometraje documental, serie, ensayo fílmico, formatos televisivos, videoclip, fashion film, spot, vídeo educativo, video corporativo/institucional, formatos asociados a las redes sociales, etc. Aspectos formales más destacados. Los grandes realizadores españoles de televisión: Chicho Ibáñez Serrador, Félix Rodríguez de la Fuente, Valerio Lazarov, Fernando Navarrete, Antonio Mercero, Lolo Rico, Hugo Stuven. Análisis de sus aspectos formales más destacados. Los showrunners o autores-productores de series: Alex Pina, Daniel Écija, Matthew Weiner, Shonda Rhimes, Matt Groening, Vince Gilligan, etc. Aspectos formales y narrativos de las series nacionales e internacionales. B. Elementos formales y capacidad expresiva de la imagen fotográfica y el lenguaje audiovisual."
+      ],
+      "codigos_items": [
+        "CULA.1.A.1",
+        "CULA.1.A.2",
+        "CULA.1.A.3",
+        "CULA.1.A.4"
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Bloque B",
+      "titulo": "Bloque B",
+      "items": [
+        "Plano (escala: valor expresivo, descriptivo y narrativo) y toma, angulaciones y movimientos de cámara. El uso de la gramática en los planos: el raccord, la planificación y sucesión en el tamaño de los planos, el salto de eje, la ley de la mirada, la dirección del movimiento y las salidas y entradas de cuadro.",
+        "Exposición, profundidad de campo, enfoque, encuadre, campo y fuera de campo, la elipsis narrativa. El centro de interés, las líneas en la composición, el ritmo visual, regla de los tercios, la regla del horizonte, la proporción áurea, espacios positivos y espacios negativos, enfoque total y selectivo, textura, volumen, perspectiva, iluminación.",
+        "Conceptos básicos sobre iluminación.",
+        "Composición para imagen fija y para imagen en movimiento.",
+        "Simbología y psicología del color. Ejemplos de aplicación en grandes obras del cine y la fotografía. La elección del tono, saturación, luminosidad y su intencionalidad expresiva y narrativa en los medios audiovisuales.",
+        "El retoque digital. Análisis de posibilidades. Morphing, creación de imágenes por ordenador (CGI), captura de movimiento (MOCAP), Bullet time, Deep Fake, etalonaje digital.",
+        "Funciones de la imagen audiovisual."
+      ],
+      "codigos_items": [
+        "CULA.1.B.1",
+        "CULA.1.B.2",
+        "CULA.1.B.3",
+        "CULA.1.B.4",
+        "CULA.1.B.5",
+        "CULA.1.B.6",
+        "CULA.1.B.7"
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Expresión y narrativa audiovisual",
+      "titulo": "Expresión y narrativa audiovisual",
+      "items": [
+        "El guion literario. Fases de elaboración. Escena y secuencia dramática. La escaleta. Literatura y guion cinematográfico: adaptaciones novelísticas y de obras teatrales al lenguaje cinematográfico. La teoría del guion en Syd Field y Robert McKee. Protagonistas, antagonistas, secundarios. Los arquetipos y las tramas universales. Los personajes en los guiones cinematográficos: personalidad, dilemas y el arco del personaje. El MacGuffin.",
+        "El guion técnico y el storyboard.",
+        "La puesta en escena: localizaciones, decorados (volumétricos y virtuales), caracterización, interpretación, iluminación, movimiento. Los decorados de Gil Parrondo. Los diseñadores de vestuario: Edith Head, Yvonne Blake, Collen Atwood y la alta costura en el cine.",
+        "La banda de sonido: perspectiva sonora y posibilidades expresivas. La relación perceptiva entre imagen y sonido: el sonido diegético y no diegético, diálogos, monólogo interior, voz en off. Va del sonido y el silencio en relación con la imagen. Funciones de la música en las producciones audiovisuales. El leitmotiv.",
+        "El montaje y la postproducción. Evolución y gramática. El uso del montaje en las relaciones espacio temporales: flash forward, flas back, acciones paralelas, elipsis, simultaneidad. El efecto Kuleshov.",
+        "Los lenguajes de la televisión y la publicidad."
+      ],
+      "codigos_items": [
+        "CULA.1.C.1",
+        "CULA.1.C.2",
+        "CULA.1.C.3",
+        "CULA.1.C.4",
+        "CULA.1.C.5",
+        "CULA.1.C.6"
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. La producción audiovisual. Técnicas y procedimientos",
+      "titulo": "La producción audiovisual. Técnicas y procedimientos",
+      "items": [
+        "Equipos humanos de trabajo en la producción audiovisual: dirección, producción, cámara/fotografía, sonido, arte, postproducción. Montador, compositor musical, director de fotografía, sonidista, atrezzista, Script.",
+        "La distribución de tareas en la producción audiovisual: criterios de selección a partir de las habilidades requeridas.",
+        "Fases de trabajo: reproducción, rodaje y postproducción. Guiones originales. Adaptaciones. Castings. El plan de rodaje. Distribución y exhibición.",
+        "Estrategias de selección de técnicas, herramientas y convenciones audiovisuales. Medios técnicos de realización: cámara y accesorios, microfonía, equipo de iluminación: grúa, trávelin, cabeza caliente, steadycam, estabilizadores volantes; jirafas y perchas; tipología de micrófonos según dirección; luminarias de luz difusa y de luz puntual; viseras, pantallas reflectoras, paraguas; soportes de aparatos de iluminación.",
+        "Grabación del sonido. Sincrónico y recreado. Efectos foley y efectos especiales de sonido.",
+        "Introducción a los softwares de edición no lineal. Diferencias entre la edición lineal y no lineal. Principales editores de vídeo no lineales.",
+        "Difusión de contenidos audiovisuales: redes sociales, salas comerciales, espacios de exhibición alternativos, festivales cinematográficos en línea y presenciales, etc. Los portales de internet y las redes sociales. Uso responsable. Los nuevos canales de promoción artística. Premios Óscar, Festival de Cine de Venecia, Premios Goya, Festival de Cine de San Sebastián, etc. El podcast (características y géneros). Protección de datos, propiedad intelectual y derechos de autoría.",
+        "Técnicas y estrategias de evaluación de las producciones audiovisuales."
+      ],
+      "codigos_items": [
+        "CULA.1.D.1",
+        "CULA.1.D.2",
+        "CULA.1.D.3",
+        "CULA.1.D.4",
+        "CULA.1.D.5",
+        "CULA.1.D.6",
+        "CULA.1.D.7",
+        "CULA.1.D.8"
+      ]
+    }
+  ],
+  "comunidad": "andalucia",
+  "idioma": "es"
+}

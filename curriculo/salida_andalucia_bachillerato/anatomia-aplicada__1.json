@@ -1,0 +1,213 @@
+{
+  "materia_oficial": "Anatomía Aplicada",
+  "materia": "Anatomía Aplicada",
+  "etapa": "Bachillerato",
+  "ciclo": "1º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Analizar y comprender desde una perspectiva sistémica la estructura y funcionamiento del cuerpo humano, explicándolo desde el conocimiento de sus sistemas y aparatos para interpretar la conexión de estas estructuras y su interacción con el entorno.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Recolectar, interpretar y transmitir información, argumentando con precisión y rigor, y dominando la terminología básica, sobre las funciones esenciales del cuerpo humano, en especial sobre la nutrición, producción energética, la relación con el entorno y el movimiento; observando su funcionamiento en situaciones de la vida cotidiana para la interpretación de la realidad.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Localizar y utilizar fuentes fiables de información, contrastando su veracidad para resolver preguntas relevantes comúnmente extendidas o planteadas autónomamente sobre la anatomía o fisiología humana y los hábitos de vida y encauzando las respuestas hacia la sensibilización y adquisición de hábitos de vida saludables.",
+      "descriptores": [
+        "CPSAA2",
+        "CC4"
+      ]
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Diseñar, promover y ejecutar iniciativas encaminadas a la adopción de medidas conducentes a la mejora de la salud individual y colectiva desde el conocimiento estructural y funcional del cuerpo humano, fomentando hábitos de vida activos y saludables.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Afrontar y resolver con autonomía problemas simples prácticos de tipo anatómico y funcional que se le plantean en su actividad cotidiana, aplicando los conocimientos adquiridos sobre el cuerpo humano y el movimiento en sus distintas manifestaciones para incorporarlo a la vida diaria.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Interpretar el funcionamiento del cuerpo humano como unidad anatómica y funcional, reconociendo los distintos niveles de integración y participación de los sistemas corporales."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Comprender y relacionar los distintos elementos anatómicos que conforman los sistemas corporales."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Analizar y comprender los mecanismos básicos de funcionamiento de los aparatos y sistemas corporales, así como su asociación con otros en torno a sus funciones básicas aplicadas."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "1",
+      "descripcion": "Manejar destrezas tales como el uso del microscopio y las técnicas de disección para una mejor comprensión de la anatomía humana."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Aplicar los métodos de las ciencias empíricas para la recopilación rigurosa de datos de la realidad observada, así como aquellos conducentes a la organización e interpretación de los mismos."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Manejar con precisión metodológica la terminología específica de las ciencias utilizadas para la descripción de los sistemas corporales y las funciones básicas que realizan."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Buscar, seleccionar y ordenar de forma sistemática información útil sobre el conocimiento de la anatomía y fisiología humana, identificando fuentes fiables, y realizando un análisis crítico y aplicado a situaciones específicas."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Contrastar y justificar la información relacionada con los problemas habitualmente planteados que implican el conocimiento del funcionamiento del cuerpo humano, identificando creencias infundadas, bulos, falacias interesadas o simplemente, razonamientos no fundamentados."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Mantener una actitud crítica y activa frente a informaciones contrarias a la salud individual y colectiva, y producir información favorable a los hábitos adecuados para la consecución de un estilo de vida saludable."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Planificar y poner en práctica proyectos activos, de impacto en su entorno social, imbricados en el cuidado de la salud y el fomento de estilos de vida activos."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Conocer y aplicar principios básicos de ergonomía e higiene postural en las actividades de la vida cotidiana."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Adoptar medidas de seguridad e higiene postural en las actividades colectivas e individuales que organiza o en las que se participa."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Analizar y comprender los fundamentos de sus acciones motrices, tanto de la vida cotidiana como de prácticas deportivas o expresivas."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Adaptar o modificar, si fuera necesario, sus actividades cotidianas, en especial las motoras, a sus condiciones anatómicas y fisiológicas, convirtiéndolas en eficientes y fuentes de bienestar."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Conocimiento general del cuerpo humano",
+      "titulo": "Conocimiento general del cuerpo humano",
+      "items": [
+        "Identificación de los niveles de organización del cuerpo humano y comprensión de las características de cada una de las unidades estructurales y funcionales.",
+        "Reconocimiento de la estructura general de la célula humana, mediante el análisis de los diferentes orgánulos que posee y de sus funciones vitales.",
+        "Manejo del microscopio óptico, así como de microscopios virtuales para el análisis de tejidos humanos.",
+        "Comprensión de cómo el funcionamiento del cuerpo humano es el resultado de la integración anatómica y funcional.",
+        "Comprensión de cómo ha tenido lugar la indagación e investigación del cuerpo humano desde la Antigua Grecia hasta nuestros días, como proceso para la construcción de los nuevos paradigmas de interpretación.",
+        "Desarrollo de destrezas en el manejo de aplicaciones y dispositivos digitales utilizados para el conocimiento del cuerpo humano, su control, seguimiento y apoyo de los sistemas vitales básicos.",
+        "Desarrollo de destrezas en la disección de órganos para la mejor comprensión de la anatomía humana."
+      ],
+      "codigos_items": [
+        "AAPL.1.A.1",
+        "AAPL.1.A.2",
+        "AAPL.1.A.3",
+        "AAPL.1.A.4",
+        "AAPL.1.A.5",
+        "AAPL.1.A.6",
+        "AAPL.1.A.7"
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Acción y movimiento",
+      "titulo": "Acción y movimiento",
+      "items": [
+        "Análisis del sistema osteo-articular mediante la descripción de los diferentes tipos de huesos y sus características, la identificación de los diferentes tipos de articulaciones con sus partes y grados de movimiento, así como la implicación articular en los movimientos básicos.",
+        "Reconocimiento del músculo como órgano efector del movimiento a través del estudio de la fisiología de la contracción muscular voluntaria.",
+        "Comprensión de las características del movimiento humano mediante el análisis de patrones motores básicos, deportivos y expresivos.",
+        "Interpretación de las bases de la biomecánica del movimiento estableciendo relaciones con los principios anatómicos funcionales.",
+        "Reconocimiento del sistema nervioso como organizador de la acción motora, mediante el estudio de los mecanismos neurológicos que controlan la acción voluntaria y refleja.",
+        "Análisis del sistema sensorial, mediante el estudio de los órganos receptores y su relación con los diferentes tipos de estímulos.",
+        "Desarrollo de destrezas para realizar los cálculos espacio-temporales asociados al movimiento.",
+        "Identificación de las capacidades coordinativas como componentes cualitativos del movimiento.",
+        "Análisis de las adaptaciones del aparato locomotor como resultado de la práctica sistematizada de actividad física.",
+        "Identificación de las patologías más frecuentes del aparato locomotor, tales como dismetría, artritis, fibromialgia o hernia discal, estableciendo relaciones entre estas y la actividad física sistematizada.",
+        "Desarrollo de hábitos saludables de higiene postural, poniendo especial interés en los cuidados ergonómicos en el ámbito escolar y laboral.",
+        "Búsqueda de información, sobre los distintos tipos de actividades deportivas, analizando sus características, las diferentes exigencias que tienen sobre los sistemas corporales, así como las lesiones más frecuentes."
+      ],
+      "codigos_items": [
+        "AAPL.1.B.1",
+        "AAPL.1.B.2",
+        "AAPL.1.B.3",
+        "AAPL.1.B.4",
+        "AAPL.1.B.5",
+        "AAPL.1.B.6",
+        "AAPL.1.B.7",
+        "AAPL.1.B.8",
+        "AAPL.1.B.9",
+        "AAPL.1.B.10",
+        "AAPL.1.B.11",
+        "AAPL.1.B.12"
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Funciones vitales y salud",
+      "titulo": "Funciones vitales y salud",
+      "items": [
+        "Diferenciación entre los procesos de alimentación y nutrición.",
+        "Análisis de los procesos de digestión y absorción de los alimentos y nutrientes, estableciendo relaciones con los órganos implicados.",
+        "Análisis de los tipos de alimentos y nutrientes según la información dada en la rueda de los alimentos.",
+        "Reconocimiento y análisis de la dieta mediterránea como base tradicional de la alimentación andaluza, usándola como modelo en la elaboración de pautas para una dieta saludable y equilibrada, identificando algunos tópicos erróneos sobre nutrición.",
+        "Desarrollo de destrezas para el cálculo de la ingesta y del gasto calórico (balance energético).",
+        "Desarrollo de estrategias para la comprensión de los sistemas de producción energética celular, estableciendo diferencias entre el metabolismo aeróbico y anaeróbico.",
+        "Identificación de trastornos del comportamiento nutricional, poniendo especial atención en las dietas restrictivas, la anorexia, la bulimia y la obesidad.",
+        "Reconocimiento de la diabetes tipo II como enfermedad relacionada con la obesidad, valorando que su control y mejora tienen lugar a través de la dieta y el ejercicio físico.",
+        "Conocimiento del sistema respiratorio, mediante el análisis de los órganos que lo componen, su funcionamiento y adaptación al esfuerzo físico.",
+        "Sensibilización sobre cómo algunos hábitos perjudiciales para el sistema respiratorio derivan en algunas patologías como el cáncer de pulmón.",
+        "Desarrollo de estrategias para inculcar una educación respiratoria, relacionándola con el cuidado de la voz, la actividad física y el control emocional.",
+        "Conocimiento del sistema cardiovascular mediante el análisis de los órganos que lo componen y su funcionamiento.",
+        "Manejo de conceptos básicos relacionados con el sistema cardiovascular, como frecuencia cardíaca, volumen sistólico, hematocrito o sistema circulatorio periférico.",
+        "Análisis de las principales patologías del sistema circulatorio, poniendo especial atención al infarto de miocardio y valorando pautas y hábitos de vida saludables que traten de evitarlas.",
+        "Identificación del sistema neuroendocrino en la regulación del organismo mediante el conocimiento de las glándulas endocrinas, las hormonas que producen y su intervención en los procesos vitales, así como su relación con la actividad física y el control de las emociones.",
+        "Análisis de las causas que originan desequilibrios hormonales y comprensión de los efectos ocasionados en el organismo."
+      ],
+      "codigos_items": [
+        "AAPL.1.C.1",
+        "AAPL.1.C.2",
+        "AAPL.1.C.3",
+        "AAPL.1.C.4",
+        "AAPL.1.C.5",
+        "AAPL.1.C.6",
+        "AAPL.1.C.7",
+        "AAPL.1.C.8",
+        "AAPL.1.C.9",
+        "AAPL.1.C.10",
+        "AAPL.1.C.11",
+        "AAPL.1.C.12",
+        "AAPL.1.C.13",
+        "AAPL.1.C.14",
+        "AAPL.1.C.15",
+        "AAPL.1.C.16"
+      ]
+    }
+  ],
+  "comunidad": "andalucia",
+  "idioma": "es"
+}

@@ -1,0 +1,147 @@
+{
+  "materia_oficial": "Coro y Técnica Vocal",
+  "materia": "Coro y Técnica Vocal",
+  "etapa": "Bachillerato",
+  "ciclo": "1º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Escuchar y visionar de forma activa piezas vocales de distintos estilos, géneros y culturas, analizando los rasgos de estilo y las características de la interpretación, para desarrollar el criterio estético, estimular el hábito de escucha activa y ampliar las posibilidades de disfrute de la música.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Expresarse vocal y corporalmente, de forma individual y colectiva, a través de la aplicación de diferentes técnicas y la realización de actividades de improvisación, para reforzar la autoestima y la autoconfianza y desarrollar la voz y el cuerpo como instrumentos de comunicación.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Interpretar piezas de diferentes estilos y géneros musicales, participando en distintas formaciones vocales, para potenciar una comunicación artística rica y el desarrollo de valores colectivos.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Participar en proyectos escénicos, realizando actuaciones y asumiendo tareas propias de la producción, para favorecer el crecimiento artístico personal, enriquecer el entorno cultural e identificar oportunidades de desarrollo personal, social, académico o profesional.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Analizar piezas vocales explicando de manera razonada las cualidades que las hacen afines a un estilo, a un género o a una cultura, así como otras características de la interpretación y de la puesta en escena."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Valorar la influencia e importancia de la música vocal a lo largo de la historia y en la actualidad, analizando críticamente su relación con la cultura y la sociedad, prestando especial atención al de la comunidad andaluza."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Realizar ejercicios e improvisaciones sencillas para el desarrollo de la escucha activa y de la capacidad vocal, aplicando técnicas vocales y corporales sanas, y reforzando la autoestima y la autoconfianza."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Reconocer las intencionalidades de la práctica coral y el canto, tanto en la música de nuestra tradición occidental, en especial en la andaluza, como en la de otras culturas, distinguiendo y valorando las características de sus lenguajes."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Participar como intérprete de coro, demostrando eficacia, escucha activa y una expresión vocal y corporal adecuada al servicio del conjunto y a las directrices de la dirección."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Conocer las diferentes técnicas interpretativas y utilizarlas en las creaciones individuales y grupales."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Mostrar, en la actuación, una actitud escénica adecuada y respeto por el público."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Participar creativa y activamente en el montaje de proyectos escénicos con responsabilidad y conciencia de grupo."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Análisis",
+      "titulo": "Análisis",
+      "items": [
+        "Vocabulario específico para el análisis de obras corales.",
+        "Estrategias de escucha activa de obras de diferentes estilos y géneros, incluyendo obras propias del Coro y Técnica Vocal II",
+        "Identificación auditiva de las características básicas de los estilos, géneros y culturas musicales seleccionados.",
+        "Análisis de audiciones o visionados del repertorio coral de diferentes épocas y estilos de la música culta occidental, así como de otros ámbitos culturales, prestando especial interés al repertorio andaluz, tanto culto como popular.",
+        "La relación texto-música. El texto a través del análisis fonético."
+      ],
+      "codigos_items": [
+        "CORO.1.A.1",
+        "CORO.1.A.2",
+        "CORO.1.A.3",
+        "CORO.1.A.4",
+        "CORO.1.A.5"
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Técnica vocal",
+      "titulo": "Técnica vocal",
+      "items": [
+        "Práctica de la relajación y la concentración.",
+        "Técnicas para el cuidado de la voz y la postura del cuerpo.",
+        "Elementos de la producción vocal. El aparato de fonación: relajación, respiración, vocalización, dicción, articulación, emisión y control del sonido. Impostación.",
+        "Técnicas de expresión corporal. Relación de la emisión vocal y el movimiento.",
+        "Práctica de ejercicios y vocalizaciones. Improvisaciones.",
+        "El oído armónico y la afinación: entonación de intervalos melódicos y armónicos sencillos.",
+        "Valoración del silencio para una buena escucha e interpretación musical."
+      ],
+      "codigos_items": [
+        "CORO.1.B.1",
+        "CORO.1.B.2",
+        "CORO.1.B.3",
+        "CORO.1.B.4",
+        "CORO.1.B.5",
+        "CORO.1.B.6",
+        "CORO.1.B.7"
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Práctica de conjunto",
+      "titulo": "Práctica de conjunto",
+      "items": [
+        "El sonido de conjunto: respiración, ataque, afinación, articulación, ritmo, fraseo y dinámica. Equilibrio entre voces y planos sonoros.",
+        "La improvisación vocal y corporal en el conjunto.",
+        "La percusión corporal y otros diseños coreográficos, como acompañamiento de la práctica coral.",
+        "La memoria musical en la interpretación coral.",
+        "Los ensayos: finalidades y organización en la práctica coral.",
+        "Indicaciones y gestos de la dirección coral.",
+        "Repertorio de coro de diferentes épocas y estilos del ámbito occidental, así como de otros ámbitos culturales, de nivel básico, con o sin acompañamiento instrumental y dando relevancia al de nuestra comunidad autónoma.",
+        "Actitud escénica y relación con el público.",
+        "Utilización de medios audiovisuales e informáticos para favorecer la interpretación y la escucha"
+      ],
+      "codigos_items": [
+        "CORO.1.C.1",
+        "CORO.1.C.2",
+        "CORO.1.C.3",
+        "CORO.1.C.4",
+        "CORO.1.C.5",
+        "CORO.1.C.6",
+        "CORO.1.C.7",
+        "CORO.1.C.8",
+        "CORO.1.C.9"
+      ]
+    }
+  ],
+  "comunidad": "andalucia",
+  "idioma": "es"
+}

@@ -1,0 +1,196 @@
+{
+  "materia_oficial": "Artes Escénicas",
+  "materia": "Artes Escénicas",
+  "etapa": "Bachillerato",
+  "ciclo": "1º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Analizar manifestaciones escénicas de diferentes épocas y tradiciones, describiendo sus características, estableciendo relaciones con su contexto e identificando posibles influencias y proyecciones, para valorar el patrimonio y enriquecer el imaginario propio.",
+      "descriptores": [
+        "CCEC2"
+      ]
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Explorar las posibilidades expresivas de diferentes sistemas, medios y códigos de significación escénica, a través de actividades de carácter práctico, para incorporar su uso al repertorio personal de recursos y desarrollar el criterio de selección de los más adecuados a la intención comunicativa.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Abordar la recreación y representación de la acción dramática, a partir de la construcción colectiva de escenas que muestren todo tipo de personajes y conflictos, para desarrollar habilidades de comunicación y negociación y reforzar el autoconocimiento, la creatividad, la empatía, la imaginación y el espíritu emprendedor en diversas situaciones y contextos.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Realizar proyectos de creación y difusión escénica, planificando sus fases, seleccionando y estructurando los elementos de significación y asumiendo diferentes funciones con iniciativa y responsabilidad, para expresar una intención comunicativa, enriquecer el entorno cultural e identificar oportunidades de desarrollo personal, social, académico o profesional.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Valorar críticamente manifestaciones escénicas, identificando el público al que se dirigen y analizando sus características y sus presupuestos artísticos, para desarrollar el criterio estético, difundir el patrimonio y ampliar las posibilidades de disfrute de las Artes Escénicas.",
+      "descriptores": [
+        "CCEC2"
+      ]
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Identificar, con un vocabulario adecuado, las principales características de manifestaciones escénicas de diferentes épocas y tradiciones, tanto occidentales como no occidentales, con especial atención al patrimonio escénico andaluz y a su elemento más singular, el Flamenco, estableciendo relaciones con su contexto y evidenciando una actitud de apertura, interés y respeto en la recepción activa de las mismas."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Establecer conexiones entre manifestaciones escénicas de diferentes épocas y tradiciones, valorando su influencia sobre las Artes Escénicas actuales."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Participar, con iniciativa, confianza y creatividad, en la exploración de sistemas, medios y códigos de significación escénica, a través de actividades de carácter práctico."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Recrear la acción dramática, el diseño de personajes y la configuración de situaciones y escenas, seleccionando las técnicas más adecuadas de entre las que conforman el repertorio personal de recursos."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Emplear técnicas elementales de interpretación individual o colectiva, aplicando estrategias de memorización y valorando los ensayos como espacios de escucha, diálogo y aprendizaje."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Recrear y representar la acción dramática, demostrando eficacia, siguiendo las indicaciones de la dirección, manteniendo la concentración y gestionando de forma guiada la ansiedad y el miedo escénico."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Participar activamente en la planificación y realización de proyectos colectivos de creación y difusión escénica, asumiendo diferentes funciones con iniciativa y responsabilidad, y valorando y respetando las aportaciones y experiencias del resto de integrantes del grupo."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Evaluar y presentar los resultados de la planificación y la participación en proyectos de creación y difusión escénica, analizando la relación entre los objetivos planteados y el producto final obtenido, y explicando de forma argumentada las posibles diferencias entre ellos."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Identificar el tipo de público al que se dirige un espectáculo determinado, basando los argumentos en el análisis de la obra y en las reacciones del público."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Comentar manifestaciones escénicas, con especial atención a las producciones del patrimonio escénico"
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Patrimonio escénico",
+      "titulo": "Patrimonio escénico",
+      "items": [
+        "Artes escénicas: concepto, tipologías y tradiciones. El teatro, la ópera, el ballet y la danza, el musical, la performance y el circo.",
+        "Las Artes Escénicas y su historia: cambios y transformaciones. La representación escénica en la Edad antigua: Grecia y Roma. La representación escénica en la Edad Media europea: espectáculos litúrgicos y profanos. La representación escénica en el Renacimiento y el Barroco: Comedia del arte. La representación en Inglaterra, España y Francia en los siglos XVI y XVII. La representación escénica en los siglos XVIII y XIX en Europa. Primeras sistematizaciones sobre el arte de la interpretación: Diderot. Evolución de las Artes Escénicas en la Comunidad Andaluza.",
+        "Dramaticidad, teatralidad y performatividad.",
+        "El patrimonio inmaterial, prestando especial atención al andaluz."
+      ],
+      "codigos_items": [
+        "ARES.1.A.1",
+        "ARES.1.A.2",
+        "ARES.1.A.3",
+        "ARES.1.A.4"
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Expresión y comunicación escénica",
+      "titulo": "Expresión y comunicación escénica",
+      "items": [
+        "Códigos de significación escénica: naturaleza, descripción y clasificación.",
+        "El espacio escénico como generador de significado. La convención teatral. Artes Escénicas II",
+        "Recursos plásticos: escenografía volumétrica y virtual, caracterización, iluminación y espacio sonoro. Recursos literarios y otros materiales. El texto dramático: trabajo de mesa, análisis, adaptación y memorización.",
+        "El conflicto dramático: personaje, situación y acción dramática.",
+        "El personaje dramático: análisis, caracterización y construcción.",
+        "Juego dramático, improvisación, dramatización y creación colectiva."
+      ],
+      "codigos_items": [
+        "ARES.1.B.1",
+        "ARES.1.B.2",
+        "ARES.1.B.3",
+        "ARES.1.B.4",
+        "ARES.1.B.5",
+        "ARES.1.B.6"
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Interpretación",
+      "titulo": "Interpretación",
+      "items": [
+        "Preparación física y preparación pre-expresiva. El cuidado del cuerpo.",
+        "Métodos y técnicas de interpretación.",
+        "Los instrumentos del intérprete: expresión corporal, gestual, oral y rítmico-musical. La conciencia emocional y corporal. El sentido cinestésico.",
+        "El personaje dramático: grados de representación, objetivos y funciones.",
+        "La expresión corporal: la dramatización, el mimo y la danza.",
+        "La partitura interpretativa y su ejecución. Memorización y práctica de instrucciones escénicas precisas establecidas por el director o por el propio intérprete."
+      ],
+      "codigos_items": [
+        "ARES.1.C.1",
+        "ARES.1.C.2",
+        "ARES.1.C.3",
+        "ARES.1.C.4",
+        "ARES.1.C.5",
+        "ARES.1.C.6"
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Representación y escenificación",
+      "titulo": "Representación y escenificación",
+      "items": [
+        "El espectáculo escénico: concepto y características.",
+        "Tipologías básicas del espectáculo: clásico, de vanguardia, corporal, occidental, oriental, de objetos, musical, dancístico, de interior, de calle. Otras formas de presentación escénica: happening, performance, vídeoteatro o teatro-danza.",
+        "El diseño de un espectáculo: equipos, fases y áreas de trabajo.",
+        "Los ensayos: tipología, finalidades y organización.",
+        "Representación de espectáculos escénicos.",
+        "Estrategias de trabajo en equipo. Resolución de conflictos.",
+        "Utilización de medios audiovisuales e informáticos en las producciones propias para favorecer la autocrítica a través de grabaciones en diferentes soportes."
+      ],
+      "codigos_items": [
+        "ARES.1.D.1",
+        "ARES.1.D.2",
+        "ARES.1.D.3",
+        "ARES.1.D.4",
+        "ARES.1.D.5",
+        "ARES.1.D.6",
+        "ARES.1.D.7"
+      ]
+    },
+    {
+      "codigo": "E",
+      "bloque": "E. Recepción en las Artes Escénicas",
+      "titulo": "Recepción en las Artes Escénicas",
+      "items": [
+        "El público: concepto y tipologías.",
+        "La recepción escénica clásica. La cuarta pared. actuales.",
+        "Estrategias y técnicas de análisis y de crítica de manifestaciones escénicas.",
+        "El respeto de la propiedad intelectual. La protección de la creatividad personal."
+      ],
+      "codigos_items": [
+        "ARES.1.E.1",
+        "ARES.1.E.2",
+        "ARES.1.E.3",
+        "ARES.1.E.4"
+      ]
+    }
+  ],
+  "comunidad": "andalucia",
+  "idioma": "es"
+}

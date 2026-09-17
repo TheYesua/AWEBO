@@ -1,0 +1,197 @@
+{
+  "materia_oficial": "Ciencias Generales",
+  "materia": "Ciencias Generales",
+  "etapa": "Bachillerato",
+  "ciclo": "2º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Aplicar las metodologías propias de la ciencia, utilizando con precisión, procedimientos, materiales e instrumentos adecuados, para responder a cuestiones sobre procesos físicos, químicos, biológicos y geológicos.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Comprender y explicar los procesos del entorno, utilizando los principios, leyes y teorías científicos adecuados, para adquirir una visión holística del funcionamiento del medio natural.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Argumentar sobre la importancia de los estilos de vida sostenibles y saludables, basándose en fundamentos científicos, para adoptarlos y promoverlos en su entorno.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Aplicar el pensamiento científico y los razonamientos lógico-matemáticos, mediante la búsqueda y selección de estrategias y herramientas apropiadas, para resolver problemas relacionados con las ciencias experimentales.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Analizar la contribución de la ciencia y de las personas que se dedican a ella, con perspectiva de género y entendiéndola como un proceso colectivo e interdisciplinar en continua construcción, para valorar su papel esencial en el progreso de la sociedad.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Utilizar recursos variados, con sentido crítico y ético, para buscar y seleccionar información contrastada, estableciendo colaboraciones.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Plantear y responder cuestiones acerca de procesos observados en el entorno, siguiendo las pautas de las metodologías científicas."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Contrastar hipótesis, realizando experimentos en laboratorios o en entornos virtuales siguiendo las normas de seguridad correspondientes."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Comunicar los resultados de un experimento o trabajo científico, utilizando los recursos adecuados y de acuerdo a los principios éticos básicos."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "1",
+      "descripcion": "Valorar la aportación de la comunidad científica en el avance y mejora de la sociedad."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Analizar y explicar fenómenos del entorno, representándolos mediante expresiones, tablas, gráficas, modelos, simulaciones, diagramas u otros formatos."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Explicar fenómenos que ocurren en el entorno, utilizando principios, leyes y teorías de las ciencias de la naturaleza."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Reconocer y analizar los fenómenos fisicoquímicos más relevantes, explicándolos a través de las principales leyes o teorías científicas."
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "2",
+      "descripcion": "Explicar, utilizando los fundamentos científicos adecuados, los elementos y procesos básicos de la biosfera y la geosfera."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Adoptar y promover hábitos compatibles con un modelo de desarrollo sostenible y valorar su importancia utilizando fundamentos científicos."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Adoptar y promover hábitos saludables (dieta equilibrada, higiene, vacunación, uso adecuado de antibióticos, rechazo al consumo de drogas legales e ilegales, ejercicio físico, higiene del sueño, posturas adecuadas…) valorar su importancia, utilizando los fundamentos de la fisiología humana."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Resolver problemas relacionados con fenómenos y procesos físicos, químicos, biológicos y geológicos utilizando, el pensamiento científico y el razonamiento lógico-matemático y buscando estrategias alternativas de resolución cuando sea necesario."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Analizar críticamente la solución de un problema relacionado con fenómenos y procesos físicos, químicos, biológicos y geológicos, modificando las conclusiones o las estrategias utilizadas si la solución no es viable, o ante nuevos datos aportados."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Reconocer la ciencia como un área de conocimiento global, analizando la interrelación e interdependencia entre cada una de las disciplinas que la forman."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Reconocer la relevancia de la ciencia en el progreso de la sociedad, valorando el importante papel que juegan las personas en el desempeño de la investigación científica."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Buscar, contrastar y seleccionar información sobre fenómenos y procesos físicos, químicos, biológicos o geológicos en diferentes formatos, utilizando los recursos necesarios, tecnológicos o de otro tipo."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Establecer colaboraciones, utilizando los recursos necesarios en las diferentes etapas del proyecto científico, en la realización de actividades o en la resolución de problemas."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Construyendo ciencia",
+      "titulo": "Construyendo ciencia",
+      "items": [
+        "El método científico.",
+        "El saber científico."
+      ],
+      "codigos_items": [
+        "CCGG.2.A.1",
+        "CCGG.2.A.2"
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Un universo de materia y energía",
+      "titulo": "Un universo de materia y energía",
+      "items": [
+        "Sistemas materiales.",
+        "Energía."
+      ],
+      "codigos_items": [
+        "CCGG.2.B.1",
+        "CCGG.2.B.2"
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. El sistema Tierra",
+      "titulo": "El sistema Tierra",
+      "items": [
+        "Origen y evolución de la Tierra.",
+        "Geosfera y biosfera.",
+        "Medio ambiente y sostenibilidad."
+      ],
+      "codigos_items": [
+        "CCGG.2.C.1",
+        "CCGG.2.C.2",
+        "CCGG.2.C.3"
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Biología para el siglo XXI",
+      "titulo": "Biología para el siglo XXI",
+      "items": [
+        "Bioelementos y biomoléculas.",
+        "Genética y su aplicación."
+      ],
+      "codigos_items": [
+        "CCGG.2.D.1",
+        "CCGG.2.D.2"
+      ]
+    },
+    {
+      "codigo": "E",
+      "bloque": "E. Las fuerzas que nos mueven",
+      "titulo": "Las fuerzas que nos mueven",
+      "items": [
+        "Estrategias de comprensión de las fuerzas fundamentales de la naturaleza, analizando los procesos físicos más relevantes del entorno natural, como los fenómenos electromagnéticos, el movimiento de los planetas o los procesos nucleares. Ley de Gravitación Universal. Aplicaciones en la generación de energía, el uso de satélites meteorológicos y de telecomunicaciones, la utilización de radioisótopos en medicina y las aplicaciones de los dispositivos eléctricos y electrónicos.",
+        "Estrategias de comprensión de las leyes de la estática, analizando las estructuras del entorno natural en relación con la Física, la Biología, la Geología o la Ingeniería. Fuerza en equilibrio. Esfuerzo en materiales técnicos y estructuras: comprensión, tracción, cortante, flexión y torsión.",
+        "Estrategias de comprensión de las leyes de la mecánica relacionadas con el movimiento, analizando el comportamiento de un objeto móvil y sus aplicaciones, por ejemplo, en la seguridad vial o en el desarrollo tecnológico. Variables cinemáticas: posición, desplazamiento, velocidad media e instantánea, aceleración, componentes intrínsecas de la aceleración. Carácter vectorial de las magnitudes. Estudio de los movimientos rectilíneo y uniforme, rectilíneo y uniformemente acelerado, circular uniforme y circular uniformemente variado. Principio de superposición y composición de movimientos: tiro horizontal y tiro parabólico."
+      ],
+      "codigos_items": [
+        "CCGG.2.E.1",
+        "CCGG.2.E.2",
+        "CCGG.2.E.3"
+      ]
+    }
+  ],
+  "comunidad": "andalucia",
+  "idioma": "es"
+}

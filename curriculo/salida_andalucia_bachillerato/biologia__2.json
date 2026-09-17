@@ -1,0 +1,222 @@
+{
+  "materia_oficial": "Biología",
+  "materia": "Biología",
+  "etapa": "Bachillerato",
+  "ciclo": "2º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Interpretar y transmitir información y datos a partir de trabajos científicos y argumentar sobre estos con resultados de las ciencias biológicas.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Localizar y utilizar fuentes fiables, identificando, seleccionando y organizando la información, evaluándola críticamente y contrastando su veracidad, para resolver preguntas planteadas de forma autónoma y crear contenidos relacionados con las ciencias biológicas.",
+      "descriptores": [
+        "CC3"
+      ]
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Analizar trabajos de investigación o divulgación relacionados con las ciencias biológicas, comprobando con sentido crítico su veracidad o si han seguido los pasos de los métodos científicos, para evaluar la fiabilidad de sus conclusiones.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Plantear y resolver problemas, buscando y utilizando las estrategias adecuadas, analizando críticamente las soluciones y reformulando el procedimiento, si fuera necesario, para explicar fenómenos relacionados con las ciencias biológicas.",
+      "descriptores": [
+        "CPSAA5"
+      ]
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Analizar críticamente determinadas acciones relacionadas con la sostenibilidad y la salud, basándose en los fundamentos de la Biología molecular, para argumentar acerca de la importancia de adoptar estilos de vida sostenibles y saludables.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Analizar la función de las principales biomoléculas, bioelementos y sus estructuras e interacciones bioquímicas, argumentando sobre su importancia en los organismos vivos para explicar las características macroscópicas de estos a partir de las moleculares.",
+      "descriptores": [
+        "CC4"
+      ]
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Analizar críticamente conceptos y procesos biológicos, seleccionando e interpretando información en diferentes formatos (modelos, gráficos, tablas, diagramas, fórmulas, esquemas u otros)."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Comunicar informaciones u opiniones razonadas relacionadas con los saberes de la materia, transmitiéndolas de forma clara y rigurosa, utilizando la terminología y el formato adecuados (modelos, gráficos, tablas, vídeos, informes, diagramas, fórmulas, esquemas, símbolos o contenidos digitales, entre otros) y respondiendo de manera fundamentada y precisa a las cuestiones que puedan surgir durante el proceso."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Argumentar sobre aspectos relacionados con los saberes de la materia, considerando los puntos fuertes y débiles de diferentes posturas de forma razonada y con una actitud abierta, flexible, receptiva y respetuosa ante la opinión de los demás."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Plantear y resolver cuestiones y crear contenidos relacionados con los saberes de la materia, localizando y citando fuentes de forma adecuada; seleccionando, organizando y analizando críticamente la información."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Contrastar y justificar la veracidad de información relacionada con la materia, utilizando fuentes fiables, aportando datos y adoptando una actitud crítica y escéptica ante informaciones sin una base científica como pseudociencias, teorías conspiratorias, creencias infundadas o bulos."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Evaluar la fiabilidad de las conclusiones de un trabajo de investigación o divulgación científica relacionado con los saberes de la materia de acuerdo a la interpretación de los resultados obtenidos."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Argumentar, utilizando ejemplos concretos, sobre la contribución de la ciencia a la sociedad y la labor de las personas dedicadas a ella, destacando el papel de la mujer y entendiendo la investigación como una labor colectiva e interdisciplinar en constante evolución influida por el contexto político y social y por los recursos económicos propios de Andalucía."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Explicar fenómenos biológicos, a través del planteamiento y resolución de problemas, buscando y utilizando las estrategias y recursos adecuados."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Analizar críticamente la solución a un problema utilizando los saberes de la materia de Biología y reformular los procedimientos utilizados o conclusiones si dicha solución no fuese viable o ante nuevos datos aportados o encontrados con posterioridad."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Argumentar sobre la importancia de adoptar estilos de vida saludables, propios y de los miembros de la comunidad educativa, y compatibles con el desarrollo sostenible, basándose en los principios de la Biología molecular y relacionándolos con los procesos macroscópicos, proponiendo medidas para el cambio positivo hacia un modo de vida más saludable y sostenible."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Explicar las características y procesos vitales de los seres vivos mediante el análisis de sus biomoléculas, de las interacciones bioquímicas entre ellas y de sus reacciones metabólicas."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Aplicar metodologías analíticas en el laboratorio utilizando los materiales adecuados con precisión."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Las biomoléculas",
+      "titulo": "Las biomoléculas",
+      "items": [
+        "Las biomoléculas orgánicas e inorgánicas.",
+        "Las moléculas y los iones inorgánicos: agua y sales minerales.",
+        "Las moléculas orgánicas: Glúcidos, lípidos, prótidos y ácidos nucleicos.",
+        "Las vitaminas y sales."
+      ],
+      "codigos_items": [
+        "BIOL.2.A.1",
+        "BIOL.2.A.2",
+        "BIOL.2.A.3",
+        "BIOL.2.A.4"
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Genética molecular",
+      "titulo": "Genética molecular",
+      "items": [
+        "El ADN.",
+        "Los genomas procariota y eucariota.",
+        "Mecanismo de replicación del ADN",
+        "El ARN.",
+        "La expresión génica.",
+        "Las mutaciones."
+      ],
+      "codigos_items": [
+        "BIOL.2.B.1",
+        "BIOL.2.B.2",
+        "BIOL.2.B.3",
+        "BIOL.2.B.4",
+        "BIOL.2.B.5",
+        "BIOL.2.B.6"
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Biología celular",
+      "titulo": "Biología celular",
+      "items": [
+        "La teoría celular.",
+        "La microscopía óptica y electrónica.",
+        "La membrana plasmática.",
+        "Los orgánulos celulares eucariotas y procariotas.",
+        "El ciclo celular. Identificación de fases y mecanismos de regulación.",
+        "La mitosis y la meiosis.",
+        "El cáncer."
+      ],
+      "codigos_items": [
+        "BIOL.2.C.1",
+        "BIOL.2.C.2",
+        "BIOL.2.C.3",
+        "BIOL.2.C.4",
+        "BIOL.2.C.5",
+        "BIOL.2.C.6",
+        "BIOL.2.C.7"
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Metabolismo",
+      "titulo": "Metabolismo",
+      "items": [
+        "Concepto de metabolismo.",
+        "Procesos implicados en la respiración celular anaeróbica.",
+        "Principales rutas de anabolismo heterótrofo y autótrofo.",
+        "Aplicaciones industriales del proceso de fermentación. Valoración de las fermentaciones en numerosos procesos industriales, reconociendo sus aplicaciones en Andalucía y su relación con la mejora de la sostenibilidad."
+      ],
+      "codigos_items": [
+        "BIOL.2.D.1",
+        "BIOL.2.D.2",
+        "BIOL.2.D.3",
+        "BIOL.2.D.4"
+      ]
+    },
+    {
+      "codigo": "E",
+      "bloque": "E. Ingeniería genética y biotecnología",
+      "titulo": "Ingeniería genética y biotecnología",
+      "items": [
+        "Técnicas de ingeniería genética y sus aplicaciones.",
+        "Importancia de la biotecnología."
+      ],
+      "codigos_items": [
+        "BIOL.2.E.1",
+        "BIOL.2.E.2"
+      ]
+    },
+    {
+      "codigo": "F",
+      "bloque": "F. Inmunología",
+      "titulo": "Inmunología",
+      "items": [
+        "La Inmunidad.",
+        "Inmunidad específica.",
+        "Inmunidad natural y artificial o adquirida.",
+        "Enfermedades y patologías del sistema inmunitario."
+      ],
+      "codigos_items": [
+        "BIOL.2.F.1",
+        "BIOL.2.F.2",
+        "BIOL.2.F.3",
+        "BIOL.2.F.4"
+      ]
+    }
+  ],
+  "comunidad": "andalucia",
+  "idioma": "es"
+}

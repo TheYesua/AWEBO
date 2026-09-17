@@ -1,0 +1,259 @@
+{
+  "materia_oficial": "Geología y Ciencias Ambientales",
+  "materia": "Geología y Ciencias Ambientales",
+  "etapa": "Bachillerato",
+  "ciclo": "2º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Interpretar y transmitir con precisión información y datos extraídos de trabajos científicos para analizar conceptos, procesos, métodos, experimentos o resultados relacionados con las ciencias geológicas y ambientales.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Localizar y utilizar fuentes fiables, identificando, seleccionando y organizando información, evaluándola críticamente y contrastando su veracidad, para resolver preguntas planteadas de forma autónoma y crear contenidos relacionados con las ciencias geológicas y ambientales.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Analizar críticamente resultados de trabajos de investigación o divulgación relacionados con las ciencias geológicas y ambientales, comprobando si siguen correctamente los pasos de los métodos científicos para evaluar la fiabilidad de sus conclusiones.",
+      "descriptores": [
+        "CPSAA4",
+        "CC3"
+      ]
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Plantear y resolver problemas, buscando y utilizando las estrategias adecuadas, analizando críticamente las soluciones y reformulando el procedimiento, si fuera necesario, para explicar fenómenos relacionados con las ciencias geológicas y ambientales.",
+      "descriptores": [
+        "CE3"
+      ]
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Analizar los impactos de determinadas acciones sobre el medio ambiente o la disponibilidad de recursos a través de observaciones de campo y de información en diferentes formatos y basándose en fundamentos científicos para promover y adoptar hábitos compatibles con el desarrollo sostenible.",
+      "descriptores": [
+        "CCEC1"
+      ]
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Identificar y analizar los elementos geológicos del relieve a partir de observaciones de campo o de información en diferentes formatos para explicar fenómenos, reconstruir la historia geológica, hacer predicciones e identificar posibles riesgos geológicos de una zona determinada.",
+      "descriptores": [
+        "CCEC1"
+      ]
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Analizar críticamente conceptos y procesos, relacionados con los saberes de la materia, seleccionando e interpretando información en diversos formatos como mapas topográficos, hidrográficos, geológicos, de vegetación, etc., cortes, modelos, diagramas de flujo u otros."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Comunicar informaciones u opiniones razonadas relacionadas con los saberes de la materia, transmitiéndolas de forma clara y rigurosa y utilizando el vocabulario y los formatos adecuados como mapas topográficos, hidrográficos, geológicos, de vegetación, etc., cortes, modelos, diagramas de flujo, u otros y respondiendo con precisión a las cuestiones que puedan surgir durante la exposición."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Realizar discusiones científicas sobre aspectos relacionados con los saberes de la materia, considerando los puntos fuertes y débiles de diferentes posturas de forma razonada y con actitud, receptiva y respetuosa ante la opinión de los demás."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Plantear y resolver cuestiones y crear contenidos relacionados con los saberes de la materia, localizando y citando fuentes de forma adecuada; seleccionando, organizando y analizando críticamente la información."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Contrastar y justificar la veracidad de información relacionada con los saberes de la materia, utilizando fuentes fiables, aportando datos y adoptando una actitud crítica y escéptica hacia informaciones sin una base científica como pseudociencias, teorías conspiratorias, creencias infundadas, bulos, etc."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Evaluar la fiabilidad de las conclusiones de un trabajo de investigación o divulgación científica relacionado con los saberes de la materia de Geología y Ciencias Ambientales de acuerdo a la interpretación de los resultados obtenidos."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Argumentar, utilizando ejemplos concretos, sobre la contribución de la ciencia a la sociedad y la labor de las personas dedicadas a ella, destacando el papel de la mujer y entendiendo la investigación como una labor colectiva e interdisciplinar en constante evolución influida por el contexto político y los recursos económicos."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Explicar fenómenos relacionados con los saberes de la materia de Geología y Ciencias Ambientales a través del planteamiento y resolución de problemas buscando y utilizando las estrategias y recursos adecuados."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Analizar críticamente la solución a un problema relacionado con los saberes de la materia de Geología y Ciencias Ambientales y reformular los procedimientos utilizados o conclusiones si dicha solución no fuese viable o ante nuevos datos aportados o encontrados con posterioridad."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Promover y adoptar hábitos sostenibles a partir del análisis de los diferentes tipos de recursos geológicos y de la biosfera y sus posibles usos."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Relacionar el impacto de la explotación de determinados recursos con el deterioro medioambiental argumentando sobre la importancia de su consumo y aprovechamiento responsables."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Deducir y explicar la historia geológica de un área determinada, identificando y analizando sus elementos geológicos a partir de información en diferentes formatos: fotografías, cortes, mapas geológicos u otros."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Realizar predicciones sobre fenómenos geológicos y riesgos naturales en un área determinada, analizando la influencia de diferentes factores sobre ellos: actividades humanas, climatología, relieve, vegetación, localización, procesos geológicos internos, etc. y proponer acciones para prevenir o minimizar sus efectos negativos."
+    },
+    {
+      "codigo": "6.3",
+      "competencia": "6",
+      "descripcion": "Explicar, a través de la Teoría de la Tectónica de Placas, los fenómenos geológicos de una región determinada de Andalucía, para que el alumnado sea capaz de comprender las manifestaciones actuales de la geodinámica interna de la Tierra."
+    },
+    {
+      "codigo": "6.4",
+      "competencia": "6",
+      "descripcion": "Explicar, a través de la Teoría de la Tectónica de Placas, los procesos relacionados con el magmatismo, diagénesis y metamorfismo de una región determinada de Andalucía, para que el alumnado sea capaz de comprender las manifestaciones actuales de la geodinámica externa de la Tierra."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Experimentación en Geología y Ciencias Ambientales",
+      "titulo": "Experimentación en Geología y Ciencias Ambientales",
+      "items": [
+        "El método científico. Desarrollo de metodologías propias de la investigación científica para la identificación y formulación de cuestiones, la elaboración de hipótesis y la comprobación experimental de las mismas.",
+        "Empleo de fuentes de información geológica y ambiental para la búsqueda, el reconocimiento y la utilización de herramientas e instrumentos de representación como mapas, cortes geológicos, columnas estratigráficas, fotografías aéreas, textos, posicionamiento e imágenes de satélite, diagramas de flujo, aplicados al trabajo de campo y laboratorio, con atención a las normas de seguridad y que permitan la interpretación y el análisis de datos proporcionados. Nuevas tecnologías en la investigación geológica y ambiental.",
+        "Desarrollo de estrategias para la búsqueda de información, colaboración, comunicación e interacción con instituciones científicas, utilizando herramientas digitales, formatos de presentación de procesos, exposición de resultados e ideas a través de diapositivas, gráficos, vídeos, posters, informes y otros.",
+        "El saber científico. Reconocimiento de la labor científica y de las personas dedicadas a la ciencia, valorando su contribución al desarrollo de la Geología y las Ciencias Ambientales, así como su importancia social. Conocimiento del papel de la mujer en la ciencia.",
+        "Análisis de la evolución histórica del saber científico, describiendo el avance de la Geología y las Ciencias Ambientales como un proceso de labor colectiva, interdisciplinar y en continua construcción.",
+        "Patrimonio geológico y medioambiental. Conocimiento del patrimonio geológico y medioambiental de España y de Andalucía, entendiendo la importancia de su valoración y conservación."
+      ],
+      "codigos_items": [
+        "GYCA.2.A.1",
+        "GYCA.2.A.2",
+        "GYCA.2.A.3",
+        "GYCA.2.A.4",
+        "GYCA.2.A.5",
+        "GYCA.2.A.6"
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. La tectónica de placas y geodinámica interna",
+      "titulo": "La tectónica de placas y geodinámica interna",
+      "items": [
+        "Tectónica de placas. Estrategias para la comprensión de la Teoría de la Tectónica de Placas a partir del estudio de las placas litosféricas, el motor que las mueve, fenómenos originados en los bordes de placas y zonas intraplaca, mediante el análisis e interpretación del Ciclo de Wilson, su influencia en la disposición actual de los continentes e interpretación de los principales episodios orogénicos, a partir de hipótesis predecesoras, como proceso de construcción del paradigma actual para la comprensión de la Geología moderna.",
+        "Geodinámica interna. Estudio y comprensión de las manifestaciones actuales de la geodinámica interna del planeta y su influencia sobre el relieve: vulcanismo, seísmos, orogenias y movimientos continentales; mediante el análisis de las deformaciones de las rocas, a partir del estudio de las deformaciones elástica, plástica y frágil, estableciendo relaciones con las fuerzas que actúan sobre ellas y con otros factores. Estructuras geológicas: pliegues y fallas.",
+        "Interpretación y conexión de los procesos geológicos internos y riesgos naturales asociados, estableciendo relaciones con las actividades humanas y valorando la importancia de la ordenación territorial."
+      ],
+      "codigos_items": [
+        "GYCA.2.B.1",
+        "GYCA.2.B.2",
+        "GYCA.2.B.3"
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Procesos geológicos externos y el modelado del relieve",
+      "titulo": "Procesos geológicos externos y el modelado del relieve",
+      "items": [
+        "Interpretación de los procesos geológicos externos, comprendiendo la sucesión de fenómenos geológicos que actúan en superficie y las relaciones entre ellos: meteorización mecánica y química, edafogénesis, erosión, transporte y sedimentación, analizando los efectos producidos sobre el relieve.",
+        "Estrategias de comprensión para el análisis de las principales formas de modelado del relieve y su relación con los agentes geológicos internos y externos que actúan. El clima, las propiedades y la disposición relativa de las rocas predominantes.",
+        "Interpretación y conexión de los procesos geológicos externos y riesgos naturales asociados, estableciendo relaciones con las actividades humanas y valorando la importancia de la ordenación territorial."
+      ],
+      "codigos_items": [
+        "GYCA.2.C.1",
+        "GYCA.2.C.2",
+        "GYCA.2.C.3"
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Minerales, los componentes de las rocas",
+      "titulo": "Minerales, los componentes de las rocas",
+      "items": [
+        "Concepto de mineral. Estudio de la composición química y estructura de los minerales, mediante el desarrollo de destrezas para la clasificación químico-estructural de estos y la comprensión de sus propiedades. Diagramas de fases: condiciones de formación y transformación de minerales.",
+        "Estudio de los silicatos a partir del tetraedro fundamental como unidad básica, mediante el desarrollo de destrezas para la clasificación de estos a partir de la representación de modelos atómicos sencillos.",
+        "Estudio de los minerales no silicatados mediante el desarrollo de destrezas para la clasificación de estos a partir del análisis de sus propiedades.",
+        "Identificación de los minerales. Desarrollo de destrezas para la identificación de los minerales mediante el análisis de las propiedades físicas y químicas, mediante el manejo de herramientas e instrumentos de identificación como guías, claves, instrumentos y recursos tecnológicos."
+      ],
+      "codigos_items": [
+        "GYCA.2.D.1",
+        "GYCA.2.D.2",
+        "GYCA.2.D.3",
+        "GYCA.2.D.4"
+      ]
+    },
+    {
+      "codigo": "E",
+      "bloque": "E. Rocas ígneas, sedimentarias y metamórficas",
+      "titulo": "Rocas ígneas, sedimentarias y metamórficas",
+      "items": [
+        "Concepto de roca. Uso de herramientas e instrumentos como guías, claves y recursos tecnológicos, para la identificación y clasificación de rocas en función de su origen y características observables en rocas ígneas, sedimentarias y metamórficas.",
+        "El magmatismo. Estudio de los tipos de magmas a través del desarrollo de destrezas para su clasificación en función de su composición y origen, así como la interpretación de diagramas de fases, estableciendo relaciones entre las condiciones de formación de estos y su evolución, a partir del análisis de las diferentes fases de consolidación magmática, el estudio de las rocas magmáticas o ígneas resultantes y los yacimientos minerales donde aparecen.",
+        "Comprensión de los diferentes tipos de erupciones volcánicas asociándolas a las rocas resultantes y los diferentes relieves originados.",
+        "La diagénesis. Estrategias de comprensión de la diagénesis mediante el estudio de los sedimentos y el análisis de los procesos geológicos que actúan sobre ellos, desarrollando destrezas para la clasificación de las rocas sedimentarias resultantes asociadas al ambiente sedimentario y material de origen y los yacimientos minerales donde aparecen.",
+        "Metamorfismo. Estrategias de comprensión del metamorfismo mediante el estudio de las condiciones de formación, factores que inciden en las rocas preexistentes, el tipo de metamorfismo asociado y las relaciones entre ellos, analizando los cambios fisicoquímicos, texturales y estructurales en las rocas metamórficas resultantes y los yacimientos minerales donde aparecen.",
+        "El ciclo litológico. Estrategias de comprensión del ciclo litológico mediante el análisis e interpretación de las condiciones de formación, destrucción y transformación de los diferentes tipos de rocas y su relación con la tectónica de placas y los procesos geológicos externos."
+      ],
+      "codigos_items": [
+        "GYCA.2.E.1",
+        "GYCA.2.E.2",
+        "GYCA.2.E.3",
+        "GYCA.2.E.4",
+        "GYCA.2.E.5",
+        "GYCA.2.E.6"
+      ]
+    },
+    {
+      "codigo": "F",
+      "bloque": "F. Las capas fluidas de la Tierra",
+      "titulo": "Las capas fluidas de la Tierra",
+      "items": [
+        "La atmósfera. Estrategias de comprensión de las funciones de la atmósfera, analizando su composición, estructura, parámetros físicos y su interpretación: convección térmica, convección por humedad, presión atmosférica, gradientes, estabilidad e inestabilidad atmosférica, efecto Coriolis y circulación general de la atmósfera, mediante el manejo de herramientas e instrumentos de representación de la dinámica atmosférica, para la comprensión del clima a escala global, regional y local.",
+        "Búsqueda de información sobre los grandes cambios climáticos ocurridos en la Tierra, analizando la influencia de la atmósfera sobre el clima terrestre y la importancia para los seres vivos.",
+        "Desarrollo de destrezas para la comprensión de la contaminación atmosférica, buscando información sobre los tipos de contaminantes naturales y artificiales o antropogénicas, analizando las causas y valorando sus consecuencias a nivel local, regional y global. Efecto invernadero.",
+        "La hidrosfera. Estrategias de comprensión de las funciones de la hidrosfera mediante el análisis y representación del ciclo hidrológico y la importancia de esta para los seres vivos.",
+        "Desarrollo de destrezas para la comprensión de la contaminación del agua, buscando información sobre los tipos de contaminantes naturales y artificiales o antropogénicas, analizando las causas y valorando sus consecuencias."
+      ],
+      "codigos_items": [
+        "GYCA.2.F.1",
+        "GYCA.2.F.2",
+        "GYCA.2.F.3",
+        "GYCA.2.F.4",
+        "GYCA.2.F.5"
+      ]
+    },
+    {
+      "codigo": "G",
+      "bloque": "G. Recursos y su gestión sostenible",
+      "titulo": "Recursos y su gestión sostenible",
+      "items": [
+        "Los recursos geológicos. Estudio de los conceptos de recursos geológicos, yacimiento y reserva, comprendiendo las aplicaciones en la vida cotidiana, la necesaria explotación de estos recursos y valorando el impacto ambiental de la explotación de los mismos (hídricos, paisajísticos, mineros, energéticos, edáficos, etc.), así como la importancia de su consumo responsable de acuerdo a su tasa de renovación e interés económico.",
+        "Recursos minerales y energéticos. Análisis de las consecuencias de la explotación de rocas, minerales y recursos energéticos de la geosfera, mediante la interpretación de parámetros como energía, rentabilidad económica y coste energético, valorando el uso de las energías convencionales como los combustibles fósiles, energía nuclear y energía hidroeléctrica frente a las energías alternativas, y analizando el impacto ambiental del uso de cada una de ellas.",
+        "Los recursos hídricos. Manejo de herramientas e instrumentos de representación del balance hidrológico según la abundancia relativa del agua, valorando la planificación hidrológica, las medidas para la explotación y uso eficiente del recurso y la importancia del tratamiento de las aguas para su gestión sostenible.",
+        "El suelo. Manejo de herramientas e instrumentos para la clasificación de los suelos, mediante la representación del perfil y el análisis de su composición, características, textura y estructura, comprendiendo su relevancia ecológica y productividad, las repercusiones de la contaminación y degradación de este y la influencia de las actividades humanas como la deforestación, la agricultura y la ganadería intensivas tienen sobre este.",
+        "Gestión de residuos y los impactos ambientales. Desarrollo de destrezas para la comprensión de la gestión de los residuos e importancia de su disminución, valorización, transformación y eliminación, a partir de la búsqueda de información sobre los impactos ambientales derivados de la explotación de recursos mineros, energéticos, hídricos, edáficos y paisajísticos; valorando la aplicación de medidas preventivas, correctoras y compensatorias."
+      ],
+      "codigos_items": [
+        "GYCA.2.G.1",
+        "GYCA.2.G.2",
+        "GYCA.2.G.3",
+        "GYCA.2.G.4",
+        "GYCA.2.G.5"
+      ]
+    }
+  ],
+  "comunidad": "andalucia",
+  "idioma": "es"
+}

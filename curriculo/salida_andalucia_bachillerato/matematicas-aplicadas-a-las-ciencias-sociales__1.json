@@ -1,0 +1,241 @@
+{
+  "materia_oficial": "Matemáticas Aplicadas a las Ciencias Sociales",
+  "materia": "Matemáticas Aplicadas a las Ciencias Sociales",
+  "etapa": "Bachillerato",
+  "ciclo": "1º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Modelizar y resolver problemas de la vida cotidiana y de las ciencias sociales aplicando diferentes estrategias y formas de razonamiento para obtener posibles soluciones.",
+      "descriptores": [
+        "CPSAA5",
+        "CE3"
+      ]
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Verificar la validez de las posibles soluciones de un problema empleando el razonamiento y la argumentación para contrastar su idoneidad.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Formular o investigar conjeturas o problemas, utilizando el razonamiento, la argumentación, la creatividad y el uso de herramientas tecnológicas, para generar nuevo conocimiento matemático.",
+      "descriptores": [
+        "CE3"
+      ]
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Utilizar el pensamiento computacional de forma eficaz, modificando, creando y generalizando algoritmos que resuelvan problemas mediante el uso de las matemáticas, para modelizar y resolver situaciones de la vida cotidiana y del ámbito de las ciencias sociales.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Establecer, investigar y utilizar conexiones entre las diferentes ideas matemáticas, estableciendo vínculos entre conceptos, procedimientos, argumentos y modelos para dar significado y estructurar el aprendizaje matemático.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Descubrir los vínculos de las matemáticas con otras áreas de conocimiento y profundizar en sus conexiones, interrelacionando conceptos y procedimientos, para modelizar, resolver problemas y desarrollar la capacidad crítica, creativa e innovadora en situaciones diversas.",
+      "descriptores": [
+        "CCEC1"
+      ]
+    },
+    {
+      "codigo": "7",
+      "descripcion": "Representar conceptos, procedimientos e información matemáticos, seleccionando diferentes tecnologías para visualizar ideas y estructurar razonamientos matemáticos.",
+      "descriptores": []
+    },
+    {
+      "codigo": "8",
+      "descripcion": "Comunicar las ideas matemáticas, de forma individual y colectiva, empleando el soporte, la terminología y el rigor apropiados, para organizar y consolidar el pensamiento matemático.",
+      "descriptores": []
+    },
+    {
+      "codigo": "9",
+      "descripcion": "Utilizar destrezas personales y sociales, identificando y gestionando las propias emociones, respetando y organizando activamente el trabajo en equipos heterogéneos, aprendiendo del error como parte del proceso de aprendizaje y afrontando situaciones de incertidumbre, para perseverar en la consecución de objetivos en el aprendizaje de las matemáticas.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Emplear algunas estrategias y herramientas, incluidas las digitales, en la resolución de problemas de la vida cotidiana y de las ciencias sociales, valorando su eficiencia en cada caso."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Obtener todas las posibles soluciones matemáticas de problemas de la vida cotidiana y de las ciencias sociales, usando la estrategia de resolución más apropiada y describiendo el procedimiento realizado."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Comprobar la validez matemática de las posibles soluciones de un problema e interpretarlas, utilizando el razonamiento y la argumentación."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Seleccionar la solución más adecuada de un problema en función del contexto: de sostenibilidad, de consumo responsable, de equidad, etc., usando el razonamiento y la argumentación."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Adquirir nuevo conocimiento matemático mediante la formulación de conjeturas y de la formulación y reformulación de problemas de forma guiada."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Emplear herramientas tecnológicas adecuadas en la formulación o investigación de conjeturas o problemas."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Interpretar, modelizar y resolver situaciones problematizadas de la vida cotidiana y de las ciencias sociales, utilizando el pensamiento computacional, modificando, creando y generalizando algoritmos."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Manifestar una visión matemática integrada, investigando y conectando las diferentes ideas matemáticas."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Resolver problemas, estableciendo y aplicando conexiones entre las diferentes ideas matemáticas."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Resolver problemas en situaciones diversas, utilizando procesos matemáticos, estableciendo y aplicando conexiones entre el mundo real, otras áreas de conocimiento y las matemáticas."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Analizar la aportación de las matemáticas al progreso de la humanidad, reflexionando sobre su contribución en la propuesta de soluciones a situaciones complejas y a los retos en las ciencias sociales que se plantean."
+    },
+    {
+      "codigo": "7.1",
+      "competencia": "7",
+      "descripcion": "Representar ideas matemáticas, estructurando diferentes razonamientos matemáticos y seleccionando las tecnologías más adecuadas."
+    },
+    {
+      "codigo": "7.2",
+      "competencia": "7",
+      "descripcion": "Seleccionar y utilizar diversas formas de representación, valorando su utilidad para compartir información."
+    },
+    {
+      "codigo": "8.1",
+      "competencia": "8",
+      "descripcion": "Mostrar organización al comunicar las ideas matemáticas, empleando el soporte, la terminología y el rigor apropiados."
+    },
+    {
+      "codigo": "8.2",
+      "competencia": "8",
+      "descripcion": "Reconocer y emplear el lenguaje matemático en diferentes contextos, comunicando la información con precisión y rigor."
+    },
+    {
+      "codigo": "9.1",
+      "competencia": "9",
+      "descripcion": "Afrontar las situaciones de incertidumbre, identificando y gestionando emociones y aceptando y aprendiendo del error como parte del proceso de aprendizaje de las matemáticas."
+    },
+    {
+      "codigo": "9.2",
+      "competencia": "9",
+      "descripcion": "Mostrar una actitud positiva y perseverante, aceptando y aprendiendo de la crítica razonada al hacer frente a las diferentes situaciones de aprendizaje de las matemáticas."
+    },
+    {
+      "codigo": "9.3",
+      "competencia": "9",
+      "descripcion": "Participar en tareas matemáticas de forma activa en equipos heterogéneos, respetando las emociones y experiencias de las y los demás, escuchando su razonamiento, identificando las habilidades sociales más propicias y fomentando el bienestar grupal y las relaciones saludables."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Sentido numérico",
+      "titulo": "Sentido numérico",
+      "items": [
+        "Conteo. Estrategias y técnicas de recuento sistemático (diagramas de árbol, técnicas de combinatoria, etc.).",
+        "Cantidad. Números reales (racionales e irracionales): comparación, ordenación, clasificación y contraste de sus propiedades.",
+        "Sentido de las operaciones. Potencias, raíces y logaritmos: comprensión y utilización de sus relaciones para simplificar y resolver problemas.",
+        "Educación financiera. Resolución de problemas relacionados con la educación financiera (cuotas, tasas, intereses, préstamos, etc.) con herramientas tecnológicas."
+      ],
+      "codigos_items": [
+        "MACS.1.A.1",
+        "MACS.1.A.2",
+        "MACS.1.A.3",
+        "MACS.1.A.4"
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Sentido de la medida",
+      "titulo": "Sentido de la medida",
+      "items": [
+        "Medición. La probabilidad como medida de la incertidumbre asociada a fenómenos aleatorios.",
+        "Cambio."
+      ],
+      "codigos_items": [
+        "MACS.1.B.1",
+        "MACS.1.B.2"
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Sentido algebraico",
+      "titulo": "Sentido algebraico",
+      "items": [
+        "Patrones. Generalización de patrones en situaciones sencillas.",
+        "Modelo matemático.",
+        "Igualdad y desigualdad. Ecuaciones polinómicas, racionales, irracionales, exponenciales y logarítmicas. Inecuaciones polinómicas, racionales y de valor absoluto sencillas. Sistemas de tres ecuaciones lineales con tres incógnitas. Método de Gauss para identificar los tipos de sistemas. Resolución de sistemas compatibles determinados e indeterminados. Sistemas de inecuaciones lineales con dos incógnitas: determinación gráfica de la región factible y cálculo analítico de los vértices. Resolución de ecuaciones, inecuaciones y sistemas de ecuaciones e inecuaciones no lineales en diferentes contextos.",
+        "Relaciones y funciones.",
+        "Pensamiento computacional."
+      ],
+      "codigos_items": [
+        "MACS.1.C.1",
+        "MACS.1.C.2",
+        "MACS.1.C.3",
+        "MACS.1.C.4",
+        "MACS.1.C.5"
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Sentido estocástico",
+      "titulo": "Sentido estocástico",
+      "items": [
+        "Organización y análisis de dato.",
+        "Incertidumbre.",
+        "Distribuciones de probabilidad.",
+        "Inferencia."
+      ],
+      "codigos_items": [
+        "MACS.1.D.1",
+        "MACS.1.D.2",
+        "MACS.1.D.3",
+        "MACS.1.D.4"
+      ]
+    },
+    {
+      "codigo": "E",
+      "bloque": "E. Sentido socioafectivo",
+      "titulo": "Sentido socioafectivo",
+      "items": [
+        "Creencias, actitudes y emociones.",
+        "Trabajo en equipo y toma de decisiones.",
+        "Inclusión, respeto y diversidad."
+      ],
+      "codigos_items": [
+        "MACS.1.E.1",
+        "MACS.1.E.2",
+        "MACS.1.E.3"
+      ]
+    }
+  ],
+  "comunidad": "andalucia",
+  "idioma": "es"
+}

@@ -1,0 +1,248 @@
+{
+  "materia_oficial": "Ciencias de la Tierra y del Medio Ambiente",
+  "materia": "Ciencias de la Tierra y del Medio Ambiente",
+  "etapa": "Bachillerato",
+  "ciclo": "2º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Comprender el funcionamiento de la Tierra y de los sistemas terrestres y sus interacciones, aplicando dinámica de sistemas, como fundamento para la identificación de las repercusiones globales de algunos hechos aparentemente locales y viceversa.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Conocer y valorar la influencia de los procesos geológicos en el medio ambiente y en la vida humana, evaluando el potencial ambiental geológico, hidrológico y energético de Andalucía para fomentar el desarrollo sostenible futuro de nuestra comunidad.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Conocer, analizar y valorar las posibilidades de utilización de los recursos naturales y las causas que dan lugar a riesgos naturales derivados de la explotación de dichos recursos, concibiendo otros modelos dirigidos a preservar el equilibrio del medio ambiente.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Investigar científicamente extrayendo conclusiones sobre los problemas ambientales, utilizando las tecnologías de la información y la comunicación, promoviendo actitudes favorables hacia el respeto y la protección del medio ambiente.",
+      "descriptores": [
+        "CE1"
+      ]
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Realizar modelos de sistemas considerando las distintas variables, analizando la interdependencia de sus elementos."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Aplicar la dinámica de sistemas a los cambios ambientales ocurridos como consecuencia de la aparición de la vida y las actividades humanas a lo largo de la historia."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Identificar los recursos, riesgos e impactos, asociándolos a la actividad humana a lo largo de la historia."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "1",
+      "descripcion": "Comprender los tipos de instrumentos de información ambiental."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Conocer los flujos de energía y los riesgos geológicos."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Valorar los riesgos geológicos en Andalucía en su contexto geológico y su potencial ambiental."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Comprender el relieve como la interacción de la dinámica interna y externa."
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "2",
+      "descripcion": "Valorar el desarrollo incontrolado, el conservacionismo y el desarrollo sostenible."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Conocer y valorar medidas de ahorro en el consumo de agua, a nivel doméstico, industrial y agrícola."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Diseñar mapas y gráficos de calidad de agua de ríos y acuíferos andaluces."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Analizar los riesgos ambientales en la contaminación de ríos y acuíferos andaluces, proponiendo medidas que la eviten o disminuyan."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Investigar y extraer conclusiones sobre cuestiones ambientales a partir de distintas fuentes de información, usando las TIC."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Proponer medidas que favorezcan la disminución de la contaminación del medio ambiente."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Identificar los riesgos climáticos, valorando los factores que contribuyen a favorecerlos y los factores que contribuyen a paliar sus efectos."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Medio ambiente y fuentes de información ambiental",
+      "titulo": "Medio ambiente y fuentes de información ambiental",
+      "items": [
+        "Comprensión del concepto de medio ambiente y de las ciencias ambientales, así como manejo de las definiciones relacionadas: recurso, riesgo, impacto.",
+        "Análisis de la Tierra como sistema: estudio del origen de los subsistemas terrestres y los cambios ambientales más importantes acaecidos en la atmósfera, hidrosfera, geosfera y biosfera en la historia geológica de planeta.",
+        "Interpretación de las principales interacciones entre los subsistemas terrestres.",
+        "Conocimiento de las principales fuentes de información medioambiental: teledetección, radiometría, simulación medioambiental, etc.",
+        "Comprensión del funcionamiento de la red de información ambiental de Andalucía y valoración de sus implicaciones (REDIAM)."
+      ],
+      "codigos_items": [
+        "CCTI.2.A.1",
+        "CCTI.2.A.2",
+        "CCTI.2.A.3",
+        "CCTI.2.A.4",
+        "CCTI.2.A.5"
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Geosfera y riesgos geológicos",
+      "titulo": "Geosfera y riesgos geológicos",
+      "items": [
+        "Conocimiento de las manifestaciones de la energía interna y externa de la Tierra a través del estudio de la dinámica terrestre, los agentes y los procesos geológicos.",
+        "Comprensión de los fenómenos implicados en la formación del relieve terrestre.",
+        "Estudio y análisis de los riesgos geológicos internos: sísmico y volcánico, destacando su relación con la tectónica de placas.",
+        "Identificación y comprensión de los riesgos geológicos externos: fluviales, gravitacionales, y litorales",
+        "Reconocimiento de las medidas de planificación de riesgos valorando su importancia.",
+        "Determinación y localización de los principales riesgos geológicos en Andalucía.",
+        "Análisis de las distintas fuentes de energía de la Tierra: combustibles fósiles, energía geotérmica y energía nuclear de fisión, evaluando en cada caso sus implicaciones medioambientales, económicas y sociales.",
+        "Identificación de los recursos minerales metálicos y no metálicos y las rocas industriales, comprendiendo el impacto de su extracción y valorando la importancia económica y social de la minería en Andalucía."
+      ],
+      "codigos_items": [
+        "CCTI.2.B.1",
+        "CCTI.2.B.2",
+        "CCTI.2.B.3",
+        "CCTI.2.B.4",
+        "CCTI.2.B.5",
+        "CCTI.2.B.6",
+        "CCTI.2.B.7",
+        "CCTI.2.B.8"
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Dinámica de las capas fluidas",
+      "titulo": "Dinámica de las capas fluidas",
+      "items": [
+        "Estudio de la atmósfera, mediante el análisis de su composición, la comprensión de su estructura, la identificación de sus principales propiedades, así como las funciones. Interpretación del balance energético global.",
+        "Comprensión de los aspectos generales de la dinámica atmosférica: humedad atmosférica y precipitaciones; presión atmosférica y circulación general, estabilidad e inestabilidad atmosféricas, tiempo y clima.",
+        "Desarrollo de las destrezas necesarias para la interpretación de mapas meteorológicos.",
+        "Determinación de los riesgos climáticos más frecuentes y la relación de los climas de Andalucía con la aparición de los mismos.",
+        "Análisis de la distribución del agua en el planeta a través del estudio del ciclo hidrológico y mediante la comprensión de los procesos implicados.",
+        "Evaluación de los recursos hídricos de Andalucía, análisis de la planificación hídrica y sensibilización sobre la problemática ambiental asociada.",
+        "Identificación y estudio de los recursos energéticos relacionados con la atmósfera y el agua en el pasado, en el presente y en el futuro en Andalucía."
+      ],
+      "codigos_items": [
+        "CCTI.2.C.1",
+        "CCTI.2.C.2",
+        "CCTI.2.C.3",
+        "CCTI.2.C.4",
+        "CCTI.2.C.5",
+        "CCTI.2.C.6",
+        "CCTI.2.C.7"
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Contaminación de las capas fluidas",
+      "titulo": "Contaminación de las capas fluidas",
+      "items": [
+        "Comprensión del concepto de la contaminación atmosférica, asociación de los contaminantes atmosféricos con su origen y reconocimiento de las consecuencias sociales, ambientales y sanitarias que producen.",
+        "Relación del grado de contaminación de la atmósfera con los factores que influyen su dispersión",
+        "Investigación y descripción de las principales medidas de detección, prevención y corrección de la contaminación atmosférica.",
+        "Tipificación, análisis y desarrollo de estrategias para la disminución de los efectos locales, regionales y globales de la contaminación atmosférica: islas térmicas, smog, ruido, lluvia ácida, destrucción de la capa de ozono, el calentamiento global y el cambio climático terrestre.",
+        "Búsqueda de información sobre los principales focos de contaminación atmosférica en Andalucía y la calidad del aire en las ciudades andaluzas, comprendiendo la importancia de las Redes de vigilancia y control.",
+        "Conocimiento y descripción del origen de la contaminación hídrica, estableciendo relaciones entre el tipo de contaminante y sus efectos, y valorando los factores que influyen en la autodepuración del agua.",
+        "Estudio de parámetros indicadores de la calidad del agua.",
+        "Identificación y análisis de los principales efectos de la contaminación en aguas superficiales, subterráneas y marinas (eutrofización, mareas negras, intrusión marina), así como el desarrollo de estrategias para su disminución.",
+        "Sensibilización sobre la importancia de la depuración de las aguas residuales.",
+        "Desarrollo de destrezas para la comprensión de los efectos del consumo y el uso del agua en Andalucía.",
+        "Búsqueda de información sobre los principales focos de contaminación hídrica en Andalucía."
+      ],
+      "codigos_items": [
+        "CCTI.2.D.1",
+        "CCTI.2.D.2",
+        "CCTI.2.D.3",
+        "CCTI.2.D.4",
+        "CCTI.2.D.5",
+        "CCTI.2.D.6",
+        "CCTI.2.D.7",
+        "CCTI.2.D.8",
+        "CCTI.2.D.9",
+        "CCTI.2.D.10",
+        "CCTI.2.D.11"
+      ]
+    },
+    {
+      "codigo": "E",
+      "bloque": "E. La biosfera",
+      "titulo": "La biosfera",
+      "items": [
+        "Estudio de la composición y el funcionamiento del ecosistema, desarrollando destrezas para la compresión de las relaciones, flujos, ciclos y dinámicas que se establecen en el mismo.",
+        "Sensibilización sobre la importancia de la biodiversidad de los ecosistemas, relación de las actividades humanas con su disminución y análisis de los riesgos que supone su disminución.",
+        "Conocimiento de los recursos de la biosfera: agrícolas, ganaderos, forestales, pesqueros y patrimoniales.",
+        "Identificación de los distintos ecosistemas andaluces, analizando el nivel de conservación de cada uno de ellos y valoración de la riqueza en biodiversidad que posee Andalucía."
+      ],
+      "codigos_items": [
+        "CCTI.2.E.1",
+        "CCTI.2.E.2",
+        "CCTI.2.E.3",
+        "CCTI.2.E.4"
+      ]
+    },
+    {
+      "codigo": "F",
+      "bloque": "F. Gestión y desarrollo sostenible",
+      "titulo": "Gestión y desarrollo sostenible",
+      "items": [
+        "Desarrollo de destrezas para la comprensión de las relaciones entre el medio ambiente y la sociedad, analizando los distintos modelos de desarrollo.",
+        "Identificación y diferenciación de los principales instrumentos de gestión ambiental: la evaluación de impacto ambiental, la ordenación del territorio y la educación ambiental.",
+        "Búsqueda de información sobre las figuras de protección de los espacios naturales, localización de los principales espacios protegidos en Andalucía y sensibilización sobre la necesidad de protección de estos espacios.",
+        "Conocimiento y manejo de las principales herramientas del Derecho ambiental: el delito ecológico, las leyes ambientales y los convenios internacionales.",
+        "Búsqueda de información sobre la obtención de materias primas y sus repercusiones sociales y medioambientales.",
+        "Estudio sobre el uso de los materiales y la evolución de la Humanidad.",
+        "Investigación sobre la influencia de los nuevos materiales en el desarrollo futuro de la sociedad. Ciencias de la Tierra y del Medio Ambiente"
+      ],
+      "codigos_items": [
+        "CCTI.2.F.1",
+        "CCTI.2.F.2",
+        "CCTI.2.F.3",
+        "CCTI.2.F.4",
+        "CCTI.2.F.5",
+        "CCTI.2.F.6",
+        "CCTI.2.F.7"
+      ]
+    }
+  ],
+  "comunidad": "andalucia",
+  "idioma": "es"
+}

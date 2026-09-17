@@ -1,0 +1,199 @@
+{
+  "materia_oficial": "Finanzas y Economía",
+  "materia": "Finanzas y Economía",
+  "etapa": "Bachillerato",
+  "ciclo": "2º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Tomar conciencia de la importancia del análisis personal, empresarial o social antes de la toma de decisiones financieras o de inversión, llevando a cabo la resolución de problemas financieros en el caso de rentas, préstamos y empréstitos comerciales, para planificar adecuadamente los aspectos financieros de la vida personal y de las organizaciones.",
+      "descriptores": [
+        "CD4",
+        "CPSAA4",
+        "CE1",
+        "CE2"
+      ]
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Identificar las características, ventajas e inconvenientes de los principales productos y mercados financieros y aplicar técnicas sencillas para conocer la viabilidad de proyectos financieros, combinando diferentes fuentes de financiación.",
+      "descriptores": [
+        "CPSAA4",
+        "CPSAA5",
+        "CE3"
+      ]
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Comprender las características básicas de las diferentes metodologías de investigación y experimentación económicas, aplicándolas a la realización de indagaciones sencillas que permitan abordar de un modo científico la comprensión de la realidad y el análisis de las consecuencias y la viabilidad de las intervenciones de los diferentes agentes, para profundizar en la comprensión de los problemas sociales y valorar la relevancia de la evaluación del impacto social de la actividad empresarial, de las conductas de los consumidores y de las políticas públicas.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Implementar técnicas de emprendimiento personal como la gestión de la inteligencia emocional, así como valorar la importancia del emprendimiento empresarial y social para crear renta y empleo y mejorar el bienestar social, diseñando, con sentido ético y solidario, estrategias de emprendimiento innovadoras y sostenibles que den respuesta a las necesidades locales, andaluzas, españolas y globales detectadas.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Identificar las variables relevantes para tomar decisiones de financiación y de inversión en contextos personales, empresariales y sociales, comprendiendo las diferencias entre activos reales y financieros."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Aplicar las leyes de capitalización simple y compuesta a la resolución de problemas."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Calcular operaciones de intercambio de capitales con vencimientos distintos."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "1",
+      "descripcion": "Valorar la importancia de comprender las operaciones financieras para planificar las decisiones financieras de las personas y de las organizaciones a lo largo de las diferentes etapas de su vida."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Describir, tipificar y calcular el valor financiero en problemas de rentas."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Conocer los elementos y garantías del proceso financiero de la amortización de préstamos."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Confeccionar e interpretar tablas descriptivas de operaciones de préstamos empleando los métodos más habituales de amortización."
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "2",
+      "descripcion": "Identificar los rasgos básicos de operaciones de empréstitos comerciales interpretando documentos relacionados con ellos."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Describir las características de los principales productos financieros que oferta el mercado financiero, comprendiendo su relevancia para la planificación de las actividades de las personas y las organizaciones y valorando las implicaciones éticas de las decisiones financieras."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Describir las principales características del mercado primario y del mercado de negociación, simulando operaciones en carteras de diferente composición (renta fija, renta variable y mixta) y comprendiendo las relaciones entre rentabilidad, riesgo, plazo y liquidez."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Analizar, mediante distintos métodos, la viabilidad de proyectos financieros personales y de organizaciones."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "3",
+      "descripcion": "Comprender las dinámicas de los procesos de especulación, valorando sus repercusiones sobre las condiciones de vida de las personas y de las sociedades."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Diferenciar las características de las principales modalidades de investigación económica."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Diseñar, llevar a cabo y exponer los resultados de una investigación sobre un problema económico o social que emplee datos, analice algún caso relevante relacionado con asuntos empresariales o financieros o lleve a cabo un experimento ilustrativo de principios económicos."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Reconocer el valor del trabajo en equipo."
+    },
+    {
+      "codigo": "4.4",
+      "competencia": "4",
+      "descripcion": "Valorar la relevancia de la investigación económica en la comprensión de la realidad local, regional, estatal y global, en la validación científica de modelos, en la evaluación de políticas públicas y en el estudio de la viabilidad de propuestas de soluciones a los problemas sociales."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Decisiones financieras básicas",
+      "titulo": "Decisiones financieras básicas",
+      "items": [
+        "Planificación y decisiones financieras.",
+        "Capitalización simple y compuesta.",
+        "Equivalencia financiera.",
+        "Gestión de cuentas corrientes."
+      ],
+      "codigos_items": [
+        "FYEC.2.A.1",
+        "FYEC.2.A.2",
+        "FYEC.2.A.3",
+        "FYEC.2.A.4"
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Otras operaciones financieras",
+      "titulo": "Otras operaciones financieras",
+      "items": [
+        "Rentas y resolución de problemas financieros.",
+        "Métodos de amortización de préstamos.",
+        "Empréstitos comerciales."
+      ],
+      "codigos_items": [
+        "FYEC.2.B.1",
+        "FYEC.2.B.2",
+        "FYEC.2.B.3"
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Mercados financieros",
+      "titulo": "Mercados financieros",
+      "items": [
+        "Productos financieros.",
+        "El mercado primario.",
+        "El mercado secundario: la renta fija, variable y mixta.",
+        "Fondos de inversión, planes de pensiones y seguros.",
+        "Proyectos de viabilidad financiera.",
+        "Burbujas financieras y crisis económicas.",
+        "Finanzas éticas."
+      ],
+      "codigos_items": [
+        "FYEC.2.C.1",
+        "FYEC.2.C.2",
+        "FYEC.2.C.3",
+        "FYEC.2.C.4",
+        "FYEC.2.C.5",
+        "FYEC.2.C.6",
+        "FYEC.2.C.7"
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Economía aplicada",
+      "titulo": "Economía aplicada",
+      "items": [
+        "Tratamiento de datos e investigaciones cuantitativas.",
+        "Análisis de casos y otros métodos cualitativos.",
+        "Experimentos económicos.",
+        "Proyecto de investigación sobre temas económicos y empresariales."
+      ],
+      "codigos_items": [
+        "FYEC.2.D.1",
+        "FYEC.2.D.2",
+        "FYEC.2.D.3",
+        "FYEC.2.D.4"
+      ]
+    }
+  ],
+  "comunidad": "andalucia",
+  "idioma": "es"
+}

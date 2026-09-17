@@ -1,0 +1,166 @@
+{
+  "materia_oficial": "Literatura Dramática",
+  "materia": "Literatura Dramática",
+  "etapa": "Bachillerato",
+  "ciclo": "2º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Leer obras de la literatura dramática o ver su puesta en escena, atendiendo tanto a las relaciones internas de los elementos constitutivos del género y sus funciones en las obras como a las relaciones externas de las obras con su contexto de producción y su inscripción en la tradición cultural, para ensanchar las posibilidades de disfrute de la literatura dramática y para estimular la expresión artística.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Leer o ver en escena de manera autónoma obras relevantes de la literatura dramática como fuente de placer y conocimiento, seleccionar de manera orientada aquellas que mejor se ajustan a los gustos, intereses y necesidades personales, diversificar formas de acceso al hecho teatral, y compartir experiencias de recepción, para forjar un criterio propio y para disfrutar de su dimensión social.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Establecer vínculos entre obras dramáticas de diferentes épocas, contextos y lenguajes artísticos para constatar la existencia de universales temáticos, tipologías de personajes y cauces formales recurrentes a lo largo de la historia de la literatura dramática, y para reconocer semejanzas y diferencias en función de sus respectivos contextos de producción y de la interrelación entre literatura y sociedad.",
+      "descriptores": [
+        "CCEC1",
+        "CCEC2"
+      ]
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Emplear las capacidades expresivas y creativas necesarias para la recreación o creación de textos dramáticos, utilizando los elementos que configuran el género, así como diferentes técnicas, para componer la acción dramática, el diseño de personajes y la configuración de situaciones y escenas.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Participar en la construcción de un canon literario dramático universal que integre la perspectiva de experiencia de las mujeres a través de la lectura, el visionado o la asistencia a obras teatrales de escritoras o de personajes femeninos esenciales y que supere los marcos de la cultura occidental, para establecer contrapuntos de interés, respeto y sensibilidad hacia otras voces y para desarrollar el pensamiento crítico con respecto a la construcción discursiva del mundo y sus imaginarios e identidades.",
+      "descriptores": [
+        "CPSAA4",
+        "CC1",
+        "CCEC1",
+        "CCEC2"
+      ]
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Explicar y argumentar la interpretación y valoración de las obras teatrales leídas o vistas, a partir del análisis de las relaciones internas de sus elementos constitutivos con el sentido de la obra y de las relaciones externas del texto con su contexto sociohistórico y cultural, atendiendo a su relación con otras manifestaciones artísticas como pintura, escultura, música, danza, fotografía y cine, y con la tradición literaria, utilizando un metalenguaje específico e incorporando juicios de valor vinculados a la apreciación estética de las obras."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Leer en voz alta y colectivamente fragmentos y obras teatrales, con inclusión de obras teatrales andaluzas, prestando especial atención a la configuración de situaciones y escenas, enfatizando las emociones, la intensidad de las palabras y los elementos prosódicos, así como demostrando motivación, interés y capacidad para la implicación en tareas colectivas."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Elaborar una interpretación personal a partir de la lectura, el visionado o la asistencia a representaciones de obras relevantes de la literatura dramática, incluyendo obras andaluzas, que atienda a aspectos temáticos, de género y subgénero, elementos de la estructura y el estilo y valores éticos y estéticos de las obras, estableciendo vínculos argumentados con otras obras y otras experiencias artísticas y culturales."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Acceder de diversas formas a la cultura literaria dramática en el marco de un itinerario lector personal que enriquezca, de forma consciente y sistemática, la propia identidad lectora y como público teatral."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Participar en conversaciones literarias de manera que se compartan las propias experiencias de lectura, de visionado o de asistencia teatral con la ayuda de un metalenguaje específico."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Comparar textos o fragmentos teatrales, de diferentes épocas y contextos, entre sí o con su puesta en escena, adaptación cinematográfica u otras representaciones artísticas relacionadas, argumentando oralmente o por escrito los elementos de semejanza y contraste tanto en lo relativo a aspectos temáticos y de contenido como formales y expresivos y con atención a los valores éticos y estéticos de las obras."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Desarrollar proyectos de investigación, con la ayuda de medios audiovisuales y de las tecnologías de la información y la comunicación, que den lugar a una exposición oral, un ensayo o una presentación multimodal en torno a una cuestión que establezca vínculos argumentados entre obras de la literatura dramática objeto de lectura guiada y sus puestas en escena u otros textos y manifestaciones artísticas"
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Bloque A",
+      "titulo": "Bloque A",
+      "items": [
+        "El texto teatral: Definición y elementos.",
+        "El personaje teatral.",
+        "La realización escénica y el sistema estilístico.",
+        "La recepción teatral. La relación con el público. Catarsis, extrañamiento y participación."
+      ],
+      "codigos_items": [
+        "LITD.2.A.1",
+        "LITD.2.A.2",
+        "LITD.2.A.3",
+        "LITD.2.A.4"
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Temas y formas de la literatura dramática",
+      "titulo": "Temas y formas de la literatura dramática",
+      "items": [
+        "El teatro del Yo: los personajes como modelos vitales.",
+        "Vivir con otros: el teatro como modelo de interpretación de las relaciones humanas.",
+        "Vivir en el mundo: función y sentido del teatro.",
+        "El teatro habla del teatro. La metaficción teatral."
+      ],
+      "codigos_items": [
+        "LITD.2.B.1",
+        "LITD.2.B.2",
+        "LITD.2.B.3",
+        "LITD.2.B.4"
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Estrategias de análisis, interpretación, y creación de textos teatrales",
+      "titulo": "Estrategias de análisis, interpretación, y creación de textos teatrales",
+      "items": [
+        "Participación en la construcción compartida de la interpretación de las obras dramáticas a través de discusiones o conversaciones literarias.",
+        "Relación entre los elementos constitutivos del género dramático y la construcción del sentido de la obra. Efectos en la recepción de sus recursos expresivos. La interacción con el público.",
+        "Utilización de información sociohistórica, cultural y artística para construir la interpretación de las obras y comprender el lugar que ocupan en la tradición literaria.",
+        "Establecimiento de vínculos intertextuales entre obras y otras manifestaciones artísticas en función de temas, tópicos, estructuras y lenguajes. Elementos de continuidad y ruptura.",
+        "Indagación en torno al funcionamiento del teatro como artefacto ideológico determinante en la construcción de los imaginarios sociales, haciendo especial hincapié en la perspectiva de género.",
+        "Expresión argumentada de la interpretación de obras y fragmentos dramáticos, integrando los diferentes aspectos analizados y atendiendo a sus valores culturales, éticos y estéticos. La reseña teatral.",
+        "Lectura expresiva y dramatización de los textos, atendiendo a los procesos de comprensión y de oralización implicados, así como a los rasgos esenciales de la interpretación teatral.",
+        "Creación de textos teatrales a partir de la apropiación de las convenciones del lenguaje literario y en referencia a modelos dados (imitación, transformación, continuación, etc.). D. Recepción autónoma de obras relevantes de la literatura dramática y participación en conversaciones literarias y en intercambios de recomendaciones."
+      ],
+      "codigos_items": [
+        "LITD.2.C.1",
+        "LITD.2.C.2",
+        "LITD.2.C.3",
+        "LITD.2.C.4",
+        "LITD.2.C.5",
+        "LITD.2.C.6",
+        "LITD.2.C.7",
+        "LITD.2.C.8"
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Bloque D",
+      "titulo": "Bloque D",
+      "items": [
+        "Selección de las obras de manera autónoma y con la ayuda de recomendaciones especializadas.",
+        "Participación activa en el circuito literario, lector y teatral en contexto presencial y digital.",
+        "Definición de los gustos dramáticos personales, diversificando el corpus leído o visto en tanto que espectador o espectadora, atendiendo a los circuitos culturales del teatro.",
+        "Expresión de la experiencia lectora o como público utilizando un metalenguaje específico y elaboración de una interpretación personal que atienda a aspectos temáticos y estructurales, de realización escénica y de sistema estilístico.",
+        "Movilización de la propia experiencia personal, lectora y teatral para establecer vínculos de manera argumentada entre la obra leída u observada y aspectos de la actualidad, así como con otros textos y manifestaciones artísticas, incluidas prácticas culturales emergentes.",
+        "Recomendación de las lecturas y puestas en escena en soportes variados, atendiendo a aspectos temáticos, formales e intertextuales."
+      ],
+      "codigos_items": [
+        "LITD.2.D.1",
+        "LITD.2.D.2",
+        "LITD.2.D.3",
+        "LITD.2.D.4",
+        "LITD.2.D.5",
+        "LITD.2.D.6"
+      ]
+    }
+  ],
+  "comunidad": "andalucia",
+  "idioma": "es"
+}

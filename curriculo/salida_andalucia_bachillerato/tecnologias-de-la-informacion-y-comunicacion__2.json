@@ -1,0 +1,129 @@
+{
+  "materia_oficial": "Tecnologías de la Información y Comunicación",
+  "materia": "Tecnologías de la Información y Comunicación",
+  "etapa": "Bachillerato",
+  "ciclo": "2º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Reconocer el proceso de transformación como agente de cambio, analizando aspectos positivos y negativos de dicho proceso para entender el papel principal de las tecnologías de la información y la comunicación en la sociedad actual, su impacto en los ámbitos social, económico y cultural, y su importancia en la innovación y el empleo.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Configurar ordenadores y equipos informáticos, utilizando de forma segura, responsable y respetuosa dichos dispositivos, para comprender el funcionamiento de los componentes hardware y software que conforman ordenadores y equipos digitales.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Usar, seleccionar y combinar múltiples aplicaciones informáticas, atendiendo a cuestiones de diseño, usabilidad y accesibilidad, incluyendo la creación de un proyecto web, para crear producciones digitales que cumplan unos objetivos determinados.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Comprender el funcionamiento de Internet y de las tecnologías de búsqueda, analizando de forma crítica los contenidos publicados y fomentando un uso compartido de la información, para permitir la producción colaborativa y la difusión de conocimiento.",
+      "descriptores": [
+        "CC1",
+        "CE1"
+      ]
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Comprender qué es un algoritmo y cómo son implementados en forma de programa, analizando y aplicando los principios de la ingeniería del software, para desarrollar y depurar aplicaciones informáticas y resolver problemas.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Analizar y valorar el impacto de la industria de desarrollo de software en la sociedad actual, en especial en la innovación y el empleo."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Emplear medidas de seguridad informática necesarias para la protección de las personas y de sus datos, comprendiendo los principios de la ciberseguridad, identificando amenazas y riesgos."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Proteger la privacidad en Internet y reconocer contenido, contactos o conductas inapropiadas, sabiendo informar al respecto."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Elaborar y publicar contenidos en la web, integrando información textual, gráfica y multimedia, teniendo en cuenta a quién va dirigida y el objetivo que se pretende conseguir, midiendo, recogiendo y analizando datos de uso."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Trabajar colaborativamente en la creación de contenidos digitales, usando herramientas de comunicación y productividad, comprendiendo y respetando los derechos de autor en el entorno digital."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Desarrollar una variedad de aplicaciones informáticas en las que se emplee una aproximación modular y diferentes estructuras de datos."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Aplicar los principales pasos del ciclo de vida de una aplicación, trabajando de forma colaborativa, empleando un entorno de desarrollo integrado."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "5",
+      "descripcion": "Analizar y resolver problemas de tratamiento de la información, dividiéndolos en subproblemas, empleando mecanismos de abstracción, definiendo algoritmos que los resuelvan e identificando problemas y soluciones similares."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Desarrollo de Software",
+      "titulo": "Desarrollo de Software",
+      "items": [
+        "Programación.",
+        "Ingeniería de software.",
+        "Diseño de sofwt are y resolución de problemas.",
+        "La Industria del desarrollo de software."
+      ],
+      "codigos_items": [
+        "TICO.2.A.1",
+        "TICO.2.A.2",
+        "TICO.2.A.3",
+        "TICO.2.A.4"
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Publicación de contenidos",
+      "titulo": "Publicación de contenidos",
+      "items": [
+        "La Web.",
+        "Trabajo colaborativo."
+      ],
+      "codigos_items": [
+        "TICO.2.B.1",
+        "TICO.2.B.2"
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Seguridad Informática",
+      "titulo": "Seguridad Informática",
+      "items": [
+        "Ciberseguridad.",
+        "Privacidad y uso responsable."
+      ],
+      "codigos_items": [
+        "TICO.2.C.1",
+        "TICO.2.C.2"
+      ]
+    }
+  ],
+  "comunidad": "andalucia",
+  "idioma": "es"
+}

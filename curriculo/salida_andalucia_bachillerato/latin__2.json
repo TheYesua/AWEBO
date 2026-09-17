@@ -1,0 +1,270 @@
+{
+  "materia_oficial": "Latín",
+  "materia": "Latín",
+  "etapa": "Bachillerato",
+  "ciclo": "2º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Traducir y comprender textos latinos de dificultad creciente y justificar la traducción, identificando y analizando los aspectos básicos de la lengua latina y sus unidades lingüísticas y reflexionando sobre ellas mediante la comparación con las lenguas de enseñanza y con otras lenguas del repertorio individual del alumnado, para realizar una lectura comprensiva, directa y eficaz y una interpretación razonada de su contenido.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Distinguir los formantes latinos y explicar los cambios que hayan tenido lugar a lo largo del tiempo, comparándolos con los de la lengua de enseñanza y otras lenguas del repertorio individual del alumnado, para deducir el significado etimológico del léxico conocido y los significados de léxico nuevo o especializado.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Leer, interpretar y comentar textos latinos de diferentes géneros y épocas, asumiendo el proceso creativo como complejo e inseparable del contexto histórico, social y político y de sus influencias artísticas, para identificar su genealogía y su aportación a la literatura europea.",
+      "descriptores": [
+        "CCEC2"
+      ]
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Analizar las características de la civilización latina en el ámbito personal, religioso y sociopolítico, adquiriendo conocimientos sobre el mundo romano y comparando críticamente el presente y el pasado, para valorar las aportaciones del mundo clásico latino a nuestro entorno como base de una ciudadanía democrática y comprometida.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Valorar críticamente el patrimonio histórico, arqueológico, artístico y cultural heredado de la civilización latina, interesándose por su sostenibilidad y reconociéndolo como producto de la creación humana y como testimonio de la historia, para explicar el legado material e inmaterial latino como transmisor de conocimiento y fuente de inspiración de creaciones modernas y contemporáneas.",
+      "descriptores": [
+        "CC4",
+        "CE1",
+        "CCEC1",
+        "CCEC2"
+      ]
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Realizar traducciones directas o inversas de textos o fragmentos adaptados u originales, de dificultad adecuada y progresiva, empleando una redacción estilísticamente correcta y conforme a las normas gramaticales y ortográficas, identificando y analizando unidades lingüísticas regulares de la lengua, y apreciando variantes y coincidencias con otras lenguas conocidas."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Seleccionar el significado apropiado de palabras polisémicas y justificar la decisión, teniendo en cuenta la información cotextual o contextual y utilizando herramientas de apoyo al proceso de traducción en distintos soportes, tales como listas de vocabulario, glosarios, diccionarios, mapas o atlas,correctores ortográficos, gramáticas y libros de estilo."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Revisar y subsanar las propias traducciones y la de los compañeros y las compañeras, realizando propuestas de mejora y argumentando los cambios con terminología especializada a partir de la reflexión lingüística."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "1",
+      "descripcion": "Realizar la lectura directa de textos latinos de dificultad adecuada identificando las unidades lingüísticas más frecuentes de la lengua latina, comparándolas con las de las lenguas del repertorio lingüístico propio y asimilando los aspectos morfológicos, sintácticos y léxicos del latín."
+    },
+    {
+      "codigo": "1.5",
+      "competencia": "1",
+      "descripcion": "Registrar los progresos y dificultades de aprendizaje de la lengua latina, seleccionando las estrategias más adecuadas y eficaces para superar esas dificultades y consolidar su aprendizaje, realizando actividades de planificación del propio aprendizaje, autoevaluación y coevaluación, como las propuestas en el Portfolio Europeo de las Lenguas (PEL) o en un diario de aprendizaje, haciéndolos explícitos y compartiéndolos."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Deducir el significado etimológico de un término de uso común e inferir el significado de términos de nueva aparición o procedentes de léxico especializado, aplicando estrategias de reconocimiento de formantes latinos atendiendo a los cambios fonéticos, morfológicos o semánticos que hayan tenido lugar."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Explicar cambios fonéticos, morfológicos o semánticos de complejidad creciente que se han producido tanto desde el latín culto como desde el latín vulgar hasta las lenguas de enseñanza, sirviéndose, cuando sea posible, de la comparación con otras lenguas de su repertorio."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Explicar la relación del latín con las lenguas modernas, analizando los elementos lingüísticos comunes de origen latino y utilizando con iniciativa estrategias y conocimientos de las lenguas y lenguajes que conforman el repertorio propio."
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "2",
+      "descripcion": "Analizar críticamente prejuicios y estereotipos lingüísticos, adoptando una actitud de respeto y valoración de la diversidad como riqueza cultural, lingüística y dialectal, a partir de criterios dados."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Interpretar y comentar textos y fragmentos literarios de diversa índole de creciente complejidad, aplicando estrategias de análisis y reflexión que impliquen movilizar la propia experiencia, comprender el mundo y la condición humana y desarrollar la sensibilidad estética y el hábito lector."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Analizar y explicar los temas, tópicos, géneros y valores éticos o estéticos de obras o fragmentos literarios latinos, comparándolos con obras o fragmentos literarios posteriores, desde un enfoque intertextual."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Identificar y definir palabras latinas que designan conceptos fundamentales para el estudio y comprensión de la civilización latina y cuyo aprendizaje combina conocimientos léxicos y culturales, tales como potestas, auctoritas, virtus, prudentia en textos de diferentes formatos."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "3",
+      "descripcion": "Crear textos, individuales o colectivos, con intención literaria y conciencia de estilo, en distintos soportes y con ayuda de otros lenguajes artísticos y audiovisuales, a partir de la lectura de obras o fragmentos significativos en los que se haya partido de la civilización y la cultura latinas como fuente de inspiración."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Explicar los procesos históricos y políticos, las instituciones, los modos de vida y las costumbres de la sociedad romana, comparándolos con los de las sociedades actuales, incluida la sociedad andaluza actual, valorando de manera crítica las adaptaciones y cambios experimentados a la luz de la evolución de las sociedades y los derechos humanos, y favoreciendo el desarrollo de una cultura compartida y una ciudadanía comprometida con la memoria colectiva y los valores democráticos."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Debatir acerca de la importancia, evolución, asimilación o cuestionamiento de diferentes aspectos del legado romano en nuestra sociedad, utilizando estrategias retóricas y oratorias, mediando entre posturas cuando sea necesario, seleccionando y contrastando información y experiencias veraces y mostrando interés, respeto y empatía por otras opiniones y argumentaciones."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Elaborar trabajos de investigación de manera autónoma, en grupo o individualmente, en diferentes soportes sobre aspectos del legado de la civilización latina en el ámbito personal, religioso y sociopolítico, localizando, seleccionando, contrastando y reelaborando información procedente de diferentes fuentes, calibrando su fiabilidad y pertinencia y respetando los principios de rigor y propiedad intelectual."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Identificar y explicar el legado material e inmaterial de la civilización latina como fuente de inspiración, analizando producciones culturales y artísticas posteriores."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Investigar el patrimonio histórico, arqueológico, artístico y cultural, con especial atención al andaluz, heredado de la civilización latina, actuando de forma adecuada, empática y respetuosa e interesándose por los procesos de construcción, preservación, conservación y restauración y por aquellas actitudes cívicas que aseguran su sostenibilidad."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "5",
+      "descripcion": "Explorar las huellas de la romanización y el legado romano en Andalucía y en el entorno del alumnado, aplicando los conocimientos adquiridos y reflexionando sobre las implicaciones de sus distintos usos, dando ejemplos de la pervivencia de la Antigüedad clásica en su vida cotidiana y presentando sus resultados a través de diferentes soportes."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. El texto: comprensión y traducción",
+      "titulo": "El texto: comprensión y traducción",
+      "items": [
+        "Unidades lingüísticas de la lengua latina: conceptos avanzados de prosodia, morfología y sintaxis.",
+        "La traducción: técnicas, procesos y herramientas."
+      ],
+      "codigos_items": [
+        "LATI.2.A.1",
+        "LATI.2.A.2"
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Plurilingüismo",
+      "titulo": "Plurilingüismo",
+      "items": [
+        "Influencia del latín en la evolución de las lenguas de enseñanza y del resto de lenguas que conforman el repertorio lingüístico individual del alumnado.",
+        "Reglas fonéticas en la evolución del latín a las lenguas de enseñanza.",
+        "Léxico: lexemas, sufijos y prefijos de origen latino presentes en el léxico de uso común y en el específico de las ciencias y la técnica; significado y definición de palabras de uso común en la lengua de enseñanza a partir de sus étimos de origen latino; expresiones latinas integradas en las lenguas modernas y su empleo en diferentes tipos de textos: literarios, periodísticos, publicitarios.",
+        "Interés por conocer el significado etimológico de las palabras y la importancia del uso adecuado del vocabulario como instrumento básico en la comunicación.",
+        "El latín como instrumento que permite un mejor conocimiento de las lenguas de estudio y un más fácil acercamiento a otras lenguas modernas, romances y no romances.",
+        "Respeto por todas las lenguas y aceptación de las diferencias culturales de las gentes que las hablan.",
+        "Herramientas analógicas y digitales para el de las palabras y la importancia del uso adecuado del vocabulario como instrumento básico en la comunicación.",
+        "Expresiones y léxico específico para reflexionar y compartir la reflexión sobre la comunicación, la lengua, el aprendizaje y las herramientas de comunicación y aprendizaje (metalenguaje)."
+      ],
+      "codigos_items": [
+        "LATI.2.B.1",
+        "LATI.2.B.2",
+        "LATI.2.B.3",
+        "LATI.2.B.4",
+        "LATI.2.B.5",
+        "LATI.2.B.6",
+        "LATI.2.B.7",
+        "LATI.2.B.8"
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Educación literaria",
+      "titulo": "Educación literaria",
+      "items": [
+        "La lengua latina como principal vía de transmisión del mundo clásico a través de la historia. La erudición y las grandes bibliotecas. El libro antiguo.",
+        "Etapas y vías de transmisión de la literatura latina. El Renacimiento: el Humanismo latino.",
+        "Principales géneros de la literatura latina: origen, tipología, cronología, temas, motivos, tradiciones, características y principales autores. La Épica (Épica arcaica, Virgilio y Lucano); la Lírica (Neotéricos, Catulo, Propercio, Tibulo, Horacio y Ovidio); la Comedia (Plauto, Terencio); la Tragedia (Séneca); la Historiografía (César, Salustio, Livio, Tácito y Suetonio). La Oratoria (Cicerón y Quintiliano); la fábula (Fedro); la Filosofía (Cicerón y Séneca).",
+        "Técnicas para el comentario y análisis lingüístico y literario de los textos literarios latinos.",
+        "Recepción de la literatura latina: influencia en la producción cultural europea en general y en la española en particular, nociones básicas de intertextualidad, imitatio, aemulatio, interpretatio, allusio.",
+        "Analogías y diferencias entre los géneros literarios latinos y los de la literatura actual.",
+        "Introducción a la crítica literaria: la crítica textual.",
+        "Interés hacia la literatura como fuente de placer y de conocimiento del mundo.",
+        "Respeto de la propiedad intelectual y derechos de autor sobre las fuentes consultadas y contenidos utilizados: herramientas para el tratamiento de datos bibliográficos y recursos para evitar el plagio."
+      ],
+      "codigos_items": [
+        "LATI.2.C.1",
+        "LATI.2.C.2",
+        "LATI.2.C.3",
+        "LATI.2.C.4",
+        "LATI.2.C.5",
+        "LATI.2.C.6",
+        "LATI.2.C.7",
+        "LATI.2.C.8",
+        "LATI.2.C.9"
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. La antigua Roma",
+      "titulo": "La antigua Roma",
+      "items": [
+        "Geografía del proceso de expansión de Roma desde su nacimiento hasta la desaparición del Imperio romano.",
+        "Topografía de la antigua Roma, nombre y función de los sitios centrales de la ciudad (edificios públicos y privados), por ejemplo, Foro Romano, basílicas, Coliseo, Circo Máximo.",
+        "Historia de la antigua Roma: etapas de la historia de Roma: monarquía, república e imperio; hitos la historia del mundo romano entre los siglos VIII a.C. y V d.C.; leyendas y principales episodios de la historia de Roma; personalidades históricas relevantes de la historia de Roma, su biografía en contexto y su importancia para Europa (Aníbal, P. Cornelio Escipión, Cicerón, Catilina, César, Pompeyo, Augusto, M. Antonio Séneca, etc.).",
+        "Historia y organización política y social de Roma como parte esencial de la historia y cultura de la sociedad actual. La magistratura, el Senado. La sociedad romana, el ciudadano romano. Equites, nobiles, clientes. Los esclavos y los libertos: la manumisión.",
+        "Instituciones, creencias y formas de vida de la civilización latina desde la perspectiva sociocultural actual.",
+        "Influencias de la cultura griega en la civilización latina: Graecia capta ferum victorem cepit.",
+        "La aportación de Roma a la cultura y al pensamiento de la sociedad occidental.",
+        "Relación de Roma con culturas extranjeras como las griegas, el cristianismo y otras.",
+        "El mar Mediterráneo como encrucijada de culturas ayer y hoy: Mare Nostrum.",
+        "Raíces y repercusión de la Roma Antigua en la cultura andaluza."
+      ],
+      "codigos_items": [
+        "LATI.2.D.1",
+        "LATI.2.D.2",
+        "LATI.2.D.3",
+        "LATI.2.D.4",
+        "LATI.2.D.5",
+        "LATI.2.D.6",
+        "LATI.2.D.7",
+        "LATI.2.D.8",
+        "LATI.2.D.9",
+        "LATI.2.D.10"
+      ]
+    },
+    {
+      "codigo": "E",
+      "bloque": "E. Legado y patrimonio",
+      "titulo": "Legado y patrimonio",
+      "items": [
+        "Conceptos de legado, herencia y patrimonio.",
+        "La transmisión textual latina como patrimonio cultural y fuente de conocimiento a través de diferentes culturas y épocas. Soportes de escritura: tipos y preservación.",
+        "La mitología clásica en manifestaciones literarias y artísticas.",
+        "La romanización de Hispania y las huellas de su pervivencia, especialmente en la geografía andaluza, Ceuta y Melilla.",
+        "Obras públicas y urbanismo: construcción, conservación, preservación y restauración.",
+        "El derecho romano y su importancia en el sistema jurídico actual.",
+        "Las instituciones políticas romanas y su influencia y pervivencia en el sistema político actual. Las magistraturas y el “cursus honorum”.",
+        "La importancia del discurso público para la vida política y social.",
+        "Técnicas de debate y de exposición oral.",
+        "Principales obras artísticas de la Antigüedad romana: transmisión y pervivencia. Hallazgos artísticos destacados en Andalucía. especial atención a los existentes en Andalucía.",
+        "Principales sitios arqueológicos, museos o festivales relacionados con la Antigüedad clásica, con especial atención a los existentes en Andalucía."
+      ],
+      "codigos_items": [
+        "LATI.2.E.1",
+        "LATI.2.E.2",
+        "LATI.2.E.3",
+        "LATI.2.E.4",
+        "LATI.2.E.5",
+        "LATI.2.E.6",
+        "LATI.2.E.7",
+        "LATI.2.E.8",
+        "LATI.2.E.9",
+        "LATI.2.E.10",
+        "LATI.2.E.11"
+      ]
+    }
+  ],
+  "comunidad": "andalucia",
+  "idioma": "es"
+}

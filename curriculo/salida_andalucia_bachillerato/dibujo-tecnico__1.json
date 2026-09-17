@@ -1,0 +1,200 @@
+{
+  "materia_oficial": "Dibujo Técnico",
+  "materia": "Dibujo Técnico",
+  "etapa": "Bachillerato",
+  "ciclo": "1º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Interpretar elementos o conjuntos arquitectónicos y de ingeniería, empleando recursos asociados a la percepción, estudio, construcción e investigación de formas, para analizar las estructuras geométricas y los elementos técnicos utilizados.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Utilizar razonamientos inductivos, deductivos y lógicos en problemas de índole gráfico-matemáticos, aplicando fundamentos de la geometría plana para resolver gráficamente operaciones matemáticas, relaciones, construcciones y transformaciones.",
+      "descriptores": [
+        "CPSAA5",
+        "CE2"
+      ]
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Desarrollar la visión espacial, utilizando la geometría descriptiva en proyectos sencillos, considerando la importancia del dibujo en arquitectura e ingenierías, para resolver problemas e interpretar y recrear",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Formalizar y definir diseños técnicos aplicando las normas UNE e ISO de manera apropiada, valorando la importancia que tiene el croquis para documentar gráficamente proyectos arquitectónicos e ingenieriles.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Investigar, experimentar y representar digitalmente elementos, planos y esquemas técnicos, mediante el uso de programas específicos CAD (Computer Aided Design), de manera individual o grupal, apreciando su uso en las profesiones actuales, para virtualizar objetos y espacios en dos dimensiones y tres dimensiones.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Analizar, a lo largo de la historia, la relación entre las Matemáticas, el dibujo geométrico y los diferentes sistemas de representación, valorando su importancia en diferentes campos como la arquitectura, la ingeniería y el diseño, e identificando manifestaciones en la arquitectura andaluza, así como en las artes aplicadas en el arte arábigo-andaluz; desde la perspectiva de género y la diversidad cultural, empleando adecuadamente el vocabulario específico técnico y artístico."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Solucionar gráficamente cálculos matemáticos y transformaciones básicas aplicando conceptos y propiedades de la geometría plana, mostrando interés por la precisión, claridad en su lectura y limpieza."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Trazar gráficamente construcciones poligonales basándose en sus propiedades y mostrando interés por la precisión, claridad y limpieza."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Resolver gráficamente tangencias y enlaces, y trazar curvas, aplicando sus propiedades con rigor en su ejecución."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Representar en sistema diédrico elementos y formas tridimensionales básicos en el espacio, determinando su relación de pertenencia, intersección, posición, distancia y verdadera magnitud."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Definir elementos y figuras planas, superficies y sólidos geométricos sencillos en sistemas axonométricos, valorando su importancia como métodos de representación espacial."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Representar e interpretar elementos básicos en el sistema de planos acotados, haciendo uso de sus fundamentos."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "3",
+      "descripcion": "Dibujar puntos, elementos lineales, planos, superficies y sólidos geométricos en el espacio, empleando la perspectiva cónica."
+    },
+    {
+      "codigo": "3.5",
+      "competencia": "3",
+      "descripcion": "Valorar el rigor gráfico del proceso; la claridad, la precisión y el proceso de resolución y construcción gráfica."
+    },
+    {
+      "codigo": "3.6",
+      "competencia": "3",
+      "descripcion": "Relacionar los fundamentos y características de los diferentes sistemas de representación entre sí y con sus posibles aplicaciones, identificando las ventajas e inconvenientes en función de la finalidad y el campo de aplicación de cada uno de ellos."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Documentar gráficamente objetos sencillos mediante sus vistas acotadas, aplicando la normativa UNE e ISO en la utilización de sintaxis, escalas y formatos, valorando la importancia de usar un lenguaje técnico común."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Utilizar el croquis y el boceto como elementos de reflexión en la aproximación e indagación de alternativas y soluciones a los procesos de trabajo."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Crear figuras planas y tridimensionales mediante programas de dibujo vectorial, usando las herramientas que aportan y las técnicas asociadas."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Recrear virtualmente piezas en tres dimensiones, aplicando operaciones algebraicas entre primitivas para la presentación de proyectos en grupo."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Fundamentos geométricos",
+      "titulo": "Fundamentos geométricos",
+      "items": [
+        "Desarrollo histórico del Dibujo Técnico. Campos de acción y aplicaciones: dibujo arquitectónico, mecánico, eléctrico y electrónico, geológico, urbanístico, diseño industrial, diseño gráfico, etc. Análisis de la presencia de la geometría en la naturaleza y en el arte. Referencias en la arquitectura andaluza del Renacimiento y el Barroco y en las artes aplicadas en la cultura arábigoandaluza.",
+        "Orígenes de la geometría métrica y descriptiva. Thales, Pitágoras, Euclides, Hipatia de Alejandría. Brunelleschi, Gaspard Monge, William Farisch.",
+        "Conceptos y trazados elementales en el plano. Operaciones con segmentos y ángulos, paralelismo, perpendicularidad. Aplicación de trazados fundamentales para el diseño de redes modulares. Concepto de lugar geométrico. Arco capaz. Aplicaciones de los lugares geométricos a las construcciones fundamentales. Propiedades geométricas de la mediatriz de un segmento y de la bisectriz de un ángulo. La circunferencia como lugar geométrico. Ángulos de circunferencia. Dibujo Técnico II",
+        "Proporcionalidad, razón de proporción, reglas de proporción. Equivalencia y semejanza. Escalas: tipos, construcción y aplicación de escalas gráficas.",
+        "Polígonos: triángulos, puntos y rectas notables, cuadriláteros y polígonos regulares. Propiedades, clasificación y métodos de construcción. Igualdad de polígonos. Construcción por triangulación, radiación y coordenadas.",
+        "Transformaciones geométricas en el plano. Tipos, construcción, propiedades e invariantes: giro, traslación, simetría, homotecia, homología y afinidad.",
+        "Tangencias básicas. Enlaces. Aplicaciones al diseño industrial y gráfico. Curvas técnicas derivadas.",
+        "Curvas cónicas. Obtención, definición y trazados básicos.",
+        "Interés por el rigor en los razonamientos y precisión, claridad y limpieza en las ejecuciones. Uso correcto de los materiales propios del Dibujo Técnico"
+      ],
+      "codigos_items": [
+        "DIBT.1.A.1",
+        "DIBT.1.A.2",
+        "DIBT.1.A.3",
+        "DIBT.1.A.4",
+        "DIBT.1.A.5",
+        "DIBT.1.A.6",
+        "DIBT.1.A.7",
+        "DIBT.1.A.8",
+        "DIBT.1.A.9"
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Geometría proyectiva",
+      "titulo": "Geometría proyectiva",
+      "items": [
+        "Fundamentos de la geometría proyectiva. Tipos de proyección y de sistemas de representación. Ámbitos de aplicación y criterios de selección.",
+        "Sistema diédrico: representación de punto, recta y plano. Trazas con planos de proyección. Determinación del plano. Pertenencia.",
+        "Relaciones entre elementos: intersecciones, paralelismo y perpendicularidad. Obtención de distancias y de las verdaderas magnitudes de estas.",
+        "Proyecciones diédricas de superficies y sólidos geométricos sencillos, secciones planas y obtención de verdaderas magnitudes.",
+        "Sistema axonométrico, ortogonal y oblicuo. Perspectivas isométrica y caballera. Disposición de los ejes y uso de los coeficientes de reducción. Elementos básicos: punto, recta, plano. Representación de superficies y sólidos geométricos sencillos.",
+        "Sistema de planos acotados. Fundamentos y elementos básicos. Identificación de elementos para su interpretación en planos.",
+        "Sistema cónico: fundamentos y elementos del sistema. Perspectiva frontal y oblicua. Métodos perspectivos. Representación de superficies y sólidos geométricos sencillos."
+      ],
+      "codigos_items": [
+        "DIBT.1.B.1",
+        "DIBT.1.B.2",
+        "DIBT.1.B.3",
+        "DIBT.1.B.4",
+        "DIBT.1.B.5",
+        "DIBT.1.B.6",
+        "DIBT.1.B.7"
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Normalización y documentación gráfica de",
+      "titulo": "Normalización y documentación gráfica de",
+      "items": [
+        "Escalas numéricas y gráficas. Construcción y uso.",
+        "Formatos. Doblado de planos.",
+        "Concepto de normalización. Las normas fundamentales UNE e ISO. Aplicaciones de la normalización: simbología industrial y arquitectónica.",
+        "Elección de vistas necesarias. Disposición normalizada. Líneas normalizadas. Acotación."
+      ],
+      "codigos_items": [
+        "DIBT.1.C.1",
+        "DIBT.1.C.2",
+        "DIBT.1.C.3",
+        "DIBT.1.C.4"
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Sistemas CAD (Computer Aided Design)",
+      "titulo": "Sistemas CAD (Computer Aided Design)",
+      "items": [
+        "Aplicaciones vectoriales 2D-3D.",
+        "Fundamentos de diseño de piezas en tres dimensiones.",
+        "Modelado de caja. Operaciones básicas con primitivas.",
+        "Aplicaciones de trabajo en grupo para conformar piezas complejas a partir de otras más sencillas. interpretación."
+      ],
+      "codigos_items": [
+        "DIBT.1.D.1",
+        "DIBT.1.D.2",
+        "DIBT.1.D.3",
+        "DIBT.1.D.4"
+      ]
+    }
+  ],
+  "comunidad": "andalucia",
+  "idioma": "es"
+}

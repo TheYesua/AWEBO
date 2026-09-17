@@ -1,0 +1,231 @@
+{
+  "materia_oficial": "Psicología",
+  "materia": "Psicología",
+  "etapa": "Bachillerato",
+  "ciclo": "2º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Buscar, seleccionar y analizar de manera segura y fiable, información proveniente de diversas fuentes, partiendo de las aportaciones de las principales corrientes o modelos teóricos en Psicología, para valorar con sentido crítico las soluciones propuestas a los problemas esenciales en el estudio del ser humano.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Comprender las bases de la conducta humana, identificando los condicionantes relativos a factores genéticos y endocrinos, así como de los procesos cognitivos básicos y superiores, para apreciar y comprender su influencia en la misma y adquirir conciencia de la complejidad del comportamiento humano.",
+      "descriptores": [
+        "CPSAA4",
+        "CC1"
+      ]
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Identificar y mejorar las destrezas y habilidades metacognitivas relacionadas con aprender a aprender y los procesos cognitivos, valorando la importancia del autoconocimiento y la gestión emocional en su desarrollo personal e interpersonal, analizando las implicaciones en su conducta, potenciando las cualidades personales que le ayuden a desenvolverse con autonomía y afrontar de forma proactiva los desafíos de la vida, ya sean privados, profesionales o sociales.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Analizar con sentido crítico y desde una perspectiva ética los procesos sociales más relevantes de nuestro tiempo, identificando sus elementos básicos o problemáticos, para desarrollar alternativas de carácter local y global que vayan a la raíz de los problemas planteados y que estén encaminadas a ofrecer propuestas que contribuyan a la recuperación del equilibrio del medio natural, social y humano.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Diseñar y emprender un proyecto de intervención, explorando los recursos disponibles y seleccionando las técnicas y procedimientos más adecuados de acuerdo a su objeto, a las necesidades detectadas, a las fortalezas, oportunidades, amenazas y debilidades del entorno, con criterios éticos y una orientación creativa en la búsqueda de soluciones y alternativas, con sujeción al método científico.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Buscar y seleccionar información relativa a las aportaciones de las diferentes corrientes de la Psicología, de manera sistematizada, realizando previamente su planificación, incluyendo una variedad de fuentes y soportes documentales, audiovisuales, revistas científicas, recursos online, etc. y cuidando su seguridad en la red, para posteriormente organizar, analizar y realizar conclusiones, estableciendo relaciones y comunicando, con claridad y de manera atractiva, los resultados."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Identificar la dimensión teórica y práctica de la Psicología, sus objetivos, características, ramas y técnicas de investigación, relacionándolas, como ciencia multidisciplinar, con otras ciencias cuyo fin es la comprensión de los fenómenos humanos, como la Filosofía, Biología, Antropología, Economía, etc."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Reconocer y expresar las aportaciones más importantes de la Psicología, desde sus inicios hasta la actualidad, identificando los principales problemas planteados y las soluciones aportadas por las diferentes corrientes psicológicas contemporáneas."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Explicar la evolución del cerebro humano desde un enfoque antropológico, identificando sus características en relación con el de otras especies."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Analizar y apreciar la importancia de la organización del sistema nervioso central, distinguiendo las diferentes áreas y funciones."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Comprender e identificar las bases genéticas del sistema endocrino, los procesos cognitivos básicos y superiores, así como su relación con la conducta humana, destacando de manera argumentada el origen de algunas enfermedades o trastornos."
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "2",
+      "descripcion": "Identificar fortalezas y debilidades propias y del grupo en relación con los procesos básicos (percepción, atención y memoria) y superiores (aprendizaje, inteligencia y pensamiento), comprendiendo la percepción como un proceso constructivo y subjetivo, y valorando la importancia de la inteligencia emocional."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Aprender a identificar las características fundamentales de la propia conducta, así como los rasgos de la personalidad, aplicando estrategias de desarrollo personal para la adquisición de nuevas destrezas emocionales y sociales."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Conocer los procesos implicados en el desarrollo de las emociones, identificando la relación existente entre emoción, cognición y comportamiento y desarrollando estrategias exitosas de afrontamiento."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Aplicar el conocimiento de la propia personalidad y conducta al análisis de los problemas cotidianos, transformando las dificultades en oportunidades de aprendizaje, para adoptar comportamientos responsables frente a las situaciones de la vida cotidiana, personal y profesional."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Analizar problemas de naturaleza comunitaria o social, identificando y reflexionando sobre los patrones de comportamiento, los roles o el liderazgo, o la necesidad de aceptación y pertenencia, para comprender la influencia de los grupos en el pensamiento y la conducta de los individuos."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Relacionar los fenómenos o procesos sociales de masas con variables estructurales, ideológicas, políticas, religiosas o históricas, generando conexiones entre variables sociales e individuales para generar una conciencia global y dinámica de la realidad."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Discriminar los factores relacionados con el liderazgo, analizando las estrategias y recursos de resolución de conflictos, para contribuir a desarrollar una conciencia crítica respecto de los posibles usos de la Psicología y sus técnicas como formas de manipulación y control social."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Articular las etapas de un proyecto de intervención, participando con coherencia y de forma eficiente en la organización, gestión y planificación de las tareas, en función del propósito y su viabilidad, desarrollando los procedimientos e instrumentos más adecuados para llevarlo a cabo."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Proponer procedimientos e instrumentos de diagnóstico adecuados a las situaciones o problemas planteados a través de estudios de caso, role-playing o simulaciones, que permitan evaluar las dimensiones y procesos cognitivos, personales, emocionales, afectivos o sociales."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "5",
+      "descripcion": "Identificar estrategias de ayuda o acompañamiento psicosocial apropiados a la naturaleza y ámbito del problema o estudio de caso planteado, de manera ordenada y fundamentada, con criterios éticos y técnicos."
+    },
+    {
+      "codigo": "5.4",
+      "competencia": "5",
+      "descripcion": "Mostrar iniciativa, creatividad, interés y una actitud colaborativa a lo largo de todo el proyecto de intervención."
+    },
+    {
+      "codigo": "5.5",
+      "competencia": "5",
+      "descripcion": "Afrontar las dificultades y los obstáculos, con una actitud inclusiva, valorando las aportaciones y la participación del resto de los miembros."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. La Psicología como ciencia",
+      "titulo": "La Psicología como ciencia",
+      "items": [
+        "Corrientes de la Psicología a lo largo de su historia: el estructuralismo, el funcionalismo, el constructivismo, el psicoanálisis y psicodinámica, conductismo, Gestalt, humanismo y la Psicología cognitiva.",
+        "Campos de la Psicología actual. Psicología experimental, evolutiva, educativa, fisiológica y neuropsicológica, clínica, comunitaria, del trabajo, social, o de las organizaciones.",
+        "Métodos de investigación en Psicología.",
+        "La Psicología en su aplicación terapéutica: escuelas y técnicas psicoterapéuticas."
+      ],
+      "codigos_items": [
+        "PSIC.2.A.1",
+        "PSIC.2.A.2",
+        "PSIC.2.A.3",
+        "PSIC.2.A.4"
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Fundamentos biológicos de la conducta",
+      "titulo": "Fundamentos biológicos de la conducta",
+      "items": [
+        "Estructura y funcionamiento del Sistema Nervioso Central (SNC).",
+        "Implicación de la genética y el sistema endocrino en el comportamiento humano. Trastornos y enfermedades mentales relevantes asociados al SNC."
+      ],
+      "codigos_items": [
+        "PSIC.2.B.1",
+        "PSIC.2.B.2"
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Procesos cognitivos en el ser humano",
+      "titulo": "Procesos cognitivos en el ser humano",
+      "items": [
+        "Los procesos cognitivos básicos: percepción, atención y memoria.",
+        "Procesos cognitivos superiores: aprendizaje, inteligencia y pensamiento.",
+        "Teorías del aprendizaje más relevantes.",
+        "La inteligencia emocional.",
+        "El pensamiento creativo.",
+        "El razonamiento, la solución de problemas y la toma de decisiones.",
+        "Procedimientos e instrumentos individuales y grupales para identificar necesidades y fortalezas en el ámbito del aprendizaje."
+      ],
+      "codigos_items": [
+        "PSIC.2.C.1",
+        "PSIC.2.C.2",
+        "PSIC.2.C.3",
+        "PSIC.2.C.4",
+        "PSIC.2.C.5",
+        "PSIC.2.C.6",
+        "PSIC.2.C.7"
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. La construcción del ser humano. Motivación, personalidad y afectividad",
+      "titulo": "La construcción del ser humano. Motivación, personalidad y afectividad",
+      "items": [
+        "Determinantes individuales y situacionales de la conducta.",
+        "La personalidad. Algunos trastornos de personalidad.",
+        "La motivación: motivos y deseos. Principales teorías de la motivación.",
+        "Emociones y afectividad. Principales trastornos emocionales de la conducta: fobias, ansiedad, estrés, depresión, trastornos de la alimentación.",
+        "La sexualidad.",
+        "Procedimientos e instrumentos individuales y grupales para identificar necesidades y fortalezas en el ámbito de la motivación, la personalidad y la afectividad."
+      ],
+      "codigos_items": [
+        "PSIC.2.D.1",
+        "PSIC.2.D.2",
+        "PSIC.2.D.3",
+        "PSIC.2.D.4",
+        "PSIC.2.D.5",
+        "PSIC.2.D.6"
+      ]
+    },
+    {
+      "codigo": "E",
+      "bloque": "E. Psicología social y de las organizaciones",
+      "titulo": "Psicología social y de las organizaciones",
+      "items": [
+        "Procesos de socialización. La interiorización de normas y valores. Las actitudes, normas y valores en la vida social.",
+        "Los procesos psicológicos de las masas y los pueblos.",
+        "La influencia de la cultura en el comportamiento social, en los procesos cognitivos y en la personalidad.",
+        "La Psicología de las organizaciones: liderazgo, cultura emprendedora y relaciones intergrupales dentro de las organizaciones.",
+        "Organización del trabajo y gestión de conflictos dentro de las organizaciones.",
+        "Procedimientos e instrumentos individuales y grupales para identificar necesidades y fortalezas en el ámbito de la Psicología social y de las organizaciones."
+      ],
+      "codigos_items": [
+        "PSIC.2.E.1",
+        "PSIC.2.E.2",
+        "PSIC.2.E.3",
+        "PSIC.2.E.4",
+        "PSIC.2.E.5",
+        "PSIC.2.E.6"
+      ]
+    }
+  ],
+  "comunidad": "andalucia",
+  "idioma": "es"
+}

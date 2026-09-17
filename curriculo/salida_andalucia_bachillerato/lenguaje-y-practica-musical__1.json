@@ -1,0 +1,162 @@
+{
+  "materia_oficial": "Lenguaje y Práctica Musical",
+  "materia": "Lenguaje y Práctica Musical",
+  "etapa": "Bachillerato",
+  "ciclo": "1º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Cultivar la escucha activa, desarrollando estrategias de atención, para reconocer y describir con un vocabulario adecuado los elementos que forman parte de una obra y para reflexionar sobre aspectos subjetivos y emocionales inherentes a la percepción musical.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Identificar los elementos musicales de obras de diferentes estilos y épocas, analizando y comparando partituras con diversas grafías, para describir sus características y reflexionar sobre los factores que afectan a la evolución de la notación musical.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Aplicar estrategias de interpretación musical, utilizando la lectura como medio de aproximación a la obra y adquiriendo de forma progresiva habilidades de decodificación e integración del lenguaje musical, para ejecutar con autonomía propuestas musicales sencillas o realizar improvisaciones.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Realizar proyectos musicales colaborativos, planificando e implementando sus fases y asumiendo funciones diversas dentro del grupo, para favorecer procesos creativos e identificar oportunidades de desarrollo personal, social, académico y profesional.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Emplear las posibilidades que ofrecen las tecnologías digitales en el ámbito musical, utilizando herramientas de procesamiento del sonido, de producción audiovisual y de edición de partituras, para desarrollar procesos de escritura, creación y difusión musical.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Reconocer y describir los diferentes parámetros y elementos musicales de una obra, prestando especial atención a las expresiones musicales cercanas a la realidad social del alumnado, como el Flamenco, aplicando estrategias de escucha activa y utilizando un vocabulario específico adecuado."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Relacionar las sensaciones que genera la música con las características de la obra, identificando la intención comunicativa y expresiva de la audición."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Anotar por escrito fragmentos musicales sencillos a una voz, adaptados al nivel de dificultad, limitándose a aspectos rítmicos o melódicos, o bien tratándolos conjuntamente."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Describir las principales características de los elementos musicales: melodía, ritmo, armonía, timbre y otros, presentes en partituras con grafía convencional y no convencional de obras de distintos estilos y épocas, identificando y analizando sus elementos."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Comparar la representación de los elementos musicales en partituras con diferente grafía, reflexionando sobre los factores que inciden en la evolución de la notación musical."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Leer, con autonomía, partituras sencillas, con o sin apoyo de la audición, prestando especial atención a obras pertenecientes al ámbito cultural andaluz."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Ejecutar fragmentos musicales sencillos, de forma individual o colectiva, a través de la voz, del cuerpo o de instrumentos musicales, atendiendo a las indicaciones de la partitura."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Desarrollar habilidades técnicas para la interpretación vocal, instrumental y coreográfica, utilizando los ensayos como espacios de escucha y de aprendizaje y aplicando estrategias de memorización musical."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "3",
+      "descripcion": "Generar ideas musicales o coreográficas sencillas, utilizando diferentes instrumentos, la voz o el cuerpo, en improvisaciones libres o dirigidas."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Planificar y desarrollar proyectos musicales colaborativos, prestando especial atención a obras pertenecientes al patrimonio musical andaluz, seleccionando materiales musicales trabajados o creando otros nuevos a partir de la aplicación de los aprendizajes propios de la materia."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Asumir diferentes funciones en la planificación y desarrollo de proyectos musicales colaborativos, participando activamente en su ejecución, valorando las aportaciones del resto de integrantes del grupo y descubriendo oportunidades de desarrollo personal, social, académico y profesional."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Desarrollar proyectos musicales, poniendo en práctica los aprendizajes adquiridos y utilizando herramientas de edición de partituras, de procesamiento del sonido y de producción audiovisual."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Difundir producciones musicales y audiovisuales a través de plataformas digitales, utilizando entornos seguros y respetando la propiedad intelectual y los derechos de autor."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Lenguaje musical",
+      "titulo": "Lenguaje musical",
+      "items": [
+        "Representación musical de los parámetros del sonido: elementos del lenguaje musical relacionados con la altura, la duración, la intensidad y el timbre.",
+        "La melodía: intervalos y tipos de escalas. Registro, ámbito, diseño melódico, motivo, frase y periodo.",
+        "El ritmo: compases simples, complejos y de amalgama; ritmos irregulares y libres; polirritmias y polimetrías, grupos de valoración especial. La modalidad.",
+        "La armonía: el fenómeno físico armónico; círculo de quintas; principales funciones armónicas en la tonalidad; acordes (triadas, de 7ª y 9ª); enlaces y cadencias (perfecta, semicadencia, etc.); modulaciones y progresiones tonales.",
+        "Los principios generadores de la forma musical: repetición, variación, desarrollo y contraste. Unidades estructurales. Formas simples y complejas; formas vocales e instrumentales; forma estrófica, binaria, ternaria, tema y variaciones, rondó y forma sonata; formas libres.",
+        "Elementos expresivos de la música: dinámica, agógica y articulación.",
+        "Los elementos musicales en la tradición musical occidental, en el flamenco, en el folclore y en las músicas populares urbanas. Células rítmicas, parones rítmico-melódico-armónicos, ostinatos, escalas especiales, texturas, agrupaciones tímbricas…",
+        "Notación convencional -grafía tradicionaly notación no convencional. Introducción a la notación de la música contemporánea."
+      ],
+      "codigos_items": [
+        "LYPM.1.A.1",
+        "LYPM.1.A.2",
+        "LYPM.1.A.3",
+        "LYPM.1.A.4",
+        "LYPM.1.A.5",
+        "LYPM.1.A.6",
+        "LYPM.1.A.7",
+        "LYPM.1.A.8"
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Práctica musical",
+      "titulo": "Práctica musical",
+      "items": [
+        "Estrategias de escucha o visionado de obras o fragmentos musicales, incidiendo principalmente en producciones propias del patrimonio musical andaluz.",
+        "Técnicas de realización escrita de dictados sencillos a una voz: solos rítmicos, melódicos o una combinación de ambos adaptados al nivel.",
+        "Técnicas de interpretación a través de la voz, del cuerpo o de instrumentos musicales, con o sin acompañamiento.",
+        "Lectura, interiorización y memorización de estructuras musicales sencillas. Práctica auditiva o interpretativa de estructuras tonales y modales.",
+        "Estrategias y técnicas de improvisación sobre esquemas rítmico-melódicos y armónicos establecidos o libres adaptados al nivel.",
+        "Técnicas y aplicaciones informáticas de edición musical de partituras y de audio. Funcionalidades propias de las aplicaciones y programas informáticos de licencia libre.",
+        "Difusión musical: protección de datos, propiedad intelectual y derechos de autoría.",
+        "Utilización de medios audiovisuales e informáticos en las producciones propias para favorecer la autocrítica a través de grabaciones en diferentes soportes.",
+        "Adquisición y desarrollo de habilidades y destrezas expresivas en las interpretaciones individuales y grupales.",
+        "Interpretaciones de obras vocales, instrumentales o coreográficas, individuales o en grupo, prestando especial atención al patrimonio musical andaluz. La música como forma de expresión."
+      ],
+      "codigos_items": [
+        "LYPM.1.B.1",
+        "LYPM.1.B.2",
+        "LYPM.1.B.3",
+        "LYPM.1.B.4",
+        "LYPM.1.B.5",
+        "LYPM.1.B.6",
+        "LYPM.1.B.7",
+        "LYPM.1.B.8",
+        "LYPM.1.B.9",
+        "LYPM.1.B.10"
+      ]
+    }
+  ],
+  "comunidad": "andalucia",
+  "idioma": "es"
+}

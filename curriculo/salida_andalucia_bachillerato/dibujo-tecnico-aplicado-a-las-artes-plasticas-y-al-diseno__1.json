@@ -1,0 +1,171 @@
+{
+  "materia_oficial": "Dibujo Técnico Aplicado a las Artes Plásticas y al Diseño",
+  "materia": "Dibujo Técnico Aplicado a las Artes Plásticas y al Diseño",
+  "etapa": "Bachillerato",
+  "ciclo": "1º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Observar, analizar y valorar la presencia de la geometría en la naturaleza, en el entorno construido y en el arte, identificando sus estructuras geométricas, elementos y códigos, con una actitud proactiva de apreciación y disfrute, para explicar su origen, función e intencionalidad en distintos contextos y medios.",
+      "descriptores": [
+        "CCEC1",
+        "CCEC2"
+      ]
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Desarrollar propuestas gráficas y de diseño, utilizando tanto el dibujo a mano alzada como los materiales propios del dibujo técnico y elaborando trazados, composiciones y transformaciones geométricas en el plano de forma intuitiva y razonada, para incorporar estos recursos tanto en la transmisión y desarrollo de ideas como en la expresión de sentimientos y emociones.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Comprender e interpretar el espacio y los objetos tridimensionales, analizando y valorando su presencia en las representaciones artísticas, seleccionando y utilizando el sistema de representación más adecuado para aplicarlo a la realización de ilustraciones y proyectos de diseño de objetos y espacios.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Analizar, definir formalmente o visualizar ideas, aplicando las normas fundamentales UNE e ISO para interpretar y representar objetos y espacios, así como documentar proyectos de diseño.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Integrar y aprovechar las posibilidades que ofrecen las herramientas digitales, seleccionando y utilizando programas y aplicaciones específicas de dibujo vectorial 2D y de modelado 3D, para desarrollar procesos de creación artística personal o de diseño.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Reconocer diferentes tipos de estructuras, formas y relaciones geométricas en la naturaleza, el entorno, el arte y el diseño, analizando su función y valorando la importancia dentro del contexto histórico, deteniéndose especialmente en las obras del Patrimonio Histórico de Andalucía."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Dibujar formas poligonales y resolver tangencias básicas, simetrías y demás transformaciones geométricas aplicadas al diseño de formas, valorando la importancia de la limpieza y la precisión en el trazado."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Transmitir ideas, sentimientos y emociones mediante la realización de estudios, esbozos y apuntes del natural a mano alzada, identificando la geometría interna y externa de las formas y apreciando su importancia en el dibujo."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Diferenciar las características de los distintos sistemas de representación, seleccionando en cada caso el sistema más apropiado a la finalidad de la representación."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Representar objetos sencillos mediante sus vistas diédricas."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Diseñar envases y objetos sencillos, representándolos en perspectiva isométrica o caballera y reflexionando sobre el proceso realizado y el resultado obtenido."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "3",
+      "descripcion": "Dibujar objetos y espacios sencillos, ilustraciones o viñetas aplicando las técnicas de la perspectiva cónica en la representación de espacios, objetos o personas desde distintos puntos de vista."
+    },
+    {
+      "codigo": "3.5",
+      "competencia": "3",
+      "descripcion": "Dibujar, utilizando tanto el dibujo a mano alzada como los materiales propios del dibujo técnico, ilustraciones, proyectos de diseño de objetos y espacios, seleccionando el procedimiento más adecuado, su rigor y precisión geométrica en función de la finalidad de la representación."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Realizar bocetos y croquis, tanto a mano alzada como utilizando los materiales propios del dibujo técnico, conforme a las normas UNE e ISO, comunicando la forma y dimensiones de objetos, proponiendo ideas creativas, resolviendo problemas con autonomía y valorando la importancia de la limpieza y la precisión en el trazado."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Adquirir destrezas en el manejo de herramientas y técnicas de dibujo vectorial en 2D, aplicándolos a la realización de proyectos de diseño."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Iniciarse en el modelado en 3D mediante el diseño de esculturas o instalaciones, valorando su potencial como herramienta de creación."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Geometría, arte y entorno",
+      "titulo": "Geometría, arte y entorno",
+      "items": [
+        "La geometría en la naturaleza, en el entorno y en el arte. Observación directa e indirecta.",
+        "La geometría en la composición artística y arquitectónica. Composición en dos y tres dimensiones. Leyes compositivas.",
+        "La representación del espacio en el arte. Estudios sobre la geometría y la perspectiva a lo largo de la Historia del Arte. Referentes en el patrimonio artístico andaluz del arte decorativo arábigo-andaluz, la pintura y la arquitectura renacentista, la arquitectura barroca, la pintura costumbrista, la arquitectura del siglo XIX.",
+        "Relaciones geométricas en el arte y el diseño: proporción, igualdad, simetría y homotecia. Teorema de Tales. Semejanza. Teorema de Pitágoras. El número áureo en el arte y la naturaleza. Dibujo Técnico Aplicado a las Artes Plásticas y al Diseño II",
+        "Escalas numéricas y gráficas. Construcción y uso. Escalas normalizadas. Uso de escalas en mecánica, diseño industrial, arquitectura y topografía.",
+        "Construcciones poligonales. Clasificación de polígonos. Triángulos, cuadriláteros, polígonos regulares y polígonos estrellados. Aplicación en el diseño. Diseños modulares.",
+        "Tangencias básicas. Enlaces. Curvas técnicas. Óvalo, ovoide, espiral y voluta. Aplicación en el diseño. Expresión y comunicación gráfica de ideas de diseño de objetos y espacios.",
+        "Estudios a mano alzada de la geometría interna y externa de la forma. Apuntes y esbozos. Bocetos del natural."
+      ],
+      "codigos_items": [
+        "DTAP.1.A.1",
+        "DTAP.1.A.2",
+        "DTAP.1.A.3",
+        "DTAP.1.A.4",
+        "DTAP.1.A.5",
+        "DTAP.1.A.6",
+        "DTAP.1.A.7",
+        "DTAP.1.A.8"
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Sistemas de representación del espacio aplicado",
+      "titulo": "Sistemas de representación del espacio aplicado",
+      "items": [
+        "Concepto y tipos de proyección. Proyección cilíndrica y cónica. Proyección oblicua y ortogonal. Sistemas de representación: diédrico, planos acotados, axonométrico y cónico. Finalidad de los distintos sistemas de representación.",
+        "Sistema diédrico ortogonal en el primer diedro. Vistas en sistema europeo. Obtención de vistas diédricas de cuerpos geométricos sencillos. Intersecciones y secciones. Proyecciones auxiliares. Abatimiento de planos y sus aplicaciones. Medidas y verdaderas magnitudes. Desarrollo en el plano de cuerpos geométricos sencillos.",
+        "Perspectivas isométrica y caballera. Iniciación al diseño de packaging. Representación de objetos a partir de vistas diédricas. Diseño de envases: imagen, funcionalidad, economía, sostenibilidad y reutilización. Desarrollo de envases de papel y cartón.",
+        "Aplicación de la perspectiva cónica, frontal y oblicua, al cómic y a la ilustración. Representación de sólidos geométricos, objetos, y espacios sencillos. Elección del punto de vista y plano del cuadro en cómic e ilustración. Puntos de fuga, accesibles e inaccesibles. Fundamentos de ilustración gráfica: forma, espacio, composición y encuadre. Personajes y animales. Luz y color. Escenas de cómic y viñetas. Especialización en ilustración gráfica: cómic, ilustración editorial, científica, técnica, publicitaria, cinematográfica."
+      ],
+      "codigos_items": [
+        "DTAP.1.B.1",
+        "DTAP.1.B.2",
+        "DTAP.1.B.3",
+        "DTAP.1.B.4"
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Normalización y diseño de proyectos",
+      "titulo": "Normalización y diseño de proyectos",
+      "items": [
+        "Concepto de normalización. Las normas fundamentales UNE e ISO. Normas de formato y acotación. Normas de rotulación. Líneas. Tipos, grosores y colores. diseño arquitectónico, diseño gráfico, diseño decorativo, diseño de moda.",
+        "Documentación gráfica de proyectos: necesidad y ámbito de aplicación de las normas. Documentos de un proyecto. Planos: tipos, contenido, formatos y escalas.",
+        "Elaboración de bocetos y croquis. Bocetos previos. Comprensión del objeto tridimensional. Croquización."
+      ],
+      "codigos_items": [
+        "DTAP.1.C.1",
+        "DTAP.1.C.2",
+        "DTAP.1.C.3"
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Herramientas digitales para el diseño",
+      "titulo": "Herramientas digitales para el diseño",
+      "items": [
+        "Iniciación a las herramientas y técnicas de dibujo vectorial en 2D. Aplicaciones al diseño gráfico. Órdenes básicas de dibujo y de edición. Visualización. Gestión de capas. Gestión de escalas.",
+        "Iniciación al modelado en 3D. Generación de volúmenes básicos. Contornos. Extrusión. Adición y sustracción. Aplicaciones a proyectos artísticos. exteriores y urbanismo."
+      ],
+      "codigos_items": [
+        "DTAP.1.D.1",
+        "DTAP.1.D.2"
+      ]
+    }
+  ],
+  "comunidad": "andalucia",
+  "idioma": "es"
+}

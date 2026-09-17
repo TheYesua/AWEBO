@@ -1,0 +1,258 @@
+{
+  "materia_oficial": "Biología, Geología y Ciencias Ambientales",
+  "materia": "Biología, Geología y Ciencias Ambientales",
+  "etapa": "Bachillerato",
+  "ciclo": "1º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Interpretar y transmitir información y datos científicos, argumentando sobre estos con precisión y utilizando diferentes formatos para analizar procesos, métodos, experimentos o resultados de las ciencias biológicas, geológicas y medioambientales. CCL1, CCL2, CP1, STEM4, CPSAA4, CCEC3.2.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Localizar y utilizar fuentes fiables, identificando, seleccionando y organizando la información, evaluándola críticamente y contrastando su veracidad, para resolver preguntas planteadas de forma autónoma relacionadas con las ciencias biológicas, geológicas y medioambientales. CCL3, CP1, STEM4, CD1, CD2, CD4, CPSAA4, CPSAA5.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Diseñar, planear y desarrollar proyectos de investigación siguiendo los pasos de las diversas metodologías científicas, teniendo en cuenta los recursos disponibles de forma realista y buscando vías de colaboración, para indagar en aspectos relacionados con las ciencias biológicas, geológicas y medioambientales. CCL5, STEM1, STEM2, STEM3, CD1, CD2, CPSAA3.2, CE3.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Buscar y utilizar estrategias en la resolución de problemas, analizando críticamente las soluciones y respuestas halladas y reformulando el procedimiento, si fuera necesario, para dar explicación a fenómenos relacionados con las ciencias biológicas, geológicas y medioambientales. CCL3, STEM1, STEM2, CD1, CD5, CPSAA5, CE1.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Diseñar, promover y ejecutar iniciativas relacionadas con la conservación del medioambiente,",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Analizar los elementos del registro geológico utilizando fundamentos científicos, para relacionarlos con los grandes eventos ocurridos a lo largo de la historia de la Tierra y con la magnitud temporal en que se desarrollaron. CCL3, CP1, STEM2, STEM5, CD1, CPSAA2, CC4, CCEC1.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Analizar críticamente conceptos y procesos relacionados con los saberes de la materia, interpretando información en diferentes formatos: modelos, gráficos, tablas, diagramas, fórmulas, esquemas."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Comunicar informaciones u opiniones razonadas relacionadas con los saberes de la materia o con trabajos científicos, transmitiéndolas de forma clara y rigurosa, utilizando la terminología y el formato adecuados: modelos, gráficos, tablas, vídeos, informes, diagramas, fórmulas, esquemas y símbolos, entre otros, y herramientas digitales."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Argumentar sobre aspectos relacionados con los saberes de la materia, defendiendo una postura de forma razonada y con una actitud abierta, flexible, receptiva y respetuosa ante la opinión de los demás."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Plantear y resolver cuestiones relacionadas con los saberes de la materia, localizando y citando fuentes adecuadas y seleccionando, organizando y analizando críticamente la información."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Contrastar y justificar la veracidad de la información relacionada con los saberes de la materia, utilizando fuentes fiables y adoptando una actitud crítica y escéptica hacia informaciones sin una base científica como pseudociencias, teorías conspiratorias, creencias infundadas, bulos, etc."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Argumentar sobre la contribución de la ciencia a la sociedad y la labor de las personas dedicadas a ella, destacando el papel de la mujer y entendiendo la investigación como una labor colectiva e interdisciplinar en constante evolución influida por el contexto político y los recursos económicos propios en Andalucía."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Plantear preguntas, realizar predicciones y formular hipótesis que puedan ser respondidas o contrastadas, utilizando métodos científicos y que intenten explicar fenómenos biológicos, geológicos o ambientales."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Diseñar la experimentación, la toma de datos y el análisis de fenómenos biológicos, geológicos y ambientales y seleccionar los instrumentos necesarios de modo que permitan responder a preguntas concretas y contrastar una hipótesis planteada, minimizando los sesgos en la medida de lo posible."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Realizar experimentos y tomar datos cuantitativos y cualitativos sobre fenómenos biológicos, geológicos y ambientales, seleccionando y utilizando los instrumentos, herramientas o técnicas adecuadas con corrección y precisión."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "3",
+      "descripcion": "Interpretar y analizar resultados obtenidos en un proyecto de investigación utilizando, cuando sea necesario, herramientas matemáticas y tecnológicas y reconociendo su alcance y limitaciones y obteniendo conclusiones razonadas y fundamentadas o valorando la imposibilidad de hacerlo."
+    },
+    {
+      "codigo": "3.5",
+      "competencia": "3",
+      "descripcion": "Establecer colaboraciones dentro y fuera del centro educativo en las distintas fases del proyecto científico para trabajar con mayor eficiencia, utilizando las herramientas tecnológicas adecuadas, valorando la importancia de la cooperación en la investigación, respetando la diversidad y favoreciendo la inclusión."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Resolver problemas o dar explicación a procesos biológicos, geológicos o ambientales, utilizando recursos variados como conocimientos propios, datos e información recabados, razonamiento lógico, pensamiento computacional o herramientas digitales."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Analizar críticamente la solución a un problema sobre fenómenos biológicos, geológicos o ambientales y modificar los procedimientos utilizados o las conclusiones obtenidas, si dicha solución no fuese viable o ante nuevos datos aportados o recabados con posterioridad."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Analizar las causas y consecuencias ecológicas, sociales y económicas de los principales problemas medioambientales desde una perspectiva individual, local y global, concibiéndolos como grandes retos de la humanidad y basándose en datos científicos y en los saberes de la materia de Biología, Geología y Ciencias Ambientales."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Proponer y poner en práctica hábitos e iniciativas sostenibles y saludables a nivel local en Andalucía y argumentar sobre sus efectos positivos y la urgencia de adoptarlos basándose en los saberes de la materia."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Relacionar los grandes eventos de la historia terrestre con determinados elementos del registro geológico y con los sucesos que ocurren en la actualidad, utilizando los principios geológicos básicos y el razonamiento lógico."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Resolver problemas de datación analizando elementos del registro geológico y fósil y aplicando métodos de datación."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Proyecto científico",
+      "titulo": "Proyecto científico",
+      "items": [
+        "El método científico. Planteamiento de hipótesis, preguntas, problemas y conjeturas que puedan resolverse utilizando el método científico. Actitudes en el trabajo científico: cuestionamiento de lo obvio, necesidad de comprobación, de rigor y de precisión, apertura ante nuevas ideas.",
+        "Estrategias para la búsqueda de información.",
+        "Experiencias científicas de laboratorio o de campo.",
+        "Métodos de análisis de resultados científicos. Aplicación de métodos de análisis de resultados en los que se incluya la organización, representación y herramientas estadísticas: gráficos y casualidad. Análisis básicos de regresión y correlación.",
+        "Comunicación científica. Desarrollo de estrategias de comunicación científica: vocabulario científico, formatos (informes vídeos, modelos, gráficos y otros) y herramientas digitales. Redacción de informes y artículos científicos.",
+        "La importancia de la labor científica."
+      ],
+      "codigos_items": [
+        "BGCA.1.A.1",
+        "BGCA.1.A.2",
+        "BGCA.1.A.3",
+        "BGCA.1.A.4",
+        "BGCA.1.A.5",
+        "BGCA.1.A.6"
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Ecología y sostenibilidad",
+      "titulo": "Ecología y sostenibilidad",
+      "items": [
+        "El medio ambiente como motor económico y social: importancia de la evaluación de impacto ambiental y de la gestión sostenible de recursos y residuos. La relación entre la salud medioambiental, humana y de otros seres vivos: one health (una sola salud).",
+        "La sostenibilidad.",
+        "La dinámica de los ecosistemas. Resolución de problemas sobre la dinámica de los ecosistemas: los flujos de energía, los ciclos de la materia (carbono, nitrógeno, fósforo y azufre) interdependencias y las relaciones tróficas.",
+        "El cambio climático."
+      ],
+      "codigos_items": [
+        "BGCA.1.B.1",
+        "BGCA.1.B.2",
+        "BGCA.1.B.3",
+        "BGCA.1.B.4"
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Historia de la Tierra y la vida",
+      "titulo": "Historia de la Tierra y la vida",
+      "items": [
+        "El tiempo geológico.",
+        "La historia de la Tierra.",
+        "Métodos para el estudio del registro geológico."
+      ],
+      "codigos_items": [
+        "BGCA.1.C.1",
+        "BGCA.1.C.2",
+        "BGCA.1.C.3"
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. La dinámica y composición terrestre",
+      "titulo": "La dinámica y composición terrestre",
+      "items": [
+        "La Atmósfera e hidrosfera. Análisis de la estructura, dinámica y funciones de la atmósfera y la hidrosfera.",
+        "La geosfera. Análisis de la estructura, composición y dinámica de la geosfera a la luz de la teoría de la tectónica de placas. Métodos de estudio directos e indirectos.",
+        "Los procesos geológicos internos y externos.",
+        "Las rocas y los minerales."
+      ],
+      "codigos_items": [
+        "BGCA.1.D.1",
+        "BGCA.1.D.2",
+        "BGCA.1.D.3",
+        "BGCA.1.D.4"
+      ]
+    },
+    {
+      "codigo": "E",
+      "bloque": "E. Fisiología e histología animal",
+      "titulo": "Fisiología e histología animal",
+      "items": [
+        "La función de nutrición. Descripción comparada de la función de nutrición, su importancia biológica y estructuras implicadas en diferentes grupos taxonómicos.",
+        "La función de relación.",
+        "La función de reproducción."
+      ],
+      "codigos_items": [
+        "BGCA.1.E.1",
+        "BGCA.1.E.2",
+        "BGCA.1.E.3"
+      ]
+    },
+    {
+      "codigo": "F",
+      "bloque": "F. Fisiología e histología vegetal",
+      "titulo": "Fisiología e histología vegetal",
+      "items": [
+        "La función de nutrición.",
+        "La función de relación. Descripción de la función de relación y estudio del tipo de respuestas de los vegetales a estímulos e influencia de las fitohormonas (auxinas, citoquininas, etileno, etc.) sobre estas.",
+        "La función de reproducción.",
+        "Las adaptaciones de los vegetales al medio."
+      ],
+      "codigos_items": [
+        "BGCA.1.F.1",
+        "BGCA.1.F.2",
+        "BGCA.1.F.3",
+        "BGCA.1.F.4"
+      ]
+    },
+    {
+      "codigo": "G",
+      "bloque": "G. Los microorganismos y formas acelulares",
+      "titulo": "Los microorganismos y formas acelulares",
+      "items": [
+        "Concepto de microorganismo. Reconocimiento del concepto de microorganismo. Diferenciación entre microorganismos con organización celular y formas acelulares.",
+        "Las eubacterias y las arqueobacterias. Identificación de las diferencias entre las eubacterias y arqueobacterias.",
+        "El metabolismo bacteriano.",
+        "Los microorganismos como agentes causales de enfermedades infecciosas.",
+        "El cultivo de microorganismos. Descripción de técnicas de esterilización y cultivo.",
+        "Mecanismos de transferencia genética horizontal en bacterias.",
+        "Las formas acelulares (virus, viroides y priones). Identificación de características, mecanismos de infección e importancia biológica, así como adopción de hábitos saludables."
+      ],
+      "codigos_items": [
+        "BGCA.1.G.1",
+        "BGCA.1.G.2",
+        "BGCA.1.G.3",
+        "BGCA.1.G.4",
+        "BGCA.1.G.5",
+        "BGCA.1.G.6",
+        "BGCA.1.G.7"
+      ]
+    }
+  ],
+  "comunidad": "andalucia",
+  "idioma": "es"
+}

@@ -15,7 +15,8 @@ curriculo/fuentes/ceuta/orden_efp_754_2022.xml    Orden EFP/754/2022 (BOE-A-2022
 curriculo/fuentes/cataluna/decret_175_2022.xml    Decret 175/2022 (Akoma Ntoso del DOGC)
 curriculo/fuentes/cataluna/xtec/*.pdf             un PDF por materia (XTEC)
 curriculo/fuentes/cataluna-batxillerat/*.pdf      Decret 171/2022, un PDF por materia (XTEC)
-curriculo/fuentes/andalucia/*.pdf                 BOJA núm. 104 de 2 de junio de 2023
+curriculo/fuentes/andalucia/*.pdf                 BOJA núm. 104 de 2 de junio de 2023 (ESO)
+curriculo/fuentes/andalucia-bachillerato/*.pdf    BOJA núm. 104, la Orden de Bachillerato
 curriculo/fuentes/galicia/*.pdf                   un PDF por materia (Guía LOMLOE)
 curriculo/fuentes/pais-vasco/*.pdf                Decreto 77/2023 (BOPV), en euskera
 curriculo/fuentes/pais-vasco-bachillerato/*.pdf   Decreto 76/2023 (BOPV), en euskera
@@ -49,7 +50,8 @@ Cataluña, Andalucía ni Galicia. Son unos 4 MB de texto.
 curriculo/salida/                      estatal y Ceuta (BOE)
 curriculo/salida_cataluna/             Decret 175/2022 + PDF de la XTEC
 curriculo/salida_cataluna_batxillerat/ Decret 171/2022 (modif. 103/2026) + XTEC
-curriculo/salida_andalucia/            Orden de 30 de mayo de 2023 (BOJA)
+curriculo/salida_andalucia/            Orden de 30 de mayo de 2023, ESO (BOJA)
+curriculo/salida_andalucia_bachillerato/ Orden de 30 de mayo de 2023, Bachillerato
 curriculo/salida_galicia/              Decreto 156/2022 (Guía LOMLOE de la Xunta)
 curriculo/salida_pais_vasco/           Decreto 77/2023 (BOPV)
 curriculo/salida_pais_vasco_bachillerato/ Decreto 76/2023 (BOPV)
@@ -90,11 +92,13 @@ campo y no lo traen, así que para ellos vale el valor por defecto, `ceuta`.)*
    | `extractor_dog.py` | PDF de la Xunta | celda a celda, más el texto suelto: los cursos no siempre van en tabla |
    | `extractor_bopv.py` | PDF del BOPV | texto en orden, en euskera, con las tablas del anexo |
 
-   **Ninguno se duplica para Bachillerato.** Los dos que ya leen esa etapa
-   —`extractor_bopv.py` y `extractor_xtec.py`— se parametrizan con un módulo
-   aparte, `bopv_etapas.py` y `xtec_etapas.py`, donde vive lo único que cambia:
-   de qué anexo se lee, cómo se titulan las columnas y qué cursos tiene cada
-   materia.
+   **Ninguno se duplica para Bachillerato.** Los tres que ya leen esa etapa
+   —`extractor_bopv.py`, `extractor_xtec.py` y `extractor_boja.py`— se
+   parametrizan en vez de copiarse: los dos primeros con un módulo aparte
+   (`bopv_etapas.py`, `xtec_etapas.py`) y el del BOJA con una `EtapaBOJA` dentro
+   del propio fichero, porque allí lo único que cambia es cómo se llaman los
+   cursos y cuántos hay — el resto de la maquetación es idéntico, y las once
+   irregularidades del boletín se arreglan una sola vez.
 
    El BOJA es el único que **numera sus saberes básicos** (`BYG.1.A.8`), y ese
    código se conserva. Galicia numera los **bloques** pero no los contidos, así
@@ -121,6 +125,7 @@ campo y no lo traen, así que para ellos vale el valor por defecto, `ceuta`.)*
 | Cataluña (Decret 175/2022 + XTEC) | 26 | 37 | 759 | 1330 |
 | Cataluña · Bachillerato (Decret 171/2022, modif. 103/2026) | 73 | 87 | 1133 | 1972 |
 | Andalucía (Orden 30/05/2023, anexos II y III) | 32 | 60 | 1113 | 1461 |
+| Andalucía · Bachillerato (Orden 30/05/2023 de Bachillerato) | 58 | 73 | 1105 | 1727 |
 | Galicia (Decreto 156/2022 + Guía LOMLOE) | 30 | 60 | 1583 | 4643 |
 | País Vasco (Decreto 77/2023) | 32 | 43 | 733 | 1491 |
 | País Vasco · Bachillerato (Decreto 76/2023) | 65 | 75 | 1144 | 2349 |
@@ -144,15 +149,18 @@ bloques son pocos para las materias que tiene. Las 32 materias salen de 30
 títulos del Anexo III: Matemáticas de 4.º se desdobla en los itinerarios A y B,
 que tienen currículos distintos.
 
-Bachillerato es la otra etapa cargada, de momento en **dos comunidades**: País
-Vasco y Cataluña. En las dos sale del mismo lector que su ESO —`extractor_bopv.py
---etapa bachillerato` y `extractor_xtec.py --etapa bachillerato`— y en las dos
-tiene el doble o el triple de materias que la ESO, porque suma las modalidades
-y sus optativas.
+Bachillerato es la otra etapa cargada, en **tres comunidades**: País Vasco,
+Cataluña y Andalucía. En las tres sale del mismo lector que su ESO, con
+`--etapa bachillerato`, y en las tres tiene el doble o casi el doble de materias
+que la ESO, porque suma las modalidades y sus optativas.
 
-Y en las dos **los cursos no están en la fuente del currículo**, así que se
-transcriben a mano en un módulo aparte —`bopv_etapas.py` y `xtec_etapas.py`—,
-donde se explica de qué norma sale cada uno y por qué no se analiza. En
+**En el País Vasco y en Cataluña los cursos no están en la fuente del
+currículo**, así que se transcriben a mano en un módulo aparte —`bopv_etapas.py`
+y `xtec_etapas.py`—, donde se explica de qué norma sale cada uno y por qué no se
+analiza. **Andalucía es la excepción y la que menos trabajo da**: el curso va
+dentro del código del saber —`FILO.1.A.1`, primer curso— y el segundo campo solo
+vale 1 o 2, comprobado sobre los 6109 códigos del anexo. Por eso su `EtapaBOJA`
+solo necesita saber cómo se llaman los cursos y cuántos hay. En
 Cataluña hay un motivo más para mirarlo con lupa: el **Decret 103/2026, de 7 de
 julio** modificó el 171/2022 y cambió el reparto de 1.º de ciencias a partir del
 curso 2026-2027 —Biologia i Geologia se unifica con Ciències Ambientals, y

@@ -1,0 +1,215 @@
+{
+  "materia_oficial": "Empresa y Diseño de Modelos de Negocio",
+  "materia": "Empresa y Diseño de Modelos de Negocio",
+  "etapa": "Bachillerato",
+  "ciclo": "2º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Analizar la actividad empresarial y emprendedora, reconociendo el poder de transformación que ejercen en la sociedad y reflexionando sobre el valor de la innovación y la digitalización en este proceso, para comprender el papel que desempeñan dentro del funcionamiento global de la economía actual.",
+      "descriptores": [
+        "CE2"
+      ]
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Investigar el entorno económico y social y su influencia en la actividad empresarial, analizando las interrelaciones empresas-entorno e identificando estrategias viables que partan de criterios de responsabilidad social corporativa, la igualdad y la inclusión, para valorar la capacidad de adaptación de las empresas.",
+      "descriptores": [
+        "CC4",
+        "CE1",
+        "CCEC2"
+      ]
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Reconocer y comprender las características y actividades de las áreas funcionales y de las estructuras organizativas de los modelos de negocio actuales, comparándolos con otros modelos tradicionales y aplicando estrategias y herramientas que faciliten el diseño creativo para proponer modelos de negocio que aporten valor, permitan satisfacer necesidades y contribuir al bienestar económico y social.",
+      "descriptores": [
+        "CE1",
+        "CE2",
+        "CE3"
+      ]
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Valorar y seleccionar estrategias comunicativas de aplicación al mundo empresarial, utilizando nuevas fórmulas y obteniendo la información que se genera tanto en el ámbito interno como externo de la empresa, para gestionar eficazmente la información necesaria en el proceso de toma de decisiones y su correcta transmisión.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Realizar el análisis previsional del modelo de negocio diseñado, aplicando las herramientas de análisis empresarial necesarias para comprender todo el proceso llevado a cabo y validar la propuesta del modelo de negocio.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Comprender la importancia de la actividad empresarial y el emprendimiento dentro de la economía actual, reconociendo el poder de transformación que ejercen en la sociedad y reflexionando sobre el valor, la innovación y la digitalización."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Analizar el papel de la I+D+I en el desarrollo social y empresarial, identificando nuevas tendencias y tecnologías que tienen un alto impacto en la economía."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Valorar la capacidad de adaptación ágil, responsable y sostenible de las empresas a los cambios del entorno genérico y a las exigencias del mercado, investigando el entorno económico y social y su influencia en la actividad empresarial."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Conocer los distintos tipos de empresa, sus elementos y funciones, así como las formas jurídicas que adoptan, relacionando con cada una de ellas las responsabilidades legales de sus propietarios y gestores y las exigencias de capital."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Identificar y analizar las características del entorno competitivo o específico en el que la empresa desarrolla su actividad, analizando su cadena de valor y sus ventajas competitivas, explicando, a partir de ellas, las distintas estrategias y decisiones adoptadas y las posibles implicaciones sociales y medioambientales de su actividad."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Proponer un modelo de negocio o de gestión diferenciado que permita dar respuesta a las necesidades de los usuarios, generar valor y contribuir al bienestar económico y social actual, comparando distintos modelos y utilizando estrategias y herramientas de diseño creativo."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Analizar las características organizativas y funcionales de la empresa, analizando, a partir de ellas, las decisiones de planificación, organización, gestión, control y optimización de actividades de todas sus áreas funcionales, recursos, y asociaciones clave de un modelo de negocio innovador."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Analizar y tomar decisiones sobre los procesos productivos desde la perspectiva de la eficiencia y la productividad, definiendo el soporte necesario para hacer realidad el modelo de negocio, comprendiendo la relación entre los ingresos y los costes, el proceso de obtención del beneficio y del umbral de rentabilidad de la empresa y las decisiones de producción o compra."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "3",
+      "descripcion": "Analizar las características del mercado y explicar, de acuerdo con ellas, la propuesta de valor, canales, relaciones con clientes y otras variables del marketing mix, así como las fuentes de ingresos de un modelo de negocio innovador."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Gestionar eficazmente la información y facilitar el proceso de toma de decisiones a partir de la información obtenida tanto en el ámbito interno como externo de la empresa, aplicando estrategias y nuevas fórmulas comunicativas."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Seleccionar estrategias de comunicación aplicadas al mundo empresarial, utilizando nuevas fórmulas comunicativas que faciliten la gestión eficaz de la información y la transmisión de la misma a otros."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Exponer el proyecto de modelo de negocio llevado a cabo, utilizando las herramientas necesarias que permitan despertar el interés y cautivar a los demás con la propuesta de valor presentada."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Validar la propuesta de modelo de negocio diseñado dentro de un contexto andaluz determinado, definiéndolo a partir de las tendencias clave del momento, la situación macroeconómica, el mercado y la competencia, comprendiendo todo el proceso llevado a cabo y aplicando técnicas de estudio previsional y herramientas de análisis empresarial."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Determinar previsionalmente la estructura de ingresos y costes, calculando su beneficio y umbral de rentabilidad, a partir del modelo de negocio planteado."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "5",
+      "descripcion": "Elaborar un plan de negocio básico sobre un escenario simulado concreto, justificando las decisiones tomadas mediante la aplicación de criterios estáticos y dinámicos de selección de inversiones y otros argumentos fundamentados con criterios económicos."
+    },
+    {
+      "codigo": "5.4",
+      "competencia": "5",
+      "descripcion": "Analizar y explicar la situación económicofinanciera, a partir de la información recogida tanto en el balance como en la cuenta de pérdidas y ganancias, describiendo las relaciones entre sus masas patrimoniales mediante el fondo de maniobra y ratios, evaluando sus rentabilidades económica y financiera e indicando las posibles soluciones a los desequilibrios encontrados."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. La empresa y su entorno",
+      "titulo": "La empresa y su entorno",
+      "items": [
+        "El empresario o la empresaria. Teorías sobre la explicación de sus funciones sociales. El emprendedor y la emprendedora. Perfiles.",
+        "La empresa: concepto, elementos, objetivos y funciones. Clasificación. Localización y dimensión de la empresa. Estrategias de crecimiento. PYMES y multinacionales: características estrategias, ventajas e inconvenientes. Marco jurídico que regula la actividad empresarial: el Código de Comercio y leyes sobre sociedades de capital. El Estatuto de los Trabajadores.",
+        "El entorno empresarial. Responsabilidad social corporativa. Mujer y emprendimiento. Inclusión y emprendimiento.",
+        "La empresa, digitalización e innovación. I+D+I. Teorías de la innovación. Tipos de innovación. Tendencias emergentes. Estrategias de innovación."
+      ],
+      "codigos_items": [
+        "EYDI.2.A.1",
+        "EYDI.2.A.2",
+        "EYDI.2.A.3",
+        "EYDI.2.A.4"
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. El modelo de negocio y de gestión",
+      "titulo": "El modelo de negocio y de gestión",
+      "items": [
+        "Empresa y modelo de negocio. Planificación estratégica. Dirección y liderazgo. Estructuras organizativas. Comunicación: modalidades y recursos digitales. Cultura de empresa. Resolución de conflictos.",
+        "La función comercial. Investigación de mercados. Segmento de clientes. La propuesta de valor. Producto, precios, canales y promoción. Relaciones con clientes. Fuentes de ingresos. Estrategias de marketing. La digitalización de la función comercial.",
+        "La función productiva. Proceso productivo. Eficiencia: técnica y económica. Productividades media y global. Cadena de valor y actividades clave. Recursos clave. Asociaciones clave. Estructura de costes: clasificación, cálculo y representación de costes, beneficios y decisiones de producir o comprar. La calidad. Modelos de gestión y métodos de valoración de inventario. PMP y FIFO. Economías de escala.",
+        "La gestión de los recursos humanos: reclutamiento, selección y evaluación. La motivación, formación y funcionamiento de equipos ágiles. Las habilidades que demanda el mercado de trabajo. La contratación y las relaciones laborales de la empresa. Las políticas de igualdad y de inclusión en las empresas. Elementos básicos de las nóminas.",
+        "La función financiera. Estructura económica y financiera. Inversión: definición y tipos. Valoración y selección de inversiones: plazo de recuperación, VAN y TIR. Recursos financieros. Análisis de fuentes alternativas de financiación interna y externa. Instrumentos de financiación a corto y a largo plazo. Autofinanciación.",
+        "La información en la empresa: obligaciones contables. Composición y valoración del patrimonio. Cuentas anuales e imagen fiel. Elaboración e interpretación de balance y cuenta de pérdidas y ganancias. El Plan General Contable. Cálculo de los beneficios empresariales. EBITDA."
+      ],
+      "codigos_items": [
+        "EYDI.2.B.1",
+        "EYDI.2.B.2",
+        "EYDI.2.B.3",
+        "EYDI.2.B.4",
+        "EYDI.2.B.5",
+        "EYDI.2.B.6"
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Herramientas para innovar en modelos de negocio y de gestión",
+      "titulo": "Herramientas para innovar en modelos de negocio y de gestión",
+      "items": [
+        "El lienzo de modelo de negocio y de gestión: concepto, áreas, bloques, utilidad y patrones de modelos de negocio.",
+        "El punto de vista de los clientes: mapa de empatía. Análisis de las necesidades. Neuromarketing. Nuevas tendencias en la promoción de productos. La competencia y nichos de mercado. Estrategias de segmentación. Posicionamiento en el mercado.",
+        "La creatividad aplicada al diseño de modelo de negocio y de gestión. El proceso de creatividad: divergencia y convergencia. Dinámicas de generación de nuevas ideas de modelos de negocio.",
+        "Las herramientas de organización de ideas: Pensamiento Visual o Visual Thinking. Capacidad de síntesis. Ideación. Comunicación: modalidades y recursos digitales. Otras herramientas para innovar en modelos de negocio y de gestión.",
+        "El prototipado: concepto y utilidad. Posibilidades de prototipado: bienes, servicios y aplicaciones. Análisis de resultados.",
+        "Las herramientas de presentación de un proyecto o de una idea. Metodología: narración de historias o storytelling y el discurso en el ascensor o elevator speech o elevator pitch. Otras metodologías.",
+        "Los escenarios: exploración de ideas, escenarios futuros y nuevos modelos de negocio. Otras herramientas para innovar en modelos de negocio y de gestión. D. Estrategia empresarial y métodos de análisis de la realidad empresarial: estudio de casos y simulación."
+      ],
+      "codigos_items": [
+        "EYDI.2.C.1",
+        "EYDI.2.C.2",
+        "EYDI.2.C.3",
+        "EYDI.2.C.4",
+        "EYDI.2.C.5",
+        "EYDI.2.C.6",
+        "EYDI.2.C.7"
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Bloque D",
+      "titulo": "Bloque D",
+      "items": [
+        "El entorno del modelo de negocio. Previsión: tendencias clave. Macroeconomía: variables macroeconómicas. Competencia: fuerzas competitivas de Porter y ventajas competitivas. Modelos de mercado.",
+        "La evaluación previa de modelos de negocio: análisis DAFO, análisis previsional de ingresos y costes, cálculo, representación e interpretación del umbral de rentabilidad. Producir o comprar. Subcontratación de servicios por la empresa.",
+        "La validación del modelo de negocio. Lean Startup. Desarrollo de clientes. Desarrollo de producto ágil.",
+        "La protección de la idea, del producto y de la marca. Oficina Española de Patentes y Marcas (OEPM). Oficina Europea de Patentes (OEP), European Union Intelectual Property Office (EUIPO) y Organización Mundial de la Propiedad (OMPI).",
+        "La toma de decisiones. Estrategias. Simulación en hoja de cálculo. Redacción de un plan de negocios básico.",
+        "El análisis de resultados: estudio de mercado, análisis e interpretación de la información contable y análisis de estados financieros: fondo de maniobra y ratios. Situaciones y equilibrios patrimoniales. Rentabilidades económica y financiera. Periodos medios de maduración."
+      ],
+      "codigos_items": [
+        "EYDI.2.D.1",
+        "EYDI.2.D.2",
+        "EYDI.2.D.3",
+        "EYDI.2.D.4",
+        "EYDI.2.D.5",
+        "EYDI.2.D.6"
+      ]
+    }
+  ],
+  "comunidad": "andalucia",
+  "idioma": "es"
+}

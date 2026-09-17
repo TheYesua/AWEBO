@@ -1,0 +1,251 @@
+{
+  "materia_oficial": "Fundamentos Artísticos",
+  "materia": "Fundamentos Artísticos",
+  "etapa": "Bachillerato",
+  "ciclo": "2º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Comprender los cambios en la concepción del arte, analizando las semejanzas y las diferencias entre distintos periodos históricos o contextos culturales, para explicar el enriquecimiento que supone la diversidad.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Reflexionar sobre las funciones del arte a lo largo de la historia, analizando la evolución de su papel en cada periodo, para apreciar sus singularidades y poner en valor el patrimonio cultural y artístico de cualquier época.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Analizar formal, funcional y semánticamente producciones artísticas de diversos periodos y estilos, reconociendo sus elementos constituyentes y las claves de sus lenguajes y usando vocabulario específico, para desarrollar el criterio estético y ampliar las posibilidades de disfrute del arte.",
+      "descriptores": [
+        "CCEC2"
+      ]
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Explicar obras artísticas realizadas en distintos medios y soportes, identificando el contexto social, geográfico e histórico en el que se crearon, así como sus posibles influencias y proyecciones, para valorarlas como testimonios de una época y una cultura y como elementos del patrimonio.",
+      "descriptores": [
+        "CCEC2"
+      ]
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Comprender el poder comunicativo del arte, identificando y reconociendo el reflejo de las experiencias vitales en diferentes producciones, para valorar la expresión artística como herramienta potenciadora de la creatividad, la imaginación, la autoestima y el crecimiento personal.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Interpretar diversas creaciones artísticas a partir del estudio de su forma, su significado, su contexto de creación y su recepción, para desarrollar la sensibilidad y el sentido crítico y para apreciar la diversidad de percepciones y opiniones ante las producciones artísticas.",
+      "descriptores": []
+    },
+    {
+      "codigo": "7",
+      "descripcion": "Elaborar con creatividad proyectos artísticos individuales o colectivos, investigando estilos, técnicas y lenguajes multidisciplinares y seleccionando y aplicando los más adecuados, para dar forma a las ideas y objetivos planteados y para aprender a afrontar nuevos retos artísticos.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Explicar de forma respetuosa el enriquecimiento que supone la diversidad en el arte, estudiando obras de épocas y culturas distintas a partir de la vinculación con su contexto y analizando el concepto de arte al que responden."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Argumentar la evolución de la concepción del arte en la historia, comparando con iniciativa sus significados en periodos y culturas diferentes y analizando sus semejanzas y diferencias."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Distinguir las funciones del arte a lo largo de la historia, analizando sin prejuicios su evolución a partir del estudio de diversas producciones artísticas de distintos estilos y épocas."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Explicar las singularidades de diversas manifestaciones culturales y artísticas, relacionándolas con su función de forma abierta, crítica y respetuosa."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Identificar los elementos constituyentes de manifestaciones artísticas de diversos periodos y estilos, reconociendo las claves de sus lenguajes y justificando su relación con la época, artista o movimiento correspondiente."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Analizar formal, funcional y semánticamente, con criterio y sensibilidad, diferentes manifestaciones artísticas, haciendo uso de la terminología específica asociada a sus lenguajes."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Analizar producciones artísticas de diversos estilos y épocas y realizadas en distintos medios y soportes, relacionándolas con su contexto social, geográfico e histórico de creación y explicando las posibles relaciones con obras de otras épocas y culturas."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Compartir las conclusiones de investigaciones sobre producciones artísticas de diversos estilos y épocas y las relaciones con su contexto, usando los medios analógicos y digitales más adecuados."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Explicar las diferentes posibilidades expresivas del arte y su poder de transmisión de ideas, conceptos, sentimientos y emociones a partir de obras de artistas de distintas épocas y estilos, analizando las distintas interpretaciones que se han dado de ellas."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Analizar producciones artísticas de diversos periodos y estilos, vinculándolas creativamente con experiencias vitales propias y ajenas y valorándolas como herramientas potenciadoras de la creatividad, la imaginación, la autoestima y el crecimiento personal."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Interpretar creaciones artísticas de distintos periodos y estilos, analizando su forma, su significado y su contexto de creación e incorporando las ideas, conocimientos, emociones y sentimientos propios."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Comparar las interpretaciones que se han dado de diversas manifestaciones artísticas, analizando los diferentes puntos de vista y proponiendo una valoración personal."
+    },
+    {
+      "codigo": "7.1",
+      "competencia": "7",
+      "descripcion": "Plantear proyectos artísticos, individuales o colectivos, seleccionando los estilos, técnicas y lenguajes más adecuados de diversas disciplinas, y organizando y distribuyendo las tareas de manera razonada."
+    },
+    {
+      "codigo": "7.2",
+      "competencia": "7",
+      "descripcion": "Llevar a cabo con creatividad proyectos artísticos, individuales o colectivos, materializando las ideas y objetivos planteados, aplicando los aprendizajes adquiridos, asumiendo los roles asignados y respetando, en su caso, las aportaciones de los demás."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Los fundamentos del arte",
+      "titulo": "Los fundamentos del arte",
+      "items": [
+        "Tecnología del arte, materiales, técnicas y procedimientos.",
+        "Terminología específica del arte y la arquitectura.",
+        "Aspectos históricos, geográficos y sociales del arte.",
+        "Teorías del arte: formalismo, expresionismo, simbolismo e intelectualismo. Definición de arte a lo largo de la historia y perspectiva actual. Diferencia entre arte y artesanía.",
+        "Representaciones y creaciones de mujeres. Pintoras: Sofonisba Anguisola, Artemisa Gentileschi, Judith Leyster, Elisabeth Vigée Le Brun, Rosa Bonheur, Bárbara Krafft, Mary Cassatt, Frida Kahlo, Tamara de Lempicka, entre otras. Escultoras: Sabina von Steinbach, Properzia de Rossi, Luisa Roldán, Camille Claudel, entre otras. Arquitectas: Matilde Ucelay, Charlotte Perriand, Lilly Reich, Lina Bo Bardi, Zaha Hadid, Kazuyo Sejima, entre otras. Artistas andaluzas. Perspectiva de género en el arte: representaciones y creaciones de mujeres.",
+        "El arte cuestionado. Dadaismo y Marcel Duchamp.",
+        "Arte conceptual y arte objeto."
+      ],
+      "codigos_items": [
+        "FART.2.A.1",
+        "FART.2.A.2",
+        "FART.2.A.3",
+        "FART.2.A.4",
+        "FART.2.A.5",
+        "FART.2.A.6",
+        "FART.2.A.7"
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Visión, realidad y representación",
+      "titulo": "Visión, realidad y representación",
+      "items": [
+        "El arte en la prehistoria y en las antiguas civilizaciones: pintura rupestre, arte mobiliar, arquitectura megalítica, expresiones artísticas en Mesopotamia, Persia y Egipto.",
+        "Introducción al arte precolombino y el arte africano precolonial. Diálogos: arte primitivo y vanguardias occidentales.",
+        "Sistemas de representación espacial en la pintura. De la pintura primitiva a la ruptura cubista. Juan Gris, Georges Braque y Pablo Picasso, entre otros. La fotografía. De la cámara oscura a la fotografía contemporánea. Principales movimientos.",
+        "El impresionismo (Claude Monet y Pierre Auguste Renoir, entre otros) y posimpresionismo pictórico. La liberalización de la luz y el color.",
+        "El Realismo: conceptos y enfoques. La nueva objetividad. El Hiperrealismo: Antonio López, Jason Degraaf, Edward Hooper y David Parrish, entre otros. El futurismo. Filippo Tommaso Marinetti y Umberto Boccioni, entre otros.",
+        "El Surrealismo. Influencias posteriores en el arte, el cine y la publicidad.",
+        "La abstracción: orígenes y evolución. La liberalización de la forma. Wassily Kandinsky, Kazimir Malevich, Jackson Pollock y Mark Rothko, entre otros."
+      ],
+      "codigos_items": [
+        "FART.2.B.1",
+        "FART.2.B.2",
+        "FART.2.B.3",
+        "FART.2.B.4",
+        "FART.2.B.5",
+        "FART.2.B.6",
+        "FART.2.B.7"
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. El arte clásico y sus proyecciones",
+      "titulo": "El arte clásico y sus proyecciones",
+      "items": [
+        "Introducción a la arquitectura y escultura griegas. La representación de la figura humana y la búsqueda de la perfección. Cálamis, Mirón, Fidias, la Escuela de Rodas, la Escuela de Tralles, la Escuela, la Escuela de Pérgamo. Órdenes. Obras y periodos más relevantes: arcaico, clásico y helenístico.",
+        "El retrato escultórico en la antigua Roma. El mosaico.",
+        "Claves de la arquitectura a través de las diferentes épocas y estilos: de la romanización a la Baja Edad Media. El arte hispano musulmán en Andalucía.",
+        "El renacer del arte clásico en la arquitectura, pintura y escultura: del trecento al cinquecento. Giotto, Duccio, Boticelli, Brunelleschi, Donatello, Rafael Sanzio, Michelangelo Bounarrotti, Leonardo da Vinci, Bramante, entre otros.",
+        "La evolución del lenguaje clásico a lo largo de la historia y el uso de sus elementos den la expresión artística. La proyección clásica en la edad contemporánea: del Neoclasicismo a la pintura metafísica. De Jacques Louis David y Anne-Louis Girodet a Giorgo de Chirico y Carlo Carrà."
+      ],
+      "codigos_items": [
+        "FART.2.C.1",
+        "FART.2.C.2",
+        "FART.2.C.3",
+        "FART.2.C.4",
+        "FART.2.C.5"
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Arte y expresión",
+      "titulo": "Arte y expresión",
+      "items": [
+        "La expresión en la Antigüedad. El retrato romano. La expresión en la Edad Media. La expresión en el Renacimiento. La exaltación barroca, aportaciones a la pintura y escultura.",
+        "El Romanticismo y el origen de la modernidad. Caspar David Friedrich y Francisco de Goya, entre otros. La pintura de Goya: aportaciones de su obra a la expresión artística y su influencia en el arte.",
+        "El Expresionismo alemán. Ernst Ludwig Kirchner, Franz Marc, Käthe Kollwitz, Otto Dix, entre otros. Del Fauvismo al Expresionismo Figurativo del s. XX. Impresionismo pictórico (Camille Pisarro, Édouard Manet, Edgar Degas, Paul Cézanne, Claude Monet y Pierre-Auguste. Surrealismo.",
+        "Del rechazo dadaísta al arte intermedia de Fluxus. Marcel Duchamp, Hannah Höch, Joseph Beuys entre otros. El arte intermedia. Dick Higgins, Allan Kaprow, entre otros."
+      ],
+      "codigos_items": [
+        "FART.2.D.1",
+        "FART.2.D.2",
+        "FART.2.D.3",
+        "FART.2.D.4"
+      ]
+    },
+    {
+      "codigo": "E",
+      "bloque": "E. Naturaleza, sociedad y comunicación en el arte",
+      "titulo": "Naturaleza, sociedad y comunicación en el arte",
+      "items": [
+        "El Modernismo. Gustav Klimt, Tolousse-Lautrec, Santiago Rusiñol y Ramón Casas, entre otros. Arquitectura y artes aplicadas. Williams Morris y Walter Gropius, entre otros. La arquitectura orgánica. Antoni Gaudí, Frank Lloyd Wright, Alvar Aalto y Bruno Zevi, entre otros.",
+        "La Bauhaus, escuela de Basilea, escuela de Zurich, escuela de Ulm, escuela de arquitectura de Chicago. Arte y función. Diseño y artes aplicadas. El Art Déco. Arte y artesanía.",
+        "La arquitectura del vidrio y hierro y el Movimiento Moderno. El Palacio de Cristal de Patxon, La Galería de las Máquinas de Dutert y Contamin y la Torre Eiffel de Gustave Eiffel. Ejemplos en Madrid: Estación de Atocha de Alberto Palacio, Palacio de Cristal del Retiro de Velázquez Bosco, Mercado de San Miguel de Alfonso Dubé y Diez.",
+        "Arte y medios de comunicación: del cartel al Pop Art.",
+        "El arte en pantalla: el videoarte, arte en las redes, arte digital. La luz como elemento plástico",
+        "Arte y ecología. Del Land Art (Robert Smithson)y el Arte Povera hasta nuestros días.",
+        "El arte como instrumento de transformación de la sociedad. De los individualismos artísticos al arte colaborativo. Espacios urbanos e intervenciones artísticas. Arte urbano.",
+        "La revolución de la imagen en la era de internet. Postfotografía y otros movimientos."
+      ],
+      "codigos_items": [
+        "FART.2.E.1",
+        "FART.2.E.2",
+        "FART.2.E.3",
+        "FART.2.E.4",
+        "FART.2.E.5",
+        "FART.2.E.6",
+        "FART.2.E.7",
+        "FART.2.E.8"
+      ]
+    },
+    {
+      "codigo": "F",
+      "bloque": "F. Metodologías y estrategias",
+      "titulo": "Metodologías y estrategias",
+      "items": [
+        "Metodologías de estudio de las formas, las funciones y los significados asociados a los movimientos y estilos artísticos, y de análisis técnico y procedimental a la obra de arte. Estudios comparativos.",
+        "La distribución de tareas en los proyectos artísticos colectivos: criterios de selección a partir de las habilidades requeridas.",
+        "Metodología proyectual. Fases de los proyectos artísticos.",
+        "Estrategias de selección de estilos, técnicas y lenguajes."
+      ],
+      "codigos_items": [
+        "FART.2.F.1",
+        "FART.2.F.2",
+        "FART.2.F.3",
+        "FART.2.F.4"
+      ]
+    }
+  ],
+  "comunidad": "andalucia",
+  "idioma": "es"
+}

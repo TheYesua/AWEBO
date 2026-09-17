@@ -1,0 +1,244 @@
+{
+  "materia_oficial": "Fundamentos de Administración y Gestión",
+  "materia": "Fundamentos de Administración y Gestión",
+  "etapa": "Bachillerato",
+  "ciclo": "2º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Identificar las dimensiones de la innovación y sus modalidades, analizando sus aportaciones históricas y actuales a la mejora del bienestar social y las contribuciones de personas, empresas y organizaciones sociales innovadoras, para garantizar el desarrollo sostenible de un país y la competitividad de sus empresas, valorando el papel fundamental que desempeña la puesta en práctica de proyectos emprendedores en los procesos de innovación.",
+      "descriptores": [
+        "CE2",
+        "CE3"
+      ]
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Describir las principales áreas funcionales de una empresa o de una organización social y llevar a cabo simulaciones de las actividades que permiten planificar, organizar, gestionar y evaluar diferentes tareas relacionadas con el desarrollo de un proyecto emprendedor empresarial o social para poder llevarlo a cabo, desarrollando la idea en la que se basa y logrando los objetivos que persigue.",
+      "descriptores": [
+        "CE3"
+      ]
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Identificar y aplicar normas reguladoras de las actividades de las empresas y las organizaciones, realizando supuestos básicos de redacción de estatutos y contratos sociales, así como de registro de operaciones contables, fiscales y laborales, con el fin de valorar la importancia que tiene para las empresas, las organizaciones y la sociedad, el reflejo de sus actuaciones y acuerdos en documentos legales, la representación fiel del valor de su patrimonio, el respeto a los derechos de los trabajadores y su contribución tributaria al bienestar social.",
+      "descriptores": [
+        "CPSAA5",
+        "CE2",
+        "CE3"
+      ]
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Reconocer y desarrollar las habilidades básicas de las personas para el trabajo en equipo y para llevar a cabo la comunicación de ideas, empleando soportes diversos con el fin de contribuir al desarrollo de un proyecto emprendedor y a la difusión de sus resultados.",
+      "descriptores": [
+        "CPSAA1",
+        "CE3",
+        "CCEC3",
+        "CCEC4"
+      ]
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Reflexionar sobre el sentido, alcance, diferenciación y efectos que el del proyecto emprendedor desarrollado tiene en el entorno, concretando las formas de contribuir a su mejora con acciones específicas de economía colaborativa y economía circular que generen un valor añadido real, para comprender la relevancia de la evaluación del impacto de las iniciativas emprendedoras empleando sistemas de indicadores de calidad.",
+      "descriptores": [
+        "CE3"
+      ]
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Investigar sobre proyectos innovadores de emprendimiento empresarial y social, valorando las capacidades innatas y adquiridas de sus promotores y su impacto en el desarrollo sostenible de su entorno."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Analizar necesidades del entorno y recopilar la información económica del sector de actividad empresarial en el que se situará la empresa o los indicadores sociales que justifican la necesidad de una organización social."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Participar activamente en la aplicación de técnicas de exploración creativa de ideas innovadoras comprendiendo las etapas del proceso y valorando su relevancia."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "1",
+      "descripcion": "Seleccionar una idea de negocio, valorando y argumentando de forma técnica la elección."
+    },
+    {
+      "codigo": "1.5",
+      "competencia": "1",
+      "descripcion": "Analizar la viabilidad económica de un proyecto estableciendo un plan de tesorería y una previsión inicial de modalidades de financiación."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Identificar las diferentes áreas funcionales del proyecto empresarial para desarrollar la idea de negocio y valorar la importancia de cada una de ellas dentro de la empresa."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Implementar diferentes técnicas de prototipado en el producto y/o servicio a ofrecer en el proyecto empresarial."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Aplicar diferentes técnicas de gestión específicas de las áreas funcionales del proyecto para la planificación de la producción, la gestión del aprovisionamiento y la valoración de las existencias, el estudio de los mercados, la organización de las actividades y la selección y gestión de los recursos humanos."
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "2",
+      "descripcion": "Recabar y exponer información sobre diferentes fuentes de financiación, así como sus ventajas e inconvenientes."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Conocer e identificar los conceptos básicos de los principales tributos en la economía española."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Valorar la importancia de la responsabilidad fiscal, así como de una apropiada educación fiscal."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Realizar supuestos sencillos de registro contable de operaciones de diferentes áreas funcionales, comprendiendo las etapas del ciclo contable y redactando sus documentos básicos, comprendiendo su relevancia para valorar la situación patrimonial, económica y financiera de la empresa."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "3",
+      "descripcion": "Redactar e interpretar documentos frecuentes de empresas y organizaciones como contratos de compraventa o alquiler y estatutos sociales, contratos laborales o nóminas."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Detectar habilidades y desplegar herramientas para la mejora de relaciones en los equipos de trabajo."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Realizar simulaciones para aplicar diferentes técnicas de resolución de conflictos en los equipos de trabajo."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Identificar las partes del proceso de comunicación escrita y oral reconociendo, elementos de la comunicación no verbal que aporten información al proceso."
+    },
+    {
+      "codigo": "4.4",
+      "competencia": "4",
+      "descripcion": "Desarrollar habilidades básicas para realizar simulaciones de procesos de comunicación efectiva en una empresa."
+    },
+    {
+      "codigo": "4.5",
+      "competencia": "4",
+      "descripcion": "Emplear herramientas digitales y creativas visuales de diferente tipo para diseñar la propuesta de valor y para realizar presentaciones de diferentes etapas del proyecto ante un auditorio, interactuando con sus integrantes."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Analizar, de forma crítica y constructiva, el contexto local de una propuesta emprendedora, valorando sus efectos en la transformación económica y social de su entorno y fomentando iniciativas socialmente responsables."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Proponer alternativas y nuevas soluciones a retos personales, empresariales y sociales, reconociendo la importancia de la economía circular, y aplicando las destrezas propias que caracterizan a una persona emprendedora."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "5",
+      "descripcion": "Diseñar y aplicar indicadores de calidad para evaluar proyectos emprendedores, considerando su originalidad, su viabilidad y su impacto económico y social en los contextos local y global."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. La innovación y la idea",
+      "titulo": "La innovación y la idea",
+      "items": [
+        "Innovación, generación de valor y creación de empleo. Manual de Oslo y tipos de innovación.",
+        "Las dimensiones personal, empresarial y social del emprendimiento.",
+        "Las personas emprendedoras: características y tipos. Habilidades duras y blandas. Herramientas para el autodiagnóstico de actitudes emprendedoras. Capacidades innatas y adquiridas.",
+        "Análisis de casos de modelos innovadores de negocio y de organizaciones sociales.",
+        "Técnicas de detección de necesidades personales, económicas y sociales. Casos prácticos de análisis del entorno genérico y específico.",
+        "El mapa de empatía: análisis de necesidades y percepciones de clientes y usuarios.",
+        "El diseño de la experiencia de usuario en el lanzamiento de productos."
+      ],
+      "codigos_items": [
+        "FAG.2.A.1",
+        "FAG.2.A.2",
+        "FAG.2.A.3",
+        "FAG.2.A.4",
+        "FAG.2.A.5",
+        "FAG.2.A.6",
+        "FAG.2.A.7"
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Áreas funcionales",
+      "titulo": "Áreas funcionales",
+      "items": [
+        "Producción. Decisión de localización y dimensión. Implementación de técnicas de prototipado. Técnicas de gestión de proyectos: camino crítico. Aprovisionamiento: plan de compras y selección de proveedores. Gestión de stocks: modelos Wilson y ABC. Documentos de pedido: contrato de suministro, pedido y albarán. La valoración de las existencias: PMP, FIFO y LIFO.",
+        "El registro contable del valor del patrimonio. Partida Doble. El PGC. Cuentas patrimoniales y cuentas de gestión. Supuestos sencillos de registro de operaciones contables de patrimonio.",
+        "Marketing y gestión de ventas. Investigación de mercados: fases y métodos. Instrumentos: cuestionarios, encuestas y paneles. Selección de marca y nombre, diseño de logotipo. Diseño de la cartera de productos y determinación de precios. Diseño de canales y de punto de venta. Plan de medios, página web y redes sociales.",
+        "Documentos de compraventa: el IVA y la redacción de facturas. Instrumentos de cobro y pago aplazados. Registro contable de operaciones de compraventa.",
+        "Recursos humanos. Competencias y definición de perfiles profesionales. Reclutamiento y selección de personal. Carta de presentación y currículum; recursos digitales para la búsqueda de empleo. Supuestos prácticos de contratación. Riesgos laborales. Redacción e interpretación de nóminas. Registro contable de operaciones de personal.",
+        "Finanzas. Evaluación y selección de las fuentes de financiación y de proyectos de inversión. Operaciones de leasing, renting, factoring y confirming. Ampliaciones de capital. Registro contable de operaciones financieras. Viabilidad económico-financiera.",
+        "Administración. Matrices para la toma de decisiones estratégicas. Supuestos prácticos de diseño de la estructura organizativa. Redacción e interpretación de convocatorias, contratos y estatutos sociales. Proceso contable. Liquidación de IVA, otras operaciones de regularización y obtención del resultado. Trámites electrónicos."
+      ],
+      "codigos_items": [
+        "FAG.2.B.1",
+        "FAG.2.B.2",
+        "FAG.2.B.3",
+        "FAG.2.B.4",
+        "FAG.2.B.5",
+        "FAG.2.B.6",
+        "FAG.2.B.7"
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Trabajo en equipo y comunicación del proyecto",
+      "titulo": "Trabajo en equipo y comunicación del proyecto",
+      "items": [
+        "Habilidades y herramientas para la gestión del trabajo en equipo y del cambio en la organización.",
+        "Instrumentos y procedimiento para la resolución de conflictos en la organización.",
+        "Técnicas de comunicación escrita, verbal y no verbal para comunicación externa e interna del proyecto.",
+        "Herramientas innovadoras para la comunicación: storytelling y neotelling.",
+        "Redes sociales como medio de comunicación empresarial."
+      ],
+      "codigos_items": [
+        "FAG.2.C.1",
+        "FAG.2.C.2",
+        "FAG.2.C.3",
+        "FAG.2.C.4",
+        "FAG.2.C.5"
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Aportaciones del proyecto empresarial al desarrollo local y global",
+      "titulo": "Aportaciones del proyecto empresarial al desarrollo local y global",
+      "items": [
+        "El impacto local y global del proyecto empresarial o social.",
+        "Contribución del negocio a la economía circular y al desarrollo sostenible de mi comunidad.",
+        "Dimensiones de RSC del proyecto e indicadores para su evaluación. Pacto Global."
+      ],
+      "codigos_items": [
+        "FAG.2.D.1",
+        "FAG.2.D.2",
+        "FAG.2.D.3"
+      ]
+    }
+  ],
+  "comunidad": "andalucia",
+  "idioma": "es"
+}

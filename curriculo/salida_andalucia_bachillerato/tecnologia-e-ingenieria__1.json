@@ -1,0 +1,254 @@
+{
+  "materia_oficial": "Tecnología e Ingeniería",
+  "materia": "Tecnología e Ingeniería",
+  "etapa": "Bachillerato",
+  "ciclo": "1º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Coordinar y desarrollar proyectos de investigación con una actitud crítica y emprendedora, implementando estrategias y técnicas eficientes de resolución de problemas y comunicando los resultados de manera adecuada, para crear y mejorar productos y sistemas de manera continua.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Seleccionar materiales y elaborar estudios de impacto, aplicando criterios técnicos y de sostenibilidad para fabricar productos de calidad que den respuesta a problemas y tareas planteados, desde un enfoque responsable y ético.",
+      "descriptores": [
+        "CC4",
+        "CE1"
+      ]
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Utilizar las herramientas digitales adecuadas, analizando sus posibilidades, configurándolas de acuerdo a sus necesidades y aplicando conocimientos interdisciplinares, para resolver tareas, así como para realizar la presentación de los resultados de una manera óptima.",
+      "descriptores": [
+        "CE3"
+      ]
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Generar conocimientos y mejorar destrezas técnicas, transfiriendo y aplicando saberes de otras disciplinas científicas con actitud creativa, para calcular y resolver problemas o dar respuesta a necesidades de los distintos ámbitos de la ingeniería.",
+      "descriptores": [
+        "CPSAA5",
+        "CE3"
+      ]
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Diseñar, crear y evaluar sistemas tecnológicos, aplicando conocimientos de programación informática, regulación automática y control, así como las posibilidades que ofrecen las tecnologías emergentes, para estudiar, controlar y automatizar tareas en sistemas tecnológicos y robóticos.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Analizar y comprender sistemas tecnológicos de los distintos ámbitos de la ingeniería, estudiando sus características, consumo y eficiencia energética, para evaluar el uso responsable y sostenible que se hace de la tecnología.",
+      "descriptores": [
+        "CE1"
+      ]
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Investigar y diseñar proyectos que muestren de forma gráfica la creación y mejora de un producto, seleccionando, referenciando e interpretando información relacionada."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Participar en el desarrollo, gestión y coordinación de proyectos de creación y mejora continua de productos viables y socialmente responsables, identificando mejoras y creando prototipos mediante un proceso iterativo, con actitud crítica, creativa y emprendedora."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Colaborar en tareas tecnológicas, escuchando el razonamiento de los demás, aportando al equipo a través del rol asignado y fomentando el bienestar grupal y las relaciones saludables e inclusivas."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "1",
+      "descripcion": "Elaborar documentación técnica con precisión y rigor, generando diagramas funcionales y utilizando medios manuales y aplicaciones digitales, empleando el soporte, la terminología y el rigor apropiados."
+    },
+    {
+      "codigo": "1.5",
+      "competencia": "1",
+      "descripcion": "Comunicar de manera eficaz y organizada las ideas y soluciones tecnológicas."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Determinar el ciclo de vida de un producto, planificando y aplicando medidas de control de calidad en sus distintas etapas, desde el diseño a la comercialización, teniendo en consideración estrategias de mejora continua."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Seleccionar los materiales, tradicionales o de nueva generación, adecuados para la fabricación de productos de calidad, basándose en sus características técnicas y atendiendo a criterios de sostenibilidad de manera responsable y ética."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Fabricar modelos o prototipos empleando las técnicas de fabricación más adecuadas y aplicando los criterios técnicos y de sostenibilidad necesarios."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Resolver tareas propuestas y funciones asignadas, mediante el uso y configuración de diferentes herramientas digitales de manera óptima y autónoma."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Realizar la presentación de proyectos empleando herramientas digitales adecuadas."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Resolver problemas asociados a sistemas e instalaciones mecánicas, aplicando fundamentos de mecanismos de transmisión y transformación de movimientos, soporte y unión al desarrollo de montajes o simulaciones."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Resolver problemas asociados a sistemas e instalaciones eléctricas y electrónicas, aplicando fundamentos de corriente continua y máquinas eléctricas al desarrollo de montajes o simulaciones."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Controlar el funcionamiento de sistemas tecnológicos y robóticos, utilizando lenguajes de programación informática, estructurados o no, y aplicando las posibilidades que ofrecen las tecnologías emergentes, tales como inteligencia artificial, internet de las cosas, big data, etc."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Automatizar, programar y evaluar movimientos de robots, mediante la modelización, la aplicación de algoritmos sencillos y el uso de herramientas informáticas."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "5",
+      "descripcion": "Conocer y comprender conceptos básicos de programación textual, mostrando el progreso paso a paso de la ejecución de un programa a partir de un estado inicial y prediciendo su estado final tras la ejecución."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Evaluar los distintos sistemas de generación de energía eléctrica y mercados energéticos, estudiando sus características, calculando sus magnitudes y valorando su eficiencia."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Analizar las diferentes instalaciones de una"
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Proyectos de investigación y desarrollo",
+      "titulo": "Proyectos de investigación y desarrollo",
+      "items": [
+        "Estrategias de gestión y desarrollo de proyectos: diagramas de Gantt, metodologías Agile. Tecnología e Ingeniería II",
+        "Productos: Ciclo de vida. Estrategias de mejora continua. Planificación y desarrollo de diseño y comercialización. Logística, transporte y distribución. Metrología y normalización. Control de calidad. Estrategias de mejora continua: ciclo de Deming y planes de mejora.",
+        "Expresión gráfica para la planificación y desarrollo de proyectos: Aplicaciones CAD (Computer Aided Design)-CAE (Computer Aided Engineering)-CAM (Computer Aided Manufacturing): funciones y utilidades de estas aplicaciones en los procesos de diseño de la geometría, en el análisis del funcionamiento y en la definición y control de los procesos de fabricación del producto. Diagramas funcionales, diagramas de flujo, esquemas y croquis.",
+        "Emprendimiento, resiliencia, perseverancia y creatividad para abordar problemas desde una perspectiva interdisciplinar.",
+        "Autoconfianza e iniciativa. Identificación y gestión de emociones. El error y la reevaluación como parte del proceso de aprendizaje.",
+        "Difusión y comunicación de documentación técnica. Elaboración, referenciación y presentación."
+      ],
+      "codigos_items": [
+        "TECI.1.A.1",
+        "TECI.1.A.2",
+        "TECI.1.A.3",
+        "TECI.1.A.4",
+        "TECI.1.A.5",
+        "TECI.1.A.6"
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Materiales y fabricación",
+      "titulo": "Materiales y fabricación",
+      "items": [
+        "Propiedades de los materiales: físicas, químicas y mecánicas. Materiales técnicos: metálicos, cerámicos, moleculares, poliméricos e híbridos, entre otros, nuevos materiales (grafeno, estaneno, shrilk, entre otros) y nuevos tratamientos (PVD (Physical Vapor Deposition), CVD (Chemical Vapor Deposition), entre otros). Materiales técnicos y nuevos materiales. Propiedades, clasificación y criterios de sostenibilidad. Selección y aplicaciones características.",
+        "Técnicas y procedimientos de fabricación: Prototipado rápido y bajo demanda. Fabricación digital aplicada a proyectos.",
+        "Normas de seguridad e higiene en el trabajo."
+      ],
+      "codigos_items": [
+        "TECI.1.B.1",
+        "TECI.1.B.2",
+        "TECI.1.B.3"
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Sistemas mecánicos",
+      "titulo": "Sistemas mecánicos",
+      "items": [
+        "Máquinas y sistemas mecánicos. Mecanismos de transmisión y transformación de movimientos. Elementos de transmisión: engranajes, poleas y correas, cadenas de rodillos, cigüeñal, caja de cambios. Soportes y unión de elementos mecánicos. Acoplamientos rígidos y flexibles. Junta Cardan. Diseño, cálculo, montaje y experimentación física o simulada de sistemas mecánicos. tipos, características y aplicaciones. Fases del desarrollo de proyecto: análisis de viabilidad, planificación de los trabajos (identificación y secuenciación de tareas, elaboración del plan de trabajo), ejecución, seguimiento y evaluación de los resultados. Documentación técnica de un proyecto: memorias, pliegos de condiciones, presupuestos y planos. Características y contenido básico."
+      ],
+      "codigos_items": [
+        "TECI.1.C.1"
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Sistemas eléctricos y electrónicos",
+      "titulo": "Sistemas eléctricos y electrónicos",
+      "items": [
+        "Circuitos eléctricos y electrónicos y máquinas eléctricas de corriente continua. Interpretación y representación esquematizada de circuitos. Diseño, cálculo, montaje y experimentación física o simulada. Aplicación a proyectos. Motores eléctricos de corriente continua: características y funcionamiento. Aplicación a proyectos. Componentes y circuitos electrónicos. Interpretación de circuitos básicos."
+      ],
+      "codigos_items": [
+        "TECI.1.D.1"
+      ]
+    },
+    {
+      "codigo": "E",
+      "bloque": "E. Sistemas informáticos emergentes",
+      "titulo": "Sistemas informáticos emergentes",
+      "items": [
+        "Fundamentos de la programación textual. Características, elementos y lenguajes: Tipos de datos, constantes y variables. Estructura de un programa: instrucciones, comandos y sintaxis. Operaciones básicas con variables. Bucles, expresiones condicionales y estructuras de datos.",
+        "Proceso de desarrollo: edición, compilación o interpretación, ejecución, pruebas y depuración. Creación de programas para la resolución de problemas. Modularización.",
+        "Tecnologías emergentes: internet de las cosas. Aplicación a proyectos.",
+        "Protocolos de comunicación de redes de dispositivos."
+      ],
+      "codigos_items": [
+        "TECI.1.E.1",
+        "TECI.1.E.2",
+        "TECI.1.E.3",
+        "TECI.1.E.4"
+      ]
+    },
+    {
+      "codigo": "F",
+      "bloque": "F. Sistemas automáticos",
+      "titulo": "Sistemas automáticos",
+      "items": [
+        "Sistemas de control. Conceptos y elementos. Modelización de sistemas sencillos.",
+        "Automatización programada de procesos. Diseño, programación, construcción y simulación o montaje.",
+        "Sistemas de supervisión (SCADA): definición, características y ventajas. Telemetría y monitorización.",
+        "Aplicación de las tecnologías emergentes a los sistemas de control.",
+        "Robótica: sensores, actuadores, y hardware y software de control. Modelización de movimientos y acciones mecánicas. Inteligencia artificial aplicada a los sistemas de control."
+      ],
+      "codigos_items": [
+        "TECI.1.F.1",
+        "TECI.1.F.2",
+        "TECI.1.F.3",
+        "TECI.1.F.4",
+        "TECI.1.F.5"
+      ]
+    },
+    {
+      "codigo": "G",
+      "bloque": "G. Tecnología sostenible",
+      "titulo": "Tecnología sostenible",
+      "items": [
+        "Obtención, transformación y distribución de las principales fuentes de energía. Sistemas y mercados energéticos.",
+        "Consumo energético sostenible, técnicas y Principios físicos en hidráulica: presión hidráulica (principio de Pascal), principio de Bernouilli, efecto Venturi, magnitudes y unidades básicas. Componentes: compresor (neumática), depósito y bomba (hidráulica), sistemas de mantenimiento, cilindros neumáticos e hidráulicos, motores, válvulas, tuberías. Descripción y análisis. Esquemas característicos de aplicación. Diseño y montaje físico o simulado.",
+        "Instalaciones en viviendas: eléctricas, de agua y climatización, de comunicación y domóticas. Arquitectura sostenible: bio-construcción y ecoarquitectura. Uso eficiente de los sistemas de climatización de la vivienda.",
+        "Energías renovables, eficiencia energética, certificación energética y sostenibilidad. STEM2, STEM5, CD1, CD2, CD4, CPSAA2, CC4, CE1. vivienda desde el punto de vista de su eficiencia energética, buscando aquellas opciones más comprometidas con la sostenibilidad y fomentando un uso responsable de las mismas."
+      ],
+      "codigos_items": [
+        "TECI.1.G.1",
+        "TECI.1.G.2",
+        "TECI.1.G.3",
+        "TECI.1.G.4"
+      ]
+    }
+  ],
+  "comunidad": "andalucia",
+  "idioma": "es"
+}

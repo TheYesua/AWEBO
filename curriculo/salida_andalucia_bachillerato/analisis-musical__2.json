@@ -1,0 +1,143 @@
+{
+  "materia_oficial": "Análisis Musical",
+  "materia": "Análisis Musical",
+  "etapa": "Bachillerato",
+  "ciclo": "2º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Analizar los elementos musicales de diferentes obras, utilizando la escucha activa y el estudio de partituras, para describir sus características y establecer comparaciones.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Establecer relaciones entre los elementos musicales de una composición, a través del análisis de los mismos, de su estructura y de los procedimientos compositivos utilizados, para asociar la obra con un género, un estilo y un contexto de creación.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Elaborar comentarios y críticas musicales sobre las obras analizadas, utilizando una terminología adecuada y consultando distintas fuentes de información, para expresar juicios personales fundamentados y contribuir a la difusión del patrimonio musical a través de los medios disponibles, priorizando producciones del repertorio andaluz.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Utilizar los procedimientos compositivos fundamentales y las tecnologías digitales, empleando los elementos y las estructuras musicales más adecuadas, para crear obras sencillas y realizar improvisaciones.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Investigar sobre los usos de la música y su combinación con otras formas de expresión artística, utilizando diferentes fuentes de información y analizando las características musicales de las obras, para entender de qué forma inciden determinados rasgos musicales en la salud y en las emociones.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Describir las características musicales de una obra a partir de la escucha activa y el estudio de partituras, analizando sus elementos constitutivos y la función que estos cumplen dentro de la composición."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Comparar los elementos constitutivos y las características musicales de diferentes obras, estableciendo analogías y diferencias entre ellas, a partir de la escucha activa y del estudio de partituras, favoreciendo el respeto hacia las distintas convenciones formales y considerando la diversidad como valor democrático esencial."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Distinguir los principales géneros y estilos musicales que se desarrollan en la historia, analizando los factores que inciden en la evolución de las formas musicales."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Asociar las obras analizadas con un género, un estilo y un contexto de creación determinados, identificando, de forma autónoma, la estructura formal y los procedimientos compositivos utilizados."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Analizar las características del patrimonio musical andaluz, incidiendo en el flamenco y en sus códigos creativos, reconociendo la pluralidad artística y cultural para ayudar a superar cualquier tipo de discriminación."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Expresar juicios personales sobre las obras analizadas, argumentando la opinión propia y utilizando una terminología musical adecuada."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Justificar la opinión propia sobre las obras analizadas, investigando y seleccionando la información más pertinente a partir de medios analógicos y digitales."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Elaborar críticas musicales y comentarios propios para su difusión en medios analógicos y digitales, respetando los derechos de autor y la propiedad intelectual."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Realizar improvisaciones sencillas o pequeñas composiciones, en proyectos musicales grupales, utilizando los procedimientos compositivos fundamentales y aplicando patrones melódicos, rítmicos, armónicos y formales previamente analizados e interiorizados."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Utilizar, diferentes herramientas tecnológicas en la creación de proyectos musicales diversos."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Analizar los diferentes usos de la música y cómo inciden determinados rasgos musicales en la salud y las emociones, a partir de la información obtenida en fuentes de información fiables."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Describir las características de la música que se utiliza con fines terapéuticos, analizando ejemplos de obras y relacionando sus rasgos con posibles efectos en el oyente."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Técnicas de análisis musical",
+      "titulo": "Técnicas de análisis musical",
+      "items": [
+        "Técnicas de análisis de audición y de partituras: escucha activa, observación y comparación guiada.",
+        "Técnicas para el análisis del contexto histórico-estético de la creación y la interpretación de la obra. Evolución de la interpretación de una obra a lo largo del tiempo. Comparación entre interpretaciones. La comparación como técnica analítica.",
+        "El texto y su relación con la forma musical.",
+        "Procedimientos para la elaboración de comentarios y críticas musicales. Puesta en común o debate de estos en el aula.",
+        "Recursos digitales para la investigación, la composición y la difusión musical. Internet como herramienta para la investigación musical. Utilización básica de software libre de composición musical y plataformas de difusión de audio. de los principales signos o términos relacionados con el tempo, la dinámica o el carácter. Conocimiento de su significado y percepción aproximada de audición.",
+        "Respeto de los derechos de autor y de la propiedad intelectual."
+      ],
+      "codigos_items": [
+        "AMUS.2.A.1",
+        "AMUS.2.A.2",
+        "AMUS.2.A.3",
+        "AMUS.2.A.4",
+        "AMUS.2.A.5",
+        "AMUS.2.A.6"
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Géneros musicales",
+      "titulo": "Géneros musicales",
+      "items": [
+        "Las características sonoras y estilísticas de la música desde la Edad Media hasta la actualidad. Evolución organológica de las principales familias instrumentales y de la orquesta. Apreciación en audición y/o partitura de los siguientes elementos y deducción del estilo musical correspondiente: género, textura, texto, tonalidad/modalidad, relación música-texto, idioma, número de partes o movimientos, dinámicas, ornamentación, agrupaciones tímbricas...",
+        "Las formas y los géneros de la música culta desde la Edad Media hasta la actualidad. Según la instrumentación: vocal/instrumental. Según la temática: religiosa (litúrgica o no litúrgica)/profana. Según el público: culta/popular (folklórica o urbana). Según la manera de exponer el contenido: descriptiva, programática, pura, dramática (representada o no). Según su función: escénica, cinematográfica, ceremonial, publicitaria, militar...",
+        "Rasgos técnico-estilísticos característicos de las músicas populares urbanas del siglo XX y XXI.",
+        "El Flamenco: elementos formales del cante, del baile y del toque. Impacto de la letra en las formas flamencas. Estilos personales.",
+        "Diferentes usos y funciones de la música. Uso de la música con fines terapéuticos: la literatura desde la Edad Antigua hasta la Edad Moderna, bases científicas de las terapias con sonido, evolución de la musicoterapia, patologías frecuentes tratadas con música, técnicas aplicadas en musicoterapia (cantos, danza, cuencos tibetanos, improvisación...)"
+      ],
+      "codigos_items": [
+        "AMUS.2.B.1",
+        "AMUS.2.B.2",
+        "AMUS.2.B.3",
+        "AMUS.2.B.4",
+        "AMUS.2.B.5"
+      ]
+    }
+  ],
+  "comunidad": "andalucia",
+  "idioma": "es"
+}

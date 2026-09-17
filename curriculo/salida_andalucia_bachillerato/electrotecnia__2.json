@@ -1,0 +1,198 @@
+{
+  "materia_oficial": "Electrotecnia",
+  "materia": "Electrotecnia",
+  "etapa": "Bachillerato",
+  "ciclo": "2º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Comprender y explicar los principios básicos del electromagnetismo, seleccionando y utilizando los componentes de un circuito eléctrico que responda a una finalidad predeterminada, comprendiendo su funcionamiento y utilizando adecuadamente los aparatos de medida de magnitudes eléctricas, estimando su orden de magnitud y valorando su grado de precisión dirigido al uso práctico de las unidades de medidas de las magnitudes eléctricas.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Utilizar el vocabulario adecuado y los recursos gráficos y simbólicos apropiados para describir, montar o simular circuitos eléctricos y magnéticos, obteniendo el valor de las principales magnitudes de dichos circuitos por medio de la medida o el cálculo y conocer las ventajas de los sistemas trifásicos con la finalidad de diseñar y montar circuitos adecuados a los distintos contextos.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Seleccionar e interpretar información adecuada para plantear y valorar soluciones, en el ámbito de la electrotecnia, a problemas técnicos comunes y analizar e interpretar esquemas y planos de instalaciones y equipos eléctricos característicos, comprendiendo la función de un elemento o grupo funcional de elementos en el conjunto.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Proponer soluciones a problemas en el campo de la electrotecnia con un nivel de precisión coherente con el de las diversas magnitudes que intervienen en ellos y comprender descripciones y características de los dispositivos eléctricos, transmitiendo con precisión conocimientos e ideas sobre ellos, utilizando vocabulario, símbolos y formas de expresión apropiadas con el fin de distinguir situaciones que supongan un consumo excesivo de energía eléctrica.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Actuar con autonomía, confianza y seguridad al inspeccionar, manipular e intervenir en circuitos y máquinas eléctricas para comprender su funcionamiento y conocer la realidad del sector eléctrico en Andalucía, así como las medidas de ahorro y eficiencia energética que se están aplicando en la industria, consumo de aparatos eléctricos o uso adecuado de lámparas.",
+      "descriptores": [
+        "CPSAA4",
+        "CC4",
+        "CE1"
+      ]
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Conocer y analizar de forma cualitativa el funcionamiento de un dispositivo eléctrico, aplicando los principios y leyes eléctricas y electromagnéticas."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Conocer los fundamentos sobre magnitudes eléctricas y manejar correctamente sus unidades."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Comprender y describir la función de los elementos básicos de un circuito eléctrico y el funcionamiento de circuitos simples destinados a producir luz, energía motriz o calor, aplicando los principios y leyes eléctricas y electromagnéticas."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Identificar, seleccionar y conectar adecuadamente elementos o componentes eléctricos o electrónicos necesarios, a partir de sus valores característicos, para su implementación en circuitos característicos y sencillos de forma física o simulada."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Medir las magnitudes básicas de un circuito eléctrico e interpretarlas para verificar su correcto funcionamiento, seleccionando el aparato de medida adecuado y aplicando el procedimiento de medida oportuno."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Calcular y representar vectorialmente las magnitudes básicas de un circuito eléctrico."
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "2",
+      "descripcion": "Conocer, comprender, analizar y resolver correctamente circuitos en corriente continua y corriente alterna, y circuitos electromagnéticos, aplicando los principios, las técnicas, las leyes y procedimientos oportunos."
+    },
+    {
+      "codigo": "2.5",
+      "competencia": "2",
+      "descripcion": "Diseñar e implementar circuitos eléctricos en corriente continua y alterna de forma física o simulada."
+    },
+    {
+      "codigo": "2.6",
+      "competencia": "2",
+      "descripcion": "Conocer y aplicar conceptos básicos de los sistemas trifásicos equilibrados: conexión estrella y triángulo."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Conocer los elementos electrónicos básicos: diodos, transistores y tiristores."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Conocer y aplicar los conceptos de potencia activa, reactiva y aparente y las relaciones entre ellas. Conocer el factor de potencia y su corrección."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Analizar el funcionamiento y conexionado de una máquina eléctrica, calculando sus parámetros e interpretando correctamente sus principales características técnicas."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "3",
+      "descripcion": "Conocer la constitución básica y principios electromagnéticos de funcionamiento de transformadores y máquinas eléctricas rotativas."
+    },
+    {
+      "codigo": "3.5",
+      "competencia": "3",
+      "descripcion": "Analizar planos de circuitos, instalaciones y equipos eléctricos de uso común e identificar la función de cada elemento o grupo funcional en el conjunto, además de conocer e identificar los dispositivos de seguridad usados en las instalaciones eléctricas."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Identificar situaciones que impliquen consumo excesivo de energía eléctrica, valorando de forma cuantitativa las posibles alternativas para obtener, en cada una de las aplicaciones, una mayor eficiencia energética y, con ello, una mayor reducción del consumo de energía y del impacto ambiental producido para contribuir al logro de un desarrollo sostenible."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Diseñar soluciones, en el campo de la electrotecnia, que contribuyan al logro de un desarrollo sostenible, usando descripciones y características de los dispositivos eléctricos y transmitiendo con precisión conocimientos e ideas sobre ellos, utilizando vocabulario, símbolos y formas de expresión apropiadas."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Emitir juicios críticos, razonados y fundamentados sobre la realidad del sector eléctrico en todos los ámbitos y escalas geográficas."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Conocer la realidad del sector eléctrico a nivel mundial, nacional y andaluz, y las estrategias energéticas en ahorro, eficiencia energética, fomento y desarrollo de infraestructuras de las energías renovables en todos los niveles, y en particular en nuestra Comunidad Autónoma."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Ciencia y Electrotecnia",
+      "titulo": "Ciencia y Electrotecnia",
+      "items": [
+        "Electricidad. Magnitudes fundamentales y unidades eléctricas. Potencia, trabajo, energía y efectos de la corriente eléctrica.",
+        "Magnetismo y electromagnetismo: magnitudes básicas y leyes fundamentales.",
+        "Circuitos eléctricos en corriente continua (CC) y en corriente alterna (CA): componentes activos y pasivos.",
+        "Instrumentos y procedimientos de medida en los circuitos de corriente continua y corriente alterna. Localización de averías e identificación de sus posibles causas.",
+        "Elementos y dispositivos electrónicos. Valores característicos. Identificación, comprobación e implementación en circuitos electrónicos básicos físicos y/o simulados."
+      ],
+      "codigos_items": [
+        "ELTR.2.A.1",
+        "ELTR.2.A.2",
+        "ELTR.2.A.3",
+        "ELTR.2.A.4",
+        "ELTR.2.A.5"
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Desarrollo de técnicas de análisis y cálculo en circuitos",
+      "titulo": "Desarrollo de técnicas de análisis y cálculo en circuitos",
+      "items": [
+        "Leyes y procedimientos en circuitos de corriente continua.",
+        "Análisis de circuitos de corriente continua. Dispositivos eléctricos: características, identificación y acoplamientos. Montaje y experimentación física o simulada.",
+        "La corriente alterna: generación y parámetros. Leyes y procedimientos en circuitos de corriente alterna.",
+        "Análisis de circuitos de corriente alterna monofásicos. Dispositivos eléctricos: características, identificación y acoplamientos. Representación gráfica. Montaje y experimentación física o simulada.",
+        "Potencia en circuitos de corriente alterna. Representación gráfica.",
+        "Sistemas trifásicos: generación, acoplamiento, tipos y potencias."
+      ],
+      "codigos_items": [
+        "ELTR.2.B.1",
+        "ELTR.2.B.2",
+        "ELTR.2.B.3",
+        "ELTR.2.B.4",
+        "ELTR.2.B.5",
+        "ELTR.2.B.6"
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Eficiencia en máquinas y dispositivos eléctricos",
+      "titulo": "Eficiencia en máquinas y dispositivos eléctricos",
+      "items": [
+        "Funcionamiento, conexionado y rendimiento energético de los transformadores. Constitución, parámetros característicos y ensayos básicos",
+        "Funcionamiento, conexionado y rendimiento energético de las máquinas de corriente continua. Constitución, parámetros característicos y ensayos básicos. Aplicaciones y usos.",
+        "Funcionamiento, conexionado y rendimiento energético de las máquinas rotativas de corriente alterna: alternadores, motores síncronos y asíncronos. Constitución, parámetros característicos y ensayos básicos. Aplicaciones y usos.",
+        "Generación, transporte y distribución de la energía eléctrica.",
+        "Instalaciones eléctricas domésticas. Elementos y materiales. Consumo y eficiencia energética. Análisis de riesgos eléctricos y medidas de seguridad en este tipo de instalaciones.",
+        "Plantas de generación eléctrica convencional y renovable e infraestructuras eléctricas. Panorama mundial, nacional y andaluz. Instalaciones de autoconsumo eléctrico."
+      ],
+      "codigos_items": [
+        "ELTR.2.C.1",
+        "ELTR.2.C.2",
+        "ELTR.2.C.3",
+        "ELTR.2.C.4",
+        "ELTR.2.C.5",
+        "ELTR.2.C.6"
+      ]
+    }
+  ],
+  "comunidad": "andalucia",
+  "idioma": "es"
+}

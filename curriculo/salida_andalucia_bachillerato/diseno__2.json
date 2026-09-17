@@ -1,0 +1,238 @@
+{
+  "materia_oficial": "Diseño",
+  "materia": "Diseño",
+  "etapa": "Bachillerato",
+  "ciclo": "2º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Identificar los fundamentos del diseño a partir del análisis crítico de diversos productos de diseño bidimensional y tridimensional, para profundizar en la comprensión tanto de la complejidad de los procesos y herramientas que intervienen, como de la dimensión simbólica y semántica de sus lenguajes.",
+      "descriptores": [
+        "CC1",
+        "CCEC2"
+      ]
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Reflexionar sobre los orígenes, los principios y las funciones del diseño, comparando y analizando producciones de diferentes épocas, estilos y ámbitos de aplicación, para valorar de manera crítica su impacto medioambiental, social y cultural.",
+      "descriptores": [
+        "CCEC1"
+      ]
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Analizar, de manera crítica y rigurosa, distintas configuraciones formales, compositivas y estructurales presentes en el diseño de diferentes productos, identificando sus elementos plásticos, estéticos, funcionales y comunicativos, para enriquecer sus propias producciones y conformarse una opinión informada sobre el impacto de la disciplina en la inclusión, la sostenibilidad y el consumo responsable.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Planificar proyectos de diseño individuales y colectivos, seleccionando con criterio las herramientas y recursos necesarios, para proponer y analizar críticamente soluciones creativas en respuesta a necesidades propias y ajenas.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Desarrollar propuestas personales e imaginativas a partir de ideas o productos preexistentes, considerando la propiedad intelectual, para responder con creatividad a necesidades propias y ajenas y potenciar la autoestima y el crecimiento personal.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Crear productos de diseño, respondiendo con creatividad a necesidades concretas, incluidas las del diseño inclusivo y las relativas a la sostenibilidad y cuidando la corrección técnica, la coherencia y el rigor de la factura del producto, para potenciar una actitud crítica y responsable que favorezca el desarrollo personal, académico o profesional en el campo del diseño.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Reconocer la relación entre las formas y las funciones en objetos de diseño bidimensionales o tridimensionales, percibiéndolos como productos susceptibles de transformaciones y mejoras."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Explicar en los objetos de diseño las dimensiones simbólicas y semánticas propias de su lenguaje, identificando sus elementos sintácticos y constitutivos con actitud receptiva y respetuosa."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Identificar las características fundamentales de los principales movimientos, corrientes, escuelas y teóricos relacionados con el diseño, comparando productos de diseño de contextos geográficos, históricos y sociales diversos, y reflexionando de manera crítica sobre las aportaciones de las mujeres y de las culturas no occidentales."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Analizar de manera crítica las diferentes soluciones de diseño vinculadas a un mismo problema, reflexionando sobre su impacto en el entorno y estableciendo argumentos que promuevan una conciencia comprometida con el medio ambiente y con el diseño sostenible."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Reconocer las estructuras formales, compositivas y estructurales en objetos y productos de diferentes ámbitos del diseño, analizando los procesos y métodos utilizados para desarrollarlos, así como las finalidades funcionales y comunicativas de las que parten y su impacto en aspectos tales como la inclusión, la sostenibilidad y el consumo responsable."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Analizar las relaciones compositivas en distintos productos de diseño, identificando los elementos básicos del lenguaje visual y explicando su impacto en aspectos como la inclusión, la sostenibilidad y el consumo responsable."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Planificar adecuadamente proyectos de diseño individuales o colectivos, estableciendo objetivos en función del impacto de comunicación buscado, programando las distintas fases del plan de desarrollo, seleccionando con criterio las herramientas y recursos y priorizando la sostenibilidad."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Participar activamente en la organización adecuada de los equipos de trabajo de los proyectos de diseño colaborativo, identificando las habilidades requeridas y repartiendo y asumiendo las tareas con criterio."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Evaluar las propuestas de planificación propias y ajenas de manera crítica y argumentada, analizando su adecuación al impacto de comunicación buscado."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Proyectar soluciones de diseño innovadoras en respuesta a necesidades personales o de expresión propias, a partir de ideas o productos preexistentes."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Evaluar críticamente las propuestas de diseño personales, valorando su coherencia y adecuación y considerando el respeto a la propiedad intelectual, tanto a la ajena como a la propia."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Realizar proyectos elementales de diseño gráfico, diseño industrial o diseño de espacios habitables, de manera individual y colectiva, aplicando soluciones creativas en la elaboración de un producto innovador, y teniendo en cuenta sus implicaciones sociales, económicas y de transformación, así como los aspectos relacionados con la propiedad intelectual."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Evaluar, de manera crítica y argumentada, trabajos de diseño propios y ajenos, valorando tanto la selección coherente y adecuada de los recursos técnicos, como el rigor y la corrección en la aplicación de las técnicas de ejecución, desarrollo y presentación del producto, además de su grado de adecuación al impacto de comunicación buscado y al respeto a la propiedad intelectual."
+    },
+    {
+      "codigo": "6.3",
+      "competencia": "6",
+      "descripcion": "Identificar las posibilidades de intervención del diseño inclusivo en diferentes ámbitos de la actividad humana, poniendo en valor los proyectos innovadores y transformadores de la sociedad."
+    },
+    {
+      "codigo": "6.4",
+      "competencia": "6",
+      "descripcion": "Realizar colectivamente un proyecto de diseño inclusivo, priorizando su adecuación a una o varias diversidades funcionales concretas, utilizando de manera creativa las configuraciones formales y argumentando las decisiones tomadas."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Concepto, historia y campos del diseño",
+      "titulo": "Concepto, historia y campos del diseño",
+      "items": [
+        "El Diseño, sus clasificaciones y campos de aplicación. Diseño gráfico: editorial, tipográfico, publicitario, identidad corporativa, señalética. Diseño industrial: de producto, embalajes o packaging, mobiliario, moda, textil. Diseño ambiental: interiorismo, escaparatismo, escenografía.",
+        "Evolución histórica del Diseño. Concepto y teorías del diseño. Artesanía e industrialización: objeto artesanal, artístico e industrial, diferencias.",
+        "Tendencias, periodos y principales escuelas y figuras más representativas en el campo del diseño. La presencia de la mujer en el ámbito del diseño. Las mujeres de la Bauhaus: Otti Berger, Anni Albers, Marianne Brandt, Alma Buscher, Lilly Reich, Charlotte Perriand, Greta Grossman, Florence Knoll, Gae Aulenti y Andrée Putman. Jacqueline",
+        "Diseño, ecología y sostenibilidad. Procedencia de los materiales. Procesos de producción y distribución sostenibles. El Diseño en la sociedad de consumo. La obsolescencia programada. Pertinencia del diseño. Aportaciones del ecodiseño a la solución de los retos socioambientales.",
+        "Diseño centrado en el usuario y diseño inclusivo.",
+        "La diversidad como riqueza patrimonial.",
+        "Aportación de las culturas no occidentales al canon del diseño universal. La apropiación cultural.",
+        "Fundamentos de la propiedad intelectual. La protección de la creatividad. Patentes y marcas."
+      ],
+      "codigos_items": [
+        "DISE.2.A.1",
+        "DISE.2.A.2",
+        "DISE.2.A.3",
+        "DISE.2.A.4",
+        "DISE.2.A.5",
+        "DISE.2.A.6",
+        "DISE.2.A.7",
+        "DISE.2.A.8"
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. El diseño: configuración formal y metodología",
+      "titulo": "El diseño: configuración formal y metodología",
+      "items": [
+        "Diseño y función.",
+        "El lenguaje visual. Elementos básicos: punto, línea, plano, color, forma y textura. Teoría de la percepción. Leyes de la Gestalt.",
+        "Sintaxis de la imagen bidimensional y tridimensional: Estructura y composición. Proporción, proporción áurea, escala. Peso visual, equilibrio, centro de interés, recorrido visual, líneas de fuerza, ritmo.",
+        "Ordenación y composición modular. Módulo, submódulo, redes, teselas, formas moduladas, módulos pararregulares, movimientos en el plano, patrones de repetición. Aplicaciones a telas, suelos, paredes. Historia.",
+        "Dimensión semántica del diseño. Signo, Símbolo. El color. Propiedades. Valor simbólico y psicológico o social. Color e impresión.",
+        "Proceso y fases del diseño. Brief, establecimiento de objetivos, planificación, documentación, creatividad, bocetos, croquis, arte final, memoria. La metodología proyectual.",
+        "Procesos creativos en un proyecto de diseño.",
+        "Estrategias de organización de los equipos de trabajo."
+      ],
+      "codigos_items": [
+        "DISE.2.B.1",
+        "DISE.2.B.2",
+        "DISE.2.B.3",
+        "DISE.2.B.4",
+        "DISE.2.B.5",
+        "DISE.2.B.6",
+        "DISE.2.B.7",
+        "DISE.2.B.8"
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Diseño gráfico",
+      "titulo": "Diseño gráfico",
+      "items": [
+        "Funciones comunicativas del diseño gráfico.",
+        "La tipografía, principales familias, legibilidad, propiedades y usos en el diseño. Programas de creación de tipografías.",
+        "El diseño gráfico y la composición.",
+        "El diseño gráfico con y sin retícula. Procesos y técnicas de diseño gráfico. Organización de la información.",
+        "La imagen de marca: el diseño corporativo. Historia. Programas de dibujo vectorial.",
+        "Diseño editorial. La maquetación y composición de páginas. Términos básicos. Tipos de impresos. Impresión.",
+        "Diseño digital: diseño interactivo, diseño en movimiento y otras aplicaciones digitales.",
+        "El diseño publicitario. Proyectos de comunicación gráfica. El cartel. Historia.",
+        "La señalética y sus aplicaciones. El pictograma. La retícula. Color. Soportes."
+      ],
+      "codigos_items": [
+        "DISE.2.C.1",
+        "DISE.2.C.2",
+        "DISE.2.C.3",
+        "DISE.2.C.4",
+        "DISE.2.C.5",
+        "DISE.2.C.6",
+        "DISE.2.C.7",
+        "DISE.2.C.8",
+        "DISE.2.C.9"
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Diseño tridimensional",
+      "titulo": "Diseño tridimensional",
+      "items": [
+        "Diseño de producto. Tipologías de objetos en el diseño volumétrico: de uso individual, público o profesional.",
+        "Sistemas de representación y estructuras compositivas aplicados al diseño de producto: diédrico, axonométrico y cónico.",
+        "Antropometría, ergonomía y biónica aplicadas al diseño.",
+        "Diseño de producto y diversidad funcional. Diseño flexible, creación de opciones.",
+        "Materiales, texturas y colores. Sistemas de producción y su repercusión en el diseño. Historia y evolución de los materiales. Sostenibilidad, reciclaje, reutilización.",
+        "El packaging: del diseño gráfico al diseño del contenedor del producto tridimensional. Iniciación a su desarrollo y técnicas de producción. Iniciación a los troqueles, desarrollos y acotación.",
+        "Diseño de moda: diseño de vestuario, diseño textil.",
+        "Diseño en la artesanía: joyería, cerámica y otros materiales.",
+        "Diseño de espacios. Organización del espacio habitable, público o privado. Distribución de espacios y recorridos. Escenografía.",
+        "Elementos constructivos. Principios de iluminación. Diseño de espacios interiores.",
+        "Percepción psicológica del espacio.",
+        "El diseño inclusivo de espacios."
+      ],
+      "codigos_items": [
+        "DISE.2.D.1",
+        "DISE.2.D.2",
+        "DISE.2.D.3",
+        "DISE.2.D.4",
+        "DISE.2.D.5",
+        "DISE.2.D.6",
+        "DISE.2.D.7",
+        "DISE.2.D.8",
+        "DISE.2.D.9",
+        "DISE.2.D.10",
+        "DISE.2.D.11",
+        "DISE.2.D.12"
+      ]
+    }
+  ],
+  "comunidad": "andalucia",
+  "idioma": "es"
+}
