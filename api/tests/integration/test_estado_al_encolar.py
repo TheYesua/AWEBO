@@ -185,3 +185,74 @@ class TestSiEncolarFalla:
             client.post(f"/api/situaciones/{sa_id}/generar")
 
         assert client.post(f"/api/situaciones/{sa_id}/generar").status_code == 202
+
+
+class TestLaSdaGuardaLaTareaQueLaGenera:
+    """EL SEGUNDO SÍNTOMA DEL MISMO SITIO, visto el 17/09/2026.
+
+    El estado ya pasa a «generando» al encolar —eso es lo que arregla el resto
+    de este fichero— así que la barra **aparece**. Pero se quedaba en «0 / 6»
+    con la sección en «—» y una animación de un lado a otro, y saltaba a
+    terminado de golpe.
+
+    No era un fallo nuevo sino una limitación escrita en el propio código: el
+    detalle tiene dos sondeos. Uno pide `/api/tasks/<id>` y sí avanza sección a
+    sección; el otro solo mira el estado de la SdA, y es el que se usaba al
+    abrir el detalle con una generación ya en curso — que es exactamente lo que
+    pasa al crear con la casilla marcada, porque el formulario encola y
+    redirige.
+
+    **La diferencia entre los dos es tener el identificador de la tarea**, que
+    hasta ahora solo existía en la respuesta del POST. Quien encola no siempre
+    es quien mira.
+    """
+
+    def test_al_crear_con_la_casilla(self, client, db, _sin_worker):
+        _registrar_y_login(client)
+        sa_id = client.post(
+            "/api/situaciones", json={**SA_BASE, "generar": True}
+        ).get_json()["id_situacion"]
+
+        detalle = client.get(f"/api/situaciones/{sa_id}").get_json()
+
+        assert detalle["id_tarea"] == "tarea-de-prueba"
+
+    def test_al_pulsar_generar(self, client, db, _sin_worker):
+        _registrar_y_login(client)
+        sa_id = client.post(
+            "/api/situaciones", json=SA_BASE
+        ).get_json()["id_situacion"]
+        client.post(f"/api/situaciones/{sa_id}/generar")
+
+        detalle = client.get(f"/api/situaciones/{sa_id}").get_json()
+
+        assert detalle["id_tarea"] == "tarea-de-prueba"
+
+    def test_sin_generar_no_hay_tarea(self, client, db, _sin_worker):
+        """El contrapunto. Un identificador en una SdA que nadie está generando
+        mandaría al detalle a sondear una tarea que no existe."""
+        _registrar_y_login(client)
+        sa_id = client.post(
+            "/api/situaciones", json=SA_BASE
+        ).get_json()["id_situacion"]
+
+        assert client.get(f"/api/situaciones/{sa_id}").get_json()["id_tarea"] is None
+
+    def test_si_encolar_falla_no_queda_identificador(self, client, db):
+        """Va en su propio commit **después** de encolar, no antes: si encolar
+        revienta, la SdA vuelve a borrador y no puede quedarse apuntando a una
+        tarea que nunca llegó a existir."""
+        _registrar_y_login(client)
+        sa_id = client.post(
+            "/api/situaciones", json=SA_BASE
+        ).get_json()["id_situacion"]
+
+        # No se propaga: la aplicación tiene manejador para lo no controlado
+        # y sale como 500. Está contado en `TestSiEncolarFalla`, que se comió
+        # el mismo error.
+        with patch("app.api.situaciones.encolar", side_effect=RuntimeError("sin broker")):
+            assert client.post(f"/api/situaciones/{sa_id}/generar").status_code == 500
+
+        detalle = client.get(f"/api/situaciones/{sa_id}").get_json()
+        assert detalle["estado"] == "borrador"
+        assert detalle["id_tarea"] is None

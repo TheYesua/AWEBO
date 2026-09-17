@@ -234,6 +234,25 @@ class SituacionAprendizaje(db.Model):
     estado: Mapped[str] = mapped_column(
         String(20), nullable=False, default=BORRADOR, index=True
     )
+    #: Identificador de la tarea Celery que está generando esta SdA.
+    #:
+    #: POR QUÉ SE GUARDA, SI YA LO DEVUELVE EL POST
+    #: ---------------------------------------------
+    #: Porque el POST lo devuelve **a quien lo lanzó**, y esa no es siempre la
+    #: pantalla que mira el progreso. Al crear una SdA con la casilla de IA
+    #: marcada, el formulario encola y redirige al detalle: el detalle nunca ve
+    #: ese identificador. Lo mismo al abrir una SdA que está generando desde el
+    #: listado, o al recargar la página.
+    #:
+    #: Sin él, el detalle solo podía sondear **el estado de la SdA** —que sí es
+    #: recuperable— y la barra se quedaba en indeterminado con la sección en
+    #: «—» y el contador en «0 / 6» hasta que terminaba de golpe. El detalle
+    #: por secciones vive en la tarea, y a la tarea solo se llega por su id.
+    #:
+    #: Es transitorio y por eso es nullable: se escribe al encolar y deja de
+    #: significar nada cuando el estado sale de `generando`. No se limpia al
+    #: terminar a propósito, que así queda el rastro de qué tarea la generó.
+    id_tarea: Mapped[str | None] = mapped_column(String(64), nullable=True)
 
     # Atención a la diversidad (adaptaciones curriculares)
     id_situacion_origen: Mapped[int | None] = mapped_column(

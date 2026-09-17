@@ -429,11 +429,29 @@ def _lanzar_generacion(sa, tarea, *args):
     sa.estado = SituacionAprendizaje.GENERANDO
     db.session.commit()
     try:
-        return encolar(tarea, *args)
+        async_result = encolar(tarea, *args)
     except Exception:
         sa.estado = estado_previo
         db.session.commit()
         raise
+    # EL IDENTIFICADOR SE GUARDA, Y NO SOLO SE DEVUELVE
+    # --------------------------------------------------
+    # Se devuelve a quien llamó, que es quien puede sondear `/api/tasks/<id>`
+    # y ver por qué sección va. Pero **quien llama no siempre es quien mira**:
+    # al crear una SdA con la casilla de IA marcada, el formulario encola y
+    # redirige al detalle, y el detalle no ha visto esa respuesta. Igual al
+    # abrir desde el listado una que está generando, o al recargar.
+    #
+    # Sin esto, esas pantallas solo podían sondear el estado de la SdA y la
+    # barra se quedaba en indeterminado, con la sección en «—» y el contador
+    # en «0 / 6», hasta que terminaba de golpe.
+    #
+    # Va después de encolar y en su propio commit: si encolar falla, arriba se
+    # devuelve el estado anterior y aquí no se llega, así que no queda un
+    # identificador de una tarea que no existe.
+    sa.id_tarea = async_result.id
+    db.session.commit()
+    return async_result
 
 
 def _exigir_curriculo(sa) -> None:

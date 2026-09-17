@@ -15,9 +15,10 @@ con sus optativas propias del Anexo III),
 **Galicia** (Decreto 156/2022) y el **País Vasco** (Decreto 77/2023): cada
 docente elige su provincia y trabaja contra
 la normativa que se le aplica, no contra la estatal. Está además el currículo
-de **Bachillerato** de dos de ellas: País Vasco (Decreto 76/2023) y Cataluña
+de **Bachillerato** de tres de ellas: País Vasco (Decreto 76/2023), Cataluña
 (Decret 171/2022, con la modificación del Decret 103/2026 que se aplica desde
-el curso 2026-2027). Ver [`curriculo/README.md`](curriculo/README.md).
+el curso 2026-2027) y Andalucía (la otra Orden de 30 de mayo de 2023, la de
+Bachillerato). Ver [`curriculo/README.md`](curriculo/README.md).
 
 > **Origen**: este proyecto nace del Trabajo de Fin de Grado en Ingeniería
 > Informática (Universidad de Granada) de Jesús José Cantero López. AWEBO es su
@@ -143,6 +144,7 @@ Despliegue mediante Docker Compose. Seis servicios más dos de desarrollo:
    docker compose exec api flask seed curriculo --directorio /curriculo/salida_cataluna
    docker compose exec api flask seed curriculo --directorio /curriculo/salida_cataluna_batxillerat
    docker compose exec api flask seed curriculo --directorio /curriculo/salida_andalucia
+   docker compose exec api flask seed curriculo --directorio /curriculo/salida_andalucia_bachillerato
    docker compose exec api flask seed curriculo --directorio /curriculo/salida_galicia
    docker compose exec api flask seed curriculo --directorio /curriculo/salida_pais_vasco
    docker compose exec api flask seed curriculo --directorio /curriculo/salida_pais_vasco_bachillerato
@@ -274,7 +276,8 @@ AWEBO/
 │   ├── fuentes/                     # una carpeta por comunidad (PDF no versionados)
 │   ├── salida/                      # JSON precompilado: estatal y Ceuta
 │   ├── salida_cataluna/             # JSON precompilado: Decret 175/2022
-│   └── salida_andalucia/            # JSON precompilado: BOJA 104/2023
+│   ├── salida_andalucia/            # JSON precompilado: BOJA 104/2023 (ESO)
+│   └── salida_andalucia_bachillerato/ # la otra Orden del mismo boletín
 ├── voces/                           # modelos aHoTTS (no versionados: decenas de MB)
 └── api/
     ├── Dockerfile
@@ -369,7 +372,7 @@ estructurado que nunca llegó a funcionar, `/health` informando del proveedor
 equivocado, dos incumplimientos WCAG 2.1 en el tema claro y los reintentos
 sobre errores `4xx` de la API de OpenAI.
 
-**1276 tests** cubren todo lo anterior, en la batería que corre en cada push.
+**1301 tests** cubren todo lo anterior, en la batería que corre en cada push.
 La cifra la comprueba un test: si alguien añade una tanda y no la actualiza
 aquí, falla.
 

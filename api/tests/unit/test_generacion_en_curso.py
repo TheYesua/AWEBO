@@ -34,9 +34,39 @@ class TestSeReanudaElSondeo:
     def test_al_cargar_una_sda_generando_se_sigue(self):
         html = DETALLE.read_text(encoding="utf-8")
 
-        assert re.search(
-            r"sa\.estado === 'generando'.*seguirGeneracionEnCurso\(\)", html
-        ), "al abrir una SdA que ya genera, nadie la sigue"
+        assert re.search(r"sa\.estado === 'generando'", html), (
+            "al abrir una SdA que ya genera, nadie la sigue"
+        )
+
+    def test_con_identificador_de_tarea_se_sondea_la_tarea(self):
+        """**Y no el estado, que es lo que se hacía antes.**
+
+        Los dos sondeos dicen la verdad, pero solo uno dice por qué sección va.
+        El de la tarea pide `/api/tasks/<id>` y mueve el contador; el del estado
+        deja la barra en indeterminado con la sección en «—» y el contador en
+        «0 / 6» hasta que termina de golpe.
+
+        Hasta el 17/09/2026 siempre se caía en el segundo al abrir el detalle,
+        porque el identificador solo existía en la respuesta del POST y **quien
+        encola no siempre es quien mira**: al crear con la casilla de IA
+        marcada, el formulario encola y redirige. Ahora la SdA lo guarda.
+        """
+        html = DETALLE.read_text(encoding="utf-8")
+        i = html.index("sa.estado === 'generando'")
+        cuerpo = html[i:i + 700]
+
+        assert "sa.id_tarea" in cuerpo
+        assert "pollear(sa.id_tarea)" in cuerpo
+
+    def test_sin_identificador_queda_el_sondeo_por_estado(self):
+        """El respaldo no sobra: las SdA que ya estaban generando antes de la
+        migración no tienen identificador, y el backend de Celery caduca sus
+        resultados, así que una generación muy larga puede quedarse sin meta."""
+        html = DETALLE.read_text(encoding="utf-8")
+        i = html.index("sa.estado === 'generando'")
+        cuerpo = html[i:i + 700]
+
+        assert "seguirGeneracionEnCurso()" in cuerpo
 
     def test_no_se_abren_dos_sondeos_a_la_vez(self):
         """`cargar()` se llama desde varios sitios —al guardar, al restaurar una

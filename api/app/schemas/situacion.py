@@ -191,6 +191,11 @@ class SituacionOut(BaseModel):
     materiales_contexto: str | None
     contenido: dict[str, Any]
     estado: EstadoLiteral
+    #: La tarea que la está generando, para que el detalle pueda sondear su
+    #: progreso aunque no haya sido él quien la encoló. Ver el campo del mismo
+    #: nombre en el modelo, que cuenta por qué no basta con devolverlo en el
+    #: POST. Es `None` en todo lo que no esté generando.
+    id_tarea: str | None
 
     id_situacion_origen: int | None
     tipo_adaptacion: TipoAdaptacionLiteral | None

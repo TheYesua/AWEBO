@@ -519,12 +519,31 @@ async function cargar() {
      y ahí se quedaba: sin barra, sin avanzar, y sin más salida que refrescar
      a mano hasta acertar.
 
-     Y no se puede reanudar `pollear`: necesita el `task_id`, que solo existe
-     en la respuesta del POST que lanzó la tarea y no se guarda en ninguna
-     parte. Por eso aquí se sondea **el estado de la SdA**, que sí es
-     recuperable. Se pierde el detalle de «sección 3 de 6» —eso vive en la
-     tarea— y se gana que la página deje de mentir. */
-  if (sa.estado === 'generando' && !sondeandoEstado) seguirGeneracionEnCurso();
+     Desde el 17/09 la SdA **guarda el identificador de su tarea** (`id_tarea`),
+     así que en el caso normal sí se puede reanudar `pollear` y la barra avanza
+     sección a sección. Antes no se guardaba en ninguna parte y aquí solo se
+     podía sondear el estado de la SdA: la barra se quedaba en indeterminado,
+     con la sección en «—» y el contador en «0 / 6» hasta que terminaba de
+     golpe. Es el camino por el que pasa quien marca la casilla de IA al crear,
+     que es el más común de los tres.
+
+     El sondeo por estado se queda como respaldo y no sobra: las SdA que ya
+     estaban generando antes de esta migración no tienen `id_tarea`, y el
+     backend de Celery caduca los resultados, así que una generación muy larga
+     puede perder su meta y dejar de dar progreso. En los dos casos la página
+     sigue diciendo la verdad, solo que sin el detalle por secciones. */
+  if (sa.estado === 'generando' && !sondeandoEstado) {
+    if (sa.id_tarea) {
+      /* La misma bandera que usa el sondeo por estado, y por la misma razón:
+         `pollear` acaba llamando a `cargar`, y sin ella cada vuelta dejaría
+         otro bucle de sondeo corriendo en paralelo. */
+      sondeandoEstado = true;
+      document.getElementById('gen-progreso').hidden = false;
+      pollear(sa.id_tarea).finally(() => { sondeandoEstado = false; });
+    } else {
+      seguirGeneracionEnCurso();
+    }
+  }
   // Para que el render de "atención a la diversidad" sepa qué bloques
   // ocultar cuando la SA es una adaptación curricular.
   //
