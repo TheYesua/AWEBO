@@ -145,6 +145,34 @@ eso no es una pérdida del 11 %: es que las repetidas no se cuentan dos veces.
 Comprobado fichero a fichero —cuántos OBX y CA hay en cada PDF frente a cuántos
 se extraen de él—, **0 de 35 pierden nada**. Ese es el contraste que vale.
 
+### Y desde el 17/09 lo comprueba un test, no una tanda a mano
+
+Eso de arriba se hizo a mano en agosto y se quedó sin automatizar, y en la hoja
+de ruta figuraba como cabo abierto: «los criterios gallegos no empiezan por
+código en línea propia, hace falta otro anclaje». **El anclaje estaba delante**:
+el código sí está, solo que no al principio de la línea. Buscando
+`\bCA\d+\.\d+\b` sin exigirle posición sale el conjunto que el PDF promete.
+
+Lo que comprueban ahora los cinco tests de `TestCadaPdfContraLoQueSeExtraeDeEl`:
+
+| Qué | Resultado |
+|---|---|
+| Códigos `CA` del PDF que no se extraen | **0** de 931 |
+| Códigos extraídos que el PDF no tiene | **0** |
+| Criterios que no se encuentran de una pieza en su PDF | **0** de 1776 |
+| Contidos que no se encuentran de una pieza | **0** de 5312 |
+| Contido más largo | 778 caracteres, y es del decreto |
+
+El contraste de «una pieza» es el que destapó los 122 criterios mutilados de
+Andalucía. Allí hizo falta además una segunda linealización por columnas —el
+BOJA maqueta en tablas de cinco y el orden de lectura entrelaza las celdas—;
+**aquí no hace falta**, medido: con la linealización por líneas sola ya salen
+todos de una pieza, porque la Guía usa tablas de dos columnas anchas.
+
+Y el fallo gordo de Andalucía —el último saber de cada materia tragándose la
+introducción de la siguiente— **aquí no puede pasar**, y no por suerte: la Guía
+da un PDF por materia, así que no hay materia siguiente.
+
 ## Materias (35)
 
 De la tabla de la Guía LOMLOE, con los cursos que allí figuran:
