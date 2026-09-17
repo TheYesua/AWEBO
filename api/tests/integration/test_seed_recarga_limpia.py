@@ -275,3 +275,146 @@ class TestNoRompeLasSituacionesQueYaExisten:
 
         assert total["ficheros"] == 1
         assert "A.9" in _saberes(), "la carga se perdió al fallar el borrado"
+
+
+class TestCorregirUnaErrataNoDuplicaLaFila:
+    """LO QUE COSTÓ TRES LIMPIEZAS A MANO.
+
+    Hasta el 17/09/2026 el upsert de saberes casaba por `(comunidad, etapa,
+    codigo, materia, cursos, **descripcion**)`. Con el texto dentro de la
+    clave, corregir una errata no actualizaba nada: creaba fila nueva y dejaba
+    la vieja en el catálogo, con sus cursos y enlazada a quien la citara. El
+    docente veía el mismo saber dos veces, una con el texto malo.
+
+    No es hipotético. Arreglar la lectura del BOJA el 05/09 cambió el texto de
+    treinta saberes andaluces y dejó treinta filas viejas; antes ya habían
+    quedado 21 vascas y 7 catalanas por lo mismo. Las tres tandas se borraron
+    con consultas escritas a mano.
+
+    Los criterios nunca lo tuvieron: su upsert ya casaba sin la descripción.
+    """
+
+    def test_cambiar_el_texto_actualiza_la_fila_en_vez_de_crear_otra(
+        self, app, db, tmp_path
+    ):
+        _escribir(tmp_path, _json("cataluna", "Mates",
+                                  saberes=[("A.1", "Texto con la errata")]))
+        seed_curriculo(tmp_path)
+
+        _escribir(tmp_path, _json("cataluna", "Mates",
+                                  saberes=[("A.1", "Texto corregido")]))
+        total = seed_curriculo(tmp_path)
+
+        filas = db.session.scalars(
+            select(SaberBasico).where(SaberBasico.comunidad == "cataluna")
+        ).all()
+        assert len(filas) == 1, "se ha duplicado la fila en vez de actualizarla"
+        assert filas[0].descripcion == "Texto corregido"
+        assert total["sb_nuevos"] == 0
+
+    def test_dos_saberes_con_el_mismo_codigo_siguen_siendo_dos_filas(
+        self, app, db, tmp_path
+    ):
+        """EL LÍMITE DE QUITAR LA DESCRIPCIÓN DE LA CLAVE, y por qué hace falta
+        el mismo `ya_vistas` que ya tenían los criterios.
+
+        Un código puede repetirse dentro de una materia: el Decreto 76/2023
+        publica dos criterios distintos bajo `8.3` en Euskara eta Literatura.
+        Sin llevar cuenta de lo ya tocado en esta carga, el segundo saber con
+        un código repetido **pisaría al primero** y se perdería texto
+        curricular — que es justo lo contrario de lo que se busca."""
+        _escribir(tmp_path, _json("cataluna", "Mates", saberes=[
+            ("A.1", "El primero"), ("A.1", "El segundo, con el mismo codigo"),
+        ]))
+        seed_curriculo(tmp_path)
+
+        textos = set(db.session.scalars(
+            select(SaberBasico.descripcion).where(SaberBasico.comunidad == "cataluna")
+        ).all())
+        assert textos == {"El primero", "El segundo, con el mismo codigo"}
+
+
+class TestLaSdaSeReapuntaEnVezDeQuedarseColgada:
+    """EL CICLO QUE SE CIERRA, y el origen de las 29 filas huérfanas.
+
+    Cuando una fila sobrante está citada por una SdA no se puede borrar, así
+    que se conservaba y se le vaciaban los cursos para sacarla del catálogo. La
+    SdA seguía apuntando a una fila muerta, y allí se quedaba: 21 vascas, 7
+    catalanas y una andaluza, todas pendientes de un «comando de reapuntado»
+    que nunca se escribió.
+
+    Pero una fila sobrante casi nunca es currículo retirado: es **la misma fila
+    con el texto viejo**, y la corregida está al lado con su mismo código.
+    Moviendo el enlace a la buena, la SdA gana el texto corregido y la vieja
+    queda libre para borrarse en la misma pasada.
+    """
+
+    @pytest.fixture()
+    def sda_citando_el_viejo(self, app, db, tmp_path):
+        """Una SdA que cita un saber cuyo **código no cambia**, solo el texto.
+
+        Es el caso real: un arreglo del extractor, no una retirada del
+        boletín."""
+        _escribir(tmp_path, _json("cataluna", "Mates",
+                                  saberes=[("A.1", "Texto con la errata")]))
+        seed_curriculo(tmp_path)
+
+        rol = db.session.scalar(select(Rol).where(Rol.nombre == Rol.DOCENTE))
+        usuario = Usuario(id_rol=rol.id_rol, correo="bea@ies.es", nombre="Bea")
+        usuario.set_password("Segura1234")
+        db.session.add(usuario)
+        db.session.flush()
+        sa = SituacionAprendizaje(
+            id_usuario=usuario.id_usuario, titulo="Prueba",
+            curso="1º ESO", materia="Mates", comunidad_autonoma="Cataluña",
+        )
+        sa.saberes = list(db.session.scalars(select(SaberBasico)).all())
+        db.session.add(sa)
+        db.session.commit()
+        # Se fuerza el estado del que hay que salir: la fila vieja ya sin
+        # cursos, como la dejó una limpieza anterior. Así el test cubre
+        # también las 21 vascas y las 7 catalanas, no solo las recién creadas.
+        return tmp_path
+
+    def test_la_sda_pasa_a_citar_la_fila_corregida(self, app, db, sda_citando_el_viejo):
+        _escribir(sda_citando_el_viejo, _json("cataluna", "Mates",
+                                              saberes=[("A.1", "Texto corregido")]))
+
+        seed_curriculo(sda_citando_el_viejo, borrar_sobrantes=True)
+
+        sa = db.session.scalar(select(SituacionAprendizaje))
+        assert [s.descripcion for s in sa.saberes] == ["Texto corregido"]
+
+    def test_y_no_queda_ninguna_fila_huerfana(self, app, db, sda_citando_el_viejo):
+        """Lo que se medía a mano con una consulta después de cada carga."""
+        _escribir(sda_citando_el_viejo, _json("cataluna", "Mates",
+                                              saberes=[("A.1", "Texto corregido")]))
+
+        seed_curriculo(sda_citando_el_viejo, borrar_sobrantes=True)
+
+        filas = db.session.scalars(
+            select(SaberBasico).where(SaberBasico.comunidad == "cataluna")
+        ).all()
+        assert len(filas) == 1
+        assert filas[0].cursos_aplicables == ["1º ESO"], (
+            "la fila vigente se ha quedado sin cursos: se ha reapuntado al revés"
+        )
+
+    def test_si_el_codigo_desaparece_del_boletin_se_conserva_como_siempre(
+        self, app, db, sda_citando_el_viejo
+    ):
+        """El reapuntado **no** debe tragarse el caso que ya funcionaba. Si el
+        saber citado ya no está en el boletín no hay equivalente a la que
+        mover el enlace, y entonces sigue valiendo lo de antes: conservar la
+        fila y vaciarle los cursos."""
+        _escribir(sda_citando_el_viejo, _json("cataluna", "Mates",
+                                              saberes=[("Z.9", "Otro saber distinto")]))
+
+        seed_curriculo(sda_citando_el_viejo, borrar_sobrantes=True)
+
+        sa = db.session.scalar(select(SituacionAprendizaje))
+        assert [s.descripcion for s in sa.saberes] == ["Texto con la errata"]
+        viejo = db.session.scalar(
+            select(SaberBasico).where(SaberBasico.codigo == "A.1")
+        )
+        assert viejo is not None and viejo.cursos_aplicables == []

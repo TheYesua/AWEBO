@@ -192,11 +192,33 @@ def _upsert_saber_item(
     comunidad: str,
     etapa: str,
     idioma: str,
+    ya_vistas: set | None = None,
 ) -> tuple[SaberBasico, bool]:
-    """Upsert por (comunidad, codigo, materia, cursos, descripcion).
+    """Upsert por (comunidad, etapa, codigo, materia, cursos). True si se creó.
 
     Devuelve la fila además del booleano, por lo mismo que `_upsert_criterio`:
     la recarga limpia necesita saber cuáles ha visto, no cuántas.
+
+    LA DESCRIPCIÓN **NO** ESTÁ EN LA CLAVE, Y ANTES SÍ LO ESTABA
+    -------------------------------------------------------------
+    Con el texto dentro de la clave, corregir una errata no actualiza nada:
+    crea fila nueva y deja la vieja, que sigue en el catálogo con sus cursos y
+    enlazada a las SdA que la citaran. El docente ve el mismo saber dos veces,
+    una con el texto malo.
+
+    No es una hipótesis. Arreglar la lectura del BOJA el 05/09/2026 cambió el
+    texto de treinta saberes andaluces y dejó **treinta filas viejas** que hubo
+    que borrar a mano con una consulta; y antes ya habían quedado 21 vascas y 7
+    catalanas por lo mismo. Cada arreglo de extracción traía limpieza detrás, y
+    quedan tres currículos por cargar.
+
+    Los criterios nunca tuvieron este problema porque su upsert ya casaba sin
+    la descripción. Esto es ponerlos a los dos a casar igual, con el mismo
+    mecanismo de `ya_vistas` y por la misma razón: **un código puede repetirse
+    dentro de una materia**. Ver `_upsert_criterio`, donde lo cuenta el caso de
+    los dos `8.3` de Euskara eta Literatura. Sin ello, el segundo saber con un
+    código repetido pisaría al primero y se perdería texto curricular; con
+    ello, va a una fila nueva.
     """
     candidatos = db.session.scalars(
         select(SaberBasico).where(
@@ -204,13 +226,16 @@ def _upsert_saber_item(
             SaberBasico.etapa == etapa,
             SaberBasico.codigo == codigo,
             SaberBasico.materia == materia,
-            SaberBasico.descripcion == descripcion,
         )
     ).all()
     cursos_norm = sorted(cursos)
+    vistas = ya_vistas or set()
     for s in candidatos:
+        if s in vistas:
+            continue
         if sorted(s.cursos_aplicables or []) == cursos_norm:
             s.bloque = bloque
+            s.descripcion = descripcion
             return s, False
     nuevo = SaberBasico(
         codigo=codigo,
@@ -359,6 +384,7 @@ def _procesar_fichero(
                 materia=materia,
                 cursos=cursos,
                 descripcion=item,
+                ya_vistas=vistas["saber"],
             )
             vistas["saber"].add(fila)
             if creado:
@@ -397,6 +423,77 @@ def _tablas_de_curriculo():
         ("competencia", Competencia, Competencia.id_competencia,
          situacion_competencia, "id_competencia"),
     )
+
+
+def _reapuntar_a_la_vigente(modelo, pk, enlace, col_enlace,
+                            sobrantes: set, vistas: set) -> set:
+    """Mueve los enlaces de las filas sobrantes a su equivalente vigente.
+
+    EL PROBLEMA QUE RESUELVE, QUE COSTÓ TRES LIMPIEZAS A MANO
+    ----------------------------------------------------------
+    Una fila «sobrante» casi nunca es currículo que el boletín haya retirado.
+    Es **la misma fila con el texto viejo**, y la corregida está al lado con su
+    mismo código. Hasta ahora se conservaba, se le vaciaban los cursos para
+    sacarla del catálogo, y la SdA que la citaba se quedaba apuntando a una
+    fila muerta: 21 vascas el 02/09, 7 catalanas el 04/09 y 30 andaluzas el
+    05/09, todas borradas después con consultas escritas a mano.
+
+    Reapuntando, la SdA pasa a citar la fila buena —que dice lo mismo, corregido—
+    y la vieja queda libre para borrarse en esta misma pasada. No se pierde
+    ninguna situación y no queda basura.
+
+    LA EQUIVALENTE ES LA ÚNICA VIGENTE CON SU MISMO CÓDIGO
+    -------------------------------------------------------
+    Mismo `(comunidad, etapa, materia, codigo)`, y **vista en esta carga**. Los
+    cursos no entran en la comparación a propósito: las 21 vascas los tenían
+    vacíos precisamente porque una limpieza anterior se los quitó, y exigirlos
+    dejaría fuera justo los casos que hay que arreglar.
+
+    **Solo si hay exactamente una candidata.** Un código puede repetirse dentro
+    de una materia —los dos `8.3` de Euskara eta Literatura—, y ahí no hay forma
+    de saber a cuál de las dos pertenecía el enlace. Con dos o más se deja como
+    estaba, que es el comportamiento de siempre: conservar y avisar.
+    """
+    from sqlalchemy import delete, select as sa_select, update as sa_update
+
+    if not sobrantes or not vistas:
+        return set()
+
+    def por_clave(ids: set) -> dict:
+        filas = db.session.scalars(sa_select(modelo).where(pk.in_(ids))).all()
+        return {f: (f.comunidad, f.etapa, f.materia, f.codigo) for f in filas}
+
+    clave_de_sobrante = por_clave(sobrantes)
+    vigentes: dict[tuple, list] = {}
+    for fila, clave in por_clave(set(vistas)).items():
+        vigentes.setdefault(clave, []).append(fila)
+
+    movidas: set = set()
+    for vieja, clave in clave_de_sobrante.items():
+        candidatas = vigentes.get(clave, [])
+        if len(candidatas) != 1:
+            continue
+        nueva = candidatas[0]
+        id_vieja = getattr(vieja, pk.key)
+        id_nueva = getattr(nueva, pk.key)
+        # Las SdA que ya citan a las dos: el enlace viejo sobra y reapuntarlo
+        # violaría la clave primaria de la tabla intermedia.
+        ambas = set(db.session.scalars(
+            sa_select(enlace.c.id_situacion).where(enlace.c[col_enlace] == id_nueva)
+        ).all())
+        db.session.execute(
+            delete(enlace).where(
+                enlace.c[col_enlace] == id_vieja,
+                enlace.c.id_situacion.in_(ambas or {-1}),
+            )
+        )
+        db.session.execute(
+            sa_update(enlace)
+            .where(enlace.c[col_enlace] == id_vieja)
+            .values(**{col_enlace: id_nueva})
+        )
+        movidas.add(id_vieja)
+    return movidas
 
 
 def _borrar_sobrantes(
@@ -484,6 +581,23 @@ def _borrar_sobrantes(
                     len(con_criterios - enlazadas),
                 )
             enlazadas |= con_criterios
+
+        # ANTES DE CONSERVAR NADA, SE INTENTA REAPUNTAR
+        # ----------------------------------------------
+        # Casi siempre la fila sobrante no es currículo retirado: es **la misma
+        # fila con el texto viejo**, y al lado está la corregida. Mover el
+        # enlace a la buena deja la sobrante libre y se puede borrar sin que
+        # ninguna SdA pierda nada. Ver `_reapuntar_a_la_vigente`.
+        movidas = _reapuntar_a_la_vigente(
+            modelo, pk, enlace, col_enlace, enlazadas, vistas[tipo]
+        )
+        if movidas:
+            logger.info(
+                "%d %s sobrantes tenían su equivalente vigente: se reapuntaron "
+                "las SdA y se pueden borrar.", len(movidas), tipo,
+            )
+            resumen[f"{tipo}_reapuntadas"] = len(movidas)
+        enlazadas -= movidas
 
         libres = sobrantes - enlazadas
 
