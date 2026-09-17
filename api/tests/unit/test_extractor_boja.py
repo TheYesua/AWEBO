@@ -57,6 +57,9 @@ from pathlib import Path
 import pytest
 
 from app.curriculo.extractor_boja import (
+    BACHILLERATO,
+    ESO,
+    ETAPAS,
     _criterios_de_celda,
     _es_tabla_de_criterios,
     _limpiar_titulo,
@@ -67,6 +70,7 @@ from app.curriculo.extractor_boja import (
     bordes_de_columna,
     extraer,
     extraer_saberes,
+    texto_de_saberes,
     rayas_verticales,
     unir,
 )
@@ -207,6 +211,26 @@ class TestPiezasSueltas:
         _, criterios = _criterios_de_celda("1.1. Usar la norma UNE\ny la ISO.", "GEH")
 
         assert criterios[0][1] == "Usar la norma UNE y la ISO."
+
+    def test_la_eso_sigue_numerando_sus_cursos_como_siempre(self):
+        """El refactor de la etapa tocó la línea que escribe el curso de cada
+        bloque. Si esto cambiara, los 60 JSON de Andalucía cambiarían de
+        `cursos_aplicables` y **las SdA ya generadas dejarían de casar**, que
+        es peor que no cargar Bachillerato."""
+        assert [ESO.curso(n) for n in (1, 2, 3, 4)] == [
+            "1º ESO", "2º ESO", "3º ESO", "4º ESO",
+        ]
+
+    def test_bachillerato_tiene_dos_cursos_y_se_llaman_asi(self):
+        """Dos, no cuatro. El curso sale del segundo campo del código de saber
+        —`FIL.1.A.1`— y ese campo no sabe en qué etapa está: si el tramo de
+        páginas apuntara al anexo equivocado saldrían cursos 3.º y 4.º de
+        Bachillerato, que no existen. Por eso la etapa dice cuántos tiene."""
+        assert BACHILLERATO.cursos == 2
+        assert [BACHILLERATO.curso(n) for n in (1, 2)] == [
+            "1º Bachillerato", "2º Bachillerato",
+        ]
+        assert ETAPAS["eso"] is ESO and ETAPAS["bachillerato"] is BACHILLERATO
 
     def test_el_codigo_solo_en_su_renglon_abre_criterio(self):
         """EL FALLO 8. En Matemáticas 1.º caben tres cursos en la misma tabla y
@@ -698,3 +722,119 @@ class TestElAnexoEntero:
                  if _trozos(_norm(cr.descripcion), boletin) > 2]
 
         assert rotos == [], f"{materia} {curso}: {len(rotos)} mutilados, {rotos[:6]}"
+
+
+# ---------------------------------------------------------------------------
+# Bachillerato
+# ---------------------------------------------------------------------------
+
+_FUENTES_BACH = _FUENTES.parent / "andalucia-bachillerato"
+BACH1 = _FUENTES_BACH / "BOJA23-104-00281-9728-01_00284744.pdf"
+BACH2 = _FUENTES_BACH / "BOJA23-104-00297-9728-02_00284744.pdf"
+
+#: El **Anexo II** de la Orden de Bachillerato empieza en la página 35 del
+#: primer PDF y llega a la 155 del segundo; el **Anexo III** ocupa de ahí a la
+#: 258, donde empieza el IV. Mirado en el documento, no supuesto: en la ESO
+#: eran la 49 y la 16, y no hay nada que obligue a que coincidan.
+TRAMOS_BACH = [(BACH1, 35, None), (BACH2, 0, 155), (BACH2, 155, 258)]
+
+#: Solo las primeras páginas del Anexo II. **Las 504 del currículo entero
+#: tardan dos minutos y medio**, y esta batería ya dura doce; lo que hay que
+#: comprobar aquí es que la etapa se lee bien, no volver a auditar el anexo
+#: —eso se hizo al cargarlo y está en el LEEME de la fuente con sus cifras—.
+#:
+#: **El corte va donde empieza una materia, no donde cae el número redondo.**
+#: Con 75 quedaba Ciencias Generales partida por la mitad y el test de «ningún
+#: bloque sale a medias» se ponía rojo por el recorte, no por el extractor. La
+#: 77 es donde empieza Coro y Técnica Vocal, así que las cinco anteriores
+#: entran enteras.
+_HASTA_BACH = 77
+
+
+@pytest.mark.skipif(not BACH1.exists(),
+                    reason=f"no están los PDF de Bachillerato en {_FUENTES_BACH}")
+class TestBachilleratoSaleConSuEtapaYSusCursos:
+    """LA MISMA ORDEN, EL MISMO DÍA Y EL MISMO BOLETÍN QUE LA ESO.
+
+    Son dos disposiciones distintas —9727 y 9728— y hay que no confundirlas,
+    pero están maquetadas igual: el currículo en los Anexos II y III, cinco
+    bloques por materia, el curso dentro del código del saber. Por eso el lector
+    es uno solo y la etapa se parametriza.
+
+    Lo que estos tests fijan es justo la parte que cambia. El contenido ya se
+    auditó al extraerlo, con los mismos cuatro contrastes que la ESO: 1105
+    criterios y **ninguno** roto, 1727 saberes y dos con «Sofwt are», que es una
+    cursiva que el propio boletín exporta con las letras cambiadas y también
+    aparece en Galicia.
+    """
+
+    @pytest.fixture(scope="class")
+    def bloques(self, tmp_path_factory):
+        unido = unir([BACH1], tmp_path_factory.mktemp("bach") / "anexo.pdf",
+                     [(35, _HASTA_BACH)])
+        return extraer(unido, etapa=BACHILLERATO)
+
+    def test_los_cursos_son_de_bachillerato_y_no_de_la_eso(self, bloques):
+        """EL FALLO QUE ESTO EVITA, y es de los que no dan error: el curso sale
+        del segundo campo del código de saber —`FILO.1.A.1`— y ese campo es un
+        número. Sin la etapa, un 1 se convertía en «1º ESO» y el currículo de
+        Bachillerato entraba en el catálogo de la ESO, donde además habría
+        pisado a las materias que se llaman igual."""
+        cursos = {c for b in bloques for c in b.cursos_aplicables}
+
+        assert cursos <= {"1º Bachillerato", "2º Bachillerato"}, sorted(cursos)
+        assert all(b.etapa == "Bachillerato" for b in bloques)
+
+    def test_no_aparece_un_tercer_curso(self, bloques):
+        """Bachillerato tiene dos. Un «3º Bachillerato» en el desplegable
+        significaría que el código viene partido o que el tramo de páginas
+        apunta al anexo de otra etapa, y el docente lo vería antes que
+        nosotros."""
+        assert not any("3º" in c or "4º" in c
+                       for b in bloques for c in b.cursos_aplicables)
+
+    def test_las_materias_son_las_de_bachillerato(self, bloques):
+        """Contraste con el articulado. «Ciencias Generales» es de la modalidad
+        General de segundo (artículo 7.7) y **no existe en la ESO**; «Biología y
+        Geología» es al revés, de la ESO y no de Bachillerato. Que salga la
+        primera y no la segunda es lo que distingue haber leído el PDF correcto
+        de haberse equivocado de Orden, que es fácil: las dos se llaman «Orden
+        de 30 de mayo de 2023» y están en el mismo boletín."""
+        materias = {b.materia_efectiva for b in bloques}
+
+        assert "Ciencias Generales" in materias
+        assert "Biología y Geología" not in materias
+
+    def test_ningun_bloque_sale_a_medias(self, bloques):
+        """Lo mismo que se exige a la ESO: un bloque sin criterios o sin saberes
+        se carga, sale en el desplegable, y al generar una SdA con él la
+        conexión curricular queda vacía."""
+        cojos = [(b.materia_efectiva, b.ciclo) for b in bloques
+                 if not b.competencias or not b.criterios or not b.saberes]
+
+        assert cojos == []
+
+    def test_el_membrete_de_la_pagina_no_entra_como_saber(self):
+        """EL FALLO 12, y solo se ve en esta Orden.
+
+        `find_tables()` detecta el membrete del BOJA como una tabla —logotipo y
+        cabecera van en una banda con líneas, bbox de (0, 39,2) a (595, 111,8)—
+        y su contenido se volcaba entre los saberes: **55 de los 1727** llegaron
+        con «… Arte digital. BOJA BOJA BOJA BOJA Andalucía ju».
+
+        No lo paraba `RX_PIE`, y se intentó: el membrete sale como «BOJA BOJA»,
+        dos palabras en el mismo renglón, y el patrón pide la línea exacta
+        «BOJA». Se descarta por la banda, que es lo que no depende de cómo
+        agrupe las palabras el lector.
+
+        SE PRUEBA CONTRA `texto_de_saberes` Y NO CONTRA UN BLOQUE EXTRAÍDO, y
+        no por comodidad: el caso está en la página 134 del segundo PDF, en
+        mitad del Anexo III, y extraer hasta allí cuesta minuto y medio. La
+        primera versión de este test miraba las primeras páginas del Anexo II
+        y **pasaba también sin el arreglo**, que es no comprobar nada.
+        """
+        lineas = texto_de_saberes(BACH2, 134, 136)
+
+        assert [l for l in lineas if "BOJA" in l] == []
+        # Y el saber de esa página sigue estando: no se ha filtrado de más.
+        assert any("Arte digital" in l for l in lineas), lineas[:5]

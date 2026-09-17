@@ -144,11 +144,66 @@ _ORDINAL_TEXTO = {
     "primer": 1, "primero": 1, "segundo": 2, "tercer": 3, "tercero": 3, "cuarto": 4,
 }
 
-_CURSO = {1: "1º ESO", 2: "2º ESO", 3: "3º ESO", 4: "4º ESO"}
+@dataclass(frozen=True)
+class EtapaBOJA:
+    """Lo que cambia entre las dos Órdenes de 30 de mayo de 2023.
+
+    POR QUÉ UN DATACLASS Y NO UN SEGUNDO EXTRACTOR
+    -----------------------------------------------
+    Es la misma decisión que en `bopv_etapas.py`, y por el mismo motivo: las
+    dos Órdenes **están maquetadas igual**. Salieron el mismo día, en el mismo
+    boletín, de la misma consejería, y las dos ponen el currículo en los Anexos
+    II y III con la misma estructura de cinco bloques por materia. Lo único que
+    cambia es cuántos cursos hay y cómo se llaman.
+
+    Duplicar el lector significaría arreglar dos veces cada irregularidad del
+    BOJA, y de esas ya van once. Las cifras de los fallos 7 a 11 —el borde de
+    columna trece puntos fuera de sitio, el código solo en su renglón, la
+    palabra partida sin guion— salen de la ESO y valen tal cual para
+    Bachillerato, porque el que las provoca es el maquetador, no la etapa.
+
+    EL CURSO SIGUE SALIENDO DEL CÓDIGO DEL SABER
+    ----------------------------------------------
+    `BYG.1.A.1` es Biología y Geología, primer curso. En Bachillerato el mismo
+    campo vale 1 o 2. Por eso aquí solo hace falta el nombre del curso: el
+    número lo pone el boletín, que es la ventaja de Andalucía sobre Cataluña y
+    la razón de que no haga falta una tabla de cursos transcrita a mano.
+    """
+
+    #: Lo que se escribe en el JSON y acaba en la columna `etapa`.
+    nombre: str
+    #: Sufijo de los cursos: «1º ESO», «1º Bachillerato».
+    sufijo_curso: str
+    #: Cuántos cursos tiene. Un código con un número mayor es un error de
+    #: lectura, no una materia de quinto.
+    cursos: int
+
+    def curso(self, n: int) -> str:
+        return f"{n}º {self.sufijo_curso}"
+
+
+ESO = EtapaBOJA(nombre="ESO", sufijo_curso="ESO", cursos=4)
+BACHILLERATO = EtapaBOJA(nombre="Bachillerato", sufijo_curso="Bachillerato", cursos=2)
+
+ETAPAS = {"eso": ESO, "bachillerato": BACHILLERATO}
 
 #: El cuerpo del texto arranca en x≈64,5 y la tabla de criterios en x≈87. Todo
 #: lo que esté a la izquierda de este valor es texto corrido, no celda.
 _MARGEN = 80.0
+
+#: Dónde acaba el membrete de la página. **`find_tables()` lo detecta como una
+#: tabla**: el logotipo «BOJA» y «Boletín Oficial de la Junta de Andalucía» van
+#: en una banda con líneas, y devuelve un `bbox` de (0, 39,2) a (595, 111,8).
+#: Su contenido se volcaba como si fueran saberes, y 55 del Bachillerato
+#: andaluz llegaron con «… Arte digital. BOJA BOJA BOJA BOJA Andalucía ju».
+#:
+#: NO SE FILTRA CON `RX_PIE`, Y SE INTENTÓ: el membrete sale como «BOJA BOJA»
+#: —dos palabras en el mismo renglón— y `RX_PIE` pide la línea exacta «BOJA».
+#: Ajustar el patrón arreglaría este caso y no el siguiente; la banda, sí.
+#:
+#: 120 y no 111,8 porque las tablas de currículo de verdad empiezan en y≈134,
+#: medido en las dos Órdenes. Entre 112 y 134 no hay nada.
+_ALTO_CABECERA = 120.0
 
 #: Encabezados del anexo que tienen el mismo formato que un título de materia
 #: —negrita, centrados, fuera de tabla— y no lo son.
@@ -432,7 +487,8 @@ def texto_de_saberes(pdf: Path, desde: int, hasta: int,
             # «…y la autorreparación. Lengua Castellana y Literatura».
             tope = corte[1] if corte and pno == corte[0] else None
             tablas = [t for t in pagina.find_tables().tables
-                      if tope is None or t.bbox[1] < tope]
+                      if t.bbox[1] >= _ALTO_CABECERA
+                      and (tope is None or t.bbox[1] < tope)]
             cajas = [t.bbox for t in tablas]
             sueltas = [
                 (linea["bbox"][1], "".join(s["text"] for s in linea["spans"]).strip())
@@ -953,13 +1009,27 @@ def filas_por_palabras(pagina, tabla) -> list[list[str | None]]:
                 if not (izq - 1 <= (px0 + px1) / 2 < der):
                     continue
                 renglones.setdefault(round(py0), []).append((px0, texto))
+            # EL PIE SE QUITA AQUÍ, Y NO VALE HACERLO DESPUÉS.
+            #
+            # `texto_de_saberes` ya descarta las líneas que casan con `RX_PIE`,
+            # y aun así 55 saberes del Bachillerato andaluz llegaron con
+            # «… Arte digital. BOJA BOJA BOJA BOJA Andalucía ju». El motivo es
+            # que ahí el filtro mira la **línea entera**: cuando una tabla se
+            # extiende hasta el pie, esta función mete las palabras del pie en
+            # el mismo renglón que las de la celda, y «Arte digital. BOJA» ya no
+            # casa con el patrón.
+            #
+            # Filtrando renglón a renglón y **antes** de pegar nada, el pie es
+            # todavía su propia línea y se va limpio. En la ESO no se notaba
+            # porque allí ninguna tabla llega tan abajo.
+            limpios = [
+                " ".join(t for _, t in sorted(v))
+                for _, v in sorted(renglones.items())
+            ]
+            limpios = [l for l in limpios if l.strip() and not RX_PIE.match(l.strip())]
             celdas.append(
-                _pegar_partidas(
-                    "\n".join(" ".join(t for _, t in sorted(v))
-                              for _, v in sorted(renglones.items())),
-                    vocabulario,
-                )
-                if renglones else None
+                _pegar_partidas("\n".join(limpios), vocabulario)
+                if limpios else None
             )
         filas.append(celdas)
     return filas
@@ -1264,7 +1334,8 @@ def unir(pdfs: list[Path], salida: Path, tramos: list[tuple[int, int | None]]) -
     return salida
 
 
-def extraer(pdf: Path, desde: int = 0, hasta: int | None = None) -> list[MateriaCiclo]:
+def extraer(pdf: Path, desde: int = 0, hasta: int | None = None,
+            etapa: EtapaBOJA = ESO) -> list[MateriaCiclo]:
     """Un `MateriaCiclo` por cada (materia, curso) del anexo."""
     lineas = leer_lineas(pdf, desde, hasta)
     materias = trocear_materias(lineas)
@@ -1342,6 +1413,20 @@ def extraer(pdf: Path, desde: int = 0, hasta: int | None = None) -> list[Materia
             logger.error("%s: ni saberes ni criterios, no se guarda", nombre)
             continue
         for curso in cursos:
+            # UN CURSO QUE LA ETAPA NO TIENE ES UN CÓDIGO MAL LEÍDO.
+            # El curso sale del segundo campo del código de saber, así que un
+            # `BYG.3.A.1` en Bachillerato significa que ese código se ha
+            # partido o que se está leyendo el anexo de la etapa equivocada.
+            # Cargarlo crearía en el catálogo un «3º Bachillerato» que no
+            # existe, y el docente lo vería en el desplegable.
+            if curso > etapa.cursos:
+                logger.error(
+                    "%s: código de curso %d y %s solo tiene %d. Se descarta ese "
+                    "curso: o el código viene partido o el tramo de páginas "
+                    "apunta a otra etapa.",
+                    nombre, curso, etapa.nombre, etapa.cursos,
+                )
+                continue
             if curso not in saberes:
                 logger.warning("%s %sº: criterios sin saberes", nombre, curso)
             if curso not in criterios:
@@ -1349,8 +1434,9 @@ def extraer(pdf: Path, desde: int = 0, hasta: int | None = None) -> list[Materia
             resultados.append(MateriaCiclo(
                 materia_oficial=nombre,
                 materia_corta=nombre,
-                ciclo=_CURSO[curso],
-                cursos_aplicables=[_CURSO[curso]],
+                ciclo=etapa.curso(curso),
+                cursos_aplicables=[etapa.curso(curso)],
+                etapa=etapa.nombre,
                 itinerario=itinerario,
                 competencias=list(competencias),
                 criterios=criterios.get(curso, []),
@@ -1401,6 +1487,11 @@ def main(argv: list[str] | None = None) -> int:
                         "excluido. Se puede repetir: los tramos se concatenan "
                         "en el orden dado.")
     p.add_argument("--salida", type=Path, required=True)
+    p.add_argument("--etapa", choices=sorted(ETAPAS), default="eso",
+                   help="ESO (por defecto) o Bachillerato. Cambia el nombre de "
+                        "los cursos y cuántos se admiten; el tramo de páginas "
+                        "hay que darlo igualmente con --pdf, porque cada Orden "
+                        "pone sus anexos en sitios distintos.")
     p.add_argument("--comunidad", default="andalucia")
     p.add_argument("--idioma", default="es")
     p.add_argument("--verbose", "-v", action="store_true")
@@ -1425,7 +1516,7 @@ def main(argv: list[str] | None = None) -> int:
 
     args.salida.mkdir(parents=True, exist_ok=True)
     unido = unir(pdfs, args.salida / "_anexo_unido.pdf", tramos)
-    todos = extraer(unido)
+    todos = extraer(unido, etapa=ETAPAS[args.etapa])
     unido.unlink(missing_ok=True)
     if not todos:
         logger.error("Sin resultados")

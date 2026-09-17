@@ -99,7 +99,21 @@ POR_DEFECTO = "ceuta"
 #: datos está en el LEEME de las fuentes.
 NORMAS: dict[tuple[str, str], str] = {
     ("ceuta", "ESO"): "Orden EFP/754/2022",
+    # Las dos de Andalucía son **del mismo día y del mismo boletín**, y aun así
+    # son dos Órdenes distintas: BOJA 104 de 02/06/2023, disposiciones 9727
+    # (ESO, CVE 00284752) y 9728 (Bachillerato, CVE 00284744). Es el único caso
+    # de dos normas con el mismo nombre; en Cataluña y el País Vasco los
+    # decretos ya se distinguen por el número.
+    #
+    # LA DISTINCIÓN VA SIN PARÉNTESIS, Y ESO NO ES ESTÉTICA.
+    # El primer intento fue «Orden de 30 de mayo de 2023 (ESO)», y como
+    # `texto_de_procedencia()` envuelve la norma entre paréntesis, al docente le
+    # llegó «Andalucía (Orden de 30 de mayo de 2023 (ESO))». Se vio en el PDF de
+    # una SdA, no aquí: esta tabla son cadenas sueltas y no enseñan dónde acaban
+    # metiéndose. La de la ESO se deja como estaba, que es la que ya citan las
+    # SdA generadas.
     ("andalucia", "ESO"): "Orden de 30 de mayo de 2023",
+    ("andalucia", "Bachillerato"): "Orden de 30 de mayo de 2023 de Bachillerato",
     ("cataluna", "ESO"): "Decret 175/2022",
     ("cataluna", "Bachillerato"): "Decret 171/2022",
     ("galicia", "ESO"): "Decreto 156/2022",
