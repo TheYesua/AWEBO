@@ -10,7 +10,12 @@ desarrolla ningún currículo autonómico pero es del que cuelgan todos.
 
 ```
 estatal/   rd_217_2022.xml            RD 217/2022, enseñanzas mínimas
-ceuta/     orden_efp_754_2022.xml     Orden EFP/754/2022, Ceuta y Melilla
+ceuta/     orden_efp_754_2022.xml     Orden EFP/754/2022, Ceuta y Melilla (ESO)
+ceuta-bachillerato/
+           orden_efp_755_2022.xml     Orden EFP/755/2022, Bachillerato. Hermana
+                                      de la anterior: consecutivas y del mismo
+                                      día. Viene de la API de consolidada, así
+                                      que trae otro envoltorio; ver su LEEME.
 cataluna/  decret_175_2022.xml        Akoma Ntoso consolidado del Portal Jurídic.
                                       Trae el ARTICULADO, no el currículo.
            dogc/                      Boletines completos en PDF. Contienen los
