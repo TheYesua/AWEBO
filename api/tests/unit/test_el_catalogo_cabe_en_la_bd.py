@@ -128,3 +128,27 @@ class TestLosNombresCaben:
             f"el nombre más largo mide {mayor} y la columna admite {tope}: "
             "queda menos del 10 % de margen"
         )
+
+    def test_el_bloque_tambien_tiene_margen(self):
+        """El aviso de arriba solo vigilaba `materia`, y por eso no avisó.
+
+        El tope de `bloque` era 200 y el título más largo del catálogo medía
+        171: el **85 %**, y nadie lo dijo. Aguantó hasta que la Orden EFP/755
+        trajo uno de 390 —las materias literarias del BOE titulan el bloque con
+        la frase entera que introduce sus saberes— y entonces ya no fue un aviso
+        sino una carga que habría abortado a mitad.
+
+        Que un test vigile una columna y no la de al lado no es una decisión:
+        es que se escribió mirando el fallo de aquel día. Ver `f3a8c25e71bd`.
+        """
+        tope = _limite(SaberBasico, "bloque")
+        mayor, cual = 0, ""
+        for f in _ficheros():
+            for b in json.loads(f.read_text(encoding="utf-8")).get("saberes_basicos", []):
+                n = len(b.get("bloque") or "")
+                if n > mayor:
+                    mayor, cual = n, f"{f.parent.name}/{f.name}"
+        assert mayor <= tope * 0.9, (
+            f"el título de bloque más largo mide {mayor} ({cual}) y la columna "
+            f"admite {tope}: queda menos del 10 % de margen"
+        )

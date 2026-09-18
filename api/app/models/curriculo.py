@@ -133,7 +133,12 @@ class SaberBasico(db.Model):
     #: Ver el comentario en `Competencia.etapa`.
     etapa: Mapped[str] = mapped_column(String(20), nullable=False)
     idioma: Mapped[str] = mapped_column(String(5), nullable=False)
-    bloque: Mapped[str] = mapped_column(String(200), nullable=False)
+    #: 1000 y no 200 desde el 18/09: en las materias literarias el BOE no titula
+    #: el bloque con una etiqueta sino con la frase entera que introduce sus
+    #: saberes, y el bloque A de Literatura Dramática mide 390 caracteres. Ver
+    #: la migración `f3a8c25e71bd`, que explica por qué se amplía en vez de
+    #: recortar el texto oficial.
+    bloque: Mapped[str] = mapped_column(String(1000), nullable=False)
     materia: Mapped[str] = mapped_column(String(120), nullable=False)
     cursos_aplicables: Mapped[list[str]] = mapped_column(
         JSONB, nullable=False, default=list
