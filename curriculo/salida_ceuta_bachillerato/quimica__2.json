@@ -1,0 +1,207 @@
+{
+  "materia_oficial": "Química",
+  "materia": "Química",
+  "etapa": "Bachillerato",
+  "ciclo": "Único",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "CE1",
+      "descripcion": "Comprender, describir y aplicar los fundamentos de los procesos químicos más importantes, atendiendo a su base experimental y a los fenómenos que describen, para reconocer el papel relevante de la química en el desarrollo de la sociedad.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE2",
+      "descripcion": "Adoptar los modelos y leyes de la química aceptados como base de estudio de las propiedades de los sistemas materiales, para inferir soluciones generales a los problemas cotidianos relacionados con las aplicaciones prácticas de la química y sus repercusiones en el medioambiente.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE3",
+      "descripcion": "Utilizar con corrección los códigos del lenguaje químico (nomenclatura química, unidades, ecuaciones, etc.), aplicando sus reglas específicas, para emplearlos como base de una comunicación adecuada entre diferentes comunidades científicas y como herramienta fundamental en la investigación de esta ciencia.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE4",
+      "descripcion": "Reconocer la importancia del uso responsable de los productos y procesos químicos, elaborando argumentos informados sobre la influencia positiva que la química tiene sobre la sociedad actual, para contribuir a superar las connotaciones negativas que en multitud de ocasiones se atribuyen al término «químico».",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE5",
+      "descripcion": "Aplicar técnicas de trabajo propias de las ciencias experimentales y el razonamiento lógico-matemático en la resolución de problemas de química y en la interpretación de situaciones relacionadas, valorando la importancia de la cooperación, para poner en valor el papel de la química en una sociedad basada en valores éticos y sostenibles.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE6",
+      "descripcion": "Reconocer y analizar la química como un área de conocimiento multidisciplinar y versátil, poniendo de manifiesto las relaciones con otras ciencias y campos de conocimiento, para realizar a través de ella una aproximación holística al conocimiento científico y global.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "CE1",
+      "descripcion": "Reconocer la importancia de la química y sus conexiones con otras áreas en el desarrollo de la sociedad, el progreso de la ciencia, la tecnología, la economía y el desarrollo sostenible respetuoso con el medioambiente, identificando los avances en el campo de la química que han sido fundamentales en estos aspectos."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "CE1",
+      "descripcion": "Describir los principales procesos químicos que suceden en el entorno y las propiedades de los sistemas materiales a partir de los conocimientos, destrezas y actitudes propios de las distintas ramas de la química."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "CE1",
+      "descripcion": "Reconocer la naturaleza experimental e interdisciplinar de la química y su influencia en la investigación científica y en los ámbitos económico y laboral actuales, considerando los hechos empíricos y sus aplicaciones en otros campos del conocimiento y la actividad humana."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "CE2",
+      "descripcion": "Relacionar los principios de la química con los principales problemas de la actualidad asociados al desarrollo de la ciencia y la tecnología, analizando cómo se comunican a través de los medios de comunicación o son observados en la experiencia cotidiana."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "CE2",
+      "descripcion": "Reconocer y comunicar que las bases de la química constituyen un cuerpo de conocimiento imprescindible en un marco contextual de estudio y discusión de cuestiones significativas en los ámbitos social, económico, político y ético identificando la presencia e influencia de estas bases en dichos ámbitos."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "CE2",
+      "descripcion": "Aplicar de manera informada, coherente y razonada los modelos y leyes de la química, explicando y prediciendo las consecuencias de experimentos, fenómenos naturales, procesos industriales y descubrimientos científicos."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "CE3",
+      "descripcion": "Utilizar correctamente las normas de nomenclatura de la IUPAC como base de un lenguaje universal para la química que permita una comunicación efectiva en toda la comunidad científica, aplicando dichas normas al reconocimiento y escritura de fórmulas y nombres de diferentes especies químicas."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "CE3",
+      "descripcion": "Emplear con rigor herramientas matemáticas para apoyar el desarrollo del pensamiento científico que se alcanza con el estudio de la química, aplicando estas herramientas en la resolución de problemas usando ecuaciones, unidades, operaciones, etc."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "CE3",
+      "descripcion": "Practicar y hacer respetar las normas de seguridad relacionadas con la manipulación de sustancias químicas en el laboratorio y en otros entornos, así como los procedimientos para la correcta gestión y eliminación de los residuos, utilizando correctamente los códigos de comunicación característicos de la química."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "CE4",
+      "descripcion": "Analizar la composición química de los sistemas materiales que se encuentran en el entorno más próximo, en el medio natural y en el entorno industrial y tecnológico, demostrando que sus propiedades, aplicaciones y beneficios están basados en los principios de la química."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "CE4",
+      "descripcion": "Argumentar de manera informada, aplicando las teorías y leyes de la química, que los efectos negativos de determinadas sustancias en el ambiente y en la salud se deben a prácticas negligentes o guiadas por intereses ajenos a la ciencia química en sí."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "CE4",
+      "descripcion": "Explicar, empleando el lenguaje y los términos científicos adecuados, cuáles son los beneficios de los numerosos productos de la tecnología química y cómo su empleo y aplicación han contribuido al progreso de la sociedad."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "CE5",
+      "descripcion": "Reconocer la importante contribución en la química del trabajo colaborativo entre especialistas de diferentes disciplinas científicas poniendo de relieve las conexiones entre las leyes y teorías propias de cada una de ellas."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "CE5",
+      "descripcion": "Reconocer la aportación de la química al desarrollo del pensamiento científico y a la autonomía de pensamiento crítico a través de la puesta en práctica de las metodologías de trabajo propias de las disciplinas científicas."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "CE5",
+      "descripcion": "Resolver problemas relacionados con la química y estudiar situaciones relacionadas con esta ciencia, reconociendo la importancia de la contribución particular de cada miembro del equipo y la diversidad de pensamiento y consolidando habilidades sociales positivas en el seno de equipos de trabajo."
+    },
+    {
+      "codigo": "5.4",
+      "competencia": "CE5",
+      "descripcion": "Representar y visualizar de forma eficiente los conceptos de química que presenten mayores dificultades, utilizando herramientas digitales y recursos variados, incluyendo experiencias de laboratorio real y virtual."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "CE6",
+      "descripcion": "Explicar y razonar los conceptos fundamentales que se encuentran en la base de la química aplicando los conceptos, leyes y teorías de otras disciplinas científicas (especialmente de la física) a través de la experimentación y la indagación."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "CE6",
+      "descripcion": "Deducir las ideas fundamentales de otras disciplinas científicas (por ejemplo, la biología o la tecnología) por medio de la relación entre sus contenidos básicos y las leyes y teorías que son propias de la química."
+    },
+    {
+      "codigo": "6.3",
+      "competencia": "CE6",
+      "descripcion": "Solucionar problemas y cuestiones que son característicos de la química utilizando las herramientas provistas por las matemáticas y la tecnología, reconociendo así la relación entre los fenómenos experimentales y naturales y los conceptos propios de esta disciplina."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Enlace químico y estructura de la materia",
+      "titulo": "Enlace químico y estructura de la materia",
+      "items": [
+        "Los espectros atómicos como evidencia experimental de la necesidad de la revisión del modelo atómico. Relevancia de este fenómeno en el contexto del desarrollo histórico del modelo atómico.",
+        "Interpretación de los espectros de emisión y absorción de los elementos. Relación con la estructura electrónica del átomo.",
+        "2. Principios cuánticos de la estructura atómica.",
+        "Relación entre el fenómeno de los espectros atómicos y la cuantización de la energía. Del modelo de Bohr a los modelos mecano-cuánticos: necesidad de una estructura electrónica en diferentes niveles.",
+        "Principio de incertidumbre de Heisenberg y doble naturaleza onda-corpúsculo del electrón. Naturaleza probabilística del concepto de orbital.",
+        "Números cuánticos. Principios de  aufbau , Hund y Pauli. Estructura electrónica del átomo. Utilización del diagrama de Moeller para escribir la configuración electrónica de los elementos químicos.",
+        "3. Sistema periódico y propiedades de los átomos. Fuerzas entre átomos.",
+        "Naturaleza experimental del origen de la tabla periódica en cuanto al agrupamiento de los elementos según sus propiedades. La teoría atómica actual y su relación con las leyes experimentales observadas.",
+        "Posición de un elemento en la tabla periódica a partir de su configuración electrónica.",
+        "Tendencias periódicas. Aplicación a la predicción de los valores de las propiedades de los elementos de la tabla a partir de su posición en la misma.",
+        "Aplicaciones y riesgos asociados a algunos elementos químicos. Semejanzas en función de su posición en el sistema periódico.",
+        "Enlace químico y fuerzas intermoleculares.",
+        "Tipos de enlace a partir de las características de los elementos individuales que lo forman. Energía implicada en la formación de moléculas, de cristales y de estructuras macroscópicas. Propiedades de las sustancias químicas.",
+        "Modelos de Lewis, RPECV e hibridación de orbitales. Configuración geométrica de compuestos moleculares y las características de los sólidos.",
+        "Ciclo de Born-Haber. Energía intercambiada en la formación de cristales iónicos.",
+        "Modelos de la nube electrónica y la teoría de bandas para explicar las propiedades características de los cristales metálicos.",
+        "Fuerzas intermoleculares a partir de las características del enlace químico y la geometría de las moléculas. Propiedades macroscópicas de compuestos moleculares a partir del análisis de estas fuerzas."
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Reacciones químicas",
+      "titulo": "Reacciones químicas",
+      "items": [
+        "Primer principio de la termodinámica: intercambios de energía entre sistemas a través del calor y del trabajo.",
+        "Las sustancias químicas como fuentes de energía. Ecuaciones termoquímicas. Concepto de entalpía de reacción. Procesos endotérmicos y exotérmicos.",
+        "Balance energético entre productos y reactivos mediante la ley de Hess, a través de la entalpía de formación estándar o de las energías de enlace, para obtener la entalpía de una reacción. Diagramas entálpicos.",
+        "Segundo y tercer principios de la termodinámica. La entropía como magnitud que afecta a la espontaneidad e irreversibilidad de los procesos químicos.",
+        "Cálculo de la energía de Gibbs de las reacciones químicas y espontaneidad de las mismas en función de la temperatura del sistema.",
+        "Teoría de las colisiones como modelo a escala microscópica de las reacciones químicas. Conceptos de velocidad de reacción y energía de activación.",
+        "Influencia de las condiciones de reacción sobre la velocidad de la misma. Aplicaciones prácticas.",
+        "Ley diferencial de la velocidad de una reacción química y determinación de los órdenes de reacción a partir de datos experimentales de velocidad de reacción.",
+        "El equilibrio químico como proceso dinámico: ecuaciones de velocidad y aspectos termodinámicos. Expresión de la constante de equilibrio mediante la ley de acción de masas.",
+        "La constante de equilibrio de reacciones en las que los reactivos se encuentren en diferente estado físico. Relación entre K C  y K P  y producto de solubilidad en equilibrios heterogéneos.",
+        "Principio de Le Châtelier y el cociente de reacción. Evolución de sistemas en equilibrio a partir de la variación de las condiciones de concentración, presión o temperatura del sistema.",
+        "Naturaleza ácida o básica de una sustancia a partir de las teorías de Arrhenius y de Brønsted y Lowry.",
+        "Ácidos y bases fuertes y débiles. Grado de disociación en disolución acuosa.",
+        "pH de disoluciones ácidas y básicas. Expresión de las constantes K a  y K b .",
+        "Concepto de pares ácido-base conjugados. Carácter ácido o básico de disoluciones en las que se produce la hidrólisis de una sal.",
+        "Reacciones entre ácidos y bases. Concepto de neutralización. Volumetrías ácido-base.",
+        "Ácidos y bases relevantes en la vida cotidiana, a nivel industrial y de consumo, con especial incidencia en el proceso de la conservación del medioambiente.",
+        "Estado de oxidación. Especies que se reducen u oxidan en una reacción a partir de la variación de su número de oxidación.",
+        "Método del ion-electrón para ajustar ecuaciones químicas de oxidación-reducción. Cálculos estequiométricos y volumetrías redox.",
+        "Potencial estándar de un par redox. Espontaneidad de procesos químicos y electroquímicos que impliquen a dos pares redox.",
+        "Leyes de Faraday: cantidad de carga eléctrica y las cantidades de sustancia en un proceso electroquímico. Cálculos estequiométricos en cubas electrolíticas.",
+        "Reacciones de oxidación y reducción en la fabricación y funcionamiento de baterías eléctricas, celdas electrolíticas y pilas de combustible, así como en la prevención de la corrosión de metales. Las sustancias químicas como fuentes de energía eléctrica."
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Química orgánica",
+      "titulo": "Química orgánica",
+      "items": [
+        "Fórmulas moleculares y desarrolladas de compuestos orgánicos. Diferentes tipos de isomería estructural.",
+        "Modelos moleculares o técnicas de representación 3D de moléculas. Isómeros espaciales de un compuesto y sus propiedades. Aplicaciones en el campo de la bioquímica.",
+        "Principales propiedades químicas de las distintas funciones orgánicas. Comportamiento en disolución o en reacciones químicas.",
+        "Principales tipos de reacciones orgánicas: adición, sustitución, eliminación y condensación. Mecanismos e intermedios de reacción. Productos de la reacción entre compuestos orgánicos y las correspondientes ecuaciones químicas.",
+        "Proceso de formación de los polímeros a partir de sus correspondientes monómeros. Estructura y propiedades.",
+        "Clasificación de los polímeros según su naturaleza, estructura y composición. Aplicaciones, propiedades y riesgos medioambientales asociados."
+      ]
+    }
+  ]
+}

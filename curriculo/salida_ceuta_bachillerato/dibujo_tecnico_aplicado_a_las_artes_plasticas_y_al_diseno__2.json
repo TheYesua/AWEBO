@@ -1,0 +1,116 @@
+{
+  "materia_oficial": "Dibujo Técnico Aplicado a las Artes Plásticas y al Diseño",
+  "materia": "Dibujo Técnico Aplicado a las Artes Plásticas y al Diseño",
+  "etapa": "Bachillerato",
+  "ciclo": "2º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "CE1",
+      "descripcion": "Observar, analizar y valorar la presencia de la geometría en la naturaleza, el entorno construido y el arte, identificando sus estructuras geométricas, elementos y códigos, con una actitud proactiva de apreciación y disfrute, para explicar su origen, función e intencionalidad en distintos contextos y medios.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE2",
+      "descripcion": "Desarrollar propuestas gráficas y de diseño, utilizando tanto el dibujo a mano alzada como los materiales propios del dibujo técnico y elaborando trazados, composiciones y transformaciones geométricas en el plano de forma intuitiva y razonada, para incorporar estos recursos tanto en la transmisión y desarrollo de ideas, como en la expresión de sentimientos y emociones.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE3",
+      "descripcion": "Comprender e interpretar el espacio y los objetos tridimensionales, analizando y valorando su presencia en las representaciones artísticas, seleccionando y utilizando el sistema de representación más adecuado para aplicarlo a la realización de ilustraciones y proyectos de diseño de objetos y espacios.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE4",
+      "descripcion": "Analizar, definir formalmente o visualizar ideas, aplicando las normas fundamentales UNE e ISO para interpretar y representar objetos y espacios, así como documentar proyectos de diseño.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE5",
+      "descripcion": "Integrar y aprovechar las posibilidades que ofrecen las herramientas digitales, seleccionando y utilizando programas y aplicaciones específicas de dibujo vectorial 2D y de modelado 3D para desarrollar procesos de creación artística personal o de diseño.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "CE1",
+      "descripcion": "Identificar y explicar la presencia de formas y relaciones geométricas en el arte y el diseño, comprendiendo el motivo o intencionalidad con la que se han utilizado."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "CE2",
+      "descripcion": "Diseñar patrones y mosaicos, aplicando las transformaciones geométricas a la creación de módulos y redes."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "CE2",
+      "descripcion": "Diseñar formas creativas, empleando tangencias, enlaces y curvas cónicas."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "CE3",
+      "descripcion": "Dibujar, en la perspectiva isométrica y perspectiva caballera, formas volumétricas incorporando curvas."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "CE3",
+      "descripcion": "Diseñar espacios y escenografías aplicando la perspectiva cónica, representando las luces y sombras de los objetos contenidos y reflexionando sobre el proceso realizado y el resultado obtenido."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "CE4",
+      "descripcion": "Proyectar, de manera individual o en grupo, un diseño sencillo, comunicando de manera clara e inequívoca su forma y dimensiones mediante el uso de la normalización, aplicando estrategias y destrezas que agilicen el trabajo colaborativo."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "CE5",
+      "descripcion": "Realizar y presentar proyectos, aprovechando las posibilidades que las herramientas de dibujo vectorial aportan a los campos del diseño y el arte."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Geometría, arte y entorno",
+      "titulo": "Geometría, arte y entorno",
+      "items": [
+        "Composiciones modulares en el diseño gráfico, de objetos y de espacios.",
+        "Geometría e ilusiones ópticas en el arte y el diseño.",
+        "Las curvas cónicas en la naturaleza, el entorno, el arte y el diseño.",
+        "La representación del espacio en el diseño y arte contemporáneo.",
+        "Transformaciones geométricas aplicadas a la creación de mosaicos y patrones. Trazado con y sin herramientas digitales.",
+        "Enlaces y tangencias. Aplicación en el diseño gráfico mediante trazado manual y digital."
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Sistemas de representación del espacio aplicado",
+      "titulo": "Sistemas de representación del espacio aplicado",
+      "items": [
+        "Representación de la circunferencia y de sólidos sencillos en perspectiva isométrica y perspectiva caballera. Aplicación al diseño de formas tridimensionales.",
+        "Estructuras poliédricas. Los sólidos platónicos. Aplicación en la arquitectura y el diseño.",
+        "Aplicaciones de la perspectiva cónica, frontal, oblicua y de cuadro inclinado, al diseño de espacios y objetos. Representación de luces y sombras."
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Normalización y diseño de proyectos",
+      "titulo": "Normalización y diseño de proyectos",
+      "items": [
+        "Fases de un proyecto de diseño: del croquis al plano de taller.",
+        "Representación de objetos mediante sus vistas acotadas. Cortes, secciones y roturas."
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Herramientas digitales para el diseño",
+      "titulo": "Herramientas digitales para el diseño",
+      "items": [
+        "Dibujo asistido por ordenador aplicado a proyectos de arte y diseño."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "materia_oficial": "Proyectos Artísticos",
+  "materia": "Proyectos Artísticos",
+  "etapa": "Bachillerato",
+  "ciclo": "Único",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "CE1",
+      "descripcion": "Generar y perfeccionar ideas de proyecto, consultando distintas fuentes, experimentando con técnicas y estrategias creativas, elaborando bocetos y maquetas, y valorando críticamente la relevancia artística, la viabilidad y la sostenibilidad de esas ideas, para desarrollar la creatividad y aprender a seleccionar una propuesta concreta, realizable y acorde con la intención expresiva o funcional y con las características del marco de recepción previsto.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE2",
+      "descripcion": "Planificar adecuadamente las fases y el proceso de trabajo de un proyecto artístico, considerando los recursos disponibles y evaluando su sostenibilidad, para conseguir un resultado ajustado a los plazos, a las características del espacio y, en su caso, al presupuesto previsto.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE3",
+      "descripcion": "Realizar proyectos artísticos, individuales o colectivos, asumiendo diferentes funciones, seleccionando espacios, técnicas, medios y soportes, e identificando oportunidades de desarrollo personal, social, académico y profesional, para expresar una intención expresiva o funcional y provocar un determinado efecto en el entorno.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE4",
+      "descripcion": "Compartir, con actitud abierta y respetuosa, las distintas fases del proyecto, intercambiando ideas, comentarios y opiniones con diversas personas, incluido el público receptor, para evaluar la marcha del proyecto, incorporar aportaciones de mejora y optimizar su repercusión en el entorno.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE5",
+      "descripcion": "Tratar correctamente la documentación de un proyecto artístico, seleccionando las fuentes más adecuadas, elaborando los documentos necesarios, registrando el proceso creativo y archivando adecuadamente todo el material, para dejar constancia de las distintas fases del proyecto, de su resultado y de su recepción.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "CE1",
+      "descripcion": "Investigar y recopilar información previa a la realización de un proyecto, seleccionando la documentación más adecuada."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "CE1",
+      "descripcion": "Generar y perfeccionar ideas de proyecto, consultando distintas fuentes, otorgando visibilidad y relevancia a diferentes realidades y colectivos sociales, elaborando bocetos y maquetas, y experimentando con las técnicas y estrategias artísticas más adecuadas en cada caso."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "CE1",
+      "descripcion": "Seleccionar una propuesta concreta para un proyecto, justificando su relevancia artística, su viabilidad, su sostenibilidad y su adecuación a la intención con la que fue concebida y a las características del marco de recepción previsto."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "CE2",
+      "descripcion": "Establecer el plan de trabajo de un proyecto artístico, organizando correctamente sus fases, evaluando su sostenibilidad y ajustándolo a los plazos, a las características del espacio y, en su caso, al presupuesto previsto, y equilibrando el reparto de tareas entre los componentes del grupo."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "CE2",
+      "descripcion": "Proponer soluciones creativas en la organización de un proyecto artístico, buscando el máximo aprovechamiento de los recursos disponibles."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "CE3",
+      "descripcion": "Participar activamente en la realización de proyectos artísticos, individuales o colectivos, asumiendo diferentes funciones y seleccionando los espacios, las técnicas, los medios y los soportes más adecuados."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "CE3",
+      "descripcion": "Explicar, de forma razonada, la intención expresiva o funcional de un proyecto artístico, detallando los efectos que se espera que este tenga en el entorno."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "CE3",
+      "descripcion": "Argumentar las decisiones relativas a la ejecución del proyecto, asegurando la coherencia de estas decisiones con la intención expresiva o funcional y con los efectos esperados."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "CE3",
+      "descripcion": "Identificar y evaluar oportunidades de desarrollo personal, social, académico o profesional relacionadas con el ámbito artístico, comprendiendo su valor añadido y expresando la opinión personal de forma crítica y respetuosa."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "CE4",
+      "descripcion": "Compartir, a través de diversos medios y soportes, las distintas fases del proyecto, poniéndolo en relación con el resultado final esperado y recabando, de manera abierta y respetuosa, las críticas, los comentarios y las aportaciones de mejora formuladas por distintas personas, incluido el público receptor."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "CE4",
+      "descripcion": "Valorar las críticas, los comentarios y las aportaciones de mejora recibidas, incorporando de manera justificada aquellas que redunden en beneficio del proyecto y de su repercusión en el entorno."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "CE4",
+      "descripcion": "Evaluar la repercusión que el proyecto ha tenido en el entorno, considerando las valoraciones del público receptor y analizando el logro de la intención inicial planteada, así como la pertinencia de las soluciones puestas en práctica ante las dificultades afrontadas a lo largo del proceso."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "CE5",
+      "descripcion": "Seleccionar diversas fuentes para la elaboración del proyecto, justificando su utilidad teórica, informativa o inspiradora."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "CE5",
+      "descripcion": "Elaborar la documentación necesaria para desarrollar un proyecto artístico, considerando las posibilidades de aplicación y ajustándose a los modelos más adecuados."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "CE5",
+      "descripcion": "Registrar las distintas fases del proyecto, adoptando un enfoque reflexivo y de autoevaluación."
+    },
+    {
+      "codigo": "5.4",
+      "competencia": "CE5",
+      "descripcion": "Archivar correctamente la documentación, garantizando la accesibilidad y la facilidad de su recuperación."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Desarrollo de la creatividad",
+      "titulo": "Desarrollo de la creatividad",
+      "items": [
+        "La creatividad como destreza personal y herramienta para la expresión artística.",
+        "Estrategias y técnicas de fomento y desarrollo de la creatividad, tanto individuales como colectivas.",
+        "Estrategias de superación del bloqueo creativo.",
+        "El proceso de plasmación de ideas. Bocetos, croquis y maquetas."
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Gestión de proyectos artísticos",
+      "titulo": "Gestión de proyectos artísticos",
+      "items": [
+        "Metodología proyectual. Generación y selección de propuestas. Planificación, gestión y evaluación de proyectos artísticos. Difusión de resultados.",
+        "Estrategias de trabajo en equipo. Distribución de tareas y liderazgo compartido. Resolución de conflictos.",
+        "Estrategias, técnicas y soportes de documentación, registro y archivo.",
+        "Sostenibilidad e impacto de los proyectos artísticos. Técnicas de evaluación de impacto.",
+        "Oportunidades de desarrollo personal, social, académico y profesional relacionadas con el ámbito artístico. Interacción con el medio social. El emprendimiento cultural."
+      ]
+    }
+  ]
+}

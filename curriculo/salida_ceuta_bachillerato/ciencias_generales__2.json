@@ -1,0 +1,187 @@
+{
+  "materia_oficial": "Ciencias Generales",
+  "materia": "Ciencias Generales",
+  "etapa": "Bachillerato",
+  "ciclo": "Único",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "CE1",
+      "descripcion": "Aplicar las metodologías propias de la ciencia, utilizando con precisión, procedimientos, materiales e instrumentos adecuados, para responder a cuestiones sobre procesos físicos, químicos, biológicos y geológicos.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE2",
+      "descripcion": "Comprender y explicar los procesos del entorno y explicarlos, utilizando los principios, leyes y teorías científicos adecuados, para adquirir una visión holística del funcionamiento del medio natural.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE3",
+      "descripcion": "Argumentar sobre la importancia de los estilos de vida sostenibles y saludables, basándose en fundamentos científicos, para adoptarlos y promoverlos en su entorno.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE4",
+      "descripcion": "Aplicar el pensamiento científico y los razonamientos lógico-matemáticos, mediante la búsqueda y selección de estrategias y herramientas apropiadas, para resolver problemas relacionados con las ciencias experimentales.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE5",
+      "descripcion": "Analizar la contribución de la ciencia y de las personas que se dedican a ella, con perspectiva de género y entendiéndola como un proceso colectivo e interdisciplinar en continua construcción, para valorar su papel esencial en el progreso de la sociedad.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE6",
+      "descripcion": "Utilizar recursos variados, con sentido crítico y ético, para buscar y seleccionar información contrastada y establecer colaboraciones.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "CE1",
+      "descripcion": "Plantear y responder cuestiones acerca de procesos observados en el entorno, siguiendo las pautas de las metodologías científicas."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "CE1",
+      "descripcion": "Contrastar hipótesis, realizando experimentos en laboratorios o en entornos virtuales, siguiendo las normas de seguridad correspondientes."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "CE1",
+      "descripcion": "Comunicar los resultados de un experimento o trabajo científico, utilizando los recursos adecuados y de acuerdo a los principios éticos básicos."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "CE2",
+      "descripcion": "Analizar y explicar fenómenos del entorno, representándolos mediante expresiones, tablas, gráficas, modelos, simulaciones, diagramas u otros formatos."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "CE2",
+      "descripcion": "Explicar fenómenos que ocurren en el entorno, utilizando principios, leyes y teorías de las ciencias de la naturaleza."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "CE2",
+      "descripcion": "Reconocer y analizar los fenómenos fisicoquímicos más relevantes, explicándolos a través de las principales leyes o teorías científicas."
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "CE2",
+      "descripcion": "Explicar, utilizando los fundamentos científicos adecuados, los elementos y procesos básicos de la biosfera y la geosfera."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "CE3",
+      "descripcion": "Adoptar y promover hábitos compatibles con un modelo de desarrollo sostenible y valorar su importancia utilizando fundamentos científicos."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "CE3",
+      "descripcion": "Adoptar y promover hábitos saludables (dieta equilibrada, higiene, vacunación, uso adecuado de antibióticos, rechazo al consumo de drogas, legales e ilegales, ejercicio físico, higiene del sueño, posturas adecuadas, etc.) y valorar su importancia, utilizando los fundamentos de la fisiología humana."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "CE4",
+      "descripcion": "Resolver problemas relacionados con fenómenos y procesos físicos, químicos, biológicos y geológicos, utilizando el pensamiento científico y el razonamiento lógico-matemático y buscando estrategias alternativas de resolución cuando sea necesario."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "CE4",
+      "descripcion": "Analizar críticamente la solución de un problema relacionado con fenómenos y procesos físicos, químicos, biológicos y geológicos, modificando las conclusiones o las estrategias utilizadas si la solución no es viable, o ante nuevos datos aportados."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "CE5",
+      "descripcion": "Reconocer la ciencia como un área de conocimiento global, analizando la interrelación e interdependencia entre cada una de las disciplinas que la forman."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "CE5",
+      "descripcion": "Reconocer la relevancia de la ciencia en el progreso de la sociedad, valorando el importante papel que juegan las personas en el desempeño de la investigación científica."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "CE6",
+      "descripcion": "Buscar, contrastar y seleccionar información sobre fenómenos y procesos físicos, químicos, biológicos o geológicos en diferentes formatos, utilizando los recursos necesarios, tecnológicos o de otro tipo."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "CE6",
+      "descripcion": "Establecer colaboraciones, utilizando los recursos necesarios en las diferentes etapas del proyecto científico, en la realización de actividades o en la resolución de problemas."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Construyendo ciencia",
+      "titulo": "Construyendo ciencia",
+      "items": [
+        "Metodologías propias de la investigación científica para la identificación y formulación de cuestiones, la elaboración de hipótesis y la comprobación experimental de las mismas.",
+        "Experimentos y proyectos de investigación: uso de instrumental adecuado, controles experimentales y razonamiento lógico-matemático. Métodos de análisis de los resultados obtenidos en la resolución de problemas y cuestiones científicos relacionados con el entorno.",
+        "Fuentes veraces y medios de colaboración: búsqueda de información científica en diferentes formatos y con herramientas adecuadas.",
+        "Información científica: interpretación y producción con un lenguaje adecuado. Desarrollo del criterio propio basado en la evidencia y el razonamiento.",
+        "Contribución de los científicos y las científicas a los principales hitos de la ciencia para el avance y la mejora de la sociedad."
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Un universo de materia y energía",
+      "titulo": "Un universo de materia y energía",
+      "items": [
+        "Sistemas materiales macroscópicos: uso de modelos microscópicos para analizar sus propiedades y sus estados de agregación, así como de los procesos físicos y químicos de cambio.",
+        "Clasificación de los sistemas materiales en función de su composición: aplicación a la descripción de los sistemas naturales y a la resolución de problemas relacionados.",
+        "La estructura interna de la materia y su relación con las regularidades que se producen en la tabla periódica. Reconocimiento de su importancia histórica y actual.",
+        "Formación de compuestos químicos: la nomenclatura como base de una alfabetización científica básica que permita establecer una comunicación eficiente con toda la comunidad científica.",
+        "Transformaciones químicas de los sistemas materiales y leyes que los rigen: importancia en los procesos industriales, medioambientales y sociales del mundo actual.",
+        "Energía contenida en un sistema, sus propiedades y sus manifestaciones: teorema de conservación de la energía mecánica y procesos termodinámicos más relevantes. Resolución de problemas relacionados con el consumo energético y la necesidad de un desarrollo sostenible."
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. El sistema Tierra",
+      "titulo": "El sistema Tierra",
+      "items": [
+        "El origen del universo, del sistema solar y de la Tierra: relación con sus características.",
+        "Forma y movimientos de la Tierra y la Luna y sus efectos.",
+        "El origen de la vida en la Tierra: hipótesis destacadas. La posibilidad de vida en otros planetas.",
+        "Concepto de ecosistema: relación entre componentes bióticos y abióticos.",
+        "La geosfera: estructura, dinámica, procesos geológicos internos y externos. La teoría de la tectónica de placas. Riesgos geológicos.",
+        "Las capas fluidas de la Tierra: funciones, dinámica, interacción con la superficie terrestre y los seres vivos en la edafogénesis.",
+        "Los seres vivos como componentes bióticos del ecosistema: clasificación, características y adaptaciones al medio.",
+        "Dinámica de los ecosistemas: flujos de energía, ciclos de la materia, interdependencia y relaciones tróficas. Resolución de problemas relacionados.",
+        "Principales problemas medioambientales (calentamiento global, agujero de la capa de ozono, destrucción de los espacios naturales, pérdida de la biodiversidad, contaminación del aire y el agua, desertificación, etc.) y riesgos geológicos: causas y consecuencias.",
+        "El modelo de desarrollo sostenible. Recursos renovables y no renovables: importancia de su uso y explotación responsables. Las energías renovables. La prevención y la gestión de residuos. La economía circular.",
+        "La relación entre la conservación medioambiental, la salud humana y el desarrollo económico de la sociedad. Concepto  one health  (una sola salud).",
+        "Las enfermedades infecciosas y no infecciosas: causas, prevención y tratamiento. Las zoonosis y las pandemias. El mecanismo y la importancia de las vacunas y del uso adecuado de los antibióticos."
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Biología para el siglo XXI",
+      "titulo": "Biología para el siglo XXI",
+      "items": [
+        "Las principales biomoléculas (glúcidos, lípidos, proteínas y ácidos nucleicos): estructura básica y relación con sus funciones e importancia biológica.",
+        "Expresión de la información genética: procesos implicados. Características del código genético y relación con su función biológica.",
+        "Técnicas de ingeniería genética: PCR, enzimas de restricción, clonación molecular y CRISPR-CAS9. Posibilidades de la manipulación dirigida del ADN.",
+        "Aplicaciones y repercusiones de la biotecnología: agricultura, ganadería, medicina o recuperación medioambiental. Importancia biotecnológica de los microorganismos.",
+        "La transmisión genética de caracteres: resolución de problemas y análisis de la probabilidad de herencia de alelos o de la manifestación de fenotipos."
+      ]
+    },
+    {
+      "codigo": "E",
+      "bloque": "E. Las fuerzas que nos mueven",
+      "titulo": "Las fuerzas que nos mueven",
+      "items": [
+        "Fuerzas fundamentales de la naturaleza: los procesos físicos más relevantes del entorno natural, como los fenómenos electromagnéticos, el movimiento de los planetas o los procesos nucleares.",
+        "Leyes de la estática: estructuras en relación con la física, la biología, la geología o la ingeniería.",
+        "Leyes de la mecánica relacionadas con el movimiento: comportamiento de un objeto móvil y sus aplicaciones, por ejemplo, en la seguridad vial o en el desarrollo tecnológico."
+      ]
+    }
+  ]
+}

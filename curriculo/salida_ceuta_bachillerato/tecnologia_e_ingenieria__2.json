@@ -1,0 +1,196 @@
+{
+  "materia_oficial": "Tecnología e Ingeniería",
+  "materia": "Tecnología e Ingeniería",
+  "etapa": "Bachillerato",
+  "ciclo": "2º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "CE1",
+      "descripcion": "Coordinar y desarrollar proyectos de investigación con una actitud crítica y emprendedora, implementando estrategias y técnicas eficientes de resolución de problemas y comunicando los resultados de manera adecuada, para crear y mejorar productos y sistemas de manera continua.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE2",
+      "descripcion": "Seleccionar materiales y elaborar estudios de impacto, aplicando criterios técnicos y de sostenibilidad para fabricar productos de calidad que den respuesta a problemas y tareas planteados, desde un enfoque responsable y ético.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE3",
+      "descripcion": "Utilizar las herramientas digitales adecuadas, analizando sus posibilidades, configurándolas de acuerdo a sus necesidades y aplicando conocimientos interdisciplinares, para resolver tareas, así como para realizar la presentación de los resultados de una manera óptima.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE4",
+      "descripcion": "Generar conocimientos y mejorar destrezas técnicas, transfiriendo y aplicando saberes de otras disciplinas científicas con actitud creativa, para calcular y resolver problemas o dar respuesta a necesidades de los distintos ámbitos de la ingeniería.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE5",
+      "descripcion": "Diseñar, crear y evaluar sistemas tecnológicos, aplicando conocimientos de programación informática, regulación automática y control, así como las posibilidades que ofrecen las tecnologías emergentes, para estudiar, controlar y automatizar tareas.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE6",
+      "descripcion": "Analizar y comprender sistemas tecnológicos de los distintos ámbitos de la ingeniería, estudiando sus características, consumo y eficiencia energética, para evaluar el uso responsable y sostenible que se hace de la tecnología.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "CE1",
+      "descripcion": "Desarrollar proyectos de investigación e innovación con el fin de crear y mejorar productos de forma continua, utilizando modelos de gestión cooperativos y flexibles."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "CE1",
+      "descripcion": "Comunicar y difundir de forma clara y comprensible proyectos elaborados, presentando la documentación técnica necesaria de forma rigurosa y utilizando la terminología adecuada."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "CE1",
+      "descripcion": "Perseverar en la consecución de objetivos en situaciones de incertidumbre, identificando y gestionando emociones, aceptando y aprendiendo de la crítica razonada y utilizando el error como parte del proceso de aprendizaje."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "CE2",
+      "descripcion": "Analizar la idoneidad de los materiales técnicos en la fabricación de productos sostenibles y de calidad, estudiando su estructura interna, propiedades, tratamientos de modificación y mejora de sus propiedades."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "CE2",
+      "descripcion": "Elaborar informes sencillos de evaluación de impacto ambiental, de manera fundamentada y estructurada."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "CE3",
+      "descripcion": "Resolver problemas asociados a las distintas fases del desarrollo y gestión de un proyecto (diseño, simulación y montaje y presentación), utilizando las herramientas adecuadas que proveen las aplicaciones digitales."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "CE4",
+      "descripcion": "Calcular y montar estructuras sencillas, estudiando los tipos de cargas a los que se puedan ver sometidas y su estabilidad."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "CE4",
+      "descripcion": "Analizar las máquinas térmicas: máquinas frigoríficas, bombas de calor y motores térmicos, comprendiendo su funcionamiento y realizando simulaciones y cálculos básicos sobre su eficiencia."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "CE4",
+      "descripcion": "Interpretar y solucionar esquemas de sistemas neumáticos e hidráulicos, a través de montajes o simulaciones, comprendiendo y documentando el funcionamiento de cada uno de sus elementos y del sistema en su totalidad."
+    },
+    {
+      "codigo": "4.4",
+      "competencia": "CE4",
+      "descripcion": "Interpretar y resolver circuitos de corriente alterna, mediante montajes o simulaciones, identificando sus elementos y comprendiendo su funcionamiento."
+    },
+    {
+      "codigo": "4.5",
+      "competencia": "CE4",
+      "descripcion": "Experimentar y diseñar circuitos combinacionales y secuenciales físicos y simulados aplicando fundamentos de la electrónica digital y comprendiendo su funcionamiento en el diseño de soluciones tecnológicas."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "CE5",
+      "descripcion": "Comprender y simular el funcionamiento de los procesos tecnológicos basados en sistemas automáticos de lazo abierto y lazo cerrado, aplicando técnicas de simplificación y analizando su estabilidad."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "CE5",
+      "descripcion": "Representar y simplificar diagramas, utilizando las reglas del álgebra de bloques y considerando posibles perturbaciones y realimentaciones del sistema."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "CE5",
+      "descripcion": "Analizar la estabilidad de sistemas dinámicos, distinguiendo la aportación del regulador y la realimentación empleados a la misma y ofreciendo intervalos para los valores de los parámetros que separan zonas de estabilidad e inestabilidad del sistema dinámico."
+    },
+    {
+      "codigo": "5.4",
+      "competencia": "CE5",
+      "descripcion": "Conocer y evaluar sistemas informáticos emergentes y sus implicaciones en la seguridad de los datos, analizando modelos existentes."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "CE6",
+      "descripcion": "Analizar los distintos sistemas de ingeniería desde el punto de vista de la responsabilidad social y la sostenibilidad, estudiando las características de eficiencia energética asociadas a los materiales y a los procesos de fabricación."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Proyectos de investigación y desarrollo",
+      "titulo": "Proyectos de investigación y desarrollo",
+      "items": [
+        "Gestión y desarrollo de proyectos. Técnicas y estrategias de trabajo en equipo. Metodologías Agile: tipos, características y aplicaciones.",
+        "Difusión y comunicación de documentación técnica. Rigor en la elaboración, referenciación y presentación.",
+        "Autoconfianza e iniciativa. Identificación y gestión de emociones. El error y la reevaluación como parte del proceso de aprendizaje.",
+        "Emprendimiento, resiliencia, perseverancia y creatividad para abordar problemas desde una perspectiva interdisciplinar."
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Materiales y fabricación",
+      "titulo": "Materiales y fabricación",
+      "items": [
+        "Materiales. Estructura interna. Propiedades y procedimientos de ensayo.",
+        "Técnicas de diseño y tratamientos de modificación y mejora de las propiedades y sostenibilidad de los materiales.",
+        "Técnicas de fabricación industrial. Conformado por adición, moldeo, mecanizado y unión."
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Sistemas mecánicos",
+      "titulo": "Sistemas mecánicos",
+      "items": [
+        "Estructuras sencillas. Tipos de cargas, estabilidad y cálculos básicos. Montaje o simulación de ejemplos sencillos.",
+        "Máquinas térmicas: máquina frigorífica, bomba de calor y motores térmicos. Cálculos básicos, simulación y aplicaciones.",
+        "Neumática e hidráulica: componentes y principios físicos. Descripción y análisis. Esquemas característicos de aplicación. Diseño y montaje físico o simulado."
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Sistemas eléctricos y electrónicos",
+      "titulo": "Sistemas eléctricos y electrónicos",
+      "items": [
+        "Circuitos de corriente alterna. Triángulo de potencias. Cálculo, montaje o simulación.",
+        "Electrónica digital combinacional. Diseño y simplificación: mapas de Karnaugh. Experimentación en simuladores.",
+        "Electrónica digital secuencial. Experimentación en simuladores."
+      ]
+    },
+    {
+      "codigo": "E",
+      "bloque": "E. Sistemas informáticos",
+      "titulo": "Sistemas informáticos",
+      "items": [
+        "Arquitecturas de dispositivos informáticos: Von Neumann y Harvard.",
+        "Representación de datos en un ordenador. Sistemas de numeración y de codificación.",
+        "Sistemas informáticos emergentes: inteligencia artificial,  big data,  bases de datos distribuidas y ciberseguridad."
+      ]
+    },
+    {
+      "codigo": "F",
+      "bloque": "F. Sistemas automáticos",
+      "titulo": "Sistemas automáticos",
+      "items": [
+        "Álgebra de bloques y simplificación de sistemas.",
+        "Análisis de estabilidad de sistemas dinámicos. El lugar de las raíces. Sistemas de primer y segundo orden. Parámetros que definen la respuesta de un sistema.",
+        "Simulación de control de sistemas dinámicos."
+      ]
+    },
+    {
+      "codigo": "G",
+      "bloque": "G. Tecnología sostenible",
+      "titulo": "Tecnología sostenible",
+      "items": [
+        "Impacto social y ambiental. Informes de evaluación. Valoración crítica de las tecnologías desde el punto de vista de la sostenibilidad ecosocial.",
+        "Eficiencia energética proveniente de las características de los materiales y los procesos de fabricación empleados."
+      ]
+    }
+  ]
+}

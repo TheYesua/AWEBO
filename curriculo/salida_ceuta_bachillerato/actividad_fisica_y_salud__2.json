@@ -1,0 +1,89 @@
+{
+  "materia_oficial": "Actividad Física y Salud",
+  "materia": "Actividad Física y Salud",
+  "etapa": "Bachillerato",
+  "ciclo": "Único",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "CE1",
+      "descripcion": "Implementar de manera práctica, efectiva y autónoma un estilo de vida activo, sostenible y saludable, planificando y autorregulando consciente y responsablemente su actividad física a partir de una autoevaluación personal asentada en parámetros científicos y contrastables, para satisfacer sus demandas de ocio activo y de bienestar personal, así como relacionar este estilo de vida con las diferentes salidas profesionales asociadas a la actividad física.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE2",
+      "descripcion": "Experimentar, disfrutar y valorar los efectos positivos que tiene la práctica regular de actividad física sobre el organismo, incidiendo especialmente en aquellos vinculados con la salud mental, para desarrollar estrategias que le permitan controlar y equilibrar sus estados emocionales y aprender a gestionar situaciones de estrés adoptando actitudes de superación, crecimiento y resiliencia.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE3",
+      "descripcion": "Compartir prácticas y espacios de actividad físico-deportiva con independencia de las diferencias culturales, sociales, de género y de habilidad, priorizando el respeto hacia los participantes y a las reglas sobre los resultados, adoptando una actitud crítica y proactiva ante comportamientos antideportivos o contrarios a la convivencia, para fortalecer los vínculos interpersonales y valorar el impacto de la actividad física sobre la salud social.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "CE1",
+      "descripcion": "Planificar, elaborar y poner en práctica de manera autónoma un programa personal de actividad física dirigido a la mejora o al mantenimiento de la salud, aplicando los diferentes sistemas de desarrollo de las capacidades físicas implicadas, según las necesidades e intereses individuales y respetando la propia realidad e identidad corporal, evaluando los resultados obtenidos."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "CE1",
+      "descripcion": "Reconocer la relación que existe entre la práctica de actividad física con posibles estudios posteriores del ámbito sociosanitario y educativo, entre otros, reflexionando sobre la presencia del estilo de vida activo, sostenible y saludable en futuros desempeños profesionales."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "CE2",
+      "descripcion": "Reconoce el valor de la actividad física como herramienta para la gestión de los estados emocionales, así como su posible impacto sobre el rendimiento académico y en otros ámbitos de la vida, empleándola de manera autosuficiente."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "CE3",
+      "descripcion": "Consolidar mecanismos de relación y entendimiento con el resto de participantes durante el desarrollo de diversas prácticas motrices, especialmente de carácter colectivo, con autonomía, haciendo uso efectivo de habilidades sociales de diálogo en la resolución de conflictos y respeto ante la diversidad, ya sea de género, afectivo-sexual, de origen nacional, étnico, socio-económica o de competencia motriz, posicionándose activa, reflexiva y críticamente frente a los estereotipos, las actuaciones discriminatorias y la violencia."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "CE3",
+      "descripcion": "Identificar y valorar las posibilidades de interacción social que ofrece la actividad física, reconociendo los beneficios de una práctica adecuada y regular sobre los aspectos sociales de su estado de salud."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Vida activa, sostenible y saludable",
+      "titulo": "Vida activa, sostenible y saludable",
+      "items": [
+        "Salud física: Programa personal de actividad física (atendiendo a frecuencia, volumen, intensidad y tipo de actividad). Autoevaluación de las capacidades físicas y coordinativas (como requisito previo a la planificación): técnicas, estrategias y herramientas de medida. Uso de apps para el registro y cuantificación de la actividad física. Identificación de objetivos (motrices, saludables, de actividad o similares) a alcanzar con un programa de actividad física personal (por ejemplo, HIT  High Intensity Training ,  Crossfit , etc.). Evaluación del logro de los objetivos del programa y reorientación de actividades a partir de los resultados. Efectos de la actividad física sobre rendimiento académico y otras situaciones de la vida. Profesiones vinculadas a la actividad física y la salud. Métodos y técnicas de acondicionamiento físico vinculado con el mantenimiento y mejora de la salud en relación con las diferentes capacidades físicas y cualidades motrices. Patrones básicos de movimiento (tracciones, empujes, dominantes de rodilla y cadera, estabilización y fortalecimiento de  core ), métodos continuos e interválicos de media y alta intensidad.",
+        "Salud social: Posibilidades de interacción social en la actividad física e impacto sobre la salud. Actividad física y sostenibilidad: decisiones e impacto en la comunidad.",
+        "Salud mental: Técnicas de respiración, visualización y relajación para liberar estrés y enfocar situaciones que requieren gran carga cognitiva."
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Organización y gestión de la actividad física",
+      "titulo": "Organización y gestión de la actividad física",
+      "items": [
+        "Gestión de las medidas relacionadas con la planificación de la actividad física y deportiva (tipo de actividad, material necesario, objetivos de la preparación, técnicas y métodos de entrenamiento, actividades y similares).",
+        "Selección responsable y sostenible del material deportivo.",
+        "Autogestión de proyectos personales de carácter motor a todos los niveles (social, motivacional, organizativo o similar).",
+        "Prevención de accidentes en las prácticas realizadas y primeros auxilios de las lesiones más frecuentes como consecuencia de la actividad física.",
+        "Técnicas de respiración y práctica de métodos de respiración (apneas, respiración nasal y bucal o uso de la inspiración y espiración para regular el sistema nervioso)."
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Autorregulación emocional e interacción social en prácticas motrices",
+      "titulo": "Autorregulación emocional e interacción social en prácticas motrices",
+      "items": [
+        "Autorregulación emocional: Técnicas para reconocer indicios de estrés, ataques de ansiedad u otras situaciones potencialmente peligrosas para la salud mental. Estrategias de actuación y prevención.",
+        "Habilidades sociales: Estrategias de integración de otras personas en las actividades de grupo. Técnicas de resolución de conflictos. Actitud empática ante los problemas que se produzcan en prácticas motrices.",
+        "Identificación y rechazo de conductas contrarias a la convivencia en prácticas motrices (comportamientos violentos, discriminación por cuestiones de género, competencia motriz, actitudes xenófobas, racistas o sexistas).",
+        "Diseño y práctica de propuestas originales y contextualizadas que reviertan en un beneficio de la comunidad cercana: mejora de espacios naturales ( plogging , colaboración con asociaciones), fomento de la práctica deportiva (visita a centros de primaria, creación de talleres de recreo en el centro educativo), dinamización de poblaciones en riesgo de exclusión social (centros de discapacitados, residencias de ancianos, actividades dirigidas y gratuitas en parques públicos)."
+      ]
+    }
+  ]
+}

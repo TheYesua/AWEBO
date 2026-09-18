@@ -1,0 +1,212 @@
+{
+  "materia_oficial": "Historia de España",
+  "materia": "Historia de España",
+  "etapa": "Bachillerato",
+  "ciclo": "Único",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "CE1",
+      "descripcion": "Valorar los movimientos y acciones que han promovido las libertades en la historia de España, utilizando términos y conceptos históricos, a través del análisis comparado de los distintos regímenes políticos, para reconocer el legado democrático de la Constitución de 1978 como fundamento de nuestra convivencia y garantía de nuestros derechos.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE2",
+      "descripcion": "Reconocer y valorar la diversidad identitaria de nuestro país, por medio del contraste de la información y la revisión crítica de fuentes, y tomando conciencia del papel que juega en la actualidad, para respetar los sentimientos de pertenencia, la existencia de identidades múltiples, y las normas y los símbolos que establece nuestro marco común de convivencia.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE3",
+      "descripcion": "Analizar y valorar la idea de progreso desde la perspectiva del bienestar social y de la sostenibilidad, a través de la interpretación de los factores modernizadores de la economía española, el uso de métodos cuantitativos y el análisis crítico de las desigualdades sociales y territoriales, para considerar el emprendimiento, la innovación y el aprendizaje permanente como elementos fundamentales en un entorno económico y profesional en constante cambio.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE4",
+      "descripcion": "Tomar conciencia de la diversidad social a través del análisis multidisciplinar de los cambios y continuidades de la sociedad española a lo largo del tiempo, la evolución de la población, los niveles y modos de vida, las condiciones laborales y los movimientos y conflictos sociales, para valorar el alcance de las medidas adoptadas y los progresos y limitaciones para avanzar en la igualdad, el bienestar, la justicia y la cohesión social.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE5",
+      "descripcion": "Analizar críticamente el papel de las creencias y de las ideologías en la articulación social, en el uso del poder y en la configuración de identidades y proyectos políticos contrapuestos, a través del estudio de fuentes primarias y textos historiográficos y la fundamentación de juicios propios, para debatir sobre problemas actuales, transferir conocimiento, valorar la diversidad cultural y mostrar actitudes respetuosas ante ideas legítimas diferentes a las propias.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE6",
+      "descripcion": "Interpretar el valor geoestratégico de España y su conexión con la historia mundial, señalando las analogías y singularidades de su evolución histórica en un contexto global cambiante, por medio de la búsqueda y el tratamiento de información, para avalar los compromisos de nuestro país en materia de cooperación y seguridad, promover actitudes solidarias y asumir los valores del europeísmo.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE7",
+      "descripcion": "Incorporar la perspectiva de género en el análisis de la España actual y de su historia, a través de la contextualización histórica de fuentes literarias y artísticas y la investigación sobre el movimiento feminista, para reconocer su presencia en la historia y promover actitudes en defensa de la igualdad efectiva de mujeres y hombres.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE8",
+      "descripcion": "Valorar el patrimonio histórico y cultural como legado y expresión de la memoria colectiva, identificando los significados y usos públicos que reciben determinados acontecimientos y procesos del pasado, por medio del análisis de la historiografía y del pensamiento histórico, para el desarrollo de la iniciativa, del trabajo en equipo, de la creatividad y de la implicación en cuestiones de interés social y cultural.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "CE1",
+      "descripcion": "Reconocer el legado democrático y las acciones en favor de la libertad, identificando y comparando los distintos regímenes políticos y sus respectivos textos constitucionales, desde la quiebra de la Monarquía Absoluta y los inicios de la España liberal a la actualidad, utilizando adecuadamente términos y conceptos históricos valorando el grado y alcance de los derechos y libertades que reconocen y la aplicación efectiva de los mismos."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "CE1",
+      "descripcion": "Identificar y valorar el papel de la Transición en el establecimiento de la democracia actual y de la Constitución de 1978 como fundamento y garantía de los derechos y libertades de los españoles, a través de la elaboración de juicios propios acerca de los principales debates que afectan al sistema constitucional, mediante el dominio de procesos de búsqueda y tratamiento de la información."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "CE2",
+      "descripcion": "Contrastar la información y desarrollar procesos de crítica de fuentes analizando el origen y la evolución de las identidades nacionales y regionales que se han formado a lo largo de la historia de España, reconociendo la pluralidad identitaria de nuestro país y respetando los distintos sentimientos de pertenencia."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "CE2",
+      "descripcion": "Identificar los distintos procesos políticos, culturales y administrativos que han tenido lugar en la formación del estado y en la construcción de la nación española, analizando críticamente los logros y resultados de las acciones llevadas a cabo y las reacciones generadas, conociendo y respetando tanto las identidades múltiples como los símbolos y normas comunes que conforman el marco actual de convivencia."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "CE2",
+      "descripcion": "Analizar los principales elementos geográficos, históricos y culturales que han caracterizado la singularidad de las ciudades autónomas de Ceuta y Melilla y de otros enclaves de España en el exterior, reconociendo los elementos que configuran su identidad y valorando el patrimonio material e inmaterial que la conforman."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "CE3",
+      "descripcion": "Analizar la evolución económica de España, sus ritmos y ciclos de crecimiento, valiéndose del manejo de datos, representaciones gráficas y recursos digitales, interpretando su particular proceso de modernización en el contexto de los países del entorno y los debates historiográficos sobre su desarrollo industrial, considerando el emprendimiento, la innovación y el aprendizaje permanente como formas de afrontar los retos de un entorno económico y profesional en constante cambio."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "CE3",
+      "descripcion": "Entender los distintos significados de la idea del progreso en sus contextos históricos, desarrollando el estudio multicausal de los modelos de desarrollo económico aplicados a la España contemporánea y analizando críticamente la idea de modernización, valorando sus efectos en relación a la desigualdad social, los desequilibrios territoriales, la degradación ambiental y las relaciones de dependencia, así como reflejando actitudes en favor de los Objetivos de Desarrollo Sostenible y los comportamientos ecosociales."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "CE3",
+      "descripcion": "Interpretar el papel que ha representado el colonialismo en el desarrollo económico español y sus repercusiones en el ámbito social y político, analizando críticamente las relaciones de dominio, explotación y dependencia generadas, así como las consecuencias derivadas de la independencia de estos territorios y de los procesos de descolonización, adoptando una posición informada y contextualizada ante las responsabilidades históricas con respecto a determinados acontecimientos del pasado."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "CE4",
+      "descripcion": "Describir las grandes transformaciones sociales y los diferentes modos de organización y participación política que se han producido en España desde el paso del Antiguo Régimen a la nueva sociedad burguesa, analizando el surgimiento y evolución del concepto de ciudadanía y de las nuevas formas de sociabilidad, utilizando adecuadamente términos históricos y conceptos historiográficos, e identificando las desigualdades y la concentración del poder en determinados grupos sociales."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "CE4",
+      "descripcion": "Analizar de manera multidisciplinar la diversidad y la desigualdad social existente en la historia contemporánea de España, la evolución de la población y los cambios en las condiciones y modos de vida, interpretando las causas y motivos de la conflictividad social y su articulación en distintos movimientos sociales, considerando la acción motivada de los sujetos y las medidas de distinto tipo adoptadas por el estado."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "CE4",
+      "descripcion": "Deducir a través del estudio crítico de noticias y datos estadísticos la evolución del estado social, identificando los logros y retrocesos experimentados y las medidas adoptadas por el estado hasta el presente, la evolución de los niveles de vida y de bienestar, así como los límites y retos de futuro, desde una perspectiva solidaria en favor de los colectivos más vulnerables."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "CE5",
+      "descripcion": "Referir el papel que han representado las creencias religiosas y las instituciones eclesiásticas en la configuración territorial y política de España, considerando críticamente aquellos momentos en los que ha primado la uniformidad y la intolerancia contra las minorías étnicas, religiosas o culturales."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "CE5",
+      "descripcion": "Generar opiniones argumentadas, debatir y transferir ideas y conocimientos sobre la función que han desempeñado las ideologías en la articulación social y política de la España contemporánea, comprendiendo y contextualizando dichos fenómenos a través de la lectura de textos historiográficos e identificando las principales culturas políticas que han ido sucediéndose, sus formas de organización y los diferentes proyectos políticos que representaban, expresando actitudes respetuosas ante ideas diferentes a las propias."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "CE5",
+      "descripcion": "Emplear el rigor metodológico de la historia en el estudio de las grandes reformas estructurales que acometió la II República, identificando sus logros y las reacciones antidemocráticas que se produjeron y que derivaron en el golpe de Estado de 1936, aproximándose a la historiografía sobre la Guerra Civil y al marco conceptual del estudio de los sistemas totalitarios y autoritarios a través de la interpretación de la evolución del Franquismo."
+    },
+    {
+      "codigo": "5.4",
+      "competencia": "CE5",
+      "descripcion": "Relacionar la situación de España durante la Guerra Civil con el contexto internacional del período de entreguerras y de la II Guerra Mundial, analizando críticamente el papel que adoptaron los distintos países ante el conflicto y su repercusión en la evolución del mismo, así como la posición de la España franquista ante los contendientes, reconociendo a las víctimas españolas del Holocausto y la contribución de los exiliados en la Resistencia francesa."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "CE6",
+      "descripcion": "Señalar los retos globales y los principales compromisos del Estado español en la esfera internacional, así como los que se derivan de su integración en la Unión Europea, a través de procesos de búsqueda, selección y tratamiento de la información, así como del reconocimiento de los valores de la cooperación, la seguridad nacional e internacional, la sostenibilidad, la solidaridad, el europeísmo y el ejercicio de una ciudadanía ética digital."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "CE6",
+      "descripcion": "Reconocer el valor geoestratégico de la península Ibérica, identificando el rico legado histórico y cultural generado a raíz de su conexión con procesos históricos relevantes, caracterizando las especificidades y singularidades de su evolución con respecto a otros países europeos y los estereotipos asociados a las mismas, así como la influencia de las relaciones internacionales."
+    },
+    {
+      "codigo": "6.3",
+      "competencia": "CE6",
+      "descripcion": "Analizar la importancia estratégica del Estrecho de Gibraltar a lo largo del tiempo, así como los diversos acontecimientos y procesos históricos que han determinado la singularidad de los enclaves de España en otros lugares del mundo, interpretando el valor y carácter que adoptan los lugares fronterizos y otros puntos de España en el exterior en relación a las necesidades e intereses del estado español."
+    },
+    {
+      "codigo": "7.1",
+      "competencia": "CE7",
+      "descripcion": "Introducir la perspectiva de género en la observación y análisis de la realidad histórica y actual, identificando los mecanismos de dominación que han generado y mantenido la desigualdad entre hombres y mujeres, así como los roles asignados y los espacios de actividad ocupados tradicionalmente por la mujer."
+    },
+    {
+      "codigo": "7.2",
+      "competencia": "CE7",
+      "descripcion": "Constatar el papel relegado de la mujer en la historia analizando fuentes literarias y artísticas, valorando las acciones en favor de la emancipación de la mujer y del movimiento feminista y recuperando figuras individuales y colectivas como protagonistas silenciadas y omitidas de la historia."
+    },
+    {
+      "codigo": "8.1",
+      "competencia": "CE8",
+      "descripcion": "Realizar trabajos de indagación e investigación, iniciándose en la metodología histórica y la historiografía, mediante la generación de productos relacionados con la memoria colectiva sobre acontecimientos, personajes o elementos patrimoniales de interés social o cultural del entorno local, considerando el patrimonio histórico como un bien común que se debe proteger."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Sociedades en el tiempo",
+      "titulo": "Sociedades en el tiempo",
+      "items": [
+        "El trabajo del historiador, la historiografía y la metodología histórica. Conciencia histórica y conexión entre el pasado y el presente. Usos públicos de la historia: las interpretaciones historiográficas sobre determinados procesos y acontecimientos relevantes de la historia de España y el análisis de los conocimientos históricos presentes en los debates de la sociedad actual. La aportación de los hispanistas a la historiografía y a la historia de España desde el exterior.",
+        "El significado geoestratégico de la península ibérica y la importancia del legado histórico y cultural. El mediterráneo, el Atlántico y la Europa continental en las raíces de la historia contemporánea. El significado histórico del Estrecho de Gibraltar y de otros enclaves del exterior.",
+        "El proceso de construcción nacional en España. De la centralización política y administrativa a la formación y desarrollo del estado liberal.",
+        "El significado de la monarquía hispánica y de la herencia colonial en la España contemporánea. Estereotipos y singularidades de la historia de España en el contexto internacional. Independencia y descolonización de los territorios bajo dominio español: consecuencias y responsabilidades históricas.",
+        "Religión, iglesia y estado. El papel del catolicismo en la configuración cultural y política de España y en los movimientos políticos y sociales. La situación de las minorías religiosas. Las relaciones entre la Iglesia y el Estado liberal. El nacionalcatolicismo. Laicismo, librepensamiento y secularización. El anticlericalismo. Cristianismo, islamismo y judaísmo en la historia de España: convivencia y conflicto entre culturas. Las guerras de religión. La Leyenda Negra y otros estereotipos negativos de la historia de España en el exterior.",
+        "Estudio comparado de los regímenes liberales y del constitucionalismo en España: de los inicios del régimen liberal y la constitución de 1812, los orígenes de la democracia, hasta la Constitución democrática de 1931. Términos y conceptos de la historia para el estudio de los sistemas políticos.",
+        "Ideologías y culturas políticas en la España contemporánea: conflictividad, sistemas políticos y usos del poder. Estudio de textos y contextos de las facciones, partidos y movimientos políticos, desde el carlismo y las distintas fuerzas monárquicas al republicanismo y el obrerismo revolucionario. El papel de los exilios en la España contemporánea y su contribución a la construcción de la Europa de las libertades.",
+        "La transición al capitalismo en España. Los debates historiográficos acerca de la industrialización del país y de su dependencia exterior. El modelo de desarrollo económico español, ritmos y ciclos de crecimiento. La importancia estratégica del norte de África y de otros territorios del exterior en el desarrollo económico español. La emigración española en el exterior y el valor de su contribución económica.",
+        "Cambios sociales y nuevas formas de sociabilidad: interpretaciones sobre la transformación de la sociedad estamental y el desarrollo del nuevo concepto de ciudadanía. Clubes políticos y otros espacios de sociabilidad y cambio de mentalidades en la España contemporánea. Las comunidades españolas en el exterior: espacios de encuentro e identidades culturales del exilio y de la emigración.",
+        "Trabajo y condiciones de vida. La evolución de la sociedad española. Población, familias y ciclos de vida. Servidumbre señorial, proletarización industrial, el nacimiento de las clases medias y el estado del bienestar.",
+        "Mundo rural y mundo urbano. Relaciones de interdependencia y de reciprocidad entre el campo y la ciudad desde una perspectiva histórica. De la sociedad agraria al éxodo rural y a la España vaciada. Ciudades fronterizas y enclaves españoles en el exterior.",
+        "La lucha por la igualdad y la justicia social: conflictividad, movimientos sociales y asociacionismo obrero. La acción del sujeto en la historia. La acción del estado y las políticas sociales.",
+        "La II República y la transformación democrática de España: las grandes reformas estructurales y el origen histórico de las mismas. Realizaciones sociales, políticas y culturales; reacciones antidemocráticas contra las reformas.",
+        "El golpe de Estado de 1936, la Guerra Civil y el Franquismo: aproximación a la historiografía sobre el conflicto y al marco conceptual de los sistemas totalitarios y autoritarios. Fundamentos ideológicos del régimen franquista, relaciones internacionales y etapas políticas y económicas. La represión, la resistencia, el exilio y los movimientos de protesta contra la dictadura por la recuperación de los valores, derechos y libertades democráticas.",
+        "La Guerra Civil en el exterior: la posición de las principales potencias ante la guerra. Las Brigadas Internacionales. Víctimas españolas del Holocausto. La participación de los españoles en la II Guerra Mundial: la Legión Azul de la España franquista y la participación de los exiliados españoles en la Resistencia francesa. La ayuda y acogida internacional hacia los exiliados españoles.",
+        "Mecanismos de dominación, roles de género, espacios de actividad y escenarios de sociabilidad de las mujeres en la historia de España. Protagonistas femeninas individuales y colectivas. La lucha por la emancipación de la mujer y los movimientos feministas. Fuentes literarias y artísticas en los estudios de género."
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Retos del mundo actual",
+      "titulo": "Retos del mundo actual",
+      "items": [
+        "Memoria democrática: reconocimiento de las acciones y movimientos en favor de la libertad en la historia contemporánea de España, conciencia de los hechos traumáticos y dolorosos del pasado y del deber de no repetirlos. Reconocimiento, reparación y dignificación de las víctimas de la violencia y del terrorismo en España. Las políticas de memoria en España. Los lugares de memoria.",
+        "La cuestión nacional: conciencia histórica y crítica de fuentes para abordar el origen y la evolución de los nacionalismos y regionalismos en la España contemporánea. La identidad histórica y cultural de Ceuta y Melilla u otros enclaves del exterior. La identidad de los españoles y de sus descendientes en el exterior.",
+        "Crecimiento económico y sostenibilidad: manejo de datos, aplicaciones y gráficos para el análisis de la evolución de la economía española desde el Desarrollismo a la actualidad. Desequilibrios sociales, territoriales y ambientales.",
+        "La Transición y la Constitución de 1978: Identificación de los retos, logros dificultades, y resistencias del fin de la dictadura y el establecimiento de la democracia. La normalización democrática y la amenaza del terrorismo.",
+        "España en Europa: derivaciones económicas, sociales y políticas del proceso de integración en la Unión Europea, situación actual y expectativas de futuro. España en el exterior: la defensa de los intereses nacionales y la política de seguridad y defensa. Política de fronteras y diplomacia.",
+        "España y el mundo: la contribución de España a la seguridad y cooperación mundial y su participación en los organismos internacionales. El compromiso institucional, social y ciudadano ante los Objetivos de Desarrollo Sostenible."
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Compromiso cívico",
+      "titulo": "Compromiso cívico",
+      "items": [
+        "Conciencia democrática: conocimiento de los principios y normas constitucionales, ejercicio de los valores cívicos y participación ciudadana.",
+        "Identidad y sentimientos de pertenencia: reconocimiento de las identidades múltiples y de los símbolos y normas comunes del estado español.",
+        "Comportamiento ecosocial: compromiso con los Objetivos de Desarrollo Sostenible.",
+        "Ciudadanía ética digital: respeto a la propiedad intelectual. Participación y ejercicio de la ciudadanía global a través de las tecnologías digitales. Prevención y defensa ante la desinformación y la manipulación.",
+        "Los valores del europeísmo: principios que guían la idea de la Unión Europea y actitud participativa ante los programas y proyectos comunitarios.",
+        "Solidaridad y cooperación: los grandes desafíos que afectan a España y al mundo y conductas tendentes al compromiso social, el asociacionismo y el voluntariado.",
+        "La cultura de seguridad nacional e internacional; instrumentos estatales e internacionales para preservar los derechos, las libertades y el bienestar de la ciudadanía.",
+        "Conservación y difusión del patrimonio histórico: el valor patrimonial, social y cultural de la memoria colectiva. Archivos, museos y centros de divulgación e interpretación histórica. La herencia cultural y el patrimonio histórico español en el exterior."
+      ]
+    }
+  ]
+}

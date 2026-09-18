@@ -1,0 +1,137 @@
+{
+  "materia_oficial": "Inteligencia Artificial",
+  "materia": "Inteligencia Artificial",
+  "etapa": "Bachillerato",
+  "ciclo": "1º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "CE1",
+      "descripcion": "Comprender aspectos básicos relacionados con los sistemas inteligentes, entendiendo el funcionamiento y la finalidad de sus partes integrantes, así como las circunstancias socioeconómicas y tecnológicas que han favorecido su auge, para analizar, de forma crítica y constructiva, la influencia presente y futura de la inteligencia artificial en el desarrollo de la sociedad y del individuo.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE2",
+      "descripcion": "Analizar el proceso de interacción entre el entorno y los sistemas inteligentes, determinando las necesidades de datos y su tratamiento por parte del sistema y definiendo las características de la comunicación que establece el agente inteligente con su entorno, tanto en el mundo digital como en el real, para diseñar y crear sistemas que utilicen la IA.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE3",
+      "descripcion": "Comprender y aplicar conocimientos interdisciplinares, profundizando en los métodos matemáticos que posibilitan el aprendizaje de sistemas inteligentes, a través de la experimentación mediante la programación de los mismos, para entender, aplicar, modificar y crear sistemas inteligentes funcionales.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE4",
+      "descripcion": "Reflexionar acerca de la contribución de la IA al desarrollo personal y social, de manera crítica, teniendo en cuenta aspectos relativos al respeto de los derechos y libertades de las personas, para analizar contextos normativos que regulen los aspectos éticos del desarrollo y el empleo de técnicas de IA en los distintos ámbitos de la sociedad.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "CE1",
+      "descripcion": "Analizar la influencia de la IA sobre los entornos personal y social, reflexionando sobre sus aplicaciones en diversos ámbitos e interactuando con sistemas inteligentes que desarrollan funciones de forma autónoma."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "CE1",
+      "descripcion": "Entender los fundamentos de la IA, reconociendo los distintos módulos que la conforman, valorando la importancia de los datos para el proceso de aprendizaje automático y explicando las distintas estrategias de aprendizaje que se plantean."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "CE2",
+      "descripcion": "Analizar los distintos datos de entrada a un sistema inteligente, clasificándolos de acuerdo a diversos criterios, describiendo sus características y la manera en que se codifican para su representación."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "CE2",
+      "descripcion": "Definir las características de los datos de salida de un agente inteligente, como su cantidad y su formato, atendiendo a sus objetivos, al destinatario de los datos y al objetivo para el que ha sido diseñado."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "CE3",
+      "descripcion": "Emplear simulaciones preexistentes de sistemas inteligentes, entendiendo el efecto sobre la salida de los distintos parámetros definitorios del modelo de aprendizaje automático involucrado."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "CE3",
+      "descripcion": "Aplicar modelos existentes de aprendizaje automático que resuelvan problemas, experimentando con la variación de sus parámetros e integrándolos en soluciones o desarrollos más amplios."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "CE3",
+      "descripcion": "Reconocer los problemas del compromiso sesgo-varianza en sistemas de aprendizaje automático y proponer soluciones a los mismos, experimentando con la funcionalidad de sistemas inteligentes y haciendo uso de programación informática."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "CE3",
+      "descripcion": "Construir y editar programas informáticos sencillos que desarrollen funcionalidades relacionadas con la IA, utilizando entornos de programación."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "CE4",
+      "descripcion": "Analizar el impacto que el uso generalizado de la IA tiene y tendrá en la sociedad, prestando especial atención a las noticias publicadas al respecto."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "CE4",
+      "descripcion": "Analizar conjuntos de normas éticas que permiten regular la actividad de sistemas inteligentes, razonando sobre la necesidad y adecuación de las mismas y teniendo en cuenta los derechos y libertades de la ciudadanía."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Fundamentos de Inteligencia Artificial",
+      "titulo": "Fundamentos de Inteligencia Artificial",
+      "items": [
+        "Inteligencia Artificial. Significado, ejemplos e impacto sobre distintos ámbitos de la sociedad. IA de propósito general y de propósito específico.",
+        "Los datos como componente necesario para el desarrollo de la IA.",
+        "Sistemas inteligentes: componentes y funciones. Módulos de tratamiento de información y algoritmos para el aprendizaje automático.",
+        "Estrategias de aprendizaje automático: supervisado, no supervisado y por refuerzo. Contexto y aplicaciones."
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Tratamiento de la información",
+      "titulo": "Tratamiento de la información",
+      "items": [
+        "Captación y tratamiento de la información textual, sonora y visual. Representación.",
+        "Datos de salida de un sistema inteligente. Formatos y objetivos en la resolución de problemas de clasificación y de regresión."
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Programación informática",
+      "titulo": "Programación informática",
+      "items": [
+        "Entornos de desarrollo orientados a proyectos de IA. Servicios y aplicaciones para la experimentación con sistemas de IA.",
+        "Elementos fundamentales de un programa informático: cabecera, importación de librerías, configuración de dispositivos y canales de comunicación y funciones.",
+        "Declaración y formato de variables.",
+        "Funciones de control del flujo de ejecución de un programa informático (bucles, sentencias condicionales, comandos de ruptura y salida, excepciones).",
+        "Funciones de librerías específicas: tratamiento y graficado de datos; generación de modelos de IA."
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Fundamentos de métodos numéricos",
+      "titulo": "Fundamentos de métodos numéricos",
+      "items": [
+        "Problemas de clasificación. Matrices de confusión. Curva ROC. AUC. Árboles de decisión. Búsqueda de patrones. Aplicaciones.",
+        "Regresión lineal. Aplicaciones.",
+        "Los problemas del sesgo y la varianza. Errores de ajuste. Ajuste deficiente y sobreajuste. Hiperparámetros."
+      ]
+    },
+    {
+      "codigo": "E",
+      "bloque": "E. Ética e IA",
+      "titulo": "Ética e IA",
+      "items": [
+        "Ética en la captación de datos.",
+        "Impacto de la generalización en el empleo de sistemas basados en IA en el bienestar de las personas."
+      ]
+    }
+  ]
+}

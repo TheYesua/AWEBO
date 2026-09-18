@@ -1,0 +1,204 @@
+{
+  "materia_oficial": "Filosofía",
+  "materia": "Filosofía",
+  "etapa": "Bachillerato",
+  "ciclo": "Único",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "CE1",
+      "descripcion": "Identificar problemas y formular preguntas acerca del fundamento, valor y sentido de la realidad y la existencia humana, a partir del análisis e interpretación de textos y otras formas de expresión filosófica y cultural, para reconocer la radicalidad y trascendencia de tales cuestiones, así como la necesidad de afrontarlas para desarrollar una vida reflexiva y consciente de sí.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE2",
+      "descripcion": "Buscar, gestionar, interpretar, producir y transmitir correctamente información relativa a cuestiones filosóficas a partir del empleo contrastado y seguro de fuentes, el uso y análisis riguroso de las mismas, y el empleo de procedimientos elementales de investigación y comunicación, para desarrollar una actitud indagadora, autónoma, rigurosa y creativa en el ámbito de la reflexión filosófica.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE3",
+      "descripcion": "Usar y valorar adecuadamente argumentos y estructuras argumentales, a partir de su análisis tanto formal como informal, para producir y apreciar distintos tipos de discurso de forma rigurosa, y evitar modos dogmáticos, falaces y sesgados de sostener opiniones e hipótesis.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE4",
+      "descripcion": "Practicar el ejercicio del diálogo filosófico de manera rigurosa, crítica, tolerante y empática, interiorizando las pautas éticas y formales que este requiere, mediante la participación en actividades grupales y a través del planteamiento dialógico de las cuestiones filosóficas, para promover el contraste e intercambio de ideas y el ejercicio de una ciudadanía activa y democrática.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE5",
+      "descripcion": "Reconocer el carácter plural de las concepciones, ideas y argumentos en torno a cada uno de los problemas fundamentales de la filosofía, mediante el análisis crítico de diversas tesis relevantes con respecto a los mismos, para generar una concepción compleja y no dogmática de dichas cuestiones e ideas y una actitud abierta, tolerante, y comprometida con la resolución racional y pacífica de los conflictos.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE6",
+      "descripcion": "Comprender las principales ideas y teorías filosóficas de los más importantes pensadores y pensadoras, mediante el examen crítico y dialéctico de las mismas y de los problemas fundamentales a los que estas responden, para generar una concepción rigurosa y personal de lo que significa la filosofía, de su riqueza e influencia cultural e histórica y de su aportación al patrimonio común.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE7",
+      "descripcion": "Adquirir una perspectiva global, sistémica y transdisciplinar en el planteamiento de cuestiones fundamentales y de actualidad, analizando y categorizando sus múltiples aspectos, distinguiendo lo más substancial de lo accesorio e integrando información e ideas de distintos ámbitos disciplinares desde la perspectiva fundamental de la filosofía, para tratar problemas complejos de modo crítico, creativo y transformador.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE8",
+      "descripcion": "Analizar problemas éticos y políticos fundamentales y de actualidad, mediante la exposición crítica y dialéctica de distintas posiciones filosóficamente pertinentes en la interpretación y resolución de los mismos, para desarrollar el juicio propio y la autonomía moral.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE9",
+      "descripcion": "Desarrollar la sensibilidad y la comprensión crítica del arte y otras manifestaciones y actividades con valor estético mediante el ejercicio del pensamiento filosófico acerca de la belleza y la creación artística, para contribuir a la educación de los sentimientos y al desarrollo de una actitud reflexiva con respecto al lenguaje y sentido de las imágenes.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "CE1",
+      "descripcion": "Reconocer la radicalidad y trascendencia de los problemas filosóficos mediante su reconocimiento, análisis y reformulación en textos y otros medios de expresión tanto filosóficos como literarios, históricos, científicos, artísticos o relativos a cualquier otro ámbito cultural."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "CE2",
+      "descripcion": "Demostrar un conocimiento práctico de los procedimientos elementales de la investigación filosófica a través de tareas como la identificación de fuentes fiables, la búsqueda eficiente y segura de información y la correcta organización, análisis, interpretación, evaluación, producción y comunicación de esta, tanto digitalmente como por medios más tradicionales."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "CE2",
+      "descripcion": "Desarrollar una actitud indagadora, autónoma y activa en el ámbito de la reflexión filosófica mediante el diseño, la elaboración y la comunicación pública de productos originales tales como trabajos de investigación, disertaciones o comentarios de texto."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "CE3",
+      "descripcion": "Producir y evaluar discursos argumentativos, orales y escritos, acerca de cuestiones y problemas filosóficos, demostrando un uso correcto de normas y pautas lógicas, retóricas y argumentativas."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "CE3",
+      "descripcion": "Detectar y evitar modos dogmáticos, falaces y sesgados de sostener opiniones e hipótesis, explicando la naturaleza o mecanismo de dichos sesgos y falacias."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "CE3",
+      "descripcion": "Reconocer la importancia de la cooperación, el compromiso con la verdad, el respeto a la pluralidad y el rechazo de toda actitud discriminatoria o arbitraria, aplicando dichos principios a la práctica argumentativa y al diálogo con los demás."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "CE4",
+      "descripcion": "Promover el contraste e intercambio de ideas y la práctica de una ciudadanía activa y democrática a través de la participación en actividades grupales con actitud dialogante, identificando e incorporando las pautas éticas y formales que definen al diálogo filosófico y aplicándolo a asuntos comunes, cotidianos o de actualidad."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "CE4",
+      "descripcion": "Ejercitarse en la práctica del diálogo racional, respetuoso, abierto, constructivo, y comprometido con la búsqueda de la verdad, acerca de cuestiones y problemas filosóficamente relevantes, a través de la interpretación crítica de textos o documentos de carácter filosófico o el debate sobre dichas cuestiones y problemas."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "CE5",
+      "descripcion": "Generar una concepción compleja y no dogmática de los problemas filosóficos mediante el análisis crítico de tesis filosóficas distintas y opuestas en torno a los mismos."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "CE5",
+      "descripcion": "Comprender y exponer distintas tesis y teorías filosóficas como momentos de un proceso dinámico y siempre abierto de reflexión y diálogo, a través del análisis comparativo de los argumentos, principios, metodologías y enfoques de dichas tesis y teorías."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "CE6",
+      "descripcion": "Tomar consciencia de la riqueza e influencia del pensamiento filosófico identificando y analizando las principales ideas y teorías filosóficas en textos o documentos pertenecientes a campos del saber y ámbitos culturales diversos, así como poniéndolas en relación con experiencias, acciones o acontecimientos comunes y de actualidad."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "CE6",
+      "descripcion": "Adquirir y demostrar un conocimiento significativo de las ideas y teorías filosóficas de algunos de los más importantes pensadores y pensadoras de la historia, mediante su aplicación y análisis crítico en el contexto de la práctica individual o colectiva de la indagación acerca de los problemas filosóficos reflejados en los saberes básicos."
+    },
+    {
+      "codigo": "6.3",
+      "competencia": "CE6",
+      "descripcion": "Identificar, indagar y exponer problemas e ideas filosóficas relativas a la reflexión filosófica sobre la propia filosofía y la naturaleza e identidad del ser humano, aplicando los procedimientos básicos de la investigación filosófica."
+    },
+    {
+      "codigo": "6.4",
+      "competencia": "CE6",
+      "descripcion": "Articular una reflexión propia sobre la validez de las propias ideas y creencias sobre el conocimiento y la realidad a partir del análisis y contraste riguroso de diferentes posiciones filosóficas en torno los problemas relacionados con el conocimiento y la verdad, así como sobre la cuestión de la naturaleza última de lo real."
+    },
+    {
+      "codigo": "7.1",
+      "competencia": "CE7",
+      "descripcion": "Afrontar cuestiones y problemas complejos de carácter fundamental y de actualidad de modo interdisciplinar, sistemático y creativo, utilizando conceptos, ideas y procedimientos provenientes de distintos campos del saber y orientándolos y articulándolos críticamente desde una perspectiva filosófica."
+    },
+    {
+      "codigo": "8.1",
+      "competencia": "CE8",
+      "descripcion": "Desarrollar el propio juicio y la autonomía moral mediante el análisis filosófico de problemas éticos y políticos fundamentales y de actualidad, considerando las distintas posiciones en disputa y elaborando, argumentando, exponiendo y sometiendo al diálogo con los demás las propias tesis al respecto."
+    },
+    {
+      "codigo": "9.1",
+      "competencia": "CE9",
+      "descripcion": "Generar un adecuado equilibrio entre el aspecto racional y el emotivo en la consideración de los problemas filosóficos, especialmente los referidos al ámbito de la estética, a través de la reflexión expresa en torno al arte y a otras actividades o experiencias con valor estético, y el análisis del papel de las imágenes y el lenguaje audiovisual en la cultura contemporánea."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. La filosofía y el ser humano",
+      "titulo": "La filosofía y el ser humano",
+      "items": [
+        "1. La reflexión filosófica en torno a la propia filosofía.",
+        "Características y concepciones del saber filosófico. Breve recensión histórica de la filosofía.",
+        "Las divisiones tradicionales de la filosofía y las áreas actuales de investigación. Vigencia y utilidad de la filosofía: la importancia de filosofar en torno a los retos del siglo XXI.",
+        "La filosofía en relación con otros campos del saber y la actividad humana.",
+        "Métodos y herramientas básicos del filósofo: el uso y análisis crítico de fuentes; la comprensión e interpretación de documentos filosóficos; la identificación de problemas filosóficos en otros ámbitos de la cultura; el pensamiento y el diálogo argumentativos; la investigación y la disertación filosófica.",
+        "La discriminación social, de género, etnia y edad en la tradición filosófica.",
+        "2. El ser humano como sujeto y objeto de la experiencia filosófica.",
+        "La filosofía y la existencia humana.",
+        "El debate sobre la génesis y definición de la naturaleza humana: especificidad natural y condicionantes histórico-culturales. Concepciones filosóficas del ser humano.",
+        "La estructura psicosomática de la personalidad: sensibilidad, emotividad, deseos y volición, las facultades cognitivas. Conciencia y lenguaje.",
+        "El problema de la identidad personal. Tipos y modos de identidad. La especulación en torno al transhumanismo."
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Conocimiento y realidad",
+      "titulo": "Conocimiento y realidad",
+      "items": [
+        "1. El problema filosófico del conocimiento y la verdad.",
+        "El conocimiento: definición, posibilidad y límites. Teorías de la verdad. La desinformación y el fenómeno de la «posverdad».",
+        "Las teorías del conocimiento: formas de racionalismo, empirismo y otras teorías.",
+        "El razonamiento y la argumentación. La argumentación informal. Nociones de lógica formal. La detección de falacias y sesgos cognitivos.",
+        "El saber científico: definición, demarcación y metodologías científicas. La filosofía de la ciencia: naturaleza, problemas y límites del conocimiento científico.",
+        "Otros modos de saber: el problema del saber metafísico; las creencias religiosas; la razón poética; el saber común.",
+        "La dimensión social y política del conocimiento. Conocimiento, poder e interés. La tecnociencia contemporánea. El papel de la mujer en la ciencia y en los otros saberes.",
+        "2. La cuestión de la naturaleza última de la realidad.",
+        "El problema de lo real. Apariencia y realidad. La cuestión de las realidades virtuales.",
+        "Unidad y pluralidad. Categorías y modos de ser. Entidades físicas y objetos ideales: el problema de los universales.",
+        "El problema mente-cuerpo. La filosofía de la mente y el debate en torno a la inteligencia artificial.",
+        "El problema filosófico del tiempo y el cambio. El problema del determinismo. Necesidad, azar y libertad.",
+        "El problema filosófico de la existencia de Dios. Teísmo, ateísmo y agnosticismo."
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Acción y creación",
+      "titulo": "Acción y creación",
+      "items": [
+        "1. La acción humana: Filosofía ética y política.",
+        "El problema ético: Cómo hemos de actuar. Ser y deber ser. La deliberación moral. Las condiciones del juicio y el diálogo ético.",
+        "La posibilidad de una ética racional. Cognitivismo y emotivismo. El debate en torno al relativismo moral. El reto de una ética universal de mínimos.",
+        "Las principales respuestas al problema ético: éticas consecuencialistas, éticas del deber y éticas de la virtud. La moral amoral de Nietzsche. Éticas del cuidado. Ética medioambiental. Éticas aplicadas.",
+        "Los derechos humanos: su génesis, legitimidad y vigencia actual. Las distintas generaciones de derechos humanos.",
+        "Grandes cuestiones éticas de nuestro tiempo: la desigualdad y la pobreza; la igualdad efectiva de derechos entre hombres y mujeres; la guerra, el terrorismo y otras formas de violencia; los derechos de la infancia; la discriminación y el respeto a las minorías; los problemas ecosociales y medioambientales; los derechos de los animales.",
+        "El hombre como ser social. Definición de lo político. Legalidad y legitimidad. La cuestión filosófica de la justicia.",
+        "El fundamento de la organización social y del poder político. Teorías del origen sobrenatural  vs.  teorías contractualistas. La reflexión filosófica en torno a la democracia.",
+        "El diálogo en torno a los principios políticos fundamentales: igualdad y libertad; individuo y Estado; trabajo, propiedad y distribución de la riqueza. El debate político contemporáneo: liberalismo, utilitarismo y comunitarismo.",
+        "Ideales, utopías y distopías. Los movimientos sociales y políticos. El feminismo y la perspectiva de género en la filosofía.",
+        "2. La reflexión filosófica en torno a la creación artística.",
+        "Definición, ámbitos y problemas de la estética: arte, belleza y gusto. La relación de lo estético con otros ámbitos de la cultura. Ética y estética. El papel político del arte.",
+        "Teorías clásicas y modernas acerca de la belleza y el arte. Teorías y problemas estéticos contemporáneos. La reflexión en torno a la imagen y la cultura audiovisual."
+      ]
+    }
+  ]
+}

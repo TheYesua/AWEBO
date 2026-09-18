@@ -1,0 +1,207 @@
+{
+  "materia_oficial": "Psicología",
+  "materia": "Psicología",
+  "etapa": "Bachillerato",
+  "ciclo": "Único",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "CE1",
+      "descripcion": "Reconocer y explicar las aportaciones de la psicología a la comprensión de los fenómenos humanos, a partir del análisis de su dimensión teórica y práctica, objetivos, características y métodos de investigación empleados, identificando los problemas específicos de los que se ocupa y las soluciones aportadas por las diferentes corrientes psicológicas, para valorar la utilidad y aplicación de esta ciencia a la propia realidad individual y grupal.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE2",
+      "descripcion": "Analizar las funciones psicológicas y sus posibles alteraciones, partiendo del estudio de los principales modelos teóricos de la psicología e identificando y relacionando los procesos cognitivos que tienen lugar en relación con ellas, para comprender, interpretar y explicar diversas situaciones y comportamientos cotidianos.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE3",
+      "descripcion": "Analizar la complejidad de los problemas humanos en distintos ámbitos e identificar sus factores determinantes, relacionando los elementos de la psicología con los de otras disciplinas, contrastando diferentes posturas explicativas sobre un mismo fenómeno y diferenciando entre el saber científico y los prejuicios o ideas preconcebidas, para desarrollar un pensamiento autónomo y crítico y facilitar la transferencia de lo aprendido al ámbito de la experiencia cotidiana.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE4",
+      "descripcion": "Desarrollar herramientas personales que favorezcan la autonomía, la resolución de problemas y la superación de conflictos, a partir del autoconocimiento y la comprensión de uno mismo y de los demás, y promoviendo una actitud reflexiva y crítica, para gestionar e influir de manera positiva en los pensamientos, comportamientos y actitudes propios y de otros.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE5",
+      "descripcion": "Reflexionar de manera crítica sobre cuestiones psicológicamente relevantes y de interés general o comportamientos concretos a partir del estudio de casos y de la realización de experimentos, comprendiendo y aplicando los procedimientos de investigación propios de la psicología, para valorar las aportaciones científicas de este campo y tomar conciencia de su contribución a la mejora de la salud y la calidad de vida.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "CE1",
+      "descripcion": "Valorar la utilidad y aplicación de la psicología a la realidad humana, reconociendo y explicando las aportaciones de esta ciencia, analizando sus componentes teóricos y prácticos, objetivos y métodos de investigación, e identificando los problemas de los que se ocupa y las posibles soluciones que propone a los mismos"
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "CE1",
+      "descripcion": "Comparar las principales metodologías de investigación en psicología, analizando sus ventajas e inconvenientes y valorando los aspectos éticos de estas."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "CE2",
+      "descripcion": "Comprender, interpretar y explicar diversas situaciones y comportamientos cotidianos partiendo del conocimiento que aportan los principales modelos teóricos de la psicología, analizando los procesos cognitivos implicados, así como su funcionamiento, considerando las posibles alteraciones que pueden producirse."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "CE2",
+      "descripcion": "Conocer y analizar la estructura, tipos y funcionamiento de la memoria humana, investigando las aportaciones de algunas teorías y aplicándolas en su propio aprendizaje."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "CE2",
+      "descripcion": "Analizar las principales teorías sobre el aprendizaje, identificando los factores que cada una de ellas considera determinantes en este proceso y aplicando los conocimientos en la mejora de su propio aprendizaje."
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "CE2",
+      "descripcion": "Analizar las principales teorías sobre la inteligencia, comparando las aportaciones de cada una de ellas y exponiendo críticamente sus conclusiones."
+    },
+    {
+      "codigo": "2.5",
+      "competencia": "CE2",
+      "descripcion": "Reconocer y valorar el componente emocional, tomando conciencia de su repercusión en el desarrollo psíquico y poniendo en práctica estrategias que promuevan la inteligencia emocional."
+    },
+    {
+      "codigo": "2.6",
+      "competencia": "CE2",
+      "descripcion": "Explicar la importancia de la motivación y su relación con otros procesos cognitivos, valorando los diferentes modelos teóricos que la explican, y analizando las dificultades relacionadas con la frustración."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "CE3",
+      "descripcion": "Desarrollar un pensamiento autónomo y crítico y facilitar la transferencia de lo aprendido a experiencias propias, analizando los problemas humanos desde un enfoque holístico y diferenciando entre el saber que aporta la ciencia y los prejuicios, ideas preconcebidas y creencias populares."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "CE3",
+      "descripcion": "Analizar fenómenos y problemas humanos en distintos ámbitos, identificando los factores que pueden tener mayor relevancia en su aparición y permanencia, y relacionando elementos de la psicología con los de otras disciplinas."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "CE4",
+      "descripcion": "Gestionar e influir de manera positiva en los pensamientos, comportamientos y actitudes propios y de los demás promoviendo una postura reflexiva y crítica y desarrollando herramientas personales que favorezcan la autonomía, la resolución de problemas y la superación de conflictos."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "CE4",
+      "descripcion": "Identificar cualidades personales y de los demás, reflexionando sobre la importancia de potenciar aquellas que resultan necesarias en la superación de retos personales relacionados con el logro de una mayor autonomía, resolución de problemas y afrontamiento eficaz de conflictos."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "CE5",
+      "descripcion": "Valorar las aportaciones científicas que provienen del campo de la psicología y tomar conciencia de su contribución a la mejora de la salud y la calidad de vida, reflexionado de manera crítica sobre las cuestiones objeto de estudio, y partiendo del análisis de casos y de la realización de experimentos sencillos."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "CE5",
+      "descripcion": "Generar nuevo conocimiento aplicando procedimientos descriptivos o experimentales que permitan explicar, describir y comprender fenómenos psicológicamente relevantes."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "CE5",
+      "descripcion": "Promover el conocimiento científico llevando a cabo experimentos y prácticas de investigación sencillos que ayuden a comprender fenómenos y comportamientos humanos de manera objetiva."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. El mundo de la psicología",
+      "titulo": "El mundo de la psicología",
+      "items": [
+        "¿Qué es la psicología? Objeto e historia. Antecedentes filosóficos y científicos.",
+        "Modelos teóricos de la psicología actual: el conductismo, el cognitivismo, los modelos neurobiológicos, humanísticos, comunitarios y otros.",
+        "Campos de la psicología: áreas de investigación y ámbitos de aplicación en psicología.",
+        "Relación de la psicología con otras disciplinas.",
+        "Metodologías de investigación en psicología. Adecuación de la investigación al objeto de estudio. Condiciones y procedimientos del trabajo experimental en psicología. Aspectos éticos de la investigación."
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Perspectiva y bases biológicas de la conducta",
+      "titulo": "Perspectiva y bases biológicas de la conducta",
+      "items": [
+        "La filogénesis: el proceso de la hominización, evolución de la mente y enculturación.",
+        "Historia y ámbito de la psiconeurobiología: aportaciones de los avances tecnológicos.",
+        "Las neuronas. Circuitos neuronales y transmisión sináptica.",
+        "Estructuras y funcionamiento del sistema nervioso central y periférico.",
+        "Sistema endocrino: sistema regulador de la química del cuerpo.",
+        "Explicación de la genética. Leyes genéticas de la herencia. Alteraciones en la transmisión de la información genética."
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Los procesos psicológicos básicos: percepción y memoria",
+      "titulo": "Los procesos psicológicos básicos: percepción y memoria",
+      "items": [
+        "Sensopercepción: concepto, componentes y factores que intervienen en el fenómeno sensoperceptivo. Bases fisiológicas de la sensopercepción.",
+        "Aportaciones de las principales teorías acerca de la percepción. Leyes de la percepción.",
+        "Distorsiones perceptivas: ilusiones ópticas, trastornos perceptivos y percepción subliminar.",
+        "La atención. Tipos de atención, su relación con diferentes fenómenos y alteraciones.",
+        "El misterio de la memoria: investigaciones. Neuropsicología de la memoria: áreas cerebrales interconectadas.",
+        "Procesos funcionales y estructurales de la memoria.",
+        "El olvido: concepto y causas.",
+        "Principios generales para mejorar la memoria: atención, sentido, organización y asociación. Trastornos y alteraciones de la memoria."
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. El aprendizaje y los procesos psicológicos superiores: pensamiento, lenguaje e inteligencia",
+      "titulo": "El aprendizaje y los procesos psicológicos superiores: pensamiento, lenguaje e inteligencia",
+      "items": [
+        "El reto del aprendizaje: concepto de aprendizaje. Conducta innata y conducta aprendida.",
+        "Teorías sobre el aprendizaje: Condicionamiento clásico y condicionamiento operante. Otras teorías.",
+        "Implicaciones en la educación. Relación entre dificultades y estrategias de aprendizaje.",
+        "Pensamiento: la formación de conceptos. El juicio. El razonamiento y sus tipos. Distorsiones cognitivas y pensamientos irracionales. Resolución de problemas: métodos y obstáculos. Los mecanismos heurísticos y la toma de decisiones.",
+        "El lenguaje: concepto. Uso y funciones. Neurofisiología del lenguaje: áreas implicadas. Desarrollo evolutivo del lenguaje. Relación entre lenguaje y pensamiento. Trastornos y alteraciones del lenguaje.",
+        "Inteligencia e inteligencias: concepto y principales teorías. Evaluación de la inteligencia. Creatividad e inteligencia. Situación actual sobre la inteligencia: polémica herencia-ambiente. Modificabilidad de la inteligencia. Inteligencia animal e inteligencia artificial. Inteligencia emocional.",
+        "La emoción: concepto y funciones. Tipos de emociones y sus características. La educación de las emociones. Herramientas para su gestión. El papel de las emociones en la toma de decisiones. Trastornos emocionales."
+      ]
+    },
+    {
+      "codigo": "E",
+      "bloque": "E. La construcción del ser humano: personalidad y motivación",
+      "titulo": "La construcción del ser humano: personalidad y motivación",
+      "items": [
+        "Conceptualización de personalidad. Su relación con el temperamento y el carácter. Enfoques teóricos de la personalidad y métodos de estudio para su evaluación.",
+        "Características generales y construcción social de la personalidad: la influencia de factores genéticos y ambientales. La influencia de la cultura y la evolución de la conducta: apego, altruismo y empatía.",
+        "Procesos psicosociales implicados en el desarrollo de la sexualidad. Teoría de la construcción social del género.",
+        "Aplicaciones del estudio de la personalidad: identidad, autoestima y autoconcepto. Trastornos de la personalidad.",
+        "Motivación: concepto, naturaleza de la motivación. El proceso motivacional. Teorías sobre la motivación. La frustración: causas y vías de superación. Técnicas de motivación."
+      ]
+    },
+    {
+      "codigo": "F",
+      "bloque": "F. Relaciones personales e interpersonales",
+      "titulo": "Relaciones personales e interpersonales",
+      "items": [
+        "Identidad psicológica y socialización. Pensamiento social: percepción y evaluación de los demás. Recopilación y organización de la información social: actitudes, valores, estereotipos y prejuicios. Proceso de atribución: tendencias y sesgos. Amenazas y riesgos para la seguridad y cohesión social: conductas de odio, acoso y violencia. Estudio de casos.",
+        "Sentido de pertenencia a un grupo. Estructura y comportamiento de los grupos: normas, roles, dilemas morales, cambio y desarrollo grupal. Liderazgo y tipos.",
+        "Factores grupales o situacionales que influyen en comportamientos cooperativos: altruismo, conducta prosocial, cohesividad. Resolución pacífica de conflictos. Factores grupales o situacionales que influyen en comportamientos violentos: identidad social, obediencia y desindividualización. Análisis de casos.",
+        "La comunicación interpersonal. Habilidades sociales y comunicativas en las relaciones personales. Nuevas formas de comunicación: redes sociales. Ética y uso seguro, crítico y responsable. La comunicación no verbal.",
+        "Relaciones humanas en el ámbito laboral. Satisfacción profesional: factores que influyen en el desarrollo laboral. Problemas derivados del ámbito laboral y de las nuevas formas de trabajo."
+      ]
+    },
+    {
+      "codigo": "G",
+      "bloque": "G. Salud mental y bienestar",
+      "titulo": "Salud mental y bienestar",
+      "items": [
+        "Visión actual: El concepto de salud. La salud como estilo de vida: alimentación, higiene del sueño, ejercicio físico, descanso, ocio y relaciones sociales y afectivas. La relación entre la salud y el desarrollo personal y social.",
+        "Factores psicológicos que influyen en el logro de bienestar. Factores de riesgo: estrés, ansiedad y adicciones, entre otros.",
+        "Psicopatologías. El problema de la categorización de los trastornos mentales. Lo «normal» y lo patológico. Interacción de factores fisiológicos, psicológicos, sociales, morales y culturales de las enfermedades mentales.",
+        "Presencia de trastornos: aproximación a los manuales de diagnóstico: DSM y CIE. Presencia de trastornos en la adolescencia: trastornos de la conducta alimentaria, trastornos de la ansiedad, trastornos del estado de ánimo, TDAH, trastornos de la conducta.",
+        "Intervención en función del propósito: prevención, tratamiento, rehabilitación, inserción, acompañamiento, entre otros.",
+        "Estrategias y métodos de intervención directo: consejo psicológico, terapia, negociación, mediación."
+      ]
+    }
+  ]
+}

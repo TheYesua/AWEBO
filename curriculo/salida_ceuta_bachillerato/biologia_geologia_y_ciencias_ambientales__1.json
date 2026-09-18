@@ -1,0 +1,240 @@
+{
+  "materia_oficial": "Biología, Geología y Ciencias Ambientales",
+  "materia": "Biología, Geología y Ciencias Ambientales",
+  "etapa": "Bachillerato",
+  "ciclo": "Único",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "CE1",
+      "descripcion": "Interpretar y transmitir información y datos científicos, argumentando sobre estos con precisión y utilizando diferentes formatos para analizar procesos, métodos, experimentos o resultados de las ciencias biológicas, geológicas y medioambientales.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE2",
+      "descripcion": "Localizar y utilizar fuentes fiables, identificando, seleccionando y organizando información, evaluándola críticamente y contrastando su veracidad, para resolver preguntas planteadas relacionadas con las ciencias biológicas, geológicas y medioambientales de forma autónoma.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE3",
+      "descripcion": "Diseñar, planear y desarrollar proyectos de investigación siguiendo los pasos de las metodologías científicas, teniendo en cuenta los recursos disponibles de forma realista y buscando vías de colaboración, para indagar en aspectos relacionados con las ciencias biológicas, geológicas y medioambientales.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE4",
+      "descripcion": "Buscar y utilizar estrategias en la resolución de problemas analizando críticamente las soluciones y respuestas halladas y reformulando el procedimiento si fuera necesario, para dar explicación a fenómenos relacionados con las ciencias biológicas, geológicas y medioambientales.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE5",
+      "descripcion": "Diseñar, promover y ejecutar iniciativas relacionadas con la conservación del medioambiente, la sostenibilidad y la salud, basándose en los fundamentos de las ciencias biológicas, geológicas y ambientales, para fomentar estilos de vida sostenibles y saludables.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE6",
+      "descripcion": "Analizar los elementos del registro geológico utilizando fundamentos científicos, para relacionarlos con los grandes eventos ocurridos a lo largo de la historia de la Tierra y con la magnitud temporal en que se desarrollaron.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "CE1",
+      "descripcion": "Analizar críticamente conceptos y procesos relacionados con los saberes de la materia interpretando información en diferentes formatos (modelos, gráficos, tablas, diagramas, fórmulas, esquemas, etc.)."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "CE1",
+      "descripcion": "Comunicar informaciones u opiniones razonadas relacionadas con los saberes de la materia o con trabajos científicos transmitiéndolas de forma clara y rigurosa, utilizando la terminología y el formato adecuados (modelos, gráficos, tablas, vídeos, informes, diagramas, fórmulas, esquemas y símbolos, entre otros) y herramientas digitales."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "CE1",
+      "descripcion": "Argumentar sobre aspectos relacionados con los saberes de la materia defendiendo una postura de forma razonada y con una actitud abierta, flexible, receptiva y respetuosa ante la opinión de los demás."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "CE2",
+      "descripcion": "Plantear y resolver cuestiones relacionadas con los saberes de la materia localizando fuentes adecuadas y seleccionando, organizando y analizando críticamente la información."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "CE2",
+      "descripcion": "Citar adecuadamente las fuentes utilizadas en una investigación."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "CE2",
+      "descripcion": "Contrastar y justificar la veracidad de la información relacionada con los saberes de la materia utilizando fuentes fiables y adoptando una actitud crítica y escéptica hacia informaciones sin una base científica como pseudociencias, teorías conspiratorias, creencias infundadas, bulos, etc."
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "CE2",
+      "descripcion": "Argumentar sobre la contribución de la ciencia a la sociedad y la labor de las personas dedicadas a ella, destacando el papel de la mujer y entendiendo la investigación como una labor colectiva e interdisciplinar en constante evolución e influida por el contexto político y los recursos económicos."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "CE3",
+      "descripcion": "Plantear preguntas, realizar predicciones y formular hipótesis que puedan ser respondidas o contrastadas utilizando métodos científicos e intenten explicar fenómenos biológicos, geológicos o ambientales."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "CE3",
+      "descripcion": "Diseñar la experimentación, la toma de datos y el análisis de fenómenos biológicos, geológicos y ambientales y seleccionar los instrumentos necesarios de modo que permitan responder a preguntas concretas y contrastar una hipótesis planteada minimizando los sesgos en la medida de lo posible."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "CE3",
+      "descripcion": "Realizar experimentos y tomar datos cuantitativos y cualitativos sobre fenómenos biológicos, geológicos y ambientales seleccionando y utilizando los instrumentos, herramientas o técnicas adecuadas con corrección y precisión."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "CE3",
+      "descripcion": "Interpretar y analizar resultados obtenidos en el proyecto de investigación utilizando, cuando sea necesario, herramientas matemáticas y tecnológicas, reconociendo su alcance y limitaciones y obteniendo conclusiones razonadas y fundamentadas o valorando la imposibilidad de hacerlo."
+    },
+    {
+      "codigo": "3.5",
+      "competencia": "CE3",
+      "descripcion": "Establecer colaboraciones dentro y fuera del centro educativo en las distintas fases del proyecto científico con el fin de trabajar con mayor eficiencia, utilizando las herramientas tecnológicas adecuadas, valorando la importancia de la cooperación en la investigación, respetando la diversidad y favoreciendo la inclusión."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "CE4",
+      "descripcion": "Resolver problemas o dar explicación a procesos biológicos, geológicos o ambientales utilizando recursos variados como conocimientos propios, datos e información recabados, razonamiento lógico, pensamiento computacional o herramientas digitales."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "CE4",
+      "descripcion": "Analizar críticamente la solución a un problema sobre fenómenos biológicos, geológicos o ambientales y modificar los procedimientos utilizados o conclusiones obtenidas si dicha solución no fuese viable o ante nuevos datos aportados o recabados con posterioridad."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "CE5",
+      "descripcion": "Analizar las causas y consecuencias ecológicas, sociales y económicas de los principales problemas medioambientales desde una perspectiva individual, local y global, concibiéndolos como grandes retos de la humanidad y basándose en datos científicos y en los saberes de la materia."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "CE5",
+      "descripcion": "Proponer y poner en práctica hábitos e iniciativas sostenibles y saludables a nivel local y argumentar sobre sus efectos positivos y la urgencia de adoptarlos basándose en los saberes de la materia."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "CE6",
+      "descripcion": "Relacionar los grandes eventos de la historia terrestre con determinados elementos del registro geológico y con los sucesos que ocurren en la actualidad utilizando los principios geológicos básicos y el razonamiento lógico."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "CE6",
+      "descripcion": "Resolver problemas de datación analizando elementos del registro geológico y fósil y aplicando diferentes métodos."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Proyecto científico",
+      "titulo": "Proyecto científico",
+      "items": [
+        "Hipótesis, preguntas, problemas y conjeturas: planteamiento con perspectiva científica.",
+        "Estrategias para la búsqueda de información: uso de buscadores y webs académicos.",
+        "Estrategias para la realización de trabajo colaborativo: uso de herramientas digitales de edición colaborativa de documentos y de video conferencia.",
+        "Estrategias para la comunicación e interacción con instituciones científicas: herramientas digitales, formatos de presentación de procesos, resultados e ideas (diapositivas, gráficos, vídeos, posters, informes y otros).",
+        "Fuentes fiables de información científica: búsqueda, reconocimiento y utilización.",
+        "Experiencias científicas de laboratorio o de campo: diseño, planificación y realización. Contraste de hipótesis. Controles experimentales.",
+        "Métodos de análisis de resultados científicos: organización, representación y herramientas estadísticas.",
+        "Estrategias de comunicación científica: vocabulario científico, formatos (informes, vídeos, modelos, gráficos y otros) y herramientas digitales.",
+        "La labor científica y las personas dedicadas a la ciencia: contribución a las ciencias biológicas, geológicas y ambientales e importancia social. El papel de la mujer en la ciencia.",
+        "La evolución histórica del saber científico: la ciencia como labor colectiva, interdisciplinar y en continua construcción. La influencia política, económica y social en el desarrollo científico."
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Ecología y sostenibilidad",
+      "titulo": "Ecología y sostenibilidad",
+      "items": [
+        "El medio ambiente como motor económico y social: importancia de la evaluación de impacto ambiental y de la gestión sostenible de recursos y residuos. La relación entre la salud medioambiental, humana y de otros seres vivos:  one health  (una sola salud). Funciones y servicios proporcionados por los ecosistemas.",
+        "La sostenibilidad de las actividades cotidianas: uso de indicadores de sostenibilidad, hábitos de vida compatibles y coherentes con un modelo de desarrollo sostenible. Concepto de huella ecológica.",
+        "Iniciativas locales y globales para promover un modelo de desarrollo sostenible (la hora del planeta, el día mundial sin automóvil, compra de productos km 0, etc.)",
+        "La dinámica de los ecosistemas: los flujos de energía, los ciclos de la materia (carbono, nitrógeno, fósforo y azufre) y las relaciones tróficas. Resolución de problemas.",
+        "El cambio climático: su relación con el ciclo del carbono, causas.",
+        "El cambio climático: consecuencias sobre la salud, la economía, la ecología y la sociedad.",
+        "Estrategias para afrontar el cambio climático: mitigación y adaptación.",
+        "La pérdida de biodiversidad: causas y consecuencias ambientales y sociales.",
+        "El problema de los residuos. Los compuestos xenobióticos: los plásticos y sus efectos sobre la naturaleza y sobre la salud humana y de otros seres vivos. La prevención y gestión adecuada de los residuos."
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Historia de la Tierra y la vida",
+      "titulo": "Historia de la Tierra y la vida",
+      "items": [
+        "El tiempo geológico: magnitud y escala.",
+        "Métodos de datación geológica. Problemas de datación absoluta y relativa.",
+        "La historia de la Tierra: principales acontecimientos geológicos y climáticos.",
+        "Métodos y principios para el estudio del registro geológico: reconstrucción de la historia geológica de una zona. Principios geológicos (de horizontalidad y superposición de estratos, continuidad lateral, uniformidad de procesos, intersección, sucesión faunística, etc.): reconstrucción de la historia geológica de una zona.",
+        "Los principales grupos taxonómicos: características fundamentales. Importancia de la conservación de la biodiversidad. Los siete reinos de Ruggiero."
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. La dinámica y composición terrestre",
+      "titulo": "La dinámica y composición terrestre",
+      "items": [
+        "Estructura, dinámica básica y funciones de la atmósfera.",
+        "Estructura, dinámica básica y funciones de la hidrosfera.",
+        "Estructura y composición de la geosfera: Modelos geoquímico y geodinámico.",
+        "Dinámica de la geosfera: La teoría de la tectónica de placas.",
+        "Métodos de estudio de la geosfera directos e indirectos.",
+        "Los procesos geológicos internos, el relieve y su relación con la tectónica de placas. Tipos de bordes, relieves, actividad sísmica y volcánica y rocas resultantes en cada uno de ellos.",
+        "Los procesos geológicos externos: agentes causales y consecuencias sobre el relieve. Formas principales de modelado del relieve y geomorfología (modelado glaciar, periglaciar, kárstico, fluvial, eólico, estructural, etc.).",
+        "La edafogénesis: Factores y procesos formadores del suelo. La edafodiversidad e importancia de su conservación.",
+        "Los riesgos naturales: relación con los procesos geológicos y las actividades humanas. Estrategias de predicción, prevención y corrección. Los mapas de riesgos y la importancia de la ordenación territorial.",
+        "Clasificación de las rocas: Según su origen y composición. El ciclo litológico.",
+        "Clasificación químico-estructural de los minerales.",
+        "Identificación de minerales y rocas.",
+        "La importancia de los minerales y las rocas: usos cotidianos. Su explotación y uso responsable.",
+        "La importancia de la conservación del patrimonio geológico."
+      ]
+    },
+    {
+      "codigo": "E",
+      "bloque": "E. Fisiología e histología animal",
+      "titulo": "Fisiología e histología animal",
+      "items": [
+        "La función de nutrición: importancia biológica y estructuras implicadas en diferentes grupos taxonómicos.",
+        "La función de relación: fisiología y funcionamiento de los sistemas de coordinación (nervioso y endocrino). Las principales glándulas endocrinas y hormonas.",
+        "La función de relación: fisiología y funcionamiento de los receptores sensoriales.",
+        "La función de relación: fisiología y funcionamiento de los órganos efectores.",
+        "La función de reproducción: importancia biológica, tipos, estructuras implicadas en diferentes grupos taxonómicos."
+      ]
+    },
+    {
+      "codigo": "F",
+      "bloque": "F. Fisiología e histología vegetal",
+      "titulo": "Fisiología e histología vegetal",
+      "items": [
+        "La función de nutrición: la fotosíntesis, su balance general e importancia para la vida en la Tierra.",
+        "La savia bruta y la savia elaborada: composición, formación y mecanismos de transporte.",
+        "La función de relación: tipos de respuestas de los vegetales a estímulos e influencia de las fitohormonas (auxinas, citoquininas, etileno, etc.).",
+        "La función de reproducción: la reproducción sexual y asexual, relevancia evolutiva, los ciclos biológicos, tipos de reproducción asexual.",
+        "Procesos implicados en la reproducción sexual (polinización, fecundación, dispersión de la semilla y el fruto) y su relación con el ecosistema.",
+        "Las adaptaciones de los vegetales al medio: relación entre estas y el ecosistema en el que se desarrollan."
+      ]
+    },
+    {
+      "codigo": "G",
+      "bloque": "G. Los microorganismos y formas acelulares",
+      "titulo": "Los microorganismos y formas acelulares",
+      "items": [
+        "Las eubacterias y las arqueobacterias: diferencias. Los extremófilos. Ejemplos de especies representativas.",
+        "El metabolismo bacteriano: ejemplos de importancia ecológica (simbiosis y ciclos biogeoquímicos). Las bacterias fijadoras de nitrógeno, bacterias nitrificantes y desnitrificantes.",
+        "Los microorganismos como agentes causales de enfermedades infecciosas: zoonosis y epidemias.",
+        "El cultivo de microorganismos: técnicas de esterilización (mechero Bunsen, horno Pasteur, autoclave, radiación, etc.) y cultivo (siembra en estría, en profundidad, en superficie, etc.).",
+        "Mecanismos de transferencia genética horizontal (transformación, conjugación y transducción) en bacterias: el problema de la resistencia a antibióticos.",
+        "Las formas acelulares (virus, viroides y priones): características, mecanismos de infección e importancia biológica. Ejemplos representativos."
+      ]
+    }
+  ]
+}

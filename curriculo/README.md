@@ -52,6 +52,7 @@ curriculo/salida_cataluna/             Decret 175/2022 + PDF de la XTEC
 curriculo/salida_cataluna_batxillerat/ Decret 171/2022 (modif. 103/2026) + XTEC
 curriculo/salida_andalucia/            Orden de 30 de mayo de 2023, ESO (BOJA)
 curriculo/salida_andalucia_bachillerato/ Orden de 30 de mayo de 2023, Bachillerato
+curriculo/salida_ceuta_bachillerato/   Orden EFP/755/2022 (BOE)
 curriculo/salida_galicia/              Decreto 156/2022 (Guía LOMLOE de la Xunta)
 curriculo/salida_pais_vasco/           Decreto 77/2023 (BOPV)
 curriculo/salida_pais_vasco_bachillerato/ Decreto 76/2023 (BOPV)
@@ -126,6 +127,7 @@ campo y no lo traen, así que para ellos vale el valor por defecto, `ceuta`.)*
 | Cataluña · Bachillerato (Decret 171/2022, modif. 103/2026) | 73 | 87 | 1133 | 1972 |
 | Andalucía (Orden 30/05/2023, anexos II y III) | 32 | 60 | 1113 | 1461 |
 | Andalucía · Bachillerato (Orden 30/05/2023 de Bachillerato) | 58 | 73 | 1105 | 1727 |
+| Ceuta y Melilla · Bachillerato (Orden EFP/755/2022) | 47 | 61 | 918 | 1784 |
 | Galicia (Decreto 156/2022 + Guía LOMLOE) | 30 | 60 | 1583 | 4643 |
 | País Vasco (Decreto 77/2023) | 32 | 43 | 733 | 1491 |
 | País Vasco · Bachillerato (Decreto 76/2023) | 65 | 75 | 1144 | 2349 |
@@ -200,6 +202,7 @@ docker compose exec api flask seed curriculo --directorio /curriculo/salida
 docker compose exec api flask seed curriculo --directorio /curriculo/salida_cataluna
 docker compose exec api flask seed curriculo --directorio /curriculo/salida_andalucia
 docker compose exec api flask seed curriculo --directorio /curriculo/salida_galicia
+docker compose exec api flask seed curriculo --directorio /curriculo/salida_ceuta_bachillerato
 ```
 
 El seed **añade y actualiza, pero no borra**. Cuando un extractor mejora y
@@ -225,6 +228,13 @@ cd api
 python -m app.curriculo.extractor \
     --xml ../curriculo/fuentes/ceuta/orden_efp_754_2022.xml \
     --salida ../curriculo/salida
+
+# El Bachillerato de Ceuta es el mismo extractor con otro perfil: la Orden
+# hermana maqueta el Anexo II de otra forma y necesita el suyo (`orden_efp_755`).
+python -m app.curriculo.extractor \
+    --xml ../curriculo/fuentes/ceuta-bachillerato/orden_efp_755_2022.xml \
+    --perfil orden_efp_755 \
+    --salida ../curriculo/salida_ceuta_bachillerato
 
 python -m app.curriculo.extractor_xtec \
     --pdfs ../curriculo/fuentes/cataluna/xtec \

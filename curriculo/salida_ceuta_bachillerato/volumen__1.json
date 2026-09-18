@@ -1,0 +1,149 @@
+{
+  "materia_oficial": "Volumen",
+  "materia": "Volumen",
+  "etapa": "Bachillerato",
+  "ciclo": "Único",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "CE1",
+      "descripcion": "Identificar los fundamentos compositivos del lenguaje tridimensional en obras de diferentes épocas y culturas, analizando sus aspectos formales y estructurales, así como los cánones de proporción y elementos compositivos empleados, para aplicarlos a producciones volumétricas propias equilibradas y creativas.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE2",
+      "descripcion": "Explorar las posibilidades plásticas y expresivas del lenguaje tridimensional, partiendo del análisis de obras de diferentes artistas en las que se establezca una relación coherente entre la imagen y su contenido, para elaborar producciones tridimensionales con diferentes funciones comunicativas y respetuosas de la propiedad intelectual.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE3",
+      "descripcion": "Realizar propuestas de composiciones tridimensionales, seleccionando las técnicas, las herramientas y los materiales de realización más adecuados, para resolver problemas de configuración espacial y apreciar las cualidades expresivas del lenguaje tridimensional.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE4",
+      "descripcion": "Elaborar proyectos individuales o colectivos, adecuando los materiales y procedimientos a la finalidad estética y funcional de los objetos que se pretenden crear y aportando soluciones diversas y creativas a los retos planteados durante la ejecución, para valorar la metodología proyectual como forma de desarrollar el pensamiento divergente en la resolución creativa de problemas.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "CE1",
+      "descripcion": "Analizar los elementos formales y estructurales de obras volumétricas de diferentes épocas y culturas, identificando las técnicas, los materiales y los elementos compositivos empleados, incorporando, cuando proceda, las perspectivas de género e intercultural."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "CE1",
+      "descripcion": "Explicar los cánones de proporción y los elementos compositivos de piezas tridimensionales de diferentes periodos artísticos dentro de su contexto histórico, diferenciando los aspectos decorativos de los estructurales."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "CE1",
+      "descripcion": "Describir formas, estructuras, técnicas, materiales, proporciones y elementos compositivos tridimensionales, aplicando la terminología específica de la materia."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "CE2",
+      "descripcion": "Analizar los aspectos más notables de la configuración de obras tridimensionales, identificando las diferencias entre lo estructural y lo accesorio y describiendo la relación entre su función comunicativa y su nivel icónico."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "CE2",
+      "descripcion": "Explicar las funciones comunicativas del lenguaje tridimensional en obras significativas de diferentes artistas, justificando de forma argumentada la relación establecida entre la imagen y el contenido."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "CE2",
+      "descripcion": "Elaborar producciones volumétricas con una función comunicativa concreta, atendiendo a la relación entre imagen y contenido, así como entre forma, estructura y función comunicativa, con distintos niveles de iconicidad."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "CE3",
+      "descripcion": "Resolver de forma creativa problemas de configuración espacial a través de composiciones tridimensionales, seleccionando las técnicas, las herramientas y los materiales de realización más adecuados en función de los requisitos formales, funcionales, estéticos y expresivos."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "CE3",
+      "descripcion": "Explicar las cualidades expresivas del lenguaje tridimensional en las composiciones tridimensionales propuestas, justificando la selección de las técnicas, las herramientas y los materiales de realización más adecuados."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "CE4",
+      "descripcion": "Planificar proyectos tridimensionales, organizando correctamente sus fases, distribuyendo de forma razonada las tareas, evaluando su viabilidad y sostenibilidad, y seleccionando las técnicas, las herramientas y los materiales más adecuados a las intenciones expresivas, funcionales y comunicativas."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "CE4",
+      "descripcion": "Participar activamente en la realización de proyectos artísticos, asumiendo diferentes funciones, valorando y respetando las aportaciones y experiencias de los demás e identificando las oportunidades de desarrollo personal, social, académico y profesional que ofrece."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "CE4",
+      "descripcion": "Realizar proyectos individuales o colaborativos, adecuando materiales y procedimientos a la finalidad estética y funcional de los objetos que se pretenden crear, y aportando soluciones diversas y creativas a los retos planteados durante la ejecución."
+    },
+    {
+      "codigo": "4.4",
+      "competencia": "CE4",
+      "descripcion": "Evaluar y presentar los resultados de proyectos tridimensionales, analizando la relación entre los objetivos planteados y el producto final obtenido, y explicando las posibles diferencias entre ellos."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Técnicas y materiales de configuración",
+      "titulo": "Técnicas y materiales de configuración",
+      "items": [
+        "Materiales y herramientas de configuración tridimensional. Materiales sostenibles, naturales, efímeros e innovadores. Características técnicas, comunicativas, funcionales y expresivas. Terminología específica.",
+        "Procedimientos de configuración: técnicas aditivas (modelado, escayola directa, etc.), sustractivas (talla), constructivas (estructuras e instalaciones) y de reproducción (moldeado y vaciado, sacado de puntos, pantógrafo, impresoras 3D)."
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Elementos de configuración formal y espacial",
+      "titulo": "Elementos de configuración formal y espacial",
+      "items": [
+        "Las formas tridimensionales y su lenguaje. Elementos estructurales de la forma: línea, plano, arista, vértice, superficie, volumen, texturas (visuales y táctiles), concavidades, convexidades, vacío, espacio, masa, escala, color.",
+        "Composición espacial (campos de fuerza, equilibrio, dinamismo, etc.) y relación entre forma, escala y proporción.",
+        "Relación entre forma y estructura. La forma externa como proyección ordenada de fuerzas internas.",
+        "Elemento de relación (dirección, posición, espacio y gravedad).",
+        "El movimiento en el volumen. Representación en la escultura. Elementos móviles en la obra tridimensional.",
+        "La luz como elemento generador y modelador de formas y espacios.",
+        "Cualidades emotivas y expresivas de los medios gráfico-plásticos en cuerpos volumétricos."
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Análisis de la representación tridimensional",
+      "titulo": "Análisis de la representación tridimensional",
+      "items": [
+        "Escultura y obras de arte tridimensionales en el patrimonio artístico y cultural. Contexto histórico y principales características técnicas, formales, estéticas y comunicativas.",
+        "La perspectiva de género y la perspectiva intercultural.",
+        "Arte objetual y conceptual. La instalación artística.",
+        "Grados de iconicidad en las representaciones escultóricas. Hiperrealismo, realismo, abstracción, síntesis, estilización. Relieve y escultura exenta.",
+        "Las posibilidades plásticas y expresivas del lenguaje tridimensional y su uso creativo en la ideación y realización de obra original.",
+        "El respeto de la propiedad intelectual. Tradición, inspiración, plagio, apropiación.",
+        "Fuentes bibliográficas y digitales de acceso a obras volumétricas de diferentes épocas y culturas: sitios web, acceso digital a museos, bibliotecas o colecciones digitales, etc."
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. El volumen en proyectos tridimensionales",
+      "titulo": "El volumen en proyectos tridimensionales",
+      "items": [
+        "Principios y fundamentos del diseño tridimensional.",
+        "Tipología de formas volumétricas adaptadas al diseño de objetos elementales como medio de estudio y de análisis.",
+        "Metodología proyectual aplicada al diseño de formas y estructuras tridimensionales. Generación y selección de propuestas. Planificación, gestión y evaluación de proyectos. Difusión de resultados.",
+        "Proyectos de estructuras tridimensionales: modularidad, repetición, gradación y ritmo en el espacio.",
+        "Proyectos de producciones artísticas volumétricas: secuenciación, fases y trabajo en equipo.",
+        "Estrategias de trabajo en equipo. Distribución de tareas y liderazgo compartido. Resolución de conflictos.",
+        "Piezas volumétricas sencillas en función del tipo de producto propuesto. Diseño sostenible e inclusivo. Sostenibilidad e impacto de los proyectos artísticos.",
+        "Oportunidades de desarrollo personal, social, académico y profesional vinculadas con la materia.",
+        "La propiedad intelectual: la protección de la creatividad personal."
+      ]
+    }
+  ]
+}

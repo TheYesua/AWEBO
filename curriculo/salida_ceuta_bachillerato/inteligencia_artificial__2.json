@@ -1,0 +1,141 @@
+{
+  "materia_oficial": "Inteligencia Artificial",
+  "materia": "Inteligencia Artificial",
+  "etapa": "Bachillerato",
+  "ciclo": "2º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "CE1",
+      "descripcion": "Comprender aspectos básicos relacionados con los sistemas inteligentes, entendiendo el funcionamiento y la finalidad de sus partes integrantes, así como las circunstancias socioeconómicas y tecnológicas que han favorecido su auge, para analizar, de forma crítica y constructiva, la influencia presente y futura de la inteligencia artificial en el desarrollo de la sociedad y del individuo.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE2",
+      "descripcion": "Analizar el proceso de interacción entre el entorno y los sistemas inteligentes, determinando las necesidades de datos y su tratamiento por parte del sistema y definiendo las características de la comunicación que establece el agente inteligente con su entorno, tanto en el mundo digital como en el real, para diseñar y crear sistemas que utilicen la IA.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE3",
+      "descripcion": "Comprender y aplicar conocimientos interdisciplinares, profundizando en los métodos matemáticos que posibilitan el aprendizaje de sistemas inteligentes, a través de la experimentación mediante la programación de los mismos, para entender, aplicar, modificar y crear sistemas inteligentes funcionales.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE4",
+      "descripcion": "Reflexionar acerca de la contribución de la IA al desarrollo personal y social, de manera crítica, teniendo en cuenta aspectos relativos al respeto de los derechos y libertades de las personas, para analizar contextos normativos que regulen los aspectos éticos del desarrollo y el empleo de técnicas de IA en los distintos ámbitos de la sociedad.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "CE1",
+      "descripcion": "Diferenciar distintos métodos de razonamiento, explicando sus fundamentos, describiendo sus aplicaciones y limitaciones y enfatizando cuales suelen ser empleados en el aprendizaje automático."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "CE2",
+      "descripcion": "Realizar análisis exploratorio de los datos, utilizando descriptores estadísticos y elementos gráficos."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "CE2",
+      "descripcion": "Aplicar técnicas de pretratamiento de datos, tomando decisiones en función de las características de los mismos y posibilitando el empleo de datos categóricos como parte de los datos de entrada para su posterior tratamiento."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "CE2",
+      "descripcion": "Distinguir distintas arquitecturas de redes neuronales, describiendo la funcionalidad y el sentido de cada una de sus partes, prestando especial atención a los módulos de tratamiento de los datos de entrada y salida."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "CE3",
+      "descripcion": "Describir e interpretar la funcionalidad de diversos programas informáticos, que hacen uso de la IA para resolver problemas concretos."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "CE3",
+      "descripcion": "Realizar búsquedas avanzadas sobre repositorios de código como fuente de información, analizando los resultados de la búsqueda, y describiendo la funcionalidad y utilidad de los mismos."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "CE3",
+      "descripcion": "Describir la funcionalidad de los distintos elementos que construyen la capacidad de aprendizaje en las máquinas, distinguiendo sus objetivos específicos y relacionándolos con sus aplicaciones prácticas."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "CE3",
+      "descripcion": "Experimentar con la ejecución de distintos programas de IA, alterando los parámetros de configuración de las técnicas numéricas involucradas, extrayendo conclusiones acerca de su funcionalidad."
+    },
+    {
+      "codigo": "3.5",
+      "competencia": "CE3",
+      "descripcion": "Realizar programas informáticos que implementen arquitecturas sencillas de redes neuronales, utilizando entornos gráficos o textuales."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "CE4",
+      "descripcion": "Analizar y debatir, con sentido crítico, acerca de las potenciales implicaciones del uso generalizado de la IA en diversos ámbitos y proponiendo debilidades, amenazas, fortalezas y oportunidades de la IA en cada ámbito."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "CE4",
+      "descripcion": "Explorar, analizar o participar en iniciativas de ciencia ciudadana basadas en el empleo de la IA para el progreso hacia la resolución de problemáticas de índole social o relacionadas con la consecución de los Objetivos de Desarrollo Sostenible."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Fundamentos de Inteligencia Artificial",
+      "titulo": "Fundamentos de Inteligencia Artificial",
+      "items": [
+        "Introducción a los métodos de razonamiento. Aprendizaje humano frente a aprendizaje automático.",
+        "Razonamiento deductivo. Fundamentos de lógica proposicional. Construcción de argumentos válidos. Operadores lógicos.",
+        "Razonamiento inductivo. Fundamentos de inferencia estadística. Aprendizaje inferencial de las máquinas. Detección de patrones."
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Tratamiento de la información",
+      "titulo": "Tratamiento de la información",
+      "items": [
+        "Datos estructurados y no estructurados. Datos categóricos y numéricos.",
+        "Análisis de los datos: exploración visual, tipos de gráficos para la representación de distribuciones de datos, tipos de formato y valores no significativos.",
+        "Medidas de tendencia central y de dispersión de un conjunto de datos."
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Programación informática",
+      "titulo": "Programación informática",
+      "items": [
+        "Librerías de IA existentes y repositorios de código. Análisis de  scripts  y funciones programadas.",
+        "Programación de aplicaciones de IA sencillas."
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Fundamentos de redes neuronales",
+      "titulo": "Fundamentos de redes neuronales",
+      "items": [
+        "Redes neuronales. Aprendizaje profundo. Elementos básicos: neuronas, capas y pesos.",
+        "Arquitecturas básicas de redes neuronales. Introducción a las redes neuronales convolucionales. Matriz de convolución.",
+        "Optimización numérica: método del descenso del gradiente.",
+        "Funciones de activación y funciones de coste. Aplicaciones."
+      ]
+    },
+    {
+      "codigo": "E",
+      "bloque": "E. Ética e IA",
+      "titulo": "Ética e IA",
+      "items": [
+        "Ética en el tratamiento de los datos y en los algoritmos. Sesgos que generan discriminación, aprendidos por las IA.",
+        "Análisis del impacto de la IA. Debilidades, amenazas, fortalezas y oportunidades.",
+        "Iniciativas de ciencia ciudadana que emplean IA."
+      ]
+    }
+  ]
+}

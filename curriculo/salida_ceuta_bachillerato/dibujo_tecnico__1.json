@@ -1,0 +1,156 @@
+{
+  "materia_oficial": "Dibujo Técnico",
+  "materia": "Dibujo Técnico",
+  "etapa": "Bachillerato",
+  "ciclo": "1º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "CE1",
+      "descripcion": "Interpretar elementos o conjuntos arquitectónicos y de ingeniería, empleando recursos asociados a la percepción, estudio, construcción e investigación de formas para analizar las estructuras geométricas y los elementos técnicos utilizados.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE2",
+      "descripcion": "Utilizar razonamientos inductivos, deductivos y lógicos en problemas de índole gráfico-matemáticos, aplicando fundamentos de la geometría plana para resolver gráficamente operaciones matemáticas, relaciones, construcciones y transformaciones.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE3",
+      "descripcion": "Desarrollar la visión espacial, utilizando la geometría descriptiva en proyectos sencillos, considerando la importancia del dibujo en arquitectura e ingenierías para resolver problemas e interpretar y recrear gráficamente la realidad tridimensional sobre la superficie del plano.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE4",
+      "descripcion": "Formalizar y definir diseños técnicos aplicando las normas UNE e ISO de manera apropiada, valorando la importancia que tiene el croquis para documentar gráficamente proyectos arquitectónicos e ingenieriles.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE5",
+      "descripcion": "Investigar, experimentar y representar digitalmente elementos, planos y esquemas técnicos mediante el uso de programas específicos CAD, de manera individual o grupal, apreciando su uso en las profesiones actuales, para virtualizar objetos y espacios en dos dimensiones y tres dimensiones.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "CE1",
+      "descripcion": "Analizar, a lo largo de la historia, la relación entre las matemáticas y el dibujo geométrico, valorando su importancia en diferentes campos como la arquitectura o la ingeniería, desde la perspectiva de género y la diversidad cultural, empleando adecuadamente el vocabulario específico técnico y artístico."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "CE2",
+      "descripcion": "Solucionar gráficamente cálculos matemáticos y transformaciones básicas aplicando conceptos y propiedades de la geometría plana."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "CE2",
+      "descripcion": "Trazar gráficamente construcciones poligonales basándose en sus propiedades y mostrando interés por la precisión, la claridad y la limpieza."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "CE2",
+      "descripcion": "Resolver gráficamente tangencias y trazar curvas aplicando sus propiedades con rigor en su ejecución."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "CE3",
+      "descripcion": "Representar en sistema diédrico elementos básicos en el espacio determinando su relación de pertenencia, posición y distancia."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "CE3",
+      "descripcion": "Definir elementos y figuras planas en sistemas axonométricos valorando su importancia como métodos de representación espacial."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "CE3",
+      "descripcion": "Representar e interpretar elementos básicos en el sistema de planos acotados haciendo uso de sus fundamentos."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "CE3",
+      "descripcion": "Dibujar elementos en el espacio empleando la perspectiva cónica."
+    },
+    {
+      "codigo": "3.5",
+      "competencia": "CE3",
+      "descripcion": "Valorar el rigor gráfico del proceso, teniendo en cuenta la claridad, la precisión y el proceso de resolución y construcción gráfica."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "CE4",
+      "descripcion": "Documentar gráficamente objetos sencillos mediante sus vistas acotadas aplicando la normativa UNE e ISO en la utilización de sintaxis, escalas y formatos, valorando la importancia de usar un lenguaje técnico común."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "CE4",
+      "descripcion": "Utilizar el croquis y el boceto como elementos de reflexión en la aproximación e indagación de alternativas y soluciones a los procesos de trabajo."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "CE5",
+      "descripcion": "Crear figuras planas y tridimensionales mediante programas de dibujo vectorial, usando las herramientas que aportan y las técnicas asociadas."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "CE5",
+      "descripcion": "Recrear virtualmente piezas en tres dimensiones aplicando operaciones algebraicas entre primitivas en la presentación de proyectos."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Fundamentos geométricos",
+      "titulo": "Fundamentos geométricos",
+      "items": [
+        "Desarrollo histórico del dibujo técnico. Campos de acción y aplicaciones: Dibujo arquitectónico, mecánico, eléctrico y electrónico, geológico, urbanístico, etc.",
+        "Orígenes de la geometría. Thales, Pitágoras, Euclides, Hipatia de Alejandría.",
+        "Concepto de lugar geométrico. Arco capaz. Aplicaciones de los lugares geométricos a las construcciones fundamentales.",
+        "Proporcionalidad, equivalencia y semejanza.",
+        "Triángulos. Puntos y rectas notables. Construcciones.",
+        "Cuadriláteros y polígonos regulares. Propiedades y métodos de construcción.",
+        "Tangencias básicas. Curvas técnicas.",
+        "Interés por el rigor en los razonamientos y precisión, claridad y limpieza en las ejecuciones."
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Geometría proyectiva",
+      "titulo": "Geometría proyectiva",
+      "items": [
+        "Fundamentos de la geometría proyectiva.",
+        "Sistema diédrico: Representación de punto, recta y plano. Trazas con planos de proyección. Determinación del plano. Pertenencia.",
+        "Relaciones entre elementos: Intersecciones, paralelismo y perpendicularidad. Obtención de distancias.",
+        "Sistema axonométrico, ortogonal y oblicuo. Perspectivas isométrica y caballera. Disposición de los ejes y uso de los coeficientes de reducción. Elementos básicos: punto, recta, plano.",
+        "Sistema de planos acotados. Fundamentos y elementos básicos. Identificación de elementos para su interpretación en planos.",
+        "Sistema cónico: fundamentos y elementos del sistema. Perspectiva frontal y oblicua."
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Normalización y documentación gráfica de proyectos",
+      "titulo": "Normalización y documentación gráfica de proyectos",
+      "items": [
+        "Escalas numéricas y gráficas. Construcción y uso.",
+        "Formatos. Doblado de planos.",
+        "Concepto de normalización. Las normas fundamentales UNE e ISO. Aplicaciones de la normalización: simbología industrial y arquitectónica.",
+        "Elección de vistas necesarias. Líneas normalizadas. Acotación."
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Sistemas CAD",
+      "titulo": "Sistemas CAD",
+      "items": [
+        "Aplicaciones vectoriales 2D-3D.",
+        "Fundamentos de diseño de piezas en tres dimensiones.",
+        "Modelado de caja. Operaciones básicas con primitivas.",
+        "Aplicaciones de trabajo en grupo para conformar piezas complejas a partir de otras más sencillas."
+      ]
+    }
+  ]
+}

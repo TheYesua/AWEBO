@@ -1,0 +1,136 @@
+{
+  "materia_oficial": "Dibujo Técnico Aplicado a las Artes Plásticas y al Diseño",
+  "materia": "Dibujo Técnico Aplicado a las Artes Plásticas y al Diseño",
+  "etapa": "Bachillerato",
+  "ciclo": "1º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "CE1",
+      "descripcion": "Observar, analizar y valorar la presencia de la geometría en la naturaleza, el entorno construido y el arte, identificando sus estructuras geométricas, elementos y códigos, con una actitud proactiva de apreciación y disfrute, para explicar su origen, función e intencionalidad en distintos contextos y medios.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE2",
+      "descripcion": "Desarrollar propuestas gráficas y de diseño, utilizando tanto el dibujo a mano alzada como los materiales propios del dibujo técnico y elaborando trazados, composiciones y transformaciones geométricas en el plano de forma intuitiva y razonada, para incorporar estos recursos tanto en la transmisión y desarrollo de ideas, como en la expresión de sentimientos y emociones.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE3",
+      "descripcion": "Comprender e interpretar el espacio y los objetos tridimensionales, analizando y valorando su presencia en las representaciones artísticas, seleccionando y utilizando el sistema de representación más adecuado para aplicarlo a la realización de ilustraciones y proyectos de diseño de objetos y espacios.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE4",
+      "descripcion": "Analizar, definir formalmente o visualizar ideas, aplicando las normas fundamentales UNE e ISO para interpretar y representar objetos y espacios, así como documentar proyectos de diseño.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE5",
+      "descripcion": "Integrar y aprovechar las posibilidades que ofrecen las herramientas digitales, seleccionando y utilizando programas y aplicaciones específicas de dibujo vectorial 2D y de modelado 3D para desarrollar procesos de creación artística personal o de diseño.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "CE1",
+      "descripcion": "Reconocer diferentes tipos de estructuras, formas y relaciones geométricas en la naturaleza, el entorno, el arte y el diseño, analizando su función y valorando su importancia dentro del contexto histórico."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "CE2",
+      "descripcion": "Dibujar formas poligonales y resolver tangencias básicas y simetrías aplicadas al diseño de formas, valorando la importancia de la limpieza y la precisión en el trazado."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "CE2",
+      "descripcion": "Transmitir ideas, sentimientos y emociones mediante la realización de estudios, esbozos y apuntes del natural a mano alzada, identificando la geometría interna y externa de las formas y apreciando su importancia en el dibujo."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "CE3",
+      "descripcion": "Diferenciar las características de los distintos sistemas de representación, seleccionando en cada caso el sistema más apropiado a la finalidad de la representación."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "CE3",
+      "descripcion": "Representar objetos sencillos mediante sus vistas diédricas."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "CE3",
+      "descripcion": "Diseñar envases sencillos, representándolos en perspectiva isométrica o caballera y reflexionando sobre el proceso realizado y el resultado obtenido."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "CE3",
+      "descripcion": "Dibujar ilustraciones y viñetas aplicando las técnicas de la perspectiva cónica en la representación de espacios, objetos o personas desde distintos puntos de vista."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "CE4",
+      "descripcion": "Realizar bocetos y croquis conforme a las normas UNE e ISO, comunicando la forma y dimensiones de objetos, proponiendo ideas creativas y resolviendo problemas con autonomía."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "CE5",
+      "descripcion": "Adquirir destrezas en el manejo de herramientas y técnicas de dibujo vectorial en 2D, aplicándolos a la realización de proyectos de diseño."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "CE5",
+      "descripcion": "Iniciarse en el modelado en 3D mediante el diseño de esculturas o instalaciones, valorando su potencial como herramienta de creación."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Geometría, arte y entorno",
+      "titulo": "Geometría, arte y entorno",
+      "items": [
+        "La geometría en la naturaleza, en el entorno y en el arte. Observación directa e indirecta.",
+        "La geometría en la composición.",
+        "La representación del espacio en el arte. Estudios sobre la geometría y la perspectiva a lo largo de la historia del arte.",
+        "Relaciones geométricas en el arte y el diseño: proporción, igualdad y simetría. El número áureo en el arte y la naturaleza.",
+        "Escalas numéricas y gráficas. Construcción y uso.",
+        "Construcciones poligonales. Aplicación en el diseño.",
+        "Tangencias básicas. Curvas técnicas. Aplicación en el diseño.",
+        "Estudios a mano alzada de la geometría interna y externa de la forma. Apuntes y esbozos."
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Sistemas de representación del espacio aplicado",
+      "titulo": "Sistemas de representación del espacio aplicado",
+      "items": [
+        "Concepto y tipos de proyección. Finalidad de los distintos sistemas de representación.",
+        "Sistema diédrico ortogonal en el primer diedro. Vistas en sistema europeo.",
+        "Perspectiva isométrica y perspectiva caballera. Iniciación al diseño de  packaging .",
+        "Aplicación de la perspectiva cónica, frontal y oblicua, al cómic y a la ilustración."
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Normalización y diseño de proyectos",
+      "titulo": "Normalización y diseño de proyectos",
+      "items": [
+        "Concepto de normalización. Las normas fundamentales UNE e ISO.",
+        "Documentación gráfica de proyectos: necesidad y ámbito de aplicación de las normas.",
+        "Elaboración de bocetos y croquis."
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Herramientas digitales para el diseño",
+      "titulo": "Herramientas digitales para el diseño",
+      "items": [
+        "Iniciación a las herramientas y técnicas de dibujo vectorial en 2D. Aplicaciones al diseño gráfico.",
+        "Iniciación al modelado en 3D. Aplicaciones a proyectos artísticos."
+      ]
+    }
+  ]
+}

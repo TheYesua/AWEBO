@@ -1,0 +1,151 @@
+{
+  "materia_oficial": "Geografía",
+  "materia": "Geografía",
+  "etapa": "Bachillerato",
+  "ciclo": "Único",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "CE1",
+      "descripcion": "Reconocer los retos ecosociales actuales y futuros de España, debatiendo desde la perspectiva geográfica sobre los mensajes recibidos a través de canales oficiales y extraoficiales, formales e informales, y desarrollando el pensamiento crítico, para transformar patrones de consumo insostenibles y adoptar estilos de vida saludables.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE2",
+      "descripcion": "Comprender la complejidad del espacio geográfico, mediante la interpretación de fuentes de información visuales, para apreciar la riqueza de los paisajes naturales y humanizados y valorar la sostenibilidad como principio de las relaciones entre los ecosistemas naturales y la acción humana.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE3",
+      "descripcion": "Analizar la diversidad natural de España y su singularidad geográfica dentro de Europa, a través de la comparación de características comunes y específicas del relieve, el clima, la hidrografía y la biodiversidad, para reflexionar sobre la percepción personal del espacio.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE4",
+      "descripcion": "Aplicar las Tecnologías de la Información Geográfica (TIG), métodos y técnicas propios o de ciencias afines, localizando fenómenos naturales y humanos, y argumentando con rigor sus límites o categorías, para resolver eficientemente el problema de la escala en cualquier análisis o propuesta de actuación.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE5",
+      "descripcion": "Asumir la globalización como contexto que enmarca la evolución de los sistemas económicos y los comportamientos sociales recientes, investigando sus relaciones de causa y efecto y creando productos propios que demuestren la interconexión y la interdependencia a todas las escalas, para promover el respeto a la dignidad humana y al medio ambiente como base de una ciudadanía global.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE6",
+      "descripcion": "Explicar de forma crítica los desequilibrios territoriales de España y de su estructura sociolaboral y demográfica, reconociendo los procesos y las decisiones que han contribuido a las desigualdades presentes, para reforzar la conciencia de solidaridad y el compromiso con los mecanismos de cooperación y cohesión españoles y europeos.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE7",
+      "descripcion": "Movilizar conocimientos previos, nuevos y de otros campos del saber al abordar situaciones del pasado, del presente o del futuro, reorientando eficazmente decisiones y estrategias de trabajo individual o en equipo, para aportar soluciones innovadoras a contextos en transformación y fomentar el aprendizaje permanente.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "CE1",
+      "descripcion": "Cuestionar modos de vida insostenibles mediante el análisis geográfico de todo tipo de fuentes de información que trate de los retos ecosociales presentes y futuros, y desde argumentos fundados en la relevancia y necesidad de las acciones para afrontarlos."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "CE1",
+      "descripcion": "Debatir sobre los retos naturales y sociales de España de forma comprometida y respetuosa con opiniones ajenas, utilizando estrategias orales con apoyo digital de gráficos, imágenes y cartografía, y manejando datos rigurosos."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "CE2",
+      "descripcion": "Valorar todo impacto de la acción antrópica desde el principio de sostenibilidad, reconociendo la complejidad sistémica del medio natural y de las propias actividades humanas."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "CE2",
+      "descripcion": "Extraer información de paisajes naturales y humanizados, analizando fuentes visuales, distinguiendo elementos geográficos e interpretando la influencia e interrelaciones de factores físicos y humanos."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "CE3",
+      "descripcion": "Reflexionar sobre la percepción del espacio geográfico, localizando y reconociendo en mapas regiones geomorfológicas y bioclimáticas con características comunes y específicas, destacando su aportación a la sostenibilidad del medio."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "CE3",
+      "descripcion": "Identificar la diversidad y singularidad de paisajes naturales, comparando su distribución, características y contrastes a escala autonómica, de España y de Europa, así como formas humanas de relación con esos entornos."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "CE4",
+      "descripcion": "Emplear la escala apropiada para localizar o representar, con apoyo de las TIG, cualquier fenómeno físico o humano, justificando los métodos y datos elegidos, y la delimitación de regiones o categorías de análisis, así como de áreas de transición."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "CE4",
+      "descripcion": "Crear productos propios individuales o en grupo con fines explicativos comunicando diagnósticos, proponiendo hipótesis o conclusiones, y aplicando las TIG."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "CE5",
+      "descripcion": "Valorar la dignidad humana analizando críticamente las consecuencias de nuestras acciones sobre las condiciones laborales y de vida, tanto en España como en otros países, investigando el sistema de relaciones económicas globalizadas y los sectores económicos, y planteando soluciones razonables."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "CE5",
+      "descripcion": "Expresar la necesidad de preservar el medio ambiente, indagando sobre los impactos de los modos de producción, distribución y consumo a escala local y global, y proponiendo actuaciones de mejora."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "CE6",
+      "descripcion": "Justificar la necesidad de los mecanismos de compensación de las desigualdades individuales y territoriales, identificando los procesos pasados y recientes, así como sus causas y consecuencias sociolaborales y demográficas."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "CE6",
+      "descripcion": "Argumentar sobre el origen de los desequilibrios socioeconómicos de España y Europa, analizando los factores de localización de las actividades económicas y de la población en una sociedad terciarizada."
+    },
+    {
+      "codigo": "7.1",
+      "competencia": "CE7",
+      "descripcion": "Reelaborar saberes sobre fenómenos naturales y humanos relevantes a diferentes escalas y en nuevos contextos, aplicando el pensamiento geográfico, movilizando y revisando críticamente conocimientos previos y nuevos, diagnosticando problemas y oportunidades, y razonando sobre posibles previsiones y soluciones."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. España, Europa y la globalización",
+      "titulo": "España, Europa y la globalización",
+      "items": [
+        "España: localización y situación geográfica en el mundo a través de mapas de relieve, bioclimáticos y políticos. Posición relativa de España en el mundo según diferentes indicadores socioeconómicos. Geoposicionamiento y dispositivos móviles como herramientas para el acceso a diferentes tipos de información y el análisis.",
+        "España en el mundo. España ante la globalización: amenazas y oportunidades. Contexto geopolítico mundial y participación en organismos internacionales. La estrategia de acción exterior, cooperación internacional y misiones en el exterior. Diagnóstico de los compromisos con los Objetivos de Desarrollo Sostenible.",
+        "España en Europa: localización de países y aspectos naturales. La Unión Europea en la actualidad: su influencia en situaciones cotidianas. Análisis de desequilibrios territoriales y políticas de cohesión a través del uso de mapas y de indicadores socioeconómicos. El área del estrecho de Gibraltar: debilidades, amenazas, fortalezas y oportunidades.",
+        "Organización administrativa de España. El estudio de los desequilibrios territoriales nacionales y autonómicos. Utilidad del Atlas Nacional de España y de los indicadores socioeconómicos oficiales. Gestión y ordenación del territorio: el debate sobre las políticas de cohesión y desarrollo regional. Situación actual y proyecciones del estado del bienestar."
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. La sostenibilidad del medio físico de España",
+      "titulo": "La sostenibilidad del medio físico de España",
+      "items": [
+        "Factores físicos y diversidad de paisajes y ecosistemas. Análisis de los condicionantes geomorfológicos, bioclimáticos, edáficos, hídricos y relativos a las actividades humanas y prevención de los riesgos asociados para las personas: su análisis por los medios de comunicación.",
+        "Diversidad climática de España. Análisis comparativos de distribución y representación de climas. Emergencia climática: cambios en los patrones termopluviométricos; causas, consecuencias y medidas de mitigación y adaptación. Estrategias de interpretación del tiempo y alertas meteorológicas; webs y aplicaciones móviles.",
+        "Biodiversidad, suelos y red hídrica. Características por regiones naturales mediante la interpretación de imágenes, cartografía y datos. Riesgos generados por las personas. Impacto de las actividades humanas y efectos sobre las mismas: pérdida de biodiversidad, de suelos y gestión del agua.",
+        "Políticas ambientales en España y la Unión Europea: uso de herramientas de diagnóstico. La red de Espacios Naturales Protegidos y la red Natura 2000. El debate sobre los cambios del modelo de desarrollo: el principio de sostenibilidad."
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. La ordenación del territorio en el enfoque ecosocial",
+      "titulo": "La ordenación del territorio en el enfoque ecosocial",
+      "items": [
+        "La población española: análisis de su estructura y desequilibrios regionales y municipales. Interpretación causal de datos, gráficos y mapas: tendencias pasadas, presentes y proyecciones. Ventajas e inconvenientes de los movimientos migratorios; el respeto por la diversidad étnica y cultural. El reto demográfico: envejecimiento y despoblación rural.",
+        "Los espacios urbanos en España: las grandes concentraciones urbanas en un contexto europeo y mundial. Funciones de la ciudad y relaciones de interdependencia con el territorio: análisis de ejemplos reales mediante cartografía digital. Estructura urbana a través de los planos: repercusiones sobre las formas de vida y los impactos medioambientales. Modelos de ciudades sostenibles. El uso del espacio público. La movilidad segura, saludable y sostenible.",
+        "Los espacios rurales. Identificación de los paisajes agrarios. Transformaciones de las actividades agropecuarias: prácticas sostenibles e insostenibles. El valor socioambiental y económico de los productos agroalimentarios y forestales de cercanía: indagación con ejemplos cercanos de huellas ecológicas y de la estructura sociolaboral. Influencia de la actual Política Agraria Común en el desarrollo rural y la sostenibilidad. Estudio de casos: etiquetados diferenciados, ecológico, etc.",
+        "Los recursos marinos y la transformación del litoral: pesca, acuicultura y otros aprovechamientos; conflictos de usos aplicando las TIG. Sostenibilidad y Política Pesquera Común. Estudio de casos: marisqueo, pesca de bajura y altura, acuicultura, sobreexplotación de caladeros, etc.",
+        "Los espacios industriales. Transformaciones en las actividades industriales y los paisajes mediante las TIG y otras fuentes visuales: materias primas y fuentes de energía. Evaluación de huellas ecológicas con ejemplos cercanos; dependencia y transición energéticas; estructura del tejido industrial, sociolaboral y de empleo indirecto. Impacto de la deslocalización sobre sectores de la industria española. Estudio de casos: construcción, automovilístico, agroalimentario, etc., y factores de localización. El debate sobre la influencia de las políticas de la Unión Europea y la globalización.",
+        "Los espacios terciarizados. El modelo de economía circular y los servicios: relaciones entre producción, distribución y venta. Análisis crítico de huellas ecológicas, estructura sociolaboral, responsabilidad social corporativa y de los consumidores con ejemplos cercanos. Estudio de casos: competitividad y desequilibrios en transporte, comercio, turismo, servicios esenciales, etc. y factores de localización. Modelos insostenibles de servicios y alternativas. La economía digital: impacto de la «economía colaborativa» y nuevos modelos de negocio en el contexto global y de la Unión Europea."
+      ]
+    }
+  ]
+}

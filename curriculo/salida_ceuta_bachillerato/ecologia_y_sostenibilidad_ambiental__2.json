@@ -1,0 +1,192 @@
+{
+  "materia_oficial": "Ecología y Sostenibilidad Ambiental",
+  "materia": "Ecología y Sostenibilidad Ambiental",
+  "etapa": "Bachillerato",
+  "ciclo": "Único",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "CE1",
+      "descripcion": "Localizar fuentes de información ambiental, interpretar los datos ambientales, organizarlos y transmitirlos con rigor y sentido crítico, utilizando los medios y formatos más adecuados para facilitar su comprensión, resolver cuestiones y crear contenidos.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE2",
+      "descripcion": "Diseñar, plantear y desarrollar proyectos de mejora y concienciación ambiental, analizando con fundamento científico los impactos de determinadas acciones cotidianas sobre medio natural para promover el conocimiento, el respeto y la defensa del entorno y fomentar y adoptar estilos de vida sostenibles.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE3",
+      "descripcion": "Reconocer problemas medioambientales a partir de situaciones diversas y resolverlos, buscando y utilizando estrategias adecuadas con flexibilidad y sentido crítico y cambiando el procedimiento si fuera necesario, para proponer soluciones teóricas razonables y fundamentadas a los mismos.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE4",
+      "descripcion": "Analizar las relaciones entre los sistemas naturales, la economía, la sociedad, la salud y la calidad de vida, adquiriendo una visión holística de la ecosfera a partir de razonamientos y fundamentos científicos para reconocer y explicar la dependencia entre especies y justificar la importancia de la adopción de un modelo de desarrollo sostenible.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "CE1",
+      "descripcion": "Localizar y hacer uso de fuentes fiables de información ambiental, identificándolas y diferenciándolas de fuentes no científicas."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "CE1",
+      "descripcion": "Analizar críticamente, interpretar y organizar información ambiental en diferentes formatos (modelos, gráficos, tablas, diagramas, fórmulas, esquemas, etc.), contrastando su veracidad."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "CE1",
+      "descripcion": "Transmitir información ambiental, resultados o conclusiones de un proyecto u opiniones fundamentadas y crear contenidos, utilizando el vocabulario y los formatos apropiados (modelos, gráficos, tablas, vídeos, informes, diagramas, fórmulas, esquemas, símbolos, etc.) de forma clara y rigurosa y citando las fuentes."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "CE1",
+      "descripcion": "Argumentar sobre información ambiental, resultados o conclusiones de un proyecto relacionados con los saberes de la materia, utilizando el razonamiento y fundamentos científicos."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "CE2",
+      "descripcion": "Diseñar proyectos científicos o de ingeniería relacionados con la promoción y adopción de estilos de vida y modelos ecosociales sostenibles, utilizando el razonamiento y fundamentos científicos."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "CE2",
+      "descripcion": "Realizar proyectos científicos o de ingeniería relacionados con los ecosistemas, la conservación medioambiental y el desarrollo sostenible organizando las tareas, cooperando y utilizando las herramientas, materiales y técnicas adecuadas."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "CE2",
+      "descripcion": "Interpretar y analizar los resultados obtenidos en un proyecto científico o evaluar los productos generados en un proyecto de ingeniería teniendo en cuenta los objetivos o cuestiones planteados y utilizando herramientas matemáticas y tecnológicas cuando sea necesario."
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "CE2",
+      "descripcion": "Buscar y desarrollar colaboraciones dentro y fuera del centro educativo con el fin de realizar un proyecto relacionado con los ecosistemas, la conservación medioambiental y la sostenibilidad, utilizando las herramientas tecnológicas adecuadas y adoptando una actitud inclusiva y respetuosa hacia la diversidad."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "CE3",
+      "descripcion": "Cuestionarse e identificar situaciones o plantear problemas relacionados con los ecosistemas, la conservación medioambiental y el desarrollo sostenible utilizando el razonamiento y fundamentos científicos."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "CE3",
+      "descripcion": "Resolver cuestiones o problemas relacionados con los ecosistemas, la conservación medioambiental y la sostenibilidad utilizando conocimientos propios, datos o información, razonamiento y herramientas digitales."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "CE3",
+      "descripcion": "Evaluar la viabilidad o idoneidad de la solución a un problema relacionado con los ecosistemas, la conservación medioambiental o la sostenibilidad, cambiando los métodos de resolución o las conclusiones si fuera necesario."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "CE4",
+      "descripcion": "Analizar los elementos y relaciones dinámicas de los sistemas naturales utilizando la observación, el razonamiento, las metodologías científicas, los conocimientos propios o la información disponibles."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "CE4",
+      "descripcion": "Analizar aspectos sociales y económicos relacionados con las materias primas y las actividades productivas, razonando sobre su importancia y su impacto en las personas a partir de conocimientos propios o fuentes de información."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "CE4",
+      "descripcion": "Identificar las necesidades básicas para el mantenimiento de la salud del ser humano como especie, relacionándolas y diferenciándolas de las aspiraciones individuales o de aquellas ligadas a la cultura, la presión social o a la influencia de la sociedad de consumo."
+    },
+    {
+      "codigo": "4.4",
+      "competencia": "CE4",
+      "descripcion": "Argumentar, utilizando el razonamiento, conocimientos propios e información científica, histórica o periodística, sobre cómo aspectos concretos de la sociedad o la economía dependen de determinados recursos o procesos naturales."
+    },
+    {
+      "codigo": "4.5",
+      "competencia": "CE4",
+      "descripcion": "Justificar de forma razonada y fundamentada la importancia del desarrollo sostenible, utilizando argumentos basados en la interdependencia entre especies; el valor socioeconómico de los procesos, recursos y espacios naturales, las necesidades básicas del ser humano como especie y los derechos humanos."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. La ecología como ciencia",
+      "titulo": "La ecología como ciencia",
+      "items": [
+        "Metodologías científicas y diseño experimental: aplicación práctica.",
+        "Estrategias y formatos de comunicación científica y medioambiental.",
+        "Las personas dedicadas a las ciencias de la Tierra y del medio ambiente y su contribución a la sociedad. El papel de la mujer.",
+        "Concepto de ecología y medio ambiente.",
+        "Reduccionismo y holismo (teoría de Gaia). Teoría de sistemas."
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Componentes y dinámica de los ecosistemas",
+      "titulo": "Componentes y dinámica de los ecosistemas",
+      "items": [
+        "Los ecosistemas: componentes, flujo de energía, ciclos de materia, parámetros, niveles tróficos y relaciones intraespecíficas e interespecíficas. Concepto de hábitat y nicho. Los principales biomas. Los ecosistemas locales.",
+        "Factores limitantes en ecosistemas. Capacidad de carga. Límites de tolerancia: especies estenoicas y eurioicas. Estrategas de la K y R.",
+        "Las sucesiones ecológicas: primarias y secundarias. Resiliencia ambiental y sus limitaciones.",
+        "La biodiversidad genética, de especies y de ecosistemas: importancia y cálculo. Causas y consecuencias de la pérdida de biodiversidad. La 6.ª gran extinción."
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. El desarrollo sostenible",
+      "titulo": "El desarrollo sostenible",
+      "items": [
+        "El desarrollo incontrolado, el conservacionismo y el desarrollo sostenible. Responsabilidad ecosocial.",
+        "Educación y conciencia ambiental y los grandes retos ambientales del futuro: avances tecnológicos y desarrollo sostenible.",
+        "Ecodependencia: Necesidades humanas (físicas, emocionales y sociales) y su relación con el medio natural.",
+        "Indicadores de sostenibilidad ambiental: la huella ecológica e indicadores de presión-estado-respuesta. Biocapacidad (déficit o superávit ecológico). Principios de sostenibilidad de Herman Daly.",
+        "Evaluación y declaración de impacto ambiental. Figuras de protección de espacios naturales. Instituciones y acuerdos nacionales e internacionales para la protección medioambiental.",
+        "Estilos de vida y su huella ecológica: a lo largo de la historia y la diferencia entre países.",
+        "La dieta saludable y sostenible. Impacto de la dieta sobre el medio ambiente. La pesca y acuicultura, ganadería y agricultura sostenibles. El bienestar animal.",
+        "Principales riesgos naturales. Definición de riesgo: peligrosidad, vulnerabilidad y exposición. Estrategias de predicción y prevención."
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. La atmósfera",
+      "titulo": "La atmósfera",
+      "items": [
+        "Estructura y funciones. Importancia para los seres vivos.",
+        "Dinámica atmosférica y modelo de circulación general de la atmósfera.",
+        "Principales contaminantes atmosféricos: efectos locales y globales sobre el entorno, la economía y la sociedad; influencia de la dinámica atmosférica en su distribución. Medidas preventivas, paliativas y compensatorias.",
+        "El balance energético del planeta. El clima. La historia climática del planeta. Influencia humana sobre el clima.",
+        "La huella de carbono. Causas, evidencias y posibles consecuencias ambientales, para la salud, económicas y sociales del cambio climático. Emergencia climática. Medidas de mitigación y de adaptación."
+      ]
+    },
+    {
+      "codigo": "E",
+      "bloque": "E. La hidrosfera",
+      "titulo": "La hidrosfera",
+      "items": [
+        "Propiedades del agua y su relación con los seres vivos.",
+        "Funciones y dinámica de la hidrosfera. Ciclo el agua y balance hídrico. Las corrientes oceánicas y su influencia en el clima.",
+        "Usos del agua. La huella hídrica. El consumo directo e indirecto de agua. El agua y las crisis humanitarias y sociales. Medidas para el uso sostenible del agua.",
+        "La contaminación de las aguas: concepto, tipos y efectos sobre el entorno, los seres vivos y la economía local y global. Ejemplos del entorno próximo.",
+        "Parámetros de calidad del agua. La autodepuración del agua y sus limitaciones. Medidas preventivas, paliativas y compensatorias de la contaminación de las aguas. Ciclo urbano del agua."
+      ]
+    },
+    {
+      "codigo": "F",
+      "bloque": "F. Recursos naturales y residuos",
+      "titulo": "Recursos naturales y residuos",
+      "items": [
+        "Recursos naturales: renovables y no renovables, principales recursos, usos, explotación y conflictos asociados.",
+        "Las fuentes de energía renovables y no renovables. Ventajas e inconvenientes. El futuro de la producción de energía. La eficiencia energética en el entorno cotidiano.",
+        "El suelo como ecosistema y como recurso potencialmente renovable. La productividad del suelo. Causas y consecuencias sociales y ambientales de la pérdida de suelos y medidas preventivas, correctoras y compensatorias. Desertización y desertificación.",
+        "El consumo responsable y el comercio justo. Consecuencias de las acciones de consumo sobre el entorno, los derechos de las personas, la salud colectiva y la calidad de vida.",
+        "El decrecimiento sostenible. La deuda ecológica. Economía del bien común. Economía circular. Productos km 0. Consumo estacional. Ecoturismo y turismo sostenible.",
+        "Los residuos: tipos, problemas asociados, prevención, tratamiento, gestión y valorización. La regla de las erres.",
+        "El problema de los plásticos y otros compuestos xenobióticos: prevención y gestión de sus residuos, materiales alternativos."
+      ]
+    }
+  ]
+}

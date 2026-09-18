@@ -1,0 +1,174 @@
+{
+  "materia_oficial": "Empresa y Diseño de Modelos de Negocio",
+  "materia": "Empresa y Diseño de Modelos de Negocio",
+  "etapa": "Bachillerato",
+  "ciclo": "Único",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "CE1",
+      "descripcion": "Analizar la actividad empresarial y emprendedora, reconociendo el poder de transformación que ejercen en la sociedad y reflexionando sobre el valor de la innovación y la digitalización en este proceso, para comprender el papel que desempeñan dentro del funcionamiento global de la economía actual.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE2",
+      "descripcion": "Investigar el entorno económico y social y su influencia en la actividad empresarial, analizando las interrelaciones empresas-entorno e identificando estrategias viables que partan de criterios de responsabilidad social corporativa, la igualdad y la inclusión, para valorar la capacidad de adaptación de las empresas.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE3",
+      "descripcion": "Reconocer y comprender modelos de negocio actuales comparándolos con otros modelos tradicionales y aplicando estrategias y herramientas que faciliten el diseño creativo para proponer modelos de negocio que aporten valor, permitan satisfacer necesidades y contribuir al bienestar económico y social.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE4",
+      "descripcion": "Valorar y seleccionar estrategias comunicativas de aplicación al mundo empresarial, utilizando nuevas fórmulas y obteniendo la información que se genera tanto en el ámbito interno como externo de la empresa, para gestionar eficazmente la información necesaria en el proceso de toma de decisiones y su correcta trasmisión.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE5",
+      "descripcion": "Realizar el análisis previsional del modelo de negocio diseñado, aplicando las herramientas de análisis empresarial necesarias para comprender todo el proceso llevado a cabo y validar la propuesta del modelo de negocio.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "CE1",
+      "descripcion": "Comprender la importancia de la actividad empresarial y el emprendimiento dentro de la economía actual, reconociendo el poder de transformación que ejercen en la sociedad y reflexionando sobre el valor la innovación y la digitalización."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "CE1",
+      "descripcion": "Analizar el papel de la I+D+I en el desarrollo social y empresarial, identificando nuevas tendencias y tecnologías que tienen un alto impacto en la economía."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "CE2",
+      "descripcion": "Valorar la capacidad de adaptación ágil, responsable y sostenible de las empresas a los cambios del entorno y a las exigencias del mercado investigando el entorno económico y social y su influencia en la actividad empresarial."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "CE2",
+      "descripcion": "Conocer los distintos tipos de empresa, sus elementos y funciones, así como las formas jurídicas que adoptan, relacionando con cada una de ellas las responsabilidades legales de sus propietarios y gestores y las exigencias de capital."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "CE2",
+      "descripcion": "Identificar y analizar las características del entorno en el que la empresa desarrolla su actividad, explicando, a partir de ellas, las distintas estrategias y decisiones adoptadas y las posibles implicaciones sociales y medioambientales de su actividad."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "CE3",
+      "descripcion": "Proponer un modelo de negocio o de gestión diferenciado que permita dar respuesta a las necesidades actuales, comparando distintos modelos y utilizando estrategias y herramientas de diseño creativo."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "CE3",
+      "descripcion": "Analizar las características organizativas y funcionales de la empresa, analizando a partir de ellas, las decisiones de planificación, gestión y optimización de actividades, recursos y asociaciones clave del modelo de negocio."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "CE3",
+      "descripcion": "Analizar y tomar decisiones sobre los procesos productivos desde la perspectiva de la eficiencia y la productividad, definiendo el soporte necesario para hacer realidad el modelo de negocio."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "CE3",
+      "descripcion": "Analizar las características del mercado y explicar, de acuerdo con ellas, la propuesta de valor, canales, relaciones con clientes y fuentes de ingresos del modelo de negocio."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "CE4",
+      "descripcion": "Gestionar eficazmente la información y facilitar el proceso de toma de decisiones a partir de la información obtenida tanto en el ámbito interno como externo de la empresa y aplicando estrategias y nuevas fórmulas comunicativas."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "CE4",
+      "descripcion": "Seleccionar estrategias de comunicación aplicadas al mundo empresarial, utilizando nuevas fórmulas comunicativas que faciliten la gestión eficaz de la información y la trasmisión de la misma a otros."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "CE4",
+      "descripcion": "Exponer el proyecto de modelo de negocio llevado a cabo utilizando las herramientas necesarias que permitan despertar el interés y cautivar a los demás con la propuesta de valor presentada."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "CE5",
+      "descripcion": "Validar la propuesta de modelo de negocio diseñado dentro de un contexto determinado, definiéndolo a partir de las tendencias clave del momento, la situación macroeconómica, el mercado y la competencia, comprendiendo todo el proceso llevado a cabo y aplicando técnicas de estudio previsional y herramientas de análisis empresarial."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "CE5",
+      "descripcion": "Determinar previsionalmente la estructura de ingresos y costes, calculando su beneficio y umbral de rentabilidad, a partir del modelo de negocio planteado."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "CE5",
+      "descripcion": "Elaborar un plan de negocio básico sobre un escenario concreto, utilizando el método de simulación, justificando las decisiones tomadas y optimizando los posibles resultados de forma iterativa"
+    },
+    {
+      "codigo": "5.4",
+      "competencia": "CE5",
+      "descripcion": "Analizar y explicar la situación económico-financiera, a partir de la información recogida tanto en el balance como en la cuenta de pérdidas y ganancias e indicando las posibles soluciones a los desequilibrios encontrados."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. La empresa y su entorno",
+      "titulo": "La empresa y su entorno",
+      "items": [
+        "El empresario o la empresaria. El/la emprendedora. Perfiles.",
+        "La empresa. Clasificación. Localización y dimensión de la empresa. Las empresas sociales. Marco jurídico que regula la actividad empresarial.",
+        "El entorno empresarial. Objetivos de desarrollo sostenible. Responsabilidad social corporativa. Mujer y emprendimiento. Inclusión y emprendimiento.",
+        "La empresa, digitalización e innovación. I+D+I. Teorías de la innovación. Tipos de innovación. Tendencias emergentes. Estrategias de innovación. Crecimiento empresarial."
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. El modelo de negocio y de gestión",
+      "titulo": "El modelo de negocio y de gestión",
+      "items": [
+        "Empresa y modelo de negocio.",
+        "La función comercial. Marketing. Plan de marketing. Segmento de clientes. La propuesta de valor. Canales. Relaciones con clientes. Fuentes de ingresos. Estrategias de marketing.",
+        "La función productiva. Aprovisionamiento y gestión de inventarios. Proceso productivo. Eficiencia y productividad. Actividades clave. Recursos clave. Asociaciones clave. Estructura de costes: clasificación y cálculo de costes.",
+        "La gestión de los recursos humanos. Selección de personal. Formación y funcionamiento de equipos ágiles. Habilidades que demanda el mercado de trabajo. Motivación de recursos humanos. La contratación y las relaciones laborales de la empresa. Las políticas de igualdad y de inclusión en las empresas.",
+        "La función financiera. Estructura económica y financiera. Inversión. Valoración y selección de inversiones. Recursos financieros. Análisis de fuentes alternativas de financiación interna y externa.",
+        "La información en la empresa: el Plan General de Contabilidad y las obligaciones contables. Composición y valoración del patrimonio. Cuentas anuales e imagen fiel. Elaboración de balance y cuenta de pérdidas y ganancias. La fiscalidad empresarial."
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Herramientas para innovar en modelos de negocio y de gestión",
+      "titulo": "Herramientas para innovar en modelos de negocio y de gestión",
+      "items": [
+        "El lienzo de modelo de negocio y de gestión: Concepto, áreas, bloques, utilidad y patrones de modelos de negocio. Gratis,  long tail,  multiplataforma, y otros modelos de negocio.",
+        "El punto de vista de los clientes: Mapa de empatía. Segmentar, humanizar, empatizar y validar.",
+        "La creatividad aplicada al diseño de modelo de negocio y de gestión. El proceso de creatividad: divergencia y convergencia. Equipo heterogéneo, inmersión, expansión selección de criterios y creación de prototipos. Dinámicas de generación de nuevas ideas de modelos de negocio. Epicentros de la innovación. Preguntas del tipo «y si». El proceso de ideación.",
+        "La competencia y nichos de mercado. Estrategia de Océanos Azules.",
+        "Las herramientas de organización de ideas: Pensamiento Visual o  Visual Thinking . Capacidad de síntesis. Ideación. Comunicación.",
+        "El prototipado: concepto y utilidad. Posibilidades de prototipado: bienes, servicios y aplicaciones. Las herramientas de prototipado. Las aplicaciones informáticas para prototipos digitales.",
+        "Las herramientas de presentación de un proyecto o de una idea. Metodología: narración de historias o  storytelling  y el discurso en el ascensor o  elevator pitch . Otras metodologías.",
+        "Los escenarios: exploración de ideas, escenarios futuros y nuevos modelos de negocio.",
+        "Otras herramientas para innovar en modelos de negocio y de gestión."
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Estrategia empresarial y métodos de análisis de la realidad empresarial: estudio de casos y simulación",
+      "titulo": "Estrategia empresarial y métodos de análisis de la realidad empresarial: estudio de casos y simulación",
+      "items": [
+        "El entorno del modelo de negocio. Previsión: tendencias clave. Macroeconomía: variables macroeconómicas. Competencia: fuerzas competitivas.",
+        "La evaluación previa de modelos de negocio: análisis DAFO, análisis previsional de ingresos y costes y el umbral de rentabilidad. Toma de decisiones previa al proceso de validación.",
+        "La validación del modelo de negocio.  Lean Startup . Desarrollo de clientes. Desarrollo de producto ágil. Hipótesis: identificación, formulación y priorización. Investigación no experimental y experimentos. Lecciones aprendidas: iterar y pivotar.",
+        "La protección de la idea, del producto y de la marca.",
+        "El plan de negocios. La toma de decisiones. Estrategias. Simulación en hoja de cálculo. Redacción de un plan de negocios básico. Estructura: resumen ejecutivo, equipo, plan jurídico-fiscal, plan de operaciones, plan de marketing y plan de viabilidad. Análisis de las dificultades en la ejecución del modelo de negocio.",
+        "El análisis de resultados: estudio de mercado, análisis e interpretación de la información contable y análisis de estados financieros. La toma de decisiones para optimizar la estrategia."
+      ]
+    }
+  ]
+}

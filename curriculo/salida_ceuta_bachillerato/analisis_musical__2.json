@@ -1,0 +1,119 @@
+{
+  "materia_oficial": "Análisis Musical",
+  "materia": "Análisis Musical",
+  "etapa": "Bachillerato",
+  "ciclo": "2º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "CE1",
+      "descripcion": "Analizar los elementos musicales de diferentes obras, utilizando la escucha activa y el estudio de partituras, para describir sus características y establecer comparaciones.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE2",
+      "descripcion": "Establecer relaciones entre los elementos musicales de una composición, a través del análisis de su estructura y de los procedimientos compositivos utilizados, para asociar la obra con un género, un estilo y un contexto de creación.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE3",
+      "descripcion": "Elaborar comentarios y críticas musicales sobre las obras analizadas, utilizando una terminología adecuada y consultando distintas fuentes de información, para expresar juicios personales fundamentados y contribuir a la difusión del patrimonio musical a través de los medios disponibles.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE4",
+      "descripcion": "Utilizar los procedimientos compositivos fundamentales y las tecnologías digitales, empleando los elementos y las estructuras musicales más adecuadas, para crear obras sencillas y realizar improvisaciones.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE5",
+      "descripcion": "Investigar sobre los usos de la música con fines terapéuticos y en combinación con otras formas de expresión artística, utilizando diferentes fuentes de información y analizando las características musicales de las obras, para entender de qué forma inciden determinados rasgos musicales en la salud y en las emociones.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "CE1",
+      "descripcion": "Describir las características musicales de una obra a partir de la escucha activa y el estudio de partituras, analizando sus elementos constitutivos y la función que estos cumplen dentro de la composición de forma detallada."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "CE1",
+      "descripcion": "Comparar los elementos constitutivos y las características musicales de diferentes obras, estableciendo analogías y diferencias entre ellas, a partir de la escucha activa y del estudio de partituras."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "CE2",
+      "descripcion": "Distinguir los principales géneros y estilos musicales que se desarrollan en la historia, analizando los factores que inciden en la evolución de las formas musicales."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "CE2",
+      "descripcion": "Asociar las obras analizadas con un género, un estilo y un contexto de creación determinados, identificando, de forma autónoma, la estructura formal y los procedimientos compositivos utilizados."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "CE3",
+      "descripcion": "Expresar juicios personales sobre las obras analizadas, argumentando la opinión propia y utilizando una terminología musical adecuada."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "CE3",
+      "descripcion": "Justificar la opinión propia sobre las obras analizadas, investigando y seleccionando la información más pertinente a partir de medios analógicos y digitales."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "CE3",
+      "descripcion": "Publicar críticas musicales y comentarios propios en los medios disponibles, analógicos y digitales, respetando los derechos de autor y la propiedad intelectual."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "CE4",
+      "descripcion": "Realizar improvisaciones sencillas o pequeñas composiciones, en proyectos musicales grupales, utilizando los procedimientos compositivos fundamentales y aplicando patrones melódicos, rítmicos, armónicos y formales previamente analizados e interiorizados."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "CE4",
+      "descripcion": "Utilizar, de forma eficaz, las tecnologías digitales en la composición musical."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "CE5",
+      "descripcion": "Analizar los usos terapéuticos de la música y cómo inciden determinados rasgos musicales en la salud y las emociones, a partir de la información obtenida en fuentes de información fiables."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "CE5",
+      "descripcion": "Describir las características de la música que se utiliza con fines terapéuticos, analizando ejemplos de obras y relacionando sus rasgos con posibles efectos en el oyente."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Técnicas de análisis musical",
+      "titulo": "Técnicas de análisis musical",
+      "items": [
+        "La comparación como técnica analítica.",
+        "Técnicas de análisis de audición y de partituras.",
+        "Técnicas para el análisis del contexto de creación. El pensamiento de la persona creadora, los condicionantes contextuales y la interpretación de la obra.",
+        "Comentarios y críticas musicales. Pautas para su elaboración.",
+        "Recursos digitales para la investigación, la composición y la difusión musical.",
+        "Derechos de autor y propiedad intelectual."
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Géneros musicales",
+      "titulo": "Géneros musicales",
+      "items": [
+        "Las características sonoras y estilísticas de la música desde la Edad Media hasta la actualidad. Evolución organológica.",
+        "Las formas y los géneros musicales desde la Edad Media hasta la actualidad.",
+        "Uso de la música con fines terapéuticos."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "materia_oficial": "Economía",
+  "materia": "Economía",
+  "etapa": "Bachillerato",
+  "ciclo": "Único",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "CE1",
+      "descripcion": "Valorar el problema de la escasez y la importancia de adoptar decisiones en el ámbito económico, analizando su repercusión en los distintos sectores, comparando soluciones alternativas que ofrecen los diferentes sistemas, para comprender el funcionamiento de la realidad económica.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE2",
+      "descripcion": "Reconocer y comprender el funcionamiento del mercado, analizando sus fallos, para estudiar la repercusión de estos en el entorno y facilitar la toma de decisiones en el ámbito económico.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE3",
+      "descripcion": "Distinguir y valorar el papel de los distintos agentes económicos que intervienen en el flujo circular de la renta, comprendiendo sus interacciones y reconociendo, con sentido crítico, los beneficios y costes que genera, para explicar cómo se produce el desarrollo económico y su relación con el bienestar de la sociedad.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE4",
+      "descripcion": "Conocer y comprender el funcionamiento del sistema financiero y de la política monetaria, valorando sus efectos sobre la economía real y analizando los elementos que intervienen en las decisiones financieras, para planificar y gestionar con responsabilidad y autonomía los recursos personales y adoptar decisiones financieras fundamentadas.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE5",
+      "descripcion": "Identificar y valorar los retos y desafíos a los que se enfrenta la economía actual analizando el impacto de la globalización económica, la nueva economía y la revolución digital, para proponer iniciativas que fomenten la equidad, la justicia y la sostenibilidad.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE6",
+      "descripcion": "Analizar los problemas económicos actuales mediante el estudio de casos, la investigación y la experimentación, utilizando herramientas del análisis económico y teniendo en cuenta los factores que condicionan las decisiones de los agentes económicos, para facilitar la comprensión de esos problemas y plantear soluciones innovadoras y sostenibles que respondan a necesidades individuales y colectivas.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "CE1",
+      "descripcion": "Comprender la realidad económica actual, analizando la repercusión de las decisiones adoptadas en el ámbito económico, valorando los procesos de integración económica y estableciendo comparaciones sobre las soluciones alternativas que ofrecen los distintos sistemas."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "CE1",
+      "descripcion": "Comprender el problema de la escasez identificando los motivos y comparando, de manera justificada, diferentes estrategias económicas de resolución del mismo."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "CE1",
+      "descripcion": "Conocer los procesos que intervienen en la toma de las decisiones económicas de manera individual y colectiva, analizando el impacto que tienen en la sociedad."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "CE2",
+      "descripcion": "Valorar la repercusión de los fallos del mercado a nivel microeconómico y facilitar el proceso de toma de decisiones en este ámbito, reconociendo y comprendiendo el funcionamiento del mismo."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "CE2",
+      "descripcion": "Entender el funcionamiento del mercado y la naturaleza de las transacciones que tienen lugar en él, analizando elementos como la oferta, la demanda, los precios, los tipos de mercado y los agentes implicados y reflexionado sobre su importancia como fuente de mejora económica y social."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "CE2",
+      "descripcion": "Analizar con espíritu crítico los fallos del mercado, evaluando sus consecuencias y reflexionando sobre sus posibles soluciones."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "CE3",
+      "descripcion": "Conocer cómo se produce el desarrollo económico y el bienestar social valorando, con sentido crítico, el papel de los distintos agentes económicos que intervienen en el flujo circular de la renta."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "CE3",
+      "descripcion": "Diferenciar los costes y beneficios que se generan en el flujo circular de la renta para cada uno de los agentes económicos, estableciendo relaciones entre ellos y determinando su repercusión en el desarrollo económico y bienestar social."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "CE4",
+      "descripcion": "Conocer y comprender el funcionamiento del sistema financiero valorando sus efectos sobre la economía real y analizando los elementos que intervienen en las decisiones financieras relacionadas con la inversión, el ahorro, los productos financieros y la búsqueda de fuentes de financiación."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "CE4",
+      "descripcion": "Planificar y gestionar con responsabilidad y progresiva autonomía las finanzas personales y adoptar decisiones fundamentadas a partir del conocimiento y comprensión del sistema financiero y de los elementos que intervienen en las decisiones financieras y valorando los efectos que estas pueden provocar en la economía real."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "CE4",
+      "descripcion": "Adquirir conocimientos financieros a partir del análisis del sistema financiero, su funcionamiento y los efectos que se derivan de las decisiones adoptadas en él y estableciendo conexiones entre estos aprendizajes y las decisiones financieras personales que afectan a la vida cotidiana."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "CE5",
+      "descripcion": "Proponer iniciativas que fomenten la equidad, la justicia y la sostenibilidad a partir de la identificación de los retos y desafíos que plantea la economía actual y analizando, con sentido crítico, el impacto que provoca la globalización, la nueva economía y la revolución digital en el bienestar económico y social de los ciudadanos y ciudadanas."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "CE5",
+      "descripcion": "Comprender los retos económicos actuales analizando, de forma crítica y constructiva, el entorno, identificando aquellos elementos que condicionan y transforman la economía y fomentando iniciativas que respondan a las necesidades que plantean estos retos."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "CE5",
+      "descripcion": "Tomar conciencia de la necesidad asumir prácticas responsables como consumidores valorando el comportamiento individual ante los retos de la sociedad en el siglo XXI."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "CE6",
+      "descripcion": "Plantear soluciones socioeconómicas que respondan a necesidades individuales y colectivas investigando y explorando la realidad económica teniendo en cuenta diversos factores y aplicando las herramientas propias del ámbito de la economía."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "CE6",
+      "descripcion": "Aplicar el estudio de casos, la investigación o la experimentación como herramientas de análisis del ámbito de la economía, valorando sus posibilidades y limitaciones y adecuando su uso al objeto de estudio propuesto."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Las decisiones económicas",
+      "titulo": "Las decisiones económicas",
+      "items": [
+        "La economía, las necesidades, los bienes y la escasez. Tipos de necesidades. Clasificación de los bienes y servicios. Pobreza y escasez. El contenido económico de las relaciones sociales. La modelización como herramienta para entender las interacciones económicas. La frontera de posibilidades de producción como modelo económico.",
+        "El proceso de toma de decisiones económicas. La racionalidad. El coste de oportunidad. Los costes irrecuperables. El análisis marginal. Los incentivos y las expectativas. Teoría de juegos. El dilema del prisionero. La eficiencia técnica y económica. El horizonte temporal. Riesgo e incertidumbre.",
+        "La organización económica: ¿Qué, cómo, quién y para quién producir? Los sistemas económicos; valoración y comparación: capitalismo, economía de planificación centralizada y economía mixta. Evolución histórica de los sistemas económicos.",
+        "Planificación y gestión de las decisiones financieras: la inversión, el ahorro y el consumo. Dinero y transacciones. Funciones del dinero y formas de dinero. Riesgo y beneficio. El papel de los bancos en la economía. Funcionamiento de los productos financieros como préstamos, hipotecas, y sus sustitutos. Los seguros.",
+        "Economía del comportamiento. Desviaciones de la racionalidad económica. Decisiones económicas y ética.",
+        "Concepto de microeconomía y macroeconomía. Métodos para el análisis de la realidad económica: el método científico, la modelización y experimentos o ensayos económicos."
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. La realidad económica. Herramientas para entender el mundo con una visión microeconómica",
+      "titulo": "La realidad económica. Herramientas para entender el mundo con una visión microeconómica",
+      "items": [
+        "Intercambio y mercado. Oferta, demanda, equilibrio y fijación de precios. Tipos y funcionamiento de los mercados. La competencia perfecta. La competencia imperfecta. Representación gráfica.",
+        "La elasticidad-precio de la demanda.",
+        "El análisis coste-beneficio.",
+        "Los fallos de mercado."
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. La realidad económica. Herramientas para entender el mundo con una visión macroeconómica",
+      "titulo": "La realidad económica. Herramientas para entender el mundo con una visión macroeconómica",
+      "items": [
+        "La macroeconomía. Los agentes económicos y el flujo circular de la renta. La demanda agregada, la oferta agregada y su funcionamiento. Las macromagnitudes y sus relaciones.",
+        "Crecimiento económico y desarrollo. Los factores del crecimiento: productividad, progreso tecnológico y capital humano. La distribución de la renta y la acumulación de capital: relación entre eficiencia y equidad. Indicadores del desarrollo social. Limitaciones de las macromagnitudes como indicadores del desarrollo social. Bienestar y calidad de vida.",
+        "Economía laboral. El funcionamiento y las tendencias de los mercados de trabajo. La oferta y la demanda de trabajo. La segmentación del mercado de trabajo y su tendencia. La medición del desempleo. Tipos de desempleo. Efectos y medidas correctoras. La igualdad de oportunidades: la brecha salarial y el techo de cristal.",
+        "El comercio internacional, los procesos de integración económica y sus efectos. Proteccionismo y libre comercio. Barreras arancelarias y no arancelarias. La Unión Europea y Monetaria.",
+        "El sistema financiero, su funcionamiento y sus efectos. Evolución del panorama financiero: el  blockchain , las criptomonedas y la ciberseguridad. La banca ética. El dinero: tipología del dinero y su proceso de creación."
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Las políticas económicas",
+      "titulo": "Las políticas económicas",
+      "items": [
+        "Economía positiva y economía normativa. La intervención del Estado y su justificación. La política económica y sus efectos.",
+        "La política fiscal. El estado del bienestar y su financiación. El principio de solidaridad y los impuestos. Tributos: impuestos, contribuciones y tasas. Impuestos directos e indirectos. Presupuestos generales del estado. El déficit público, la deuda pública y sus efectos. La economía sumergida.",
+        "La política monetaria y la estabilidad de precios. El Banco Central Europeo. Funcionamiento del mercado monetario. Los tipos de interés. La inflación: la medición y teorías explicativas. La deflación y su impacto. Efecto de las políticas monetarias sobre la inflación, el crecimiento y el bienestar."
+      ]
+    },
+    {
+      "codigo": "E",
+      "bloque": "E. Los retos de la economía española en un contexto globalizado",
+      "titulo": "Los retos de la economía española en un contexto globalizado",
+      "items": [
+        "La globalización: Factores explicativos, oportunidades y riesgos. Los cambios en el poder económico mundial. La convergencia económica entre países, la reducción de las desigualdades y la lucha contra la pobreza. El riesgo de la evasión fiscal: los paraísos fiscales.",
+        "La nueva economía y la revolución digital. La inteligencia artificial. El internet de las cosas. La industria 4.0. El impacto de la revolución digital sobre el empleo y la distribución de la renta. La adaptación de la población activa ante los retos de la revolución digital.",
+        "Democracia y estado del bienestar. El futuro del estado del bienestar. Sostenibilidad de las pensiones. Las multinacionales y la fiscalidad global. Los flujos migratorios y sus implicaciones socioeconómicas.",
+        "La sostenibilidad ambiental. La capacidad de carga planetaria. Consumo responsable. La economía ecológica y la economía circular. La economía colaborativa.",
+        "Teorías sobre el decrecimiento económico.",
+        "Los Objetivos de Desarrollo Sostenible (ODS) y los retos económicos actuales. Estudio de casos."
+      ]
+    }
+  ]
+}

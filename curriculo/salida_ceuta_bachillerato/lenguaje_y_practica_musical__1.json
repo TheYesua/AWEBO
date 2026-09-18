@@ -1,0 +1,132 @@
+{
+  "materia_oficial": "Lenguaje y Práctica Musical",
+  "materia": "Lenguaje y Práctica Musical",
+  "etapa": "Bachillerato",
+  "ciclo": "Único",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "CE1",
+      "descripcion": "Cultivar la escucha activa, desarrollando estrategias de atención, para reconocer y describir con un vocabulario adecuado los elementos que forman parte de una obra y para reflexionar sobre aspectos subjetivos y emocionales inherentes a la percepción musical.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE2",
+      "descripcion": "Identificar los elementos musicales de obras de diferentes estilos y épocas, analizando y comparando partituras con diversas grafías, para describir sus características y reflexionar sobre los factores que afectan a la evolución de la notación musical.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE3",
+      "descripcion": "Aplicar estrategias de interpretación musical, utilizando la lectura como medio de aproximación a la obra y adquiriendo de forma progresiva habilidades de decodificación e integración del lenguaje musical, para realizar improvisaciones o ejecutar con autonomía propuestas musicales sencillas.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE4",
+      "descripcion": "Realizar proyectos musicales colaborativos, planificando e implementando sus fases y asumiendo funciones diversas dentro del grupo, para favorecer procesos creativos e identificar oportunidades de desarrollo personal, social, académico y profesional.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE5",
+      "descripcion": "Emplear las posibilidades que ofrecen las tecnologías digitales en el ámbito musical, utilizando herramientas de procesamiento del sonido, de producción audiovisual y de edición de partituras, para desarrollar procesos de escritura, creación y difusión musical.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "CE1",
+      "descripcion": "Reconocer y describir los diferentes parámetros y elementos musicales de una obra, aplicando estrategias de escucha activa y utilizando un vocabulario específico adecuado."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "CE1",
+      "descripcion": "Describir las sensaciones que genera la música y su posible vinculación con las características de la obra, reflexionando sobre aspectos subjetivos inherentes a la escucha musical."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "CE2",
+      "descripcion": "Describir las principales características de los elementos musicales (melodía, ritmo, armonía, timbre, etc.) presentes en partituras con grafía convencional y no convencional de obras de distintos estilos y épocas, identificando y analizando sus elementos."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "CE2",
+      "descripcion": "Comparar la representación de los elementos musicales en partituras con diferente grafía, reflexionando sobre los factores que inciden en la evolución de la notación musical."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "CE3",
+      "descripcion": "Leer, con autonomía, partituras sencillas, con o sin apoyo de la audición."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "CE3",
+      "descripcion": "Ejecutar fragmentos musicales sencillos, de forma individual o colectiva, a través de la voz, del cuerpo o de instrumentos musicales, atendiendo a las indicaciones de la partitura."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "CE3",
+      "descripcion": "Desarrollar habilidades técnicas para la interpretación vocal, instrumental y coreográfica, utilizando los ensayos como espacios de escucha y de aprendizaje y aplicando estrategias de memorización musical."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "CE3",
+      "descripcion": "Generar ideas musicales o coreográficas sencillas, utilizando diferentes instrumentos, la voz o el cuerpo, en improvisaciones libres o dirigidas."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "CE4",
+      "descripcion": "Planificar y desarrollar proyectos musicales colaborativos, seleccionando materiales musicales trabajados o creando otros nuevos a partir de la aplicación de los aprendizajes propios de la materia."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "CE4",
+      "descripcion": "Asumir diferentes funciones en la planificación y desarrollo de proyectos musicales colaborativos, participando activamente en su ejecución, valorando las aportaciones del resto de integrantes del grupo y descubriendo oportunidades de desarrollo personal, social, académico y profesional."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "CE5",
+      "descripcion": "Desarrollar proyectos musicales, poniendo en práctica los aprendizajes adquiridos y utilizando herramientas de edición de partituras, de procesamiento del sonido y de producción audiovisual."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "CE5",
+      "descripcion": "Difundir producciones musicales y audiovisuales a través de plataformas digitales, utilizando entornos seguros y respetando la propiedad intelectual y los derechos de autor."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Lenguaje musical",
+      "titulo": "Lenguaje musical",
+      "items": [
+        "Representación musical de los parámetros del sonido.",
+        "La melodía: intervalos y tipos de escalas.",
+        "El ritmo: compases; ritmos irregulares y libres; polirritmias y polimetrías, grupos de valoración especial. La modalidad.",
+        "La armonía: el fenómeno físico armónico; círculo de quintas; principales funciones armónicas en la tonalidad; acordes; enlaces y cadencias; modulaciones y progresiones tonales.",
+        "La forma musical: unidades estructurales; formas simples y complejas.",
+        "Elementos expresivos de la música: dinámica, agógica y articulación.",
+        "Los elementos musicales en la tradición musical occidental, en el folclore y en las músicas populares urbanas.",
+        "Notación convencional (grafía tradicional) y notación no convencional (introducción a la notación de la música contemporánea)."
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Práctica musical",
+      "titulo": "Práctica musical",
+      "items": [
+        "Estrategias de escucha o visionado de obras o fragmentos musicales.",
+        "Técnicas de realización escrita de dictados sencillos a una voz.",
+        "Técnicas de interpretación a través de la voz, del cuerpo o de instrumentos musicales, con o sin acompañamiento.",
+        "Lectura, interiorización y memorización de estructuras musicales sencillas.",
+        "Práctica auditiva o interpretativa de estructuras tonales y modales.",
+        "Estrategias y técnicas de improvisación sobre esquemas rítmico-melódicos y armónicos establecidos o libres adaptados al nivel.",
+        "Técnicas y aplicaciones informáticas de edición y producción sonora, musical y audiovisual. Funcionalidades propias de las aplicaciones y programas informáticos de licencia libre.",
+        "Difusión musical: protección de datos, propiedad intelectual y derechos de autoría.",
+        "La música como forma de expresión."
+      ]
+    }
+  ]
+}

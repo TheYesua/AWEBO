@@ -1,0 +1,193 @@
+{
+  "materia_oficial": "Movimientos Culturales y Artísticos",
+  "materia": "Movimientos Culturales y Artísticos",
+  "etapa": "Bachillerato",
+  "ciclo": "Único",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "CE1",
+      "descripcion": "Analizar producciones de distintos movimientos culturales y artísticos desde las vanguardias a la actualidad, reflexionando de forma abierta y crítica sobre su contexto histórico y sus aspectos singulares y comunes, para comprender el valor del arte como representación del espíritu de una época.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE2",
+      "descripcion": "Explicar el valor social del patrimonio, reflexionando sobre el compromiso del arte con su época y sobre la importancia de la libertad de expresión en producciones culturales y artísticas, para construir una mirada sobre el arte que reconozca, valore y respete la diversidad cultural.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE3",
+      "descripcion": "Explorar y valorar los lenguajes y los códigos de diferentes manifestaciones culturales y artísticas desde las vanguardias hasta la actualidad, identificando y comprendiendo sus características, referentes e intencionalidades, para potenciar las posibilidades de disfrute estético.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE4",
+      "descripcion": "Analizar la evolución del arte y la cultura en la historia reciente, identificando los distintos ámbitos en los que se producen y manifiestan, así como el valor de la innovación y el papel de las tecnologías, para desarrollar un criterio informado y crítico ante el hecho artístico que favorezca la identificación de oportunidades de desarrollo personal, social, académico y profesional.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE5",
+      "descripcion": "Explicar la práctica cultural y artística como un medio de expresión y comunicación individual y colectivo de ideas, opiniones y sentimientos, a partir de un análisis crítico de diversas manifestaciones culturales y artísticas que incluya también una reflexión sobre su impacto ambiental, económico y social, para profundizar en el conocimiento de la sociedad contemporánea y promover el compromiso personal con la sostenibilidad.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "CE1",
+      "descripcion": "Identificar y analizar los aspectos singulares de diversas manifestaciones culturales y artísticas, desde las vanguardias hasta la actualidad, relacionándolos con el sentido de dichas obras, con los contextos en los que han sido producidas y con la tradición artística, y describiendo su funcionalidad expresiva y su capacidad de influir en la sociedad."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "CE1",
+      "descripcion": "Establecer relaciones entre manifestaciones provenientes de distintos contextos culturales y campos creativos de los principales movimientos culturales y artísticos contemporáneos, reconociendo influencias e identificando elementos comunes que configuran el espíritu de su época identificando elementos comunes que configuran el espíritu de su época."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "CE1",
+      "descripcion": "Investigar acerca del papel de los movimientos culturales y artísticos como motores de cambio y evolución de la sociedad, recurriendo a fuentes fiables."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "CE2",
+      "descripcion": "Explicar la importancia de la promoción, conservación y puesta en valor del patrimonio artístico y cultural, valorando el papel que juega en la conformación de las diversas identidades."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "CE2",
+      "descripcion": "Explicar la repercusión y el compromiso social del arte, analizando ejemplos que muestren la implicación de las personas creadoras y los efectos generados en la sociedad."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "CE2",
+      "descripcion": "Analizar la importancia de la diversidad cultural y de la libre expresión en el arte a partir del estudio de manifestaciones culturales y artísticas diversas, incluyendo las realizadas por mujeres o las procedentes de ámbitos diferentes a la cultura occidental."
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "CE2",
+      "descripcion": "Desarrollar proyectos de investigación individuales o colectivos que muestren una implicación y una respuesta personales en torno a la libre expresión artística y sus posibles límites, partiendo del análisis de casos concretos."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "CE3",
+      "descripcion": "Analizar la interdisciplinariedad en el arte, identificando su relación con diversos campos y disciplinas, incluidos los no afines."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "CE3",
+      "descripcion": "Identificar y explicar las características de diversas producciones culturales y artísticas a partir del análisis de sus lenguajes y códigos propios."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "CE3",
+      "descripcion": "Investigar y analizar la presencia de referentes comunes en distintas manifestaciones culturales y artísticas, comparando sus temas, lenguajes o intencionalidades."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "CE3",
+      "descripcion": "Debatir sobre diferentes propuestas culturales y artísticas, intercambiando las opiniones y los sentimientos experimentados, e incorporando juicios de valor vinculados a la apreciación estética de las obras de manera argumentada, constructiva y respetuosa."
+    },
+    {
+      "codigo": "3.5",
+      "competencia": "CE3",
+      "descripcion": "Identificar los diferentes ámbitos de aplicación del arte contemporáneo, distinguiendo los nuevos códigos y lenguajes artísticos y analizando la influencia en ellos del entorno digital."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "CE4",
+      "descripcion": "Argumentar la influencia y aportaciones que los nuevos lenguajes y tecnologías han incorporado en la cultura y el arte recientes, a partir del análisis crítico de diferentes producciones, valorando la actitud innovadora de las personas creadoras."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "CE4",
+      "descripcion": "Explorar, explicar y valorar la repercusión social y económica de diferentes manifestaciones culturales y artísticas, reflexionando sobre las oportunidades personales y profesionales que ofrecen."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "CE4",
+      "descripcion": "Identificar una variedad de ámbitos y espacios en los que se desarrolla la práctica cultural y artística en la actualidad, analizando de qué modo condicionan las manifestaciones que acogen."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "CE5",
+      "descripcion": "Explorar diferentes manifestaciones culturales y artísticas actuales con interés, curiosidad y respeto, identificando su valor expresivo y comunicativo tanto de la individualidad de las personas creadoras, como de la sociedad en la que se producen."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "CE5",
+      "descripcion": "Explicar algunas de las repercusiones medioambientales, sociales y económicas de la cultura y el arte sobre la sociedad actual, explorando alternativas que favorezcan la consecución de los objetivos de desarrollo sostenible e identificando manifestaciones culturales y artísticas que lo promuevan."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Aspectos generales",
+      "titulo": "Aspectos generales",
+      "items": [
+        "La evolución del concepto de arte.",
+        "Las distintas manifestaciones de la expresión artística.",
+        "Elementos esenciales de los distintos lenguajes artísticos.",
+        "Los grandes movimientos artístico-culturales contemporáneos. Aspectos fundamentales.",
+        "La expresión artística en su contexto social e histórico.",
+        "Función social del arte y la cultura. Su impacto socioeconómico.",
+        "La libertad de expresión. La censura en el arte.",
+        "Estereotipos culturales y artísticos. La perspectiva de género y la perspectiva intercultural en el arte. El respeto a la diversidad.",
+        "El arte como herramienta de expresión individual y colectiva.",
+        "Diversidad cultural a través del patrimonio y en el arte contemporáneo.",
+        "Estrategias de investigación, análisis, interpretación y valoración crítica de productos culturales y artísticos.",
+        "El mercado del arte."
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Naturaleza, arte y cultura",
+      "titulo": "Naturaleza, arte y cultura",
+      "items": [
+        "Del  plein air  a la fotografía de naturaleza.",
+        "Arte, conciencia ecológica y sostenibilidad. Impacto ecológico de las actividades artísticas y culturales.",
+        "Arte povera .",
+        "Arte ambiental y  land art ."
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. El arte dentro del arte",
+      "titulo": "El arte dentro del arte",
+      "items": [
+        "Arte primitivo, oriental, precolombino y africano. Su papel como inspiración para las vanguardias.",
+        "La pervivencia de lo clásico en el arte y la cultura contemporánea.",
+        "Cultura popular y  pop art . El arte  pop  en España.",
+        "Relaciones interdisciplinares: literatura, cine, música, fotografía, artes plásticas, cómic, publicidad, artes escénicas, diseño, moda, biología y tecnología."
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. El arte en los espacios urbanos",
+      "titulo": "El arte en los espacios urbanos",
+      "items": [
+        "Arquitectura y sociedad. Corrientes arquitectónicas contemporáneas.",
+        "La arquitectura en el arte contemporáneo.",
+        "El nuevo urbanismo: entre la ciudad y el campo.",
+        "Intervenciones artísticas en proyectos de urbanismo. Escultura y urbanismo. Instalaciones urbanas.",
+        "Arte mural y trampantojo. Arte urbano. El grafiti.",
+        "Los espacios del arte: museos, salones, ferias, festivales, exhibiciones, galerías, talleres, etc. Incorporación, adaptación y uso de nuevos espacios expositivos en el entorno urbano."
+      ]
+    },
+    {
+      "codigo": "E",
+      "bloque": "E. Lenguajes artísticos contemporáneos",
+      "titulo": "Lenguajes artísticos contemporáneos",
+      "items": [
+        "Explorando el cuerpo humano:  happening  y  performance , arte acción y  body art .",
+        "Diseño industrial y artes decorativas. Relaciones entre arte y diseño.",
+        "Medios electrónicos, informáticos y digitales en el arte. Videoarte.",
+        "Instalaciones. Del arte ambiente al arte inmersivo e interactivo.",
+        "Narrativas seriales en el audiovisual del siglo XXI.",
+        "Narrativa multiverso y videojuegos. Expresiones artísticas transmedia. El  token  no fungible (NFT) en el arte contemporáneo."
+      ]
+    }
+  ]
+}

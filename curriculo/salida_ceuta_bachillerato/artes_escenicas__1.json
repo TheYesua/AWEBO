@@ -1,0 +1,153 @@
+{
+  "materia_oficial": "Artes Escénicas",
+  "materia": "Artes Escénicas",
+  "etapa": "Bachillerato",
+  "ciclo": "1º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "CE1",
+      "descripcion": "Analizar manifestaciones escénicas de diferentes épocas y tradiciones, describiendo sus características, estableciendo relaciones con su contexto e identificando posibles influencias y proyecciones, para valorar el patrimonio y enriquecer el imaginario propio.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE2",
+      "descripcion": "Explorar las posibilidades expresivas de diferentes sistemas, medios y códigos de significación escénica, a través de actividades de carácter práctico, para incorporar su uso al repertorio personal de recursos y desarrollar el criterio de selección de los más adecuados a la intención comunicativa.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE3",
+      "descripcion": "Abordar la recreación y representación de la acción dramática, a partir de la construcción colectiva de escenas que muestren todo tipo de personajes y conflictos, para desarrollar habilidades de comunicación y negociación y reforzar el autoconocimiento, la creatividad, la empatía, la imaginación y el espíritu emprendedor en diversas situaciones y contextos.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE4",
+      "descripcion": "Realizar proyectos de creación y difusión escénica, planificando sus fases, seleccionando y estructurando los elementos de significación y asumiendo diferentes funciones con iniciativa y responsabilidad, para expresar una intención comunicativa, enriquecer el entorno cultural e identificar oportunidades de desarrollo personal, social, académico o profesional.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE5",
+      "descripcion": "Valorar críticamente manifestaciones escénicas, identificando el público al que se dirigen y analizando sus características y sus presupuestos artísticos, para desarrollar el criterio estético, difundir el patrimonio y ampliar las posibilidades de disfrute de las artes escénicas.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "CE1",
+      "descripcion": "Identificar, con un vocabulario adecuado, las principales características de manifestaciones escénicas de diferentes épocas y tradiciones, estableciendo relaciones con su contexto y evidenciando una actitud de apertura, interés y respeto en la recepción activa de las mismas."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "CE1",
+      "descripcion": "Establecer conexiones entre manifestaciones escénicas de diferentes épocas y tradiciones, valorando su influencia sobre las artes escénicas actuales."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "CE2",
+      "descripcion": "Participar, con iniciativa, confianza y creatividad, en la exploración de sistemas, medios y códigos de significación escénica, a través de actividades de carácter práctico."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "CE2",
+      "descripcion": "Recrear la acción dramática, el diseño de personajes y la configuración de situaciones y escenas, seleccionando las técnicas más adecuadas de entre las que conforman el repertorio personal de recursos."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "CE3",
+      "descripcion": "Emplear técnicas elementales de Interpretación, aplicando estrategias de memorización y valorando los ensayos como espacios de escucha, diálogo y aprendizaje."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "CE3",
+      "descripcion": "Recrear y representar la acción dramática, demostrando eficacia, siguiendo las indicaciones de la dirección, manteniendo la concentración y gestionando de forma guiada la ansiedad y el miedo escénico."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "CE4",
+      "descripcion": "Participar activamente en la realización de proyectos colectivos de creación y difusión escénica, asumiendo diferentes funciones con iniciativa y responsabilidad, y valorando y respetando las aportaciones y experiencias del resto de integrantes del grupo."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "CE4",
+      "descripcion": "Evaluar y presentar los resultados de la participación en proyectos de creación y difusión escénica, analizando la relación entre los objetivos planteados y el producto final obtenido, y explicando de forma argumentada las posibles diferencias entre ellos."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "CE5",
+      "descripcion": "Identificar el tipo de público al que se dirige un espectáculo determinado, basando los argumentos en el análisis de la obra y en las reacciones del público."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "CE5",
+      "descripcion": "Comentar manifestaciones escénicas, empleando la terminología adecuada, reelaborando información a partir de fuentes fiables, y reflexionando críticamente sobre sus características y presupuestos artísticos."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Patrimonio escénico",
+      "titulo": "Patrimonio escénico",
+      "items": [
+        "Artes escénicas: concepto, tipologías y tradiciones.",
+        "Las artes escénicas y su historia: cambios y transformaciones.",
+        "Dramaticidad, teatralidad y performatividad.",
+        "El patrimonio inmaterial."
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Expresión y comunicación escénica",
+      "titulo": "Expresión y comunicación escénica",
+      "items": [
+        "Códigos de significación escénica: naturaleza, descripción y clasificación.",
+        "El espacio escénico como generador de significado. La convención teatral.",
+        "Recursos plásticos: escenografía volumétrica y virtual, caracterización, iluminación y espacio sonoro.",
+        "Recursos literarios y otros materiales. El texto dramático.",
+        "El conflicto dramático: personaje, situación y acción dramática.",
+        "El personaje dramático: análisis, caracterización y construcción.",
+        "Juego dramático, improvisación, dramatización y creación colectiva."
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Interpretación",
+      "titulo": "Interpretación",
+      "items": [
+        "Preparación física y preparación pre-expresiva. El cuidado del cuerpo.",
+        "Métodos y técnicas de Interpretación.",
+        "Los instrumentos del intérprete: expresión corporal, gestual, oral y rítmico-musical. La conciencia emocional.",
+        "El personaje dramático: grados de representación, objetivos y funciones.",
+        "La partitura interpretativa y su ejecución."
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Representación y escenificación",
+      "titulo": "Representación y escenificación",
+      "items": [
+        "El espectáculo escénico: concepto y características.",
+        "Tipologías básicas del espectáculo: clásico, de vanguardia, corporal, occidental, oriental, de objetos, musical, dancístico, de interior, de calle.",
+        "Otras formas de presentación escénica:  happening, performance , vídeo-teatro o teatro-danza.",
+        "El diseño de un espectáculo: equipos, fases y áreas de trabajo.",
+        "Los ensayos: tipología, finalidades y organización.",
+        "Representación de espectáculos escénicos.",
+        "Estrategias de trabajo en equipo. Resolución de conflictos."
+      ]
+    },
+    {
+      "codigo": "E",
+      "bloque": "E. Recepción en las artes escénicas",
+      "titulo": "Recepción en las artes escénicas",
+      "items": [
+        "El público: concepto y tipologías.",
+        "La recepción teatral: catarsis, extrañamiento y participación.",
+        "Estrategias y técnicas de análisis de manifestaciones escénicas.",
+        "El respeto de la propiedad intelectual. La protección de la creatividad personal."
+      ]
+    }
+  ]
+}

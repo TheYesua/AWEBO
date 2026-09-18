@@ -1,0 +1,170 @@
+{
+  "materia_oficial": "Gestión Empresarial y Relación con el Entorno",
+  "materia": "Gestión Empresarial y Relación con el Entorno",
+  "etapa": "Bachillerato",
+  "ciclo": "Único",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "CE1",
+      "descripcion": "Analizar y utilizar las metodologías ágiles de generación de ideas, aplicando herramientas de análisis del entorno y del mercado que permitan su validación, para generar y transformar una idea en un proyecto de creación de una pequeña o mediana empresa de ámbito local, definida por la visión, misión, y valores de la misma.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE2",
+      "descripcion": "Identificar y analizar la legislación vigente y los trámites de puesta en marcha necesarios, valorando las diferentes opciones existentes, los posibles asesoramientos y apoyos, y el uso de herramientas digitales, para simular todo el proceso de creación y puesta en marcha de una pequeña o mediana empresa de ámbito local.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE3",
+      "descripcion": "Determinar la organización y funcionamiento interno, identificando las áreas funcionales de la empresa, utilizando las herramientas y técnicas de gestión empresarial propias de cada una de dichas áreas, y analizando la información económico-financiera recabada para facilitar la toma de decisiones desde una visión global e integradora.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE4",
+      "descripcion": "Reconocer y valorar las implicaciones de las pequeñas y medianas empresas en el entorno más próximo, analizando sus interrelaciones en contextos locales, y la asunción de los valores propios de la responsabilidad social corporativa, para plantear, con sentido crítico, la creación y gestión empresarial desde una perspectiva económica, social, cultural y medioambiental.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "CE1",
+      "descripcion": "Generar y transformar una idea de negocio en un proyecto de creación de una pequeña o mediana empresa de ámbito local, aplicando metodologías ágiles y analizando el entorno y el mercado más próximos."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "CE1",
+      "descripcion": "Validar la idea de negocio generada, empleando herramientas de análisis del entorno y de investigación del mercado."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "CE1",
+      "descripcion": "Determinar la misión, visión y valores del proyecto empresarial a desarrollar, tomando como referentes el entorno y el mercado."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "CE2",
+      "descripcion": "Simular el proceso de creación y puesta en marcha de una pequeña o mediana empresa de ámbito local, analizando la legislación vigente, identificando y planificando los trámites necesarios, así como su cumplimentación mediante herramientas digitales y valorando las posibilidades de apoyo y asesoramiento en el proceso."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "CE2",
+      "descripcion": "Conocer los servicios de asesoramiento y apoyo, tanto públicos como privados, a la creación de empresas, analizando su funcionamiento y los servicios que ofrecen."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "CE2",
+      "descripcion": "Valorar la importancia de las tecnologías de la información y la comunicación en las relaciones con las administraciones públicas, analizando y utilizando diferentes herramientas."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "CE3",
+      "descripcion": "Facilitar la toma de decisiones desde una visión global e integradora de la organización y funcionamiento interno de la empresa, identificando las áreas funcionales de la misma, aplicando el uso de herramientas y técnicas propias de cada área y analizando la información económico-financiera de manera integral dentro de la organización empresarial."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "CE3",
+      "descripcion": "Identificar la estructura interna de una pequeña o mediana empresa de ámbito local, y analizar su organización, implementado la gestión documental de toda la información económico-financiera basada en procedimientos ágiles y el uso de las tecnologías de la información y la comunicación como herramientas de gestión y la toma de decisiones de la empresa en su conjunto."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "CE3",
+      "descripcion": "Analizar el proceso de toma de decisiones en las áreas de aprovisionamiento, producción y comercial o marketing, generando y analizando la documentación relevante (pedido, albarán, factura de compras, y factura de ventas) e implementando una gestión ágil de la misma."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "CE3",
+      "descripcion": "Analizar el proceso de toma de decisiones el área de recursos humanos, generando y analizando la documentación (currículum, nómina) relevante e implementando una gestión ágil de la misma."
+    },
+    {
+      "codigo": "3.5",
+      "competencia": "CE3",
+      "descripcion": "Analizar el proceso de toma de decisiones el área financiera y de inversión, generando y analizando la información económico-financiera relevante e implementando una gestión ágil de la documentación."
+    },
+    {
+      "codigo": "3.6",
+      "competencia": "CE3",
+      "descripcion": "Analizar el proceso de toma de decisiones el área de administración contable y fiscal, generando y analizando la información económico-financiera relevante e implementando una gestión ágil de la documentación."
+    },
+    {
+      "codigo": "3.7",
+      "competencia": "CE3",
+      "descripcion": "Utilizar las tecnologías de la información y la comunicación como herramienta de gestión empresarial, valorando sus ventajas a la hora de generar y transmitir información y conociendo las herramientas más habituales de gestión empresarial."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "CE4",
+      "descripcion": "Analizar con sentido crítico la creación y gestión empresarial, desde las diferentes perspectivas, reconociendo, analizando y valorando las interrelaciones de la empresa en el contexto local, y considerando la necesidad de alinear sus objetivos con los valores propios de la responsabilidad social corporativa."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "CE4",
+      "descripcion": "Reconocer la importancia de la pequeña y mediana empresa en el desarrollo económico, social y cultural del entorno local, valorando su creación y gestión como elemento transformador desde la cohesión social, la igualdad de género, el desarrollo sostenible, la asunción de los valores de la responsabilidad social corporativa en todas sus actividades, y propiciando la creación cultural."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "CE4",
+      "descripcion": "Valorar la implantación de la responsabilidad social corporativa en pequeñas y mediana empresas y sus efectos a nivel local, analizando sus repercusiones tanto para la propia empresa como para el entorno más cercano en el que desarrolla sus actividades."
+    },
+    {
+      "codigo": "4.4",
+      "competencia": "CE4",
+      "descripcion": "Reconocer la pequeña y mediana empresa como elemento transformador del conjunto de la sociedad, analizando mediante el estudio de casos cercanos su extrapolación al conjunto de la sociedad."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. La idea de la empresa",
+      "titulo": "La idea de la empresa",
+      "items": [
+        "Las metodologías Ágiles orientadas a la generación de ideas.",
+        "Las herramientas para el análisis del entorno y sus tendencias.",
+        "La investigación y segmentación de mercados. Técnicas de muestreo.",
+        "La idea de negocio, detección y validación de la idea de negocio.",
+        "La misión, visión y valores de la empresa."
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. La creación y puesta en marcha de la empresa",
+      "titulo": "La creación y puesta en marcha de la empresa",
+      "items": [
+        "La normativa legal básica en materia mercantil, laboral y fiscal, medioambiental.",
+        "La forma jurídica. La responsabilidad. La constitución e inscripción en registros oficiales.",
+        "Las relaciones con las administraciones públicas para la puesta en marcha: trámites fiscales, laborales y de Seguridad Social según la forma jurídica elegida. El calendario fiscal.",
+        "La administración digital de la empresa: el certificado digital, la tramitación online y la sede electrónica.",
+        "Los servicios de asesoramiento y apoyo a la creación de empresas."
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. La organización y gestión de la empresa",
+      "titulo": "La organización y gestión de la empresa",
+      "items": [
+        "La organización interna de la empresa: definición y tipología. El organigrama.",
+        "El área de aprovisionamiento y producción. La logística. La selección y gestión de proveedores. El pedido, el albarán, y la factura de compras. Aplicación con hoja de cálculo.",
+        "El área comercial o de marketing. La comunicación comercial y la atención al cliente. Marketing digital y redes sociales. La selección y gestión de clientes. El pedido, el albarán, y la factura de ventas. La ficha de control de existencias. Aplicación con hoja de cálculo.",
+        "El área de recursos humanos: gestión de las relaciones laborales. El convenio colectivo. Las habilidades blandas en la gestión de los recursos humanos. La búsqueda y selección de personal, el currículum y el videocurrículum. Los riesgos laborales. Las nóminas y su aplicación en hoja de cálculo. La gestión de las relaciones con la Seguridad Social.",
+        "El área financiera y de inversión: el análisis de inversiones y su aplicación en hoja de cálculo. La selección de las fuentes de financiación y su aplicación en hoja de cálculo.",
+        "El área de administración contable y fiscal: Obligaciones contables, fiscales y documentales de la empresa. El concepto de patrimonio empresarial y la ecuación fundamental de la contabilidad. Los elementos y masas patrimoniales. La gestión de la contabilidad en la empresa. El análisis de balances y resultados abreviados. Aplicación en hoja de cálculo. El sistema tributario. Los elementos básicos de los tributos. El impuesto sobre el valor añadido y sus implicaciones contables."
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. La empresa y su relación con el entorno",
+      "titulo": "La empresa y su relación con el entorno",
+      "items": [
+        "La responsabilidad social corporativa y la ética en los negocios. Valoración, reflexión y análisis del impacto de las decisiones empresariales sobre el entorno. La economía sumergida.",
+        "El emprendimiento cultural. La empresa como agente de desarrollo cultural.",
+        "El emprendimiento social. La contribución de la empresa a la economía circular y a la economía colaborativa. El desarrollo sostenible y la huella de carbono de la empresa. La responsabilidad en las acciones publicitarias de la empresa. La cohesión social. La igualdad de género y la brecha salarial. El Balance social.",
+        "El desarrollo local. El comercio de cercanía. Los cambios en el tejido empresarial. El mercado laboral en el entorno próximo.",
+        "La empresa local en el contexto global."
+      ]
+    }
+  ]
+}

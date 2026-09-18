@@ -1,0 +1,209 @@
+{
+  "materia_oficial": "Fundamentos Artísticos",
+  "materia": "Fundamentos Artísticos",
+  "etapa": "Bachillerato",
+  "ciclo": "Único",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "CE1",
+      "descripcion": "Comprender los cambios en la concepción del arte, analizando las semejanzas y las diferencias entre distintos periodos históricos o contextos culturales, para explicar el enriquecimiento que supone la diversidad.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE2",
+      "descripcion": "Reflexionar sobre las funciones del arte a lo largo de la historia, analizando la evolución de su papel en cada periodo, para apreciar sus singularidades y poner en valor el patrimonio cultural y artístico de cualquier época.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE3",
+      "descripcion": "Analizar formal, funcional y semánticamente producciones artísticas de diversos periodos y estilos, reconociendo sus elementos constituyentes y las claves de sus lenguajes y usando vocabulario específico, para desarrollar el criterio estético y ampliar las posibilidades de disfrute del arte.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE4",
+      "descripcion": "Explicar obras artísticas realizadas en distintos medios y soportes, identificando el contexto social, geográfico e histórico en el que se crearon, así como sus posibles influencias y proyecciones, para valorarlas como testimonios de una época y una cultura y como elementos del patrimonio.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE5",
+      "descripcion": "Comprender el poder comunicativo del arte, identificando y reconociendo el reflejo de las experiencias vitales en diferentes producciones, para valorar la expresión artística como herramienta potenciadora de la creatividad, la imaginación, la autoestima y el crecimiento personal.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE6",
+      "descripcion": "Interpretar diversas creaciones artísticas a partir del estudio de su forma, su significado, su contexto de creación y su recepción, para desarrollar la sensibilidad y el sentido crítico y para apreciar la diversidad de percepciones y opiniones ante las producciones artísticas.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE7",
+      "descripcion": "Elaborar con creatividad proyectos artísticos individuales o colectivos, investigando estilos, técnicas y lenguajes multidisciplinares y seleccionando y aplicando los más adecuados, para dar forma a las ideas y objetivos planteados y para aprender a afrontar nuevos retos artísticos.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "CE1",
+      "descripcion": "Explicar de forma respetuosa el enriquecimiento que supone la diversidad en el arte, estudiando obras de épocas y culturas distintas a partir de la vinculación con su contexto y analizando el concepto de arte al que responden y adoptando una perspectiva de género."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "CE1",
+      "descripcion": "Argumentar la evolución de la concepción del arte en la historia, comparando con iniciativa sus significados en periodos y culturas diferentes y analizando sus semejanzas y diferencias."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "CE2",
+      "descripcion": "Distinguir las funciones del arte a lo largo de la historia, analizando sin prejuicios su evolución a partir del estudio de diversas producciones artísticas de distintos estilos y épocas."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "CE2",
+      "descripcion": "Explicar las singularidades de diversas manifestaciones culturales y artísticas, relacionándolas con su función de forma abierta, crítica y respetuosa."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "CE2",
+      "descripcion": "Poner en valor el patrimonio cultural y artístico, reflexionando sobre la importancia de su conservación e identificando comportamientos y actitudes que ayuden a su divulgación, conocimiento y perdurabilidad."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "CE3",
+      "descripcion": "Identificar los elementos constituyentes de manifestaciones artísticas de diversos periodos y estilos, reconociendo las claves de sus lenguajes y justificando su relación con la época, artista o movimiento correspondiente."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "CE3",
+      "descripcion": "Analizar formal, funcional y semánticamente, con criterio y sensibilidad, diferentes manifestaciones artísticas, haciendo uso de la terminología específica asociada a sus lenguajes."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "CE4",
+      "descripcion": "Analizar producciones artísticas de diversos estilos y épocas y realizadas en distintos medios y soportes, relacionándolas con su contexto social, geográfico e histórico de creación y explicando las posibles relaciones con obras de otras épocas y culturas."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "CE4",
+      "descripcion": "Compartir las conclusiones de investigaciones sobre producciones artísticas de diversos estilos y épocas y las relaciones con su contexto, usando los medios analógicos y digitales más adecuados."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "CE5",
+      "descripcion": "Explicar las diferentes posibilidades expresivas del arte y su poder de transmisión de ideas, conceptos, sentimientos y emociones a partir de obras de artistas de distintas épocas y estilos, analizando las distintas interpretaciones que se han dado de ellas."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "CE5",
+      "descripcion": "Analizar producciones artísticas de diversos periodos y estilos, vinculándolas creativamente con experiencias vitales propias y ajenas y valorándolas como herramientas potenciadoras de la creatividad, la imaginación, la autoestima y el crecimiento personal."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "CE6",
+      "descripcion": "Interpretar creaciones artísticas de distintos periodos y estilos, analizando su forma, su significado y su contexto de creación e incorporando las ideas, conocimientos, emociones y sentimientos propios."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "CE6",
+      "descripcion": "Comparar las distintas interpretaciones que la crítica y la historia del arte han dado de diversas manifestaciones artísticas, analizando los diferentes puntos de vista y proponiendo una valoración personal."
+    },
+    {
+      "codigo": "6.3",
+      "competencia": "CE6",
+      "descripcion": "Reflexionar sobre la diversidad de percepciones que las producciones artísticas generan en el público, mostrando respeto por las distintas opiniones."
+    },
+    {
+      "codigo": "7.1",
+      "competencia": "CE7",
+      "descripcion": "Plantear proyectos artísticos, individuales o colectivos, seleccionando justificadamente los estilos, técnicas y lenguajes más adecuados de diversas disciplinas, y organizando y distribuyendo las tareas de manera razonada y motivadora."
+    },
+    {
+      "codigo": "7.2",
+      "competencia": "CE7",
+      "descripcion": "Llevar a cabo con creatividad proyectos artísticos individuales o colectivos, materializando las ideas y objetivos planteados, aplicando los aprendizajes adquiridos, asumiendo los roles asignados y respetando, en su caso, las aportaciones de los demás."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Los fundamentos del arte",
+      "titulo": "Los fundamentos del arte",
+      "items": [
+        "Tecnología del arte, materiales, técnicas y procedimientos.",
+        "Terminología específica del arte y la arquitectura.",
+        "Aspectos históricos, geográficos y sociales del arte.",
+        "Teorías del arte. Definición de arte a lo largo de la historia y perspectiva actual.",
+        "Perspectiva de género en el arte: representaciones y creaciones de mujeres.",
+        "Arte conceptual y arte objeto.",
+        "Dimensión multidisciplinar en el arte."
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. Visión, realidad y representación",
+      "titulo": "Visión, realidad y representación",
+      "items": [
+        "Introducción al arte precolombino y el arte africano precolonial.",
+        "Sistemas de representación espacial en la pintura. De la pintura primitiva a la ruptura cubista.",
+        "El impresionismo y posimpresionismo pictórico.",
+        "El Realismo: conceptos y enfoques. El Hiperrealismo.",
+        "El Surrealismo. Influencias posteriores en el arte, el cine y la publicidad.",
+        "La abstracción: orígenes y evolución.",
+        "El cuerpo humano y su representación en los movimientos artísticos."
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. El arte clásico y sus proyecciones",
+      "titulo": "El arte clásico y sus proyecciones",
+      "items": [
+        "Introducción a la arquitectura y escultura griegas. Órdenes. Obras y periodos más relevantes.",
+        "La influencia griega en Roma: de la escultura a la pintura y el mosaico.",
+        "El retrato escultórico en la Roma antigua.",
+        "Claves de la arquitectura a través de las diferentes épocas y estilos: de la romanización a la Baja Edad Media.",
+        "El renacer del arte clásico en la arquitectura, pintura y escultura: del  trecento  al  cinquecento .",
+        "La proyección clásica en la edad contemporánea: del Neoclasicismo a la pintura metafísica."
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. Arte y expresión",
+      "titulo": "Arte y expresión",
+      "items": [
+        "La exaltación barroca, aportaciones a la pintura y escultura.",
+        "El Romanticismo y el origen de la modernidad.",
+        "El Expresionismo alemán. Del Fauvismo al Expresionismo figurativo del s. XX.",
+        "Del rechazo dadaísta al  Ready Made  y al arte intermedia de  Fluxus ."
+      ]
+    },
+    {
+      "codigo": "E",
+      "bloque": "E. Naturaleza, sociedad y comunicación en el arte",
+      "titulo": "Naturaleza, sociedad y comunicación en el arte",
+      "items": [
+        "El Modernismo. Arquitectura y artes aplicadas. La arquitectura orgánica.",
+        "La Bauhaus. Arte y función. Diseño y artes aplicadas. El a rt déco . Arte y artesanía.",
+        "La arquitectura del vidrio y hierro y el Movimiento moderno.",
+        "Arte y medios de comunicación: del cartel al  pop art .",
+        "El minimalismo: espectador y contexto en relación con la obra.",
+        "El arte en pantalla: el videoarte, arte en las redes, arte digital. La luz como elemento plástico.",
+        "Arte, naturaleza y ecología. Del  land art  y el  arte povera  hasta nuestros días.",
+        "El arte como instrumento de transformación de la sociedad. De los individualismos artísticos al arte colaborativo. Espacios urbanos y rurales e intervenciones artísticas. Arte urbano."
+      ]
+    },
+    {
+      "codigo": "F",
+      "bloque": "F. Metodologías y estrategias",
+      "titulo": "Metodologías y estrategias",
+      "items": [
+        "Metodologías de estudio de las formas, las funciones y los significados asociados a los movimientos y estilos artísticos, y de análisis técnico y procedimental a la obra de arte.",
+        "La distribución de tareas en los proyectos artísticos colectivos: criterios de selección a partir de las habilidades requeridas.",
+        "Metodología proyectual. Fases de los proyectos artísticos.",
+        "Estrategias de selección de estilos, técnicas y lenguajes."
+      ]
+    }
+  ]
+}

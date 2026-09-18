@@ -1,0 +1,266 @@
+{
+  "materia_oficial": "Dibujo Artístico",
+  "materia": "Dibujo Artístico",
+  "etapa": "Bachillerato",
+  "ciclo": "2º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "CE1",
+      "descripcion": "Comprender el dibujo como forma de conocimiento, comunicación y expresión, comparando el uso que se hace de él en manifestaciones culturales y artísticas de diferentes épocas, lugares y ámbitos disciplinares, y valorando la diversidad de significados que origina, para apreciar la importancia de la diversidad cultural y la relevancia de la conservación y la promoción del patrimonio.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE2",
+      "descripcion": "Analizar con actitud crítica y reflexiva producciones plásticas de distintas épocas y estilos, reconociendo el lenguaje, las técnicas y procedimientos, la función significativa y la expresividad presentes en ellas, para desarrollar la conciencia visual y el criterio estético y ampliar las posibilidades de disfrute del arte.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE3",
+      "descripcion": "Analizar, interpretar y representar la realidad, utilizando los recursos elementales y la sintaxis del dibujo, para ofrecer una visión propia de esa realidad, potenciar la sensibilidad y favorecer el desarrollo personal y artístico.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE4",
+      "descripcion": "Experimentar con diferentes materiales, técnicas y soportes, incluido el propio cuerpo, analizando la importancia del mismo en las propuestas artísticas contemporáneas, para descubrir el gesto del dibujo y la apropiación del espacio como medios de autoexpresión y aceptación personal.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE5",
+      "descripcion": "Utilizar la práctica del dibujo como medio de expresión de ideas, opiniones, sentimientos y emociones, investigando los referentes culturales de las nuevas creaciones como parte inherente a las mismas, para ampliar el repertorio artístico y enriquecer las producciones propias.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE6",
+      "descripcion": "Realizar producciones gráficas expresivas y creativas, valorando la importancia de los elementos del lenguaje gráfico y su organización en la definición de un estilo personal, para progresar en la ejecución técnica y en las cualidades comunicativas y expresivas de las producciones propias.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE7",
+      "descripcion": "Experimentar con las técnicas propias del dibujo, identificando las herramientas, medios y soportes necesarios y analizando su posible impacto ambiental, para integrarlas de forma creativa y responsable en la realización de producciones gráficas.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE8",
+      "descripcion": "Adaptar los conocimientos y destrezas adquiridos, desarrollando la retentiva y la memoria visual, para responder con creatividad y eficacia a nuevos desafíos de representación gráfica.",
+      "descriptores": []
+    },
+    {
+      "codigo": "CE9",
+      "descripcion": "Crear proyectos gráficos colaborativos, contribuyendo de forma creativa a su planificación y realización y adaptando el diseño y el proceso a las características propias de un ámbito disciplinar, para descubrir posibilidades de desarrollo académico y profesional y apreciar el enriquecimiento que suponen las propuestas compartidas.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "CE1",
+      "descripcion": "Identificar la presencia del dibujo en diferentes manifestaciones culturales y artísticas, estableciendo con criterio propio relaciones entre ellas y valorándolo como herramienta de expresión."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "CE1",
+      "descripcion": "Explicar las múltiples funciones del dibujo a través del análisis autónomo de su uso en producciones de distintos ámbitos disciplinares."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "CE1",
+      "descripcion": "Defender la importancia de la libertad de expresión para la pluralidad cultural y artística, a través de un discurso razonado y argumentado de forma activa, comprometida y respetuosa."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "CE2",
+      "descripcion": "Analizar el lenguaje, las técnicas y procedimientos, la función y la expresividad del dibujo en diferentes producciones plásticas, incluyendo las contemporáneas, utilizando la terminología específica más adecuada e identificando con actitud abierta las intencionalidades de sus mensajes."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "CE2",
+      "descripcion": "Explicar de forma razonada la elección del dibujo como herramienta de expresión y transmisión de significados en distintas manifestaciones culturales y artísticas."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "CE2",
+      "descripcion": "Analizar la influencia de la geometría en el arte y la arquitectura, identificando sus elementos en distintas manifestaciones de estas disciplinas y valorándola como fuente de inspiración y expresividad."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "CE3",
+      "descripcion": "Recrear gráficamente la realidad mediante bocetos o esbozos, partiendo tanto de la observación detallada como de la propia imaginación y utilizando una expresión personal y espontánea."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "CE3",
+      "descripcion": "Analizar, interpretar y representar la realidad a partir de obras gráficas que exploren las posibilidades expresivas de formas y texturas, empleando con corrección y destreza los recursos del dibujo."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "CE3",
+      "descripcion": "Realizar producciones gráficas que evidencien una evolución de la representación objetiva a la subjetiva, mostrando una expresividad y un análisis formal propios."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "CE4",
+      "descripcion": "Usar el dibujo como medio de expresión, experimentando con diferentes materiales, técnicas y soportes, integrándolos en las producciones plásticas propias e incorporando las posibilidades que ofrece el cuerpo humano como recurso."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "CE4",
+      "descripcion": "Recrear gráficamente el espacio tridimensional, en producciones artísticas bidimensionales o tridimensionales, utilizando diversos materiales, técnicas y soportes y experimentando de forma abierta con los efectos perspectivos de profundidad."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "CE4",
+      "descripcion": "Analizar la importancia del cuerpo humano en las propuestas artísticas contemporáneas, estudiando los diferentes materiales, técnicas y soportes utilizados."
+    },
+    {
+      "codigo": "4.4",
+      "competencia": "CE4",
+      "descripcion": "Interpretar gráficamente un mismo modelo, experimentando con diferentes técnicas y utilizando distintos encuadres y puntos de vista, con fines expresivos diversos."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "CE5",
+      "descripcion": "Describir los referentes artísticos presentes en obras contemporáneas, explicando la influencia que ejercen y las relaciones que se establecen y reconociendo la importancia de la herencia cultural."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "CE5",
+      "descripcion": "Expresar ideas, opiniones, sentimientos y emociones propios en la práctica artística, tomando como punto de partida la exploración del entorno y de obras artísticas de interés personal."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "CE6",
+      "descripcion": "Representar gráficamente las formas, sus posibles combinaciones y los espacios negativos y positivos presentes en entornos urbanos o naturales, a partir un estudio de los mismos intencionado y selectivo."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "CE6",
+      "descripcion": "Expresar a través del trazo y el gesto del dibujo una visión propia de la realidad o del mundo interior con un trazo y un gesto personales, usando los elementos del lenguaje gráfico, sus formas, signos, posibilidades expresivas y efectos visuales."
+    },
+    {
+      "codigo": "7.1",
+      "competencia": "CE7",
+      "descripcion": "Plantear soluciones alternativas en la representación de la realidad, con diferentes niveles de iconicidad, mostrando un pensamiento divergente, utilizando adecuadamente las herramientas, medios y soportes seleccionados, analizando su posible impacto ambiental y buscando activamente un resultado final ajustado a las intenciones expresivas propias."
+    },
+    {
+      "codigo": "7.2",
+      "competencia": "CE7",
+      "descripcion": "Seleccionar y utilizar con destreza y de manera creativa las herramientas, medios y soportes más adecuados a la intención personal, empleando los valores expresivos del claroscuro y del color en las interpretaciones gráficas propias de la realidad y en la representación del mundo interior."
+    },
+    {
+      "codigo": "7.3",
+      "competencia": "CE7",
+      "descripcion": "Emplear creativamente las tecnologías digitales en producciones gráficas, integrándolas en el proceso creativo y expresivo propio."
+    },
+    {
+      "codigo": "8.1",
+      "competencia": "CE8",
+      "descripcion": "Interpretar gráficamente la realidad observada, abstrayendo la información recibida y desarrollando la retentiva y la memoria visual."
+    },
+    {
+      "codigo": "8.2",
+      "competencia": "CE8",
+      "descripcion": "Lograr efectos perspectivos de profundidad en representaciones gráficas personales y creativas, atendiendo a las proporciones y los contrastes lumínicos y valorando la perspectiva como un método para recrear la tridimensionalidad."
+    },
+    {
+      "codigo": "8.3",
+      "competencia": "CE8",
+      "descripcion": "Realizar estudios gráficos de la figura humana, progresando hacia una representación correcta de las proporciones, el movimiento y el escorzo."
+    },
+    {
+      "codigo": "9.1",
+      "competencia": "CE9",
+      "descripcion": "Planificar producciones gráficas de forma colaborativa, adaptando el diseño y el proceso al ámbito disciplinar elegido, y organizando y distribuyendo las tareas de manera adecuada."
+    },
+    {
+      "codigo": "9.2",
+      "competencia": "CE9",
+      "descripcion": "Realizar, con decisión y actitud positiva, proyectos gráficos compartidos, respetando las aportaciones de los demás, afrontando los retos que surjan y evaluando tanto la planificación como las modificaciones realizadas."
+    },
+    {
+      "codigo": "9.3",
+      "competencia": "CE9",
+      "descripcion": "Afrontar con creatividad los posibles retos que surgen en la ejecución de proyectos gráficos colaborativos, contribuyendo a la consecución y la mejora del resultado final y evaluando tanto la planificación como las modificaciones realizadas."
+    },
+    {
+      "codigo": "9.4",
+      "competencia": "CE9",
+      "descripcion": "Identificar posibilidades de desarrollo académico y profesional relacionadas con el dibujo artístico, comprendiendo las oportunidades que ofrece y el valor añadido de la creatividad en los estudios y en el trabajo, expresando la opinión propia de forma razonada y respetuosa."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "A",
+      "bloque": "A. Concepto e historia del dibujo",
+      "titulo": "Concepto e historia del dibujo",
+      "items": [
+        "El dibujo en el arte de los siglos XIX y XX. Obras más representativas de diferentes artistas.",
+        "De la representación objetiva a la subjetiva. De lo figurativo a la abstracción.",
+        "La  Bauhaus  y el diseño.",
+        "El dibujo como expresión artística contemporánea. Dibujar en el espacio."
+      ]
+    },
+    {
+      "codigo": "B",
+      "bloque": "B. La expresión gráfica y sus recursos elementales",
+      "titulo": "La expresión gráfica y sus recursos elementales",
+      "items": [
+        "El proceso gráfico y la observación. La retentiva y la memoria visual.",
+        "Representación objetiva y subjetiva. Figuración y abstracción. Las formas y su transformación: la forma entendida como una estructura de elementos y relaciones. Espacios negativos y positivos de las formas.",
+        "Textura visual y táctil.",
+        "Técnicas gráfico-plásticas, tradicionales, alternativas y digitales."
+      ]
+    },
+    {
+      "codigo": "C",
+      "bloque": "C. Dibujo y espacio",
+      "titulo": "Dibujo y espacio",
+      "items": [
+        "La línea, el dibujo y la tridimensionalidad.",
+        "La perspectiva. La perspectiva cónica y el dibujo artístico.",
+        "Encuadre y dibujo del natural. Relación con la fotografía. El punto de vista.",
+        "Deformación y espacio: deformaciones perspectivas. Anamorfismos.",
+        "El apunte al natural: espacios interiores, exteriores, urbanos y naturales.",
+        "Geometría y naturaleza. El arte y la arquitectura."
+      ]
+    },
+    {
+      "codigo": "D",
+      "bloque": "D. La luz, el claroscuro y el color",
+      "titulo": "La luz, el claroscuro y el color",
+      "items": [
+        "El sombreado y la mancha en escalas de grises y en color. Escalas y claves tonales.",
+        "Cualidades y relaciones del color. El contraste de color. Color local, tonal y ambiental. Usos del color en el dibujo.",
+        "Dimensiones del color. Conceptos de saturación, tono y valor. Aplicaciones prácticas.",
+        "Perspectiva atmosférica.",
+        "El color asociado a la línea. Arte óptico y geométrico."
+      ]
+    },
+    {
+      "codigo": "E",
+      "bloque": "E. La figura humana",
+      "titulo": "La figura humana",
+      "items": [
+        "Representación del ser humano a lo largo de la historia. Canon y proporción. Los estereotipos de belleza en diferentes épocas.",
+        "Nociones básicas de anatomía artística.",
+        "Apunte del natural. Estudio y representación del escorzo.",
+        "El retrato. Facciones y expresiones.",
+        "El cuerpo humano como soporte y como instrumento de expresión artística."
+      ]
+    },
+    {
+      "codigo": "F",
+      "bloque": "F. Proyectos gráficos colaborativos",
+      "titulo": "Proyectos gráficos colaborativos",
+      "items": [
+        "La distribución de tareas en los proyectos gráficos colaborativos: criterios de selección a partir de las habilidades requeridas y de las necesidades del proyecto.",
+        "Fases de los proyectos gráficos.",
+        "Estrategias de selección de técnicas, herramientas, medios y soportes del dibujo adecuados a distintas disciplinas.",
+        "Estrategias de evaluación de las fases y los resultados de proyectos gráficos. El error como oportunidad de mejora y aprendizaje."
+      ]
+    }
+  ]
+}
