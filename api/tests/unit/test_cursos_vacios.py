@@ -94,7 +94,8 @@ class TestLosDatosNoTienenFilasSinCursos:
     extractor y conviene enterarse aquí y no en producción."""
 
     @pytest.mark.parametrize("carpeta", ["salida", "salida_cataluna", "salida_andalucia",
-                                        "salida_andalucia_bachillerato"])
+                                        "salida_andalucia_bachillerato",
+                                        "salida_ceuta_bachillerato"])
     def test_ningun_json_viene_sin_cursos(self, carpeta):
         import json
 

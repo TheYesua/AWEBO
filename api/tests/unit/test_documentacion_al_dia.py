@@ -158,6 +158,7 @@ class TestLosRecuentosDelCurriculo:
         datos = {}
         for carpeta in ("salida", "salida_cataluna", "salida_cataluna_batxillerat",
                         "salida_andalucia", "salida_andalucia_bachillerato",
+                        "salida_ceuta_bachillerato",
                         "salida_galicia", "salida_pais_vasco",
                         "salida_pais_vasco_bachillerato"):
             ruta = CURRICULO / carpeta
@@ -182,6 +183,7 @@ class TestLosRecuentosDelCurriculo:
         ("salida_cataluna_batxillerat", "Cataluña · Bachillerato"),
         ("salida_andalucia", "Andalucía (Orden 30/05/2023, anexos"),
         ("salida_andalucia_bachillerato", "Andalucía · Bachillerato"),
+        ("salida_ceuta_bachillerato", "Ceuta y Melilla · Bachillerato"),
         ("salida_galicia", "Galicia"),
         ("salida_pais_vasco", "País Vasco (Decreto 77/2023)"),
         ("salida_pais_vasco_bachillerato", "País Vasco · Bachillerato"),

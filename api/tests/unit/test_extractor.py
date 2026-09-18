@@ -20,10 +20,12 @@ from app.curriculo.extractor import (
     CLASE_AKN_TEXTO,
     CLASE_AKN_TITULO,
     PERFIL_ORDEN_EFP_754,
+    PERFIL_ORDEN_EFP_755,
     PERFIL_RD_217,
     Perfil,
     _norm_cabecera,
     derivar_cursos,
+    derivar_cursos_bachillerato,
     extraer,
     leer_parrafos_akn_eadop,
     volcar,
@@ -37,6 +39,7 @@ from app.curriculo.extractor import (
 _FUENTES = Path(__file__).resolve().parents[2].parent / "curriculo" / "fuentes"
 XML_RD_217 = _FUENTES / "estatal" / "rd_217_2022.xml"
 XML_ORDEN_754 = _FUENTES / "ceuta" / "orden_efp_754_2022.xml"
+XML_ORDEN_755 = _FUENTES / "ceuta-bachillerato" / "orden_efp_755_2022.xml"
 XML_DECRET_175 = _FUENTES / "cataluna" / "decret_175_2022.xml"
 
 
@@ -732,3 +735,315 @@ class TestElAkomaNtosoDelDOGC:
         assert "Vegeu la imatge al final del document" in todo, (
             "el marcador de anexo-en-PDF ha cambiado; comprobar qué trae ahora"
         )
+
+
+# ---------------------------------------------------------------------------
+# Orden EFP/755: el Bachillerato de Ceuta y Melilla
+# ---------------------------------------------------------------------------
+
+
+def _secciones_755():
+    """Los marcadores del Anexo II, contados con una máquina de estados propia.
+
+    Es el oráculo, y por eso no llama a `extraer`: si contara con el mismo
+    código que se quiere comprobar, no comprobaría nada. Lo único que comparte
+    con el extractor es el lector del XML —de dónde sale el texto de un `<p>`—,
+    porque ahí no hay nada que medir y sí una trampa: el lector une los trozos
+    de un párrafo con un espacio, así que «vídeo-teatro» en cursiva sale
+    distinto si se lee de otra manera, y las dos listas dejarían de casar por
+    un motivo que no tiene que ver con el currículo.
+
+    Devuelve (competencias, criterios, bloques, saberes con guion).
+    """
+    marcadores = {
+        "competencias específicas", "criterios de evaluación", "saberes básicos",
+    }
+    estado = None
+    dentro = False
+    ce, criterios, bloques, saberes = [], [], [], []
+
+    for clase, texto in PERFIL_ORDEN_EFP_755.leer(XML_ORDEN_755):
+        n = _norm_cabecera(texto).lower().rstrip(".")
+        if clase == "anexo_tit":
+            dentro = n == "materias de bachillerato"
+            continue
+        if not dentro:
+            continue
+        # Una cabecera de materia o las orientaciones cierran la sección.
+        if clase == "centro_cursiva" or (
+            clase == "centro_redonda" and n.startswith("orientaciones metodol")
+        ):
+            estado = None
+            continue
+        if clase == "centro_redonda" and n in marcadores:
+            estado = n
+            continue
+
+        if estado == "competencias específicas":
+            if re.match(r"^\d{1,2}\.\s+\S", texto) and not re.match(r"^\d+\.\d", texto):
+                ce.append(texto)
+        elif estado == "criterios de evaluación":
+            if re.match(r"^\d{1,2}\.\d{1,2}\.?\s+\S", texto):
+                criterios.append(texto)
+        elif estado == "saberes básicos":
+            if re.match(r"^[A-H]\.\s+\S", texto):
+                bloques.append(texto)
+            elif texto.startswith(("–", "-", "—", "•")):
+                saberes.append(re.sub(r"^[–\-—•]\s*", "", texto))
+
+    return ce, criterios, bloques, saberes
+
+
+@pytest.mark.skipif(not XML_ORDEN_755.exists(), reason=f"no está {XML_ORDEN_755}")
+class TestContraLaOrdenEFP755:
+    """El Bachillerato de Ceuta y Melilla, hermano de la Orden EFP/754.
+
+    Consecutivas, mismo departamento, publicadas el mismo día. Y aun así el
+    Anexo II está maquetado de otra manera: las materias van en
+    `centro_cursiva` y en caja de título, no en `centro_redonda` y mayúsculas.
+    Heredar el perfil de la 754 cambiándole la lista de materias devuelve cero.
+    """
+
+    def test_estan_las_cuarenta_y_siete_materias(self):
+        oficiales = {
+            mc.materia_oficial for mc in extraer(XML_ORDEN_755, PERFIL_ORDEN_EFP_755)
+        }
+
+        assert oficiales == set(PERFIL_ORDEN_EFP_755.materias_objetivo)
+        assert len(oficiales) == 47
+
+    def test_la_etapa_va_en_cada_materia(self):
+        """No es una etiqueta: es parte de la clave del upsert.
+
+        «Matemáticas» existe en las dos etapas de Ceuta, con las competencias
+        numeradas igual. Sin este campo la segunda carga pisaría a la primera
+        sin dar ningún error.
+        """
+        resultados = extraer(XML_ORDEN_755, PERFIL_ORDEN_EFP_755)
+
+        assert {mc.etapa for mc in resultados} == {"Bachillerato"}
+
+    def test_ninguna_materia_sale_vacia(self):
+        vacias = [
+            mc.materia_oficial
+            for mc in extraer(XML_ORDEN_755, PERFIL_ORDEN_EFP_755)
+            if not (mc.competencias and mc.criterios and mc.saberes)
+        ]
+
+        assert vacias == []
+
+    def test_segunda_lengua_extranjera_queda_fuera_y_no_es_un_olvido(self):
+        """El anexo trae 48 cabeceras y el perfil 47.
+
+        La que falta no tiene currículo: la Orden la remite entera a la primera
+        lengua extranjera. En la **ESO** sí lo tiene y está cargada, así que la
+        diferencia hay que dejarla escrita o el día que alguien compare las dos
+        Órdenes pensará que se perdió una materia por el camino.
+        """
+        assert "Segunda Lengua Extranjera" not in PERFIL_ORDEN_EFP_755.materias_objetivo
+
+        # Y que sigue sin tenerlo: si un día la modifican, esto se pone rojo.
+        visto, tiene = False, []
+        for clase, texto in PERFIL_ORDEN_EFP_755.leer(XML_ORDEN_755):
+            n = _norm_cabecera(texto).rstrip(".")
+            if clase == "centro_cursiva":
+                if visto:
+                    break
+                visto = n == "Segunda Lengua Extranjera"
+            elif visto and clase == "centro_redonda":
+                tiene.append(n.lower())
+
+        assert visto, "ya no existe la sección: revisar si la han quitado"
+        assert not ({"competencias específicas", "criterios de evaluación",
+                     "saberes básicos"} & set(tiene)), (
+            f"la sección ya trae currículo ({tiene}): hay que incluirla"
+        )
+
+    def test_las_catorce_desdobladas_son_una_materia_con_dos_cursos(self):
+        """«Matemáticas I» y «Matemáticas II» no son dos materias.
+
+        La sección sin numeral trae las competencias específicas y ni un
+        criterio; las del numeral traen criterios y saberes y ni una
+        competencia. Tratarlas como materias sueltas dejaría a las catorce sin
+        una sola competencia, que es lo que el generador necesita para redactar.
+        """
+        por_materia: dict[str, list] = {}
+        for mc in extraer(XML_ORDEN_755, PERFIL_ORDEN_EFP_755):
+            por_materia.setdefault(mc.materia_oficial, []).append(mc)
+
+        dobles = {k: v for k, v in por_materia.items() if len(v) > 1}
+        assert len(dobles) == 14
+
+        for materia, ciclos in dobles.items():
+            assert sorted(c.ciclo for c in ciclos) == [
+                "1º Bachillerato", "2º Bachillerato"
+            ], materia
+            # Cada ciclo se queda con el curso de su numeral…
+            for c in ciclos:
+                assert c.cursos_aplicables == [c.ciclo], materia
+                # …y con criterios y saberes propios…
+                assert c.criterios and c.saberes, f"{materia} {c.ciclo}"
+            # …pero las competencias son las mismas, heredadas del contenedor.
+            codigos = [{x.codigo for x in c.competencias} for c in ciclos]
+            assert codigos[0] == codigos[1] and codigos[0], materia
+
+    def test_matematicas_aplicadas_casa_pese_a_la_mayuscula_cambiada(self):
+        """El boletín se contradice a sí mismo en una sola materia.
+
+        La titula «Matemáticas Aplicadas a las Ciencias Sociales» y a sus dos
+        cursos «Matemáticas aplicadas…», con la a minúscula. Comparando tal
+        cual, esa materia perdería sus dos cursos —y con ellos sus criterios y
+        sus saberes— y saldría solo con las competencias. Por eso el índice de
+        sufijos compara en casefold.
+        """
+        ciclos = [
+            mc
+            for mc in extraer(XML_ORDEN_755, PERFIL_ORDEN_EFP_755)
+            if mc.materia_oficial == "Matemáticas Aplicadas a las Ciencias Sociales"
+        ]
+
+        assert sorted(c.ciclo for c in ciclos) == [
+            "1º Bachillerato", "2º Bachillerato"
+        ]
+        assert all(c.criterios for c in ciclos)
+
+    def test_los_dos_epigrafes_mal_etiquetados_no_parten_matematicas_generales(self):
+        """El BOE etiqueta mal dos párrafos, y da la casualidad de que da igual.
+
+        «Matemáticas inclusivas» y «Matemáticas y herramientas digitales» son
+        epígrafes de metodología: en Matemáticas I y II van en `centro_redonda`
+        y dentro de Matemáticas Generales alguien los dejó en `centro_cursiva`,
+        que es la clase de las cabeceras de materia. No rompen nada porque caen
+        **después** de «Orientaciones metodológicas», que ya cerró la materia.
+        Este test existe para que, si algún día mueven ese párrafo, se sepa por
+        qué se quedó corta una materia.
+        """
+        generales = [
+            mc
+            for mc in extraer(XML_ORDEN_755, PERFIL_ORDEN_EFP_755)
+            if mc.materia_oficial == "Matemáticas generales"
+        ]
+
+        assert len(generales) == 1
+        # Los seis sentidos matemáticos, del A al F, y el último con contenido:
+        # si un epígrafe hubiera cerrado la materia, faltarían los de la cola.
+        assert [b.codigo for b in generales[0].saberes] == list("ABCDEF")
+        assert generales[0].saberes[-1].items
+
+    def test_la_tabla_de_cursos_sigue_coincidiendo_con_los_articulos(self):
+        """`_CURSOS_ORDEN_755` no está escrita de memoria.
+
+        Sale de los artículos 10 a 15 de la propia Orden. Si mañana cambian la
+        oferta de Ceuta y Melilla, esto lo dice.
+        """
+        derivada = derivar_cursos_bachillerato(XML_ORDEN_755, PERFIL_ORDEN_EFP_755)
+
+        assert len(derivada) == 47, "hay materias que ningún artículo coloca"
+        for materia, cursos in PERFIL_ORDEN_EFP_755.cursos_por_defecto.items():
+            assert derivada[materia] == cursos, (
+                f"{materia}: el perfil dice {cursos} y los artículos "
+                f"{derivada[materia]}"
+            )
+
+    def test_las_vias_no_se_confunden_con_materias(self):
+        """«la vía de Artes Plásticas, Imagen y Diseño» contiene «Diseño».
+
+        Y Diseño es una materia de verdad, de segundo. Sin recortar la vía, el
+        artículo 11.2 —que dice «En primero»— le colgaba también 1.º, y el
+        formulario habría ofrecido Diseño un curso antes de que exista.
+        """
+        derivada = derivar_cursos_bachillerato(XML_ORDEN_755, PERFIL_ORDEN_EFP_755)
+
+        assert derivada["Diseño"] == ["2º Bachillerato"]
+        # Y el caso simétrico: una materia dentro de otra más larga.
+        assert derivada["Física"] == ["2º Bachillerato"]
+        assert derivada["Física y Química"] == ["1º Bachillerato"]
+        assert derivada["Biología"] == ["2º Bachillerato"]
+        assert derivada["Biología, Geología y Ciencias Ambientales"] == [
+            "1º Bachillerato"
+        ]
+
+    def test_no_se_pierde_nada_de_la_fuente(self):
+        """La cota: contar en el boletín y exigir que salga todo.
+
+        Es lo que encontró los 89 criterios catalanes perdidos y los 122
+        andaluces mutilados. Aquí la fuente es XML y no un PDF, así que no hay
+        bordes de tabla que corten palabras —pero sí una maquetación distinta
+        de la esperada, que es la forma que tiene de fallar un XML.
+        """
+        ce_fuente, crit_fuente, bloques_fuente, saberes_fuente = _secciones_755()
+        resultados = extraer(XML_ORDEN_755, PERFIL_ORDEN_EFP_755)
+
+        # Las competencias de una materia desdoblada están en sus dos ciclos.
+        ce = {(mc.materia_oficial, c.codigo) for mc in resultados for c in mc.competencias}
+        assert len(ce) == len(ce_fuente) == 279
+
+        criterios = [c for mc in resultados for c in mc.criterios]
+        assert len(criterios) == len(crit_fuente) == 918
+
+        bloques = [b for mc in resultados for b in mc.saberes]
+        assert len(bloques) == len(bloques_fuente) == 270
+
+        # Y uno por uno, no solo el total: un recuento que cuadra puede estar
+        # cambiando un saber por otro.
+        extraidos = {it for mc in resultados for b in mc.saberes for it in b.items}
+        perdidos = [s for s in saberes_fuente if s not in extraidos]
+        assert perdidos == [], f"{len(perdidos)} saberes no llegaron a la salida"
+
+        descripciones = {c.descripcion for c in criterios}
+        sin_llegar = [
+            c for c in crit_fuente
+            if re.sub(r"^\d{1,2}\.\d{1,2}\.?\s*", "", c).strip() not in descripciones
+        ]
+        assert sin_llegar == []
+
+    def test_los_saberes_traen_los_subepigrafes_numerados(self):
+        """Hay 40 items que no son saberes con guion, y están a propósito.
+
+        El boletín subdivide algunos bloques con epígrafes numerados —«1.1 El
+        texto teatral: Definición y elementos.»— y el extractor los guarda como
+        un item más. **Ya lo hacía con la ESO**: 20 casos en la Orden EFP/754 y
+        11 en el RD 217, cargados desde hace meses. Cambiarlo ahora movería
+        saberes que ya están sembrados y que alguna SdA puede estar citando,
+        así que se deja y se deja escrito.
+        """
+        resultados = extraer(XML_ORDEN_755, PERFIL_ORDEN_EFP_755)
+        _, _, _, saberes_fuente = _secciones_755()
+
+        total = sum(len(b.items) for mc in resultados for b in mc.saberes)
+        assert total == 1784
+        assert total - len(saberes_fuente) == 40
+
+    def test_lee_el_xml_de_la_api_consolidada(self):
+        """Los dos XML del BOE no vienen envueltos igual.
+
+            diario_boe/xml.php   <documento><texto><p>
+            API consolidada      <response><data><texto><bloque><p>
+
+        Los dos que ya había son del diario porque se bajaron a mano.
+        `descargar-boe.ps1` pide la consolidada **a propósito**, para traer las
+        modificaciones posteriores, así que todo lo que se baje a partir de
+        ahora viene con el otro envoltorio —incluida una redescarga de la 754.
+        """
+        import lxml.etree as etree
+
+        raiz = etree.parse(str(XML_ORDEN_755)).getroot()
+        assert raiz.tag == "response"
+        assert raiz.find("texto") is None, "ya no hace falta buscar en profundidad"
+
+        parrafos = list(PERFIL_ORDEN_EFP_755.leer(XML_ORDEN_755))
+        assert len(parrafos) > 7000
+
+    def test_el_xml_no_trae_doble_encoding(self):
+        """El primer intento de bajarlo salió con todos los acentos rotos.
+
+        `Invoke-WebRequest` descodifica `.Content` con el charset de la
+        respuesta, y el BOE no manda ninguno: PowerShell 5.1 aplicó ISO-8859-1
+        y al reescribir en UTF-8 quedó el doble encoding, 7067 veces. Las dos
+        comprobaciones que tenía el guion —empieza por «<», contiene «ANEXO
+        II»— son ASCII puro y lo dieron por bueno.
+        """
+        crudo = XML_ORDEN_755.read_bytes().decode("utf-8")
+
+        assert not re.search("Ã[-¿]", crudo)
+        assert "competencias específicas" in crudo.lower()

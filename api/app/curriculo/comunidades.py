@@ -98,7 +98,12 @@ POR_DEFECTO = "ceuta"
 #: su programación es la norma que ordena la etapa. De qué versión salieron los
 #: datos está en el LEEME de las fuentes.
 NORMAS: dict[tuple[str, str], str] = {
+    # Las dos de Ceuta y Melilla son consecutivas y del mismo día: la 754 es de
+    # 28 de julio y la 755 de 31, publicadas las dos el 5 de agosto de 2022.
+    # Aquí, a diferencia de Andalucía, el número ya las distingue y no hace
+    # falta añadirles la etapa.
     ("ceuta", "ESO"): "Orden EFP/754/2022",
+    ("ceuta", "Bachillerato"): "Orden EFP/755/2022",
     # Las dos de Andalucía son **del mismo día y del mismo boletín**, y aun así
     # son dos Órdenes distintas: BOJA 104 de 02/06/2023, disposiciones 9727
     # (ESO, CVE 00284752) y 9728 (Bachillerato, CVE 00284744). Es el único caso

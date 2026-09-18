@@ -115,7 +115,42 @@ class Perfil:
     #: el orden (tres primeros cursos, cuarto curso, artículo dedicado a
     #: Valores Cívicos o ``None`` si no lo hay). Los usa ``derivar_cursos``.
     #: El RD 217 los numera 8, 9 y 10; la Orden EFP/754, 9 y 10.
+    #:
+    #: No sirve para la Orden EFP/755: el Bachillerato reparte las materias en
+    #: seis artículos (10 a 15, uno por modalidad más comunes y optativas) y
+    #: cada uno trae los dos cursos dentro. Ese caso lo lee
+    #: ``derivar_cursos_bachillerato``, no ``derivar_cursos``.
     articulos_cursos: tuple[int, int, int | None] = (8, 9, 10)
+
+    #: Etapa que se escribe en cada ``MateriaCiclo``. Es parte de la clave del
+    #: upsert, no una etiqueta: «Matemáticas» existe en las dos etapas de la
+    #: misma comunidad y con las competencias numeradas igual.
+    #:
+    #: El defecto es «ESO» porque los dos primeros perfiles del BOE lo eran, y
+    #: mientras solo hubo perfiles de ESO esto no era una decisión: era una
+    #: constante escondida en ``MateriaCiclo``.
+    etapa: str = "ESO"
+
+    #: Cursos que se asignan a una materia que no aparece en
+    #: ``cursos_por_defecto`` ni divide su currículo. Toda la etapa, que es lo
+    #: más conservador: es mejor ofrecer una materia de más que esconderla.
+    cursos_todos: tuple[str, ...] = ("1º ESO", "2º ESO", "3º ESO", "4º ESO")
+
+    #: Sufijos que el **título de la materia** usa para separar cursos, y los
+    #: cursos a los que equivale cada uno.
+    #:
+    #: El Anexo II de la Orden EFP/755 titula «Matemáticas», y después
+    #: «Matemáticas I» y «Matemáticas II». No son tres materias: la primera
+    #: sección trae las competencias específicas y **ninguna** criterio ni
+    #: saber, y las otras dos traen criterios y saberes y **ninguna**
+    #: competencia. Tratar el I y el II como materias sueltas dejaría las 14
+    #: materias desdobladas del Bachillerato sin una sola competencia
+    #: específica, que es justo lo que el generador necesita para redactar.
+    #:
+    #: Por eso el sufijo se procesa como cambio de ciclo: ``_cambiar_ciclo``
+    #: hereda las competencias del contenedor y lo descarta si solo traía eso.
+    #: Vacío = el boletín no numera las materias.
+    sufijos_curso: dict[str, list[str]] = field(default_factory=dict)
 
     #: Cómo se convierte el fichero de entrada en una secuencia de
     #: ``(clase, texto)``. El nombre `clase` es herencia del BOE; para un
@@ -310,9 +345,158 @@ PERFIL_ORDEN_EFP_754 = Perfil(
 )
 
 
+#: Las 47 materias con currículo del Anexo II de la Orden EFP/755 (Bachillerato
+#: de Ceuta y Melilla). La etiqueta corta es el nombre oficial, sin excepciones:
+#: los alias históricos («Lengua», «Inglés») existen porque hay situaciones de
+#: aprendizaje guardadas que los citan, y de Bachillerato en Ceuta no hay
+#: ninguna. Es también lo que hizo el Bachillerato de Andalucía en sus 58.
+#:
+#: El anexo trae **48** cabeceras. La que falta es SEGUNDA LENGUA EXTRANJERA, y
+#: no es un olvido: su sección no tiene competencias, ni criterios, ni saberes.
+#: La Orden la remite entera a la primera lengua extranjera —«las enseñanzas de
+#: una segunda lengua extranjera deben ir dirigidas a la consecución de las
+#: mismas competencias específicas establecidas para la primera»— y solo le
+#: dedica unas orientaciones metodológicas. Incluirla ofrecería en el formulario
+#: una materia de la que no se puede generar nada. En la ESO **sí** tiene
+#: currículo propio y está cargada; es una diferencia entre las dos Órdenes
+#: hermanas, no un descuido de una de las dos.
+#:
+#: Las 14 marcadas «I y II» se desdoblan por curso en el propio título. No están
+#: aquí dos veces: eso lo resuelve ``sufijos_curso``.
+_MATERIAS_ORDEN_755: dict[str, str] = {
+    "Actividad Física y Salud": "Actividad Física y Salud",
+    "Análisis Musical": "Análisis Musical",                                   # I y II
+    "Artes Escénicas": "Artes Escénicas",                                     # I y II
+    "Biología": "Biología",
+    "Biología, Geología y Ciencias Ambientales": "Biología, Geología y Ciencias Ambientales",
+    "Ciencias Generales": "Ciencias Generales",
+    "Coro y Técnica Vocal": "Coro y Técnica Vocal",                           # I y II
+    "Cultura Audiovisual": "Cultura Audiovisual",
+    "Dibujo Artístico": "Dibujo Artístico",                                   # I y II
+    "Dibujo Técnico": "Dibujo Técnico",                                       # I y II
+    # I y II. El nombre más largo del anexo, 57 caracteres.
+    "Dibujo Técnico Aplicado a las Artes Plásticas y al Diseño": (
+        "Dibujo Técnico Aplicado a las Artes Plásticas y al Diseño"
+    ),
+    "Diseño": "Diseño",
+    "Ecología y Sostenibilidad Ambiental": "Ecología y Sostenibilidad Ambiental",
+    "Economía": "Economía",
+    "Economía, Emprendimiento y Actividad Empresarial": (
+        "Economía, Emprendimiento y Actividad Empresarial"
+    ),
+    "Educación Física": "Educación Física",
+    "Empresa y Diseño de Modelos de Negocio": "Empresa y Diseño de Modelos de Negocio",
+    "Filosofía": "Filosofía",
+    "Fundamentos Artísticos": "Fundamentos Artísticos",
+    "Física": "Física",
+    "Física y Química": "Física y Química",
+    "Geografía": "Geografía",
+    "Geología y Ciencias Ambientales": "Geología y Ciencias Ambientales",
+    "Gestión Empresarial y Relación con el Entorno": (
+        "Gestión Empresarial y Relación con el Entorno"
+    ),
+    "Griego": "Griego",                                                       # I y II
+    "Historia de España": "Historia de España",
+    "Historia de la Filosofía": "Historia de la Filosofía",
+    "Historia de la Música y de la Danza": "Historia de la Música y de la Danza",
+    "Historia del Arte": "Historia del Arte",
+    "Historia del Mundo Contemporáneo": "Historia del Mundo Contemporáneo",
+    "Inteligencia Artificial": "Inteligencia Artificial",                     # I y II
+    "Latín": "Latín",                                                         # I y II
+    "Lengua Castellana y Literatura": "Lengua Castellana y Literatura",       # I y II
+    "Lengua Extranjera": "Lengua Extranjera",                                 # I y II
+    "Lenguaje y Práctica Musical": "Lenguaje y Práctica Musical",
+    "Literatura Dramática": "Literatura Dramática",
+    "Literatura Universal": "Literatura Universal",
+    "Matemáticas": "Matemáticas",                                             # I y II
+    # I y II, y el único caso en que el boletín se contradice a sí mismo: la
+    # materia se titula «…Aplicadas…» y sus dos cursos «…aplicadas…». Por eso
+    # `_indice_sufijos` compara en casefold.
+    "Matemáticas Aplicadas a las Ciencias Sociales": (
+        "Matemáticas Aplicadas a las Ciencias Sociales"
+    ),
+    # Con g minúscula en la cabecera del anexo, con mayúscula en el artículo 13
+    # y en el Bachillerato de Andalucía. La clave copia el anexo, que es lo que
+    # hay que reconocer; la etiqueta copia el artículo, que es lo que se lee.
+    "Matemáticas generales": "Matemáticas Generales",
+    "Movimientos Culturales y Artísticos": "Movimientos Culturales y Artísticos",
+    "Proyectos Artísticos": "Proyectos Artísticos",
+    "Psicología": "Psicología",
+    "Química": "Química",
+    "Tecnología e Ingeniería": "Tecnología e Ingeniería",                     # I y II
+    "Técnicas de Expresión Gráfico-plástica": "Técnicas de Expresión Gráfico-plástica",
+    "Volumen": "Volumen",
+}
+
+
+#: Curso de las 33 materias que **no** se desdoblan en I y II. Las otras 14 no
+#: salen aquí porque el curso se lo da el numeral del título.
+#:
+#: No está escrita de memoria: sale de ``derivar_cursos_bachillerato()``, que
+#: lee los artículos 10 a 15 de la propia Orden, y ``test_extractor.py`` la ata
+#: a ellos. Si mañana cambian la oferta, el test lo dice.
+_CURSOS_ORDEN_755: dict[str, list[str]] = {
+    "Actividad Física y Salud": ["2º Bachillerato"],
+    "Biología": ["2º Bachillerato"],
+    "Biología, Geología y Ciencias Ambientales": ["1º Bachillerato"],
+    "Ciencias Generales": ["2º Bachillerato"],
+    "Cultura Audiovisual": ["1º Bachillerato"],
+    "Diseño": ["2º Bachillerato"],
+    "Ecología y Sostenibilidad Ambiental": ["2º Bachillerato"],
+    "Economía": ["1º Bachillerato"],
+    "Economía, Emprendimiento y Actividad Empresarial": ["1º Bachillerato"],
+    "Educación Física": ["1º Bachillerato"],
+    "Empresa y Diseño de Modelos de Negocio": ["2º Bachillerato"],
+    "Filosofía": ["1º Bachillerato"],
+    "Fundamentos Artísticos": ["2º Bachillerato"],
+    "Física": ["2º Bachillerato"],
+    "Física y Química": ["1º Bachillerato"],
+    "Geografía": ["2º Bachillerato"],
+    "Geología y Ciencias Ambientales": ["2º Bachillerato"],
+    "Gestión Empresarial y Relación con el Entorno": ["2º Bachillerato"],
+    "Historia de España": ["2º Bachillerato"],
+    "Historia de la Filosofía": ["2º Bachillerato"],
+    "Historia de la Música y de la Danza": ["2º Bachillerato"],
+    "Historia del Arte": ["2º Bachillerato"],
+    "Historia del Mundo Contemporáneo": ["1º Bachillerato"],
+    "Lenguaje y Práctica Musical": ["1º Bachillerato"],
+    "Literatura Dramática": ["2º Bachillerato"],
+    "Literatura Universal": ["1º Bachillerato"],
+    "Matemáticas generales": ["1º Bachillerato"],
+    "Movimientos Culturales y Artísticos": ["2º Bachillerato"],
+    "Proyectos Artísticos": ["1º Bachillerato"],
+    "Psicología": ["2º Bachillerato"],
+    "Química": ["2º Bachillerato"],
+    "Técnicas de Expresión Gráfico-plástica": ["2º Bachillerato"],
+    "Volumen": ["1º Bachillerato"],
+}
+
+
+PERFIL_ORDEN_EFP_755 = Perfil(
+    nombre="orden_efp_755",
+    # NO es `centro_redonda`, que es lo que usa su Orden hermana de la ESO.
+    # Aquí `centro_redonda` son los epígrafes de «Orientaciones metodológicas»
+    # —«Escucha activa y uso de partituras», «Gestión emocional»— y hay 561 en
+    # el anexo. Copiar el perfil de la 754 y cambiarle la lista de materias
+    # habría devuelto cero materias.
+    clase_cabecera_materia="centro_cursiva",
+    # Caja de título, no mayúsculas: «Análisis Musical», no «ANÁLISIS MUSICAL».
+    cabecera_mayusculas=False,
+    materias_objetivo=_MATERIAS_ORDEN_755,
+    cursos_por_defecto=_CURSOS_ORDEN_755,
+    etapa="Bachillerato",
+    cursos_todos=("1º Bachillerato", "2º Bachillerato"),
+    sufijos_curso={"I": ["1º Bachillerato"], "II": ["2º Bachillerato"]},
+    # Los artículos de cursos del Bachillerato no caben en la terna de la ESO;
+    # ver el comentario de `articulos_cursos`. Se deja el defecto porque
+    # `derivar_cursos` no se usa con este perfil.
+)
+
+
 PERFILES = {
     PERFIL_RD_217.nombre: PERFIL_RD_217,
     PERFIL_ORDEN_EFP_754.nombre: PERFIL_ORDEN_EFP_754,
+    PERFIL_ORDEN_EFP_755.nombre: PERFIL_ORDEN_EFP_755,
 }
 
 
@@ -629,7 +813,24 @@ def leer_parrafos_boe(xml_path: Path) -> Iterator[tuple[str, str]]:
     valor por defecto de `Perfil.lector`, y otro boletín traerá el suyo.
     """
     tree = etree.parse(str(xml_path))
-    texto_node = tree.getroot().find("texto")
+    raiz = tree.getroot()
+    # DOS ENVOLTORIOS, EL MISMO CONTENIDO.
+    #
+    # El BOE sirve la misma norma por dos sitios y no los envuelve igual:
+    #
+    #   diario_boe/xml.php            <documento><texto><p class="...">
+    #   API de consolidada …/texto    <response><data><texto><bloque><p class="...">
+    #
+    # Dentro son idénticos: los mismos `<p>` con las mismas clases. Solo cambia
+    # de quién cuelga `<texto>`, y por eso un `find("texto")` a secas —que solo
+    # mira los hijos directos— fallaba con todo lo que baje
+    # `docs/scripts/descargar-boe.ps1`, que pide la consolidada **a propósito**
+    # para traer las modificaciones posteriores. Los dos XML que había en el
+    # proyecto son del diario porque se bajaron a mano antes de que el guion
+    # existiera; el primero que se bajó con él ya vino en la otra forma.
+    texto_node = raiz.find("texto")
+    if texto_node is None:
+        texto_node = raiz.find(".//texto")
     if texto_node is None:
         raise RuntimeError("El XML no contiene un nodo <texto>.")
     for p in texto_node.iter("p"):
@@ -735,6 +936,18 @@ class _Parser:
         self._indice_cabeceras: dict[str, str] = {
             _norm_cabecera(clave): clave for clave in perfil.materias_objetivo
         }
+        #: «matemáticas i» -> ("Matemáticas", "I"). Se indexa en *casefold*, a
+        #: diferencia de `_indice_cabeceras`, y no por comodidad: la Orden
+        #: EFP/755 titula la materia «Matemáticas Aplicadas a las Ciencias
+        #: Sociales» y sus dos cursos «Matemáticas aplicadas a las Ciencias
+        #: Sociales I» y «… II», con la A en minúscula. Comparando tal cual, esa
+        #: materia perdería sus dos cursos —y con ellos todos sus criterios y
+        #: saberes— sin dar ningún error.
+        self._indice_sufijos: dict[str, tuple[str, str]] = {
+            f"{clave} {sufijo}".casefold(): (clave, sufijo)
+            for clave in perfil.materias_objetivo
+            for sufijo in perfil.sufijos_curso
+        }
 
     # ---- helpers ---------------------------------------------------------
 
@@ -776,9 +989,10 @@ class _Parser:
             materia_oficial=oficial,
             materia_corta=self.perfil.materias_objetivo[oficial],
             ciclo="Único",
+            etapa=self.perfil.etapa,
             cursos_aplicables=list(
                 self.perfil.cursos_por_defecto.get(
-                    oficial, ["1º ESO", "2º ESO", "3º ESO", "4º ESO"]
+                    oficial, self.perfil.cursos_todos
                 )
             ),
         )
@@ -811,6 +1025,7 @@ class _Parser:
             materia_oficial=self.materia_oficial,
             materia_corta=self.perfil.materias_objetivo[self.materia_oficial],
             ciclo=ciclo,
+            etapa=self.perfil.etapa,
             cursos_aplicables=list(cursos),
             itinerario=itinerario,
             competencias=competencias_heredadas,
@@ -827,6 +1042,13 @@ class _Parser:
         if clase != self.perfil.clase_cabecera_materia:
             return None
         return self._indice_cabeceras.get(_norm_cabecera(texto))
+
+    def _es_cabecera_curso(self, clase: str, texto: str) -> tuple[str, str] | None:
+        """Si el párrafo es «<materia> I» o «<materia> II», la materia y el
+        sufijo; si no, None. Ver ``Perfil.sufijos_curso``."""
+        if clase != self.perfil.clase_cabecera_materia:
+            return None
+        return self._indice_sufijos.get(_norm_cabecera(texto).casefold())
 
     def _es_cabecera_otra_materia(self, clase: str, texto: str) -> bool:
         """True si el párrafo es cabecera de una materia DISTINTA a las del
@@ -856,6 +1078,28 @@ class _Parser:
         oficial = self._es_cabecera_materia(clase, texto)
         if oficial is not None:
             self._abrir_materia(oficial)
+            return
+
+        # 1.5) Cabecera de un CURSO de la materia: «Matemáticas II». No es una
+        # materia nueva sino otro ciclo de la que está abierta, para que herede
+        # las competencias específicas, que solo están en la sección sin
+        # numeral. Ver `Perfil.sufijos_curso`.
+        curso_de = self._es_cabecera_curso(clase, texto)
+        if curso_de is not None:
+            clave, sufijo = curso_de
+            cursos = self.perfil.sufijos_curso[sufijo]
+            if self.materia_oficial != clave:
+                # El boletín pone el numeral antes que la materia, o la sección
+                # sin numeral no existe. Se abre igualmente: perderíamos las
+                # competencias, pero no los criterios ni los saberes.
+                logger.warning(
+                    "«%s %s» aparece sin su sección «%s» delante: se abre la "
+                    "materia sin competencias específicas heredadas.",
+                    clave, sufijo, clave,
+                )
+                self._abrir_materia(clave)
+            # El ciclo se llama como el curso, igual que en Andalucía.
+            self._cambiar_ciclo(cursos[0], list(cursos), None)
             return
 
         # 2) Cabecera de OTRA materia (fuera del scope) → cierra la actual
@@ -1181,6 +1425,119 @@ def derivar_cursos(xml_path: Path, perfil: Perfil) -> dict[str, list[str]]:
         )
 
     return derivados
+
+
+# ---------------------------------------------------------------------------
+# Cursos en Bachillerato: los artículos reparten distinto
+# ---------------------------------------------------------------------------
+#
+# `derivar_cursos` da por hecho la forma de la ESO: un artículo para los tres
+# primeros cursos y otro para cuarto, cada uno con su lista de letras. El
+# Bachillerato no se organiza así. La Orden EFP/755 usa seis artículos —10
+# comunes, 11 a 14 una modalidad cada uno, 15 optativas— y **cada uno reparte
+# los dos cursos por dentro**, en apartados numerados: «1. … en primero …»,
+# «2. … en segundo …».
+#
+# Tres cosas que costaron una pasada cada una, y por las que esto no es un
+# `derivar_cursos` con otro número de artículo:
+#
+# 1. **El numeral manda sobre el apartado.** El artículo 12.2 dice «en segundo»
+#    y lista «Tecnología e Ingeniería II»: coinciden. Pero el 11.2 dice «En
+#    primero» y nombra «Dibujo Técnico Aplicado a las Artes Plásticas y al
+#    Diseño I»; si un día se colara un numeral en el apartado que no toca,
+#    queremos el del numeral, que es el que titula la sección del anexo.
+# 2. **Un nombre de materia cabe dentro de otro.** «Física» está dentro de
+#    «Física y Química», «Diseño» dentro de «Empresa y Diseño de Modelos de
+#    Negocio», «Biología» dentro de «Biología, Geología y Ciencias
+#    Ambientales». Sin buscar de más largo a más corto **y tapar lo ya casado**,
+#    seis materias salían con los dos cursos.
+# 3. **Las vías no son materias.** El artículo 11 habla de «la vía de Artes
+#    Plásticas, Imagen y Diseño» y «la vía de Música y Artes Escénicas». Ahí
+#    dentro están «Diseño» y «Artes Escénicas», que son materias de verdad en
+#    otro sitio. Con la vía sin tapar, Diseño —que es de 2.º— salía también de
+#    1.º, y en el formulario habría aparecido un curso antes de existir.
+
+#: Artículos de la Orden EFP/755 que reparten las materias por curso.
+_ARTICULOS_CURSOS_BACH = range(10, 16)
+
+RX_PRIMERO = re.compile(r"\b(primer curso|en primero|de primero)\b", re.IGNORECASE)
+RX_SEGUNDO = re.compile(r"\b(segundo curso|en segundo|de segundo)\b", re.IGNORECASE)
+
+#: «…el alumnado de la vía de Música y Artes Escénicas cursará…». Se recorta
+#: desde «la vía de» hasta el verbo, que es donde empieza a hablar de materias.
+RX_VIA = re.compile(
+    r"\bla vía de\b.*?(?=\bcursará\b|\bdeberá\b|$)", re.IGNORECASE
+)
+
+
+def derivar_cursos_bachillerato(
+    xml_path: Path, perfil: Perfil
+) -> dict[str, list[str]]:
+    """Curso de cada materia, leído de los artículos de la parte dispositiva.
+
+    Devuelve ``{materia oficial: [cursos]}`` con **todas** las materias del
+    perfil, incluidas las que se desdoblan en I y II —esas salen con los dos
+    cursos—. Es el ancla de ``_CURSOS_ORDEN_755``: la tabla del perfil tiene
+    que coincidir con lo que devuelve esto para las materias que no se
+    desdoblan.
+    """
+    parrafos = [texto for _, texto in perfil.leer(xml_path)]
+
+    inicio: dict[int, int] = {}
+    for i, texto in enumerate(parrafos):
+        m = RX_ARTICULO.match(_norm_cabecera(texto))
+        if m:
+            inicio.setdefault(int(m.group(1)), i)
+
+    faltan = [a for a in _ARTICULOS_CURSOS_BACH if a not in inicio]
+    if faltan or (max(_ARTICULOS_CURSOS_BACH) + 1) not in inicio:
+        logger.warning(
+            "No encuentro los artículos %s en %s: no puedo derivar los cursos.",
+            faltan or [max(_ARTICULOS_CURSOS_BACH) + 1], xml_path.name,
+        )
+        return {}
+
+    # De más largo a más corto, para que «Física y Química» se case antes que
+    # «Física». Ver el punto 2 de arriba.
+    nombres = sorted(perfil.materias_objetivo, key=len, reverse=True)
+    derivados: dict[str, set[str]] = {}
+
+    for articulo in _ARTICULOS_CURSOS_BACH:
+        heredado: str | None = None
+        for i in range(inicio[articulo], inicio[articulo + 1]):
+            texto = _norm_cabecera(parrafos[i])
+            propio = (
+                "1º Bachillerato" if RX_PRIMERO.search(texto)
+                else "2º Bachillerato" if RX_SEGUNDO.search(texto)
+                else None
+            )
+            # Un apartado numerado fija el curso para sus letras; un item puede
+            # traer el suyo propio y entonces gana (artículo 15.2).
+            if RX_APARTADO.match(texto):
+                heredado = propio
+            curso = propio or heredado
+            if curso is None:
+                continue
+
+            libre = RX_VIA.sub(" ", texto)
+            for nombre in nombres:
+                formas = [(nombre, curso)]
+                for sufijo, cursos_sufijo in perfil.sufijos_curso.items():
+                    formas.insert(0, (f"{nombre} {sufijo}", cursos_sufijo[0]))
+                # Los sufijos, de más largo a más corto: «Latín II» antes que
+                # «Latín I», que si no se lleva la I y deja la segunda I suelta.
+                formas.sort(key=lambda f: len(f[0]), reverse=True)
+                for forma, cur in formas:
+                    rx = re.compile(
+                        r"(?<![\w])" + re.escape(forma) + r"(?![\w])",
+                        re.IGNORECASE,
+                    )
+                    if rx.search(libre):
+                        derivados.setdefault(nombre, set()).add(cur)
+                        libre = rx.sub(" " * len(forma), libre)
+                        break
+
+    return {k: sorted(v) for k, v in derivados.items()}
 
 
 # ---------------------------------------------------------------------------
