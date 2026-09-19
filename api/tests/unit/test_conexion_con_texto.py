@@ -32,7 +32,7 @@ from types import SimpleNamespace as NS
 
 import pytest
 
-from app.services.exportacion_service import filas_de_conexion
+from app.services.exportacion_service import MISMO_BLOQUE, filas_de_conexion
 
 
 def _sa(citados: dict, competencias=(), criterios=(), saberes=()):
@@ -261,3 +261,86 @@ class TestLasDosRutasPintanLoMismo:
         filas = filas_de_conexion(CATALAN)[parte]
 
         assert filas and set(filas[0]) == columnas
+
+
+class TestElBloqueNoSeRepiteEnFilasSeguidas:
+    """El BOE no siempre titula el bloque con una etiqueta.
+
+    En las materias literarias de la Orden EFP/755 el título del bloque es la
+    frase entera que introduce sus saberes: el bloque A de Literatura Dramática
+    mide **390 caracteres**. Pintado en cada fila, cinco saberes ocupaban una
+    página entera del PDF y el docente leía el mismo párrafo cinco veces.
+
+    Se colapsa en `filas_de_conexion` y no en las plantillas porque son dos
+    —PDF y DOCX— y olvidarse de una ya costó un fallo.
+    """
+
+    #: El de verdad, tal cual está en `saber_basico.bloque`.
+    LARGO = (
+        "A. Construcción guiada y compartida de la interpretación de algunos "
+        "textos relevantes de la literatura dramática inscritos en itinerarios "
+        "temáticos que establezcan relaciones intertextuales entre obras y "
+        "fragmentos de diferentes géneros, épocas, contextos culturales y "
+        "códigos artísticos, así como con sus respectivos contextos de "
+        "producción, de acuerdo a los siguientes ejes y estrategias:"
+    )
+
+    def _tres_del_mismo_bloque(self):
+        return _sa(
+            citados={"saberes": [
+                {"codigo": "A.1", "justificacion": "j1"},
+                {"codigo": "A.2", "justificacion": "j2"},
+                {"codigo": "A.3", "justificacion": "j3"},
+            ]},
+            saberes=[
+                NS(codigo="A.1", bloque=self.LARGO, descripcion="El libreto."),
+                NS(codigo="A.2", bloque=self.LARGO, descripcion="El personaje."),
+                NS(codigo="A.3", bloque=self.LARGO, descripcion="La escena."),
+            ],
+        )
+
+    def test_la_primera_lo_dice_entero_y_las_siguientes_no(self):
+        filas = filas_de_conexion(self._tres_del_mismo_bloque())["saberes"]
+
+        assert filas[0]["bloque"] == self.LARGO
+        assert filas[1]["bloque"] == MISMO_BLOQUE
+        assert filas[2]["bloque"] == MISMO_BLOQUE
+
+    def test_seguidas_no_es_lo_mismo_que_iguales(self):
+        """Si el generador cita A, B y otra vez A, esa segunda A va entera:
+        ya no está debajo de la suya."""
+        sa = _sa(
+            citados={"saberes": [{"codigo": c, "justificacion": "j"}
+                                 for c in ("A.1", "B.1", "A.2")]},
+            saberes=[
+                NS(codigo="A.1", bloque="Bloque A", descripcion="uno"),
+                NS(codigo="B.1", bloque="Bloque B", descripcion="dos"),
+                NS(codigo="A.2", bloque="Bloque A", descripcion="tres"),
+            ],
+        )
+
+        assert [f["bloque"] for f in filas_de_conexion(sa)["saberes"]] == [
+            "Bloque A", "Bloque B", "Bloque A",
+        ]
+
+    def test_un_bloque_que_falta_no_se_colapsa(self):
+        """«—» ya significa «no hay dato» y es corto: sustituirlo por «↳»
+        diría «el mismo que arriba» de algo que no hay."""
+        sa = _sa(
+            citados={"saberes": [{"codigo": c, "justificacion": "j"}
+                                 for c in ("X.1", "X.2")]},
+            saberes=[
+                NS(codigo="X.1", bloque="", descripcion="uno"),
+                NS(codigo="X.2", bloque="", descripcion="dos"),
+            ],
+        )
+
+        assert [f["bloque"] for f in filas_de_conexion(sa)["saberes"]] == ["—", "—"]
+
+    def test_la_marca_no_es_una_celda_vacia(self):
+        """Los dos caminos de exportación tratan distinto una cadena vacía: el
+        PDF la pinta «—» —que aquí significa «no hay dato»— y el DOCX la deja
+        en blanco. Una marca explícita hace que pinten lo mismo, que es para lo
+        que existe `filas_de_conexion`."""
+        assert MISMO_BLOQUE
+        assert MISMO_BLOQUE != "—"

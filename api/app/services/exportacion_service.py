@@ -70,6 +70,16 @@ def secciones_para_export() -> list[tuple[str, str]]:
 #: porque es la única señal que tiene el docente de que ahí hay que revisar.
 _SIN_TEXTO = _("(no encontrado en el currículo)")
 
+#: Lo que se pinta en la columna «Bloque» cuando la fila anterior ya lo dice.
+#:
+#: No es `""`: una celda vacía la pinta el PDF como «—», que en estas tablas
+#: significa «no hay dato», y el DOCX la dejaría en blanco — o sea, los dos
+#: caminos dirían cosas distintas, que es justo lo que `filas_de_conexion`
+#: existe para evitar. Y no es la palabra «Ídem» para no arrastrar una cadena
+#: traducible, con sus cuatro catálogos, por un símbolo que se lee igual en las
+#: cuatro lenguas.
+MISMO_BLOQUE = "↳"
+
 
 def filas_de_conexion(sa: SituacionAprendizaje) -> dict[str, list[dict[str, str]]]:
     """Las tres tablas de la conexión curricular, ya combinadas y listas.
@@ -131,23 +141,56 @@ def filas_de_conexion(sa: SituacionAprendizaje) -> dict[str, list[dict[str, str]
         }
         for c in _citados("criterios")
     ]
-    filas["saberes"] = [
-        {
-            # El código del saber no se pinta, y es deliberado: en Cataluña no
-            # existe fuera de esta aplicación —el decreto no numera sus
-            # bloques—, así que enseñarlo invita a buscarlo en un boletín donde
-            # no está. Lo que sí sitúa el saber es su bloque, que sí tiene
-            # nombre en la norma. Se conserva en el diccionario porque los
-            # tests y cualquier depuración lo necesitan.
-            "codigo": s.get("codigo") or "—",
-            "bloque": getattr(saber_de.get(s.get("codigo", "")), "bloque", "") or "—",
-            "texto": getattr(
-                saber_de.get(s.get("codigo", "")), "descripcion", str(_SIN_TEXTO)
-            ),
-            "justificacion": s.get("justificacion") or "—",
-        }
-        for s in _citados("saberes")
-    ]
+    # EL BLOQUE NO SE REPITE EN FILAS SEGUIDAS
+    #
+    # La columna «Bloque» se pintaba en todas las filas. Con un título de dos
+    # palabras —«Sentido algebraico»— eso se lee como una etiqueta de
+    # agrupación y funciona. Pero el BOE no siempre titula el bloque con una
+    # etiqueta: en las materias literarias de la Orden EFP/755 el título es la
+    # frase entera que introduce sus saberes, y el bloque A de Literatura
+    # Dramática mide **390 caracteres**. Repetido, cinco saberes ocupaban una
+    # página entera del PDF y el docente leía el mismo párrafo cinco veces, con
+    # el saber de verdad apretado en una columna estrecha.
+    #
+    # Se colapsa aquí y no en las plantillas **porque son dos**: el PDF y el
+    # DOCX se pintan por caminos distintos y ya costó un fallo olvidarse de uno
+    # (ver el comentario de «UNA SECCIÓN QUE FALTA SE DICE, NO SE OMITE»). Esta
+    # función existe justamente para que las dos pinten lo mismo.
+    #
+    # «Seguidas» y no «iguales»: si el generador cita A, B y luego A otra vez,
+    # esa segunda A se escribe entera, porque ya no está debajo de la suya.
+    #
+    # La marca es un glifo y no la palabra «Ídem» para no meter una cadena
+    # traducible —y sus cuatro catálogos, y recompilarlos— por un símbolo que
+    # se entiende igual en castellano, catalán, gallego y euskera.
+    filas["saberes"] = []
+    bloque_anterior: str | None = None
+    for s in _citados("saberes"):
+        registro = saber_de.get(s.get("codigo", ""))
+        bloque = getattr(registro, "bloque", "") or "—"
+        repetido = bloque == bloque_anterior and bloque != "—"
+        bloque_anterior = bloque
+        filas["saberes"].append(
+            {
+                # El código del saber no se pinta, y es deliberado: en Cataluña
+                # no existe fuera de esta aplicación —el decreto no numera sus
+                # bloques—, así que enseñarlo invita a buscarlo en un boletín
+                # donde no está. Lo que sí sitúa el saber es su bloque, que sí
+                # tiene nombre en la norma. Se conserva en el diccionario
+                # porque los tests y cualquier depuración lo necesitan.
+                "codigo": s.get("codigo") or "—",
+                # Se colapsa lo que se pinta, no el dato: el bloque sigue
+                # entero en `saber_basico.bloque`. No se añade aquí una segunda
+                # clave con el original porque nadie la pintaría, y
+                # `test_cada_fila_trae_todas_sus_columnas` comprueba el juego
+                # exacto de columnas justamente para que PDF y DOCX no
+                # diverjan: una clave que solo usa una de las dos es el
+                # principio de esa divergencia.
+                "bloque": MISMO_BLOQUE if repetido else bloque,
+                "texto": getattr(registro, "descripcion", str(_SIN_TEXTO)),
+                "justificacion": s.get("justificacion") or "—",
+            }
+        )
     return filas
 
 
