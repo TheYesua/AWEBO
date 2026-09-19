@@ -42,7 +42,20 @@ import unicodedata
 #: la tarea 9c —para que quien las busque las encuentre arriba— y luego el
 #: resto por orden alfabético.
 COMUNIDADES: dict[str, str] = {
-    "ceuta": "Ceuta",
+    # EL CÓDIGO ES «ceuta» Y EL NOMBRE «Ceuta y Melilla», Y NO ES UN DESCUIDO.
+    #
+    # El código lleva puesto desde el TFG, está en la columna `comunidad` de
+    # las tres tablas del catálogo y en el nombre de la carpeta de fuentes:
+    # cambiarlo obligaría a una migración de datos para no ganar nada.
+    #
+    # El nombre sí se corrige. Lo que hay cargado es el currículo del **ámbito
+    # de gestión del Ministerio**, que son las dos ciudades autónomas: la Orden
+    # EFP/754 de la ESO y la EFP/755 de Bachillerato se titulan las dos así y
+    # aplican por igual a Ceuta y a Melilla. Decir solo «Ceuta» hacía que el PDF
+    # de una SdA atribuyera a una ciudad una norma de las dos —se vio en las
+    # SdA 69 y 70, que decían «Currículo aplicado: Ceuta (Orden EFP/755/2022)»—
+    # y dejaba a un docente de Melilla sin catálogo: ver `provincias.py`.
+    "ceuta": "Ceuta y Melilla",
     "andalucia": "Andalucía",
     "cataluna": "Cataluña",
     "galicia": "Galicia",
@@ -57,7 +70,12 @@ COMUNIDADES: dict[str, str] = {
     "extremadura": "Extremadura",
     "la-rioja": "La Rioja",
     "madrid": "Madrid",
-    "melilla": "Melilla",
+    # «melilla» ya no es un código de comunidad: no existía ningún currículo
+    # con ese valor y no podía existir, porque el de las dos ciudades se carga
+    # bajo `ceuta`. Mientras estuvo aquí, un docente de Melilla elegía su ciudad
+    # y se quedaba con el catálogo vacío sin que nada se lo explicara. Sigue
+    # reconociéndose al leer, en `_ALIAS`, para las filas antiguas que lo
+    # guardaron como texto.
     "murcia": "Murcia",
     "navarra": "Navarra",
     "valencia": "Comunitat Valenciana",
@@ -172,6 +190,13 @@ _ALIAS: dict[str, str] = {
     "region de murcia": "murcia",
     "castilla la mancha": "castilla-la-mancha",
     "castilla leon": "castilla-y-leon",
+    # Melilla fue un código de comunidad hasta el 19/09/2026 y hay filas que lo
+    # guardaron como nombre en `comunidad_autonoma`, que es texto libre. Sin
+    # este alias, esas filas resolverían a `None` —`normalizar` no inventa— y
+    # se quedarían sin currículo igual que antes. Con él pasan a leer el de las
+    # dos ciudades, que es el que les corresponde.
+    "melilla": "ceuta",
+    "ceuta y melilla": "ceuta",
 }
 
 

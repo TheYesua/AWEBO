@@ -99,8 +99,18 @@ PROVINCIAS: dict[str, tuple[str, str]] = {
     "bizkaia": ("Bizkaia", "pais-vasco"),
     "gipuzkoa": ("Gipuzkoa", "pais-vasco"),
     # Ciudades autónomas: ver el docstring del módulo.
+    # LAS DOS APUNTAN A LA MISMA COMUNIDAD, Y ES LO CORRECTO.
+    #
+    # El currículo que hay cargado bajo `ceuta` es el del ámbito de gestión del
+    # Ministerio: las Órdenes EFP/754 (ESO) y EFP/755 (Bachillerato) se titulan
+    # «de Ceuta y Melilla» y aplican a las dos por igual. Melilla apuntaba a una
+    # comunidad `melilla` para la que no había —ni podía haber— currículo, así
+    # que quien elegía Melilla en el desplegable se quedaba con el catálogo
+    # vacío. No hacía falta migrar nada: `geografia.comunidad_de` deriva la
+    # comunidad de la provincia **al leer**, así que las cuentas que ya tenían
+    # `provincia='melilla'` empiezan a ver su currículo con este cambio.
     "ceuta": ("Ceuta", "ceuta"),
-    "melilla": ("Melilla", "melilla"),
+    "melilla": ("Melilla", "ceuta"),
 }
 
 
