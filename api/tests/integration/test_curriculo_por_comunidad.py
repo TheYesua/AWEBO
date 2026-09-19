@@ -505,10 +505,32 @@ class TestElCatalogoDeProvincias:
         assert {provincias.comunidad_de(p) for p in andaluzas} == {"andalucia"}
 
     def test_agrupadas_pone_delante_las_que_tienen_curriculo_previsto(self):
+        """Lo que se comprueba es el ORDEN, no cómo se llaman.
+
+        Las etiquetas estuvieron escritas a mano aquí y el test se puso rojo el
+        19/09 al renombrar la comunidad de Ceuta a «Ceuta y Melilla» —un cambio
+        que no tiene nada que ver con el orden—. Derivándolas de
+        `COMUNIDADES`, un renombrado no rompe nada y un reordenado sí, que es
+        justo lo que este test existe para vigilar.
+        """
+        from app.curriculo import comunidades, provincias
+
+        con_curriculo = ["ceuta", "andalucia", "cataluna", "galicia", "pais-vasco"]
+        etiquetas = [e for e, _ps in provincias.agrupadas()]
+
+        assert etiquetas[:5] == [comunidades.nombre(c) for c in con_curriculo]
+
+    def test_las_dos_ciudades_autonomas_van_en_el_mismo_grupo(self):
+        """Ceuta y Melilla comparten currículo —las Órdenes EFP/754 y EFP/755
+        son de las dos—, así que comparten grupo en el desplegable. Melilla
+        colgaba de un grupo propio sin currículo detrás."""
         from app.curriculo import provincias
 
-        etiquetas = [e for e, _ps in provincias.agrupadas()]
-        assert etiquetas[:5] == ["Ceuta", "Andalucía", "Cataluña", "Galicia", "País Vasco"]
+        grupos = dict(provincias.agrupadas())
+        ciudades = grupos["Ceuta y Melilla"]
+
+        assert [c for c, _n in ciudades] == ["ceuta", "melilla"]
+        assert "Melilla" not in grupos
 
 
 class TestLasDosColumnasNoDivergen:
