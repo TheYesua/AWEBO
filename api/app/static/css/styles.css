@@ -1714,6 +1714,12 @@ input:disabled {
 /* Misma familia que .tabla-curr y compañía. Se declara aparte porque estas
    tablas son de gestión, no de contenido curricular: si algún día cambia el
    aspecto de aquellas, esta no tiene por qué seguirlas. */
+/* Aire entre la barra de filtros y la tabla. Sin esto, «Aplicar filtros»
+   queda pegado al borde superior de la tabla y parece parte de ella. */
+.filtros-admin + .tabla-responsiva {
+  margin-top: var(--space-4);
+}
+
 .tabla-admin {
   width: 100%;
   border-collapse: collapse;
@@ -1731,10 +1737,21 @@ input:disabled {
   font-weight: 700;
   white-space: nowrap;
 }
-.tabla-admin td:last-child {
+/* LOS BOTONES VAN EN UN ENVOLTORIO, NO EN LA PROPIA CELDA.
+   Esto era `.tabla-admin td:last-child { display: flex }`, y `display: flex`
+   en un `<td>` **lo saca del layout de tabla**: deja de ser celda, deja de
+   estirarse a la altura de su fila y sus bordes dejan de casar con los de la
+   celda de al lado. El síntoma es la línea separadora de la última columna
+   partida y desalineada de una fila a otra.
+   Es también lo que obligaba a un apaño en `.fila--edicion`, que tenía que
+   devolverle el `display: table-cell` a mano porque aquella regla alcanzaba a
+   cualquier última celda, fuera o no de botones. Con el flex en un `<div>`
+   propio, la celda nunca deja de serlo y el apaño sobra. */
+.tabla-admin .celda-acciones {
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-1);
+  align-items: center;
 }
 
 /* Cuenta dada de baja. El fondo NO es la única señal: la columna «Estado»
@@ -1776,13 +1793,11 @@ input:disabled {
 }
 
 /* Fila de edición desplegada bajo una cuenta del panel.
-   El selector lleva `.tabla-admin` delante por especificidad: la regla
-   `.tabla-admin td:last-child { display: flex }` —pensada para la columna de
-   botones— también alcanza a esta celda, que es la última de su fila, y pesa
-   más que un `.fila--edicion > td` a secas. Sin igualar la especificidad, el
-   formulario se maquetaría como una hilera de botones. */
+   Ya no hace falta devolverle el `display: table-cell`: eso era para
+   contrarrestar el `display: flex` que llevaba `td:last-child`, y que ahora
+   vive en `.celda-acciones`. Se deja el selector con `.tabla-admin` delante
+   por coherencia con el resto del bloque. */
 .tabla-admin .fila--edicion > td {
   background: var(--color-surface-2);
-  display: table-cell;
 }
 .tabla-admin .fila--edicion .form { margin: 0; }

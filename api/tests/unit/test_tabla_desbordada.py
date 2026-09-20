@@ -64,3 +64,62 @@ class TestLasDosColumnasQueSeCortaban:
         assert 'scope="col" class="acciones"' in html
         assert '<td class="fecha">' in html
         assert '<td class="acciones">' in html
+
+
+PANEL = _RAIZ / "app" / "templates" / "admin" / "panel.html"
+
+
+class TestLaCeldaDeBotonesSigueSiendoUnaCelda:
+    """`display: flex` en un `<td>` lo saca del layout de tabla.
+
+    EL FALLO
+    ---------
+    El panel tenía `.tabla-admin td:last-child { display: flex }` para alinear
+    los botones. Una celda con `display: flex` deja de ser celda: **no se
+    estira a la altura de su fila**. Medido en el navegador sobre la tabla
+    real, con una fila de dos renglones y dos de uno:
+
+        celda de acciones   35, 35, 35
+        resto de la fila    61, 39, 39
+
+    El resultado es la línea separadora de la última columna partida y sin
+    juntar de una fila a otra, que es como se vio.
+
+    Y tenía un segundo síntoma ya documentado en el propio CSS: la fila de
+    edición desplegable necesitaba un `display: table-cell` a mano para
+    contrarrestar esta misma regla, porque alcanzaba a cualquier última celda
+    fuera o no de botones.
+
+    Se comprueba la forma —el selector— y no el comportamiento, que aquí
+    necesitaría un navegador. Es la excepción que admite la regla 3: para CSS
+    no hay término medio barato entre leer el fichero y levantar Chromium, y
+    el de accesibilidad ya levanta uno pero no mide alturas de celda.
+    """
+
+    def test_ninguna_regla_pone_flex_o_grid_en_una_celda(self):
+        # Sin quitar los comentarios, el propio comentario que explica este
+        # fallo —que cita `td:last-child` y `display: flex`— se cuenta como
+        # una regla y el test se pone rojo por documentar bien.
+        css = re.sub(r"/\*.*?\*/", "", CSS.read_text(encoding="utf-8"), flags=re.S)
+
+        culpables = [
+            bloque for bloque in re.findall(r"([^{}]*td[^{}]*)\{([^}]*)\}", css)
+            if re.search(r"display\s*:\s*(flex|grid|block)", bloque[1])
+            and not re.search(r"display\s*:\s*table-cell", bloque[1])
+        ]
+
+        assert culpables == [], (
+            f"una celda con display distinto de table-cell deja de estirarse "
+            f"a la altura de su fila: {[c[0].strip() for c in culpables]}"
+        )
+
+    def test_los_botones_van_en_su_propio_envoltorio(self):
+        css = CSS.read_text(encoding="utf-8")
+        panel = PANEL.read_text(encoding="utf-8")
+
+        assert re.search(r"\.celda-acciones\s*\{[^}]*display\s*:\s*flex", css), (
+            "el flex de los botones tiene que vivir en el envoltorio"
+        )
+        assert "celda-acciones" in panel, (
+            "el panel ya no crea el envoltorio: los botones volverían al `<td>`"
+        )

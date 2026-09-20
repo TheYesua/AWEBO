@@ -111,7 +111,7 @@
       {{ _('Solo se muestran los datos necesarios para identificarlas. No es posible abrir su contenido.') }}
     </p>
 
-    <form id="filtros-sa" class="form" novalidate>
+    <form id="filtros-sa" class="form filtros-admin" novalidate>
       <div class="row">
         <div class="field">
           <label for="filtro-estado">{{ _('Estado') }}</label>
@@ -128,6 +128,18 @@
           <label for="filtro-usuario">{{ _('Cuenta') }}</label>
           <select id="filtro-usuario" name="id_usuario">
             <option value="">{{ _('Todas') }}</option>
+          </select>
+        </div>
+        {# Los idiomas salen del modelo y no se repiten a mano: es la misma
+           lista que valida el esquema y que usa el prompt. Escribirlos aquí
+           es como se acaba ofreciendo un idioma que el validador rechaza. #}
+        <div class="field">
+          <label for="filtro-idioma">{{ _('Idioma') }}</label>
+          <select id="filtro-idioma" name="idioma">
+            <option value="">{{ _('Todos') }}</option>
+            {% for codigo, nombre in idiomas_sda.items() %}
+            <option value="{{ codigo }}">{{ nombre|capitalize }}</option>
+            {% endfor %}
           </select>
         </div>
       </div>
@@ -354,6 +366,23 @@ const celda = (texto) => {
   return td;
 };
 
+/* La celda de botones, con los botones dentro de un `<div>` y no sueltos.
+   El `display: flex` que los alinea tiene que ir en ese div y **no en el
+   `<td>`**: un `display: flex` sobre una celda la saca del layout de tabla,
+   deja de estirarse a la altura de su fila y sus bordes dejan de casar con
+   los de al lado — la línea separadora de la última columna aparecía partida.
+
+   Devuelve el `<td>` con una propiedad `caja` para no obligar a cada sitio a
+   acordarse del envoltorio: `tr.append(acciones)` y `acciones.caja.append(…)`. */
+function celdaAcciones() {
+  const td = document.createElement('td');
+  const caja = document.createElement('div');
+  caja.className = 'celda-acciones';
+  td.append(caja);
+  td.caja = caja;
+  return td;
+}
+
 function filaUsuario(u) {
   const tr = document.createElement('tr');
   if (u.eliminado_en) tr.classList.add('fila--baja');
@@ -374,7 +403,7 @@ function filaUsuario(u) {
     celda(estado),
   );
 
-  const acciones = document.createElement('td');
+  const acciones = celdaAcciones();
 
   /* La reclamación va primero y desplaza a las demás acciones: sobre una
      cuenta con solicitud pendiente lo único sensato es resolverla. */
@@ -394,7 +423,7 @@ function filaUsuario(u) {
     rechazar.textContent = T.rechazar;
     rechazar.addEventListener('click', () => resolverReclamacion(u, false, quien));
 
-    acciones.append(aprobar, rechazar);
+    acciones.caja.append(aprobar, rechazar);
   } else if (!u.eliminado_en) {
     const bajaLapida = document.createElement('button');
     bajaLapida.type = 'button';
@@ -414,7 +443,7 @@ function filaUsuario(u) {
     editar.textContent = T.editar;
     editar.addEventListener('click', () => alternarEdicion(tr, u));
 
-    acciones.append(editar, bajaLapida, bajaTotal);
+    acciones.caja.append(editar, bajaLapida, bajaTotal);
   }
   tr.append(acciones);
   return tr;
@@ -687,7 +716,7 @@ function filaSA(sa) {
     celda(fecha(sa.fecha_modificacion)),
   );
 
-  const acciones = document.createElement('td');
+  const acciones = celdaAcciones();
   const borrar = document.createElement('button');
   borrar.type = 'button';
   borrar.className = 'btn btn--small btn--danger';
@@ -701,7 +730,7 @@ function filaSA(sa) {
       aviso(e.message);
     }
   });
-  acciones.append(borrar);
+  acciones.caja.append(borrar);
   tr.append(acciones);
   return tr;
 }
@@ -710,8 +739,10 @@ async function cargarSituaciones() {
   const params = new URLSearchParams();
   const estado = document.getElementById('filtro-estado').value;
   const idUsuario = document.getElementById('filtro-usuario').value;
+  const idioma = document.getElementById('filtro-idioma').value;
   if (estado) params.set('estado', estado);
   if (idUsuario) params.set('id_usuario', idUsuario);
+  if (idioma) params.set('idioma', idioma);
 
   params.set('limite', POR_PAGINA);
   params.set('desplazamiento', desplazamiento.sa);
@@ -756,6 +787,7 @@ document.getElementById('filtros-sa').addEventListener('submit', (ev) => {
 document.getElementById('btn-limpiar-sa').addEventListener('click', () => {
   document.getElementById('filtro-estado').value = '';
   document.getElementById('filtro-usuario').value = '';
+  document.getElementById('filtro-idioma').value = '';
   desplazamiento.sa = 0;
   cargarSituaciones().catch((e) => aviso(e.message));
 });

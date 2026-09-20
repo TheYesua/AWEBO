@@ -16,7 +16,7 @@ from flask import Blueprint, jsonify, render_template, request
 from flask_login import current_user
 from pydantic import BaseModel, ConfigDict, EmailStr, Field, field_validator
 
-from ..models import Rol
+from ..models import Rol, SituacionAprendizaje
 from ..security import permiso_requerido
 from ..services import admin_service as svc
 from ..services.auth_service import AuthError, registrar_usuario, validar_contrasena
@@ -91,7 +91,11 @@ class EditarUsuarioIn(BaseModel):
 @bp.get("/")
 @permiso_requerido("usuario:listar", pagina=True)
 def panel():
-    return render_template("admin/panel.html")
+    # Los idiomas del filtro salen del modelo, no de una lista en la
+    # plantilla: es la misma que valida el esquema y que usa el prompt.
+    return render_template(
+        "admin/panel.html", idiomas_sda=SituacionAprendizaje.IDIOMAS
+    )
 
 
 # ---------------------------------------------------------------------------
@@ -239,14 +243,21 @@ def resolver_reclamacion(id_usuario: int):
 @bp.get("/api/situaciones")
 @permiso_requerido("situacion:listar_todas")
 def situaciones():
-    return jsonify(
-        svc.listar_situaciones(
-            id_usuario=request.args.get("id_usuario", type=int),
-            estado=request.args.get("estado", type=str),
-            limite=request.args.get("limite", default=svc.POR_PAGINA, type=int),
-            desplazamiento=request.args.get("desplazamiento", default=0, type=int),
-        )
-    ), 200
+    # Se captura `AdminError` porque el filtro de idioma valida su valor: sin
+    # esto, un `?idioma=xx` en la URL daría un 500 en vez de un 400 con el
+    # motivo. Mismo trato que el resto de endpoints del panel.
+    try:
+        return jsonify(
+            svc.listar_situaciones(
+                id_usuario=request.args.get("id_usuario", type=int),
+                estado=request.args.get("estado", type=str),
+                idioma=request.args.get("idioma", type=str),
+                limite=request.args.get("limite", default=svc.POR_PAGINA, type=int),
+                desplazamiento=request.args.get("desplazamiento", default=0, type=int),
+            )
+        ), 200
+    except svc.AdminError as exc:
+        return jsonify({"error": exc.code, "mensaje": str(exc)}), _codigo(exc)
 
 
 @bp.delete("/api/situaciones/<int:id_situacion>")

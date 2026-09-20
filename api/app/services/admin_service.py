@@ -252,6 +252,7 @@ def _metadatos_sa(sa: SituacionAprendizaje) -> dict[str, Any]:
 
 def listar_situaciones(
     *, id_usuario: int | None = None, estado: str | None = None,
+    idioma: str | None = None,
     limite: int = POR_PAGINA, desplazamiento: int = 0,
 ) -> dict[str, Any]:
     """Metadatos de SA, con filtros y paginación.
@@ -266,6 +267,13 @@ def listar_situaciones(
         condiciones.append(SituacionAprendizaje.id_usuario == id_usuario)
     if estado is not None:
         condiciones.append(SituacionAprendizaje.estado == estado)
+    # Se compara contra la lista del modelo y no se pasa tal cual: un valor
+    # inventado en la URL daría un listado vacío sin decir por qué, que se
+    # parece demasiado a «no hay ninguna».
+    if idioma:
+        if idioma not in SituacionAprendizaje.IDIOMAS:
+            raise AdminError("idioma_desconocido", f"Idioma desconocido: {idioma!r}")
+        condiciones.append(SituacionAprendizaje.idioma == idioma)
 
     base = select(SituacionAprendizaje)
     if condiciones:
