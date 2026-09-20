@@ -122,6 +122,7 @@ def _upsert_criterio(
     *,
     codigo: str,
     id_competencia: int,
+    competencias_extra: list[str],
     materia: str,
     cursos: list[str],
     descripcion: str,
@@ -167,10 +168,14 @@ def _upsert_criterio(
         if sorted(c.cursos_aplicables or []) == cursos_norm:
             c.descripcion = descripcion
             c.id_competencia = id_competencia
+            # Se reasigna como la descripción: si el boletín corrige a qué
+            # objetivos apunta un criterio, recargar tiene que reflejarlo.
+            c.competencias_extra = list(competencias_extra)
             return c, False
     nuevo = CriterioEvaluacion(
         codigo=codigo,
         id_competencia=id_competencia,
+        competencias_extra=list(competencias_extra),
         materia=materia,
         comunidad=comunidad,
         etapa=etapa,
@@ -350,6 +355,10 @@ def _procesar_fichero(
             idioma=idioma,
             codigo=cr["codigo"],
             id_competencia=comp.id_competencia,
+            # `.get`: solo lo emiten los criterios que tienen más de un
+            # objetivo, que hoy son dos en todo el catálogo. Ver la migración
+            # `c1b8d94e37f2`.
+            competencias_extra=cr.get("competencias_extra") or [],
             materia=materia,
             cursos=cursos,
             descripcion=cr["descripcion"],

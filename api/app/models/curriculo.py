@@ -106,6 +106,24 @@ class CriterioEvaluacion(db.Model):
     cursos_aplicables: Mapped[list[str]] = mapped_column(
         JSONB, nullable=False, default=list
     )
+    #: Códigos de los **demás** objetivos que el boletín asocia al criterio,
+    #: cuando asocia más de uno. Vacío en ocho de las nueve cargas.
+    #:
+    #: Lo trae Galicia y solo en Bacharelato: la Guía escribe «OBX1 10» en la
+    #: celda de CA1.3 y CA1.4 de Lingua Galega e Literatura, o sea dos
+    #: objetivos para un criterio. Los otros 1715 de esa etapa y los 1785 de su
+    #: ESO citan uno solo.
+    #:
+    #: NO ES UNA SEGUNDA CLAVE AJENA, Y ES DELIBERADO.
+    #: `id_competencia` sigue siendo la relación —la FK, lo que leen el API, el
+    #: prompt y las exportaciones— y aquí van los códigos sobrantes. Un
+    #: many-to-many de verdad habría cambiado el formato de los 10 944
+    #: criterios de las nueve comunidades por dos registros. Misma forma que
+    #: `BloqueSaberes.codigos_items`, que existe porque solo el BOJA numera sus
+    #: saberes. Ver la migración `c1b8d94e37f2`.
+    competencias_extra: Mapped[list[str]] = mapped_column(
+        JSONB, nullable=False, default=list
+    )
     descripcion: Mapped[str] = mapped_column(Text, nullable=False)
 
     competencia: Mapped["Competencia"] = relationship(back_populates="criterios")

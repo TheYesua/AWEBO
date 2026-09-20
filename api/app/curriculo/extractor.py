@@ -623,6 +623,22 @@ class Criterio:
     competencia: str
     descripcion: str
 
+    #: Los **demás** objetivos que el boletín asocia a este criterio, cuando
+    #: asocia más de uno. Vacío en ocho de las nueve cargas.
+    #:
+    #: Lo trae Galicia y solo en Bacharelato: la Guía escribe «OBX1 10» en la
+    #: celda de CA1.3 y CA1.4 de Lingua Galega e Literatura, o sea **dos**
+    #: objetivos para un criterio, sin repetir el prefijo. Los otros 1715
+    #: criterios de esa etapa y los 1785 de su ESO citan uno solo.
+    #:
+    #: Va en paralelo a `competencia` y no en su lugar, igual que
+    #: `BloqueSaberes.codigos_items`: el primero sigue siendo la relación
+    #: principal —es la FK de la tabla y lo que leen el API, el prompt y las
+    #: exportaciones—, y aquí se guarda lo que si no se perdería. Un
+    #: many-to-many de verdad habría cambiado el formato de los 10 944
+    #: criterios de las nueve comunidades por dos registros.
+    competencias_extra: list[str] = field(default_factory=list)
+
 
 @dataclass
 class BloqueSaberes:
@@ -686,6 +702,12 @@ class MateriaCiclo:
                     "codigo": cr.codigo,
                     "competencia": cr.competencia,
                     "descripcion": cr.descripcion,
+                    # Solo cuando lo hay, y a propósito: emitirlo siempre
+                    # añadiría una clave vacía a los 10 944 criterios de las
+                    # nueve salidas y las haría todas distintas en git por dos
+                    # registros. Quien lo lea usa `.get`.
+                    **({"competencias_extra": cr.competencias_extra}
+                       if cr.competencias_extra else {}),
                 }
                 for cr in self.criterios
             ],
