@@ -132,10 +132,31 @@ def filas_de_conexion(sa: SituacionAprendizaje) -> dict[str, list[dict[str, str]
         }
         for c in _citados("competencias")
     ]
+    # LOS OBJETIVOS DE MÁS SE ENSEÑAN, QUE PARA ESO SE GUARDAN
+    #
+    # `competencias_extra` existe para no perder que un criterio pueda citar
+    # más de un objetivo: la Guía LOMLOE escribe «OBX1 10» en dos criterios de
+    # Lingua Galega e Literatura de 1.º de Bacharelato. Guardarlo y no pintarlo
+    # habría sido no perderlo solo de boquilla — el documento del docente es
+    # donde ese dato se usa.
+    #
+    # Sale de la fila del catálogo y no de lo que citó el modelo: el JSONB de
+    # la SdA solo guarda el código que el modelo escribió, y el reparto entre
+    # principal y extra lo decide el boletín.
+    extra_de = {
+        c.codigo: list(getattr(c, "competencias_extra", None) or [])
+        for c in (sa.criterios or [])
+    }
+
+    def _competencia(cita: dict) -> str:
+        principal = cita.get("competencia") or "—"
+        extra = extra_de.get(cita.get("codigo", ""), [])
+        return f"{principal}, {', '.join(extra)}" if extra else principal
+
     filas["criterios"] = [
         {
             "codigo": c.get("codigo") or "—",
-            "competencia": c.get("competencia") or "—",
+            "competencia": _competencia(c),
             "texto": texto_crit.get(c.get("codigo", ""), str(_SIN_TEXTO)),
             "justificacion": c.get("justificacion") or "—",
         }

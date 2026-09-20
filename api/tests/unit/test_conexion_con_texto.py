@@ -344,3 +344,61 @@ class TestElBloqueNoSeRepiteEnFilasSeguidas:
         que existe `filas_de_conexion`."""
         assert MISMO_BLOQUE
         assert MISMO_BLOQUE != "—"
+
+
+class TestElCriterioConDosObxectivos:
+    """Lo que se guarda para no perderlo tiene que llegar al documento.
+
+    `competencias_extra` se añadió el 20/09 porque la Guía LOMLOE asigna dos
+    objetivos a dos criterios de Lingua Galega e Literatura de 1.º de
+    Bacharelato: «OBX1 10». Guardarlo en una columna y no pintarlo habría sido
+    no perderlo solo sobre el papel — el PDF del docente es donde ese dato se
+    lee.
+    """
+
+    def _sa(self, extra):
+        return _sa(
+            citados={"criterios": [{"codigo": "1.3", "competencia": "1",
+                                    "justificacion": "j"}]},
+            competencias=[NS(codigo="1", descripcion="Explicar a diversidade")],
+            criterios=[NS(codigo="1.3", descripcion="Recoñecer as linguas",
+                          competencias_extra=extra)],
+        )
+
+    def test_se_pintan_los_dos(self):
+        fila = filas_de_conexion(self._sa(["10"]))["criterios"][0]
+
+        assert fila["competencia"] == "1, 10"
+
+    def test_con_uno_solo_no_cambia_nada(self):
+        """Ocho de las nueve comunidades no tienen ninguno: la columna tiene
+        que seguir diciendo exactamente lo que decía."""
+        fila = filas_de_conexion(self._sa([]))["criterios"][0]
+
+        assert fila["competencia"] == "1"
+
+    def test_sale_del_catalogo_y_no_de_lo_que_cito_el_modelo(self):
+        """El JSONB de la SdA solo guarda el código que escribió el modelo. El
+        reparto entre principal y extra lo decide el boletín, así que se lee de
+        la fila del catálogo."""
+        sa = _sa(
+            citados={"criterios": [{"codigo": "1.3", "competencia": "1",
+                                    "justificacion": "j"}]},
+            competencias=[NS(codigo="1", descripcion="Explicar")],
+            criterios=[NS(codigo="1.3", descripcion="Recoñecer",
+                          competencias_extra=["10"])],
+        )
+
+        assert filas_de_conexion(sa)["criterios"][0]["competencia"] == "1, 10"
+
+    def test_una_fila_sin_el_campo_no_revienta(self):
+        """Las filas anteriores a la migración no lo traen, y un `getattr` con
+        defecto es más barato que una guarda en cada sitio."""
+        sa = _sa(
+            citados={"criterios": [{"codigo": "1.3", "competencia": "1",
+                                    "justificacion": "j"}]},
+            competencias=[NS(codigo="1", descripcion="Explicar")],
+            criterios=[NS(codigo="1.3", descripcion="Recoñecer")],
+        )
+
+        assert filas_de_conexion(sa)["criterios"][0]["competencia"] == "1"
