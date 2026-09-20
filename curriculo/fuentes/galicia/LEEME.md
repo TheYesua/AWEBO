@@ -157,11 +157,20 @@ Lo que comprueban ahora los cinco tests de `TestCadaPdfContraLoQueSeExtraeDeEl`:
 
 | Qué | Resultado |
 |---|---|
-| Códigos `CA` del PDF que no se extraen | **0** de 931 |
+| Códigos `CA` del PDF que no se extraen | **0** de 940 |
 | Códigos extraídos que el PDF no tiene | **0** |
-| Criterios que no se encuentran de una pieza en su PDF | **0** de 1776 |
+| Criterios que no se encuentran de una pieza en su PDF | **0** de 1785 |
 | Contidos que no se encuentran de una pieza | **0** de 5312 |
 | Contido más largo | 778 caracteres, y es del decreto |
+
+> **Estas cifras son de después del 20/09.** Hasta entonces eran 931 y 1776, y
+> estaban mal las dos: el anclaje buscaba `\bCA\d+\.\d+\b` y el boletín a veces
+> escribe **«CA 4.1» con espacio**. `RX_CRITERIO` tampoco lo contemplaba, así que
+> el extractor perdía esos criterios y el anclaje no los echaba en falta — los
+> dos con el mismo punto ciego. Eran **nueve criterios**, todo el bloque 4 de
+> Cultura Financeira y de Intelixencia Artificial para a Sociedade, cargados de
+> menos desde agosto. Se vio contando los «CA » separados de los 54 PDF de
+> Bacharelato, no auditando la ESO.
 
 El contraste de «una pieza» es el que destapó los 122 criterios mutilados de
 Andalucía. Allí hizo falta además una segunda linealización por columnas —el

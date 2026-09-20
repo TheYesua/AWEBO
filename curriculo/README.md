@@ -18,6 +18,7 @@ curriculo/fuentes/cataluna-batxillerat/*.pdf      Decret 171/2022, un PDF por ma
 curriculo/fuentes/andalucia/*.pdf                 BOJA núm. 104 de 2 de junio de 2023 (ESO)
 curriculo/fuentes/andalucia-bachillerato/*.pdf    BOJA núm. 104, la Orden de Bachillerato
 curriculo/fuentes/galicia/*.pdf                   un PDF por materia (Guía LOMLOE)
+curriculo/fuentes/galicia-bachillerato/*.pdf      Decreto 157/2022, un PDF por materia
 curriculo/fuentes/pais-vasco/*.pdf                Decreto 77/2023 (BOPV), en euskera
 curriculo/fuentes/pais-vasco-bachillerato/*.pdf   Decreto 76/2023 (BOPV), en euskera
 ```
@@ -54,6 +55,7 @@ curriculo/salida_andalucia/            Orden de 30 de mayo de 2023, ESO (BOJA)
 curriculo/salida_andalucia_bachillerato/ Orden de 30 de mayo de 2023, Bachillerato
 curriculo/salida_ceuta_bachillerato/   Orden EFP/755/2022 (BOE)
 curriculo/salida_galicia/              Decreto 156/2022 (Guía LOMLOE de la Xunta)
+curriculo/salida_galicia_bachillerato/ Decreto 157/2022 (Guía LOMLOE de la Xunta)
 curriculo/salida_pais_vasco/           Decreto 77/2023 (BOPV)
 curriculo/salida_pais_vasco_bachillerato/ Decreto 76/2023 (BOPV)
 ```
@@ -128,7 +130,8 @@ campo y no lo traen, así que para ellos vale el valor por defecto, `ceuta`.)*
 | Andalucía (Orden 30/05/2023, anexos II y III) | 32 | 60 | 1113 | 1461 |
 | Andalucía · Bachillerato (Orden 30/05/2023 de Bachillerato) | 58 | 73 | 1105 | 1727 |
 | Ceuta y Melilla · Bachillerato (Orden EFP/755/2022) | 47 | 61 | 918 | 1784 |
-| Galicia (Decreto 156/2022 + Guía LOMLOE) | 30 | 60 | 1583 | 4643 |
+| Galicia (Decreto 156/2022 + Guía LOMLOE) | 30 | 60 | 1592 | 4643 |
+| Galicia · Bachillerato (Decreto 157/2022 + Guía LOMLOE) | 58 | 69 | 1695 | 6065 |
 | País Vasco (Decreto 77/2023) | 32 | 43 | 733 | 1491 |
 | País Vasco · Bachillerato (Decreto 76/2023) | 65 | 75 | 1144 | 2349 |
 
@@ -203,6 +206,7 @@ docker compose exec api flask seed curriculo --directorio /curriculo/salida_cata
 docker compose exec api flask seed curriculo --directorio /curriculo/salida_andalucia
 docker compose exec api flask seed curriculo --directorio /curriculo/salida_galicia
 docker compose exec api flask seed curriculo --directorio /curriculo/salida_ceuta_bachillerato
+docker compose exec api flask seed curriculo --directorio /curriculo/salida_galicia_bachillerato
 ```
 
 El seed **añade y actualiza, pero no borra**. Cuando un extractor mejora y
@@ -253,9 +257,15 @@ python -m app.curriculo.extractor_boja \
     --salida ../curriculo/salida_andalucia
 
 # Galicia: un PDF por materia, como la XTEC. Los cursos van dentro del PDF.
+# Galicia: mismo extractor para las dos etapas, con --etapa.
 python -m app.curriculo.extractor_dog \
     --pdfs ../curriculo/fuentes/galicia \
     --salida ../curriculo/salida_galicia
+
+python -m app.curriculo.extractor_dog \
+    --pdfs ../curriculo/fuentes/galicia-bachillerato \
+    --etapa bachillerato \
+    --salida ../curriculo/salida_galicia_bachillerato
 ```
 
 ## Formato JSON producido

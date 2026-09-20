@@ -37,10 +37,14 @@ from pathlib import Path
 import pytest
 
 from app.curriculo.extractor_dog import (
+    BACHILLERATO,
     CURSOS_DE_LA_GUIA,
+    ERRATAS_OBXECTIVO,
+    ESO,
     RX_CRITERIO,
     RX_OBXECTIVO,
     _juntar,
+    _objetivos_de_la_celda,
     _quitar_repetidas,
     _slug,
     extraer,
@@ -52,6 +56,9 @@ BIOLOXIA = FUENTES / "Bioloxia-e-Xeoloxia.pdf"
 MATEMATICAS = FUENTES / "Matematicas.pdf"
 LINGUA = FUENTES / "Lingua-Castela-e-Literatura.pdf"
 AMBITO = FUENTES / "Ambito-Cientifico-Tecnoloxico.pdf"
+
+#: Bacharelato, Decreto 157/2022. La Guía lo publica igual que la ESO.
+FUENTES_BACH = FUENTES.parent / "galicia-bachillerato"
 
 
 class TestPiezasSueltas:
@@ -328,8 +335,26 @@ class TestCadaPdfContraLoQueSeExtraeDeEl:
 
     El anclaje resultó ser más simple de lo que parecía: **el código está, solo
     que no al principio de la línea**. `CA1.1`, `CA1.2`… se buscan en el texto
-    con `\\bCA\\d+\\.\\d+\\b` sin exigirles posición, y eso da el conjunto que
-    el PDF promete. Comparado con el que sale del extractor, no falta ninguno.
+    sin exigirles posición, y eso da el conjunto que el PDF promete. Comparado
+    con el que sale del extractor, no falta ninguno.
+
+    EL ESPACIO TRAS «CA», Y POR QUÉ ESTO ESTUVO EN VERDE MINTIENDO
+    ---------------------------------------------------------------
+    El patrón era `\\bCA\\d+\\.\\d+\\b`, sin contemplar que el boletín a veces
+    escribe «CA 4.1» con espacio. Y `RX_CRITERIO` tampoco lo contemplaba, así
+    que **los dos tenían el mismo punto ciego**: el extractor perdía esos
+    criterios y el anclaje no los contaba como presentes en el PDF. Este test
+    decía «0 perdidos» y tenía razón sobre lo que miraba.
+
+    Costó **nueve criterios de la ESO de Galicia**, cargados de menos desde
+    agosto: Cultura Financeira salía con 18 de 23 e Intelixencia Artificial para
+    a Sociedade con 16 de 20, en las dos el bloque 4 entero. Se vio el 20/09 al
+    preparar Bachillerato, contando los «CA » separados de sus 54 PDF.
+
+    La lección es la regla 15 en su forma más pura: **el instrumento de medida
+    se escribió mirando el mismo ejemplo que el código que mide**, así que
+    heredó su suposición. Cuando un oráculo y su objeto se derivan de la misma
+    lectura, coincidir no prueba nada.
 
     Se comprueba **PDF a PDF y no en total**, que es lo que enseñó el LEEME de
     la fuente: siete materias aparecen en dos ficheros —el currículo completo y
@@ -356,7 +381,8 @@ class TestCadaPdfContraLoQueSeExtraeDeEl:
                 if l.strip() and not RX_PIE.match(l.strip())
             )
             salida.append((pdf.name, extraer(pdf), _norm(crudo),
-                           set(re.findall(r"\bCA(\d{1,2}\.\d{1,2})\b", crudo))))
+                           # `CA\s?`: ver el docstring de la clase.
+                           set(re.findall(r"\bCA\s?(\d{1,2}\.\d{1,2})\b", crudo))))
         assert len(salida) == 35, f"faltan PDF: hay {len(salida)}"
         return salida
 
@@ -438,3 +464,302 @@ class TestCadaPdfContraLoQueSeExtraeDeEl:
         assert largos[-1][0] <= 800, f"contido de {largos[-1][0]} caracteres: {largos[-1][1:]}"
         pasados = [l for l in largos if l[0] > 400]
         assert len(pasados) <= 15, f"{len(pasados)} contidos pasan de 400 caracteres"
+
+
+class TestElEspacioTrasCA:
+    """Los nueve criterios que la ESO de Galicia llevaba perdiendo desde agosto.
+
+    El boletín escribe casi siempre «CA1.1» y a veces «CA 4.1», con espacio.
+    `RX_CRITERIO` exigía el dígito pegado, así que esos criterios no se
+    extraían. Dos materias perdían **el bloque 4 entero**.
+
+    Lo que lo hizo invisible: el anclaje de `TestCadaPdfContraLoQueSeExtraeDeEl`
+    buscaba `\\bCA\\d+\\.\\d+\\b` y tampoco los contaba como presentes en el PDF,
+    así que decía «0 perdidos» con razón sobre lo que miraba. Se arreglaron los
+    dos a la vez, y este test comprueba el arreglo por su efecto —los códigos
+    salen— y no por la forma del patrón.
+
+    `RX_OBXECTIVO` sí llevaba el `\\s*` desde agosto, con un comentario que
+    cuenta este mismo fallo para los obxectivos. La lección estaba escrita tres
+    líneas más arriba y no se había aplicado aquí.
+    """
+
+    #: Materia -> códigos que el boletín escribe con espacio, y cuántos
+    #: criterios tiene ese PDF en total. Medido sobre los ficheros.
+    CASOS = {
+        "Cultura-Financeira.pdf": (["4.1", "4.2", "4.3", "4.4", "4.7"], 23),
+        "Intelixencia-Artificial-para-a-Sociedade.pdf": (["4.1", "4.2", "4.3", "4.4"], 20),
+    }
+
+    @pytest.mark.skipif(not FUENTES.exists(), reason="no están los PDF")
+    @pytest.mark.parametrize("fichero", sorted(CASOS))
+    def test_los_criterios_con_espacio_se_extraen(self, fichero):
+        con_espacio, total = self.CASOS[fichero]
+        ruta = FUENTES / fichero
+        if not ruta.exists():
+            pytest.skip(f"no está {fichero}")
+
+        codigos = {c.codigo for b in extraer(ruta) for c in b.criterios}
+
+        assert set(con_espacio) <= codigos, (
+            f"faltan {sorted(set(con_espacio) - codigos)}: el boletín los "
+            f"escribe «CA 4.1» con espacio"
+        )
+        assert len(codigos) == total
+
+    @pytest.mark.skipif(not FUENTES.exists(), reason="no están los PDF")
+    def test_el_patron_no_se_ha_vuelto_permisivo(self):
+        """Tolerar el espacio no es tolerar cualquier cosa.
+
+        Si `RX_CRITERIO` empezara a casar texto corriente, los criterios de
+        más no los vería nadie: el anclaje comprueba que no falte ninguno, no
+        que no sobren. Aquí se exige que **cada código extraído esté en el
+        PDF**, que es la dirección contraria.
+        """
+        import pymupdf
+
+        from app.curriculo.extractor_dog import RX_PIE
+
+        for fichero in sorted(self.CASOS):
+            ruta = FUENTES / fichero
+            if not ruta.exists():
+                continue
+            crudo = " ".join(
+                l.strip() for p in pymupdf.open(ruta) for l in p.get_text().splitlines()
+                if l.strip() and not RX_PIE.match(l.strip())
+            )
+            del_pdf = set(re.findall(r"\bCA\s?(\d{1,2}\.\d{1,2})\b", crudo))
+            extraidos = {c.codigo for b in extraer(ruta) for c in b.criterios}
+
+            assert extraidos - del_pdf == set(), (
+                f"{fichero}: el extractor se inventa {sorted(extraidos - del_pdf)}"
+            )
+
+
+# ---------------------------------------------------------------------------
+# Bacharelato: Decreto 157/2022
+# ---------------------------------------------------------------------------
+
+
+class TestLaCeldaDeObxectivos:
+    """Sin PDF: qué códigos salen de la celda «Obxectivos»."""
+
+    @pytest.mark.parametrize("celda, esperado", [
+        ("OBX3", ["3"]),
+        ("OBX 5", ["5"]),
+        ("OBX10", ["10"]),
+        ("", []),
+        # El caso que lo motivó: la Guía escribe DOS objetivos en una celda sin
+        # repetir el prefijo. Leído como una cadena daba la competencia «1 10»,
+        # que no existe, y el seed descartaba el criterio entero.
+        ("OBX1 10", ["1", "10"]),
+    ])
+    def test_saca_los_codigos_en_orden(self, celda, esperado):
+        assert _objetivos_de_la_celda(celda) == esperado
+
+    def test_el_primero_manda_y_el_resto_no_se_pierde(self):
+        """El orden importa: `competencia` es la FK y va el que el boletín
+        pone delante; el resto a `competencias_extra`."""
+        codigos = _objetivos_de_la_celda("OBX1 10")
+
+        assert codigos[0] == "1"
+        assert codigos[1:] == ["10"]
+
+
+class TestLasDosEtapasSonElMismoLector:
+    """Sin PDF: que la etapa solo cambie a qué se traduce un ordinal."""
+
+    def test_los_cursos_llevan_su_sufijo(self):
+        assert ESO.curso(3) == "3º ESO"
+        assert BACHILLERATO.curso(2) == "2º Bachillerato"
+
+    def test_bachillerato_tiene_dos_cursos_y_la_eso_cuatro(self):
+        assert (ESO.cursos, BACHILLERATO.cursos) == (4, 2)
+
+    def test_bachillerato_no_necesita_tabla_de_cursos(self):
+        """Las 16 materias de «I e II» declaran sus dos cursos dentro del PDF.
+        La ESO sí necesita la tabla, para tres materias con currículo único."""
+        assert BACHILLERATO.cursos_de_la_guia == {}
+        assert set(ESO.cursos_de_la_guia) == {
+            "Cultura Clásica", "Oratoria", "Proxecto Competencial",
+        }
+
+
+@pytest.mark.skipif(not FUENTES_BACH.exists(),
+                    reason=f"no están los PDF en {FUENTES_BACH}")
+class TestContraElBacharelatoGallego:
+    """Los 54 PDF del Decreto 157/2022.
+
+    La Guía LOMLOE publica Bacharelato **igual** que Secundaria, así que el
+    lector es el mismo y lo único parametrizado es la etapa. Lo que estos tests
+    vigilan es precisamente eso: que siga siendo verdad.
+    """
+
+    @pytest.fixture(scope="class")
+    def lectura(self):
+        import pymupdf
+
+        from app.curriculo.extractor_dog import RX_PIE
+
+        salida = []
+        for pdf in sorted(FUENTES_BACH.glob("*.pdf")):
+            doc = pymupdf.open(pdf)
+            crudo = " ".join(
+                l.strip() for p in doc for l in p.get_text().splitlines()
+                if l.strip() and not RX_PIE.match(l.strip())
+            )
+            salida.append((pdf.name, extraer(pdf, BACHILLERATO), _norm(crudo),
+                           set(re.findall(r"\bCA\s?(\d{1,2}\.\d{1,2})\b", crudo))))
+        assert len(salida) == 54, f"faltan PDF: hay {len(salida)}"
+        return salida
+
+    def test_cada_pdf_es_el_de_la_materia_que_dice_su_nombre(self):
+        """El guion de descarga solo comprueba que lo bajado sea un PDF, y eso
+        no distingue un hash mal copiado que traiga otra materia. La portada
+        declara la suya, así que se cruza con el nombre del fichero.
+
+        Es la comprobación que la tabla de 54 hashes necesita para no depender
+        de haberlos copiado bien.
+        """
+        import pymupdf
+
+        fallos = []
+        for pdf in sorted(FUENTES_BACH.glob("*.pdf")):
+            lineas = [l.strip() for l in pymupdf.open(pdf)[0].get_text().splitlines()
+                      if l.strip()]
+            i = lineas.index("CURRÍCULO")
+            # El título va partido en varias líneas y con guiones de división,
+            # así que se compara sobre la forma sin nada que no sea letra.
+            portada = _norm("".join(lineas[i + 2:]).replace("-", ""))
+            if lineas[i + 1] != "Bacharelato":
+                fallos.append(f"{pdf.name}: etapa {lineas[i + 1]!r}")
+            elif _norm(pdf.stem.replace("-", "")) not in portada:
+                fallos.append(f"{pdf.name}: la portada dice otra cosa")
+
+        assert fallos == []
+
+    def test_sale_de_cada_pdf_todo_codigo_de_criterio_que_lleva(self, lectura):
+        fallos = []
+        for nombre, bloques, _, del_pdf in lectura:
+            extraidos = {c.codigo for b in bloques for c in b.criterios}
+            if del_pdf - extraidos:
+                fallos.append(f"{nombre}: faltan {sorted(del_pdf - extraidos)}")
+        assert fallos == []
+
+    def test_no_se_extrae_ningun_codigo_que_el_pdf_no_tenga(self, lectura):
+        fallos = []
+        for nombre, bloques, _, del_pdf in lectura:
+            extraidos = {c.codigo for b in bloques for c in b.criterios}
+            if extraidos - del_pdf:
+                fallos.append(f"{nombre}: sobran {sorted(extraidos - del_pdf)}")
+        assert fallos == []
+
+    def test_cada_criterio_y_cada_contido_estan_de_una_pieza(self, lectura):
+        """Dos trozos como mucho, igual que en la ESO.
+
+        Dos y no uno porque los contidos van a dos niveles: el extractor pega
+        el agrupador —«Enerxía contida nun sistema…:»— a cada item, y esa
+        cadena compuesta no está literal en el PDF salvo para el primero.
+        """
+        peores = []
+        for nombre, bloques, plano, _ in lectura:
+            for b in bloques:
+                for c in b.criterios:
+                    if _trozos(_norm(c.descripcion), plano) > 2:
+                        peores.append(f"{nombre}: criterio {c.codigo}")
+                for s in b.saberes:
+                    for it in s.items:
+                        if _trozos(_norm(it), plano) > 2:
+                            peores.append(f"{nombre}: contido {it[:40]}")
+        assert peores == []
+
+    def test_la_etapa_va_en_cada_bloque(self, lectura):
+        etapas = {b.etapa for _, bloques, _, _ in lectura for b in bloques}
+        assert etapas == {"Bachillerato"}
+
+    def test_ningun_curso_de_otra_etapa(self, lectura):
+        cursos = {c for _, bloques, _, _ in lectura for b in bloques
+                  for c in b.cursos_aplicables}
+        assert cursos == {"1º Bachillerato", "2º Bachillerato"}
+
+    def test_ningun_criterio_se_queda_sin_obxectivo(self, lectura):
+        """Y **vacío cuenta como roto**, que es donde este test tenía el hueco.
+
+        La primera versión decía `if x and x not in codigos`, y ese `if x`
+        saltaba justo el valor que hace daño: el seed omite el criterio entero
+        cuando la competencia no se resuelve, y una cadena vacía no se resuelve
+        nunca. Pasó en verde mientras los 40 criterios de Tecnoloxías da
+        Información e da Comunicación salían sin obxectivo y no se cargaba
+        ninguno.
+
+        Una guarda que excluye el caso límite comprueba todo menos lo que
+        importa.
+        """
+        rotos = []
+        for nombre, bloques, _, _ in lectura:
+            for b in bloques:
+                codigos = {o.codigo for o in b.competencias}
+                for c in b.criterios:
+                    if not c.competencia:
+                        rotos.append(f"{nombre} {c.codigo}: sin obxectivo")
+                        continue
+                    for x in (c.competencia, *c.competencias_extra):
+                        if x not in codigos:
+                            rotos.append(f"{nombre} {c.codigo} -> OBX{x}")
+        assert rotos == []
+
+    def test_la_materia_extraida_es_la_del_boletin(self, lectura):
+        """Que el PDF sea el que toca no basta: hay que mirar qué nombre sale.
+
+        `test_cada_pdf_es_el_de_la_materia_que_dice_su_nombre` comprueba la
+        **portada** y pasaba mientras Tecnoloxías da Información salía como
+        «Páxina 1 de 12 Bacharelato Tecnoloxías da Información e da
+        Comunicación»: el pie de página colado en el título, porque su tabla
+        tiene seis columnas y el «Materia de …» no caía en la primera.
+
+        Se comprueba lo que de verdad importa —el nombre con el que se carga—
+        y no cómo se obtiene.
+        """
+        malas = []
+        for nombre, bloques, plano, _ in lectura:
+            for b in bloques:
+                m = b.materia_oficial
+                if not m or "áxina" in m or "Bacharelato" in m or "CURRÍCULO" in m:
+                    malas.append(f"{nombre}: {m!r}")
+                elif _norm(m) not in plano:
+                    malas.append(f"{nombre}: {m!r} no está en el PDF")
+        assert malas == []
+
+    def test_los_dos_criterios_con_dos_obxectivos(self, lectura):
+        """Lingua Galega e Literatura de 1.º, CA1.3 y CA1.4: la Guía les pone
+        «OBX1 10». Son los dos únicos casos de las dos etapas."""
+        conservados = {
+            (b.materia_oficial, b.ciclo, c.codigo, c.competencia,
+             tuple(c.competencias_extra))
+            for _, bloques, _, _ in lectura for b in bloques
+            for c in b.criterios if c.competencias_extra
+        }
+
+        assert conservados == {
+            ("Lingua Galega e Literatura", "1º Bachillerato", "1.3", "1", ("10",)),
+            ("Lingua Galega e Literatura", "1º Bachillerato", "1.4", "1", ("10",)),
+        }
+
+    def test_la_errata_del_obx55_se_aplica_donde_toca(self, lectura):
+        """Literatura Dramática cita «OBX55» y solo tiene cinco obxectivos.
+
+        Se comprueba por su efecto —CA2.5 apunta a OBX5 y existe— y no por el
+        contenido de la tabla, para que reescribir la excepción de otra forma
+        no rompa el test.
+        """
+        assert len(ERRATAS_OBXECTIVO) == 1, (
+            "si aparecen más erratas, cada una necesita su fuente escrita"
+        )
+        for nombre, bloques, _, _ in lectura:
+            if nombre != "Literatura-Dramatica.pdf":
+                continue
+            for b in bloques:
+                cr = {c.codigo: c.competencia for c in b.criterios}
+                if "2.5" in cr:
+                    assert cr["2.5"] == "5"
+                    assert "5" in {o.codigo for o in b.competencias}

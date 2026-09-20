@@ -82,7 +82,21 @@ RX_OBXECTIVO = re.compile(r"^OBX\s*(\d+)\.\s*(.*)$")
 
 #: «▪ CA1.1. Analizar e explicar…». La viñeta es opcional porque la celda a
 #: veces la trae y a veces no, según cómo parta PyMuPDF la fila.
-RX_CRITERIO = re.compile(r"^[▪\s]*CA(\d+)\.(\d+)\.?\s*(.*)$", re.S)
+#:
+#: Y EL ESPACIO TRAS «CA» TAMBIÉN, POR LO MISMO QUE EN `RX_OBXECTIVO`
+#: -------------------------------------------------------------------
+#: El aviso está tres líneas más arriba desde agosto —«el boletín no es
+#: constante»— y se aplicó a los obxectivos y **no a los criterios**. Costó
+#: nueve criterios de la ESO de Galicia, cargados de menos desde entonces:
+#: Cultura Financeira tenía 23 en su PDF y salían 18, e Intelixencia Artificial
+#: para a Sociedade 20 y salían 16. En las dos se perdía **el bloque 4 entero**,
+#: que es el que el boletín escribe «CA 4.1» con espacio.
+#:
+#: Y no lo vio nadie porque el ancla que lo comprobaba buscaba `\bCA\d+\.\d+`:
+#: tampoco contaba esos como códigos presentes en el PDF, así que el test decía
+#: «0 de 931 perdidos» y tenía razón sobre lo que miraba. Instrumento y aparato
+#: medido compartían el punto ciego. Se arreglaron los dos a la vez.
+RX_CRITERIO = re.compile(r"^[▪\s]*CA\s*(\d+)\.(\d+)\.?\s*(.*)$", re.S)
 
 #: «Bloque 1. Proxecto científico»
 RX_BLOQUE = re.compile(r"^Bloque\s+(\d+)\.?\s*(.*)$")
@@ -102,10 +116,42 @@ RX_MARCA_OBXECTIVOS = re.compile(r"^1\.2\s+Obxectivos\s*$")
 #: Pie de página: «Páxina 7 de 23».
 RX_PIE = re.compile(r"^P[áa]xina\s+\d+\s+de\s+\d+\s*$")
 
-_CURSO = {1: "1º ESO", 2: "2º ESO", 3: "3º ESO", 4: "4º ESO"}
+#: Erratas del boletín en la celda de «Obxectivos», con lo que dice y lo que
+#: tiene que ser. La clave es `(materia, código del criterio, lo que pone)`,
+#: para que una errata no se aplique donde no toca.
+#:
+#: **Solo hay una, y corregirla no es inventar un código.** Literatura
+#: Dramática de 2.º tiene cinco obxectivos, OBX1 a OBX5, y su CA2.5 cita
+#: «OBX55», que no existe. El código del criterio —CA2.5— es del decreto y no
+#: se toca; lo que se corrige es a cuál de sus cinco objetivos apunta, y solo
+#: hay una lectura posible. Es el mismo criterio que en `extractor_bopv`, donde
+#: se corrigen cinco erratas porque hay de dónde deducir y se deja sin corregir
+#: la que no lo tiene.
+#:
+#: Lo que costaba no hacerlo: el seed **omite el criterio entero** cuando no
+#: encuentra su competencia —lo dice en un warning y sigue—, así que CA2.5 no
+#: llegaría a la base de datos.
+ERRATAS_OBXECTIVO: dict[tuple[str, str, str], str] = {
+    ("Literatura Dramática", "2.5", "55"): "5",
+}
 
-#: Materias cuyo PDF **no dice el curso**, porque su currículo es el mismo para
-#: varios. Los cursos salen de la tabla de la Guía LOMLOE de la Consellería:
+
+def _objetivos_de_la_celda(celda: str) -> list[str]:
+    """Los códigos de obxectivo de la celda «Obxectivos», en orden.
+
+    Casi siempre es uno: «OBX3» -> ["3"]. Pero la Guía escribe **dos** en la
+    misma celda sin repetir el prefijo —«OBX1 10» son OBX1 y OBX10—, y eso
+    pasa en CA1.3 y CA1.4 de Lingua Galega e Literatura de 1.º.
+
+    Leído como una sola cadena daba la competencia «1 10», que no existe, y el
+    seed descartaba los dos criterios. Devolver la lista deja el primero como
+    relación principal y el resto en `Criterio.competencias_extra`.
+    """
+    return re.findall(r"\d+", celda.replace("OBX", " "))
+
+
+#: Materias de la **ESO** cuyo PDF no dice el curso, porque su currículo es el
+#: mismo para varios. Los cursos salen de la tabla de la Guía LOMLOE:
 #: https://www.edu.xunta.gal/portal/guialomloe/secundaria
 #:
 #: Mismo caso que «Robòtica i Programació» en Cataluña y misma decisión: una
@@ -116,6 +162,63 @@ CURSOS_DE_LA_GUIA: dict[str, list[str]] = {
     "Oratoria": ["3º ESO", "4º ESO"],
     "Proxecto Competencial": ["1º ESO", "2º ESO", "3º ESO", "4º ESO"],
 }
+
+
+@dataclass(frozen=True)
+class EtapaDOG:
+    """Lo que cambia entre el Decreto 156/2022 y el 157/2022.
+
+    POR QUÉ UN DATACLASS Y NO UN SEGUNDO EXTRACTOR
+    -----------------------------------------------
+    Misma decisión que `EtapaBOJA`, y con más motivo todavía: aquí las dos
+    etapas **no comparten maquetador sino el mismo documento**. La Guía LOMLOE
+    publica Bacharelato exactamente igual que Secundaria —un PDF por materia,
+    misma portada, mismos rótulos `1.2 Obxectivos` y `1.3 Criterios de
+    avaliación e contidos`, mismos `OBX`, `CA`, `Bloque` y `Contidos`—, y los
+    dos decretos son del **mismo día**, el 15 de septiembre de 2022.
+
+    Comprobado antes de escribir esto, leyendo entero el PDF de Matemáticas de
+    Bacharelato: lo único que cambia es a qué se traduce un ordinal.
+
+    Y UN DETALLE QUE PARECE ROMPER Y NO ROMPE
+    -------------------------------------------
+    La ESO escribe «1.º curso» y Bacharelato «1º curso», sin punto.
+    `RX_CURSO_ORDINAL` ya lleva el punto opcional desde agosto, así que no hubo
+    que tocar nada. Se dice aquí para que nadie lo «arregle» dos veces.
+    """
+
+    #: Lo que se escribe en el JSON y acaba en la columna `etapa`.
+    nombre: str
+    #: Sufijo de los cursos: «1º ESO», «1º Bachillerato».
+    sufijo_curso: str
+    #: Cuántos cursos tiene. Un ordinal mayor es un error de lectura, no una
+    #: materia de quinto.
+    cursos: int
+    #: Materias cuyo PDF no declara el curso, con el que les da la Guía.
+    cursos_de_la_guia: dict[str, list[str]]
+
+    def curso(self, n: int) -> str:
+        return f"{n}º {self.sufijo_curso}"
+
+    def por_clave(self) -> dict[str, list[str]]:
+        return {_clave(k): v for k, v in self.cursos_de_la_guia.items()}
+
+
+ESO = EtapaDOG(
+    nombre="ESO", sufijo_curso="ESO", cursos=4,
+    cursos_de_la_guia=CURSOS_DE_LA_GUIA,
+)
+
+#: Bacharelato no necesita excepciones: las 16 materias que van en los dos
+#: cursos los declaran **dentro del PDF**, con «Primeiro curso» y «Segundo
+#: curso». Se deja el diccionario vacío y no ausente para que, si mañana la
+#: Consellería publica una materia que calle su curso, se vea dónde va.
+BACHILLERATO = EtapaDOG(
+    nombre="Bachillerato", sufijo_curso="Bachillerato", cursos=2,
+    cursos_de_la_guia={},
+)
+
+ETAPAS = {"eso": ESO, "bachillerato": BACHILLERATO}
 
 
 # ---------------------------------------------------------------------------
@@ -259,8 +362,31 @@ def _filas_en_orden(pagina) -> list[tuple[str, str]]:
         for i, fila in enumerate(tabla.extract()):
             if not fila:
                 continue
-            izq = (fila[0] or "").strip()
-            der = (fila[1] or "").strip() if len(fila) > 1 else ""
+            # LA PRIMERA CELDA CON ALGO Y LA ÚLTIMA, NO LA 0 Y LA 1.
+            #
+            # La tabla de esta Guía tiene dos columnas —criterio y obxectivo—,
+            # y leerlas por índice fijo funcionó en los 35 PDF de la ESO y en
+            # 53 de los 54 de Bacharelato. En el que falta,
+            # `Tecnoloxias-da-Informacion-e-da-Comunicacion.pdf`,
+            # `find_tables()` devuelve **seis** columnas, casi todas vacías:
+            #
+            #     ['', 'Materia de Tecnoloxías…', '', '', '', '']
+            #     ['▪ CA1.1. Definir problemas…', '', '', 'OBX1', '', '']
+            #
+            # Con índices fijos, `izq` salía vacía en la fila de la materia
+            # —así que no casaba `RX_MATERIA` y la materia se quedaba con el
+            # título de la portada— y `der` salía vacía en las de criterio, así
+            # que los 40 criterios quedaban **sin obxectivo**. El seed los
+            # omite enteros cuando no lo encuentra: esa materia entró en la
+            # base de datos con 0 criterios y un nombre que no existe.
+            #
+            # Cuántas columnas invente el lector no es información del
+            # boletín, así que no se depende de ello: la primera celda con
+            # texto es la izquierda y la última, la derecha. Con dos columnas
+            # de verdad da exactamente lo mismo que antes.
+            llenas = [(c or "").strip() for c in fila if (c or "").strip()]
+            izq = llenas[0] if llenas else ""
+            der = llenas[-1] if len(llenas) > 1 else ""
             eventos.append((tabla.bbox[1] + i * 1e-3, izq, der))
 
     return [(izq, der) for _, izq, der in sorted(eventos, key=lambda e: e[0])]
@@ -333,13 +459,27 @@ def extraer_tramos(doc: pymupdf.Document, materia_portada: str
                 _leer_contidos(izq, bloque_num, bloque_titulo, tramo)
             else:
                 m = es_criterio
+                codigo = f"{m.group(1)}.{m.group(2)}"
+                # El OBX que el propio decreto asocia al criterio. Aquí está
+                # la inversión: en las otras comunidades el criterio cuelga de
+                # la competencia; en Galicia es el criterio quien la nombra.
+                #
+                # Y puede nombrar más de una: ver `_objetivos_de_la_celda`.
+                objetivos = _objetivos_de_la_celda(der)
+                erratado = ERRATAS_OBXECTIVO.get(
+                    (materia, codigo, objetivos[0] if objetivos else "")
+                )
+                if erratado:
+                    logger.info(
+                        "%s %s: el boletín cita OBX%s, que no existe; se lee "
+                        "como OBX%s. Ver ERRATAS_OBXECTIVO.",
+                        materia, codigo, objetivos[0], erratado,
+                    )
+                    objetivos = [erratado, *objetivos[1:]]
                 tramo.criterios.append(Criterio(
-                    codigo=f"{m.group(1)}.{m.group(2)}",
-                    # El OBX que el propio decreto asocia al criterio. Aquí
-                    # está la inversión: en las otras comunidades el
-                    # criterio cuelga de la competencia; en Galicia es el
-                    # criterio quien la nombra.
-                    competencia=der.replace("OBX", "").strip() or "",
+                    codigo=codigo,
+                    competencia=objetivos[0] if objetivos else "",
+                    competencias_extra=objetivos[1:],
                     descripcion=_juntar(m.group(3)),
                 ))
     return tramos
@@ -397,11 +537,14 @@ def titulo_de_portada(doc: pymupdf.Document) -> str:
     return _juntar(" ".join(resto)) if resto else ""
 
 
-def extraer(pdf: Path) -> list[MateriaCiclo]:
+def extraer(pdf: Path, etapa: EtapaDOG = ESO) -> list[MateriaCiclo]:
     """Un `MateriaCiclo` por cada (materia, curso) del PDF.
 
     **Puede devolver varias materias**: `Matematicas.pdf` trae Matemáticas,
     Matemáticas A y Matemáticas B, cada una con su «Materia de …».
+
+    `etapa` por defecto la ESO, que es de donde viene este extractor y lo que
+    esperan sus llamadas de agosto. Ver `EtapaDOG`.
     """
     doc = pymupdf.open(pdf)
     try:
@@ -425,26 +568,34 @@ def extraer(pdf: Path) -> list[MateriaCiclo]:
 
     resultados: list[MateriaCiclo] = []
     for (materia, curso), tramo in sorted(tramos.items(), key=lambda kv: (kv[0][0], kv[0][1])):
-        if curso in _CURSO:
-            resultados.append(_montar(materia, [_CURSO[curso]], obxectivos, tramo))
+        if curso is not None and curso > etapa.cursos:
+            # Un ordinal que su etapa no tiene es un error de lectura o el PDF
+            # de otra etapa. Se dice y no se guarda: «3º Bachillerato» no
+            # existe, y cargado sería currículo que nadie puede elegir.
+            logger.error(
+                "%s (%s): el PDF declara %dº curso y %s solo tiene %d. No se "
+                "guarda.", materia, pdf.name, curso, etapa.nombre, etapa.cursos,
+            )
             continue
-        cursos = CURSOS_DE_LA_GUIA.get(materia) or _por_clave().get(_clave(materia))
+        if curso is not None and 1 <= curso <= etapa.cursos:
+            resultados.append(
+                _montar(materia, [etapa.curso(curso)], obxectivos, tramo, etapa)
+            )
+            continue
+        cursos = (etapa.cursos_de_la_guia.get(materia)
+                  or etapa.por_clave().get(_clave(materia)))
         if not cursos:
             logger.error(
                 "%s (%s): el PDF no dice el curso y no está en "
-                "CURSOS_DE_LA_GUIA. Se cargaría invisible, así que no se "
-                "guarda.", materia, pdf.name,
+                "`cursos_de_la_guia` de %s. Se cargaría invisible, así que no "
+                "se guarda.", materia, pdf.name, etapa.nombre,
             )
             continue
-        resultados.append(_montar(materia, cursos, obxectivos, tramo))
+        resultados.append(_montar(materia, cursos, obxectivos, tramo, etapa))
     return resultados
 
 
-def _por_clave() -> dict[str, list[str]]:
-    return {_clave(k): v for k, v in CURSOS_DE_LA_GUIA.items()}
-
-
-def _montar(materia, cursos, obxectivos, tramo) -> MateriaCiclo:
+def _montar(materia, cursos, obxectivos, tramo, etapa: EtapaDOG = ESO) -> MateriaCiclo:
     codigos = {o.codigo for o in obxectivos}
     huerfanos = sorted({c.competencia for c in tramo.criterios} - codigos - {""})
     if huerfanos:
@@ -456,6 +607,11 @@ def _montar(materia, cursos, obxectivos, tramo) -> MateriaCiclo:
         materia_oficial=materia,
         materia_corta=materia,
         ciclo=" e ".join(cursos),
+        # Parte de la clave del upsert, no una etiqueta: «Matemáticas» y
+        # «Física e Química» existen en las dos etapas de Galicia con los
+        # obxectivos numerados igual, así que sin esto la segunda carga pisaría
+        # a la primera en silencio. Ver la migración `d1a7b4e62c95`.
+        etapa=etapa.nombre,
         cursos_aplicables=list(cursos),
         competencias=list(obxectivos),
         criterios=list(tramo.criterios),
@@ -532,6 +688,10 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--salida", type=Path, required=True)
     p.add_argument("--comunidad", default="galicia")
     p.add_argument("--idioma", default="gl")
+    p.add_argument("--etapa", choices=sorted(ETAPAS), default="eso",
+                   help="ESO (Decreto 156/2022) o Bachillerato (157/2022). "
+                        "La Guía publica las dos igual; lo único que cambia es "
+                        "a qué curso se traduce un ordinal.")
     p.add_argument("--verbose", "-v", action="store_true")
     args = p.parse_args(argv)
 
@@ -543,9 +703,13 @@ def main(argv: list[str] | None = None) -> int:
         logger.error("No hay PDF en %s", args.pdfs)
         return 2
 
+    etapa = ETAPAS[args.etapa]
+    logger.info("Leyendo %d PDF de %s con la etapa %s",
+                len(pdfs), args.pdfs, etapa.nombre)
+
     todos: list[MateriaCiclo] = []
     for pdf in pdfs:
-        res = extraer(pdf)
+        res = extraer(pdf, etapa)
         if not res:
             logger.warning("Sin resultados: %s", pdf.name)
         todos.extend(res)
