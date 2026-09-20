@@ -1,0 +1,431 @@
+{
+  "materia_oficial": "Métodos Estatísticos e Numéricos",
+  "materia": "Métodos Estatísticos e Numéricos",
+  "etapa": "Bachillerato",
+  "ciclo": "2º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Modelizar e resolver problemas da vida cotiá, da ciencia e da tecnoloxía e das ciencias sociais aplicando diferentes estratexias e formas de razoamento para obter posibles solucións.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Verificar a validez das posibles solucións dun problema empregando o razoamento e a argumentación para contrastar a súa idoneidade.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Formular ou investigar conxecturas ou problemas, utilizando o razoamento, a argumentación, a creatividade e o uso de ferramentas tecnolóxicas, para xerar novo coñecemento matemático.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Utilizar o pensamento computacional de forma eficaz, modificando, creando e xeneralizando algoritmos que resolvan problemas mediante o uso das matemáticas, para modelizar e resolver situacións da vida cotiá e do ámbito das ciencias.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Establecer, investigar e utilizar conexións entre as diferentes ideas matemáticas establecendo vínculos entre conceptos, procedementos, argumentos e modelos para dar significado e estruturar a aprendizaxe matemática.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Descubrir os vínculos das matemáticas con outras áreas de coñecemento e profundar nas súas conexións interrelacionando conceptos e procedementos, para modelizar, resolver problemas e desenvolver a capacidade crítica, creativa e innovadora en situacións diversas.",
+      "descriptores": []
+    },
+    {
+      "codigo": "7",
+      "descripcion": "Representar conceptos, procedementos e información matemática seleccionando diferentes tecnoloxías, para visualizar ideas e estruturar razoamentos matemáticos.",
+      "descriptores": []
+    },
+    {
+      "codigo": "8",
+      "descripcion": "Comunicar as ideas matemáticas, de forma individual e colectiva, empregando o soporte, a terminoloxía e o rigor apropiados, para organizar e consolidar o pensamento matemático.",
+      "descriptores": []
+    },
+    {
+      "codigo": "9",
+      "descripcion": "Utilizar destrezas persoais e sociais, identificando e xestionando as propias emocións, respectando as dos demais e organizando activamente o traballo en equipos heteroxéneos, aprendendo do erro como parte do proceso de aprendizaxe e afrontando situacións de incerteza, para perseverar na consecución de obxectivos na aprendizaxe das matemáticas.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "3",
+      "descripcion": "Adquirir novo coñecemento matemático mediante a formulación, razoamento e xustificación de conxecturas e problemas de forma autónoma."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "5",
+      "descripcion": "Manifestar unha visión matemática integrada, investigando e conectando as diferentes ideas matemáticas."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "6",
+      "descripcion": "Resolver problemas en situacións diversas utilizando procesos matemáticos, reflexionando, establecendo e aplicando conexións entre o mundo real, outras áreas de coñecemento e as matemáticas."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "5",
+      "descripcion": "Manifestar unha visión matemática integrada, investigando e conectando as diferentes ideas matemáticas."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Seleccionar a solución máis adecuada dun problema en función do contexto (de sustentabilidade, de consumo responsable, de equidade...) usando o razoamento e a argumentación."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "7",
+      "descripcion": "Seleccionar e utilizar diversas formas de representación, valorando a súa utilidade para compartir información."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Integrar o uso de ferramentas tecnolóxicas na formulación ou investigación de conxecturas e problemas."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "1",
+      "descripcion": "Obter todas as posibles solucións matemáticas de problemas da vida cotiá, da tecnoloxía e das ciencias e describir o procedemento realizado."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "4",
+      "descripcion": "Interpretar, modelizar e resolver situacións problematizadas da vida cotiá, da tecnoloxía e das ciencias utilizando o pensamento computacional, modificando, creando e xeneralizando algoritmos."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "3",
+      "descripcion": "Adquirir novo coñecemento matemático mediante a formulación, razoamento e xustificación de conxecturas e problemas de forma autónoma."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "7",
+      "descripcion": "Representar e visualizar ideas matemáticas estruturando diferentes procesos matemáticos e seleccionando as tecnoloxías máis adecuadas."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "1",
+      "descripcion": "Empregar diferentes estratexias e ferramentas, incluídas as dixitais, que resolvan problemas da vida cotiá, da tecnoloxía e das ciencias e seleccionar a máis adecuada segundo a súa eficiencia."
+    },
+    {
+      "codigo": "4.4",
+      "competencia": "6",
+      "descripcion": "Resolver problemas en situacións diversas utilizando procesos matemáticos, reflexionando, establecendo e aplicando conexións entre o mundo real, outras áreas de coñecemento e as matemáticas."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "6",
+      "descripcion": "Analizar a achega das matemáticas ao progreso da humanidade e valorar a súa contribución na proposta de solucións a situacións complexas e aos retos que se formulan nas ciencias."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "9",
+      "descripcion": "Afrontar as situacións de incerteza e tomar decisións avaliando distintas opcións, identificando e xestionando emocións e aceptando e aprendendo do erro como parte do proceso de aprendizaxe das matemáticas."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "9",
+      "descripcion": "Mostrar perseveranza e unha motivación positiva, aceptando e aprendendo da crítica razoada ao facer fronte ás diferentes situacións de aprendizaxe das matemáticas."
+    },
+    {
+      "codigo": "5.4",
+      "competencia": "9",
+      "descripcion": "Traballar en tarefas matemáticas de forma activa en equipos heteroxéneos respectando as emocións e experiencias dos demais, escoitando o seu razoamento, aplicando as habilidades sociais máis propicias e fomentando o benestar do equipo e as relacións saudables."
+    },
+    {
+      "codigo": "5.5",
+      "competencia": "8",
+      "descripcion": "Mostrar organización ao comunicar as ideas matemáticas empregando o soporte, a terminoloxía e o rigor apropiados."
+    },
+    {
+      "codigo": "5.6",
+      "competencia": "8",
+      "descripcion": "Recoñecer e empregar a linguaxe matemática en diferentes contextos e comunicar a información con precisión e rigor."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "Bloque 1. Sentido numérico",
+      "titulo": "Sentido numérico",
+      "items": [
+        "Cálculo.",
+        "Díxitos significativos. Truncamento e arredondamento. Erro acumulado. Erro absoluto e relativo. Converxencia.",
+        "A aproximación nas calculadoras e programas informáticos.",
+        "Realización de estimacións en diversos contextos analizando o erro cometido."
+      ],
+      "codigos_items": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4"
+      ]
+    },
+    {
+      "codigo": "2",
+      "bloque": "Bloque 2. Sentido da medida",
+      "titulo": "Sentido da medida",
+      "items": [
+        "Medición.",
+        "Integración numérica: método dos trapecios e de Simpson. Aplicación ao cálculo de áreas planas.",
+        "A probabilidade como medida da incerteza asociada a fenómenos aleatorios: interpretación subxectiva, clásica e frecuentista."
+      ],
+      "codigos_items": [
+        "2.1",
+        "2.2",
+        "2.3"
+      ]
+    },
+    {
+      "codigo": "3",
+      "bloque": "Bloque 3. Sentido alxébrico",
+      "titulo": "Sentido alxébrico",
+      "items": [
+        "Padróns.",
+        "Xeneralización de padróns que xorden en situacións diversas, usando regras simbólicas ou funcións definidas explícita e recorrentemente.",
+        "Modelo matemático.",
+        "Programación lineal: modelización de problemas. O problema dual.",
+        "Igualdade e desigualdade.",
+        "Programación lineal: resolución de problemas mediante algoritmos de lapis e papel, e con ferramentas dixitais. Introdución ao método simplex.",
+        "Resolución de ecuacións con métodos numéricos (dicotomía, da secante, das tanxentes). Uso de programas informáticos.",
+        "Resolución aproximada de sistemas de ecuacións lineais (Métodos de Jacobi e Gauss-Seidel). Uso de programas informáticos.",
+        "Utilización de técnicas de cálculo numérico na resolución de problemas da vida cotíá, da tecnoloxía e das ciencias.",
+        "Relacións e funcións.",
+        "Polinomios de interpolación (lineais, de Newton, de Lagrange). Aplicación en táboas e gráficas da vida cotíá, da tecnoloxía e das ciencias para obter información suplementaria. Uso de programas informáticos.",
+        "Pensamento computacional.",
+        "Análise, formulación, resolución, representación e interpretación de relacións e problemas da vida cotiá e de distintos ámbitos utilizando algoritmos, programas e ferramentas tecnolóxicas adecuados."
+      ],
+      "codigos_items": [
+        "3.1",
+        "3.2",
+        "3.3",
+        "3.4",
+        "3.5",
+        "3.6",
+        "3.7",
+        "3.8",
+        "3.9",
+        "3.10",
+        "3.11",
+        "3.12",
+        "3.13"
+      ]
+    },
+    {
+      "codigo": "4",
+      "bloque": "Bloque 4. Sentido estocástico",
+      "titulo": "Sentido estocástico",
+      "items": [
+        "Incerteza.",
+        "Cálculo da probabilidade en experimentos simples e compostos.",
+        "Probabilidade condicionada e independencia de sucesos aleatorios. Regra do produto.",
+        "Teoremas da probabilidade total e de Bayes: resolución de problemas e interpretación do teorema de Bayes para actualizar a probabilidade a partir da observación, a experimentación e a toma de decisións en situacións de incerteza.",
+        "Resolución de problemas utilizando técnicas de reconto, diagramas de árbore e táboas de continxencia.",
+        "Cadeas de Markov. Grafo asociado e matriz de transición. Distribucións estacionarias e distribución límite.",
+        "Clasificación, identificación e cálculo das probabilidades dos estados en cadeas de Markov. Uso de ferramentas tecnolóxicas.",
+        "Distribucións de probabilidade.",
+        "Variables aleatorias. Tipos.",
+        "Variables aleatorias discretas. Función de masa de probabilidade e función de distribución. Esperanza matemática e varianza. Distribucións binomial e de Poisson.",
+        "Variables aleatorias continuas. Función de densidade e función de distribución. Esperanza matemática e varianza. Distribución normal",
+        "Modelización de fenómenos estocásticos mediante estas distribucións. Cálculo de probabilidades asociadas mediante ferramentas tecnolóxicas.",
+        "Teorema central do límite. Relación entre as distribucións binomial, de Poisson e normal.",
+        "Distribucións asociadas á normal: t de Student, Chi-cadrado de Pearson e F de Fisher-Snedecor .",
+        "Inferencia.",
+        "Poboación e mostra. Parámetros e estatísticos. Representatividade dunha mostra segundo o seu proceso de selección. Selección de mostras representativas. Técnicas de mostraxe.",
+        "Aproximación da distribución da media e da proporción mostrais mediante a distribución normal.",
+        "Estimación puntual da media, a proporción e a varianza. Distribución na mostraxe. Nesgo e eficiencia dun estimador.",
+        "Intervalos de confianza para a proporción e para a media e a varianza dunha poboación normal: construción, análise e toma de decisións en situacións contextualizadas. Tamaño da mostra.",
+        "Contrastes de hipóteses para a proporción e para a media e a varianza dunha poboación normal: construción, análise e toma de decisións en situacións contextualizadas Relación entre contrastes de hipóteses e intervalos de confianza.",
+        "Emprego de ferramentas dixitais na realización de estudos estatísticos."
+      ],
+      "codigos_items": [
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4",
+        "4.5",
+        "4.6",
+        "4.7",
+        "4.8",
+        "4.9",
+        "4.10",
+        "4.11",
+        "4.12",
+        "4.13",
+        "4.14",
+        "4.15",
+        "4.16",
+        "4.17",
+        "4.18",
+        "4.19",
+        "4.20",
+        "4.21"
+      ]
+    },
+    {
+      "codigo": "5",
+      "bloque": "Bloque 5. Sentido socioafectivo",
+      "titulo": "Sentido socioafectivo",
+      "items": [
+        "Crenzas, actitudes e emocións.",
+        "Actitudes inherentes ao traballo matemático como o esforzo, a perseveranza, a tolerancia á frustración, a incerteza e a autoavaliación, indispensables para afrontar eventuais situacións de tensión e ansiedade na aprendizaxe das matemáticas.",
+        "Tratamento e análise do erro individual e colectivo como elemento mobilizador de saberes previos adquiridos e xerador de oportunidades de aprendizaxe na aula de matemáticas.",
+        "Toma de decisións.",
+        "Destrezas para avaliar diferentes opcións e tomar decisións na resolución de problemas e tarefas matemáticas.",
+        "Inclusión, respecto e diversidade.",
+        "Destrezas sociais e de comunicación efectivas para o éxito na aprendizaxe das matemáticas.",
+        "Valoración da contribución das matemáticas ao longo da historia no avance das ciencias e da tecnoloxía.",
+        "Comunicación e organización.",
+        "Comunicación das ideas matemáticas de maneira ordenada e coherente empregando o soporte, a terminoloxía e o rigor apropiados.",
+        "ecoñecemento e utilización da linguaxe matemática en diferentes contextos, comunicando a información con",
+        "recisión e rigor.",
+        "lanificación de procesos de matematización e modelización en contextos da vida cotiá, da tecnoloxía e das",
+        "iencias.",
+        ".4 Orientacións pedagóxicas",
+        "intervención educativa na materia de Métodos Estatísticos e Numéricos desenvolverá o seu",
+        "urrículo e tratará de asentar de xeito gradual e progresivo as aprendizaxes que lle faciliten ao",
+        "lumnado o logro dos obxectivos da materia e, en combinación co resto de materias, unha ade-",
+        "uada adquisición das competencias clave e o logro dos obxectivos da etapa.",
+        "este sentido, no deseño das actividades, o profesorado terá que considerar a relación exis-",
+        "ente entre os obxectivos da materia e as competencias clave a través dos descritores operativos",
+        "as liñas de actuación no proceso de ensino e aprendizaxe, que se presentan nos apartados se-",
+        "uintes, e seleccionar aqueles criterios de avaliación do currículo que se axusten á finalidade",
+        "uscada, así como empregalos para verificar as aprendizaxes do alumnado e o seu nivel de de-",
+        "empeño.",
+        "elación entre os obxectivos da materia de Métodos Estatísticos e Numéricos e as competen-",
+        "ias clave a través dos descritores operativos establecidos no anexo I",
+        "bxectivos",
+        "a materia",
+        "BX1",
+        "BX2",
+        "BX3",
+        "BX4",
+        "BX5",
+        "BX6",
+        "BX7",
+        "BX8",
+        "BX9",
+        ".2",
+        "iñas de actuación no proceso de ensino e aprendizaxe",
+        "A potenciación do razoamento, argumentación, investigación e comunicación, máis que os pro-",
+        "edementos repetitivos.",
+        "A interpretación, análise e modelización de situacións problemáticas en diferentes contextos,",
+        "omentando a adquisición do razoamento matemático e construíndo novos coñecementos a",
+        "artir dos seus coñecementos previos.",
+        "O emprego da historia das matemáticas para mostrar como se foi adquirindo o coñecemento",
+        "atemático e as súas achegas á tecnoloxía e ás ciencias.",
+        "O desenvolvemento de métodos para a realización de proxectos matemáticos e de resolución",
+        "e problemas, individuais ou en grupo, dunha forma eficiente e lóxica, buscando xeneraliza-",
+        "ións co fin de crear estratexias que poidan ser utilizadas en situacións análogas, proporcio-",
+        "ando unha visión das matemáticas como un campo integrado de coñecemento en si mesmo",
+        "aplicado á tecnoloxía e ás ciencias.",
+        "A realización de cálculos con lapis e papel débese limitar aos casos máis sinxelos. Nos casos",
+        "áis complicados, utilizaranse as ferramentas tecnolóxicas máis axeitadas.",
+        "A valoración do razoamento e a explicación dos procedementos empregados para obter os",
+        "esultados, así como a súa análise crítica, primará sobre a outorgada aos cálculos realizados",
+        "aos posibles erros cometidos.",
+        "A transmisión da importancia da comunicación das ideas matemáticas de forma ordenada e",
+        "oherente, así como da utilización da linguaxe matemática en diferentes contextos coa preci-",
+        "ión e o rigor adecuados.",
+        "O fomento da adquisición das destrezas e actitudes necesarias para entender e manexar as",
+        "mocións que xorden na aprendizaxe das matemáticas.",
+        "O uso de distintos métodos que teñan en conta os diferentes ritmos de aprendizaxe do alum-",
+        "ado, favorezan a capacidade de aprender por si mesmos e promovan o traballo en equipo.",
+        "A realización de proxectos, con ideas matemáticas relevantes, significativos para o alumnado",
+        "a resolución colaborativa de problemas, que reforzan a autoestima, a autonomía, a reflexión",
+        "a responsabilidade.",
+        "A énfase na atención individualizada á diversidade do alumnado: prevención das dificultades",
+        "e aprendizaxe, detección de altas capacidades e posta en práctica de mecanismos de reforzo",
+        "u ampliación tan pronto como se detecten estas necesidades.",
+        "O uso de estratexias para traballar transversalmente a comprensión lectora, a expresión oral",
+        "escrita, a comunicación audiovisual e a competencia dixital, e o fomento da creatividade, do",
+        "spírito científico e do emprendemento."
+      ],
+      "codigos_items": [
+        "5.1",
+        "5.2",
+        "5.3",
+        "5.4",
+        "5.5",
+        "5.6",
+        "5.7",
+        "5.8",
+        "5.9",
+        "5.10",
+        "5.11",
+        "5.12",
+        "5.13",
+        "5.14",
+        "5.15",
+        "5.16",
+        "5.17",
+        "5.18",
+        "5.19",
+        "5.20",
+        "5.21",
+        "5.22",
+        "5.23",
+        "5.24",
+        "5.25",
+        "5.26",
+        "5.27",
+        "5.28",
+        "5.29",
+        "5.30",
+        "5.31",
+        "5.32",
+        "5.33",
+        "5.34",
+        "5.35",
+        "5.36",
+        "5.37",
+        "5.38",
+        "5.39",
+        "5.40",
+        "5.41",
+        "5.42",
+        "5.43",
+        "5.44",
+        "5.45",
+        "5.46",
+        "5.47",
+        "5.48",
+        "5.49",
+        "5.50",
+        "5.51",
+        "5.52",
+        "5.53",
+        "5.54",
+        "5.55",
+        "5.56",
+        "5.57",
+        "5.58",
+        "5.59",
+        "5.60",
+        "5.61",
+        "5.62",
+        "5.63",
+        "5.64",
+        "5.65",
+        "5.66",
+        "5.67",
+        "5.68",
+        "5.69",
+        "5.70",
+        "5.71",
+        "5.72",
+        "5.73"
+      ]
+    }
+  ],
+  "comunidad": "galicia",
+  "idioma": "gl"
+}

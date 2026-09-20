@@ -1,0 +1,202 @@
+{
+  "materia_oficial": "Artes Escénicas",
+  "materia": "Artes Escénicas",
+  "etapa": "Bachillerato",
+  "ciclo": "1º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Analizar manifestacións escénicas de diferentes épocas e tradicións, describindo as súas características, establecendo relacións co seu contexto e identificando posibles influencias e proxeccións, para valorar o patrimonio e enriquecer o imaxinario propio.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Explorar as posibilidades expresivas de diferentes sistemas, medios e códigos de significación escénica, a través de actividades de carácter práctico, para incorporar o seu uso ao repertorio persoal de recursos e desenvolver o criterio de selección dos máis adecuados á intención comunicativa.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Abordar a recreación e representación da acción dramática, a partir da construción colectiva de escenas que mostren todo tipo de personaxes e conflitos, para desenvolver habilidades de comunicación e negociación e reforzar o autocoñecemento, a creatividade, a empatía, a imaxinación e o espírito emprendedor en diversas situacións e contextos.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Realizar proxectos de creación e difusión escénica, planificando as súas fases, seleccionando e estruturando os elementos de significación e asumindo diferentes funcións con iniciativa e responsabilidade, para expresar unha intención comunicativa, enriquecer a contorna cultural e identificar oportunidades de desenvolvemento persoal, social, académico ou profesional.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Valorar criticamente manifestacións escénicas, identificando o público ao que se dirixen e analizando as súas características e os seus presupostos artísticos, para desenvolver o criterio estético, difundir o patrimonio e ampliar as posibilidades de gozo das artes escénicas.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Identificar, cun vocabulario adecuado, as principais características de manifestacións escénicas de diferentes épocas e tradicións, establecendo relacións co seu contexto e evidenciando unha actitude de apertura, interese e respecto na súa recepción activa."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Establecer conexións entre manifestacións escénicas de diferentes épocas e tradicións, valorando a súa influencia sobre as artes escénicas actuais."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "5",
+      "descripcion": "Identificar diferentes manifestacións escénicas empregando a terminoloxía adecuada, reelaborando información a partir de fontes fiables e reflexionando criticamente sobre as súas características."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Participar, con iniciativa, confianza e creatividade, na exploración de sistemas, medios e códigos de significación escénica, a través de actividades de carácter práctico."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Recrear a acción dramática, o deseño de personaxes e a configuración de situacións e escenas seleccionando as técnicas máis adecuadas de entre as que conforman o repertorio persoal de recursos."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Empregar técnicas elementais de interpretación aplicando estratexias de memorización e valorando os ensaios como espazos de escoita, diálogo e aprendizaxe."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Recrear e representar a acción dramática, demostrando eficacia, seguindo as indicacións da dirección, mantendo a concentración e xestionando de forma guiada a ansiedade e o medo escénico."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Participar activamente na realización de proxectos colectivos de creación e difusión escénica, asumindo diferentes funcións con iniciativa e responsabilidade, e valorando e respectando as achegas e experiencias do resto de integrantes do grupo."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Avaliar e presentar os resultados da participación en proxectos de creación e difusión escénica, analizando a relación entre os obxectivos expostos e o produto final obtido, e explicando de forma argumentada as posibles diferenzas entre eles."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "2",
+      "descripcion": "Representar e adaptar a acción dramática, os elementos dramáticos, expresivos e plásticos dispoñibles aos requirimentos do proxecto para desenvolver baseándose no traballo colaborativo e inclusivo."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Identificar o tipo de público ao que se dirixe un espectáculo determinado, baseando os argumentos na análise da obra e nas reaccións do público."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Comentar manifestacións escénicas empregando a terminoloxía adecuada, reelaborando información a partir de fontes fiables e reflexionando criticamente sobre as súas características e presupostos artísticos."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "Bloque 1. O patrimonio escénico",
+      "titulo": "O patrimonio escénico",
+      "items": [
+        "Artes escénicas: concepto, tipoloxías e tradicións.",
+        "As artes escénicas e a súa historia: cambios e transformacións.",
+        "Dramaticidade, teatralidade e performatividade.",
+        "O patrimonio inmaterial."
+      ],
+      "codigos_items": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4"
+      ]
+    },
+    {
+      "codigo": "2",
+      "bloque": "Bloque 2. Expresión e comunicación escénica",
+      "titulo": "Expresión e comunicación escénica",
+      "items": [
+        "Códigos de significación escénica: natureza, descrición e clasificación.",
+        "O espazo escénico como xerador de significado. A convención teatral.",
+        "Recursos plásticos: escenografía volumétrica e virtual, caracterización, iluminación e espazo sonoro.",
+        "Recursos literarios e outros materiais. O texto dramático.",
+        "O conflito dramático: personaxe, situación e acción dramática.",
+        "A personaxe dramática: análise, caracterización e construción.",
+        "Xogo dramático, improvisación, dramatización e creación colectiva."
+      ],
+      "codigos_items": [
+        "2.1",
+        "2.2",
+        "2.3",
+        "2.4",
+        "2.5",
+        "2.6",
+        "2.7"
+      ]
+    },
+    {
+      "codigo": "3",
+      "bloque": "Bloque 3. Interpretación",
+      "titulo": "Interpretación",
+      "items": [
+        "Preparación física e preparación pre-expresiva. O coidado do corpo nas artes escénicas e performativas.",
+        "Métodos e técnicas de interpretación.",
+        "Os instrumentos do intérprete: expresión corporal, xestual, oral e rítmico-musical. A conciencia emocional.",
+        "A personaxe dramática: graos de representación, obxectivos e funcións.",
+        "A partitura interpretativa e a súa execución."
+      ],
+      "codigos_items": [
+        "3.1",
+        "3.2",
+        "3.3",
+        "3.4",
+        "3.5"
+      ]
+    },
+    {
+      "codigo": "4",
+      "bloque": "Bloque 4. Representación e escenificación",
+      "titulo": "Representación e escenificación",
+      "items": [
+        "O espectáculo escénico: concepto e características.",
+        "Tipoloxías básicas do espectáculo: clásico, de vangarda, corporal, occidental, oriental, de obxectos, musical, dancístico, de interior, de rúa.",
+        "Outras formas de presentación escénica: happening, performance, videoteatro ou teatro-danza.",
+        "O deseño dun espectáculo: equipos, fases e áreas de traballo.",
+        "Os ensaios: tipoloxía, finalidades e organización.",
+        "Representación de espectáculos escénicos.",
+        "Estratexias de traballo en equipo. Resolución de conflitos."
+      ],
+      "codigos_items": [
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4",
+        "4.5",
+        "4.6",
+        "4.7"
+      ]
+    },
+    {
+      "codigo": "5",
+      "bloque": "Bloque 5. Recepción nas artes escénicas",
+      "titulo": "Recepción nas artes escénicas",
+      "items": [
+        "O público: concepto e tipoloxías.",
+        "A recepción teatral: catarse, estrañamento e participación.",
+        "Estratexias e técnicas de análise de manifestacións escénicas.",
+        "O respecto á propiedade intelectual. A protección da creatividade persoal."
+      ],
+      "codigos_items": [
+        "5.1",
+        "5.2",
+        "5.3",
+        "5.4"
+      ]
+    }
+  ],
+  "comunidad": "galicia",
+  "idioma": "gl"
+}

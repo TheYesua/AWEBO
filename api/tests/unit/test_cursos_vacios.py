@@ -95,7 +95,8 @@ class TestLosDatosNoTienenFilasSinCursos:
 
     @pytest.mark.parametrize("carpeta", ["salida", "salida_cataluna", "salida_andalucia",
                                         "salida_andalucia_bachillerato",
-                                        "salida_ceuta_bachillerato"])
+                                        "salida_ceuta_bachillerato",
+                                        "salida_galicia", "salida_galicia_bachillerato"])
     def test_ningun_json_viene_sin_cursos(self, carpeta):
         import json
 

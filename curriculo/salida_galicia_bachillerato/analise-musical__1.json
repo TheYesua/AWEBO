@@ -1,0 +1,125 @@
+{
+  "materia_oficial": "Análise Musical",
+  "materia": "Análise Musical",
+  "etapa": "Bachillerato",
+  "ciclo": "1º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Analizar os elementos musicais de diferentes obras, utilizando a escoita activa e o estudo de partituras, para describir as súas características e establecer comparacións.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Establecer relacións entre os elementos musicais dunha composición, a través da análise da súa estrutura e dos procedementos compositivos utilizados, para asociar a obra cun xénero, un estilo e un contexto de creación.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Elaborar comentarios e críticas musicais sobre as obras analizadas, utilizando unha terminoloxía adecuada e consultando distintas fontes de información, para expresar xuízos persoais fundamentados e contribuír á difusión do patrimonio musical a través dos medios dispoñibles.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Utilizar os procedementos compositivos fundamentais e as tecnoloxías dixitais, empregando os elementos e as estruturas musicais máis adecuadas, para crear obras sinxelas e realizar improvisacións.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Investigar sobre os usos da música con fins terapéuticos e en combinación con outras formas de expresión artística, utilizando diferentes fontes de información e analizando as características musicais das obras, para entender de que forma inciden determinados trazos musicais na saúde e nas emocións.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Identificar os elementos que constitúen unha obra musical e a súa función dentro da composición a través da escoita activa e con apoio da partitura."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Describir as características musicais básicas dunha obra a partir da escoita activa e o estudo de partituras, analizando os seus elementos constitutivos."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "2",
+      "descripcion": "Analizar, de forma guiada, obras musicais, identificando a estrutura formal e os procedementos compositivos utilizados."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "2",
+      "descripcion": "Asociar as obras analizadas co seu contexto de creación, investigando sobre o seu autor ou autora e a súa época."
+    },
+    {
+      "codigo": "1.5",
+      "competencia": "3",
+      "descripcion": "Expresar unha opinión propia, informada e fundamentada, sobre as obras analizadas, utilizando un vocabulario musical adecuado."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "1",
+      "descripcion": "Identificar os elementos que constitúen unha obra musical e a súa función dentro da composición a través da escoita activa e con apoio da partitura."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "1",
+      "descripcion": "Describir as características musicais básicas dunha obra a partir da escoita activa e o estudo de partituras, analizando os seus elementos constitutivos."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Analizar, de forma guiada, obras musicais, identificando a estrutura formal e os procedementos compositivos utilizados."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "Bloque 1. Iniciación á análise musical",
+      "titulo": "Iniciación á análise musical",
+      "items": [
+        "A escoita activa e o estudo de partituras como soportes para a análise.",
+        "Elementos básicos da música e a relación entre eles: ritmo, tempo, melodía, harmonía, textura, timbre, dinámica e agóxica.",
+        "Técnicas de análise auditiva de obras de diferentes estilos e xéneros. Estratexias de análise dos elementos musicais da partitura con apoio da audición.",
+        "Recensións musicais.",
+        "Recursos dixitais para a investigación, a composición e a difusión musical.",
+        "Dereitos de autor e propiedade intelectual."
+      ],
+      "codigos_items": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4",
+        "1.5",
+        "1.6"
+      ]
+    },
+    {
+      "codigo": "2",
+      "bloque": "Bloque 2. A forma musical",
+      "titulo": "A forma musical",
+      "items": [
+        "Elementos estruturais: célula, motivo, frase e semifrase, período, sección e movemento. Ritmo melódico e harmónico. Cadencias.",
+        "Formas simples, formas compostas e libres. Formas-tipo. Representación de esquemas formais.",
+        "Procedementos compositivos fundamentais: repetición, variación, contraste e desenvolvemento.",
+        "Función da música en combinación con outras manifestacións artísticas.",
+        "Improvisación, creación e interpretación de estruturas musicais breves para a interiorización dos elementos formais traballados previamente.",
+        "Normas de comportamento individuais e grupais na interpretación."
+      ],
+      "codigos_items": [
+        "2.1",
+        "2.2",
+        "2.3",
+        "2.4",
+        "2.5",
+        "2.6"
+      ]
+    }
+  ],
+  "comunidad": "galicia",
+  "idioma": "gl"
+}

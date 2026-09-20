@@ -1,0 +1,596 @@
+{
+  "materia_oficial": "Cultura Científica",
+  "materia": "Cultura Científica",
+  "etapa": "Bachillerato",
+  "ciclo": "1º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Aplicar as metodoloxías propias da ciencia utilizando con precisión procedementos, materiais e instrumentos adecuados, para responder a cuestións sobre procesos científicos.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Utilizar recursos variados, con sentido crítico e ético, para buscar e seleccionar información fiable e contrastada para resolver distintas cuestións e establecer traballos cooperativos e colaborativos.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Comprender e interpretar os procesos biolóxicos, xeolóxicos, ambientais, fisicoquímicos e tecnolóxicos e explicalos utilizando os principios, leis e teorías científicas adecuadas, para responder a cuestións da vida cotiá.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Valorar a importancia dos estilos de vida relacionados coa sustentabilidade, a saúde e as novas tecnoloxías e materiais, fomentando hábitos saudables baseados nos fundamentos científicos para adoptalos e promovelos no seu contorno.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Argumentar, relacionar, reflexionar e aplicar o pensamento científico e os razoamentos lóxicos, mediante a procura e selección de estratexias apropiadas, para resolver cuestións e problemas relacionados coas ciencias experimentais.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Analizar a contribución dos avances científicos e das persoas que se dedican á ciencia con perspectiva de xénero e entendéndoa como un proceso colectivo e interdisciplinar en continua construción e evolución, para valorar o seu papel esencial no progreso da sociedade.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "6",
+      "descripcion": "Traballar en ciencia desde un punto de vista interdisciplinar entendéndoa en continua construción e evolución, e relacionada cos principais acontecementos históricos."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Valorar a utilización do método científico como estratexia de traballo en ciencia e tecnoloxía, utilizando diferentes soportes como medios de comunicación das súas achegas ou das súas conclusións."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "6",
+      "descripcion": "Recoñecer a importancia da relación entre ciencia e tecnoloxía, así como da súa contribución á sociedade ao longo da historia."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "2",
+      "descripcion": "Resolver cuestións sobre temas científicos seleccionando e organizando información de distintas fontes, distinguíndoas de pseudociencias, boatos, teorías conspiratorias e crenzas infundadas."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "5",
+      "descripcion": "Comprender a estrutura do Universo relacionándoa coa súa evolución e empregando escalas de medida adecuadas."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "6",
+      "descripcion": "Valorar a importancia dos últimos avances na investigación astronómica para a sociedade a través dos métodos de estudo do Universo."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "3",
+      "descripcion": "Explicar a orixe e estrutura da Terra describindo as etapas de formación do Sistema Solar."
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "3",
+      "descripcion": "Identificar e diferenciar os movementos terrestres interpretando as consecuencias que xeran."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Recoñecer a estrutura e dinámica das diferentes capas do interior terrestre adoptando unha actitude crítica cara ás crenzas infundadas."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "5",
+      "descripcion": "Reflexionar sobre as probas e os datos que orixinaron a teoría da tectónica de placas e describir os fenómenos e as estruturas xeolóxicas asociados."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Analizar os riscos internos e externos valorando a importancia das medidas de predición, prevención e corrección e interpretando información en diferentes formatos."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "3",
+      "descripcion": "Explicar as principais hipóteses sobre a orixe da vida na Terra e a evolución celular desde a teoría endosimbiótica ata as últimas investigacións e achegas relacionadas co microbioma e o viroma."
+    },
+    {
+      "codigo": "3.5",
+      "competencia": "5",
+      "descripcion": "Argumentar a teoría da evolución utilizando as probas e os mecanismos evolutivos, adoptando unha actitude crítica e escéptica cara a informacións sen unha base científica."
+    },
+    {
+      "codigo": "3.6",
+      "competencia": "3",
+      "descripcion": "Describir a evolución dos homínidos recoñecendo as adaptacións e os cambios acontecidos."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "6",
+      "descripcion": "Comprender o concepto de saúde e enfermidade segundo a OMS e analizar a evolución histórica na consideración e no tratamento das doenzas."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "6",
+      "descripcion": "Coñecer os últimos avances nas terapias e tratamentos médicos tomando conciencia da importancia da investigación médico-farmacéutica."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "6",
+      "descripcion": "Describir as principais técnicas da enxeñaría xenética e interpretar as súas implicacións éticas, sociais e ambientais, utilizando fontes fiables e adoptando unha actitude crítica e escéptica cara a informacións sen unha base científica."
+    },
+    {
+      "codigo": "4.4",
+      "competencia": "3",
+      "descripcion": "Explicar e describir en que consiste a inmunidade analizando o papel das barreiras inmunitarias e distinguindo os diferentes tipos de resposta inmune."
+    },
+    {
+      "codigo": "4.5",
+      "competencia": "5",
+      "descripcion": "Relacionar as enfermidades infecciosas e non infecciosas cos seus axentes causantes e os seus tratamentos, reflexionando sobre o papel dos antibióticos e a vacinación."
+    },
+    {
+      "codigo": "4.6",
+      "competencia": "3",
+      "descripcion": "Coñecer as doenzas máis comúns relacionadas coa saúde mental, identificando as causas, describindo os seus tratamentos e analizando as súas repercusións sociais."
+    },
+    {
+      "codigo": "4.7",
+      "competencia": "4",
+      "descripcion": "Adoptar e promover hábitos saudables para a prevención de doenzas físicas e mentais, analizando os efectos das drogas e identificando problemas asociados ao seu consumo."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "3",
+      "descripcion": "Distinguir os conceptos de sexo e xénero, recoñecendo a diversidade de opcións e mantendo sempre unha actitude non discriminatoria."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "3",
+      "descripcion": "Describir o dimorfismo sexual concienciando e promovendo comportamentos non sexistas."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "4",
+      "descripcion": "Recoñecer o sexo e a sexualidade desde a perspectiva da igualdade entre homes e mulleres e respectando a diversidade sexual."
+    },
+    {
+      "codigo": "5.4",
+      "competencia": "3",
+      "descripcion": "Recoñecer os procesos da reprodución humana reflexionando sobre a importancia das relacións sexuais responsables e consentidas."
+    },
+    {
+      "codigo": "5.5",
+      "competencia": "4",
+      "descripcion": "Relacionar as infeccións de transmisión sexual (ITS) cos seus axentes causantes e promover hábitos saudables e prácticas sexuais responsables que preveñan o seu contaxio, así como os embarazos non desexados."
+    },
+    {
+      "codigo": "5.6",
+      "competencia": "4",
+      "descripcion": "Reflexionar sobre a sexualidade humana e a afectividade entre individuos e adoptar actitudes respectuosas e tolerantes."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "5",
+      "descripcion": "Relacionar o desenvolvemento da humanidade co uso dos materiais, analizando as repercusións socioeconómicas e a influencia da superpoboación."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "4",
+      "descripcion": "Identificar os procesos de obtención de materiais recoñecendo os custos económicos, sociais e ambientais, e valorando a importancia dunha explotación sustentable e un uso responsable."
+    },
+    {
+      "codigo": "6.3",
+      "competencia": "3",
+      "descripcion": "Analizar a pegada de carbono e as etapas do ciclo de vida dos produtos utilizando exemplos concretos do contorno."
+    },
+    {
+      "codigo": "6.4",
+      "competencia": "4",
+      "descripcion": "Recoñecer os diferentes residuos e describir os seus procesos de tratamento, detallando a xestión que se realiza no seu contorno próximo e valorando a adopción de hábitos sustentables."
+    },
+    {
+      "codigo": "6.5",
+      "competencia": "6",
+      "descripcion": "Valorar a importancia da nanotecnoloxía e os novos materiais analizando a súas aplicacións presentes e futuras en diferentes ámbitos."
+    },
+    {
+      "codigo": "7.1",
+      "competencia": "6",
+      "descripcion": "Valorar a importancia da informática para a ciencia a través do funcionamento de computadores e doutros dispositivos."
+    },
+    {
+      "codigo": "7.2",
+      "competencia": "3",
+      "descripcion": "Describir a utilidade dalgunhas das aplicacións tecnolóxicas empregadas pola ciencia e comprender os fundamentos en que se basean."
+    },
+    {
+      "codigo": "7.3",
+      "competencia": "3",
+      "descripcion": "Explicar os principios básicos de conectividade exemplificando con dispositivos intelixentes e coa internet das cousas."
+    },
+    {
+      "codigo": "7.4",
+      "competencia": "5",
+      "descripcion": "Identificar e comprender os principais perigos asociados á conectividade utilizando as medidas básicas de ciberseguridade."
+    },
+    {
+      "codigo": "7.5",
+      "competencia": "4",
+      "descripcion": "Valorar os riscos nas redes sociais facendo un uso responsable delas e reflexionando sobre os dereitos na protección de datos."
+    },
+    {
+      "codigo": "8.1",
+      "competencia": "3",
+      "descripcion": "Clasificar os tipos de recursos naturais e as fontes de enerxía comparando as vantaxes e inconvenientes da súa utilización e describindo os principais impactos xerados polo seu uso."
+    },
+    {
+      "codigo": "8.2",
+      "competencia": "5",
+      "descripcion": "Reflexionar sobre a problemática xerada coa transición enerxética, analizando o concepto de pegada ecolóxica e o modelo da economía circular."
+    },
+    {
+      "codigo": "8.3",
+      "competencia": "3",
+      "descripcion": "Analizar e recoñecer as causas e as consecuencias das actividades humanas no ambiente e propor accións para a súa conservación."
+    },
+    {
+      "codigo": "8.4",
+      "competencia": "4",
+      "descripcion": "Adoptar e promover hábitos compatibles cun modelo de desenvolvemento sustentable e valorar a súa importancia utilizando fundamentos científicos."
+    },
+    {
+      "codigo": "8.5",
+      "competencia": "4",
+      "descripcion": "Reflexionar sobre a importancia de establecer e cumprir a lexislación ambiental promovendo actuacións e actitudes respectuosas e sustentables."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "Bloque 1. O traballo nas ciencias",
+      "titulo": "O traballo nas ciencias",
+      "items": [
+        "A ciencia como labor colectivo, interdisciplinar e en continua construción e evolución.",
+        "A relación entre a ciencia e os eventos históricos.",
+        "A comunicación en ciencia e tecnoloxía. Estratexias de traballo: o método científico.",
+        "O artigo científico.",
+        "Fontes de información fiables e teorías científicas fronte a pseudociencias, boatos, teorías conspiratorias e crenzas infundadas.",
+        "Elaboración e presentación de informes utilizando distintos medios.",
+        "Ciencia, tecnoloxía, sociedade e ambiente: perspectiva histórica.",
+        "Importancia da contribución á sociedade do traballo científico ao longo da historia. O papel das mulleres na ciencia."
+      ],
+      "codigos_items": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4",
+        "1.5",
+        "1.6",
+        "1.7",
+        "1.8"
+      ]
+    },
+    {
+      "codigo": "2",
+      "bloque": "Bloque 2. O Universo",
+      "titulo": "O Universo",
+      "items": [
+        "O Universo.",
+        "Orixe, formación e estrutura.",
+        "Escalas de lonxitude, masa e tempo.",
+        "Métodos de estudo e últimos avances na investigación astronómica. Implicación na sociedade.",
+        "O Sistema Solar.",
+        "Orixe, formación e estrutura.",
+        "A formación do planeta Terra. Movementos e consecuencias."
+      ],
+      "codigos_items": [
+        "2.1",
+        "2.2",
+        "2.3",
+        "2.4",
+        "2.5",
+        "2.6",
+        "2.7"
+      ]
+    },
+    {
+      "codigo": "3",
+      "bloque": "Bloque 3. A Terra e a vida",
+      "titulo": "A Terra e a vida",
+      "items": [
+        "A Terra.",
+        "Estrutura e dinámica. Teoría da tectónica de placas.",
+        "Riscos xeolóxicos internos e externos. Medidas de predición, prevención e corrección.",
+        ". A vida na Terra.",
+        "Hipóteses sobre a orixe da vida no planeta. Un mundo de ARN. Teoría endosimbiótica.",
+        "Do fixismo ao evolucionismo. Teorías e probas da evolución.",
+        "A evolución humana.",
+        "Microbioma e viroma. Importancia na evolución."
+      ],
+      "codigos_items": [
+        "3.1",
+        "3.2",
+        "3.3",
+        "3.4",
+        "3.5",
+        "3.6",
+        "3.7",
+        "3.8"
+      ]
+    },
+    {
+      "codigo": "4",
+      "bloque": "Bloque 4. A saúde e a biomedicina",
+      "titulo": "A saúde e a biomedicina",
+      "items": [
+        "Concepto de saúde. Definición da OMS.",
+        "Investigación médica e farmacéutica.",
+        "Historia da medicina.",
+        "As técnicas de diagnose. Últimos avances nos tratamentos médicos. Medicina de precisión: inmunoterapia e terapia xénica.",
+        "Aplicacións da robótica na biomedicina.",
+        "Os transplantes.",
+        "Biotecnoloxía tradicional e moderna. Aplicacións. Implicacións éticas e sociais.",
+        "O sistema inmune.",
+        "As barreiras de protección. A resposta inmune.",
+        "Clasificación das enfermidades: infecciosas e non infecciosas.",
+        "O cancro.",
+        "A vacinación.",
+        "Uso responsable dos medicamentos.",
+        "A saúde e a enfermidade.",
+        "Factores que determinan a saúde.",
+        "Drogas legais e ilegais. Problemas asociados.",
+        "A saúde mental: historia, causas, prevención e tratamentos."
+      ],
+      "codigos_items": [
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4",
+        "4.5",
+        "4.6",
+        "4.7",
+        "4.8",
+        "4.9",
+        "4.10",
+        "4.11",
+        "4.12",
+        "4.13",
+        "4.14",
+        "4.15",
+        "4.16",
+        "4.17"
+      ]
+    },
+    {
+      "codigo": "5",
+      "bloque": "Bloque 5. A reprodución e a sexualidade",
+      "titulo": "A reprodución e a sexualidade",
+      "items": [
+        "O sexo biolóxico e a diversidade de xénero.",
+        "Reprodución e sexo.",
+        "Dimorfismo sexual e sexismo.",
+        "A sexualidade humana.",
+        "Prácticas sexuais responsables. O consentimento sexual.",
+        "Infeccións de transmisión sexual (ITS) e hábitos saudables.",
+        "Técnicas anticonceptivas.",
+        "Técnicas de reprodución asistida.",
+        "Sexualidade e afectividade. Estereotipos e roles sexuais."
+      ],
+      "codigos_items": [
+        "5.1",
+        "5.2",
+        "5.3",
+        "5.4",
+        "5.5",
+        "5.6",
+        "5.7",
+        "5.8",
+        "5.9"
+      ]
+    },
+    {
+      "codigo": "6",
+      "bloque": "Bloque 6. O desenvolvemento social e os materiais",
+      "titulo": "O desenvolvemento social e os materiais",
+      "items": [
+        "O desenvolvemento da humanidade.",
+        "Consecuencias económicas e sociais.",
+        "O crecemento da poboación humana.",
+        "O uso dos materiais.",
+        "Procesos de obtención de materiais: custos económicos, sociais e ambientais.",
+        "O ciclo de vida dos produtos.",
+        "A pegada de carbono.",
+        "Aplicacións de casos concretos do contorno próximo.",
+        "Os residuos.",
+        "Clasificación.",
+        "A xestión dos residuos.",
+        "A nanotecnoloxía.",
+        "Os novos materiais."
+      ],
+      "codigos_items": [
+        "6.1",
+        "6.2",
+        "6.3",
+        "6.4",
+        "6.5",
+        "6.6",
+        "6.7",
+        "6.8",
+        "6.9",
+        "6.10",
+        "6.11",
+        "6.12",
+        "6.13"
+      ]
+    },
+    {
+      "codigo": "7",
+      "bloque": "Bloque 7. Os avances tecnolóxicos",
+      "titulo": "Os avances tecnolóxicos",
+      "items": [
+        "A informática na ciencia.",
+        "Orixe, xeracións e arquitectura de computadores.",
+        "Hardware e software. O software libre.",
+        "Dispositivos periféricos con utilidade científica.",
+        "Intelixencia artificial.",
+        "Aplicacións da tecnoloxía dixital.",
+        "Sistemas globais de navegación coa axuda de satélites.",
+        "A teledetección.",
+        "Os sistemas de información xeográfica.",
+        "Usos da visión artificial na ciencia.",
+        "Conectividade.",
+        "Orixe e conceptos básicos de funcionamento da internet.",
+        "Os tipos de conexións. Motores de busca.",
+        "Os dispositivos intelixentes.",
+        "A internet das cousas (IoT).",
+        "As redes sociais: uso responsable e riscos.",
+        "A ciberseguridade e os delitos na rede.",
+        "A protección de datos.",
+        "Implicacións éticas e sociais."
+      ],
+      "codigos_items": [
+        "7.1",
+        "7.2",
+        "7.3",
+        "7.4",
+        "7.5",
+        "7.6",
+        "7.7",
+        "7.8",
+        "7.9",
+        "7.10",
+        "7.11",
+        "7.12",
+        "7.13",
+        "7.14",
+        "7.15",
+        "7.16",
+        "7.17",
+        "7.18",
+        "7.19"
+      ]
+    },
+    {
+      "codigo": "8",
+      "bloque": "Bloque 8. O coidado do ambiente",
+      "titulo": "O coidado do ambiente",
+      "items": [
+        "Os recursos e a enerxía.",
+        "Clasificación dos recursos naturais.",
+        "As fontes de enerxía.",
+        "Principais impactos ambientais derivados da explotación dos recursos e do emprego das fontes de enerxía.",
+        "A transición enerxética: problemas e consecuencias.",
+        "A pegada ecolóxica.",
+        "Economía circular.",
+        "O desenvolvemento sustentable.",
+        "Lexislación ambiental.",
+        ".4 Orientacións pedagóxicas",
+        "intervención educativa na materia de Cultura Científica desenvolverá o seu currículo e tra-",
+        "ará de asentar de xeito gradual e progresivo as aprendizaxes que lle faciliten ao alumnado o",
+        "ogro dos obxectivos da materia e, en combinación co resto de materias, unha adecuada adquisi-",
+        "ión das competencias clave e o logro dos obxectivos da etapa.",
+        "este sentido, no deseño das actividades, o profesorado terá que considerar a relación exis-",
+        "ente entre os obxectivos da materia e as competencias clave a través dos descritores operativos",
+        "das liñas de actuación no proceso de ensino e aprendizaxe que se presentan nos apartados",
+        "eguintes e seleccionar aqueles criterios de avaliación do currículo que se axusten á finalidade",
+        "uscada, así como empregalos para verificar as aprendizaxes do alumnado e o seu nivel de de-",
+        "empeño.",
+        "elación entre os obxectivos da materia de Cultura Científica e as competencias clave a través",
+        "os descritores operativos establecidos non anexo I",
+        "bxectivos",
+        "a materia",
+        "BX1",
+        "BX2",
+        "BX3",
+        "BX4",
+        "BX5",
+        "BX6",
+        "iñas de actuación non proceso de ensino e aprendizaxe",
+        "Os contidos da materia traballados de forma competencial que propicien a adquisición e o",
+        "esenvolvemento das competencias clave buscando a interdisciplinariedade e ligándoa sem-",
+        "re ao contexto do alumnado.",
+        "A posta en práctica de situacións de aprendizaxe ou actividades competenciais que enfronten",
+        "alumnado ao reto de utilizar probas e argumentar nun contexto real mediante o diálogo",
+        "ntre iguais, e que mobilicen, de forma integrada, unha ampla variedade de coñecementos,",
+        "estrezas e actitudes.",
+        "A realización de proxectos significativos para o alumnado e a resolución colaborativa de pro-",
+        "lemas, que reforzan a autoestima, a autonomía, a reflexión e a responsabilidade.",
+        "Realización de tarefas grupais que supoñan compilar e organizar información, expola de xeito",
+        "ral e escrito, elaborar presentacións e defender as opinións propias en debates e noutras",
+        "ituacións de aula.",
+        "O traballo cooperativo e colaborativo, a formulación de tarefas en contextos reais e o traballo",
+        "xperimental e de campo promovendo a observación, curiosidade e colaboración para permi-",
+        "irlle ao alumnado asimilar de xeito significativo os saberes da materia.",
+        "A énfase na atención á diversidade do alumnado, na atención individualizada, na prevención",
+        "as dificultades de aprendizaxe e na posta en práctica de mecanismos de reforzo tan pronto",
+        "omo se detecten estas dificultades.",
+        "Situacións de aula que fomenten a responsabilidade do alumnado no proceso de aprendizaxe,",
+        "avaliación e a autoavaliación, a autocrítica e a promoción da iniciativa do alumnado para que",
+        "exa o protagonista do proceso."
+      ],
+      "codigos_items": [
+        "8.1",
+        "8.2",
+        "8.3",
+        "8.4",
+        "8.5",
+        "8.6",
+        "8.7",
+        "8.8",
+        "8.9",
+        "8.10",
+        "8.11",
+        "8.12",
+        "8.13",
+        "8.14",
+        "8.15",
+        "8.16",
+        "8.17",
+        "8.18",
+        "8.19",
+        "8.20",
+        "8.21",
+        "8.22",
+        "8.23",
+        "8.24",
+        "8.25",
+        "8.26",
+        "8.27",
+        "8.28",
+        "8.29",
+        "8.30",
+        "8.31",
+        "8.32",
+        "8.33",
+        "8.34",
+        "8.35",
+        "8.36",
+        "8.37",
+        "8.38",
+        "8.39",
+        "8.40",
+        "8.41",
+        "8.42",
+        "8.43",
+        "8.44",
+        "8.45",
+        "8.46",
+        "8.47",
+        "8.48",
+        "8.49",
+        "8.50",
+        "8.51",
+        "8.52"
+      ]
+    }
+  ],
+  "comunidad": "galicia",
+  "idioma": "gl"
+}

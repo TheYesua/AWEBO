@@ -1,0 +1,382 @@
+{
+  "materia_oficial": "Tecnoloxías Intelixentes",
+  "materia": "Tecnoloxías Intelixentes",
+  "etapa": "Bachillerato",
+  "ciclo": "1º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Analizar e valorar o impacto social e ético da intelixencia artificial desenvolvendo o pensamento crítico que permita identificar os desafíos e os riscos a que se expón a sociedade e o propio individuo durante o seu emprego diario, tendo en conta a normativa emerxente e avaliando no proceso o respecto da seguridade dixital, a igualdade e a equidade social.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Entender os fundamentos dos axentes intelixentes como sistemas computacionais situados nunha contorna en que interactúan de xeito autónomo, relacionando os seus aspectos básicos co seu funcionamento e potencialidade, identificando e incorporando tecnoloxías emerxentes e comprendendo as aplicacións reais na vida diaria.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Interaccionar con modelos artificiais baseados nos datos, aplicando habilidades e coñecementos interdisciplinares que permitan o seu manexo, tratamento, contextualización, interpretación e inclusión nos sistemas intelixentes, e recoñecer o importante papel da persoa na toma de decisións relacionadas coa aprendizaxe das máquinas, e na execución delas.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Desenvolver solucións prácticas que inclúan o razoamento algorítmico e que incorporen alternativas eficaces, novos produtos e tecnoloxías intelixentes aplicando estratexias de aprendizaxe baseadas na programación para un modelizado e resolución autónoma e eficiente de problemas reais.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "3",
+      "descripcion": "Comprender os fundamentos da programación na linguaxe Python."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "3",
+      "descripcion": "Utilizar bibliotecas e ferramentas de aprendizaxe automática para construír modelos de intelixencia artificial."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "4",
+      "descripcion": "Demostrar habilidades en programación para a intelixencia artificial, utilizando linguaxes de programación e ferramentas de desenvolvemento."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Comprender as propiedades básicas dun sistema baseado na intelixencia artificial e a súa relación cos algoritmos para resolver problemas de xeito automático."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Identificar os fundamentos dos axentes intelixentes e o seu funcionamento."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Identificar as aplicacións reais dos axentes intelixentes na vida diaria."
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "2",
+      "descripcion": "Relacionar os aspectos básicos dos axentes intelixentes co seu funcionamento e potencialidade."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "2",
+      "descripcion": "Coñecer os fundamentos da percepción de imaxes e os elementos básicos da súa representación dixital."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Comprender e utilizar librarías para a realización de operacións básicas sobre as imaxes e accións de identificación e segmentación de patróns visuais."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "4",
+      "descripcion": "Aplicar o pensamento computacional e a lóxica como base da estrutura de traballo."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "4",
+      "descripcion": "Aplicar técnicas de visión artificial para resolver problemas de interpretación visual da contorna, como a estimación da profundidade."
+    },
+    {
+      "codigo": "3.5",
+      "competencia": "3",
+      "descripcion": "Comunicar e divulgar activamente os resultados obtidos."
+    },
+    {
+      "codigo": "3.6",
+      "competencia": "1",
+      "descripcion": "Avaliar criticamente os beneficios e riscos da visión artificial, tendo en conta as súas implicacións éticas e sociais, e propoñer solucións para minimizar os riscos e maximizar os beneficios."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "2",
+      "descripcion": "Comprender os fundamentos da percepción de sons e voz, e a súa representación dixital."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "3",
+      "descripcion": "Demostrar habilidades no procesamento da linguaxe natural (PLN), incluíndo a toquenización, a etiquetaxe e a clasificación de texto."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "3",
+      "descripcion": "Comprender e aplicar técnicas de análise de emocións e recoñecemento de voz para resolver problemas de procesamento da linguaxe natural."
+    },
+    {
+      "codigo": "4.4",
+      "competencia": "4",
+      "descripcion": "Comprender e aplicar os modelos de linguaxe, analizando criticamente as súas limitacións e beneficios."
+    },
+    {
+      "codigo": "4.5",
+      "competencia": "1",
+      "descripcion": "Avaliar criticamente os beneficios e riscos do procesamento da linguaxe natural, tendo en conta as súas implicacións éticas e sociais, e propoñer solucións para minimizar os riscos e maximizar os beneficios."
+    },
+    {
+      "codigo": "4.6",
+      "competencia": "4",
+      "descripcion": "Comunicar e divulgar as solucións propostas tendo en conta a retroalimentación das persoas usuarias para a mellora do produto."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "1",
+      "descripcion": "Identificar e explicar as diferentes fases do ciclo de vida dos datos, desde a captación ata a eliminación, e a súa importancia na aplicación da intelixencia artificial."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "3",
+      "descripcion": "Demostrar habilidades na selección e preparación de datos para o seu uso en modelos de intelixencia artificial."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "3",
+      "descripcion": "Comprender e aplicar técnicas de preprocesamento de datos, incluíndo a normalización e a redución de dimensionalidade."
+    },
+    {
+      "codigo": "5.4",
+      "competencia": "3",
+      "descripcion": "Comprender e aplicar técnicas de aprendizaxe supervisada, non supervisada e de reforzo para resolver problemas de intelixencia artificial."
+    },
+    {
+      "codigo": "5.5",
+      "competencia": "3",
+      "descripcion": "Demostrar habilidades na avaliación e mellora de modelos de intelixencia artificial, incluíndo a validación cruzada e o axuste de hiperparámetros."
+    },
+    {
+      "codigo": "5.6",
+      "competencia": "4",
+      "descripcion": "Demostrar habilidades na aplicación de técnicas de intelixencia artificial para resolver problemas de predición e clasificación."
+    },
+    {
+      "codigo": "5.7",
+      "competencia": "1",
+      "descripcion": "Expoñer graficamente os modelos de intelixencia artificial e os seus resultados, incluíndo a detección de nesgos e a identificación de erros baixo unha ollada crítica e reflexiva."
+    },
+    {
+      "codigo": "5.8",
+      "competencia": "1",
+      "descripcion": "Analizar os riscos asociados ao uso da aprendizaxe automática tendo en conta as súas implicacións éticas e sociais, e propoñer solucións para minimizar os riscos e maximizar os beneficios."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "Bloque 1. Programación para a intelixencia artificial",
+      "titulo": "Programación para a intelixencia artificial",
+      "items": [
+        "Os cadernos de programación: Jupyter notebook, DeepNote ou similares.",
+        "Os fundamentos de programación en Python.",
+        "As librarías básicas na intelixencia artificial: Pandas, Numpy, OpenCV, Pytorch, Scikit-learn, Keras, entre outras."
+      ],
+      "codigos_items": [
+        "1.1",
+        "1.2",
+        "1.3"
+      ]
+    },
+    {
+      "codigo": "2",
+      "bloque": "Bloque 2. Conceptos clave de intelixencia artificial",
+      "titulo": "Conceptos clave de intelixencia artificial",
+      "items": [
+        "Que é e que non é a intelixencia artificial.",
+        "Os algoritmos para resolver problemas.",
+        "A intelixencia artificial no mundo real. Os campos de uso.",
+        "A percepción e a actuación na contorna.",
+        "A representación da información e o razoamento sobre ela.",
+        "A aprendizaxe e modelización a partir dos datos obtidos da contorna."
+      ],
+      "codigos_items": [
+        "2.1",
+        "2.2",
+        "2.3",
+        "2.4",
+        "2.5",
+        "2.6"
+      ]
+    },
+    {
+      "codigo": "3",
+      "bloque": "Bloque 3. Visión artificial",
+      "titulo": "Visión artificial",
+      "items": [
+        "Os elementos básicos dunha imaxe.",
+        "A identificación e a segmentación de patróns visuais.",
+        "A clasificación de imaxes.",
+        "A interpretación visual da contorna.",
+        "O impacto das aplicacións con visión artificial."
+      ],
+      "codigos_items": [
+        "3.1",
+        "3.2",
+        "3.3",
+        "3.4",
+        "3.5"
+      ]
+    },
+    {
+      "codigo": "4",
+      "bloque": "Bloque 4. Procesamento da linguaxe natural",
+      "titulo": "Procesamento da linguaxe natural",
+      "items": [
+        "O texto como dato.",
+        "O procesamento da linguaxe natural: de audio a texto e de texto a audio.",
+        "A similitude entre textos.",
+        "A análise emocional en textos.",
+        "Os modelos da linguaxe.",
+        "O impacto das aplicacións de procesamento da linguaxe natural (PLN)."
+      ],
+      "codigos_items": [
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4",
+        "4.5",
+        "4.6"
+      ]
+    },
+    {
+      "codigo": "5",
+      "bloque": "Bloque 5. Aprendizaxe autónoma",
+      "titulo": "Aprendizaxe autónoma",
+      "items": [
+        "Os algoritmos e os modelos.",
+        "A ciencia dos datos.",
+        "O adestramento e a avaliación dos modelos.",
+        "As redes neuronais artificiais.",
+        "O impacto das aplicacións dos modelos de aprendizaxe automática.",
+        ".4 Orientacións pedagóxicas",
+        "intervención educativa na materia de Tecnoloxías Intelixentes desenvolverá o seu currículo e",
+        "ratará de asentar de xeito gradual e progresivo as aprendizaxes que lle faciliten ao alumnado o",
+        "ogro dos obxectivos da materia e, en combinación co resto de materias, unha adecuada adquisición",
+        "as competencias clave e o logro dos obxectivos da etapa.",
+        "este sentido, no deseño das actividades, o profesorado terá que considerar a relación exis-",
+        "ente entre os obxectivos da materia e as competencias clave a través dos descritores operativos",
+        "das liñas de actuación no proceso de ensino e aprendizaxe, que se presentan nos apartados",
+        "eguintes e seleccionar aqueles criterios de avaliación do currículo que se axusten á finalidade",
+        "uscada, así como empregalos para verificar as aprendizaxes do alumnado e o seu nivel de de-",
+        "empeño.",
+        "elación entre os obxectivos da materia de Tecnoloxías Intelixentes e as competencias clave a",
+        "ravés dos descritores operativos establecidos no anexo I do Decreto 157/2022, do 15 de setem-",
+        "ro",
+        "bxectivos",
+        "a área",
+        "BX1",
+        "BX2",
+        "BX3",
+        "BX4",
+        "iñas de actuación no proceso de ensino e aprendizaxe.",
+        "O marcado carácter multidisciplinario da intelixencia artificial actual quedará patente para o",
+        "lumnado cun enfoque práctico que integre as tecnoloxías intelixentes no día a día, facendo",
+        "elas aliadas transversais nos seus estudos e futuros emprendementos. Esta interdisciplina-",
+        "iedade promoverá a exploración do potencial da intelixencia artificial para a creación de so-",
+        "ucións innovadoras e creativas ante problemas reais ou ficticios, con especial atención á súa",
+        "plicación en campos como a medicina, a industria, a educación ou a sustentabilidade, entre",
+        "utros.",
+        "A inclusión, nas situacións de aprendizaxe, das tres tecnoloxías consideradas nesta materia,",
+        "isión artificial, procesamento da linguaxe natural e aprendizaxe automática, como a base de",
+        "umerosas aplicacións da intelixencia artificial, polo que se poden desenvolver proxectos",
+        "rácticos na aula en campos como a interacción humano-máquina, a robótica autónoma, a",
+        "nternet das cousas, os sistemas de recomendación, os sistemas de predición, a realidade vir-",
+        "ual, os videoxogos, etc.",
+        "En xeral, desde un punto de vista pedagóxico, pódense aplicar estratexias metodolóxicas de",
+        "iversa índole ao longo do curso, sendo as persoas docentes as guías do proceso de ensino-",
+        "prendizaxe, tales como:",
+        "Aprendizaxe baseada en problemas: traballar en proxectos que involucren a aplicación de tec-",
+        "oloxías intelixentes en problemas do mundo real e que lles permitan aplicar a visión artificial,",
+        "procesamento de linguaxe natural e a aprendizaxe automática.",
+        "Aprendizaxe colaborativa: fomentar o traballo en equipo e a colaboración entre iguais para",
+        "esolver problemas complexos e desenvolver proxectos conxuntos que involucren programa-",
+        "ión.",
+        "Indagación: alentar o alumnado a explorar e descubrir a materia por si mesmo, utilizando re-",
+        "ursos en liña, bibliografía e ferramentas de aprendizaxe para desenvolver as competencias",
+        "ásicas na materia.",
+        "Aprendizaxe baseada en proxectos: desenvolver proxectos de software co uso da programa-",
+        "ión, como un bot de charla (chatbot) ou unha aplicación que clasifique imaxes, entre outros.",
+        "As propostas de aula, como a realización de debates, a resolución de problemas e a utilización",
+        "e simulacións e experimentos facilitarán unha aprendizaxe activa apoiada por actividades de",
+        "resentación e comunicación onde o alumnado poida transmitir de forma clara e efectiva as",
+        "úas ideas e resultados á comunidade educativa.",
+        "Os aspectos éticos traballaranse de xeito integrado nas tres tecnoloxías intelixentes, fomen-",
+        "ando o descubrimento deles, a reflexión crítica e a discusión na aula.",
+        "A oferta de recursos en liña é inmensa e van cambiando aceleradamente co paso do tempo.",
+        "or este motivo, é importante priorizar aqueles recursos que teñan maior lonxevidade e sexan",
+        "tiles, salvagardando a seguridade e a privacidade do alumnado."
+      ],
+      "codigos_items": [
+        "5.1",
+        "5.2",
+        "5.3",
+        "5.4",
+        "5.5",
+        "5.6",
+        "5.7",
+        "5.8",
+        "5.9",
+        "5.10",
+        "5.11",
+        "5.12",
+        "5.13",
+        "5.14",
+        "5.15",
+        "5.16",
+        "5.17",
+        "5.18",
+        "5.19",
+        "5.20",
+        "5.21",
+        "5.22",
+        "5.23",
+        "5.24",
+        "5.25",
+        "5.26",
+        "5.27",
+        "5.28",
+        "5.29",
+        "5.30",
+        "5.31",
+        "5.32",
+        "5.33",
+        "5.34",
+        "5.35",
+        "5.36",
+        "5.37",
+        "5.38",
+        "5.39",
+        "5.40",
+        "5.41",
+        "5.42",
+        "5.43",
+        "5.44",
+        "5.45",
+        "5.46",
+        "5.47",
+        "5.48",
+        "5.49",
+        "5.50",
+        "5.51",
+        "5.52",
+        "5.53",
+        "5.54",
+        "5.55",
+        "5.56",
+        "5.57",
+        "5.58",
+        "5.59",
+        "5.60",
+        "5.61",
+        "5.62"
+      ]
+    }
+  ],
+  "comunidad": "galicia",
+  "idioma": "gl"
+}

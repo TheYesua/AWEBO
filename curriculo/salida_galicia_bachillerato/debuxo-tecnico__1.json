@@ -1,0 +1,206 @@
+{
+  "materia_oficial": "Debuxo Técnico",
+  "materia": "Debuxo Técnico",
+  "etapa": "Bachillerato",
+  "ciclo": "1º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Interpretar elementos ou conxuntos arquitectónicos e de enxeñaría, empregando recursos asociados á percepción, ao estudo, á construción e á investigación de formas, para analizar as estruturas xeométricas e os elementos técnicos utilizados.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Utilizar razoamentos indutivos, dedutivos e lóxicos en problemas de índole gráfico-matemática, aplicando fundamentos da xeometría plana para resolver graficamente operacións matemáticas, relacións, construcións e transformacións.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Desenvolver a visión espacial, utilizando a xeometría descritiva en proxectos sinxelos, considerando a importancia do debuxo na arquitectura e nas enxeñarías, para resolver problemas e interpretar e recrear graficamente a realidade tridimensional sobre a superficie do plano.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Formalizar e definir deseños técnicos aplicando as normas UNE e ISO de maneira apropiada e valorando a importancia que ten o esbozo para documentar graficamente proxectos arquitectónicos e de enxeñaría.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Investigar, experimentar e representar dixitalmente elementos, planos e esquemas técnicos mediante o uso de programas específicos CAD de xeito individual ou grupal, apreciando o seu uso nas profesións actuais, para virtualizar obxectos e espazos en dúas dimensións e tres dimensións.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Analizar, ao longo da historia, a relación entre as matemáticas e o debuxo xeométrico, valorando a súa importancia en diferentes campos como a arquitectura ou a enxeñaría, desde a perspectiva de xénero e a diversidade cultural, empregando adecuadamente o vocabulario específico técnico e artístico."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "2",
+      "descripcion": "Solucionar graficamente cálculos matemáticos e transformacións básicas aplicando conceptos e propiedades da xeometría plana."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "2",
+      "descripcion": "Resolver graficamente tanxencias e trazar curvas aplicando as súas propiedades, cunha actitude de rigor na súa execución."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "2",
+      "descripcion": "Trazar graficamente construcións poligonais baseándose nas súas propiedades e amosando interese pola precisión, a claridade e a limpeza."
+    },
+    {
+      "codigo": "1.5",
+      "competencia": "3",
+      "descripcion": "Valorar o rigor gráfico do proceso; a claridade, a precisión e o proceso de resolución e construción gráfica."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "3",
+      "descripcion": "Representar en sistema diédrico elementos básicos no espazo determinando a súa relación de pertenza, posición e distancia"
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "3",
+      "descripcion": "Definir elementos e figuras planas en sistemas axonométricos valorando a súa importancia como métodos de representación espacial."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "3",
+      "descripcion": "Representar e interpretar elementos básicos no sistema de planos acotados facendo uso dos seus fundamentos."
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "3",
+      "descripcion": "Debuxar elementos no espazo empregando a perspectiva cónica."
+    },
+    {
+      "codigo": "2.5",
+      "competencia": "3",
+      "descripcion": "Valorar o rigor gráfico do proceso, a claridade, a precisión e o proceso de resolución e construción gráfica."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "2",
+      "descripcion": "Solucionar graficamente cálculos matemáticos e transformacións básicas aplicando conceptos e propiedades da xeometría plana."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "4",
+      "descripcion": "Documentar graficamente obxectos sinxelos mediante as súas vistas acotadas aplicando a normativa UNE e ISO na utilización de sintaxe, escalas e formatos, valorando a importancia de usar unha linguaxe técnica común."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Valorar o rigor gráfico do proceso, a claridade, a precisión e o proceso de resolución e construción gráfica."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "4",
+      "descripcion": "Utilizar o esbozo e o bosquexo como elementos de reflexión na aproximación e indagación de alternativas e solucións aos procesos de traballo."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "5",
+      "descripcion": "Crear figuras planas e tridimensionais mediante programas de debuxo vectorial, usando as ferramentas que achegan e as técnicas asociadas."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "5",
+      "descripcion": "Recrear virtualmente pezas en tres dimensións aplicando operacións alxébricas entre primitivas para a presentación de proxectos en grupo."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Utilizar o esbozo e o bosquexo como elementos de reflexión na aproximación e na indagación de alternativas e solucións aos procesos de traballo nos que interveñen sistemas CAD."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "Bloque 1. Fundamentos xeométricos",
+      "titulo": "Fundamentos xeométricos",
+      "items": [
+        "Desenvolvemento histórico do debuxo técnico. Campos de acción e aplicacións: debuxo arquitectónico, mecánico, proxectivo, eléctrico e electrónico, xeolóxico, urbanístico, etc.",
+        "Orixes da xeometría. Thales, Pitágoras, Euclides, Hipatia de Alexandría.",
+        "Concepto de lugar xeométrico. Arco capaz. Aplicacións dos lugares xeométricos ás construcións fundamentais da xeometría plana.",
+        "Proporcionalidade, equivalencia e semellanza.",
+        "Triángulos, cuadriláteros e polígonos regulares. Propiedades e métodos de construción específicos e xerais.",
+        "Tanxencias básicas. Curvas técnicas.",
+        "Interese polo rigor nos razoamentos, e precisión, claridade e limpeza nas execucións."
+      ],
+      "codigos_items": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4",
+        "1.5",
+        "1.6",
+        "1.7"
+      ]
+    },
+    {
+      "codigo": "2",
+      "bloque": "Bloque 2. Xeometría proxectiva",
+      "titulo": "Xeometría proxectiva",
+      "items": [
+        "Fundamentos da xeometría proxectiva.",
+        "Sistema diédrico: representación de punto, recta e plano. Trazas con planos de proxección. Determinación do plano. Pertenzas.",
+        "Relacións entre elementos: interseccións, paralelismo e perpendicularidade. Obtención de distancias: punto a punto, punto a recta, recta a plano, plano a plano, dúas rectas paralelas e mínima distancia entre dúas rectas que se cruzan.",
+        "Sistema axonométrico, ortogonal e oblicuo. Perspectivas isométrica e cabaleira. Disposición dos eixes e uso dos coeficientes de redución. Elementos básicos: punto, recta e plano.",
+        "Sistema de planos acotados. Fundamentos e elementos básicos: punto, recta e plano. Identificación de elementos para a súa interpretación en planos.",
+        "Sistema cónico: fundamentos e elementos do sistema. Perspectiva frontal e oblicua."
+      ],
+      "codigos_items": [
+        "2.1",
+        "2.2",
+        "2.3",
+        "2.4",
+        "2.5",
+        "2.6"
+      ]
+    },
+    {
+      "codigo": "3",
+      "bloque": "Bloque 3. Normalización e documentación gráfica de proxectos",
+      "titulo": "Normalización e documentación gráfica de proxectos",
+      "items": [
+        "Escalas numéricas e gráficas. Construción e uso.",
+        "Formatos. Dobradura de planos.",
+        "Concepto de normalización. As normas fundamentais UNE, ISO e DIN. Aplicacións da normalización: simboloxía industrial e arquitectónica.",
+        "Elección de vistas necesarias. Liñas normalizadas. Acotación."
+      ],
+      "codigos_items": [
+        "3.1",
+        "3.2",
+        "3.3",
+        "3.4"
+      ]
+    },
+    {
+      "codigo": "4",
+      "bloque": "Bloque 4. Sistemas CAD",
+      "titulo": "Sistemas CAD",
+      "items": [
+        "Aplicacións vectoriais 2D-3D.",
+        "Fundamentos de deseño de pezas en tres dimensións.",
+        "Modelaxe de caixa. Operacións básicas con primitivas.",
+        "Aplicacións de traballo en grupo para conformar pezas complexas a partir doutras máis sinxelas."
+      ],
+      "codigos_items": [
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4"
+      ]
+    }
+  ],
+  "comunidad": "galicia",
+  "idioma": "gl"
+}

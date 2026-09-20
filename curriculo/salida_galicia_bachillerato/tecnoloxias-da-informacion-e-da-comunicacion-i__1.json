@@ -1,0 +1,254 @@
+{
+  "materia_oficial": "Tecnoloxías da Información e da Comunicación I",
+  "materia": "Tecnoloxías da Información e da Comunicación I",
+  "etapa": "Bachillerato",
+  "ciclo": "1º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Entender o papel principal das tecnoloxías da información e da comunicación na sociedade actual e o seu impacto nos ámbitos social, económico e cultural para deseñar e planificar solucións a un problema ou necesidade de forma eficaz e innovadora.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Seleccionar, usar e combinar múltiples aplicacións informáticas para crear producións dixitais que cumpran uns obxectivos complexos, incluíndo a recollida, a análise, a avaliación e a presentación de datos e información, así como o cumprimento duns requisitos de persoa usuaria.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Desenvolver e depurar aplicacións informáticas, analizando e aplicando os principios da programación para crear solucións a problemas concretos de maneira creativa.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Crear proxectos audiovisuais de maneira creativa utilizando os recursos técnicos necesarios e aplicando os principios da linguaxe audiovisual.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Usar os sistemas informáticos e de comunicacións de forma segura, responsable e respectuosa, protexendo a identidade en liña e a privacidade, recoñecendo contido, contactos ou condutas incorrectas e sabendo como informar ao respecto.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Definir problemas ou necesidades expostas para o desenvolvemento dun proxecto dixital, buscando e contrastando información de maneira crítica e segura e avaliando a súa fiabilidade."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Deseñar e desenvolver proxectos dixitais que resolvan un problema ou que cubran unha necesidade real."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Documentar un proxecto dixital empregando as ferramentas axeitadas."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "1",
+      "descripcion": "Comunicar de maneira eficaz e organizada un proxecto dixital empregando o soporte, a terminoloxía e o rigor apropiados."
+    },
+    {
+      "codigo": "1.5",
+      "competencia": "1",
+      "descripcion": "Abordar a xestión do proxecto de forma creativa, fomentando o traballo en equipo e aplicando estratexias e técnicas colaborativas axeitadas, así como métodos de investigación para a súa ideación máis eficaz, accesible e innovadora posible."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Elixir e utilizar aplicacións informáticas de escritorio ou web, para crear, editar e expor documentos de texto e presentacións dixitais."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Elixir e utilizar aplicacións informáticas de escritorio ou web para realizar o tratamento de datos mediante a creación e xestión de follas de cálculo e bases de datos."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Interactuar en espazos virtuais de comunicación e plataformas de aprendizaxe colaborativa, compartindo e publicando información e datos, adaptándose a diferentes audiencias cunha"
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Identificar e analizar problemas desenvolvendo algoritmos que os resolvan."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Desenvolver e programar aplicacións para ordenadores e/ou dispositivos móbiles, e dar solución a problemas definidos."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Realizar o tratamento dixital de imaxes fixas empregando técnicas de xeración, procesamento e retoque."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Analizar e utilizar os recursos expresivos propios das producións audiovisuais, como os encadramentos, ángulos e movementos de cámara, e efectos sonoros, mantendo a continuidade narrativa."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Gravar pezas audiovisuais aplicando técnicas de captación de imaxes fotográficas, de vídeo e son, mediante os recursos e medios técnicos da linguaxe audiovisual."
+    },
+    {
+      "codigo": "4.4",
+      "competencia": "4",
+      "descripcion": "Editar pezas audiovisuais aplicando técnicas de creación de secuencias dinámicas de gráficos e imaxes fixas, e de montaxe audiovisual, integrando e axustando a súa banda sonora e tendo en conta os recursos expresivos da linguaxe audiovisual."
+    },
+    {
+      "codigo": "4.5",
+      "competencia": "4",
+      "descripcion": "Exportar un proxecto audiovisual a un ficheiro co formato necesario para a súa posterior reprodución e difusión a través da rede."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Identificar e saber reaccionar ante situacións que representan unha ameaza na rede escollendo a mellor solución entre diversas opcións."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Desenvolver prácticas saudables e seguras no uso das tecnoloxías da información e da comunicación, valorando o benestar físico e mental, tanto persoal coma colectivo."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "5",
+      "descripcion": "Protexer os datos persoais e a pegada dixital xerada na internet, configurando as condicións de privacidade das redes sociais e dos espazos virtuais de traballo."
+    },
+    {
+      "codigo": "5.4",
+      "competencia": "5",
+      "descripcion": "Utilizar recursos dixitais de acordo coas leis de propiedade intelectual recoñecendo e respectando as licenzas e os dereitos de autoría."
+    },
+    {
+      "codigo": "5.5",
+      "competencia": "5",
+      "descripcion": "Facer un uso ético dos datos e das ferramentas dixitais aplicando as normas de etiqueta dixital e respectando a privacidade na comunicación, colaboración e participación activa na rede."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "Bloque 1. Desenvolvemento de proxectos dixitais",
+      "titulo": "Desenvolvemento de proxectos dixitais",
+      "items": [
+        "Deseño creativo de proxectos.",
+        "Estratexias de procura crítica de información.",
+        "Estratexias, técnicas e marcos de desenvolvemento dun proxecto en diferentes contextos e as súas fases.",
+        "Documentación de proxectos.",
+        "Comunicación de información e de contidos dixitais en diferentes plataformas."
+      ],
+      "codigos_items": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4",
+        "1.5"
+      ]
+    },
+    {
+      "codigo": "2",
+      "bloque": "Bloque 2. Creación, tratamento e presentación da información e os datos",
+      "titulo": "Creación, tratamento e presentación da información e os datos",
+      "items": [
+        "Creación e edición de documentos de texto e de presentacións dixitais aplicados á documentación de proxectos dixitais: maquetación, formatado, modelos e integración de multimedia.",
+        "Tratamento de datos con folla de cálculo: formato de datos, uso de fórmulas e funcións, filtrado da información e creación de gráficos.",
+        "Tratamento de datos a través de bases de datos: almacenaxe, consulta e presentación da información.",
+        "Colaboración en rede. Ferramentas de creación de contidos e aprendizaxe colaborativa na rede."
+      ],
+      "codigos_items": [
+        "2.1",
+        "2.2",
+        "2.3",
+        "2.4"
+      ]
+    },
+    {
+      "codigo": "3",
+      "bloque": "Bloque 3. Programación",
+      "titulo": "Programación",
+      "items": [
+        "Diagramas de fluxo: elementos e símbolos e o seu significado.",
+        "Utilización de estruturas de programación: secuenciais, de selección e iterativas.",
+        "Utilización de operadores.",
+        "Uso de datos. Tipos de datos primitivos e compostos.",
+        "Utilización de funcións. Parámetros, código e retorno.",
+        "Utilización de librarías.",
+        "Desenvolvemento e programación de aplicacións para ordenadores e/ou dispositivos móbiles. Utilización da programación orientada a obxectos.",
+        "Execución, proba, depuración e documentación de programas."
+      ],
+      "codigos_items": [
+        "3.1",
+        "3.2",
+        "3.3",
+        "3.4",
+        "3.5",
+        "3.6",
+        "3.7",
+        "3.8"
+      ]
+    },
+    {
+      "codigo": "4",
+      "bloque": "Bloque 4. Creación e edición de contidos audiovisuais",
+      "titulo": "Creación e edición de contidos audiovisuais",
+      "items": [
+        "Edición dixital da imaxe fixa: retoques e montaxes fotográficas.",
+        "Resolución da imaxe e almacenamento.",
+        "Encadramento e ángulo de cámara. Tipos de plano: uso e funcionalidade.",
+        "Aplicación dos conceptos de plano, toma, exposición, enfoque, punto de vista e ángulo de encadramento. Escenas e secuencias.",
+        "Raccord e ritmo na edición.",
+        "Proceso de posprodución: selección de tomas, aplicación dos conceptos de ritmo e continuidade narrativa.",
+        "Recursos técnicos da montaxe e a edición: corte, fundido e encadeamento.",
+        "Banda sonora da produción audiovisual: diálogos, efectos de son e música.",
+        "Formatos de arquivo empregados no tratamento dixital de imaxe, audio e vídeo na produción multimedia."
+      ],
+      "codigos_items": [
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4",
+        "4.5",
+        "4.6",
+        "4.7",
+        "4.8",
+        "4.9"
+      ]
+    },
+    {
+      "codigo": "5",
+      "bloque": "Bloque 5. Seguridade, benestar e cidadanía dixital",
+      "titulo": "Seguridade, benestar e cidadanía dixital",
+      "items": [
+        "A seguridade da información: principios de integridade, dispoñibilidade, confidencialidade e autenticación.",
+        "Estratexias saudables e seguras no uso de dispositivos e na interacción na rede.",
+        "Identificación de software malicioso.",
+        "Condutas de seguridade activa e pasiva na protección dos equipamentos informáticos fronte a ataques externos.",
+        "Propiedade intelectual: respecto e aplicación de licenzas de software e dereitos de autoría.",
+        "Pegada dixital e protección de datos persoais na rede.",
+        "Etiqueta dixital."
+      ],
+      "codigos_items": [
+        "5.1",
+        "5.2",
+        "5.3",
+        "5.4",
+        "5.5",
+        "5.6",
+        "5.7"
+      ]
+    }
+  ],
+  "comunidad": "galicia",
+  "idioma": "gl"
+}

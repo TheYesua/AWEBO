@@ -1,0 +1,512 @@
+{
+  "materia_oficial": "Anatomía Aplicada",
+  "materia": "Anatomía Aplicada",
+  "etapa": "Bachillerato",
+  "ciclo": "1º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Interpretar e transmitir información e datos científicos argumentando sobre eles con precisión e utilizando diferentes formatos para analizar conceptos, procesos, métodos, experimentos ou resultados relacionados coa anatomía humana.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Localizar e utilizar fontes fiables identificando, seleccionando e organizando a información, avaliándoa criticamente, e contrastando a súa veracidade para resolver preguntas relacionadas coa anatomía humana.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Analizar traballos de investigación ou divulgación relacionados coa anatomía humana comprobando con sentido crítico a súa veracidade e/ou se seguen correctamente os pasos do método científico para avaliar a fiabilidade das súas conclusións.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Expor e resolver problemas e cuestións buscando e utilizando as estratexias adecuadas, analizando criticamente as solucións e reformulando o procedemento se for necesario, para explicar fenómenos relacionados coa anatomía humana.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Analizar criticamente os efectos de determinadas accións sobre a saúde baseándose nos fundamentos da anatomía humana para promover e adoptar hábitos que permitan manter e mellorar a saúde individual e colectiva.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Analizar os elementos anatómicos humanos utilizando fundamentos científicos para explicar a súa fisioloxía e relacionar esta coas actividades físicas e artísticas.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "3",
+      "descripcion": "Utilizar a metodoloxía científica na resolución de problemas sobre o funcionamento do corpo humano, a saúde, a motricidade e as actividades artísticas."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "3",
+      "descripcion": "Elaborar proxectos utilizando as estratexias adecuadas tanto no seu procedemento de traballo como na comunicación de procesos e resultados."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "3",
+      "descripcion": "Utilizar de forma segura e respectuosa co medio natural os espazos e recursos de aprendizaxe científica."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "2",
+      "descripcion": "Valorar a ciencia recoñecendo a actividade desenvolvida polas persoas que se dedican a ela e a súa contribución ao avance da sociedade humana en diferentes ámbitos, así como tamén o papel das mulleres nela."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Identificar e localizar os termos básicos da anatomía humana utilizando diagramas e modelos."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "6",
+      "descripcion": "Describir a organización xeral do corpo humano a través da localización dos diferentes tecidos, órganos, aparellos e sistemas, e a identificación das súas funcións."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Interpretar e comprender a evolución dos canons de beleza ao longo da historia e a súa influencia na sociedade."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "6",
+      "descripcion": "Recoñecer os procesos de dixestión e absorción de alimentos e nutrientes explicando as estruturas orgánicas implicadas en cada un."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "5",
+      "descripcion": "Reflexionar sobre a importancia da alimentación e da nutrición para o bo funcionamento do organismo recoñecendo as súas diferenzas e funcións básicas."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "4",
+      "descripcion": "Valorar os hábitos nutricionais que inciden favorablemente na saúde relacionando os tipos de dietas co balance enerxético establecido segundo as actividades realizadas."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "5",
+      "descripcion": "Identificar os trastornos alimenticios máis comúns e os efectos que teñen sobre a saúde, analizando os factores sociais que conducen á aparición daqueles."
+    },
+    {
+      "codigo": "3.5",
+      "competencia": "4",
+      "descripcion": "Identificar e diferenciar os procesos que comprende o metabolismo aeróbico e anaeróbico establecendo os mecanismos enerxéticos que interveñen na acción motora, co fin de xestionar a enerxía e mellorar a eficiencia da acción."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "1",
+      "descripcion": "Recoñecer as características xerais dos aparellos circulatorio, respiratorio e fonador e describir a anatomía e función dos distintos órganos que conforman os ditos aparellos empregando diferentes soportes e recursos."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Explicar o percorrido do sangue na circulación maior e menor identificando as estruturas implicadas en imaxes en diferentes formatos e valorando os parámetros de saúde cardiovascular."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "6",
+      "descripcion": "Explicar os movementos respiratorios de inspiración e expiración distinguindo os órganos e as estruturas implicadas."
+    },
+    {
+      "codigo": "4.4",
+      "competencia": "5",
+      "descripcion": "Analizar as enfermidades máis comúns dos aparellos circulatorio, respiratorio e fonador relacionándoas coas súas causas, síntomas e tratamentos."
+    },
+    {
+      "codigo": "4.5",
+      "competencia": "5",
+      "descripcion": "Reflexionar sobre a importancia de hábitos saudables relacionados cos aparellos circulatorio, respiratorio e fonador localizando, seleccionando e organizando a información."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "1",
+      "descripcion": "Describir a anatomía e identificar a función das distintas partes do aparello excretor e reprodutor empregando diferentes soportes e recursos."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Analizar as enfermidades máis comúns dos aparellos excretor e reprodutor relacionándoas coas súas causas, síntomas e tratamentos."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "5",
+      "descripcion": "Reflexionar sobre a importancia de hábitos saudables relacionados co aparello excretor e reprodutor localizando, seleccionado e organizando a información."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "1",
+      "descripcion": "Valorar os sistemas nervioso e endócrino como responsables da coordinación e regulación xeral do organismo recoñecendo as características xerais de cada un deles."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Describir a anatomía e función das partes dos órganos sensoriais, dos compoñentes do sistema nervioso e das glándulas do sistema endócrino empregando diferentes soportes e recursos."
+    },
+    {
+      "codigo": "6.3",
+      "competencia": "6",
+      "descripcion": "Diferenciar os movementos reflexos e voluntarios e relacionalos cos órganos implicados en cada un utilizando esquemas ou debuxos."
+    },
+    {
+      "codigo": "6.4",
+      "competencia": "6",
+      "descripcion": "Diferenciar as funcións de cada glándula endócrina localizando cada unha delas e empregando diferentes soportes e recursos."
+    },
+    {
+      "codigo": "6.5",
+      "competencia": "5",
+      "descripcion": "Analizar as enfermidades máis comúns dos sistemas nervioso e endócrino relacionándoas coas súas causas, síntomas e tratamentos e recoñecendo os efectos das drogas sobre o sistema nervioso así como a súa prevención."
+    },
+    {
+      "codigo": "6.6",
+      "competencia": "5",
+      "descripcion": "Reflexionar sobre a importancia de hábitos saudables relacionados cos Sistemas nervioso e endócrino, localizando, seleccionado e organizando a información."
+    },
+    {
+      "codigo": "7.1",
+      "competencia": "1",
+      "descripcion": "Localizar e diferenciar os compoñentes do aparello locomotor empregando diagramas e modelos."
+    },
+    {
+      "codigo": "7.2",
+      "competencia": "6",
+      "descripcion": "Explicar a fisioloxía do aparello locomotor a través da función de músculos, ósos e articulacións."
+    },
+    {
+      "codigo": "7.3",
+      "competencia": "5",
+      "descripcion": "Identificar as principais enfermidades e lesións do aparello locomotor recoñecendo e valorando os hábitos e costumes saudables, tanto na vida cotiá como na práctica de actividade física."
+    },
+    {
+      "codigo": "7.4",
+      "competencia": "6",
+      "descripcion": "Comprender a biomecánica humana relacionándoa coas súas aplicacións."
+    },
+    {
+      "codigo": "7.5",
+      "competencia": "6",
+      "descripcion": "Describir as características da execución das accións motoras empregando os termos e elementos do movemento e relacionándoas coa finalidade expresiva das actividades artísticas."
+    },
+    {
+      "codigo": "8.1",
+      "competencia": "1",
+      "descripcion": "Recoñecer as características principais da motricidade humana pondo de manifesto o seu papel no desenvolvemento persoal e social."
+    },
+    {
+      "codigo": "8.2",
+      "competencia": "6",
+      "descripcion": "Comunicarse corporalmente adquirindo a conciencia do corpo e do espazo a través do movemento, da utilización de elementos rítmicos, obxectos e con focos expresivos."
+    },
+    {
+      "codigo": "8.3",
+      "competencia": "6",
+      "descripcion": "Identificar as diferentes formas de expresión corporal recoñecendo a capacidade do corpo para manifestarse cunha linguaxe propia como fonte de desenvolvemento creativo."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "Bloque 1. O traballo nas ciencias",
+      "titulo": "O traballo nas ciencias",
+      "items": [
+        "Metodoloxía científica de traballo na resolución de problemas sobre o funcionamento do corpo humano, a saúde, a motricidade e as actividades artísticas.",
+        "Estratexias para a elaboración de proxectos e de comunicación no proceso de aprendizaxe.",
+        "Formulación de hipóteses e preguntas.",
+        "Procura, recoñecemento e utilización de fontes fiables de información.",
+        "Comunicación de procesos e resultados con vocabulario científico a través de ferramentas dixitais e formatos de uso frecuente (presentación, gráfica, vídeo, póster, informe e outros).",
+        "Linguaxe científico: interpretación, produción e comunicación eficaz de información de carácter científico no contexto académico en diferentes formatos.",
+        "Espazos e recursos de aprendizaxe científica (como o laboratorio e os espazos virtuais): utilización adecuada, que asegure a conservación da saúde propia e a comunitaria, a seguridade e o respecto ao ambiente.",
+        "Valoración da ciencia e da actividade desenvolvida polas persoas que se dedican a ela e recoñecemento da súa contribución aos distintos ámbitos do saber humano e no avance e a mellora da sociedade. O papel das mulleres."
+      ],
+      "codigos_items": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4",
+        "1.5",
+        "1.6",
+        "1.7",
+        "1.8"
+      ]
+    },
+    {
+      "codigo": "2",
+      "bloque": "Bloque 2. A organización do corpo humano",
+      "titulo": "A organización do corpo humano",
+      "items": [
+        "Terminoloxía básica da anatomía humana.",
+        "Planos e cortes anatómicos. Posición e dirección.",
+        "Rexións e cavidades do corpo humano.",
+        "Niveis de organización do corpo humano.",
+        "As células",
+        "Os tecidos.",
+        "Os órganos, aparellos e sistemas.",
+        "Funcións vitais.",
+        "Os canons de beleza ao longo da historia."
+      ],
+      "codigos_items": [
+        "2.1",
+        "2.2",
+        "2.3",
+        "2.4",
+        "2.5",
+        "2.6",
+        "2.7",
+        "2.8",
+        "2.9"
+      ]
+    },
+    {
+      "codigo": "3",
+      "bloque": "Bloque 3. O aparello dixestivo e o metabolismo",
+      "titulo": "O aparello dixestivo e o metabolismo",
+      "items": [
+        "O aparello dixestivo.",
+        "Características xerais, estrutura anatómica e fisioloxía.",
+        "Alimentación e nutrición. Tipos de nutrientes e de alimentos.",
+        "Dieta equilibrada e a súa relación coa saúde. Balance enerxético.",
+        "Pautas saudables de alimentación en función da actividade realizada.",
+        "Trastornos do comportamento nutricional: dietas restritivas, anorexia e bulimia.",
+        "Factores sociais e derivados da propia actividade física e artística que conducen á aparición de distintos tipos de trastorno do comportamento nutricional.",
+        "Metabolismo humano.",
+        "Principais vías metabólicas de obtención de enerxía. Metabolismo aeróbico e anaeróbico.",
+        "Metabolismo enerxético e actividade física."
+      ],
+      "codigos_items": [
+        "3.1",
+        "3.2",
+        "3.3",
+        "3.4",
+        "3.5",
+        "3.6",
+        "3.7",
+        "3.8",
+        "3.9",
+        "3.10"
+      ]
+    },
+    {
+      "codigo": "4",
+      "bloque": "Bloque 4. O aparello circulatorio e o respiratorio",
+      "titulo": "O aparello circulatorio e o respiratorio",
+      "items": [
+        "O aparello circulatorio.",
+        "Características xerais, estrutura anatómica e fisioloxía.",
+        "A circulación.",
+        "Parámetros de saúde cardiovascular.",
+        "Enfermidades e hábitos saudables.",
+        "O aparello respiratorio.",
+        "Características xerais, estrutura anatómica e fisioloxía.",
+        "O proceso respiratorio.",
+        "Coordinación da respiración co movemento corporal e a súa intensidade.",
+        "Enfermidades e hábitos saudables.",
+        "O aparello fonador.",
+        "Características xerais, estrutura anatómica e fisioloxía.",
+        "Enfermidades e hábitos saudables."
+      ],
+      "codigos_items": [
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4",
+        "4.5",
+        "4.6",
+        "4.7",
+        "4.8",
+        "4.9",
+        "4.10",
+        "4.11",
+        "4.12",
+        "4.13"
+      ]
+    },
+    {
+      "codigo": "5",
+      "bloque": "Bloque 5. O aparello uroxenital",
+      "titulo": "O aparello uroxenital",
+      "items": [
+        "O aparello excretor.",
+        "Características xerais, estrutura anatómica e fisioloxía.",
+        "Enfermidades e hábitos saudables.",
+        "O aparello reprodutor.",
+        "Características xerais, estrutura anatómica e fisioloxía.",
+        "Enfermidades e hábitos saudables."
+      ],
+      "codigos_items": [
+        "5.1",
+        "5.2",
+        "5.3",
+        "5.4",
+        "5.5",
+        "5.6"
+      ]
+    },
+    {
+      "codigo": "6",
+      "bloque": "Bloque 6. Os sistemas de coordinación e de regulación",
+      "titulo": "Os sistemas de coordinación e de regulación",
+      "items": [
+        "O sistema nervioso.",
+        "Características xerais, estrutura anatómica e fisioloxía.",
+        "Os órganos sensoriais. Anatomía e fisioloxía.",
+        "Movementos reflexos e voluntarios.",
+        "Enfermidades e hábitos saudables.",
+        "Drogas legais e ilegais. Prevención e efectos sobre a saúde.",
+        "O sistema endócrino.",
+        "Características xerais, estrutura anatómica e fisioloxía.",
+        "A función hormonal.",
+        "Enfermidades e hábitos saudables."
+      ],
+      "codigos_items": [
+        "6.1",
+        "6.2",
+        "6.3",
+        "6.4",
+        "6.5",
+        "6.6",
+        "6.7",
+        "6.8",
+        "6.9",
+        "6.10"
+      ]
+    },
+    {
+      "codigo": "7",
+      "bloque": "Bloque 7. O aparello locomotor e o movemento",
+      "titulo": "O aparello locomotor e o movemento",
+      "items": [
+        "Aparello locomotor. Os músculos, os ósos e as articulacións.",
+        "Anatomía e fisioloxía.",
+        "Enfermidades e lesións do aparello locomotor.",
+        "Hábitos e costumes saudables. A hixiene postural.",
+        "Importancia do quecemento e da recuperación na práctica de actividade física",
+        "O movemento.",
+        "Termos e elementos do movemento.",
+        "Características da execución das accións motoras.",
+        "Biomecánica humana e as súas aplicacións.",
+        "O movemento como ferramenta artístico-expresiva."
+      ],
+      "codigos_items": [
+        "7.1",
+        "7.2",
+        "7.3",
+        "7.4",
+        "7.5",
+        "7.6",
+        "7.7",
+        "7.8",
+        "7.9",
+        "7.10"
+      ]
+    },
+    {
+      "codigo": "8",
+      "bloque": "Bloque 8. Expresión e comunicación corporal",
+      "titulo": "Expresión e comunicación corporal",
+      "items": [
+        "Características da motricidade humana. Achegas das actividades físicas e artísticas no desenvolvemento persoal e da sociedade.",
+        "Toma de conciencia do corpo e do espazo. Movemento e elementos rítmicos. Focos expresivos do corpo.",
+        "Formas de expresión corporal e fontes de desenvolvemento creativo.",
+        ".4 Orientacións pedagóxicas",
+        "intervención educativa na materia de Anatomía Aplicada desenvolverá o seu currículo e tratará",
+        "e asentar de xeito gradual e progresivo as aprendizaxes que lle faciliten ao alumnado o logro dos",
+        "bxectivos da materia e, en combinación co resto de materias, unha adecuada adquisición das",
+        "ompetencias clave e o logro dos obxectivos da etapa.",
+        "este sentido, no deseño das actividades, o profesorado terá que considerar a relación exis-",
+        "ente entre os obxectivos da materia e as competencias clave a través dos descritores operativos",
+        "das liñas de actuación no proceso de ensino e aprendizaxe, que se presentan nos apartados",
+        "eguintes, e seleccionar aqueles criterios de avaliación do currículo que se axusten á finalidade",
+        "uscada, así como empregalos para verificar as aprendizaxes do alumnado e o seu nivel de de-",
+        "empeño.",
+        "elación entre os obxectivos da materia de Anatomía Aplicada e as competencias clave a través",
+        "os descritores operativos establecidos no anexo I",
+        "bxectivos",
+        "a área",
+        "BX1",
+        "BX2",
+        "BX3",
+        "BX4",
+        "BX5",
+        "-2",
+        "iñas de actuación no proceso de ensino e aprendizaxe.",
+        "O entendemento da materia desde unha dobre perspectiva, teórica e práctica, promovendo no",
+        "lumnado o desexo de coñecer o seu propio funcionamento como ser vivo e a súa relación",
+        "irecta co contorno, así como os coñecementos xerais sobre o corpo humano que lle permitan",
+        "omprender o funcionamento do sistema intelecto-corpo que o constitúe.",
+        "A realización de proxectos significativos para o alumnado e a resolución colaborativa e coo-",
+        "erativa de problemas, que reforzan a autoestima, a autonomía, a reflexión e a responsabili-",
+        "ade.",
+        "A adquisición dos coñecementos da materia como vehículo para a súa aplicación na sociedade",
+        "como medio para gozar dos beneficios físicos e psíquicos que a práctica das actividades ar-",
+        "ísticas e a adquisición de hábitos saudables achega á sociedade.",
+        "A posta en práctica de situacións de aprendizaxe ou actividades competenciais que enfronte",
+        "alumnado ao reto de utilizar probas e argumentar nun contexto real mediante o diálogo",
+        "ntre iguais e que mobilice, de forma integrada, unha ampla variedade de coñecementos, des-",
+        "rezas e actitudes.",
+        "A énfase na atención á diversidade do alumnado, na atención individualizada, na prevención",
+        "as dificultades de aprendizaxe e na posta en práctica de mecanismos de reforzo tan pronto",
+        "omo se detecten estas dificultades.",
+        "O estímulo dunha avaliación autorreguladora, de forma continua ao longo de todo o proceso",
+        "e ensino e de aprendizaxe permitindo a modificación e a readaptación da dinámica e das ac-",
+        "ividades de aula en función das necesidades do alumnado e do contexto."
+      ],
+      "codigos_items": [
+        "8.1",
+        "8.2",
+        "8.3",
+        "8.4",
+        "8.5",
+        "8.6",
+        "8.7",
+        "8.8",
+        "8.9",
+        "8.10",
+        "8.11",
+        "8.12",
+        "8.13",
+        "8.14",
+        "8.15",
+        "8.16",
+        "8.17",
+        "8.18",
+        "8.19",
+        "8.20",
+        "8.21",
+        "8.22",
+        "8.23",
+        "8.24",
+        "8.25",
+        "8.26",
+        "8.27",
+        "8.28",
+        "8.29",
+        "8.30",
+        "8.31",
+        "8.32",
+        "8.33",
+        "8.34",
+        "8.35",
+        "8.36",
+        "8.37",
+        "8.38",
+        "8.39",
+        "8.40",
+        "8.41",
+        "8.42",
+        "8.43",
+        "8.44",
+        "8.45"
+      ]
+    }
+  ],
+  "comunidad": "galicia",
+  "idioma": "gl"
+}

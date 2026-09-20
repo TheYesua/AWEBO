@@ -1,0 +1,645 @@
+{
+  "materia_oficial": "Xeoloxía e Ciencias Ambientais",
+  "materia": "Xeoloxía e Ciencias Ambientais",
+  "etapa": "Bachillerato",
+  "ciclo": "2º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Interpretar e transmitir con precisión información e datos extraídos de traballos científicos para analizar conceptos, procesos, métodos, experimentos ou resultados relacionados coas ciencias xeolóxicas e ambientais.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Localizar e utilizar fontes fiables identificando, seleccionando e organizando información, avaliándoa criticamente e contrastando a súa veracidade, para resolver preguntas expostas de forma autónoma e crear contidos relacionados coas ciencias xeolóxicas e ambientais.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Analizar criticamente resultados de traballos de investigación ou divulgación relacionados coas ciencias xeolóxicas e ambientais comprobando se seguen correctamente os pasos dos métodos científicos para avaliar a fiabilidade das súas conclusións.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Expor e resolver problemas buscando e utilizando as estratexias adecuadas, analizando criticamente as solucións e reformulando o procedemento se fose necesario, para explicar fenómenos relacionados coas ciencias xeolóxicas e ambientais.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Analizar os impactos de determinadas accións sobre o ambiente ou a dispoñibilidade de recursos a través de observacións de campo e de información en diferentes formatos e baseándose en fundamentos científicos para promover e adoptar estilos de vida compatibles co desenvolvemento sustentable.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Identificar e analizar os elementos xeolóxicos do relevo a partir de observacións de campo ou de información en diferentes formatos para explicar fenómenos, reconstruír a historia xeolóxica, facer predicións e identificar posibles riscos xeolóxicos dunha zona determinada.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Analizar criticamente conceptos e procesos relacionados cos saberes da xeoloxía e das ciencias ambientais seleccionando e interpretando información en diversos formatos, como mapas (topográficos, hidrográficos, hidroxeolóxicos, xeolóxicos, de vexetación...), cortes, modelos, diagramas de fluxo ou outros."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Comunicar informacións ou opinións razoadas relacionadas cos saberes da xeoloxía e das ciencias ambientais, transmitíndoas de forma clara e rigorosa e utilizando o vocabulario e os formatos adecuados, como mapas (topográficos, hidrográficos, hidroxeolóxicos, xeolóxicos, de vexetación...), cortes, modelos, diagramas de fluxo ou outros, e respondendo con precisión as cuestións que poidan xurdir durante a exposición."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Realizar discusións científicas sobre aspectos relacionados cos saberes da xeoloxía e das ciencias ambientais, considerando os puntos fortes e débiles de diferentes posturas de forma razoada e con actitude receptiva e respectuosa ante a opinión dos demais."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "2",
+      "descripcion": "Expor e resolver cuestións e crear contidos relacionados cos saberes da xeoloxía e das ciencias ambientais localizando e citando fontes de forma adecuada, seleccionando, organizando e analizando criticamente a información."
+    },
+    {
+      "codigo": "1.5",
+      "competencia": "2",
+      "descripcion": "Contrastar e xustificar a veracidade de información relacionada cos saberes da xeoloxía e das ciencias ambientais utilizando fontes fiables, achegando datos e adoptando unha actitude crítica e escéptica cara a informacións sen unha base científica, como pseudociencias, teorías conspiradoras, crenzas infundadas, noticias falsas..."
+    },
+    {
+      "codigo": "1.6",
+      "competencia": "3",
+      "descripcion": "Avaliar a fiabilidade das conclusións dun traballo de investigación ou divulgación científica relacionado cos saberes da xeoloxía e das ciencias ambientais de acordo coa interpretación dos resultados obtidos."
+    },
+    {
+      "codigo": "1.7",
+      "competencia": "6",
+      "descripcion": "Deducir e explicar a historia xeolóxica dunha área determinada identificando e analizando os seus elementos xeolóxicos a partir de información en diferentes formatos (fotografías, cortes, mapas xeolóxicos...) e empregando os principios xeolóxicos básicos, a escala de tempo xeolóxico, descontinuidades estratigráficas e o contido paleontolóxico."
+    },
+    {
+      "codigo": "1.8",
+      "competencia": "3",
+      "descripcion": "Argumentar, utilizando exemplos concretos, sobre a contribución da ciencia á sociedade e o labor das persoas dedicadas a ela, destacando o papel das mulleres e entendendo a investigación como un labor colectivo e interdisciplinar en constante evolución influída polo contexto político e social e polos recursos económicos."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Describir a estrutura interna da Terra interpretando e contrastando a información que achegan os diferentes métodos de estudo."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "3",
+      "descripcion": "Valorar os avances tecnolóxicos e científicos que permitiron chegar á teoría da tectónica de placas integrando as probas que a avalan."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "1",
+      "descripcion": "Explicar as principais estruturas xeolóxicas derivadas da tectónica de placas relacionándoas cos bordos e zonas de intraplaca e as causas que explican o movemento."
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "1",
+      "descripcion": "Recoñecer a influencia do ciclo de Wilson sobre a disposición dos continentes e os principais episodios oroxénicos a través de mapas xeolóxicos, modelos ou figuras."
+    },
+    {
+      "codigo": "2.5",
+      "competencia": "1",
+      "descripcion": "Clasificar pregamentos e fallas identificando os seus elementos xeométricos e a relación entre o esforzo e a deformación que os producen."
+    },
+    {
+      "codigo": "2.6",
+      "competencia": "6",
+      "descripcion": "Realizar predicións sobre riscos xeolóxicos internos nunha área determinada analizando a influencia de diferentes factores sobre eles e propor accións para previr ou minimizar os seus posibles efectos negativos."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "1",
+      "descripcion": "Comprender os diferentes tipos de meteorización analizando a influencia dos factores condicionantes."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "1",
+      "descripcion": "Describir os procesos edafoxenéticos identificando as características dos solos."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "2",
+      "descripcion": "Recoñecer os solos de Galicia seleccionando e interpretando información en ferramentas dixitais, mapas e imaxes."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "1",
+      "descripcion": "Explicar a acción xeomorfolóxica dos axentes xeolóxicos externos a través dos mecanismos de erosión, transporte e sedimentación que xera cada un deles."
+    },
+    {
+      "codigo": "3.5",
+      "competencia": "6",
+      "descripcion": "Comprender a modelaxe do relevo identificando os factores condicionantes, procesos e formas xeomorfolóxicas características de cada medio."
+    },
+    {
+      "codigo": "3.6",
+      "competencia": "2",
+      "descripcion": "Investigar sobre a xeomorfoloxía de Galicia relacionando os axentes xeolóxicos e a modelaxe do relevo próximo."
+    },
+    {
+      "codigo": "3.7",
+      "competencia": "6",
+      "descripcion": "Realizar predicións sobre riscos xeolóxicos externos nunha área determinada analizando a influencia de diferentes factores sobre eles e propor accións para previr ou minimizar os seus posibles efectos negativos."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "1",
+      "descripcion": "Recoñecer a materia mineral analizando as características xerais dos minerais."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "1",
+      "descripcion": "Diferenciar a materia cristalina da materia amorfa, comprendendo o proceso de cristalización e os principios básicos da cristalografía."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "1",
+      "descripcion": "Clasificar e identificar os principais minerais empregando un criterio químico-estrutural e as súas propiedades."
+    },
+    {
+      "codigo": "4.4",
+      "competencia": "4",
+      "descripcion": "Explicar fenómenos relacionados cos saberes da mineraloxía a través da formulación e resolución de problemas buscando e utilizando as estratexias e recursos adecuados (diagramas, modelos, figuras...)."
+    },
+    {
+      "codigo": "4.5",
+      "competencia": "4",
+      "descripcion": "Analizar criticamente a solución a un problema relacionado cos saberes da mineraloxía e reformular os procedementos utilizados ou conclusións se a devandita solución non fose viable ou ante novos datos achegados ou atopados con posterioridade."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "1",
+      "descripcion": "Comprender a orixe das rochas ígneas a través dos procesos magmáticos."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "1",
+      "descripcion": "Describir a formación das rochas metamórficas recoñecendo os principios do metamorfismo."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "1",
+      "descripcion": "Explicar a orixe das rochas sedimentarias relacionando os procesos e os ambientes sedimentarios."
+    },
+    {
+      "codigo": "5.4",
+      "competencia": "1",
+      "descripcion": "Clasificar as rochas ígneas, metamórficas e sedimentarias empregando criterios químicos, mineralóxicos, estruturais e/ou composicionais."
+    },
+    {
+      "codigo": "5.5",
+      "competencia": "1",
+      "descripcion": "Identificar a través de diferentes métodos as principais rochas mediante a súa mineraloxía, textura e orixe."
+    },
+    {
+      "codigo": "5.6",
+      "competencia": "4",
+      "descripcion": "Explicar fenómenos relacionados cos saberes da petroloxía a través da formulación e resolución de problemas buscando e utilizando as estratexias e os recursos adecuados (diagramas, modelos, figuras...)."
+    },
+    {
+      "codigo": "5.7",
+      "competencia": "4",
+      "descripcion": "Analizar criticamente a solución a un problema relacionado cos saberes da petroloxía e reformular os procedementos utilizados ou conclusións se a devandita solución non fose viable ou ante novos datos achegados ou atopados con posterioridade."
+    },
+    {
+      "codigo": "5.8",
+      "competencia": "1",
+      "descripcion": "Describir a formación e a evolución das rochas relacionando o magmatismo, o metamorfismo e a sedimentación coa teoría da tectónica de placas."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "1",
+      "descripcion": "Identificar a composición, estrutura e funcións da atmosfera e da hidrosfera relacionándoas coa súa importancia para a orixe e a evolución da vida."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "1",
+      "descripcion": "Explicar a dinámica da atmosfera e da hidrosfera a través de figuras e/ou diagramas."
+    },
+    {
+      "codigo": "6.3",
+      "competencia": "1",
+      "descripcion": "Recoñecer a distribución da auga na Terra relacionándoa co ciclo hidrolóxico."
+    },
+    {
+      "codigo": "6.4",
+      "competencia": "2",
+      "descripcion": "Analizar os principais procesos de contaminación do aire e da auga describindo as súas causas e as súas consecuencias sobre o ambiente."
+    },
+    {
+      "codigo": "6.5",
+      "competencia": "1",
+      "descripcion": "Comprender a dinámica hídrica das augas subterráneas analizando a hidroxeoloxía dos acuíferos e describindo os impactos do seu uso e a explotación sustentable."
+    },
+    {
+      "codigo": "6.6",
+      "competencia": "3",
+      "descripcion": "Argumentar que os avances científicos e tecnolóxicos permiten mellorar a calidade do aire e da auga."
+    },
+    {
+      "codigo": "6.7",
+      "competencia": "5",
+      "descripcion": "Relacionar o impacto da explotación de determinados recursos coa deterioración ambiental argumentando sobre a importancia do seu consumo e o aproveitamento responsable."
+    },
+    {
+      "codigo": "7.1",
+      "competencia": "5",
+      "descripcion": "Recoñecer a utilidade que teñen os recursos xeolóxicos a través das súas aplicacións na vida cotiá."
+    },
+    {
+      "codigo": "7.2",
+      "competencia": "2",
+      "descripcion": "Investigar os recursos xeolóxicos de Galicia relacionando os minerais e as rochas do territorio co seu interese económico e empregando ferramentas dixitais ou outras fontes."
+    },
+    {
+      "codigo": "7.3",
+      "competencia": "5",
+      "descripcion": "Describir a importancia dos recursos hídricos valorando a súa explotación, tratamento eficaz e xestión sustentable."
+    },
+    {
+      "codigo": "7.4",
+      "competencia": "1",
+      "descripcion": "Identificar os recursos da biosfera relacionándoos coas súas aplicacións na vida cotiá."
+    },
+    {
+      "codigo": "7.5",
+      "competencia": "5",
+      "descripcion": "Promover e adoptar hábitos de vida sustentables a partir da análise dos diferentes tipos de recursos xeolóxicos e da biosfera analizando e valorando os seus posibles usos."
+    },
+    {
+      "codigo": "7.6",
+      "competencia": "5",
+      "descripcion": "Relacionar o impacto da explotación de determinados recursos coa deterioración ambiental e social argumentando sobre a importancia da súa extracción, uso e aproveitamento responsables."
+    },
+    {
+      "codigo": "7.7",
+      "competencia": "5",
+      "descripcion": "Argumentar a importancia da prevención e xestión dos residuos valorando a súa diminución, valorización, transformación e eliminación e recoñecendo as limitacións do ambiente como o seu sumidoiro natural."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "Bloque 1. Experimentación en Xeoloxía e Ciencias Ambientais",
+      "titulo": "Experimentación en Xeoloxía e Ciencias Ambientais",
+      "items": [
+        "A evolución histórica do saber científico: o avance da xeoloxía e as ciencias ambientais como labor colectivo, interdisciplinar e en continua construción.",
+        "O traballo xeolóxico e ambiental.",
+        "Instrumentos para a utilización no campo e no laboratorio. Novas tecnoloxías na investigación xeolóxica e ambiental.",
+        "Fontes de información xeolóxica e ambiental (mapas, cortes, fotografías aéreas, textos, posicionamento e imaxes de satélite, diagramas de fluxo...): procura, recoñecemento, utilización e interpretación.",
+        "Ferramentas de representación da información xeolóxica e ambiental: columna estratigráfica, corte, mapa, diagrama de fluxo...",
+        "Procura de información en institucións científicas: ferramentas dixitais, formatos de presentación de procesos, resultados e ideas.",
+        "O patrimonio xeolóxico e ambiental en España e en Galicia: valoración da súa importancia e da conservación da xeodiversidade.",
+        "O labor científico e as persoas dedicadas á ciencia: contribución ao desenvolvemento da xeoloxía e das ciencias ambientais e importancia social. O papel das mulleres."
+      ],
+      "codigos_items": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4",
+        "1.5",
+        "1.6",
+        "1.7",
+        "1.8"
+      ]
+    },
+    {
+      "codigo": "2",
+      "bloque": "Bloque 2. A tectónica de placas e xeodinámica interna",
+      "titulo": "A tectónica de placas e xeodinámica interna",
+      "items": [
+        "A estrutura interna da Terra.",
+        "Métodos de estudo directos e indirectos.",
+        "Estrutura interna da Terra: modelos xeoquímico e dinámico.",
+        "A teoría da tectónica de placas.",
+        "Da deriva continental á tectónica de placas. Distribución da sismicidade e do vulcanismo na Terra, paleomagnetismo e expansión do fondo oceánico.",
+        "A litosfera. Distribución e movemento das placas tectónicas.",
+        "Bordos construtivos. Rifts continentais. As dorsais. Estrutura e orixe da litosfera oceánica.",
+        "Bordos destrutivos. Zonas de subdución, foxas oceánicas, prisma de acreción, arcos insulares, bacías sedimentarias, oróxenos de tipo andino e de colisión.",
+        "Bordos transformantes.",
+        "Procesos xeolóxicos nas zonas de intraplaca. Os puntos quentes.",
+        "Convección e dinámica terrestre. Modelos que explican o movemento.",
+        "O ciclo de Wilson: influencia na disposición dos continentes e nos principais episodios oroxénicos.",
+        "As deformacións das rochas: elásticas, plásticas e fráxiles. Relación coas forzas que actúan sobre elas e con outros factores.",
+        "Elementos xeométricos e clasificación de pregamentos e fallas. Cabalgamentos e mantos de corremento.",
+        "Os riscos xeolóxicos internos e a súa relación coas actividades humanas.",
+        "Volcáns, terremotos e diápiros.",
+        "Medidas de predición, prevención e corrección. A rede de vixilancia sísmica e volcánica."
+      ],
+      "codigos_items": [
+        "2.1",
+        "2.2",
+        "2.3",
+        "2.4",
+        "2.5",
+        "2.6",
+        "2.7",
+        "2.8",
+        "2.9",
+        "2.10",
+        "2.11",
+        "2.12",
+        "2.13",
+        "2.14",
+        "2.15",
+        "2.16",
+        "2.17"
+      ]
+    },
+    {
+      "codigo": "3",
+      "bloque": "Bloque 3. Procesos xeolóxicos externos",
+      "titulo": "Procesos xeolóxicos externos",
+      "items": [
+        "A meteorización.",
+        "Tipos.",
+        "Os factores condicionantes.",
+        "Edafoloxía.",
+        "Factores que inflúen na formación e na evolución dun solo.",
+        "Compoñentes, horizontes, perfil e propiedades dos solos.",
+        "Solos característicos en Galicia.",
+        "A erosión, mecanismos de transporte e sedimentación.",
+        "A acción xeomorfolóxica dos axentes xeolóxicos externos.",
+        "A modelaxe do relevo.",
+        "Factores condicionantes.",
+        "Xeomorfoloxía glaciar e periglaciar, fluvial, árida e litoral.",
+        "Relevos litolóxicos e estruturais.",
+        "Xeomorfoloxía de Galicia.",
+        "Os riscos xeolóxicos externos e a súa relación coas actividades humanas.",
+        "Movementos de ladeira, inundacións, subsidencias e colapsos.",
+        "Medidas de predición, prevención e corrección."
+      ],
+      "codigos_items": [
+        "3.1",
+        "3.2",
+        "3.3",
+        "3.4",
+        "3.5",
+        "3.6",
+        "3.7",
+        "3.8",
+        "3.9",
+        "3.10",
+        "3.11",
+        "3.12",
+        "3.13",
+        "3.14",
+        "3.15",
+        "3.16",
+        "3.17"
+      ]
+    },
+    {
+      "codigo": "4",
+      "bloque": "Bloque 4. Mineraloxía",
+      "titulo": "Mineraloxía",
+      "items": [
+        "Características xerais dos minerais.",
+        "Cristalografía.",
+        "Diferenza entre a materia cristalina e a materia amorfa. A cristalización.",
+        "Os elementos e as operacións de simetría.",
+        "Os sistemas cristalinos e as redes espaciais. As maclas.",
+        "As propiedades físicas dos minerais.",
+        "Clasificación químico-estrutural dos minerais: relación coas súas propiedades.",
+        "Diagramas de estabilidade mineral ou de fases dun ou dous compoñentes: condicións de formación e transformación de minerais.",
+        "Polimorfismo e isomorfismo.",
+        "Identificación dos minerais polas súas propiedades físicas: ferramentas de identificación (guías, claves, instrumentos, recursos tecnolóxicos...)."
+      ],
+      "codigos_items": [
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4",
+        "4.5",
+        "4.6",
+        "4.7",
+        "4.8",
+        "4.9",
+        "4.10"
+      ]
+    },
+    {
+      "codigo": "5",
+      "bloque": "Bloque 5. Petroloxía",
+      "titulo": "Petroloxía",
+      "items": [
+        "Características xerais das rochas.",
+        "Magmatismo e rochas ígneas.",
+        "Composición, propiedades, orixe e evolución do magma.",
+        "Principais tipos de texturas.",
+        "Clasificación das rochas ígneas: criterio químico e IUGS modal.",
+        "Estruturas de localización das rochas intrusivas.",
+        "Os produtos volcánicos.",
+        "Tipos de erupcións e de aparatos volcánicos.",
+        "Relación entre o magmatismo e a tectónica de placas.",
+        "Metamorfismo e rochas metamórficas.",
+        "Os límites e factores do metamorfismo.",
+        "Tipos de metamorfismo: rexional, de contacto e dinámico.",
+        "Minerais índice, grao e facies metamórficas.",
+        "Principais tipos de texturas.",
+        "Clasificación das rochas metamórficas: foliadas e non foliadas. Protolito, textura, mineraloxía e tipo de metamorfismo en que se forman.",
+        "Relación entre o metamorfismo e a tectónica de placas.",
+        "Sedimentación e rochas sedimentarias.",
+        "Tipos de sedimentación e de sedimentos. A estratificación.",
+        "Etapas e procesos da diaxénese.",
+        "Características básicas dos medios sedimentarios e principais estruturas sedimentarias.",
+        "Principais tipos de texturas.",
+        "Clasificación das rochas sedimentarias: detríticas, bioquímicas e químicas.",
+        "A formación do carbón, do petróleo e do gas natural.",
+        "Relación entre os procesos sedimentarios e a tectónica de placas.",
+        "Identificación das rochas polas súas características: ferramentas de identificación (guías, claves, instrumentos, recursos tecnolóxicos...)."
+      ],
+      "codigos_items": [
+        "5.1",
+        "5.2",
+        "5.3",
+        "5.4",
+        "5.5",
+        "5.6",
+        "5.7",
+        "5.8",
+        "5.9",
+        "5.10",
+        "5.11",
+        "5.12",
+        "5.13",
+        "5.14",
+        "5.15",
+        "5.16",
+        "5.17",
+        "5.18",
+        "5.19",
+        "5.20",
+        "5.21",
+        "5.22",
+        "5.23",
+        "5.24",
+        "5.25"
+      ]
+    },
+    {
+      "codigo": "6",
+      "bloque": "Bloque 6. As capas fluídas da Terra",
+      "titulo": "As capas fluídas da Terra",
+      "items": [
+        "A atmosfera.",
+        "Composición e estrutura.",
+        "Os movementos de convección e dinámica global.",
+        "Funcións e importancia para os seres vivos.",
+        "A hidrosfera.",
+        "O ciclo hidrolóxico e a distribución da auga na Terra.",
+        "As correntes oceánicas superficiais e profundas.",
+        "Funcións e importancia para os seres vivos.",
+        "Contaminación atmosférica e hídrica.",
+        "As fontes e os tipos de contaminantes do aire e da auga.",
+        "Causas e efectos dalgúns procesos: smog, chuvia ácida, burato da capa de ozono, cambio climático, eutrofización e contaminación e sobreexplotación de acuíferos."
+      ],
+      "codigos_items": [
+        "6.1",
+        "6.2",
+        "6.3",
+        "6.4",
+        "6.5",
+        "6.6",
+        "6.7",
+        "6.8",
+        "6.9",
+        "6.10",
+        "6.11"
+      ]
+    },
+    {
+      "codigo": "7",
+      "bloque": "Bloque 7. Os recursos e a súa xestión sustentable",
+      "titulo": "Os recursos e a súa xestión sustentable",
+      "items": [
+        "Os recursos xeolóxicos e as súas aplicacións na vida cotiá.",
+        "Recurso, xacemento, reserva, lei, minerario e ganga.",
+        "Minerais metálicos e non metálicos. As rochas industriais e ornamentais.",
+        "Recursos enerxéticos: carbón, petróleo, gas natural e uranio.",
+        "explotación de rochas, minerais e recursos enerxéticos da xeosfera: tipos e avaliación do seu impacto am-",
+        "iental.",
+        "s recursos xeolóxicos en Galicia.",
+        "Os recursos hídricos: abundancia relativa, explotación, usos e importancia do tratamento eficaz das augas para a",
+        "úa xestión sustentable.",
+        "Os recursos da biosfera e as súas aplicacións da vida cotiá: o solo, recursos forestais, agrícolas e gandeiros.",
+        "Os impactos ambientais e sociais da explotación dos recursos.",
+        "mportancia da súa extracción, do seu uso e do seu consumo responsables, de acordo coa súa taxa de renovación",
+        "interese económico e coa capacidade de absorción e xestión sustentable dos seus residuos.",
+        "edidas preventivas, correctoras e compensatorias.",
+        "Os residuos.",
+        "oncepto e diferentes criterios de clasificación.",
+        "revención e xestión: importancia e obxectivos (diminución, valorización, transformación e eliminación).",
+        "medio ambiente como sumidoiro natural de residuos e as súas limitacións.",
+        ".4 Orientacións pedagóxicas",
+        "intervención educativa na materia de Xeoloxía e Ciencias Ambientais desenvolverá o seu",
+        "urrículo e tratará de asentar de xeito gradual e progresivo as aprendizaxes que lle faciliten ao",
+        "lumnado o logro dos obxectivos da materia e, en combinación co resto das materias, unha ade-",
+        "uada adquisición das competencias clave e o logro dos obxectivos da etapa.",
+        "este sentido, no deseño das actividades, o profesorado terá que considerar a relación exis-",
+        "ente entre os obxectivos da materia e as competencias clave a través dos descritores operativos",
+        "as liñas de actuación no proceso de ensino e aprendizaxe que se presentan nos apartados se-",
+        "uintes e seleccionar aqueles criterios de avaliación do currículo que se axusten á finalidade bus-",
+        "ada, así como empregalos para verificar as aprendizaxes do alumnado e o seu nivel de desem-",
+        "eño.",
+        "elación entre os obxectivos da materia de Xeoloxía e Ciencias Ambientais e as competencias",
+        "lave a través dos descritores operativos establecidos no anexo I",
+        "bxectivos",
+        "a materia",
+        "BX1",
+        "BX2",
+        "BX3",
+        "BX4",
+        "BX5",
+        "BX6",
+        "iñas de actuación no proceso de ensino e aprendizaxe.",
+        "Un enfoque de traballo eminentemente práctico e conectado coa realidade, buscando a inter-",
+        "isciplinariedade, potenciando a participación en iniciativas relacionadas coa sustentabilidade",
+        "sempre tendo como horizonte o desenvolvemento das oito competencias clave.",
+        "A posta en práctica de situacións de aprendizaxe ou actividades competenciais baseadas en",
+        "ituacións reais e que busquen que o alumnado mobilice de forma integrada unha ampla va-",
+        "iedade de coñecementos, destrezas e actitudes.",
+        "O uso de distintos métodos que teñan en conta os diferentes ritmos de aprendizaxe do alum-",
+        "ado, favorezan a capacidade de aprender por si mesmo e promovan o traballo en equipo.",
+        "A énfase na atención á diversidade do alumnado, na atención individualizada, na prevención",
+        "as dificultades de aprendizaxe e na posta en práctica de mecanismos de reforzo tan pronto",
+        "omo se detecten estas dificultades.",
+        "O uso de estratexias para traballar transversalmente a comprensión lectora, a expresión oral",
+        "escrita, a comunicación audiovisual, a competencia dixital e o fomento da creatividade, do",
+        "spírito científico e do emprendemento.",
+        "O deseño de experiencias de laboratorio e o traballo de campo, promovendo a observación,",
+        "uriosidade e colaboración para lle permitir ao alumnado asimilar de xeito significativo os sa-",
+        "eres da materia e conectalos coa realidade.",
+        "A utilización de fontes de información científica variadas e fiables, e unha comunicación que",
+        "mpregue diferentes recursos, incluídos os dixitais."
+      ],
+      "codigos_items": [
+        "7.1",
+        "7.2",
+        "7.3",
+        "7.4",
+        "7.5",
+        "7.6",
+        "7.7",
+        "7.8",
+        "7.9",
+        "7.10",
+        "7.11",
+        "7.12",
+        "7.13",
+        "7.14",
+        "7.15",
+        "7.16",
+        "7.17",
+        "7.18",
+        "7.19",
+        "7.20",
+        "7.21",
+        "7.22",
+        "7.23",
+        "7.24",
+        "7.25",
+        "7.26",
+        "7.27",
+        "7.28",
+        "7.29",
+        "7.30",
+        "7.31",
+        "7.32",
+        "7.33",
+        "7.34",
+        "7.35",
+        "7.36",
+        "7.37",
+        "7.38",
+        "7.39",
+        "7.40",
+        "7.41",
+        "7.42",
+        "7.43",
+        "7.44",
+        "7.45",
+        "7.46",
+        "7.47",
+        "7.48",
+        "7.49",
+        "7.50",
+        "7.51",
+        "7.52",
+        "7.53",
+        "7.54",
+        "7.55",
+        "7.56",
+        "7.57",
+        "7.58",
+        "7.59"
+      ]
+    }
+  ],
+  "comunidad": "galicia",
+  "idioma": "gl"
+}

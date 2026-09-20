@@ -1,0 +1,423 @@
+{
+  "materia_oficial": "Latín",
+  "materia": "Latín",
+  "etapa": "Bachillerato",
+  "ciclo": "2º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Comprender e/ou producir textos latinos de dificultade crecente e xustificar a súa comprensión e/ou produción, identificando e analizando os aspectos básicos da lingua latina, en sentido amplo, as súas unidades lingüísticas, e reflexionando sobre elas mediante a comparación coas linguas de ensino e con outras linguas do repertorio individual do alumnado, e poñendo en práctica, se se considera oportuno, habilidades comunicativas tanto orais como escritas, para realizar unha lectura comprensiva, directa e eficaz e unha interpretación razoada do seu contido e, de ser o caso, unha produción oral e/ou escrita correcta.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Distinguir os formantes latinos e explicar os cambios que tivesen lugar ao longo do tempo, comparándoos cos das linguas de ensino e outras linguas do repertorio individual do alumnado, para deducir o significado etimolóxico do léxico coñecido e os significados de léxico novo ou especializado.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Ler, interpretar e comentar textos latinos de diferentes xéneros e épocas, asumindo o proceso creativo como complexo e inseparable do contexto histórico, social e político e das súas influencias artísticas, para identificar a súa xenealoxía e a súa achega á literatura europea.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Analizar as características da civilización latina no ámbito persoal, relixioso e sociopolítico, adquirindo coñecementos sobre o mundo romano e comparando criticamente o presente e o pasado, para valorar as achegas do mundo clásico latino á nosa contorna como base dunha cidadanía democrática e comprometida.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Valorar criticamente o patrimonio histórico, arqueolóxico, artístico e cultural herdado da civilización latina, interesándose pola súa sustentabilidade e recoñecéndoo como produto da creación humana e como testemuño da historia, para explicar o legado material e inmaterial latino como transmisor de coñecemento e fonte de inspiración de creacións modernas e contemporáneas.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Realizar traducións directas e/ou inversas de textos ou fragmentos adaptados ou orixinais, de dificultade adecuada e progresiva, con corrección ortográfica e expresiva, identificando e analizando, cando se considere necesario, unidades lingüísticas regulares da lingua e apreciando variantes e coincidencias con outras linguas coñecidas."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Seleccionar o significado apropiado de palabras polisémicas e xustificar a decisión, tendo en conta a información cotextual ou contextual e utilizando ferramentas diversas de apoio ao proceso de tradución en distintos soportes cando se considere necesario."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Revisar e emendar as propias traducións e as das compañeiras e compañeiros, realizando propostas de mellora e argumentando os cambios con terminoloxía especializada a partir da reflexión lingüística."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "1",
+      "descripcion": "Realizar a lectura directa de textos latinos de dificultade adecuada identificando as unidades lingüísticas máis frecuentes da lingua latina, comparándoas coas das linguas do repertorio lingüístico propio e asimilando os aspectos morfolóxicos, sintácticos e léxicos elementais do latín."
+    },
+    {
+      "codigo": "1.5",
+      "competencia": "1",
+      "descripcion": "Rexistrar os progresos e dificultades de aprendizaxe da lingua latina, seleccionando as estratexias máis adecuadas e eficaces para superar esas dificultades e consolidar a súa aprendizaxe, realizando actividades de planificación da propia aprendizaxe, autoavaliación e coavaliación."
+    },
+    {
+      "codigo": "1.6",
+      "competencia": "1",
+      "descripcion": "Extraer, analizar e reflectir oralmente ou, preferentemente, por escrito e, de poder ser, en latín, mediante paráfrases simples, as ideas principais dos textos obxecto de traballo."
+    },
+    {
+      "codigo": "1.7",
+      "competencia": "1",
+      "descripcion": "Planificar e participar, cando se considere necesario, en diálogos breves e sinxelos sobre os contidos dos textos obxecto de traballo, coa finalidade de facilitar a súa comprensión integral."
+    },
+    {
+      "codigo": "1.8",
+      "competencia": "2",
+      "descripcion": "Explicar cambios fonéticos, morfolóxicos ou semánticos de complexidade crecente que se produciron tanto desde o latín culto como desde o latín vulgar ata a lingua de ensino, servíndose cando sexa posible da comparación con outras linguas do repertorio propio."
+    },
+    {
+      "codigo": "1.9",
+      "competencia": "3",
+      "descripcion": "Analizar, interpretar e comentar textos e fragmentos literarios de diversa índole de crecente complexidade, aplicando estratexias de análise e reflexión que impliquen mobilizar a propia experiencia, comprender o mundo e a condición humana e desenvolver a sensibilidade estética e o hábito lector."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Deducir o significado etimolóxico dun termo de uso común e inferir o significado de termos de nova aparición ou procedentes de léxico especializado aplicando estratexias de recoñecemento de formantes latinos atendendo aos cambios fonéticos, morfolóxicos ou semánticos que teñan lugar."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Explicar cambios fonéticos, morfolóxicos ou semánticos de complexidade crecente que se produciron tanto desde o latín culto como desde o latín vulgar ata as linguas de ensino, servíndose cando sexa posible da comparación con outras linguas do seu repertorio propio."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Explicar a relación do latín coas linguas modernas, analizando os elementos lingüísticos comúns de orixe latina e utilizando estratexias e coñecementos das linguas e linguaxes que conforman o repertorio do alumnado."
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "2",
+      "descripcion": "Analizar criticamente prexuízos e estereotipos lingüísticos adoptando unha actitude de respecto e valoración da diversidade como riqueza cultural, lingüística e dialectal, a partir de criterios dados."
+    },
+    {
+      "codigo": "2.5",
+      "competencia": "3",
+      "descripcion": "Crear textos individuais ou colectivos con intención literaria e conciencia de estilo, en distintos soportes e con axuda doutras linguaxes artísticas e audiovisuais, a partir da lectura de obras ou fragmentos significativos en que se partise da civilización e cultura latinas como fonte de inspiración."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Interpretar e comentar textos e fragmentos literarios de diversa índole de crecente complexidade, aplicando estratexias de análise e reflexión que impliquen espertar o espírito crítico, mobilizar a propia experiencia, comprender o mundo e a condición humana e desenvolver a sensibilidade estética e o hábito lector."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Analizar e explicar os xéneros, temas, tópicos e valores éticos ou estéticos de obras ou fragmentos literarios latinos comparándoos con obras ou fragmentos literarios posteriores, desde un enfoque intertextual."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Identificar e definir palabras latinas que designan conceptos fundamentais para o estudo e comprensión da civilización latina e cuxa aprendizaxe combina coñecementos léxicos e culturais, en textos de diferentes formatos."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "4",
+      "descripcion": "Investigar aspectos do legado da civilización latina no ámbito persoal, relixioso e sociopolítico localizando, seleccionando, contrastando e reelaborando información procedente de diferentes fontes, calibrando a súa fiabilidade e pertinencia, e respectando os principios de rigor e propiedade intelectual."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Investigar aspectos do legado da civilización latina no ámbito persoal, relixioso e sociopolítico localizando, seleccionando, contrastando e reelaborando información procedente de diferentes fontes, calibrando a súa fiabilidade e pertinencia e respectando os principios de rigor e propiedade intelectual."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "5",
+      "descripcion": "Identificar e explicar o legado material e inmaterial da civilización latina como fonte de inspiración, analizando producións culturais e artísticas posteriores."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "5",
+      "descripcion": "Investigar o patrimonio histórico, arqueolóxico, artístico e cultural herdado da civilización latina, actuando de forma adecuada, empática e respectuosa e interesándose polos procesos de construción, preservación, conservación e restauración e por aquelas actitudes cívicas que aseguran a súa sustentabilidade."
+    },
+    {
+      "codigo": "4.4",
+      "competencia": "5",
+      "descripcion": "Explorar as pegadas da romanización e o legado romano na contorna do alumnado aplicando os coñecementos adquiridos e reflexionando sobre as implicacións dos seus distintos usos, dando exemplos da persistencia da Antigüidade clásica na súa vida cotiá e presentando os seus resultados a través de diferentes soportes."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "Bloque 1. Comprensión e interpretación dos textos",
+      "titulo": "Comprensión e interpretación dos textos",
+      "items": [
+        "Unidades lingüísticas da lingua latina.",
+        "Concepto de lingua flexiva: flexión nominal e pronominal (sistema casual e declinacións), flexión verbal (sistema de conxugacións).",
+        "Sintaxe oracional: funcións e sintaxe dos casos.",
+        "Estruturas oracionais. A concordancia e a orde de palabras en oracións simples e oracións compostas.",
+        "Formas nominais do verbo.",
+        "A tradución: técnicas, procesos e ferramentas.",
+        "A análise morfosintáctica como ferramenta complementaria de tradución.",
+        "Estratexias de tradución: formulación de expectativas a partir, entre outros, do contorno textual e do propio texto, paráfrases simplificadas en lingua latina, contexto, coñecemento do tema, descrición da estrutura e xénero, peculiaridades lingüísticas dos textos traducidos, erros frecuentes de tradución e técnicas para os evitar.",
+        "Ferramentas de tradución, cando se considere necesario.",
+        "Lectura comparada de diferentes traducións e comentario de textos bilingües a partir de terminoloxía metalingüística.",
+        "Recursos estilísticos frecuentes e a súa relación co contido do texto.",
+        "Estratexias de retroversión de textos breves. Afondamento no uso de expresións idiomáticas.",
+        "A tradución como instrumento que pode favorecer o razoamento lóxico, a resolución de problemas e a capacidade de análise e síntese, dentro dos límites e inconsistencias propias da tradución.",
+        "Aceptación do erro como parte do proceso de aprendizaxe e actitude positiva de superación.",
+        "Estratexias e ferramentas, analóxicas e dixitais, individuais e cooperativas, para a autoavaliación, a coavaliación e a autorreparación.",
+        "Destrezas comunicativas do uso da lingua latina.",
+        "Estratexias para a planificación e produción de textos orais ou, preferentemente, escritos.",
+        "Funcións comunicativas adecuadas aos textos obxecto de traballo: reformular e/ou resumir textos escritos.",
+        "Léxico común nos textos e autores obxecto de traballo, así como fraseoloxía básica para a expresión oral en latín de preguntas básicas sobre o contido do texto e/ou a gramática.",
+        "Estratexias básicas conversacionais para iniciar, manter e rematar a comunicación, tomar e ceder a palabra, pedir e dar aclaracións e explicacións etc."
+      ],
+      "codigos_items": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4",
+        "1.5",
+        "1.6",
+        "1.7",
+        "1.8",
+        "1.9",
+        "1.10",
+        "1.11",
+        "1.12",
+        "1.13",
+        "1.14",
+        "1.15",
+        "1.16",
+        "1.17",
+        "1.18",
+        "1.19",
+        "1.20"
+      ]
+    },
+    {
+      "codigo": "2",
+      "bloque": "Bloque 2. Latín e plurilingüismo",
+      "titulo": "Latín e plurilingüismo",
+      "items": [
+        "Influencia do latín na evolución das linguas de ensino e do resto de linguas que conforman o repertorio lingüístico individual do alumnado.",
+        "Regras fonéticas na evolución do latín ás linguas de ensino.",
+        "Léxico: Lexemas, sufixos e prefixos de orixe latina presentes no léxico de uso común e no específico das ciencias e a técnica.",
+        "Léxico: Significado e definición de palabras de uso común nas linguas de ensino a partir dos seus étimos de orixe latina.",
+        "Léxico: Expresións latinas integradas nas linguas modernas e o seu emprego en diferentes tipos de textos.",
+        "O significado etimolóxico das palabras e a importancia do uso adecuado do vocabulario como instrumento básico na comunicación.",
+        "O latín como instrumento que permite un mellor coñecemento das linguas de estudo e un máis fácil achegamento a outras linguas modernas, romances e non romances.",
+        "Respecto por todas as linguas e aceptación das diferenzas culturais das xentes que as falan.",
+        "Ferramentas analóxicas e dixitais para a aprendizaxe, a comunicación e o desenvolvemento de proxectos con falantes ou estudantes de latín no ámbito transnacional.",
+        "Expresións e léxico específico básico para reflexionar e compartir a reflexión sobre a comunicación, a lingua, a aprendizaxe e as ferramentas de comunicación e aprendizaxe (metalinguaxe)."
+      ],
+      "codigos_items": [
+        "2.1",
+        "2.2",
+        "2.3",
+        "2.4",
+        "2.5",
+        "2.6",
+        "2.7",
+        "2.8",
+        "2.9",
+        "2.10"
+      ]
+    },
+    {
+      "codigo": "3",
+      "bloque": "Bloque 3. A literatura latina nos seus textos",
+      "titulo": "A literatura latina nos seus textos",
+      "items": [
+        "A lingua latina como principal vía de transmisión do mundo clásico.",
+        "Etapas e vías de transmisión da literatura latina. A transmisión textual latina como patrimonio cultural e fonte de coñecemento a través de diferentes culturas e épocas. Soportes e materiais de escritura: tipos e preservación. O comercio librario no mundo antigo. A lectura en voz alta.",
+        "Principais xéneros da literatura latina: orixe, tipoloxía, cronoloxía, temas, motivos, tradicións, características e principais autores.",
+        "Técnicas para o comentario e análise lingüística e literaria dos textos literarios latinos.",
+        "Recepción da literatura latina: influencia na produción cultural europea, nocións básicas de intertextualidade, imitatio, aemulatio, interpretatio, allusio.",
+        "Analoxías e diferenzas entre os xéneros literarios latinos e os da literatura actual.",
+        "Introdución á crítica literaria.",
+        "A literatura como fonte de pracer e de coñecemento do mundo.",
+        "Respecto da propiedade intelectual e dereitos de autor sobre as fontes consultadas e contidos utilizados: ferramentas para o tratamento de datos bibliográficos e recursos para evitar o plaxio."
+      ],
+      "codigos_items": [
+        "3.1",
+        "3.2",
+        "3.3",
+        "3.4",
+        "3.5",
+        "3.6",
+        "3.7",
+        "3.8",
+        "3.9"
+      ]
+    },
+    {
+      "codigo": "4",
+      "bloque": "Bloque 4. Legado e patrimonio",
+      "titulo": "Legado e patrimonio",
+      "items": [
+        "A mitoloxía clásica en manifestacións literarias e artísticas.",
+        "O dereito romano e a súa importancia no sistema xurídico actual.",
+        "A importancia do discurso público para a vida política e social. A oratoria e as novas tecnoloxías.",
+        "Técnicas de debate e de exposición oral.",
+        ".4 Orientacións pedagóxicas",
+        "intervención educativa na materia de Latín desenvolverá o seu currículo e tratará de asentar",
+        "e xeito gradual e progresivo nos distintos niveis da etapa as aprendizaxes que lle faciliten ao",
+        "lumnado o logro dos obxectivos da materia e, en combinación co resto de materias, unha ade-",
+        "uada adquisición das competencias clave e o logro dos obxectivos da etapa.",
+        "este sentido, no deseño das actividades, o profesorado terá que considerar a relación exis-",
+        "ente entre os obxectivos da materia e as competencias clave a través dos descritores operativos",
+        "as liñas de actuación no proceso de ensino e aprendizaxe, que se presentan nos apartados se-",
+        "uintes, e seleccionar aqueles criterios de avaliación do currículo que se axusten á finalidade",
+        "uscada, así como empregalos para verificar as aprendizaxes do alumnado e o seu nivel de de-",
+        "empeño.",
+        "elación entre os obxectivos da materia de Latín e as competencias clave a través dos descrito-",
+        "es operativos establecidos no anexo I",
+        "bxectivos",
+        "a materia",
+        "BX1",
+        "BX2",
+        "BX3",
+        "BX4",
+        "BX5",
+        "iñas de actuación no proceso de ensino e aprendizaxe",
+        "s liñas de actuación no proceso de ensino e aprendizaxe que permitan o logro dos obxectivos e",
+        "nha adecuada adquisición das competencias poderán versar sobre:",
+        "O ensino da lingua, a cultura e a civilización latinas ofrece oportunidades significativas de tra-",
+        "allo interdisciplinario que permiten combinar contidos e activar obxectivos de diferentes ma-",
+        "erias, contribuíndo desta maneira a que o alumnado perciba a importancia de coñecer o le-",
+        "ado clásico para enriquecer o seu xuízo crítico e estético, a súa percepción de si mesmo e do",
+        "undo que o rodea. Neste sentido e de maneira destacada a frecuente coincidencia do estudo",
+        "o latín co da lingua, a cultura e a civilización gregas favorece un tratamento coordinado de",
+        "mbas as dúas materias, especialmente en primeiro de bacharelato.",
+        "En consonancia co carácter competencial deste currículo, proponse crear tarefas interdiscipli-",
+        "arias, contextualizadas, significativas e relevantes, e desenvolver situacións de aprendizaxe",
+        "esde un tratamento integrado das linguas onde se considere o alumnado como axente social",
+        "rogresivamente autónomo e responsable do seu propio proceso de aprendizaxe, tendo en",
+        "onta os seus repertorios de linguas e intereses, así como as súas circunstancias específicas,",
+        "que permite combinar distintas metodoloxías.",
+        "A coordinación cos departamentos de linguas para acordar unha nomenclatura gramatical co-",
+        "ún e evitar a confusión do alumnado ante a diversidade terminolóxica, así como a posta en",
+        "omún de aspectos gramaticais e a temporización e secuenciación dos contidos. Recoméndase,",
+        "sí pois, a actualización dos documentos do centro correspondentes.",
+        "A coordinación con outros departamentos para o establecemento de lecturas obrigatorias",
+        "/ou voluntarias de carácter transversal.",
+        "A introdución de actividades, preferentemente no primeiro curso, en coordinación con outros",
+        "epartamentos (especialmente de linguas e Historia, mais non exclusivamente) onde se dea a",
+        "portunidade ao establecemento de relacións entre aspectos comúns destas materias.",
+        "A experimentación con novas metodoloxías como o traballo por proxectos, a clase invertida",
+        "flipped classroom), a aprendizaxe colaborativa etc., que permitan maximizar o tempo útil de",
+        "raballo práctico na aula, optimizar resultados e facer o proceso de ensino máis inclusivo e",
+        "ariado, adaptándose ás especiais características desta etapa educativa, en que a preparación",
+        "ara a superación das probas de acceso á universidade é un obxectivo básico.",
+        "Tratamento transversal, a través de textos en latín orixinais, adaptados e/ou creados ex pro-",
+        "esso, dos contidos de historia, sociedade e legado, tendo en conta a perspectiva de xénero.",
+        "A potenciación do uso das TIC, favorecendo a realización de vídeos, gravacións de son, pre-",
+        "entacións en formato dixital, uso de aplicacións que favorezan a aprendizaxe, creación e di-",
+        "usión de contidos etc.",
+        "A incorporación de métodos activos que implican as seguintes recomendacións: introdución",
+        "a expresión oral en latín adecuada ao contexto da práctica diaria na aula; elección, adaptación",
+        "/ou creación dun corpus de textos que permitan a aprendizaxe, preferentemente por uso, da",
+        "ramática latina en xeral (introducindo progresivamente terminoloxía gramatical e sintáctica),",
+        "do vocabulario e expresións máis habituais dos textos obxecto de estudo, en particular; in-",
+        "rodución de exercicios nos que se traballen a lectura e comprensión de textos latinos a través",
+        "e preguntas en latín; introdución de exercicios escritos e orais nos que o alumnado, a partir",
+        "os textos obxecto de estudo, teña que expresar as mesmas ideas en latín con vocabulario",
+        "/ou expresións equivalentes aplicando o seu coñecemento da lingua latina; introdución de",
+        "xercicios de tradución e/ou paráfrase de latín á lingua de uso do alumado, en que se demostre",
+        "correcta comprensión do texto e a capacidade para expresar na lingua propia as expresións",
+        "diomáticas presentes nos textos latinos. No segundo curso estes exercicios terán por obxecto",
+        "referentemente os textos dos autores escollidos para a proba de acceso á universidade; in-",
+        "rodución de exercicios de representación, preferentemente no primeiro curso, en posible co-",
+        "rdinación cos outros departamentos de linguas, en que o alumnado compoña e interprete",
+        "equenas escenas en latín relacionadas coa vida cotiá, para reforzar a percepción de que as",
+        "inguas clásicas tamén poden desenvolver unha función comunicativa real; uso correcto e",
+        "uiado do dicionario e o seu apéndice gramatical e/ou outras ferramentas dixitais como posi-",
+        "le apoio para a resolución de dúbidas gramaticais e léxicas."
+      ],
+      "codigos_items": [
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4",
+        "4.5",
+        "4.6",
+        "4.7",
+        "4.8",
+        "4.9",
+        "4.10",
+        "4.11",
+        "4.12",
+        "4.13",
+        "4.14",
+        "4.15",
+        "4.16",
+        "4.17",
+        "4.18",
+        "4.19",
+        "4.20",
+        "4.21",
+        "4.22",
+        "4.23",
+        "4.24",
+        "4.25",
+        "4.26",
+        "4.27",
+        "4.28",
+        "4.29",
+        "4.30",
+        "4.31",
+        "4.32",
+        "4.33",
+        "4.34",
+        "4.35",
+        "4.36",
+        "4.37",
+        "4.38",
+        "4.39",
+        "4.40",
+        "4.41",
+        "4.42",
+        "4.43",
+        "4.44",
+        "4.45",
+        "4.46",
+        "4.47",
+        "4.48",
+        "4.49",
+        "4.50",
+        "4.51",
+        "4.52",
+        "4.53",
+        "4.54",
+        "4.55",
+        "4.56",
+        "4.57",
+        "4.58",
+        "4.59",
+        "4.60",
+        "4.61",
+        "4.62",
+        "4.63",
+        "4.64",
+        "4.65",
+        "4.66",
+        "4.67",
+        "4.68",
+        "4.69",
+        "4.70",
+        "4.71",
+        "4.72",
+        "4.73",
+        "4.74",
+        "4.75",
+        "4.76",
+        "4.77",
+        "4.78"
+      ]
+    }
+  ],
+  "comunidad": "galicia",
+  "idioma": "gl"
+}

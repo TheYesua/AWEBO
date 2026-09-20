@@ -1,0 +1,551 @@
+{
+  "materia_oficial": "Xeografía, Historia, Arte e Patrimonio de Galicia",
+  "materia": "Xeografía, Historia, Arte e Patrimonio de Galicia",
+  "etapa": "Bachillerato",
+  "ciclo": "2º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Analizar a diversidade natural de Galicia e a súa singularidade xeográfica dentro de España e Europa, a través da comparación de características comúns e específicas do relevo, o clima, a hidrografía e a biodiversidade.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Interpretar o legado histórico de Galicia e a súa conexión coa historia mundial, sinalando as analoxías e singularidades da súa evolución nun contexto global cambiante por medio da procura e do tratamento de información.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Identificar e caracterizar os principais movementos artísticos galegos ao longo da historia, recoñecendo as relacións de influencia, préstamo, continuidade e ruptura que se producen entre eles, para comprender os mecanismos que rexen a evolución da historia da arte galega, identificando e contextualizando espacial e temporalmente as máis relevantes manifestacións artísticas de Galicia, analizando o seu contorno social, político e cultural.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Coñecer e valorar o patrimonio material e inmaterial de Galicia, analizando exemplos concretos do seu aproveitamento e as súas funcións, para contribuír á súa conservación e promoción como elemento conformador da identidade individual e colectiva, e como dinamizador da cultura e da economía.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Integrar a perspectiva de xénero no estudo da materia, analizando o papel que ocuparon as mulleres e a imaxe que delas se deu nas diferentes etapas históricas e movementos artísticos de Galicia, para promover a igualdade efectiva entre mulleres e homes.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Valorar o significado histórico da idea de progreso e as súas repercusións sociais, ambientais e territoriais na evolución xeográfica, artística e histórica, a través do uso de métodos cuantitativos e da análise multifactorial do desenvolvemento económico, os ritmos de crecemento e a existencia de distintos modelos e sistemas, valorando a situación actual de Galicia nos parámetros indicadores de progreso económico e social e adoptando un compromiso activo coa sustentabilidade e a defensa dos dereitos sociais.",
+      "descriptores": []
+    },
+    {
+      "codigo": "7",
+      "descripcion": "Recoñecer e valorar a diversidade identitaria de Galicia, por medio do contraste da información e a revisión crítica de fontes, tomando conciencia do papel que xoga na actualidade, para respectar os sentimentos de pertenza e as normas e os símbolos que establece o noso marco común de convivencia.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Distinguir as singularidades do espazo xeográfico galego e situar e analizar as súas unidades de relevo."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Distinguir as variantes climáticas galegas e sinalar os elementos e os factores que as conforman."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Describir a biodiversidade, os solos e a rede hídrica, e analizar o aproveitamento destes recursos."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "1",
+      "descripcion": "Describir e reflectir nun mapa a singularidade das paisaxes naturais de Galicia e relacionar o medio natural coa actividade humana."
+    },
+    {
+      "codigo": "1.5",
+      "competencia": "1",
+      "descripcion": "Analizar a realidade demográfica galega e a súa evolución histórica, comprender os factores que a determinan e a cuestión do avellentamento poboacional e identificar as redes urbanas de Galicia."
+    },
+    {
+      "codigo": "1.6",
+      "competencia": "6",
+      "descripcion": "Identificar o espazo rural e as actividades do sector primario (agricultura e gandaría)."
+    },
+    {
+      "codigo": "1.7",
+      "competencia": "1",
+      "descripcion": "Apreciar a importancia do mar na economía e na sociedade galegas e a industrialización do sector, así como os problemas e as oportunidades da explotación forestal."
+    },
+    {
+      "codigo": "1.8",
+      "competencia": "6",
+      "descripcion": "Recoñecer os factores da industria en Galicia, describindo os eixes de desenvolvemento industrial e identificando as liñas mestras da problemática industrial galega."
+    },
+    {
+      "codigo": "1.9",
+      "competencia": "6",
+      "descripcion": "Analizar a terciarización da economía galega utilizando as fontes dispoñibles na rede, coñecendo as pautas do seu desenvolvemento e os seus sectores."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Recoñecer e valorar os procesos máis significativos para a formación histórica da identidade de Galicia coñecendo a cronoloxía dos feitos culturais da prehistoria galega, as principais estacións arqueolóxicas e as características principais dos achados materiais."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Explicar as diferenzas entre a economía e a organización social do Paleolítico e o mundo megalítico."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "3",
+      "descripcion": "Explicar a funci n social, ritual, relixiosa e xerarquizadora da arte prehist rica en Galicia especificando o papel desenvolvido pola sociedade, especialmente no que respecta ao rol da muller nas comunidades prehistóricas."
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "2",
+      "descripcion": "Explicar o fenómeno coñecido como romanización, os novos usos sociais e económicos, e a articulación viaria do territorio."
+    },
+    {
+      "codigo": "2.5",
+      "competencia": "3",
+      "descripcion": "Reco ecer as caracter sticas esenciais das culturas castrexa e romana e relacionalas co seu respectivo contexto hist rico, artístico e cultural."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "2",
+      "descripcion": "Analizar a pegada da monarquía sueva, o seu ámbito territorial e a súa organización, e explicar as circunstancias que a levaron a verse dominada polos visigodos."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Reco ecer e explicar as concepci ns est ticas e as caracter sticas esenciais da arte prerrománica en relaci n cos seus respectivos contextos históricos e culturais."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "7",
+      "descripcion": "Analizar os fundamentos xeopolíticos da mudante estrutura dos reinos peninsulares en permanente dialéctica con Al-Andalus e o papel representado polo territorio galego."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "6",
+      "descripcion": "Entender a evolución dos tempos medievais cara ao restablecemento das producións artesanais e os intercambios comerciais, baixo os parámetros dunha sociedade fondamente estamental."
+    },
+    {
+      "codigo": "3.5",
+      "competencia": "2",
+      "descripcion": "Comprender a xénese e articulación do Camiño de Santiago e a súa importancia política, social relixiosa e económica."
+    },
+    {
+      "codigo": "3.6",
+      "competencia": "3",
+      "descripcion": "Reco ecer as concepci ns est ticas e as caracter sticas esenciais da arte rom nica en Galicia en relaci n co seu contexto hist rico e cultural, explicando a funci n da arte rom nica e o papel dos mosteiros (Cluny e Císter)."
+    },
+    {
+      "codigo": "3.7",
+      "competencia": "3",
+      "descripcion": "Reco ecer e explicar as concepci ns est ticas e as caracter sticas esenciais da arte g tica en relaci n co seu contexto hist rico e cultural, estudando o papel das ordes mendicantes."
+    },
+    {
+      "codigo": "3.8",
+      "competencia": "5",
+      "descripcion": "Analizar as mudanzas baixomedievais: crise demográfica, economía urbana, rol da muller, conflitos sociais e guerras irmandiñas, pacificación do territorio e nova Administración implantada polos Reis Católicos."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "2",
+      "descripcion": "Analizar e explicar os cambios estruturais producidos en Galicia durante o Antigo Réxime no contexto peninsular e europeo, describindo as principais institucións galegas da Idade Moderna: Xunta do Reino de Galicia, Real Audiencia, Real Intendencia e concellos."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "5",
+      "descripcion": "Estudar as características da sociedade estamental galega do Antigo Réxime e a situación social da muller."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "6",
+      "descripcion": "Explicar as peculiaridades do intenso crecemento da demografía galega na Idade Moderna, a pronta superación da crise do século XVII e o forte crecemento experimentado no século XVIII."
+    },
+    {
+      "codigo": "4.4",
+      "competencia": "6",
+      "descripcion": "Analizar a estrutura xeral do sistema produtivo do Antigo Réxime, de base agraria e economía de subsistencia, explicando as claves de acumulación de capital necesarias para o desenvolvemento comercial e manufactureiro."
+    },
+    {
+      "codigo": "4.5",
+      "competencia": "3",
+      "descripcion": "Reco ecer e explicar as concepci ns est ticas e as caracter sticas esenciais da arte do Renacemento e do Barroco en relaci n co contexto hist rico e cultural, a unidade e diversidade do Barroco e o uso da linguaxe artística ao servizo do poder civil e eclesiástico."
+    },
+    {
+      "codigo": "4.6",
+      "competencia": "4",
+      "descripcion": "Analizar a pegada da Ilustración na Galicia do Antigo Réxime, coñecendo as iniciativas protoindustriais (transformacións nos sectores do curtume, a pesca e a metalurxia), o exemplo de Sargadelos, o comercio interior e exterior (intercambios con América) e o establecemento do arsenal de Ferrol."
+    },
+    {
+      "codigo": "4.7",
+      "competencia": "3",
+      "descripcion": "Reco ecer e explicar as concepci ns est ticas e as caracter sticas esenciais do Neoclasicismo e a influencia do pensamento ilustrado na arte."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "2",
+      "descripcion": "Caracterizar as grandes correntes ideolóxicas e os movementos sociopolíticos que propiciaron a evolución histórica da Galicia contemporánea, desde unha sociedade rexida baixo o predominio dos grupos sociais tradicionais ata o triunfo do liberalismo."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "7",
+      "descripcion": "Explicar a arquitectura do proceso político e institucional ideado por Cánovas del Castillo e a súa aplicación en Galicia, as súas fortalezas e debilidades e os trazos esenciais do Rexurdimento."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "6",
+      "descripcion": "Describir as dificultades do tránsito dunha economía e unha estrutura demográfica tradicionais cara á modernidade, estudando as características da industrialización, da expansión comercial e da modernización agraria na Galicia contemporánea e os conflitos sociopolíticos derivados deses cambios estruturais."
+    },
+    {
+      "codigo": "5.4",
+      "competencia": "5",
+      "descripcion": "Comprender a evolución política de Galicia durante a Segunda República e o comezo da Guerra Civil, analizando os cambios acaecidos no rol social e institucional da muller no período republicano."
+    },
+    {
+      "codigo": "5.5",
+      "competencia": "6",
+      "descripcion": "Coñecer as características esencias da posguerra e a economía autárquica propia do primeiro franquismo."
+    },
+    {
+      "codigo": "5.6",
+      "competencia": "6",
+      "descripcion": "Caracterizar a realidade da etapa dos plans de desenvolvemento coas súas transformacións económicas e sociais e estudando o papel das mulleres na etapa franquista."
+    },
+    {
+      "codigo": "5.7",
+      "competencia": "2",
+      "descripcion": "Analizar o tardofranquismo estudando a inestabilidade política, os apoios e as oposicións ao réxime."
+    },
+    {
+      "codigo": "5.8",
+      "competencia": "3",
+      "descripcion": "Recoñecer e explicar as concepcións estéticas e as características esenciais da arquitectura e as artes plásticas nos séculos XIX e XX en Galicia."
+    },
+    {
+      "codigo": "5.9",
+      "competencia": "7",
+      "descripcion": "Describir o proceso autonómico en Galicia, identificando as características do Estatuto de autonomía no marco da Constitución de 1978, e analizar a estrutura e os principios que regulan a organización política e territorial do Estado español nas comunidades autónomas."
+    },
+    {
+      "codigo": "5.10",
+      "competencia": "6",
+      "descripcion": "Coñecer o impacto do ingreso na Unión Europea en Galicia, as súas fortalezas e as súas debilidades."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "4",
+      "descripcion": "Coñecer o concepto de patrimonio cultural de Galicia e a súa categorización."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "4",
+      "descripcion": "Entender e valorar os principios de conservación, posta en valor, fomento e difusión dos bens integrantes do patrimonio cultural de Galicia."
+    },
+    {
+      "codigo": "6.3",
+      "competencia": "4",
+      "descripcion": "Coñecer as liñas fundamentais de posta en valor do patrimonio cultural galego e valorar o seu significado e implicacións socioeconómicas."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "Bloque 1. A Xeografía de Galicia",
+      "titulo": "A Xeografía de Galicia",
+      "items": [
+        "Coñecemento das ferramentas e dos métodos propios da ciencia xeográfica. Análise de planos, mapas e representacións gráficas. Dominio do concepto de espazo xeográfico.",
+        "Características físicas do territorio galego: formación do relevo, unidades xeomorfolóxicas, acción erosiva e tipos de solo.",
+        "Variantes climáticas de Galicia e factores que as determinan. Uso de webs e aplicacións móbiles.",
+        "Rede hidrográfica de Galicia.",
+        "Paisaxes naturais galegas. Biodiversidade, ecosistemas, espazos naturais protexidos. Políticas ambientais.",
+        "A demografía de Galicia. Evolución histórica e realidade actual.",
+        "Distribución territorial da poboación. Desequilibrios entre a costa e o interior. Envellecemento e despoboamento rural.",
+        "Movementos naturais de poboación. Migracións: razóns estruturais e conxunturais.",
+        "Espazo urbano de Galicia. O eixe atlántico, a función das vilas como modelos sustentables.",
+        "O espazo rural e agrario. Transformacións das actividades agropecuarias. Pesca e acuicultura. Política comunitaria: a política agraria común (PAC) e a política pesqueira común (PPC).",
+        "Fontes de enerxía e espazo industrial galego. Proceso de industrialización en Galicia. Sectores industriais en Galicia.",
+        "Terciarización da economía galega. Transportes: eixes de fluxo comercial. Turismo, economía dixital e globalización."
+      ],
+      "codigos_items": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4",
+        "1.5",
+        "1.6",
+        "1.7",
+        "1.8",
+        "1.9",
+        "1.10",
+        "1.11",
+        "1.12"
+      ]
+    },
+    {
+      "codigo": "2",
+      "bloque": "Bloque 2. As raíces da historia de Galicia",
+      "titulo": "As raíces da historia de Galicia",
+      "items": [
+        "Prehistoria de Galicia. Primeiras pegadas do ser humano en Galicia: Paleolítico. Grandes depósitos de Portomaior, Arbo, As Gándaras de Budiño e a cova Eirós en Triacastela. O home de Cromagnon: depósito de Cova da Valiña en Castroverde. Función da arte prehistórica en Galicia.",
+        "O Megalitismo e a Idade dos Metais: dolmen de Axeitos, dolmen de Dombate e lapa de Gargantáns.",
+        "A cultura castrexa: os castros de Santa Trega, San Cibrán de Las e Elviña. Escultura e ourivaría castrexa: torque de Burela, casco de Leiro, cabeza de Rubiás e guerreiro de Armeá.",
+        "A civilización romana: a conquista, o proceso de romanización, os trazos principais dos castros romanizados a través do castro de Viladonga ou do castro de Baroña. Características principais da cidade romana: o exemplo de Lugo. A arquitectura relixiosa tardorromana a través do templo de Santalla de Bóveda."
+      ],
+      "codigos_items": [
+        "2.1",
+        "2.2",
+        "2.3",
+        "2.4"
+      ]
+    },
+    {
+      "codigo": "3",
+      "bloque": "Bloque 3. A eclosión de Galicia na Idade Media; o Camiño de Santiago",
+      "titulo": "A eclosión de Galicia na Idade Media; o Camiño de Santiago",
+      "items": [
+        "O dominio suevo, avances na cristianización e integración na monarquía visigoda.",
+        "A arte prerrománica. Características xerais. A arquitectura visigótica en Galicia: Santa Comba de Bande.",
+        "Galicia na Idade Media: características da sociedade feudal galega, integración no reino astur-leonés; primeira acepción de Galicia como Reino e o seu mantemento honorífico ao longo do Antigo Réxime. Expansión artesanal,",
+        "omercial e urbana arredor dos camiños de Santiago e das zonas costeiras: Compostela e Pontevedra. Auxe do monacato.",
+        "Configuraci n e desenvolvemento da arte rom nica. Igrexas e mosteiros. Iconograf a rom nica. Santo Estevo de Ribas de Sil, Santa Cristina de Ribas de Sil e Santa Mar a de Ferreira de Pant n.",
+        "Primeiro Rom nico. Bas lica de San Marti o de Mondo edo.",
+        "Rom nico pleno: catedral de Santiago. Santa Mar a de Cambre, Santa Mar a do Campo, igrexa de Santiago na Coru a, colexiata de Santa Mar a de Sar, igrexa de Vilar de Donas, San Nicol s de Portomar n, catedral de Ourense, fachada de Prater as, P rtico da Gloria.",
+        "Tardorrom nico. Arquitectura do C ster. San Lourenzo de Carboeiro, mosteiro de Santa Mar a de Oseira e mosteiro de Santa Mar a da Armenteira.",
+        "Achega da arte g tica, expresi n dunha cultura urbana. Catedral e arquitectura civil. A escultura g tica: p rtico da catedral de Tui, porta do Colexio de San Xerome e sepulcro de Fern n Peres de Andrade «O Boo».",
+        "As ordes mendicantes: San Domingos de Bonaval, San Domingos de Pontevedra e San Francisco de Betanzos.",
+        "Mudanzas baixomedievais: crise demográfica, economía urbana, conflitos sociais e guerras irmandiñas; pacificación do territorio e nova Administración implantada polos Reis Católicos. As mulleres na Idade Media."
+      ],
+      "codigos_items": [
+        "3.1",
+        "3.2",
+        "3.3",
+        "3.4",
+        "3.5",
+        "3.6",
+        "3.7",
+        "3.8",
+        "3.9",
+        "3.10",
+        "3.11"
+      ]
+    },
+    {
+      "codigo": "4",
+      "bloque": "Bloque 4. O éxito dunha sociedade tradicional: Galicia no Antigo Réxime",
+      "titulo": "O éxito dunha sociedade tradicional: Galicia no Antigo Réxime",
+      "items": [
+        "O éxito dunha sociedade tradicional: demografía galega no Antigo Réxime.",
+        "Actividades económicas: economía de base agraria; a expansión do millo e da pataca, os foros, manufacturas artesanais e iniciativas protoindustriais (transformacións nos sectores do curtume, a pesca e a metalurxia); exemplo de Sargadelos; comercio interior e exterior (intercambios con América); establecemento do arsenal de Ferrol.",
+        "A sociedade galega durante a Idade Moderna: elites (nobreza absentista e fidalguía rendista), campesiñado, os diversos sectores do clero, comerciantes e artesáns. Formas de vida e mentalidades colectivas dos grupos sociais. O papel das mulleres.",
+        "Institucións políticas do Antigo Réxime: Real Audiencia, Xunta do Reino, corrixidores e intendentes.",
+        "A arte renacentista. Patróns e artistas. Iconografía na arquitectura do século XVI. Comentario de obras de arte do renacemento en Galicia. Colexio de Nosa Se ora da Antiga de Monforte de Lemos, Hospital Real de Santiago de Compostela e Pazo de Fonseca. Estatuas da fachada do mosteiro de San Marti o Pinario.",
+        "Unidade e diversidade do Barroco. Linguaxe artística ao servizo do poder civil e eclesiástico. Barroco compostelán. Urbanismo barroco. Igrexas e pazos. Comentario de obras de arte do Barroco en Galicia. Obras de Domingo de Andrade, Fernando de Casas, Sim n Rodr guez, Clemente F. Sarela, Pedro de Monteagudo (mosteiros de San Xo n de Poio e de Santa María de Sobrado) e Lucas Ferro Caaveiro. Pazos rurais e pazos de Fefi ns, de Oca e de Santa Cruz de Ribadulla. Obras de Francisco de Moure, Gregorio Fern ndez e Mateo de Prado.",
+        "Ilustración en Galicia: ensino, ciencia, pensamento e cultura letrada. O Padre Feijoo e Frei Martín Sarmiento.",
+        "Neoclasicismo. Enxe eiros t cnicos na arquitectura do Neoclasicismo en Galicia, o arsenal de Ferrol. Estilo academicista. Comentario de obras de arte do Neoclasicismo en Galicia. Obras de Domingo Lois Monteagudo. Pazo de Raxoi, fachada da Acibechar a, reforma da torre de H rcules, casas de Paredes e arquivo do Reino de Galicia en Betanzos."
+      ],
+      "codigos_items": [
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4",
+        "4.5",
+        "4.6",
+        "4.7",
+        "4.8"
+      ]
+    },
+    {
+      "codigo": "5",
+      "bloque": "Bloque 5. Galicia no camiño da modernización. A Idade Contemporánea",
+      "titulo": "Galicia no camiño da modernización. A Idade Contemporánea",
+      "items": [
+        "Absolutistas e liberais: guerra contra Francia; o papel da Igrexa. O problema carlista e a expansión do liberalismo nas cidades durante o reinado de Fernando VII. Implantación da nova estrutura político-administrativa e institucional do Estado liberal en Galicia durante o reinado de Isabel II. O Provincialismo.",
+        "O difícil tránsito da sociedade e a demografía galega cara á modernidade: esgotamento do complexo agrario e crise das manufacturas domésticas na primeira metade do século XIX; desaxustes demográficos e comezos da emigración masiva a América.",
+        "O desigual balance do proceso desamortizador. Permanencias no mundo rural e os cambios lentos nas vilas e cidades: devalar das vellas elites rurais e formación dunha pequena burguesía comercial de orixe foránea.",
+        "Galicia na Restauración: as quendas e o fenómeno do caciquismo. Redes clientelares dos partidos dinásticos como mecanismo de exercicio do poder; organizacións políticas dos novos grupos sociais; mobilización agrarista do campesiñado.",
+        "O Neoclasicismo. Enxeñeiros técnicos na arquitectura do Neoclasicismo en Galicia. Estilo academicista.",
+        "Arte galega do século XIX: arquitectura do século XIX. Impacto dos novos materiais: Historicismo e Eclecticismo. Obra de Jenaro de la Fuente. Nacemento do urbanismo moderno. Homoxenización de modelos e creación dos barrios obreiros. Escultura do Rexurdimento galego (Isidoro Brocos) e adopción da liturxia liberal na escultura galega do século XIX. Pintura no século XIX galego: do Romanticismo e o Historicismo ao Exotismo e o Realismo.",
+        "Galicia no camiño da modernización (1874-1936). Unha sociedade en cambio: evolución demográfica e éxodo ultramarino; características e consecuencias da emigración de retorno. Auxe da burguesía industrial e comercial; proletarización do campesiñado; desaparición da fidalguía. Transformacións no sistema agrario galego: mercantilización das pequenas explotacións familiares, privatización dos montes comunais, especialización produtiva e aplicación dos avances científicos e tecnolóxicos nas primeiras décadas do século XX. Desenvolvemento industrial e comercial: pesca, sector hidroeléctrico, comunicacións e sistema financeiro; orixes da banca galega.",
+        "Crise do sistema político da Restauración. Evolución política de Galicia desde o Rexionalismo ata a xeración das Irmandades: organizacións políticas; autonomismo, Estatuto de 1936. O Nacionalismo galego: Afonso Daniel R. Castelao. Polarización da sociedade galega durante a Segunda República. Primeiras formas de participación feminina en política. Segunda República e primeiro Estatuto de autonomía de Galicia.",
+        "Arquitectura do século XX en Galicia. Renovación da linguaxe arquitectónica: funcionalismo do movemento moderno e arquitectura orgánica. Fenómeno das vangardas nas artes plásticas en Galicia. Vangardas e novos medios: a fotografía e o cinema en Galicia. Comentario de obras de arte, arquitectura e artes plásticas do século XX en Galicia. Obras de Julio Gal n y Carvajal, Manuel G mez Rom n, Antonio Palacios, Antonio Tenreiro, Andrés Fernández Albalat, Iago Seara, C sar Portela, Pascuala Campos de Michelena, X.M. Casabella e Manuel Gallego Jorreto.",
+        "Escultura do s culo XX en Galicia: obras de Francisco Asorey, Xos Eiroa, Xo n Pi eiro, Camilo Otero, Jos Mar a Acu a, Eduardo Parrado e Cristino Mallo.",
+        "Pintura do s culo XX en Galicia. Obra pict rica de Colmeiro, Laxeiro, Arturo Souto, Fernando lvarez de Sotomayor, Luis Seoane, Eugenio Granell, Tino Grand o, Mar a Antonia Dans, Maruxa Mallo, Manuel Abelenda, Isaac D az Pardo, Menchu Lamas, Francisco Llor ns, Urbano Lugr s, Alfonso Daniel R. Castelao, Xes s Corredoira, Carlos Maside, Xulia Minguill n, Reimundo Pati o, Julio Prieto Nespereira, Xaime Quessada e Alberto Datas, A. Lago Rivera, Luís Caruncho, Antonio Tenreiro, Lino J. Villafínez, Concha Vázquez, M. López Garabal, Alfonso Sucasas, Mercedes Ruibal, José Solla, Virxilio, Antón Abreu, Felipe Criado, Elena Gago e María Victoria de la Fuente.",
+        "Posguerra: fame, racionamento e estraperlo; consecuencias económicas e sociais da política autárquica durante o primeiro franquismo.",
+        "Anos do desenvolvemento: transformacións económicas e sociais; consecuencias dos plans de desenvolvemento en Galicia. Tardofranquismo: inestabilidade política, apoios e oposición ao réxime. A muller na etapa franquista.",
+        "A realidade galega actual: proceso autonómico e consecución do Estatuto no contexto da transición á democracia en España. Evolución política da Galicia autonómica; construción dunha Administración propia desde 1977 á actualidade.",
+        "Integración na Unión Europea e novos retos sociais e económicos: consecuencias estruturais para os sectores produtivos e para a sociedade galega. Cambios sociais, económicos e culturais: construción do Estado de benestar e posta en valor dos propios recursos."
+      ],
+      "codigos_items": [
+        "5.1",
+        "5.2",
+        "5.3",
+        "5.4",
+        "5.5",
+        "5.6",
+        "5.7",
+        "5.8",
+        "5.9",
+        "5.10",
+        "5.11",
+        "5.12",
+        "5.13",
+        "5.14",
+        "5.15"
+      ]
+    },
+    {
+      "codigo": "6",
+      "bloque": "Bloque 6. Patrimonio material e cultural en Galicia",
+      "titulo": "Patrimonio material e cultural en Galicia",
+      "items": [
+        "O patrimonio cultural en Galicia. Principios esenciais da normativa específica sobre o patrimonio cultural de Gali-",
+        "ia. Patrimonio material e inmaterial. Os bens declarados de interese cultural e as súas categorías. O Rexistro de",
+        "ens de Interese Cultural de Galicia. Os bens catalogados e o seu rexistro.",
+        "A conservación, posta en valor, fomento e difusión dos bens integrantes do patrimonio cultural de Galicia: axentes,",
+        "roblemática e logros.",
+        "Os camiños de Santiago. O Sistema galego de museos. O Plan de catedrais. Parques e centros arqueolóxicos (in-",
+        "ervención en castros, dolmens e petróglifos). O patrimonio industrial. Bens patrimonio da Unesco.",
+        ".4 Orientacións pedagóxicas",
+        "intervención educativa na materia de Xeografía, Historia, Arte e Patrimonio de Galicia de-",
+        "envolverá o seu currículo e tratará de asentar de xeito gradual e progresivo as aprendizaxes que",
+        "le faciliten ao alumnado o logro dos obxectivos da materia e, en combinación co resto das ma-",
+        "erias, unha adecuada adquisición das competencias clave e o logro dos obxectivos da etapa.",
+        "este sentido, no deseño das actividades, o profesorado terá que considerar a relación exis-",
+        "ente entre os obxectivos da materia e as competencias clave a través dos descritores operativos",
+        "as liñas de actuación no proceso de ensino e aprendizaxe que se presentan nos apartados se-",
+        "uintes e seleccionar aqueles criterios de avaliación do currículo que se axusten á finalidade bus-",
+        "ada, así como empregalos para verificar as aprendizaxes do alumnado e o seu nivel de desem-",
+        "eño.",
+        "elación entre os obxectivos da materia de Xeografía, Historia, Arte e Patrimonio de Galicia e",
+        "s competencias clave a través dos descritores operativos establecidos no anexo I",
+        "bxectivos",
+        "a materia",
+        "BX1",
+        "BX2",
+        "BX3",
+        "BX4",
+        "BX5",
+        "BX6",
+        "BX7",
+        "iñas de actuación non proceso de ensino e aprendizaxe",
+        "O uso de distintos métodos que teñan en conta os diferentes ritmos de aprendizaxe do alum-",
+        "ado, favorezan a capacidade de aprender por si mesmos e promovan o traballo en equipo.",
+        "odo iso implica dispor de novos instrumentos para valorar un conxunto amplo e diverso de",
+        "ccións, tendo en conta a diversidade e individualidade do alumnado.",
+        "O uso de estratexias para traballar transversalmente a comprensión lectora, a expresión oral",
+        "escrita, a comunicación audiovisual, a competencia dixital, o fomento da creatividade, do",
+        "spírito científico e do emprendemento.",
+        "Utilizar estratexias nas cales o alumnado exercite tanto os procesos instrumentais como as",
+        "ctitudes, utilizando as bases discursivas do pensamento histórico na construción do coñece-",
+        "ento.",
+        "O uso da metodoloxía propia da historia e das ciencias sociais, promovendo a análise crítica",
+        "as fontes e o desenvolvemento da terminoloxía e dos coñecementos que lle permitan ao",
+        "lumnado afrontar con solvencia a redacción de composicións históricas.",
+        "O emprego de métodos cuantitativos de carácter serial, gráfico e estatístico de longa e curta",
+        "uración, que lle permitan ao alumnado comprender e explicar as variables sociais e económi-",
+        "as que incidiron no devir histórico da historia de Galicia.",
+        "A análise do enclave espazo-temporal da produción artística para unha adecuada comprensión",
+        "explicación do contexto político, social, cultural, económico, relixioso e ideolóxico en que",
+        "sta se desenvolve.",
+        "A explicación dos aspectos técnicos, conceptuais e formais das artes plásticas e da arquitec-",
+        "ura, que lle permitan ao alumnado afrontar con solvencia a análise dunha obra.",
+        "Facer énfase nas diversas orientacións de carácter competencial (indutivas e dedutivas) á dis-",
+        "osición da persoa historiadora, para o coñecemento crítico dos procesos e transformacións",
+        "ociais, as súas causas e as consecuencias derivadas, traballando especialmente sobre con-",
+        "eptos e logros esenciais como a perspectiva de xénero e o acceso á cidadanía, á liberdade, á",
+        "gualdade, á equidade e ao benestar social.",
+        "Fomentar no alumnado a fundamentación de xuízos propios baseados no uso habitual de fon-",
+        "es primarias e textos historiográficos que lle permitan o achegamento crítico ás diversas",
+        "deoloxías e identidades presentes no pensamento sociopolítico da historia de Galicia.",
+        "O exercicio do pensamento crítico, fundamentado e razoado, ao igual que a transferencia de",
+        "nformación e do coñecemento elaborado que, ademais de supor o uso avanzado de medios",
+        "ixitais, implique tamén o desenvolvemento de estratexias comunicativas eficaces.",
+        "Realizar traballos de investigación e «obradoiros de historia», xerando produtos a través da",
+        "ndagación e da investigación que poñan en valor o patrimonio histórico considerado como un",
+        "en común que hai que cómpre conservar. Realización concreta dun traballo de investigación",
+        "obre o patrimonio cultural galego, a súa protección legal, e accións públicas e privadas para",
+        "súa conservación, mantemento e posta en valor."
+      ],
+      "codigos_items": [
+        "6.1",
+        "6.2",
+        "6.3",
+        "6.4",
+        "6.5",
+        "6.6",
+        "6.7",
+        "6.8",
+        "6.9",
+        "6.10",
+        "6.11",
+        "6.12",
+        "6.13",
+        "6.14",
+        "6.15",
+        "6.16",
+        "6.17",
+        "6.18",
+        "6.19",
+        "6.20",
+        "6.21",
+        "6.22",
+        "6.23",
+        "6.24",
+        "6.25",
+        "6.26",
+        "6.27",
+        "6.28",
+        "6.29",
+        "6.30",
+        "6.31",
+        "6.32",
+        "6.33",
+        "6.34",
+        "6.35",
+        "6.36",
+        "6.37",
+        "6.38",
+        "6.39",
+        "6.40",
+        "6.41",
+        "6.42",
+        "6.43",
+        "6.44",
+        "6.45",
+        "6.46",
+        "6.47",
+        "6.48",
+        "6.49",
+        "6.50",
+        "6.51",
+        "6.52",
+        "6.53",
+        "6.54",
+        "6.55",
+        "6.56",
+        "6.57",
+        "6.58",
+        "6.59",
+        "6.60",
+        "6.61",
+        "6.62",
+        "6.63",
+        "6.64",
+        "6.65",
+        "6.66",
+        "6.67"
+      ]
+    }
+  ],
+  "comunidad": "galicia",
+  "idioma": "gl"
+}

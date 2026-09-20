@@ -1,0 +1,186 @@
+{
+  "materia_oficial": "Coro e Técnica Vocal",
+  "materia": "Coro e Técnica Vocal",
+  "etapa": "Bachillerato",
+  "ciclo": "1º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Escoitar e visionar de forma activa pezas vocais de distintos estilos, xéneros e culturas, analizando os trazos de estilo e as características da interpretación, para desenvolver o criterio estético, estimular o hábito de escoita activa e ampliar as posibilidades de gozo da música.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Expresarse vocal e corporalmente, de forma individual e colectiva, a través da aplicación de diferentes técnicas e a realización de actividades de improvisación, para reforzar a autoestima e a autoconfianza e desenvolver a voz e o corpo como instrumentos de comunicación.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Interpretar pezas de diferentes estilos e xéneros musicais, participando en distintas formacións vocais, para potenciar unha comunicación artística rica e o desenvolvemento de valores colectivos.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Participar en proxectos escénicos, realizando actuacións e asumindo tarefas propias da produción, para favorecer o crecemento artístico persoal, enriquecer a contorna cultural e identificar oportunidades de desenvolvemento persoal, social, académico ou profesional.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Analizar pezas vocais explicando de maneira razoada as calidades que as fan afíns a un estilo, a un xénero ou a unha cultura, así como outras características da interpretación e da posta en escena."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Expresarse con corrección, usando un vocabulario musical específico sobre conceptos de linguaxe musical, aspectos vocais e corais para realizar xuízos de valor obxectivos sobre pezas vocais sinxelas e interpretacións de diferentes épocas e estilos."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Apreciar a importancia do silencio, a concentración e a atención como premisas básicas para realizar e traballar a escoita activa."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Experimentar as capacidades interpretativas da voz, realizar exercicios e improvisacións para o desenvolvemento da escoita activa e da capacidade vocal, aplicando técnicas vocais e corporais sas que permitan valorar a importancia desa técnica vocal e os hábitos corporais."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Relacionar a interpretación coa expresión de sentimentos e emocións, aplicando técnicas vocais e reforzando a autoestima e a confianza nun mesmo."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "3",
+      "descripcion": "Participar nas actividades de técnica vocal, con actitude de respecto cara ás producións dos demais, demostrando interese por mellorar, escoita activa e unha expresión vocal e corporal adecuada, con especial atención á calidade do son, precisión técnica e expresividade artística."
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "1",
+      "descripcion": "Expresarse cun vocabulario técnico apropiado no referido tanto ao canto, á técnica vocal como á linguaxe musical."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "1",
+      "descripcion": "Recoñecer as intencionalidades da práctica coral e o canto, tanto na música da nosa tradición occidental como na doutras culturas, distinguindo e valorando as características das súas linguaxes."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Participar como intérprete de coro, demostrando eficacia, escoita activa e unha expresión vocal e corporal adecuada ao servizo do conxunto e ás directrices da dirección, recoñecendo as indicacións, xestos básicos e pautas marcadas pola directora ou o director."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "4",
+      "descripcion": "Mostrar na actuación unha actitude escénica adecuada, cumprindo as normas de comportamento grupais e respectando o público e as súas opinións."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "4",
+      "descripcion": "Participar activamente na montaxe de proxectos escénicos con responsabilidade e conciencia de grupo, integrando de forma aberta os diferentes coñecementos adquiridos previamente sobre a voz e o canto para crear proxectos innovadores que utilicen diversos soportes audiovisuais, relacionando inclusivamente as oportunidades artísticas actuais mediante o coñecemento de iniciativas musicais e o seu impacto social e profesional."
+    },
+    {
+      "codigo": "3.5",
+      "competencia": "3",
+      "descripcion": "Valorar a práctica vocal de conxunto como forma de expresión musical e gozo, utilizando fontes musicais de notación convencional e non convencional como apoio á interpretación."
+    },
+    {
+      "codigo": "3.6",
+      "competencia": "2",
+      "descripcion": "Recoñecer a importancia da improvisación grupal, percusión corporal, o desenvolvemento da memoria e a utilización de diferentes técnicas coreográficas para crear un proxecto musical coral propio e orixinal."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "Bloque 1. Análise",
+      "titulo": "Análise",
+      "items": [
+        "Vocabulario musical específico: conceptos de linguaxe musical e aspectos vocais e corais.",
+        "Estratexias de escoita activa: o silencio, primeira premisa para unha escoita activa; traballo práctico a través da voz e da audición sobre as calidades do son e a súa representación no pentagrama: pulso, compases, células rítmicas básicas, notas, intervalos e escalas, acordes, cadencias, dinámicas e agóxica, forma musical, tímbrica, texturas.",
+        "Características básicas dos estilos, xéneros e culturas musicais seleccionados: recoñecemento auditivo, análise e xuízos de valor obxectivos.",
+        "Análise e escoita activa de pezas vocais sinxelas, de diferentes épocas e estilos do ámbito occidental, así como doutros ámbitos culturais e de orixe popular."
+      ],
+      "codigos_items": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4"
+      ]
+    },
+    {
+      "codigo": "2",
+      "bloque": "Bloque 2. Técnica vocal",
+      "titulo": "Técnica vocal",
+      "items": [
+        "Práctica da relaxación e da concentración.",
+        "Coidado da voz e postura do corpo.",
+        "Rexistros vocais. Tesitura e coloratura. Afinación e empaste no conxunto.",
+        "O oído harmónico e a afinación: entoación de intervalos melódicos e harmónicos sinxelos.",
+        "Elementos da produción vocal: respiración, emisión, articulación, resonancias e dinámica.",
+        "Técnicas de expresión corporal. Relación da emisión vocal e o movemento.",
+        "Exercicios e vocalizacións. Improvisacións.",
+        "Normas de comportamento individual e de colaboración e respecto cara aos demais na execución de exercicios de técnica vocal.",
+        "Interpretación de obras vocais significativas para a aprendizaxe da técnica e o desenvolvemento da expresividade interpretativa."
+      ],
+      "codigos_items": [
+        "2.1",
+        "2.2",
+        "2.3",
+        "2.4",
+        "2.5",
+        "2.6",
+        "2.7",
+        "2.8",
+        "2.9"
+      ]
+    },
+    {
+      "codigo": "3",
+      "bloque": "Bloque 3. Práctica de conxunto",
+      "titulo": "Práctica de conxunto",
+      "items": [
+        "O son de conxunto: respiración, ataque, afinación, articulación, ritmo, fraseo e dinámica. Equilibrio entre voces e planos sonoros.",
+        "Premisas para o desenvolvemento da improvisación.",
+        "A percusión corporal e outros deseños coreográficos.",
+        "A lectura básica de partituras con notación convencional e non convencional.",
+        "A memoria musical.",
+        "Compromiso cos obxectivos grupais: normas de comportamento grupal na preparación do repertorio, nas actuacións e na asistencia como público a eventos musicais e escénicos.",
+        "Indicacións e xestos da dirección coral: importancia da dirección nas actuacións en público.",
+        "Repertorio a unha, dúas e tres voces iguais como introdución á polifonía vocal: afinación, empaste e dinámica no",
+        "anto a varias voces.",
+        "Traballo técnico, interpretativo e estilístico de repertorio coral de diferentes épocas e estilos do ámbito occiden-",
+        "al, así como doutros ámbitos culturais e de orixe popular, de nivel básico, con ou sen acompañamento instrumen-",
+        "al.",
+        "O texto e a súa métrica como base da articulación, a velocidade e a precisión rítmica.",
+        "Actitude escénica e relación co público: representación pública de repertorio coral de diferentes épocas e estilos",
+        "a música occidental, así como doutros ámbitos culturais e de orixe popular."
+      ],
+      "codigos_items": [
+        "3.1",
+        "3.2",
+        "3.3",
+        "3.4",
+        "3.5",
+        "3.6",
+        "3.7",
+        "3.8",
+        "3.9",
+        "3.10",
+        "3.11",
+        "3.12",
+        "3.13",
+        "3.14",
+        "3.15"
+      ]
+    }
+  ],
+  "comunidad": "galicia",
+  "idioma": "gl"
+}

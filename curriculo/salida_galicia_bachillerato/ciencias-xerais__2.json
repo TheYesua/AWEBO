@@ -1,0 +1,563 @@
+{
+  "materia_oficial": "Ciencias Xerais",
+  "materia": "Ciencias Xerais",
+  "etapa": "Bachillerato",
+  "ciclo": "2º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Aplicar as metodoloxías propias da ciencia utilizando con precisión, procedementos, materiais e instrumentos adecuados para responder a cuestións sobre procesos físicos, químicos, biolóxicos e xeolóxicos.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Comprender e explicar os procesos da contorna e explicalos utilizando os principios, leis e teorías científicas adecuados para adquirir unha visión holística do funcionamento do medio natural.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Argumentar sobre a importancia dos estilos de vida sustentables e saudables baseándose nos fundamentos científicos para adoptalos e promovelos na súa contorna.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Aplicar o pensamento científico e os razoamentos lóxico-matemáticos, mediante a procura e selección de estratexias e ferramentas apropiadas, para resolver problemas relacionados coas ciencias experimentais.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Analizar a contribución da ciencia e das persoas que se dedican a ela, con perspectiva de xénero e entendéndoa como un proceso colectivo e interdisciplinar en continua construción para valorar o seu papel esencial no progreso da sociedade.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Utilizar recursos variados, con sentido crítico e ético, para buscar e seleccionar información contrastada e establecer colaboracións.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Expor e responder cuestións acerca de procesos observados na contorna, seguindo as pautas das metodoloxías científicas."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Contrastar hipóteses realizando experimentos en laboratorios ou en contornas virtuais seguindo as normas de seguridade correspondentes."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Comunicar os resultados dun experimento ou traballo científico utilizando os recursos adecuados e de acordo cos principios éticos básicos."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "5",
+      "descripcion": "Recoñecer a relevancia da ciencia no progreso da sociedade, valorando o importante papel que xogan as persoas no desempeño da investigación científica."
+    },
+    {
+      "codigo": "1.5",
+      "competencia": "6",
+      "descripcion": "Buscar, contrastar e seleccionar información sobre fenómenos e procesos físicos, químicos, biolóxicos ou xeolóxicos en diferentes formatos, utilizando os recursos necesarios, tecnolóxicos ou doutro tipo."
+    },
+    {
+      "codigo": "1.6",
+      "competencia": "6",
+      "descripcion": "Establecer colaboracións, utilizando os recursos necesarios, tecnolóxicos ou doutro tipo, nas diferentes etapas do proxecto científico, na realización de actividades ou na resolución de problemas."
+    },
+    {
+      "codigo": "1.7",
+      "competencia": "6",
+      "descripcion": "Recoñecer o papel das científicas e dos científicos no avance e nas melloras da sociedade, valorando as súas contribucións á ciencia e á tecnoloxía."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Explicar, utilizando os fundamentos científicos adecuados, os elementos e os procesos básicos da biosfera e da xeosfera."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Coñecer a orixe do Universo, do sistema solar, da Terra e da Lúa, describindo as súas características e os seus movementos e relacionando estes cos seus efectos."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Reflexionar sobre o proceso da aparición da vida adoptando unha actitude crítica e escéptica cara a informacións sen unha base científica (pseudociencias, teorías conspiratorias, crenzas infundadas, noticias falsas etc.)."
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "2",
+      "descripcion": "Relacionar a dinámica interna e externa da Terra coa teoría da tectónica das placas recoñecendo as estruturas xeorresultantes e analizando a aparición de riscos."
+    },
+    {
+      "codigo": "2.5",
+      "competencia": "2",
+      "descripcion": "Analizar a estrutura e as funcións das capas fluídas reflexionando sobre o seu papel esencial para a vida na Terra."
+    },
+    {
+      "codigo": "2.6",
+      "competencia": "2",
+      "descripcion": "Recoñecer os criterios utilizados para clasificar os seres vivos, identificando as principais características e describindo as súas adaptacións ao medio."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "2",
+      "descripcion": "Identificar os compoñentes do ecosistema, describindo as súas interaccións e explicando a transferencia de materia e enerxía nas redes tróficas."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "4",
+      "descripcion": "Resolver problemas relacionados coa dinámica dos ecosistemas utilizando o pensamento científico e o razoamento lóxico-matemático."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "2",
+      "descripcion": "Analizar a estrutura e as funcións dos solos reflexionando sobre o seu papel esencial para o desenvolvemento da vida."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "3",
+      "descripcion": "Analizar e recoñecer as causas e as consecuencias das actividades humanas no ambiente propoñendo accións para a súa conservación."
+    },
+    {
+      "codigo": "3.5",
+      "competencia": "3",
+      "descripcion": "Investigar e analizar criticamente a solución dun problema ambiental transmitíndoa de forma clara e rigorosa e evitando informacións sen base científica (pseudociencias, teorías conspiratorias, crenzas infundadas, informacións falsas etc.)."
+    },
+    {
+      "codigo": "3.6",
+      "competencia": "3",
+      "descripcion": "Adoptar e promover hábitos compatibles cun modelo de desenvolvemento sustentable e valorar a súa importancia utilizando fundamentos científicos."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "2",
+      "descripcion": "Recoñecer no eido estrutural as biomoléculas establecendo relacións coas súas funcións e importancia nos seres vivos."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "2",
+      "descripcion": "Interpretar no eido molecular a expresión da información xenética, distinguindo os principais procesos e reflexionando sobre o seu significado biolóxico."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Coñecer conceptos básicos da xenética e resolver problemas e cuestións sinxelas de herdanza de caracteres interpretando os resultados de forma crítica."
+    },
+    {
+      "codigo": "4.4",
+      "competencia": "2",
+      "descripcion": "Describir as principais técnicas da enxeñaría xenética e interpretar as implicacións éticas, sociais e ambientais en relación cos avances en biotecnoloxía e enxeñaría xenética, utilizando fontes fiables e adoptando unha actitude crítica e escéptica cara a informacións sen unha base científica (pseudociencias, teorías conspiratorias, crenzas infundadas, informacións falsas etc.)."
+    },
+    {
+      "codigo": "4.5",
+      "competencia": "3",
+      "descripcion": "Analizar o concepto de saúde e enfermidade empregando a definición que proporciona a OMS."
+    },
+    {
+      "codigo": "4.6",
+      "competencia": "2",
+      "descripcion": "Relacionar as enfermidades infecciosas e non infecciosas cos seus axentes causantes e os seus tratamentos, reflexionando sobre o papel dos antibióticos e o uso adecuado destes."
+    },
+    {
+      "codigo": "4.7",
+      "competencia": "2",
+      "descripcion": "Recoñecer o papel esencial das vacinas na sociedade, utilizando fontes fiables adoptando unha actitude crítica e escéptica cara a informacións sen unha base científica (pseudociencias, teorías conspiratorias, crenzas infundadas, informacións falsas etc.)."
+    },
+    {
+      "codigo": "4.8",
+      "competencia": "3",
+      "descripcion": "Adoptar e promover hábitos saudables (dieta equilibrada, hixiene, vacinación, uso adecuado de antibióticos, rexeitamento ao consumo de drogas, legais e ilegais, exercicio físico, hixiene do sono, posturas , valorar a súa importancia utilizando os fundamentos da fisioloxía humana."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "2",
+      "descripcion": "Analizar e explicar fenómenos da contorna, representándoos mediante expresións, táboas, gráficas, modelos, simulacións, diagramas ou outros formatos."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "2",
+      "descripcion": "Explicar fenómenos que ocorren na contorna utilizando principios, leis e teorías das ciencias da natureza."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "2",
+      "descripcion": "Identificar e analizar os fenómenos fisicoquímicos máis relevantes, explicándoos a través das principais leis ou teorías científicas."
+    },
+    {
+      "codigo": "5.4",
+      "competencia": "4",
+      "descripcion": "Resolver problemas relacionados con fenómenos e procesos físicos e químicos utilizando o pensamento científico e o razoamento lóxico-matemático e buscando estratexias alternativas de resolución cando sexa necesario."
+    },
+    {
+      "codigo": "5.5",
+      "competencia": "4",
+      "descripcion": "Analizar criticamente a solución dun problema relacionado con fenómenos e procesos físicos e químicos, modificando as conclusións ou as estratexias utilizadas se a solución non é viable ou ante novos datos achegados."
+    },
+    {
+      "codigo": "5.6",
+      "competencia": "5",
+      "descripcion": "Recoñecer a ciencia como unha área de coñecemento global, analizando a interrelación e a interdependencia entre cada unha das disciplinas que a forman."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "2",
+      "descripcion": "Analizar e explicar fenómenos da contorna, representándoos mediante diversos formatos, como expresións, táboas, gráficas, modelos, simulacións ou diagramas."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "2",
+      "descripcion": "Explicar fenómenos que ocorren na contorna utilizando principios, leis e teorías da física."
+    },
+    {
+      "codigo": "6.3",
+      "competencia": "4",
+      "descripcion": "Resolver problemas de física relacionados con fenómenos e procesos da ciencia utilizando o pensamento científico e o razoamento lóxico-matemático e buscando estratexias alternativas de resolución cando sexa necesario."
+    },
+    {
+      "codigo": "6.4",
+      "competencia": "5",
+      "descripcion": "Recoñecer a física como unha ciencia global e básica, fundamental para a comprensión doutras disciplinas científicas."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "Bloque 1. Construíndo ciencia",
+      "titulo": "Construíndo ciencia",
+      "items": [
+        "A evolución histórica do saber científico: a ciencia como labor colectivo, interdisciplinar e en continua construción e evolución.",
+        "Estratexias para a elaboración dun proxecto científico interdisciplinar.",
+        "Fontes fiables de información: procura, recoñecemento e utilización.",
+        "Experiencias científicas de laboratorio e/ou de campo: deseño, planificación e realización.",
+        "Controis experimentais e contraste de hipóteses.",
+        "Métodos de análise de resultados: organización, representación e ferramentas estatísticas.",
+        "Comunicación científica: vocabulario científico, formatos (informes, vídeos, modelos, gráficos, diapositivas, gráficos, pósteres, e ferramentas dixitais.",
+        "Importancia social da contribución e do labor científico das persoas dedicadas á ciencia. O papel das mulleres na ciencia."
+      ],
+      "codigos_items": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4",
+        "1.5",
+        "1.6",
+        "1.7",
+        "1.8"
+      ]
+    },
+    {
+      "codigo": "2",
+      "bloque": "Bloque 2. O sistema Terra",
+      "titulo": "O sistema Terra",
+      "items": [
+        "O Universo.",
+        "A orixe do Universo, do sistema solar e da Terra. Importancia das súas características para explicar a súa orixe.",
+        "A Lúa e a Terra. Forma e movementos e os seus efectos.",
+        "Aparición da vida na Terra. Principais hipóteses. Posibilidade de vida noutros planetas.",
+        "A xeosfera.",
+        "Estrutura e dinámica do interior terrestre. Teoría da tectónica de placas.",
+        "Procesos xeolóxicos externos.",
+        "Riscos xeolóxicos. Medidas de predición e prevención e de corrección.",
+        "As capas fluídas da Terra.",
+        "Funcións e dinámica da atmosfera e da hidrosfera.",
+        "Interacción coa superficie terrestre e cos seres vivos.",
+        "Os seres vivos.",
+        "Clasificación e principais características dos distintos grupos.",
+        "Adaptacións ao medio."
+      ],
+      "codigos_items": [
+        "2.1",
+        "2.2",
+        "2.3",
+        "2.4",
+        "2.5",
+        "2.6",
+        "2.7",
+        "2.8",
+        "2.9",
+        "2.10",
+        "2.11",
+        "2.12",
+        "2.13",
+        "2.14"
+      ]
+    },
+    {
+      "codigo": "3",
+      "bloque": "Bloque 3. Os ecosistemas e o ambiente",
+      "titulo": "Os ecosistemas e o ambiente",
+      "items": [
+        "Os ecosistemas.",
+        "Estrutura: relación entre compoñentes bióticos e abióticos.",
+        "Dinámica: relacións tróficas. Fluxo de enerxía e ciclo da materia.",
+        "Resolución de problemas asociados.",
+        "Os solos.",
+        "Edafoxénese.",
+        "A importancia da conservación do solo.",
+        "O ambiente.",
+        "Principais problemas ambientais de extensión local, rexional e global (quecemento global, buraco da capa de ozono, destrución dos espazos naturais, perda da biodiversidade, contaminación do aire e da auga, desertificaCausas e consecuencias.",
+        "Recursos e fontes de enerxía renovables e non renovables.",
+        "Prevención e xestión de residuos.",
+        "Economía circular.",
+        "Relación entre conservación do ambiente, saúde humana e economía. Concepto one health.",
+        "Modelo de desenvolvemento sustentable."
+      ],
+      "codigos_items": [
+        "3.1",
+        "3.2",
+        "3.3",
+        "3.4",
+        "3.5",
+        "3.6",
+        "3.7",
+        "3.8",
+        "3.9",
+        "3.10",
+        "3.11",
+        "3.12",
+        "3.13",
+        "3.14"
+      ]
+    },
+    {
+      "codigo": "4",
+      "bloque": "Bloque 4. Bioloxía para o século XXI",
+      "titulo": "Bioloxía para o século XXI",
+      "items": [
+        "Bioloxía molecular.",
+        "Bioelementos. Biomoléculas inorgánicas e orgánicas. Estrutura básica e funcións. Importancia biolóxica.",
+        "Expresión da información xenética. Procesos implicados.",
+        "O código xenético. Características e relación coa súa función biolóxica.",
+        "Xenética.",
+        "Conceptos básicos de xenética.",
+        "A transmisión xenética de caracteres: resolución de problemas sinxelos.",
+        "Introdución á xenética cuantitativa e á epixenética.",
+        "Enxeñaría xenética e biotecnoloxía.",
+        "Técnicas de enxeñaría xenética: PCR, encimas de restrición, clonación molecular e CRISPR-CAS9.",
+        "Posibilidades da manipulación dirixida do ADN.",
+        "Aplicacións e repercusións da biotecnoloxía: agricultura, gandería, medicina ou recuperación ambiental. Importancia biotecnolóxica dos microorganismos.",
+        "Saúde e enfermidade.",
+        "Concepto de saúde (OMS).",
+        "As enfermidades infecciosas e non infecciosas: causas, prevención e tratamento.",
+        "As zoonoses e as pandemias.",
+        "O mecanismo de actuación das vacinas e a súa importancia.",
+        "O uso adecuado dos antibióticos."
+      ],
+      "codigos_items": [
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4",
+        "4.5",
+        "4.6",
+        "4.7",
+        "4.8",
+        "4.9",
+        "4.10",
+        "4.11",
+        "4.12",
+        "4.13",
+        "4.14",
+        "4.15",
+        "4.16",
+        "4.17",
+        "4.18"
+      ]
+    },
+    {
+      "codigo": "5",
+      "bloque": "Bloque 5. Un universo de materia e enerxía",
+      "titulo": "Un universo de materia e enerxía",
+      "items": [
+        "Sistemas materiais macroscópicos.",
+        "A materia e os seus estados de agregación: sólido, líquido e gasoso.",
+        "Teoría cinética e cambios de estado.",
+        "Cambios físicos.",
+        "Reaccións químicas.",
+        "Clasificación dos sistemas materiais en función da súa composición.",
+        "Mesturas, disolucións e substancias puras.",
+        "Propiedades das disolucións.",
+        "A estrutura interna da materia e a súa relación coas regularidades que se producen na táboa periódica.",
+        "Estrutura electrónica dos átomos. Desenvolvemento histórico do modelo atómico.",
+        "Desenvolvemento da táboa periódica: contribucións históricas á súa elaboración actual e importancia como ferramenta preditiva das propiedades dos elementos.",
+        "Posición dun elemento na táboa periódica a partir da súa configuración electrónica.",
+        "Tendencias periódicas. Aplicación á predición de valores de propiedades dos elementos da táboa a partir da súa posición nesta.",
+        "Formación de compostos químicos.",
+        "Normas de nomenclatura da IUPAC aplicando as devanditas normas ao recoñecemento e á escritura de fórmulas e nomes de diferentes especies químicas. Aplicacións que teñen na vida cotiá.",
+        "Transformacións químicas dos sistemas materiais e leis que as rexen.",
+        "Leis fundamentais da química: relacións estequiométricas en reaccións químicas.",
+        "Clasificación das reaccións químicas: aplicacións da reacción química en procesos industriais, ambientais e sociais significativos.",
+        "Enerxía contida nun sistema, as súas propiedades e as súas manifestacións: Conservación da enerxía mecánica. Enerxía interna.",
+        "Enerxía contida nun sistema, as súas propiedades e as súas manifestacións: Primeiro principio da termodinámica: intercambios de enerxía entre sistemas.",
+        "Enerxía contida nun sistema, as súas propiedades e as súas manifestacións: Procesos termodinámicos: tipos.",
+        "Enerxía contida nun sistema, as súas propiedades e as súas manifestacións: Ecuacións termoquímicas. concepto de entalpía de reacción. Procesos endotérmicos e exotérmicos. Balance enerxético entre produtos e reactivos.",
+        "Enerxía contida nun sistema, as súas propiedades e as súas manifestacións: Segundo principio da termodinámica. Entropía.",
+        "Enerxía contida nun sistema, as súas propiedades e as súas manifestacións: Enerxía de Gibbs. Espontaneidade e equilibrio.",
+        "Enerxía contida nun sistema, as súas propiedades e as súas manifestacións: Enerxía e desenvolvemento sustentable."
+      ],
+      "codigos_items": [
+        "5.1",
+        "5.2",
+        "5.3",
+        "5.4",
+        "5.5",
+        "5.6",
+        "5.7",
+        "5.8",
+        "5.9",
+        "5.10",
+        "5.11",
+        "5.12",
+        "5.13",
+        "5.14",
+        "5.15",
+        "5.16",
+        "5.17",
+        "5.18",
+        "5.19",
+        "5.20",
+        "5.21",
+        "5.22",
+        "5.23",
+        "5.24",
+        "5.25"
+      ]
+    },
+    {
+      "codigo": "6",
+      "bloque": "Bloque 6. As forzas que nos moven",
+      "titulo": "As forzas que nos moven",
+      "items": [
+        "Descrición do movemento dun obxecto empregando as ecuacións básicas da cinemática.",
+        "Conceptos xerais: posición, velocidade e aceleración; compoñentes intrínsecas da aceleración.",
+        "Movemento rectilíneo uniforme e uniformemente acelerado; aplicacións, por exemplo, en seguridade viaria.",
+        "Movemento circular uniforme.",
+        "Dinámica newtoniana.",
+        "Leis de Newton.",
+        "Momento lineal e a súa conservación; aplicacións e manifestacións na natureza.",
+        "Momento de forzas e a súa relación coa rotación.",
+        "Estática: equilibrios de estruturas simples nas que interveñen pesos, tensións e forzas de reacción; aplicacións de interese en enxeñaría, xeoloxía e bioloxía.",
+        "Forzas fundamentais da natureza.",
+        "Forza gravitacional: lei da gravitación universal, campo gravitacional, órbitas de astros, leis de Kepler.",
+        "Forza electrostática: lei de Coulomb, campo electrostático, exemplos de interese na natureza.",
+        "Forza magnética: lei de Lorentz; campo magnético.",
+        "Electromagnetismo. Fenómenos electromagnéticos de interese.",
+        "Forza nuclear forte: estabilidade nuclear, fisión e fusión nucleares, radioactividade e lei de decaemento exponencial.",
+        ".4 Orientacións pedagóxicas",
+        "intervención educativa na materia de Ciencias Xerais desenvolverá o seu currículo e tratará",
+        "e asentar de xeito gradual e progresivo as aprendizaxes que lle faciliten ao alumnado o logro",
+        "os obxectivos da materia e, en combinación co resto das materias, unha adecuada adquisición",
+        "as competencias clave e o logro dos obxectivos da etapa.",
+        "este sentido, no deseño das actividades, o profesorado terá que considerar a relación exis-",
+        "ente entre os obxectivos da materia e as competencias clave a través dos descritores operativos",
+        "as liñas de actuación no proceso de ensino e aprendizaxe que se presentan nos apartados se-",
+        "uintes e seleccionar aqueles criterios de avaliación do currículo que se axusten á finalidade bus-",
+        "ada, así como empregalos para verificar o adecuado grado de adquisición e o nivel de desem-",
+        "eño.",
+        "elación entre os obxectivos da materia de Ciencias Xerais e as competencias clave a través dos",
+        "escritores operativos establecidos no anexo I",
+        "bxectivos",
+        "a materia",
+        "BX1",
+        "BX2",
+        "BX3",
+        "BX4",
+        "BX5",
+        "BX6",
+        "iñas de actuación no proceso de ensino e aprendizaxe",
+        "s liñas de actuación no proceso de ensino e aprendizaxe que permitan o logro dos obxectivos",
+        "unha adecuada adquisición das competencias poderán versar sobre:",
+        "Un enfoque de traballo eminentemente práctico e conectado coa realidade, buscando a inter-",
+        "isciplinariedade e sempre tendo como horizonte o desenvolvemento das oito competencias",
+        "lave.",
+        "A posta en práctica de situacións de aprendizaxe ou actividades competenciais baseadas en",
+        "ituacións reais e que busquen que o alumnado mobilice de forma integrada unha ampla va-",
+        "iedade de coñecementos, destrezas e actitudes.",
+        "O desenvolvemento de estratexias para traballar transversalmente a comprensión lectora, a",
+        "xpresión oral e escrita, a comunicación audiovisual, a competencia dixital e o fomento da",
+        "reatividade, do espírito científico e do emprendemento.",
+        "A énfase na atención á diversidade do alumnado, na atención individualizada, na prevención",
+        "as dificultades de aprendizaxe e na posta en práctica de mecanismos de reforzo tan pronto",
+        "omo se detecten estas dificultades.",
+        "O deseño de experiencias de laboratorio para lle permitir ao alumnado asimilar de xeito sig-",
+        "ificativo os saberes da materia e conectalos coa realidade.",
+        "A realización de proxectos significativos para o alumnado e a resolución colaborativa de pro-",
+        "lemas, reforzando a autoestima, a autonomía, a reflexión e a responsabilidade.",
+        "A toma de decisións baseadas en xuízos morais e a resolución de problemas e conflitos en",
+        "olaboración para contribuír á adquisición das competencias necesarias para seguir diversos",
+        "rocesos de pensamento, utilizar o razoamento lóxico e analizar e axuizar criticamente os",
+        "roblemas sociais e históricos."
+      ],
+      "codigos_items": [
+        "6.1",
+        "6.2",
+        "6.3",
+        "6.4",
+        "6.5",
+        "6.6",
+        "6.7",
+        "6.8",
+        "6.9",
+        "6.10",
+        "6.11",
+        "6.12",
+        "6.13",
+        "6.14",
+        "6.15",
+        "6.16",
+        "6.17",
+        "6.18",
+        "6.19",
+        "6.20",
+        "6.21",
+        "6.22",
+        "6.23",
+        "6.24",
+        "6.25",
+        "6.26",
+        "6.27",
+        "6.28",
+        "6.29",
+        "6.30",
+        "6.31",
+        "6.32",
+        "6.33",
+        "6.34",
+        "6.35",
+        "6.36",
+        "6.37",
+        "6.38",
+        "6.39",
+        "6.40",
+        "6.41",
+        "6.42",
+        "6.43",
+        "6.44",
+        "6.45",
+        "6.46",
+        "6.47",
+        "6.48",
+        "6.49",
+        "6.50",
+        "6.51",
+        "6.52",
+        "6.53",
+        "6.54",
+        "6.55",
+        "6.56",
+        "6.57",
+        "6.58",
+        "6.59"
+      ]
+    }
+  ],
+  "comunidad": "galicia",
+  "idioma": "gl"
+}

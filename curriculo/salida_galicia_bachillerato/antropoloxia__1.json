@@ -1,0 +1,352 @@
+{
+  "materia_oficial": "Antropoloxía",
+  "materia": "Antropoloxía",
+  "etapa": "Bachillerato",
+  "ciclo": "1º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Identificar o obxecto de estudo da Antropoloxía, empregando con propiedade os seus conceptos e termos e discernindo entre as súas ramas e escolas para analizar e comprender os problemas propios do seu campo.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Entender e valorar as reflexións que a filosofía vén facendo desde os seus inicios sobre a natureza humana, guiada pola intención de atopar aquel ou aqueles elementos que poidan constituír o feito radical e específico que nos caracteriza, facendo unha comparación histórica das respostas así como confrontándoas coas achegadas por outras ramas do saber, para apreciar que, malia a historicidade das respostas, a cuestión de entender en que consiste ser humano parece que formará parte perenne das interrogacións que nos facemos para dármonos sentido e para darllo ao mundo.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Examinar o proceso de hominización debuxando a árbore filoxenética do ser humano e reconstruíndo o curso da evolución humana mediante o estudo dos restos fósiles, e clarificar o proceso de humanización identificando os distintos factores que interveñen nel, para manter unha actitude harmoniosa e respectuosa co medio e cos seres vivos, así como unha actitude crítica ante posturas dogmáticas respecto á aparición do ser humano ou as diferenzas entre individuos e grupos humanos.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Recoñecer a gran variabilidade da especie humana froito da bioloxía, identificando as achegas relativas á herdanza, á cultura e á interacción co ambiente nas poboacións humanas anteriores e actuais, para construír unha actitude crítica e de rexeitamento ante as discriminacións por razón de xénero, orixe racial ou étnica, lugar de nacemento ou veciñanza e unha actitude respectuosa e solidaria con todo ser humano e cos outros animais.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Entender o ser humano como animal social, e estudar a cultura e a sociedade desde un punto de vista antropolóxico, incidindo nos métodos de investigación e nas diferentes escolas antropolóxicas, comprendendo a importancia da endoculturación e da antropoloxía do parentesco, e analizando o etnocentrismo e o relativismo cultural, para entender a construción social da cultura, a diversidade cultural e as actuais culturas globalizadas.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Analizar a importancia da produción cultural, tanto material como inmaterial, para comprender os procesos de patrimonialización cultural, entender e valorar os aspectos e as manifestacións propias da cultura galega, e para poder desenvolver traballos etnográficos ou etnolóxicos sobre ela.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Delimitar e precisar o campo de estudo da Antropoloxía, así como a súa metodoloxía e as súas técnicas."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Definir e concretar o obxecto peculiar de estudo das ramas da Antropoloxía."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Diferenciar a Antropoloxía doutros saberes"
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Analizar o papel da Antropoloxía filosófica entre as outras disciplinas filosóficas mediante a consideración rigorosa do papel que xoga o ser humano na definición mesma desas disciplinas, e a lectura crítica de textos centrais da tradición do pensamento occidental que perfilan esa relación."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Reflexionar sobre a situación filosofía na súa análise do ser humano, logo da conformación da Antropoloxía sociocultural como ciencia social autónoma e da Antropoloxía fisicobiolóxica como ciencia natural que estuda a natureza humana, debatendo de xeito argumentado e construtivo sobre a posibilidade dun espazo propio para esa indagación filosófica."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Repasar as variacións históricas de teorías que, tanto en tradicións non occidentais como na nosa tradición filosófica, xurdiron para explicar a natureza humana, encadrando esas variacións nas grandes liñas que determinaron as diferenzas entre as distintas épocas da historia da filosofía."
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "2",
+      "descripcion": "Presentar organizadamente as grandes teorías filosóficas que pretenderon dar co trazo da especificidade dos humanos, usando ferramentas TIC axeitadas e, de ser o caso, confrontando os argumentos desas teorías cos coñecementos achegados, tanto no eido sociocultural como no físicobiolóxico, por outras disciplinas antropolóxicas alleas á filosofía."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Analizar o proceso de hominización, repasando o rexistro de restos fósiles que testemuñan o proceso evolutivo que levou á posibilidade de esclarecer a árbore filoxenética do ser humano ata a aparición da especie homo sapiens, a través do estudo das especies prehomínidas e homínidas."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Coñecer a humanización como proceso evolutivo de adaptación ao medio, comprendendo a plasticidade biolóxica do ser humano que lle permitiu crear a cultura a través da análise da importancia da linguaxe simbólica, da fabricación de ferramentas, da transmisión de coñecementos e do pensamento abstracto."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "4",
+      "descripcion": "Recoñecer a gran diversidade e variabilidade da especie humana a través do traballo colaborativo do alumnado, fortalecendo nel unha actitude positiva e respectuosa cara ás diferenzas, apreciándoas como enriquecedoras."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "5",
+      "descripcion": "Definir o ser humano desde a súa dimensión social e cultural, entendendo a súa pertenza a diferentes grupos sociais, e comprendendo a noción de rol social e cultural."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "5",
+      "descripcion": "Analizar o termo cultura, asumindo a súa importancia social, salientando os axentes e os procesos de endoculturación, distinguindo as achegas das diferentes escolas antropolóxicas, e comprendendo as perspectivas emic e etic."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "5",
+      "descripcion": "Comprender, aceptar e valorar a diversidade cultural e as diferenzas sociais, entendendo as implicacións do etnocentrismo e do relativismo cultural, e distinguindo entre multiculturalismo, interculturalismo e transculturalismo."
+    },
+    {
+      "codigo": "4.4",
+      "competencia": "6",
+      "descripcion": "Describir e entender as producións culturais, tanto materiais como inmateriais, e comprender a importancia da patrimonialización da cultura nas sociedades actuais."
+    },
+    {
+      "codigo": "4.5",
+      "competencia": "6",
+      "descripcion": "Entender a importancia da linguaxe e do parentesco en todos os procesos culturais e sociais ao longo do tempo."
+    },
+    {
+      "codigo": "4.6",
+      "competencia": "6",
+      "descripcion": "Reflexionar sobre os aspectos propios da cultura e da sociedade galega, desenvolvendo un traballo de campo, desde os puntos de vista etnográfico ou etnolóxico."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "Bloque 1. A Antropoloxía como saber",
+      "titulo": "A Antropoloxía como saber",
+      "items": [
+        "A Antropoloxía.",
+        "Definición.",
+        "Obxecto.",
+        "Fins.",
+        "Método e técnicas dos estudos antropolóxicos.",
+        "Ramas da antropoloxía.",
+        "Antropoloxía física.",
+        "Antropoloxía sociocultural.",
+        "Antropoloxía filosófica.",
+        "A Antropoloxía e a súa relación con outros saberes."
+      ],
+      "codigos_items": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4",
+        "1.5",
+        "1.6",
+        "1.7",
+        "1.8",
+        "1.9",
+        "1.10"
+      ]
+    },
+    {
+      "codigo": "2",
+      "bloque": "Bloque 2. Antropoloxía filosófica",
+      "titulo": "Antropoloxía filosófica",
+      "items": [
+        "A Antropoloxía entre as disciplinas filosóficas.",
+        "A posición ontolóxica do ser humano.",
+        "As raíces antropolóxicas da ética, a estética e a filosofía política.",
+        "A Antropoloxía filosófica na era da Antropoloxía físicobiolóxica e da Antropoloxía sociocultural.",
+        "A idea da natureza humana na tradición filosófica.",
+        "O problema da natureza humana desde outros horizontes culturais.",
+        "Na Filosofía antiga.",
+        "No Medievo.",
+        "Do Renacemento á Ilustración.",
+        "Desde o século XIX.",
+        "A busca da especificidade humana.",
+        "Autoconsciencia e consciencia da finitude.",
+        "A linguaxe e o simbolismo.",
+        "A praxe en liberdade.",
+        "As paixóns e os afectos."
+      ],
+      "codigos_items": [
+        "2.1",
+        "2.2",
+        "2.3",
+        "2.4",
+        "2.5",
+        "2.6",
+        "2.7",
+        "2.8",
+        "2.9",
+        "2.10",
+        "2.11",
+        "2.12",
+        "2.13",
+        "2.14",
+        "2.15"
+      ]
+    },
+    {
+      "codigo": "3",
+      "bloque": "Bloque 3. Antropoloxía física: hominización e humanización",
+      "titulo": "Antropoloxía física: hominización e humanización",
+      "items": [
+        "A evolución humana: o proceso de hominización.",
+        "A orixe do homo sapiens desde o punto de vista evolutivo.",
+        "A árbore filoxenética.",
+        "O proceso de humanización.",
+        "A adaptación do homo sapiens ao medio: a linguaxe, a técnica e o pensamento abstracto.",
+        "O papel das mulleres na humanización.",
+        "A diversidade biolóxica das poboacións humanas.",
+        "O papel da herdanza, a cultura e o ambiente nela.",
+        "Significado das variacións físicas das poboacións humanas e a súa importancia para o conxunto da especie."
+      ],
+      "codigos_items": [
+        "3.1",
+        "3.2",
+        "3.3",
+        "3.4",
+        "3.5",
+        "3.6",
+        "3.7",
+        "3.8",
+        "3.9"
+      ]
+    },
+    {
+      "codigo": "4",
+      "bloque": "Bloque 4. Antropoloxía sociocultural",
+      "titulo": "Antropoloxía sociocultural",
+      "items": [
+        "A Antropoloxía sociocultural.",
+        "Os métodos de investigación.",
+        "As escolas antropolóxicas.",
+        "O ser humano como animal social.",
+        "O rol social e cultural.",
+        "A dimensión social e cultural da linguaxe.",
+        "s diferenzas sociais.",
+        "Definición de cultura e endoculturación.",
+        "construción social da cultura.",
+        "ulturas tradicionais e culturas globalizadas.",
+        "A diversidade cultural.",
+        "tnocentrismo e relativismo cultural. A análise da cultura desde as perspectivas emic e etic.",
+        "ulticulturalismo, interculturalismo e transculturalismo.",
+        "diversidade cultural sobre o sexo: sexualidade, sexo e xénero.",
+        "s universais culturais.",
+        "A produción cultural material e inmaterial.",
+        "hábitat.",
+        "s costumes e tradicións.",
+        "s manifestacións culturais.",
+        "Antropoloxía do parentesco.",
+        "Antropoloxía cultural galega e a súa patrimonialización. Etnografía e etnoloxía.",
+        ".4 Orientacións pedagóxicas",
+        "intervención educativa na materia de Antropoloxía desenvolverá o seu currículo e tratará de",
+        "sentar de xeito gradual e progresivo as aprendizaxes que lle faciliten ao alumnado o logro dos",
+        "bxectivos da materia e, en combinación co resto de materias, unha adecuada adquisición das",
+        "ompetencias clave e o logro dos obxectivos da etapa.",
+        "este sentido, no deseño das actividades, o profesorado terá que considerar a relación exis-",
+        "ente entre os obxectivos da materia e as competencias clave a través dos descritores operativos",
+        "as liñas de actuación no proceso de ensino e aprendizaxe, que se presentan nos apartados se-",
+        "uintes, e seleccionar aqueles criterios de avaliación do currículo que se axusten á finalidade",
+        "uscada, así como empregalos para verificar as aprendizaxes do alumnado e o seu nivel de de-",
+        "empeño.",
+        "elación entre os obxectivos da materia de Antropoloxía e as competencias clave a través dos",
+        "escritores operativos establecidos no anexo I",
+        "bxectivos",
+        "a materia",
+        "BX1",
+        "BX2",
+        "BX3",
+        "BX4",
+        "BX5",
+        "BX6",
+        "iñas de actuación no proceso de ensino e aprendizaxe",
+        "O uso de distintos métodos que teñan en conta os diferentes ritmos de aprendizaxe do alum-",
+        "ado, favorezan a capacidade de aprender por si mesmo e promovan o traballo en equipo.",
+        "A realización de proxectos significativos para o alumnado e a resolución colaborativa de pro-",
+        "lemas, que reforzan a autoestima, a autonomía, a reflexión e a responsabilidade.",
+        "A énfase na atención á diversidade do alumnado, na atención individualizada, na prevención",
+        "as dificultades de aprendizaxe e na posta en práctica de mecanismos de reforzo tan pronto",
+        "omo se detecten estas dificultades.",
+        "O uso de estratexias para traballar transversalmente a comprensión lectora, a expresión oral",
+        "escrita, a comunicación audiovisual, a competencia dixital, o fomento da creatividade, do",
+        "spírito científico e do emprendemento.",
+        "A incentivación dun afán de indagación e necesidade de novos coñecementos a través da ca-",
+        "acidade de xeración de curiosidade.",
+        "O uso de estratexias para traballar o carácter transversal e práctico, empregando no proceso",
+        "e ensino e aprendizaxe, de xeito asiduo, as tecnoloxías da información e da comunicación,",
+        "ue permiten o acceso a recursos virtuais.",
+        "O emprego de metodoloxías activas que procuren un «saber facer» que conecte coas habilida-",
+        "es prácticas."
+      ],
+      "codigos_items": [
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4",
+        "4.5",
+        "4.6",
+        "4.7",
+        "4.8",
+        "4.9",
+        "4.10",
+        "4.11",
+        "4.12",
+        "4.13",
+        "4.14",
+        "4.15",
+        "4.16",
+        "4.17",
+        "4.18",
+        "4.19",
+        "4.20",
+        "4.21",
+        "4.22",
+        "4.23",
+        "4.24",
+        "4.25",
+        "4.26",
+        "4.27",
+        "4.28",
+        "4.29",
+        "4.30",
+        "4.31",
+        "4.32",
+        "4.33",
+        "4.34",
+        "4.35",
+        "4.36",
+        "4.37",
+        "4.38",
+        "4.39",
+        "4.40",
+        "4.41",
+        "4.42",
+        "4.43",
+        "4.44",
+        "4.45",
+        "4.46",
+        "4.47",
+        "4.48",
+        "4.49",
+        "4.50",
+        "4.51",
+        "4.52",
+        "4.53",
+        "4.54",
+        "4.55",
+        "4.56",
+        "4.57",
+        "4.58",
+        "4.59",
+        "4.60"
+      ]
+    }
+  ],
+  "comunidad": "galicia",
+  "idioma": "gl"
+}

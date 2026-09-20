@@ -1,0 +1,456 @@
+{
+  "materia_oficial": "Física",
+  "materia": "Física",
+  "etapa": "Bachillerato",
+  "ciclo": "2º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Utilizar as teorías, principios e leis que rexen os procesos físicos máis importantes, considerando a súa base experimental e a súa descrición teórica e desenvolvemento matemático na resolución de problemas, para recoñecer a física como unha ciencia relevante implicada no desenvolvemento da tecnoloxía, da economía, da sociedade e da sustentabilidade ambiental.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Adoptar os modelos, teorías e leis aceptados da física como base de estudo dos sistemas naturais e predicir a súa evolución para inferir solucións xerais aos problemas cotiáns relacionados coas aplicacións prácticas demandadas pola sociedade no campo tecnolóxico, industrial e biosanitario.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Utilizar a linguaxe da física coa formulación matemática dos seus principios e leis, magnitudes, unidades etc. para establecer unha comunicación axeitada entre diferentes comunidades científicas e como unha ferramenta fundamental na investigación desta ciencia.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Utilizar de forma autónoma, eficiente, crítica e responsable recursos en distintos formatos, plataformas dixitais de información e de comunicación no traballo individual e colectivo, para o fomento da creatividade mediante a produción e o intercambio de materiais científicos e divulgativos que faciliten achegar a física á sociedade como un campo de coñecementos accesible.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Aplicar técnicas de traballo e de indagación propias da física, así como a experimentación, o razoamento lóxico-matemático e a cooperación, na resolución de problemas e a interpretación de situacións relacionadas con esta ciencia para pór en valor o papel da física nunha sociedade baseada en valores éticos e sostibles.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Recoñecer e analizar o carácter multidisciplinar da física, considerando o seu relevante percorrido histórico e as súas contribucións ao avance do coñecemento científico como un proceso en continua evolución e innovación, para establecer unhas bases de coñecemento e de relación con outras disciplinas científicas.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "3",
+      "descripcion": "Utilizar de xeito rigoroso as unidades das variables físicas en diferentes sistemas de unidades, empregando correctamente a súa notación e as súas equivalencias, así como a elaboración e interpretación axeitada de gráficas que relacionan variables físicas, posibilitando unha comunicación efectiva con toda a comunidade científica."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "3",
+      "descripcion": "Expresar de forma axeitada os resultados, argumentando as solucións obtidas na resolución dos exercicios e problemas que se formulan, ben sexa a través de situacións reais ou ideais."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "4",
+      "descripcion": "Consultar, elaborar e intercambiar materiais científicos e divulgativos en distintos formatos con outros membros da contorna de aprendizaxe, utilizando de xeito autónomo e eficiente plataformas dixitais."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "4",
+      "descripcion": "Usar de xeito crítico, ético e responsable medios de comunicación dixitais e tradicionais como modo de enriquecer a aprendizaxe e o traballo individual e colectivo."
+    },
+    {
+      "codigo": "1.5",
+      "competencia": "5",
+      "descripcion": "Obter relacións entre variables físicas, medindo e tratando os datos experimentais, determinando os erros e utilizando sistemas de representación gráfica."
+    },
+    {
+      "codigo": "1.6",
+      "competencia": "5",
+      "descripcion": "Reproducir en laboratorios, reais ou virtuais, determinados procesos físicos modificando as variables que os condicionan, considerando os principios, leis ou teorías implicados, xerando o correspondente informe con formato axeitado e incluíndo argumentacións, conclusións, táboas de datos, gráficas e referencias bibliográficas."
+    },
+    {
+      "codigo": "1.7",
+      "competencia": "2",
+      "descripcion": "Inferir solucións a problemas xerais a partir da análise de situacións particulares e das variables de que dependen."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "1",
+      "descripcion": "Recoñecer a relevancia da física dos sistemas gravitacionais no desenvolvemento da ciencia, na tecnoloxía, na economía, na sociedade e na sustentabilidade ambiental, empregando axeitadamente os fundamentos científicos apropiados."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "1",
+      "descripcion": "Resolver problemas de gravitación newtoniana de maneira analítica e experimental virtual, utilizando principios, leis e teorías da física."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Analizar e comprender a evolución dos sistemas de corpos en interacción gravitacional, utilizando modelos, leis e teorías da gravitación newtoniana."
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "6",
+      "descripcion": "Identificar os principais avances científicos relacionados coa gravitación newtoniana que contribuíron ao desenvolvemento da física e, en consecuencia, á formulación das leis e teorías aceptadas actualmente no conxunto das disciplinas científicas, como as fases para o entendemento das metodoloxías da ciencia, a súa evolución constante e a súa universalidade."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "1",
+      "descripcion": "Recoñecer a relevancia do electromagnetismo clásico no desenvolvemento da ciencia, da tecnoloxía, da economía, da sociedade e da sustentabilidade ambiental, empregando axeitadamente os fundamentos científicos apropiados."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "1",
+      "descripcion": "Resolver problemas de electromagnetismo clásico de xeito experimental e analítico, utilizando principios, leis e teorías da física."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "2",
+      "descripcion": "Analizar e comprender a evolución dos sistemas de partículas cargadas utilizando modelos, leis e teorías do electromagnetismo clásico."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "2",
+      "descripcion": "Coñecer aplicacións prácticas e produtos útiles para a sociedade no eido tecnolóxico, industrial e biosanitario, analizándoos con base nos modelos, nas leis e nas teorías do electromagnetismo clásico."
+    },
+    {
+      "codigo": "3.5",
+      "competencia": "3",
+      "descripcion": "Aplicar os principios, leis e teorías científicas na análise crítica de procesos electromagnéticos da contorna, como os observados e os publicados en distintos medios de comunicación, analizando, comprendendo e explicando as causas que os producen."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "1",
+      "descripcion": "Resolver problemas sobre osciladores harmónicos, física ondulatoria e óptica xeométrica de xeito experimental e analítico utilizando principios, leis e teorías da física."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "2",
+      "descripcion": "Analizar e comprender a evolución de sistemas naturais mecánicos oscilantes, utilizando modelos, leis e teorías da física ondulatoria e de osciladores harmónicos."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "2",
+      "descripcion": "Coñecer aplicacións prácticas e produtos útiles para a sociedade no eido tecnolóxico, industrial e biosanitario, analizándoos con base nos modelos, nas leis e nas teorías da física ondulatoria e dos osciladores harmónicos, así como da óptica."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "1",
+      "descripcion": "Recoñecer a relevancia da física relativista e da física cuántica no desenvolvemento da ciencia, da tecnoloxía, da economía, da sociedade e da sustentabilidade ambiental empregando axeitadamente os fundamentos científicos apropiados."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "1",
+      "descripcion": "Resolver problemas de física moderna de xeito experimental, real ou virtual, e analítico utilizando principios, leis e teorías da física."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "2",
+      "descripcion": "Coñecer aplicacións prácticas e produtos útiles para a sociedade no eido tecnolóxico, industrial e biosanitario, analizándoos con base nos modelos, nas leis e nas teorías da física moderna."
+    },
+    {
+      "codigo": "5.4",
+      "competencia": "5",
+      "descripcion": "Valorar a física debatendo de maneira fundamentada sobre os seus avances e a implicación na sociedade desde o punto de vista da ética e da sustentabilidade."
+    },
+    {
+      "codigo": "5.5",
+      "competencia": "6",
+      "descripcion": "Identificar os principais avances científicos relacionados coa física moderna que contribuíron á formulación das leis e das teorías aceptadas actualmente no conxunto das disciplinas científicas, como as fases para o entendemento das metodoloxías da ciencia, a súa evolución constante e a súa universalidade."
+    },
+    {
+      "codigo": "5.6",
+      "competencia": "6",
+      "descripcion": "Recoñecer o carácter multidisciplinar da ciencia e as contribucións dunhas disciplinas noutras, establecendo relacións entre a física e a química, a bioloxía, a xeoloxía ou as matemáticas."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "Bloque 1. A actividade científica na física",
+      "titulo": "A actividade científica na física",
+      "items": [
+        "Emprego de instrumentos básicos para o estudo da física: linguaxe lóxico-matemática, ferramentas matemáticas, representacións gráficas e sistemas de unidades.",
+        "Recoñecemento e utilización de fontes veraces e medios de colaboración para a procura de información científica.",
+        "Deseño e execución de experimentos (reais ou virtuais) e de proxectos de investigación, en condicións de seguridade e utilizando instrumental axeitado, para a resolución de problemas de física.",
+        "Ferramentas matemáticas para o tratamento de datos experimentais e para a análise de resultados na resolución de problemas de física.",
+        "Interpretación e produción de información científica."
+      ],
+      "codigos_items": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4",
+        "1.5"
+      ]
+    },
+    {
+      "codigo": "2",
+      "bloque": "Bloque 2. Campo gravitacional",
+      "titulo": "Campo gravitacional",
+      "items": [
+        "Gravitación universal.",
+        "Determinación, a través do cálculo vectorial, do campo gravitacional producido por un sistema de masas. Efectos sobre as variables cinemáticas e dinámicas de partículas de proba inmersas no campo.",
+        "Momento angular dun obxecto nun campo gravitacional: cálculo, relación coas forzas centrais e aplicación da súa conservación no estudo do seu movemento.",
+        "Órbitas gravitacionals e Universo.",
+        "Leis que se verifican no movemento planetario e extrapolación ao movemento de satélites e corpos celestes.",
+        "Enerxía mecánica dun obxecto sometido a un campo gravitacional: tipo de órbita que posúe, cálculo do traballo ou os balances enerxéticos existentes en desprazamentos entre distintas posicións, así como en cambios das súas velocidades e tipos de traxectorias.",
+        "Introdución á cosmoloxía e á astrofísica como aplicación dos conceptos gravitacionais: implicación da física na evolución de obxectos astronómicos e do coñecemento do Universo e repercusión da investigación nestes ámbitos na industria, na tecnoloxía, na economía e na sociedade."
+      ],
+      "codigos_items": [
+        "2.1",
+        "2.2",
+        "2.3",
+        "2.4",
+        "2.5",
+        "2.6",
+        "2.7"
+      ]
+    },
+    {
+      "codigo": "3",
+      "bloque": "Bloque 3. Campo electromagnético",
+      "titulo": "Campo electromagnético",
+      "items": [
+        "Campo eléctrico.",
+        "Campo eléctrico: tratamento vectorial, determinación das variables cinemáticas e dinámicas de cargas eléctricas libres en presenza deste campo. Fenómenos naturais e aplicacións tecnolóxicas en que se aprecian estes efectos.",
+        "Intensidade do campo eléctrico en distribucións de cargas discretas.",
+        "Cálculo e interpretación do fluxo de campo eléctrico; teorema de Gauss e aplicacións: intensidade do campo eléctrico en distribucións de carga continuas.",
+        "Enerxía potencial e potencial eléctrico en distribucións de cargas estáticas: equilibrio electrostático de condutores.",
+        "Conservación da enerxía e cambios nas magnitudes cinemáticas no desprazamento de cargas libres entre puntos de distinto potencial eléctrico.",
+        "Liñas de campo eléctrico producido por distribucións de carga sinxelas.",
+        "Campo magnético e indución electromagnética.",
+        "Campo magnético: tratamento vectorial, determinación das variables cinemáticas e dinámicas de cargas eléctricas libres en presenza deste campo. Fenómenos naturais e aplicacións tecnolóxicas nos que se aprecian estes efectos.",
+        "Campos magnéticos xerados por fíos con corrente eléctrica en distintas configuracións xeométricas: rectilíneos, espiras, solenoides ou toros. Interacción con cargas eléctricas libres presentes na súa contorna.",
+        "Liñas de campo magnético producido por imáns e fíos con corrente eléctrica en distintas configuracións xeométricas.",
+        "Forzas magnéticas sobre correntes: funcionamento de motores sinxelos.",
+        "Xeración de forza electromotriz mediante sistemas nos que se produce unha variación do fluxo magnético: xeradores e transformadores."
+      ],
+      "codigos_items": [
+        "3.1",
+        "3.2",
+        "3.3",
+        "3.4",
+        "3.5",
+        "3.6",
+        "3.7",
+        "3.8",
+        "3.9",
+        "3.10",
+        "3.11",
+        "3.12",
+        "3.13"
+      ]
+    },
+    {
+      "codigo": "4",
+      "bloque": "Bloque 4. Vibracións e ondas",
+      "titulo": "Vibracións e ondas",
+      "items": [
+        "Movemento ondulatorio.",
+        "Movemento oscilatorio: variables cinemáticas e dinámicas dun corpo oscilante e conservación da enerxía nestes sistemas.",
+        "Movemento ondulatorio: gráficas de oscilación en función da posición e do tempo, función de onda que o describe e relación co movemento harmónico simple. Distintos tipos de movementos ondulatorios na natureza.",
+        "Fenómenos ondulatorios: situacións e contextos naturais en que se poñen de manifesto distintos fenómenos ondulatorios e aplicacións. Cambios nas propiedades ondulatorias en función do movemento do emisor e do receptor. Ondas sonoras e as súas calidades.",
+        "Óptica.",
+        "A luz como onda electromagnética. Espectro electromagnético.",
+        "Formación de imaxes en medios e obxectos con distinto índice de refracción.",
+        "Sistemas ópticos: lentes delgadas, espellos planos e curvos e as súas aplicacións."
+      ],
+      "codigos_items": [
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4",
+        "4.5",
+        "4.6",
+        "4.7",
+        "4.8"
+      ]
+    },
+    {
+      "codigo": "5",
+      "bloque": "Bloque 5. Física moderna",
+      "titulo": "Física moderna",
+      "items": [
+        "Física cuántica e relativista.",
+        "Natureza da luz: controversias e debates históricos acerca dela. Efecto fotoeléctrico. Cuantización da enerxía.",
+        "Dualidade onda-corpúsculo e cuantización: hipótese de De Broglie. Principio de incerteza: relacións posiciónmomento e tempo-enerxía.",
+        "Principios da relatividade especial e as súas consecuencias: contracción da lonxitude, dilatación do tempo, masa e enerxía relativistas.",
+        "Física nuclear e de partículas.",
+        "Núcleos atómicos e estabilidade de isótopos. Radioactividade natural e outros procesos nucleares. Aplicacións nos eidos da enxeñaría, da tecnoloxía e da saúde.",
+        "Modelo estándar na física de partículas. Clasificacións das partículas fundamentais. As interaccións fundamentais como procesos de intercambio de partículas (bosóns). Aceleradores de partículas.",
+        ".4 Orientacións pedagóxicas",
+        "intervención educativa na materia de Física desenvolverá o seu currículo e tratará de asentar",
+        "e xeito gradual e progresivo as aprendizaxes que lle faciliten ao alumnado o logro dos obxecti-",
+        "os da materia e, en combinación co resto das materias, unha adecuada adquisición das compe-",
+        "encias clave e o logro dos obxectivos da etapa.",
+        "este sentido, no deseño das actividades, o profesorado terá que considerar a relación exis-",
+        "ente entre os obxectivos da materia e as competencias clave a través dos descritores operativos",
+        "as liñas de actuación no proceso de ensino e aprendizaxe que se presentan nos apartados se-",
+        "uintes e seleccionar aqueles criterios de avaliación do currículo que se axusten á finalidade bus-",
+        "ada, así como empregalos para verificar as aprendizaxes do alumnado e o seu nivel de desem-",
+        "eño.",
+        "elación entre os obxectivos da materia de Física e as competencias clave a través dos descri-",
+        "ores operativos establecidos no anexo I",
+        "bxectivos",
+        "a materia",
+        "BX1",
+        "BX2",
+        "BX3",
+        "BX4",
+        "BX5",
+        "BX6",
+        "iñas de actuación no proceso de ensino e aprendizaxe",
+        "s liñas de actuación no proceso de ensino e aprendizaxe que permitan o logro dos obxectivos",
+        "unha adecuada adquisición das competencias poderán versar sobre:",
+        "O deseño da programación didáctica que relacione entre si todos os elementos curriculares,",
+        "bxectivos, criterios de avaliación e contidos, de acordo co sentido integrado e holístico que",
+        "orresponde ao currículo desta materia.",
+        "O uso de distintas estratexias metodolóxicas que teñan en conta os diferentes ritmos de",
+        "prendizaxe do alumnado, que favorezan a capacidade de aprender por si mesmo e que pro-",
+        "ovan tanto o traballo individual como o cooperativo e o colaborativo.",
+        "A énfase na atención á diversidade do alumnado, na atención individualizada, na prevención",
+        "as dificultades de aprendizaxe e na posta en práctica de mecanismos de reforzo tan pronto",
+        "omo se detecten estas dificultades.",
+        "A realización de proxectos significativos para o alumnado de tarefas de carácter experimental,",
+        "sí como situacións-problema formuladas cun obxectivo concreto, que o alumnado debe re-",
+        "olver facendo un uso axeitado dos distintos tipos de coñecementos, destrezas, actitudes e",
+        "alores, así como a resolución colaborativa e cooperativa de problemas, reforzando a autoes-",
+        "ima, a autonomía, a reflexión e a responsabilidade. Polo tanto, o enfoque que se lle dea a esta",
+        "ateria debe incluír un tratamento experimental e práctico que amplíe a experiencia dos",
+        "lumnos e alumnas máis alá do académico e que lles permita facer conexións coas súas situa-",
+        "ións cotiás, o que contribuirá de forma significativa a que todos desenvolvan as destrezas",
+        "aracterísticas da ciencia.",
+        "O uso de estratexias para traballar transversalmente a comprensión lectora, a expresión oral",
+        "escrita, a comunicación audiovisual, a competencia dixital e o fomento da creatividade, do",
+        "spírito científico e do emprendemento. Débese ter en conta que a construción da ciencia e o",
+        "esenvolvemento do pensamento científico durante todas as etapas da formación do alum-",
+        "ado parte da formulación de cuestións científicas baseadas na observación directa ou indi-",
+        "ecta do mundo en situacións e contextos habituais. A explicación a partir do coñecemento,",
+        "a procura de evidencias, da indagación e da correcta interpretación da información que a",
+        "iario chega ao público en diferentes formatos e a partir de diferentes fontes precisa unha",
+        "decuada adquisición das competencias referidas neste parágrafo.",
+        "A realización de actividades de carácter interdisciplinar que combinen saberes das diferentes",
+        "iencias, da tecnoloxía e das matemáticas, como corresponde ao carácter STEM da física. De-",
+        "erase ter en conta que as ciencias básicas que se inclúen nos estudos de bacharelato, entre",
+        "las a física, contribúen, todas por igual e de forma complementaria ao desenvolvemento dun",
+        "erfil do alumnado baseado na argumentación e no razoamento que son propios do pensa-",
+        "ento científico.",
+        "O uso de metodoloxías motivadoras que busquen fomentar no alumnado o gusto pola ciencia",
+        "a promoción de vocacións científicas. O fin último da aprendizaxe da física nesta etapa é",
+        "cadar un coñecemento físico máis profundo que desenvolva o pensamento científico, esper-",
+        "ando máis preguntas, máis coñecemento, más hábitos do traballo característico da ciencia e,",
+        "unha última instancia, máis vocación, de xeito que se favoreza que o alumnado se poida de-",
+        "icar a actividades tan apaixonantes como son a investigación e as actividades laborais cien-",
+        "íficas. Co propósito de manter a motivación por aprender, é necesario que o profesorado",
+        "onsiga que o alumnado comprenda o que aprende, que saiba para que o aprende e que sexa",
+        "uen de utilizar o aprendido en distintos contextos dentro e fóra da aula.",
+        "A realización de actividades de afianzamento que favorezan a adquisición de aprendizaxes sig-",
+        "ificativas que, en relación co punto anterior, axuden positivamente á formación das futuras",
+        "eracións dos nosos científicos e científicas. A este respecto, merecen especial consideración",
+        "s preconcepcións contrarias ás evidencias científicas, polas barreiras que implican para o lo-",
+        "ro dos obxectivos deste currículo.",
+        "O traballo por proxectos é un exemplo de metodoloxía que axuda ao alumnado a organizar o",
+        "eu pensamento, favorecendo a reflexión, a crítica, a elaboración de hipóteses e a tarefa in-",
+        "estigadora, a través dun proceso en que cada un aplica, de forma activa, os seus coñecemen-",
+        "os e habilidades a proxectos reais, favorecendo unha aprendizaxe orientada á acción cun im-",
+        "ortante carácter interdisciplinar en que os estudantes conxugan coñecementos, habilidades",
+        "actitudes para levar a bo fin o proxecto proposto.",
+        "O primeiro bloque, de carácter transversal, deberase traballar en combinación co resto dos",
+        "loques e ao longo de todo o curso."
+      ],
+      "codigos_items": [
+        "5.1",
+        "5.2",
+        "5.3",
+        "5.4",
+        "5.5",
+        "5.6",
+        "5.7",
+        "5.8",
+        "5.9",
+        "5.10",
+        "5.11",
+        "5.12",
+        "5.13",
+        "5.14",
+        "5.15",
+        "5.16",
+        "5.17",
+        "5.18",
+        "5.19",
+        "5.20",
+        "5.21",
+        "5.22",
+        "5.23",
+        "5.24",
+        "5.25",
+        "5.26",
+        "5.27",
+        "5.28",
+        "5.29",
+        "5.30",
+        "5.31",
+        "5.32",
+        "5.33",
+        "5.34",
+        "5.35",
+        "5.36",
+        "5.37",
+        "5.38",
+        "5.39",
+        "5.40",
+        "5.41",
+        "5.42",
+        "5.43",
+        "5.44",
+        "5.45",
+        "5.46",
+        "5.47",
+        "5.48",
+        "5.49",
+        "5.50",
+        "5.51",
+        "5.52",
+        "5.53",
+        "5.54",
+        "5.55",
+        "5.56",
+        "5.57",
+        "5.58",
+        "5.59",
+        "5.60",
+        "5.61",
+        "5.62",
+        "5.63",
+        "5.64",
+        "5.65",
+        "5.66",
+        "5.67",
+        "5.68",
+        "5.69",
+        "5.70",
+        "5.71",
+        "5.72",
+        "5.73",
+        "5.74",
+        "5.75",
+        "5.76",
+        "5.77",
+        "5.78",
+        "5.79",
+        "5.80",
+        "5.81",
+        "5.82",
+        "5.83",
+        "5.84",
+        "5.85",
+        "5.86"
+      ]
+    }
+  ],
+  "comunidad": "galicia",
+  "idioma": "gl"
+}

@@ -1,0 +1,400 @@
+{
+  "materia_oficial": "Economía",
+  "materia": "Economía",
+  "etapa": "Bachillerato",
+  "ciclo": "1º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Valorar o problema da escaseza e a importancia de adoptar decisións no ámbito económico, analizando a súa repercusión nos distintos sectores e comparando solucións alternativas que ofrecen os diferentes sistemas para comprender o funcionamento da realidade económica.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Recoñecer e comprender o funcionamento do mercado, analizando os seus fallos, para estudar a repercusión destes na contorna e facilitar a toma de decisións no ámbito económico.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Distinguir e valorar o papel dos distintos axentes económicos que interveñen no fluxo circular da renda recoñecendo, con sentido crítico, os beneficios e os custos que xera, para determinar como se produce o desenvolvemento económico e a súa relación co benestar da sociedade.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Coñecer e comprender o funcionamento do sistema financeiro valorando os seus efectos sobre a economía real e analizando os elementos que interveñen nas decisións financeiras relacionadas co investimento, o aforro, os produtos financeiros e a procura de fontes de financiamento para planificar e xestionar con responsabilidade e autonomía as propias finanzas e adoptar decisións financeiras fundamentadas.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Identificar e valorar os retos e os desafíos aos que se enfronta a economía actual, analizando o impacto da globalización económica, a nova economía e a revolución dixital para propor iniciativas que fomenten a equidade, a xustiza e a sustentabilidade.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Analizar os problemas económicos actuais mediante o estudo de casos, a investigación e a experimentación, utilizando ferramentas da análise económica e tendo en conta os factores que condicionan as decisións dos axentes económicos, para facilitar a comprensión deses problemas e expor solucións innovadoras e sustentables que respondan a necesidades individuais e colectivas.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Comprender a realidade económica actual, analizando a repercusión das decisións adoptadas no ámbito económico, valorando os procesos de integración económica e establecendo comparacións sobre as solucións alternativas que ofrecen os distintos sistemas."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Comprender o problema da escaseza, identificando os motivos e comparando, de maneira xustificada, diferentes estratexias económicas de resolución deste."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Coñecer os procesos que interveñen na toma das decisións económicas de maneira individual e colectiva analizando o impacto que teñen na sociedade."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "2",
+      "descripcion": "Analizar con espírito crítico os fallos do mercado, avaliando as súas consecuencias e reflexionando sobre as súas posibles solucións segundo os diferentes sistemas económicos."
+    },
+    {
+      "codigo": "1.5",
+      "competencia": "3",
+      "descripcion": "Coñecer como se produce o desenvolvemento económico, o benestar social e a redución da pobreza valorando, con sentido crítico, o papel dos distintos axentes económicos que interveñen no fluxo circular da renda."
+    },
+    {
+      "codigo": "1.6",
+      "competencia": "3",
+      "descripcion": "Comprender a organización dos axentes económicos no fluxo da renda establecendo relacións entre eles e determinando a súa repercusión no desenvolvemento económico e benestar social."
+    },
+    {
+      "codigo": "1.7",
+      "competencia": "4",
+      "descripcion": "Coñecer e comprender o funcionamento do sistema financeiro valorando os seus efectos sobre a economía real e analizando os elementos que interveñen nas decisións financeiras relacionadas co investimento, co aforro, cos produtos financeiros e coa procura de fontes de financiamento, para"
+    },
+    {
+      "codigo": "1.8",
+      "competencia": "4",
+      "descripcion": "Planificar e xestionar con responsabilidade e progresiva autonomía as finanzas persoais e adoptar decisións fundamentadas a partir do coñecemento e da comprensión do sistema financeiro valorando os elementos que interveñen nas decisións financeiras e os efectos que estes poden provocar na economía real."
+    },
+    {
+      "codigo": "1.9",
+      "competencia": "4",
+      "descripcion": "Adquirir coñecementos financeiros a partir da análise do sistema financeiro, do seu funcionamento e dos efectos que se derivan das decisións adoptadas nel e establecendo conexións entre estas aprendizaxes e as súas decisións financeiras persoais que afectan a súa vida cotiá."
+    },
+    {
+      "codigo": "1.10",
+      "competencia": "6",
+      "descripcion": "Expor solucións socioeconómicas que respondan a necesidades individuais e colectivas investigando e explorando a realidade económica tendo en conta diversos factores e aplicando as ferramentas propias do ámbito da economía."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Valorar a repercusión dos fallos do mercado no eido microeconómico e facilitar o proceso de toma de decisións neste ámbito, recoñecendo e comprendendo o seu funcionamento."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Entender o funcionamento do mercado e a natureza das transaccións que teñen lugar nel, analizando elementos como a oferta, a demanda, os prezos, os tipos de mercado e os axentes implicados e reflexionado sobre a súa importancia como fonte de mellora económica e social."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Analizar con espírito crítico os fallos do mercado, avaliando as súas consecuencias e reflexionando sobre as súas posibles solucións."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "1",
+      "descripcion": "Analizar o problema da asignación de recursos na satisfacción das necesidades, tanto individuais como colectivas a escaseza , identificando os motivos e comparando, de maneira xustificada, diferentes estratexias económicas de resolución deste."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "2",
+      "descripcion": "Entender o funcionamento do mercado laboral e a natureza das transaccións que teñen lugar nel, analizando os axentes implicados e reflexionado sobre a súa importancia como fonte de mellora económica e social."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Coñecer como se produce o desenvolvemento económico e o benestar social valorando, con sentido crítico, o papel dos distintos axentes económicos que interveñen no fluxo circular da renda."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "3",
+      "descripcion": "Diferenciar os custos e os beneficios xerados no fluxo circular da renda para cada un dos axentes económicos determinando a súa repercusión no desenvolvemento económico e benestar social."
+    },
+    {
+      "codigo": "3.5",
+      "competencia": "4",
+      "descripcion": "Coñecer e comprender o funcionamento do sistema financeiro e a súa evolución na era dixital, analizando as novas tendencias tecnolóxicas que supoñen unha disrupción no sector financeiro, para planificar e xestionar con maior responsabilidade e autonomía as propias finanzas e adoptar decisións financeiras fundamentadas."
+    },
+    {
+      "codigo": "3.6",
+      "competencia": "4",
+      "descripcion": "Planificar e xestionar con responsabilidade e progresiva autonomía as finanzas persoais e adoptar decisións fundamentadas a partir do coñecemento e da comprensión do sistema financeiro e a súa evolución na era dixital valorando os elementos que interveñen nas decisións financeiras e os efectos que estes poden provocar na economía real."
+    },
+    {
+      "codigo": "3.7",
+      "competencia": "4",
+      "descripcion": "Adquirir coñecementos financeiros a partir da análise do sistema financeiro, do seu funcionamento, da súa evolución e dos efectos que se derivan das decisións adoptadas nel e establecendo conexións entre estas aprendizaxes e as súas decisións financeiras persoais que afectan a súa vida cotiá."
+    },
+    {
+      "codigo": "3.8",
+      "competencia": "5",
+      "descripcion": "Identificar os retos e os desafíos dunha economía global propondo iniciativas que fomenten a equidade, a xustiza e a sustentabilidade e analizando, con sentido crítico, o impacto que provocan a globalización, a nova economía e a revolución dixital no benestar económico e social dos cidadáns."
+    },
+    {
+      "codigo": "3.9",
+      "competencia": "5",
+      "descripcion": "Comprender os retos económicos actuais en materia de comercio internacional e procesos de integración económica, analizando de forma crítica e construtiva os efectos económicos-sociais a partir da análise de casos reais e fomentando iniciativas que respondan ás necesidades que supoñen estes retos."
+    },
+    {
+      "codigo": "3.10",
+      "competencia": "6",
+      "descripcion": "Expor solucións socioeconómicas que respondan a necesidades individuais e colectivas tanto no marco das relacións nacionais coma internacionais, investigando e explorando a realidade económica tendo en conta diversos factores e aplicando as ferramentas propias do ámbito da economía."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "1",
+      "descripcion": "Comprender a realidade económica actual analizando a repercusión das decisións adoptadas pola intervención do Estado en materia de política económica e establecendo comparacións sobre as solucións alternativas que ofrecen os distintos sistemas."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "1",
+      "descripcion": "Comprender o problema básico da economía da escaseza de recursos para garantir o estado do benestar e analizar as diferentes alternativas de financiamento e os seus efectos no conxunto da sociedade."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "3",
+      "descripcion": "Diferenciar os custos e os beneficios que xera para cada un dos axentes económicos no fluxo da renda establecendo relacións entre eles e determinando a súa repercusión no estado do benestar e no seu financiamento."
+    },
+    {
+      "codigo": "4.4",
+      "competencia": "4",
+      "descripcion": "Coñecer e comprender o funcionamento do sistema financeiro, da política monetaria e da estabilidade de prezos valorando os seus efectos sobre a economía real e analizando os elementos que interveñen nas decisións financeiras, como o tipo de xuro, a inflación, o aforro, os produtos financeiros e a procura de fontes de financiamento, para planificar e xestionar con maior responsabilidade e autonomía as propias finanzas e adoptar decisións financeiras fundamentadas."
+    },
+    {
+      "codigo": "4.5",
+      "competencia": "4",
+      "descripcion": "Adquirir coñecementos financeiros a partir da análise do sistema financeiro e da política monetaria e establecendo conexións entre estas aprendizaxes e as súas decisións financeiras persoais que afectan a súa vida cotiá."
+    },
+    {
+      "codigo": "4.6",
+      "competencia": "6",
+      "descripcion": "Expor solucións socioeconómicas que respondan a necesidades individuais e colectivas propias do estado do benestar investigando e explorando a realidade económica tendo en conta diversos factores e aplicando as ferramentas propias do ámbito da economía."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "1",
+      "descripcion": "Comprender a realidade económica actual analizando as oportunidades e os riscos dos procesos de integración económica entre países e da globalización e a súa repercusión na redución das desigualdades."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "1",
+      "descripcion": "Analizar a escaseza de recursos e a pobreza para comprender os fluxos migratorios identificando os motivos e comparando, de maneira xustificada, diferentes estratexias económicas de resolución deste."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "1",
+      "descripcion": "Coñecer os procesos que interveñen na toma das decisións económicas de maneira individual e colectiva analizando o impacto que teñen nos retos económicos actuais."
+    },
+    {
+      "codigo": "5.4",
+      "competencia": "3",
+      "descripcion": "Analizar, con sentido crítico, como se produce o desenvolvemento económico e o benestar social con relación ao desenvolvemento sustentable e aos retos económicos actuais. Estudo de casos."
+    },
+    {
+      "codigo": "5.5",
+      "competencia": "3",
+      "descripcion": "Diferenciar os custos e os beneficios que xera para cada un dos axentes económicos no fluxo da renda establecendo relacións entre eles e determinando a súa repercusión no desenvolvemento económico e no benestar social."
+    },
+    {
+      "codigo": "5.6",
+      "competencia": "5",
+      "descripcion": "Propor iniciativas que fomenten a equidade, a xustiza e a sustentabilidade a partir da identificación dos retos e dos desafíos que supón a economía actual e analizando, con sentido crítico, o impacto que provoca a globalización, a nova economía e a revolución dixital no benestar económico e social dos cidadáns."
+    },
+    {
+      "codigo": "5.7",
+      "competencia": "5",
+      "descripcion": "Comprender os retos económicos actuais analizando de forma crítica e construtiva a contorna, identificando aqueles elementos que condicionan e transforman a economía e fomentando iniciativas que respondan ás necesidades que supoñen estes retos."
+    },
+    {
+      "codigo": "5.8",
+      "competencia": "6",
+      "descripcion": "Expor solucións socioeconómicas que respondan a necesidades individuais e colectivas con relación aos retos económicos actuais, investigando e explorando a realidade económica tendo en conta diversos factores e aplicando as ferramentas propias do ámbito da economía."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "Bloque 1. As decisións económicas",
+      "titulo": "As decisións económicas",
+      "items": [
+        "A economía, as necesidades, os bens e a escaseza. O contido económico das relacións sociais. Pobreza e escaseza. A modelización como ferramenta para entender as interaccións económicas.",
+        "O proceso de toma de decisións económicas. A racionalidade. O custo de oportunidade. Os custos irrecuperables. A análise marxinal. Os incentivos e as expectativas. Teoría de xogos. A eficiencia. Risco e incerteza.",
+        "A organización económica e os sistemas económicos; valoración e comparación.",
+        "Planificación e xestión das decisións financeiras: o investimento, o aforro e o consumo. Diñeiro e transaccións. Funcións do diñeiro e formas do diñeiro. Risco e beneficio. O papel dos bancos na economía. Funcionamento dos produtos financeiros como préstamos, hipotecas e os seus substitutos. Os seguros.",
+        "Teoría de xogos. O dilema do prisioneiro. Xogos repetidos e equilibrios cooperativos.",
+        "Economía do comportamento. Desviacións da racionalidade económica. Decisións económicas e ética. Experimentos ou ensaios económicos.",
+        "Métodos para a análise da realidade económica: o método científico, a modelización e experimentos ou ensaios económicos."
+      ],
+      "codigos_items": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4",
+        "1.5",
+        "1.6",
+        "1.7"
+      ]
+    },
+    {
+      "codigo": "2",
+      "bloque": "Bloque 2. A realidade económica. Ferramentas para entender o mundo cunha visión microeconómica",
+      "titulo": "A realidade económica. Ferramentas para entender o mundo cunha visión microeconómica",
+      "items": [
+        "Intercambio e mercado. Tipos e funcionamento dos mercados. Representación gráfica.",
+        "A elasticidade. Os fallos de mercado. A análise custo-beneficio."
+      ],
+      "codigos_items": [
+        "2.1",
+        "2.2"
+      ]
+    },
+    {
+      "codigo": "3",
+      "bloque": "Bloque 3. A realidade económica. Ferramentas para entender o mundo cunha visión macroeconómica",
+      "titulo": "A realidade económica. Ferramentas para entender o mundo cunha visión macroeconómica",
+      "items": [
+        "A macroeconomía. Os axentes económicos e o fluxo circular da renda. A demanda agregada, a oferta agregada e o seu funcionamento.",
+        "Crecemento económico e desenvolvemento. Os factores do crecemento. A distribución da renda: relación entre eficiencia e equidade. Indicadores do desenvolvemento social. Benestar e calidade de vida.",
+        "Economía laboral. O funcionamento e as tendencias dos mercados de traballo e o impacto dos custos de despedimento. Tipos de desemprego. Efectos e medidas correctoras. A fenda salarial.",
+        "O comercio internacional, os procesos de integración económica e os seus efectos. Proteccionismo e libre comercio. A unión europea e monetaria.",
+        "O sistema financeiro, o seu funcionamento e os seus efectos. Evolución do panorama financeiro. O diñeiro. Tipoloxía do diñeiro e o seu proceso de creación."
+      ],
+      "codigos_items": [
+        "3.1",
+        "3.2",
+        "3.3",
+        "3.4",
+        "3.5"
+      ]
+    },
+    {
+      "codigo": "4",
+      "bloque": "Bloque 4. As políticas económicas",
+      "titulo": "As políticas económicas",
+      "items": [
+        "Economía positiva e economía normativa. A intervención do Estado e a súa xustificación. A política económica e os seus efectos.",
+        "A política fiscal. O estado do benestar e o seu financiamento. O principio de solidariedade e os impostos. O déficit público, a débeda pública e os seus efectos. A economía mergullada.",
+        "A política monetaria e a estabilidade de prezos. Funcionamento do mercado monetario. A inflación: teorías explicativas. Efecto das políticas monetarias sobre a inflación, o crecemento e o benestar."
+      ],
+      "codigos_items": [
+        "4.1",
+        "4.2",
+        "4.3"
+      ]
+    },
+    {
+      "codigo": "5",
+      "bloque": "Bloque 5. Os retos da economía española nun contexto globalizado",
+      "titulo": "Os retos da economía española nun contexto globalizado",
+      "items": [
+        "A globalización: factores explicativos, oportunidades e riscos. A converxencia económica entre países e a redución das desigualdades.",
+        "A nova economía e a revolución dixital. A economía colaborativa. A economía circular. O impacto da revolución dixital sobre o emprego e a distribución da renda. A adaptación da poboación activa ante os retos da revolución dixital.",
+        "O futuro do estado do benestar. Sustentabilidade das pensións. Os fluxos migratorios e as súas implicacións socioeconómicas.",
+        "Teorías sobre o decrecemento económico.",
+        "Os obxectivos de desenvolvemento sustentable (ODS) e os retos económicos actuais. Estudo de casos.",
+        ".4 Orientacións pedagóxicas",
+        "intervención educativa na materia de Economía desenvolverá o seu currículo e tratará de",
+        "sentar de xeito gradual e progresivo as aprendizaxes que lle faciliten ao alumnado o logro dos",
+        "bxectivos da materia e, en combinación co resto das materias, unha adecuada adquisición das",
+        "ompetencias clave e o logro dos obxectivos da etapa.",
+        "este sentido, no deseño das actividades, o profesorado terá que considerar a relación exis-",
+        "ente entre os obxectivos da materia e as competencias clave a través dos descritores operativos",
+        "as liñas de actuación no proceso de ensino e aprendizaxe que se presentan nos apartados se-",
+        "uintes e seleccionar aqueles criterios de avaliación do currículo que se axusten á finalidade bus-",
+        "ada, así como empregalos para verificar as aprendizaxes do alumnado e o seu nivel de desem-",
+        "eño.",
+        "elación entre os obxectivos da materia de Economía e as competencias clave a través dos des-",
+        "ritores operativos establecidos no anexo I",
+        "bxectivos",
+        "a materia",
+        "BX1",
+        "BX2",
+        "BX3",
+        "BX4",
+        "BX5",
+        "BX6",
+        "iñas de actuación no proceso de ensino e aprendizaxe",
+        "O uso de distintos métodos que teñan en conta os diferentes ritmos de aprendizaxe do alum-",
+        "ado, favorezan a capacidade de aprender por si mesmo e promovan o traballo en equipo.",
+        "A realización de proxectos significativos para o alumnado e a resolución colaborativa de pro-",
+        "lemas, reforzando a autoestima, a autonomía, a reflexión e a responsabilidade.",
+        "A énfase na atención á diversidade do alumnado, na atención individualizada, na prevención",
+        "as dificultades de aprendizaxe e na posta en práctica de mecanismos de reforzo tan pronto",
+        "omo se detecten estas dificultades.",
+        "O uso de estratexias para traballar transversalmente a comprensión lectora, a expresión oral",
+        "escrita, a comunicación audiovisual, a competencia dixital, a igualdade de xénero, o fomento",
+        "a creatividade, do espírito científico e do emprendemento.",
+        "O uso de métodos e procedementos de observación e investigación, desde unha perspectiva",
+        "eórico-práctica, que favorezan a aplicación dos saberes e a análise de casos de investigación",
+        "obre a realidade socioeconómica.",
+        "A realización de estudos da realidade, desde unha perspectiva económica, que favorezan a",
+        "nterconexión con outras disciplinas e que lle permitan ao alumnado tomar decisións funda-",
+        "entadas, así como propor iniciativas que poidan dar solucións aos novos retos da sociedade",
+        "ctual."
+      ],
+      "codigos_items": [
+        "5.1",
+        "5.2",
+        "5.3",
+        "5.4",
+        "5.5",
+        "5.6",
+        "5.7",
+        "5.8",
+        "5.9",
+        "5.10",
+        "5.11",
+        "5.12",
+        "5.13",
+        "5.14",
+        "5.15",
+        "5.16",
+        "5.17",
+        "5.18",
+        "5.19",
+        "5.20",
+        "5.21",
+        "5.22",
+        "5.23",
+        "5.24",
+        "5.25",
+        "5.26",
+        "5.27",
+        "5.28",
+        "5.29",
+        "5.30",
+        "5.31",
+        "5.32",
+        "5.33",
+        "5.34",
+        "5.35",
+        "5.36",
+        "5.37",
+        "5.38",
+        "5.39",
+        "5.40",
+        "5.41",
+        "5.42",
+        "5.43",
+        "5.44"
+      ]
+    }
+  ],
+  "comunidad": "galicia",
+  "idioma": "gl"
+}

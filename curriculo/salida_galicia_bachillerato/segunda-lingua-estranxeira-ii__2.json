@@ -1,0 +1,440 @@
+{
+  "materia_oficial": "Segunda Lingua Estranxeira II",
+  "materia": "Segunda Lingua Estranxeira II",
+  "etapa": "Bachillerato",
+  "ciclo": "2º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Comprender as ideas principais e as liñas argumentais básicas de textos expresados na lingua estándar, buscando fontes fiables e facendo uso de estratexias de inferencia e comprobación de significados, para responder ás necesidades comunicativas.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Producir textos claros, ben organizados e con certo detalle, usando estratexias tales como a planificación, a síntese, a compensación ou a autorreparación, para expresar ideas e argumentos de forma adecuada, de acordo con propósitos comunicativos concretos.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Interactuar con outras persoas, con corrección e fluidez suficiente, cunha pronuncia claramente intelixible para facerse entender sen dificultade, usando estratexias de cooperación e empregando recursos analóxicos e dixitais, para responder a propósitos comunicativos en intercambios respectuosos coas normas de cortesía.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Mediar entre distintas linguas ou variedades, en intercambios sinxelos de información relacionados con asuntos cotiáns ou con información persoal básica, usando estratexias e coñecementos eficaces para crear unha atmosfera positiva que facilite a comunicación.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Ampliar e usar os repertorios lingüísticos persoais entre distintas linguas e reflexionar de forma crítica sobre o seu funcionamento facendo explícitos e compartindo as estratexias e os coñecementos propios, para mellorar a resposta ás súas necesidades comunicativas.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Valorar criticamente e adecuarse á diversidade lingüística, cultural e artística a partir da lingua estranxeira, reflexionando e compartindo as semellanzas e as diferenzas entre linguas e culturas, para actuar de forma empática, respectuosa e eficaz, e fomentar a comprensión mutua en situacións interculturais.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Comprender as ideas principais e as liñas argumentais básicas de textos de certa lonxitude, sobre os cales se teñan coñecementos previos ou que sexan próximos á súa experiencia persoal ou académica, expresados na lingua estándar."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Comprender o esencial e os detalles relevantes en situacións de comunicación oral ou escrita, de xeito presencial ou telemático, e dos medios de comunicación social, que impliquen a solicitude de información xeral expresada nun rexistro neutro, nun repertorio de uso común e, no caso da oralidade, se se fala sen precipitación e con claridade."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Seleccionar e aplicar as estratexias, recursos e coñecementos adecuados (recurso ás imaxes, títulos e outras informacións visuais, e aos coñecementos previos sobre o tema ou a situación de comunicación, e aos transferidos desde as linguas que coñece, e a través de diversas fontes de información), para comprender a información global e específica, inferir significados e interpretar elementos non verbais, e buscar, seleccionar e contrastar información."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "1",
+      "descripcion": "Comprender información relevante en textos do seu interese, expositivos, descritivos ou narrativos, en distintos soportes, de certa lonxitude e ben estruturados, nos cales se informa de acontecementos, se describen fenómenos, accións, persoas, obxectos e lugares, e se manifestan opinións, crenzas ou valores con expresións sinxelas e sen implícitos e, no caso da interacción oral, se a persoa interlocutora está disposta a repetir ou reformular o dito."
+    },
+    {
+      "codigo": "1.5",
+      "competencia": "1",
+      "descripcion": "Comprender en textos formais un repertorio básico de expresións fixas para rexeitar (agradecendo ou xustificando), acceder (con reservas ou condicións), expresar posibilidade, imposibilidade ou obriga de facer algo; conceder e denegar (con ou sen obxeccións), aconsellar, recomendar ou animar a facer algo."
+    },
+    {
+      "codigo": "1.6",
+      "competencia": "1",
+      "descripcion": "Buscar información en fontes confiables sobre temas de investigación de interese persoal, educativo ou ocupacional, considerando a selección das fontes de información adecuadas como parte esencial do proceso de investigación para o traballo ou proxecto que se está realizando."
+    },
+    {
+      "codigo": "1.7",
+      "competencia": "2",
+      "descripcion": "Expresar oralmente textos de lonxitude media, comprensibles, previamente preparados, nun rexistro neutro, sobre temas de relevancia persoal ou académicos sobre os cales teña coñecementos previos, utilizando recursos verbais e non verbais, así como estratexias tales como a de planificación, de compensación e de cooperación."
+    },
+    {
+      "codigo": "1.8",
+      "competencia": "2",
+      "descripcion": "Expresarse de xeito adecuado á situación de comunicación, de forma clara e comprensible e coa suficiente fluidez para facerse entender, aínda que se poidan producir pausas e mesmo se as"
+    },
+    {
+      "codigo": "1.9",
+      "competencia": "2",
+      "descripcion": "Redactar, en papel ou en soporte electrónico, textos breves ou de lonxitude media, coherentes e de estrutura clara, sobre temas de interese persoal, ou asuntos cotiáns ou menos habituais, nun rexistro neutro ou informal, utilizando adecuadamente os recursos de cohesión, as convencións ortográficas e os signos de puntuación máis comúns, e amosando un control razoable de expresións e estruturas, e un léxico de uso frecuente, tanto de carácter xeral como máis específico dentro da propia área de especialización ou de interese."
+    },
+    {
+      "codigo": "1.10",
+      "competencia": "2",
+      "descripcion": "Completar documentos comúns nos cales se solicite información persoal ou relativa aos seus estudos ou á súa formación, en soporte tanto impreso como dixital."
+    },
+    {
+      "codigo": "1.11",
+      "competencia": "2",
+      "descripcion": "Aplicar e comunicar coñecementos e estratexias para planificar, producir e revisar textos comprensibles, coherentes e adecuados ás intencións comunicativas, á persoa destinataria e ás características contextuais."
+    },
+    {
+      "codigo": "1.12",
+      "competencia": "3",
+      "descripcion": "Participar en situacións interactivas relacionadas coa experiencia persoal, desenvolvéndose de forma comprensible e clara, aínda que resulten evidentes as pausas e titubeos e sexa necesaria a repetición, a paráfrase e a cooperación das persoas interlocutoras para manter a comunicación, e mostrando empatía e respecto pola cortesía lingüística e a etiqueta dixital."
+    },
+    {
+      "codigo": "1.13",
+      "competencia": "3",
+      "descripcion": "Interactuar con pronuncia clara e intelixible, pedindo que se lle repitan os puntos clave se o necesita, e sen que as súas posibles vacilacións e reformulación de expresións ou estruturas impidan a comunicación."
+    },
+    {
+      "codigo": "1.14",
+      "competencia": "3",
+      "descripcion": "Interaccionar, utilizando os coñecementos socioculturais e sociolingüísticos adquiridos, relativos á vida cotiá, condicións de vida e contorno, relacións interpersoais (nos ámbitos persoal, educativo e ocupacional), comportamento (posturas, expresións faciais, volume da voz, contacto visual e proxémica) e convencións sociais (actitudes e valores), axustando a mensaxe á persoa destinataria e ao propósito comunicativo, e amosando empatía e a cortesía debida."
+    },
+    {
+      "codigo": "1.15",
+      "competencia": "3",
+      "descripcion": "Utilizar estratexias adecuadas para iniciar, manter e terminar a comunicación, tomar e ceder a palabra, solicitar e formular aclaracións e explicacións."
+    },
+    {
+      "codigo": "1.16",
+      "competencia": "3",
+      "descripcion": "Utilizar estratexias de activación dos coñecementos previos sobre modelos e secuencias de interacción, e elementos lingüísticos previamente asimilados e memorizados, compensando as carencias lingüísticas mediante procedementos lingüísticos e paralingüísticos."
+    },
+    {
+      "codigo": "1.17",
+      "competencia": "3",
+      "descripcion": "Amosar unha actitude de respecto cara a si mesmo e cara ás demais persoas para comprender e facerse comprender, considerando o erro como fonte de aprendizaxe."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "4",
+      "descripcion": "Inferir e explicar textos e conceptos breves, sinxelos e predicibles en situacións cotiás e familiares, e transmitir a terceiras persoas a información dun xeito simple, aínda que se deban axudar, ademais, de elementos non lingüísticos, mostrando respecto e empatía polas persoas interlocutoras e polas linguas empregadas."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "4",
+      "descripcion": "Participar na solución de problemas de incomprensión e de entendemento debidos á diversidade sociocultural e lingüística, resumindo, simplificando ou explicando mensaxes ou hábitos socioculturais coñecidos, para crear pontes e facilitar a comprensión e a comunicación."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "5",
+      "descripcion": "Comparar e argumentar as similitudes e diferenzas entre distintas linguas reflexionando sobre o seu funcionamento."
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "5",
+      "descripcion": "Utilizar os coñecementos, estratexias e experiencias das linguas, do seu repertorio lingüístico para comprender e producir textos, e inferir o significado probable de palabras ou frases que descoñece, valorando as competencias que posúe como persoa plurilingüe."
+    },
+    {
+      "codigo": "2.5",
+      "competencia": "5",
+      "descripcion": "Identificar os progresos e as dificultades da súa aprendizaxe da lingua estranxeira realizando actividades de autoavaliación e coavaliación, recoñecendo estratexias de logro propias e alleas, e reproducindo aqueles aspectos que axudan a mellorar, facéndoos explícitos e compartíndoos con outros participantes."
+    },
+    {
+      "codigo": "2.6",
+      "competencia": "5",
+      "descripcion": "Valorar a adquisición dunha competencia plurilingüe suficiente, sen necesidade de acadar niveis de competencia iguais nin similares aos que posúe na súa lingua primeira ou máis usada."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "6",
+      "descripcion": "Participar en proxectos nos cales se utilizan varias linguas e relacionados cos elementos transversais, evitando estereotipos lingüísticos ou culturais e valorando as competencias que posúe como persoa plurilingüe."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "6",
+      "descripcion": "Actuar de forma adecuada, empática e respectuosa en situacións interculturais, construíndo vínculos entre as diferentes linguas e culturas, identificando e rexeitando calquera tipo de discriminación, prexuízo e estereotipo, e recoñecendo valores ecosociais, como a equidade, a reciprocidade e a solidariedade, como vías de solución."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "6",
+      "descripcion": "Incorporar a crítica e a reflexión para adquirir valores, como o respecto á diversidade lingüística, á igualdade e á inclusión, e desenvolver unha visión empática para convivir nunha sociedade intercultural."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "6",
+      "descripcion": "Identificar os aspectos cognitivos, afectivos e comportamentais que forman parte da competencia lingüística e da competencia cultural, valorando o plurilingüismo como salvagarda das especificidades culturais."
+    },
+    {
+      "codigo": "3.5",
+      "competencia": "6",
+      "descripcion": "Valorar positivamente a diversidade cultural a través do uso activo de linguas, saberes e coñecementos de procedencia cultural distinta, co obxectivo de contribuír á cohesión social desde valores ecosociais."
+    },
+    {
+      "codigo": "3.6",
+      "competencia": "6",
+      "descripcion": "Valorar criticamente, desde a consideración dos dereitos humanos, as manifestacións culturais (linguas, costumes, tradicións, crenzas relixiosas etc.) dos países en que se fala a lingua estranxeira, e as múltiples formas de organización social que reflicte a diversidade cultural."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "Bloque 1. Comunicación",
+      "titulo": "Comunicación",
+      "items": [
+        "Manifestación de autoconfianza e iniciativa. Actitude reflexiva ante o erro como parte integrante do proceso de aprendizaxe.",
+        "Uso habitual e autónomo de estratexias para a planificación, execución, control e reparación da comprensión, a",
+        "rodución e a coprodución de textos orais, escritos e multimodais contextualizados.",
+        "Utilización dos coñecementos, destrezas e actitudes que permiten levar a cabo actividades de mediación en situa-",
+        "ións que así o requiran (explicar costumes, manifestacións culturais, relacións familiares ou de amizade, relacións",
+        "Funcións comunicativas de uso común adecuadas ao ámbito e ao contexto comunicativo: establecer e manter de",
+        "eito simple a comunicación e a organización elemental do discurso, describir, en termos simples pero suficientes,",
+        "enómenos e acontecementos; dar instrucións, advertencias e consellos; narrar acontecementos pasados puntuais",
+        "habituais; describir estados e situacións presentes, e expresar sucesos futuros e predicións a curto, medio e",
+        "ongo prazo; expresar emocións; xustificar as súas opinións e explicar os seus plans. Resumir.",
+        "Uso de modelos contextuais e xéneros discursivos de uso común e académico na comprensión, produción e copro-",
+        "ución de textos orais, escritos e multimodais, breves e sinxelos: características e recoñecemento do contexto",
+        "participantes e situación), expectativas xeradas polo contexto, organización e estruturación segundo o xénero, a",
+        "unción textual e a estrutura.",
+        "Utilización de unidades lingüísticas de uso común e significados asociados ás ditas unidades, tales como expresión",
+        "a entidade (obxectos, persoas, ideas, estados, accións, sucesos etc.) e as súas propiedades (existencia, inexisten-",
+        "ia, dimensións...), cantidade e calidade (forma, tamaño, cor, idade...), o espazo e as relacións espaciais, o tempo e",
+        "s relacións temporais (anterioridade, secuencia, posterioridade...), formas básicas da afirmación, a negación, a",
+        "nterrogación e a exclamación, e relacións lóxicas habituais.",
+        "Utilización de léxico común de interese para o alumnado, relativo a tempo e espazo; estados, eventos e acontece-",
+        "ento; actividades, procedementos e procesos; relacións persoais, sociais, académicas e profesionais; educación,",
+        "raballo; lingua e comunicación intercultural; ciencia e tecnoloxía; historia e cultura, así como uso básico de estra-",
+        "exias de enriquecemento léxico (derivación, familias léxicas, polisemia, sinonimia, antonimia...).",
+        "Utilización e recoñecemento de padróns sonoros, acentuais, rítmicos e de entoación: sons e fonemas vocálicos,",
+        "ons e fonemas consonánticos e as súas agrupacións, procesos fonolóxicos básicos, acento fónico dos elementos",
+        "éxicos illados e na oración, e identificación e expresión de intencións comunicativas básicas asociadas a estes",
+        "adróns.",
+        "Utilización e recoñecemento de padróns gráficos e convencións ortográficas: uso das normas de ortografía da",
+        "alabra, utilización adecuada da ortografía da oración (coma, punto e coma, puntos suspensivos, parénteses e",
+        "omiñas) e identificación e expresión de intencións comunicativas básicas asociadas a estes padróns.",
+        "Utilización de convencións e estratexias conversacionais de uso común, en formato síncrono ou asíncrono, para",
+        "niciar, manter e terminar a comunicación, tomar e ceder a palabra, pedir e dar aclaracións e explicacións, refor-",
+        "ular, comparar e contrastar, resumir e parafrasear, colaborar e negociar significados.",
+        "Uso de recursos para a aprendizaxe e estratexias de uso común de procura e selección de información, como",
+        "icionarios, libros de consulta, bibliotecas, mediatecas, etiquetas na rede, recursos dixitais (tradutores, conxuga-",
+        "ores...) e informáticos (correctores ortográficos, gramaticais etc.).",
+        "Respecto á propiedade intelectual e dereitos de autor sobre as fontes consultadas e contidos utilizados: emprego",
+        "e ferramentas para o tratamento de datos bibliográficos e recursos para evitar o plaxio.",
+        "Utilización de ferramentas analóxicas e dixitais de uso común para a comprensión, produción e coprodución oral,",
+        "scrita e multimodal, e de plataformas virtuais de interacción, colaboración e cooperación educativa (aulas",
+        "irtuais, videoconferencias, ferramentas dixitais colaborativas...) para a aprendizaxe, a comunicación e o desenvolvemento de proxectos con falantes ou estudantes da lingua estranxeira."
+      ],
+      "codigos_items": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4",
+        "1.5",
+        "1.6",
+        "1.7",
+        "1.8",
+        "1.9",
+        "1.10",
+        "1.11",
+        "1.12",
+        "1.13",
+        "1.14",
+        "1.15",
+        "1.16",
+        "1.17",
+        "1.18",
+        "1.19",
+        "1.20",
+        "1.21",
+        "1.22",
+        "1.23",
+        "1.24",
+        "1.25",
+        "1.26",
+        "1.27",
+        "1.28",
+        "1.29",
+        "1.30",
+        "1.31",
+        "1.32",
+        "1.33",
+        "1.34",
+        "1.35",
+        "1.36",
+        "1.37",
+        "1.38",
+        "1.39",
+        "1.40",
+        "1.41"
+      ]
+    },
+    {
+      "codigo": "2",
+      "bloque": "Bloque 2. Plurilingüismo e reflexión sobre a aprendizaxe",
+      "titulo": "Plurilingüismo e reflexión sobre a aprendizaxe",
+      "items": [
+        "Utilización de estratexias e técnicas para responder eficazmente e con niveis crecentes de autonomía, adecuación e corrección a unha necesidade comunicativa concreta superando as limitacións derivadas do nivel de competencia na lingua estranxeira e nas demais linguas do repertorio lingüístico propio.",
+        "Reaxuste da tarefa (emprender unha versión máis modesta) ou da mensaxe (facer concesións no que realmente lle gustaría expresar), tras valorar as dificultades e os recursos lingüísticos dispoñibles.",
+        "Uso de elementos coñecidos obtidos de modelos de textos, e de frases feitas e locucións comúns, para elaborar os propios textos.",
+        "Comparación das linguas e variedades que conforman o repertorio lingüístico persoal para recoñecer estratexias de uso común (identificar, organizar, reter, recuperar e utilizar unidades lingüísticas léxico, morfosintaxe, padróns sonoros etc. ).",
+        "Uso de estratexias e ferramentas de uso común, analóxicas e dixitais, individuais e cooperativas, para a autoavaliación, a coavaliación e a autorreparación.",
+        "Manexo de expresións e léxico específico de uso común para reflexionar e compartir a reflexión sobre a comunicación, a lingua, a aprendizaxe e as ferramentas de comunicación e aprendizaxe (metalinguaxe).",
+        "Comparación sistemática entre linguas, a partir de elementos da lingua estranxeira e outras linguas para mellorar a súa aprendizaxe e lograr unha competencia comunicativa integrada."
+      ],
+      "codigos_items": [
+        "2.1",
+        "2.2",
+        "2.3",
+        "2.4",
+        "2.5",
+        "2.6",
+        "2.7"
+      ]
+    },
+    {
+      "codigo": "3",
+      "bloque": "Bloque 3. Interculturalidade",
+      "titulo": "Interculturalidade",
+      "items": [
+        "Consideración da lingua estranxeira como medio de comunicación interpersoal e internacional, facilitador do acceso a outras culturas e outras linguas, e como ferramenta de participación social e de enriquecemento persoal.",
+        "Interese e iniciativa na realización de intercambios comunicativos a través de diferentes medios con falantes ou estudantes da lingua estranxeira, así como por coñecer informacións culturais dos países onde se fala a lingua estranxeira.",
+        "Achegamento a algúns aspectos socioculturais e sociolingüísticos propios de países onde se fala a lingua estranxeira (convencións sociais, normas de cortesía e rexistros; institucións, costumes e rituais; valores, normas, crenzas e actitudes; estereotipos e tabús; linguaxe non verbal; historia, cultura e comunidades etc.).",
+        "Utilización de estratexias de uso común para entender e apreciar a diversidade lingüística, cultural e artística,",
+        "tendendo a valores ecosociais e democráticos.",
+        "Identificación dalgunhas similitudes e diferenzas significativas nos costumes cotiáns entre os países onde se fala",
+        "lingua estranxeira e a propia.",
+        "Actitude receptiva e respectuosa cara ás persoas, aos países e ás comunidades lingüísticas que falan outra lingua",
+        "teñen unha cultura diferente á propia.",
+        "Utilización de estratexias de prevención, detección, rexeitamento e actuación ante usos discriminatorios da lin-",
+        "uaxe verbal e non verbal.",
+        ".4 Orientacións pedagóxicas",
+        "intervención educativa na materia de Segunda Lingua Estranxeira desenvolverá o seu currí-",
+        "ulo e tratará de asentar de xeito gradual e progresivo nos distintos niveis da etapa as aprendi-",
+        "axes que lle faciliten ao alumnado o logro dos obxectivos da materia e, en combinación co resto",
+        "e materias, unha adecuada adquisición das competencias clave e o logro dos obxectivos da",
+        "tapa.",
+        "este sentido, no deseño das actividades, o profesorado terá que considerar a relación exis-",
+        "ente entre os obxectivos da materia e as competencias clave a través dos descritores operativos",
+        "as liñas de actuación no proceso de ensino e aprendizaxe que se presentan nos apartados se-",
+        "uintes, e seleccionar aqueles criterios de avaliación do currículo que se axusten á finalidade",
+        "uscada, así como empregalos para verificar as aprendizaxes do alumnado e o seu nivel de de-",
+        "empeño.",
+        "elación entre os obxectivos da materia de Segunda Lingua Estranxeira e as competencias clave",
+        "través dos descritores operativos establecidos no anexo I",
+        "bxectivos",
+        "a materia",
+        "BX1",
+        "BX2",
+        "BX3",
+        "BX4",
+        "BX5",
+        "BX6",
+        "iñas de actuación no proceso de ensino e aprendizaxe",
+        "Unha serie de elementos propios das metodoloxías: as actividades, tarefas ou proxectos que",
+        "acilitarán a adquisición das aprendizaxes e o desenvolvemento das competencias considera-",
+        "as nos obxectivos; os agrupamentos necesarios para facilitar a realización das actividades en",
+        "ontextos de aprendizaxe colaborativos, a coavaliación e autoavaliación; os materiais e recur-",
+        "os que serán necesarios para pór o alumnado en contacto coa lingua meta; a avaliación e, en",
+        "odo momento, o seu rol de docente e o rol do alumnado.",
+        "Actividades ou tarefas non só de orientación exclusivamente lingüística, senón tamén para o",
+        "esenvolvemento cognitivo. Este tipo de actividades cunha orientación humanística e socio-",
+        "ultural pon o desenvolvemento comunicativo ao servizo da formación integral do alumnado,",
+        "o considerar contidos como a autoconfianza, a autonomía, a iniciativa, o respecto á diversi-",
+        "ade lingüística e cultural, o enriquecemento persoal e social etc.",
+        "Actividades que guíen o alumnado na explotación da diversidade de experiencias das súas",
+        "prendizaxes lingüísticas, promovendo o recurso ás linguas que coñece para comprender e",
+        "acerse comprender; en definitiva, comunicar, nunha sociedade global en que existe cada día",
+        "nha maior interrelación.",
+        "Actividades que promovan o coñecemento dos padróns culturais que ordenan as relacións en-",
+        "re xeracións, sexos, clases e grupos sociais da propia cultura, para informar e sensibilizar",
+        "obre a necesidade de coñecer e respectar as normas que rexen a dimensión social do uso da",
+        "ingua noutra comunidade lingüística.",
+        "Propostas que tomen en consideración a motivación do alumnado, así como os seus intereses",
+        "preferencias.",
+        "En definitiva, débese lograr a convivencia entre actividades controladas de memorización,",
+        "xercicios gramaticais etc. e actividades comunicativas como xogos de rol, realización de pro-",
+        "ectos, xogos, debates etc., xa que, ao cabo, a finalidade das actividades de aprendizaxe non é",
+        "utra que contribuír ao logro das competencias establecidas no currículo de Segunda Lingua",
+        "stranxeira, facilitando o desenvolvemento da competencia comunicativa, a toma de concien-",
+        "ia das estratexias e coñecementos propios para mellorar a aprendizaxe, e o interese e res-",
+        "ecto pola diversidade lingüística e cultural."
+      ],
+      "codigos_items": [
+        "3.1",
+        "3.2",
+        "3.3",
+        "3.4",
+        "3.5",
+        "3.6",
+        "3.7",
+        "3.8",
+        "3.9",
+        "3.10",
+        "3.11",
+        "3.12",
+        "3.13",
+        "3.14",
+        "3.15",
+        "3.16",
+        "3.17",
+        "3.18",
+        "3.19",
+        "3.20",
+        "3.21",
+        "3.22",
+        "3.23",
+        "3.24",
+        "3.25",
+        "3.26",
+        "3.27",
+        "3.28",
+        "3.29",
+        "3.30",
+        "3.31",
+        "3.32",
+        "3.33",
+        "3.34",
+        "3.35",
+        "3.36",
+        "3.37",
+        "3.38",
+        "3.39",
+        "3.40",
+        "3.41",
+        "3.42",
+        "3.43",
+        "3.44",
+        "3.45",
+        "3.46",
+        "3.47",
+        "3.48",
+        "3.49",
+        "3.50",
+        "3.51",
+        "3.52",
+        "3.53",
+        "3.54",
+        "3.55",
+        "3.56",
+        "3.57",
+        "3.58",
+        "3.59",
+        "3.60",
+        "3.61",
+        "3.62"
+      ]
+    }
+  ],
+  "comunidad": "galicia",
+  "idioma": "gl"
+}

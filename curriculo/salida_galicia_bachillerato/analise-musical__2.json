@@ -1,0 +1,223 @@
+{
+  "materia_oficial": "Análise Musical",
+  "materia": "Análise Musical",
+  "etapa": "Bachillerato",
+  "ciclo": "2º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Analizar os elementos musicais de diferentes obras, utilizando a escoita activa e o estudo de partituras, para describir as súas características e establecer comparacións.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Establecer relacións entre os elementos musicais dunha composición, a través da análise da súa estrutura e dos procedementos compositivos utilizados, para asociar a obra cun xénero, un estilo e un contexto de creación.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Elaborar comentarios e críticas musicais sobre as obras analizadas, utilizando unha terminoloxía adecuada e consultando distintas fontes de información, para expresar xuízos persoais fundamentados e contribuír á difusión do patrimonio musical a través dos medios dispoñibles.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Utilizar os procedementos compositivos fundamentais e as tecnoloxías dixitais, empregando os elementos e as estruturas musicais máis adecuadas, para crear obras sinxelas e realizar improvisacións.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Investigar sobre os usos da música con fins terapéuticos e en combinación con outras formas de expresión artística, utilizando diferentes fontes de información e analizando as características musicais das obras, para entender de que forma inciden determinados trazos musicais na saúde e nas emocións.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Describir as características musicais dunha obra a partir da escoita activa e o estudo de partituras, analizando os seus elementos constitutivos e a función que estes cumpren dentro da composición."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "2",
+      "descripcion": "Comparar os elementos constitutivos e as características musicais de diferentes obras, establecendo analoxías e diferenzas entre elas, a partir da escoita activa e do estudo de partituras."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "4",
+      "descripcion": "Distinguir os principais xéneros e estilos musicais que se desenvolven na historia, analizando os factores que inciden na evolución das formas musicais."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "4",
+      "descripcion": "Asociar as obras analizadas cun xénero, un estilo e un contexto de creación determinados, identificando, de forma autónoma, a estrutura formal e os procedementos compositivos utilizados."
+    },
+    {
+      "codigo": "1.5",
+      "competencia": "3",
+      "descripcion": "Expresar xuízos persoais sobre as obras analizadas, argumentando a opinión propia e utilizando unha terminoloxía musical adecuada."
+    },
+    {
+      "codigo": "1.6",
+      "competencia": "3",
+      "descripcion": "Xustificar a opinión propia sobre as obras analizadas, investigando e seleccionando a información máis pertinente a partir de medios analóxicos e dixitais."
+    },
+    {
+      "codigo": "1.7",
+      "competencia": "3",
+      "descripcion": "Publicar críticas musicais e comentarios propios nos medios dispoñibles, analóxicos e dixitais, respectando os dereitos de autor e a propiedade intelectual."
+    },
+    {
+      "codigo": "1.8",
+      "competencia": "4",
+      "descripcion": "Utilizar, de forma eficaz, as tecnoloxías dixitais na composición musical."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "1",
+      "descripcion": "Describir as características musicais dunha obra a partir da escoita activa e o estudo de partituras, analizando os seus elementos constitutivos e a función que estes cumpren dentro da composición."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Distinguir os principais xéneros e estilos musicais que se desenvolven na historia, analizando os factores que inciden na evolución das formas musicais."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "4",
+      "descripcion": "Realizar improvisacións sinxelas ou pequenas composicións, en proxectos musicais grupais, utilizando os procedementos compositivos fundamentais e aplicando padróns melódicos, rítmicos, harmónicos e formais previamente analizados e interiorizados."
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "3",
+      "descripcion": "Asociar as obras analizadas cun xénero, un estilo e un contexto de creación determinados, identificando, de forma autónoma, a estrutura formal e os procedementos compositivos utilizados."
+    },
+    {
+      "codigo": "2.5",
+      "competencia": "5",
+      "descripcion": "Analizar os usos terapéuticos da música e como inciden determinados trazos musicais na saúde e nas emocións, a partir da información obtida en fontes de información fiables."
+    },
+    {
+      "codigo": "2.6",
+      "competencia": "5",
+      "descripcion": "Describir as características da música que se utiliza con fins terapéuticos, analizando exemplos de obras e relacionando os seus trazos con posibles efectos no oínte."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "Bloque 1. Técnicas de análise musical",
+      "titulo": "Técnicas de análise musical",
+      "items": [
+        "A comparación como técnica analítica.",
+        "Técnicas de análise de audición e de partituras.",
+        "Técnicas para a análise do contexto de creación. O pensamento da persoa creadora, os condicionantes contextuais e a interpretación da obra.",
+        "Comentarios e críticas musicais.",
+        "Recursos dixitais para a investigación, a composición e a difusión musical.",
+        "Dereitos de autor e propiedade intelectual."
+      ],
+      "codigos_items": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4",
+        "1.5",
+        "1.6"
+      ]
+    },
+    {
+      "codigo": "2",
+      "bloque": "Bloque 2. Xéneros musicais",
+      "titulo": "Xéneros musicais",
+      "items": [
+        "As características sonoras e estilísticas da música desde a Idade Media ata a actualidade. Evolución organolóxica.",
+        "As formas e os xéneros musicais desde a Idade Media ata a actualidade.",
+        "Uso da música con fins terapéuticos.",
+        "Normas de comportamento individuais e grupais na interpretación.",
+        ".4 Orientacións pedagóxicas",
+        "intervención educativa na materia de Análise Musical desenvolverá ou seu currículo e tratará",
+        "e asentar de xeito gradual e progresivo nos distintos niveis da etapa as aprendizaxes que lle",
+        "aciliten ao alumnado o logro dos obxectivos da materia e, en combinación co resto de materias,",
+        "nha adecuada adquisición das competencias clave e o logro dos obxectivos da etapa.",
+        "este sentido, no deseño das actividades, o profesorado terá que considerar a relación exis-",
+        "ente entre os obxectivos da materia e as competencias clave a través dos descritores operativos",
+        "as liñas de actuación no proceso de ensino e aprendizaxe, que se presentan nos apartados se-",
+        "uintes, e seleccionar aqueles criterios de avaliación do currículo que se axusten á finalidade",
+        "uscada, así como empregalos para verificar as aprendizaxes do alumnado e o seu nivel de de-",
+        "empeño.",
+        "elación entre os obxectivos da materia de Análise Musical e as competencias clave a través",
+        "os descritores operativos establecidos no anexo I",
+        "bxectivos",
+        "a materia",
+        "BX1",
+        "BX2",
+        "BX3",
+        "BX4",
+        "BX5",
+        "iñas de actuación non proceso de ensino e aprendizaxe",
+        "O uso de distintos métodos que teñan en conta os diferentes ritmos de aprendizaxe do alum-",
+        "ado, favorezan a capacidade de aprender por si mesmo e promovan o traballo en equipo.",
+        "demais, a metodoloxía que se empregará favorecerá a aprendizaxe de contidos teóricos a",
+        "ravés da práctica.",
+        "ágina 9 de 10",
+        "A realización de proxectos significativos para o alumnado e a resolución colaborativa de pro-",
+        "lemas, reforzando a autoestima, a autonomía, a reflexión e a responsabilidade.",
+        "A énfase na atención á diversidade do alumnado, na atención individualizada, na prevención",
+        "as dificultades de aprendizaxe e na posta en práctica de mecanismos de reforzo tan pronto",
+        "omo se detecten estas dificultades.",
+        "O uso de estratexias para traballar transversalmente a comprensión lectora, a expresión oral",
+        "escrita, a comunicación audiovisual, a competencia dixital, a igualdade de xénero, o fomento",
+        "a creatividade, do espírito científico e do emprendemento.",
+        "Fomentarase o uso de medios tecnolóxicos e diferentes soportes para a análise musical.",
+        "ágina 10 de 10"
+      ],
+      "codigos_items": [
+        "2.1",
+        "2.2",
+        "2.3",
+        "2.4",
+        "2.5",
+        "2.6",
+        "2.7",
+        "2.8",
+        "2.9",
+        "2.10",
+        "2.11",
+        "2.12",
+        "2.13",
+        "2.14",
+        "2.15",
+        "2.16",
+        "2.17",
+        "2.18",
+        "2.19",
+        "2.20",
+        "2.21",
+        "2.22",
+        "2.23",
+        "2.24",
+        "2.25",
+        "2.26",
+        "2.27",
+        "2.28",
+        "2.29",
+        "2.30",
+        "2.31",
+        "2.32",
+        "2.33",
+        "2.34",
+        "2.35",
+        "2.36",
+        "2.37",
+        "2.38",
+        "2.39",
+        "2.40"
+      ]
+    }
+  ],
+  "comunidad": "galicia",
+  "idioma": "gl"
+}

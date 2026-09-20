@@ -139,7 +139,10 @@ NORMAS: dict[tuple[str, str], str] = {
     ("andalucia", "Bachillerato"): "Orden de 30 de mayo de 2023 de Bachillerato",
     ("cataluna", "ESO"): "Decret 175/2022",
     ("cataluna", "Bachillerato"): "Decret 171/2022",
+    # Hermanos y del mismo día, 15 de septiembre de 2022, como las dos de
+    # Ceuta y las dos de Andalucía. El número ya los distingue.
     ("galicia", "ESO"): "Decreto 156/2022",
+    ("galicia", "Bachillerato"): "Decreto 157/2022",
     ("pais-vasco", "ESO"): "Decreto 77/2023",
     ("pais-vasco", "Bachillerato"): "Decreto 76/2023",
 }

@@ -1,0 +1,282 @@
+{
+  "materia_oficial": "Debuxo Técnico Aplicado ás Artes Plásticas e ao Deseño II",
+  "materia": "Debuxo Técnico Aplicado ás Artes Plásticas e ao Deseño II",
+  "etapa": "Bachillerato",
+  "ciclo": "2º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Observar, analizar e valorar a presenza da xeometría na natureza, a contorna construída e a arte, identificando as súas estruturas xeométricas, elementos e códigos, cunha actitude proactiva de apreciación e gozo, para explicar a súa orixe, función e intencionalidade en distintos contextos e medios.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Desenvolver propostas gráficas e de deseño utilizando tanto o debuxo a man alzada como os materiais propios do debuxo técnico e elaborando trazados, composicións e transformacións xeométricas no plano de forma intuitiva e razoada, para incorporar estes recursos tanto na transmisión e desenvolvemento de ideas coma na expresión de sentimentos e emocións.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Comprender e interpretar o espazo e os obxectos tridimensionais analizando e valorando a súa presenza nas representacións artísticas, seleccionando e utilizando o sistema de representación máis adecuado para aplicalo á realización de ilustracións e proxectos de deseño de obxectos e espazos.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Analizar, definir formalmente ou visualizar ideas, aplicando as normas fundamentais UNE e ISO para interpretar e representar obxectos e espazos, así como documentar proxectos de deseño.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Integrar e aproveitar as posibilidades que ofrecen as ferramentas dixitais, seleccionando e utilizando programas e aplicacións específicas de debuxo vectorial 2D e de modelaxe 3D para desenvolver procesos de creación artística persoal ou de deseño.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Identificar e explicar a presenza de formas e relacións xeométricas na arte e no deseño, comprendendo o motivo ou a intencionalidade coa que se utilizaron."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "2",
+      "descripcion": "Deseñar patróns e mosaicos aplicando as transformacións xeométricas ao deseño de patróns, mosaicos e redes modulares."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "2",
+      "descripcion": "Deseñar formas creativas empregando tanxencias, enlaces e curvas cónicas e técnicas."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "3",
+      "descripcion": "Deseñar espazos ou escenografías aplicando a perspectiva cónica, representando as luces e as sombras dos obxectos contidos para alcanzar unha maior comprensión e definición da realidade e reflexionando sobre o proceso realizado e o resultado obtido."
+    },
+    {
+      "codigo": "1.5",
+      "competencia": "5",
+      "descripcion": "Realizar e presentar proxectos aproveitando as posibilidades que os diferentes programas dixitais, aplicacións infográficas e ferramentas de debuxo vectorial achegan aos campos do deseño e da publicidade."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "3",
+      "descripcion": "Debuxar, nas perspectivas isométrica e cabaleira, formas volumétricas incorporando curvas."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "3",
+      "descripcion": "Deseñar espazos ou escenografías aplicando a perspectiva cónica, representando as luces e as sombras dos obxectos contidos para alcanzar unha maior comprensión e definición da realidade e reflexionando sobre o proceso realizado e o resultado obtido."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "4",
+      "descripcion": "Proxectar, de maneira individual ou en grupo, un deseño sinxelo, comunicando de maneira clara e inequívoca a súa forma e dimensións mediante o uso da normalización, aplicando estratexias e destrezas que axilicen o traballo colaborativo."
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "5",
+      "descripcion": "Realizar e presentar proxectos, aproveitando as posibilidades que os diferentes programas dixitais, aplicacións infográficas e ferramentas de debuxo vectorial achegan aos campos do deseño, do publicidade e da arte."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Debuxar, nas perspectivas isométrica e cabaleira, formas volumétricas incorporando curvas."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Deseñar espazos ou escenografías aplicando a perspectiva cónica, representando as luces e as sombras dos obxectos contidos para alcanzar unha maior comprensión e definición da realidade e reflexionando sobre o proceso realizado e o resultado obtido."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "4",
+      "descripcion": "Proxectar, de maneira individual ou en grupo, un deseño sinxelo, comunicando de maneira clara e inequívoca a súa forma e dimensións mediante o uso da normalización, aplicando estratexias e destrezas que axilicen o traballo colaborativo."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "5",
+      "descripcion": "Realizar e presentar proxectos aproveitando as posibilidades que os diferentes programas dixitais, aplicacións infográficas e ferramentas de debuxo vectorial achegan aos campos do deseño, da publicidade e da arte."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "2",
+      "descripcion": "Deseñar patróns e mosaicos aplicando as transformacións xeométricas ao deseño de patróns, mosaicos e redes modulares."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "2",
+      "descripcion": "Deseñar formas creativas, empregando tanxencias, enlaces e curvas cónicas e técnicas."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "3",
+      "descripcion": "Debuxar, nas perspectivas isométrica e cabaleira, formas volumétricas incorporando curvas."
+    },
+    {
+      "codigo": "4.4",
+      "competencia": "3",
+      "descripcion": "Deseñar espazos ou escenografías aplicando a perspectiva cónica, representando as luces e as sombras dos obxectos contidos para alcanzar unha maior comprensión e definición da realidade e reflexionando sobre o proceso realizado e o resultado obtido."
+    },
+    {
+      "codigo": "4.5",
+      "competencia": "4",
+      "descripcion": "Proxectar, de maneira individual ou en grupo, un deseño sinxelo, comunicando de maneira clara e inequívoca a súa forma e dimensións mediante o uso da normalización, aplicando estratexias e destrezas que axilicen o traballo colaborativo."
+    },
+    {
+      "codigo": "4.6",
+      "competencia": "5",
+      "descripcion": "Realizar e presentar proxectos aproveitando as posibilidades que os diferentes programas dixitais, aplicacións infográficas e ferramentas de debuxo vectorial achegan aos campos do deseño, da publicidade e da arte."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "Bloque 1. Xeometría, arte e contorna",
+      "titulo": "Xeometría, arte e contorna",
+      "items": [
+        "Composicións modulares no deseño gráfico de obxectos e de espazos.",
+        "Xeometría e ilusións ópticas na arte e no deseño.",
+        "As curvas cónicas na natureza, na contorna, na arte e no deseño.",
+        "A representación do espazo no deseño e na arte contemporánea.",
+        "Transformacións xeométricas aplicadas á creación de mosaicos e patróns. Trazado con e sen ferramentas dixitais.",
+        "Enlaces e tanxencias. Aplicación no deseño gráfico mediante trazado manual e dixital."
+      ],
+      "codigos_items": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4",
+        "1.5",
+        "1.6"
+      ]
+    },
+    {
+      "codigo": "2",
+      "bloque": "Bloque 2. Sistemas de representación do espazo aplicado",
+      "titulo": "Sistemas de representación do espazo aplicado",
+      "items": [
+        "Representación da circunferencia e de sólidos sinxelos en perspectivas isométrica e cabaleira. Aplicación ao deseño de formas tridimensionais.",
+        "Estruturas poliédricas. Os sólidos platónicos. Aplicación na arquitectura e no deseño.",
+        "Aplicacións da perspectiva cónica, frontal, oblicua e de cadro inclinado ao deseño de espazos e obxectos. Representación de luces e sombras."
+      ],
+      "codigos_items": [
+        "2.1",
+        "2.2",
+        "2.3"
+      ]
+    },
+    {
+      "codigo": "3",
+      "bloque": "Bloque 3. Normalización e deseño de proxectos",
+      "titulo": "Normalización e deseño de proxectos",
+      "items": [
+        "Fases dun proxecto de deseño: do esbozo ao plano de taller.",
+        "Representación de obxectos mediante as súas vistas coutadas. Cortes, seccións e roturas."
+      ],
+      "codigos_items": [
+        "3.1",
+        "3.2"
+      ]
+    },
+    {
+      "codigo": "4",
+      "bloque": "Bloque 4. Ferramentas dixitais para o deseño",
+      "titulo": "Ferramentas dixitais para o deseño",
+      "items": [
+        "Debuxo asistido por ordenador aplicado a proxectos de arte e de deseño.",
+        ".4 Orientacións pedagóxicas",
+        "intervención educativa na materia de Debuxo Técnico desenvolverá o seu currículo e tratará",
+        "e asentar de xeito gradual e progresivo as aprendizaxes que lle faciliten ao alumnado o logro",
+        "os obxectivos da materia e, en combinación co resto das materias, unha adecuada adquisición",
+        "as competencias clave e o logro dos obxectivos da etapa.",
+        "este sentido, no deseño das actividades, o profesorado terá que considerar a relación exis-",
+        "ente entre os obxectivos da materia e as competencias clave a través dos descritores operativos",
+        "as liñas de actuación no proceso de ensino e aprendizaxe que se presentan nos apartados se-",
+        "uintes e seleccionar aqueles criterios de avaliación do currículo que se axusten á finalidade bus-",
+        "ada, así como empregalos para verificar as aprendizaxes do alumnado e o seu nivel de desem-",
+        "eño.",
+        "elación entre os obxectivos da materia de Debuxo Técnico Aplicado ás Artes Plásticas e ao De-",
+        "eño e as competencias clave a través dos descritores operativos establecidos no anexo I",
+        "bxectivos",
+        "a materia",
+        "BX1",
+        "BX2",
+        ".2",
+        "BX3",
+        ".2",
+        "BX4",
+        "BX5",
+        "iñas de actuación no proceso de ensino e aprendizaxe",
+        "O deseño de proxectos multidisciplinares de carácter funcional que doten dun sentido práctico",
+        "s traballos desenvolvidos, co fin de potenciar unha aprendizaxe significativa.",
+        "O uso de diferentes metodoloxías activas que promovan o traballo en grupo na resolución",
+        "olaborativa de problemas, que favorezan a capacidade de aprender por si mesmos de forma",
+        "utónoma e sempre tendo en conta os diferentes ritmos de aprendizaxe dos membros de cada",
+        "quipo de traballo.",
+        "A creación na aula dun clima apropiado para reforzar a autoestima, o desenvolvemento da",
+        "reatividade, a experimentación técnica en proxectos interdisciplinares gráfico-plásticos e po-",
+        "enciando tamén o uso de ferramentas e programas de deseño e debuxo en 2D e 3D.",
+        "O emprego de estratexias para traballar transversalmente a participación activa do alumnado",
+        "n materia de igualdade, cun enfoque inclusivo, non sexista e de superación de estereotipos",
+        "iscriminatorios. Tamén empregar estratexias para superar os desafíos do século XXI que",
+        "tendan ao consumo responsable, á diversidade cultural dun mundo cada vez máis globali-",
+        "ado, a unha actitude crítica, ética e responsable da cultura dixital e ao entendemento de que",
+        "coñecemento e o compromiso cidadán son o motor do desenvolvemento.",
+        "A realización de traballos diferenciados que favorezan un proceso creativo autónomo, base-",
+        "do na reflexión persoal, na disciplina e na responsabilidade, atendendo á individualidade de",
+        "ada alumno, así como ás necesidades específicas de todos eles, á prevencións de dificultades",
+        "á posta en práctica de mecanismos para superalas a medida que aparezan."
+      ],
+      "codigos_items": [
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4",
+        "4.5",
+        "4.6",
+        "4.7",
+        "4.8",
+        "4.9",
+        "4.10",
+        "4.11",
+        "4.12",
+        "4.13",
+        "4.14",
+        "4.15",
+        "4.16",
+        "4.17",
+        "4.18",
+        "4.19",
+        "4.20",
+        "4.21",
+        "4.22",
+        "4.23",
+        "4.24",
+        "4.25",
+        "4.26",
+        "4.27",
+        "4.28",
+        "4.29",
+        "4.30",
+        "4.31",
+        "4.32",
+        "4.33",
+        "4.34",
+        "4.35",
+        "4.36",
+        "4.37",
+        "4.38",
+        "4.39",
+        "4.40",
+        "4.41",
+        "4.42",
+        "4.43"
+      ]
+    }
+  ],
+  "comunidad": "galicia",
+  "idioma": "gl"
+}

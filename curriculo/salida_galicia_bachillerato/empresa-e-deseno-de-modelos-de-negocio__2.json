@@ -1,0 +1,321 @@
+{
+  "materia_oficial": "Empresa e Deseño de Modelos de Negocio",
+  "materia": "Empresa e Deseño de Modelos de Negocio",
+  "etapa": "Bachillerato",
+  "ciclo": "2º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Analizar a actividade empresarial e emprendedora, recoñecendo o poder de transformación que exercen na sociedade e reflexionando sobre o valor da innovación e a dixitalización neste proceso, para comprender o papel que desempeñan dentro do funcionamento global da economía actual.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Investigar o contexto económico e social e a súa influencia na actividade empresarial, analizando as interrelacións empresas-contexto e identificando estratexias viables que partan dos criterios de responsabilidade social corporativa, da igualdade e a inclusión, para valorar a capacidade de adaptación das empresas.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Recoñecer e comprender modelos de negocio actuais comparándoos con outros tradicionais, aplicando estratexias e ferramentas que faciliten o deseño creativo e propoñendo modelos de negocio que, achegando valor, permitan satisfacer necesidades e contribuír ao benestar económico e social.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Valorar e seleccionar estratexias comunicativas de aplicación ao mundo empresarial, utilizando novas fórmulas e obtendo a información que se xera tanto no ámbito interno como externo da empresa, para xestionar eficazmente a información necesaria no proceso de toma de decisións e a súa correcta transmisión.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Realizar a análise previsional do modelo de negocio deseñado, aplicando as ferramentas de análise empresarial necesarias para comprender o proceso levado a cabo e validar a proposta presentada.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Comprender a importancia da actividade empresarial e o emprendemento na economía actual, recoñecendo o poder de transformación que exercen na sociedade e reflexionando sobre o valor da innovación e a dixitalización."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Analizar o papel da I+D+i no desenvolvemento social e empresarial, identificando novas tendencias e tecnoloxías que teñen un alto impacto na economía."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "2",
+      "descripcion": "Valorar a capacidade de adaptación áxil, responsable e sustentable das empresas aos cambios do contexto e ás exixencias do mercado, investigando o contexto económico e social e a súa influencia na actividade empresarial."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "2",
+      "descripcion": "Coñecer os distintos tipos de empresa, os seus elementos e funcións, así como as formas xurídicas que adoptan relacionando cada unha delas coa responsabilidade legal dos seus propietarios e xestores e coas exixencias de capital."
+    },
+    {
+      "codigo": "1.5",
+      "competencia": "2",
+      "descripcion": "Identificar e analizar as características do contexto no que a empresa desenvolve a súa actividade, explicando, a partir destas, as distintas estratexias e decisións adoptadas e as posibles implicacións sociais e medioambientais da súa actividade."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Identificar e analizar as distintas políticas empresariais de xestión, contratación e formación de recursos humanos, valorando e recoñecendo as actuacións das empresas en materia de igualdade e inclusión."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "3",
+      "descripcion": "Comprender o concepto de modelo de negocio como unha forma de lles dar resposta ás necesidades actuais, comparando distintos modelos, desde os máis tradicionais aos máis innovadores."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "3",
+      "descripcion": "Analizar as características organizativas e funcionais da empresa, explicando, a partir delas, as decisións de planificación, xestión e optimización de actividades, recursos e asociacións clave dun modelo de negocio innovador."
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "3",
+      "descripcion": "Analizar e tomar decisións sobre os procesos produtivos desde a eficiencia e a produtividade, definindo o soporte necesario para facer realidade un modelo de negocio."
+    },
+    {
+      "codigo": "2.5",
+      "competencia": "3",
+      "descripcion": "Analizar e tomar decisións sobre investimento e financiamento, aplicando métodos de selección de investimentos e recoñecendo as vantaxes e inconvenientes das distintas fontes de financiamento empresarial."
+    },
+    {
+      "codigo": "2.6",
+      "competencia": "3",
+      "descripcion": "Analizar as características do mercado, explicando, de acordo con elas, a proposta de valor, canles, relacións con clientes e fontes de ingresos dun modelo de negocio innovador."
+    },
+    {
+      "codigo": "2.7",
+      "competencia": "5",
+      "descripcion": "Analizar e explicar a situación económico-financeira da empresa a partir da información recollida nas contas anuais, indicando as posibles solucións aos desequilibrios atopados e analizando o impacto dos tributos que ten que satisfacer a empresa."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "2",
+      "descripcion": "Valorar a capacidade de adaptación áxil, responsable e sustentable das empresas ás exixencias do mercado, explorando ideas, escenarios futuros e novos padróns e modelos de negocio."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Coñecer as distintas estratexias e ferramentas de deseño creativo, aplicando estas á xeración dun modelo de negocio transformador que permita dar resposta ás necesidades actuais."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "4",
+      "descripcion": "Xestionar eficazmente a información e facilitar o proceso de toma de decisións a partir da información obtida, tanto no ámbito interno como externo da empresa, aplicando estratexias e novas fórmulas comunicativas."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "4",
+      "descripcion": "Seleccionar estratexias de comunicación aplicadas ao mundo empresarial, utilizando novas fórmulas comunicativas que faciliten a xestión eficaz da información e a súa transmisión."
+    },
+    {
+      "codigo": "3.5",
+      "competencia": "4",
+      "descripcion": "Coñecer as ferramentas necesarias que permitan expoñer o proxecto de modelo de negocio, espertando o interese e cativando os demais coa proposta de valor presentada."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "5",
+      "descripcion": "Validar a proposta de modelo de negocio deseñado dentro dun contexto determinado, definíndoo a partir das tendencias clave do momento, a situación macroeconómica, o mercado e a competencia, comprendendo todo o proceso levado a cabo e aplicando técnicas de estudo previsional e ferramentas de análise empresarial."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "5",
+      "descripcion": "Determinar previsionalmente a estrutura de ingresos e custos, calculando o seu beneficio e limiar de rendibilidade a partir do modelo de negocio proposto."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "5",
+      "descripcion": "Elaborar un plan de negocio básico sobre un escenario simulado concreto, xustificando as decisións tomadas."
+    },
+    {
+      "codigo": "4.4",
+      "competencia": "5",
+      "descripcion": "Determinar a estratexia de propiedade industrial da empresa, establecendo as liñas de actuación en materia de protección de idea, produto e marca."
+    },
+    {
+      "codigo": "4.5",
+      "competencia": "5",
+      "descripcion": "Valorar a situación económico-financeira da proposta presentada, analizando e interpretando a información recollida tanto no balance como na conta de perdas e ganancias e indicando as posibles solucións aos desequilibrios encontrados."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "Bloque 1. A empresa e a súa contorna",
+      "titulo": "A empresa e a súa contorna",
+      "items": [
+        "O empresario ou a empresa. Perfís.",
+        "A empresa. Clasificación. Localización e dimensión da empresa. Marco xurídico que regula a actividade empresarial.",
+        "O contexto empresarial. Responsabilidade social corporativa. Muller e emprendemento. Inclusión e emprendemento.",
+        "A empresa, dixitalización e innovación. I+D+i. Teorías da innovación. Tipos de innovación. Tendencias emerxentes. Estratexias de innovación."
+      ],
+      "codigos_items": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4"
+      ]
+    },
+    {
+      "codigo": "2",
+      "bloque": "Bloque 2. O modelo de negocio e de xestión",
+      "titulo": "O modelo de negocio e de xestión",
+      "items": [
+        "Empresa e modelo de negocio.",
+        "A función comercial. Segmento de clientes. A proposta de valor. Canles. Relacións con clientes. Fontes de ingresos. Estratexias de márketing.",
+        "A función produtiva. Proceso produtivo. Eficiencia e produtividade. Actividades clave. Recursos clave. Asociacións clave. Estrutura de custos: clasificación e cálculo de custos.",
+        "A xestión dos recursos humanos. Formación e funcionamento de equipos áxiles. Habilidades que demanda o mercado de traballo. A contratación e as relacións laborais da empresa. As políticas de igualdade e de inclusión nas empresas.",
+        "A función financeira. Estrutura económica e financeira. Investimento. Valoración e selección de investimentos. Recursos financeiros. Análise de fontes alternativas de financiamento interno e externo.",
+        "A información na empresa: obrigas contables. Composición e valoración do patrimonio. Contas anuais e imaxe fiel. Elaboración do balance e da conta de perdas e ganancias.",
+        "Fiscalidade empresarial: principais tributos que gravan a actividade empresarial."
+      ],
+      "codigos_items": [
+        "2.1",
+        "2.2",
+        "2.3",
+        "2.4",
+        "2.5",
+        "2.6",
+        "2.7"
+      ]
+    },
+    {
+      "codigo": "3",
+      "bloque": "Bloque 3. Ferramentas para innovar en modelos de negocio e de xestión",
+      "titulo": "Ferramentas para innovar en modelos de negocio e de xestión",
+      "items": [
+        "O lenzo de modelo de negocio e de xestión: concepto, áreas, bloques, utilidade e padróns de modelos de negocio.",
+        "O punto de vista dos clientes: mapa de empatía.",
+        "A creatividade aplicada ao deseño do modelo de negocio e de xestión. O proceso de creatividade: diverxencia e converxencia. Dinámicas de xeración de novas ideas de modelos de negocio.",
+        "A competencia e os nichos de mercado.",
+        "As ferramentas de organización de ideas: Pensamento visual ou Visual Thinking. Capacidade de síntese. Ideación. Comunicación.",
+        "O prototipado: concepto e utilidade. Posibilidades de prototipado: bens, servizos e aplicacións.",
+        "As ferramentas de presentación dun proxecto ou idea. Metodoloxía: narración de historias ou storytelling e o discurso no ascensor ou elevator pitch. Outras metodoloxías.",
+        "Os escenarios: exploración de ideas, escenarios futuros e novos modelos de negocio.",
+        "Outras ferramentas para innovar en modelos de negocio e de xestión."
+      ],
+      "codigos_items": [
+        "3.1",
+        "3.2",
+        "3.3",
+        "3.4",
+        "3.5",
+        "3.6",
+        "3.7",
+        "3.8",
+        "3.9"
+      ]
+    },
+    {
+      "codigo": "4",
+      "bloque": "Bloque 4. Estratexia empresarial e métodos de análise da realidade empresarial: estudo de casos e simula-",
+      "titulo": "Estratexia empresarial e métodos de análise da realidade empresarial: estudo de casos e simula-",
+      "items": [
+        "O contexto do modelo de negocio. Previsión: tendencias clave. Macroeconomía: variables macroeconómicas. Competencia: forzas competitivas.",
+        "A avaliación previa de modelos de negocio: análise DAFO, análise previsional de ingresos e custos e o limiar de rendibilidade.",
+        "A validación do modelo de negocio. Lean Startup. Desenvolvemento de clientes. Desenvolvemento de produto áxil.",
+        "A protección da idea, do produto e da marca.",
+        "A toma de decisións. Estratexias. Simulación en folla de cálculo. Redacción dun plan de negocios básico.",
+        "A análise de resultados: estudo de mercado, análise e interpretación da información contable e análise de estados financeiros.",
+        ".4 Orientacións pedagóxicas",
+        "intervención educativa na materia de Empresa e Deseño de Modelos de Negocio desenvol-",
+        "erá o seu currículo e tratará de asentar de xeito gradual e progresivo as aprendizaxes que lle",
+        "aciliten ao alumnado o logro dos obxectivos da materia e, en combinación co resto de materias,",
+        "nha adecuada adquisición das competencias clave e o logro dos obxectivos da etapa.",
+        "este sentido, no deseño das actividades, o profesorado terá que considerar a relación exis-",
+        "ente entre os obxectivos da materia e as competencias clave a través dos descritores operativos",
+        "as liñas de actuación no proceso de ensino e aprendizaxe, que se presentan nos apartados se-",
+        "uintes, e seleccionar aqueles criterios de avaliación do currículo que se axusten á finalidade",
+        "uscada, así como empregalos para verificar as aprendizaxes do alumnado e o seu nivel de de-",
+        "empeño.",
+        "elación entre os obxectivos da materia de Empresa e Deseño de Modelos de Negocio e as com-",
+        "etencias clave a través dos descritores operativos do perfil de saída establecidos no anexo I",
+        "bxectivos",
+        "a materia",
+        "BX1",
+        "BX2",
+        "BX3",
+        "BX4",
+        "BX5",
+        "iñas de actuación no proceso de ensino e aprendizaxe",
+        "O uso de distintos métodos que teñan en conta os diferentes ritmos de aprendizaxe do alum-",
+        "ado, favorezan a capacidade de aprender por si mesmo e promovan o traballo en equipo.",
+        "A realización de proxectos significativos para o alumnado e a resolución colaborativa de pro-",
+        "lemas, reforzando a autoestima, a autonomía, a reflexión e a responsabilidade.",
+        "A énfase na atención á diversidade do alumnado, na atención individualizada, na prevención",
+        "as dificultades de aprendizaxe e na posta en práctica de mecanismos de reforzo tan pronto",
+        "omo se detecten estas dificultades.",
+        "O uso de estratexias para traballar transversalmente a comprensión lectora, a expresión oral",
+        "escrita, a comunicación audiovisual, a competencia dixital, a igualdade de xénero, o fomento",
+        "a creatividade, do espírito científico e do emprendemento.",
+        "A utilización dun enfoque teórico-práctico a través dunha proposta de modelo de negocio que",
+        "ermita abordar os distintos bloques de contido, poñelos en práctica e avaliar a súa viabili-",
+        "ade.",
+        "O debate de cuestións relativas á responsabilidade social corporativa, a inclusión ou o papel",
+        "as mulleres emprendedoras e a promoción entre as mulleres de negocios con bases diferen-",
+        "es aos do sector servizos.",
+        "A énfase en que o alumnado se converta no verdadeiro protagonista do proceso de toma de",
+        "ecisións, investigando para dispoñer da información necesaria que lle permita redactar e co-",
+        "unicar un plan básico de empresa."
+      ],
+      "codigos_items": [
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4",
+        "4.5",
+        "4.6",
+        "4.7",
+        "4.8",
+        "4.9",
+        "4.10",
+        "4.11",
+        "4.12",
+        "4.13",
+        "4.14",
+        "4.15",
+        "4.16",
+        "4.17",
+        "4.18",
+        "4.19",
+        "4.20",
+        "4.21",
+        "4.22",
+        "4.23",
+        "4.24",
+        "4.25",
+        "4.26",
+        "4.27",
+        "4.28",
+        "4.29",
+        "4.30",
+        "4.31",
+        "4.32",
+        "4.33",
+        "4.34",
+        "4.35",
+        "4.36",
+        "4.37",
+        "4.38",
+        "4.39",
+        "4.40",
+        "4.41",
+        "4.42",
+        "4.43",
+        "4.44",
+        "4.45",
+        "4.46"
+      ]
+    }
+  ],
+  "comunidad": "galicia",
+  "idioma": "gl"
+}

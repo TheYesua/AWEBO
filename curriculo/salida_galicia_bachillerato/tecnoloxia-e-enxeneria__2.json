@@ -1,0 +1,338 @@
+{
+  "materia_oficial": "Tecnoloxía e Enxeñería",
+  "materia": "Tecnoloxía e Enxeñería",
+  "etapa": "Bachillerato",
+  "ciclo": "2º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Coordinar e desenvolver proxectos de investigación cunha actitude crítica e emprendedora, a través de estratexias e técnicas eficientes de resolución de problemas e comunicando os resultados de xeito adecuado, para crear e mellorar produtos e sistemas de modo continuo.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Seleccionar materiais e elaborar estudos de impacto aplicando criterios técnicos e de sustentabilidade para fabricar produtos de calidade que dean resposta a problemas e a tarefas propostos desde un enfoque responsable e ético.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Utilizar as ferramentas dixitais adecuadas analizando as súas posibilidades, configurándoas segundo as súas necesidades e aplicando coñecementos interdisciplinarios para resolver tarefas e para realizar a presentación dos resultados dun xeito óptimo.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Xerar coñecementos e mellorar destrezas técnicas transferindo e aplicando saberes doutras disciplinas científicas con actitude creativa para calcular e resolver problemas ou dar resposta a necesidades dos distintos ámbitos da enxeñaría.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Deseñar, crear e avaliar sistemas tecnolóxicos aplicando coñecementos de programación informática, regulación automática e control, así como as posibilidades que ofrecen as tecnoloxías emerxentes, para estudar, controlar e automatizar tarefas.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Analizar e comprender sistemas tecnolóxicos dos distintos ámbitos da enxeñaría estudando as súas características, o consumo e a eficiencia enerxética para avaliar o uso responsable e sustentable que se fai da tecnoloxía.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Desenvolver proxectos de investigación e innovación coa finalidade de crear e mellorar produtos de forma continua, utilizando modelos de xestión cooperativos e flexibles."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "3",
+      "descripcion": "Comunicar e difundir de forma clara e comprensible o proxecto definido elaborándoo e presentándoo coa documentación técnica necesaria."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Resolver problemas asociados ás distintas fases do desenvolvemento e da xestión dun proxecto (deseño, simulación e montaxe e presentación) utilizando as ferramentas adecuadas que proveñen das aplicacións dixitais."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "6",
+      "descripcion": "Elaborar informes sinxelos de avaliación de impacto ambiental de xeito fundamentado e estruturado."
+    },
+    {
+      "codigo": "1.5",
+      "competencia": "6",
+      "descripcion": "Analizar os distintos sistemas de enxeñería desde o punto de vista da responsabilidade social e da sustentabilidade estudando as características de eficiencia enerxética asociadas aos materiais e aos procesos de fabricación."
+    },
+    {
+      "codigo": "1.6",
+      "competencia": "1",
+      "descripcion": "Perseverar na consecución de obxectivos en situacións de incerteza, identificando e xestionando emocións, aceptando e aprendendo da crítica razoada e utilizando o erro como parte do proceso de aprendizaxe."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Analizar a idoneidade dos materiais técnicos na fabricación de produtos sustentables e de calidade considerando as súas propiedades básicas e a súa estrutura interna."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Analizar diferentes métodos de ensaio das propiedades mecánicas dos materiais comprendendo a utilizade de cada un deles."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Escoller os tratamentos de modificación máis adecuados para a mellora das propiedades básicas dos materiais."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "4",
+      "descripcion": "Calcular e montar estruturas sinxelas estudando os tipos de cargas a que se poidan ver sometidas e a súa estabilidade."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "4",
+      "descripcion": "Analizar as máquinas térmicas: máquinas frigoríficas, bombas de calor e motores térmicos, comprendendo o seu funcionamento e realizando simulacións e cálculos básicos sobre a súa eficiencia."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "4",
+      "descripcion": "Interpretar e solucionar esquemas de sistemas pneumáticos e hidráulicos a través de montaxes ou simulacións e comprendendo e documentando o funcionamento de cada un dos seus elementos e do sistema na súa totalidade."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Interpretar e resolver circuítos de corrente alterna mediante montaxes ou simulacións identificando os seus elementos e comprendendo o seu funcionamento."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Experimentar e deseñar circuítos combinacionais e secuenciais físicos e simulados aplicando fundamentos da electrónica dixital e comprendendo o seu funcionamento no deseño de solucións tecnolóxicas."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Resolver problemas lóxicos reais aplicando fundamentos da electrónica dixital e poñelos en práctica mediante montaxes ou simulacións."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Comprender e simular o funcionamento dos procesos tecnolóxicos baseados en sistemas automáticos de lazo aberto e pechado."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Aplicar técnicas de simplificación a sistemas automáticos obtendo a función de transferencia simplificada."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "5",
+      "descripcion": "Analizar a estabilidade dun sistema de control sinxelo experimentando con simuladores."
+    },
+    {
+      "codigo": "5.4",
+      "competencia": "5",
+      "descripcion": "Coñecer e avaliar sistemas informáticos emerxentes e as súas implicacións na seguridade dos datos, analizando modelos existentes."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "Bloque 1. Proxectos de investigación e desenvolvemento",
+      "titulo": "Proxectos de investigación e desenvolvemento",
+      "items": [
+        "Xestión e desenvolvemento de proxectos. Técnicas e estratexias de traballo en equipo. Metodoloxías Agile: tipos, características e aplicacións.",
+        "Difusión e comunicación de documentación técnica. Elaboración, referenciación e presentación.",
+        "Impacto social e ambiental. Informes de avaliación. Valoración crítica das tecnoloxías desde o punto de vista da sustentabilidade ecosocial.",
+        "Autoconfianza e iniciativa. Identificación e xestión de emocións. O erro e a reavaliación como parte do proceso de aprendizaxe.",
+        "Emprendemento, resiliencia, perseveranza e creatividade para abordar problemas desde unha perspectiva interdisciplinaria."
+      ],
+      "codigos_items": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4",
+        "1.5"
+      ]
+    },
+    {
+      "codigo": "2",
+      "bloque": "Bloque 2. Materiais e fabricación",
+      "titulo": "Materiais e fabricación",
+      "items": [
+        "Estrutura interna dos materiais e relación coas súas propiedades básicas.",
+        "Procedementos de ensaio de propiedades: resolución de problemas de ensaios de dureza, de tracción e de resiliencia.",
+        "Análise de técnicas de fabricación industrial para a mellora das propiedades dos materiais e a súa sustentabilidade."
+      ],
+      "codigos_items": [
+        "2.1",
+        "2.2",
+        "2.3"
+      ]
+    },
+    {
+      "codigo": "3",
+      "bloque": "Bloque 3. Sistemas mecánicos",
+      "titulo": "Sistemas mecánicos",
+      "items": [
+        "Estruturas sinxelas. Tipos de cargas, estabilidade e cálculos básicos de cargas, esforzos e momentos. Montaxe ou simulación de exemplos sinxelos.",
+        "Máquinas térmicas: máquina frigorífica, bomba de calor e motores térmicos. Cálculos básicos de rendemento e eficiencia, simulación e aplicacións básicas.",
+        "Sistemas pneumáticos e hidráulicos: elementos, simboloxía, circuítos básicos e cálculos das magnitudes de forza, presión e caudal. Montaxe e/ou simulación para a resolución de problemas."
+      ],
+      "codigos_items": [
+        "3.1",
+        "3.2",
+        "3.3"
+      ]
+    },
+    {
+      "codigo": "4",
+      "bloque": "Bloque 4. Sistemas eléctricos e electrónicos",
+      "titulo": "Sistemas eléctricos e electrónicos",
+      "items": [
+        "Circuítos de corrente alterna monofásicos RLC serie e paralelo. Triángulo de potencias. Cálculo, montaxe e/ou simulación.",
+        "Electrónica dixital combinacional. Portas e funcións lóxicas. Deseño e simplificación de funcións. Resolución de problemas lóxicos sinxelos.",
+        "Electrónica dixital secuencial. Biestables.",
+        "Montaxe e/ou simulación de circuítos dixitais característicos."
+      ],
+      "codigos_items": [
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4"
+      ]
+    },
+    {
+      "codigo": "5",
+      "bloque": "Bloque 5. Programación, automatización e control",
+      "titulo": "Programación, automatización e control",
+      "items": [
+        "Sistemas automáticos e de control en lazo aberto e pechado.",
+        "Álxebra de bloques e simplificación de sistemas sinxelos.",
+        "Análise da estabilidade de sistemas sinxelos.",
+        "Experimentación en simuladores.",
+        "Intelixencia artificial, big data, bases de datos distribuídas e ciberseguridade.",
+        ".4 Orientacións pedagóxicas",
+        "intervención educativa na materia de Tecnoloxía e Enxeñería desenvolverá o seu currículo e",
+        "ratará de asentar de xeito gradual e progresivo nos distintos niveis da etapa as aprendizaxes",
+        "ue lle faciliten ao alumnado o logro dos obxectivos da materia e, en combinación co resto das",
+        "aterias, unha adecuada adquisición das competencias clave e o logro dos obxectivos da etapa.",
+        "este sentido, no deseño das actividades, o profesorado terá que considerar a relación exis-",
+        "ente entre os obxectivos da materia e as competencias clave a través dos descritores operativos",
+        "as liñas de actuación no proceso de ensino e aprendizaxe que se presentan nos apartados se-",
+        "uintes e seleccionar aqueles criterios de avaliación do currículo que se axusten á finalidade bus-",
+        "ada, así como empregalos para verificar as aprendizaxes do alumnado e o seu nivel de desem-",
+        "eño.",
+        "elación entre os obxectivos da materia de Tecnoloxía e Enxeñería e as competencias clave a",
+        "ravés dos descritores operativos establecidos no anexo I",
+        "bxectivos",
+        "a materia",
+        "BX1",
+        "BX2",
+        "BX3",
+        "BX4",
+        "BX5",
+        "BX6",
+        "iñas de actuación no proceso de ensino e aprendizaxe",
+        "O uso de distintos métodos que teñan en conta os diferentes ritmos de aprendizaxe do alum-",
+        "ado, que favorezan a capacidade de aprender por si mesmo e que promovan o traballo en",
+        "quipo.",
+        "A resolución de problemas interdisciplinarios ligados a situacións reais mediante solucións",
+        "ecnolóxicas para facilitar a comprensión do proceso de deseño e desenvolvemento dun pro-",
+        "uto.",
+        "A orientación competencial está graduada entre 1º e 2º de bacharelato, de xeito que no pri-",
+        "eiro curso se incidirá na participación en proxectos que dean resposta a unha necesidade",
+        "roposta e, no segundo, incidirase na elaboración de proxectos de investigación e innovación",
+        "ue conecten co ámbito social, económico e de investigación do centro.",
+        "O bloque «Proxectos de investigación e desenvolvemento» terá un tratamento transversal e",
+        "raballarase de xeito conxunto co resto dos bloques de contidos, tanto no primeiro coma no",
+        "egundo curso.",
+        "No bloque de «Materiais e fabricación», deberanse abordar no primeiro curso a selección de",
+        "ateriais e as técnicas máis apropiadas para a súa transformación e elaboración de solucións",
+        "ecnolóxicas sustentables, mentres que en segundo se tratarán as súas propiedades desde un",
+        "unto de vista macroscópico.",
+        "No bloque 3, «Sistemas mecánicos», trataranse en primeiro os sistemas mecánicos desde un",
+        "unto de vista de montaxes, ao tempo que se fará unha introdución á pneumática. O segundo",
+        "urso céntrase nas estruturas desde un punto de vista estático, así como nas máquinas tér-",
+        "icas, na pneumática e na hidráulica dun xeito máis avanzado.",
+        "No bloque «Sistemas eléctricos e electrónicos» abórdanse no primeiro curso os circuítos eléc-",
+        "ricos, as máquinas de corrente continua e a electrónica analóxica e no segundo curso abor-",
+        "aranse os circuítos eléctricos e as máquinas de corrente alterna e a electrónica dixital.",
+        "O bloque «Programación, automatización e control» afronta no primeiro curso os sistemas",
+        "obóticos e de control programado, a aplicación da Internet das cousas (IoT) a proxectos e",
+        "istemas de control e no segundo curso trata os sistemas de control desde un punto de vista",
+        "áis de procesos e avalía sistemas informáticos emerxentes e as súas implicacións na seguri-",
+        "ade dos datos, analizando modelos existentes.",
+        "O bloque «Tecnoloxía sustentable» desenvólvese no primeiro curso en que se afondará nos",
+        "istemas de xeración de enerxía eléctrica e nas instalacións en vivendas a través dun enfoque",
+        "e eficiencia enerxética e sustentable e, no segundo curso, daráselle un tratamento máis",
+        "ransversal ao integralo no desenvolvemento de proxectos de investigación e innovación."
+      ],
+      "codigos_items": [
+        "5.1",
+        "5.2",
+        "5.3",
+        "5.4",
+        "5.5",
+        "5.6",
+        "5.7",
+        "5.8",
+        "5.9",
+        "5.10",
+        "5.11",
+        "5.12",
+        "5.13",
+        "5.14",
+        "5.15",
+        "5.16",
+        "5.17",
+        "5.18",
+        "5.19",
+        "5.20",
+        "5.21",
+        "5.22",
+        "5.23",
+        "5.24",
+        "5.25",
+        "5.26",
+        "5.27",
+        "5.28",
+        "5.29",
+        "5.30",
+        "5.31",
+        "5.32",
+        "5.33",
+        "5.34",
+        "5.35",
+        "5.36",
+        "5.37",
+        "5.38",
+        "5.39",
+        "5.40",
+        "5.41",
+        "5.42",
+        "5.43",
+        "5.44",
+        "5.45",
+        "5.46",
+        "5.47",
+        "5.48",
+        "5.49",
+        "5.50",
+        "5.51",
+        "5.52",
+        "5.53",
+        "5.54",
+        "5.55",
+        "5.56",
+        "5.57",
+        "5.58",
+        "5.59",
+        "5.60"
+      ]
+    }
+  ],
+  "comunidad": "galicia",
+  "idioma": "gl"
+}

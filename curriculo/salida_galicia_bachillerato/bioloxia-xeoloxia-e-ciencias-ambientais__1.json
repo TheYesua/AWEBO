@@ -1,0 +1,613 @@
+{
+  "materia_oficial": "Bioloxía, Xeoloxía e Ciencias Ambientais",
+  "materia": "Bioloxía, Xeoloxía e Ciencias Ambientais",
+  "etapa": "Bachillerato",
+  "ciclo": "1º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Interpretar e transmitir información e datos científicos argumentando sobre estes con precisión e utilizando diferentes formatos para analizar procesos, métodos, experimentos ou resultados das ciencias biolóxicas, xeolóxicas e ambientais.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Localizar e utilizar fontes fiables identificando, seleccionando e organizando a información, avaliándoa criticamente e contrastando a súa veracidade para resolver preguntas expostas de forma autónoma relacionadas coas ciencias biolóxicas, xeolóxicas e ambientais.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Deseñar, planear e desenvolver proxectos de investigación seguindo os pasos das diversas metodoloxías científicas, tendo en conta os recursos dispoñibles de forma realista e buscando vías de colaboración para indagar en aspectos relacionados coas ciencias biolóxicas, xeolóxicas e ambientais.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Buscar e utilizar estratexias na resolución de problemas analizando criticamente as solucións e respostas achadas e reformulando o procedemento se fose necesario para explicar os fenómenos relacionados coas ciencias biolóxicas, xeolóxicas e ambientais.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Deseñar, promover e executar iniciativas relacionadas coa conservación do medio, coa sustentabilidade e coa saúde, baseándose nos fundamentos das ciencias biolóxicas, xeolóxicas e ambientais, para fomentar hábitos sustentables e saudables.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Analizar os elementos do rexistro xeolóxico utilizando fundamentos científicos para relacionalos cos grandes eventos ocorridos ao longo da historia da Terra e coa magnitude temporal en que se desenvolveron.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "3",
+      "descripcion": "Expor preguntas, realizar predicións e formular hipóteses que poidan ser respondidas ou contrastadas utilizando métodos científicos e que tenten explicar fenómenos biolóxicos, xeolóxicos ou ambientais."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "3",
+      "descripcion": "Deseñar a experimentación, a toma de datos e a análise de fenómenos biolóxicos, xeolóxicos e ambientais e seleccionar os instrumentos necesarios, de modo que permitan responder preguntas concretas e contrastar unha hipótese exposta minimizando os nesgos na medida do posible."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "3",
+      "descripcion": "Realizar experimentos e tomar datos cuantitativos e cualitativos sobre fenómenos biolóxicos, xeolóxicos e ambientais seleccionando e utilizando os instrumentos, ferramentas ou técnicas adecuadas con corrección e precisión."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "3",
+      "descripcion": "Interpretar e analizar resultados obtidos nun proxecto de investigación utilizando, cando sexa necesario, ferramentas matemáticas e tecnolóxicas e recoñecendo o seu alcance e limitacións, e obtendo conclusións razoadas e fundamentadas ou valorando a imposibilidade de facelo."
+    },
+    {
+      "codigo": "1.5",
+      "competencia": "3",
+      "descripcion": "Establecer colaboracións dentro e fóra do centro educativo nas distintas fases do proxecto científico, co fin de traballar con maior eficiencia, utilizando ferramentas tecnolóxicas adecuadas, valorando a importancia da cooperación na investigación, respectando a diversidade e favorecendo a inclusión."
+    },
+    {
+      "codigo": "1.6",
+      "competencia": "2",
+      "descripcion": "Argumentar sobre a contribución da ciencia á sociedade e o labor das persoas dedicadas a ela, destacando o papel das mulleres e entendendo a investigación como un labor colectivo e interdisciplinar en constante evolución e influída polo contexto político e os recursos económicos."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "4",
+      "descripcion": "Explicar os modelos da estrutura e dinámica do interior terrestre diferenciando a composición e o comportamento das diferentes capas a través da información proporcionada polos principais métodos de estudo indirectos e directos."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Reflexionar sobre o xurdimento da teoría da tectónica de placas recoñecendo os antecedentes e probas que confirmaron o mobilismo e adoptando unha actitude crítica cara a informacións de dubidosa procedencia e sen unha base científica."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "1",
+      "descripcion": "Argumentar desde a teoría da tectónica de placas os fenómenos xeolóxicos da superficie terrestre relacionándoos cos movementos das placas litosféricas e cos procesos térmicos do interior terrestre e describindo as estruturas xeolóxicas asociadas."
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "1",
+      "descripcion": "Analizar a definición e a clasificación dos minerais atendendo á súa composición química e recoñecer as súas propiedades relacionándoas coa súa estrutura interna."
+    },
+    {
+      "codigo": "2.5",
+      "competencia": "3",
+      "descripcion": "Recoñecer os tipos de rochas e interpretar os procesos xeolóxicos implicados na súa formación utilizando o ciclo xeolóxico á luz da teoría da tectónica de placas."
+    },
+    {
+      "codigo": "2.6",
+      "competencia": "3",
+      "descripcion": "Identificar minerais mediante a observación das súas propiedades e as principais rochas segundo a súa composición, orixe e textura utilizando exemplos da contorna, relacionándoos coas súas aplicacións na vida cotiá e promovendo a explotación e o uso sustentable e a súa relevancia como patrimonio xeolóxico."
+    },
+    {
+      "codigo": "2.7",
+      "competencia": "1",
+      "descripcion": "Analizar os riscos a través dos seus factores e localizar áreas sísmicas e volcánicas en España interpretando información en diferentes formatos (mapas, gráficos, táboas, diagramas, esquemas...) e valorando a importancia das medidas de predición, prevención e corrección."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "1",
+      "descripcion": "Describir a acción dos axentes xeolóxicos externos recoñecendo as formas de relevo asociadas e analizando o relevo en Galicia e a paisaxe próxima."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "4",
+      "descripcion": "Explicar os procesos edafoxenéticos identificando os factores de formación do solo e a importancia da súa conservación."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "6",
+      "descripcion": "Relacionar os grandes eventos da historia terrestre con determinados elementos do rexistro xeolóxico e cos sucesos que ocorren na actualidade, utilizando os principios xeolóxicos básicos e o razoamento lóxico."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "6",
+      "descripcion": "Resolver problemas de datación analizando elementos do rexistro xeolóxico e fósil e aplicando métodos de datación relativa."
+    },
+    {
+      "codigo": "3.5",
+      "competencia": "6",
+      "descripcion": "Interpretar e deducir en mapas e cortes a historia xeolóxica aplicando principios xeolóxicos básicos (intersección, horizontalidade...), determinando as descontinuidades estratigráficas e empregando fósiles guía."
+    },
+    {
+      "codigo": "3.6",
+      "competencia": "1",
+      "descripcion": "Analizar criticamente os riscos xeolóxicos externos relacionándoos coas actividades humanas e valorando a importancia das medidas de predición, prevención e corrección."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "1",
+      "descripcion": "Identificar os niveis de organización dos seres vivos exemplificando cada un deles e utilizando diferentes formatos para a súa diferenciación (esquemas, diagramas, táboas...)."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "1",
+      "descripcion": "Distinguir bioelementos a través de exemplos e identificar as diferentes biomoléculas, recoñecendo os monómeros constituíntes de cada unha e as súas respectivas funcións biolóxicas, demostrando a uniformidade química dos seres vivos."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "1",
+      "descripcion": "Diferenciar as formas de organización celular procariota e eucariota utilizando diferentes forrelacionándoos coa súa función."
+    },
+    {
+      "codigo": "4.4",
+      "competencia": "1",
+      "descripcion": "Relacionar os tecidos animais e vexetais coas células constituíntes a través de imaxes obtidas con diferentes técnicas, indicando xustificadamente as súas funcións e valorando as vantaxes evolutivas da organización pluricelular."
+    },
+    {
+      "codigo": "4.5",
+      "competencia": "1",
+      "descripcion": "Analizar os criterios utilizados para a clasificación dos seres vivos describindo as características dos tres dominios e os cinco reinos e xustificando desde a perspectiva evolutiva os cambios nos grandes grupos."
+    },
+    {
+      "codigo": "4.6",
+      "competencia": "4",
+      "descripcion": "Diferenciar os principais grupos taxonómicos dos seres vivos, recoñecendo as súas características e achegando exemplos de seu propio medio, así como utilizar claves dicotómicas para a súa determinación."
+    },
+    {
+      "codigo": "4.7",
+      "competencia": "1",
+      "descripcion": "Describir o proceso de especiación e argumentar sobre aspectos relacionados coa evolución utilizando as probas e os mecanismos evolutivos, e defendendo unha postura de forma razoada e cunha actitude aberta, flexible, receptiva ante a opinión dos demais."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "4",
+      "descripcion": "Explicar a fotosíntese como un proceso de nutrición autótrofa relacionándoa cos mecanismos e estruturas involucradas no transporte dos zumes e argumentando a súa relevancia para o mantemento da vida na Terra."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "1",
+      "descripcion": "Recoñecer a función de relación das plantas diferenciando as nastias e os tropismos, asociando cada estímulo coa súa resposta e relacionando as principais hormonas coa súa función."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "1",
+      "descripcion": "Describir as diferenzas entre a reprodución sexual e asexual, recoñecendo as vantaxes e inconvenientes de cada unha e analizándoas desde unha perspectiva evolutiva."
+    },
+    {
+      "codigo": "5.4",
+      "competencia": "4",
+      "descripcion": "Explicar os ciclos biolóxicos dos diferentes grupos de plantas analizando as súas fases e estruturas características a través de debuxos, esquemas e gráficos."
+    },
+    {
+      "codigo": "5.5",
+      "competencia": "1",
+      "descripcion": "Recoñecer os procesos implicados na reprodución sexual e os tipos de reprodución asexual, recoñecendo nesta última a súa aplicación no campo da agricultura."
+    },
+    {
+      "codigo": "5.6",
+      "competencia": "4",
+      "descripcion": "Explicar a relación das adaptacións dos vexetais co medio en que se desenvolven utilizando exemplos significativos e recoñecendo a influencia de diferentes factores."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "1",
+      "descripcion": "Identificar os órganos, aparellos e sistemas que interveñen na función de nutrición, relación e reprodución recoñecendo a función de cada un nos diferentes grupos taxonómicos."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "1",
+      "descripcion": "Recoñecer os aparellos dixestivos, os pigmentos e aparellos respiratorios, os tipos de circulación, os produtos de excreción e os procesos que interveñen na nutrición animal."
+    },
+    {
+      "codigo": "6.3",
+      "competencia": "1",
+      "descripcion": "Describir os receptores sensoriais, sistemas de coordinación e órganos efectores de xeito comparado nos principais grupos de animais."
+    },
+    {
+      "codigo": "6.4",
+      "competencia": "1",
+      "descripcion": "Describir e comparar os tipos de reprodución sexual e asexual, os tipos de fecundación e as estruturas implicadas na reprodución en diferentes grupos de animais analizando os ciclos biolóxicos máis representativos."
+    },
+    {
+      "codigo": "6.5",
+      "competencia": "4",
+      "descripcion": "Explicar a relación das adaptacións dos animais co medio en que se desenvolven utilizando exemplos significativos e recoñecendo a influencia de diferentes factores."
+    },
+    {
+      "codigo": "6.6",
+      "competencia": "2",
+      "descripcion": "Expor e resolver cuestións relacionadas cos diferentes animais localizando e citando fontes adecuadas e seleccionando, organizando e analizando criticamente a información."
+    },
+    {
+      "codigo": "7.1",
+      "competencia": "1",
+      "descripcion": "Identificar os diferentes tipos de microorganismos, clasificándoos nos dominios e reinos correspondentes."
+    },
+    {
+      "codigo": "7.2",
+      "competencia": "5",
+      "descripcion": "Argumentar sobre a importancia ecolóxica dos microorganismos, relacionándoos cos ciclos bioxeoquímicos."
+    },
+    {
+      "codigo": "7.3",
+      "competencia": "5",
+      "descripcion": "Describir os principais mecanismos de reprodución bacteriana facendo fincapé na transferencia xenética horizontal e nas súas consecuencias para a saúde humana."
+    },
+    {
+      "codigo": "7.4",
+      "competencia": "3",
+      "descripcion": "Recoñecer as principais técnicas de cultivo de microorganismos a través da observación de vídeos, páxinas web, fotografías ou da práctica no laboratorio."
+    },
+    {
+      "codigo": "7.5",
+      "competencia": "2",
+      "descripcion": "Identificar as formas acelulares (virus, viroides e prións) e contrastar e xustificar a veracidade da información recoñecendo a súa importancia biolóxica, utilizando fontes fiables e adoptando unha actitude crítica e escéptica cara a informacións sen unha base científica, como pseudociencias, teorías conspiratorias, crenzas infundadas, noticias falsas..."
+    },
+    {
+      "codigo": "7.6",
+      "competencia": "1",
+      "descripcion": "Comunicar informacións e describir as enfermidades infecciosas máis importantes relacionadas cos microorganismos, reflexionando sobre o papel dos antibióticos no seu tratamento e sobre o problema da resistencia, transmitíndoas de forma rigorosa e utilizando a terminoloxía e o formato adecuados (gráficos, táboas, vídeos e informes, entre outros) e ferramentas dixitais."
+    },
+    {
+      "codigo": "8.1",
+      "competencia": "1",
+      "descripcion": "Explicar a dinámica das capas fluídas da Terra, recoñecendo a interrelación entre todos os subsistemas terrestres e utilizando exemplos significativos."
+    },
+    {
+      "codigo": "8.2",
+      "competencia": "1",
+      "descripcion": "Recoñecer un ecosistema, describindo as relacións tróficas, os ciclos bioxeoquímicos e o fluxo de enerxía a través dos diferentes elos e identificando a súa interdependencia."
+    },
+    {
+      "codigo": "8.3",
+      "competencia": "4",
+      "descripcion": "Resolver problemas relacionados coas interaccións tróficas nos ecosistemas buscando e utilizando recursos variados, como coñecementos propios, datos e información obtidos, razoamento lóxico, pensamento computacional ou ferramentas dixitais."
+    },
+    {
+      "codigo": "8.4",
+      "competencia": "5",
+      "descripcion": "Analizar as causas e as consecuencias ecolóxicas, sociais e económicas dos principais problemas ambientais, desde unha perspectiva individual, local e global, concibíndoos como grandes retos da humanidade."
+    },
+    {
+      "codigo": "8.5",
+      "competencia": "4",
+      "descripcion": "Analizar criticamente a solución a un problema ambiental relacionándoo coas causas e consecuencias que o orixinan."
+    },
+    {
+      "codigo": "8.6",
+      "competencia": "5",
+      "descripcion": "Avaliar diferentes problemas ambientais promovendo o desenvolvemento sustentable como modelo para a conservación do medio ambiente."
+    },
+    {
+      "codigo": "8.7",
+      "competencia": "5",
+      "descripcion": "Propoñer e poñer en práctica hábitos de vida e iniciativas sustentables e saudables no eido local e global argumentando sobre os seus efectos positivos e sobre a urxencia de adoptalos."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "Bloque 1. Proxecto científico",
+      "titulo": "Proxecto científico",
+      "items": [
+        "A evolución histórica do saber científico: a ciencia como labor colectivo, interdisciplinar e en continua construción e evolución.",
+        "Estratexias para a elaboración dun proxecto científico.",
+        "Formulación de hipóteses, preguntas e conxecturas científicas.",
+        "Procura, recoñecemento e utilización de fontes fiables de información científica.",
+        "Experiencias científicas de laboratorio e/ou de campo: deseño, planificación e realización.",
+        "Controis experimentais e contraste de hipóteses.",
+        "Método de análise de resultados científicos: organización, representación e ferramentas estatísticas.",
+        "Comunicación científica de procesos e resultados con vocabulario científico e a través de ferramentas dixitais e formatos de uso frecuente en ciencia (presentación, gráfica, vídeo, pósteres, informe e outros).",
+        "Importancia social da contribución e do labor científico das persoas dedicadas á ciencia. O papel das mulleres na ciencia."
+      ],
+      "codigos_items": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4",
+        "1.5",
+        "1.6",
+        "1.7",
+        "1.8",
+        "1.9"
+      ]
+    },
+    {
+      "codigo": "2",
+      "bloque": "Bloque 2. A xeodinámica interna",
+      "titulo": "A xeodinámica interna",
+      "items": [
+        "O estudo da Terra: métodos directos e indirectos.",
+        "Os modelos da estrutura e dinámica da xeosfera.",
+        "Os procesos xeolóxicos internos. O relevo e a relación coa tectónica de placas.",
+        "Antecedentes: deriva continental, expansión do fondo oceánico e paleomagnetismo.",
+        "As placas litosféricas. A convección terrestre.",
+        "Tipos de bordos de placas. Estruturas e fenómenos xeolóxicos asociados aos límites e ás zonas de intraplaca.",
+        "Consecuencias: a deformación das rochas. Pregamentos e fallas.",
+        "Os minerais: concepto, propiedades e clasificación.",
+        "As rochas.",
+        "Magmatismo, metamorfismo e sedimentación.",
+        "Clasificación segundo a súa orixe e composición. Rochas magmáticas, metamórficas e sedimentarias.",
+        "Relación coa tectónica de placas. O ciclo das rochas.",
+        "Clasificación e identificación dos minerais e rochas relevantes e da contorna. Explotación e uso sustentable. Importancia da conservación do patrimonio xeolóxico.",
+        "Os riscos xeolóxicos internos.",
+        "Factores de risco.",
+        "Medidas de predición, prevención e corrección.",
+        "O risco sísmico e volcánico en España."
+      ],
+      "codigos_items": [
+        "2.1",
+        "2.2",
+        "2.3",
+        "2.4",
+        "2.5",
+        "2.6",
+        "2.7",
+        "2.8",
+        "2.9",
+        "2.10",
+        "2.11",
+        "2.12",
+        "2.13",
+        "2.14",
+        "2.15",
+        "2.16",
+        "2.17"
+      ]
+    },
+    {
+      "codigo": "3",
+      "bloque": "Bloque 3. A xeodinámica externa. Historia da Terra",
+      "titulo": "A xeodinámica externa. Historia da Terra",
+      "items": [
+        "Os procesos xeolóxicos externos: axentes causais e consecuencias sobre o relevo.",
+        "A evolución dun solo: procesos, factores e conservación.",
+        "Os métodos e principios do estudo do rexistro xeolóxico: reconstrución da historia xeolóxica.",
+        "O tempo xeolóxico: magnitude, escala e métodos de datación absoluta e relativa.",
+        "A historia da Terra: principais acontecementos xeolóxicos, paleoxeográficos, climáticos e biolóxicos.",
+        "Os riscos xeolóxicos externos e a súa relación coa actividade humana. Medidas de predición, prevención e corrección."
+      ],
+      "codigos_items": [
+        "3.1",
+        "3.2",
+        "3.3",
+        "3.4",
+        "3.5",
+        "3.6"
+      ]
+    },
+    {
+      "codigo": "4",
+      "bloque": "Bloque 4. Os seres vivos: niveis de organización, composición, diversidade e evolución",
+      "titulo": "Os seres vivos: niveis de organización, composición, diversidade e evolución",
+      "items": [
+        "Os niveis de organización dos seres vivos e a unidade de composición química.",
+        "A composición química dos seres vivos.",
+        "Os bioelementos: concepto e clasificación.",
+        "As biomoléculas: clasificación, monómeros e funcións biolóxicas.",
+        "A organización celular dos seres vivos.",
+        "Organización procariota e eucariota: semellanzas e diferenzas.",
+        "A organización pluricelular dos seres vivos.",
+        "Histoloxía animal e vexetal.",
+        "Órganos, aparellos e sistemas.",
+        "Perspectiva evolutiva.",
+        "Os principais grupos taxonómicos dos seres vivos: características fundamentais.",
+        "As principais teorías evolutivas: probas e mecanismos da evolución. A especiación.",
+        "A historia da vida na Terra: xustificación desde a perspectiva evolutiva dos principais cambios nos grupos de seres vivos."
+      ],
+      "codigos_items": [
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4",
+        "4.5",
+        "4.6",
+        "4.7",
+        "4.8",
+        "4.9",
+        "4.10",
+        "4.11",
+        "4.12",
+        "4.13"
+      ]
+    },
+    {
+      "codigo": "5",
+      "bloque": "Bloque 5. Os vexetais: funcións e adaptacións",
+      "titulo": "Os vexetais: funcións e adaptacións",
+      "items": [
+        "A función de nutrición vexetal.",
+        "A fotosíntese: balance xeral e importancia ecolóxica para a vida na Terra.",
+        "Mecanismos de transporte do zume bruto e do zume elaborado nas plantas vasculares.",
+        "A función de relación.",
+        "Tipos de respostas dos vexetais aos distintos tipos de estímulos.",
+        "As fitohormonas e o seu papel na fisioloxía vexetal.",
+        "A función de reprodución.",
+        "A reprodución asexual e a reprodución sexual. Relevancia ecolóxica e evolutiva.",
+        "Os ciclos biolóxicos nos diferentes tipos de vexetais.",
+        "As adaptacións dos vexetais ao medio."
+      ],
+      "codigos_items": [
+        "5.1",
+        "5.2",
+        "5.3",
+        "5.4",
+        "5.5",
+        "5.6",
+        "5.7",
+        "5.8",
+        "5.9",
+        "5.10"
+      ]
+    },
+    {
+      "codigo": "6",
+      "bloque": "Bloque 6. Os animais: funcións e adaptacións",
+      "titulo": "Os animais: funcións e adaptacións",
+      "items": [
+        "A función de nutrición animal.",
+        "Procesos e estruturas implicadas nos diferentes grupos taxonómicos.",
+        "A función de relación.",
+        "Funcionamento dos sistemas de coordinación (nervioso e endócrino) nos diferentes grupos taxonómicos.",
+        "A función de reprodución.",
+        "Procesos e estruturas implicadas nos diferentes grupos taxonómicos.",
+        "Importancia biolóxica.",
+        "As adaptacións dos animais ao medio."
+      ],
+      "codigos_items": [
+        "6.1",
+        "6.2",
+        "6.3",
+        "6.4",
+        "6.5",
+        "6.6",
+        "6.7",
+        "6.8"
+      ]
+    },
+    {
+      "codigo": "7",
+      "bloque": "Bloque 7. Os microorganismos e as formas acelulares",
+      "titulo": "Os microorganismos e as formas acelulares",
+      "items": [
+        "Concepto e características xerais dos microorganismos.",
+        "O metabolismo dos microorganismos. Ciclos bioxeoquímicos e importancia ecolóxica.",
+        "A reprodución bacteriana. Mecanismos de transferencia xenética horizontal en bacterias.",
+        "As técnicas de esterilización, cultivo e illamento.",
+        "As formas acelulares: virus, viroides e prións. Características, mecanismos de infección e importancia biolóxica.",
+        "As enfermidades infecciosas.",
+        "Clasificación segundo os microorganismos causantes.",
+        "Resistencia aos antibióticos. Uso responsable destes."
+      ],
+      "codigos_items": [
+        "7.1",
+        "7.2",
+        "7.3",
+        "7.4",
+        "7.5",
+        "7.6",
+        "7.7",
+        "7.8"
+      ]
+    },
+    {
+      "codigo": "8",
+      "bloque": "Bloque 8. Ecoloxía e sustentabilidade",
+      "titulo": "Ecoloxía e sustentabilidade",
+      "items": [
+        "Estrutura, dinámica e funcións da atmosfera e da hidrosfera.",
+        "A dinámica dos ecosistemas.",
+        "As relacións tróficas. O fluxo de enerxía e os ciclos da materia.",
+        "Resolución de problemas e cuestións relacionados cos parámetros e coas relacións tróficas.",
+        "Os principais impactos ambientais antrópicos.",
+        "O cambio climático. Causas e consecuencias e estratexias para a mitigación e a adaptación.",
+        "perda da biodiversidade: causas e consecuencias ambientais e sociais. Importancia da súa conservación",
+        "s residuos: efectos, prevención e xestión.",
+        "Desenvolvemento sustentable: concepto e dimensións.",
+        ".4 Orientacións pedagóxicas",
+        "intervención educativa na materia de Bioloxía, Xeoloxía e Ciencias Ambientais desenvol-",
+        "erá o seu currículo e tratará de asentar de xeito gradual e progresivo as aprendizaxes que faci-",
+        "iten ao alumnado o logro dos obxectivos da materia e, en combinación co resto das materias,",
+        "nha adecuada adquisición das competencias clave e o logro dos obxectivos da etapa.",
+        "este sentido, no deseño das actividades, o profesorado terá que considerar a relación exis-",
+        "ente entre os obxectivos da materia e as competencias clave a través dos descritores operativos",
+        "as liñas de actuación no proceso de ensino e aprendizaxe que se presentan nos apartados se-",
+        "uintes e seleccionar aqueles criterios de avaliación do currículo que se axusten á finalidade bus-",
+        "ada, así como empregalos para verificar as aprendizaxes do alumnado e o seu nivel de desem-",
+        "eño.",
+        "elación entre os obxectivos da materia de Bioloxía, Xeoloxía e Ciencias Ambientais e as com-",
+        "etencias clave a través dos descritores operativos establecidos no anexo I",
+        "bxectivos",
+        "a materia",
+        "BX1",
+        "BX2",
+        "BX3",
+        "BX4",
+        "BX5",
+        "BX6",
+        "iñas de actuación no proceso de ensino e aprendizaxe",
+        "Os contidos da materia traballados de forma competencial que propicie a adquisición e o de-",
+        "envolvemento das oito competencias clave buscando a interdisciplinariedade e ligándoa sem-",
+        "re ao contexto do alumnado.",
+        "A realización de proxectos variados desde a resolución de problemas e a elaboración de pro-",
+        "ectos, investigacións e actividades indagativas en contextos significativos e auténticos que",
+        "ermitan conectar coa realidade do alumnado.",
+        "O uso de estratexias para traballar transversalmente a comprensión lectora, a expresión oral",
+        "escrita, a comunicación audiovisual, a competencia dixital e o fomento da creatividade, do",
+        "spírito científico e do emprendemento.",
+        "O uso de distintos métodos que teñan en conta os diferentes ritmos de aprendizaxe do alum-",
+        "ado favorecendo a capacidade de aprender por si mesmo, de xeito que se promova o traballo",
+        "n equipo e se propicie o interese pola materia e polos seus estudos posteriores.",
+        "A énfase na atención á diversidade do alumnado, na atención individualizada, na prevención",
+        "as dificultades de aprendizaxe e na posta en práctica de mecanismos de reforzo e estratexias",
+        "e regulación emocional tan pronto como se detecten estas dificultades.",
+        "O deseño de experiencias de laboratorio e o traballo de campo que lle permita ao alumnado",
+        "similar de xeito significativo os contidos e que facilite a súa conexión coa realidade."
+      ],
+      "codigos_items": [
+        "8.1",
+        "8.2",
+        "8.3",
+        "8.4",
+        "8.5",
+        "8.6",
+        "8.7",
+        "8.8",
+        "8.9",
+        "8.10",
+        "8.11",
+        "8.12",
+        "8.13",
+        "8.14",
+        "8.15",
+        "8.16",
+        "8.17",
+        "8.18",
+        "8.19",
+        "8.20",
+        "8.21",
+        "8.22",
+        "8.23",
+        "8.24",
+        "8.25",
+        "8.26",
+        "8.27",
+        "8.28",
+        "8.29",
+        "8.30",
+        "8.31",
+        "8.32",
+        "8.33",
+        "8.34",
+        "8.35",
+        "8.36",
+        "8.37",
+        "8.38",
+        "8.39",
+        "8.40",
+        "8.41",
+        "8.42",
+        "8.43",
+        "8.44",
+        "8.45",
+        "8.46",
+        "8.47",
+        "8.48"
+      ]
+    }
+  ],
+  "comunidad": "galicia",
+  "idioma": "gl"
+}

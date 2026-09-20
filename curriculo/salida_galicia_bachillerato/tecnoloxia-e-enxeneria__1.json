@@ -1,0 +1,283 @@
+{
+  "materia_oficial": "Tecnoloxía e Enxeñería",
+  "materia": "Tecnoloxía e Enxeñería",
+  "etapa": "Bachillerato",
+  "ciclo": "1º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Coordinar e desenvolver proxectos de investigación cunha actitude crítica e emprendedora, a través de estratexias e técnicas eficientes de resolución de problemas e comunicando os resultados de xeito adecuado, para crear e mellorar produtos e sistemas de modo continuo.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Seleccionar materiais e elaborar estudos de impacto aplicando criterios técnicos e de sustentabilidade para fabricar produtos de calidade que dean resposta a problemas e a tarefas propostos desde un enfoque responsable e ético.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Utilizar as ferramentas dixitais adecuadas analizando as súas posibilidades, configurándoas segundo as súas necesidades e aplicando coñecementos interdisciplinarios para resolver tarefas e para realizar a presentación dos resultados dun xeito óptimo.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Xerar coñecementos e mellorar destrezas técnicas transferindo e aplicando saberes doutras disciplinas científicas con actitude creativa para calcular e resolver problemas ou dar resposta a necesidades dos distintos ámbitos da enxeñaría.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Deseñar, crear e avaliar sistemas tecnolóxicos aplicando coñecementos de programación informática, regulación automática e control, así como as posibilidades que ofrecen as tecnoloxías emerxentes, para estudar, controlar e automatizar tarefas.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Analizar e comprender sistemas tecnolóxicos dos distintos ámbitos da enxeñaría estudando as súas características, o consumo e a eficiencia enerxética para avaliar o uso responsable e sustentable que se fai da tecnoloxía.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Investigar e deseñar proxectos que mostren de forma gráfica a creación e a mellora dun produto seleccionando, referenciando e interpretando información relacionada."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Participar no desenvolvemento, xestión e coordinación de proxectos de creación e mellora continua de produtos viables e socialmente responsables identificando melloras e creando prototipos mediante un proceso iterativo, con actitude crítica, creativa e emprendedora."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Colaborar en tarefas tecnolóxicas escoitando o razoamento dos demais, achegando o equipo a través do rol asignado e fomentando o benestar grupal e as relacións saudables e inclusivas."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "3",
+      "descripcion": "Elaborar documentación técnica con precisión e rigor xerando diagramas funcionais e utilizando medios manuais e aplicacións dixitais."
+    },
+    {
+      "codigo": "1.5",
+      "competencia": "3",
+      "descripcion": "Comunicar de maneira eficaz e organizada as ideas e as solucións tecnolóxicas empregando o soporte, a terminoloxía e o rigor apropiados."
+    },
+    {
+      "codigo": "1.6",
+      "competencia": "1",
+      "descripcion": "Determinar o ciclo de vida dun produto planificando e aplicando medidas de control de calidade nas súas distintas etapas, desde o deseño á comercialización, tendo en consideración estratexias de mellora continua."
+    },
+    {
+      "codigo": "1.7",
+      "competencia": "3",
+      "descripcion": "Resolver tarefas propostas e funcións asignadas de maneira óptima mediante o uso e a configuración de diferentes ferramentas dixitais de maneira óptima e autónoma."
+    },
+    {
+      "codigo": "1.8",
+      "competencia": "3",
+      "descripcion": "Realizar a presentación de proxectos empregando ferramentas dixitais adecuadas."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Seleccionar os materiais, tradicionais ou de nova xeración, adecuados para a fabricación de produtos de calidade baseándose nas súas características técnicas e atendendo a criterios de sustentabilidade de maneira responsable e ética."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Deseñar modelos empregando as ferramentas de deseño máis axeitadas e aplicando os criterios técnicos necesarios."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Fabricar modelos ou prototipos empregando as técnicas de fabricación máis adecuadas e aplicando os criterios técnicos e de sustentabilidade necesarios."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "4",
+      "descripcion": "Resolver problemas asociados a sistemas e instalacións mecánicas aplicando fundamentos de mecanismos de transmisión e transformación de movementos, soporte e unión ao desenvolvemento de montaxes ou simulacións."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "4",
+      "descripcion": "Interpretar e solucionar esquemas de sistemas pneumáticos a través de montaxes e simulacións, o que comprende o funcionamento de cada un dos seus elementos e do sistema na súa totalidade."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "4",
+      "descripcion": "Deseñar sistemas mecánicos e/ou pneumáticos que resolvan un problema determinado e poñelo en funcionamento de forma física ou simulada."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Resolver problemas de circuítos eléctricos e electrónicos aplicando fundamentos de corrente continua ao desenvolvemento de montaxes ou simulacións."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Resolver problemas asociados a máquinas eléctricas de corrente continua aplicando fundamentos de electricidade."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Interpretar e representar circuítos eléctricos e electrónicos utilizando a simboloxía normalizada."
+    },
+    {
+      "codigo": "4.4",
+      "competencia": "4",
+      "descripcion": "Montar e experimentar circuítos de forma física ou simulada analizando e describindo o seu funcionamento."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Coñecer e comprender conceptos básicos de programación textual mostrando o progreso paso a paso da execución dun programa a partir dun estado inicial e predicindo o seu estado final tras a execución."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Controlar o funcionamento de sistemas tecnolóxicos e robóticos utilizando linguaxes de programación informática."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "5",
+      "descripcion": "Aplicar ao funcionamento de sistemas e robots as posibilidades que ofrecen a telemetría e a Internet das cousas."
+    },
+    {
+      "codigo": "5.4",
+      "competencia": "5",
+      "descripcion": "Automatizar, programar e avaliar movementos de robots, mediante a súa modelización, aplicando algoritmos sinxelos e o uso de ferramentas informáticas."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "6",
+      "descripcion": "Avaliar os distintos sistemas de xeración de enerxía eléctrica e mercados enerxéticos estudando as súas características."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "6",
+      "descripcion": "Calcular as magnitudes relacionadas coa xeración de enerxía eléctrica valorando a eficiencia dos diferentes sistemas."
+    },
+    {
+      "codigo": "6.3",
+      "competencia": "6",
+      "descripcion": "Analizar as diferentes instalacións dunha vivenda desde o punto de vista da súa eficiencia enerxética buscando aquelas opcións máis comprometidas coa sustentabilidade e fomentando un uso responsable destas."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "Bloque 1. Proxectos de investigación e desenvolvemento",
+      "titulo": "Proxectos de investigación e desenvolvemento",
+      "items": [
+        "Estratexias de xestión e desenvolvemento de proxectos: diagramas de Gantt, metodoloxías Agile. Técnicas de investigación e ideación: Design Thinking. Técnicas de traballo en equipo.",
+        "Produtos: ciclo de vida. Estratexias de mellora continua. Planificación e desenvolvemento de deseño e comercialización. Loxística, transporte e distribución. Metroloxía e normalización. Control de calidade.",
+        "Emprendemento, resiliencia, perseveranza e creatividade para abordar problemas desde unha perspectiva interdisciplinaria.",
+        "Autoconfianza e iniciativa. Identificación e xestión de emocións. O erro e a reavaliación como parte do proceso de aprendizaxe."
+      ],
+      "codigos_items": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4"
+      ]
+    },
+    {
+      "codigo": "2",
+      "bloque": "Bloque 2. Materiais e fabricación",
+      "titulo": "Materiais e fabricación",
+      "items": [
+        "Materiais técnicos e novos materiais. Clasificación e criterios de sustentabilidade. Selección e aplicacións características.",
+        "Expresión gráfica. Aplicacións CAD-CAE-CAM. Diagramas funcionais, esquemas e esbozos.",
+        "Técnicas de fabricación: modelaxe rápida e baixo demanda.",
+        "Fabricación dixital aplicada a proxectos: impresión 3D e corte.",
+        "Normas de seguridade e hixiene no traballo."
+      ],
+      "codigos_items": [
+        "2.1",
+        "2.2",
+        "2.3",
+        "2.4",
+        "2.5"
+      ]
+    },
+    {
+      "codigo": "3",
+      "bloque": "Bloque 3. Sistemas mecánicos",
+      "titulo": "Sistemas mecánicos",
+      "items": [
+        "Mecanismos de transmisión e transformación de movementos. Soportes e unión de elementos mecánicos. Deseño, cálculo, montaxe e experimentación física ou simulada.",
+        "Sistemas pneumáticos: elementos, simboloxía e circuítos básicos. Montaxe e/ou simulación para a resolución de problemas.",
+        "Aplicación práctica en proxectos."
+      ],
+      "codigos_items": [
+        "3.1",
+        "3.2",
+        "3.3"
+      ]
+    },
+    {
+      "codigo": "4",
+      "bloque": "Bloque 4. Sistemas eléctricos e electrónicos",
+      "titulo": "Sistemas eléctricos e electrónicos",
+      "items": [
+        "Circuítos eléctricos de corrente continua.",
+        "Circuítos electrónicos básicos.",
+        "Interpretación e representación esquematizada de circuítos. Cálculo, montaxe e experimentación física ou simulada. Aplicación a proxectos.",
+        "Máquinas eléctricas de corrente continua: motores e xeradores, partes, funcionamento e conexións."
+      ],
+      "codigos_items": [
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4"
+      ]
+    },
+    {
+      "codigo": "5",
+      "bloque": "Bloque 5. Programación, automatización e control",
+      "titulo": "Programación, automatización e control",
+      "items": [
+        "Fundamentos da programación textual. Características, elementos e linguaxes.",
+        "Proceso de desenvolvemento: edición, compilación ou interpretación, execución, probas e depuración.",
+        "Sistemas de control: conceptos, elementos e modelización de sistemas sinxelos.",
+        "Automatización programada de procesos. Deseño, programación, construción e simulación e/ou montaxe.",
+        "Creación de programas aplicados á automatización de procesos utilizando linguaxes de programación textual. Modularización.",
+        "Robótica: modelización de movementos e accións mecánicas.",
+        "Protocolos de comunicación de redes de dispositivos.",
+        "Control de dispositivos mediante tecnoloxías de comunicación con e sen fíos.",
+        "Sistemas de supervisión ( SCADA). Telemetría e monitorización.",
+        "Aplicación da Internet das cousas (IoT) a proxectos e sistemas de control."
+      ],
+      "codigos_items": [
+        "5.1",
+        "5.2",
+        "5.3",
+        "5.4",
+        "5.5",
+        "5.6",
+        "5.7",
+        "5.8",
+        "5.9",
+        "5.10"
+      ]
+    },
+    {
+      "codigo": "6",
+      "bloque": "Bloque 6. Tecnoloxía sustentable",
+      "titulo": "Tecnoloxía sustentable",
+      "items": [
+        "Sistemas de xeración de enerxía eléctrica e mercados enerxéticos. Cálculo de magnitudes. Consumo enerxético sustentable, técnicas e criterios de aforro. Subministracións domésticas sustentables.",
+        "Instalacións en vivendas: eléctricas, de auga e climatización, de comunicación e domóticas desde o punto de vista da súa eficiencia enerxética e sustentabilidade. Enerxías renovables aplicadas á vivenda."
+      ],
+      "codigos_items": [
+        "6.1",
+        "6.2"
+      ]
+    }
+  ],
+  "comunidad": "galicia",
+  "idioma": "gl"
+}

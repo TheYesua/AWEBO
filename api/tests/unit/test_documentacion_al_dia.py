@@ -159,7 +159,8 @@ class TestLosRecuentosDelCurriculo:
         for carpeta in ("salida", "salida_cataluna", "salida_cataluna_batxillerat",
                         "salida_andalucia", "salida_andalucia_bachillerato",
                         "salida_ceuta_bachillerato",
-                        "salida_galicia", "salida_pais_vasco",
+                        "salida_galicia", "salida_galicia_bachillerato",
+                        "salida_pais_vasco",
                         "salida_pais_vasco_bachillerato"):
             ruta = CURRICULO / carpeta
             if not ruta.exists():
@@ -184,7 +185,8 @@ class TestLosRecuentosDelCurriculo:
         ("salida_andalucia", "Andalucía (Orden 30/05/2023, anexos"),
         ("salida_andalucia_bachillerato", "Andalucía · Bachillerato"),
         ("salida_ceuta_bachillerato", "Ceuta y Melilla · Bachillerato"),
-        ("salida_galicia", "Galicia"),
+        ("salida_galicia", "Galicia (Decreto 156/2022"),
+        ("salida_galicia_bachillerato", "Galicia · Bachillerato"),
         ("salida_pais_vasco", "País Vasco (Decreto 77/2023)"),
         ("salida_pais_vasco_bachillerato", "País Vasco · Bachillerato"),
     ])

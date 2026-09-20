@@ -15,10 +15,11 @@ con sus optativas propias del Anexo III),
 **Galicia** (Decreto 156/2022) y el **País Vasco** (Decreto 77/2023): cada
 docente elige su provincia y trabaja contra
 la normativa que se le aplica, no contra la estatal. Está además el currículo
-de **Bachillerato** de cuatro de ellas: País Vasco (Decreto 76/2023), Cataluña
+de **Bachillerato de las cinco**: País Vasco (Decreto 76/2023), Cataluña
 (Decret 171/2022, con la modificación del Decret 103/2026 que se aplica desde
 el curso 2026-2027), Andalucía (la otra Orden de 30 de mayo de 2023, la de
-Bachillerato) y Ceuta y Melilla (Orden EFP/755/2022, hermana de la de la ESO).
+Bachillerato), Ceuta y Melilla (Orden EFP/755/2022, hermana de la de la ESO) y
+Galicia (Decreto 157/2022, hermano del 156/2022 y del mismo día).
 Ver [`curriculo/README.md`](curriculo/README.md).
 
 > **Origen**: este proyecto nace del Trabajo de Fin de Grado en Ingeniería
@@ -147,6 +148,7 @@ Despliegue mediante Docker Compose. Seis servicios más dos de desarrollo:
    docker compose exec api flask seed curriculo --directorio /curriculo/salida_andalucia
    docker compose exec api flask seed curriculo --directorio /curriculo/salida_andalucia_bachillerato
    docker compose exec api flask seed curriculo --directorio /curriculo/salida_galicia
+   docker compose exec api flask seed curriculo --directorio /curriculo/salida_galicia_bachillerato
    docker compose exec api flask seed curriculo --directorio /curriculo/salida_pais_vasco
    docker compose exec api flask seed curriculo --directorio /curriculo/salida_pais_vasco_bachillerato
    ```
@@ -373,7 +375,7 @@ estructurado que nunca llegó a funcionar, `/health` informando del proveedor
 equivocado, dos incumplimientos WCAG 2.1 en el tema claro y los reintentos
 sobre errores `4xx` de la API de OpenAI.
 
-**1335 tests** cubren todo lo anterior, en la batería que corre en cada push.
+**1364 tests** cubren todo lo anterior, en la batería que corre en cada push.
 La cifra la comprueba un test: si alguien añade una tanda y no la actualiza
 aquí, falla.
 
@@ -395,7 +397,7 @@ El detalle vive fuera de este repositorio; aquí va el estado.
 | ~~8a~~ | ~~Accesibilidad: texto a voz~~                 | S–M      | ✅ 06/08 |
 | ~~8b~~ | ~~Accesibilidad: audio con IA~~                | M        | ✅ 10/08 · aHoTTS local |
 | ~~9a~~ | ~~Ampliación: más materias~~                   | S        | ✅ 07/08 · de 6 a 21 |
-| 9b | Ampliación: más etapas (Bachillerato)              | M        | 🚧 4 de 5 comunidades · falta Galicia |
+| ~~9b~~ | ~~Ampliación: más etapas (Bachillerato)~~      | M        | ✅ **las cinco comunidades** |
 | 9c | Ampliación: más comunidades autónomas              | XL       | ✅ Ceuta, Cataluña, Andalucía, Galicia y País Vasco |
 | ~~10~~ | ~~Saldar deuda técnica~~                       | S        | ✅ 08/08 |
 | ~~11~~ | ~~Correo electrónico~~                         | M        | ✅ 09/08 |
@@ -410,10 +412,7 @@ contrato que nadie firma.
 
 **Lo que sigue abierto**, y se dice porque forma parte del estado real:
 
-- Bachillerato en la comunidad que falta (9b): **Galicia**, que es la única de
-  las cinco cuyo boletín no publica el currículo en un formato del que se pueda
-  extraer sin pasar por la Guía LOMLOE de la Xunta.
-  FP queda fuera: no comparte estructura con la ESO ni con
+- FP queda fuera del alcance: no comparte estructura con la ESO ni con
   Bachillerato —módulos con resultados de aprendizaje, no competencias
   específicas— y sería otro modelo de datos.
 - Las traducciones a catalán, gallego y euskera no las ha revisado nadie

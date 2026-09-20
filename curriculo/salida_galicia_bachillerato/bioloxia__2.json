@@ -1,0 +1,435 @@
+{
+  "materia_oficial": "Bioloxía",
+  "materia": "Bioloxía",
+  "etapa": "Bachillerato",
+  "ciclo": "2º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Interpretar e transmitir información e datos a partir de traballos científicos e argumentar sobre estes con precisión e utilizando diferentes formatos para analizar conceptos, procesos, métodos, experimentos ou resultados das ciencias biolóxicas.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Localizar e utilizar fontes fiables identificando, seleccionando e organizando a información, avaliándoa criticamente e contrastando a súa veracidade para resolver preguntas expostas de forma autónoma e crear contidos relacionados coas ciencias biolóxicas.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Analizar traballos de investigación ou divulgación relacionados coas ciencias biolóxicas, comprobando con sentido crítico a súa veracidade ou se seguen correctamente os pasos dos métodos científicos para avaliar a fiabilidade das súas conclusións.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Expor e resolver problemas buscando e utilizando as estratexias adecuadas, analizando criticamente as solucións e reformulando o procedemento, se fose necesario, para explicar fenómenos relacionados coas ciencias biolóxicas.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Analizar criticamente determinadas accións relacionadas coa sustentabilidade e coa saúde baseándose nos fundamentos da bioloxía molecular para argumentar acerca da importancia de adoptar estilos de vida sustentables e saudables.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Analizar a función das principais biomoléculas e bioelementos e as súas estruturas e interaccións bioquímicas argumentando sobre a súa importancia nos organismos vivos, para explicar as características macroscópicas destes a partir das moleculares.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Analizar de xeito crítico conceptos e procesos relacionados cos saberes da bioloxía molecular, seleccionando e interpretando información en diferentes formatos (modelos, gráficos, táboas, diagramas, fórmulas, esquemas etc.)."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Comunicar informacións razoadas relacionadas coa composición química da materia viva, transmitíndoas de forma clara e rigorosa, utilizando a terminoloxía e o formato adecuados (modelos, gráficos, táboas, vídeos, informes, diagramas, fórmulas, esquemas, símbolos, contidos dixitais etc.) e respondendo de maneira fundamentada e precisa ás cuestións que poidan xurdir durante o proceso."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "2",
+      "descripcion": "Contrastar e xustificar a veracidade de información relacionada coa composición química da materia viva utilizando fontes fiables, achegando datos e adoptando unha actitude crítica e escéptica cara a informacións sen unha base científica, como pseudociencias, teorías conspiratorias, crenzas infundadas, noticias falsas etc."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "3",
+      "descripcion": "Avaliar a fiabilidade das conclusións dun traballo de investigación ou divulgación científica relacionado cos saberes da bioloxía molecular de acordo coa interpretación dos resultados obtidos."
+    },
+    {
+      "codigo": "1.5",
+      "competencia": "3",
+      "descripcion": "Argumentar, utilizando exemplos concretos, sobre a contribución da ciencia á sociedade e o labor das persoas dedicadas a ela, destacando o papel das mulleres e entendendo a investigación como un labor colectivo e interdisciplinar en constante evolución influído polo contexto político e social e polos recursos económicos."
+    },
+    {
+      "codigo": "1.6",
+      "competencia": "5",
+      "descripcion": "Argumentar sobre a importancia de adoptar estilos de vida saudables compatibles cun modelo de desenvolvemento sustentable, baseándose nos principios da bioloxía molecular e relacionándoos cos procesos macroscópicos."
+    },
+    {
+      "codigo": "1.7",
+      "competencia": "6",
+      "descripcion": "Explicar as características e procesos vitais dos seres vivos mediante a análise das súas biomoléculas, das interaccións bioquímicas entre elas e das súas reaccións metabólicas."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "1",
+      "descripcion": "Argumentar sobre aspectos relacionados cos saberes da xenética molecular, considerando os puntos fortes e débiles de diferentes posturas de forma razoada e cunha actitude aberta, flexible, receptiva e respectuosa ante a opinión dos demais."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Expor e resolver cuestións e crear contidos relacionados cos saberes da xenética molecular, localizando e citando fontes de forma adecuada, seleccionando, organizando e analizando criticamente a información."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "6",
+      "descripcion": "Describir os procesos que comprende a expresión xénica recoñecendo o seu significado biolóxico."
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "3",
+      "descripcion": "Comparar os xenomas e os procesos da expresión xénica en procariotas e eucariotas."
+    },
+    {
+      "codigo": "2.5",
+      "competencia": "4",
+      "descripcion": "Explicar fenómenos relacionados cos saberes da xenética molecular a través da formulación e da resolución de problemas, buscando e utilizando as estratexias e os recursos adecuados."
+    },
+    {
+      "codigo": "2.6",
+      "competencia": "4",
+      "descripcion": "Analizar criticamente a solución a un problema relacionado cos saberes da xenética molecular e reformular os procedementos utilizados ou as conclusións se esta solución non fose viable ou ante novos datos achegados ou atopados con posterioridade."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "1",
+      "descripcion": "Analizar de xeito crítico conceptos e procesos relacionados cos saberes da citoloxía seleccionando e interpretando información en diferentes formatos (modelos, gráficos, táboas, diagramas, fórmulas, esquemas etc.)."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "1",
+      "descripcion": "Enunciar os postulados da teoría celular diferenciando morfolóxica, estrutural e funcionalmente os tipos de células e as súas estruturas e orgánulos."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "2",
+      "descripcion": "Identificar imaxes citolóxicas utilizando diferentes técnicas e métodos de observación."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "2",
+      "descripcion": "Recoñecer os diferentes tipos de envolturas celulares diferenciando os mecanismos de transporte de substancias a través delas."
+    },
+    {
+      "codigo": "3.5",
+      "competencia": "6",
+      "descripcion": "Detallar os procesos que teñen lugar ao longo do ciclo celular identificando o significado biolóxico de cada un deles."
+    },
+    {
+      "codigo": "3.6",
+      "competencia": "5",
+      "descripcion": "Explicar a relación do cancro co ciclo celular e as mutacións, recoñecendo a súa correlación cos estilos de vida saudables."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "6",
+      "descripcion": "Identificar e diferenciar os procesos que comprende o catabolismo e o anabolismo celular establecendo as interrelacións entre todos os procesos e rutas metabólicas que teñen lugar nas células."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Explicar procesos relacionados co metabolismo celular a través da formulación e resolución de cuestións e problemas buscando e utilizando as estratexias e os recursos adecuados."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "4",
+      "descripcion": "Analizar a solución a problemas relacionados co metabolismo celular e reformular, de ser necesario, os procedementos utilizados ante novos datos achegados ou atopados con posterioridade."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "3",
+      "descripcion": "Argumentar sobre aspectos relacionados coa biotecnoloxía considerando os puntos fortes e débiles das diferentes posturas que hai en relación a este tema na actualidade, sempre desde unha postura razoada e cunha actitude aberta, flexible, receptiva e respectuosa ante a opinión dos demais."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "2",
+      "descripcion": "Contrastar e xustificar a veracidade de información relacionada coa biotecnoloxía e as súas aplicacións utilizando fontes fiables, achegando datos e adoptando unha actitude crítica e escéptica cara a informacións sen unha base científica, como pseudociencias, teorías conspiratorias, crenzas infundadas, noticias falsas etc."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "5",
+      "descripcion": "Analizar e recoñecer as principais e máis relevantes técnicas de enxeñaría xenética valorando as súas aplicacións en diferentes ámbitos de actuación."
+    },
+    {
+      "codigo": "5.4",
+      "competencia": "5",
+      "descripcion": "Avaliar a aplicación da biotecnoloxía en distintos ámbitos incorporando todos os coñecementos e técnicas que os últimos avances científico-tecnolóxicos proporcionen a este tipo de campos de investigación."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "1",
+      "descripcion": "Explicar e describir en que consiste a inmunidade comentando a importancia das barreiras externas e achegando exemplos próximos."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "1",
+      "descripcion": "Comparar os distintos tipos de inmunidade achegando exemplos."
+    },
+    {
+      "codigo": "6.3",
+      "competencia": "5",
+      "descripcion": "Diferenciar e comparar as enfermidades infecciosas das non infecciosas, identificando as súas fases."
+    },
+    {
+      "codigo": "6.4",
+      "competencia": "5",
+      "descripcion": "Describir as principais patoloxías do sistema inmunitario, identificando as súas causas e analizando a súa relevancia clínica."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "Bloque 1. A base molecular da materia viva",
+      "titulo": "A base molecular da materia viva",
+      "items": [
+        "Composición química da materia viva: bioelementos e biomoléculas.",
+        "Os bioelementos: concepto, tipos, propiedades e funcións biolóxicas.",
+        "As biomoléculas inorgánicas: características químicas, propiedades e funcións biolóxicas. Análise do proceso osmótico.",
+        "As biomoléculas orgánicas: concepto, clasificación e funcións biolóxicas.",
+        "Os glícidos; propiedades e características fisicoquímicas dos monosacáridos, disacáridos e polisacáridos con maior relevancia biolóxica.",
+        "Os lípidos: clasificación, propiedades e características fisicoquímicas.",
+        "As proteínas: clasificación, propiedades e características fisicoquímicas.",
+        "Importancia das proteínas como biocatalizadores.",
+        "As vitaminas e a súa importancia como cofactores enzimáticos.",
+        "Os ácidos nucleicos.",
+        "Estrutura, características fisicoquímicas e tipos.",
+        "Funcións dos ácidos nucleicos na expresión da información biolóxica.",
+        "A relación entre os bioelementos e as biomoléculas e a saúde. Estilos de vida saudables."
+      ],
+      "codigos_items": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4",
+        "1.5",
+        "1.6",
+        "1.7",
+        "1.8",
+        "1.9",
+        "1.10",
+        "1.11",
+        "1.12",
+        "1.13"
+      ]
+    },
+    {
+      "codigo": "2",
+      "bloque": "Bloque 2. Xenética molecular",
+      "titulo": "Xenética molecular",
+      "items": [
+        "Análise dos procesos da expresión xénica e o seu significado biolóxico: replicación, transcrición e tradución.",
+        "Relación entre as mutacións, a replicación do ADN, a evolución e a biodiversidade.",
+        "A regulación da expresión xénica e o seu significado biolóxico.",
+        "Comparación dos procesos de expresión xénica e a súa regulación en procariotas e eucariotas."
+      ],
+      "codigos_items": [
+        "2.1",
+        "2.2",
+        "2.3",
+        "2.4"
+      ]
+    },
+    {
+      "codigo": "3",
+      "bloque": "Bloque 3. A célula",
+      "titulo": "A célula",
+      "items": [
+        "A teoría celular e as súas implicacións biolóxicas.",
+        "A célula procariota e a célula eucariota: diferenciación morfolóxica e estrutural. Fisioloxía celular.",
+        "Observación e diferenciación de imaxes de citoloxía obtidas por microscopia. Técnicas de microscopia e preparación de mostras.",
+        "As envolturas celulares: membrana plasmática, matriz extracelular e paredes celulares.",
+        "Mecanismos de transporte de substancias a través da membrana plasmática, en función das propiedades das moléculas transportadas.",
+        "Os orgánulos da célula eucariota e procariota: estrutura e funcións.",
+        "O ciclo celular: fases e mecanismos de regulación.",
+        "Mitose e meiose. Significado biolóxico.",
+        "O cancro e a súa relación co ciclo celular e as mutacións.",
+        "A importancia dos estilos de vida saudables e a súa correlación co cancro."
+      ],
+      "codigos_items": [
+        "3.1",
+        "3.2",
+        "3.3",
+        "3.4",
+        "3.5",
+        "3.6",
+        "3.7",
+        "3.8",
+        "3.9",
+        "3.10"
+      ]
+    },
+    {
+      "codigo": "4",
+      "bloque": "Bloque 4. Metabolismo celular",
+      "titulo": "Metabolismo celular",
+      "items": [
+        "Enzimoloxía.",
+        "Modelos de acción enzimática.",
+        "Cinética enzimática.",
+        "Mecanismos de regulación enzimática.",
+        "O metabolismo celular. Comparación entre anabolismo e catabolismo.",
+        "Catabolismo.",
+        "Respiración aerobia β-oxidación dos ácidos graxos, ciclo de Krebs, cadea de transporte de electróns e fosforilación oxidativa.",
+        "Respiración anaerobia. Glicolise e fermentación.",
+        "Rendemento enerxético e eficiencia do metabolismo aeróbico fronte ao anaeróbico.",
+        "Anabolismo.",
+        "Anabolismo heterótrofo, síntese de aminoácidos, proteínas e ácidos graxos.",
+        "Anabolismo autótrofo, fotosíntese e quimiosíntese.",
+        "Importancia biolóxica dos principais procesos anabólicos."
+      ],
+      "codigos_items": [
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4",
+        "4.5",
+        "4.6",
+        "4.7",
+        "4.8",
+        "4.9",
+        "4.10",
+        "4.11",
+        "4.12",
+        "4.13"
+      ]
+    },
+    {
+      "codigo": "5",
+      "bloque": "Bloque 5. Biotecnoloxía",
+      "titulo": "Biotecnoloxía",
+      "items": [
+        "Técnicas de enxeñaría xenética. Aplicacións.",
+        "PCR, enzimas de restrición, clonación molecular, CRISPR-CAS9 etc.",
+        "Importancia e repercusións da biotecnoloxía en distintos ámbitos (saúde, agricultura, ambiente, novos materiais, industria alimentaria etc.).",
+        "O papel dos microorganismos na biotecnoloxía.",
+        "Concepto de inmunidade e importancia das barreiras externas para dificultar a entrada de patóxenos.",
+        "Tipos de inmunidade.",
+        "Inmunidade innata e específica.",
+        "Inmunidade humoral e celular",
+        "Inmunidade artificial e natural, pasiva e activa.",
+        "Fases das enfermidades infecciosas.",
+        "Principais patoloxías do sistema inmunitario. Causas e relevancia clínica.",
+        ".4 Orientacións pedagóxicas",
+        "intervención educativa na materia de Bioloxía desenvolverá o seu currículo e tratará de asen-",
+        "ar de xeito gradual e progresivo as aprendizaxes que lle faciliten ao alumnado o logro dos ob-",
+        "ectivos da materia e, en combinación co resto das materias, unha adecuada adquisición das",
+        "ompetencias clave e o logro dos obxectivos da etapa.",
+        "este sentido, no deseño das actividades, o profesorado terá que considerar a relación exis-",
+        "ente entre os obxectivos da materia e as competencias clave a través dos descritores operativos",
+        "as liñas de actuación no proceso de ensino e aprendizaxe que se presentan nos apartados se-",
+        "uintes e seleccionar aqueles criterios de avaliación do currículo que se axusten á finalidade bus-",
+        "ada, así como empregalos para verificar as aprendizaxes do alumnado e o seu nivel de desem-",
+        "eño.",
+        "elación entre os obxectivos da materia de Bioloxía e as competencias clave a través dos des-",
+        "ritores operativos establecidos no anexo I",
+        "bxectivos",
+        "a materia",
+        "BX1",
+        "BX2",
+        "BX3",
+        "BX4",
+        "BX5",
+        "BX6",
+        "iñas de actuación no proceso de ensino e aprendizaxe.",
+        "Traballar a materia seguindo un enfoque interdisciplinar, ligándoa á realidade do alumnado",
+        "e forma práctica e significativa, buscando as situacións de aprendizaxe que, mediante activi-",
+        "ades competenciais, conduzan á adquisición de aprendizaxes significativas.",
+        "A realización de proxectos significativos para o alumnado e a resolución colaborativa de pro-",
+        "lemas reforzando a autoestima, a autonomía, a reflexión e a responsabilidade.",
+        "O uso de estratexias para traballar transversalmente a comprensión lectora, a expresión oral",
+        "escrita, a comunicación audiovisual, a competencia dixital e o fomento da creatividade, do",
+        "spírito científico e do emprendemento.",
+        "O uso de distintos métodos que teñan en conta os diferentes ritmos de aprendizaxe do alum-",
+        "ado, favorezan a capacidade de aprender por si mesmo e promovan o traballo en equipo.",
+        "A énfase na atención á diversidade do alumnado, na atención individualizada, na prevención",
+        "as dificultades de aprendizaxe e na posta en práctica de mecanismos de reforzo tan pronto",
+        "omo se detecten estas dificultades.",
+        "O fin último da Bioloxía é contribuír a ampliar de forma notable os horizontes académicos,",
+        "rofesionais, sociais e persoais do alumnado a través do maior grao de desempeño das com-",
+        "etencias clave.",
+        "Os contidos de cada bloque deben enfocarse desde un punto de vista competencial, de forma",
+        "ue estes constitúan un medio para o desenvolvemento das competencias clave e non sim-",
+        "lemente un fin en si mesmos.",
+        "Cabe destacar que a Bioloxía é unha materia de carácter científico e, como tal, recoméndase",
+        "mpartila ligándoa á realidade do alumnado, de maneira práctica e significativa e seguindo un",
+        "nfoque interdisciplinar. Para tal fin, a metodoloxía que se propón é o uso de situacións de",
+        "prendizaxe que se traduzan en actividades competenciais."
+      ],
+      "codigos_items": [
+        "5.1",
+        "5.2",
+        "5.3",
+        "5.4",
+        "5.5",
+        "5.6",
+        "5.7",
+        "5.8",
+        "5.9",
+        "5.10",
+        "5.11",
+        "5.12",
+        "5.13",
+        "5.14",
+        "5.15",
+        "5.16",
+        "5.17",
+        "5.18",
+        "5.19",
+        "5.20",
+        "5.21",
+        "5.22",
+        "5.23",
+        "5.24",
+        "5.25",
+        "5.26",
+        "5.27",
+        "5.28",
+        "5.29",
+        "5.30",
+        "5.31",
+        "5.32",
+        "5.33",
+        "5.34",
+        "5.35",
+        "5.36",
+        "5.37",
+        "5.38",
+        "5.39",
+        "5.40",
+        "5.41",
+        "5.42",
+        "5.43",
+        "5.44",
+        "5.45",
+        "5.46",
+        "5.47",
+        "5.48",
+        "5.49",
+        "5.50",
+        "5.51",
+        "5.52",
+        "5.53",
+        "5.54",
+        "5.55",
+        "5.56"
+      ]
+    }
+  ],
+  "comunidad": "galicia",
+  "idioma": "gl"
+}

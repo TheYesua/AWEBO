@@ -1,0 +1,603 @@
+{
+  "materia_oficial": "Literatura Galega do Século XX e da Actualidade",
+  "materia": "Literatura Galega do Século XX e da Actualidade",
+  "etapa": "Bachillerato",
+  "ciclo": "1º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "1º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Realizar unha análise detallada do xénero narrativo, poético, teatral e ensaístico e estudar a relación que existe entre a literatura e outras manifestacións artísticas.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Ler obras da literatura galega do século XX e da actualidade pertencentes aos catro xéneros literarios (narrativa, poesía, teatro e ensaio), atendendo tanto ás relacións internas dos elementos constitutivos de cada xénero e as súas funcións nas obras como ás relacións externas das obras co seu contexto de produción e a súa inscrición na tradición cultural galega.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Seleccionar con criterio propio e coa consulta de recomendacións especializadas aquelas obras literarias que mellor se axustan aos gustos, intereses e necesidades persoais da xuventude para facilitar a relación coa obra literaria a nivel contextual, textual e estético.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Establecer vínculos entre obras literarias da literatura galega do século XX e da actualidade coas obras literarias da tradición lusófona, española e universal para constatar a existencia de universais temáticos, tipoloxías de personaxes e canles formais recorrentes ao longo da historia, e recoñecer semellanzas e diferenzas en función dos seus respectivos contextos de produción e da interrelación entre literatura e sociedade.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Empregar as capacidades expresivas e creativas necesarias para a recreación ou creación de textos literarios, utilizando os elementos que configuran cada un dos catro xéneros, así como diferentes técnicas para compor a acción, o deseño de personaxes e a configuración de situacións e escenas.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Participar na construción dun canon literario galego, que integre a perspectiva de experiencia das mulleres a través da lectura para establecer contrapuntos de interese, respecto e sensibilidade fronte a outras voces e para desenvolver o pensamento crítico a respecto da construción discursiva do mundo e os seus imaxinarios.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "2",
+      "descripcion": "Ler e interpretar textos significativos do século XX e da actualidade, identificar neles os aspectos formais e temáticos que os individualizan e valoralos como expresión da sensibilidade autorial e da identidade cultural de Galicia."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "6",
+      "descripcion": "Analizar os elementos intratextuais e extratextuais que impregnan as obras literarias, así como a estrutura e técnica que os sustentan."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "2",
+      "descripcion": "Estudar a relación entre a obra literaria e o contexto sociocultural en que foi creada, e recoñecer as influencias literarias e non literarias presentes nela."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "4",
+      "descripcion": "Valorar a pluralidade de estéticas e temáticas literarias do século XX e da actualidade a través da análise do seu tratamento por diferentes autoras e autores e como medio de enriquecemento persoal."
+    },
+    {
+      "codigo": "1.5",
+      "competencia": "4",
+      "descripcion": "Analizar a relación entre textos da literatura galega do século XX e da actualidade con textos doutras literaturas (lusófona, española e universal), e explicar as conexións formais e temáticas existentes entre eles, distinguindo os trazos propios da nosa cultura literaria."
+    },
+    {
+      "codigo": "1.6",
+      "competencia": "1",
+      "descripcion": "Estudar a relación entre a obra literaria e outras artes (cinema, pintura, música etc.) e describir influencias e hibridacións."
+    },
+    {
+      "codigo": "1.7",
+      "competencia": "1",
+      "descripcion": "Elaborar traballos de investigación escritos, orais ou multimodais sobre algunha obra ou aspecto salientable dela, empregando as fontes de documentación necesarias, e emitir unha opinión persoal argumentada."
+    },
+    {
+      "codigo": "1.8",
+      "competencia": "5",
+      "descripcion": "Crear textos persoais ou colectivos de intención literaria nos cales se teñan presentes as técnicas e os coñecementos adquiridos no estudo e na análise das obras da literatura galega do século XX e da actualidade."
+    },
+    {
+      "codigo": "1.9",
+      "competencia": "6",
+      "descripcion": "Participar na construción dun canon literario galego, que integre a perspectiva de experiencia das mulleres."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "1",
+      "descripcion": "Analizar a narrativa galega do século XX e da actualidade determinando os seus paradigmas, os contextos e as influencias."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "4",
+      "descripcion": "Comentar e comparar textos narrativos da literatura galega do século XX e da actualidade, e describir a coincidencia ou diverxencia temática, formal ou estilística."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "1",
+      "descripcion": "Estudar o relato e sinalar as súas principais características: estrutura, técnicas e extensión."
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "1",
+      "descripcion": "Estudar a novela e describir os seus trazos definitorios: tipo de persoa narradora, deseño de personaxes e tratamento das categorías de espazo e tempo."
+    },
+    {
+      "codigo": "2.5",
+      "competencia": "1",
+      "descripcion": "Realizar exposicións orais ou escritas acerca de relatos ou novelas coa axuda de medios audiovisuais e das tecnoloxías da información e a comunicación, expresando as propias opinións e seguindo un esquema preparado previamente."
+    },
+    {
+      "codigo": "2.6",
+      "competencia": "6",
+      "descripcion": "Elaborar comentarios críticos ou recensións de textos narrativos, xa sexan orais, escritos ou multimodais, participar en debates ou mesas redondas sobre lecturas, nos cales se incorpore a perspectiva de xénero así como calquera outro discurso de interese na nosa sociedade."
+    },
+    {
+      "codigo": "2.7",
+      "competencia": "5",
+      "descripcion": "Recreación e creación de textos narrativos, utilizando os elementos que configuran o xénero, así como diferentes técnicas para compor a acción, o tempo, o deseño de personaxes e a configuración de espazos."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "1",
+      "descripcion": "Analizar a poesía galega do século XX e da actualidade determinando os seus paradigmas, os seus contextos e as súas influencias."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "4",
+      "descripcion": "Comentar e comparar textos poéticos da literatura galega do século XX e da actualidade con textos da tradición lusófona, española e universal e describir a coincidencia ou diverxencia temática, formal ou estilística."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "1",
+      "descripcion": "Estudar o fondo ou contido dos principais textos poéticos do período, determinando temas e motivos."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "2",
+      "descripcion": "Estudar a forma ou expresión dos principais textos poéticos do período, determinando o nivel actancial (actores e personaxes), a enunciación (voz, perspectiva e suxeito lírico), a estrutura e a figuración (tropos, figuras de dicción e figuras de pensamento)."
+    },
+    {
+      "codigo": "3.5",
+      "competencia": "2",
+      "descripcion": "Realizar lecturas e/ou exposicións orais ou escritas sobre obras poéticas da literatura galega do século XX e da actualidade"
+    },
+    {
+      "codigo": "3.6",
+      "competencia": "2",
+      "descripcion": "Valorar a poesía como expresión estética dos sentimentos, ideas e inquietudes da persoa sobre o mundo que a rodea."
+    },
+    {
+      "codigo": "3.7",
+      "competencia": "5",
+      "descripcion": "Recreación e creación de textos poéticos utilizando os elementos que configuran o xénero, así como diferentes técnicas para compor o poema."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "1",
+      "descripcion": "Analizar o teatro galego do século XX e da actualidade determinando os seus paradigmas, os seus contextos e as súas influencias."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "1",
+      "descripcion": "Comentar e comparar textos teatrais da literatura galega do século XX e da actualidade e describir a coincidencia ou diverxencia temática, formal ou estilística."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "1",
+      "descripcion": "Analizar o teatro desde o seu compoñente literario e caracterizar a traxedia, a comedia e o drama do período."
+    },
+    {
+      "codigo": "4.4",
+      "competencia": "2",
+      "descripcion": "Analizar o teatro como espectáculo e describir o funcionamento dos elementos e axentes escénicos."
+    },
+    {
+      "codigo": "4.5",
+      "competencia": "6",
+      "descripcion": "Valorar a especificidade do teatro como medio de comunicación colectivo e como enriquecemento cultural da sociedade."
+    },
+    {
+      "codigo": "4.6",
+      "competencia": "5",
+      "descripcion": "Recreación e creación de textos narrativos utilizando os elementos que configuran o xénero, así como diferentes técnicas para compor a acción, o deseño de personaxes e a configuración de escenas."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "6",
+      "descripcion": "Analizar o ensaio galego do século XX e da actualidade determinando os seus paradigmas, os seus contextos e as súas influencias."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "4",
+      "descripcion": "Comentar e comparar textos ensaísticos da literatura galega do século XX e da actualidade e describir a coincidencia ou diverxencia temática, formal ou estilística."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "1",
+      "descripcion": "Analizar diferentes tipos de ensaios literarios: (auto)biografías, libros de viaxe, memorias, diarios e críticas literarias."
+    },
+    {
+      "codigo": "5.4",
+      "competencia": "1",
+      "descripcion": "Analizar diferentes tipos de ensaios xornalísticos: artigos de opinión, crónicas e entrevistas, diferenciando información e opinión."
+    },
+    {
+      "codigo": "5.5",
+      "competencia": "1",
+      "descripcion": "Realizar un proxecto de investigación sobre o ensaio como xénero emerxente na literatura galega no século XX."
+    },
+    {
+      "codigo": "5.6",
+      "competencia": "5",
+      "descripcion": "Recreación e creación de textos ensaísticos, utilizando os elementos que configuran o xénero."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "3",
+      "descripcion": "Analizar as relacións, influencias e producións hibridadas da literatura e o cinema."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "3",
+      "descripcion": "Analizar as relacións, influencias e producións hibridadas da literatura e a música."
+    },
+    {
+      "codigo": "6.3",
+      "competencia": "3",
+      "descripcion": "Analizar as relacións, influencias e producións hibridadas da literatura e as artes plásticas."
+    },
+    {
+      "codigo": "6.4",
+      "competencia": "3",
+      "descripcion": "Analizar as relacións, influencias e producións hibridadas da literatura e a fotografía."
+    },
+    {
+      "codigo": "6.5",
+      "competencia": "3",
+      "descripcion": "Analizar as relacións, influencias e producións hibridadas da literatura e a banda deseñada."
+    },
+    {
+      "codigo": "6.6",
+      "competencia": "3",
+      "descripcion": "Analizar as relacións, influencias e producións hibridadas da literatura e as novas tecnoloxías."
+    },
+    {
+      "codigo": "6.8",
+      "competencia": "1",
+      "descripcion": "Valorar o coñecemento das distintas artes como manifestacións de natureza social, cultural e artística posuidoras de códigos específicos e significativamente diferenciadores."
+    },
+    {
+      "codigo": "6.9",
+      "competencia": "1",
+      "descripcion": "Desenvolver proxectos de investigación que dean lugar a unha exposición oral e a unha presentación multimodal arredor dunha cuestión que estableza vínculos argumentados entre obras dos distintos xéneros da literatura galega e outras manifestacións artísticas de onte e de hoxe, en función de temas, tópicos, estruturas, personaxes, linguaxe, recursos expresivos e valores éticos e estéticos, e que amose a implicación e a resposta persoal da lectora ou do lector na obra."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "Bloque 1. Aspectos comúns",
+      "titulo": "Aspectos comúns",
+      "items": [
+        "Lectura e interpretación de textos significativos do século XX e da actualidade, descrición neles dos aspectos formais e temáticos que os individualizan e valoración destes como expresión da sensibilidade autorial e da identidade cultural de Galicia.",
+        "Análise dos elementos intratextuais e extratextuais que impregnan as obras literarias, así como da estrutura e a técnica que os sustentan.",
+        "Estudo da relación entre a obra literaria e o contexto sociocultural en que foi creada, e recoñecemento das influencias literarias e non literarias presentes nela.",
+        "Valoración da pluralidade de estéticas e temáticas literarias do século XX e da actualidade a través da análise do seu tratamento por diferentes autoras e autores. Lectura con perspectiva de xénero. Visibilización do universo feminino.",
+        "Análise da relación entre textos da literatura galega do século XX e da actualidade con textos doutras literaturas, e descrición das conexións formais e temáticas existentes entre eles.",
+        "Estudo da relación entre a obra literaria e outras artes (cinema, pintura, música etc.) e descrición de influencias e hibridacións.",
+        "Elaboración de traballos de investigación escritos, orais ou multimodais sobre algunha obra ou aspecto salientable dela, empregando as fontes de documentación necesarias e cunha opinión persoal argumentada.",
+        "Creación de textos de intención literaria nos que se teñan presentes as técnicas e os coñecementos adquiridos no estudo e na análise das obras da literatura galega do século XX e da actualidade."
+      ],
+      "codigos_items": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4",
+        "1.5",
+        "1.6",
+        "1.7",
+        "1.8"
+      ]
+    },
+    {
+      "codigo": "2",
+      "bloque": "Bloque 2. Narrativa",
+      "titulo": "Narrativa",
+      "items": [
+        "Análise da narrativa galega do século XX e da actualidade, e descrición dos seus paradigmas, os seus contextos e as súas influencias.",
+        "Comparación dalgúns textos narrativos da literatura galega do século XX e da actualidade, describindo a converxencia ou diverxencia temática ou estilística.",
+        "Estudo do relato e descrición das súas principais características: estrutura, técnicas e extensión.",
+        "Estudo da novela e descrición dos seus trazos definitorios: tipo de persoa narradora, deseño de personaxes e tratamento das categorías de espazo e tempo.",
+        "Recomendación de lecturas de textos narrativos en soportes variados atendendo a aspectos temáticos, formais e intertextuais",
+        "Creación de textos narrativos a partir das convencións da linguaxe literaria e en referencia a modelos dados."
+      ],
+      "codigos_items": [
+        "2.1",
+        "2.2",
+        "2.3",
+        "2.4",
+        "2.5",
+        "2.6"
+      ]
+    },
+    {
+      "codigo": "3",
+      "bloque": "Bloque 3. Poesía",
+      "titulo": "Poesía",
+      "items": [
+        "Análise da poesía galega do século XX e da actualidade determinando os seus paradigmas, os seus contextos e as súas influencias.",
+        "Comparación dalgúns textos poéticos da literatura galega do século XX e da actualidade, describindo a converxencia ou diverxencia temática ou estilística.",
+        "Estudo do fondo ou contido dos principais textos poéticos do período, determinando temas e motivos.",
+        "Estudo da forma ou expresión dos principais textos poéticos do período, determinando o nivel actancial (actores e personaxes), a enunciación (voz, perspectiva e suxeito lírico), a estrutura e a figuración (tropos, figuras de dicción e figuras de pensamento).",
+        "Recomendación de lecturas de poemas en soportes variados atendendo a aspectos temáticos, formais e intertextuais. Utilización das redes sociais e formatos dixitais para o fomento da poesía: o videopoema.",
+        "Creación de textos poéticos a partir das convencións da linguaxe literaria e en referencia a modelos dados.",
+        "Mobilización da experiencia persoal, lectora e cultural para establecer vínculos entre as obras lidas e aspectos da actualidade."
+      ],
+      "codigos_items": [
+        "3.1",
+        "3.2",
+        "3.3",
+        "3.4",
+        "3.5",
+        "3.6",
+        "3.7"
+      ]
+    },
+    {
+      "codigo": "4",
+      "bloque": "Bloque 4. Teatro",
+      "titulo": "Teatro",
+      "items": [
+        "Análise do teatro galego do século XX e da actualidade determinando os seus paradigmas, os seus contextos e as súas influencias.",
+        "Comparación dalgúns textos teatrais da literatura galega do século XX e da actualidade, describindo a converxencia ou diverxencia temática ou estilística.",
+        "Análise do teatro desde a súa compoñente literaria e caracterización da traxedia, a comedia e o drama do período, destacando os trazos distintivos dos distintos subxéneros literarios.",
+        "Análise do teatro como espectáculo e descrición do funcionamento dos elementos e axentes escénicos.",
+        "Lectura expresiva, dramatización e recitado atendendo aos procesos de comprensión, apropiación e oralización implicados.",
+        "Creación de textos teatrais a partir das convencións da linguaxe literaria e en referencia a modelos dados.",
+        "Mobilización da experiencia persoal, lectora e cultural para establecer vínculos entre as obras lidas e aspectos da actualidade."
+      ],
+      "codigos_items": [
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4",
+        "4.5",
+        "4.6",
+        "4.7"
+      ]
+    },
+    {
+      "codigo": "5",
+      "bloque": "Bloque 5. Ensaio",
+      "titulo": "Ensaio",
+      "items": [
+        "Análise do ensaio galego do século XX e da actualidade determinando os seus paradigmas, os seus contextos e as súas influencias.",
+        "Comparación dalgúns textos ensaísticos da literatura galega do século XX e da actualidade, describindo a converxencia ou diverxencia temática ou estilística.",
+        "Análise de diferentes tipos de ensaios literarios: (auto)biografías, libros de viaxe, memorias, diarios e críticas literarias.",
+        "Análise de diferentes tipos de ensaios xornalísticos: artigos de opinión, crónicas e entrevistas.",
+        "Selección de obras ensaísticas coa axuda de recomendacións especializadas.",
+        "Estratexias de procura e selección das ideas máis relevantes en función da intención comunicativa e dos elementos da comunicación."
+      ],
+      "codigos_items": [
+        "5.1",
+        "5.2",
+        "5.3",
+        "5.4",
+        "5.5",
+        "5.6"
+      ]
+    },
+    {
+      "codigo": "6",
+      "bloque": "Bloque 6. A literatura e outras artes",
+      "titulo": "A literatura e outras artes",
+      "items": [
+        "Análise das relacións, influencias e producións hibridadas da literatura e o cinema.",
+        "Análise das relacións, influencias e producións hibridadas da literatura e a música.",
+        "Análise das relacións, influencias e producións hibridadas da literatura e as artes plásticas.",
+        "Análise das relacións, influencias e producións hibridadas da literatura e a fotografía.",
+        "Análise das relacións, influencias e producións hibridadas da literatura e a banda deseñada.",
+        "Análise das relacións, influencias e producións hibridadas da literatura e as novas tecnoloxías.",
+        "Vínculos intertextuais entre obras e outras manifestacións artísticas en función de temas, tópicos, estruturas e linguaxes. Elementos de continuidade e ruptura.",
+        "Recoñecemento das principais características das distintas linguaxes artísticas.",
+        "Mobilización da propia experiencia persoal, lectora e cultural para establecer vínculos de maneira argumentada entre as obras lidas e outros textos e manifestacións artísticas, incluídas as prácticas culturais emerxentes.",
+        "Participación activa no circuíto literario e cultural nun contexto presencial e dixital.",
+        ".4 Orientacións pedagóxicas",
+        "intervención educativa na materia de Literatura Galega do Século XX e da Actualidade",
+        "esenvolverá o seu currículo e tratará de asentar de xeito gradual e progresivo as aprendizaxes",
+        "ue faciliten ao alumnado o logro dos obxectivos da materia e, en combinación co resto de ma-",
+        "erias, unha adecuada adquisición das competencias clave e o logro dos obxectivos da etapa.",
+        "este sentido, no deseño das actividades, o profesorado terá que considerar a relación exis-",
+        "ente entre os obxectivos da materia e as competencias clave a través dos descritores operativos",
+        "as liñas de actuación no proceso de ensino e aprendizaxe, que se presentan nos apartados se-",
+        "uintes, e seleccionar aqueles criterios de avaliación do currículo que se axusten á finalidade",
+        "uscada, así como empregalos para verificar as aprendizaxes do alumnado e o seu nivel de de-",
+        "empeño.",
+        "elación entre os obxectivos da materia de Literatura Galega do Século XX e da Actualidade e",
+        "s competencias clave a través dos descritores operativos establecidos no anexo I",
+        "bxectivos",
+        "a materia",
+        "BX1",
+        "BX2",
+        "BX3",
+        "BX4",
+        "BX5",
+        "BX6",
+        "iñas de actuación no proceso de ensino e aprendizaxe",
+        "O uso de distintos métodos que teñan en conta os diferentes ritmos de aprendizaxe do alum-",
+        "ado, que favorezan a capacidade de aprender por si mesmos e promovan o traballo en equipo.",
+        "metodoloxía deberá ser activa e participativa, de maneira que fomente a creatividade e o",
+        "spírito crítico a través da investigación, da análise e do comentario de fragmentos e obras",
+        "iterarias de cada modalidade ou xénero textual, tendo en conta as interrelacións existentes",
+        "ntre os contextos socioculturais en que se producen as ditas obras, así como as formas e os",
+        "ontidos destas.",
+        "A realización de proxectos significativos para o alumnado e a resolución colaborativa de pro-",
+        "lemas, que reforzan a autoestima, a autonomía, a reflexión e a responsabilidade. O profeso-",
+        "ado que guíe estes proxectos didácticos debe propiciar a cooperación e a repartición equita-",
+        "iva de tarefas entre as alumnas e os alumnos participantes. A escenificación dunha peza te-",
+        "tral, a realización dun programa de radio sobre literatura ou a gravación dunha curtametraxe",
+        "partir dunha obra literaria son accións que requiren esforzo conxunto, toma de decisións,",
+        "especto pola opinión dos demais e outras dinámicas positivas que enriquecerán o desenvol-",
+        "emento da personalidade adulta do alumnado.",
+        "A atención á diversidade e a detección e prevención das dificultades de aprendizaxe ou outros",
+        "roblemas que se adoitan manifestar no ámbito escolar. Alén de reforzar os contidos acadé-",
+        "icos cunha atención máis individualizada aos estudantes que o precisaren, a clase de",
+        "iteratura galega, a través da lectura e do comentario de textos escollidos, pódese converter",
+        "unha canle de expresión das distintas problemáticas que lles poden afectar as alumnas e os",
+        "lumnos dunhas aulas cada vez máis diversas (identidade de xénero, adaptación sociocultural,",
+        "coso escolar, violencia doméstica...).",
+        "O uso de estratexias para traballar transversalmente a comprensión lectora, a expresión oral",
+        "escrita, a comunicación audiovisual, a competencia dixital e o fomento da creatividade, do",
+        "spírito científico e do emprendemento. A proposta de lecturas e comentarios de textos de",
+        "istinta temática e tipoloxía (ensaísticos, xornalísticos...) non só servirá para reforzar a adqui-",
+        "ición das destrezas lingüísticas e outros saberes interdisciplinarios; senón que tamén serán",
+        "undamentais para achegar aspectos singulares da realidade sociocultural galega e acordar a",
+        "apacidade crítica nun alumnado que debe saber interpretar a información dos medios e iden-",
+        "ificar boatos e noticias falsas.",
+        "A proposta de obras e fragmentos literarios atendendo ás preferencias do público xuvenil e",
+        "os valores socioculturais e éticos que promovan a defensa dos dereitos humanos (a igualdade",
+        "ntre mulleres e homes, a paz, a solidariedade...) e a conciencia ambiental (a sustentabilidade",
+        "o planeta, a conservación do medio natural, o benestar animal...). Tampouco se debe esque-",
+        "er a abordaxe de textos desde unha perspectiva de xénero. As charlas con escritoras e escri-",
+        "ores, os faladoiros e clubs de lectura ou os obradoiros literarios resultarán unha boa ferra-",
+        "enta para afondar nestes contidos.",
+        "O coñecemento e a posta en valor de todos os axentes culturais relacionados coa literatura",
+        "alega dos séculos XX e XXI. Poderanse promover iniciativas que permitan afondar e difundir",
+        "s figuras máis destacadas nos distintos ámbitos: a organización de entrevistas con escrito-",
+        "as/es, ilustradoras/es, contacontos, regueifeiras/os, a participación en roteiros literarios por",
+        "istintos lugares da xeografía galega, así como o desenvolvemento de traballos de investiga-",
+        "ión (exposicións, monográficos, compilacións etc.) en formato analóxico ou dixital (realidade",
+        "umentada, códigos QR...).",
+        "O fomento da interdisciplinariedade co fin de complementar o estudo e o desfrute das obras",
+        "iterarias. O traballo conxunto co profesorado e alumnado das disciplinas máis vinculadas ás",
+        "rtes (educación musical, artes escénicas...) axudará a explorar novos camiños de interpreta-",
+        "ión e profundar nos vínculos entre a literatura galega e outras manifestacións artísticas. Po-",
+        "eranse propor actividades en que se combinen, por exemplo, a poesía e a música (poemas",
+        "usicados, videopoemas, raps, videoclips), a poesía e a expresión plástica (concursos de poe-",
+        "as ilustrados asociados a imaxes, fotografías...), e a novela e o cinema (dobraxe de películas,",
+        "esións de cinefórum sobre filmes baseados en novelas que se levaron á gran pantalla etc.).",
+        "A expresión e difusión dos gustos propios sobre as experiencias de lectura a través de distintos",
+        "edios e soportes. A revista do centro (recensións, artigos...), a radio escolar (podcasts, sec-",
+        "ión de recomendacións lectoras, programas de literatura...), a TV escolar (coloquios, conver-",
+        "as con escritoras/es), as redes sociais ou as plataformas dixitais (booktrailers, booktubers...)",
+        "erán espazos axeitados para que o alumnado vaia perfilando a súa identidade lectora e ma-",
+        "ifeste as súas opinións, tanto sobre os libros de lectura obrigatoria como doutros títulos que",
+        "oren do seu interese.",
+        "A potenciación da creatividade literaria oral e escrita a través de distintas canles, fomentado",
+        "s produtos audiovisuais e a divulgación a través das TIC. Poderanse propor concursos virtuais",
+        "e microrrelatos, micropoemas, micropílulas teatrais para difundir en dispositivos móbiles,",
+        "elatos en banda deseñada creados con aplicacións informáticas, curtas de animación grava-",
+        "as coa técnica stop motion ou retos e xogos interactivos como o escape room. Cómpre incidir",
+        "specialmente na recuperación e actualización temática da regueifa e outras mostras da tra-",
+        "ición oral galega próximas ao repentismo ou ao feestyle rap, de tanta aceptación entre a",
+        "ocidade actual. Poderanse organizar concursos, obradoiros e festivais intercentros que te-",
+        "an como protagonista a regueifa e outras formas de improvisación oral en verso, presentes",
+        "n Galicia e noutras comunidades.",
+        "A énfase na interterritorialidade e a lectura comparada de textos literarios e non literarios de",
+        "utoras e autores galegos dos séculos XX e XXI con outros coetáneos de escritoras e escritores",
+        "ortugueses e tamén cataláns e vascos. O coñecemento de manifestacións literarias doutros",
+        "erritorios, con especial atención a Portugal e ás comunidades lusófonas, servirá tamén para",
+        "rofundar en distintas realidades socioculturais e lingüísticas. A organización de iniciativas",
+        "onxuntas (concursos, exposicións...) ou os intercambios presenciais ou virtuais con alumnado",
+        "ue curse un nivel similar da materia en centros portugueses poden resultar actividades moi",
+        "tractivas para o alumnado."
+      ],
+      "codigos_items": [
+        "6.1",
+        "6.2",
+        "6.3",
+        "6.4",
+        "6.5",
+        "6.6",
+        "6.7",
+        "6.8",
+        "6.9",
+        "6.10",
+        "6.11",
+        "6.12",
+        "6.13",
+        "6.14",
+        "6.15",
+        "6.16",
+        "6.17",
+        "6.18",
+        "6.19",
+        "6.20",
+        "6.21",
+        "6.22",
+        "6.23",
+        "6.24",
+        "6.25",
+        "6.26",
+        "6.27",
+        "6.28",
+        "6.29",
+        "6.30",
+        "6.31",
+        "6.32",
+        "6.33",
+        "6.34",
+        "6.35",
+        "6.36",
+        "6.37",
+        "6.38",
+        "6.39",
+        "6.40",
+        "6.41",
+        "6.42",
+        "6.43",
+        "6.44",
+        "6.45",
+        "6.46",
+        "6.47",
+        "6.48",
+        "6.49",
+        "6.50",
+        "6.51",
+        "6.52",
+        "6.53",
+        "6.54",
+        "6.55",
+        "6.56",
+        "6.57",
+        "6.58",
+        "6.59",
+        "6.60",
+        "6.61",
+        "6.62",
+        "6.63",
+        "6.64",
+        "6.65",
+        "6.66",
+        "6.67",
+        "6.68",
+        "6.69",
+        "6.70",
+        "6.71",
+        "6.72",
+        "6.73",
+        "6.74",
+        "6.75",
+        "6.76",
+        "6.77",
+        "6.78",
+        "6.79",
+        "6.80",
+        "6.81",
+        "6.82",
+        "6.83",
+        "6.84",
+        "6.85",
+        "6.86",
+        "6.87",
+        "6.88",
+        "6.89",
+        "6.90",
+        "6.91",
+        "6.92",
+        "6.93",
+        "6.94",
+        "6.95",
+        "6.96",
+        "6.97",
+        "6.98",
+        "6.99",
+        "6.100",
+        "6.101",
+        "6.102",
+        "6.103",
+        "6.104",
+        "6.105",
+        "6.106",
+        "6.107",
+        "6.108",
+        "6.109"
+      ]
+    }
+  ],
+  "comunidad": "galicia",
+  "idioma": "gl"
+}

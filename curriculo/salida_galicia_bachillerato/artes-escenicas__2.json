@@ -1,0 +1,298 @@
+{
+  "materia_oficial": "Artes Escénicas",
+  "materia": "Artes Escénicas",
+  "etapa": "Bachillerato",
+  "ciclo": "2º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Analizar manifestacións escénicas de diferentes épocas e tradicións, describindo as súas características, establecendo relacións co seu contexto e identificando posibles influencias e proxeccións, para valorar o patrimonio e enriquecer o imaxinario propio.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Explorar as posibilidades expresivas de diferentes sistemas, medios e códigos de significación escénica, a través de actividades de carácter práctico, para incorporar o seu uso ao repertorio persoal de recursos e desenvolver o criterio de selección dos máis adecuados á intención comunicativa.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Abordar a recreación e representación da acción dramática, a partir da construción colectiva de escenas que mostren todo tipo de personaxes e conflitos, para desenvolver habilidades de comunicación e negociación e reforzar o autocoñecemento, a creatividade, a empatía, a imaxinación e o espírito emprendedor en diversas situacións e contextos.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Realizar proxectos de creación e difusión escénica, planificando as súas fases, seleccionando e estruturando os elementos de significación e asumindo diferentes funcións con iniciativa e responsabilidade, para expresar unha intención comunicativa, enriquecer a contorna cultural e identificar oportunidades de desenvolvemento persoal, social, académico ou profesional.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Valorar criticamente manifestacións escénicas, identificando o público ao que se dirixen e analizando as súas características e os seus presupostos artísticos, para desenvolver o criterio estético, difundir o patrimonio e ampliar as posibilidades de gozo das artes escénicas.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Analizar, cun vocabulario adecuado, manifestacións escénicas de diferentes épocas e tradicións, describindo as súas características, establecendo relacións co seu contexto e evidenciando unha actitude de apertura, interese e respecto na súa recepción activa."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Valorar criticamente os hábitos, os gustos e os referentes escénicos de diferentes épocas e tradicións, reflexionando sobre a súa evolución e sobre a súa relación cos do presente."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "2",
+      "descripcion": "Participar, con iniciativa, confianza e creatividade, na exploración de sistemas, medios e códigos de significación escénica, a través de actividades de carácter práctico."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "3",
+      "descripcion": "Utilizar as diferentes técnicas de interpretación de forma creativa, seleccionando os recursos propios da expresión corporal para adaptarse ás exixencias dramáticas previamente establecidas."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Recrear a acción dramática, o deseño de personaxes e a configuración de situacións e escenas, seleccionando as técnicas do repertorio persoal de recursos máis adecuadas á intención comunicativa."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "3",
+      "descripcion": "Empregar diferentes técnicas de interpretación de forma creativa, aplicando estratexias de memorización e valorando os ensaios como espazos de escoita, diálogo e aprendizaxe."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Recrear e representar a acción dramática, demostrando precisión, eficacia e expresividade, seguindo as indicacións da dirección, mantendo a concentración e xestionando de forma guiada a ansiedade e o medo escénico."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "4",
+      "descripcion": "Participar, con iniciativa, responsabilidade e conciencia de grupo, no deseño, na planificación e na realización de proxectos colectivos de creación e difusión escénica, organizando correctamente as súas fases, distribuíndo de forma razoada as tarefas, avaliando a súa viabilidade e sustentabilidade, e seleccionando e estruturando os elementos de significación, así como as directrices de interpretación, representación ou escenificación."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "4",
+      "descripcion": "Avaliar e presentar os resultados de proxectos de creación e difusión escénica, analizando a relación entre os obxectivos expostos e o produto final obtido, e explicando as posibles diferenzas entre eles."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "5",
+      "descripcion": "Valorar a recepción brindada a un espectáculo determinado, relacionando as características da obra, o contexto da posta en escena e as reaccións do público."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "5",
+      "descripcion": "Realizar e compartir recensións e críticas escénicas empregando a terminoloxía adecuada, consultando fontes fiables e reflexionando, con rigor e solidez, sobre as características, os presupostos artísticos e a recepción da obra."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "4",
+      "descripcion": "Identificar oportunidades de desenvolvemento persoal, social, académico ou profesional relacionadas co ámbito artístico, comprendendo o seu valor engadido e expresando a opinión persoal de forma crítica e respectuosa."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "Bloque 1. Patrimonio escénico",
+      "titulo": "Patrimonio escénico",
+      "items": [
+        "As artes escénicas e a súa historia: cambios e transformacións.",
+        "Significado social das artes escénicas: memoria e reflexo. A perspectiva de xénero e a perspectiva intercultural. Identidade e performatividade.",
+        "Manifestacións espectaculares: rituais e sociais. Os festexos populares.",
+        "Tendencias actuais na representación escénica e performativa.",
+        "Manifestacións escénicas e performativas non orais."
+      ],
+      "codigos_items": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4",
+        "1.5"
+      ]
+    },
+    {
+      "codigo": "2",
+      "bloque": "Bloque 2. Expresión e comunicación escénica",
+      "titulo": "Expresión e comunicación escénica",
+      "items": [
+        "Actos performativos: xeración de realidade.",
+        "Características do espazo escénico/performativo actual.",
+        "Estruturas dramáticas actuais. A memoria performativa.",
+        "A personaxe en acción nas manifestacións actuais.",
+        "Espazos non escénicos: adaptación de recursos plásticos a manifestacións escénicas e performativas.",
+        "Xogo dramático, improvisación, dramatización e creación colectiva."
+      ],
+      "codigos_items": [
+        "2.1",
+        "2.2",
+        "2.3",
+        "2.4",
+        "2.5",
+        "2.6"
+      ]
+    },
+    {
+      "codigo": "3",
+      "bloque": "Bloque 3. Interpretación",
+      "titulo": "Interpretación",
+      "items": [
+        "Métodos interpretativos actuais.",
+        "Afondamento nos instrumentos do intérprete: expresión corporal, xestual, oral e rítmico-musical. A conciencia emocional.",
+        "A construción actual da personaxe dramática.",
+        "Creación performativa: proceso e execución. Posibilidades de crecemento persoal, social, académico e profesional relacionadas coa materia."
+      ],
+      "codigos_items": [
+        "3.1",
+        "3.2",
+        "3.3",
+        "3.4"
+      ]
+    },
+    {
+      "codigo": "4",
+      "bloque": "Bloque 4. Escenificación e representación escénica",
+      "titulo": "Escenificación e representación escénica",
+      "items": [
+        "O deseño dun espectáculo: equipos, fases e áreas de traballo. Espazos escénicos e espazos non escénicos. Integración de linguaxes non orais e tecnolóxicas.",
+        "A dramaturxia no deseño dun proxecto escénico.",
+        "A produción e a realización dun proxecto escénico.",
+        "A dirección artística en proxectos escénicos.",
+        "Os ensaios: funcións da dirección escénica e rexeduría.",
+        "Representación de espectáculos escénicos. Oportunidades de desenvolvemento persoal, social, académico e profesional vinculadas coa materia.",
+        "Exhibición, difusión, distribución e avaliación de produtos escénicos.",
+        "Estratexias de traballo en equipo. Distribución de tarefas e liderado compartido. Resolución de conflitos."
+      ],
+      "codigos_items": [
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4",
+        "4.5",
+        "4.6",
+        "4.7",
+        "4.8"
+      ]
+    },
+    {
+      "codigo": "5",
+      "bloque": "Bloque 5. Recepción nas artes escénicas",
+      "titulo": "Recepción nas artes escénicas",
+      "items": [
+        "Estratexias e técnicas de análises de manifestacións escénicas. O texto na súa relación coa posta en escena.",
+        "A crítica escénica. Estratexias e técnicas de elaboración dunha recensión.",
+        "O respecto á propiedade intelectual. A protección da creatividade persoal.",
+        ".4 Orientacións pedagóxicas",
+        "intervención educativa na materia de Artes Escénicas desenvolverá ou seu currículo e tra-",
+        "ará de asentar de xeito gradual e progresivo nos distintos niveis da etapa as aprendizaxes que",
+        "le faciliten ao alumnado o logro dos obxectivos da materia e, en combinación co resto de mate-",
+        "ias, unha adecuada adquisición das competencias clave e o logro dos obxectivos da etapa.",
+        "este sentido, no deseño das actividades, o profesorado terá que considerar a relación exis-",
+        "ente entre os obxectivos da materia e as competencias clave a través dos descritores operativos",
+        "as liñas de actuación no proceso de ensino e aprendizaxe, que se presentan nos apartados se-",
+        "uintes, e seleccionar aqueles criterios de avaliación do currículo que se axusten á finalidade",
+        "uscada, así como empregalos para verificar as aprendizaxes do alumnado e o seu nivel de de-",
+        "empeño.",
+        "elación entre os obxectivos da materia de Artes Escénicas e as competencias clave a través",
+        "os descritores operativos establecidos no anexo I",
+        "bxectivos",
+        "a materia",
+        "BX1",
+        "BX2",
+        "BX3",
+        "BX4",
+        "BX5",
+        "iñas de actuación non proceso de ensino e aprendizaxe",
+        "O uso de distintos métodos que teñan en conta os diferentes ritmos de aprendizaxe do alum-",
+        "ado, que favorezan a súa capacidade de aprender por si mesmo e promovan o traballo en",
+        "quipo.",
+        "A realización de proxectos significativos para o alumnado e a resolución colaborativa de pro-",
+        "lemas, reforzando a autoestima, a autonomía, a reflexión e a responsabilidade.",
+        "A énfase na atención á diversidade do alumnado, na atención individualizada, na prevención",
+        "as dificultades de aprendizaxe e na posta en práctica de mecanismos de reforzo tan pronto",
+        "omo se detecten estas dificultades.",
+        "O uso de estratexias para traballar transversalmente a comprensión lectora, a expresión oral",
+        "escrita, a comunicación audiovisual, a competencia dixital, e o fomento da creatividade, do",
+        "spírito científico e do emprendemento.",
+        "A importancia do fin buscado en cada un dos dous cursos: máis centrado na expresión indivi-",
+        "ual e a representación escénica clásica en primeiro de bacharelato, e destinado a desenvolver",
+        "n espectáculo complexo, actual e colaborativo en segundo de bacharelato. Resultará",
+        "undamental a relación con outras materias do bacharelato artístico etc. Todas elas están",
+        "ntimamente ligadas, dado que a adquisición de obxectivos é secuencial.",
+        "As distintas indicacións segundo as situacións de aprendizaxe, que poden ser un elemento de",
+        "artida moi importante para o traballo na aula.",
+        "O desenvolvemento coa aprendizaxe baseada en proxectos e a aprendizaxe baseada en inda-",
+        "acións.",
+        "O traballo interdisciplinario para aplicar coñecementos esenciais doutras disciplinas cun im-",
+        "ortante reflexo na materia, por exemplo, a aptitude vocálica.",
+        "A creación de situacións a partir da asunción, por parte do alumnado, de diferentes funcións",
+        "n distintas manifestacións e propostas, de forma que se converta en parte viva da recreación",
+        "rtística.",
+        "A realización de propostas ante diferentes tipos de público e en distintos escenarios, compar-",
+        "indo o gozo artístico e enriquecendo a vida cultural da contorna.",
+        "A selección de pezas que se fagan eco de múltiples referencias culturais."
+      ],
+      "codigos_items": [
+        "5.1",
+        "5.2",
+        "5.3",
+        "5.4",
+        "5.5",
+        "5.6",
+        "5.7",
+        "5.8",
+        "5.9",
+        "5.10",
+        "5.11",
+        "5.12",
+        "5.13",
+        "5.14",
+        "5.15",
+        "5.16",
+        "5.17",
+        "5.18",
+        "5.19",
+        "5.20",
+        "5.21",
+        "5.22",
+        "5.23",
+        "5.24",
+        "5.25",
+        "5.26",
+        "5.27",
+        "5.28",
+        "5.29",
+        "5.30",
+        "5.31",
+        "5.32",
+        "5.33",
+        "5.34",
+        "5.35",
+        "5.36",
+        "5.37",
+        "5.38",
+        "5.39",
+        "5.40",
+        "5.41",
+        "5.42",
+        "5.43",
+        "5.44",
+        "5.45",
+        "5.46",
+        "5.47",
+        "5.48",
+        "5.49",
+        "5.50",
+        "5.51",
+        "5.52"
+      ]
+    }
+  ],
+  "comunidad": "galicia",
+  "idioma": "gl"
+}

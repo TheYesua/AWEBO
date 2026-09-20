@@ -1,0 +1,301 @@
+{
+  "materia_oficial": "Historia da Arte",
+  "materia": "Historia da Arte",
+  "etapa": "Bachillerato",
+  "ciclo": "2º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Identificar diferentes concepcións da arte ao longo da historia, seleccionando e analizando información diversa de forma crítica, para valorar a diversidade de manifestacións artísticas como produto da creatividade humana e fomentar o respecto por estas.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Recoñecer as diversas linguaxes artísticas como unha forma de comunicación e expresión de ideas, desexos e emocións, utilizando con corrección a terminoloxía e o vocabulario específico da materia, para expresar con coherencia e fluidez os seus propios xuízos e sentimentos e mostrar respecto e empatía polos xuízos e expresións dos demais.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Distinguir as distintas funciones da arte ao longo da historia, analizando a dimensión relixiosa, ideolóxica, política, social, económica, expresiva e propiamente estética da obra de arte, da súa produción e a súa percepción, para promover unha apreciación global e un xuízo crítico e informado destes.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Identificar e caracterizar os principais movementos artísticos ao longo da historia, recoñecendo as relacións de influencia, préstamo, continuidade e ruptura que se producen entre eles, para comprender os mecanismos que rexen a evolución da historia da arte e fomentar o respecto e aprecio ás manifestacións artísticas de calquera época e cultura.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Identificar e contextualizar espacial e temporalmente as máis relevantes manifestacións e personalidades artísticas, analizando a súa contorna social, política e cultural, e os seus aspectos biográficos, para valorar as obras e os seus artistas como expresión da súa época e ámbito social, apreciar a súa creatividade e promover o coñecemento de diversas formas de expresión estética.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Coñecer e valorar o patrimonio artístico no ámbito local, nacional e mundial, analizando exemplos concretos do seu aproveitamento e as súas funcións, para contribuír á súa conservación, o seu uso comprometido a favor da consecución dos obxectivos do desenvolvemento sustentable e promoción como elemento conformador da identidade individual e colectiva, e como dinamizador da cultura e da economía.",
+      "descriptores": []
+    },
+    {
+      "codigo": "7",
+      "descripcion": "Distinguir e describir os cambios estéticos e os diferentes canons de beleza ao longo da historia da arte, realizando análises comparativas entre obras de diversos estilos, épocas e lugares, para formarse unha imaxe axustada de si mesmo e consolidar unha madurez persoal que permita mostrar sensibilidade e respecto cara á diversidade superando estereotipos e prexuízos.",
+      "descriptores": []
+    },
+    {
+      "codigo": "8",
+      "descripcion": "Integrar a perspectiva de xénero no estudo da historia da arte, analizando o papel que ocuparon a muller e a imaxe que dela se deu nos diferentes estilos e movementos artísticos, para visibilizar as artistas e promover a igualdade efectiva entre mulleres e homes.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Valorar e respectar a diversidade de manifestacións artísticas a partir da investigación e o debate arredor das diferentes concepcións da arte e a análise de obras concretas sobre as que comprobar a pertinencia das devanditas concepcións."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "2",
+      "descripcion": "Elaborar e expresar con coherencia e fluidez xuízos e emocións propios sobre as obras de arte e mostrar respecto e empatía polos xuízos e expresións dos demais, utilizando a terminoloxía e o vocabulario específico da materia e demostrando un coñecemento básico de diversas linguaxes artísticas aprendidas."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "4",
+      "descripcion": "Recoñecer os mecanismos que rexen a evolución da historia da arte a partir da análise comparativa de obras de diversas épocas e da explicación das relacións de influencia, préstamos, continuidade e ruptura que se producen entre estilos, autores e movementos."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "3",
+      "descripcion": "Distinguir e analizar as funcións e as dimensións relixiosa, ideolóxica, política, social, económica, expresiva e propiamente estética das obras de arte, demostrando unha comprensión e un xuízo crítico e fundamentado destas e da súa produción e a súa percepción."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "5",
+      "descripcion": "Elaborar comentarios histórico-artísticos de distintas obras de arte a partir do coñecemento crítico e argumentado do seu contexto histórico, as súas funcións e a súa relevancia social, política e cultural, valorando e respectando distintas obras e formas de manifestacións artísticas."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "5",
+      "descripcion": "Identificar e analizar a complexidade do proceso de creación artística, elaborando recensións biográficas sobre as figuras máis destacadas e atendendo aos aspectos persoais que faciliten a comprensión do significado e do valor da obra, tomando conciencia do papel do artista no proceso creador."
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "7",
+      "descripcion": "Elaborar argumentos propios sobre a noción de beleza, comparando canons e obras de diversos tipos, estilos, épocas e lugares, apreciando a diversidade como fonte de enriquecemento, superando estereotipos e prexuízos, e promovendo a formación dunha imaxe axustada de si mesmo."
+    },
+    {
+      "codigo": "2.5",
+      "competencia": "6",
+      "descripcion": "Analizar o papel conformador da identidade individual e colectiva que posúen a arte e o patrimonio artístico, analizando as autorrepresentacións humanas e o uso de recursos estéticos e iconográficos na xeración e o mantemento dos vínculos grupais."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "4",
+      "descripcion": "Coñecer e explicar as principais manifestacións e movementos artísticos, identificando e analizando o seu contexto cultural, a súa vinculación coas funcións atribuíbles á arte, as súas características estilísticas fundamentais e o seu desenvolvemento no tempo."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "8",
+      "descripcion": "Coñecer as principais figuras femininas da historia da arte, dándolle visibilidade á muller como artista, analizando o contexto político, social e cultural no que desenvolveron a súa produción artística e recoñecendo o seu esforzo por facerse valer nel."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "8",
+      "descripcion": "Coñecer e analizar criticamente a imaxe que se deu da muller na historia da arte, mediante a análise comparativa de obras de distintas épocas e culturas nas que se representen figuras, roles, símbolos e temas relacionados coa feminidade."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "6",
+      "descripcion": "Comprender a importancia da conservación e promoción do patrimonio artístico, investigando sobre os procesos de adquisición, conservación, exhibición e uso sustentable de obras de arte, así como sobre o impacto positivo e negativo das accións humanas sobre elas."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "6",
+      "descripcion": "Analizar o papel conformador da identidade individual e colectiva que posúen a arte e o patrimonio artístico, analizando as autorrepresentacións humanas e o uso de recursos estéticos e iconográficos na xeración e o mantemento dos vínculos grupais."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "Bloque 1. Aproximación á historia da arte",
+      "titulo": "Aproximación á historia da arte",
+      "items": [
+        "O debate sobre a definición de arte. O concepto da arte ao longo da historia.",
+        "A linguaxe artística: a arte como forma de comunicación. A variedade de códigos e linguaxes. Símbolos e iconografía na arte. A subxectividade creadora. A complexidade da interpretación. O xuízo estético.",
+        "Terminoloxía e vocabulario específico da arte na arquitectura e nas artes plásticas.",
+        "Ferramentas para a análise da obra de arte: elementos técnicos, formais e estilísticos. Estudo iconográfico e significado, identificación, contextualización e relevancia da obra. A análise comparativa.",
+        "Influencias, préstamos, continuidades e rupturas na historia da arte."
+      ],
+      "codigos_items": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4",
+        "1.5"
+      ]
+    },
+    {
+      "codigo": "2",
+      "bloque": "Bloque 2. A arte e as súas funcións ao longo da historia: da Antigüidade á Modernidade",
+      "titulo": "A arte e as súas funcións ao longo da historia: da Antigüidade á Modernidade",
+      "items": [
+        "A arte como instrumento máxico-ritual ao longo da historia.",
+        "A arte como dispositivo de dominación e control: desde as primeiras civilizacións urbanas ata o século XIX.",
+        "O Clasicismo grego: antecedentes, plenitude e Helenismo.",
+        "A arte e a súa función didáctica e relixiosa nas sociedades teocéntricas.",
+        "Arte e romanización: a obra civil romana.",
+        "A arte prerrománica en España. A arte románica e gótica.",
+        "A arte renacentista: Quattrocento e Cinquecento. O Renacemento en España: Juan de Herrera e O Greco.",
+        "Barroco e Contrarreforma en Italia e España: obras esenciais en arquitectura, escultura e pintura. Arquitectura barroca galega.",
+        "Pintura e perspectiva: a conquista da terceira dimensión.",
+        "A arte e o seu valor propagandístico: desde o mundo antigo ata o século XIX.",
+        "O papel das academias no século XVIII. O Neoclasicismo.",
+        "A arte como idioma de sentimentos e emocións. A natureza e a representación das emocións. O Romanticismo.",
+        "Pintura española do século XIX: Goya.",
+        "A arte como medio de progreso, crítica e transformación sociocultural desde o pensamento ilustrado ata o século XIX. O Realismo.",
+        "Arte e identidade individual: a necesidade de representarnos. A imaxe do corpo humano. O xénero do retrato. A evolución na imaxe do artista.",
+        "Arte e identidade colectiva: escolas, rexionalismos e procura de identidade."
+      ],
+      "codigos_items": [
+        "2.1",
+        "2.2",
+        "2.3",
+        "2.4",
+        "2.5",
+        "2.6",
+        "2.7",
+        "2.8",
+        "2.9",
+        "2.10",
+        "2.11",
+        "2.12",
+        "2.13",
+        "2.14",
+        "2.15",
+        "2.16"
+      ]
+    },
+    {
+      "codigo": "3",
+      "bloque": "Bloque 3. A arte e as súas funcións na contemporaneidade",
+      "titulo": "A arte e as súas funcións na contemporaneidade",
+      "items": [
+        "A pintura impresionista.",
+        "Vangardas e novas formas de expresión.",
+        "A arte como dispositivo de dominación e control: desde o século XIX á sociedade contemporánea.",
+        "A arte e o seu valor propagandístico: desde o século XIX á actual sociedade de consumo.",
+        "A arte como medio de progreso, crítica e transformación sociocultural desde o século XX á actualidade.",
+        "A arte como expresión dos avances tecnolóxicos: desde a Revolución Industrial ata a era dixital.",
+        "Arte e realidade: imitación e interpretación. A revolución da fotografía e do cinema.",
+        "A representación da muller na arte desde unha perspectiva crítica.",
+        "A muller como artista. A loita pola visibilidade ao longo da historia da arte."
+      ],
+      "codigos_items": [
+        "3.1",
+        "3.2",
+        "3.3",
+        "3.4",
+        "3.5",
+        "3.6",
+        "3.7",
+        "3.8",
+        "3.9"
+      ]
+    },
+    {
+      "codigo": "4",
+      "bloque": "Bloque 4. Realidade, espazo e territorio na arte",
+      "titulo": "Realidade, espazo e territorio na arte",
+      "items": [
+        "Arquitectura e espazo: a creación de espazos arquitectónicos.",
+        "Arquitectura do século XX. Principais arquitectos do século XX.",
+        "Arte e intervención no territorio: o urbanismo como arte.",
+        "Arquitectura, urbanismo e deseño sustentable. A contribución da arte aos obxectivos de desenvolvemento sostible. Arte e ambiente.",
+        "O patrimonio artístico: preservación, conservación e usos sustentables. Museografía e museoloxía.",
+        "Arte, mecenado e coleccionismo como elementos de diferenciación social.",
+        ".4 Orientacións pedagóxicas",
+        "intervención educativa na materia de Historia da Arte desenvolverá o seu currículo e tratará",
+        "e asentar de xeito gradual e progresivo as aprendizaxes que lle faciliten ao alumnado o logro",
+        "os obxectivos da materia e, en combinación co resto de materias, unha adecuada adquisición",
+        "as competencias clave e o logro dos obxectivos da etapa.",
+        "este sentido, no deseño das actividades, o profesorado terá que considerar a relación exis-",
+        "ente entre os obxectivos da materia e as competencias clave a través dos descritores operativos",
+        "as liñas de actuación no proceso de ensino e aprendizaxe, que se presentan nos apartados se-",
+        "uintes, e seleccionar aqueles criterios de avaliación do currículo que se axusten á finalidade",
+        "uscada, así como empregalos para verificar as aprendizaxes do alumnado e o seu nivel de de-",
+        "empeño.",
+        "elación entre os obxectivos da materia de Historia da Arte e as competencias clave a través",
+        "os descritores operativos do perfil de saída establecidos no anexo I",
+        "bxectivos",
+        "a materia",
+        "BX1",
+        "BX2",
+        "BX3",
+        "BX4",
+        "BX5",
+        "BX6",
+        "BX7",
+        "BX8",
+        "iñas de actuación no proceso de ensino e aprendizaxe",
+        "A explicación dos aspectos técnicos, conceptuais e formais das artes plásticas e a arquitectura",
+        "ue permitan ao alumnado afrontar con solvencia a análise dunha obra.",
+        "A análise do enclave espaciotemporal da produción artística para unha axeitada comprensión",
+        "explicación do contexto político, social, cultural, económico, relixioso e ideolóxico en que",
+        "sta se desenvolve.",
+        "O traballo da competencia lingüística do alumnado no vocabulario e nos termos propios da",
+        "ateria para a realización, tanto oral como escrita, de produtos solventes.",
+        "O uso de estratexias para traballar a comunicación audiovisual, a competencia dixital, a igual-",
+        "ade de xénero, o fomento da creatividade, do espírito científico e do emprendemento.",
+        "A realización dun traballo de investigación sobre o patrimonio cultural galego, a súa protec-",
+        "ión legal e accións públicas e privadas para a súa conservación, mantemento e posta en valor."
+      ],
+      "codigos_items": [
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4",
+        "4.5",
+        "4.6",
+        "4.7",
+        "4.8",
+        "4.9",
+        "4.10",
+        "4.11",
+        "4.12",
+        "4.13",
+        "4.14",
+        "4.15",
+        "4.16",
+        "4.17",
+        "4.18",
+        "4.19",
+        "4.20",
+        "4.21",
+        "4.22",
+        "4.23",
+        "4.24",
+        "4.25",
+        "4.26",
+        "4.27",
+        "4.28",
+        "4.29",
+        "4.30",
+        "4.31",
+        "4.32",
+        "4.33",
+        "4.34",
+        "4.35",
+        "4.36",
+        "4.37",
+        "4.38",
+        "4.39",
+        "4.40",
+        "4.41"
+      ]
+    }
+  ],
+  "comunidad": "galicia",
+  "idioma": "gl"
+}

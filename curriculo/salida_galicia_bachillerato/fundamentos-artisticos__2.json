@@ -1,0 +1,437 @@
+{
+  "materia_oficial": "Fundamentos Artísticos",
+  "materia": "Fundamentos Artísticos",
+  "etapa": "Bachillerato",
+  "ciclo": "2º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Comprender os cambios na concepción da arte, analizando as semellanzas e as diferenzas entre distintos períodos históricos ou contextos culturais, para explicar o enriquecemento que supón a diversidade.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Reflexionar sobre as funcións da arte ao longo da historia, analizando a evolución do seu papel en cada período, para apreciar as súas singularidades e poñer en valor o patrimonio cultural e artístico de calquera época.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Analizar formal, funcional e semanticamente producións artísticas de diversos períodos e estilos, recoñecendo os seus elementos constituíntes e as claves das súas linguaxes usando vocabulario específico, para desenvolver o criterio estético e ampliar as posibilidades de gozar da arte.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Explicar obras artísticas realizadas en distintos medios e soportes, de calquera estilo ou período, identificando o contexto social, xeográfico e histórico no que se crearon, así como as súas posibles influencias e proxeccións, para valoralas como testemuños dunha época e unha cultura, e como elementos do propio patrimonio.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Comprender o poder comunicativo da arte, identificando e recoñecendo o reflexo das experiencias vitais en diferentes producións, para valorar a expresión artística como ferramenta potenciadora da creatividade, a imaxinación, a autoestima e o crecemento persoal.",
+      "descriptores": []
+    },
+    {
+      "codigo": "6",
+      "descripcion": "Interpretar diversas creacións artísticas a partir do estudo da súa forma, o seu significado, o seu contexto de creación e a súa recepción, para desenvolver a sensibilidade e o sentido crítico e para apreciar a diversidade de percepcións e opinións ante as producións artísticas.",
+      "descriptores": []
+    },
+    {
+      "codigo": "7",
+      "descripcion": "Elaborar con creatividade proxectos artísticos individuais ou colectivos, investigando estilos, técnicas e linguaxes multidisciplinarias e seleccionando e aplicando os máis adecuados, para dar forma ás ideas e obxectivos expostos e para aprender a afrontar novos retos artísticos.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Explicar de forma respectuosa o enriquecemento que supón a diversidade na arte, estudando obras de épocas e culturas distintas a partir da vinculación co seu contexto e analizando o concepto de arte a que responden."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "7",
+      "descripcion": "Expor proxectos artísticos, individuais ou colectivos, seleccionando os estilos, técnicas e linguaxes máis adecuadas de diversas disciplinas, e organizando e distribuíndo as tarefas de maneira razoada."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "2",
+      "descripcion": "Distinguir as funcións da arte ao longo da historia, analizando sen prexuízos a súa evolución para partir do estudo de diversas producións artísticas de distintos estilos e épocas."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "4",
+      "descripcion": "Analizar producións artísticas de diversos estilos e épocas, realizadas en distintos medios e soportes, relacionándoas co seu contexto social, xeográfico e histórico de creación e explicando as posibles relacións con obras doutras épocas e culturas."
+    },
+    {
+      "codigo": "1.5",
+      "competencia": "3",
+      "descripcion": "Identificar os elementos constituíntes de manifestacións artísticas de diversos períodos e estilos, recoñecendo as claves das súas linguaxes e xustificando a súa relación coa época, artista ou movemento correspondente."
+    },
+    {
+      "codigo": "1.6",
+      "competencia": "4",
+      "descripcion": "Compartir as conclusións de investigacións sobre producións artísticas de diversos estilos e épocas e as relacións co seu contexto, usando os medios analóxicos e dixitais máis adecuados."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "1",
+      "descripcion": "Argumentar a evolución da concepción da arte na historia, comparando con iniciativa os seus significados en períodos e culturas diferentes e analizando as súas semellanzas e diferenzas."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Distinguir as funcións da arte ao longo da historia, analizando sen prexuízos a súa evolución para partir do estudo de diversas producións artísticas de distintos estilos e épocas."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Explicar as singularidades de diversas manifestacións culturais e artísticas, relacionándoas coa súa función de forma aberta, crítica e respectuosa."
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "3",
+      "descripcion": "Analizar formal, funcional e semanticamente con criterio e sensibilidade, diferentes manifestacións artísticas, facendo uso da terminoloxía específica asociada ás súas linguaxes."
+    },
+    {
+      "codigo": "2.5",
+      "competencia": "4",
+      "descripcion": "Analizar producións artísticas de diversos estilos e épocas, realizadas en distintos medios e soportes, relacionándoas co seu contexto social, xeográfico e histórico de creación e explicando as posibles relacións con obras doutras épocas e culturas."
+    },
+    {
+      "codigo": "2.6",
+      "competencia": "6",
+      "descripcion": "Comparar as interpretacións que se deron de diversas manifestacións artísticas, analizando os diferentes puntos de vista e propoñendo unha valoración persoal."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "2",
+      "descripcion": "Explicar as singularidades de diversas manifestacións culturais e artísticas, relacionándoas coa súa función de forma aberta, crítica e respectuosa."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "3",
+      "descripcion": "Identificar os elementos constituíntes de manifestacións artísticas de diversos períodos e estilos, recoñecendo as claves das súas linguaxes e xustificando a súa relación coa época, artista ou movemento correspondente."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "3",
+      "descripcion": "Analizar formal, funcional e semanticamente con criterio e sensibilidade, diferentes manifestacións artísticas, facendo uso da terminoloxía específica asociada ás súas linguaxes."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "4",
+      "descripcion": "Analizar producións artísticas de diversos estilos e épocas, realizadas en distintos medios e soportes, relacionándoas co seu contexto social, xeográfico e histórico de creación e explicando as posibles relacións con obras doutras épocas e culturas."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "1",
+      "descripcion": "Argumentar a evolución da concepción da arte na historia, comparando con iniciativa os seus significados en períodos e culturas diferentes e analizando a súa semellanzas e diferenzas."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "6",
+      "descripcion": "Interpretar creacións artísticas de distintos períodos e estilos, analizando a súa forma, o seu significado e o seu contexto de creación e incorporando as ideas, coñecementos, emocións e sentimentos propios."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "5",
+      "descripcion": "Explicar as diferentes posibilidades expresivas da arte e o seu poder de transmisión de ideas, conceptos, sentimentos e emocións a partir de obras de artistas de distintas épocas e estilos, analizando as distintas interpretacións que se deron delas."
+    },
+    {
+      "codigo": "4.4",
+      "competencia": "5",
+      "descripcion": "Analizar producións artísticas de diversos períodos e estilos vinculándoas creativamente con experiencias vitais propias e alleas e valorándoas como ferramentas potenciadoras da creatividade, a imaxinación, a autoestima e o crecemento persoal."
+    },
+    {
+      "codigo": "4.5",
+      "competencia": "6",
+      "descripcion": "Comparar as interpretacións que se deron de diversas manifestacións artísticas, analizando os diferentes puntos de vista e propoñendo unha valoración persoal."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "2",
+      "descripcion": "Distinguir as funcións da arte ao longo da historia, analizando sen prexuízos a súa evolución para partir do estudo de diversas producións artísticas de distintos estilos e épocas."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "4",
+      "descripcion": "Compartir as conclusións de investigacións sobre producións artísticas de diversos estilos e épocas e as relacións co seu contexto, usando os medios analóxicos e dixitais máis adecuados."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "2",
+      "descripcion": "Explicar as singularidades de diversas manifestacións culturais e artísticas, relacionándoas coa súa función social de forma aberta, crítica e respectuosa."
+    },
+    {
+      "codigo": "5.4",
+      "competencia": "4",
+      "descripcion": "Analizar producións artísticas de diversos estilos e épocas, realizadas en distintos medios e soportes, relacionándoas co seu contexto social, xeográfico e histórico de creación e explicando as posibles relacións con obras doutras épocas e culturas."
+    },
+    {
+      "codigo": "5.5",
+      "competencia": "4",
+      "descripcion": "Compartir as conclusións de investigacións sobre producións artísticas de diversos estilos e épocas e as relacións co seu contexto, usando os medios analóxicos e dixitais máis adecuados."
+    },
+    {
+      "codigo": "5.6",
+      "competencia": "6",
+      "descripcion": "Comparar as interpretacións que se deron de diversas manifestacións artísticas, analizando os diferentes puntos de vista e propoñendo unha valoración persoal."
+    },
+    {
+      "codigo": "6.1",
+      "competencia": "1",
+      "descripcion": "Explicar de forma respectuosa o enriquecemento que supón a diversidade na arte, estudando obras de épocas e culturas distintas a partir da vinculación co seu contexto e analizando o concepto de arte ao que responden."
+    },
+    {
+      "codigo": "6.2",
+      "competencia": "1",
+      "descripcion": "Argumentar a evolución da concepción da arte na historia, comparando con iniciativa os seus significados en períodos e culturas diferentes e analizando as súas semellanzas e diferenzas."
+    },
+    {
+      "codigo": "6.3",
+      "competencia": "2",
+      "descripcion": "Explicar as singularidades de diversas manifestacións culturais e artísticas, relacionándoas coa súa función de forma aberta, crítica e respectuosa."
+    },
+    {
+      "codigo": "6.4",
+      "competencia": "3",
+      "descripcion": "Identificar os elementos constituíntes de manifestacións artísticas de diversos períodos e estilos, recoñecendo as claves das súas linguaxes e xustificando a súa relación coa época, artista ou movemento correspondente."
+    },
+    {
+      "codigo": "6.5",
+      "competencia": "3",
+      "descripcion": "Analizar formal, funcional e semanticamente, con criterio e sensibilidade, diferentes manifestacións artísticas, facendo uso da terminoloxía específica asociada ás súas linguaxes."
+    },
+    {
+      "codigo": "6.6",
+      "competencia": "7",
+      "descripcion": "Formular proxectos artísticos, individuais ou colectivos, seleccionando os estilos, técnicas e linguaxes máis adecuadas de diversas disciplinas, e organizando e distribuíndo as tarefas de maneira razoada."
+    },
+    {
+      "codigo": "6.7",
+      "competencia": "7",
+      "descripcion": "Levar a cabo con creatividade proxectos artísticos individuais ou colectivos, materializando as ideas e obxectivos expostos, aplicando as aprendizaxes adquiridas, asumindo os roles asignados e respectando, de ser o caso, as achegas dos demais."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "Bloque 1. Os fundamentos da arte",
+      "titulo": "Os fundamentos da arte",
+      "items": [
+        "Tecnoloxía da arte, materiais, técnicas e procedementos.",
+        "Terminoloxía específica da arte e da arquitectura.",
+        "Aspectos históricos, xeográficos e sociais da arte.",
+        "Teorías da arte. Definición de arte ao longo da historia e perspectiva actual.",
+        "Perspectiva de xénero na arte: representacións e creacións de mulleres.",
+        "Arte conceptual e arte obxecto."
+      ],
+      "codigos_items": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4",
+        "1.5",
+        "1.6"
+      ]
+    },
+    {
+      "codigo": "2",
+      "bloque": "Bloque 2. Visión, realidade e representación",
+      "titulo": "Visión, realidade e representación",
+      "items": [
+        "Introdución á arte precolombina e á arte africana precolonial.",
+        "Sistemas de representación espacial na pintura. Da pintura primitiva á ruptura cubista.",
+        "O impresionismo e posimpresionismo pictórico. O inicio da escultura moderna.",
+        "O realismo: conceptos e enfoques. O hiperrealismo.",
+        "O surrealismo. Influencias posteriores na arte, o cinema e a publicidade.",
+        "A abstracción pictórica e escultórica: orixes e evolución.",
+        "Tradición e vangarda da arte galega."
+      ],
+      "codigos_items": [
+        "2.1",
+        "2.2",
+        "2.3",
+        "2.4",
+        "2.5",
+        "2.6",
+        "2.7"
+      ]
+    },
+    {
+      "codigo": "3",
+      "bloque": "Bloque 3. A arte clásica e as súas proxeccións",
+      "titulo": "A arte clásica e as súas proxeccións",
+      "items": [
+        "Introdución á arquitectura e escultura gregas. Ordes. Obras e períodos máis relevantes.",
+        "O retrato escultórico na Roma Antiga.",
+        "Claves da arquitectura a través das diferentes épocas e estilos: da romanización á Baixa Idade Media.",
+        "O renacer da arte clásico na arquitectura, pintura e escultura: do trecento ao cinquecento.",
+        "A proxección clásica na idade contemporánea: do neoclasicismo á pintura metafísica."
+      ],
+      "codigos_items": [
+        "3.1",
+        "3.2",
+        "3.3",
+        "3.4",
+        "3.5"
+      ]
+    },
+    {
+      "codigo": "4",
+      "bloque": "Bloque 4. Arte e expresión",
+      "titulo": "Arte e expresión",
+      "items": [
+        "O simbolismo: expresión pictórica e literaria. A irmandade prerrafaelita.",
+        "A exaltación barroca, achegas á pintura e escultura.",
+        "O Romanticismo e a orixe da modernidade.",
+        "O Expresionismo alemán. Do fauvismo ao expresionismo figurativo do século XX.",
+        "Do rexeitamento dadaísta á arte intermedia de Fluxus."
+      ],
+      "codigos_items": [
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4",
+        "4.5"
+      ]
+    },
+    {
+      "codigo": "5",
+      "bloque": "Bloque 5. Natureza, sociedade e comunicación na arte",
+      "titulo": "Natureza, sociedade e comunicación na arte",
+      "items": [
+        "O modernismo. Arquitectura e artes aplicadas. A arquitectura orgánica.",
+        "A Bauhaus. Arte e función. Deseño e artes aplicadas. O Art Decó. Arte e artesanía. Laboratorio de formas: Sargadelos.",
+        "A arquitectura do vidro e o ferro e o movemento moderno.",
+        "Arte e medios de comunicación: do cartelismo ao Pop Art.",
+        "A arte en pantalla: a videoarte, arte nas redes, arte dixital. A luz como elemento plástico.",
+        "Arte e ecoloxía. Do Land Art e a Arte Povera ata os nosos días.",
+        "A arte como instrumento de transformación da sociedade. Dos individualismos artísticos á arte colaborativa. Espazos urbanos e intervencións artísticas. Arte urbana."
+      ],
+      "codigos_items": [
+        "5.1",
+        "5.2",
+        "5.3",
+        "5.4",
+        "5.5",
+        "5.6",
+        "5.7"
+      ]
+    },
+    {
+      "codigo": "6",
+      "bloque": "Bloque 6. Metodoloxías e estratexias",
+      "titulo": "Metodoloxías e estratexias",
+      "items": [
+        "Metodoloxías de estudo das formas, as funcións e os significados asociados aos movementos e estilos artísticos, e de análise técnica e procedemental á obra de arte.",
+        "A distribución de tarefas nos proxectos artísticos colectivos: criterios de selección a partir das habilidades requiridas.",
+        "Metodoloxía proxectual. Fases dos proxectos artísticos.",
+        "Estratexias de selección de estilos, técnicas e linguaxes.",
+        ".4 Orientacións pedagóxicas",
+        "intervención educativa na materia de Fundamentos Artísticos desenvolverá ou seu currículo",
+        "tratará de asentar de xeito gradual e progresivo as aprendizaxes que faciliten ao alumnado ou",
+        "ogro dous obxectivos dá materia e, en combinación co resto de materias, unha adecuada adqui-",
+        "ición das competencias clave e ou logro dos obxectivos da etapa.",
+        "este sentido, no deseño das actividades, o profesorado terá que considerar a relación exis-",
+        "ente entre os obxectivos da materia e as competencias clave a través dos descritores operativos",
+        "das liñas de actuación no proceso de ensino e aprendizaxe, que se presentan nos apartados",
+        "eguintes, e seleccionar aqueles criterios de avaliación do currículo que se axusten á finalidade",
+        "uscada, así como empregalos para verificar as aprendizaxes do alumnado e o seu nivel de de-",
+        "empeño.",
+        "elación entre os obxectivos da materia de Fundamentos Artísticos e as competencias clave a",
+        "ravés dos descritores operativos establecidos no anexo I",
+        "bxectivos",
+        "a materia",
+        "BX1",
+        "BX2",
+        "BX3",
+        "BX4",
+        "BX5",
+        "BX6",
+        "BX7",
+        "iñas de actuación non proceso de ensino e aprendizaxe",
+        "A realización de proxectos significativos para o alumnado e a resolución colaborativa de pro-",
+        "lemas, reforzando a autoestima, a autonomía, a reflexión e a responsabilidade.",
+        "A énfase na atención á diversidade do alumnado, na atención individualizada, na prevención",
+        "as dificultades de aprendizaxe e na posta en práctica de mecanismos de reforzo tan pronto",
+        "omo se detecten estas dificultades.",
+        "O uso de estratexias para traballar transversalmente a comprensión lectora, a expresión oral",
+        "escrita, a comunicación audiovisual, a competencia dixital, a igualdade de xénero, o fomento",
+        "a creatividade, do espírito científico e do emprendemento.",
+        "O deseño de situacións de aprendizaxe que lle permitan ao alumnado adquirir e aplicar as",
+        "abilidades de análise, innovación, interpretación e defensa das diferentes producións artísti-",
+        "as, tanto propias como alleas. Tamén é preciso o uso de distintos métodos que teñan en",
+        "onta os diferentes ritmos de aprendizaxe do alumnado, favorezan a capacidade de aprender",
+        "or si mesmo e promovan o traballo en equipo.",
+        "O desenvolvemento no alumnado do respecto á propia cultura artística e dunha postura res-",
+        "ectuosa e aberta ante a pluralidade das diferentes propostas estéticas, de xeito que entenda,",
+        "esde o recoñecemento da súa propia identidade, a importancia da diversidade como riqueza",
+        "ultural.",
+        "O traballo conxunto de coñecementos, destrezas e actitudes, facendo que o seu grao de im-",
+        "ortancia sexa relativo á natureza da situación de aprendizaxe. Desta maneira, os obxectivos",
+        "dquiriranse de xeito interrelacionado, incrementando progresivamente ou seu grao de com-",
+        "lexidade. Mediante estas situacións o alumnado terá unha visión máis dinámica tanto das",
+        "úas aplicacións directas das aprendizaxes adquiridas no mundo laboral e profesional, como",
+        "a transferencia destas experiencias a outros campos ou disciplinas do saber diferentes."
+      ],
+      "codigos_items": [
+        "6.1",
+        "6.2",
+        "6.3",
+        "6.4",
+        "6.5",
+        "6.6",
+        "6.7",
+        "6.8",
+        "6.9",
+        "6.10",
+        "6.11",
+        "6.12",
+        "6.13",
+        "6.14",
+        "6.15",
+        "6.16",
+        "6.17",
+        "6.18",
+        "6.19",
+        "6.20",
+        "6.21",
+        "6.22",
+        "6.23",
+        "6.24",
+        "6.25",
+        "6.26",
+        "6.27",
+        "6.28",
+        "6.29",
+        "6.30",
+        "6.31",
+        "6.32",
+        "6.33",
+        "6.34",
+        "6.35",
+        "6.36",
+        "6.37",
+        "6.38",
+        "6.39",
+        "6.40",
+        "6.41",
+        "6.42",
+        "6.43",
+        "6.44",
+        "6.45",
+        "6.46",
+        "6.47",
+        "6.48",
+        "6.49",
+        "6.50"
+      ]
+    }
+  ],
+  "comunidad": "galicia",
+  "idioma": "gl"
+}

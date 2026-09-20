@@ -1,0 +1,447 @@
+{
+  "materia_oficial": "Movementos Culturais e Artísticos",
+  "materia": "Movementos Culturais e Artísticos",
+  "etapa": "Bachillerato",
+  "ciclo": "2º Bachillerato",
+  "itinerario": null,
+  "cursos_aplicables": [
+    "2º Bachillerato"
+  ],
+  "competencias_especificas": [
+    {
+      "codigo": "1",
+      "descripcion": "Analizar producións de distintos movementos culturais e artísticos desde as vangardas á actualidade, reflexionando de forma aberta e crítica sobre o seu contexto histórico e os seus aspectos singulares e comúns, para comprender o valor da arte como representación do espírito dunha época.",
+      "descriptores": []
+    },
+    {
+      "codigo": "2",
+      "descripcion": "Explicar o valor social do patrimonio reflexionando sobre o compromiso da arte coa súa época e sobre a importancia da liberdade creativa e de expresión en producións culturais e artísticas, para construír unha mirada sobre a arte que recoñeza, valore e respecte a diversidade cultural.",
+      "descriptores": []
+    },
+    {
+      "codigo": "3",
+      "descripcion": "Explorar e valorar as linguaxes e os códigos de diferentes manifestacións culturais e artísticas desde as vangardas ata a actualidade, identificando e comprendendo as súas características, referentes e intencionalidades, para potenciar as posibilidades de gozo estético.",
+      "descriptores": []
+    },
+    {
+      "codigo": "4",
+      "descripcion": "Analizar a evolución da arte e a cultura na historia recente identificando os distintos ámbitos nos que se producen e manifestan, así como o valor da innovación e o papel das tecnoloxías, para desenvolver un criterio informado e crítico ante o feito artístico que favoreza a identificación de oportunidades de desenvolvemento persoal, social, académico e profesional.",
+      "descriptores": []
+    },
+    {
+      "codigo": "5",
+      "descripcion": "Explicar a práctica cultural e artística como un medio de expresión e comunicación individual e colectivo de ideas, opinións e sentimentos, a partir dunha análise crítica de diversas manifestacións culturais e artísticas que inclúa tamén unha reflexión sobre o seu impacto ambiental, económico e social, para profundar no coñecemento da sociedade contemporánea e promover o compromiso persoal coa sustentabilidade.",
+      "descriptores": []
+    }
+  ],
+  "criterios_evaluacion": [
+    {
+      "codigo": "1.1",
+      "competencia": "1",
+      "descripcion": "Identificar os aspectos singulares de diversas manifestacións culturais e artísticas desde as vangardas ata a actualidade, relacionándoos co sentido das devanditas obras, cos contextos nos que foron producidas e coa tradición artística, de forma aberta, crítica e respectuosa."
+    },
+    {
+      "codigo": "1.2",
+      "competencia": "1",
+      "descripcion": "Establecer relacións entre manifestacións culturais de distintos campos creativos dos principais movementos culturais e artísticos contemporáneos, identificando elementos comúns que configuran o espírito da súa época."
+    },
+    {
+      "codigo": "1.3",
+      "competencia": "1",
+      "descripcion": "Investigar acerca do papel dos movementos culturais e artísticos como motores de cambio e de evolución da sociedade, recorrendo a fontes fiables."
+    },
+    {
+      "codigo": "1.4",
+      "competencia": "2",
+      "descripcion": "Explicar a repercusión e o compromiso social da arte analizando exemplos que mostren a implicación das persoas creadoras e os efectos xerados na sociedade."
+    },
+    {
+      "codigo": "1.5",
+      "competencia": "2",
+      "descripcion": "Analizar a importancia da diversidade cultural e da libre expresión na arte a partir do estudo de manifestacións culturais e artísticas diversas, incluídas as realizadas por mulleres ou as procedentes de ámbitos diferentes á cultura occidental."
+    },
+    {
+      "codigo": "1.6",
+      "competencia": "2",
+      "descripcion": "Desenvolver proxectos de investigación individuais ou colectivos que mostren unha implicación e unha resposta persoais ao redor da libre expresión artística e dos seus posibles límites, partindo da análise de casos concretos."
+    },
+    {
+      "codigo": "1.7",
+      "competencia": "3",
+      "descripcion": "Identificar e explicar as características de diversas producións culturais e artísticas a partir da análise das súas linguaxes e códigos propios."
+    },
+    {
+      "codigo": "1.8",
+      "competencia": "3",
+      "descripcion": "Investigar e analizar a presenza de referentes comúns en distintas manifestacións culturais e artísticas, comparando os seus temas, linguaxes ou intencionalidades."
+    },
+    {
+      "codigo": "2.1",
+      "competencia": "1",
+      "descripcion": "Investigar acerca do papel dos movementos culturais e artísticos como motores de cambio e evolución da sociedade, recorrendo a fontes fiables."
+    },
+    {
+      "codigo": "2.2",
+      "competencia": "2",
+      "descripcion": "Explicar a repercusión e o compromiso social da arte analizando exemplos que mostren a implicación das persoas creadoras e os efectos xerados na sociedade."
+    },
+    {
+      "codigo": "2.3",
+      "competencia": "2",
+      "descripcion": "Desenvolver proxectos de investigación individuais ou colectivos que mostren unha implicación e unha resposta persoais ao redor da libre expresión artística e dos seus posibles límites, partindo da análise de casos concretos."
+    },
+    {
+      "codigo": "2.4",
+      "competencia": "3",
+      "descripcion": "Debater sobre diferentes propostas culturais e artísticas, intercambiando as opinións e os sentimentos experimentados e incorporando xuízos de valor vinculados á apreciación estética das obras de maneira argumentada, construtiva e respectuosa."
+    },
+    {
+      "codigo": "2.5",
+      "competencia": "4",
+      "descripcion": "Explorar, explicar e valorar a repercusión social e económica de diferentes manifestacións culturais e artísticas, reflexionando sobre as oportunidades persoais e profesionais que ofrecen."
+    },
+    {
+      "codigo": "2.6",
+      "competencia": "4",
+      "descripcion": "Identificar unha variedade de ámbitos e espazos nos que se desenvolve a práctica cultural e artística na actualidade, analizando de que modo condicionan as manifestacións que acollen."
+    },
+    {
+      "codigo": "2.7",
+      "competencia": "5",
+      "descripcion": "Explorar diferentes manifestacións culturais e artísticas actuais con interese, curiosidade e respecto, identificando o seu valor expresivo e comunicativo tanto da individualidade das persoas creadoras como da sociedade en que se producen."
+    },
+    {
+      "codigo": "2.8",
+      "competencia": "5",
+      "descripcion": "Explicar algunhas das repercusións ambientais, sociais e económicas da cultura e da arte sobre a sociedade actual explorando alternativas que favorezan a consecución dos obxectivos de desenvolvemento sustentable."
+    },
+    {
+      "codigo": "3.1",
+      "competencia": "1",
+      "descripcion": "Identificar os aspectos singulares de diversas manifestacións culturais e artísticas desde as vangardas ata a actualidade, relacionándoos co sentido das devanditas obras, cos contextos nos que foron producidas e coa tradición artística, de forma aberta, crítica e respectuosa."
+    },
+    {
+      "codigo": "3.2",
+      "competencia": "1",
+      "descripcion": "Establecer relacións entre manifestacións culturais de distintos campos creativos dos principais movementos culturais e artísticos contemporáneos identificando elementos comúns que configuran o espírito da súa época."
+    },
+    {
+      "codigo": "3.3",
+      "competencia": "1",
+      "descripcion": "Investigar acerca do papel dos movementos culturais e artísticos como motores de cambio e evolución da sociedade, recorrendo a fontes fiables."
+    },
+    {
+      "codigo": "3.4",
+      "competencia": "2",
+      "descripcion": "Explicar a importancia da promoción, conservación e posta en valor do patrimonio artístico e cultural."
+    },
+    {
+      "codigo": "3.5",
+      "competencia": "2",
+      "descripcion": "Analizar a importancia da diversidade cultural e da libre expresión na arte a partir do estudo de manifestacións culturais e artísticas diversas, incluídas as realizadas por mulleres ou as procedentes de ámbitos diferentes á cultura occidental."
+    },
+    {
+      "codigo": "3.6",
+      "competencia": "3",
+      "descripcion": "Identificar e explicar as características de diversas producións culturais e artísticas a partir da análise das súas linguaxes e códigos propios."
+    },
+    {
+      "codigo": "3.7",
+      "competencia": "3",
+      "descripcion": "Investigar e analizar a presenza de referentes comúns en distintas manifestacións culturais e artísticas comparando os seus temas, linguaxes ou intencionalidades."
+    },
+    {
+      "codigo": "3.8",
+      "competencia": "3",
+      "descripcion": "Debater sobre diferentes propostas culturais e artísticas intercambiando as opinións e os sentimentos experimentados e incorporando xuízos de valor vinculados á apreciación estética das obras de maneira argumentada, construtiva e respectuosa."
+    },
+    {
+      "codigo": "4.1",
+      "competencia": "1",
+      "descripcion": "Establecer relacións entre manifestacións culturais de distintos campos creativos dos principais movementos culturais e artísticos contemporáneos, identificando elementos comúns que configuran o espírito da súa época."
+    },
+    {
+      "codigo": "4.2",
+      "competencia": "1",
+      "descripcion": "Investigar acerca do papel dos movementos culturais e artísticos como motores de cambio e evolución da sociedade, recorrendo a fontes fiables."
+    },
+    {
+      "codigo": "4.3",
+      "competencia": "2",
+      "descripcion": "Explicar a importancia da promoción, conservación e posta en valor do patrimonio artístico e cultural."
+    },
+    {
+      "codigo": "4.4",
+      "competencia": "2",
+      "descripcion": "Explicar a repercusión e o compromiso social da arte, analizando exemplos que mostren a implicación das persoas creadoras e os efectos xerados na sociedade."
+    },
+    {
+      "codigo": "4.5",
+      "competencia": "3",
+      "descripcion": "Debater sobre diferentes propostas culturais e artísticas intercambiando as opinións e os sentimentos experimentados e incorporando xuízos de valor vinculados á apreciación estética das obras de maneira argumentada, construtiva e respectuosa."
+    },
+    {
+      "codigo": "4.6",
+      "competencia": "4",
+      "descripcion": "Explorar, explicar e valorar a repercusión social e económica de diferentes manifestacións culturais e artísticas, reflexionando sobre as oportunidades persoais e profesionais que ofrecen."
+    },
+    {
+      "codigo": "4.7",
+      "competencia": "4",
+      "descripcion": "Identificar unha variedade de ámbitos e espazos en que se desenvolve a práctica cultural e artística na actualidade, analizando de que modo condicionan as manifestacións que acollen."
+    },
+    {
+      "codigo": "5.1",
+      "competencia": "2",
+      "descripcion": "Analizar a importancia da diversidade cultural e da libre expresión na arte a partir do estudo de manifestacións culturais e artísticas diversas, incluídas as realizadas por mulleres ou as procedentes de ámbitos diferentes á cultura occidental."
+    },
+    {
+      "codigo": "5.2",
+      "competencia": "2",
+      "descripcion": "Desenvolver proxectos de investigación individuais ou colectivos que mostren unha implicación e unha resposta persoais ao redor da libre expresión artística e dos seus posibles límites, partindo da análise de casos concretos."
+    },
+    {
+      "codigo": "5.3",
+      "competencia": "3",
+      "descripcion": "Identificar e explicar as características de diversas producións culturais e artísticas a partir da análise das súas linguaxes e códigos propios."
+    },
+    {
+      "codigo": "5.4",
+      "competencia": "3",
+      "descripcion": "Investigar e analizar a presenza de referentes comúns en distintas manifestacións culturais e artísticas comparando os seus temas, linguaxes ou intencionalidades."
+    },
+    {
+      "codigo": "5.5",
+      "competencia": "3",
+      "descripcion": "Debater sobre diferentes propostas culturais e artísticas intercambiando as opinións e os sentimentos experimentados e incorporando xuízos de valor vinculados á apreciación estética das obras de maneira argumentada, construtiva e respectuosa."
+    },
+    {
+      "codigo": "5.6",
+      "competencia": "4",
+      "descripcion": "Argumentar a influencia e as achegas que as novas linguaxes e tecnoloxías incorporaron na cultura e na arte recentes, a partir da análise crítica de diferentes producións, valorando a actitude innovadora das persoas creadoras."
+    },
+    {
+      "codigo": "5.7",
+      "competencia": "4",
+      "descripcion": "Identificar unha variedade de ámbitos e espazos nos que se desenvolve a práctica cultural e artística na actualidade analizando de que modo condicionan as manifestacións que acollen."
+    },
+    {
+      "codigo": "5.8",
+      "competencia": "5",
+      "descripcion": "Explorar diferentes manifestacións culturais e artísticas actuais con interese, curiosidade e respecto, identificando o seu valor expresivo e comunicativo tanto da individualidade das persoas creadoras como da sociedade en que se producen."
+    }
+  ],
+  "saberes_basicos": [
+    {
+      "codigo": "1",
+      "bloque": "Bloque 1. Aspectos xerais",
+      "titulo": "Aspectos xerais",
+      "items": [
+        "A evolución do concepto de arte.",
+        "As distintas manifestacións da expresión artística.",
+        "Elementos esenciais das distintas linguaxes artísticas. Os grandes movementos artístico-culturais contemporáneos. Aspectos fundamentais.",
+        "A expresión artística no seu contexto social e histórico.",
+        "Función social da arte e da cultura. O seu impacto socioeconómico. A liberdade de expresión. A censura na arte.",
+        "Estereotipos culturais e artísticos. A perspectiva de xénero e a perspectiva intercultural na arte. O respecto á diversidade.",
+        "A arte como ferramenta de expresión individual e colectiva.",
+        "Estratexias de investigación, análise, interpretación e valoración crítica de produtos culturais e artísticos."
+      ],
+      "codigos_items": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4",
+        "1.5",
+        "1.6",
+        "1.7",
+        "1.8"
+      ]
+    },
+    {
+      "codigo": "2",
+      "bloque": "Bloque 2. Natureza, arte e cultura",
+      "titulo": "Natureza, arte e cultura",
+      "items": [
+        "Do plein air á fotografía de natureza.",
+        "Arte, conciencia ecolóxica e sustentabilidade.",
+        "Arte povera.",
+        "Arte ambiental e land art."
+      ],
+      "codigos_items": [
+        "2.1",
+        "2.2",
+        "2.3",
+        "2.4"
+      ]
+    },
+    {
+      "codigo": "3",
+      "bloque": "Bloque 3. A arte dentro da arte",
+      "titulo": "A arte dentro da arte",
+      "items": [
+        "Arte primitiva, oriental, precolombina e africana. O seu papel como inspiración para as vangardas.",
+        "A pervivencia do clásico na arte e na cultura contemporánea.",
+        "Cultura popular e pop art. A arte pop en España.",
+        "Relacións interdisciplinares: literatura, cinema, música, fotografía, artes plásticas, cómic, publicidade, artes escénicas, deseño e moda."
+      ],
+      "codigos_items": [
+        "3.1",
+        "3.2",
+        "3.3",
+        "3.4"
+      ]
+    },
+    {
+      "codigo": "4",
+      "bloque": "Bloque 4. A arte nos espazos urbanos",
+      "titulo": "A arte nos espazos urbanos",
+      "items": [
+        "Arquitectura e sociedade.",
+        "A arquitectura na arte contemporánea.",
+        "Intervencións artísticas en proxectos de urbanismo.",
+        "Arte mural e enganaollos (trompe-l´oeil). Arte urbana. Os espazos da arte: museos, salóns, feiras, festivais, exhibicións, galerías, obradoiros etc."
+      ],
+      "codigos_items": [
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4"
+      ]
+    },
+    {
+      "codigo": "5",
+      "bloque": "Bloque 5. Linguaxes artísticas contemporáneas",
+      "titulo": "Linguaxes artísticas contemporáneas",
+      "items": [
+        "Deseño industrial e artes decorativas.",
+        "Medios electrónicos, informáticos e dixitais na arte. Videoarte.",
+        "Instalacións. Da arte ambiente á arte inmersiva e interactiva.",
+        "A explosión da narrativa serial no audiovisual do século XXI.",
+        "Narrativa multiverso e videoxogos.",
+        ".4 Orientacións pedagóxicas",
+        "intervención educativa na materia de Movementos Culturais e Artísticos desenvolverá o seu",
+        "urrículo e tratará de asentar de xeito gradual e progresivo as aprendizaxes que lle faciliten ao",
+        "lumnado o logro dos obxectivos da materia e, en combinación co resto das materias, unha ade-",
+        "uada adquisición das competencias clave e o logro dos obxectivos da etapa.",
+        "este sentido, no deseño das actividades, o profesorado terá que considerar a relación exis-",
+        "ente entre os obxectivos da materia e as competencias clave a través dos descritores operativos",
+        "as liñas de actuación no proceso de ensino e aprendizaxe que se presentan nos apartados se-",
+        "uintes e seleccionar aqueles criterios de avaliación do currículo que se axusten á finalidade bus-",
+        "ada, así como empregalos para verificar as aprendizaxes do alumnado e o seu nivel de desem-",
+        "eño.",
+        "elación entre os obxectivos da materia de Movementos Culturais e Artísticos e as competen-",
+        "ias clave a través dos descritores operativos establecidos no anexo I",
+        "bxectivos",
+        "a materia",
+        "BX1",
+        "BX2",
+        "BX3",
+        "BX4",
+        "BX5",
+        "iñas de actuación non proceso de ensino e aprendizaxe",
+        "A creación de situacións de aprendizaxe que lle permitan ao alumnado explorar, de forma",
+        "rogresivamente complexa, unha ampla variedade de manifestacións culturais e artísticas,",
+        "ediante a mobilización globalizada dos correspondentes contidos (coñecementos, destrezas",
+        "actitudes), facilitándolle o acceso ao mundo das artes, descubríndolle as súas particularida-",
+        "es e contribuíndo a súa formación como cidadán e como espectador cultural. Estas situacións",
+        "eben proporcionarlle ao alumnado unha perspectiva real das aplicacións formativas e profe-",
+        "ionais da arte e da cultura nas súas múltiples facetas, así como do enriquecemento do seu",
+        "cervo persoal.",
+        "A importancia do traballo dos obxectivos da materia en conxunto, onde os bloques de criterios",
+        "e avaliación e contidos non se vexan como independentes, facendo que interveñan aqueles",
+        "esempeños máis significativos en cada caso, de xeito que se poidan adquirir os coñecemen-",
+        "os, destrezas e actitudes de forma interrelacionada e progresiva no referente á súa comple-",
+        "idade.",
+        "O fomento no alumnado dun enriquecemento do seu acervo persoal e cultural desde unha",
+        "erspectiva real das aplicacións formativas e profesionais da arte e da cultura nas súas múl-",
+        "iples facetas.",
+        "A familiarización do alumnado coas numerosas referencias culturais facilitándolle o acceso ao",
+        "undo de las artes, descubríndolle as súas particularidades e contribuíndo a súa formación",
+        "omo cidadán e como espectador cultural.",
+        "A selección de producións e manifestacións culturais e artísticas contemporáneas a partir dun",
+        "studo que permita deducir as súas linguaxes, as súas características ou as súas referencias",
+        "omúns, así como o seu contexto de produción e recepción.",
+        "O establecemento de relacións estreitas, sen prexuízos, e baseadas no coñecemento e na com-",
+        "rensión, de xeito que se consiga unha aprehensión máis global da cultura e do desenvolve-",
+        "ento do deleite estético. Esta posibilidade achega modos de vida diferentes a través da ex-",
+        "resión artística, o que permite sentar as bases do respecto e iniciar aproximacións que fo-",
+        "enten a convivencia. Na liña dos obxectivos de desenvolvemento da Axenda 2030 a partir",
+        "esta materia, o achegamento aos retos do século XXI desde a oportunidade que brinda o",
+        "oñecemento dos movementos artísticos e culturais e da súa importancia no desenvolve-",
+        "ento social, económico e ambiental.",
+        "A elección ao longo do curso de momentos coincidentes co desenvolvemento de feiras de arte",
+        "ontemporánea; festivais de cine, música ou danza; exposicións e outros eventos internacio-",
+        "ais, nacionais ou locais, para introducir a análise das manifestacións artísticas presentes e",
+        "chegar os contidos da materia ao momento e á contorna do alumnado. Deste xeito, realiza-",
+        "ase un desenvolvemento entrelazado, coherente e relacionado dos movementos culturais e",
+        "rtísticos, en lugar de facelo de forma lineal."
+      ],
+      "codigos_items": [
+        "5.1",
+        "5.2",
+        "5.3",
+        "5.4",
+        "5.5",
+        "5.6",
+        "5.7",
+        "5.8",
+        "5.9",
+        "5.10",
+        "5.11",
+        "5.12",
+        "5.13",
+        "5.14",
+        "5.15",
+        "5.16",
+        "5.17",
+        "5.18",
+        "5.19",
+        "5.20",
+        "5.21",
+        "5.22",
+        "5.23",
+        "5.24",
+        "5.25",
+        "5.26",
+        "5.27",
+        "5.28",
+        "5.29",
+        "5.30",
+        "5.31",
+        "5.32",
+        "5.33",
+        "5.34",
+        "5.35",
+        "5.36",
+        "5.37",
+        "5.38",
+        "5.39",
+        "5.40",
+        "5.41",
+        "5.42",
+        "5.43",
+        "5.44",
+        "5.45",
+        "5.46",
+        "5.47",
+        "5.48",
+        "5.49",
+        "5.50",
+        "5.51",
+        "5.52",
+        "5.53",
+        "5.54",
+        "5.55",
+        "5.56",
+        "5.57",
+        "5.58",
+        "5.59",
+        "5.60",
+        "5.61",
+        "5.62"
+      ]
+    }
+  ],
+  "comunidad": "galicia",
+  "idioma": "gl"
+}
