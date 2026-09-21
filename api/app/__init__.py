@@ -4,6 +4,7 @@ from __future__ import annotations
 from flask import Flask
 
 from .config import Config
+from .secretos import comprobar_configuracion
 from .extensions import init_extensions, login_manager
 from .api import register_blueprints
 
@@ -12,6 +13,13 @@ def create_app(config_object: type[Config] | None = None) -> Flask:
     """Construye la aplicación Flask siguiendo el patrón factory."""
     app = Flask(__name__, instance_relative_config=False)
     app.config.from_object(config_object or Config())
+
+    # Lo primero después de cargar la configuración, y antes de que exista
+    # nada más: si un secreto es un valor publicado, el proceso no arranca.
+    # Va aquí y no al final porque una aplicación a medio construir que además
+    # se niega a arrancar es más difícil de diagnosticar que una que se niega
+    # antes de empezar. Ver el docstring de `comprobar_configuracion`.
+    comprobar_configuracion(app.config)
 
     # Logging estructurado: configurado lo antes posible para que TODO
     # mensaje (incluidos los de extensiones) salga ya con formato JSON.
@@ -42,6 +50,12 @@ def create_app(config_object: type[Config] | None = None) -> Flask:
 
     from . import i18n
     i18n.init_app(app)
+
+    # Después de las extensiones y de los blueprints: su `before_request` tiene
+    # que correr con la sesión ya disponible, y protege rutas que para entonces
+    # ya están registradas.
+    from . import csrf
+    csrf.init_app(app)
 
     # Lo último, y sin poder tumbar el arranque: si la base de datos va por
     # detrás del código, deja en el log el comando que lo arregla. Ver el

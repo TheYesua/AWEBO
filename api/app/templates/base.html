@@ -8,6 +8,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="{{ _('Generación asistida de Situaciones de Aprendizaje LOMLOE para docentes.') }}">
   <meta name="theme-color" content="#5ED3D1">
+  {# El token CSRF, de donde lo lee el envoltorio de `fetch` en app.js. Va en
+     el <head> para que ya esté cuando cualquier script se ejecute, y como
+     <meta> y no en una variable de JavaScript para que no dependa de que la
+     página tenga un bloque de script propio. #}
+  <meta name="csrf-token" content="{{ csrf_token() }}">
   <title>{% block title %}AWEBO · {{ _('Situaciones de Aprendizaje') }}{% endblock %}</title>
   <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='img/favicon.svg') }}">
   <link rel="alternate icon" type="image/png" href="{{ url_for('static', filename='img/logo.png') }}">
@@ -94,6 +99,12 @@
              parámetros, y de ahí el recorte. #}
           <input type="hidden" name="siguiente"
                  value="{{ request.full_path.rstrip('?') }}">
+          {# El único formulario HTML de verdad que queda en la aplicación, y
+             el único que necesita el token en un campo oculto: el resto de lo
+             que cambia estado va por `fetch`, que lo manda en la cabecera.
+             Aquí hace falta porque este formulario tiene que funcionar también
+             con JavaScript desactivado — mira el <noscript> de abajo. #}
+          <input type="hidden" name="_csrf" value="{{ csrf_token() }}">
           <label for="selector-idioma" class="sr-only">{{ _('Idioma') }}</label>
           <select id="selector-idioma" name="idioma" onchange="this.form.submit()">
             {% for codigo, nombre in idiomas_disponibles.items() %}

@@ -23,8 +23,7 @@ class RateLimitConfig(Config):
     """Config que deja el rate limiter activo para estos tests."""
 
     TESTING = True
-    WTF_CSRF_ENABLED = False
-    SESSION_COOKIE_SECURE = False
+    SESSION_COOKIE_SECURE = False  # `WTF_CSRF_ENABLED` vivía aquí y era inerte
     SQLALCHEMY_DATABASE_URI = _redirigir_a_test_db(Config.SQLALCHEMY_DATABASE_URI)
     RATELIMIT_ENABLED = True
     RATELIMIT_STORAGE_URI = "redis://redis:6379/5"  # DB separado para tests
@@ -36,6 +35,12 @@ class RateLimitConfig(Config):
 def _app_rl():
     """App fresca con rate limiting activo."""
     app = create_app(RateLimitConfig)
+    # Esta app se construye aparte de la del conftest, así que hay que darle el
+    # cliente con CSRF explícitamente: sin esto, sus POST de login reciben un
+    # 403 y el test mediría otra cosa.
+    from tests.conftest import ClienteConCSRF
+
+    app.test_client_class = ClienteConCSRF
     with app.app_context():
         _db.drop_all()
         _db.create_all()
