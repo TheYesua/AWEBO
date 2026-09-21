@@ -72,7 +72,7 @@ jobs:
         # contenedores de la misma red de Compose, y aquí no hay Compose.
         run: |
           docker run --rm --network host \
-            -e SQLALCHEMY_DATABASE_URI=postgresql+psycopg://awebo:awebo@localhost:5432/awebo \
+            -e DATABASE_URL=postgresql+psycopg://awebo:awebo@localhost:5432/awebo \
             -e REDIS_URL=redis://localhost:6379/0 \
             -e SESSION_REDIS_URL=redis://localhost:6379/3 \
             -e CELERY_BROKER_URL=redis://localhost:6379/1 \
@@ -83,6 +83,8 @@ jobs:
             -v "$PWD/docker-compose.yml:/repo/docker-compose.yml:ro" \
             -v "$PWD/docker-compose.override.yml:/repo/docker-compose.override.yml:ro" \
             -v "$PWD/.env.example:/repo/.env.example:ro" \
+            -v "$PWD/nginx/nginx.conf:/repo/nginx/nginx.conf:ro" \
+            -v "$PWD/.github/workflows/verificar.yml:/repo/.github/workflows/verificar.yml:ro" \
             -v "$PWD/README.md:/repo/README.md:ro" \
             -v "$PWD/LICENSE:/repo/LICENSE:ro" \
             -v "$PWD/LICENSE-DOCS:/repo/LICENSE-DOCS:ro" \
@@ -172,7 +174,7 @@ jobs:
       - name: Levantar la aplicación
         run: |
           docker run -d --name awebo-a11y --network host \
-            -e SQLALCHEMY_DATABASE_URI=postgresql+psycopg://awebo:awebo@localhost:5432/awebo \
+            -e DATABASE_URL=postgresql+psycopg://awebo:awebo@localhost:5432/awebo \
             -e REDIS_URL=redis://localhost:6379/0 \
             -e SESSION_REDIS_URL=redis://localhost:6379/3 \
             -e CELERY_BROKER_URL=redis://localhost:6379/1 \
