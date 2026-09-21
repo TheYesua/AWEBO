@@ -15,7 +15,16 @@ class Config:
     """Configuración base. Todos los valores provienen del entorno."""
 
     # --- Flask ---
-    SECRET_KEY: str = os.environ.get("SECRET_KEY", "dev-key-change-me")
+    # Sin valor por defecto, y esa ausencia es la medida de seguridad: mientras
+    # aquí hubo uno, olvidar la variable de entorno no daba error sino un
+    # servidor firmando con una clave pública. Lo comprueba
+    # `comprobar_configuracion`, que `create_app` llama al arrancar.
+    SECRET_KEY: str = os.environ.get("SECRET_KEY", "")
+
+    #: Protección CSRF. Sin variable de entorno que la apague: lo que se puede
+    #: desactivar por descuido acaba desactivado, y esto no es un ajuste de
+    #: rendimiento. Los tests la dejan puesta y su cliente manda el token.
+    CSRF_ENABLED: bool = True
     FLASK_ENV: str = os.environ.get("FLASK_ENV", "production")
     DEBUG: bool = _bool(os.environ.get("FLASK_DEBUG"), default=FLASK_ENV == "development")
 

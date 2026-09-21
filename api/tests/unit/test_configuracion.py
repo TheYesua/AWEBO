@@ -216,6 +216,20 @@ def test_el_puerto_vacio_no_tumba_el_arranque():
 
     from app import config as modulo
 
+    # OJO AL `reload` DE AQUÍ ABAJO, QUE TIENE UN FILO
+    # ------------------------------------------------
+    # `reload()` reejecuta el módulo **sobre su propio diccionario**, así que
+    # todo lo que `config.py` define se sustituye por objetos nuevos mientras
+    # quien ya tenía una referencia se queda con los viejos.
+    #
+    # Para constantes y funciones da igual. Para una **clase de excepción** no:
+    # un `except` escrito antes deja de casar con lo que se lanza después. Pasó
+    # el 21/09/2026, cuando `ConfiguracionInsegura` nació dentro de `config.py`
+    # y sus siete `pytest.raises` pasaron en solitario y fallaron en la batería
+    # completa — este fichero corre al 47 % y el suyo al 89 %.
+    #
+    # Por eso las excepciones viven ahora en `app/secretos.py`, y lo vigila
+    # `test_config_no_define_excepciones` unas líneas más abajo.
     previo = os.environ.get("SMTP_PORT")
     os.environ["SMTP_PORT"] = ""
     try:
@@ -227,6 +241,40 @@ def test_el_puerto_vacio_no_tumba_el_arranque():
         else:
             os.environ["SMTP_PORT"] = previo
         reload(modulo)
+
+
+def test_config_no_define_excepciones():
+    """`config.py` se recarga, así que no puede definir clases de excepción.
+
+    El test de arriba hace `reload(app.config)`, y `reload()` reejecuta el
+    módulo sobre su propio diccionario: las clases pasan a ser objetos nuevos y
+    quien tuviera una referencia se queda con la vieja. Con una excepción eso
+    significa que un `except` escrito antes **deja de casar** con lo que se
+    lanza después, en silencio y para el resto de la sesión.
+
+    No es hipotético. El 21/09/2026 `ConfiguracionInsegura` se puso en
+    `config.py`; sus siete tests de `pytest.raises` pasaron en solitario y
+    fallaron los siete en la batería completa. El diagnóstico costó lo suyo
+    porque el síntoma —«`pytest.raises` no caza una excepción que sí se
+    lanza»— no se parece en nada a su causa.
+
+    La regla que sale de ahí es esta, y es barata de comprobar: **las
+    excepciones no viven en un módulo que alguien recarga.** Están en
+    `app/secretos.py`.
+    """
+    from app import config as modulo
+
+    excepciones = [
+        nombre
+        for nombre, valor in vars(modulo).items()
+        if isinstance(valor, type) and issubclass(valor, BaseException)
+    ]
+
+    assert not excepciones, (
+        f"`config.py` define {excepciones}, y este fichero lo recarga. "
+        "Un `reload` sustituye la clase y rompe los `except` que ya la "
+        "apuntaban. Llévalas a `app/secretos.py`."
+    )
 
 
 def test_ningun_proveedor_se_hereda_del_entorno_en_los_tests():
