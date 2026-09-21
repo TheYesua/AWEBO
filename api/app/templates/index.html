@@ -107,7 +107,7 @@
 {% endblock %}
 
 {% block scripts %}
-<script>
+<script nonce="{{ csp_nonce() }}">
 /* ------------------------------------------------------------------
    Dashboard del docente autenticado: hidrata el bloque de tres
    columnas (recientes · acciones · estadísticas) a partir de un

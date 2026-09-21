@@ -106,7 +106,12 @@
              con JavaScript desactivado — mira el <noscript> de abajo. #}
           <input type="hidden" name="_csrf" value="{{ csrf_token() }}">
           <label for="selector-idioma" class="sr-only">{{ _('Idioma') }}</label>
-          <select id="selector-idioma" name="idioma" onchange="this.form.submit()">
+          {# El envío al cambiar lo conecta `app.js` con un `addEventListener`.
+             Aquí había un `onchange="this.form.submit()"`, y era el único
+             atributo de evento en línea de toda la aplicación: una CSP con
+             `nonce` los prohíbe todos, porque no hay forma de firmar el código
+             que vive dentro de un atributo. #}
+          <select id="selector-idioma" name="idioma">
             {% for codigo, nombre in idiomas_disponibles.items() %}
             <option value="{{ codigo }}" {{ 'selected' if codigo == idioma }}>{{ nombre }}</option>
             {% endfor %}
@@ -166,7 +171,7 @@
        Cargada al final del body para no bloquear el render del contenido. -->
   <script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js"
           crossorigin="anonymous" defer></script>
-  <script>
+  <script nonce="{{ csp_nonce() }}">
     // Marca el enlace de navegación que coincide con la ruta actual.
     // Refuerzo no-color del estado activo (foco/subrayado vía CSS).
     (function () {

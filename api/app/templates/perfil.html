@@ -293,7 +293,7 @@
 {% endblock %}
 
 {% block scripts %}
-<script>
+<script nonce="{{ csp_nonce() }}">
 /* Cadenas del JavaScript, que no pasan por _() del servidor. */
 const T = {
   errorDesconocido: {{ _('Error desconocido')|tojson }},

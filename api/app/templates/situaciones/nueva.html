@@ -201,7 +201,7 @@
 {% endblock %}
 
 {% block scripts %}
-<script>
+<script nonce="{{ csp_nonce() }}">
 /* Etiqueta reutilizada en dos sitios del script; sin esto quedaba en
    castellano en las otras tres lenguas. */
 const PREGUNTA_GUIA = {{ _('Pregunta guía')|tojson }};

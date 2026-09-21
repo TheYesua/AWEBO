@@ -118,7 +118,7 @@
 {% endblock %}
 
 {% block scripts %}
-<script>
+<script nonce="{{ csp_nonce() }}">
 /* Cadenas del JavaScript. Estaban escritas a pelo en castellano, así que la
    página salía a medias en catalán, gallego y euskera. |tojson por los
    apóstrofos. */

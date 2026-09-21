@@ -69,6 +69,18 @@
   };
 })();
 
+/* El selector de idioma se envía al cambiarlo. Vivía en un atributo
+   `onchange` de `base.html`, y de ahí salió: una CSP con `nonce` prohíbe los
+   atributos de evento en línea, porque no hay manera de firmar el código que
+   va dentro de un atributo. El `<noscript>` de al lado sigue ofreciendo el
+   botón «Cambiar» a quien no tenga JavaScript. */
+(function () {
+  const selector = document.getElementById('selector-idioma');
+  if (selector && selector.form) {
+    selector.addEventListener('change', () => selector.form.submit());
+  }
+})();
+
 (async function () {
   const setAuthState = (usuario) => {
     const autenticado = !!usuario;

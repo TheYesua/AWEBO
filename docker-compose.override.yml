@@ -34,6 +34,8 @@ services:
       - ./LICENSE-DOCS:/repo/LICENSE-DOCS:ro
       - ./.gitignore:/repo/.gitignore:ro
       - ./.env.example:/repo/.env.example:ro
+      - ./nginx/nginx.conf:/repo/nginx/nginx.conf:ro
+      - ./.github/workflows/verificar.yml:/repo/.github/workflows/verificar.yml:ro
     # Recarga en cada cambio de código durante desarrollo
     command: gunicorn --bind 0.0.0.0:8000 --workers 1 --reload --timeout 120 "app:create_app()"
     environment:
@@ -78,6 +80,8 @@ services:
       - ./LICENSE-DOCS:/repo/LICENSE-DOCS:ro
       - ./.gitignore:/repo/.gitignore:ro
       - ./.env.example:/repo/.env.example:ro
+      - ./nginx/nginx.conf:/repo/nginx/nginx.conf:ro
+      - ./.github/workflows/verificar.yml:/repo/.github/workflows/verificar.yml:ro
     # El envío ocurre AQUÍ, no en api: `enviar_correo` es una tarea de Celery.
     # Sin estas dos variables el worker seguiría intentando el SMTP de
     # producción y el buzón de pruebas no recibiría nada, con el agravante de
@@ -123,6 +127,8 @@ services:
       - ./LICENSE-DOCS:/repo/LICENSE-DOCS:ro
       - ./.gitignore:/repo/.gitignore:ro
       - ./.env.example:/repo/.env.example:ro
+      - ./nginx/nginx.conf:/repo/nginx/nginx.conf:ro
+      - ./.github/workflows/verificar.yml:/repo/.github/workflows/verificar.yml:ro
 
   # ---------------------------------------------------------------------------
   # Buzón de pruebas: un servidor SMTP falso con bandeja de entrada web.

@@ -288,7 +288,7 @@
 {% block scripts %}
 <script src="{{ url_for('static', filename='js/render-secciones.js') }}"></script>
 <script src="{{ url_for('static', filename='js/lectura.js') }}"></script>
-<script>
+<script nonce="{{ csp_nonce() }}">
 /* Cadenas que escribe el JavaScript. No pasan por _() del servidor, así que
    sin esto la página salía a medias: cabecera y formularios traducidos,
    avisos y rótulos generados al vuelo en castellano.

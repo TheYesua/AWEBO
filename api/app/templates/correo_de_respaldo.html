@@ -47,7 +47,7 @@
 {% endblock %}
 
 {% block scripts %}
-<script>
+<script nonce="{{ csp_nonce() }}">
 const T = {
   procesando: {{ _('Procesando…')|tojson }},
   errorDesconocido: {{ _('Error desconocido')|tojson }},

@@ -42,7 +42,7 @@
 {% endblock %}
 
 {% block scripts %}
-<script>
+<script nonce="{{ csp_nonce() }}">
 document.getElementById('login-form').addEventListener('submit', async (ev) => {
   ev.preventDefault();
   const msg = document.getElementById('login-msg');

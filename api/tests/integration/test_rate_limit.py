@@ -6,6 +6,8 @@ activo y usamos un namespace de Redis único para no contaminar otros tests.
 """
 from __future__ import annotations
 
+import re
+
 import pytest
 
 from app import create_app
@@ -15,7 +17,6 @@ from app.seeds import seed_ods, seed_roles
 
 
 def _redirigir_a_test_db(uri: str) -> str:
-    import re
     return re.sub(r"/[^/?]+(\?.*)?$", lambda m: "/awebo_test" + (m.group(1) or ""), uri, count=1)
 
 
@@ -26,7 +27,11 @@ class RateLimitConfig(Config):
     SESSION_COOKIE_SECURE = False  # `WTF_CSRF_ENABLED` vivía aquí y era inerte
     SQLALCHEMY_DATABASE_URI = _redirigir_a_test_db(Config.SQLALCHEMY_DATABASE_URI)
     RATELIMIT_ENABLED = True
-    RATELIMIT_STORAGE_URI = "redis://redis:6379/5"  # DB separado para tests
+    # DB 5, separado del resto, pero con el host y el puerto que diga el
+    # entorno. Estuvo escrito `redis://redis:6379/5` a pelo, y `redis` es el
+    # nombre del servicio de Compose: solo resuelve entre contenedores de esa
+    # red. En la CI, que corre con `--network host`, no existe.
+    RATELIMIT_STORAGE_URI = re.sub(r"/\d+$", "/5", Config.REDIS_URL)
     RATELIMIT_DEFAULT = "100 per minute"
     AI_PROVIDER = "fake"
     OPENAI_API_KEY = ""

@@ -182,7 +182,7 @@
 
    |tojson y no comillas a mano: una traducción con un apóstrofo —abundantes
    en catalán— rompería el script. #}
-<script>
+<script nonce="{{ csp_nonce() }}">
 const T = {
   confirmarBorradoSA: {{ _('¿Eliminar «{titulo}»? Esta acción no se puede deshacer.')|tojson }},
   confirmarBajaTotal: {{ _('Eliminar la cuenta {correo} Y todo su contenido ({n} situaciones). No se puede deshacer.')|tojson }},

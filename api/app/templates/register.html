@@ -115,7 +115,7 @@
 {% endblock %}
 
 {% block scripts %}
-<script>
+<script nonce="{{ csp_nonce() }}">
 /* El desplegable se rellena al cargar. Sin sesión no se puede consultar
    `/api/curriculo/provincias` —exige login—, así que el catálogo se sirve
    incrustado por Jinja: es una lista fija de 52 entradas y no cambia. */

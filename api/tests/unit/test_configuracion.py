@@ -60,6 +60,10 @@ FICHEROS_DEL_REPO = (
     "docker-compose.yml",
     "docker-compose.override.yml",
     ".env.example",
+    # Lo leen los tests de cabeceras: `server_tokens off` vive ahi.
+    "nginx/nginx.conf",
+    # Lo lee `test_la_ci_no_pasa_variables_que_nadie_lee`.
+    ".github/workflows/verificar.yml",
 )
 
 
@@ -171,6 +175,57 @@ def test_estan_los_ficheros_del_repositorio():
         f"no se encuentran {faltan} bajo {RAIZ}. Dentro de un contenedor se "
         f"montan en /repo: revisa los `volumes` de "
         f"docker-compose.override.yml y el paso `pytest` de la CI."
+    )
+
+
+#: Nombres que la CI pasa con `-e` y que `config.py` NO lee, pero que tienen
+#: efecto igualmente. Va vacio a proposito: cada excepcion hay que justificarla
+#: aqui, porque el fallo que este test persigue es exactamente "una variable
+#: que parece configurar algo y no configura nada".
+VARIABLES_DE_CI_QUE_NO_LEE_CONFIG: tuple[str, ...] = ()
+
+
+def test_la_ci_no_pasa_variables_que_nadie_lee():
+    """La CI configura los contenedores con los nombres que la aplicacion lee.
+
+    EL FALLO QUE PUSO ESTE TEST
+    ----------------------------
+    El workflow arrancaba los contenedores con
+    ``-e SQLALCHEMY_DATABASE_URI=postgresql+psycopg://awebo:awebo@localhost...``
+    y `config.py` lee **`DATABASE_URL`**. Esa variable no la leia nadie, asi
+    que la URI efectiva era la de por defecto —host `postgres`, que con
+    `--network host` no resuelve—: ni los tests conectaban ni la aplicacion
+    arrancaba para el audit de accesibilidad.
+
+    **La CI llevaba 32 ejecuciones seguidas en rojo, desde la primera.** Y como
+    siempre estaba roja, dejo de mirarse: un semaforo que nunca se pone verde
+    no informa de nada.
+
+    Es el mismo fallo que hizo nacer este fichero el 09/08 —una variable que no
+    llegaba al contenedor— en el unico sitio donde el test no miraba: aquel
+    comprueba `docker-compose.yml`, no el workflow.
+
+    POR QUE ESTA COMPROBACION Y NO OTRA
+    -----------------------------------
+    Comprobar que la CI *funciona* no se puede hacer desde la CI. Lo que si se
+    puede es comprobar que los nombres que usa existen, que es donde estuvo el
+    fallo: un nombre equivocado no da error en ningun sitio, solo hace que el
+    valor por defecto se aplique en silencio.
+    """
+    workflow = (RAIZ / ".github" / "workflows" / "verificar.yml").read_text(
+        encoding="utf-8"
+    )
+
+    pasadas = set(re.findall(r"-e\s+([A-Z0-9_]+)=", workflow))
+    assert pasadas, "el detector no encontró ninguna variable: revísalo"
+
+    inertes = sorted(
+        pasadas - _variables_que_lee_config() - set(VARIABLES_DE_CI_QUE_NO_LEE_CONFIG)
+    )
+    assert not inertes, (
+        f"la CI pasa {inertes}, que `config.py` no lee. El valor por defecto se "
+        f"aplicará en silencio. Si alguna tiene efecto por otra via, añádela a "
+        f"VARIABLES_DE_CI_QUE_NO_LEE_CONFIG con su motivo."
     )
 
 

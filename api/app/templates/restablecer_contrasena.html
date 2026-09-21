@@ -89,7 +89,7 @@
 {% endblock %}
 
 {% block scripts %}
-<script>
+<script nonce="{{ csp_nonce() }}">
 const T = {
   noCoinciden: {{ _('Las contraseñas no coinciden.')|tojson }},
   restablecida: {{ _('Contraseña restablecida correctamente. Te llevamos al inicio de sesión…')|tojson }},
