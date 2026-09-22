@@ -85,6 +85,9 @@ jobs:
             -v "$PWD/.env.example:/repo/.env.example:ro" \
             -v "$PWD/nginx/nginx.conf:/repo/nginx/nginx.conf:ro" \
             -v "$PWD/.github/workflows/verificar.yml:/repo/.github/workflows/verificar.yml:ro" \
+            -v "$PWD/docker-compose.prod.yml:/repo/docker-compose.prod.yml:ro" \
+            -v "$PWD/nginx/prod.conf.template:/repo/nginx/prod.conf.template:ro" \
+            -v "$PWD/DESPLIEGUE.md:/repo/DESPLIEGUE.md:ro" \
             -v "$PWD/README.md:/repo/README.md:ro" \
             -v "$PWD/LICENSE:/repo/LICENSE:ro" \
             -v "$PWD/LICENSE-DOCS:/repo/LICENSE-DOCS:ro" \
