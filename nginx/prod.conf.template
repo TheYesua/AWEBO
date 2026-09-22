@@ -1,0 +1,122 @@
+# =============================================================================
+# nginx en produccion: TLS, redireccion y HSTS
+# =============================================================================
+# Se usa con `docker-compose.prod.yml`, que lo monta en
+# `/etc/nginx/templates/default.conf.template`. Ver docs/DESPLIEGUE.md.
+#
+# ES UNA PLANTILLA, Y POR ESO ACABA EN .template
+# -----------------------------------------------
+# nginx NO sustituye variables de entorno en su configuracion. La imagen
+# oficial si, pero solo en los ficheros de `/etc/nginx/templates/`: al arrancar
+# les pasa `envsubst` y deja el resultado en `/etc/nginx/conf.d/`.
+#
+# Solo sustituye las variables que EXISTEN en el entorno, asi que `${DOMINIO}`
+# se reemplaza y `$host`, `$scheme` o `$remote_addr` —que son de nginx— se
+# quedan como estan. Es lo que hace que esto funcione; si algun dia se define
+# una variable de entorno llamada `host`, dejaria de hacerlo.
+#
+# POR QUE HAY DOS FICHEROS Y NO UNO PARAMETRIZADO
+# ------------------------------------------------
+# Porque nginx NO ARRANCA si un `ssl_certificate` apunta a un fichero que no
+# existe, y en local no hay certificado. Un solo fichero obligaria a generar
+# uno falso para desarrollar, o a plantillas con envsubst — dos maneras de
+# hacer fragil lo que ahora se lee de un vistazo.
+#
+# El precio es que los dos ficheros pueden separarse. Lo vigila
+# `test_cabeceras_de_seguridad.py`: las cabeceras y las reglas que comparten
+# tienen que estar en los dos.
+# =============================================================================
+
+# Ver el mismo comentario en nginx.conf: no anunciar la version.
+server_tokens off;
+
+# -----------------------------------------------------------------------------
+# Puerto 80: solo para redirigir y para renovar el certificado
+# -----------------------------------------------------------------------------
+server {
+    listen 80;
+    server_name ${DOMINIO};
+
+    # El desafio de Let's Encrypt viaja por HTTP y tiene que seguir llegando
+    # aunque todo lo demas redirija: si esto se redirige a HTTPS, la RENOVACION
+    # falla. Y no falla el dia que se configura, falla a los 60 dias, que es
+    # cuando ya nadie lo relaciona con esto.
+    location /.well-known/acme-challenge/ {
+        root /var/www/certbot;
+    }
+
+    location / {
+        return 301 https://$host$request_uri;
+    }
+}
+
+# -----------------------------------------------------------------------------
+# Puerto 443: la aplicacion
+# -----------------------------------------------------------------------------
+server {
+    listen 443 ssl;
+    http2 on;
+    server_name ${DOMINIO};
+
+    ssl_certificate     /etc/letsencrypt/live/${DOMINIO}/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/${DOMINIO}/privkey.pem;
+
+    # Solo TLS 1.2 y 1.3. Las versiones anteriores tienen ataques practicos y
+    # ningun navegador en uso las necesita.
+    ssl_protocols       TLSv1.2 TLSv1.3;
+    ssl_prefer_server_ciphers off;
+    ssl_session_cache   shared:SSL:10m;
+    ssl_session_timeout 1d;
+    ssl_session_tickets off;
+
+    client_max_body_size 10M;
+
+    access_log /var/log/nginx/access.log;
+    error_log  /var/log/nginx/error.log;
+
+    # -------------------------------------------------------------------------
+    # HSTS: la unica cabecera de seguridad que vive aqui y no en la aplicacion
+    # -------------------------------------------------------------------------
+    # Las demas —CSP, X-Frame-Options, nosniff, Referrer-Policy— las pone
+    # `app/middleware.py`, porque la CSP lleva un `nonce` que tiene que casar
+    # con el HTML y nginx no puede inyectar nada en el cuerpo del backend.
+    #
+    # HSTS es al reves: es fija, y solo tiene sentido sobre HTTPS, asi que
+    # pertenece al unico sitio que sabe que la conexion es cifrada.
+    #
+    # `always` importa: sin el, nginx no la pone en las respuestas de error, que
+    # son justo las que un atacante puede provocar.
+    #
+    # OJO CON LOS PLAZOS. HSTS le dice al navegador «no vuelvas a hablar con
+    # este dominio por HTTP durante N segundos», y eso NO SE PUEDE DESHACER
+    # desde el servidor: quien ya la recibio la respeta hasta que caduque. Si el
+    # certificado expira o se rompe, el sitio queda inaccesible para ellos.
+    #
+    # Por eso se empieza en 300 segundos —cinco minutos, suficiente para
+    # comprobar que todo va— y se sube a 31536000 (un ano) cuando lleve unos
+    # dias funcionando. Ver docs/DESPLIEGUE.md, que lo lleva como paso aparte.
+    add_header Strict-Transport-Security "max-age=300" always;
+
+    location / {
+        proxy_pass         http://api_backend;
+        proxy_http_version 1.1;
+        proxy_set_header   Host              $host;
+        proxy_set_header   X-Real-IP         $remote_addr;
+        proxy_set_header   X-Forwarded-For   $proxy_add_x_forwarded_for;
+        # Lo lee ProxyFix en la aplicacion, con PROXIES_DELANTE=1. Sin esto la
+        # aplicacion creeria que la conexion es HTTP.
+        proxy_set_header   X-Forwarded-Proto $scheme;
+        proxy_read_timeout 120s;
+        proxy_send_timeout 120s;
+    }
+
+    location = /nginx-health {
+        access_log off;
+        return 200 "ok\n";
+        add_header Content-Type text/plain;
+    }
+}
+
+upstream api_backend {
+    server api:8000;
+}

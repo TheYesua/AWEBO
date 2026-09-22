@@ -1,0 +1,94 @@
+# =============================================================================
+# Produccion. NO se aplica solo.
+# =============================================================================
+# Compose carga `docker-compose.override.yml` automaticamente si existe, y ese
+# es el de DESARROLLO: monta el codigo en caliente, publica Adminer y Mailpit y
+# sirve por HTTP. Nombrar ficheros con `-f` desactiva esa carga automatica, asi
+# que en el servidor SIEMPRE:
+#
+#     docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d
+#
+# Si se olvida, lo que se levanta es el stack de desarrollo contra la base de
+# datos de produccion. Por eso docs/DESPLIEGUE.md manda crear un alias en el
+# servidor y no teclearlo a mano cada vez.
+#
+# Lo que NO hace falta repetir aqui: `restart: unless-stopped` ya esta en el
+# fichero base para todos los servicios.
+# =============================================================================
+
+services:
+  nginx:
+    # Los dos puertos estandar, y estos SI van a todas las interfaces: son los
+    # unicos que el servidor debe exponer. Postgres sigue atado a 127.0.0.1 en
+    # el fichero base, y Adminer no se levanta (ver mas abajo).
+    ports:
+      - "80:80"
+      - "443:443"
+    environment:
+      # La sustituye `envsubst` al arrancar la imagen. Sin dominio no hay
+      # certificado: Let's Encrypt valida contra un nombre, no contra una IP.
+      # El `:?` corta el arranque con un mensaje claro si falta.
+      DOMINIO: ${DOMINIO:?falta DOMINIO en el .env del servidor}
+    volumes:
+      # En `templates/` para que la imagen oficial le pase envsubst al
+      # arrancar y deje el resultado en `conf.d/default.conf`. El fichero base
+      # no monta ninguna configuracion, justamente para que este destino este
+      # libre.
+      - ./nginx/prod.conf.template:/etc/nginx/templates/default.conf.template:ro
+      # Certificados y directorio del desafio ACME, compartidos con certbot.
+      # De solo lectura aqui: nginx los lee y certbot los escribe.
+      - ./certbot/conf:/etc/letsencrypt:ro
+      - ./certbot/www:/var/www/certbot:ro
+
+  certbot:
+    image: certbot/certbot:latest
+    volumes:
+      - ./certbot/conf:/etc/letsencrypt
+      - ./certbot/www:/var/www/certbot
+    # Intenta renovar cada 12 horas. Let's Encrypt emite por 90 dias y renueva
+    # a partir del 60, asi que con este ritmo caben unos sesenta intentos
+    # fallidos seguidos antes de que el certificado expire de verdad.
+    #
+    # `--webroot` y no `--standalone`: standalone levanta su propio servidor en
+    # el puerto 80, que aqui lo tiene nginx. Con webroot deja el fichero del
+    # desafio donde nginx ya lo sirve.
+    entrypoint: >-
+      sh -c 'trap exit TERM;
+      while :; do certbot renew --webroot -w /var/www/certbot --quiet;
+      sleep 12h & wait $${!}; done'
+    restart: unless-stopped
+
+  # Adminer es un panel de administracion de la base de datos SIN
+  # autenticacion propia: quien llega a el, llega a la base de datos. En
+  # produccion no se levanta.
+  #
+  # Se hace con un perfil y no borrando el servicio porque Compose fusiona, no
+  # sustituye: un servicio declarado en el fichero base no se puede quitar
+  # desde otro. Con un perfil que nadie activa, el servicio existe y no
+  # arranca.
+  adminer:
+    profiles: ["no-en-produccion"]
+
+  api:
+    # Sin `./api:/app`. El override de desarrollo lo monta para recargar en
+    # caliente, y aqui eso significaria servir lo que haya en el disco del
+    # servidor en vez de lo que se construyo y se probo.
+    volumes:
+      - ./curriculo:/curriculo:ro
+      - audio_generado:/audio
+    environment:
+      FLASK_ENV: production
+      PROXIES_DELANTE: 1
+
+  worker:
+    volumes:
+      - ./curriculo:/curriculo:ro
+      - audio_generado:/audio
+    environment:
+      FLASK_ENV: production
+
+  beat:
+    volumes:
+      - audio_generado:/audio
+    environment:
+      FLASK_ENV: production
