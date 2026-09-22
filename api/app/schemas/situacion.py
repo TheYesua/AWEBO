@@ -23,7 +23,7 @@ TipoAdaptacionLiteral = Literal["no_significativa", "significativa"]
 #
 # El riesgo de tenerlo por duplicado —que alguien añada un idioma al modelo y
 # el validador lo rechace— lo cubre un test que compara las dos listas.
-IdiomaLiteral = Literal["es", "ca", "gl", "eu", "en", "fr", "ar"]
+IdiomaLiteral = Literal["es", "ca", "gl", "eu"]
 
 
 # ---------------------------------------------------------------------------

@@ -158,19 +158,30 @@ class SituacionAprendizaje(db.Model):
     #: un idioma que el validador rechaza.
     #:
     #: No confundir con ``app.i18n.IDIOMAS``, que son los de la **interfaz**.
-    #: Son dos cosas distintas: la interfaz puede estar en catalán mientras el
-    #: documento se redacta en inglés, y al revés.
+    #: Son dos cosas distintas: la interfaz puede estar en castellano mientras
+    #: el documento se redacta en catalán, y al revés.
     #:
-    #: Primero las lenguas cooficiales del Estado, que son el caso de uso
-    #: principal, y después las extranjeras.
+    #: Las lenguas cooficiales del Estado, que son el caso de uso real.
+    #:
+    #: HASTA EL 22/09/2026 HABÍA TRES MÁS: inglés, francés y árabe. Se quitaron
+    #: porque la aplicación no las sostiene:
+    #:
+    #: * **Ninguna tiene voz.** La síntesis local (aHoTTS) cubre castellano,
+    #:   catalán, gallego y euskera, y nada más.
+    #: * **El árabe se escribe de derecha a izquierda** y ni el PDF ni el DOCX
+    #:   lo contemplan: el documento salía mal maquetado.
+    #:
+    #: Ofrecer un idioma cuyo documento sale peor que el original no es una
+    #: funcionalidad de más, es una promesa incumplida en el sitio donde el
+    #: docente menos puede comprobarla.
+    #:
+    #: Volver a añadir uno es barato —esta lista y `IdiomaLiteral`—, pero
+    #: hacerlo exige comprobar antes esas dos cosas.
     IDIOMAS: dict[str, str] = {
         "es": "español",
         "ca": "catalán",
         "gl": "gallego",
         "eu": "euskera",
-        "en": "inglés",
-        "fr": "francés",
-        "ar": "árabe",
     }
 
     # Tipos de adaptación curricular

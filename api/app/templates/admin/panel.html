@@ -250,7 +250,9 @@ const aviso = (texto, esError = true) => {
 const fecha = (iso) => {
   if (!iso) return T.nunca;
   const d = new Date(iso);
-  return isNaN(d.getTime()) ? iso : d.toLocaleDateString();
+  // Aquí estaba el fallo: `toLocaleDateString()` sin argumento usa el
+  // idioma del navegador, y en un Chrome en inglés eso es MES/DÍA/AÑO.
+  return isNaN(d.getTime()) ? iso : AWEBO.fecha(iso);
 };
 
 async function pedir(url, opciones = {}) {
