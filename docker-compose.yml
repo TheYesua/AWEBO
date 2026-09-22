@@ -51,6 +51,9 @@ services:
     environment:
       FLASK_ENV: ${FLASK_ENV}
       SECRET_KEY: ${SECRET_KEY}
+      # Hay un nginx delante en este stack. Ver config.py: sin esto los
+      # limites por IP de los endpoints anonimos se comparten entre todos.
+      PROXIES_DELANTE: ${PROXIES_DELANTE:-1}
       DATABASE_URL: postgresql+psycopg://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB}
       REDIS_URL: redis://redis:6379/0
       CELERY_BROKER_URL: redis://redis:6379/1
@@ -111,6 +114,9 @@ services:
     environment:
       FLASK_ENV: ${FLASK_ENV}
       SECRET_KEY: ${SECRET_KEY}
+      # Hay un nginx delante en este stack. Ver config.py: sin esto los
+      # limites por IP de los endpoints anonimos se comparten entre todos.
+      PROXIES_DELANTE: ${PROXIES_DELANTE:-1}
       DATABASE_URL: postgresql+psycopg://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB}
       REDIS_URL: redis://redis:6379/0
       CELERY_BROKER_URL: redis://redis:6379/1
@@ -175,6 +181,9 @@ services:
     environment:
       FLASK_ENV: ${FLASK_ENV}
       SECRET_KEY: ${SECRET_KEY}
+      # Hay un nginx delante en este stack. Ver config.py: sin esto los
+      # limites por IP de los endpoints anonimos se comparten entre todos.
+      PROXIES_DELANTE: ${PROXIES_DELANTE:-1}
       DATABASE_URL: postgresql+psycopg://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB}
       REDIS_URL: redis://redis:6379/0
       CELERY_BROKER_URL: redis://redis:6379/1
@@ -193,8 +202,12 @@ services:
     restart: unless-stopped
     ports:
       - "${NGINX_PORT:-8090}:80"
-    volumes:
-      - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+    # La configuracion NO se monta aqui, y es a proposito: desarrollo y
+    # produccion necesitan ficheros distintos —uno sirve HTTP y el otro
+    # termina TLS—, y Compose fusiona los `volumes` en vez de sustituirlos, asi
+    # que un montaje puesto aqui no se puede quitar desde el otro fichero. Cada
+    # entorno declara el suyo: `docker-compose.override.yml` monta nginx.conf,
+    # `docker-compose.prod.yml` monta la plantilla con TLS.
     depends_on:
       api:
         condition: service_healthy

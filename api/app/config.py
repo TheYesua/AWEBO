@@ -21,6 +21,27 @@ class Config:
     # `comprobar_configuracion`, que `create_app` llama al arrancar.
     SECRET_KEY: str = os.environ.get("SECRET_KEY", "")
 
+    #: Cuántos proxies de confianza hay DELANTE de la aplicación.
+    #:
+    #: Con 0 no se toca nada. Con 1 o más, `create_app` envuelve la aplicación
+    #: en `ProxyFix` para que `request.remote_addr` sea la IP del cliente y no
+    #: la del proxy.
+    #:
+    #: NO ES COSMÉTICO. Los límites de peticiones de los endpoints anónimos
+    #: —`5 per hour` en el acceso, en el registro y en el restablecimiento— van
+    #: por IP (`extensions._rate_key`). Detrás de nginx, sin esto, **todos los
+    #: visitantes comparten la IP del proxy**: cinco intentos fallidos de
+    #: cualquiera dejan sin poder entrar a todo el mundo durante una hora.
+    #:
+    #: Y por defecto es 0, no 1, aunque en este `docker-compose` siempre haya
+    #: un nginx delante. El riesgo no es simétrico: olvidarlo detrás de un
+    #: proxy degrada el límite a un cubo compartido, molesto pero acotado;
+    #: ponerlo cuando NO hay proxy deja que cualquiera mande su propia
+    #: `X-Forwarded-For` y se salte los límites por completo, inventándose una
+    #: IP distinta en cada petición. El valor se declara donde se sabe que hay
+    #: proxy, que es el `docker-compose`.
+    PROXIES_DELANTE: int = int(os.environ.get("PROXIES_DELANTE") or 0)
+
     #: Protección CSRF. Sin variable de entorno que la apague: lo que se puede
     #: desactivar por descuido acaba desactivado, y esto no es un ajuste de
     #: rendimiento. Los tests la dejan puesta y su cliente manda el token.

@@ -64,6 +64,10 @@ FICHEROS_DEL_REPO = (
     "nginx/nginx.conf",
     # Lo lee `test_la_ci_no_pasa_variables_que_nadie_lee`.
     ".github/workflows/verificar.yml",
+    # Los leen los tests de TLS y despliegue.
+    "docker-compose.prod.yml",
+    "nginx/prod.conf.template",
+    "DESPLIEGUE.md",
 )
 
 

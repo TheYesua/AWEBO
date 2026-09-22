@@ -154,9 +154,13 @@ class TestPrompt:
             operacion=ops.TRADUCIR,
             seccion="descripcion",
             contenido=DESCRIPCION,
-            idioma="fr",
+            # `gl` y no `fr`: el 22/09 se quitaron inglés, francés y árabe de
+            # IDIOMAS, y el prompt nombra el idioma con `IDIOMAS.get(codigo,
+            # codigo)`. Con uno que ya no está, esto comprobaría que el prompt
+            # dice «fr», que es justo lo que el test quiere descartar.
+            idioma="gl",
         )
-        assert "francés" in peticion.user
+        assert "gallego" in peticion.user
 
     def test_pide_json(self):
         peticion = ops.build(

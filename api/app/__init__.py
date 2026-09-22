@@ -21,6 +21,23 @@ def create_app(config_object: type[Config] | None = None) -> Flask:
     # antes de empezar. Ver el docstring de `comprobar_configuracion`.
     comprobar_configuracion(app.config)
 
+    # Antes de las extensiones: el limitador de peticiones se registra ahí y
+    # lee la IP del cliente, que sin esto sería la del proxy. Ver el comentario
+    # de `PROXIES_DELANTE` en config.py — es la diferencia entre un límite por
+    # visitante y un límite compartido por todos.
+    proxies = app.config.get("PROXIES_DELANTE", 0)
+    if proxies:
+        from werkzeug.middleware.proxy_fix import ProxyFix
+
+        # `x_host` y `x_prefix` a 0 a propósito: solo se confía en lo que hace
+        # falta. `X-Forwarded-Host` lo usa Flask para construir URL absolutas, y
+        # aceptarlo de fuera abre envenenamiento de enlaces —un atacante manda
+        # la cabecera y el enlace de restablecer contraseña sale apuntando a su
+        # servidor—. La URL base de los correos se configura aparte, en
+        # `URL_BASE`, justo para no depender de esto.
+        app.wsgi_app = ProxyFix(app.wsgi_app, x_for=proxies, x_proto=proxies,
+                                x_host=0, x_prefix=0)
+
     # Logging estructurado: configurado lo antes posible para que TODO
     # mensaje (incluidos los de extensiones) salga ya con formato JSON.
     from .logging_config import configure_logging
