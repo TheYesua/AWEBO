@@ -32,7 +32,11 @@ Ver [`curriculo/README.md`](curriculo/README.md).
 
 ## Arquitectura
 
-Despliegue mediante Docker Compose. Seis servicios más dos de desarrollo:
+Despliegue mediante Docker Compose. Seis servicios más dos de desarrollo.
+
+Los puertos de abajo son los de **desarrollo**. Para un servidor público —TLS,
+certificados, qué se expone y qué no— está **[DESPLIEGUE.md](DESPLIEGUE.md)**,
+con su lista de comprobación.
 
 | Servicio   | Puerto host           | Rol                                                       |
 |------------|-----------------------|-----------------------------------------------------------|
@@ -40,9 +44,9 @@ Despliegue mediante Docker Compose. Seis servicios más dos de desarrollo:
 | `api`      | (interno)             | Flask + Gunicorn. Auth, CRUD, render Jinja                |
 | `worker`   | (interno)             | Celery. Llamadas largas al LLM y exportaciones pesadas    |
 | `beat`     | (interno)             | Celery beat. Purga a las 4:00 las cuentas cuyo plazo de 90 días venció |
-| `postgres` | `5433`                | Persistencia                                              |
+| `postgres` | `127.0.0.1:5433`      | Persistencia. Atado a loopback: publicar un puerto sin interfaz lo abre en **todas** |
 | `redis`    | (interno)             | Broker Celery + caché + sesiones server-side              |
-| `adminer`  | `8091` (perfil `dev`) | Cliente web para inspeccionar PostgreSQL                  |
+| `adminer`  | `127.0.0.1:8091`      | Cliente web para PostgreSQL. **Sin autenticación propia**, así que en producción no se levanta |
 | `mailpit`  | `8025` (desarrollo)   | Buzón de pruebas. Retiene el correo para que **nada salga a internet** |
 
 > Los puertos están desplazados respecto al TFG original (8080/8081/5432) para
@@ -205,15 +209,21 @@ docker compose exec -it api flask usuarios crear-admin
 # Dar el rol a una cuenta que ya existe
 docker compose exec api flask usuarios promover docente@ejemplo.com
 
-# Tests de JavaScript (lógica de cobertura curricular). El contenedor api es
-# python:3.12-slim y no lleva Node, así que se usa uno efímero.
-docker run --rm -v "${PWD}/api:/app" -w /app node:22-alpine node tests/js/cobertura.test.js
-docker run --rm -v "${PWD}/api:/app" -w /app node:22-alpine node tests/js/lectura.test.js
-docker run --rm -v "${PWD}/api:/app" -w /app node:22-alpine node tests/js/llamadas.test.js
-docker run --rm -v "${PWD}/api:/app" -w /app node:22-alpine node tests/js/traducibles.test.js
+# Tests de JavaScript. El contenedor api es python:3.12-slim y no lleva Node,
+# así que se usa uno efímero. Se recorre el directorio en vez de enumerarlos:
+# esta lista tenía cuatro de los seis que hay, y ese es el destino de toda
+# lista escrita a mano.
+docker run --rm -v "${PWD}/api:/app" -w /app node:22-alpine sh -c 'for t in tests/js/*.test.js; do node "$t" || exit 1; done'
 
-# O todo de una vez, que es lo que conviene antes de commitear:
-.\verificar.cmd
+# Lo de arriba es todo lo que hace falta. Hay además un guion que lo encadena
+# —y que recorre `tests/js/` en vez de enumerarlo—, pero **no se distribuye**:
+# vive en el repositorio privado junto al resto de utilidades de operación.
+# Ver «Copias de seguridad» más abajo.
+#
+# Aquí ponía `.\verificar.cmd`, a secas y desde la raíz. El fichero se movió
+# hace tiempo y esta línea se quedó: mandaba ejecutar algo que en este
+# repositorio no existe, contradiciendo a la nota de más abajo que ya avisaba
+# de que los guiones no están.
 
 # Recompilar los catálogos de traducción tras cambiar un .po
 docker compose exec api pybabel compile -d app/translations
@@ -375,7 +385,7 @@ estructurado que nunca llegó a funcionar, `/health` informando del proveedor
 equivocado, dos incumplimientos WCAG 2.1 en el tema claro y los reintentos
 sobre errores `4xx` de la API de OpenAI.
 
-**1427 tests** cubren todo lo anterior, en la batería que corre en cada push.
+**1461 tests** cubren todo lo anterior, en la batería que corre en cada push.
 La cifra la comprueba un test: si alguien añade una tanda y no la actualiza
 aquí, falla.
 
@@ -417,8 +427,11 @@ contrato que nadie firma.
   específicas— y sería otro modelo de datos.
 - Las traducciones a catalán, gallego y euskera no las ha revisado nadie
   nativo.
-- Inglés, francés y árabe no tienen voz, y en francés no se cargan los
-  objetivos. Sin diagnosticar.
+- ~~Inglés, francés y árabe no tienen voz~~. **Resuelto el 22/09 quitándolos**:
+  ninguno tenía voz y el árabe, que se escribe de derecha a izquierda, salía mal
+  maquetado en el PDF y en el DOCX. Ofrecer un idioma cuyo documento sale peor
+  que el original es una promesa incumplida donde el docente menos puede
+  comprobarla. Se redacta en castellano, catalán, gallego o euskera.
 
 ---
 
@@ -549,7 +562,9 @@ Entregado: tema oscuro con selector en la cabecera, lectura por voz sección a
 sección, y síntesis con modelos locales para las lenguas cooficiales, que es
 donde la voz del sistema no llega.
 
-Limitación conocida: inglés, francés y árabe no tienen voz.
+Los cuatro idiomas de redacción son exactamente los que tienen voz, y hay un
+test que lo exige: si algún día aHoTTS cubre una lengua más, señala dónde
+ampliar la oferta.
 
 ---
 
