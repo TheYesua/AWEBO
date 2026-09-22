@@ -324,11 +324,9 @@ function formatearFecha(iso) {
   if (!iso) return '—';
   const d = new Date(iso);
   if (isNaN(d.getTime())) return iso;
-  // Formato dd/mm/aaaa HH:MM:SS en la zona horaria local del navegador
-  return d.toLocaleString('es-ES', {
-    day: '2-digit', month: '2-digit', year: 'numeric',
-    hour: '2-digit', minute: '2-digit', second: '2-digit',
-  });
+  // dd/mm/aaaa HH:MM:SS en la zona horaria local. El formateador es el de
+  // `app.js`, compartido con las otras cuatro pantallas.
+  return AWEBO.fecha(iso, 'segundos');
 }
 
 /* El desplegable se rellena ANTES de volcar el perfil. Al revés, el `value`

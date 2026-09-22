@@ -3,6 +3,57 @@
    conecta el botón de logout. */
 
 /* -------------------------------------------------------------------------
+   FECHAS
+   -------------------------------------------------------------------------
+   Un único formateador para toda la aplicación. Antes había cinco, uno por
+   plantilla, y **el de `/admin` estaba roto**: llamaba a
+   `toLocaleDateString()` sin argumento de idioma, así que usaba el del
+   NAVEGADOR. En un Chrome en inglés eso da 09/22/2026 — mes, día, año — en una
+   aplicación para docentes españoles.
+
+   POR QUÉ EL IDIOMA ESTÁ FIJADO Y NO SIGUE A LA INTERFAZ
+   -------------------------------------------------------
+   Parecería más fino usar el idioma elegido, pero no lo es. Catalán y gallego
+   escriben la fecha igual que el castellano, y **el euskera no**: `eu` da
+   2026/09/22. Cambiar el orden de la fecha según el idioma de la interfaz
+   sorprendería a quien lee «22 de septiembre» en el documento y «2026/09/22»
+   en el listado de al lado.
+
+   La aplicación es para centros españoles y la fecha va en formato español,
+   punto. Si algún día se ofrece fuera, esto es lo que hay que revisar, y está
+   en un solo sitio.
+   ------------------------------------------------------------------------- */
+window.AWEBO = window.AWEBO || {};
+
+/* Fijado, no `document.documentElement.lang` ni `undefined`. Ver arriba. */
+window.AWEBO.LOCALE_FECHAS = 'es-ES';
+
+/**
+ * Una fecha ISO en formato español.
+ *
+ * @param {string} iso        Lo que devuelve el API.
+ * @param {string} [precision]  `'minutos'` añade HH:MM; `'segundos'`, HH:MM:SS.
+ *                              Sin ella, solo la fecha.
+ * @returns {string} Cadena vacía si no hay valor, y el original tal cual si no
+ *                   se puede interpretar — nunca «Invalid Date», que es lo que
+ *                   sale por defecto y no dice nada a quien lo lee.
+ */
+window.AWEBO.fecha = function (iso, precision) {
+  if (!iso) return '';
+  const d = new Date(iso);
+  if (isNaN(d.getTime())) return iso;
+
+  const opciones = { day: '2-digit', month: '2-digit', year: 'numeric' };
+  if (precision === 'minutos' || precision === 'segundos') {
+    opciones.hour = '2-digit';
+    opciones.minute = '2-digit';
+  }
+  if (precision === 'segundos') opciones.second = '2-digit';
+
+  return d.toLocaleString(window.AWEBO.LOCALE_FECHAS, opciones);
+};
+
+/* -------------------------------------------------------------------------
    EL TOKEN CSRF VIAJA SOLO
    -------------------------------------------------------------------------
    Esto envuelve `window.fetch` para que añada la cabecera `X-CSRF-Token` a

@@ -185,9 +185,7 @@ function escapeHtml(s) {
 function fmtFechaCorta(iso) {
   if (!iso) return '—';
   const d = new Date(iso);
-  return isNaN(d) ? iso : d.toLocaleDateString('es-ES', {
-    day: '2-digit', month: '2-digit', year: 'numeric'
-  });
+  return isNaN(d) ? iso : AWEBO.fecha(iso);
 }
 
 async function cargarDashboard() {

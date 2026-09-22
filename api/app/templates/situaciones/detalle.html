@@ -125,9 +125,6 @@
             <option value="ca">{{ _('Catalán') }}</option>
             <option value="gl">{{ _('Gallego') }}</option>
             <option value="eu">{{ _('Euskera') }}</option>
-            <option value="en">{{ _('Inglés') }}</option>
-            <option value="fr">{{ _('Francés') }}</option>
-            <option value="ar">{{ _('Árabe') }}</option>
           </select>
         </div>
       </div>
@@ -367,9 +364,6 @@ const T = {
     ca: {{ _('catalán')|tojson }},
     gl: {{ _('gallego')|tojson }},
     eu: {{ _('euskera')|tojson }},
-    en: {{ _('inglés')|tojson }},
-    fr: {{ _('francés')|tojson }},
-    ar: {{ _('árabe')|tojson }},
   },
   /* Los mismos rótulos que usan las exportaciones. Comparten msgid, así que
      comparten traducción: cambiar uno cambia el otro, que es lo correcto. */
@@ -393,10 +387,7 @@ const ID = {{ id_situacion | tojson }};
 function fmt(iso) {
   if (!iso) return '—';
   const d = new Date(iso);
-  return isNaN(d) ? iso : d.toLocaleString('es-ES', {
-    day:'2-digit', month:'2-digit', year:'numeric',
-    hour:'2-digit', minute:'2-digit', second:'2-digit'
-  });
+  return isNaN(d) ? iso : AWEBO.fecha(iso, 'segundos');
 }
 
 async function cargar() {
