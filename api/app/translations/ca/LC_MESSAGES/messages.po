@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: AWEBO VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-08-28 11:45+0200\n"
+"POT-Creation-Date: 2026-09-23 18:26+0200\n"
 "PO-Revision-Date: 2026-08-04 15:31+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ca\n"
@@ -49,12 +49,12 @@ msgid "Confirma la baja de tu cuenta de AWEBO"
 msgstr "Confirma la baixa del teu compte d'AWEBO"
 
 #: app/services/exportacion_service.py:50
-#: app/templates/situaciones/detalle.html:358
+#: app/templates/situaciones/detalle.html:371
 msgid "Descripción de la situación"
 msgstr "Descripció de la situació"
 
 #: app/services/exportacion_service.py:51
-#: app/templates/situaciones/detalle.html:359
+#: app/templates/situaciones/detalle.html:372
 msgid "Objetivos didácticos"
 msgstr "Objectius didàctics"
 
@@ -63,7 +63,7 @@ msgid "Conexión curricular"
 msgstr "Connexió curricular"
 
 #: app/services/exportacion_service.py:53
-#: app/templates/situaciones/detalle.html:361
+#: app/templates/situaciones/detalle.html:374
 msgid "Secuencia de sesiones"
 msgstr "Seqüència de sessions"
 
@@ -79,98 +79,98 @@ msgstr "Atenció a la diversitat"
 msgid "(no encontrado en el currículo)"
 msgstr "(no s'ha trobat al currículum)"
 
-#: app/services/exportacion_service.py:416
+#: app/services/exportacion_service.py:495
 #: app/templates/exportacion/pdf.html:341
 msgid "competencias específicas"
 msgstr "competències específiques"
 
-#: app/services/exportacion_service.py:417
+#: app/services/exportacion_service.py:496
 #: app/templates/exportacion/pdf.html:342
 msgid "criterios de evaluación"
 msgstr "criteris d'avaluació"
 
-#: app/services/exportacion_service.py:418
+#: app/services/exportacion_service.py:497
 #: app/templates/exportacion/pdf.html:343
 msgid "saberes básicos"
 msgstr "sabers bàsics"
 
-#: app/services/exportacion_service.py:441
+#: app/services/exportacion_service.py:520
 #, python-brace-format
 msgid "Currículo aplicado: {comunidad} ({norma})."
 msgstr "Currículum aplicat: {comunidad} ({norma})."
 
-#: app/services/exportacion_service.py:444
+#: app/services/exportacion_service.py:523
 #, python-brace-format
 msgid "Currículo aplicado: {comunidad}."
 msgstr "Currículum aplicat: {comunidad}."
 
-#: app/services/exportacion_service.py:448
+#: app/services/exportacion_service.py:527
 #, python-brace-format
 msgid "El texto curricular se reproduce en {idioma}, que es la lengua en que lo publica el boletín."
 msgstr "El text curricular es reprodueix en {idioma}, que és la llengua en què el publica el butlletí."
 
-#: app/services/exportacion_service.py:453
+#: app/services/exportacion_service.py:532
 msgid "Atención: esta situación cita currículo de más de una comunidad."
 msgstr "Atenció: aquesta situació cita currículum de més d'una comunitat."
 
-#: app/services/exportacion_service.py:485
+#: app/services/exportacion_service.py:564
 #: app/templates/exportacion/pdf.html:348
 #, python-brace-format
 msgid "Esta conexión curricular está incompleta: falta {partes}. Regenera la sección para completarla."
 msgstr "Aquesta connexió curricular és incompleta: hi falta {partes}. Torna a generar la secció per completar-la."
 
-#: app/services/exportacion_service.py:504
+#: app/services/exportacion_service.py:583
 #: app/templates/exportacion/pdf.html:361
 msgid "Competencias específicas"
 msgstr "Competències específiques"
 
-#: app/services/exportacion_service.py:509
-#: app/services/exportacion_service.py:517
+#: app/services/exportacion_service.py:588
+#: app/services/exportacion_service.py:596
 #: app/templates/exportacion/pdf.html:362
 #: app/templates/exportacion/pdf.html:366
 msgid "Código"
 msgstr "Codi"
 
-#: app/services/exportacion_service.py:509
+#: app/services/exportacion_service.py:588
 #: app/templates/exportacion/pdf.html:362
 msgid "Competencia"
 msgstr "Competència"
 
-#: app/services/exportacion_service.py:509
-#: app/services/exportacion_service.py:518
-#: app/services/exportacion_service.py:526
+#: app/services/exportacion_service.py:588
+#: app/services/exportacion_service.py:597
+#: app/services/exportacion_service.py:605
 #: app/templates/exportacion/pdf.html:362
 #: app/templates/exportacion/pdf.html:366
 #: app/templates/exportacion/pdf.html:371
 msgid "Justificación"
 msgstr "Justificació"
 
-#: app/services/exportacion_service.py:512
+#: app/services/exportacion_service.py:591
 #: app/templates/exportacion/pdf.html:365
 msgid "Criterios de evaluación"
 msgstr "Criteris d'avaluació"
 
-#: app/services/exportacion_service.py:517
+#: app/services/exportacion_service.py:596
 #: app/templates/exportacion/pdf.html:366
 msgid "Comp."
 msgstr "Comp."
 
-#: app/services/exportacion_service.py:517
+#: app/services/exportacion_service.py:596
 #: app/templates/exportacion/pdf.html:366
 msgid "Criterio"
 msgstr "Criteri"
 
-#: app/services/exportacion_service.py:521
+#: app/services/exportacion_service.py:600
 #: app/templates/exportacion/pdf.html:369
 msgid "Saberes básicos"
 msgstr "Sabers bàsics"
 
-#: app/services/exportacion_service.py:526
+#: app/services/exportacion_service.py:605
 #: app/templates/exportacion/pdf.html:371
 msgid "Bloque"
 msgstr "Bloc"
 
-#: app/services/exportacion_service.py:526
+#: app/services/exportacion_service.py:605
 #: app/templates/exportacion/pdf.html:371
 msgid "Saber básico"
 msgstr "Saber bàsic"
@@ -259,7 +259,7 @@ msgstr "Si no has estat tu, no cal que facis res: mentre no s'obri l'enllaç, la
 msgid "Restablecer tu contraseña de AWEBO"
 msgstr "Restablir la teva contrasenya d'AWEBO"
 
-#: app/templates/accesibilidad.html:7 app/templates/mapa_web.html:37
+#: app/templates/accesibilidad.html:7 app/templates/mapa_web.html:64
 msgid "Declaración de accesibilidad"
 msgstr "Declaració d'accessibilitat"
 
@@ -329,7 +329,7 @@ msgid "Esta aplicación es un Trabajo de Fin de Grado en evaluación continua. S
 msgstr "Aquesta aplicació és un Treball de Fi de Grau en avaluació contínua. Si detectes alguna barrera d'accessibilitat, pots comunicar-la a la secció d'<a href=\"/ayuda\">Ajuda</a>."
 
 #: app/templates/ayuda.html:7 app/templates/errores/404.html:15
-#: app/templates/errores/error.html:36 app/templates/mapa_web.html:36
+#: app/templates/errores/error.html:36 app/templates/mapa_web.html:63
 msgid "Centro de ayuda"
 msgstr "Centre d'ajuda"
 
@@ -357,39 +357,39 @@ msgstr "Crear una Situació d'Aprenentatge"
 msgid "Qué currículo usa AWEBO"
 msgstr "Quin currículum fa servir AWEBO"
 
-#: app/templates/ayuda.html:19 app/templates/ayuda.html:95
+#: app/templates/ayuda.html:19 app/templates/ayuda.html:98
 msgid "Generar contenido con IA"
 msgstr "Generar contingut amb IA"
 
-#: app/templates/ayuda.html:20 app/templates/ayuda.html:110
+#: app/templates/ayuda.html:20 app/templates/ayuda.html:113
 msgid "Retocar el texto generado"
 msgstr "Retocar el text generat"
 
-#: app/templates/ayuda.html:21 app/templates/ayuda.html:129
+#: app/templates/ayuda.html:21 app/templates/ayuda.html:132
 msgid "Editar y versionar"
 msgstr "Editar i versionar"
 
-#: app/templates/ayuda.html:22 app/templates/ayuda.html:136
+#: app/templates/ayuda.html:22 app/templates/ayuda.html:139
 msgid "Adaptaciones (ACNS / ACS)"
 msgstr "Adaptacions (ACNS / ACS)"
 
-#: app/templates/ayuda.html:23 app/templates/ayuda.html:150
+#: app/templates/ayuda.html:23 app/templates/ayuda.html:153
 msgid "Escuchar una situación"
 msgstr "Escoltar una situació"
 
-#: app/templates/ayuda.html:24 app/templates/ayuda.html:166
+#: app/templates/ayuda.html:24 app/templates/ayuda.html:169
 msgid "Exportar a PDF y DOCX"
 msgstr "Exportar a PDF i DOCX"
 
-#: app/templates/ayuda.html:25 app/templates/ayuda.html:176
+#: app/templates/ayuda.html:25 app/templates/ayuda.html:179
 msgid "Apariencia e idioma"
 msgstr "Aparença i idioma"
 
-#: app/templates/ayuda.html:26 app/templates/ayuda.html:191
+#: app/templates/ayuda.html:26 app/templates/ayuda.html:194
 msgid "Mi cuenta"
 msgstr "El meu compte"
 
-#: app/templates/ayuda.html:27 app/templates/ayuda.html:271
+#: app/templates/ayuda.html:27 app/templates/ayuda.html:274
 msgid "Problemas frecuentes"
 msgstr "Problemes freqüents"
 
@@ -430,16 +430,16 @@ msgid "Idioma de la situación"
 msgstr "Idioma de la situació"
 
 #: app/templates/ayuda.html:58
-msgid "El campo <strong>Idioma</strong> determina en qué lengua se redacta el documento, y es independiente del idioma en el que veas la aplicación. Puedes tener la interfaz en castellano y crear la situación directamente en catalán, gallego, euskera, inglés, francés o árabe."
-msgstr "El camp <strong>Idioma</strong> determina en quina llengua es redacta el document, i és independent de l'idioma en què vegis l'aplicació. Pots tenir la interfície en castellà i crear la situació directament en català, gallec, èuscar, anglès, francès o àrab."
+msgid "El campo <strong>Idioma</strong> determina en qué lengua se redacta el documento, y es independiente del idioma en el que veas la aplicación. Puedes tener la interfaz en castellano y crear la situación directamente en catalán, gallego o euskera."
+msgstr "El camp <strong>Idioma</strong> determina en quina llengua es redacta el document, i és independent de l'idioma en què vegis l'aplicació. Pots tenir la interfície en castellà i crear la situació directament en català, gallec o basc."
 
 #: app/templates/ayuda.html:65
-msgid "Las competencias específicas, los criterios de evaluación y los saberes básicos no los inventa la IA: se extraen del texto oficial publicado en el BOE y se cargan en la aplicación. La fuente es la <strong>Orden EFP/754/2022</strong>, que desarrolla el Real Decreto 217/2022 de enseñanzas mínimas de la ESO."
-msgstr "Les competències específiques, els criteris d'avaluació i els sabers bàsics no se'ls inventa la IA: s'extreuen del text oficial publicat al BOE i es carreguen a l'aplicació. La font és l'<strong>Ordre EFP/754/2022</strong>, que desenvolupa el Reial decret 217/2022 d'ensenyaments mínims de l'ESO."
+msgid "Las competencias específicas, los criterios de evaluación y los saberes básicos no los inventa la IA: se extraen del texto oficial de cada norma y se cargan en la aplicación. El currículo es <strong>el de tu comunidad</strong>, según la que tengas en el perfil, porque cada una desarrolla el Real Decreto 217/2022 con su propia norma y las materias no coinciden."
+msgstr "Les competències específiques, els criteris d'avaluació i els sabers bàsics no se'ls inventa la IA: s'extreuen del text oficial de cada norma i es carreguen a l'aplicació. El currículum és <strong>el de la teva comunitat</strong>, segons la que tinguis al perfil, perquè cadascuna desenvolupa el Reial decret 217/2022 amb la seva pròpia norma i les matèries no coincideixen."
 
 #: app/templates/ayuda.html:68
-msgid "Están disponibles las materias de Educación Secundaria Obligatoria. Bachillerato y Formación Profesional todavía no."
-msgstr "Hi ha disponibles les matèries d'Educació Secundària Obligatòria. Batxillerat i Formació Professional encara no."
+msgid "Hay currículo cargado de <strong>Andalucía</strong>, <strong>Cataluña</strong>, <strong>Galicia</strong>, <strong>País Vasco</strong> y <strong>Ceuta y Melilla</strong>, en <strong>Educación Secundaria Obligatoria y Bachillerato</strong>. Formación Profesional no está, y no hay fecha."
+msgstr "Hi ha currículum carregat d'<strong>Andalusia</strong>, <strong>Catalunya</strong>, <strong>Galícia</strong>, <strong>País Basc</strong> i <strong>Ceuta i Melilla</strong>, a <strong>Educació Secundària Obligatòria i Batxillerat</strong>. Formació Professional no hi és, i no hi ha data."
 
 #: app/templates/ayuda.html:71
 msgid "Matemáticas A y Matemáticas B"
@@ -470,274 +470,278 @@ msgid "Son dos materias distintas, no dos nombres de la misma. <strong>Tecnolog�
 msgstr "Són dues matèries diferents, no dos noms de la mateixa. <strong>Tecnologia i Digitalització</strong> és la de 2n i 3r; <strong>Tecnologia</strong> és una matèria d'opció de 4t. Tenen competències específiques diferents, així que convé no confondre-les en crear una situació."
 
 #: app/templates/ayuda.html:88
-msgid "Materias que no encontrarás"
-msgstr "Matèries que no trobaràs"
+msgid "Materias que dependen de tu comunidad"
+msgstr "Matèries que depenen de la teva comunitat"
 
 #: app/templates/ayuda.html:90
-msgid "<strong>Segunda Lengua Extranjera</strong> no aparece en el desplegable. No es un olvido: el BOE no le publica currículo propio, sino que remite al de la primera lengua extranjera. Mientras AWEBO no sepa reutilizarlo, ofrecerla daría una materia sin ningún criterio que seleccionar."
-msgstr "<strong>Segona Llengua Estrangera</strong> no apareix al desplegable. No és un oblit: el BOE no li publica currículum propi, sinó que remet al de la primera llengua estrangera. Mentre AWEBO no sàpiga reutilitzar-lo, oferir-la donaria una matèria sense cap criteri per seleccionar."
+msgid "Que una materia exista no significa que tú la veas: el desplegable ofrece las de tu comunidad. <strong>Segunda Lengua Extranjera</strong> es el caso más claro. La tienen <strong>Cataluña</strong>, <strong>Galicia</strong> y <strong>País Vasco</strong>, porque sus decretos le publican currículo propio; en <strong>Andalucía</strong> y en <strong>Ceuta y Melilla</strong> no aparece, porque la norma que se les aplica no se lo publica y remite al de la primera lengua extranjera."
+msgstr "Que una matèria existeixi no vol dir que tu la vegis: el desplegable ofereix les de la teva comunitat. <strong>Segona Llengua Estrangera</strong> és el cas més clar. La tenen <strong>Catalunya</strong>, <strong>Galícia</strong> i <strong>País Basc</strong>, perquè els seus decrets li publiquen currículum propi; a <strong>Andalusia</strong> i a <strong>Ceuta i Melilla</strong> no apareix, perquè la norma que se'ls aplica no l'hi publica i remet al de la primera llengua estrangera."
 
-#: app/templates/ayuda.html:97
+#: app/templates/ayuda.html:93
+msgid "Si echas en falta una materia que sabes que se imparte en tu centro, no des por hecho que AWEBO no la tiene: comprueba primero que la comunidad de tu perfil sea la correcta."
+msgstr "Si trobes a faltar una matèria que saps que s'imparteix al teu centre, no donis per fet que AWEBO no la té: comprova primer que la comunitat del teu perfil sigui la correcta."
+
+#: app/templates/ayuda.html:100
 msgid "Al crear una SA puedes marcar <strong>Generar con IA</strong> para que se completen automáticamente las seis secciones LOMLOE: justificación, objetivos, currículo, secuencia didáctica, evaluación y atención a la diversidad. La generación tarda entre 30 segundos y 2 minutos según el proveedor."
 msgstr "En crear una SA pots marcar <strong>Generar amb IA</strong> perquè es completin automàticament les sis seccions LOMLOE: justificació, objectius, currículum, seqüència didàctica, avaluació i atenció a la diversitat. La generació triga entre 30 segons i 2 minuts segons el proveïdor."
 
-#: app/templates/ayuda.html:100
+#: app/templates/ayuda.html:103
 msgid "Puedes <strong>regenerar una sola sección</strong> desde el detalle si una parte no te convence; las demás se conservan."
 msgstr "Pots <strong>regenerar una sola secció</strong> des del detall si una part no et convenç; la resta es conserven."
 
-#: app/templates/ayuda.html:103
+#: app/templates/ayuda.html:106
 msgid "Elegir quién redacta"
 msgstr "Triar qui redacta"
 
-#: app/templates/ayuda.html:105
+#: app/templates/ayuda.html:108
 msgid "En <a href=\"/perfil\">Mi perfil</a> puedes escoger el <strong>proveedor</strong> y el <strong>modelo</strong> de IA que se usarán en tus situaciones. Si no eliges nada se usa el del sistema. Los modelos disponibles cambian según el proveedor, y la lista se actualiza sola al cambiarlo."
 msgstr "A <a href=\"/perfil\">El meu perfil</a> pots escollir el <strong>proveïdor</strong> i el <strong>model</strong> d'IA que s'faran servir a les teves situacions. Si no tries res es fa servir el del sistema. Els models disponibles canvien segons el proveïdor, i la llista s'actualitza sola en canviar-lo."
 
-#: app/templates/ayuda.html:112
+#: app/templates/ayuda.html:115
 msgid "Cada sección del detalle tiene sus propias operaciones. No todas las secciones admiten todas: las que no tienen sentido para una sección concreta no se ofrecen."
 msgstr "Cada secció del detall té les seves pròpies operacions. No totes les seccions les admeten totes: les que no tenen sentit per a una secció concreta no s'ofereixen."
 
-#: app/templates/ayuda.html:115
+#: app/templates/ayuda.html:118
 msgid "<strong>Resumir</strong> — acorta el texto conservando lo esencial."
 msgstr "<strong>Resumir</strong> — escurça el text conservant l'essencial."
 
-#: app/templates/ayuda.html:116
+#: app/templates/ayuda.html:119
 msgid "<strong>Desarrollar</strong> — amplía la sección con más detalle."
 msgstr "<strong>Desenvolupar</strong> — amplia la secció amb més detall."
 
-#: app/templates/ayuda.html:117
+#: app/templates/ayuda.html:120
 msgid "<strong>Traducir</strong> — pasa la sección al idioma de la situación. El destino no se elige por operación, precisamente para que un documento no acabe con unas secciones en un idioma y otras en otro."
 msgstr "<strong>Traduir</strong> — passa la secció a l'idioma de la situació. El destí no es tria per operació, precisament perquè un document no acabi amb unes seccions en un idioma i unes altres en un altre."
 
-#: app/templates/ayuda.html:118
+#: app/templates/ayuda.html:121
 msgid "<strong>Proponer alternativa</strong> — redacta una segunda versión sin borrar la que tenías."
 msgstr "<strong>Proposar alternativa</strong> — redacta una segona versió sense esborrar la que tenies."
 
-#: app/templates/ayuda.html:121
+#: app/templates/ayuda.html:124
 msgid "Con la alternativa verás las dos redacciones enfrentadas y tendrás que quedarte con una para continuar. La que descartes no se pierde: queda en el historial de versiones."
 msgstr "Amb l'alternativa veuràs les dues redaccions enfrontades i hauràs de quedar-te amb una per continuar. La que descartis no es perd: queda a l'historial de versions."
 
-#: app/templates/ayuda.html:124
+#: app/templates/ayuda.html:127
 msgid "Cualquiera de estas operaciones se puede revertir con <strong>Deshacer</strong>, que recupera el texto inmediatamente anterior."
 msgstr "Qualsevol d'aquestes operacions es pot revertir amb <strong>Desfés</strong>, que recupera el text immediatament anterior."
 
-#: app/templates/ayuda.html:131
+#: app/templates/ayuda.html:134
 msgid "Los cambios al título y los campos básicos crean una <strong>nueva versión</strong> automáticamente. Desde el detalle puedes consultar el historial completo y volver a un estado anterior."
 msgstr "Els canvis al títol i als camps bàsics creen una <strong>nova versió</strong> automàticament. Des del detall pots consultar l'historial complet i tornar a un estat anterior."
 
-#: app/templates/ayuda.html:138
+#: app/templates/ayuda.html:141
 msgid "A partir de una SA generada, puedes crear una <strong>adaptación</strong> para alumnado con necesidades específicas:"
 msgstr "A partir d'una SA generada, pots crear una <strong>adaptació</strong> per a alumnat amb necessitats específiques:"
 
-#: app/templates/ayuda.html:141
+#: app/templates/ayuda.html:144
 msgid "<strong>ACNS</strong> — adaptación curricular no significativa."
 msgstr "<strong>ACNS</strong> — adaptació curricular no significativa."
 
-#: app/templates/ayuda.html:142
+#: app/templates/ayuda.html:145
 msgid "<strong>ACS</strong> — adaptación curricular significativa."
 msgstr "<strong>ACS</strong> — adaptació curricular significativa."
 
-#: app/templates/ayuda.html:145
+#: app/templates/ayuda.html:148
 msgid "La SA adaptada se genera completa y conserva un enlace a la SA de origen."
 msgstr "La SA adaptada es genera completa i conserva un enllaç a la SA d'origen."
 
-#: app/templates/ayuda.html:152
+#: app/templates/ayuda.html:155
 msgid "Cada sección del detalle tiene un botón <strong>Escuchar</strong> que la lee en voz alta. Se lee sección a sección, y no el documento entero, para que puedas repasar solo la parte que te interesa."
 msgstr "Cada secció del detall té un botó <strong>Escoltar</strong> que la llegeix en veu alta. Es llegeix secció a secció, i no el document sencer, perquè puguis repassar només la part que t'interessa."
 
-#: app/templates/ayuda.html:155
+#: app/templates/ayuda.html:158
 msgid "Ese botón usa la voz de tu propio ordenador, así que suena al instante pero depende de que tu sistema tenga una voz instalada para el idioma de la situación. Si no la tiene, el botón no aparece — algo habitual en catalán, gallego y euskera."
 msgstr "Aquest botó fa servir la veu del teu ordinador, així que sona a l'instant però depèn que el teu sistema tingui una veu instal·lada per a l'idioma de la situació. Si no en té, el botó no apareix — cosa habitual en català, gallec i basc."
 
-#: app/templates/ayuda.html:158
+#: app/templates/ayuda.html:161
 msgid "Para esos casos, y para cuando quieras un fichero, cada sección tiene además <strong>Generar audio</strong>. Ese lo produce el servidor con voces propias, así que funciona en las cuatro lenguas aunque tu equipo no tenga ninguna instalada. Tarda unos segundos y deja un reproductor y un enlace de descarga bajo la sección."
 msgstr "Per a aquests casos, i per quan vulguis un fitxer, cada secció té a més <strong>Generar àudio</strong>. Aquest el produeix el servidor amb veus pròpies, així que funciona en les quatre llengües encara que el teu equip no en tingui cap d'instal·lada. Triga uns segons i deixa un reproductor i un enllaç de descàrrega sota la secció."
 
-#: app/templates/ayuda.html:161
+#: app/templates/ayuda.html:164
 msgid "El audio se genera en el propio servidor de AWEBO: el contenido de tus situaciones no se envía a ningún servicio externo para leerlo. Las voces son de la Universidad del País Vasco y de los proyectos públicos de normalización lingüística de Galicia y Cataluña."
 msgstr "L'àudio es genera al servidor d'AWEBO: el contingut de les teves situacions no s'envia a cap servei extern per llegir-lo. Les veus són de la Universitat del País Basc i dels projectes públics de normalització lingüística de Galícia i Catalunya."
 
-#: app/templates/ayuda.html:168
+#: app/templates/ayuda.html:171
 msgid "Desde el detalle de cualquier SA puedes descargar el documento en <strong>PDF</strong> (paginación cuidada, listo para imprimir) o en <strong>DOCX</strong> (editable en Word/LibreOffice)."
 msgstr "Des del detall de qualsevol SA pots descarregar el document en <strong>PDF</strong> (paginació acurada, llest per imprimir) o en <strong>DOCX</strong> (editable a Word/LibreOffice)."
 
-#: app/templates/ayuda.html:171
+#: app/templates/ayuda.html:174
 msgid "Los rótulos del documento (los títulos de sección, los encabezados de tabla) salen en el idioma en el que tengas la interfaz. El contenido, en el idioma de la situación."
 msgstr "Els rètols del document (els títols de secció, les capçaleres de taula) surten en l'idioma en què tinguis la interfície. El contingut, en l'idioma de la situació."
 
-#: app/templates/ayuda.html:177 app/templates/base.html:65
+#: app/templates/ayuda.html:180 app/templates/base.html:70
 msgid "Tema visual"
 msgstr "Tema visual"
 
-#: app/templates/ayuda.html:179
+#: app/templates/ayuda.html:182
 msgid "En la cabecera puedes elegir entre <strong>Claro</strong>, <strong>Oscuro</strong> y <strong>Automático</strong>. Automático sigue la preferencia de tu sistema operativo y cambia solo si esta cambia. La elección se recuerda en el navegador."
 msgstr "A la capçalera pots triar entre <strong>Clar</strong>, <strong>Fosc</strong> i <strong>Automàtic</strong>. Automàtic segueix la preferència del teu sistema operatiu i canvia només si aquesta canvia. La tria es recorda al navegador."
 
-#: app/templates/ayuda.html:181
+#: app/templates/ayuda.html:184
 msgid "Idioma de la interfaz"
 msgstr "Idioma de la interfície"
 
-#: app/templates/ayuda.html:183
+#: app/templates/ayuda.html:186
 msgid "El selector de idioma de la cabecera cambia la lengua de los menús, los botones y esta misma ayuda, y te deja en la página en la que estabas. Si has iniciado sesión, la elección se guarda en tu perfil."
 msgstr "El selector d'idioma de la capçalera canvia la llengua dels menús, els botons i aquesta mateixa ajuda, i et deixa a la pàgina on eres. Si has iniciat sessió, la tria es desa al teu perfil."
 
-#: app/templates/ayuda.html:186
+#: app/templates/ayuda.html:189
 msgid "No confundas este idioma con el de la situación: son independientes. Cambiar la interfaz a gallego no traduce las situaciones que ya tengas escritas en castellano."
 msgstr "No confonguis aquest idioma amb el de la situació: són independents. Canviar la interfície a gallec no tradueix les situacions que ja tinguis escrites en castellà."
 
-#: app/templates/ayuda.html:193
+#: app/templates/ayuda.html:196
 msgid "En <a href=\"/perfil\">Mi perfil</a> puedes actualizar nombre, centro educativo, contraseña, idioma y proveedor de IA."
 msgstr "A <a href=\"/perfil\">El meu perfil</a> pots actualitzar el nom, el centre educatiu, la contrasenya, l'idioma i el proveïdor d'IA."
 
-#: app/templates/ayuda.html:195
+#: app/templates/ayuda.html:198
 msgid "Si olvidas la contraseña"
 msgstr "Si oblides la contrasenya"
 
-#: app/templates/ayuda.html:197
+#: app/templates/ayuda.html:200
 msgid "Entra en <a href=\"/restablecer-contrasena\">¿Olvidaste tu contraseña?</a> y escribe tu correo <strong>o tu correo de respaldo</strong>. Te llegará un mensaje con un enlace para elegir una contraseña nueva; caduca en <strong>una hora</strong> y solo sirve una vez. Mientras no lo abras, tu contraseña sigue siendo la de siempre, así que si recibes ese correo sin haberlo pedido no tienes que hacer nada."
 msgstr "Entra a <a href=\"/restablecer-contrasena\">Has oblidat la contrasenya?</a> i escriu el teu correu <strong>o el teu correu de recuperació</strong>. T'arribarà un missatge amb un enllaç per triar una contrasenya nova; caduca en <strong>una hora</strong> i només serveix una vegada. Mentre no l'obris, la teva contrasenya continua sent la de sempre, així que si reps aquest correu sense haver-lo demanat no has de fer res."
 
-#: app/templates/ayuda.html:200
+#: app/templates/ayuda.html:203
 msgid "La pantalla responde lo mismo exista o no una cuenta con esa dirección. Es a propósito: si distinguiera los dos casos, cualquiera podría usar el formulario para averiguar quién está registrado."
 msgstr "La pantalla respon el mateix tant si existeix un compte amb aquesta adreça com si no. És a propòsit: si distingís els dos casos, qualsevol podria fer servir el formulari per esbrinar qui està registrat."
 
-#: app/templates/ayuda.html:203
+#: app/templates/ayuda.html:206
 msgid "Quién puede ver lo que escribes"
 msgstr "Qui pot veure el que escrius"
 
-#: app/templates/ayuda.html:205
+#: app/templates/ayuda.html:208
 msgid "Tus situaciones de aprendizaje no son públicas: nadie más que tú las ve desde su cuenta."
 msgstr "Les teves situacions d'aprenentatge no són públiques: ningú més que tu les veu des del seu compte."
 
-#: app/templates/ayuda.html:208
+#: app/templates/ayuda.html:211
 msgid "Con una excepción que conviene que sepas desde el principio: <strong>las personas administradoras de AWEBO pueden abrir cualquier situación</strong>, no solo ver cuántas tienes. Es lo que les permite reproducir un fallo que alguien reporta o comprobar una reclamación de contenido."
 msgstr "Amb una excepció que convé que sàpigues des del principi: <strong>les persones administradores d'AWEBO poden obrir qualsevol situació</strong>, no només veure quantes en tens. És el que els permet reproduir una errada que algú reporta o comprovar una reclamació de contingut."
 
-#: app/templates/ayuda.html:211
+#: app/templates/ayuda.html:214
 msgid "Cada vez que una cuenta administradora abre contenido que no es suyo queda registrado, con qué situación y cuándo. No es un permiso silencioso: es un permiso que deja rastro."
 msgstr "Cada vegada que un compte administrador obre contingut que no és seu queda registrat, amb quina situació i quan. No és un permís silenciós: és un permís que deixa rastre."
 
-#: app/templates/ayuda.html:214
+#: app/templates/ayuda.html:217
 msgid "Si trabajas con material que no quieres que vea nadie más, tenlo en cuenta antes de escribirlo aquí."
 msgstr "Si treballes amb material que no vols que vegi ningú més, tingue-ho en compte abans d'escriure'l aquí."
 
-#: app/templates/ayuda.html:217
+#: app/templates/ayuda.html:220
 msgid "El correo de respaldo"
 msgstr "El correu de recuperació"
 
-#: app/templates/ayuda.html:219
+#: app/templates/ayuda.html:222
 msgid "Es una segunda dirección, <strong>personal y no del centro</strong>, que puedes añadir al registrarte o después desde <a href=\"/perfil\">tu perfil</a>. Es opcional, pero es lo único que sigue siendo tuyo cuando cambias de centro."
 msgstr "És una segona adreça, <strong>personal i no del centre</strong>, que pots afegir en registrar-te o després des del <a href=\"/perfil\">teu perfil</a>. És opcional, però és l'única cosa que continua sent teva quan canvies de centre."
 
-#: app/templates/ayuda.html:221
+#: app/templates/ayuda.html:224
 msgid "Sirve para dos cosas:"
 msgstr "Serveix per a dues coses:"
 
-#: app/templates/ayuda.html:224
+#: app/templates/ayuda.html:227
 msgid "<strong>Recuperar la cuenta.</strong> Puedes pedir el enlace de contraseña nueva escribiendo el correo de respaldo, aunque ya no tengas acceso al correo del centro."
 msgstr "<strong>Recuperar el compte.</strong> Pots demanar l'enllaç de contrasenya nova escrivint el correu de recuperació, encara que ja no tinguis accés al correu del centre."
 
-#: app/templates/ayuda.html:227
+#: app/templates/ayuda.html:230
 msgid "<strong>Demostrar que tu contenido es tuyo.</strong> Si te das de baja conservando tus situaciones y alguien se registra después con tu antigua dirección pidiéndolas, se te pregunta a ti, en el correo de respaldo. Sin tu confirmación no se entrega nada."
 msgstr "<strong>Demostrar que el teu contingut és teu.</strong> Si et dones de baixa conservant les teves situacions i després algú es registra amb la teva antiga adreça demanant-les, se t'ho pregunta a tu, al correu de recuperació. Sense la teva confirmació no es lliura res."
 
-#: app/templates/ayuda.html:231
+#: app/templates/ayuda.html:234
 msgid "Hace falta confirmarlo abriendo el enlace que te enviamos. Mientras no lo hagas no cuenta para nada, aunque aparezca escrito en tu perfil."
 msgstr "Cal confirmar-lo obrint l'enllaç que t'enviem. Mentre no ho facis no compta per a res, encara que aparegui escrit al teu perfil."
 
-#: app/templates/ayuda.html:234
+#: app/templates/ayuda.html:237
 msgid "Para cambiarlo por otro, el enlace de confirmación se envía a la dirección de respaldo que tuvieras antes, no a la nueva. Es incómodo a propósito: es lo que impide que quien consiga entrar en tu cuenta pueda apuntar la recuperación a un buzón suyo. Para quitarlo del todo basta con tu contraseña."
 msgstr "Per canviar-lo per un altre, l'enllaç de confirmació s'envia a l'adreça de recuperació que tinguessis abans, no a la nova. És incòmode expressament: és el que impedeix que qui aconsegueixi entrar al teu compte pugui apuntar la recuperació a una bústia seva. Per treure'l del tot n'hi ha prou amb la teva contrasenya."
 
-#: app/templates/ayuda.html:237
+#: app/templates/ayuda.html:240
 msgid "Si pierdes el acceso al correo de respaldo y tampoco puedes entrar en la cuenta, tendrás que escribir a la administración de AWEBO: es el último recurso."
 msgstr "Si perds l'accés al correu de recuperació i tampoc no pots entrar al compte, hauràs d'escriure a l'administració d'AWEBO: és l'últim recurs."
 
-#: app/templates/ayuda.html:240
+#: app/templates/ayuda.html:243
 msgid "Si quieres darte de baja"
 msgstr "Si vols donar-te de baixa"
 
-#: app/templates/ayuda.html:242
+#: app/templates/ayuda.html:245
 msgid "Puedes hacerlo tú desde <a href=\"/perfil\">tu perfil</a>, al final de la página. Te pediremos tu contraseña actual y te enviaremos un correo con un enlace de confirmación que caduca en <strong>media hora</strong>. Hasta que no abras ese enlace no se aplica nada."
 msgstr "Ho pots fer tu des del <a href=\"/perfil\">teu perfil</a>, al final de la pàgina. Et demanarem la contrasenya actual i t'enviarem un correu amb un enllaç de confirmació que caduca en <strong>mitja hora</strong>. Fins que no obris aquest enllaç no s'aplica res."
 
-#: app/templates/ayuda.html:245
+#: app/templates/ayuda.html:248
 msgid "Antes de confirmar tienes que elegir qué pasa con tus situaciones de aprendizaje, y las dos opciones son muy distintas:"
 msgstr "Abans de confirmar has de triar què passa amb les teves situacions d'aprenentatge, i les dues opcions són molt diferents:"
 
-#: app/templates/ayuda.html:249
+#: app/templates/ayuda.html:252
 msgid "<strong>Borrarlo todo.</strong> Tu cuenta y tus situaciones se eliminan de inmediato y para siempre. No hay plazo de recuperación ni forma de deshacerlo."
 msgstr "<strong>Esborrar-ho tot.</strong> El teu compte i les teves situacions s'eliminen immediatament i per sempre. No hi ha termini de recuperació ni manera de desfer-ho."
 
-#: app/templates/ayuda.html:252
+#: app/templates/ayuda.html:255
 msgid "<strong>Conservar tus situaciones.</strong> Tu cuenta deja de poder entrar, pero el contenido se guarda <strong>90 días</strong>. Si dentro de ese plazo vuelves a registrarte con el mismo correo, puedes pedir recuperarlo. Quien lo autoriza es quien tenga acceso al correo de respaldo de la cuenta; si no había ninguno, lo decide un administrador. Pasado el plazo, el borrado es definitivo."
 msgstr "<strong>Conservar les teves situacions.</strong> El teu compte deixa de poder entrar, però el contingut es guarda <strong>90 dies</strong>. Si dins d'aquest termini et tornes a registrar amb el mateix correu, pots demanar recuperar-lo. Qui ho autoritza és qui tingui accés al correu de recuperació del compte; si no n'hi havia cap, ho decideix un administrador. Passat el termini, l'esborrat és definitiu."
 
-#: app/templates/ayuda.html:256
+#: app/templates/ayuda.html:259
 msgid "Si eres la única persona administradora, el sistema no te dejará darte de baja: la plataforma se quedaría sin nadie que gestione cuentas ni apruebe recuperaciones. Nombra a otra antes."
 msgstr "Si ets l'única persona administradora, el sistema no et deixarà donar-te de baixa: la plataforma es quedaria sense ningú que gestioni comptes ni aprovi recuperacions. Nomena'n una altra abans."
 
-#: app/templates/ayuda.html:259
+#: app/templates/ayuda.html:262
 msgid "Si tu cuenta la elimina un administrador"
 msgstr "Si el teu compte l'elimina un administrador"
 
-#: app/templates/ayuda.html:261
+#: app/templates/ayuda.html:264
 msgid "Un administrador también puede dar de baja una cuenta, con las mismas dos modalidades. Si eligió conservar el contenido, se aplica el mismo plazo de 90 días y la misma vía para recuperarlo."
 msgstr "Un administrador també pot donar de baixa un compte, amb les mateixes dues modalitats. Si va triar conservar el contingut, s'aplica el mateix termini de 90 dies i la mateixa via per recuperar-lo."
 
-#: app/templates/ayuda.html:264
+#: app/templates/ayuda.html:267
 msgid "Si adaptaste una situación de otra persona y esa cuenta desaparece"
 msgstr "Si vas adaptar una situació d'una altra persona i aquest compte desapareix"
 
-#: app/templates/ayuda.html:266
+#: app/templates/ayuda.html:269
 msgid "Tu adaptación no se borra: es tuya y se conserva íntegra, con su tipo de adaptación y su perfil de alumnado. Lo único que se pierde es el enlace al documento del que partió, y al abrirla verás un aviso que lo explica."
 msgstr "La teva adaptació no s'esborra: és teva i es conserva íntegra, amb el seu tipus d'adaptació i el seu perfil d'alumnat. L'única cosa que es perd és l'enllaç al document del qual va partir, i en obrir-la veuràs un avís que ho explica."
 
-#: app/templates/ayuda.html:273
+#: app/templates/ayuda.html:276
 msgid "La generación de IA falla o tarda mucho"
 msgstr "La generació d'IA falla o triga molt"
 
-#: app/templates/ayuda.html:275
+#: app/templates/ayuda.html:278
 msgid "Espera 1–2 minutos. Si tras ese tiempo la SA queda en estado <em>error</em>, vuelve al detalle y pulsa <strong>Reintentar</strong> o <strong>Regenerar sección</strong>."
 msgstr "Espera 1–2 minuts. Si passat aquest temps la SA queda en estat <em>error</em>, torna al detall i prem <strong>Reintentar</strong> o <strong>Regenerar secció</strong>."
 
-#: app/templates/ayuda.html:279
+#: app/templates/ayuda.html:282
 msgid "No encuentro una materia en el desplegable"
 msgstr "No trobo una matèria al desplegable"
 
-#: app/templates/ayuda.html:281
-msgid "Comprueba primero el curso: cada materia solo aparece en los cursos en los que se imparte. Si buscas Segunda Lengua Extranjera, no está disponible todavía; y si buscas Tecnología en 2.º o 3.º, ahí se llama Tecnología y Digitalización."
-msgstr "Comprova primer el curs: cada matèria només apareix als cursos on s'imparteix. Si busques Segona Llengua Estrangera, encara no està disponible; i si busques Tecnologia a 2n o 3r, allà s'anomena Tecnologia i Digitalització."
+#: app/templates/ayuda.html:284
+msgid "Comprueba tres cosas. El <strong>curso</strong>: cada materia solo aparece en los que se imparte. La <strong>comunidad de tu perfil</strong>: el desplegable ofrece el currículo de esa comunidad, así que una materia puede existir en AWEBO y no salirte a ti. Y el <strong>nombre</strong>: si buscas Tecnología en 2.º o 3.º, ahí se llama Tecnología y Digitalización."
+msgstr "Comprova tres coses. El <strong>curs</strong>: cada matèria només apareix en els quals s'imparteix. La <strong>comunitat del teu perfil</strong>: el desplegable ofereix el currículum d'aquesta comunitat, així que una matèria pot existir a AWEBO i no sortir-te a tu. I el <strong>nom</strong>: si busques Tecnologia a 2n o 3r, allà es diu Tecnologia i Digitalització."
 
-#: app/templates/ayuda.html:285
+#: app/templates/ayuda.html:288
 msgid "Una situación antigua avisa de que su combinación no es válida"
 msgstr "Una situació antiga avisa que la seva combinació no és vàlida"
 
-#: app/templates/ayuda.html:287
+#: app/templates/ayuda.html:290
 msgid "Significa que la materia y el curso que tiene guardados no se corresponden con ningún currículo cargado. Puede pasar con situaciones creadas antes de una ampliación del catálogo. Corrige los dos campos desde el detalle y podrás volver a generarla; el contenido que ya tuviera no se pierde."
 msgstr "Vol dir que la matèria i el curs que té desats no es corresponen amb cap currículum carregat. Pot passar amb situacions creades abans d'una ampliació del catàleg. Corregeix els dos camps des del detall i podràs tornar a generar-la; el contingut que ja tingués no es perd."
 
-#: app/templates/ayuda.html:291
+#: app/templates/ayuda.html:294
 msgid "No veo el botón de escuchar"
 msgstr "No veig el botó d'escoltar"
 
-#: app/templates/ayuda.html:293
+#: app/templates/ayuda.html:296
 msgid "Tu sistema no tiene ninguna voz instalada para el idioma de esa situación. Puedes añadir voces desde la configuración de tu sistema operativo."
 msgstr "El teu sistema no té cap veu instal·lada per a l'idioma d'aquesta situació. Pots afegir veus des de la configuració del teu sistema operatiu."
 
-#: app/templates/ayuda.html:297
+#: app/templates/ayuda.html:300
 msgid "El PDF tiene saltos de página feos"
 msgstr "El PDF té salts de pàgina lletjos"
 
-#: app/templates/ayuda.html:299
+#: app/templates/ayuda.html:302
 msgid "Las plantillas de exportación intentan evitar viudas y huérfanos, pero si te ocurre, edita la sección concreta para reducir longitud y vuelve a exportar."
 msgstr "Les plantilles d'exportació intenten evitar vídues i orfes, però si et passa, edita la secció concreta per reduir-ne la llargada i torna a exportar."
 
-#: app/templates/ayuda.html:303
+#: app/templates/ayuda.html:306
 msgid "No recuerdo mi contraseña"
 msgstr "No recordo la meva contrasenya"
 
-#: app/templates/ayuda.html:305
+#: app/templates/ayuda.html:308
 msgid "Usa <a href=\"/restablecer-contrasena\">¿Olvidaste tu contraseña?</a> para establecer una nueva. No tendrás que esperar ningún correo."
 msgstr "Fes servir <a href=\"/restablecer-contrasena\">Has oblidat la contrasenya?</a> per establir-ne una de nova. No hauràs d'esperar cap correu."
 
@@ -786,15 +790,15 @@ msgstr "Processant…"
 #: app/templates/login.html:68 app/templates/perfil.html:299
 #: app/templates/reclamacion.html:66 app/templates/register.html:177
 #: app/templates/restablecer_contrasena.html:99
-#: app/templates/situaciones/detalle.html:291
-#: app/templates/situaciones/nueva.html:184
+#: app/templates/situaciones/detalle.html:306
+#: app/templates/situaciones/nueva.html:210
 msgid "Error desconocido"
 msgstr "Error desconegut"
 
 #: app/templates/baja.html:54 app/templates/correo_de_respaldo.html:54
 #: app/templates/perfil.html:304 app/templates/reclamacion.html:67
 #: app/templates/restablecer_contrasena.html:100
-#: app/templates/situaciones/nueva.html:194
+#: app/templates/situaciones/nueva.html:221
 msgid "No se ha podido contactar con el servidor."
 msgstr "No s'ha pogut contactar amb el servidor."
 
@@ -810,117 +814,119 @@ msgstr "El teu compte i totes les teves situacions s'han esborrat definitivament
 msgid "Generación asistida de Situaciones de Aprendizaje LOMLOE para docentes."
 msgstr "Generació assistida de Situacions d'Aprenentatge LOMLOE per a docents."
 
-#: app/templates/base.html:11
+#: app/templates/base.html:16
 msgid "Situaciones de Aprendizaje"
 msgstr "Situacions d'Aprenentatge"
 
-#: app/templates/base.html:21
+#: app/templates/base.html:26
 msgid "Pasar al contenido principal"
 msgstr "Passa al contingut principal"
 
-#: app/templates/base.html:29 app/templates/base.html:48
-#: app/templates/base.html:131 app/templates/mapa_web.html:17
+#: app/templates/base.html:34 app/templates/base.html:53
+#: app/templates/base.html:147 app/templates/mapa_web.html:17
 msgid "Inicio"
 msgstr "Inici"
 
-#: app/templates/base.html:40 app/templates/base.html:195
+#: app/templates/base.html:45 app/templates/base.html:221
 msgid "Abrir menú de navegación"
 msgstr "Obre el menú de navegació"
 
-#: app/templates/base.html:47
+#: app/templates/base.html:52
 msgid "Principal"
 msgstr "Principal"
 
-#: app/templates/base.html:49 app/templates/base.html:132
+#: app/templates/base.html:54 app/templates/base.html:148
 msgid "Mis situaciones"
 msgstr "Les meves situacions"
 
-#: app/templates/base.html:50 app/templates/base.html:133
-#: app/templates/index.html:52 app/templates/mapa_web.html:31
+#: app/templates/base.html:55 app/templates/base.html:149
+#: app/templates/index.html:52 app/templates/mapa_web.html:32
 #: app/templates/perfil.html:6
 msgid "Mi perfil"
 msgstr "El meu perfil"
 
-#: app/templates/base.html:51 app/templates/base.html:139
+#: app/templates/base.html:56 app/templates/base.html:155
 msgid "Ayuda"
 msgstr "Ajuda"
 
-#: app/templates/admin/panel.html:2 app/templates/base.html:54
+#: app/templates/admin/panel.html:2 app/templates/base.html:59
+#: app/templates/mapa_web.html:54
 msgid "Administración"
 msgstr "Administració"
 
-#: app/templates/base.html:55 app/templates/errores/error.html:38
+#: app/templates/base.html:60 app/templates/errores/error.html:38
 #: app/templates/index.html:20 app/templates/login.html:6
 #: app/templates/mapa_web.html:18 app/templates/reclamacion.html:50
 msgid "Iniciar sesión"
 msgstr "Inicia la sessió"
 
-#: app/templates/base.html:56
+#: app/templates/base.html:61
 msgid "Registrarse"
 msgstr "Registra't"
 
-#: app/templates/base.html:59
+#: app/templates/base.html:64
 msgid "Cerrar sesión"
 msgstr "Tanca la sessió"
 
-#: app/templates/base.html:67
+#: app/templates/base.html:72
 msgid "Claro"
 msgstr "Clar"
 
-#: app/templates/base.html:68
+#: app/templates/base.html:73
 msgid "Oscuro"
 msgstr "Fosc"
 
-#: app/templates/base.html:69
+#: app/templates/base.html:74
 msgid "Automático"
 msgstr "Automàtic"
 
-#: app/templates/base.html:97 app/templates/situaciones/detalle.html:104
-#: app/templates/situaciones/nueva.html:125
+#: app/templates/admin/panel.html:137 app/templates/base.html:108
+#: app/templates/situaciones/detalle.html:122
+#: app/templates/situaciones/nueva.html:154
 msgid "Idioma"
 msgstr "Idioma"
 
-#: app/templates/base.html:103
+#: app/templates/base.html:119
 msgid "Cambiar"
 msgstr "Canvia"
 
-#: app/templates/base.html:117
+#: app/templates/base.html:133
 msgid "Proyecto"
 msgstr "Projecte"
 
-#: app/templates/base.html:119
+#: app/templates/base.html:135
 msgid "Aplicación Web para Docentes"
 msgstr "Aplicació Web per a Docents"
 
-#: app/templates/base.html:122
+#: app/templates/base.html:138
 msgid "Generación asistida de Situaciones de Aprendizaje conforme al Real Decreto 217/2022 (LOMLOE)."
 msgstr "Generació assistida de Situacions d'Aprenentatge d'acord amb el Reial Decret 217/2022 (LOMLOE)."
 
-#: app/templates/base.html:125
+#: app/templates/base.html:141
 msgid "¿Te ha gustado? <a href=\"https://paypal.me/srcantero\" target=\"_blank\" rel=\"noopener\">Ayúdame aquí</a>"
 msgstr "T'ha agradat? <a href=\"https://paypal.me/srcantero\" target=\"_blank\" rel=\"noopener\">Ajuda'm aquí</a>"
 
-#: app/templates/base.html:129
+#: app/templates/base.html:145
 msgid "Navegación"
 msgstr "Navegació"
 
-#: app/templates/base.html:137
+#: app/templates/base.html:153
 msgid "Información"
 msgstr "Informació"
 
-#: app/templates/base.html:140 app/templates/mapa_web.html:7
+#: app/templates/base.html:156 app/templates/mapa_web.html:7
 msgid "Mapa web"
 msgstr "Mapa web"
 
-#: app/templates/base.html:141
+#: app/templates/base.html:157
 msgid "Accesibilidad"
 msgstr "Accessibilitat"
 
-#: app/templates/base.html:147
+#: app/templates/base.html:173
 msgid "Autor"
 msgstr "Autor"
 
-#: app/templates/base.html:194
+#: app/templates/base.html:220
 msgid "Cerrar menú de navegación"
 msgstr "Tanca el menú de navegació"
 
@@ -941,10 +947,10 @@ msgstr "Serveix per a dues coses: recuperar el compte si perds el correu del cen
 msgid "Confirmar"
 msgstr "Confirmar"
 
-#: app/templates/admin/panel.html:76 app/templates/admin/panel.html:199
+#: app/templates/admin/panel.html:76 app/templates/admin/panel.html:211
 #: app/templates/correo_de_respaldo.html:30 app/templates/perfil.html:135
 #: app/templates/perfil.html:196 app/templates/perfil.html:219
-#: app/templates/perfil.html:287 app/templates/situaciones/nueva.html:167
+#: app/templates/perfil.html:287 app/templates/situaciones/nueva.html:193
 msgid "Cancelar"
 msgstr "Cancel·lar"
 
@@ -987,10 +993,10 @@ msgid "Situaciones recientes"
 msgstr "Situacions recents"
 
 #: app/templates/admin/panel.html:19 app/templates/admin/panel.html:98
-#: app/templates/admin/panel.html:155 app/templates/index.html:28
+#: app/templates/admin/panel.html:167 app/templates/index.html:28
 #: app/templates/perfil.html:9 app/templates/situaciones/detalle.html:9
 #: app/templates/situaciones/listar.html:9
-#: app/templates/situaciones/listar.html:115
+#: app/templates/situaciones/listar.html:128
 msgid "Cargando…"
 msgstr "Carregant…"
 
@@ -1104,40 +1110,40 @@ msgstr "Situacions recents de tota la plataforma"
 msgid "Estadísticas de la plataforma"
 msgstr "Estadístiques de la plataforma"
 
-#: app/templates/admin/panel.html:120 app/templates/admin/panel.html:308
-#: app/templates/index.html:164 app/templates/situaciones/detalle.html:85
-#: app/templates/situaciones/detalle.html:310
-#: app/templates/situaciones/listar.html:67
-#: app/templates/situaciones/listar.html:128
+#: app/templates/admin/panel.html:120 app/templates/admin/panel.html:322
+#: app/templates/index.html:164 app/templates/situaciones/detalle.html:103
+#: app/templates/situaciones/detalle.html:326
+#: app/templates/situaciones/listar.html:80
+#: app/templates/situaciones/listar.html:141
 msgid "Borrador"
 msgstr "Esborrany"
 
-#: app/templates/admin/panel.html:121 app/templates/admin/panel.html:309
-#: app/templates/index.html:165 app/templates/situaciones/detalle.html:311
-#: app/templates/situaciones/detalle.html:329
-#: app/templates/situaciones/listar.html:68
-#: app/templates/situaciones/listar.html:129
+#: app/templates/admin/panel.html:121 app/templates/admin/panel.html:323
+#: app/templates/index.html:165 app/templates/situaciones/detalle.html:327
+#: app/templates/situaciones/detalle.html:345
+#: app/templates/situaciones/listar.html:81
+#: app/templates/situaciones/listar.html:142
 msgid "Generando…"
 msgstr "Generant…"
 
-#: app/templates/admin/panel.html:122 app/templates/admin/panel.html:310
-#: app/templates/index.html:166 app/templates/situaciones/detalle.html:86
-#: app/templates/situaciones/detalle.html:312
-#: app/templates/situaciones/listar.html:69
-#: app/templates/situaciones/listar.html:130
+#: app/templates/admin/panel.html:122 app/templates/admin/panel.html:324
+#: app/templates/index.html:166 app/templates/situaciones/detalle.html:104
+#: app/templates/situaciones/detalle.html:328
+#: app/templates/situaciones/listar.html:82
+#: app/templates/situaciones/listar.html:143
 msgid "Generada"
 msgstr "Generada"
 
 #: app/templates/errores/error.html:10 app/templates/index.html:167
-#: app/templates/situaciones/listar.html:131
+#: app/templates/situaciones/listar.html:144
 msgid "Error"
 msgstr "Error"
 
-#: app/templates/admin/panel.html:124 app/templates/admin/panel.html:312
-#: app/templates/index.html:168 app/templates/situaciones/detalle.html:87
-#: app/templates/situaciones/detalle.html:313
-#: app/templates/situaciones/listar.html:71
-#: app/templates/situaciones/listar.html:132
+#: app/templates/admin/panel.html:124 app/templates/admin/panel.html:326
+#: app/templates/index.html:168 app/templates/situaciones/detalle.html:105
+#: app/templates/situaciones/detalle.html:329
+#: app/templates/situaciones/listar.html:84
+#: app/templates/situaciones/listar.html:145
 msgid "Finalizada"
 msgstr "Finalitzada"
 
@@ -1172,14 +1178,14 @@ msgstr "Correu electrònic"
 #: app/templates/register.html:38 app/templates/restablecer_contrasena.html:33
 #: app/templates/restablecer_contrasena.html:62
 #: app/templates/restablecer_contrasena.html:74
-#: app/templates/situaciones/detalle.html:36
-#: app/templates/situaciones/detalle.html:49
-#: app/templates/situaciones/detalle.html:66
-#: app/templates/situaciones/detalle.html:75
-#: app/templates/situaciones/nueva.html:53
-#: app/templates/situaciones/nueva.html:68
-#: app/templates/situaciones/nueva.html:85
-#: app/templates/situaciones/nueva.html:101
+#: app/templates/situaciones/detalle.html:37
+#: app/templates/situaciones/detalle.html:55
+#: app/templates/situaciones/detalle.html:84
+#: app/templates/situaciones/detalle.html:93
+#: app/templates/situaciones/nueva.html:60
+#: app/templates/situaciones/nueva.html:83
+#: app/templates/situaciones/nueva.html:114
+#: app/templates/situaciones/nueva.html:130
 msgid "(obligatorio)"
 msgstr "(obligatori)"
 
@@ -1232,11 +1238,43 @@ msgstr "Les meves situacions d'aprenentatge"
 msgid "Crear nueva situación"
 msgstr "Crear nova situació"
 
-#: app/templates/mapa_web.html:34
+#: app/templates/mapa_web.html:29
+msgid "Cada situación tiene su propia página, a la que se llega desde el listado."
+msgstr "Cada situació té la seva pròpia pàgina, a la qual s'arriba des del llistat."
+
+#: app/templates/mapa_web.html:43
+msgid "Pantallas a las que se llega desde un correo"
+msgstr "Pantalles a les quals s'arriba des d'un correu"
+
+#: app/templates/mapa_web.html:45
+msgid ""
+"No se puede navegar hasta ellas: cada una se abre con el enlace que\n"
+"      la aplicación envía, y ese enlace lleva un código de un solo uso."
+msgstr ""
+"No s'hi pot navegar: cadascuna s'obre amb l'enllaç que\n"
+"      envia l'aplicació, i aquest enllaç porta un codi d'un sol ús."
+
+#: app/templates/mapa_web.html:49
+msgid "Confirmar la baja de la cuenta."
+msgstr "Confirmar la baixa del compte."
+
+#: app/templates/mapa_web.html:50
+msgid "Confirmar o cambiar el correo de respaldo."
+msgstr "Confirmar o canviar el correu de reserva."
+
+#: app/templates/mapa_web.html:51
+msgid "Recuperar una cuenta dada de baja, desde el correo de respaldo."
+msgstr "Recuperar un compte donat de baixa, des del correu de reserva."
+
+#: app/templates/mapa_web.html:57
+msgid "El panel de administración está en /admin y solo lo ve quien tiene ese rol."
+msgstr "El tauler d'administració és a /admin i només el veu qui té aquest rol."
+
+#: app/templates/mapa_web.html:61
 msgid "Información y soporte"
 msgstr "Informació i suport"
 
-#: app/templates/mapa_web.html:38
+#: app/templates/mapa_web.html:65
 msgid "Mapa web (esta página)"
 msgstr "Mapa web (aquesta pàgina)"
 
@@ -1253,7 +1291,7 @@ msgid "Correo"
 msgstr "Correu"
 
 #: app/templates/admin/panel.html:57 app/templates/admin/panel.html:89
-#: app/templates/admin/panel.html:205 app/templates/perfil.html:15
+#: app/templates/admin/panel.html:217 app/templates/perfil.html:15
 msgid "Rol"
 msgstr "Rol"
 
@@ -1269,25 +1307,25 @@ msgstr "Última sessió"
 msgid "Editar datos"
 msgstr "Editar dades"
 
-#: app/templates/admin/panel.html:45 app/templates/admin/panel.html:201
+#: app/templates/admin/panel.html:45 app/templates/admin/panel.html:213
 #: app/templates/perfil.html:25 app/templates/register.html:17
 msgid "Nombre completo"
 msgstr "Nom complet"
 
-#: app/templates/admin/panel.html:66 app/templates/admin/panel.html:202
+#: app/templates/admin/panel.html:66 app/templates/admin/panel.html:214
 #: app/templates/perfil.html:30 app/templates/register.html:49
 msgid "Centro educativo"
 msgstr "Centre educatiu"
 
-#: app/templates/admin/panel.html:203 app/templates/perfil.html:35
+#: app/templates/admin/panel.html:215 app/templates/perfil.html:35
 #: app/templates/register.html:55
 msgid "Especialidad"
 msgstr "Especialitat"
 
 #: app/templates/perfil.html:47 app/templates/register.html:65
-#: app/templates/situaciones/detalle.html:47
+#: app/templates/situaciones/detalle.html:53
 #: app/templates/situaciones/listar.html:37
-#: app/templates/situaciones/nueva.html:66
+#: app/templates/situaciones/nueva.html:81
 msgid "Provincia"
 msgstr "Província"
 
@@ -1299,11 +1337,11 @@ msgstr "Sense especificar"
 msgid "Determina el currículo por defecto de tus situaciones. Podrás cambiarlo en cada una."
 msgstr "Determina el currículum per defecte de les teves situacions. El podràs canviar a cadascuna."
 
-#: app/templates/perfil.html:56 app/templates/situaciones/detalle.html:149
+#: app/templates/perfil.html:56 app/templates/situaciones/detalle.html:164
 msgid "Guardar cambios"
 msgstr "Desar canvis"
 
-#: app/templates/perfil.html:66 app/templates/situaciones/detalle.html:169
+#: app/templates/perfil.html:66 app/templates/situaciones/detalle.html:184
 msgid "Generación con IA"
 msgstr "Generació amb IA"
 
@@ -1452,9 +1490,9 @@ msgstr "La demanem perquè una sessió oberta en un ordinador compartit no n'hi 
 msgid "Enviarme el correo de confirmación"
 msgstr "Envia'm el correu de confirmació"
 
-#: app/templates/perfil.html:300 app/templates/situaciones/detalle.html:292
-#: app/templates/situaciones/listar.html:116
-#: app/templates/situaciones/nueva.html:185
+#: app/templates/perfil.html:300 app/templates/situaciones/detalle.html:307
+#: app/templates/situaciones/listar.html:129
+#: app/templates/situaciones/nueva.html:211
 msgid "(sin currículo todavía)"
 msgstr "(encara sense currículum)"
 
@@ -1659,15 +1697,15 @@ msgstr "Comptes"
 msgid "Nueva cuenta"
 msgstr "Nou compte"
 
-#: app/templates/admin/panel.html:59 app/templates/admin/panel.html:206
+#: app/templates/admin/panel.html:59 app/templates/admin/panel.html:218
 msgid "Docente"
 msgstr "Docent"
 
-#: app/templates/admin/panel.html:60 app/templates/admin/panel.html:207
+#: app/templates/admin/panel.html:60 app/templates/admin/panel.html:219
 msgid "Administrador"
 msgstr "Administrador"
 
-#: app/templates/admin/panel.html:70 app/templates/admin/panel.html:204
+#: app/templates/admin/panel.html:70 app/templates/admin/panel.html:216
 msgid "Comunidad autónoma"
 msgstr "Comunitat autònoma"
 
@@ -1683,19 +1721,20 @@ msgstr "Nom"
 msgid "Centro"
 msgstr "Centre"
 
-#: app/templates/admin/panel.html:91 app/templates/admin/panel.html:188
+#: app/templates/admin/panel.html:91 app/templates/admin/panel.html:200
 msgid "Situaciones"
 msgstr "Situacions"
 
 #: app/templates/admin/panel.html:93 app/templates/admin/panel.html:117
-#: app/templates/admin/panel.html:148 app/templates/situaciones/detalle.html:83
-#: app/templates/situaciones/listar.html:64
-#: app/templates/situaciones/listar.html:95
+#: app/templates/admin/panel.html:160
+#: app/templates/situaciones/detalle.html:101
+#: app/templates/situaciones/listar.html:77
+#: app/templates/situaciones/listar.html:108
 msgid "Estado"
 msgstr "Estat"
 
-#: app/templates/admin/panel.html:94 app/templates/admin/panel.html:151
-#: app/templates/situaciones/listar.html:97
+#: app/templates/admin/panel.html:94 app/templates/admin/panel.html:163
+#: app/templates/situaciones/listar.html:110
 msgid "Acciones"
 msgstr "Accions"
 
@@ -1711,188 +1750,190 @@ msgstr "Situacions d'aprenentatge"
 msgid "Solo se muestran los datos necesarios para identificarlas. No es posible abrir su contenido."
 msgstr "Només es mostren les dades necessàries per identificar-les. No es pot obrir el seu contingut."
 
-#: app/templates/admin/panel.html:119 app/templates/situaciones/listar.html:66
-#: app/templates/situaciones/listar.html:122
+#: app/templates/admin/panel.html:119 app/templates/admin/panel.html:139
+#: app/templates/situaciones/listar.html:79
+#: app/templates/situaciones/listar.html:135
 msgid "Todos"
 msgstr "Tots"
 
-#: app/templates/admin/panel.html:123 app/templates/admin/panel.html:311
-#: app/templates/situaciones/detalle.html:322
-#: app/templates/situaciones/listar.html:70
+#: app/templates/admin/panel.html:123 app/templates/admin/panel.html:325
+#: app/templates/situaciones/detalle.html:338
+#: app/templates/situaciones/listar.html:83
 msgid "Error de generación"
 msgstr "Error de generació"
 
-#: app/templates/admin/panel.html:128 app/templates/admin/panel.html:149
+#: app/templates/admin/panel.html:128 app/templates/admin/panel.html:161
 msgid "Cuenta"
 msgstr "Compte"
 
 #: app/templates/admin/panel.html:130 app/templates/situaciones/listar.html:50
-#: app/templates/situaciones/listar.html:123
+#: app/templates/situaciones/listar.html:63
+#: app/templates/situaciones/listar.html:136
 msgid "Todas"
 msgstr "Totes"
 
-#: app/templates/admin/panel.html:135 app/templates/situaciones/listar.html:78
+#: app/templates/admin/panel.html:147 app/templates/situaciones/listar.html:91
 msgid "Aplicar filtros"
 msgstr "Aplicar filtres"
 
-#: app/templates/admin/panel.html:136 app/templates/situaciones/listar.html:79
+#: app/templates/admin/panel.html:148 app/templates/situaciones/listar.html:92
 msgid "Limpiar"
 msgstr "Netejar"
 
-#: app/templates/admin/panel.html:142
+#: app/templates/admin/panel.html:154
 msgid "Situaciones de aprendizaje de todas las cuentas"
 msgstr "Situacions d'aprenentatge de tots els comptes"
 
-#: app/templates/admin/panel.html:145 app/templates/situaciones/detalle.html:34
-#: app/templates/situaciones/listar.html:92
-#: app/templates/situaciones/nueva.html:51
+#: app/templates/admin/panel.html:157 app/templates/situaciones/detalle.html:35
+#: app/templates/situaciones/listar.html:105
+#: app/templates/situaciones/nueva.html:58
 msgid "Título"
 msgstr "Títol"
 
-#: app/templates/admin/panel.html:146 app/templates/situaciones/detalle.html:73
-#: app/templates/situaciones/listar.html:58
-#: app/templates/situaciones/listar.html:94
-#: app/templates/situaciones/nueva.html:99
+#: app/templates/admin/panel.html:158 app/templates/situaciones/detalle.html:91
+#: app/templates/situaciones/listar.html:71
+#: app/templates/situaciones/listar.html:107
+#: app/templates/situaciones/nueva.html:128
 msgid "Materia"
 msgstr "Matèria"
 
-#: app/templates/admin/panel.html:147 app/templates/situaciones/detalle.html:64
-#: app/templates/situaciones/listar.html:54
-#: app/templates/situaciones/listar.html:93
-#: app/templates/situaciones/nueva.html:83
+#: app/templates/admin/panel.html:159 app/templates/situaciones/detalle.html:82
+#: app/templates/situaciones/listar.html:67
+#: app/templates/situaciones/listar.html:106
+#: app/templates/situaciones/nueva.html:112
 msgid "Curso"
 msgstr "Curs"
 
-#: app/templates/admin/panel.html:150 app/templates/situaciones/listar.html:96
+#: app/templates/admin/panel.html:162 app/templates/situaciones/listar.html:109
 msgid "Modificada"
 msgstr "Modificada"
 
-#: app/templates/admin/panel.html:159
+#: app/templates/admin/panel.html:171
 msgid "Páginas de situaciones"
 msgstr "Pàgines de situacions"
 
-#: app/templates/admin/panel.html:175
+#: app/templates/admin/panel.html:187
 #, python-brace-format
 msgid "¿Eliminar «{titulo}»? Esta acción no se puede deshacer."
 msgstr "Vols eliminar «{titulo}»? Aquesta acció no es pot desfer."
 
-#: app/templates/admin/panel.html:176
+#: app/templates/admin/panel.html:188
 #, python-brace-format
 msgid "Eliminar la cuenta {correo} Y todo su contenido ({n} situaciones). No se puede deshacer."
 msgstr "Eliminar el compte {correo} I tot el seu contingut ({n} situacions). No es pot desfer."
 
-#: app/templates/admin/panel.html:177
+#: app/templates/admin/panel.html:189
 #, python-brace-format
 msgid "Dar de baja a {correo} conservando sus {n} situaciones durante 90 días. Podrá recuperarlas volviendo a registrarse con este correo."
 msgstr "Donar de baixa {correo} conservant les seves {n} situacions durant 90 dies. Les podrà recuperar tornant-se a registrar amb aquest correu."
 
-#: app/templates/admin/panel.html:178
+#: app/templates/admin/panel.html:190
 msgid "No se ha podido completar la operación."
 msgstr "No s'ha pogut completar l'operació."
 
-#: app/templates/admin/panel.html:179
+#: app/templates/admin/panel.html:191
 msgid "No hay ninguna cuenta registrada."
 msgstr "No hi ha cap compte registrat."
 
-#: app/templates/admin/panel.html:180
+#: app/templates/admin/panel.html:192
 msgid "No hay situaciones que coincidan con los filtros."
 msgstr "No hi ha situacions que coincideixin amb els filtres."
 
-#: app/templates/admin/panel.html:181
+#: app/templates/admin/panel.html:193
 msgid "Activa"
 msgstr "Activa"
 
-#: app/templates/admin/panel.html:182
+#: app/templates/admin/panel.html:194
 msgid "Dada de baja"
 msgstr "Donada de baixa"
 
-#: app/templates/admin/panel.html:183
+#: app/templates/admin/panel.html:195
 msgid "Baja, pendiente de purgado"
 msgstr "Baixa, pendent de purga"
 
-#: app/templates/admin/panel.html:184
-#: app/templates/situaciones/detalle.html:161
+#: app/templates/admin/panel.html:196
+#: app/templates/situaciones/detalle.html:176
 msgid "Eliminar"
 msgstr "Eliminar"
 
-#: app/templates/admin/panel.html:185
+#: app/templates/admin/panel.html:197
 msgid "Baja total"
 msgstr "Baixa total"
 
-#: app/templates/admin/panel.html:186
+#: app/templates/admin/panel.html:198
 msgid "Baja conservando"
 msgstr "Baixa conservant"
 
-#: app/templates/admin/panel.html:187
+#: app/templates/admin/panel.html:199
 msgid "Nunca"
 msgstr "Mai"
 
-#: app/templates/admin/panel.html:189
+#: app/templates/admin/panel.html:201
 msgid "Cuentas activas"
 msgstr "Comptes actius"
 
-#: app/templates/admin/panel.html:190
+#: app/templates/admin/panel.html:202
 msgid "Dadas de baja"
 msgstr "Donades de baixa"
 
-#: app/templates/admin/panel.html:191
+#: app/templates/admin/panel.html:203
 msgid "Reclamación pendiente"
 msgstr "Reclamació pendent"
 
-#: app/templates/admin/panel.html:192
+#: app/templates/admin/panel.html:204
 msgid "Aprobar"
 msgstr "Aprovar"
 
-#: app/templates/admin/panel.html:193
+#: app/templates/admin/panel.html:205
 msgid "Rechazar"
 msgstr "Rebutjar"
 
-#: app/templates/admin/panel.html:194
+#: app/templates/admin/panel.html:206
 #, python-brace-format
 msgid "Devolver la cuenta {correo} y sus {n} situaciones a quien la reclama ({nombre}). Comprueba antes que es la misma persona: una dirección de centro puede haberse reasignado."
 msgstr "Retornar el compte {correo} i les seves {n} situacions a qui el reclama ({nombre}). Comprova abans que és la mateixa persona: una adreça de centre pot haver-se reassignat."
 
-#: app/templates/admin/panel.html:195
+#: app/templates/admin/panel.html:207
 #, python-brace-format
 msgid "Rechazar la solicitud sobre {correo}. El contenido sigue guardado hasta que venza el plazo."
 msgstr "Rebutjar la sol·licitud sobre {correo}. El contingut es manté desat fins que venci el termini."
 
-#: app/templates/admin/panel.html:196
+#: app/templates/admin/panel.html:208
 #, python-brace-format
 msgid "Solicitada por {nombre}"
 msgstr "Sol·licitada per {nombre}"
 
-#: app/templates/admin/panel.html:197
+#: app/templates/admin/panel.html:209
 msgid "Editar"
 msgstr "Editar"
 
-#: app/templates/admin/panel.html:198
+#: app/templates/admin/panel.html:210
 msgid "Guardar"
 msgstr "Desar"
 
-#: app/templates/admin/panel.html:200
+#: app/templates/admin/panel.html:212
 #, python-brace-format
 msgid "Editando {correo}"
 msgstr "Editant {correo}"
 
-#: app/templates/admin/panel.html:208
+#: app/templates/admin/panel.html:220
 msgid "Cambios guardados."
 msgstr "Canvis desats."
 
-#: app/templates/admin/panel.html:209 app/templates/situaciones/listar.html:124
+#: app/templates/admin/panel.html:221 app/templates/situaciones/listar.html:137
 msgid "Anterior"
 msgstr "Anterior"
 
-#: app/templates/admin/panel.html:210 app/templates/situaciones/listar.html:125
+#: app/templates/admin/panel.html:222 app/templates/situaciones/listar.html:138
 msgid "Siguiente"
 msgstr "Següent"
 
-#: app/templates/admin/panel.html:211 app/templates/situaciones/listar.html:126
+#: app/templates/admin/panel.html:223 app/templates/situaciones/listar.html:139
 #, python-brace-format
 msgid "Página {actual} de {ultima} · {total} en total"
 msgstr "Pàgina {actual} de {ultima} · {total} en total"
 
-#: app/templates/admin/panel.html:212 app/templates/situaciones/listar.html:117
+#: app/templates/admin/panel.html:224 app/templates/situaciones/listar.html:130
 msgid "Sin resultados"
 msgstr "Sense resultats"
 
@@ -1941,7 +1982,7 @@ msgid "Generado:"
 msgstr "Generat:"
 
 #: app/templates/exportacion/pdf.html:250
-#: app/templates/situaciones/nueva.html:178
+#: app/templates/situaciones/nueva.html:204
 msgid "Pregunta guía"
 msgstr "Pregunta guia"
 
@@ -2009,412 +2050,400 @@ msgstr "L'original del qual va sortir aquesta adaptació ja no existeix: el seu 
 msgid "Datos de la situación"
 msgstr "Dades de la situació"
 
-#: app/templates/situaciones/detalle.html:53
-#: app/templates/situaciones/nueva.html:72
+#: app/templates/situaciones/detalle.html:59
+#: app/templates/situaciones/nueva.html:87
 msgid "Elige provincia…"
 msgstr "Tria una província…"
 
-#: app/templates/situaciones/detalle.html:56
+#: app/templates/situaciones/detalle.html:62
 msgid "Si la cambias, tendrás que volver a elegir curso y materia: el currículo es otro."
 msgstr "Si la canvies, hauràs de tornar a triar curs i matèria: el currículum és un altre."
 
-#: app/templates/situaciones/detalle.html:88
+#: app/templates/situaciones/detalle.html:71
+#: app/templates/situaciones/listar.html:61
+#: app/templates/situaciones/nueva.html:101
+msgid "Etapa"
+msgstr "Etapa"
+
+#: app/templates/situaciones/detalle.html:74
+msgid "Acota el curso y la materia. Cambiarla vacía los dos."
+msgstr "Acota el curs i la matèria. Canviar-la buida tots dos."
+
+#: app/templates/situaciones/detalle.html:106
 msgid "Generando… (gestionado por el sistema)"
 msgstr "Generant… (gestionat pel sistema)"
 
-#: app/templates/situaciones/detalle.html:89
+#: app/templates/situaciones/detalle.html:107
 msgid "Error de generación (gestionado por el sistema)"
 msgstr "Error de generació (gestionat pel sistema)"
 
-#: app/templates/situaciones/detalle.html:96
+#: app/templates/situaciones/detalle.html:114
 msgid "Sesiones"
 msgstr "Sessions"
 
-#: app/templates/situaciones/detalle.html:100
+#: app/templates/situaciones/detalle.html:118
 msgid "Duración (min)"
 msgstr "Durada (min)"
 
-#: app/templates/situaciones/detalle.html:106
-#: app/templates/situaciones/nueva.html:127
+#: app/templates/situaciones/detalle.html:124
+#: app/templates/situaciones/nueva.html:156
 msgid "Español"
 msgstr "Castellà"
 
-#: app/templates/situaciones/detalle.html:107
-#: app/templates/situaciones/nueva.html:128
+#: app/templates/situaciones/detalle.html:125
+#: app/templates/situaciones/nueva.html:157
 msgid "Catalán"
 msgstr "Català"
 
-#: app/templates/situaciones/detalle.html:108
-#: app/templates/situaciones/nueva.html:129
+#: app/templates/situaciones/detalle.html:126
+#: app/templates/situaciones/nueva.html:158
 msgid "Gallego"
 msgstr "Gallec"
 
-#: app/templates/situaciones/detalle.html:109
-#: app/templates/situaciones/nueva.html:130
+#: app/templates/situaciones/detalle.html:127
+#: app/templates/situaciones/nueva.html:159
 msgid "Euskera"
 msgstr "Basc"
 
-#: app/templates/situaciones/detalle.html:110
-#: app/templates/situaciones/nueva.html:131
-msgid "Inglés"
-msgstr "Anglès"
-
-#: app/templates/situaciones/detalle.html:111
-#: app/templates/situaciones/nueva.html:132
-msgid "Francés"
-msgstr "Francès"
-
-#: app/templates/situaciones/detalle.html:112
-#: app/templates/situaciones/nueva.html:133
-msgid "Árabe"
-msgstr "Àrab"
-
-#: app/templates/situaciones/detalle.html:118
-#: app/templates/situaciones/nueva.html:139
+#: app/templates/situaciones/detalle.html:133
+#: app/templates/situaciones/nueva.html:165
 msgid "Metodología"
 msgstr "Metodologia"
 
-#: app/templates/situaciones/detalle.html:123
+#: app/templates/situaciones/detalle.html:138
 msgid "Descripción"
 msgstr "Descripció"
 
-#: app/templates/situaciones/detalle.html:128
-#: app/templates/situaciones/nueva.html:152
+#: app/templates/situaciones/detalle.html:143
+#: app/templates/situaciones/nueva.html:178
 msgid "Perfil del aula"
 msgstr "Perfil de l'aula"
 
-#: app/templates/situaciones/detalle.html:133
+#: app/templates/situaciones/detalle.html:148
 msgid "Resumen del cambio (opcional)"
 msgstr "Resum del canvi (opcional)"
 
-#: app/templates/situaciones/detalle.html:135
+#: app/templates/situaciones/detalle.html:150
 msgid "Se queda en el historial de versiones"
 msgstr "Es queda a l'historial de versions"
 
-#: app/templates/situaciones/detalle.html:139
-#: app/templates/situaciones/listar.html:75
-#: app/templates/situaciones/nueva.html:110
+#: app/templates/situaciones/detalle.html:154
+#: app/templates/situaciones/listar.html:88
+#: app/templates/situaciones/nueva.html:139
 msgid "Elige antes la provincia: el curso y la materia dependen del currículo de tu comunidad."
 msgstr "Tria abans la província: el curs i la matèria depenen del currículum de la teva comunitat."
 
-#: app/templates/situaciones/detalle.html:142
+#: app/templates/situaciones/detalle.html:157
 msgid "Elige curso y materia antes de guardar: sin ellos la situación no se puede anclar a ningún currículo."
 msgstr "Tria curs i matèria abans de desar: sense ells la situació no es pot ancorar a cap currículum."
 
-#: app/templates/situaciones/detalle.html:153
-#: app/templates/situaciones/detalle.html:299
+#: app/templates/situaciones/detalle.html:168
+#: app/templates/situaciones/detalle.html:315
 msgid "Marcar como terminada"
 msgstr "Marcar com a acabada"
 
-#: app/templates/situaciones/detalle.html:157
+#: app/templates/situaciones/detalle.html:172
 msgid "Duplicar"
 msgstr "Duplicar"
 
-#: app/templates/situaciones/detalle.html:171
+#: app/templates/situaciones/detalle.html:186
 msgid "Genera el contenido didáctico completo o regenera una sección concreta. Durante la generación la situación queda bloqueada."
 msgstr "Genera el contingut didàctic complet o regenera una secció concreta. Durant la generació la situació queda bloquejada."
 
-#: app/templates/situaciones/detalle.html:176
-#: app/templates/situaciones/detalle.html:297
+#: app/templates/situaciones/detalle.html:191
+#: app/templates/situaciones/detalle.html:313
 msgid "Generar contenido completo"
 msgstr "Generar contingut complet"
 
-#: app/templates/situaciones/detalle.html:182
+#: app/templates/situaciones/detalle.html:197
 msgid "Generando sección"
 msgstr "Generant secció"
 
-#: app/templates/situaciones/detalle.html:192
+#: app/templates/situaciones/detalle.html:207
 msgid "Contenido generado"
 msgstr "Contingut generat"
 
-#: app/templates/situaciones/detalle.html:196
+#: app/templates/situaciones/detalle.html:211
 msgid "Descargar PDF"
 msgstr "Descarregar PDF"
 
-#: app/templates/situaciones/detalle.html:200
+#: app/templates/situaciones/detalle.html:215
 msgid "Descargar DOCX"
 msgstr "Descarregar DOCX"
 
-#: app/templates/situaciones/detalle.html:206
+#: app/templates/situaciones/detalle.html:221
 msgid "Todavía no se ha generado contenido. Usa el botón de arriba para lanzarlo."
 msgstr "Encara no s'ha generat contingut. Fes servir el botó de dalt per llançar-lo."
 
-#: app/templates/situaciones/detalle.html:212
+#: app/templates/situaciones/detalle.html:227
 msgid "Adaptaciones curriculares"
 msgstr "Adaptacions curriculars"
 
-#: app/templates/situaciones/detalle.html:214
+#: app/templates/situaciones/detalle.html:229
 msgid "Genera una adaptación curricular a partir de esta situación de aprendizaje, diferenciando si modifica los criterios de evaluación o no."
 msgstr "Genera una adaptació curricular a partir d'aquesta situació d'aprenentatge, diferenciant si modifica els criteris d'avaluació o no."
 
-#: app/templates/situaciones/detalle.html:220
+#: app/templates/situaciones/detalle.html:235
 msgid "Tipo de adaptación"
 msgstr "Tipus d'adaptació"
 
-#: app/templates/situaciones/detalle.html:222
+#: app/templates/situaciones/detalle.html:237
 msgid "No Significativa (ACNS) — no modifica criterios"
 msgstr "No Significativa (ACNS) — no modifica criteris"
 
-#: app/templates/situaciones/detalle.html:223
+#: app/templates/situaciones/detalle.html:238
 msgid "Significativa (ACS) — modifica criterios y/o contenidos"
 msgstr "Significativa (ACS) — modifica criteris i/o continguts"
 
-#: app/templates/situaciones/detalle.html:227
+#: app/templates/situaciones/detalle.html:242
 msgid "Título (opcional)"
 msgstr "Títol (opcional)"
 
-#: app/templates/situaciones/detalle.html:229
+#: app/templates/situaciones/detalle.html:244
 msgid "Se genera automáticamente si se deja vacío"
 msgstr "Es genera automàticament si es deixa buit"
 
-#: app/templates/situaciones/detalle.html:234
+#: app/templates/situaciones/detalle.html:249
 msgid "Descripción del alumno/a"
 msgstr "Descripció de l'alumne/a"
 
-#: app/templates/situaciones/detalle.html:235
+#: app/templates/situaciones/detalle.html:250
 msgid "(sustituye al “Perfil del aula” en la SA adaptada · mín. 10 caracteres)"
 msgstr "(substitueix el “Perfil de l'aula” a la SA adaptada · mín. 10 caràcters)"
 
-#: app/templates/situaciones/detalle.html:238
+#: app/templates/situaciones/detalle.html:253
 msgid "Ej: Alumno con TDAH, necesita tareas fragmentadas y refuerzo visual…"
 msgstr "Ex: Alumne amb TDAH, necessita tasques fragmentades i reforç visual…"
 
-#: app/templates/situaciones/detalle.html:241
+#: app/templates/situaciones/detalle.html:256
 msgid "Generar adaptación"
 msgstr "Generar adaptació"
 
-#: app/templates/situaciones/detalle.html:250
+#: app/templates/situaciones/detalle.html:265
 msgid "Historial de versiones"
 msgstr "Historial de versions"
 
-#: app/templates/situaciones/detalle.html:251
+#: app/templates/situaciones/detalle.html:266
 msgid "Aún no hay versiones guardadas. Cada vez que modifiques esta situación se creará una nueva entrada."
 msgstr "Encara no hi ha versions desades. Cada vegada que modifiquis aquesta situació es crearà una nova entrada."
 
-#: app/templates/situaciones/detalle.html:254
+#: app/templates/situaciones/detalle.html:269
 msgid "Versiones guardadas de esta situación"
 msgstr "Versions desades d'aquesta situació"
 
-#: app/templates/situaciones/detalle.html:258
+#: app/templates/situaciones/detalle.html:273
 msgid "Fecha"
 msgstr "Data"
 
-#: app/templates/situaciones/detalle.html:259
+#: app/templates/situaciones/detalle.html:274
 msgid "Cambio"
 msgstr "Canvi"
 
-#: app/templates/situaciones/detalle.html:260
+#: app/templates/situaciones/detalle.html:275
 msgid "Título previo"
 msgstr "Títol previ"
 
-#: app/templates/situaciones/detalle.html:286
-#: app/templates/situaciones/nueva.html:219
+#: app/templates/situaciones/detalle.html:301
+#: app/templates/situaciones/nueva.html:246
 msgid "Una de las dos opciones de Matemáticas de 4.º. Se desarrolla sobre todo mediante la resolución de problemas, la investigación y el análisis matemático de situaciones de la vida cotidiana."
 msgstr "Una de les dues opcions de Matemàtiques de 4t. Es desenvolupa sobretot mitjançant la resolució de problemes, la investigació i l'anàlisi matemàtica de situacions de la vida quotidiana."
 
-#: app/templates/situaciones/detalle.html:287
-#: app/templates/situaciones/nueva.html:220
+#: app/templates/situaciones/detalle.html:302
+#: app/templates/situaciones/nueva.html:247
 msgid "La otra opción de Matemáticas de 4.º. Además de lo anterior, profundiza en los procedimientos algebraicos, geométricos, analíticos y estadísticos, en contextos matemáticos, científicos y sociales. El real decreto no la vincula a ninguna modalidad de Bachillerato: la diferencia que establece es de enfoque."
 msgstr "L'altra opció de Matemàtiques de 4t. A més de l'anterior, aprofundeix en els procediments algebraics, geomètrics, analítics i estadístics, en contextos matemàtics, científics i socials. El reial decret no la vincula a cap modalitat de Batxillerat: la diferència que estableix és d'enfocament."
 
-#: app/templates/situaciones/detalle.html:293
+#: app/templates/situaciones/detalle.html:308
+#: app/templates/situaciones/nueva.html:213
+msgid "Todas las etapas"
+msgstr "Totes les etapes"
+
+#: app/templates/situaciones/detalle.html:309
 msgid "Elige curso y materia antes de guardar."
 msgstr "Tria curs i matèria abans de desar."
 
-#: app/templates/situaciones/detalle.html:294
+#: app/templates/situaciones/detalle.html:310
 msgid "No tienes permiso para ver esta situación"
 msgstr "No tens permís per veure aquesta situació"
 
-#: app/templates/situaciones/detalle.html:295
+#: app/templates/situaciones/detalle.html:311
 msgid "No encontrada"
 msgstr "No s'ha trobat"
 
-#: app/templates/situaciones/detalle.html:296
-#: app/templates/situaciones/nueva.html:186
+#: app/templates/situaciones/detalle.html:312
+#: app/templates/situaciones/nueva.html:212
 msgid "— Sin especificar —"
 msgstr "— Sense especificar —"
 
-#: app/templates/situaciones/detalle.html:298
+#: app/templates/situaciones/detalle.html:314
 msgid "Regenerar todo"
 msgstr "Regenerar-ho tot"
 
-#: app/templates/situaciones/detalle.html:300
+#: app/templates/situaciones/detalle.html:316
 #, python-brace-format
 msgid "Traducir a {idioma}"
 msgstr "Traduir a {idioma}"
 
-#: app/templates/situaciones/detalle.html:303
+#: app/templates/situaciones/detalle.html:319
 msgid "La generación está tardando más de lo normal. Sigue en marcha en el servidor: vuelve a abrir la situación en unos minutos para ver el resultado."
 msgstr "La generació està trigant més del normal. Continua en marxa al servidor: torna a obrir la situació d'aquí a uns minuts per veure el resultat."
 
-#: app/templates/situaciones/detalle.html:304
+#: app/templates/situaciones/detalle.html:320
 msgid "No se ha podido deshacer."
 msgstr "No s'ha pogut desfer."
 
-#: app/templates/situaciones/detalle.html:305
+#: app/templates/situaciones/detalle.html:321
 msgid "Cambios guardados correctamente."
 msgstr "Canvis desats correctament."
 
-#: app/templates/situaciones/detalle.html:306
+#: app/templates/situaciones/detalle.html:322
 msgid "El perfil del alumnado debe tener al menos 10 caracteres."
 msgstr "El perfil de l'alumnat ha de tenir com a mínim 10 caràcters."
 
-#: app/templates/situaciones/detalle.html:307
+#: app/templates/situaciones/detalle.html:323
 msgid "Regenerar"
 msgstr "Regenerar"
 
-#: app/templates/situaciones/detalle.html:308
+#: app/templates/situaciones/detalle.html:324
 msgid "Deshacer"
 msgstr "Desfés"
 
-#: app/templates/situaciones/detalle.html:316
+#: app/templates/situaciones/detalle.html:332
 msgid "Hay dos redacciones de esta sección."
 msgstr "Hi ha dues redaccions d'aquesta secció."
 
-#: app/templates/situaciones/detalle.html:317
+#: app/templates/situaciones/detalle.html:333
 msgid "Quédate con una para seguir. La descartada permanece en el historial de versiones, así que podrás recuperarla."
 msgstr "Queda't amb una per continuar. La descartada es manté a l'historial de versions, així que la podràs recuperar."
 
-#: app/templates/situaciones/detalle.html:318
+#: app/templates/situaciones/detalle.html:334
 msgid "Versión actual"
 msgstr "Versió actual"
 
-#: app/templates/situaciones/detalle.html:319
+#: app/templates/situaciones/detalle.html:335
 msgid "Alternativa propuesta"
 msgstr "Alternativa proposada"
 
-#: app/templates/situaciones/detalle.html:320
+#: app/templates/situaciones/detalle.html:336
 msgid "Quedarme con esta"
 msgstr "Quedar-me amb aquesta"
 
-#: app/templates/situaciones/detalle.html:323
+#: app/templates/situaciones/detalle.html:339
 msgid "Reabrir situación"
 msgstr "Reobrir situació"
 
-#: app/templates/situaciones/detalle.html:324
+#: app/templates/situaciones/detalle.html:340
 msgid "Escuchar"
 msgstr "Escoltar"
 
-#: app/templates/situaciones/detalle.html:325
+#: app/templates/situaciones/detalle.html:341
 msgid "Parar"
 msgstr "Aturar"
 
-#: app/templates/situaciones/detalle.html:326
+#: app/templates/situaciones/detalle.html:342
 msgid "Leyendo en voz alta…"
 msgstr "Llegint en veu alta…"
 
-#: app/templates/situaciones/detalle.html:327
+#: app/templates/situaciones/detalle.html:343
 #, python-brace-format
 msgid "Tu sistema no tiene ninguna voz instalada para {idioma}, así que la lectura inmediata no está disponible. Puedes generar el audio en el servidor con el botón «Generar audio» de cada sección: tarda unos segundos y luego se puede escuchar y descargar."
 msgstr "El teu sistema no té cap veu instal·lada per a {idioma}, així que la lectura immediata no està disponible. Pots generar l'àudio al servidor amb el botó «Generar àudio» de cada secció: triga uns segons i després es pot escoltar i descarregar."
 
-#: app/templates/situaciones/detalle.html:328
+#: app/templates/situaciones/detalle.html:344
 msgid "Generar audio"
 msgstr "Generar àudio"
 
-#: app/templates/situaciones/detalle.html:330
+#: app/templates/situaciones/detalle.html:346
 msgid "Audio generado"
 msgstr "Àudio generat"
 
-#: app/templates/situaciones/detalle.html:331
+#: app/templates/situaciones/detalle.html:347
 msgid "No se ha podido generar el audio. Inténtalo de nuevo en un momento."
 msgstr "No s'ha pogut generar l'àudio. Torna-ho a provar d'aquí a un moment."
 
-#: app/templates/situaciones/detalle.html:332
+#: app/templates/situaciones/detalle.html:348
 msgid "Descargar"
 msgstr "Descarregar"
 
-#: app/templates/situaciones/detalle.html:333
+#: app/templates/situaciones/detalle.html:349
 msgid "Ya hay una generación en curso."
 msgstr "Ja hi ha una generació en curs."
 
-#: app/templates/situaciones/detalle.html:334
+#: app/templates/situaciones/detalle.html:350
 msgid "No se pudo lanzar la generación."
 msgstr "No s'ha pogut llançar la generació."
 
-#: app/templates/situaciones/detalle.html:335
+#: app/templates/situaciones/detalle.html:351
 msgid "La generación terminó con error: "
 msgstr "La generació ha acabat amb error: "
 
-#: app/templates/situaciones/detalle.html:336
+#: app/templates/situaciones/detalle.html:352
 msgid "No se ha podido guardar la elección."
 msgstr "No s'ha pogut desar l'elecció."
 
-#: app/templates/situaciones/detalle.html:337
+#: app/templates/situaciones/detalle.html:353
 msgid "Adaptación lanzada. Serás redirigido a la nueva SA…"
 msgstr "Adaptació llançada. Se't redirigirà a la nova SA…"
 
-#: app/templates/situaciones/detalle.html:338
+#: app/templates/situaciones/detalle.html:354
 msgid "Aún no hay adaptaciones generadas para esta situación."
 msgstr "Encara no hi ha adaptacions generades per a aquesta situació."
 
-#: app/templates/situaciones/detalle.html:339
+#: app/templates/situaciones/detalle.html:355
 #, python-brace-format
 msgid "El idioma destino es el de la situación ({idioma}). Cámbialo arriba, en el campo Idioma."
 msgstr "L'idioma de destí és el de la situació ({idioma}). Canvia'l a dalt, al camp Idioma."
 
-#: app/templates/situaciones/detalle.html:340
+#: app/templates/situaciones/detalle.html:356
 #, python-brace-format
 msgid "¿Regenerar la sección «{nombre}»? Se sobrescribirá su contenido actual."
 msgstr "Vols regenerar la secció «{nombre}»? Se'n sobreescriurà el contingut actual."
 
-#: app/templates/situaciones/detalle.html:341
+#: app/templates/situaciones/detalle.html:357
 msgid "¿Seguro que quieres eliminar esta situación? Se eliminará también su historial de versiones."
 msgstr "Segur que vols eliminar aquesta situació? També se n'eliminarà l'historial de versions."
 
-#: app/templates/situaciones/detalle.html:347
+#: app/templates/situaciones/detalle.html:363
 msgid "español"
 msgstr "castellà"
 
-#: app/templates/situaciones/detalle.html:348
+#: app/templates/situaciones/detalle.html:364
 msgid "catalán"
 msgstr "català"
 
-#: app/templates/situaciones/detalle.html:349
+#: app/templates/situaciones/detalle.html:365
 msgid "gallego"
 msgstr "gallec"
 
-#: app/templates/situaciones/detalle.html:350
+#: app/templates/situaciones/detalle.html:366
 msgid "euskera"
 msgstr "basc"
 
-#: app/templates/situaciones/detalle.html:351
-msgid "inglés"
-msgstr "anglès"
-
-#: app/templates/situaciones/detalle.html:352
-msgid "francés"
-msgstr "francès"
-
-#: app/templates/situaciones/detalle.html:353
-msgid "árabe"
-msgstr "àrab"
-
-#: app/templates/situaciones/detalle.html:360
+#: app/templates/situaciones/detalle.html:373
 msgid "Conexión curricular (competencias · criterios · saberes)"
 msgstr "Connexió curricular (competències · criteris · sabers)"
 
-#: app/templates/situaciones/detalle.html:362
+#: app/templates/situaciones/detalle.html:375
 msgid "Evaluación (instrumentos y rúbricas)"
 msgstr "Avaluació (instruments i rúbriques)"
 
-#: app/templates/situaciones/detalle.html:363
+#: app/templates/situaciones/detalle.html:376
 msgid "Atención a la diversidad (DUA)"
 msgstr "Atenció a la diversitat (DUA)"
 
-#: app/templates/situaciones/detalle.html:518
+#: app/templates/situaciones/detalle.html:567
 msgid "Resumir"
 msgstr "Resumir"
 
-#: app/templates/situaciones/detalle.html:519
+#: app/templates/situaciones/detalle.html:568
 msgid "Desarrollar"
 msgstr "Desenvolupar"
 
-#: app/templates/situaciones/detalle.html:520
+#: app/templates/situaciones/detalle.html:569
 msgid "Traducir"
 msgstr "Traduir"
 
-#: app/templates/situaciones/detalle.html:521
+#: app/templates/situaciones/detalle.html:570
 msgid "Proponer alternativa"
 msgstr "Proposar alternativa"
 
@@ -2434,32 +2463,32 @@ msgstr "Cercar per títol"
 msgid "Ej: Robótica"
 msgstr "Ex: Robòtica"
 
-#: app/templates/situaciones/listar.html:84
+#: app/templates/situaciones/listar.html:97
 msgid "No hay situaciones que coincidan con los filtros aplicados. <a href=\"/situaciones/nueva\" class=\"link\">Crea la primera</a>."
 msgstr "No hi ha situacions que coincideixin amb els filtres aplicats. <a href=\"/situaciones/nueva\" class=\"link\">Crea la primera</a>."
 
-#: app/templates/situaciones/listar.html:89
+#: app/templates/situaciones/listar.html:102
 msgid "Listado de situaciones de aprendizaje del docente"
 msgstr "Llistat de situacions d'aprenentatge del docent"
 
-#: app/templates/situaciones/listar.html:103
+#: app/templates/situaciones/listar.html:116
 msgid "Páginas de resultados"
 msgstr "Pàgines de resultats"
 
-#: app/templates/situaciones/listar.html:118
+#: app/templates/situaciones/listar.html:131
 #, python-brace-format
 msgid "{n} situaciones encontradas"
 msgstr "{n} situacions trobades"
 
-#: app/templates/situaciones/listar.html:119
+#: app/templates/situaciones/listar.html:132
 msgid "1 situación encontrada"
 msgstr "1 situació trobada"
 
-#: app/templates/situaciones/listar.html:120
+#: app/templates/situaciones/listar.html:133
 msgid "Abrir"
 msgstr "Obrir"
 
-#: app/templates/situaciones/listar.html:121
+#: app/templates/situaciones/listar.html:134
 #, python-brace-format
 msgid "Abrir situación {titulo}"
 msgstr "Obrir situació {titulo}"
@@ -2492,84 +2521,88 @@ msgstr "Si ho deixes buit, les propostes es basaran només en el curs i la matè
 msgid "Proponer temáticas"
 msgstr "Proposar temàtiques"
 
-#: app/templates/situaciones/nueva.html:56
+#: app/templates/situaciones/nueva.html:63
 msgid "Ej: La Antártida: una expedición científica"
 msgstr "Ex: L'Antàrtida: una expedició científica"
 
-#: app/templates/situaciones/nueva.html:75
+#: app/templates/situaciones/nueva.html:90
 msgid "Determina el currículo que se aplica: cada comunidad tiene el suyo."
 msgstr "Determina el currículum que s'aplica: cada comunitat té el seu."
 
-#: app/templates/situaciones/nueva.html:115
+#: app/templates/situaciones/nueva.html:104
+msgid "Acota el curso y la materia. Déjalo en «Todas» para ver el catálogo completo."
+msgstr "Acota el curs i la matèria. Deixa-ho a «Totes» per veure el catàleg complet."
+
+#: app/templates/situaciones/nueva.html:144
 msgid "Nº de sesiones"
 msgstr "Nre. de sessions"
 
-#: app/templates/situaciones/nueva.html:120
+#: app/templates/situaciones/nueva.html:149
 msgid "Duración por sesión (min)"
 msgstr "Durada per sessió (min)"
 
-#: app/templates/situaciones/nueva.html:144
+#: app/templates/situaciones/nueva.html:170
 msgid "Descripción / contexto"
 msgstr "Descripció / context"
 
-#: app/templates/situaciones/nueva.html:147
+#: app/templates/situaciones/nueva.html:173
 msgid "Tema, conexión con otras unidades, reto motivador…"
 msgstr "Tema, connexió amb altres unitats, repte motivador…"
 
-#: app/templates/situaciones/nueva.html:148
+#: app/templates/situaciones/nueva.html:174
 msgid "Máximo 4000 caracteres."
 msgstr "Màxim 4000 caràcters."
 
-#: app/templates/situaciones/nueva.html:154
+#: app/templates/situaciones/nueva.html:180
 msgid "Diversidad de partida, intereses, idiomas, etc."
 msgstr "Diversitat de partida, interessos, idiomes, etc."
 
-#: app/templates/situaciones/nueva.html:160
+#: app/templates/situaciones/nueva.html:186
 msgid "Generar contenido con IA al crear"
 msgstr "Generar contingut amb IA en crear"
 
-#: app/templates/situaciones/nueva.html:162
+#: app/templates/situaciones/nueva.html:188
 msgid "Si lo desmarcas, la situación se guarda en borrador y podrás generarla más adelante."
 msgstr "Si ho desmarques, la situació es desa com a esborrany i la podràs generar més endavant."
 
-#: app/templates/situaciones/nueva.html:166
+#: app/templates/situaciones/nueva.html:192
 msgid "Crear situación"
 msgstr "Crear situació"
 
-#: app/templates/situaciones/nueva.html:187
+#: app/templates/situaciones/nueva.html:214
 msgid "Producto final:"
 msgstr "Producte final:"
 
-#: app/templates/situaciones/nueva.html:188
+#: app/templates/situaciones/nueva.html:215
 msgid "Usar esta propuesta"
 msgstr "Fer servir aquesta proposta"
 
-#: app/templates/situaciones/nueva.html:189
+#: app/templates/situaciones/nueva.html:216
 #, python-brace-format
 msgid "Usar la propuesta {n}: {titulo}"
 msgstr "Fer servir la proposta {n}: {titulo}"
 
-#: app/templates/situaciones/nueva.html:190
+#: app/templates/situaciones/nueva.html:217
 msgid "Elige antes el curso y la materia en el formulario de abajo."
 msgstr "Tria abans el curs i la matèria al formulari de sota."
 
-#: app/templates/situaciones/nueva.html:191
+#: app/templates/situaciones/nueva.html:218
 msgid "Pensando ideas…"
 msgstr "Pensant idees…"
 
-#: app/templates/situaciones/nueva.html:192
+#: app/templates/situaciones/nueva.html:219
 msgid "Has pedido muchas sugerencias seguidas. Espera un poco antes de volver a intentarlo."
 msgstr "Has demanat molts suggeriments seguits. Espera una mica abans de tornar-ho a provar."
 
-#: app/templates/situaciones/nueva.html:193
+#: app/templates/situaciones/nueva.html:220
 msgid "No se han podido obtener sugerencias."
 msgstr "No s'han pogut obtenir suggeriments."
 
-#: app/templates/situaciones/nueva.html:195
+#: app/templates/situaciones/nueva.html:222
 msgid "Creando y lanzando IA…"
 msgstr "Creant i llançant la IA…"
 
-#: app/templates/situaciones/nueva.html:196
+#: app/templates/situaciones/nueva.html:223
 msgid "Creando…"
 msgstr "Creant…"
 
@@ -2641,4 +2674,40 @@ msgstr "Creant…"
 
 #~ msgid "Tiempo de espera agotado sin respuesta de la tarea."
 #~ msgstr "S'ha esgotat el temps d'espera sense resposta de la tasca."
+
+#~ msgid "El campo <strong>Idioma</strong> determina en qué lengua se redacta el documento, y es independiente del idioma en el que veas la aplicación. Puedes tener la interfaz en castellano y crear la situación directamente en catalán, gallego, euskera, inglés, francés o árabe."
+#~ msgstr "El camp <strong>Idioma</strong> determina en quina llengua es redacta el document, i és independent de l'idioma en què vegis l'aplicació. Pots tenir la interfície en castellà i crear la situació directament en català, gallec, èuscar, anglès, francès o àrab."
+
+#~ msgid "Las competencias específicas, los criterios de evaluación y los saberes básicos no los inventa la IA: se extraen del texto oficial publicado en el BOE y se cargan en la aplicación. La fuente es la <strong>Orden EFP/754/2022</strong>, que desarrolla el Real Decreto 217/2022 de enseñanzas mínimas de la ESO."
+#~ msgstr "Les competències específiques, els criteris d'avaluació i els sabers bàsics no se'ls inventa la IA: s'extreuen del text oficial publicat al BOE i es carreguen a l'aplicació. La font és l'<strong>Ordre EFP/754/2022</strong>, que desenvolupa el Reial decret 217/2022 d'ensenyaments mínims de l'ESO."
+
+#~ msgid "Están disponibles las materias de Educación Secundaria Obligatoria. Bachillerato y Formación Profesional todavía no."
+#~ msgstr "Hi ha disponibles les matèries d'Educació Secundària Obligatòria. Batxillerat i Formació Professional encara no."
+
+#~ msgid "Materias que no encontrarás"
+#~ msgstr "Matèries que no trobaràs"
+
+#~ msgid "<strong>Segunda Lengua Extranjera</strong> no aparece en el desplegable. No es un olvido: el BOE no le publica currículo propio, sino que remite al de la primera lengua extranjera. Mientras AWEBO no sepa reutilizarlo, ofrecerla daría una materia sin ningún criterio que seleccionar."
+#~ msgstr "<strong>Segona Llengua Estrangera</strong> no apareix al desplegable. No és un oblit: el BOE no li publica currículum propi, sinó que remet al de la primera llengua estrangera. Mentre AWEBO no sàpiga reutilitzar-lo, oferir-la donaria una matèria sense cap criteri per seleccionar."
+
+#~ msgid "Comprueba primero el curso: cada materia solo aparece en los cursos en los que se imparte. Si buscas Segunda Lengua Extranjera, no está disponible todavía; y si buscas Tecnología en 2.º o 3.º, ahí se llama Tecnología y Digitalización."
+#~ msgstr "Comprova primer el curs: cada matèria només apareix als cursos on s'imparteix. Si busques Segona Llengua Estrangera, encara no està disponible; i si busques Tecnologia a 2n o 3r, allà s'anomena Tecnologia i Digitalització."
+
+#~ msgid "Inglés"
+#~ msgstr "Anglès"
+
+#~ msgid "Francés"
+#~ msgstr "Francès"
+
+#~ msgid "Árabe"
+#~ msgstr "Àrab"
+
+#~ msgid "inglés"
+#~ msgstr "anglès"
+
+#~ msgid "francés"
+#~ msgstr "francès"
+
+#~ msgid "árabe"
+#~ msgstr "àrab"
 
