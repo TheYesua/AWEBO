@@ -585,7 +585,15 @@ class TestLasDosEtapasSonElMismoLector:
         }
 
 
-@pytest.mark.skipif(not FUENTES_BACH.exists(),
+# La guarda mira si hay **PDF**, no si existe la carpeta. Existir, existe
+# siempre: lleva un `LEEME.md` versionado y los PDF están en el `.gitignore`.
+# En la CI la carpeta se monta vacía, así que `.exists()` daba verdad, la clase
+# entera se ejecutaba sobre cero ficheros, y el resultado era una mezcla
+# especialmente mala: nueve tests con error, cuatro en rojo y dos en VERDE, los
+# dos cuya aserción es «no hay ninguna materia mal» —vacuamente cierta cuando no
+# hay ninguna materia. La regla 8 otra vez: la condición se cumplía y no era la
+# propiedad que se quería.
+@pytest.mark.skipif(not list(FUENTES_BACH.glob("*.pdf")),
                     reason=f"no están los PDF en {FUENTES_BACH}")
 class TestContraElBacharelatoGallego:
     """Los 54 PDF del Decreto 157/2022.

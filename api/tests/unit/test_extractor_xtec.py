@@ -585,14 +585,27 @@ class TestLaTablaDeCursosDeBachillerato:
         assert ESO_XTEC.curso_de_saberes("A. Escolta i percepció musical") is None
 
 
-@pytest.mark.skipif(not BATX.exists(), reason=f"no está {BATX}")
+# Mira si hay **PDF**, no si existe la carpeta: existir existe siempre, porque
+# lleva un `LEEME.md` versionado mientras los PDF están en el `.gitignore`. En
+# la CI se montaba vacía, `.exists()` daba verdad y la clase corría sobre cero
+# ficheros. Ver el comentario largo en `test_extractor_dog.py`, donde el mismo
+# descuido produjo además dos verdes vacuos.
+@pytest.mark.skipif(not list(BATX.glob("*.pdf")), reason=f"no hay PDF en {BATX}")
 class TestElBachilleratoCatalanCompleto:
     """Los 79 PDF de la XTEC, leídos enteros."""
 
     @pytest.fixture(scope="class")
     def todo(self):
+        # Que estén los 79 y no «algunos». Sin esta cuenta, una descarga a
+        # medias no se distingue de un currículo con materias de menos: los
+        # tests de abajo comparan listas de materias, así que dirían «falta
+        # Biomedicina» cuando lo que falta es su PDF. Es la comprobación
+        # equivalente a la de `test_extractor_dog.py`, que sí la tenía.
+        pdfs = sorted(BATX.glob("*.pdf"))
+        assert len(pdfs) == 79, f"faltan PDF: hay {len(pdfs)} de 79"
+
         bloques = []
-        for pdf in sorted(BATX.glob("*.pdf")):
+        for pdf in pdfs:
             for mc in extraer(pdf, etapa=BACHILLERATO):
                 if not mc.cursos_aplicables:
                     mc.cursos_aplicables = list(

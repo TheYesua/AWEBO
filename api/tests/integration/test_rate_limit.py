@@ -77,9 +77,20 @@ def _limpiar_db(app):
 
 
 def _limpiar_redis():
+    """El mismo Redis que usa el limiter de estos tests, no otro.
+
+    Aquí estuvo escrito `redis://redis:6379/5` a pelo. Lo llamativo es que la
+    línea de al lado —`RateLimitConfig.RATELIMIT_STORAGE_URI`— ya se había
+    arreglado para derivarla de `Config.REDIS_URL`: se corrigió la constante y
+    se dejó la copia de la función auxiliar tres líneas más abajo.
+
+    Ahora se lee de la config, que es el único sitio donde puede estar la
+    respuesta correcta. Aunque ambas líneas volvieran a divergir, el fallo ya no
+    sería posible: solo hay una.
+    """
     import redis
 
-    redis.from_url("redis://redis:6379/5").flushdb()
+    redis.from_url(RateLimitConfig.RATELIMIT_STORAGE_URI).flushdb()
 
 
 def _register(client, correo):

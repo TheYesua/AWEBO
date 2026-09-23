@@ -77,6 +77,7 @@ jobs:
             -e SESSION_REDIS_URL=redis://localhost:6379/3 \
             -e CELERY_BROKER_URL=redis://localhost:6379/1 \
             -e CELERY_RESULT_BACKEND=redis://localhost:6379/2 \
+            -e RATELIMIT_STORAGE_URI=redis://localhost:6379/4 \
             -e AI_PROVIDER=fake \
             -e SECRET_KEY=clave-solo-para-ci \
             -v "$PWD/api:/app" -w /app \
@@ -182,6 +183,7 @@ jobs:
             -e SESSION_REDIS_URL=redis://localhost:6379/3 \
             -e CELERY_BROKER_URL=redis://localhost:6379/1 \
             -e CELERY_RESULT_BACKEND=redis://localhost:6379/2 \
+            -e RATELIMIT_STORAGE_URI=redis://localhost:6379/4 \
             -e AI_PROVIDER=fake \
             -e SECRET_KEY=clave-solo-para-ci \
             -e FLASK_ENV=development \

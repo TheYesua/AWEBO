@@ -233,6 +233,116 @@ def test_la_ci_no_pasa_variables_que_nadie_lee():
     )
 
 
+def _servicios_de_compose() -> set[str]:
+    return set(_cargar("docker-compose.yml")["services"])
+
+
+def _defaults_que_nombran_un_servicio() -> dict[str, str]:
+    """Variables de `config.py` cuyo valor por defecto apunta a un servicio.
+
+    Se cruzan dos fuentes que no se copian la una a la otra: los nombres de
+    servicio salen de `docker-compose.yml` y los valores por defecto de
+    `config.py`. Escribir aquí la lista `{postgres, redis}` a mano habría hecho
+    que renombrar un servicio dejara el test en verde sin vigilar nada.
+    """
+    from app import config as modulo
+
+    texto = Path(modulo.__file__).read_text(encoding="utf-8")
+    servicios = _servicios_de_compose()
+
+    encontradas = {}
+    patron = r'os\.environ\.get\(\s*["\']([A-Z0-9_]+)["\']\s*,\s*["\']([^"\']+)["\']'
+    for nombre, defecto in re.findall(patron, texto, re.S):
+        anfitrion = re.search(r"//(?:[^@/]*@)?([^:/]+)", defecto)
+        if anfitrion and anfitrion.group(1) in servicios:
+            encontradas[nombre] = defecto
+    return encontradas
+
+
+def _bloques_docker_run(texto: str) -> list[str]:
+    """Cada `docker run` del workflow, con sus líneas de continuación."""
+    lineas = texto.splitlines()
+    bloques = []
+    for i, linea in enumerate(lineas):
+        if "docker run" not in linea:
+            continue
+        trozo = [linea]
+        while trozo[-1].rstrip().endswith("\\") and i + len(trozo) < len(lineas):
+            trozo.append(lineas[i + len(trozo)])
+        bloques.append("\n".join(trozo))
+    return bloques
+
+
+def test_la_ci_sobrescribe_todo_lo_que_apunte_a_un_servicio_de_compose():
+    """El reverso de `test_la_ci_no_pasa_variables_que_nadie_lee`, y el que
+    habría evitado la segunda mitad del problema.
+
+    EL FALLO QUE PUSO ESTE TEST
+    ----------------------------
+    Aquel test comprueba que **lo que la CI pasa** lo lea alguien. Esto es lo
+    contrario: que **lo que la CI no pasa** no deje un valor por defecto
+    inservible. Y era la mitad que faltaba.
+
+    Los `docker run` del workflow van con `--network host`, donde los nombres de
+    servicio de Compose —`postgres`, `redis`— no resuelven. El workflow
+    sobrescribía seis variables con `localhost`... y se dejaba
+    `RATELIMIT_STORAGE_URI`, cuyo defecto es `redis://redis:6379/4`. Resultado:
+    Flask-Limiter no arrancaba, `/health` devolvía 500 treinta veces seguidas y
+    el trabajo de accesibilidad moría en «la aplicación no respondió en 30 s»,
+    un mensaje que no menciona Redis por ningún lado.
+
+    Es la **tercera** vez que el mismo error pasa por sitios distintos: la
+    variable del correo en agosto, `DATABASE_URL` el 22/09 y esta. Las tres
+    comparten forma —un valor por defecto que se aplica en silencio— y las dos
+    primeras se arreglaron una a una. Esta comprueba la clase entera, que es lo
+    que había que hacer desde la primera.
+
+    POR QUÉ MIRA CADA `docker run` POR SEPARADO
+    --------------------------------------------
+    Porque el fallo fue justamente que una de las dos listas tenía una variable
+    que la otra no. Buscar en el workflow entero daría verde con que apareciera
+    en cualquier sitio.
+    """
+    pendientes = _defaults_que_nombran_un_servicio()
+    assert pendientes, "el detector no encontró ninguna variable: revísalo"
+
+    workflow = (RAIZ / ".github" / "workflows" / "verificar.yml").read_text(
+        encoding="utf-8"
+    )
+    bloques = _bloques_docker_run(workflow)
+    assert bloques, "el detector no encontró ningún `docker run`: revísalo"
+
+    for bloque in bloques:
+        if "--network host" not in bloque:
+            continue
+        pasadas = set(re.findall(r"-e\s+([A-Z0-9_]+)=", bloque))
+        faltan = sorted(set(pendientes) - pasadas)
+        assert not faltan, (
+            f"este `docker run` no sobrescribe {faltan}, y su valor por defecto "
+            f"apunta a un servicio de Compose "
+            f"({', '.join(pendientes[v] for v in faltan)}). Con `--network "
+            f"host` ese nombre no resuelve, y el fallo sale lejos de aquí: la "
+            f"aplicación arranca y luego devuelve 500.\n\n{bloque}"
+        )
+
+
+def test_el_detector_de_defaults_reconoce_los_dos_que_ya_fallaron():
+    """Regla 15: el instrumento de medida también se comprueba.
+
+    Un detector de este tipo falla en verde con facilidad —basta que la
+    expresión regular deje de casar con el formato de `config.py`— y entonces
+    el test de arriba pasa sin mirar nada. Se ancla en las dos variables cuyo
+    fallo está documentado con fecha.
+    """
+    encontradas = _defaults_que_nombran_un_servicio()
+
+    assert "DATABASE_URL" in encontradas, "el detector no ve el fallo del 22/09"
+    assert "RATELIMIT_STORAGE_URI" in encontradas, (
+        "el detector no ve el fallo del 23/09"
+    )
+    assert "postgres" in encontradas["DATABASE_URL"]
+
+
 def test_se_prefieren_los_ficheros_montados_cuando_existen(tmp_path):
     """Las dos ramas de `_raiz()`, ejercitadas.
 
