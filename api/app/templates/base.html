@@ -159,7 +159,17 @@
         </nav>
       </div>
       <div class="footer__bottom">
-        <small>Trabajo de Fin de Grado · FEETCE · Curso 2025-26</small>
+        {# Aquí ponía «Trabajo de Fin de Grado · FEETCE · Curso 2025-26», en el
+           pie de TODAS las páginas, y hacía tiempo que no era verdad: esto
+           dejó de ser un trabajo académico y va camino de ser un servicio.
+           Decirle a un docente que la herramienta que usa es un ejercicio en
+           evaluación describe mal quién responde de ella.
+
+           Y era la única línea del pie sin `_()`, así que tampoco se traducía.
+
+           El año se calcula (`anio_actual`, en `app/temas.py`) en vez de
+           escribirse: un año a mano es verdad hasta el 1 de enero. #}
+        <small>AWEBO · {{ anio_actual }}</small>
         <small>{{ _('Autor') }}: Jesús J. Cantero</small>
       </div>
     </div>

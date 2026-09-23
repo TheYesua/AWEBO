@@ -81,3 +81,19 @@ def init_app(app: Flask) -> None:
         # ``tema_elegido``: para marcar la opción activa en el selector, que
         # sí debe distinguir "automático" de "claro".
         return {"tema": resolver_tema(), "tema_elegido": tema_elegido()}
+
+    @app.context_processor
+    def _inyectar_anio() -> dict[str, int]:
+        """El año del pie, calculado y no escrito.
+
+        Un «2026» a mano en la plantilla es verdad hasta el 1 de enero y falso
+        a partir de entonces, sin que nada avise: es la misma familia que las
+        fechas en formato del navegador o el recuento de tests del README, y
+        aquí ni siquiera hace falta un test porque se puede calcular.
+
+        Va aquí y no en un módulo nuevo porque este ya existe para inyectar
+        cosas en todas las plantillas y el pie las necesita juntas.
+        """
+        from datetime import date
+
+        return {"anio_actual": date.today().year}

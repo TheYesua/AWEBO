@@ -62,10 +62,10 @@
 <article class="card" id="curriculo">
   <h2>{{ _('Qué currículo usa AWEBO') }}</h2>
   <p>
-    {{ _('Las competencias específicas, los criterios de evaluación y los saberes básicos no los inventa la IA: se extraen del texto oficial publicado en el BOE y se cargan en la aplicación. La fuente es la <strong>Orden EFP/754/2022</strong>, que desarrolla el Real Decreto 217/2022 de enseñanzas mínimas de la ESO.')|safe }}
+    {{ _('Las competencias específicas, los criterios de evaluación y los saberes básicos no los inventa la IA: se extraen del texto oficial de cada norma y se cargan en la aplicación. El currículo es <strong>el de tu comunidad</strong>, según la que tengas en el perfil, porque cada una desarrolla el Real Decreto 217/2022 con su propia norma y las materias no coinciden.')|safe }}
   </p>
   <p>
-    {{ _('Están disponibles las materias de Educación Secundaria Obligatoria. Bachillerato y Formación Profesional todavía no.') }}
+    {{ _('Hay currículo cargado de <strong>Andalucía</strong>, <strong>Cataluña</strong>, <strong>Galicia</strong>, <strong>País Vasco</strong> y <strong>Ceuta y Melilla</strong>, en <strong>Educación Secundaria Obligatoria y Bachillerato</strong>. Formación Profesional no está, y no hay fecha.')|safe }}
   </p>
 
   <h3>{{ _('Matemáticas A y Matemáticas B') }}</h3>
@@ -85,9 +85,12 @@
     {{ _('Son dos materias distintas, no dos nombres de la misma. <strong>Tecnología y Digitalización</strong> es la de 2.º y 3.º; <strong>Tecnología</strong> es una materia de opción de 4.º. Tienen competencias específicas diferentes, así que conviene no confundirlas al crear una situación.')|safe }}
   </p>
 
-  <h3>{{ _('Materias que no encontrarás') }}</h3>
+  <h3>{{ _('Materias que dependen de tu comunidad') }}</h3>
   <p>
-    {{ _('<strong>Segunda Lengua Extranjera</strong> no aparece en el desplegable. No es un olvido: el BOE no le publica currículo propio, sino que remite al de la primera lengua extranjera. Mientras AWEBO no sepa reutilizarlo, ofrecerla daría una materia sin ningún criterio que seleccionar.')|safe }}
+    {{ _('Que una materia exista no significa que tú la veas: el desplegable ofrece las de tu comunidad. <strong>Segunda Lengua Extranjera</strong> es el caso más claro. La tienen <strong>Cataluña</strong>, <strong>Galicia</strong> y <strong>País Vasco</strong>, porque sus decretos le publican currículo propio; en <strong>Andalucía</strong> y en <strong>Ceuta y Melilla</strong> no aparece, porque la norma que se les aplica no se lo publica y remite al de la primera lengua extranjera.')|safe }}
+  </p>
+  <p>
+    {{ _('Si echas en falta una materia que sabes que se imparte en tu centro, no des por hecho que AWEBO no la tiene: comprueba primero que la comunidad de tu perfil sea la correcta.') }}
   </p>
 </article>
 
@@ -278,7 +281,7 @@
   <details class="rubrica">
     <summary>{{ _('No encuentro una materia en el desplegable') }}</summary>
     <p>
-      {{ _('Comprueba primero el curso: cada materia solo aparece en los cursos en los que se imparte. Si buscas Segunda Lengua Extranjera, no está disponible todavía; y si buscas Tecnología en 2.º o 3.º, ahí se llama Tecnología y Digitalización.') }}
+      {{ _('Comprueba tres cosas. El <strong>curso</strong>: cada materia solo aparece en los que se imparte. La <strong>comunidad de tu perfil</strong>: el desplegable ofrece el currículo de esa comunidad, así que una materia puede existir en AWEBO y no salirte a ti. Y el <strong>nombre</strong>: si buscas Tecnología en 2.º o 3.º, ahí se llama Tecnología y Digitalización.')|safe }}
     </p>
   </details>
   <details class="rubrica">

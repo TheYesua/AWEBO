@@ -376,7 +376,7 @@ Lo entregado hasta ahora como proyecto personal, agrupado por para qué sirve.
 | Funcionalidad | Qué hace |
 |---|---|
 | **Tema oscuro** | Claro, oscuro y automático, con selector en la cabecera. Se resuelve en servidor, así que no hay destello blanco al navegar. |
-| **Cuatro idiomas** | Castellano, catalán, gallego y euskera: 596 cadenas. El idioma de la interfaz y el de la situación son independientes a propósito. |
+| **Cuatro idiomas** | Castellano, catalán, gallego y euskera: 602 cadenas. El idioma de la interfaz y el de la situación son independientes a propósito. |
 | **Texto a voz** | Por sección, con la voz del sistema. |
 | **Audio con IA** | Modelos aHoTTS **en local**: el contenido del docente no sale a un tercero, y cubre el hueco que la voz del sistema deja en las lenguas cooficiales. |
 
@@ -385,7 +385,7 @@ estructurado que nunca llegó a funcionar, `/health` informando del proveedor
 equivocado, dos incumplimientos WCAG 2.1 en el tema claro y los reintentos
 sobre errores `4xx` de la API de OpenAI.
 
-**1482 tests** cubren todo lo anterior, en la batería que corre en cada push.
+**1486 tests** cubren todo lo anterior, en la batería que corre en cada push.
 La cifra la comprueba un test: si alguien añade una tanda y no la actualiza
 aquí, falla.
 
