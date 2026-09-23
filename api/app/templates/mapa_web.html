@@ -26,9 +26,36 @@
         <a href="/situaciones">{{ _('Mis situaciones de aprendizaje') }}</a>
         <ul>
           <li><a href="/situaciones/nueva">{{ _('Crear nueva situación') }}</a></li>
+          <li>{{ _('Cada situación tiene su propia página, a la que se llega desde el listado.') }}</li>
         </ul>
       </li>
       <li><a href="/perfil">{{ _('Mi perfil') }}</a></li>
+    </ul>
+
+    {# Estas tres NO van como enlace, y es la diferencia que importa: son
+       pantallas de aterrizaje de un enlace enviado por correo y esperan su
+       token en la dirección. Puestas como enlace a secas, el mapa prometería
+       una navegación que no existe y quien pulsara vería un error.
+
+       Se nombran igual porque un mapa web sirve para saber QUÉ hay, no solo
+       adónde se puede pinchar; y porque quien llega aquí buscando «cómo me doy
+       de baja» merece una respuesta. #}
+    <h2>{{ _('Pantallas a las que se llega desde un correo') }}</h2>
+    <p>
+      {{ _('No se puede navegar hasta ellas: cada una se abre con el enlace que
+      la aplicación envía, y ese enlace lleva un código de un solo uso.') }}
+    </p>
+    <ul>
+      <li>{{ _('Confirmar la baja de la cuenta.') }}</li>
+      <li>{{ _('Confirmar o cambiar el correo de respaldo.') }}</li>
+      <li>{{ _('Recuperar una cuenta dada de baja, desde el correo de respaldo.') }}</li>
+    </ul>
+
+    <h2>{{ _('Administración') }}</h2>
+    <ul>
+      <li>
+        {{ _('El panel de administración está en /admin y solo lo ve quien tiene ese rol.') }}
+      </li>
     </ul>
 
     <h2>{{ _('Información y soporte') }}</h2>
