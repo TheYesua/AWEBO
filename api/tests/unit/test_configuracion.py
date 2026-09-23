@@ -343,6 +343,64 @@ def test_el_detector_de_defaults_reconoce_los_dos_que_ya_fallaron():
     assert "postgres" in encontradas["DATABASE_URL"]
 
 
+#: La carpeta de fuentes, que es el clon del repositorio privado
+#: `awebo_fuentes`. Se compone igual que en los tests de los extractores y no
+#: desde `RAIZ`: `RAIZ` sirve para los ficheros que NO forman parte de la
+#: aplicación y se montan en `/repo`; esto se monta en `/curriculo`, en los tres
+#: servicios del compose de desarrollo y en el paso `pytest` de la CI.
+FUENTES = Path(__file__).resolve().parents[2].parent / "curriculo" / "fuentes"
+
+#: Ficheros de configuración de git que un repositorio **anidado** no puede
+#: tener, porque los lee también el repositorio que lo contiene.
+CONFIG_DE_GIT = (".gitignore", ".gitattributes")
+
+
+def test_las_fuentes_no_llevan_configuracion_de_git_propia():
+    """`curriculo/fuentes/` es el clon de `awebo_fuentes` dentro del árbol de
+    AWEBO, así que lo que ponga ahí lo obedecen **los dos** repositorios.
+
+    EL FALLO, QUE OCURRIÓ DOS VECES
+    --------------------------------
+    * 16/08 — un `.gitignore` con `!*.pdf` desactivó la regla de la raíz y los
+      55 MB de boletines pasaron a figurar como subibles al repositorio
+      público.
+    * 23/09 — otro con `*.pdf`, en el otro sentido: impedía añadir boletines a
+      `awebo_fuentes`, que existe **exactamente para guardarlos**. Se quedaron
+      fuera 56 PDF (19 MB) de Galicia-Bachillerato y Andalucía-Bachillerato.
+      Los 236 anteriores se salvaron de casualidad, por haberse añadido antes
+      de que ese fichero existiera: `.gitignore` no afecta a lo que git ya
+      sigue. Por eso el defecto fue invisible hasta que llegó Bachillerato.
+
+    Tras el primero se escribió la regla —un comentario en mayúsculas en el
+    `.gitignore` de la raíz, con el relato entero— y **no sirvió**: nadie
+    vuelve a leer un comentario de un fichero que se edita una vez al mes.
+    Es el mismo patrón que ya había pasado con los proveedores heredados del
+    entorno, y la conclusión es la misma: la lección escrita no es la lección
+    aplicada. Por eso esto es un test.
+
+    Lo que un repositorio quiera excluir solo para sí va en su
+    `.git/info/exclude`, que es local y no lo ve el otro.
+    """
+    # Que la carpeta esté, antes que nada. Sin esto el test pasaría en verde
+    # allí donde `/curriculo` no se monta —no encontraría ningún fichero
+    # prohibido porque no encontraría nada—, que es la forma de fallo que este
+    # mismo día dejó dos tests certificando un currículo vacío.
+    assert FUENTES.is_dir(), (
+        f"no está {FUENTES}. Se monta en /curriculo: mira los `volumes` de "
+        f"docker-compose.override.yml y el paso `pytest` de la CI."
+    )
+
+    prohibidos = [f for f in CONFIG_DE_GIT if (FUENTES / f).is_file()]
+    assert not prohibidos, (
+        f"{prohibidos} en curriculo/fuentes/. Ese fichero lo lee también "
+        f"AWEBO, que contiene la carpeta, así que sus reglas se aplican a los "
+        f"dos repositorios. Ha roto las cosas en los dos sentidos: el 16/08 "
+        f"exponiendo 55 MB de PDF al repositorio público y el 23/09 "
+        f"impidiendo subir 56 a `awebo_fuentes`. Lo que quieras excluir solo "
+        f"en uno va en su `.git/info/exclude`."
+    )
+
+
 def test_se_prefieren_los_ficheros_montados_cuando_existen(tmp_path):
     """Las dos ramas de `_raiz()`, ejercitadas.
 

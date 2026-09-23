@@ -183,8 +183,20 @@ scratch/
 # llevaba desactivó la regla de arriba y los 55 MB de boletines pasaron a
 # aparecer como subibles al repositorio público.
 #
+# Y volvió a pasar el 23/09, en el sentido contrario: un `.gitignore` con
+# `*.pdf` que llevaba semanas impidiendo añadir boletines a `awebo_fuentes`,
+# que existe exactamente para guardarlos. Se quedaron fuera 56 PDF (19 MB) de
+# Galicia-Bachillerato y Andalucía-Bachillerato; los 236 anteriores seguían
+# versionados solo por haberse añadido antes de que ese fichero existiera.
+#
+# Es decir: este comentario ya estaba escrito, con su fecha y su relato, y no
+# evitó la segunda vez. Ahora lo vigila un test —
+# `test_las_fuentes_no_llevan_configuracion_de_git_propia`— porque un
+# comentario en un fichero que se toca una vez al mes no lo lee nadie.
+#
 # Lo que un repositorio quiera excluir solo para sí va en su
-# `.git/info/exclude`, que es local y no se comparte.
+# `.git/info/exclude`, que es local y no se comparte. El de `awebo_fuentes` ya
+# lo usa.
 
 # La salida del extractor SÍ se versiona. La regla decía «se regenera de las
 # fuentes, no se versiona», y era falsa en la práctica: **las fuentes no están

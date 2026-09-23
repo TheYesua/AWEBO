@@ -1,0 +1,50 @@
+# Finales de línea, fijados de una vez.
+#
+# EL FALLO QUE PUSO ESTE FICHERO (23/09/2026)
+# --------------------------------------------
+# `verificar.yml` y `ayuda.html` aparecían modificados con 552 líneas cambiadas
+# cada uno, y el cambio era **cero caracteres de contenido**: el fichero estaba
+# en CRLF y en git en LF. Sin este fichero, el final de línea depende de qué
+# herramienta escribió cada uno la última vez, y git no normaliza nada.
+#
+# El coste real no es el ruido. Es que un diff de 552 líneas para un cambio de
+# dos **no se puede revisar**, así que se commitea a ciegas; y que un fichero
+# que lleva días marcado como modificado deja de mirarse, igual que una CI que
+# nunca se pone verde.
+#
+# `text=auto` deja que git decida qué es texto por el contenido, y `eol=lf`
+# fija LF en el repositorio Y en el árbol de trabajo. LF y no CRLF porque todo
+# esto corre dentro de contenedores Linux: el `.sh` del entrypoint y los
+# ficheros que lee Python viven ahí, y un CRLF en un script con shebang da el
+# clásico `bad interpreter: No such file or directory`.
+* text=auto eol=lf
+
+# Los ficheros por lotes son la excepción: CRLF es su formato nativo y con LF
+# hay versiones de cmd.exe que se atragantan con `goto` y las etiquetas. No hay
+# ninguno aquí ahora mismo —los hay en `awebo_docs`—, pero la regla se escribe
+# antes de que haga falta, que es cuando sirve.
+*.cmd text eol=crlf
+*.bat text eol=crlf
+
+# Binarios: que git no intente convertirlos ni enseñarlos como texto.
+*.pdf   binary
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.ico   binary
+*.woff  binary
+*.woff2 binary
+*.ttf   binary
+*.otf   binary
+*.mp3   binary
+*.wav   binary
+*.ogg   binary
+*.docx  binary
+*.xlsx  binary
+*.pptx  binary
+*.zip   binary
+
+# Las traducciones compiladas de gettext son binarias aunque su hermano `.po`
+# no lo sea. Sin esto, git intenta un diff de texto sobre datos binarios.
+*.mo    binary
