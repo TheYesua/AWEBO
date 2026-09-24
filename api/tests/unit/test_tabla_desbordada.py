@@ -101,6 +101,12 @@ class TestLaCeldaDeBotonesSigueSiendoUnaCelda:
         # fallo —que cita `td:last-child` y `display: flex`— se cuenta como
         # una regla y el test se pone rojo por documentar bien.
         css = re.sub(r"/\*.*?\*/", "", CSS.read_text(encoding="utf-8"), flags=re.S)
+        # Que el escaneo vea reglas de `td`. Si el fichero cambiara de sitio o
+        # el patrón dejara de casar, la lista de culpables saldría vacía y el
+        # test diría que todo está bien.
+        assert re.findall(r"([^{}]*td[^{}]*)\{", css), (
+            "el detector no encuentra ninguna regla de `td` en styles.css"
+        )
 
         culpables = [
             bloque for bloque in re.findall(r"([^{}]*td[^{}]*)\{([^}]*)\}", css)

@@ -183,6 +183,13 @@ class TestLaLineaMuertaQueHabia:
         # castiga explicar la causa se «arregla» borrando la explicación.
         asignacion = re.compile(r"^\s*WTF_CSRF_ENABLED\s*=", re.M)
 
+        ficheros = [f for f in (_RAIZ / "tests").rglob("*.py")
+                    if f.name != "test_csrf.py"]
+        assert len(ficheros) > 50, (
+            f"solo {len(ficheros)} ficheros de test bajo {_RAIZ / 'tests'}: "
+            f"si la ruta apunta mal, lo de abajo pasa en verde sin mirar nada"
+        )
+
         sobrevivientes = [
             str(f.relative_to(_RAIZ))
             for f in (_RAIZ / "tests").rglob("*.py")

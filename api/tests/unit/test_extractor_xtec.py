@@ -271,7 +271,21 @@ class TestUnaMateriaSinTabla:
         assert sum(len(b.criterios) for b in bloques) > 0
 
 
-@pytest.mark.skipif(not XTEC.exists() or not ARTICULADO.exists(), reason="faltan fuentes")
+# `glob("*.pdf")` y no `XTEC.exists()`. La carpeta **existe siempre**: desde el
+# 24/09/2026 lleva un `LEEME.md` versionado, así que en un clon sin acceso al
+# repositorio privado de fuentes existe y está vacía. Con la condición anterior,
+# medido: de los doce tests de esta clase **siete pasaban en verde sobre cero
+# ficheros**, y entre ellos `test_todas_las_materias_tienen_criterios` —cuyo
+# docstring dice «la que más importa de todo el fichero»— y
+# `test_NINGUNA_materia_se_queda_sin_saberes`, escrito en mayúsculas para
+# enfatizar. Los cinco que fallaban lo hacían por la forma en que están escritos,
+# no porque nada lo vigilara: que la clase se pusiera roja era casualidad.
+#
+# Es la misma condición que se corrigió el 23/09 en `test_extractor_dog.py` y en
+# esta misma clase para Bachillerato. Aquí se quedó, y encima añadir el `LEEME.md`
+# la empeoró: antes la carpeta podía no existir.
+@pytest.mark.skipif(not list(XTEC.glob("*.pdf")) or not ARTICULADO.exists(),
+                    reason="faltan fuentes")
 class TestElConjuntoCompleto:
     """La comprobación de conjunto: que no se cuele una materia rota."""
 
@@ -279,9 +293,16 @@ class TestElConjuntoCompleto:
     def todo(self):
         from app.curriculo.extractor_xtec import _clave as clave
 
+        # Que estén los 24 y no «algunos». Ausente se salta —lo de arriba—,
+        # incompleto se pone rojo: sin esta cuenta, una descarga a medias se
+        # disfraza de «faltan materias en el currículo», que es un diagnóstico
+        # muy distinto y mucho más caro de seguir.
+        pdfs = sorted(XTEC.glob("*.pdf"))
+        assert len(pdfs) == 24, f"faltan PDF: hay {len(pdfs)} de 24"
+
         cursos = {clave(k): v for k, v in cursos_del_articulado(ARTICULADO).items()}
         bloques = []
-        for pdf in sorted(XTEC.glob("*.pdf")):
+        for pdf in pdfs:
             for mc in extraer(pdf):
                 if not mc.cursos_aplicables:
                     mc.cursos_aplicables = list(cursos.get(clave(mc.materia_oficial), []))

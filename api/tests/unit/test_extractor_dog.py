@@ -491,7 +491,10 @@ class TestElEspacioTrasCA:
         "Intelixencia-Artificial-para-a-Sociedade.pdf": (["4.1", "4.2", "4.3", "4.4"], 20),
     }
 
-    @pytest.mark.skipif(not FUENTES.exists(), reason="no están los PDF")
+    # `glob("*.pdf")` y no `FUENTES.exists()`: la carpeta lleva un `LEEME.md`
+    # versionado, asi que existe siempre y en un clon sin las fuentes esta
+    # vacia. Misma correccion que la del 23/09 en la clase de Bacharelato.
+    @pytest.mark.skipif(not list(FUENTES.glob("*.pdf")), reason="no están los PDF")
     @pytest.mark.parametrize("fichero", sorted(CASOS))
     def test_los_criterios_con_espacio_se_extraen(self, fichero):
         con_espacio, total = self.CASOS[fichero]
@@ -507,7 +510,7 @@ class TestElEspacioTrasCA:
         )
         assert len(codigos) == total
 
-    @pytest.mark.skipif(not FUENTES.exists(), reason="no están los PDF")
+    @pytest.mark.skipif(not list(FUENTES.glob("*.pdf")), reason="no están los PDF")
     def test_el_patron_no_se_ha_vuelto_permisivo(self):
         """Tolerar el espacio no es tolerar cualquier cosa.
 
@@ -520,10 +523,16 @@ class TestElEspacioTrasCA:
 
         from app.curriculo.extractor_dog import RX_PIE
 
+        # El contador existe porque el `continue` de abajo puede saltarse
+        # TODOS los ficheros y dejar el test en verde sin haber mirado ninguno.
+        # Con la guarda de clase sobre `.exists()` eso era exactamente lo que
+        # pasaba en un clon sin las fuentes.
+        examinados = 0
         for fichero in sorted(self.CASOS):
             ruta = FUENTES / fichero
             if not ruta.exists():
                 continue
+            examinados += 1
             crudo = " ".join(
                 l.strip() for p in pymupdf.open(ruta) for l in p.get_text().splitlines()
                 if l.strip() and not RX_PIE.match(l.strip())
@@ -534,6 +543,11 @@ class TestElEspacioTrasCA:
             assert extraidos - del_pdf == set(), (
                 f"{fichero}: el extractor se inventa {sorted(extraidos - del_pdf)}"
             )
+
+        assert examinados, (
+            f"no se examinó ninguno de los {len(self.CASOS)} PDF de la tabla: "
+            f"están en {FUENTES} y la carpeta existe pero no los tiene"
+        )
 
 
 # ---------------------------------------------------------------------------

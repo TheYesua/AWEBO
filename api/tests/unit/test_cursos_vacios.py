@@ -89,24 +89,61 @@ class TestElSeedAvisaDeLoQueNoSePodraUsar:
         )
 
 
+def _raiz_curriculo() -> Path:
+    """`/curriculo` dentro del contenedor; la del repositorio fuera."""
+    return Path("/curriculo") if Path("/curriculo").is_dir() else APP.parents[1] / "curriculo"
+
+
+def _carpetas_de_salida() -> set[str]:
+    """Las carpetas de salida que existen, leídas del disco.
+
+    Del disco y no de una lista escrita aquí: la que había tenía siete de las
+    diez, y una lista a mano de las carpetas que existen tiene el mismo problema
+    que el mapa web o la lista de `seed` del README —nadie la mira al añadir
+    una—. Si la raíz no está montada devuelve vacío, y de eso avisa
+    `test_estan_todas_las_salidas`.
+    """
+    raiz = _raiz_curriculo()
+    if not raiz.is_dir():
+        return set()
+    return {d.name for d in raiz.iterdir() if d.is_dir() and d.name.startswith("salida")}
+
+
 class TestLosDatosNoTienenFilasSinCursos:
     """Ya no debería haberlas. Si vuelve a aparecer una, es un fallo del
     extractor y conviene enterarse aquí y no en producción."""
 
-    @pytest.mark.parametrize("carpeta", ["salida", "salida_cataluna", "salida_andalucia",
-                                        "salida_andalucia_bachillerato",
-                                        "salida_ceuta_bachillerato",
-                                        "salida_galicia", "salida_galicia_bachillerato"])
+    def test_estan_todas_las_salidas(self):
+        """Regla 15, y aquí hacía falta de verdad.
+
+        La lista de carpetas estaba **escrita a mano** y tenía siete de las
+        diez: faltaban `salida_cataluna_batxillerat`, `salida_pais_vasco` y
+        `salida_pais_vasco_bachillerato`. O sea que tres salidas enteras no se
+        comprobaban, y una fila sin cursos ahí habría pasado sin que nadie se
+        enterara —que es exactamente lo que le pasó a Robòtica i Programació
+        durante dos días—.
+
+        Se descubrió el 24/09 barriendo la batería en busca de tests que pasan
+        por razones equivocadas. Ahora la lista sale del disco.
+        """
+        assert len(_carpetas_de_salida()) >= 10, sorted(_carpetas_de_salida())
+
+    @pytest.mark.parametrize("carpeta", sorted(_carpetas_de_salida()))
     def test_ningun_json_viene_sin_cursos(self, carpeta):
         import json
 
-        raiz = Path("/curriculo") if Path("/curriculo").is_dir() else APP.parents[1] / "curriculo"
-        ruta = raiz / carpeta
+        ruta = _raiz_curriculo() / carpeta
         if not ruta.is_dir():
             pytest.skip(f"{carpeta} no está generada")
 
+        ficheros = sorted(ruta.glob("*.json"))
+        assert ficheros, (
+            f"{carpeta} existe y no tiene ni un JSON: sin esta comprobación, "
+            f"el test de abajo pasaría en verde sin mirar nada"
+        )
+
         sin_cursos = [
-            f.name for f in ruta.glob("*.json")
+            f.name for f in ficheros
             if not json.loads(f.read_text(encoding="utf-8"))["cursos_aplicables"]
         ]
 

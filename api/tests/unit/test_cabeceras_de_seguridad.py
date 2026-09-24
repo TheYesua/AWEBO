@@ -138,6 +138,13 @@ class TestElNonceCasaConLaPagina:
         from pathlib import Path
 
         raiz = Path(__file__).resolve().parents[2] / "app" / "templates"
+        plantillas = list(raiz.rglob("*.html"))
+        # Sin esto, un `raiz` que apunte mal deja el test en verde para siempre
+        # sobre una lista vacía. Barrido del 24/09: era uno de los doce tests
+        # de la batería que afirmaban «no hay nada mal» sobre una fuente que
+        # podía estar vacía sin que nada lo dijera.
+        assert len(plantillas) > 10, f"solo {len(plantillas)} plantillas en {raiz}"
+
         culpables = [
             str(f.relative_to(raiz))
             for f in raiz.rglob("*.html")
@@ -161,12 +168,15 @@ class TestNingunAtributoDeEvento:
         from pathlib import Path
 
         raiz = Path(__file__).resolve().parents[2] / "app" / "templates"
+        plantillas = list(raiz.rglob("*.html"))
+        assert len(plantillas) > 10, f"solo {len(plantillas)} plantillas en {raiz}"
+
         # Los `on*` de HTML son atributos de una etiqueta, así que van
         # precedidos de un espacio y seguidos de `="`.
         patron = re.compile(r'\son[a-z]+\s*=\s*"')
         culpables = [
             str(f.relative_to(raiz))
-            for f in raiz.rglob("*.html")
+            for f in plantillas
             if patron.search(f.read_text(encoding="utf-8"))
         ]
 
