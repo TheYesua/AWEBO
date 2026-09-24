@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: AWEBO VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-09-23 18:26+0200\n"
+"POT-Creation-Date: 2026-09-24 16:23+0200\n"
 "PO-Revision-Date: 2026-08-04 15:31+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: es\n"
@@ -264,8 +264,8 @@ msgid "Declaración de accesibilidad"
 msgstr "Declaración de accesibilidad"
 
 #: app/templates/accesibilidad.html:13
-msgid "La aplicación se ha diseñado conforme a las <abbr title=\"Web Content Accessibility Guidelines\">WCAG</abbr> 2.1 nivel AA."
-msgstr "La aplicación se ha diseñado conforme a las <abbr title=\"Web Content Accessibility Guidelines\">WCAG</abbr> 2.1 nivel AA."
+msgid "La aplicación se desarrolla siguiendo las <abbr title=\"Web Content Accessibility Guidelines\">WCAG</abbr> 2.1 nivel AA, pero <strong>no declaramos conformidad</strong>: abajo está lo que se comprueba de forma automática y lo que no se comprueba de ninguna."
+msgstr "La aplicación se desarrolla siguiendo las <abbr title=\"Web Content Accessibility Guidelines\">WCAG</abbr> 2.1 nivel AA, pero <strong>no declaramos conformidad</strong>: abajo está lo que se comprueba de forma automática y lo que no se comprueba de ninguna."
 
 #: app/templates/accesibilidad.html:18
 msgid "Características incluidas"
@@ -279,54 +279,102 @@ msgstr "Enlace <strong>«Pasar al contenido principal»</strong> al inicio de ca
 msgid "Foco visible reforzado (no depende solo del color)."
 msgstr "Foco visible reforzado (no depende solo del color)."
 
-#: app/templates/accesibilidad.html:22
-msgid "Navegación completa por teclado: <kbd>Tab</kbd>/<kbd>Mayús+Tab</kbd> para moverse, <kbd>Intro</kbd> para activar, <kbd>Esc</kbd> para cerrar diálogos."
-msgstr "Navegación completa por teclado: <kbd>Tab</kbd>/<kbd>Mayús+Tab</kbd> para moverse, <kbd>Intro</kbd> para activar, <kbd>Esc</kbd> para cerrar diálogos."
+#: app/templates/accesibilidad.html:28
+msgid "Navegación completa por teclado: <kbd>Tab</kbd>/<kbd>Mayús+Tab</kbd> para moverse e <kbd>Intro</kbd> para activar. No hay ventanas modales que atrapen el foco."
+msgstr "Navegación completa por teclado: <kbd>Tab</kbd>/<kbd>Mayús+Tab</kbd> para moverse e <kbd>Intro</kbd> para activar. No hay ventanas modales que atrapen el foco."
 
-#: app/templates/accesibilidad.html:23
+#: app/templates/accesibilidad.html:29
 msgid "Etiquetas y encabezados semánticos (<code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;h1&gt;–&lt;h4&gt;</code>)."
 msgstr "Etiquetas y encabezados semánticos (<code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;h1&gt;–&lt;h4&gt;</code>)."
 
-#: app/templates/accesibilidad.html:24
+#: app/templates/accesibilidad.html:30
 msgid "Imágenes con texto alternativo y SVGs decorativos marcados con <code>aria-hidden</code>."
 msgstr "Imágenes con texto alternativo y SVGs decorativos marcados con <code>aria-hidden</code>."
 
-#: app/templates/accesibilidad.html:25
+#: app/templates/accesibilidad.html:31
 msgid "Formularios con <code>label</code> asociado, mensajes de error anunciados a lectores de pantalla y campos con <code>aria-invalid</code> cuando procede."
 msgstr "Formularios con <code>label</code> asociado, mensajes de error anunciados a lectores de pantalla y campos con <code>aria-invalid</code> cuando procede."
 
-#: app/templates/accesibilidad.html:26
+#: app/templates/accesibilidad.html:32
 msgid "Contraste de texto mínimo 4.5:1 (3:1 en texto grande)."
 msgstr "Contraste de texto mínimo 4.5:1 (3:1 en texto grande)."
 
-#: app/templates/accesibilidad.html:27
+#: app/templates/accesibilidad.html:33
 msgid "Información que no se transmite solo mediante color (iconos lingüísticos, texto y formas refuerzan los estados)."
 msgstr "Información que no se transmite solo mediante color (iconos lingüísticos, texto y formas refuerzan los estados)."
 
-#: app/templates/accesibilidad.html:34
+#: app/templates/accesibilidad.html:40
 #, python-format
 msgid "Diseño adaptable a móvil, tableta y escritorio; el contenido no se pierde al ampliar hasta el 200%%."
 msgstr "Diseño adaptable a móvil, tableta y escritorio; el contenido no se pierde al ampliar hasta el 200%%."
 
-#: app/templates/accesibilidad.html:35
+#: app/templates/accesibilidad.html:41
 msgid "Animaciones reducidas si el sistema indica <code>prefers-reduced-motion: reduce</code>."
 msgstr "Animaciones reducidas si el sistema indica <code>prefers-reduced-motion: reduce</code>."
 
-#: app/templates/accesibilidad.html:36
+#: app/templates/accesibilidad.html:42
 msgid "<a href=\"/mapa-web\">Mapa web</a> para navegación alternativa."
 msgstr "<a href=\"/mapa-web\">Mapa web</a> para navegación alternativa."
 
-#: app/templates/accesibilidad.html:37
-msgid "Lectura en voz alta de cada sección de una situación, con la voz que el sistema tenga instalada. No requiere conexión ni servicio externo."
-msgstr "Lectura en voz alta de cada sección de una situación, con la voz que el sistema tenga instalada. No requiere conexión ni servicio externo."
+#: app/templates/accesibilidad.html:48
+msgid "Lectura en voz alta de cada sección de una situación, cuando quien administra la instalación ha activado la síntesis local: en ese caso el texto <strong>no sale de la máquina</strong>. Si no está activada, el botón de escuchar no aparece."
+msgstr "Lectura en voz alta de cada sección de una situación, cuando quien administra la instalación ha activado la síntesis local: en ese caso el texto <strong>no sale de la máquina</strong>. Si no está activada, el botón de escuchar no aparece."
 
-#: app/templates/accesibilidad.html:42
+#: app/templates/accesibilidad.html:53
+msgid "Qué se comprueba, y cómo"
+msgstr "Qué se comprueba, y cómo"
+
+#: app/templates/accesibilidad.html:55
+msgid "Para que lo de arriba no sea una lista de intenciones, esto es lo que se verifica de forma automática en cada cambio del código:"
+msgstr "Para que lo de arriba no sea una lista de intenciones, esto es lo que se verifica de forma automática en cada cambio del código:"
+
+#: app/templates/accesibilidad.html:58
+msgid "El <strong>contraste</strong> de cada par de colores de las dos paletas, con el mínimo AAA (7:1) en el texto principal. Son unos cuarenta pares medidos, no la impresión de que se ven bien."
+msgstr "El <strong>contraste</strong> de cada par de colores de las dos paletas, con el mínimo AAA (7:1) en el texto principal. Son unos cuarenta pares medidos, no la impresión de que se ven bien."
+
+#: app/templates/accesibilidad.html:59
+msgid "Las <strong>páginas públicas</strong> pasan por <strong>axe-core</strong> en un navegador real, en los dos temas. Falla con los incumplimientos graves, no solo avisa."
+msgstr "Las <strong>páginas públicas</strong> pasan por <strong>axe-core</strong> en un navegador real, en los dos temas. Falla con los incumplimientos graves, no solo avisa."
+
+#: app/templates/accesibilidad.html:60
+msgid "Que esta página y el <a href=\"/mapa-web\">mapa web</a> no prometan cosas que la aplicación no hace: hay tests que las comparan con el código."
+msgstr "Que esta página y el <a href=\"/mapa-web\">mapa web</a> no prometan cosas que la aplicación no hace: hay tests que las comparan con el código."
+
+#: app/templates/accesibilidad.html:65
 msgid "Limitaciones conocidas"
 msgstr "Limitaciones conocidas"
 
-#: app/templates/accesibilidad.html:44
-msgid "Esta aplicación es un Trabajo de Fin de Grado en evaluación continua. Si detectas alguna barrera de accesibilidad, puedes comunicarla en la sección de <a href=\"/ayuda\">Ayuda</a>."
-msgstr "Esta aplicación es un Trabajo de Fin de Grado en evaluación continua. Si detectas alguna barrera de accesibilidad, puedes comunicarla en la sección de <a href=\"/ayuda\">Ayuda</a>."
+#: app/templates/accesibilidad.html:72
+msgid "<strong>Las páginas que requieren cuenta no se auditan automáticamente.</strong> La revisión con axe-core cubre las públicas; el editor de situaciones, el perfil y el panel quedan fuera porque haría falta iniciar sesión y sembrar datos desde el propio proceso de comprobación."
+msgstr "<strong>Las páginas que requieren cuenta no se auditan automáticamente.</strong> La revisión con axe-core cubre las públicas; el editor de situaciones, el perfil y el panel quedan fuera porque haría falta iniciar sesión y sembrar datos desde el propio proceso de comprobación."
+
+#: app/templates/accesibilidad.html:73
+msgid "<strong>Ninguna herramienta automática detecta lo que más importa.</strong> Un orden de tabulación que no sigue la lógica de la página, un texto alternativo que describe mal la imagen o un mensaje de error que se anuncia tarde pasan todas las comprobaciones. Eso solo se ve usando la aplicación con un lector de pantalla."
+msgstr "<strong>Ninguna herramienta automática detecta lo que más importa.</strong> Un orden de tabulación que no sigue la lógica de la página, un texto alternativo que describe mal la imagen o un mensaje de error que se anuncia tarde pasan todas las comprobaciones. Eso solo se ve usando la aplicación con un lector de pantalla."
+
+#: app/templates/accesibilidad.html:74
+msgid "<strong>No se ha probado con lectores de pantalla reales</strong> —NVDA, JAWS, VoiceOver, TalkBack— ni con personas que los usen a diario. Es la limitación más importante de esta lista."
+msgstr "<strong>No se ha probado con lectores de pantalla reales</strong> —NVDA, JAWS, VoiceOver, TalkBack— ni con personas que los usen a diario. Es la limitación más importante de esta lista."
+
+#: app/templates/accesibilidad.html:75
+msgid "<strong>Las traducciones al euskera no las ha revisado un hablante.</strong> Afectan a la interfaz, no a la estructura, pero un texto confuso es una barrera."
+msgstr "<strong>Las traducciones al euskera no las ha revisado un hablante.</strong> Afectan a la interfaz, no a la estructura, pero un texto confuso es una barrera."
+
+#: app/templates/accesibilidad.html:76
+msgid "<strong>El contenido que genera la IA no se audita.</strong> Su legibilidad depende del modelo, y ni su longitud ni su claridad están garantizadas."
+msgstr "<strong>El contenido que genera la IA no se audita.</strong> Su legibilidad depende del modelo, y ni su longitud ni su claridad están garantizadas."
+
+#: app/templates/accesibilidad.html:81
+msgid "Avisar de una barrera"
+msgstr "Avisar de una barrera"
+
+#: app/templates/accesibilidad.html:88
+msgid "Todavía <strong>no hay una dirección de correo del proyecto</strong>, y preferimos decirlo a mandarte a una página donde no podrías escribir a nadie."
+msgstr "Todavía <strong>no hay una dirección de correo del proyecto</strong>, y preferimos decirlo a mandarte a una página donde no podrías escribir a nadie."
+
+#: app/templates/accesibilidad.html:91
+msgid "Mientras tanto, el desarrollo es público y se puede avisar ahí: <a href=\"https://github.com/TheYesua/AWEBO/issues\" rel=\"noopener\">abrir un aviso en el repositorio</a>. Requiere una cuenta de GitHub, que es una pega real; en cuanto haya un correo de contacto figurará en este mismo apartado."
+msgstr "Mientras tanto, el desarrollo es público y se puede avisar ahí: <a href=\"https://github.com/TheYesua/AWEBO/issues\" rel=\"noopener\">abrir un aviso en el repositorio</a>. Requiere una cuenta de GitHub, que es una pega real; en cuanto haya un correo de contacto figurará en este mismo apartado."
 
 #: app/templates/ayuda.html:7 app/templates/errores/404.html:15
 #: app/templates/errores/error.html:36 app/templates/mapa_web.html:63
@@ -2710,4 +2758,16 @@ msgstr "Creando…"
 
 #~ msgid "árabe"
 #~ msgstr "árabe"
+
+#~ msgid "La aplicación se ha diseñado conforme a las <abbr title=\"Web Content Accessibility Guidelines\">WCAG</abbr> 2.1 nivel AA."
+#~ msgstr "La aplicación se ha diseñado conforme a las <abbr title=\"Web Content Accessibility Guidelines\">WCAG</abbr> 2.1 nivel AA."
+
+#~ msgid "Navegación completa por teclado: <kbd>Tab</kbd>/<kbd>Mayús+Tab</kbd> para moverse, <kbd>Intro</kbd> para activar, <kbd>Esc</kbd> para cerrar diálogos."
+#~ msgstr "Navegación completa por teclado: <kbd>Tab</kbd>/<kbd>Mayús+Tab</kbd> para moverse, <kbd>Intro</kbd> para activar, <kbd>Esc</kbd> para cerrar diálogos."
+
+#~ msgid "Lectura en voz alta de cada sección de una situación, con la voz que el sistema tenga instalada. No requiere conexión ni servicio externo."
+#~ msgstr "Lectura en voz alta de cada sección de una situación, con la voz que el sistema tenga instalada. No requiere conexión ni servicio externo."
+
+#~ msgid "Esta aplicación es un Trabajo de Fin de Grado en evaluación continua. Si detectas alguna barrera de accesibilidad, puedes comunicarla en la sección de <a href=\"/ayuda\">Ayuda</a>."
+#~ msgstr "Esta aplicación es un Trabajo de Fin de Grado en evaluación continua. Si detectas alguna barrera de accesibilidad, puedes comunicarla en la sección de <a href=\"/ayuda\">Ayuda</a>."
 

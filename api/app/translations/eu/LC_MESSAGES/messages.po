@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: AWEBO VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-09-23 18:26+0200\n"
+"POT-Creation-Date: 2026-09-24 16:23+0200\n"
 "PO-Revision-Date: 2026-08-04 15:31+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: eu\n"
@@ -264,8 +264,8 @@ msgid "Declaración de accesibilidad"
 msgstr "Irisgarritasun adierazpena"
 
 #: app/templates/accesibilidad.html:13
-msgid "La aplicación se ha diseñado conforme a las <abbr title=\"Web Content Accessibility Guidelines\">WCAG</abbr> 2.1 nivel AA."
-msgstr "Aplikazioa <abbr title=\"Web Content Accessibility Guidelines\">WCAG</abbr> 2.1 AA mailaren arabera diseinatu da."
+msgid "La aplicación se desarrolla siguiendo las <abbr title=\"Web Content Accessibility Guidelines\">WCAG</abbr> 2.1 nivel AA, pero <strong>no declaramos conformidad</strong>: abajo está lo que se comprueba de forma automática y lo que no se comprueba de ninguna."
+msgstr "Aplikazioa <abbr title=\"Web Content Accessibility Guidelines\">WCAG</abbr> 2.1 AA maila jarraituz garatzen da, baina <strong>ez dugu adostasuna adierazten</strong>: behean dago automatikoki egiaztatzen dena eta inola ere egiaztatzen ez dena."
 
 #: app/templates/accesibilidad.html:18
 msgid "Características incluidas"
@@ -279,54 +279,102 @@ msgstr "<strong>«Joan eduki nagusira»</strong> esteka orri bakoitzaren hasiera
 msgid "Foco visible reforzado (no depende solo del color)."
 msgstr "Foku ikusgai indartua (ez da koloreaz soilik baliatzen)."
 
-#: app/templates/accesibilidad.html:22
-msgid "Navegación completa por teclado: <kbd>Tab</kbd>/<kbd>Mayús+Tab</kbd> para moverse, <kbd>Intro</kbd> para activar, <kbd>Esc</kbd> para cerrar diálogos."
-msgstr "Nabigazio osoa teklatuz: <kbd>Tab</kbd>/<kbd>Maius+Tab</kbd> mugitzeko, <kbd>Sartu</kbd> aktibatzeko, <kbd>Esc</kbd> elkarrizketa-koadroak ixteko."
+#: app/templates/accesibilidad.html:28
+msgid "Navegación completa por teclado: <kbd>Tab</kbd>/<kbd>Mayús+Tab</kbd> para moverse e <kbd>Intro</kbd> para activar. No hay ventanas modales que atrapen el foco."
+msgstr "Teklatu bidezko nabigazio osoa: <kbd>Tab</kbd>/<kbd>Maius+Tab</kbd> mugitzeko eta <kbd>Sartu</kbd> aktibatzeko. Ez dago fokua harrapatzen duen leiho modalik."
 
-#: app/templates/accesibilidad.html:23
+#: app/templates/accesibilidad.html:29
 msgid "Etiquetas y encabezados semánticos (<code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;h1&gt;–&lt;h4&gt;</code>)."
 msgstr "Etiketa eta goiburu semantikoak (<code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;h1&gt;–&lt;h4&gt;</code>)."
 
-#: app/templates/accesibilidad.html:24
+#: app/templates/accesibilidad.html:30
 msgid "Imágenes con texto alternativo y SVGs decorativos marcados con <code>aria-hidden</code>."
 msgstr "Irudiak testu alternatiboarekin eta SVG apaingarriak <code>aria-hidden</code> etiketarekin markatuta."
 
-#: app/templates/accesibilidad.html:25
+#: app/templates/accesibilidad.html:31
 msgid "Formularios con <code>label</code> asociado, mensajes de error anunciados a lectores de pantalla y campos con <code>aria-invalid</code> cuando procede."
 msgstr "Inprimakiak <code>label</code> lotuarekin, pantaila-irakurgailuei jakinarazitako errore-mezuak eta <code>aria-invalid</code> duten eremuak dagokionean."
 
-#: app/templates/accesibilidad.html:26
+#: app/templates/accesibilidad.html:32
 msgid "Contraste de texto mínimo 4.5:1 (3:1 en texto grande)."
 msgstr "Gutxieneko testu-kontrastea 4.5:1 (3:1 testu handian)."
 
-#: app/templates/accesibilidad.html:27
+#: app/templates/accesibilidad.html:33
 msgid "Información que no se transmite solo mediante color (iconos lingüísticos, texto y formas refuerzan los estados)."
 msgstr "Kolorearen bidez soilik transmititzen ez den informazioa (ikono linguistikoek, testuak eta formek egoerak indartzen dituzte)."
 
-#: app/templates/accesibilidad.html:34
+#: app/templates/accesibilidad.html:40
 #, python-format
 msgid "Diseño adaptable a móvil, tableta y escritorio; el contenido no se pierde al ampliar hasta el 200%%."
 msgstr "Diseinu moldagarria mugikorrera, tabletara eta mahaigainera; edukia ez da galtzen ehuneko 200era arte handitzean."
 
-#: app/templates/accesibilidad.html:35
+#: app/templates/accesibilidad.html:41
 msgid "Animaciones reducidas si el sistema indica <code>prefers-reduced-motion: reduce</code>."
 msgstr "Animazio murriztuak sistemak <code>prefers-reduced-motion: reduce</code> adierazten badu."
 
-#: app/templates/accesibilidad.html:36
+#: app/templates/accesibilidad.html:42
 msgid "<a href=\"/mapa-web\">Mapa web</a> para navegación alternativa."
 msgstr "<a href=\"/mapa-web\">Web-mapa</a> nabigazio alternatiborako."
 
-#: app/templates/accesibilidad.html:37
-msgid "Lectura en voz alta de cada sección de una situación, con la voz que el sistema tenga instalada. No requiere conexión ni servicio externo."
-msgstr "Egoera baten atal bakoitza ozen irakurtzea, sistemak instalatuta duen ahotsarekin. Ez du konexiorik ez kanpoko zerbitzurik behar."
+#: app/templates/accesibilidad.html:48
+msgid "Lectura en voz alta de cada sección de una situación, cuando quien administra la instalación ha activado la síntesis local: en ese caso el texto <strong>no sale de la máquina</strong>. Si no está activada, el botón de escuchar no aparece."
+msgstr "Egoera baten atal bakoitza ozen irakurtzea, instalazioa kudeatzen duenak sintesi lokala aktibatu duenean: kasu horretan testua <strong>ez da makinatik ateratzen</strong>. Aktibatuta ez badago, entzuteko botoia ez da agertzen."
 
-#: app/templates/accesibilidad.html:42
+#: app/templates/accesibilidad.html:53
+msgid "Qué se comprueba, y cómo"
+msgstr "Zer egiaztatzen da, eta nola"
+
+#: app/templates/accesibilidad.html:55
+msgid "Para que lo de arriba no sea una lista de intenciones, esto es lo que se verifica de forma automática en cada cambio del código:"
+msgstr "Goikoa asmoen zerrenda bat ez izateko, hau da kodearen aldaketa bakoitzean automatikoki egiaztatzen dena:"
+
+#: app/templates/accesibilidad.html:58
+msgid "El <strong>contraste</strong> de cada par de colores de las dos paletas, con el mínimo AAA (7:1) en el texto principal. Son unos cuarenta pares medidos, no la impresión de que se ven bien."
+msgstr "Bi paleten kolore-bikote bakoitzaren <strong>kontrastea</strong>, testu nagusian AAA gutxienekoarekin (7:1). Berrogei bat bikote neurtuta daude, ez ongi ikusten diren inpresioa."
+
+#: app/templates/accesibilidad.html:59
+msgid "Las <strong>páginas públicas</strong> pasan por <strong>axe-core</strong> en un navegador real, en los dos temas. Falla con los incumplimientos graves, no solo avisa."
+msgstr "<strong>Orri publikoek</strong> <strong>axe-core</strong> gainditzen dute benetako nabigatzaile batean, bi gaietan. Ez-betetze larriekin huts egiten du, ez du soilik abisatzen."
+
+#: app/templates/accesibilidad.html:60
+msgid "Que esta página y el <a href=\"/mapa-web\">mapa web</a> no prometan cosas que la aplicación no hace: hay tests que las comparan con el código."
+msgstr "Orri honek eta <a href=\"/mapa-web\">webgunearen mapak</a> aplikazioak egiten ez dituen gauzak ez agintzea: kodearekin alderatzen dituzten testak daude."
+
+#: app/templates/accesibilidad.html:65
 msgid "Limitaciones conocidas"
 msgstr "Ezagutzen diren mugak"
 
-#: app/templates/accesibilidad.html:44
-msgid "Esta aplicación es un Trabajo de Fin de Grado en evaluación continua. Si detectas alguna barrera de accesibilidad, puedes comunicarla en la sección de <a href=\"/ayuda\">Ayuda</a>."
-msgstr "Aplikazio hau etengabeko ebaluazioan dagoen Gradu Amaierako Lan bat da. Irisgarritasun-oztoporen bat antzematen baduzu, <a href=\"/ayuda\">Laguntza</a> atalean jakinaraz dezakezu."
+#: app/templates/accesibilidad.html:72
+msgid "<strong>Las páginas que requieren cuenta no se auditan automáticamente.</strong> La revisión con axe-core cubre las públicas; el editor de situaciones, el perfil y el panel quedan fuera porque haría falta iniciar sesión y sembrar datos desde el propio proceso de comprobación."
+msgstr "<strong>Konturik eskatzen duten orriak ez dira automatikoki auditatzen.</strong> axe-core bidezko azterketak publikoak hartzen ditu; egoeren editorea, profila eta panela kanpoan geratzen dira, saioa hasi eta datuak erein beharko litzatekeelako egiaztapen-prozesutik beretik."
+
+#: app/templates/accesibilidad.html:73
+msgid "<strong>Ninguna herramienta automática detecta lo que más importa.</strong> Un orden de tabulación que no sigue la lógica de la página, un texto alternativo que describe mal la imagen o un mensaje de error que se anuncia tarde pasan todas las comprobaciones. Eso solo se ve usando la aplicación con un lector de pantalla."
+msgstr "<strong>Tresna automatikoek ez dute garrantzitsuena hautematen.</strong> Orriaren logika jarraitzen ez duen tabulazio-ordena batek, irudia gaizki deskribatzen duen testu alternatibo batek edo berandu iragartzen den errore-mezu batek egiaztapen guztiak gainditzen dituzte. Hori pantaila-irakurgailu batekin aplikazioa erabiliz bakarrik ikusten da."
+
+#: app/templates/accesibilidad.html:74
+msgid "<strong>No se ha probado con lectores de pantalla reales</strong> —NVDA, JAWS, VoiceOver, TalkBack— ni con personas que los usen a diario. Es la limitación más importante de esta lista."
+msgstr "<strong>Ez da benetako pantaila-irakurgailuekin probatu</strong> —NVDA, JAWS, VoiceOver, TalkBack— ezta egunero erabiltzen dituzten pertsonekin ere. Zerrenda honetako mugarik garrantzitsuena da."
+
+#: app/templates/accesibilidad.html:75
+msgid "<strong>Las traducciones al euskera no las ha revisado un hablante.</strong> Afectan a la interfaz, no a la estructura, pero un texto confuso es una barrera."
+msgstr "<strong>Euskarazko itzulpenak ez ditu hiztun batek berrikusi.</strong> Interfazeari eragiten diote, ez egiturari, baina testu iluna hesi bat da."
+
+#: app/templates/accesibilidad.html:76
+msgid "<strong>El contenido que genera la IA no se audita.</strong> Su legibilidad depende del modelo, y ni su longitud ni su claridad están garantizadas."
+msgstr "<strong>IAk sortzen duen edukia ez da auditatzen.</strong> Haren irakurgarritasuna modeloaren araberakoa da, eta ez luzera ez argitasuna ez daude bermatuta."
+
+#: app/templates/accesibilidad.html:81
+msgid "Avisar de una barrera"
+msgstr "Hesi baten berri ematea"
+
+#: app/templates/accesibilidad.html:88
+msgid "Todavía <strong>no hay una dirección de correo del proyecto</strong>, y preferimos decirlo a mandarte a una página donde no podrías escribir a nadie."
+msgstr "Oraindik <strong>ez dago proiektuaren helbide elektronikorik</strong>, eta nahiago dugu hori esan inori ezin zenion idatzi orri batera bidali baino."
+
+#: app/templates/accesibilidad.html:91
+msgid "Mientras tanto, el desarrollo es público y se puede avisar ahí: <a href=\"https://github.com/TheYesua/AWEBO/issues\" rel=\"noopener\">abrir un aviso en el repositorio</a>. Requiere una cuenta de GitHub, que es una pega real; en cuanto haya un correo de contacto figurará en este mismo apartado."
+msgstr "Bien bitartean, garapena publikoa da eta han eman daiteke berri: <a href=\"https://github.com/TheYesua/AWEBO/issues\" rel=\"noopener\">biltegian abisu bat ireki</a>. GitHub kontu bat behar du, eta hori benetako eragozpena da; harremanetarako posta bat dagoen bezain laster atal honetan bertan agertuko da."
 
 #: app/templates/ayuda.html:7 app/templates/errores/404.html:15
 #: app/templates/errores/error.html:36 app/templates/mapa_web.html:63
@@ -2710,4 +2758,16 @@ msgstr "Sortzen…"
 
 #~ msgid "árabe"
 #~ msgstr "arabiera"
+
+#~ msgid "La aplicación se ha diseñado conforme a las <abbr title=\"Web Content Accessibility Guidelines\">WCAG</abbr> 2.1 nivel AA."
+#~ msgstr "Aplikazioa <abbr title=\"Web Content Accessibility Guidelines\">WCAG</abbr> 2.1 AA mailaren arabera diseinatu da."
+
+#~ msgid "Navegación completa por teclado: <kbd>Tab</kbd>/<kbd>Mayús+Tab</kbd> para moverse, <kbd>Intro</kbd> para activar, <kbd>Esc</kbd> para cerrar diálogos."
+#~ msgstr "Nabigazio osoa teklatuz: <kbd>Tab</kbd>/<kbd>Maius+Tab</kbd> mugitzeko, <kbd>Sartu</kbd> aktibatzeko, <kbd>Esc</kbd> elkarrizketa-koadroak ixteko."
+
+#~ msgid "Lectura en voz alta de cada sección de una situación, con la voz que el sistema tenga instalada. No requiere conexión ni servicio externo."
+#~ msgstr "Egoera baten atal bakoitza ozen irakurtzea, sistemak instalatuta duen ahotsarekin. Ez du konexiorik ez kanpoko zerbitzurik behar."
+
+#~ msgid "Esta aplicación es un Trabajo de Fin de Grado en evaluación continua. Si detectas alguna barrera de accesibilidad, puedes comunicarla en la sección de <a href=\"/ayuda\">Ayuda</a>."
+#~ msgstr "Aplikazio hau etengabeko ebaluazioan dagoen Gradu Amaierako Lan bat da. Irisgarritasun-oztoporen bat antzematen baduzu, <a href=\"/ayuda\">Laguntza</a> atalean jakinaraz dezakezu."
 
