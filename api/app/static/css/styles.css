@@ -516,6 +516,21 @@ img, svg { max-width: 100%; height: auto; }
 .footer__col ul { list-style: none; padding: 0; margin: 0; display: grid; gap: var(--space-1); }
 .footer__col a { color: var(--color-text); text-decoration: none; font-size: var(--fs-sm); }
 .footer__col a:hover { text-decoration: underline; }
+/* Un enlace DENTRO DE UN PÁRRAFO va subrayado siempre, no solo al pasar por
+   encima. La regla de arriba le da el mismo color que el texto y le quita el
+   subrayado, lo que en una lista de navegación está bien —se sabe que son
+   enlaces por el sitio donde están— pero en prosa lo vuelve invisible: el
+   enlace de «¿Te ha gustado? Ayúdame aquí» no se distingue del texto que lo
+   rodea ni por color ni por forma.
+
+   Lo encontró axe-core (`link-in-text-block`, 12 avisos «serious»: seis
+   páginas por dos temas) la primera vez que ese trabajo de la CI consiguió
+   llegar a auditar algo, el 23/09/2026. Llevaba ahí desde el 16/08 sin medir,
+   porque el trabajo estaba en rojo por otro motivo y dejó de mirarse.
+
+   El subrayado y no un color distinto: WCAG 1.4.1 pide que la información no
+   dependa solo del color, y aquí ni siquiera había color que dependiera. */
+.footer__col p a { text-decoration: underline; }
 .footer__bottom {
   margin-top: var(--space-5);
   padding-top: var(--space-4);
