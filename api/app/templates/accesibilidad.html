@@ -10,7 +10,7 @@
        «para» o «2.1 nivel AA.» por separado es imposible: cada lengua ordena
        la frase a su manera y el traductor no ve dónde encaja el fragmento.
        De ahí el |safe: el HTML sale de nuestros propios catálogos. #}
-    {{ _('La aplicación se ha diseñado conforme a las <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.1 nivel AA.')|safe }}
+    {{ _('La aplicación se desarrolla siguiendo las <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.1 nivel AA, pero <strong>no declaramos conformidad</strong>: abajo está lo que se comprueba de forma automática y lo que no se comprueba de ninguna.')|safe }}
   </p>
 </section>
 
@@ -19,7 +19,13 @@
   <ul>
     <li>{{ _('Enlace <strong>«Pasar al contenido principal»</strong> al inicio de cada página.')|safe }}</li>
     <li>{{ _('Foco visible reforzado (no depende solo del color).') }}</li>
-    <li>{{ _('Navegación completa por teclado: <kbd>Tab</kbd>/<kbd>Mayús+Tab</kbd> para moverse, <kbd>Intro</kbd> para activar, <kbd>Esc</kbd> para cerrar diálogos.')|safe }}</li>
+    {# Aquí decía además «<kbd>Esc</kbd> para cerrar diálogos». **No hay ni un
+       diálogo en la aplicación**, y no por descuido: en `admin/panel.html` está
+       escrito que se descartó el modal precisamente porque «necesita atrapar el
+       foco, devolverlo al cerrar y gestionar Escape; son piezas que este
+       proyecto no tiene y que hacerlas a medias es peor que no tenerlas».
+       O sea que esta página prometía la tecla que se decidió no implementar. #}
+    <li>{{ _('Navegación completa por teclado: <kbd>Tab</kbd>/<kbd>Mayús+Tab</kbd> para moverse e <kbd>Intro</kbd> para activar. No hay ventanas modales que atrapen el foco.')|safe }}</li>
     <li>{{ _('Etiquetas y encabezados semánticos (<code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;h1&gt;–&lt;h4&gt;</code>).')|safe }}</li>
     <li>{{ _('Imágenes con texto alternativo y SVGs decorativos marcados con <code>aria-hidden</code>.')|safe }}</li>
     <li>{{ _('Formularios con <code>label</code> asociado, mensajes de error anunciados a lectores de pantalla y campos con <code>aria-invalid</code> cuando procede.')|safe }}</li>
@@ -34,14 +40,55 @@
     <li>{{ _('Diseño adaptable a móvil, tableta y escritorio; el contenido no se pierde al ampliar hasta el 200%%.') }}</li>
     <li>{{ _('Animaciones reducidas si el sistema indica <code>prefers-reduced-motion: reduce</code>.')|safe }}</li>
     <li>{{ _('<a href="/mapa-web">Mapa web</a> para navegación alternativa.')|safe }}</li>
-    <li>{{ _('Lectura en voz alta de cada sección de una situación, con la voz que el sistema tenga instalada. No requiere conexión ni servicio externo.')|safe }}</li>
+    {# Antes decía, en absoluto, «No requiere conexión ni servicio externo».
+       Solo es cierto del proveedor `local`. Hay tres —`nulo`, `local` y
+       `openai`—, el de por defecto es `nulo` y no genera nada, y `openai` sí
+       manda el texto fuera. Una declaración de accesibilidad no puede describir
+       una de las tres configuraciones como si fuera la única. #}
+    <li>{{ _('Lectura en voz alta de cada sección de una situación, cuando quien administra la instalación ha activado la síntesis local: en ese caso el texto <strong>no sale de la máquina</strong>. Si no está activada, el botón de escuchar no aparece.')|safe }}</li>
+  </ul>
+</article>
+
+<article class="card">
+  <h2>{{ _('Qué se comprueba, y cómo') }}</h2>
+  <p>
+    {{ _('Para que lo de arriba no sea una lista de intenciones, esto es lo que se verifica de forma automática en cada cambio del código:')|safe }}
+  </p>
+  <ul>
+    <li>{{ _('El <strong>contraste</strong> de cada par de colores de las dos paletas, con el mínimo AAA (7:1) en el texto principal. Son unos cuarenta pares medidos, no la impresión de que se ven bien.')|safe }}</li>
+    <li>{{ _('Las <strong>páginas públicas</strong> pasan por <strong>axe-core</strong> en un navegador real, en los dos temas. Falla con los incumplimientos graves, no solo avisa.')|safe }}</li>
+    <li>{{ _('Que esta página y el <a href="/mapa-web">mapa web</a> no prometan cosas que la aplicación no hace: hay tests que las comparan con el código.')|safe }}</li>
   </ul>
 </article>
 
 <article class="card">
   <h2>{{ _('Limitaciones conocidas') }}</h2>
+  {# Este apartado no listaba ninguna limitación: decía que la aplicación era un
+     Trabajo de Fin de Grado —hace tiempo que no lo es— y remitía a Ayuda, que
+     no tiene ninguna vía de contacto. Un apartado de limitaciones conocidas sin
+     limitaciones es la parte menos creíble de una declaración, porque el lector
+     sabe que existen. #}
+  <ul>
+    <li>{{ _('<strong>Las páginas que requieren cuenta no se auditan automáticamente.</strong> La revisión con axe-core cubre las públicas; el editor de situaciones, el perfil y el panel quedan fuera porque haría falta iniciar sesión y sembrar datos desde el propio proceso de comprobación.')|safe }}</li>
+    <li>{{ _('<strong>Ninguna herramienta automática detecta lo que más importa.</strong> Un orden de tabulación que no sigue la lógica de la página, un texto alternativo que describe mal la imagen o un mensaje de error que se anuncia tarde pasan todas las comprobaciones. Eso solo se ve usando la aplicación con un lector de pantalla.')|safe }}</li>
+    <li>{{ _('<strong>No se ha probado con lectores de pantalla reales</strong> —NVDA, JAWS, VoiceOver, TalkBack— ni con personas que los usen a diario. Es la limitación más importante de esta lista.')|safe }}</li>
+    <li>{{ _('<strong>Las traducciones al euskera no las ha revisado un hablante.</strong> Afectan a la interfaz, no a la estructura, pero un texto confuso es una barrera.')|safe }}</li>
+    <li>{{ _('<strong>El contenido que genera la IA no se audita.</strong> Su legibilidad depende del modelo, y ni su longitud ni su claridad están garantizadas.')|safe }}</li>
+  </ul>
+</article>
+
+<article class="card">
+  <h2>{{ _('Avisar de una barrera') }}</h2>
+  {# La versión anterior remitía a `/ayuda`, donde no hay ni un `mailto:` ni un
+     formulario: en toda la aplicación no existe ninguna vía de contacto. Mandar
+     a alguien a una página donde no puede comunicar nada es peor que decirle
+     que todavía no hay canal. Cuando exista una dirección del proyecto, va aquí
+     y esta explicación se acorta. #}
   <p>
-    {{ _('Esta aplicación es un Trabajo de Fin de Grado en evaluación continua. Si detectas alguna barrera de accesibilidad, puedes comunicarla en la sección de <a href="/ayuda">Ayuda</a>.')|safe }}
+    {{ _('Todavía <strong>no hay una dirección de correo del proyecto</strong>, y preferimos decirlo a mandarte a una página donde no podrías escribir a nadie.')|safe }}
+  </p>
+  <p>
+    {{ _('Mientras tanto, el desarrollo es público y se puede avisar ahí: <a href="https://github.com/TheYesua/AWEBO/issues" rel="noopener">abrir un aviso en el repositorio</a>. Requiere una cuenta de GitHub, que es una pega real; en cuanto haya un correo de contacto figurará en este mismo apartado.')|safe }}
   </p>
 </article>
 {% endblock %}

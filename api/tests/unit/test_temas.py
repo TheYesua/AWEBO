@@ -176,8 +176,17 @@ def _resolver(token: str, paleta: dict[str, str], base: dict[str, str]) -> str:
 #: (descripción, token de texto, token de fondo, ratio mínimo).
 #: 4.5 para texto (WCAG 2.1 SC 1.4.3); 3.0 para contornos de control (SC 1.4.11).
 PARES = [
-    ("cuerpo", "--color-text", "--color-bg", 4.5),
-    ("texto sobre tarjeta", "--color-text", "--color-surface", 4.5),
+    # Estos dos van a 7.0 y no a 4.5 porque **el README promete AAA en el texto
+    # principal**, y ahora mismo es verdad: 14.00:1 y 14.68:1 en claro, 15.19:1
+    # y 13.07:1 en oscuro. Pero lo era sin que nada lo vigilara: con el mínimo
+    # en 4.5, aclarar `--color-text` hasta un 6:1 dejaba la batería en verde y
+    # el README mintiendo. Es el patrón de toda esta semana —lo que no tiene
+    # guarda se desfasa— aplicado antes de que ocurra, por una vez.
+    #
+    # Si algún día hay un motivo de diseño para bajar de 7, lo que se cambia
+    # primero es la frase del README; el número de aquí va detrás.
+    ("cuerpo", "--color-text", "--color-bg", 7.0),
+    ("texto sobre tarjeta", "--color-text", "--color-surface", 7.0),
     ("texto atenuado", "--color-text-muted", "--color-surface", 4.5),
     ("texto atenuado sobre fondo", "--color-text-muted", "--color-bg", 4.5),
     ("enlace inline", "--color-link", "--color-surface", 4.5),
