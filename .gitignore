@@ -154,14 +154,15 @@ scratch/
 # GitHub**: `es/vits.onnx` y `eu/vits.onnx` pesan 108 MB cada uno y el límite
 # duro por fichero son 100 MB — el push se rechaza, no avisa. Con Git LFS
 # cabrían, pero la cuota gratuita es de 1 GB/mes de ancho de banda y cada
-# clonado se llevaría 356 MB.
+# clonado se llevaría 378 MB.
 #
 # No bloquean nada: con `VOZ_PROVEEDOR=nulo` la aplicación arranca sin ellos.
 # `voces/LEEME.txt` dice de dónde se descargan.
 /voces/*
 !/voces/LEEME.txt
 
-# Los PDF de las fuentes, por tamaño: 55 MB, y el del DOGC son 14 MB él solo.
+# Los PDF de las fuentes, por tamaño: 292 ficheros y 148 MB (eran 55 MB antes de
+# Bachillerato), y el del DOGC son 14 MB él solo.
 # Con ** porque desde el 14/08 hay una carpeta por comunidad: el patrón sin
 # ** dejó de cubrirlos en cuanto se movieron, y nada lo habría avisado.
 #
@@ -180,7 +181,7 @@ scratch/
 # para que el repositorio privado dejara de seguir los LEEME, y salió mal: un
 # `.gitignore` de subdirectorio **lo lee cualquier repositorio que contenga ese
 # directorio**, así que sus reglas se aplicaron también aquí. El `!*.pdf` que
-# llevaba desactivó la regla de arriba y los 55 MB de boletines pasaron a
+# llevaba desactivó la regla de arriba y los boletines pasaron a
 # aparecer como subibles al repositorio público.
 #
 # Y volvió a pasar el 23/09, en el sentido contrario: un `.gitignore` con
@@ -200,7 +201,7 @@ scratch/
 
 # La salida del extractor SÍ se versiona. La regla decía «se regenera de las
 # fuentes, no se versiona», y era falsa en la práctica: **las fuentes no están
-# en el repositorio**. Los PDF pesan 55 MB y quedaron ignorados justo arriba,
+# en el repositorio**. Los PDF pesan 148 MB y quedaron ignorados justo arriba,
 # así que sin la salida nadie que clone puede sembrar el currículo de Cataluña
 # ni de Andalucía. Ceuta y el estatal se salvaban de casualidad, porque sus
 # fuentes son XML pequeños y sí se suben.
@@ -209,7 +210,7 @@ scratch/
 # JavaScript y los PDF del DOGC traen la codificación de fuente rota, que es
 # justo por lo que hubo que ir a buscar los de la XTEC.
 #
-# Son 2,4 MB de JSON de texto derivado de boletines oficiales. La regla estaba
+# Son 9,6 MB de JSON de texto derivado de boletines oficiales. La regla estaba
 # además incumplida a medias: `curriculo/salida/` llevaba versionado desde
 # antes de escribirla, porque añadir algo al .gitignore no deja de seguir lo
 # que git ya seguía. Se resuelve en el sentido de subir las tres.

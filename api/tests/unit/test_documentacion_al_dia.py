@@ -373,6 +373,202 @@ class TestLaPuestaEnMarchaCargaTodoElCurriculo:
         assert not faltan, f"curriculo/README.md no menciona {faltan}"
 
 
+class TestLaEstructuraQueDocumenta:
+    """El fallo que puso esta clase (24/09/2026).
+
+    El apartado «Estructura del proyecto» del README omitía **cinco módulos**
+    —`csrf.py`, `secretos.py`, `i18n.py`, `temas.py`,
+    `migraciones_pendientes.py`— y la carpeta `correo/` entera, y decía «tres
+    extractores» cuando hay cinco. Todos son de las últimas semanas: el árbol se
+    dibujó una vez y nadie volvió a mirarlo al añadir nada.
+
+    Un índice incompleto de un proyecto es especialmente malo porque es lo
+    primero que lee quien llega, y lo que no figura **no se distingue de lo que
+    no existe**. Es el mismo defecto que el mapa web, la lista de `seed` y el
+    mapa de las fuentes: la cuarta vez esta semana, y por eso la guarda mira el
+    disco en vez de otra lista.
+
+    Se comprueban los módulos de primer nivel y las carpetas de `app/`, no el
+    árbol entero: el README no tiene por qué enumerar cada fichero, pero sí las
+    piezas que alguien buscaría.
+    """
+
+    APP = Path(__file__).resolve().parents[2] / "app"
+
+    #: Nada que ver aquí: el `__init__.py` se documenta como «factory
+    #: create_app()», sin su nombre de fichero, y eso está bien.
+    IGNORADOS = {"__init__.py"}
+
+    def _piezas(self) -> set[str]:
+        modulos = {
+            f.name for f in self.APP.glob("*.py") if f.name not in self.IGNORADOS
+        }
+        carpetas = {
+            d.name + "/" for d in self.APP.iterdir()
+            if d.is_dir() and d.name != "__pycache__"
+        }
+        return modulos | carpetas
+
+    def test_hay_piezas_que_comprobar(self):
+        """Regla 15, quinta vez esta semana. Si `APP` apunta mal, el test de
+        abajo no encontraría ninguna pieza y pasaría en verde."""
+        assert self.APP.is_dir(), self.APP
+        assert len(self._piezas()) >= 20, sorted(self._piezas())
+
+    def test_el_readme_nombra_cada_pieza_de_la_aplicacion(self):
+        _saltar_si_no_esta(README)
+        texto = _texto(README)
+
+        faltan = sorted(p for p in self._piezas() if p not in texto)
+        assert not faltan, (
+            f"el README no nombra {faltan} en «Estructura del proyecto». Es lo "
+            f"primero que lee quien llega al repositorio, y lo que no figura no "
+            f"se distingue de lo que no existe."
+        )
+
+    def test_no_dice_cuantos_extractores_hay_a_mano(self):
+        """«tres extractores» cuando eran cinco. El número se escribió el día
+        que había tres y no se volvió a tocar en dos comunidades.
+
+        No se puede exigir que el README no diga números, pero sí que **el que
+        diga cuadre**. Si alguien añade un extractor, esto se pone rojo.
+        """
+        _saltar_si_no_esta(README)
+        reales = len(list((self.APP / "curriculo").glob("extractor*.py")))
+        assert reales >= 1, "el detector no encuentra ningún extractor"
+
+        palabras = {2: "dos", 3: "tres", 4: "cuatro", 5: "cinco", 6: "seis",
+                    7: "siete", 8: "ocho", 9: "nueve", 10: "diez"}
+        texto = _texto(README)
+
+        mentiras = [
+            f"«{p} extractores»"
+            for n, p in palabras.items()
+            if n != reales and f"{p} extractores" in texto
+        ]
+        assert not mentiras, (
+            f"el README dice {mentiras} y hay {reales} en app/curriculo/"
+        )
+
+
+class TestElMapaDeLasFuentes:
+    """El fallo que puso esta clase (24/09/2026).
+
+    `curriculo/fuentes/LEEME.md` es el mapa de las fuentes, y describía **cuatro**
+    carpetas de las once que hay: se quedó escrito a mediados de agosto, antes de
+    Andalucía, Galicia y el País Vasco, y antes de todo el Bachillerato. Decía
+    además que «los PDF están en el `.gitignore` por tamaño», sin mencionar que
+    viven en `awebo_fuentes`, que es donde hay que ir a buscarlos.
+
+    Es el mismo fallo que el de la lista de `seed` del README y el del mapa web:
+    un índice escrito a mano que nadie vuelve a mirar cuando añade algo. Y el
+    arreglo es el mismo: compararlo con el disco.
+    """
+
+    FUENTES = CURRICULO / "fuentes"
+    LEEME = FUENTES / "LEEME.md"
+
+    def _carpetas(self) -> set[str]:
+        return {d.name for d in self.FUENTES.iterdir() if d.is_dir() and d.name != ".git"}
+
+    def test_hay_carpetas_que_comprobar(self):
+        """Regla 15, por cuarta vez esta semana."""
+        _saltar_si_no_esta(self.FUENTES)
+        assert len(self._carpetas()) >= 8, sorted(self._carpetas())
+
+    def test_el_leeme_nombra_cada_carpeta_de_fuentes(self):
+        _saltar_si_no_esta(self.LEEME)
+        _saltar_si_no_esta(self.FUENTES)
+        texto = _texto(self.LEEME)
+
+        faltan = sorted(c for c in self._carpetas() if c not in texto)
+        assert not faltan, (
+            f"el mapa de `curriculo/fuentes/LEEME.md` no nombra {faltan}. Es lo "
+            f"primero que lee quien quiere regenerar un extractor, y una carpeta "
+            f"sin mencionar no se distingue de una que no existe."
+        )
+
+    def test_cada_carpeta_con_pdf_dice_de_donde_bajarlos(self):
+        """Los PDF no se versionan en el repositorio público, así que su
+        `LEEME.md` con la URL del boletín es **la única forma** de conseguirlos
+        para quien clone sin acceso a `awebo_fuentes`. Una carpeta de PDF sin
+        LEEME es un currículo irreproducible.
+        """
+        _saltar_si_no_esta(self.FUENTES)
+
+        sin_leeme = []
+        for carpeta in sorted(self._carpetas()):
+            for sitio in (carpeta, *(d.name for d in (self.FUENTES / carpeta).iterdir()
+                                     if d.is_dir())):
+                ruta = self.FUENTES / carpeta if sitio == carpeta else self.FUENTES / carpeta / sitio
+                if not any(ruta.glob("*.pdf")):
+                    continue
+                if not (ruta / "LEEME.md").is_file():
+                    sin_leeme.append(str(ruta.relative_to(self.FUENTES)))
+
+        assert not sin_leeme, (
+            f"{sin_leeme} tienen PDF y ningún LEEME.md que diga de dónde salen. "
+            f"Los PDF no van en el repositorio público: sin esa URL, quien clone "
+            f"no puede reproducir ese currículo."
+        )
+
+
+class TestNoManderEjecutarLoQueNoSeDistribuye:
+    """El fallo que puso esta clase (24/09/2026).
+
+    El README documentaba `.\\respaldar.cmd` en dos sitios como si se pudiera
+    ejecutar desde la raíz. Ese guion vive en `docs/scripts/`, dentro del
+    repositorio **privado** `awebo_docs`: quien clona el público no lo tiene ni
+    lo ve.
+
+    Y lo peor es que el documento ya lo sabía. Tiene un comentario entero
+    explicando que se quitó `.\\verificar.cmd` por exactamente este motivo, y una
+    nota más abajo avisando de que los guiones de operación no están. Se
+    corrigió una de las tres apariciones. Mismo patrón que `_limpiar_redis()`,
+    que se arregló en la constante y se dejó en la función de al lado.
+
+    El daño concreto: el README dice «lánzalo antes de `flask db upgrade`»,
+    porque una migración es lo único que puede estropear la base de datos de
+    forma irreversible. Quien lo intente recibirá «no se reconoce el comando» y
+    seguirá adelante sin copia, que es el peor momento para descubrirlo.
+    """
+
+    #: Un `.\algo` al principio de una línea es una invocación desde la raíz.
+    #: Dentro de bloques de código o no, da igual: lo que importa es que quien
+    #: lea el documento lo teclee.
+    INVOCACION = re.compile(r"^\s*\.[\\/]([\w.-]+\.(?:cmd|ps1|bat|sh))", re.M)
+
+    def test_el_detector_reconoce_una_invocacion(self):
+        """Regla 15. Una expresión regular que deja de casar convierte el test
+        de abajo en un verde permanente."""
+        assert self.INVOCACION.findall(".\\respaldar.cmd -SinVerificar\n") == [
+            "respaldar.cmd"
+        ]
+        assert self.INVOCACION.findall("docker compose exec api pytest\n") == []
+
+    def test_todo_lo_que_manda_ejecutar_existe(self):
+        _saltar_si_no_esta(README)
+
+        # Fuera los comentarios de shell: el README explica ahí qué invocaciones
+        # se quitaron y por qué, citándolas. Sin esto el test se pondría rojo por
+        # la explicación de su propio fallo, y el arreglo sería borrarla — que ya
+        # pasó el 20/09 con un test de CSS.
+        texto = "\n".join(
+            l for l in _texto(README).splitlines() if not l.lstrip().startswith("#")
+        )
+
+        invocados = sorted(set(self.INVOCACION.findall(texto)))
+        faltan = [n for n in invocados if not (RAIZ / n).is_file()]
+
+        assert not faltan, (
+            f"el README manda ejecutar {faltan} desde la raíz y no está en este "
+            f"repositorio. Los guiones de operación viven en `docs/scripts/`, "
+            f"dentro del repositorio privado: quien clone el público recibirá "
+            f"«no se reconoce el comando». Si hay que mencionarlos, que sea sin "
+            f"forma de comando ejecutable."
+        )
+
+
 class TestLosComandosQueDocumenta:
     """Un comando mal escrito en el README rompe la puesta en marcha ajena, y
     no lo detecta ningún test de la aplicación. Ya pasó: decía

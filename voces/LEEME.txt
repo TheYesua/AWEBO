@@ -1,2 +1,52 @@
-Los modelos de voz van aquí, una carpeta por lengua (es/ ca/ gl/ eu/).
-No se versionan: ver docs/VOCES.md.
+SINTESIS DE VOZ LOCAL — QUE VA EN ESTA CARPETA
+==============================================
+
+Nada de esto se versiona: son cientos de MB y GitHub rechaza ficheros de mas de
+100 MB. El detalle de por que y de donde se descarga esta en docs/VOCES.md, en
+el repositorio privado.
+
+LO QUE LA APLICACION LEE DE VERDAD
+----------------------------------
+Una sola cosa: la carpeta del motor aHoTTS, montada en /ahotts dentro del
+contenedor. En docker-compose.override.yml:
+
+    - ./voces/ahotts:/ahotts:ro
+
+Y dentro de ella, el codigo busca exactamente:
+
+    ahotts/tts                          el binario
+    ahotts/voices/<lengua>/vits.onnx    el modelo, con <lengua> en es|ca|gl|eu
+    ahotts/dicts/<lengua>/...           el diccionario linguistico
+    libonnxruntime.so.1.13.1            que viaja con aHoTTS
+
+O sea que la ruta completa de un modelo es:
+
+    voces/ahotts/ahotts/voices/eu/vits.onnx
+
+El "ahotts" repetido no es un error: el primero es esta carpeta y el segundo es
+el del propio repositorio de aHoTTS tal como se clona.
+
+ESTE FICHERO DECIA OTRA COSA, Y ESTABA MAL (24/09/2026)
+-------------------------------------------------------
+Decia: "Los modelos de voz van aqui, una carpeta por lengua (es/ ca/ gl/ eu/)".
+
+Eso describe un reparto que **la aplicacion no usa**. Existen esas cuatro
+carpetas —voces/es/, voces/ca/, voces/gl/, voces/eu/, unos 334 MB— y no estan
+montadas en ningun contenedor ni las lee ninguna linea de codigo: son una copia
+de los modelos que ya estan dentro de aHoTTS. Comprobado por MD5: el
+voces/eu/vits.onnx y el voces/ahotts/ahotts/voices/eu/vits.onnx son el mismo
+fichero byte a byte.
+
+Quien siguiera estas instrucciones en una maquina nueva colocaria los modelos
+donde la aplicacion no mira, y el boton de escuchar no apareceria.
+
+OJO CON LAS MAYUSCULAS AL PASAR A LINUX
+----------------------------------------
+El compose monta ./voces/ahotts, en minusculas. Si la carpeta se llama
+"aHoTTS" —como se clona del repositorio original— en Windows y macOS funciona
+igual, porque su sistema de ficheros no distingue mayusculas. En LINUX si las
+distingue: Docker crea un directorio vacio y el montaje queda sin nada.
+
+No da un error de arranque: la aplicacion levanta y el fallo sale al pedir
+audio, como "Falta el modelo de <lengua>". Con la carpeta en minusculas
+funciona en los tres sistemas.

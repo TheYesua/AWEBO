@@ -118,13 +118,13 @@ con su lista de comprobación.
 
 > **Dos cosas no están en este repositorio, y ninguna impide arrancar.**
 >
-> Los **PDF de los boletines** (55 MB) no se versionan, pero el currículo ya
+> Los **PDF de los boletines** (292 ficheros, 148 MB) no se versionan, pero el currículo ya
 > extraído sí: `curriculo/salida*/` trae los JSON listos para sembrar. Solo
 > hacen falta si vas a modificar un extractor, y entonces cada
 > `curriculo/fuentes/<comunidad>/LEEME.md` dice de dónde bajarlos. Sin ellos,
 > los tests de los extractores se saltan en lugar de fallar.
 >
-> Los **modelos de voz** de la síntesis local (356 MB) tampoco: hay ficheros de
+> Los **modelos de voz** de la síntesis local (378 MB) tampoco: hay ficheros de
 > 108 MB y el límite de GitHub son 100 MB por fichero. Con el valor por defecto
 > `VOZ_PROVEEDOR=nulo` la aplicación funciona igual; para activarlos, ver
 > `voces/LEEME.txt`.
@@ -257,7 +257,9 @@ docker compose exec api grep -c fuzzy app/translations/ca/LC_MESSAGES/messages.p
 # Integración continua
 # Cada push y cada pull request ejecutan la batería completa en GitHub Actions
 # (.github/workflows/verificar.yml): pytest dentro de la imagen del proyecto,
-# los cuatro tests de JavaScript, y el arnés de migración contra un Postgres
+# los tests de JavaScript —los que haya en `tests/js/`, no un número escrito
+# aquí: esta línea decía «cuatro» cuando ya eran seis—, y el arnés de migración
+# contra un Postgres
 # real. Python corre en la imagen construida desde api/Dockerfile y no en un
 # entorno montado a mano, para no mantener dos listas de dependencias del
 # sistema que se desincronizarían.
@@ -268,9 +270,10 @@ docker compose exec api grep -c fuzzy app/translations/ca/LC_MESSAGES/messages.p
 # ('consola') el correo se escribe en el log en vez de enviarse.
 docker compose up -d mailpit
 
-# Copia de seguridad de la base de datos
-.\respaldar.cmd                       # copia verificada, conserva las 7 últimas
-.\respaldar.cmd -SinVerificar          # más rápida, sin comprobar que restaura
+# Copia de seguridad de la base de datos: el guion NO se distribuye, igual que
+# `verificar.cmd` de arriba. Aquí ponía `.\respaldar.cmd` como si se pudiera
+# ejecutar; se quitó la de `verificar` por este motivo y estas dos se quedaron.
+# Cómo funciona y cómo restaurar a mano, en «Copias de seguridad» más abajo.
 
 # Probar la cola Celery
 docker compose exec api python -c "from app.celery_worker import ping; print(ping.delay().get(timeout=5))"
@@ -301,10 +304,13 @@ AWEBO/
 │   └── init/                        # scripts de inicialización SQL
 ├── curriculo/
 │   ├── fuentes/                     # una carpeta por comunidad (PDF no versionados)
-│   ├── salida/                      # JSON precompilado: estatal y Ceuta
-│   ├── salida_cataluna/             # JSON precompilado: Decret 175/2022
-│   ├── salida_andalucia/            # JSON precompilado: BOJA 104/2023 (ESO)
-│   └── salida_andalucia_bachillerato/ # la otra Orden del mismo boletín
+│   └── salida*/                      # JSON precompilado, una carpeta por norma:
+│                                     #   salida/ (estatal + ESO de Ceuta y Melilla)
+│                                     #   y nueve mas, una por comunidad y etapa.
+│                                     #   La lista entera, con sus cifras, en
+│                                     #   curriculo/README.md — aqui se pondria
+│                                     #   vieja, que es lo que le paso: traia
+│                                     #   cuatro de las diez.
 ├── voces/                           # modelos aHoTTS (no versionados: decenas de MB)
 └── api/
     ├── Dockerfile
@@ -322,7 +328,13 @@ AWEBO/
         ├── celery_worker.py         # entrypoint del worker
         ├── errors.py                # handlers globales (JSON / HTML)
         ├── security.py              # hashing, helpers
-        ├── cli.py                   # comandos flask (seeds, etc.)
+        ├── secretos.py              # comprueba la config al arrancar; falla si
+        │                                #   SECRET_KEY falta o es una publicada
+        ├── csrf.py                  # token propio en sesion + guarda por metodo
+        ├── i18n.py                  # seleccion de idioma (perfil > cookie > navegador)
+        ├── temas.py                 # tema claro/oscuro/auto y el anio del pie
+        ├── migraciones_pendientes.py # avisa si la BD no esta al dia
+        ├── cli.py                   # comandos flask (seeds, usuarios, curriculo)
         ├── ai/                      # LLMProvider + factory (openai/gemini/fake)
         ├── api/                     # blueprints REST (auth, me, situaciones…)
         ├── models/                  # SQLAlchemy: usuario, situacion, curriculo
@@ -331,7 +343,10 @@ AWEBO/
         ├── tasks/                   # tareas Celery (generación IA)
         ├── prompts/                 # prompts por sección LOMLOE versionados
         ├── seeds/                   # carga inicial (roles, ODS, currículo)
-        ├── curriculo/               # tres extractores + catálogo de provincias
+        ├── correo/                  # proveedores de correo (consola, smtp)
+        ├── curriculo/               # **cinco** extractores —uno por maquetación de
+        │                                #   boletín—, el catálogo de provincias y las
+        │                                #   tablas de cursos por etapa
         ├── voz/                     # síntesis de voz (sistema y aHoTTS local)
         ├── translations/            # catálogos es/ca/gl/eu
         ├── static/                  # css, js, imagenes, favicon
@@ -399,7 +414,7 @@ estructurado que nunca llegó a funcionar, `/health` informando del proveedor
 equivocado, dos incumplimientos WCAG 2.1 en el tema claro y los reintentos
 sobre errores `4xx` de la API de OpenAI.
 
-**1495 tests** cubren todo lo anterior, en la batería que corre en cada push.
+**1503 tests** cubren todo lo anterior, en la batería que corre en cada push.
 La cifra la comprueba un test: si alguien añade una tanda y no la actualiza
 aquí, falla.
 
@@ -452,7 +467,8 @@ contrato que nadie firma.
 ## Copias de seguridad
 
 > **Los guiones de operación no están en este repositorio.** `respaldar.ps1`,
-> `verificar.ps1` y compañía viven en `scripts/`, fuera del árbol publicado:
+> `verificar.ps1` y compañía viven en `docs/scripts/`, dentro del repositorio
+> privado `awebo_docs` y fuera del árbol publicado:
 > son de uso interno y no aportan nada a quien viene a leer el código. Lo que
 > sigue describe **cómo funciona la copia de seguridad**, que sí es una
 > decisión de diseño que merece contarse; el guion en sí no se distribuye.
@@ -474,13 +490,23 @@ La lista de tablas se le pregunta a la base de datos en vez de estar escrita en
 el script: así una tabla nueva entra en la comprobación sola, en lugar de
 quedarse sin verificar sin que nadie se entere.
 
+Sus opciones, para quien tenga el repositorio de operación: destino de los
+volcados, cuántos conservar, y un modo que se salta la verificación. **Este
+bloque traía las tres líneas de invocación como si el guion estuviera aquí**, y
+no está: se quitaron el 24/09/2026, el mismo día que se descubrió que el
+README las mantenía después de haber borrado la de `verificar.cmd` por
+exactamente el mismo motivo.
+
+Si has clonado solo este repositorio y quieres una copia, el `pg_dump` a secas
+es una línea; lo que no tendrás es la verificación por restauración, que es lo
+que describe el párrafo de arriba y lo único que distingue un volcado bueno de
+uno truncado:
+
 ```powershell
-.\respaldar.cmd                              # a ..\AWEBO_backups, conserva 7
-.\respaldar.cmd -Destino D:\copias -Conservar 30
-.\respaldar.cmd -SinVerificar                # solo el volcado
+docker compose exec -T postgres pg_dump -U awebo_user -Fc awebo > copia.dump
 ```
 
-**Se invocan por el `.cmd`, no por el `.ps1`.** Windows bloquea por defecto la
+**Los guiones se invocan por el `.cmd`, no por el `.ps1`.** Windows bloquea por defecto la
 ejecución de scripts de PowerShell sin firmar, y devuelve
 «running scripts is disabled on this system». Los `.cmd` no pasan por esa
 comprobación y se limitan a llamar al `.ps1` con la directiva saltada **solo
@@ -564,6 +590,45 @@ en su modo rápido, si lo tienes.
   pasar por el contenido de nadie.
 - Las cookies de sesión se emiten con `HttpOnly`, `Secure` (en producción)
   y `SameSite=Lax`.
+
+### Lo que se endureció del 21 al 23 de septiembre de 2026
+
+Preparando el alojamiento público. Cada punto tiene sus tests; la lista de
+comprobación del despliegue está en [DESPLIEGUE.md](DESPLIEGUE.md).
+
+- **`SECRET_KEY` no tiene valor por defecto.** Si falta, es corta o es una de
+  las que han estado publicadas en este repositorio, la aplicación **no
+  arranca**: `app/secretos.py` lo comprueba antes de servir la primera
+  petición. La medida es la ausencia del valor por defecto, no el aviso —
+  firmaba las sesiones y los enlaces de restablecer contraseña.
+- **CSRF** con token propio en la sesión, exigido en todo método que modifique
+  algo. El cliente lo manda en `X-CSRF-Token`; `app.js` envuelve `fetch` una
+  vez en lugar de tocar las cuarenta llamadas. Está activo también en los
+  tests, así que las pruebas que mutan datos lo ejercitan.
+- **Cabeceras**: `Content-Security-Policy` con `nonce` por petición,
+  `X-Frame-Options: DENY`, `X-Content-Type-Options`, `Referrer-Policy`, y
+  `server_tokens off` en nginx.
+- **TLS** en `nginx/prod.conf.template`, con redirección desde el 80 y certbot
+  renovando por webroot. **HSTS con `max-age=300`, no un año**, a propósito: es
+  de las poquísimas cabeceras que no se pueden deshacer desde el servidor, así
+  que se sube cuando lleve días estable. Un test se pone rojo si sube antes de
+  tiempo.
+- **Los puertos de servicio no se publican.** `docker-compose.prod.yml` expone
+  solo 80 y 443; Postgres y Adminer están atados a `127.0.0.1` en desarrollo, y
+  Adminer detrás de un perfil que en producción no se activa.
+- **Los límites por IP funcionan detrás del proxy.** `PROXIES_DELANTE` +
+  `ProxyFix`, y era un fallo real, no una mejora: los endpoints anónimos limitan
+  por IP y detrás de nginx todos los visitantes comparten la del proxy, así que
+  cinco intentos fallidos de cualquiera dejaban sin entrar a todo el mundo
+  durante una hora. Invisible con un solo usuario. El valor por defecto es `0`
+  porque el riesgo es asimétrico: olvidarlo degrada los límites, ponerlo sin
+  proxy delante permite falsear `X-Forwarded-For`.
+
+**Lo que aún no está probado**: la configuración de producción no la ejercita
+nadie. La batería y la CI corren contra la de desarrollo, y
+`prod.conf.template` se estrena el día del servidor. Los tests comprueban lo
+que se puede comprobar leyendo ficheros; para el resto está la lista de
+[DESPLIEGUE.md](DESPLIEGUE.md).
 
 ---
 

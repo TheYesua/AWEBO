@@ -224,6 +224,33 @@ cinco intentos fallidos de cualquiera dejarían sin entrar a todo el mundo.
 - [ ] Se genera una SdA y se exporta a PDF y a DOCX.
 - [ ] El selector de idioma cambia el idioma al elegir, sin pulsar nada más.
 
+### La síntesis de voz, si la vas a activar
+
+Esta va aparte porque es el único apartado que **funciona en Windows y falla en
+Linux**, y por eso no lo detecta nada de lo que se ejecuta en la máquina de
+desarrollo.
+
+El compose monta `./voces/ahotts`, en minúsculas, y la carpeta se clona del
+repositorio original como **`aHoTTS`**. Windows y macOS no distinguen
+mayúsculas en los nombres de fichero y llevan meses funcionando así; Linux sí
+las distingue, así que Docker crea un directorio vacío, el montaje queda sin
+nada y **la aplicación arranca igual**: el fallo aparece la primera vez que
+alguien pulsa el botón de escuchar.
+
+- [ ] `ls voces/` muestra `ahotts` en **minúsculas**. Si sale `aHoTTS`:
+      `mv voces/aHoTTS voces/ahotts`.
+- [ ] `ls voces/ahotts/ahotts/voices/` lista `ca es eu gl`. El `ahotts`
+      repetido no es un error: el primero es la carpeta y el segundo el del
+      repositorio de aHoTTS tal como se clona.
+- [ ] `dc exec api ls /ahotts/ahotts/tts` encuentra el binario. Si el montaje
+      está vacío, esto es lo que lo dice.
+- [ ] Pulsar «escuchar» en una situación de cada lengua devuelve audio.
+
+> Las carpetas `voces/es/`, `voces/ca/`, `voces/gl/` y `voces/eu/` **no se
+> montan ni las lee nadie**: son una copia de los modelos que ya están dentro de
+> `aHoTTS` (comprobado por MD5, byte a byte). Son unos 334 MB que no hace falta
+> subir al servidor.
+
 ---
 
 ## Lo que este documento todavía no cubre
