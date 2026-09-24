@@ -314,6 +314,65 @@ class TestLoQueElReadmeDiceQueNoEsta:
         assert not re.search(r"^/curriculo/salida\*/\s*$", _texto(RAIZ / ".gitignore"), re.M)
 
 
+class TestLaPuestaEnMarchaCargaTodoElCurriculo:
+    """El fallo que puso esta clase (24/09/2026).
+
+    El README enumeraba ocho `flask seed curriculo --directorio …` y **se
+    dejaba `salida_ceuta_bachillerato`**. `seed all` tampoco lo carga: solo
+    siembra `/curriculo/salida`, que es el estatal más la ESO de Ceuta y
+    Melilla. Así que quien seguía las instrucciones desde cero se quedaba sin
+    el Bachillerato de Ceuta —61 ficheros— mientras el primer párrafo del mismo
+    documento promete «el currículo de Bachillerato de las cinco».
+
+    No fallaba nada. La aplicación arranca, el desplegable funciona, y lo único
+    que pasa es que a un docente de Ceuta no le sale su Bachillerato. Un hueco
+    que solo se ve desde fuera, que es precisamente lo que nadie hace con las
+    instrucciones de su propio proyecto.
+
+    Por eso la lista no se comprueba contra otra lista escrita a mano, sino
+    contra **los directorios que existen**. Uno nuevo pone esto en rojo hasta
+    que se documente cómo cargarlo.
+    """
+
+    #: El que carga `seed all` sin argumentos, así que no va en la lista.
+    POR_DEFECTO = "salida"
+
+    def _directorios(self) -> set[str]:
+        return {
+            d.name for d in CURRICULO.iterdir()
+            if d.is_dir() and d.name.startswith("salida")
+        } - {self.POR_DEFECTO}
+
+    def test_hay_directorios_que_comprobar(self):
+        """Regla 15: si `CURRICULO` apunta mal, el test de abajo no encontraría
+        ningún directorio y pasaría en verde sin mirar nada."""
+        _saltar_si_no_esta(CURRICULO)
+        assert len(self._directorios()) >= 8, sorted(self._directorios())
+
+    def test_el_readme_dice_como_cargar_cada_directorio(self):
+        _saltar_si_no_esta(README)
+        _saltar_si_no_esta(CURRICULO)
+        texto = _texto(README)
+
+        faltan = sorted(d for d in self._directorios() if d not in texto)
+        assert not faltan, (
+            f"el README no dice cómo cargar {faltan}. `seed all` solo siembra "
+            f"/curriculo/{self.POR_DEFECTO}, así que quien siga las "
+            f"instrucciones desde cero se queda sin ese currículo y sin aviso."
+        )
+
+    def test_el_readme_del_curriculo_tambien(self):
+        """Los dos documentos enumeran los mismos directorios, y ya divergieron:
+        el 24/09 `curriculo/README.md` sí traía el de Ceuta-Bachillerato y el
+        README principal no. Dos listas de lo mismo divergen solas."""
+        _saltar_si_no_esta(README_CURRICULO)
+        _saltar_si_no_esta(CURRICULO)
+        texto = _texto(README_CURRICULO)
+
+        faltan = sorted(d for d in self._directorios() if d not in texto)
+        assert not faltan, f"curriculo/README.md no menciona {faltan}"
+
+
 class TestLosComandosQueDocumenta:
     """Un comando mal escrito en el README rompe la puesta en marcha ajena, y
     no lo detecta ningún test de la aplicación. Ya pasó: decía

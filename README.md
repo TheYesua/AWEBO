@@ -82,9 +82,21 @@ con su lista de comprobación.
   destello al navegar. Los contrastes de ambas paletas se verifican en tests.
 - **Exportación**: PDF con WeasyPrint, DOCX con `python-docx`. Fuente fijada
   explícitamente (Calibri) en el OOXML para coherencia entre visualizadores.
-- **Accesibilidad WCAG 2.1 AA**: paleta auditada (contraste AAA en texto
-  principal), skip-link, foco visible, navegación por teclado, `prefers-
-  reduced-motion`, marcado semántico con `aria-*`.
+- **Accesibilidad**: skip-link, foco visible que no depende del color,
+  navegación por teclado, `prefers-reduced-motion`, marcado semántico con
+  `aria-*`, y contraste **AAA** en el texto principal (14:1 en el tema claro,
+  15:1 en el oscuro), con un test por cada par de colores de las dos paletas.
+  Las seis páginas públicas pasan **axe-core** en un Chromium real, en los dos
+  temas, en cada push.
+
+  **No se declara conformidad WCAG 2.1 AA**, y hasta el 23/09/2026 este
+  documento la declaraba. Lo que la desmintió fue poner en marcha ese trabajo
+  de la CI: llevaba desde el 16/08 en rojo por un fallo de configuración, y en
+  cuanto pudo auditar encontró **doce incumplimientos «serious» de la 1.4.1**
+  que habían estado ahí todo el tiempo. Lo que falta para poder afirmarlo:
+  auditar las páginas con sesión —hoy quedan fuera—, y probarlo con lectores de
+  pantalla reales, que es donde están los defectos que ninguna herramienta
+  automática detecta.
 
 ---
 
@@ -142,15 +154,17 @@ con su lista de comprobación.
    docker compose exec api flask seed all
    ```
 
-   `seed all` deja roles, ODS y el currículo **estatal y de Ceuta**. Los de las
-   comunidades con boletín propio van en directorios aparte y se cargan
-   explícitamente:
+   `seed all` deja roles, ODS y el currículo de `/curriculo/salida`, que es el
+   **estatal y la ESO de Ceuta y Melilla**. Todo lo demás vive en directorios
+   aparte y se carga explícitamente, **incluido el Bachillerato de Ceuta**, que
+   `seed all` no toca pese a que su ESO sí:
 
    ```powershell
    docker compose exec api flask seed curriculo --directorio /curriculo/salida_cataluna
    docker compose exec api flask seed curriculo --directorio /curriculo/salida_cataluna_batxillerat
    docker compose exec api flask seed curriculo --directorio /curriculo/salida_andalucia
    docker compose exec api flask seed curriculo --directorio /curriculo/salida_andalucia_bachillerato
+   docker compose exec api flask seed curriculo --directorio /curriculo/salida_ceuta_bachillerato
    docker compose exec api flask seed curriculo --directorio /curriculo/salida_galicia
    docker compose exec api flask seed curriculo --directorio /curriculo/salida_galicia_bachillerato
    docker compose exec api flask seed curriculo --directorio /curriculo/salida_pais_vasco
@@ -376,7 +390,7 @@ Lo entregado hasta ahora como proyecto personal, agrupado por para qué sirve.
 | Funcionalidad | Qué hace |
 |---|---|
 | **Tema oscuro** | Claro, oscuro y automático, con selector en la cabecera. Se resuelve en servidor, así que no hay destello blanco al navegar. |
-| **Cuatro idiomas** | Castellano, catalán, gallego y euskera: 602 cadenas. El idioma de la interfaz y el de la situación son independientes a propósito. |
+| **Cuatro idiomas** | Castellano, catalán, gallego y euskera: 614 cadenas. El idioma de la interfaz y el de la situación son independientes a propósito. |
 | **Texto a voz** | Por sección, con la voz del sistema. |
 | **Audio con IA** | Modelos aHoTTS **en local**: el contenido del docente no sale a un tercero, y cubre el hueco que la voz del sistema deja en las lenguas cooficiales. |
 
@@ -385,7 +399,7 @@ estructurado que nunca llegó a funcionar, `/health` informando del proveedor
 equivocado, dos incumplimientos WCAG 2.1 en el tema claro y los reintentos
 sobre errores `4xx` de la API de OpenAI.
 
-**1486 tests** cubren todo lo anterior, en la batería que corre en cada push.
+**1495 tests** cubren todo lo anterior, en la batería que corre en cada push.
 La cifra la comprueba un test: si alguien añade una tanda y no la actualiza
 aquí, falla.
 
@@ -555,8 +569,14 @@ en su modo rápido, si lo tienes.
 
 ## Accesibilidad
 
-El proyecto apunta a **WCAG 2.1 nivel AA**. Detalles, limitaciones conocidas y
-vía de contacto en la página `/accesibilidad` de la propia aplicación.
+El proyecto apunta a **WCAG 2.1 nivel AA** y no declara conformidad. Lo que se
+comprueba, las limitaciones conocidas y cómo avisar de una barrera están en la
+página `/accesibilidad` de la propia aplicación.
+
+**Todavía no hay una dirección de correo del proyecto**, así que los avisos van
+por los *issues* del repositorio. Es una pega real —exige cuenta de GitHub— y
+está dicho así en la página en vez de mandar a la gente a un sitio donde no
+puede escribir a nadie, que es lo que hacía hasta el 24/09/2026.
 
 Entregado: tema oscuro con selector en la cabecera, lectura por voz sección a
 sección, y síntesis con modelos locales para las lenguas cooficiales, que es
